@@ -1,0 +1,21 @@
+---
+title: Limitaciones de copia de seguridad de PDF Generator
+seo-title: Limitaciones de copia de seguridad de PDF Generator
+description: Obtenga información sobre las limitaciones de copia de seguridad de PDF Generator.
+seo-description: Obtenga información sobre las limitaciones de copia de seguridad de PDF Generator.
+uuid: 9537ffde-4396-46d1-81ea-edcd25923ffb
+contentOwner: admin
+content-type: reference
+geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+discoiquuid: 23386353-b2bf-49f1-947a-dd7587bba175
+noindex: true
+translation-type: tm+mt
+source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+
+---
+
+
+# Limitaciones de copia de seguridad de PDF Generator {#pdf-generator-backup-limitations}
+
+No se puede realizar una copia de seguridad del directorio temporal que utiliza PDF Generator para convertir archivos. Aunque el servicio se restaurará correctamente, los datos se pueden perder porque el generador de PDF revisa y borra el contenido del directorio temporal a intervalos establecidos.

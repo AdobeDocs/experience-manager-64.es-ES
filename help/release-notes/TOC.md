@@ -1,0 +1,28 @@
+---
+cloud: experience-cloud
+product: adobe experience manager
+audience: end-user
+user-guide-title: AEM 6.4 Release Notes
+translation-type: tm+mt
+source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+
+---
+
+
+# Notas de la versión 6.4 de AEM {#release-notes}
+
++ [Descripción general de AEM 6.4](home.md)
++ [Notas de revisión generales](release-notes.md)
++ [Notas de la versión de Service Pack](sp-release-notes.md)
++ [Notas de la versión de Sitios AEM](sites.md)
++ [Notas de la versión de Activos AEM](assets.md)
++ [Notas de la versión de Formularios AEM](forms.md)
++ [Notas de versión de AEM Communities](communities-release-notes.md)
++ [Notas de la versión de AEM 3D](aem3d-release-notes.md)
++ [Funciones en desuso y eliminadas](deprecated-removed-features.md)
++ [Problemas conocidos](known-issues.md)
++ [Base y repositorio de AEM](wcm-platform.md)
++ [Estado de la función de IU táctil](touch-ui-features-status.md)
++ [Herramienta de migración CRX2OAK](crx2oak.md)
++ [Notas de la versión de Smart Content Service](smart-content-service-release-notes.md)
++ [Notas de la versión de Livefyre Feature Pack 2.0.6](livefyre-feature-pack-206.md)

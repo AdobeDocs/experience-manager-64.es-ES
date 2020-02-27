@@ -3,12 +3,12 @@ title: Edición masiva de metadatos de varios recursos y colecciones
 description: Descubra cómo editar los metadatos de muchos recursos y colecciones de forma simultánea para propagar rápidamente los cambios comunes de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
 
-# Administración de varios recursos y colecciones {#managing-multiple-assets-and-collections}
+# Administrar varios recursos y colecciones {#managing-multiple-assets-and-collections}
 
 Descubra cómo editar los metadatos de varios recursos y colecciones simultáneamente para propagar rápidamente los cambios comunes de metadatos.
 
@@ -25,7 +25,7 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
 >
 >Los métodos de edición masiva funcionan para los recursos disponibles en una carpeta o una colección. En el caso de los recursos disponibles en distintas carpetas o que cumplen un criterio común, es posible actualizar los metadatos de forma masiva a partir de los resultados de búsqueda de recursos.
 
-## Edición de propiedades de metadatos de varios recursos {#editing-metadata-properties-of-multiple-assets}
+## Editar propiedades de metadatos de varios recursos {#editing-metadata-properties-of-multiple-assets}
 
 1. En la interfaz de usuario de Recursos, navegue a la ubicación de los recursos que desee editar.
 1. Seleccione los recursos para los que desea editar propiedades comunes.
@@ -52,26 +52,6 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
    >
    >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
-## Edición de propiedades de metadatos de varias colecciones {#editing-metadata-properties-of-multiple-collections}
-
-1. En la consola Colecciones, seleccione las colecciones que desee editar.
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Propiedades]** para abrir la página de propiedades de las colecciones seleccionadas.
-1. Modifique las propiedades de metadatos de las colecciones seleccionadas en las distintas fichas.
-
-   >[!NOTE]
-   >
-   >Los metadatos que se agregan para las colecciones seleccionadas sobrescriben los metadatos anteriores para estas colecciones, excepto para las etiquetas. Las etiquetas que agregue al campo **[!UICONTROL Etiquetas]** se anexan a la lista de etiquetas existente en los metadatos.
-
-1. Para ver las propiedades de metadatos de una colección específica, anule la selección de las colecciones restantes en la lista de colecciones. Los campos del editor de metadatos se rellenan con los metadatos de la colección en particular.
-
-   >[!NOTE]
-   >
-   >* En la página de propiedades de la colección, puede quitar colecciones de la lista de colecciones anulándolas. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. Los metadatos de las colecciones que elimine no se actualizarán.
-   >* En la parte superior de la lista, active la casilla de verificación situada cerca de **Título** para alternar entre seleccionar las colecciones y borrar la lista.
-
-
-1. Guarde los cambios.
-
 ## Configurar límite para la actualización masiva de metadatos {#configure-limit-for-bulk-metadata-update}
 
 Para evitar situaciones similares a las de DOS, AEM limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, es posible que se alcance el límite y que los metadatos no se actualicen para más recursos. AEM genera la siguiente advertencia en los registros:
@@ -79,3 +59,7 @@ Para evitar situaciones similares a las de DOS, AEM limita el número de paráme
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [Editar metadatos de varias colecciones de forma masiva](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)

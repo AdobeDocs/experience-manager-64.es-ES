@@ -3,7 +3,7 @@ title: Uso de recursos de Adobe Stock en Recursos AEM
 description: Busque, busque, adquiera, adquiera licencias y administre recursos de Adobe Stock en AEM. Trate los recursos con licencia como cualquier otro recurso de AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
 
 ---
 
@@ -16,7 +16,7 @@ El servicio Adobe Stock proporciona a diseñadores y empresas acceso a millones 
 
 ## Requisitos previos {#prerequisites}
 
-La integración requiere un plan [](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) empresarial de Adobe Stock y AEM 6.4 con al menos Service Pack 2 implementado. Para obtener más información sobre el Service Pack de AEM 6.4, consulte estas [notas](/help/release-notes/sp-release-notes.md)de la versión.
+La integración requiere un plan [](https://stockenterprise.adobe.com/) empresarial de Adobe Stock y AEM 6.4 con al menos Service Pack 2 implementado. Para obtener más información sobre el Service Pack de AEM 6.4, consulte estas [notas](/help/release-notes/sp-release-notes.md)de la versión.
 
 ## Integración de AEM y Adobe Stock {#integrate-aem-and-adobe-stock}
 

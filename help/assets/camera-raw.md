@@ -3,7 +3,7 @@ title: Compatibilidad con Camera Raw
 description: Obtenga información sobre cómo activar la compatibilidad con Camera Raw en Recursos de Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2404241676daeb5e4b53149c03a23d5ee2f2667
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -55,9 +55,13 @@ Para activar la compatibilidad con Camera Raw en Recursos de Adobe Experience Ma
 
 Ahora puede importar archivos sin procesar de cámara en Recursos AEM. Después de instalar el paquete RAW de cámara y configurar el flujo de trabajo necesario, la opción Ajuste **[!UICONTROL de]** imagen aparece en la lista de paneles laterales.
 
-![chlimage_1-337](assets/chlimage_1-337.png)*Figura: Opciones del panel lateral.*
+![chlimage_1-337](assets/chlimage_1-337.png)
 
-![chlimage_1-338](assets/chlimage_1-338.png)*Figura: Utilice esta opción para realizar ediciones ligeras en las imágenes.*
+*Figura: Opciones del panel lateral.*
+
+![chlimage_1-337](assets/chlimage_1-338.png)
+
+*Figura: Utilice esta opción para realizar ediciones ligeras en las imágenes.*
 
 Después de guardar las ediciones en una imagen de Camera Raw, `AdjustedPreview.jpg` se genera una nueva representación para la imagen. Para otros tipos de imágenes, excepto Camera Raw, los cambios se reflejan en todas las representaciones.
 

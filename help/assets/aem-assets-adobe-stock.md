@@ -3,7 +3,7 @@ title: Uso de recursos de Adobe Stock en Recursos AEM
 description: Busque, busque, adquiera, adquiera licencias y administre recursos de Adobe Stock en AEM. Trate los recursos con licencia como cualquier otro recurso de AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -52,7 +52,9 @@ Con esta capacidad, las organizaciones pueden permitir que sus usuarios trabajen
 
 Una vez que un recurso de Adobe Stock tiene licencia en AEM, puede utilizarse y administrarse como un recurso típico. En AEM, los usuarios pueden buscar y obtener una vista previa de los recursos; copiar y publicar los recursos; compartir los recursos en Brand Portal; acceder a los recursos y utilizarlos mediante la aplicación de escritorio de AEM; y así sucesivamente.
 
-![Busque recursos de Adobe Stock y filtre los resultados de su espacio de trabajo](assets/adobe-stock-search-results-workspace.png)de AEM *Figura: Busque recursos de Adobe Stock y filtre los resultados del espacio de trabajo de AEM*
+![Busque recursos de Adobe Stock y filtre los resultados del espacio de trabajo de AEM](assets/adobe-stock-search-results-workspace.png)
+
+*Figura: Busque recursos de Adobe Stock y filtre los resultados del espacio de trabajo de AEM*
 
 **A.** Busque recursos similares a los del ID de Adobe Stock proporcionado. **B.** Busque recursos que coincidan con la selección de forma u orientación. **C.** Busque uno de los tipos de recurso más admitidos **D.** Abra o contraiga el panel de filtros **E.** Obtenga la licencia y guarde el recurso seleccionado en AEM **F.** Guarde el recurso en AEM con la marca de agua **G.** Explore los recursos del sitio web de Adobe Stock que sean similares al recurso **H.** Vea los recursos seleccionados en el sitio web de Adobe Stock. **I.** Número de recursos seleccionados de los resultados de búsqueda **J.** Cambie entre la vista de tarjeta y la vista de lista
 
@@ -70,7 +72,9 @@ También puede empezar a escribir `Location: Adobe Stock` en la barra de búsque
 >
 >Los recursos que se buscan desde Adobe Stock solo se muestran en AEM. Los recursos de Adobe Stock se recuperan y almacenan en el repositorio de AEM solo después de que un usuario [guarde un recurso](aem-assets-adobe-stock.md#saveassets) o [conceda una licencia a un recurso](aem-assets-adobe-stock.md#licenseassets). Los recursos que ya están almacenados en AEM se muestran y resaltan para facilitar la referencia y el acceso. Además, estos recursos se guardan con algunos metadatos adicionales para indicar el origen como Adobe Stock.
 
-![Filtros de búsqueda en AEM y recursos de Adobe Stock resaltados en los resultados](assets/aem-search-filters2.jpg)de búsqueda *Figura: Filtros de búsqueda en AEM y recursos de Adobe Stock resaltados en los resultados de búsqueda*
+![Filtros de búsqueda en AEM y recursos de Adobe Stock resaltados en los resultados de búsqueda](assets/aem-search-filters2.jpg)
+
+*Figura: Filtros de búsqueda en AEM y recursos de Adobe Stock resaltados en los resultados de búsqueda*
 
 ### Guardar y ver los recursos necesarios {#saveassets}
 
@@ -86,7 +90,9 @@ La próxima vez que busque recursos, los recursos guardados se resaltarán con u
 
 Los usuarios pueden obtener licencias de recursos de Adobe Stock mediante la cuota de su plan de Adobe Stock Enterprise. Al otorgar licencias a un recurso, éste se guarda sin marca de agua y está disponible para su búsqueda y uso en Recursos AEM.
 
-![Cuadro de diálogo para obtener la licencia y guardar recursos de Adobe Stock en Recursos](assets/aem-stock_licenseandsave.jpg)AEM *Figura: Cuadro de diálogo para obtener la licencia y guardar recursos de Adobe Stock en Recursos AEM*
+![Cuadro de diálogo para obtener la licencia y guardar recursos de Adobe Stock en Recursos AEM](assets/aem-stock_licenseandsave.jpg)
+
+*Figura: Cuadro de diálogo para obtener la licencia y guardar recursos de Adobe Stock en Recursos AEM*
 
 ### Acceso a metadatos y propiedades de recursos {#access-metadata-and-asset-properties}
 
@@ -96,7 +102,7 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 ![Visualización y acceso a metadatos y referencias de licencia de recursos guardados](assets/metadata_properties.jpg)
 
-**** Figura: *Visualización y acceso a metadatos y referencias de licencia de recursos guardados*
+*Figura: Visualización y acceso a metadatos y referencias de licencia de recursos guardados*
 
 ## Limitaciones conocidas {#known-limitations}
 

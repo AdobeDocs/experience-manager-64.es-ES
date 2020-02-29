@@ -3,7 +3,7 @@ title: Metadatos en cascada
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    ![Metadatos en cascada para un recurso de vídeo](assets/video_asset.png)
 
-   **** Figura: Metadatos en *cascada para el recurso de vídeo*
+   *Figura: Metadatos en cascada para un recurso de vídeo*
 
    ![Metadatos en cascada para el recurso de documento](assets/doc_type_fields.png)
 
-   **** Figura: Metadatos en *cascada para el recurso de documento*
-
+   *Figura: Metadatos en cascada para el recurso de documento*

@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 154f92ac459ff4d4a69bcad9b8beae440582beec
+source-git-commit: 274c043eadbb6dda125062bf53ed145a5b101a2e
 
 ---
 
@@ -215,7 +215,7 @@ Options:
 
 A continuación se indican algunas tareas comunes realizadas en VLT. Para obtener información detallada sobre cada comando, consulte los [comandos](#vlt-commands)individuales.
 
-### Comprobación de un árbol de subárbol {#checking-out-a-subtree}
+### Extracción de un subárbol {#checking-out-a-subtree}
 
 Si sólo desea extraer un subárbol del repositorio, por ejemplo, `/apps/geometrixx`, puede hacerlo escribiendo lo siguiente:
 

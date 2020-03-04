@@ -4,7 +4,7 @@ description: Obtenga información sobre varias tareas de edición y administraci
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
+source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 ---
 
@@ -21,7 +21,9 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 
 >[!NOTE]
 >
->No se puede compartir una carpeta de recursos del tipo `sling:OrderedFolder` al compartirla en Marketing Cloud. Si desea compartir una carpeta, no seleccione Pedido al crear una carpeta.
+>* No se puede compartir una carpeta de recursos del tipo `sling:OrderedFolder` al compartirla en Marketing Cloud. Si desea compartir una carpeta, no seleccione Pedido al crear una carpeta.
+>* Experience Manager no permite usar `subassets` palabras como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subrecursos para los recursos compuestos.
+
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una nueva carpeta.
 1. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.

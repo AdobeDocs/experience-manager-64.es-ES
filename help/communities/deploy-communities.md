@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -123,7 +123,7 @@ Los pasos necesarios son:
    * Examinar... para seleccionar el paquete extraído del archivo ZIP descargado
    * Compruebe que el controlador JDBC de *Oracle Corporation para MySQLcom.mysql.jdbc* está activo y comience si no (o compruebe los registros)
 
-1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a vincular JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
+1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a conectar JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
 
    * Por ejemplo, http://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` configuración
@@ -132,7 +132,7 @@ Los pasos necesarios son:
 
 1. Repita los pasos 3 y 4 en todas las instancias de creación y publicación
 
-Encontrará más información sobre la instalación de paquetes en la página Consola [](../../help/sites-deploying/configuring-web-console.md#bundles) web.
+Encontrará más información sobre la instalación de paquetes en la página Consola [](/help/sites-deploying/web-console.md#bundles) web.
 
 #### Ejemplo: Paquete de conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
@@ -198,7 +198,7 @@ La descarga avanzada de MLS (también conocida como &#39;phasetwo&#39;) está di
    * Versión 1.2.40, 6 de abril de 2016
    * Descargar AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
-Para obtener más información sobre la instalación y los detalles, visite [Solr Configuration](solr.md) for SRP.
+Para obtener información detallada y sobre la instalación, visite [Solr Configuration](solr.md) for SRP.
 
 ### Acerca de los vínculos para compartir paquetes {#about-links-to-package-share}
 
@@ -316,7 +316,7 @@ Para habilitar el servicio de túnel:
 
 * Localice la variable `AEM Communities Publish Tunnel Service`
 * Seleccione el icono de edición
-* Marque la casilla **[!UICONTROL habilitar]**
+* Marque la casilla **[!UICONTROL habilitar]** .
 * Seleccione **[!UICONTROL Guardar]**
 
 ![chlimage_1-414](assets/chlimage_1-414.png)

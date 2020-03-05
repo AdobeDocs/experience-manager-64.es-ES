@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ Para crear un proyecto de demostración de Pantallas y publicar su contenido en 
 
 ## Inicio de un nuevo proyecto de AEM Screens {#starting-a-new-aem-screens-project}
 
-El inicio de una nueva experiencia de publicidad dinámica requiere una cohesión de funciones antes de que esté lista para el consumo. Las siguientes funciones proporcionan un punto de partida para crear un nuevo proyecto de Pantallas:
-
-* [Creación](authoring-screens.md)
-* [Desarrollador](developing-screens.md)
-* [Administrador del sistema/Técnico](administering-screens.md)
+El inicio de una nueva experiencia de publicidad dinámica requiere una cohesión de funciones antes de que esté lista para el consumo.
 
 La siguiente figura define las personalidades y sus funciones para las pantallas de AEM.
 
@@ -55,7 +51,7 @@ La siguiente figura define las personalidades y sus funciones para las pantallas
 
 >[!NOTE]
 >
->*Además, para ver las diferentes responsabilidades según las funciones, haga clic en las personas mencionadas anteriormente.*
+>*Además, para ver las diferentes responsabilidades según las funciones, haga clic en las personas mencionadas arriba.*
 
 ## Conocimiento previo requerido {#prerequisite-knowledge}
 

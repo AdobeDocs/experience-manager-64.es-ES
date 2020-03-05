@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -119,7 +119,8 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Esquema de metadatos de carpeta](folder-metadata-schema.md)
    + [Administración de etiquetas inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuración de la integración de AEM Assets con Brand Portal](brand-portal-configuring-integration.md)
+   + [Configuración de AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Publicación de recursos en Brand Portal](brand-portal-publish-assets.md)
    + [Publicar colecciones en Brand Portal](brand-portal-publish-collection.md)
    + [Publicar carpetas en Brand Portal](brand-portal-publish-folder.md)
 + Fragmentos de contenido {#fragments}
@@ -154,7 +155,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [Uso del rastreador de páginas y código incrustado en páginas web](touch-ui-using-page-tracker.md)
    + [Administración de recursos compuestos](managing-linked-subassets.md)
    + [Recursos relacionados](related-assets.md)
-   + [ Información sobre Assets](touch-ui-asset-insights.md)
+   + [Información sobre Assets ](touch-ui-asset-insights.md)
    + [Búsqueda de recursos de vídeo](search-video-assets.md)
    + [Uso compartido de carpetas privadas](private-folder.md)
    + [Directrices de formación de Smart Content Service](smart-tags-training-guidelines.md)

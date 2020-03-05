@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
 seo-title: Creación de contenido para Adobe PhoneGap Enterprise
-description: 'Esta página sirve como punto de partida para desarrollar aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con páginas de AEM. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido. '
-seo-description: 'Esta página sirve como punto de partida para desarrollar aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con páginas de AEM. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido. '
+description: Esta página sirve como punto de partida para desarrollar aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con páginas de AEM. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido.
+seo-description: Esta página sirve como punto de partida para desarrollar aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con páginas de AEM. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: 6b1052ff03f336fa102b8863fe138e91c6e9f2f7
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -35,7 +35,7 @@ Los siguientes recursos le ayudarán a iniciarse en AEM Mobile mediante Adobe Ph
 * [Servicios de contenido de AEM Mobile: Información general](/help/mobile/develop-content-as-a-service.md)
 
    * Para habilitar los Servicios de contenido y los Modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
-   * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/models-in-repository.md)
+   * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
    * Para obtener más información sobre Representación y envío, consulte [Representación y envío de servicios de contenido](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]

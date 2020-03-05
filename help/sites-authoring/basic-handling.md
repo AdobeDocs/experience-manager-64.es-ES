@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -112,10 +112,6 @@ Las opciones disponibles en estos paneles se describen a continuación.
   <tr>
    <td>Proyectos</td> 
    <td>La <a href="/help/sites-authoring/touch-ui-managing-projects.md">consola Proyectos le permite acceder directamente a sus proyectos</a>. Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a medios, flujos de trabajo y tareas, para que todos los miembros puedan trabajar en un objetivo común. <br /> </td> 
-  </tr>
-  <tr>
-   <td>Pantallas</td> 
-   <td>Las <a href="/help/screens/authoring-screens.md">pantallas</a> le permiten administrar todas sus pantallas de cliente, de cualquier tamaño y en cualquier lugar.</td> 
   </tr>
   <tr>
    <td>Sitios</td> 
@@ -320,13 +316,13 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td> 
    <td>
     <ul> 
-     <li><br /> Escritorio: Pase el ratón por encima y, a continuación, utilice la acción rápida de marca de verificación</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> Escritorio:Haga clic en la tarjeta</li> 
-     <li><br /> Dispositivo móvil:Puntee en la tarjeta</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>

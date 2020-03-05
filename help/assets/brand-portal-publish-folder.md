@@ -3,14 +3,14 @@ title: Publicar carpetas en Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de carpetas en Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
-Como administrador de Recursos Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) de su organización. Sin embargo, primero debe integrar Recursos AEM con Brand Portal. Para obtener más información, consulte [Configuración de la integración de AEM Assets con Brand Portal](brand-portal-configuring-integration.md).
+Como administrador de Recursos Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) de su organización. Sin embargo, primero debe integrar Recursos AEM con Brand Portal. Para obtener más información, consulte [Configuración de AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Después de publicar un recurso o una carpeta, estará disponible para los usuarios de Brand Portal.
 

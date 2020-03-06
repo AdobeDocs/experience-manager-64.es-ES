@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Deploying Guide
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
 
 ---
 
@@ -57,6 +57,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [Guía de rendimiento de recursos](assets-performance-sizing.md)
    + [Artículos de procedimientos de configuración](ht-deploy.md)
    + [Eliminación de sitios de Geometrixx](removing-the-geometrixx-sites.md)
+   + [Configuración de la consola web](configuring-web-console.md)
 + Actualización a AEM 6.4 {#upgrading}
    + [Actualización a AEM 6.4](upgrade.md)
    + [Planificación de la actualización](upgrade-planning.md)
@@ -87,7 +88,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Prácticas recomendadas  {#practices}
++ Prácticas recomendadas   {#practices}
    + [Implementación de optimizaciones](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)

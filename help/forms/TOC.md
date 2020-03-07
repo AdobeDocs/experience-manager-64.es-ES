@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.4 Forms User Guide
 translation-type: tm+mt
-source-git-commit: 6546a047d3013740be93b739ccd880c685250200
+source-git-commit: 7aa8c789830ca6544c72f0086b186cffd939faec
 
 ---
 
@@ -24,14 +24,14 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + Tutorial: Crear el primer formulario adaptable {#create-first-adaptive-form}
       + [Tutorial: Crear el primer formulario adaptable](using/create-your-first-adaptive-form.md)
       + [Tutorial: Creación de un formulario adaptable](using/create-adaptive-form.md)
-      + [Tutorial:Crear modelo de datos de formulario](using/create-form-data-model.md)
+      + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model.md)
       + [Tutorial: Aplicar reglas a los campos de formulario adaptables l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo del formulario adaptable](using/style-your-adaptive-form.md)
    + Tutorial: Crear la primera comunicación interactiva {#create-first-interactive-communication}
-      + [Tutorial:Cree su primera comunicación interactiva](using/create-your-first-interactive-communication.md)
+      + [Tutorial: Cree su primera comunicación interactiva](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planificar la comunicación interactiva](using/planning-interactive-communications.md)
-      + [Tutorial:Crear modelo de datos de formulario](using/create-form-data-model0.md)
-      + [Tutorial:Creación de fragmentos de documento](using/create-document-fragments.md)
+      + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model0.md)
+      + [Tutorial: Creación de fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Creación de plantillas](using/create-templates-print-web.md)
       + [Tutorial: Crear comunicación interactiva](using/create-interactive-communication0.md)
    + Materiales de referencia de formularios AEM {#aem-forms-reference-collaterals}
@@ -308,7 +308,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
    + [Adición de propiedades personalizadas a los recursos de Correspondencia](using/add-custom-properties-cm-assets.md)
    + [Personalizar la interfaz de usuario para crear correspondencia](using/customize-create-correspondence-ui.md)
    + [Personalizar editor de texto](using/customize-text-editor.md)
-   + [Administración de correspondencia:Resolución de problemas](using/cm-troubleshooting.md)
+   + [Administración de correspondencia: Resolución de problemas](using/cm-troubleshooting.md)
    + [API para acceder a instancias de letras](using/cm-apis-to-access-letter-instances.md)
    + [Integración de la interfaz de usuario Crear correspondencia con su portal personalizado](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Caracteres especiales personalizados en la administración de correspondencias](using/custom-special-characters.md)
@@ -612,6 +612,7 @@ source-git-commit: 6546a047d3013740be93b739ccd880c685250200
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}
          + [Invocación de formularios AEM mediante solicitudes REST](developing/invoking-aem-forms-using-rest.md)
          + [Invocación de formularios AEM mediante Remoting](developing/invoking-aem-forms-using-remoting.md)
+         + [Invocación de AEM Forms mediante servicios Web](developing/invoking-aem-forms-using-web.md)
          + [Invocación de AEM Forms mediante servicios Web](developing/invoking-human-centric-long-lived.md)
          + [Invocación de AEM Forms mediante JavaAPI](developing/invoking-aem-forms-using-java.md)
          + [Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP](developing/creating-flash-builder-applications-perform.md)

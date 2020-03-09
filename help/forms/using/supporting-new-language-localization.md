@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
 
 ---
 
@@ -30,7 +30,7 @@ Cuando se procesa un formulario adaptable, identifica la configuración regional
 
 * Parámetro de solicitud `afAcceptLang`
 
-   Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud para forzar la configuración regional. `afAcceptLang` Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa:
+   Para anular la configuración regional del navegador de los usuarios, puede pasar el parámetro de la `afAcceptLang` solicitud para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa:
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
@@ -44,7 +44,7 @@ Si no existe una biblioteca de cliente para la configuración regional solicitad
 
 ## Adición de asistencia para la localización en configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
-Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-br), chino (zh-tn), chino-Taiwán (zh-tw) y coreano (ko-kr).
+Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR, chino (zh-CN), chino-Taiwán (zh-TW) y coreano (ko-KR).
 
 Para añadir compatibilidad con una nueva configuración regional en tiempo de ejecución de formularios adaptables:
 
@@ -97,12 +97,12 @@ LogMessages.js
 
 ### Agregar compatibilidad con la configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
 
-Realice este paso sólo si el `<locale>` que está agregando no es `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw``ja``ko-kr`.
+Realice este paso sólo si el `<locale>` que está agregando no es `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw``ja``ko-kr`.
 
 1. Cree un `nt:unstructured` nodo `languages` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena con varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los `<locale>` valores de configuración regional predeterminados `de``es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja``ko-kr`, si no están presentes.
+1. Agregue los `<locale>` valores de configuración regional predeterminados `de``es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja``ko-kr`, si no están presentes.
 
 1. Agregue el `<locale>` a los valores de la `languages` propiedad de `/etc/languages`.
 

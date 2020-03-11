@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -11,6 +11,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
 
 Los recursos digitales suelen estar asociados a una licencia, que especifica sus términos y duración de uso. Puesto que Recursos Adobe Experience Manager (AEM) está totalmente integrado con la plataforma AEM, puede administrar de forma eficaz la información de caducidad de recursos y los estados de los mismos. También puede asociar información de licencias con recursos.
+
+<!-- TBD see if adding more UICONTROL tags is needed -->
 
 ## Caducidad del recurso {#asset-expiration}
 
@@ -20,21 +22,21 @@ Puede ver el estado de caducidad de un recurso en la consola Recursos, tanto en 
 
 **Vista de tarjeta**
 
- Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
+Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
 **Vista de lista**
 
- En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
+En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
- Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
+Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo en el menú GlobalNav.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
- También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
+También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
 1. Vaya al recurso para el que desea ver las páginas Web de referencia y los recursos compuestos.
 1. Seleccione el recurso y toque o haga clic en el icono de navegación global.

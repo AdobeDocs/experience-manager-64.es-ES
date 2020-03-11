@@ -1,17 +1,9 @@
 ---
 title: Configuración de los complementos del editor de texto enriquecido
-seo-title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
-seo-description: Aprenda a configurar los complementos del editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -134,11 +126,11 @@ Puede preconfigurar el comportamiento del icono **[!UICONTROL Pegar (Ctrl+V)]** 
 
 La configuración permite los siguientes tres tipos de casos de uso:
 
-*  Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas. Configurado usando `browser` abajo.
+* Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas. Configurado usando `browser` abajo.
 
-*  Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM. Configurado usando `plaintext` abajo.
+* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM. Configurado usando `plaintext` abajo.
 
-*  Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial. Configurado usando `wordhtml` abajo.
+* Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial. Configurado usando `wordhtml` abajo.
 
 1. En el componente, desplácese hasta el `<rtePlugins-node>/edit` nodo. Cree los nodos si no existen. Para obtener más información, consulte [Activación de un complemento](#activateplugin).
 1. En el `edit` nodo, cree una propiedad con los siguientes detalles:
@@ -484,7 +476,7 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
 
 1. Guarde los cambios.
 
-   Por ejemplo, si define un intervalo de 9998 a 10000, obtendrá los siguientes caracteres.
+   Por ejemplo, si define un intervalo de 9998 a 10000, se proporcionan los siguientes caracteres.
 
    ![En CRXDE, defina un rango de caracteres para que estén disponibles en RTE](assets/chlimage_1-413.png)
 
@@ -557,7 +549,7 @@ Repita los pasos anteriores para cada estilo requerido.
 
 ### Configurar encabezados ocultos en tablas para accesibilidad {#hiddenheader}
 
-A veces, puede crear tablas de datos sin texto visual en un encabezado de columna suponiendo que el propósito del encabezado se vea implicado en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda del encabezado para permitir que los lectores de pantalla y otras tecnologías de asistencia puedan ayudar a los lectores con diversas necesidades a comprender el propósito de la columna.
+A veces, puede crear tablas de datos sin texto visual en un encabezado de columna suponiendo que el propósito del encabezado se vea implicado en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda de encabezado para permitir que los lectores de pantalla y otras tecnologías de asistencia puedan ayudar a los lectores con diversas necesidades a comprender el propósito de la columna.
 
 Para mejorar la accesibilidad en estos escenarios, RTE admite celdas de encabezado ocultas. Además, proporciona opciones de configuración relacionadas con encabezados ocultos en tablas. Esta configuración permite aplicar estilos CSS a encabezados ocultos en los modos de edición y vista previa. Para ayudar a los autores a identificar encabezados ocultos en el modo de edición, incluya los siguientes parámetros en el código:
 
@@ -594,7 +586,7 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 1. Seleccione el idioma requerido y descargue el archivo ZIP con las definiciones de ortografía. Extraiga el contenido del archivo en su sistema de archivos.
 
    >[!CAUTION]
-   Solo se admiten los diccionarios con el `MySpell` formato OpenOffice.org v2.0.1 o anterior. Dado que los diccionarios ahora son archivos de archivo, se recomienda verificar el archivo después de descargarlo.
+   Solo se admiten los diccionarios con el `MySpell` formato OpenOffice.org v2.0.1 o anterior. Dado que los diccionarios ahora son archivos de archivo, se recomienda que verifique el archivo después de descargarlo.
 
 1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.

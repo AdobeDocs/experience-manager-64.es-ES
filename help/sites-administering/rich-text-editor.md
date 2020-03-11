@@ -1,16 +1,9 @@
 ---
 title: Configuración del editor de texto enriquecido
-seo-title: Configuración del editor de texto enriquecido
 description: Aprenda a configurar el editor de texto enriquecido de AEM.
-seo-description: Aprenda a configurar el editor de texto enriquecido de AEM.
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01a748a6f6f92c752fc6a14005f236fee304c2eb
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -25,26 +18,27 @@ El flujo de trabajo siguiente ilustra el orden recomendado para completar las ta
 
 ![Flujo de trabajo habitual para configurar el Editor de texto enriquecido](assets/rte_workflow_v1.png)
 
-**** Figura: Flujo de trabajo *típico para configurar el Editor de texto enriquecido*
+*Figura: Flujo de trabajo habitual para configurar el Editor de texto enriquecido*
 
 ## Comprender la IU táctil y la IU clásica {#understand-touch-enabled-ui-and-classic-ui}
 
-La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación.La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
+La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
 
 ![Barra de herramientas del Editor de texto enriquecido en la IU táctil](assets/chlimage_1-404.png)
 
-**** Figura: Barra de herramientas del Editor de texto *enriquecido en la IU táctil*
+*Figura: Barra de herramientas del Editor de texto enriquecido en la IU táctil*
 
 ![Barra de herramientas del Editor de texto enriquecido en la IU clásica](assets/rtedefault.png)
 
-**** Figura: Barra de herramientas del Editor de texto *enriquecido en la IU clásica*
+*Figura: Barra de herramientas del Editor de texto enriquecido en la IU clásica*
 
-**Consulte también**:
+>[!MORELIKETHIS]
+>
+>* [Recomendaciones de la interfaz de usuario](/help/sites-deploying/ui-recommendations.md)
+>* Acerca de la desaprobación de la IU clásica, consulte Notas de la versión de [AEM 6.4](/help/release-notes/deprecated-removed-features.md)
+>* Para ver las diferencias entre las IU, consulte IU [táctil y IU clásica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* Para comprender la IU táctil en detalle, consulte [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md)
 
-* [Recomendaciones de la interfaz de usuario](/help/sites-deploying/ui-recommendations.md)
-* Acerca de la desaprobación de la IU clásica, consulte Notas de la versión de [AEM 6.4](/help/release-notes/deprecated-removed-features.md)
-* Para ver las diferencias entre las IU, consulte IU [táctil y IU clásica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* Para comprender la IU táctil en detalle, consulte [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md)
 
 ## Diversos modos de edición {#editingmodes}
 
@@ -100,7 +94,7 @@ Cuando se abre (con un doble toque o clic lento), el contenido se puede editar d
 
 ![Edición en línea con la barra de herramientas básica en la IU táctil](assets/chlimage_1-405.png)
 
-**** Figura: Edición *en línea con una barra de herramientas básica en la IU táctil*
+*Figura: Edición en línea con la barra de herramientas básica en la IU táctil*
 
 En la IU clásica, un doble clic lento en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si Content Finder está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si Content Finder no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones básicas de texto.
 
@@ -112,19 +106,19 @@ El modo de pantalla completa del cuadro de diálogo proporciona una barra de her
 
 ![Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU táctil](assets/chlimage_1-406.png)
 
-**** Figura: *La barra de herramientas detallada de RTE al editar en modo de pantalla completa en la IU táctil*
+*Figura: Barra de herramientas RTE detallada al editar en modo de pantalla completa en la IU táctil*
 
 ### Edición de cuadro de diálogo {#dialog-editing}
 
-Cuando se hace doble clic en un componente en la IU clásica, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página de varias columnas y el área disponible para el cuadro de diálogo es menor.
+Cuando se hace doble clic en un componente en la IU clásica, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página con varias columnas y el área disponible para el cuadro de diálogo es menor.
 
 ![Modo de edición de cuadro de diálogo en la IU táctil](assets/dialog_editing_modetouchui.png)
 
-**** Figura: Modo de edición *del cuadro de diálogo en la IU táctil*
+*Figura: Modo de edición de cuadro de diálogo en la IU táctil*
 
 ![Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para la edición](assets/chlimage_1-407.png)
 
-**** Figura: Cuadro de *diálogo en la IU clásica que contiene una barra de herramientas detallada para editarla*
+*Figura: Cuadro de diálogo en la IU clásica que contiene una barra de herramientas detallada para la edición*
 
 ## Acerca de los complementos RTE y las funciones asociadas {#aboutplugins}
 

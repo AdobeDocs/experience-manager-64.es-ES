@@ -3,7 +3,7 @@ title: Buscar recursos en AEM
 description: Obtenga información sobre cómo encontrar los recursos necesarios en AEM mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -26,6 +26,8 @@ Puede realizar búsquedas en función de las siguientes opciones (predicados):
 * Orientación
 * Estilo
 * Perspectivas
+
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
 Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](search-facets.md)búsqueda. Para mostrar el panel Filtros, lleve a cabo estos pasos:
 

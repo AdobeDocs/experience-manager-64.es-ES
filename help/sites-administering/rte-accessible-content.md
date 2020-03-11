@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM admite ambos:
 
 >[!NOTE]
 >
->Consulte también:
->
->* nuestra [Guía rápida para WCAG 2.0](/help/managing/qg-wcag.md) si desea más información
+>* [Guía rápida de WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Creación de contenido accesible (conformidad con WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Los autores de contenido pueden utilizar funciones de RTE para proporcionar información de accesibilidad al añadir contenido a una página. Esto puede incluir agregar información estructural a través de encabezados y elementos de párrafo.
@@ -86,7 +82,7 @@ Los nuevos formatos de bloque semántico pueden estar disponibles para su selecc
    * Uso del campo **Formato** (selector desplegable) en la IU clásica.
 
 
-Con los elementos estructurales disponibles en RTE mediante las opciones de formato de párrafo, AEM ofrece una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales seleccionados en la opción Estilos. Esto garantiza la limpieza de las marcas, así como mayores opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
+Con los elementos estructurales disponibles en RTE mediante las opciones de formato de párrafo, AEM ofrece una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales seleccionados en la opción Estilos. Esto garantiza la limpieza de las marcas, buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
 
 ## Uso de la función de edición de origen {#use-of-the-source-edit-feature}
 
@@ -196,7 +192,7 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
    }
    ```
 
-1. Guardar los cambios con **Guardar todo...**
+1. Guardar los cambios con **Guardar todo**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
 >
 >* La `itemId` propiedad de cada campo correspondiente se establece en el nombre del atributo DOM (`TablePropertiesDialog`) correspondiente.
 >* El atributo se establece y/o elimina en el elemento DOM explícitamente (`Table`).
-
 

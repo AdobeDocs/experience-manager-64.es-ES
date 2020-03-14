@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
+source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 
 ---
 
@@ -360,7 +360,7 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 * Se ha agregado compatibilidad para el seguimiento de estados de IU dinámicas en el seguimiento de eventos en la API de base.
 * Se ha añadido la compatibilidad de representación al componente principal de la imagen.
 
-**Assets**
+**Recursos**
 
 * Asset share link of a folder with space and `&` character in the name displays blank gray cards for some assets. NPR-29934: revisión para CQ-4270187
 * El flujo de trabajo de DAM se bloquea al crear recursos MP4 para AEM. NPR-30031: revisión para CQ-4271352
@@ -513,7 +513,7 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 * Se ha deshabilitado el componente `AssetDownloadServlet` OSGi de forma predeterminada en las instancias de publicación de AEM. Para obtener más información, consulte [Descargar recursos de AEM](/help/assets/download-assets-from-aem.md).
 * Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. For more information, see [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md).
 
-**Assets**
+**Recursos**
 
 * Los recursos con un apóstrofo en el nombre de archivo no se sincronizan con Dynamic Media. NPR-29538: revisión para CQ-4270592
 * Se ha actualizado la interfaz DAM DMGgateway para que sea compatible con varias partes de S3. NPR-29740: revisión para CQ-4226303
@@ -720,7 +720,7 @@ Los aspectos destacados de los formularios de AEM 6.4.5.0 son:
 
 **Paquetes de funciones incluidos**
 
-**Assets**
+**Recursos**
 
 * Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. For more information, see [Reuse assets using MSM for Assets](/help/assets/reuse-assets-using-msm.md). NPR-26450: revisión para CQ-4259922
 
@@ -756,7 +756,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * Se ha agregado una comprobación para ignorar los valores vacíos de los campos de entrada numérica en los clientes del fragmento de contenido.
 * Se ha habilitado la compatibilidad con Microsoft Translator Text API v3.
 
-**Assets**
+**Recursos**
 
 * Migración de la integración de ACP y existencias a AEM 6.4.4.0 NPR-27632
 * Publicar posteriormente una carpeta de recursos vacía con subcarpetas hace que desaparezcan las subcarpetas. NPR-27558: revisión para CQ-4254701
@@ -1036,7 +1036,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 * Se ha mejorado el manejo de los elementos de marcador de posición (vista de tarjeta y vista de lista) durante la selección.
 * Se agregó la autenticación IMS de Adobe y la compatibilidad de la Consola de administración para los servicios administrados.
 
-**Assets**
+**Recursos**
 
 * El flujo de trabajo de recursos de actualización de DAM no extrae referencias de archivos INDD si la opción ID Decouple está activada. NPR-26243; Revisión para CQ-4250933
 * El mensaje de éxito no se muestra cuando los recursos se publican con el Editor masivo de recursos. NPR-26252; Revisión para CQ-4251688.
@@ -1299,7 +1299,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * Se ha actualizado GCC a la versión más reciente.
 * Mueva SAML a una nueva sincronización de IDP externa.
 
-**Assets**
+**Recursos**
 
 * La generación de subrecursos para el archivo pptx no contiene imágenes ni miniaturas. NPR-24286: revisión para CQ-4217986
 * migrarTodosRecursos: agregue compatibilidad para el procesamiento por lotes y mejore el método AEM que agrega UUID a los recursos antiguos. NPR-24861: Revisión para CQ-4242863 y CQ-4247874
@@ -1646,7 +1646,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 **Paquetes de funciones incluidos**
 
-**Assets**
+**Recursos**
 
 * Se ha añadido [la integración con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que los usuarios puedan buscar, previsualizar, guardar y licenciar recursos de Adobe Stock directamente desde la interfaz de usuario de AEM. Para obtener más información, consulte [Uso de recursos de Adobe Stock con recursos]AEM (https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html). NPR-15779: revisión para CQ-30857
 * Se agregó compatibilidad con el metaesquema condicional dinámico. For more information, see [Cascading Metadata](/help/assets/cascading-metadata.md). NPR-25189: revisión para CQ-4237413
@@ -1693,7 +1693,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Se ha agregado compatibilidad con ARIA de validación de correo electrónico.
 * Respaldo proactivo para correcciones de platform.clientlibs.
 
-**Assets**
+**Recursos**
 
 * El valor desplegable en cascada muestra en blanco al volver a abrir la página de propiedades de recursos. NPR-23042: revisión para CQ-4238761
 * Los vínculos compartidos en la página mylinkshare y los vínculos a la página no están disponibles para el usuario no administrador NPR-23044: Revisión para CQ-4239004
@@ -1862,10 +1862,10 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Regresión en OOB VideoViewer 5.8.x: el visor expande el iframe a la derecha, con lo que se rompe el diseño de la página. Revisión para CQ-4235465
 * (DMS7) La URL de representación de recorte inteligente y los botones Incrustar están activos para las imágenes que no se han publicado. Revisión para CQ-4233696
 * (DMHybrid) Restaure la función de rotación/recorte anterior. Revisión para CQ-4239489
-* Al obtener una vista previa de un vídeo en la vista de tarjeta, el botón de reproducción no cambia a pausa. Revisión para CQ-4238592
+* Cuando se obtiene una vista previa de un vídeo en la vista de tarjeta, el botón de reproducción no cambia a pausa. Revisión para CQ-4238592
 * Al realizar una actualización de inclusión, la configuración de YouTube no se mueve ni copia de su ubicación antigua a la nueva ubicación. Revisión para CQ-4238590
 * DropDos perfiles de procesamiento de vídeo AVS de OOTB se enumeran en Propiedades de carpeta y solo uno contiene codificaciones definidas. Revisión para CQ-4238096
-* (DMS7) Recorte inteligente: Vista de detalles: El botón URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
+* (DMS7) Recorte inteligente: Vista de detalles: El botón de URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
 * La página de lista de ajustes preestablecidos de visor permanece en blanco incluso después de ejecutar los comandos curl. Revisión para CQ-4243246
 * Se ha deshabilitado la ejecución manual de pasos de limpieza y el uso de clases de coral privadas. Revisión para CQ-4239729
 * La página Detalles del informe de video no muestra recursos de video. Revisión para CQ-4246208
@@ -2055,7 +2055,7 @@ Los aspectos destacados de AEM Forms son:
 
 **Paquetes de funciones incluidos**
 
-**Assets**
+**Recursos**
 
 * Se ha agregado la capacidad de Etiquetas inteligentes mejoradas. Para obtener más información, consulte Etiquetas inteligentes [mejoradas](https://helpx.adobe.com/experience-manager/6-4/assets/using/enhanced-smart-tags.html). NPR-21951: revisión para CQ-4234883
 * Se han introducido referencias de AEM Assets en InDesign. Para obtener más información, consulte Referencias de recursos de [AEM en InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
@@ -2206,7 +2206,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.0</version>
+      <version>6.4.8</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
@@ -2218,7 +2218,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado o dejado 
 
 | Área | Función | Reemplazo | Versión |
 |---|---|---|---|
-| Assets | Administrar acción de etiqueta para subrecursos | Sin reemplazo | AEM 6.4.2.0 |
+| Recursos | Administrar acción de etiqueta para subrecursos | Sin reemplazo | AEM 6.4.2.0 |
 | Integración de Assets y Adobe Creative Cloud | [AEM to Creative Cloud folder sharing](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) se introdujo en AEM 6.2 como una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM. Adobe Asset Link, la nueva capacidad de la aplicación Creative Cloud, proporciona experiencia de usuario mejorada y un acceso más eficaz a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no realizará más mejoras en la funcionalidad de uso compartido de carpetas. Aunque la función está incluida en AEM, se recomienda encarecidamente a los clientes que utilicen la sustitución. | Adobe Asset Link o aplicación de escritorio. Para obtener más información, consulte el artículo sobre la [integración de AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ### Problemas conocidos {#known-issues}

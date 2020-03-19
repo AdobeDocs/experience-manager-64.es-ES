@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -76,7 +76,7 @@ A continuación se indican los pasos necesarios para habilitar la sincronizació
 * [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latest-releases)
 
-### 1.Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Habilitar sincronización de usuario**
 
@@ -154,7 +154,7 @@ Consulte también
 * [Administración de derechos de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sección Resolución de problemas [Modificar excepción de operación durante el procesamiento](#modify-operation-exception-during-response-processing)de la respuesta.
 
-### 3.Distribución de Adobe Granite: proveedor secreto de transporte de contraseña cifrada {#adobegraniteencpasswrd}
+### 3. Distribución de Adobe Granite: proveedor secreto de transporte de contraseña cifrada {#adobegraniteencpasswrd}
 
 **Configurar permisos**
 
@@ -178,7 +178,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-### 4.Agente de distribución Apache Sling: fábrica de agentes de cola {#apache-sling-distribution-agent-queue-agents-factory}
+### 4. Agente de distribución Apache Sling: fábrica de agentes de cola {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Habilitar sincronización de usuario**
 
@@ -202,7 +202,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5.Distribución de Adobe Granite: Fábrica de observación de diferencias {#diffobserver}
+### 5. Distribución de Adobe Granite: Fábrica de observación de diferencias {#diffobserver}
 
 **Habilitar sincronización de grupos**
 
@@ -224,7 +224,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-### 6.Activador de distribución de Apache Sling: fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Activador de distribución de Apache Sling: fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar el intervalo de sondeo**
 
@@ -252,7 +252,7 @@ De forma predeterminada, el autor sondeará los cambios cada 30 segundos. Para m
 
 La configuración predeterminada es para una sola instancia de publicación. Dado que el motivo para habilitar la sincronización de usuarios es sincronizar varias instancias de publicación, como en un conjunto de publicaciones, las instancias de publicación adicionales deberán agregarse a la fábrica de agentes de sincronización.
 
-### 7.Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory-1}
+### 7. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Agregar instancias de publicación:**
 
@@ -283,7 +283,7 @@ La configuración predeterminada es para una sola instancia de publicación. Dad
 
 * select `Save`
 
-### 8.Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
+### 8. Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
 
 **(Opcional) Sincronizar nodos JCR adicionales**
 
@@ -340,7 +340,7 @@ Si hay datos personalizados que desea sincronizar en varias instancias de public
    * social/relaciones
    * actividades
 
-### 9.ID de Sling único {#unique-sling-id}
+### 9. ID de Sling único {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -350,7 +350,7 @@ Si el ID de Sling es el mismo para varias instancias de publicación en un conju
 
 Para validar que todos los valores de ID de Sling difieran, en cada instancia de publicación:
 
-1. vaya a [https://*host:port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. buscar `http://<host>:<port>/system/console/status-slingsettings`
 1. comprobar el valor de **Sling ID**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)

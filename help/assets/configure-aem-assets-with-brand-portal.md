@@ -3,7 +3,7 @@ title: Configuración de AEM Assets con Brand Portal
 description: 'Obtenga información sobre cómo configurar Recursos AEM con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Asegúrese de que ha realizado los siguientes pasos:
 >
 >Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
 
-<br/> <br/>
 
 ### Configurar servicio de nube {#configure-the-cloud-service}
 

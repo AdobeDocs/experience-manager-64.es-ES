@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -23,7 +23,7 @@ OSGi &quot;*proporciona los primitivos estandarizados que permiten construir apl
 
 Esto permite administrar fácilmente los paquetes, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi (consulte la Especificación [](https://www.osgi.org/Specifications/HomePage)OSGi) está contenido en uno de los distintos paquetes. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos de ellos se mencionan para ayudarle a comprender el funcionamiento de AEM.
+Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos se mencionan para ayudarle a comprender el funcionamiento de AEM.
 
 >[!CAUTION]
 >
@@ -35,7 +35,7 @@ Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son
 
 >[!NOTE]
 >
->La herramienta Detalles [de configuración OSGi de](https://www.aemstuff.com/osgi.html) AEM se puede utilizar para enumerar las configuraciones de OSGi predeterminadas.
+>La herramienta Dif de configuración OSGi, que forma parte de las herramientas [de](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, se puede utilizar para enumerar las configuraciones de OSGi predeterminadas.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son
 
 >[!NOTE]
 >
->Esta configuración debe realizarse utilizando la consola Felix como se necesita al inicio, antes de que el repositorio esté disponible.
+>Esta configuración debe realizarse con la Consola Félix como se necesita al inicio, antes de que el repositorio esté disponible.
 
 **Apache Sling Customizable Request Data Logger** Configure:
 
@@ -92,7 +92,7 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 
 * El cambio de esta configuración puede ayudar al rendimiento en situaciones con un número elevado de eventos; por ejemplo, el uso pesado de AEM DAM o Workflow.
 * Los valores específicos de su escenario deben establecerse mediante pruebas.
-* Esta configuración puede afectar al rendimiento de la instancia, por lo que no debe cambiarla sin motivo ni consideración.
+* Esta configuración puede afectar al rendimiento de la instancia, por lo que no debe cambiarla sin motivo y teniendo debidamente en cuenta.
 
 **Servlet** Apache Sling GET Configure algunos aspectos del procesamiento:
 
@@ -382,7 +382,7 @@ Hay varias propiedades de configuración disponibles:
 >
 >Esta configuración se configura automáticamente para instancias de producción si ejecuta AEM en modo [listo para](/help/sites-administering/production-ready.md)producción.
 
-**Configuración del configurador** del comprobador de vínculos WCM de Day CQ:
+**Configurador** del comprobador de vínculos WCM Day CQ Configurar:
 
 * **Lista de configuraciones** de reescritura para especificar una lista de ubicaciones para configuraciones de comprobador de vínculos basadas en contenido. Las configuraciones pueden basarse en el modo de ejecución; esto es importante para distinguir entre los entornos de autor y publicación, ya que la configuración del comprobador de vínculos puede diferir.
 
@@ -426,7 +426,7 @@ Hay varias propiedades de configuración disponibles:
 
 Consulte Depuración [de versiones](/help/sites-deploying/version-purging.md) para obtener más información.
 
-**Servicio** de notificación por correo electrónico de flujo de trabajo de CQ de día Configure la configuración de correo electrónico de las notificaciones enviadas por un flujo de trabajo.
+**Servicio** de notificación por correo electrónico de flujo de trabajo de CQ diario Configure la configuración de correo electrónico para las notificaciones enviadas por un flujo de trabajo.
 
 **Day CQSE HTTP Service** Control del motor de servlet CQ:
 
@@ -469,7 +469,7 @@ En particular, puede definir `dps.session.service.url.name`: el valor predetermi
 **CDN Rewriter** La comunicación entre AEM y un CDN debe garantizarse para que los recursos y binarios se entreguen al usuario final de forma segura. Esto implica dos tareas:
 
 * Acceso al recurso desde AEM a través de la CDN por primera vez (o después de que caduque en la caché).
-* El acceso seguro al recurso almacenado en la caché en CDN, ya que una vez que el recurso se haya almacenado en la caché en CDN, la solicitud no irá a AEM y todos los usuarios que tengan acceso a ese recurso en deben ser atendidos desde CDN.
+* El acceso seguro al recurso almacenado en caché en CDN, ya que una vez que el recurso se haya almacenado en caché en CDN, la solicitud no irá a AEM y todos los usuarios que tengan acceso a ese recurso en CDN deben recibir servicio de CDN.
 
 AEM proporciona un reescritor para reescribir las URL de recursos internos en URL de CDN externas. Vuelve a escribir los vínculos que se pasarán a la CDN, incluida una firma JWS y un tiempo de caducidad para permitir el acceso seguro al recurso. Esta función se utiliza en instancias de autor.
 

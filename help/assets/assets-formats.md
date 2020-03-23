@@ -3,7 +3,7 @@ title: Formatos de archivo compatibles con AEM Assets
 description: Lista de formatos de archivo y tipos MIME admitidos por Recursos AEM y las funciones admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -18,7 +18,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
 |:---:|---|
-| ✓ | Admitido |
+| ✓ | Compatible |
 | * | Compatible con funciones de complemento |
 | - | No aplicable |
 
@@ -37,10 +37,12 @@ Los formatos de imagen rasterizados admitidos para las funciones de administraci
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
 Los formatos de imagen rasterizados compatibles con las funciones de Dynamic Media son los siguientes:
 
@@ -55,12 +57,12 @@ Los formatos de imagen rasterizados compatibles con las funciones de Dynamic Med
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
- &amp;ast; La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
+**¹** La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
 Además de la información anterior, considere lo siguiente:
 
@@ -204,9 +206,9 @@ Los formatos de archivo admitidos y la aplicabilidad de los flujos de trabajo DA
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast; Los archivos ZIP creados con `Deflate64` el algoritmo tienen compatibilidad limitada con AEM. No se admiten las operaciones de archivado y desarchivado. Sin embargo, se admiten operaciones como cargar, explorar y descargar.
+**²** La imagen combinada se extrae del archivo PSD. Se trata de una imagen generada por Adobe Photoshop y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real. Los archivos ZIP creados con `Deflate64` el algoritmo tienen compatibilidad limitada con AEM. No se admiten las operaciones de archivado y desarchivado. Sin embargo, se admiten operaciones como cargar, explorar y descargar.
 
 ## Otros formatos admitidos {#other-supported-formats}
 
@@ -214,14 +216,14 @@ La aplicabilidad de los flujos de trabajo DAM comunes para algunos otros formato
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Distribución dinámica de medios |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (cuando se configura con su propio dominio de entrega) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Los otros formatos son compatibles con DAM para almacenamiento, control de versiones, ACL, flujo de trabajo, publicación y administración de metadatos.
+**Â** Los otros formatos son compatibles con DAM para almacenamiento, control de versiones, ACL, flujo de trabajo, publicación y administración de metadatos.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -269,7 +271,7 @@ Consulte también [Habilitar la compatibilidad](/help/sites-administering/scene7
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |

@@ -3,7 +3,7 @@ title: Acerca de Recursos AEM
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta de recursos AEM de Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -14,7 +14,7 @@ Assets es una herramienta de gestión de recursos digitales (DAM) totalmente int
 
 ## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
 
-Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz Web (o una carpeta CIFS o WebDAV).
+Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
 AEM Assets está completamente integrado en AEM y permite hacer lo siguiente:
 
@@ -64,21 +64,21 @@ Un activo es, en esencia, un binario más metadatos, representaciones y subactiv
 
 Cuando se trabaja con activos digitales en AEM, debe conocer los siguientes términos:
 
-* **** Colección: Colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección de usuarios (carpetas de caja de luz).
+* **Colección:** Colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección de usuarios (carpetas de caja de luz).
 
-* **** Metadatos: Los recursos tienen metadatos; por ejemplo, autor, fecha de caducidad, Información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. AEM Assets admite los siguientes esquemas comunes de metadatos predefinidos:
+* **Metadatos:** Los recursos tienen metadatos; por ejemplo, autor, fecha de caducidad, Información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. AEM Assets admite los siguientes esquemas comunes de metadatos predefinidos:
 
    * **Dublin Core**: incluyendo autor, descripción, fecha, asunto, etc.
    * **IPTC**: incluyendo evento, modelo, ubicación, etc.
    * **WCM**: incluyendo las propiedades de la página, en tiempo y fuera de tiempo, etc.
 
-* **** Etiquetado: Los recursos se pueden etiquetar y clasificar. Consulte Utilización de etiquetas y Administración de etiquetas.
+* **Etiquetado:** Los recursos se pueden etiquetar y clasificar. Consulte Utilización de etiquetas y Administración de etiquetas.
 
-* **** Representaciones:Una representación es la representación binaria de un recurso. Los recursos siempre tienen una representación principal, que es la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
+* **Representaciones:** Una representación es la representación binaria de un recurso. Los recursos siempre tienen una representación principal, que es la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
 
-* **** Versiones:Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte Creación de versiones en AEM Assets.
+* **Versiones:** Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** Subrecursos: Los subrecursos son recursos que conforman un recurso, por ejemplo, capas en un archivo de Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
+* **Subrecursos:** Los subrecursos son recursos que conforman un recurso, por ejemplo, capas en un archivo de Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
 
 ### Cómo trabajar con activos {#how-to-work-with-assets}
 

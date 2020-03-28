@@ -3,7 +3,7 @@ title: Guía de ajuste del rendimiento de los recursos
 description: Áreas de enfoque clave en la configuración de AEM, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -16,17 +16,17 @@ Además, la identificación y el cumplimiento de determinadas directrices de opt
 
 El bajo rendimiento de Recursos AEM puede afectar a la experiencia del usuario en cuanto al rendimiento interactivo, el procesamiento de recursos, la velocidad de descarga y otras áreas.
 
-De hecho, la optimización del rendimiento es una tarea fundamental que se realiza antes de establecer métricas de objetivo para cualquier proyecto.
+De hecho, la optimización del rendimiento es una tarea fundamental que se realiza antes de establecer métricas de destinatario para cualquier proyecto.
 
 A continuación se indican algunas áreas de enfoque clave en las que se detectan y corrigen los problemas de rendimiento antes de que afecten a los usuarios.
 
 ## Plataforma {#platform}
 
-Aunque AEM es compatible con varias plataformas, Adobe ha encontrado la mayor compatibilidad con herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación más sencilla. Lo ideal es implementar un sistema operativo de 64 bits para cumplir los requisitos de memoria alta de una implementación de AEM Assets. Al igual que con cualquier implementación de AEM, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se ha descubierto que funciona mejor que MongoMK. Puede añadir instancias de descarga de TarMK para aumentar el poder de procesamiento del flujo de trabajo de la implementación de AEM Assets.
+Aunque AEM es compatible con varias plataformas, Adobe ha encontrado la buena compatibilidad con herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación más sencilla. Lo ideal es implementar un sistema operativo de 64 bits para cumplir los requisitos de memoria alta de una implementación de AEM Assets. Al igual que con cualquier implementación de AEM, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se ha descubierto que funciona mejor que MongoMK. Puede agregar instancias de descarga de TarMK para aumentar el poder de procesamiento del flujo de trabajo de la implementación de AEM Assets.
 
 ### Carpeta temporal {#temp-folder}
 
-Para mejorar los tiempos de carga de recursos, utilice almacenamiento de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En entornos basados en la nube, se podría utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temp.
+Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En los entornos basados en la nube, se puede utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad de [disco](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) efímero para la carpeta temp.
 
 Si el servidor tiene una memoria amplia, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
@@ -37,9 +37,9 @@ mkfs -q /dev/ram1 800000
  df -H | grep aem-tmp
 ```
 
-En el sistema operativo Windows, tendría que utilizar un controlador de terceros para crear una unidad de RAM o simplemente usar almacenamiento de alto rendimiento como SSD.
+En el sistema operativo Windows, tendría que utilizar un controlador de terceros para crear una unidad de RAM o simplemente usar almacenamientos de alto rendimiento como SSD.
 
-Una vez que el volumen temporal de alto rendimiento esté listo, establezca el parámetro JVM -Djava.io.tmpdir. Por ejemplo, puede agregar el parámetro JVM siguiente a la variable CQ_JVM_OPTS en la secuencia de comandos bin/start de AEM:
+Una vez que el volumen temporal de alto rendimiento esté listo, establezca el parámetro JVM -Djava.io.tmpdir. Por ejemplo, puede agregar el parámetro JVM siguiente a la variable CQ_JVM_OPTS en la secuencia de comandos bin/inicio de AEM:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -67,7 +67,7 @@ Se recomienda separar el almacén de datos del almacén de segmentos para todos 
 
 ### Configurar el tamaño máximo de la caché de imágenes en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Al cargar grandes cantidades de recursos en Adobe Experience Manager, para permitir picos inesperados en el consumo de memoria y evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes en búfer. Considere un ejemplo en el que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documentos establecida en 2 GB. En este caso, la memoria caché almacenada en el búfer requeriría un máximo de 1,25 GB y memoria, lo que dejaría sólo 0,75 GB de memoria para picos inesperados.
+Al cargar grandes cantidades de recursos en Adobe Experience Manager, para permitir picos inesperados en el consumo de memoria y evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes en búfer. Considere un ejemplo en el que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documento establecida en 2 GB. En este caso, la memoria caché almacenada en el búfer requeriría un máximo de 1,25 GB y memoria, lo que dejaría sólo 0,75 GB de memoria para picos inesperados.
 
 Configure el tamaño de caché en búfer en la consola web OSGi. En `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, establezca la propiedad `cq.dam.image.cache.max.memory` en bytes. Por ejemplo, 1073741824 es 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -104,7 +104,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas empresas tienen servidores de seguridad que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
 
 Principalmente, la estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de AEM. Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -115,9 +115,9 @@ Principalmente, la estrategia de optimización de red depende de la cantidad de 
 
 ## Flujos de trabajo {#workflows}
 
-### Flujos de trabajo transitorios {#transient-workflows}
+### flujos de trabajo transitorios {#transient-workflows}
 
-Siempre que sea posible, establezca el flujo de trabajo de recursos de actualización de DAM en Temporal. La configuración reduce considerablemente los gastos generales necesarios para procesar los flujos de trabajo porque, en este caso, los flujos de trabajo no tienen que pasar por los procesos normales de seguimiento y archivo.
+Siempre que sea posible, establezca el flujo de trabajo de recursos de actualización de DAM en Temporal. La configuración reduce considerablemente los gastos generales necesarios para procesar flujos de trabajo porque, en este caso, los flujos de trabajo no necesitan pasar por los procesos normales de seguimiento y archivo.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Siempre que sea posible, establezca el flujo de trabajo de recursos de actualiza
 1. Abra `http://localhost:4502/miscadmin` la instancia de AEM que desee configurar.
 
 1. En el árbol de navegación, expanda **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Dam]**.
-1. Haga doble clic en **[!UICONTROL DAM Update Asset]**.
+1. Haga clic con el botón Doble **[!UICONTROL en Actualizar recurso]** DAM.
 1. En el panel de herramientas flotante, cambie a la ficha **[!UICONTROL Página]** y, a continuación, haga clic en Propiedades **[!UICONTROL de página]**.
 1. Seleccione Flujo de trabajo **** transitorio Haga clic en **[!UICONTROL Aceptar]**.
 
@@ -134,45 +134,45 @@ Siempre que sea posible, establezca el flujo de trabajo de recursos de actualiza
    >
    >Algunas funciones no admiten flujos de trabajo transitorios. Si la implementación de AEM Assets requiere estas funciones, no configure flujos de trabajo transitorios.
 
-   En los casos en los que no se puedan utilizar flujos de trabajo transitorios, ejecute la depuración de flujo de trabajo con regularidad para eliminar flujos de trabajo de recursos de actualización DAM archivados para garantizar que el rendimiento del sistema no se deteriore.
+   En los casos en los que no se pueden utilizar flujos de trabajo transitorios, ejecute la depuración regular del flujo de trabajo para eliminar flujos de trabajo de recursos de actualización DAM archivados para garantizar que el rendimiento del sistema no se deteriore.
 
-   Normalmente, los flujos de trabajo de depuración se ejecutan semanalmente. Sin embargo, en situaciones de uso intensivo de recursos, como durante la ingestión de recursos a gran escala, puede ejecutarlo con más frecuencia.
+   Normalmente, los flujos de trabajo de depuración se deben ejecutar semanalmente. Sin embargo, en situaciones de uso intensivo de recursos, como durante la ingestión de recursos a gran escala, puede ejecutarlo con más frecuencia.
 
    Para configurar la depuración del flujo de trabajo, agregue una nueva configuración de depuración del flujo de trabajo de Adobe Granite a través de la consola OSGi. A continuación, configure y programe el flujo de trabajo como parte de la ventana de mantenimiento semanal.
 
-   Si la purga dura demasiado tiempo, se agota el tiempo de espera. Por lo tanto, debe asegurarse de que los trabajos de depuración se completan para evitar situaciones en las que los flujos de trabajo de depuración no se completan debido al gran número de flujos de trabajo.
+   Si la purga dura demasiado tiempo, se agota el tiempo de espera. Por lo tanto, debe asegurarse de que los trabajos de depuración se completen para evitar situaciones en las que los flujos de trabajo de purga no se completen debido al elevado número de flujos de trabajo.
 
-   Por ejemplo, después de ejecutar numerosos flujos de trabajo no transitorios (que crean nodos de instancia de flujo de trabajo), puede ejecutar [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) de forma ad-hoc. Elimina inmediatamente las instancias de flujo de trabajo redundantes y completadas en lugar de esperar a que se ejecute el programador de purga de flujo de trabajo de Adobe Granite.
+   Por ejemplo, después de ejecutar numerosos flujos de trabajo no transitorios (que crean nodos de instancia de flujo de trabajo), puede ejecutar [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) de forma ad-hoc. Elimina inmediatamente las instancias de flujo de trabajo redundantes y completadas en lugar de esperar a que se ejecute el Planificador de purga de flujo de trabajo de Adobe Granite.
 
 ### Número máximo de trabajos en paralelo {#maximum-parallel-jobs}
 
-De forma predeterminada, AEM ejecuta un número máximo de trabajos paralelos igual al número de procesadores del servidor. El problema con esta configuración es que durante períodos de carga pesada, todos los procesadores están ocupados por flujos de trabajo de recursos de actualización de DAM, lo que ralentiza la capacidad de respuesta de la interfaz de usuario e impide que AEM ejecute otros procesos que salvaguardan el rendimiento y la estabilidad del servidor. Como práctica recomendada, ajuste este valor a la mitad de los procesadores disponibles en el servidor realizando los siguientes pasos:
+De forma predeterminada, AEM ejecuta un número máximo de trabajos paralelos igual al número de procesadores del servidor. El problema con esta configuración es que durante los períodos de carga pesada, todos los procesadores están ocupados por flujos de trabajo de recursos de actualización DAM, lo que ralentiza la capacidad de respuesta de la interfaz de usuario e impide que AEM ejecute otros procesos que salvaguardan el rendimiento y la estabilidad del servidor. Como práctica recomendada, ajuste este valor a la mitad de los procesadores disponibles en el servidor realizando los siguientes pasos:
 
 1. En AEM Author, vaya a [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
 1. Haga clic en Editar en cada cola de flujo de trabajo que sea relevante para la implementación, por ejemplo, Granite Transient Workflow Queue.
 1. Cambie el valor de Número máximo de trabajos paralelos y haga clic en Guardar.
 
-Establecer una cola para la mitad de los procesadores disponibles es una solución viable para empezar. Sin embargo, es posible que tenga que aumentar o disminuir este número para lograr el máximo rendimiento y ajustarlo por entorno. Hay colas independientes para flujos de trabajo transitorios y no transitorios, así como para otros procesos, como los flujos de trabajo externos. Si varias colas configuradas en el 50% de los procesadores están activas simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas que se utilizan con frecuencia varían considerablemente según las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlas cuidadosamente para lograr la máxima eficacia sin sacrificar la estabilidad del servidor.
+Establecer una cola en la mitad de los procesadores disponibles es una solución viable para el inicio. Sin embargo, es posible que tenga que aumentar o disminuir este número para lograr el máximo rendimiento y ajustarlo por entorno. Hay colas independientes para flujos de trabajo transitorios y no transitorios, así como para otros procesos, como flujos de trabajo externos. Si varias colas configuradas en el 50% de los procesadores están activas simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas que se utilizan con frecuencia varían considerablemente según las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlas cuidadosamente para lograr la máxima eficacia sin sacrificar la estabilidad del servidor.
 
 ### Descarga {#offloading}
 
-Para flujos de trabajo de gran volumen o flujos de trabajo que consumen muchos recursos, como la transcodificación de vídeo, puede descargar flujos de trabajo de recursos de actualización de DAM a una segunda instancia de creación. A menudo, el problema con la descarga es que cualquier carga que se guarde descargando el procesamiento del flujo de trabajo se compensa con el coste de replicar el contenido de una y otra vez entre instancias.
+En el caso de flujos de trabajo o flujos de trabajo de gran volumen que consumen muchos recursos, como la transcodificación de vídeo, puede descargar flujos de trabajo de recursos de actualización de DAM en una segunda instancia de creación. A menudo, el problema con la descarga es que cualquier carga que se guarde descargando el procesamiento del flujo de trabajo se compensa con el coste de replicar el contenido de una y otra vez entre instancias.
 
-A partir de AEM 6.2 y con un paquete de funciones para AEM 6.1, puede realizar la descarga con replicación sin binarios. En este modelo, las instancias de creación comparten un almacén de datos común y solo envían los metadatos de un lado a otro mediante la replicación de reenvío. Aunque este método funciona bien con un almacén de datos de archivos compartido, puede haber problemas con un almacén de datos S3. Debido a que los subprocesos de escritura en segundo plano pueden inducir latencia, es posible que un recurso no se haya escrito en el almacén de datos antes de que se inicie el trabajo de descarga.
+A partir de AEM 6.2 y con un paquete de funciones para AEM 6.1, puede realizar la descarga con replicación sin binarios. En este modelo, las instancias de creación comparten un almacén de datos común y solo envían los metadatos de un lado a otro mediante la replicación de reenvío. Aunque este método funciona bien con un almacén de datos de archivos compartido, puede haber problemas con un almacén de datos S3. Debido a que los subprocesos de escritura en segundo plano pueden inducir latencia, es posible que un recurso no se haya escrito en el almacén de datos antes de los inicios de trabajos de descarga.
 
 ### Configuración del recurso de actualización DAM {#dam-update-asset-configuration}
 
-El flujo de trabajo de recursos de actualización de DAM contiene un conjunto completo de pasos configurados para tareas como la generación de PTIFF de Scene7 y la integración de InDesign Server. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos de actualización de DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de DAM Update Asset para que apunten al nuevo modelo.
+El flujo de trabajo de recursos de actualización de DAM contiene un conjunto completo de pasos configurados para tareas, como la generación de PTIFF de Scene7 y la integración de InDesign Server. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos de actualización de DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de DAM Update Asset para que apunten al nuevo modelo.
 
 >[!NOTE]
 >
->La ejecución intensiva del flujo de trabajo de recursos de actualización de DAM puede aumentar considerablemente el tamaño del almacén de datos de archivos. Los resultados de un experimento realizado por Adobe han demostrado que el tamaño del almacén de datos puede aumentar en aproximadamente 400 GB si se realizan unos 5500 flujos de trabajo en un plazo de 8 horas.
+>La ejecución intensiva del flujo de trabajo de recursos de actualización de DAM puede aumentar considerablemente el tamaño del almacén de datos de archivos. Los resultados de un experimento realizado por Adobe han demostrado que el tamaño del almacén de datos puede aumentar en aproximadamente 400 GB si se realizan alrededor de 5500 flujos de trabajo en un plazo de 8 horas.
 >
 >Se trata de un aumento temporal y el almacén de datos se restaura a su tamaño original después de ejecutar la tarea de recolección de elementos no utilizados del almacén de datos.
 >
 >Normalmente, la tarea de recolección de elementos no utilizados del almacén de datos se ejecuta semanalmente junto con otras tareas de mantenimiento programadas.
 >
->Si tiene un espacio de disco limitado y ejecuta los flujos de trabajo de recursos de actualización de DAM de forma intensiva, considere programar la tarea de recolección de elementos no utilizados con más frecuencia.
+>Si tiene un espacio limitado en disco y ejecuta los flujos de trabajo de recursos de actualización de DAM de forma intensiva, considere programar la tarea de recolección de elementos no utilizados con más frecuencia.
 
 #### Generación de representaciones en tiempo de ejecución {#runtime-rendition-generation}
 
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-Durante la carga de recursos, el flujo de trabajo de AEM crea un recurso independiente para cada página en documentos PDF y de Office. Cada una de estas páginas es un recurso en sí mismo, que consume espacio adicional en disco, y requiere el control de versiones y el procesamiento adicional del flujo de trabajo. Si no necesita páginas independientes, deshabilite la generación de subrecursos y la extracción de páginas.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-Para desactivar la generación de subrecursos, haga lo siguiente:
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. Abra la herramienta **[!UICONTROL de la consola]** de flujo de trabajo en */libs/cq/workflow/content/console.html*
+To disable Sub Asset generation, do the following:
+
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Models]** tab
-1. Haga doble clic en el modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM
-1. Elimine el paso **[!UICONTROL Procesar subrecurso]** del modelo de flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. Haga clic en **[!UICONTROL Guardar]**
+1. Click on **[!UICONTROL Save]**
 
-Para deshabilitar la extracción de páginas:
+To disable Page Extraction:
 
-1. Abra la herramienta **[!UICONTROL de la consola]** de flujo de trabajo en */libs/cq/workflow/content/console.html*
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. Seleccione un iniciador que inicie el modelo de flujo de trabajo Análisis de documentos **[!UICONTROL de Word de]** DAM
-1. Haga clic en **[!UICONTROL Editar]**
-1. Seleccionar **[!UICONTROL Deshabilitar]**
-1. Haga clic en **[!UICONTROL Aceptar]**
-1. Repita los pasos del 3 al 6 para otros elementos del iniciador que utilicen **DAM Analizar documentos de Word **modelo de flujo de trabajo
-
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP writeback {#xmp-writeback}
@@ -283,7 +285,7 @@ La importación de una gran cantidad de metadatos puede dar como resultado una a
 
 ## Replicación {#replication}
 
-Al replicar recursos en un gran número de instancias de publicación, por ejemplo en una implementación de sitios, Adobe recomienda utilizar la replicación en cadena. En este caso, la instancia de autor se replica en una única instancia de publicación que, a su vez, se replica en las demás instancias de publicación, lo que libera la instancia de autor.
+Al replicar recursos en un gran número de instancias de publicación, por ejemplo en una implementación de sitios, Adobe recomienda utilizar la replicación en cadena. En este caso, la instancia de autor se replica en una única instancia de publicación que, a su vez, se replica en las otras instancias de publicación, lo que libera la instancia de autor.
 
 ### Configurar replicación de cadenas {#configure-chain-replication}
 
@@ -299,7 +301,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 Asegúrese de implementar los Service Packs más recientes y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones en los índices del sistema. Consulte Consejos [de optimización del rendimiento| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algunas optimizaciones de índice que se pueden aplicar, según la versión de AEM.
 
-Cree índices personalizados para consultas que se ejecutan con frecuencia. Para obtener más información, consulte [metodología para analizar consultas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentas y [diseñar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obtener más información sobre las optimizaciones de consulta e índice, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Cree índices personalizados para consultas que se ejecutan con frecuencia. Para obtener más información, consulte [metodología para analizar consultas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentas y [diseñar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obtener más información sobre las optimizaciones de consulta e índice, consulte [Prácticas recomendadas para Consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Configuraciones de índice de Lucene {#lucene-index-configurations}
 
@@ -314,15 +316,15 @@ Actualice las configuraciones de índice para mejorar el tiempo de reindexación
 
 1. Abra CRXDe /crx/de/index.jsp e inicie sesión como usuario administrativo
 1. Vaya a /oak:index/lucene
-1. Agregue una propiedad String[] denominada **[!UICONTROL excludedPaths]** con los valores &quot;/var&quot;, &quot;/etc/workflow/instance&quot; y &quot;/etc/Replication&quot;
+1. Añada una propiedad String[] denominada **[!UICONTROL excludedPaths]** con los valores &quot;/var&quot;, &quot;/etc/workflow/instance&quot; y &quot;/etc/Replication&quot;
 1. Vaya a /oak:index/damAssetLucene
-1. Agregue una propiedad String[] denominada **[!UICONTROL includePaths]** con un valor &quot;/content/dam&quot;
+1. Añadir una propiedad String[] denominada **[!UICONTROL includePaths]** con un valor &quot;/content/dam&quot;
 1. Guardar
 
 (Solo AEM6.1 y 6.2) Actualice el índice ntBaseLucene para mejorar el rendimiento de eliminación y movimiento de recursos:
 
 1. Vaya a */roak:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Agregue dos nodos nt:unestructure **[!UICONTROL slingResource]** y **[!UICONTROL damResolvedPath]** en */oak:index/ntBaseLucene/indexRules/nt:base/properties*
+1. Añada dos nodos nt:unestructure **[!UICONTROL slingResource]** y **[!UICONTROL damResolvedPath]** en */oak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Defina las propiedades siguientes en los nodos (donde las propiedades order y propertyIndex son del tipo *Boolean*:
 
    slingResource
@@ -345,12 +347,11 @@ Actualice las configuraciones de índice para mejorar el tiempo de reindexación
 
    type=&quot;String&quot;
 
-1. En el nodo /oak:index/ntBaseLucene, establezca la propiedad *reindex=true*
+1. En el nodo /oak:index/ntBaseLucene, establezca la propiedad `reindex=true`
 1. Haga clic en **[!UICONTROL Guardar todo]**
 1. Supervise el error.log para ver cuándo se completa la indexación:
 
-   
-Reindexación completada para índices: [/roak:index/ntBaseLucene]
+   Reindexación completada para índices: [/roak:index/ntBaseLucene]
 
 1. También puede ver que la indexación se completa actualizando el nodo /oak:index/ntBaseLucene en CRXDe, ya que la propiedad reindex volvería a false
 1. Una vez finalizada la indexación, vuelva a CRXDe y establezca la propiedad **[!UICONTROL type]** en disabled en estos dos índices
@@ -360,7 +361,7 @@ Reindexación completada para índices: [/roak:index/ntBaseLucene]
 
 1. Haga clic en **[!UICONTROL Guardar todo]**
 
-Deshabilitar la extracción de texto de Lucene:
+Deshabilitar Extracción de texto de Lucene:
 
 Si los usuarios no necesitan poder buscar el contenido de los recursos, por ejemplo, buscando el texto contenido en documentos PDF, puede mejorar el rendimiento del índice desactivando esta función.
 
@@ -371,13 +372,13 @@ Si los usuarios no necesitan poder buscar el contenido de los recursos, por ejem
 
 ### Total de asistentes {#guess-total}
 
-Cuando cree consultas que generen grandes conjuntos de resultados, utilice el `guessTotal` parámetro para evitar una gran utilización de la memoria al ejecutarlos.
+Cuando cree consultas que generen grandes conjuntos de resultados, utilice el `guessTotal` parámetro para evitar una utilización excesiva de la memoria al ejecutarlos.
 
 ## Problemas conocidos {#known-issues}
 
 ### Archivos grandes {#large-files}
 
-Existen dos problemas conocidos principales relacionados con archivos de gran tamaño en AEM. Cuando los archivos alcanzan tamaños superiores a 2 GB, la sincronización en espera en frío puede encontrarse en una situación de memoria insuficiente. En algunos casos, evita que se ejecute la sincronización en espera. En otros casos, provoca el bloqueo de la instancia principal. Este escenario se aplica a cualquier archivo de AEM que supere los 2 GB, incluidos los paquetes de contenido.
+Existen dos problemas conocidos principales relacionados con archivos de gran tamaño en AEM. Cuando los archivos alcanzan tamaños buenos de 2 GB, la sincronización en espera en frío puede encontrarse en una situación de memoria insuficiente. En algunos casos, evita que se ejecute la sincronización en espera. En otros casos, provoca el bloqueo de la instancia principal. Este escenario se aplica a cualquier archivo de AEM que supere los 2 GB, incluidos los paquetes de contenido.
 
 Del mismo modo, cuando los archivos alcanzan un tamaño de 2GB mientras se utiliza un almacén de datos S3 compartido, puede que tarde algún tiempo en que el archivo permanezca completamente desde la caché hasta el sistema de archivos. Como resultado, al utilizar la replicación sin binarios, es posible que los datos binarios no se hayan mantenido antes de que se complete la replicación. Esta situación puede dar lugar a problemas, especialmente si la disponibilidad de datos es importante, por ejemplo en situaciones de descarga.
 
@@ -387,7 +388,7 @@ Para cada implementación de AEM, establezca un régimen de prueba de rendimient
 
 ### Pruebas de red {#network-testing}
 
-Para todas las preocupaciones de rendimiento de red del cliente, realice las siguientes tareas:
+Para todos los problemas de rendimiento de la red del cliente, realice las siguientes tareas:
 
 * Probar el rendimiento de la red desde la red del cliente
 * Compruebe el rendimiento de la red desde la red de Adobe. Para los clientes de AMS, trabaje con su CSE para realizar pruebas desde la red de Adobe.
@@ -404,17 +405,17 @@ Para minimizar la latencia y lograr un alto rendimiento mediante la utilización
 
 ## Lista de comprobación del rendimiento de Recursos AEM {#aem-assets-performance-checklist}
 
-* Habilitar HTTPS para evitar cualquier husmeador de tráfico HTTP corporativo
-* Usar una conexión por cable para cargar recursos pesados
-* Implementar en Java 8.
-* Establecer parámetros JVM óptimos
-* Configuración de un almacén de datos del sistema de archivos o un almacén de datos S3
-* Habilitar flujos de trabajo transitorios
-* Ajustar las colas de flujo de trabajo de Granite para limitar los trabajos simultáneos
-* Configurar ImageMagick para limitar el consumo de recursos
-* Eliminar pasos innecesarios del flujo de trabajo de recursos de actualización de DAM
-* Configurar el flujo de trabajo y la depuración de versiones
-* Optimizar la configuración del índice de Lucene en versiones anteriores a la versión 6.2
+* Active HTTPS para evitar cualquier husmeador de tráfico HTTP corporativo.
+* Utilice una conexión por cable para cargar recursos en exceso.
+* Configure parámetros JVM óptimos.
+* Configure un almacén de datos del sistema de archivos o un almacén de datos S3.
+* Deshabilitar la generación de subrecursos. Si está activado, el flujo de trabajo de AEM crea un recurso independiente para cada página en un recurso de varias páginas. Cada una de estas páginas es un recurso individual que consume espacio en disco adicional, requiere control de versiones y procesamiento adicional del flujo de trabajo. Si no necesita páginas independientes, deshabilite la generación de subrecursos y las actividades de extracción de página.
+* Habilitar flujos de trabajo transitorios.
+* Ajuste las colas de flujo de trabajo de Granite para limitar los trabajos simultáneos.
+* Configure ImageMagick para limitar el consumo de recursos.
+* Elimine los pasos innecesarios del flujo de trabajo de recursos de actualización de DAM.
+* Configure el flujo de trabajo y la depuración de versiones.
+* Optimice la configuración del índice de Lucene.
 * Optimice los índices con los paquetes de servicios y revisiones más recientes. Consulte con la asistencia de Adobe si hay optimizaciones de índice adicionales disponibles.
 * Se utiliza `guessTotal` para optimizar el rendimiento de la consulta.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.

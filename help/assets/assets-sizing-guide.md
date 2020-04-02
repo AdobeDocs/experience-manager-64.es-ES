@@ -6,14 +6,14 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 8e9f7aa39832351084bc335580b2d40ed432cd84
+source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
 
 ---
 
 
 # Guía de tamaño de recursos {#assets-sizing-guide}
 
-Al cambiar el tamaño del entorno para una implementación de Recursos Adobe Experience Manager (AEM), es importante asegurarse de que hay suficientes recursos disponibles en cuanto a rendimiento de disco, CPU, memoria, E/S y red. Cambiar el tamaño de muchos de estos recursos requiere comprender cuántos recursos se cargan en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la página de la biblioteca para buscar la velocidad a la que se crean los recursos.
+Al ajustar el tamaño del entorno para una implementación de Recursos Adobe Experience Manager (AEM), es importante asegurarse de que hay suficientes recursos disponibles en cuanto a rendimiento de red, de disco, CPU, memoria, E/S y rendimiento de red. Cambiar el tamaño de muchos de estos recursos requiere comprender cuántos recursos se cargan en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la página de la biblioteca para buscar la velocidad a la que se crean los recursos.
 
 ## Disco {#disk}
 
@@ -23,9 +23,9 @@ Un error común que se produce al ajustar el tamaño del espacio de disco necesa
 
 La mayoría de los usuarios definen las representaciones personalizadas además de las representaciones predeterminadas. Además de las representaciones, Recursos AEM permite extraer subrecursos de tipos de archivo comunes, como InDesign e Illustrator.
 
-Por último, las funciones de control de versiones de AEM almacenan duplicados de los recursos en el historial de versiones. Puede configurar las versiones que se purgarán con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio adicional de almacenamiento.
+Por último, las funciones de control de versiones de AEM almacenan duplicados de los recursos en el historial de versiones. Puede configurar las versiones que se purgarán con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio adicional en el almacenamiento.
 
-Teniendo en cuenta estos factores, se requiere una metodología para calcular un espacio de almacenamiento aceptablemente preciso para almacenar los activos de los usuarios.
+Teniendo en cuenta estos factores, se requiere una metodología para calcular un espacio de almacenamiento aceptablemente preciso para almacenar los recursos del usuario.
 
 1. Determine el tamaño y el número de recursos que se cargarán en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en AEM. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y de la complejidad de las imágenes.
@@ -55,7 +55,7 @@ Los datos de ejemplo completados en la herramienta muestran la importancia de re
 
 ### Almacenes de datos compartidos {#shared-datastores}
 
-Para grandes almacenes de datos, puede implementar un almacén de datos compartido a través de un almacén de datos de archivos compartidos en una unidad conectada a la red o a través de un almacén de datos S3. En este caso, las instancias individuales no necesitan mantener una copia de los binarios. Además, un almacén de datos compartido facilita la replicación sin binarios y ayuda a reducir el ancho de banda utilizado para replicar recursos en entornos de publicación o descargar instancias.
+Para grandes almacenes de datos, puede implementar un almacén de datos compartido a través de un almacén de datos de archivos compartidos en una unidad conectada a la red o a través de un almacén de datos S3. En este caso, las instancias individuales no necesitan mantener una copia de los binarios. Además, un almacén de datos compartido facilita la replicación sin binarios y ayuda a reducir el ancho de banda utilizado para replicar recursos para publicar entornos o descargar instancias.
 
 #### Use Cases {#use-cases}
 
@@ -79,24 +79,24 @@ Para las operaciones de AWS, la implementación de una única ubicación central
 
 #### Problemas de rendimiento {#performance-concerns}
 
-Un almacén de datos compartido requiere que los binarios se almacenen en una unidad montada en red que se comparte entre todas las instancias. Dado que se accede a estos binarios a través de una red, el rendimiento del sistema se ve afectado negativamente. Puede mitigar parcialmente el impacto mediante una conexión de red rápida a un arreglo rápido de discos. Sin embargo, esta es una propuesta cara. En el caso de las operaciones de AWS, todos los discos son remotos y requieren conectividad de red. Los volúmenes efímeros pierden datos cuando se inicia o se detiene la instancia.
+Un almacén de datos compartido requiere que los binarios se almacenen en una unidad montada en red que se comparte entre todas las instancias. Dado que se accede a estos binarios a través de una red, el rendimiento del sistema se ve afectado negativamente. Puede mitigar parcialmente el impacto mediante una conexión de red rápida a un arreglo rápido de discos. Sin embargo, esta es una propuesta cara. En el caso de las operaciones de AWS, todos los discos son remotos y requieren conectividad de red. Los volúmenes efímeros pierden datos cuando la instancia se detiene o inicio.
 
 #### Latencia {#latency}
 
-La latencia en implementaciones S3 se introduce mediante los subprocesos de escritura en segundo plano. Los procedimientos de copia de seguridad deben tener en cuenta esta latencia y los procedimientos de descarga. Es posible que el recurso S3 no esté presente en S3 cuando se inicie un trabajo de descarga. Además, los índices de Lucene pueden estar incompletos al realizar una copia de seguridad. Se aplica a cualquier archivo con distinción de tiempo escrito en el almacén de datos S3 y al que se acceda desde otra instancia.
+La latencia en implementaciones S3 se introduce mediante los subprocesos de escritura en segundo plano. Los procedimientos de copia de seguridad deben tener en cuenta esta latencia y los procedimientos de descarga. Es posible que el recurso S3 no esté presente en S3 cuando inicio un trabajo de descarga. Además, los índices de Lucene pueden estar incompletos al realizar una copia de seguridad. Se aplica a cualquier archivo con distinción de tiempo escrito en el almacén de datos S3 y al que se acceda desde otra instancia.
 
-### Tienda de nodos/almacén de documentos {#node-store-document-store}
+### Tienda de nodos/almacén de Documentos {#node-store-document-store}
 
 Es difícil obtener cifras precisas de tamaño para un NodeStore o DocumentStore debido a los recursos que consumen los siguientes:
 
 * Metadatos del recurso
 * Versiones de recursos
 * Registros de auditoría
-* Flujos de trabajo activos y archivados
+* flujos de trabajo archivados y activos
 
 Dado que los binarios se almacenan en el almacén de datos, cada binario ocupa algún espacio. La mayoría de los repositorios tienen un tamaño inferior a 100 GB. Sin embargo, es posible que haya repositorios más grandes de hasta 1 TB de tamaño. Además, para realizar una compactación sin conexión, se necesita suficiente espacio libre en el volumen para reescribir el repositorio compactado junto con la versión compactada previamente. Una buena regla general es ajustar el tamaño del disco a 1,5 veces el tamaño esperado para el repositorio.
 
-Para el repositorio, utilice discos SSD o discos con un nivel de IOPS superior a 3 kilobytes. Para eliminar las posibilidades de que IOPS introduzca cuellos de botella en el rendimiento, supervise los niveles de espera de E/S de CPU para detectar los primeros signos de problemas.
+Para el repositorio, utilice discos SSD o discos con un nivel de IOPS bueno a 3000. Para eliminar las posibilidades de que IOPS introduzca cuellos de botella en el rendimiento, supervise los niveles de espera de E/S de CPU para detectar los primeros signos de problemas.
 
 [Obtener archivo](assets/aem_environment_sizingtool.xlsx)
 
@@ -120,13 +120,13 @@ Al analizar el tiempo de ahorro promedio para los archivos a través de WebDAV, 
 
 Para obtener más información, consulte [Resolución de problemas de la aplicación](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)de escritorio AEM.
 
-## Restricciones  {#limitations}
+## Restricciones      {#limitations}
 
 Al ajustar el tamaño de una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos en varias implementaciones de Recursos.
 
-El tamaño del archivo no es el único factor que contribuye a problemas de memoria insuficiente (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto al iniciar AEM.
+El tamaño del archivo no es el único factor que contribuye a problemas de memoria insuficiente (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto al inicio de AEM.
 
-Además, puede editar la propiedad de tamaño de umbral del `com.day.cq.dam.commons.handler.StandardImageHandler` componente en Configuration Manager para utilizar un archivo temporal intermedio mayor que cero.
+Además, puede editar la propiedad de tamaño de umbral del `com.day.cq.dam.commons.handler.StandardImageHandler` componente en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
 
 ## Número máximo de recursos {#maximum-number-of-assets}
 
@@ -136,7 +136,7 @@ While the limit for the number of nodes in a repository has not been determined,
 
 El límite en el número de archivos que pueden existir en un almacén de datos puede ser de 2.1 billones debido a las limitaciones del sistema de archivos. Es probable que el repositorio encuentre problemas debido a un gran número de nodos mucho antes de alcanzar el límite del almacén de datos.
 
-Si las representaciones se generan incorrectamente, utilice la biblioteca de Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser mayor que 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 &amp;ast;) 1024 &amp;ast; 1024 píxeles)&#39;. *El tamaño del recurso es insignificante*.
+Si las representaciones se generan incorrectamente, utilice la biblioteca de Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 &amp;ast;) 1024 &amp;ast; 1024 píxeles)&#39;. *El tamaño del recurso es insignificante*.
 
 Es difícil estimar con precisión el tamaño del archivo TIFF compatible de fábrica (OOTB) con un montón específico para AEM, ya que factores adicionales, como el procesamiento de la influencia del tamaño de píxel. Es posible que AEM pueda procesar un archivo de tamaño de 255 MB OOTB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
 

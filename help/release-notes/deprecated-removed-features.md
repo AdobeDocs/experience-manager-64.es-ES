@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
@@ -113,7 +113,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
    <td> </td> 
   </tr>
   <tr>
-   <td>Assets</td> 
+   <td>Recursos</td> 
    <td><p>La descarga de recursos ha quedado obsoleta a partir de AEM 6.4</p> </td> 
    <td> </td> 
   </tr>
@@ -122,7 +122,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 ## Funciones eliminadas {#removed-features}
 
-En esta sección se detallan las funciones y capacidades eliminadas de AEM 6.4. Las versiones anteriores indicaban que estas funciones estaban en desuso.
+Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
 
 <table> 
  <tbody>
@@ -132,8 +132,8 @@ En esta sección se detallan las funciones y capacidades eliminadas de AEM 6.4. 
    <td><strong>Reemplazo</strong></td> 
   </tr>
   <tr>
-   <td>Activity Map de Analytics</td> 
-   <td>Versión del Activity Map que se incluye en AEM.</td> 
+   <td>Mapa de Actividad de Analytics</td> 
+   <td>Versión del mapa de Actividad que se incluye en AEM.</td> 
    <td>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.<br><br>Ahora debe utilizarse el complemento <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap proporcionado por Adobe Analytics</a> .</td> 
   </tr>
   <tr>
@@ -163,7 +163,7 @@ En esta sección se detallan las funciones y capacidades eliminadas de AEM 6.4. 
   </tr>
   <tr>
    <td>Administración de tareas</td> 
-   <td>Administración<br /> de tareas de la IU clásica (/libs/cq/taskmanagement/content/taskmanager.html)</td> 
+   <td>Administración<br /> de Tareas de la IU clásica (/libs/cq/taskmanagement/content/taskmanager.html)</td> 
    <td>Desaprobado desde 6.0. Utilice la nueva administración de tareas que se combina con la interfaz de usuario del flujo de trabajo.</td> 
   </tr>
   <tr>
@@ -184,7 +184,42 @@ En esta sección se detallan las funciones y capacidades eliminadas de AEM 6.4. 
   <tr>
    <td>Forms</td> 
    <td>Se ha eliminado la compatibilidad con imágenes dentro de fragmentos de documento. </td> 
-   <td>Las comunicaciones interactivas ofrecen la capacidad de utilizar imágenes directamente en los canales impresos y Web.<br /> </td> 
+   <td>Las comunicaciones interactivas permiten utilizar imágenes directamente en canales impresos y Web.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td> Actualización fuera del lugar </td> 
+   <td>No hay soporte para realizar la actualización fuera del lugar <br/> </td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Transferir para migraciones de TarMK a DocumentMK </td> 
+   <td> Puede exportar los datos de sistemas anteriores y luego importarlos en un sistema de configuración reciente. Para obtener instrucciones detalladas, consulte Documentos de actualización de AEM Forms en JEE <br/> </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+ <td>AEM Forms en el instalador de 32 bits JEE no está disponible.</td> 
+   <td>Adobe ha dejado de enviar AEM Forms en el instalador de 32 bits JEE. Puede seguir utilizando el instalador de 64 bits para instalar AEM Forms en JEE. </td>  
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Se ha eliminado la compatibilidad con el uso de imágenes DAM en el componente Fragmento de Documento.</td> 
+    <td> Puede utilizar los componentes Imagen y Gráfico en el canal de impresión de la comunicación interactiva. Si utiliza el componente de fragmento de documento de documento adaptable en formularios adaptables, dejará de funcionar después de actualizar a AEM 6.4 Forms. </td>  
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td> Se ha eliminado la función Documentos adaptables</td> 
+   <td> Puede utilizar la función de comunicaciones interactivas para crear comunicaciones impresas y basadas en Web. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Forms</td> 
+    <td>Se han eliminado los formularios AEM en una página de aterrizaje específica de JEE.</td> 
+    <td>AEM Forms en la página de aterrizaje JEE se sustituye por la página de aterrizaje AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Se ha eliminado la compatibilidad con Captcha predeterminada</td> 
+   <td>Utilice el servicio reCAPTCHA de Google.</td> 
   </tr>
   <tr>
    <td>Communities</td> 

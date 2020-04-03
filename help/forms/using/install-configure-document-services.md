@@ -39,7 +39,7 @@ Permite a su organización compartir fácilmente documentos PDF interactivos med
 Permite trabajar con firmas digitales y documentos en el servidor AEM. Por ejemplo, el servicio Signature se suele utilizar en las siguientes situaciones:
 
 * El servidor de AEM certifica un formulario antes de enviarlo a un usuario para que lo abra con Acrobat o Adobe Reader.
-* El servidor AEM valida una firma que se agregó a un formulario mediante Acrobat o Adobe Reader.
+* El servidor de AEM valida una firma que se agregó a un formulario mediante Acrobat o Adobe Reader.
 * El servidor de AEM firma un formulario en nombre de un notario público.
 
 El servicio de firma accede a los certificados y las credenciales almacenados en el almacén de confianza. Para obtener más información, consulte Servicio [de firmas](/help/forms/using/aem-document-services-programmatically.md).
@@ -332,7 +332,7 @@ Puede habilitar a un usuario que no sea administrador para que utilice el servic
    1. Microsoft recomienda realizar una copia de seguridad del Registro antes de modificarlo. Para ver los pasos detallados, consulte [Cómo realizar una copia de seguridad y restaurar el Registro en Windows](https://support.microsoft.com/en-us/help/322756).
    1. Abra el editor del Registro de Microsoft Windows. Para abrir el editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
    1. Vaya a HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\. Asegúrese de que el valor de EnableLUA esté establecido en 0 (cero).
-   1. Asegúrese de que el valor de **EnableLUA** esté establecido en 0 (cero). Si el valor no es 0, cambie el valor a 0. Cierre el editor del Registro.
+   1. Asegúrese de que el valor de **EnableLUA** está establecido en 0 (cero). Si el valor no es 0, cambie el valor a 0. Cierre el editor del Registro.
 
 1. Reinicie el equipo.
 

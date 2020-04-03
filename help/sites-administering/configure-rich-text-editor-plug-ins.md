@@ -3,7 +3,7 @@ title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
 
 ---
 
@@ -87,7 +87,9 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 
 ## Comprender el complemento Findreplace {#understand--findreplace-plugin}
 
-El `findreplace` complemento no necesita ninguna configuración. Funciona como se espera, fuera de lugar.
+El `findreplace` complemento no necesita ninguna configuración. Funciona de la caja.
+
+Al utilizar la funcionalidad de reemplazo, la cadena de reemplazo que se va a reemplazar debe introducirse al mismo tiempo que la cadena de búsqueda. Sin embargo, puede seguir haciendo clic en buscar para buscar la cadena antes de reemplazarla. Si se introduce la cadena de reemplazo después de hacer clic en Buscar, la búsqueda se restablece al principio del texto.
 
 El cuadro de diálogo Buscar y reemplazar se vuelve transparente cuando se hace clic en Buscar y se vuelve opaco cuando se hace clic en reemplazar. Esto permite al autor revisar el texto que sustituirá. Si los usuarios hacen clic en reemplazar todo, el cuadro de diálogo se cierra y muestra el número de reemplazos realizados.
 
@@ -187,7 +189,7 @@ Para configurar qué formatos se permiten al pegar texto en AEM desde otro progr
   <tr> 
    <td>allowBlockTags</td> 
    <td>Cadena[]</td> 
-   <td><p>Define la lista de etiquetas de bloque permitidas.</p> <p>Las etiquetas de bloque posibles incluyen (entre otras):</p> 
+   <td><p>Define la lista de las etiquetas de bloque permitidas.</p> <p>Las etiquetas de bloque posibles incluyen (entre otras):</p> 
     <ul> 
      <li>titulares (h1, h2, h3)</li> 
      <li>párrafos p)</li> 
@@ -212,10 +214,10 @@ Para configurar qué formatos se permiten al pegar texto en AEM desde otro progr
   <tr> 
    <td>list</td> 
    <td>nt:unstructured</td> 
-   <td><p>Define el comportamiento al pegar listas.<br /> </p> <p>Debe tener la propiedad <code>allow</code> (tipo <code>Boolean</code>) para definir si se permite pegar listas.</p> <p>Si <code>allow</code> se establece en <code>false</code>, debe especificar la propiedad <code>ignoreMode</code> (tipo <code>String</code>) para definir cómo gestionar el contenido de la lista pegado. Los valores válidos para <code>ignoreMode</code> son:</p> 
+   <td><p>Define el comportamiento al pegar listas.<br /> </p> <p>Debe tener la propiedad <code>allow</code> (tipo <code>Boolean</code>) para definir si se permite pegar listas.</p> <p>Si <code>allow</code> se establece en <code>false</code>, debe especificar la propiedad <code>ignoreMode</code> (tipo <code>String</code>) para definir cómo gestionar el contenido de lista pegado. Los valores válidos para <code>ignoreMode</code> son:</p> 
     <ul> 
      <li><code>remove</code>:: Elimina el contenido de la lista.</li> 
-     <li><code>paragraph</code>:: Convierte los elementos de la lista en párrafos.</li> 
+     <li><code>paragraph</code>:: Convierte los elementos de lista en párrafos.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -262,7 +264,7 @@ Para configuraciones posteriores (re)para añadir más estilos, siga únicamente
 >[!NOTE]
 Los estilos también se pueden definir para [tablas o celdas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)de tabla. Estas configuraciones requieren procedimientos separados.
 
-### Habilitar la lista desplegable de selectores Estilo {#styleselectorlist}
+### Habilitar la lista del selector desplegable Estilo {#styleselectorlist}
 
 Esto se realiza habilitando el complemento de estilos.
 
@@ -283,7 +285,7 @@ Una vez activado el complemento Estilos, la lista desplegable Estilo se muestra 
 A continuación, especifique las ubicaciones de las hojas de estilo a las que desea hacer referencia:
 
 1. Vaya al nodo raíz del componente de texto, por ejemplo `/apps/<myProject>/components/text`.
-1. Agregue la propiedad `externalStyleSheets` al nodo principal de `<rtePlugins-node>`:
+1. Añada la propiedad `externalStyleSheets` al nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `externalStyleSheets`
    * **Tipo** `String[]` (multicadena; haga clic en **Múltiples** en CRXDE)
@@ -295,7 +297,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
 >[!NOTE]
 Al utilizar RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar las hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto de CSS se pierde en el editor, por lo que puede que desee emular este contexto para mejorar la experiencia WYSIWYG.
-El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID `CQrte` que puede utilizarse para proporcionar diferentes estilos de visualización y edición:
+El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID del `CQrte` cual se pueden utilizar para proporcionar diferentes estilos de visualización y edición:
 # CQ td {
 // define el estilo de visualización }
 # CQrte td {
@@ -305,7 +307,7 @@ El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID `
 ### Especifique los estilos disponibles en la lista emergente {#stylesindropdown}
 
 1. En la definición del componente, navegue hasta el nodo `<rtePlugins-node>/styles`, tal como se ha creado en [Activación del selector](#styleselectorlist)desplegable de estilos.
-1. En el nodo `styles`, cree un nuevo nodo (también denominado `styles`) para mantener la lista disponible:
+1. En el nodo `styles`, cree un nuevo nodo (también llamado `styles`) para mantener la lista disponible:
 
    * **Nombre** `styles`
    * **Tipo** `cq:WidgetCollection`
@@ -315,13 +317,13 @@ El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID `
    * **Nombre**, puede especificar el nombre, pero debería ser adecuado para el estilo
    * **Tipo** `nt:unstructured`
 
-1. Agregue la propiedad `cssName` a este nodo para hacer referencia a la clase CSS:
+1. Añada la propiedad `cssName` a este nodo para hacer referencia a la clase CSS:
 
    * **Nombre** `cssName`
    * **Tipo** `String`
    * **Valor** El nombre de la clase CSS (sin un &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
 
-1. Agregue la propiedad `text` al mismo nodo; esto define el texto mostrado en el cuadro de selección:
+1. Añadir la propiedad `text` al mismo nodo; esto define el texto mostrado en el cuadro de selección:
 
    * **Nombre** `text`
    * **Tipo** `String`
@@ -333,7 +335,7 @@ El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID `
 
 ## Configuración de los formatos de párrafo {#paraformats}
 
-Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo la predeterminada `<p>`. Al habilitar el `paraformat` complemento, se especifican etiquetas de bloque adicionales que se pueden asignar a los párrafos mediante una lista desplegable de selección. Los formatos de párrafo determinan el tipo de párrafo asignando la etiqueta de bloque correcta. El autor puede seleccionarlos y asignarlos mediante el selector Formato. Las etiquetas de bloque de ejemplo incluyen, entre otras, el párrafo estándar &lt;p> y los encabezados &lt;h1>, &lt;h2>, etc.
+Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo la predeterminada `<p>`. Al habilitar el `paraformat` complemento, se especifican etiquetas de bloque adicionales que se pueden asignar a los párrafos mediante una lista de selección desplegable. Los formatos de párrafo determinan el tipo de párrafo asignando la etiqueta de bloque correcta. El autor puede seleccionarlos y asignarlos mediante el selector Formato. Las etiquetas de bloque de ejemplo incluyen, entre otras, el párrafo estándar &lt;p> y los encabezados &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 Este complemento no es adecuado para contenido con estructura compleja, como listas o tablas.
@@ -343,7 +345,7 @@ Si una etiqueta de bloque, por ejemplo una etiqueta &lt;hr>, no se puede asignar
 
 Cuando el complemento Formatos de párrafo está activado por primera vez, no hay disponibles formatos de párrafo predeterminados. La lista emergente está vacía. Para proporcionar a los autores formatos de párrafo, haga lo siguiente:
 
-* Habilite la lista desplegable Formato del selector.
+* Active la lista del selector desplegable Formato.
 * Especifique las etiquetas de bloque que se pueden seleccionar como formatos de párrafo en la lista desplegable.
 
 Para configuraciones posteriores (re)para agregar más formatos, siga sólo la parte relevante de las instrucciones.
@@ -394,7 +396,7 @@ Los formatos de párrafo pueden seleccionarse mediante:
 
       No es necesario introducir los corchetes angulares delimitadores.
 
-1. Al mismo nodo agregue otra propiedad para que el texto descriptivo aparezca en la lista desplegable:
+1. Al mismo nodo agregue otra propiedad para que aparezca texto descriptivo en la lista desplegable:
 
    * **Nombre** `description`
    * **Tipo** `String`
@@ -414,7 +416,7 @@ En una instalación estándar de AEM, cuando el `misctools` complemento está ha
 Puede configurar el RTE para que su propia selección de caracteres esté disponible; definiendo caracteres distintos o una secuencia completa.
 
 >[!CAUTION]
-Al agregar sus propios caracteres especiales se anula la selección predeterminada. Si es necesario, (vuelva a)definir estos caracteres en su propia selección.
+Añadir sus propios caracteres especiales anula la selección predeterminada. Si es necesario, (vuelva a)definir estos caracteres en su propia selección.
 
 ### Definir un solo carácter {#definesinglechar}
 
@@ -432,7 +434,7 @@ Al agregar sus propios caracteres especiales se anula la selección predetermina
    * **Nombre** `specialCharsConfig`
    * **Tipo** `nt:unstructured`
 
-1. En `specialCharsConfig` Crear otro nodo para contener la lista de caracteres:
+1. En `specialCharsConfig` Crear otro nodo para mantener la lista de caracteres:
 
    * **Nombre** `chars`
    * **Tipo** `nt:unstructured`
@@ -551,21 +553,21 @@ Repita los pasos anteriores para cada estilo requerido.
 
 A veces, puede crear tablas de datos sin texto visual en un encabezado de columna suponiendo que el propósito del encabezado se vea implicado en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda de encabezado para permitir que los lectores de pantalla y otras tecnologías de asistencia puedan ayudar a los lectores con diversas necesidades a comprender el propósito de la columna.
 
-Para mejorar la accesibilidad en estos escenarios, RTE admite celdas de encabezado ocultas. Además, proporciona opciones de configuración relacionadas con encabezados ocultos en tablas. Esta configuración permite aplicar estilos CSS a encabezados ocultos en los modos de edición y vista previa. Para ayudar a los autores a identificar encabezados ocultos en el modo de edición, incluya los siguientes parámetros en el código:
+Para mejorar la accesibilidad en estos escenarios, RTE admite celdas de encabezado ocultas. Además, proporciona opciones de configuración relacionadas con encabezados ocultos en tablas. Esta configuración permite aplicar estilos CSS a encabezados ocultos en los modos de edición y previsualización. Para ayudar a los autores a identificar encabezados ocultos en el modo de edición, incluya los siguientes parámetros en el código:
 
 * `hiddenHeaderEditingCSS`:: Especifica el nombre de la clase CSS que se aplica en la celda de encabezado oculto cuando se edita RTE.
 * `hiddenHeaderEditingStyle`:: Especifica una cadena de estilo que se aplica en la celda de encabezado oculto cuando se edita RTE.
 
 Si especifica la cadena CSS y la cadena de estilo en el código, la clase CSS tiene prioridad sobre la cadena de estilo y puede sobrescribir cualquier cambio de configuración que realice la cadena de estilo.
 
-Para ayudar a los autores a aplicar CSS en encabezados ocultos en el modo de vista previa, puede incluir los siguientes parámetros en el código:
+Para ayudar a los autores a aplicar CSS en encabezados ocultos en el modo de previsualización, puede incluir los siguientes parámetros en el código:
 
-* `hiddenHeaderClassName`:: Especifica el nombre de la clase CSS que se aplica en la celda de encabezado oculto en modo de vista previa.
-* `hiddenHeaderStyle`:: Especifica una cadena de estilo que se aplica en la celda de encabezado oculto en modo de vista previa.
+* `hiddenHeaderClassName`:: Especifica el nombre de la clase CSS que se aplica en la celda de encabezado oculto en modo de previsualización.
+* `hiddenHeaderStyle`:: Especifica una cadena de estilo que se aplica en la celda de encabezado oculto en modo de previsualización.
 
 Si especifica la cadena CSS y la cadena de estilo en el código, la clase CSS tiene prioridad sobre la cadena de estilo y puede sobrescribir cualquier cambio de configuración que realice la cadena de estilo.
 
-## Agregar diccionarios para el corrector ortográfico {#adddict}
+## Añadir diccionarios para el corrector ortográfico {#adddict}
 
 Cuando se activa el complemento de revisión de ortografía, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL; por ejemplo. la `/en/` rama está marcada como Inglés, la `/de/` rama como Alemán.
 
@@ -592,7 +594,7 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-El corrector ortográfico RTE está disponible a petición. No se ejecuta automáticamente al empezar a escribir texto.
+El corrector ortográfico RTE está disponible a petición. No se ejecuta automáticamente al escribir texto con inicio.
 Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de la barra de herramientas. RTE comprueba la ortografía de las palabras y resalta las palabras mal escritas.
 Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas ya no se resaltan. Para ejecutar el corrector ortográfico, toque o haga clic de nuevo en el botón Corrector ortográfico.
 
@@ -630,7 +632,7 @@ Cuando se presiona el carácter de tabulación dentro de cualquier texto, se ins
 Cuando la sangría está activada (opción predeterminada), puede definir el tamaño de la sangría:
 
 >[!NOTE]
-Este tamaño de sangría solo se aplica a los párrafos (bloques) de texto; no afecta a la sangría de las listas reales.
+Este tamaño de sangría solo se aplica a los párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. En el componente, navegue al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [Activación de un complemento](#activateplugin).
 1. En el `lists` nodo, cree el `identSize` parámetro:
@@ -707,34 +709,34 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
       * **Nombre** `defaultProtocol`
       * **Tipo** `String`
       * **Valores** de uno o más protocolos predeterminados
-   * Definición de cómo gestionar el atributo de destino de un vínculo. Crear un nuevo nodo:
+   * Definición de cómo gestionar el atributo de destinatario de un vínculo. Crear un nuevo nodo:
 
       * **Nombre** `targetConfig`
       * **Tipo** `nt:unstructured`
       En el nodo `targetConfig`: defina las propiedades requeridas:
 
-      * Especifique el modo de destino:
+      * Especifique el modo de destinatario:
 
          * **Nombre** `mode`
          * **Tipo** `String`)
          * **Valores**:
 
-            * `auto`:: significa que se elige un objetivo automático
+            * `auto`:: significa que se elige un destinatario automático
 
                (especificado por la `targetExternal` propiedad para vínculos externos o `targetInternal` para vínculos internos).
 
             * `manual`:: no aplicable en este contexto
             * `blank`:: no aplicable en este contexto
-      * El objetivo para los vínculos internos:
+      * El destinatario para los vínculos internos:
 
          * **Nombre** `targetInternal`
          * **Tipo** `String`
-         * **Valor** del destino para los vínculos internos (solo se utiliza cuando el &quot;modo es `auto`)
-      * El objetivo para los vínculos externos:
+         * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el &quot;modo es `auto`)
+      * destinatario para vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`
-         * **Valor** del destino para vínculos externos (solo se utiliza cuando el modo es `auto`).
+         * **Valore** el destinatario de los vínculos externos (solo se utiliza cuando el modo es `auto`).
 
 
 

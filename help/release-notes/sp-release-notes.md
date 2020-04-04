@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -786,7 +786,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * El movimiento de una carpeta desde siteadmin termina en memoria insuficiente y hace que AEM no esté disponible. NPR-28346: revisión para CQ-4261398
 * Las configuraciones de despliegue de LiveCopy de MSM se pierden tras la actualización. NPR-28311: revisión para CQ-4258705
 * No se puede desplazar más allá de las 40 configuraciones de modelo. NPR-27640: revisión para CQ-4239166
-* El uso de SyneticResource como referencia genera una excepción de puntero nulo y bloquea el movimiento de las páginas.  NPR-27576: revisión para CQ-4258262
+* El uso de SyneticResource como referencia produce una excepción de puntero nulo y bloquea el movimiento de las páginas.  NPR-27576: revisión para CQ-4258262
 * PushOnModify no funciona en la eliminación de instancias actualizadas de 6.1 a 6.4. NPR-28108: revisión para CQ-4259833
 * (IU clásica) Falta el botón Cancelar herencia y el componente se puede editar en una página de Live Copy. NPR-28256: revisión para CQ-4260161
 * OakState0001: Conflictos sin resolver en el despliegue. NPR-27982: revisión para CQ-4259548
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Se Añadió la compatibilidad de ARIA con Print y PrintDialog.
 * Se Añadió la compatibilidad con ARIA de validación de correo electrónico.
 * Respaldo proactivo para correcciones de platform.clientlibs.
+* Prevención de la ejecución automática de secuencias de comandos cuando no hay entrada en el dataType explícito.
 
 **Recursos**
 

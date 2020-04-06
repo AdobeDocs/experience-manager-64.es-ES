@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -83,10 +83,10 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
    * http://localhost:4502/system/console/slinglog
 
-1. Seleccione **[!UICONTROL Agregar nuevo registrador]**
+1. Seleccione **[!UICONTROL Añadir nuevo registrador]**
 
    1. Seleccionar `DEBUG` para nivel **[!UICONTROL de registro]**
-   1. Escriba un nombre para el archivo **** de registro, por ejemplo
+   1. Escriba un nombre para el archivo **[!UICONTROL de registro]**, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **[!UICONTROL Logger]** (clase) (mediante `+` icono)
@@ -116,13 +116,13 @@ Para ver las entradas de registro:
 
 ## UGC para puntaje y señalización {#ugc-for-scoring-and-badging}
 
-Es posible ver el UGC relacionado con la puntuación y la insignia cuando el SRP elegido es JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el proveedor [de recursos de almacenamiento y almacenamiento de contenido](working-with-srp.md) de [](srp.md)la comunidad).
+Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el Almacenamiento [de contenido](working-with-srp.md) de la comunidad y el proveedor de recursos de [Almacenamiento](srp.md)).
 
 Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP del autor**: experimentar en el entorno de creación resulta en UGC que solo es visible desde el entorno de creación.
+**JSRP del autor**: experimentar en el entorno del autor resulta en UGC que solo es visible desde el entorno del autor.
 
-**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](../../help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](../../help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -147,16 +147,18 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    * Localizar el nodo de la página del foro
 
       * `/content/sites/engage/en/forum/jcr:content`
-   * Adición de propiedades de puntuación y de marca
+   * Añadir las propiedades de puntuación y marca
 
-      * scoringRules = [/etc/community/scoring/rules/comments-scoring,/etc/community/scoring/rules/forums-scoring]
-      * badgingRules =[/etc/community/badging/rules/comments-scoring,/etc/community/badging/rules/forums-scoring]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * Localización del nodo del componente del foro
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Agregar propiedad para mostrar distintivos
+   * Añadir propiedad para mostrar distintivos
 
       * `allowBadges = true`
    * Un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
@@ -171,7 +173,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    * Localizar el nodo de la página del foro
 
       * `/content/community-components/en/forum/jcr:content`
-   * Adición de propiedades de puntuación y de marca
+   * Añadir las propiedades de puntuación y marca
 
       * 
          ```
@@ -189,7 +191,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
          ( `sling:resourceType = social/forum/components/hbs/forum`)
-   * Agregar propiedad para mostrar distintivos
+   * Añadir propiedad para mostrar distintivos
 
       * `allowBadges = true`
    * Un usuario inicia sesión, crea un tema del foro y recibe una insignia de bronce
@@ -255,7 +257,7 @@ Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene
 
 Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distintivos, como
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* /home/users/community/w271OOup2Z4DjnOQrviv/perfil/badges
 
 #### Distintivo concedido {#awarded-badge}
 

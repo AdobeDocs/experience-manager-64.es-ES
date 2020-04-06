@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -35,7 +35,7 @@ Los datos del usuario, junto con sus [ACL](/help/sites-administering/security.md
 
 Los beneficios de la sincronización de usuarios con la distribución Sling, en comparación con la replicación tradicional, son:
 
-* *los usuarios*, perfiles *de* usuario y grupos *de* usuarios creados al publicar no se crean en el autor
+* *los usuarios*, los perfiles *de* usuario y los grupos *de* usuarios creados al publicar no se crean en el autor
 
 * La distribución Sling establece propiedades en eventos jcr, lo que permite actuar dentro de los oyentes de eventos de publicación sin preocuparse por los bucles de replicación infinitos
 * La distribución de Sling sólo envía datos de usuario a instancias de publicación no originales, eliminando así el tráfico innecesario
@@ -61,7 +61,7 @@ Los beneficios de la sincronización de usuarios con la distribución Sling, en 
 >
 >No se deben agregar nuevas configuraciones como resultado de habilitar la sincronización de usuarios.
 
-La sincronización de usuarios depende del entorno de creación para administrar las distribuciones de datos de usuario, aunque los datos de usuario no se hayan creado en el autor. Gran parte de la configuración, pero no toda, se lleva a cabo en el entorno de creación y cada paso identifica claramente si se va a realizar durante la creación o publicación.
+La sincronización de usuarios depende del entorno de creación para administrar las distribuciones de datos de usuario, aunque los datos de usuario no se hayan creado en el autor. Gran parte de la configuración, pero no toda, se lleva a cabo en el entorno del autor y cada paso identifica claramente si se debe realizar durante la creación o la publicación.
 
 A continuación se indican los pasos necesarios para habilitar la sincronización de usuarios, seguidos de una sección de [resolución de problemas](#troubleshooting) :
 
@@ -73,7 +73,7 @@ A continuación se indican los pasos necesarios para habilitar la sincronizació
 
 1. Asegúrese de que se ha instalado el código más reciente:
 
-* [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/es/experience-manager/kb/aem62-available-hotfixes.html)
 * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory}
@@ -129,7 +129,7 @@ A continuación se indican los pasos necesarios para habilitar la sincronizació
 
 
 
-#### Cómo agregar ACL {#addacls}
+#### Cómo Añadir ACL {#addacls}
 
 * acceso a CRXDE Lite
 
@@ -254,7 +254,7 @@ La configuración predeterminada es para una sola instancia de publicación. Dad
 
 ### 7. Agente de distribución Apache Sling: fábrica de agentes de sincronización {#apache-sling-distribution-agent-sync-agents-factory-1}
 
-**Agregar instancias de publicación:**
+**Añadir instancias de publicación:**
 
 * **en autor**
 
@@ -305,9 +305,9 @@ Si hay datos personalizados que desea sincronizar en varias instancias de public
 
 * **Tipos de nodo**
 
-   Lista de tipos de nodos que se sincronizarán. Cualquier tipo de nodo que no sea sling:Folder debe aparecer aquí (sling:folder se gestiona por separado).
+   Es la lista de tipos de nodos que se sincronizarán. Cualquier tipo de nodo que no sea sling:Folder debe aparecer aquí (sling:folder se gestiona por separado).
 
-   Lista predeterminada de tipos de nodo que sincronizar:
+   lista predeterminada de los tipos de nodo que sincronizar:
 
    * rep:Usuario
    * nt:unstructured
@@ -315,7 +315,7 @@ Si hay datos personalizados que desea sincronizar en varias instancias de public
 
 * **Propiedades ignorables**
 
-   Esta es la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no activarán la sincronización por sí mismos.
+   Es la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no activarán la sincronización por sí mismos.
 
    Propiedad predeterminada que se debe ignorar:
 
@@ -370,7 +370,7 @@ Si el ID de Sling de una instancia de publicación coincide con el ID de Sling d
 
          `use windows explorer and search for *sling.id.file*`
 
-1. iniciar la instancia de publicación
+1. inicio de la instancia de publicación
 
    * al iniciar, se le asignará un nuevo ID de Sling
 
@@ -411,11 +411,11 @@ Para que las actualizaciones se sincronizen correctamente, es necesario modifica
 
 ## Qué sucede cuando... {#what-happens-when}
 
-### El usuario se registra automáticamente o edita el perfil al publicar {#user-self-registers-or-edits-profile-on-publish}
+### El usuario se registra automáticamente o edita el Perfil al publicar {#user-self-registers-or-edits-profile-on-publish}
 
 Por diseño, los usuarios y perfiles creados en el entorno de publicación (autorregistro) no aparecen en el entorno de creación.
 
-Cuando la topología es un conjunto de servidores [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm) publicación y la sincronización de usuarios se ha configurado correctamente, el *usuario *y el perfil *de* usuario se sincronizan en el conjunto de servidores de publicación mediante la distribución Sling.
+Cuando la topología es un conjunto de servidores [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm) publicación y la sincronización de usuarios se ha configurado correctamente, el *usuario *y el perfil *del* usuario se sincronizan en el conjunto de servidores de publicación mediante la distribución Sling.
 
 ### Los usuarios o grupos de usuarios se crean con la consola de seguridad {#users-or-user-groups-are-created-using-security-console}
 
@@ -472,19 +472,19 @@ Esto es lo que se muestra cuando la sincronización de usuarios no está habilit
 
 #### Cómo ejecutar diagnósticos para editores {#how-to-run-diagnostics-for-publishers}
 
-Cuando el diagnóstico se ejecuta desde el entorno de creación, los resultados de aprobado/suspenso incluirán una sección [INFO] con la lista de instancias de publicación configuradas para su confirmación.
+Cuando el diagnóstico se ejecuta desde el entorno del autor, los resultados de aprobado/suspenso incluyen una sección [INFO] que muestra la lista de las instancias de publicación configuradas para su confirmación.
 
-En la lista se incluye una URL para cada instancia de publicación que ejecutará los diagnósticos para esa instancia. El parámetro url `syncUser` se anexa a la dirección URL de diagnóstico con su valor establecido en el usuario *de sincronización* autorizado creado en el [paso 2](/help/sites-administering/sync.md#createauthuser).
+En la lista se incluye una dirección URL para cada instancia de publicación que ejecutará los diagnósticos para esa instancia. El parámetro url `syncUser` se anexa a la dirección URL de diagnóstico con su valor establecido en el usuario *de sincronización* autorizado creado en el [paso 2](/help/sites-administering/sync.md#createauthuser).
 
 **Nota** : antes de iniciar la URL, el usuario *de sincronización* autorizado ya debe haber iniciado sesión en esa instancia de publicación.
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
-### Configuración agregada incorrectamente {#improperconfig}
+### Configuración Añadida incorrectamente {#improperconfig}
 
 Cuando la sincronización de usuarios no funciona, el problema más común es que se *agregaron* configuraciones adicionales. En su lugar, la *configuración predeterminada existente debería haberse *editado*.
 
-A continuación se muestran las vistas de cómo deben aparecer las configuraciones predeterminadas editadas en la consola web. Si aparece más de una instancia, se debe eliminar la configuración agregada.
+A continuación se presentan vistas de cómo deben aparecer las configuraciones predeterminadas y editadas en la consola web. Si aparece más de una instancia, se debe eliminar la configuración agregada.
 
 #### (autor) Un agente de distribución Apache Sling: fábrica de agentes de sincronización {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
@@ -514,7 +514,7 @@ Si el registro muestra lo siguiente:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-A continuación, compruebe que la sección [2. Crear usuario]autorizado(/content/docs/en/aem/6-1/administer/security/security/sync.md#2. crear usuario autorizado) se siguió correctamente.
+A continuación, compruebe que la sección [2. Crear usuario](#createauthuser) autorizado se siguió correctamente.
 
 En esta sección se describe la creación de un usuario autorizado, que existe en todas las instancias de publicación, y su identificación en la configuración OSGi de &#39;Proveedor secreto&#39; del autor. By default, the user is `admin`.
 
@@ -524,9 +524,9 @@ El usuario autorizado debe tener explícitamente los siguientes privilegios y re
 
 | **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
-| /home | X | &amp;ast;/activity/&amp;ast; |
-| /home/users | X | &amp;ast;/activity/&amp;ast; |
-| /home/groups | X | &amp;ast;/activity/&amp;ast; |
+| /home | X | &amp;ast;/actividades/&amp;ast; |
+| /home/users | X | &amp;ast;/actividades/&amp;ast; |
+| /home/groups | X | &amp;ast;/actividades/&amp;ast; |
 
 Como miembro del `administrators` grupo, el usuario autorizado debe tener los siguientes privilegios en todas las instancias de publicación:
 
@@ -553,7 +553,7 @@ Véase la sección [9. ID de Sling único](#unique-sling-id)
 
       * al editar el paquete
 
-         * Ficha Filtros: Agregar filtro: Ruta raíz: `/home`
+         * Ficha Filtros: Añadir filtro: Ruta raíz: `/home`
          * Ficha Avanzado: Administración de CA: `Overwrite`
    * [exportar el paquete](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
@@ -568,7 +568,7 @@ Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: Agen
 
 Cuando una instancia de publicación deja de estar disponible, no debe eliminarse si volverá a estar en línea en el futuro. Los cambios se pondrán en cola para el editor y, una vez que vuelvan a estar en línea, se procesarán.
 
-Si la instancia de publicación nunca volverá a estar en línea, si está sin conexión de forma permanente, debe eliminarse porque la compilación de colas dará como resultado un uso notorio de espacio en disco en el entorno de creación.
+Si la instancia de publicación nunca volverá a estar en línea, si está sin conexión de forma permanente, debe eliminarse porque la compilación de cola dará como resultado un uso notorio de espacio en disco en el entorno de creación.
 
 Cuando un editor está inactivo, el registro del autor tendrá excepciones similares a:
 
@@ -587,7 +587,7 @@ Para eliminar un publicador de [Apache Sling Distribution Agent - Sync Agent Fac
 * sobre el autor:
 
    * [Desconectar sincronización de usuarios](#how-to-take-user-sync-offline)
-   * siga el [paso 7](#apache-sling-distribution-agent-sync-agents-factory) para eliminar el editor de ambas listas de servidores:
+   * siga el [paso 7](#apache-sling-distribution-agent-sync-agents-factory) para eliminar el editor de ambas listas de servidor:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`

@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 
 ---
 
@@ -31,7 +31,7 @@ Las siguientes herramientas de administración están disponibles para administr
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
-Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de multisitios y el flujo de trabajo de traducción. Cree una ubicación maestra en un idioma, para un país específico, y luego utilice ese contenido como base para los demás sitios, utilizando la traducción cuando sea necesario:
+Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de multisitios y el flujo de trabajo de traducción. Cree una ubicación maestra en un idioma, para un país específico, y luego utilice ese contenido como base para otros sitios, utilizando la traducción cuando sea necesario:
 
 * [Traduzca](/help/sites-administering/translation.md) la ubicación maestra a distintos idiomas.
 
@@ -39,7 +39,7 @@ Puede crear contenido de forma eficaz para sitios multinacionales y multilingüe
 
    * Reutilice el contenido de la ubicación maestra, y las traducciones, para crear sitios para otros países y culturas.
    * Asegúrese de limitar el uso de Multi Site Manager al contenido dentro de un idioma, por ejemplo: inglés maestro -> idiomas ingleses en sitios de países, francés maestro -> francés en sitios de países.
-   * Cuando sea necesario, separe los elementos de las Live Copies para agregar detalles de localización.
+   * Cuando sea necesario, separe los elementos de las copias en vivo para agregar detalles de localización.
 
 El diagrama siguiente ilustra cómo se intersectan los conceptos principales (pero no muestra todos los niveles/elementos involucrados):
 
@@ -61,10 +61,9 @@ Para casos de uso más avanzados, también se puede usar MSM en los maestros de 
 >
 >* [Prácticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md); particularmente:
    >
-   >  
-* [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
->  * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Prácticas recomendadas para la traducción](/help/sites-administering/tc-bp.md)
+   >   
+   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Prácticas recomendadas para la traducción](/help/sites-administering/tc-bp.md)
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a11348685b249743b0d77201f5e2ce7e553d670d
+source-git-commit: 1790238e4733ca67c59234641d228e44a3d3ac3b
 
 ---
 
@@ -90,11 +90,11 @@ Cuando el servicio Forms procesa un formulario por valor, devuelve una secuencia
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Pasar documentos al servicio Forms](/help/forms/developing/passing-documents-forms-service.md)
+[Pasar Documentos al servicio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Representar un formulario por valor mediante la API de Java {#render-a-form-by-value-using-the-java-api}
 
@@ -138,7 +138,7 @@ Representar un formulario por valor mediante la API de Forms (Java):
 
 **Consulte también**
 
-[Representación de formularios por valor](/help/forms/develop/procesando-formularios-procesando-formularios-procesando-formularios-formulario-valor-procesando-formularios.md#procesando-formularios-por-valor)
+[Representación de formularios por valor](/help/forms/developing/rendering-forms.md)
 
 [Inicio rápido (modo SOAP): Representación por valor mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 

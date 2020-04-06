@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
 
 ---
 
@@ -47,7 +47,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 | dps-abstract | Cadena |  |
 | dps-shortAbstract | Cadena |  |
 | dps-Department | Cadena |  |
-| dps-category | Cadena |  |
+| dps-categoría | Cadena |  |
 | dps-keywords | Cadena[] |  |
 | dps-internalKeywords | Cadena[] |  |
 | dps-important | Cadena[] | Importancia de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
@@ -88,7 +88,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 ### Nodos comunes {#common-nodes}
 
 | Nombre de nodo | Tipo | Valores predeterminados o esperados | Descripción |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | imagen | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |  |
 
 ### Entidades {#entities}

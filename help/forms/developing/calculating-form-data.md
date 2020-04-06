@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 58f85b8d21b615597f74efd5cbff2aa8c0229733
+source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
 
 ---
 
@@ -22,7 +22,7 @@ El servicio Forms puede calcular los valores que un usuario introduce en un form
 
 Como parte del proceso de diseño de formularios, puede utilizar cálculos y secuencias de comandos para proporcionar una experiencia de usuario más rica. Los cálculos y las secuencias de comandos se pueden agregar a la mayoría de los objetos y campos de formulario. Debe crear una secuencia de comandos de diseño de formulario para realizar operaciones de cálculo en los datos que un usuario introduce en un formulario interactivo.
 
-El usuario introduce valores en el formulario y hace clic en el botón Calcular para ver los resultados. El siguiente proceso describe una aplicación de ejemplo que permite al usuario calcular datos:
+El usuario introduce valores en el formulario y hace clic en el botón Calcular para vista de los resultados. El siguiente proceso describe una aplicación de ejemplo que permite al usuario calcular datos:
 
 * El usuario accede a una página HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java llamado `GetLoanForm`.
 * El `GetLoanForm` servlet procesa un formulario de préstamo. Este formulario contiene una secuencia de comandos, campos interactivos, un botón de cálculo y un botón de envío.
@@ -45,11 +45,11 @@ En la tabla siguiente se describen los pasos de este diagrama.
  <tbody>
   <tr> 
    <td><p>1</p></td> 
-   <td><p>El servlet <code>GetLoanForm</code> Java se invoca desde la página de inicio de HTML. </p></td> 
+   <td><p>El servlet <code>GetLoanForm</code> Java se invoca desde la página de inicio HTML. </p></td> 
   </tr> 
   <tr> 
    <td><p>2</p></td> 
-   <td><p>El servlet <code>GetLoanForm</code> Java utiliza la API del cliente de servicios de Forms para procesar el formulario de préstamo en el navegador web del cliente. La diferencia entre procesar un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor y procesar un formulario que no contiene una secuencia de comandos es que debe especificar la ubicación de destino utilizada para ejecutar la secuencia de comandos. Si no se especifica una ubicación de destino, no se ejecuta una secuencia de comandos configurada para ejecutarse en el servidor. Por ejemplo, considere la aplicación introducida en esta sección. El servlet <code>CalculateData</code> Java es la ubicación de destino donde se ejecuta la secuencia de comandos.</p></td> 
+   <td><p>El servlet <code>GetLoanForm</code> Java utiliza la API del cliente de servicios de Forms para procesar el formulario de préstamo en el navegador web del cliente. La diferencia entre procesar un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor y procesar un formulario que no contiene una secuencia de comandos es que debe especificar la ubicación de destinatario utilizada para ejecutar la secuencia de comandos. Si no se especifica una ubicación de destinatario, no se ejecuta una secuencia de comandos configurada para ejecutarse en el servidor. Por ejemplo, considere la aplicación introducida en esta sección. El Servlet <code>CalculateData</code> Java es la ubicación de destinatario donde se ejecuta la secuencia de comandos.</p></td> 
   </tr> 
   <tr> 
    <td><p>3</p></td> 
@@ -72,7 +72,7 @@ Para ilustrar el uso de una secuencia de comandos de diseño de formulario, en e
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******A. Campo denominado NumericField1** B. Campo denominado NumericField2 **C.** Campo denominado NumericField3
+**A.** Campo denominado NumericField1 **B.** Campo denominado NumericField2 **C.** Campo denominado NumericField3
 
 La sintaxis de la secuencia de comandos ubicada en este diseño de formulario es la siguiente:
 
@@ -80,7 +80,7 @@ La sintaxis de la secuencia de comandos ubicada en este diseño de formulario es
      NumericField3 = NumericField2 + NumericField1
 ```
 
-En este diseño de formulario, el botón Calcular es un botón de comando y la secuencia de comandos se encuentra en el `Click` suceso de este botón. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio Forms, donde se ejecuta la secuencia de comandos. El servicio Forms devuelve el formulario al dispositivo cliente con los resultados del cálculo que se muestran en el campo NumericField3.
+En este diseño de formulario, el botón Calcular es un botón de comando y la secuencia de comandos se encuentra en el `Click` evento de este botón. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio Forms, donde se ejecuta la secuencia de comandos. El servicio Forms devuelve el formulario al dispositivo cliente con los resultados del cálculo que se muestran en el campo NumericField3.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Recuperar un formulario que contenga una secuencia de comandos de cálculo**
 
-La API de cliente de servicios de Forms se utiliza para crear una lógica de aplicación que gestiona un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor. El proceso es similar al de administrar un formulario enviado. (Consulte [Gestión de formularios]enviados (/help/forms/develop/procesing-forms-procesing-forms-handling-submit-forms-handling-submit.md#handling-submit-forms).)
+La API de cliente de servicios de Forms se utiliza para crear una lógica de aplicación que gestiona un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor. El proceso es similar al de administrar un formulario enviado. (Consulte [Gestión de formularios](/help/forms/developing/handling-submitted-forms.md)enviados).
 
 Compruebe que el estado de procesamiento asociado con el formulario enviado es `1``(Calculate)`, lo que significa que el servicio Forms está realizando una operación de cálculo en los datos del formulario y que los resultados se deben devolver al usuario. En este caso, se ejecuta automáticamente una secuencia de comandos configurada para ejecutarse en el servidor.
 
@@ -123,11 +123,11 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular datos de formulario mediante la API de Java {#calculate-form-data-using-the-java-api}
 

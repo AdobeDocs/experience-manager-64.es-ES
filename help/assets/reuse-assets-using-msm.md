@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c7a2a378e862f8743c8f5e8a1d9210cc7183908
+source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
 
 ---
 
@@ -27,7 +27,7 @@ Para utilizar MSM para recursos, instale al menos Service Pack 5. Para obtener m
 
 ### Cómo funciona y los beneficios {#how-it-works-the-benefits}
 
-Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md#possible-scenarios)de MSM. AEM mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas Live Copy (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias duplicadas. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia maestra y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia maestra.
+Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md#possible-scenarios)de MSM. AEM mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas Live Copy (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia maestra y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia maestra.
 
 MSM mantiene una relación activa entre el recurso de origen y sus copias activas para que:
 
@@ -37,25 +37,25 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 
 ### Glosario de términos de MSM para recursos {#glossary-msm-for-assets}
 
-* **** Fuente: Recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
+* **Fuente:** Recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
 
-* **** Live Copy: Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte [cómo crear LC](#create-live-copy-asset).
+* **Live Copy:** Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte [cómo crear LC](#create-live-copy-asset).
 
-* **** Herencia: Vínculo/referencia entre un recurso/carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe en un nivel granular para los campos de metadatos. La herencia se puede eliminar para los campos de metadatos selectivos, al tiempo que se conserva la relación activa entre el origen y su Live Copy.
+* **Herencia:** Vínculo/referencia entre un recurso/carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe en un nivel granular para los campos de metadatos. La herencia se puede eliminar para los campos de metadatos selectivos, al tiempo que se conserva la relación activa entre el origen y su Live Copy.
 
 * **Despliegue**: Acción que impulsa las modificaciones realizadas en el flujo de salida de origen a sus copias en vivo. Es posible actualizar una o varias copias en directo de una sola vez mediante la acción de implementación. Consulte [Despliegue](#rollout-action).
 
-* **** Configuración de despliegue: Reglas que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear copias en directo; se puede editar más tarde; y un elemento secundario puede heredar la configuración de implementación de su recurso principal. Para MSM para recursos, utilice únicamente la configuración de implementación estándar. Las demás configuraciones de implementación no están disponibles para MSM para Recursos.
+* **Configuración de despliegue:** Reglas que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear copias en directo; se puede editar más tarde; y un elemento secundario puede heredar la configuración de implementación de su recurso principal. Para MSM para recursos, utilice únicamente la configuración de implementación estándar. Las demás configuraciones de implementación no están disponibles para MSM para Recursos.
 
-* **** Sincronizar: Otra acción, además de la implementación, que trae paridad entre la fuente y su Live Copy, enviando las actualizaciones de la fuente a las Live Copies. Se inicia una sincronización para una copia en vivo concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las copias activas. Consulte [Sincronizar acción](#about-synchronize-action).
+* **Sincronizar:** Otra acción, además de la implementación, que trae paridad entre la fuente y su Live Copy, enviando las actualizaciones de la fuente a las Live Copies. Se inicia una sincronización para una copia en vivo concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las copias activas. Consulte [Sincronizar acción](#about-synchronize-action).
 
-* **** Suspender: Elimine temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte [suspensión de la acción](#suspend-and-resume-relationship).
+* **Suspender:** Elimine temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte [suspensión de la acción](#suspend-and-resume-relationship).
 
-* **** Reanudar: Reanude la relación activa para que una Live Copy vuelva a empezar a recibir las actualizaciones del origen. Consulte [Reanudar acción](#suspend-and-resume-relationship).
+* **Reanudar:** Reanude la relación activa para que una Live Copy vuelva a recibir las actualizaciones desde el origen. Consulte [Reanudar acción](#suspend-and-resume-relationship).
 
-* **** Restablecer: La acción Restaurar hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte las modificaciones [locales a la LC](#make-local-modifications-to-live-copy).
+* **Restablecer:** La acción Restaurar hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte las modificaciones [locales a la LC](#make-local-modifications-to-live-copy).
 
-* **** Desasociar: Elimine irrevocablemente la relación activa de una carpeta o recurso de Live Copy. Después de realizar la acción de separar, las copias en vivo nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte [Eliminar relación](#remove-live-relationship).
+* **Desasociar:** Elimine irrevocablemente la relación activa de una carpeta o recurso de Live Copy. Después de realizar la acción de separar, las copias en vivo nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte [Eliminar relación](#remove-live-relationship).
 
 ## Creación de una Live Copy de un recurso {#create-live-copy-asset}
 
@@ -89,9 +89,9 @@ Para crear copias en vivo con el segundo método, siga estos pasos:
 >
 >Cuando se mueve un origen o una Live Copy, las relaciones se conservan. Cuando se elimina una Live Copy, se eliminan las relaciones.
 
-## Ver varias propiedades y estados de la copia original y en vivo {#view-properties-statuses-source-and-lc}
+## Vista de varias propiedades y estados de la copia de origen y la Live Copy {#view-properties-statuses-source-and-lc}
 
-Puede ver la información y los estados relacionados con los MSM de la Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario de AEM. Los dos métodos siguientes funcionan para los recursos y las carpetas:
+Puede realizar la vista de la información y los estados relacionados con MSM de la Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario de AEM. Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 * Seleccione un recurso de Live Copy y busque la información en su página **[!UICONTROL Propiedades]** .
 * Seleccione la carpeta de origen y busque la información detallada de cada Live Copy desde la consola de **[!UICONTROL Live Copy]**.
@@ -116,13 +116,13 @@ AEM proporciona una consola para comprobar las estatuas de todas las copias acti
 
 1. Seleccione una carpeta de origen. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
-   ![Ver estados de las copias en vivo en la consola de Live Copy del origen](assets/lc_statuses.png)
+   ![Estados de Vista de copias en vivo en la consola de Live Copy del origen](assets/lc_statuses.png)
 1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en **[!UICONTROL Estado de relación]** en la barra de herramientas.
    ![Información detallada y estado de un recurso secundario de Live Copy en una carpeta](assets/lc_relationship_status.png)
 
-> [!TIP]
+>[!TIP]
 >
-> Puede ver rápidamente los estados de las copias en vivo de otras carpetas sin tener que examinar demasiado. Simplemente cambie la carpeta en la lista emergente de la parte superior central de la interfaz de **[!UICONTROL Live Copy Overview]** .
+>Puede ver rápidamente los estados de las copias en vivo de otras carpetas sin tener que examinar demasiado. Simplemente cambie la carpeta en la lista emergente en la parte superior central de la interfaz de **[!UICONTROL Live Copy Overview]** .
 
 ### Acciones rápidas del carril Referencias para el origen {#quick-actions-from-references-rail-for-source}
 
@@ -200,7 +200,7 @@ Para conocer los estados y la información relacionados con una acción de sincr
 
 ## Suspender y reanudar la relación {#suspend-and-resume-relationship}
 
-Puede suspender temporalmente la relación para evitar que una Live Copy reciba las modificaciones realizadas en el recurso o la carpeta de origen. La relación también se puede reanudar para que Live Copy empiece a recibir las modificaciones del origen.
+Puede suspender temporalmente la relación para evitar que una Live Copy reciba las modificaciones realizadas en el recurso o la carpeta de origen. La relación también se puede reanudar para la Live Copy al inicio que reciba las modificaciones del origen.
 
 Para suspender o reanudar, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y seleccione la acción que desee en la barra de herramientas.
 
@@ -255,16 +255,16 @@ AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para Re
 > * La configuración de bloqueos MSM en propiedades de página (IU táctil) no es compatible con MSM para recursos.
 
 
-## Impacto de las tareas de gestión de activos en las copias en vivo {#impact-of-asset-management-tasks-on-live-copies}
+## Efectos de las tareas de gestión de activos en las copias en vivo {#impact-of-asset-management-tasks-on-live-copies}
 
-Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de gestión de recursos en AEM tienen un impacto específico en las copias en directo.
+Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en AEM tienen un impacto específico en las copias en directo.
 
 * Al copiar una Live Copy, se crea un recurso de Live Copy con el mismo origen que la primera Live Copy.
 * Al mover un origen o su Live Copy, se mantiene la relación activa.
 * La acción Editar no funciona para los recursos de Live Copy.
 * La acción de desprotección no está disponible para los recursos de Live Copy.
 * Para la carpeta de origen, está disponible la opción de crear tareas de revisión.
-* Al ver el listado de recursos en la vista de lista y de columna, un recurso de Live Copy o una carpeta muestran la &quot;Live Copy&quot; en su contra. Esto le ayuda a identificar fácilmente las copias en vivo en una carpeta.
+* Al ver el listado de recursos en la vista de columnas y vistas de listas, un recurso de Live Copy o una carpeta muestran la &quot;Live Copy&quot; en su contra. Esto le ayuda a identificar fácilmente las copias en vivo en una carpeta.
 
 ## Comparar MSM para recursos y sitios {#compare-msm-for-assets-and-sites}
 

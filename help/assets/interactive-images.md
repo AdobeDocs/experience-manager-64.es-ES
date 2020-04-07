@@ -66,8 +66,7 @@ El tutorial ayuda a ilustrar los pasos para integrar imágenes interactivas en s
 1. **Adición de una imagen interactiva a su sitio web o a su sitio web en AEM**
 
    * Si utiliza AEM Sites, AEM eCommerce o ambos, puede añadir la imagen interactiva directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
-   * 
-Si utiliza Recursos AEM y Medios dinámicos independientes, debe copiar el código incrustado en el sitio web y, a continuación, integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con el sitio Web](#integrating-an-interactive-image-with-your-website).
+   * Si utiliza Recursos AEM y Medios dinámicos independientes, debe copiar el código incrustado en el sitio web y, a continuación, integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con el sitio Web](#integrating-an-interactive-image-with-your-website).
    * Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de una imagen interactiva con una vista rápida](#integrating-an-interactive-image-with-an-existing-quickview)existente.
 
 ## (Opcional) Identificación de variables de puntos interactivos {#optional-identifying-hotspot-variables}

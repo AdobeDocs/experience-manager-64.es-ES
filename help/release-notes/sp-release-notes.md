@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Se Añadió la compatibilidad de ARIA con Print y PrintDialog.
 * Se Añadió la compatibilidad con ARIA de validación de correo electrónico.
 * Respaldo proactivo para correcciones de platform.clientlibs.
-* Prevención de la ejecución automática de secuencias de comandos cuando no hay entrada en el dataType explícito.
+* Prevención de la ejecución automática de secuencias de comandos cuando no hay entrada en el dataType explícito (resuelve CVE-2015-9251).
 
 **Recursos**
 
@@ -2166,7 +2166,7 @@ que copiará los nuevos ajustes preestablecidos de visor en la ubicación /conf.
 >AEM 6.4.8.0 incluye una nueva versión del [paquete de compatibilidad de AEM Forms](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza a AEM 6.4.8.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms tras la instalación del paquete de Añada de Forms.
 
 1. Asegúrese de que ha instalado el Service Pack de AEM.
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}

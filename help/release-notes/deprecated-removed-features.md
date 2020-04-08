@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
   </tr>
   <tr>
    <td>Director de portal</td> 
-   <td><p>El director del portal es un conjunto de funciones que permite alojar contenido de AEM a través de Portlet en servidores de terceros.</p> <p>Adobe no planea realizar más mejoras en la función de director del portal en la ubicación que se muestra a continuación. AEM 6.4 incluye el director del portal y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que Portal Direct sigue siendo totalmente compatible mientras está en desuso.</p> 
+   <td><p>El director del portal es un conjunto de funciones que permite alojar contenido de AEM a través de Portlet en servidores de terceros.</p> <p>Adobe no planea realizar más mejoras en la función de director del portal en la ubicación que se indica a continuación. AEM 6.4 incluye el director del portal y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que Portal Direct sigue siendo totalmente compatible mientras está en desuso.</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
   <tr>
    <td>Forms</td> 
    <td><p>La compatibilidad con el servicio Adobe Central Migration Bridge ha quedado obsoleta, ya que el producto Adobe Central ya no es compatible.</p> </td> 
-   <td> </td> 
+   <td>Sin reemplazo </td> 
+  </tr>
+    <tr>
+   <td>Forms</td> 
+   <td><p>Uso desaprobado de JSONObject en Consulta y OperationOptions. Las siguientes API están en desuso:
+   <ul><li>setArguments(argumentos de JSONObject)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, argumentos JSONObject</li><li>JSONObject getArguments()</li><li>void setArguments(argumentos JSONObject)</li></ul>
+   </p> </td> 
+   <td>Uso de la API de IValueMap </td> 
   </tr>
   <tr>
    <td>Recursos</td> 
@@ -134,7 +141,7 @@ Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. L
   <tr>
    <td>Mapa de Actividad de Analytics</td> 
    <td>Versión del mapa de Actividad que se incluye en AEM.</td> 
-   <td>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.<br><br>Ahora debe utilizarse el complemento <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap proporcionado por Adobe Analytics</a> .</td> 
+   <td>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.<br><br>Ahora debe utilizarse el complemento <a href="https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html">ActivityMap proporcionado por Adobe Analytics</a> .</td> 
   </tr>
   <tr>
    <td>Componentes</td> 
@@ -209,12 +216,17 @@ Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. L
   <tr>
    <td>Forms</td> 
    <td> Se ha eliminado la función Documentos adaptables</td> 
-   <td> Puede utilizar la función de comunicaciones interactivas para crear comunicaciones impresas y basadas en Web. <br/> </td> 
+   <td> Puede utilizar la función de comunicaciones interactivas para crear comunicaciones impresas y basadas en Web. Si utiliza Documentos adaptables, instale el paquete de compatibilidad para seguir utilizando documentos adaptables existentes<br/> </td> 
   </tr>
     <tr>
     <td>Forms</td> 
     <td>Se han eliminado los formularios AEM en una página de aterrizaje específica de JEE.</td> 
     <td>AEM Forms en la página de aterrizaje JEE se sustituye por la página de aterrizaje AEM (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Forms</td> 
+   <td>Se ha eliminado la compatibilidad con Captcha predeterminada</td> 
+   <td>Utilice el servicio reCAPTCHA de Google.</td> 
   </tr>
    <tr>
    <td>Forms</td> 

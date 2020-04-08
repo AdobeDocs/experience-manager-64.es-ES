@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -29,13 +29,13 @@ Para no mostrar el avatar al lado de cada comentario publicado:
    1. Seleccione `/apps/social/commons/components/hbs/comments/comment`
    1. Seleccionar **[!UICONTROL pegar]**
 1. Abrir las superposiciones `comment.hbs`
-   * Haga doble clic en el nodo `comment.hbs`de `/apps/social/commons/components/hbs/comments/comment folder`
+   * Doble-clic en el nodo `comment.hbs`en `/apps/social/commons/components/hbs/comments/comment folder`
 1. Busque las líneas siguientes y elimínelas o coméntelas:
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 Elimine las líneas o rodearlas con &#39;&lt;!—&#39; y &#39;—>&#39; para comentarlos. Además, los caracteres &#39;xxx&#39; se están agregando como un indicador visual de dónde se habría encontrado el avatar.
 
@@ -55,11 +55,11 @@ Inserte el componente de comentarios superpuestos en la instancia de publicació
 
 En la navegación global, seleccione **[!UICONTROL Herramientas > Implementación > Replicación]** y, a continuación, **[!UICONTROL Activar árbol]**.
 
-Para la ruta de inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
+Para la Ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Ver resultados {#view-results}
+## Resultados de Vista {#view-results}
 
 Si inicia sesión en la instancia de publicación como administrador, por ejemplo: http://localhost:4503/crx/de como administrador/administrador, puede comprobar que los componentes superpuestos están allí.
 

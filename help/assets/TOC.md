@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: Guía del usuario de AEM 6.4 Assets
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -17,15 +17,15 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 + [Mejoras en la experiencia del usuario](ux-improvements.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
 + Uso de AEM Assets {#using}
-   + [Experiencia de la página principal de AEM Assets](assets-home-page.md)
+   + [Experiencia de página de inicio de AEM Assets](assets-home-page.md)
    + [Buscar recursos en AEM](search-assets.md)
    + [Búsqueda de texto completo de GQL](gql-search.md)
    + [Recursos multilingües](multilingual-assets.md)
    + [Uso de recursos de Adobe Stock en Recursos AEM](aem-assets-adobe-stock.md)
    + [Revisión de los recursos y las colecciones de carpetas](bulk-approval.md)
-   + [Flujo de actividad en la línea de tiempo](activity-stream.md)
-   + [Aplicación de flujos de trabajo a recursos](assets-workflow.md)
-   + [Adición de mapas de imagen](image-maps.md)
+   + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
+   + [Procesar recursos](assets-workflow.md)
+   + [Añadir mapas de imagen](image-maps.md)
    + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sobre Dynamic Media de Experience League](dynamic-media-newsletter.md)
@@ -44,7 +44,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adición de funciones de Scene7 a la página](scene7.md)
+   + [Añadir funciones de Scene7 a la página](scene7.md)
    + [Entrega HTTP2 de contenido](http2.md)
    + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activación de la protección de los enlaces interactivos en Dynamic Media](hotlink-protection.md)
@@ -69,10 +69,10 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Uso de selectores](working-with-selectors.md)
 + Extender recursos {#extending}
    + [Personalización y ampliación de recursos](extending-assets.md)
-   + [Procesamiento de recursos mediante controladores de medios y flujos de trabajo](media-handlers.md)
+   + [Procesamiento de recursos con controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliación de la búsqueda de recursos](searchx.md)
    + [Instalación y configuración de ImageMagick para trabajar con Recursos AEM](best-practices-for-imagemagick.md)
-   + [Integración de recursos con el flujo de actividades](extending-activity-stream.md)
+   + [Integración de recursos con flujo de Actividad](extending-activity-stream.md)
    + [Ampliación del Editor de recursos](asseteditorx.md)
    + [API de HTTP de Assets](mac-api-assets.md)
    + [Desarrollo de proxy de recursos](proxy.md)
@@ -140,7 +140,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [Administración de colecciones](managing-collections-touch-ui.md)
    + [Desprotección y protección de archivos en Recursos](check-out-and-submit-assets.md)
    + [Configuración del etiquetado de recursos mediante el servicio de contenido inteligente](config-smart-tagging.md)
-   + [Habilitación de la detección duplicada](duplicate-detection.md)
+   + [Activación de la detección de duplicados](duplicate-detection.md)
    + [Clasificación mejorada de recursos en AEM](enhance-sort.md)
    + [Organización de recursos digitales](organize-assets.md)
    + [Administración de recursos de vídeo](managing-video-assets.md)

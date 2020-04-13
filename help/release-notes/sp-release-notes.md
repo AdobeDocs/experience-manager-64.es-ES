@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * Los menús desplegables **Compañía** y Grupo de **Sistemas de informes** se ocultan una vez seleccionado Origen **de** Sistema de informes al configurar Adobe Analytics en los servicios en la nube de Experience Manager (NPR-31729).
 
 * Las propiedades de Adobe Campaign no se limpian cuando se realiza una copia de idioma de una newsletter vinculada a un Adobe Campaign, mientras que la limpieza se produce cuando se copia o pega una newsletter vinculada a un Adobe Campaign (NPR-32540).
+
+* ReportSuitesServlet es vulnerable a SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 

@@ -3,7 +3,7 @@ title: Configuración de AEM Assets con Brand Portal
 description: 'Obtenga información sobre cómo configurar Recursos AEM con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -193,7 +193,7 @@ Asegúrese de que ha realizado los siguientes pasos:
 
 >[!CAUTION]
 >
->Cree sólo una configuración IMS válida. No cree varias configuraciones de IMS.
+>Cree sólo una configuración IMS válida.
 >
 >Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
 
@@ -278,7 +278,7 @@ Brand Portal se ha configurado correctamente con la instancia de creación de AE
 * [Publicación de recursos de AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Publicación de carpetas de AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicación de colecciones de AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configure Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) para que los usuarios de Brand Portal puedan contribuir y publicar recursos en Recursos AEM.
+* [Configure Asset Sourcing](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) para que los usuarios de Brand Portal puedan contribuir y publicar recursos en Recursos AEM.
 
 ## Configuración de actualización {#upgrade-integration-64}
 

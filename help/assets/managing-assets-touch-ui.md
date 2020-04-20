@@ -4,7 +4,7 @@ description: Obtenga información sobre varias tareas de edición y administraci
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ Algunas limitaciones de la función son:
 
 ## Recursos de Previsualización {#previewing-assets}
 
-Consulte también [Vista previa de recursos de Dynamic Media.](previewing-assets.md)
-
 **Para previsualización de recursos**:
 
 1. En la interfaz de usuario de Recursos, desplácese hasta la ubicación del recurso que desee previsualización.
@@ -331,6 +329,12 @@ Consulte también [Vista previa de recursos de Dynamic Media.](previewing-assets
    Toque el botón **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [Previsualización de recursos](/help/assets/previewing-assets.md)de medios dinámicos.
+>* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de Vista.
+
 
 ## Editar propiedades {#editing-properties}
 
@@ -603,7 +607,7 @@ Los CUG son una forma adicional de restringir el acceso a los recursos. También
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
 1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
 
-## Búsqueda de recursos {#searching-assets}
+## Buscar recursos {#searching-assets}
 
 La búsqueda básica se detalla en la sección [Buscar y filtrar](/help/sites-authoring/search.md#search-and-filter) . Utilice el panel **[!UICONTROL Buscar]** para buscar recursos, etiquetas y metadatos. Puede buscar partes de una cadena con el asterisco comodín. Además, puede personalizar el panel **[!UICONTROL Buscar]** mediante facetas [de búsqueda](search-facets.md).
 

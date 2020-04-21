@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 7d0c2e63d6ea7942cf442d61bdab8e31dd2c3e47
+source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
 
 ---
 
@@ -25,12 +25,12 @@ Smart Imaging también se beneficia del aumento de rendimiento añadido de la in
 
 Los siguientes ejemplos de recursos de imagen muestran la optimización de imágenes inteligentes añadida:
 
-| Image<br>(URL) | Miniatura   | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
+| Image<br>(URL) | Miniatura    | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
 |---|---|---|---|---|
-| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
+| [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
+| [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
+| [Imagen 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
+| [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | Promedio = 51% |
 
 De manera similar a lo anterior, Adobe también ejecutó una prueba con 7009 URL de sitios de clientes activos, y logró una optimización del tamaño de archivo en JPEG de un 38% en promedio y una optimización del tamaño de archivo en un 31% adicional para PNG con formato WebP, debido a la capacidad de las imágenes inteligentes.
@@ -74,25 +74,25 @@ Los siguientes formatos de imagen son compatibles con las imágenes inteligentes
 * JPEG
 * PNG
 
-Para cualquier otro formato mencionado en una URL, debe desactivar explícitamente las imágenes inteligentes.  Añada un modificador `bfc=off` a la URL para los formatos de archivo distintos de JPEG y PNG. Esto se puede lograr mediante uno de los siguientes métodos:
+<!-- CQDOC-15846 For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
-* Utilice un conjunto de reglas si se menciona el `fmt` modificador en la dirección URL.
-* Añada el campo modificadores de URL de los ajustes preestablecidos correspondientes.
+* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
+* Append in URL modifiers field of the presets concerned.
 
-Adobe está trabajando en una corrección permanente que no requiere que anexe `bfc=off` para `fmt !=JPEG` o `fmt !=PNG`. Este tema se actualizará después de que se envíe la corrección.
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 
 ## ¿Cómo funciona la imagen inteligente con los ajustes preestablecidos de imagen que ya se están utilizando? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 La imagen inteligente funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes y observa todos los ajustes de imagen, excepto la calidad (qlt) y el formato (fmt) si el formato de archivo solicitado es JPEG o PNG. Para la conversión de formato, mantenemos la fidelidad visual total definida por la configuración de ajustes preestablecidos de imagen, pero con un tamaño de archivo más pequeño. Si el tamaño de la imagen original es menor que el que produce la imagen inteligente, se muestra la imagen original.
 
-Además, si los ajustes preestablecidos de imagen se utilizan para devolver `fmt !=JPEG` o `fmt !=PNG`, asegúrese de anexar `bfc=off` el campo modificador de ajustes preestablecidos para devolver el formato de archivo solicitado.
+<!-- CQDOC-15846 In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## ¿Tendré que cambiar direcciones URL, ajustes preestablecidos de imagen o implementar código nuevo en mi sitio para las imágenes inteligentes? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 Las imágenes inteligentes funcionan perfectamente con las URL de imágenes y los ajustes preestablecidos de imagen existentes. Además, las imágenes inteligentes no requieren que agregue ningún código en el sitio web para detectar el explorador de un usuario. Todo esto se gestiona automáticamente.
 
-Como se mencionó anteriormente, Smart Imaging solo admite formatos de imagen JPEG y PNG. Para otros formatos, debe anexar el `bfc=off` modificador a la dirección URL como se ha descrito anteriormente.
+<!-- CQDOC-15846 As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 Además, consulte [¿Cumplo los requisitos para utilizar imágenes inteligentes?](#am-i-eligible-to-use-smart-imaging) para comprender los requisitos previos para las imágenes inteligentes.
 

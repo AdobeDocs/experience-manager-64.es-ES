@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
 
 ---
 
 
-# Adición de recursos de Dynamic Media a las páginas {#adding-dynamic-media-assets-to-pages}
+# Agregar recursos de Dynamic Media a las páginas {#adding-dynamic-media-assets-to-pages}
 
 To add the dynamic media functionality to assets you use on your websites, you can add the **Dynamic Media** or **Interactive Media** component directly on the page. Para ello, introduzca el modo Diseño y active los componentes de medios dinámicos. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
 
@@ -38,7 +38,7 @@ El proceso de añadir un componente de Dynamic Media o Medios interactivos a una
 1. En AEM, abra la página en la que desee agregar el componente Dynamic Media o Medios interactivos.
 1. En el panel izquierdo, haga clic en el icono **[!UICONTROL Componentes]** y filtre para Medios **[!UICONTROL dinámicos]**. Si no hay ningún componente de Dynamic Media disponible, debe activar los componentes de Dynamic Media. Consulte [Edición de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) de página para obtener más información.
 
-   ![chlimage_1-538](assets/chlimage_1-537.png)
+   ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Arrastre el componente Medios **[!UICONTROL dinámicos]** o Medios **[!UICONTROL interactivos]** a la página en la ubicación deseada.
 1. Haga clic en el cuadro azul alrededor del componente y, a continuación, toque el icono **[!UICONTROL Configuración]** (llave inglesa).
@@ -94,7 +94,7 @@ El componente de Dynamic Media permite añadir imágenes dinámicas, como conjun
 
 También puede configurar el ajuste preestablecido de visor, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para hacer que en una imagen sea interactiva, puede establecer puntos de interrupción o aplicar un ajuste preestablecido de imagen interactiva.
 
-You can edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You must edit the following Dynamic Media Settings by clicking the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -119,7 +119,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 
 * **[!UICONTROL Título]** Cambie el título de la imagen.
 
-* **[!UICONTROL Texto]**alternativo Añada un título a la imagen para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]**alternativo Añada un título a la imagen para los usuarios que tienen los gráficos desactivados.
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL URL, Abrir en]**Puede definir un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
@@ -133,7 +133,7 @@ Utilice el componente Dynamic Media para añadir vídeo dinámico a las páginas
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 * **[!UICONTROL Título]** Cambie el título de la imagen de recorte inteligente.
 
-* **[!UICONTROL Texto]**alternativo Añada un título a la imagen de recorte inteligente para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]**alternativo Añada un título a la imagen de recorte inteligente para los usuarios que tengan los gráficos desactivados.
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 * **[!UICONTROL URL, Abrir en]**Puede definir un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
@@ -230,9 +230,9 @@ Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en 
 
 Si el ajuste preestablecido de visor que está buscando no está visible, asegúrese de que se ha publicado. Debe publicar ajustes preestablecidos de visor para poder utilizarlos. Consulte [Administración de ajustes preestablecidos de visor](managing-viewer-presets.md). 
 
-### Uso de HTTP/2 para enviar recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Uso de HTTP/2 para envío de recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 

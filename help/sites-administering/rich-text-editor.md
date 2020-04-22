@@ -3,7 +3,7 @@ title: Configuración del editor de texto enriquecido
 description: Aprenda a configurar el editor de texto enriquecido de AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 El editor de texto enriquecido (RTE) ofrece a los autores una amplia gama de funciones para editar su contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG.
 
-RTE se puede configurar para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Para saber cómo utilizar las funciones RTE para la creación, consulte [Uso del editor de texto enriquecido para la creación](/help/sites-authoring/rich-text-editor.md).
-
-El flujo de trabajo siguiente ilustra el orden recomendado para completar las tareas de configuración RTE.
+Para saber cómo utilizar las funciones RTE para la creación, consulte [Uso del editor de texto enriquecido para la creación](/help/sites-authoring/rich-text-editor.md). RTE se puede configurar para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. El flujo de trabajo siguiente ilustra el orden recomendado para completar las tareas de configuración RTE en Experience Manager.
 
 ![Flujo de trabajo habitual para configurar el Editor de texto enriquecido](assets/rte_workflow_v1.png)
 
@@ -22,7 +20,7 @@ El flujo de trabajo siguiente ilustra el orden recomendado para completar las ta
 
 ## Comprender la IU táctil y la IU clásica {#understand-touch-enabled-ui-and-classic-ui}
 
-La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
+La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para entornos de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
 
 ![Barra de herramientas del Editor de texto enriquecido en la IU táctil](assets/chlimage_1-404.png)
 
@@ -44,45 +42,12 @@ La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en
 
 Los autores pueden crear y editar contenido textual en AEM utilizando los distintos modos de componentes. Las opciones de la barra de herramientas para crear y dar formato al contenido y la experiencia del usuario de los componentes habilitados para RTE en diferentes modos de edición varían según las configuraciones de RTE.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Modo de edición</th> 
-   <th>Área de edición</th> 
-   <th>Funciones recomendadas para habilitarlas<br /> </th> 
-   <th>IU táctil</th> 
-   <th>IU clásica</th> 
-  </tr> 
-  <tr> 
-   <td>En línea</td> 
-   <td>Edición in situ para ediciones rápidas y secundarias; Formato sin abrir un cuadro de diálogo</td> 
-   <td>Características mínimas de RTE</td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>RTE pantalla completa</td> 
-   <td>Abarca toda la página<br /> </td> 
-   <td>Todas las funciones RTE necesarias<br /> </td> 
-   <td>Y</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Cuadro de diálogo</td> 
-   <td>Cuadro de diálogo en la parte superior del contenido de la página pero no cubre toda la página</td> 
-   <td>Todas las funciones RTE necesarias en la IU clásica; activar correctamente las funciones en la IU táctil<br /> </td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>Pantalla completa del cuadro de diálogo<br /> </td> 
-   <td>Igual que el modo de pantalla completa; contiene campos del cuadro de diálogo junto con RTE<br /> </td> 
-   <td>Todas las funciones RTE necesarias</td> 
-   <td>Y</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| Modo de edición | Área de edición | Funciones recomendadas para habilitarlas | IU táctil | IU clásica |
+|--- |--- |--- |--- |--- |
+| En línea | Edición in situ para ediciones rápidas y secundarias; Formato sin abrir un cuadro de diálogo | Características mínimas de RTE | Y | Y |
+| RTE pantalla completa | Abarca toda la página | Todas las funciones RTE necesarias | Y | N |
+| Cuadro de diálogo | Cuadro de diálogo en la parte superior del contenido de la página pero no cubre toda la página | Todas las funciones RTE necesarias en la IU clásica; activar correctamente las funciones en la IU táctil | Y | Y |
+| Pantalla completa del cuadro de diálogo | Igual que el modo de pantalla completa; contiene campos del cuadro de diálogo junto con RTE | Todas las funciones RTE necesarias | Y | N |
 
 >[!NOTE]
 >
@@ -90,17 +55,17 @@ Los autores pueden crear y editar contenido textual en AEM utilizando los distin
 
 ### Edición en línea {#inline-editing}
 
-Cuando se abre (con un doble toque o clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones básicas.
+Cuando se abre (con un doble o clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones básicas.
 
 ![Edición en línea con la barra de herramientas básica en la IU táctil](assets/chlimage_1-405.png)
 
 *Figura: Edición en línea con la barra de herramientas básica en la IU táctil*
 
-En la IU clásica, un doble clic lento en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si Content Finder está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si Content Finder no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones básicas de texto.
+En la IU clásica, un doble lento con clic en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si Content Finder está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si Content Finder no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones básicas de texto.
 
 ### Full screen editing {#full-screen-editing}
 
-Los componentes de AEM se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que ofrece la mayor cantidad de opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
+Los componentes de AEM se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 El modo de pantalla completa del cuadro de diálogo proporciona una barra de herramientas RTE detallada y las opciones y los componentes disponibles en el modo de cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -110,7 +75,7 @@ El modo de pantalla completa del cuadro de diálogo proporciona una barra de her
 
 ### Edición de cuadro de diálogo {#dialog-editing}
 
-Cuando se hace doble clic en un componente en la IU clásica, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página con varias columnas y el área disponible para el cuadro de diálogo es menor.
+Cuando se hace clic en un componente con un doble en la IU clásica, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página con varias columnas y el área disponible para el cuadro de diálogo es menor.
 
 ![Modo de edición de cuadro de diálogo en la IU táctil](assets/dialog_editing_modetouchui.png)
 
@@ -133,96 +98,29 @@ La funcionalidad está disponible mediante una serie de complementos, cada uno c
 
 Las funciones básicas de RTE se activan o desactivan por el valor de la `features` propiedad en un nodo específico del complemento adecuado.
 
-En la tabla siguiente se muestran los complementos actuales y se muestran:
+La siguiente tabla lista los complementos actuales y muestra:
 
 * ID de complementos con un vínculo a la documentación de API. El ID se utiliza como nombre de nodo al [activar un complemento](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Valores permitidos para la `features` propiedad.
 * Descripción de la funcionalidad proporcionada por el complemento.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>ID<br /> del complemento <br /> </p> </td> 
-   <td><p>features<br /> <br /> </p> </td> 
-   <td><p>Descripción<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>editar</p> </td> 
-   <td><p>cortar<br /> copiar<br /> pegar-predeterminado<br /> pegar-plaintext<br /> pegar-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Cortar, copiar y pegar los tres modos</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>Buscar y reemplazar.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>negrita<br /> cursiva<br /> subrayado</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Formato</a>de texto básico.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">imagen</a></p> </td> 
-   <td><p>imagen</p> </td> 
-   <td><p>Defina algunas propiedades de imagen, como alineación y texto alternativo. La compatibilidad básica para arrastrar y soltar imágenes desde Content Finder funciona sin este complemento.</p> <p><em>Nota</em>: El comportamiento de creación puede variar con el explorador. Por ejemplo, Mozilla Firefox ofrece capacidades de cambio de tamaño, pero Google Chrome no.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">claves</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Para definir este valor, consulte Tamaño <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">de tabulación</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
-   <td><p>justifyleft<br /> justifycenter<br /> justificante Copyright</p> </td> 
-   <td><p>Alineación de párrafo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">vínculos</a></p> </td> 
-   <td><p>modifylink<br /> desvincular<br /> anclaje</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Hipervínculos y anclajes</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">listas</a></p> </td> 
-   <td><p>sangría<br /> sin orden<br /><br /> ordenada</p> </td> 
-   <td><p>Este complemento controla tanto la <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">sangría como las listas</a>; incluidas las listas anidadas.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>Varias herramientas permiten a los autores introducir caracteres <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank"></a> especiales o editar el origen HTML. Además, puede agregar un <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">rango completo de caracteres</a> especiales si desea definir su propia lista.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>parformat</p> </td> 
-   <td>Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt; y &lt;h3&gt;). Puede <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">agregar más formatos</a> de párrafo o ampliar la lista.</td> 
-  </tr> 
-  <tr> 
-   <td><p>spellcheck</p> </td> 
-   <td><p>texto de comprobación</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">Corrector ortográfico</a>con conocimiento del idioma.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>estilos</p> </td> 
-   <td><p>estilos</p> </td> 
-   <td>Compatibilidad con estilos mediante una clase CSS. <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">Agregue nuevos estilos</a> de texto si desea agregar (o ampliar) su propia gama de estilos para utilizarlos con texto.</td> 
-  </tr> 
-  <tr> 
-   <td><p>subsuperíndice</p> </td> 
-   <td><p>superíndice de subíndice<br /></p> </td> 
-   <td><p>Extensiones a los formatos básicos, agregando sub-y-super-script.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>tabla</p> </td> 
-   <td><p>tabla<br /> insertar extraíble<br /> quitar<br /> quitar insertar<br /> columna<br /> quitar columna<br /> celda props<br /> mergecells<br /> dividir celda<br /> seleccionar filas<br /> seleccionar columnas</p> </td> 
-   <td>Consulte <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">Configuración de estilos</a>de tabla si desea agregar sus propios estilos para tablas enteras o celdas individuales.</td> 
-  </tr> 
-  <tr> 
-   <td><p>deshacer</p> </td> 
-   <td><p>undo<br /> redo</p> </td> 
-   <td>Tamaño del historial de las operaciones de <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">deshacer y rehacer</a> .</td> 
-  </tr> 
- </tbody> 
-</table>
+| ID del complemento | características | Descripción |
+|--- |--- |--- |
+| editar | cortar copiar pegar-predeterminado pegar-plaintext pegar-wordhtml | [Cortar, copiar y pegar los tres modos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | buscar reemplazar | Buscar y reemplazar. |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | subrayado en cursiva negrita | [Formato](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)de texto básico. |
+| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagen | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
+| [claves](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir este valor, consulte Tamaño [de tabulación](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justificfycenter | Alineación de párrafo. |
+| [vínculos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink desvincular anclaje | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [listas](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | sangría sin ordenar anulada | Este complemento controla tanto la [sangría como las listas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Varias herramientas permiten a los autores introducir caracteres [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) especiales o editar el origen HTML. Además, puede agregar un [rango completo de caracteres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) especiales si desea definir su propia lista. |
+| Paraformat | parformat | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`y `<h3>`). Puede [agregar más formatos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) de párrafo o extender la lista. |
+| spellcheck | texto de comprobación | [Corrector ortográfico](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)con conocimiento del idioma. |
+| estilos | estilos | Compatibilidad con estilos mediante una clase CSS. [Añada nuevos estilos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) de texto si desea agregar (o ampliar) su propia gama de estilos para utilizarlos con texto. |
+| subsuperíndice | superíndice de subíndice | Extensiones a los formatos básicos, agregando sub-y-super-script. |
+| tabla | tabla insertar quitable quitar insertar columna removercolumna propiedades de celda mergecells separtcelda seleccionar selectfilas seleccionar columnas | Consulte [Configuración de estilos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)de tabla si desea agregar sus propios estilos para tablas enteras o celdas individuales. |
+| deshacer | deshacer rehacer | Tamaño del historial de las operaciones de [deshacer y rehacer](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) . |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporci
 >No asigne un nombre al nodo en `cq:inplaceEditing` como `config`. En el `cq:inplaceEditing` nodo, defina las siguientes propiedades:
 >
 >* **Nombre**: `configPath`
-   >
-   >
-* **Tipo**: `String`
-   >
-   >
-* **Valor**: ruta del nodo que contiene la configuración real
+>* **Tipo**: `String`
+>* **Valor**: ruta del nodo que contiene la configuración real
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
@@ -260,11 +154,11 @@ Configure las siguientes propiedades que se aplican en el modo de edición de cu
 
    Cuando esta propiedad es verdadera, la edición de Richtext se inicia, de forma predeterminada, en el evento &quot;foundation-contentloaded&quot;.
 
-   Para evitar esto, establezca la propiedad `customStart` en `True`y active el evento &#39;rte-start&#39; para iniciar la edición RTE. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, la velocidad de inicio al hacer clic, no funciona.
+   Para evitarlo, establezca la propiedad `customStart` en `True`y active el evento &#39;rte-inicio&#39; en la edición RTE de inicio. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, inicio de velocidad al hacer clic, no funciona.
 
-* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo iniciar RTE activando el evento `rte-start`.
+* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo se debe activar el inicio RTE activando el evento `rte-start`.
 
-* `rte-start`:: Activar este evento en el `contenteditable-div` servidor RTE, cuándo empezar a editar RTE. Esto solo funciona si `customStart` se ha establecido en true.
+* `rte-start`:: Activar este evento en la `contenteditable-div` parte de RTE, cuándo editar inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
 
 Cuando se utiliza RTE en el cuadro de diálogo táctil, es obligatorio establecer la propiedad `useFixedInlineToolbar` en true para evitar problemas.
 
@@ -273,7 +167,6 @@ Cuando se utiliza RTE en el cuadro de diálogo táctil, es obligatorio establece
 Las funcionalidades RTE están disponibles a través de una serie de complementos, cada uno con propiedad de características. Puede configurar la propiedad features para habilitar o deshabilitar las diversas características de cada complemento.
 
 Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo activar y configurar los complementos](/help/sites-administering/configure-rich-text-editor-plug-ins.md)RTE.
-
 
 Descargue esta configuración de muestra para comprender cómo configurar RTE. En este paquete todas las funciones están habilitadas.
 
@@ -343,7 +236,7 @@ Para disfrutar de la mejor experiencia de creación:
 
 Para el modo en línea y el modo de pantalla completa se utilizan diferentes ajustes de IU. La propiedad toolbar se utiliza para especificar los botones de la barra de herramientas. Por ejemplo, si el botón es en sí mismo una función (por ejemplo, `Bold`), se especifica como `PluginName#FeatureName` (por ejemplo, `links#modifylink`). Si el botón es una ventana emergente (que contiene algunas características de un complemento), se especifica como `#PluginName` (por ejemplo, `#format`). Separadores (| ) entre un grupo de botones se puede especificar con &#39;-&#39;.
 
-El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario bajo el `popovers` nodo recibe el nombre del complemento (por ejemplo, `format`). Tiene una propiedad `items` que contiene una lista de características del complemento (por ejemplo, `format#bold`).
+El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario bajo el `popovers` nodo recibe el nombre del complemento (por ejemplo, `format`). Tiene una propiedad `items` que contiene una lista de las características del complemento (por ejemplo, `format#bold`).
 
 ## Configuración de la interfaz de usuario RTE y directivas de contenido {#rtecontentpolicies}
 
@@ -404,7 +297,7 @@ En una página, puede incluir la clientlib CoralUI 2 RTE o la clientlib CoralUI 
 
 1. Superponga los nodos `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` debajo de `/apps`.
 
-   Elimine la categoría `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y agréguela a `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
+   Quite la categoría `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y agréguela a `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
 
 1. Cambie cualquier otra dependencia que se incluya en la página de `rte.coralui3` a `rte.coralui2`. Por ejemplo, después de superponer el nodo `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` debajo de `/apps`, cambie cualquier dependencia de él de `rte.coralui3` a `rte.coralui2`.
 
@@ -423,20 +316,20 @@ En particular, para ver los complementos y las opciones relacionadas disponibles
 * El componente [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido). Para conocer todos los parámetros disponibles para el formulario de texto enriquecido, consulte Opciones de configuración.
 * El componente RichText proporciona una amplia gama de funciones mediante complementos enumerados en [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada complemento:
 
-   * consulte las Funciones para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
-   * Consulte las Opciones de configuración para ver todos los parámetros disponibles para la configuración detallada del complemento apropiado
+   * Consulte las Funciones para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar).
+   * Consulte Opciones de configuración para ver todos los parámetros disponibles para la configuración detallada del complemento adecuado.
 
 * También hay disponible más información sobre las reglas HTML para los vínculos.
 
-Las opciones anteriores pueden utilizarse para ampliar y personalizar su propio RTE. Por ejemplo, para enumerar los anclajes disponibles en la página al crear un vínculo, puede proporcionar su propia implementación del `LinkPlugin`.
+Las opciones anteriores pueden utilizarse para ampliar y personalizar su propio RTE. Por ejemplo, para lista de los anclajes disponibles en la página al crear un vínculo, puede proporcionar su propia implementación del `LinkPlugin`.
 
 ## Limitaciones conocidas {#known-limitations}
 
 La capacidad de AEM RTE tiene las siguientes limitaciones:
 
-* Las funciones RTE solo se admiten en los cuadros de diálogo de componentes de AEM. RTE no se admite en asistentes o formularios de base como Propiedades [de](../sites-developing/page-properties-views.md) página y [Andamiaje](../sites-authoring/scaffolding.md) en la IU táctil.
+* Las funciones RTE solo se admiten en los cuadros de diálogo de componentes de AEM. RTE no se admite en asistentes o formularios de base como Propiedades [de](/help/sites-developing/page-properties-views.md) página y [Andamiaje](/help/sites-authoring/scaffolding.md) en la IU táctil.
 
-* AEM no funciona en dispositivos [híbridos](../release-notes/known-issues.md).
+* AEM no funciona en dispositivos [híbridos](/help/release-notes/known-issues.md).
 
 * No asigne un nombre al nodo de configuración RTE `config`. De lo contrario, la configuración RTE solo se aplica a los administradores y no a los usuarios del grupo `content-author`.
 

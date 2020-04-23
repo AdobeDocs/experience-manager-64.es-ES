@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
 
 ---
 
@@ -146,7 +146,7 @@ En el espacio de trabajo de AEM Forms:
 * AVISAR
 * INFORMACIÓN
 * DEPURACIONES
-*  TRACE
+* TRACE
 * DESACTIVADO
 
 ## Depuración de información para navegadores {#debugging-information-for-browsers}
@@ -155,21 +155,21 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
 * **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I.Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Depuración en Firefox**: Hay varios complementos disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
+* **Depuración en Firefox**: Hay varios Añadas disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Preguntas más frecuentes {#faqs}
 
 1. El formulario PDF no se procesa ni se envía en Google Chrome.
 
    1. Instale el complemento Adobe® Reader®.
-   1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
+   1. En Chrome, abra chrome://plugins para vista de los complementos disponibles.
    1. Desactive el complemento Chrome PDF Viewer y habilite el complemento Adobe Reader.
 
 1. El formulario SWF o la guía no se procesan en Google Chrome.
 
-   1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
+   1. En Chrome, abra chrome://plugins para vista de los complementos disponibles.
    1. Consulte los detalles del complemento Adobe Flash® Player.
    1. Desactive PepperFlash en el complemento Adobe Flash Player.
 
@@ -183,7 +183,7 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
 1. Los datos adjuntos no se muestran cuando se hace clic en ellos.
 
-   Para ver los archivos adjuntos, active las ventanas emergentes en el explorador.
+   Para vista de datos adjuntos, active las ventanas emergentes en el explorador.
 
 1. Un usuario ha iniciado sesión en una aplicación de formularios. Si el usuario intenta iniciar sesión en el espacio de trabajo, es posible que no se cargue si no tiene permisos de espacio de trabajo.
 
@@ -192,5 +192,3 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 1. Los formularios HTML, mediante Propiedades de proceso en su diseño, se muestran en el espacio de trabajo de AEM Forms con el botón Enviar dentro del formulario.
 
    Al diseñar formularios, cuando se utilizan propiedades de proceso, se agrega un botón Enviar dentro del formulario. Cuando se procesa como un PDF en el espacio de trabajo de AEM Forms, el usuario final no ve el botón Enviar. Sin embargo, cuando se procesa como un formulario HTML en el espacio de trabajo de AEM Forms, el usuario final puede ver el botón Enviar. Al hacer clic en este botón Enviar dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario, se completa la tarea.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

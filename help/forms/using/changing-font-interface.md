@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-ht
 
 1. Cambie o agregue la familia de fuentes en un estilo existente.
 1. Cambie o agregue la familia de fuentes en línea para el elemento HTML.
-1. Agregue un estilo y úselo para el elemento HTML.
+1. Añada un estilo y úselo para el elemento HTML.
 
 Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegación superior a Courier New, siga estos pasos:
 
@@ -74,8 +74,6 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
 
 1. Vuelva a iniciar el espacio de trabajo y borre la caché del explorador para que los cambios estén visibles.
 
-![](assets/change_font_before.png) change_font_before **** Figure: Barra de navegación *superior antes de personalizar la fuente*
+![change_font_before](assets/change_font_before.png)**Figure:** Barra de navegación *superior antes de personalizar la fuente*
 
-![](assets/change_font_after.png) change_font_after **** Figure: Barra de navegación *superior después de personalizar la fuente de la primera ficha*
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after](assets/change_font_after.png)**Figure:** Barra de navegación *superior después de personalizar la fuente de la primera ficha*

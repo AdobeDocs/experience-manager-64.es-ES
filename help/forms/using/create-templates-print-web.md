@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -21,19 +21,19 @@ Creación de plantillas de impresión y Web para comunicación interactiva
 
 Este tutorial es un paso en la [serie Crear una primera comunicación](/help/forms/using/create-your-first-interactive-communication.md) interactiva. Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
 
-Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor AEM para los canales web e impresos.
+Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor AEM para Canales impresos y Web.
 
 Las plantillas para el canal de impresión se crean en Adobe Forms Designer y se cargan en el servidor AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
 Las plantillas para el canal web se crean en AEM. Los creadores y administradores de plantillas pueden crear, editar y habilitar plantillas web. Una vez creadas y habilitadas, estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
-Este tutorial lo acompaña a través de los pasos para crear plantillas para canales Web e impresos de modo que estén disponibles para su uso durante la creación de comunicaciones interactivas. Al final de este tutorial, podrá:
+Este tutorial le guiará por los pasos para crear plantillas para canales impresos y Web de modo que estén disponibles para su uso durante la creación de comunicaciones interactivas. Al final de este tutorial, podrá:
 
-* Creación de plantillas XDP para el canal de impresión mediante Adobe Forms Designer
+* Creación de plantillas XDP para canal de impresión con Adobe Forms Designer
 * Carga de plantillas XDP en el servidor de AEM Forms
 * Crear y habilitar plantillas para el canal Web
 
-## Crear plantilla para el canal de impresión {#create-template-for-print-channel}
+## Crear plantilla para canal de impresión {#create-template-for-print-channel}
 
 Cree y gestione una plantilla para el canal de impresión de la comunicación interactiva mediante las siguientes tareas:
 
@@ -51,13 +51,13 @@ En función del caso [de](/help/forms/using/create-your-first-interactive-commun
 * Resumen: Incluye un fragmento de documento (subformulario Cargos) y un gráfico (subformulario Gráficos)
 * Llamadas por elementos: Incluye una tabla (fragmento de diseño)
 * Pagar ahora: Incluye una imagen
-* Servicios de valor agregado: Incluye una imagen
+* Servicios Añadidos de valor: Incluye una imagen
 
 ![create_print_template](assets/create_print_template.gif)
 
-Estos subformularios se muestran como áreas de destino en la plantilla Imprimir después de cargar el archivo XDP al servidor de Forms. Todas las entidades, como fragmentos de documento, gráficos, fragmentos de diseño e imágenes, se agregan a las áreas de destino al crear la comunicación interactiva.
+Estos subformularios se muestran como áreas de destinatario en la plantilla Imprimir después de cargar el archivo XDP al servidor de Forms. Todas las entidades, como fragmentos de documento, gráficos, fragmentos de diseño e imágenes, se agregan a las áreas de destinatario al crear la comunicación interactiva.
 
-Siga los pasos siguientes para crear una plantilla XDP para el canal Imprimir:
+Siga los pasos siguientes para crear una plantilla XDP para el canal de impresión:
 
 1. Abra el Diseñador de formularios, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
 
@@ -92,7 +92,7 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal Imprimir:
    * ValueAddedServices
    Para ahorrar tiempo, también puede copiar y pegar subformularios existentes para crear nuevos subformularios.
 
-   Para cambiar el subformulario **Gráficos** a la derecha del subformulario Cargos, seleccione el subformulario **Gráficos** en el panel izquierdo, seleccione la ficha **Presentación** y especifique un valor para el campo **AnclajeX** . El valor debe ser mayor que el valor del campo **Ancho** del subformulario **Cargos** . Seleccione el subformulario **Cargos** y seleccione la ficha **Presentación** para ver el valor del campo **Anchura** .
+   Para cambiar el subformulario **Gráficos** a la derecha del subformulario Cargos, seleccione el subformulario **Gráficos** en el panel izquierdo, seleccione la ficha **Presentación** y especifique un valor para el campo **AnclajeX** . El valor debe ser bueno que el valor del campo **Ancho** del subformulario **Cargos** . Seleccione el subformulario **Cargos** y seleccione la ficha **Presentación** para vista del valor del campo **Anchura** .
 
 1. Arrastre y suelte el objeto **Texto** de la biblioteca **de** objetos en el formulario e introduzca el **Marcar XXXX para suscribirse** al texto del cuadro.
 1. Haga clic con el botón derecho en el objeto de texto del panel izquierdo, seleccione **Cambiar nombre de objeto** e introduzca el nombre del objeto de texto como **Suscribirse**.
@@ -109,14 +109,14 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal Imprimir:
 
 Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de la comunicación interactiva.
 
-1. Seleccione **Formularios** > **Formularios y documentos**.
+1. Seleccione **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
 1. Toque **Crear** > Cargar **archivo**.
 
    Desplácese y seleccione la plantilla **create_first_ic_print_template** (XDP) y toque **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
 ### Creación de una plantilla XDP para fragmentos de diseño {#create-xdp-template-for-layout-fragments}
 
-Para crear un fragmento de diseño para el canal Imprimir de la comunicación interactiva, cree un XDP con Forms Designer y cárguelo en el servidor de AEM Forms.
+Para crear un fragmento de diseño para el canal de impresión de la comunicación interactiva, cree un XDP con Forms Designer y cárguelo en el servidor de AEM Forms.
 
 1. Abra el Diseñador de formularios, seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco,** toque **Siguiente** y, a continuación, **Finalizar** para abrir el formulario para la creación de plantillas.
 
@@ -134,7 +134,7 @@ Para crear un fragmento de diseño para el canal Imprimir de la comunicación in
 
    Del mismo modo, cambie **Cell2**, **Cell3**, **Cell4** y **Cell5** por **Time************** ,Number, Durationy Charges, respectivamente.
 
-1. Haga clic en los campos de texto Encabezado de la vista **de** Designer y cámbieles el nombre a **Hora**, **Número**, **Duración** y **Cargos**.
+1. Haga clic en los campos de texto Encabezado de la Vista **de** Designer y cámbieles el nombre a **Hora**, **Número**, **Duración** y **Cargos**.
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
@@ -142,7 +142,7 @@ Para crear un fragmento de diseño para el canal Imprimir de la comunicación in
 
    ![layout_fragment_print_repeat](assets/layout_fragment_print_repeat.png)
 
-1. Arrastre y suelte el componente Campo **de** texto desde la biblioteca **de** objetos hasta la vista **de** Designer.
+1. Arrastre y suelte el componente Campo **de** texto de la biblioteca **de** objetos en la Vista **de** Designer.
 
    ![layout_fragment_print_text_field](assets/layout_fragment_print_text_field.png)
 
@@ -166,7 +166,7 @@ Cree y administre una plantilla para el canal Web de comunicación interactiva m
 
 ### Crear carpeta para plantillas {#create-folder-for-templates}
 
-Para crear una plantilla de canal Web, defina una carpeta en la que puede guardar las plantillas creadas. Una vez que cree una plantilla dentro de esa carpeta, habilite la plantilla para permitir que los usuarios de los formularios creen un canal Web de una comunicación interactiva basada en la plantilla.
+Para crear una plantilla de canal web, defina una carpeta en la que puede guardar las plantillas creadas. Una vez que haya creado una plantilla dentro de esa carpeta, habilite la plantilla para permitir que los usuarios de los formularios creen un canal web de una comunicación interactiva basada en la plantilla.
 
 Siga los pasos siguientes para crear una carpeta para las plantillas editables:
 
@@ -188,7 +188,7 @@ En función del caso [de](/help/forms/using/create-your-first-interactive-commun
 * Resumen de cargos: Incluye un fragmento de documento y un gráfico (diseño de dos columnas)
 * Llamadas por elementos: Incluye una tabla
 * Pagar ahora: Incluye un botón **Pagar ahora** y una imagen
-* Servicios de valor agregado: Incluye una imagen y un botón **Suscribirse** .
+* Servicios Añadidos de valor: Incluye una imagen y un botón **Suscribirse** .
 
 ![create_web_template](assets/create_web_template.gif)
 
@@ -198,17 +198,17 @@ Siga los pasos siguientes para crear una plantilla para el canal Web en la carpe
 
 1. Vaya a la carpeta de plantillas adecuada seleccionando **Herramientas** > **Plantillas** > **Crear_primero_IC_plantillas** .
 1. Toque **Crear**.
-1. En el asistente **Seleccionar un tipo** de plantilla, seleccione Comunicación **interactiva - Canal** web y toque **Siguiente**.
+1. En el asistente **Seleccionar un tipo** de plantilla, seleccione Comunicación **interactiva: Canal** web y toque **Siguiente**.
 1. En el asistente **de configuración Detalles** de plantilla, especifique **Create_First_IC_Web_Template** como título de plantilla. Especifique una descripción opcional y toque **Crear**.
 
    Mensaje de confirmación de que se muestra **Create_First_IC_Web_Template** .
 
 1. Toque **Abrir** para abrir la plantilla en el editor de plantillas.
-1. Seleccione Contenido **** inicial en la lista desplegable situada junto a la opción **Vista previa** .
+1. Seleccione Contenido **** inicial en la lista desplegable situada junto a la opción **Previsualización** .
 
    ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
-1. Toque **Panel** raíz y, a continuación, toque **+** para ver la lista de componentes que puede agregar a la plantilla.
+1. Toque **Panel** raíz y, a continuación, toque **+** para vista de la lista de componentes que puede agregar a la plantilla.
 1. Seleccione **Panel** en la lista para agregar un panel sobre el panel **raíz**.
 1. Seleccione la ficha **Contenido** en el panel izquierdo. El nuevo panel agregado en el paso 8 se muestra debajo del panel **raíz** en el árbol de contenido.
 
@@ -232,7 +232,7 @@ Siga los pasos siguientes para crear una plantilla para el canal Web en la carpe
    | summaryfees | Resumen de cargos | 2 |
    | itemisedcall | Llamadas por elementos | 1 |
    | paynow | Pagar ahora | 2 |
-   | lienzo | Servicios de valor agregado | 1 |
+   | lienzo | Servicios Añadidos de valor | 1 |
 
    La siguiente imagen muestra el árbol de contenido después de agregar todos los paneles a la plantilla:
 
@@ -248,14 +248,14 @@ Ejecute los siguientes pasos para habilitar la plantilla Web:
 1. Vaya a la plantilla **Create_First_IC_Web_Template** , selecciónela y toque **Habilitar**.
 1. Tab **Active** nuevamente para confirmar.
 
-   La plantilla está habilitada y su estado se muestra como Habilitada. Puede utilizar esta plantilla al crear la comunicación interactiva para el canal Web.
+   La plantilla está habilitada y su estado se muestra como Habilitada. Puede utilizar esta plantilla al crear Comunicación interactiva para el canal Web.
 
 ### Activación de botones en Interactive Communications {#enabling-buttons-in-interactive-communications}
 
 En función del caso de uso, debe incluir los botones **Pagar ahora** y **Suscribirse** (componentes de formularios adaptables) en Comunicación interactiva. Para habilitar el uso de estos botones en la comunicación interactiva, ejecute los siguientes pasos:
 
-1. Seleccione **Estructura** en la lista desplegable situada junto a la opción **Vista previa** .
-1. Seleccione el panel raíz **Contenedor** de documento mediante el árbol de contenido y toque **Política** para seleccionar los componentes que se pueden usar en la comunicación interactiva.
+1. Seleccione **Estructura** en la lista desplegable situada junto a la opción **Previsualización** .
+1. Seleccione el panel raíz del Contenedor **de** Documento mediante el árbol de contenido y toque **Política** para seleccionar los componentes que se pueden usar en la comunicación interactiva.
 
    ![structure_configure_policy](assets/structure_configure_policy.png)
 

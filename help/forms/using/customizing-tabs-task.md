@@ -1,15 +1,15 @@
 ---
 title: Personalización de fichas para una tarea
 seo-title: Personalización de fichas para una tarea
-description: Personalización de los nombres de las fichas de las tareas en el espacio de trabajo de LiveCycle AEM Forms.
-seo-description: Personalización de los nombres de las fichas de las tareas en el espacio de trabajo de LiveCycle AEM Forms.
+description: Personalización de los nombres de las fichas de sus tareas en el espacio de trabajo de LiveCycle AEM Forms.
+seo-description: Personalización de los nombres de las fichas de sus tareas en el espacio de trabajo de LiveCycle AEM Forms.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Puede personalizar los nombres de fichas del `Start Process` componente en la vi
 
    Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés a lo siguiente.
 
-   * Para las tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento del `"startprocess" : {}` bloque.
+   * Para tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento del `"startprocess" : {}` bloque.
 
    ```
    "tabname" : {
@@ -49,6 +49,4 @@ Puede personalizar los nombres de fichas del `Start Process` componente en la vi
 
    >[!NOTE]
    >
-   >Agregue el par clave-valor correspondiente para todos los idiomas admitidos.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+   >Añada el par clave-valor correspondiente para todos los idiomas admitidos.

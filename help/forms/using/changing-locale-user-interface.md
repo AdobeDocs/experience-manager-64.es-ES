@@ -1,8 +1,8 @@
 ---
 title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
 seo-title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas en la interfaz.
-seo-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas en la interfaz.
+description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
+seo-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -22,7 +22,7 @@ El espacio de trabajo de AEM Forms ofrece compatibilidad inmediata con los idiom
 Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms en el idioma que elija:
 
 * Localización del texto del espacio de trabajo de AEM Forms.
-* Localice las categorías contraídas, las colas y los procesos.
+* Localice categorías contraídas, colas y procesos.
 * Localizar selector de fechas
 
 Antes de realizar los pasos anteriores, asegúrese de seguir los pasos que se indican en Pasos [genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
@@ -47,11 +47,11 @@ Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y
 
    ![translate_json_in_es](assets/translation_json_in_en.png) ![Translation_json_in_fr](assets/translation_json_in_fr.png)
 
-## Localización de categorías, colas y procesos contraídos {#localizing-collapsed-categories-queues-and-processes}
+## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
 
 El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
-En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categories_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
+En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
 >[!NOTE]
 >
@@ -178,18 +178,18 @@ Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API.
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+hasta
 
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -24,7 +24,7 @@ Puede personalizar el icono de la aplicación, el nombre de la aplicación, las 
 * Personalización de imágenes en la página de inicio de sesión
 * Personalización del logotipo en el menú de la aplicación
 
-## Personalización de imágenes de inicio e iconos {#customizing-icon-and-launch-images}
+## Personalización de iconos e imágenes de inicio {#customizing-icon-and-launch-images}
 
 Siga estos pasos para personalizar el icono predeterminado de la aplicación y la imagen de inicio de la aplicación de AEM Forms:
 
@@ -37,7 +37,7 @@ Siga estos pasos para personalizar el icono predeterminado de la aplicación y l
 #### Para iOS {#for-ios}
 
 1. Abra el `Capture.xcodeproj` proyecto en Xcode.
-1. (***Para personalizar el icono***) En la vista del navegador de Captura, vaya a **[!UICONTROL Capturar > Capturar > Archivos de soporte > Capturar-información.plist]**. Haga clic en la lista desplegable situada junto a los archivos de icono. Especifique el nombre del archivo de icono (.png) y cargue el archivo en **[!UICONTROL Captura > Captura > Recursos > iconos]**. Las dimensiones admitidas actualmente son: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 y 144 x 144.
+1. (***Para personalizar el icono***) En la vista del navegador de Captura, vaya a **[!UICONTROL Captura > Captura > Archivos de soporte > Captura-información.plist]**. Haga clic en la lista desplegable situada junto a los archivos de icono. Especifique el nombre del archivo de icono (.png) y cargue el archivo en **[!UICONTROL Captura > Captura > Recursos > iconos]**. Las dimensiones admitidas actualmente son: 29 x 29, 50 x 50, 58 x 58, 72 x 72, 100 x 100 y 144 x 144.
 1. (***Para personalizar imágenes*** de inicio) Asegúrese de que los nombres de archivo de las imágenes son:
 
    * Para vertical: `Default-Portrait~ipad.png` y `Default-Portrait@2x~ipad.png`
@@ -90,7 +90,7 @@ Siga estos pasos para personalizar el icono predeterminado de la aplicación y l
 ### Para iOS {#for-ios-1}
 
 1. Abra el `Capture.xcodeproj` proyecto en Xcode.
-1. En la vista del navegador de Captura, vaya a **[!UICONTROL Captura > Captura > Archivos de soporte > InfoPlist.strings]**.
+1. En la vista de navegación de Captura, vaya a **[!UICONTROL Captura > Captura > Archivos de soporte > InfoPlist.strings]**.
 
    Actualice el valor del `CFBundleDisplayName` atributo a un nombre que desee mostrar para la aplicación.
 
@@ -221,5 +221,3 @@ Asegúrese de que tiene la siguiente imagen:
 1. Vaya a la `MWSWindows\www\wsmobile\images`carpeta.
 1. Para cambiar el logotipo, reemplace el `aem_icon.png` archivo predeterminado por el `aem_icon.png` archivo personalizado.
 1. Cree y ejecute la aplicación de AEM Forms en el dispositivo Windows.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

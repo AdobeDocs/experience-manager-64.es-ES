@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -30,25 +30,25 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getGroups</td> 
    <td>ProcessManagementUserProxyService</td> 
    <td>getGroups</td> 
-   <td>Busca grupos. devuelve una lista de todos los grupos si no se ha especificado nada, de lo contrario devuelve grupos con el nombre especificado.</td> 
+   <td>Busca grupos. devuelve una lista de todos los grupos si no se ha especificado nada; de lo contrario, devuelve grupos con el nombre especificado.</td> 
   </tr>
   <tr>
    <td>getUsersAndGroups</td> 
    <td>ProcessManagementUserProxyService</td> 
    <td>getUsersAndGroups</td> 
-   <td>Busca usuarios y grupos. Devuelve una lista de todos los usuarios y grupos si no se ha especificado nada, de lo contrario, devuelve usuarios y grupos con el nombre especificado.</td> 
+   <td>Busca usuarios y grupos. Devuelve una lista de todos los usuarios y grupos, si no se especifica nada, devuelve usuarios y grupos con el nombre especificado.</td> 
   </tr>
   <tr>
    <td>prepareForSubmit</td> 
    <td>ProcessManagementDocumentHandlingService</td> 
    <td>prepareForSubmit</td> 
-   <td>Se llama antes de enviar el formulario mediante DocumentSubmitServlet. Establece la ID de la tarea en una variable de sesión (junto con la hora de caducidad) que se recupera durante el envío real.</td> 
+   <td>Se llama antes de enviar el formulario mediante DocumentSubmitServlet. Establece la ID de tarea en una variable de sesión (junto con la hora de caducidad) que se recupera durante el envío real.</td> 
   </tr>
   <tr>
    <td>submitTask</td> 
    <td>ProcessManagementDocumentHandlingService</td> 
    <td>submit</td> 
-   <td>Envía el objeto de documento asociado a una tarea (y, a su vez, envía el proceso).</td> 
+   <td>Envía el objeto de documento asociado a una tarea (y a su vez envía el proceso).</td> 
   </tr>
   <tr>
    <td>getRootEndpointCategories</td> 
@@ -60,13 +60,13 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getDirectChildCategories</td> 
    <td>ProcessManagementStartpointService</td> 
    <td>getDirectChildCategories2</td> 
-   <td>Busca todos los niños directos de una categoría.</td> 
+   <td>Busca todos los niños directos para una categoría.</td> 
   </tr>
   <tr>
    <td>getAllStartpoints</td> 
    <td>ProcessManagementStartpointService</td> 
    <td>getAllStartpoints</td> 
-   <td>Recupera todos los puntos de partida presentes en el servidor en todas las categorías.</td> 
+   <td>Recupera todos los puntos de partida presentes en el servidor bajo todas las categorías.</td> 
   </tr>
   <tr>
    <td>invokeStartpoint</td> 
@@ -114,7 +114,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>complete</td> 
    <td>ProcessManagementTaskService</td> 
    <td>complete</td> 
-   <td>Finaliza una tarea y la tarea pasa al siguiente paso según el diseño del proceso.</td> 
+   <td>Finaliza una tarea y la tarea se pasa al siguiente paso según el diseño del proceso.</td> 
   </tr>
   <tr>
    <td>getAttachment</td> 
@@ -126,13 +126,13 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getAllAttachments</td> 
    <td>ProcessManagementTaskService</td> 
    <td>getAllActionableAttachments</td> 
-   <td>Recopila todos los datos adjuntos y notas de una tarea.</td> 
+   <td>Recupera todos los archivos adjuntos y notas de una tarea.</td> 
   </tr>
   <tr>
    <td>compartir</td> 
    <td>ProcessManagementTaskService</td> 
    <td>compartir</td> 
-   <td>Comparte una tarea con otro usuario. Otro usuario puede reclamar la tarea y convertirse en propietario de la misma.</td> 
+   <td>Comparte una tarea con otro usuario. Otro usuario puede reclamar la tarea y convertirse en propietario de la tarea.</td> 
   </tr>
   <tr>
    <td>adelante</td> 
@@ -162,7 +162,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>bloquear</td> 
    <td>ProcessManagementTaskService</td> 
    <td>bloquear</td> 
-   <td>Bloquea una tarea y otro usuario no puede reclamarla si se comparte.</td> 
+   <td>Bloquea una tarea y otro usuario no puede reclamar la tarea si se comparte.</td> 
   </tr>
   <tr>
    <td>rechazar</td> 
@@ -222,13 +222,13 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>revokeQueueAccess</td> 
    <td>ProcessManagementQueueService</td> 
    <td>revokeQueueAccess</td> 
-   <td>Elimina un usuario de la lista de usuarios que tienen acceso a la cola del usuario que ha iniciado sesión.</td> 
+   <td>Elimina a un usuario de la lista de usuarios que tienen acceso a la cola del usuario que ha iniciado sesión.</td> 
   </tr>
   <tr>
    <td>removeQueueAccess</td> 
    <td>ProcessManagementQueueService</td> 
    <td>removeQueueAccess</td> 
-   <td>Elimina un usuario de la lista de usuarios a los que el usuario que ha iniciado sesión puede acceder en la cola.</td> 
+   <td>Elimina un usuario de la lista de usuarios a los que el usuario que ha iniciado sesión puede acceder a la cola.</td> 
   </tr>
   <tr>
    <td>getAllQueues<br /> </td> 
@@ -252,7 +252,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getAllProcesses</td> 
    <td>ProcessManagementProcessService</td> 
    <td>getAllProcesses</td> 
-   <td>Devuelve una lista de todos los procesos.</td> 
+   <td>Devuelve la lista de todos los procesos.</td> 
   </tr>
   <tr>
    <td>getParticipatedProcesses</td> 
@@ -288,7 +288,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getAllSearchTemplates</td> 
    <td>ProcessManagementQueryService</td> 
    <td>getAllSearchTemplates</td> 
-   <td>Devuelve una lista de todas las plantillas de búsqueda.</td> 
+   <td>Devuelve la lista de todas las plantillas de búsqueda.</td> 
   </tr>
   <tr>
    <td>getTemplate</td> 
@@ -306,7 +306,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getAssignmentsForTask</td> 
    <td>ProcessManagementTaskService</td> 
    <td>getAssignmentsForTask</td> 
-   <td>Obtiene todas las asignaciones de una tarea. Por ejemplo:- Si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td> 
+   <td>Obtiene todas las asignaciones para una tarea. Por ejemplo:- Si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td> 
   </tr>
   <tr>
    <td>deleteAttachment </td> 
@@ -401,5 +401,5 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
  </tbody>
 </table>
 
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+
 

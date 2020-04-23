@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,9 +40,9 @@ Topologías proxy de servicio de formularios HTML5
 
 Los formularios HTML5 se conectan a los servidores de AEM para ejecutar secuencias de comandos, servicios Web y envíos de servidor. El tiempo de ejecución XFA de los formularios HTML5 utiliza llamadas de Ajax en el punto final &quot;/bin/xfaforms/submitaction&quot; con varios parámetros para conectarse a los servidores AEM. Los formularios HTML5 conectan los servidores AEM para realizar las siguientes operaciones:
 
-### Ejecutar secuencias de comandos de servidor y servicios Web {#execute-server-sided-scripts-and-web-services}
+### Ejecutar secuencias de comandos y servicios Web por parte del servidor {#execute-server-sided-scripts-and-web-services}
 
-Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen como secuencias de comandos del lado del servidor. En la tabla siguiente se muestran todos los parámetros utilizados en las secuencias de comandos de servidor y los servicios Web.
+Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen como secuencias de comandos del lado del servidor. La siguiente tabla lista todos los parámetros utilizados en las secuencias de comandos de servidor y los servicios Web.
 
 <table> 
  <tbody> 
@@ -52,11 +52,11 @@ Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen co
   </tr> 
   <tr> 
    <td><p>activity</p> </td> 
-   <td><p>La actividad contiene los eventos que desencadenan la solicitud. Tales como clic, salir o cambiar</p> </td> 
+   <td><p>Actividad contiene los eventos que activan la solicitud. Tales como clic, salir o cambiar</p> </td> 
   </tr> 
   <tr> 
    <td><p>contextSom</p> </td> 
-   <td><p>contextSom contiene la expresión SOM del objeto donde se ejecutan los eventos.</p> </td> 
+   <td><p>contextSom contiene la expresión SOM del objeto donde se ejecutan eventos.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Plantilla</p> </td> 
@@ -87,7 +87,7 @@ Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen co
 
 ### Enviar datos {#submit-data}
 
-Al hacer clic en el botón de envío, los formularios HTML5 envían datos al servidor. En la tabla siguiente se muestran todos los parámetros que los formularios HTML5 envían al servidor.
+Al hacer clic en el botón de envío, los formularios HTML5 envían datos al servidor. La siguiente tabla lista todos los parámetros que los formularios HTML5 envían al servidor.
 
 <table> 
  <tbody> 
@@ -133,4 +133,3 @@ El proxy de servicio de envío selecciona una topología si el envío está pres
 
 * Antes de enviar datos (solicitud POST) a un servidor, los formularios HTML5 comprueban la conectividad y disponibilidad del servidor. Para verificar la conectividad y la disponibilidad, los formularios HTML envían una solicitud de encabezado vacía al servidor. Si el servidor está disponible, el formulario HTML5 envía datos (solicitud POST) al servidor. Si el servidor no está disponible, se muestra un mensaje de error, *No se pudo conectar al servidor,* . La detección avanzada evita que los usuarios tengan que rellenar el formulario. El servlet proxy controla la solicitud de encabezado y no emite excepción.
 
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

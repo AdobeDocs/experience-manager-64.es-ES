@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
 1. Cree una ruta `/apps/sampleApplication/wscomponents`.
 1. Copiar css, imágenes, js/libs, js/Runtime y js/registry.js
 
-   * from `/libs/ws`
+   * de `/libs/ws`
    * hasta `/apps/sampleApplication/wscomponents`.
 
 1. Cree un archivo demoain.js en la carpeta /apps/sampleApplication/wscomponents/js. Copie el código de /libs/ws/js/main.js en demomain.js.
@@ -40,9 +40,9 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
        });
    ```
 
-1. Cree un nodo en /content por nombre `sampleApplication` y escriba `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` el tipo String y value `sampleApplication`. En la lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication` agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read.
+1. Cree un nodo en /content por nombre `sampleApplication` y escriba `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` el tipo String y value `sampleApplication`. En la Lista de Control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read. Además, en la Lista de Control de acceso de `/apps/sampleApplication` agregue una entrada para `PERM_WORKSPACE_USER` permitir privilegios jcr:read.
 1. En `/apps/sampleApplication/wscomponents/js/registry.js` las rutas de actualización de `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para los valores de plantilla.
-1. En el archivo JSP de la página principal del portal en `/apps/sampleApplication/GET.jsp`, agregue el siguiente código para incluir los componentes necesarios dentro del portal.
+1. En el archivo JSP de página de inicio de portal en `/apps/sampleApplication/GET.jsp`, agregue el siguiente código para incluir los componentes necesarios dentro del portal.
 
    ```as3
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -55,7 +55,7 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
 
    >[!NOTE]
    >
-   >Cada componente se agrega a la etiqueta de componente (con componente de clase) durante el procesamiento. Asegúrese de que la página principal contenga estas etiquetas. Consulte el archivo `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
+   >Cada componente se agrega a la etiqueta de componente (con componente de clase) durante el procesamiento. Asegúrese de que la página de inicio contenga estas etiquetas. Consulte el archivo `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
 
 1. Para personalizar los componentes, puede ampliar las vistas existentes para el componente requerido de la siguiente manera:
 
@@ -79,7 +79,7 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
    });
    ```
 
-1. Modifique la CSS del portal para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal pueda ver bien el componente userInfo. Para ello, cambie el color de fondo de la `/apps/sampleApplication/wscomponents/css/style.css` siguiente manera:
+1. Modifique la CSS del portal para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal pueda realizar una vista correcta del componente userInfo. Para ello, cambie el color de fondo de la `/apps/sampleApplication/wscomponents/css/style.css` siguiente manera:
 
    ```as3
    body {
@@ -89,5 +89,3 @@ Puede utilizar [componentes](/help/forms/using/description-reusable-components.m
        margin: 0 auto;
    }
    ```
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

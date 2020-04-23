@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -28,22 +28,22 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil para agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un perfil nuevo](/help/forms/using/custom-profile.md)
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
 
 1. **Creación de una hoja de estilo CSS para aplicar estilo a los formularios HTML5**
 
-   Vaya a la carpeta en la que ha creado el procesador de perfiles y cree un archivo de hoja de estilo CSS. Los pasos a seguir son
+   Vaya a la carpeta en la que ha creado el procesador de perfil y cree un archivo de hoja de estilo CSS. Los pasos a seguir son
 
    1. Haga clic con el botón derecho en la carpeta y seleccione **crear** -> **crear archivo** desde el menú
    Para saber qué clases CSS crear para un componente concreto en los formularios HTML5, consulte [Introducción a los estilos](/help/forms/using/css-styles.md).
 
-1. **Incluir la hoja de estilo en el procesador de perfiles**
+1. **Incluir la hoja de estilo en el procesador de Perfil**
 
-   Abra la página Procesador de perfiles (archivo jsp) en CRX DE e incluya el archivo CSS en la página que hay justo debajo de la biblioteca de cliente XFA. Siga estos pasos para incluir el archivo CSS en el perfil.
+   Abra la página Perfil Renderer (archivo jsp) en CRX DE e incluya el archivo CSS en la página que se encuentra justo debajo de la biblioteca de cliente XFA. Siga estos pasos para incluir el archivo CSS en perfil.
 
    1. Busque la línea siguiente en la página del procesador:
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categorías=&quot;xfaforms.perfil&quot; />
 
    1. Inserte lo siguiente debajo de la línea anterior para incluir la hoja de estilo:
 
@@ -51,4 +51,3 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
    1. Guarde el archivo.
 
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

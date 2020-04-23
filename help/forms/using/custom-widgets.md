@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,13 +19,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Puede conectar widgets personalizados a formularios móviles. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
 
-![](assets/custom-widgets.jpg) Ejemplo de utilidad **predeterminada y personalizada** Figura: *Ejemplo de utilidad predeterminada y personalizada*
+![Ejemplo de utilidad](assets/custom-widgets.jpg)predeterminada y personalizada **Figura:** *Ejemplo de utilidad predeterminada y personalizada*
 
 ## Integración de widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
 
 ### Crear un perfil {#create-a-profile-nbsp}
 
-Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de perfiles](/help/forms/using/custom-profile.md)personalizados.
+Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de Perfiles](/help/forms/using/custom-profile.md)personalizados.
 
 ### Creación de una utilidad {#create-a-widget}
 
@@ -43,7 +43,7 @@ Los formularios HTML5 proporcionan una implementación de la estructura de utili
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> desenfoque: XFA_EXIT_EVENT,<br /><br /> } Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENT es el evento XFA correspondiente. </td> 
+   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> desenfocar: XFA_EXIT_EVENTO,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENTO es el evento XFA correspondiente. </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -51,15 +51,15 @@ Los formularios HTML5 proporcionan una implementación de la estructura de utili
   </tr> 
   <tr> 
    <td>getCommitValue</td> 
-   <td>El marco de utilidades carga la función cada vez que se guarda el valor del widget en el modelo XFAM (por ejemplo, en el suceso exit de un objeto textField). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td> 
+   <td>La estructura Widget carga la función cada vez que se guarda el valor de la utilidad en el modelo XFAM (por ejemplo, en el evento de salida de un objeto textField). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td> 
   </tr> 
   <tr> 
    <td>showValue</td> 
-   <td>De forma predeterminada, en XFA en el suceso enter, se muestra el valor rawValue del campo. Se llama a esta función para mostrar el valor de rawValue al usuario. </td> 
+   <td>De forma predeterminada, en XFA en el evento enter, se muestra el valor rawValue del campo. Se llama a esta función para mostrar el valor de rawValue al usuario. </td> 
   </tr> 
   <tr> 
    <td>showDisplayValue</td> 
-   <td>De forma predeterminada, en XFA en el evento exit, se muestra el valor formateado del campo. Se llama a esta función para mostrar el formattedValue al usuario. </td> 
+   <td>De forma predeterminada, en XFA en el evento de salida, se muestra el valor formateado del campo. Se llama a esta función para mostrar el formattedValue al usuario. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -93,12 +93,10 @@ La configuración de la utilidad se proporciona como un objeto JSON (una colecci
 ..\
 }*
 
-donde &quot;identificador&quot; es un selector CSS de jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. A continuación se muestra el valor del identificador en diferentes casos:
+donde &quot;identificador&quot; es un selector CSS de jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. La siguiente lista el valor del identificador en diferentes casos:
 
 | Tipo de identificador | Identificador | Descripción |
 |---|---|---|
 | Campo particular con nombre de campo | Identificador:&quot;div.fieldname&quot; | Todos los campos con el nombre ‘nombre de campo’ se representan con la utilidad. |
 | Todos los campos de tipo ‘type’(donde type es NumericField, DateField, etc.): | Identificador: &quot;div.type&quot; | Para Campo de tiempo y Campo de tiempo, el tipo es campo de texto, ya que estos campos no son compatibles. |
 | Todos los campos | Identificador: &quot;div.field&quot; |  |
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

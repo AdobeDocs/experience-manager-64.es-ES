@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -18,13 +18,13 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 El modo sin conexión de la aplicación de AEM Forms le permite trabajar sin problemas incluso si la aplicación se desconecta. Puede abrir, actualizar y enviar un formulario sin necesidad de conectividad de red.
 
-Para empezar a trabajar en la aplicación de AEM Forms, sincronice la aplicación con el servidor de AEM Forms. Todos los formularios asignados se descargan en la aplicación. Para AEM Forms en JEE, las tareas se recuperan en la ficha tareas y se inician formularios asociados y otros formularios en la ficha Formularios. Para AEM Forms en OSGi, solo se cargan formularios en la ficha Formularios.
+Puede realizar inicios para trabajar en la aplicación de AEM Forms sincronizando la aplicación con el servidor de AEM Forms. Todos los formularios asignados se descargan en la aplicación. Para AEM Forms en JEE, las tareas se recuperan en la ficha tareas y los puntos de inicio se asocian a formularios y otros formularios en la ficha Formularios. Para AEM Forms en OSGi, solo se cargan formularios en la ficha Formularios.
 
 Para obtener más información sobre cómo sincronizar la aplicación, consulte [Sincronización de la aplicación](/help/forms/using/sync-app.md).
 
 ## Disponibilidad de formularios sin conexión {#making-forms-available-offline}
 
-Al sincronizar la aplicación con el servidor de AEM Forms, los formularios se descargan en el dispositivo móvil. Sin embargo, de forma predeterminada, los archivos adjuntos asociados al formulario no se descargan. Esto implica que si está en línea, puede ver los archivos adjuntos. Sin embargo, para asegurarse de que puede ver los datos adjuntos en el modo sin conexión, cambie la configuración predeterminada de la aplicación.
+Al sincronizar la aplicación con el servidor de AEM Forms, los formularios se descargan en el dispositivo móvil. Sin embargo, de forma predeterminada, los archivos adjuntos asociados al formulario no se descargan. Esto implica que si está en línea, puede realizar la vista de los archivos adjuntos. Sin embargo, para asegurarse de que puede realizar la vista de los datos adjuntos en el modo sin conexión, cambie la configuración predeterminada de la aplicación.
 
 Para asegurarse de que los archivos adjuntos asociados se descargan con cada formulario, establezca Buscar archivos adjuntos en Activado. Para obtener más información, consulte [Actualización de la configuración](/help/forms/using/update-general-settings.md)general.
 
@@ -48,5 +48,3 @@ Para configurar el componente sin conexión del lado del servidor de la aplicaci
    * **Rutas** de observación de recursos: Especifica las rutas en las que el servicio sin conexión supervisa los cambios de recursos. Si se produce algún cambio en las rutas especificadas, se actualiza la caché sin conexión de todos los formularios dependientes. Por ejemplo, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. En la ficha Caché **de recursos** manual, especifique las dependencias de formularios que el servicio sin conexión no puede identificar. Puede especificar recursos como imágenes cargadas desde JavaScript. La aplicación AEM Forms descargará estos recursos también para el modo sin conexión.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

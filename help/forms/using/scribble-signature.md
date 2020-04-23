@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -39,7 +39,7 @@ Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y un r
 
       >[!NOTE]
       >
-      >Para abrir la ficha Código fuente XML, haga clic en **Ver** > Código fuente **** XML.
+      >Para abrir la ficha Código fuente XML, haga clic en **Vista** > Código fuente **** XML.
 
    1. Busque la `<ui>` etiqueta en la `<field>` etiqueta y modifique el código fuente para que tenga el siguiente aspecto:
 
@@ -49,7 +49,7 @@ Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y un r
       </extras>
       ```
 
-   1. Seleccione la ficha Vista **** diseño. En el cuadro de confirmación, haga clic en **Sí**.
+   1. Seleccione la ficha Vista **de** diseño. En el cuadro de confirmación, haga clic en **Sí**.
    1. Guarde el formulario.
 
 1. Representar el formulario en un navegador de escritorio o dispositivo compatible.
@@ -62,7 +62,7 @@ Una vez agregado el campo Creación de firma al formulario y procesado, al tocar
 
 ![geolocalización](assets/geolocation.png)
 
-******** A. Pincel **B. Borrador** C.**Geolocalización** D. Información de geolocalización
+**A.** Pincel **B.** Borrador **C.** Geolocalización **D.** Información de geolocalización
 
 ### Etiquetado geográfico {#geo-tagging}
 
@@ -80,7 +80,7 @@ Para los iPad, esta configuración se puede modificar modificando el valor del `
 
 ### Eliminación de una firma {#clearing-a-signature}
 
-Al utilizar esta función, un usuario puede hacer clic en el icono **Borrador** para borrar el campo y volver a empezar. Si se agregó información de geolocalización, también se borra.
+Mientras utiliza esta función, un usuario puede hacer clic en el icono **Borrador** para borrar el campo y pasar el inicio. Si se agregó información de geolocalización, también se borra.
 
 ### Guardar una firma {#saving-a-signature}
 
@@ -100,5 +100,3 @@ Para eliminar las firmas del formulario:
 
 * (Dispositivos móviles) Presione el campo de firma y, en el cuadro de diálogo de confirmación, toque **Sí**.
 * (Escritorio) Pase el ratón sobre el campo de firma, haga clic en el icono **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

@@ -1,6 +1,6 @@
 ---
-title: Detalles del documento para el procesador
-seo-title: Detalles del documento para el procesador
+title: Detalles de Documento para el procesador
+seo-title: Detalles de Documento para el procesador
 description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo de AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
 seo-description: Información conceptual sobre cómo funcionan los procesamientos en el espacio de trabajo de AEM Forms para procesar los distintos tipos de archivo y formulario admitidos.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Detalles del documento para el procesador {#document-details-for-renderer}
+# Detalles de Documento para el procesador {#document-details-for-renderer}
 
 ## Introducción {#introduction}
 
@@ -25,7 +25,7 @@ En el espacio de trabajo de AEM Forms, se admiten varios tipos de formularios si
 * Imágenes
 * Aplicaciones de terceros (por ejemplo, Administración de correspondencia)
 
-Este documento explica el trabajo de estos procesadores desde la perspectiva de la personalización semántica / reutilización de componentes, de modo que los requisitos del cliente se cumplan sin romper ninguna representación. Aunque el espacio de trabajo de AEM Forms permite cualquier cambio semántico o de interfaz de usuario, se recomienda no cambiar la lógica de representación de distintos tipos de formularios; de lo contrario, los resultados pueden ser impredecibles. Este documento sirve para obtener instrucciones y conocimientos que permiten procesar el mismo formulario, utilizando los mismos componentes de espacio de trabajo en distintos portales, y no para modificar la lógica de procesamiento en sí.
+Este documento explica el trabajo de estos procesadores desde la perspectiva de la personalización semántica / reutilización de componentes, de modo que los requisitos del cliente se cumplan sin romper ninguna representación. Aunque el espacio de trabajo de AEM Forms permite cualquier cambio semántico o de interfaz de usuario, se recomienda no cambiar la lógica de representación de distintos tipos de formularios; de lo contrario, los resultados pueden ser impredecibles. Este documento es para guía / conocimiento que permite procesar el mismo formulario, utilizando los mismos componentes de espacio de trabajo en diferentes portales, y no para modificar la lógica de procesamiento en sí.
 
 ## Formularios PDF {#pdf-forms}
 
@@ -35,25 +35,25 @@ Cuando un formulario XDP se procesa como PDF, el servicio FormsAugmenter agrega 
 
 En el espacio de trabajo de AEM Forms, la vista PDFTaskForm se comunica con `FormBridge`javascript mediante un HTML intermedio presente en `/lc/libs/ws/libs/ws/pdf.html`. El flujo es:
 
-**Vista PDFTaskForm - pdf.html**
+**vista PDFTaskForm - pdf.html**
 
 Se comunica mediante `window.postMessage` / `window.attachEvent('message')`
 
-Este método es la forma estándar de comunicación entre un marco principal y un iframe. Los oyentes de eventos existentes de los formularios PDF abiertos anteriormente se eliminan antes de agregar uno nuevo. Esta depuración también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de la tarea.
+Este método es la forma estándar de comunicación entre un marco principal y un iframe. Los oyentes de evento existentes de formularios PDF abiertos anteriormente se eliminan antes de agregar uno nuevo. Esta depuración también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de tarea.
 
 **pdf.html:`FormBridge`javascript dentro del PDF procesado**
 
 Se comunica mediante `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-Este método es la forma estándar de comunicación con un javascript PDF desde un HTML. La vista PdfTaskForm también se ocupa de los archivos PDF planos y los procesa de forma sencilla.
+Este método es la forma estándar de comunicación con un javascript PDF desde un HTML. La vista PdfTaskForm también se encarga de los archivos PDF planos y los procesa con claridad.
 
 >[!NOTE]
 >
->No se recomienda modificar el contenido de la vista PdfTaskForm en pdf.html.
+>No se recomienda modificar el contenido de la vista pdf.html / de PdfTaskForm.
 
 ## Nuevos formularios HTML {#new-html-forms}
 
-Los nuevos formularios HTML son procesados por la vista NewHTMLTaskForm.
+Los nuevos formularios HTML son procesados por la Vista NewHTMLTaskForm.
 
 Cuando un formulario XDP se procesa como HTML mediante el paquete de formularios móviles implementado en CRX, también agrega `FormBridge` javascript adicional al formulario, que expone diferentes métodos para guardar y enviar datos de formulario.
 
@@ -65,13 +65,13 @@ Este javascript es diferente del que se menciona en Formularios PDF, pero tiene 
 
 ## Formularios y guías de Flex {#flex-forms-and-guides}
 
-SwfTaskForm procesa los formularios Flex y las guías las procesan las vistas HtmlTaskForm respectivamente.
+SwfTaskForm representa los formularios Flex y las guías las representan las Vistas HtmlTaskForm, respectivamente.
 
-En el espacio de trabajo de AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía flexible mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+En el espacio de trabajo de AEM Forms, estas vistas se comunican con el SWF real que conforma el formulario/guía de Flex mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicación se produce usando `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Este protocolo está definido por el `WsNextAdapter.swf`. El objeto `flexMessageHandlers`de ventana existente, de formularios SWF previamente abiertos, se elimina antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de la tarea. `WsNextAdapter.swf` se utiliza para realizar varias acciones de formulario como guardar o enviar.
+Este protocolo está definido por el `WsNextAdapter.swf`. El objeto `flexMessageHandlers`de ventana existente, de formularios SWF previamente abiertos, se elimina antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la ficha de formulario y la ficha de historial en la vista de detalles de tarea. `WsNextAdapter.swf` se utiliza para realizar varias acciones de formulario como guardar o enviar.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Las aplicaciones de terceros se representan mediante la vista ExtAppTaskForm.
 
 El espacio de trabajo de AEM Forms escucha en `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`El mensaje`ErrorMessage` puede ser una cadena especificada como||| `actionEnabledMessage`en el `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar al espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que, cuando se envía la tarea, puede limpiar la ventana de tareas.
+[El mensaje] puede ser una cadena especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`en el `runtimeMap`. Las aplicaciones de terceros deben utilizar esta interfaz para notificar al espacio de trabajo de AEM Forms según sea necesario. El uso de esta interfaz es obligatorio, ya que el espacio de trabajo de AEM Forms debe saber que cuando se envía la tarea, puede limpiar la ventana de tarea.
 
 **Espacio de trabajo de AEM Forms para comunicación con aplicaciones de terceros**
 
@@ -95,5 +95,3 @@ Por ejemplo, una aplicación Flex puede definir `ExternalInterface.addCallback('
 
 Puede leer más sobre la integración de aplicaciones de terceros con respecto a la gestión de correspondencia en [Integración de la gestión de correspondencia en el espacio de trabajo](/help/forms/using/integrating-correspondence-management-html-workspace.md)de AEM Forms.
 
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ La aplicación accede al servidor de AEM Forms en los extremos REST para hacer l
 
 * Buscar tareas de usuario, puntos de inicio de proceso, historial de procesos e información de usuario
 * Realizar acciones en tareas
-* Tareas de consulta en la base de datos
+* tareas de Consulta en la base de datos
 * Actualizar las preferencias de usuario y más
 
 El servidor de AEM Forms accede a la base de datos de AEM Forms a través de JDBC. La base de datos persiste en tareas, procesos y sus instancias, usuarios e información relacionada.
@@ -34,5 +34,3 @@ Paquetes entregados para el espacio de trabajo de AEM Forms:
 
 * `adobe-lc-workspace-pkg-<version>.zip`:: Es un paquete CRX, es decir, puede implementarse en CRX mediante el Administrador de paquetes.
 * `adobe-lc-workspace-<version>-src.zip`:: Es un archivo que contiene código completo del espacio de trabajo y las secuencias de comandos de AEM Forms para crear los paquetes de implementación: Enviar, Depurar y Dev.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

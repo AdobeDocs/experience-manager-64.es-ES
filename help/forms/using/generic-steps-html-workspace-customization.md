@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -21,8 +21,8 @@ Los pasos genéricos para realizar cualquier personalización son:
 
 1. Inicie sesión en CRXDE Lite accediendo `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Cree una carpeta denominada `ws`at `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Vaya a `/apps/ws`la ficha Control **[!UICONTROL de]** acceso y desplácese hasta ella.
-1. En la lista Control **[!UICONTROL de]** acceso, haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
+1. Vaya a `/apps/ws`la ficha **[!UICONTROL Control de acceso]** y desplácese hasta ella.
+1. En la lista **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.
 1. Busque y seleccione la entidad **[!UICONTROL PERM_WORKSPACE_USER]** Principal.
 
    ![Seleccione el principal PERM_WORKSPACE_USER como parte de los pasos genéricos para personalizar HTML Workspace](assets/perm_workspace_user.png)
@@ -90,4 +90,3 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    Acceda a la URL `https://[server]:[port]/lc/ws` e inicie sesión con credenciales de administrador/contraseña. El explorador redirige a `https://[server]:[port]/lc/apps/ws/index.html`.
 
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

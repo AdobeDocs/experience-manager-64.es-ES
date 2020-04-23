@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Actualización de la configuración general {#updating-general-settings}
 
-La configuración general de la aplicación de AEM Forms permite especificar opciones de configuración como la captura de archivos adjuntos, el modo sin conexión, la pantalla de aterrizaje, la categoría predeterminada y la frecuencia de guardado automático.
+La configuración general de la aplicación de AEM Forms permite especificar la configuración, como la captura de archivos adjuntos, el modo sin conexión, la pantalla de aterrizaje, la categoría predeterminada y la frecuencia de guardado automático.
 
 ## Actualización de la configuración general en la aplicación {#working-with-the-form}
 
-Al sincronizar la aplicación con el servidor de AEM Forms, todos los formularios y las tareas definidas se descargan en el dispositivo móvil.
+Al sincronizar la aplicación con el servidor de AEM Forms, todos los formularios y tareas definidas se descargan en el dispositivo móvil.
 
 La solución de la aplicación AEM Forms integrada no descarga los archivos adjuntos asociados a cada formulario cuando la aplicación está sincronizada.
 
@@ -41,11 +41,11 @@ En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexió
 
 Puede realizar los siguientes cambios en la configuración de la aplicación.
 
-* **Buscar adjuntos** de tareas: Para especificar si desea descargar o no los archivos adjuntos asociados cuando se descargue cada tarea en la aplicación.
+* **Buscar adjuntos** de tarea: Para especificar si desea descargar o no los archivos adjuntos asociados cuando se descargue cada tarea en la aplicación.
 
 * **Modo** sin conexión: Para activar o desactivar el servicio sin conexión para la aplicación de AEM Forms. Consulte [Uso del modo](/help/forms/using/work-offline-mode.md) sin conexión para obtener más información.
 
-* **Pantalla** de aterrizaje: Para definir la ubicación de inicio (pantalla[de inicio](/help/forms/using/home-screen.md)) de la aplicación.
+* **Pantalla** de aterrizaje: Para definir la ubicación del inicio (pantalla[de inicio](/help/forms/using/home-screen.md)) para la aplicación.
 
    Opciones disponibles:
 
@@ -53,7 +53,7 @@ Puede realizar los siguientes cambios en la configuración de la aplicación.
    * Tareas
    * Favoritos
 
-* **Categoría** predeterminada: Permite seleccionar la categoría de formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las categorías se rellenan en función de los formularios cargados en la aplicación. Los formularios están disponibles en la aplicación según la configuración de formulario especificada en el servidor de AEM Forms.
+* **categoría** predeterminada: Permite seleccionar la categoría de los formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las Categorías se rellenan en función de los formularios cargados en la aplicación. Los formularios están disponibles en la aplicación según la configuración de formulario especificada en el servidor de AEM Forms.
 
 * **Frecuencia** de guardado automático: Para definir la frecuencia con la que la aplicación [móvil guarda los datos](/help/forms/using/autosave-data-app.md) del formulario localmente.
 
@@ -66,5 +66,3 @@ Puede realizar los siguientes cambios en la configuración de la aplicación.
 >Al borrar la caché, se cerrará la sesión de inmediato en la aplicación.
 >
 >Sin embargo, se le pedirá que confirme la operación de borrado de caché.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)

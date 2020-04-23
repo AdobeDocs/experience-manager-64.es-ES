@@ -1,22 +1,22 @@
 ---
-title: Adición de datos adjuntos
-seo-title: Adición de datos adjuntos
-description: Añada fotografías y notas de garabatos como anotaciones a la tarea en la aplicación de AEM Forms
-seo-description: Añada fotografías y notas de garabatos como anotaciones a la tarea en la aplicación de AEM Forms
+title: Añadir archivos adjuntos
+seo-title: Añadir archivos adjuntos
+description: Añadir fotografías y garabatear notas como anotaciones en la tarea en la aplicación de AEM Forms
+seo-description: Añadir fotografías y garabatear notas como anotaciones en la tarea en la aplicación de AEM Forms
 uuid: cf8b54a8-e5bc-49df-90f8-c6a37533c347
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
 
-# Adición de datos adjuntos {#adding-attachments}
+# Añadir archivos adjuntos {#adding-attachments}
 
-## Adición de datos adjuntos en formularios sincronizados con AEM Forms Workflow Server (AEM Forms en JEE) {#adding-annotations}
+## Añadir archivos adjuntos en formularios sincronizados con AEM Forms Workflow Server (AEM Forms en JEE) {#adding-annotations}
 
 La aplicación AEM Forms permite adjuntar imágenes, notas con garabatos y notas de texto al formulario sincronizados con el servidor JEE de AEM Forms. Si el formulario se carga desde un servidor de flujo de trabajo de AEM Forms, los datos adjuntos se agregan al formulario. Puede tocar el botón de datos adjuntos ![en la aplicación](assets/attachments-app.png) para ver todos los datos adjuntos de un formulario juntos. La notificación roja especifica el número de datos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no podrá ver el botón rojo de notificaciones. Si no hay datos adjuntos en el formulario, al tocar el ![botón de datos adjuntos](assets/attch.png), se obtienen opciones para adjuntar fotografías o secuencias de comandos.
 
@@ -41,7 +41,7 @@ Para ver todos los archivos adjuntos en un lugar, toque ![Attachments-app](asset
 
 Puede utilizar el botón **+** de la pantalla Archivos adjuntos para adjuntar otra imagen, garabato o texto.
 
-### Adición de una fotografía {#adding-a-photograph}
+### Añadir una fotografía {#adding-a-photograph}
 
 Puede utilizar la cámara del dispositivo móvil o las imágenes guardadas en el dispositivo para adjuntar una imagen en el formulario.
 
@@ -59,7 +59,7 @@ Puede utilizar la cámara del dispositivo móvil o las imágenes guardadas en el
 
       Aparece el navegador de imágenes del dispositivo. En el navegador de imágenes del dispositivo, toque la imagen que desee adjuntar.
 
-### Adición de una nota {#adding-a-note}
+### Añadir una nota {#adding-a-note}
 
 La opción **Notas** permite agregar garabatos a mano alzada y datos adjuntos de texto en el formulario.
 
@@ -68,7 +68,7 @@ La opción **Notas** permite agregar garabatos a mano alzada y datos adjuntos de
 1. En la interfaz de usuario de Notes que se inicia, capture un garabato a mano alzada.
 
    ![Interfaz de garabatos](assets/scribble-ui.png)
-   **** Figura: *Garabatos*
+   **Figura:** *Garabatos*
 
    Puede utilizar las siguientes opciones en la interfaz de garabatos:
 
@@ -84,6 +84,4 @@ Los archivos adjuntos para formularios móviles sincronizados con servidores OSG
 
 Los archivos adjuntos de nivel de formulario no son compatibles con los formularios adaptables cargados en la aplicación desde un servidor OSGi de AEM Forms. Para adjuntar imágenes o notas de texto, active los datos adjuntos de nivel de campo en el formulario cuando lo cree. Arrastre y suelte el componente de archivo adjunto desde el navegador de componentes del campo.
 
-En el caso de los formularios adaptables, puede ver los archivos adjuntos en el documento de registro (DoR). Consulte [Generar documento de registro para formularios](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptables que no sean XFA.
-
-[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)
+En el caso de los formularios adaptables, puede realizar la vista de los archivos adjuntos en el documento del registro (DoR). Consulte [Generar Documento de registros para formularios](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)adaptables que no sean XFA.

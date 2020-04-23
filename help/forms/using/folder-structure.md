@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -21,7 +21,7 @@ Los componentes del espacio de trabajo de AEM Forms están diseñados para la ar
 
 * Modelo, que contiene lógica empresarial.
 * Plantilla, es decir, un archivo HTML que contiene controles de interfaz.
-* Ver, que actúa como una clase Controller de Template.
+* Vista, que actúa como una clase Controller de Template.
 
 Los recursos de todos los componentes se colocan en la estructura de carpetas que se describe a continuación. Para acceder a los recursos, inicie sesión en CRXDE Lite y busque `/libs/ws/js/runtime/`.
 
@@ -37,4 +37,3 @@ Los recursos de todos los componentes se colocan en la estructura de carpetas qu
 
 **util** Contiene utilidades genéricas utilizables por varios componentes.
 
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

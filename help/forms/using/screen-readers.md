@@ -1,15 +1,15 @@
 ---
 title: Lectores de pantalla para formularios HTML5
 seo-title: Lectores de pantalla para formularios HTML5
-description: Enumera los lectores de pantalla admitidos en los formularios HTML5.
-seo-description: Enumera los lectores de pantalla admitidos en los formularios HTML5.
+description: Lista los lectores de pantalla compatibles con los formularios HTML5.
+seo-description: Lista los lectores de pantalla compatibles con los formularios HTML5.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,8 +40,6 @@ Los formularios HTML5 admiten todas las pulsaciones de teclas y gestos predeterm
 ## Problemas conocidos {#known-issues}
 
 * **(Solo en el Explorador interno 9)** En los formularios HTML5, las páginas se cargan a petición (dinámicamente). La carga de página a petición causa problemas con el funcionamiento de los lectores de pantalla. Cuando el enfoque del lector de pantalla está en el último campo de la página y el usuario pulsa la ficha, en lugar de definir el enfoque en el primer campo de la página siguiente, el lector de pantalla vuelve a centrarse en el primer campo de la primera página del formulario.
-* **(Solo en el Explorador interno 9)** El control Selector de fecha de los formularios HTML5 no es totalmente accesible con el teclado. En el control Selector de fecha, si presiona varias veces las teclas de dirección Subir/Bajar, el control Selector de fecha se cierra y el enfoque se mueve al campo siguiente/último.
+* **(Solo en el Explorador interno 9)** El control Selector de fecha de los formularios HTML5 no es totalmente accesible con el teclado. En el control Selector de fecha, si presiona varias veces las teclas de dirección Subir/Bajar, el control Selector de fecha se cerrará y el enfoque pasará al campo siguiente/último.
 
 * VoiceOver no puede detectar las teclas de flecha en la utilidad de fecha en iPad safari.
-
-**[Comuníquese con la asistencia técnica](https://www.adobe.com/account/sign-in.supportportal.html)**

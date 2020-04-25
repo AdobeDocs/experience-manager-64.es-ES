@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe evalúa constantemente las capacidades de los productos para renovar o sus
 
 Para comunicar la eliminación o el reemplazo inminente de las capacidades de AEM, se aplican las siguientes reglas:
 
-1. Primero se anuncia el desuso. Aunque estén en desuso, las capacidades aún están disponibles, pero ya no serán mejoradas.
+1. Primero se anuncia el desuso. Aunque están en desuso, las capacidades siguen estando disponibles, pero no se mejorarán aún más.
 1. La eliminación de las capacidades en desuso ocurrirá en la siguiente versión principal, como mínimo. Se anunciará la fecha real de la eliminación.
 
 Este proceso proporciona a los clientes un ciclo de lanzamiento para adaptar su implementación a una nueva versión o a la siguiente versión de una capacidad en desuso, antes de eliminarla.
 
 ## Funciones en desuso {#deprecated-features}
 
-Esta sección detalla las funciones y capacidades en desuso de AEM 6.4. Normalmente, las funciones que se quieren eliminar de una versión futura se establecen primero en desuso y, a continuación, se proporciona una alternativa.
+La tabla siguiente lista las funciones y funciones que se han marcado como obsoletas en AEM 6.4. Por lo general, las funciones que se planea eliminar en una versión futura se definen en primer lugar como obsoletas, con una alternativa proporcionada.
 
 Se recomienda a los clientes que comprueben si utilizan la función o capacidad en su implementación actual, y que planifiquen el cambio de la implementación y usen la alternativa proporcionada.
 
@@ -120,6 +120,11 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
    <td>Uso de la API de IValueMap </td> 
   </tr>
   <tr>
+   <td>Forms</td> 
+   <td><p>Servicio de puente de migración central obsoleto</p> </td> 
+   <td> Sin reemplazo </td> 
+  </tr>
+  <tr>
    <td>Recursos</td> 
    <td><p>La descarga de recursos ha quedado obsoleta a partir de AEM 6.4</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 ## Funciones eliminadas {#removed-features}
 
-Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
+La tabla siguiente lista las funciones y funciones que se han eliminado de AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
 
 <table> 
  <tbody>
@@ -215,13 +220,18 @@ Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. L
   </tr>
     <tr>
     <td>Forms</td> 
-    <td>Se han eliminado los formularios AEM en una página de aterrizaje específica de JEE.</td> 
+    <td>Se han eliminado los formularios AEM en la página de aterrizaje específica de JEE.</td> 
     <td>AEM Forms en la página de aterrizaje JEE se sustituye por la página de aterrizaje AEM (/aem/start.html) </td>  
   </tr>
    <tr>
    <td>Forms</td> 
    <td>Se ha eliminado la compatibilidad con Captcha predeterminada</td> 
    <td>Utilice el servicio reCAPTCHA de Google.</td> 
+  </tr>
+  <tr>
+   <td>Forms</td> 
+   <td>Se ha eliminado la compatibilidad con campos Flash en AEM Designer. AEM Designer no permite editar campos Flash utilizados en un formulario.</td> 
+   <td>Puede utilizar AEM Designer lanzado para una versión anterior para editar estos formularios.</td> 
   </tr>
   <tr>
    <td>Communities</td> 
@@ -233,7 +243,8 @@ Esta sección lista las funciones y funciones que se han eliminado de AEM 6.4. L
 
 ## Anuncio previo para la siguiente versión {#pre-announcement-for-next-release}
 
-Esta sección se utiliza para anunciar con antelación los cambios en futuras versiones, que no se consideran en desuso, pero que afectarán a los clientes. Se proporcionan con fines de planificación.
+
+La tabla siguiente proporciona una lista de los cambios para futuras versiones, que no se han desaprobado pero que pueden afectar a los clientes. Se proporcionan con fines de planificación.
 
 <table> 
  <tbody>

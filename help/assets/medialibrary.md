@@ -3,16 +3,16 @@ title: Compare las funciones disponibles en Recursos AEM y Biblioteca de medios 
 description: Preguntas más frecuentes sobre Recursos AEM y Biblioteca de medios AEM, incluidas las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
 
 # AEM Assets y Biblioteca de medios de AEM {#aem-assets-vs-aem-medialibrary}
 
-Recursos Adobe Experience Manager (AEM) es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de AEM y garantiza la coherencia en la administración de contenido y una alta productividad para los creadores de contenido.
+Recursos Adobe Experience Manager (AEM) es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de AEM y garantiza la coherencia en el gestor de contenido y la alta productividad de los creadores de contenido.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Preguntas frecuentes {#frequently-asked-questions}
 
 ### ¿Qué es AEM Assets? {#what-is-aem-assets}
 
@@ -41,10 +41,6 @@ No. Para facilitar la instalación y la implementación, todas las aplicaciones 
 
 Si tiene previsto editar metadatos que no sean título, descripción y etiquetas, deberá obtener una licencia de Recursos AEM.
 
-#### Quiero usar el predicado de categoría en mi sitio web. ¿Necesito Recursos AEM? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-Sí, el predicado de categoría, junto con todos los demás componentes utilizados en Geometrixx Press Center forman parte de Recursos AEM y requieren una licencia de Recursos AEM.
-
 #### Deseo cambiar automáticamente el tamaño de las imágenes al importarlas. ¿Necesito Recursos AEM? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 No. El cambio de tamaño y la transformación automática de imágenes estáticas basada en el flujo de trabajo, así como la capacidad de gestionar representaciones, forman parte de la biblioteca de medios de AEM. Estas funciones no requieren una licencia de Recursos AEM.
@@ -63,4 +59,5 @@ En este caso de uso no es necesario comprar Recursos AEM, incluso el uso de la b
 
 >[!MORELIKETHIS]
 >
->* [Lista detallada de diferencias de características](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [lista detallada de las diferencias de características](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+

@@ -3,7 +3,7 @@ title: Instalación y configuración de ImageMagick para trabajar con Recursos A
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, cómo configurar el paso del proceso de la línea de comandos y cómo utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -18,7 +18,7 @@ Para procesar archivos de gran tamaño con ImageMagick, considere la posibilidad
 
 >[!NOTE]
 >
->Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño.
+>Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Es posible que Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
@@ -27,7 +27,7 @@ Hay disponibles varias versiones de los archivos de instalación de ImageMagic p
 1. Descargue los archivos [de instalación](https://www.imagemagick.org/script/download.php) ImageMagick correspondientes para su sistema operativo.
 1. Para instalar ImageMagick en el disco que aloja el servidor AEM, inicie el archivo de instalación.
 
-1. Configure la variable de ruta Environment en el directorio de instalación de ImageMagic.
+1. Establezca la variable de Entorno de ruta en el directorio de instalación de ImageMagic.
 1. Para comprobar si la instalación se ha realizado correctamente, ejecute el `identify -version` comando.
 
 ## Configurar el paso del proceso de la línea de comandos {#set-up-the-command-line-process-step}
@@ -64,7 +64,7 @@ Puede configurar el paso del proceso de la línea de comandos para un caso de us
 
    ![Ski_mime_types](assets/skip_mime_types.png)
 
-1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, agregue el tipo MIME `image/jpeg` en **[!UICONTROL Omitir lista]**. Tap/click **[!UICONTROL OK]** to save the changes.
+1. En la ficha Imagen **[!UICONTROL habilitada para]** Web, agregue el tipo MIME `image/jpeg` en la Lista **** Omitir. Tap/click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -88,6 +88,6 @@ Si utiliza ImageMagick o una biblioteca afectada, Adobe recomienda mitigar las v
 >* [Opciones de línea de comandos para ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
 >* [Ejemplos básicos y avanzados de uso de ImageMagick](https://www.imagemagick.org/Usage/)
 >* [Ajuste del rendimiento de los recursos para ImageMagick](performance-tuning-guidelines.md)
->* [Lista completa de los formatos de archivo admitidos por AEM Assets](assets-formats.md)
+>* [lista completa de los formatos de archivo admitidos por AEM Assets](assets-formats.md)
 >* [Comprender los formatos de archivo y el costo de memoria de las imágenes](https://www.scantips.com/basics1d.html)
 

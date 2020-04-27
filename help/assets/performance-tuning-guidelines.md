@@ -3,7 +3,7 @@ title: Guía de ajuste del rendimiento de los recursos
 description: Áreas de enfoque clave en la configuración de AEM, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -104,7 +104,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
 
 Principalmente, la estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de AEM. Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -209,11 +209,9 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en el archivo 
 
 >[!NOTE]
 >
->Los archivos policy.xml y configure.xml de ImageMagick se encuentran en /usr/lib64/ImageMagick-&amp;ast;/config/ en lugar de /etc/ImageMagick/. Consulte la documentación [de](https://www.imagemagick.org/script/resources.php) ImageMagick para obtener detalles sobre las ubicaciones de los archivos de configuración.
+>El ImageMagick `policy.xml` y los `configure.xml` archivos se pueden encontrar en `/usr/lib64/ImageMagick-*/config/` lugar de en `/etc/ImageMagick/`. Consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/resources.php) para obtener más información sobre las ubicaciones de los archivos de configuración.
 
->[!NOTE]
->
->Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de asistencia técnica de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño.
+Si utiliza AEM en los servicios gestionados de Adobe (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si piensa procesar muchos archivos PSD o PSB de gran tamaño. Es posible que Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 <!-- 
 

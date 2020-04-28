@@ -3,7 +3,7 @@ title: Compare las funciones disponibles en Recursos AEM y Biblioteca de medios 
 description: Preguntas más frecuentes sobre Recursos AEM y Biblioteca de medios AEM, incluidas las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 

@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 
 ---
 
@@ -186,7 +186,7 @@ Una vez que haya creado y abierto una página, puede [añadir contenido mediante
 A menos que alguien haya creado todas las páginas con antelación, antes de poder empezar a crear contenido, debe crear una página:
 
 1.  Abra la consola Sitios (por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
-1. Desplácese a la ubicación en la que desee crear la nueva página.
+1. Desplácese hasta la ubicación en la que desee crear la nueva página.
 1. Abra el selector desplegable seleccionando **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
    ![screen_shot_2018-03-22at104944](assets/screen_shot_2018-03-22at104944.png)
@@ -255,7 +255,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 >
 >Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página  {#copying-and-pasting-a-page}
+### Copiar y pegar una página   {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
@@ -272,7 +272,7 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    >
    >Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
 
-1. Desplácese a la ubicación de la copia nueva de la página.
+1. Desplácese hasta la ubicación de la copia nueva de la página.
 1. Utilice el icono **Pegar** de la página:
 
    ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
@@ -362,8 +362,12 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
    >
    >Como medida de seguridad, el icono de página **Eliminar** no está disponible como acción rápida.
 
-1. Aparecerá un diálogo que le pedirá que confirme la acción. Realice una de las acciones siguientes:
+1. Un cuadro de diálogo solicitará confirmación.
 
+   * **¿Seguro que quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
+      * [Las versiones se pueden restaurar más adelante.](/help/sites-authoring/working-with-page-versions.md)
+      * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
+      * Esta opción solo está disponible en la versión 6.4.7.0 de AEM.
    * Seleccione **Cancelar** para cancelar la acción.
    * Seleccione **Eliminar** para confirmar la acción:
 

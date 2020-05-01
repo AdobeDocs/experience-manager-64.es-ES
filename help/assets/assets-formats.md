@@ -3,7 +3,7 @@ title: Formatos de archivo compatibles con AEM Assets
 description: Lista de formatos de archivo y tipos MIME admitidos por AEM Assets y las funciones compatibles con cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
@@ -34,7 +34,7 @@ Los formatos de imagen rasterizados admitidos para las funciones de administraci
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PFM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD ***** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -73,6 +73,17 @@ Además de la información anterior, considere lo siguiente:
 * Para utilizar Dynamic Media para previsualización y generar representaciones dinámicas para archivos EPS, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para archivos EPS, la reescritura de metadatos se admite en la versión 3.0 o posterior del Convenio de estructura de Documento PostScript (PS-Adobe).
+
+## Formatos de imagen rasterizada no admitidos en Dynamic Media (#unsupported-image-formats-dynamic-media)
+
+La siguiente lista describe los subtipos de formatos de archivo de imagen rasterizada que *no son* compatibles con Dynamic Media.
+
+* Archivos PNG con un tamaño de fragmento IDAT bueno de 100 MB.
+* Archivos PSB.
+* Los archivos PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. No se admiten los espacios de color DuoTone, Lab e Indexed.
+* Archivos PSD con una profundidad buena de 16.
+* Archivos TIFF que tienen datos de coma flotante.
+* Archivos TIFF que tienen espacio de color Lab.
 
 ## Biblioteca Rasterizer PDF {#supported-pdf-rasterizer-library}
 

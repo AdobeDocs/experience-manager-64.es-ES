@@ -3,7 +3,7 @@ title: Prácticas recomendadas sobre el formato del archivo de recursos
 description: Prácticas recomendadas para la compatibilidad con archivos en Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -33,24 +33,24 @@ Para obtener los mejores resultados, Adobe recomienda utilizar la biblioteca Ras
 * Archivos AI con miniaturas no generados de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y las vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera sólo salida RGB.
+Las miniaturas y previsualizaciones que se generan con el rasterizador de PDF son de mejor calidad en comparación con la salida de rasterizado lista para usar. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera sólo salida RGB.
 
 ## Adobe InDesign Server {#adobe-indesign-cc-server}
 
-Adobe recomienda utilizar Adobe InDesign Server para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [AEM assets as reference in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe recomienda utilizar Adobe InDesign Server para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [Añadir recursos de AEM como referencias en Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
-Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de administración de campañas digitales. Para obtener más información sobre cómo activar Dynamic Media, consulte [Configuración de Dynamic Media](config-dynamic.md).
+Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de gestión de la campaña digital. Para obtener más información sobre cómo activar Dynamic Media, consulte [Configuración de Dynamic Media](config-dynamic.md).
 
-Actualmente, Dynamic Media puede admitir vídeos de hasta 20 GB de contenido por archivo.
+Actualmente, Dynamic Media puede admitir vídeos de hasta 15 GB de contenido por archivo.
 
 ## Biblioteca ImageMagick {#imagemagick-library}
 
 Adobe recomienda utilizar la biblioteca ImageMagick en los siguientes casos:
 
 * Generación de representaciones en miniatura para archivos EPS
-* Para conservar la información del perfil de imagen
+* Conservación de la información del perfil de imagen
 * Para preservar la transparencia
 * Para procesar archivos PSD y PSB
 

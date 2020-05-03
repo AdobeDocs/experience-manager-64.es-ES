@@ -3,7 +3,7 @@ title: Importación y exportación masivas de metadatos
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
+source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
 
 ---
 
@@ -36,6 +36,12 @@ Para importar metadatos de forma masiva, siga estos pasos:
    | [!UICONTROL Nombre de columna de ruta de activos] | Define el nombre de la columna para el archivo CSV con recursos. |
 
 1. Toque o haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
+
+Para agregar la fecha y la marca de hora al importar metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` el formato de fecha y hora. La fecha y la hora se separan por `T`, `hh` es hora en formato de 24 horas, `fff` es nanosegundos y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es 26 de marzo de 2020 a las 11:26:00.000 AM hora PST.
+
+>[!CAUTION]
+>
+>Si el formato de fecha no coincide `YYYY-MM-DDThh:mm:ss.fff-00:00`, no se establecen los valores de fecha. Los formatos de fecha del archivo CSV de metadatos exportado tienen el formato `YYYY-MM-DDThh:mm:ss-00:00`. Si desea importarla, conviértala al formato aceptable agregando el valor de nanosegundos indicado por `fff`.
 
 ## Exportar metadatos {#export-metadata}
 

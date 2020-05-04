@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -24,11 +24,11 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 
 >[!NOTE]
 >
->Se requiere AEM 6.4.5.0 o posterior para utilizar las funciones de representación del lado del servidor SPA tal como se describe en este documento.
+>Se requiere AEM 6.4.5.0 o posterior para utilizar las funciones de procesamiento del lado del servidor SPA tal como se describe en este documento.
 
 ## Información general {#overview}
 
-Las aplicaciones de una sola página (SPA) pueden ofrecer al usuario experiencias dinámicas y enriquecidas que reaccionan y se comportan de formas familiares, a menudo como las aplicaciones nativas. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
+Las aplicaciones de una sola página (SPA) pueden oferta al usuario en experiencias dinámicas y enriquecidas que reaccionan y se comportan de maneras familiares, a menudo como las aplicaciones nativas. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
 
 Sin embargo, esto puede llevar a tiempos de carga iniciales más largos, especialmente si el SPA es grande y rico en su contenido. Para optimizar los tiempos de carga, parte del contenido se puede representar en el servidor. El uso del procesamiento en el lado del servidor (SSR) puede acelerar la carga inicial de la página y, a continuación, pasar el procesamiento al cliente.
 
@@ -40,8 +40,8 @@ Al decidir implementar SSR, primero debe calcular qué complejidad adicional, es
 
 SSR suele proporcionar algún valor cuando hay un claro &quot;sí&quot; a cualquiera de las siguientes preguntas:
 
-* **** SEO: ¿Es aún necesario realizar la SSR para que los motores de búsqueda que traen tráfico indiquen correctamente el sitio? Tenga en cuenta que los rastreadores de motores de búsqueda principales ahora evalúan JS.
-* **** Velocidad de página: ¿Proporciona la SSR una mejora de velocidad medible en los entornos de la vida real y contribuye a la experiencia general del usuario?
+* **SEO:** ¿Es aún necesario realizar la SSR para que los motores de búsqueda que traen tráfico indiquen correctamente el sitio? Tenga en cuenta que los rastreadores de motores de búsqueda principales ahora evalúan JS.
+* **Velocidad de página:** ¿Proporciona la SSR una mejora de velocidad medible en los entornos de la vida real y contribuye a la experiencia general del usuario?
 
 Adobe recomienda implementar SSR solo cuando al menos una de estas dos preguntas se conteste con un claro &quot;sí&quot; para su proyecto. Las siguientes secciones describen cómo hacerlo con Adobe I/O Runtime.
 
@@ -124,7 +124,7 @@ Al considerar la implementación del procesamiento del lado del servidor para su
 
 Los componentes de SPA pueden ser procesados por el cliente (en el navegador) o por el servidor. Cuando se procesa en el servidor, las propiedades del navegador, como el tamaño y la ubicación de la ventana, no están presentes. Por lo tanto, los componentes de la SPA deben ser isomórficos, sin suponer dónde se representarán.
 
-Para aprovechar SSR, deberá implementar su código en AEM, así como en Adobe I/O Runtime, que es responsable del procesamiento en el servidor. La mayoría del código será el mismo, pero las tareas específicas del servidor diferirán.
+Para aprovechar SSR, deberá implementar su código en AEM, así como en Adobe I/O Runtime, que es responsable del procesamiento en el servidor. La mayoría del código será el mismo, aunque las tareas específicas del servidor diferirán.
 
 ## SSR para SPA en AEM {#ssr-for-spas-in-aem}
 
@@ -135,13 +135,13 @@ Al igual que AEM admite los marcos de SPA angulares y de reacción predeterminad
 * Reaccionar: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Para ver un ejemplo simplista, consulte la aplicación [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)We.Retail Journal. Procesa todo el lado del servidor de aplicaciones. Aunque este no es un ejemplo real, ilustra lo que se necesita para implementar la reforma del sector de la seguridad.
+Para ver un ejemplo simplista, consulte la aplicación [de Historial](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)We.Retail. Procesa todo el lado del servidor de aplicaciones. Aunque este no es un ejemplo real, ilustra lo que se necesita para implementar la reforma del sector de la seguridad.
 
 >[!CAUTION]
->La aplicación [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal solo sirve para fines de demostración y, por tanto, utiliza Node.js como un ejemplo sencillo en lugar del tiempo de ejecución de Adobe I/O recomendado. Este ejemplo no debe utilizarse para ningún trabajo de proyecto.
+>La aplicación [de Historial](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail solo sirve para fines de demostración y, por tanto, utiliza Node.js como un ejemplo sencillo en lugar del tiempo de ejecución de Adobe I/O recomendado. Este ejemplo no debe utilizarse para ningún trabajo de proyecto.
 
 >[!NOTE]
->Todos los proyectos de SPA en AEM deben basarse en el [arquetipo Maven para el kit](https://github.com/adobe/aem-spa-project-archetype)de inicio de SPA.
+>Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ## Uso de Node.js {#using-node-js}
 
@@ -191,7 +191,7 @@ La configuración del controlador predeterminado debe configurarse como se descr
 Para que un servlet recupere y devuelva contenido que se puede insertar en la página:
 
 1. Asegúrese de que el servidor remoto sea accesible.
-1. Agregue uno de los siguientes fragmentos a la plantilla HTL de un componente AEM.
+1. Añada uno de los siguientes fragmentos en la plantilla HTL de un componente AEM.
 1. Opcionalmente, cree o modifique las configuraciones de OSGi.
 1. Explorar el contenido del sitio
 

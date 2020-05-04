@@ -9,16 +9,16 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
 
 # Introducción a los SPA en AEM: Angular {#getting-started-with-spas-in-aem-angular}
 
-Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios del sitio web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido sin problemas dentro de AEM para un sitio creado con marcos de SPA.
+Las aplicaciones de una sola página (SPA) pueden oferta experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido sin problemas dentro de AEM para un sitio creado con marcos de SPA.
 
-La función de creación de SPA ofrece una solución completa para admitir SPA en AEM. Este artículo presenta una aplicación de SPA simplificada en el marco Angular, explica cómo se ha creado, permitiéndole ponerse en marcha rápidamente con su propio SPA.
+La función de creación de SPA oferta una solución completa para admitir SPA dentro de AEM. Este artículo presenta una aplicación de SPA simplificada en el marco Angular, explica cómo se ha creado, permitiéndole ponerse en marcha rápidamente con su propio SPA.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Este documento recorrerá la estructura de un SPA simplificado e ilustrará cóm
 
 ## Dependencias, configuración y creación {#dependencies-configuration-and-building}
 
-Además de la dependencia Angular esperada, el SPA de muestra puede aprovechar bibliotecas adicionales para hacer que la creación del SPA sea más eficiente.
+Además de la dependencia Angular esperada, el SPA de muestra puede aprovechar bibliotecas adicionales para hacer que la creación del SPA sea más eficaz.
 
 ### Dependencias {#dependencies}
 
@@ -112,9 +112,9 @@ En realidad, la creación de la aplicación aprovecha [Webpack](https://webpack.
 
 Una vez creado, el paquete se puede cargar en una instancia de AEM.
 
-### Kit de arranque de Maven Archetype para SPA {#maven-archetype-for-spa-starter-kit}
+### Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
-Adobe recomienda aprovechar el [Arquetipo de Maven para SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) para ayudarle a iniciar su propio proyecto de SPA para AEM.
+Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de la aplicación {#application-structure}
 
@@ -222,7 +222,7 @@ export class MainContentComponent {
 }
 ```
 
-La `MainComponent` ingesta la representación JSON del modelo de página y procesa el contenido para ajustar/decorar cada elemento de la página. Para más información sobre el `Page` tema, véase el documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md).
+La `MainComponent` ingesta la representación JSON del modelo de página y procesa el contenido para ajustar/decorar cada elemento de la página. Puede encontrar más información sobre el `Page` tema en el documento [SPA Blueprint](/help/sites-developing/spa-blueprint.md).
 
 ### image.component.ts {#image-component-ts}
 
@@ -255,7 +255,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-La idea central de las SPA en AEM es la idea de asignar componentes de SPA a componentes de AEM y actualizar el componente cuando se modifica el contenido (y viceversa). Consulte el documento Información general [del editor de](/help/sites-developing/spa-overview.md) SPA para obtener un resumen de este modelo de comunicación.
+La idea central de las SPA en AEM es la idea de asignar componentes de SPA a componentes de AEM y actualizar el componente cuando se modifica el contenido (y viceversa). Consulte la Información general [del Editor de](/help/sites-developing/spa-overview.md) SPA de documento para obtener un resumen de este modelo de comunicación.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -282,13 +282,13 @@ Finalmente, la imagen se puede procesar en `image.component.html`.
 
 Es necesario que los componentes de una aplicación de una sola página compartan información con regularidad. Existen varias formas recomendadas de hacerlo, enumeradas a continuación en orden creciente de complejidad.
 
-* **** Opción 1: Centralice la lógica y difunda a los componentes necesarios, por ejemplo, mediante el uso de una clase util como solución pura orientada a objetos.
-* **** Opción 2: Compartir estados de componentes mediante una biblioteca de estados como NgRx.
-* **** Opción 3: Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
+* **Opción 1:** Centralice la lógica y difunda a los componentes necesarios, por ejemplo, mediante el uso de una clase util como solución pura orientada a objetos.
+* **Opción 2:** Compartir estados de componentes mediante una biblioteca de estados como NgRx.
+* **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
 ## Próximos pasos {#next-steps}
 
-Para obtener una guía paso a paso sobre la creación de su propio SPA, consulte el tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Introducción al Editor de AEM SPA - Eventos WKND.
+Para obtener una guía paso a paso sobre cómo crear su propio SPA, consulte el tutorial [Introducción al Editor de AEM SPA - Eventos WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Para obtener más información sobre cómo organizarse para desarrollar SPA para AEM, consulte el artículo [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md).
 

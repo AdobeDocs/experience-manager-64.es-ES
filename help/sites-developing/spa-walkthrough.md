@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -44,7 +44,7 @@ El tutorial se basa en la funcionalidad estándar de AEM y en la aplicación de 
 >
 >Este documento solo utiliza la aplicación [de Historial](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail para fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
 >
->Todos los proyectos de SPA en AEM deben basarse en el [arquetipo Maven para el kit](https://github.com/adobe/aem-spa-project-archetype)de inicio de SPA.
+>Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ### ¿Qué es un SPA? {#what-is-a-spa}
 
@@ -215,7 +215,7 @@ La siguiente sección, [Carga de una aplicación](/help/sites-developing/spa-wal
 
 1. Cambie a la ficha Red del Inspector y vuelva a cargar la página.
 
-   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página misma, CSS, React Javascript, sus dependencias y los datos JSON de la página.
+   Al omitir las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la página en sí, CSS, React Javascript, sus dependencias y los datos JSON de la página.
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 

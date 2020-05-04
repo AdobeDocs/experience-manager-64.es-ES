@@ -10,14 +10,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
 
 # Desarrollo de SPA para AEM{#developing-spas-for-aem}
 
-Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios del sitio web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
+Las aplicaciones de una sola página (SPA) pueden oferta experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
 
 En este artículo se presentan importantes cuestiones que hay que tener en cuenta al contratar a un desarrollador front-end para que desarrolle un SPA para AEM y se ofrece una visión general de la arquitectura de AEM con respecto a la implementación de SPA en AEM.
 
@@ -27,9 +27,9 @@ En este artículo se presentan importantes cuestiones que hay que tener en cuent
 >
 >El Editor de SPA es la solución recomendada para proyectos que requieren procesamiento del cliente basado en el marco de SPA (por ejemplo, React o Angular).
 
-## Kit de arranque de Maven Archetype para SPA {#maven-archetype-for-spa-starter-kit}
+## Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
-Cualquier proyecto de SPA en AEM debería aprovechar el arquetipo de [Maven para el kit](https://github.com/adobe/aem-spa-project-archetype)de inicio de SPA.
+Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA.
 
 ## Principios de desarrollo de SPA para AEM {#spa-development-principles-for-aem}
 
@@ -38,9 +38,9 @@ El desarrollo de aplicaciones de una sola página en AEM supone que el desarroll
 * **[Portabilidad](/help/sites-developing/spa-architecture.md#portability)-**Como con cualquier componente, los componentes se deben crear para que sean lo más portátiles posible. El SPA debe crearse con componentes transferibles y reutilizables, evitando las rutas estáticas que hacen referencia a la estructura de contenido.
 * **[AEM impulsa la estructura](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**del sitio: el desarrollador front-end crea componentes y posee su estructura interna, pero depende de AEM para definir la estructura de contenido del sitio.
 * **[Procesamiento](/help/sites-developing/spa-architecture.md#dynamic-rendering)dinámico:**todo el procesamiento debe ser dinámico.
-* **[Enrutamiento](#dynamic-routing)dinámico:**el SPA es responsable del enrutamiento y AEM lo escucha y obtiene los datos del componente en función de él. Cualquier enrutamiento también debe ser dinámico.
+* **[Enrutamiento](#dynamic-routing)dinámico:**el SPA es responsable del enrutamiento y AEM lo escucha y obtiene los datos del componente en función de él. Cualquier enrutamiento también debería ser dinámico.
 
-Si tiene en cuenta estos principios a medida que desarrolla su SPA, será lo más flexible y seguro posible en el futuro, al tiempo que se habilitará toda la funcionalidad de creación de AEM admitida.
+Si tiene en cuenta estos principios a medida que desarrolla su SPA, será lo más flexible y la prueba más futura posible, al tiempo que se habilitará toda la funcionalidad de creación de AEM admitida.
 
 Si no necesita admitir funciones de creación de AEM, puede que tenga que considerar un modelo [de diseño de](/help/sites-developing/spa-architecture.md#spa-design-models)SPA diferente.
 
@@ -66,9 +66,9 @@ Cualquier representación explícita que apunte a contenido específico se consi
 
 ### Enrutamiento dinámico {#dynamic-routing}
 
-Al igual que en el procesamiento, todas las rutas también deben ser dinámicas. En AEM, [el SPA siempre debe ser propietario de la ruta](/help/sites-developing/spa-routing.md) y AEM la escucha y captura contenido basado en ella.
+Al igual que en el procesamiento, todo el enrutamiento también debe ser dinámico. En AEM, [el SPA siempre debe ser propietario del enrutamiento](/help/sites-developing/spa-routing.md) y AEM lo escucha y obtiene contenido basado en él.
 
-Cualquier enrutamiento estático va en contra del [principio de portabilidad](/help/sites-developing/spa-architecture.md#portability) y limita al autor al no ser compatible con las funciones de creación de contenido de AEM. Por ejemplo, con el enrutamiento estático, si el autor del contenido desea cambiar una ruta o cambiar una página, deberá pedir al desarrollador del front-end que lo haga.
+Cualquier enrutamiento estático va en contra del [principio de portabilidad](/help/sites-developing/spa-architecture.md#portability) y limita al autor al no ser compatible con las funciones de creación de contenido de AEM. Por ejemplo, con un enrutamiento estático, si el autor del contenido desea cambiar una ruta o una página, deberá pedir al desarrollador del front-end que lo haga.
 
 ## Modelos de diseño de SPA {#spa-design-models}
 
@@ -125,7 +125,7 @@ Siga estos pasos para que el SPA existente esté listo para trabajar con AEM.
 
 ## Instrucciones para desarrolladores de front-end {#instructions-for-front-end-developers}
 
-La tarea principal de conseguir que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
+La tarea principal de lograr que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
 
 A continuación se describen los pasos que debe seguir un desarrollador front-end al desarrollar un SPA para AEM.
 
@@ -192,7 +192,7 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
 ![screen_shot_2018-12-11at145348](assets/screen_shot_2018-12-11at145348.png)
 
-* **Entorno de compilación**
+* **Generar Entorno**
 
    Aquí es donde el origen de la aplicación SPA y el origen de componentes están desprotegidos.
 
@@ -217,10 +217,10 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
 * **Dispatcher/CDN**
 
-   El despachante sirve como capa de almacenamiento en caché de AEM para los visitantes del sitio.
+   El despachante sirve como capa de almacenamiento en caché de AEM para visitantes al sitio.
 
    * Las solicitudes se procesan de forma similar a como se encuentran en AEM Author; sin embargo, no hay ninguna solicitud de la información de la página, ya que solo lo necesita el editor.
-   * Javascript, CSS, JSON y HTML se almacenan en caché, lo que optimiza la página para una entrega rápida.
+   * Javascript, CSS, JSON y HTML se almacenan en caché, lo que optimiza la página para un envío rápido.
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
 Para obtener información general sobre cómo se estructura un SPA sencillo en AEM y cómo funciona, consulte la guía de introducción para [React](/help/sites-developing/spa-getting-started-react.md) y [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
-Para obtener una guía paso a paso sobre la creación de su propio SPA, consulte el tutorial [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Introducción al Editor de AEM SPA - Eventos WKND.
+Para obtener una guía paso a paso sobre cómo crear su propio SPA, consulte el tutorial [Introducción al Editor de AEM SPA - Eventos WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Para obtener más información sobre la asignación de modelos dinámicos a componentes y cómo funciona en SPA en AEM, consulte el artículo Asignación de modelos [dinámicos a componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 

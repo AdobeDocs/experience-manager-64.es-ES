@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 ---
 
@@ -35,15 +35,8 @@ Esto ayuda a los desarrolladores a:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
 >* No está disponible en dispositivos móviles o ventanas pequeñas en el escritorio (debido a restricciones de espacio).
-   >
-   >  
-* Esto ocurre cuando la anchura es inferior a 1024 píxeles.
-   >
-   >
-* Requiere los permisos/privilegios adecuados:
-   >
-   >  
-* El acceso al modo de desarrollador se otorga a los usuarios que tienen acceso de escritura en `/apps`.
+   >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
+>* Solo está disponible para los usuarios que son miembros del `administrators` grupo.
 
 
 >[!CAUTION]
@@ -103,7 +96,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
-* **Ver detalles**: vínculo a una lista que muestra:
+* **Detalles** de Vista: vínculo a una lista que muestra:
 
    * todas las secuencias de comandos de componentes utilizadas para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.

@@ -3,7 +3,10 @@ title: Esquemas de metadatos
 description: 'El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
+source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 12%
 
 ---
 
@@ -32,22 +35,34 @@ Puede utilizar el editor de formularios Esquema de metadatos para modificar esqu
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
-   AEM proporciona las siguientes plantillas listas para usar:
-   * **predeterminado**: Formulario de esquema de metadatos base para los recursos.
+## Formularios de Esquema de metadatos disponibles de forma predeterminada {#available-metadata-schema-templates}
 
-      Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
+[!DNL Experience Manager] proporciona las siguientes plantillas de formulario de Esquema de metadatos:
 
-      1. **imagen**: Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, `image/jpeg`, `image/png`, etc.
+### predeterminada {#default-template}
 
-         El formulario &quot;imagen&quot; tiene las siguientes plantillas de formulario secundarias:
-         * **jpeg**: Formulario de Esquema para recursos con subtipo `jpeg`.
-         * **tiff**: Formulario de Esquema para los recursos con subtipo `tiff`.
-      1. **aplicación**: Formulario de Esquema para recursos con tipo MIME `application`, por ejemplo `application/pdf`, `application/zip`, etc.
-         * **pdf**: Formulario de Esquema para recursos con subtipo `pdf`.
-      1. **video**: Formulario de Esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
-   * **colección**: Formulario de Esquema para colecciones.
-   * **contentfragment:** Formulario de Esquema para fragmentos de contenido.
-   * **formularios**: Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager.
+El [!UICONTROL valor predeterminado] es el formulario de esquema de metadatos base para los recursos. Los siguientes formularios secundarios heredan las propiedades del formulario predeterminado:
+
+* **image** es el formulario de esquema para los recursos con el tipo MIME &quot;image&quot;. Por ejemplo, `image/jpeg`, `image/png`, etc. El formulario &quot;imagen&quot; tiene las siguientes plantillas de formulario secundarias:
+   * **jpeg** es el formulario de esquema para recursos con subtipo `jpeg`.
+
+   * **tiff** es el formulario de esquema para los recursos con subtipo `tiff`.
+
+* **aplicación** es el formulario de esquema para los recursos con tipo MIME `application`. Por ejemplo, `application/pdf`, `application/zip`, etc. **pdf** es el formulario de esquema para recursos con subtipo `pdf`.
+
+* **video** es el formulario de esquema para recursos con tipo MIME `video`, como `video/avi`, `video/mp4`, etc.
+
+### colección {#collection-template}
+
+La [!UICONTROL colección] es el formulario de esquema para las colecciones.
+
+### contentfragment {#contentfragment-template}
+
+El [!UICONTROL fragmento] de contenido es el formulario de esquema para fragmentos de contenido.
+
+### forms {#forms-template}
+
+El formulario de esquema de [!UICONTROL formularios] está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager.
 
 >[!NOTE]
 >
@@ -165,7 +180,7 @@ En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTR
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]**, **[!UICONTROL IPTC]** y **[!UICONTROL Extensión IPTC]** de forma predeterminada.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Haga clic en `+` para agregar una nueva ficha a un formulario de esquema. De forma predeterminada, la nueva ficha tiene el nombre `Unnamed-1`. Puede modificar el nombre desde la ficha **[!UICONTROL Configuración]** . Haga clic en `X` para eliminar una ficha.
 

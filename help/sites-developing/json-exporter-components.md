@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
@@ -56,9 +59,19 @@ Además, esto especifica que la clase Sling Model se puede adaptar a la `Compone
 >
 >Las clases `ExporterConstants` y `ComponentExporter` vienen del `com.adobe.cq.export.json` paquete.
 
+### Uso de varios selectores {#multiple-selectors}
+
+Aunque no es un caso de uso estándar, es posible configurar varios selectores además del `model` selector.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+Sin embargo, en este caso el `model` selector debe ser el primer selector y la extensión debe ser `.json`.
+
 ## Anotar la interfaz del modelo Sling {#annotate-the-sling-model-interface}
 
-Para que el marco JSON Exporter lo tenga en cuenta, la interfaz del modelo debe implementar la `ComponentExporter` interfaz (o `ContainerExporter`, en el caso de un componente contenedor).
+Para que el marco de exportación JSON lo tenga en cuenta, la interfaz del modelo debe implantar la `ComponentExporter` interfaz (o `ContainerExporter`, en el caso de un componente de contenedor).
 
 La interfaz del Modelo de Sling ( `MyComponent`) correspondiente se anotaría utilizando anotaciones [](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) Jackson para definir cómo se debe exportar (serializar).
 

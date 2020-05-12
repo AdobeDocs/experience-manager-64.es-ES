@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '1698'
+ht-degree: 0%
 
 ---
 
@@ -199,6 +202,10 @@ Las versiones anteriores de estos marcos pueden funcionar con el SDK del Editor 
 ### Marcos adicionales {#additional-frameworks}
 
 Se pueden implementar otros marcos de SPA para trabajar con el SDK del Editor de SPA de AEM. Consulte el documento de modelo de [SPA](/help/sites-developing/spa-blueprint.md) para conocer los requisitos que debe cumplir una estructura para crear una capa específica de la estructura compuesta de módulos, componentes y servicios para trabajar con el editor de SPA de AEM.
+
+### Uso de varios selectores {#multiple-selectors}
+
+Los selectores personalizados adicionales se pueden definir y utilizar como parte de un SPA desarrollado para el SDK de AEM SPA. Sin embargo, esta compatibilidad requiere que el `model` selector sea el primer selector y que la extensión sea `.json` la [requerida por el exportador JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos del Editor de texto {#text-editor-requirements}
 

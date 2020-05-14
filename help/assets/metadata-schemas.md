@@ -3,9 +3,9 @@ title: Esquemas de metadatos
 description: 'El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
+source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2527'
 ht-degree: 12%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 12%
 
 # Esquemas de metadatos {#metadata-schemas}
 
-En Recursos Adobe Experience Manager (AEM), un esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos que utilizan el esquema en cuestión. Las propiedades de metadatos incluyen título, descripción, tipos MIME, etiquetas, etc.
+En [!DNL Experience Manager Assets], un esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos que utilizan el esquema en particular. Las propiedades de metadatos incluyen título, descripción, tipos MIME, etiquetas, etc.
 
-Puede utilizar el editor de formularios Esquema de metadatos para modificar esquemas existentes o agregar esquemas de metadatos personalizados.
+Puede utilizar el editor de formularios Esquema de metadatos para modificar esquemas existentes o agregar esquemas de metadatos personalizados. Para vista y edición de la página de propiedades de un recurso, siga estos pasos:
 
-1. Para vista de la página de propiedades de un recurso, toque o haga clic en Propiedades **[!UICONTROL de la]** Vista desde Acciones **** rápidas en el mosaico del recurso en vista de tarjetas.
+1. Toque o haga clic en las propiedades **[!UICONTROL de la]** Vista desde acciones rápidas en el mosaico del recurso en la vista de tarjetas.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,7 +25,7 @@ Puede utilizar el editor de formularios Esquema de metadatos para modificar esqu
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Edite las propiedades de metadatos editables en las distintas fichas.
+1. Puede editar las propiedades de metadatos editables en las fichas disponibles. Sin embargo, no puede modificar el [!UICONTROL tipo] de recurso en la ficha [!UICONTROL Básico] de la página de propiedades.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -62,7 +62,7 @@ Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] 
 
 1. En el cuadro de diálogo, introduzca el título del formulario de esquema y haga clic en **[!UICONTROL Crear]** para completar el proceso de creación del formulario.
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## Editar formularios de esquema de metadatos {#editing-metadata-schema-forms}
 
@@ -164,7 +164,7 @@ En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTR
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]**, **[!UICONTROL IPTC]** y **[!UICONTROL Extensión IPTC]** de forma predeterminada.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Haga clic en `+` para agregar una nueva ficha a un formulario de esquema. De forma predeterminada, la nueva ficha tiene el nombre `Unnamed-1`. Puede modificar el nombre desde la ficha **[!UICONTROL Configuración]** . Haga clic en `X` para eliminar una ficha.
 

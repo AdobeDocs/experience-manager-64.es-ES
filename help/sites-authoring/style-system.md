@@ -9,24 +9,27 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bdc44635cfb874c5f5f4033debb15799cbafcd5a
+workflow-type: tm+mt
+source-wordcount: '1365'
+ht-degree: 69%
 
 ---
 
 
 # Sistema de estilos{#style-system}
 
-El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
+El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hace que el componente sea más flexible.
 
 Esto elimina la necesidad de desarrollar un componente personalizado para cada estilo o de personalizar el cuadro de diálogo del componente para permitir dicha funcionalidad de estilo. De esta manera, más componentes reutilizables se pueden adaptar de forma rápida y sencilla a las necesidades de los autores de contenido sin ningún desarrollo final de AEM.
 
-## Caso práctico  {#use-case}
+## Caso práctico   {#use-case}
 
 Los autores de plantillas no solo necesitan la posibilidad de configurar la forma en que los componentes funcionan para los autores de contenido, sino también de configurar diversas variaciones visuales alternativas de un componente.
 
 Del mismo modo, los autores de contenido no solo necesitan la posibilidad de estructurar y organizar su contenido, sino también de seleccionar cómo se presenta visualmente.
 
-El sistema de estilos proporciona una solución unificada a los requisitos del autor de plantillas y del autor de contenido:
+El sistema de estilos proporciona una solución unificada para los requisitos del autor de la plantilla y del autor del contenido:
 
 * Los autores de plantillas pueden definir clases de estilos en la política de contenido de los componentes.
 * Los autores de contenido pueden seleccionar estas clases en una lista desplegable al editar el componente en una página para aplicar los estilos correspondientes.
@@ -35,7 +38,7 @@ A continuación, la clase de estilos se inserta en el elemento envolvente de la 
 
 ## Información general {#overview}
 
-Por lo general, el uso del sistema de estilos se lleva a cabo de la forma siguiente.
+El uso del sistema de estilos suele tener el siguiente formato.
 
 1. El diseñador web crea diferentes variaciones visuales de un componente.
 
@@ -55,58 +58,50 @@ Tenga en cuenta que, en realidad, solo los tres últimos pasos se llevan a cabo 
 
 Para implementar realmente los estilos solo hace falta la implementación en AEM y la selección en los componentes de las plantillas que desee.
 
-En el diagrama siguiente, se ilustra la arquitectura del sistema de estilos.
+El siguiente diagrama ilustra la arquitectura del sistema de estilos.
 
 ![aem-style-system](assets/aem-style-system.png)
 
 ## Uso {#use}
 
-Para demostrar esta función, deben crearse estilos para un componente. Al contar como base con la implementación de [We.Retail](/help/sites-developing/we-retail.md) del [componente de la lista](https://helpx.adobe.com/experience-manager/core-components/using/list.html) del componente principal, puede instalar el paquete adjunto que contiene estilos para explorar la funcionalidad de la función.
+Para demostrar la función, utilizaremos como ejemplo la implementación por [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)del componente [de](https://www.adobe.com/go/aem_cmp_title_v2) título del componente principal.
 
-Descargar el paquete de demostración del sistema de [estilo](assets/package_-_style_systemdemo.zip)
-
->[!NOTE]
->
->Con el paquete de demostración se pretende mostrar la forma en que los autores pueden utilizar el sistema de estilos, en lugar de plantearlo como una referencia de cómo implementarlo mejor.
->
->Este paquete solo será necesario hasta que We.Retail proporcione una implementación integrada de ejemplos y prácticas recomendadas.
-
-En las secciones siguientes [Como autor de contenido](/help/sites-authoring/style-system.md#as-a-content-author) y [Como autor de plantillas](/help/sites-authoring/style-system.md#as-a-template-author) se describe cómo probar la funcionalidad del sistema de estilos mediante el paquete de demostración del sistema de estilos de We.Retail.
+The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
 
 Si desea utilizar el sistema de estilos para sus propios componentes, haga lo siguiente:
 
-1. Instale el CSS como bibliotecas de cliente, tal como se ha indicado en la sección [Información general](/help/sites-authoring/style-system.md#overview).
-1. Configure las clases CSS que desea poner a disposición de los autores de contenido, tal como se describe en la sección [Como autor de plantillas](/help/sites-authoring/style-system.md#as-a-template-author).
-1. A continuación, los autores de contenido pueden utilizar los estilos, tal como se describe en la sección [Como autor de contenido](/help/sites-authoring/style-system.md#as-a-content-author).
+1. Instale el CSS como bibliotecas de cliente, tal como se ha indicado en la sección [Información general](#overview).
+1. Configure las clases CSS que desea poner a disposición de los autores de contenido, tal como se describe en la sección [Como autor de plantillas](#as-a-template-author).
+1. A continuación, los autores de contenido pueden utilizar los estilos, tal como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
-### Como autor de contenido  {#as-a-content-author}
+### Como autor de contenido   {#as-a-content-author}
 
-1. After installing the style system demo package, navigate to We.Retail&#39;s English language master home page at `http://localhost:4502/sites.html/content/we-retail/language-masters/en` and edit the page.
-1. Seleccione el componente **Lista** en la parte inferior o superior del parsys. Do not confuse it with the **Articles List** component.
+1. Después de instalar el proyecto WKND, vaya a la página de inicio maestra de idioma inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en` y edite la página.
+1. Seleccione un componente **Título** más abajo en la página
 
-   ![screen_shot_2017-11-15at162032](assets/screen_shot_2017-11-15at162032.png)
+   ![Sistema de estilos para el autor](assets/style-system-author.png)
 
 1. Toque o haga clic en el botón **Estilos** de la barra de herramientas del componente **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
 
-   ![screen_shot_2017-11-15at162358](assets/screen_shot_2017-11-15at162358.png)
+   ![Selección de estilos](assets/style-system-author2.png)
 
    >[!NOTE]
    >
-   >En este ejemplo, los estilos de **Diseño** (**Bloque** y **Cuadrícula**) se excluyen mutuamente, mientras que las opciones de **Pantalla** (**Imagen** o **Fecha**) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](/help/sites-authoring/style-system.md#as-a-template-author).
+   >En este ejemplo, los estilos **Colores** (**Negro**, **Blanco** y **Gris**) se excluyen mutuamente, mientras que las opciones **Estilo** (Subrayado, Alinear a la derecha, y Miniespaciado ************) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](#as-a-template-author).
 
-### Como autor de plantillas  {#as-a-template-author}
+### Como autor de plantillas   {#as-a-template-author}
 
-1. While editing We.Retail&#39;s English language master home page at `http://localhost:4502/sites.html/content/we-retail/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
 
-   ![screen_shot_2017-11-15at162922](assets/screen_shot_2017-11-15at162922.png)
+   ![Editar plantilla](assets/style-system-edit-template.png)
 
-1. Para editar la política del componente **Lista**, toque o haga clic en el botón **Política** del componente. No lo confunda con el componente **Lista de artículos**.
+1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
 
-   ![screen_shot_2017-11-15at163133](assets/screen_shot_2017-11-15at163133.png)
+   ![Editar directiva](assets/style-system-edit-policy.png)
 
 1. En la pestaña Estilos de las propiedades, puede ver cómo se han configurado los estilos.
 
-   ![screen_shot_2017-12-15at101404](assets/screen_shot_2017-12-15at101404.png)
+   ![Editar propiedades](assets/style-system-properties.png)
 
    * **Nombre del grupo**: los estilos se pueden agrupar en el menú Estilo que el autor de contenido verá al configurar el estilo del componente.
    * **Los estilos se pueden combinar**: permite que se seleccionen al mismo tiempo diversos estilos dentro de ese grupo.
@@ -120,26 +115,39 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 ## Configuración {#setup}
 
->[!NOTE]
->
->La versión 2 de los componentes principales está totalmente preparada para aprovechar las ventajas del sistema de estilos y no requiere ninguna configuración adicional.
->
->A fin de utilizar la función, siga estos pasos para preparar el sistema de estilos para sus propios componentes personalizados o para ampliar los componentes principales de la versión 1.
+Los componentes principales versión 2 y posteriores están totalmente habilitados para aprovechar el sistema de estilos y no requieren ninguna configuración adicional.
 
-Para que un componente funcione con el sistema de estilos de AEM y se muestre la pestaña Estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir esa pestaña del producto y establecer el componente con las opciones de configuración siguientes:
+Los pasos siguientes solo son necesarios para habilitar el sistema de estilos para sus propios componentes personalizados o para [habilitar la ficha Estilos opcional en el cuadro de diálogo Editar.](#enable-styles-tab-edit)
+
+### Activar la ficha Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
+
+Para que un componente funcione con el sistema de estilos de AEM y muestre la ficha de estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la ficha de estilo con la siguiente configuración en el componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 Con el componente configurado, AEM insertará automáticamente en el elemento de decoración que AEM ajusta automáticamente en cada componente editable los estilos que los autores de páginas hayan configurado. El componente en sí no tiene que hacer nada más para que esto ocurra.
 
-### Estilos con nombres de elemento  {#styles-with-element-names}
+### Activar la ficha Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
+
+A partir de la versión 6.4.7.0 de AEM, ya está disponible una ficha Estilos opcional en el cuadro de diálogo Editar. A diferencia de la ficha Cuadro de diálogo de diseño, la ficha del cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
+
+La ficha Editar cuadro de diálogo se puede incluir de forma similar a la ficha Diseño:
+
+* `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
+* `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>
+>La ficha Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
+
+### Estilos con nombres de elemento   {#styles-with-element-names}
 
 Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la política, dentro del cuadro de diálogo de diseño, el creador de plantillas también puede elegir un nombre de elemento para cada estilo. Esto definirá el nombre de elemento del elemento envolvente.
 
 Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 
-* `/apps/weretail/components/content/list@cq:styleElements=[div,section,span]`
+* `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >

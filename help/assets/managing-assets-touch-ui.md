@@ -4,7 +4,10 @@ description: Obtenga información sobre varias tareas de edición y administraci
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '9812'
+ht-degree: 2%
 
 ---
 
@@ -32,8 +35,8 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 
 No se admiten los siguientes caracteres (lista separada por espacios):
 
-* el nombre del archivo de recurso no debe contener `* / : [ \ \ ] | # % { } ? &`
-* el nombre de la carpeta de recursos no debe contener `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+* el nombre del archivo de recurso no debe contener  `* / : [ \ \ ] | # % { } ? &`
+* el nombre de la carpeta de recursos no debe contener  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Upload assets {#uploading-assets}
 
@@ -111,8 +114,8 @@ Antes de cargar un recurso, asegúrese de que tiene un formato [](assets-formats
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
-   * el nombre del archivo de recurso no debe contener `* / : [ \ \ ] | # % { } ? &`
-   * el nombre de la carpeta de recursos no debe contener `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   * el nombre del archivo de recurso no debe contener  `* / : [ \ \ ] | # % { } ? &`
+   * el nombre de la carpeta de recursos no debe contener  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
    Además, la interfaz de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero en todas las vistas (vista **[!UICONTROL de]** tarjetas, vista **[!UICONTROL de]** Lista y vista **[!UICONTROL de]** columnas).
 
    A menudo, mientras se cargan recursos grandes o múltiples simultáneamente, los indicadores visuales le permiten evaluar el progreso. El cuadro de diálogo Progreso **[!UICONTROL de la]** carga muestra el número de archivos cargados correctamente y los archivos que no se han podido cargar.
@@ -436,8 +439,8 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >[!NOTE]
    >
    >No se admiten los siguientes caracteres (lista separada por espacios):
-   >* el nombre del archivo de recurso no debe contener `* / : [ \ \ ] | # % { } ? &`
-   >* el nombre de la carpeta de recursos no debe contener `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* el nombre del archivo de recurso no debe contener  `* / : [ \ \ ] | # % { } ? &`
+   >* el nombre de la carpeta de recursos no debe contener  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
 
 1. En la página **[!UICONTROL Seleccionar destino]** , realice una de las siguientes acciones:
@@ -477,13 +480,13 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 1. Seleccione una representación para vista o eliminarla.
 
-   **Eliminación de una representación**
+   **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque el icono **[!UICONTROL Eliminar representación]** de la [barra de herramientas](/help/sites-authoring/basic-handling.md).
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque el icono **[!UICONTROL Eliminar representación]** de la [barra de herramientas](/help/sites-authoring/basic-handling.md). Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar Experience Manager para eliminar representaciones específicas o para eliminar los recursos y volver a cargar los recursos eliminados.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Carga de una nueva representación**
+   **Cargar una nueva representación**
 
    Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 

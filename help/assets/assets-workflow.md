@@ -1,9 +1,12 @@
 ---
-title: Procesar recursos para llevar a cabo procesos de negocios, realizar auditorías, lograr cumplimiento de normas y mantener la solidez básica
+title: Procesar recursos para llevar a cabo procesos de negocios, realizar auditorías, lograr el cumplimiento de normas y mantener la solidez básica
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 2%
 
 ---
 
@@ -98,6 +101,10 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 
 * Realice una copia del flujo de trabajo de [!UICONTROL DAM Update Asset] y modifíquelo para que se ejecute en una jerarquía de carpetas específica. Este método resulta útil para algunas carpetas.
 * Los pasos de procesamiento adicionales se pueden agregar mediante una división [](/help/sites-developing/workflows-step-ref.md#or-split) O, según se requiera, para tantas carpetas como se necesiten.
+
+## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
+
+* Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
 
 >[!MORELIKETHIS]
 >

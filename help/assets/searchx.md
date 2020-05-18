@@ -3,7 +3,10 @@ title: Ampliación de la búsqueda de recursos
 description: Amplíe las capacidades de búsqueda de Recursos AEM más allá de las búsquedas integradas de recursos por cadenas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 13%
 
 ---
 
@@ -31,7 +34,7 @@ Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs
 >De forma predeterminada, la estructura de directorio bajo / `apps` no existe y debe crearse. Asegúrese de que los tipos de nodo coinciden con los de / `libs`.
 
 
-## Adición de fichas {#adding-tabs}
+## Añadir fichas {#adding-tabs}
 
 Puede agregar fichas de búsqueda adicionales configurándolas en el administrador de AEM Assets. Para crear fichas adicionales:
 
@@ -46,7 +49,7 @@ Puede agregar fichas de búsqueda adicionales configurándolas en el administrad
 
 Recursos AEM incluye un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de este modo se trata en [Creación y configuración de una página](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)de uso compartido de recursos.
 
-Además de utilizar predicados preexistentes, los desarrolladores de AEM también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Query Builder.
+Además de usar predicados preexistentes, los desarrolladores de AEM también pueden crear sus propios predicados mediante la API [de](/help/sites-developing/querybuilder-api.md)Consulta Builder.
 
 La creación de predicados personalizados requiere conocimientos básicos sobre el marco [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)utilidades.
 
@@ -142,7 +145,7 @@ Para generar un predicado de propiedad:
 1. Para que el componente esté disponible, hace falta poder editarlo. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. Para poder eliminar párrafos, agregue una propiedad de varios valores `cq:actions` con un único valor de **ELIMINAR**.
 1. Vaya al navegador y, en la página de muestra (por ejemplo, `press.html`), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **izquierda**).
 
-1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar** ). Inserte el componente en la columna **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para iniciar la búsqueda.
+1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar** ). Inserte el componente en la columna **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para inicio de la búsqueda.
 
    >[!NOTE]
    >
@@ -169,7 +172,7 @@ Para crear un predicado de grupo:
 
 1. Añada `titlepredicate.jsp`:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
@@ -259,7 +262,7 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `fulltext` |
-| searchCallback | Función | Llamada de retorno para activar la búsqueda en el evento `keyup`. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Función | Llamada de retorno para activar la búsqueda en evento `keyup`. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
@@ -290,7 +293,7 @@ Los siguientes predicados están disponibles como utilidades preconfiguradas de 
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| el título | Cadena | Agrega un título superior adicional |
+| el título | Cadena | Añade un título superior adicional |
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `daterange` |
 | propertyname | Cadena | Nombre de la propiedad JCR. El valor predeterminado es `jcr:content/metadata/cq:tags` |
 | contraer | Cadena | Contraer nivel. El valor predeterminado es `level1` |

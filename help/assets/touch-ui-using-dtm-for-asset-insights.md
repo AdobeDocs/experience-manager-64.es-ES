@@ -3,7 +3,10 @@ title: Activación de perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +22,12 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Insights Configuration]**.
 1. [Configurar la instancia de AEM con el servicio de nube de DTM](../sites-administering/dtm.md)
 
-   El testigo API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de los sitios de AEM con las perspectivas de recursos sigue en marcha.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de los sitios de AEM con las perspectivas de recursos sigue en marcha.
 
-1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una empresa, según corresponda.
+1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una Compañía, según corresponda.
 1. Crear/abrir una propiedad web existente
 
-   * Seleccione la ficha Propiedades **** web y, a continuación, toque o haga clic en **[!UICONTROL Agregar propiedad]**.
+   * Seleccione la ficha Propiedades **** web y, a continuación, toque o haga clic en **[!UICONTROL Añadir propiedad]**.
    * Actualice los campos según corresponda y toque o haga clic en **[!UICONTROL Crear propiedad]** (consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html)).
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -32,7 +35,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL Etiquetas]** Javascript/de terceros. A continuación, toque o haga clic en **[!UICONTROL Agregar nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
+1. Expanda **[!UICONTROL Etiquetas]** Javascript/de terceros. A continuación, toque o haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha HTML **** secuencial para abrir el cuadro de diálogo Secuencia de comandos.
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -48,7 +51,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
 
 
-1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Haga clic en Información general en la propiedad web y haga clic en Agregar herramienta o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método de configuración en Automático.
+1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Haga clic en Información general en la propiedad web y haga clic en Añadir herramienta o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método de configuración en Automático.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -64,7 +67,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
 1. Pegue el siguiente código en la ventana:
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
@@ -102,7 +105,7 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
 
    * La regla de carga de página en la DTM solo incluye el código pagetracker.js. Los `assetAnalytics` campos se consideran anulaciones para los valores predeterminados. No son obligatorios de forma predeterminada.
    * El código llama `assetAnalytics.dispatcher.init()` después de asegurarse de que `_satellite.getToolsByType('sc')[0].getS()` se inicializa y `assetAnalytics,dispatcher.init` está disponible. Por lo tanto, puede omitir agregarla en el paso 11.
-   * Como se indica en los comentarios dentro del código Rastreador de páginas de perspectivas (**[!UICONTROL Herramientas > Recursos > Rastreador]** de páginas de perspectivas), cuando el Rastreador de páginas no crea un `AppMeasurement` objeto, los tres primeros argumentos (RSID, Servidor de seguimiento y Espacio de nombres de visitantes) son irrelevantes. En su lugar, se pasan cadenas vacías para resaltar esto.
+   * Como se indica en los comentarios dentro del código Rastreador de páginas de perspectivas (**[!UICONTROL Herramientas > Recursos > Rastreador]** de páginas de perspectivas), cuando el Rastreador de páginas no crea un `AppMeasurement` objeto, los tres primeros argumentos (RSID, Servidor de seguimiento y Área de nombres de Visitantes) son irrelevantes. En su lugar, se pasan cadenas vacías para resaltar esto.
 
       Los argumentos restantes corresponden a lo que se configura en la página Configuración de perspectivas (**[!UICONTROL Herramientas > Recursos > Configuración]** de perspectivas).
 

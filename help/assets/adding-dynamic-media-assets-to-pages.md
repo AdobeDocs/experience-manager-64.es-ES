@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
+source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 33%
 
 ---
 
@@ -27,22 +30,50 @@ Puede añadir recursos de medios dinámicos directamente a la página si utiliza
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-El proceso de añadir un componente de Dynamic Media o Medios interactivos a una página es similar al de añadir un componente a cualquier página. Los componentes de Dynamic Media o Medios interactivos se describen en detalle en las siguientes secciones.
+Añadir un componente de Dynamic Media en una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en detalle en las siguientes secciones.
 
 >[!NOTE]
 >
->Si hay un componente Dynamic Media, un componente de medios interactivos o ambos en una página web a la que accede un usuario con permisos de solo lectura, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
+>Si un usuario con permisos de solo lectura accede a un componente de Dynamic Media en una página web, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
 >  
 >Para evitar este problema, asegúrese de que los usuarios de Sitios AEM tienen los permisos necesarios para acceder a los recursos.
 
-1. En AEM, abra la página en la que desee agregar el componente Dynamic Media o Medios interactivos.
-1. En el panel izquierdo, haga clic en el icono **[!UICONTROL Componentes]** y filtre para Medios **[!UICONTROL dinámicos]**. Si no hay ningún componente de Dynamic Media disponible, debe activar los componentes de Dynamic Media. Consulte [Edición de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) de página para obtener más información.
+1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
+1. En el panel del lado izquierdo de la página (es posible que necesite alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
+1. En la lista desplegable **[!UICONTROL Componentes]** , seleccione Medios **[!UICONTROL dinámicos]**. Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
-1. Arrastre el componente Medios **[!UICONTROL dinámicos]** o Medios **[!UICONTROL interactivos]** a la página en la ubicación deseada.
+1. Arrastre un componente de Dynamic Media que desee utilizar a la página en la ubicación deseada.
 1. Haga clic en el cuadro azul alrededor del componente y, a continuación, toque el icono **[!UICONTROL Configuración]** (llave inglesa).
 1. [Edite los componentes](#dynamic-media-components) según sea necesario y haga clic en la marca de verificación para guardar los cambios.
+
+### Activación de componentes de Dynamic Media {#enabling-dynamic-media-components}
+
+Si no hay componentes de Dynamic Media disponibles para agregar a una página, es probable que deba habilitar los componentes.
+
+1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
+1. En la parte izquierda de la barra de herramientas, cerca de la parte superior de la página, toque el icono Información de página y, a continuación, **[!UICONTROL Editar plantilla]** en la lista desplegable.
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque **[!UICONTROL Estructura]**.
+
+![Política](/help/assets/assets-dm/structure-mode.png)
+
+1. Cerca de la parte inferior de la página, toque el Contenedor **** Diseño para abrir su barra de herramientas y, a continuación, toque el icono Política.
+1. En la página Contenedor **** Diseño, bajo el encabezado **[!UICONTROL Propiedades]** , asegúrese de que la ficha Componentes **** permitidos está seleccionada.
+
+![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
+
+1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
+1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
+
+![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+
+1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
+
+1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque Contenido **** inicial y, a continuación, [agregue un componente Medios dinámicos a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
 
 ## Localización de componentes de Dynamic Media {#localizing-dynamic-media-components}
 

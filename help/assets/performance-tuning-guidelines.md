@@ -3,7 +3,10 @@ title: Guía de ajuste del rendimiento de los recursos
 description: Áreas de enfoque clave en la configuración de AEM, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3201'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Para mejorar los tiempos de carga de recursos, utilice almacenamientos de alto r
 
 Si el servidor tiene una memoria amplia, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -81,7 +84,7 @@ La implementación de un almacén de datos de archivos compartidos o S3 puede ay
 
 La siguiente configuración del almacén de datos S3 ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ayudó a Adobe a extraer 12,8 TB de objetos binarios grandes (BLOB) de un almacén de datos de archivos existente en un almacén de datos S3 en un sitio del cliente:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -104,7 +107,7 @@ accessKey=<snip>
 
 ## Optimización de la red {#network-optimization}
 
-Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se saturará rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
+Adobe recomienda habilitar HTTPS porque muchas compañías tienen cortafuegos que detectan el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos de gran tamaño, asegúrese de que los usuarios tienen conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar cuellos de botella de red, consulte [Assets Sizing Guide (Guía](assets-sizing-guide.md)de cambio de tamaño de recursos). Para evaluar el rendimiento de la red mediante el análisis de la topología de la red, consulte Consideraciones [de la red de](assets-network-considerations.md)recursos.
 
 Principalmente, la estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga de la instancia de AEM. Las opciones de configuración comunes, incluyendo servidores de seguridad o proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos de los puntos clave a tener en cuenta:
 
@@ -297,7 +300,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 ## Índices de búsqueda {#search-indexes}
 
-Asegúrese de implementar los Service Packs más recientes y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones en los índices del sistema. Consulte Consejos [de optimización del rendimiento| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algunas optimizaciones de índice que se pueden aplicar, según la versión de AEM.
+Asegúrese de implementar los Service Packs más recientes y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones en los índices del sistema. Consulte Consejos [de optimización del rendimiento | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algunas optimizaciones de índice que se pueden aplicar, según la versión de AEM.
 
 Cree índices personalizados para consultas que se ejecutan con frecuencia. Para obtener más información, consulte [metodología para analizar consultas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) lentas y [diseñar índices](/help/sites-deploying/queries-and-indexing.md)personalizados. Para obtener más información sobre las optimizaciones de consulta e índice, consulte [Prácticas recomendadas para Consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -349,7 +352,7 @@ Actualice las configuraciones de índice para mejorar el tiempo de reindexación
 1. Haga clic en **[!UICONTROL Guardar todo]**
 1. Supervise el error.log para ver cuándo se completa la indexación:
 
-   Reindexación completada para índices: [/roak:index/ntBaseLucene]
+   Reindexación completada para índices: [/oak:index/ntBaseLucene]
 
 1. También puede ver que la indexación se completa actualizando el nodo /oak:index/ntBaseLucene en CRXDe, ya que la propiedad reindex volvería a false
 1. Una vez finalizada la indexación, vuelva a CRXDe y establezca la propiedad **[!UICONTROL type]** en disabled en estos dos índices

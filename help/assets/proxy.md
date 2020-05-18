@@ -3,7 +3,10 @@ title: Desarrollo de proxy de recursos
 description: 'Un proxy es una instancia de AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones admitidas, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Hay un proxy disponible a través del servlet HTTP cuando está configurado para
 
    **Requisitos**: el parámetro `jobevent` debe configurarse como un mapa de valores serializados. Se utiliza para crear un `Event` para un procesador de trabajo.
 
-   **Resultado**: Agrega un nuevo trabajo. Si se realiza correctamente, se devuelve una ID de trabajo única.
+   **Resultado**: Añade un nuevo trabajo. Si se realiza correctamente, se devuelve una ID de trabajo única.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -80,7 +83,7 @@ Un trabajador proxy es un procesador responsable de gestionar un trabajo y crear
 
 A continuación se muestra un ejemplo del uso de API:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ Tanto las configuraciones de trabajo proxy como las de proxy están disponibles 
 
 A continuación se muestra un ejemplo del uso de API:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
  
@@ -138,7 +141,7 @@ La configuración de su propio trabajador proxy personalizado requiere que:
 * Configure e implemente (mediante eventos Sling):
 
    * un tema de trabajo personalizado
-   * un controlador de eventos de trabajo personalizado
+   * un controlador de evento de trabajo personalizado
 
 * A continuación, utilice la API de JobService para:
 

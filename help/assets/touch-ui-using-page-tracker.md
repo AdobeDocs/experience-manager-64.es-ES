@@ -3,7 +3,10 @@ title: Uso del rastreador de páginas y código incrustado en páginas web
 description: Obtenga información sobre cómo incluir el rastreador de páginas y los códigos JavaScript incrustados en el código del sitio web para permitir que Adobe Analytics capture los datos de uso en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ El siguiente código de ejemplo muestra cómo se ve una página web que contiene
 </html>
 ```
 
-## Adición del código del rastreador de páginas {#adding-page-tracker-code}
+## Añadir el código del rastreador de páginas {#adding-page-tracker-code}
 
 El código del rastreador de páginas se agrega a la sección de encabezado del código del sitio web. El siguiente fragmento de código muestra el código Rastreador de páginas incluido en una página web de muestra:
 
@@ -76,7 +79,7 @@ El código del rastreador de páginas se agrega a la sección de encabezado del 
  </head>
 ```
 
-## Adición de código incrustado {#adding-embed-code}
+## Añadir código incrustado {#adding-embed-code}
 
 Puede agregar el código incrustado en el cuerpo del código del sitio web. El siguiente fragmento de código muestra el código incrustado incluido en una página web de muestra:
 

@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2865'
 ht-degree: 33%
 
 ---
@@ -39,18 +39,19 @@ Añadir un componente de Dynamic Media en una página es lo mismo que agregar un
 >Para evitar este problema, asegúrese de que los usuarios de Sitios AEM tienen los permisos necesarios para acceder a los recursos.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
-1. En el panel del lado izquierdo de la página (es posible que necesite alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
+1. En el panel del lado izquierdo de la página (es posible que deba alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
 1. En la lista desplegable **[!UICONTROL Componentes]** , seleccione Medios **[!UICONTROL dinámicos]**. Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Arrastre un componente de Dynamic Media que desee utilizar a la página en la ubicación deseada.
-1. Haga clic en el cuadro azul alrededor del componente y, a continuación, toque el icono **[!UICONTROL Configuración]** (llave inglesa).
+1. Sitúe el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, toque una vez para mostrar la barra de herramientas del componente. Toque el icono **[!UICONTROL Configuración]** (llave inglesa).
 1. [Edite los componentes](#dynamic-media-components) según sea necesario y haga clic en la marca de verificación para guardar los cambios.
+1. 
 
 ### Activación de componentes de Dynamic Media {#enabling-dynamic-media-components}
 
-Si no hay componentes de Dynamic Media disponibles para agregar a una página, es probable que deba habilitar los componentes.
+Si no hay componentes de Dynamic Media disponibles para agregar a una página, es probable que primero deba habilitar los componentes que desee utilizar.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
 1. En la parte izquierda de la barra de herramientas, cerca de la parte superior de la página, toque el icono Información de página y, a continuación, **[!UICONTROL Editar plantilla]** en la lista desplegable.
@@ -59,17 +60,17 @@ Si no hay componentes de Dynamic Media disponibles para agregar a una página, e
 
 1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque **[!UICONTROL Estructura]**.
 
-![Política](/help/assets/assets-dm/structure-mode.png)
+   ![Política](/help/assets/assets-dm/structure-mode.png)
 
 1. Cerca de la parte inferior de la página, toque el Contenedor **** Diseño para abrir su barra de herramientas y, a continuación, toque el icono Política.
 1. En la página Contenedor **** Diseño, bajo el encabezado **[!UICONTROL Propiedades]** , asegúrese de que la ficha Componentes **** permitidos está seleccionada.
 
-![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
+   ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
 1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
 1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
 
-![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
 

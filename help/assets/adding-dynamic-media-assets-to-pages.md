@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 33%
@@ -47,7 +47,6 @@ Añadir un componente de Dynamic Media en una página es lo mismo que agregar un
 1. Arrastre un componente de Dynamic Media que desee utilizar a la página en la ubicación deseada.
 1. Sitúe el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, toque una vez para mostrar la barra de herramientas del componente. Toque el icono **[!UICONTROL Configuración]** (llave inglesa).
 1. [Edite los componentes](#dynamic-media-components) según sea necesario y haga clic en la marca de verificación para guardar los cambios.
-1. 
 
 ### Activación de componentes de Dynamic Media {#enabling-dynamic-media-components}
 

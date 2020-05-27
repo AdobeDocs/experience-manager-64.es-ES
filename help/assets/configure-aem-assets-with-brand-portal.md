@@ -3,7 +3,10 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Obtenga información sobre cómo configurar Recursos AEM con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: a2bd2734b1ec923c87f707c5183b3813e4511f10
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1717'
+ht-degree: 46%
 
 ---
 
@@ -65,16 +68,16 @@ Para obtener instrucciones detalladas, consulte
 
 * [Notas de la versión de Service Pack de AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Póngase en contacto con la asistencia** si no puede encontrar el paquete de AEM o el Service Pack más recientes.
+**Póngase en contacto con el Servicio de atención** al cliente si no puede encontrar el paquete de AEM o Service Pack más recientes.
 
 ## Crear configuración {#configure-new-integration-64}
 
 Realice los siguientes pasos en la secuencia mostrada si va a configurar Recursos AEM con Brand Portal por primera vez:
-1. [Obtenga un certificado público](#public-certificate)
-1. [Cree la integración de Adobe I/O](#createnewintegration)
-1. [Cree la configuración de cuenta IMS](#create-ims-account-configuration)
-1. [Configure el servicio en la nube](#configure-the-cloud-service)
-1. [Pruebe la configuración](#test-integration)
+1. [Obtener un certificado público](#public-certificate)
+1. [Crear la integración de Adobe I/O](#createnewintegration)
+1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
+1. [Configurar el servicio en la nube](#configure-the-cloud-service)
+1. [Probar la configuración](#test-integration)
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 
@@ -193,9 +196,9 @@ Asegúrese de haber realizado los siguientes pasos:
 
 >[!CAUTION]
 >
->Sólo debe tener una configuración IMS. No cree varias configuraciones de IMS.
+>Sólo debe tener una configuración de IMS. No cree varias configuraciones de IMS.
 >
->Asegúrese de que la configuración de IMS pasa la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarlo y crear una configuración nueva y válida.
+>Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
 
 
@@ -222,7 +225,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube. La instancia de creación de Recursos AEM ahora está integrada con el inquilino de Brand Portal.
 
-### Pruebe la configuración{#test-integration}
+### Probar la configuración{#test-integration}
 
 1. Inicie sesión en la instancia de creación de Recursos AEM
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre varias tareas de edición y administraci
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 
 >[!NOTE]
 >
->Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM Author. Póngase en contacto con la asistencia de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
+>Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM Author. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
 Si utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**

@@ -3,9 +3,9 @@ title: Guía de ajuste del rendimiento de los recursos
 description: Áreas de enfoque clave en la configuración de AEM, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 >[!NOTE]
 >
->Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que esto sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
+>Adobe no recomienda la activación automática de recursos. Sin embargo, si es necesario, Adobe recomienda que este paso sea el último paso de un flujo de trabajo, normalmente DAM Update Asset.
 
 ## Índices de búsqueda {#search-indexes}
 
@@ -417,6 +417,6 @@ Para minimizar la latencia y lograr un alto rendimiento mediante la utilización
 * Elimine los pasos innecesarios del flujo de trabajo de recursos de actualización de DAM.
 * Configure el flujo de trabajo y la depuración de versiones.
 * Optimice la configuración del índice de Lucene.
-* Optimice los índices con los paquetes de servicios y revisiones más recientes. Consulte con la asistencia de Adobe si hay optimizaciones de índice adicionales disponibles.
+* Optimice los índices con los paquetes de servicios y revisiones más recientes. Consulte con el Servicio de atención al cliente de Adobe si hay optimizaciones de índice adicionales disponibles.
 * Se utiliza `guessTotal` para optimizar el rendimiento de la consulta.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.

@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '7663'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +85,7 @@ Puede configurar las siguientes propiedades para una carpeta vigilada.
 
 * **outputFilePattern (String)**: Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivos. Si se especifica un patrón de carpetas, los archivos de salida tienen nombres como se describe en flujos de trabajo. Si se especifica un patrón de archivos, los archivos de salida tienen nombres como se describe en el patrón de archivos. [El patrón](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) de archivos y carpetas también puede especificar una estructura de directorio para los archivos de salida. Es una propiedad obligatoria.
 
-* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para su procesamiento se considere que se ha agotado el tiempo de espera y se ha marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
+* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se ha seleccionado para el procesamiento se considere como si se hubiera agotado el tiempo de espera y se hubiera marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
 
    **Nota:** *Incluso cuando una entrada se marca como si se hubiera agotado el tiempo de espera con este mecanismo, puede que se esté procesando en segundo plano pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento podría incluso completarse más tarde y la salida se volcaría a la carpeta de resultados. Si el contenido no se consumió antes de que se agotara el tiempo de espera, es muy probable que se produzca un error en el procesamiento al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otra parte, si el procesamiento de la entrada nunca se activó debido a un error intermitente en el trabajo o el flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces, por supuesto, no se producirá ninguna de estas dos eventualidades. Por lo tanto, para todas las entradas de la carpeta de errores que se marcaron como errores debido a un tiempo de espera (busque los mensajes del formulario &quot;Archivo no procesado después de un tiempo significativo, marcando como error!&quot; en el registro de errores), es aconsejable analizar la carpeta de resultados (y también la propia carpeta de errores para buscar otra entrada para la misma entrada) a fin de comprobar si se ha producido alguna de las eventualidades descritas anteriormente.*
 
@@ -210,7 +213,7 @@ Puede crear variables múltiples para métodos de procesamiento de archivos basa
 
 Puede inicio de un flujo de trabajo, un servicio o una secuencia de comandos para procesar los documentos colocados en una carpeta de inspección.
 
-### Uso de un servicio para procesar archivos de una carpeta vigilada {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Uso de un servicio para procesar archivos de una carpeta vigilada   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un servicio es una implementación personalizada de la `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaz. Está registrado con OSGi junto con algunas propiedades personalizadas. Las propiedades personalizadas de la implementación la hacen única y ayudan a identificar la implementación.
 
@@ -720,7 +723,7 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 ### Crear un flujo de trabajo {#create-a-workflow-1}
 
-1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador. `https://[server]:[port]/worklow`
+1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador. `https://[server]:[port]/workflow`
 
 1. En la vista Modelos, haga clic en **Nuevo**. En el cuadro de diálogo Nuevo flujo de trabajo, especifique **Título** y haga clic en **Aceptar**.
 1. Seleccione el flujo de trabajo recién creado y haga clic en **Editar**. El flujo de trabajo se abre en una ventana nueva.

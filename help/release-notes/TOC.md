@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Release Notes
+user-guide-title: Notas de la versión 6.4 de AEM
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 41%
 
 ---
 
@@ -14,6 +17,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 + [Descripción general de AEM 6.4](home.md)
 + [Notas de revisión generales](release-notes.md)
 + [Notas de la versión de Service Pack](sp-release-notes.md)
++ [Notas de la versión del paquete de correcciones acumuladas](cfp-release-notes.md)
 + [Notas de la versión de Sitios AEM](sites.md)
 + [Notas de la versión de Activos AEM](assets.md)
 + [Notas de la versión de Formularios AEM](forms.md)

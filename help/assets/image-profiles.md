@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
+source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
 workflow-type: tm+mt
-source-wordcount: '2627'
-ht-degree: 12%
+source-wordcount: '2708'
+ht-degree: 11%
 
 ---
 
@@ -26,9 +26,15 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 >
 >El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
+>[!IMPORTANT]
+>
+>Los perfiles de imagen no son aplicables a los archivos PDF.
+
 ## Crop options {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for paragraph directly below -->
+
+Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda utilizar el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el perfil de la imagen.
 
 Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
 

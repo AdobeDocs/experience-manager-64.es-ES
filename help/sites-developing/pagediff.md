@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 7%
 
 ---
 
@@ -41,7 +44,7 @@ Debido a que al utilizar el mecanismo de diferencia de página, AEM vuelve a cre
 
 >[!CAUTION]
 >
->Para utilizar la función de diferencia de página, el usuario debe tener el permiso** Modificar/Crear/Eliminar** en el nodo `/content/versionhistory`.
+>Para utilizar la función de diferencia de página, el usuario debe tener el permiso **Modificar/Crear/Eliminar** en el nodo `/content/versionhistory`.
 
 ### A partir de AEM 6.4.3 {#as-of-aem}
 
@@ -51,7 +54,7 @@ Cuando se compara el contenido, todo el árbol hasta la página que comparar se 
 
 Este contenido lo crea un usuario de servicio con permisos que limitan la visibilidad del usuario actual. Por este motivo, no se requieren permisos especiales.
 
-Se ejecuta automáticamente una tarea de limpieza para limpiar este contenido temporal.
+Una tarea de limpieza se ejecuta automáticamente para limpiar este contenido temporal.
 
 ## Limitaciones del desarrollador {#developer-limitations}
 

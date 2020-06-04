@@ -1,7 +1,7 @@
 ---
-title: 'Variaciones: Creación de contenido de fragmentos'
-seo-title: 'Variaciones: Creación de contenido de fragmentos'
-description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+title: 'Variaciones: Crear contenido de fragmentos'
+seo-title: 'Variaciones: Crear contenido de fragmentos'
+description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 seo-description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
 contentOwner: Alison Heimoz
@@ -10,18 +10,21 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1845'
+ht-degree: 15%
 
 ---
 
 
-# Variaciones: Creación de contenido de fragmentos {#variations-authoring-fragment-content}
+# Variaciones: Crear contenido de fragmentos {#variations-authoring-fragment-content}
 
 >[!CAUTION]
 >
 >Algunas funciones de fragmento de contenido requieren la aplicación de [AEM 6.4 Service Pack 2 (6.4.2.0) o posterior](../release-notes/sp-release-notes.md).
 
-[Las variaciones](content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para su uso en canales o escenarios específicos.
+[Las variaciones](content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
 
 Desde la ficha **Variaciones** puede:
 
@@ -35,7 +38,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Cargar contenido](#uploading-content)
 
-* [Ver estadísticas](#viewing-key-statistics) clave (acerca de texto multilínea)
+* [Estadísticas](#viewing-key-statistics) de clave de Vista (acerca de texto multilínea)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
@@ -59,7 +62,7 @@ Por ejemplo:
 
 * Edición de un fragmento simple
 
-   Un fragmento simple consta de un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
+   Un fragmento simple consiste en un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
 
    ![cfm-6420-21](assets/cfm-6420-21.png)
 
@@ -111,8 +114,8 @@ La edición de texto enriquecido le permite dar formato:
 * Cursiva
 * Subrayado
 * Alineación: izquierda, centro, derecha
-* Lista con viñetas
-* Lista numerada
+* lista con viñetas
+* lista numerada
 * Sangría: aumentar, disminuir
 * Crear/romper hipervínculos
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
@@ -121,7 +124,7 @@ La edición de texto enriquecido le permite dar formato:
    * Insertar una tabla
    * Estilo de párrafo: Párrafo, Encabezado 1/2/3
    * [Inserción de recursos visuales](#inserting-assets-into-your-fragment)
-   * Búsqueda 
+   * Búsqueda  
    * Buscar/Reemplazar
    * Corrector ortográfico
    * [Anotaciones](content-fragments-variations.md#annotating-a-content-fragment)
@@ -190,12 +193,12 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >
 >El inglés está disponible de forma predeterminada.
 >
->Otros idiomas están disponibles como Paquetes de modelo de idioma en Uso compartido de paquetes:
+>Otros idiomas están disponibles como Paquetes de modelo de idioma desde Uso compartido de paquetes o Distribución de software:
 >
->* [Francés(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Alemán(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Español(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Francés (fr) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) o [francés (fr) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Alemán (de) desde Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) o [alemán (de) desde Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiano (it) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) o [italiano (it) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Español (es) de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) o [español (es) de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -207,7 +210,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 
    ![cf-17](assets/cf-17.png)
 
-1. Especifique el número de palabras objetivo y seleccione **[!UICONTROL Inicio]**:
+1. Especifique el número de palabras del destinatario y seleccione **[!UICONTROL Inicio]**:
 1. El texto original se muestra junto con el resumen propuesto:
 
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.

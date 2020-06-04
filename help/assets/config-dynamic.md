@@ -8,7 +8,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '8013'
+ht-degree: 1%
 
 ---
 
@@ -189,7 +192,7 @@ En una implementación de AEM QuickStart WAR, el número de puerto y la ruta de 
 >[!NOTE]
 En una implementación [independiente de](/help/sites-deploying/deploy.md)AEM Quickstart, generalmente no es necesario configurar un dominio **propio** porque el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el dominio **propio** .
 
-## Desactivación de Dynamic Media {#disabling-dynamic-media}
+## Desactivación de Dynamic Media  {#disabling-dynamic-media}
 
 Los medios dinámicos no están activados de forma predeterminada. Sin embargo, si ha activado medios dinámicos anteriormente, puede que desee desactivarlos más adelante.
 
@@ -274,6 +277,7 @@ Debe configurar la autenticación de replicación en el autor para replicar imá
    * En el campo Contraseña **[!UICONTROL del archivo]** KeyStore, introduzca la contraseña del archivo KeyStore. Esta _no es_ la contraseña de KeyStore que creó en el paso 5, sino la contraseña del archivo KeyStore que Adobe proporciona en el correo electrónico de bienvenida que se le envió durante el aprovisionamiento. Póngase en contacto con el servicio de atención al cliente de Adobe si no ha recibido una contraseña para el archivo KeyStore.
    * En el campo Contraseña **[!UICONTROL de clave]** privada, introduzca la contraseña de clave privada (puede ser la misma contraseña de clave privada proporcionada en el paso anterior). Adobe proporciona la contraseña de clave privada en el correo electrónico de bienvenida que se le envía durante el aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no ha recibido una contraseña de clave privada.
    * En el campo Alias **[!UICONTROL de clave]** privada, introduzca el alias de clave privada. Por ejemplo, `companyname-alias`. Adobe proporciona el alias de clave privada en el correo electrónico de bienvenida que se le envía durante el aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no ha recibido un alias de clave privada.
+
    ![edit_settings_fordynamic-media-Replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. Toque **[!UICONTROL Guardar y cerrar]** para guardar los cambios realizados en este usuario.
@@ -292,6 +296,7 @@ Debe configurar la autenticación de replicación en el autor para replicar imá
    * **[!UICONTROL ID]** del inquilino: este valor es el nombre de su compañía/inquilino que está publicando en el servicio de replicación. Este valor es el ID del inquilino que Adobe proporciona en el correo electrónico de bienvenida que se le envía durante el aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no ha recibido este mensaje.
    * **[!UICONTROL Alias]** de almacén de claves: Este valor es el mismo que el valor** de nuevo alias** establecido al generar la clave en la [configuración de la autenticación](#setting-up-authentication); por ejemplo, `replication`. (Consulte el paso 7 en [Configuración de la autenticación](#setting-up-authentication)).
    * **[!UICONTROL Contraseña]** del almacén de claves: es la contraseña de KeyStore que se creó al tocar **[!UICONTROL Crear KeyStore]**. Adobe no proporciona esta contraseña. Consulte el paso 5 de [Configuración de la autenticación](#setting-up-authentication).
+
    La siguiente imagen muestra el agente de replicación con datos de ejemplo:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -567,7 +572,7 @@ Asegúrese de que el paquete [!DNL Video Analytics] preestablecido del primer no
 
    * **Comprobación del[!DNL Video Analytics]ajuste preestablecido mediante la herramienta Sistema de informes de vídeo en AEM**
 
-      Toque **[!UICONTROL Herramientas > Recursos > Sistema de informes]** de vídeo `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+      Toque **[!UICONTROL Herramientas > Recursos > Sistema de informes de vídeo]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
       Si ve el siguiente mensaje de error, el grupo de informes está disponible, pero sin rellenar. Este error es correcto (y deseado) en una nueva instalación antes de que el sistema recopile datos.
 
@@ -666,7 +671,7 @@ Si utiliza Dynamic Media para 1) imágenes en producción _o_ 2) imágenes y ví
    <td>El "video-filtro" incorporado: 
     <ul> 
      <li>Incluya representaciones de vídeo proxy, miniaturas de vídeo/imagen de póster, metadatos (tanto en las representaciones de vídeo principales como en las representaciones de vídeo) para la replicación (cualquier representación que comience con <strong>cqdam</strong>).</li> 
-     <li>Excluya de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> Nota: <strong>Nota:</strong> Las representaciones de vídeo proxy no contienen binarios, sino que son solo propiedades de nodo. Por lo tanto, no hay impacto en el tamaño del repositorio del editor.</li> 
+     <li>Excluya de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> <strong>Nota:</strong> Las representaciones de vídeo proxy no contienen binarios, sino que son solo propiedades de nodo. Por lo tanto, no hay impacto en el tamaño del repositorio del editor.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -958,7 +963,7 @@ Los casos de uso avanzados podrían utilizar un modificador configure **[!UICONT
 * **[!UICONTROL iccEmbed]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
 >[!NOTE]
-El conjunto estándar de perfiles en color de Adobe solo está disponible si tiene [instalado Feature Pack 12445](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) . Todos los paquetes de funciones y Service Packs están disponibles a través de Uso compartido de [paquetes](https://www.adobeaemcloud.com/content/packageshare.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
+El conjunto estándar de perfiles en color de Adobe solo está disponible si tiene instalado [Feature Pack 12445 de Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) o [Feature Pack 12445 de Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) . Todos los paquetes de funciones y Service Packs están disponibles a través de [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) y [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
 
 ### Instalación del paquete de funciones 12445 {#installing-feature-pack}
 
@@ -966,7 +971,7 @@ Debe instalar el paquete de funciones 12445 para utilizar las funciones de admin
 
 **Para instalar el paquete de funciones 12445**:
 
-1. Vaya a Uso compartido [de paquetes](https://www.adobeaemcloud.com/content/packageshare.html) y descargue cualquiera de las `cq-6.3.0-featurepack-12445`.
+1. Vaya a [Uso compartido](https://www.adobeaemcloud.com/content/packageshare.html) de paquetes o Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software y descargue cualquiera de las `cq-6.3.0-featurepack-12445`.
 
    Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso compartido de paquetes y paquetes en AEM.
 

@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Asignación de usuarios a los grupos para administrar los formularios AEM en OSG
 
 Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos en AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale el paquete [de complementos de formularios](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. En la tabla siguiente se enumeran las tareas que un usuario puede realizar para AEM Forms en OSGi según las asignaciones de grupo:
+Una vez que instale el paquete [de complementos de formularios](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. La tabla siguiente lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table> 
  <tbody>
@@ -33,21 +36,21 @@ Una vez que instale el paquete [de complementos de formularios](/help/forms/usin
    <td>form-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
    <td>
     <ul> 
-     <li>Creación, vista previa, publicación y envío de formularios adaptables</li> 
-     <li>Creación, vista previa y publicación de comunicaciones interactivas y fragmentos de documentos</li> 
+     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
+     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
      <li>Carga de recursos en una instancia de AEM</li> 
-     <li>Creación de temas</li> 
+     <li>Crear temáticas</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>forms-power-user</td> 
    <td>
     <ul> 
-     <li>Creación, vista previa, publicación y envío de formularios adaptables</li> 
-     <li>Creación, vista previa y publicación de comunicaciones interactivas y fragmentos de documentos</li> 
+     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
+     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
      <li>Creación de secuencias de comandos para formularios adaptables mediante el editor de código</li> 
      <li>Carga de recursos, incluidas secuencias de comandos</li> 
-     <li>Creación de temas</li> 
+     <li>Crear temáticas</li> 
      <li>Importar paquetes que contengan XDP</li> 
     </ul> </td> 
   </tr>
@@ -63,15 +66,7 @@ Una vez que instale el paquete [de complementos de formularios](/help/forms/usin
    <td>templates-author <sup><a href="#main-pars-text">[2]</a></sup></td> 
    <td>
     <ul> 
-     <li>Creación y vista previa de formularios adaptables o plantillas de comunicaciones interactivas</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Creación y vista previa de formularios adaptables o plantillas de comunicaciones interactivas</li> 
-     <li>Creación de secuencias de comandos para formularios adaptables o plantillas de comunicaciones interactivas mediante el editor de código</li> 
+     <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
     </ul> </td> 
   </tr>
   <tr>

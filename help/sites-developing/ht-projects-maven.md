@@ -10,7 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 0e3c64b43ceba3b8ebee134872123f5c5d03affa
+source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+workflow-type: tm+mt
+source-wordcount: '2247'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Este documento describe cómo configurar un proyecto de AEM basado en [Apache Ma
 
 Apache Maven es una herramienta de código abierto para administrar proyectos de software automatizando las compilaciones y proporcionando información de calidad sobre los proyectos. Es la herramienta de administración de compilación recomendada para los proyectos de AEM.
 
-La creación de un proyecto de AEM basado en Maven le ofrece varias ventajas:
+La creación de un proyecto de AEM basado en Maven le ofrece varias ofertas:
 
 * Un entorno de desarrollo basado en IDE
 * Uso de los tipos y artefactos de Maven proporcionados por Adobe
@@ -41,7 +44,7 @@ La creación de un proyecto de AEM basado en Maven le ofrece varias ventajas:
 
 En el pasado, los desarrolladores tenían que gestionar un número relativamente grande de dependencias individuales a distintas bibliotecas de AEM y, cuando se utilizaba cada nueva API, se debían añadir al proyecto una o varias dependencias individuales. En un proyecto, la introducción de UberJar tuvo como resultado la eliminación de 30 dependencias distintas del proyecto.
 
-### ¿Cómo se usa UberJar? {#how-to-i-use-the-uberjar}
+### ¿Cómo se usa UberJar? {#how-do-i-use-the-uberjar}
 
 Si utiliza Apache Maven como sistema de compilación (como sucede en la mayoría de los proyectos Java de AEM), deberá añadir uno o dos elementos al archivo *pom.xml* . El primero es un elemento de *dependencia* que agrega la dependencia real al proyecto:
 
@@ -55,7 +58,7 @@ Si utiliza Apache Maven como sistema de compilación (como sucede en la mayoría
 </dependency>
 ```
 
-Si su empresa ya está utilizando un Administrador de repositorios de Maven como Sontype Nexus, Apache Archiva o JFrog ArtiFactory, agregue la configuración adecuada a su proyecto para hacer referencia a este administrador de repositorios y agregar el repositorio de Maven de Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) a su administrador de repositorios.
+Si su compañía ya está utilizando un Administrador de repositorios de Maven como Sontype Nexus, Apache Archiva o JFrog ArtiFactory, agregue la configuración adecuada a su proyecto para hacer referencia a este administrador de repositorios y agregar el repositorio de Maven de Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) a su administrador de repositorios.
 
 Si no utiliza un administrador de repositorio, deberá agregar un elemento de *repositorio* al archivo *pom.xml* :
 
@@ -97,7 +100,7 @@ Con UberJar, puede compilar código de proyecto que depende de las API de AEM (y
 
 ### ¿Qué no puedo hacer con UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Dado que UberJar **solo** contiene API, no es ejecutable y no se puede utilizar para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o archivo de aplicaciones web (WAR).
+Dado que UberJar **solo** contiene API, no es ejecutable y no se puede utilizar para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
 
 ### Ha mencionado limitaciones en las pruebas unitarias. Por favor, explique más. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -324,7 +327,7 @@ Al igual que con SCR Generation, si el código amplía una clase base (abstracta
 
 ## Tareas comunes de desarrollo con Maven {#common-development-tasks-with-maven}
 
-### Cómo agregar rutas al módulo de contenido {#how-to-add-paths-to-the-content-module}
+### Cómo Añadir las rutas al módulo de contenido {#how-to-add-paths-to-the-content-module}
 
 El módulo de contenido contiene un archivo src/main/content/META-INF/vault/filter.xml que define los filtros del paquete AEM creado por Maven. El archivo creado por el arquetipo Maven tiene este aspecto:
 
@@ -346,7 +349,7 @@ Este archivo se utiliza de diferentes maneras:
 Según los requisitos de la aplicación, puede que desee agregar a estas rutas para incluir más contenido, como por ejemplo:
 
 * Opciones de configuración del lanzamiento
-* Modelos
+* Planes
 * Modelos de flujo de trabajo
 * Páginas de diseño
 * Contenido de muestra
@@ -365,7 +368,7 @@ Para agregar a las rutas, agregue más `<filter>` elementos:
 </workspaceFilter>
 ```
 
-#### Adición de rutas al paquete sin sincronizarlas {#adding-paths-to-the-package-without-syncing-them}
+#### Añadir rutas al paquete sin sincronizarlas {#adding-paths-to-the-package-without-syncing-them}
 
 Si tiene archivos que deben agregarse al paquete generado por el content-package-maven-plugin pero que no deben sincronizarse entre el sistema de archivos y el repositorio, puede utilizar `.vltignore` archivos. Estos archivos tienen la misma sintaxis que los archivos [.gitignore](https://www.kernel.org/pub/software/scm/git/docs/gitignore.html) .
 
@@ -377,7 +380,7 @@ Por ejemplo, el arquetipo utiliza un `.vltignore` archivo para evitar que el arc
 *.jar
 ```
 
-#### Sincronización de rutas sin agregarlas al paquete {#syncing-paths-without-adding-them-to-the-package}
+#### Sincronización de rutas sin Añadir en el paquete {#syncing-paths-without-adding-them-to-the-package}
 
 En algunos casos, es posible que desee mantener determinadas rutas sincronizadas entre el sistema de archivos y el repositorio, pero no incluirlas en el paquete que se ha creado para su instalación en AEM.
 
@@ -442,7 +445,7 @@ Se requieren dos cosas para habilitar esta configuración:
 1. agregar dependencias de biblioteca de etiquetas
 1. compilar los JSP como parte del proceso de compilación de Maven
 
-#### Adición de dependencias de la biblioteca de etiquetas {#adding-tag-library-dependencies}
+#### Añadir dependencias de la biblioteca de etiquetas {#adding-tag-library-dependencies}
 
 Debajo es necesario agregar dependencias al POM de los `content` módulos.
 
@@ -573,7 +576,7 @@ Cuando trabaje con Administración de configuración de origen (SCM), asegúrese
 
 #### Patrones para excluir de SCM {#patterns-to-exclude-from-scm}
 
-A continuación se muestra una lista típica de patrones que se incluirán desde SCM. Por ejemplo: si está utilizando git, puede agregarlos al `.gitignore` archivo del proyecto.
+A continuación se muestra una lista típica de patrones que se incluyen desde SCM. Por ejemplo: si está utilizando git, puede agregarlos al `.gitignore` archivo del proyecto.
 
 #### sample.gitignore {#sample-gitignore}
 
@@ -634,13 +637,13 @@ Como . `gitignore` no debe ir al repositorio tampoco, el . `vltignore` debe ampl
 .gitignore
 ```
 
-### Cómo trabajar con perfiles de implementación {#how-to-work-with-deployment-profiles}
+### Cómo trabajar con Perfiles de implementación {#how-to-work-with-deployment-profiles}
 
 Si el proceso de compilación es parte de una configuración de administración del ciclo de vida de desarrollo más grande, como un proceso de integración continuo, a menudo debe implementar en otros equipos que no sean sólo la instancia local del desarrollador.
 
-Para estos escenarios, puede agregar fácilmente nuevos perfiles [de](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven Build al POM del proyecto.
+Para estos escenarios, puede agregar fácilmente nuevos Perfiles [de](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven Build al POM del proyecto.
 
-El ejemplo siguiente agrega un perfil `integrationServer`, que redefine los nombres de host y los puertos para las instancias de autor y publicación. Puede implementar en estos servidores ejecutando maven desde la raíz del proyecto, como se muestra a continuación.
+El ejemplo siguiente agrega un perfil `integrationServer`, que redefine los nombres de host y los puertos para las instancias de creación y publicación. Puede implementar en estos servidores ejecutando maven desde la raíz del proyecto, como se muestra a continuación.
 
 ```shell
 # install on integration test author

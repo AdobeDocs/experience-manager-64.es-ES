@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+workflow-type: tm+mt
+source-wordcount: '3223'
+ht-degree: 8%
 
 ---
 
@@ -43,10 +46,10 @@ Este documento:
 
    * Para obtener más información, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md)
 
-* Describe las tareas de administración y desarrollo necesarias para crear plantillas editables
+* Describe las tareas de administrador y desarrollador necesarias para crear plantillas editables
 * Describe los fundamentos técnicos de las plantillas editables
 
-En este documento se asume que ya está familiarizado con la creación y edición de plantillas. Consulte el documento de creación [Creación de plantillas](/help/sites-authoring/templates.md)de página, en el que se detallan las funciones de las plantillas editables tal como se exponen al autor de la plantilla.
+Este documento supone que ya está familiarizado con la creación y edición de plantillas. Consulte el documento de creación [Creación de plantillas](/help/sites-authoring/templates.md)de página, que detalla las funciones de las plantillas editables tal y como están expuestas al autor de la plantilla.
 
 >[!NOTE]
 >
@@ -78,6 +81,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
       * Si va a crear una plantilla en una carpeta personalizada fuera del contenido de muestra de We.Retail, puede elegir Componentes básicos o utilizar Componentes [principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
    * Si desea que los autores de la página puedan añadir y quitar componentes, añada un sistema de párrafos a la plantilla.
    * Los componentes pueden volver a desbloquearse y bloquearse para que pueda definir el contenido inicial.
+
    Para obtener más información sobre cómo define la estructura un autor de plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)de página.
 
    Para obtener información técnica sobre la estructura, consulte [Estructura](/help/sites-developing/page-templates-editable.md#structure) en este documento.
@@ -88,6 +92,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
       * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
    * Esto se aplica a la plantilla (y a las páginas creadas con la plantilla).
+
    Para obtener más información sobre cómo define el autor de una plantilla las políticas, consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)de página.
 
    Para obtener información técnica sobre las políticas, consulte Políticas [de contenido](/help/sites-developing/page-templates-editable.md#content-policies) en este documento.
@@ -96,6 +101,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    * El contenido inicial define el contenido que aparecerá cuando se cree una página por primera vez en función de la plantilla.
    * A continuación, los autores de las páginas pueden editar el contenido inicial.
+
    Para obtener más información sobre cómo define la estructura un autor de plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-initial-content-author)de página.
 
    Para obtener detalles técnicos sobre el contenido inicial, consulte Contenido [](/help/sites-developing/page-templates-editable.md#initial-content) inicial en este documento.
@@ -104,6 +110,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    * Puede definir el diseño de la plantilla para una amplia gama de dispositivos.
    * El diseño interactivo para las plantillas funciona tal como lo hace para la creación de páginas.
+
    Para obtener más información sobre cómo define el diseño de plantilla un autor de plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#editing-a-template-layout-template-author)de página.
 
    Para obtener información técnica sobre el diseño de la plantilla, consulte [Diseño](/help/sites-developing/page-templates-editable.md#layout) en este documento.
@@ -112,6 +119,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    * Una plantilla puede habilitarse o deshabilitarse para que esté disponible o no esté disponible para los autores de la página.
    * Una plantilla puede estar disponible o no disponible para determinadas ramas de la página.
+
    Para obtener más información sobre cómo el autor de una plantilla habilita una plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)de página.
 
    Para obtener información técnica sobre cómo habilitar una plantilla, consulte [Activación y autorización de una plantilla para](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)uso en este documento
@@ -120,15 +128,16 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    * Al utilizar una plantilla para crear una página nueva, no existe ninguna diferencia visible ni ninguna indicación entre las plantillas estáticas y las editables.
    * Para el autor de la página, el proceso es transparente.
+
    Para obtener más información sobre cómo el autor de una página utiliza plantillas para crear una página, consulte [Creación y organización de páginas](/help/sites-authoring/managing-pages.md#templates).
 
-   Para obtener detalles técnicos sobre la creación de páginas con plantillas editables, consulte [Páginas](/help/sites-developing/page-templates-editable.md#resultant-content-pages) de contenido resultantes en este documento.
+   Para obtener información técnica sobre la creación de páginas con plantillas editables, consulte [Páginas](/help/sites-developing/page-templates-editable.md#resultant-content-pages) de contenido resultantes en este documento.
 
 >[!NOTE]
 >
->La biblioteca de cliente del editor asume la presencia del espacio de nombres en las páginas de contenido y, si no se encuentra, `cq.shared` `Uncaught TypeError: Cannot read property 'shared' of undefined` se producirá el error de JavaScript.
+>La biblioteca de cliente del editor asume la presencia de la `cq.shared` Área de nombres en las páginas de contenido y, si no se encuentra, se `Uncaught TypeError: Cannot read property 'shared' of undefined` producirá el error de JavaScript.
 >
->Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir el `cq.shared` espacio de nombres.
+>Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la `cq.shared` Área de nombres.
 >
 >Consulte [Uso de bibliotecas](/help/sites-developing/clientlibs.md) del lado del cliente para obtener más información.
 
@@ -147,7 +156,7 @@ Para organizar las plantillas, puede utilizar las siguientes carpetas:
 
 >[!NOTE]
 >
->Aunque puede anidar las carpetas, cuando el usuario las ve en la consola **Plantillas** , se presentan como una estructura plana.
+>Aunque puede anidar las carpetas, cuando el usuario las vista en la consola **Plantillas** , se presentan como una estructura plana.
 
 En una instancia estándar de AEM, la carpeta **Global** ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una nueva carpeta (recomendado).
 
@@ -236,7 +245,7 @@ El `template-authors` grupo es el grupo que se utiliza para administrar el acces
 >
 >El `template-authors` grupo *solo* está disponible para los usuarios que deben poder crear nuevas plantillas.
 >
->La edición de plantillas es muy potente y, si no se realiza correctamente, se pueden romper las plantillas existentes. Por lo tanto, esta función debe centrarse y incluir únicamente a usuarios cualificados.
+>La edición de plantillas es muy potente y, si no se realiza correctamente, las plantillas existentes se pueden romper. Por lo tanto, esta función debe centrarse y incluir únicamente a usuarios cualificados.
 
 En la tabla siguiente se detallan los permisos necesarios para editar plantillas.
 
@@ -245,7 +254,7 @@ En la tabla siguiente se detallan los permisos necesarios para editar plantillas
   <tr> 
    <th>Ruta</th> 
    <th>Función/Grupo</th> 
-   <th>Permisos<br /> </th> 
+   <th>Permisos <br /> </th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -305,7 +314,7 @@ Las plantillas ya no deben almacenarse en `/conf/global`, pero para algunas inst
   <tr> 
    <th>Ruta</th> 
    <th>Función/Grupo</th> 
-   <th>Permisos<br /> </th> 
+   <th>Permisos <br /> </th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -395,7 +404,7 @@ Las definiciones de los tipos de plantillas personalizadas deben almacenarse en 
 
 >[!CAUTION]
 >
->Los tipos de plantilla deben respetar la estructura de carpetas correcta (por ejemplo: `/settings/wcm/...`); de lo contrario, no se encontrarán los tipos de plantilla.
+>Los tipos de plantilla deben respetar la estructura de carpetas correcta (por ejemplo: `/settings/wcm/...`), de lo contrario no se encontrarán los tipos de plantilla.
 
 ### Tipo de plantilla y grupos de dispositivos móviles {#template-type-and-mobile-device-groups}
 
@@ -501,7 +510,7 @@ Define la estructura de la página resultante:
 
 * Se combina con el contenido inicial ( `/initial`) al crear una página nueva.
 * Los cambios realizados en la estructura se reflejarán en cualquier página creada con la plantilla.
-* El nodo `root` ( `structure/jcr:content/root`) define la lista de componentes que estarán disponibles en la página resultante.
+* El nodo `root` ( `structure/jcr:content/root`) define la lista de los componentes que estarán disponibles en la página resultante.
 
    * Los componentes definidos en la estructura de plantilla no se pueden mover ni eliminar de ninguna página resultante.
    * Una vez desbloqueado el componente, la `editable` propiedad se establece en `true`.
@@ -531,8 +540,7 @@ Las políticas de contenido (o diseño) definen las propiedades de diseño de un
 
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
-   
-Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
+   Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
 
 * La propiedad `cq:policy`, en los nodos explícitos del componente debajo de `root`, proporciona vínculos a las políticas de los componentes individuales.
 
@@ -546,7 +554,7 @@ Proporciona una referencia relativa a la directiva de contenido para el sistema 
 
 >[!NOTE]
 >
->Las páginas creadas a partir de plantillas editables no ofrecen un modo de diseño en el editor de páginas.
+>Las páginas creadas a partir de plantillas editables no oferta un modo de diseño en el editor de páginas.
 >
 >El `policies` árbol de una plantilla editable tiene la misma jerarquía que la configuración del modo de diseño de una plantilla estática en:
 >
@@ -571,7 +579,7 @@ Las políticas de página permiten definir la directiva [de](#content-policies) 
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * Defina la propiedad:
 
-         * Nombre:status
+         * Nombre: status
          * Tipo: Cadena
          * Value: `enabled`
 
@@ -582,8 +590,7 @@ Las políticas de página permiten definir la directiva [de](#content-policies) 
 
       `cq:allowedTemplates`
 
-      
-En el `jcr:content` nodo de la rama requerida.
+      En el `jcr:content` nodo de la rama requerida.
    Por ejemplo, con un valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*;`
@@ -598,13 +605,11 @@ Páginas creadas a partir de plantillas editables:
 
    * `cq:template`
 
-      
-Proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
+      Proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
 
    * `cq:templateType`
 
-      
-Proporciona una referencia al tipo de plantilla.
+      Proporciona una referencia al tipo de plantilla.
 
 ![chlimage_1-250](assets/chlimage_1-250.png)
 
@@ -624,7 +629,7 @@ El diagrama anterior muestra cómo las plantillas, el contenido y los componente
 
 * Ver - `/apps/<my-site>/components`
 
-   Tanto en el entorno de creación como en el de publicación, el contenido lo representan [los componentes](/help/sites-developing/components.md).
+   Tanto en los entornos de autor como de publicación, [los componentes](/help/sites-developing/components.md)representan el contenido.
 
 Al procesar una página:
 

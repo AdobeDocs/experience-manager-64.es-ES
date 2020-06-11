@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | Versión | 6.4.8.0 |
 | Tipo | Versión de Service Pack |
 | Fecha | 05 de marzo de 2020 |
-| Descargar URL | AEM 6.4.8.0 en [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), distribución [de software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Descargar URL | AEM 6.4.8.0 en [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Novedades de AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -458,7 +458,7 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 
 * Se ha Añadido la compatibilidad con el seguimiento de estados de IU dinámicos en el seguimiento de eventos en la API de base. NPR-30742, GRANITE-26322: Revisión para GRANITE-26036
 
-**Formularios**
+**Forms**
 
 >[!NOTE]
 >
@@ -678,7 +678,7 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 
 * Se ha reflejado el proceso de ejecución de scripts en sitios múltiples al utilizar un selector no válido. Revisión para CQ-4270397
 
-**Formularios**
+**Forms**
 
 Los aspectos destacados de los formularios de AEM 6.4.5.0 son:
 
@@ -934,7 +934,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * Cuando se abre el cuadro de diálogo de elemento de trabajo completo en la notificación de flujo de trabajo que tiene un campo Etiqueta, al hacer clic en la marca cruzada se agrega una propiedad Etiqueta a la misma. NPR-28304: revisión para CQ-4261321
 * El botón Alternar selección de usuario del cuadro de diálogo Reasignar Tarea no funciona. NPR-28963: revisión para CQ-4264206
 
-**Formularios**
+**Forms**
 
 Los aspectos destacados de los formularios de AEM 6.4.4.0 son:
 
@@ -1199,7 +1199,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 
 * La barra de herramientas Editar se desactiva para los componentes en la primera edición. Revisión para CQ-4253270
 
-**Formularios**
+**Forms**
 
 Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
@@ -1548,7 +1548,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * En la instalación de paquetes de contenido, las ACL se agrupan por entidad de seguridad, por lo que se rompe el modelo de permisos. NPR-24583: revisión para Granite-21591
 * Actualice Jetty a 9.4.11 para corregir vulnerabilidades. NPR-25030: revisión para Granite-22120
 
-**Formularios**
+**Forms**
 
 Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
@@ -1877,7 +1877,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Al obtener una vista previa de un vídeo en la vista de una tarjeta, el botón de reproducción no cambia a pausa. Revisión para CQ-4238592
 * Al realizar una actualización de inclusión, la configuración de YouTube no se mueve ni copia de su ubicación antigua a la nueva ubicación. Revisión para CQ-4238590
 * DropDos Perfiles de procesamiento de vídeo AVS de OOTB se enumeran en Propiedades de carpeta y solo uno contiene codificaciones definidas. Revisión para CQ-4238096
-* (DMS7) Recorte inteligente: Vista de detalles: El botón de URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
+* (DMS7) Recorte inteligente: Vista de detalles: El botón URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
 * La página de lista de ajustes preestablecidos de visor permanece en blanco incluso después de ejecutar los comandos curl. Revisión para CQ-4243246
 * Se ha deshabilitado la ejecución manual de pasos de limpieza y el uso de clases de coral privadas. Revisión para CQ-4239729
 * La página Detalles del informe de video no muestra recursos de video. Revisión para CQ-4246208
@@ -1905,7 +1905,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 
 * Se han introducido etiquetas inteligentes mejoradas. NPR-21951
 
-**Formularios**
+**Forms**
 
 Las correcciones de AEM Forms se entregan mediante paquetes de complementos y otros instaladores de parches que se proporcionan con la versión. Para obtener más información, consulte Versiones de AEM Forms.
 

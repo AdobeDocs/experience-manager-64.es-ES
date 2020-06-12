@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 4%
@@ -95,7 +95,7 @@ Para configurar los servicios de Dynamic Media Cloud:
    * **[!UICONTROL Compañía]** : el nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para distintas submarcas, divisiones o entornos de ensayo y producción.
    * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
    * **[!UICONTROL Publicación de recursos]** : la opción **[!UICONTROL Inmediatamente]** significa que, cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos. La opción **[!UICONTROL Tras la Activación]** significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
-   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
+   * **[!UICONTROL Servidor]** de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM puede acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).
 
       A menos que tenga un acuerdo especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda que utilice la configuración predeterminada.
    >[!NOTE]
@@ -107,7 +107,7 @@ Para configurar los servicios de Dynamic Media Cloud:
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Toque **[!UICONTROL Guardar]**.
-1. Para realizar una previsualización segura del contenido de Dynamic Media antes de publicarlo, deberá &quot;incluir en la lista blanca&quot; la instancia de creación de AEM para conectarse a Dynamic Media:
+1. Para realizar una previsualización segura del contenido de Dynamic Media antes de que se publique, deberá &quot;permitir la inclusión en la lista&quot; de la instancia de creación de AEM para conectarse a Dynamic Media:
 
    * Inicie sesión en su cuenta de Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe proporcionó sus credenciales e inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación situada cerca de la parte superior derecha de la página, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor]** de imágenes.

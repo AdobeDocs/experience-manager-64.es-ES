@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y
 
 ## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
 
-El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
@@ -108,7 +111,7 @@ Siga estos pasos para localizar las imágenes:
 
 ## Localización del selector de fechas {#localizing-date-picker}
 
-Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)de espacio de trabajo de AEM Forms.
+Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espacio de trabajo de AEM Forms.
 
 1. Descargue y extraiga el paquete [de IU de](https://jqueryui.com/download/all/)jQuery, vaya a *&lt;paquete de IU de jquery extraído>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie el archivo jquery.ui.datepicker-nw.js para el código de configuración regional ahora en las aplicaciones/ws/js/libs/jqueryui y realice cambios específicos de configuración regional en el archivo.
@@ -123,6 +126,7 @@ Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API.
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    El código de muestra siguiente muestra cómo agregar la entrada de jquery.ui.datepicker-nw.js:
 
    ```
@@ -164,6 +168,7 @@ Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API.
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    Cambie el siguiente código para agregar la nueva configuración regional:
 
    ```

@@ -10,28 +10,35 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
 
 # Inicio rápido de la API de Java del servicio de credenciales (SOAP) {#credential-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) está disponible para el servicio de credenciales.
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio de credenciales.
 
 [Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Los inicios rápidos ubicados en Programación con formularios AEM se basan en FormsServer que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>Los inicios rápidos ubicados en Programación con formularios AEM se basan en FormsServer que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
-***Nota **: No puede realizar operaciones de servicio de credenciales mediante servicios Web.*
+>[!NOTE]
+>
+>No puede realizar operaciones de servicio de credenciales mediante servicios Web.
 
 ## Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del administrador de confianza).
+El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)del Administrador de confianza).
 
 ```as3
  /* 

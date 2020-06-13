@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ La muestra, analizada en este documento, es una implementación de referencia de
 
 >[!NOTE]
 >
->* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos apropiadamente por su sistema de base de datos.
+>* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos adecuadamente por su sistema de bases de datos.
 >* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 > * El paquete de ejemplo solo funciona con acciones de envío de formularios adaptables.
 
@@ -74,10 +77,13 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
    Para proporcionar un nombre diferente para la tabla de metadatos:
 
    * En Configuración de consola web, busque y haga clic en Implementación de muestra del servicio de metadatos de Forms Portal. Puede cambiar los valores del origen de datos, los metadatos o el nombre de tabla de metadatos adicional.
+
    Para proporcionar un nombre diferente para la tabla de datos:
 
    * En Configuración de consola web, busque y haga clic en Forms Portal Data Service Sample Implementation (Implementación de muestra de Forms Portal Data Service). Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
-   **Nota**: Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
+   >[!NOTE]
+   >
+   >Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.
 
 1. Deje otras configuraciones tal cual y haga clic en **[!UICONTROL Guardar]**.
 
@@ -157,6 +163,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 >
 > * El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de haberla aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
 > * Elija las instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de creación y publicación.
+
 >
 
 
@@ -317,7 +324,7 @@ El siguiente zip contiene `FormsPortalSampleDataServiceImpl` y `FormsPortalSampl
 
 [Obtener archivo](assets/sample_package.zip)
 
-## Verificar la longitud del nombre del archivo {#verify-length-of-the-file-name}
+## Verificar la longitud del nombre del archivo  {#verify-length-of-the-file-name}
 
 La implementación de la base de datos de Forms Portal utiliza una tabla de metadatos adicional. La tabla tiene una clave principal compuesta basada en las columnas Clave e ID de la tabla. MySQL permite claves primarias de hasta 255 caracteres. Puede utilizar la siguiente secuencia de comandos de validación del lado del cliente para comprobar la longitud del nombre de archivo adjunto al widget de archivo. La validación se ejecuta cuando se adjunta un archivo. La secuencia de comandos proporcionada en el siguiente procedimiento muestra un mensaje cuando el nombre del archivo es mayor que 150 (incluida la extensión). Puede modificar la secuencia de comandos para comprobar si hay un número diferente de caracteres.
 

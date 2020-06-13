@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ Compruebe los siguientes parámetros:
 
 ## Problema: No se puede procesar un formulario (se muestra un mensaje de error) {#problem-unable-to-render-a-form-an-error-message-is-displayed}
 
-1. Asegúrese de que los parámetros especificados son correctos. Para obtener información detallada sobre los parámetros, consulte Parámetros [de procesamiento](/help/forms/using/debug.md#main-pars-table).
+1. Asegúrese de que los parámetros especificados son correctos. Para obtener información detallada sobre los parámetros, consulte Parámetros [de procesamiento](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Inicie sesión en el Administrador de paquetes CRX (en https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) y compruebe si los siguientes paquetes están correctamente instalados:
 
    * adobe-lc-forms-content-pkg-&lt;versión>.zip

@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de Application Manager Service JavaAPI (SOAP)
-seo-title: Inicio rápido de Application Manager Service JavaAPI (SOAP)
+title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
+seo-title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
 description: nulo
 seo-description: nulo
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
 
 # Inicio rápido de JavaAPI (SOAP) del servicio Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-El inicio rápido de la API de Java (SOAP) está disponible para el servicio Application Manager.
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Application Manager.
 
 [Inicio rápido: Implementación de aplicaciones mediante la API de Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -29,7 +32,9 @@ El inicio rápido de la API de Java (SOAP) está disponible para el servicio App
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
-* ***Nota **: El inicio rápido de la API de Java (SOAP) ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>El Inicio rápido de la API de Java (SOAP) ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 ## Inicio rápido (modo SOAP): Implementación de aplicaciones mediante la API de Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

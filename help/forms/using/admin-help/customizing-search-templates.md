@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 0%
 
 ---
 
@@ -42,36 +45,39 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
 1. (Opcional) En el cuadro Instrucciones del usuario, proporcione todas las instrucciones que puedan ayudar a utilizar la plantilla. Estas instrucciones se muestran en Workspace cuando un usuario selecciona la plantilla de búsqueda.
 1. Haga clic en la ficha Criterios. Aquí es donde define uno o más criterios de búsqueda. Para agregar un criterio de búsqueda:
 
-   * En la parte superior de la ficha Criterios, seleccione un elemento de proceso o un elemento de tarea.
+   * En la parte superior de la ficha Criterios, seleccione un elemento de proceso o un elemento de Tarea.
 
-      **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrán seleccionar todas las variables de proceso definidas en ese proceso.*
+      **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
 
-      **Sugerencia**: *Si selecciona el elemento Tarea visible, los usuarios podrán eliminar las tareas completadas de los resultados de búsqueda.*
+      **Sugerencia**: *Si selecciona el elemento Tarea visible, los usuarios podrán eliminar tareas completadas de los resultados de búsqueda.*
 
       Los campos de criterios de búsqueda del elemento seleccionado aparecen en la parte inferior de la ficha Criterios.
 
-   * Para cada elemento de proceso, elemento de tarea y variable de proceso que seleccione, rellene los campos de búsqueda correspondientes en la parte inferior de la ficha Criterios:
+   * Para cada elemento de proceso, elemento de Tarea y variable de proceso que seleccione, rellene los campos de búsqueda correspondientes en la parte inferior de la ficha Criterios:
 
       * Seleccione un operador relacional (por ejemplo, &quot;ser igual a&quot;) en la lista proporcionada y especifique el valor del operando en el cuadro que hay junto a él.
       * (Opcional) Para permitir que los usuarios cambien el valor del operando en Workspace, seleccione Permitir al usuario cambiar el operando.
       * (Opcional) Para permitir que los usuarios cambien el operador relacional, seleccione Permitir que el usuario seleccione otro operador relacional. En la lista que aparece, seleccione los operadores que estarán disponibles para el usuario.
+
       **Sugerencia**: *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se está ejecutando en el servidor de formularios. Después de seleccionar un proceso, todas las variables de proceso definidas en ese proceso se pueden seleccionar en Variables de proceso en la sección superior de la ficha Criterios.*
 
-      **Sugerencia**: *Puede eliminar un elemento de la plantilla de búsqueda haciendo clic en el icono Eliminar situado junto a los criterios de búsqueda del elemento.*
+      **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar situado junto a los criterios de búsqueda del elemento.*
 
 
 1. (Opcional) Para que el encabezado de cada columna se muestre en los resultados de la búsqueda, haga clic en la ficha Diseño y lleve a cabo los siguientes pasos:
 
    * Seleccione un elemento de proceso o tarea y haga clic en la flecha derecha para moverlo a la lista Columnas a informe.
-   * En la lista Columnas a informar, seleccione el elemento de proceso o tarea y haga clic en las flechas arriba o abajo para moverlo a su lugar en el orden de las columnas. Los encabezados de columna de los resultados de búsqueda aparecerán en el orden en que aparecen aquí.
+   * En la lista Columnas a informe, seleccione el elemento de proceso o tarea y haga clic en las flechas arriba o abajo para moverlo a su lugar en el orden de las columnas. Los encabezados de columna de los resultados de búsqueda aparecerán en el orden en que aparecen aquí.
    * (Opcional) Para cambiar el nombre del elemento para el encabezado de la columna, seleccione el elemento en la lista Columnas a informar y proporcione el nuevo nombre.
 
-      **Nota**: *El diseño especificado en la plantilla de búsqueda anula las preferencias del usuario especificadas para los encabezados de columna en Workspace.*
+   >[!NOTE]
+   >
+   >El diseño especificado en la plantilla de búsqueda anula las preferencias del usuario especificadas para los encabezados de columna en Workspace.
 
 1. (Opcional) Para que cada columna se ordene en los resultados de la búsqueda, haga clic en la ficha Ordenar y lleve a cabo los siguientes pasos:
 
    * Seleccione un elemento de proceso o tarea y haga clic en la flecha derecha para moverlo a la lista Orden.
-   * En la lista Orden, seleccione el elemento de proceso o tarea y haga clic en la flecha arriba o abajo para moverlo a su lugar en el orden de clasificación. Las columnas de los resultados de la búsqueda se ordenarán en función del orden en que aparecen aquí.
+   * En la lista Orden, seleccione el elemento de proceso o tarea y haga clic en las flechas arriba o abajo para moverlo a su lugar en el orden de clasificación. Las columnas de los resultados de la búsqueda se ordenarán en función del orden en que aparecen aquí.
    * (Opcional) Para ordenar una columna en orden descendente, active la casilla de verificación situada junto al nombre del elemento. Si la casilla de verificación no está seleccionada, la columna se ordena en orden ascendente.
 
 1. Haga clic en la ficha Guardar.

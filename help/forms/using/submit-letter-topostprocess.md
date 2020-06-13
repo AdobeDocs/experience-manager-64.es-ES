@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## Postprocesamiento {#post-processing}
 
-Los agentes pueden asociar y ejecutar flujos de trabajo posteriores al procesamiento en cartas y comunicaciones interactivas. El proceso posterior que se va a ejecutar se puede seleccionar en la vista Propiedades de la plantilla Carta. Puede configurar los procesos de publicación para enviar por correo electrónico, imprimir, enviar por fax o archivar sus cartas finales.
+Los agentes pueden asociar y ejecutar flujos de trabajo de postprocesamiento en cartas y comunicaciones interactivas. El proceso posterior que se va a ejecutar se puede seleccionar en la vista Propiedades de la plantilla Carta. Puede configurar los procesos de publicación para enviar por correo electrónico, imprimir, enviar por fax o archivar sus cartas finales.
 
 ![Post-procesamiento](assets/ppoverview.png)
 
 Para asociar procesos de publicación con cartas o comunicaciones interactivas, primero debe configurar los procesos de publicación. Se pueden ejecutar dos tipos de flujos de trabajo en las cartas enviadas:
 
-1. **** Flujo de trabajo de formularios: Estos son los flujos de trabajo de administración de procesos de AEM Forms en JEE. Instrucciones para configurar el flujo de trabajo de [Forms](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Flujo de trabajo de formularios:** Estos son los flujos de trabajo de administración de procesos de AEM Forms en JEE. Instrucciones para configurar el flujo de trabajo de [Forms](#formsworkflow).
 
-1. **** Flujo de trabajo de AEM: Los flujos de trabajo de AEM también se pueden utilizar como procesos de publicación para las cartas enviadas. Instrucciones para configurar el flujo de trabajo de [AEM](/help/forms/using/aem-forms-workflow.md).
+1. **Flujo de trabajo de AEM:** Los flujos de trabajo de AEM también se pueden utilizar como procesos posteriores para las cartas enviadas. Instrucciones para configurar el flujo de trabajo de [AEM](/help/forms/using/aem-forms-workflow.md).
 
 ## Flujo de trabajo de formularios {#formsworkflow}
 
@@ -52,26 +55,26 @@ Para asociar procesos de publicación con cartas o comunicaciones interactivas, 
 
    Por ejemplo, si la lista desplegable de la página Propiedades de la carta muestra el nombre del proceso como Flujo de trabajo de formularios -> VálidoCCPostProcess/GuardarXML, agregue un Nombre de servicio como `ValidCCPostProcess/SaveXML`.
 
-1. Para utilizar AEM Forms en flujos de trabajo JEE para el posprocesamiento, configure los parámetros y resultados necesarios. A continuación se indican los valores predeterminados de los parámetros.
+1. Para utilizar AEM Forms en flujos de trabajo JEE para el procesamiento posterior, configure los parámetros y resultados necesarios. A continuación se indican los valores predeterminados de los parámetros.
 
    Vaya a la página Configuraciones de la consola web de Adobe Experience Manager > Configuraciones **[!UICONTROL de administración de]** correspondencia y configure los parámetros siguientes:
 
-   1. **** inPDFDoc (parámetro de documento PDF): Documento PDF como entrada. Esta entrada contiene la letra procesada como entrada. Los nombres de parámetro indicados son configurables. Se pueden configurar desde las configuraciones de Correspondence Management desde la configuración.
-   1. **** inXMLDoc (parámetro de datos XML): Un documento XML como entrada. Esta entrada contiene datos introducidos por el usuario en forma de XML.
-   1. **** inXDPDoc (parámetro de documento XDP): Un documento XML como entrada. Esta entrada contiene el diseño subyacente (XDP).
-   1. **** inAttachmentDocs (parámetro Documentos adjuntos): Parámetro de entrada de lista. Esta entrada contiene todos los datos adjuntos como entrada.
-   1. **** redirectURL (salida de URL de redireccionamiento): Tipo de salida que indica la dirección URL a la que se redirige.
+   1. **inPDFDoc (parámetro de documento PDF):** Un documento PDF como entrada. Esta entrada contiene la letra procesada como entrada. Los nombres de parámetro indicados son configurables. Se pueden configurar desde las configuraciones de Correspondence Management desde la configuración.
+   1. **inXMLDoc (parámetro de datos XML):** Un documento XML como entrada. Esta entrada contiene datos introducidos por el usuario en forma de XML.
+   1. **inXDPDoc (parámetro de documento XDP):** Un documento XML como entrada. Esta entrada contiene el diseño subyacente (XDP).
+   1. **inAttachmentDocs (parámetro de Documentos de datos adjuntos):** Parámetro de entrada de lista. Esta entrada contiene todos los datos adjuntos como entrada.
+   1. **redirectURL (salida de URL de redireccionamiento):** Tipo de salida que indica la dirección URL a la que se redirige.
    El flujo de trabajo de los formularios debe tener parámetros de documento PDF o de datos XML como entrada con el mismo nombre que se especifica en Configuraciones **[!UICONTROL de administración de]** correspondencia. Esto es necesario para que el proceso aparezca en la lista desplegable Post Process.
 
 ## Configuración de la instancia de Publish {#settings-on-the-publish-instance}
 
 1. iniciar sesión en `http://localhost:publishport/aem/forms`.
-1. Vaya a **[!UICONTROL Letras]** para ver la carta publicada que está disponible en la instancia de publicación.
+1. Vaya a **[!UICONTROL Letras]** para vista de la carta publicada que está disponible en la instancia de publicación.
 1. Configure la configuración de AEM DS. Consulte [Configuración de AEM DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
->Al utilizar los flujos de trabajo de Forms o AEM, antes de realizar ningún envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
+>Cuando se utilizan flujos de trabajo de Forms o AEM, antes de realizar un envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
 
 ## Recuperación de instancias de carta {#letter-instances-retrieval}
 
@@ -95,7 +98,7 @@ Las instancias de letras guardadas se pueden manipular aún más, como la recupe
    <td>Se eliminó la instancia de letra especificada </td> 
   </tr> 
   <tr> 
-   <td>List getAllLetterInstances(Query) genera ICCException; </td> 
+   <td>Lista getAllLetterInstances(Consulta) genera ICCException; </td> 
    <td>getAllLetterInstances </td> 
    <td>Esta API obtiene instancias de letras basadas en el parámetro de consulta de entrada. Para recuperar todas las instancias de letras, el parámetro de consulta se puede pasar como nulo.<br /> </td> 
   </tr> 
@@ -111,13 +114,13 @@ Las instancias de letras guardadas se pueden manipular aún más, como la recupe
 
 En la interfaz de usuario de CCR, complete los siguientes pasos para asociar un proceso de publicación con una carta:
 
-1. Pase el ratón sobre una letra y toque **Ver propiedades**.
+1. Pase el ratón sobre una letra y toque Propiedades de **Vista**.
 1. Seleccione **Editar**.
 1. En la lista desplegable Propiedades básicas, seleccione el proceso de publicación que desea asociar con la letra. Tanto los procesos de publicación relacionados con AEM como los relacionados con Forms se muestran en la lista desplegable.
 1. Toque **Guardar**.
 1. Después de configurar la carta con el proceso de publicación, publique la carta y, opcionalmente, en la instancia de publicación, especifique la URL de procesamiento en el servicio Configuración de AEM DS. Esto garantiza que el proceso posterior se ejecute en la instancia de procesamiento.
 
-## Volver a cargar una instancia de borrador de carta {#reloaddraft}
+## Volver a cargar una instancia de borrador de carta  {#reloaddraft}
 
 Se puede volver a cargar una instancia de borrador en la interfaz de usuario mediante la siguiente URL:
 

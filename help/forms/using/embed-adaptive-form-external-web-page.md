@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 0%
 
 ---
 
@@ -73,9 +76,9 @@ Puede incrustar un formulario adaptable insertando algunas líneas de JavaScript
     },
     async: false,
     success: function (data) {
-    // Si jquery está cargado, establezca el html interno del contenedor
-    // Si jquery no está cargado, use las API proporcionadas por el documento para establecer el HTML interno pero estas API no evaluarían la etiqueta de script en HTML según la especificación
-    HTML5// Por ejemplo: document.getElementById().
+    // Si jquery está cargada, establezca el HTML interno del contenedor
+    // Si jquery no está cargada, utilice las API proporcionadas por documento para establecer el HTML interno pero estas API no evaluarían la etiqueta de script en HTML según la especificación
+    HTML5// Por ejemplo: documento.getElementById().
     innerHTMLif(window.$ &amp;&amp; options.CSS_Selector){
     // La API HTML de jquery extrae las etiquetas, actualiza el DOM y evalúa el código incrustado en la etiqueta de script.
     $(options.CSS_Selector).html(data);
@@ -102,7 +105,7 @@ Puede incrustar un formulario adaptable insertando algunas líneas de JavaScript
    * Cambie el valor de la `options.path` variable por la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se está ejecutando en una ruta de contexto, asegúrese de que la URL incluye la ruta de contexto. Por ejemplo, el código anterior y el código adaptable de residen en el mismo servidor de formularios aem, de modo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
    * Reemplazar `options.dataRef` por atributos para pasar por la dirección URL. Puede utilizar la variable dataref para [rellenar previamente un formulario](/help/forms/using/prepopulate-adaptive-form-fields.md)adaptable.
    * Reemplazar `options.themePath` por la ruta de un tema distinto del configurado en el formulario adaptable. También puede especificar la ruta del tema mediante el atributo de solicitud.
-   * `CSS_Selector` es el selector CSS del contenedor de formularios en el que está incrustado el formulario adaptable. Por ejemplo, la clase css .customafsection es el selector de CSS del ejemplo anterior.
+   * `CSS_Selector` es el selector de CSS del contenedor de formulario en el que se incrusta el formulario adaptable. Por ejemplo, la clase css .customafsection es el selector de CSS del ejemplo anterior.
 
 El formulario adaptable se incrusta en la página web. Observe lo siguiente en el formulario adaptable incrustado:
 
@@ -113,7 +116,7 @@ El formulario adaptable se incrusta en la página web. Observe lo siguiente en e
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionan en el formulario incrustado.
 * Si Adobe Analytics está configurado en el formulario original, los datos de análisis se capturan en el servidor de Adobe Analytics. Sin embargo, no está disponible en el informe Análisis de formularios.
 
-## Configurar proxy inverso {#reveseproxy}
+## Configurar proxy inverso  {#reveseproxy}
 
 La página web externa que incrusta el formulario adaptable envía solicitudes al servidor AEM, que normalmente se encuentra detrás del servidor de seguridad en una red privada. Para asegurarse de que las solicitudes se dirigen de forma segura al servidor AEM, se recomienda configurar un servidor proxy inverso.
 
@@ -158,14 +161,14 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 Al incrustar un formulario adaptable en una página web, tenga en cuenta las siguientes prácticas recomendadas:
 
-* Asegúrese de que las reglas de estilo definidas en la CSS de la página web no entran en conflicto con la CSS del objeto de formulario. Para evitar conflictos, puede reutilizar la CSS de la página web en el tema del formulario adaptable mediante la biblioteca del cliente de AEM. Para obtener información sobre el uso de la biblioteca de cliente en temas de formularios adaptables, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
-* Hacer que el contenedor de formularios de la página web utilice todo el ancho de la ventana. Garantiza que las reglas CSS configuradas para dispositivos móviles funcionen sin ningún cambio. Si el contenedor de formularios no tiene el ancho completo de la ventana, debe escribir CSS personalizada para que el formulario se adapte a distintos dispositivos móviles.
-* Utilice ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API para obtener la representación XML o JSON de los datos de formulario en el cliente.
-* Utilice ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API para descargar el formulario adaptable desde HTML DOM.
-* Configure el encabezado access-control-source al enviar la respuesta desde el servidor AEM.
+* Asegúrese de que las reglas de estilo definidas en la CSS de la página web no entran en conflicto con la CSS del objeto de formulario. Para evitar conflictos, puede reutilizar la CSS de la página web en el tema del formulario adaptable mediante la biblioteca del cliente de AEM. Para obtener información sobre el uso de la biblioteca de cliente en temáticas de formularios adaptables, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
+* Haga que el contenedor de formulario de la página web utilice el ancho completo de la ventana. Garantiza que las reglas CSS configuradas para dispositivos móviles funcionen sin ningún cambio. Si el contenedor de formulario no tiene el ancho completo de la ventana, debe escribir CSS personalizada para que el formulario se adapte a distintos dispositivos móviles.
+* Utilice la API [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para obtener la representación XML o JSON de los datos de formulario en el cliente.
+* Utilice la API [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para descargar el formulario adaptable desde HTML DOM.
+* Configure el encabezado access-control-origen al enviar la respuesta desde el servidor AEM.
 
-## Permitir que AEM Forms muestre formularios adaptables a un sitio de varios dominios {#cross-domain-sites}
+## Permitir que AEM Forms muestre formularios adaptables a un sitio de varios dominios  {#cross-domain-sites}
 
 1. En la instancia de creación de AEM, vaya a AEM Web Console Configuration Manager en `http://[server]:[port]/system/console/configMgr`.
-1. Localice y abra la configuración del Filtro de referente **de Sling de** Apache.
+1. Busque y abra la configuración del filtro de Remitente del reenvío **** Apache Sling.
 1. En el campo Hosts **** permitidos, especifique el dominio en el que se encuentra la página web. Permite que el host realice solicitudes POST al servidor AEM. También puede utilizar la expresión regular para especificar una serie de dominios de aplicación externos.

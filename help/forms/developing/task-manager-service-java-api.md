@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
-seo-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
+title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
+seo-title: Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)
 description: nulo
 seo-description: nulo
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
 
-# Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del servicio Tarea Manager (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
-Los siguientes inicios rápidos están disponibles para el servicio Administrador de tareas.
+Los siguientes Inicios rápidos están disponibles para el servicio Administrador de Tareas.
 
 [Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
@@ -31,13 +34,17 @@ Los siguientes inicios rápidos están disponibles para el servicio Administrado
 
 [Inicio rápido (modo SOAP): Recuperación de archivos adjuntos de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Recuperación de información de tareas mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no se puede invocar el`taskList`método, que es una llamada de método necesaria para realizar esta tarea.*
+>[!NOTE]
+>
+>No puede buscar tareas asignadas a usuarios mediante la API de servicio Web. El motivo es que no se puede invocar el `taskList` método, que es una llamada de método necesaria para realizar esta tarea.
 
-***Nota **: Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 ## Inicio rápido (modo SOAP): Asignación de tareas mediante la API de Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -174,7 +181,7 @@ El siguiente ejemplo de código Java asigna una tarea a un usuario llamado Tony 
 
 ## Inicio rápido (modo SOAP): Bloqueo de tareas mediante la API de Java {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
-El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor de identificador de tarea de 2.
+El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor del identificador de tarea de 2.
 
 ```as3
  /* 
@@ -707,9 +714,9 @@ El siguiente ejemplo de código Java recupera archivos adjuntos. Cada archivo ad
  
 ```
 
-## Inicio rápido (modo SOAP): Recuperación de información de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Inicio rápido (modo SOAP): Recuperación de información de tarea mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas que se basan en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se ha completado. Información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea se recupera y se muestra.
+El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *MortgageLoan - Prebuild*. Se comprueba el estado de cada tarea devuelta para asegurarse de que se trata de una tarea completada. Se recupera y se muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
 
 ```as3
  /* 

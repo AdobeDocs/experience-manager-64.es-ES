@@ -1,25 +1,28 @@
 ---
-title: Generar vista previa HTML5 de un formulario XDP
-seo-title: Generar vista previa HTML5 de un formulario XDP
-description: La ficha Vista previa de HTML en LiveCycle Designer se puede utilizar para obtener una vista previa de los formularios tal como aparecen en un explorador.
-seo-description: La ficha Vista previa de HTML en LiveCycle Designer se puede utilizar para obtener una vista previa de los formularios tal como aparecen en un explorador.
+title: Generar previsualización HTML5 de un formulario XDP
+seo-title: Generar previsualización HTML5 de un formulario XDP
+description: La ficha HTML de Previsualización de LiveCycle Designer se puede utilizar para previsualización de formularios tal como aparecen en un explorador.
+seo-description: La ficha HTML de Previsualización de LiveCycle Designer se puede utilizar para previsualización de formularios tal como aparecen en un explorador.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 14%
 
 ---
 
 
-# Generar vista previa HTML5 de un formulario XDP {#generate-html-preview-of-an-xdp-form}
+# Generar previsualización HTML5 de un formulario XDP {#generate-html-preview-of-an-xdp-form}
 
-Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación en PDF de un formulario, también puede obtener una vista previa de una representación en HTML5 del mismo. Puede utilizar la ficha **Vista previa de HTML** para obtener una vista previa de un formulario tal como aparecería en un explorador.
+Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación en PDF de un formulario, también puede realizar una previsualización de una representación en HTML5 del mismo. Puede utilizar la ficha **Previsualización HTML** para realizar la previsualización de un formulario tal como aparecería en un explorador.
 
-## Activar vista previa HTML para formularios XDP en Designer {#html-preview-of-forms-in-forms-designer}
+## Habilitar Previsualización HTML para formularios XDP en Designer {#html-preview-of-forms-in-forms-designer}
 
-Para habilitar Designer para generar la vista previa HTML de formularios XDP, realice las siguientes configuraciones:
+Para permitir que Designer genere previsualizaciones HTML de formularios XDP, realice las siguientes configuraciones:
 
 * Configuración del servicio de autenticación Apache Sling
 * Deshabilitar modo protegido
@@ -43,6 +46,7 @@ Para habilitar Designer para generar la vista previa HTML de formularios XDP, re
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >No copie y pegue el valor especificado en el campo Requisitos de autenticación, ya que podría dañar los caracteres especiales del valor. En su lugar, escriba el valor especificado en el campo.
@@ -52,7 +56,7 @@ Para habilitar Designer para generar la vista previa HTML de formularios XDP, re
 
 ### Deshabilitar modo protegido {#disable-protected-mode}
 
-El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede desactivarlo para que un entorno de desarrollo pueda previsualizar formularios HTML5 en Designer. Realice los siguientes pasos para deshabilitarlo:
+El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede deshabilitarlo para un entorno de desarrollo con la previsualización de formularios HTML5 en Designer. Realice los siguientes pasos para deshabilitarlo:
 
 1. Inicie sesión en AEM Web Console como administrador.
 
@@ -69,29 +73,30 @@ El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activ
 
    * **URL** del servidor: URL del servidor de AEM Forms.
    * **Número** de puerto HTTP: Puerto del servidor AEM. El valor predeterminado es 4502.
-   * **** Contexto de vista previa de HTML: Ruta del perfil para procesar formularios XFA. Los siguientes perfiles predeterminados se utilizan para obtener una vista previa del formulario en Designer. Sin embargo, también puede especificar la ruta a un perfil personalizado.
+   * **Contexto de Previsualización HTML:** Ruta del perfil para procesar formularios XFA. Se utilizan los siguientes perfiles predeterminados para la previsualización del formulario en Designer. Sin embargo, también puede especificar la ruta a un perfil personalizado.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms en OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms en JEE)
-   * **** Contexto de Forms Manager: Ruta de contexto en la que se implementa la interfaz de usuario de Forms Manager. Los valores predeterminados son:
+   * **Contexto de Forms Manager:** Ruta de contexto en la que se implementa la interfaz de usuario de Forms Manager. Los valores predeterminados son:
 
       * `/aem/forms` (AEM Forms en OSGi)
       * `/lc/forms` (AEM Forms en JEE)
-   **** Nota: *Asegúrese de que el servidor de AEM Forms está activo y en ejecución. The HTML preview connects to the CRX server to* generate *a preview.*
+
+   **Nota:** *Asegúrese de que el servidor de AEM Forms esté activo y en ejecución. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
    Opciones de AEM Forms Designer
 
-1. Para obtener una vista previa de un formulario en HTML, haga clic en la ficha **Vista previa de HTML** .
+1. Para previsualización de un formulario en HTML, haga clic en la ficha **Previsualización HTML** .
 
    >[!NOTE]
    >
-   >Si la ficha Vista previa de HTML está cerrada, presione F4 para abrir la ficha Vista previa de HTML. También puede seleccionar Vista previa de HTML en el menú Ver para abrir la ficha Vista previa de HTML.
+   >Si la ficha Previsualización HTML está cerrada, pulse F4 para abrir la ficha HTML de la Previsualización. También puede seleccionar HTML de Previsualización en el menú Vista para abrir la ficha HTML de Previsualización.
 
    >[!NOTE]
    >
-   >La vista previa HTML no admite documentos PDF, la vista previa HTML solo es para documentos XDP.
+   >La previsualización HTML no admite documentos PDF, la previsualización HTML solo es para documentos XDP.
 
 ## Obtener una vista previa de un formulario mediante datos de ejemplo {#to-preview-a-form-using-sample-data}
 
@@ -103,12 +108,12 @@ Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asig
 
 1. Select **File > Form Properties**.
 
-1. Haga clic en la ficha **Vista previa **y, en el cuadro Archivo de datos, escriba la ruta completa del archivo de datos de prueba. También puede utilizar el botón Examinar para desplazarse hasta el archivo.
+1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. También puede utilizar el botón Examinar para desplazarse hasta el archivo.
 
 1. Haga clic en **Aceptar**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
-## Vista previa de formularios ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
+## Formularios de Previsualización ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
 
-En AEM Forms, puede obtener una vista previa de formularios y documentos en un repositorio. La vista previa ayuda a conocer exactamente el aspecto y el comportamiento de los formularios, ya que se utilizarán para los usuarios finales.
+En AEM Forms, puede previsualización de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
 
 [**Comuníquese con la asistencia técnica **](https://www.adobe.com/account/sign-in.supportportal.html)

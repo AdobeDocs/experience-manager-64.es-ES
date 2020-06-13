@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '4026'
+ht-degree: 0%
 
 ---
 
@@ -271,7 +274,9 @@ En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms par
 
 Los mensajes de correo electrónico pueden contener un vínculo que abre la tarea en el espacio de trabajo de AEM Forms, un archivo adjunto del formulario que se utiliza para la tarea o acciones para completar la tarea por correo electrónico. Si se incluye un formulario en el mensaje de correo electrónico, puede abrirlo y completar la tarea si los botones para completar la tarea están creados en el formulario. Si las acciones para completar la tarea se incluyen en el mensaje de correo electrónico, puede completar la tarea haciendo clic en las acciones del correo electrónico o respondiendo al correo electrónico con la acción escrita como primera línea en el cuerpo del correo electrónico.
 
-**Nota**: Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
+>[!NOTE]
+>
+>Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
 
 Cuando se completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
 

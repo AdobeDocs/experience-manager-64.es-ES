@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,8 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 >
 >Si ejecuta la implementación de AEM Forms en un clúster, lleve a cabo los siguientes pasos en cada nodo del clúster.
 
+#### JBoss Application Server {#jboss-application-server}
+
 1. Detenga la instancia de servidor de AEM Forms.
    * (Para Windows) Abra el `[*JBoss root*]/bin/run.conf.bat` archivo en un editor.
    * (Para Linux, AIX y Solaris) `[*JBoss root*]/bin/run.conf.sh` en un editor.
@@ -63,6 +68,8 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 1. Guarde y cierre el `run.conf.bat` archivo.
 
 1. Reinicie la instancia de servidor de AEM Forms.
+
+#### Servidor de aplicaciones WebSphere {#websphere-application-server}
 
 1. Detenga la instancia de servidor de AEM Forms.
 1. Inicie sesión en la Consola administrativa de WebSphere. En el árbol de navegación, haga clic en **Servidores** > Servidores **** de aplicaciones y, a continuación, en el panel derecho, haga clic en el nombre del servidor.
@@ -80,6 +87,8 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 1. Haga clic en **Aplicar**, en Aceptar y, a continuación, en **Guardar directamente en la configuración** maestra.
 
 1. Reinicie la instancia de servidor de AEM Forms.
+
+#### Servidor de aplicaciones WebLogic {#weblogic-application-server}
 
 1. Detenga la instancia de servidor de AEM Forms.
 1. Inicie sesión en la Consola de administración de WebLogic. La dirección predeterminada de la Consola de administración de WebLogic es `https://[hostname]:[port]/console`.
@@ -108,7 +117,7 @@ El servicio ProcessDataStorageProvider recibe datos de proceso del servicio Proc
 
 En cada ciclo de publicación, los datos se guardan en subcarpetas de una carpeta raíz predefinida.
 
-Puede utilizar la consola de administración para configurar la raíz (**predeterminada**: `/content/reporting/pm`) ubicación y subcarpeta (**predeterminado**: `/yyyy/mm/dd/hh/mi/ss`) formato de jerarquía donde se almacenarán los datos del proceso.
+Puede utilizar la consola de administración para configurar la raíz (**predeterminada**: `/content/reporting/pm`) y subcarpeta (**predeterminado**: `/yyyy/mm/dd/hh/mi/ss`) donde se almacenarían los datos del proceso.
 
 #### Para configurar las ubicaciones del repositorio de Process Sistema de informes {#to-configure-the-process-reporting-repository-locations}
 
@@ -165,7 +174,7 @@ Process Sistema de informes utiliza el servicio ReportConfiguration para configu
 
 El servicio ProcessDataPublisher importa datos de proceso de la base de datos de AEM Forms y publica los datos en el servicio ProcessDataStorageProvider para almacenamiento.
 
-#### Para configurar el servicio ProcessDataPublisher {#to-configure-processdatapublisher-service-nbsp}
+#### Para configurar el servicio ProcessDataPublisher   {#to-configure-processdatapublisher-service-nbsp}
 
 1. Inicie sesión en **la Consola** de administración con las credenciales del administrador.
 

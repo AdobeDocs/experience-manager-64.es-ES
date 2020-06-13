@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ Conocimiento de CSS y del marco LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo enumera las clases css de formularios adaptables disponibles públicamente. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con el editor [de](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)temas.
+El artículo lista clases css de formularios adaptables disponibles al público. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con el editor [de](themes.md)temas.
 
 ## Personalización de estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 
@@ -52,7 +55,7 @@ Actualmente, las variables LESS se definen solo para estas propiedades de los di
 
 ## Cambio del estilo de componente {#changing-component-style}
 
-Puede realizar cambios en el aspecto, el diseño, la posición y la visibilidad de los elementos. Para realizar esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo que se enumeran en este artículo.
+Puede realizar cambios en el aspecto, el diseño, la posición y la visibilidad de los elementos. Para lograr esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo enumeradas en este artículo.
 
 Para aplicar un estilo a un formulario adaptable, abra el formulario adaptable en para editarlo y abra las propiedades del contenedor de formularios adaptables, especifique la ruta de acceso del archivo CSS personalizado en la ficha básica. Las construcciones de estilo predeterminadas del formulario adaptable y sustituidas por las construcciones enumeradas en el archivo .css personalizado.
 
@@ -60,7 +63,7 @@ Para aplicar un estilo a un formulario adaptable, abra el formulario adaptable e
 
 Los componentes analizados en este artículo tienen sus clases CSS predefinidas. Puede editar las variables para modificar los estilos en las clases CSS. Como alternativa, puede volver a escribir toda la clase. En esta sección se describen las clases de los componentes y los estilos que se pueden modificar mediante variables.
 
-## Estilo de contenedor {#container-styling}
+## Estilo de Contenedor {#container-styling}
 
 Un contenedor es el componente de nivel superior. Otros paneles y campos se encuentran debajo del componente contenedor.
 
@@ -89,7 +92,7 @@ Un contenedor es el componente de nivel superior. Otros paneles y campos se encu
   </tr> 
   <tr> 
    <td><p><code>container-margin</code></p> </td> 
-   <td><p>Margen para el contenedor</p> </td> 
+   <td><p>Margen del contenedor</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-fontColor</code></p> </td> 
@@ -167,7 +170,7 @@ La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **iz
   </tr> 
   <tr> 
    <td><p><code>label-font-weight</code></p> </td> 
-   <td>Propiedad de grosor de fuente CSS para la etiqueta de campo </td> 
+   <td>Propiedad de peso de fuente CSS para la etiqueta de campo </td> 
   </tr> 
   <tr> 
    <td><p><code>label-margin</code></p> </td> 
@@ -557,7 +560,7 @@ El widget de archivos adjuntos de formularios adaptables permite cargar archivos
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>Color del icono Vista previa (icono de Bootstrap) en el widget</p> </td> 
+   <td><p>Color del icono de Previsualización (icono de Bootstrap) del widget</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
@@ -763,7 +766,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-font-color</code></p> </td> 
-   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve true</p> </td> 
+   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve verdadero</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-bg-color</code></p> </td> 
@@ -827,7 +830,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-font-color</code></p> </td> 
-   <td><p>Color de fuente cuando el panel está enfocado (centrado)</p> </td> 
+   <td><p>Color de fuente cuando el panel está enfocado (enfocado)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td> 
@@ -835,7 +838,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td> 
-   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve true</p> </td> 
+   <td><p>Color de fuente cuando la expresión de finalización del panel devuelve verdadero</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td> 
@@ -929,7 +932,7 @@ Un panel incluye una barra de herramientas opcional y su contenido.
   </tr> 
   <tr> 
    <td><p><code>panel-help-bg-color</code></p> </td> 
-   <td><p>Color de fondo para la ayuda del panel</p> </td> 
+   <td><p>Color de fondo de la ayuda del panel</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>panel-help-border-indicator-color</code></p> </td> 

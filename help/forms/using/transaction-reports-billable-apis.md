@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 0d0c6c6e536bf91ddc579382593c07144bd0ba8f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1881'
+ht-degree: 7%
 
 ---
 
@@ -24,21 +27,21 @@ AEM Forms proporciona varias API para enviar formularios, procesar documentos y 
 * Representación de una versión impresa o web de una comunicación interactiva
 * Conversión de un documento de un formato a otro
 * Acoplamiento de un documento PDF dinámico
-* Generación de un documento de registro
+* Generación de un Documento de registro
 * Combinación de un documento PDF interactivo con otro documento PDF
-* Uso del paso de tareas de asignación y los pasos de servicios de documentación de los flujos de trabajo de AEM
+* Uso del paso de asignación de tareas y los pasos de servicios de documentación de los Flujos de trabajo de AEM
 * Uso de formularios adaptables en formularios adaptables
 
-Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento procesado. Un informe de transacciones divide las transacciones en tres categorías: Documentos procesados, Documentos procesados y Formularios enviados.
+Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento procesado. Un informe de transacciones divide las transacciones en tres categorías: Documentos procesados, Documentos procesados y formularios enviados.
 
-* **** Formularios enviados: Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera el envío del formulario. Por ejemplo, el envío de un formulario adaptable, formulario HTML5, formulario PDF y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto, el servicio de informes de transacciones lo cuenta como 5 envíos.
-* **** Documentos procesados: La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digitales de un documento, el uso de una API de servicios de documentos facturables para document services o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
+* **Formularios enviados:** Cuando se envían datos desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio o base de datos de almacenamiento de datos, se considera el envío de formularios. Por ejemplo, el envío de un formulario adaptable, formulario HTML5, formulario PDF y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de sistema de informes de transacciones lo cuenta como 5 envíos.
+* **Documentos procesados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digital de un documento, el uso de una API de servicios de documento facturable para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
 
 >[!NOTE]
 >
->La interfaz de usuario de informes de transacciones muestra tres categorías: Formularios enviados, documentos procesados y documentos procesados. Tanto los documentos procesados como los documentos procesados se contabilizan como documentos procesados.
+>La interfaz de usuario de Informes de transacciones muestra tres categorías: Formularios enviados, Documentos procesados y Documentos procesados. Los Documentos procesados y los Documentos procesados se contabilizan como Documentos procesados.
 
-## API de Document Services facturables {#billable-document-services-apis}
+## API de servicios de Documento facturables {#billable-document-services-apis}
 
 ### Generar servicio PDF {#generate-pdf-service}
 
@@ -47,7 +50,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -81,7 +84,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
    <td><p>Crea archivos PDF a partir de páginas HTML.</p> </td> 
    <td>Documentos procesados<br /> </td> 
    <td> </td> 
@@ -114,7 +117,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -132,14 +135,14 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
-### Documento de servicio de registro (servicio DoR) {#document-of-record-service-dor-service}
+### Documento del servicio de registro (servicio DoR) {#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -158,7 +161,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -201,7 +204,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -226,7 +229,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -251,12 +254,12 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td> 
-   <td>Descodifica todos los códigos de barras de un objeto Document y devuelve un objeto org.w3c.dom.Document que contiene datos recuperados del código de barras.</td> 
+   <td>Descodifica todos los códigos de barras de un objeto Documento y devuelve un objeto org.w3c.dom.Documento que contiene datos recuperados del código de barras.</td> 
    <td>Documentos procesados</td> 
    <td> </td> 
   </tr>
@@ -270,12 +273,12 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">EnsemblerResult</a> que contiene los documentos resultantes. </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
+   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">EnsemblerResult</a> que contiene los documentos resultantes. </td> 
    <td>Documentos procesados</td> 
    <td>Las siguientes operaciones no se contabilizan como transacciones:
     <ul> 
@@ -285,7 +288,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Ejecuta el documento DDX especificado y devuelve un <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> objeto AssemblerResult</a> que contiene los documentos resultantes. </td> 
+   <td>Ejecuta el documento DDX especificado y devuelve un <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> objeto AssemblerResult</a> que contiene los documentos resultantes. </td> 
    <td>Documentos procesados</td> 
    <td>Todos los formatos de archivo de entrada compatibles con PDF Generator, Forms y Output, el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td> 
   </tr>
@@ -302,18 +305,19 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >
 >* La API de invocación del servicio de ensamblador puede llamar internamente a una API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación se puede contabilizar como ninguna, una o varias transacciones. El número de transacciones contabilizadas depende de la entrada y de las API internas invocadas.
 >* Un solo documento PDF producido mediante el servicio de ensamblador se puede contabilizar como ninguna, una sola o varias transacciones. El número de transacciones contabilizadas depende del código DDX suministrado.
+
 >
 
 
 
-### Servicio de utilidades de PDF {#pdf-utility-service}
+### Servicio de utilidades de PDF  {#pdf-utility-service}
 
 <table> 
  <tbody>
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -332,12 +336,12 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
-   <td>La API le permite proteger el documento. Puede utilizar la API para firmar, certificar, ampliar o cifrar un documento PDF. </td> 
+   <td>La API le permite proteger su documento. Puede utilizar la API para firmar, certificar, ampliar o cifrar un documento PDF. </td> 
    <td>Documentos procesados</td> 
    <td>Sólo se facturan la firma y la certificación de la operación de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> .</td> 
   </tr>
@@ -346,7 +350,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 ## API de captura de datos facturables {#billable-data-capture-apis}
 
-Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conjuntos de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [de informes de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transacciones proporcionada para registrar un envío de formularios PDF como transacción.
+Todos los eventos de envío de formularios adaptables, formularios HTML5 y conjuntos de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [de informes de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transacciones proporcionada para registrar un envío de formularios PDF como transacción.
 
 ### Formularios adaptables {#adaptive-forms}
 
@@ -355,7 +359,7 @@ Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conju
   <tr>
    <td><p>Caso práctico </p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -364,7 +368,7 @@ Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conju
    <td>Formularios enviados</td> 
    <td>
     <ul> 
-     <li>Cuenta de envíos correcta para una o dos transacciones. El número de transacciones contabilizadas depende del tipo de acción de envío utilizada para el envío. Por ejemplo, enviar archivos PDF a través de una acción de envío por correo electrónico tiene en cuenta dos recuentos de transacciones. Una transacción para el envío del formulario y otra para PDF generada mediante el servicio Documento de registro (DOR). </li> 
+     <li>Cuenta de envíos correcta para una o dos transacciones. El número de transacciones contabilizadas depende del tipo de acción de envío utilizada para el envío. Por ejemplo, enviar archivos PDF a través de una acción de envío por correo electrónico tiene en cuenta dos recuentos de transacciones. Una transacción para el envío de formularios y otra para PDF generada mediante el servicio Documento de registro (DOR). </li> 
      <li>El uso del formulario adaptable dentro de un formulario adaptable (conjunto de formularios adaptables) solo cuenta una transacción. Puede tener cualquier número de formularios adaptables dentro de un formulario adaptable.</li> 
     </ul> </td> 
   </tr>
@@ -378,7 +382,7 @@ Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conju
   <tr>
    <td><p>Caso práctico </p> </td> 
    <td>Descripción </td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -397,7 +401,7 @@ Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conju
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -413,9 +417,9 @@ Todos los sucesos de envío de formularios adaptables, formularios HTML5 y conju
  </tbody>
 </table>
 
-## Flujos de trabajo de AEM centrados en formularios y comunicación interactiva facturable en las API de OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## Comunicación interactiva facturable y Flujos de trabajo de AEM centrados en el formulario en las API de OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM centrados en formularios en OSGi y todas las representaciones de comunicación interactiva y se contabilizan como transacciones. La vista previa de una comunicación interactiva en la instancia de autor y la vista previa en la instancia de publicación mediante la interfaz de usuario del agente no se contabilizan como transacciones. Si un paso de workflow registra una transacción y el flujo de trabajo no se completa, el recuento de transacciones no se invierte.
+Asigne pasos de servicios de tarea y documento de Flujos de trabajo de AEM centrados en formularios en OSGi y todas las representaciones de comunicación interactiva y se contabilizan como transacciones. La vista previa de una comunicación interactiva en la instancia de autor y la vista previa en la instancia de publicación mediante la interfaz de usuario del agente no se contabilizan como transacciones. Si un paso de workflow registra una transacción y el flujo de trabajo no se completa, el recuento de transacciones no se invierte.
 
 ### Comunicación interactiva - Canal web {#interactive-communication-web-channel}
 
@@ -424,7 +428,7 @@ Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM cen
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -445,7 +449,7 @@ Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM cen
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -459,13 +463,13 @@ Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM cen
  </tbody>
 </table>
 
-### Flujos de trabajo de AEM centrados en formularios en OSGi {#form-centric-aem-workflows-on-osgi}
+### Flujos de trabajo de AEM centrados en formularios en OSGi  {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
   <tr>
    <td><p>Caso de uso</p> </td> 
-   <td>Categoría del informe de transacciones</td> 
+   <td>categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -481,7 +485,7 @@ Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM cen
    <td> </td> 
   </tr>
   <tr>
-   <td>Envío de una comunicación interactiva (canal de impresión) desde la interfaz de usuario del agente a un flujo de trabajo</td> 
+   <td>Envío de una comunicación interactiva (Canal de impresión) desde la interfaz de usuario del agente a un flujo de trabajo</td> 
    <td>Documentos procesados</td> 
    <td> </td> 
   </tr>
@@ -490,7 +494,7 @@ Asigne pasos de tareas y servicios de documentos de flujos de trabajo de AEM cen
 
 ## Registro de API facturables como transacciones para código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
 
-Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del agente para obtener una vista previa de una comunicación interactiva, utilizar un envío de formulario no estándar y las implementaciones personalizadas no se contabilizan como transacciones. AEM Forms proporciona una API para registrar acciones como transacciones. Puede llamar a la API desde sus implementaciones personalizadas para [registrar una transacción](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del agente para realizar la previsualización de una comunicación interactiva mediante el envío de formularios no estándar y las implementaciones personalizadas no se contabilizan como transacciones. AEM Forms proporciona una API para registrar acciones como transacciones. Puede llamar a la API desde sus implementaciones personalizadas para [registrar una transacción](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
 
 ## Artículos relacionados {#related-articles}
 

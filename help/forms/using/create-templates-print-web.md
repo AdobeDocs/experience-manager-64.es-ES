@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+workflow-type: tm+mt
+source-wordcount: '1824'
+ht-degree: 0%
 
 ---
 
@@ -70,12 +73,14 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
 
    1. Especifique **BillDetails** en el campo **Nombre** .
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+
    ![forms_designer_subform](assets/forms_designer_subform.png)
 
 1. Del mismo modo, seleccione el subformulario raíz, seleccione la ficha **Subformulario** y seleccione **De posición variable** en la lista desplegable **Contenido** . En la ficha **Enlaces** :
 
    1. Especifique **TelecaBill** en el campo **Nombre** .
    1. Seleccione **Sin enlace** de datos en la lista desplegable Enlace **de datos** .
+
    ![root_subform_print_template](assets/root_subform_print_template.png)
 
 1. Repita los pasos 2 a 5 para crear los subformularios siguientes:
@@ -90,6 +95,7 @@ Siga los pasos siguientes para crear una plantilla XDP para el canal de impresi�
    * ItemizedCalls
    * PayNow
    * ValueAddedServices
+
    Para ahorrar tiempo, también puede copiar y pegar subformularios existentes para crear nuevos subformularios.
 
    Para cambiar el subformulario **Gráficos** a la derecha del subformulario Cargos, seleccione el subformulario **Gráficos** en el panel izquierdo, seleccione la ficha **Presentación** y especifique un valor para el campo **AnclajeX** . El valor debe ser bueno que el valor del campo **Ancho** del subformulario **Cargos** . Seleccione el subformulario **Cargos** y seleccione la ficha **Presentación** para vista del valor del campo **Anchura** .
@@ -153,6 +159,7 @@ Para crear un fragmento de diseño para el canal de impresión de la comunicaci�
    1. Vaya a la ubicación para guardar el archivo y especifique el nombre como **table_lf**.
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo** .
    1. Toque **Guardar**.
+
    Una vez creada una plantilla XDP para un fragmento de diseño con Forms Designer, debe [cargarla](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de fragmentos de diseño.
 
 ## Crear plantilla para canal Web {#create-template-for-web-channel}
@@ -170,7 +177,7 @@ Para crear una plantilla de canal web, defina una carpeta en la que puede guarda
 
 Siga los pasos siguientes para crear una carpeta para las plantillas editables:
 
-1. Toque **Herramientas** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Navegador** de configuración.
+1. Toque **Herramientas** ![Herramientas](assets/tools-icon.svg) > **Navegador** de configuración.
 1. En la página Navegador de configuración, toque **Crear**.
 1. En el cuadro de diálogo **Crear configuración** , especifique **Create_First_IC_templates** como título para la carpeta, marque Plantillas **** editables y toque **Crear**.
 
@@ -221,6 +228,7 @@ Siga los pasos siguientes para crear una plantilla para el canal Web en la carpe
    1. Especifique los detalles **de la** factura en el campo Título.
    1. Seleccione **1** en la lista desplegable **Número de columnas** .
    1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades.
+
    El nombre del panel se actualiza a Detalles **de** facturación en el árbol de contenido.
 
 1. Repita los pasos 7 a 11 para agregar paneles con las siguientes propiedades a la plantilla:
@@ -244,7 +252,7 @@ Una vez que haya creado la plantilla Web, debe habilitarla para utilizar la plan
 
 Ejecute los siguientes pasos para habilitar la plantilla Web:
 
-1. Puntee **Herramientas** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Plantillas**.
+1. Toque **Herramientas** ![Herramientas](assets/tools-icon.svg) > **Plantillas**.
 1. Vaya a la plantilla **Create_First_IC_Web_Template** , selecciónela y toque **Habilitar**.
 1. Tab **Active** nuevamente para confirmar.
 

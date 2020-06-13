@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 0%
 
 ---
 
@@ -61,11 +64,11 @@ Al navegar por el espacio de trabajo de AEM Forms mediante un teclado, la navega
 
 Puede definir las distintas preferencias del espacio de trabajo de AEM Forms en las siguientes categorías:
 
-**Fuera de la oficina:** Configure las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de las preferencias](/help/forms/using/todo-lists.md#main-pars-heading-22)fuera de la oficina.
+**Fuera de la oficina:** Configure las preferencias para controlar cómo se asignan las tareas a otras personas mientras se encuentra fuera de la oficina. Consulte [Configuración de las preferencias](/help/forms/using/todo-lists.md#setting-out-of-office-preferences)fuera de la oficina.
 
-**Colas:** Defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Uso de tareas de colas](/help/forms/using/todo-lists.md#main-pars-heading-19)compartidas y de grupos.
+**Colas:** Defina las preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Uso de tareas de colas](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues)compartidas y de grupos.
 
-**Configuración de la interfaz de usuario:** Defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5)de la interfaz de usuario.
+**Configuración de la interfaz de usuario:** Defina las preferencias para la forma en que interactúa con el espacio de trabajo de AEM Forms. Consulte [Configuración de las preferencias](#set-user-interface-preferences)de la interfaz de usuario.
 
 ### Configuración de las preferencias de la interfaz de usuario {#set-user-interface-preferences}
 

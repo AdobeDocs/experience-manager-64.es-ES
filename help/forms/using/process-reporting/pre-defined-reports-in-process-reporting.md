@@ -9,7 +9,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ El informe Procesos de larga ejecución muestra los procesos de AEM Forms que ha
 
 1. Haga clic en **Ir** para ejecutar el informe.
 
-   El informe se muestra en el panel **Informe **A a la derecha de la ventana Sistema de informes **de** procesos.
+   El informe se muestra en el panel **Informe** a la derecha de la ventana Sistema de informes **de** proceso.
 
    ![long_running_process](assets/long_running_processes.png)
 
-   Utilice las opciones de la esquina superior derecha del panel **Informe **Para realizar las siguientes operaciones en el informe.
+   Utilice las opciones de la esquina superior derecha del panel **Informe** para realizar las siguientes operaciones en el informe.
 
    * **Actualizar**: Actualiza el informe con los datos más recientes en el almacenamiento
    * **Cambiar el color** de la leyenda: Seleccionar y cambiar el color de la leyenda del informe

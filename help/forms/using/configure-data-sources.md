@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 0%
 
 ---
 
@@ -22,12 +25,12 @@ Obtenga información sobre cómo configurar distintos tipos de fuentes de datos 
 La integración de datos de AEM Forms le permite configurar y conectar orígenes de datos dispares. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
 * Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
-* Perfil de usuario de AEM
+* perfil del usuario de AEM
 * Servicios web RESTful
 * Servicios Web basados en SOAP
 * Servicios OData
 
-La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en los servicios de nube de AEM, JDBC para bases de datos relacionales y conector para el perfil de usuario de AEM están configurados en la consola web de AEM.
+La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en los servicios de nube de AEM, JDBC para bases de datos relacionales y conectores para el perfil de usuarios de AEM están configurados en la consola web de AEM.
 
 ## Configurar base de datos relacional {#configure-relational-database}
 
@@ -42,17 +45,19 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    * Nombre de clase Java para el controlador JDBC
    * URI de conexión JDBC
    * Nombre de usuario y contraseña para establecer la conexión con el controlador JDBC
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >Asegúrese de cifrar información confidencial como contraseñas antes de configurar el origen de datos. Para cifrar:
    >
    >1. Ir a `https://[server]:[port]/system/console/crypto`.
    >1. En el campo **[!UICONTROL Texto]** sin formato, especifique la contraseña o cualquier cadena que desee cifrar y haga clic en **[!UICONTROL Proteger]**.
+
    >
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
 1. Habilite **[!UICONTROL Prueba a la Obtención]** o **[!UICONTROL Prueba a la Devolución]** para especificar que los objetos se validen antes de ser tomados en préstamo o devueltos al grupo, respectivamente.
-1. Especifique una consulta SQL SELECT en el campo Consulta **[!UICONTROL de]** validación para validar conexiones desde el grupo. La consulta debe devolver al menos una fila. En función de la base de datos, especifique una de las siguientes opciones:
+1. Especifique una consulta SQL SELECT en el campo Consulta **[!UICONTROL de]** validación para validar las conexiones del grupo. La consulta debe devolver al menos una fila. En función de la base de datos, especifique una de las siguientes opciones:
 
    * SELECT 1 (MySQL y MS SQL)
    * SELECT 1 from dual (Oracle)
@@ -61,11 +66,11 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 
 ## Configuración del perfil de usuario de AEM {#configure-aem-user-profile}
 
-Puede configurar el perfil de usuario de AEM mediante la configuración del conector de perfil de usuario en la consola web de AEM. Haga lo siguiente:
+Puede configurar el perfil de usuario de AEM mediante la configuración del conector de Perfil de usuario en la consola web de AEM. Haga lo siguiente:
 
 1. Vaya a la consola web de AEM en `https://[server]:[host]/system/console/configMgr`.
-1. Busque Integraciones de datos de **[!UICONTROL AEM Forms: Configuración]** del conector de perfil de usuario y toque para abrir la configuración en modo de edición.
-1. En el cuadro de diálogo Configuración del conector de perfil de usuario, puede agregar, quitar o actualizar propiedades de perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades del perfil de usuario:
+1. Busque Integraciones de datos de **[!UICONTROL AEM Forms: Configuración]** del conector de Perfil de usuario y toque para abrir la configuración en modo de edición.
+1. En el cuadro de diálogo Configuración del conector de Perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades de perfil del usuario:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -73,15 +78,18 @@ Puede configurar el perfil de usuario de AEM mediante la configuración del cone
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
-   >**The**&amp;ast; en el ejemplo anterior indica todos los nodos bajo el `profile/empLocation/` nodo en el perfil de usuario de AEM en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder a la `city` propiedad de tipo `string` presente en cualquier nodo bajo el `profile/empLocation/` nodo. Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
+   >The **&amp;ast;** en el ejemplo anterior indica todos los nodos bajo el `profile/empLocation/` nodo en el perfil de usuario de AEM en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder a la `city` propiedad de tipo `string` presente en cualquier nodo bajo el `profile/empLocation/` nodo. Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
 
 1. Toque **[!UICONTROL Guardar]** para guardar la configuración.
 
 ## Configurar carpeta para configuraciones de servicio en la nube {#cloud-folder}
 
-**Nota**: La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
+>[!NOTE]
+>
+>La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
 
 Todas las configuraciones de servicios en la nube de AEM se consolidan en la `/conf` carpeta del repositorio de AEM. De forma predeterminada, la `conf` carpeta contiene la `global` carpeta en la que puede crear configuraciones de servicio en la nube. Sin embargo, debe habilitarlo manualmente para las configuraciones de nube. También puede crear carpetas adicionales en `conf` para crear y organizar configuraciones de servicios en la nube.
 
@@ -149,6 +157,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
    * URL de raíz de servicio para el servicio OData que se va a configurar.
    * Seleccione el tipo de autenticación — Ninguno, OAuth2.0, Autenticación básica o Autenticación personalizada — para acceder al servicio OData y, en consecuencia, proporcionar los detalles para la autenticación.
+
    >[!NOTE]
    >
    >Debe seleccionar el tipo de autenticación OAuth 2.0 para conectarse con los servicios de Microsoft Dynamics mediante el extremo OData como raíz del servicio.

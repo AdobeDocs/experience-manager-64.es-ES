@@ -1,6 +1,6 @@
 ---
-title: Java APIQuick Start (SOAP) de Componentes y Servicios
-seo-title: Java APIQuick Start (SOAP) de Componentes y Servicios
+title: Componentes y servicios Java APIQuick Inicio (SOAP)
+seo-title: Componentes y servicios Java APIQuick Inicio (SOAP)
 description: nulo
 seo-description: nulo
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: db956ad71194885adf6ada6aa499233a07c78f56
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
 
 # Inicio rápido de la API de Java de Componentes y Servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
 
-Java API Quick Start(SOAP) está disponible para componentes y servicios.
+El Inicio rápido de la API de Java (SOAP) está disponible para componentes y servicios.
 
 [Inicio rápido (modo SOAP): Implementación de un componente mediante la API de Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
@@ -31,11 +34,15 @@ Java API Quick Start(SOAP) está disponible para componentes y servicios.
 
 [Inicio rápido (modo SOAP): Eliminación de componentes mediante la API de Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-* ***Nota **: No se pueden manipular mediante programación componentes y servicios mediante el uso de servicios Web.*
+>[!NOTE]
+>
+>No se pueden manipular mediante programación componentes y servicios mediante el uso de servicios Web.
 
-   ***Nota **: Los inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>Los inicios rápidos ubicados en Programación con formularios AEM se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 >[!NOTE]
 >
@@ -350,7 +357,7 @@ El siguiente ejemplo de código Java deshabilita la seguridad del servicio Encry
 
 ## Inicio rápido (modo SOAP): Inicio de un servicio mediante la API de Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-El siguiente ejemplo de código Java inicia un servicio llamado *SendEmailService*.
+El siguiente ejemplo de código Java inicio un servicio llamado *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

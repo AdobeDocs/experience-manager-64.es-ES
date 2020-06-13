@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +52,7 @@ La anatomía incluye datos con los siguientes modos de entrada:
 * Datos condicionales
 * Imágenes
 
-En cada sección, el texto en negrita representa texto estático. La base de datos incluye tablas de cliente, facturas y llamadas. Un modelo de datos de formulario puede recibir datos de cualquiera de estas tablas. Para obtener más información, consulte [Creación de un modelo](/help/forms/using/create-form-data-model0.md)de datos de formulario.
+En cada sección, el texto en negrita representa texto estático. La base de datos incluye tablas de cliente, facturas y llamadas. Un modelo de datos de formulario puede recibir datos de cualquiera de estas tablas. Para obtener más información, consulte [Creación de un modelo](create-form-data-model-tutorial.md)de datos de formulario.
 
 La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de la comunicación interactiva:
 
@@ -109,7 +112,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
   </tr>
   <tr>
    <td>Resumen de los cargos</td> 
-   <td><p>Cargos de llamadas</p> <p>Cargos de llamada de conferencia</p> <p>Gastos por SMS </p> <p>Cargos por Internet móvil</p> <p>Cargos de itinerancia nacionales</p> <p>Cargos de itinerancia internacionales</p> <p>Cargos por servicios de valor agregado</p> <p>Cargos totales</p> <p>TOTAL PAGABLE</p> <p>Condición en el campo Cargos de servicios de valor agregado</p> </td> 
+   <td><p>Cargos de llamadas</p> <p>Cargos de llamada de conferencia</p> <p>Gastos por SMS </p> <p>Cargos por Internet móvil</p> <p>Cargos de itinerancia nacionales</p> <p>Cargos de itinerancia internacionales</p> <p>Cargos de servicios Añadidos de valor</p> <p>Cargos totales</p> <p>TOTAL PAGABLE</p> <p>Condición en el campo Valor Añadido de Cargos de Servicios</p> </td> 
    <td><p>Valores de los campos siguientes:</p> 
     <ul> 
      <li>Cargos de llamadas</li> 
@@ -118,7 +121,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
      <li>Cargos por Internet móvil</li> 
      <li>Cargos de itinerancia nacionales</li> 
      <li>Cargos de itinerancia internacionales</li> 
-     <li>Cargos por servicios de valor agregado</li> 
+     <li>Cargos de servicios Añadidos de valor</li> 
      <li>Cargos totales (uso recargos calculados, campo)</li> 
      <li>TOTAL PAGABLE (uso recargas calculadas, campo)</li> 
     </ul> <p>Tabla - facturas</p> </td> 
@@ -147,7 +150,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
    <td>PayNow</td> 
   </tr>
   <tr>
-   <td>Servicios de valor agregado</td> 
+   <td>Servicios Añadidos de valor</td> 
    <td>--</td> 
    <td>--</td> 
    <td>--</td> 

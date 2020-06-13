@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1695'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +49,7 @@ Cada fragmento de documento incluye campos con texto estático, datos recibidos 
 
 Al crear fragmentos de documento en este tutorial, se crean variables para campos que reciben datos mediante la interfaz de usuario del agente.
 
-Utilice **FDM_Create_First_IC**, tal como se describe en la sección [Crear modelo](/help/forms/using/create-form-data-model0.md) de datos de formulario, como modelo de datos de formulario para crear fragmentos de documento en este tutorial.
+Utilice **FDM_Create_First_IC**, tal como se describe en la sección [Crear modelo](create-form-data-model-tutorial.md) de datos de formulario, como modelo de datos de formulario para crear fragmentos de documento en este tutorial.
 
 ## Paso 1: Crear fragmento de documento de texto Detalles de factura {#step-create-bill-details-text-document-fragment}
 
@@ -77,12 +80,14 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    1. Introduzca **el número** de invocación como nombre de la variable.
    1. Seleccione **Cadena** como tipo.
    1. Toque **Crear**.
+
    ![variable_create_string](assets/variable_create_string.png)
 
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
    * Billperiod: Tipo de cadena
    * FechaFacturación: Tipo de fecha
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. Cree texto estático para los campos siguientes utilizando el panel derecho:
@@ -91,6 +96,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    * Período de facturación
    * Fecha de facturación
    * Su plan
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Coloque el cursor junto al campo No **** factura y haga clic con el doble en la variable **Número** factura desde la ficha **Variables** del panel izquierdo.
@@ -135,6 +141,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    1. Introduzca **Placesupply** como nombre de la variable.
    1. Seleccione **Cadena** como tipo.
    1. Toque **Crear**.
+
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
    * Código de estado: Tipo de número
@@ -151,10 +158,11 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    * Número de relación
    * Código de estado
    * Número de conexiones
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Coloque el cursor junto al campo Número **** móvil y haga clic con el doble en la propiedad **cliente** > **mobilenum** .
-1. Coloque el cursor junto al campo Número **de contacto** alternativo y haga clic con el doble en la propiedad** cliente** > **alternatemobilenumber** .
+1. Coloque el cursor junto al campo Número **de contacto** alternativo y haga clic con el doble en la propiedad **client** > **alternatemobilenumber** .
 1. Coloque el cursor junto al campo Número **de** relación y haga clic con el doble en la propiedad **client** > **relation number** .
 1. Seleccione la ficha **Variables** , coloque el cursor junto al campo **Lugar de aprovisionamiento** y haga clic con el doble en la variable **Colocación** .
 1. Coloque el cursor junto al campo Código **de** estado y haga clic con el doble en la variable **Código de estado** .
@@ -194,6 +202,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    1. Introduzca **Anteriormente Balance** como nombre de la variable.
    1. Seleccione **Número** como tipo.
    1. Toque **Crear**.
+
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
    * Pagos: Tipo de número
@@ -211,6 +220,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    * Importe pendiente
    * Fecha de vencimiento
    * Los cargos por demora en el pago después de la fecha de vencimiento son de $ 20
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. Coloque el cursor junto al campo Saldo **** anterior y haga clic con el doble en la variable **Saldo** anterior.
@@ -246,7 +256,7 @@ Siga estos pasos para crear texto estático y utilizar elementos del modelo de d
 1. Seleccione **Crear** > **Texto**.
 1. Especifique la siguiente información:
 
-   1. Escriba **summary_loads_first_ic **como nombre en el campo **Título** . El título se rellena automáticamente en el campo Nombre.
+   1. Introduzca **summary_loads_first_ic** como nombre en el campo **Título** . El título se rellena automáticamente en el campo Nombre.
    1. Seleccione Modelo **de datos de formulario** en la sección Modelo **de** datos.
    1. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Seleccionar**.
    1. Puntee **Siguiente**.
@@ -262,6 +272,7 @@ Siga estos pasos para crear texto estático y utilizar elementos del modelo de d
    * Cargos de servicios Añadidos de valor
    * Cargos totales
    * TOTAL PAGABLE
+
    ![summary_loads_static](assets/summary_charges_static.png)
 
 1. Seleccione la ficha Objetos **del modelo** de datos.
@@ -273,7 +284,7 @@ Siga estos pasos para crear texto estático y utilizar elementos del modelo de d
 1. Coloque el cursor junto al campo Cargos **itinerantes** internacionales y haga clic con el botón doble en las **facturas** > **propiedad roamingintnl** .
 1. Coloque el cursor junto al campo **Valor de los cargos** de servicios Añadidos y haga clic con el doble en la propiedad **efectos** > **lienzo** .
 1. Sitúe el cursor junto al campo Cargos **** totales y haga clic con el doble en la propiedad **Facetas** > **Cargos** de uso.
-1. Coloque el cursor junto al campo **TOTAL PAGABLE** y haga clic con el botón doble en la propiedad **efectos** > **cobros** de uso.
+1. Coloque el cursor junto al campo **TOTAL PAGO** y haga clic con el botón doble en la propiedad **efectos** > **cobros** de uso.
 
    ![summary_loads_static_fdm](assets/summary_charges_static_fdm.png)
 
@@ -283,6 +294,7 @@ Siga estos pasos para crear texto estático y utilizar elementos del modelo de d
    1. Seleccione Modelos **de datos y variables** y, a continuación, **facturas** > **cargas** de llamada.
    1. Seleccionar **es menor que** el operador.
    1. Seleccione **Número** e introduzca el valor como **60**.
+
    En función de esta condición, la fila Cargos de servicios Añadidos de valor solo se muestra si el valor del campo Cargos de llamadas es inferior a 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)

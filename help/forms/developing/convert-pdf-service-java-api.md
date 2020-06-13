@@ -10,26 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# Convertir inicio rápido de la API de Java del servicio PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Convertir Inicio rápido de la API de Java del servicio PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
-Los siguientes inicios rápidos están disponibles para la API de servicio Convertir PDF.
+Los siguientes Inicios rápidos están disponibles para la API de servicio Convertir PDF.
 
 [Inicio rápido (modo SOAP): Conversión de un documento PDF a PostScript mediante la API de Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Conversión de un documento PDF a archivos JPEG mediante la API de Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
-***Nota **: Inicio rápido ubicado en Programación con formularios AEM se basa en Forms Server implementado en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte[Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).*
+>[!NOTE]
+>
+>El Inicio rápido ubicado en Programación con formularios AEM se basa en Forms Server que se implementa en JBoss Application Server y en el sistema operativo Microsoft Windows. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 ## Inicio rápido (modo SOAP): Conversión de un documento PDF a PostScript mediante la API de Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-El siguiente ejemplo de código convierte un documento PDF llamado *Loan.pdf* en un documento PostScript llamado *Loan.ps*. (Consulte [Conversión de documentos PDF a PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)).
+El siguiente ejemplo de código convierte un documento PDF llamado *Loan.pdf* en un documento PostScript llamado *Loan.ps*. (Consulte [Conversión de Documentos PDF a PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)).
 
 ```as3
  /* 
@@ -144,7 +149,7 @@ El siguiente ejemplo de código convierte un documento PDF llamado *Loan.pdf* en
 
 ## Inicio rápido (modo SOAP): Conversión de un documento PDF a archivos JPEG mediante la API de Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un conjunto de archivos JPEG y los almacena en el directorio C:\Adobe directory. Cada archivo se denomina *[tempFileIndex].jpg*, donde el primer archivo de imagen se denomina *tempFile0.jpg*. (Consulte [Conversión de documentos PDF a formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagen).
+El siguiente ejemplo de código Java convierte un documento PDF llamado *Loan.pdf* en un conjunto de archivos JPEG y los almacena en el directorio C:\Adobe directory. Cada archivo se denomina *[tempFileIndex].jpg*, donde el primer archivo de imagen se denomina *tempFile0.jpg*. (Consulte [Conversión de Documentos PDF a formatos](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)de imagen).
 
 ```as3
  /* 

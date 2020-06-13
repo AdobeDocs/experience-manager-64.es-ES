@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Las opciones disponibles para el almacenamiento en caché son las siguientes:
 
 Es posible que la configuración de caché predeterminada para AEM Forms no sea lo suficientemente buena como para lograr un rendimiento óptimo. Por lo tanto, se recomienda utilizar la siguiente configuración:
 
-* **Estrategia** de caché:Agresivo
+* **Estrategia** de caché: Agresivo
 * **Tamaño** de caché (en términos de número de formularios): Como requerido
 * **Tamaño** máximo del objeto: Como requerido
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**Nota**: Los ajustes recomendados son para Windows 2008 R2 8 Core y JDK de Oracle HotSpot 1.7 (64 bits) y deben ampliarse o reducirse según la configuración del sistema.
+>[!NOTE]
+>
+>Los ajustes recomendados son para Windows 2008 R2 8 Core y JDK de Oracle HotSpot 1.7 (64 bits) y deben ampliarse o reducirse según la configuración del sistema.
 
 ## Uso de un servidor web {#using-a-web-server}
 
@@ -62,7 +67,9 @@ Los formularios adaptables y HTML5 se representan en formato HTML5. El resultado
 
 Por ejemplo, realice los siguientes pasos para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss:
 
-***Nota **: Las siguientes instrucciones no se aplican a ningún servidor que no sea Apache Web Server 2.0 de 32 bits. Para ver los pasos específicos de cualquier otro servidor, consulte la documentación del producto correspondiente.*
+>[!NOTE]
+>
+>Las siguientes instrucciones no se aplican a ningún servidor que no sea Apache Web Server 2.0 de 32 bits. Para ver los pasos específicos de cualquier otro servidor, consulte la documentación del producto correspondiente.
 
 Los siguientes pasos muestran los cambios necesarios para habilitar la compresión con Apache Web Server
 
@@ -88,14 +95,14 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. Las configuraciones
 
 1. Configure el proxy en el puerto 4502 de crx.
 
-   Agregue la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
+   Añada la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Habilite Compresión. Agregue la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
+1. Habilite Compresión. Añada la siguiente configuración en el archivo `APACHE_HOME/conf/httpd.conf` de configuración.
 
    **Para formularios HTML5**
 
@@ -149,9 +156,9 @@ Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los
 
    * (Jleader) Directorio de instalación de [AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+   * (Websphere) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(Solo AEM Forms en JEE)** Directorio Global Document Storage (GDS). La ubicación predeterminada es:
+* **(Solo AEM Forms en JEE)** Directorio de Almacenamiento de Documento global (GDS). La ubicación predeterminada es:
 
    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`

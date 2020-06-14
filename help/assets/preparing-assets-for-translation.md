@@ -3,7 +3,10 @@ title: Preparación de recursos para la traducción
 description: Cree carpetas raíz de idioma para prepararse para la traducción de recursos multilingües.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ En Recursos Adobe Experience Manager (AEM), los recursos multilingües se incluy
 
 Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, */content/dam/it* es la raíz en italiano de la copia en idioma italiano. Las copias de idioma deben utilizar una raíz [de idioma](preparing-assets-for-translation.md#creating-a-language-root) correctamente configurada para que el idioma correcto se dirija al realizar las traducciones de recursos de origen.
 
-La copia de idioma para la que se agregaron recursos originalmente es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas.
+La copia de idioma para la que se agregaron recursos originalmente es el idioma principal. El idioma principal es la fuente que se traduce a otros idiomas.
 
 La jerarquía de carpetas de ejemplo incluye varias raíces de idioma:
 
@@ -34,10 +37,10 @@ La jerarquía de carpetas de ejemplo incluye varias raíces de idioma:
 
 Realice los siguientes pasos para preparar los recursos para la traducción:
 
-1. Cree la raíz del idioma del maestro de idioma. Por ejemplo, la raíz de idioma de la copia en inglés en la jerarquía de carpetas de ejemplo es `/content/dam/en`. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Creación de una raíz](preparing-assets-for-translation.md#creating-a-language-root)de idioma.
+1. Cree la raíz del idioma de la fuente principal del idioma. Por ejemplo, la raíz de idioma de la copia en inglés en la jerarquía de carpetas de ejemplo es `/content/dam/en`. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Creación de una raíz](preparing-assets-for-translation.md#creating-a-language-root)de idioma.
 
-1. Agregue recursos al maestro de idioma.
-1. Cree la raíz de idioma de cada idioma de destino para el que necesite una copia de idioma.
+1. Añada recursos a su idioma principal.
+1. Cree la raíz de idioma de cada idioma de destinatario para el que necesite una copia de idioma.
 
 ## Creación de una raíz de idioma {#creating-a-language-root}
 
@@ -59,7 +62,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en Recursos AEM.
 
-1. En la consola Recursos, seleccione el maestro de idioma para el que desea crear copias de idioma.
+1. En la consola Recursos, seleccione el idioma principal para el que desea crear copias de idioma.
 1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Referencias]** para abrir el panel Referencia.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

@@ -1,11 +1,14 @@
 ---
 title: Reutilización de recursos con MSM para recursos
-description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia maestra y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
+description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '3158'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 14e89bf1e17243cc10c60fc712ee23f846ceb907
 La funcionalidad Multi Site Manager (MSM) de Adobe Experience Manager (AEM) permite a los usuarios reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que la funcionalidad MSM para recursos. Con MSM para recursos, puede:
 
 * Cree recursos una vez y, a continuación, haga copias de estos recursos para reutilizarlos en otras áreas del sitio.
-* Mantenga varias copias en sincronización y actualice la copia maestra original una vez para insertar los cambios en las copias secundarias.
+* Mantenga varias copias en sincronización y actualice la copia primaria original una vez para insertar los cambios en las copias secundarias.
 * Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre los recursos principales y secundarios.
 
 ## Requisitos previos {#msm-prerequisites}
@@ -27,7 +30,7 @@ Para utilizar MSM para recursos, instale al menos Service Pack 5. Para obtener m
 
 ### Cómo funciona y los beneficios {#how-it-works-the-benefits}
 
-Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md#possible-scenarios)de MSM. AEM mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas Live Copy (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia maestra y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia maestra.
+Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios](/help/sites-administering/msm.md#possible-scenarios)de MSM. AEM mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas Live Copy (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia principal y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia principal.
 
 MSM mantiene una relación activa entre el recurso de origen y sus copias activas para que:
 
@@ -37,7 +40,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 
 ### Glosario de términos de MSM para recursos {#glossary-msm-for-assets}
 
-* **Fuente:** Recursos o carpetas originales. Copia maestra de la que se derivan las copias en vivo.
+* **Fuente:** Recursos o carpetas originales. Copia principal de la que se derivan las copias en vivo.
 
 * **Live Copy:** Copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte [cómo crear LC](#create-live-copy-asset).
 

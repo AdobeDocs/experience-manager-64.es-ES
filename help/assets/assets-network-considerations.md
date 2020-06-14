@@ -3,7 +3,10 @@ title: Consideraciones de la red de recursos
 description: Analiza las consideraciones de red al diseñar una implementación de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 
@@ -16,20 +19,20 @@ Asegúrese de incluir lo siguiente en el diagrama de red:
 
 * Conectividad desde el dispositivo cliente (por ejemplo, equipo, móvil y tableta) a la red
 * Topología de la red corporativa
-* Vínculo ascendente a Internet desde la red corporativa y el entorno de AEM
-* Topología del entorno de AEM
+* Vínculo ascendente a Internet desde la red corporativa y el entorno AEM
+* Topología del entorno AEM
 * Definir consumidores simultáneos de la interfaz de red de AEM
-* Flujos de trabajo definidos de la instancia de AEM
+* flujos de trabajo definidos de la instancia de AEM
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comience creando un diagrama de la conectividad entre los dispositivos cliente individuales y la red corporativa. En este momento, identifique los recursos compartidos, como las conexiones Wi-Fi, donde varios usuarios acceden al mismo punto o conmutador Ethernet para cargar y descargar recursos.
 
-![chlimage_1-353](assets/chlimage_1-353.png)
+![chlimage_1-355](assets/chlimage_1-353.png)
 
 Los dispositivos cliente se conectan a la red corporativa de diversas maneras, como WiFi compartido, Ethernet a un conmutador compartido y VPN. La identificación y comprensión de los puntos de chokepoint en esta red es importante para la planificación de Recursos y para modificar la red.
 
-En la parte superior izquierda del diagrama, se representan tres dispositivos que comparten un punto de acceso WiFi de 48 Mbps. Si todos los dispositivos se cargan simultáneamente, el ancho de banda de la red WiFi se comparte entre los dispositivos. En comparación con el sistema en su conjunto, un usuario puede encontrar un punto de interrupción diferente para los tres clientes a través de este canal dividido.
+En la parte superior izquierda del diagrama, se representan tres dispositivos que comparten un punto de acceso WiFi de 48 Mbps. Si todos los dispositivos se cargan simultáneamente, el ancho de banda de la red WiFi se comparte entre los dispositivos. En comparación con el sistema en su conjunto, un usuario puede encontrar un punto de interrupción diferente para los tres clientes en este canal dividido.
 
 Es un desafío medir la verdadera velocidad de una red WiFi porque un dispositivo lento puede afectar a otros clientes en el punto de acceso. Si planea utilizar WiFi para interacciones de recursos, realice una prueba de velocidad de varios clientes simultáneamente para evaluar el rendimiento.
 
@@ -43,7 +46,7 @@ El equipo que se muestra a la derecha tiene una subida limitada a la red corpora
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las que se utilizan generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, podría ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y el entorno AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo ascendente a Internet desde la red corporativa y AEM entorno {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -55,27 +58,27 @@ Los servidores de seguridad y los proxies empresariales también pueden dar form
 
 En este ejemplo, la empresa tiene un vínculo superior de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
 
-Este es el punto de chokepoint más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o una lista blanca con el grupo de operaciones de red a cargo de este servidor de seguridad.
+Este es el punto de chokepoint más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o una lista permitida con el grupo de operaciones de red a cargo de este servidor de seguridad.
 
 En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas de los usuarios.
 
-## Topología del entorno de AEM {#topology-of-the-aem-environment}
+## Topología del entorno AEM {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-El diseño de la topología del entorno AEM requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno de usuario.
+El diseño de la topología del entorno AEM requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
 
 El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y medios dinámicos configurados.
 
-El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la instancia de AEM. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo conectado utiliza una conexión independiente.
+El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la instancia de AEM. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
-La instancia de AEM comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un único canal con diferentes servicios.
+La instancia de AEM comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
 
 Al revisar la red desde el dispositivo cliente a la instancia de AEM, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
 
-## Flujos de trabajo definidos de la instancia de AEM {#defined-workflows-of-the-aem-instance}
+## flujos de trabajo definidos de la instancia de AEM {#defined-workflows-of-the-aem-instance}
 
-Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, el almacenamiento S3 u otro almacenamiento conectado en red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
+Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 
 Para optimizar los procesos relacionados con la ingestión de recursos (especialmente al cargar un gran número de recursos), explore los flujos de trabajo de recursos y conozca mejor su configuración.
 
@@ -88,10 +91,10 @@ Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguient
 Estos son algunos de los temas a considerar:
 
 * Lectura y reescritura de metadatos XMP
-* Activación y replicación automáticas
+* activación y replicación automáticas
 * Marcas de agua
-* Extracción de páginas/ingestión de subconjuntos
-* Flujos de trabajo superpuestos.
+* extracción de página/ingestión de subconjuntos
+* flujos de trabajo superpuestos.
 
 Este es un ejemplo de cliente para la definición de un flujo de trabajo de recursos.
 

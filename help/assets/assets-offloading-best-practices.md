@@ -1,12 +1,12 @@
 ---
 title: Prácticas recomendadas de descarga de recursos
-description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de replicación e ingesta de recursos en Recursos AEM.
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
+description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de replicación e ingestión de recursos en Recursos AEM.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +17,13 @@ source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
 >
 >Esta función ya no se utiliza en AEM 6.4 y se elimina en AEM 6.5. Planifique en consecuencia.
 
-La gestión de archivos de gran tamaño y los flujos de trabajo en ejecución en Recursos Adobe Experience Manager (AEM) pueden consumir considerables recursos de CPU, memoria y E/S. En concreto, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia de ingestión de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor consumo de recursos incluyen los flujos de trabajo de replicación e ingestión de recursos de AEM. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
+La gestión de archivos de gran tamaño y flujos de trabajo en ejecución en Recursos Adobe Experience Manager (AEM) puede consumir considerables recursos de CPU, memoria y E/S. En particular, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia con la que se realiza la ingesta de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor consumo de recursos incluyen la ingestión de recursos de AEM y flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
 
-La descarga de estas tareas a instancias de trabajo dedicadas puede reducir los gastos de CPU, memoria y E/S. En general, la idea detrás de la descarga es distribuir tareas que consumen recursos intensivos de CPU/memoria/E a instancias de trabajo dedicadas. Las siguientes secciones incluyen casos de uso recomendados para la descarga de recursos.
+La descarga de estas tareas a instancias de trabajo dedicadas puede reducir los gastos de CPU, memoria y E/S. En general, la idea detrás de la descarga es distribuir tareas que consuman recursos intensivos de CPU/memoria/E a instancias de trabajo dedicadas. Las siguientes secciones incluyen casos de uso recomendados para la descarga de recursos.
 
 ## Descarga de AEM Assets {#aem-assets-offloading}
 
-AEM Assets implementa una extensión de flujo de trabajo nativa específica de recursos para la descarga. Se basa en la extensión genérica del flujo de trabajo que proporciona el marco de descarga, pero incluye funciones adicionales específicas de los recursos en la implementación. El objetivo de la descarga de recursos es ejecutar eficazmente el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos le permite obtener un mayor control de los flujos de trabajo de inserción.
+AEM Assets implementa una extensión de flujo de trabajo nativa específica de recursos para la descarga. Se basa en la extensión genérica del flujo de trabajo que proporciona el marco de descarga, pero incluye funciones adicionales específicas de los recursos en la implementación. El objetivo de la descarga de recursos es ejecutar eficazmente el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos le permite obtener un bueno control de los flujos de trabajo de ingestión.
 
 ## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
 
@@ -33,11 +33,11 @@ En el diagrama siguiente se muestran los componentes principales del proceso de 
 
 ### DAM Update Asset Offloading workflow {#dam-update-asset-offloading-workflow}
 
-El flujo de trabajo de descarga de recursos de actualización de DAM se ejecuta en el maestro (autor) donde el usuario carga los recursos. Este flujo de trabajo se activa mediante un iniciador de flujo de trabajo normal. En lugar de procesar el recurso cargado, este flujo de trabajo de descarga crea un nuevo trabajo con el tema *com/adobe/granite/workflow/offloading*. El flujo de trabajo de descarga agrega el nombre del flujo de trabajo de destino: el flujo de trabajo de recursos de actualización de DAM en este caso y la ruta del recurso a la carga útil del trabajo. Después de crear el trabajo de descarga, el flujo de trabajo de descarga del maestro espera hasta que se ejecute el trabajo de descarga.
+El flujo de trabajo de descarga de recursos de actualización de DAM se ejecuta en el servidor principal (autor) en el que el usuario carga los recursos. Este flujo de trabajo se activa mediante un iniciador de flujo de trabajo normal. En lugar de procesar el recurso cargado, este flujo de trabajo de descarga crea un nuevo trabajo con el tema *com/adobe/granite/workflow/offloading*. El flujo de trabajo de descarga agrega el nombre del flujo de trabajo de destinatario: el flujo de trabajo de recursos de actualización de DAM en este caso y la ruta del recurso a la carga útil del trabajo. Después de crear el trabajo de descarga, el flujo de trabajo de descarga en la instancia principal espera hasta que se ejecute el trabajo de descarga.
 
 ### Administrador de trabajos {#job-manager}
 
-El administrador de trabajos distribuye nuevos trabajos a instancias de trabajador. Al diseñar el mecanismo de distribución, es importante tener en cuenta la habilitación de temas. Los trabajos solo se pueden asignar a instancias en las que el tema del trabajo está activado. Deshabilite el tema *com/adobe/granite/workflow/offloading* en el maestro y habilite este tema en el trabajador para asegurarse de que el trabajo está asignado al trabajador.
+El administrador de trabajos distribuye nuevos trabajos a instancias de trabajador. Al diseñar el mecanismo de distribución, es importante tener en cuenta la habilitación de temas. Los trabajos solo se pueden asignar a instancias en las que el tema del trabajo está activado. Deshabilite el tema `com/adobe/granite/workflow/offloading` en el principal y habilite el trabajo en el trabajador para asegurarse de que el trabajo está asignado al trabajador.
 
 ### Descarga de AEM {#aem-offloading}
 
@@ -61,11 +61,11 @@ En este contexto, el término distribución significa la asignación de un traba
 
 ### Granite offloading framework {#granite-offloading-framework}
 
-El marco de descarga Granite complementa la distribución de trabajos Sling para ejecutar trabajos asignados a instancias no agrupadas. No realiza ninguna distribución (asignación de instancia). Sin embargo, identifica los trabajos de Sling que se distribuyeron a instancias no agrupadas y los transporta a la instancia de destino para su ejecución. Actualmente, la descarga utiliza la replicación para realizar este transporte de trabajo. Para ejecutar un trabajo, la descarga define la entrada y la salida, que luego se combinan con el trabajo para generar la carga útil del trabajo.
+El marco de descarga Granite complementa la distribución de trabajos Sling para ejecutar trabajos asignados a instancias no agrupadas. No realiza ninguna distribución (asignación de instancia). Sin embargo, identifica los trabajos de Sling que se distribuyeron a instancias no agrupadas y los transporta a la instancia de destinatario para su ejecución. Actualmente, la descarga utiliza la replicación para realizar este transporte de trabajo. Para ejecutar un trabajo, la descarga define la entrada y la salida, que luego se combinan con el trabajo para generar la carga útil del trabajo.
 
 La sling de los trabajos distribuidos proporciona el marco de trabajo y distribución. La descarga de granito sólo se ocupa del transporte en el caso especial en que los trabajos se distribuyen a instancias no agrupadas.
 
-Además del transporte, el marco de descarga proporciona una extensión para el motor de flujo de trabajo. Permite al marco crear trabajos distribuidos como parte de un flujo de trabajo y esperar a que se completen, antes de que avance el flujo de trabajo. Se implementa mediante la API de paso externo del flujo de trabajo del motor de flujo de trabajo. Una de las extensiones facilita la distribución genérica de los flujos de trabajo. No se admite la distribución de pasos de flujo de trabajo únicos.
+Además del transporte, el sistema de descarga ofrece una ampliación del motor de flujos de trabajo. Permite al marco crear trabajos distribuidos como parte de un flujo de trabajo y esperar a que se completen, antes de que avance el flujo de trabajo. Se implementa mediante la API de paso externo del flujo de trabajo del motor de flujos de trabajo. Una de las extensiones facilita la distribución genérica de flujos de trabajo. No se admite la distribución de pasos de flujo de trabajo únicos.
 
 El marco de descarga también incluye una interfaz de usuario para visualizar y controlar la habilitación de temas de trabajo en toda la topología. La interfaz de usuario le permite configurar convenientemente la habilitación de temas de los trabajos distribuidos de Sling. También puede configurar la descarga sin la interfaz de usuario.
 
@@ -76,8 +76,8 @@ Cada implementación es única y, como tal, no existe una configuración de desc
 La descarga de activos también impone gastos generales al sistema, incluidos los gastos generales de funcionamiento. Si se producen problemas con la carga de ingestión de recursos, Adobe recomienda mejorar primero la configuración sin descargar. Considere las siguientes opciones antes de pasar a la descarga de recursos:
 
 * Escalar hardware
-* Optimice los flujos de trabajo
-* Utilizar flujos de trabajo transitorios
+* Optimizar flujos de trabajo
+* Usar flujos de trabajo transitorios
 * Limitar el número de núcleos utilizados para los flujos de trabajo
 
 Si llega a la conclusión de que la descarga de recursos es un método adecuado para usted, Adobe proporciona las siguientes instrucciones:
@@ -104,14 +104,17 @@ Adobe recomienda desactivar la administración automática de agentes porque no 
 
 ### Uso de la replicación avanzada {#using-forward-replication}
 
-De forma predeterminada, el transporte de descarga utiliza la replicación inversa para recuperar los recursos descargados del programa de trabajo al maestro. Los agentes de replicación inversa no admiten replicación sin binarios. Debe configurar la descarga para que utilice la replicación de reenvío para volver a insertar los recursos descargados de trabajador a maestro.
+De forma predeterminada, el transporte de descarga utiliza la replicación inversa para recuperar los recursos descargados del programa de trabajo al principal. Los agentes de replicación inversa no admiten replicación sin binarios. Debe configurar la descarga para que utilice la replicación de reenvío a fin de que los recursos descargados vuelvan del programa de trabajo al primario.
 
-1. Si va a realizar la migración desde la configuración predeterminada mediante la replicación inversa, deshabilite o elimine todos los agentes denominados &quot; `offloading_outbox`&quot; y &quot; `offloading_reverse_*`&quot; en maestro y trabajador, donde &amp;ast; representa el identificador Sling de la instancia de destino.
-1. En cada trabajador, cree un nuevo agente de replicación avanzada que apunte al maestro. El procedimiento es el mismo que crear agentes de reenvío de maestro a trabajador. Consulte [Creación de agentes de replicación para descarga](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) para obtener instrucciones sobre cómo configurar agentes de replicación de descarga.
+1. Si va a realizar la migración desde la configuración predeterminada mediante la replicación inversa, deshabilite o elimine todos los agentes denominados &quot; `offloading_outbox`&quot; y &quot; `offloading_reverse_*`&quot; en el programa de trabajo y en el programa de trabajo principal, donde &amp;ast; representa el identificador Sling de la instancia de destinatario.
+1. En cada programa de trabajo, cree un nuevo agente de replicación avanzada que apunte al programa principal. El procedimiento es el mismo que crear agentes de reenvío de principal a trabajador. Consulte [Creación de agentes de replicación para descarga](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) para obtener instrucciones sobre cómo configurar agentes de replicación de descarga.
 1. Abra la configuración para `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Cambiar el valor de la propiedad `default.transport.agent-to-master.prefix` de `offloading_reverse` a `offloading`.
 
-### Uso del almacén de datos compartido y la replicación sin binarios entre el autor y los trabajadores {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
+
+### Uso del almacén de datos compartido y la replicación sin binarios entre el autor y los trabajadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 Se recomienda el uso de replicación sin binarios para reducir la sobrecarga de transporte de descarga de recursos. Para saber cómo configurar la replicación sin binarios para un almacén de datos compartido, consulte [Configuración de almacenes de nodos y almacenes de datos en AEM](/help/sites-deploying/data-store-config.md). El procedimiento no es diferente para la descarga de recursos, excepto que incluye otros agentes de replicación. Debido a que la replicación sin binarios sólo funciona con agentes de replicación de avanzada, también debe utilizar la replicación de reenvío para todos los agentes de descarga.
 
@@ -134,12 +137,12 @@ Para desactivar el transporte del modelo de flujo de trabajo, modifique el flujo
 1. Abra la ficha Modelos.
 1. Abra el modelo de flujo de trabajo de descarga de recursos de actualización DAM.
 1. Abra las propiedades de paso para el paso Descarga del flujo de trabajo DAM.
-1. Abra la ficha Argumentos y anule la selección de las opciones Agregar modelo a entrada y Agregar modelo a salida.
+1. Abra la ficha Argumentos y anule la selección de las opciones Añadir modelo a entrada y Añadir modelo a salida.
 1. Guarde los cambios en el modelo.
 
 ### Optimización del intervalo de sondeo {#optimizing-the-polling-interval}
 
-La descarga del flujo de trabajo se implementa mediante un flujo de trabajo externo en el maestro, que sondea la finalización del flujo de trabajo descargado en el trabajador. El intervalo de sondeo predeterminado para los procesos de flujo de trabajo externo es de cinco segundos. Adobe recomienda aumentar el intervalo de sondeo del paso de descarga de recursos a al menos 15 segundos para reducir la sobrecarga de descarga en el patrón.
+La descarga del flujo de trabajo se implementa mediante un flujo de trabajo externo en el servidor primario, que sondea la finalización del flujo de trabajo descargado en el programa de trabajo. El intervalo de sondeo predeterminado para los procesos de flujo de trabajo externo es de cinco segundos. Adobe recomienda aumentar el intervalo de sondeo del paso de descarga de recursos a al menos 15 segundos para reducir la sobrecarga de descarga en el elemento principal.
 
 1. Abra la consola de flujo de trabajo desde [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 

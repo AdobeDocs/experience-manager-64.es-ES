@@ -4,9 +4,9 @@ description: Obtenga información sobre varias tareas de edición y administraci
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
+source-wordcount: '9812'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ Antes de cargar un recurso, asegúrese de que tiene un formato [](assets-formats
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+
    ![create_menu](assets/create_menu.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl/Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Desde un iPad, solo puede seleccionar un archivo a la vez.
@@ -116,6 +117,7 @@ Antes de cargar un recurso, asegúrese de que tiene un formato [](assets-formats
    Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
    * el nombre del archivo de recurso no debe contener  `* / : [ \ \ ] | # % { } ? &`
    * el nombre de la carpeta de recursos no debe contener  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    Además, la interfaz de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero en todas las vistas (vista **[!UICONTROL de]** tarjetas, vista **[!UICONTROL de]** Lista y vista **[!UICONTROL de]** columnas).
 
    A menudo, mientras se cargan recursos grandes o múltiples simultáneamente, los indicadores visuales le permiten evaluar el progreso. El cuadro de diálogo Progreso **[!UICONTROL de la]** carga muestra el número de archivos cargados correctamente y los archivos que no se han podido cargar.
@@ -178,7 +180,7 @@ Si utiliza FTP para cargar recursos, se ignora la configuración de carga especi
 | Opciones de trabajo |  | Toque o haga clic en Opciones **[!UICONTROL de]** trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Toque el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y sus subcarpetas que cargue se introducirán automáticamente en Recursos AEM. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript e Illustrator. |
@@ -192,7 +194,7 @@ Si utiliza FTP para cargar recursos, se ignora la configuración de carga especi
 
 Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar las siguientes acciones de edición en el cuadro de diálogo Opciones **[!UICONTROL de trabajo de]** carga:
 
-* Recorte el espacio en blanco desde el borde de las imágenes (consulte la descripción en la tabla anterior).
+* Recorte los espacios en blanco desde el borde de las imágenes (consulte la descripción en la tabla anterior).
 * Recortar manualmente desde los lados de las imágenes (consulte la descripción en la tabla anterior).
 * Elija un perfil de color (consulte la descripción de la opción en la tabla anterior).
 * Crear una máscara a partir de un trazado de recorte.
@@ -379,6 +381,7 @@ Para crear etiquetas, necesita permiso de escritura para `/content/cq:tags/defau
    * Número de veces que se ha visualizado o descargado el recurso.
    * Canales/dispositivos a través de los cuales se utilizó el recurso.
    * Soluciones creativas en las que el recurso se ha utilizado recientemente.
+
    Para obtener más información, consulte Perspectivas [de recursos](touch-ui-asset-insights.md).
 
 1. Toque **[!UICONTROL Guardar y cerrar]**.
@@ -432,6 +435,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    * Especifique el nombre del recurso después de moverlo. A continuación, toque **[!UICONTROL Siguiente]** para continuar.
    * Toque **[!UICONTROL Cancelar]** para detener el proceso.
+
    >[!NOTE]
    >
    >Puede especificar el mismo nombre para el recurso si no hay ningún recurso con ese nombre en la nueva ubicación. Sin embargo, debe utilizar un nombre diferente si mueve el recurso a una ubicación en la que exista un recurso con el mismo nombre. Si utiliza el mismo nombre, el sistema genera automáticamente una variación del nombre. Por ejemplo, si el recurso tiene el nombre Cuadrado, el sistema genera el nombre Cuadrado1 para su copia.
@@ -456,6 +460,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * En la columna **[!UICONTROL Ajustar]** , seleccione o anule la selección de referencias a los recursos.
    * Puntee **[!UICONTROL Atrás]** para volver a la página **[!UICONTROL Seleccionar destino]** .
    * Toque **[!UICONTROL Cancelar]** para detener la operación de movimiento.
+
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
 
 ## Administrar representaciones {#managing-renditions}
@@ -535,6 +540,7 @@ Para poder eliminar un recurso, se requieren permisos de eliminación en la repr
 
       * Si el recurso no tiene referencias, se elimina.
       * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia **[!UICONTROL a]** uno o varios recursos. Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso.
@@ -667,6 +673,7 @@ También puede agregar mapas de imagen mediante el editor de imágenes. Para obt
    * Seleccione el recurso y, a continuación, haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    * Puntee en la opción **[!UICONTROL Editar]** que se muestra en un recurso de la vista de tarjeta.
    * En la página de recursos, toque el icono **[!UICONTROL Editar]** de la barra de herramientas.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Para recortar la imagen, toque **[!UICONTROL Recortar]**.
@@ -738,6 +745,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
 
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.

@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +83,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **** Tipo de actividad: El tipo de actividad: Prueba A/B o segmentación de experiencias
+* **Tipo de Actividad:** Tipo de actividad: Prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
@@ -108,9 +111,10 @@ Para añadir una actividad:
 1. Agregue una o varias experiencias a la actividad. Pulse o haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación AEM o la segmentación por experiencia de Adobe Target:
 
-   1. Toque o haga clic en **Seleccionar audiencia **y seleccione el segmento al que se dirige la experiencia.
+   1. Haga clic o toque **Seleccione Audiencia **y seleccione el segmento que destinatario su experiencia.
    1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
    1. Haga clic o pulse **Siguiente**.
+
    Si utiliza la prueba A/B de Adobe Target:
 
    1. Haga clic o pulse el lápiz en el cuadro de audiencias para seleccionar una audiencia.
@@ -143,7 +147,7 @@ Debe publicar actividades para que puedan estar disponibles. Por el contrario, e
 
 >[!NOTE]
 >
->Cuando se cancela la publicación de una actividad,
+>Al cancelar la publicación de una actividad, el estado de la actividad no cambia a menos que actualice la página.
 
 Para publicar o cancelar la publicación de actividades:
 
@@ -179,6 +183,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    * Desactiva la actividad actual
    * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
@@ -224,7 +229,7 @@ Para evitar problemas de sincronización, use siempre nombres exclusivos para la
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por lo tanto, los nombres de campaña no se pueden reutilizar en diferentes tipos de campaña.
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; Por lo tanto, los nombres de campaña no pueden reutilizarse en diferentes tipos de campaña.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

@@ -11,7 +11,10 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-64.en
 index: y
 translation-type: tm+mt
-source-git-commit: 9b01573286810356a93d7bc632363624523cd48c
+source-git-commit: a58558fe18743e1aee0d65da7a2140561bc97e98
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 12%
 
 ---
 
@@ -22,17 +25,17 @@ El archivo metadata.md incluye metadatos de nivel de repos que pasan a los archi
 
 | metadata | lo que hace |
 |--- |--- |
-| solution-title | Se utiliza en el encabezado del artículo como vínculo |
-| solution-hub-url | Abre la página del concentrador de ayuda |
-| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún |
-| getting-started-url | Vínculo a la página de introducción de ayuda |
-| tutorials-url | Vínculo a tutoriales de vídeo: tutoriales de ayuda o tutoriales de KT |
-| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. el valor predeterminado es 2 |
-| git-repo | Especifica la ubicación de la repo principal para uso interno |
+| solution-title | Se utiliza en el encabezado del artículo como vínculo. |
+| solution-hub-url | Abre la página del centro de aprendizaje y asistencia técnica. |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado. |
+| getting-started-url | Vínculo a la página de introducción. |
+| tutorials-url | Vínculo a los tutoriales de vídeo. |
+| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
+| git-repo | Especifica la ubicación de la repo principal para uso interno. |
 
 En el archivo TOC.md
 
 | metadata | lo que hace |
 |--- |--- |
-| user-guide-title | Se utiliza en el encabezado del artículo como vínculo |
-| user-guide-url | Abre la página del concentrador de ayuda |
+| user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
+| user-guide-url | Abre la página del centro de aprendizaje y asistencia técnica. |

@@ -1,8 +1,8 @@
 ---
 title: Puntuación y distintivos de comunidades
 seo-title: Puntuación y distintivos de comunidades
-description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
-seo-description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+seo-description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2885'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
 
 ## Información general {#overview}
 
-La función de puntuación y distintivos de comunidades de AEM permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos para AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los principales aspectos de la puntuación y las insignias son:
 
@@ -108,7 +111,7 @@ En la versión se incluyen tres distintivos basados en premios:
 
 Las insignias personalizadas se pueden instalar mediante la consola [](badges.md) Insignias y se pueden asignar o especificar en las reglas de identificación.
 
-Cuando se instalan desde la consola de distintivos, los distintivos personalizados se replican automáticamente en el entorno de publicación.
+Cuando se instalan desde la consola Insignias, los distintivos personalizados se replican automáticamente en el entorno de publicación.
 
 ## Habilitar puntuación {#enable-scoring}
 
@@ -225,7 +228,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nod
      <li>puede haber varias propiedades de verbo, pero no duplicados</li> 
      <li>el valor es la puntuación que se aplicará a este evento</li> 
      <li>el valor puede ser positivo o negativo</li> 
-     <li>una lista de los verbos admitidos en la versión se encuentra en la sección <a href="#topics-and-verbs">Temas y verbos</a></li> 
+     <li>una lista de verbos admitidos en la versión se encuentra en la sección <a href="#topics-and-verbs">Temas y verbos</a></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -233,9 +236,9 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`nod
    <td>Cadena[]</td> 
    <td> 
     <ul> 
-     <li>opcional; restringe la subregla a los componentes de la comunidad identificados por los temas del evento</li> 
+     <li>opcional; restringe la subregla a los componentes de la comunidad identificados por los temas de evento</li> 
      <li>si se especifica: el valor es una cadena de varios valores de temas de evento</li> 
-     <li>una lista de temas de la versión se encuentra en la sección <a href="#topics-and-verbs">Temas y verbos</a></li> 
+     <li>una lista de los temas de la versión se encuentra en la sección <a href="#topics-and-verbs">Temas y verbos</a></li> 
      <li>el valor predeterminado es aplicar a todos los temas asociados con los verbos</li> 
     </ul> </td> 
   </tr> 
@@ -311,7 +314,7 @@ La versión incluye dos reglas de puntuación para la función [](functions.md#f
 
 ### Activación de reglas de puntuación personalizadas {#activating-custom-scoring-rules}
 
-Los cambios o adiciones realizados en las reglas de puntuación o subreglas en el entorno de creación deben instalarse en la publicación.
+Los cambios o adiciones realizados en las reglas de puntuación o subreglas realizados en el entorno de creación deben instalarse en la publicación.
 
 ## Reglas de insignia {#badging-rules}
 
@@ -361,7 +364,7 @@ La `scoringRules`propiedad de una regla de identificación simplemente restringe
      <li>number = score</li> 
      <li>| = el carácter de línea vertical (U+007C)</li> 
      <li>path = ruta completa al recurso de imagen de distintivo</li> 
-    </ul> Las cadenas deben ordenarse de modo que los números aumenten en valor y no debería aparecer ningún espacio en blanco entre el número y la ruta.<br /><br /> Ejemplo de entrada: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> Las cadenas deben ordenarse para que los números aumenten de valor y no se muestre ningún espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -393,7 +396,7 @@ En la versión se incluyen dos reglas de asignación de distintivos que correspo
 
 ### Activación de reglas de distintivo personalizadas {#activating-custom-badging-rules}
 
-Los cambios o adiciones realizados en las reglas de marcado o en las imágenes realizadas en el entorno de creación deben instalarse en la publicación.
+Cualquier cambio o adición que se realice en las reglas de marcado o en las imágenes realizadas en el entorno del autor debe instalarse en la publicación.
 
 ## Asignar y revocar distintivos {#assign-and-revoke-badges}
 
@@ -407,24 +410,25 @@ cURL -i -X POST -H *header* -u *inicio de sesión * -F *operación * -F *distint
 encabezado personalizado para pasar al servidor (requerido)
 
 *inicio de sesión* = id-administrador:contraseña\
- por ejemplo: admin:admin
+por ejemplo: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = la ubicación del archivo de imagen del distintivo en el repositorio\
- por ejemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
+por ejemplo: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
-*miembro-profile-url* = el extremo del perfil del miembro al publicar\
- por ejemplo: https://&lt;servidor>:&lt;puerto>/home/users/community/riley/profile.social.json
+*miembro-perfil-url* = el extremo del perfil del miembro al publicar\
+por ejemplo: https://&lt;servidor>:&lt;puerto>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
->El *miembro-profile-url*
+>El *miembro-perfil-url*
 >
 >* Puede hacer referencia a una instancia de autor si el [servicio](users.md#tunnel-service) de túnel está habilitado
 >* Puede ser un nombre oscuro y aleatorio; consulte Lista de comprobación [de seguridad](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) con respecto a un ID autorizado
+
 >
 
 
@@ -449,7 +453,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 ## Puntuación y distintivos para componentes personalizados {#scoring-and-badges-for-custom-components}
 
-Se pueden crear reglas de puntuación y de identificación para componentes personalizados asociando los temas de evento creados para el componente con verbos.
+Las reglas de puntuación y de distintivo se pueden crear para componentes personalizados asociando los temas de evento creados para el componente con verbos.
 
 ## Temas y verbos {#topics-and-verbs}
 
@@ -469,8 +473,8 @@ Para los componentes de comunidades entregados, en las tablas siguientes se desc
 |---|---|
 | POST | miembro crea un evento de calendario |
 | AÑADIR | comentarios de miembros en un evento de calendario |
-| ACTUALIZAR | se edita el evento de calendario o comentario del miembro |
-| ELIMINAR | se elimina el evento de calendario o comentario del miembro |
+| ACTUALIZAR | se edita el evento o comentario del calendario del miembro |
+| ELIMINAR | se elimina el evento o comentario del calendario del miembro |
 
 **[Componente](comments.md)**ComentariosSocialEvent`topic`= com/adobe/cq/social/comment
 
@@ -499,7 +503,7 @@ Para los componentes de comunidades entregados, en las tablas siguientes se desc
 | ACTUALIZAR | se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
 
-**[Journal Component](blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/journal
+**[Componente](blog-feature.md)**HistorialSocialEvent`topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -531,14 +535,14 @@ Para los componentes de comunidades entregados, en las tablas siguientes se desc
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR CLASIFICACIÓN | el contenido del miembro se ha valorado |
+| AÑADIR CLASIFICACIÓN | el contenido del miembro se ha valorado |
 | QUITAR CLASIFICACIÓN | el contenido del miembro se ha reducido |
 
 **[Componente](voting.md)**de votaciónSocialEvent`topic`= com/adobe/cq/social/tally/vote
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR VOTACIÓN | el contenido de los miembros ha sido votado |
+| AÑADIR VOTACIÓN | el contenido de los miembros ha sido votado |
 | ELIMINAR VOTACIÓN | el contenido de los miembros ha sido rechazado |
 
 **Componentes** habilitados para moderaciónSocialEvent `topic`= com/adobe/cq/social/moderation
@@ -552,7 +556,7 @@ Para los componentes de comunidades entregados, en las tablas siguientes se desc
 | CERRAR | el miembro cierra los comentarios a las ediciones y las respuestas |
 | ABRIR | miembro vuelve a abrir el comentario |
 
-### Eventos de componente personalizados {#custom-component-events}
+### Eventos de componentes personalizados {#custom-component-events}
 
 Para un componente personalizado, se crea una instancia de SocialEvent para registrar los eventos del componente `actions`que se producen para un `topic`.
 
@@ -587,23 +591,23 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
 
    * /content/sites/engagement/es/jcr:content
 
-* Agregue la propiedad badgingRules:
+* Añada la propiedad badgingRules:
 
    * **Nombre**: `badgingRules`
    * **Tipo**: `String`
    * Seleccionar **[!UICONTROL varios]**
-   * Seleccione **[!UICONTROL Agregar]**
+   * Seleccionar **[!UICONTROL Añadir]**
    * Enter `/etc/community/badging/rules/forums-badging`
    * Seleccione `+`
    * Enter `/etc/community/badging/rules/comments-badging`
    * Seleccione **[!UICONTROL Aceptar]**
 
-* Agregue la propiedad scoringRules:
+* Añada la propiedad scoringRules:
 
    * **Nombre**: `scoringRules`
    * **Tipo**: `String`
    * Seleccionar **[!UICONTROL varios]**
-   * Seleccione **[!UICONTROL Agregar]**
+   * Seleccionar **[!UICONTROL Añadir]**
    * Enter `/etc/community/scoring/rules/forums-scoring`
    * Seleccione `+`
    * Enter `/etc/community/scoring/rules/comments-scoring`
@@ -613,14 +617,14 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
 
 ![chlimage_1-370](assets/chlimage_1-370.png)
 
-A continuación, asegúrese de que los componentes de foro y comentarios permiten que se muestren distintivos:
+A continuación, asegúrese de que los componentes de foro y comentarios permiten mostrar distintivos:
 
 * De nuevo con CRXDE Lite
 * Vaya al componente de foro
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-* Agregue la propiedad booleana allowBadges, si es necesario, y asegúrese de que es verdadera
+* Añada la propiedad booleana allowBadges, si es necesario, y asegúrese de que es verdadera
 
    * **Nombre**: `allowBadges`
    * **Tipo**: `Boolean`

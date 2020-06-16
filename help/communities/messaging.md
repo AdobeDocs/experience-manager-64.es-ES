@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Información general {#overview}
 
-La función de mensajería de Comunidades AEM permite a los visitantes (miembros) del sitio que inician sesión enviarse mensajes entre sí a los que se puede acceder cuando inician sesión en el sitio.
+La función de mensajería para AEM Communities permite a los visitantes del sitio (miembros) con sesión iniciada enviarse mensajes entre sí a los que se puede acceder cuando se inician sesión en el sitio.
 
 La mensajería se habilita para un sitio de comunidad marcando una casilla durante la creación [del sitio de](sites-console.md)comunidad.
 
@@ -29,7 +32,7 @@ Para obtener información adicional para desarrolladores, consulte [Messaging Es
 
 ## Servicio de operaciones de mensajería {#messaging-operations-service}
 
-El servicio [de operaciones de mensajería de comunidades de](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivo están permitidos.
+El servicio [de operaciones de mensajería de](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities identifica el punto final que gestiona las solicitudes relacionadas con los mensajes, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivos están permitidos.
 
 Para los sitios de comunidad creados con la consola [Sitios de](sites-console.md)comunidades, ya existe una instancia del servicio, con la bandeja de entrada configurada en `/mail/community/inbox`.
 
@@ -45,17 +48,17 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Lista blanca de campos del mensaje]** Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: *asunto* y *contenido*.
+* **[!UICONTROL Campos de mensaje Lista permitida]** Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: *asunto* y *contenido*.
 
 * **[!UICONTROL Límite]** de tamaño del cuadro de mensaje El número máximo de bytes en el cuadro de mensaje de cada usuario. El valor predeterminado es *1073741824* (1 GB).
 
 * **[!UICONTROL Límite]** de recuento de mensajes El número total de mensajes permitidos por usuario. Un valor de -1 indica que se permite un número ilimitado de mensajes, con sujeción al límite de tamaño del cuadro de mensaje. El valor predeterminado es *10000* (10 k).
 
-* **[!UICONTROL Error]** en la notificación de entrega Si está activado, notifique al remitente si la entrega de mensajes falla en algunos destinatarios. El valor predeterminado está *marcado*.
+* **[!UICONTROL Error]** de notificación de envío Si está activado, notifique al remitente si el envío de mensajes falla en algunos destinatarios. El valor predeterminado está *marcado*.
 
-* **[!UICONTROL Error al enviar el id.]** de remitenteNombre del remitente que aparece en el mensaje de error de entrega. El valor predeterminado es *failNotifier*.
+* **[!UICONTROL Error en el envío del id. de remitente]** Nombre del remitente que aparece en el mensaje de error de envío. El valor predeterminado es *failNotifier*.
 
-* **[!UICONTROL Ruta]** de la plantilla de mensaje de error Ruta absoluta a la raíz de la plantilla de mensaje de entrega fallida. El valor predeterminado es */etc/notification/messaging/default*.
+* **[!UICONTROL Ruta]** de la plantilla de mensaje de error La ruta absoluta de la plantilla de mensaje de envío falló. El valor predeterminado es */etc/notification/messaging/default*.
 
 * **[!UICONTROL maxRetries.name]** Número de veces que se intenta reenviar el mensaje que no se puede entregar. El valor predeterminado es *3*.
 
@@ -73,20 +76,20 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
 * **[!UICONTROL maxTotalAttachmentSize.name]** Si se comprueba supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlacklist.name]** Una lista negra de extensiones de archivo con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
+* **[!UICONTROL attachmentTypeAllowlist.name]** Una lista de bloqueo de extensiones de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
-   **(*Acción requerida*)** Lista blanca de extensiones de archivo, la opuesta a la lista negra. Para permitir todas las extensiones de archivo, excepto las que estén bloqueadas, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
+   **(*Acción requerida*)** Una lista de permitidas de extensiones de archivo, lo contrario de la lista de bloqueos. Para permitir todas las extensiones de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
 
 * **[!UICONTROL serviceSelector.name]**(*Requerido*) Una ruta absoluta (extremo) a través de la cual se invoca el servicio (recurso virtual). La raíz de la ruta elegida debe estar incluida en la configuración de rutas *de* ejecución de la configuración de OSGi [`Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`y `/services/`. Para seleccionar esta configuración para la función de mensajería de un sitio, este extremo se proporciona como el **`Service selector`** valor para la `Message List and Compose Message components` (consulte Función [de](configure-messaging.md)mensaje). El valor predeterminado es */bin/messaging* .
 
-* **[!UICONTROL fieldWhitelist.name]** Usar lista blanca Campos **de mensaje**.
+* **[!UICONTROL fieldAllowlist.name]** Usar lista de permitidas de campos **de mensaje**.
 
 >[!CAUTION]
 >
 >Cada vez que se abre una `Messaging Operations Service` configuración para editarla, si `allowedAttachmentTypes.name` se ha eliminado, se vuelve a agregar una entrada vacía para que la propiedad se pueda configurar. Una sola entrada vacía deshabilita los archivos adjuntos de forma efectiva.
 >
->Para permitir todas las extensiones de archivo, excepto las que estén bloqueadas, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **[!UICONTROL Guardar]**.
+>Para permitir todas las extensiones de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **[!UICONTROL Guardar]**.
 
 ## Solución de problemas {#troubleshooting}
 

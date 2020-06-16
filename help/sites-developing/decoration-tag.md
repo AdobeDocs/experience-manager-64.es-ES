@@ -2,7 +2,7 @@
 title: Etiqueta decorativa
 description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM oferta una lógica clara y sencilla que controla las etiquetas de decoración que envuelven los componentes incluidos.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Etiqueta decorativa{#decoration-tag}
+# Etiqueta decorativa {#decoration-tag}
 
 Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Esto sirve principalmente para dos fines:
 
@@ -38,9 +38,7 @@ A continuación se ofrecen algunas recomendaciones generales sobre cuándo inclu
 Se pueden aplicar las siguientes propiedades y nodos a los componentes para controlar el comportamiento de su etiqueta decorativa:
 
 * **`cq:noDecoration {boolean}`::**Esta propiedad se puede agregar a un componente y un valor verdadero fuerza a AEM a no generar ningún elemento envolvente sobre el componente.
-
 * **`cq:htmlTag`node :**Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
-
    * **`cq:tagName {String}`::**Se puede utilizar para especificar una etiqueta HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
    * **`class {String}`::**Se puede utilizar para especificar los nombres de clase css que se añadirán al contenedor.
    * Otros nombres de propiedad se agregarán como atributos HTML con el mismo valor de cadena que se proporciona.

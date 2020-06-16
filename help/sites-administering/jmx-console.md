@@ -1,8 +1,8 @@
 ---
 title: Monitoreo de los recursos del servidor mediante la consola JMX
 seo-title: Monitoreo de los recursos del servidor mediante la consola JMX
-description: Aprenda a supervisar los recursos del servidor mediante la consola JMX.
-seo-description: Aprenda a supervisar los recursos del servidor mediante la consola JMX.
+description: Learn how to monitor server resources using the JMX console.
+seo-description: Learn how to monitor server resources using the JMX console.
 uuid: b3cfcc0b-69db-415d-9244-ac22a7387247
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 0798ae5c-e06e-425f-ba8a-9309eb233083
 translation-type: tm+mt
-source-git-commit: 4fb1ee53c73d6c8e175109bc14def612ec360f04
+source-git-commit: 5b9a966480d98403311cdddcbffa267bde68dd1b
+workflow-type: tm+mt
+source-wordcount: '4948'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ Para obtener información sobre cómo utilizar los controles de consola, consult
 
 Para obtener información sobre la creación de MBeans para administrar los servicios mediante la consola JMX, consulte [Integración de servicios con la consola](/help/sites-developing/jmx-integration.md)JMX.
 
-## Mantenimiento de flujo de trabajo {#workflow-maintenance}
+## Workflow Maintenance {#workflow-maintenance}
 
-Operaciones para administrar instancias de flujo de trabajo en ejecución, finalizadas, obsoletas y con errores.
+Operations for administering running, completed, stale, and failed workflow instances.
 
 * Dominio: com.adobe.granite.workflow
 * Tipo: Mantenimiento
@@ -36,17 +39,17 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
 
 ### Operaciones {#operations}
 
-**listRunningWorkflowsPerModel** Muestra el número de instancias de flujo de trabajo que se están ejecutando para cada modelo de flujo de trabajo.
+**listRunningWorkflowsPerModel** Lista el número de instancias de flujo de trabajo que se ejecutan para cada modelo de flujo de trabajo.
 
 * Argumentos: none
 * Valor devuelto: Datos tabulares que contienen las columnas Count y ModelId.
 
-**listCompletedWorkflowsPerModel** Muestra el número de instancias de flujo de trabajo completadas para cada modelo de flujo de trabajo.
+**listCompletedWorkflowsPerModel** Lista el número de instancias de flujo de trabajo completadas para cada modelo de flujo de trabajo.
 
 * Argumentos: none
 * Valor devuelto: Datos tabulares que contienen las columnas Count y ModelId.
 
-**returnWorkflowQueueInfo** Muestra información sobre los elementos de flujo de trabajo que se han procesado y que están en cola para su procesamiento.
+**returnWorkflowQueueInfo** Lista información sobre los elementos de flujo de trabajo que se han procesado y que están en cola para su procesamiento.
 
 * Argumentos: none
 * Valor devuelto: Datos tabulares que contienen las siguientes columnas:
@@ -62,7 +65,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
    * Trabajos procesados
    * Trabajos en cola
 
-**returnWorkflowJobTopicInfo** Enumera la información de procesamiento de los trabajos de flujo de trabajo, organizada por tema.
+**returnWorkflowJobTopicInfo** Lista la información de procesamiento de los trabajos de flujo de trabajo, organizados por tema.
 
 * Argumentos: none
 * Valor devuelto: Datos tabulares que contienen las siguientes columnas:
@@ -75,11 +78,11 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
    * Trabajos finalizados
    * Trabajos procesados
 
-**returnFailedWorkflowCount** Muestra el número de instancias de flujo de trabajo que han fallado. Puede especificar un modelo de flujo de trabajo para consultar o recuperar información para todos los modelos de flujo de trabajo.
+**returnFailedWorkflowCount** Muestra el número de instancias de flujo de trabajo que han fallado. Puede especificar un modelo de flujo de trabajo para la consulta o recuperar información para todos los modelos de flujo de trabajo.
 
 * Argumentos:
 
-   * modelo: ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique ningún valor. El ID es la ruta al nodo del modelo, por ejemplo:
+   * modelo: ID del modelo que se va a consulta. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique ningún valor. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
@@ -134,7 +137,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
    * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de días transcurridos desde que se inició el flujo de trabajo:La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días.
+   * Número de días transcurridos desde que se inició el flujo de trabajo: La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días.
    * Ensayo: (Opcional) Especifique un valor de para `true` ver los resultados de la operación sin realizar la operación. El valor predeterminado de `false` hace que la operación se realice.
 
 * Valor devuelto: Datos tabulares sobre las instancias de flujo de trabajo activas que se purgan, incluidas las siguientes columnas:
@@ -165,9 +168,9 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Ensayo: (Opcional) Especifique un valor de para `true` ver los resultados de la operación sin realizar la operación. El valor predeterminado de `false` hace que la operación se realice.
 
-* Valor devuelto: Lista de instancias de flujo de trabajo que se reinician.
+* Valor devuelto: lista de instancias de flujo de trabajo que se reinician.
 
-**fetchModelList** Enumera todos los modelos de flujo de trabajo.
+**fetchModelList** Lista todos los modelos de flujo de trabajo.
 
 * Argumentos: none
 * Valor devuelto: Datos tabulares que identifican los modelos de flujo de trabajo, incluidas las columnas ModelId y ModelName.
@@ -192,7 +195,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, final
 
 * Valor devuelto: Número de instancias de flujo de trabajo completadas.
 
-**purgeCompleted** Quita del repositorio los registros de flujos de trabajo completados de una antigüedad específica. Utilice esta operación periódicamente para minimizar el tamaño del repositorio cuando utilice con frecuencia los flujos de trabajo. Puede purgar instancias completadas para todos los modelos o solo las instancias para un modelo específico. Opcionalmente, puede probar la operación para ver los resultados sin realizar la operación.
+**purgeCompleted** Quita del repositorio los registros de flujos de trabajo completados de una página específica. Utilice esta operación periódicamente para minimizar el tamaño del repositorio cuando utilice con frecuencia flujos de trabajo. Puede purgar instancias completadas para todos los modelos o solo las instancias para un modelo específico. Opcionalmente, puede probar la operación para ver los resultados sin realizar la operación.
 
 * Argumentos:
 
@@ -249,8 +252,8 @@ Información sobre el repositorio de CRX
    <td>Indica si un nodo y una propiedad del nodo pueden tener el mismo nombre. true indica que se admiten los mismos nombres, false indica que no se admite. </td> 
   </tr> 
   <tr> 
-   <td>identifier.stable</td> 
-   <td>Indica la estabilidad de identificadores de nodo no referenciables. Los valores siguientes son posibles: 
+   <td>identifier.stability</td> 
+   <td>Indica la estabilidad de los identificadores de nodo no referenciables. Los valores siguientes son posibles: 
     <ul> 
      <li>identifier.stable.indefinite.duration: Los identificadores no cambian.</li> 
      <li>identifier.stable.method.duration: Los identificadores pueden cambiar entre llamadas de método.</li> 
@@ -271,11 +274,11 @@ Información sobre el repositorio de CRX
    <td>Indica si se admite el lenguaje de consulta JCR 1.0 XPath. true indica compatibilidad y false indica no compatibilidad.</td> 
   </tr> 
   <tr> 
-   <td>jcr.repositorio.version</td> 
+   <td>jcr.repository.version</td> 
    <td>Versión de la implementación del repositorio.</td> 
   </tr> 
   <tr> 
-   <td>option.update.primario.node.type.supported</td> 
+   <td>option.update.primary.node.type.supported</td> 
    <td>Indica si se puede cambiar el tipo de nodo principal de un nodo. true indica que se puede cambiar el tipo de nodo principal y false indica que no se admite el cambio.</td> 
   </tr> 
   <tr> 
@@ -287,7 +290,7 @@ Información sobre el repositorio de CRX
    <td>Indica si se puede anular la definición de nodo secundario o propiedad heredada de un tipo de nodo. true indica que se admiten las anulaciones y false indica que no hay anulaciones.</td> 
   </tr> 
   <tr> 
-   <td>option.comments.supported</td> 
+   <td>option.observation.supported</td> 
    <td>true indica que se admite la observación asincrónica de los cambios del repositorio. La compatibilidad con la observación asincrónica permite a las aplicaciones recibir y responder a las notificaciones sobre cada cambio a medida que se producen.</td> 
   </tr> 
   <tr> 
@@ -299,7 +302,7 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite versiones simples. Con el control de versiones sencillo, el repositorio mantiene una serie secuencial de versiones de un nodo.</td> 
   </tr> 
   <tr> 
-   <td>option.space.management.supported</td> 
+   <td>option.workspace.management.supported</td> 
    <td>true indica que el repositorio admite la creación y eliminación de espacios de trabajo mediante API.</td> 
   </tr> 
   <tr> 
@@ -307,7 +310,7 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite la adición y eliminación de tipos de nodos mixtos de un nodo existente.</td> 
   </tr> 
   <tr> 
-   <td>node.type.management.primario.item.name.supported</td> 
+   <td>node.type.management.primary.item.name.supported</td> 
    <td>true indica que el repositorio permite que las definiciones de nodos contengan un elemento principal como elemento secundario. Se puede acceder a un elemento principal mediante la API sin conocer el nombre del elemento.</td> 
   </tr> 
   <tr> 
@@ -323,11 +326,11 @@ Información sobre el repositorio de CRX
    <td>true indica que puede cambiar las definiciones de nodos que utilizan los nodos existentes.</td> 
   </tr> 
   <tr> 
-   <td>jcr.Specification.version</td> 
+   <td>jcr.specification.version</td> 
    <td>Versión de la especificación JCR que implementa el repositorio.</td> 
   </tr> 
   <tr> 
-   <td>option.journaled.observación.supported</td> 
+   <td>option.journaled.observation.supported</td> 
    <td>true indica que las aplicaciones pueden realizar una observación en diario del repositorio. con la observación en diario, se puede obtener un conjunto de notificaciones de cambio para un período de tiempo específico. </td> 
   </tr> 
   <tr> 
@@ -344,7 +347,7 @@ Información sobre el repositorio de CRX
   </tr> 
   <tr> 
    <td>option.access.control.supported</td> 
-   <td>true indica que el repositorio admite el control de acceso para configurar y determinar los privilegios de usuario para el acceso a nodos.</td> 
+   <td>true indica que el repositorio admite control de acceso para configurar y determinar los privilegios de usuario para el acceso a nodos.</td> 
   </tr> 
   <tr> 
    <td>option.baselines.supported</td> 
@@ -359,7 +362,7 @@ Información sobre el repositorio de CRX
    <td>Identificador del clúster de repositorio.</td> 
   </tr> 
   <tr> 
-   <td>query.stored.query.supported</td> 
+   <td>query.stored.queries.supported</td> 
    <td>true indica que el repositorio admite consultas almacenadas.</td> 
   </tr> 
   <tr> 
@@ -367,28 +370,28 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite la búsqueda de texto completo.</td> 
   </tr> 
   <tr> 
-   <td>node.type.management.herencia</td> 
+   <td>node.type.management.inheritance</td> 
    <td><p>Indica el nivel de compatibilidad del repositorio con la herencia de tipo de nodo. Los valores siguientes son posibles:</p> <p>node.type.management.herencia.Minimum: El registro de los tipos de nodos principales está limitado a aquellos que solo tienen nt:base como supertipo. El registro de los tipos de nodos de mezcla está limitado a los que no tienen supertipo.</p> <p>node.type.management.herencia.single: El registro de tipos de nodos principales está limitado a los que tienen un supertipo. El registro de los tipos de nodos de mezcla está limitado a los que tienen como máximo un supertipo.</p> <p><br /> node.type.management.herencia.multiple: Los tipos de nodos primarios se pueden registrar con uno o más supertipos. Los tipos de nodos de mezcla se pueden registrar con cero o más supertipos.</p> </td> 
   </tr> 
   <tr> 
-   <td>crx.cluster.priorityMaster</td> 
+   <td>crx.cluster.preferredMaster</td> 
    <td>true indica que este nodo de clúster es el maestro preferido del clúster.</td> 
   </tr> 
   <tr> 
-   <td>option.transaction.supported</td> 
+   <td>option.transactions.supported</td> 
    <td>true indica que el repositorio admite transacciones.</td> 
   </tr> 
   <tr> 
-   <td>jcr.repositorio.vendor.url</td> 
+   <td>jcr.repository.vendor.url</td> 
    <td>Dirección URL del proveedor del repositorio.</td> 
   </tr> 
   <tr> 
-   <td>node.type.management.value.requirements.supported</td> 
+   <td>node.type.management.value.constraints.supported</td> 
    <td>true indica que el repositorio admite restricciones de valor para propiedades de nodo.</td> 
   </tr> 
   <tr> 
    <td>node.type.management.property.types</td> 
-   <td>matriz de constantes javax.jcr.PropertyType que representan los tipos de propiedad que puede especificar un tipo de nodo registrado. Una matriz de longitud cero indica que los tipos de nodo registrados no pueden especificar definiciones de propiedad. Los tipos de propiedad son STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE y UNDEFINED (si se admite).</td> 
+   <td>matriz de constantes javax.jcr.PropertyType que representan los tipos de propiedad que puede especificar un tipo de nodo registrado. Una matriz de longitud cero indica que los tipos de nodo registrados no pueden especificar definiciones de propiedad. Los tipos de propiedad son STRING, URI, BOOLEAN, LONG, DOBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE y UNDEFINED (si se admite).</td> 
   </tr> 
   <tr> 
    <td>node.type.management.orderable.child.nodes.supported</td> 
@@ -400,11 +403,11 @@ Información sobre el repositorio de CRX
   </tr> 
   <tr> 
    <td>query.joins</td> 
-   <td><p>Nivel de compatibilidad para las uniones en consultas. Los valores siguientes son posibles:</p> 
+   <td><p>Nivel de asistencia para las uniones en consultas. Los valores siguientes son posibles:</p> 
     <ul> 
-     <li>query.joins.none: No se admiten las uniones. Las consultas pueden utilizar un selector.</li> 
-     <li>query.joins.inner: Compatibilidad con las uniones interiores.</li> 
-     <li>query.joins.inner.external: Compatibilidad con las uniones interiores y exteriores.</li> 
+     <li>consulta.joins.none: No se admiten las uniones. Las Consultas pueden utilizar un selector.</li> 
+     <li>consulta.joins.inner: Compatibilidad con las uniones interiores.</li> 
+     <li>consulta.joins.inner.external: Compatibilidad con las uniones interiores y exteriores.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -428,11 +431,11 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite nodos del mismo nivel (nodos con el mismo elemento principal) con los mismos nombres.</td> 
   </tr> 
   <tr> 
-   <td>node.type.management.residual.definition.supported</td> 
+   <td>node.type.management.residual.definitions.supported</td> 
    <td>true indica que el repositorio admite propiedades de nombre con definiciones residuales. Cuando se admite, el atributo name de una definición de elemento puede ser un asterisco ("*").</td> 
   </tr> 
   <tr> 
-   <td>node.type.management.autocreated.definition.supported</td> 
+   <td>node.type.management.autocreated.definitions.supported</td> 
    <td>true indica que el repositorio admite la creación automática de elementos secundarios (nodos o propiedades) de un nodo cuando se crea el nodo.</td> 
   </tr> 
   <tr> 
@@ -441,14 +444,14 @@ Información sobre el repositorio de CRX
   </tr> 
   <tr> 
    <td>level.1.supported</td> 
-   <td>true indica que option.xml.export.support es true y query.languages es de longitud no nula.</td> 
+   <td>true indica que option.xml.export.support es true y consulta.languages tiene una longitud no nula.</td> 
   </tr> 
   <tr> 
-   <td>option.unarchive.content.supported</td> 
+   <td>option.unfiled.content.supported</td> 
    <td>true indica que el repositorio admite contenido sin archivar. Los nodos sin archivar no forman parte de la jerarquía del repositorio.</td> 
   </tr> 
   <tr> 
-   <td>jcr.Specification.name</td> 
+   <td>jcr.specification.name</td> 
    <td>Nombre de la especificación JCR que implementa el repositorio.</td> 
   </tr> 
   <tr> 
@@ -456,7 +459,7 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite versiones completas.</td> 
   </tr> 
   <tr> 
-   <td>jcr.repositorio.name</td> 
+   <td>jcr.repository.name</td> 
    <td>Nombre del repositorio.</td> 
   </tr> 
   <tr> 
@@ -464,19 +467,19 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite el bloqueo de nodos. El bloqueo permite al usuario impedir temporalmente que otros usuarios realicen cambios.</td> 
   </tr> 
   <tr> 
-   <td>jcr.repositorio.version.display</td> 
+   <td>jcr.repository.version.display</td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td>option.activity.supported</td> 
-   <td>true indica que el repositorio admite actividades. Las actividades son un conjunto de cambios que se realizan en un espacio de trabajo y que se combinan en otro espacio de trabajo.</td> 
+   <td>option.activities.supported</td> 
+   <td>true indica que el repositorio admite actividades. Las Actividades son un conjunto de cambios que se realizan en un espacio de trabajo y que se combinan en otro espacio de trabajo.</td> 
   </tr> 
   <tr> 
    <td>node.type.management.multivalued.properties.supported</td> 
    <td>true indica que el repositorio admite propiedades de nodo que pueden tener cero o más valores.</td> 
   </tr> 
   <tr> 
-   <td>option.retención.supported</td> 
+   <td>option.retention.supported</td> 
    <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar políticas de retención al contenido y admite retención y liberación.</td> 
   </tr> 
   <tr> 
@@ -561,7 +564,7 @@ Solo lectura.
 
 * Valor devuelto: none
 
-**cancelBackup** Detiene el proceso de backup actual y elimina el archivo temporal que el proceso creó para archivar datos.
+**cancelBackup** Detiene el proceso de copia de seguridad actual y elimina el archivo temporal que el proceso creó para archivar datos.
 
 * Argumentos: none
 * Valor devuelto: none
@@ -576,7 +579,7 @@ Solo lectura.
 * Argumentos: none
 * Valor devuelto: none
 
-**startTarOptimization** Inicia el proceso de optimización de archivos TAR utilizando el valor predeterminado para tarOptimizationDelay.
+**startTarOptimization** Inicio el proceso de optimización de archivos TAR con el valor predeterminado de tarOptimizationDelay.
 
 * Argumentos: none
 * Valor devuelto: none
@@ -594,12 +597,12 @@ Solo lectura.
 
 * Valor devuelto: none
 
-**makeClusterMaster** Establece este nodo de repositorio como nodo maestro del clúster. Si aún no es master, este comando detiene el detector de la instancia maestra actual e inicia un detector maestro en el nodo actual. Este nodo se establece como nodo maestro y se reinicia, lo que provoca que todos los nodos esclavos se conecten a esta instancia.
+**makeClusterMaster** Establece este nodo de repositorio como nodo maestro del clúster. Si aún no es master, este comando detiene el detector de la instancia maestra actual y inicio un detector maestro en el nodo actual. Este nodo se establece como nodo maestro y se reinicia, lo que provoca que todos los demás nodos del clúster (es decir, los que están controlados por el maestro) se conecten a esta instancia.
 
 * Argumentos: none
 * Valor devuelto: none
 
-**joinCluster** Agrega este repositorio a un clúster como nodo esclavo. Debe proporcionar un nombre de usuario y una contraseña para fines de autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad se codifican en base-64 antes de enviarse al servidor.
+**joinCluster** Añade este repositorio en un clúster como nodo controlado por el maestro de clúster. Debe proporcionar un nombre de usuario y una contraseña para fines de autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad se codifican en base-64 antes de enviarse al servidor.
 
 * Argumentos:
 
@@ -632,9 +635,9 @@ El valor del campo TimeSeries para cada tipo de estadística que `org.apache.jac
    * BUNDLE_WRITE_COUNTER
    * BUNDLE_WRITE_DURATION
    * BUNDLE_WS_SIZE_COUNTER
-   * QUERY_PROMEDIO
-   * QUERY_COUNT
-   * QUERY_DURATION
+   * CONSULTA_PROMEDIO
+   * CONSULTA_COUNT
+   * CONSULTA_DURACIÓN
    * SESSION_COUNT
    * SESSION_LOGIN_COUNTER
    * SESSION_READ_AVERAGE
@@ -653,7 +656,7 @@ Se proporcionan los atributos siguientes para cada tipo de estadística del info
 * ValuePerHour: El valor medido por hora durante la última semana. Solo lectura.
 * ValuePerWeek: El valor medido por semana durante los últimos tres años. Solo lectura.
 
-## Estadísticas de consulta de repositorio {#repository-query-stats}
+## Estadísticas de Consulta del repositorio {#repository-query-stats}
 
 Información estadística sobre consultas del repositorio.
 
@@ -668,7 +671,7 @@ Información estadística sobre consultas del repositorio.
 
 **Consultas populares** Información sobre las consultas del repositorio que más se han producido. Solo lectura.
 
-**PopularQueriesQueueSize** El número máximo de consultas de la lista de consultas populares. Lectura-escritura.
+**PopularQueriesQueueSize** El número máximo de consultas de la lista PopularQueries. Lectura-escritura.
 
 ### Operaciones {#operations-2}
 
@@ -677,7 +680,7 @@ Información estadística sobre consultas del repositorio.
 * Argumentos: none
 * Valor devuelto: none
 
-**clearPopularQueriesQueue** Quita todas las consultas de la lista Consultas populares.
+**clearPopularQueriesQueue** Quita todas las consultas de la lista PopularQueries.
 
 * Argumentos: none
 * Valor devuelto: none
@@ -686,10 +689,10 @@ Información estadística sobre consultas del repositorio.
 
 Monitorear los servicios para cada agente de replicación. Al crear un agente de replicación, el servicio aparece automáticamente en la consola JMX.
 
-* **** Dominio: com.adobe.granite.Replication
-* **** Tipo: agent
-* **** Nombre: sin valor
-* **** Propiedades: {id=&quot;*Name*&quot;}, donde *Name* es el valor de la propiedad Agent Name.
+* **Dominio:** com.adobe.granite.Replication
+* **Tipo:** agent
+* **Nombre:** sin valor
+* **Propiedades:** {id=&quot;*Name*&quot;}, donde *Name* es el valor de la propiedad Agent Name.
 
 ### Atributos {#attributes-3}
 
@@ -819,7 +822,7 @@ Establece el valor de finalización del proceso de inicio del servidor. La barra
 
 ## Servicios de terceros {#third-party-services}
 
-Varios recursos de servidor de terceros instalan MBeans que exponen atributos y operaciones a la consola JMX. La siguiente tabla enumera los recursos de terceros y proporciona vínculos a más información.
+Varios recursos de servidor de terceros instalan MBeans que exponen atributos y operaciones a la consola JMX. La siguiente tabla lista los recursos de terceros y proporciona vínculos a más información.
 
 <table> 
  <tbody> 
@@ -902,11 +905,11 @@ Para conectarse a CRX mediante JConsole, siga estos pasos:
 
    `jconsole`
 
-Se iniciará JConsole y aparecerá la ventana de JConsole.
+JConsole aparecerá en inicio y la ventana de JConsole.
 
 ### Conexión a un proceso CRX local {#connecting-to-a-local-crx-process}
 
-JConsole mostrará una lista de los procesos locales de la máquina virtual Java. La lista contendrá dos procesos de inicio rápido. Seleccione el proceso &quot;CHILD&quot; de inicio rápido en la lista de procesos locales (generalmente el que tiene el PID más alto).
+JConsole mostrará una lista de los procesos locales de la máquina virtual Java. La lista contendrá dos procesos de inicio rápido. Seleccione el proceso &quot;CHILD&quot; de inicio rápido de la lista de procesos locales (generalmente el que tiene el PID más alto).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 

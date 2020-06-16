@@ -1,8 +1,8 @@
 ---
-title: MSRP - Proveedor de recursos de almacenamiento MongoDB
-seo-title: MSRP - Proveedor de recursos de almacenamiento MongoDB
-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
-seo-description: Configurar las comunidades AEM para que utilicen una base de datos relacional como su almacén común
+title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
+seo-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
+description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,16 +10,19 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 1%
 
 ---
 
 
-# MSRP - Proveedor de recursos de almacenamiento MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - Proveedor de recursos de Almacenamiento MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Acerca de MSRP {#about-msrp}
 
-Cuando AEM Communities está configurada para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando los AEM Communities están configurados para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
@@ -27,7 +30,7 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 
 * [MongoDB](https://www.mongodb.org/):
 
-   * Versión 2.6 o posterior
+   * Versión 2.6 o buena
    * No es necesario configurar los mongos ni el uso compartido
    * Recomendar enérgicamente el uso de un conjunto de [réplicas](#mongoreplicaset)
    * Puede ejecutarse en el mismo host que AEM o de forma remota
@@ -35,7 +38,7 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 * [Apache Solr](https://lucene.apache.org/solr/):
 
    * Versión 4.10 o 5
-   * Solr requiere Java 1.7 o superior
+   * Solr requiere Java 1.7 o bueno
    * No se necesita ningún servicio
    * Opción de modos de ejecución:
       * Modo independiente
@@ -48,11 +51,11 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 
 ### Seleccionar MSRP {#select-msrp}
 
-La consola [Configuración](srp-config.md) de almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
+La consola [Configuración de](srp-config.md) Almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
 
-Al crear, para acceder a la consola de configuración de almacenamiento:
+Al crear, para acceder a la consola de configuración de Almacenamiento:
 
-* Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Configuración de almacenamiento]**
+* Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Configuración de Almacenamiento]**
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -69,11 +72,11 @@ Al crear, para acceder a la consola de configuración de almacenamiento:
 
    * **[!UICONTROL Colección de UGC mongoDB]**
 
-      *predeterminado*:content
+      *predeterminado*: content
 
    * **[!UICONTROL Colección de datos adjuntos mongoDB]**
 
-      *predeterminado*:adjuntos
+      *predeterminado*: adjuntos
 
 * **[!UICONTROL SolrConfiguration]**
 
@@ -90,17 +93,17 @@ Deje en blanco si se ejecuta en el modo de SolrCloud.\
 
 >[!NOTE]
 >
->La base de datos mongoDB, que se establece de forma predeterminada en el nombre `communities`, no debe establecerse en el nombre de una base de datos que se esté utilizando para almacenes de [nodos o almacenes](../../help/sites-deploying/data-store-config.md)de datos (binarios). Consulte también Elementos [de almacenamiento en AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>La base de datos mongoDB, que se establece de forma predeterminada en el nombre `communities`, no debe establecerse en el nombre de una base de datos que se esté utilizando para almacenes de [nodos o almacenes](../../help/sites-deploying/data-store-config.md)de datos (binarios). Consulte también Elementos de [Almacenamiento en AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### Conjunto de réplicas MongoDB {#mongodb-replica-set}
 
-Para el entorno de producción, se recomienda enfáticamente configurar un conjunto de réplicas, un clúster de servidores MongoDB que implemente la replicación esclava maestra y el failover automatizado.
+Para el entorno de producción, se recomienda enfáticamente configurar un conjunto de réplicas, un clúster de servidores MongoDB que implementa replicación primaria-secundaria y failover automatizado.
 
 Para obtener más información sobre los conjuntos de réplicas, visite la documentación de [replicación](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
 Para trabajar con conjuntos de réplicas y aprender a definir conexiones entre las aplicaciones y las instancias de MongoDB, visite la documentación de Formato [URI de cadena de](https://docs.mongodb.org/manual/reference/connection-string/) conexión de MongoDB.
 
-#### Url de ejemplo para la conexión a un conjunto de réplicas {#example-url-for-connecting-to-a-replica-set}
+#### Url de ejemplo para la conexión a un conjunto de réplicas  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -116,7 +119,7 @@ Una instalación de Solr puede compartirse entre el almacén de nodos (Oak) y el
 
 Si se utilizan intensamente las colecciones Oak y MSRP, se puede instalar un segundo Solr por motivos de rendimiento.
 
-Para los entornos de producción, el modo [](solr.md#solrcloud-mode) SolrCloud ofrece un rendimiento mejorado respecto al modo independiente (una única configuración local de Solr).
+Para entornos de producción, el modo [](solr.md#solrcloud-mode) SolrCloud ofrece un rendimiento mejorado en comparación con el modo independiente (una única configuración local de Solr).
 
 Para obtener más información sobre la configuración, consulte Configuración [solar para SRP](solr.md).
 
@@ -145,7 +148,7 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información sobre *usuarios*, perfiles *de* usuario y grupos *de* usuarios, que a menudo se introducen en el entorno de publicación, visite
+Para obtener información sobre *usuarios*, perfiles *de* usuarios y grupos *de* usuarios, que se especifican a menudo en el entorno de publicación, visite
 
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
@@ -212,7 +215,7 @@ Para configurar el MSRP para un entorno de demostración o desarrollo, consulte 
 
 Compruebe la configuración de la opción de almacenamiento para asegurarse de que MSRP se ha configurado como el proveedor predeterminado. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
 
-En todas las instancias de AEM de creación y publicación, vuelva a la consola [Configuración](srp-config.md) de almacenamiento o compruebe el repositorio de AEM:
+En todas las instancias de AEM de creación y publicación, vuelva a la consola [de configuración de](srp-config.md) Almacenamiento o compruebe el repositorio de AEM:
 
 * En JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -221,17 +224,17 @@ En todas las instancias de AEM de creación y publicación, vuelva a la consola 
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
-Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura necesaria para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
+Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
 
 Hay una herramienta de código abierto disponible en GitHub para este propósito:
 
-* [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Herramienta de migración UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
 
 ### Error: proveedor de campos no definido {#error-undefined-field-provider-id}
 
-Si se muestra el siguiente error en los registros, indica que el archivo de esquema Solr no está configurado correctamente.
+Si aparece el siguiente error en los registros, indica que el archivo esquema Solr no está configurado correctamente.
 
 #### JsonMappingException: field provider_id no definido {#jsonmappingexception-undefined-field-provider-id}
 

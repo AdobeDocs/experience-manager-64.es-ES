@@ -8,17 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 14%
+source-wordcount: '820'
+ht-degree: 15%
 
 ---
 
 
 # Generar previsualización HTML5 de un formulario XDP {#generate-html-preview-of-an-xdp-form}
 
-Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación en PDF de un formulario, también puede realizar una previsualización de una representación en HTML5 del mismo. Puede utilizar la ficha **Previsualización HTML** para realizar la previsualización de un formulario tal como aparecería en un explorador.
+Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación PDF de un formulario, también se puede realizar una previsualización de una representación HTML5 del mismo. Puede utilizar la ficha **Previsualización HTML** para realizar la previsualización de un formulario tal como aparecería en un explorador.
 
 ## Habilitar Previsualización HTML para formularios XDP en Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -30,9 +30,9 @@ Para permitir que Designer genere previsualizaciones HTML de formularios XDP, re
 
 ### Configuración del servicio de autenticación Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Vaya a https://[*server*]:[*port*]/system/console/configMgr en AEM Forms que se ejecutan en OSGi o
+1. Ir a `https://[server]:[port]/system/console/configMgr` en AEM Forms que se ejecutan en OSGi o
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr en AEM Forms que se ejecutan en JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` en AEM Forms que se ejecutan en JEE.
 
 1. Busque y haga clic en la configuración del servicio **de autenticación Sling de** Apache para abrirlo en modo de edición.
 
@@ -60,8 +60,8 @@ El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activ
 
 1. Inicie sesión en AEM Web Console como administrador.
 
-   * La URL de AEM Forms en OSGi es https://[server]:[port]/system/console/configMgr
-   * La URL de AEM Forms en JEE es https://[*server*]:[*port*]/lc/system/console/configMgr
+   * La dirección URL para AEM Forms en OSGi es `https://[server]:[port]/system/console/configMgr`
+   * La dirección URL para AEM Forms en JEE es `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Abra Configuraciones **[!UICONTROL de formularios]** móviles para editarlas.
 1. Anule la selección de la opción Modo **** protegido y haga clic en **[!UICONTROL Guardar]**.
@@ -114,6 +114,6 @@ Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asig
 
 ## Formularios de Previsualización ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
 
-En AEM Forms, puede previsualización de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
+En los AEM Forms, puede previsualización de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
 
 [**Comuníquese con la asistencia técnica **](https://www.adobe.com/account/sign-in.supportportal.html)

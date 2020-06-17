@@ -1,8 +1,8 @@
 ---
 title: Configuración de OSGi
 seo-title: Configuración de OSGi
-description: 'Este artículo detalla los ajustes de configuración de OSGi (enumerados según el paquete) que son relevantes para la implementación del proyecto. La lista sirve de guía y no es exhaustiva. '
-seo-description: 'Este artículo detalla los ajustes de configuración de OSGi (enumerados según el paquete) que son relevantes para la implementación del proyecto. La lista sirve de guía y no es exhaustiva. '
+description: 'Este artículo detalla los ajustes de configuración de OSGi (enumerados según el paquete) que son relevantes para la implementación del proyecto. La lista actúa como directriz y no es exhaustiva. '
+seo-description: 'Este artículo detalla los ajustes de configuración de OSGi (enumerados según el paquete) que son relevantes para la implementación del proyecto. La lista actúa como directriz y no es exhaustiva. '
 uuid: 817de76e-7ba6-4502-94f5-09046b878cfb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ OSGi &quot;*proporciona los primitivos estandarizados que permiten construir apl
 
 Esto permite administrar fácilmente los paquetes, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi (consulte la Especificación [](https://www.osgi.org/Specifications/HomePage)OSGi) está contenido en uno de los distintos paquetes. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
-Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos se mencionan para ayudarle a comprender el funcionamiento de AEM.
+Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son relevantes para la implementación del proyecto. No es necesario realizar ajustes en todos los ajustes de la lista; algunos de ellos se mencionan para ayudarle a comprender el funcionamiento de AEM.
 
 >[!CAUTION]
 >
@@ -35,17 +38,17 @@ Los siguientes ajustes de configuración OSGi (enumerados según el paquete) son
 
 >[!NOTE]
 >
->La herramienta Dif de configuración OSGi, que forma parte de las herramientas [de](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, se puede utilizar para enumerar las configuraciones de OSGi predeterminadas.
+>La herramienta Dif de configuración OSGi, que forma parte de las herramientas [de](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, se puede utilizar para lista de las configuraciones de OSGi predeterminadas.
 
 >[!NOTE]
 >
 >Es posible que se requieran más paquetes para áreas específicas de funcionalidad dentro de AEM. En estos casos, se pueden encontrar detalles de configuración en la página relacionados con la funcionalidad adecuada.
 
-**AEM Replication Event Listener** Configure:
+**Escucha** de Evento de replicación de AEM Configure:
 
 * Modos de **ejecución**, en los que los eventos de replicación se distribuirán a los oyentes. Por ejemplo, si se define como autor, entonces este es el sistema que &quot;iniciará&quot; la replicación.
 
-* Es necesario agregar la **publicación** en modo de ejecución si el código del proyecto procesa eventos de replicación (replicación inversa) en un entorno de publicación. Por ejemplo, cuando se utiliza el despachante para vaciar del entorno de publicación o cuando se produce la replicación estándar a otras instancias de publicación.
+* Es necesario agregar la **publicación** en modo de ejecución si el código del proyecto procesa eventos de replicación (replicación inversa) en un entorno de publicación. Por ejemplo, cuando el despachante se utiliza para vaciar desde el entorno de publicación o cuando se produce una replicación estándar a otras instancias de publicación.
 
 **listener** de cambio de repositorio de AEM Configure:
 
@@ -84,7 +87,7 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 
 **Apache Sling Eventing Thread Pool** Configure:
 
-* **Tamaño** mínimo del grupo y Tamaño **** máximo del grupo, el tamaño del grupo utilizado para contener los subprocesos de evento.
+* **Tamaño** mínimo del grupo y Tamaño **** máximo del grupo, el tamaño del grupo utilizado para mantener los subprocesos de evento.
 
 * **Tamaño** de cola, el tamaño máximo de la cola de subprocesos si se agota el grupo.
 
@@ -109,7 +112,7 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 
 Ciertos ajustes pueden afectar al rendimiento, por lo que deben deshabilitarse siempre que sea posible, en particular para una instancia de producción.
 
-* VM **** de origen y VM **de** destino, defina la versión de JDK como la que se usa como JVM de tiempo de ejecución
+* VM **** de origen y VM **de** Destinatario, defina la versión de JDK como la que se usa como JVM de tiempo de ejecución
 
 * para instancias de producción:
 
@@ -119,13 +122,13 @@ Ciertos ajustes pueden afectar al rendimiento, por lo que deben deshabilitarse s
 
 * **Las carpetas de instalación llaman regexp** y **Máxima profundidad de jerarquía de las carpetas** de instalación: especifique dónde y a qué profundidad se buscan los recursos para instalar. Cuando se utiliza un comodín (como en .&amp;ast;/install) se buscarán todas las coincidencias apropiadas, por ejemplo `/libs/sling/install` y `/libs/cq/core/install`.
 
-* **Ruta** de búsqueda, lista de rutas que jcrinstall busca recursos para ser instalados, junto con un número que indica el factor de ponderación de esa ruta.
+* **Ruta** de búsqueda, lista de rutas que jcrinstall busca recursos que instalar, junto con un número que indica el factor de ponderación de esa ruta.
 
-**Apache Sling Job Event Handler** Configure los parámetros que administran la programación de trabajos:
+**Apache Sling Job Evento Handler** Configure los parámetros que administran la programación de trabajos:
 
-* **Intervalo** de reintentos, **máximo de reintentos**, **máximo de trabajos** paralelos, tiempo **de espera de** confirmación, entre otros.
+* **Intervalo** de reintento, **Reintentos** máximos, **Número máximo de trabajos** paralelos, Tiempo **de espera de** reconocimiento, entre otros.
 
-* Cambiar esta configuración puede mejorar el rendimiento en situaciones con un número elevado de trabajos; por ejemplo, el uso intensivo de AEM DAM y flujos de trabajo.
+* Cambiar esta configuración puede mejorar el rendimiento en situaciones con un número elevado de trabajos; por ejemplo, el uso intensivo de AEM DAM y Flujos de trabajo.
 * Los valores específicos de su escenario deben establecerse mediante pruebas.
 * No cambie esta configuración sin motivo, solo la tendrá debidamente en cuenta.
 
@@ -184,19 +187,19 @@ Para obtener más información, consulte [Registro](/help/sites-deploying/config
 
 * **Tipos** MIME para agregar al sistema los requeridos por el proyecto. Esto permite que una `GET` solicitud de un archivo establezca el encabezado de tipo de contenido correcto para vincular el tipo de archivo y la aplicación.
 
-**Filtro** de referente Sling de Apache Para abordar problemas de seguridad conocidos con la falsificación de solicitudes entre sitios (CSRF) en CRX WebDAV y Apache Sling, debe configurar el filtro de referente.
+**Filtro** Remitente del reenvío Sling Apache Para abordar problemas de seguridad conocidos con la falsificación de solicitudes entre sitios (CSRF) en CRX WebDAV y Apache Sling, debe configurar el filtro Remitente del reenvío.
 
-El servicio de filtro de referente es un servicio OSGi que le permite configurar:
+El servicio de filtro de remitente del reenvío es un servicio OSGi que le permite configurar:
 
 * qué métodos http deben filtrarse
-* si se permite un encabezado de referente vacío
-* y una lista blanca de servidores para permitir además del host del servidor.
+* si se permite un encabezado de remitente del reenvío vacío
+* y una lista de servidores que se permitirá además del host del servidor.
 
 Consulte la lista de comprobación de [seguridad - Problemas con falsificación](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de solicitudes entre sitios para obtener más información.
 
 >[!NOTE]
 >
->El Filtro de referente de Sling de Apache depende de la instalación de un paquete de corrección rápida.
+>El filtro de Remitente del reenvío Apache Sling depende de la instalación de un paquete de correcciones rápidas.
 
 **Apache Sling Request Logger** Configure:
 
@@ -229,7 +232,7 @@ Para obtener más información, consulte: [https://cwiki.apache.org/confluence/d
 >
 >De lo contrario, AEM podría sobrescribir los cambios realizados en las asignaciones **de** URL mediante la consola Félix en el siguiente inicio.
 
-**Apache Sling Servlet/Script Resolver and Error Handler** El servlet Sling y la resolución de secuencias de comandos tienen varias tareas:
+**Apache Sling Servlet/Script Resolver and Error Handler** El Servlet Sling y la resolución de secuencias de comandos tienen varias tareas:
 
 1. Se utiliza como `ServletResolver` para seleccionar el Servlet o la secuencia de comandos que se va a llamar para gestionar la solicitud.
 
@@ -239,13 +242,13 @@ Para obtener más información, consulte: [https://cwiki.apache.org/confluence/d
 
 Se pueden definir varios parámetros, entre ellos:
 
-* **Rutas** de ejecución enumera las rutas para buscar scripts ejecutables; al configurar rutas específicas, puede limitar qué secuencias de comandos se pueden ejecutar. Si no hay ninguna ruta configurada, se utiliza la ruta predeterminada ( `/` = raíz), esto permite la ejecución de todas las secuencias de comandos.
+* **Rutas** de ejecución lista las rutas para buscar scripts ejecutables; al configurar rutas específicas, puede limitar qué secuencias de comandos se pueden ejecutar. Si no hay ninguna ruta configurada, se utiliza la ruta predeterminada ( `/` = raíz), esto permite la ejecución de todas las secuencias de comandos.
 
    Si un valor de ruta configurado termina con una barra diagonal, se buscará en todo el subárbol. Sin esta barra final, la secuencia de comandos solo se ejecutará si es una coincidencia exacta.
 
 * **Usuario** de secuencia de comandos: esta propiedad opcional puede especificar la cuenta de usuario del repositorio utilizada para leer las secuencias de comandos. Si no se especifica ninguna cuenta, el usuario se utiliza de forma predeterminada `admin` .
 
-* **Extensiones** predeterminadas Lista de extensiones para las que se utilizará el comportamiento predeterminado. Esto significa que el último segmento de ruta del tipo de recurso se puede utilizar como nombre de secuencia de comandos.
+* **Extensiones** predeterminadas La lista de extensiones para las que se utilizará el comportamiento predeterminado. Esto significa que el último segmento de ruta del tipo de recurso se puede utilizar como nombre de secuencia de comandos.
 
 **Day Commons GFX Font Helper** Al procesar gráficos puede utilizar DrawText para incrustar texto. Para ello, también puede instalar sus propias fuentes:
 
@@ -300,12 +303,12 @@ Al utilizar grupos [de usuarios](/help/sites-administering/cug.md) cerrados pued
 
 **Comprobación del servicio** del comprobador de vínculos de CQ por día y, si es necesario, configure:
 
-* **Período** del programador para definir el intervalo en el que se comprueban automáticamente los vínculos externos.
+* **Período** de Planificador para definir el intervalo en el que los vínculos externos se comprueban automáticamente.
 
 * Marque Intervalo **de tolerancia de vínculo** incorrecto para el período después del cual un vínculo externo no exitoso se considera malo.
 * **Patrones** de anulación de comprobación de vínculos para definir las rutas que se excluirán de la comprobación de vínculos.
 
-**Tarea** de Day CQ Link Checker Configure los ajustes de una única tarea de comprobación de vínculos (una tarea que comprueba un vínculo externo):
+**Tarea** de Day CQ Link Checker Configure los ajustes de una sola tarea de comprobación de vínculos (una tarea que comprueba un vínculo externo):
 
 * Compruebe los intervalos definidos en Intervalo **de prueba de** vínculo correcto e Intervalo de prueba de vínculo **incorrecto**
 
@@ -317,7 +320,7 @@ Al utilizar grupos [de usuarios](/help/sites-administering/cug.md) cerrados pued
 
 **Asignación** de raíz de CQ de día Configure:
 
-* **Ruta** de destino para definir hacia dónde se redirigirá una solicitud a &quot; `/`&quot;.
+* **Ruta** de Destinatario para definir a dónde se redirigirá una solicitud a &quot; `/`&quot;.
 
 Hay [dos IU](/help/sites-authoring/select-ui.md) disponibles en AEM:
 
@@ -326,13 +329,13 @@ Hay [dos IU](/help/sites-authoring/select-ui.md) disponibles en AEM:
 
 Al utilizar la asignación raíz de AEM, puede configurar la IU que desea tener como predeterminada para su instancia:
 
-* Para que la IU táctil sea la IU predeterminada, la ruta de acceso **de** destino debe señalar a:
+* Para que la IU táctil sea la IU predeterminada, la ruta de **Destinatario** debe señalar:
 
    ```
       /projects.html
    ```
 
-* Para que la IU clásica sea la IU predeterminada, la ruta de acceso **de** Target debe señalar a:
+* Para que la IU clásica sea la IU predeterminada, la ruta de **Destinatario** debe señalar a:
 
    ```
       /welcome.html
@@ -348,7 +351,8 @@ Hay varias propiedades de configuración disponibles:
 
 * **Ruta** de acceso para la que está activo este controlador de autenticación. Si este parámetro se deja vacío, el controlador de autenticación se desactiva. Por ejemplo, la ruta / hace que el controlador de autenticación se utilice para todo el repositorio.
 
-* **Clasificación** de servicios El valor de clasificación de servicios de OSGi Framework se utiliza para indicar el orden utilizado para llamar a este servicio. Se trata de un `int` valor en el que los valores más altos designan una prioridad mayor.
+* **Clasificación** de servicios El valor de clasificación de servicios de OSGi Framework se utiliza para indicar el orden utilizado para llamar a este servicio. Esto es un 
+`int` donde los valores más altos designan mayor prioridad.
 
    El valor predeterminado es `0`.
 
@@ -358,12 +362,13 @@ Hay varias propiedades de configuración disponibles:
 
 * **Nombres** de parámetrosNombre de los parámetros de solicitud que pueden proporcionar el ID de usuario.
 
-* **Mapa** del usuario Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por otro en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario `admin` aparece a ambos lados del mapa, se omitirá la asignación. Tenga en cuenta que el carácter &quot;=&quot; debe tener un carácter de escape con un &quot;\&quot; inicial.
+* **Mapa** del usuario Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por otro en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario 
+`admin` aparece a ambos lados del mapa, la asignación se ignorará. Tenga en cuenta que el carácter &quot;=&quot; debe tener un carácter de escape con un &quot;\&quot; inicial.
 
 * **Formato** Indica el formato en el que se proporciona el ID de usuario. Uso:
 
    * `Basic` si el ID de usuario está codificado en el formato de autenticación básica HTTP
-   * `AsIs` si el ID de usuario se proporciona en texto sin formato o cualquier valor de expresión regular aplicado debe utilizarse tal cual o cualquier expresión regular
+   * `AsIs` si el ID de usuario se proporciona en texto sin formato o cualquier valor aplicado de expresión normal debe utilizarse tal cual o cualquier expresión normal
 
 **Filtro** de depuración de CQ WCM de día Resulta útil cuando se desarrolla, ya que permite el uso de sufijos como ?debug=layout al acceder a una página. Por ejemplo, http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout proporcionará información de diseño que puede ser de interés para el desarrollador.
 
@@ -384,7 +389,7 @@ Hay varias propiedades de configuración disponibles:
 
 **Configurador** del comprobador de vínculos WCM Day CQ Configurar:
 
-* **Lista de configuraciones** de reescritura para especificar una lista de ubicaciones para configuraciones de comprobador de vínculos basadas en contenido. Las configuraciones pueden basarse en el modo de ejecución; esto es importante para distinguir entre los entornos de autor y publicación, ya que la configuración del comprobador de vínculos puede diferir.
+* **Lista de las configuraciones** de reescritura para especificar una lista de ubicaciones para las configuraciones del comprobador de vínculos basado en contenido. Las configuraciones pueden basarse en el modo de ejecución; esto es importante para distinguir entre los entornos de autor y publicación, ya que la configuración del comprobador de vínculos puede diferir.
 
 **Procesador** de páginas CQ WCM de día Configure:
 
@@ -414,7 +419,7 @@ Hay varias propiedades de configuración disponibles:
 
 **Day CQ WCM Version Manager** Controle si las versiones se administran en el sistema y cómo se administran en él:
 
-* **Crear versión al activarla**, habilitada en una instalación estándar
+* **Crear versión en Activación**, habilitada en una instalación estándar
 * **Habilitar depuración**
 
 * **Purgar rutas**, las rutas que buscará una acción de búsqueda
@@ -466,7 +471,7 @@ Se trata de una configuración de fábrica, por lo que se pueden configurar vari
 
 En particular, puede definir `dps.session.service.url.name`: el valor predeterminado es [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**CDN Rewriter** La comunicación entre AEM y un CDN debe garantizarse para que los recursos y binarios se entreguen al usuario final de forma segura. Esto implica dos tareas:
+**CDN Rewriter** La comunicación entre AEM y un CDN debe garantizarse para que los recursos y binarios se entreguen al usuario final de forma segura. Esto incluye dos tareas:
 
 * Acceso al recurso desde AEM a través de la CDN por primera vez (o después de que caduque en la caché).
 * El acceso seguro al recurso almacenado en caché en CDN, ya que una vez que el recurso se haya almacenado en caché en CDN, la solicitud no irá a AEM y todos los usuarios que tengan acceso a ese recurso en CDN deben recibir servicio de CDN.

@@ -6,7 +6,10 @@ seo-description: Descripción de las funciones esenciales de AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 27%
 
 ---
 
@@ -15,21 +18,21 @@ source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites es un sistema de gestión de contenido dentro de Adeobe Experience Manager que le ofrece un lugar para crear, gestionar y distribuir experiencias digitales en sitios web, sitios móviles y pantallas in situ, a fin de que sean accesibles a nivel mundial, pero de relevancia y compromiso personales. [Conozca más](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [explore algunos de nuestros nuevos tutoriales de funciones de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
+AEM Sites es un sistema gestor de contenido dentro de Adeobe Experience Manager que le proporciona un lugar para crear, administrar y ofrecer experiencias digitales en sitios web, sitios móviles y pantallas en el sitio para hacerlas globales al alcance, pero con relevancia y compromiso personales. [Conozca más](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [explore algunos de nuestros nuevos tutoriales de funciones de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
 
 ## AEM Assets {#aem-assets}
 
-Activos AEM permite que su organización cree, administre, distribuya y optimice con facilidad activos digitales desde una plataforma en la nube con múltiples propietarios. [Explore algunos de nuestros nuevos tutoriales de funciones de vídeo sobre Recursos AEM.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
+Activos AEM permite que su organización cree, administre, distribuya y optimice con facilidad activos digitales desde una plataforma en la nube con múltiples propietarios. [Explore algunos de nuestros nuevos tutoriales en vídeo sobre las funciones de los AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
 
 * [Uso de Activos AEM](/help/assets/managing-assets-touch-ui.md)
-* [Uso de Dynamic Media](/help/assets/dynamic-media.md)
+* [Trabajo con Dynamic Media](/help/assets/dynamic-media.md)
 * [Notas de la versión de Activos AEM](/help/release-notes/assets.md)
 
 ## Formularios AEM {#aem-forms}
 
 AEM ofrece una solución fácil de usar para crear, gestionar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas comerciales y datos.
 
-Formularios AEM combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. [Explore algunos de nuestros nuevos tutoriales de funciones de vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-4-forms.html)
+Formularios AEM combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. [Explore algunos de nuestros nuevos tutoriales en vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-4-forms.html)
 
 * [Introducción a Formularios AEM](/help/forms/using/introduction-aem-forms.md)
 * [Novedades en Formularios AEM](/help/forms/using/whats-new.md)
@@ -38,7 +41,7 @@ Formularios AEM combina la creación, gestión y publicación de formularios jun
 
 ## AEM Screens {#aem-screens}
 
-Screens es una función de Adobe Experience Manager que le permite publicar experiencias digitales dinámicas e interactivas e interacciones que implican distintos tipos de pantallas junto con una plataforma de marketing digital completa.  [Más información.](/help/screens/home.md)
+Pantallas es una función de Adobe Experience Manager que le permite publicar experiencias e interacciones digitales dinámicas e interactivas que involucran distintos tipos de pantallas junto con una plataforma de marketing digital completa.  [Más información.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
@@ -50,4 +53,4 @@ AEM Livefyre es una nueva función de Adobe Experience Manager que le permite ap
 
 ## AEM Foundation {#aem-foundation}
 
-Obtenga más información sobre la base [de](/help/sites-deploying/home.md) Adobe Experience Manager 6.4 y sobre nuestro modelo de implementación de servicios gestionados o explore algunas de nuestras [nuevas presentaciones de vídeo sobre las funciones de esta versión.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
+Obtenga más información sobre la base [de](/help/sites-deploying/home.md) Adobe Experience Manager 6.4 y nuestro modelo de implementación de servicios gestionados o explore algunas de nuestras [nuevas presentaciones de vídeo sobre las funciones de esta versión.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)

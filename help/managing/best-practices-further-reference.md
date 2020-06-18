@@ -1,8 +1,8 @@
 ---
 title: 'Lista de comprobación: más referencia'
 seo-title: 'Lista de comprobación: más referencia'
-description: Obtenga más información sobre los detalles que explican y/o aumentan los documentos y principios cubiertos por la lista de comprobación de la gestión de proyectos - prácticas recomendadas.
-seo-description: Obtenga más información sobre los detalles que explican y/o aumentan los documentos y principios cubiertos por la lista de comprobación de la gestión de proyectos - prácticas recomendadas.
+description: Obtenga más información sobre los detalles que explican en detalle y/o aumentan los documentos y principios cubiertos por la lista de comprobación de la gestión de proyectos - prácticas recomendadas.
+seo-description: Obtenga más información sobre los detalles que explican en detalle y/o aumentan los documentos y principios cubiertos por la lista de comprobación de la gestión de proyectos - prácticas recomendadas.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,33 +10,36 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
-source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '3767'
+ht-degree: 1%
 
 ---
 
 
 # Lista de comprobación: más referencia{#the-checklist-further-reference}
 
-Esta página proporciona más detalles para detallar y/o ampliar los documentos y principios cubiertos por la lista de verificación de [Gestión de Proyectos - Optimizaciones](/help/managing/best-practices.md).
+Esta página proporciona más detalles para detallar y/o aumentar los documentos y principios cubiertos por la lista de verificación de [Gestión de Proyectos - Optimizaciones](/help/managing/best-practices.md).
 
 ## AEM - ¿Qué va a usar? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
->Las listas que figuran en esta subsección no son exhaustivas, sino que están destinadas a ser una introducción.
+>Las listas que figuran en esta subsección no son exhaustivas, sino que tienen por objeto ser una introducción.
 
 ### Funciones de AEM {#features-within-aem}
 
-Al implementar AEM (especialmente por primera vez), tendrá que revisar las [capacidades y los flujos de trabajo de AEM](https://www.adobe.com/marketing/experience-manager.html) para asegurarse de qué áreas desea o necesita.
+Al implementar AEM (especialmente por primera vez), tendrá que revisar las [capacidades y flujos de trabajo de AEM](https://www.adobe.com/es/marketing/experience-manager.html) para asegurarse de qué áreas desea o necesita.
 
 Considere las funciones de AEM que va a utilizar y el impacto en su diseño; por ejemplo:
 
 * [Comercio](/help/sites-administering/ecommerce.md)
-* [Pantallas](/help/screens/aem-screens-introduction.md)
+* [Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Etiquetas](/help/sites-administering/tags.md)
 * [Administración y traducción de varios sitios](/help/sites-administering/msm-and-translation.md)
-* [Formularios](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Comunidades](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -95,7 +98,7 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
    Los procesos que se definirán dependerán del proyecto individual. Intenta de nuevo mantener estas opciones sencillas, teniendo en cuenta:
 
    * Definir procesos (y vías de comunicación) para interactuar con terceros; por ejemplo, agencias de diseño y proveedores de software de terceros, entre otros.
-   * A menudo, el cliente tendrá sus propios procedimientos y herramientas de administración de proyectos e informes.
+   * A menudo, el cliente tendrá sus propios procedimientos y herramientas de administración de proyectos y Sistema de informes.
 
 * **Herramientas de seguimiento**
 
@@ -130,9 +133,9 @@ Esta información puede definirse en un Manual del proyecto; el uso de una Wiki 
 * La información se comunica claramente a todas las personas interesadas. Aunque la práctica estándar de la administración de proyectos no se puede repetir con suficiente frecuencia que una definición clara de la función y una buena comunicación pueden hacer o romper un proyecto.
 * Sólo se mantiene una versión de cualquier información que se esté rastreando; por ejemplo: seguimiento de errores, seguimiento de problemas, etc.
 
-## Indicadores de rendimiento clave y métricas de objetivo {#key-performance-indicators-and-target-metrics}
+## Indicadores de rendimiento clave y métricas de Destinatario {#key-performance-indicators-and-target-metrics}
 
-Las organizaciones utilizan indicadores de rendimiento clave (KPI) para evaluar su éxito al alcanzar los objetivos. Estos indicadores son valores mensurables que pueden utilizarse para demostrar la eficacia con que se cumplen los objetivos específicos.
+Las organizaciones utilizan indicadores de rendimiento clave (KPI) para evaluar su éxito a la hora de alcanzar destinatarios. Estos indicadores son valores mensurables que pueden utilizarse para demostrar la eficacia con que se cumplen los objetivos específicos.
 
 Estos indicadores pueden ser:
 
@@ -146,9 +149,9 @@ Estos indicadores pueden ser:
    * Defina cómo medir el rendimiento del sistema.
    * Algunos ejemplos incluyen el tiempo de carga de la página, el tiempo de respuesta del servidor y el rendimiento de la consulta de la base de datos.
 
-Algunos indicadores, pero no todos, se pueden basar en las métricas de objetivo que identifique y defina.
+Algunos indicadores, pero no todos, se pueden basar en las métricas de destinatario que usted identifica y define.
 
-### Métricas de Target {#target-metrics}
+### Métricas de Destinatario {#target-metrics}
 
 Las métricas se utilizan para definir mediciones cuantitativas de la calidad de su sitio web; son básicamente una definición de los objetivos de rendimiento que desea alcanzar y se pueden utilizar para definir [los KPI (Indicadores de rendimiento clave)](#key-performance-indicators-and-target-metrics).
 
@@ -160,14 +163,14 @@ Se pueden definir muchas métricas, pero a menudo las que defina cubren sus obje
 * &quot;cuando busco, el sistema *se detiene* &quot; - ¿qué tipo de solicitudes de búsqueda están afectando al sistema?
 * &quot;se tarda *años* en descargar el archivo&quot; - ¿Cuáles son los tiempos de descarga aceptables (bajo condiciones de red normales)?
 
-Las métricas de Target se definen al inicio de un proyecto para:
+Las métricas de Destinatario se definen en el inicio de un proyecto para:
 
-* indique las dimensiones esperadas del sitio web que va a ofrecer
+* indique las dimensiones esperadas del sitio web que va a oferta
 * indique la calidad mínima que desea alcanzar
 * definir cómo se medirán realmente estos factores
 * se utilizará como base para los indicadores de rendimiento [clave](#key-performance-indicators-and-target-metrics)
 
-Como siempre se debe tener cuidado al definir las métricas objetivo:
+Como siempre se debe tener cuidado al definir las métricas de destinatario:
 
 * si se fijan demasiado altos, pueden ser completamente inalcanzables
 * si se configuran fluctuaciones demasiado bajas, puede que no se resalten
@@ -189,7 +192,7 @@ Cuando se utilizan correctamente, estas métricas pueden proporcionar una herram
 
 Todas las métricas que se medirán se verán afectadas, de alguna manera, por el diseño del proyecto. Por el contrario, muchos problemas se resolverán mejor con los cambios de diseño.
 
-Por lo tanto, debe definir las métricas de objetivo *antes* de decidir el diseño. Esto le permite optimizar el diseño en función de estos factores. Una vez que el proyecto se haya desarrollado, será difícil realizar cambios en los principios básicos de diseño.
+Por lo tanto, debe definir las métricas de destinatario *antes* de decidir el diseño. Esto le permite optimizar el diseño en función de estos factores. Una vez que el proyecto se haya desarrollado, será difícil realizar cambios en los principios básicos de diseño.
 
 Cuando cree la estructura del sitio web, siga la estructura recomendada para los sitios web de AEM. Asegúrese de comprender los siguientes problemas y/o principios:
 
@@ -200,11 +203,11 @@ Cuando cree la estructura del sitio web, siga la estructura recomendada para los
 * Cómo funciona la función de búsqueda.
 * Cómo puede utilizar CSS y tecnologías relacionadas para crear código HTML compacto y no redundante.
 
-Si cree que el diseño no sigue las directrices o no está seguro de algunas de las implicaciones, aclare estos problemas antes de iniciar la fase de programación o de rellenar el contenido.
+Si cree que el diseño no sigue las directrices o no está seguro de algunas de las implicaciones, aclare estos problemas antes de realizar el inicio en la fase de programación o de rellenar el contenido.
 
 ### Infraestructura {#infrastructure}
 
-Para definir o evaluar la infraestructura, ayudará a definir valores objetivo como:
+Para definir o evaluar la infraestructura, ayudará a definir valores de destinatario como:
 
 * visitantes/día; tanto promedio como máximo
 * visitas individuales/día; tanto promedio como máximo
@@ -222,7 +225,7 @@ Existen varios factores de rendimiento que se pueden evaluar:
 
 * tiempos de respuesta para páginas individuales, teniendo en cuenta:
 
-   * tiempos de respuesta en un entorno de creación
+   * tiempos de respuesta en un entorno de autor
    * tiempos de respuesta en el entorno de publicación
 
 * tiempos de respuesta para solicitudes de búsqueda
@@ -231,13 +234,13 @@ Esta sección se puede leer junto con la optimización [del rendimiento](/help/s
 
 #### Tiempos de respuesta para páginas individuales {#response-times-for-individual-pages}
 
-Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes.
+Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de visitante.
 
-Aunque este valor variará para cada solicitud, se puede definir un valor de objetivo promedio. Una vez que se ha demostrado que este valor es alcanzable y sostenible, puede utilizarse para monitorear el rendimiento del sitio web e indicar el desarrollo de posibles problemas
+Aunque este valor variará para cada solicitud, se puede definir un valor de destinatario promedio. Una vez que se ha demostrado que este valor es alcanzable y sostenible, puede utilizarse para monitorear el rendimiento del sitio web e indicar el desarrollo de posibles problemas
 
-Diferentes objetivos en entornos de autor y publicación
+Diferentes destinatarios en los entornos de creación y publicación
 
-Los tiempos de respuesta que perseguirá serán diferentes en los entornos de autor y publicación, lo que refleja la audiencia de destino:
+Los tiempos de respuesta que va a buscar serán diferentes en los entornos de creación y publicación, lo que refleja la audiencia de destinatario:
 
 * **Entorno de creación**
 
@@ -248,15 +251,15 @@ Los tiempos de respuesta que perseguirá serán diferentes en los entornos de au
 
 * **Entorno de publicación**
 
-   Este entorno contiene contenido que pone a disposición de los usuarios:
+   Este entorno contiene el contenido que pone a disposición de los usuarios:
 
-   * la velocidad sigue siendo vital, pero a menudo es más lenta que un entorno de creación
+   * la velocidad sigue siendo vital, pero a menudo es más lenta que el entorno del autor
    * a menudo se aplican mecanismos adicionales de mejora del rendimiento:
 
       * el contenido se almacena en la caché
       * se aplica el equilibrio de carga
 
-#### Configuración de los tiempos de respuesta objetivo {#setting-target-response-times}
+#### Configuración de los tiempos de respuesta de destinatario {#setting-target-response-times}
 
 Entonces, ¿cómo puede decidir los tiempos de respuesta alcanzables (promedio)? A menudo se trata de una cuestión de experiencia:
 
@@ -284,7 +287,7 @@ Existen varios mecanismos que puede utilizar para supervisar los tiempos de resp
 
 * **Supervisión de los tiempos de respuesta con el archivo request.log de AEM**
 
-   Un buen punto de partida para el análisis de rendimiento es el registro de solicitudes. Entre otra información, puede utilizarla para ver los tiempos de respuesta de solicitudes individuales. Consulte Optimización [del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
+   Un buen punto de partida para la análisis del rendimiento es el registro de solicitudes. Entre otra información, puede utilizarla para ver los tiempos de respuesta de solicitudes individuales. Consulte Optimización [del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
 * **Supervisión de los tiempos de respuesta con comentarios HTML**
 
@@ -304,7 +307,7 @@ Las solicitudes de búsqueda pueden tener un impacto significativo en el sitio w
 
    * Como una función de búsqueda debe analizar (potencialmente grandes) secciones del contenido, o un índice extraído especialmente, esto puede afectar al rendimiento de todo el sistema si no se optimiza
 
-El establecimiento de objetivos para las solicitudes de búsqueda también depende de la experiencia:
+La configuración de destinatarios para solicitudes de búsqueda es, nuevamente, una cuestión de experiencia según:
 
 * experiencia de AEM
 * una evaluación de la frecuencia con la que se utilizará la búsqueda en comparación con otros objetivos
@@ -312,7 +315,7 @@ El establecimiento de objetivos para las solicitudes de búsqueda también depen
 * su índice de búsqueda
 * la complejidad de la función de búsqueda; una función de búsqueda básica que sólo permite la entrada de un término de búsqueda será más rápida que una búsqueda avanzada que permite al usuario crear afirmaciones de búsqueda complejas mediante Y/O/NO.
 
-Estos deben planificarse e integrarse desde el comienzo mismo del proyecto. Entre los mecanismos disponibles para la vigilancia figuran los siguientes:
+Estos deben planificarse e integrarse desde el inicio mismo de su proyecto. Entre los mecanismos disponibles para la vigilancia figuran los siguientes:
 
 * **Supervisión de los tiempos de respuesta de búsqueda con el archivo request.log de AEM**
 
@@ -326,7 +329,7 @@ Estos deben planificarse e integrarse desde el comienzo mismo del proyecto. Entr
 
 El sitio web estará disponible para varios usuarios/visitantes, tanto en los entornos de autor como de publicación. Los números suelen ser más de los que se usaban al realizar pruebas, pero también fluctúan y son difíciles de predecir. El sitio web deberá estar diseñado para un número promedio de usuarios/visitantes simultáneos sin que se observe un impacto negativo en el rendimiento. De nuevo, el `request.log` puede utilizarse para realizar pruebas de concurrencia; consulte Optimización [del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
-Los objetivos para el número de usuarios simultáneos dependen del tipo de entorno:
+Los Destinatarios para el número de usuarios simultáneos dependen del tipo de entorno:
 
 * **Entorno de creación**
 
@@ -334,8 +337,8 @@ Los objetivos para el número de usuarios simultáneos dependen del tipo de ento
 
 * **Entorno de publicación**
 
-   * Esto es más difícil de predecir, por lo que debe seleccionar un valor objetivo. De nuevo, esto debería basarse en la experiencia de su sitio web actual junto con expectativas realistas de su nuevo sitio web.
-   * Los eventos especiales (por ejemplo, cuando publica contenido nuevo y muy popular) pueden superar las expectativas, o incluso las capacidades (como a veces se informa en la prensa cuando se ponen a la venta entradas para ciertos eventos).
+   * Esto es más difícil de predecir, por lo que debe seleccionar un valor de destinatario. De nuevo, esto debería basarse en la experiencia de su sitio web actual junto con expectativas realistas de su nuevo sitio web.
+   * Los eventos especiales (por ejemplo, cuando se publica contenido nuevo y muy popular) pueden superar las expectativas, o incluso las capacidades (como a veces se informa en la prensa cuando los boletos para ciertos eventos están disponibles para la venta).
 
 ### Capacidad y volumen {#capacity-and-volume}
 
@@ -356,7 +359,7 @@ Antes de analizar las métricas relacionadas, una definición rápida de los té
    |---|---|---|
    | Cliente | Potencia computacional del equipo del usuario. | Complejidad del diseño de página. |
    | Red | Ancho de banda de la red. | Tamaño de la página (código, imágenes, etc.). |
-   | Caché de despachante | Memoria del servidor del servidor Web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
+   | Caché de Dispatcher | Memoria del servidor del servidor Web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
    | Caché de salida | Memoria del servidor de AEM (memoria principal y unidad de disco duro). | Número y tamaño de las páginas en la caché de salida, número de dependencias por página. La caché del despachante disminuye este volumen. |
    | Servidor web | Potencia computacional del servidor Web. | Cantidad de solicitudes. El almacenamiento en caché reduce este volumen. |
    | Plantilla | Potencia computacional del servidor Web. | Complejidad de las plantillas. |
@@ -368,7 +371,7 @@ Las secciones anteriores detallan las principales métricas que se van a definir
 
 Según sus requisitos específicos, puede resultar útil definir métricas adicionales, ya sea de forma aislada o teniendo en cuenta las clasificaciones anteriores.
 
-Sin embargo, es preferible tener un pequeño conjunto de métricas principales precisas que funcionen de manera fácil y confiable, en lugar de intentar medir y definir cada aspecto del sitio web. Por su propia naturaleza, su sitio web empezará a cambiar y a evolucionar tan pronto como se entregue a sus usuarios.
+Sin embargo, es preferible tener un pequeño conjunto de métricas principales precisas que funcionen de manera fácil y confiable, en lugar de intentar medir y definir cada aspecto del sitio web. Por su propia naturaleza, su sitio web tendrá el inicio de cambiar y evolucionar tan pronto como se entregue a sus usuarios.
 
 ## Seguridad {#security}
 
@@ -382,9 +385,10 @@ La lista de comprobación [de seguridad](/help/sites-administering/security-chec
 >
 >Lo siguiente:
 >
->* Ofrece información general sobre la *primera* implementación de un proyecto de AEM.
->* Está concebido como una visión general abstracta; consulte la lista [de comprobación de](/help/managing/best-practices.md) proyectos para fases/hitos/tareas específicas.
+>* Oferta una descripción general relacionada con la *primera* implementación de un proyecto de AEM.
+>* Está concebido como una visión general abstracta; consulte la lista de comprobación [del proyecto](/help/managing/best-practices.md) para fases/hitos/tareas específicas.
 >* Cualquier escalón de tiempo es teórico.
+
 >
 
 
@@ -410,7 +414,7 @@ Se recomienda utilizar un enfoque iterativo en todos los aspectos:
 
 >[!NOTE]
 >
->Consulte la lista [de comprobación de](/help/managing/best-practices.md) proyectos para ver ejemplos de tareas que debe realizar (o evaluar) durante el ciclo de vida del proyecto.
+>Consulte la lista [de comprobación del](/help/managing/best-practices.md) proyecto para ver ejemplos de tareas que debe realizar (o evaluar) durante el ciclo de vida del proyecto.
 
 Algunos puntos a tener en cuenta para cada categoría son:
 
@@ -442,7 +446,7 @@ Algunos puntos a tener en cuenta para cada categoría son:
 
       * Entorno de desarrollo.
       * Proceso de desarrollo.
-      * Entorno de prueba.
+      * Probar entorno.
       * Proceso de implementación (incluida la administración de la configuración).
    * Planifique varias pruebas de carga.
    * Planifique pruebas y optimización durante las copias.
@@ -469,13 +473,13 @@ Algunos puntos a tener en cuenta para cada categoría son:
 
 ## Calcular el tiempo y el esfuerzo {#estimating-time-and-effort}
 
-En función de la lista de tareas resultante, puede realizar estimaciones iniciales de tiempo y esfuerzo para definiciones de tareas (de alto nivel). Esto debe incluir una indicación de quién (cliente o socio) hará qué y cuándo.
+En función de la lista de tarea resultante, puede realizar estimaciones iniciales de tiempo y esfuerzo para las definiciones de tarea (de alto nivel). Esto debe incluir una indicación de quién (cliente o socio) hará qué y cuándo.
 
-En la lista siguiente se muestran las aproximaciones estándar y las interrelaciones de esfuerzo que se requieren y, por lo tanto, los costos:
+La siguiente lista muestra las aproximaciones estándar y las interrelaciones de esfuerzo implicadas, y por lo tanto los costos:
 
 >[!CAUTION]
 >
->Estas cifras sólo pueden utilizarse para las estimaciones iniciales. Un desarrollador experimentado de AEM debe realizar un análisis detallado.
+>Estas cifras sólo pueden utilizarse para las estimaciones iniciales. Un desarrollador experimentado de AEM debe realizar la análisis detallada.
 
 | Fase | Esfuerzo |
 |---|---|
@@ -513,7 +517,7 @@ Se deben definir las siguientes métricas del sitio:
 
 ## Visión General de las Herramientas Potenciales {#overview-of-potential-tools}
 
-Se proporciona la siguiente lista para informarle de las herramientas que se pueden utilizar. Está pensada como una introducción, no como una extensa lista de recomendaciones, y ciertamente no debería disuadirle de utilizar otras herramientas que prefiera.
+Se proporciona la siguiente lista para informarle de las herramientas que se pueden utilizar. Está pensada como una introducción, no como una lista extensiva de recomendaciones, y ciertamente no debería disuadirle de utilizar otras herramientas que prefiera.
 
 <table>
  <tbody>
@@ -526,7 +530,7 @@ Se proporciona la siguiente lista para informarle de las herramientas que se pue
    <td><p>La propia AEM proporciona una serie de mecanismos que le ayudan a supervisar, probar, investigar y depurar su aplicación; incluyendo:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modo de desarrollador</a></li>
-     <li>La Consola <a href="/help/sites-developing/hobbes.md">de pruebas</a></li>
+     <li>Consola <a href="/help/sites-developing/hobbes.md">de pruebas</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Tablero de operaciones</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Perspectiva de contenido</a></li>
      <li>El árbol <a href="/help/sites-authoring/author-environment-tools.md#content-tree">de contenido</a></li>
@@ -546,7 +550,7 @@ Se proporciona la siguiente lista para informarle de las herramientas que se pue
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> es una herramienta de código abierto para rastrear y administrar los detalles de sus errores de software. Los flujos de trabajo se pueden imponer a los detalles del error según sea necesario.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a> es una herramienta de código abierto para rastrear y administrar los detalles de sus errores de software. Se pueden imponer Flujos de trabajo a los detalles del error según sea necesario.</td>
   </tr>
   <tr>
    <td>Git</td>
@@ -580,7 +584,7 @@ Además, las siguientes secciones son de particular interés:
 Adobe ofrece otras optimizaciones para todas las fases y audiencias:
 
 * [Implementación](/help/sites-deploying/best-practices.md)
-* [Creación ](/help/sites-authoring/best-practices.md)
+* [Creación  ](/help/sites-authoring/best-practices.md)
 * [Administración](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo de](/help/sites-developing/best-practices.md)
 * [Administración de proyectos](/help/managing/best-practices.md)

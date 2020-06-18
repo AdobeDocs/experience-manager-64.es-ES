@@ -40,7 +40,6 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
    * **[!UICONTROL Ninguno]**: Especifica que se cree el fragmento desde cero sin utilizar ningún modelo de formulario.
    * **[!UICONTROL Plantilla]** de formulario: Especifica que se crea el fragmento con una plantilla XDP cargada a AEM Forms. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
-
    ![Creación de un formulario adaptable mediante una plantilla de formulario como modelo](assets/form-template-model.png)
 
    También se muestran los subformularios marcados como fragmentos en la plantilla de formulario seleccionada. Puede seleccionar un subformulario para el fragmento de formulario adaptable desde la lista desplegable.
@@ -50,7 +49,6 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
    Además, puede crear un fragmento de formulario adaptable utilizando subformularios que no estén marcados como fragmentos en la plantilla de formulario especificando la expresión SOM para el subformulario en el cuadro desplegable.
 
    * **[!UICONTROL Esquema]** XML: Especifica la creación del fragmento mediante un esquema XML cargado en AEM Forms. Puede cargar o seleccionar los esquemas XML disponibles como modelo de formulario para el fragmento.
-
    ![Creación de un fragmento de formulario adaptable basado en un esquema XML como modelo](assets/xml-schema-model.png)
 
    También puede crear un fragmento de formulario adaptable seleccionando un valor de complejoType presente en el esquema seleccionado en el cuadro desplegable.
@@ -91,137 +89,138 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **[!UICONTROL Ref]** XSD: Solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
    * **[!UICONTROL Ref]** XDP: Solo aparece en formularios adaptables basados en XDP. Muestra la ubicación de la plantilla de formulario XDP.
-![save-fragment](assets/save-fragment.png)
-   **Figura:** *Cuadro de diálogo Guardar como fragmento*   Haga clic en **[!UICONTROL Aceptar]**.***
+   ![save-fragment](assets/save-fragment.png)
+   **Figura:** *Cuadro de diálogo Guardar como fragmento*
 
-1. El panel se guarda en la ubicación especificada o predeterminada del repositorio. En el formulario adaptable, el panel se sustituye por una instantánea del fragmento. Como se muestra a continuación, el panel Información general y sus paneles secundarios, Información personal y Dirección, se guardan como un fragmento.****
+1. Haga clic en **[!UICONTROL Aceptar]**.
+
+   El panel se guarda en la ubicación especificada o predeterminada del repositorio. En el formulario adaptable, el panel se sustituye por una instantánea del fragmento. Como se muestra a continuación, el panel Información general y sus paneles secundarios, Información personal y Dirección, se guardan como un fragmento.
 
    Para editar el fragmento, haga clic en **[!UICONTROL Editar recurso]** en la barra de herramientas del panel. El fragmento se abre en una nueva ficha o ventana en modo de edición.
 
-   ![Edición de fragmento](assets/edit-fragment.png)]**
+   ![Edición de fragmento](assets/edit-fragment.png)
 
-   Uso de fragmentos {#working-with-fragments}](assets/edit-fragment.png)
+## Uso de fragmentos {#working-with-fragments}
 
-## Configuración del aspecto del fragmento {#configure-fragment-appearance}
+### Configuración del aspecto del fragmento {#configure-fragment-appearance}
 
-### Cualquier fragmento que inserte en formularios adaptables aparecerá como una imagen de marcador de posición. El marcador de posición muestra títulos de hasta un máximo de diez paneles secundarios en el fragmento. Puede configurar AEM Forms para que muestren el fragmento completo en lugar de la imagen del marcador de posición.{#configure-fragment-appearance}
+Cualquier fragmento que inserte en formularios adaptables aparecerá como una imagen de marcador de posición. El marcador de posición muestra títulos de hasta un máximo de diez paneles secundarios en el fragmento. Puede configurar AEM Forms para que muestren el fragmento completo en lugar de la imagen del marcador de posición.
 
 Realice los siguientes pasos para mostrar fragmentos completos en los formularios:
 
-Vaya a la página de configuración de la consola web de AEM en https:[*host*]:[*port*]/system/console/configMgr.
-
-1. Busque y haga clic en Servicio **** de configuración de formulario adaptable para abrirlo en modo de edición.[**]
+1. Vaya a la página de configuración de la consola web de AEM en https:[*host*]:[*port*]/system/console/configMgr.
+1. Busque y haga clic en Servicio **** de configuración de formulario adaptable para abrirlo en modo de edición.
 1. Desactive la **[!UICONTROL casilla de verificación Habilitar marcador de posición en lugar de Fragmento]** para mostrar fragmentos completos en lugar de la imagen de marcador de posición.
-1. Inserción de un fragmento en un formulario adaptable {#insert-a-fragment-in-an-adaptive-form}]**
 
-### Los fragmentos de formulario adaptables que cree aparecerán en la ficha Fragmentos de formulario adaptables del buscador de contenido de AEM. Inserción de un fragmento de formulario adaptable en un formulario adaptable:{#insert-a-fragment-in-an-adaptive-form}
+### Inserción de un fragmento en un formulario adaptable {#insert-a-fragment-in-an-adaptive-form}
 
-Abra el formulario adaptable, en modo de edición, en el que desea insertar un fragmento de formulario adaptable.
+Los fragmentos de formulario adaptables que cree aparecerán en la ficha Fragmentos de formulario adaptables del buscador de contenido de AEM. Inserción de un fragmento de formulario adaptable en un formulario adaptable:
 
+1. Abra el formulario adaptable, en modo de edición, en el que desea insertar un fragmento de formulario adaptable.
 1. Haga clic en **[!UICONTROL Recursos]** navegador ![de](assets/assets-browser.png) recursos en la barra lateral. En el navegador de recursos, seleccione Fragmentos **[!UICONTROL de formulario]** adaptables en la lista desplegable.
-1. También puede elegir mostrar todos los fragmentos de formulario adaptables o filtrar según su modelo de formulario: Plantilla de formulario, Esquema XML o Básico.****![](assets/assets-browser.png)****
 
-   Arrastre y suelte un fragmento de formulario adaptable en el formulario adaptable.
+   También puede elegir mostrar todos los fragmentos de formulario adaptables o filtrar según su modelo de formulario: Plantilla de formulario, Esquema XML o Básico.
 
-1. [!NOTE]
+1. Arrastre y suelte un fragmento de formulario adaptable en el formulario adaptable.
 
-   >[!NOTE]El fragmento de formulario adaptable no está habilitado para la creación desde el formulario adaptable. Además, no se puede utilizar un fragmento basado en XSD en un formulario adaptable basado en JSON y de la forma opuesta.
+   >[!NOTE]
    >
-   >El fragmento de formulario adaptable se inserta por referencia en el formulario adaptable y se sincroniza con el fragmento de formulario adaptable independiente. Significa que, al actualizar el fragmento de formulario adaptable, los cambios se reflejan en todos los formularios adaptables en los que se utiliza el fragmento.
+   >El fragmento de formulario adaptable no está habilitado para la creación desde el formulario adaptable. Además, no se puede utilizar un fragmento basado en XSD en un formulario adaptable basado en JSON y de la forma opuesta.
 
-Incrustar un fragmento en un formulario adaptable {#embed-a-fragment-in-adaptive-form}
+El fragmento de formulario adaptable se inserta por referencia en el formulario adaptable y se sincroniza con el fragmento de formulario adaptable independiente. Significa que, al actualizar el fragmento de formulario adaptable, los cambios se reflejan en todos los formularios adaptables en los que se utiliza el fragmento.
 
-### Puede incrustar un fragmento de formulario adaptable en un formulario adaptable haciendo clic en **[!UICONTROL Incrustar recurso:*fragmentName *]**en la barra de herramientas del panel del fragmento agregado, como se muestra en la siguiente imagen de ejemplo.
+### Incrustar un fragmento en un formulario adaptable {#embed-a-fragment-in-adaptive-form}
 
-![Incrustar un fragmento de formulario en un formulario adaptable](assets/embed-fragment.png)**]**
+Puede incrustar un fragmento de formulario adaptable en un formulario adaptable haciendo clic en **[!UICONTROL Incrustar recurso:*fragmentName *]**en la barra de herramientas del panel del fragmento agregado, como se muestra en la siguiente imagen de ejemplo.
 
-[!NOTE]](assets/embed-fragment.png)
+![Incrustar un fragmento de formulario en un formulario adaptable](assets/embed-fragment.png)
 
->[!NOTE]El fragmento incrustado ya no está vinculado al fragmento independiente. Puede editar los componentes del fragmento incrustado desde el formulario adaptable.
+>[!NOTE]
 >
->Uso de fragmentos dentro de fragmentos {#using-fragments-within-fragments}
+>El fragmento incrustado ya no está vinculado al fragmento independiente. Puede editar los componentes del fragmento incrustado desde el formulario adaptable.
 
-### Puede crear fragmentos de formulario adaptables anidados, lo que significa que puede arrastrar y soltar un fragmento en otro fragmento y puede tener una estructura de fragmento anidada.{#using-fragments-within-fragments}
+### Uso de fragmentos dentro de fragmentos {#using-fragments-within-fragments}
 
-Cambio de fragmentos {#change-fragments}
+Puede crear fragmentos de formulario adaptables anidados, lo que significa que puede arrastrar y soltar un fragmento en otro fragmento y puede tener una estructura de fragmento anidada.
 
-### Puede reemplazar o cambiar un fragmento de formulario adaptable por otro fragmento mediante la propiedad **[!UICONTROL Seleccionar fragmento de recurso]** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
+### Cambio de fragmentos {#change-fragments}
 
-Asignación automática de fragmentos para el enlace de datos {#auto-mapping-of-fragments-for-data-binding}]**
+Puede reemplazar o cambiar un fragmento de formulario adaptable por otro fragmento mediante la propiedad **[!UICONTROL Seleccionar fragmento de recurso]** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
 
-## Cuando se crea un fragmento de formulario adaptable mediante una plantilla de formulario XFA o un tipo complejo XSD y se arrastra y se suelta el fragmento en un formulario adaptable, el fragmento XFA o el tipo complejo XSD se reemplazan automáticamente por el fragmento de formulario adaptable correspondiente cuya raíz del modelo de fragmento se asigna al fragmento XFA o al tipo complejo XSD.{#auto-mapping-of-fragments-for-data-binding}
+## Asignación automática de fragmentos para el enlace de datos {#auto-mapping-of-fragments-for-data-binding}
+
+Cuando se crea un fragmento de formulario adaptable mediante una plantilla de formulario XFA o un tipo complejo XSD y se arrastra y se suelta el fragmento en un formulario adaptable, el fragmento XFA o el tipo complejo XSD se reemplazan automáticamente por el fragmento de formulario adaptable correspondiente cuya raíz del modelo de fragmento se asigna al fragmento XFA o al tipo complejo XSD.
 
 Puede cambiar el recurso de fragmento y sus enlaces desde el cuadro de diálogo Editar componente.
 
-[!NOTE]
-
->[!NOTE]También puede arrastrar y soltar un fragmento de formulario adaptable enlazado desde la biblioteca de fragmentos de formulario adaptable en AEM Content Finder y proporcionar la referencia de enlace correcta desde el cuadro de diálogo Editar componente del panel de fragmentos de formulario adaptable.
+>[!NOTE]
 >
->Administrar fragmentos {#manage-fragments}
+>También puede arrastrar y soltar un fragmento de formulario adaptable enlazado desde la biblioteca de fragmentos de formulario adaptable en AEM Content Finder y proporcionar la referencia de enlace correcta desde el cuadro de diálogo Editar componente del panel de fragmentos de formulario adaptable.
 
-## Puede realizar varias operaciones en fragmentos de formulario adaptables mediante la interfaz de usuario de AEM Forms.{#manage-fragments}
+## Administrar fragmentos {#manage-fragments}
 
-Ir a `https://[hostname]:[port]/aem/forms.html`.
+Puede realizar varias operaciones en fragmentos de formulario adaptables mediante la interfaz de usuario de AEM Forms.
+
+1. Ir a `https://[hostname]:[port]/aem/forms.html`.
 
 1. Haga clic en **[!UICONTROL Seleccionar]** en la barra de herramientas de la interfaz de usuario de AEM Forms y seleccione un fragmento de formulario adaptable. La barra de herramientas muestra las siguientes operaciones que puede realizar en el fragmento de formulario adaptable seleccionado.
-
-1. 
 
 <table> 
  <tbody> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p><strong>Operación</strong></p> </td> 
+   <td><p><strong>Descripción</strong></p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Abra</p> </td> 
+   <td><p>Abre el fragmento de formulario adaptable seleccionado en modo de edición.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Ver propiedades</p> </td> 
+   <td><p>Abre el panel Propiedades. Desde el panel Propiedades, puede realizar vistas y editar propiedades, generar una previsualización y cargar una imagen en miniatura para el fragmento seleccionado. For more information, see <a href="/help/forms/using/manage-form-metadata.md" target="_blank">Managing metadata</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Copiar</p> </td> 
+   <td><p>Copia el fragmento seleccionado. El botón Pegar aparece en la barra de herramientas.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Descargar</p> </td> 
+   <td><p>Descarga el fragmento seleccionado.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Vista previa</p> </td> 
+   <td><p>Proporciona opciones para la previsualización del fragmento como HTML o una previsualización personalizada mediante la combinación de datos de un archivo XML con el fragmento. Para obtener más información, consulte <a href="/help/forms/using/previewing-forms.md" target="_blank">Vista previa de un formulario</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Revisión de Inicio / Administrar revisión</p> </td> 
+   <td><p>Permite iniciar y administrar una revisión del fragmento seleccionado. Para obtener más información, consulte <a href="/help/forms/using/create-reviews-forms.md" target="_blank">Creación y administración de revisiones</a>.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Crear diccionario</p> </td> 
+   <td><p>Genera un diccionario para localizar el fragmento seleccionado. Para obtener más información, consulte <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localización de formularios</a>adaptables.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Publicar o cancelar la publicación</p> </td> 
+   <td><p>Publica o anula la publicación del fragmento seleccionado.<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   </p> </td> 
-   </p> </td> 
+   <td><p>Eliminar</p> </td> 
+   <td><p>Elimina el fragmento seleccionado.<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Para localizar un formulario adaptable que contenga fragmentos de formulario adaptables, debe localizar el fragmento y el formulario por separado. La idea es localizar un fragmento una vez y reutilizarlo en varios formularios adaptables.{#localizing-adaptive-form-containing-fragments}
+## Localización de formularios adaptables que contienen fragmentos {#localizing-adaptive-form-containing-fragments}
 
-[!NOTE]
+Para localizar un formulario adaptable que contenga fragmentos de formulario adaptables, debe localizar el fragmento y el formulario por separado. La idea es localizar un fragmento una vez y reutilizarlo en varios formularios adaptables.
 
->[!NOTE]Las claves de localización del fragmento no aparecerán en el archivo XLIFF para un formulario adaptable.
+>[!NOTE]
 >
->Puntos clave que recordar al trabajar con fragmentos {#key-points-to-remember-when-working-with-fragments}
+>Las claves de localización del fragmento no aparecerán en el archivo XLIFF para un formulario adaptable.
 
-## Asegúrese de que el nombre del fragmento sea único. El fragmento no se puede crear si hay un fragmento existente con el mismo nombre.{#key-points-to-remember-when-working-with-fragments}
+## Puntos clave que recordar al trabajar con fragmentos {#key-points-to-remember-when-working-with-fragments}
 
+* Asegúrese de que el nombre del fragmento sea único. El fragmento no se puede crear si hay un fragmento existente con el mismo nombre.
 * En un formulario adaptable basado en XDP, si guarda un panel como fragmento que incluye otro fragmento XDP, el fragmento resultante se enlazará automáticamente al fragmento XDP secundario. En el caso de un formulario adaptable basado en XSD, el fragmento resultante se enlazará a la raíz del esquema.
 * Cuando se crea un fragmento de formulario adaptable, se crea un nodo de fragmento, similar al nodo guideContainer de un formulario adaptable, en CRXDe Lite.
 * No se admite un fragmento en un formulario adaptable que utilice un modelo de datos de formulario diferente. Por ejemplo, un fragmento basado en XDP no se admite en un formulario adaptable basado en XSD y viceversa.
@@ -232,12 +231,11 @@ Ir a `https://[hostname]:[port]/aem/forms.html`.
 * Al volver a publicar un fragmento de formulario adaptable actualizado, los cambios se reflejan en las instancias publicadas del formulario adaptable en el que se utiliza el fragmento.
 * El formulario adaptable que contiene el componente Verificar no admite usuarios anónimos. Además, no se recomienda utilizar el componente Verificar en un fragmento de formulario adaptable.
 * (Solo **Mac**) Para asegurarse de que la funcionalidad de los fragmentos de formulario funciona perfectamente en todos los escenarios, agregue la siguiente entrada al archivo /private/etc/hosts:
-* `127.0.0.1 <Host machine>`**
+
+   `127.0.0.1 <Host machine>`
 
    **Equipo** host: El ordenador Apple Mac en el que se implementan AEM Forms.
 
-   Fragmentos de referencia {#reference-fragments}**
+## Fragmentos de referencia {#reference-fragments}
 
-## Hay disponibles fragmentos de formulario adaptables de referencia que se pueden utilizar para crear el formulario. For more information, see [Reference Fragments](/help/forms/using/reference-adaptive-form-fragments.md).
-
-Reference adaptive form fragments that you can use to create your form are available. For more information, see [Reference Fragments](/help/forms/using/reference-adaptive-form-fragments.md).
+Hay disponibles fragmentos de formulario adaptables de referencia que se pueden utilizar para crear el formulario. For more information, see [Reference Fragments](/help/forms/using/reference-adaptive-form-fragments.md).

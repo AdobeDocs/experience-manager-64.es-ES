@@ -1,15 +1,18 @@
 ---
 title: Guía del usuario de AEM 6.4 Assets
-description: Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
+description: Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 23%
 
 ---
 
 
 # Guía del usuario de AEM 6.4 Assets
 
-Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión, entrega y optimización de recursos digitales.
+Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
 
 ## Artículos clave de AEM
 
@@ -28,7 +31,7 @@ Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión,
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Pantallas](/help/screens/home.md) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
 | [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Descubra cómo crear su instancia de AEM. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
@@ -38,10 +41,10 @@ Esta guía abarca todas las tareas de Recursos AEM, como la creación, gestión,
 ## Recursos clave de AEM
 
 * [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [Guía del usuario de HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
+* [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
+* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

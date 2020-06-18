@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 ## Introducción {#introduction}
 
-La descarga distribuye tareas de procesamiento entre instancias de Experience Manager en una topología. Con la descarga, puede utilizar instancias específicas de Experience Manager para realizar tipos de procesamiento específicos. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
+La descarga distribuye tareas de procesamiento entre instancias de Experience Manager en una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos de procesamiento específicos. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
-La descarga se basa en las funciones [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los clústeres están compuestos de una o varias instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
+La descarga se basa en las funciones [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los grupos constan de una o varias instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
 
 Para obtener información sobre cómo agregar instancias a una topología, consulte [Administración de topologías](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -32,7 +35,7 @@ Sling JobManager y JobConsumer permiten la creación de trabajos procesados en u
 * JobManager: Un servicio que crea trabajos para temas específicos.
 * JobConsumer: Un servicio que ejecuta trabajos de uno o más temas. Se pueden registrar varios servicios de JobConsumer para el mismo tema.
 
-Cuando JobManager crea un trabajo, el marco de descarga selecciona un clúster de Experience Manager en la topología para ejecutar el trabajo:
+Cuando JobManager crea un trabajo, el marco de descargas selecciona un clúster de Experience Manager en la topología para ejecutar el trabajo:
 
 * El clúster debe incluir una o varias instancias que ejecuten un JobConsumer registrado para el tema del trabajo.
 * El tema debe estar habilitado para al menos una instancia del clúster.
@@ -51,7 +54,7 @@ Al crear un trabajo, la carga útil sólo se encuentra en la instancia que lo cr
 
 ## Administración de topologías {#administering-topologies}
 
-Las topologías son clústeres de Experience Manager con poco acoplamiento que participan en la descarga. Un clúster consta de una o varias instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
+Las topologías son clústeres de Experience Manager acoplados de forma laxa que participan en la descarga. Un clúster consta de una o varias instancias de servidor Experience Manager (una sola instancia se considera un clúster).
 
 Cada instancia de Experience Manager ejecuta los siguientes servicios relacionados con la descarga:
 
@@ -72,7 +75,7 @@ Para cada clúster, verá una lista de miembros del clúster que indica el orden
 
 Para cada instancia del clúster, puede ver varias propiedades relacionadas con la topología:
 
-* Lista blanca de temas para el consumidor de trabajos de la instancia.
+* Una lista de temas permitidos para el consumidor de trabajos de la instancia.
 * Los extremos expuestos para la conexión con la topología.
 * Temas de trabajo para los que se ha registrado la instancia para la descarga.
 * Temas de trabajo que procesa la instancia.
@@ -88,7 +91,7 @@ Para cada instancia del clúster, puede ver varias propiedades relacionadas con 
 1. Haga clic en un clúster para ver una lista de las instancias del clúster y su ID, estado actual y estado de encabezado.
 1. Haga clic en un ID de instancia para ver propiedades más detalladas.
 
-También puede utilizar la consola web para ver la información de topología. La consola proporciona más información sobre los clústeres de topología:
+También puede utilizar la consola web para vista de información de topología. La consola proporciona más información sobre los clústeres de topología:
 
 * Qué instancia es la instancia local.
 * Los servicios del conector de topología que utiliza esta instancia para conectarse a la topología (saliente) y los servicios que se conectan a esta instancia (entrante).
@@ -105,10 +108,10 @@ Utilice el procedimiento siguiente para abrir la página Administración de topo
 
 El servicio de detección basado en recursos de Apache Sling se ejecuta en cada instancia para controlar cómo interactúan las instancias de Experience Manager con una topología.
 
-El servicio de detección envía solicitudes POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista blanca de direcciones IP o nombres de host que pueden unirse a la topología:
+El servicio de detección envía solicitudes POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de direcciones IP permitidas o nombres de host permitidos para unirse a la topología:
 
 * Para unir una instancia a una topología, especifique la dirección URL del servicio Conector de topología del miembro raíz.
-* Para habilitar una instancia para que se una a una topología, agregue la instancia a la lista blanca del servicio Topology Connector del miembro raíz.
+* Para habilitar una instancia para que se una a una topología, agregue la instancia a la lista allow del servicio Topology Connector del miembro raíz.
 
 Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes propiedades del servicio org.apache.sling.discover.impt.Config:
 
@@ -133,7 +136,7 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
    <td>15</td> 
   </tr> 
   <tr> 
-   <td>Retraso mínimo del evento (segundos)</td> 
+   <td>Retraso mínimo del Evento (segundos)</td> 
    <td>minEventDelay</td> 
    <td><p>Cuando se produce un cambio en la topología, la cantidad de tiempo que se tarda en retrasar el cambio de estado de TOPOLOGY_CHANGING a TOPOLOGY_CHANGED. Cada cambio que se produce cuando el estado es TOPOLOGY_CHANGING aumenta el retraso en esta cantidad de tiempo.</p> <p>Este retraso evita que los oyentes se vean inundados de eventos. </p> <p>Para no utilizar ningún retraso, especifique 0 o un número negativo.</p> </td> 
    <td>3</td> 
@@ -145,9 +148,9 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Lista blanca del conector de topología</td> 
+   <td>Lista de permitidos del conector de topología</td> 
    <td>topologíaConnectorWhitelist</td> 
-   <td>Lista de direcciones IP o nombres de host que permite el servicio Conector de topología local en la topología. </td> 
+   <td>lista de direcciones IP o nombres de host que permite el servicio Conector de topología local en la topología. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
   </tr> 
   <tr> 
@@ -164,14 +167,14 @@ Utilice el siguiente procedimiento para conectar una instancia de CQ al miembro 
 1. Abra la consola web en el explorador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Haga clic en Principal > Administración de topología.
 1. Haga clic en Configurar servicio de detección.
-1. Agregue un elemento a la propiedad URL del conector de topología y especifique la dirección URL del servicio Conector de topología del miembro de la topología raíz. La dirección URL tiene el formato https://rootservername:4502/libs/sling/topology/connector.
+1. Añada un elemento a la propiedad URL del conector de topología y especifique la dirección URL del servicio del conector de topología del miembro de la topología raíz. La dirección URL tiene el formato https://rootservername:4502/libs/sling/topology/connector.
 
-Realice el siguiente procedimiento en el miembro raíz de la topología. El procedimiento agrega los nombres de los demás miembros de la topología a su lista blanca de Discovery Service.
+Realice el siguiente procedimiento en el miembro raíz de la topología. El procedimiento agrega los nombres de los demás miembros de la topología a su lista de permitidos de Discovery Service.
 
 1. Abra la consola web en el explorador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Haga clic en Principal > Administración de topología.
 1. Haga clic en Configurar servicio de detección.
-1. Para cada miembro de la topología, agregue un elemento a la propiedad Lista blanca del conector de topología y especifique el nombre de host o la dirección IP del miembro de la topología.
+1. Para cada miembro de la topología, agregue un elemento a la propiedad allow list del conector de topología y especifique el nombre de host o la dirección IP del miembro de la topología.
 
 ## Configuración del consumo de temas {#configuring-topic-consumption}
 
@@ -197,32 +200,33 @@ Los trabajos se distribuyen entre instancias que tienen activado el tema asociad
    * Habilitado: Esta instancia consume trabajos de este tema.
    * Deshabilitado: Esta instancia no consume trabajos de este tema.
    * Exclusivo: Esta instancia solo consume trabajos de este tema.
-   **** Nota: Al seleccionar Exclusivo para un tema, todos los demás temas se establecen automáticamente como Deshabilitado.
+
+   **Nota:** Al seleccionar Exclusivo para un tema, todos los demás temas se establecen automáticamente como Deshabilitado.
 
 ### Consumidores de trabajos instalados {#installed-job-consumers}
 
-Con Experience Manager se instalan varias implementaciones de JobConsumer. Los temas para los que están registrados estos JobConsumers aparecen en el Explorador de descargas. Los temas adicionales que aparecen son los que se han registrado en JobConsumers personalizados. En la tabla siguiente se describe el valor predeterminado de JobConsumers.
+Hay varias implementaciones de JobConsumer instaladas con Experience Manager. Los temas para los que están registrados estos JobConsumers aparecen en el Explorador de descargas. Los temas adicionales que aparecen son los que se han registrado en JobConsumers personalizados. En la tabla siguiente se describe el valor predeterminado de JobConsumers.
 
 | Tema del trabajo | PID de servicio | Descripción |
 |---|---|---|
-| / | org.apache.sling.event.impl.Jobs.deprecated.EventAdminBridge | Instalado con Apache Sling. Procesa los trabajos que genera el administrador de eventos OSGi para lograr compatibilidad con versiones anteriores. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado con Apache Sling. Procesa los trabajos que genera el administrador de evento OSGi para lograr compatibilidad con versiones anteriores. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas de trabajo. |
 | com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Procesa los trabajos que genera el flujo de trabajo de descarga de recursos de actualización de DAM. |
 
 ### Desactivación y activación de temas para una instancia {#disabling-and-enabling-topics-for-an-instance}
 
-El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista blanca y lista negra de temas. Configure estas propiedades para habilitar o deshabilitar el procesamiento de temas específicos en una instancia de Experience Manager.
+El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista de temas permitidos y listas de bloques. Configure estas propiedades para habilitar o deshabilitar el procesamiento de temas específicos en una instancia de Experience Manager.
 
-**** Nota: Si la instancia pertenece a una topología, también puede utilizar el Explorador de descargas en cualquier equipo de la topología para habilitar o deshabilitar temas.
+**Nota:** Si la instancia pertenece a una topología, también puede utilizar el Explorador de descargas en cualquier equipo de la topología para habilitar o deshabilitar temas.
 
-La lógica que crea la lista de temas habilitados primero permite todos los temas que están en la lista blanca y, a continuación, elimina los temas que están en la lista negra. De forma predeterminada, todos los temas están habilitados (el valor de la lista blanca es `*`) y no hay temas deshabilitados (la lista negra no tiene valor).
+La lógica que crea la lista de temas habilitados primero permite todos los temas que están en la lista de permitidos y luego elimina los temas que están en la lista de bloques.De manera predeterminada, todos los temas están habilitados (el valor de la lista de permitidos es `*`) y no hay temas deshabilitados (la lista de bloques no tiene valor).
 
-Utilice la consola web o un `sling:OsgiConfig` nodo para configurar las siguientes propiedades. Para `sling:OsgiConfig` los nodos, el PID del servicio Job Consumer Manager es org.apache.sling.event.impl.job.JobConsumerManager.
+Utilice la consola web o un `sling:OsgiConfig` nodo para configurar las siguientes propiedades. Para `sling:OsgiConfig` los nodos, el PID del servicio Job Consumer Manager es org.apache.sling.evento.impl.job.JobConsumerManager.
 
 | Nombre de propiedad en la consola web | ID de OSGi | Descripción |
 |---|---|---|
-| Lista blanca del tema | job.consumermanager.whitelist | Una lista de temas que procesa el servicio local de JobManager. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
-| Lista negra de temas | job.consumermanager.blacklist | Una lista de temas que el servicio local de JobManager no procesa. |
+| Lista blanca del tema | job.consumermanager.whitelist | lista de temas que procesa el servicio local de JobManager. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
+| Lista negra de temas | job.consumermanager.blacklist | lista de temas que no se procesan en el servicio local de JobManager. |
 
 ## Creación De Agentes De Replicación Para Descarga {#creating-replication-agents-for-offloading}
 
@@ -277,8 +281,8 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte > URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuario de transporte | Usuario de replicación en instancia de destino |
-   | Transporte > Pasaporte de transporte | Contraseña de usuario de replicación en la instancia de destino |
+   | Transporte > Usuario de transporte | Usuario de replicación en instancia de destinatario |
+   | Transporte > Pasaporte de transporte | Contraseña de usuario de replicación en la instancia de destinatario |
    | Extended > Método HTTP | POST |
    | Activadores > Ignorar predeterminado | Verdadero |
 
@@ -291,8 +295,8 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte > URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Usuario de transporte | Usuario de replicación en instancia de destino |
-   | Transporte > Pasaporte de transporte | Contraseña de usuario de replicación en la instancia de destino |
+   | Transporte > Usuario de transporte | Usuario de replicación en instancia de destinatario |
+   | Transporte > Pasaporte de transporte | Contraseña de usuario de replicación en la instancia de destinatario |
    | Extended > Método HTTP | OBTENER |
 
 ### Creación del agente de salida {#creating-the-outbox-agent}
@@ -317,7 +321,7 @@ Obtenga el Sling ID de una instancia de Experience Manager mediante cualquiera d
 
 Configure las instancias de una topología para que instancias específicas realicen el procesamiento en segundo plano de los recursos que se agregan o actualizan en DAM.
 
-De forma predeterminada, Experience Manager ejecuta el flujo de trabajo de recursos de actualización de DAM cuando cambia un recurso DAM o cuando se agrega uno a DAM. Cambie el comportamiento predeterminado para que, en su lugar, Experience Manager ejecute el flujo de trabajo de descarga de recursos de actualización de DAM. Este flujo de trabajo genera un trabajo de JobManager que tiene un tema de `com/adobe/granite/workflow/offloading`. A continuación, configure la topología para que el trabajo se descargue a un trabajador dedicado.
+De forma predeterminada, Experience Manager ejecuta el flujo de trabajo de recursos de actualización de DAM cuando cambia un recurso DAM o cuando se agrega uno a DAM. Cambie el comportamiento predeterminado para que el Experience Manager ejecute el flujo de trabajo de descarga de recursos de actualización de DAM. Este flujo de trabajo genera un trabajo de JobManager que tiene un tema de `com/adobe/granite/workflow/offloading`. A continuación, configure la topología para que el trabajo se descargue a un trabajador dedicado.
 
 >[!CAUTION]
 >
@@ -326,10 +330,10 @@ De forma predeterminada, Experience Manager ejecuta el flujo de trabajo de recur
 El siguiente procedimiento asume las siguientes características para la topología de descarga:
 
 * Una o varias instancias de Experience Manager son instancias de creación con las que los usuarios interactúan para agregar o actualizar recursos DAM.
-* Los usuarios no interactúan directamente con una o varias instancias de Experience Manager que procesan los recursos de DAM. Estas instancias están dedicadas al procesamiento en segundo plano de los recursos DAM.
+* Los usuarios no interactúan directamente con una o varias instancias de Experience Manager que procesan los recursos DAM. Estas instancias están dedicadas al procesamiento en segundo plano de los recursos DAM.
 
 1. En cada instancia de Experience Manager, configure el servicio de detección para que apunte al conector de topografía raíz. (Consulte [Configuración de la pertenencia](#title4)a la topología).
-1. Configure el Conector de topografía raíz para que las instancias de conexión estén en la lista de direcciones permitidas.
+1. Configure el Conector de topografía raíz para que las instancias de conexión estén en la lista de permitidas.
 1. Abra el navegador de descargas y deshabilite el `com/adobe/granite/workflow/offloading` tema en las instancias con las que los usuarios interactúan para cargar o cambiar recursos DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
@@ -339,7 +343,7 @@ El siguiente procedimiento asume las siguientes características para la topolog
    1. Abra la consola Flujo de trabajo.
    1. Haga clic en la ficha Iniciador.
    1. Busque las dos configuraciones del iniciador que ejecutan el flujo de trabajo de recursos de actualización de DAM. Un tipo de evento de configuración del iniciador es Nodo creado y el otro tipo es Nodo modificado.
-   1. Cambie ambos tipos de eventos para que ejecuten el flujo de trabajo de descarga de recursos de actualización de DAM. (Para obtener información sobre las configuraciones del iniciador, consulte [Inicio de flujos de trabajo cuando cambian](/help/sites-administering/workflows-starting.md)los nodos).
+   1. Cambie ambos tipos de evento para que ejecuten el flujo de trabajo de descarga de recursos de actualización de DAM. (Para obtener información sobre las configuraciones del iniciador, consulte [Inicio de Flujos de trabajo cuando cambian](/help/sites-administering/workflows-starting.md)los nodos).
 
 1. En las instancias que realizan el procesamiento en segundo plano de recursos DAM, deshabilite los iniciadores de flujo de trabajo que ejecutan el flujo de trabajo de recursos de actualización de DAM.
 

@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Deploying Guide
+user-guide-title: Guía de implementación de AEM 6.4
 translation-type: tm+mt
-source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 11%
 
 ---
 
@@ -12,10 +15,10 @@ source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
 # Guía del usuario de la implementación de AEM 6.4 {#deploying}
 
 + [Guía del usuario de implementación](home.md)
-+ Introducción a la plataforma AEM {#introduction}
-   + [Introducción a la plataforma AEM](platform.md)
++ Introducción a AEM Platform {#introduction}
+   + [Introducción a AEM Platform](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
-   + [Elementos de almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
+   + [Elementos de Almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
 + Implementación de AEM {#deploying}
    + [Implementación y mantenimiento](deploy.md)
@@ -27,7 +30,7 @@ source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
    + [Limpieza de revisión](revision-cleanup.md)
    + [Cómo ejecutar AEM con TarMK Cold Standby](tarmk-cold-standby.md)
    + [Compatibilidad con RDBMS en AEM 6.4](rdbms-support-in-aem.md)
-   + [Consultas de Oak e indización](queries-and-indexing.md)
+   + [Consultas de roble e indexación](queries-and-indexing.md)
    + [Indexación a través del Jar de Oak-run](indexing-via-the-oak-run-jar.md)
    + [Casos de uso de indización de Oak-run.jar](oak-run-indexing-usecases.md)
    + [Resolución de problemas con los índices Oak](troubleshooting-oak-indexes.md)
@@ -88,11 +91,11 @@ source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Prácticas recomendadas   {#practices}
++ Prácticas recomendadas  {#practices}
    + [Implementación de optimizaciones](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)
-   + [Prácticas recomendadas para consultas e indexación](best-practices-for-queries-and-indexing.md)
+   + [Prácticas recomendadas para Consultas e indexación](best-practices-for-queries-and-indexing.md)
    + [Recomendaciones de interfaz de usuario para clientes](ui-recommendations.md)
    + [Rendimiento y escalabilidad](performance.md)
 
@@ -112,7 +115,5 @@ To be removed:
 /help/sites-deploying/consistency-check.md
 
 Redirects:
-[(Redirect)Glossary](screens-glossary.md) to /help/screens/aem-screens-introduction.md
-[(Redirect)What is AEM Screens?](aem-screens-introduction.md) redirect to /help/screens/aem-screens-introduction.md
 [(Enabling HTTP Over SSL)](config-ssl.md) redirect to /content/help/en/experience-manager/6-4/sites-administering/ssl-by-default
 -->

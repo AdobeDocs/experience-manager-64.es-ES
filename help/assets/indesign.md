@@ -1,9 +1,9 @@
 ---
 title: Integración de AEM Assets con Adobe InDesign Server
-description: Obtenga información sobre cómo integrar Recursos AEM con InDesign Server.
+description: Obtenga información sobre cómo integrar AEM Assets con InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 5%
@@ -13,14 +13,14 @@ ht-degree: 5%
 
 # Integración de AEM Assets con Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
-Recursos Adobe Experience Manager (AEM) que utiliza:
+Recursos de Adobe Experience Manager (AEM) que utilizan:
 
 * Un proxy para distribuir la carga de determinadas tareas de procesamiento. Un proxy es una instancia de AEM que se comunica con un trabajador proxy para cumplir una tarea específica y con otras instancias de AEM para ofrecer los resultados.
 * Trabajador proxy para definir y administrar una tarea específica.
 
 Pueden abarcar una amplia variedad de tareas; por ejemplo, con un servidor de Adobe InDesign para procesar archivos.
 
-Para cargar archivos completamente en Recursos AEM que haya creado con Adobe InDesign, se utiliza un proxy. Esto utiliza un trabajador proxy para comunicarse con Adobe InDesign Server, donde se ejecutan [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) para extraer metadatos y generar varias representaciones para Recursos AEM. El programa de trabajo proxy habilita la comunicación bidireccional entre InDesign Server y las instancias de AEM en una configuración de nube.
+Para cargar archivos completamente a AEM Assets creados con Adobe InDesign, se utiliza un proxy. Esto utiliza un programa de trabajo proxy para comunicarse con Adobe InDesign Server, donde se ejecutan [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) para extraer metadatos y generar varias representaciones para AEM Assets. El programa de trabajo proxy habilita la comunicación bidireccional entre InDesign Server y las instancias de AEM en una configuración de nube.
 
 >[!NOTE]
 >
@@ -40,13 +40,13 @@ Para cargar archivos completamente en Recursos AEM que haya creado con Adobe InD
 
 ## Funcionamiento de la Extracción {#how-the-extraction-works}
 
-InDesign Server se puede integrar con Recursos AEM para que los archivos creados con InDesign ( `.indd`) se puedan cargar, generar representaciones, extraer *todos* los medios (por ejemplo, vídeo) y almacenarlos como recursos:
+InDesign Server se puede integrar con AEM Assets para que los archivos creados con InDesign ( `.indd`) se puedan cargar, generar representaciones, extraer *todos* los medios (por ejemplo, vídeo) y almacenarlos como recursos:
 
 >[!NOTE]
 >
 >Las versiones anteriores de AEM podían extraer XMP y la miniatura, ahora se pueden extraer todos los medios.
 
-1. Cargue el `.indd` archivo en Recursos AEM.
+1. Cargue el `.indd` archivo a AEM Assets.
 1. Un marco envía secuencias de comandos a InDesign Server mediante SOAP (Protocolo simple de acceso a objetos).
 
    Esta secuencia de comandos de comando:
@@ -57,7 +57,7 @@ InDesign Server se puede integrar con Recursos AEM para que los archivos creados
       * Se extraen la estructura, el texto y los archivos multimedia.
       * Se generan representaciones PDF y JPG.
       * Se generan representaciones HTML e IDML.
-   * Publique los archivos resultantes en Recursos AEM.
+   * Publique los archivos resultantes en AEM Assets.
 
    >[!NOTE]
    >
@@ -72,12 +72,12 @@ InDesign Server se puede integrar con Recursos AEM para que los archivos creados
 1. Después de la generación de extracción y representación:
 
    * La estructura se replica en un `cq:Page` (tipo de representación).
-   * El texto y los archivos extraídos se almacenan en Recursos AEM.
-   * Todas las representaciones se almacenan en Recursos AEM, en el propio recurso.
+   * El texto y los archivos extraídos se almacenan en AEM Assets.
+   * Todas las representaciones se almacenan en AEM Assets, en el propio recurso.
 
 ## Integración de InDesign Server con AEM {#integrating-the-indesign-server-with-aem}
 
-Para integrar InDesign Server para utilizarlo con AEM Assets y después de configurar el proxy, deberá:
+Para integrar InDesign Server para utilizarlo con AEM Assets y después de configurar el proxy, debe:
 
 1. [Instale InDesign Server](#installing-the-indesign-server).
 1. Si es necesario, [configure el flujo de trabajo](#configuring-the-aem-assets-workflow)de AEM Assets.
@@ -119,7 +119,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 Este flujo de trabajo está configurado con valores predeterminados que se pueden adaptar para su configuración en las distintas instancias de creación (es un flujo de trabajo estándar, por lo que hay más información disponible en [Edición de un flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si está utilizando los valores predeterminados (incluido el puerto SOAP), no es necesaria ninguna configuración.
 
-Tras la configuración, la carga de archivos de InDesign en Recursos AEM (por cualquiera de los métodos habituales) activará el flujo de trabajo necesario para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un `.indd` archivo en Recursos AEM para confirmar que ve las distintas representaciones creadas por ID en `<*your_asset*>.indd/Renditions`
+Tras la configuración, la carga de archivos de InDesign en AEM Assets (por cualquiera de los métodos habituales) activará el flujo de trabajo necesario para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un `.indd` archivo en AEM Assets para confirmar que ve las distintas representaciones creadas por IDS en `<*your_asset*>.indd/Renditions`
 
 #### Extracción de medios {#media-extraction}
 
@@ -143,7 +143,7 @@ Argumentos de extracción de medios y rutas de secuencias de comandos
 
 La secuencia `ThumbnailExport.jsx` de comandos ejecutada por el paso del flujo de trabajo de Media Extracción genera una representación en miniatura en formato .jpg. Esta representación se utiliza en el paso del flujo de trabajo Miniaturas de proceso para generar las representaciones estáticas necesarias para AEM.
 
-Puede configurar el paso del flujo de trabajo Miniaturas de proceso para generar representaciones estáticas de diferentes tamaños. Asegúrese de que no elimina los valores predeterminados, ya que la interfaz de usuario de Recursos AEM los requiere. Por último, el paso del flujo de trabajo Eliminar representación de Previsualización de imagen elimina la representación en miniatura .jpg, ya que ya no es necesaria.
+Puede configurar el paso del flujo de trabajo Miniaturas de proceso para generar representaciones estáticas de diferentes tamaños. Asegúrese de que no elimina los valores predeterminados, ya que los requiere la interfaz de usuario de AEM Assets. Por último, el paso del flujo de trabajo Eliminar representación de Previsualización de imagen elimina la representación en miniatura .jpg, ya que ya no es necesaria.
 
 #### Extracción de páginas {#page-extraction}
 
@@ -172,7 +172,7 @@ De forma predeterminada, el controlador de Extracción de exportación IDML est�
 >
 >El programa de trabajo reside en la instancia de proxy.
 
-1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de servicios de]** nube en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
+1. En la consola Herramientas, expanda Configuraciones **[!UICONTROL de]** Cloud Service en el panel izquierdo. A continuación, expanda Configuración **[!UICONTROL de proxy de]** nube.
 
 1. Haga doble clic en el programa de **[!UICONTROL IDS de trabajo]** para abrirlo y configurarlo.
 
@@ -226,7 +226,7 @@ Para configurar el número de trabajos de IDS paralelos:
 
    >[!NOTE]
    >
-   >Al trabajar con un grupo de trabajadores, puede habilitar la lista bloqueada de los trabajadores de IDS.
+   >Al trabajar con un grupo de trabajadores, puede habilitar la lista bloqueada de trabajadores de IDS.
    >
    >Para ello, habilite la casilla &quot;enable.reintento.name&quot;, en la configuración, que permite la recuperación de trabajos de IDS. `com.day.cq.dam.ids.impl.IDSJobProcessor.name`
    >
@@ -234,7 +234,7 @@ Para configurar el número de trabajos de IDS paralelos:
    >
    >De forma predeterminada, después del (`retry.interval.to.whitelist.name`) tiempo configurable en minutos, se vuelve a validar el programa de trabajo de IDS. Si el trabajador se encuentra en línea, se elimina de la lista bloqueada.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Habilitar la compatibilidad con Adobe InDesign Server 10.0 o posterior {#enabling-support-for-indesign-server-or-higher}
@@ -249,7 +249,7 @@ Para InDesign Server 10.0 o superior, realice los siguientes pasos para habilita
 >
 >Para [!DNL InDesign Server] la integración con [!DNL Assets], utilice un procesador multi-core porque la función de soporte de sesión necesaria para la integración no es compatible con sistemas de un solo núcleo.
 
-## Configuración de credenciales de Experience Manager {#configure-aem-credentials}
+## Configuración de las credenciales de Experience Manager {#configure-aem-credentials}
 
 Puede cambiar las credenciales de administrador predeterminadas (nombre de usuario y contraseña) para acceder al servidor de InDesign desde la instancia de AEM sin interrumpir la integración con el servidor de Adobe InDesign.
 

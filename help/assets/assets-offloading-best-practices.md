@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas de descarga de recursos
-description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de replicación e ingestión de recursos en Recursos AEM.
+description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de replicación e ingestión de recursos en AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Esta función ya no se utiliza en AEM 6.4 y se elimina en AEM 6.5. Planifique en consecuencia.
 
-La gestión de archivos de gran tamaño y flujos de trabajo en ejecución en Recursos Adobe Experience Manager (AEM) puede consumir considerables recursos de CPU, memoria y E/S. En particular, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia con la que se realiza la ingesta de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor consumo de recursos incluyen la ingestión de recursos de AEM y flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
+La administración de archivos de gran tamaño y flujos de trabajo en ejecución en Recursos Adobe Experience Manager (AEM) puede consumir una cantidad considerable de recursos de CPU, memoria y E/S. En particular, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia con la que se realiza la ingesta de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor consumo de recursos incluyen la ingestión de recursos de AEM y flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
 
 La descarga de estas tareas a instancias de trabajo dedicadas puede reducir los gastos de CPU, memoria y E/S. En general, la idea detrás de la descarga es distribuir tareas que consuman recursos intensivos de CPU/memoria/E a instancias de trabajo dedicadas. Las siguientes secciones incluyen casos de uso recomendados para la descarga de recursos.
 
@@ -25,7 +25,7 @@ La descarga de estas tareas a instancias de trabajo dedicadas puede reducir los 
 
 AEM Assets implementa una extensión de flujo de trabajo nativa específica de recursos para la descarga. Se basa en la extensión genérica del flujo de trabajo que proporciona el marco de descarga, pero incluye funciones adicionales específicas de los recursos en la implementación. El objetivo de la descarga de recursos es ejecutar eficazmente el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos le permite obtener un bueno control de los flujos de trabajo de ingestión.
 
-## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
+## AEM Assets descargando componentes {#aem-assets-offloading-components}
 
 En el diagrama siguiente se muestran los componentes principales del proceso de descarga de recursos:
 
@@ -73,7 +73,7 @@ El marco de descarga también incluye una interfaz de usuario para visualizar y 
 
 Cada implementación es única y, como tal, no existe una configuración de descarga única para todos los casos. Las siguientes secciones proporcionan orientación y optimizaciones sobre la descarga de ingesta de recursos.
 
-La descarga de activos también impone gastos generales al sistema, incluidos los gastos generales de funcionamiento. Si se producen problemas con la carga de ingestión de recursos, Adobe recomienda mejorar primero la configuración sin descargar. Considere las siguientes opciones antes de pasar a la descarga de recursos:
+La descarga de activos también impone gastos generales al sistema, incluidos los gastos generales de funcionamiento. Si tiene problemas con la carga de ingestión de recursos, Adobe recomienda que primero mejore la configuración sin descargar. Considere las siguientes opciones antes de pasar a la descarga de recursos:
 
 * Escalar hardware
 * Optimizar flujos de trabajo
@@ -112,6 +112,7 @@ De forma predeterminada, el transporte de descarga utiliza la replicación inver
 1. Cambiar el valor de la propiedad `default.transport.agent-to-master.prefix` de `offloading_reverse` a `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### Uso del almacén de datos compartido y la replicación sin binarios entre el autor y los trabajadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}

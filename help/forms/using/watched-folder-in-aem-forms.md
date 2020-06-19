@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Puede utilizar uno de los siguientes métodos para crear una carpeta vigilada en
 
 * Mientras configura las propiedades de un nodo de configuración Carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y anexe el nombre de la Carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
 
-   La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+   La `MyWatchedFolder`carpeta no existe, AEM Forms intenta crearla en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un extremo de Carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte Propiedades [de carpeta vigilada](#watchedfolderproperties).
 
@@ -160,11 +160,11 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 
    Cuando los archivos se colocan en la carpeta vigilada, se lista la entrada de los archivos, lo que puede reducir el rendimiento si se realiza el análisis cada segundo. El aumento del intervalo de exploración puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
 
-* **throttleOn (Boolean)**: Cuando se selecciona esta opción, se limita el número de trabajos de carpetas vigiladas que procesa AEM Forms en un momento dado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. El valor predeterminado es true. (Consulte [Acerca de la limitación](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)).
+* **throttleOn (Boolean)**: Cuando se selecciona esta opción, se limita el número de trabajos de carpetas vigiladas que los AEM Forms procesan en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. El valor predeterminado es true. (Consulte [Acerca de la limitación](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)).
 
 * **overwriteDuplicateFilename (Boolean)**: Cuando se establece en True, se sobrescriben los archivos de la carpeta de resultados y la carpeta de preservación. Cuando se establece en False, se utilizan para el nombre archivos y carpetas con un sufijo de índice numérico. El valor predeterminado es False.
 * **preserveOnFailure (Boolean)**: Preservar archivos de entrada en caso de error al ejecutar la operación en un servicio. El valor predeterminado es true.
-* **inputFilePattern (String)**: Especifica el patrón de los archivos de entrada para una carpeta vigilada. Crea una lista blanca de los archivos.
+* **inputFilePattern (String)**: Especifica el patrón de los archivos de entrada para una carpeta vigilada. Crea una lista de permitidos de los archivos.
 * **asynch (booleano)**: Identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es true (asincrónico). El procesamiento de archivos es una tarea que consume recursos, mantenga el valor del indicador asincrónico en true para evitar que se ahogue el subproceso principal del trabajo de digitalización. En un entorno agrupado, es fundamental mantener el indicador verdadero para habilitar el equilibrio de carga para los archivos que se procesan en los servidores disponibles. Si el indicador es false, el trabajo de análisis intenta realizar el procesamiento de cada archivo o carpeta de nivel superior secuencialmente dentro de su propio subproceso. No establezca el indicador en false sin un motivo específico, como el procesamiento basado en flujos de trabajo en una configuración de un solo servidor.
 
 >[!NOTE]
@@ -297,7 +297,7 @@ Ahora puede utilizar la ubicación personalizada configurada para guardar las se
 
 ### Uso de un flujo de trabajo para procesar archivos de una carpeta vigilada {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-Los Flujos de trabajo le permiten automatizar las actividades de Experience Manager. Los Flujos de trabajo constan de una serie de pasos que se ejecutan en un orden específico. Cada paso realiza una actividad distinta, como activar una página o enviar un mensaje de correo electrónico. Los Flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios de Experience Manager. Por lo tanto, los flujos de trabajo pueden coordinarse de forma complicada.
+Los Flujos de trabajo le permiten automatizar actividades de Experience Manager. Los Flujos de trabajo constan de una serie de pasos que se ejecutan en un orden específico. Cada paso realiza una actividad distinta, como activar una página o enviar un mensaje de correo electrónico. Los Flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios de Experience Manager. Por lo tanto, los flujos de trabajo pueden coordinarse de forma complicada.
 
 * Antes de crear un flujo de trabajo, tenga en cuenta los siguientes puntos:
 * El resultado de un paso debe estar disponible para todos los pasos subsiguientes.
@@ -394,7 +394,7 @@ log.info("Exiting workflow script!")
 
 Cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se está viendo. La estructura de carpetas tiene carpetas de etapa, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada para el flujo de trabajo y aceptar resultados de un flujo de trabajo. También puede lista puntos de error, si los hay.
 
-Si la estructura de una carga útil es diferente a la de la carpeta vigilada, puede escribir secuencias de comandos personalizadas para asignar la estructura de la carpeta vigilada a la carga útil. Esta secuencia de comandos se denomina filtro de mapeador de carga útil. De forma predeterminada, AEM Forms proporciona un filtro de asignación de carga útil para asignar la estructura de la carpeta controlada a una carga útil.
+Si la estructura de una carga útil es diferente a la de la carpeta vigilada, puede escribir secuencias de comandos personalizadas para asignar la estructura de la carpeta vigilada a la carga útil. Esta secuencia de comandos se denomina filtro de mapeador de carga útil. De forma predeterminada, AEM Forms proporciona un filtro de mapeador de carga útil para asignar la estructura de la carpeta controlada a una carga útil.
 
 #### Creación de un filtro personalizado de asignador de carga útil {#creating-a-custom-payload-mapper-filter}
 
@@ -492,7 +492,7 @@ Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una 
 
 >[!NOTE]
 >
->Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos en la carpeta vigilada. Si AEM Forms no puede eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
+>Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos en la carpeta vigilada. Si los AEM Forms no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
 
 ## Información adicional sobre las carpetas vigiladas {#additional-information-about-the-watched-folders}
 
@@ -511,8 +511,8 @@ Watched Folder analiza la carpeta de entrada en cada intervalo de encuesta, toma
 La limitación evita que la carpeta vigilada invoque nuevos trabajos cuando los trabajos anteriores no se han completado. La carpeta vigilada detecta los trabajos en curso y procesa los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, Watched Folder solo invoca tres trabajos más.
 
 * La carpeta vigilada depende del número de archivos presentes en la carpeta del escenario para averiguar cuántos trabajos están en curso. Si los archivos siguen sin procesarse en la carpeta del escenario, la carpeta vigilada no invocará más trabajos. Por ejemplo, si el tamaño del lote es cuatro y se han detenido tres trabajos, la carpeta vigilada solo invocará un trabajo en las invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de escenario. Cuando los trabajos están paralizados, el administrador puede finalizar el proceso en la página de administración de Process Management para que Watched Folder mueva los archivos fuera de la carpeta del escenario.
-* Si el servidor de AEM Forms se desactiva antes de que la carpeta vigilada invoque los trabajos, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Si el servidor de AEM Forms se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamar, lo que ocurre cuando los servicios no inicio en la secuencia ordenada, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Si el servidor de AEM Forms deja de funcionar antes de que la carpeta vigilada invoque los trabajos, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Si el servidor AEM Forms se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamar, lo que ocurre cuando los servicios no inicio en la secuencia ordenada, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Puntos de error y recuperación Puntos de error y recuperación {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -538,7 +538,7 @@ Cuando la carpeta de inspección no puede procesar los archivos de origen en la 
    * Cambie la propiedad includeFilePattern de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, introduzca NOMATCH).
    * Suspenda el proceso de creación de nuevos archivos de entrada.
 
-   Espere hasta que AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que el AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
 1. Determinar qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y aún quedan archivos sin procesar en la carpeta de escenario, vaya al paso siguiente.
 

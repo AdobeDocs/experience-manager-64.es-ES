@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ La aplicación y los archivos de datos de los que se debe realizar una copia de 
 Considere los siguientes puntos con respecto al backup y la recuperación:
 
 * Se debe realizar una copia de seguridad de la base de datos antes del repositorio GDS y AEM.
-* Si necesita apagar los nodos de un entorno agrupado en clúster para realizar una copia de seguridad, asegúrese de que los nodos esclavos se cierren antes que el nodo maestro. De lo contrario, puede provocar incoherencias en el clúster o en el servidor. Además, el nodo maestro debe activarse antes que cualquier nodo esclavo.
+* Si necesita desglosar los nodos en un entorno agrupado en clúster para realizar copias de seguridad, asegúrese de que los nodos secundarios se cierran antes que el nodo principal. De lo contrario, puede provocar incoherencias en el clúster o en el servidor. Además, el nodo principal debe activarse antes que cualquier nodo secundario.
 * Para la operación de restauración de un clúster, el servidor de aplicaciones debe detenerse para cada nodo del clúster.
 
 ## Directorio de Almacenamientos de Documento global {#global-document-storage-directory}
@@ -61,7 +61,7 @@ Al seleccionar la opción &quot;Activar el almacenamiento de documento en la bas
 
 ## Repositorio de AEM {#aem-repository}
 
-El repositorio de AEM (crx-repository) se crea si crx-repository está configurado durante la instalación de formularios AEM. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere la copia de seguridad y restauración del repositorio de AEM, junto con la base de datos y GDS, para obtener datos coherentes de formularios AEM en formularios AEM. El repositorio de AEM contiene datos para Correspondence Management Solution, Forms Manager y AEM Forms Workspace.
+El repositorio de AEM (crx-repository) se crea si crx-repository está configurado durante la instalación de formularios AEM. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere la copia de seguridad y restauración del repositorio de AEM, junto con la base de datos y GDS, para obtener datos coherentes de formularios AEM en formularios AEM. El repositorio de AEM contiene datos para la solución de gestión de correspondencia, el administrador de formularios y el área de trabajo de AEM Forms.
 
 ### Solución de administración de correspondencia {#correspondence-management-solution}
 
@@ -75,13 +75,13 @@ el administrador de formularios optimiza el proceso de actualización, administr
 
 ### Espacio de trabajo de AEM Forms {#html-workspace}
 
-AEM Forms Workspace se ajusta a las funciones del espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más sencillo de usar.
+Espacio de trabajo de AEM Forms coincide con las funciones del espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
 
 >[!NOTE]
 >
 >Flex Workspace está en desuso para la versión de formularios AEM.
 
-Permite la administración de tareas en clientes sin Flash Player y Adobe Reader. Facilita la representación de formularios HTML, además de formularios PDF y formularios Flex.
+Permite la administración de tareas en clientes sin Flash Player y Adobe Reader. Facilita la representación de formularios HTML, además de PDF forms y formularios Flex.
 
 ## Base de datos de formularios AEM {#aem-forms-database}
 

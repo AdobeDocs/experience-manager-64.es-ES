@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 13e1da76d72277687f35d783de6d887ab7c1b52d
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 [La edición masiva de propiedades](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) de página le permite editar las propiedades de varias páginas a la vez.
 
-Debido a la posibilidad de valores diferentes, las propiedades de página no están habilitadas para la edición masiva como predeterminadas. Deben estar explícitamente en la lista blanca (habilitada). Al definir las propiedades de la página para que estén disponibles para la edición masiva, debe tener en cuenta ciertas implicaciones, como:
+Debido a la posibilidad de valores diferentes, las propiedades de página no están habilitadas para la edición masiva como predeterminadas. Se deben permitir explícitamente (activar). Al definir las propiedades de la página para que estén disponibles para la edición masiva, debe tener en cuenta ciertas implicaciones, como:
 
 * Determinados campos suelen ser únicos; por ejemplo, un título de página. Debe decidir si es significativo habilitar estos campos para la edición masiva, cuando se aplicará un valor.
 * Ciertos campos pueden tener varios valores; esto requiere una representación significativa al procesar.
@@ -39,7 +42,7 @@ Debido a la posibilidad de valores diferentes, las propiedades de página no est
 
 >[!NOTE]
 >
->La edición masiva también está disponible para Recursos. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/managing-multiple-assets.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para recursos con el editor [de esquemas](/help/assets/metadata-schemas.md).
+>La edición masiva también está disponible para Recursos. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/managing-multiple-assets.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para recursos con el editor [de](/help/assets/metadata-schemas.md)Esquema.
 
 ## Activación de un campo {#enabling-a-field}
 
@@ -65,7 +68,7 @@ Los campos están activados en el componente de página (*no* en la plantilla):
 
    >[!NOTE]
    >
-   >En este ejemplo se asume que los componentes principales se han instalado en la instancia, lo que sucede si la instancia se está ejecutando con contenido de ejemplo de We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for more information.
+   >En este ejemplo se asume que los componentes principales se han instalado en la instancia, lo que sucede si la instancia se está ejecutando con contenido de ejemplo de We.Retail. See the [Core Components documentation](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) for more information.
 
 1. Vaya al campo requerido dentro de la `cq:dialog` definición.
 1. Defina la siguiente propiedad en el nodo de campo:

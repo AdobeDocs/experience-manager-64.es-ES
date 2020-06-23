@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -48,42 +48,58 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Campos de mensaje Lista permitida]** Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: *asunto* y *contenido*.
+* **[!UICONTROL Campos de mensaje Lista permitida]** Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: 
+*asunto* y *contenido*.
 
-* **[!UICONTROL Límite]** de tamaño del cuadro de mensaje El número máximo de bytes en el cuadro de mensaje de cada usuario. El valor predeterminado es *1073741824* (1 GB).
+* **[!UICONTROL Límite]** de tamaño del cuadro de mensaje El número máximo de bytes en el cuadro de mensaje de cada usuario. El valor predeterminado es 
+*1073741824* (1 GB).
 
-* **[!UICONTROL Límite]** de recuento de mensajes El número total de mensajes permitidos por usuario. Un valor de -1 indica que se permite un número ilimitado de mensajes, con sujeción al límite de tamaño del cuadro de mensaje. El valor predeterminado es *10000* (10 k).
+* **[!UICONTROL Límite]** de recuento de mensajes El número total de mensajes permitidos por usuario. Un valor de -1 indica que se permite un número ilimitado de mensajes, con sujeción al límite de tamaño del cuadro de mensaje. El valor predeterminado es 
+*10000* (10 k).
 
-* **[!UICONTROL Error]** de notificación de envío Si está activado, notifique al remitente si el envío de mensajes falla en algunos destinatarios. El valor predeterminado está *marcado*.
+* **[!UICONTROL Error]** de notificación de envío Si está activado, notifique al remitente si el envío de mensajes falla en algunos destinatarios. El valor predeterminado es 
+*comprobado*.
 
-* **[!UICONTROL Error en el envío del id. de remitente]** Nombre del remitente que aparece en el mensaje de error de envío. El valor predeterminado es *failNotifier*.
+* **[!UICONTROL Error en el envío del id. de remitente]** Nombre del remitente que aparece en el mensaje de error de envío. El valor predeterminado es 
+*failNotifier*.
 
-* **[!UICONTROL Ruta]** de la plantilla de mensaje de error La ruta absoluta de la plantilla de mensaje de envío falló. El valor predeterminado es */etc/notification/messaging/default*.
+* **[!UICONTROL Ruta]** de la plantilla de mensaje de error La ruta absoluta de la plantilla de mensaje de envío falló. El valor predeterminado es 
+*/etc/notification/messaging/default*.
 
-* **[!UICONTROL maxRetries.name]** Número de veces que se intenta reenviar el mensaje que no se puede entregar. El valor predeterminado es *3*.
+* **[!UICONTROL maxRetries.name]** Número de veces que se intenta reenviar el mensaje que no se puede entregar. El valor predeterminado es 
+*3*.
 
 * **[!UICONTROL minWaitBetweenRetries.name]** Número de segundos de espera entre los intentos de reenviar el mensaje si no se pudo enviar. El valor predeterminado es *100 *(segundos).
 
-* **[!UICONTROL Tamaño]** del grupo de actualización de recuento Número de subprocesos simultáneos utilizados para la actualización de recuento. El valor predeterminado es *10*.
+* **[!UICONTROL Tamaño]** del grupo de actualización de recuento Número de subprocesos simultáneos utilizados para la actualización de recuento. El valor predeterminado es 
+*10*.
 
-* **[!UICONTROL inbox.path.name]**(*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), que se usará para la **`inbox`** carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/inbox* .
+* **[!UICONTROL inbox.path.name]**(
+*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), que se utilizará para la **`inbox`** carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/inbox* .
 
-* **[!UICONTROL sentitems.path.name]**(*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), que se utilizará para la **`senditems`** carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/sentiitems* .
+* **[!UICONTROL sentitems.path.name]**(
+*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), que se utilizará para la **`senditems`** carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/sentiitems* .
 
-* **[!UICONTROL supportAttachments.name]** Si se selecciona, los usuarios pueden agregar datos adjuntos a sus mensajes. El valor predeterminado está *marcado*.
+* **[!UICONTROL supportAttachments.name]** Si se selecciona, los usuarios pueden agregar datos adjuntos a sus mensajes. El valor predeterminado es 
+*comprobado*.
 
-* **[!UICONTROL batchSize.name]** Número de mensajes que se van a agrupar para un envío al enviar a un grupo grande de destinatarios. El valor predeterminado es *100*.
+* **[!UICONTROL batchSize.name]** Número de mensajes que se van a agrupar para un envío al enviar a un grupo grande de destinatarios. El valor predeterminado es 
+*100*.
 
-* **[!UICONTROL maxTotalAttachmentSize.name]** Si se comprueba supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es *104857600* (100 MB).
+* **[!UICONTROL maxTotalAttachmentSize.name]** Si se comprueba supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es 
+*104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeAllowlist.name]** Una lista de bloqueo de extensiones de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
+* **[!UICONTROL attachmentTypeBlocklist.name]** Una lista de bloqueo de extensiones de archivo, con el prefijo &#39;
+**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
+
    **(*Acción requerida*)** Una lista de permitidas de extensiones de archivo, lo contrario de la lista de bloqueos. Para permitir todas las extensiones de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
 
 * **[!UICONTROL serviceSelector.name]**(*Requerido*) Una ruta absoluta (extremo) a través de la cual se invoca el servicio (recurso virtual). La raíz de la ruta elegida debe estar incluida en la configuración de rutas *de* ejecución de la configuración de OSGi [`Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`y `/services/`. Para seleccionar esta configuración para la función de mensajería de un sitio, este extremo se proporciona como el **`Service selector`** valor para la `Message List and Compose Message components` (consulte Función [de](configure-messaging.md)mensaje). El valor predeterminado es */bin/messaging* .
 
-* **[!UICONTROL fieldAllowlist.name]** Usar lista de permitidas de campos **de mensaje**.
+* **[!UICONTROL fieldAllowlist.name]** Use 
+**Lista de campos de mensaje permitidos**.
 
 >[!CAUTION]
 >

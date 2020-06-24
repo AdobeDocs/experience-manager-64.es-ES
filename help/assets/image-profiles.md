@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
 workflow-type: tm+mt
 source-wordcount: '2708'
 ht-degree: 11%
@@ -67,7 +67,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr> 
    <td>Muestra de color e imagen</td> 
    <td>Genera de forma masiva una muestra de imagen para cada imagen.</td> 
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización de la muestra utilizada en las pancartas de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, a continuación se muestra un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los letreros de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -152,7 +152,7 @@ Puede aplicar un perfil de imagen a una carpeta desde el menú **[!UICONTROL Her
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-#### Aplicación de perfiles de imagen de Dynamic Media a las carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Seleccione el perfil de imagen que desea aplicar a una o varias carpetas.
@@ -173,7 +173,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
 
-**Para aplicar un perfil de imagen de Dynamic Media de forma global**:
+**Para aplicar un perfil de imagen de Dynamic Media globalmente**:
 
 1. Realice una de las acciones siguientes:
 
@@ -249,12 +249,14 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, toque o haga clic en la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
+
       ![Cambiar el tamaño del recorte inteligente de una imagen.](assets/edit_smart_crops-resize.png)
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el cuadro de recorte a una nueva ubicación.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, toque la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestras inteligentes a una nueva ubicación.
+
       ![edit_smart_groups-move](assets/edit_smart_crops-move.png)
 
    * Deshace todas las ediciones y restaura el recorte inteligente o la muestra inteligente original (solo se aplica a la sesión de edición actual).

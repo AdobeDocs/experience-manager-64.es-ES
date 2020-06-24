@@ -10,22 +10,25 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '5893'
+ht-degree: 0%
 
 ---
 
 
 # Supervisión y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
 
-Una vez implementadas las instancias de AEM, se necesitarán determinadas tareas para supervisar y mantener su funcionamiento, rendimiento e integridad.
+Una vez implementadas las instancias de AEM, se necesitarán ciertas tareas para supervisar y mantener su funcionamiento, rendimiento e integridad.
 
 Un factor clave aquí es que para reconocer los problemas potenciales necesita saber cómo se ven y comportan sus sistemas en condiciones normales. Para ello, es mejor supervisar el sistema y recopilar información durante un período de tiempo.
 
 | Comprobar | Consideraciones | Comentario / Acciones |
 |---|---|---|
 | Plan de copia de seguridad. |  | Consulte cómo [realizar una copia de seguridad de la instancia](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
-| Plan de recuperación ante desastres. | Directrices de recuperación ante desastres de su empresa. |  |
-| Hay disponible un sistema de seguimiento de errores para informar de los problemas. | Por ejemplo, [bugzilla](https://www.bugzilla.org/), [jira](https://www.atlassian.com/software/jira/)o uno de muchos otros. |  |
+| Plan de recuperación ante desastres. | Directrices de recuperación ante desastres de su compañía. |  |
+| Hay disponible un sistema de seguimiento de errores para problemas de sistema de informes. | Por ejemplo, [bugzilla](https://www.bugzilla.org/), [jira](https://www.atlassian.com/software/jira/)o uno de muchos otros. |  |
 | Se están supervisando los sistemas de archivos. | El repositorio de CRX se &quot;bloqueará&quot; si no hay suficiente espacio libre en el disco. Se reanudará cuando haya espacio disponible. | Los mensajes &quot; `*ERROR* LowDiskSpaceBlocker`&quot; se pueden ver en el archivo de registro cuando el espacio libre se reduce. |
 | [Se están supervisando los archivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro. |  |  |
 | La supervisión del sistema se está ejecutando (constantemente) en segundo plano. | Incluido el uso de CPU, memoria, disco y red. Usando, por ejemplo, iostat / vmstat / permon. | Los datos registrados se visualizan y pueden utilizarse para rastrear problemas de rendimiento. También se puede acceder a los datos sin procesar. |
@@ -40,13 +43,13 @@ Se recomienda realizar copias de seguridad de:
 * Instalación del software: antes/después de cambios significativos en la configuración
 * El contenido que se conserva en el repositorio de forma periódica
 
-Es probable que su empresa tenga una política de backup que deberá seguir, consideraciones adicionales sobre qué hacer backup y cuándo incluir:
+Es probable que su compañía tenga una política de backup que deberá seguir, consideraciones adicionales sobre qué hacer backup y cuándo incluir:
 
 * la importancia crítica del sistema y los datos.
 * la frecuencia con la que se realizan cambios en el software o en los datos.
 * volumen de datos; ocasionalmente, la capacidad puede ser un problema, al igual que el tiempo necesario para realizar el backup.
 * si la copia de seguridad se puede realizar mientras los usuarios están en línea; y, si es posible, cuál es el impacto en el rendimiento.
-* la distribución geográfica de los usuarios; es decir, ¿cuándo es el mejor momento para realizar backup (para minimizar el impacto)?
+* la distribución geográfica de los usuarios; es decir, ¿cuándo es el mejor momento para realizar el backup (para minimizar el impacto)?
 * su política de recuperación ante desastres; Existen pautas sobre dónde se deben almacenar los datos de backup (por ejemplo, fuera del sitio, medio específico, etc.).
 
 A menudo, se realiza una copia de seguridad completa a intervalos regulares (por ejemplo, diaria, semanal o mensual), con copias de seguridad incrementales entre horas (por ejemplo, por hora, por día o por semana).
@@ -102,7 +105,7 @@ La herramienta **Purgar versiones** está disponible en la consola **[Herramient
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Ruta** de inicioRuta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de inicio haciendo clic en el navegador de árbol del repositorio.
+**Ruta** del Inicio Una ruta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de Inicio haciendo clic en el navegador de árbol del repositorio.
 
 **Recursivo** Al depurar datos, puede elegir entre realizar la operación en un nodo o en una jerarquía completa seleccionando Recursivo. En el último caso, la ruta dada define el nodo raíz de la jerarquía.
 
@@ -110,15 +113,15 @@ La herramienta **Purgar versiones** está disponible en la consola **[Herramient
 
 **Edad** máxima de la versión La edad máxima de la versión de un nodo. Cuando la antigüedad de una versión supera este valor, se purga.
 
-**Ejecución** seca Debido a que la eliminación de versiones del contenido es definitiva y no se puede revertir sin restaurar una copia de seguridad, la herramienta Purgar versiones proporciona un modo de ejecución en seco que permite previsualizar las versiones purgadas. Para iniciar una ejecución seca del proceso de purga, haga clic en Ensayo.
+**Ejecución** seca Debido a que la eliminación de versiones del contenido es definitiva y no se puede revertir sin restaurar una copia de seguridad, la herramienta Purgar versiones proporciona un modo de ejecución en seco que permite la previsualización de las versiones purgadas. Para iniciar una ejecución seca del proceso de purga, haga clic en Ensayo.
 
-**Purgar** Inicie la purga de las versiones en el nodo definido por la Ruta de inicio.
+**Purgar** Inicie la purga de las versiones en el nodo definido por la Ruta de Inicio.
 
 ### Purgar versiones de un sitio Web {#purging-versions-of-a-web-site}
 
 Para depurar versiones de un sitio web, siga estos pasos:
 
-1. Vaya a la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, seleccione**Versiones **y haga doble clic en**Purgar versiones **.
+1. Vaya a la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, seleccione**Versiones **y haga clic con el botón doble en**Purgar versiones **.
 1. Configure la ruta de inicio del contenido que se va a purgar (p. ej. `/content/geometrixx-outdoors`).
 
    * Si solo desea depurar el nodo definido por la ruta de acceso, anule la selección de **Recursivo**.
@@ -128,7 +131,7 @@ Para depurar versiones de un sitio web, siga estos pasos:
 
 1. Establezca la página de versión máxima en días (para cada nodo) que desee mantener. Deje vacío para no utilizar esta configuración.
 
-1. Haga clic en **Ensayo** para obtener una vista previa de lo que haría el proceso de purga.
+1. Haga clic en **Ensayo** para previsualización lo que haría el proceso de purga.
 1. Haga clic en **Purgar** para iniciar el proceso.
 
 >[!CAUTION]
@@ -137,7 +140,7 @@ Para depurar versiones de un sitio web, siga estos pasos:
 
 ### Análisis de la consola {#analyzing-the-console}
 
-Los procesos de **ensayo** y **depuración** enumeran todos los nodos procesados. Durante el proceso, un nodo puede tener uno de los siguientes estados:
+Los procesos **Ensayo** y **Depuración** lista todos los nodos procesados. Durante el proceso, un nodo puede tener uno de los siguientes estados:
 
 * `ignore (not versionnable)`:: el nodo no admite el control de versiones y se omite durante el proceso.
 * `ignore (no version)`:: el nodo no tiene ninguna versión y se ignora durante el proceso. &quot;
@@ -152,8 +155,8 @@ Además, la consola proporciona información útil sobre las versiones:
 
 En el siguiente ejemplo:
 
-* Las versiones de **Camisas** se purgan porque su edad de versión es superior a 2 días.
-* ¡La moda **Tonga!** las versiones se purgan porque el número de versiones es mayor que 5.
+* Las versiones de **Camisas** se purgan porque su edad de versión es buena a 2 días.
+* ¡La moda **Tonga!** las versiones se purgan porque el número de versiones es bueno a 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -163,7 +166,7 @@ Los registros de auditoría y los archivos de registro relacionados con Adobe Ex
 
 ### Uso de registros {#working-with-logs}
 
-AEM WCM registra registros detallados. Después de desempaquetar e iniciar QuickStart, puede encontrar los registros en:
+AEM WCM registra registros detallados. Después de desempaquetar y inicio QuickStart, puede encontrar los registros en:
 
 * `<cq-installation-dir>/crx-quickstart/logs/`
 * `<cq-installation-dir>/crx-quickstart/repository/`
@@ -187,57 +190,49 @@ En el servidor de archivos donde instaló AEM se conservan varios archivos de re
 
    * `access.log`
 
-      
-Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
+      Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
 
    * `audit.log`
 
-      
-Las acciones de moderación se registran aquí.
+      Las acciones de moderación se registran aquí.
 
    * `error.log`
 
-      
-Aquí se registran los mensajes de error (de distintos niveles de gravedad).
+      Aquí se registran los mensajes de error (de distintos niveles de gravedad).
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Este registro solo se utiliza si el medio dinámico está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
    * `request.log`
 
-      
-Cada solicitud de acceso se registra aquí junto con la respuesta.
+      Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Este registro solo se utiliza si el medio dinámico está habilitado. El registro s7access registra cada solicitud realizada a Dynamic Media a través `/is/image` y `/is/content`.
+      Este registro solo se utiliza si el medio dinámico está habilitado. El registro de acceso s7registra cada solicitud realizada a Dynamic Media a través `/is/image` y `/is/content`.
 
    * `stderr.log`
 
-      
-Contiene mensajes de error, también de distintos niveles de gravedad, generados durante el inicio. De forma predeterminada, el nivel de registro se establece en `Warning` ( `WARN`)
+      Contiene mensajes de error, también de distintos niveles de gravedad, generados durante el inicio. De forma predeterminada, el nivel de registro se establece en `Warning` ( `WARN`)
 
    * `stdout.log`
 
-      
-Contiene mensajes de registro que indican eventos durante el inicio.
+      Contiene mensajes de registro que indican eventos durante el inicio.
 
    * `upgrade.log`
 
-      
-Proporciona un registro de todas las operaciones de actualización que se ejecutan desde los `com.day.compat.codeupgrade` paquetes y `com.adobe.cq.upgradesexecutor` .
+      Proporciona un registro de todas las operaciones de actualización que se ejecutan desde los `com.day.compat.codeupgrade` paquetes y `com.adobe.cq.upgradesexecutor` .
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
 
-      
-Revisión de la información del diario.
+      Revisión de la información del diario.
 
 >[!NOTE]
 >
->Los registros ImageServer y s7access no se incluyen en el paquete **Descargar completo** que se genera desde la página **system/console/status-Bundlelist** . Por motivos de asistencia técnica, si tiene problemas con Dynamic Media, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con el servicio de asistencia al cliente.
+>Los registros ImageServer y s7access no se incluyen en el paquete **Descargar completo** que se genera desde la página **system/console/status-Bundlelist** . Por motivos de asistencia técnica, si tiene problemas con Dynamic Media, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con la asistencia al cliente.
 
 ### Activación del nivel de registro DEBUG {#activating-the-debug-log-level}
 
@@ -249,7 +244,7 @@ Para activar el nivel de registro de depuración para un registrador, establezca
 >
 >No deje el registro en el nivel de registro de depuración más tiempo del necesario, ya que genera muchas entradas de registro, lo que consume recursos.
 
-Una línea en el archivo de depuración normalmente comienza con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
+Una línea en el archivo de depuración normalmente inicio con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
 
 ```shell
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -275,6 +270,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 1. En `/apps/<project-name>/config`, cree un nodo para la nueva configuración [del registrador de registros](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)Apache Sling:
 
    * Nombre:
+
    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (ya que es un Logger)
 
    Donde `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información). Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
@@ -401,11 +397,13 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >
    >* un tamaño máximo de archivo
    >* una programación de fecha y hora
+
    >
-   >para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
+   >para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
    >* Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
+
    >
    >  El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
    >
@@ -438,13 +436,13 @@ La consola de Felix también proporciona información sobre la compatibilidad co
 
 ### Búsqueda de los registros de auditoría {#finding-the-audit-records}
 
-Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para eventos de AEM WCM y OSGi.
+Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para los eventos WCM y OSGi de AEM.
 
 #### Se muestran los registros de auditoría de AEM WCM al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Abra una página.
-1. Desde la barra de tareas puede seleccionar la ficha con el icono de bloqueo y luego hacer doble clic en Registro de **auditoría...**
-1. Se abrirá una nueva ventana que muestra la lista de registros de auditoría de la página actual.
+1. Desde la barra de tareas puede seleccionar la ficha con el icono de candado y, a continuación, hacer clic con el doble en Registro de **auditoría...**
+1. Se abrirá una nueva ventana que muestra la lista de los registros de auditoría de la página actual.
 
    ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
 
@@ -476,9 +474,9 @@ Para monitorear un agente de replicación:
 
 1. Acceda a la ficha **Herramientas** de AEM.
 1. Haga clic en **Replicación**.
-1. Haga doble clic en el vínculo a los agentes para el entorno adecuado (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
+1. Haga clic con el botón Doble en el vínculo a los agentes para el entorno correspondiente (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
 
-   La ventana resultante muestra una visión general de todos los agentes de replicación para el entorno de creación, incluidos su destino y estado.
+   La ventana resultante muestra una visión general de todos los agentes de replicación para el entorno de creación, incluidos su destinatario y estado.
 
 1. Haga clic en el nombre del agente correspondiente (que es un vínculo) para mostrar información detallada sobre ese agente:
 
@@ -487,20 +485,21 @@ Para monitorear un agente de replicación:
    Aquí puede hacer lo siguiente:
 
    * Ver si el agente está habilitado.
-   * Ver el destino de cualquier replicación.
+   * Consulte el destinatario de las replicaciones.
    * Ver si la cola de replicación está activa actualmente (habilitada).
    * Ver si hay elementos en la cola.
    * **Actualizar** o **Borrar** para actualizar la visualización de las entradas de cola; esto le ayuda a ver los elementos entrar y salir de la cola.
-   * **Ver registro** para acceder al registro de cualquier acción realizada por el agente de replicación.
-   * **Probar la conexión** con la instancia de destino.
+   * **Registro** de Vista para acceder al registro de cualquier acción realizada por el agente de replicación.
+   * **Probar la conexión** a la instancia de destinatario.
    * **Forzar reintento** en cualquier elemento de la cola si es necesario.
+
    >[!CAUTION]
    >
    >No utilice el vínculo &quot;Probar conexión&quot; para la bandeja de salida de replicación inversa en una instancia de publicación.
    >
    >Si se realiza una prueba de replicación para una cola de Outbox, todos los elementos que sean más antiguos que la replicación de prueba se volverán a procesar con cada replicación inversa.
    >
-   >Si estos elementos ya existen en una cola, se pueden encontrar con la siguiente consulta JCR XPath y deben eliminarse.
+   >Si estos elementos ya existen en una cola, se pueden encontrar con la siguiente consulta de JCR XPath y deben eliminarse.
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
@@ -516,11 +515,11 @@ Los métodos utilizados para recopilar información para la optimización tambi�
 >
 >También se pueden comprobar [las configuraciones específicas disponibles para mejorar el rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
 
-A continuación se enumeran los problemas comunes de rendimiento que se producen, junto con propuestas sobre cómo detectarlos y contrarrestarlos.
+Las siguientes listas plantean problemas comunes de rendimiento, junto con propuestas sobre cómo detectarlos y contrarrestarlos.
 
 | Área | Síntomas | Para aumentar la capacidad... | Para reducir el volumen... |
 |---|---|---|---|
-| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplificar el diseño (HTML). |
+| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplifique el diseño (HTML). |
 |  | Uso bajo de CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
 |  | Algunos clientes son rápidos, algunos lentos. |  |  |
 | Servidor |  |  |  |
@@ -536,7 +535,7 @@ A continuación se enumeran los problemas comunes de rendimiento que se producen
 
 Los problemas de rendimiento pueden deberse a una serie de causas que no tienen nada que ver con el sitio web, como las desaceleraciones temporales en la velocidad de conexión, la carga de CPU y muchas más.
 
-También puede afectar a todos los visitantes o sólo a un subconjunto de ellos.
+También puede afectar a todos sus visitantes o sólo a un subconjunto de ellos.
 
 Toda esta información debe obtenerse, clasificarse y analizarse antes de poder optimizar el rendimiento general o resolver problemas específicos.
 
@@ -582,17 +581,17 @@ Algunos de ellos dependerán del sistema operativo.
   <tr> 
    <td>Vertederos de rosca</td> 
    <td>Observe los subprocesos JVM. Identificar contenciones, bloqueos y corredores de largo plazo.</td> 
-   <td><p><br /> Depende del sistema operativo: - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Depende del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de Análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Voladizos de montón</td> 
    <td>Problemas de memoria insuficiente que causan un rendimiento lento.</td> 
-   <td><p><br /> Agregue el: <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> para la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td> 
+   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Llamadas del sistema</td> 
    <td>Identifique los problemas de tiempo.</td> 
-   <td><p>Las llamadas a <code>System.currentTimeMillis()</code> o <code>com.day.util</code>.Timing se utilizan para generar marcas de hora a partir del código o a través de comentarios <a href="#html-comments"></a>HTML.</p> <p><strong></strong> Nota: Estas medidas deben aplicarse de modo que puedan activarse o desactivarse según sea necesario; cuando un sistema se esté ejecutando sin problemas, no será necesario el coste de recopilar estadísticas.</p> </td> 
+   <td><p>Las llamadas a <code>System.currentTimeMillis()</code> o <code>com.day.util</code>.Timing se utilizan para generar marcas de hora a partir del código o a través de comentarios <a href="#html-comments"></a>HTML.</p> <p><strong>Nota:</strong> Estas medidas deben aplicarse de modo que puedan activarse o desactivarse según sea necesario; cuando un sistema se esté ejecutando sin problemas, no será necesario el coste de recopilar estadísticas.</p> </td> 
   </tr> 
   <tr> 
    <td>Apache Bench</td> 
@@ -617,22 +616,22 @@ Algunos de ellos dependerán del sistema operativo.
   <tr> 
    <td>JConsole</td> 
    <td>Observe las métricas y los subprocesos de JVM.</td> 
-   <td><p>Uso: jconsole</p> <p>Consulte <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">Jconsole</a> y <a href="#monitoring-performance-using-jconsole">Monitoreo del rendimiento con JConsole</a>.</p> <p><strong></strong> Nota: Con JDK 1.6, JConsole se puede ampliar con complementos; por ejemplo, Top o TDA (Analizador de volcado de subprocesos).</p> </td> 
+   <td><p>Uso: jconsole</p> <p>Consulte <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">Jconsole</a> y <a href="#monitoring-performance-using-jconsole">Monitoreo del rendimiento con JConsole</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, JConsole se puede ampliar con complementos; por ejemplo, Top o TDA (Analizador de volcado de subprocesos).</p> </td> 
   </tr> 
   <tr> 
    <td>Java VisualVM</td> 
    <td>Observar métricas, subprocesos, memoria y generación de perfiles de JVM.</td> 
-   <td><p>Uso: jvisualvm o visualvm<br /> </p> <p>Consulte <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> y rendimiento <a href="#monitoring-performance-using-j-visualvm">de supervisión mediante (J)VisualVM</a>.</p> <p><strong></strong> Nota: Con JDK 1.6, VisualVM se puede ampliar con complementos.</p> </td> 
+   <td><p>Uso: jvisualvm o visualvm<br /> </p> <p>Consulte <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> y rendimiento <a href="#monitoring-performance-using-j-visualvm">de supervisión mediante (J)VisualVM</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, VisualVM se puede ampliar con complementos.</p> </td> 
   </tr> 
   <tr> 
-   <td>trazo/trazo, lsof</td> 
-   <td>Análisis profundo de procesos y llamadas al núcleo (Unix).</td> 
+   <td>trazo/correa, lsof</td> 
+   <td>análisis de procesos y llamadas al núcleo (Unix).</td> 
    <td>Comandos Unix/Linux.</td> 
   </tr> 
   <tr> 
    <td>Estadísticas de temporización</td> 
    <td>Consulte las estadísticas de temporización para el procesamiento de páginas.</td> 
-   <td><p>Para ver las estadísticas de temporización de la representación de páginas, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td> 
+   <td><p>Para ver las estadísticas de temporización de la representación de página, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td> 
   </tr> 
   <tr> 
    <td>Herramienta de generación de perfiles de memoria y CPU<br /> </td> 
@@ -651,7 +650,7 @@ Algunos de ellos dependerán del sistema operativo.
 
 Este archivo registra información básica sobre cada solicitud realizada a AEM. De estas valiosas conclusiones se pueden extraer.
 
-El `request.log` hotel ofrece una forma integrada de consultar el tiempo que tardan las solicitudes. Para fines de desarrollo es útil para `tail -f` el `request.log` y observar tiempos de respuesta lentos. Para analizar un valor mayor, `request.log` recomendamos el [uso de `rlog.jar` que le permite ordenar y filtrar los tiempos](#using-rlog-jar-to-find-requests-with-long-duration-times)de respuesta.
+Las `request.log` ofertas son una forma integrada de obtener una visión del tiempo que tardan las solicitudes. Para fines de desarrollo es útil para `tail -f` el `request.log` y observar tiempos de respuesta lentos. Para analizar un valor mayor `request.log` recomendamos el [uso de `rlog.jar` que le permite ordenar y filtrar los tiempos](#using-rlog-jar-to-find-requests-with-long-duration-times)de respuesta.
 
 Recomendamos aislar las páginas &quot;lentas&quot; de la página `request.log`, luego ajustarlas individualmente para lograr un mejor rendimiento. Esto generalmente se realiza incluyendo métricas de rendimiento por componente o utilizando una herramienta de generación de perfiles de rendimiento como ` [yourkit](https://www.yourkit.com/)`.
 
@@ -668,7 +667,7 @@ Al calcular el total de todas las entradas GET dentro de un período específico
 
 #### Monitoreo de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
-Un buen punto de partida para el análisis de rendimiento es el registro de solicitudes:
+Un buen punto de partida para la análisis del rendimiento es el registro de solicitudes:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
 
@@ -846,7 +845,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-Los números anteriores se toman de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de la empresa de geometrixx, tal como se incluye en una instalación predeterminada de AEM. La página es muy sencilla, pero no está optimizada para el rendimiento.
+Los números anteriores provienen de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación predeterminada de AEM. La página es muy sencilla, pero no está optimizada para el rendimiento.
 
 `apachebench` también muestra el tiempo por solicitud como la media en todas las solicitudes simultáneas; consulte `Time per request: 54.595 [ms]` (media, en todas las solicitudes simultáneas). Puede cambiar el valor del parámetro de concurrencia `-c` (número de varias solicitudes que se van a realizar a la vez) para ver cualquier efecto.
 
@@ -882,11 +881,11 @@ Se recomienda que cada proyecto incluya `html comments` el rendimiento del servi
 
 El comando tool `jconsole` está disponible con el JDK.
 
-1. Inicie la instancia de AEM.
+1. Inicio la instancia de AEM.
 1. Ejecutar `jconsole.`
 1. Seleccione la instancia de AEM y **Connect**.
 
-1. Desde la aplicación, haga doble clic en `Local` , `com.day.crx.quickstart.Main`; la Información general se mostrará de forma predeterminada:
+1. Desde dentro de la `Local` aplicación, haga clic con el doble `com.day.crx.quickstart.Main`; la Información general se mostrará de forma predeterminada:
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -896,18 +895,18 @@ El comando tool `jconsole` está disponible con el JDK.
 
 Desde JDK 1.6, el comando tool `jvisualvm` está disponible. Después de instalar JDK 1.6, puede:
 
-1. Inicie la instancia de AEM.
+1. Inicio la instancia de AEM.
 
    >[!NOTE]
    >
-   >Si utiliza Java 5, puede agregar el `-Dcom.sun.management.jmxremote` argumento a la línea de comandos java que inicia el JVM. JMX está habilitado de forma predeterminada con Java 6.
+   >Si utiliza Java 5, puede agregar el `-Dcom.sun.management.jmxremote` argumento a la línea de comandos java que inicio su JVM. JMX está habilitado de forma predeterminada con Java 6.
 
 1. Ejecute una de las opciones siguientes:
 
    * `jvisualvm`:: en la carpeta bin de JDK 1.6 (versión probada)
    * `visualvm`:: se puede descargar desde [VisualVM](https://visualvm.github.io/releases.html) (versión de borde de sangrado)
 
-1. Desde la aplicación, haga doble clic en `Local` , `com.day.crx.quickstart.Main`; la Información general se mostrará de forma predeterminada:
+1. Desde dentro de la `Local` aplicación, haga clic con el doble `com.day.crx.quickstart.Main`; la Información general se mostrará de forma predeterminada:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -915,7 +914,7 @@ Desde JDK 1.6, el comando tool `jvisualvm` está disponible. Después de instala
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-Puede utilizar esta herramienta para generar volcados de subprocesos y volcados de cabezales de memoria. El equipo de asistencia técnica suele solicitar esta información.
+Puede utilizar esta herramienta para generar volcados de subprocesos y volcados de cabezales de memoria. El equipo de apoyo técnico suele solicitar esta información.
 
 ### Recopilación de información {#information-collection}
 
@@ -928,7 +927,7 @@ La siguiente información puede resultar útil:
 * [¿Cuántas páginas mantiene actualmente en este sistema?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Si utiliza MSM, ¿cuál es el número promedio de implementaciones por mes?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [¿Cuál es el número promedio de Live Copies por mes?](#what-is-the-average-number-of-live-copies-per-month)
-* [Si utiliza Recursos AEM, ¿cuántos recursos mantiene actualmente en Recursos?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
+* [Si utiliza AEM Assets, ¿cuántos recursos mantiene actualmente en Recursos?](#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets)
 * [¿Cuál es el tamaño promedio de los recursos?](#what-is-the-average-size-of-the-assets)
 * [¿Cuántas plantillas se utilizan actualmente?](#how-many-templates-are-currently-used)
 * [¿Cuántos componentes se utilizan actualmente?](#how-many-components-are-currently-used)
@@ -958,7 +957,7 @@ Para ver el número total de activaciones de página desde la instalación del s
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 A continuación, calcule el número de días transcurridos desde la instalación para calcular el promedio.
 
@@ -970,7 +969,7 @@ Para ver el número de páginas que hay actualmente en el servidor, utilice una 
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:Page)`
+* **Consulta** `//element(*, cq:Page)`
 
 #### Si utiliza MSM, ¿cuál es el número promedio de implementaciones por mes? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -980,7 +979,7 @@ Para determinar el número total de implementaciones desde la instalación, util
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calcule el número de meses transcurridos desde la instalación para calcular el promedio.
 
@@ -992,11 +991,11 @@ Para determinar el número total de Live Copies realizadas desde la instalación
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:LiveSyncConfig)`
+* **Consulta** `//element(*, cq:LiveSyncConfig)`
 
 Vuelva a utilizar el número de meses transcurridos desde la instalación para calcular el promedio.
 
-#### Si utiliza Recursos AEM, ¿cuántos recursos mantiene actualmente en Recursos? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Si utiliza AEM Assets, ¿cuántos recursos mantiene actualmente en Recursos? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
 Para ver cuántos recursos DAM mantiene actualmente, utilice una consulta de repositorio; mediante CRXDE - Herramientas - Consulta:
 
@@ -1004,7 +1003,7 @@ Para ver cuántos recursos DAM mantiene actualmente, utilice una consulta de rep
 
 * **Ruta** `/`
 
-* **Consulta**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Consulta** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### ¿Cuál es el tamaño promedio de los recursos? {#what-is-the-average-size-of-the-assets}
 
@@ -1029,7 +1028,7 @@ Para ver el número de plantillas que hay actualmente en el servidor, utilice un
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:Template)`
+* **Consulta** `//element(*, cq:Template)`
 
 #### ¿Cuántos componentes se utilizan actualmente? {#how-many-components-are-currently-used}
 
@@ -1039,7 +1038,7 @@ Para ver el número de componentes que hay actualmente en el servidor, utilice u
 
 * **Ruta** `/`
 
-* **Consulta**`//element(*, cq:Component)`
+* **Consulta** `//element(*, cq:Component)`
 
 #### ¿Cuántas solicitudes por hora tiene en el sistema de creación en tiempo de mayor actividad? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1067,7 +1066,7 @@ Repita el procedimiento anterior en la instancia de publicación.
 
 ## Análisis de escenarios específicos {#analyzing-specific-scenarios}
 
-A continuación se ofrece una lista de sugerencias sobre qué comprobar si comienza a experimentar determinados problemas de rendimiento. La lista no es (lamentablemente) plenamente completa.
+A continuación se ofrece una lista de sugerencias sobre qué comprobar si inicio de experimentar determinados problemas de rendimiento. La lista no es (lamentablemente) plenamente amplia.
 
 >[!NOTE]
 >
@@ -1077,6 +1076,7 @@ A continuación se ofrece una lista de sugerencias sobre qué comprobar si comie
 >* [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analizar con el generador de perfiles integrado](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
 >
 
 
@@ -1099,7 +1099,7 @@ Si el sistema se está quedando sin memoria, esto se puede ver de varias maneras
 
 En estos casos, compruebe:
 
-* la configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
+* la configuración de JVM utilizada para [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
    * [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
@@ -1121,7 +1121,7 @@ Si el sistema se está quedando sin espacio en disco, o si nota que se está blo
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
-   * [El diario consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [El Historial consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación de rendimiento regular {#regular-performance-degradation}
 

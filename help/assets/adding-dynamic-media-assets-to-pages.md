@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 33%
+source-wordcount: '2830'
+ht-degree: 34%
 
 ---
 
@@ -36,11 +36,11 @@ Añadir un componente de Dynamic Media en una página es lo mismo que agregar un
 >
 >Si un usuario con permisos de solo lectura accede a un componente de Dynamic Media en una página web, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
 >  
->Para evitar este problema, asegúrese de que los usuarios de Sitios AEM tienen los permisos necesarios para acceder a los recursos.
+>Para evitar este problema, asegúrese de que los usuarios de AEM Sites tienen los permisos necesarios para acceder a los recursos.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
 1. En el panel del lado izquierdo de la página (es posible que deba alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
-1. En la lista desplegable **[!UICONTROL Componentes]** , seleccione Medios **[!UICONTROL dinámicos]**. Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
+1. En la lista desplegable **[!UICONTROL Componentes]** , seleccione **[!UICONTROL Dynamic Media]**. Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba habilitar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
@@ -66,18 +66,18 @@ Si no hay componentes de Dynamic Media disponibles para agregar a una página, e
 
    ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
-1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
-1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
+1. Desplácese hasta que vea **[!UICONTROL Dynamic Media]**.
+1. Toque el icono > a la izquierda de **[!UICONTROL Dynamic Media]** para expandir la lista y seleccione los componentes de Dynamic Media que desee habilitar.
 
    ![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
 
-1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque Contenido **** inicial y, a continuación, [agregue un componente Medios dinámicos a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
+1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque Contenido **** inicial y, a continuación, [agregue un componente de Dynamic Media a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
 
 ## Localización de componentes de Dynamic Media {#localizing-dynamic-media-components}
 
-Puede localizar los componentes de Dynamic Media de una de las dos formas siguientes:
+Puede localizar componentes de Dynamic Media de una de estas dos formas:
 
 * En una página web de Sites, abra **[!UICONTROL Propiedades]** y seleccione la pestaña **[!UICONTROL Avanzadas]**. Seleccione el idioma que desee para la localización.
 
@@ -91,11 +91,11 @@ Puede localizar los componentes de Dynamic Media de una de las dos formas siguie
 
 ## Dynamic Media components {#dynamic-media-components}
 
-Medios dinámicos y Medios interactivos están disponibles en la ficha [!UICONTROL Medios] dinámicos de [!UICONTROL Componentes]. El componente de medios interactivos se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de Dynamic Media.
+Dynamic Media y Medios interactivos están disponibles en la ficha [!UICONTROL Dynamic Media] de [!UICONTROL Componentes]. El componente de [!UICONTROL Medios interactivos] se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de Dynamic Media.
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de usarlos. [Una vez que estén disponibles](/help/sites-authoring/templates.md#editing-templates-template-authors)en el editor de plantillas, puede añadir los componentes a la página como lo haría con cualquier otro componente de AEM.
+>Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de usarlos. [Una vez que estén disponibles](/help/sites-authoring/templates.md#editing-templates-template-authors) en el editor de plantillas, puede añadir los componentes a la página como lo haría con cualquier otro componente de AEM.
 
 ![chlimage_1-539](assets/chlimage_1-539.png)
 
@@ -105,9 +105,9 @@ El componente Dynamic Media es inteligente, ya sea que agregue una imagen o un v
 
 >[!NOTE]
 >
->Si hay un componente Dynamic Media, un componente de medios interactivos o ambos en una página web a la que accede un usuario con permisos de solo lectura, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
+>Si hay un componente de Dynamic Media, un componente de medios interactivos o ambos en una página web a la que accede un usuario con permisos de solo lectura, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
 >  
->Para evitar este problema, asegúrese de que los usuarios de Sitios AEM tienen los permisos necesarios para acceder a los recursos.
+>Para evitar este problema, asegúrese de que los usuarios de AEM Sites tienen los permisos necesarios para acceder a los recursos.
 
 >[!NOTE]
 >
@@ -115,6 +115,7 @@ El componente Dynamic Media es inteligente, ya sea que agregue una imagen o un v
 >
 >* [Dynamic Media](config-dynamic.md) se ha activado. Dynamic Media está desactivado de forma predeterminada.
 >* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de la activación de Dynamic Media no tienen un archivo TIFF piramidal.
+
 >
 
 
@@ -176,8 +177,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    Con los modificadores del visor, por ejemplo, puede hacer lo siguiente:
 
-   * Asociación de un archivo de subtítulos con un vídeo [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-   * Asociación de un archivo de navegación con un vídeo [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+   * Asociación de un archivo de rótulo con un [rótulo de vídeo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Asociación de un archivo de navegación con una [navegación de vídeo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
@@ -222,9 +223,9 @@ El componente de medios interactivos es inteligente, ya sea que agregue una imag
 
 >[!NOTE]
 >
->Si hay un componente Dynamic Media, un componente de medios interactivos o ambos en una página web a la que accede un usuario con permisos de solo lectura, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
+>Si hay un componente de Dynamic Media, un componente de medios interactivos o ambos en una página web a la que accede un usuario con permisos de solo lectura, los saltos de página y los componentes no se representan correctamente. El motivo es que la página se reconstruye para garantizar que las propiedades de los componentes sean correctas y que los recursos a los que se hace referencia y las configuraciones sean accesibles. A continuación, la página se vuelve a representar provocando que los componentes se rompan; el código de componente correspondiente de la página no se puede volver a procesar debido al acceso de solo lectura del usuario.
 > 
->Para evitar este problema, asegúrese de que los usuarios de Sitios AEM tienen los permisos necesarios para acceder a los recursos.
+>Para evitar este problema, asegúrese de que los usuarios de AEM Sites tienen los permisos necesarios para acceder a los recursos.
 
 ![chlimage_1-541](assets/chlimage_1-541.png)
 
@@ -269,10 +270,10 @@ Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detall
 
 >[!MORELIKETHIS]
 >
->* [Explicación de la administración de color con los medios dinámicos de AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [Explicación de la administración de color con AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
 >* [Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Información sobre Asset Viewer con AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [Uso de vídeo interactivo con Dynamic Media de AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
+>* [Uso de vídeo interactivo con AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
 >* [Uso del reproductor de vídeo en AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
 >* [Uso del enfoque de imágenes con AEM Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/best-practices-for-optimizing-the-quality-of-your-images.html)
 

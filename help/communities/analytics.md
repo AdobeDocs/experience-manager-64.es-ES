@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 4%
 
 ---
@@ -88,16 +88,16 @@ Para configurar las funciones de Analytics para las comunidades, es necesario tr
 
 ## Grupo de informes de Adobe Analytics para Sistema de informes de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
-Con el Administrador [de grupos de](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)informes del Adobe Marketing Cloud, los grupos de informes de Analytics se pueden configurar para que un sitio de comunidad se pueda habilitar para proporcionar informes para las funciones de comunidades.
+Con el Administrador [de grupos de](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)informes del Adobe Marketing Cloud, los grupos de informes de Analytics se pueden configurar para que un sitio de comunidad se pueda habilitar para proporcionar informes para las funciones de comunidades.
 
-Al iniciar sesión en [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) con Nombre de [Compañía y Nombre de usuario](analytics.md#prerequisites), es posible configurar un grupo de informes nuevo o existente para que tenga:
+Al iniciar sesión en [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) con Nombre de [Compañía y Nombre de usuario](analytics.md#prerequisites), es posible configurar un grupo de informes nuevo o existente para que tenga:
 
-* [11 Variables](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) de conversión (evars)
+* [11 Variables](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) de conversión (evars)
 
    * **`evar1`** mediante **`evar11`** activación
    * Puede reutilizar (cambiar el nombre de evars existentes) o crear nuevas para utilizarlas en las funciones de Comunidades
 
-* [7 Eventos](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) de éxito (eventos)
+* [7 Eventos](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) de éxito (eventos)
 
    * **`event1`** mediante **`event7`** activación
    * Tipo **`Counter`**
@@ -106,7 +106,7 @@ Al iniciar sesión en [Adobe Marketing Cloud](https://marketing.adobe.com/resour
    * Puede reutilizar (cambiar el nombre de los eventos existentes o crear otros nuevos para utilizarlos en las funciones de Communities
 
 
-* [Administración de vídeo](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [Administración de vídeo](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * Consola de Sistema de informes de vídeo
 
@@ -504,7 +504,7 @@ El intervalo de consulta predeterminado es de 10 segundos.
 
 Una vez que se ha publicado un sitio de comunidad habilitado para Analytics, la configuración [](../../help/sites-deploying/configuring-osgi.md)OSGi del editor principal, `AEM Communities Analytics Report Importer`, puede configurarse para establecer el intervalo de sondeo predeterminado para aquellas configuraciones que no estén configuradas individualmente en CRXDE.
 
-El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para extraer y guardar datos en [SRP](working-with-srp.md).
+El intervalo de sondeo controla la frecuencia de las solicitudes a Adobe Analytics para que los datos se extraigan y guarden en [SRP](working-with-srp.md).
 
 Cuando los datos pueden clasificarse como &quot;grandes datos&quot;, las encuestas más frecuentes pueden causar una gran carga en el sitio de la comunidad.
 
@@ -547,11 +547,11 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 
 ## Administrar datos de usuario en Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario. Para obtener más información, consulte [Enviar solicitudes](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)de acceso y eliminación.
+Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario. Para obtener más información, consulte [Enviar solicitudes](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)de acceso y eliminación.
 
 ## Medios {#resources}
 
-* Adobe Marketing Cloud: [Ayuda y referencia de Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Ayuda y referencia de Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics con proveedores externos](../../help/sites-administering/external-providers.md)
 

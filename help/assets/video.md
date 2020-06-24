@@ -10,7 +10,10 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '10507'
+ht-degree: 4%
 
 ---
 
@@ -25,10 +28,11 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!NOTE]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado los servicios de Dynamic Media Cloud.
+>Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado Cloud Service de Dynamic Media.
 >
->* Consulte [Configuración de los servicios de Dynamic Media Cloud en Configuración de Dynamic Media: modo híbrido.](/help/assets/config-dynamic.md)
->* Consulte [Configuración de Dynamic Media: modo](config-dms7.md) de Scene7 y [Resolución de problemas de Dynamic Media, modo de Scene7](troubleshoot-dms7.md)
+>* Consulte [Configuración de Cloud Service de Dynamic Media en Configuración de Dynamic Media - Modo híbrido.](/help/assets/config-dynamic.md)
+>* Consulte [Configuración de Dynamic Media: modo](config-dms7.md) de Scene7 y [Resolución de problemas de Dynamic Media: modo de Scene7](troubleshoot-dms7.md)
+
 >
 
 
@@ -117,7 +121,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 ## Uso de vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para flujo continuo en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Video en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para transmitir en varias pantallas, incluidos dispositivos móviles de escritorio, iOS, Android, Blackberry y Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptable. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tablets.
 
@@ -144,13 +148,13 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo 
 * Organice, explore y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Distribuya conjuntos de vídeos adaptables en la Web, así como en equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android, Blackberry y Windows Phone.
 
-El flujo de vídeo adaptable es compatible con diversas plataformas de iOS. Consulte la Guía de referencia de visores de [Adobe](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_about.html).
+El flujo de vídeo adaptable es compatible con diversas plataformas de iOS. Consulte la Guía de referencia de visores de [Adobe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos Blackberry compatibles con este formato de vídeo en: [Formatos de vídeo compatibles con BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Puede encontrar los dispositivos Windows compatibles con este formato de vídeo en los siguientes: [Formatos de vídeo compatibles con Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Reproducción de vídeo con ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproducción de vídeo con los ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
 
    * Visores de vídeos únicos.
    * Visores de medios mixtos que combinan contenido de vídeo y de imagen.
@@ -160,7 +164,7 @@ Puede encontrar los dispositivos Windows compatibles con este formato de vídeo 
 
 Consulte Reproducción [dinámica de vídeo](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-Consulte también [Acerca de los visores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 en la Guía de referencia de visores de Adobe Scene7.
+Consulte también [Acerca de los visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 en la Guía de referencia de visores de Adobe Scene7.
 
 ## Práctica recomendada: Uso del visor de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -172,7 +176,7 @@ En el lado de reproducción del visor, detecta automáticamente la capacidad de 
 
 Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener una reproducción incrustada y utilizar flujo adaptable y progresivo en función de la capacidad del navegador, se amplía el alcance del contenido de medios enriquecidos a los usuarios de escritorio y móviles y se garantiza una experiencia de vídeo optimizada.
 
-Consulte también [Acerca de los visores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) HTML5 en la Guía de referencia de visores de Adobe.
+Consulte también [Acerca de los visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 en la Guía de referencia de visores de Adobe.
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles con el visor de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -441,7 +445,7 @@ Dynamic Media recomienda el uso de ajustes preestablecidos de codificación de v
 
 Puede publicar recursos de vídeo de AEM in situ directamente en un canal de YouTube que haya creado anteriormente.
 
-Para publicar recursos de vídeo en YouTube, configure Recursos AEM con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. Si el recurso de vídeo no tiene una etiqueta, no se publicará en YouTube.
+Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. Si el recurso de vídeo no tiene una etiqueta, no se publicará en YouTube.
 
 Al publicar en YouTube, se evita el sistema de perfil de procesamiento en AEM y, por tanto, el perfil de codificación de vídeo. Esta omisión se produce porque YouTube tiene su propia codificación, por lo que no es necesario un perfil de procesamiento de vídeo. Sin embargo, en la mayoría de los casos, se espera que los recursos de vídeo ya se hayan sometido a un perfil de procesamiento de vídeo. Al omitir el perfil de procesamiento de vídeo y publicar directamente en YouTube, solo significa que el recurso de vídeo en Recursos AEM no obtiene una miniatura visible. También significa que si se ejecuta en el modo de ejecución de Dynamic Media, los vídeos que no estén codificados no funcionarán con ninguno de los tipos de recursos de Dynamic Media.
 
@@ -476,7 +480,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta GMA
    Si ya tiene una cuenta de Google, vaya al paso siguiente.
 
 1. Vaya a [https://cloud.google.com/](https://cloud.google.com/).
-1. En la página Plataforma de Google Cloud, cerca de la parte superior, toque **[!UICONTROL Consola]**. Es posible que necesite **iniciar sesión** con sus credenciales de cuenta de Google.
+1. En la página de Platform de Google Cloud, cerca de la parte superior, toque **[!UICONTROL Consola]**. Es posible que necesite **iniciar sesión** con sus credenciales de cuenta de Google.
 1. En la página **[!UICONTROL Panel]** , toque **[!UICONTROL Crear proyecto]**.
 1. En el cuadro de diálogo **[!UICONTROL Nuevo proyecto]** , introduzca un nombre de proyecto.
 
@@ -597,7 +601,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 
    Ahora configurará las etiquetas para la publicación.
 
-1. **Configuración de etiquetas para publicación** : en la página Servicios de **[!UICONTROL nube > YouTube]** , toque el icono del **[!UICONTROL lápiz]** para editar la lista de las etiquetas que desee utilizar.
+1. **Configuración de etiquetas para publicación** : en la página **[!UICONTROL Cloud Service > YouTube]** , toque el icono del **[!UICONTROL lápiz]** para editar la lista de las etiquetas que desee utilizar.
 1. Toque el icono de lista desplegable (intercalación vertical) para mostrar la lista de las etiquetas disponibles en AEM.
 1. Toque una o varias etiquetas para agregarlas.
 
@@ -714,7 +718,7 @@ Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONT
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
+Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
 
 La URL de YouTube no está disponible para copiarse hasta que haya publicado el recurso de vídeo en YouTube.
 
@@ -781,6 +785,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >* Configuración de cola de trabajos de Apache Sling
    >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >* Cola de tiempo de espera de flujo de trabajo de granito
+
    > 
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
@@ -813,6 +818,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >* Configuración de cola de trabajos de Apache Sling
    >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >* Cola de tiempo de espera de flujo de trabajo de granito
+
    >
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
@@ -844,6 +850,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
    * **[!UICONTROL Inicio de publicación]**
    * **[!UICONTROL Error durante la publicación]**
    * **[!UICONTROL Finalización]** de publicación, que incluye información sobre canales y direcciones URL
+
    Al desactivar una casilla de verificación, no recibirá la notificación de correo electrónico especificada del flujo de trabajo de publicación de YouTube.
 
    >[!NOTE]
@@ -852,7 +859,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 ## Visualización de informes de vídeo {#viewing-video-reports}
 
-Los informes de vídeo están disponibles al ejecutar Dynamic Media - modo híbrido; los informes no están disponibles cuando se ejecuta el modo Dynamic Media - Scene7.
+Los informes de video están disponibles cuando ejecuta Dynamic Media - modo híbrido; los informes no están disponibles cuando se ejecuta el modo Dynamic Media - Scene7.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -866,9 +873,9 @@ También se muestra una tabla de todos los vídeos *publicados* para que pueda r
 
 Al tocar un nombre de vídeo en la lista, se muestra el informe de retención de audiencias (desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas para un momento determinado durante la reproducción del vídeo. Al reproducir el vídeo, la barra vertical realiza un seguimiento en sincronización con el indicador de tiempo del reproductor. Las caídas de los datos del gráfico de líneas indican dónde se produce la audiencia por desinterés.
 
-Si el vídeo se codificó fuera de los medios dinámicos de Adobe Experience Manager, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no estarán disponibles.
+Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no están disponibles.
 
-Consulte también [Configuración de los servicios](/help/assets/config-dynamic.md)de Dynamic Media Cloud.
+Consulte también [Configuración de Cloud Service](/help/assets/config-dynamic.md)de Dynamic Media.
 
 >[!NOTE]
 >
@@ -876,7 +883,7 @@ Consulte también [Configuración de los servicios](/help/assets/config-dynamic.
 
 De forma predeterminada, la primera vez que se ingresa a Informes de video, el informe muestra los datos de video comenzando en el primer mes actual y finalizando con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que ingrese Informes de video, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente un ID de grupo de informes al configurar los servicios de Dynamic Media Cloud. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la configuración de Dynamic Media Cloud y tocar **Aceptar**.
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Service de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la Configuración de Dynamic Media Cloud y tocar **Aceptar**.
 
 **Para vista de informes** de vídeo:
 
@@ -900,7 +907,7 @@ Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Med
 
 Utilice la referencia de visores de Scene7 y el SDK de visores HTML5 de Scene7 para crear sus propios visores de vídeo.
 
-Consulte Guía [de referencia de visores de Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+Consulte Guía [de referencia de visores de Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 Descargue el SDK de visor HTML de Scene7 desde Adobe Developer Connection.
 
@@ -975,7 +982,7 @@ El subtítulo también permite una buena accesibilidad mediante subtítulos opci
 
 Dynamic Media tiene la capacidad de convertir archivos de subtítulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) estático (sin imágenes) en la Ayuda *de la API de servicio de imágenes de* Scene7 para obtener más información sobre el uso de la función JSON en una URL.
+Consulte [Servicio de contenido](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) estático (sin imágenes) en la Ayuda *de la API de servicio de imágenes de* Scene7 para obtener más información sobre el uso de la función JSON en una URL.
 
 **Para agregar subtítulos o subtítulos al vídeo**:
 
@@ -1028,7 +1035,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
->El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
+>El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
 Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 se puede descargar desde [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
@@ -1116,7 +1123,7 @@ Si lo prefiere, puede elegir cargar una miniatura personalizada para representar
 
 >[!NOTE]
 >
->Las miniaturas de vídeo personalizadas solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
+>Las miniaturas de vídeo personalizadas solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
 ### Añadir una miniatura de vídeo {#adding-a-video-thumbnail}
 

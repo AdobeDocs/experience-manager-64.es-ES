@@ -6,7 +6,7 @@ seo-description: Información general sobre las funciones esenciales de AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 8aab981849152e6826dd4d0d68867790a85f373a
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 9%
@@ -46,7 +46,7 @@ ht-degree: 9%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Comparta contenido generado por el usuario con AEM Livefyre.](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html)
+[Comparta contenido generado por el usuario con AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

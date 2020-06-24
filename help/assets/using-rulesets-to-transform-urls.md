@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '841'
+ht-degree: 5%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
 
 Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. Cada regla consta de al menos una condición y una acción. Una regla evalúa los datos XML según las condiciones y, si se cumple una condición, toma la acción adecuada. Algunos ejemplos de conjuntos de reglas son:
 
-* Agregando un sufijo de tipo MIME. Muchos servicios y sitios web requieren sufijos de imagen, como agregar `.jpg` a una dirección URL.
+* Añadiendo un sufijo de tipo MIME. Muchos servicios y sitios web requieren sufijos de imagen, como agregar `.jpg` a una dirección URL.
 * Creación de una ruta de carpeta a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
    Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/assets/s7_seo.pdf).
 
-* Adición de metadatos a la dirección URL con fines de optimización de motores de búsqueda (SEO).
+* Añadir metadatos a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
    Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/assets/s7_seo.pdf).
 
@@ -35,14 +38,14 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
    Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de recursos pueden cargar archivos XML a Dynamic Media. Puede designar uno de estos archivos como archivo de conjunto de reglas de preprocesamiento para proporcionar recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica empresarial de los sistemas integrados con Dynamic Media. Especifique un archivo XML que sirva como ruta de archivo de definiciones de conjunto de reglas.
+En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de los recursos pueden cargar archivos XML a Dynamic Media. Puede designar uno de estos archivos como archivo de conjunto de reglas de preprocesamiento para servir recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica comercial de los sistemas que se integran con Dynamic Media. Especifique un archivo XML que sirva como ruta de archivo de definiciones de conjunto de reglas.
 
 >[!CAUTION]
 >
 >Tenga precaución al utilizar conjuntos de reglas; pueden evitar que el contenido de Dynamic Media se muestre en el sitio web.
 
 Hay disponibles conjuntos de reglas de ejemplo que pueden ayudarle a crear su propio conjunto de reglas.\
-Consulte Referencia [de conjunto](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)de reglas.
+Consulte Referencia [de conjunto](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)de reglas.
 
 Al igual que con la creación de todos los conjuntos de reglas, asegúrese de que el archivo XML sea válido antes de cargarlo mediante un programa de validador XML como xmlvalid.\
 Consulte también [Resolución de problemas de conjuntos](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)de reglas.
@@ -50,7 +53,7 @@ Consulte también [Resolución de problemas de conjuntos](https://helpx.adobe.co
 Además, asegúrese de probar primero el conjunto de reglas en un entorno de ensayo que no afecte al entorno de producción activo.\
 Los entornos de producción y los entornos de ensayo generalmente requieren inicios de sesión diferentes.
 
-* **Página de inicio de sesión del entorno** de ensayo NA: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **Página de inicio de sesión de entorno** de ensayo NA: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **Página de inicio de sesión del entorno** de ensayo de EMEA: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **Página de inicio de sesión del entorno** de ensayo de JAPAC: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
 

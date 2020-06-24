@@ -4,7 +4,7 @@ seo-title: Guía del usuario de AEM 6.4 Forms
 description: Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 seo-description: Abarca todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 22%
@@ -39,7 +39,7 @@ Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión,
 | [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Descubra cómo crear su instancia de AEM. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

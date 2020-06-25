@@ -270,10 +270,7 @@ Si tiene varias configuraciones, AEM muestra de forma predeterminada la [configu
 >* Cuando la Previsualización [segura está activada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados en Dynamic Media Classic aparecen en el navegador de contenido de Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Para vídeo, el navegador de contenido de Dynamic Media Classic admite:
-
-   >
-   >  
-* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+>  * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
 >  * Vídeo MP4 sencillo
 >  * Vídeo F4V sencillo
 

@@ -3,17 +3,17 @@ title: Compatibilidad con Camera Raw
 description: Obtenga información sobre cómo activar la compatibilidad con Camera Raw en Recursos de Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
 
 
-# Compatibilidad para procesar imágenes con Camera Raw {#camera-raw-support}
+# Uso de Camera Raw para procesar imágenes {#camera-raw-support}
 
-Puede activar la compatibilidad con Camera Raw para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en Recursos Adobe Experience Manager mediante el paquete [de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible mediante Uso compartido de paquetes o Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)software.
+Puede activar la compatibilidad con Camera Raw para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en Recursos de Adobe Experience Manager mediante el paquete [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de Camera Raw disponible mediante Uso compartido de paquetes o Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)software.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Para activar la compatibilidad con Camera Raw en Recursos de Adobe Experience Ma
 >
 >Asegúrese de que la configuración anterior es la misma que la configuración del paso **[!UICONTROL de control de DNG y RAW de cámara para actualizar DAM de]** muestra.
 
-Ahora puede importar archivos sin procesar de cámara en Recursos AEM. Después de instalar el paquete RAW de cámara y configurar el flujo de trabajo necesario, aparece la opción Ajuste **[!UICONTROL de]** imagen en la lista de los paneles laterales.
+Ahora puede importar archivos sin procesar de cámara en AEM Assets. Después de instalar el paquete RAW de cámara y configurar el flujo de trabajo necesario, aparece la opción Ajuste **[!UICONTROL de]** imagen en la lista de los paneles laterales.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 

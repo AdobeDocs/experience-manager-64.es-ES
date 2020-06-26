@@ -3,7 +3,7 @@ title: Biblioteca de transcodificación de imágenes
 description: Descubra cómo configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Para configurar el procesamiento del DIT, cree un archivo de configuración y ac
 
 Para configurar la biblioteca, cree un archivo .conf para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
 
-1. Descargue el paquete de la biblioteca de transcodificación de imágenes de [distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instálelo mediante el Administrador de paquetes. El paquete es compatible con AEM 6.5.
+1. Descargue el paquete Biblioteca de transcodificación de [imágenes de Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) de software e instálelo mediante el Administrador de paquetes. El paquete es compatible con AEM 6.5.
 
 1. Para conocer un ID de paquete para `com.day.cq.dam.cq-dam-switchengine`, inicie sesión en la consola web y toque **[!UICONTROL OSGi > Paquetes]**. Como alternativa, para abrir la consola de paquetes, acceda a la `https://[aem_server:[port]/system/console/bundles/` URL. Busque `com.day.cq.dam.cq-dam-switchengine` el paquete y su ID.
 

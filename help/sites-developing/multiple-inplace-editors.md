@@ -3,9 +3,9 @@ title: Configure RTE para varios editores in-situ.
 description: Para crear varios editores in situ en Adobe Experience Manager, configure el Editor de texto enriquecido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Configuración de varios editores in situ {#configure-multiple-in-place-editors}
 
-Puede configurar el Editor de texto enriquecido en Adobe Experience Manager para que tenga varios editores in-situ. Cuando esté configurado, puede seleccionar el contenido adecuado y abrir el editor correspondiente. Por ejemplo:
+Puede configurar el Editor de texto enriquecido en Adobe Experience Manager para que tenga varios editores in-situ. Cuando esté configurado, puede seleccionar el contenido adecuado y abrir el editor correspondiente.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Un editor in situ específico](assets/rte-inplace-editor.png)
 
 ## Configuración de varios editores {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ Por ejemplo:
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
@@ -71,6 +71,7 @@ Para configurar varios editores, siga estos pasos:
 
    * Nombre: El nombre de cada nodo es el nombre de la propiedad que representa, como sucede con los destinatarios de colocación. Por ejemplo, `image` y `text`.
    * Tipo: `cq:ChildEditorConfig`
+
    >[!NOTE]
    >
    >Existe una correlación entre los destinatarios de colocación definidos y los editores secundarios. El nombre del `cq:ChildEditorConfig` nodo se considera el ID del destinatario de colocación, para utilizarlo como parámetro del editor secundario seleccionado. Si el subárea editable no tiene un destinatario de colocación, por ejemplo, en un componente de texto, el nombre del editor secundario se seguirá considerando como ID para identificar el área editable correspondiente.

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Obtenga información sobre cómo configurar distintos tipos de fuentes de datos 
 
 ![](do-not-localize/data-integeration.png)
 
-La integración de datos de AEM Forms le permite configurar y conectar orígenes de datos dispares. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
+La integración de datos de AEM Forms le permite configurar y conectar fuentes de datos dispares. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
 * Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2 y Oracle RDBMS
 * perfil del usuario de AEM
@@ -30,7 +30,7 @@ La integración de datos de AEM Forms le permite configurar y conectar orígenes
 * Servicios Web basados en SOAP
 * Servicios OData
 
-La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en los servicios de nube de AEM, JDBC para bases de datos relacionales y conectores para el perfil de usuarios de AEM están configurados en la consola web de AEM.
+La integración de datos admite los tipos de autenticación OAuth2.0, Basic Authentication y API Key predeterminados, y permite implementar la autenticación personalizada para acceder a los servicios Web. Aunque los servicios RESTful, SOAP y OData están configurados en AEM cloud services, JDBC para bases de datos relacionales y conector para el perfil de usuarios de AEM se configura en la consola web de AEM.
 
 ## Configurar base de datos relacional {#configure-relational-database}
 
@@ -69,7 +69,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 Puede configurar el perfil de usuario de AEM mediante la configuración del conector de Perfil de usuario en la consola web de AEM. Haga lo siguiente:
 
 1. Vaya a la consola web de AEM en `https://[server]:[host]/system/console/configMgr`.
-1. Busque Integraciones de datos de **[!UICONTROL AEM Forms: Configuración]** del conector de Perfil de usuario y toque para abrir la configuración en modo de edición.
+1. Busque Integraciones de datos de **[!UICONTROL AEM Forms - Configuración]** del conector de Perfil de usuario y toque para abrir la configuración en modo de edición.
 1. En el cuadro de diálogo Configuración del conector de Perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades de perfil del usuario:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -108,11 +108,11 @@ Para configurar la carpeta para las configuraciones del servicio en la nube:
 
 ## Configuración de los servicios web RESTful {#configure-restful-web-services}
 
-El servicio web RESTful se puede describir usando las especificaciones [](https://swagger.io/specification/) Swagger en formato JSON o YAML en un archivo de definición Swagger. Para configurar el servicio web RESTful en los servicios en la nube de AEM, asegúrese de que tiene el archivo Swagger en el sistema de archivos o la URL en la que se aloja el archivo.
+El servicio web RESTful se puede describir usando las especificaciones [](https://swagger.io/specification/) Swagger en formato JSON o YAML en un archivo de definición Swagger. Para configurar el servicio web RESTful en AEM cloud services, asegúrese de que tiene el archivo Swagger en el sistema de archivos o la dirección URL donde se aloja el archivo.
 
 Para configurar los servicios RESTful, haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas > Servicios de nube > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpeta para configuraciones](/help/forms/using/configure-data-sources.md#cloud-folder) de servicios en la nube para obtener información sobre cómo crear y configurar una carpeta para configuraciones de servicios en la nube.
 
@@ -126,9 +126,9 @@ Para configurar los servicios RESTful, haga lo siguiente:
 
 ## Configuración de servicios web SOAP {#configure-soap-web-services}
 
-Los servicios Web basados en SOAP se describen mediante especificaciones [del lenguaje de descripción de servicios](https://www.w3.org/TR/wsdl)Web (WSDL). Para configurar el servicio web basado en SOAP en los servicios de nube de AEM, asegúrese de que dispone de la URL WSDL para el servicio web y haga lo siguiente:
+Los servicios Web basados en SOAP se describen mediante especificaciones [del lenguaje de descripción de servicios](https://www.w3.org/TR/wsdl)Web (WSDL). Para configurar el servicio web basado en SOAP en AEM cloud services, asegúrese de que dispone de la URL WSDL para el servicio web y haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas > Servicios de nube > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpeta para configuraciones](/help/forms/using/configure-data-sources.md#cloud-folder) de servicios en la nube para obtener información sobre cómo crear y configurar una carpeta para configuraciones de servicios en la nube.
 
@@ -136,19 +136,23 @@ Los servicios Web basados en SOAP se describen mediante especificaciones [del le
 1. Especifique lo siguiente para el servicio web SOAP:
 
    * URL WSDL para el servicio Web.
-   * Seleccione el tipo de autenticación — Ninguno, OAuth2.0, Autenticación básica o Autenticación personalizada — para acceder al servicio SOAP y, en consecuencia, proporcionar los detalles para la autenticación.
+   * Punto final de servicio. Especifique un valor en este campo para anular el extremo de servicio mencionado en WSDL.
+   * Seleccione el tipo de autenticación — Ninguno, OAuth2.0, Autenticación básica, Autenticación personalizada o Token X509 — para acceder al servicio SOAP y, en consecuencia, proporcionar los detalles para la autenticación.
+
+      Si selecciona el token X509 como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configuración de certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Especifique el alias KeyStore para el certificado X509 en el campo Alias **[!UICONTROL de]** clave. Especifique el tiempo, en segundos, hasta que la solicitud de autenticación siga siendo válida en el campo **[!UICONTROL Tiempo de vida]** . Si lo desea, seleccione firmar el encabezado de la marca de tiempo o el cuerpo del mensaje o ambos.
 
 1. Toque **[!UICONTROL Crear]** para crear la configuración de nube para el servicio web SOAP.
 
 ## Configurar servicios OData {#config-odata}
 
-Un servicio OData se identifica mediante su URL raíz de servicio. Para configurar un servicio OData en los servicios en la nube de AEM, asegúrese de que dispone de una URL raíz de servicio para el servicio y haga lo siguiente:
+Un servicio OData se identifica mediante su URL raíz de servicio. Para configurar un servicio OData en AEM cloud services, asegúrese de que tiene una URL raíz de servicio para el servicio y haga lo siguiente:
 
 >[!NOTE]
 >
 >Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte Configuración [de OData de](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft Dynamics.
 
-1. Vaya a **[!UICONTROL Herramientas > Servicios de nube > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes]** de datos. Toque para seleccionar la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpeta para configuraciones](/help/forms/using/configure-data-sources.md#cloud-folder) de servicios en la nube para obtener información sobre cómo crear y configurar una carpeta para configuraciones de servicios en la nube.
 

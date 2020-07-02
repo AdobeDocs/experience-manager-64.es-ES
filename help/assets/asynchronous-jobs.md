@@ -1,106 +1,96 @@
 ---
-title: Operaciones asincrónicas para mejorar el rendimiento
-description: Información general sobre las operaciones asincrónicas en Recursos AEM.
+title: Configurar operaciones asincrónicas en [!DNL Adobe Experience Manager].
+description: Efectúe de forma asincrónica algunas tareas con gran cantidad de recursos para optimizar el rendimiento en [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 2%
 
 ---
 
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
-Para reducir el impacto negativo en el rendimiento, Recursos Adobe Experience Manager (AEM) procesa de forma asíncrona determinadas operaciones de recursos que requieren muchos recursos y que se ejecutan durante mucho tiempo. Estas operaciones incluyen:
+Para reducir el impacto negativo en el rendimiento, [!DNL Adobe Experience Manger Assets] procesa de forma asíncrona ciertas operaciones de activos de larga duración y con gran densidad de recursos. El procesamiento asincrónico implica poner en cola varias tareas y, finalmente, ejecutarlas en serie, según la disponibilidad de los recursos del sistema. Estas operaciones incluyen:
 
 * Eliminación de muchos recursos.
 * Mover muchos recursos o recursos con muchas referencias.
 * Exportación e importación masiva de metadatos de recursos.
 
-El procesamiento asincrónico implica poner en cola varios trabajos y, finalmente, ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
-
-Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Puede vista del estado de las tareas asincrónicas desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
 >[!NOTE]
 >
->De forma predeterminada, los trabajos de Recursos AEM se ejecutan en paralelo. Si N es el número de núcleos de CPU, los trabajos N/2 se pueden ejecutar en paralelo de forma predeterminada. Para utilizar la configuración personalizada de la cola de trabajos, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte Configuraciones [de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>De forma predeterminada, las [!DNL Assets] tareas se ejecutan en paralelo. Si `N` es el número de núcleos de CPU, `N/2` las tareas se pueden ejecutar en paralelo de forma predeterminada. Para utilizar la configuración personalizada de la cola de tareas, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte Configuraciones [de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitorear el estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
+Siempre que [!DNL Assets] procese una operación de forma asíncrona, recibirá una notificación en la [!DNL Experience Manager] Bandeja de entrada [](/help/sites-authoring/inbox.md) y por correo electrónico. Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
-Para ver el estado de las operaciones asincrónicas en detalle, vaya a la página Estado **del trabajo** asincrónico.
+1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Operaciones]** > **[!UICONTROL Trabajos]**.
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Assets > Trabajos]**.
 1. En la página Estado **[!UICONTROL del trabajo]** asincrónico, revise los detalles de las operaciones.
 
-   ![job_status](assets/job_status.png)
+   ![Estado y detalles de las operaciones asincrónicas](assets/job_status.png)
 
-   Para determinar el progreso de una operación en particular, consulte el valor en la columna **[!UICONTROL Estado]** . Según el progreso, se muestra uno de los siguientes estados:
+   Para comprobar el progreso de una operación, consulte la columna **[!UICONTROL Estado]** . Según el progreso, se muestra uno de los siguientes estados:
 
-   **Activo**: Se está procesando la operación
+   * **[!UICONTROL Activo]**: La operación se está procesando.
+   * **[!UICONTROL Correcto]**: Se completó la operación.
+   * **[!UICONTROL Fallo]** o **[!UICONTROL Error]**: No se pudo procesar la operación.
+   * **[!UICONTROL Programado]**: La operación está programada para procesarse más tarde.
 
-   **Correcto**: Se completó la operación
+1. Para detener una operación activa, selecciónela en la lista y haga clic en **[!UICONTROL Detener]** icono ![de](assets/do-not-localize/stop_icon.svg) detención en la barra de herramientas.
 
-   **Error**: No se pudo procesar la operación
+1. Para vista de detalles adicionales, por ejemplo descripción y registros, seleccione la operación y haga clic en **[!UICONTROL Abrir]** ![open_icon](assets/do-not-localize/edit_icon.svg) en la barra de herramientas. Se muestra la página de detalles de la tarea.
 
-   **Programado**: La operación está programada para procesarse más tarde
+   ![Detalles de una tarea de importación de metadatos](assets/job_details.png)
 
-1. Para detener una operación activa, selecciónela en la lista y toque o haga clic en el icono **[!UICONTROL Detener]** de la barra de herramientas.
-
-   ![stop_icon](assets/stop_icon.png)
-
-1. Para ver detalles adicionales, por ejemplo descripción y registros, seleccione la operación y toque o haga clic en el icono **[!UICONTROL Abrir]** de la barra de herramientas.
-
-   ![open_icon](assets/open_icon.png)
-
-   Se muestra la página de detalles del trabajo.
-
-   ![job_details](assets/job_details.png)
-
-1. Para eliminar la operación de la lista, seleccione **[!UICONTROL Eliminar]** en la barra de herramientas. Para descargar los detalles en un archivo CSV, toque o haga clic en el icono **[!UICONTROL Descargar]** .
+1. Para eliminar la operación de la lista, seleccione **[!UICONTROL Eliminar]** en la barra de herramientas. Para descargar los detalles en un archivo CSV, haga clic en **[!UICONTROL Descargar]**.
 
    >[!NOTE]
    >
-   >No puede eliminar un trabajo si su estado está activo o en cola.
+   >No puede eliminar una tarea si su estado está activo o en cola.
 
-## Purgar trabajos completados {#purging-completed-jobs}
+## Purgar tareas completadas {#purge-completed-tasks}
 
-Recursos AEM ejecuta un trabajo de depuración todos los días a la 1:00 a.m. para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
+[!DNL Experience Manager Assets] ejecuta una tarea de depuración todos los días a las 1.00 horas para eliminar tareas asincrónicas completadas que tienen más de un día de antigüedad.
 
-Puede modificar la programación del trabajo de depuración y la duración durante la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
+<!-- TBD: Find out from the engineering team and mention the time zone of this 1:00 am task.
+-->
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
-1. Abra el trabajo programado de depuración de trabajos asincrónicos de **[!UICONTROL Adobe CQ DAM]** .
-1. Especifique el número de umbral de días después de los cuales se eliminarán los trabajos completados y el número máximo de trabajos para los que se conservarán los detalles en el historial.
+Puede modificar la programación de la tarea de depuración y la duración durante la cual se conservan los detalles de las tareas completadas antes de que se eliminen. También puede configurar el número máximo de tareas completadas para las que se conservan los detalles en cualquier momento.
 
-   ![purge_job](assets/purge_job.png)
+1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. Abra la tarea Depuración programada **[!UICONTROL de trabajos asincrónicos de]** Adobe CQ DAM.
+1. Especifique el número de umbral de días después de los cuales se eliminan las tareas completadas y el número máximo de tareas para las que se conservan los detalles en el historial. Guarde los cambios.
 
-1. Guarde los cambios.
+   ![Configuración para programar la depuración de tareas asincrónicas](assets/purge_job.png)
 
-## Configuración de umbrales para procesamiento asincrónico {#configuring-thresholds-for-asynchronous-processing}
+## Configurar umbral para operaciones de eliminación asincrónica {#configure-thresholds-for-asynchronous-delete-operations}
 
-Puede configurar el número de umbral de recursos o referencias para que Recursos AEM procese una operación concreta de forma asincrónica.
+Si el número de recursos o carpetas que se van a eliminar supera el número de umbral establecido, la operación de eliminación se realiza de forma asíncrona.
 
-### Configurar el umbral para operaciones de eliminación asincrónica {#configuring-thresholds-for-asynchronous-delete-operations}
+1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. En la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de eliminación]** asincrónica.
+1. En el cuadro **[!UICONTROL Umbral de número de recursos]** , especifique los números de umbral para eliminar de forma asíncrona recursos, carpetas o referencias. Guarde los cambios.
 
-Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de forma asíncrona.
+   ![Establecer el límite de umbral para la tarea de eliminación de recursos](assets/delete_threshold.png)
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
-1. En la consola web, abra la configuración de Procesamiento **[!UICONTROL de trabajos de eliminación]** asincrónica.
-1. En el cuadro **[!UICONTROL Umbral de número de recursos]** , especifique el número de umbral de recursos/carpetas para el procesamiento asincrónico de las operaciones de eliminación.
+## Configurar umbral para operaciones de movimiento asincrónico {#configure-thresholds-for-asynchronous-move-operations}
 
-   ![delete_threshold](assets/delete_threshold.png)
+Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral establecido, la operación de movimiento se realiza de forma asíncrona.
 
-1. Guarde los cambios.
+1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. En la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de movimiento]** asincrónico.
+1. En el cuadro **[!UICONTROL Umbral número de recursos/referencias]** , especifique los números de umbral para mover recursos, carpetas o referencias de forma asíncrona. Guarde los cambios.
 
-### Configurar el umbral para operaciones de movimiento asincrónico {#configuring-thresholds-for-asynchronous-move-operations}
+   ![Establecer el límite de umbral para que la tarea mueva recursos](assets/move_threshold.png)
 
-Si el número de recursos/carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de forma asíncrona.
+>[!MORELIKETHIS]
+>
+>* [Configure el correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
+>* [Importe y exporte metadatos de recursos de forma masiva](/help/assets/metadata-import-export.md).
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
-1. Desde la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de movimiento]** asincrónico.
-1. En el cuadro **[!UICONTROL Umbral número de recursos/referencias]** , especifique el número de umbral de recursos/carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
-
-   ![move_threshold](assets/move_threshold.png)
-
-1. Guarde los cambios.

@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ AEM se suministra con varios mecanismos para ayudarle a administrar su repositor
 
       Cuando la antigüedad de una versión supera este valor, se elimina del repositorio.
 
-* la tarea [de mantenimiento Depuración de](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)versiones. Puede programar la tarea de mantenimiento Depuración de versiones para eliminar automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de depuración de versiones.
+* la tarea [de mantenimiento Depuración de](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)versiones. Puede programar la tarea de mantenimiento Depuración de versiones para que elimine automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de depuración de versiones.
 
 >[!CAUTION]
 >
@@ -69,11 +72,11 @@ Las opciones disponibles son las siguientes:
 
    Se crea una versión a menos que el agente de replicación esté configurado para suprimir la creación de versiones, que el Administrador de versiones respeta
 
-   Una versión solo se crea si la activación se produce en una ruta incluida en versionmanager.ivPaths (ver más abajo).
+   Una versión solo se crea si la activación se produce en una ruta contenida en versionmanager.ivPaths (ver más abajo).
 
 * `versionmanager.ivPaths` (Cadena[], predeterminado: {&quot;/&quot;})
 
-   rutas en las que las versiones se crean implícitamente al activarse si versionmanager.createVersionOnActivation es true.
+   rutas en las que las versiones se crean implícitamente en la activación si versionmanager.createVersionOnActivation es true.
 
 * `versionmanager.purgingEnabled` (Booleano, predeterminado: false)
 

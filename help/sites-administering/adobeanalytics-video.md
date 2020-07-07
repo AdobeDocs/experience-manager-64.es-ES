@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Existen varios métodos disponibles para el seguimiento de eventos de vídeo, do
 >[!NOTE]
 >
 >Antes de continuar, asegúrese de que tiene un vídeo **** reproducible cargado en AEM.
-> 
+>
 >Para asegurarse de que los vídeos se reproducen en la página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)**para obtener información sobre cómo transcodificar archivos de vídeo en AEM.
 
 Utilice el procedimiento siguiente para configurar un marco para el seguimiento de vídeo con cada método.

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Información general de muestra {#sample-overview}
 
-Los borradores y el componente de envíos del portal de AEM Forms permiten a los usuarios guardar los formularios como borradores y enviarlos posteriormente desde cualquier dispositivo. Además, los usuarios pueden vista los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados a borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, como los usuarios interactúan con los formularios a través de la instancia de publicación de AEM, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
+Los borradores del portal de AEM Forms y el componente de envíos permiten a los usuarios guardar los formularios como borradores y enviarlos más tarde desde cualquier dispositivo. Además, los usuarios pueden vista los formularios enviados en el portal. Para habilitar esta funcionalidad, AEM Forms proporciona servicios de datos y metadatos para almacenar los datos rellenados por un usuario en el formulario y los metadatos del formulario asociados a borradores y formularios enviados. De forma predeterminada, estos datos se almacenan en el repositorio de CRX. Sin embargo, como los usuarios interactúan con los formularios a través de la instancia de publicación de AEM, que generalmente está fuera del servidor de seguridad de la empresa, es posible que las organizaciones deseen personalizar el almacenamiento de datos para que sea más seguro y fiable.
 
 La muestra, analizada en este documento, es una implementación de referencia de servicios personalizados de metadatos y datos para integrar borradores y componentes de envíos con una base de datos. La base de datos utilizada en la implementación de muestra es **MySQL 5.6.24**. Sin embargo, puede integrar el componente de borradores y envíos con cualquier base de datos que desee.
 
 >[!NOTE]
 >
->* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos adecuadamente por su sistema de bases de datos.
->* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo de la versión [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-> * El paquete de ejemplo solo funciona con acciones de envío de formularios adaptables.
+>* Los ejemplos y las configuraciones explicadas en este documento son de acuerdo con MySQL 5.6.24 y usted debe sustituirlos apropiadamente por su sistema de base de datos.
+>* Asegúrese de que ha instalado la versión más reciente del paquete del complemento AEM Forms. Para ver la lista de los paquetes disponibles, consulte el artículo Versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
+>* El paquete de ejemplo solo funciona con acciones de envío de formularios adaptables.
 
 
 ## Configurar y configurar el ejemplo {#set-up-and-configure-the-sample}
@@ -80,7 +80,7 @@ Realice los siguientes pasos, en todas las instancias de creación y publicació
 
    Para proporcionar un nombre diferente para la tabla de datos:
 
-   * En Configuración de consola web, busque y haga clic en Forms Portal Data Service Sample Implementation (Implementación de muestra de Forms Portal Data Service). Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
+   * En Configuración de la consola web, busque y haga clic en Implementación de muestra del servicio de datos de Forms Portal. Puede cambiar los valores del origen de datos y el nombre de la tabla de datos.
    >[!NOTE]
    >
    >Si cambia los nombres de tabla, indíquelos en la configuración de Form Portal.

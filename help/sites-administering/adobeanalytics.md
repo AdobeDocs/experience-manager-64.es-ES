@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 translation-type: tm+mt
-source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 21%
 
 ---
 
@@ -19,22 +22,22 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
 
 La integración de Adobe Analytics y AEM le permite realizar un seguimiento de la actividad de su página web:
 
-* Una configuración de Adobe Analytics permite que AEM se autentique con Adobe Analytics.
-* Un marco identifica los datos que se envían al grupo de informes de Adobe Analytics.
+* La configuración de Adobe Analytics permite que AEM se autentique con Adobe Analytics.
+* Un marco de trabajo identifica los datos que se envían al grupo de informes de Adobe Analytics.
 
 Los datos incluyen datos de página y de usuario; por ejemplo:
 
 * datos que recopilan los componentes de AEM
 * clics en vínculos
 * información de uso de vídeo
-* el número de visitas de página de Adobe Analytics
+* el número de visitas a la página desde Adobe Analytics
 
 Las páginas siguientes le ayudan a configurar la integración:
 
 * [Conexión a Adobe Analytics y creación de marcos](/help/sites-administering/adobeanalytics-connect.md)
 * [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Asignación de datos de componentes con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Configuración del seguimiento de videos para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
 También puede utilizar el asistente para la [inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
@@ -57,9 +60,8 @@ Consulte:
    >  por ejemplo, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuración** proxy de componentes HTTP de Apache para configurar la API 4.x;\
-   >  por ejemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+* **Configuración** proxy de componentes HTTP de Apache para configurar la API 4.x;
 >
-
-
+>  
+por ejemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 

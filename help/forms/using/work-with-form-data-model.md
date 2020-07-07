@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '3150'
+ht-degree: 0%
 
 ---
 
@@ -27,23 +30,23 @@ Si es nuevo en la integración de datos de Forms y no ha configurado un origen d
 * [Configurar orígenes de datos](/help/forms/using/configure-data-sources.md)
 * [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
 
-Continúe leyendo para obtener más información sobre las diversas tareas y configuraciones que puede realizar con el editor del modelo de datos de formulario.
+Continúe leyendo para obtener más información sobre las distintas tareas y configuraciones que puede realizar con el editor del modelo de datos de formulario.
 
 >[!NOTE]
 >
 >Debe ser miembro de los grupos **fdm-author** y **form-user** para poder crear y trabajar con el modelo de datos de formulario. Póngase en contacto con el administrador de AEM para convertirse en miembro de los grupos.
 
-## Agregar objetos y servicios de modelos de datos {#add-data-model-objects-and-services}
+## Añadir objetos y servicios del modelo de datos {#add-data-model-objects-and-services}
 
 Si ha creado un modelo de datos de formulario con orígenes de datos, puede utilizar el editor del modelo de datos de formulario para agregar objetos y servicios del modelo de datos, configurar sus propiedades, crear asociaciones entre objetos del modelo de datos y probar el modelo y los servicios de datos de formulario.
 
 Puede agregar objetos y servicios del modelo de datos a partir de orígenes de datos disponibles en el modelo de datos de formulario. Cuando los objetos del modelo de datos agregados aparecen en la ficha Modelo, los servicios agregados aparecen en la ficha Servicios.
 
-Para agregar objetos y servicios de modelos de datos:
+Para agregar objetos y servicios del modelo de datos:
 
 1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desee agregar objetos de modelo de datos.
-1. En el panel Fuentes de datos, expanda las fuentes de datos para ver los objetos y servicios disponibles del modelo de datos.
-1. Seleccione los objetos y servicios del modelo de datos que desee agregar al modelo de datos de formulario y toque **[!UICONTROL Agregar seleccionados]**.
+1. En el panel Fuentes de datos, expanda las fuentes de datos para vista de los objetos y servicios del modelo de datos disponibles.
+1. Seleccione los objetos y servicios del modelo de datos que desee agregar al modelo de datos de formulario y toque **[!UICONTROL Añadir seleccionados]**.
 
    ![selected-Objects](assets/selected-objects.png)
 
@@ -51,11 +54,11 @@ Para agregar objetos y servicios de modelos de datos:
 
    ![model-tab](assets/model-tab.png)
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Puede mantener y arrastrar cuadros de objetos del modelo de datos para organizarlos en el área de contenido. Todos los objetos del modelo de datos agregados en el modelo de datos de formulario aparecen atenuados en el panel Fuentes de datos.
 
-   La ficha Servicios muestra los servicios agregados.
+   La ficha Servicios lista los servicios agregados.
 
    ![services-tab](assets/services-tab.png)
 
@@ -65,7 +68,7 @@ Para agregar objetos y servicios de modelos de datos:
 
 1. Toque **[!UICONTROL Guardar]** para guardar el objeto del modelo de formulario.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Puede invocar servicios configurados en la ficha Servicios de un modelo de datos de formulario mediante las reglas de formulario adaptables. Los servicios configurados están disponibles en la acción Invocar servicios del editor de reglas. Para obtener más información sobre el uso de estos servicios en reglas de formularios adaptables, consulte Invocar servicios y establecer valor de reglas en el editor [de](/help/forms/using/rule-editor.md)reglas.
 
@@ -79,13 +82,13 @@ Para crear un objeto de modelo de datos sin orígenes de datos:
 
 1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desea crear una entidad u objeto de modelo de datos.
 1. Puntee **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y toque **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos de formulario. Tenga en cuenta que el objeto del modelo de datos recientemente agregado no está enlazado a un origen de datos y no tiene ninguna propiedad, como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y toque **[!UICONTROL Añadir]**. Se agrega un objeto de modelo de datos al modelo de datos de formulario. Tenga en cuenta que el objeto del modelo de datos recientemente agregado no está enlazado a un origen de datos y no tiene ninguna propiedad, como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
 A continuación, puede agregar propiedades secundarias en objetos del modelo de datos independientes.
 
-### Agregar propiedades secundarias {#child-properties}
+### Añadir propiedades secundarias {#child-properties}
 
 El editor del modelo de datos de formulario permite crear propiedades secundarias en un objeto del modelo de datos. La propiedad cuando se crea no está enlazada a ninguna propiedad de un origen de datos. Posteriormente, puede enlazar la propiedad secundaria con otra propiedad del objeto del modelo de datos que la contiene.
 
@@ -96,7 +99,7 @@ Para crear una propiedad secundaria:
 1. Active Calculado si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Edición de propiedades](#edit-properties).
 1. Si el objeto del modelo de datos está enlazado a un origen de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
 
-   Para enlazar manualmente una propiedad secundaria con una propiedad de objeto de modelo de datos, toque el icono Examinar situado junto al campo Referencia de **[!UICONTROL enlace]** . El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** muestra todas las propiedades del objeto del modelo de datos principal. Seleccione una propiedad con la que enlazar y toque el icono de visto. Tenga en cuenta que sólo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
+   Para enlazar manualmente una propiedad secundaria con una propiedad de objeto de modelo de datos, toque el icono Examinar situado junto al campo Referencia de **[!UICONTROL enlace]** . El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** lista todas las propiedades del objeto del modelo de datos principal. Seleccione una propiedad con la que enlazar y toque el icono de visto. Tenga en cuenta que sólo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
 
 1. Toque **[!UICONTROL Listo]** para guardar la propiedad secundaria y **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario. La propiedad secundaria ahora se agrega al objeto del modelo de datos.
 
@@ -108,7 +111,7 @@ Cuando los orígenes de datos que desea integrar con el modelo de datos de formu
 
 1. En el modelo de datos de formulario, seleccione el origen de datos independiente que desea enlazar con un origen de datos.
 1. Toque **[!UICONTROL Editar propiedades]**.
-1. En el panel **[!UICONTROL Editar propiedades]** , toque el icono de exploración situado junto al campo **[!UICONTROL Enlace]** . Se abre el cuadro de diálogo **[!UICONTROL Seleccionar objeto]** que muestra los orígenes de datos agregados en el modelo de datos de formulario.
+1. En el panel **[!UICONTROL Editar propiedades]** , toque el icono de exploración situado junto al campo **[!UICONTROL Enlace]** . Abre el cuadro de diálogo **[!UICONTROL Seleccionar objeto]** que lista los orígenes de datos agregados en el modelo de datos de formulario.
 
    ![select-object](assets/select-object.png)
 
@@ -149,31 +152,31 @@ Para leer y escribir datos para un objeto de modelo de datos, haga lo siguiente 
 
    Servicios de lectura y escritura configurados para la fuente de datos de empleados
 
-1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el argumento de servicio de lectura enlazar el argumento a un atributo de perfil de usuario, atributo de solicitud o valor literal y especifique el valor de enlace. Enlaza el argumento service al atributo de enlace o valor literal especificado, que se pasa al servicio como argumento para recuperar detalles asociados al valor especificado desde el origen de datos.
+1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el argumento read service se vincule a un atributo de Perfil de usuario, un atributo de solicitud o un valor literal y especifique el valor de enlace. Enlaza el argumento service al atributo de enlace o valor literal especificado, que se pasa al servicio como argumento para recuperar detalles asociados al valor especificado desde el origen de datos.
 
-   En este ejemplo, el `id` argumento tomará el valor del `empid` atributo del perfil de usuario y lo pasará como argumento al servicio de lectura. Leerá y devolverá valores de propiedades asociadas del objeto del modelo de `employee` datos para el `empid`. Por lo tanto, si especifica 00250 en el `empid` campo del formulario, el servicio de lectura leerá los detalles del empleado con la identificación de empleado 00250.
+   En este ejemplo, el `id` argumento tomará el valor del `empid` atributo del perfil del usuario y lo pasará como argumento al servicio de lectura. Leerá y devolverá valores de propiedades asociadas del objeto del modelo de `employee` datos para el `empid`. Por lo tanto, si especifica 00250 en el `empid` campo del formulario, el servicio de lectura leerá los detalles del empleado con la identificación de empleado 00250.
 
    Además, puede hacer que un argumento sea obligatorio u opcional.
 
    ![edit-argumento](assets/edit-argument.png)
 
-   Enlace del argumento id al atributo empid del perfil de usuario de AEM
+   Enlace del argumento id al atributo empid del Perfil de usuario de AEM
 
 1. Toque **[!UICONTROL Listo]** para guardar el argumento, **[!UICONTROL Listo]** para guardar las propiedades y, a continuación, **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 
-## Agregar asociaciones {#add-associations}
+## Añadir asociaciones {#add-associations}
 
 Normalmente, hay asociaciones creadas entre objetos de modelo de datos en un origen de datos. La asociación puede ser uno a uno o uno a varios. Por ejemplo, puede haber varios dependientes asociados a un empleado. Se denomina asociación de uno a varios y se describe `1:n` en la línea que conecta objetos del modelo de datos asociados. Sin embargo, si una asociación devuelve un nombre de empleado único para un ID de empleado determinado, se denomina asociación uno a uno.
 
 Cuando se agregan objetos de modelo de datos asociados en un origen de datos a un modelo de datos de formulario, sus asociaciones se conservan y se muestran como conectadas por líneas de flecha. Puede agregar asociaciones entre objetos del modelo de datos en distintos orígenes de datos en un modelo de datos de formulario.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Las asociaciones predefinidas en un origen de datos JDBC no se conservan en el modelo de datos de formulario. Debe crearlos manualmente.
 
 Para agregar una asociación:
 
-1. Seleccione la casilla de verificación situada en la parte superior de un objeto de modelo de datos para seleccionarlo y toque **[!UICONTROL Agregar asociación]**. Se abre el cuadro de diálogo Agregar asociación.
+1. Seleccione la casilla de verificación situada en la parte superior de un objeto de modelo de datos para seleccionarlo y toque **[!UICONTROL Añadir asociación]**. Se abre el cuadro de diálogo Añadir asociación.
 
    ![complemento-asociación](assets/add-association.png)
 
@@ -181,23 +184,24 @@ Para agregar una asociación:
    >
    >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Puede utilizar estas propiedades de navegación al agregar asociaciones en el Modelo de datos de formulario. Para obtener más información, consulte [Uso de las propiedades de navegación de los servicios](#navigation-properties-odata)OData.
 
-   Se abre el cuadro de diálogo Agregar asociación.
+   Se abre el cuadro de diálogo Añadir asociación.
 
    ![add-union-2](assets/add-association-2.png)
 
-   Cuadro de diálogo Agregar asociación
+   Cuadro de diálogo Añadir asociación
 
-1. En el panel Agregar asociación:
+1. En el panel Añadir asociación:
 
    * Especifique un título para la asociación.
    * Seleccione el tipo de asociación — Uno a Uno o Uno a Muchos.
    * Seleccione el objeto del modelo de datos con el que se va a asociar.
    * Seleccione el servicio de lectura para leer datos del objeto de modelo seleccionado. Se abre el argumento del servicio de lectura. Edite para cambiar el argumento, si es necesario, y enlace el argumento a la propiedad del objeto del modelo de datos que se va a asociar.
+
    En el siguiente ejemplo, el argumento predeterminado para el servicio de lectura del objeto del modelo de datos Dependientes es `dependentid`.
 
    ![add-collection-example](assets/add-association-example.png)
 
-   El argumento predeterminado para el servicio de lectura de dependientes depende
+   El argumento predeterminado para el servicio de lectura Dependientes es dependiente
 
    Sin embargo, el argumento debe ser una propiedad común entre el objeto del modelo de datos asociado, que en este ejemplo es `Employeeid`. Por lo tanto, el `Employeeid` argumento debe enlazarse a la `id` propiedad del objeto del modelo de datos Empleado para recuperar los detalles de dependientes asociados del objeto del modelo de datos Dependientes.
 
@@ -210,7 +214,7 @@ Para agregar una asociación:
 1. Toque **[!UICONTROL Listo]** para guardar la asociación y, a continuación, **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 1. Repita los pasos para crear más asociaciones según sea necesario.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >La asociación agregada aparece en el cuadro de objetos del modelo de datos con el título especificado y una línea que conecta los objetos del modelo de datos asociados.
 >
@@ -230,6 +234,7 @@ Para editar las propiedades:
    * **Objeto** del modelo de datos: Especifique los servicios de lectura y escritura y edite los argumentos.
    * **Propiedad**: Especifique el tipo, subtipo y formato de la propiedad. También puede especificar si la propiedad seleccionada es la clave principal del objeto del modelo de datos.
    * **Servicio**: Especifique el objeto del modelo de entrada, el tipo de salida y los argumentos del servicio. Para un servicio Get, puede especificar si se espera que devuelva una matriz.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Cuadro de diálogo Editar propiedades para obtener un servicio
@@ -256,7 +261,7 @@ Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor sea el 
 
    En la lista desplegable Seleccionar opción, seleccione Expresión **** matemática. Otras opciones disponibles son Objeto **[!UICONTROL y]** Cadena **[!UICONTROL del Modelo de datos de]** formulario.
 
-1. En la expresión matemática, seleccione **[!UICONTROL Nombre]** y **[!UICONTROL Apellido]** en el primer y segundo objeto, respectivamente. Seleccione **[!UICONTROL más]** como operador.
+1. En la expresión matemática, seleccione **[!UICONTROL Nombre]** y **[!UICONTROL Apellido]** en los objetos primero y segundo, respectivamente. Seleccione **[!UICONTROL más]** como operador.
 
    Toque **[!UICONTROL Listo]** y, a continuación, **[!UICONTROL Cerrar]** para cerrar la ventana del editor de reglas. La regla tiene un aspecto similar al siguiente.
 
@@ -296,7 +301,7 @@ Para obtener más información sobre las propiedades de navegación, consulte la
 </EntityType>
 ```
 
-Al configurar un servicio OData en un Modelo de datos de formulario, todas las propiedades de navegación de un contenedor de entidades están disponibles a través de un servicio en el Modelo de datos de formulario. En este ejemplo del servicio TripPin OData, las tres propiedades de navegación del contenedor de `Person` entidades se pueden leer con un `GET LINK` servicio del Modelo de datos de formulario.
+Al configurar un servicio OData en un modelo de datos de formulario, todas las propiedades de navegación de un contenedor de entidad están disponibles a través de un servicio en el modelo de datos de formulario. En este ejemplo del servicio TripPin OData, las tres propiedades de navegación del contenedor de `Person` entidad se pueden leer con un `GET LINK` servicio del Modelo de datos de formulario.
 
 A continuación se resalta el `GET LINK of Person /People` servicio en el Modelo de datos de formulario, que es un servicio combinado para las tres propiedades de navegación en la `Person` entidad del servicio TripPin OData.
 
@@ -348,8 +353,8 @@ El modelo de datos de formulario está configurado pero, antes de ponerlo en uso
 
    ![test-data-model-2](assets/test-data-model-2.png)
 
-Del mismo modo, se pueden probar otros objetos y servicios del modelo de datos de formulario.
+Del mismo modo, puede probar otros objetos y servicios del modelo de datos de formulario.
 
 ## Pasos siguientes {#next-steps}
 
-Dispone de un modelo de datos de formulario de trabajo que ya está listo para su uso en formularios adaptables y flujos de trabajo de comunicaciones interactivas. Para obtener más información, consulte [Uso del modelo](/help/forms/using/using-form-data-model.md)de datos de formulario.
+Tiene un modelo de datos de formulario que ya está listo para su uso en formularios adaptables y flujos de trabajo de comunicaciones interactivos. Para obtener más información, consulte [Uso del modelo](/help/forms/using/using-form-data-model.md)de datos de formulario.

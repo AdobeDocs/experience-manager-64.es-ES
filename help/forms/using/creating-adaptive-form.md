@@ -9,9 +9,9 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Siga estos pasos para crear un formulario adaptable.
 
-1. Acceso a la instancia de AEM Forms Author en `https://[server]:[port]/<custom-context-if-any>.`
+1. Acceso a la instancia de creación de AEM Forms en `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -67,7 +67,7 @@ Siga estos pasos para crear un formulario adaptable.
 
    Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios](/help/forms/using/introduction-forms-authoring.md)adaptables.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Permite que las ventanas emergentes del navegador abran el formulario recién creado en una nueva ficha.
 
@@ -102,7 +102,7 @@ Puede reutilizar las plantillas de formulario XFA para crear formularios adaptab
 Para utilizar una plantilla de formulario XFA como modelo de formulario para el formulario adaptable, haga lo siguiente:
 
 1. En la página **[!UICONTROL Añadir propiedades]** , abra la ficha Modelo **[!UICONTROL de formulario]** .
-1. En la ficha Modelo de formulario, en la lista desplegable, seleccione Plantillas **[!UICONTROL de formulario]**. Todas las plantillas de formulario cargadas en el repositorio mediante la interfaz de usuario de AEM Forms se muestran para su selección. Seleccione una plantilla de la lista.
+1. En la ficha Modelo de formulario, en la lista desplegable, seleccione Plantillas **[!UICONTROL de formulario]**. Todas las plantillas de formulario cargadas en el repositorio mediante la interfaz de usuario de los AEM Forms se muestran para su selección. Seleccione una plantilla de la lista.
 
    ![Asociar plantilla de formulario XFA con un formulario adaptable](assets/form_model_xfa_associate.png)
    **Figura:** *Selección de una plantilla de formulario*
@@ -130,7 +130,7 @@ Para utilizar el esquema XML o JSON como modelo de formulario para un formulario
    * **[!UICONTROL Cargar desde el disco]** : seleccione esta opción y toque Cargar definición de Esquema para buscar y cargar un esquema XML o un esquema JSON desde el sistema de archivos. El archivo de esquema cargado reside en el formulario y no es accesible para otros formularios adaptables.
    * **[!UICONTROL Buscar en el repositorio]** : seleccione esta opción para seleccionar entre la lista de archivos de definición de esquema disponibles en el repositorio. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado se asociará al formulario por referencia y será accesible para su uso en otros formularios adaptables.
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >Asegúrese de que el nombre de archivo del esquema JSON termine con **.esquema.json**. Por ejemplo: mySchema.esquema.json
 
@@ -148,7 +148,7 @@ Para utilizar el esquema XML o JSON como modelo de formulario para un formulario
 
 ## Plantillas de formulario adaptables {#adaptive-form-templates}
 
-Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. De forma predeterminada, AEM Forms proporciona algunas plantillas de formulario adaptables. Para obtener el paquete completo de plantillas, incluidas las plantillas avanzadas, debe instalar el paquete del complemento AEM Forms. Para obtener más información, consulte [Instalación del paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md)del complemento AEM Forms.
+Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. De forma predeterminada, AEM Forms proporciona algunas plantillas de formulario adaptables. Para obtener el paquete completo de plantillas, incluidas las plantillas avanzadas, debe instalar el paquete del complemento AEM Forms. Para obtener más información, consulte [Instalación del paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md)de AEM Forms.
 
 Además, puede utilizar el editor de plantillas para crear sus propias plantillas. Para obtener más información sobre el trabajo con plantillas, consulte Plantillas de formulario [adaptables](/help/forms/using/template-editor.md).
 

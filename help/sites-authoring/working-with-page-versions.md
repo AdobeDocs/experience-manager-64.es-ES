@@ -1,6 +1,6 @@
 ---
-title: 'Uso de versiones de página '
-seo-title: 'Uso de versiones de página '
+title: 'Uso de versiones de página  '
+seo-title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
 seo-description: Cree, compare y restaure versiones de una página
 uuid: b0328431-c2cf-48f4-b358-261238338241
@@ -10,12 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 96%
 
 ---
 
 
-# Uso de versiones de página {#working-with-page-versions}
+# Uso de versiones de página  {#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo. Con la función de versiones, se pueden realizar las siguientes operaciones:
 
@@ -23,7 +26,7 @@ Al generar una versión, se crea una “instantánea” de una página en un pun
 * Restaurar una página a una versión anterior, por ejemplo, para deshacer un cambio realizado en ella.
 * Comparar la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes. 
 
-## Creación de una nueva versión  {#creating-a-new-version}
+## Creación de una nueva versión   {#creating-a-new-version}
 
 Puede crear una versión de su recurso desde:
 
@@ -91,7 +94,7 @@ Para volver a una versión anterior:
 
 1. Seleccione **Revertir a esta versión**. Se restaurará la versión seleccionada y se actualizará la información en la línea de tiempo.
 
-## Vista previa de una versión  {#previewing-a-version}
+## Vista previa de una versión   {#previewing-a-version}
 
 Puede previsualizar una versión específica:
 
@@ -123,7 +126,7 @@ Para comparar una versión anterior con la página actual:
 
 1. Seleccione **Comparar con actual**. Se abrirá [Diferencias de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
 
-## Deformación de tiempo  {#timewarp}
+## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
@@ -164,4 +167,4 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 
 >[!CAUTION]
 >
-> Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
+>Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.

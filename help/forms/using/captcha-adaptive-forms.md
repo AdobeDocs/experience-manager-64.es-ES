@@ -9,32 +9,36 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
 
 # Uso de CAPTCHA en formularios adaptables {#using-captcha-in-adaptive-forms}
 
-CAPTCHA (Prueba pública de Turing completamente automatizada para distinguir entre ordenadores y humanos) es un programa comúnmente utilizado en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a garantizar la seguridad de las transacciones en línea evitando que los bots publiquen contenido no deseado o con fines malintencionados.
+CAPTCHA (Prueba de Turing pública completamente automatizada para distinguir entre ordenadores y humanos) es un programa que se utiliza comúnmente en las transacciones en línea para distinguir entre humanos y programas o bots automáticos. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a garantizar la seguridad de las transacciones en línea evitando que los bots publiquen contenido no deseado o con fines malintencionados.
 
 AEM Forms admite CAPTCHA en formularios adaptables. Puede utilizar el servicio reCAPTCHA de Google para implementar CAPTCHA.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
->Los formularios AEM solo admiten reCaptcha v2. No se admite ninguna otra versión.
->CAPTCHA en formularios adaptables no se admite en modo sin conexión en la aplicación de AEM Forms.
+>Los AEM Forms solo admiten reCaptcha v2. No se admite ninguna otra versión.
+>
+>CAPTCHA en formularios adaptables no se admite en modo sin conexión en la aplicación AEM Forms.
 
 ## Configurar el servicio ReCAPTCHA por Google {#google-recaptcha}
 
-Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar CAPTCHA en formularios adaptables. Ofrece capacidades avanzadas de CAPTCHA para proteger su sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/).
+Los autores de formularios pueden utilizar el servicio reCAPTCHA de Google para implementar CAPTCHA en formularios adaptables. oferta las capacidades avanzadas de CAPTCHA para proteger el sitio. Para obtener más información sobre cómo funciona reCAPTCHA, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
 ![recaptcha](assets/recaptcha.png)
 
 Para implementar el servicio reCAPTCHA en AEM Forms:
 
 1. Obtenga el par [de claves de la API de](https://www.google.com/recaptcha/admin) reCAPTCHA de Google. Incluye una clave del sitio y un secreto.
-1. Cree un contenedor de configuración para servicios en la nube.
+1. Crear contenedor de configuración para servicios en la nube.
 
    1. Vaya a **[!UICONTROL Herramientas > General > Navegador]** de configuración.
    1. Haga lo siguiente para habilitar la carpeta global para las configuraciones de nube o omita este paso para crear y configurar otra carpeta para las configuraciones de servicio en la nube.
@@ -49,7 +53,7 @@ Para implementar el servicio reCAPTCHA en AEM Forms:
 
 1. Configure el servicio en la nube para reCAPTCHA.
 
-   1. En la instancia de creación de AEM, vaya a ![Herramientas](assets/tools.png) > Servicios **de nube**.
+   1. En la instancia de creación de AEM, vaya a ![Herramientas](assets/tools.png) > **Cloud Service**.
    1. Toque **[!UICONTROL reCAPTCHA]**. Se abre la página Configuraciones. Seleccione el contenedor de configuración creado en el paso anterior y toque **[!UICONTROL Crear]**.
    1. Especifique Nombre, Clave del sitio y Clave secreta para el servicio reCAPTCHA y toque **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
    1. En el cuadro de diálogo Editar componente, especifique el sitio y las claves secretas obtenidas en el paso 1. Toque **[!UICONTROL Guardar configuración]** y, a continuación, toque **[!UICONTROL Aceptar]** para completar la configuración.
@@ -85,4 +89,4 @@ Para utilizar CAPTCHA en formularios adaptables:
 
 1. Guarde las propiedades.
 
-El servicio reCAPTCHA está habilitado en el formulario adaptable. Puede obtener una vista previa del formulario y ver cómo funciona CAPTCHA.
+El servicio reCAPTCHA está habilitado en el formulario adaptable. Puede previsualización del formulario y ver cómo funciona CAPTCHA.

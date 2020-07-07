@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 6eb03b035793a21eafd120ac848a6d62eaf6e6ec
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '6231'
 ht-degree: 2%
@@ -114,7 +114,6 @@ La creación de una comprobación de estado individual implica dos pasos: implem
 
       * **Tipo:** `String`
       * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
-
    >[!NOTE]
    >
    >La ruta de acceso del recurso anterior se crea de la siguiente manera: si el nombre del grano de la comprobación de estado es &quot;test&quot;, agregue &quot;test&quot; al final de la ruta `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -154,7 +153,6 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
    * **Etiquetas (hc.tags):** Las etiquetas de esta comprobación de estado. Si esta comprobación de estado compuesta está pensada para formar parte de otra comprobación de estado compuesta (por ejemplo, en una jerarquía de comprobaciones de estado), agregue las etiquetas a las que está relacionada esta combinación.
    * **Nombre de MBean (hc.mbean.name):** El nombre del grano que se dará al MBean JMX de esta comprobación de estado compuesta.
    * **Etiquetas de filtro (filter.tags):** Es una propiedad específica de las comprobaciones de estado compuestas. Éstas son las etiquetas que el compuesto debe acumulado. La comprobación de estado compuesta acumulada bajo su grupo todas las comprobaciones de estado que tengan cualquier etiqueta que coincida con cualquiera de las etiquetas de filtro de esta composición. Por ejemplo, una comprobación de estado compuesta que tenga la **prueba** y la **comprobación** de las etiquetas de filtro acumulada todas las comprobaciones de estado individuales y compuestas que tengan alguna de las etiquetas de **prueba** y **verificación** en la propiedad de etiquetas ( `hc.tags`).
-
    >[!NOTE]
    >
    >Se crea un nuevo grano JMX para cada nueva configuración de la comprobación de estado compuesta de Apache Sling.**
@@ -166,7 +164,6 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
    * **Nombre:** `Composite Health Check`
 
       * **Tipo:** `nt:unstructured`
-
    Con las siguientes propiedades:
 
    * **Nombre:** `sling:resourceType`
@@ -177,7 +174,6 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
 
       * **Tipo:** `String`
       * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
-
    >[!NOTE]
    >
    >Si crea comprobaciones de estado individuales que pertenecen lógicamente a una comprobación compuesta que ya está presente en el Panel de forma predeterminada, se capturarán y agruparán automáticamente en la correspondiente comprobación compuesta. Debido a esto, no es necesario crear un nuevo nodo de configuración para estas comprobaciones.
@@ -342,7 +338,6 @@ El Panel Health Check se puede integrar con Nagios a través de los granitos JMX
    1. En el panel izquierdo, presione el Administrador **de configuración** principal en Configuración **** avanzada.
    1. Pulse el vínculo **Hosts** en la sección **Monitoreo** .
    1. Añada la definición del host:
-
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
    A continuación se muestra un ejemplo de archivo de configuración de host, en caso de que utilice Nagios Core:
@@ -594,7 +589,7 @@ Los Flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para
 
 >[!NOTE]
 >
-> Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, consulte [esta página](workflows-administering.md#regular-purging-of-workflow-instances).
+>Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, consulte [esta página](workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Mantenimiento del registro de auditoría {#audit-log-maintenance}
 
@@ -887,7 +882,7 @@ También puede descargar un `JSON` archivo que resume la información del panel 
      <li>etiquetas</li> 
      <li>autorizables</li> 
      <li>número total de nodos<br /> </li> 
-    </ul> <p>El número total de nodos se obtiene a partir de nodeCounterMBean, mientras que el resto de las estadísticas se obtiene a partir de IndexInfoService.</p> </td> 
+    </ul> <p>El número total de nodos se obtiene de nodeCounterMBean, mientras que el resto de las estadísticas se obtiene de IndexInfoService.</p> </td> 
    <td>N/D</td> 
    <td>N/D</td> 
   </tr> 

@@ -1,6 +1,6 @@
 ---
-title: 'Uso de versiones de página '
-seo-title: 'Uso de versiones de página '
+title: 'Uso de versiones de página  '
+seo-title: 'Uso de versiones de página  '
 description: Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo.
 seo-description: Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo.
 uuid: b8412922-3dd5-44e3-a7fa-3e357c89a4ff
@@ -10,12 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 90%
 
 ---
 
 
-# Uso de versiones de página {#working-with-page-versions}
+# Uso de versiones de página  {#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo. Con la función de versiones, se pueden realizar las siguientes operaciones:
 
@@ -23,7 +26,7 @@ Al generar una versión, se crea una “instantánea” de una página en un pun
 * Restaurar una página a una versión anterior, por ejemplo, para deshacer un cambio realizado en ella.
 * Comparar la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes. 
 
-## Creación de una nueva versión  {#creating-a-new-version}
+## Creación de una nueva versión   {#creating-a-new-version}
 
 Para crear una nueva versión de una página:
 
@@ -62,7 +65,7 @@ Este método puede utilizarse para restaurar una versión de página. También p
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Seleccionando** Restaurar versión...** enumera las versiones de los documentos de la carpeta actual. Aunque se haya eliminado una página, se enumerará la última versión:
+1. Seleccionando** Restaurar versión...** lista versiones de documentos en la carpeta actual. Aunque se haya eliminado una página, se enumerará la última versión:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -95,11 +98,12 @@ Para compara la versión actual de la página con una versión anterior:
    * El texto que se ha eliminado aparece en rojo y tachado.
    * El texto que se ha agregado aparece en verde y resaltado.
    * Las imágenes que se han agregado o eliminado tienen un recuadro verde.
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. En la barra de tareas, seleccione la subficha **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para ver la versión actual.
 
-## Deformación de tiempo  {#timewarp}
+## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
@@ -146,6 +150,7 @@ La versión de calendario se utiliza si quiere visualizar un día específico:
 
    * **Salir de Deformación de tiempo** para salir y volver a la página de creación actual.
    * [Mostrar línea de tiempo](#using-the-timewarp-timeline) para ver la línea de tiempo. 
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### Usar la línea de tiempo de Deformación de tiempo {#using-the-timewarp-timeline}
@@ -189,4 +194,4 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 
 >[!CAUTION]
 >
-> Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
+>Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.

@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 3%
 
 ---
 
 
 # Esenciales de mensajería {#messaging-essentials}
 
-Esta página documenta los detalles del trabajo con el componente Mensajería para incluir una función de mensajería en un sitio web.
+Esta página documentos los detalles de cómo trabajar con el componente Mensajería para incluir una función de mensajería en un sitio web.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -103,17 +106,16 @@ Consulte también Personalizaciones del lado del [cliente](client-customize.md)
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Por ejemplo:
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### Sitio de la comunidad {#community-site}
 
@@ -121,11 +123,11 @@ Una estructura de sitio de comunidad, creada con el asistente, incluirá la func
 
 ### Código de muestra: Notificación de mensaje recibido {#sample-code-message-received-notification}
 
-La característica Mensajería social desencadena eventos para operaciones, por ejemplo `send``marking read`, `marking delete`. Estos eventos se pueden capturar y realizar acciones en los datos contenidos en el evento.
+La característica Mensajería social emite eventos para operaciones, por ejemplo `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden tomar medidas sobre los datos contenidos en el evento.
 
-El ejemplo siguiente es el de un controlador de eventos que escucha el `message sent` evento y envía un correo electrónico a todos los destinatarios del mensaje mediante el `Day CQ Mail Service`.
+El siguiente ejemplo es un controlador de evento que escucha el `message sent` evento y envía un correo electrónico a todos los destinatarios de mensajes que utilizan el `Day CQ Mail Service`.
 
-Para probar la secuencia de comandos de ejemplo del lado del servidor, necesitará un entorno de desarrollo y la capacidad para crear un paquete OSGi.
+Para probar la secuencia de comandos de muestra del lado del servidor, necesitará un entorno de desarrollo y la capacidad de crear un paquete OSGi.
 
 1. Login as an administrator to ` [CRXDE|Lite](http://localhost:4502/crx/de)`
 1. Crear una `bundle node`entrada `/apps/engage/install` con nombres arbitrarios, como

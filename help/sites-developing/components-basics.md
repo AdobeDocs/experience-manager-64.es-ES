@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ Antes de empezar a configurar o codificar realmente el componente, debe pregunta
 Antes de cualquier inicio de debate serio sobre el desarrollo de componentes, debe saber qué IU usarán los autores:
 
 * **IU táctil**
-   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar que se introdujo en AEM 5.6.0 como previsualización y se amplió en 6.x. Se basa en la experiencia de usuario unificada de Adobe Marketing Cloud, que utiliza las tecnologías subyacentes de la interfaz de usuario [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la interfaz de usuario de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar que se introdujo en AEM 5.6.0 como previsualización y se amplió en 6.x. Se basa en la experiencia de usuario unificada para el Adobe Marketing Cloud, mediante las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Interfaz de usuario** clásica basada en la tecnología ExtJS que se introdujo con CQ 5.1.
 
@@ -69,9 +72,10 @@ Los componentes se pueden implementar para admitir la IU táctil, la IU clásica
 Por esta razón, en esta página trataremos los aspectos básicos de ambos, y cómo reconocerlos.
 
 >[!NOTE]
-> Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [Herramientas de moderación de AEM&amp; (moderniatzion-tools.md) puede facilitar la migración.
+>
+>Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [Herramientas de moderación de AEM&amp; (moderniatzion-tools.md) puede facilitar la migración.
 
-### Lógica de contenido y marcado de procesamiento {#content-logic-and-rendering-markup}
+### Lógica de contenido y marcado de procesamiento  {#content-logic-and-rendering-markup}
 
 Se recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
@@ -176,6 +180,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
       Definen elementos estáticos utilizados por el componente.
 
    * Secuencias de comandos:
+
    Se utilizan para implementar el comportamiento de la instancia resultante del componente.
 
 * **Nodo raíz**:
@@ -453,6 +458,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
 >
 >* Por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásica cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
 >* La herramienta [de conversión de](/help/sites-developing/dialog-conversion.md) cuadro de diálogo también se proporciona para ayudarle a ampliar o convertir componentes que solo tienen cuadros de diálogo definidos para la IU clásica.
+
 >
 
 
@@ -469,6 +475,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
 
          * Para los componentes listos para usar, esto a menudo hace referencia a una página de la documentación.
          * Si no `helpPath` se especifica ninguna, se muestra la dirección URL predeterminada (página de información general de la documentación).
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    En el cuadro de diálogo, se definen campos individuales:
@@ -487,6 +494,7 @@ Las definiciones de cuadro de diálogo son específicas de la interfaz de usuari
 
          * Para los componentes listos para usar, esto a menudo hace referencia a una página de la documentación.
          * Si no `helpPath` se especifica ninguna, se muestra la dirección URL predeterminada (página de información general de la documentación).
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    En el cuadro de diálogo, se definen campos individuales:
@@ -583,7 +591,7 @@ La configuración es común a la IU táctil y a la clásica, aunque con ciertas 
 
 El comportamiento de edición de un componente se configura agregando un `cq:editConfig` nodo de tipo `cq:EditConfig` debajo del nodo del componente (de tipo `cq:Component`) y agregando propiedades específicas y nodos secundarios. Están disponibles las siguientes propiedades y nodos secundarios:
 
-* [ Propiedades `cq:editConfig` del nodo](#configuring-with-cq-editconfig-properties):
+* [ `cq:editConfig` propiedades](#configuring-with-cq-editconfig-properties)del nodo:
 
    * `cq:actions` ( `String array`): define las acciones que se pueden realizar en el componente.
    * `cq:layout` ( `String`): :: define cómo se edita el componente en la IU clásica.

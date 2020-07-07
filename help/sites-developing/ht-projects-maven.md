@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -34,7 +34,7 @@ La creación de un proyecto de AEM basado en Maven le ofrece varias ofertas:
 * Facilidad de importación en un IDE; por ejemplo, Eclipse y/o IntelliJ
 * Fácil integración con sistemas de integración continua
 
-## Dependencias de la API de Experience Manager {#experience-manager-api-dependencies}
+## Dependencias de API de Experience Manager {#experience-manager-api-dependencies}
 
 ### ¿Qué es UberJar? {#what-is-the-uberjar}
 
@@ -100,7 +100,7 @@ Con UberJar, puede compilar código de proyecto que depende de las API de AEM (y
 
 ### ¿Qué no puedo hacer con UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Dado que UberJar **solo** contiene API, no es ejecutable y no se puede utilizar para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
+Dado que UberJar **solo** contiene API, no es ejecutable y no puede utilizarse para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
 
 ### Ha mencionado limitaciones en las pruebas unitarias. Por favor, explique más. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -553,6 +553,7 @@ Para lograr la eliminación de las clases compiladas desde los JSP, configuramos
 >
 >Por ejemplo: si incluye `/libs/foundation/global.jsp`, puede utilizar la siguiente configuración para el `maven-resources-plugin` en lugar de la configuración anterior, que se salta por completo `/libs`.
 >
+>
 ```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
@@ -672,8 +673,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Cómo trabajar con comunidades AEM {#how-to-work-with-aem-communities}
+### Cómo trabajar con AEM Communities {#how-to-work-with-aem-communities}
 
-Si dispone de una licencia para la función AEM Communities, se necesita un tarro de API adicional.
+Cuando dispone de una licencia para la función de AEM Communities, se necesita un tarro de API adicional.
 
 Para obtener más información, consulte [Uso de Maven para comunidades](/help/communities/maven.md)

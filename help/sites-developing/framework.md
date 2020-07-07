@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -260,14 +260,17 @@ A continuación se muestra una descripción de los efectos del repositorio al mo
 
 ## Migración de etiquetas {#tags-migration}
 
-Las etiquetas de Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que antes se almacenaban en `/etc/tags`. Sin embargo, en situaciones en las que Adobe Experience Manager se ha actualizado con respecto a la versión anterior, las etiquetas siguen estando presentes en la ubicación anterior `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse en `/content/cq:tags`.
+Las etiquetas Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que antes se almacenaban en `/etc/tags`. Sin embargo, en situaciones en las que se ha actualizado el Adobe Experience Manager de la versión anterior, las etiquetas siguen estando presentes en la ubicación anterior `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse en `/content/cq:tags`.
 
-> [!NOTE]
-> En la página Propiedades de la página de etiquetas, se recomienda utilizar el ID de la etiqueta (por ejemplo `geometrixx-outdoors:activity/biking`) en lugar de codificar la ruta de la base de etiquetas (por ejemplo, `/etc/tags/geometrixx-outdoors/activity/biking`).
-> Para las etiquetas de lista, `com.day.cq.tagging.servlets.TagListServlet` se puede utilizar.
+>[!NOTE]
+>
+>En la página Propiedades de la página de etiquetas, se recomienda utilizar el ID de la etiqueta (por ejemplo `geometrixx-outdoors:activity/biking`) en lugar de codificar la ruta de la base de etiquetas (por ejemplo, `/etc/tags/geometrixx-outdoors/activity/biking`).
+>
+>Para las etiquetas de lista, `com.day.cq.tagging.servlets.TagListServlet` se puede utilizar.
 
-> [!NOTE]
-> Se recomienda utilizar la API del administrador de etiquetas como recurso.
+>[!NOTE]
+>
+>Se recomienda utilizar la API del administrador de etiquetas como recurso.
 
 **Si la instancia de AEM actualizada admite la API de TagManager**
 
@@ -333,9 +336,9 @@ La secuencia de comandos obtiene todas las etiquetas que tienen `/etc/tags` en e
 
 **Si la instancia de AEM actualizada se ejecuta en la IU clásica**
 
-> [!NOTE]
-> La IU clásica no es compatible con cero tiempos de inactividad y no admite la nueva ruta de base de etiquetas. Si desea utilizar la IU clásica, debe `/etc/tags` crearla seguida de un reinicio `cq-tagging` del componente.
-
+>[!NOTE]
+>
+>La IU clásica no es compatible con cero tiempos de inactividad y no admite la nueva ruta de base de etiquetas. Si desea utilizar la IU clásica, debe `/etc/tags` crearla seguida de un reinicio `cq-tagging` del componente.
 
 En caso de que las instancias de AEM actualizadas sean compatibles con la API de TagManager y se ejecuten en la IU clásica:
 

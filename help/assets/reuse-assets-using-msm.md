@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Reutilización de recursos con MSM para recursos {#reuse-assets-using-msm-for-assets}
 
-La funcionalidad Multi Site Manager (MSM) de Adobe Experience Manager (AEM) permite a los usuarios reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que la funcionalidad MSM para recursos. Con MSM para recursos, puede:
+La funcionalidad Multi Site Manager (MSM) en Adobe Experience Manager (AEM) permite a los usuarios reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que la funcionalidad MSM para recursos. Con MSM para recursos, puede:
 
 * Cree recursos una vez y, a continuación, haga copias de estos recursos para reutilizarlos en otras áreas del sitio.
 * Mantenga varias copias en sincronización y actualice la copia primaria original una vez para insertar los cambios en las copias secundarias.
@@ -166,7 +166,7 @@ Después de modificar un origen, los cambios se pueden propagar a las copias en 
 Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas copias activas seleccionadas.
 
 1. Seleccione un recurso de Live Copy o una carpeta. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
-1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Click **[!UICONTROL Rollout]** from the toolbar.
 1. Seleccione las copias activas que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**.
 1. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione Origen de **[!UICONTROL despliegue y Todos los elementos secundarios]**.
    ![Despliegue las modificaciones del origen en unas pocas o todas las Live Copies](assets/lc_rollout_page.png)
@@ -253,9 +253,9 @@ AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para Re
 
 >[!NOTE]
 >
-> * El modelo en MSM para el sitio se denomina fuente Live Copy en MSM para los recursos.
-> * La eliminación del paso de capítulos en el asistente para crear sitios no se admite en MSM para recursos.
-> * La configuración de bloqueos MSM en propiedades de página (IU táctil) no es compatible con MSM para recursos.
+>* El modelo en MSM para el sitio se denomina fuente Live Copy en MSM para los recursos.
+>* La eliminación del paso de capítulos en el asistente para crear sitios no se admite en MSM para recursos.
+>* La configuración de bloqueos MSM en propiedades de página (IU táctil) no es compatible con MSM para recursos.
 
 
 ## Efectos de las tareas de gestión de activos en las copias en vivo {#impact-of-asset-management-tasks-on-live-copies}

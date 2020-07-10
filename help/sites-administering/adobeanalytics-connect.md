@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1556'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Para rastrear datos web de sus páginas de AEM en Adobe Analytics, cree una conf
 * **Configuración de Adobe Analytics:** La información sobre su cuenta de Adobe Analytics. La configuración de Adobe Analytics permite que AEM se conecte a Adobe Analytics. Cree una configuración de Adobe Analytics para cada cuenta que utilice.
 * **Adobe Analytics Framework:** Un conjunto de asignaciones entre las propiedades del grupo de informes de Adobe Analytics y las variables de CQ. Utilice un marco para configurar la forma en que los datos del sitio web rellenan los informes de Adobe Analytics. Los marcos están asociados a una configuración de Adobe Analytics. Puede crear varios marcos para cada configuración.
 
-Cuando se asocia una página Web con un marco, el marco realiza el seguimiento de esa página y de los descendientes de dicha página. Las vistas de página se pueden recuperar de Adobe Analytics y mostrar en la consola Sitios.
+Cuando se asocia una página web con un marco, el marco realiza el seguimiento de esa página y de los descendientes de dicha página. Las vistas de página se pueden recuperar de Adobe Analytics y mostrar en la consola Sitios.
 
 ## Requisitos previos {#prerequisites}
 
@@ -44,11 +44,11 @@ La cuenta de Adobe Analytics debe:
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesión en Adobe Analytics. Mediante:
+Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesión en Adobe Analytics mediante uno de los siguientes métodos:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Inicio de sesión de Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Inicio de sesión de Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuración de AEM para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 

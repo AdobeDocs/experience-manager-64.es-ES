@@ -7,9 +7,9 @@ uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1635'
 ht-degree: 2%
 
 ---
@@ -100,17 +100,19 @@ Antes de empezar a instalar y configurar el flujo de trabajo centrado en formula
 
 El paquete de complemento AEM Forms es una aplicación implementada en AEM. El paquete contiene un flujo de trabajo centrado en Forms en OSGi y otras funciones. Realice los siguientes pasos para instalar el paquete de complemento:
 
-1. Inicie sesión en el servidor [de](http://localhost:4502) AEM como administrador y abra el recurso compartido [de](http://localhost:4502/crx/packageshare)paquetes. Necesita un Adobe ID para iniciar sesión en el recurso compartido de paquetes.
-1. En Uso compartido [de paquetes de](http://localhost:4502/crx/packageshare/login.html)AEM, busque los paquetes de complementos de formularios de **AEM 6.4** o los **paquetes** de servicios más recientes, haga clic en el paquete aplicable a su sistema operativo y, a continuación, haga clic en **Descargar**. Lea y acepte el contrato de licencia y haga clic en **Aceptar**. Los inicios de descarga. Una vez descargado, la palabra **Descargado** aparece junto al paquete.
+1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
+1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. En la sección **[!UICONTROL Filtros]** :
+   1. Seleccione **[!UICONTROL Formularios]** en la lista desplegable **[!UICONTROL Solución]** .
+   2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
+1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos]** del EULA y toque **[!UICONTROL Descargar]**.
+1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   También puede utilizar el número de versión para buscar un paquete de complemento. Para ver el número de versión del paquete más reciente, consulte el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
-
-1. Una vez finalizada la descarga, haga clic en **Descargado**. Se le redirige al administrador de paquetes. En el administrador de paquetes, busque el paquete descargado y haga clic en **Instalar**.
-
-   Si descarga manualmente el paquete mediante el vínculo directo que aparece en el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms, inicie sesión en el administrador de paquetes, haga clic en **Cargar paquete**, seleccione el paquete descargado y haga clic en cargar. Después de cargar el paquete, haga clic en el nombre del paquete y, a continuación, en **Instalar.**
+   También puede descargar el paquete a través del vínculo directo que aparece en el artículo de versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms.
 
 1. Después de instalar el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTER dejen de aparecer en el archivo [AEM-Installation-Directory]/crx-quickstart/logs/error.log y el registro sea estable.
-1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación.
+1. Repita los pasos del 1 al 7 en todas las instancias de Autor y Publicación.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
 
@@ -149,7 +151,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 1. Abra AEM Configuration Manager en una ventana del explorador. La dirección URL predeterminada es `https://[server]:[port]/system/console/configMgr`.
 1. Busque y abra **Deserialization Firewall Configuration**.
-1. Añada el paquete **sun.util.calendar** al campo **allowlist** . Haga clic en Guardar.
+1. Añada el paquete **sun.util.calendar** al campo de **lista de permitidos** . Haga clic en Guardar.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación.
 
 ### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
@@ -168,7 +170,7 @@ Dispatcher está utilizando la herramienta de almacenamiento en caché y equilib
 
 1. Configure el servicio de filtros de remitente del reenvío:
 
-   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es `https://[server]:[port_number]/system/console/configMgr`. En el menú **Configuraciones** , seleccione la opción Filtro **de Remitente del reenvío Sling de** Apache. En el campo Permitir hosts, escriba el nombre de host del despachante para que se pueda utilizar como remitente del reenvío y haga clic en **Guardar**. El formato de la entrada es `https://[server]:[port]`.
+   Inicie sesión en el administrador de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es `https://[server]:[port_number]/system/console/configMgr`. En el menú **Configuraciones** , seleccione la opción Filtro **de Remitente del reenvío Sling de** Apache. En el campo Permitir hosts, escriba el nombre de host del despachante para que se pueda utilizar como remitente del reenvío y haga clic en **Guardar**. The format of the entry is `https://[server]:[port]`.
 
 #### Configurar caché {#configure-cache}
 

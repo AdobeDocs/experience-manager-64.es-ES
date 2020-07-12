@@ -1,21 +1,24 @@
 ---
-title: Temas de referencia
-seo-title: Temas de referencia
-description: 'AEM Forms proporciona temas de formularios adaptables que puede obtener del uso compartido de paquetes y utilizar para aplicar estilo a un formulario. '
-seo-description: 'AEM Forms proporciona temas de formularios adaptables que puede obtener del uso compartido de paquetes y utilizar para aplicar estilo a un formulario. '
+title: Temáticas de referencia
+seo-title: Temáticas de referencia
+description: 'AEM Forms proporciona temáticas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario. '
+seo-description: 'AEM Forms proporciona temáticas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario. '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
 
-# Temas de referencia {#reference-themes}
+# Temáticas de referencia {#reference-themes}
 
-[Los temas](/help/forms/using/themes.md) le permiten aplicar estilo a sus formularios sin tener un conocimiento profundo de CSS. Además del tema predeterminado, puede obtener los siguientes temas instalando el paquete [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[Las Temáticas](/help/forms/using/themes.md) permiten aplicar estilo a los formularios sin tener un conocimiento profundo de CSS. Además del tema predeterminado, puede obtener las siguientes temáticas instalando el paquete [AEM-FORMS-6.3-REFERENCE-TEMÁTICAS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * Beryl
 * Exec
@@ -26,11 +29,11 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 * Estándares de diseño web de EE.UU.
 * Tranquilo
 
-Cada tema contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo exclusivo para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. Los apósitos en estos temas se basan en requisitos. Por ejemplo, en un escenario concreto se requiere un tema minimalista con fuentes limpias. El tema de la libertad te permite lograr ese aspecto.
+Cada tema contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo exclusivo para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. Las torceduras de estas temáticas se basan en el requisito. Por ejemplo, en un escenario concreto se requiere un tema minimalista con fuentes limpias. El tema de la libertad te permite lograr ese aspecto.
 
-![Temas de referencia](assets/ref-themes.png)
+![Temáticas de referencia](assets/ref-themes.png)
 
-Los temas incluidos en este paquete responden y el estilo de estos temas se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de una variedad de dispositivos pueden procesar formularios aplicados con uno de estos temas sin problemas.
+Las Temáticas incluidas en este paquete responden y el estilo de estas temáticas se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de diversos dispositivos pueden procesar formularios aplicados con una de estas temáticas sin ningún problema.
 
 Para obtener más información sobre la instalación del paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
@@ -48,7 +51,7 @@ El tema Exec evita los rellenos de fondo sólido para enfatizar los componentes 
 
 ## Luz Exec {#exec-light}
 
-El tema Exec Light utiliza el espacio en blanco para crear una experiencia sin fisuras. Los botones Siguiente y Enviar obtienen un relleno sólido y una sombra 3D. Las fichas seleccionadas a la izquierda tienen una flecha en lugar de marcas de doble comprobación.
+El tema Exec Light utiliza el espacio en blanco para crear una experiencia sin fisuras. Los botones Siguiente y Enviar obtienen un relleno sólido y una sombra 3D. Las fichas seleccionadas a la izquierda tienen una flecha en lugar de marcas de verificación de doble.
 ![Tema de luz de Excel](assets/exec-light.png)
 
 [Haga clic para ampliar](assets/exec-light-1.png)

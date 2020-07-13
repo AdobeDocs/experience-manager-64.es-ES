@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ El paquete de Livefyre de AEM proporciona una implementación lista para usar, m
 
 ### Integración de AEM {#aem-integration}
 
-El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Para ver qué aplicaciones de Livefyre son compatibles, consulte la matriz de compatibilidad de [AEM para aplicaciones](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)de Livefyre.
+Para ver qué aplicaciones de Livefyre son compatibles, consulte la matriz de compatibilidad de [AEM para aplicaciones](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)de Livefyre.
 
 ### Implementación tradicional (para componentes personalizados de AEM) {#traditional-implementation-for-customized-aem-components}
 
@@ -65,7 +65,7 @@ Asegúrese de seguir las directrices de visualización de [Twitter](https://deve
 
 Para integraciones de Media Wall que requieren autenticación, consulte:
 
-* [Personalización de la integración](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
+* [Personalización de la integración](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
 * [Integración](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) de identidad para plataformas de autenticación de terceros
 
 ### Información general de caso de uso {#use-case-overview}
@@ -74,9 +74,9 @@ Como cliente de AEM, deseo depurar UGC mediante los componentes integrados de Li
 
 Pasos para implementar:
 
-1. [Introducción](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Configuración de AEM para utilizar Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Arrastre y suelte el componente AEM Media Wall en la página](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [Introducción](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Configuración de AEM para utilizar Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Arrastre y suelte el componente AEM Media Wall en la página](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [Configurar flujos y agregar reglas para conservar UGC y mostrarlas en el componente Media Wall](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
 
 Para ver vídeos de formación sobre la transmisión por secuencias UGC, consulte [Creación de flujos de contenido automáticos y Búsqueda de contenido social en Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
@@ -97,7 +97,7 @@ Para las aplicaciones de Livefyre que requieren autenticación, consulte Integra
 
 ### Integración de AEM {#aem-integration-1}
 
-El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### Implementación tradicional (para componentes personalizados de AEM) {#traditional-implementation-for-customized-aem-components-1}
 
@@ -129,7 +129,7 @@ Para obtener personalizaciones avanzadas con el SDK, consulte SDK [de StreamHub]
 
 ### Integración de autenticación de aplicación de comentarios {#comments-app-authentication-integration}
 
-* [Personalización de la integración](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
+* [Personalización de la integración](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
 * [Integración](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) de identidad para plataformas de autenticación de terceros
 
 ### Ejemplos de clientes {#customer-examples-1}
@@ -152,9 +152,9 @@ Para obtener personalizaciones avanzadas con el SDK, consulte SDK [de StreamHub]
 
 **Configuración de AEM (para importar UGC a AEM Assets):**
 
-1. [Introducción](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [Configuración de AEM para utilizar Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Importar UGC depurado por Livefyre a AEM Assets](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [Introducción](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [Configuración de AEM para utilizar Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [Importar UGC depurado por Livefyre a AEM Assets](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [Turismo Australia](https://www.australia.com/en-us)
 
@@ -162,9 +162,9 @@ Para obtener personalizaciones avanzadas con el SDK, consulte SDK [de StreamHub]
 
 ### Integración de AEM {#aem-integration-2}
 
-El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+El paquete de Adobe Experience Manager Livefyre está disponible para AEM 6.1, 6.2SP1, 6.3, ,6.4 y 6.4 SP1. AEM 5.x y 6.0 no son compatibles. Para obtener instrucciones detalladas, consulte [Integración con Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-El componente Reseñas no es un componente compatible con AEM 6.1. Compruebe la matriz de asistencia de [AEM para todas las aplicaciones](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)de Livefyre.
+El componente Reseñas no es un componente compatible con AEM 6.1. Compruebe la matriz de asistencia de [AEM para todas las aplicaciones](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)de Livefyre.
 
 ### Implementación tradicional (para componentes personalizados de AEM) {#traditional-implementation-for-customized-aem-components-2}
 
@@ -191,7 +191,7 @@ Las API de Clasificaciones y críticas adicionales se pueden encontrar [aquí](h
 
 ### Integración de autenticación de aplicación de comentarios {#comments-app-authentication-integration-1}
 
-* [Personalización de la integración](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
+* [Personalización de la integración](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) de inicio de sesión único para AEM Identity Management
 * [Integración](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) de identidad para plataformas de autenticación de terceros
 
 ### Ejemplos de clientes {#customer-examples-2}

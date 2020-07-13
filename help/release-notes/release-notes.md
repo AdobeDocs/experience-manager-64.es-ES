@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 25%
 
 ---
@@ -290,7 +290,7 @@ Más detalles en la página de notas de la versión de [AEM Forms](forms.md) . A
 
 Puede integrar Livefyre con su instancia de AEM 6.4. En esta página encontrará más información sobre cómo integrar Livefyre con AEM:
 
-* [Integración de Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [Integración de Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### Aprovechar el desarrollo centrado en el cliente {#leverage-customer-focused-development}
 

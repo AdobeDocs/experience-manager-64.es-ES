@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 55%
+source-wordcount: '1723'
+ht-degree: 54%
 
 ---
 
@@ -139,7 +139,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 #### Procedimiento para enviar vídeo seguro {#how-to-delivery-secure-video}
 
-En AEM 6.2, cuando instala [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se entrega sobre una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Del mismo modo, si la página web se carga sobre HTTP, el vídeo se envía sobre HTTP. En la mayoría de los casos, el comportamiento predeterminado es adecuado y no hace falta realizar cambios en la configuración. Sin embargo, puede sustituir este comportamiento predeterminado si anexa `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración de visor en un fragmento de código integrado para forzar el envío de vídeo seguro.
+En AEM 6.2, cuando instala [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se entrega sobre una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Del mismo modo, si la página web se carga sobre HTTP, el vídeo se envía sobre HTTP. En la mayoría de los casos, el comportamiento predeterminado es adecuado y no hace falta realizar cambios en la configuración. Sin embargo, puede sustituir este comportamiento predeterminado si anexa `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración de visor en un fragmento de código integrado para forzar el envío de vídeo seguro.
 
 Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visor de vídeo, el envío de vídeo seguro está disponible para el visor de medios mixtos y el visor de vídeo interactivo.
 

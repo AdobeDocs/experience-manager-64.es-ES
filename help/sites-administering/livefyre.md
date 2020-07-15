@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1652'
 ht-degree: 4%
 
 ---
@@ -39,22 +39,13 @@ AEM 6.4 incluye el paquete de funciones 1.2.6 de Livefyre preinstalado. Este paq
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Vuelva a la página principal de AEM, haga clic en Herramientas y, a continuación, vaya a **Implementación > Uso compartido** de paquetes.
+1. Descargue el paquete Livefyre de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   Se muestra una lista de paquetes de funciones y revisiones disponibles para la descarga.
-
-1. En la búsqueda de palabras clave, busque &quot;Livefyre&quot; y, a continuación, seleccione el paquete de funciones de Livefyre correspondiente a su versión de AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. En la página de información del paquete de funciones, haga clic en **Descargar**, luego lea el Contrato de licencia del paquete y haga clic en **Aceptar**.
-1. Vuelva al Administrador de paquetes, localice el paquete recién descargado y haga clic en **Instalar**.
+1. En el Administrador de paquetes, instale el paquete descargado. Para obtener instrucciones sobre cómo utilizar la distribución de software y los paquetes en AEM, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Ya está instalado el paquete Livefyre-AEM. Antes de empezar a utilizar las funciones de integración, debe configurar AEM para que utilice Livefyre.
-
-   Para obtener más información sobre los paquetes, consulte [Cómo trabajar con paquetes](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    Para obtener más información y notas de la versión sobre los paquetes de funciones, consulte [Feature Packs](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 

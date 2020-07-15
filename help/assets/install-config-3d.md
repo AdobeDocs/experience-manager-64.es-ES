@@ -10,7 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -78,21 +81,19 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 1. Realice una de las acciones siguientes:
 
    * Si se trata de una implementación de Windows Server, inicie sesión en el servidor como Administrador.
-   * Si se trata de un escritorio de Mac o Windows, asegúrese de que dispone de privilegios de administrador.
+   * Si se trata de un escritorio de Mac o Windows, asegúrese de tener privilegios de administrador.
 
 1. Asegúrese de que dispone de un navegador compatible para acceder a AEM.
 
-   Consulte Requisitos [del](/help/release-notes/aem3d-release-notes.md#system-requirements)sistema.
+   Consulte Requisitos [del sistema](/help/release-notes/aem3d-release-notes.md#system-requirements).
 
-1. Con un navegador compatible, inicie sesión en AEM con privilegios de administrador.
-1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL Administración > Implementación > Uso compartido]** de paquetes.
-1. En la página de Adobe, utilice sus credenciales de Adobe ID para iniciar sesión en su cuenta de Adobe Creative Cloud.
-1. En la página de paquetes de Adobe, busque la versión 3.0.1 del paquete de `AEM-6.4-DynamicMedia-3D` funciones y, a continuación, descárguelo.
+1. Acceda al portal [de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Busque la versión 3.0.1 del paquete de `AEM-6.4-DynamicMedia-3D` funciones y descárguelo.
 
 1. En AEM, haga clic en **[!UICONTROL Herramientas > Administración > Implementación > Administrador]** de paquetes.
-1. Busque el paquete de funciones descargado y haga clic en **[!UICONTROL Instalar]**.
 
-1. En el cuadro de diálogo **[!UICONTROL Instalar paquete]** , expanda Configuración **** avanzada y, a continuación, defina Gestión **[!UICONTROL de control de]** acceso en **Combinar**.
+1. Cargue el paquete de funciones descargado en AEM. Localícela y haga clic en **[!UICONTROL Instalar]**.
+
+1. En el cuadro de diálogo **[!UICONTROL Instalar paquete]** , expanda Configuración **** avanzada y, a continuación, defina Gestión **[!UICONTROL de]** Controles de acceso en **Combinar**.
 1. Haga clic en **[!UICONTROL Instalar]** para iniciar la instalación del paquete.
 
    El archivo `sample-3D-content.zip` se coloca en la carpeta raíz de **[!UICONTROL Recursos]** . Consulte [Validación de la configuración de AEM 3D](#validating-the-setup-of-aem-d) para obtener más información.
@@ -110,7 +111,7 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
 
-1. Haga doble clic en el paso del proceso recientemente agregado.
+1. Haga clic con el Doble en el paso del proceso recientemente agregado.
 1. En el cuadro de diálogo Propiedades **[!UICONTROL del]** paso, en la ficha **[!UICONTROL Común]** , en el campo **[!UICONTROL Título]** , introduzca una descripción adecuada para el proceso como, por ejemplo, `Process 3D content`.
 1. Click the **[!UICONTROL Process]** tab.
 
@@ -130,7 +131,7 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
 1. En AEM, haga clic en **[!UICONTROL Herramientas > Recursos]**, descargue `sample-3D-content.zip`y expanda el archivo descargado. (Ahora puede eliminar `sample-3D-content.zip` en AEM).
 
-   Asegúrese de que se encuentra en la Vista **[!UICONTROL de]** tarjeta para ver los comentarios de carga y procesamiento en los pasos restantes.
+   Asegúrese de que se encuentra en la Vista **[!UICONTROL de]** tarjetas para cargar vistas y procesar comentarios en los pasos restantes.
 
 1. Cree una carpeta con el nombre `test3d` para recibir contenido de prueba.
 1. Cargue todos los archivos desde `sample-3D-content/images` a la `test3d` carpeta.
@@ -140,9 +141,9 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    Aún no cargue los archivos del modelo .ma.
 
-1. En la vista de tarjeta, observe los letreros de mensaje que se muestran en las tarjetas de recursos 3D.
+1. En la Vista Tarjeta, observe los letreros de mensaje que se muestran en las tarjetas de recursos 3D.
 
-   Cada recurso se procesa mediante varios pasos. **[!UICONTROL Cuando se]** está creando la vista previa... el paso de procesamiento finaliza y la tarjeta se actualiza con una imagen en miniatura. Una vez finalizado el procesamiento final, la pancarta se sustituye por el indicador **[!UICONTROL NUEVO]** .
+   Cada recurso se procesa mediante varios pasos. Cuando la Previsualización **[!UICONTROL Creando...]** el paso de procesamiento finaliza y la tarjeta se actualiza con una imagen en miniatura. Una vez finalizado el procesamiento final, la pancarta se sustituye por el indicador **[!UICONTROL NUEVO]** .
 
    >[!NOTE]
    >
@@ -160,12 +161,12 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-1. Haga clic en **[!UICONTROL Guardar]** y **[!UICONTROL Cerrar]** para finalizar el procesamiento del recurso y volver a la vista **[!UICONTROL de]** tarjeta, respectivamente.
-1. Una vez completado el procesamiento, verá lo siguiente en la Vista **** de tarjeta:
+1. Haga clic en **[!UICONTROL Guardar]** y **[!UICONTROL Cerrar]** para finalizar el procesamiento del recurso y volver a la Vista **[!UICONTROL de]** tarjeta, respectivamente.
+1. Una vez completado el procesamiento, verá lo siguiente en la Vista **** de tarjetas:
 
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
-1. En la página test3d, haga clic en la `logo-sphere.fbx` tarjeta para abrir el modelo en la vista **[!UICONTROL de]** detalles.
+1. En la página test3d, haga clic en la `logo-sphere.fbx` tarjeta para abrir el modelo en la Vista **[!UICONTROL de]** detalles.
 
    Cerca de la esquina superior derecha de la página logo-esfera.fbx, haga clic en el icono de Elementos destacados del escenario para expandir el menú desplegable y, a continuación, seleccione `stage-spotlights.fbx`.
 
@@ -185,11 +186,11 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
 Opcionalmente, puede configurar la compatibilidad con AEM 3D para los recursos de dimensión de Adobe.
 
-Debe configurar un servicio de conversión externo para permitir la ingestión, vista previa y publicación de recursos de Adobe Dimension 3D en AEM. El servicio convierte del formato exclusivo de Adobe Dimension (`.dn`) a una variante de glTF (formateada como un `.glb` archivo) que se guarda con el recurso Dn como una representación. La `.glb` representación se utiliza para la visualización basada en web del recurso 3D en Recursos, Sitios y Pantallas de AEM, y también se puede descargar para su uso con aplicaciones de terceros.
+Debe configurar un servicio de conversión externo para permitir la ingestión, previsualización y publicación de recursos de Adobe Dimension 3D en AEM. El servicio convierte del formato exclusivo de Adobe Dimension (`.dn`) a una variante de glTF (formateada como un `.glb` archivo) que se guarda con el recurso Dn como una representación. La `.glb` representación se utiliza para la visualización basada en web del recurso 3D en AEM Assets, sitios y pantallas, y también está disponible para su descarga con aplicaciones de terceros.
 
 >[!NOTE]
 >
->Adobe aloja el servicio de conversión en Amazon AWS. Después de configurar correctamente el servicio, `.dn` los archivos cargados en AEM se copian de forma segura en el servicio de conversión mediante almacenamiento temporal en Amazon S3. El resultado de la conversión se transfiere de nuevo a AEM mediante el almacenamiento temporal S3. Todas las transferencias y el almacenamiento están garantizados. Además, el contenido persiste en S3 y el servicio de conversión solo se mantiene brevemente (normalmente no más de unos minutos).
+>Adobe aloja el servicio de conversión en Amazon AWS. Después de configurar correctamente el servicio, `.dn` los archivos cargados en AEM se copian de forma segura en el servicio de conversión mediante almacenamiento temporal en Amazon S3. El resultado de la conversión se transfiere de nuevo a AEM mediante el almacenamiento temporal S3. Todas las transferencias y los almacenamientos están garantizados. Además, el contenido persiste en S3 y el servicio de conversión solo se mantiene brevemente (normalmente no más de unos minutos).
 
 **Para configurar la compatibilidad con los recursos** de dimensión de Adobe:
 
@@ -232,15 +233,16 @@ Debe configurar un servicio de conversión externo para permitir la ingestión, 
 
 1. Valide la configuración haciendo lo siguiente:
 
-   1. Abra Recursos AEM.
+   1. Abra AEM Assets.
    1. Cargar `logo_sphere.dn` en la `test3d` carpeta. El archivo se encuentra en `sample-3D-content/models`.
 
       Tenga en cuenta que `sample-3D-content.zip` se ha descargado anteriormente para validar la funcionalidad 3D básica.
-   1. Vuelva a la vista **[!UICONTROL de]** tarjeta y observe la pancarta del mensaje que se muestra en el recurso cargado. **[!UICONTROL El formato de]** conversión... la pancarta se muestra mientras el proceso de conversión está en curso.
-   1. Una vez completado el procesamiento, abra el recurso en la vista **[!UICONTROL de]** detalles para comprobar que el recurso convertido se muestra correctamente y que los controles de navegación del visor se pueden utilizar.
+   1. Vuelva a la Vista **[!UICONTROL de]** tarjeta y observe la pancarta del mensaje que se muestra en el recurso cargado. El formato de **[!UICONTROL conversión...]** la pancarta se muestra mientras el proceso de conversión está en curso.
+   1. Una vez completado el procesamiento, abra el recurso en la Vista **[!UICONTROL de]** detalles para comprobar que el recurso convertido se muestra correctamente y que los controles de navegación del visor se pueden utilizar.
+
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Si aparece un &quot;Error de procesamiento&quot; en el recurso Dn en la vista **[!UICONTROL de]** tarjeta después de 10-15 minutos, la conversión fallará.
+   Si se muestra un &quot;Error de procesamiento&quot; en el recurso Dn en la Vista **[!UICONTROL de]** tarjeta después de 10-15 minutos, se producirá un error en la conversión.
 
    En ese caso, puede solucionar los problemas de la conversión haciendo lo siguiente:
 

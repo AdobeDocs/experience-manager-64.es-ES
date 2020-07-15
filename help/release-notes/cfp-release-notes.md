@@ -4,10 +4,10 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 22%
+source-wordcount: '2119'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 | Tipo | Paquete de correcciones acumulativas |
 | Fecha | 04 de junio de 2020 |
 | Requisitos previos | [Paquete de servicio 8 de AEM 6.4 (6.4.8.0)](sp-release-notes.md) |
-| Descargar URL | AEM 6.4.8.1 en [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1), distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| Descargar URL | AEM 6.4.8.1 en distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## Novedades de AEM 6.4.8.1 {#what-s-included-in-aem}
 
@@ -48,13 +48,13 @@ Adobe Experience Manager 6.4.8.1 proporciona correcciones a los siguientes probl
 * Cuando la opción Coral.Select establece emptyOption=true o contiene un elemento predeterminado con valor = &quot;&quot;, el archivo dropdownshowhide.js encuentra un error: Error TypeError no capturado: component.getValue no es una función (NPR-33163).
 * Cuando un componente incluye otro componente como recurso de suavizado de datos, el marcador de posición del componente de contenedor principal se reemplaza por el marcador de posición de componentes internos (NPR-33119).
 * Cuando se basa un fragmento de contenido en un esquema y contiene un área de texto obligatoria o un campo de ruta, el fragmento de contenido no se guarda (NPR-33007)
-* Al crear un componente personalizado con el componente de fragmento de experiencia incorporado y utilizarlo en páginas de sitios de AEM, AEM no muestra referencias (uso) para el componente personalizado (NPR-32852).
-* Cuando una página Sitios de AEM forma parte de un conjunto de contenido grande con varias copias en vivo, la previsualización del historial de versiones de la página no se carga (NPR-32772).
+* Al crear un componente personalizado con el componente de fragmento de experiencia incorporado y utilizarlo en páginas de AEM Sites, AEM no muestra referencias (uso) para el componente personalizado (NPR-32852).
+* Cuando una página de AEM Sites forma parte de un conjunto de contenido grande con varias Live Copies, la previsualización del historial de versiones de la página no se carga (NPR-32772).
 * Cuando promociona un lanzamiento, agrega la combinación &quot;cq:LiveRelationship&quot; a todos los componentes agregados en el lanzamiento. Afecta a todos los lanzamientos independientemente de si se crea un lanzamiento con o sin seleccionar el —  Heredar datos activos de la página de origen —  (NPR-32664).
 * Cuando se producen inicios de paginación, el selector de fragmentos de experiencia no carga todos los elementos (NPR-32605).
-* No se puede crear un inicio para una página Sitios de AEM. La creación de inicios produce un error (NPR-32544).
+* No se puede crear un inicio para una página de AEM Sites. La creación de inicios produce un error (NPR-32544).
 * Administrar publicación no incluye los recursos a los que se hace referencia en la solicitud de flujo de trabajo de activación (NPR-32463).
-* La comprobación de estado del despachante muestra `Invalid cookie header` un mensaje de advertencia en los archivos de registro (NPR-33630).
+* La comprobación de estado de Dispatcher muestra `Invalid cookie header` un mensaje de advertencia en los archivos de registro (NPR-33630).
 
 ### Assets {#assets-6481}
 
@@ -149,11 +149,11 @@ Adobe Experience Manager 6.4.8.1 proporciona correcciones a los siguientes probl
 
 Siga estos pasos para instalar el paquete de correcciones acumulativas en una instancia de AEM 6.4.8.0 existente:
 
-1. Haga clic en el vínculo [Uso compartido](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) de paquetes o Distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) para descargar el paquete.
+1. Haga clic en el vínculo [Distribución](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) de software para descargar el paquete.
 
-1. Abra el Administrador [de paquetes](http://localhost:4502/crx/packmgr/index.jsp) y haga clic en **Cargar paquete** para cargar el paquete.
+1. Abra el Administrador [de paquetes](http://localhost:4502/crx/packmgr/index.jsp) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 
-1. Seleccione el nombre del paquete y haga clic en **Instalar**.
+1. Seleccione el nombre del paquete y haga clic en **[!UICONTROL Instalar]**.
 
 >[!NOTE]
 >
@@ -179,14 +179,14 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 1. Todos los paquetes OSGI tienen el valor ACTIVO o FRAGMENTO en la consola OSGI (utilice la consola web:/system/console/bundles).
 1. El paquete OSGI org.apache.jackrabbit.oak-core está en la versión 1.8.17 o superior (utilice la consola web: /system/console/buncles).
 
-Para determinar la plataforma certificada para la ejecución con esta versión de Recursos y Sitios de AEM, consulte Requisitos [técnicos](../sites-deploying/technical-requirements.md).
+Para determinar la plataforma certificada para la ejecución con esta versión de AEM Sites y recursos, consulte Requisitos [técnicos](../sites-deploying/technical-requirements.md).
 
 >[!Note]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Actualización de visores de Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1 contiene una nueva versión de visores de Dynamic Media (5.10.1) que permite comprobar los nombres de duplicados en la página Ajustes preestablecidos de imagen. Se aconseja a los clientes de Dynamic Media que ejecuten el siguiente comando para actualizar los ajustes preestablecidos del visor del equipo.
+<p id="Dynamic">AEM 6.4.8.1 contiene una nueva versión de los visores de Dynamic Media (5.10.1) que permite comprobar los nombres de los duplicados en la página Ajustes preestablecidos de imagen. Se recomienda a los clientes de Dynamic Media que ejecuten el siguiente comando para actualizar los ajustes preestablecidos del visor de la caja.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | Versión | 6.4.8.0 |
 | Tipo | Versión de Service Pack |
 | Fecha | 05 de marzo de 2020 |
-| Descargar URL | AEM 6.4.8.0 en [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| Descargar URL | AEM 6.4.8.0 en distribución [de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Novedades de AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -795,7 +795,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * El movimiento de una carpeta desde siteadmin termina en memoria insuficiente y hace que AEM no esté disponible. NPR-28346: revisión para CQ-4261398
 * Las configuraciones de despliegue de LiveCopy de MSM se pierden tras la actualización. NPR-28311: revisión para CQ-4258705
 * No se puede desplazar más allá de las 40 configuraciones de modelo. NPR-27640: revisión para CQ-4239166
-* El uso de SyneticResource como referencia genera una excepción de puntero nulo y bloquea el movimiento de las páginas.  NPR-27576: revisión para CQ-4258262
+* El uso de SyneticResource como referencia produce una excepción de puntero nulo y bloquea el movimiento de las páginas.  NPR-27576: revisión para CQ-4258262
 * PushOnModify no funciona en la eliminación de instancias actualizadas de 6.1 a 6.4. NPR-28108: revisión para CQ-4259833
 * (IU clásica) Falta el botón Cancelar herencia y el componente se puede editar en una página de Live Copy. NPR-28256: revisión para CQ-4260161
 * OakState0001: Conflictos sin resolver en el despliegue. NPR-27982: revisión para CQ-4259548
@@ -1076,7 +1076,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 * Cuando el editor de texto enriquecido se combina con varios campos, se produce el error Uncaught TypeError: fieldAPI.getName is not a function at foundation.js. NPR-27146: revisión para CQ-4253155
 * La integración de Salesforce no puede utilizar la configuración proxy. NPR-27244: revisión para CQ-4245300
 * Al programar una página para su activación mediante la opción Administrar publicación para una fecha posterior y cambiar a la vista de lista, falta el icono de calendario. NPR-26974: revisión para CQ-4239206
-* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089No se pueden editar etiquetas mediante el etiquetado. NPR-26957: revisión para CQ-4254858
+* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión para CQ-4254858
 * Cuando se mueve una etiqueta a la que se hace referencia desde un modelo de fragmento de contenido estructurado, las referencias existentes a la etiqueta dentro de un fragmento de contenido no se actualizan. Esto sucede en la pantalla de edición del modelo de fragmento de contenido. NPR-26776: revisión para CQ-4251805
 * Al crear y promocionar un lanzamiento con varias páginas, se crean varias versiones para cada página. NPR-26917: revisión para CQ-4254663
 * AEM siteadmin no gestiona las rutas escritas en la barra de direcciones del navegador. NPR-26780: revisión para CQ-4254097
@@ -1620,7 +1620,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 **Formularios adaptables**
 
 * Enviar acción como enviar correo emite una excepción con los campos CC/BC en blanco. NPR-25019: revisión para CQ-4243039
-* No se puede usar el componente de formulario AEM OTB debido a una consulta ineficiente. NPR-25065: revisión para CQ-4247256
+* No se puede usar el componente de formulario AEM de OOTB debido a una consulta ineficiente. NPR-25065: revisión para CQ-4247256
 * Elimine sling:orderBefore de los nodos de diálogo de guideImageChoiceComponent. Revisión para CQ-4245013
 * (Selector de fecha) El patrón de edición no admite dos tipos de patrones de marca de hora. Revisión para CQ-4237982
 * Envíe una acción mediante problemas de creación de Forms Workflow Classic. Revisión para CQ-4236981
@@ -1877,7 +1877,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Al obtener una vista previa de un vídeo en la vista de una tarjeta, el botón de reproducción no cambia a pausa. Revisión para CQ-4238592
 * Al realizar una actualización de inclusión, la configuración de YouTube no se mueve ni copia de su ubicación antigua a la nueva ubicación. Revisión para CQ-4238590
 * DropDos Perfiles de procesamiento de vídeo AVS de OOTB se enumeran en Propiedades de carpeta y solo uno contiene codificaciones definidas. Revisión para CQ-4238096
-* (DMS7) Recorte inteligente: Vista de detalles: El botón de URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
+* (DMS7) Recorte inteligente: Vista de detalles: El botón URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
 * La página de lista de ajustes preestablecidos de visor permanece en blanco incluso después de ejecutar los comandos curl. Revisión para CQ-4243246
 * Se ha deshabilitado la ejecución manual de pasos de limpieza y el uso de clases de coral privadas. Revisión para CQ-4239729
 * La página Detalles del informe de video no muestra recursos de video. Revisión para CQ-4246208
@@ -2106,8 +2106,8 @@ Lista de paquetes de contenido incluidos en AEM 6.4.1.0
 >
 >Para clientes con Feature Packs instalados en AEM 6.4. Los paquetes de funciones opcionales proporcionados por Adobe dependen de la versión de lanzamiento y del Service Pack. Si tiene instalado algún Feature Pack, póngase en contacto con el equipo de atención al cliente de AEM para validar la compatibilidad de dichos paquetes de funciones con este Service Pack para AEM 6.4.
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* La descarga del Service Pack está disponible en la opción de uso compartido de paquetes de Adobe, a la que puede acceder directamente desde la instancia de AEM 6.4.
+* AEM 6.4.8.0 requiere AEM 6.4. Para obtener más información, consulte la documentación [de](../sites-deploying/upgrade.md)actualización.
+* La descarga de Service Pack está disponible en el portal [de distribución de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) software para su descarga.
 * En una implementación con MongoDB y varias instancias, instale AEM 6.4.8.0 en una de las instancias de creación mediante el Administrador de paquetes.
 * Antes de instalar el paquete de servicio, asegúrese de disponer de una instantánea o una copia de seguridad nueva de su instancia de AEM.
 * Reinicie la instancia antes de la instalación. Aunque esto solo es necesario cuando la instancia sigue en modo de actualización (y este es el caso cuando la instancia se acaba de actualizar desde una versión anterior), generalmente se recomienda si la instancia se ejecutó durante un período de tiempo más largo.
@@ -2116,14 +2116,13 @@ Lista de paquetes de contenido incluidos en AEM 6.4.1.0
 >
 >Adobe no recomienda quitar o desinstalar el paquete AEM 6.4.8.0.
 
-### Instalación de la instancia de Service Pack mediante el uso compartido de paquetes {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 Siga estos pasos para instalar el paquete de servicio en una instancia de AEM 6.4 existente:
 
-1. Inicie sesión en la opción de uso compartido de paquetes de AEM o directamente desde su navegador y descargue el paquete AEM 6.4.8.0..
+1. Descargue el paquete de Distribución de software.
 
-   (busque &quot;AEM-6.4.8.0&quot; para encontrarlo)
-1. Instale el paquete descargado mediante el Administrador de paquetes.
+1. En AEM, inicie sesión en el Administrador de paquetes y agregue el paquete AEM 6.4.8.0 descargado. Seleccione el paquete cargado y haga clic en **[!UICONTROL Instalar]**.
 
 >[!NOTE]
 >

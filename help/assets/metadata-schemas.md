@@ -3,9 +3,9 @@ title: Esquemas de metadatos
 description: 'El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2536'
 ht-degree: 12%
 
 ---
@@ -41,12 +41,13 @@ Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] 
 |---|---|---|
 | [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
 |  | Los siguientes formularios secundarios heredan las propiedades del formulario [!UICONTROL predeterminado] : |  |
+|  | [!UICONTROL dm_video] | Formulario de Esquema para vídeos de Dynamic Media. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, image/jpeg, image/png, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo, application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo pdf. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;video&quot;, como video/avi, video/mp4, etc. |
 | [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
 | [!UICONTROL contentfragment] |  | Formulario de Esquema para fragmentos de contenido. |
-| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [de](/help/forms/home.md)Adobe Experience Manager. |
+| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con los formularios [Adobe Experience Manager](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -62,7 +63,7 @@ Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] 
 
 1. En el cuadro de diálogo, introduzca el título del formulario de esquema y haga clic en **[!UICONTROL Crear]** para completar el proceso de creación del formulario.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Editar formularios de esquema de metadatos {#editing-metadata-schema-forms}
 
@@ -182,11 +183,11 @@ Para eliminar un formulario, selecciónelo y haga clic en el icono **[!UICONTROL
 
 >[!NOTE]
 >
->No puede eliminar los formularios de esquema de metadatos predeterminados en Recursos AEM.
+>No se pueden eliminar los formularios de esquema de metadatos predeterminados en AEM Assets.
 
 ## Formularios de Esquema para tipos MIME {#schema-forms-for-mime-types}
 
-Recursos AEM proporciona formularios predeterminados para varios tipos MIME de forma predeterminada. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
+AEM Assets proporciona formularios predeterminados para varios tipos MIME de forma predeterminada. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
 
 ### Añadir nuevos formularios para tipos MIME {#adding-new-forms-for-mime-types}
 
@@ -225,7 +226,7 @@ La función de esquema de metadatos solo está disponible para los administrador
 
 ## Aplicación de metadatos específicos de carpetas {#applying-folder-specific-metadata}
 
-Recursos AEM le permite definir una variante de un esquema de metadatos y aplicarla a una carpeta específica.
+AEM Assets permite definir una variante de un esquema de metadatos y aplicarla a una carpeta específica.
 
 Por ejemplo, puede definir una variante del esquema de metadatos predeterminado y aplicarla a una carpeta. Al aplicar el esquema modificado, se anula el esquema de metadatos predeterminado original que se aplica a los recursos de la carpeta.
 

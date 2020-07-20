@@ -48,7 +48,7 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL Campos de mensaje Lista permitida]** Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: 
+* **[!UICONTROL Lista de permitidos]** Campos de mensaje Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se agregan nuevos elementos de formulario, se deberá agregar la identificación del elemento si se desea almacenar en SRP. El valor predeterminado es dos entradas: 
 *asunto* y *contenido*.
 
 * **[!UICONTROL Límite]** de tamaño del cuadro de mensaje El número máximo de bytes en el cuadro de mensaje de cada usuario. El valor predeterminado es 
@@ -89,23 +89,23 @@ Para agregar una nueva configuración, seleccione el icono más &#39;**+**&#39; 
 * **[!UICONTROL maxTotalAttachmentSize.name]** Si se comprueba supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es 
 *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeBlocklist.name]** Una lista de bloqueo de extensiones de archivo, con el prefijo &#39;
-**.**&#39;, que será rechazado por el sistema. Si no está bloqueada, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
+* **[!UICONTROL attachmentTypeBlocklist.name]** Una lista de bloqueados de extensiones de archivo, con el prefijo &#39;
+**.**&#39;, que será rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones pueden agregarse o eliminarse mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;. El valor predeterminado es *PREDETERMINADO*.
 
 * **[!UICONTROL allowAttachmentTypes.name]**
 
-   **(*Acción requerida*)** Una lista de permitidas de extensiones de archivo, lo contrario de la lista de bloqueos. Para permitir todas las extensiones de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
+   **(*Acción requerida*)** Una lista de permitidos de extensiones de archivo, lo contrario de la lista de bloqueados. Para permitir todas las extensiones de archivo, excepto las incluidas en la lista de bloqueados, utilice el icono &#39;**-**&#39; para eliminar la única entrada vacía.
 
 * **[!UICONTROL serviceSelector.name]**(*Requerido*) Una ruta absoluta (extremo) a través de la cual se invoca el servicio (recurso virtual). La raíz de la ruta elegida debe estar incluida en la configuración de rutas *de* ejecución de la configuración de OSGi [`Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`y `/services/`. Para seleccionar esta configuración para la función de mensajería de un sitio, este extremo se proporciona como el **`Service selector`** valor para la `Message List and Compose Message components` (consulte Función [de](configure-messaging.md)mensaje). El valor predeterminado es */bin/messaging* .
 
 * **[!UICONTROL fieldAllowlist.name]** Use 
-**Lista de campos de mensaje permitidos**.
+**Lista de permitidos** Campos de mensaje.
 
 >[!CAUTION]
 >
 >Cada vez que se abre una `Messaging Operations Service` configuración para editarla, si `allowedAttachmentTypes.name` se ha eliminado, se vuelve a agregar una entrada vacía para que la propiedad se pueda configurar. Una sola entrada vacía deshabilita los archivos adjuntos de forma efectiva.
 >
->Para permitir todas las extensiones de archivo, excepto las bloqueadas, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **[!UICONTROL Guardar]**.
+>Para permitir todas las extensiones de archivo, excepto las incluidas en la lista de bloqueados, utilice el icono &#39;**-**&#39; para (de nuevo) eliminar la única entrada vacía antes de hacer clic en **[!UICONTROL Guardar]**.
 
 ## Solución de problemas {#troubleshooting}
 

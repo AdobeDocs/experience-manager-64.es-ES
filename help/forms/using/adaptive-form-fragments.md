@@ -40,6 +40,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
    * **[!UICONTROL Ninguno]**: Especifica que se cree el fragmento desde cero sin utilizar ningún modelo de formulario.
    * **[!UICONTROL Plantilla]** de formulario: Especifica que se crea el fragmento con una plantilla XDP cargada a AEM Forms. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
+
    ![Creación de un formulario adaptable mediante una plantilla de formulario como modelo](assets/form-template-model.png)
 
    También se muestran los subformularios marcados como fragmentos en la plantilla de formulario seleccionada. Puede seleccionar un subformulario para el fragmento de formulario adaptable desde la lista desplegable.
@@ -49,6 +50,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
    Además, puede crear un fragmento de formulario adaptable utilizando subformularios que no estén marcados como fragmentos en la plantilla de formulario especificando la expresión SOM para el subformulario en el cuadro desplegable.
 
    * **[!UICONTROL Esquema]** XML: Especifica la creación del fragmento mediante un esquema XML cargado en AEM Forms. Puede cargar o seleccionar los esquemas XML disponibles como modelo de formulario para el fragmento.
+
    ![Creación de un fragmento de formulario adaptable basado en un esquema XML como modelo](assets/xml-schema-model.png)
 
    También puede crear un fragmento de formulario adaptable seleccionando un valor de complejoType presente en el esquema seleccionado en el cuadro desplegable.
@@ -89,6 +91,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **[!UICONTROL Ref]** XSD: Solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
    * **[!UICONTROL Ref]** XDP: Solo aparece en formularios adaptables basados en XDP. Muestra la ubicación de la plantilla de formulario XDP.
+
    ![save-fragment](assets/save-fragment.png)
    **Figura:** *Cuadro de diálogo Guardar como fragmento*
 

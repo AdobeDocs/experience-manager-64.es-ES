@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '4919'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 >[!CAUTION]
 >
->En este artículo se describe cómo crear un sitio web con JSP y basado en la IU clásica. Adobe recomienda aprovechar las últimas tecnologías de AEM para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md)de AEM.
+>En este artículo se describe cómo crear un sitio web con JSP y basado en la IU clásica. Adobe recomienda aprovechar las tecnologías de AEM más recientes para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial le permite crear un sitio web con todas las funciones con Adobe Experience Manager (AEM). El sitio web se basará en un sitio web genérico y estará dirigido principalmente a los desarrolladores web. Todo el desarrollo tendrá lugar dentro de un entorno de creación.
+Este tutorial le permite crear un sitio web con todas las funciones con Adobe Experience Manager (AEM). El sitio web se basará en un sitio web genérico y estará dirigido principalmente a los desarrolladores web. Todo el desarrollo tendrá lugar dentro de un entorno de autor.
 
 Este tutorial describe cómo:
 
@@ -50,7 +53,7 @@ Después de realizar todos los pasos, las páginas tendrán el siguiente aspecto
 Para seguir el tutorial en lugar de realizar los ejercicios, descargue el sitio web-1.0.zip. Este archivo es un paquete de contenido de AEM que contiene los resultados de este tutorial. Utilice el Administrador [de paquetes](/help/sites-administering/package-manager.md) para instalar el paquete en la instancia de creación.
 
 >[!NOTE]
-> La instalación de este paquete sobrescribirá los recursos de la instancia de creación que haya creado con este tutorial.
+>La instalación de este paquete sobrescribirá los recursos de la instancia de creación que haya creado con este tutorial.
 
 Paquete de contenido del sitio web
 
@@ -58,7 +61,7 @@ Paquete de contenido del sitio web
 
 ## Installing Adobe Experience Manager {#installing-adobe-experience-manager}
 
-Para instalar una instancia de AEM para desarrollar el sitio web, siga las instrucciones para configurar un entorno de [implementación con instancias](/help/sites-deploying/deploy.md#author-and-publish-installs)de creación y publicación o realice una instalación [](/help/sites-deploying/deploy.md#default-local-install)genérica. La instalación genérica implica descargar el archivo JAR de inicio rápido de AEM, colocar el archivo license.properties en el mismo directorio que el archivo JAR y hacer doble clic en el archivo JAR.
+Para instalar una instancia de AEM para desarrollar el sitio web, siga las instrucciones para configurar un entorno [de implementación con instancias](/help/sites-deploying/deploy.md#author-and-publish-installs)de creación y publicación, o realice una instalación [](/help/sites-deploying/deploy.md#default-local-install)genérica. La instalación genérica implica descargar el archivo JAR de inicio rápido de AEM, colocar el archivo license.properties en el mismo directorio que el archivo JAR y hacer clic con el doble en el archivo JAR.
 
 Después de instalar AEM, acceda al entorno de desarrollo de CRXDE Lite haciendo clic en el vínculo de CRXDE Lite en la página de bienvenida:
 
@@ -128,6 +131,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
    * **[!UICONTROL Título]**: Plantilla de página de contenido de mi sitio web
    * **[!UICONTROL Descripción]**: Esta es mi plantilla de página de contenido del sitio Web
    * **[!UICONTROL Tipo]** de recurso: mywebsite/components/contentpage
+
    Utilice el valor predeterminado para la propiedad Ranking.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
@@ -138,11 +142,11 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
-    El valor de la propiedad path permitida es una expresión *regular.* Las páginas que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la `/content` carpeta y todas las subpáginas.
+   El valor de la propiedad path permitida es una expresión *normal.* Las páginas que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión normal coincide con la ruta de la `/content` carpeta y con todas las subpáginas.
 
    Cuando un autor crea una página a continuación `/content`, la plantilla **[!UICONTROL contentpage]** aparece en una lista de plantillas disponibles para usar.
 
-1. Haga clic en **[!UICONTROL Siguiente** en los paneles Padres **** permitidos y Niños **[!UICONTROL permitidos]** y haga clic en **[!UICONTROL Aceptar]**. En CRXDE Lite, haga clic en **[!UICONTROL Guardar todo]**.
+1. Haga clic en **[!UICONTROL Siguiente]** en los paneles Padres **** permitidos y Niños **** permitidos y haga clic en **[!UICONTROL Aceptar]**. En CRXDE Lite, haga clic en **[!UICONTROL Guardar todo]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -156,6 +160,7 @@ Cree el *componente* que define el contenido y procesa las páginas que utilizan
    * **[!UICONTROL Etiqueta]**: contentpage
    * **[!UICONTROL Título]**: Componente de la página de contenido de mi sitio Web
    * **[!UICONTROL Descripción]**: Componente de la página Contenido de mi sitio Web
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
    La ubicación del nuevo componente es `/apps/mywebsite/components/contentpage`. Esta ruta corresponde al tipo de recurso de la plantilla contentpage (menos la parte inicial `/apps/` de la ruta).
@@ -170,7 +175,7 @@ Cree el *componente* que define el contenido y procesa las páginas que utilizan
 
 #### Desarrollo del script de componente Contentpage {#developing-the-contentpage-component-script}
 
-Agregue código a la secuencia de comandos contentpage.jsp para definir el contenido de la página.
+Añada código a la secuencia de comandos contentpage.jsp para definir el contenido de la página.
 
 1. En CRXDE Lite, abra el archivo `contentpage.jsp` en `/apps/mywebsite/components/contentpage`. El archivo contiene el siguiente código de forma predeterminada:
 
@@ -223,6 +228,7 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
    * **[!UICONTROL Título]**: `My Website`
    * **[!UICONTROL Nombre]**: `mywebsite`
    * Seleccione la plantilla de la página de contenido de **[!UICONTROL Mi sitio web]**
+
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
 1. Haga clic en **[!UICONTROL Crear]**. En el árbol de carpetas, seleccione la `/Websites/My Website` página y haga clic en **[!UICONTROL Nuevo > Nueva página]**.
@@ -249,15 +255,17 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
 
    * **Título**: Clientes
    * Seleccione la plantilla de la página de contenido de **[!UICONTROL Mi sitio web]**
+
    La estructura tiene el siguiente aspecto:
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Para vincular las páginas al diseño de mi sitio web, en CRXDE Lite, seleccione el `/content/mywebsite/en/jcr:content` nodo. En la ficha **[!UICONTROL Propiedades]** , escriba los siguientes valores para una nueva propiedad y, a continuación, haga clic en Agregar:
+1. Para vincular las páginas al diseño de mi sitio web, en CRXDE Lite, seleccione el `/content/mywebsite/en/jcr:content` nodo. En la ficha **[!UICONTROL Propiedades]** , escriba los siguientes valores para una nueva propiedad y, a continuación, haga clic en Añadir:
 
    * **[!UICONTROL Nombre]**: cq:designPath
    * **[!UICONTROL Tipo]**: Cadena
    * **[!UICONTROL Valor]**: /etc/designs/mywebsite
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. En una nueva ficha o ventana del explorador Web, abra [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) para ver la página Productos:
@@ -281,7 +289,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a las secu
 1. En CRXDE Lite, agregue una propiedad al `/apps/mywebsite/components/contentpage` nodo.
 
    1. Select the `/apps/mywebsite/components/contentpage` node.
-   1. En la parte inferior de la ficha Propiedades, escriba los siguientes valores de propiedad y haga clic en Agregar:
+   1. En la parte inferior de la ficha Propiedades, escriba los siguientes valores de propiedad y haga clic en Añadir:
 
       * **[!UICONTROL Nombre]**: sling:resourceSuperType
       * **[!UICONTROL Tipo]**: Cadena
@@ -301,7 +309,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a las secu
    </html>
    ```
 
-1.  Guarde los cambios.
+1. Guarde los cambios.
 1. En el explorador, vuelva a cargar la página **[!UICONTROL Productos]** . Tiene el siguiente aspecto:
 
    ![climage_1-5](assets/chlimage_1-5.jpeg)
@@ -319,7 +327,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a las secu
 
 En esta sección se crean varias secuencias de comandos que generan una parte del cuerpo de la página. A continuación, cree el archivo body.jsp en el componente pagecontent para anular body.jsp del componente Página AEM. En el archivo body.jsp, se incluyen las secuencias de comandos que generan las distintas partes del cuerpo de la página.
 
-**** Sugerencia: Cuando un componente incluye un archivo con el mismo nombre y la misma ubicación relativa que un archivo del supertipo del componente, se le llama *superposición*.
+**Sugerencia:** Cuando un componente incluye un archivo con el mismo nombre y la misma ubicación relativa que un archivo del supertipo del componente, se le llama *superposición*.
 
 1. En CRXDE Lite, cree el archivo `left.jsp` en `/apps/mywebsite/components/contentpage`:
 
@@ -414,11 +422,11 @@ La navegación superior tendrá el siguiente aspecto:
    * **[!UICONTROL Título]**: `My Top Navigation Component`
    * **[!UICONTROL Descripción]**: `This is My Top Navigation Component`
 
-1. Haga clic en **[!UICONTROL Siguiente]** hasta que llegue a la última ventana en la que haga clic en **[!UICONTROL Aceptar]**.  Guarde los cambios.
+1. Haga clic en **[!UICONTROL Siguiente]** hasta que llegue a la última ventana en la que haga clic en **[!UICONTROL Aceptar]**. Guarde los cambios.
 
 #### Creación del script de navegación superior con vínculos textuales {#creating-the-top-navigation-script-with-textual-links}
 
-Agregue la secuencia de comandos de procesamiento a topnav para generar vínculos de texto a páginas secundarias:
+Añada la secuencia de comandos de procesamiento a topnav para generar vínculos de texto a páginas secundarias:
 
 1. En CRXDE Lite, abra el archivo `topnav.jsp` debajo de `/apps/mywebsite/components/topnav`.
 1. Reemplace el código que hay copiando y pegando el siguiente código:
@@ -466,7 +474,7 @@ Para incluir topnav en el componente contentpage:
 
 #### Mejora de páginas con subtítulos {#enhancing-pages-with-subtitles}
 
-El componente **[!UICONTROL Página]** define las propiedades que le permiten proporcionar subtítulos para las páginas. Agregue subtítulos que proporcionen información sobre el contenido de la página.
+El componente **[!UICONTROL Página]** define las propiedades que le permiten proporcionar subtítulos para las páginas. Añada subtítulos que proporcionen información sobre el contenido de la página.
 
 1. En el explorador, abra la página **[!UICONTROL Productos]** .
 1. En la ficha **[!UICONTROL Página]** de la barra de tareas, haga clic en Propiedades **[!UICONTROL de la página]**.
@@ -474,11 +482,11 @@ El componente **[!UICONTROL Página]** define las propiedades que le permiten pr
 1. Repita los pasos anteriores para agregar el subtítulo **sobre nuestros servicios** a la página **[!UICONTROL Servicios]** .
 1. Repita los pasos anteriores para agregar el subtítulo **de la confianza que ganamos** a la página **[!UICONTROL Clientes]** .
 
-   **** Sugerencia: En CRXDE Lite, seleccione el nodo /content/mywebsite/en/products/jcr:content para ver que se agrega la propiedad subtitle.
+   **Sugerencia:** En CRXDE Lite, seleccione el nodo /content/mywebsite/en/products/jcr:content para ver que se agrega la propiedad subtitle.
 
 #### Mejorar la navegación superior mediante vínculos de imagen {#enhance-top-navigation-by-using-image-links}
 
-Mejore la secuencia de comandos de procesamiento del componente topnav para utilizar vínculos de imagen en lugar de hipertexto en los controles de navegación. La imagen incluye el título y el subtítulo del destino del vínculo.
+Mejore la secuencia de comandos de procesamiento del componente topnav para utilizar vínculos de imagen en lugar de hipertexto en los controles de navegación. La imagen incluye el título y el subtítulo del destinatario del vínculo.
 
 Este ejercicio muestra el procesamiento [de solicitudes de](/help/sites-developing/the-basics.md#sling-request-processing)Sling. La secuencia de comandos topnav.jsp se modifica para llamar a una secuencia de comandos que genere dinámicamente imágenes para utilizarlas en los vínculos de navegación de la página. En este ejercicio, Sling analiza la dirección URL de los archivos de origen de imagen para determinar la secuencia de comandos que se utilizará para procesar las imágenes.
 
@@ -636,9 +644,9 @@ En este ejercicio, Sling hace coincidir estas direcciones URL con el script /app
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### Creación del componente Lista de elementos secundarios {#creating-the-list-children-component}
+### Creación del componente secundario de Lista {#creating-the-list-children-component}
 
-Cree el componente listchildren que genera una lista de vínculos de página que incluyen el título, la descripción y la fecha de las páginas (por ejemplo, las páginas de producto). Los vínculos se dirigen a las páginas secundarias de la página actual o a una página raíz especificada en el cuadro de diálogo del componente.
+Cree el componente listchildren que genera una lista de vínculos de página que incluyen el título, la descripción y la fecha de las páginas (por ejemplo, las páginas de producto). Los vínculos destinatario las páginas secundarias de la página actual o de una página raíz especificada en el cuadro de diálogo del componente.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -670,7 +678,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
    1. Haga clic en **[!UICONTROL Agregar]**.
    1. En la ficha **[!UICONTROL Propiedades]** , cree otra propiedad con los siguientes valores:
 
-      * **[!UICONTROL Nombre]**:date
+      * **[!UICONTROL Nombre]**: date
       * **[!UICONTROL Tipo]**: Cadena
       * **[!UICONTROL Valor]**: 14/02/2008
       * Haga clic en **[!UICONTROL Agregar]**.
@@ -689,7 +697,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
    1. Haga clic en **[!UICONTROL Agregar]**.
    1. En los mismos cuadros de texto, reemplace los valores anteriores por los siguientes valores:
 
-      * **[!UICONTROL Nombre]**:date
+      * **[!UICONTROL Nombre]**: date
       * **[!UICONTROL Tipo]**: Cadena
       * **[!UICONTROL Valor]**: 11/05/2012
       * Haga clic en **[!UICONTROL Agregar]**.
@@ -697,7 +705,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
 
 
 
-#### Creación del componente Lista de elementos secundarios {#creating-the-list-children-component-1}
+#### Creación del componente secundario de Lista {#creating-the-list-children-component-1}
 
 Para crear el componente listchildren:
 
@@ -710,7 +718,7 @@ Para crear el componente listchildren:
 
 1. Siga haciendo clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel Elementos secundarios **** permitidos y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 
-#### Creación del script de elementos secundarios de lista {#creating-the-list-children-script}
+#### Creación del script secundario de Lista {#creating-the-list-children-script}
 
 Desarrolle la secuencia de comandos para el componente listchildren.
 
@@ -743,7 +751,7 @@ Desarrolle la secuencia de comandos para el componente listchildren.
 
 1. Guarde los cambios.
 
-#### Creación del cuadro de diálogo Lista de elementos secundarios {#creating-the-list-children-dialog}
+#### Creación del diálogo Lista para niños {#creating-the-list-children-dialog}
 
 Cree el cuadro de diálogo que se utiliza para configurar las propiedades del componente listchildren.
 
@@ -754,6 +762,7 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
       * **[!UICONTROL Etiqueta]**: `dialog`
       * **[!UICONTROL Título]**: `Edit Component` y haga clic en **[!UICONTROL Aceptar]**.
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    Con las siguientes propiedades:
@@ -769,15 +778,17 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
    * **[!UICONTROL Nombre]**: elementos
    * **[!UICONTROL Tipo]**: cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Cree un nodo debajo del nodo items utilizando los siguientes valores de propiedad:
 
    * **[!UICONTROL Nombre]**: listroot
    * **[!UICONTROL Tipo]**: cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Agregue propiedades para el nodo listroot para configurarlo como un campo de texto. Cada fila de la tabla siguiente representa una propiedad. Cuando termine, haga clic en **[!UICONTROL Guardar todo]**.
+1. Añada las propiedades del nodo listroot para configurarlo como un campo de texto. Cada fila de la tabla siguiente representa una propiedad. Cuando termine, haga clic en **[!UICONTROL Guardar todo]**.
 
    | Nombre | Tipo | Value |
    |---|---|---|
@@ -787,7 +798,7 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
-#### Inclusión de elementos secundarios de lista en el componente Contentpage {#including-list-children-in-the-contentpage-component}
+#### Inclusión de elementos secundarios de Lista en el componente de página de contenido {#including-list-children-in-the-contentpage-component}
 
 Para incluir el componente listchildren en el componente contentpage, siga estos pasos:
 
@@ -805,9 +816,9 @@ Para incluir el componente listchildren en el componente contentpage, siga estos
 
 1. Guarde los cambios.
 
-#### Visualización de elementos secundarios de lista en una página {#viewing-list-children-in-a-page}
+#### Visualización de elementos secundarios de Lista en una página {#viewing-list-children-in-a-page}
 
-Para ver el funcionamiento completo de este componente, puede ver la página Productos:
+Para ver el funcionamiento completo de este componente, puede realizar la vista de la página Productos:
 
 * cuando la página principal (&quot;Ruta de la raíz de la lista&quot;) no está definida.
 * cuando se define la página principal (&quot;Ruta de la raíz de la lista&quot;).
@@ -824,7 +835,7 @@ Para ver el funcionamiento completo de este componente, puede ver la página Pro
 
 ### Creación del componente Logotipo {#creating-the-logo-component}
 
-Cree un componente que muestre el logotipo de la empresa y proporcione un vínculo a la página principal del sitio. El componente contiene un cuadro de diálogo de modo de diseño para que los valores de propiedad se almacenen en el diseño del sitio (/etc/designs/mywebsite):
+Cree un componente que muestre el logotipo de la compañía y proporcione un vínculo a la página de inicio del sitio. El componente contiene un cuadro de diálogo de modo de diseño para que los valores de propiedad se almacenen en el diseño del sitio (/etc/designs/mywebsite):
 
 * Los valores de propiedad se aplican a todas las instancias del componente que se agregan a las páginas que utilizan el diseño.
 * Las propiedades se pueden configurar con cualquier instancia del componente que se encuentre en una página que utilice el diseño.
@@ -857,7 +868,7 @@ Para crear el componente de logotipo, siga los pasos:
 En esta sección se describe cómo crear la secuencia de comandos para mostrar la imagen del logotipo con un vínculo a la página principal.
 
 1. En CRXDE Lite, abra el archivo `logo.jsp` debajo de `/apps/mywebsite/components/logo`.
-1. El siguiente código crea el vínculo a la página principal del sitio y agrega una referencia a la imagen del logotipo. Copie el código a `logo.jsp`:
+1. El siguiente código crea el vínculo a la página de inicio del sitio y agrega una referencia a la imagen del logotipo. Copie el código a `logo.jsp`:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -904,13 +915,13 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
       * **[!UICONTROL Título]** `Logo (Design)`
 
 1. Haga clic con el botón derecho en el nodo tab1 de la rama design_dialog y haga clic en Eliminar. Haga clic en **[!UICONTROL Guardar todo]**.
-1. En el `design_dialog/items/items`nodo, cree un nuevo nodo denominado `img` de tipo `cq:Widget`. Agregue las siguientes propiedades y haga clic en **[!UICONTROL Guardar todo]**:
+1. En el `design_dialog/items/items`nodo, cree un nuevo nodo denominado `img` de tipo `cq:Widget`. Añada las siguientes propiedades y haga clic en **[!UICONTROL Guardar todo]**:
 
    | Nombre | Tipo | Value |
    |---|---|---|
    | fileNameParameter | Cadena | ./imageName |
    | fileReferenceParameter | Cadena | ./imageReference |
-   | name | Cadena | ./imagen |
+   | name | Cadena | ./image |
    | el título | Cadena | Imagen |
    | xtype | Cadena | html5smartimage |
 
@@ -989,7 +1000,7 @@ public class img_GET extends AbstractImageServlet {
 }
 ```
 
-#### Adición del componente Logotipo al componente Contentpage {#adding-the-logo-component-to-the-contentpage-component}
+#### Añadir el componente Logotipo en el componente Contentpage {#adding-the-logo-component-to-the-contentpage-component}
 
 1. En CRXDE Lite, abra la `left.jsp` debajo `/apps/mywebsite/components/contentpage file` y busque la siguiente línea de código:
 
@@ -1078,7 +1089,7 @@ En esta sección, se incluye el componente de título, que es uno de los compone
 
 El sistema de párrafos (parsys) es una parte importante de un sitio web, ya que gestiona una lista de párrafos. Permite a los autores agregar componentes de párrafo a la página y proporciona estructura.
 
-Agregue el componente parsys (uno de los componentes de base) al componente contentpage.
+Añada el componente parsys (uno de los componentes de base) en el componente contentpage.
 
 1. En CRXDE Lite, busque `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp` y busque la línea de código siguiente:
 
@@ -1115,7 +1126,7 @@ Cree un componente que muestre una imagen en el sistema de párrafos. Para ahorr
    * `jcr:title:` Componente Mi imagen.
    * `jcr:description`:: Este es mi componente de imagen.
 
-1. Agregue una propiedad al `image` nodo con los siguientes valores de propiedad:
+1. Añada una propiedad en el `image` nodo con los siguientes valores de propiedad:
 
    * **[!UICONTROL Nombre]**: componentGroup
    * **[!UICONTROL Tipo]**: Cadena
@@ -1186,7 +1197,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-#### Adición del icono {#adding-the-icon}
+#### Añadir el icono {#adding-the-icon}
 
 En esta sección, agregue el icono para que aparezca junto al componente de imagen cuando aparezca en la barra de tareas:
 
@@ -1195,14 +1206,14 @@ En esta sección, agregue el icono para que aparezca junto al componente de imag
 
 #### Uso del componente de imagen {#using-the-image-component}
 
-En esta sección, verá la página **[!UICONTROL Productos]** y agregará el componente de imagen al sistema de párrafos.
+En esta sección, vista la página **[!UICONTROL Productos]** y agregará el componente de imagen al sistema de párrafos.
 
 1. En el explorador, vuelva a cargar la página **[!UICONTROL Productos]** .
 1. En la barra de tareas, haga clic en el icono del modo **** Diseño.
 1. Haga clic en el botón **[!UICONTROL Editar]** para editar el cuadro de diálogo de diseño de par.
-1. En el cuadro de diálogo, se muestra una lista de componentes **** permitidos; desplácese a **[!UICONTROL MyWebsite]**, seleccione el componente **** Mi imagen y haga clic en **[!UICONTROL Aceptar]**.
+1. En el cuadro de diálogo, se muestra una lista de los componentes **** permitidos; desplácese a **[!UICONTROL MyWebsite]**, seleccione el componente **** Mi imagen y haga clic en **[!UICONTROL Aceptar]**.
 1. Vuelva al modo **** Editar.
-1. Haga doble clic en el marco parsys (en **[!UICONTROL Arrastre los componentes o recursos aquí**). Los selectores **[!UICONTROL Insertar nuevo componente]** y **[!UICONTROL barra de tareas]** tienen el siguiente aspecto:
+1. Haga clic con el botón Doble en el marco parsys (en **[!UICONTROL Arrastrar componentes o recursos aquí]**). Los selectores **[!UICONTROL Insertar nuevo componente]** y **[!UICONTROL barra de tareas]** tienen el siguiente aspecto:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1238,7 +1249,7 @@ Tiene varias opciones, tanto en el modo de edición como en el modo de diseño.
    * Contactos
    * Comentarios
    * Inicio de sesión
-   * Búsqueda 
+   * Búsqueda  
 
 1. En el explorador, vuelva a cargar la página **[!UICONTROL Productos]** . Tiene el siguiente aspecto:
 
@@ -1250,7 +1261,7 @@ En esta sección, se crea el componente para buscar contenido en el sitio web. E
 
 El cuadro de entrada de búsqueda tendrá el siguiente aspecto en la página **[!UICONTROL en inglés]** :
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 #### Creación del componente de búsqueda {#creating-the-search-component-1}
 
@@ -1489,7 +1500,7 @@ En esta sección, se agrega el componente de búsqueda al sistema de párrafos.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. Vaya a la página **[!UICONTROL Productos]** . Busque clientes en el cuadro de entrada y pulse **[!UICONTROL Intro]**. Se le redirige a la página de **[!UICONTROL búsqueda]** . Cambiar al modo **[!UICONTROL Vista previa]** : la salida tiene un formato similar al siguiente:
+1. Vaya a la página **[!UICONTROL Productos]** . Busque clientes en el cuadro de entrada y pulse **[!UICONTROL Intro]**. Se le redirige a la página de **[!UICONTROL búsqueda]** . Cambiar al modo de **[!UICONTROL Previsualización]** : la salida tiene un formato similar al siguiente:
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 

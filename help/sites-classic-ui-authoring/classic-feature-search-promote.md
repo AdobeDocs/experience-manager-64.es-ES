@@ -1,6 +1,6 @@
 ---
-title: Adición de funciones de Search&amp;Promocionar a la página
-seo-title: Adición de funciones de Search&amp;Promocionar a la página
+title: Añadir las funciones de Search&amp;Promocionar a su página
+seo-title: Añadir las funciones de Search&amp;Promocionar a su página
 description: Integrando las capacidades de Search&amp;Promote en su sitio Web, puede utilizar los componentes Search&amp;Promote para agregar características a sus páginas, tales como búsqueda de palabras clave, perfeccionamiento de búsqueda de página de resultados de búsqueda y titulares.
 seo-description: Integrando las capacidades de Search&amp;Promote en su sitio Web, puede utilizar los componentes Search&amp;Promote para agregar características a sus páginas, tales como búsqueda de palabras clave, perfeccionamiento de búsqueda de página de resultados de búsqueda y titulares.
 uuid: 8831aa56-9d7f-44ca-9d32-5901bf762154
@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 57%
 
 ---
 
@@ -31,7 +34,7 @@ Las facetas se configuran en el servidor de Search&amp;Promote, al igual que la 
 <table> 
  <tbody> 
   <tr> 
-   <th>Componente Search&amp;Promote</th> 
+   <th>Search&amp;Promote, componente</th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -43,16 +46,16 @@ Las facetas se configuran en el servidor de Search&amp;Promote, al igual que la 
    <td>Muestra la palabra clave de búsqueda y la secuencia de filtros que el usuario ha aplicado a los resultados de búsqueda.</td> 
   </tr> 
   <tr> 
-   <td>Casilla de verificación: faceta</td> 
-   <td>Una lista de casillas de verificación para seleccionar facetas para filtrar resultados de búsqueda.</td> 
+   <td>Lista de casilla de verificación-Faceta</td> 
+   <td>lista de casillas de verificación para seleccionar facetas para filtrar los resultados de búsqueda.</td> 
   </tr> 
   <tr> 
    <td>Faceta desplegable</td> 
-   <td>Lista desplegable de facetas para filtrar los resultados de búsqueda.</td> 
+   <td>Una lista desplegable de facetas para filtrar los resultados de búsqueda.</td> 
   </tr> 
   <tr> 
    <td>Faceta de lista de vínculo</td> 
-   <td>Lista de vínculos de facetas para filtrar los resultados de búsqueda.</td> 
+   <td>lista de vínculos de facetas para filtrar los resultados de búsqueda.</td> 
   </tr> 
   <tr> 
    <td>Paginación</td> 
@@ -63,8 +66,8 @@ Las facetas se configuran en el servidor de Search&amp;Promote, al igual que la 
    <td>Muestra los resultados de una búsqueda de palabras clave.</td> 
   </tr> 
   <tr> 
-   <td>Búsqueda </td> 
-   <td>Agrega un campo de búsqueda a la página.</td> 
+   <td>Búsqueda  </td> 
+   <td>Añade un campo de búsqueda en la página.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -86,15 +89,15 @@ You can configure the following component properties in [!UICONTROL Edit] mode t
 * **[!UICONTROL Ocultar una sola página]** de resultados: seleccione esta opción para ocultar los controles de navegación de la página cuando la búsqueda devuelve una sola página de resultados.
 * **[!UICONTROL Ocultar primero/último]** : seleccione esta opción para evitar que los usuarios salten a la primera o a la última página de resultados.
 * **[!UICONTROL Ocultar anterior/siguiente]** : determina si los usuarios pueden navegar por las páginas de resultados en relación con la página actual.
-* **[!UICONTROL Ocultar ver todo]** : determina si el usuario puede consolidar todos los resultados de búsqueda en una sola página. Normalmente, el uso de datos en páginas permite un uso más eficaz de los recursos del servidor. Seleccione esta opción para impedir la transferencia de conjuntos de datos de gran tamaño en un mensaje de respuesta.
+* **[!UICONTROL Ocultar vista todo]** : determina si el usuario puede consolidar todos los resultados de búsqueda en una sola página. Normalmente, el uso de datos en páginas permite un uso más eficaz de los recursos del servidor. Seleccione esta opción para impedir la transferencia de conjuntos de datos de gran tamaño en un mensaje de respuesta.
 
 ## Activación del filtro de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
 Puede permitir a los usuarios filtrar resultados de búsqueda por facetas. The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. Si se utilizan estos componentes, debe incluir el componente **[!UICONTROL Rutas de exploración]**. Las rutas de exploración indican los filtros actuales que se utilizan.
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
-* **[!UICONTROL Nombre]** de faceta: el nombre de la faceta que se utiliza para los filtros.
+* **[!UICONTROL Nombre]** de faceta: el nombre de la faceta que se utiliza para filtros.
 
 El componente **[!UICONTROL Faceta de lista de casilla de verificación]** muestra una lista de facetas con una casilla de verificación correspondiente. Utilice **[!UICONTROL Faceta de lista de casilla de verificación]** de modo que los usuarios puedan ver un subconjunto de resultados que incluyen elementos de varias facetas. Por ejemplo, la faceta Marca es adecuada porque varias marcas proporcionan el mismo tipo de producto.
 

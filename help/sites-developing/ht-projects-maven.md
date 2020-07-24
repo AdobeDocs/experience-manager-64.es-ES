@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -360,10 +360,6 @@ Para agregar a las rutas, agregue más `<filter>` elementos:
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
@@ -451,7 +447,7 @@ Debajo es necesario agregar dependencias al POM de los `content` módulos.
 
 >[!NOTE]
 >
->A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración de AEM, tal como se ha descrito anteriormente. Los comentarios de cada entrada a continuación muestran el paquete que buscar en el Buscador de dependencias.
+>A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración de AEM, tal como se ha descrito anteriormente. Los comentarios de cada entrada a continuación muestran el paquete que se va a buscar en el Buscador de dependencias.
 
 >[!NOTE]
 >

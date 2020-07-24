@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2671'
 ht-degree: 77%
 
 ---
@@ -187,7 +187,7 @@ En la siguiente tabla se enumeran las acciones de sincronización que se instala
   </tr> 
   <tr> 
    <td>flujo de trabajo</td> 
-   <td><p>Inicia el flujo de trabajo que define la propiedad de destino (solo para páginas) y toma la Live Copy como carga útil.</p> <p>La ruta de acceso de destino es la ruta del nodo del modelo, por ejemplo: /etc/workflow/models/request_for_activation/jcr:content/model</p> </td> 
+   <td><p>Inicia el flujo de trabajo que define la propiedad de destino (solo para páginas) y toma la Live Copy como carga útil.</p> <p>La ruta de destinatario es la ruta del nodo del modelo.</p> </td> 
    <td>destino: (cadena) La ruta de acceso del modelo de flujo de trabajo.<br /> </td> 
   </tr> 
   <tr> 
@@ -408,11 +408,12 @@ Tenga en cuenta que las páginas secundarias de la página de modelo heredan la 
 
 Especifique una configuración de lanzamiento para usar como valor predeterminado del sistema. Para especificar el valor predeterminado, configure el servicio de OSGi:
 
-* **Administrador de relaciones dinámicas de CQ WCM por día**; el servicio PID es `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Administrador de relaciones dinámicas de CQ WCM por día**; el servicio PID es 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
+Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
-* En la consola web, el nombre de la propiedad que se va a configurar es la configuración de lanzamiento predeterminada.`liverelationshipmgr.relationsconfig.default`
+* En la consola web, el nombre de la propiedad que se va a configurar es la configuración de lanzamiento predeterminada.
+* Mediante un nodo del repositorio, el nombre de la propiedad que se va a configurar es `liverelationshipmgr.relationsconfig.default`.
 
-Mediante un nodo del repositorio, el nombre de la propiedad que se va a configurar es `liverelationshipmgr.relationsconfig.default`.****
+Establezca este valor de la propiedad en la ruta de la configuración de lanzamiento que se utilizará como valor predeterminado del sistema. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.

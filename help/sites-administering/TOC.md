@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Administering User Guide
+user-guide-title: Guía del usuario de administración de AEM 6.4
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 14%
 
 ---
 
@@ -47,19 +51,19 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Solución de problemas de AEM](troubleshoot.md)
    + [Mantenimiento del registro de auditoría en AEM 6](operations-audit-log.md)
    + [Editor](enable-classic-ui-editor.md)
-   + [Administración del acceso a los flujos de trabajo](workflows-managing.md)
+   + [Administración del acceso a los Flujos de trabajo](workflows-managing.md)
    + [Uso de cURL con AEM](curl.md)
    + [Configuración de Deshacer para edición de página](config-undo.md)
    + [Herramienta Servidor proxy (proxy.jar)](proxy-jar.md)
    + [Configuración para aplicaciones AEM](config-apps.md)
-   + [Administración de flujos de trabajo](workflows.md)
-   + [Configuración de formularios de búsqueda](search-forms.md)
+   + [Administración de Flujos de trabajo](workflows.md)
+   + [Configurar formularios de búsqueda](search-forms.md)
    + [Consolas de herramientas](tools-consoles.md)
    + [Informes](reporting.md)
    + [Administración de instancias de flujo de trabajo](workflows-administering.md)
-   + [Configuración del contenedor de diseño y el modo de diseño](configuring-responsive-layout.md)
+   + [Configuración del Contenedor de diseño y el modo de diseño](configuring-responsive-layout.md)
    + [Habilitación del acceso a la IU clásica](enable-classic-ui.md)
-   + [Iniciando flujos de trabajo](workflows-starting.md)
+   + [Inicio de Flujos de trabajo](workflows-starting.md)
    + [Configuración de los complementos del editor de texto enriquecido](configure-rich-text-editor-plug-ins.md)
    + [Consolas de administración](enable-classic-ui-admin.md)
 + Seguridad {#security}
@@ -69,7 +73,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [10 primeros OWASP](owasp-top10.md)
    + [Ejecución de AEM en modo de producción lista](production-ready.md)
    + [Administración de identidades](identity-management.md)
-   + [Compatibilidad con la autenticación IMS y la consola de administración de Adobe para los servicios gestionados de AEM](ims-config-and-admin-console.md)
+   + [Autenticación IMS de Adobe y compatibilidad con Admin Console para los servicios gestionados de AEM](ims-config-and-admin-console.md)
    + [Creación de un grupo de usuarios cerrado](cug.md)
    + [Mitigación de problemas de serialización en AEM](mitigating-serialization-issues.md)
    + [Sincronización de usuarios](sync.md)
@@ -94,8 +98,8 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Campañas](campaigns.md)
    + [Configuración de la segmentación con ContextHub](segmentation.md)
    + [Configuración de la segmentación](campaign-segmentation.md)
-   + [Ampliación y configuración del Importador de diseños para páginas de aterrizaje](extending-the-design-importer-for-landingpages.md)
-   + [Integración de páginas de aterrizaje con Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
+   + [Ampliación y configuración del Importador de diseños para Páginas de aterrizaje](extending-the-design-importer-for-landingpages.md)
+   + [Integración de Páginas de aterrizaje con Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
    + [Conceptos ](concepts.md)
@@ -113,20 +117,20 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Conexión a Adobe Analytics y creación de marcos](adobeanalytics-connect.md)
    + [Configuración del seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
    + [Asignación de datos de componentes con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
-   + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
+   + [Configuración del seguimiento de videos para Adobe Analytics](adobeanalytics-video.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](scene7-http2faq.md)
    + [Solución de problemas de la integración de Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad](sharepoint-connector-licenses.md)
    + [Conector de SharePoint](sharepoint-connector.md)
-   + [Preguntas más frecuentes sobre el fin de vida útil del visualizador DHTML](dhtml-viewer-endoflifefaqs.md)
+   + [Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Integración con Adobe Campaign Classic](campaignonpremise.md)
    + [Artículos relacionados de la comunidad](related-community-articles.md)
    + [Integración con Adobe Campaign Standard](campaignstandard.md)
-   + [Aviso de final de asistencia para el visor Flash](flash-viewers-eol.md)
+   + [Aviso de fin de vida útil para el visualizador Flash](flash-viewers-eol.md)
    + [Integración con Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Alimentación de productos](product-feed.md)
    + [Integración con la administración dinámica de etiquetas de Adobe](dtm.md)
-   + [Opción en Adobe Analytics y Adobe Target](opt-in.md)
+   + [Selección de Adobe Analytics y Adobe Target](opt-in.md)
    + [Portales y portlets de AEM](aem-as-portal.md)
    + [Integración con Dynamic Media Classic (Scene7)](scene7.md)
    + [Fórmulas de Livefyre de AEM](aem-livefyre-recipes.md)
@@ -134,24 +138,24 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Integración con BrightEdge Content Optimizer](brightedge.md)
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
    + [Catalog Producer](catalog-producer.md)
-   + [Configuración de la integración de AEM Assets con Experience Cloud y Creative Cloud](configure-assets-cc-integration.md)
+   + [Configurar la integración de AEM Assets con Experience Cloud y Creative Cloud](configure-assets-cc-integration.md)
    + [Integración con Silverpop Engage](silverpop.md)
    + [Integración con Adobe Campaign](campaign.md)
    + [Integración con ExactTarget](exacttarget.md)
    + [Analytics con proveedores externos](external-providers.md)
-   + [Integración con Adobe Marketing Cloud](marketing-cloud.md)
+   + [Integración con el Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuración manual de la integración con Adobe Target](target-configuring.md)
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
    + [Clasificaciones de Adobe](adobeanalytics-classifications.md)
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
-   + [Integración de Target con fragmentos de experiencias](experience-fragments-target.md)
+   + [Integración de Destinatario con fragmentos de experiencia](experience-fragments-target.md)
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
 + Prácticas recomendadas  {#bestpractices}
    + [Prácticas recomendadas ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
-   + [Sitios AEM: preparación para RGPD](gdpr-compliance-sites.md)
+   + [AEM Sites - Preparación para RGPD](gdpr-compliance-sites.md)
    + [Gestión de solicitudes GDPR para AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Comercio AEM: preparación para RGPD](gdpr-compliance-commerce.md)
 + Administración de contenido {#contentmanagement}
@@ -160,5 +164,5 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [Administración de etiquetas](tags.md)
    + [Exportador de páginas](page-exporter.md)
    + [Consola de etiquetado de IU clásica](classic-console.md)
-   + [Administración de contenido para pantallas](content-management-screens.md)
+   + [Gestor de contenido para pantallas](content-management-screens.md)
    + [Acceso a WebDAV](webdav-access.md)

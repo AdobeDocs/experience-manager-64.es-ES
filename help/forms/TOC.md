@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: 'formularios '
 audience: end-user
 user-guide-title: Guía del usuario de AEM 6.4 Forms
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 1%
@@ -20,7 +21,7 @@ ht-degree: 1%
    + [Resumen de las nuevas funciones](using/whats-new.md)
    + [Funciones en desuso](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Introducción {#getting-started}
-   + [Introducción a AEM Forms](using/introduction-aem-forms.md)
+   + [Introducción a los AEM Forms](using/introduction-aem-forms.md)
    + [Introducción a la creación de formularios adaptables](using/introduction-forms-authoring.md)
    + [Introducción a las comunicaciones interactivas](using/interactive-communications-overview.md)
    + [Introducción a la administración de formularios](using/introduction-managing-forms.md)
@@ -37,8 +38,8 @@ ht-degree: 1%
       + [Tutorial: Creación de fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Creación de plantillas](using/create-templates-print-web.md)
       + [Tutorial: Crear comunicación interactiva](using/create-interactive-communication-tutorial.md)
-   + Materiales de referencia de formularios AEM {#aem-forms-reference-collaterals}
-      + [Configuración y configuración de sitios de referencia de AEM Forms](using/setup-reference-sites.md)
+   + AEM Forms Referencias Garantías Reales {#aem-forms-reference-collaterals}
+      + [Configurar y configurar sitios de referencia de AEM Forms](using/setup-reference-sites.md)
       + [Recorrido por el sitio de referencia de We.Finance](using/finance-reference-site-walkthrough.md)
       + [Recorrido por el sitio de referencia We.Gov](using/gov-reference-site-walkthrough.md)
       + [Recorrido por el sitio de referencia de autoservicio de los empleados](/help/forms/using/employee-self-service-reference-site.md)
@@ -49,10 +50,10 @@ ht-degree: 1%
       + [Temáticas de referencia](using/reference-themes.md)
       + [Plantillas de carta de referencia](using/reference-cm-layout-templates.md)
       + [Configurar Microsoft Dynamics 365 para el flujo de trabajo de hipoteca de origen del sitio de referencia We.Finance](using/ms-dynamics-configuration-home-mortgage.md)
-+ Instalación y configuración de AEM Forms {#install-aem-forms}
++ Instalar y configurar AEM Forms {#install-aem-forms}
    + [Arquitectura y topologías de implementación para AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Selección de un tipo de persistencia para una instalación de AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
-   + Instalación de AEM Forms en OSGi {#osgi-installation}
+   + Instalar AEM Forms en OSGi {#osgi-installation}
       + [Plataformas admitidas para formularios AEM en OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Instalación y configuración de servicios de documento](using/install-configure-document-services.md)
       + [Instalación y configuración de capacidades de captura de datos](using/installing-configuring-aem-forms-osgi.md)
@@ -60,18 +61,18 @@ ht-degree: 1%
       + [Instalación y configuración de Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + Install AEM Forms on JEE {#jee-installation}
       + [Plataformas compatibles con formularios AEM en JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Instalación e implementación de AEM Forms en JEE con la llave en mano de JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+      + [Instalación e implementación de AEM Forms en JEE mediante la llave en mano de JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [Instalación y configuración únicamente del servidor de seguridad de documento](using/installing-and-configuring-the-document-security-server.md)
-      + [Preparación de la instalación del servidor único de AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
+      + [Preparar la instalación de un servidor único de AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
       + [Instalación e implementación de AEM Forms en JEE para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
       + [Instalación e implementación de AEM Forms en JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
       + [Instalación e implementación de AEM Forms en JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-      + [Instalación de AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
+      + [Instalar AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [Instalación y configuración de Designer](using/installing-configuring-designer.md)
-      + [Preparación de la instalación del clúster de servidores de AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
-      + [Configuración de AEM Forms en JEE en el clúster de JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+      + [Preparar la instalación del clúster de servidores AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
+      + [Configurar AEM Forms en JEE en el clúster de JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
       + [Configuración de AEM Forms en JEE en el clúster de WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-      + [Configuración de AEM Forms en JEE en el clúster de WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+      + [Configurar AEM Forms en JEE en el clúster de WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
    + Configurar AEM Forms {#configure-aem-forms}
       + [Ajuste del rendimiento del servidor de AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configuración de la caché de formularios adaptables](using/configure-adaptive-forms-cache.md)
@@ -79,27 +80,27 @@ ht-degree: 1%
       + [Configuración del Planificador de sincronización](using/configure-synchronization-scheduler.md)
       + [Configuración del conector para Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Conexión de AEM Forms con Adobe LiveCycle](using/aem-livecycle-connector.md)
-      + [Configuración de AEM Forms para enviar datos de formulario a un proceso de AEM Forms en JEE](using/submit-form-data-livecycle-process.md)
+      + [Configuración de AEM Forms para enviar datos de formulario a un AEM Forms en el proceso JEE](using/submit-form-data-livecycle-process.md)
       + [Aplicación de escritorio AEM para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ Actualización de AEM Forms {#upgrade-aem-forms}
++ Actualizar AEM Forms {#upgrade-aem-forms}
    + [Rutas de actualización disponibles](using/upgrade.md)
    + Actualizar AEM Forms en OSGi {#aem-forms-osgi-upgrade}
       + [Actualización a formularios AEM 6.4 en OSGi](using/upgrade-forms-osgi.md)
       + [Instalar paquete de compatibilidad](using/compatibility-package.md)
-      + [Migración de recursos y documentos de AEM Forms](using/migration-utility.md)
+      + [Migrar recursos y documentos de AEM Forms](using/migration-utility.md)
    + Actualizar AEM Forms en JEE {#aem-forms-jee-upgrade}
       + [Preparación para actualizar AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
       + [Planificación y lista de comprobación de la actualización](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [Actualización a formularios AEM 6.4 en JEE](using/upgrade-forms-jee.md)
-      + [Actualización de una versión de AEM Forms a AEM 6.4 Forms en JEE para JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
+      + [Actualización de una versión para AEM Forms a AEM 6.4 Forms en JEE para JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
       + [Actualización de LiveCycle ES4 SP1 a Adobe Experience Manager Forms en JEE para JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [Actualización de una versión de AEM Forms a AEM 6.4 Forms en JEE para JBoss llave en mano](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
+      + [Actualización de una versión para AEM Forms a AEM 6.4 Forms en JEE para JBoss llave en mano](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
       + [Actualización de LiveCycle ES4 SP1 a AEM Forms en JEE para JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [Actualización de una versión de AEM Forms a AEM 6.4 Forms en JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
+      + [Actualización de una versión para AEM Forms a AEM 6.4 Forms en JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
       + [Actualización de LiveCycle ES4 SP1 a AEM Forms en JEE para WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Actualización de una versión de AEM Forms a AEM 6.4 Forms en JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
+      + [Actualización de una versión para AEM Forms a AEM 6.4 Forms en JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
       + [Actualización de LiveCycle ES4 SP1 a AEM Forms en JEE para WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
-+ Administrar formularios AEM {#manage-administer-aem-forms}
++ Administrar AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms en grupos y privilegios OSGi](using/forms-groups-privileges-tasks.md)
    + [Crear nuevas carpetas para categorizar formularios](using/creating-new-folders-categorize-forms.md)
    + [Búsqueda de formularios y recursos](using/searching-forms-or-assets.md)
@@ -117,10 +118,10 @@ ht-degree: 1%
       + [Administración de correspondencia](using/correspondence-management-handling-user-data.md)
       + [Integración con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [:Seguridad de los documentos](/help/forms/using/document-security-handling-user-data.md)
-   + Dotación del Entorno de AEM Forms {#hardening-aem-forms-environment}
+   + Reforzar el Entorno de los AEM Forms {#hardening-aem-forms-environment}
       + [Endurecimiento y seguridad de los formularios AEM en el entorno OSGi](using/hardening-securing-aem-forms-environment.md)
-      + [Consideraciones generales de seguridad para AEM Forms en JEE](using/general-security-considerations.md)
-      + [Cómo reforzar los formularios AEM en el Entorno JEE](using/hardening-aem-forms-jee-environment.md)
+      + [Consideraciones de seguridad general para AEM Forms en JEE](using/general-security-considerations.md)
+      + [Cómo endurecer a sus AEM Forms en el Entorno JEE](using/hardening-aem-forms-jee-environment.md)
       + [Configuración de la administración segura para AEM Forms en JEE](using/configuring-secure-administration-settings-aem.md)
 + Modelo de datos de formulario {#form-data-model}
    + [Introducción a la integración de datos de AEM Forms](using/data-integration.md)
@@ -192,23 +193,23 @@ ht-degree: 1%
 + Flujos de trabajo {#workflows}
    + [Flujo de trabajo centrado en formularios en OSGi](using/aem-forms-workflow.md)
    + [Flujo de trabajo centrado en formularios en OSGi: referencia de pasos](using/aem-forms-workflow-step-reference.md)
-   + [Seleccionar dinámicamente un usuario o grupo para los pasos del flujo de trabajo centrado en AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
-   + [Acciones y funciones de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
+   + [Seleccionar dinámicamente un usuario o grupo para los pasos del flujo de trabajo centrados en los AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Acciones y funciones de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo de OSGi y JEE de AEM Forms](using/capabilities-osgi-jee-workflows.md)
    + [Inicio de las API de servicios de Documento desde el flujo de trabajo de AEM](using/initiating-document-services-apis-aem.md)
 + Espacio de trabajo de AEM Forms {#use-aem-forms-workspace}
-   + [Introducción al espacio de trabajo de AEM Forms](using/introduction-html-workspace.md)
-   + [Uso del espacio de trabajo de AEM Forms](using/html-workspace-overview.md)
-   + [Arquitectura de AEM Forms Workspace](using/html-workspace-architecture.md)
+   + [Introducción al espacio de trabajo AEM Forms](using/introduction-html-workspace.md)
+   + [Uso del espacio de trabajo AEM Forms](using/html-workspace-overview.md)
+   + [Arquitectura del espacio de trabajo de AEM Forms](using/html-workspace-architecture.md)
    + [Funciones del espacio de trabajo de AEM Forms no disponibles en el espacio de trabajo de Flex](using/features-html-workspace-available-flex.md)
    + [Funciones del espacio de trabajo de Flex no disponibles en el espacio de trabajo de AEM Forms](using/features-flex-workspace-available-html.md)
    + [Interacción de la red troncal](using/backbone-interaction.md)
    + [Descripción de los componentes reutilizables](using/description-reusable-components.md)
    + [Detalles de Documento para el procesador](using/document-details-renderer.md)
-   + [Integración de componentes del espacio de trabajo de AEM Forms en aplicaciones web](using/integrating-html-ws-components-web.md)
+   + [Integración de componentes de espacio de trabajo de AEM Forms en aplicaciones web](using/integrating-html-ws-components-web.md)
    + [Nuevo servicio de procesamiento y envío](using/new-render-submit-service.md)
    + [Explicación de la estructura de carpetas](using/folder-structure.md)
    + [Integración de aplicaciones de terceros en el espacio de trabajo de AEM Forms](using/integrating-correspondence-management-html-workspace.md)
-   + [Descripción del objeto JSON del espacio de trabajo de AEM Forms](using/html-workspace-json-object-description.md)
+   + [Descripción del objeto JSON del espacio de trabajo AEM Forms](using/html-workspace-json-object-description.md)
    + [Introducción a la personalización del espacio de trabajo de formularios de AEM](using/introduction-customizing-html-workspace.md)
    + [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](using/generic-steps-html-workspace-customization.md)
    + [Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms](using/changing-locale-user-interface.md)
@@ -224,8 +225,8 @@ ht-degree: 1%
    + [Minificación de los archivos JavaScript](using/minification-javascript-files.md)
    + [Personalización de las tablas de seguimiento](using/sorting-tracking-tables-add-columns.md)
    + [Actualización del vínculo a la documentación](using/updating-link-help-documentation.md)
-   + [Uso de conjuntos de formularios en el espacio de trabajo de AEM Forms](using/form-sets-html-workspace.md)
-   + [API utilizadas en el espacio de trabajo de AEM Forms](using/apis-used-html-workspace.md)
+   + [Uso de conjuntos de formularios en el espacio de trabajo AEM Forms](using/form-sets-html-workspace.md)
+   + [API utilizadas en el espacio de trabajo AEM Forms](using/apis-used-html-workspace.md)
    + [Inicio de un nuevo proceso con datos de proceso existentes en el espacio de trabajo de AEM Forms](using/initiating-new-process-existing-process.md)
    + [Alojamiento de dos instancias de espacio de trabajo de AEM Forms en un servidor](using/two-html-workspace-instances-one.md)
    + [Cambio de la combinación de colores de la interfaz](using/changing-color-scheme-interface.md)
@@ -233,7 +234,7 @@ ht-degree: 1%
    + [Cambio del logotipo de la organización para la marca](using/changing-organization-logo-branding.md)
    + [Visualización de información en el panel Resumen de Tarea](using/displaying-information-task-summary-pane.md)
    + [Visualización del avatar del usuario](using/displaying-user-avatar.md)
-   + [Introducción al espacio de trabajo de AEM Forms](using/getting-started-livecycle-html-workspace.md)
+   + [Introducción al espacio de trabajo AEM Forms](using/getting-started-livecycle-html-workspace.md)
    + [Administración de tareas en una jerarquía organizativa mediante la Vista del administrador](using/tasks-organizational-hierarchy-using-manager.md)
    + [Iniciando procesos](using/starting-processes.md)
    + [Seguimiento de procesos](using/tracking-processes.md)
@@ -243,35 +244,35 @@ ht-degree: 1%
    + [Uso de listas pendientes](using/todo-lists.md)
    + [Directrices para la resolución de problemas del espacio de trabajo de AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms app {#aem-forms-app}
-   + [Introducción a la aplicación de AEM Forms](using/aem-forms-app.md)
-   + [Configuración de entorno para la aplicación de AEM Forms](using/setup-environment-mobile-workspace.md)
+   + [Introducción a la aplicación AEM Forms](using/aem-forms-app.md)
+   + [Configuración de la aplicación entorno para AEM Forms](using/setup-environment-mobile-workspace.md)
    + [Configure el proyecto Xcode y cree la aplicación de iOS](using/setup-xcode-project-build-installer.md)
-   + [Creación de una aplicación segura de AEM Forms para iOS](using/building-secure-mobile-workspace-app.md)
+   + [Creación de una aplicación segura para AEM Forms para iOS](using/building-secure-mobile-workspace-app.md)
    + [Configure el proyecto de Visual Studio y genere la aplicación de Windows](using/setup-visual-studio-project-build-installer.md)
    + [Configure el proyecto de estudio de Android y cree la aplicación de Android](using/setup-android-studio-project-build-installer.md)
-   + [Compilación de la aplicación para Android de AEM Forms](using/setup-eclipse-project-build-installer.md)
-   + [Distribución de la aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
+   + [Creación de la aplicación para Android de AEM Forms](using/setup-eclipse-project-build-installer.md)
+   + [Distribuir aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
    + [Personalización de gestos](using/gesture-customization.md)
    + [Personalización de promoción de la marca](using/branding-customization.md)
    + [Personalización de temas](using/theme-customization.md)
-   + [Inicio de sesión en la aplicación de AEM Forms](using/log-mobile-workspace.md)
+   + [Inicio de sesión en la aplicación AEM Forms](using/log-mobile-workspace.md)
    + [Pantalla principal](using/home-screen.md)
    + [Sincronización de la aplicación](using/sync-app.md)
    + [Uso de un formulario](using/working-with-form.md)
    + [Uso de puntos de inicio](using/working-with-startpoints.md)
    + [Apertura de una tarea](using/open-task.md)
    + [Guardar una tarea o un formulario como borrador](using/save-as-draft.md)
-   + [Uso del guardado automático en la aplicación de AEM Forms](using/autosave-data-app.md)
+   + [Uso del guardado automático en la aplicación AEM Forms](using/autosave-data-app.md)
    + [Guardar formularios como plantillas](using/save-forms-and-start-points-as-templates.md)
    + [Añadir archivos adjuntos](using/add-attachments.md)
    + [Trabajar en modo sin conexión](using/work-offline-mode.md)
    + [Actualización de la configuración general](using/update-general-settings.md)
-   + [Solución de problemas de la aplicación de AEM Forms](using/issues-aem-forms-app.md)
+   + [Solución de problemas de la aplicación AEM Forms](using/issues-aem-forms-app.md)
 + HTML5 Forms {#html5-forms}
    + [Introducción a los formularios HTML5](using/introduction.md)
    + [Introducción a los formularios HTML5](using/get-started.md)
    + [Arquitectura de formularios HTML5](using/html5-forms-architecture.md)
-   + [Diferenciación de funciones entre formularios HTML5 y PDF](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [Diferenciación de funciones entre formularios HTML5 y PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [Preguntas más frecuentes para formularios HTML5](using/faq.md)
    + [Diseño de plantillas de formulario para formularios HTML5](using/designing-form-template.md)
    + [Prácticas recomendadas para formularios HTML5](using/best-practices-for-html5-forms.md)
@@ -295,7 +296,7 @@ ht-degree: 1%
    + [Habilitar el registro para formularios HTML5](using/enable-logs.md)
    + [Depuración de formularios HTML5](using/debug.md)
    + [Compatibilidad con secuencias de comandos para formularios HTML5](using/scripting-support.md)
-   + [Formularios definidos en AEM Forms](using/formset-in-aem-forms.md)
+   + [Formulario definido en AEM Forms](using/formset-in-aem-forms.md)
 + Cartas y correspondencias {#letters-correspondences}
    + [Información general sobre la administración de correspondencias](using/cm-overview.md)
    + [Diseño de maquetación](using/layout-design-details.md)
@@ -320,13 +321,13 @@ ht-degree: 1%
    + [Condición en línea y repetición en comunicaciones interactivas y letras](using/cm-inline-condition.md)
    + [Fragmentos de documento](using/lists.md)
    + [Propiedades de configuración de Correspondencia Management](using/cm-configuration-properties.md)
-+ Integración de AEM Forms con las soluciones de Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
-   + [Creación de experiencias con objetivos en AEM Forms](/help/forms/using/experience-targeting-forms.md)
++ Integrar AEM Forms con soluciones Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
+   + [Crear experiencias con objetivos en AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Medir y mejorar la eficacia y conversión de los formularios](using/measure-improve-performance-forms-documents.md)
    + [Configuración de análisis e informes](using/configure-analytics-forms-documents.md)
    + [Vista y comprensión de los informes de análisis de AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Crear y administrar una prueba A/B para formularios adaptables](using/ab-testing-adaptive-forms.md)
-+ Publicación y procesamiento de formularios AEM {#publish-process-aem-forms}
++ Publicación y procesamiento de AEM Forms {#publish-process-aem-forms}
    + [Introducción a la publicación de formularios en un portal](using/introduction-publishing-forms.md)
    + [Ejemplo para integrar el componente de borradores y envíos con la base de datos](using/integrate-draft-submission-database.md)
    + [Configuración de los servicios de almacenamiento para borradores y envíos](using/configuring-draft-submission-storage.md)
@@ -371,7 +372,7 @@ ht-degree: 1%
    + [Referencia de secuencias de comandos de Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
    + [Referencia de FormCalc de Designer](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Uso de la firma manuscrita en formularios HTML5](using/scribble-signature.md)
-+ Personalización de AEM Forms {#customize-aem-forms}
++ Personalizar AEM Forms {#customize-aem-forms}
    + [Marco de apariencia para formularios adaptables y HTML5](using/introduction-widgets.md)
    + [Creación de una plantilla de formulario adaptable personalizada](using/custom-adaptive-forms-templates.md)
    + [Creación de componentes de diseño personalizados para formularios adaptables](using/custom-layout-components-forms.md)
@@ -571,17 +572,17 @@ ht-degree: 1%
    + [Resolución de problemas del Sistema de informes del proceso](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referencia del programador {#developer-reference}
    + [Conceptos básicos del desarrollador](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [Lenguaje de plantilla HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [Lenguaje de plantilla HTML](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
    + [Complemento de AEM para depurar formularios adaptables](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referencia de la API de Java de AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
-   + [Referencia de API de AEM Forms en JEE Java](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
+   + [AEM Forms en referencia de API de Java JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API de puente de formulario para formularios HTML5](using/form-bridge-apis.md)
    + [Servicio de ensamblador y referencia DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Ayuda de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + Programación con AEM Forms en JEE {#programming-aem-forms-jee}
       + Introducción a la programación con AEM Forms en JEE {#introduction-programming-aem-forms-jee}
          + [Introducción a la API de Java QuickStart](developing/introducing-java-api-soap-quick.md)
-         + [Invocación de formularios AEM mediante API](developing/invoking-aem-forms-using-apis.md)
+         + [Invocación de AEM Forms mediante API](developing/invoking-aem-forms-using-apis.md)
          + [Explicación de los procesos de AEM Forms](developing/aem-forms-processes.md)
          + [contenedor de servicio](developing/service-container.md)
       + Inicio rápido de la API de Java: ejemplos de código {#java-api-quick-start-code-examples}
@@ -613,11 +614,11 @@ ht-degree: 1%
          + [Inicio rápido de la API de Java del Administrador de usuarios (SOAP)](developing/user-manager-java-api-quick.md)
          + [Servicio de utilidades XMP APIQuick Inicio (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}
-         + [Invocación de formularios AEM mediante solicitudes REST](developing/invoking-aem-forms-using-rest.md)
-         + [Invocación de formularios AEM mediante Remoting](developing/invoking-aem-forms-using-remoting.md)
+         + [Invocación de AEM Forms mediante solicitudes REST](developing/invoking-aem-forms-using-rest.md)
+         + [Invocación de AEM Forms mediante Remoting](developing/invoking-aem-forms-using-remoting.md)
          + [Invocación de AEM Forms mediante servicios Web](developing/invoking-aem-forms-using-web.md)
          + [Invocación de AEM Forms mediante servicios Web](developing/invoking-human-centric-long-lived.md)
-         + [Invocación de AEM Forms mediante JavaAPI](developing/invoking-aem-forms-using-java.md)
+         + [Invocación de AEM Forms mediante la API de Java](developing/invoking-aem-forms-using-java.md)
          + [Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP](developing/creating-flash-builder-applications-perform.md)
       + Realización de operaciones de servicio mediante API {#performing-service-operations-using-apis}
          + [Realización de operaciones de servicio mediante API](developing/performing-service-operations-using-apis.md)
@@ -649,7 +650,7 @@ ht-degree: 1%
          + [Representación de formularios en el cliente](developing/rendering-forms-client.md)
          + [Representación de formularios HTML mediante archivos CSS personalizados](developing/rendering-html-forms-using-custom.md)
          + [Representación de formularios HTML con barras de herramientas personalizadas](developing/rendering-html-forms-custom-toolbars.md)
-         + [Representación de formularios PDF interactivos](developing/rendering-interactive-pdf-forms.md)
+         + [Representación de PDF forms interactivos](developing/rendering-interactive-pdf-forms.md)
          + [Formularios habilitados para derechos de representación](developing/rendering-rights-enabled-forms.md)
          + [Validación de Documentos DDX](developing/validating-ddx-documents.md)
          + [Conversión de archivos PDF a archivos Postscript e Image](developing/converting-pdf-postscript-image-files.md)
@@ -665,7 +666,7 @@ ht-degree: 1%
          + [Uso de Documentos PDF/A](developing/pdf-a-documents.md)
          + [Uso de las utilidades de PDF](developing/pdf-utilities.md)
          + [Uso de utilidades XMP](developing/xmp-utilities.md)
-         + [Preparación de AEM Forms para la copia de seguridad](developing/preparing-aem-forms-backup.md)
+         + [Preparación de AEM Forms para Backup](developing/preparing-aem-forms-backup.md)
          + [Administración de extremos mediante programación](developing/programmatically-endpoints.md)
          + [Administración mediante programación de los nodos de preferencias](developing/programmatically-preferences-nodes.md)
          + [Protección de Documentos con políticas](developing/protecting-documents-policies.md)

@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Classic UI Authoring User Guide
+user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.4 Classic
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +25,7 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Selección de la IU](author-env-select-ui.md)
    + [Buscar](author-env-search.md)
    + [Su bandeja de entrada](author-env-inbox.md)
-   + [Métodos abreviados de teclado para las consolas](author-env-keyboard-shortcuts.md)
+   + [Métodos abreviados del teclado para las consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
@@ -33,13 +37,13 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Anotaciones al editar una página](classic-page-author-annotations.md)
    + [Resolución de problemas de AEM durante la creación](classic-page-author-troubleshooting.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Creación de una página para dispositivos móviles ](classic-feature-mobile.md)
+   + [Crear una página para dispositivos móviles ](classic-feature-mobile.md)
    + [Componentes para la creación de páginas](classic-page-author-edit-mode.md)
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
    + [Diseño adaptable](classic-page-author-responsive-layout.md)
-   + [Uso de versiones de página ](classic-page-author-work-with-versions.md)
+   + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
    + [Uso de etiquetas](classic-feature-tags.md)
    + [Andamiaje](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
@@ -83,7 +87,7 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [Configurar un escenario estándar con Autodesk Maya y Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Adición de recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
    + [Añadir características de Scene7 a la página](manage-assets-classic-s7.md)
-   + [Uso de Dynamic Media](dynamic-media-assets.md)
+   + [Trabajo con Dynamic Media](dynamic-media-assets.md)
    + [Uso de recursos 3D](classicui-3dassets.md)
    + [Vídeo](manage-assets-classic-s7-video.md)
    + [Convenciones de nomenclatura para la prueba de recursos](asset-naming-conventions.md)

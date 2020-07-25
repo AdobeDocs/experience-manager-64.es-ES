@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: Guía del usuario de creación de AEM 6.4
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 88%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 # Guía del usuario de creación de AEM 6.4 {#authoring}
 
 + [Descripción general de la Guía del usuario de creación](home.md)
-+ Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
++ tareas, herramientas y conceptos básicos para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
@@ -20,7 +24,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Buscar](search.md)
    + [Configuración del entorno de cuenta](user-properties.md)
    + [Su bandeja de entrada](inbox.md)
-   + [Métodos abreviados de teclado para las consolas](keyboard-shortcuts.md)
+   + [Métodos abreviados del teclado para las consolas](keyboard-shortcuts.md)
    + [Selección de la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)
@@ -34,15 +38,15 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Fragmentos de experiencias](experience-fragments.md)
    + [Exportar a CSV](csv-export.md)
    + [Componentes](default-components.md)
-   + [Creación de una página para dispositivos móviles ](mobile.md)
+   + [Crear una página para dispositivos móviles ](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
    + [Prácticas recomendadas ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Uso de etiquetas](tags.md)
-   + [Creación de plantillas de página ](templates.md)
+   + [Creación de plantillas de página  ](templates.md)
    + [Sistema de estilos](style-system.md)
-   + [Uso de versiones de página ](working-with-page-versions.md)
+   + [Uso de versiones de página  ](working-with-page-versions.md)
    + [Diferencias de página](page-diff.md)
    + [Consola Componentes](default-components-console.md)
    + [Diseño adaptable](responsive-layout.md)
@@ -57,7 +61,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Administración de proyectos](touch-ui-managing-projects.md)
    + [Uso de tareas](task-content.md)
    + [Integración de proyectos y PIM creativos](managing-product-information.md) 
-   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md).
+   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
    + [Creación de lanzamientos](launches-creating.md)
@@ -67,7 +71,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Uso de flujos de trabajo](workflows.md)
    + [Aplicación de flujos de trabajo a las páginas](workflows-applying.md)
    + [Participación en flujos de trabajo](workflows-participating.md)
-   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md).
+   + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Rendimiento de la página {#page-performance}
    + [Perspectiva de contenido](content-insights.md)
    + [Analizar el rendimiento de la página](ci-analyze.md)
@@ -83,7 +87,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Administrar audiencias](managing-audiences.md) 
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
-+ AEM y Adobe Campaign {aem-adobe-campaign}
++ AEM y Adobe Campaign {aem-adobe-campaña}
    + [Trabajo con Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
    + [Orientación de Adobe Campaign](target-adobe-campaign.md)

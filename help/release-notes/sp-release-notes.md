@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 24%
 
 ---
@@ -995,10 +995,6 @@ Un paquete permanece en estado de instalación después de instalar el paquete d
 
 * Algunas imágenes JPEG de una plantilla XDP no se representan correctamente.  NPR-26702: revisión para LC-3917457
 
-**Formularios - OBSOLETO**
-
-* El servicio de captura de papel se bloquea al procesar archivos TIFF. NPR-28079: revisión para CQ-4240649
-
 **Forms: flujo de trabajo**
 
 * Los formularios HTML5 con proceso de envío predeterminado en an.lca no funcionan en JBoss 7. NPR-28675: revisión para CQ-4243928
@@ -1033,40 +1029,40 @@ Lista de paquetes de contenido incluidos en AEM 6.4.4.0
 
 AEM 6.4.3.0 es una actualización importante que incluye correcciones y mejoras clave de rendimiento, estabilidad, seguridad y del cliente realizadas tras la disponibilidad general de AEM 6.4 en abril de 2018.
 
-También es acumulativo, lo que significa que 6.4.3.0 incluye todas las versiones de los Service Packs de AEM 6.4 que se hayan publicado antes.
+It is also cumulative which means that 6.4.3.0 includes all AEM 6.4 service packs release before it.
 
-Algunos de los aspectos destacados de AEM 6.4.3.0 son:
+Some of the key highlights of AEM 6.4.3.0 are:
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.8.9.
-* Se Añadió la compatibilidad con la propiedad allowPaths en las plantillas de formularios adaptables.
-* Búsqueda mejorada basada en paneles para Recursos en AEM
-* Correcciones de secuencias de comandos entre sitios (XSS) en la página Inicio de sesión.
-* Se ha mejorado la instrumentación de la interfaz de usuario.
-* Mejoras en la administración de FormData.
-* Se ha mejorado el manejo de la nominación de elementos dentro de un campo múltiple.
-* Se ha mejorado la gestión de los elementos de marcador de posición (Vista de tarjeta y Vista de Lista) durante la selección.
-* Se Añadió la autenticación IMS de Adobe y la compatibilidad de Admin Console con los servicios administrados.
+* Added support for allowedPaths property on Adaptive forms templates.
+* Enhanced panel based search for Assets in AEM
+* Cross-site scripting (XSS) fixes in the Login page.
+* Improved UI instrumentation.
+* Improvements in FormData handling.
+* Improved handling of item naming inside a Multifield.
+* Improved handling of placeholder items (Card View and List View) during selection.
+* Added Adobe IMS Authentication and Admin Console Support for Managed Services.
 
 **Assets**
 
-* El flujo de trabajo de recursos de actualización de DAM no extrae referencias de archivos INDD si la opción ID Decouple está activada. NPR-26243; Revisión para CQ-4250933
+* The DAM Update Asset workflow does not extract references from INDD files if the IDS Decouple option is enabled. NPR-26243; Revisión para CQ-4250933
 * El mensaje de éxito no se muestra cuando los recursos se publican con el Editor masivo de recursos. NPR-26252; Revisión para CQ-4251688.
-* Después de ver un recurso desde un resultado de búsqueda, si hace clic en el botón Atrás del explorador, se genera un mensaje de error &quot;Solicitud incorrecta&quot; con un código de error 400. NPR 26578; Revisión para CQ-4253741
-* Los metadatos del recurso muestran un error de Área de nombres no válido tras instalar un Service Pack. NPR-22341; Quickfix para CQ-4237202
-* La opción para reordenar las carpetas y los fragmentos de contenido en la vista de lista no se muestra en las carpetas correspondientes. NPR-27153; Revisión para CQ-4255873
-* Los usuarios no pueden agregar recursos a una nueva colección, ya que se genera un mensaje de error con una imagen rota en el cuadro de diálogo emergente de error. NPR-22431; Revisión para CQ-4237086
+* Having looked at an asset from a search result, if you click the Back button in the browser, it leads to a &#39;Bad Request&#39; error message with 400 error code. NPR 26578; Revisión para CQ-4253741
+* The asset metadata shows invalid namespace error after installing a service pack. NPR-22341; Quickfix for CQ-4237202
+* The option to reorder folders and content fragments in list view is not displayed for the applicable folders. NPR-27153; Revisión para CQ-4255873
+* Users are not able to add assets to a new collection, as it results in an error message with a broken image in the error popup dialog. NPR-22431; Revisión para CQ-4237086
 * La lista desplegable en cascada no es compatible con las listas desplegables dinámicas. NPR-27043; Revisión para CQ-4252564
-* Si los usuarios establecen un valor no predeterminado para la &quot;Carpeta raíz de la Compañía&quot; en la configuración de nube de DMS7, el ajuste preestablecido de visor no funciona como se espera. NPR-26360; Revisión para CQ-4249505
-* El sistema de informes de recursos no funciona en instancias con un gran número de recursos. NPR-27278; Revisión para CQ-4256748
-* Las subcarpetas no heredan el perfil de imagen SmartCrop de la carpeta principal. NPR-27197; Revisión para CQ-4256273
+* If users set a non-default value for the &#39;Company Root Folder&#39; in the DMS7 cloud config, the Viewer Preset does not work as expected. NPR-26360; Revisión para CQ-4249505
+* Asset reporting is failing for instances with a very large number of assets. NPR-27278; Revisión para CQ-4256748
+* Subfolders do not inherit the parent folder&#39;s SmartCrop image profile. NPR-27197; Revisión para CQ-4256273
 * Cuando se habilita la integración con Dynamic Media, se modifican algunas propiedades de metadatos de Recursos. No se muestran los atributos de anchura, altura y ubicación. NPR-27203; Revisión para CQ-4256258
 * Dynamic Media no utiliza el proxy configurado para algunos tipos de recursos. NPR-25211; Revisión para CQ-4244871
-* La página Editor de metadatos contiene una excepción de puntero nulo para un parámetro de elemento no válido. NPR-26169; Revisión para CQ-4241368.
-* Si una lista desplegable tiene una regla de opciones y se le ha aplicado una regla necesaria, la regla requerida no se puede cumplir en el editor de metadatos. NPR-27479; Revisión de CQ-4251428
+* Metadata Editor page contains Null Pointer Exception for invalid item parameter. NPR-26169; Revisión para CQ-4241368.
+* If a drop-down has a choice rule and a required rule applied to it, the required rule cannot be satisfied in the metadata editor. NPR-27479; Hotfix of CQ-4251428
 
 **Sites**
 
-* Un usuario puede controlar las funciones del editor de texto enriquecido en el modo de pantalla completa en línea mediante políticas de contenido, pero no puede controlar las funciones del editor de texto enriquecido del cuadro de diálogo Editar con políticas de contenido. NPR-26750: revisión para CQ-4241130
+* A user can control the rich text editor features in the in-line full screen mode using content policies, but cannot control the Edit Dialog rich text editor features with content policies. NPR-26750: revisión para CQ-4241130
 * El editor de texto enriquecido no se puede utilizar cuando se cambia de pantalla completa a cuadro de diálogo flotante. La vista flotante contiene dos editores de texto enriquecido. NPR-25589: revisión para CQ-4206008
 * Cuando se pulsa la tecla de retorno (tecla Intro) en un campo de texto, el editor de texto enriquecido cambia al modo de pantalla completa. NPR-26204: revisión para CQ-4245893
 * El complemento de Lista del editor de texto enriquecido se desactiva automáticamente y no permite modificaciones. NPR-26507: revisión para CQ-4239387
@@ -1076,7 +1072,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 * Cuando el editor de texto enriquecido se combina con varios campos, se produce el error Uncaught TypeError: fieldAPI.getName is not a function at foundation.js. NPR-27146: revisión para CQ-4253155
 * La integración de Salesforce no puede utilizar la configuración proxy. NPR-27244: revisión para CQ-4245300
 * Al programar una página para su activación mediante la opción Administrar publicación para una fecha posterior y cambiar a la vista de lista, falta el icono de calendario. NPR-26974: revisión para CQ-4239206
-* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión para CQ-4254858
+* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089No se pueden editar etiquetas mediante el etiquetado. NPR-26957: revisión para CQ-4254858
 * Cuando se mueve una etiqueta a la que se hace referencia desde un modelo de fragmento de contenido estructurado, las referencias existentes a la etiqueta dentro de un fragmento de contenido no se actualizan. Esto sucede en la pantalla de edición del modelo de fragmento de contenido. NPR-26776: revisión para CQ-4251805
 * Al crear y promocionar un lanzamiento con varias páginas, se crean varias versiones para cada página. NPR-26917: revisión para CQ-4254663
 * AEM siteadmin no gestiona las rutas escritas en la barra de direcciones del navegador. NPR-26780: revisión para CQ-4254097
@@ -1255,6 +1251,7 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
 * No se puede mostrar la configuración de Sistema de informes de estándares y cumplimiento de normas para el generador de PDF. NPR-26715: revisión para CQ-4253384
 * falta el archivo binario convertpdf en el paquete del complemento AIX Forms, lo que provoca un error al invocar el servicio PDFA. Revisión para CQ-4257873
+* El servicio de captura de papel se bloquea al procesar archivos TIFF. NPR-28079: revisión para CQ-4240649
 
 **Servicios de documentos**
 
@@ -1339,8 +1336,8 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * Las funciones de la especificación del lenguaje de plantilla HTML 1.4 son compatibles con AEM 6.4.2.0 NPR-24585
 * Herencia incorrecta en el componente local después de copiar una página de Live Copy. NPR-25920: revisión para CQ-4236737, CQ-4248957
 * El tiempo de activación y desactivación se almacena en crx/de pero no se obtiene lo mismo en la consola de la interfaz de usuario de las propiedades de página. NPR-25154: revisión para CQ-4243431
-* El sistema de estilos rompe los valores de las propiedades iniciales del cuadro de diálogo. NPR-25648: revisión para CQ-4250073
-* Al definir una propiedad cq:tagName en un nodo cq:htmlTag, el nombre de la etiqueta no se tiene en cuenta si el componente se incluye mediante JSP. NPR-24154: revisión para CQ-4244120
+* Styles System breaks dialog&#39;s initial properties values. NPR-25648: revisión para CQ-4250073
+* When defining a cq:tagName property in a cq:htmlTag node, the tag name is not considered if the component is included via JSP. NPR-24154: revisión para CQ-4244120
 * Para los componentes parsys anidados, siempre se aplica el primer diseño satisfactorio (con la ruta menos anidada) de varios componentes disponibles. Para obtener más información, consulte Resolución [de ruta de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/page-templates-static.html)diseño. NPR-24973: revisión para CQ-4246276
 * Al pegar texto en un componente RTE, se muestra un cuadro de diálogo emergente, pero no se representa correctamente. NPR-24895: revisión para CQ-4245901
 * (RTE) Problemas de rendimiento con indicador de campo obligatorio. NPR-24894: revisión para CQ-4241895
@@ -1391,7 +1388,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 
 **Seguridad**
 
-* El reinicio de sesión de SAML redirige a la página de cierre de sesión usando el IDP de Okta. NPR-25523: revisión para GRANITE-22364
+* SAML re-login redirects to logout page using Okta IDP. NPR-25523: revisión para GRANITE-22364
 * La autenticación IMS a través de OAK IDP externo OAuth Provider deshabilita el usuario creado en AEM. NPR-25301: revisión para Granite-22363
 
 **MAC: Integración de Test&amp;Target**
@@ -1417,15 +1414,15 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * (Resultados de la búsqueda) El botón Atrás del explorador no funciona correctamente. NPR-25214: revisión para CQ-4248574
 * Se devuelve Null cuando se superpone el componente communitygroupmemberlist. NPR-25228: revisión para CQ-4248523
 * (Calendario de comunidades) ClassCastException se genera al guardar el evento con la nueva imagen de portada. NPR-25167: revisión para CQ-4248662
-* (Comunidades) Mensajes que se truncan. NPR-25326
+* (Communities) Messages getting truncated. NPR-25326
 * (AEM Publish) El recurso de puntuación falla con la ruta de contexto y muestra la pantalla en blanco. NPR-26155: revisión para CQ-4251942
-* (MSRP) El calendario recién creado se guarda parcialmente y se envía NPE al registro de errores. NPR-26071: revisión para CQ-4250531
-* La paginación Foro/Tema solo se actualiza cuando se actualiza la página. NPR-26070, NPR-25965: revisión para CQ-4249509
+* (MSRP) The newly created calendar is saved partially throwing NPE in the error log. NPR-26071: revisión para CQ-4250531
+* Forum/Topic pagination only gets updated when the page is refreshed. NPR-26070, NPR-25965: revisión para CQ-4249509
 * (Foro de preguntas y respuestas) No se puede navegar a la página anterior al abrir un vínculo directo a un comentario. NPR-26069: revisión para CQ-4251699
 * La carga de imágenes en el grupo Crear no funciona en móviles. NPR-26172: revisión para CQ-4251703
 * (Mensajería) Al utilizar DSRP, el nombre del receptor de mensajes siempre se muestra como &quot;Desconocido&quot;. NPR-26056: revisión para CQ-4251397
 * La etiqueta de estado de finalización de recursos de Puntuación de habilitación aparece vacía en la interfaz de usuario. NPR-26034: revisión para CQ-4249994
-* Al crear un nuevo grupo de comunidad, se crea un grupo de comunidad de duplicado en un clúster mongoMK activo/activo. NPR-26032: revisión para CQ-4245884
+* While creating a new community group, a duplicate community group is created on an active/active mongoMK cluster. NPR-26032: revisión para CQ-4245884
 * (Autor) El asistente para la creación de grupos tarda demasiado en cargar o crear un grupo en el asistente. NPR-26031: revisión para CQ-4244966
 * Parsys desaparece al agregar una sentencia include en el script hbs. NPR-25908: revisión para CQ-4250489
 * Al habilitar “Permitir privilegiados”, los miembros privilegiados solo pueden componer para usuarios que son miembros de la comunidad. NPR-25877: revisión para CQ-4248450
@@ -1434,80 +1431,80 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * El desplazamiento automático y el resaltado no funcionan en eventos de calendario y de biblioteca de archivos en caso de comentarios anidados. NPR-25958: revisión para CQ-4251471
 * (DSRP) Rendimiento de Direct/Deep Link degradante con grandes cantidades de contenido generado por el usuario. NPR-25957: revisión para CQ-4251470
 * No se pueden modificar las propiedades de Permitir miembros privilegiados y miembros privilegiados. NPR-26014: revisión para CQ-4244592
-* Marcar todo como leído restablece los contadores de notificaciones de todas las páginas de comunidad. NPR-25931: revisión para CQ-4248612
-* Error de edición de TI para DSRP. NPR-25929: revisión para CQ-4251382
-* Los sistemas de correo electrónico fallan debido a NPE al crear plantillas de correo electrónico. NPR-26039: revisión para CQ-4250962
+* Mark all as read resets the notification counters for all community pages. NPR-25931: revisión para CQ-4248612
+* Edit ITs failing for DSRP. NPR-25929: revisión para CQ-4251382
+* Email ITs failing due to NPE while building email templates. NPR-26039: revisión para CQ-4250962
 * Problemas de subproceso de foro al incrustar imágenes con muy alta resolución. NPR-26037: revisión para CQ-4244453, CQ-4253099
 * La hora muestra los conmutadores cuando la zona horaria del servidor difiere de la del usuario. NPR-26036: revisión para CQ-4248751
-* Al adjuntar un archivo dos veces con el mismo nombre a una publicación de foro, se produce un error en el servidor. NPR-24172: revisión para CQ-4244367
+* Attaching a file twice with same name to a forum post leads to server error. NPR-24172: revisión para CQ-4244367
 * Correcciones del rendimiento de la compatibilidad: agrupe la paginación en la creación y publicación, la búsqueda en grupo del autor, la evitación de la serialización de las respuestas para historiales, calendarios e ideas y la carga diferida para obtener la pertenencia al grupo (invitar/desinvitar) en cada grupo mientras visualiza la página de la lista de grupos. NPR-24538: revisión para CQ-4246515
-* Los recursos de habilitación no están visibles en el autor. Revisión para CQ-4252618
-* Las notificaciones no se generan para el subproceso de usuario desconocido. Revisión para CQ-4245132
-* La búsqueda de grupos no aparece en el carril izquierdo. Revisión para CQ-4252621
-* (Autor) La paginación no funciona para la consola Grupos. Revisión para CQ-4242786
-* Actualización de la interfaz de usuario de jQuery. Revisión para CQ-4248894
-* Actualice a la versión más reciente de SCORM 2017.1. NPR-25675: revisión para CQ-4240671
-* Los campos &quot;Componer en nombre&quot; son visibles para los usuarios que no son de la comunidad. NPR-25331: revisión para CQ-4247858
-* La publicación sigue estando visible en la interfaz de usuario incluso después de eliminarla y genera un error en la consola. NPR-26290: revisión para CQ-4252803
-* (Configuración del sitio) Se pueden guardar los cambios realizados en las funciones. NPR-26274: revisión para CQ-4252187
-* (Vulnerabilidad de seguridad) Toma de cuentas debido a una configuración incorrecta del testigo web JSON. NPR-26458: revisión para CQ-4253314
+* Enablement Resources are not visible on author. Revisión para CQ-4252618
+* Notifications do not get generated for thread from unknown user. Revisión para CQ-4245132
+* Group search does not appear on left rail. Revisión para CQ-4252621
+* (Author) Pagination is not working for Groups Console. Revisión para CQ-4242786
+* jQuery UI upgrade. Revisión para CQ-4248894
+* Upgrade to latest SCORM 2017.1 version. NPR-25675: revisión para CQ-4240671
+* The &quot;Compose on Behalf&quot; fields is visible to non-community users. NPR-25331: revisión para CQ-4247858
+* Post is still visible on UI even after deletion and gives error on console. NPR-26290: revisión para CQ-4252803
+* (Site settings) Umable to save changes done to Roles. NPR-26274: revisión para CQ-4252187
+* (Security Vulnerability) Account Takeover due to JSON Web Token Misconfiguration. NPR-26458: revisión para CQ-4253314
 * La paginación no se restablece al eliminar las respuestas. NPR-26326: revisión para CQ-4252997
-* La imagen adjunta no se muestra en Borradores durante la edición. Revisión para CQ-4253360
-* La página no se está actualizando al adjuntar datos adjuntos en Base de datos relacional (DSRP). Revisión para CQ-4253084
-* Los grupos no funcionan dentro del recurso del sitio de habilitación. Revisión para CQ-4252975
-* Requisitos previos Las rutas de aprendizaje no se mantienen en la habilitación. Revisión para CQ-4252948
+* Attachment image is not displayed in Drafts while editing. Revisión para CQ-4253360
+* Page is not refreshing while attaching attachment in Relational Database (DSRP). Revisión para CQ-4253084
+* Groups are not working inside Enablement site resource. Revisión para CQ-4252975
+* Prerequisites Learning Paths are not persisted in Enablement. Revisión para CQ-4252948
 
 **Flujo de trabajo**
 
-* La interfaz de usuario del iniciador de flujo de trabajo no muestra las últimas 41 configuraciones del iniciador y activa un error de javascript en la consola. NPR-25028: revisión para CQ-4247604
-* Editar un flujo de trabajo heredado sin editar su iniciador hace que se creen varios flujos de trabajo en cualquier flujo de trabajo que contenga un paso Activar página/recurso. NPR-25870: revisión para CQ-4250896
-* Vínculo incorrecto en la carga útil del flujo de trabajo si la página tiene un nodo de metadatos. NPR-25916: revisión para CQ-4250733
+* Workflow launcher UI does not display past 41 launcher configurations and triggers a javascript error in the console. NPR-25028: revisión para CQ-4247604
+* Editing a legacy workflow without editing its launcher causes multiple workflows to get created on any workflow which contains an Activate Page/Asset step. NPR-25870: revisión para CQ-4250896
+* Incorrect link in workflow payload if page has a metadata node. NPR-25916: revisión para CQ-4250733
 
 **Traducción**
 
-* Se ha corregido que la importación de proyectos traducidos produce dos solicitudes POST simultáneas, lo que provoca errores. NPR-24889: revisión para CQ-4247638
-* Se corrigió que, al crear un proyecto de traducción para varios idiomas, todas las páginas del mismo idioma se agregaban al mismo trabajo. NPR-25091: revisión para CQ-4246112
-* Se corrigió que, en algunos casos, el trabajo de traducción solo lista las 40 páginas principales. NPR-25974: revisión para CQ-4248661
-* El componente DataPicker (Coral2) no cambia el año. NPR-24466: revisión para Granite-21893
+* Fixed that importing translated project makes two concurrent POST requests, hence, causing error. NPR-24889: revisión para CQ-4247638
+* Fixed that when creating translation project for multiple languages, all the pages for the same language get added to the same job. NPR-25091: revisión para CQ-4246112
+* Fixed that in some cases, translation job only list the top 40 pages. NPR-25974: revisión para CQ-4248661
+* DataPicker component (Coral2) not changing the year. NPR-24466: revisión para Granite-21893
 
 **IU: bases**
 
-* Backports de la interfaz de usuario de la base proactiva. NPR-24344, NPR-24345, NPR-25176, NPR-25095, NPR-24332, NPR-25653, NPR-25932, NPR-2599 35, NPR-25976
-* (Importador de diseños) La importación de una página no importa el archivo js,css. NPR-25203: revisión para Granite-22236
-* Interfaz de usuario de base proactiva para mejorar la estabilidad del producto. NPR-24334
+* Backports de la interfaz de usuario de la base proactiva. NPR-24344, NPR-24345, NPR-25176, NPR-25095, NPR-24332, NPR-25653, NPR-25932, NPR-25935, NPR-25976
+* (Design Importer) Importing a page does not import the js,css. NPR-25203: revisión para Granite-22236
+* Proactive Foundation UI Backports to improve the stability of the product. NPR-24334
 
 **MAC: Integración de Test&amp;Target**
 
-* La segunda página de PersonalizationWizard ( iniciada por &quot;Inicio Targeting&quot;) está en blanco y genera errores de consola. Revisión para CQ-4253277
+* Second page of PersonalizationWizard ( launched by &quot;Start Targeting&quot; ) is blank and throws console errors. Revisión para CQ-4253277
 
 **Fragmentos de experiencias**
 
-* Integración de fragmentos de experiencia/Destinatario con AEM 6.4.2.0. Revisión para CQ-4248653
+* Merged Experience Fragments/Target Integration to AEM 6.4.2.0. Hotfix for CQ-4248653
 
 **Administración de fragmentos de contenido**
 
-* Anotaciones de fragmentos de contenido y comparación paralela de versiones de fragmentos de contenido. Revisión para CQ-4247148
+* Content Fragments annotations, and side-by-side comparison of Content Fragment versions. Revisión para CQ-4247148
 
 **DAM: General**
 
 * El filtro &quot;Desprotegido por&quot; no funciona correctamente en la búsqueda. Revisión para CQ-4247070
-* Al realizar el flujo de trabajo de actualización de recursos, la copia del idioma del recurso y su miniatura quedan en blanco. Revisión para CQ-4250641
-* Duplicado-id: el valor del atributo id debe ser único. Revisión para CQ-4250905
-* Etiqueta: Los elementos de formulario deben tener etiquetas. Revisión para CQ-4250906
-* Link-name: Los vínculos deben tener un texto discernible. Revisión para CQ-4250907
-* Migración de plantillas de metadatos de carpetas de puertos JMX y ServiceUserMapping. Revisión para CQ-4252947
+* On performing asset update workflow, the asset language copy and its thumbnail becomes blank. Revisión para CQ-4250641
+* Duplicate-id: id attribute value must be unique. Revisión para CQ-4250905
+* Label: Form elements must have labels. Revisión para CQ-4250906
+* Link-name: Links must have discernible text. Revisión para CQ-4250907
+* Port Folder Metadata Template Migration JMX and ServiceUserMapping. Revisión para CQ-4252947
 * Las pruebas WebdriverIO no se ejecutan en la rama 640 de CQ/dam. Revisión para CQ-4252749
-* Los vínculos a recursos movidos no se vuelven a factorizar si se publica el vínculo. Revisión para CQ-4245756
+* Links to moved assets are not refactored if link is published. Revisión para CQ-4245756
 
 **DAM: visores**
 
-* Error intermitente al cargar vídeo con nuevos visores 5.10.1. Revisión para CQ-4250562
+* Intermittent error on loading video with new viewers 5.10.1. Hotfix for CQ-4250562
 
 **DAM-Brand Portal**
 
-* Error al cancelar la publicación de la colección de Brand Portal. Revisión para CQ-4245990
+* Unpublish collection from Brand Portal is failing with error. Revisión para CQ-4245990
 * No se pueden cancelar la publicación de ajustes preestablecidos de imagen desde Brand Portal. Revisión para CQ-4246140
-* Los subrecursos de un archivo PDF de varias páginas no se publican cuando se publica un recurso. Revisión para CQ-4245162
+* Subassets of a multi page pdf file do not get published when an asset is published. Revisión para CQ-4245162
 
 **DAM - DMClient**
 
@@ -1877,7 +1874,7 @@ AEM 6.4.1.0 se puede instalar en AEM 6.4 GA. Algunos de los aspectos destacados 
 * Al obtener una vista previa de un vídeo en la vista de una tarjeta, el botón de reproducción no cambia a pausa. Revisión para CQ-4238592
 * Al realizar una actualización de inclusión, la configuración de YouTube no se mueve ni copia de su ubicación antigua a la nueva ubicación. Revisión para CQ-4238590
 * DropDos Perfiles de procesamiento de vídeo AVS de OOTB se enumeran en Propiedades de carpeta y solo uno contiene codificaciones definidas. Revisión para CQ-4238096
-* (DMS7) Recorte inteligente: Vista de detalles: El botón URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
+* (DMS7) Recorte inteligente: Vista de detalles: El botón de URL está etiquetado como botón Copiar para las representaciones. Revisión para CQ-4237804
 * La página de lista de ajustes preestablecidos de visor permanece en blanco incluso después de ejecutar los comandos curl. Revisión para CQ-4243246
 * Se ha deshabilitado la ejecución manual de pasos de limpieza y el uso de clases de coral privadas. Revisión para CQ-4239729
 * La página Detalles del informe de video no muestra recursos de video. Revisión para CQ-4246208

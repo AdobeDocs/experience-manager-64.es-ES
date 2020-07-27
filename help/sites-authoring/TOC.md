@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de AEM 6.4
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: e0b25517821971098978db078b2f205a8a380459
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 88%
+source-wordcount: '267'
+ht-degree: 89%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 88%
    + [Administrar audiencias](managing-audiences.md) 
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
-+ AEM y Adobe Campaign {aem-adobe-campaña}
++ AEM y Adobe Campaign {#aem-adobe-campaign}
    + [Trabajo con Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
    + [Orientación de Adobe Campaign](target-adobe-campaign.md)

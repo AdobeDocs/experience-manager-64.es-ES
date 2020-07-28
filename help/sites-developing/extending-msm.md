@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2588'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,9 @@ Esta página le ayuda a ampliar las funcionalidades del Administrador de múltip
 
 * Obtenga información sobre los principales miembros de la API Java de MSM.
 * Cree una nueva acción de sincronización que pueda utilizarse en una configuración de implementación.
-* Elimine el paso &quot;Capítulos&quot; del asistente Crear sitio.
 * Modifique el idioma y los códigos de país predeterminados.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >

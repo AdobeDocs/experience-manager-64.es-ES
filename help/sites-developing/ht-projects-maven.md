@@ -1,8 +1,8 @@
 ---
-title: Cómo crear proyectos de AEM con Apache Maven
-seo-title: Cómo crear proyectos de AEM con Apache Maven
-description: Este documento describe cómo configurar un proyecto de AEM basado en Apache Maven
-seo-description: Este documento describe cómo configurar un proyecto de AEM basado en Apache Maven
+title: Cómo construir AEM proyectos con Apache Maven
+seo-title: Cómo construir AEM proyectos con Apache Maven
+description: Este documento describe cómo configurar un proyecto AEM basado en Apache Maven
+seo-description: Este documento describe cómo configurar un proyecto AEM basado en Apache Maven
 uuid: 675932d3-dabb-4066-a743-75bdf4f049d7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Cómo crear proyectos de AEM con Apache Maven{#how-to-build-aem-projects-using-apache-maven}
+# Cómo construir AEM proyectos con Apache Maven{#how-to-build-aem-projects-using-apache-maven}
 
 ## Información general {#overview}
 
-Este documento describe cómo configurar un proyecto de AEM basado en [Apache Maven](https://maven.apache.org/).
+Este documento describe cómo configurar un proyecto AEM basado en [Apache Maven](https://maven.apache.org/).
 
-Apache Maven es una herramienta de código abierto para administrar proyectos de software automatizando las compilaciones y proporcionando información de calidad sobre los proyectos. Es la herramienta de administración de compilación recomendada para los proyectos de AEM.
+Apache Maven es una herramienta de código abierto para administrar proyectos de software automatizando las compilaciones y proporcionando información de calidad sobre los proyectos. Es la herramienta de gestión de la compilación recomendada para AEM proyectos.
 
-La creación de un proyecto de AEM basado en Maven le ofrece varias ofertas:
+La creación de su proyecto AEM basado en Maven le ofrece varias ofertas:
 
 * Un entorno de desarrollo basado en IDE
-* Uso de los tipos y artefactos de Maven proporcionados por Adobe
+* Uso de los arquetipos y artefactos de las masas proporcionados por el Adobe
 * Uso de conjuntos de herramientas de Apache Sling y Apache Felix para configuraciones de desarrollo basadas en Maven
 * Facilidad de importación en un IDE; por ejemplo, Eclipse y/o IntelliJ
 * Fácil integración con sistemas de integración continua
@@ -38,15 +38,15 @@ La creación de un proyecto de AEM basado en Maven le ofrece varias ofertas:
 
 ### ¿Qué es UberJar? {#what-is-the-uberjar}
 
-&quot;UberJar&quot; es el nombre informal que se le da a un archivo Java (JAR) especial proporcionado por Adobe. Este archivo JAR contiene todas las API de Java públicas expuestas por Adobe Experience Manager. También incluye bibliotecas externas limitadas, específicamente todas las API públicas disponibles en AEM que provienen de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava y dos bibliotecas utilizadas para el procesamiento de imágenes (la biblioteca CYMK JPEG ImageIO de Werner Randelshofer y la biblioteca de imágenes TwelveMonkeys). UberJar solo contiene interfaces y clases de API, lo que significa que solo contiene interfaces y clases que se exportan mediante un paquete OSGi en AEM. También contenía un archivo *MANIFEST.MF* que contenía las versiones de exportación de paquetes correctas para todos estos paquetes exportados, asegurando así que los proyectos creados con UberJar tengan los intervalos de importación de paquetes correctos.
+&quot;UberJar&quot; es el nombre informal que se le da a un archivo Java (JAR) especial proporcionado por Adobe. Este archivo JAR contiene todas las API de Java públicas expuestas por Adobe Experience Manager. También incluye bibliotecas externas limitadas, específicamente todas las API públicas disponibles en AEM que provienen de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava y dos bibliotecas utilizadas para el procesamiento de imágenes (la biblioteca CYMK JPEG ImageIO de Werner Randelshofer y la biblioteca de imágenes de DoceMonkeys). UberJar solo contiene interfaces y clases de API, lo que significa que solo contiene interfaces y clases que se exportan mediante un paquete OSGi en AEM. También contenía un archivo *MANIFEST.MF* que contenía las versiones de exportación de paquetes correctas para todos estos paquetes exportados, asegurando así que los proyectos creados con UberJar tengan los intervalos de importación de paquetes correctos.
 
-### ¿Por qué ha creado Adobe el UberJar? {#why-did-adobe-create-the-uberjar}
+### ¿Por qué el Adobe creó el UberJar? {#why-did-adobe-create-the-uberjar}
 
-En el pasado, los desarrolladores tenían que gestionar un número relativamente grande de dependencias individuales a distintas bibliotecas de AEM y, cuando se utilizaba cada nueva API, se debían añadir al proyecto una o varias dependencias individuales. En un proyecto, la introducción de UberJar tuvo como resultado la eliminación de 30 dependencias distintas del proyecto.
+En el pasado, los desarrolladores tenían que administrar un número relativamente grande de dependencias individuales a diferentes bibliotecas de AEM y cuando se utilizaba cada nueva API, se debían añadir una o más dependencias individuales al proyecto. En un proyecto, la introducción de UberJar tuvo como resultado la eliminación de 30 dependencias distintas del proyecto.
 
 ### ¿Cómo se usa UberJar? {#how-do-i-use-the-uberjar}
 
-Si utiliza Apache Maven como sistema de compilación (como sucede en la mayoría de los proyectos Java de AEM), deberá añadir uno o dos elementos al archivo *pom.xml* . El primero es un elemento de *dependencia* que agrega la dependencia real al proyecto:
+Si utiliza Apache Maven como sistema de compilación (que es el caso de la mayoría de AEM proyectos Java), deberá agregar uno o dos elementos al archivo *pom.xml* . El primero es un elemento de *dependencia* que agrega la dependencia real al proyecto:
 
 ```xml
 <dependency>
@@ -58,7 +58,7 @@ Si utiliza Apache Maven como sistema de compilación (como sucede en la mayoría
 </dependency>
 ```
 
-Si su compañía ya está utilizando un Administrador de repositorios de Maven como Sontype Nexus, Apache Archiva o JFrog ArtiFactory, agregue la configuración adecuada a su proyecto para hacer referencia a este administrador de repositorios y agregar el repositorio de Maven de Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) a su administrador de repositorios.
+Si su compañía ya está utilizando un Administrador de repositorios de Maven como Sontype Nexus, Apache Archiva o JFrog ArtiFactory, agregue la configuración adecuada a su proyecto para hacer referencia a este administrador de repositorios y agregar el repositorio de Maven del Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) a su administrador de repositorios.
 
 Si no utiliza un administrador de repositorio, deberá agregar un elemento de *repositorio* al archivo *pom.xml* :
 
@@ -100,7 +100,7 @@ Con UberJar, puede compilar código de proyecto que depende de las API de AEM (y
 
 ### ¿Qué no puedo hacer con UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Dado que UberJar **solo** contiene API, no es ejecutable y no puede utilizarse para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario AEM Quickstart, independiente o de archivo de Aplicación web (WAR).
+Dado que UberJar **solo** contiene API, no es ejecutable y no puede utilizarse para **ejecutar** Adobe Experience Manager. Para ejecutar AEM, necesita el formulario de inicio rápido AEM, independiente o de archivo de Aplicación web (WAR).
 
 ### Ha mencionado limitaciones en las pruebas unitarias. Por favor, explique más. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -148,7 +148,7 @@ public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
 }
 ```
 
-Para realizar una prueba unitaria de cualquiera de estos métodos, un desarrollador utilizaría un marco de trabajo burlador como [JMockit](http://jmockit.github.io), [Mockito](https://mockito.org/), [JMock](https://www.jmock.org/)o [Easymock](https://easymock.org/) para crear un objeto de prueba para la API de AEM a la que se hace referencia. Estas muestras utilizan JMockit, pero para este caso de uso en particular, la diferencia entre estos marcos es en gran medida sintética.
+Para realizar una prueba unitaria de cualquiera de estos métodos, un desarrollador utilizaría un marco de trabajo burlador como [JMockit](http://jmockit.github.io), [Mockito](https://mockito.org/), [JMock](https://www.jmock.org/)o [Easymock](https://easymock.org/) para crear un objeto de prueba para la API AEM a la que se hace referencia. Estas muestras utilizan JMockit, pero para este caso de uso en particular, la diferencia entre estos marcos es en gran medida sintética.
 
 ```java
 @RunWith(JMockit.class)
@@ -323,13 +323,13 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 #### Caso de uso 3: código personalizado que extiende una clase base desde la API {#use-case-custom-code-which-extends-a-base-class-from-the-api}
 
-Al igual que con SCR Generation, si el código amplía una clase base (abstracta o concreta) desde la API de AEM, **debe** utilizar UberJar para probarla.
+Al igual que con la Generación de SCR, si el código extiende una clase base (abstracta o concreta) desde la API de AEM, **debe** utilizar UberJar para probarla.
 
 ## Tareas comunes de desarrollo con Maven {#common-development-tasks-with-maven}
 
 ### Cómo Añadir las rutas al módulo de contenido {#how-to-add-paths-to-the-content-module}
 
-El módulo de contenido contiene un archivo src/main/content/META-INF/vault/filter.xml que define los filtros del paquete AEM creado por Maven. El archivo creado por el arquetipo Maven tiene este aspecto:
+El módulo de contenido contiene un archivo src/main/content/META-INF/vault/filter.xml que define los filtros del paquete de AEM que crea Maven. El archivo creado por el arquetipo Maven tiene este aspecto:
 
 #### src/main/content/META-INF/vault/filter.xml {#src-main-content-meta-inf-vault-filter-xml}
 
@@ -344,7 +344,7 @@ Este archivo se utiliza de diferentes maneras:
 
 * por el `content-package-maven-plugin` para determinar qué contenido incluir en el paquete
 * mediante la herramienta VLT para determinar qué rutas considerar
-* si el paquete se vuelve a crear en el Administrador de paquetes de AEM, también define qué rutas incluir
+* si el paquete se vuelve a crear en AEM Administrador de paquetes, también define qué rutas incluir
 
 Según los requisitos de la aplicación, puede que desee agregar a estas rutas para incluir más contenido, como por ejemplo:
 
@@ -431,7 +431,7 @@ Cambie la `<resources>` sección de la página de contenido en consecuencia:
 
 La configuración de Maven descrita hasta ahora crea un paquete de contenido que también puede incluir componentes y sus JSP correspondientes. Sin embargo, Maven los trata como cualquier otro archivo que forme parte del paquete de contenido y ni siquiera los reconoce como JSP.
 
-Los componentes resultantes funcionan en AEM de la misma manera, pero hacer que Maven esté al tanto de los JSP tiene dos ventajas principales
+Los componentes resultantes funcionan en AEM todos los aspectos, pero hacer que Maven conozca los JSP tiene dos beneficios principales
 
 * permite que Maven falle si los JSP contienen errores, de modo que éstos se muestren en el momento de la creación y no cuando se compilen por primera vez en AEM
 * Para los IDE que pueden importar proyectos de Maven, esto también habilita la finalización de código y la compatibilidad con la biblioteca de etiquetas en los JSP
@@ -447,7 +447,7 @@ Debajo es necesario agregar dependencias al POM de los `content` módulos.
 
 >[!NOTE]
 >
->A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración de AEM, tal como se ha descrito anteriormente. Los comentarios de cada entrada a continuación muestran el paquete que se va a buscar en el Buscador de dependencias.
+>A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración del AEM como se describe más arriba. Los comentarios de cada entrada a continuación muestran el paquete que se va a buscar en el Buscador de dependencias.
 
 >[!NOTE]
 >
@@ -462,7 +462,7 @@ Para compilar JSPs en la `compile` fase de Maven, utilizamos el complemento [Jsp
 * le decimos que recopile cualquier JSP en `${project.build.directory}/jsps-to-compile`
 * y generar el resultado en `${project.build.directory}/ignoredjspc` (que se traduce como `myproject/content/target/ignoredjspc`)
 
-* configuramos maven-resources-plugin para copiar los JSP a `${project.build.directory}/jsps-to-compile` en la fase de generación-orígenes y configurarlo para que no copie la `libs/` carpeta (porque es código de producto de AEM y no queremos incurrir en dependencias para la compilación de nuestro proyecto, ni necesitamos validar que compila.
+* configuramos maven-resources-plugin para copiar los JSPs a `${project.build.directory}/jsps-to-compile` en la fase de generar-orígenes y configurarlo para que no copie la `libs/` carpeta (porque es AEM código de producto y no queremos incurrir en dependencias para la compilación de nuestro proyecto, ni necesitamos validar que compila.
 
 Nuestro objetivo principal, como se ha indicado anteriormente, es validar los JSP y asegurarse de que el proceso de compilación falla si contienen errores. Es por eso que los compilamos en un directorio separado que se ignora (y de hecho se elimina inmediatamente después, como se verá en un minuto).
 
@@ -551,14 +551,14 @@ Para lograr la eliminación de las clases compiladas desde los JSP, configuramos
 >
 >
 ```
-> <resource>  
->           <directory>src/main/content/jcr_root</directory>  
->           <includes>  
->                   <include>apps/**</include>  
->                   <include>libs/foundation/global.jsp</include>
->       </includes>  
->   </resource>  
->  ```
+><resource>
+>       <directory>src/main/content/jcr_root</directory>
+>       <includes>
+>               <include>apps/**</include>
+>               <include>libs/foundation/global.jsp</include>
+>       </includes>
+></resource>
+>```
 
 ### Cómo trabajar con sistemas SCM {#how-to-work-with-scm-systems}
 

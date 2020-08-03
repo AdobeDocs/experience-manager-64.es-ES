@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -27,11 +27,13 @@ Esta página mantiene una lista de los problemas conocidos que Adobe Experience 
 No se admiten dispositivos híbridos. Se pueden encontrar varios problemas al utilizar estos dispositivos. Los siguientes procedimientos sugeridos ayudan a resolver muchos problemas:
 
 Si utiliza Google Chrome como navegador:
+
 * Escriba `chrome://flags/` en la barra de direcciones y pulse Intro.
 * Haga clic en Habilitar eventos táctiles > Deshabilitado.
 * Reinicie el explorador (todas las fichas y ventanas).
 
 Si utiliza Mozilla Firefox como navegador:
+
 * Escriba `about:config` en la barra de direcciones y pulse Intro.
 * Filtre la configuración a `dom.w3c`.
 * Asegúrese de que la configuración es `0` y `false`.
@@ -132,11 +134,11 @@ Si utiliza Microsoft Edge como explorador:
 
 (CQ-4238462)
 
-### Integración de Adobe Sign
+### Integración con Adobe Sign
 
-* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete de soporte **para Planificadoras** Apache Sling desde la consola web de AEM en https://[*server*]:[*port*]/system/console/buncles.
+* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por lo tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete de soporte **para Planificadoras** Apache Sling desde AEM consola web en https://[*server*]:[*port*]/system/console/buncles.
 
-### Creación de formularios adaptables
+### Creación adaptable de Forms
 
 * El componente Gráfico en formularios adaptables ocupa más espacio del que ocupa normalmente.
 * Se devuelve una excepción al guardar propiedades para formularios adaptables, fragmentos de formularios adaptables o comunicaciones interactivas en la interfaz de usuario de Forms Manager.

@@ -8,7 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 8%
 
 ---
 
@@ -19,11 +22,11 @@ Información general sobre el servicio de contenido inteligente y problemas cono
 
 Las organizaciones requieren que sus recursos digitales se etiqueten en función de la taxonomía que los empleados, socios y clientes utilizan para hacer referencia a los recursos digitales y realizar búsquedas en ellos. En comparación con las etiquetas genéricas, los recursos etiquetados en función de la taxonomía comercial se identifican y recuperan más fácilmente mediante búsquedas basadas en etiquetas.
 
-El servicio de contenido inteligente utiliza la taxonomía empresarial de Recursos AEM para etiquetar automáticamente recursos digitales, lo que garantiza que los recursos más relevantes aparezcan en las búsquedas.
+El servicio de contenido inteligente utiliza la taxonomía de AEM Assets de su empresa para etiquetar automáticamente los recursos digitales, lo que garantiza que los recursos más relevantes aparezcan en las búsquedas.
 
-Debe capacitar a Smart Content Service en un conjunto depurado de etiquetas y recursos de AEM para que reconozca su taxonomía empresarial. Una vez formados, el servicio puede aplicar estas etiquetas en un conjunto de recursos similar.
+Debe capacitar al servicio de contenido inteligente en un conjunto depurado de etiquetas y recursos AEM para reconocer su taxonomía empresarial. Una vez formados, el servicio puede aplicar estas etiquetas en un conjunto de recursos similar.
 
-El servicio de contenido inteligente es proporcionado por la plataforma Adobe Sensei, que le permite entrenar el algoritmo de reconocimiento de imágenes en su taxonomía comercial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a recursos similares.
+El servicio de contenido inteligente es proporcionado por la plataforma de Adobe Sensei, que le permite capacitar al algoritmo de reconocimiento de imágenes en su taxonomía comercial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a recursos similares.
 
 ## Mejoras clave {#key-improvements}
 
@@ -31,7 +34,7 @@ El servicio de contenido inteligente incluye las siguientes mejoras clave:
 
 * Optimizaciones de algoritmos para mejorar aún más la precisión del modelo, recuperar valores
 * Compatibilidad con la restauración de la formación de modelos para todas las etiquetas en el nivel de inquilino
-* Compatibilidad con espacios de nombres de etiquetas inteligentes mejorados para evitar conflictos
+* Compatibilidad con Áreas de nombres de etiquetas inteligentes mejoradas para evitar conflictos
 * Nueva política de sustitución de modelos para evitar cualquier degradación debida al readiestramiento
 * Monitoreo del inquilino para el uso del servicio
 * Correcciones de problemas relacionados con la agrupación en clúster y la conexión, que mejoran la solidez del servicio
@@ -40,7 +43,7 @@ El servicio de contenido inteligente incluye las siguientes mejoras clave:
 
 En esta versión se han solucionado los problemas siguientes:
 
-* Los procesos de trabajo para el etiquetado y los flujos de trabajo de formación finalizan si no se pueden conectar al servidor MySQL. CQ-4242886
+* Los procesos de trabajo para flujos de trabajo de etiquetado y formación finalizan si no se pueden conectar al servidor MySQL. CQ-4242886
 
 * La puntuación sesgada de precisión no se calcula correctamente. CQ-4241797
 
@@ -87,8 +90,9 @@ El servicio de contenido inteligente está disponible para las siguientes config
 
 ## Asistencia y acceso al producto (sitios restringidos) {#product-access-and-support-restricted-sites}
 
-Estos sitios solo están disponibles para los clientes. Si es un cliente y necesita acceso, póngase en contacto con su administrador de cuentas de Adobe.
+Estos sitios solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
-* [](https://daycare.day.com) Acceso [al producto](https://login.marketing.adobe.com)
-
-* [Servicio de atención al cliente de Adobe](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Acceso a productos](https://login.marketing.adobe.com)
+* [Descarga de productos en Licensing.adobe.com](https://licensing.adobe.com/).
+* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
+* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia](https://docs.adobe.com/content/help/en/customer-one/using/home.html)de asistencia al cliente de Adobe.

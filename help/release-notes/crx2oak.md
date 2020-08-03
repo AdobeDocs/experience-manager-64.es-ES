@@ -1,8 +1,8 @@
 ---
 title: Herramienta de migración CRX2OAK
 seo-title: Herramienta de migración CRX2OAK
-description: Notas de la versión específicas de la herramienta de migración CRX2OAK de Adobe Experience Manager 6.4.
-seo-description: Notas de la versión específicas de la herramienta de migración CRX2OAK de Adobe Experience Manager 6.4.
+description: Notas de la versión específicas de la herramienta de migración de Adobe Experience Manager 6.4 CRX2OAK.
+seo-description: Notas de la versión específicas de la herramienta de migración de Adobe Experience Manager 6.4 CRX2OAK.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -38,8 +41,8 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 ### Versión 1.6.8 (marzo de 2017) {#version-march}
 
 * Se ha actualizado la versión Oak a 1.6.1
-* CQ-61847 Combina crx2oak-quickstart-extension con crx2oak (se han agregado perfiles de migración)
-* CQ-97488 Promoción y eliminación de los modos de ejecución de AEM (reescribiendo sling.options.file)
+* CQ-61847 Combina crx2oak-quickstart-extension con crx2oak (perfiles de migración agregados)
+* CQ-97488 Promoción y eliminación de modos de ejecución AEM (reescribiendo sling.options.file)
 * GRANITE-12798/OAK-4260 Posibilidad de pasar de la clasificación Oak al segmento Oak Tar
 
 ### Versión 1.4.2 (marzo de 2016) {#version-march-1}
@@ -60,8 +63,8 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 * Actualiza la versión Oak a 1.3.12
 * El directorio del almacén de datos no debe moverse después de la migración (GRANITE-10447)
 * Combinar crx2oak-quickstart-extension con crx2oak (CQ-61847)
-* crx2oak falla en valores duplicados en el repositorio (CQ-61906)
-* Inicio prolongado de AEM después de la migración desde CQ 5.x (GRANITE-10309)
+* crx2oak falla en los valores de duplicado en el repositorio (CQ-61906)
+* inicio de larga AEM después de la migración desde CQ 5.x (GRANITE-10309)
 * Compatibilidad con varios servidores LDAP en crx2oak (GRANITE-9917)
 * Aplicar comprobación para la longitud máxima del nombre del nodo (OAK-3111)
 * Admite S3DataSource como fuente de migración (OAK-3685)

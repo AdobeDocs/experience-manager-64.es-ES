@@ -1,8 +1,8 @@
 ---
-title: Conceptos de la IU táctil de AEM
-seo-title: Conceptos de la IU táctil de AEM
-description: Con AEM 5.6 Adobe ha introducido una nueva IU táctil con diseño interactivo para el entorno de creación
-seo-description: Con AEM 5.6 Adobe ha introducido una nueva IU táctil con diseño interactivo para el entorno de creación
+title: Conceptos de la IU táctil AEM
+seo-title: Conceptos de la IU táctil AEM
+description: Con AEM 5.6 Adobe se ha introducido una nueva IU táctil optimizada con diseño interactivo para el entorno de creación
+seo-description: Con AEM 5.6 Adobe se ha introducido una nueva IU táctil optimizada con diseño interactivo para el entorno de creación
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 0%
 
 ---
 
 
-# Conceptos de la IU táctil de AEM{#concepts-of-the-aem-touch-enabled-ui}
+# Conceptos de la IU táctil AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-Con AEM 5.6, Adobe ha introducido una nueva interfaz de usuario táctil con diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. Esto difiere considerablemente de la IU clásica original, ya que está diseñada para funcionar tanto en dispositivos táctiles como de escritorio.
+Con AEM Adobe 5.6 se ha introducido una nueva interfaz de usuario táctil con diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. Esto difiere considerablemente de la IU clásica original, ya que está diseñada para funcionar tanto en dispositivos táctiles como de escritorio.
 
-Esta IU táctil es ahora la IU estándar para AEM, sustituyendo a la IU clásica.
+Esta IU táctil es ahora la IU estándar para AEM, reemplazando a la IU clásica.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ Esta IU táctil es ahora la IU estándar para AEM, sustituyendo a la IU clásica
 
 La IU táctil incluye:
 
-* El encabezado de grupo que:
+* Encabezado de grupo que:
 
    * Muestra el logotipo
    * Proporciona un vínculo a la navegación global
@@ -45,11 +48,11 @@ La IU táctil incluye:
    * Selección del carril izquierdo
    * Rutas de exploración
    * Acceso a las acciones de **creación** adecuadas
-   * Ver selecciones
+   * selecciones de Vista
 
 * El área de contenido que:
 
-   * Enumera los elementos de contenido (ya sean páginas, recursos, anuncios de foros, etc.)
+   * Lista los elementos de contenido (ya sean páginas, recursos, anuncios de foros, etc.)
    * Se puede formatear como se solicita, por ejemplo columna, tarjeta o lista
    * Utiliza un diseño interactivo (el tamaño de la pantalla cambia automáticamente según el dispositivo o el tamaño de la ventana)
    * Utiliza desplazamiento infinito (no más paginación, todos los elementos se enumeran en una ventana)
@@ -60,9 +63,9 @@ La IU táctil incluye:
 >
 >Casi todas las funciones de AEM se han adaptado a la IU táctil. Sin embargo, en algunos casos, la funcionalidad volverá a la IU clásica. Consulte Estado [de la función de IU](/help/release-notes/touch-ui-features-status.md) táctil para obtener más información.
 
-Adobe ha diseñado la IU táctil para ofrecer coherencia en la experiencia del usuario en varios productos. Se basa en:
+La IU táctil ha sido diseñada por Adobe para ofrecer coherencia en la experiencia del usuario en varios productos. Se basa en:
 
-* **Coral UI** (CUI) es una implementación del estilo visual de Adobe para la IU táctil. La interfaz de usuario de Coral proporciona todo lo que necesita su producto, proyecto o aplicación web para adoptar el estilo visual de la interfaz de usuario.
+* **La interfaz de usuario** de Coral (CUI) es una implementación del estilo visual del Adobe para la IU táctil. La interfaz de usuario de Coral proporciona todo lo que necesita su producto, proyecto o aplicación web para adoptar el estilo visual de la interfaz de usuario.
 * **Los componentes de la interfaz de usuario** de Granite se crean con la interfaz de usuario de Coral.
 
 Los principios básicos de la IU táctil son:
@@ -75,7 +78,7 @@ Los principios básicos de la IU táctil son:
 * Incluir pruebas incrustadas
 * Diseño ascendente para garantizar que estos principios se apliquen a todos los elementos y componentes
 
-Para obtener más información general sobre la estructura de la interfaz de usuario táctil, consulte la [estructura del artículo de la interfaz de usuario](/help/sites-developing/touch-ui-structure.md)táctil de AEM.
+Para obtener más información general sobre la estructura de la interfaz de usuario táctil, consulte la [Estructura del artículo de la IU](/help/sites-developing/touch-ui-structure.md)táctil AEM.
 
 ## Pila de tecnología AEM {#aem-technology-stack}
 
@@ -85,7 +88,7 @@ AEM utiliza la plataforma Granite como base y la plataforma Granite incluye, ent
 
 ## Granite {#granite}
 
-Granite es la pila web abierta de Adobe, que proporciona varios componentes, entre los que se incluyen:
+Granite es la pila web abierta del Adobe, que proporciona varios componentes, entre los que se incluyen:
 
 * Un iniciador de aplicaciones
 * Un marco de OSGi en el que se implementa todo
@@ -97,9 +100,9 @@ Granite es la pila web abierta de Adobe, que proporciona varios componentes, ent
 
 >[!NOTE]
 >
->Granite se ejecuta como un proyecto de desarrollo abierto en Adobe: las contribuciones al código, las discusiones y los problemas se realizan desde toda la empresa.
+>Granite se ejecuta como un proyecto de desarrollo abierto dentro del Adobe: las contribuciones al código, los debates y las cuestiones se realizan desde toda la compañía.
 >
->Sin embargo, Granite **no es** un proyecto de código abierto. Se basa en gran medida en varios proyectos de código abierto (Apache Sling, Felix, Jackrabbit y Lucene en particular), pero Adobe establece una línea clara entre lo que es público y lo que es interno.
+>Sin embargo, Granite **no es** un proyecto de código abierto. Está fuertemente basado en varios proyectos de código abierto (Apache Sling, Felix, Jackrabbit y Lucene en particular), pero el Adobe traza una línea clara entre lo que es público y lo que es interno.
 
 ## Interfaz de usuario de granito {#granite-ui}
 
@@ -152,7 +155,7 @@ Consiste principalmente en una colección de patrones de interacción (por ejemp
 
 El cliente es independiente de cualquier tecnología de servidor. Siempre que el servidor proporcione el marcado adecuado, el cliente puede cumplir su función.
 
-Actualmente, los códigos JS y CSS se entregan como [clientlibs](/help/sites-developing/clientlibs.md) de Granite en la categoría:
+Actualmente, los códigos JS y CSS se entregan como [clientlibs](/help/sites-developing/clientlibs.md) Granite bajo la categoría:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -174,7 +177,7 @@ Esto se entrega como parte del paquete de contenido:
 
 ### Diferencias con la IU clásica {#differences-with-the-classic-ui}
 
-Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizada para la IU clásica) también son de interés:
+Las diferencias entre la interfaz de usuario de Granite y ExtJS (que se usa para la IU clásica) también son de interés:
 
 <table> 
  <tbody> 
@@ -223,7 +226,7 @@ Función:
 
 * Modelo de componentes para elementos HTML
 * Composición de componentes
-* Pruebas automáticas de la unidad y la funcionalidad
+* Pruebas automáticas de la unidad y funcionalidad
 
 Implementación:
 
@@ -282,26 +285,28 @@ Implementación:
 
 ## Interfaz de usuario de Coral {#coral-ui}
 
-La interfaz de usuario de Coral (CUI) es una implementación del estilo visual de Adobe para la IU táctil, diseñada para proporcionar coherencia en la experiencia del usuario en varios productos. La interfaz de usuario de Coral proporciona todo lo necesario para adoptar el estilo visual utilizado en el entorno de creación.
+La IU de Coral (CUI) es una implementación del estilo visual del Adobe para la IU táctil, que se ha diseñado para proporcionar coherencia en la experiencia del usuario en varios productos. La interfaz de usuario de Coral proporciona todo lo necesario para adoptar el estilo visual utilizado en el entorno de creación.
 
 >[!CAUTION]
 >
->La interfaz de usuario de Coral es una biblioteca de IU que los clientes de AEM pueden utilizar para crear aplicaciones e interfaces web dentro de los límites de su uso con licencia del producto.
+>La interfaz de usuario de Coral es una biblioteca de interfaz de usuario disponible para AEM clientes para crear aplicaciones e interfaces web dentro de los límites de su uso con licencia del producto.
 >
 >Solo se permite el uso de la interfaz de usuario de Coral:
 >
 >* Cuando se ha enviado y empaquetado con AEM.
 >* Se utiliza para ampliar la IU existente del entorno de creación.
->* Material publicitario, anuncios y presentaciones corporativos de Adobe.
->* La interfaz de usuario de las aplicaciones de marca Adobe (la fuente no debe estar fácilmente disponible para otros usos).
+>* Adobe de material publicitario corporativo, anuncios y presentaciones.
+>* La interfaz de usuario de las aplicaciones con marca Adobe (la fuente no debe estar fácilmente disponible para otros usos).
 >* Con personalizaciones menores.
+
 >
 >
 Se debe evitar el uso de la IU de Coral en:
 >
->* Documentos y otros elementos no relacionados con Adobe.
->* Entornos de creación de contenido (donde otros pueden generar los elementos anteriores).
+>* Documentos y otros artículos no relacionados con el Adobe.
+>* entornos de creación de contenido (donde otros pueden generar los elementos anteriores).
 >* Aplicaciones/componentes/páginas web que no están claramente conectadas a Adobe.
+
 >
 
 
@@ -310,9 +315,9 @@ La interfaz de usuario de Coral es una colección de componentes para desarrolla
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Diseñado para ser modular desde el principio, cada módulo forma una capa distinta basada en su función principal. Aunque las capas se han diseñado para apoyarse mutuamente, también se pueden utilizar de forma independiente si es necesario. Esto permite implementar la experiencia del usuario de Coral en cualquier entorno compatible con HTML.
+Diseñado para ser modular desde el inicio, cada módulo forma una capa distinta basada en su función principal. Aunque las capas se han diseñado para apoyarse mutuamente, también se pueden utilizar de forma independiente si es necesario. Esto permite implementar la experiencia de usuario de Coral en cualquier entorno compatible con HTML.
 
-Con la interfaz de usuario de Coral no es obligatorio utilizar un modelo de desarrollo o una plataforma en particular. El objetivo principal de Coral es proporcionar un marcado HTML5 unificado y limpio, independiente del método real utilizado para emitir este marcado. Esto puede utilizarse para el procesamiento en el cliente o en el servidor, plantillas, JSP, PHP o incluso aplicaciones RIA de Adobe Flash, por nombrar sólo algunas.
+Con la interfaz de usuario de Coral no es obligatorio utilizar un modelo de desarrollo o una plataforma en particular. El objetivo principal de Coral es proporcionar un marcado HTML5 unificado y limpio, independiente del método real utilizado para emitir este marcado. Esto puede utilizarse para el procesamiento en el cliente o en el servidor, plantillas, JSP, PHP o incluso aplicaciones RIA de Flash de Adobe, por nombrar sólo algunas.
 
 ### Elementos HTML - La capa de marcado {#html-elements-the-markup-layer}
 
@@ -371,7 +376,7 @@ Muchos de los elementos HTML necesitarán mostrar algún tipo de comportamiento 
 Un complemento es:
 
 * Diseñado para funcionar con un elemento DOM específico. Por ejemplo, un complemento de cuadro de diálogo espera encontrar `DIV class=dialog`
-* Genérico por naturaleza. Por ejemplo, un administrador de diseños proporciona una presentación para cualquier lista de `DIV` o `LI` elementos
+* Genérico por naturaleza. Por ejemplo, un administrador de diseños proporciona el diseño para cualquier lista de `DIV` o `LI` elementos
 
 El comportamiento del complemento se puede personalizar con parámetros, ya sea de la siguiente manera:
 
@@ -493,14 +498,14 @@ Esta biblioteca es una colección de complementos de ayuda de javascript y/o fun
 * UI independiente
 * Sin embargo, es crucial para crear aplicaciones web con todas las funciones
 
-Entre ellos se incluyen la gestión XSS y el bus de eventos.
+Entre ellos se incluyen el manejo de XSS y el bus de evento.
 
 Aunque los complementos y utilidades de elementos HTML pueden depender de la funcionalidad proporcionada por la biblioteca de utilidades, la biblioteca de utilidades no puede tener dependencia en los elementos ni en los propios widgets.
 
 Función:
 
 * Proporcionar funcionalidad común
-* Implementación del bus de evento
+* Implementación de bus de Evento
 * Plantillas de cliente
 * XSS
 

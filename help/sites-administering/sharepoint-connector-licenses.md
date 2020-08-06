@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 translation-type: tm+mt
 source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 10%
 
 ---
 
 
 # Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Esta sección enumera todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
+Esta sección lista todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
 
 ## Descripción general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de renuncia de responsabilidad que cubren:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de exención de responsabilidades que cubren:
 
 | Biblioteca | Tipo de licencia |
 |---|---|
@@ -39,7 +42,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las 
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
 | concurrente | [Simultáneo](#concurrent) (dominio público) |
-| geronimo-activation_1.1_Spec | [Apache](#apache) |
+| geronimo-activación_1.1_especificación | [Apache](#apache) |
 | geronimo-stax-api_1.0_Spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
@@ -62,7 +65,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las 
 
 ## Información general sobre las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto con las licencias, avisos de copyright o exenciones de responsabilidad por las que están cubiertas:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto con las licencias, avisos de copyright o renuncias de responsabilidad por las que están cubiertas:
 
 <table> 
  <colgroup> 
@@ -154,7 +157,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto 
 
 ## Visión General de las Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que están cubiertas:
+La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que se cubren:
 
 <table> 
  <colgroup> 

@@ -22,9 +22,9 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La función de mensajería para AEM Communities permite a los visitantes del sitio (miembros) con sesión iniciada enviarse mensajes entre sí a los que se puede acceder cuando se inician sesión en el sitio.
+La función de mensajería de AEM Communities permite que los visitantes del sitio (miembros) con sesión iniciada envíen mensajes entre sí a los que se puede acceder al iniciar sesión en el sitio.
 
-La mensajería se habilita para un sitio de comunidad marcando una casilla durante la creación [del sitio de](sites-console.md)comunidad.
+La mensajería está habilitada para un sitio de comunidad marcando una casilla durante la creación [del sitio de](sites-console.md)comunidad.
 
 En esta página encontrará información sobre la configuración predeterminada y los posibles ajustes.
 

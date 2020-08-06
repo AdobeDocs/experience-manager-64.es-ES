@@ -1,8 +1,8 @@
 ---
 title: Personalización del lado del servidor
 seo-title: Personalización del lado del servidor
-description: Personalización del lado del servidor en comunidades AEM
-seo-description: Personalización del lado del servidor en comunidades AEM
+description: Personalización del lado del servidor en AEM Communities
+seo-description: Personalización del lado del servidor en AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -29,9 +32,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ### Interfaz de SocialComponent {#socialcomponent-interface}
 
-SocialComponents son POJO que representan un recurso para una función de comunidades AEM. Lo ideal es que cada componente de Social represente un resourceType específico con GETters expuestos que proporcionen datos al cliente para que el recurso se represente con precisión. Toda la lógica empresarial y la lógica de vista se encapsulan en el componente Social, incluida la información de la sesión del visitante del sitio, si es necesario.
+SocialComponents son POJO que representan un recurso para una función de AEM Communities. Lo ideal es que cada componente de Social represente un resourceType específico con GETters expuestos que proporcionen datos al cliente para que el recurso se represente con precisión. Toda la lógica empresarial y la lógica de vista se encapsulan en SocialComponent, incluida la información de la sesión del visitante del sitio, si es necesario.
 
-La interfaz define un conjunto básico de GETters que son necesarios para representar un recurso. Es importante destacar que la interfaz estipula los métodos Map&lt;String, Object> getAsMap() y String toJSONString() que son necesarios para procesar las plantillas Handlebars y exponer los extremos GET JSON para los recursos.
+La interfaz define un conjunto básico de GETters que son necesarios para representar un recurso. Es importante destacar que la interfaz estipula los métodos Map&lt;String, Object> getAsMap() y String toJSONString() que son necesarios para procesar las plantillas Handlebars y exponer los extremos de GET JSON para los recursos.
 
 Todas las clases de SocialComponent deben implementar la interfaz `com.adobe.cq.social.scf.SocialComponent`
 
@@ -61,13 +64,13 @@ SocialComponentFactoryManager es un servicio OSGi y tiene acceso a otros servici
 
 Se obtiene un identificador del servicio OSGi invocando `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### API HTTP: solicitudes POST {#http-api-post-requests}
+### API HTTP: solicitudes de POST {#http-api-post-requests}
 
 #### Clase PostOperation {#postoperation-class}
 
-Los extremos POST de la API HTTP son clases PostOperation definidas mediante la implementación de la `SlingPostOperation`interfaz (paquete `org.apache.sling.servlets.post`).
+Los extremos del POST de API HTTP son clases PostOperation definidas mediante la implementación de la `SlingPostOperation`interfaz (paquete `org.apache.sling.servlets.post`).
 
-La implementación de `PostOperation`extremo establece `sling.post.operation`un valor al que responderá la operación. Todas las solicitudes POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
+La implementación de `PostOperation`extremo establece `sling.post.operation`un valor al que responderá la operación. Todas las solicitudes de POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
 
 El `PostOperation`invoca el `SocialOperation`que realiza las acciones necesarias para la operación.
 
@@ -114,13 +117,13 @@ Permite una mayor modificación de los recursos o invocar eventos personalizados
 
 ## Código de muestra {#sample-code}
 
-El código de muestra está disponible en el repositorio de [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Busque proyectos con el prefijo `aem-communities` o `aem-scf`.
+El código de muestra está disponible en el repositorio [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Busque proyectos con el prefijo `aem-communities` o `aem-scf`.
 
-## Prácticas recomendadas  {#best-practices}
+## Prácticas recomendadas   {#best-practices}
 
-Consulte la sección [Directrices](code-guide.md) de codificación para conocer las distintas directrices de codificación y prácticas recomendadas para los desarrolladores de AEM Communities.
+Vista la sección [Coding Guidelines](code-guide.md) (Directricesde codificación) para conocer las distintas directrices de codificación y prácticas recomendadas para desarrolladores de AEM Communities.
 
-Consulte también Proveedor [de recursos de almacenamiento (SRP) para obtener información sobre cómo acceder al contenido generado por el usuario](srp.md) .
+Consulte también Proveedor [de recursos de Almacenamiento (SRP) para obtener información sobre cómo acceder al contenido generado por el usuario](srp.md) .
 
 | **[Elementos básicos de las funciones de ⇐](essentials.md)** | **[Personalización del cliente](client-customize.md)** |
 |---|---|

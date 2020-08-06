@@ -1,8 +1,8 @@
 ---
-title: Ajuste del rendimiento del servidor de AEM Forms
-seo-title: Ajuste del rendimiento del servidor de AEM Forms
-description: Para que AEM Forms funcione de forma óptima, puede ajustar la configuración de caché y los parámetros JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
-seo-description: Para que AEM Forms funcione de forma óptima, puede ajustar la configuración de caché y los parámetros JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
+title: Ajuste del rendimiento del servidor AEM Forms
+seo-title: Ajuste del rendimiento del servidor AEM Forms
+description: Para que AEM Forms funcione de manera óptima, puede ajustar la configuración de caché y los parámetros de JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
+seo-description: Para que AEM Forms funcione de manera óptima, puede ajustar la configuración de caché y los parámetros de JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Ajuste del rendimiento del servidor de AEM Forms {#performance-tuning-of-aem-forms-server}
+# Ajuste del rendimiento del servidor AEM Forms {#performance-tuning-of-aem-forms-server}
 
-En este artículo se analizan las estrategias y prácticas recomendadas que puede implementar para reducir los cuellos de botella y optimizar el rendimiento de la implementación de AEM Forms.
+En este artículo se analizan las estrategias y las prácticas recomendadas que puede implementar para reducir los cuellos de botella y optimizar el rendimiento de la implementación de AEM Forms.
 
 ## Ajustes de caché {#cache-settings}
 
-Puede configurar y controlar la estrategia de almacenamiento en caché para AEM Forms mediante el componente Configuración **de formularios** móviles en la consola de configuración web de AEM en:
+Puede configurar y controlar la estrategia de almacenamiento en caché para AEM Forms mediante el componente Configuraciones **** móviles de Forms en AEM consola de configuración web en:
 
 * (AEM Forms en OSGi) `https://[server]:[port]/system/console/configMgr`
 * (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
@@ -40,11 +40,11 @@ Es posible que la configuración de caché predeterminada para AEM Forms no sea 
 * **Tamaño** de caché (en términos de número de formularios): Como requerido
 * **Tamaño** máximo del objeto: Como requerido
 
-![Configuraciones de formularios móviles](assets/snap.png)
+![Configuraciones móviles de Forms](assets/snap.png)
 
 >[!NOTE]
 >
->Si utiliza AEM Dispatcher para almacenar en caché formularios adaptables, también almacena en caché formularios adaptables que contienen formularios con datos precargados. Si estos formularios se proporcionan desde la caché de AEM Dispatcher, es posible que sirvan datos precargados o antiguos para los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos precargados. Además, una caché de despachantes no invalida automáticamente los fragmentos en caché. Por lo tanto, no lo utilice para almacenar en caché fragmentos de formulario. Para estos formularios y fragmentos, utilice la caché [de formularios](/help/forms/using/configure-adaptive-forms-cache.md)adaptables.
+>Si utiliza AEM despachante para almacenar en caché formularios adaptables, también almacena en caché formularios adaptables que contienen formularios con datos precargados. Si estos formularios se proporcionan desde AEM caché de Dispatcher, puede dar lugar a que se proporcionen datos precargados o antiguos a los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos precargados. Además, una caché de despachantes no invalida automáticamente los fragmentos en caché. Por lo tanto, no lo utilice para almacenar en caché fragmentos de formulario. Para estos formularios y fragmentos, utilice la caché [de formularios](/help/forms/using/configure-adaptive-forms-cache.md)adaptables.
 
 ## Parámetros de JVM {#jvm-parameters}
 
@@ -142,29 +142,29 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. Las configuraciones
 
 ## Uso de un antivirus en un servidor que ejecuta AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
-Puede experimentar un rendimiento lento en los servidores que ejecutan un software antivirus. Un software antivirus (análisis en tiempo real) siempre analiza todos los archivos de un sistema. Puede ralentizar el servidor y afectar al rendimiento de AEM Forms.
+Puede experimentar un rendimiento lento en los servidores que ejecutan un software antivirus. Un software antivirus (análisis en tiempo real) siempre analiza todos los archivos de un sistema. Puede ralentizar el servidor y el rendimiento del AEM Forms se ve afectado.
 
-Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los siguientes archivos y carpetas de AEM Forms del análisis siempre activo (en tiempo real):
+Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los siguientes archivos y carpetas de AEM Forms del análisis siempre activado (en tiempo real):
 
 * Directorio de instalación de AEM. Si no es posible excluir el directorio completo, excluya lo siguiente:
 
-   * [Directorio]de instalación de AEM \crx-repository\temp
-   * [Directorio]de instalación de AEM \crx-repository\repository
-   * [Directorio]de instalación de AEM \crx-repository\launchpad
+   * [AEM directorio]de instalación \crx-repository\tempás
+   * [AEM directorio]de instalación \crx-repository\repositoryás
+   * [AEM directorio]de instalación \crx-repository\launchpadás
 
 * Directorio temporal del servidor de aplicaciones. La ubicación predeterminada es:
 
-   * (Jleader) Directorio de instalación de [AEM]\jboss\standalone\tmp
+   * (Jjefe) [AEM directorio]de instalación \jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(Solo AEM Forms en JEE)** Directorio de Almacenamiento de Documento global (GDS). La ubicación predeterminada es:
+* **(Solo AEM Forms en JEE)** Directorio de Almacenamientos de Documento global (GDS). La ubicación predeterminada es:
 
    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`
    * (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
 
-* **(Solo AEM Forms en JEE)** Registros de servidor y directorio temporal de AEM Forms. La ubicación predeterminada es:
+* **(Solo AEM Forms en JEE)** Registros de servidor de AEM Forms y directorio temporal. La ubicación predeterminada es:
 
    * Server logs - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
    * Directorio temporal - Directorio [de instalación de]AEM Forms\temp
@@ -173,7 +173,7 @@ Para mejorar el rendimiento, puede ordenar al software antivirus que excluya los
 >
 >* Si utiliza una ubicación diferente para GDS y un directorio temporal, abra la interfaz de usuario de administración en `https://[server]:[port]/adminui)`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones** principales para confirmar la ubicación en uso.
 
-* Si el servidor de AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
+* Si el servidor de AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable de Java (java.exe).
 
 
 

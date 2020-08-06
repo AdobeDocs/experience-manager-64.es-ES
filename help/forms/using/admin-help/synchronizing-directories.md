@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ También puede especificar si desea insertar información de usuarios y grupos e
 
 >[!NOTE]
 >
->Si se interrumpe el proceso de sincronización de dominios (por ejemplo, el servidor de aplicaciones se cierra durante el proceso), espere un poco antes de intentar sincronizar el dominio. Para evaluar el estado de la sincronización, consulte el estado. Si la Administración de usuarios adquirió un bloqueo antes del cierre, espere 10 minutos para que el bloqueo se libere después del reinicio del servidor. Si el estado de sincronización es &quot;En curso&quot; pero la sincronización se interrumpe o se detiene, la Administración de usuarios reintentará la sincronización pasados 3 minutos. Después de tres intentos fallidos, la Administración de usuarios declara que la sincronización ha fallado y libera el bloqueo.
+>Si se interrumpe el proceso de sincronización de dominios (por ejemplo, el servidor de aplicaciones se cierra durante el proceso), espere un poco antes de intentar sincronizar el dominio. Para evaluar el estado de la sincronización, consulte el estado. Si la Administración de usuarios adquirió un bloqueo antes del cierre, espere 10 minutos para que el bloqueo se libere después del reinicio del servidor. Si el estado de sincronización es &quot;En curso&quot; pero la sincronización se interrumpe o se detiene, Administración de usuarios reintentos la sincronización pasados 3 minutos. Después de tres intentos fallidos, la Administración de usuarios declara que la sincronización ha fallado y libera el bloqueo.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte el documento [de ciclo vital del producto de](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)Adobe. Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema gestor de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte [Adobe del documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)del ciclo vital del producto. Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ## Habilitar sincronización de directorio delta {#enable-delta-directory-synchronization}
 
@@ -67,14 +70,14 @@ De forma predeterminada, la Administración de usuarios registra estadísticas d
 Puede configurar la Administración de usuarios para que compruebe periódicamente si hay algún intento fallido de sincronización de directorios. A continuación, la Administración de usuarios intenta completar las sincronizaciones fallidas.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema.
-1. En Synch Finisher Cron Expression (Expresión cron de Synch Finisher), introduzca una expresión cron que represente el intervalo en el que User Management reintenta las sincronizaciones fallidas. El uso de la expresión cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
+1. En Sincronizar Expresión de cron del finalizador, introduzca una expresión cron que represente el intervalo en el que la Administración de usuarios reintentos sincronizaciones fallidas. El uso de la expresión cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 
-   El valor predeterminado es 0 0/13 &amp;ast; ?  &amp;ast; , lo que significa que la comprobación se realiza cada 13 minutos.
+   El valor predeterminado es 0 0/13 &amp;ast; ? &amp;ast; , lo que significa que la comprobación se realiza cada 13 minutos.
 
 ## Sincronizar directorios manualmente {#manually-synchronize-directories}
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
-1. (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de almacenamiento externo registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
+1. (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de Almacenamientos principales externos registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
 1. Seleccione la casilla de verificación de cada dominio de empresa para sincronizar y haga clic en Sincronizar ahora.
 
    Si selecciona varios dominios, la sincronización de dominios para todos los dominios se puede ejecutar al mismo tiempo. Sin embargo, si selecciona los dominios por separado, solo se puede ejecutar una sincronización de dominios a la vez.
@@ -84,13 +87,13 @@ Puede configurar la Administración de usuarios para que compruebe periódicamen
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Programar sincronización:
 
-   * Para habilitar la sincronización automática diariamente, en Programador, seleccione Ocurrencias. Seleccione Diario en la lista y escriba la hora en el formato de 24 horas en el cuadro correspondiente. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro Expresión Cron.
-   * Para programar la sincronización en un día concreto de la semana o mes, o en un mes concreto, seleccione Expresión crónica y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronice a la 1:30 A.M. el último viernes del mes.
+   * Para habilitar la sincronización automática diariamente, en Planificador, seleccione Ocurrencias. Seleccione Diario en la lista y escriba la hora en el formato de 24 horas en el cuadro correspondiente. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro Expresión Cron.
+   * Para programar la sincronización en un día o mes concreto de la semana o en un mes concreto, seleccione Expresión Cron y escriba la expresión adecuada en el cuadro. Por ejemplo, sincronice a la 1:30 A.M. el último viernes del mes.
 
 El uso de la expresión cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 
 * Para desactivar la sincronización automática, seleccione Ocurrencias y Nunca en la lista.
-* (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de almacenamiento externo registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
+* (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de Almacenamientos principales externos registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
 * Haga clic en Guardar.
 
 ## Detener todas las sincronizaciones de directorios en curso {#stop-all-directory-synchronizations-currently-in-progress}

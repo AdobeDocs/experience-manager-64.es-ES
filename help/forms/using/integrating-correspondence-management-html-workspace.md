@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Integración de aplicaciones de terceros en el espacio de trabajo de AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
 
-El espacio de trabajo AEM Forms admite la administración de actividades de asignación y finalización de tareas para formularios y documentos. Estos formularios y documentos pueden ser Forms XDP, formularios de Flex® o guías (obsoletos) que se han procesado en formatos XDP, PDF, HTML o Flex.
+El espacio de trabajo de AEM Forms admite la administración de actividades de asignación y finalización de tareas para formularios y documentos. Estos formularios y documentos pueden ser Forms XDP, formularios de Flex® o guías (obsoletos) que se han procesado en formatos XDP, PDF, HTML o Flex.
 
-Estas capacidades se mejoran aún más. Los AEM Forms ahora admiten la colaboración con aplicaciones de terceros que admiten funciones similares al espacio de trabajo de AEM Forms. Una parte común de esta funcionalidad es el flujo de trabajo de asignación y la posterior aprobación de una tarea. AEM Forms proporciona una única experiencia unificada para AEM Forms usuarios empresariales, de modo que todas estas asignaciones o aprobaciones de tareas para las aplicaciones admitidas se puedan gestionar a través del espacio de trabajo AEM Forms.
+Estas capacidades se mejoran aún más. AEM Forms ahora admite la colaboración con aplicaciones de terceros que admiten funciones similares al espacio de trabajo de AEM Forms. Una parte común de esta funcionalidad es el flujo de trabajo de asignación y la posterior aprobación de una tarea. AEM Forms ofrece una única experiencia unificada para los usuarios empresariales de AEM Forms, de modo que todas estas asignaciones o aprobaciones de tareas para las aplicaciones admitidas se puedan gestionar a través del espacio de trabajo de AEM Forms.
 
 Por ejemplo, consideremos la gestión de correspondencia como el candidato de muestra para la integración con el espacio de trabajo de AEM Forms. Correspondence Management tiene el concepto de una &#39;Carta&#39;, que puede procesarse y permite realizar acciones.
 

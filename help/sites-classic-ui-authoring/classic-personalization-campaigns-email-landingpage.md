@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -28,8 +31,8 @@ Para crear una página de base de boletín eficaz, debe hacer lo siguiente:
 
 >[!NOTE]
 >
->Adobe no planea seguir mejorando esta capacidad (Administración de leads y listas).\
->La recomendación es aprovechar [Adobe Campaign y su integración](/help/sites-administering/campaign.md)con AEM.
+>Adobe no planea seguir mejorando esta capacidad (Administración de posibles clientes y Listas).\
+>Se recomienda aprovechar [Adobe Campaign y su integración](/help/sites-administering/campaign.md)AEM.
 
 ## Crear una lista para el boletín {#creating-a-list-for-the-newsletter}
 

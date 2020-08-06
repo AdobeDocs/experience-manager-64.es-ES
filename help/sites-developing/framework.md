@@ -1,6 +1,6 @@
 ---
-title: AEM Tagging Framework
-seo-title: AEM Tagging Framework
+title: AEM marco de etiquetado
+seo-title: AEM marco de etiquetado
 description: Etiquete el contenido y aproveche la infraestructura de etiquetado de AEM
 seo-description: Etiquete el contenido y aproveche la infraestructura de etiquetado de AEM
 uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Tagging Framework{#aem-tagging-framework}
+# AEM marco de etiquetado{#aem-tagging-framework}
 
 Para etiquetar contenido y aprovechar la infraestructura de etiquetado de AEM:
 
@@ -66,7 +66,7 @@ TagID consiste en una [Área de nombres](#tag-namespace) seguida de la TagID loc
 
 El nodo raíz de taxonomía es la ruta base para todas las etiquetas del repositorio. El nodo raíz de taxonomía *no debe* ser un nodo de tipo `  cq   :Tag`.
 
-En AEM, la ruta de acceso base es `/content/  cq   :tags` y el nodo raíz es de tipo `  cq   :Folder`.
+En AEM, la ruta de acceso base es `/content/  cq   :tags` y el nodo raíz es del tipo `  cq   :Folder`.
 
 ### Área de nombres de etiquetas {#tag-namespace}
 
@@ -165,7 +165,7 @@ Además, la denegación de permisos de lectura para determinadas etiquetas o Ár
 
 Una práctica típica incluye:
 
-* Permitir el acceso de escritura de grupo o función a todas las Áreas de nombres (agregar/modificar en `tag-administrators` `/content/cq:tags`). Este grupo viene con AEM incorporado.
+* Permitir el acceso de escritura de grupo o función a todas las Áreas de nombres (agregar/modificar en `tag-administrators` `/content/cq:tags`). Este grupo viene con AEM lista para usar.
 
 * Permitir que los usuarios/autores lean el acceso a todas las Áreas de nombres que deberían ser legibles para ellos (en su mayoría, todas).
 * Permitir que los usuarios/autores escriban acceso a esas Áreas de nombres en las que los usuarios/autores deben definir libremente las etiquetas (agregar nodo en `/content/cq:tags/some_namespace`)
@@ -174,7 +174,7 @@ Una práctica típica incluye:
 
 Para que los desarrolladores de aplicaciones puedan adjuntar el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/node-type-notation.html)) debe incluir la `cq:Taggable` mezcla o la `cq:OwnerTaggable` mezcla.
 
-La `cq:OwnerTaggable` mezcla, que hereda de `cq:Taggable`, tiene como objetivo indicar que el contenido puede ser clasificado por el propietario/autor. En AEM, solo es un atributo del `cq:PageContent` nodo. El marco de etiquetado no requiere la `cq:OwnerTaggable` mezcla.
+La `cq:OwnerTaggable` mezcla, que hereda de `cq:Taggable`, tiene como objetivo indicar que el contenido puede ser clasificado por el propietario/autor. En AEM, es sólo un atributo del `cq:PageContent` nodo. El marco de etiquetado no requiere la `cq:OwnerTaggable` mezcla.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ La `cq:OwnerTaggable` mezcla, que hereda de `cq:Taggable`, tiene como objetivo i
 
 Existen definiciones de tipo de nodo en el repositorio como archivos CND. La notación CND se define como parte de la documentación de JCR [aquí](https://jackrabbit.apache.org/node-type-notation.html).
 
-Las definiciones esenciales para los tipos de nodos incluidos en AEM son las siguientes:
+Las definiciones esenciales para los tipos de nodos incluidos en la AEM son las siguientes:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -216,7 +216,7 @@ La `cq:tags` propiedad es una matriz de cadena que se utiliza para almacenar uno
 
 >[!NOTE]
 >
->Para aprovechar la funcionalidad de etiquetado AEM, las aplicaciones desarrolladas personalizadas no deben definir otras propiedades de etiqueta que no sean `cq:tags`.
+>Para aprovechar AEM funcionalidad de etiquetado, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiqueta distintas de `cq:tags`.
 
 ## Movimiento y combinación de etiquetas {#moving-and-merging-tags}
 
@@ -260,7 +260,7 @@ A continuación se muestra una descripción de los efectos del repositorio al mo
 
 ## Migración de etiquetas {#tags-migration}
 
-Las etiquetas Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que antes se almacenaban en `/etc/tags`. Sin embargo, en situaciones en las que se ha actualizado el Adobe Experience Manager de la versión anterior, las etiquetas siguen estando presentes en la ubicación anterior `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse en `/content/cq:tags`.
+Las etiquetas Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que antes se almacenaban en `/etc/tags`. Sin embargo, en situaciones en las que se ha actualizado Adobe Experience Manager de la versión anterior, las etiquetas siguen estando presentes en la ubicación anterior `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse en `/content/cq:tags`.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Las etiquetas Experience Manager 6.4 y posteriores se almacenan en `/content/cq:
 >
 >Se recomienda utilizar la API del administrador de etiquetas como recurso.
 
-**Si la instancia de AEM actualizada admite la API de TagManager**
+**Si la instancia de AEM actualizada es compatible con la API de TagManager**
 
 1. En el inicio del componente, la API de TagManager detecta si se trata de una instancia de AEM actualizada. En el sistema actualizado, las etiquetas se almacenan en `/etc/tags`.
 
@@ -340,7 +340,7 @@ La secuencia de comandos obtiene todas las etiquetas que tienen `/etc/tags` en e
 >
 >La IU clásica no es compatible con cero tiempos de inactividad y no admite la nueva ruta de base de etiquetas. Si desea utilizar la IU clásica, debe `/etc/tags` crearla seguida de un reinicio `cq-tagging` del componente.
 
-En caso de que las instancias de AEM actualizadas sean compatibles con la API de TagManager y se ejecuten en la IU clásica:
+En el caso de instancias de AEM actualizadas admitidas por la API de TagManager y ejecutadas en la IU clásica:
 
 1. Una vez que las referencias a la ruta base de etiquetas antigua `/etc/tags` se sustituyen mediante tagId o la nueva ubicación de etiquetas `/content/cq:tags`, puede migrar las etiquetas a la nueva ubicación `/content/cq:tags` en CRX seguida de reiniciar el componente.
 

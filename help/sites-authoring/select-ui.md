@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
@@ -34,9 +37,11 @@ Para conseguirlo, se ofrecen dos interfaces gráficas de usuario, accesibles des
    * Diseñada para utilizarse en dispositivos táctiles y de escritorio, el aspecto es el mismo en todos los dispositivos, aunque la [visualización y la selección de los recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) varía ligeramente (toques frente a clics).
 
       * Escritorio:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Dispositivos de tableta (o de escritorio con menos de 1024 píxeles de ancho):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. IU clásica
@@ -45,6 +50,7 @@ Para conseguirlo, se ofrecen dos interfaces gráficas de usuario, accesibles des
    * Es, principalmente, de color verde.
    * Está diseñada para utilizarse en dispositivos de escritorio.
    * La siguiente documentación se centra en la interfaz de usuario moderna. Para obtener información sobre la creación en la IU clásica, consulte la [Documentación sobre la creación para la IU clásica](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Cambio de IU
@@ -167,6 +173,7 @@ El sistema puede anular la configuración definida por un usuario o administrado
 >
 >* Editar la URL de forma manual: una URL no estándar podría provocar una situación desconocida y una falta de funcionalidad.
 >* Tener ambos editores abiertos al mismo tiempo: por ejemplo, en ventanas independientes.
+
 >
 
 

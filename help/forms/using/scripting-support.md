@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con secuencias de comandos para formularios HTML5
 seo-title: Compatibilidad con secuencias de comandos para formularios HTML5
-description: JavaScript, propiedades de FormCalc y otros métodos que se admiten en formularios HTML5 Forms.
-seo-description: JavaScript, propiedades de FormCalc y otros métodos que se admiten en formularios HTML5 Forms.
+description: JavaScript, propiedades de FormCalc y otros métodos admitidos en HTML5 Forms.
+seo-description: JavaScript, propiedades de FormCalc y otros métodos admitidos en HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '3911'
+ht-degree: 36%
 
 ---
 
@@ -104,7 +107,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr> 
    <td><code>numPages</code></td> 
    <td>Devuelve el número de páginas del documento.</td> 
-   <td>La directiva de paginación de formularios HTML5 no es idéntica a la directiva de paginación de formularios PDF. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td> 
+   <td>La directiva de paginación de formularios HTML5 no es idéntica a la directiva de paginación de PDF forms. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td> 
   </tr> 
   <tr> 
    <td><code>platform</code></td> 
@@ -114,7 +117,7 @@ Las propiedades JavaScript, FormCalc y los métodos admitidos en los formularios
   <tr> 
    <td><code>title</code></td> 
    <td>Especifica el título del documento. Sólo está disponible para aplicaciones de cliente.</td> 
-   <td>Devuelve el título del documento HTML en el formulario, en lugar del título de los metadatos del formulario, como en el caso de los formularios PDF.</td> 
+   <td>Devuelve el título del documento HTML en el formulario, en lugar del título de los metadatos del formulario, como en el caso de los PDF forms.</td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
@@ -1121,7 +1124,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr> 
    <td><strong>Categoría </strong></td> 
    <td><strong>Descripción </strong></td> 
-   <td><strong>Ejemplo </strong></td> 
+   <td><strong>Muestra </strong></td> 
   </tr> 
   <tr> 
    <td>Expresión simple</td> 
@@ -1310,7 +1313,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr> 
    <td>app.calculate</td> 
    <td>Si es true (el valor predeterminado), se pueden realizar cálculos. Si es false, no se permiten cálculos.</td> 
-   <td>Siempre es true para formularios HTMl5.</td> 
+   <td>Siempre es true para HTMl5 Forms.</td> 
   </tr> 
   <tr> 
    <td>app.constants</td> 
@@ -1337,7 +1340,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
 
 ## eventos XFA admitidos {#supported-xfa-events}
 
-Se admiten los siguientes eventos XFA de lado del cliente:
+Se admiten los siguientes eventos XFA del lado del cliente:
 
 * Inicializar
 * Validar

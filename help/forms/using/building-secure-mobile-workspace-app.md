@@ -35,10 +35,10 @@ Debe archivar el proyecto Xcode para la aplicación de AEM Forms para crear el a
 1. Descargue y agregue el perfil de aprovisionamiento al Xcode y al iPad.
 1. Inicie sesión en el equipo Mac que tenga Xcode y iOS SDK instalados y configurados.
 1. Abra el `AEM Forms.xcodeproj` proyecto en Xcode.
-1. Haga clic en **[!UICONTROL AEM Forms]** y, en **[!UICONTROL DESTINATARIOS]**, seleccione **[!UICONTROL AEM Forms]**. Seleccione la ficha **[!UICONTROL Generar configuración]** , busque la sección Asignación de derechos **[!UICONTROL de firma de]** código y, en el menú desplegable Asignación de derechos, seleccione la opción Empresa **** LC.
+1. Haga clic en **[!UICONTROL AEM Forms]**, en **[!UICONTROL DESTINATARIOS]**, seleccione **[!UICONTROL AEM Forms]**. Seleccione la ficha **[!UICONTROL Generar configuración]** , busque la sección Asignación de derechos **[!UICONTROL de firma de]** código y, en el menú desplegable Asignación de derechos, seleccione la opción Empresa **** LC.
 1. Busque y abra el `LC Enterprise.entitlements` archivo en el Xcode para editarlo. En los derechos **XCode, **agregue el mismo par clave-valor que está presente en el perfil de aprovisionamiento.
 1. En la ficha **[!UICONTROL Configuración]** de compilación, haga clic en **[!UICONTROL Todo]** y, a continuación, en **[!UICONTROL Combinado]**.
 1. En la lista **[!UICONTROL Configuración]** , expanda Firma **[!UICONTROL de código]**.
 1. Para Identidad **[!UICONTROL de firma de]** código, seleccione la firma adecuada. Asegúrese de que la misma firma está seleccionada para **[!UICONTROL Depurar]**, **[!UICONTROL Versión]** y **[!UICONTROL Cualquier SDK]** de iOS.
 1. En **[!UICONTROL PROJECT]**, seleccione **[!UICONTROL AEM Forms]** y asegúrese de que la firma adecuada está seleccionada para Identidad **[!UICONTROL de firma de]** código, **[!UICONTROL Depurar]**, **[!UICONTROL Liberar]** **** y Cualquier SDK de iOS.
-1. Compilación y distribución de aplicaciones de AEM Forms. Para obtener instrucciones detalladas sobre cómo crear y distribuir la aplicación de AEM Forms, consulte [Compilación del instalador para la aplicación](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)de AEM Forms.
+1. Compilación y distribución de aplicaciones de AEM Forms. Para obtener instrucciones detalladas sobre cómo crear y distribuir aplicaciones de AEM Forms, consulte [Compilación del instalador para la aplicación](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)de AEM Forms.

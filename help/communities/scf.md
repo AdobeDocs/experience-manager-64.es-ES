@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ Explore en una instancia de autor o publicación mediante la guía [de component
 
 En SCF, un componente está compuesto por un POJO de componente de Social, una plantilla JS de controladores (para representar el componente) y CSS (para aplicar estilo al componente).
 
-Una plantilla JS de Handlebars puede ampliar los componentes JS de modelo o vista para manejar la interacción del usuario con el componente en el cliente.
+Una plantilla JS de Handlebars puede extender los componentes JS de modelo o vista para manejar la interacción del usuario con el componente en el cliente.
 
-Si un componente necesita admitir la modificación de datos, la implementación de la API de SocialComponent se puede escribir para admitir la edición/guardado de datos similares a objetos de modelo/datos en aplicaciones web tradicionales. Además, se pueden añadir operaciones (controladores) y un servicio de operación para gestionar solicitudes de operación, llevar a cabo lógica empresarial e invocar las API en objetos de modelo o datos.
+Si un componente necesita admitir la modificación de datos, la implementación de la API de SocialComponent se puede escribir para admitir la edición/almacenamiento de datos similares a objetos de modelo/datos en aplicaciones web tradicionales. Además, se pueden añadir operaciones (controladores) y un servicio de operación para gestionar solicitudes de operación, llevar a cabo lógica empresarial e invocar las API en objetos de modelo o datos.
 
 La API de SocialComponent se puede ampliar para proporcionar los datos que un cliente necesita para una capa de vista o un cliente HTTP.
 
@@ -54,18 +57,18 @@ Para personalizar o ampliar los componentes, solo debe escribir las superposicio
    * Cambiar la plantilla JS y la CSS
 * Para Look, Feel y UX
    * Cambiar la plantilla JS, CSS y [ampliar/anular Javascript](client-customize.md#extending-javascript)
-* Para modificar la información disponible en la plantilla JS o en el extremo GET
+* Para modificar la información disponible en la plantilla JS o en el extremo de GET
    * Ampliación del [componente Social](server-customize.md#socialcomponent-interface)
 * Para agregar procesamiento personalizado durante las operaciones
    * Escribir una [extensión OperationExtension](server-customize.md#operationextension-class)
 * Para agregar una nueva operación personalizada
    * Crear una nueva operación [de publicación de Sling](server-customize.md#postoperation-class)
    * Utilice [OperationServices](server-customize.md#operationservice-class) existente según sea necesario
-   * Agregue código JavaScript para invocar la operación desde el cliente según sea necesario
+   * Añada el código Javascript para invocar la operación desde el cliente según sea necesario
 
 ## Módulo de servidor {#server-side-framework}
 
-La estructura proporciona API para acceder a la funcionalidad en el servidor y admite la interacción entre el cliente y el servidor.
+El marco proporciona API para acceder a la funcionalidad en el servidor y admite la interacción entre el cliente y el servidor.
 
 ### API de Java {#java-apis}
 
@@ -73,15 +76,15 @@ Las API de Java proporcionan clases e interfaces abstractas que se heredan o sub
 
 Las clases principales se describen en la página Personalización [del lado del](server-customize.md) servidor.
 
-Visite Información general [del proveedor](srp.md) de recursos de almacenamiento de información para obtener información sobre cómo trabajar con UGC.
+Visite Información general [del proveedor de recursos de](srp.md) Almacenamiento para obtener información sobre cómo trabajar con UGC.
 
 ### HTTP API {#http-api}
 
 La API HTTP admite la facilidad de personalización y elección de plataformas de cliente para aplicaciones PhoneGap, aplicaciones nativas y otras integraciones y mashups. Además, la API de HTTP permite que un sitio de comunidad se ejecute como un servicio sin cliente, de modo que los componentes del marco se pueden integrar en cualquier página web creada con cualquier tecnología.
 
-### API HTTP: solicitudes GET {#http-api-get-requests}
+### API HTTP: solicitudes de GET {#http-api-get-requests}
 
-Para cada componente de Social, la estructura proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una solicitud GET al recurso con un selector &#39;.social.json&#39; + extensión. Con Sling, la solicitud se entrega al `DefaultSocialGetServlet`.
+Para cada componente de Social, la estructura proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una solicitud de GET al recurso con un selector &#39;.social.json&#39; + extensión. Con Sling, la solicitud se entrega al `DefaultSocialGetServlet`.
 
 El `DefaultSocialGetServlet`
 
@@ -93,27 +96,27 @@ El `DefaultSocialGetServlet`
 
 **`GET Request`**
 
-Un servlet GET predeterminado escucha las solicitudes .social.json a las que SocialComponent responde con JSON personalizable.
+Un servlet de GET predeterminado escucha las solicitudes .social.json a las que SocialComponent responde con JSON personalizable.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-### API HTTP: solicitudes POST {#http-api-post-requests}
+### API HTTP: solicitudes de POST {#http-api-post-requests}
 
-Además de las operaciones GET (Leer), el marco define un patrón de extremo para habilitar otras operaciones en un componente, como Crear, Actualizar y Eliminar. Estos extremos son API HTTP que aceptan entradas y responden con códigos de estado HTTP o con un objeto de respuesta JSON.
+Además de las operaciones de GET (lectura), la estructura define un patrón de extremo para habilitar otras operaciones en un componente, como Crear, Actualizar y Eliminar. Estos extremos son API HTTP que aceptan entradas y responden con códigos de estado HTTP o con un objeto de respuesta JSON.
 
 Este patrón de punto final del marco hace que las operaciones de CUD sean extensibles, reutilizables y comprobables.
 
 **`POST Request`**
 
-Hay una operación POST:Sling para cada operación de SocialComponent. La lógica empresarial y el código de mantenimiento de cada operación están agrupados en un OperationService al que se puede acceder a través de la API HTTP o desde cualquier otro lugar como servicio OSGi. Se proporcionan ganchos que admiten extensiones de operación conectables para acciones anteriores y posteriores.
+Hay una operación Sling POST:para cada operación SocialComponent. La lógica empresarial y el código de mantenimiento de cada operación están agrupados en un OperationService al que se puede acceder a través de la API HTTP o desde cualquier otro lugar como servicio OSGi. Se proporcionan ganchos que admiten extensiones de operación conectables para acciones anteriores y posteriores.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-### Proveedor de recursos de almacenamiento (SRP) {#storage-resource-provider-srp}
+### Proveedor de recursos de Almacenamiento (SRP) {#storage-resource-provider-srp}
 
 Para obtener más información sobre la gestión de UGC almacenada en el almacén [de contenido de la](working-with-srp.md)comunidad, consulte
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: Introducción y uso del repositorio
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: Introducción y uso del repositorio
 * [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de utilidad de la API de SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación
 
@@ -129,7 +132,7 @@ Los scripts HBS son sencillos, sin lógica, se compilan tanto en el servidor com
 
 La estructura proporciona varios [controladores](handlebars-helpers.md) de controladores que son útiles para el desarrollo de SocialComponents.
 
-En el servidor, cuando Sling resuelve una solicitud GET, identifica la secuencia de comandos que se utilizará para responder a la solicitud. Si la secuencia de comandos es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de controladores. El motor de controladores obtendrá el componente SocialComponent de la SocialComponentFactory adecuada, generará un contexto y representará el HTML.
+En el servidor, cuando Sling resuelve una solicitud de GET, identifica la secuencia de comandos que se utilizará para responder a la solicitud. Si la secuencia de comandos es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de controladores. El motor de controladores obtendrá el componente SocialComponent de la SocialComponentFactory adecuada, generará un contexto y representará el HTML.
 
 ### Sin restricción de acceso {#no-access-restriction}
 
@@ -139,15 +142,15 @@ Esto requiere que cualquier usuario pueda recuperar todas las plantillas HBS de 
 
 No se puede prohibir el acceso HTTP a los archivos .hbs.
 
-### Agregar o incluir un componente de comunidades {#add-or-include-a-communities-component}
+### Añadir o incluir un componente de comunidades {#add-or-include-a-communities-component}
 
 La mayoría de los componentes de Comunidades deben *agregarse* como un recurso direccionable Sling. Algunos de los componentes de Comunidades pueden *incluirse* en una plantilla como recurso no existente para permitir la inclusión dinámica y la personalización de la ubicación en la que se escribe contenido generado por el usuario (UGC).
 
 En cualquier caso, también deben estar presentes las bibliotecas [de cliente](clientlibs.md) requeridas del componente.
 
-**Agregar un componente**
+**Añadir un componente**
 
-La adición de un componente se refiere al proceso de adición de una instancia de un recurso (componente), como cuando se arrastra desde el navegador de componentes (barra de tareas) a una página en modo de edición de autor.
+Añadir un componente se refiere al proceso de agregar una instancia de un recurso (componente), como cuando se arrastra desde el navegador de componentes (barra de tareas) a una página en modo de edición de autor.
 
 El resultado es un nodo secundario JCR bajo un nodo par, que es direccionable Sling.
 
@@ -157,7 +160,7 @@ Incluir un componente hace referencia al proceso de agregar una referencia a un 
 
 A partir de AEM 6.1, cuando un componente se incluye dinámicamente en lugar de agregarse, es posible editar las propiedades del componente en el *modo *diseño *del autor.
 
-Solo se pueden incluir dinámicamente algunos de los componentes de Comunidades de AEM seleccionados. Son:
+Solo se pueden incluir dinámicamente algunos de los componentes de AEM Communities seleccionados. Son:
 
 * [Comentarios](essentials-comments.md)
 * [Clasificación](rating-basics.md)
@@ -183,13 +186,13 @@ La Guía [de componentes de](components-guide.md) comunidad permite que los comp
 
 ### Ayudantes de manillar {#handlebars-helpers}
 
-Consulte [SCF Handlebars Helpers](handlebars-helpers.md) para obtener una lista y una descripción de los asistentes personalizados disponibles en SCF.
+Consulte [SCF Handlebars Helpers](handlebars-helpers.md) para obtener una lista y una descripción de los ayudantes personalizados disponibles en SCF.
 
 ## Client-Side Framework {#client-side-framework}
 
-### Modelo-Ver Javascript Framework {#model-view-javascript-framework}
+### Modelo-Vista de Javascript Framework {#model-view-javascript-framework}
 
-La estructura incluye una extensión de [Backbone.js](https://www.backbonejs.org/), un marco de JavaScript de vista de modelo, para facilitar el desarrollo de componentes interactivos y enriquecidos. La naturaleza orientada a objetos admite un marco extensible/reutilizable. La comunicación entre cliente y servidor se simplifica mediante la API HTTP.
+La estructura incluye una extensión de [Backbone.js](https://www.backbonejs.org/), un marco JavaScript de vista de modelos, para facilitar el desarrollo de componentes interactivos y enriquecidos. La naturaleza orientada a objetos admite un marco extensible/reutilizable. La comunicación entre cliente y servidor se simplifica mediante la API HTTP.
 
 El marco aprovecha las plantillas de controladores del lado del servidor para procesar los componentes para el cliente. Los modelos se basan en las respuestas JSON generadas por la API HTTP. Las vistas se enlazan a HTML generado por las plantillas de controladores y proporcionan interactividad.
 

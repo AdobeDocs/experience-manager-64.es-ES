@@ -1,8 +1,8 @@
 ---
 title: Administración de paquetes con Maven
 seo-title: Administración de paquetes con Maven
-description: Utilice el complemento Content Package Maven para integrar las tareas de administración de paquetes en sus proyectos de Maven
-seo-description: Utilice el complemento Content Package Maven para integrar las tareas de administración de paquetes en sus proyectos de Maven
+description: Utilice el complemento Content Package Maven para integrar tareas de administración de paquetes en sus proyectos de Maven
+seo-description: Utilice el complemento Content Package Maven para integrar tareas de administración de paquetes en sus proyectos de Maven
 uuid: fa73f0d6-8848-4911-9b96-311c875b45be
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 4%
 
 ---
 
 
 # Administración de paquetes con Maven{#managing-packages-using-maven}
 
-Utilice el complemento Content Package Maven para integrar las tareas de administración de paquetes en sus proyectos de Maven. Los objetivos y parámetros del complemento le permiten automatizar muchas de las tareas que normalmente realizaría mediante la página Administrador de paquetes o la línea de comandos de FileVault:
+Utilice el complemento Content Package Maven para integrar tareas de administración de paquetes en sus proyectos de Maven. Los objetivos y parámetros del complemento le permiten automatizar muchas de las tareas que normalmente realizaría mediante la página Administrador de paquetes o la línea de comandos de FileVault:
 
 * Cree nuevos paquetes a partir de archivos del sistema de archivos.
 * Instale y desinstale paquetes en el servidor CRX o CQ.
 * Genere paquetes que ya estén definidos en el servidor.
-* Obtenga una lista de los paquetes instalados en el servidor.
+* Obtenga una lista de paquetes instalados en el servidor.
 * Elimine un paquete del servidor.
 
-## Adición del complemento Maven del paquete de contenido al archivo POM {#adding-the-content-package-maven-plugin-to-the-pom-file}
+## Añadir el complemento Maven del paquete de contenido al archivo POM {#adding-the-content-package-maven-plugin-to-the-pom-file}
 
 Para utilizar el complemento Maven del paquete de contenido, agregue el siguiente elemento de complemento dentro del elemento build del archivo POM:
 
@@ -40,7 +43,7 @@ Para utilizar el complemento Maven del paquete de contenido, agregue el siguient
 </plugin>
 ```
 
-Para habilitar Maven para descargar el complemento, utilice el perfil proporcionado en la sección [Obtención del complemento](#obtaining-the-content-package-maven-plugin) Content Package Maven de esta página.
+Para habilitar Maven para descargar el complemento, utilice el perfil que se proporciona en la sección [Obtención del complemento](#obtaining-the-content-package-maven-plugin) Content Package Maven de esta página.
 
 ## Objetivos del complemento Maven del paquete de contenido {#goals-of-the-content-package-maven-plugin}
 
@@ -91,7 +94,7 @@ Los parámetros de la siguiente tabla son comunes a todos los objetivos excepto 
   <tr> 
    <td>name</td> 
    <td>Cadena</td> 
-   <td>build: Sí<br /> instalación: No<br /> rm:Sí</td> 
+   <td>build: Sí<br /> instalación: No<br /> rm: Sí</td> 
    <td>Generar: No hay valores predeterminados.<br /> install: Valor de la propiedad artifactsId del proyecto Maven.</td> 
    <td>Nombre del paquete en el que se va a actuar.</td> 
    <td>Todos los objetivos excepto ls.</td> 
@@ -223,7 +226,7 @@ Además de los parámetros siguientes, consulte las descripciones de la sección
    <td>artefacto</td> 
    <td>Cadena</td> 
    <td>No</td> 
-   <td> Valor de la propiedad artifactsId del proyecto Maven.</td> 
+   <td>Valor de la propiedad artifactsId del proyecto Maven.</td> 
    <td>Una cadena del formulario groupId:artiactId:version[:packing].</td> 
   </tr> 
   <tr> 
@@ -349,7 +352,7 @@ mvn install
 
 ### ls {#ls}
 
-Enumera los paquetes implementados en el Administrador de paquetes.
+Lista los paquetes implementados en el Administrador de paquetes.
 
 #### Parámetros {#parameters-2}
 
@@ -357,7 +360,7 @@ Todos los parámetros del objetivo ls se describen en la sección Parámetros []
 
 #### Ejemplo {#example-2}
 
-En el siguiente ejemplo se muestran los paquetes instalados en la instancia de AEM con la dirección IP 10.36.79.223. El objetivo se ejecuta con el siguiente comando:
+El siguiente ejemplo lista los paquetes instalados en la instancia de AEM con la dirección IP 10.36.79.223. El objetivo se ejecuta con el siguiente comando:
 
 ```shell
 mvn content-package:ls
@@ -440,7 +443,7 @@ Todos los parámetros del objetivo de desinstalación se describen en la secció
 
 #### Ejemplo {#example-4}
 
-En el siguiente ejemplo se desinstala el paquete workflow-mbean que está instalado en la instancia de AEM con la dirección IP 10.36.79.223. El objetivo se ejecuta con el siguiente comando:
+En el ejemplo siguiente se desinstala el paquete workflow-mbean que está instalado en la instancia de AEM con la dirección IP 10.36.79.223. El objetivo se ejecuta con el siguiente comando:
 
 ```shell
 mvn content-package:uninstall
@@ -544,7 +547,7 @@ Además de los parámetros siguientes, consulte la descripción del `name` pará
    <td>com.day.jcr.<br /> vault.maven.pack.impl.<br /> DefaultWorkspaceFilter</td> 
    <td>No</td> 
    <td></td> 
-   <td>Contiene elementos de filtro que definen el contenido del paquete. Cuando se ejecutan, los filtros se incluyen en el archivo filter.xml. Consulte la sección Uso de filtros a continuación.</td> 
+   <td>Contiene elementos de filtro que definen el contenido del paquete. Cuando se ejecutan, los filtros se incluyen en el archivo filter.xml. Consulte la sección Uso de Filtros a continuación.</td> 
   </tr> 
   <tr> 
    <td>finalName</td> 
@@ -558,7 +561,7 @@ Además de los parámetros siguientes, consulte la descripción del `name` pará
    <td>java.lang.String</td> 
    <td>Sí</td> 
    <td>El groupID definido en el proyecto Maven.</td> 
-   <td>El groupId del paquete de contenido generado. Este valor forma parte de la ruta de instalación de destino para el paquete de contenido.</td> 
+   <td>El groupId del paquete de contenido generado. Este valor forma parte de la ruta de instalación de destinatario para el paquete de contenido.</td> 
   </tr> 
   <tr> 
    <td>outputDirectory</td> 
@@ -634,7 +637,7 @@ Además de los parámetros siguientes, consulte la descripción del `name` pará
 
 #### Uso de filtros {#using-filters}
 
-Utilice el elemento filters para definir el contenido del paquete. Los filtros se agregan al elemento spaceFilter del `META-INF/vault/filter.xml` archivo del paquete.
+Utilice el elemento filtros para definir el contenido del paquete. Los filtros se agregan al elemento spaceFilter del `META-INF/vault/filter.xml` archivo del paquete.
 
 El siguiente ejemplo de filtro muestra la estructura XML que se va a utilizar:
 
@@ -656,15 +659,15 @@ El siguiente ejemplo de filtro muestra la estructura XML que se va a utilizar:
 
 El `mode` elemento define cómo se ve afectado el contenido del repositorio cuando se importa el paquete. Se pueden utilizar los siguientes valores:
 
-* **** Combinar: Se agrega el contenido del paquete que no se encuentra en el repositorio. El contenido que se encuentra tanto en el paquete como en el repositorio no cambia. No se elimina contenido del repositorio.
-* **** Reemplazar: El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se sustituye por el contenido coincidente del paquete. El contenido se elimina del repositorio cuando no existe en el paquete.
-* **** Actualización: El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se sustituye por el contenido coincidente del paquete. El contenido existente se elimina del repositorio.
+* **Combinar:** Se agrega el contenido del paquete que no se encuentra en el repositorio. El contenido que se encuentra tanto en el paquete como en el repositorio no cambia. No se elimina contenido del repositorio.
+* **Reemplazar:** El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se sustituye por el contenido coincidente del paquete. El contenido se elimina del repositorio cuando no existe en el paquete.
+* **Actualización:** El contenido del paquete que no está en el repositorio se agrega al repositorio. El contenido del repositorio se sustituye por el contenido coincidente del paquete. El contenido existente se elimina del repositorio.
 
 Cuando el filtro no contiene ningún `mode` elemento, se utiliza el valor predeterminado de `replace` .
 
 #### Ejemplo {#example-5}
 
-En el ejemplo siguiente se crea un paquete que contiene el paquete OSGi de flujo de trabajo. El archivo POM identifica el directorio jcr_root como el valor de la propiedad buildContentDirectory. El directorio jcr_root contiene el archivo JAR del paquete en la estructura de directorio que refleja el repositorio:
+En el siguiente ejemplo se crea un paquete que contiene el paquete OSGi de flujo de trabajo. El archivo POM identifica el directorio jcr_root como el valor de la propiedad buildContentDirectory. El directorio jcr_root contiene el archivo JAR del paquete en la estructura de directorio que refleja el repositorio:
 
 `jcr_root/apps/myapp/install/workflow-mbean-0.03-SNAPSHOT.jar`
 
@@ -746,11 +749,11 @@ En lugar de expresar el `package` objetivo en la sección del complemento `execu
 
 ## Obtención del complemento Content Package Maven {#obtaining-the-content-package-maven-plugin}
 
-El complemento está disponible en el repositorio público de Adobe. Para descargar el complemento, agregue el siguiente perfil de Maven al archivo de configuración de Maven y actívelo. Cuando se utiliza un comando Maven, el complemento se descarga en el repositorio local si es necesario.
+El complemento está disponible en el repositorio público de Adobe. Para descargar el complemento, agregue el siguiente perfil Maven al archivo de configuración Maven y actívelo. Cuando se utiliza un comando Maven, el complemento se descarga en el repositorio local si es necesario.
 
 >[!NOTE]
 >
->El repositorio de versiones públicas de Adobe no se puede explorar, por lo que la navegación a la dirección URL del repositorio mediante el navegador web produce un error No encontrado. Sin embargo, Maven puede acceder a los directorios del repositorio.
+>El repositorio de Adobe Public Releases no se puede explorar, por lo que la navegación a la URL del repositorio mediante el navegador web produce un error No encontrado. Sin embargo, Maven puede acceder a los directorios del repositorio.
 
 ```xml
 <profile>
@@ -853,7 +856,7 @@ El siguiente ejemplo de POM crea un paquete que contiene el paquete UserManager 
 
 Reemplace los archivos de configuración de paquete predeterminados para personalizar las propiedades del paquete. Por ejemplo, incluya una imagen en miniatura para distinguir el paquete en el Administrador de paquetes y Uso compartido de paquetes.
 
-En el paquete, los archivos específicos de FileVault se encuentran en la carpeta /META-INF/vault. Los archivos de origen pueden ubicarse en cualquier lugar del sistema de archivos. En el archivo POM, defina los recursos de compilación para copiar los archivos de origen en target/vault-work/META-INF para incluirlos en el paquete.
+En el paquete, los archivos específicos de FileVault se encuentran en la carpeta /META-INF/vault. Los archivos de origen pueden ubicarse en cualquier lugar del sistema de archivos. En el archivo POM, defina los recursos de compilación para copiar los archivos de origen en el destinatario/vault-work/META-INF para incluirlos en el paquete.
 
 El siguiente código POM agrega los archivos de la carpeta META-INF del origen del proyecto al paquete:
 
@@ -883,9 +886,9 @@ El siguiente código POM sólo agrega una imagen en miniatura al paquete. La ima
 </build>
 ```
 
-## Uso De Tipos De Archivo Para Generar Proyectos De AEM {#using-archetypes-to-generate-aem-projects}
+## Uso De Los Arquetipos Para Generar Proyectos AEM {#using-archetypes-to-generate-aem-projects}
 
-Hay varios tipos de arquetes Maven disponibles para generar proyectos de AEM. Utilice el arquetipo que se corresponda con sus objetivos de desarrollo:
+Hay varios arquetipos Maven disponibles para generar AEM proyectos. Utilice el arquetipo que se corresponda con sus objetivos de desarrollo:
 
 * Paquete de contenido que instala recursos para una aplicación AEM: [simple-content-package-archetype](#simple-content-package-archetype)
 * Paquete de contenido que incluye artefactos de terceros: [simple-content-package-with-Embedded-archetype](#simple-content-package-with-embedded-archetype).
@@ -893,7 +896,7 @@ Hay varios tipos de arquetes Maven disponibles para generar proyectos de AEM. Ut
 
 >[!NOTE]
 >
->El proyecto Apache Sling también ofrece arquetipos útiles para el desarrollo de AEM. Estos documentos están documentados en [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
+>El proyecto Apache Sling también oferta arquetipos útiles para el desarrollo de AEM. Estos documentos están documentados en [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
 
 Cada arquetipo genera los siguientes elementos:
 
@@ -901,7 +904,7 @@ Cada arquetipo genera los siguientes elementos:
 * Archivos POM.
 * Archivos de configuración de FileVault.
 
-Los artefactos de arquetipo están disponibles en el repositorio público de Adobe Maven. Para descargar y ejecutar un arquetipo, identifique el arquetipo y el repositorio de Adobe utilizando los parámetros del comando Maven archetype:generate:
+Los artefactos de arquetipo están disponibles en el repositorio público de Maven de Adobe. Para descargar y ejecutar un arquetipo, identifique el arquetipo y el repositorio de Adobe utilizando los parámetros del comando Maven archetype:generate:
 
 ```shell
 mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
@@ -913,7 +916,7 @@ El complemento arquetipo Maven utiliza el modo interactivo en el shell o en el s
 
 **Archivos POM**
 
-Los archivos POM generados incluyen comandos para compilar código, crear paquetes e implementarlos en AEM en paquetes. Las propiedades `groupID`, `artifactId`, `version`y `name` del proyecto Maven se rellenan automáticamente con los valores que proporcione al mensaje interactivo de Maven `archetype:generate` .
+Los archivos POM generados incluyen comandos para compilar código, crear paquetes e implementarlos para AEM en paquetes. Las propiedades `groupID`, `artifactId`, `version`y `name` del proyecto Maven se rellenan automáticamente con los valores que proporcione al mensaje interactivo de Maven `archetype:generate` .
 
 Puede que desee cambiar los siguientes valores predeterminados en el archivo pom.xml generado:
 
@@ -935,7 +938,7 @@ Puede que desee cambiar los siguientes valores predeterminados en el archivo pom
 
 ### simple-content-package-archetype {#simple-content-package-archetype}
 
-Crea un proyecto concreto adecuado para instalar recursos para una aplicación sencilla de AEM. La estructura de carpetas es la que se utiliza debajo de la `/apps` carpeta del repositorio de AEM. El POM define comandos para empaquetar los recursos que se colocan en las carpetas e instalar los paquetes en la instancia de AEM.
+Crea un proyecto concreto que es adecuado para instalar recursos para una aplicación de AEM sencilla. La estructura de carpetas es la que se utiliza debajo de la `/apps` carpeta del repositorio de AEM. El POM define comandos para empaquetar los recursos que se colocan en las carpetas e instalar los paquetes en la instancia de AEM.
 
 **Propiedades del artefacto de arquetipo:**
 
@@ -957,7 +960,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: GroupId del paquete de contenido que genera Maven. El valor se utiliza automáticamente en el archivo POM.
 * artiactId: Nombre del paquete de contenido. El valor también se utiliza como nombre de la carpeta del proyecto.
-* version:Versión del paquete de contenido.
+* version: Versión del paquete de contenido.
 * paquete: Este valor no se utiliza para simple-content-package-archetype.
 * appsFolderName: El nombre de la carpeta debajo de /apps.
 * artiactName: Descripción del paquete de contenido.
@@ -1013,7 +1016,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: GroupId del paquete de contenido que genera Maven. El valor se utiliza automáticamente en el archivo POM.
 * artiactId: Nombre del paquete de contenido. El valor también se utiliza como nombre de la carpeta del proyecto.
-* version:Versión del paquete de contenido.
+* version: Versión del paquete de contenido.
 * paquete: Este parámetro no se utiliza.
 * appsFolderName: El nombre de la carpeta debajo de /apps.
 * artiactName: Descripción del paquete de contenido.
@@ -1048,7 +1051,7 @@ ${artifactId}
 
 ### multimodule-content-package-archetype {#multimodule-content-package-archetype}
 
-Crea un proyecto dinámico que incluye la estructura de carpetas para desarrollar una aplicación de AEM e instalar recursos en el servidor.
+Crea un proyecto concreto que incluye la estructura de carpetas para desarrollar una aplicación AEM e instalar recursos en el servidor.
 
 La `bundle` carpeta contiene la estructura de carpetas que almacena los archivos de origen Java y JUnit que desarrolla. El archivo pom.xml de esta carpeta crea el paquete OSGi. Los siguientes valores del POM identifican el artefacto y el paquete:
 
@@ -1081,7 +1084,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: GroupId del paquete de contenido que genera Maven. El valor se utiliza automáticamente en el archivo POM.
 * artiactId: Nombre del paquete de contenido. El valor también se utiliza como nombre de la carpeta del proyecto.
-* version:Versión del paquete de contenido.
+* version: Versión del paquete de contenido.
 * paquete: Este valor no se utiliza para multimodule-content-package-archetype.
 * appsFolderName: El nombre de la carpeta debajo de /apps.
 * artiactName: Descripción del paquete de contenido.

@@ -8,6 +8,9 @@ topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
 source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+workflow-type: tm+mt
+source-wordcount: '1577'
+ht-degree: 15%
 
 ---
 
@@ -18,17 +21,17 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
 Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a los recursos digitales de una clase en particular y buscarlos. Etiquetar recursos con vocabulario controlado por taxonomía garantiza que se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
 
-En comparación con los vocabularios del lenguaje natural, etiquetar los activos digitales en función de la taxonomía empresarial ayuda a alinearlos con el negocio de una empresa y garantiza que los activos más relevantes aparezcan en las búsquedas.
+En comparación con los vocabularios del lenguaje natural, etiquetar los activos digitales en función de la taxonomía empresarial ayuda a alinearlos con el negocio de una compañía y garantiza que los activos más relevantes aparezcan en las búsquedas.
 
-Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de autos con nombres de modelo para que solo aparezcan imágenes relevantes cuando se buscan imágenes de varios modelos para diseñar una campaña de promoción.
+Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de automóviles con nombres de modelos para que solo aparezcan imágenes relevantes cuando se buscan imágenes de varios modelos para diseñar una campaña de promoción.
 
 Para que el servicio de contenido inteligente aplique las etiquetas correctas, debe formarlo para que reconozca su taxonomía. Para entrenar el servicio, seleccione primero un conjunto de recursos y etiquetas que describan mejor estos recursos. Aplique estas etiquetas a los recursos y ejecute un flujo de trabajo de formación para ayudar al servicio a aprender.
 
 Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a los recursos mediante un flujo de trabajo de etiquetado.
 
-En segundo plano, el servicio de contenido inteligente utiliza el marco de IA de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
+En segundo plano, el servicio de contenido inteligente utiliza la estructura AI de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en Adobe Experience Manager (AEM), el administrador del sistema debe integrar su instancia de AEM con la E/S de Adobe.
+Smart Content Service es un servicio en la nube alojado en E/S de Adobe. Para utilizarlo en Adobe Experience Manager (AEM), el administrador del sistema debe integrar la instancia de AEM con E/S de Adobe.
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -41,22 +44,22 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 ## Requisitos previos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en Adobe I/O:
+Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en E/S de Adobe:
 
-* Una cuenta de Adobe ID que tiene privilegios de administrador para la organización.
+* Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
 
-## Incorporación {#onboarding}
+## Integración {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento de AEM. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a la E/S de Adobe.
+El servicio de contenido inteligente está disponible para su compra como complemento de AEM. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a E/S de Adobe.
 
-El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con AEM. Para integrar el servicio con Recursos AEM, consulte [Configuración de etiquetas](config-smart-tagging.md)inteligentes.
+El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con AEM. Para integrar el servicio con AEM Assets, consulte [Configuración de etiquetas](config-smart-tagging.md)inteligentes.
 
 El proceso de integración se completa cuando el administrador configura el servicio y agrega usuarios en AEM.
 
 >[!NOTE]
 >
->Si utiliza AEM 6.3 o una versión anterior y necesita un servicio de etiquetado automático para sus recursos, consulte Etiquetas [inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Las etiquetas inteligentes no utilizan las funciones de AI y son menos precisas que la función de etiquetado inteligente mejorado.
+>Si utiliza AEM versión 6.3 o anterior y necesita un servicio de etiquetado automático para los recursos, consulte Etiquetas [inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Las etiquetas inteligentes no utilizan las funciones de AI y son menos precisas que la función de etiquetado inteligente mejorado.
 
 ## Revisión de recursos y etiquetas {#reviewing-assets-and-tags}
 
@@ -64,13 +67,14 @@ Una vez que esté integrado, lo primero que desea hacer es identificar un conjun
 
 A continuación, revise las imágenes para identificar un conjunto de imágenes que mejor representen el producto para un requerimiento comercial determinado. Asegúrese de que los recursos del conjunto depurado cumplen las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md)inteligente.
 
-Agregue los recursos a una carpeta y aplique las etiquetas a cada recurso desde la página de propiedades. A continuación, ejecute el flujo de trabajo de formación en esta carpeta. El conjunto depurado de recursos permite que el servicio de contenido inteligente imparta formación eficaz a más recursos mediante las definiciones de taxonomía.
+Añada los recursos a una carpeta y aplique las etiquetas a cada recurso desde la página de propiedades. A continuación, ejecute el flujo de trabajo de formación en esta carpeta. El conjunto depurado de recursos permite que el servicio de contenido inteligente imparta formación eficaz a más recursos mediante las definiciones de taxonomía.
 
 >[!NOTE]
 >
 >1. La formación es un proceso irrevocable. Adobe recomienda revisar las etiquetas del conjunto depurado de recursos antes de formarlo con las etiquetas.
 >1. Lea las directrices [de formación del servicio de contenido](smart-tags-training-guidelines.md) inteligente antes de iniciar la formación para cualquier etiqueta.
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas diferentes.
+
 >
 
 
@@ -172,12 +176,12 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 
 1. En la interfaz de usuario de Recursos, seleccione la carpeta que contenga recursos o recursos específicos a los que desee aplicar etiquetas inteligentes.
 1. Toque o haga clic en el icono de GlobalNav y abra la línea de tiempo.
-1. Toque o haga clic en la flecha de la parte inferior y, a continuación, toque o haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
+1. Toque o haga clic en la flecha de la parte inferior y, a continuación, toque o haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
 
-   ![start_workflow](assets/start_workflow.png)
+   ![inicio_workflow](assets/start_workflow.png)
 
 1. Seleccione el flujo de trabajo Recursos **[!UICONTROL de etiquetas inteligentes]** DAM y especifique un título para el flujo de trabajo.
-1. Toque o haga clic en **[!UICONTROL Iniciar]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente. Para obtener más información, consulte [Administración de etiquetas](managing-smart-tags.md)inteligentes.
+1. Toque o haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si el servicio de contenido inteligente ha etiquetado los recursos correctamente. Para obtener más información, consulte [Administración de etiquetas](managing-smart-tags.md)inteligentes.
 
 >[!NOTE]
 >
@@ -185,4 +189,4 @@ Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiqueta
 >
 >Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los ciclos de etiquetado más recientes y más recientes para el flujo de trabajo de etiquetado supera las 24 horas.
 >
->Para los flujos de trabajo de etiquetado periódico, los recursos sin modificar se etiquetan cuando el lapso supera los 6 meses.
+>En el caso de los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso supera los 6 meses.

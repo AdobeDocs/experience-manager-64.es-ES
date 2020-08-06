@@ -1,8 +1,8 @@
 ---
 title: Obtención de documentos XDP y PDF en AEM Forms
 seo-title: Obtención de documentos XDP y PDF en AEM Forms
-description: AEM Forms permite cargar formularios y recursos admitidos para su uso con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
-seo-description: AEM Forms permite cargar formularios y recursos admitidos para su uso con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
+description: AEM Forms permite cargar formularios y recursos admitidos para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
+seo-description: AEM Forms permite cargar formularios y recursos admitidos para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
@@ -18,10 +21,10 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 ## Información general {#overview}
 
-Puede importar los formularios desde el sistema de archivos local al repositorio de CRX cargándolos en AEM Forms. La operación de carga es compatible con los siguientes tipos de recursos:
+Puede importar los formularios desde el sistema de archivos local al repositorio de CRX, cargándolos en AEM Forms. La operación de carga es compatible con los siguientes tipos de recursos:
 
 * Plantillas de formulario (formularios XFA)
-* Formularios PDF
+* PDF forms
 * Documento (documentos PDF planos)
 
 Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. Puede cargar un recurso del tipo `Resource`, solo junto con un formulario XFA en un archivo ZIP.
@@ -32,11 +35,11 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
 
 ## Carga de formularios {#uploading-forms}
 
-1. Para iniciar sesión en la interfaz de usuario de AEM Forms, acceda a `https://[server]:[port]/aem/forms.html`.
+1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo `https://[server]:[port]/aem/forms.html`.
 1. Vaya a la carpeta en la que desea cargar el formulario o la carpeta que contiene los formularios.
 1. En la barra de herramientas de acciones, toque **Crear > Carga** de archivos.
 
-   ![Archivos de almacenamiento local, opción en Crear](assets/step.png)
+   ![Archivos de la opción de almacenamiento local en Crear](assets/step.png)
 
 1. El cuadro de diálogo Cargar formularios o paquetes le permite examinar y elegir el archivo que desea cargar. El explorador de archivos solo muestra los formatos de archivo admitidos (ZIP, XDP y PDF).
 
@@ -44,7 +47,7 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
    >
    >Un nombre de archivo solo puede contener caracteres alfanuméricos, guiones o guiones bajos.
 
-1. Haga clic en Cargar después de seleccionar el archivo para cargar los archivos o haga clic en &#39;Cancelar&#39; para cancelar la carga. Una ventana emergente muestra los recursos que se han agregado y los recursos que se han actualizado en la ubicación actual.
+1. Haga clic en Cargar después de seleccionar el archivo para cargar los archivos o haga clic en &#39;Cancelar&#39; para cancelar la carga. Una ventana emergente lista los recursos que se agregan y los recursos que se actualizan en la ubicación actual.
 
    >[!NOTE]
    >
@@ -56,16 +59,16 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
 
    ![Mensaje de error al cargar un formulario XFA](assets/upload-scr-err.png)
 
-Una vez completada la carga, un flujo de trabajo en segundo plano genera miniaturas para cada recurso, según la vista previa del recurso. Las versiones más recientes de los recursos, si se cargan, anulan los recursos existentes.
+Una vez completada la carga, un flujo de trabajo en segundo plano genera miniaturas para cada recurso, según la previsualización del recurso. Las versiones más recientes de los recursos, si se cargan, anulan los recursos existentes.
 
 ### Modo protegido {#protected-mode}
 
-El servidor de AEM Forms permite ejecutar código JavaScript. Un código JavaScript malintencionado puede dañar un entorno de AEM Forms. El modo protegido restringe el uso de AEM Forms para ejecutar archivos XDP solo desde ubicaciones y recursos de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
+El servidor de AEM Forms le permite ejecutar código JavaScript. Un código JavaScript malicioso puede dañar un entorno de AEM Forms. El modo protegido restringe a AEM Forms para que ejecute archivos XDP únicamente desde ubicaciones y recursos de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
 
 El modo protegido está activado de forma predeterminada. Si es necesario, puede desactivar el modo protegido:
 
-1. Inicie sesión en AEM Web Console como administrador. La dirección URL es `https://[server]:[port]/system/console/configMgr`
-1. Abra Configuraciones de formularios móviles para editarlas.
+1. Inicie sesión en AEM consola web como administrador. La dirección URL es `https://[server]:[port]/system/console/configMgr`
+1. Abra Configuraciones móviles de Forms para editarlas.
 1. Anule la selección de la opción Modo protegido y haga clic en **Guardar**. El modo protegido está desactivado.
 
 ## Actualización de formularios XFA a los que se hace referencia {#updating-referenced-xfa-forms}

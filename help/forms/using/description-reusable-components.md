@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 9%
 
 ---
 
 
 # Descripción de los componentes reutilizables {#description-of-reusable-components}
 
-El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una estructura [de](/help/forms/using/folder-structure.md) carpetas específica de CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos JavaScript que activan estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
+El espacio de trabajo de AEM Forms se compone de componentes [reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una estructura [de](/help/forms/using/folder-structure.md) carpetas específica de CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos de JavaScript que activan estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
 
 ## ListaDeTareas {#tasklist}
 

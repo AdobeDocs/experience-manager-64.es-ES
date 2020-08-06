@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +28,8 @@ Para obtener información sobre la creación de topologías de descarga y la con
 
 El marco de descarga define dos propiedades de trabajo que se utilizan para identificar la carga útil del trabajo. Los agentes de replicación de descarga utilizan estas propiedades para identificar los recursos que se replicarán en las instancias de la topología:
 
-* `offloading.job.input.payload`:: Una lista de rutas de contenido separadas por coma. El contenido se replica en la instancia que ejecuta el trabajo.
-* `offloading.job.output.payload`:: Una lista de rutas de contenido separadas por coma. Una vez finalizada la ejecución del trabajo, la carga útil del trabajo se replica en estas rutas en la instancia que creó el trabajo.
+* `offloading.job.input.payload`:: lista de rutas de contenido separadas por coma. El contenido se replica en la instancia que ejecuta el trabajo.
+* `offloading.job.output.payload`:: lista de rutas de contenido separadas por coma. Una vez finalizada la ejecución del trabajo, la carga útil del trabajo se replica en estas rutas en la instancia que creó el trabajo.
 
 Utilice la enumeración `OffloadingJobProperties` para hacer referencia a los nombres de propiedad:
 
@@ -174,13 +177,13 @@ La clase MyJobConsumer genera los siguientes mensajes de registro para una carga
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-La propiedad Consumed se puede observar usando CRXDE Lite:
+La propiedad Consumed se puede observar mediante CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
 ## Maven Dependencias {#maven-dependencies}
 
-Agregue las siguientes definiciones de dependencia al archivo pom.xml para que Maven pueda resolver las clases relacionadas con la descarga.
+Añada las siguientes definiciones de dependencia al archivo pom.xml para que Maven pueda resolver las clases relacionadas con la descarga.
 
 ```xml
 <dependency>

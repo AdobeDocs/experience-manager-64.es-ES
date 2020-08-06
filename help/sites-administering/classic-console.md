@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 38%
 
 ---
 
@@ -45,12 +48,15 @@ Para acceder a la consola de etiquetado de la IU clásica:
 
 1. En ambos casos, introduzca
 
-   * **Título**(*obligatorio*) El título que se muestra para la etiqueta. Mientras se puede introducir cualquier carácter,
+   * **Título**
+(
+*Requerido*) El título para mostrar de la etiqueta. Mientras se puede introducir cualquier carácter,
 
       se recomienda no utilizar estos caracteres especiales:
 
-      * `colon (:)` - delimitador de espacio de nombres
+      * `colon (:)` - delimitador de Área de nombres
       * `forward slash (/)` - delimitador de subetiqueta
+
       Estos caracteres no se mostrarán si se introducen.
 
    * **Nombre**
@@ -81,14 +87,14 @@ Para acceder a la consola de etiquetado de la IU clásica:
 
 ## Activación y desactivación de tags {#activating-and-deactivating-tags}
 
-1. En el panel derecho, seleccione el espacio de nombres o la etiqueta que desea activar (publicar) o desactivar (cancelar la publicación).
+1. En el panel derecho, seleccione la Área de nombres o la etiqueta que desee activar (publicar) o desactivar (cancelar la publicación).
 1. Haga clic en **Activar** o **Desactivar** según sea necesario.
 
 ## Lista - mostrar el lugar donde se hace referencia a los tags {#list-showing-where-tags-are-referenced}
 
 **Lista** abre una nueva ventana donde se muestran las rutas de todas las páginas mediante la etiqueta resaltada:
 
-![list_shows_whetagsarereferencing](assets/list_showing_wheretagsarereferenced.png)
+![lista_show_whetagsarerereferenciado](assets/list_showing_wheretagsarereferenced.png)
 
 ## Movimiento de tags {#moving-tags}
 

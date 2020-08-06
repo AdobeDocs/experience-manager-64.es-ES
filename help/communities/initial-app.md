@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +31,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
 En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
-1. En el panel del explorador de CRXDE Lite
+1. En el panel del explorador del CRXDE Lite
 
    * select `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear > Crear plantilla]**
@@ -40,6 +43,7 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
    * Descripción: `An SCF Sandbox template for play pages`
    * Tipo de medio: `an-scf-sandbox/components/playpage`
    * Clasificación: &lt;dejar como predeterminado>
+
    La etiqueta se utiliza para el nombre del nodo.
 
    El tipo de recurso aparece en el nodo jcr:content `playpage`de la propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando lo solicita un explorador.
@@ -56,11 +60,11 @@ En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
    Para agregar una ruta, haga clic en el botón más `+` y escriba `/content(/.&ast;)?` en el cuadro de texto que aparece. Si utiliza copiar/pegar, asegúrese de que no hay espacios al inicio o al final.
 
-   Nota: El valor de la propiedad path permitida es una expresión *regular.* Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
+   Nota: El valor de la propiedad path permitida es una expresión *normal.* Las páginas de contenido que tengan una ruta que coincida con la expresión pueden utilizar la plantilla. En este caso, la expresión normal coincide con la ruta de la carpeta **/content** y todas sus subpáginas.
 
    Cuando un autor crea una página a continuación `/content`, la `playpage`plantilla titulada &quot;Plantilla de página de Simulador para pruebas de SCF&quot; aparece en una lista de plantillas disponibles para usar.
 
-   Después de crear la página raíz a partir de la plantilla, el acceso a la plantilla se puede restringir a este sitio Web modificando la propiedad para incluir la ruta raíz en la expresión regular, es decir,
+   Una vez creada la página raíz a partir de la plantilla, el acceso a la plantilla se puede restringir a este sitio Web modificando la propiedad para incluir la ruta raíz en la expresión normal, es decir,
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -94,11 +98,12 @@ Cree el *componente* que define el contenido y procesa todas las páginas creada
    En el cuadro de diálogo **[!UICONTROL Crear componente]** , escriba los siguientes valores de propiedad:
 
    * Etiqueta: **playpage**
-   * Título: Componente **Reproducción de Simulador para pruebas SCF**
+   * Título: **Componente de reproducción de Simulador para pruebas SCF**
    * Descripción: **Este es el componente que procesa el contenido de una página de Simulador para pruebas de SCF.**
    * Super Tipo: *&lt;dejar en blanco>*
    * Agrupar:
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. Haga clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel Elementos secundarios **** permitidos del cuadro de diálogo
 

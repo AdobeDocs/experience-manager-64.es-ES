@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Introducción {#introduction}
 
-La función de blog de Comunidades AEM ha pasado de ser una actividad de creación a una auténtica actividad comunitaria que tiene lugar en el entorno de publicación.
+La función de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad comunitaria que tiene lugar en el entorno de publicación.
 
-La función de blog permite proporcionar información de la comunidad en formato de diario. Los miembros autorizados (usuarios registrados y con sesión iniciada) realizan entradas de blog en el entorno de publicación.
+La función de blog permite proporcionar información de la comunidad en formato de diario. Las entradas de blog las realizan los miembros autorizados en el entorno de publicación (usuarios registrados y con sesión iniciada).
 
 La función de blog provee:
 
@@ -36,7 +39,7 @@ La función de blog provee:
 
 Esta sección de la documentación describe
 
-* Adición de la función de blog a un sitio de AEM
+* Añadir la función de blog en un sitio AEM
 * Configuración de los componentes del blog
 
 >[!NOTE]
@@ -45,7 +48,7 @@ Esta sección de la documentación describe
 >
 >La función de blog que se encuentra en AEM 6.0 y versiones anteriores ahora se ha eliminado. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
 
-## Adición de componentes de blog a una página {#adding-blog-components-to-a-page}
+## Añadir componentes de blog en una página {#adding-blog-components-to-a-page}
 
 Si desea agregar un blog a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -84,15 +87,15 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Permitir miembros]** privilegiados Si está activada, solo los miembros privilegiados pueden crear contenido.
 
-* **[!UICONTROL Miembros]** privilegiados permitidos Agregue los miembros privilegiados con permiso para crear contenido.
+* **[!UICONTROL Los miembros]** privilegiados permitidos Añaden los miembros privilegiados con permiso para crear contenido.
 
 * **[!UICONTROL Bloquear contenido generado por el usuario en modo]** de edición de autor Si está activado, bloquea el contenido generado por el usuario mientras se edita en modo de autor.
 
-* **[!UICONTROL Título]** del diario El título del blog que se mostrará en la página.
+* **[!UICONTROL Título]** de Historial El título de blog que se mostrará en la página.
    >Nota:
-   >El Título del diario se utiliza para crear automáticamente la URL para el blog. Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título del diario que especifique aquí para crear una URL para el blog.
+   >El Título de Historial se utiliza para crear automáticamente la URL para el blog. Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título de historial que especifique aquí para crear una URL para el blog.
 
-* **[!UICONTROL Descripción]** del diario La descripción del blog.
+* **[!UICONTROL Descripción del Historial]** Descripción del blog.
 
 * **[!UICONTROL Temas por página]**
 
@@ -124,7 +127,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Tamaño máximo de archivo de imagen adjunto]**
 
@@ -176,7 +179,7 @@ En la ficha Moderación **** del usuario, especifique la configuración de moder
 
 * **[!UICONTROL Lista de motivos de indicación]**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado no está marcado.
 
 * **[!UICONTROL Motivo de indicación personalizado]**
 
@@ -188,7 +191,7 @@ En la ficha Moderación **** del usuario, especifique la configuración de moder
 
 * **[!UICONTROL Límite de indicación]**
 
-   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser mayor o igual que el umbral de moderación. El valor predeterminado es 5.
+   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
@@ -196,7 +199,7 @@ En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar
 
 * **[!UICONTROL Espacios de nombres permitidos]**
 
-   Relevante si `Allow Tagging` se marca en la ficha **[!UICONTROL Configuración]** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de espacio de nombres seleccionadas. La lista de espacios de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todos los espacios de nombres.
+   Relevante si `Allow Tagging` se marca en la ficha **[!UICONTROL Configuración]** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **[!UICONTROL Límite de sugerencias]**
 
@@ -204,9 +207,9 @@ En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar
 
 ### Configuración de la barra lateral del blog {#configuring-blog-sidebar}
 
-Al hacer doble clic en el `Blog Sidebar` componente, se abre un cuadro de diálogo de edición.
+Al hacer clic en el `Blog Sidebar` componente con el botón de doble, se abre un cuadro de diálogo de edición.
 
-En la ficha Configuración **[!UICONTROL de barra lateral de]** diario, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
+En la ficha Configuración **[!UICONTROL de la barra lateral de]** Historial, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -219,6 +222,7 @@ En la ficha Configuración **[!UICONTROL de barra lateral de]** diario, especifi
    * MMMMM: mes completo, como junio
    * MMM: mes corto, como Jun
    * MM: número de mes, como 06
+
    El valor predeterminado es &quot;aaaa MMMMM&quot;, que se mostraría, por ejemplo, &quot;2015 junio&quot;
 
 * **[!UICONTROL Tipo de vista]**
@@ -239,11 +243,11 @@ En la ficha Configuración **[!UICONTROL de barra lateral de]** diario, especifi
 
    El número de artículos de blog que se van a mostrar. Un valor de -1 significa que no hay límite. El valor predeterminado es -1.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
-En el entorno de publicación, la función de blog mostrará el artículo de blog más reciente seguido de artículos de blog más antiguos en orden descendente de creación. Las barras laterales de blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de los artículos de blog mostrados.
+En el entorno de publicación, la función de blog mostrará el artículo de blog más reciente seguido de artículos de blog más antiguos en orden descendente de creación. Las barras laterales del blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de los artículos del blog mostrados.
 
-El artículo del blog va seguido de un vínculo para publicar o ver comentarios.
+El artículo del blog va seguido de un enlace a comentarios de publicaciones o vistas.
 
 Cuando se selecciona un artículo de blog, se muestran el artículo de blog y los comentarios (si están activados).
 
@@ -261,7 +265,7 @@ Los artículos del blog aparecerán en la ficha correspondiente (Publicados, Bor
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](moderate-ugc.md) moderación (como permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
+Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](moderate-ugc.md) moderación (según lo permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -282,7 +286,7 @@ Concretamente, podrán:
 
 ### Anónimo {#anonymous}
 
-Los visitantes del sitio que no hayan iniciado sesión sólo podrán leer artículos y comentarios publicados del blog, traducirlos si son compatibles, pero no podrán agregar un artículo o comentario del blog ni marcar los artículos o comentarios de otros.
+Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los artículos y comentarios publicados del blog, traducirlos si son compatibles, pero no podrán agregar un artículo o comentario del blog ni marcar los artículos o comentarios de otros.
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 

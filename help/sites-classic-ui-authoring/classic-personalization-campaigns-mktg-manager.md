@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +49,7 @@ Desde MCM podrá acceder al:
       Si se selecciona un segmento específico, se abrirá la página de definición del segmento.
 
    * [Informes](/help/sites-administering/reporting.md)\
-      AEM proporciona diferentes informes para ayudarle a analizar y supervisar el estado de su instancia. Este panel MCM enumera los informes.
+      AEM proporciona diferentes informes para ayudarle a analizar y a monitorear el estado de su instancia. Este panel MCM enumera los informes.
 
       Si se selecciona un informe, se abrirá la página de informes.
 
@@ -72,7 +75,7 @@ Desde MCM podrá acceder al:
 
 El tablero muestra cuatro paneles que le ofrecen información general de sus listas (de posibles clientes), segmentos, informes y campañas. Aquí también hay disponible funcionalidad básica para estas opciones.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_panel](assets/mcm_dashboard.png)
 
 ## Posibles clientes {#leads}
 
@@ -183,7 +186,7 @@ Hay dos vistas disponibles para las campañas individuales:
 
    Desde aquí puede:
 
-   * **Crear un** nuevo... experiencia; por ejemplo, ofertas, teasers y newsletters de Adobe Target.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **Editar** los detalles de una página de teaser o newsletter específica (también se puede hacer doble clic).
    * Definir las **Propiedades...** de una página de teaser o newsletter específica.
    * **Simular** el aspecto de una experiencia (página de teaser o newsletter).

@@ -168,7 +168,7 @@ La nueva configuración de lanzamiento estará disponible al establecer las opci
 
 Para crear una nueva configuración de implementación:
 
-1. Abra CRXDE Lite; por ejemplo:
+1. CRXDE Lite abierto; por ejemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Ir a :
@@ -373,7 +373,7 @@ Añada dependencias para que el compilador Eclipse pueda hacer referencia a las 
 
 La `LiveActionFactory` clase siguiente implementa un `LiveAction` que registra mensajes sobre las páginas de origen y destinatario y copia la `cq:lastModifiedBy` propiedad desde el nodo de origen al nodo de destinatario. El nombre de la acción activa es `exampleLiveAction`.
 
-1. En el Explorador de proyectos de Eclipse, haga clic con el botón secundario en el `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y, a continuación, haga clic en **Nuevo** > **Clase**. Para el **Nombre**, introduzca `ExampleLiveActionFactory` y, a continuación, haga clic en **Finalizar**.
+1. En el Explorador de proyectos de Eclipse, haga clic con el botón derecho en el `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` paquete y, a continuación, haga clic en **Nuevo** > **Clase**. Para el **Nombre**, introduzca `ExampleLiveActionFactory` y, a continuación, haga clic en **Finalizar**.
 1. Abra el `ExampleLiveActionFactory.java` archivo, reemplace el contenido por el siguiente código y guarde el archivo.
 
    ```java
@@ -523,7 +523,7 @@ La `LiveActionFactory` clase siguiente implementa un `LiveAction` que registra m
    mvn -PautoInstallPackage clean install
    ```
 
-   El archivo `error.log` AEM debe indicar que se ha iniciado el paquete.
+   El archivo AEM `error.log` debe indicar que se ha iniciado el paquete.
 
    Por ejemplo, [http://localhost:4502/system/console/status-slinglogs](http://localhost:4502/system/console/status-slinglogs).
 
@@ -549,7 +549,7 @@ Cree la configuración de implementación de MSM que utiliza la `LiveActionFacto
 
 Configure la configuración de implementación que creó en el procedimiento anterior para que utilice la `ExampleLiveActionFactory` clase.
 
-1. Abra CRXDE Lite; por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. CRXDE Lite abierto; por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 1. Cree el nodo siguiente en `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nombre**: `exampleLiveAction`
@@ -626,7 +626,7 @@ La lista de idioma se almacena debajo del `/libs/wcm/core/resources/languages` n
 
 Para modificar los idiomas:
 
-1. Abra CRXDE Lite en el navegador web; por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Abra el CRXDE Lite en el navegador web; por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Seleccione la `/apps` carpeta, haga clic en **Crear** y, a continuación, en **Crear carpeta.**
 
    Asigne un nombre a la nueva carpeta `wcm`.

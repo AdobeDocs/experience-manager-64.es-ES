@@ -247,7 +247,7 @@ Para habilitar el servicio de cumplimentación previa, especifique la Configurac
 
    >[!NOTE]
    >
-   >De forma predeterminada, se permite rellenar previamente mediante archivos crx para todos los tipos de formularios adaptables (XSD, XDP, JSON, FDM y sin modelo de formulario basado). El relleno previo solo se permite con archivos JSON y XML.
+   >De forma predeterminada, se permite rellenar previamente mediante archivos crx para todos los tipos de Forms adaptable (XSD, XDP, JSON, FDM y sin modelo de formulario basado). El relleno previo solo se permite con archivos JSON y XML.
 
 1. El servicio de cumplimentación previa ahora está configurado para el formulario.
 
@@ -343,14 +343,14 @@ Puede utilizar el servicio de cumplimentación previa personalizado para los esc
 
 El servicio de prerfill es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en paquetes de AEM Forms. Antes de empezar a crear el paquete:
 
-* [Descargar el SDK del cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
+* [Descargar el SDK de AEM Forms Client](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
 * [Descargar el paquete repetitivo](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Coloque el archivo de datos (rellene previamente los datos) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \contents de crx-repository.
 
 #### Crear un servicio de cumplimentación previa {#create-a-prefill-service}
 
-El paquete repetitivo (paquete de servicio de cumplimentación previa de muestra) contiene una implementación de muestra del servicio de cumplimentación previa de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
+El paquete repetitivo (paquete de servicio de prerelleno de muestra) contiene una implementación de muestra del servicio de prerelleno de AEM Forms. Abra el paquete repetitivo en un editor de código. Por ejemplo, abra el proyecto repetitivo en Eclipse para editarlo. Después de abrir el paquete repetitivo en un editor de código, realice los siguientes pasos para crear el servicio.
 
 1. Abra el archivo src\main\java\com\adobe\test\Prefill.java para editarlo.
 1. En el código, establezca el valor de:
@@ -364,9 +364,9 @@ El paquete repetitivo (paquete de servicio de cumplimentación previa de muestra
 
 #### Inicio y uso del servicio de cumplimentación previa {#start-and-use-the-prefill-service}
 
-Para inicio del servicio de cumplimentación previa, cargue el archivo JAR en la consola web de AEM Forms y active el servicio. Ahora, los inicios de servicio aparecen en el editor de formularios adaptables. Para asociar un servicio de cumplimentación previa a un formulario adaptable:
+Para inicio del servicio de cumplimentación previa, cargue el archivo JAR en AEM Forms Web Console y active el servicio. Ahora, los inicios de servicio aparecen en el editor de formularios adaptables. Para asociar un servicio de cumplimentación previa a un formulario adaptable:
 
-1. Abra el formulario adaptable en el Editor de formularios y abra el panel Propiedades del Contenedor de formulario.
-1. En la consola Propiedades, vaya a contenedor de **[!UICONTROL AEM Forms > Básico > Servicio]** de relleno previo.
+1. Abra el formulario adaptable en el Editor de Forms y abra el panel Propiedades del Contenedor de formulario.
+1. En la consola Propiedades, vaya a **[!UICONTROL AEM Forms contenedor > Básico > Servicio]** de relleno previo.
 1. Seleccione el servicio Prefill predeterminado y haga clic en **[!UICONTROL Guardar]**. El servicio está asociado al formulario.
 

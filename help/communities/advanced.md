@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ La puntuación avanzada permite la concesión de insignias para identificar a lo
 
 Esta diferencia se debe al motor de puntuación utilizado para calcular las puntuaciones. El motor de puntuación básico aplica matemáticas sencillas. El motor de puntuación avanzado es un algoritmo adaptable que recompensa a los miembros activos que contribuyen con contenido valioso y relevante, deducido a través del procesamiento del lenguaje natural (PNL) de un tema.
 
-Además de la importancia del contenido, los algoritmos de puntuación tienen en cuenta las actividades de los miembros, como la votación y el porcentaje de respuestas. Aunque la puntuación básica los incluye cuantitativamente, la puntuación avanzada los utiliza algorítmicamente.
+Además de la relevancia del contenido, los algoritmos de puntuación tienen en cuenta las actividades de los miembros, como la votación y el porcentaje de respuestas. Aunque la puntuación básica los incluye cuantitativamente, la puntuación avanzada los utiliza algorítmicamente.
 
-Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que el análisis sea significativo. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También hay un concepto de *decadencia* de los puestos más antiguos de un miembro. Si un miembro experto deja de participar en el tema en el que adquirió la condición de experto, en algún momento determinado (véase la configuración [del motor de](#configurable-scoring-engine)puntuación) podría perder su condición de experto.
+Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que la análisis tenga sentido. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También hay un concepto de *decadencia* de los puestos más antiguos de un miembro. Si un miembro experto deja de participar en el tema en el que adquirió la condición de experto, en algún momento determinado (véase la configuración [del motor de](#configurable-scoring-engine)puntuación) podría perder su condición de experto.
 
 Configurar la puntuación avanzada es prácticamente lo mismo que la puntuación básica:
 
@@ -55,14 +58,13 @@ El motor de puntuación avanzado proporciona una configuración OSGi con paráme
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Ponderaciones]** de puntuación Para un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero se pueden limitar a **un verbo por tema**. Consulte [Temas y Verbos](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL pesos]** de puntuación Para un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero se pueden limitar a **un verbo por tema**. Consulte [Temas y Verbos](implementing-scoring.md#topics-and-verbs).
 
    Introducido como `topic,verb` con la coma de escape. Por ejemplo:
 
    `/social/forum/hbs/social/forum\,ADD`
 
-   
-El valor predeterminado se establece en el verbo ADD para los componentes QnA y forum.
+   El valor predeterminado se establece en el verbo AÑADIR para los componentes QnA y forum.
 
 
 * **[!UICONTROL Rango de puntuación]**
@@ -109,7 +111,7 @@ El paquete de puntuación avanzada instala una carpeta de configuración que con
 
 * `/etc/community/scoring/configuration/stopwords`
 
-El algoritmo de puntuación avanzada utiliza la lista de palabras incluidas en el archivo de palabras clave para identificar las palabras comunes en inglés que se omiten durante el procesamiento del contenido.
+El algoritmo de puntuación avanzada utiliza la lista de palabras contenidas en el archivo de palabras clave para identificar las palabras comunes en inglés que se omiten durante el procesamiento del contenido.
 
 No se espera que este archivo se modifique.
 
@@ -128,7 +130,7 @@ En lugar de asociar puntos con una imagen de insignia, solo es necesario identif
 | badgingPath | Cadena[] | (Requerido) Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen de la insignia deben solicitarse para que la primera se conceda al experto más alto. Si hay menos distintivos de los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:/etc/community/badging/images/Expert-badge/jcr:content/expert.png |
 | badgingLevels | Largo | (Opcional) Especifica los niveles de experiencia que se van a otorgar. Por ejemplo, si debe haber un experto y un experto casi (dos insignias), el valor debe establecerse en 2. El badgingLevel debe coincidir con el número de imágenes de distintivo relacionadas con expertos que se muestran para la propiedad badgingPath. El valor predeterminado es 1. |
 | badgingType | Cadena | (Requerido) Identifica el motor de puntuación como &quot;básico&quot; o &quot;avanzado&quot;. Establecido en &quot;avanzado&quot;, de lo contrario el valor predeterminado es &quot;básico&quot;. |
-| scoringRules | Cadena[] | (Opcional) Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por las reglas de puntuación enumeradas.Ejemplo de entrada:/etc/community/scoring/rules/adv-comments-scoringPredeterminado no es una restricción. |
+| scoringRules | Cadena[] | (Opcional) Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por las reglas de puntuación enumeradas.Ejemplo de entrada:/etc/community/scoring/rules/adv-comments-scoringDefault no es una restricción. |
 
 ## Reglas y distintivo incluidos {#included-rules-and-badge}
 
@@ -142,7 +144,7 @@ En esta versión beta se incluye una insignia de experto basada en premios:
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
-Para que la insignia de experto aparezca como recompensa por la actividad, hay dos cosas que deben suceder:
+Para que la insignia de experto aparezca como una recompensa por la actividad, hay dos cosas que deben suceder:
 
 * `badges` debe estar habilitado para la función, como un foro o un componente QnA
 * las reglas avanzadas de puntuación y marca deben aplicarse a la página (o antecesor) en la que se coloca el componente

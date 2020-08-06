@@ -12,6 +12,9 @@ discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +31,13 @@ Esta página debe leerse junto con la página [Móvil para autores](/help/sites-
 
 ## Desarrollo de sitios Web para dispositivos móviles {#developing-web-sites-for-mobile}
 
-Desarrolle plantillas de página y componentes que estén optimizados para visualizarse con dispositivos móviles. Desarrolle páginas que utilicen un diseño interactivo que se ajuste a varios tamaños de pantalla o que desarrollen páginas optimizadas para un tamaño de pantalla específico. Utilice los emuladores de dispositivo que AEM proporciona o cree sus propios emuladores para la creación y la vista previa de WSYWIG:
+Desarrolle plantillas de página y componentes que estén optimizados para visualizarse con dispositivos móviles. Desarrolle páginas que utilicen un diseño interactivo que se ajuste a varios tamaños de pantalla o que desarrollen páginas optimizadas para un tamaño de pantalla específico. Utilice los emuladores de dispositivo que AEM proporciona o cree sus propios emuladores para la creación y vista previa de WSYWIG:
 
-* [Creación de filtros de grupo de dispositivos](/help/sites-developing/groupfilters.md)
+* [Creación de Filtros de grupos de dispositivos](/help/sites-developing/groupfilters.md)
 * [Diseño adaptable para páginas Web](/help/sites-developing/responsive.md)
 * [Creación de sitios para dispositivos móviles](/help/sites-developing/mobile.md)
 * [Emuladores](/help/sites-developing/emulators.md)
 
 ## Desarrollo de aplicaciones móviles {#developing-mobile-apps}
 
-Desarrolle aplicaciones móviles que utilicen páginas AEM como interfaz de aplicación. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con páginas de AEM. La sincronización de contenido le permite crear archivos con versiones de páginas para compilar con aplicaciones. To learn more about Content Sync, click [here](/help/mobile/phonegap-contentsync.md).
+Desarrolle aplicaciones móviles que utilicen páginas AEM como interfaz de aplicación. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. La sincronización de contenido le permite crear archivos con versiones de páginas para compilar con aplicaciones. To learn more about Content Sync, click [here](/help/mobile/phonegap-contentsync.md).

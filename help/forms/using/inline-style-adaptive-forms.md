@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
 
 # Estilo en línea de los componentes de formularios adaptables {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante el editor [de](/help/forms/using/themes.md)temas. Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante el editor [de](/help/forms/using/themes.md)temas. Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualización los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
@@ -26,14 +29,14 @@ Para agregar estilos en línea a un componente:
 
    También puede seleccionar componentes del árbol de jerarquía de formularios en la barra lateral. El árbol de jerarquía de formularios está disponible como objetos de formulario en la barra lateral.
 
-   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral enumera componentes como campos y paneles. Los campos y paneles son componentes genéricos que pueden contener componentes como cuadro de texto y botones de opción.
+   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes en Objetos de formulario. Sin embargo, la lista Objetos de formulario en los componentes de listas laterales, como campos y paneles. Los campos y paneles son componentes genéricos que pueden contener componentes como cuadro de texto y botones de opción.
 
    Cuando se selecciona un componente de la barra lateral, se muestran todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
 
 1. Haga clic en una ficha de la barra lateral para especificar las propiedades de CSS. Puede especificar propiedades como:
 
-   * Dimensiones y posición (configuración de visualización, relleno, altura, anchura, margen, posición, índice z, flotante, borrar, desbordamiento)
-   * Texto (familia de fuentes, grosor, color, tamaño, altura de línea y alineación)
+   * Dimension y posición (configuración de visualización, relleno, altura, anchura, margen, posición, índice z, flotante, borrar, desbordamiento)
+   * Texto (familia de fuentes, peso, color, tamaño, altura de línea y alineación)
    * Fondo (imagen y degradado, color de fondo)
    * Borde (anchura, estilo, color, radio)
    * Efectos (Sombra, Opacidad)
@@ -93,7 +96,7 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Estilo del cuadro de texto después de aplicar **el estilo en línea** Figura: Componente *Cuadro de texto después de aplicar propiedades de estilo en línea*
+![Estilo del cuadro de texto después de aplicar](assets/applied-style.png)el estilo en línea **Figura:** *Componente de cuadro de texto después de aplicar propiedades de estilo en línea*
 
 Siguiendo los pasos anteriores, puede seleccionar y aplicar estilo a otros componentes, como paneles, botones de envío y botones de radio.
 

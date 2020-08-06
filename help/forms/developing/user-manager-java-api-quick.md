@@ -40,7 +40,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 >[!NOTE]
 >
->El inicio rápido ubicado en Programación con formularios AEM se basa en el Documento si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>El inicio rápido ubicado en Programación con formularios AEM se basa en el Documento si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 
 ## Inicio rápido (modo SOAP): Añadir usuarios mediante la API de Java {#quick-start-soap-mode-adding-users-using-the-java-api}
@@ -163,7 +163,7 @@ En el siguiente ejemplo de código se agrega un usuario llamado Wendy Blue a AEM
 
 ## Inicio rápido (modo SOAP): Eliminación de usuarios mediante la API de Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-En el siguiente ejemplo de código se elimina un usuario llamado Wendy Blue de AEM Forms. (Consulte [Eliminación de usuarios](/help/forms/developing/users.md#deleting-users)).
+En el siguiente ejemplo de código se elimina de AEM Forms un usuario llamado Wendy Blue. (Consulte [Eliminación de usuarios](/help/forms/developing/users.md#deleting-users)).
 
 ```as3
  /* 

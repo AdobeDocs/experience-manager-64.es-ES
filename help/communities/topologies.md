@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
 source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 1%
 
 ---
 
@@ -19,29 +22,29 @@ source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
 
 A partir de AEM Communities 6.1, se ha adoptado un enfoque único para gestionar el contenido generado por el usuario (UGC) enviado por los visitantes del sitio (miembros) desde el entorno de publicación.
 
-Este enfoque difiere fundamentalmente de la forma en que la plataforma AEM gestiona el contenido del sitio que se administra generalmente desde el entorno de creación.
+Este enfoque difiere fundamentalmente de la forma en que la plataforma AEM gestiona el contenido del sitio que generalmente se administra desde el entorno de creación.
 
-La plataforma AEM utiliza un almacén de nodos que replica el contenido del sitio del autor para publicarlo, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replicará.
+La plataforma AEM utiliza un almacén de nodos que replica el contenido del sitio del autor para publicarlo, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replica.
 
-Para el almacén UGC común, es necesario elegir un proveedor [de recursos de almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
+Para el almacén UGC común, es necesario elegir un proveedor de recursos de [almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
 
-* [DSRP: Proveedor de recursos de almacenamiento de datos relacional](dsrp.md)
-* [MSRP - Proveedor de recursos de almacenamiento MongoDB](msrp.md)
-* [ASRP - Proveedor de recursos de almacenamiento de Adobe](asrp.md)
+* [DSRP - Proveedor de recursos de Almacenamiento de base de datos relacional](dsrp.md)
+* [MSRP - Proveedor de recursos de Almacenamiento MongoDB](msrp.md)
+* [ASRP - Proveedor de recursos de Almacenamiento de Adobe](asrp.md)
 
-Otra opción SRP, [JSRP - Proveedor](jsrp.md)de recursos de almacenamiento JCR, no admite un almacén UGC común para los entornos de creación y publicación para ambos accesos.
+Otra opción SRP, [JSRP - Proveedor](jsrp.md)de recursos de Almacenamiento JCR, no admite un almacén UGC común para el autor y entornos de publicación para ambos accesos.
 
 Requerir un almacén común resulta en las siguientes topologías recomendadas.
 
 >[!NOTE]
 >
->En AEM Communities, [UGC nunca se replica](working-with-srp.md#ugc-never-replicated).
+>Para AEM Communities, [UGC nunca se replica](working-with-srp.md#ugc-never-replicated).
 >
->Cuando la implementación no incluye un almacén [](working-with-srp.md)común, UGC solo estará visible en la instancia de publicación o autor de AEM en la que se introdujo.
+>Cuando la implementación no incluye un almacén [](working-with-srp.md)común, UGC solo estará visible en la instancia de publicación o autor AEM en la que se introdujo.
 
 >[!NOTE]
 >
->Para obtener más información sobre la plataforma AEM, consulte Implementaciones [](../../help/sites-deploying/recommended-deploys.md) recomendadas e [introducción a la plataforma](../../help/sites-deploying/data-store-config.md)AEM.
+>Para obtener más información sobre la plataforma AEM, consulte Implementaciones [](../../help/sites-deploying/recommended-deploys.md) recomendadas e [Introducción a la plataforma](../../help/sites-deploying/data-store-config.md)AEM.
 
 ## Para producción {#for-production}
 
@@ -72,7 +75,7 @@ Cuando la topología es un conjunto de servidores de publicación, los temas rel
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | cualquiera | JCR | MySQL | DSRP | Sí |
 | cualquiera | JCR | MongoDB | MSRP | Sí |
-| cualquiera | JCR | Almacenamiento a petición de Adobe | ASRP | Sí |
+| cualquiera | JCR | Adobe de almacenamiento a pedido | ASRP | Sí |
 
 ### JSRP {#jsrp}
 
@@ -80,13 +83,13 @@ Cuando la topología es un conjunto de servidores de publicación, los temas rel
 | Implementación | CONTENIDO DEL SITIO REPOSITORIO | CONTENTREPOSITORIO GENERADO POR EL USUARIO | PROVEEDOR DE RECURSOS DE ALMACENAMIENTO | CONSERVACIÓN COMÚN |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Granja TarMK (predeterminada) | JCR | JCR | JSRP | No |
-| Oak Cluster | JCR | JCR | JSRP | Solo para entorno de publicación de Yesfor |
+| Oak Cluster | JCR | JCR | JSRP | Solo para entorno de publicación |
 
 ## Para el desarrollo {#for-development}
 
-En entornos que no son de producción, [JSRP](jsrp.md) proporciona simplicidad en la configuración de un entorno de desarrollo con una instancia de autor y una instancia de publicación.
+Para entornos que no son de producción, [JSRP](jsrp.md) proporciona simplicidad en la configuración de un entorno de desarrollo con una instancia de autor y una instancia de publicación.
 
-Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, también es posible configurar un entorno de desarrollo similar mediante el almacenamiento bajo demanda de Adobe o MongoDB. Para ver un ejemplo, consulte [HowTo Setup MongoDB for Demo](demo-mongo.md).
+Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, también es posible configurar un entorno de desarrollo similar utilizando almacenamiento a petición de Adobe o MongoDB. Para ver un ejemplo, consulte [HowTo Setup MongoDB for Demo](demo-mongo.md).
 
 ## Referencias {#references}
 
@@ -106,6 +109,6 @@ Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, ta
 
    Básicamente, el contenido del sitio se almacena en un almacén de nodos. Para Assets, se puede configurar un almacén de datos para almacenar datos binarios. Para Comunidades, se debe configurar un almacén común para seleccionar el SRP.
 
-* [Elementos de almacenamiento en AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos de Almacenamiento en AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Describe las implementaciones de almacenamiento de dos nodos: Tar y MongoDB.

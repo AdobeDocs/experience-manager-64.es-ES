@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 72%
 
 ---
 
@@ -77,7 +80,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Creación de la vista previa</td> 
+   <td>Creación de previsualización</td> 
    <td>El archivo FBX u OBJ se ingesta y se procesa. Las dependencias de archivo se evalúan y se resuelven como referencias de recurso, en la medida de lo posible.</td> 
   </tr> 
   <tr> 

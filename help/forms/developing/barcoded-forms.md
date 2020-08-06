@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1891'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 ## Acerca del servicio de formularios con códigos de barras {#about-the-barcoded-forms-service}
 
-El servicio de formularios con códigos de barras automatiza la captura de datos de formularios de relleno e impresión e integra la información capturada en los sistemas informáticos principales de una organización.
+El servicio de formularios con códigos de barras automatiza la captura de datos a partir de formularios de relleno e impresión e integra la información capturada en los sistemas informáticos principales de una organización.
 
-Con el servicio de formularios con códigos de barras, puede agregar códigos de barras unidimensionales y bidimensionales a formularios PDF interactivos. A continuación, puede publicar los formularios con códigos de barras en un sitio web o distribuirlos por correo electrónico o CD. Cuando un usuario rellena un formulario con códigos de barras con Adobe Reader, Acrobat Professional o Acrobat Standard, el código de barras se actualiza automáticamente para codificar los datos del formulario proporcionados por el usuario. El usuario puede enviar el formulario electrónicamente o imprimirlo en papel y enviarlo por correo electrónico, fax o mano. Más adelante, puede extraer los datos suministrados por el usuario como parte de un flujo de trabajo automatizado, lo que distribuye los datos entre los procesos de aprobación y los sistemas empresariales.
+Con el servicio de formularios con códigos de barras, puede agregar códigos de barras unidimensionales y bidimensionales a PDF forms interactivos. A continuación, puede publicar los formularios con códigos de barras en un sitio web o distribuirlos por correo electrónico o CD. Cuando un usuario rellena un formulario con códigos de barras mediante Adobe Reader, Acrobat Professional o Acrobat Standard, el código de barras se actualiza automáticamente para codificar los datos del formulario proporcionados por el usuario. El usuario puede enviar el formulario electrónicamente o imprimirlo en papel y enviarlo por correo electrónico, fax o mano. Posteriormente, puede extraer los datos suministrados por el usuario como parte de un flujo de trabajo automatizado, lo que permite el enrutamiento de los datos entre los procesos de aprobación y los sistemas empresariales.
 
 Para obtener más información sobre el servicio de formularios con códigos de barras, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -61,7 +64,7 @@ Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no
 
 **Creación de un objeto API de cliente de formularios con código de barras**
 
-Para poder realizar mediante programación una operación de servicio de formularios con códigos de barras, debe crear un cliente de servicio de formularios con códigos de barras. Si utiliza la API de Java, cree un `BarcodedFormsServiceClient` objeto. Si utiliza la API de servicio web de formularios con códigos de barras, cree un `BarcodedFormsServiceService` objeto.
+Para poder realizar mediante programación una operación de servicio de formularios con códigos de barras, debe crear un cliente de servicio de Forms con códigos de barras. Si utiliza la API de Java, cree un `BarcodedFormsServiceClient` objeto. Si utiliza la API de servicio web de formularios con códigos de barras, cree un `BarcodedFormsServiceService` objeto.
 
 **Obtener un formulario PDF que contiene datos codificados con barras**
 
@@ -69,7 +72,7 @@ Debe obtener un formulario PDF que contenga un código de barras que se haya rel
 
 **Descodificar los datos del formulario PDF**
 
-Después de obtener un formulario PDF (o una imagen) que contenga un código de barras, puede descodificar los datos. El servicio Barcoded Forms admite los siguientes tipos de códigos de barras:
+Después de obtener un formulario PDF (o una imagen) que contenga un código de barras, puede descodificar los datos. El servicio Forms con códigos de barras admite los siguientes tipos de códigos de barras:
 
 * Códigos de barras PDF417.
 * Códigos de barras de la matriz de datos.
@@ -134,7 +137,8 @@ Descodificar datos de formulario mediante la API de formularios codificados (Jav
    * Un `java.lang.Boolean` objeto que especifica si se descodifica un código de barras de código 39.
    * Un `java.lang.Boolean` objeto que especifica si se descodifica un código de barras EAN-13.
    * Un `java.lang.Boolean` objeto que especifica si se descodifica un código de barras EAN-8.
-   * Un valor `com.adobe.livecycle.barcodedforms.CharSet` de enumeración que especifica el valor de codificación del conjunto de caracteres utilizado en el código de barras.
+   * Un valor de `com.adobe.livecycle.barcodedforms.CharSet` lista desglosada que especifica el valor de codificación del conjunto de caracteres utilizado en el código de barras.
+
    El `decode` método devuelve un `org.w3c.dom.Document` objeto que contiene datos de formulario descodificados.
 
 1. Convertir los datos en un origen de datos XML
@@ -142,9 +146,10 @@ Descodificar datos de formulario mediante la API de formularios codificados (Jav
    Convierta los datos descodificados en datos XDP o XFDF invocando el `BarcodedFormsServiceClient` método del `extractToXML` objeto y pasando los siguientes valores:
 
    * El `org.w3c.dom.Document` objeto que contiene datos descodificados (asegúrese de utilizar el valor devuelto por el `decode` método).
-   * Un valor `com.adobe.livecycle.barcodedforms.Delimiter` de enumeración que especifica el delimitador de línea. Se recomienda especificar `Delimiter.Carriage_Return`.
-   * Un valor `com.adobe.livecycle.barcodedforms.Delimiter` de enumeración que especifica el delimitador de campo. Por ejemplo, especifique `Delimiter.Tab`.
-   * Un valor `com.adobe.livecycle.barcodedforms.XMLFormat` de enumeración que especifica si se deben convertir los datos del código de barras en datos XDP o XFDF XML. Por ejemplo, especifique `XMLFormat.XDP` para convertir los datos en datos XDP.
+   * Un valor de `com.adobe.livecycle.barcodedforms.Delimiter` lista desglosada que especifica el delimitador de línea. Se recomienda especificar `Delimiter.Carriage_Return`.
+   * Un valor de `com.adobe.livecycle.barcodedforms.Delimiter` lista desglosada que especifica el delimitador de campo. Por ejemplo, especifique `Delimiter.Tab`.
+   * Un valor de `com.adobe.livecycle.barcodedforms.XMLFormat` lista desglosada que especifica si se deben convertir los datos del código de barras en datos XDP o XFDF XML. Por ejemplo, especifique `XMLFormat.XDP` para convertir los datos en datos XDP.
+
    >[!NOTE]
    >
    >No especifique los mismos valores para los parámetros delimitador de línea y delimitador de campo.
@@ -171,8 +176,8 @@ Descodificar datos de formulario mediante la API de formularios codificados (ser
 
 1. Incluir archivos de proyecto
 
-   * Cree un ensamblado de cliente de Microsoft .NET que utilice el WSDL del servicio de formularios con códigos de barras. Para obtener más información, consulte [Invocación de formularios AEM con codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
-   * Haga referencia al ensamblado de cliente de Microsoft .NET. Para obtener más información, consulte &quot;Referencia al ensamblado de cliente .NET&quot; en [Invocación de formularios AEM con codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
+   * Cree un ensamblado de cliente de Microsoft .NET que utilice el WSDL del servicio de formularios con códigos de barras. Para obtener más información, consulte [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
+   * Haga referencia al ensamblado de cliente de Microsoft .NET. Para obtener más información, consulte &quot;Referencia al ensamblado de cliente .NET&quot; en [Invocación de AEM Forms con codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
 
 1. Creación de un objeto API de cliente de formularios con código de barras
 
@@ -199,7 +204,8 @@ Descodificar datos de formulario mediante la API de formularios codificados (ser
    * Un `Bolean` objeto que especifica si se descodifica un código de barras de código 39.
    * Un `Boolean` objeto que especifica si se descodifica un código de barras EAN-13.
    * Un `Boolean` objeto que especifica si se descodifica un código de barras EAN-8.
-   * Un valor `CharSet` de enumeración que especifica el valor de codificación del conjunto de caracteres utilizado en el código de barras.
+   * Un valor de `CharSet` lista desglosada que especifica el valor de codificación del conjunto de caracteres utilizado en el código de barras.
+
    El `decode` método devuelve un valor de cadena que contiene datos de formulario descodificados.
 
 1. Convertir los datos en un origen de datos XML
@@ -207,9 +213,10 @@ Descodificar datos de formulario mediante la API de formularios codificados (ser
    Convierta los datos descodificados en datos XDP o XFDF invocando el `BarcodedFormsServiceService` método del `extractToXML` objeto y pasando los siguientes valores:
 
    * Un valor de cadena que contiene datos descodificados (asegúrese de utilizar el valor devuelto por el `decode` método).
-   * Un valor `Delimiter` de enumeración que especifica el delimitador de línea. Se recomienda especificar `Delimiter.Carriage_Return`.
-   * Un valor `Delimiter` de enumeración que especifica el delimitador de campo. Por ejemplo, especifique `Delimiter.Tab`.
-   * Un valor `XMLFormat` de enumeración que especifica si se deben convertir los datos del código de barras en datos XDP o XFDF XML. Por ejemplo, especifique `XMLFormat.XDP` para convertir los datos en datos XDP.
+   * Un valor de `Delimiter` lista desglosada que especifica el delimitador de línea. Se recomienda especificar `Delimiter.Carriage_Return`.
+   * Un valor de `Delimiter` lista desglosada que especifica el delimitador de campo. Por ejemplo, especifique `Delimiter.Tab`.
+   * Un valor de `XMLFormat` lista desglosada que especifica si se deben convertir los datos del código de barras en datos XDP o XFDF XML. Por ejemplo, especifique `XMLFormat.XDP` para convertir los datos en datos XDP.
+
    >[!NOTE]
    >
    >No especifique los mismos valores para los parámetros delimitador de línea y delimitador de campo.
@@ -225,4 +232,4 @@ Descodificar datos de formulario mediante la API de formularios codificados (ser
 
 **Consulte también**
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

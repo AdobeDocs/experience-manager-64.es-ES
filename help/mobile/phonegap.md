@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 4%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile es solo un pilar que constituye la plataforma AEM completa.
+Adobe Experience Manager (AEM) Mobile es sólo un pilar que constituye la plataforma AEM completa.
 
-El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una nueva aplicación de AEM Mobile:
+El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté listo para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una nueva aplicación de AEM Mobile:
 
 * **Administrador**
 * **Desarrollador**
-* **Creación**
+* **Autor**
 
 ## Creación de aplicaciones PhoneGap {#authoring-phonegap-applications}
 
@@ -44,7 +47,7 @@ Consulte los siguientes recursos para empezar:
 
 Para obtener más información sobre **Content Services**, consulte Información general sobre [Content Services](/help/mobile/develop-content-as-a-service.md) para empezar.
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los siguientes recursos:
 

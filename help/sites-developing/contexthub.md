@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ ContextHub almacena datos de contexto persistentes en el cliente. La API de Java
 Cada tienda de ContextHub es una instancia de un tipo de tienda predefinido:
 
 * ContextHub proporciona varios tipos [de almacén de](/help/sites-developing/ch-samplestores.md)muestra.
-* Utilice las consolas de AEM para [crear tiendas](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Utilice AEM consolas para [crear tiendas](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
 * Los desarrolladores pueden [crear tipos](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)de tienda personalizados.
 * Los desarrolladores pueden [acceder a los datos](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) del almacén a través de Javascript.
 
@@ -51,7 +54,7 @@ La barra de herramientas [de](/help/sites-authoring/ch-previewing.md) ContextHub
 Cada módulo de interfaz de usuario de ContextHub es una instancia de un tipo de módulo predefinido:
 
 * ContextHub proporciona varios tipos [de módulos de](/help/sites-developing/ch-samplemodules.md)muestra.
-* Utilice las consolas de AEM para [añadir módulos](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interfaz de usuario y [agruparlos en modos](/help/sites-administering/contexthub-config.md#adding-a-ui-mode)de interfaz de usuario.
+* Utilice consolas AEM para [agregar módulos](/help/sites-administering/contexthub-config.md#adding-a-ui-module)de interfaz de usuario y [agruparlos en modos](/help/sites-administering/contexthub-config.md#adding-a-ui-mode)de interfaz de usuario.
 
 * Los desarrolladores pueden [crear tipos](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)de módulos personalizados.
 

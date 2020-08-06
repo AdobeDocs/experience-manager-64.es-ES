@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 86%
 
 ---
 
@@ -36,6 +39,7 @@ Para conseguirlo se ofrecen dos interfaces gráficas de usuario, accesibles desd
    * Está diseñada para utilizarse en dispositivos de escritorio.
    * Ya no se mantiene.
    * La siguiente documentación trata sobre la IU clásica. Para obtener información sobre la creación de contenido en la nueva IU táctil, consulte la [documentación de creación estándar](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. IU táctil
@@ -46,8 +50,10 @@ Para conseguirlo se ofrecen dos interfaces gráficas de usuario, accesibles desd
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. La siguiente documentación trata sobre la IU clásica.
 
    * Escritorio:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivos de tableta (o de escritorio con menos de 1024 píxeles de ancho):
+
    ![climage_1-7](assets/chlimage_1-7.jpeg)
 

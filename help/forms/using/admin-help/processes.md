@@ -22,7 +22,7 @@ ht-degree: 0%
 
 La página Lista de procesos muestra los procesos que un usuario ha iniciado o que se iniciaron automáticamente.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Flujo de trabajo de formularios. La Lista de proceso muestra la siguiente información:
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Flujo de trabajo de Forms. La Lista de proceso muestra la siguiente información:
 
    **Nombre del proceso - Versión:** Nombre del proceso, tal como se define en Workbench.
 
@@ -96,7 +96,7 @@ Cuando se deja de suspender una instancia de proceso, su estado cambia a EJECUCI
 
 Cuando se suspende una instancia de proceso que ha invocado otros procesos (procesos secundarios) mediante la operación de invocación, los procesos secundarios también se suspenden.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Flujo de trabajo de formularios.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Flujo de trabajo de Forms.
 1. En la página Instancia de proceso, seleccione el proceso y haga clic en Suspender o en Aprobar.
 
 ### Finalización de instancias de proceso {#terminate-a-process-instances}
@@ -107,7 +107,7 @@ Puede finalizar instancias de proceso que tengan cualquier estado.
 
 Al finalizar una instancia de proceso, su estado cambia a TERMINATING, luego TERMINATED y el proceso se detiene en su operación actual. No se ejecutan más operaciones y se finalizan todas las operaciones y tareas asociadas.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Flujo de trabajo de formularios.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Flujo de trabajo de Forms.
 1. En la página Instancia de proceso, seleccione el proceso y haga clic en Finalizar.
 
 ## Trabajo con detalles de instancias de proceso {#working-with-process-instance-details}
@@ -179,7 +179,7 @@ No puede finalizar procesos que tengan elementos de puerta de enlace en el diagr
 
 Puede reintentar la operación que tenga el estado STALLED.
 
-Cuando se reintenta una operación, se envía una solicitud al flujo de trabajo de Forms para reiniciar la operación. Si la solicitud se realiza correctamente, el estado cambia a EJECUCIÓN. Si la operación no se puede reiniciar, permanece INSTALADA y es posible que tenga que finalizarla.
+Cuando reintenta una operación, se envía una solicitud al flujo de trabajo de Forms para reiniciar la operación. Si la solicitud se realiza correctamente, el estado cambia a EJECUCIÓN. Si la operación no se puede reiniciar, permanece INSTALADA y es posible que tenga que finalizarla.
 
 1. En la página Detalles de instancia de proceso, haga clic en la ficha Operaciones.
 1. Seleccione la operación y haga clic en Reintentar.
@@ -188,7 +188,7 @@ Cuando se reintenta una operación, se envía una solicitud al flujo de trabajo 
 
 La página Detalles de la Operación muestra un resumen de una operación en un proceso y sus asignaciones de usuario actuales.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Flujo de trabajo de formularios.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Flujo de trabajo de Forms.
 1. Haga clic en un nombre de proceso para mostrar sus instancias de proceso. Haga clic en una instancia de proceso para mostrar la página Detalles de instancia de proceso y, a continuación, seleccione una operación para mostrar la página Detalle de la operación.
 
    Para cada tarea, la lista muestra la siguiente información:

@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 36%
 
 ---
 
 
 # Consolas de herramientas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. Actualmente hay dos tipos de consola **Herramientas** que dependen de la IU que utilice:
+Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos tipos de consola **Herramientas** que dependen de la IU que utilice:
 
 * [Herramientas: IU clásica](#tools-classic-ui)
 * [Herramientas: IU táctil](#tools-touch-optimized-ui)
@@ -44,7 +47,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Configuración de servicios de nube<br /> </td> 
    <td> </td> 
-   <td>Contiene configuraciones relacionadas con la <a href="/help/sites-administering/marketing-cloud.md">integración con Adobe Marketing Cloud</a>.</td> 
+   <td>Contiene configuraciones relacionadas con la <a href="/help/sites-administering/marketing-cloud.md">integración con el Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Comercio</a></td> 
@@ -52,7 +55,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Proporciona acceso a los importadores y a varios datos de productos.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Administración de derechos digitales<br /> </td> 
+   <td>DAM - Digital Rights Management<br /> </td> 
    <td> </td> 
    <td>Proporciona acceso a información y licencias de derechos digitales.</td> 
   </tr> 
@@ -69,12 +72,12 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>DAM - Perfiles de vídeo<br /> </td> 
    <td> </td> 
-   <td>Perfiles configurables para transcodificaciones ffmpeg.</td> 
+   <td>perfiles configurables para transcodificaciones ffmpeg.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Tableros</a></td> 
    <td> </td> 
-   <td>Permite crear tableros de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td> 
+   <td>Permite crear paneles de sistema de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">Diseños</a></td> 
@@ -89,7 +92,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Envíos de formulario</td> 
    <td> </td> 
-   <td>Contiene la lista de envíos de formularios recibidos.</td> 
+   <td>Contiene la lista de los envíos de formularios recibidos.</td> 
   </tr> 
   <tr> 
    <td>Importadores - Editor <a href="/help/sites-administering/bulk-editor.md">masivo</a></td> 
@@ -124,7 +127,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">Paquetes</a></td> 
    <td> </td> 
-   <td>Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td> 
+   <td>Vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td> 
   </tr> 
   <tr> 
    <td>Replicación: Agentes <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">de replicación</a></td> 
@@ -139,7 +142,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">Informes</a></td> 
    <td> </td> 
-   <td>AEM proporciona una serie de informes personalizados, le permite crear informes personalizados y/o desarrollar sus propios informes.</td> 
+   <td>AEM ofrece una variedad de informes personalizados, le permite crear informes personalizados y/o desarrollar los suyos propios.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">Andamiaje de página predeterminada</a></td> 
@@ -159,7 +162,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuración de SRP predeterminada. Consulte Consola <a href="/help/communities/srp-config.md">de configuración</a> de almacenamiento.</td> 
+   <td>Configuración de SRP predeterminada. Consulte Consola de configuración <a href="/help/communities/srp-config.md">de</a> Almacenamiento.</td> 
   </tr> 
   <tr> 
    <td>administración de tareas</td> 
@@ -189,7 +192,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Flujo de trabajo</a></td> 
    <td> </td> 
-   <td>Los flujos de trabajo controlan una serie de acciones en páginas o recursos digitales que admiten cualquier proceso editorial.</td> 
+   <td>Los Flujos de trabajo controlan una serie de acciones en páginas o recursos digitales que admiten cualquier proceso editorial.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -204,7 +207,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <th>Función</th> 
   </tr> 
   <tr> 
-   <td>Creación </td> 
+   <td>Creación  </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -245,7 +248,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Servicios de nube</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
    <td>Conectar con Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 

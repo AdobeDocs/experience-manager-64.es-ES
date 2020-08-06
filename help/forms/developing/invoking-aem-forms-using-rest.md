@@ -1,6 +1,6 @@
 ---
-title: Invocación de formularios AEM mediante solicitudes REST
-seo-title: Invocación de formularios AEM mediante solicitudes REST
+title: Invocación de AEM Forms mediante solicitudes REST
+seo-title: Invocación de AEM Forms mediante solicitudes REST
 description: nulo
 seo-description: nulo
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -18,25 +18,25 @@ ht-degree: 0%
 ---
 
 
-# Invocación de formularios AEM mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
+# Invocación de AEM Forms mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
 
-Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativa (REST). Las solicitudes REST se envían desde páginas HTML. Es decir, puede invocar un proceso de Forms directamente desde una página web mediante una solicitud REST. Por ejemplo, puede abrir una nueva instancia de una página web. A continuación, puede invocar un proceso de Forms y cargar un documento PDF procesado con datos enviados en una solicitud HTTP POST.
+Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativa (REST). Las solicitudes REST se envían desde páginas HTML. Es decir, puede invocar un proceso de Forms directamente desde una página web mediante una solicitud REST. Por ejemplo, puede abrir una nueva instancia de una página web. A continuación, puede invocar un proceso de Forms y cargar un documento PDF procesado con datos enviados en una solicitud de POST HTTP.
 
 Existen dos tipos de clientes HTML. El primer cliente HTML es un cliente AJAX que está escrito en JavaScript. El segundo cliente es un formulario HTML que contiene un botón de envío. Una aplicación cliente basada en HTML no es el único cliente REST posible. Cualquier aplicación cliente que admita solicitudes HTTP puede invocar un servicio mediante una invocación REST. Por ejemplo, puede invocar un servicio mediante una invocación REST desde un formulario PDF. (Consulte [Invocación del proceso MyApplication/EncryptDocument desde Acrobat](#rest-invocation-examples)).
 
-Cuando se utilizan solicitudes REST, se recomienda no invocar los servicios de Forms directamente. En su lugar, invoque procesos creados en Workbench. Cuando cree un proceso diseñado para la invocación de REST, utilice un punto de inicio programático. En este caso, el extremo REST se agrega automáticamente. Para obtener información sobre la creación de procesos en Workbench, consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Al utilizar solicitudes REST, se recomienda no invocar los servicios de Forms directamente. En su lugar, invoque procesos creados en Workbench. Cuando cree un proceso diseñado para la invocación de REST, utilice un punto de inicio programático. En este caso, el extremo REST se agrega automáticamente. Para obtener información sobre la creación de procesos en Workbench, consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Al invocar un servicio mediante REST, se le pedirá un nombre de usuario y una contraseña para los formularios AEM. Sin embargo, si no desea especificar un nombre de usuario y una contraseña, puede desactivar la seguridad del servicio.
+Cuando invoca un servicio mediante REST, se le solicita un nombre de usuario y una contraseña de los formularios AEM. Sin embargo, si no desea especificar un nombre de usuario y una contraseña, puede desactivar la seguridad del servicio.
 
-Para invocar un servicio Forms (un proceso se convierte en un servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de extremos&quot; en la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración).
+Para invocar un servicio de Forms (un proceso se convierte en un servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de extremos&quot; en la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración).
 
-Una vez configurado un extremo REST, puede invocar un servicio Forms mediante un método HTTP GET o un método POST.
+Una vez configurado un extremo REST, puede invocar un servicio de Forms mediante un método de GET HTTP o un método de POST.
 
 ```as3
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-El valor obligatorio `ServiceName` es el nombre del servicio Forms que se va a invocar. El valor opcional `OperationName` es el nombre de la operación del servicio. Si no se especifica este valor, el nombre predeterminado es `invoke`, que es el nombre de la operación que inicio el proceso. El valor opcional `ServiceVersion` es la versión codificada en formato X.Y. Si no se especifica este valor, se utiliza la versión más reciente. El `enctype` valor también puede ser `application/x-www-form-urlencoded`.
+El valor obligatorio `ServiceName` es el nombre del servicio de Forms que se va a invocar. El valor opcional `OperationName` es el nombre de la operación del servicio. Si no se especifica este valor, el nombre predeterminado es `invoke`, que es el nombre de la operación que inicio el proceso. El valor opcional `ServiceVersion` es la versión codificada en formato X.Y. Si no se especifica este valor, se utiliza la versión más reciente. El `enctype` valor también puede ser `application/x-www-form-urlencoded`.
 
 ## Tipos de datos admitidos {#supported-data-types}
 
@@ -49,16 +49,16 @@ Se admiten los siguientes tipos de datos al invocar servicios de AEM Forms media
 
    Estos tipos de datos suelen aceptarse como valores de entrada para procesos creados en Workbench.
 
-   Si se invoca un servicio Forms con el método HTTP POST, los argumentos se pasan dentro del cuerpo de la solicitud HTTP. Si la firma del servicio AEM Forms tiene un parámetro de entrada de cadena, el cuerpo de la solicitud puede contener el valor de texto del parámetro de entrada. Si la firma del servicio define varios parámetros de cadena, la solicitud puede seguir la `application/x-www-form-urlencoded` notación de HTTP con los nombres de parámetro utilizados como nombres de campo del formulario.
+   Si se invoca un servicio Forms con el método POST HTTP, los argumentos se pasan dentro del cuerpo de la solicitud HTTP. Si la firma del servicio AEM Forms tiene un parámetro de entrada de cadena, el cuerpo de la solicitud puede contener el valor de texto del parámetro de entrada. Si la firma del servicio define varios parámetros de cadena, la solicitud puede seguir la `application/x-www-form-urlencoded` notación de HTTP con los nombres de parámetro utilizados como nombres de campo del formulario.
 
-   Si un servicio Forms devuelve un parámetro de cadena, el resultado es una representación textual del parámetro de salida. Si un servicio devuelve varios parámetros de cadena, el resultado es un documento XML que codifica los parámetros de salida en el siguiente formato:
+   Si un servicio de Forms devuelve un parámetro de cadena, el resultado es una representación textual del parámetro de salida. Si un servicio devuelve varios parámetros de cadena, el resultado es un documento XML que codifica los parámetros de salida en el siguiente formato:
    ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
    >[!NOTE]
    >
    >El `output-paramater1` valor representa el nombre del parámetro de salida.
 
-   Si un servicio Forms requiere un `com.adobe.idp.Document` parámetro, solo se puede invocar el servicio mediante el método HTTP POST. Si el servicio requiere un `com.adobe.idp.Document` parámetro, el cuerpo de la solicitud HTTP se convierte en el contenido del objeto de Documento de entrada.
+   Si un servicio de Forms requiere un `com.adobe.idp.Document` parámetro, solo se puede invocar el servicio mediante el método de POST HTTP. Si el servicio requiere un `com.adobe.idp.Document` parámetro, el cuerpo de la solicitud HTTP se convierte en el contenido del objeto de Documento de entrada.
 
    Si un servicio de AEM Forms requiere varios parámetros de entrada, el cuerpo de la solicitud HTTP debe ser un mensaje MIME de varias partes, tal como se define en RFC 1867. (RFC 1867 es un estándar que utilizan los navegadores web para cargar archivos en sitios web). Cada parámetro de entrada debe enviarse como una parte independiente del mensaje de varias partes y codificarse en el `multipart/form-data` formato. El nombre de cada pieza debe coincidir con el nombre del parámetro.
 
@@ -84,7 +84,7 @@ Se admiten los siguientes tipos de datos al invocar servicios de AEM Forms media
 * Dirección URL que señala el contenido del Documento (si la lista está formada por `com.adobe.idp.Document` objetos)
 
    El siguiente ejemplo es un mensaje XML devuelto por un servicio que tiene un solo parámetro de salida denominado *lista*, que es una lista de enteros.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parámetro de mapa de salida se representa en el mensaje XML resultante como una serie de elementos XML con un elemento para cada registro del mapa. Cada elemento recibe el mismo nombre que la clave del registro del mapa. El valor de cada elemento es una representación textual del valor del registro del mapa (si el mapa consta de registros con un valor de cadena) o una dirección URL que señala al contenido del Documento (si el mapa consta de registros con el `com.adobe.idp.Document` valor). A continuación se muestra un ejemplo de un mensaje XML devuelto por un servicio que tiene un solo parámetro de salida denominado `map`. Este valor de parámetro es un mapa que consta de registros que asocian letras a `com.adobe.idp.Document` objetos.
+   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parámetro de mapa de salida se representa en el mensaje XML resultante como una serie de elementos XML con un elemento para cada registro del mapa. Cada elemento recibe el mismo nombre que la clave del registro del mapa. El valor de cada elemento es una representación textual del valor del registro del mapa (si el mapa consta de registros con un valor de cadena) o una dirección URL que señala al contenido del Documento (si el mapa consta de registros con el `com.adobe.idp.Document` valor). A continuación se muestra un ejemplo de un mensaje XML devuelto por un servicio que tiene un solo parámetro de salida denominado `map`. Este valor de parámetro es un mapa que consta de registros que asocian letras con `com.adobe.idp.Document` objetos.
    ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Invocaciones asincrónicas {#asynchronous-invocations}
@@ -145,13 +145,13 @@ El `DSCError` elemento es opcional y solo está presente si la excepción es una
 
 ## Seguridad y autenticación {#security-and-authentication}
 
-Para proporcionar un transporte seguro a las invocaciones REST, un administrador de formularios AEM puede activar el protocolo HTTPS en el servidor de aplicaciones J2EE que aloja AEM Forms. Esta configuración es específica del servidor de aplicaciones J2EE; no forma parte de la configuración del servidor de formularios.
+Para proporcionar un transporte seguro a las invocaciones REST, un administrador de formularios AEM puede habilitar el protocolo HTTPS en el servidor de aplicaciones J2EE que aloja AEM Forms. Esta configuración es específica del servidor de aplicaciones J2EE; no forma parte de la configuración del servidor de formularios.
 
 >[!NOTE]
 >
 >Como desarrollador de Workbench que desea exponer sus procesos a través de un punto final de REST, tenga en cuenta el problema de vulnerabilidad XSS. Las vulnerabilidades XSS pueden utilizarse para robar o manipular cookies, modificar la presentación del contenido y comprometer la información confidencial. Se recomienda ampliar la lógica del proceso con las reglas de validación de datos de entrada y salida adicionales si existe algún problema con la vulnerabilidad XSS.
 
-## Servicios de AEM Forms que admiten invocación REST {#aem-forms-services-that-support-rest-invocation}
+## Servicios de AEM Forms que admiten la invocación de REST {#aem-forms-services-that-support-rest-invocation}
 
 Aunque se recomienda invocar procesos creados con Workbench en lugar de servicios directamente, hay algunos servicios de AEM Forms que sí admiten la invocación de REST. El motivo por el que se recomienda que invoque un proceso en lugar de un servicio directamente es porque es más eficaz invocar un proceso. Considere el siguiente escenario. Supongamos que desea crear una directiva a partir de un cliente REST. Es decir, desea que el cliente REST defina valores como el nombre de la política, el período de concesión sin conexión.
 
@@ -164,7 +164,7 @@ De este modo, no es necesario crear una solicitud de invocación REST que incluy
 Las siguientes listas especifican los servicios de AEM Forms que admiten la invocación directa de REST.
 
 * Servicio Distiller
-* Servicio Rights Management
+* Rights Management
 * Servicio GeneratePDF
 * Servicio Generate3dPDF
 * FormDataIntegration
@@ -224,7 +224,7 @@ El siguiente ejemplo HTML pasa un valor de fecha a un proceso de AEM Forms denom
 
 **Pasar documentos a un proceso**
 
-El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplication/EncryptDocument` que requiere un documento PDF. Para obtener información sobre este proceso, consulte [Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplication/EncryptDocument` que requiere un documento PDF. Para obtener información sobre este proceso, consulte [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```as3
  <html> 
@@ -244,7 +244,7 @@ El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `MyApplicati
 
 **Pasar valores de documento y texto a un proceso**
 
-El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `RestTest3` que requiere un documento y dos valores de texto. Tenga en cuenta que se utiliza el método Post HTML.
+El siguiente ejemplo HTML invoca un proceso de AEM Forms llamado `RestTest3` que requiere un documento y dos valores de texto. Tenga en cuenta que se utiliza el método Post HTML.
 
 ```as3
  <html> 
@@ -285,7 +285,7 @@ El siguiente ejemplo HTML invoca un proceso de AEM Forms denominado `SOAPEchoSer
 
 **Invocación del proceso MyApplication/EncryptDocument mediante REST**
 
-Puede invocar un proceso de corta duración de AEM Forms denominado *MyApplication/EncryptDocument* mediante REST.
+Puede invocar un proceso breve de AEM Forms llamado *MyApplication/EncryptDocument* mediante REST.
 
 >[!NOTE]
 >
@@ -315,7 +315,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 **Invocación del proceso MyApplication/EncryptDocument desde Acrobat** {#invoke-process-acrobat}
 
-Puede invocar un proceso de formularios desde Acrobat mediante una solicitud REST. Por ejemplo, puede invocar el proceso *MyApplication/EncryptDocument* . Para invocar un proceso de formularios desde Acrobat, coloque un botón de envío en un archivo XDP dentro de Designer. (Consulte la Ayuda [de](https://www.adobe.com/go/learn_aemforms_designer_63)Designer).
+Puede invocar un proceso de Forms desde Acrobat mediante una solicitud REST. Por ejemplo, puede invocar el proceso *MyApplication/EncryptDocument* . Para invocar un proceso de Forms desde Acrobat, coloque un botón de envío en un archivo XDP dentro de Designer. (Consulte la Ayuda [de](https://www.adobe.com/go/learn_aemforms_designer_63)Designer).
 
 Especifique la URL para invocar el proceso en el campo *Enviar a URL* del botón, como se muestra en la siguiente ilustración.
 
@@ -323,4 +323,4 @@ La dirección URL completa para invocar el proceso es https://hiro-xp:8080/rest/
 
 Si el proceso requiere un documento PDF como valor de entrada, asegúrese de enviar el formulario como PDF, como se muestra en la ilustración anterior. Además, para invocar un proceso correctamente, el proceso debe devolver un documento PDF. De lo contrario, Acrobat no puede gestionar el valor devuelto y se produce un error. No es necesario especificar el nombre de la variable del proceso de entrada. Por ejemplo, el proceso* MyApplication/EncryptDocument* tiene una variable de entrada denominada `inDoc`. No es necesario especificar enDoc, siempre que el formulario se envíe como PDF.
 
-También puede enviar datos de formulario como XML a un proceso de Forms. Para enviar datos XML, asegúrese de que la `Submit As` lista desplegable especifica XML. Dado que el valor devuelto por el proceso debe ser un documento PDF, el documento PDF se muestra en Acrobat.
+También puede enviar datos de formulario como XML a un proceso de Forms. Para enviar datos XML, asegúrese de que la `Submit As` lista desplegable especifica XML. Dado que el valor devuelto del proceso debe ser un documento PDF, el documento PDF se muestra en Acrobat.

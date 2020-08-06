@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Configuración del módulo de integración de traducción{#configuring-the-translation-integration-framework}
 
-El módulo de integración de traducción se integra con los servicios de traducción de terceros para organizar la traducción del contenido de AEM.
+El módulo de integración de traducción se integra con los servicios de traducción de terceros para orquestar la traducción de AEM contenido.
 
 * Conéctese al proveedor de servicio de traducción.
 * Cree una configuración del módulo de integración de traducción.
 * Asocie las configuraciones de nube con sus páginas.
 
-Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md)multilingües.
+Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducir contenido para sitios](/help/sites-administering/translation.md)multilingües.
 
 ## Conexión a un Proveedor de servicio de traducción {#connecting-to-a-translation-service-provider}
 
@@ -51,8 +51,8 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 >Para encontrar la última lista de proveedores de traducción automática y humana, eche un vistazo a estas páginas:
 >
 >
->* [Traducción humana de AEM](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM Machine Translation](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM traducción humana](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM traducción automática](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
 
@@ -78,7 +78,7 @@ Cuando diferentes secciones del sitio web tengan diferentes requisitos de traduc
 
 Después de configurar un marco de integración de traducción, puede [asociarlo con las páginas](/help/sites-administering/tc-prep.md) que lo utilizan.
 
-**Nota:** Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md)multilingües.
+**Nota:** Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducir contenido para sitios](/help/sites-administering/translation.md)multilingües.
 
 Una sola configuración del marco controla cómo traducir el contenido de la página, el contenido de la comunidad y los recursos.
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -186,7 +186,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
  </tbody> 
 </table>
 
-1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
+1. En la barra lateral, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Services.
 1. En el área Integración de traducción, si se ha creado alguna configuración determina qué vínculo aparece:
 
    * Si no se ha creado ninguna configuración, toque o haga clic en Configurar ahora.
@@ -199,7 +199,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
 
 Para configurar la traducción de las páginas de origen a otros idiomas, asocie las páginas con las siguientes configuraciones de nube:
 
-* La configuración de nube que conecta AEM con su proveedor de traducción.
+* La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
 Tenga en cuenta que la configuración de nube de la estructura de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicio. Cuando asocia una página de origen con una configuración de nube de estructura, la página debe asociarse con la configuración de nube de proveedor de servicio que utiliza la configuración de nube de estructura.
@@ -215,7 +215,7 @@ Además, para cualquier comunidad de componentes [](/help/communities/scf.md) SC
 Asocie una página con el proveedor de traducción que está utilizando para traducir la página y las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Services.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
@@ -224,7 +224,7 @@ Asocie una página con el proveedor de traducción que está utilizando para tra
 Asocie una página con el módulo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desee configurar y toque o haga clic en Propiedades de la Vista.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Service.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la ficha Cloud Services.
 1. Toque o haga clic en Añadir configuración > Integración de traducción.
 1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 

@@ -11,56 +11,59 @@ content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
 
 # Configuración inicial {#initial-setup}
 
-## Iniciar instancias de creación y publicación {#start-author-and-publish-instances}
+## Instancias de creación y publicación de Inicio {#start-author-and-publish-instances}
 
 Para fines de desarrollo y demostración, será necesario ejecutar un autor y una instancia de publicación.
 
 Para ello, siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM, que resultarán en
 
-* Entorno de creación en [localhost:4502](http://localhost:4502/)
-* Entorno de publicación en [localhost:4503](http://localhost:4503/)
+* entorno de autor en [localhost:4502](http://localhost:4502/)
+* entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
-* El entorno de creación es para
+* El entorno del autor es para
 
    * Desarrollo de sitios, plantillas y componentes
-   * Tareas administrativas y de configuración
+   * tareas administrativas y de configuración
 
-* El entorno de publicación es para
+* El entorno de publicación está para
 
    * La experiencia de la comunidad de publicar y moderar contenido
    * Creación de grupos de la comunidad, miembros y grupos miembros
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Instalar la versión más reciente de las comunidades {#install-latest-communities-release}
 
-Este tutorial crea un sitio [de la comunidad de](overview.md#engagement-community) participación y se basa en el paquete de funciones 1.10 de AEM Communities 6.2.
+Este tutorial crea un sitio [de comunidad de](overview.md#engagement-community) participación y se basa en el paquete de funciones de AEM Communities 6.2 versión 1.10.
 
 Para asegurarse de que está instalado el paquete de funciones más reciente, visite:
 
 * [Últimas versiones](deploy-communities.md#latest-releases)
 
-Para ver un tutorial que crea un sitio [de comunidad de](overview.md#enablement-community)habilitación, visite [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md).
+Para ver un tutorial que crea un sitio [de comunidad de](overview.md#enablement-community)habilitación, visite [Introducción a AEM Communities para la habilitación](getting-started-enablement.md).
 
 ## Configurar Analytics {#configure-analytics}
 
-Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comunidad, se dispone de información sobre la actividad de la comunidad que mejora la experiencia del miembro de la comunidad, así como de comentarios para los administradores del sitio.
+Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comunidad, se encuentra disponible información sobre la actividad de la comunidad que mejora la experiencia del miembro de la comunidad y también proporciona comentarios a los administradores del sitio.
 
 La integración con Adobe Analytics es opcional.
 
 ## Configurar correo electrónico para notificaciones {#configure-email-for-notifications}
 
-La función de notificaciones, disponible de forma predeterminada para todos los sitios creados con la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
+La función de notificaciones, disponible de forma predeterminada para todos los sitios creados mediante la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
 
 Lo que se necesita es que el correo electrónico se configure correctamente para el sitio.
 
@@ -91,14 +94,14 @@ Cree un usuario en el *autor*, al que se le asigna la función de administrador 
    * Por ejemplo: nombre de usuario &#39;admin&#39; / contraseña &#39;admin&#39;
 
 * Desde la consola principal, vaya a **[!UICONTROL Herramientas > Operaciones > Seguridad > Usuarios]**
-* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Agregar usuario]**
+* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Añadir usuario]**
 
 * En el cuadro de diálogo `Create New User` , introduzca
 
    * **[!UICONTROL ID&amp;Último;]**: sirius
    * **[!UICONTROL Dirección]** de correo electrónico: sirius.nilson@mailinator.com
-   * **[!UICONTROL Contraseña&amp;Último;]**:password
-   * **[!UICONTROL Confirmar contraseña&amp;Último;]**:password
+   * **[!UICONTROL Contraseña&amp;Último;]**: password
+   * **[!UICONTROL Confirmar contraseña&amp;Último;]**: password
    * **[!UICONTROL Nombre]**: Sirius
    * **[!UICONTROL Apellido&amp;ma;Último;]**: Nilson
 
@@ -128,7 +131,7 @@ Consulte Inicio de sesión en [Social con Facebook y Twitter](social-login.md).
 
 ## Crear etiquetas de tutoriales {#create-tutorial-tags}
 
-Cree etiquetas para utilizarlas en los tutoriales de participación y activación, utilizando el espacio de nombres de etiquetas de `Tutorial`.
+Cree etiquetas para utilizarlas en los tutoriales de participación y activación mediante la Área de nombres de etiquetas de `Tutorial`.
 
 Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-console) para crear las etiquetas siguientes:
 
@@ -146,14 +149,14 @@ Siga las instrucciones para
 1. [Definir los permisos de etiqueta](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
-Paquete de muestra de etiquetas creadas para los tutoriales de introducción de AEM Communities
+Paquete de muestra de etiquetas creadas para los Tutorials de introducción de AEM Communities
 
 [Obtener archivo](assets/tutorial_tags-v63.zip)
 
 ## MongoDB para UGC Common Store {#mongodb-for-ugc-common-store}
 
-Se recomienda, pero es opcional, establecer el [MSRP](msrp.md) (MongoDB) como almacén [](working-with-srp.md) común para experimentar la flexibilidad de moderar todos los UGC desde los entornos de publicación y/o autor.
+Se recomienda, pero es opcional, establecer el [MSRP](msrp.md) (MongoDB) como almacén [](working-with-srp.md) común para experimentar la flexibilidad de moderar todo UGC desde entornos de publicación y/o autor.
 
 Para obtener instrucciones, visite [How to Setup MongoDB for Demo](demo-mongo.md).
 
-De forma predeterminada, la instalación de las instancias de AEM de creación y publicación hace que el contenido generado por el usuario (UGC) se almacene en el almacenamiento [de](../../help/sites-deploying/platform.md) JCR Tar al que se accede mediante [JSRP](jsrp.md). JSRP no es un almacén común, lo que significa que UGC solo está visible en la instancia en la que se introdujo. Normalmente, UGC se introduce en una instancia de publicación y no se muestra en el entorno de creación, lo que da como resultado que todas las tareas de moderación necesiten utilizar la instancia de publicación.
+De forma predeterminada, la instalación de las instancias de creación y publicación AEM hace que el contenido generado por el usuario (UGC) se almacene en [JCR Tar almacenamiento](../../help/sites-deploying/platform.md) , al que se accede mediante [JSRP](jsrp.md). JSRP no es un almacén común, lo que significa que UGC solo está visible en la instancia en la que se introdujo. Generalmente, UGC se introduce en una instancia de publicación y no estaría visible en el entorno del autor, lo que daría como resultado que todas las tareas de moderación necesitaran utilizar la instancia de publicación.

@@ -1,6 +1,6 @@
 ---
-title: 'Componentes de AEM: conceptos básicos'
-seo-title: 'Componentes de AEM: conceptos básicos'
+title: 'Componentes AEM: conceptos básicos'
+seo-title: 'Componentes AEM: conceptos básicos'
 description: Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
 seo-description: Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# Componentes de AEM: conceptos básicos{#aem-components-the-basics}
+# Componentes AEM: conceptos básicos{#aem-components-the-basics}
 
 Cuando inicio desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración.
 
-Este proceso implica leer la teoría y observar la amplia gama de implementaciones de componentes en una instancia estándar de AEM. Este último enfoque se complica ligeramente por el hecho de que, aunque AEM ha cambiado a una nueva IU estándar, moderna y táctil, sigue admitiendo la IU clásica.
+Este proceso implica leer la teoría y observar la amplia gama de implementaciones de componentes en una instancia de AEM estándar. Este último enfoque se complica ligeramente por el hecho de que, aunque AEM ha cambiado a una nueva IU estándar, moderna y táctil, sigue admitiendo la IU clásica.
 
 ## Información general {#overview}
 
@@ -42,7 +42,7 @@ Antes de empezar a configurar o codificar realmente el componente, debe pregunta
 * ¿Necesita crear el componente desde cero o puede heredar lo básico de un componente existente?
 
    * No hay necesidad de reinventar la rueda.
-   * AEM ha proporcionado varios mecanismos que le permiten heredar y ampliar detalles de otra definición de componente, como la anulación, superposición y la fusión de recursos [Sling](/help/sites-developing/sling-resource-merger.md).
+   * Existen varios mecanismos proporcionados por AEM para permitirle heredar y ampliar los detalles de otra definición de componente, incluyendo sobrescritura, superposición y fusión de recursos [Sling](/help/sites-developing/sling-resource-merger.md).
 
 * ¿Requerirá lógica el componente para seleccionar o manipular el contenido?
 
@@ -61,11 +61,11 @@ Antes de empezar a configurar o codificar realmente el componente, debe pregunta
 Antes de cualquier inicio de debate serio sobre el desarrollo de componentes, debe saber qué IU usarán los autores:
 
 * **IU táctil**
-   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar que se introdujo en AEM 5.6.0 como previsualización y se amplió en 6.x. Se basa en la experiencia de usuario unificada para el Adobe Marketing Cloud, mediante las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [La interfaz](/help/sites-developing/touch-ui-concepts.md) de usuario estándar que se introdujo en AEM 5.6.0 como previsualización y se amplió en 6.x. Se basa en la experiencia de usuario unificada del Adobe Marketing Cloud, que utiliza las tecnologías subyacentes de la IU [de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU de [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Interfaz de usuario** clásica basada en la tecnología ExtJS que se introdujo con CQ 5.1.
 
-Consulte Recomendaciones de interfaz de [usuario para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
+Consulte [Interfaz de interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
 
 Los componentes se pueden implementar para admitir la IU táctil, la IU clásica o ambos. Al consultar una instancia estándar, también verá los componentes integrados que se diseñaron originalmente para la IU clásica, la IU táctil o ambos.
 
@@ -73,7 +73,7 @@ Por esta razón, en esta página trataremos los aspectos básicos de ambos, y c�
 
 >[!NOTE]
 >
->Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [Herramientas de moderación de AEM&amp; (moderniatzion-tools.md) puede facilitar la migración.
+>Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [AEM Herramientas de moderación&amp;(moderniatzion-tools.md) puede facilitar la migración.
 
 ### Lógica de contenido y marcado de procesamiento  {#content-logic-and-rendering-markup}
 
@@ -85,7 +85,7 @@ Esta filosofía está respaldada por [HTL](https://helpx.adobe.com/experience-ma
 
 HTL es un lenguaje de plantilla HTML introducido con AEM 6.0.
 
-El análisis de si se debe utilizar [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) o JSP (Java Server Pages) al desarrollar sus propios componentes debería ser sencillo, ya que HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM.
+El análisis de si se debe utilizar [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) o JSP (Java Server Pages) al desarrollar sus propios componentes debe ser sencillo, ya que HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM.
 
 Tanto HTL como JSP se pueden utilizar para desarrollar componentes tanto para la IU clásica como para la táctil. Aunque puede haber una tendencia a suponer que HTL es solo para la IU táctil y JSP para la IU clásica, se trata de una idea errónea y más debido al tiempo. La IU táctil y HTL se incorporaron a AEM durante aproximadamente el mismo período. Dado que HTL es ahora el idioma recomendado, se utiliza para nuevos componentes, que suelen ser para la IU táctil.
 
@@ -97,8 +97,8 @@ Tanto HTL como JSP se pueden utilizar para desarrollar componentes tanto para la
 
 Para crear sus propios componentes para la IU adecuada, consulte (después de leer esta página):
 
-* [Componentes de AEM para la IU táctil](/help/sites-developing/developing-components.md)
-* [Componentes de AEM para la IU clásica](/help/sites-developing/developing-components-classic.md)
+* [Componentes AEM para la IU táctil](/help/sites-developing/developing-components.md)
+* [Componentes AEM para la IU clásica](/help/sites-developing/developing-components-classic.md)
 
 Una forma rápida de empezar es copiar un componente existente y luego realizar los cambios que desee. Para obtener información sobre cómo crear sus propios componentes y agregarlos al sistema de párrafos, consulte:
 
@@ -110,7 +110,7 @@ Los componentes que representan el contenido deben implementarse en la misma ins
 
 Utilice las siguientes herramientas para mover los componentes a la instancia de publicación:
 
-* [Utilice el Administrador](/help/sites-administering/package-manager.md) de paquetes para añadir sus componentes a un paquete y moverlos a otra instancia de AEM.
+* [Utilice el Administrador](/help/sites-administering/package-manager.md) de paquetes para agregar sus componentes a un paquete y moverlos a otra instancia de AEM.
 * [Utilice la herramienta](/help/sites-authoring/publishing-pages.md#manage-publication) de replicación Activar árbol para replicar los componentes.
 
 >[!NOTE]
@@ -134,7 +134,7 @@ Utilice las siguientes herramientas para mover los componentes a la instancia de
 
 ## Estructura {#structure}
 
-La estructura de un componente de AEM es potente y flexible, y las consideraciones principales son:
+La estructura de un componente AEM es potente y flexible, y las principales consideraciones son:
 
 * Tipo de medio
 * Definición de componente
@@ -159,7 +159,7 @@ Esta es una abstracción que ayuda a garantizar que, incluso cuando el aspecto c
 
 La definición de un componente se puede desglosar de la siguiente manera:
 
-* Los componentes de AEM se basan en [Sling](https://sling.apache.org/documentation.html).
+* AEM componentes se basan en [Sling](https://sling.apache.org/documentation.html).
 * Los componentes de AEM se encuentran (normalmente) en:
 
    * HTL: `/libs/wcm/foundation/components`
@@ -169,7 +169,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * `/apps/<myApp>/components`
 
-* Los componentes estándar de AEM se definen como `cq:Component` y tienen elementos clave:
+* AEM componentes estándar se definen como `cq:Component` y tienen los elementos clave:
 
    * propiedades de jcr:
 
@@ -559,7 +559,7 @@ Las propiedades definidas dependen de las definiciones individuales. Aunque pued
 
 ## Jerarquía y herencia de componentes {#component-hierarchy-and-inheritance}
 
-Los componentes de AEM están sujetos a tres jerarquías diferentes:
+Los componentes dentro de AEM están sujetos a tres jerarquías diferentes:
 
 * **Jerarquía de tipos de recursos**
 
@@ -633,7 +633,7 @@ El comportamiento de edición de un componente se configura agregando un `cq:edi
 
 Existen muchas configuraciones existentes en el repositorio. Puede buscar fácilmente propiedades específicas o nodos secundarios:
 
-* Para buscar una propiedad del `cq:editConfig` nodo, p. ej. `cq:actions`, puede utilizar la herramienta Consulta en **CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
+* Para buscar una propiedad del `cq:editConfig` nodo, p. ej. `cq:actions`, puede utilizar la herramienta Consulta en el **CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
@@ -929,7 +929,7 @@ El `cq:inplaceEditing` nodo (tipo de nodo `cq:InplaceEditingConfig`) define una 
    <td><p>(<code>String</code>) Tipo de editor. Los tipos disponibles son:</p> 
     <ul> 
      <li>texto sin formato: para utilizarse en contenido que no sea HTML.<br /> </li> 
-     <li>title: es un editor de texto sin formato mejorado que convierte los títulos gráficos en un texto sin formato antes de comenzar la edición. Utilizado por el componente de título Geometrixx.<br /> </li> 
+     <li>title: es un editor de texto sin formato mejorado que convierte los títulos gráficos en un texto sin formato antes de comenzar la edición. Utilizado por el componente de título de Geometrixx.<br /> </li> 
      <li>text: para utilizarse en contenido HTML (utiliza el Editor de texto enriquecido).<br /> </li> 
     </ul> </td> 
   </tr> 

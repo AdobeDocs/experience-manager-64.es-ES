@@ -1,8 +1,8 @@
 ---
 title: Desarrollo con CRXDE Lite
 seo-title: Desarrollo con CRXDE Lite
-description: CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el navegador
-seo-description: CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el navegador
+description: CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el explorador
+seo-description: CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el explorador
 uuid: a5eafc8c-f9fa-49ba-ad2f-0cccc427ca49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,26 +20,26 @@ ht-degree: 5%
 
 # Desarrollo con CRXDE Lite {#developing-with-crxde-lite}
 
-En esta sección se describe cómo desarrollar la aplicación AEM con CRXDE Lite.
+En esta sección se describe cómo desarrollar su aplicación AEM con CRXDE Lite.
 
 Consulte la documentación general para obtener más información sobre los diferentes entornos de desarrollo disponibles.
 
-CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el navegador. Con CRXDE Lite, puede crear un proyecto, crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes durante el registro.
+CRXDE Lite está integrado en AEM y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear un proyecto, crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes durante el registro.
 
-CRXDE Lite se recomienda cuando no tenga acceso directo al servidor AEM, cuando desarrolle una aplicación ampliando o modificando los componentes integrados y los paquetes de Java o cuando no necesite un depurador dedicado, la finalización del código y el resaltado de sintaxis.
+Se recomienda CRXDE Lite cuando no tenga acceso directo al servidor de AEM, cuando desarrolle una aplicación ampliando o modificando los componentes integrados y los paquetes de Java o cuando no necesite un depurador dedicado, la finalización del código y el resaltado de sintaxis.
 
 >[!NOTE]
 >
->A partir de AEM 6.4.8.1, ya no es posible el acceso anónimo a CRXDE Lite.
+>A partir de AEM 6.4.8.1, el acceso anónimo de CRXDE Lite ya no es posible.
 >Los usuarios son redirigidos a la pantalla de inicio de sesión.
 
 >[!NOTE]
 >
->Se recomienda utilizar las herramientas de desarrollador de [AEM para Eclipse](/help/sites-developing/aem-eclipse.md) y la extensión de los corchetes HTML de [AEM](/help/sites-developing/aem-brackets.md) durante el desarrollo del proyecto.
+>Se recomienda utilizar las [AEM herramientas para desarrolladores de Eclipse](/help/sites-developing/aem-eclipse.md) y la extensión de los [checos HTML](/help/sites-developing/aem-brackets.md) AEM durante el desarrollo del proyecto.
 
 ## Introducción a CRXDE Lite {#getting-started-with-crxde-lite}
 
-Para comenzar con CRXDE Lite, siga estos pasos:
+Para empezar con CRXDE Lite, siga estos pasos:
 
 1. Instale AEM.
 1. En el navegador, escriba https://`<host>`:`<port>`/crx/de. De forma predeterminada, lo es `http://localhost:4502/crx/de`.
@@ -47,21 +47,21 @@ Para comenzar con CRXDE Lite, siga estos pasos:
 
 1. Haga clic en **Aceptar**.
 
-La interfaz de usuario de CRXDE Lite tiene el siguiente aspecto en el navegador:
+La interfaz de usuario de CRXDE Lite tiene el siguiente aspecto en el explorador:
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
-Ahora puede utilizar CRXDE Lite para desarrollar su aplicación.
+Ahora puede usar CRXDE Lite para desarrollar su aplicación.
 
 ### Información general sobre la interfaz de usuario {#overview-of-the-user-interface}
 
-CRXDE Lite oferta las siguientes funciones:
+CRXDE Lite oferta la siguiente funcionalidad:
 
 <table> 
  <tbody> 
   <tr> 
    <td>Barra de conmutación superior</td> 
-   <td>Permite cambiar rápidamente entre CRXDE Lite, Package Manager y Package Share.</td> 
+   <td>Permite cambiar rápidamente entre CRXDE Lite, administrador de paquetes y uso compartido de paquetes.</td> 
   </tr> 
   <tr> 
    <td>Widget de ruta de nodo</td> 
@@ -73,7 +73,7 @@ CRXDE Lite oferta las siguientes funciones:
   </tr> 
   <tr> 
    <td>Panel Editar</td> 
-   <td><p><strong>Ficha Inicio</strong> : le permite buscar contenido y/o documentación y acceder a los recursos del desarrollador (documentación, blog del desarrollador, base de conocimiento) y a la asistencia técnica (página principal y centro de asistencia de Adobe).<br /> </p> <p>Haga clic con el botón Doble en un archivo del panel <strong>Explorador</strong> para mostrar su contenido; como, por ejemplo, un archivo .jsp o .java. A continuación, puede modificarlo y guardar los cambios.</p> <p>Una vez que se edita un archivo en el panel <strong>Editar</strong> , las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar ...</strong>: realice búsquedas o reemplace.<br /> <br /> Al hacer clic con el Doble en la línea de estado del panel <strong>Editar</strong> , se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda introducir un número de línea específico para ir.<br /> </td> 
+   <td><p><strong>Ficha Inicio</strong> : le permite buscar contenido y/o documentación y acceder a los recursos del desarrollador (documentación, blog del desarrollador, base de conocimiento) y a la asistencia (página principal de Adobe y centro de asistencia).<br /> </p> <p>Haga clic con el botón Doble en un archivo del panel <strong>Explorador</strong> para mostrar su contenido; como, por ejemplo, un archivo .jsp o .java. A continuación, puede modificarlo y guardar los cambios.</p> <p>Una vez que se edita un archivo en el panel <strong>Editar</strong> , las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar ...</strong>: realice búsquedas o reemplace.<br /> <br /> Al hacer clic con el Doble en la línea de estado del panel <strong>Editar</strong> , se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda introducir un número de línea específico para ir.<br /> </td> 
   </tr> 
   <tr> 
    <td>Ficha Propiedades<br /> </td> 
@@ -81,7 +81,7 @@ CRXDE Lite oferta las siguientes funciones:
   </tr> 
   <tr> 
    <td>Ficha Control de acceso</td> 
-   <td><p>Mostrar permisos basados en la ruta actual, nivel de repositorio o principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política</strong>de Control de acceso aplicable: Políticas que se pueden aplicar a la selección actual.</p> <p>- Políticas <strong>de Control de acceso</strong>local: Políticas actuales aplicadas localmente a la selección actual.</p> <p>- Políticas <strong>eficaces de Control de acceso</strong>: Las políticas actuales aplicadas a la selección actual pueden establecerse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información del Control de acceso, el usuario que haya iniciado sesión en CRXDE Lite debe tener derechos para leer entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como, por ejemplo, administrador para ver la información.</p> </td> 
+   <td><p>Mostrar permisos basados en la ruta actual, nivel de repositorio o principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política</strong>de Control de acceso aplicable: Políticas que se pueden aplicar a la selección actual.</p> <p>- Políticas <strong>de Control de acceso</strong>local: Políticas actuales aplicadas localmente a la selección actual.</p> <p>- Políticas <strong>eficaces de Control de acceso</strong>: Las políticas actuales aplicadas a la selección actual pueden establecerse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información del Control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como, por ejemplo, administrador para ver la información.</p> </td> 
   </tr> 
   <tr> 
    <td>Ficha Replicación</td> 
@@ -105,7 +105,7 @@ CRXDE Lite oferta las siguientes funciones:
   </tr> 
   <tr> 
    <td>Crear ...<br /> </td> 
-   <td><p>Menú desplegable para crear lo siguiente en el nodo seleccionado:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo de nodo arbitrario<br /> </p> <p>- <strong>Archivo</strong>: nt:file node y su nt:resource subnode</p> <p>- <strong>Carpeta</strong>: nt:nodo de carpeta</p> <p>- <strong>Plantilla</strong>: Plantilla de AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Diálogo</strong>: Cuadro de diálogo AEM</p> </td> 
+   <td><p>Menú desplegable para crear lo siguiente en el nodo seleccionado:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo de nodo arbitrario<br /> </p> <p>- <strong>Archivo</strong>: nt:file node y su nt:resource subnode</p> <p>- <strong>Carpeta</strong>: nt:nodo de carpeta</p> <p>- <strong>Plantilla</strong>: Plantilla AEM</p> <p>- <strong>Componente</strong>: Componente AEM</p> <p>- <strong>Diálogo</strong>: Cuadro de diálogo AEM</p> </td> 
   </tr> 
   <tr> 
    <td>Eliminar<br /> </td> 
@@ -133,7 +133,7 @@ CRXDE Lite oferta las siguientes funciones:
   </tr> 
   <tr> 
    <td>Herramientas<br /> </td> 
-   <td><p>Menú desplegable con las siguientes herramientas:</p> <p>- Configuración <strong>del servidor...</strong>: para acceder a la consola Felix.</p> <p>- <strong>Consulta ...</strong>: para consulta del repositorio.</p> <p>- <strong>Privilegios ...</strong>: para abrir la administración de privilegios, donde puede vista y agregar privilegios.</p> <p>- Control de acceso <strong>de prueba ...</strong>: un lugar donde puede probar el permiso para una ruta determinada o principal.</p> <p>- <strong>Exportar tipo</strong>de nodo: para exportar tipos de nodos en el sistema como notación de código.</p> <p>- <strong>Importar tipo de nodo...</strong>: para importar tipos de nodos mediante notación cnd.</p>  <p>- <strong>Instalar el depurador de SiteCatalyst...</strong>: instrucciones sobre cómo instalar Analytics Debugger.</p> </td> 
+   <td><p>Menú desplegable con las siguientes herramientas:</p> <p>- Configuración <strong>del servidor...</strong>: para acceder a la consola Felix.</p> <p>- <strong>Consulta ...</strong>: para consulta del repositorio.</p> <p>- <strong>Privilegios ...</strong>: para abrir la administración de privilegios, donde puede vista y agregar privilegios.</p> <p>- Control de acceso <strong>de prueba ...</strong>: un lugar donde puede probar el permiso para una ruta determinada o principal.</p> <p>- <strong>Exportar tipo</strong>de nodo: para exportar tipos de nodos en el sistema como notación de código.</p> <p>- <strong>Importar tipo de nodo...</strong>: para importar tipos de nodos mediante notación cnd.</p>  <p>- <strong>Instalar SiteCatalyst Debugger ...</strong>: instrucciones sobre cómo instalar Analytics Debugger.</p> </td> 
   </tr> 
   <tr> 
    <td>Utilidad de inicio de sesión<br /> </td> 
@@ -205,7 +205,7 @@ Crea:
 
 ### Creación de un cuadro de diálogo {#creating-a-dialog}
 
-Para crear un cuadro de diálogo con CRXDE Lite:
+Para crear un cuadro de diálogo con el CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
 1. En el panel Navegación, haga clic con el botón derecho en el componente en el que desea crear el cuadro de diálogo, seleccione **Crear...** y, a continuación, **Crear cuadro de diálogo...**.

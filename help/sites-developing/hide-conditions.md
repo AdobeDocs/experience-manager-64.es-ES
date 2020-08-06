@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
 
 # Uso de Ocultar condiciones{#using-hide-conditions}
 
-Las condiciones de ocultación se pueden utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de plantilla configura el componente [de](https://helpx.adobe.com/experience-manager/core-components/using/list.html) lista de componentes principales en el editor [de](/help/sites-authoring/templates.md) plantillas y decide desactivar las opciones para crear la lista en función de las páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad para que, cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción de mostrar páginas secundarias.
+Las condiciones de ocultación se pueden utilizar para determinar si un recurso de componente se procesa o no. Un ejemplo de esto sería cuando un autor de una plantilla configura el componente [de](https://helpx.adobe.com/experience-manager/core-components/using/list.html) lista de componentes principales en el editor [de](/help/sites-authoring/templates.md) plantillas y decide desactivar las opciones para generar la lista en función de las páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad para que, cuando se procese el componente de lista, se evalúe la condición de ocultar y no se muestre la opción de mostrar páginas secundarias.
 
 ## Información general {#overview}
 
@@ -27,7 +30,7 @@ Al utilizar condiciones de ocultación, los administradores, desarrolladores y s
 
 >[!NOTE]
 >
->Ocultar un recurso basado en una expresión no reemplaza los permisos ACL. El contenido permanece editable, pero simplemente no se muestra.
+>Ocultar un recurso basado en una expresión no reemplaza los permisos de ACL. El contenido permanece editable, pero simplemente no se muestra.
 
 ## Detalles de implementación y uso {#implementation-and-usage-details}
 
@@ -47,7 +50,7 @@ ${cqDesign.myProperty == true}
 ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 != 1 || header.myHeader}
 ```
 
-Al definir la expresión de ocultado, tenga en cuenta:
+Al definir la expresión de ocultar, tenga en cuenta:
 
 * Para que sea válido, debe expresarse el ámbito en que se encuentra la propiedad (por ejemplo, `cqDesign.myProperty`).
 * Los valores son de solo lectura.
@@ -55,13 +58,13 @@ Al definir la expresión de ocultado, tenga en cuenta:
 
 ## Ejemplo {#example}
 
-Se pueden encontrar ejemplos de condiciones de ocultación en AEM y en los componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales en particular. Por ejemplo, considere el componente [principal de la](https://helpx.adobe.com/experience-manager/core-components/using/list.html)lista.
+Se pueden encontrar ejemplos de condiciones de ocultación en todo el AEM y en los componentes [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales en particular. Por ejemplo, considere el componente [principal de](https://helpx.adobe.com/experience-manager/core-components/using/list.html)lista.
 
 [Con el editor](/help/sites-authoring/templates.md)de plantillas, el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Opciones como si se permite que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc. se puede habilitar o deshabilitar.
 
 Si el autor de una plantilla decide desactivar la opción de páginas secundarias, se establece una propiedad de diseño y se evalúa una condición de ocultado en relación con ella, lo que provoca que la opción no se muestre para el autor de la página.
 
-1. De forma predeterminada, el autor de la página puede utilizar el componente principal de lista para crear una lista con páginas secundarias mediante la opción Páginas **** secundarias.
+1. De forma predeterminada, el autor de la página puede utilizar el componente principal de lista para crear una lista con páginas secundarias seleccionando la opción Páginas **** secundarias.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -74,11 +77,11 @@ Si el autor de una plantilla decide desactivar la opción de páginas secundaria
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. El valor de `disableChildren` se extrae de la configuración de diseño y la expresión se `${cdDesign.disableChildren}` evalúa como `false`, lo que significa que la opción no se procesará como parte del componente.
+1. El valor de `disableChildren` se extrae de la configuración de diseño y la expresión `${cdDesign.disableChildren}` se evalúa como `false`, lo que significa que la opción no se procesará como parte del componente.
 
-   Puede ver la expresión hide como el valor de la `granite:hide` propiedad [en GitHub aquí](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   Puede vista la expresión hide como el valor de la `granite:hide` propiedad [en GitHub aquí](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
-1. La opción **Páginas** secundarias ya no se representa para el autor de la página al utilizar el componente de lista.
+1. La opción **Páginas** secundarias ya no se representa para el autor de la página al utilizar el componente lista.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 

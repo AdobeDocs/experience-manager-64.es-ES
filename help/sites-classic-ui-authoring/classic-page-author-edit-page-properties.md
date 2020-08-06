@@ -1,6 +1,6 @@
 ---
-title: 'Edición de las propiedades de página '
-seo-title: 'Edición de las propiedades de página '
+title: 'Edición de las propiedades de página  '
+seo-title: 'Edición de las propiedades de página  '
 description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 seo-description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -131,7 +134,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Especificar una configuración de exportación.
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
 * **Miniatura de la página**
 
@@ -145,9 +148,9 @@ Las propiedades se distribuyen entre varias pestañas:
 
       Cargue una imagen para utilizarla como miniatura.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* **Servicios de nube**
+* **Cloud Services**
 
    Defina propiedades para [servicios de nube](/help/sites-developing/extending-cloud-config.md).
 
@@ -157,7 +160,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permisos  {#permissions}
+### Permisos   {#permissions}
 
 * **Permisos** (IU táctil)
 
@@ -169,13 +172,13 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio  {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 

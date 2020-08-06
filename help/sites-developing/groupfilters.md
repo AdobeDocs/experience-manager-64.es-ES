@@ -1,6 +1,6 @@
 ---
-title: Creación de filtros de grupo de dispositivos
-seo-title: Creación de filtros de grupo de dispositivos
+title: Creación de Filtros de grupos de dispositivos
+seo-title: Creación de Filtros de grupos de dispositivos
 description: Crear un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos
 seo-description: Crear un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos
 uuid: 8db98b98-f26d-4924-930a-a682cd7df866
@@ -12,6 +12,9 @@ discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos. Cree tantos filtros como necesite para dirigirse a los grupos de funciones de dispositivo necesarios.
+Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos. Cree tantos filtros como necesite para realizar el destinatario de los grupos necesarios de funciones de dispositivo.
 
-Diseñe los filtros de modo que pueda utilizar combinaciones de ellos para definir los grupos de capacidades. Generalmente, las capacidades de los distintos grupos de dispositivos se superponen. Por lo tanto, puede utilizar algunos filtros con varias definiciones de grupos de dispositivos.
+Diseñe sus filtros para que pueda utilizar combinaciones de ellas y definir los grupos de funciones. Generalmente, las capacidades de los distintos grupos de dispositivos se superponen. Por lo tanto, puede usar algunos filtros con varias definiciones de grupos de dispositivos.
 
 Después de crear un filtro, puede utilizarlo en la configuración de [grupo.](/help/sites-developing/mobile.md#creating-a-device-group)
 
@@ -84,7 +87,7 @@ public String getTitle() {
 }
 ```
 
-La precodificación del nombre y el texto de la descripción es suficiente para los entornos de creación no lingüísticos. Considere la externalización de las cadenas para uso multilingüe o para activar el cambio de cadenas sin volver a compilar el código fuente.
+La precodificación del texto del nombre y la descripción es suficiente para los entornos de creación no lingüísticos. Considere la externalización de las cadenas para uso multilingüe o para activar el cambio de cadenas sin volver a compilar el código fuente.
 
 ### Evaluar según criterios de filtro {#evaluating-against-filter-criteria}
 
@@ -188,9 +191,9 @@ El siguiente código POM resulta útil si utiliza Maven para crear sus aplicacio
 
 Las interfaces DeviceGroup y DeviceGroupFilter se incluyen en el paquete de la API móvil de Day Community 5 WCM. Las anotaciones Felix se incluyen en el paquete de servicios declarativos Apache Felix. Puede obtener este archivo JAR del repositorio público de Adobe.
 
-En el momento de la creación, 5.5.2 es la versión del paquete de API de WCM Mobile que se encuentra en la última versión de AEM. Utilice Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) para asegurarse de que esta es la versión del paquete implementada en su entorno.
+En el momento de la creación, 5.5.2 es la versión del paquete de API de WCM Mobile que se encuentra en la última versión de AEM. Utilice la consola web de Adobe ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) para asegurarse de que esta es la versión del paquete implementada en el entorno.
 
-**** POM: (El POM usará un groupId y una versión diferentes).
+**POM:** (El POM usará un groupId y una versión diferentes).
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -255,4 +258,4 @@ En el momento de la creación, 5.5.2 es la versión del paquete de API de WCM Mo
 </project>
 ```
 
-Agregue el perfil que la sección [Obtención del complemento](/help/sites-developing/vlt-mavenplugin.md) Maven del paquete de contenido proporciona al archivo de configuración principal para utilizar el repositorio público de Adobe.
+Añada el perfil que la sección [Obtención del complemento](/help/sites-developing/vlt-mavenplugin.md) Maven del paquete de contenido proporciona al archivo de configuración principal para utilizar el repositorio público de Adobe.

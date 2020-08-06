@@ -12,6 +12,9 @@ discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 93%
 
 ---
 
@@ -39,6 +42,7 @@ En el siguiente procedimiento se crea un lanzamiento.
    * **Excluir páginas secundarias**: seleccione esta opción para crear el lanzamiento solo para la página de origen sin incluir las páginas secundarias. De forma predeterminada, está opción no está seleccionada.
    * **Mantener sincronizado**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para ello, el lanzamiento se convierte en una [Live Copy](/help/sites-administering/msm.md).
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Haga clic en **Crear**.

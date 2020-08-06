@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Los pasos genéricos para realizar cualquier personalización son:
 
-1. Inicie sesión en CRXDE Lite accediendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Inicie sesión en el CRXDE Lite accediendo a `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Cree una carpeta denominada `ws`at `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Vaya a `/apps/ws`la ficha **[!UICONTROL Control de acceso]** y desplácese hasta ella.
 1. En la lista **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Haga clic **[!UICONTROL +]** nuevamente.

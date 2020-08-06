@@ -1,8 +1,8 @@
 ---
 title: Cómo utilizar la herramienta VLT
 seo-title: Cómo utilizar la herramienta VLT
-description: La herramienta Jackrabbit FileVault (VLT) es desarrollada por la Fundación Apache que asigna el contenido de una instancia de Jackrabbit/AEM a su sistema de archivos
-seo-description: La herramienta Jackrabbit FileVault (VLT) es desarrollada por la Fundación Apache que asigna el contenido de una instancia de Jackrabbit/AEM a su sistema de archivos
+description: La herramienta Jackrabbit FileVault (VLT) es desarrollada por la Fundación Apache que asigna el contenido de una instancia Jackrabbit/AEM a su sistema de archivos
+seo-description: La herramienta Jackrabbit FileVault (VLT) es desarrollada por la Fundación Apache que asigna el contenido de una instancia Jackrabbit/AEM a su sistema de archivos
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 2%
 
 ---
 
 
 # Cómo utilizar la herramienta VLT {#how-to-use-the-vlt-tool}
 
-La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [The Apache Foundation](https://www.apache.org/) que asigna el contenido de una instancia de Jackrabbit/AEM a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de código fuente (como un cliente de Subversion (SVN)), proporcionando operaciones normales de ingreso, salida y administración, así como opciones de configuración para una representación flexible del contenido del proyecto.
+La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [The Apache Foundation](https://www.apache.org/) que asigna el contenido de una instancia Jackrabbit/AEM a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de código fuente (como un cliente de Subversion (SVN)), proporcionando operaciones normales de ingreso, salida y administración, así como opciones de configuración para una representación flexible del contenido del proyecto.
 
-La herramienta VLT se ejecuta desde la línea de comandos. En este documento se describe cómo utilizar la herramienta, incluido cómo empezar y obtener ayuda, así como una lista de todos los [comandos](#vlt-commands) y [opciones](#vlt-global-options)disponibles.
+La herramienta VLT se ejecuta desde la línea de comandos. Este documento describe cómo utilizar la herramienta, incluyendo cómo empezar y obtener ayuda, así como una lista de todos los [comandos](#vlt-commands) y [opciones](#vlt-global-options)disponibles.
 
 ## Conceptos y arquitectura {#concepts-and-architecture}
 
@@ -27,7 +30,7 @@ Consulte la página [Información general](https://jackrabbit.apache.org/filevau
 
 ## Introducción a VLT {#getting-started-with-vlt}
 
-Para empezar a usar VLT, debe hacer lo siguiente:
+Para realizar inicios con VLT, debe hacer lo siguiente:
 
 1. Instale VLT, actualice las variables de entorno y actualice los archivos de subversión globales ignorados.
 1. Configure el repositorio de AEM (si aún no lo ha hecho).
@@ -44,7 +47,7 @@ Para utilizar la herramienta VLT, primero debe instalarla. No está instalado de
    >
    >La fuente de la herramienta VLT está [disponible en GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extraiga el archivo.
-1. Agregue `<archive-dir>/vault-cli-<version>/bin` a su entorno para `PATH` que se acceda a los archivos de comandos `vlt` o a los archivos `vlt.bat` según corresponda. Por ejemplo:
+1. Añada `<archive-dir>/vault-cli-<version>/bin` a su entorno `PATH` para que se acceda a los archivos `vlt` de comandos o a los archivos `vlt.bat` según corresponda. Por ejemplo:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -213,7 +216,7 @@ Options:
 
 ## Tareas comunes realizadas en VLT {#common-tasks-performed-in-vlt}
 
-A continuación se indican algunas tareas comunes realizadas en VLT. Para obtener información detallada sobre cada comando, consulte los [comandos](#vlt-commands)individuales.
+Las siguientes son algunas tareas comunes realizadas en VLT. Para obtener información detallada sobre cada comando, consulte los [comandos](#vlt-commands)individuales.
 
 ### Extracción de un subárbol {#checking-out-a-subtree}
 
@@ -291,7 +294,7 @@ Las opciones y los comandos se describen en detalle en las siguientes secciones.
 
 ## Opciones globales de VLT {#vlt-global-options}
 
-La siguiente es una lista de opciones de VLT, que están disponibles para todos los comandos. Consulte los comandos individuales para obtener información sobre las opciones adicionales disponibles.
+A continuación se muestra una lista de las opciones de VLT, que están disponibles para todos los comandos. Consulte los comandos individuales para obtener información sobre las opciones adicionales disponibles.
 
 |  |  |
 |--- |--- |
@@ -403,7 +406,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `--force` | obliga a cerrar la compra a sobrescribir los archivos locales si ya existen |
 | `-v (--verbose)` | salida detallada |
 | `-q (--quiet)` | imprime lo menos posible |
-| `-f (--filter) <file>` | especifica filtros automáticos si no se define ninguno |
+| `-f (--filter) <file>` | especifica filtros automáticos si no hay ninguno definido |
 | `<uri>` | URI de punto de montaje |
 | `<jcrPath>` | (opcional) ruta remota |
 | `<localPath>` | (opcional) ruta local |
@@ -604,7 +607,7 @@ proplist -q|-R <file1> [<file2> ...]
 |--- |--- |
 | `-q (--quiet)` | imprime lo menos posible |
 | `-R (--recursive)` | desciende recursivamente |
-| `<file> [<file> ...]` | archivo o directorio desde el que enumerar las propiedades |
+| `<file> [<file> ...]` | archivo o directorio para la lista de las propiedades |
 
 ### ProDefine {#propset}
 
@@ -767,7 +770,7 @@ sync -v|--force|-u <uri> <command> <localPath>
 Los códigos de estado utilizados por VLT son:
 
 * &#39; &#39; sin modificaciones
-* Se agregó &#39;A&#39;
+* &#39;A&#39; Añadido
 * &#39;C&#39; en conflicto
 * &#39;D&#39; eliminado
 * &#39;I&#39; ignorado
@@ -813,7 +816,7 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 >
 >El `status` comando no obtiene ningún dato activo del servicio, sino que lee la configuración en `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
 
-### Adición de una carpeta de sincronización {#adding-a-sync-folder}
+### Añadir una carpeta de sincronización {#adding-a-sync-folder}
 
 El `register` comando se utiliza para agregar una carpeta para sincronizarla con la configuración.
 
@@ -890,7 +893,7 @@ Para configurar un entorno de desarrollo basado en una carpeta de sincronizació
 
    >[!NOTE]
    >
-   >Los filtros solo se pueden utilizar para extraer las rutas adecuadas. Consulte la sección [Realización de un cierre de compra](#performing-a-filtered-checkout) filtrado para obtener más información.
+   >Puede utilizar filtros para extraer únicamente las rutas correspondientes. Consulte la sección [Realización de un cierre de compra](#performing-a-filtered-checkout) filtrado para obtener más información.
 
 1. Vaya a la carpeta raíz de la copia de trabajo:
 

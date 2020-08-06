@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 3%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 
 El marco de integración incluye una capa de integración con una API. Esto le permite:
 
-* complemento de un sistema de comercio electrónico y extracción de datos de productos en AEM
+* conectar un sistema de comercio electrónico y extraer los datos del producto en AEM
 * crear componentes de AEM para capacidades comerciales independientes del motor de comercio electrónico específico
 
 Para obtener más información, consulte:
 
 * [Desarrollo (genérico)](/help/sites-developing/generic.md)
-* [Desarrollo con SAP Commerce Cloud](/help/sites-developing/sap-commerce-cloud.md)
+* [Desarrollo con Commerce Cloud SAP](/help/sites-developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >

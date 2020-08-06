@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ El Sistema de informes de procesos proporciona un conjunto de informes listos pa
 
 Además, Process Sistema de informes proporciona una interfaz para ejecutar consultas ad hoc e integrar vistas de informes personalizadas en la interfaz de usuario de Process Sistema de informes.
 
-Para obtener la lista de los navegadores admitidos, consulte Plataformas [compatibles con formularios](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Para ver la lista de los exploradores admitidos, consulte Plataformas [compatibles con](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
 
 El Sistema de informes de procesos se basa en módulos que:
 

@@ -1,8 +1,8 @@
 ---
 title: Cómo trabajar con paquetes
 seo-title: Cómo trabajar con paquetes
-description: Conozca los conceptos básicos del trabajo con paquetes en AEM.
-seo-description: Conozca los conceptos básicos del trabajo con paquetes en AEM.
+description: Conozca los aspectos básicos del trabajo con paquetes en AEM.
+seo-description: Conozca los aspectos básicos del trabajo con paquetes en AEM.
 uuid: e9eb4f88-9df6-4019-92e0-2aafcffe1aab
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ Los paquetes permiten importar y exportar el contenido del repositorio. Por ejem
 
 Se puede acceder a los paquetes y/o mantenerlos desde las páginas siguientes:
 
-* [Administrador](#package-manager)de paquetes, que se utiliza para administrar los paquetes en la instancia local de AEM.
+* [Administrador](#package-manager)de paquetes, que se utiliza para administrar los paquetes en la instancia de AEM local.
 
-* [Package Share](#package-share), un servidor centralizado que contiene tanto paquetes disponibles públicamente como paquetes privados para su empresa. Los paquetes públicos pueden contener revisiones, nuevas funcionalidades, documentación, etc.
+* [Package Share](#package-share), un servidor centralizado que contiene tanto los paquetes disponibles públicamente como los privados para su compañía. Los paquetes públicos pueden contener revisiones, nuevas funcionalidades, documentación, etc.
 
 Puede transferir paquetes entre el Administrador de paquetes, Uso compartido de paquetes y el sistema de archivos.
 
@@ -31,39 +34,39 @@ Puede transferir paquetes entre el Administrador de paquetes, Uso compartido de 
 
 Un paquete es un archivo zip que contiene el contenido del repositorio en forma de serialización del sistema de archivos (llamada serialización &quot;vault&quot;). Esto proporciona una representación fácil de usar y editar de archivos y carpetas.
 
-Los paquetes incluyen contenido, tanto de contenido de página como del proyecto, seleccionado mediante filtros.
+Los paquetes incluyen el contenido, tanto de la página como del proyecto, seleccionado con filtros.
 
-Un paquete también contiene información meta de vault, incluidas las definiciones de filtros y la información de configuración de importación. Se pueden incluir en el paquete propiedades de contenido adicionales (que no se utilizan para la extracción del paquete), como una descripción, una imagen visual o un icono; estas propiedades son para el consumidor del paquete de contenido y solo para fines informativos.
+Un paquete también contiene información meta de vault, incluidas las definiciones de filtros y la información de configuración de importación. Se pueden incluir en el paquete propiedades de contenido adicionales (que no se utilizan para la extracción de paquetes), como una descripción, una imagen visual o un icono; estas propiedades son para el consumidor del paquete de contenido y solo para fines informativos.
 
 >[!NOTE]
 >
->Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. No incluyen versiones anteriores del contenido que AEM mantiene en el repositorio.
+>Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. No incluyen ninguna versión anterior del contenido que AEM en el repositorio.
 
 Puede realizar las siguientes acciones con o con paquetes:
 
 * Crear nuevos paquetes; definir la configuración y los filtros del paquete según sea necesario
-* Vista previa del contenido del paquete (antes de la compilación)
+* Contenido del paquete de Previsualización (antes de la compilación)
 * Compilación de paquetes
-* Ver información del paquete
-* Ver el contenido del paquete (después de la compilación)
+* Información del paquete de Vista
+* Contenido del paquete de Vista (después de la compilación)
 * Modificar la definición de los paquetes existentes
 * Reconstruir paquetes existentes
 * Volver a ajustar paquetes
-* Descargar paquetes de AEM en el sistema de archivos
-* Cargar paquetes del sistema de archivos en la instancia local de AEM
+* Descargue paquetes de AEM a su sistema de archivos
+* Cargar paquetes del sistema de archivos en la instancia de AEM local
 * Validar el contenido del paquete antes de la instalación
 * Realizar una instalación de ejecución en seco
 * Instalación de paquetes (AEM no instala automáticamente los paquetes después de cargarlos)
 * Eliminar paquetes
 * Descargar paquetes, como revisiones, de la biblioteca Package Share
-* Cargar paquetes en la sección interna de la empresa de la biblioteca Package Share
+* Carga de paquetes en la sección interna de la compañía de la biblioteca Package Share
 
 ## Información del paquete {#package-information}
 
 Una definición de paquete se compone de varios tipos de información:
 
 * [Configuración del paquete](#package-settings)
-* [Filtros de paquete](#package-filters)
+* [Filtros del paquete](#package-filters)
 * [Capturas de pantalla del paquete](#package-screenshots)
 * [Iconos de paquete](#package-icons)
 
@@ -81,9 +84,9 @@ El cuadro de diálogo Configuración **del** paquete está disponible mediante e
 | Agrupar | Nombre del grupo al que se va a agregar el paquete, para organizar los paquetes. Escriba el nombre de un grupo nuevo o seleccione un grupo existente. |
 | Versión | Texto que se usará para la versión personalizada. |
 | Descripción | Breve descripción del paquete. El formato se puede usar con formato HTML. |
-| Miniatura  | El icono que aparece con la lista de paquetes. Haga clic en Examinar para seleccionar un archivo local. |
+| Miniatura    | El icono que aparece con la lista de paquetes. Haga clic en Examinar para seleccionar un archivo local. |
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
 <table> 
  <tbody> 
@@ -95,7 +98,7 @@ El cuadro de diálogo Configuración **del** paquete está disponible mediante e
   <tr> 
    <td>Nombre</td> 
    <td>El nombre del proveedor.</td> 
-   <td><em>AEM Geometrixx<br /> </em></td> 
+   <td><em>Geometrixx AEM<br /> </em></td> 
   </tr> 
   <tr> 
    <td>URL</td> 
@@ -118,7 +121,7 @@ El cuadro de diálogo Configuración **del** paquete está disponible mediante e
   </tr> 
   <tr> 
    <td>Administración de AC</td> 
-   <td><p>Especifique cómo se gestiona la información de control de acceso definida en el paquete cuando se importa:</p> 
+   <td><p>Especifique cómo se gestiona la información de control de acceso definida en el paquete al importarlo:</p> 
     <ul> 
      <li><strong>Ignorar</strong></li> 
      <li><strong>Sobrescribir</strong></li> 
@@ -132,7 +135,7 @@ El cuadro de diálogo Configuración **del** paquete está disponible mediante e
      <li><strong>Sobrescribir</strong> : sobrescribir ACL en el repositorio</li> 
      <li><strong>Combinar</strong> : combinar ambos conjuntos de ACL</li> 
      <li><strong>Claras</strong> : claras ACL</li> 
-     <li><strong>MergePreserve</strong> : combine el control de acceso en el contenido con el proporcionado con el paquete agregando las entradas de control de acceso de entidades principales que no están presentes en el contenido</li> 
+     <li><strong>CombinarConservar</strong> : combine el control de acceso del contenido con el proporcionado con el paquete agregando las entradas de control de acceso de entidades principales que no están presentes en el contenido</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -143,18 +146,18 @@ El cuadro de diálogo Configuración **del** paquete está disponible mediante e
 | **Campo** | **Descripción** | **Formato/Ejemplo** |
 |---|---|---|
 | Probado con | El nombre del producto y la versión de este paquete son compatibles o están dirigidos a ellos. | *AEM6* |
-| Problemas/errores solucionados | Campo de texto que permite enumerar los detalles de los errores corregidos con este paquete. Enumere cada error en una línea separada. | resumen de error-nr |
-| Depende de | Enumera la información de dependencia que debe respetarse siempre que se necesiten otros paquetes para permitir que el paquete actual se ejecute según lo esperado. Este campo es importante cuando se utilizan revisiones. | groupId:nombre:versión |
+| Problemas/errores solucionados | Campo de texto que permite lista de detalles de errores corregidos con este paquete. lista cada error en una línea separada. | resumen de error-nr |
+| Depende de | Lista la información de dependencia que debe respetarse siempre que se necesiten otros paquetes para permitir que el paquete actual se ejecute según lo esperado. Este campo es importante cuando se utilizan revisiones. | groupId:nombre:versión |
 | Reemplaza | Una lista de paquetes obsoletos que este paquete reemplaza. Antes de realizar la instalación, compruebe que este paquete incluye todo el contenido necesario de los paquetes obsoletos para que no se sobrescriba ningún contenido. | groupId:nombre:versión |
 
-### Filtros de paquete {#package-filters}
+### Filtros del paquete {#package-filters}
 
-Los filtros identifican los nodos del repositorio que se incluirán en el paquete. Una definición **de filtro** especifica la siguiente información:
+Los Filtros identifican los nodos del repositorio que se incluirán en el paquete. Una definición **de filtro** especifica la siguiente información:
 
 * Ruta de **raíz** del contenido que se va a incluir.
 * **Reglas** que incluyen o excluyen nodos específicos debajo de la ruta raíz.
 
-Los filtros pueden incluir cero o más reglas. Cuando no hay reglas definidas, el paquete contiene todo el contenido debajo de la ruta raíz.
+Los Filtros pueden incluir cero o más reglas. Cuando no hay reglas definidas, el paquete contiene todo el contenido debajo de la ruta raíz.
 
 Puede definir una o varias definiciones de filtro para un paquete. Utilice más de un filtro para incluir contenido de varias rutas raíz.
 
@@ -171,7 +174,7 @@ En la tabla siguiente se describen estas reglas y se proporcionan ejemplos:
   </tr> 
   <tr> 
    <td> incluir</td> 
-   <td>Puede definir una ruta o utilizar una expresión regular para especificar todos los nodos que desee incluir.<br /> <br /> Al incluir un directorio: 
+   <td>Puede definir una ruta o utilizar una expresión normal para especificar todos los nodos que desee incluir.<br /> <br /> Si se incluye un directorio: 
     <ul> 
      <li>incluir ese directorio <i>y todos los</i> archivos y carpetas de ese directorio (es decir, todo el subárbol)</li> 
      <li><strong>no incluir</strong> otros archivos o carpetas de la ruta raíz especificada</li> 
@@ -180,7 +183,7 @@ En la tabla siguiente se describen estas reglas y se proporcionan ejemplos:
   </tr> 
   <tr> 
    <td> excluir</td> 
-   <td>Puede especificar una ruta de acceso o utilizar una expresión regular para especificar todos los nodos que desea excluir.<br /> <br /> Al excluir un directorio se excluirá ese directorio <i>y todos los</i> archivos y carpetas de ese directorio (es decir, todo el subárbol).<br /> </td> 
+   <td>Puede especificar una ruta o utilizar una expresión normal para especificar todos los nodos que desea excluir.<br /> <br /> Excluir un directorio excluirá ese directorio <i>y todos los</i> archivos y carpetas de ese directorio (es decir, todo el subárbol).<br /> </td> 
    <td>/libs/wcm/foundation/components(/.*)?</td> 
   </tr> 
  </tbody> 
@@ -198,7 +201,7 @@ Puede adjuntar capturas de pantalla al paquete para proporcionar una representac
 
 ### Iconos de paquete {#package-icons}
 
-También puede adjuntar un icono al paquete para proporcionar una representación visual de referencia rápida de lo que contiene el paquete. Esto se muestra en la lista de paquetes y puede ayudarle a identificar fácilmente el paquete, o la clase de paquete.
+También puede adjuntar un icono al paquete para proporcionar una representación visual de referencia rápida de lo que contiene el paquete. Esto se muestra en la lista del paquete y puede ayudarle a identificar fácilmente el paquete o la clase del paquete.
 
 Como un paquete puede contener un icono, se utilizan las siguientes convenciones para los paquetes oficiales:
 
@@ -210,7 +213,7 @@ Paquete de revisión oficial:
 
 ![](do-not-localize/chlimage_1-28.png)
 
-Paquete oficial de instalación o extensión de AEM:
+Paquete oficial AEM instalación o extensión:
 
 Paquete de funciones oficiales:
 
@@ -218,10 +221,10 @@ Paquete de funciones oficiales:
 
 ## el administrador de paquetes {#package-manager}
 
-El administrador de paquetes administra los paquetes de la instalación local de AEM. Una vez que haya [asignado los permisos](#permissions-needed-for-using-the-package-manager) necesarios, puede utilizar el Administrador de paquetes para realizar diversas acciones, como configurar, crear, descargar e instalar los paquetes. Los elementos clave que se deben configurar son:
+El Administrador de paquetes administra los paquetes de la instalación AEM local. Una vez que haya [asignado los permisos](#permissions-needed-for-using-the-package-manager) necesarios, puede utilizar el Administrador de paquetes para realizar diversas acciones, como configurar, crear, descargar e instalar los paquetes. Los elementos clave que se deben configurar son:
 
 * [Configuración del paquete](#package-settings)
-* [Filtros de paquete](#package-filters)
+* [Filtros del paquete](#package-filters)
 
 ### Permisos necesarios para utilizar el Administrador de paquetes {#permissions-needed-for-using-the-package-manager}
 
@@ -236,14 +239,14 @@ Consulte [Configuración de permisos](/help/sites-administering/security.md) par
 
 Para crear una nueva definición de paquete:
 
-1. En la pantalla de bienvenida de AEM, haga clic en **Paquetes** (o en la consola **Herramientas** , haga doble clic en **Paquetes**).
+1. En la pantalla de bienvenida de AEM, haga clic en **Paquetes** (o en el doble de la consola **Herramientas** , haga clic en **Paquetes**).
 
 1. A continuación, seleccione Administrador **de paquetes**.
 1. Haga clic en **Crear paquete**.
 
    >[!NOTE]
    >
-   >Si la instancia tiene muchos paquetes, puede haber una estructura de carpetas en su lugar, por lo que puede desplazarse a la carpeta de destino necesaria antes de crear el nuevo paquete.
+   >Si la instancia tiene muchos paquetes, puede haber una estructura de carpetas en su lugar, por lo que puede desplazarse a la carpeta de destinatario requerida antes de crear el nuevo paquete.
 
 1. En el cuadro de diálogo:
 
@@ -253,9 +256,9 @@ Para crear una nueva definición de paquete:
 
    * **Nombre del grupo**
 
-      Nombre del grupo (o carpeta) de destino. Los grupos están pensados para ayudarle a organizar sus paquetes.
+      Nombre del grupo destinatario (o carpeta). Los grupos están pensados para ayudarle a organizar sus paquetes.
 
-      Se creará una carpeta para el grupo si aún no existe. Si deja el nombre del grupo en blanco, creará el paquete en la lista de paquetes principal (Inicio > Paquetes).
+      Se creará una carpeta para el grupo si aún no existe. Si deja el nombre del grupo en blanco, creará el paquete en la lista del paquete principal (Inicio > Paquetes).
 
    * **Nombre del paquete**
 
@@ -266,7 +269,7 @@ Para crear una nueva definición de paquete:
       Campo de texto para indicar una versión. Esto se agregará al nombre del paquete para formar el nombre del archivo zip.
    Haga clic en **Aceptar** para crear el paquete.
 
-1. AEM enumera el nuevo paquete en la carpeta de grupo correspondiente.
+1. AEM lista el nuevo paquete en la carpeta de grupo correspondiente.
 
    ![packagesitem](assets/packagesitem.png)
 
@@ -284,11 +287,11 @@ Para crear una nueva definición de paquete:
 
    Haga clic en **Aceptar** una vez que haya terminado de editar la configuración.
 
-1. Agregue **[capturas de pantalla](#package-screenshots)**al paquete según sea necesario. Una instancia está disponible cuando se crea el paquete, agregue más si es necesario mediante **Package Screenshot**de la barra de tareas.
+1. Añada **[capturas de pantalla](#package-screenshots)**en el paquete según sea necesario. Una instancia está disponible cuando se crea el paquete, agregue más si es necesario mediante **Package Screenshot**de la barra de tareas.
 
-   Agregue la imagen real haciendo doble clic en el componente de imagen en el área **Capturas de pantalla** , agregando una imagen y haciendo clic en **Aceptar**.
+   Añada la imagen real haciendo clic con el doble en el componente de imagen en el área Capturas de **pantalla** , agregando una imagen y haciendo clic en **Aceptar**.
 
-1. Para definir los filtros **[de](#package-filters)**paquete, arrastre las instancias de la definición **de**filtro desde la barra de tareas y haga doble clic para abrirlas y editarlas:
+1. Para definir los Filtros **[de](#package-filters)**paquete, arrastre las instancias de la definición **de**filtro desde la barra de tareas y, a continuación, haga clic con el doble para abrirlas y editarlas:
 
    ![packagesfilter](assets/packagesfilter.png)
 
@@ -299,14 +302,14 @@ Para crear una nueva definición de paquete:
 
       Si es necesario, puede definir las reglas [**Incluir **o** Excluir **](#package-filters)para definir exactamente el contenido del paquete.
 
-      Agregue reglas con el símbolo **+** y elimine las reglas con el **símbolo-** . Las reglas se aplican según su orden, de modo que se colocan según sea necesario con los botones **Subir** y **Bajar** .
+      Añada las reglas con el **+** símbolo, o bien elimine las reglas con el **-** símbolo. Las reglas se aplican según su orden, de modo que se colocan según sea necesario con los botones **Subir** y **Bajar** .
    A continuación, haga clic en **Aceptar** para guardar el filtro.
 
    >[!NOTE]
    >
-   >Puede utilizar tantas definiciones de filtro como necesite, aunque debe asegurarse de que no entran en conflicto. Utilice **Vista previa** para confirmar el contenido del paquete.
+   >Puede utilizar tantas definiciones de filtro como necesite, aunque debe asegurarse de que no entran en conflicto. Use la **Previsualización** para confirmar cuál será el contenido del paquete.
 
-1. Para confirmar lo que contendrá el paquete, puede utilizar **Vista previa**. Esto realiza una ejecución en seco del proceso de compilación y enumera todo lo que se agregará al paquete cuando se cree realmente.
+1. Para confirmar lo que contendrá el paquete, puede utilizar la **Previsualización**. Esto realiza una ejecución seca del proceso de compilación y lista todo lo que se agregará al paquete cuando se cree realmente.
 1. Ahora puede [compilar](#building-a-package) el paquete.
 
    >[!NOTE]
@@ -319,7 +322,7 @@ A menudo, un paquete se crea al mismo tiempo que [crea la definición](#creating
 
 >[!NOTE]
 >
->Antes de crear el paquete, puede resultar útil obtener una vista previa del contenido del paquete. Para ello, haga clic en **Vista previa**.
+>Antes de crear el paquete, puede resultar útil la previsualización del contenido del mismo. Para ello, haga clic en **Previsualización**.
 
 1. Abra la definición del paquete desde el Administrador de **paquetes** (haga clic en el icono o nombre del paquete).
 
@@ -329,7 +332,7 @@ A menudo, un paquete se crea al mismo tiempo que [crea la definición](#creating
    >
    >Esto es de especial importancia cuando está reconstruyendo un paquete, ya que se sobrescribirá su contenido.
 
-1. Haga clic en **Aceptar**. AEM creará el paquete, enumerando todo el contenido agregado al paquete tal como lo hace. Al finalizar, AEM muestra una confirmación de que el paquete se creó y, al cerrar el cuadro de diálogo, actualiza la información de la lista de paquetes.
+1. Haga clic en **Aceptar**. AEM creará el paquete, enumerando todo el contenido agregado al paquete tal como lo hace. Cuando se completa la AEM, se muestra una confirmación de que el paquete se creó y (al cerrar el cuadro de diálogo) se actualiza la información de la lista del paquete.
 
 ### Reajuste de un paquete {#rewrapping-a-package}
 
@@ -347,10 +350,10 @@ Un caso de uso importante para volver a ajustar es cuando se prepara un paquete 
 
 ### Visualización y edición de la información del paquete {#viewing-and-editing-package-information}
 
-Para ver o editar información sobre una definición de paquete:
+Para vista o edición de información sobre una definición de paquete:
 
-1. En el Administrador de paquetes, navegue hasta el paquete que desee ver.
-1. Haga clic en el icono de paquete del paquete que desee ver. Esto abrirá la página del paquete con información sobre la definición del paquete:
+1. En el Administrador de paquetes, navegue hasta el paquete que desee vista.
+1. Haga clic en el icono de paquete del paquete que desee vista. Esto abrirá la página del paquete con información sobre la definición del paquete:
 
    ![packagesitemclicked-1](assets/packagesitemclicked-1.png)
 
@@ -360,38 +363,39 @@ Para ver o editar información sobre una definición de paquete:
    >
    >Los botones disponibles dependerán de si el paquete ya se ha creado o no.
 
-1. Si el paquete ya se ha compilado, haga clic en **Contenido**, se abrirá una ventana con el contenido completo del paquete:
+1. Si el paquete ya se ha creado, haga clic en **Contenido**, se abrirá una ventana y se lista todo el contenido del paquete:
 
 ### Visualización del contenido del paquete y prueba de la instalación {#viewing-package-contents-and-testing-installation}
 
-Después de crear un paquete, puede ver el contenido:
+Después de crear un paquete, puede realizar la vista del contenido:
 
-1. En el Administrador de paquetes, navegue hasta el paquete que desee ver.
-1. Haga clic en el icono de paquete del paquete que desee ver. Esto abrirá la página del paquete con información sobre la definición del paquete.
+1. En el Administrador de paquetes, navegue hasta el paquete que desee vista.
+1. Haga clic en el icono de paquete del paquete que desee vista. Esto abrirá la página del paquete con información sobre la definición del paquete.
 
-1. Para ver el contenido, haga clic en **Contenido** y se abrirá una ventana con el contenido completo del paquete:
+1. Para vista del contenido, haga clic en **Contenido** y se abrirá una ventana con la lista de todo el contenido del paquete:
 
    ![packgescontents](assets/packgescontents.png)
 
-1. Para realizar una ejecución seca de la instalación, haga clic en **Probar instalación**. Después de confirmar la acción, se abrirá una ventana y se enumerarán los resultados como si la instalación se hubiera realizado:
+1. Para realizar una ejecución seca de la instalación, haga clic en **Probar instalación**. Después de confirmar la acción, se abrirá una ventana y se lista el resultado como si la instalación se hubiera realizado:
 
    ![packagestestinstall](assets/packagestestinstall.png)
 
 ### Descarga de paquetes en el sistema de archivos {#downloading-packages-to-your-file-system}
 
-En esta sección se describe cómo descargar un paquete de AEM en el sistema de archivos mediante el Administrador **de paquetes**.
+En esta sección se describe cómo descargar un paquete de AEM a su sistema de archivos mediante el Administrador **de paquetes**.
 
 >[!NOTE]
 >
->Consulte Uso compartido de [paquetes](#package-share) para obtener información sobre cómo descargar revisiones, paquetes de funciones y paquetes del área pública y del área interna de uso compartido de paquetes de su empresa.
+>Consulte Uso compartido de [paquetes](#package-share) para obtener información sobre cómo descargar revisiones, paquetes de funciones y paquetes del área pública y del área interna de uso compartido de paquetes de su compañía.
 >
 >Desde Package Share puede:
 >
->* descargue paquetes desde Uso compartido de [paquetes directamente en su instancia](#downloading-and-installing-packages-from-package-share)local de AEM.\
+>* descargue paquetes desde [Package Share directamente en su instancia](#downloading-and-installing-packages-from-package-share)de AEM local.\
    >  Tras la descarga, el paquete se importa en el repositorio, tras lo cual puede instalarlo inmediatamente en la instancia local mediante el Administrador de **paquetes**. Estos paquetes incluyen revisiones y otros paquetes compartidos.
    >
    >
 * descargue paquetes desde [Package Share al sistema](#downloading-packages-to-your-file-system-from-package-share)de archivos.
+
 >
 
 
@@ -403,7 +407,7 @@ En esta sección se describe cómo descargar un paquete de AEM en el sistema de 
 
 1. Haga clic en el vínculo formado por el nombre del archivo zip (subrayado) del paquete que desea descargar; por ejemplo `export-for-offline.zip`.
 
-   AEM descarga el paquete en el equipo (mediante un cuadro de diálogo de descarga estándar del navegador).
+   AEM descarga el paquete en el equipo (mediante un cuadro de diálogo de descarga estándar del explorador).
 
 ### Carga de paquetes desde el sistema de archivos {#uploading-packages-from-your-file-system}
 
@@ -411,7 +415,7 @@ La carga de paquetes permite cargar un paquete desde el sistema de archivos en e
 
 >[!NOTE]
 >
->Consulte [Carga de paquetes en Package Share](#uploading-a-package) interno de la empresa para cargar un paquete en el área privada de Package Share de la empresa.
+>Consulte [Carga de paquetes en la compañía interna Uso compartido](#uploading-a-package) de paquetes para cargar un paquete en el área privada de Uso compartido de paquetes de su compañía.
 
 Para cargar un paquete:
 
@@ -425,12 +429,12 @@ Para cargar un paquete:
 
    * **Archivo**
 
-      **Puede escribir el nombre del archivo directamente o utilizar** Examinar... para seleccionar el paquete requerido en el sistema de archivos local (después de seleccionar **Aceptar**).
+      Puede escribir el nombre del archivo directamente o utilizar **Examinar...** para seleccionar el paquete requerido en el sistema de archivos local (después de seleccionar **Aceptar**).
 
    * **Forzar carga**
 
       Si ya existe un paquete con este nombre, puede hacer clic en él para forzar la carga (y sobrescribir el paquete existente).
-   Haga clic en **Aceptar** para que el nuevo paquete se cargue y aparezca en la lista Administrador de paquetes.
+   Haga clic en **Aceptar** para que el nuevo paquete se cargue y aparezca en la lista del Administrador de paquetes.
 
    >[!NOTE]
    >
@@ -454,15 +458,15 @@ Estas opciones se detallan a continuación.
 
    **Qué está marcado**
 
-   Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi), extrae sus archivos `manifest.xml` (que contiene las dependencias con versiones de las que depende dicho paquete OSGi) y verifica que la instancia de AEM exporta dichas dependencias con las versiones correctas.
+   Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi), extrae sus archivos `manifest.xml` (que contiene las dependencias con versiones en las que se basa dicho paquete OSGi) y verifica las exportaciones de instancias de AEM que dependen de las versiones correctas.
 
    **Cómo se informa**
 
-   Las dependencias con versiones que no puedan ser satisfechas por la instancia de AEM se enumeran en el registro de **actividades** del Administrador de paquetes.
+   Todas las dependencias con versiones que no puedan ser satisfechas por la instancia de AEM se enumeran en el Registro **de** Actividades del Administrador de paquetes.
 
    **Estados de error**
 
-   Si las dependencias no están satisfechas, los paquetes OSGi del paquete con esas dependencias no se iniciarán. Esto resulta en una implementación de aplicación dañada, ya que todo lo que dependa del paquete OSGi no iniciado no funcionará correctamente.
+   Si las dependencias no están satisfechas, los paquetes OSGi del paquete con esas dependencias no se inicio. Esto resulta en una implementación de aplicación dañada, ya que todo lo que dependa del paquete OSGi no iniciado no funcionará correctamente.
 
    **Resolución de errores**
 
@@ -478,7 +482,7 @@ Estas opciones se detallan a continuación.
 
    **Cómo se informa**
 
-   Estas superposiciones se describen en el Registro de **actividades** del Administrador de paquetes.
+   Estas superposiciones se describen en el registro **de** Actividades del Administrador de paquetes.
 
    **Estados de error**
 
@@ -500,7 +504,7 @@ Estas opciones se detallan a continuación.
 
    **Cómo se informa**
 
-   Los permisos se describen en el Registro de **actividades** del Administrador de paquetes.
+   Los permisos se describen en el Registro **de** Actividades del Administrador de paquetes.
 
    **Estados de error**
 
@@ -512,14 +516,14 @@ Estas opciones se detallan a continuación.
 
    >[!CAUTION]
    >
-   >Se recomienda que los paquetes no afecten a las ACL proporcionadas por AEM, ya que esto puede provocar un comportamiento inesperado del producto.
+   >Como práctica recomendada, se recomienda que los paquetes no afecten a las ACL proporcionadas por AEM, ya que esto puede provocar un comportamiento inesperado del producto.
 
 #### Realización de la validación {#performing-validation}
 
 La validación de los paquetes se puede realizar de dos maneras diferentes:
 
 * Mediante la interfaz de usuario del administrador de paquetes
-* A través de una solicitud HTTP POST como con cURL
+* A través de una solicitud de POST HTTP como con cURL
 
 >[!NOTE]
 >
@@ -528,7 +532,7 @@ La validación de los paquetes se puede realizar de dos maneras diferentes:
 **Validación de paquetes mediante el administrador de paquetes**
 
 1. Abra el Administrador de paquetes en `https://<server>:<port>/crx/packmgr`
-1. Seleccione el paquete en la lista y, a continuación, seleccione la lista desplegable **Más** en el encabezado y, a continuación, **Validar** en el menú desplegable.
+1. Seleccione el paquete en la lista y, a continuación, seleccione el menú desplegable **Más** en el encabezado y, a continuación, **Validar** en el menú desplegable.
 
    >[!NOTE]
    >
@@ -538,9 +542,9 @@ La validación de los paquetes se puede realizar de dos maneras diferentes:
 
 1. Las validaciones elegidas se ejecutan. Los resultados se muestran en el registro de actividades del Administrador de paquetes.
 
-**Validación del paquete mediante solicitud HTTP POST**
+**Validación del paquete mediante solicitud de POST HTTP**
 
-La solicitud POST tiene el siguiente formulario.
+La solicitud de POST tiene el siguiente formato.
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 El valor de `type` predeterminado es `osgiPackageImports` si no se pasa.
@@ -569,13 +574,13 @@ El siguiente es un ejemplo de uso de cURL para ejecutar una validación de paque
 
 >[!NOTE]
 >
->La respuesta a una solicitud HTTP POST de validación será un objeto JSON con los resultados de la validación.
+>La respuesta a una solicitud de POST HTTP de validación será un objeto JSON con los resultados de la validación.
 
 ### Instalación de paquetes {#installing-packages}
 
 Después de cargar un paquete, debe instalar el contenido. Para que el contenido del paquete esté instalado y en funcionamiento, es necesario que:
 
-* cargado en AEM ( [cargado desde el sistema de archivos](#uploading-packages-from-your-file-system) o [descargado del recurso compartido](#downloading-and-installing-packages-from-package-share)de paquetes)
+* cargado en AEM ( [cargado desde su sistema de archivos](#uploading-packages-from-your-file-system) o [descargado desde el recurso compartido](#downloading-and-installing-packages-from-package-share)de paquetes)
 
 * instalen
 
@@ -589,8 +594,9 @@ Después de cargar un paquete, debe instalar el contenido. Para que el contenido
    >  Abra el paquete (haga clic en el icono o nombre del paquete) y haga clic en **Probar instalación**.
    >
    >
-* Consulte la lista de contenido del paquete:\
+* Ver una lista del contenido del paquete:\
    >  Abra el paquete y haga clic en **Contenido**.
+
 >
 
 
@@ -622,7 +628,7 @@ Al desactivar WorkflowLauncher se garantiza que el marco del importador de recur
    >
    >Como alternativa, puede abrir el paquete haciendo clic en su icono para acceder al botón **Instalar** .
 
-1. Haga clic en **Instalar** para iniciar la instalación. Un cuadro de diálogo solicitará confirmación y enumerará todos los cambios realizados. Cuando termine, haga clic en **Cerrar** en el cuadro de diálogo.
+1. Haga clic en **Instalar** para inicio de la instalación. Un cuadro de diálogo solicitará confirmación y lista de todos los cambios que se realicen. Cuando termine, haga clic en **Cerrar** en el cuadro de diálogo.
 
    La palabra **Installed** aparece junto al paquete después de que se haya instalado.
 
@@ -650,7 +656,7 @@ AEM le permite desinstalar paquetes. Esta acción revierte el contenido del repo
 
 1. En el Administrador de paquetes, desplácese hasta el paquete que desee desinstalar.
 1. Haga clic en el icono de paquete del paquete que desee desinstalar.
-1. Haga clic en **Desinstalar** para eliminar el contenido de este paquete del repositorio. Un cuadro de diálogo solicitará confirmación y enumerará todos los cambios realizados. Cuando termine, haga clic en **Cerrar** en el cuadro de diálogo.
+1. Haga clic en **Desinstalar** para eliminar el contenido de este paquete del repositorio. Un cuadro de diálogo solicitará confirmación y lista de todos los cambios que se realicen. Cuando termine, haga clic en **Cerrar** en el cuadro de diálogo.
 
 ### Eliminación de paquetes {#deleting-packages}
 
@@ -666,6 +672,7 @@ Para eliminar un paquete de las listas del Administrador de paquetes:
 
    * Haga clic en **Eliminar** en el menú de la barra de herramientas.
    * Haga clic con el botón derecho y seleccione **Eliminar**.
+
    ![empaquetesdelete](assets/packagesdelete.png)
 
 1. AEM solicita confirmación de que desea eliminar el paquete. Click **OK** to confirm the deletion.
@@ -689,11 +696,11 @@ Package Share es un servidor centralizado que se pone a disposición del públic
 
 Con Package Share, puede descargar estos paquetes, que pueden incluir revisiones oficiales, conjuntos de funciones, actualizaciones o contenido de muestra generado por otros usuarios.
 
-También puede cargar y compartir paquetes dentro de su empresa.
+También puede cargar y compartir paquetes dentro de su compañía.
 
 ### Acceso a Package Share {#access-to-package-share}
 
-No hay acceso anónimo al Uso compartido de paquetes; es decir, solo los usuarios registrados pueden ver, descargar y cargar paquetes.
+No hay acceso anónimo al Uso compartido de paquetes; es decir, solo los usuarios registrados pueden realizar vistas, descargar y cargar paquetes.
 
 El acceso al Uso compartido de paquetes está disponible para nuestros socios y clientes. Los datos de registro deben enviarse para que se asignen derechos de acceso.
 
@@ -714,17 +721,18 @@ Para obtener acceso a Package Share:
 1. En la pantalla de bienvenida de AEM, haga clic en **Herramientas** -> **Implementación**
 1. A continuación, seleccione **Uso compartido** de paquetes. Deberá:
 
-   * iniciar sesión con su Adobe ID
-   * [Creación de un Adobe ID](#registering-for-package-share)
+   * inicie sesión con su Adobe ID
+   * [Crear un Adobe ID](#registering-for-package-share)
+
    >[!NOTE]
    >
-   >La primera vez que inicie sesión con su Adobe ID, deberá completar la [validación de su dirección](#validating-your-adobe-id)de correo electrónico.
+   >La primera vez que inicie sesión con su Adobe ID, debe completar la [validación de su dirección](#validating-your-adobe-id)de correo electrónico.
 
    >[!NOTE]
    >
    >Si ha olvidado su contraseña, utilice el **error de inicio de sesión?** en el cuadro de diálogo de inicio de sesión.
 
-#### Validación del ID de Adobe {#validating-your-adobe-id}
+#### Validación del Adobe ID {#validating-your-adobe-id}
 
 La primera vez que inicie sesión en Package Share con su Adobe ID, se validará su dirección de correo electrónico.
 
@@ -743,11 +751,11 @@ La primera vez que inicie sesión en Package Share con su Adobe ID, se validará
 
 #### Registro para uso compartido de paquetes {#registering-for-package-share}
 
-Si necesita acceder a Package Share, deberá registrarse para obtener un Adobe ID:
+Si necesita acceder a Package Share, deberá registrarse en un Adobe ID:
 
-* La página [de inicio de sesión de Uso compartido de](#signing-in-to-package-share) paquetes ofrece un vínculo para registrar un ID de Adobe.
-* Puede registrarse para obtener un Adobe ID desde cierto software de escritorio de Adobe.
-* También puede registrarse en línea en la página [de inicio de sesión de](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1)Adobe.
+* La página [de inicio de sesión de Uso compartido de](#signing-in-to-package-share) paquetes oferta un vínculo para registrar un Adobe ID.
+* Puede registrarse para un Adobe ID desde cierto software de escritorio de Adobe.
+* También puede registrarse en línea en la página [de inicio de sesión de](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1)Adobe Sign.
 
 Se puede crear un Adobe ID proporcionando:
 
@@ -760,17 +768,17 @@ Se puede crear un Adobe ID proporcionando:
 La validez de la aplicación se comprobará antes de:
 
 * Su cuenta de usuario se crea con los permisos requeridos o permitidos.
-* Su cuenta se agrega al grupo de su empresa.
+* Su cuenta se agrega al grupo de su compañía.
 
 >[!NOTE]
 >
->Un usuario de una de nuestras empresas asociadas también puede ser miembro de sus grupos de clientes.
+>Un usuario de una de nuestras compañías asociadas también puede ser miembro de sus grupos de clientes.
 
 #### Consideraciones de red {#network-considerations}
 
 **IPv6**
 
-Es posible que tenga problemas al intentar acceder a Package Share desde un entorno IPv6 puro.
+Es posible que tenga problemas al intentar acceder al Uso compartido de paquetes desde un entorno IPv6 puro.
 
 Esto se debe a que el uso compartido de paquetes es un servicio alojado en un servidor, lo que significa que la conexión se realiza a través de varias redes en Internet. No se puede garantizar que todas las redes de conexión admitan IPv6; si no es así, la conexión podría fallar.
 
@@ -778,7 +786,7 @@ Para evitar este problema, puede acceder a Package Share desde una red IPv4, des
 
 **Proxy HTTP**
 
-Uso compartido de paquetes no está disponible en este momento si su empresa ejecuta un proxy http que requiere autenticación.
+Uso compartido de paquetes no está disponible en este momento si la compañía ejecuta un proxy http que requiere autenticación.
 
 Uso compartido de paquetes solo está disponible cuando el servidor de AEM tiene acceso a Internet sin necesidad de autenticación. Para configurar el proxy para todos los servicios que utilizan el cliente http (incluido el uso compartido de paquetes), utilice la configuración [OSGi del paquete](/help/sites-deploying/osgi-configuration-settings.md)Day Commons HTTP Client 3.1.
 
@@ -787,14 +795,14 @@ Uso compartido de paquetes solo está disponible cuando el servidor de AEM tiene
 En Package Share, los paquetes se organizan en tres subárboles:
 
 * Paquetes de Adobe proporcionados por Adobe.
-* Paquetes compartidos que han sido proporcionados por otras empresas y que Adobe ha hecho públicos.
-* Su empresa ofrece paquetes privados.
+* Paquetes compartidos que han sido proporcionados por otras compañías y que han sido publicados por Adobe.
+* Los paquetes de compañía que son privados.
 
 ![chlimage_1-346](assets/chlimage_1-346.png)
 
 ### Búsqueda y filtrado de paquetes {#searching-and-filtering-packages}
 
-Uso compartido de paquetes ofrece una barra de búsqueda que puede utilizar para buscar palabras clave o etiquetas específicas. Tanto las palabras clave como las etiquetas admiten varios valores.
+Uso compartido de paquetes oferta una barra de búsqueda que puede utilizar para buscar palabras clave o etiquetas específicas. Tanto las palabras clave como las etiquetas admiten varios valores.
 
 * Para buscar varias palabras clave, debe separar cada palabra clave por un espacio.
 * Para buscar varias etiquetas, debe seleccionar cada una en los árboles de paquetes.
@@ -803,10 +811,10 @@ También puede cambiar el operador condicional de O a Y en la parte derecha de l
 
 ### Descarga E Instalación De Paquetes Desde Package Share {#downloading-and-installing-packages-from-package-share}
 
-Para descargar paquetes desde Package Share e instalarlos en su instancia local, es más fácil acceder a Package Share desde su instancia de AEM. Esto descargará el paquete y lo registrará inmediatamente en el administrador de paquetes, desde donde se puede instalar.
+Para descargar paquetes desde Package Share e instalarlos en la instancia local, es más fácil acceder a Package Share desde la instancia de AEM. Esto descargará el paquete y lo registrará inmediatamente en el administrador de paquetes, desde donde se puede instalar.
 
 1. En la pantalla de bienvenida de AEM, haga clic en **Herramientas** y, a continuación, seleccione Compartir **paquete** para abrir la página Uso compartido de paquetes.
-1. Con los detalles de su cuenta, inicie sesión en Uso compartido de paquetes. Se muestra la página de aterrizaje, que enumera la carpeta Adobe, la carpeta compartida y una carpeta específica de su empresa.
+1. Con los detalles de su cuenta, inicie sesión en Uso compartido de paquetes. Se muestra la página de aterrizaje, que enumera la carpeta Adobe, la carpeta compartida y una carpeta específica de su compañía.
 
    >[!NOTE]
    >
@@ -814,7 +822,7 @@ Para descargar paquetes desde Package Share e instalarlos en su instancia local,
 
 1. Vaya al paquete que desee descargar y haga clic en **Descargar**.
 
-1. Vuelva atrás o vaya al Administrador de **paquetes** de su instancia de AEM. Luego navegue al paquete que acaba de descargar.
+1. Vuelva atrás o vaya al Administrador de **paquetes** de la instancia de AEM. Luego navegue al paquete que acaba de descargar.
 
    >[!NOTE]
    >
@@ -824,7 +832,7 @@ Para descargar paquetes desde Package Share e instalarlos en su instancia local,
    A continuación, en el Administrador de paquetes de la instancia local, el paquete también aparecerá en:
    **Paquetes** > **Público** > **Revisiones**
 
-1. Haga clic en **Instalar** para instalar el paquete en la instalación local de AEM.
+1. Haga clic en **Instalar** para instalar el paquete en la instalación AEM local.
 
    >[!NOTE]
    Si el paquete ya se ha instalado en su instancia, aparecerá el indicador **Instalado** junto al paquete en lugar del botón **Instalar** .
@@ -842,15 +850,15 @@ Para descargar paquetes desde Package Share e instalarlos en su instancia local,
 
 ### Carga de un paquete {#uploading-a-package}
 
-Con Package Share, puede cargar paquetes en el área interna de la empresa de Package Share. Esto hace que estén disponibles para compartirlas dentro de su empresa.
+Con Package Share, puede cargar paquetes en el área interna de compañía de Package Share. Esto hace que estén disponibles para compartirlas dentro de la compañía.
 
-Estos paquetes *no están* disponibles para la comunidad general de AEM, pero están disponibles para todos los usuarios registrados en su empresa.
+Estos paquetes *no están* disponibles para la comunidad AEM general, pero están disponibles para todos los usuarios registrados en su compañía.
 
-Para cargar paquetes, utilice el Compartir paquetes interno de la empresa:
+Para cargar paquetes, utilice la compañía interna Uso compartido de paquetes:
 
 >[!CAUTION]
-Para cargar un paquete en Package Share, primero debe crear una carpeta de grupo con el nombre de su empresa en el administrador de paquetes local. Por ejemplo, geometrixx. Todos los paquetes que se van a cargar para compartir deben colocarse en esta carpeta de grupo.
-Los paquetes de la lista de inicio del Administrador de paquetes o de otras carpetas no se pueden compartir.
+Para cargar un paquete en Package Share, primero debe crear una carpeta de grupo con el nombre de su compañía en el administrador de paquetes local. Por ejemplo, geometrixx. Todos los paquetes que se van a cargar para compartir deben colocarse en esta carpeta de grupo.
+Los paquetes de la lista principal del Administrador de paquetes o de otras carpetas no se pueden compartir.
 
 1. Abra el Administrador **de** paquetes y vaya al paquete que desee cargar.
 
@@ -858,15 +866,15 @@ Los paquetes de la lista de inicio del Administrador de paquetes o de otras carp
 1. Haga clic en **Compartir** para abrir el cuadro de diálogo y cargar el paquete en Uso compartido de paquetes.
 1. Si aún no ha iniciado sesión en Package Share, deberá introducir sus credenciales de inicio de sesión.
 
-   Cuando haya iniciado sesión, AEM mostrará los detalles sobre el paquete que se va a cargar:
+   Cuando haya iniciado sesión, AEM mostrará detalles sobre el paquete que se va a cargar:
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-348](assets/chlimage_1-347.png)
 
-1. Haga clic en **Compartir** para cargar el paquete en el Uso compartido de paquetes interno de su empresa.
+1. Haga clic en **Compartir** para cargar el paquete en el uso compartido de paquetes interno de su compañía.
 
-   AEM muestra el estado e indica cuándo ha terminado de cargarse el paquete, tras lo cual puede hacer clic en la **x** (esquina superior derecha) para salir de la ventana **Compartir paquete** .
+   AEM muestra el estado e indica cuándo terminó de cargarse el paquete, después de lo cual puede hacer clic en la **x** (esquina superior derecha) para salir de la ventana **Compartir paquete** .
 
-1. Una vez completada la carga, puede desplazarse a la carpeta interna de su empresa para ver el paquete que acaba de compartir.
+1. Una vez completada la carga, puede desplazarse a la carpeta interna de la compañía para ver el paquete que acaba de compartir.
 
 >[!NOTE]
 Para modificar un paquete disponible en Uso compartido de paquetes, debe descargarlo, volver a compilarlo y cargarlo de nuevo en Uso compartido de paquetes.
@@ -875,7 +883,7 @@ Para modificar un paquete disponible en Uso compartido de paquetes, debe descarg
 
 Sólo puede eliminar los paquetes que haya cargado mediante el procedimiento siguiente:
 
-1. En el árbol de la empresa, compruebe el grupo de paquetes que contiene el paquete.
+1. En el árbol de compañías, compruebe el grupo de paquetes que contiene el paquete.
 1. Haga clic en el paquete.
 1. Haga clic en el botón Eliminar.
 
@@ -885,5 +893,5 @@ Sólo puede eliminar los paquetes que haya cargado mediante el procedimiento sig
 
 ### Paquetes semiprivados {#making-packages-semi-private}
 
-Puede compartir paquetes fuera de su organización, pero no públicamente. Estos paquetes se considerarían semiprivados. Para compartir estos paquetes semiprivados, necesitará ayuda de la asistencia técnica de Adobe. Para ello, abra un ticket con el servicio de asistencia técnica de Adobe en el que se solicite que un paquete esté disponible fuera de su organización. Le pedirán una lista de los Adobe ID a los que desea otorgar acceso a sus paquetes.
+Puede compartir paquetes fuera de su organización, pero no públicamente. Estos paquetes se considerarían semiprivados. Para compartir estos paquetes semiprivados, necesitará ayuda de la asistencia técnica de Adobe. Para ello, abra un ticket con la asistencia técnica de Adobe para solicitar que un paquete esté disponible fuera de su organización. Le pedirán una lista de Adobe ID que desea otorgar acceso a sus paquetes.
 

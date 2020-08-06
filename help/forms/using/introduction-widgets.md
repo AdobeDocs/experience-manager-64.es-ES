@@ -1,8 +1,8 @@
 ---
 title: Marco de apariencia para formularios adaptables y HTML5
 seo-title: Marco de apariencia para formularios adaptables y HTML5
-description: 'Los formularios móviles representan las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos. '
-seo-description: 'Los formularios móviles representan las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos. '
+description: 'Forms móvil procesa las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos. '
+seo-description: 'Forms móvil procesa las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para la apariencia y para activar las secuencias de comandos. '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 3%
 
 ---
 
 
 # Marco de apariencia para formularios adaptables y HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Los formularios (formularios adaptables y formularios HTML5) utilizan las bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) y [Underscore.js](https://underscorejs.org/) para apariencia y secuencias de comandos. Los formularios también utilizan la arquitectura [jQuery UI](https://jqueryui.com/) **Widgets** para todos los elementos interactivos (como campos y botones) del formulario. Esta arquitectura permite al desarrollador de formularios utilizar un conjunto enriquecido de utilidades y complementos jQuery disponibles en Forms. También puede implementar lógica específica del formulario al capturar datos de usuarios como las restricciones de leadDigits/trackDigits o la implementación de cláusulas de imagen. Los desarrolladores de formularios pueden crear y utilizar apariencias personalizadas para mejorar la experiencia de captura de datos y hacerla más sencilla.
+Forms (formularios adaptables y formularios HTML5) utiliza las bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) y [Underscore.js](https://underscorejs.org/) para la apariencia y las secuencias de comandos. Los formularios también utilizan la arquitectura [jQuery UI](https://jqueryui.com/) **Widgets** para todos los elementos interactivos (como campos y botones) del formulario. Esta arquitectura permite al desarrollador de formularios utilizar un completo conjunto de utilidades y complementos jQuery disponibles en Forms. También puede implementar lógica específica del formulario al capturar datos de usuarios como las restricciones de leadDigits/trackDigits o la implementación de cláusulas de imagen. Los desarrolladores de formularios pueden crear y utilizar apariencias personalizadas para mejorar la experiencia de captura de datos y hacerla más sencilla.
 
 Este artículo está dirigido a los desarrolladores con suficiente conocimiento de las utilidades jQuery y jQuery. Proporciona una visión detallada del marco de trabajo de apariencia y permite a los desarrolladores crear un aspecto alternativo para un campo de formulario.
 
@@ -50,7 +53,7 @@ Las siguientes son las opciones globales definidas. Estas opciones están dispon
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Los lectores de pantalla utilizan este valor para contar información sobre el campo. El formulario proporciona el valor y se puede omitir.<br /> </td> 
+   <td>Los Reader de pantalla utilizan este valor para contar información sobre el campo. El formulario proporciona el valor y se puede omitir.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -216,7 +219,7 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
    <td>Añade un elemento a la lista.</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice del elemento que se va a eliminar de la lista<br /> </em><br /><br /> </td> 
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice del elemento que se va a eliminar de la lista<br /> </em><br /> <br /> </td> 
    <td>Elimina una opción de la lista.</td> 
   </tr>
   <tr>

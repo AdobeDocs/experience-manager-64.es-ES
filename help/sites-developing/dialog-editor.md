@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 El editor de cuadro de diálogo proporciona una interfaz gráfica para crear y editar fácilmente cuadros de diálogo y andamios.
 
-Para ver cómo funciona, vaya a CRXDE Lite, abra el árbol del explorador `/libs/foundation/components/chart` y haga doble clic en el nodo `dialog`:
+Para ver cómo funciona, vaya al CRXDE Lite, abra el árbol del explorador `/libs/foundation/components/chart` y haga clic en el doble en el nodo `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -32,7 +35,7 @@ El nodo de cuadro de diálogo se abrirá en el editor **de** cuadro de diálogo:
 La interfaz del editor de cuadro de diálogo se compone de cuatro paneles:
 
 * La **paleta**, en la esquina superior izquierda. Este panel contiene los widgets disponibles para crear un cuadro de diálogo, como paneles de fichas, campos de texto, listas de selección y botones. Puede expandir las diferentes categorías dentro de la paleta haciendo clic en la barra divisoria deseada.
-* El panel **de estructura** , en la esquina inferior izquierda. Este panel muestra la estructura jerárquica de los nodos que conforma la definición del cuadro de diálogo. Puede ver la misma estructura expandiendo el nodo de cuadro de diálogo en CRXDE Lite o CRX Content Explorer.
+* El panel **de estructura** , en la esquina inferior izquierda. Este panel muestra la estructura jerárquica de los nodos que conforma la definición del cuadro de diálogo. Puede ver la misma estructura expandiendo el nodo de cuadro de diálogo en CRXDE Lite o en el Explorador de contenido de CRX.
 * Panel de **procesamiento** , en el centro de la ventana. Este panel muestra cómo la definición de cuadro de diálogo definida en el panel de estructura se procesará como un cuadro de diálogo real.
 * Panel **de propiedades** . Este panel muestra las propiedades del nodo que está resaltado en el panel de estructura.
 
@@ -48,9 +51,9 @@ Una vez completada la estructura deseada, el usuario hace clic en **Guardar**, e
 
 ### Creating a New Dialog {#creating-a-new-dialog}
 
-**** Para crear un nuevo cuadro de diálogo debe seleccionar el componente requerido, haga clic en **Crear... y luego** Crear cuadro de diálogo... .
+Para crear un nuevo cuadro de diálogo debe seleccionar el componente requerido, haga clic en **Crear...** y luego **Crear cuadro de diálogo...**.
 
-Introduzca los detalles requeridos y haga clic en **Guardar todo** . Ahora puede hacer doble clic en el cuadro de diálogo para abrirlo con el editor.
+Introduzca los detalles requeridos y haga clic en **Guardar todo** . Ahora puede hacer clic con el doble en el cuadro de diálogo para abrirlo con el editor.
 
 ### Uso del Editor de cuadros de diálogo para scaffolds {#using-the-dialog-editor-for-scaffolds}
 

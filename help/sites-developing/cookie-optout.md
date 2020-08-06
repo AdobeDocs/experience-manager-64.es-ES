@@ -1,8 +1,8 @@
 ---
 title: Configuración del uso de cookies
 seo-title: Configuración del uso de cookies
-description: AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies en las páginas web
-seo-description: AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies en las páginas web
+description: AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies con las páginas Web
+seo-description: AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies con las páginas Web
 uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Configuración del uso de cookies{#configuring-cookie-usage}
 
-AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies en las páginas web:
+AEM proporciona un servicio que le permite configurar y controlar cómo se utilizan las cookies con las páginas web:
 
-* A configurable server-side service maintains a list of cookies that can be used.
+* Un servicio configurable del lado del servidor mantiene una lista de cookies que se pueden utilizar.
 * Una API de javascript permite que el código de javascript compruebe que se puede utilizar una cookie.
 
 Utilice esta función para asegurarse de que las páginas cumplen con el consentimiento de los usuarios en cuanto al uso de cookies.
@@ -41,9 +41,9 @@ Para configurar el servicio, puede utilizar la consola [](/help/sites-deploying/
 
 ## Validación del uso de cookies {#validating-cookie-usage}
 
-Use client-side javascript to call Adobe Granite Opt-Out Service to verify that you can use a cookie. Use the Granite.OptOutUtil javascript object to perform any of the following tasks:
+Utilice javascript del lado del cliente para llamar al servicio de exclusión de Adobe Granite para verificar que puede utilizar una cookie. Utilice el objeto javascript Granite.OptOutUtil para realizar cualquiera de las siguientes tareas:
 
-* Obtain a list of cookie names that indicate that that user does not consent to using cookies for tracking purposes.
+* Obtenga una lista de nombres de cookies que indique que el usuario no acepta usar cookies para fines de seguimiento.
 * Obtenga una lista de cookies que se puedan utilizar.
 * Determine si el explorador Web contiene una cookie que indica que el usuario no acepta el uso de cookies para el seguimiento.
 * Determine si se puede utilizar una cookie específica.

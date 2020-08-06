@@ -24,7 +24,7 @@ Los siguientes Inicios rápidos están disponibles para el servicio de administr
 
 >[!NOTE]
 >
->A partir del 5 de agosto de 2011, Adobe está migrando clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan Content Services es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo basado en la arquitectura CRX moderna y modular, adquirido durante la adquisición por Adobe de Day Software.
+>A partir del 5 de agosto de 2011, Adobe está migrando clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan Content Services es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo basado en la arquitectura CRX moderna y modular, adquirido durante la adquisición de Adobe de Day Software.
 
 [Inicio rápido (modo SOAP): Creación de espacios de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 

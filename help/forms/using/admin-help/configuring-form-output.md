@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -22,21 +25,21 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 1. En la consola de administración, haga clic en Servicios > formularios.
 1. En Salida de formulario, en la lista Tipo de salida, seleccione una de las siguientes opciones:
 
-   **** HTML completo: Para procesar el formulario con etiquetas HTML completas (una página HTML completa). Este valor es el predeterminado.
+   **HTML completo:** Para procesar el formulario con etiquetas HTML completas (una página HTML completa). Este valor es el predeterminado.
 
-   **** Cuerpo del formulario: Para procesar el formulario con `<BODY>` etiquetas (no una página HTML completa).
+   **Cuerpo del formulario:** Para procesar el formulario con `<BODY>` etiquetas (no una página HTML completa).
 
 1. Haga clic en Guardar.
 
 ## Especifique la ubicación en la que se representa el contenido del PDF {#specify-the-location-where-pdf-content-is-rendered}
 
-1. En Salida de formulario, en la lista Representar en, seleccione una de las siguientes opciones:
+1. En Salida de formulario, en Procesar en la lista, seleccione una de las siguientes opciones:
 
-   **** Cliente: Para procesar formularios PDF en Adobe Acrobat o Adobe Reader. El procesamiento en el lado del cliente mejora el rendimiento de los formularios AEM y se aplica solo a la transformación PDFForm.
+   **Cliente:** Para procesar PDF forms en Adobe Acrobat o Adobe Reader. El procesamiento en el lado del cliente mejora el rendimiento de AEM formularios y se aplica solo a la transformación PDFForm.
 
-   **** Servidor: Para procesar formularios PDF en el servidor de aplicaciones.
+   **Servidor:** Para procesar PDF forms en el servidor de aplicaciones.
 
-   **** Automático: Representar el formulario PDF en la ubicación especificada por el valor de configuración del archivo XDP `dynamicRender` . Este valor es el predeterminado.
+   **Automático:** Representar el formulario PDF en la ubicación especificada por el valor de configuración del archivo XDP `dynamicRender` . Este valor es el predeterminado.
 
 1. Haga clic en Guardar.
 

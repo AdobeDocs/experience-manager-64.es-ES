@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
@@ -50,6 +53,7 @@ Estas consolas son muy similares a la consola Sitios de comunidades.
    * Nombre del grupo de la comunidad: artes
    * Plantilla: desplegable para seleccionar `Reference Group`
    * Seleccione `Next`
+
       ![parenttonestedgroup](assets/parenttonestedgroup.png)
 
 Continúe por los demás paneles con esta configuración:
@@ -101,7 +105,8 @@ El `arts` grupo también debe contener una `groups` carpeta, pero una que esté 
    * Título: `Art History`
    * Nombre: `history`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Restricted Membership`Un grupo secreto, visible sólo para los miembros invitados como ejemplo, invitar a un usuario [de](tutorials.md#demo-users) demostración `emily.andrews@mailinator.com`
+   * Membresía: seleccionar `Restricted Membership`Un grupo secreto, visible sólo para los miembros invitados como ejemplo, invitar 
+[usuario de demostración](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Actualice la página para ver los tres grupos anidados (subcomunidades).
 

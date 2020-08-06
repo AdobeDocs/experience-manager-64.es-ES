@@ -1,8 +1,8 @@
 ---
 title: Informes predefinidos en Sistema de informes de procesos
 seo-title: Informes predefinidos en Sistema de informes de procesos
-description: Consulta de los datos de proceso de AEM Forms en JEE para crear informes sobre procesos de larga ejecución, duración del proceso y volumen del flujo de trabajo
-seo-description: Consulta de los datos de proceso de AEM Forms en JEE para crear informes sobre procesos de larga ejecución, duración del proceso y volumen del flujo de trabajo
+description: Consulta para AEM Forms sobre los datos de proceso JEE para crear informes sobre procesos de larga ejecución, duración del proceso y volumen del flujo de trabajo
+seo-description: Consulta para AEM Forms sobre los datos de proceso JEE para crear informes sobre procesos de larga ejecución, duración del proceso y volumen del flujo de trabajo
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Informes predefinidos en Sistema de informes de procesos {#pre-defined-reports-in-process-reporting}
 
-El Sistema de informes de procesos de AEM Forms se suministra con los siguientes informes *listos para usar* :
+AEM Forms Process Sistema de informes se entrega con los siguientes informes *predeterminados* :
 
 * **[Procesos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**de larga duración: Un informe de todos los procesos de AEM Forms que tardaron más de un tiempo en completarse
 
@@ -44,7 +44,7 @@ El informe Procesos de larga ejecución muestra los procesos de AEM Forms que ha
 
    Parámetros:
 
-   * **Duración**(*obligatoria*): Especifique una duración y una unidad de tiempo. Muestre todos los procesos de AEM Forms que se hayan ejecutado durante más tiempo del especificado.
+   * **Duración**(*obligatoria*): Especifique una duración y una unidad de tiempo. Muestre todos los procesos de AEM Forms que se han ejecutado durante más tiempo del especificado.
    * **Iniciado después** (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron después de la fecha especificada.
    * **Iniciado antes** (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron antes de la fecha especificada.
 
@@ -62,7 +62,7 @@ El informe Procesos de larga ejecución muestra los procesos de AEM Forms que ha
 
 ## Informe de duración del proceso {#process-duration-report-br}
 
-El informe Duración del proceso muestra el número de instancias de un proceso de Forms según el número de días que se ha ejecutado cada instancia.
+El informe Duración del proceso muestra el número de instancias de un proceso de Forms por número de días que se ha ejecutado cada instancia.
 
 ### Para ejecutar un informe de duración del proceso {#to-execute-a-process-duration-report-br}
 
@@ -93,7 +93,7 @@ El informe Duración del proceso muestra el número de instancias de un proceso 
 
 ## Informe de volumen de flujo de trabajo {#workflow-volume-report}
 
-El informe Volumen del flujo de trabajo muestra el número de instancias que se están ejecutando y completadas de un proceso de AEM Forms por día calendario.
+El informe Volumen del flujo de trabajo muestra el número de instancias de un proceso de AEM Forms que se están ejecutando y completadas por día natural.
 
 ### Para ejecutar un informe de volumen de flujo de trabajo {#to-execute-a-workflow-volume-report-br}
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +38,7 @@ Estas instrucciones describen cómo conectarse al servidor MySQL y establecer la
 
 ## Instalación de MySQL {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) debe descargarse e instalarse siguiendo las instrucciones para el sistema operativo de destino.
+[MySQL](https://dev.mysql.com/downloads/mysql/) debe descargarse e instalarse siguiendo las instrucciones para el sistema operativo destinatario.
 
 ### Nombres de tablas en minúsculas {#lower-case-table-names}
 
@@ -69,9 +72,9 @@ Cambie la base de datos MySQL a UTF8 de forma predeterminada:
 
 ## Instalación de MySQL Workbench {#installing-mysql-workbench}
 
-MySQL Workbench proporciona una interfaz de usuario para ejecutar secuencias de comandos SQL que instalan el esquema y los datos iniciales.
+MySQL Workbench proporciona una interfaz de usuario para ejecutar scripts SQL que instalan el esquema y los datos iniciales.
 
-MySQL Workbench debe descargarse e instalarse siguiendo las instrucciones del sistema operativo de destino.
+MySQL Workbench debe descargarse e instalarse siguiendo las instrucciones del sistema operativo destinatario.
 
 ## Conexión de comunidades {#communities-connection}
 
@@ -84,7 +87,7 @@ Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utiliz
 1. Seleccione el `+` icono a la derecha de `MySQL Connections`.
 1. En el cuadro de diálogo `Setup New Connection`, introduzca los valores adecuados para la plataforma
 
-   Para fines de demostración, con la instancia de AEM de autor y MySQL en el mismo servidor:
+   Para fines de demostración, con el autor AEM instancia y MySQL en el mismo servidor:
 
    * Nombre de la conexión: `Communities`
    * Método de conexión: `Standard (TCP/IP)`
@@ -114,11 +117,11 @@ Abra la conexión Comunidades para instalar la base de datos.
 
 La secuencia de comandos SQL se obtiene del repositorio de AEM:
 
-1. Navegar a CRXDE Lite
+1. Ir al CRXDE Lite
 
    * Por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Seleccione la carpeta /libs/social/config/datastore/dsrp/schema
+1. Seleccione la carpeta /libs/social/config/datastore/dsrp/esquema
 1. Descargar `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
@@ -155,7 +158,7 @@ En la siguiente imagen, el `init_schema.sql` archivo está listo para ejecutarse
 
 #### Actualizar {#refresh}
 
-Una vez ejecutada la secuencia de comandos, es necesario actualizar la `SCHEMAS`sección de la `Navigator` para poder ver la nueva base de datos. Utilice el icono de actualización a la derecha de &#39;SCHEMAS&#39;:
+Una vez ejecutada la secuencia de comandos, es necesario actualizar la `SCHEMAS`sección de la `Navigator` para poder ver la nueva base de datos. Utilice el icono de actualización a la derecha de &#39;ESQUEMAS:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -163,11 +166,11 @@ Una vez ejecutada la secuencia de comandos, es necesario actualizar la `SCHEMAS`
 
 La configuración OSGi para el grupo **de conexiones JDBC** Day Commons configura el controlador JDBC MySQL.
 
-Todas las instancias de AEM de publicación y creación deben apuntar al mismo servidor MySQL.
+Todas las instancias de publicación y creación AEM deben apuntar al mismo servidor MySQL.
 
 Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del servidor debe especificarse en lugar de &#39;localhost&#39; en el conector JDBC.
 
-* En cada instancia de AEM de creación y publicación
+* En cada instancia de creación y publicación AEM
 * Inicio de sesión con privilegios de administrador
 * Acceso a la consola [web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -183,9 +186,9 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
    * **[!UICONTROL Clase]** de controlador JDBC: `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI]** de conexión JDBC: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Especifique el servidor en lugar de localhost si MySQL Server no es igual que &#39;this&#39; AEM Server
+      Especifique el servidor en lugar de localhost si MySQL Server no es igual que &#39;this&#39; AEM servidor
 
-      *comunidades* es el nombre predeterminado de base de datos (esquema)
+      *comunidades* es el nombre predeterminado de la base de datos (esquema)
 
    * **[!UICONTROL Nombre de usuario]**: `root`
 

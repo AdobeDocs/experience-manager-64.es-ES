@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Puede crear credenciales de Capa de sockets seguros (SSL) y configurar SSL en el
 
 Como producto de seguridad, Rights Management requiere la configuración de SSL. Al configurar los certificados SSL, asegúrese de utilizar sólo claves RSA. Los certificados SSL con claves DSA no son compatibles.
 
-La información proporcionada se aplica a las instalaciones llave en mano, automáticas y manuales. Ofrece un ejemplo de un método para configurar SSL. También puede utilizar otros métodos que sean más adecuados para su red u organización.
+La información proporcionada se aplica a las instalaciones llave en mano, automáticas y manuales. oferta un ejemplo de un método para configurar SSL. También puede utilizar otros métodos que sean más adecuados para su red u organización.
 
 >[!NOTE]
 >

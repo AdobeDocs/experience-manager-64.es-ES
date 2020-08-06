@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +45,7 @@ No olvide limitar la inclusión de la `cq.authoring.pagemodel.messaging` categor
 
 ## Tipo de datos de comunicación {#communication-data-type}
 
-El tipo de datos de comunicación se define como un elemento HTML dentro del componente Página de AEM mediante el `data-cq-datatype` atributo . Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes GET llegan a los puntos finales del modelo Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de páginas. A continuación, la biblioteca del modelo de página advierte al SPA de las actualizaciones.
+El tipo de datos de comunicación se define como un elemento HTML dentro del componente Página de AEM mediante el `data-cq-datatype` atributo . Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET llegan a los extremos del modelo de Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de páginas. A continuación, la biblioteca del modelo de página advierte al SPA de las actualizaciones.
 
 **Componente de página SPA -`body.html`**
 
@@ -92,7 +95,7 @@ Las propiedades del recurso meta que describen el contenido de SPA:
 >
 >Este documento utiliza la aplicación de Historial We.Retail únicamente para fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
 >
->Cualquier proyecto de AEM debería aprovechar el arquetipo [del proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA. Todos los proyectos de SPA en AEM deberían basarse en el arquetipo de Maven para el kit de inicio de SPA.
+>Cualquier proyecto AEM debe aprovechar el arquetipo [del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM, que admite proyectos de SPA con React o Angular y aprovecha el SDK de SPA. Todos los proyectos de SPA en AEM deben basarse en el arquetipo de Maven para SPA Starter Kit.
 
 ## Sincronización de superposiciones del editor de páginas {#page-editor-overlay-synchronization}
 
@@ -100,7 +103,7 @@ La sincronización de las superposiciones está garantizada por el mismo Observa
 
 ## Configuración de la estructura exportada de JSON del modelo Sling {#sling-model-json-exported-structure-configuration}
 
-Cuando las funciones de enrutamiento están habilitadas, se supone que la exportación JSON del SPA contiene las distintas rutas de la aplicación gracias a la exportación JSON del componente de navegación de AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de la página raíz del SPA mediante las dos propiedades siguientes:
+Cuando las funciones de enrutamiento están habilitadas, se supone que la exportación JSON del SPA contiene las distintas rutas de la aplicación gracias a la exportación JSON del componente de navegación AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de página raíz del SPA mediante las dos propiedades siguientes:
 
 * `structureDepth`:: Número correspondiente a la profundidad del árbol exportado
 * `structurePatterns`:: Resto de la matriz de anexos correspondientes a la página que se va a exportar

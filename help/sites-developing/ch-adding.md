@@ -1,8 +1,8 @@
 ---
-title: Adición de ContextHub a páginas y acceso a tiendas
-seo-title: Adición de ContextHub a páginas y acceso a tiendas
-description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
-seo-description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
+title: Añadir ContextHub en páginas y acceder a tiendas
+seo-title: Añadir ContextHub en páginas y acceder a tiendas
+description: Añada ContextHub en sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
+seo-description: Añada ContextHub en sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
 uuid: ade37960-21c4-4d64-a525-68f0d199f955
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
 
-# Adición de ContextHub a páginas y acceso a tiendas {#adding-contexthub-to-pages-and-accessing-stores}
+# Añadir ContextHub en páginas y acceder a tiendas {#adding-contexthub-to-pages-and-accessing-stores}
 
-Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
+Añada ContextHub en sus páginas para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub
 
 La API de JavaScript de ContextHub proporciona acceso a los datos de contexto que administra ContextHub. En esta página se describen brevemente las principales funciones de la API para acceder a los datos de contexto y manipularlos. Siga los vínculos a la documentación de referencia de la API para ver información detallada y ejemplos de código.
 
-## Adición de ContextHub a un componente de página {#adding-contexthub-to-a-page-component}
+## Añadir ContextHub en un componente de página {#adding-contexthub-to-a-page-component}
 
 Para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javascript de ContextHub, incluya el componente contexthub en la `head` sección de la página. El código JSP del componente de página es similar al siguiente ejemplo:
 
@@ -31,7 +34,7 @@ Para habilitar las funciones de ContextHub y vincular a las bibliotecas de Javas
 </head>
 ```
 
-Tenga en cuenta que también debe configurar si la barra de herramientas de ContextHub aparece en el modo de vista previa. Consulte [Mostrar y ocultar la interfaz de usuario](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)de ContextHub.
+Tenga en cuenta que también debe configurar si la barra de herramientas de ContextHub aparece en modo de Previsualización. Consulte [Mostrar y ocultar la interfaz de usuario](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)de ContextHub.
 
 ## Acerca de las tiendas de ContextHub {#about-contexthub-stores}
 
@@ -48,11 +51,11 @@ Todos los tipos de tienda son extensiones de la [`ContextHub.Store.Core`](/help/
 
 Las tiendas de Context Hub utilizan uno de los siguientes modos de persistencia:
 
-* **** Local: Utiliza el almacenamiento local de HTML5 para conservar los datos. El almacenamiento local se mantiene en el explorador a lo largo de varias sesiones.
-* **** Sesión: Utiliza sessionStorage de HTML5 para conservar los datos. El almacenamiento de sesión se mantiene durante toda la sesión del explorador y está disponible para todas las ventanas del explorador.
-* **** Cookie: Utiliza la compatibilidad nativa del explorador con cookies para el almacenamiento de datos. Los datos de cookies se envían desde y hacia el servidor en solicitudes HTTP.
-* **** Window.name: Utiliza la propiedad window.name para conservar los datos.
-* **** Memoria: Utiliza un objeto Javascript para conservar datos.
+* **Local:** Utiliza el almacenamiento local de HTML5 para conservar los datos. El almacenamiento local se mantiene en el navegador en todas las sesiones.
+* **Sesión:** Utiliza sessionStorage de HTML5 para conservar los datos. El almacenamiento de sesión se mantiene durante toda la sesión del explorador y está disponible para todas las ventanas del explorador.
+* **Cookie:** Utiliza la compatibilidad nativa del explorador con las cookies para el almacenamiento de datos. Los datos de cookies se envían desde y hacia el servidor en solicitudes HTTP.
+* **Window.name:** Utiliza la propiedad window.name para conservar los datos.
+* **Memoria:** Utiliza un objeto Javascript para conservar datos.
 
 De forma predeterminada, Context Hub utiliza el modo de persistencia local. Si el explorador no admite o no permite el almacenamiento local de HTML5, se utiliza la persistencia de sesión. Si el navegador no admite o no permite HTML5 sessionStorage, se utiliza la persistencia Window.name.
 
@@ -111,21 +114,21 @@ Los elementos de datos individuales se almacenan como un conjunto de pares clave
 * [getItem](/help/sites-developing/contexthub-api.md#getitem-key)
 * [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)
 
-Tenga en cuenta que los candidatos a tiendas personalizadas pueden definir funciones adicionales que proporcionan acceso para almacenar datos.
+Tenga en cuenta que los candidatos del almacén personalizado pueden definir funciones adicionales que proporcionan acceso para almacenar datos.
 
 >[!NOTE]
 >
 >De forma predeterminada, ContextHub no tiene en cuenta el inicio de sesión que se está usando en los servidores de publicación y ContextHub considera a estos usuarios como &quot;anónimos&quot;.
 >
->Puede hacer que ContextHub conozca a los usuarios que iniciaron sesión cargando el almacén de perfiles tal como se implementó en el sitio [de referencia](/help/sites-developing/we-retail.md)We.Retail. Consulte el código [relevante en GitHub aquí](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Puede hacer que ContextHub conozca a los usuarios que iniciaron sesión cargando la tienda de perfiles tal como se implementó en el sitio [de referencia](/help/sites-developing/we-retail.md)We.Retail. Consulte el código [relevante en GitHub aquí](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Evento de ContextHub {#contexthub-eventing}
 
-ContextHub incluye un marco de eventos que le permite reaccionar automáticamente a eventos de almacenamiento. Cada objeto store contiene un [`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) objeto que está disponible como [`eventing`](/help/sites-developing/contexthub-api.md#eventing) propiedad del almacén. Utilice la [`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) función o [`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) para enlazar una función de Javascript a un evento de tienda.
+ContextHub incluye una estructura de evento que le permite reaccionar automáticamente a los eventos de la tienda. Cada objeto store contiene un [`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) objeto que está disponible como [`eventing`](/help/sites-developing/contexthub-api.md#eventing) propiedad del almacén. Utilice la función [`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) o [`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) para enlazar una función de Javascript a un evento de almacenamiento.
 
 ## Uso de Context Hub para manipular cookies {#using-context-hub-to-manipulate-cookies}
 
-La API de JavaScript de Context Hub proporciona compatibilidad con distintos exploradores para la gestión de cookies de navegador. El espacio de nombres [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie) define varias funciones para crear, manipular y eliminar cookies.
+La API de JavaScript de Context Hub proporciona compatibilidad con distintos exploradores para la gestión de cookies de navegador. La [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie) Área de nombres define varias funciones para crear, manipular y eliminar cookies.
 
 ## Determinación de segmentos de ContextHub resueltos {#determining-resolved-contexthub-segments}
 
@@ -162,7 +165,7 @@ Los segmentos de ContextHub se instalan debajo del `/conf/we-retail/settings/wcm
 
 Las reglas que se utilizan para resolver estos segmentos se resumen de la siguiente manera:
 
-* El elemento de datos del almacén de `gender` perfiles [](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) determina la mujer o el hombre.
+* Las mujeres o los hombres se determinan a partir del elemento de `gender` datos del almacén de [perfiles](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) .
 
 * La edad se determina a partir del elemento de datos de edad del almacén de perfiles.
 * La estación se determina a partir del elemento de datos de latitud del [almacén de geolocalización](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) y del elemento de datos del mes del almacén de surferinfo.
@@ -173,7 +176,7 @@ Las reglas que se utilizan para resolver estos segmentos se resumen de la siguie
 
 ## Registro de mensajes de depuración para ContextHub {#logging-debug-messages-for-contexthub}
 
-Configure el servicio OSGi de Adobe Granite ContextHub (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) para registrar los mensajes de depuración detallados que son útiles para el desarrollo.
+Configure el servicio OSGi de ContextHub de Adobe Granite (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) para registrar mensajes de depuración detallados que sean útiles para el desarrollo.
 
 Para configurar el servicio, puede utilizar la consola [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) web o un nodo [JCR en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 

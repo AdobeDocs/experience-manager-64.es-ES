@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 85%
 
 ---
 
@@ -34,7 +37,7 @@ Consulte los siguientes temas adicionales:
 
 * [Administración de proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Uso de tareas](/help/sites-authoring/task-content.md)
-* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md).
+* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md)
 * [Integración de proyectos y PIM creativos](/help/sites-authoring/managing-product-information.md) 
 
 ## Consola Proyectos {#projects-console}
@@ -100,7 +103,7 @@ Seleccione la ruta para las miniaturas y, si fuera necesario, cambie la miniatur
 
 El mosaico Vínculos permite asociar vínculos externos al proyecto.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la miniatura.
 
@@ -130,7 +133,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 En este mosaico puede especificar los miembros del equipo del proyecto. Durante la edición puede introducir el nombre del miembro del equipo y asignar la función de usuario.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Puede añadir y eliminar miembros en el equipo. Además, puede editar la [función de usuario](#user-roles-in-a-project) asignada al miembro.
 
@@ -179,7 +182,7 @@ En Tareas puede supervisar el estado de cualquier tarea relacionada con el proye
 En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 * Un proyecto simple: muestra de referencia para cualquier proyecto que no encaje en otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
-* Proyecto de medios: proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
+* Un proyecto de medios: un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
 * [Proyecto](/help/sites-authoring/managing-product-information.md) de sesión fotográfica del producto: muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
 * [Proyecto de traducción](/help/sites-administering/translation.md): una muestra de referencia para la administración de las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
@@ -199,7 +202,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
   <tr> 
    <td><p><strong>Función</strong></p> </td> 
    <td><p><strong>Descripción</strong></p> </td> 
-   <td><p><strong>Permisos </strong></p> </td> 
+   <td><p><strong>Permisos   </strong></p> </td> 
    <td><p><strong>Pertenencia a grupos</strong></p> </td> 
   </tr> 
   <tr> 

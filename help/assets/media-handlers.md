@@ -13,19 +13,19 @@ ht-degree: 5%
 
 # Procesar recursos Uso de controladores y flujos de trabajo de medios {#processing-assets-using-media-handlers-and-workflows}
 
-Recursos Adobe Experience Manager proporciona un conjunto de flujos de trabajo y controladores de medios predeterminados para procesar recursos. Un flujo de trabajo define una tarea de procesamiento y administración de recursos típica y, a continuación, delega las tareas específicas a los controladores de medios, como la generación de miniaturas o la extracción de metadatos.
+Adobe Experience Manager Assets proporciona un conjunto de flujos de trabajo predeterminados y controladores de medios para procesar los recursos. Un flujo de trabajo define una tarea de procesamiento y administración de recursos típica y, a continuación, delega las tareas específicas a los controladores de medios, como la generación de miniaturas o la extracción de metadatos.
 
 Se puede definir un flujo de trabajo que se ejecute automáticamente cuando se cargue en el servidor un recurso de un tipo o formato concreto. Los pasos de procesamiento se definen como una serie de controladores de medios de AEM Assets. AEM proporciona algunos controladores [integrados,](#default-media-handlers) y otros adicionales se pueden [personalizar, desarrollar](#creating-a-new-media-handler) o definir delegando el proceso en una herramienta [de línea de](#command-line-based-media-handler)comandos.
 
-Los controladores de medios son servicios dentro de Recursos AEM que realizan acciones específicas en los recursos. Por ejemplo, cuando se carga un archivo de audio MP3 en AEM, un flujo de trabajo activa un controlador MP3 que extrae los metadatos y genera una miniatura. Los controladores de medios generalmente se utilizan en combinación con flujos de trabajo. Los tipos MIME más comunes son compatibles con AEM. Se pueden realizar tareas específicas en los recursos ampliando/creando flujos de trabajo, ampliando/creando controladores de medios o deshabilitando/habilitando controladores de medios.
+Los controladores de medios son servicios dentro de AEM Assets que realizan acciones específicas en los recursos. Por ejemplo, cuando se carga un archivo de audio MP3 en AEM, un flujo de trabajo activa un controlador MP3 que extrae los metadatos y genera una miniatura. Los controladores de medios generalmente se utilizan en combinación con flujos de trabajo. La mayoría de los tipos MIME comunes son compatibles con AEM. Se pueden realizar tareas específicas en los recursos ampliando/creando flujos de trabajo, ampliando/creando controladores de medios o deshabilitando/habilitando controladores de medios.
 
 >[!NOTE]
 >
->Consulte la página Formatos [admitidos de](assets-formats.md) Recursos para obtener una descripción de todos los formatos admitidos por Recursos AEM, así como de las funciones admitidas para cada formato.
+>Consulte la página Formatos [admitidos de](assets-formats.md) Recursos para obtener una descripción de todos los formatos admitidos por AEM Assets, así como de las funciones admitidas para cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
-Los siguientes controladores de medios están disponibles en Recursos AEM y controlan los tipos MIME más comunes:
+Los siguientes controladores de medios están disponibles en AEM Assets y controlan los tipos MIME más comunes:
 
 | Nombre del controlador | Nombre del servicio (en la consola del sistema) | Tipos MIME admitidos |
 |---|---|---|
@@ -39,7 +39,7 @@ Los siguientes controladores de medios están disponibles en Recursos AEM y cont
 | [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
 | [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
+| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | aplicación/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | alternativa en caso de que no se encontrara ningún otro controlador para extraer datos de un recurso |
 
 Todos los controladores realizan las siguientes tareas:
@@ -59,7 +59,7 @@ Es posible realizar la vista de los controladores de medios activos:
 
 Los controladores de medios son servicios que generalmente se utilizan en combinación con flujos de trabajo.
 
-AEM tiene algunos flujos de trabajo predeterminados para procesar recursos. Para vistas, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]** : los títulos de flujo de trabajo que inicio con Recursos AEM son los específicos de los recursos.
+AEM tiene algunos flujos de trabajo predeterminados para procesar los recursos. Para vistas, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]** : los títulos de flujo de trabajo que entran en inicio con AEM Assets son los específicos de los recursos.
 
 Los flujos de trabajo existentes se pueden ampliar y se pueden crear nuevos para procesar los recursos según requisitos específicos.
 
@@ -141,7 +141,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo de texto e
       * Id Del Grupo: com.day.cq5.myhandler
       * ID del artefacto: myBundle
       * Nombre: Mi paquete AEM
-      * Descripción: Este es mi paquete de AEM
+      * Descripción: Este es mi paquete AEM
    1. Click **[!UICONTROL Finish]**.
 
 
@@ -435,9 +435,9 @@ Después de realizar el siguiente procedimiento, al cargar un archivo de texto e
 
 ## Controlador de medios basado en línea de comandos {#command-line-based-media-handler}
 
-AEM le permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y añadir la nueva representación al recurso. Solo necesita instalar la herramienta de línea de comandos en el disco que aloja el servidor AEM y agregar y configurar un paso de proceso al flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, también permite filtrar según tipos MIME específicos y crear varias miniaturas basadas en la nueva representación.
+AEM permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y agregar la nueva representación al recurso. Sólo necesita instalar la herramienta de línea de comandos en el disco que aloja el servidor de AEM y agregar y configurar un paso de proceso al flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, también permite filtrar según tipos MIME específicos y crear varias miniaturas basadas en la nueva representación.
 
-Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en Recursos AEM:
+Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en AEM Assets:
 
 * Transformación de EPS y AI mediante [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/)
 * Transcodificación de vídeo FLV mediante [FFmpeg](https://ffmpeg.org/)
@@ -446,21 +446,21 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en R
 
 >[!NOTE]
 >
->En sistemas que no son de Windows, la herramienta FFMpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una sola comilla (&#39;) en el nombre de archivo. Si el nombre del archivo de vídeo incluye una sola cita, elimínelo antes de cargarlo en AEM.
+>En sistemas que no son de Windows, la herramienta FFMpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una sola comilla (&#39;) en el nombre de archivo. Si el nombre del archivo de vídeo incluye una comilla simple, elimínelo antes de cargarlo a AEM.
 
 El `CommandLineProcess` proceso realiza las siguientes operaciones en el orden en que aparecen:
 
 * Filtros el archivo según tipos de MIME específicos, si se especifica.
 * Crea un directorio temporal en el disco que aloja el servidor AEM.
 * Transmite el archivo original al directorio temporal.
-* Ejecuta el comando definido por los argumentos del paso. El comando se está ejecutando en el directorio temporal con los permisos del usuario que ejecuta AEM.
-* Vuelve a transmitir el resultado a la carpeta de representación del servidor AEM.
+* Ejecuta el comando definido por los argumentos del paso. El comando se está ejecutando dentro del directorio temporal con los permisos del usuario que ejecuta AEM.
+* Vuelve a transmitir el resultado a la carpeta de representación del servidor de AEM.
 * Elimina el directorio temporal.
 * Crea miniaturas basadas en esas representaciones, si se especifican. El número y las dimensiones de las miniaturas se definen mediante los argumentos del paso.
 
 ### Ejemplo con ImageMagick {#an-example-using-imagemagick}
 
-En el siguiente ejemplo se muestra cómo configurar el paso del proceso de la línea de comandos para que cada vez que se añada un recurso con el tipo mime gif o tiff a /content/dam en el servidor AEM, se cree una imagen volteada del original junto con tres miniaturas adicionales (140 x 100, 48 x 48 y 10 x 250).
+En el siguiente ejemplo se muestra cómo configurar el paso del proceso de la línea de comandos para que cada vez que se añada un recurso con el tipo mime gif o tiff a /content/dam en el servidor de AEM, se cree una imagen volteada del original junto con tres miniaturas adicionales (140 x 100, 48 x 48 y 10 x 250).
 
 Para ello, utilice ImageMagick. Instale ImageMagick en el disco que aloja el servidor AEM:
 
@@ -504,7 +504,7 @@ En esta sección se describe cómo establecer los **[!UICONTROL argumentos de pr
 | tn:&lt;anchura>:&lt;altura> | Argumento opcional. El proceso crea una miniatura con las dimensiones definidas en el argumento. <br>Se pueden definir varias miniaturas. |
 | cmd: &lt;comando> | Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos. Sólo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`nombre del archivo de entrada, por ejemplo original.jpg <br> `${file}`:: nombre completo de ruta del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`:: directorio del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original <br>`${extension}`: extensión del archivo de entrada, por ejemplo jpg |
 
-Por ejemplo, si ImageMagick está instalado en el disco que aloja el servidor AEM y crea un paso de proceso mediante **CommandLineProcess** como Implementación y los siguientes valores como Argumentos **de** proceso:
+Por ejemplo, si ImageMagick está instalado en el disco que aloja el servidor de AEM y crea un paso de proceso mediante **CommandLineProcess** como Implementación y los siguientes valores como Argumentos **de** proceso:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 

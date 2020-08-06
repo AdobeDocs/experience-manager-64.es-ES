@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 translation-type: tm+mt
 source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 33%
 
 ---
 
 
 # Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
 
-El Editor de texto enriquecido (RTE) es un bloque de creación básico para la creación de texto en páginas de AEM. Muchos componentes como Texto, Texto e Imagen y Tabla se basan en RTE.
+El Editor de texto enriquecido (RTE) es un bloque de creación básico para la creación de texto en páginas AEM. Muchos componentes como Texto, Texto e Imagen y Tabla se basan en RTE.
 
 >[!NOTE]
 >
 >La copia de listas anidadas en el RTE no funciona según lo previsto. Al copiar listas anidadas de Microsoft Word, deberá borrar manualmente las listas después de pegar el texto en el RTE.
 
-## In-place editing {#in-place-editing}
+## Edición in-situ {#in-place-editing}
 
 Al seleccionar un componente basado en texto con un solo toque o clic, se muestra la barra de herramientas [del](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Al tocar o hacer clic de nuevo o seleccionar inicialmente el componente con un doble toque o clic lento, se abre la edición in-situ, que tiene su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
+Al tocar o hacer clic de nuevo o seleccionar inicialmente el componente con un toque o clic lento en el doble, se abre la edición in-situ, que tiene su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -55,7 +58,7 @@ Para los componentes basados en texto, si se selecciona el modo de pantalla comp
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-El modo de pantalla completa muestra todas las opciones del editor de texto enriquecido que el administrador ha configurado. Pueden variar según las instancias de AEM, [según la configuración](../sites-administering/rich-text-editor.md) proporcionada por los administradores o los desarrolladores de AEM. Si encuentra que falta una opción, pida al administrador que la ponga a disposición.
+El modo de pantalla completa muestra todas las opciones del editor de texto enriquecido que el administrador ha configurado. Pueden variar según AEM instancias [según la configuración](../sites-administering/rich-text-editor.md) proporcionada por los administradores o los desarrolladores AEM. Si encuentra que falta una opción, pida al administrador que la ponga a disposición.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

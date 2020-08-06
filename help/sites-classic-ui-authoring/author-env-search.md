@@ -1,8 +1,8 @@
 ---
-title: 'Búsqueda '
-seo-title: 'Búsqueda '
-description: El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
-seo-description: El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+title: 'Búsqueda  '
+seo-title: 'Búsqueda  '
+description: El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+seo-description: El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 uuid: b50c8144-1993-441d-8303-fcb6b0f24376
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 85%
 
 ---
 
 
 # Búsqueda{#search-features}
 
-El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
 >[!NOTE]
 >
@@ -42,11 +45,13 @@ El panel de búsqueda permite realizar búsquedas en todas las páginas del siti
 >
 >* [Comodines](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Expresiones regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Grupo de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
 >* [Ampliación de búsqueda](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
+
 >
 
 
@@ -75,6 +80,7 @@ En la consola **Sitios web** está la opción de menú **Buscar y reemplazar**, 
    * define el término con el que se debería reemplazar
    * indica si la búsqueda debería distinguir mayúsculas y minúsculas
    * indica si únicamente deberían buscarse palabras completas (de lo contrario, también se buscan subcadenas)
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)

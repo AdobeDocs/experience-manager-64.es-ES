@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -18,14 +21,14 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 ## Información general {#overview}
 
-Es posible que tenga diferentes tipos de usuarios con diversas habilidades que trabajen con formularios adaptables. Aunque los usuarios expertos pueden tener los conocimientos adecuados para trabajar con secuencias de comandos y reglas complejas, puede haber usuarios de nivel básico que solo necesiten trabajar con la presentación y las propiedades básicas de los formularios adaptables.
+Es posible que tenga diferentes tipos de usuarios con diversas habilidades que trabajen con Forms adaptable. Aunque los usuarios expertos pueden tener los conocimientos adecuados para trabajar con secuencias de comandos y reglas complejas, puede haber usuarios de nivel básico que solo necesiten trabajar con la presentación y las propiedades básicas de los formularios adaptables.
 
-AEM Forms permite limitar el acceso del editor de reglas a los usuarios en función de su función o función. En la configuración del servicio de configuración de formularios adaptables, puede especificar los grupos [de](/help/sites-administering/security.md) usuarios que pueden ver el editor de reglas y acceder a él.
+AEM Forms permite limitar el acceso del editor de reglas a los usuarios en función de su función o función. En la configuración del servicio de configuración adaptable de Forms, puede especificar los grupos [de](/help/sites-administering/security.md) usuarios que pueden vista y acceder al editor de reglas.
 
 ## Especificar grupos de usuarios que pueden acceder al editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
 1. Inicie sesión en AEM Forms como administrador.
-1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperimentencemanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Operaciones > Consola web. La consola web se abre en una ventana nueva.
+1. En la instancia de autor, haga clic en ![](assets/adobeexperiencemanager.png)adobeexperience emanagerAdobe Experience Manager > ![Martillo](assets/hammer.png) de herramientas > Operaciones > Consola web. La consola web se abre en una ventana nueva.
 
    ![1](assets/1.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Creación y gestión de políticas
 seo-title: Creación y gestión de políticas
-description: Una política es un conjunto de parámetros de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. Puede crear y administrar varios tipos de políticas mediante formularios AEM.
-seo-description: Una política es un conjunto de parámetros de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. Puede crear y administrar varios tipos de políticas mediante formularios AEM.
+description: Una política es un conjunto de parámetros de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. Puede crear y administrar varios tipos de directivas mediante AEM formularios.
+seo-description: Una política es un conjunto de parámetros de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. Puede crear y administrar varios tipos de directivas mediante AEM formularios.
 uuid: 72be06f3-3e90-495e-8425-72380d95704a
 contentOwner: admin
 content-type: reference
@@ -40,7 +40,7 @@ Al instalar la seguridad de documento por primera vez, contiene una directiva co
 
 **Directivas generadas automáticamente por Microsoft Outlook**
 
-Con Acrobat, puede aplicar políticas a documentos que envíe como archivos adjuntos de correo electrónico en Microsoft Outlook. En Outlook, puede proteger un documento mediante una directiva existente o mediante una directiva generada automáticamente que Acrobat genera con la configuración de confidencialidad predeterminada y se aplica al documento adjunto a un mensaje de correo electrónico. (Consulte * Ayuda de [Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Con Acrobat, puede aplicar políticas a documentos que envíe como datos adjuntos de correo electrónico en Microsoft Outlook. En Outlook, puede proteger un documento mediante una directiva existente o mediante una directiva generada automáticamente que Acrobat genera con la configuración de confidencialidad predeterminada y se aplica al documento adjunto a un mensaje de correo electrónico. (Consulte * Ayuda de [Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -102,10 +102,12 @@ Al editar las directivas, se aplican estas restricciones:
    * Comilla de doble (&quot;)
    * barra invertida (\)
    * barra diagonal (/)
+
    Si utiliza el siguiente carácter en el nombre o la descripción, se convertirán en espacios:
 
    * retorno de carro (carácter ASCII 13)
    * nueva línea (carácter ASCII 10).
+
    >[!NOTE]
    >
    >Puede crear un nombre de política que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si ya existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto los caracteres acentuados. Se da por hecho que la política ya se ha agregado a la base de datos y que la nueva no se ha agregado.
@@ -128,7 +130,7 @@ En el área Usuarios y grupos, especifique los usuarios que tienen acceso a docu
 
 >[!NOTE]
 >
->El editor de documento es el usuario que protege el documento con la política. Este usuario siempre se incluye de forma predeterminada en una directiva, con derechos de acceso completo, incluidas las capacidades de revocación y conmutación de políticas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor de documento para las directivas compartidas. Por ejemplo, el administrador puede restringir que el editor de documento revoque el acceso al documento o cambie la directiva.
+>El editor de documento es el usuario que protege el documento con la política. Este usuario siempre se incluye de forma predeterminada en una directiva, con derechos de acceso completo, incluidas las capacidades de revocación y conmutación de políticas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor de documento para las directivas compartidas. Por ejemplo, el administrador puede restringir el acceso al documento del editor de documento o cambiar la directiva.
 
 **Añadir usuario o grupo:** Para agregar un usuario o grupo de usuarios, haga clic en Añadir usuario o grupo y, a continuación, haga clic en Búsqueda avanzada para buscar usuarios o grupos. Entre los usuarios se incluyen los usuarios internos de la organización y los usuarios invitados que se han registrado con seguridad de documento. Cuando selecciona esta opción, aparece la página Añadir usuario o grupo:
 
@@ -180,11 +182,11 @@ Estos permisos de documento están disponibles en la ficha Permisos. Puede aplic
 
 **Modificar páginas:** El usuario puede agregar y eliminar páginas y editar contenido en el PDF.
 
-**Rellenar y firmar:** El usuario puede rellenar los campos del formulario en el PDF y firmarlo.
+**Fill &amp; Sign:** El usuario puede rellenar los campos del formulario en el PDF y firmarlo.
 
 **Copiar:** Permite al usuario copiar texto de un documento protegido con esta política.
 
-**Lector de pantalla:** Este permiso se muestra si selecciona la casilla de verificación Mostrar permisos personalizados para PDF. Cuando se selecciona esta opción, Adobe Acrobat tiene permiso para agregar etiquetas temporales al PDF para mejorar su legibilidad con un lector de pantalla.
+**Reader de pantalla:** Este permiso se muestra si selecciona la casilla de verificación Mostrar permisos personalizados para PDF. Cuando se selecciona esta opción, Adobe Acrobat tiene permiso para agregar etiquetas temporales al PDF para mejorar su legibilidad con un lector de pantalla.
 
 Estos permisos de documento están disponibles en la ficha Opciones. Puede aplicar estos permisos a archivos PDF, PTC Pro/E y Microsoft Office:
 
@@ -260,13 +262,13 @@ Si está editando una directiva y el administrador ha eliminado una marca de agu
 
 >[!NOTE]
 >
->Para las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como marcas de agua aunque seleccione este tipo de marca de agua.
+>En el caso de las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como marcas de agua aunque se seleccione este tipo de marca de agua.
 
 **Usar solo complementos certificados de Acrobat para PDF:** Cuando se selecciona para una política, esta opción especifica que Acrobat 8.0 y posterior deben ejecutarse en modo certificado al abrir documentos protegidos con la política. Cuando Acrobat se ejecuta en modo certificado, no cargará ningún complemento de terceros.
 
-Seleccione esta opción si le preocupa que un destinatario de documento escriba un complemento que pueda eludir cualquiera de las protecciones de documento de Acrobat 8.0 y posterior. No seleccione esta opción si los destinatarios de documento necesitan utilizar plugins de terceros en Acrobat para interactuar con documentos.
+Seleccione esta opción si le preocupa que un destinatario de documento escriba un complemento que pueda eludir cualquiera de las protecciones de documento en Acrobat 8.0 y versiones posteriores. No seleccione esta opción si los destinatarios de documento necesitan utilizar complementos de terceros en Acrobat para interactuar con documentos.
 
-Esta opción solo activa el modo certificado en Acrobat 8.0 o posterior; el administrador debe desactivar el acceso a Acrobat 7.0.
+Esta opción solo activa el modo certificado en Acrobat 8.0 o posterior; el administrador debe deshabilitar el acceso para Acrobat 7.0.
 
 (Consulte [Configuración del servidor](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server)de seguridad de documento).
 
@@ -282,11 +284,11 @@ El área Configuración avanzada no modificable contiene las siguientes opciones
 
 * AES de 128 bits
 * AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 para archivos PDF, obtenga e instale los archivos de la política de jurisdicción de seguridad ilimitada de Java Cryptography Extension (JCE). Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar de la carpeta [JAVE_HOME]/lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en la carpeta [dep root]/Java/jdk1.6.0_26/lib/security. Puede descargar estos archivos desde las descargas [de](https://java.sun.com/javase/downloads/index.jsp)Java SE.
-* Sin cifrado. Actualmente, Acrobat 9.0 y versiones posteriores admiten esta opción. Si selecciona esta opción, las opciones de Restricciones de Documento están desactivadas. Esta opción puede resultar útil si desea utilizar la seguridad de documento para la auditoría de documentos o el control de versiones, pero no desea cifrar el documento.
+* Sin cifrado. Acrobat 9.0 y versiones posteriores admiten actualmente esta opción. Si selecciona esta opción, las opciones de Restricciones de Documento están desactivadas. Esta opción puede resultar útil si desea utilizar la seguridad de documento para la auditoría de documentos o el control de versiones, pero no desea cifrar el documento.
 
 **Restricciones de Documento:** Seleccione los componentes de documento PDF que desea codificar. Otras aplicaciones cliente cifran el documento completo, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:
 
-* Todo el documento, incluidos sus datos adjuntos y metadatos. *Los metadatos* son información sobre el documento y su contenido que se puede vista mediante el cuadro de diálogo Propiedades del documento o el menú Avanzado de Acrobat. En Acrobat, puede adjuntar archivos de distintos tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos PDF.
+* Todo el documento, incluidos sus datos adjuntos y metadatos. *Los metadatos* son información sobre el documento y su contenido que se puede vista mediante el cuadro de diálogo Propiedades del documento o el menú Acrobat Advanced. En Acrobat, puede adjuntar archivos de distintos tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos PDF.
 * El documento y sus archivos adjuntos, pero no los metadatos.
 * Sólo los archivos adjuntos de documento. Puede cifrar los archivos adjuntos en un archivo PDF sin cifrar el contenido de documento.
 
@@ -369,10 +371,12 @@ Los usuarios externos solo pueden copiar directivas si el administrador habilita
    * Comilla de doble (&quot;)
    * barra invertida (\)
    * barra diagonal (/)
+
    Si utiliza el siguiente carácter en el nombre o la descripción, se convertirán en espacios:
 
    * retorno de carro (carácter ASCII 13)
    * nueva línea (carácter ASCII 10).
+
    >[!NOTE]
    >
    >Puede crear un nombre de política que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si ya existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto los caracteres acentuados. Se da por hecho que la política ya se ha agregado a la base de datos y que la nueva no se ha agregado.
@@ -392,7 +396,7 @@ Los usuarios invitados solo pueden eliminar directivas si el administrador habil
 
 >[!NOTE]
 >
->Debe utilizar la aplicación cliente para eliminar directivas de documentos. (Consulte la Ayuda de Acrobat o la Ayuda de las extensiones de Acrobat Reader DC correspondientes).
+>Debe utilizar la aplicación cliente para eliminar directivas de documentos. (Consulte la Ayuda de Acrobat o la Ayuda de extensiones de Acrobat Reader DC correspondiente).
 
 ## Ordenar la lista de directivas {#sort-the-policy-list}
 

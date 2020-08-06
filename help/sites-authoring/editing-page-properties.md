@@ -1,6 +1,6 @@
 ---
-title: 'Edición de las propiedades de página '
-seo-title: 'Edición de las propiedades de página '
+title: 'Edición de las propiedades de página  '
+seo-title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 seo-description: Permite definir las propiedades de una página
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 89%
 
 ---
 
@@ -42,6 +45,7 @@ Las propiedades se distribuyen entre varias pestañas.
       * A continuación, la nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
    * Con la función de lista desplegable, puede seleccionar etiquetas existentes.
    * Aparece una x cuando pasa el puntero sobre una entrada de etiqueta en el cuadro de selección; esto puede usarse para quitar esa etiqueta para esta página.
+
    Para obtener más información sobre las etiquetas, consulte [Utilizar etiquetas](/help/sites-authoring/tags.md).
 
 * **Ocultar en navegación**
@@ -145,7 +149,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Especificar una configuración de exportación.
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
 1. **Miniatura de la página**
 
@@ -170,9 +174,9 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Variación de XF preferida**
 Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* **Servicios de nube**
+* **Cloud Services**
 
    Defina propiedades para [servicios de nube](/help/sites-developing/extending-cloud-config.md).
 
@@ -182,7 +186,7 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-authoring/personalization.md).
 
-### Permisos  {#permissions}
+### Permisos   {#permissions}
 
 * **Permisos**
 
@@ -191,6 +195,7 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
    * [Agregar permisos](/help/sites-administering/user-group-ac-admin.md)
    * [Editar grupo de usuarios cerrado](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * Ver los [permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante ajustes de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled`, se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, al igual que el Requisito de autenticación de la ficha [Avanzado](/help/sites-authoring/editing-page-properties.md#advanced).
@@ -208,13 +213,13 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
 
    Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy  {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio  {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
@@ -238,12 +243,13 @@ Puede definir propiedades de página:
 
 Tocando o haciendo clic en **Propiedades** para definir las propiedades de la página:
 
-1. Mediante la consola **Sitios**, desplácese a la ubicación de la página para la que desee ver y editar las propiedades.
+1. Mediante la consola **Sitios**, desplácese hasta la ubicación de la página para la que desee ver y editar las propiedades.
 
 1. Seleccione la opción **Propiedades** de la página requerida mediante:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    Las propiedades de página se mostrarán mediante las pestañas adecuadas.
 
 1. Visualice o edite las propiedades según sea oportuno. 
@@ -315,6 +321,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
       * En el modo Ver solo se muestran las propiedades con un valor común.
       * Cuando el campo admite varios valores (por ejemplo, etiquetas), los valores solo se mostrarán si *todos* son comunes. Si solo son comunes algunos de ellos, solo se mostrarán en el momento de editar.
+
    Cuando no existen propiedades con un valor común, se muestra un mensaje. 
 
 * **Editar**

@@ -1,18 +1,21 @@
 ---
 title: Uso del paquete de demostración para Asset Insights
-description: Utilice el paquete de demostración para permitir que Adobe Asset Insights capture datos y genere perspectivas para una página web.
+description: Utilice el paquete de demostración para habilitar Adobe Asset Insights para capturar datos de una página web y generar perspectivas para ella.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
 
 # Uso del paquete de demostración para Asset Insights {#using-demo-package-for-asset-insights}
 
-Con el paquete de demostración, puede activar Adobe Asset Insights para capturar datos de una página web de muestra y generar perspectivas para ella.
+Con el paquete de demostración, puede habilitar Adobe Asset Insights para capturar datos de una página web de muestra y generar perspectivas para ella.
 
-## Uso de AEM Assets Insights con una página web de muestra {#using-aem-assets-insights-with-sample-web-page}
+## Uso de AEM Assets Insights con una página web de muestra  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Asset Insights siguiendo las instrucciones de [Configuración de Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Descargue el paquete de AEM Assets de muestra a continuación e instálelo desde el administrador de paquetes de CRXDE.

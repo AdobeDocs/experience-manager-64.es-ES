@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +54,7 @@ Por ejemplo, los clientes rellenan un formulario de solicitud. Los dos primeros 
 </afData>
 ```
 
-Agregue otro formulario en la aplicación que permita a los clientes completar la dirección de su oficina. La raíz de esquema del formulario secundario es `officeAddress`. Aplicar `bindref` o `/application/officeAddress` `/officeAddress`. Si no `bindref`se proporciona, el formulario secundario se agrega como `officeAddress` subárbol. Consulte el XML del formulario siguiente:
+Agregue otro formulario en la aplicación que permita a los clientes completar la dirección de su oficina. La raíz del esquema del formulario secundario es `officeAddress`. Aplicar `bindref` o `/application/officeAddress` `/officeAddress`. Si no `bindref`se proporciona, el formulario secundario se agrega como `officeAddress` subárbol. Consulte el XML del formulario siguiente:
 
 ```xml
 <afData>
@@ -95,7 +98,7 @@ Si inserta otro formulario que permite a los clientes proporcionar la dirección
 </afData>
 ```
 
-Si desea mantener el mismo nombre de subraíz que la raíz del esquema ( `Address`en este ejemplo), utilice archivos bindrefs indexados.
+Si desea mantener el mismo nombre de subraíz que la raíz de esquema ( `Address`en este ejemplo), utilice archivos bindrefs indexados.
 
 Por ejemplo, aplique bindrefs `/application/address[1]` o `/address[1]` y `/application/address[2]` o `/address[2]`. El XML del formulario es:
 
@@ -131,14 +134,14 @@ Puede agregar un formulario adaptable como formulario secundario varias veces. A
 >
 >Si se asignan distintos formularios o fragmentos a la misma subraíz, los datos se sobrescriben.
 
-## Adición de un formulario adaptable como formulario secundario mediante el navegador de recursos {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
+## Añadir un formulario adaptable como formulario secundario mediante el navegador de recursos {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
 
 Siga estos pasos para agregar un formulario adaptable como formulario secundario mediante el navegador de recursos.
 
 1. Abra el formulario principal en modo de edición.
 1. En la barra lateral, haga clic en **Recursos** ![assets-browser](assets/assets-browser.png). En Recursos, seleccione Formulario **** adaptable en la lista desplegable.
-   [ ![Selección de formularios adaptables en Recursos](assets/asset.png)](assets/asset-1.png)
+   [ ![Selección de un formulario adaptable en Recursos](assets/asset.png)](assets/asset-1.png)
 
 1. Arrastre y suelte el formulario adaptable que desee agregar como formulario secundario.
-   [ ![Arrastre y suelte el formulario adaptable en el](assets/drag-drop.png)](assets/drag-drop-1.png)sitioEl formulario adaptable que suelte se agrega como formulario secundario.
+   [ ![Arrastre y suelte el formulario adaptable en el](assets/drag-drop.png)](assets/drag-drop-1.png)sitio. El formulario adaptable que suelte se agrega como formulario secundario.
 

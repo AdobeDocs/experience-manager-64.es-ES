@@ -26,11 +26,11 @@ Los flujos de trabajo JEE de AEM Forms proporcionan herramientas para diseñar, 
 * Uso de la carpeta vigilada
 * Uso del correo electrónico
 
-Para obtener más información sobre la creación del proceso de flujo de trabajo JEE de AEM Forms, consulte la Ayuda [de Workbench](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf).
+Para obtener más información sobre la creación del proceso de flujo de trabajo de AEM Forms JEE, consulte la Ayuda [de Workbench](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf).
 
 ## Almacenes de datos y datos de usuarios {#user-data-and-data-stores}
 
-Cuando se activa un proceso y avanza, captura datos sobre los participantes en el proceso, datos introducidos por los participantes en el formulario asociado al proceso y datos adjuntos agregados al formulario. Los datos se almacenan en la base de datos del servidor JEE de AEM Forms y, si se configuran, algunos datos, como los adjuntos, se almacenan en el directorio Almacenamiento de Documento global (GDS). El directorio GDS se puede configurar en un sistema de archivos compartido o en una base de datos.
+Cuando se activa un proceso y avanza, captura datos sobre los participantes en el proceso, datos introducidos por los participantes en el formulario asociado al proceso y datos adjuntos agregados al formulario. Los datos se almacenan en la base de datos del servidor JEE de AEM Forms y, si se configuran, algunos datos como los adjuntos se almacenan en el directorio del Almacenamiento de Documento global (GDS). El directorio GDS se puede configurar en un sistema de archivos compartido o en una base de datos.
 
 ## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
 
@@ -39,7 +39,7 @@ Cuando se activa un proceso, se genera un ID de instancia de proceso único y un
 Sin embargo, no se puede identificar la ID de instancia de proceso para un iniciador en los siguientes casos:
 
 * **Proceso activado mediante una carpeta** vigilada: No se puede identificar una instancia de proceso con su iniciador si el proceso se activa con una carpeta vigilada. En este caso, la información del usuario se codifica en los datos almacenados.
-* **Proceso iniciado desde la instancia** de AEM de publicación: Todas las instancias de proceso activadas desde la instancia de publicación de AEM no capturan información sobre el iniciador. Sin embargo, los datos de usuario se pueden capturar en el formulario asociado al proceso, que se almacena en variables de flujo de trabajo.
+* **Proceso iniciado desde la instancia** de publicación AEM: Todas las instancias de proceso activadas desde AEM instancia de publicación no capturan información sobre el iniciador. Sin embargo, los datos de usuario se pueden capturar en el formulario asociado al proceso, que se almacena en variables de flujo de trabajo.
 * **Proceso iniciado por correo electrónico**: El ID de correo electrónico del remitente se captura como una propiedad en una columna de blob opaca de la tabla de la `tb_job_instance` base de datos, que no se puede consultar directamente.
 
 ### Identifique las ID de instancia de proceso cuando se conozca el iniciador o participante del flujo de trabajo {#initiator-participant}

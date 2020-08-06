@@ -36,6 +36,7 @@ Debido a la posibilidad de valores diferentes, las propiedades de página no est
 >* No disponible en la IU clásica.
 >* No está disponible para páginas dentro de una Live Copy.
 >* Solo disponible para páginas con el mismo tipo de recurso.
+
 >
 
 
@@ -56,13 +57,14 @@ Debido a la posibilidad de valores diferentes, las propiedades de página no est
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 Los campos están activados en el componente de página (*no* en la plantilla):
 
-1. Con CRXDE Lite (o un método equivalente) abra el componente de página.
+1. Con el CRXDE Lite (o un método equivalente) abra el componente de página.
 
    Por ejemplo: `/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ Los campos están activados en el componente de página (*no* en la plantilla):
    * **Nombre**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valor**: `true`
+
    Por ejemplo, para el componente [de](/help/sites-authoring/default-components-foundation.md)base de página estándar:
 
    `/libs/foundation/components/page`

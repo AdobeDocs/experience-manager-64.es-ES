@@ -1,9 +1,12 @@
 ---
 title: Configuración del editor de texto enriquecido
-description: Aprenda a configurar el editor de texto enriquecido de AEM.
+description: Aprenda a configurar el Editor de texto enriquecido AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ Para saber cómo utilizar las funciones RTE para la creación, consulte [Uso del
 
 ## Comprender la IU táctil y la IU clásica {#understand-touch-enabled-ui-and-classic-ui}
 
-La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para entornos de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
+La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en la versión 5.6 con un diseño [](/help/sites-authoring/responsive-layout.md) interactivo para el entorno de creación. La IU táctil está diseñada para dispositivos táctiles y de escritorio. La IU difiere considerablemente de la IU clásica original.
 
 ![Barra de herramientas del Editor de texto enriquecido en la IU táctil](assets/chlimage_1-404.png)
 
@@ -33,9 +36,9 @@ La IU táctil es la IU estándar para AEM. Adobe ha introducido la IU táctil en
 >[!MORELIKETHIS]
 >
 >* [Recomendaciones de la interfaz de usuario](/help/sites-deploying/ui-recommendations.md)
->* Acerca de la desaprobación de la IU clásica, consulte Notas de la versión de [AEM 6.4](/help/release-notes/deprecated-removed-features.md)
+>* Acerca de la desaprobación de la IU clásica, consulte [AEM Notas de la versión 6.4](/help/release-notes/deprecated-removed-features.md)
 >* Para ver las diferencias entre las IU, consulte IU [táctil y IU clásica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Para comprender la IU táctil en detalle, consulte [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md)
+>* Para comprender la IU táctil en detalle, consulte [Conceptos de la IU táctil AEM](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Diversos modos de edición {#editingmodes}
@@ -63,9 +66,9 @@ Cuando se abre (con un doble o clic lento), el contenido se puede editar dentro 
 
 En la IU clásica, un doble lento con clic en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si Content Finder está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si Content Finder no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones básicas de texto.
 
-### Full screen editing {#full-screen-editing}
+### Edición de pantalla completa {#full-screen-editing}
 
-Los componentes de AEM se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
+AEM componentes se pueden abrir en vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 El modo de pantalla completa del cuadro de diálogo proporciona una barra de herramientas RTE detallada y las opciones y los componentes disponibles en el modo de cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -109,7 +112,7 @@ La siguiente tabla lista los complementos actuales y muestra:
 | editar | cortar copiar pegar-predeterminado pegar-plaintext pegar-wordhtml | [Cortar, copiar y pegar los tres modos](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | buscar reemplazar | Buscar y reemplazar. |
 | [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | subrayado en cursiva negrita | [Formato](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)de texto básico. |
-| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagen | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
+| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
 | [claves](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir este valor, consulte Tamaño [de tabulación](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justificfycenter | Alineación de párrafo. |
 | [vínculos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink desvincular anclaje | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -144,6 +147,7 @@ El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporci
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
+
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
@@ -191,6 +195,7 @@ Descargue esta configuración de muestra para comprender cómo configurar RTE. E
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
@@ -243,7 +248,7 @@ Para disfrutar de la mejor experiencia de creación:
 </uiSettings>
 ```
 
-Para el modo en línea y el modo de pantalla completa se utilizan diferentes ajustes de IU. La propiedad toolbar se utiliza para especificar los botones de la barra de herramientas. Por ejemplo, si el botón es en sí mismo una función (por ejemplo, `Bold`), se especifica como `PluginName#FeatureName` (por ejemplo, `links#modifylink`). Si el botón es una ventana emergente (que contiene algunas características de un complemento), se especifica como `#PluginName` (por ejemplo, `#format`). Separadores (| ) entre un grupo de botones se puede especificar con &#39;-&#39;.
+Para el modo en línea y el modo de pantalla completa se utilizan diferentes ajustes de IU. La propiedad toolbar se utiliza para especificar los botones de la barra de herramientas. Por ejemplo, si el botón es en sí mismo una función (por ejemplo, `Bold`), se especifica como `PluginName#FeatureName` (por ejemplo, `links#modifylink`). Si el botón es una ventana emergente (que contiene algunas características de un complemento), se especifica como `#PluginName` (por ejemplo, `#format`). Separadores ( | ) entre un grupo de botones se puede especificar con &#39;-&#39;.
 
 El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario bajo el `popovers` nodo recibe el nombre del complemento (por ejemplo, `format`). Tiene una propiedad `items` que contiene una lista de las características del complemento (por ejemplo, `format#bold`).
 
@@ -318,7 +323,7 @@ En una página, puede incluir la clientlib CoralUI 2 RTE o la clientlib CoralUI 
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre la configuración de RTE, consulte la referencia de la API [de utilidades de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) AEM.
+Para obtener más información sobre la configuración de RTE, consulte la referencia de la API [de utilidades](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) AEM.
 
 En particular, para ver los complementos y las opciones relacionadas disponibles:
 
@@ -334,9 +339,9 @@ Las opciones anteriores pueden utilizarse para ampliar y personalizar su propio 
 
 ## Limitaciones conocidas {#known-limitations}
 
-La capacidad de AEM RTE tiene las siguientes limitaciones:
+AEM capacidad RTE tiene las siguientes limitaciones:
 
-* Las funciones RTE solo se admiten en los cuadros de diálogo de componentes de AEM. RTE no se admite en asistentes o formularios de base como Propiedades [de](/help/sites-developing/page-properties-views.md) página y [Andamiaje](/help/sites-authoring/scaffolding.md) en la IU táctil.
+* Las capacidades de RTE solo se admiten en los cuadros de diálogo de AEM componentes. RTE no se admite en asistentes o formularios de base como Propiedades [de](/help/sites-developing/page-properties-views.md) página y [Andamiaje](/help/sites-authoring/scaffolding.md) en la IU táctil.
 
 * AEM no funciona en dispositivos [híbridos](/help/release-notes/known-issues.md).
 

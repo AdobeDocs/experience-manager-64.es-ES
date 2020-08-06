@@ -1,8 +1,8 @@
 ---
 title: Monitoreo de los recursos del servidor mediante la consola JMX
 seo-title: Monitoreo de los recursos del servidor mediante la consola JMX
-description: Learn how to monitor server resources using the JMX console.
-seo-description: Learn how to monitor server resources using the JMX console.
+description: Aprenda a supervisar los recursos del servidor mediante la consola JMX.
+seo-description: Aprenda a supervisar los recursos del servidor mediante la consola JMX.
 uuid: b3cfcc0b-69db-415d-9244-ac22a7387247
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -26,9 +26,9 @@ Para obtener información sobre cómo utilizar los controles de consola, consult
 
 Para obtener información sobre la creación de MBeans para administrar los servicios mediante la consola JMX, consulte [Integración de servicios con la consola](/help/sites-developing/jmx-integration.md)JMX.
 
-## Workflow Maintenance {#workflow-maintenance}
+## Mantenimiento de flujo de trabajo {#workflow-maintenance}
 
-Operations for administering running, completed, stale, and failed workflow instances.
+Operaciones para administrar instancias de flujo de trabajo en ejecución, finalizadas, obsoletas y con errores.
 
 * Dominio: com.adobe.granite.workflow
 * Tipo: Mantenimiento

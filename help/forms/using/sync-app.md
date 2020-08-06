@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## Sincronización de la aplicación {#synchronizing-the-app-1}
 
-Los formularios de su aplicación se descargan del servidor de AEM Forms. Los formularios se descargan en las fichas Tareas y Formularios. Los borradores creados a partir de formularios se descargan en la ficha Borradores y los borradores creados a partir de tareas se descargan en la ficha tareas. Para un formulario independiente en el servidor OSGi, los formularios y los borradores se descargan en las fichas Formularios y Borrador, respectivamente.
+Los formularios de su aplicación se descargan del servidor de AEM Forms. Los formularios se descargan en las fichas Tareas y Forms. Los borradores creados a partir de formularios se descargan en la ficha Borradores y los borradores creados a partir de tareas se descargan en la ficha tareas. Para un formulario independiente en el servidor OSGi, los formularios y borradores se descargan en las fichas Forms y Borrador, respectivamente.
 
-Cuando completa y envía un formulario, éste se carga de nuevo en el servidor de AEM Forms instantáneamente si la aplicación está en línea. Los formularios se recuperan del servidor cuando se sincroniza la aplicación. Sin embargo, los borradores se sincronizan con el servidor instantáneamente si la aplicación está en línea.
+Cuando se completa y envía un formulario, éste se vuelve a cargar en el servidor de AEM Forms instantáneamente si la aplicación está en línea. Los formularios se recuperan del servidor cuando se sincroniza la aplicación. Sin embargo, los borradores se sincronizan con el servidor instantáneamente si la aplicación está en línea.
 
-Cuando está en línea con el servidor de AEM Forms, de forma predeterminada, la aplicación se sincroniza cada 15 minutos. Sin embargo, tiene la opción de cambiar la frecuencia de sincronización. Como alternativa, puede sincronizar manualmente la aplicación en cualquier momento.
+Cuando está conectado con el servidor de AEM Forms, de forma predeterminada, la aplicación se sincroniza cada 15 minutos. Sin embargo, tiene la opción de cambiar la frecuencia de sincronización. Como alternativa, puede sincronizar manualmente la aplicación en cualquier momento.
 
 **Para sincronizar la aplicación manualmente**
 

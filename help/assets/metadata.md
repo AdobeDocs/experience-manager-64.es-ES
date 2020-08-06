@@ -1,9 +1,12 @@
 ---
-title: Administre metadatos de sus recursos digitales en [!DNL Adobe Experience Manager].
-description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] ayuda a administrar los metadatos de los recursos para facilitar la categorización y organización de los recursos. [!DNL Experience Manager] permite organizar y procesar automáticamente recursos en función de sus metadatos.
+title: Administre los metadatos de sus recursos digitales en [!DNL Adobe Experience Manager].
+description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] cómo pueden organizarse y procesarse automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ Los dos tipos básicos de metadatos son los metadatos técnicos y los descriptiv
 Los metadatos técnicos son útiles para las aplicaciones de software que se ocupan de activos digitales y no deben mantenerse manualmente. [!DNL Experience Manager Assets] y otro software determina automáticamente los metadatos técnicos y los metadatos pueden cambiar cuando se modifica el recurso. Los metadatos técnicos disponibles de un recurso dependen en gran medida del tipo de archivo del recurso. Algunos ejemplos de metadatos técnicos son:
 
 * Tamaño de un archivo.
-* Dimensiones (altura y anchura) de una imagen.
+* Dimension (altura y anchura) de una imagen.
 * Velocidad de bits de un archivo de audio o vídeo.
 * Resolución (nivel de detalle) de una imagen.
 
@@ -74,7 +77,7 @@ Existen varias formas de incrustar metadatos en los archivos. Se admite una sele
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que se utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar oferta la codificación de metadatos universales que puede incrustarse en todos los formatos de archivo. Adobe y otras compañías admiten el estándar XMP, ya que proporciona un modelo de contenido enriquecido. Los usuarios del estándar XMP y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que se utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar oferta la codificación de metadatos universales que puede incrustarse en todos los formatos de archivo. Adobe y otras compañías admiten XMP estándar ya que proporciona un modelo de contenido enriquecido. Los usuarios de XMP estándar y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -126,7 +129,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * CQ - Utilizado por [!DNL Experience Manager Assets].
 * DAM - Utilizado por [!DNL Experience Manager Assets].
 * DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
-* CRS: [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto y MP - Microsoft Photo.
@@ -155,7 +158,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * PDF y PDF/X: Adobe PDF y aplicaciones de terceros.
 * PRISM: requisitos de [publicación para metadatos](https://www.prismstandard.org)estándar del sector.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadatos XMP para texto paginado.
+* `xmpPG` - XMP metadatos para texto paginado.
 
 ### Metadatos específicos de multimedia {#multimedia-specific-metadata}
 

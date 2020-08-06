@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -93,8 +96,9 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
    AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
 
-   * [Métodos abreviados del teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+   * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+
    Esta opción habilita los métodos abreviados del teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
 
 * **Usar experiencia de autoría clásica**

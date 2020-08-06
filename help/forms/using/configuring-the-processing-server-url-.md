@@ -10,22 +10,25 @@ topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
 
 # Configuración de la configuración de AEM DS {#configuring-aem-ds-settings}
 
-En este artículo se describe cómo configurar el servicio **** de configuración de AEM DS. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+Este artículo describe cómo configurar **AEM servicio** de configuración de DS. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En la gestión de correspondencia
 
-   * Para configurar el flujo de trabajo de AEM Forms
+   * Para configurar AEM Forms Workflow
    * Mientras se utiliza el portal de formularios para guardar de forma remota el borrador o el envío
 
 * En formularios adaptables para casos en los que el formulario adaptable se envía desde una instancia de publicación
 
-A continuación se indican los pasos para configurar la configuración de **[!UICONTROL AEM DS]**:
+A continuación se indican los pasos para configurar la **[!UICONTROL AEM configuración]** de DS:
 
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:
 
@@ -37,11 +40,11 @@ A continuación se indican los pasos para configurar la configuración de **[!UI
 
    ![ds_settings](assets/ds_settings.png)
 
-1. La ventana del servicio **[!UICONTROL de configuración de]** AEM DS muestra la configuración común de los componentes de AEM DS.
+1. La ventana **[!UICONTROL AEM Servicio]** de configuración DS muestra los ajustes de configuración comunes para los componentes de DS AEM.
 
    ![ds_settings_1](assets/ds_settings_1.png)
 
-1. Agregue la siguiente información en los campos correspondientes:
+1. Añada la siguiente información en los campos correspondientes:
 
    **[!UICONTROL Dirección URL]** del servidor de procesamiento: El servidor de procesamiento es el servidor en el que se debe activar el flujo de trabajo de Forms o AEM. Puede ser la misma que la URL de la instancia de creación de AEM o de la otra URL de servidor (es decir, http:// localhost:port/).
 
@@ -51,5 +54,5 @@ A continuación se indican los pasos para configurar la configuración de **[!UI
 
    >[!NOTE]
    >
-   >* Al utilizar los flujos de trabajo de Forms o AEM, antes de realizar ningún envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
+   >* Al utilizar flujos de trabajo de Forms o AEM, antes de realizar un envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, fallará el envío del formulario.
 

@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 6%
 
 ---
 
@@ -176,7 +179,7 @@ Por ejemplo:
 Si utiliza Configuration Manager para habilitar el registro, los registros se generan para cada solicitud de procesamiento hasta que se deshabilita de nuevo el registro.
 
 1. Inicie sesión en CQ Configuration Manager en `https://[server]:[port]/system/console/configMgr` y luego inicie sesión con las credenciales de administrador.
-1. Busque y haga clic en Configuración de formularios **móviles**.
+1. Busque y haga clic en Configuración **móvil de Forms**.
 1. En el cuadro de texto Opciones de depuración, introduzca las configuraciones de registro como se describe en la sección anterior, por ejemplo, **2-a4-b5-c6**
 
    ![Configuración de formularios](assets/forms_configuration.png)

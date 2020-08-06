@@ -1,8 +1,8 @@
 ---
 title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
 seo-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
-seo-description: Configurar AEM Communities para utilizar una base de datos relacional como su almacén común
+description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
+seo-description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Acerca de MSRP {#about-msrp}
 
-Cuando los AEM Communities están configurados para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando AEM Communities está configurado para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
 
@@ -85,9 +85,11 @@ Al crear, para acceder a la consola de configuración de Almacenamiento:
       Cuando se ejecuta en el modo [](solr.md#solrcloud-mode) SolrCloud con un zooKeeper externo, establezca este valor en el `HOST:PORT` para ZooKeeper, como *my.server.com:2181* Para un ensamblado ZooKeeper, introduzca `HOST:PORT` valores separados por comas, como *host1:2181,host2:2181* Deje en blanco si ejecuta Solr en modo independiente mediante el zooKeeper interno.\
       *Predeterminado*: *&lt;blank>*
    * **[!UICONTROL Solr URL]**La URL que se utiliza para comunicarse con Solr en modo independiente.
-Deje en blanco si se ejecuta en el modo de SolrCloud.\
+Deje en blanco si se ejecuta en el modo de SolrCloud.
+\
       *Predeterminado*: https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Colección]** Solr El nombre de la colección Solr.\
+   * **[!UICONTROL Colección]** Solr El nombre de la colección Solr.
+\
       *Predeterminado*: collection1
 * Seleccione **[!UICONTROL Enviar]**
 
@@ -119,7 +121,7 @@ Una instalación de Solr puede compartirse entre el almacén de nodos (Oak) y el
 
 Si se utilizan intensamente las colecciones Oak y MSRP, se puede instalar un segundo Solr por motivos de rendimiento.
 
-Para entornos de producción, el modo [](solr.md#solrcloud-mode) SolrCloud ofrece un rendimiento mejorado en comparación con el modo independiente (una única configuración local de Solr).
+Para los entornos de producción, el modo [](solr.md#solrcloud-mode) SolrCloud ofrece un rendimiento mejorado con respecto al modo independiente (una única configuración local de Solr).
 
 Para obtener más información sobre la configuración, consulte Configuración [solar para SRP](solr.md).
 
@@ -215,7 +217,7 @@ Para configurar el MSRP para un entorno de demostración o desarrollo, consulte 
 
 Compruebe la configuración de la opción de almacenamiento para asegurarse de que MSRP se ha configurado como el proveedor predeterminado. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
 
-En todas las instancias de AEM de creación y publicación, vuelva a la consola [de configuración de](srp-config.md) Almacenamiento o compruebe el repositorio de AEM:
+En todas las instancias de creación y publicación de AEM, vuelva a la consola [de configuración de](srp-config.md) Almacenamiento o compruebe el repositorio de AEM:
 
 * En JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -224,13 +226,13 @@ En todas las instancias de AEM de creación y publicación, vuelva a la consola 
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
-Si realiza la actualización desde un sitio existente de AEM Communities 6.0, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API de [SRP](srp.md) después de actualizar a AEM Communities 6.3.
+Si realiza la actualización desde un sitio AEM Communities 6.0 existente, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API [SRP](srp.md) después de actualizar a AEM Communities 6.3.
 
 Hay una herramienta de código abierto disponible en GitHub para este propósito:
 
-* [Herramienta de migración UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de AEM para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de AEM comunidades sociales para importarlos a AEM Communities 6.1 o posterior.
 
 ### Error: proveedor de campos no definido {#error-undefined-field-provider-id}
 

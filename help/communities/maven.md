@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
 
 ## Información general {#overview}
 
-Esta sección de la documentación de Comunidades de AEM se suma a:
+Esta sección de la documentación de AEM Communities se suma a:
 
-* [Cómo crear proyectos de AEM con Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+* [Cómo construir AEM proyectos con Apache Maven](../../help/sites-developing/ht-projects-maven.md)
 
 Ahora hay dos artefactos &quot;uber&quot; que reemplazan a artefactos individuales:
 
-* AEM [Communities API jar](#communities-api-jar-artifact)
-* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* Archivo de API de [Comunidades AEM](#communities-api-jar-artifact)
+* Frasco [de API de AEM Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Artificio Jar API de Communities {#communities-api-jar-artifact}
 
-A continuación se muestra un ejemplo de un archivo GAV para AEM Communities API jar:
+A continuación se muestra un ejemplo de GAV para el tarro de la API de AEM Communities:
 
 ```xml
 <dependency>
@@ -41,14 +44,14 @@ A continuación se muestra un ejemplo de un archivo GAV para AEM Communities API
 </dependency>
 ```
 
-Asegúrese de que la versión especificada corresponde a la versión del paquete Communities instalada para las comunidades AEM. Para verificar el número de versión instalada:
+Asegúrese de que la versión especificada corresponde a la versión del paquete Communities instalada para AEM Communities. Para verificar el número de versión instalada:
 
 1. Inicie sesión con privilegios administrativos.
 2. Vaya al Administrador [de paquetes](../../help/sites-administering/package-manager.md). Por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 3. ubique el paquete *cq-socialcommunities-pkg-1.x.xxx*
 4. extraer la versión del nombre del paquete
-   * La primera versión de AEM 6.3 es la versión 1.11.170
+   * la primera versión de AEM 6.3 es la versión 1.11.170
    * los paquetes de funciones serán versiones 1.12.xxx
 
 >[!NOTE]

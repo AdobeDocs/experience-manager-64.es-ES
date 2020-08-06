@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ La aplicación accede al servidor de AEM Forms en los extremos REST para hacer l
 
 El servidor de AEM Forms accede a la base de datos de AEM Forms a través de JDBC. La base de datos persiste en tareas, procesos y sus instancias, usuarios e información relacionada.
 
-El espacio de trabajo de AEM Forms se ha diseñado en componentes modulares de JavaScript™ que pueden personalizarse y reutilizarse de forma individual en otras aplicaciones web. Los componentes se basan en BackBone, que es una biblioteca JavaScript que proporciona estructura a las aplicaciones web. Un artículo detallado que describe la interacción de los componentes con BackBone está [aquí](/help/forms/using/backbone-interaction.md). La organización de componentes en la estructura de carpetas CRX se analiza en [este](/help/forms/using/folder-structure.md) artículo.
+El espacio de trabajo de AEM Forms está diseñado en componentes modulares de JavaScript™ que pueden personalizarse y reutilizarse individualmente en otras aplicaciones web. Los componentes se basan en BackBone, que es una biblioteca JavaScript que proporciona estructura a las aplicaciones web. Un artículo detallado que describe la interacción de los componentes con BackBone está [aquí](/help/forms/using/backbone-interaction.md). La organización de componentes en la estructura de carpetas CRX se analiza en [este](/help/forms/using/folder-structure.md) artículo.
 
 Paquetes entregados para el espacio de trabajo de AEM Forms:
 

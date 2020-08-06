@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1744'
+ht-degree: 2%
 
 ---
 
@@ -74,7 +77,7 @@ Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el 
 
 Seleccione **[!UICONTROL Siguiente]**.
 
-### Paso 3:Configuración {#step-settings}
+### Paso 3: Configuración {#step-settings}
 
 En el paso Configuración, antes de seleccionar `Next`, fíjese en que hay siete secciones que proporcionan acceso a configuraciones que incluyen administración de usuarios, etiquetado, funciones, moderación, análisis, traducción y habilitación.
 
@@ -82,12 +85,12 @@ En el paso Configuración, antes de seleccionar `Next`, fíjese en que hay siete
 
 Se recomienda que las comunidades [de](overview.md#enablement-community) habilitación sean privadas.
 
-Un sitio de comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
+Un sitio de la comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
 
 Asegúrese de que la mayoría de las casillas de verificación no estén marcadas para Administración [de usuarios](sites-console.md#user-management):
 
 * NO permitir que los visitantes del sitio se automatriculen
-* NO permitir que los visitantes anónimos del sitio vean el sitio
+* NO permitir que visitantes anónimos del sitio realicen vistas en el sitio
 * Opcional si se permite o no la mensajería entre los miembros de la comunidad
 * NO permitir el inicio de sesión con Facebook
 * NO permitir el inicio de sesión con Twitter
@@ -96,11 +99,11 @@ Asegúrese de que la mayoría de las casillas de verificación no estén marcada
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando los espacios de nombres de AEM definidos previamente mediante la Consola [de](../../help/sites-administering/tags.md#tagging-console) etiquetado (como el espacio de nombres [Tutorial](enablement-setup.md#create-tutorial-tags)).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres definidas previamente mediante la Consola [de](../../help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](enablement-setup.md#create-tutorial-tags)Tutorial).
 
-Además, si se seleccionan Espacios de nombres de etiquetas para el sitio de la comunidad, se limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](tag-resources.md) de habilitación para obtener información importante.
+Además, la selección de Áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](tag-resources.md) de habilitación para obtener información importante.
 
-La búsqueda de espacios de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
+La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
 * Escriba &#39;tut&#39;
 * Seleccione `Tutorial`
@@ -151,12 +154,13 @@ La configuración [de](sites-console.md#translation) traducción especifica si s
 
 Para una comunidad de habilitación, es necesario identificar uno o varios administradores de habilitación de la comunidad.
 
-* **[!UICONTROL Administradores]** de habilitación (obligatorios) Los miembros del `Community Enablement Managers` grupo están disponibles para ser seleccionados para administrar este sitio de comunidad.
+* **[!UICONTROL Administradores]** de habilitación (requeridos) Miembros de la 
+`Community Enablement Managers` están disponibles para ser seleccionados para administrar este sitio de comunidad.
 
    * Tipo &quot;s&quot;
    * Seleccione `Sirius Nilson`
 
-* **[!UICONTROL ID]** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) en los informes de habilitación.
+* **[!UICONTROL ID]** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -230,7 +234,7 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 * Vaya a la consola **[!UICONTROL Comunidades > Grupos]** .
 * Seleccionar grupo de miembros de activación **[!UICONTROL de comunidad]**
-* Ingrese `ski` en el cuadro de búsqueda **[!UICONTROL Agregar miembros al grupo]**
+* Ingrese `ski` en el cuadro de búsqueda **[!UICONTROL Añadir miembros al grupo]**
 * Seleccionar clase **[!UICONTROL de esquí de]** comunidad (grupo de alumnos)
 * Ingrese `quinn` en el cuadro de búsqueda
 * Seleccionar **[!UICONTROL Quinn Harper]** (contacto de recursos de habilitación)
@@ -249,13 +253,13 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
-Agregar un `Login Page Mapping` como
+Añadir un `Login Page Mapping` como
 
 * /content/sites/enable/es/sign:/content/sites/enable/es
 
-### (Opcional) Cambiar la página principal predeterminada {#optional-change-the-default-home-page}
+### (Opcional) Cambiar la Página de inicio predeterminada {#optional-change-the-default-home-page}
 
-Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página principal predeterminada al nuevo sitio.
+Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página de inicio predeterminada al nuevo sitio.
 
 Para ello, es necesario utilizar [CRX|DE](http://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](../../help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
 
@@ -278,14 +282,14 @@ Para empezar
 
 1. Con el nodo recién creado `localhost.4503` seleccionado
 
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:match
       * **Cadena de tipo**
       * **Valor** localhost.4503/\$
 
          (Debe terminar con &#39;$&#39; char)
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:internalRedirect
       * **Cadena de tipo**
@@ -306,17 +310,17 @@ Para empezar
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
-Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador &#39;punto&#39; y no `localhost:4503` con un separador &#39;dos puntos&#39;, ya que no `localhost`es un prefijo de espacio de nombres válido.
+Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;puntos&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que no `localhost`es un prefijo de Área de nombres válido.
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión regular es crucial, por lo que solo `http://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `http://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ## Modificación del sitio de comunidad {#modifying-the-community-site}
 
-Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación de AEM estándar.
+Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación AEM estándar.
 
 Además, los administradores pueden utilizar el icono [](sites-console.md#modifying-site-properties) Editar sitio para modificar las propiedades del sitio, como el título.
 
@@ -324,9 +328,9 @@ Después de realizar cualquier modificación, recuerde **guardar** y volver a **
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
-### Agregar un catálogo {#add-a-catalog}
+### Añadir un catálogo {#add-a-catalog}
 
 La plantilla de sitio de comunidad elegida para este sitio de comunidad debe contener la función de catálogo.
 
@@ -342,7 +346,7 @@ Seleccione el panel ESTRUCTURA para agregar un catálogo o modificar uno existen
 
 * **URL**: `catalog`
 
-* **Seleccionar todos los espacios** de nombres: dejar como predeterminado.
+* **Seleccionar todas las Áreas de nombres**: dejar como predeterminado.
 * Seleccione **[!UICONTROL Guardar]**
 
 ![chlimage_1-299](assets/chlimage_1-299.png)

@@ -1,8 +1,8 @@
 ---
 title: Función de búsqueda
 seo-title: Función de búsqueda
-description: Adición y configuración de la búsqueda en un sitio de comunidades
-seo-description: Adición y configuración de la búsqueda en un sitio de comunidades
+description: Añadir y configurar la búsqueda en un sitio de comunidades
+seo-description: Añadir y configurar la búsqueda en un sitio de comunidades
 uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
 
 La función de búsqueda funciona con otras funciones, como los foros, para proporcionar la capacidad de buscar contenido.
 
-Al agregar la capacidad de buscar publicaciones ingresadas por miembros de la comunidad, denominada contenido generado por el usuario (UGC), hay dos componentes: [`Search`](#search-features) y [`Search Results`](#search-results).
+Al agregar la capacidad de buscar publicaciones ingresadas por miembros de la comunidad, denominada contenido generado por el usuario (UGC), hay dos componentes: [ `Search`](#search-features) y [`Search Results`](#search-results).
 
 La página que incluye el `Search Results` componente admite tanto la búsqueda como la visualización de resultados.
 
 La página que incluye el `Search`componente proporciona un lugar para iniciar una búsqueda con resultados que aparecen en la `Search Results` página.
 
-La función de búsqueda se puede utilizar con cualquier otra función que permita a los visitantes y miembros del sitio ver el contenido.
+La función de búsqueda puede utilizarse con cualquier otra función que permita a los visitantes y miembros del sitio vista el contenido.
 
 ## Búsqueda {#search-features}
 
-### Agregar búsqueda a una página {#add-search-to-a-page}
+### Añadir la búsqueda en una página {#add-search-to-a-page}
 
 Para agregar un `Search` componente a una página en modo de autor, utilice el navegador de componentes para ubicarlo `Communities / Search` y arrastrarlo a su lugar en una página. El uso de `Search` requiere una segunda página para el `Search Results.`
 
@@ -39,7 +42,7 @@ Cuando se incluye la biblioteca del lado del cliente requerida, `cq.social.hbs.s
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
-### Configurar la búsqueda agregada {#configure-the-added-search}
+### Configurar la búsqueda Añadida {#configure-the-added-search}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Search` `Configure` icono que abre el cuadro de diálogo de edición.
 
@@ -49,15 +52,16 @@ En la ficha Configuración **[!UICONTROL de]** búsqueda, especifique cómo se b
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
-* **[!UICONTROL Rutas]** de búsqueda Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido es limitada. Por ejemplo, para limitar la búsqueda a un foro específico, seleccione un componente de foro ubicado en una página:
+* **[!UICONTROL Rutas]** de búsqueda Al agregar rutas de búsqueda mediante el botón Añadir elemento, la búsqueda de contenido es limitada. Por ejemplo, para limitar la búsqueda a un foro específico, seleccione un componente de foro ubicado en una página:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Página]** de resultados Los resultados aparecerán en una página independiente especificada mediante el navegador para seleccionar una página que contenga el `Search Results` componente.
+* **[!UICONTROL Página]** de resultados Los resultados aparecerán en una página separada especificada mediante el explorador para seleccionar una página que contenga la variable 
+`Search Results` componente.
 
 ## Resultados de la búsqueda {#search-results}
 
-### Agregar resultados de búsqueda a una página {#add-search-results-to-a-page}
+### Añadir resultados de búsqueda en una página {#add-search-results-to-a-page}
 
 Para agregar un `Search Results` componente a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -73,7 +77,7 @@ Cuando se incluye la biblioteca del lado del cliente requerida, `cq.social.hbs.s
 
 ![chlimage_1-376](assets/chlimage_1-376.png)
 
-### Configurar el resultado de la búsqueda agregada {#configure-the-added-search-result}
+### Configurar el resultado de búsqueda Añadido {#configure-the-added-search-result}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Search Results` `Configure` icono que abre el cuadro de diálogo de edición.
 
@@ -85,7 +89,7 @@ En la ficha Configuración **[!UICONTROL de resultados de]** búsqueda, es posib
 
 * **[!UICONTROL Resultados de búsqueda por página]** Defina el número de temas/publicaciones que se muestran por página. El valor predeterminado es 10.
 
-* **[!UICONTROL Rutas]** de búsqueda Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido es limitada.
+* **[!UICONTROL Rutas]** de búsqueda Al agregar rutas de búsqueda mediante el botón Añadir elemento, la búsqueda de contenido es limitada.
 
 ## Información adicional {#additional-information}
 

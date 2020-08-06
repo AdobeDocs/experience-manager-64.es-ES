@@ -1,24 +1,27 @@
 ---
 title: Uso compartido de vínculos de recursos
-description: Cómo compartir recursos, carpetas y colecciones dentro de Recursos AEM como una URL a terceros externos.
+description: Cómo compartir recursos, carpetas y colecciones dentro de AEM Assets como una dirección URL para terceros externos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 13%
 
 ---
 
 
 # Uso compartido de vínculos de activos {#asset-link-sharing}
 
-Recursos Adobe Experience Manager (AEM) le permite compartir recursos, carpetas y colecciones como URL con miembros de su organización y entidades externas, incluidos socios y proveedores. El uso compartido de recursos a través de un vínculo es una forma práctica de poner los recursos a disposición de terceros externos sin que estos tengan que iniciar sesión en Recursos AEM en primer lugar.
+Recursos Adobe Experience Manager (AEM) permite compartir recursos, carpetas y colecciones como URL con miembros de la organización y entidades externas, incluidos socios y proveedores. El uso compartido de recursos a través de un vínculo es una forma práctica de poner los recursos a disposición de terceros externos sin que estos tengan que iniciar sesión en AEM Assets en primer lugar.
 
 >[!NOTE]
 >
 >Se requiere el permiso Editar ACL en las carpetas y recursos que se desea compartir como vínculo.
 
-## Uso compartido de recursos {#share-assets}
+## Compartir recursos {#share-assets}
 
-Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la `/var/dam/share` ubicación pueden ver los vínculos compartidos con ellos.
+Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la `/var/dam/share` ubicación pueden realizar la vista de los vínculos compartidos con ellos.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
    >[!NOTE]
    >
-   >Para compartir vínculos de AEM Author con entidades externas, exponga solo las siguientes URL utilizadas para compartir vínculos en solicitudes GET. Bloquee otras direcciones URL para asegurarse de que la implementación de AEM es segura.
+   >Para compartir vínculos de AEM Author con entidades externas, exponga solo las siguientes URL utilizadas para compartir vínculos en solicitudes de GET. Bloquee otras direcciones URL para asegurarse de que la implementación AEM es segura.
    >
    >* &lt;AEM Server>/linkshare.html
    * &lt;AEM Server>/linksharepreview.html
@@ -50,7 +53,8 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    * local
    * author
    * instancias de publicación
-   Para las propiedades `local` y `author` , proporcione la URL para la instancia local y de autor respectivamente. Tanto `local` como `author` las propiedades tienen el mismo valor si se ejecuta una única instancia de autor de AEM. Por `publish`, proporcione la URL para la instancia de publicación.
+
+   Para las propiedades `local` y `author` , proporcione la URL para la instancia local y de autor respectivamente. Tanto `local` como `author` las propiedades tienen el mismo valor si se ejecuta una única instancia de autor AEM. Por `publish`, proporcione la URL para la instancia de publicación.
 
 1. En el apartado de la dirección de correo electrónico del cuadro de diálogo **[!UICONTROL Uso compartido de vínculos]**, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. También puede compartir el vínculo con varios usuarios.
 
@@ -77,44 +81,45 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
    De forma predeterminada, los usuarios solo pueden descargar las representaciones del recurso que se comparten como vínculo.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios a través de un correo electrónico.
-1. Para ver el recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de [!UICONTROL Adobe Marketing Cloud] .
+1. Para vista del recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de [!UICONTROL Adobe Marketing Cloud] .
 
    ![Los recursos compartidos están disponibles en Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
    Para cambiar a la vista de lista, toque o haga clic en el icono de diseño de la barra de herramientas.
 
-1. Para generar una vista previa del recurso, pulse o haga clic en el recurso compartido. Toque o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas para cerrar la vista previa y volver a la página de [!UICONTROL Marketing Cloud] . Si ha compartido una carpeta, pulse o haga clic en **[!UICONTROL Carpeta principal]** para regresar a la carpeta principal.
+1. Para generar una vista previa del recurso, pulse o haga clic en el recurso compartido. Toque o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas para cerrar la previsualización y volver a la página de [!UICONTROL Marketing Cloud] . Si ha compartido una carpeta, pulse o haga clic en **[!UICONTROL Carpeta principal]** para regresar a la carpeta principal.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM admite la generación de la vista previa de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
+   AEM permite generar la previsualización de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
 
 1. Para descargar el recurso compartido, toque o haga clic en el icono **[!UICONTROL Seleccionar]** de la barra de herramientas, toque o haga clic en el recurso y, a continuación, toque o haga clic en **[!UICONTROL Descargar]** de la barra de herramientas.
 
    ![Opción de barra de herramientas para descargar el recurso compartido](assets/chlimage_1-547.png)
 
-1. Para ver los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque o haga clic en el icono de **[!UICONTROL GlobalNav]** . Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
+1. Para vista de los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque o haga clic en el icono de **[!UICONTROL GlobalNav]** . Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
 1. En el panel Navegación, seleccione **[!UICONTROL Vínculos compartidos]** para mostrar una lista de recursos compartidos.
 1. Para dejar de compartir un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. Un mensaje confirma que se ha dejado de compartir el recurso. Además, la entrada del recurso se elimina de la lista.
 
 ## Configurar el servicio de correo de CQ Day {#configure-day-cq-mail-service}
 
 1. Pulse o haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
-1. En la lista de servicios, busque **[!UICONTROL Day CQ Mail Service]**.
+1. En la lista de servicios, localice **[!UICONTROL Day CQ Mail Service]**.
 1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nombre de host del servidor SMTP: nombre de host del servidor de correo electrónico
    * Puerto del servidor SMTP: puerto del servidor de correo electrónico
    * Usuario SMTP: nombre de usuario del servidor de correo electrónico
    * Contraseña SMTP: contraseña del servidor de correo electrónico
+
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
 1. Click/tap **[!UICONTROL Save]**.
 
 ## Configurar el tamaño máximo de datos {#configure-maximum-data-size}
 
-Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, AEM comprime toda la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
+Al descargar recursos del vínculo compartido mediante la función Compartir vínculos, AEM comprime toda la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, configure el tamaño máximo usando el parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** para el servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** en Configuration Manager. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
 
 1. Haga clic o pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
 1. Desde la consola web, busque la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** .

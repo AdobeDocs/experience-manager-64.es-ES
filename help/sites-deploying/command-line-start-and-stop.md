@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 4%
 
 ---
 
@@ -66,7 +69,7 @@ Estas dos versiones admiten una lista de variables de entorno que podrían utili
 
 >[!CAUTION]
 >
->Tenga en cuenta que algunos modos de ejecución, entre ellos la creación y publicación, deben establecerse antes de iniciar AEM por primera vez y no pueden cambiarse posteriormente. Antes de configurar una instancia de AEM que se supone se va a utilizar en producción, consulte la documentación [de modos de](/help/sites-deploying/configure-runmodes.md) ejecución para obtener más información.
+>Tenga en cuenta que algunos modos de ejecución, entre ellos la creación y la publicación, deben establecerse antes de iniciar la primera AEM y no pueden cambiarse posteriormente. Antes de configurar una instancia de AEM que se supone se debe utilizar en producción, consulte la documentación [de modos de](/help/sites-deploying/configure-runmodes.md) ejecución para obtener más información.
 
 ### Ejemplo de secuencia de comandos inicio.bat de la plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -82,7 +85,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->La secuencia de comandos de inicio inicia AEM Quickstart instalado en *la carpeta &lt;cq-installation>/app* .
+>La secuencia de comandos de inicio inicia el AEM Quickstart instalado en *la carpeta &lt;cq-installation>/app* .
 
 ## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -90,10 +93,10 @@ Para detener AEM, realice una de las siguientes acciones:
 
 * Según la plataforma que utilice:
 
-   * Si ha iniciado AEM desde un script o desde la línea de comandos, pulse **Ctrl+C** para cerrar el servidor.
-   * Si ha utilizado el script de inicio en UNIX, debe utilizar el script stop para detener AEM.
+   * Si ha empezado a AEM desde una secuencia de comandos o la línea de comandos, pulse **Ctrl+C** para apagar el servidor.
+   * Si ha utilizado el script inicio en UNIX, debe utilizar el script stop para detener AEM.
 
-* Si ha iniciado AEM haciendo clic con el doble en el archivo jar, haga clic en el botón **Activado** de la ventana de inicio (el botón cambia a **Desactivado**) para apagar el servidor.
+* Si ha empezado a AEM haciendo clic con el doble en el archivo jar, haga clic en el botón **Activado** de la ventana de inicio (el botón luego cambia a **Desactivado**) para apagar el servidor.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 

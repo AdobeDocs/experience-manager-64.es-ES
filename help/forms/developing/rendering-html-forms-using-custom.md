@@ -1,6 +1,6 @@
 ---
-title: Representación de formularios HTML mediante archivos CSS personalizados
-seo-title: Representación de formularios HTML mediante archivos CSS personalizados
+title: Representación de HTML en Forms mediante archivos CSS personalizados
+seo-title: Representación de HTML en Forms mediante archivos CSS personalizados
 description: nulo
 seo-description: nulo
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
@@ -12,15 +12,18 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
 source-git-commit: e2a6f76d8fa34b2b97713aaef094a2df8164e746
+workflow-type: tm+mt
+source-wordcount: '1640'
+ht-degree: 0%
 
 ---
 
 
-# Representación de formularios HTML mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
+# Representación de HTML en Forms mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
 
-El servicio Forms procesa formularios HTML en respuesta a una solicitud HTTP de un explorador web. Al procesar un formulario HTML, el servicio Forms puede hacer referencia a un archivo CSS personalizado. Puede crear un archivo CSS personalizado para cumplir los requisitos comerciales y hacer referencia a dicho archivo CSS cuando utilice el servicio Forms para procesar formularios HTML.
+El servicio Forms procesa formularios HTML en respuesta a una solicitud HTTP procedente de un navegador web. Al procesar un formulario HTML, el servicio de Forms puede hacer referencia a un archivo CSS personalizado. Puede crear un archivo CSS personalizado para cumplir los requisitos comerciales y hacer referencia a ese archivo CSS cuando utilice el servicio Forms para procesar formularios HTML.
 
-El servicio Forms analiza en silencio el archivo CSS personalizado. Es decir, el servicio Forms no informa de los errores que se pueden encontrar si el archivo CSS personalizado no cumple con los estándares CSS. En este caso, el servicio Forms ignora el estilo y continúa con los estilos restantes que se encuentran en el archivo CSS.
+El servicio Forms analiza en silencio el archivo CSS personalizado. Es decir, el servicio de Forms no informa de los errores que puedan producirse si el archivo CSS personalizado no cumple con los estándares CSS. En este caso, el servicio Forms ignora el estilo y continúa con el resto de estilos que se encuentran en el archivo CSS.
 
 La siguiente lista especifica los estilos que se admiten en un archivo CSS personalizado:
 
@@ -34,18 +37,18 @@ Puede recuperar un archivo CSS de ejemplo mediante la aplicación FormsIVS. Carg
 
 >[!NOTE]
 >
->Antes de procesar un formulario HTML que utilice un archivo CSS personalizado, es importante que tenga una sólida comprensión del procesamiento de formularios HTML. (Consulte [Representación de formularios como HTML](/help/forms/developing/rendering-forms-html.md)).
+>Antes de procesar un formulario HTML que utilice un archivo CSS personalizado, es importante que tenga una sólida comprensión del procesamiento de formularios HTML. (Consulte [Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)).
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
 Para procesar un formulario HTML que utilice un archivo CSS, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un objeto de API de Java de Forms.
+1. Cree un objeto de API Java de Forms.
 1. Haga referencia al archivo CSS.
 1. Representar un formulario HTML.
 1. Escriba la secuencia de datos del formulario en el navegador web del cliente.
@@ -54,9 +57,9 @@ Para procesar un formulario HTML que utilice un archivo CSS, realice las siguien
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios Web, asegúrese de incluir los archivos proxy.
 
-**Creación de un objeto de API de Java de Forms**
+**Creación de un objeto de API de Forms Java**
 
-Para poder realizar mediante programación una operación admitida por el servicio Forms, debe crear un objeto de cliente Forms.
+Para poder realizar mediante programación una operación admitida por el servicio Forms, debe crear un objeto de cliente de Forms.
 
 **Hacer referencia al archivo CSS**
 
@@ -80,23 +83,23 @@ Cuando el servicio Forms procesa un formulario HTML, devuelve una secuencia de d
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Representación de formularios como HTML](/help/forms/developing/rendering-forms-html.md)
+[Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Representar un formulario HTML que utiliza un archivo CSS mediante la API de Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-Representar un formulario HTML que utiliza un archivo CSS personalizado mediante la API de formularios (Java):
+Representar un formulario HTML que utiliza un archivo CSS personalizado mediante la API de Forms (Java):
 
 1. Incluir archivos de proyecto
 
    Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clases del proyecto Java.
 
-1. Creación de un objeto de API de Java de Forms
+1. Creación de un objeto de API de Forms Java
 
    * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
    * Cree un `FormsServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
@@ -110,13 +113,14 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
    Invoque el `FormsServiceClient` método del `(Deprecated) (Deprecated) renderHTMLForm` objeto y pase los valores siguientes:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un valor `TransformTo` enum que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
    * Un `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un `com.adobe.idp.Document` objeto vacío.
    * El `HTMLRenderSpec` objeto que almacena las opciones de tiempo de ejecución HTML.
    * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `(Deprecated) renderHTMLForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -131,7 +135,7 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 **Consulte también**
 
-[Representación de formularios HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
+[Representación de HTML en Forms mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
 
 [Inicio rápido (modo SOAP): Representación de un formulario HTML que utiliza un archivo CSS mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
@@ -141,14 +145,14 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 ## Representar un formulario HTML que utiliza un archivo CSS mediante la API de servicio web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
-Representar un formulario HTML que utiliza un archivo CSS personalizado mediante la API de formularios (servicio web):
+Representar un formulario HTML que utiliza un archivo CSS personalizado mediante la API de Forms (servicio web):
 
 1. Incluir archivos de proyecto
 
-   * Cree clases proxy de Java que consuman el WSDL del servicio Forms.
+   * Cree clases proxy de Java que consuman el WSDL del servicio de Forms.
    * Incluya las clases proxy de Java en la ruta de clases.
 
-1. Creación de un objeto de API de Java de Forms
+1. Creación de un objeto de API de Forms Java
 
    Cree un `FormsService` objeto y defina los valores de autenticación.
 
@@ -161,9 +165,9 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
    Invoque el `FormsService` método del `(Deprecated) renderHTMLForm` objeto y pase los valores siguientes:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un valor `TransformTo` enum que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de formularios con diseños](/help/forms/developing/prepopulating-forms-flowable-layouts.md)de posición variable).
+   * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de Forms con diseños](/help/forms/developing/prepopulating-forms-flowable-layouts.md)de posición variable).
    * El `HTMLRenderSpec` objeto que almacena las opciones de tiempo de ejecución HTML.
    * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Puede pasar una cadena vacía si no desea establecer este valor.
    * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
@@ -174,6 +178,7 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este argumento almacena el valor de configuración regional.
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este argumento almacena el valor de representación HTML que se utiliza.
    * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+
    El `(Deprecated) renderHTMLForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -188,6 +193,6 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 **Consulte también**
 
-[Representación de formularios HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
+[Representación de HTML en Forms mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

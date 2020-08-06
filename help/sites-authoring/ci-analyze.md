@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 94%
 
 ---
 
@@ -83,7 +86,7 @@ El estado de la recomendación de SEO indica cuándo se ha creado la tarea, pero
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre las tareas, consulte [Trabajo con tareas](/help/sites-authoring/task-content.md).
+Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre tareas, consulte [Uso de Tareas](/help/sites-authoring/task-content.md).
 
 Siga el procedimiento que aparece a continuación para crear una tarea para una recomendación de SEO.
 

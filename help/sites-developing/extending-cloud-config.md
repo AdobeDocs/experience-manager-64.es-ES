@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +29,7 @@ Puede ampliar las instancias existentes para crear sus propias configuraciones.
 Los principios utilizados para desarrollar las configuraciones se han basado en los siguientes conceptos:
 
 * Los servicios y adaptadores se utilizan para recuperar las configuraciones.
-* Las configuraciones (por ejemplo, propiedades o párrafos) se heredan de los elementos principales.
+* Las configuraciones (p. ej., propiedades/párrafos) se heredan de los elementos principales.
 * Se hace referencia desde los nodos de análisis por ruta.
 * Fácilmente extensible.
 * Tiene la flexibilidad de adaptarse a configuraciones más complejas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
@@ -59,7 +62,7 @@ o componente base respectivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
-El proveedor de servicios también debe proporcionar la página de servicio:
+El proveedor de servicio también debe proporcionar la página de servicio:
 
 `/etc/cloudservices/<service-name>`
 
@@ -139,7 +142,7 @@ Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm
 
 ### Integración de AEM {#aem-integration}
 
-Los servicios disponibles se enumeran en la ficha Servicios **de** nube del cuadro de diálogo Propiedades **de la** página (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
+Los servicios disponibles se enumeran en la ficha **Cloud Services** del cuadro de diálogo Propiedades **de la** página (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
 
 La ficha también proporciona:
 
@@ -174,7 +177,7 @@ La propiedad será cifrada automáticamente (mediante el `CryptoSupport` servici
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde<br /> se incluye (normalmente antes de la <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> <code>body</code> etiqueta).<br /> En el caso de que Analytics y Target se utilicen para incluir funcionalidad adicional, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td> 
+   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde<br /> se incluye (normalmente antes de la <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> <code>body</code> etiqueta).<br /> En el caso de que el uso de Analytics y Destinatario lo utilice para incluir funcionalidad adicional, como llamadas de JavaScript para rastrear el comportamiento del visitante.</td> 
   </tr> 
   <tr> 
    <td>Descripción</td> 
@@ -223,5 +226,5 @@ Estos servicios se proporcionan de forma predeterminada:
 
 >[!NOTE]
 >
->Consulte también [Creación de un servicio](/help/sites-developing/extending-cloud-config-custom-cloud.md)de nube personalizado.
+>Consulte también [Creación de un Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)personalizado.
 

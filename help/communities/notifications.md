@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -19,26 +22,26 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## Información general {#overview}
 
-Comunidades de AEM proporciona una sección de notificaciones que muestra los eventos de interés para el miembro de la comunidad que ha firmado.
+AEM Communities proporciona una sección de notificaciones que muestra eventos de interés para el miembro de la comunidad que ha firmado.
 
-Las notificaciones son similares a [las actividades](essentials-activities.md) y [suscripciones](subscriptions.md) que pueden resultar de
+Las notificaciones son similares a [actividades](essentials-activities.md) y [suscripciones](subscriptions.md) que pueden resultar de
 
 * El miembro que publica contenido
 * El miembro que decide seguir a otro miembro
 * El miembro decide seguir temas específicos, artículos y otros hilos de contenido
 
-Lo que distingue las notificaciones de las actividades y las suscripciones es
+Lo que distingue las notificaciones de las actividades y suscripciones es
 
 * Siempre hay un vínculo a la sección de notificaciones en el encabezado de un sitio de comunidad
-   * Las actividades requieren que la función [de flujo de](functions.md#activity-stream-function) actividad se incluya en la estructura del sitio de la comunidad
-   * Las suscripciones requieren [la configuración del correo electrónico](email.md)
-* La implementación de las notificaciones se realiza a través de canales escalables y conectables
-   * Las actividades solo están disponibles en la web
-   * Las suscripciones solo están disponibles mediante correo electrónico
+   * Las Actividades requieren que la función [de flujo de](functions.md#activity-stream-function) actividad se incluya en la estructura del sitio de la comunidad
+   * Las Suscripciones requieren [la configuración del correo electrónico](email.md)
+* La implementación de las notificaciones se realiza mediante canales escalables y conectables
+   * Las Actividades solo están disponibles en la web
+   * Las Suscripciones solo están disponibles mediante correo electrónico
 
-A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), los canales de notificación disponibles son
+A partir del [PM1](deploy-communities.md#latestfeaturepack)de las Comunidades, los canales de notificación disponibles son
 
-* Canal web al que se accede mediante el `Notifications` vínculo
+* El canal web, al que se accede mediante el `Notifications` vínculo
 * El canal de correo electrónico, disponible cuando el correo electrónico está configurado correctamente
 
 Los canales futuros son móviles y de escritorio.
@@ -107,7 +110,7 @@ Al visitar el sitio publicado, al seleccionar el `Notifications` vínculo se mos
 
 ### Notificaciones de correo electrónico {#email-notifications}
 
-Cuando el canal de correo electrónico está habilitado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
+Cuando el canal de correo electrónico está activado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 

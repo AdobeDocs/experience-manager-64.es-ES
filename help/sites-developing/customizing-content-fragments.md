@@ -1,6 +1,6 @@
 ---
-title: Personalización y ampliación de fragmentos de contenido
-seo-title: Personalización y ampliación de fragmentos de contenido
+title: Personalizar y ampliar fragmentos de contenido
+seo-title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 seo-description: Un fragmento de contenido amplía un recurso estándar.
 uuid: f8d0bb22-0b51-4488-a1c8-29e50213c913
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: af95c6c7-0475-4f55-88a8-ec5e39a9ddcd
 translation-type: tm+mt
 source-git-commit: c93c1754a44a2f18c27caf4b50888bdd09d26f7c
+workflow-type: tm+mt
+source-wordcount: '2759'
+ht-degree: 1%
 
 ---
 
 
-# Personalización y ampliación de fragmentos de contenido{#customizing-and-extending-content-fragments}
+# Personalizar y ampliar fragmentos de contenido{#customizing-and-extending-content-fragments}
 
 >[!CAUTION]
 >
@@ -50,6 +53,7 @@ Según el tipo de fragmento, también se utilizan modelos o plantillas:
    * Un fragmento hace referencia al modelo; por lo tanto, los cambios en el modelo pueden/afectarán a cualquier fragmento dependiente.
    * Los modelos están compuestos por tipos de datos.
    * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
+
    >[!CAUTION]
    >
    >Cualquier cambio en un modelo de fragmento de contenido existente puede afectar a los fragmentos dependientes; esto puede llevar a propiedades huérfanas en esos fragmentos.
@@ -60,15 +64,15 @@ Según el tipo de fragmento, también se utilizan modelos o plantillas:
    * Las plantillas definen la estructura (básica, de solo texto) de un fragmento de contenido cuando se crea.
    * La plantilla se copia en el fragmento cuando se crea; por lo tanto, los cambios adicionales en la plantilla no se reflejarán en los fragmentos existentes.
    * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
-   * [Las plantillas](/help/sites-developing/content-fragment-templates.md) de fragmento de contenido funcionan de forma distinta a la de otros mecanismos de plantilla del ecosistema de AEM (por ejemplo, plantillas de página, etc.). Por lo tanto, deben considerarse por separado.
+   * [Las plantillas](/help/sites-developing/content-fragment-templates.md) de fragmento de contenido funcionan de una manera diferente a la de otros mecanismos de plantilla dentro del ecosistema AEM (por ejemplo, plantillas de página, etc.). Por lo tanto, deben considerarse por separado.
    * Cuando se basa en una plantilla, el tipo MIME del contenido se administra en el contenido real; esto significa que cada elemento y variación puede tener un tipo MIME diferente.
 
 ## Integración con recursos {#integration-with-assets}
 
-Content Fragment Management (CFM) forma parte de Recursos AEM como:
+Content Fragment Management (CFM) es parte de AEM Assets como:
 
 * Los fragmentos de contenido son recursos.
-* Utilizan la funcionalidad Recursos existente.
+* Utilizan la funcionalidad de Recursos existente.
 * Están totalmente integrados con Recursos (consolas de administración, etc.).
 
 ### Asignación de fragmentos de contenido estructurado a recursos {#mapping-structured-content-fragments-to-assets}
@@ -89,8 +93,7 @@ Los fragmentos de contenido con contenido estructurado (es decir, basados en un 
 
    * Los datos de cada elemento se almacenan en el subnodo correspondiente como una propiedad con el nombre del elemento:
 
-      
-Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
+      Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
 
 * Los metadatos y el contenido asociado se almacenan a continuación `jcr:content/metadata`
 
@@ -125,7 +128,7 @@ Para obtener más información, consulte Fragmento [de contenido - Eliminar cons
 ### Integración de funciones {#feature-integration}
 
 * La función Administración de fragmentos de contenido (CFM) se basa en el núcleo de recursos, pero debe ser lo más independiente posible.
-* CFM proporciona sus propias implementaciones para los elementos en las vistas de tarjeta, columna o lista; estos complementos se conectan a las implementaciones de representación de contenido de Recursos existentes.
+* CFM proporciona sus propias implementaciones para los elementos de las vistas de tarjeta/columna/lista; estos complementos se conectan a las implementaciones de representación de contenido de Recursos existentes.
 * Se han ampliado varios componentes de Recursos para incluir fragmentos de contenido.
 
 ## Uso de fragmentos de contenido en páginas {#using-content-fragments-in-pages}
@@ -134,7 +137,7 @@ Para obtener más información, consulte Fragmento [de contenido - Eliminar cons
 >
 >Ahora se recomienda el componente [principal del fragmento de](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) contenido. Consulte [Desarrollo de componentes](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principales para obtener más detalles.
 
-Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, al igual que a cualquier otro tipo de recurso. AEM proporciona el componente [**principal Fragmento **de](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)contenido, un[componente que permite incluir fragmentos de contenido en las páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar el componente principal de este fragmento** de contenido **.
+Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, al igual que a cualquier otro tipo de recurso. AEM proporciona el componente [**principal Fragmento **de](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)contenido, un[componente que permite incluir fragmentos de contenido en las páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar el componente principal de este fragmento** de contenido **.
 
 * El componente utiliza la propiedad `fragmentPath` para hacer referencia al fragmento de contenido real. La `fragmentPath` propiedad se gestiona del mismo modo que otras propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
@@ -166,7 +169,7 @@ Los parámetros para esto se pueden configurar en la consola [](/help/sites-depl
 
 * **Tipos de recursos**
 
-   Se puede proporcionar una lista de `sling:resourceTypes` componentes para definir los componentes que se utilizan para procesar fragmentos de contenido y a los que se debe aplicar el procesamiento en segundo plano.
+   Se puede proporcionar una lista de `sling:resourceTypes` para definir los componentes que se utilizan para procesar fragmentos de contenido y a los que se debe aplicar el procesamiento en segundo plano.
 
 * **Propiedades de referencia**
 
@@ -186,9 +189,9 @@ Aún hay algunas directrices que debe seguir para garantizar que el componente s
 
 * El nombre de la propiedad donde se define la variación que se va a representar debe ser `variation` o `variationName`.
 
-* Si se admite la salida de varios elementos (mediante `elementNames` la especificación de varios elementos), el modo de visualización real se define mediante la propiedad `displayMode`:
+* Si se admite la salida de varios elementos (mediante el uso `elementNames` para especificar varios elementos), el modo de visualización real se define mediante la propiedad `displayMode`:
 
-   * Si el valor es `singleText` (y sólo hay un elemento configurado), el elemento se procesa como texto con contenido intermedio, compatibilidad con el diseño, etc. Este es el valor predeterminado para los fragmentos en los que solo se procesa un solo elemento.
+   * Si el valor es `singleText` (y sólo hay un elemento configurado), el elemento se procesa como texto con contenido intermedio, compatibilidad con el diseño, etc. Es el valor predeterminado para los fragmentos en los que solo se procesa un solo elemento.
    * De lo contrario, se utiliza un enfoque mucho más sencillo (podría denominarse &quot;vista de formulario&quot;), en el que no se admite contenido intermedio y el contenido del fragmento se representa &quot;tal cual&quot;.
 
 * Si el fragmento se procesa para `displayMode` == `singleText` (implícita o explícitamente), se activan las siguientes propiedades adicionales:
@@ -202,7 +205,7 @@ Los fragmentos de contenido se pueden integrar con:
 
 * **Traducciones**
 
-   Los fragmentos de contenido están totalmente integrados con el flujo de trabajo [de traducción de](/help/sites-administering/tc-manage.md)AEM. A nivel arquitectónico, esto significa:
+   Los fragmentos de contenido están totalmente integrados con el flujo de trabajo [de traducción](/help/sites-administering/tc-manage.md)AEM. A nivel arquitectónico, esto significa:
 
    * Las traducciones individuales de un fragmento de contenido son en realidad fragmentos independientes; por ejemplo:
 
@@ -224,7 +227,7 @@ Los fragmentos de contenido se pueden integrar con:
    * Además de las rutas basadas en reglas, no hay más conexión entre las distintas versiones de idioma de un fragmento de contenido; se gestionan como dos fragmentos independientes, aunque la interfaz de usuario proporciona los medios para desplazarse entre las variantes de idioma.
    >[!NOTE]
    >
-   >El flujo de trabajo de traducción de AEM funciona con `/content`:
+   >El flujo de trabajo de traducción AEM funciona con `/content`:
    >
    >  * Dado que los modelos de fragmentos de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede [internacionalizar las cadenas](/help/sites-developing/i18n-dev.md)de la interfaz de usuario.
    >  * Las plantillas se copian para crear el fragmento de modo que quede implícito.
@@ -233,7 +236,7 @@ Los fragmentos de contenido se pueden integrar con:
 * **Esquemas de metadatos**
 
    * Los fragmentos de contenido (re)utilizan los esquemas [de](/help/assets/metadata-schemas.md)metadatos, que se pueden definir con recursos estándar.
-* CFM proporciona su propio esquema específico:
+* CFM ofrece su propio esquema específico:
 
    `/libs/dam/content/schemaeditors/forms/contentfragment`
 
@@ -270,20 +273,22 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
 
    * un modelo de fragmento de contenido o una plantilla de fragmento de contenido desde la cual crear un fragmento de contenido,
    * y (después de la creación) la información estructural de dicho fragmento
+
    Esta información puede incluir:
 
    * Acceso a datos básicos (título, descripción)
    * Obtenga acceso a plantillas y modelos para los elementos del fragmento:
 
-      * Plantillas de elementos de lista
+      * Plantillas de elementos de Lista
       * Obtener información estructural para un elemento determinado
       * Acceso a la plantilla de elementos (consulte `ElementTemplate`)
    * Acceder a plantillas para las variaciones del fragmento:
 
-      * Mostrar plantillas de variación
+      * Plantillas de variación de Lista
       * Obtener información estructural para una variación determinada
       * Acceso a la plantilla de variación (consulte `VariationTemplate`)
    * Obtener contenido asociado inicial
+
    Interfaces que representan información importante:
 
    * `ElementTemplate`
@@ -315,18 +320,19 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
    * Acceso a metadatos
    * Elementos de acceso:
 
-      * Elementos de lista
+      * Elementos de Lista
       * Obtener elementos por nombre
       * Crear nuevos elementos (consulte [Advertencias](#caveats))
       * Acceso a datos de elementos (consulte `ContentElement`)
-   * Variaciones de lista definidas para el fragmento
+   * Variaciones de Lista definidas para el fragmento
    * Crear nuevas variaciones globalmente
    * Administrar contenido asociado:
 
-      * Colecciones de lista
-      * Agregar colecciones
+      * Colecciones de Lista
+      * Añadir colecciones
       * Eliminar colecciones
    * Acceso al modelo o plantilla del fragmento
+
    Las interfaces que representan los elementos principales de un fragmento son:
 
    * **Elemento Contenido**
@@ -337,12 +343,12 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
       * Obtener o definir contenido
       * Variaciones de acceso de un elemento:
 
-         * Variaciones de lista
+         * Variaciones de Lista
          * Obtener variaciones por nombre
          * Crear nuevas variaciones (consulte [Advertencias](#caveats))
          * Eliminar variaciones (consulte [Advertencias](#caveats))
          * Acceso a los datos de variación (consulte `ContentVariation`)
-      * Método abreviado para resolver variaciones (aplicando alguna lógica adicional de reserva específica para la implementación si la variación especificada no está disponible para un elemento)
+      * Método abreviado para resolver variaciones (aplicando alguna lógica adicional de reserva específica de implementación si la variación especificada no está disponible para un elemento)
    * **Variación de contenido**
 
       <pre><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html">ContentVariation</a></pre>
@@ -350,10 +356,11 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
       * Obtener datos básicos (nombre, título, descripción)
       * Obtener o definir contenido
       * Sincronización simple, basada en la información modificada por última vez
+
    Las tres interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) amplían la `Versionable` interfaz, que agrega capacidades de creación de versiones, necesarias para los fragmentos de contenido:
 
    * Crear nueva versión del elemento
-   * Mostrar las versiones del elemento
+   * Versiones de Lista del elemento
    * Obtener el contenido de una versión específica del elemento con versiones
 
 
@@ -452,7 +459,7 @@ Los procesos involucrados son:
 * Edición
 
    * Todos los cambios (guardado automático incluido) se realizan en el fragmento de contenido activo, no en un área separada y protegida.
-   * Por lo tanto, estos cambios se reflejan inmediatamente en las páginas de AEM que hacen referencia al fragmento de contenido correspondiente
+   * Por lo tanto, esos cambios se reflejan inmediatamente en AEM páginas que hacen referencia al fragmento de contenido correspondiente
 
 ### Acciones {#actions}
 

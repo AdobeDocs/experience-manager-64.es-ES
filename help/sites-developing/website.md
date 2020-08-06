@@ -29,7 +29,7 @@ Este tutorial le permite crear un sitio web con todas las funciones con Adobe Ex
 Este tutorial describe cómo:
 
 1. Instale AEM.
-1. Acceda a CRXDE Lite (el entorno de desarrollo).
+1. CRXDE Lite de acceso (el entorno de desarrollo).
 1. Configure la estructura del proyecto en CRXDE Lite.
 1. Cree la plantilla, el componente y las secuencias de comandos que se utilizan como base para crear páginas de contenido.
 1. Cree la página raíz del sitio web y, a continuación, las páginas de contenido.
@@ -50,7 +50,7 @@ Después de realizar todos los pasos, las páginas tendrán el siguiente aspecto
 
 **Descargar el resultado final**
 
-Para seguir el tutorial en lugar de realizar los ejercicios, descargue el sitio web-1.0.zip. Este archivo es un paquete de contenido de AEM que contiene los resultados de este tutorial. Utilice el Administrador [de paquetes](/help/sites-administering/package-manager.md) para instalar el paquete en la instancia de creación.
+Para seguir el tutorial en lugar de realizar los ejercicios, descargue el sitio web-1.0.zip. Este archivo es un paquete de contenido AEM que contiene los resultados de este tutorial. Utilice el Administrador [de paquetes](/help/sites-administering/package-manager.md) para instalar el paquete en la instancia de creación.
 
 >[!NOTE]
 >La instalación de este paquete sobrescribirá los recursos de la instancia de creación que haya creado con este tutorial.
@@ -61,9 +61,9 @@ Paquete de contenido del sitio web
 
 ## Installing Adobe Experience Manager {#installing-adobe-experience-manager}
 
-Para instalar una instancia de AEM para desarrollar el sitio web, siga las instrucciones para configurar un entorno [de implementación con instancias](/help/sites-deploying/deploy.md#author-and-publish-installs)de creación y publicación, o realice una instalación [](/help/sites-deploying/deploy.md#default-local-install)genérica. La instalación genérica implica descargar el archivo JAR de inicio rápido de AEM, colocar el archivo license.properties en el mismo directorio que el archivo JAR y hacer clic con el doble en el archivo JAR.
+Para instalar una instancia de AEM para desarrollar el sitio web, siga las instrucciones para configurar un entorno [de implementación con instancias](/help/sites-deploying/deploy.md#author-and-publish-installs)de creación y publicación, o realice una instalación [](/help/sites-deploying/deploy.md#default-local-install)genérica. La instalación genérica implica descargar el archivo JAR de inicio rápido AEM, colocar el archivo license.properties en el mismo directorio que el archivo JAR y hacer clic con el doble en el archivo JAR.
 
-Después de instalar AEM, acceda al entorno de desarrollo de CRXDE Lite haciendo clic en el vínculo de CRXDE Lite en la página de bienvenida:
+Después de instalar AEM, acceda al entorno de desarrollo de CRXDE Lite haciendo clic en el vínculo CRXDE Lite en la página de bienvenida:
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -75,7 +75,7 @@ Después de instalar AEM, acceda al entorno de desarrollo de CRXDE Lite haciendo
 
 Utilice CRXDE Lite para crear la estructura de la aplicación mywebsite en el repositorio:
 
-1. En el árbol de la parte izquierda de CRXDE Lite, haga clic con el botón secundario en la **`/apps`** carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **Crear carpeta** , escriba `mywebsite` como nombre de carpeta y haga clic en **[!UICONTROL OK**.
+1. En el árbol de la parte izquierda del CRXDE Lite, haga clic con el botón secundario en la **`/apps`** carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **Crear carpeta** , escriba `mywebsite` como nombre de carpeta y haga clic en **[!UICONTROL OK**.
 1. Haga clic con el botón secundario en la `/apps/mywebsite` carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , escriba `components` como nombre de carpeta y haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic con el botón secundario en la `/apps/mywebsite` carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , escriba `templates` como nombre de carpeta y haga clic en **[!UICONTROL Aceptar]**.
 
@@ -123,7 +123,7 @@ Cree una plantilla para utilizarla como base de las páginas web del sitio.
 
 Una plantilla define el contenido predeterminado de una nueva página. Los sitios Web complejos pueden utilizar varias plantillas para crear los distintos tipos de páginas del sitio. En este ejercicio, todas las páginas se basan en una plantilla sencilla.
 
-1. En el árbol de carpetas de CRXDE Lite, haga clic con el botón derecho `/apps/mywebsite/templates` y, a continuación, haga clic en **[!UICONTROL Crear > Crear plantilla]**.
+1. En el árbol de carpetas del CRXDE Lite, haga clic con el botón secundario `/apps/mywebsite/templates` y, a continuación, haga clic en **[!UICONTROL Crear > Crear plantilla]**.
 
 1. En el cuadro de diálogo Crear plantilla, escriba los valores siguientes y haga clic en **[!UICONTROL Siguiente]**:
 
@@ -274,7 +274,7 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
 
 ### Mejora del script Contentpage {#enhancing-the-contentpage-script}
 
-En esta sección se describe cómo mejorar el script de página de contenido mediante los scripts del componente de base de AEM y escribiendo sus propios scripts.
+En esta sección se describe cómo mejorar la secuencia de comandos de la página de contenido mediante los scripts del componente de base de AEM y escribiendo sus propios scripts.
 
 La página **[!UICONTROL Productos]** tendrá el siguiente aspecto:
 
@@ -282,7 +282,7 @@ La página **[!UICONTROL Productos]** tendrá el siguiente aspecto:
 
 #### Uso de los scripts de página de base {#using-the-foundation-page-scripts}
 
-En este ejercicio, puede configurar el componente de contenido de página para que su supertipo sea el componente de página de AEM. Dado que los componentes heredan las características de su supertipo, el contenido de la página hereda las secuencias de comandos y las propiedades del componente Página.
+En este ejercicio, se configura el componente de contenido de página para que su supertipo sea el componente de página de AEM. Dado que los componentes heredan las características de su supertipo, el contenido de la página hereda las secuencias de comandos y las propiedades del componente Página.
 
 Por ejemplo, en el código JSP del componente, puede hacer referencia a las secuencias de comandos que proporciona el componente de supertipo como si se incluyeran en el componente.
 
@@ -325,7 +325,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a las secu
 
 #### Uso de sus propios scripts {#using-your-own-scripts}
 
-En esta sección se crean varias secuencias de comandos que generan una parte del cuerpo de la página. A continuación, cree el archivo body.jsp en el componente pagecontent para anular body.jsp del componente Página AEM. En el archivo body.jsp, se incluyen las secuencias de comandos que generan las distintas partes del cuerpo de la página.
+En esta sección se crean varias secuencias de comandos que generan una parte del cuerpo de la página. A continuación, cree el archivo body.jsp en el componente pagecontent para anular el body.jsp del componente Página AEM. En el archivo body.jsp, se incluyen las secuencias de comandos que generan las distintas partes del cuerpo de la página.
 
 **Sugerencia:** Cuando un componente incluye un archivo con el mismo nombre y la misma ubicación relativa que un archivo del supertipo del componente, se le llama *superposición*.
 
@@ -415,7 +415,7 @@ La navegación superior tendrá el siguiente aspecto:
 
 #### Creación del componente de navegación superior {#creating-the-top-navigation-component-1}
 
-1. En CRXDE Lite, haga clic con el botón derecho `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
+1. En CRXDE Lite, haga clic con el botón secundario `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
 1. En la ventana **[!UICONTROL Crear componente]** , introduzca lo siguiente:
 
    * **[!UICONTROL Etiqueta]**: `topnav`
@@ -428,7 +428,7 @@ La navegación superior tendrá el siguiente aspecto:
 
 Añada la secuencia de comandos de procesamiento a topnav para generar vínculos de texto a páginas secundarias:
 
-1. En CRXDE Lite, abra el archivo `topnav.jsp` debajo de `/apps/mywebsite/components/topnav`.
+1. En CRXDE Lite, abra el archivo `topnav.jsp` en `/apps/mywebsite/components/topnav`.
 1. Reemplace el código que hay copiando y pegando el siguiente código:
 
    ```xml
@@ -455,7 +455,7 @@ Añada la secuencia de comandos de procesamiento a topnav para generar vínculos
 
 Para incluir topnav en el componente contentpage:
 
-1. En CRXDE Lite, abra la `body.jsp` parte inferior `/apps/mywebsite/components/contentpage`y reemplace:
+1. En CRXDE Lite, abra la `body.jsp` parte inferior `/apps/mywebsite/components/contentpage`y sustituya:
 
    ```xml
    <div class="topnav">topnav</div>
@@ -500,7 +500,7 @@ Por ejemplo, el origen del vínculo de imagen a la página Productos podría ser
 
 En este ejercicio, Sling hace coincidir estas direcciones URL con el script /apps/mywebsite/components/contentpage/navimage.png.java que ha creado.
 
-1. En CRXDE Lite, abra la `topnav.jsp` sección `/apps/mywebsite/components/topnav.`Localizar el contenido del elemento de anclaje (línea 14):
+1. En CRXDE Lite, abra el `topnav.jsp` debajo de `/apps/mywebsite/components/topnav.`Localizar el contenido del elemento de anclaje (línea 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -667,7 +667,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
    * **[!UICONTROL Nombre]**: product2
    * Seleccionar plantilla de página de contenido de **[!UICONTROL mi sitio web]**
 
-1. En CRXDE Lite, establezca una descripción y una fecha para la página Product 1:
+1. En CRXDE Lite, establezca una descripción y una fecha para la página Producto 1:
 
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
    1. En la ficha **[!UICONTROL Propiedades]** , introduzca los valores siguientes:
@@ -686,7 +686,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
 
 
 
-1. En CRXDE Lite, establezca una descripción y una fecha para la página Product 2:
+1. En CRXDE Lite, establezca una descripción y una fecha para la página Producto 2:
 
    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node.
    1. En la ficha **[!UICONTROL Propiedades]** , introduzca los valores siguientes:
@@ -709,7 +709,7 @@ Cree dos páginas debajo de la página **[!UICONTROL Productos]** . Para cada p�
 
 Para crear el componente listchildren:
 
-1. En CRXDE Lite, haga clic con el botón derecho `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
+1. En CRXDE Lite, haga clic con el botón secundario `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
 1. En el cuadro de diálogo, introduzca los siguientes valores de propiedad y haga clic en **[!UICONTROL Siguiente]**:
 
    * **[!UICONTROL Etiqueta]**: listchildren.
@@ -722,7 +722,7 @@ Para crear el componente listchildren:
 
 Desarrolle la secuencia de comandos para el componente listchildren.
 
-1. En CRXDE Lite, abra el archivo `listchildren.jsp` debajo de `/apps/mywebsite/components/listchildren`.
+1. En CRXDE Lite, abra el archivo `listchildren.jsp` en `/apps/mywebsite/components/listchildren`.
 1. Reemplace el código predeterminado con el siguiente código:
 
    ```xml
@@ -757,7 +757,7 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
 1. Cree el nodo de cuadro de diálogo en el componente listchildren:
 
-   1. En CRXDE Lite, haga clic con el botón secundario en el `/apps/mywebsite/components/listchildren`nodo y, a continuación, haga clic en **[!UICONTROL Crear > Crear cuadro de diálogo]**.
+   1. En CRXDE Lite, haga clic con el botón derecho en el `/apps/mywebsite/components/listchildren`nodo y haga clic en **[!UICONTROL Crear > Crear cuadro de diálogo]**.
    1. En el cuadro de diálogo, introduzca los siguientes valores de propiedad y haga clic en Aceptar
 
       * **[!UICONTROL Etiqueta]**: `dialog`
@@ -867,7 +867,7 @@ Para crear el componente de logotipo, siga los pasos:
 
 En esta sección se describe cómo crear la secuencia de comandos para mostrar la imagen del logotipo con un vínculo a la página principal.
 
-1. En CRXDE Lite, abra el archivo `logo.jsp` debajo de `/apps/mywebsite/components/logo`.
+1. En CRXDE Lite, abra el archivo `logo.jsp` en `/apps/mywebsite/components/logo`.
 1. El siguiente código crea el vínculo a la página de inicio del sitio y agrega una referencia a la imagen del logotipo. Copie el código a `logo.jsp`:
 
    ```xml
@@ -1105,7 +1105,7 @@ Añada el componente parsys (uno de los componentes de base) en el componente co
 
 1. En el explorador, actualice la página **[!UICONTROL Productos]** . Ahora tiene el componente parsys, que se ve de la siguiente manera:
 
-   ![chlimage_1-127](assets/chlimage_1-127.png)
+   ![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### Creación del componente de imagen {#creating-the-image-component}
 
@@ -1172,7 +1172,7 @@ El tipo de `cq:editConfig` nodo permite configurar determinados comportamientos 
 
 En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recursos desde Content Finder al componente de imagen.
 
-1. En CRXDE Lite, bajo el nodo /apps/mywebsite/components/image, cree un nuevo nodo de la siguiente manera:
+1. En CRXDE Lite, en el nodo /apps/mywebsite/components/image, cree un nuevo nodo como se indica a continuación:
 
    * **[!UICONTROL Nombre]**: cq:editConfig.
    * **[!UICONTROL Tipo]**: cq:EditConfig.
@@ -1265,7 +1265,7 @@ El cuadro de entrada de búsqueda tendrá el siguiente aspecto en la página **[
 
 #### Creación del componente de búsqueda {#creating-the-search-component-1}
 
-1. En CRXDE Lite, haga clic con el botón derecho `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
+1. En CRXDE Lite, haga clic con el botón secundario `/apps/mywebsite/components`, seleccione **[!UICONTROL Crear]** y, a continuación, **[!UICONTROL Crear componente]**.
 1. Utilice el cuadro de diálogo para configurar el componente:
 
    1. En el primer panel, especifique los siguientes valores de propiedad:

@@ -1,8 +1,8 @@
 ---
 title: Creación de apariencias personalizadas en formularios HTML5
 seo-title: Creación de apariencias personalizadas en formularios HTML5
-description: Puede conectar widgets personalizados a formularios móviles. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
-seo-description: Puede conectar widgets personalizados a formularios móviles. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
+description: Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
+seo-description: Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 
 # Creación de apariencias personalizadas en formularios HTML5 {#create-custom-appearances-in-html-forms}
 
-Puede conectar widgets personalizados a formularios móviles. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
+Puede conectar utilidades personalizadas a un Forms móvil. Puede ampliar las utilidades de jQuery existentes o desarrollar sus propias utilidades personalizadas mediante el marco de apariencias. El motor XFA utiliza varios widgets; consulte Marco de [apariencia para formularios](/help/forms/using/introduction-widgets.md) adaptables y HTML5 para obtener información detallada.
 
 ![Ejemplo de utilidad](assets/custom-widgets.jpg)predeterminada y personalizada **Figura:** *Ejemplo de utilidad predeterminada y personalizada*
 
 ## Integración de widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Crear un perfil {#create-a-profile-nbsp}
+### Crear un perfil  {#create-a-profile-nbsp}
 
 Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de Perfiles](/help/forms/using/custom-profile.md)personalizados.
 
@@ -70,7 +73,7 @@ Para crear su propia utilidad, en el perfil creado anteriormente, incluya refere
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registro de utilidades personalizadas con el motor de secuencias de comandos XFA {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registro de utilidades personalizadas con el motor de secuencias de comandos XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Cuando el código de la utilidad personalizada esté listo, registre la utilidad con el motor de secuencias de comandos mediante `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
 

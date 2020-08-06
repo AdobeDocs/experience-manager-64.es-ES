@@ -1,8 +1,8 @@
 ---
 title: Servicio de salida
 seo-title: Servicio de salida
-description: Describe Output Service, que forma parte de AEM Document Services
-seo-description: Describe Output Service, que forma parte de AEM Document Services
+description: Describe Output Service, que forma parte de AEM Documento Services
+seo-description: Describe Output Service, que forma parte de AEM Documento Services
 uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 ## Información general {#overview}
 
-El servicio de salida es un servicio OSGi que forma parte de AEM Document Services. El servicio Output admite varios formatos de salida y funciones de diseño de salida de AEM Forms Designer. El servicio Output puede convertir plantillas XFA y datos XML para generar documentos de impresión en diversos formatos.
+El servicio de salida es un servicio OSGi que forma parte de AEM Documento Services. El servicio Output admite varios formatos de salida y funciones de diseño de salida de AEM Forms Designer. El servicio Output puede convertir plantillas XFA y datos XML para generar documentos de impresión en diversos formatos.
 
 El servicio de salida permite crear aplicaciones que le permiten:
 
-* Genere documentos finales del formulario rellenando archivos de plantilla con datos XML.
+* Genere documentos finales de formulario rellenando archivos de plantilla con datos XML.
 * Genere formularios de salida en varios formatos, incluidos los flujos de impresión PDF no interactivos, PostScript, PCL y ZPL.
 * Genere archivos PDF impresos a partir de archivos PDF de formulario XFA.
 * Genere documentos PDF, PostScript, PCL y ZPL de forma masiva combinando varios conjuntos de datos con las plantillas suministradas.
@@ -37,7 +40,7 @@ El servicio de salida permite crear aplicaciones que le permiten:
 
 Normalmente, las plantillas se crean con AEM Forms Designer. Las `generatePDFOutput` y `generatePrintedOutput` API del servicio Output permiten convertir directamente estas plantillas a diversos formatos, incluidos PDF, PostScript, ZPL y PCL.
 
-La `generatePDFOutput` operación genera archivos PDF, mientras que la `generatePrintedOutput` operación genera formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`) o un objeto Document que contiene la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz del contenido como la ruta de la carpeta que contiene la plantilla. Puede especificar la raíz del contenido mediante el parámetro `PDFOutputOptions` o el `PrintedOutputOptions` . Consulte Javadoc para obtener detalles de otras opciones que puede especificar mediante estos parámetros.
+La `generatePDFOutput` operación genera archivos PDF, mientras que la `generatePrintedOutput` operación genera formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`) o un objeto de Documento que contiene la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz del contenido como la ruta de la carpeta que contiene la plantilla. Puede especificar la raíz del contenido mediante el parámetro `PDFOutputOptions` o el `PrintedOutputOptions` . Consulte Javadoc para obtener detalles de otras opciones que puede especificar mediante estos parámetros.
 
 El segundo parámetro acepta un documento XML que se combina con la plantilla al generar el documento de salida.
 
@@ -49,11 +52,11 @@ Imagine un escenario en el que tiene una o más plantillas y varios registros de
 
 Utilice las operaciones `generatePDFOutputBatch` y `generatePrintedOutputBatch` del servicio Output para generar un documento de impresión para cada registro.
 
-También puede combinar los registros en un solo documento. Ambas operaciones utilizan cuatro parámetros.
+También puede combinar los registros en un único documento. Ambas operaciones utilizan cuatro parámetros.
 
 El primer parámetro es un mapa que contiene una cadena arbitraria como clave y el nombre del archivo de plantilla como valor.
 
-El segundo parámetro es un mapa diferente cuyo valor es un objeto Document que contiene datos XML. La clave es la misma que la especificada para el primer parámetro.
+El segundo parámetro es un mapa diferente cuyo valor es un objeto Documento que contiene datos XML. La clave es la misma que la especificada para el primer parámetro.
 
 El tercer parámetro para `generatePDFOutputBatch` o `generatePrintedOutputBatch` es de tipo `PDFOutputOptions` o `PrintedOutputOptions` respectivamente.
 

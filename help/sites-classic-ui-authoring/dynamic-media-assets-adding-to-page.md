@@ -22,7 +22,7 @@ ht-degree: 54%
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
 
-Puede añadir recursos de medios dinámicos directamente a la página si utiliza AEM como WCM.
+Puede agregar recursos de medios dinámicos directamente a la página si está utilizando AEM como WCM.
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Para añadir un componente o visor de Dynamic Media a una página:
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] e [!UICONTROL Interactive Media] están disponibles en la [!UICONTROL barra de tareas] en **[!UICONTROL Dynamic Media]**. El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Los medios] dinámicos y los medios [!UICONTROL interactivos] están disponibles en la [!UICONTROL barra de tareas] en Medios **[!UICONTROL dinámicos]**. El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y se deben seleccionar en el modo Diseño para que se puedan usar. [Una vez que estén disponibles en modo](/help/sites-authoring/default-components-designmode.md)de diseño, puede añadir los componentes a la página como lo haría con cualquier otro componente de AEM.
+>Estos componentes no están disponibles de forma predeterminada y se deben seleccionar en el modo Diseño para que se puedan usar. [Una vez que estén disponibles en el modo](/help/sites-authoring/default-components-designmode.md)Diseño, puede agregar los componentes a la página como lo haría con cualquier otro componente AEM.
 
 ### Componente de Dynamic Media {#dynamic-media-component}
 

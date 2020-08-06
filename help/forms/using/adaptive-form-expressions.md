@@ -89,7 +89,7 @@ La expresión de clic gestiona las acciones realizadas en el evento de clic de u
 
 **Tipo** de devolución: La expresión de clic no devuelve ningún valor. Si alguna expresión devuelve un valor, se ignora el valor.
 
-**Ejemplo**: Para rellenar un **cuadro de texto de cuadro de texto1** en la acción de clic de un botón con el valor Formularios **** AEM, la expresión de clic del botón es `textbox1.value="AEM Forms"` &quot;
+**Ejemplo**: Para rellenar un cuadro de texto **cuadro de texto1** en la acción de clic de un botón con el valor **AEM Forms**, la expresión de clic del botón es `textbox1.value="AEM Forms"` &quot;
 
 ### Script de inicialización {#initialization-script}
 
@@ -166,7 +166,7 @@ La secuencia de comandos Commit de valores se activa cuando:
 
 >[!NOTE]
 >
->Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a Versión de formularios `https://[server]:[port]/system/console/configMgr and change` adaptables para la compatibilidad **con** AEM Forms 6.1 ****. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
+>Puede desactivar la ejecución de la secuencia de comandos de confirmación de valores cuando el valor de un campo se cambia mediante programación. Para ello, vaya a Versión `https://[server]:[port]/system/console/configMgr and change` adaptable de Forms para compatibilidad **con** AEM Forms 6.1 ****. A partir de entonces, la secuencia de comandos de confirmación de valores se ejecuta únicamente cuando el usuario cambia el valor del campo de la interfaz de usuario.
 
 ### Expresión de visibilidad {#visibility-expression}
 
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->En AEM, es recomendable escribir código en clientLib e incluirlo en la página (header.jsp o Football.jsp de la página)
+>En AEM, es recomendable escribir código en clientLib e incluirlo en la página (header.jsp o pie.jsp de la página)
 
 Para utilizar GuideBridge después de inicializar el formulario (se envía el `bridgeInitializeComplete` evento), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la `guideBride.isConnected` API.
 
@@ -283,7 +283,7 @@ Realice los siguientes pasos para crear un patrón personalizado para un tipo de
 1. Cree una carpeta para mantener los patrones personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. En este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos patrones personalizados que desea agregar.
 1. Abra la ficha Propiedades del nodo creado. Por ejemplo, abra la ficha Propiedades de `textboxpatterns`. Añada la propiedad `guideComponentType` a este nodo y defina su valor en *fd/af/components/formatter/guideTextBox*.
 1. El valor de esta propiedad varía en función del campo para el que desee definir los patrones. Para el campo numérico, el valor de la `guideComponentType` propiedad es *fd/af/components/formatter/guideNumericBox*. El valor del campo Selector de datos es *fd/af/components/formatter/guideDatepicker*.
-1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Añada una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en formularios adaptables.
+1. Puede agregar un patrón personalizado asignando una propiedad al `textboxpatterns` nodo. Añada una propiedad con un nombre (por ejemplo `pattern1`) y defina su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El patrón está disponible para todos los cuadros de texto que se utilizan en Forms adaptable.
 
    ![Creación de patrones personalizados para campos en CrxDe](assets/creating-custom-patterns.png)
    **Figura:** *Creación de patrones personalizados*

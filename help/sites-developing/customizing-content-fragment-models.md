@@ -1,5 +1,5 @@
 ---
-title: NO PUBLICAR, PERO NO ELIMINAR LA personalización DE modelos de fragmentos de contenido
+title: NO PUBLIQUE, PERO NO DELETE LA Personalización De Modelos De Fragmento De Contenido
 seo-title: Personalización de modelos de fragmentos de contenido
 description: Los modelos de fragmento de contenido se pueden personalizar y ampliar.
 seo-description: Los modelos de fragmento de contenido se pueden personalizar y ampliar.
@@ -10,11 +10,14 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
-# NO PUBLICAR, PERO NO ELIMINAR LA personalización DE modelos de fragmentos de contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NO PUBLIQUE, PERO NO DELETE LA Personalización De Modelos De Fragmento De Contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
 El editor del modelo de fragmentos de contenido es un asistente basado en `Formbuilder`, heredado de:
 
@@ -24,9 +27,10 @@ Este componente tiene las herramientas necesarias para procesar la interfaz de a
 
 ## Ubicaciones {#locations}
 
-Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene activada la propiedad [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenido. Esta configuración también se puede ver en las Propiedades **de** configuración, a las que se puede acceder desde el navegador **de configuración**.
+Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene activada la propiedad [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenido. Esta configuración también se puede ver en las Propiedades **de** configuración, a las que se puede acceder desde el explorador **de configuración**.
 
-1. Vaya al explorador a través de **Herramientas**, **General**, Navegador **de** configuración. Por ejemplo, `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Vaya al explorador a través de **Herramientas**, **General**, Navegador **de** configuración. Por ejemplo, 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. En el navegador, seleccione la configuración adecuada y, a continuación, **Propiedades** en la barra de herramientas.
 
@@ -73,21 +77,21 @@ El asistente creará una entrada con esta estructura:
 >
 >Todos los tipos de datos arrastrados y soltados en un editor de modelos, y como tales creados en instancias, **deben** tener la `name` propiedad introducida por el usuario.
 >
->**Esto se ve como Nombre** de propiedad &amp;ast; en la ficha **Propiedades** del editor de modelos.
+>Esto se ve como Nombre **de propiedad &amp;ast;** en la ficha **Propiedades** del editor de modelos.
 
 ## Estructura del Editor de modelos {#structure-of-the-model-editor}
 
 El Editor **del modelo de fragmento de** contenido consta de dos partes:
 
-* El panel de vista previa o vista de la izquierda, donde puede soltar elementos. Así pues:
+* El panel previsualización, o vista, del lado izquierdo, donde puede soltar elementos. Así pues:
 
-   * Muestra una vista previa del tipo **de** datos en el que se crea una instancia.
+   * Muestra una previsualización del tipo **de** datos en el que se crea una instancia.
    * Permite realizar pedidos dentro del Editor de modelos.
 
 * Las fichas Tipos **de** datos/**Propiedades** del panel de la derecha. Así pues:
 
    * Muestra una lista de tipos de datos que se pueden arrastrar y crear instancias.
-   * Para el editor de modelos incorporado, la lista se encuentra en:
+   * Para el editor de modelos incorporado, la lista está presente en:
 
       `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes`
 
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 Cuando se crea una instancia de un tipo de datos, se crean entradas HTML para cada propiedad que el componente necesita representarse en un fragmento de contenido. Por ejemplo:
 
-* **** Nombre de propiedad &amp;ast; ( `name`): actúa como identificador de componentes
+* **Nombre de propiedad &amp;ast;** ( `name`): actúa como identificador de componentes
 
 * **Representar como** ( `metaType`): escriba el componente que se procesará como
 

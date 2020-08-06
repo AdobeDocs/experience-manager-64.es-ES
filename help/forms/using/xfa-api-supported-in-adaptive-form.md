@@ -1,14 +1,17 @@
 ---
 title: Compatibilidad con XFA en formularios adaptables basados en XDP
 seo-title: Compatibilidad con XFA en formularios adaptables basados en XDP
-description: Enumera los sucesos XFA, las propiedades, las secuencias de comandos y la validación admitidos en los formularios adaptables.
-seo-description: Enumera los sucesos XFA, las propiedades, las secuencias de comandos y la validación admitidos en los formularios adaptables.
+description: Las Listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
+seo-description: Las Listas admitían eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 7%
 
 ---
 
@@ -17,21 +20,21 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## Introducción {#introduction}
 
-Los formularios adaptables son compatibles con varios sucesos XFA, propiedades, secuencias de comandos y validaciones definidas en un archivo XDP, incluidos:
+Los formularios adaptables admiten varios eventos XFA, propiedades, secuencias de comandos y validaciones definidas en un archivo XDP, incluidos:
 
-* Ejecución de secuencias de comandos definidas en sucesos del archivo XDP.
+* Ejecución de secuencias de comandos definidas en eventos del archivo XDP.
 * Captura de valores predeterminados y propiedades de comportamiento para los campos del archivo XDP.
 * Ejecución de secuencias de comandos de validación definidas en el archivo XDP.
 
-Cuando se crea un formulario adaptable basado en un archivo XDP, las propiedades, los sucesos y las validaciones se rellenan automáticamente en la interfaz de usuario de creación de formularios. Sin embargo, los autores de formularios pueden anular algunos de estos elementos para crear una experiencia alternativa.
+Cuando se crea un formulario adaptable basado en un archivo XDP, las propiedades, eventos y validaciones se rellenan automáticamente en la interfaz de usuario de creación de formularios. Sin embargo, los autores de formularios pueden anular algunos de estos elementos para crear una experiencia alternativa.
 
-En este artículo se enumeran los eventos, las propiedades y las validaciones XFA admitidas en los formularios adaptables y se explica cómo sustituirlos en los formularios adaptables.
+Este artículo listas admite eventos, propiedades y validaciones XFA respetadas en formularios adaptables y explica cómo anularlas en formularios adaptables.
 
 ## Elementos XFA admitidos y su asignación en formularios adaptables {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Fields {#fields}
 
-Cuando se crea un formulario adaptable con un archivo XDP, se puede arrastrar y soltar un campo XFA en el formulario adaptable. En la tabla siguiente se muestra cómo se asignan los campos XFA a los campos de formulario adaptables.
+Cuando se crea un formulario adaptable con un archivo XDP, se puede arrastrar y soltar un campo XFA en el formulario adaptable. La siguiente tabla lista cómo se asignan los campos XFA a los campos de formulario adaptables.
 
 <table> 
  <tbody>
@@ -149,7 +152,7 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
    <td><p>Asignado a la propiedad value en el formulario adaptable.</p> </td> 
   </tr>
   <tr>
-   <td><p>elementos<em> (casilla de lista, casilla de verificación)</em></p> </td> 
+   <td><p>elementos<em> (casilla de Lista, casilla de verificación)</em></p> </td> 
    <td><p>Asignado a la propiedad options en formato adaptable. Puede anularlo mediante la expresión Opciones.</p> </td> 
   </tr>
   <tr>
@@ -169,7 +172,7 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
    <td><p>Asignado a la propiedad Dígitos de posibles clientes en formato adaptable.</p> </td> 
   </tr>
   <tr>
-   <td><p>multiSelect<em> (cuadro de lista)</em></p> </td> 
+   <td><p>multiSelect<em> (cuadro de Lista)</em></p> </td> 
    <td><p>Asignado a la propiedad Permite selección múltiple en forma adaptable.</p> </td> 
   </tr>
  </tbody>
@@ -182,7 +185,7 @@ La siguiente tabla captura el comportamiento de varias secuencias de comandos XF
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>Eventos de secuencia de comandos XFA</strong></p> </td> 
+   <td><p><strong>eventos de secuencias de comandos XFA</strong></p> </td> 
    <td><p><strong>Comportamiento correspondiente en formularios adaptables</strong></p> </td> 
   </tr>
   <tr>

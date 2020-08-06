@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 6%
 
 ---
 
@@ -121,7 +124,7 @@ Se pueden definir varias propiedades, en particular:
 * **jcr:title** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
 * **jcr:description** - descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene un nodo jcr:content (cq:PageContent) que se utiliza como base para el nodo de contenido de las páginas resultantes; esto hace referencia, mediante sling:resourceType, al componente que se utilizará para procesar el contenido real de una página nueva.
+Este nodo contiene un nodo jcr:content (cq:PageContent) que se utilizará como base para el nodo de contenido de las páginas resultantes; esto hace referencia, mediante sling:resourceType, al componente que se utilizará para procesar el contenido real de una página nueva.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -131,7 +134,7 @@ Este componente se utiliza para definir la estructura y el diseño del contenido
 
 ### El contenido producido por una plantilla {#the-content-produced-by-a-template}
 
-Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencionó anteriormente, una página es un tipo especial de componente). Cada página de AEM tiene un nodo estructurado `jcr:content`. Así pues:
+Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencionó anteriormente, una página es un tipo especial de componente). Cada página AEM tiene un nodo estructurado `jcr:content`. Así pues:
 
 * es del tipo cq:PageContent
 * es un tipo de nodo estructurado que contiene una definición de contenido definida
@@ -139,9 +142,9 @@ Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencio
 
 ### Plantillas predeterminadas {#default-templates}
 
-AEM incorpora varias plantillas predeterminadas disponibles de forma predeterminada. En algunos casos, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla está disponible para su sitio Web.
+AEM incluye una serie de plantillas predeterminadas disponibles de forma predeterminada. En algunos casos, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla está disponible para su sitio Web.
 
-Por ejemplo, AEM incluye varias plantillas, incluidas una página de contenido y una página principal.
+Por ejemplo, AEM incluye varias plantillas, incluidas una página de contenido y una página de inicio.
 
 | **Título** | **Componente** | **Ubicación** | **Función** |
 |---|---|---|---|
@@ -172,7 +175,7 @@ Cuando los estilos se definen en la interfaz de usuario mediante el modo [de](/h
 
 >[!CAUTION]
 >
->Adobe solo recomienda aplicar diseños a través del modo [](/help/sites-authoring/default-components-designmode.md)de diseño.
+>Adobe solo recomienda aplicar diseños a través del modo [](/help/sites-authoring/default-components-designmode.md)Diseño.
 >
 >La modificación de diseños en CRX DE, por ejemplo, no es recomendable y la aplicación de dichos diseños puede diferir del comportamiento esperado.
 
@@ -180,13 +183,13 @@ Si los diseños solo se aplican mediante el modo Diseño, las siguientes seccion
 
 >[!NOTE]
 >
->En esta sección se describe el comportamiento de la resolución de rutas de diseño a partir de AEM 6.4.2.0.
+>En esta sección se describe el comportamiento de resolución de ruta de diseño a partir de AEM 6.4.2.0.
 
 ### Resolución de ruta de diseño {#design-path-resolution}
 
-Al procesar contenido basado en una plantilla estática, AEM intentará aplicar el diseño y los estilos más relevantes al contenido en función de una inversión de la jerarquía de contenido.
+Al procesar contenido basado en una plantilla estática, AEM intentará aplicar el diseño y los estilos más relevantes al contenido en función de una transversal de la jerarquía de contenido.
 
-AEM determina el estilo más relevante para un nodo de contenido en el orden siguiente:
+AEM determina el estilo más relevante para un nodo de contenido en el siguiente orden:
 
 * Si hay un diseño para la ruta completa y exacta del nodo de contenido (como cuando el diseño se define en el modo de diseño), utilice ese diseño.
 * Si hay un diseño para el nodo de contenido del elemento principal, utilice dicho diseño.
@@ -206,7 +209,7 @@ Considere una estructura de contenido simple como se indica a continuación, don
 
 `/root/branch/leaf`
 
-En la tabla siguiente se describe cómo AEM elegirá un diseño.
+En la tabla siguiente se describe cómo AEM un diseño.
 
 <table> 
  <tbody> 
@@ -267,11 +270,11 @@ En la tabla siguiente se describe cómo AEM elegirá un diseño.
 
 ## Desarrollo de plantillas de página {#developing-page-templates}
 
-Las plantillas de página de AEM son sencillamente modelos utilizados para crear nuevas páginas. Pueden contener tan poco contenido inicial como sea necesario, y su función consiste en crear las estructuras de nodos iniciales correctas, con las propiedades necesarias (principalmente sling:resourceType) definidas para permitir la edición y el procesamiento.
+AEM plantillas de página son simplemente modelos utilizados para crear nuevas páginas. Pueden contener tan poco contenido inicial como sea necesario, y su función consiste en crear las estructuras de nodos iniciales correctas, con las propiedades necesarias (principalmente sling:resourceType) definidas para permitir la edición y el procesamiento.
 
 ### Creación de una nueva plantilla (basada en una plantilla existente) {#creating-a-new-template-based-on-an-existing-template}
 
-Huelga decir que una nueva plantilla se puede crear completamente desde cero, pero a menudo se copiará y actualizará una plantilla existente para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas de Geometrixx se pueden usar para empezar.
+Huelga decir que una nueva plantilla se puede crear completamente desde cero, pero a menudo se copiará y actualizará una plantilla existente para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas de Geometrixx se pueden utilizar para empezar.
 
 Para crear una nueva plantilla basada en una plantilla existente:
 
@@ -281,7 +284,7 @@ Para crear una nueva plantilla basada en una plantilla existente:
 
    >[!NOTE]
    >
-   >La lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla. Consulte Disponibilidad [de plantillas](/help/sites-developing/templates.md#template-availability).
+   >La lista de las plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla. Consulte Disponibilidad [de plantillas](/help/sites-developing/templates.md#template-availability).
 
 1. Cambie el **jcr:title** del nuevo nodo de plantilla para reflejar su nueva función. También puede actualizar **jcr:description** si es necesario. Asegúrese de cambiar la disponibilidad de la plantilla de la página según corresponda.
 
@@ -308,8 +311,8 @@ Para crear una nueva plantilla basada en una plantilla existente:
    Ahora puede crear una página dentro del sitio web con la nueva plantilla.
 
 >[!NOTE]
-La biblioteca de cliente del editor asume la presencia del espacio de nombres en las páginas de contenido y, si no se encuentra, `cq.shared` `Uncaught TypeError: Cannot read property 'shared' of undefined` se producirá el error de JavaScript.
-Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir el `cq.shared` espacio de nombres.
+La biblioteca de cliente del editor asume la presencia de la `cq.shared` Área de nombres en las páginas de contenido y, si no se encuentra, se `Uncaught TypeError: Cannot read property 'shared' of undefined` producirá el error de JavaScript.
+Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la `cq.shared` Área de nombres.
 Consulte [Uso de bibliotecas](/help/sites-developing/clientlibs.md) del lado del cliente para obtener más información.
 
 ## Disponibilidad de una plantilla existente {#making-an-existing-template-available}

@@ -35,7 +35,7 @@ Al final del tutorial, aprenderá a:
 * Estilo de componentes individuales
 * Sección de primas: Uso de fuentes web en un tema personalizado
 
-El formulario tendrá un aspecto similar al siguiente una vez que complete el tutorial:
+El formulario tendrá un aspecto similar al siguiente una vez completado el tutorial:
 
 ![Formulario con un tema personalizado](assets/styled-adaptive-form.png)
 
@@ -101,7 +101,7 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 
 ### Crear un tema {#create-a-theme}
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **Adobe Experience Manager** > **Formularios** > **Temáticas**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Inicie sesión en la instancia de creación de AEM y vaya a **Adobe Experience Manager** > **Forms** > **Temáticas**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Toque **[!UICONTROL Crear]** y seleccione **[!UICONTROL Tema]**. Aparece la página Crear tema con los campos necesarios para crear un tema. Los campos Título y Nombre son obligatorios:
 
    * **Título:** Especifique un título del tema. Por ejemplo, Tema **global.** El título le ayuda a identificar el tema a partir de la lista de temáticas.
@@ -135,18 +135,18 @@ El encabezado y el pie de página proporcionan un aspecto coherente y distintivo
    | Color de fuente | FFFFFF |
    | Tamaño de fuente | 54px |
 
-1. Toque el widget de encabezado y **Encabezado**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **Dimensiones y posición** , defina la **altura** en `120px`y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Toque el widget de encabezado y **Encabezado**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **Dimension y posición** , defina la **altura** en `120px`y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda el acordeón Fondo del widget de encabezado, defina el color **de** fondo en `F6921E.`
 
    Pase el ratón sobre **Imagen y degradado** > **+ Añadir**, toque **Imagen**. Defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propiedad | Value |
    |---|---|
-   | imagen | Cargue header-style.png. La imagen se ha descargado en la sección [Antes del inicio](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
+   | image | Cargue header-style.png. La imagen se ha descargado en la sección [Antes del inicio](/help/forms/using/style-your-adaptive-form.md#before-you-start) . |
    | Posición | Inferior Derecha |
    | Mosaico | No repetir |
 
-1. En el editor de temas, toque el logotipo en el encabezado y toque **Logotipo** de encabezado. Expanda el acordeón Dimensiones y posición, defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. En el editor de temas, toque el logotipo en el encabezado y toque **Logotipo** de encabezado. Expanda el acordeón Dimension y posición, defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -176,7 +176,7 @@ El encabezado y el pie de página proporcionan un aspecto coherente y distintivo
 
 Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a un estilo independiente para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID del cliente, código postal) y los cuadros de texto (ID del cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos:
 
-1. Puntee en el campo ID del cliente y toque la opción **Utilidad** de campo. Defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Puntee en el campo ID del cliente y toque la opción Utilidad **Campo** . Defina las siguientes propiedades y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -217,12 +217,12 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>Dimensiones y posición</td> 
+   <td>Dimension y posición</td> 
    <td>Anchura</td> 
    <td>60%</td> 
   </tr> 
   <tr> 
-   <td>Dimensiones y posición</td> 
+   <td>Dimension y posición</td> 
    <td>imagen</td> 
    <td> 
     <ul> 
@@ -301,7 +301,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
    ![style-option](assets/style-option.png)
 
-1. Toque el botón **Adjuntar** y toque el ![icono aem_6_3_](assets/aem_6_3_edit.png)editicon. Defina las siguientes propiedades en el acordeón **Dimensiones y Posición** :
+1. Toque el botón **Adjuntar** y toque el ![icono aem_6_3_](assets/aem_6_3_edit.png)editicon. Defina las siguientes propiedades en el acordeón **Dimension y Posición** :
 
    | Propiedad | Value |
    |---|---|
@@ -407,12 +407,12 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
    <td>Value</td> 
   </tr> 
   <tr> 
-   <td>Dimensiones y posición</td> 
+   <td>Dimension y posición</td> 
    <td>Flotante</td> 
    <td>Derecha</td> 
   </tr> 
   <tr> 
-   <td>Dimensiones y posición</td> 
+   <td>Dimension y posición</td> 
    <td>imagen</td> 
    <td> 
     <ul> 
@@ -447,8 +447,8 @@ Adobe Typekit es un servicio de fuentes web. Puede configurar y utilizar el serv
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit ahora se denomina Adobe Fonts y se incluye con Creative Cloud y otras suscripciones. [Más información](https://fonts.adobe.com/).
 
-1. Cree una cuenta de [Adobe Typekit](https://typekit.com/) , cree un kit, añada la fuente Myriad Pro al kit, publique el kit y obtenga el ID del kit. Es necesario utilizar fuentes Adobe Typekit (fuentes web) en un formulario adaptable.
-1. En el servidor de AEM Forms, vaya a ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Herramientas** ![martillo](assets/hammer.png) > **Implementación** ****> Servicios de nube. En la página Servicios de nube, vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar** ahora en Typekit. Si ya hay una configuración disponible, haga clic en el botón + para crear una nueva instancia.
+1. Cree una cuenta de [Adobe Typekit](https://typekit.com/) , cree un kit, agregue la fuente Myriad Pro al kit, publique el kit y obtenga el ID del kit. Es necesario utilizar fuentes Adobe Typekit (fuentes web) en un formulario adaptable.
+1. En el servidor de AEM Forms, vaya a ![adobeexperience emanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Herramientas** ![martillo](assets/hammer.png) > **Implementación** ****> Cloud Services. En la página Cloud Services, vaya a Servicios **de** terceros > **Typekit** y haga clic en **Configurar** ahora en Typekit. Si ya hay una configuración disponible, haga clic en el botón + para crear una nueva instancia.
 
    En el cuadro de diálogo Crear configuración, especifique un **Título** para la configuración y haga clic en **Crear**. Se le redirige a la página de configuración. En el cuadro de diálogo Editar componente que aparece, proporcione el ID **del** Kit y haga clic en **Aceptar**.
 

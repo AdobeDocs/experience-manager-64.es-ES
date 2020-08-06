@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +61,7 @@ Debido a problemas de seguridad, las opciones de hipervínculo no se incluyen en
 
 Para agregar las opciones de hipervínculo a la barra de herramientas:
 
-* Agregar una barra de herramientas con el nombre &quot; `links`&quot;
+* Añadir una barra de herramientas con el nombre &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Seleccione **[!UICONTROL Guardar todo]**
 

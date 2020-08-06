@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 5%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ## Información general {#overview}
 
-Para Comunidades AEM, existen varios informes a los que se puede acceder de varias formas desde el entorno de creación.
+Para AEM Communities, existen varios informes a los que se puede acceder de varias formas desde el entorno de creación.
 
 En general, los diversos informes son los siguientes:
 
 * [Informe](#assignments-report) de asignaciones: para una comunidad [de](overview.md#enablement-community)habilitación, proporciona una visión general del progreso de los alumnos en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM
-* [Informe](#views-report) Vistas: proporciona un gráfico de las vistas del contenido por miembros de la comunidad y visitantes del sitio para cualquier sitio de la comunidad
+* [Informe](#views-report) Vistas: proporciona un gráfico de vistas de contenido por miembros de la comunidad y visitantes del sitio para cualquier sitio de la comunidad
 * [Informe](#posts-report) Anuncios: proporciona un gráfico de los distintos tipos de anuncios de los miembros de la comunidad en cualquier sitio de la comunidad
 
-Cuando [Adobe Analytics está habilitado](sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de activación con el paso del tiempo
+Cuando [Adobe Analytics está habilitado](sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de habilitación a lo largo del tiempo
 
 Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
 
-## Consolas de informes {#reporting-consoles}
+## Consolas Sistema de informes {#reporting-consoles}
 
 ### Informes para sitios de la comunidad {#reports-for-community-sites}
 
@@ -77,7 +80,7 @@ Seleccione los criterios para el informe:
 * **[!UICONTROL Sitio]** Seleccione un sitio de la comunidad de habilitación
 * **[!UICONTROL Usuario o grupo]**
    * Seleccione Usuario para generar un informe para un alumno
-   * Seleccionar grupo para generar un informe para un grupo de alumnosEl servicio de túnel tendrá acceso a miembros y grupos de miembros desde el entorno de publicación
+   * Seleccionar grupo para generar un informe para un grupo de alumnosEl servicio de túnel tendrá acceso a los miembros y grupos de miembros desde el entorno de publicación
 * **[!UICONTROL Asignación]** Elija entre los recursos de habilitación asignados a los alumnos seleccionados
 
 Seleccione **[!UICONTROL Generar]** para crear el informe:
@@ -128,4 +131,4 @@ Seleccione **[!UICONTROL Generar]** para crear el informe:
 
 ### No hay sitios de comunidad enumerados {#no-community-sites-listed}
 
-Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes en las asignaciones, asegúrese de que la función de asignaciones se encuentra en la estructura del sitio de la comunidad.
+Si no aparece ningún sitio de comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes en las asignaciones, asegúrese de que la función de asignaciones se encuentra en la estructura del sitio de la comunidad.

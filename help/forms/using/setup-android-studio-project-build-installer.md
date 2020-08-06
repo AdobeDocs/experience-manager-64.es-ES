@@ -1,8 +1,8 @@
 ---
 title: Configure el proyecto de estudio de Android y cree la aplicación de Android
 seo-title: Configure el proyecto de estudio de Android y cree la aplicación de Android
-description: Pasos para configurar el proyecto de Android Studio y crear el instalador para la aplicación AEM Forms
-seo-description: Pasos para configurar el proyecto de Android Studio y crear el instalador para la aplicación AEM Forms
+description: Pasos para configurar el proyecto de Android Studio y crear el instalador para la aplicación de AEM Forms
+seo-description: Pasos para configurar el proyecto de Android Studio y crear el instalador para la aplicación de AEM Forms
 uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Configure el proyecto de estudio de Android y cree la aplicación de Android {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Este artículo está destinado a la creación de la aplicación para AEM Forms 6.3.1.1 y versiones posteriores. Para crear una aplicación a partir del código fuente del código fuente de la aplicación AEM Forms 6.3, consulte [Configuración del proyecto Eclipse y creación de la aplicación](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
+Este artículo está destinado a la creación de la aplicación AEM Forms 6.3.1.1 y versiones posteriores. Para crear una aplicación a partir del código fuente del código fuente de AEM Forms App 6.3, consulte [Configuración del proyecto Eclipse y creación de la aplicación](/help/forms/using/setup-eclipse-project-build-installer.md)Android™.
 
-AEM Forms proporciona el código fuente completo de la aplicación AEM Forms. El origen contiene todos los componentes para crear una aplicación de AEM Forms personalizada. El archivo de código fuente, `adobe-lc-mobileworkspace-src-<version>.zip` es parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` paquete de distribución de software.
+AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. El origen contiene todos los componentes para crear una aplicación de AEM Forms personalizada. El archivo de código fuente, `adobe-lc-mobileworkspace-src-<version>.zip` es parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` paquete de distribución de software.
 
-Para obtener el origen de la aplicación AEM Forms, realice los siguientes pasos:
+Para obtener el origen de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
 1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]** :
-   1. Seleccione **[!UICONTROL Formularios]** en la lista desplegable **[!UICONTROL Solución]** .
+   1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]** .
    2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
 1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos]** del EULA y toque **[!UICONTROL Descargar]**.
 1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
@@ -42,7 +42,7 @@ La siguiente imagen muestra la estructura de directorio de la `android`carpeta e
 
 ![Estructura de directorio de la carpeta android en src](assets/android-folder.png)
 
-## Creación de una aplicación de AEM Forms estándar {#set-up-the-xcode-project}
+## Compilación de una aplicación de AEM Forms estándar {#set-up-the-xcode-project}
 
 1. Realice los siguientes pasos para configurar un proyecto en Android™ Studio y proporcionar una identidad de firma:
 
@@ -99,7 +99,7 @@ La siguiente imagen muestra la estructura de directorio de la `android`carpeta e
 
    ![connecteddevice](assets/connecteddevice.png)
 
-Después de crear el proyecto, puede optar por instalar la aplicación mediante Android™ Debug Bridge o Android™ Studio.
+Después de crear el proyecto, puede optar por instalar la aplicación con Android™ Debug Bridge o Android™ Studio.
 
 ### Uso de Android™ Debug Bridge {#andriod-debug-bridge}
 

@@ -31,7 +31,7 @@ El servicio Output permite generar documentos como PDF (incluidos documentos PDF
 
 Con el servicio Output, puede combinar datos de formulario XML con un diseño de formulario y generar el documento en una impresora o archivo de red.
 
-Existen dos formas de pasar un diseño de formulario (un archivo XDP) al servicio Output. Puede pasar una `com.adobe.idp.Document` instancia que contenga un diseño de formulario al servicio Output. O bien, puede pasar un valor URI que especifique la ubicación del diseño de formulario. Ambas formas se describen en *Programación con formularios* AEM.
+Existen dos formas de pasar un diseño de formulario (un archivo XDP) al servicio Output. Puede pasar una `com.adobe.idp.Document` instancia que contenga un diseño de formulario al servicio Output. O bien, puede pasar un valor URI que especifique la ubicación del diseño de formulario. Ambas formas se analizan en *Programación con formularios* AEM.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Puede utilizar el servicio Output para crear un documento PDF basado en un dise�
 
 Si desea crear un documento PDF para almacenamientos a largo plazo, se recomienda crear un documento PDF/A. (Consulte [Creación de Documentos](creating-document-output-streams.md#creating-pdf-a-documents)PDF/A).
 
-Para crear un formulario PDF interactivo que permita a un usuario introducir datos, utilice el servicio Forms. (Consulte [Representación de formularios](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)PDF interactivos).
+Para crear un formulario PDF interactivo que permita a un usuario introducir datos, utilice el servicio Forms. (Consulte [Representación de PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)interactivos).
 
 >[!NOTE]
 >
@@ -170,13 +170,13 @@ Si utiliza un formulario Acrobat etiquetado como entrada, no puede utilizar el J
 
 >[!NOTE]
 >
->Si no especifica opciones de tiempo de ejecución de procesamiento, se utilizan los valores predeterminados. Para obtener información sobre las opciones de procesamiento en tiempo de ejecución, consulte la referencia de la `RenderOptionsSpec` clase. (Consulte Referencia [de la API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+>Si no especifica opciones de tiempo de ejecución de procesamiento, se utilizan los valores predeterminados. Para obtener información sobre las opciones de procesamiento en tiempo de ejecución, consulte la referencia de la `RenderOptionsSpec` clase. (Consulte Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
 
 **Generar un documento PDF**
 
 Después de hacer referencia a un origen de datos XML válido que contiene datos de formulario y de definir las opciones en tiempo de ejecución, puede invocar el servicio Output, que genera un documento PDF.
 
-Al generar un documento PDF, se especifican los valores de URI que necesita el servicio Output para crear un documento PDF. Un diseño de formulario se puede almacenar en ubicaciones como el sistema de archivos del servidor o como parte de una aplicación de AEM Forms. Se puede hacer referencia a un diseño de formulario (u otros recursos como un archivo de imagen) que existe como parte de una aplicación Forms mediante el valor URI raíz del contenido `repository:///`. Por ejemplo, piense en el siguiente diseño de formulario llamado *Loan.xdp* ubicado en una aplicación Forms denominada *Aplicaciones/FormsApplication*:
+Al generar un documento PDF, se especifican los valores de URI que necesita el servicio Output para crear un documento PDF. Un diseño de formulario se puede almacenar en ubicaciones como el sistema de archivos del servidor o como parte de una aplicación de AEM Forms. Se puede hacer referencia a un diseño de formulario (u otros recursos como un archivo de imagen) que existe como parte de una aplicación de Forms mediante el valor URI raíz del contenido `repository:///`. Por ejemplo, piense en el siguiente diseño de formulario llamado *Loan.xdp* ubicado en una aplicación de Forms llamada *Aplicaciones/FormsApplication*:
 
 ![cp_cp_formrepositorio](assets/cp_cp_formrepository.png)
 
@@ -238,7 +238,7 @@ Cree un documento PDF mediante la API de salida (Java):
 
    >[!NOTE]
    >
-   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` método del `setPdfVersion` objeto si el documento de entrada es un formulario de Acrobat (un formulario creado en Acrobat) o un documento XFA firmado o certificado. El documento PDF de salida conserva la versión PDF original. Del mismo modo, no se puede establecer la opción PDF de Adobe con etiquetas invocando el método `RenderOptionsSpec` * del `setTaggedPDF`objeto si el documento de entrada es un formulario de Acrobat o un documento XFA firmado o certificado. *
+   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` método del `setPdfVersion` objeto si el documento de entrada es un formulario Acrobat (un formulario creado en Acrobat) o un documento XFA firmado o certificado. El documento PDF de salida conserva la versión PDF original. Del mismo modo, no se puede establecer la opción Adobe PDF con etiquetas invocando el método `RenderOptionsSpec` object `setTaggedPDF`* si el documento de entrada es un formulario Acrobat o un documento XFA firmado o certificado. *
 
    >[!NOTE]
    >
@@ -299,17 +299,17 @@ Cree un documento PDF mediante la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -334,7 +334,7 @@ Cree un documento PDF mediante la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` método del `setPdfVersion` objeto si el documento de entrada es un formulario de Acrobat (un formulario creado en Acrobat) o un documento XFA firmado o certificado. El documento PDF de salida conserva la versión PDF original. Del mismo modo, no se puede establecer la opción PDF de Adobe con etiquetas invocando el método `RenderOptionsSpec` * del `setTaggedPDF`objeto si el documento de entrada es un formulario de Acrobat o un documento XFA firmado o certificado*.
+   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` método del `setPdfVersion` objeto si el documento de entrada es un formulario Acrobat (un formulario creado en Acrobat) o un documento XFA firmado o certificado. El documento PDF de salida conserva la versión PDF original. Del mismo modo, no se puede establecer la opción Adobe PDF con etiquetas invocando el método `RenderOptionsSpec` object `setTaggedPDF`* si el documento de entrada es un formulario Acrobat o un documento XFA firmado o certificado.*
 
    >[!NOTE]
    >
@@ -373,9 +373,9 @@ Cree un documento PDF mediante la API de salida (servicio web):
 
    [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-   [Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -385,7 +385,7 @@ Cree un documento PDF mediante la API de salida (servicio web):
 
 Puede utilizar el servicio Output para crear un documento PDF/A. Dado que PDF/A es un formato de archivo para la conservación a largo plazo del contenido del documento, todas las fuentes se incrustan y el archivo se descomprime. Como resultado, un documento PDF/A suele ser mayor que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo. Al igual que otras tareas del servicio Output, se proporciona un diseño de formulario y datos para combinar con un diseño de formulario para crear un documento PDF/A.
 
-La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre ambas es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 determina que todas las fuentes están incrustadas en el documento PDF/A generado.
+La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre ambas es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes están incrustadas en el documento PDF/A generado.
 
 Aunque PDF/A es el estándar para archivar documentos PDF, no es obligatorio que PDF/A se utilice para archivar si un documento PDF estándar satisface las necesidades de la compañía. El propósito del estándar PDF/A es crear un archivo PDF que se pueda almacenar durante un largo período de tiempo y que cumpla los requisitos de conservación de documentos. Por ejemplo, una dirección URL no se puede incrustar en un PDF/A porque con el tiempo la dirección URL podría no ser válida.
 
@@ -451,7 +451,7 @@ El `PDFARevisionNumber` valor hace referencia al número de revisión de un docu
 
 >[!NOTE]
 >
->No se puede establecer la opción PDF de Adobe con etiquetas en `false` al crear un documento PDF/A 1A. PDF/A 1A siempre será un documento PDF con etiquetas. Además, no puede establecer la opción PDF con etiquetas en `true` al crear un documento PDF/A 1B. PDF/A 1B siempre será un documento PDF sin etiquetas.
+>No se puede establecer la opción de Adobe PDF con etiquetas en `false` al crear un documento PDF/A 1A. PDF/A 1A siempre será un documento PDF con etiquetas. Además, no puede establecer la opción de Adobe PDF con etiquetas en `true` al crear un documento PDF/A 1B. PDF/A 1B siempre será un documento PDF sin etiquetas.
 
 **Generar un documento PDF/A**
 
@@ -557,17 +557,17 @@ Cree un documento PDF/A mediante la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -624,9 +624,9 @@ Cree un documento PDF/A mediante la API de salida (servicio web):
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Pasar Documentos ubicados en Content Services (desaprobado) al servicio de salida {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
@@ -638,7 +638,7 @@ Puede recuperar mediante programación Loan.xdp de Content Services (desaprobado
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -757,7 +757,7 @@ Transmitir un documento recuperado de Content Services (desaprobado) mediante la
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto de API de cliente de Output y Documento Management.
 
@@ -767,7 +767,7 @@ Transmitir un documento recuperado de Content Services (desaprobado) mediante la
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -814,7 +814,7 @@ Transmitir un documento recuperado de Content Services (desaprobado) mediante la
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Pasar Documentos ubicados en el repositorio al servicio de salida {#passing-documents-located-in-the-repository-to-the-output-service}
 
@@ -834,11 +834,11 @@ Puede crear un archivo PDF basado en un archivo XDP ubicado en el repositorio de
 
 [Inicio rápido (modo EJB): Creación de un documento PDF basado en un archivo XDP de aplicación mediante la API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) de Java (muestra cómo pasar la ubicación del archivo XDP por referencia).
 
-[Inicio rápido (modo EJB): Pasar un documento ubicado en el repositorio de AEM Forms al servicio Output mediante la API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) de Java (muestra cómo recuperar mediante programación el archivo XDP del repositorio de AEM Forms y pasarlo al servicio Output en una `com.adobe.idp.Document` instancia). (Esta sección explica cómo realizar esta tarea)
+[Inicio rápido (modo EJB): Pasar un documento ubicado en el Repositorio de AEM Forms al servicio Output mediante la API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) de Java (muestra cómo recuperar mediante programación el archivo XDP del Repositorio de AEM Forms y pasarlo al servicio Output dentro de una `com.adobe.idp.Document` instancia). (Esta sección explica cómo realizar esta tarea)
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-3}
 
@@ -1081,17 +1081,17 @@ Cree un documento PDF basado en fragmentos mediante la API de servicio de salida
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto Cliente de salida y ensamblado.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al `OutputServiceClient.ClientCredentials.UserName.UserName`campo.
+      * Asigne el nombre de usuario de AEM formularios al `OutputServiceClient.ClientCredentials.UserName.UserName`campo.
       * Asigne el valor de contraseña correspondiente al `OutputServiceClient.ClientCredentials.UserName.Password`campo.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo.
    * Asigne el valor `BasicHttpSecurityMode.TransportCredentialOnly` constante al `BasicHttpBindingSecurity.Security.Mode`campo.
@@ -1140,7 +1140,7 @@ Cree un documento PDF basado en fragmentos mediante la API de servicio de salida
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Impresión en archivos {#printing-to-files}
 
@@ -1181,8 +1181,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, deberá reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. (Consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms).
 
@@ -1200,7 +1200,7 @@ Para imprimir en un archivo, debe definir la opción de tiempo de ejecución de 
 
 >[!NOTE]
 >
->Existen opciones opcionales de tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede definir, consulte la referencia de la `PrintedOutputOptionsSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+>Existen opciones opcionales de tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede establecer, consulte la referencia de la `PrintedOutputOptionsSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Impresión del flujo de impresión en un archivo**
 
@@ -1289,17 +1289,17 @@ Imprimir en un archivo con la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -1343,9 +1343,9 @@ Imprimir en un archivo con la API de salida (servicio web):
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Envío de flujos de impresión a impresoras {#sending-print-streams-to-printers}
 
@@ -1416,7 +1416,7 @@ Puede definir las opciones de tiempo de ejecución al enviar un flujo de impresi
 
 Recupere un flujo de impresión para enviarlo a una impresora. Por ejemplo, puede recuperar un archivo PostScript y enviarlo a una impresora.
 
-Puede elegir enviar un archivo PDF si la impresora admite PDF. Sin embargo, un problema con el envío de un documento PDF a una impresora es que cada fabricante de la impresora tiene una implementación diferente del intérprete PDF. Es decir, algunos fabricantes de impresión utilizan la interpretación de Adobe PDF, pero depende de la impresora. Otras impresoras tienen su propio intérprete de PDF. Como resultado, los resultados de impresión pueden variar.
+Puede elegir enviar un archivo PDF si la impresora admite PDF. Sin embargo, un problema con el envío de un documento PDF a una impresora es que cada fabricante de la impresora tiene una implementación diferente del intérprete PDF. Es decir, algunos fabricantes de impresoras utilizan la interpretación de Adobe PDF, pero depende de la impresora. Otras impresoras tienen su propio intérprete de PDF. Como resultado, los resultados de impresión pueden variar.
 
 Otra limitación del envío de un documento PDF a una impresora es que solo imprime; no puede acceder a la impresión a doble cara, a la selección de bandeja de papel ni al grapado, excepto a través de los ajustes de la impresora.
 
@@ -1576,17 +1576,17 @@ Envíe un flujo de impresión a una impresora de red mediante la API de salida (
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -1727,8 +1727,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, deberá reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms.
 
@@ -1876,12 +1876,12 @@ Cree varios archivos PDF mediante la API de salida (servicio web):
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -1932,9 +1932,9 @@ Cree varios archivos PDF mediante la API de salida (servicio web):
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Creación de reglas de búsqueda {#creating-search-rules}
 
@@ -2109,12 +2109,12 @@ Cree reglas de búsqueda mediante la API de salida (servicio Web):
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -2156,7 +2156,7 @@ Cree reglas de búsqueda mediante la API de salida (servicio Web):
 
    >[!NOTE]
    >
-   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` miembro del `pdfVersion` objeto si el documento de entrada es un formulario de Acrobat. El documento PDF de salida conserva la versión PDF del formulario de Acrobat. Del mismo modo, no se puede establecer la opción PDF con etiquetas mediante el `RenderOptionsSpec` método `taggedPDF` del objeto si el documento de entrada es un formulario de Acrobat.
+   >No se puede establecer la versión del documento PDF utilizando el `RenderOptionsSpec` miembro del `pdfVersion` objeto si el documento de entrada es un formulario Acrobat. El documento PDF de salida conserva la versión PDF del formulario Acrobat. Del mismo modo, no se puede establecer la opción PDF con etiquetas utilizando el `RenderOptionsSpec` método del `taggedPDF` objeto si el documento de entrada es un formulario Acrobat.
 
    >[!NOTE]
    >
@@ -2191,9 +2191,9 @@ Cree reglas de búsqueda mediante la API de salida (servicio Web):
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Acoplamiento de Documentos PDF {#flattening-pdf-documents}
 
@@ -2229,8 +2229,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, deberá reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
 
@@ -2324,12 +2324,12 @@ Acoplar un documento PDF interactivo a un documento PDF no interactivo mediante 
 1. Cree un objeto Output Client.
 
    * Cree un `OutputServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
+   * Cree un `OutputServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio. Sin embargo, especifique `?blob=mtom` para usar MTOM.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `OutputServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -2367,6 +2367,6 @@ Acoplar un documento PDF interactivo a un documento PDF no interactivo mediante 
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

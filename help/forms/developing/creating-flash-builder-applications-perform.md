@@ -1,6 +1,6 @@
 ---
-title: Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP
-seo-title: Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP
+title: Creación de aplicaciones Flash Builder que realizan la autenticación SSO mediante tokens HTTP
+seo-title: Creación de aplicaciones Flash Builder que realizan la autenticación SSO mediante tokens HTTP
 description: nulo
 seo-description: nulo
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
@@ -11,21 +11,24 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
 
-# Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Creación de aplicaciones de Flash Builder que realizan la autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 Puede crear una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que se crea una aplicación basada en Web mediante Flash Builder. A continuación, suponga que la aplicación contiene diferentes vistas, en las que cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita al usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que volver a autenticarse. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no tendrá que volver a autenticarse.
 
-Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, Administración de usuarios de formularios AEM realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación del servicio Authentication Manager `authenticateWithHTTPToken` . La Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para llamadas posteriores a AEM Forms mediante servicios Web o remoto, no es necesario pasar credenciales para la autenticación.
+Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, AEM administración de usuarios de formularios realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación del servicio Authentication Manager `authenticateWithHTTPToken` . La Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para llamadas posteriores a servicios Web o remotos a AEM Forms, no es necesario pasar credenciales para la autenticación.
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda familiarizarse con la invocación de formularios AEM mediante Remoting. (Consulte [Invocación de formularios AEM mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
+>Antes de leer esta sección, se recomienda que esté familiarizado con Invocar AEM Forms mediante Remoting. (Consulte [Invocación de AEM Forms mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
 
-El siguiente proceso de corta duración de AEM Forms, denominado `MyApplication/EncryptDocument`, se invoca después de autenticar a un usuario mediante SSO. (Para obtener información sobre este proceso, como los valores de entrada y salida, consulte Ejemplo [de proceso de duración](/help/forms/developing/aem-forms-processes.md)corta).
+El siguiente proceso breve de AEM Forms, denominado `MyApplication/EncryptDocument`, se invoca después de autenticar a un usuario mediante SSO. (Para obtener información sobre este proceso, como los valores de entrada y salida, consulte Ejemplo [de proceso de duración](/help/forms/developing/aem-forms-processes.md)corta).
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
@@ -47,7 +50,7 @@ El `j_password` valor solo es necesario para solicitudes de credenciales. Si no 
 
 >[!NOTE]
 >
->Para una gestión adecuada de i18n, asegúrese de que estos valores están en formato POST.
+>Para una gestión adecuada de i18n, asegúrese de que estos valores están en forma de POST.
 
 **Formato de respuesta**
 
@@ -66,7 +69,7 @@ El servlet de seguridad configurado en `/um/login` responde usando el `URLVariab
 
 **Proceso de inicio de sesión**
 
-Cuando se inicia una aplicación cliente, puede realizar una solicitud POST en el servlet de `/um/login` seguridad. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
+Cuando una aplicación cliente inicio, puede realizar una solicitud de POST al servlet de `/um/login` seguridad. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
 
 1. Busca una cookie llamada `lcAuthToken`. Si el usuario ya ha iniciado sesión en otra aplicación de Forms, esta cookie está presente. Si se encuentra la cookie, se valida su contenido.
 1. Si SSO basado en encabezado está habilitado, el servlet busca encabezados configurados para determinar la identidad del usuario.
@@ -81,7 +84,7 @@ Si la autenticación sigue sin realizarse correctamente, el servlet de seguridad
 
 >[!NOTE]
 >
->Aunque `authstate=CREDENTIAL_CHALLENGE`, se recomienda que el cliente envíe las credenciales obtenidas al servlet de seguridad en un formulario POST.
+>Aunque `authstate=CREDENTIAL_CHALLENGE`, se recomienda que el cliente envíe las credenciales obtenidas al servlet de seguridad en un formulario de POST.
 
 **Proceso de cierre de sesión**
 
@@ -91,17 +94,17 @@ Cuando una aplicación cliente cierra sesión, puede enviar una solicitud a la s
 
 Al recibir esta solicitud, el servlet de seguridad del Administrador de usuarios elimina la `lcAuthToken` cookie y responde con `authstate=LOGGED_OUT`. Una vez que la aplicación cliente recibe este valor, puede realizar tareas de limpieza.
 
-## Creación de una aplicación cliente que autentique usuarios de formularios AEM mediante SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## Creación de una aplicación cliente que autentique AEM usuarios de formularios mediante SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Para mostrar cómo crear una aplicación cliente que realiza la autenticación SSO, se crea una aplicación cliente de ejemplo. La siguiente ilustración muestra los pasos que realiza la aplicación cliente para autenticar a un usuario mediante SSO.
 
 ![cf_cf_flexsso](assets/cf_cf_flexsso.png)
 
-La ilustración anterior describe el flujo de aplicaciones que se produce cuando se inicia la aplicación cliente.
+En la ilustración anterior se describe el flujo de aplicaciones que se produce cuando se inicio la aplicación cliente.
 
 1. La aplicación cliente activa el `applicationComplete` evento.
 1. Se hace la llamada a `ISSOManager.singleSignOn` . La aplicación cliente envía una solicitud al servlet de seguridad de User Manager.
-1. Si el servlet de seguridad autentica al usuario, `ISSOManager` lo distribuye `SSOEvent.AUTHENTICATION_SUCCESS`. Como respuesta, la aplicación cliente muestra la página principal. En este ejemplo, la página principal invoca el proceso de corta duración de AEM Forms denominado MyApplication/EncryptDocument.
+1. Si el servlet de seguridad autentica al usuario, `ISSOManager` lo distribuye `SSOEvent.AUTHENTICATION_SUCCESS`. Como respuesta, la aplicación cliente muestra la página principal. En este ejemplo, la página principal invoca el proceso breve de AEM Forms denominado MyApplication/EncryptDocument.
 1. Si el servlet de seguridad no puede determinar si el usuario es válido, la aplicación solicita de nuevo las credenciales del usuario. La `ISSOManager` clase distribuye el `SSOEvent.AUTHENTICATION_REQUIRED` evento. La aplicación cliente muestra la página de inicio de sesión.
 1. Las credenciales proporcionadas en la página de inicio de sesión se envían al `ISSOManager.login` método . Si la autenticación se realiza correctamente, lleva al paso 3. De lo contrario, se activa el `SSOEvent.AUTHENTICATION_FAILED` evento. La aplicación cliente muestra la página de inicio de sesión y un mensaje de error adecuado.
 
@@ -109,7 +112,7 @@ La ilustración anterior describe el flujo de aplicaciones que se produce cuando
 
 La aplicación cliente consta de los siguientes archivos:
 
-* `SSOStandalone.mxml`:: El archivo MXML principal que representa la aplicación cliente. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)SSOStandalone.mxml).
+* `SSOStandalone.mxml`:: Archivo MXML principal que representa la aplicación cliente. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)SSOStandalone.mxml).
 * `um/ISSOManager.as`:: Operaciones de exposición relacionadas con el inicio de sesión único (SSO). (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file)ISSOManager.as).
 * `um/SSOEvent.as`:: El `SSOEvent` se envía para eventos relacionados con SSO. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file)SSOEvent.as).
 * `um/SSOManager.as`:: Gestiona las operaciones relacionadas con SSO y distribuye los eventos adecuados. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file)SSOManager.as).
@@ -117,7 +120,7 @@ La aplicación cliente consta de los siguientes archivos:
 * `views/login.mxml`:: Representa la pantalla de inicio de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)login.mxml.)
 * `views/logout.mxml`:: Representa la pantalla de cierre de sesión. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)logout.mxml.)
 * `views/progress.mxml`:: Representa una vista de progreso. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)progress.mxml.)
-* `views/remoting.mxml`:: Representa la vista que invoca el proceso de corta duración de AEM Forms denominado MyApplication/EncryptDocument mediante la comunicación remota. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
+* `views/remoting.mxml`:: Representa la vista que invoca el proceso de corta duración de AEM Forms llamado MyApplication/EncryptDocument mediante el uso de remoting. (Consulte [Creación del archivo](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)remoting.mxml.)
 
 La siguiente ilustración proporciona una representación visual de la aplicación cliente.
 
@@ -125,7 +128,7 @@ La siguiente ilustración proporciona una representación visual de la aplicaci�
 
 >[!NOTE]
 >
->Observe que hay dos paquetes denominados um y views. Al crear la aplicación cliente, asegúrese de colocar los archivos en los paquetes adecuados. Además, asegúrese de agregar el archivo adobe-remoting-provider.swc a la ruta de clases del proyecto. (Consulte [Inclusión del archivo](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de biblioteca Flex de AEM Forms).
+>Observe que hay dos paquetes denominados um y vistas. Al crear la aplicación cliente, asegúrese de colocar los archivos en los paquetes adecuados. Además, asegúrese de agregar el archivo adobe-remoting-provider.swc a la ruta de clases del proyecto. (Consulte [Inclusión del archivo](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)de biblioteca Flex de AEM Forms).
 
 ### Creación del archivo SSOStandalone.mxml {#creating-the-ssostandalone-mxml-file}
 
@@ -667,7 +670,7 @@ El siguiente código representa el archivo progress.mxml.
 
 ### Creación del archivo remoting.mxml {#creating-the-remoting-mxml-file}
 
-El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que un documento se pasa al proceso, la lógica de aplicación responsable de pasar un documento seguro a AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+El siguiente código representa el archivo remoting.mxml que invoca el `MyApplication/EncryptDocument` proceso. Dado que se pasa un documento al proceso, la lógica de la aplicación responsable de pasar un documento seguro a AEM Forms se encuentra en este archivo. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?> 
@@ -869,7 +872,7 @@ Las siguientes secciones proporcionan detalles adicionales que describen la comu
 
 ### Se produce una nueva autenticación {#a-new-authentication-occurs}
 
-En este caso, el usuario intenta iniciar sesión por primera vez desde una aplicación cliente en AEM Forms. (no existe ninguna sesión anterior que involucre al usuario). En el `applicationComplete` evento, se invoca el `SSOManager.singleSignOn` método que envía una solicitud al Administrador de usuarios.
+En este caso, el usuario intenta iniciar sesión en AEM Forms por primera vez desde una aplicación cliente. (no existe ninguna sesión anterior que involucre al usuario). En el `applicationComplete` evento, se invoca el `SSOManager.singleSignOn` método que envía una solicitud al Administrador de usuarios.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -895,7 +898,7 @@ Como resultado, `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` se env�
 
 ### El usuario ya está autenticado {#the-user-is-already-authenticated}
 
-En este caso, el usuario ya ha iniciado sesión en AEM Forms y, a continuación, navega a la aplicación cliente. La aplicación cliente se conecta al servlet de seguridad de User Manager durante el inicio.
+En este caso, el usuario ya ha iniciado sesión en AEM Forms y luego navega a la aplicación cliente. La aplicación cliente se conecta al servlet de seguridad de User Manager durante el inicio.
 
 ```as3
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1 

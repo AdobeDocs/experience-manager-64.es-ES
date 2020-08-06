@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 83%
 
 ---
 
@@ -129,7 +132,7 @@ Este componente de llamada a acción puede utilizarse para añadir un vínculo d
 
 **Etiqueta** El texto que ven los usuarios. Puede modificar el formato con el editor de texto enriquecido.
 
-**Dirección URL** de destino Introduzca la URI que desea que visiten los usuarios si hacen clic en el texto.
+**URL** de DestinatarioIntroduzca el URI que desea que visiten los usuarios si hacen clic en el texto.
 
 **Opciones** de procesamiento Describe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
 
@@ -154,7 +157,7 @@ Este componente de llamada a acción puede utilizarse para añadir imágenes gr�
 
 **Etiqueta** Texto que los usuarios ven en el gráfico. Puede modificar el formato con el editor de texto enriquecido.
 
-**Dirección URL** de destino Introduzca el URI que desea que visiten los usuarios si hacen clic en la imagen.
+**URL** de DestinatarioIntroduzca el URI que desea que visiten los usuarios si hacen clic en la imagen.
 
 **Opciones** de procesamiento Describe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
 
@@ -248,7 +251,7 @@ En la sección siguiente se describen los componentes disponibles en Llamada a a
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-**Formulario** de posibles clientes Agregue este componente para agregar un formulario de posibles clientes a la página de aterrizaje. Un formulario de posibles clientes contiene los campos Inicio del formulario de posibles clientes y Fin del formulario de posibles clientes de forma predeterminada. Entre ellos, puede añadir los componentes de Formulario de posibles clientes descritos en esta sección.
+**Formulario** de posibles clientes Añada este componente para agregar un formulario de posibles clientes a la página de aterrizaje. Un formulario de posibles clientes contiene los campos Inicio del formulario de posibles clientes y Fin del formulario de posibles clientes de forma predeterminada. Entre ellos, puede añadir los componentes de Formulario de posibles clientes descritos en esta sección.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -265,7 +268,7 @@ Se pueden configurar dos fichas **Formulario** y **Avanzado**:
 **Página de agradecimiento**
 Página a la que se hace referencia para agradecer a los visitantes su contenido. Si se deja en blanco, el formulario se vuelve a mostrar tras el envío.
 
-**Iniciar flujo de trabajo** Determina qué flujo de trabajo se activa una vez que se envía un formulario de posibles clientes.
+**Flujo de trabajo** de Inicio Determina qué flujo de trabajo se activa una vez que se envía un formulario de posibles clientes.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -273,8 +276,8 @@ Página a la que se hace referencia para agradecer a los visitantes su contenido
 
 * Crear posible cliente
 * Servicio de correo electrónico: crear suscriptor y añadir a la lista. Se utiliza con un proveedor de servicios de correo electrónico como ExactTarget.
-* Servicio de correo electrónico: Enviar correo electrónico de respuesta automática: se utiliza si utiliza un proveedor de servicios de correo electrónico como ExactTarget.
-* Servicio de correo electrónico: Cancelar la suscripción del usuario de la lista: se utiliza si utiliza un proveedor de servicios de correo electrónico como ExactTarget.
+* Servicio de correo electrónico: Enviar correo electrónico de respuesta automática: se utiliza si utiliza un proveedor de servicio de correo electrónico como ExactTarget.
+* Servicio de correo electrónico: Cancelar la suscripción del usuario de la lista: se utiliza si utiliza un proveedor de servicio de correo electrónico como ExactTarget.
 * Cancelar la suscripción del usuario 
 
 **Identificador** del formulario El identificador del formulario identifica de forma exclusiva el formulario de posibles clientes. Utilice el identificador del formulario si tiene varios formularios en una misma página; asegúrese de que tienen identificadores distintos.
@@ -283,7 +286,7 @@ Página a la que se hace referencia para agradecer a los visitantes su contenido
 
 Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo cuenta con propiedades que coinciden con los nombres de campo, los campos apropiados del formulario se cargan previamente con el valor de estas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
 
-**Validación** del cliente Indica si se requiere la validación del cliente para este formulario (siempre se produce la validación del servidor). Esto se puede lograr junto con el componente Captcha de formulario.
+**Validación** del cliente Indica si se requiere la validación del cliente para este formulario (siempre se produce la validación del servidor). Esto se puede lograr junto con el componente Captcha de Forms.
 
 **Tipo** de recurso de validación Define el tipo de recurso de validación del formulario si desea validar todo el formulario de posibles clientes (en lugar de los campos individuales).
 
@@ -393,7 +396,7 @@ Para descargar el paquete de diseño importado, haga clic en **Descargar archivo
 
 Puede ver información sobre la última importación en cualquier momento si hace clic en el signo de exclamación azul de la parte superior de la página de aterrizaje, en la interfaz de usuario clásica.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-78](assets/chlimage_1-70.png)
 
 Si el paquete de diseño importado tiene problemas (si, por ejemplo, hace referencia a imágenes o scripts que no existen en el paquete, etc.), el importador de diseños muestra los problemas en una lista. Para ver la lista de problemas, haga clic en el vínculo de problemas de la Página de aterrizaje que está en la barra de herramientas de la interfaz de usuario clásica. In the following image, clicking on **Issues** link opens the Import Issues window.
 

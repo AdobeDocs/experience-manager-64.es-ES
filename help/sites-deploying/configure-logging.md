@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ Todas estas son configuraciones [OSGi](/help/sites-deploying/configuring-osgi.md
 
 >[!NOTE]
 >
->Este artículo [de](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) la Base de conocimiento explica cómo girar los archivos request.log y access.log.
+>En este artículo [de](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) la Base de conocimiento se explica cómo girar los archivos request.log y access.log.
 
 ## Registros y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
 
@@ -54,9 +57,9 @@ Además de la configuración de registro global, AEM le permite configurar opcio
 * el formato que se utilizará al escribir los mensajes de registro
 * el registrador (el servicio OSGi que proporciona los mensajes de registro)
 
-Esto le permite canalizar los mensajes de registro de un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o la realización de pruebas; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
+Esto le permite canal los mensajes de registro de un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o la realización de pruebas; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
 
-AEM utiliza lo siguiente para escribir mensajes de registro en el archivo:
+AEM utiliza lo siguiente para escribir los mensajes de registro en el archivo:
 
 1. Un servicio **** OSGi (registrador) escribe un mensaje de registro.
 1. Un **registrador** toma este mensaje y lo formatea según sus especificaciones.
@@ -82,7 +85,7 @@ Estos elementos están vinculados por los siguientes parámetros para los elemen
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
-Algunos registradores y escritores se incluyen en una instalación estándar de AEM.
+Ciertos registradores y escritores se incluyen en una instalación AEM estándar.
 
 El primero es un caso especial, ya que controla tanto los archivos `request.log` como los `access.log` :
 

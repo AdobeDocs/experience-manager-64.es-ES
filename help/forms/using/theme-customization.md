@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
 
 # Personalización de temas {#theme-customization}
 
-Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplicación AEM Forms un aspecto y una presentación distintos específicos de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o los puntos de inicio. El siguiente ejemplo proporciona instrucciones para cambiar:
+Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplicación de AEM Forms un aspecto y una presentación distintos específicos de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o los puntos de inicio. El siguiente ejemplo proporciona instrucciones para cambiar:
 
 * mostrar instrucciones en lugar de la descripción
 * número de rutas de visualización
@@ -81,5 +84,5 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 1. Guarde los cambios y cierre `_style.css` el archivo.
 1. Abra la aplicación de AEM Forms.
 
-   La aplicación AEM Forms ahora muestra instrucciones en lugar de descripciones.
+   La aplicación de AEM Forms ahora muestra las instrucciones en lugar de la descripción.
 

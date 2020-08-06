@@ -1,8 +1,8 @@
 ---
 title: Creación de un formulario adaptable
 seo-title: Creación de un formulario adaptable
-description: Cómo crear un formulario adaptable mediante AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
-seo-description: Cómo crear un formulario adaptable mediante AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
+description: Cómo crear un formulario adaptable con AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
+seo-description: Cómo crear un formulario adaptable con AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Siga estos pasos para crear un formulario adaptable.
 
-1. Acceso a la instancia de creación de AEM Forms en `https://[server]:[port]/<custom-context-if-any>.`
+1. Acceso a la instancia de AEM Forms Author en `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -31,7 +31,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 1. Introduzca sus credenciales en la página de inicio de sesión de AEM.
 
-   Después de iniciar sesión, en la esquina superior izquierda, toque **[!UICONTROL Adobe Experience Manager > Formularios > Formularios y Documentos]**.
+   Una vez que haya iniciado sesión, en la esquina superior izquierda, toque **[!UICONTROL Adobe Experience Manager > Forms > Forms y Documentos]**.
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 ## Creación de un formulario adaptable basado en un modelo de datos de formulario {#fdm}
 
-[La integración](/help/forms/using/data-integration.md) de datos de AEM Forms permite integrar varios orígenes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Se enlazan a las fuentes de datos respectivas y se utilizan para rellenar previamente un formulario y escribir los datos enviados de vuelta a las fuentes de datos respectivas. También puede invocar servicios configurados en un modelo de datos de formulario mediante reglas de formulario adaptables.
+[La integración](/help/forms/using/data-integration.md) de datos de AEM Forms le permite integrar varios orígenes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Se enlazan a las fuentes de datos respectivas y se utilizan para rellenar previamente un formulario y escribir los datos enviados de vuelta a las fuentes de datos respectivas. También puede invocar servicios configurados en un modelo de datos de formulario mediante reglas de formulario adaptables.
 
 Para utilizar un modelo de datos de formulario para crear un formulario adaptable:
 
@@ -102,7 +102,7 @@ Puede reutilizar las plantillas de formulario XFA para crear formularios adaptab
 Para utilizar una plantilla de formulario XFA como modelo de formulario para el formulario adaptable, haga lo siguiente:
 
 1. En la página **[!UICONTROL Añadir propiedades]** , abra la ficha Modelo **[!UICONTROL de formulario]** .
-1. En la ficha Modelo de formulario, en la lista desplegable, seleccione Plantillas **[!UICONTROL de formulario]**. Todas las plantillas de formulario cargadas en el repositorio mediante la interfaz de usuario de los AEM Forms se muestran para su selección. Seleccione una plantilla de la lista.
+1. En la ficha Modelo de formulario, en la lista desplegable, seleccione Plantillas **[!UICONTROL de formulario]**. Todas las plantillas de formulario cargadas en el repositorio mediante la interfaz de usuario de AEM Forms se muestran para su selección. Seleccione una plantilla de la lista.
 
    ![Asociar plantilla de formulario XFA con un formulario adaptable](assets/form_model_xfa_associate.png)
    **Figura:** *Selección de una plantilla de formulario*
@@ -148,7 +148,7 @@ Para utilizar el esquema XML o JSON como modelo de formulario para un formulario
 
 ## Plantillas de formulario adaptables {#adaptive-form-templates}
 
-Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. De forma predeterminada, AEM Forms proporciona algunas plantillas de formulario adaptables. Para obtener el paquete completo de plantillas, incluidas las plantillas avanzadas, debe instalar el paquete del complemento AEM Forms. Para obtener más información, consulte [Instalación del paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md)de AEM Forms.
+Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. De forma predeterminada, AEM Forms proporciona algunas plantillas de formulario adaptables. Para obtener el paquete completo de plantillas, incluidas las plantillas avanzadas, debe instalar el paquete del complemento AEM Forms. Para obtener más información, consulte [Instalación del paquete](/help/forms/using/installing-configuring-aem-forms-osgi.md)de complementos de AEM Forms.
 
 Además, puede utilizar el editor de plantillas para crear sus propias plantillas. Para obtener más información sobre el trabajo con plantillas, consulte Plantillas de formulario [adaptables](/help/forms/using/template-editor.md).
 
@@ -208,6 +208,6 @@ De forma predeterminada, la opción de guardado automático no está activada. P
 
    >[!NOTE]
    >
-   >Para que la opción de guardado automático funcione para usuarios anónimos, asegúrese de configurar el servicio de configuración común de formularios para permitir que todos los usuarios realicen la previsualización, la comprobación y la firma de formularios.
+   >Para que la opción de guardado automático funcione para usuarios anónimos, asegúrese de configurar el servicio de configuración común de Forms para permitir que todos los usuarios realicen previsualizaciones, verifiquen y firmen formularios.
    >
-   >Para configurar el servicio, vaya a la configuración de la consola web de AEM en `https://[server]:[host]/system/console/configMgr` y edite el servicio **[!UICONTROL de configuración común de]** Forms para elegir la opción **[!UICONTROL Todos los usuarios]** en el campo **[!UICONTROL Permitir]** y guardar la configuración.
+   >Para configurar el servicio, vaya a AEM configuración de la consola web en `https://[server]:[host]/system/console/configMgr` y edite el Servicio **[!UICONTROL de configuración común de]** Forms para elegir la opción **[!UICONTROL Todos los usuarios]** en el campo **[!UICONTROL Permitir]** y guardar la configuración.

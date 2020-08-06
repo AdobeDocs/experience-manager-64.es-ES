@@ -30,7 +30,7 @@ Para las aplicaciones de una sola página en AEM, la aplicación es responsable 
 
 ## Enrutamiento del proyecto {#project-routing}
 
-La aplicación es propietaria del enrutamiento y luego la implementan los desarrolladores del front-end del proyecto. Este documento describe el enrutamiento específico del modelo devuelto por el servidor AEM. La estructura de datos del modelo de página expone la dirección URL del recurso subyacente. El proyecto front-end puede utilizar cualquier biblioteca personalizada o de terceros que proporcione funcionalidades de enrutamiento. Una vez que una ruta espera un fragmento de modelo, se puede realizar una llamada a la `PageModelManager.getData()` función. Cuando una ruta de modelo ha cambiado, se debe activar un evento para advertir a bibliotecas de escucha como el Editor de páginas.
+La aplicación es propietaria del enrutamiento y luego la implementan los desarrolladores del front-end del proyecto. Este documento describe el enrutamiento específico del modelo devuelto por el servidor de AEM. La estructura de datos del modelo de página expone la dirección URL del recurso subyacente. El proyecto front-end puede utilizar cualquier biblioteca personalizada o de terceros que proporcione funcionalidades de enrutamiento. Una vez que una ruta espera un fragmento de modelo, se puede realizar una llamada a la `PageModelManager.getData()` función. Cuando una ruta de modelo ha cambiado, se debe activar un evento para advertir a bibliotecas de escucha como el Editor de páginas.
 
 ## Arquitectura {#architecture}
 
@@ -66,7 +66,7 @@ De forma predeterminada, este comportamiento se activa automáticamente. Para de
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Tenga en cuenta que todas las rutas de la SPA deben corresponder a un recurso accesible en AEM (por ejemplo, &quot; `/content/mysite/mypage"`), ya que la `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. Aunque, si es necesario, el SPA también puede definir una &quot;lista de bloques&quot; de rutas que deberían ser ignoradas por el `PageModelManager`:
+Tenga en cuenta que cada ruta del SPA debe corresponder a un recurso accesible en AEM (por ejemplo: &quot; `/content/mysite/mypage"`) ya que el `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. Aunque, si es necesario, el SPA también puede definir una &quot;lista de bloqueados&quot; de rutas que deberían ser ignoradas por el `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

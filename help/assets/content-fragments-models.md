@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
 source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 
 Los modelos de fragmentos de contenido definen la estructura del contenido para los fragmentos [de](content-fragments.md)contenido.
 
-## Habilitar modelos de fragmento de contenido {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -43,6 +46,7 @@ Para [crear un nuevo modelo](#creating-a-content-fragment-model) de fragmento de
 
    1. Especifique un **[!UICONTROL título]**.
    1. Seleccione Modelos **[!UICONTROL de fragmento de contenido]** para habilitar su uso.
+
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Seleccione **[!UICONTROL Crear]** para guardar la definición.
@@ -86,18 +90,21 @@ El modelo de fragmento de contenido define eficazmente la estructura de los frag
 
    * left: campos ya definidos
    * right: **[!UICONTROL Tipos de datos]** disponibles para crear campos (y **[!UICONTROL Propiedades]** para su uso una vez creados los campos)
+
    >[!NOTE]
    >
    >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
 
-   ![cfm-6420-11](assets/cfm-6420-12.png)
+   ![cfm-6420-12](assets/cfm-6420-12.png)
 
-1. **Adición de un campo**
+1. **Para Añadir un campo**
 
    * Arrastre un tipo de datos requerido a la ubicación requerida para un campo:
+
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
    * Una vez agregado el campo al modelo, el panel derecho mostrará las **propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se necesita para ese campo. Por ejemplo:
+
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
 1. **Quitar un campo**

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Para asegurarse de que la implementación no está bloqueada, las definiciones p
 * qué páginas se cambiarán de nombre (y cómo),
 * cómo afectará esto a cualquier contenido publicado.
 
-   El comportamiento predeterminado de AEM (lista para usar) es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página que se creó manualmente en la rama de Live Copy, dicho contenido se seguirá publicando después de la gestión y la implementación del conflicto.
+   El comportamiento predeterminado de AEM (predeterminado) es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página que se creó manualmente en la rama de Live Copy, dicho contenido se seguirá publicando después de la gestión y la implementación del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflictos personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
@@ -83,11 +86,11 @@ Esto se lleva a cabo mediante la configuración [OSGi del Administrador](/help/s
 
    Se establece en true si el administrador de implementación debe gestionar conflictos de una página creada en la Live Copy con un nombre que exista en el modelo.
 
-AEM tiene un comportamiento [predefinido cuando la administración de conflictos se ha desactivado](#behavior-when-conflict-handling-deactivated).
+AEM comportamiento [predefinido cuando la administración de conflictos se ha desactivado](#behavior-when-conflict-handling-deactivated).
 
 ## Controladores de conflictos {#conflict-handlers}
 
-AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que exista al distribuir contenido de un modelo a una Live Copy. Cambiar el nombre de las páginas es uno de los métodos habituales para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
+AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que exista al implementar contenido de un modelo en una Live Copy. Cambiar el nombre de las páginas es uno de los métodos habituales para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
 
 AEM proporciona:
 
@@ -129,8 +132,8 @@ Este controlador de conflictos da prioridad al modelo. La página de Live Copy `
    <td><strong>modelo después de la implementación</strong></td> 
    <td><strong>Live Copy después del lanzamiento</strong><br /> </td> 
    <td></td>
-   <td><strong>Live Copy después del lanzamiento</strong><br /> <br /><br /> </td> 
-   <td><strong>publicar después de la implementación</strong><br /><br /> </td> 
+   <td><strong>Live Copy después del lanzamiento</strong><br /> <br /> <br /> </td> 
+   <td><strong>publicar después de la implementación</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
@@ -167,11 +170,11 @@ Los controladores de conflictos personalizados pueden:
 
 ### Comportamiento al desactivar la gestión de conflictos {#behavior-when-conflict-handling-deactivated}
 
-Si [desactiva manualmente la gestión](#rollout-manager-and-conflict-handling) de conflictos, AEM no realiza ninguna acción en las páginas en conflicto (las páginas que no entran en conflicto se distribuyen según lo previsto).
+Si [desactiva manualmente la gestión](#rollout-manager-and-conflict-handling) de conflictos, no AEM ninguna acción en las páginas en conflicto (las páginas en conflicto se despliegan según lo esperado).
 
 >[!CAUTION]
 >
->AEM no indica que se estén ignorando los conflictos, ya que este comportamiento debe configurarse explícitamente, por lo que se supone que es el comportamiento necesario.
+>AEM no da ninguna indicación de que se estén ignorando los conflictos, ya que este comportamiento debe configurarse explícitamente, por lo que se supone que es el comportamiento requerido.
 
 En este caso, la Live Copy tiene prioridad. La página de modelo no `/b` se copia y la página de Live Copy `/b` se deja intacta.
 
@@ -190,8 +193,8 @@ En este caso, la Live Copy tiene prioridad. La página de modelo no `/b` se copi
  <tbody> 
   <tr> 
    <td><strong>modelo después de la implementación</strong></td> 
-   <td><strong>Live Copy después del lanzamiento</strong><br /> <br /><br /> </td> 
-   <td><strong>publicar después de la implementación</strong><br /><br /> </td> 
+   <td><strong>Live Copy después del lanzamiento</strong><br /> <br /> <br /> </td> 
+   <td><strong>publicar después de la implementación</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 

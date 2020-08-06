@@ -1,8 +1,8 @@
 ---
 title: Uso del guardado automático en la aplicación de AEM Forms
 seo-title: Uso del guardado automático en la aplicación de AEM Forms
-description: 'Aprenda a utilizar la función de guardado automático en la aplicación de AEM Forms para evitar la pérdida de datos. '
-seo-description: 'Aprenda a utilizar la función de guardado automático en la aplicación de AEM Forms para evitar la pérdida de datos. '
+description: 'Aprenda a utilizar la función de guardado automático en la aplicación de AEM Forms que le permite evitar la pérdida de datos. '
+seo-description: 'Aprenda a utilizar la función de guardado automático en la aplicación de AEM Forms que le permite evitar la pérdida de datos. '
 uuid: f18ab6b4-dd4a-4dcb-88e6-e349777d47ea
 contentOwner: sashanka
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
 
 # Uso del guardado automático en la aplicación de AEM Forms {#using-autosave-in-aem-forms-app}
 
-Cuando un usuario introduce datos en la aplicación de formularios de Adobe Experience Manager, la función de guardado automático los guarda a intervalos regulares. La función de guardado automático de la aplicación de AEM Forms ayuda a evitar la pérdida de datos si la aplicación se cierra accidentalmente.
+Cuando un usuario introduce datos en la aplicación de Adobe Experience Manager Forms, la función de guardado automático los guarda a intervalos regulares. La función de guardado automático de la aplicación de AEM Forms ayuda a evitar la pérdida de datos si la aplicación se cierra accidentalmente.
 
 La aplicación se puede cerrar accidentalmente:
 
@@ -37,8 +40,8 @@ Siga estos pasos para utilizar la función de guardado automático en la aplicac
 1. En la pantalla General, utilice la opción Frecuencia **[!UICONTROL de guardado]** automático para seleccionar los intervalos en los que desea que la aplicación guarde los datos introducidos.
    [ ![Configuración de la frecuencia de guardado automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Al reiniciar la aplicación e iniciar sesión con el mismo usuario, se le pedirá que restaure la tarea con el cuadro de diálogo Recuperar tarea no guardada. Haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo Recuperar tarea no guardada para reanudar el trabajo con la tarea guardada. Puede hacer clic en **[!UICONTROL Cancelar]** para eliminar los datos guardados correspondientes al último guardado automático activado y empezar a trabajar con una nueva tarea.
+1. Al reiniciar la aplicación e iniciar sesión con el mismo usuario, se le pedirá que restaure la tarea con el cuadro de diálogo Recuperar Tarea no guardada. Haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo Recuperar Tarea no guardada para reanudar el trabajo con la tarea guardada. Puede hacer clic en **[!UICONTROL Cancelar]** para eliminar los datos guardados correspondientes a la última vez que se activó el guardado automático y el inicio que funcionaba con una nueva tarea.
 
    Al hacer clic en **[!UICONTROL Aceptar]**, la tarea se restaura con los datos correspondientes a la última función de guardado automático activada antes de que la aplicación se bloquee. Incluye los datos del formulario y todos los datos adjuntos asociados a la tarea.
-   [![](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)****** Obtención de una tarea **recuperadaA. Formulario** B de trabajo en curso. La aplicación se cerró con fuerza **C.** La aplicación se reinició con el cuadro de diálogo Recuperar tarea no guardada **D. Formulario restaurado con datos originales
+   [ ![Obtención de una tarea](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**recuperadaA.**Formulario** B de trabajo en curso.**La aplicación se cerró con fuerza** C.**La aplicación se reinició con el cuadro de diálogo Recuperar Tarea no guardada** D.**Formulario restaurado con datos originales
 

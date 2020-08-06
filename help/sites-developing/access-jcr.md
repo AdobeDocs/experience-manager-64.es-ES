@@ -1,8 +1,8 @@
 ---
-title: Cómo acceder mediante programación al JCR de AEM
-seo-title: Cómo acceder mediante programación al JCR de AEM
-description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte de Adobe Marketing Cloud
-seo-description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte de Adobe Marketing Cloud
+title: Cómo acceder mediante programación al JCR AEM
+seo-title: Cómo acceder mediante programación al JCR AEM
+description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte del Adobe Marketing Cloud
+seo-description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte del Adobe Marketing Cloud
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
 
-# Cómo acceder mediante programación al JCR de AEM{#how-to-programmatically-access-the-aem-jcr}
+# Cómo acceder mediante programación al JCR AEM{#how-to-programmatically-access-the-aem-jcr}
 
-Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de Adobe CQ, que forma parte de Adobe Marketing Cloud. Para acceder al repositorio de CQ, utilice la API de Java Content Repository (JCR). Puede utilizar la API de JCR de Java para realizar operaciones de creación, sustitución, actualización y eliminación (CRUD) en contenido ubicado en el repositorio de Adobe CQ. Para obtener más información sobre la API de JCR de Java, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Puede modificar mediante programación nodos y propiedades ubicados dentro del repositorio de Adobe CQ, que forma parte del Adobe Marketing Cloud. Para acceder al repositorio de CQ, utilice la API de Java Content Repository (JCR). Puede utilizar la API de JCR de Java para realizar operaciones de creación, sustitución, actualización y eliminación (CRUD) en contenido ubicado en el repositorio de Adobe CQ. Para obtener más información sobre la API de JCR de Java, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
@@ -29,7 +32,7 @@ Puede modificar mediante programación nodos y propiedades ubicados en el reposi
 
 >[!NOTE]
 >
->Para obtener información sobre cómo consultar el JCR de Adobe CQ mediante la API de consulta JCR, consulte [Consulta de datos de Adobe Experience Manager mediante la API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)JCR.
+>Para obtener información sobre cómo realizar la consulta del JCR de Adobe CQ mediante la API de Consulta de JCR, consulte [Consulta de datos de Adobe Experience Manager mediante la API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)de JCR.
 
 ## Crear una instancia de repositorio {#create-a-repository-instance}
 
@@ -140,7 +143,7 @@ try {
 }
 ```
 
-Después de ejecutar el ejemplo de código completo y crear los nodos, puede ver los nuevos nodos en **[!UICONTROL CRXDE Lite]**, como se muestra en la siguiente ilustración.
+Después de ejecutar el ejemplo de código completo y crear los nodos, puede realizar la vista de los nuevos nodos en el **[!UICONTROL CRXDE Lite]**, como se muestra en la siguiente ilustración.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

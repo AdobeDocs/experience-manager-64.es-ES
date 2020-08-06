@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, está a su propia discreción; hay muchas herramientas disponibles.
 
-Sin embargo, independientemente del método o la herramienta que elija, la información se almacenará:
+Sin embargo, independientemente del método o la herramienta que elija, la información almacenada:
 
 * Debe ser:
 
-   * Limitado al seguimiento del caso de prueba y sus resultados. Esto garantiza que el mantenimiento sea sencillo y que el documento pueda proporcionar una visión general clara del progreso de la prueba.
+   * Limitado al seguimiento del caso de prueba y sus resultados. Esto garantiza que el mantenimiento sea sencillo y que el documento pueda proporcionar una visión general clara del progreso de las pruebas.
    * Se mantiene como copia única, disponible para todos los miembros pertinentes del equipo del proyecto.
    * Neutro y limitado a los resultados de la prueba. El director del proyecto tiene la responsabilidad de tomar decisiones sobre cualquier acción que resulte de los resultados de la prueba.
 

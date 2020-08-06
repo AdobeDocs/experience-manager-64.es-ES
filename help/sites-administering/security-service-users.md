@@ -1,6 +1,6 @@
 ---
-title: Usuarios de servicio en AEM
-seo-title: Usuarios de servicio en AEM
+title: Usuarios de servicios en AEM
+seo-title: Usuarios de servicios en AEM
 description: Obtenga información sobre los usuarios de servicios en AEM.
 seo-description: Obtenga información sobre los usuarios de servicios en AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 0%
 
 ---
 
 
-# Usuarios de servicio en AEM{#service-users-in-aem}
+# Usuarios de servicios en AEM{#service-users-in-aem}
 
 ## Información general {#overview}
 
 La forma principal de obtener una sesión administrativa o resolución de recursos en AEM era utilizando los métodos `SlingRepository.loginAdministrative()` y `ResourceResolverFactory.getAdministrativeResourceResolver()` proporcionados por Sling.
 
-Sin embargo, ninguno de estos métodos se diseñó en torno al [principio del menor privilegio](https://en.wikipedia.org/wiki/Principle_of_least_privilege) y hace que sea demasiado fácil para un desarrollador no planificar una estructura adecuada y los correspondientes Niveles de control de acceso (ACL) para su contenido desde el principio. Si una vulnerabilidad está presente en un servicio de este tipo, a menudo lleva a una escalación de privilegios para el usuario, incluso si el código mismo no necesita privilegios administrativos para funcionar. `admin`
+Sin embargo, ninguno de estos métodos se diseñó en torno al [principio del menor privilegio](https://en.wikipedia.org/wiki/Principle_of_least_privilege) y hace que sea demasiado fácil para un desarrollador no planificar una estructura adecuada y los correspondientes niveles de Control de acceso (ACL) para su contenido desde el principio. Si una vulnerabilidad está presente en un servicio de este tipo, a menudo lleva a una escalación de privilegios para el usuario, incluso si el código mismo no necesita privilegios administrativos para funcionar. `admin`
 
 ## Cómo eliminar gradualmente las sesiones de administración {#how-to-phase-out-admin-sessions}
 
@@ -43,7 +46,7 @@ Muchos problemas pueden resolverse reestructurando el contenido. Tenga en cuenta
 
 * **Restringir la estructura de contenido**
 
-   * Muévalo a otras ubicaciones, por ejemplo, donde el control de acceso coincida con las sesiones de solicitud disponibles;
+   * Muévalo a otras ubicaciones, por ejemplo, donde control de acceso coincida con las sesiones de solicitud disponibles;
    * Cambiar la granularidad del contenido;
 
 * **Redimensionar el código para que sea un servicio adecuado**
@@ -54,8 +57,8 @@ Además, asegúrese de que todas las nuevas funciones que desarrolle se adhieran
 
 * **Los requisitos de seguridad deben impulsar la estructura de contenido**
 
-   * La administración del control de acceso debe sentirse natural
-   * El repositorio debe aplicar el control de acceso, no la aplicación
+   * Administrar el control de acceso debe sentirse natural
+   * El Control de acceso debe ser aplicado por el repositorio, no por la aplicación
 
 * **Uso de tipos de nodos**
 
@@ -67,7 +70,7 @@ Además, asegúrese de que todas las nuevas funciones que desarrolle se adhieran
 
 ## Control de acceso estricto {#strict-access-control}
 
-Tanto si aplica el control de acceso durante la reestructuración del contenido como si lo hace para un nuevo usuario de servicios, debe aplicar las ACL más estrictas posibles. Utilizar todas las instalaciones posibles para el control de acceso:
+Tanto si aplica controles de acceso durante la reestructuración del contenido como si lo hace para un nuevo usuario de servicios, debe aplicar las ACL más estrictas posibles. Utilice todas las instalaciones posibles del control de acceso:
 
 * Por ejemplo, en lugar de aplicar `jcr:read` en `/apps`, aplique solo a `/apps/*/components/*/analytics`
 
@@ -80,7 +83,7 @@ Tanto si aplica el control de acceso durante la reestructuración del contenido 
 
 ## Usuarios y asignaciones de servicios {#service-users-and-mappings}
 
-Si falla lo anterior, Sling 7 ofrece un servicio de Asignación de usuarios de servicios, que permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` y ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` que devuelven una resolución de sesión/recurso con los privilegios de un usuario configurado solamente. Estos métodos tienen las características siguientes:
+Si falla lo anterior, Sling 7 oferta un servicio de Asignación de usuarios de servicios, que permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` y ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` que devuelven una resolución de sesión/recurso con los privilegios de un usuario configurado solamente. Estos métodos tienen las características siguientes:
 
 * Permiten los servicios de asignación a los usuarios
 * Permiten definir usuarios de subservicios
@@ -90,7 +93,7 @@ Si falla lo anterior, Sling 7 ofrece un servicio de Asignación de usuarios de s
 * `service-id` se asigna a un identificador de usuario de la autenticación de la resolución de recursos o del repositorio JCR
 * `service-name` es el nombre simbólico del paquete que proporciona el servicio
 
-## Otras recomendaciones {#other-recommendations}
+## Otro Recommendations {#other-recommendations}
 
 ### Sustitución de la sesión de administración por un usuario de servicio {#replacing-the-admin-session-with-a-service-user}
 
@@ -103,7 +106,7 @@ Para reemplazar la sesión de administración por un usuario de servicio, debe r
 1. Identifique los permisos necesarios para su servicio, teniendo en cuenta el principio de mínimo permiso.
 1. Compruebe si ya hay un usuario disponible con la configuración de permisos exacta que necesita. Cree un nuevo usuario del servicio del sistema si ningún usuario existente coincide con sus necesidades. RTC es necesario para crear un nuevo usuario de servicio. A veces, tiene sentido crear varios usuarios de subservicios (por ejemplo, uno para escritura y otro para lectura) para compartimentar el acceso aún más.
 1. Configure y pruebe las ACE para su usuario.
-1. Agregar una `service-user` asignación para el servicio y para `user/sub-users`
+1. Añadir una `service-user` asignación para su servicio y para `user/sub-users`
 
 1. Ponga la función de sling del usuario del servicio a disposición del paquete: actualizar a la versión más reciente de `org.apache.sling.api`.
 
@@ -111,7 +114,7 @@ Para reemplazar la sesión de administración por un usuario de servicio, debe r
 
 ## Creación de un nuevo usuario de servicio {#creating-a-new-service-user}
 
-Una vez verificado que ningún usuario de la lista de usuarios del servicio AEM es aplicable a su caso de uso y que se han aprobado los problemas de RTC correspondientes, puede continuar y agregar el nuevo usuario al contenido predeterminado.
+Después de comprobar que ningún usuario en la lista de AEM usuarios de servicios es aplicable para su caso de uso y que los problemas de RTC correspondientes se han aprobado, puede continuar y agregar el nuevo usuario al contenido predeterminado.
 
 El método recomendado es crear un usuario de servicio para utilizar el explorador del repositorio en *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -144,7 +147,7 @@ Al agregar el archivo .content.xml correspondiente al contenido del paquete, ase
     rep:authorizableId="authentication-service"/>
 ```
 
-## Adición de una modificación de configuración a la configuración de ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
+## Añadir una modificación de configuración a la configuración de ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
 Para agregar una asignación desde el servicio a los usuarios del sistema correspondientes, debe crear una configuración de fábrica para el ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` servicio. Para mantener este módulo, estas configuraciones se pueden proporcionar usando el mecanismo [de modificación de](https://issues.apache.org/jira/browse/SLING-3578)Sling. La forma recomendada de instalar estas configuraciones con el paquete es mediante la carga [inicial de contenido de](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html)Sling:
 
@@ -189,10 +192,10 @@ Para agregar una asignación desde el servicio a los usuarios del sistema corres
 
 ## Tratamiento de sesiones compartidas en servicios {#dealing-with-shared-sessions-in-services}
 
-Las llamadas a `loginAdministrative()` menudo aparecen junto con las sesiones compartidas. Estas sesiones se adquieren al activar el servicio y solo se cierran después de que se detenga el servicio. Aunque esta es una práctica común, lleva a dos problemas:
+Las llamadas a `loginAdministrative()` menudo aparecen junto con las sesiones compartidas. Estas sesiones se adquieren en la activación del servicio y solo se cierran una vez que se ha detenido el servicio. Aunque esta es una práctica común, lleva a dos problemas:
 
-* **** Seguridad: Estas sesiones de administración se utilizan para almacenar en caché y devolver recursos u otros objetos enlazados a la sesión compartida. Más adelante, en la pila de llamadas, estos objetos se pueden adaptar a sesiones o a los solucionadores de recursos con privilegios elevados, y a menudo el llamador no tiene claro que se trata de una sesión de administración con la que están trabajando.
-* **** Rendimiento: En Oak, las sesiones compartidas pueden causar problemas de rendimiento y actualmente no se recomienda usarlos.
+* **Seguridad:** Estas sesiones de administración se utilizan para almacenar en caché y devolver recursos u otros objetos enlazados a la sesión compartida. Más adelante, en la pila de llamadas, estos objetos se pueden adaptar a sesiones o a los solucionadores de recursos con privilegios elevados, y a menudo el llamador no tiene claro que se trata de una sesión de administración con la que están trabajando.
+* **Rendimiento:** En Oak, las sesiones compartidas pueden causar problemas de rendimiento y actualmente no se recomienda usarlos.
 
 La solución más obvia para el riesgo de seguridad es simplemente reemplazar la `loginAdministrative()` llamada con una `loginService()` a un usuario con privilegios restringidos. Sin embargo, esto no tendrá ningún efecto en ninguna posible degradación del rendimiento. Una posibilidad de mitigar esto es incluir toda la información solicitada en un objeto que no esté asociado a la sesión. A continuación, cree (o destruya) la sesión a petición.
 
@@ -211,25 +214,25 @@ El primer método es el preferido.
 
 ## Eventos de procesamiento, preprocesadores de replicación y trabajos {#processing-events-replication-preprocessors-and-jobs}
 
-Cuando se procesan eventos o trabajos y, en algunos casos, flujos de trabajo, la sesión correspondiente que activó el evento generalmente se pierde. Esto lleva a que los administradores de eventos y los procesadores de trabajos a menudo utilicen sesiones administrativas para realizar su trabajo. Existen diferentes enfoques concebibles para resolver este problema, cada uno con sus ventajas y desventajas:
+Cuando se procesan eventos o trabajos y, en algunos casos, flujos de trabajo, la sesión correspondiente que activó el evento generalmente se pierde. Esto lleva a que los encargados de la gestión de eventos y los procesadores de empleo a menudo utilicen sesiones administrativas para realizar su trabajo. Existen diferentes enfoques concebibles para resolver este problema, cada uno con sus ventajas y desventajas:
 
-1. Pase la carga útil del `user-id` evento y utilice la suplantación.
+1. Pasa el `user-id` en la carga útil de evento y utiliza la suplantación.
 
-   **** Ventajas: Fácil de usar.
+   **Ventajas:** Fácil de usar.
 
-   **** Desventajas: Todavía utiliza `loginAdministrative()`. Vuelve a autenticar una solicitud que ya se ha autenticado.
+   **Desventajas:** Todavía utiliza `loginAdministrative()`. Vuelve a autenticar una solicitud que ya se ha autenticado.
 
 1. Cree o reutilice un usuario de servicios que tenga acceso a los datos.
 
-   **** Ventajas: Coherente con el diseño actual. Necesita un cambio mínimo.
+   **Ventajas:** Coherente con el diseño actual. Necesita un cambio mínimo.
 
-   **** Desventajas: Necesita usuarios de servicios muy poderosos para ser flexibles, lo que puede llevar fácilmente a escalaciones de privilegios. Elude el modelo de seguridad.
+   **Desventajas:** Necesita usuarios de servicios muy poderosos para ser flexibles, lo que puede llevar fácilmente a escalaciones de privilegios. Elude el modelo de seguridad.
 
-1. Pase una serialización de la `Subject` en la carga útil del evento y cree una `ResourceResolver` en función de ese asunto. Un ejemplo sería el uso del JAAS `doAsPrivileged` en el `ResourceResolverFactory`.
+1. Pase una serialización de la `Subject` en la carga útil de evento y cree una `ResourceResolver` basándose en ese asunto. Un ejemplo sería el uso del JAAS `doAsPrivileged` en el `ResourceResolverFactory`.
 
-   **** Ventajas: Implementación limpia desde un punto de vista de seguridad. Evita la reautenticación y funciona con los privilegios originales. El código relevante para la seguridad es transparente para el consumidor del evento.
+   **Ventajas:** Implementación limpia desde un punto de vista de seguridad. Evita la reautenticación y funciona con los privilegios originales. El código de seguridad pertinente es transparente para el consumidor del evento.
 
-   **** Desventajas: Necesita refactorización. El hecho de que el código pertinente para la seguridad sea transparente para el consumidor del suceso también podría generar problemas.
+   **Desventajas:** Necesita refactorización. El hecho de que el código pertinente para la seguridad sea transparente para el consumidor del evento también podría dar lugar a problemas.
 
 El tercer método es actualmente la técnica de procesamiento preferida.
 
@@ -237,8 +240,8 @@ El tercer método es actualmente la técnica de procesamiento preferida.
 
 En implementaciones de procesos de flujo de trabajo, la sesión de usuario correspondiente que activó el flujo de trabajo se pierde normalmente. Esto conduce a procesos de flujo de trabajo que a menudo utilizan sesiones administrativas para realizar su trabajo.
 
-Para solucionar estos problemas, se recomienda utilizar los mismos enfoques mencionados en los eventos de [procesamiento, los preprocesadores de replicación y los trabajos](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) .
+Para solucionar estos problemas, se recomienda utilizar los mismos enfoques mencionados en Eventos [de procesamiento, preprocesadores de replicación y trabajos](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) .
 
-## Procesadores POST de Sling y páginas eliminadas {#sling-post-processors-and-deleted-pages}
+## Procesadores POST Sling y páginas eliminadas {#sling-post-processors-and-deleted-pages}
 
-Hay un par de sesiones administrativas que se utilizan en las implementaciones del procesador Sling POST. Normalmente, las sesiones administrativas se utilizan para acceder a nodos que están pendientes de eliminación dentro del POST que se está procesando. En consecuencia, ya no están disponibles a través de la sesión de solicitud. Se puede acceder a un nodo pendiente de eliminación para revelar a metada que de otra manera no debería ser accesible.
+Hay un par de sesiones administrativas que se utilizan en las implementaciones del procesador de POST sling. Normalmente, las sesiones administrativas se utilizan para acceder a nodos que están pendientes de eliminación dentro del POST que se está procesando. En consecuencia, ya no están disponibles a través de la sesión de solicitud. Se puede acceder a un nodo pendiente de eliminación para revelar a metada que de otra manera no debería ser accesible.

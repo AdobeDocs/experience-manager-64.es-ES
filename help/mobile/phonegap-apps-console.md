@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El proceso de desarrollo de aplicaciones móviles de AEM reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa de procesos ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan tareas.
+El proceso de desarrollo de aplicaciones móviles AEM reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa de procesos ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan tareas.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -57,7 +57,7 @@ Las primeras páginas secundarias de la página raíz son las variaciones de idi
 La página de idioma sirve para dos propósitos:
 
 * El contenido de la página es la página de paso para la variación de idioma de la aplicación.
-* Las propiedades de página controlan varios aspectos de diseño de la aplicación, como la URL que se va a utilizar para solicitar actualizaciones de contenido, e información sobre la conexión a la compilación en la nube y a la integración de Adobe Analytics Services.
+* Las propiedades de página controlan varios aspectos de diseño de la aplicación, como la URL que se va a utilizar para solicitar actualizaciones de contenido, e información sobre la conexión a la compilación en la nube y a la integración con los servicios de Adobe Analytics.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -75,16 +75,16 @@ Las aplicaciones móviles se basan en un modelo que define una estructura de pá
 * **Descripción:** Descripción de la aplicación.
 * **URL del servidor:** La URL que proporciona actualizaciones de contenido de Over-the-Air (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio de externalización). Tenga en cuenta que debe ser una instancia de servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
-También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a usar. Esta imagen solo se utiliza como miniatura para representar su aplicación móvil en la consola de aplicaciones móviles en Experience Manager.
+También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a utilizar. Esta imagen solo se utiliza como miniatura para representar su aplicación móvil en la consola de aplicaciones móviles en Experience Manager.
 
 Existen fichas adicionales (y opcionales) para crear el servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en la aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación build.phonegap.com aquí. A continuación, desde la lista desplegable podrá seleccionar el servicio en la nube PhoneGap recién creado.
-* Analytics: Haga clic en administrar configuraciones y configure el servicio en la nube del SDK [de](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
+* Analytics: Haga clic en administrar configuraciones y configure el servicio en la nube SDK [de](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >
->Los desarrolladores pueden utilizar el kit de inicio de AEM PhoneGap para crear aplicaciones y agregarlas a la consola.
+>Los desarrolladores pueden utilizar el Kit de inicio AEM PhoneGap para crear aplicaciones y agregarlas a la consola.
 
 El siguiente procedimiento utiliza la IU táctil para crear una aplicación móvil.
 
@@ -98,7 +98,7 @@ El siguiente procedimiento utiliza la IU táctil para crear una aplicación móv
 
    Para crear una configuración de compilación de PhoneGap, haga clic en Administrar configuraciones.
 
-1. (Opcional) Si utiliza SiteCatalyst para rastrear la actividad de la aplicación, en la ficha Analytics, seleccione la configuración que desee utilizar.
+1. (Opcional) Si utiliza SiteCatalyst para realizar el seguimiento de la actividad de la aplicación, en la ficha Análisis, seleccione la configuración que desee utilizar.
 
    Para crear una configuración de aplicación móvil, haga clic en Administrar configuraciones.
 
@@ -135,7 +135,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Configure las propiedades en las fichas Básico, Avanzado, Generar y Analytics y, a continuación, toque o haga clic en el icono Listo.
+1. Configure las propiedades en las fichas Básico, Avanzado, Generar y Análisis y, a continuación, toque o haga clic en el icono Listo.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -149,7 +149,7 @@ Después de crear la aplicación móvil, agregue el contenido que se utiliza com
 
 ### Traslado de contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
 
-La caché de sincronización de contenido de la instancia de publicación de AEM se utiliza como repositorio de contenido para aplicaciones móviles:
+La caché de sincronización de contenido de la instancia de publicación AEM se utiliza como repositorio de contenido para aplicaciones móviles:
 
 * El contenido de la caché de sincronización de contenido se incluye en la aplicación cuando los desarrolladores la compilan.
 * El contenido de la caché está disponible para las aplicaciones móviles instaladas para actualizar el contenido de la aplicación.
@@ -171,18 +171,18 @@ Realice el siguiente procedimiento en la instancia donde desee actualizar la cac
 
 ### Uso de plantillas de aplicación {#using-app-templates}
 
-Esta función está disponible con el paquete de funciones 2 de la aplicación 6.1 y ofrece una forma sencilla de aprovechar las plantillas de aplicación existentes para crear nuevas aplicaciones en AEM.
+Esta función está disponible con el paquete de funciones 2 de la aplicación 6.1 y ofrece una forma sencilla de aprovechar las plantillas de aplicación existentes para crear nuevas aplicaciones dentro de AEM.
 
 ¿Qué es una plantilla de aplicación? Considérela como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
 Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación desde la que se creó.
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
-El último paquete de ejemplos de aplicaciones AEM 6.1 incluye una versión actualizada de la aplicación Geometrixx con una plantilla de aplicación. También puede instalar StarterKit, que también proporciona una plantilla.
+El último paquete de ejemplos de AEM Apps 6.1 incluye una versión actualizada de la aplicación de Geometrixx con una plantilla de aplicación. También puede instalar StarterKit, que también proporciona una plantilla.
 
 Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 
-1. Asegúrese de tener instalado el paquete de funciones y ejemplos de referencia de AEM Apps 6.1 más reciente
+1. Asegúrese de tener instalado el paquete de funciones y los paquetes de ejemplos de referencia de AEM Apps 6.1 más reciente
 1. Haga clic en Aplicaciones desde el carril izquierdo.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -195,7 +195,7 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 1. Haga clic en Siguiente. 
 1. Proporcione un título y un ID de la aplicación, pero puede que también desee incluir un nombre y una descripción.
 
-   1. Además, puede proporcionar un formato PNG (formato de icono PhoneGap admitido) como icono navegando por los recursos de AEM.
+   1. Además, puede proporcionar un formato PNG (formato de icono PhoneGap admitido) como icono explorando los recursos de AEM.
    1. Recuerde que puede editar todos estos campos una vez creada la aplicación en el mosaico Administrar aplicación. Con la excepción del ID de la aplicación, una vez configurado el ID de la aplicación no podrá cambiarlo.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -209,15 +209,15 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 
 >[!NOTE]
 >
->Si desinstala el paquete de la aplicación de referencia de Geometrixx Outdoors desde AEM y tiene una aplicación creada a partir de su plantilla, dicha aplicación dejará de funcionar. La aplicación Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
+>Si desinstala el paquete de la aplicación de referencia de Geometrixx Outdoors de AEM y tiene una aplicación creada en función de su plantilla, dicha aplicación dejará de funcionar. La aplicación Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
 
-## Exploración de la aplicación de ejemplo de Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
+## Exploración de la aplicación Geometrixx Outdoors de muestra {#exploring-the-sample-geometrixx-outdoors-app}
 
 La aplicación Geometrixx Outdoors es una aplicación PhoneGap de muestra que muestra las características del modelo predeterminado de la aplicación PhoneGap y los componentes móviles de muestra.
 
 Para abrir la aplicación, en el carril haga clic en Aplicaciones móviles y, a continuación, seleccione Aplicación de Geometrixx Outdoors.
 
-### Funciones comunes de la página: Aplicación móvil Geometrixx {#common-page-features-geometrixx-mobile-app}
+### Funciones comunes de la página: Aplicación móvil de Geometrixx {#common-page-features-geometrixx-mobile-app}
 
 Cada página de la aplicación móvil incluye las siguientes funciones:
 
@@ -231,14 +231,14 @@ Cada página de la aplicación móvil incluye las siguientes funciones:
 
 * Sistema de párrafos para añadir componentes y crear contenido.
 
-### La Página de inicio: Aplicación móvil Geometrixx {#the-home-page-geometrixx-mobile-app}
+### La Página de inicio - Aplicación móvil de Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 El contenido de la Página de inicio consta de las siguientes herramientas de navegación:
 
 * Componente de Lista de menú que proporciona vínculos a las páginas secundarias Engranaje, Reseñas, Noticias y Sobre la empresa.
 * Componente Carrusel de barrido que muestra las páginas secundarias.
 
-### Página de engranaje - Aplicación móvil Geometrixx {#the-gear-page-geometrixx-mobile-app}
+### Página de engranaje - Aplicación móvil de Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 La página Engranaje proporciona a los usuarios acceso a las páginas de productos. Un componente lista de menú proporciona acceso a las páginas secundarias de la página Engranaje. Las páginas secundarias son categorías de productos que presenta el sitio web.
 
@@ -249,25 +249,25 @@ La página Engranaje proporciona a los usuarios acceso a las páginas de product
 
 Cada página de categoría utiliza la misma estructura de contenido que la página Engranaje. El carrusel proporciona acceso a páginas secundarias que son subcategorías de productos. Las páginas de subcategorías contienen listas de productos que proporcionan vínculos a páginas de productos.
 
-### Página Productos - Aplicación móvil Geometrixx {#the-products-page-geometrixx-mobile-app}
+### Página Productos - Aplicación móvil de Geometrixx {#the-products-page-geometrixx-mobile-app}
 
 La página Productos y su jerarquía de páginas secundarias implementan un sistema de clasificación para las páginas de productos. Las páginas más bajas de cada rama de la jerarquía es una página de productos que contiene un componente de producto ng.
 
 La página Productos no está disponible para los usuarios de la aplicación. La página Engranaje proporciona acceso a cada página de producto.
 
-### Página Revisiones - Aplicación móvil Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### Página Reseñas - Aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
 Al utilizar la aplicación, la página Revisiones está disponible en el carrusel de la página en inglés.
 
-### Página de noticias - Aplicación móvil Geometrixx {#the-news-page-geometrixx-mobile-app}
+### Página de noticias - Aplicación móvil de Geometrixx {#the-news-page-geometrixx-mobile-app}
 
 Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
 Al utilizar la aplicación, la página Noticias está disponible en el carrusel de la página en inglés.
 
-### Página Información sobre la empresa: Aplicación móvil Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### Página Información sobre la empresa: Aplicación móvil de Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 La página Acerca de nosotros contiene varios componentes de Fila de dos columnas. Cada columna contiene un componente Imagen o Texto. Los componentes son editables y el sistema de párrafos permite añadir componentes.
 

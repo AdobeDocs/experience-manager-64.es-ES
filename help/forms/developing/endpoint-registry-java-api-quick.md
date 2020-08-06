@@ -44,7 +44,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 >[!NOTE]
 >
->El inicio rápido ubicado en Programación con formularios AEM se basa en Forms si utiliza otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>El inicio rápido ubicado en Programación con formularios AEM se basa en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 >[!NOTE]
 >

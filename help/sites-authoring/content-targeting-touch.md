@@ -268,7 +268,7 @@ Dado que el componente Target es un contenedor, aparece como un área de colocac
 
 En el modo de Target, el componente Target tiene un borde azul y el mensaje de destino indica la naturaleza de la orientación.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-78](assets/chlimage_1-70.png)
 
 En el modo de Edición, el componente Target tiene un icono de diana.
 
@@ -661,7 +661,7 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
   </tr> 
   <tr> 
    <td><strong>Motor</strong></td> 
-   <td>Seleccione entre Reglas <strong>del lado del cliente (sin seguimiento), Adobe Target, ContextHub </strong>y Adobe Campaign<strong> </strong>según el motor que desee utilizar.</td> 
+   <td>Seleccione entre las reglas <strong>de cliente (sin seguimiento), Adobe Target, ContextHub </strong>y Adobe Campaign<strong> </strong>según el motor que desee utilizar.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -682,11 +682,11 @@ Si selecciona Adobe Target como motor:
   </tr> 
   <tr> 
    <td><strong>Incluir segmentos resueltos</strong></td> 
-   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco.</p> <p>Esto solo funciona en situaciones con la API XML en las que se sincronizan segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td> 
+   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco.</p> <p>Esto solo funciona en situaciones con la API XML en las que está sincronizando AEM segmentos. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Parámetros heredados de contexto</strong></td> 
-   <td>Parámetros de contexto de Listas heredados del marco de Adobe Target, si los hay, asociados a la página seleccionada.</td> 
+   <td>Parámetros de contexto de Listas heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada.</td> 
   </tr> 
   <tr> 
    <td><strong>Parámetros de contexto</strong></td> 

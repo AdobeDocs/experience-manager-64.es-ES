@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
 source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-Este tutorial es un paso de la serie [Crear su primer formulario](/help/forms/using/create-your-first-adaptive-form.md) adaptable. Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
+Este tutorial es un paso de la serie [Crear su primer formulario](/help/forms/using/create-your-first-adaptive-form.md) adaptable. Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Acerca del tutorial {#about-the-tutorial}
 
 Puede utilizar reglas para agregar interactividad, lógica empresarial y validaciones inteligentes a un formulario adaptable. Los formularios adaptables tienen un editor de reglas integrado. El editor de reglas proporciona una funcionalidad de arrastrar y soltar, similar a las visitas guiadas. El método de arrastrar y soltar es el más rápido y sencillo para crear reglas. El editor de reglas también proporciona una ventana de código para los usuarios interesados en probar sus habilidades de codificación o llevar las reglas al siguiente nivel.
 
-Puede obtener más información sobre el editor de reglas en el editor [de reglas de formularios](/help/forms/using/rule-editor.md)adaptables.
+Puede obtener más información sobre el editor de reglas en el editor [de reglas de Forms](/help/forms/using/rule-editor.md)adaptable.
 
 Al final del tutorial, aprenderá a crear reglas para:
 
@@ -35,7 +38,7 @@ Las imágenes GIF interactivas al final de cada sección del tutorial le ayudan 
 
 ## Paso 1: Recuperar un registro de cliente de la base de datos {#retrieve-customer-record}
 
-Ha creado un modelo de datos de formulario siguiendo el artículo [crear modelo](/help/forms/using/create-form-data-model.md) de datos de formulario. Ahora puede utilizar el editor de reglas para invocar los servicios del Modelo de datos de formularios para recuperar y agregar información a la base de datos.
+Ha creado un modelo de datos de formulario siguiendo el artículo [crear modelo](/help/forms/using/create-form-data-model.md) de datos de formulario. Ahora puede utilizar el editor de reglas para invocar los servicios del Modelo de datos de Forms para recuperar y agregar información a la base de datos.
 
 A cada cliente se le asigna un número de ID de cliente único, que ayuda a identificar los datos relevantes del cliente en una base de datos. El procedimiento siguiente utiliza el ID de cliente para recuperar información de la base de datos:
 
@@ -64,11 +67,11 @@ A cada cliente se le asigna un número de ID de cliente único, que ayuda a iden
 
    Toque **[!UICONTROL Hecho]** para guardar la regla. En la ventana del editor de reglas, toque **[!UICONTROL Cerrar]**.
 
-1. Obtenga una vista previa del formulario adaptable. Introduzca un ID en el campo ID **[!UICONTROL del]** cliente. El formulario ahora puede recuperar los detalles del cliente de la base de datos.
+1. Previsualización del formulario adaptable. Introduzca un ID en el campo ID **[!UICONTROL del]** cliente. El formulario ahora puede recuperar los detalles del cliente de la base de datos.
 
    ![recuperar-información](assets/retrieve-information.gif)
 
-## Paso 2: Agregar la dirección de cliente actualizada a la base de datos {#updated-customer-address}
+## Paso 2: Añadir la dirección de cliente actualizada a la base de datos {#updated-customer-address}
 
 Una vez recuperados los detalles del cliente de la base de datos, puede actualizar la dirección de envío, el estado y el código postal. El procedimiento siguiente invoca un servicio del Modelo de datos de formulario para actualizar la información del cliente a la base de datos:
 
@@ -81,7 +84,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
-1. En la opción **[!UICONTROL ENTONCES]** , toque la opción **[!UICONTROL + Agregar instrucción]** . Seleccione **[!UICONTROL Invocar servicio]** en la lista desplegable **[!UICONTROL Seleccionar acción]** .
+1. En la opción **[!UICONTROL ENTONCES]** , toque la opción **[!UICONTROL + Añadir instrucción]** . Seleccione **[!UICONTROL Invocar servicio]** en la lista desplegable **[!UICONTROL Seleccionar acción]** .
 1. Seleccione el servicio **[!UICONTROL Actualizar dirección]** de envío en la lista desplegable **[!UICONTROL Seleccionar]** .
 
    ![update-Shipping-address](assets/update-shipping-address.png)
@@ -96,7 +99,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
 
 1. Arrastre y suelte el campo ID **[!UICONTROL del]** cliente desde la ficha Objetos del formulario hasta el campo id del cuadro **[!UICONTROL ENTRADA]** . Los campos sin un nombre de tabla preestablecido (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro en la tabla de detalles del cliente.
 1. Toque **[!UICONTROL Hecho]** para guardar la regla. En la ventana del editor de reglas, toque **[!UICONTROL Cerrar]**.
-1. Obtenga una vista previa del formulario adaptable. Recupere los detalles de un cliente, actualice la dirección de envío y envíe el formulario. Al recuperar los detalles del mismo cliente de nuevo, se muestra la dirección de envío actualizada.
+1. Previsualización del formulario adaptable. Recupere los detalles de un cliente, actualice la dirección de envío y envíe el formulario. Al recuperar los detalles del mismo cliente de nuevo, se muestra la dirección de envío actualizada.
 
 ## Paso 3: (Sección de bonificación) Utilice el editor de código para ejecutar validaciones y mostrar mensajes de error {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
@@ -146,7 +149,7 @@ El siguiente procedimiento muestra cómo crear una regla para mostrar un mensaje
    });
    ```
 
-1. Obtenga una vista previa del formulario adaptable. Introduzca un ID de cliente incorrecto. Aparece un mensaje de error.
+1. Previsualización del formulario adaptable. Introduzca un ID de cliente incorrecto. Aparece un mensaje de error.
 
    ![display-validation-error](assets/display-validation-error.gif)
 

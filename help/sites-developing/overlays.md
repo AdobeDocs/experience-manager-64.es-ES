@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
 
 # Superposiciones{#overlays}
 
-AEM (y antes de eso, CQ) ha utilizado desde hace tiempo el principio de las superposiciones para permitirle ampliar y personalizar las [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funciones (por ejemplo, la creación de [páginas](/help/sites-developing/customizing-page-authoring-touch.md)).
+AEM (y antes de eso, CQ) ha utilizado durante mucho tiempo el principio de las superposiciones para permitirle ampliar y personalizar las [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funcionalidades (por ejemplo, la creación [de](/help/sites-developing/customizing-page-authoring-touch.md)páginas).
 
 Overlay es un término que se puede utilizar en muchos contextos. En este contexto (ampliar AEM), una superposición significa tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
 
@@ -25,7 +28,7 @@ En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` 
 
 Desde AEM 6.0, se han realizado cambios en la forma en que se implementan y utilizan las superposiciones:
 
-* A partir de AEM 6.0: para superposiciones relacionadas con [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)(es decir, la IU táctil)
+* A partir de AEM 6.0: para superposiciones relacionadas con [granito](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)(es decir, la IU táctil)
 
    * Método
 
@@ -60,7 +63,7 @@ Desde AEM 6.0, se han realizado cambios en la forma en que se implementan y util
 >
 >Las superposiciones para otras áreas (incluida la IU clásica) implican copiar el nodo apropiado y toda la subestructura, y luego realizar los cambios necesarios.
 
-Las superposiciones son el método recomendado para realizar muchos cambios, como [configurar las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [crear la categoría de selección en el navegador de recursos del panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) lateral (se utiliza al crear páginas). Se requieren como:
+Las superposiciones son el método recomendado para realizar muchos cambios, como [configurar las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [crear la categoría de selección en el navegador de recursos del panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) lateral (utilizado al crear páginas). Se requieren como:
 
 * No ***debe *realizar cambios en la`/libs`rama **. Es posible que se pierdan los cambios que realice, ya que esta rama puede cambiar cada vez que:
 
@@ -72,7 +75,7 @@ Las superposiciones son el método recomendado para realizar muchos cambios, com
 
 ## Configuración de las rutas de búsqueda {#configuring-the-search-paths}
 
-Para las superposiciones, el recurso enviado es un agregado de los recursos y las propiedades recuperados, según las rutas de búsqueda que se puedan definir:
+Para las superposiciones, el recurso enviado es un acumulado de los recursos y las propiedades recuperados, según las rutas de búsqueda que se puedan definir:
 
 * El recurso **Resolver Ruta** de búsqueda según se define en la configuración [de](/help/sites-deploying/configuring-osgi.md) OSGi para la Fábrica **de resolución de recursos de Sling de** Apache.
 

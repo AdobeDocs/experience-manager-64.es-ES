@@ -42,7 +42,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
 
 ### Create text {#create-text}
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 
 1. Puntee **Crear** > **Texto.** O bien, seleccione un recurso de texto y toque **Editar**.
 1. Especifique la siguiente información para el texto:
@@ -225,7 +225,7 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
 * **Escritos**: Una lista alfabética con la elección de letras en minúsculas (a,b,...) y mayúsculas (A,B,...).
 * **Personalizado**: Puede crear cualquier tipo Numerado/Escrito y los valores de prefijo y sufijo que desee.
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 
 1. Seleccione **Crear** > **Lista**.
 
@@ -298,7 +298,7 @@ El editor Condición permite especificar una condición predeterminada. Si el va
 
 ### Crear una condición {#create-a-condition}
 
-1. Seleccione **Formularios** > Fragmentos **de Documento**.
+1. Seleccione **Forms** > Fragmentos **de Documento**.
 1. Seleccione **Crear > Condición**.
 1. Especifique la siguiente información para la lista:
 
@@ -415,7 +415,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
 ### Cargar un XDP en la administración de correspondencias {#upload-an-xdp-to-correspondence-management}
 
-Para obtener instrucciones sobre cómo cargar e importar un XDP a la administración de correspondencia, consulte [Importación y exportación de recursos a AEM Forms](/help/forms/using/import-export-forms-templates.md).
+Para obtener instrucciones sobre cómo cargar/importar un XDP a la administración de correspondencia, consulte [Importación y exportación de recursos a AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 ### Prácticas recomendadas, sugerencias y trucos {#best-practices-tips-and-tricks-2}
 

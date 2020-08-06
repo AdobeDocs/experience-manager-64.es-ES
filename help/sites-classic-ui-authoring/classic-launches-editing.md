@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 99%
 
 ---
 
@@ -47,6 +50,7 @@ Tras crear un lanzamiento, puede cambiar el nombre y la fecha del lanzamiento. T
       * **Título**
       * **Fecha de lanzamiento**: equivale a la fecha de 
       * **La producción está lista**
+
       Consulte [Lanzamientos: orden de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener información sobre la finalidad y la interacción de los campos.
 
    * En la ficha **Imagen**, puede cargar un archivo de imagen.
@@ -63,5 +67,5 @@ Cuando se edita un lanzamiento de una página, la información del lanzamiento a
 * Usuario que realizó el último cambio.
 * Estado del indicador **Listo para producción** (naranja = sin establecer; verde = establecido).
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 

@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
 
 ## Requisito previo {#pre-requisite}
 
-Configure el sitio de referencia de We.Gov tal como se describe en [Configurar y configurar los sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
+Configure su sitio de referencia de We.Gov tal como se describe en [Configurar y configurar sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
 
 ## Escenario de sitio de referencia {#reference-site-scenario}
 
@@ -39,9 +42,9 @@ Una vez presentada la solicitud y abonada la tasa, el solicitante recibe un corr
 
 La organización We.Gov recibe la solicitud. La organización recibe la evaluación de la aplicación y aprueba las solicitudes que son genuinas.
 
-Una vez aprobada la solicitud, el solicitante recibe un correo electrónico del sitio Web We.Gov. La opción **Ver documento** del correo electrónico enlaza a un documento con los detalles de inscripción del solicitante.
+Una vez aprobada la solicitud, el solicitante recibe un correo electrónico del sitio Web We.Gov. La opción Documento **de** Vista del correo electrónico enlaza a un documento con los detalles de inscripción del solicitante.
 
-La infografía siguiente muestra el flujo de trabajo paso a paso del escenario del sitio de referencia We.Gov.
+La siguiente infografía muestra el flujo de trabajo paso a paso del escenario del sitio de referencia We.Gov.
 
 ![workflow_aem_gov_2](assets/workflow_aem_gov_2.png)
 
@@ -92,9 +95,9 @@ Para ver las reglas:
 
 1. En el panel del lado izquierdo, haga clic en reglas `passMsg` y `failMsg` comprenda cómo funciona la comprobación de elegibilidad.
 
-## Sarah comienza su solicitud de ayuda para niños {#sarah-starts-her-application-for-child-support}
+## Sarah inicio su solicitud de ayuda a los niños {#sarah-starts-her-application-for-child-support}
 
-Sarah hace clic en **[!UICONTROL Iniciar solicitud]** después de que se le informe de su elegibilidad para recibir apoyo infantil.\
+Sarah hace clic en Solicitud de **[!UICONTROL Inicio]** después de que se le informe de su elegibilidad para recibir apoyo infantil.\
 En la página Solicitud de Servicios de Apoyo para Niños, Sarah proporciona detalles en las siguientes secciones:
 
 * **[!UICONTROL Acerca del solicitante]**: Le permite a Sarah proporcionar sus detalles en esta sección.
@@ -107,7 +110,7 @@ En la página Solicitud de Servicios de Apoyo para Niños, Sarah proporciona det
 
 De forma predeterminada, Sarah se dirige a la sección **[!UICONTROL Acerca del solicitante]** .
 
-![Aplicación de soporte para niños en el escritorio](assets/desktop.png)
+![Aplicación de soporte secundario en el escritorio](assets/desktop.png)
 
 En cualquier momento, Sarah puede hacer clic en **[!UICONTROL Volver más tarde]** y reanudar con su solicitud. Cuando hace clic en **[!UICONTROL Volver más tarde]**, su progreso se guarda como borrador y obtiene una opción para enviar el borrador por correo electrónico.
 
@@ -123,15 +126,15 @@ El formulario de soporte secundario del sitio We.Gov utiliza formularios adaptab
 
 Sarah puede proporcionar detalles en cualquier sección, pero la tasa de solicitud se acepta solamente después de proporcionar la información requerida en todas las secciones. Una aplicación está incompleta sin pago de tarifa y se requieren los campos marcados con un asterisco.
 
-### <strong>Sarah brinda su información</strong>{#strong-sarah-provides-her-information-strong}
+### <strong>Sarah brinda su información</strong> {#strong-sarah-provides-her-information-strong}
 
-Después de que Sarah haga clic en **[!UICONTROL Iniciar solicitud]**, se la lleva a la sección Información del solicitante de la página de Solicitud de Servicios de Apoyo para Niños. En Información del solicitante, Sarah navega a través de las fichas y proporciona su información personal para la solicitud. Ella hace clic en **[!UICONTROL Siguiente]** para navegar por las fichas.
+Después de que Sarah haga clic en Solicitud **[!UICONTROL de]** Inicio, se la lleva a la sección Información del solicitante de la página de Solicitud de Servicios de Apoyo Infantil. En Información del solicitante, Sarah navega a través de las fichas y proporciona su información personal para la solicitud. Ella hace clic en **[!UICONTROL Siguiente]** para navegar por las fichas.
 
 En Información del solicitante, se le pide que proporcione detalles en las fichas siguientes:
 
 * **[!UICONTROL Información básica]**
 
-Bajo Información Básica, Sarah brinda su documento de identidad y su información personal. La información personal de Sarah incluye su nombre, ID de correo electrónico y número de la seguridad social.
+En Información básica, Sarah proporciona su prueba de identificación y su información personal. La información personal de Sarah incluye su nombre, ID de correo electrónico y número de la seguridad social.
 
 * **[!UICONTROL Relación]**
 
@@ -171,7 +174,7 @@ Sarah puede elegir entre escribir, utilizar dibujar para escribir a mano, insert
 
 Su solicitud se envía al sitio Web de We.Gov.
 
-### <strong>Sarah recibe un correo electrónico</strong> de confirmación {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah recibe un correo electrónico de confirmación</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Después de que Sarah pague la tarifa de la solicitud, recibe un correo electrónico de acuse de recibo del sitio Web We.Gov.\
 We.Gov procesa la solicitud, y Sarah está informada que recibirá una compensación mensual después de que su solicitud sea aprobada.
@@ -210,15 +213,15 @@ Para ver todas las reglas, realice los siguientes pasos:
 
 ## Gloria recibe la aplicación {#gloria-receives-the-application}
 
-Gloria, jefe de aprobaciones de We.Gov, puede ver, aprobar o rechazar solicitudes enviadas. La bandeja de entrada de AEM le permite ver todas las aplicaciones enviadas en un solo lugar.
+Gloria, jefe de aprobaciones de We.Gov, puede vista, aprobación o rechazo de solicitudes enviadas. AEM Bandeja de entrada le permite ver todas las aplicaciones enviadas en un solo lugar.
 
 ### Cómo funciona {#how-it-works-2}
 
-Cuando Sarah rellena y envía la aplicación de soporte para niños, se crea un PDF o documento de registro de la aplicación y se envía a la bandeja de entrada de Gloria Rios. Gloria puede ver la solicitud enviada y aceptarla o rechazarla.
+Cuando Sarah rellena y envía la aplicación de soporte para niños, se crea un PDF o Documento de registro de la aplicación y se envía a la bandeja de entrada de Gloria Rios. Gloria puede vista de la solicitud presentada y aceptarla o rechazarla.
 
 ### Véalo usted mismo {#see-it-yourself-2}
 
-Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, toque **[!UICONTROL Iniciar sesión]**, seleccione la casilla de verificación **[!UICONTROL Iniciar sesión como representante]** e inicie sesión en la bandeja de entrada de AEM con grios/password como nombre de usuario/contraseña para Gloria Ríos. Aparece la aplicación de soporte secundario. Para obtener información sobre el uso de la Bandeja de entrada de AEM para tareas de flujo de trabajo centradas en formularios, consulte [Gestión de aplicaciones y tareas de formularios en la Bandeja de entrada](/help/forms/using/manage-applications-inbox.md)de AEM.
+Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, toque **[!UICONTROL Iniciar sesión]**, seleccione la casilla de verificación **[!UICONTROL Iniciar sesión como representante]** e inicie sesión en la bandeja de entrada AEM con grios/password como nombre de usuario/contraseña para Gloria Ríos. Aparece la aplicación de soporte secundario. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
 
 ![La bandeja de entrada de Gloria en el reflujo de We.Gov](assets/gloria-inbox.png)
 
@@ -226,29 +229,29 @@ Gloria puede ver, aprobar o rechazar la aplicación desde el panel de la aplicac
 
 ### Cómo funciona {#how-it-works-3}
 
-Gloria, jefe de aprobaciones en We.Gov, abre su bandeja de entrada de AEM. Ella ve una tarea de revisión en su lista de tareas. Ella abre y ve la tarea de revisión.
+Gloria, jefe de aprobaciones en We.Gov, abre su bandeja de entrada AEM. Ella ve una tarea de revisión en su lista de tareas. Ella abre y vista la tarea de revisión.
 
-Ella ve un PDF del formulario lleno de detalles que Sarah introdujo junto con los documentos que Sarah subió.\
+Ella ve un PDF del formulario lleno de detalles que Sarah ingresó junto con los documentos que Sarah subió.\
 Gloria puede aprobar o rechazar la aplicación. Sin embargo, Gloria hace clic en **[!UICONTROL Evaluación requerida]** para obtener la evaluación de la aplicación.
 
 ![gloria-envía-evaluación](assets/gloria-sends-assessment.png)
 
-La aplicación de Sarah es un punto de partida en el flujo de trabajo de AEM. Inicia el flujo de trabajo de AEM cuando se envía el formulario de solicitud de asistencia secundaria. El flujo de trabajo de AEM crea una tarea para Gloria, que aparece en su bandeja de entrada de AEM. Cuando Gloria solicita una evaluación in situ, se crea una nueva tarea para el agente de campo.
+La aplicación de Sarah es un punto de partida en el flujo de trabajo AEM. Inicia el flujo de trabajo de AEM cuando se envía el formulario de solicitud de soporte secundario. El flujo de trabajo AEM crea una tarea para Gloria, que aparece en su bandeja de entrada AEM. Cuando Gloria solicita una evaluación in situ, se crea una nueva tarea para el agente de campo.
 
 ### Véalo usted mismo {#see-it-yourself-3}
 
-Si se completa la configuración, el flujo de trabajo de AEM se inicia inmediatamente después de enviar el formulario. Inicie sesión en la bandeja de entrada con las credenciales de Gloria.
+Si se ha completado la configuración, el flujo de trabajo de AEM inicio inmediatamente después de enviar el formulario. Inicie sesión en la bandeja de entrada con las credenciales de Gloria.
 
 Acceda a la bandeja de entrada en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. En la página, toque **[!UICONTROL Iniciar sesión]** y seleccione la casilla de verificación **[!UICONTROL Iniciar sesión como representante]** . Utilice las credenciales predeterminadas de Gloria:
 
 * Nombre de usuario: grios
-* Contraseña:password
+* Contraseña: password
 
-En su bandeja de entrada de AEM, la aplicación de Sarah se agrega como tarea de revisión. Seleccione la tarea y haga clic en **Evaluación requerida** para continuar con el paso siguiente.
+En su bandeja de entrada AEM, la aplicación de Sarah se agrega como una tarea de revisión. Seleccione la tarea y haga clic en **Evaluación requerida** para continuar con el paso siguiente.
 
 ### Conard obtiene la tarea de evaluación {#conard-assessment-task}
 
-Cuando Gloria hace clic en **[!UICONTROL Evaluación requerida]**, Conard obtiene la tarea de revisión en su bandeja de entrada de AEM. La tarea es el siguiente paso en el flujo de trabajo de AEM definido en el modelo de flujo de trabajo. Él ve la tarea de revisión y la abre.
+Cuando Gloria hace clic en **[!UICONTROL Evaluación requerida]**, Conard obtiene la tarea de revisión en su Bandeja de entrada AEM. La tarea es el siguiente paso en el flujo de trabajo de AEM definido en el modelo de flujo de trabajo. Él ve la tarea de revisión y la abre.
 
 Conard obtiene la tarea de evaluación del solicitante como se muestra a continuación.
 
@@ -264,7 +267,7 @@ La recomendación hace clic en **[!UICONTROL Enviar para reevaluación]** y el f
 
 ### Cómo funciona {#how-it-works-4}
 
-Cuando Gloria solicita una evaluación, se inicia el siguiente paso en el flujo de trabajo de AEM y la tarea de evaluación se agrega a la bandeja de entrada de Conard. Conard es la persona que trabaja en el campo.
+Cuando Gloria solicita una evaluación, se inicia el siguiente paso en AEM flujo de trabajo y se agrega la tarea de evaluación en la bandeja de entrada de Conard. Conard es la persona que trabaja en el campo.
 
 Conard visita el lugar de Sarah, verifica que la información que Sarah proporcionó es genuina y completa el formulario de evaluación. Conard puede acceder a un PDF del formulario completo que Sarah cumplimentó.
 
@@ -275,23 +278,23 @@ Abra la bandeja de entrada de AEM en la tablet y utilice las credenciales de Con
 Las credenciales predeterminadas de Conard son:
 
 * Nombre de usuario: csimms
-* Contraseña:password
+* Contraseña: password
 
-Puede ver una nueva tarea Solicitud de evaluación agregada en la bandeja de entrada. Envíe la evaluación finalizada y continúe con el paso siguiente.
+Puede ver una nueva tarea de Solicitud de evaluación agregada en la bandeja de entrada. Envíe la evaluación finalizada y continúe con el paso siguiente.
 
 ### Gloria revisa la evaluación y aprueba la solicitud {#gloria-reviews-the-assessment-and-approves-the-application}
 
-Después de que Conard envíe la evaluación, Gloria verá una tarea de revisión en su bandeja de entrada. Selecciona y abre **[!UICONTROL Revisión]**.
+Después de que Conard envíe la evaluación, Gloria ve una tarea de Review en su bandeja de entrada. Selecciona y abre **[!UICONTROL Revisión]**.
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
-En Detalles de la tarea, Gloria ve la última acción realizada como &quot;Enviar para reevaluación&quot; (por Conard). Gloria ve que Conard Simms evaluó la aplicación.
+En Detalles de Tarea, Gloria ve la última acción tomada como &quot;Enviar para reevaluación&quot; (por Conard). Gloria ve que Conard Simms evaluó la aplicación.
 
 ![gloriaaprueba](assets/gloriaapproves.png)
 
 ### Cómo funciona {#how-it-works-5}
 
-Después de que Conard envíe la evaluación, Gloria verá una tarea de revisión en su bandeja de entrada. Selecciona y abre Revisión. En Detalles de la tarea, Gloria ve el comentario de evaluación hecho por Conard, que es &quot;Todo lo encontrado en orden&quot;.
+Después de que Conard envíe la evaluación, Gloria ve una tarea de Review en su bandeja de entrada. Selecciona y abre Revisión. En Detalles de Tarea, Gloria ve el comentario de evaluación hecho por Conard, que es &quot;Todo lo encontrado en orden&quot;.
 
 Gloria aprueba la solicitud.
 
@@ -305,21 +308,21 @@ Abra la tarea para ver el estado de la última acción realizada. En base a la e
 
 Después de que Gloria apruebe la solicitud, Sarah recibe un correo electrónico de We.Gov en el que se indica que su solicitud ha sido aprobada.
 
-El botón **[!UICONTROL Ver documento]** del correo electrónico vincula los detalles de su matriculación. Sarah hace clic en **[!UICONTROL Ver documento.]**
+El botón Documento **[!UICONTROL de]** Vista del correo electrónico vincula los detalles de su matriculación. Sarah hace clic en el Documento **[!UICONTROL de Vista.]**
 
 ![approved-registration-kit-email](assets/approval-enrolment-kit-email.png)
 
-El documento de inscripción enumera detalles como la ID de referencia, el hijo cubierto, la fecha de inicio, el número de cuenta bancaria, la frecuencia de pago y el importe de pago.
+Los detalles de listas del documento de inscripción como, por ejemplo, el ID de referencia, el hijo cubierto, la fecha de inicio, el número de cuenta bancaria, la frecuencia de pago y el importe de pago.
 
 ![sarah-enregistration-details](assets/sarah-enrollment-details.png)
 
-Sarah puede ver los documentos que cargó en la misma página.
+Sarah puede vista los documentos que cargó en la misma página.
 
-![upload-documents](assets/uploaded-documents.png)
+![upload-documentos](assets/uploaded-documents.png)
 
 ### Cómo funciona {#how-it-works-6}
 
-Cuando Gloria aprueba la solicitud, Sarah recibe un correo electrónico automatizado con un enlace al documento de inscripción.
+Cuando Gloria aprueba la aplicación, Sarah recibe un correo electrónico automatizado con un enlace al documento de inscripción.
 
 El documento de inscripción es una comunicación interactiva y se puede ver en cualquier dispositivo. Contiene detalles del servicio de apoyo a la infancia e información proporcionada por Sarah.
 
@@ -331,30 +334,30 @@ Como alternativa, para ver el documento en el explorador, abra: `https://<hostna
 
 ## We.Gov analiza el rendimiento de la aplicación {#we-gov-analyzes-the-performance-of-the-application}
 
-We.Gov, de vez en cuando, revisa el rendimiento de su aplicación de servicios de soporte para niños para verificar cualquier problema que puedan estar enfrentando los clientes. Utilizan este análisis para tomar decisiones informadas sobre los cambios que se requieren en la aplicación de servicios de apoyo para niños a fin de mejorar la experiencia del usuario, reducir la tasa de abandono de formularios y mejorar así la conversión. Aprovechan la integración de AEM Forms con Adobe Analytics para su análisis. La siguiente imagen muestra el tablero de análisis.
+We.Gov, de vez en cuando, revisa el rendimiento de su aplicación de servicios de soporte para niños para verificar cualquier problema que puedan estar enfrentando los clientes. Utilizan esta análisis para tomar decisiones informadas sobre los cambios necesarios en la aplicación de servicios de apoyo a los niños a fin de mejorar la experiencia del usuario, reducir la tasa de abandono de formularios y mejorar así la conversión. Aprovechan la integración de AEM Forms con Adobe Analytics para su análisis. La siguiente imagen muestra su panel de análisis.
 
-![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
+![child-support-analytics-panel](assets/child-support-analytics-dashboard.png)
 
 ### Cómo funciona {#how-it-works-7}
 
-Las métricas de rendimiento del formulario de aplicación de servicios de asistencia secundaria se rastrean con Adobe Analytics. Para obtener más información sobre la configuración de Adobe Analytics y la visualización de informes, consulte [Configuración de análisis para formularios y documentos](/help/forms/using/configure-analytics-forms-documents.md).
+Las métricas de rendimiento del formulario de aplicación de servicios de soporte secundario se rastrean con Adobe Analytics. Para obtener más información sobre la configuración y visualización de Adobe Analytics, consulte [Configuración de análisis para formularios y documentos](/help/forms/using/configure-analytics-forms-documents.md).
 
 ### Véalo usted mismo {#see-it-yourself-7}
 
-Para que pueda ver y explorar el informe de análisis, proporcionamos los datos iniciales de la aplicación de servicios de soporte secundarios en el sitio de referencia. Antes de usar datos de raíz, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para ver el informe con los datos de inicialización:
+Para que pueda realizar la vista y explorar el informe de análisis, proporcionamos datos de inicialización para la aplicación de servicios de soporte secundarios en el sitio de referencia. Antes de usar datos de raíz, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para vista del informe con los datos de inicialización:
 
-1. Vaya a la interfaz de usuario de **[!UICONTROL Forms &amp; Documents]** en https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Vaya a la interfaz de usuario de **[!UICONTROL Forms y Documentos]** en https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Haga clic para abrir la carpeta **We.Gov** .
 1. Seleccione **[!UICONTROL Aplicación para el formulario adaptable de Servicios]** de asistencia para niños y, a continuación, haga clic en **[!UICONTROL Habilitar análisis]** en la barra de herramientas.
 
-1. Seleccione el formulario de nuevo y haga clic en Informe **[!UICONTROL de]** análisis en la barra de herramientas para generar el informe. Primero verá un informe en blanco.
+1. Seleccione el formulario de nuevo y haga clic en Informe **** de análisis en la barra de herramientas para generar el informe. Primero verá un informe en blanco.
 
 Para generar un informe de análisis con datos de inicialización:
 
-1. En el navegador de direcciones de la lista CRXDE, escriba: **/apps/we-gov/demo-artifacts/analyticsTestData/servicio de asistencia para niños Datos de prueba de Analytics**
+1. En el navegador de direcciones de la lista CRXDE, escriba: **/apps/we-gov/demo-artifacts/analyticsDatos de prueba del servicio de asistencia técnica TestData/Child Datos de prueba de Analytics**
 1. Los datos de inicialización se seleccionan en la estructura del directorio del lado izquierdo.
-1. Haga doble clic en el archivo seleccionado para abrir su contenido en el panel derecho.
+1. Doble haga clic en el archivo seleccionado para abrir su contenido en el panel de la derecha.
 1. Copie todo el contenido del archivo de datos de prueba.
 1. En CRXDE, vaya a: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsepdays**
 1. En el campo analyticsdata de Propiedades, pegue el contenido copiado del archivo de datos de prueba.

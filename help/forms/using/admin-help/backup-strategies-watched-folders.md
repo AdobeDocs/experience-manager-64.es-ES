@@ -166,6 +166,7 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de carpeta de e
    * **Etapa 3:** Se copia en la carpeta de etapa y se invoca el proceso
    * **Fase 4:** Manipulación en curso
    * **Etapa 5:** Resultados devueltos
+
    Si los archivos están en la fase 1, se manipularán. Si los archivos se encuentran en la fase 2 o 3, colóquelos en la carpeta de entrada para que la manipulación vuelva a producirse.
 
    >[!NOTE]

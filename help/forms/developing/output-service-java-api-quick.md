@@ -175,7 +175,7 @@ El siguiente ejemplo de código Java crea un documento PDF llamado *Loan.pdf*. E
 
 >[!NOTE]
 >
->Antes de ejecutar este inicio rápido, asegúrese de crear una aplicación de AEM Forms denominada Aplicaciones/Aplicación de formularios. Cree una carpeta dentro de la aplicación denominada FormsFolder y coloque el archivo XDP en la carpeta. Para obtener más información, consulte [Generar un documento](/help/forms/developing/creating-document-output-streams.md)*PDF.*
+>Antes de ejecutar este inicio rápido, asegúrese de crear una aplicación de AEM Forms denominada Aplicaciones/FormsApplication. Cree una carpeta dentro de la aplicación denominada FormsFolder y coloque el archivo XDP en la carpeta. Para obtener más información, consulte [Generar un documento](/help/forms/developing/creating-document-output-streams.md)*PDF.*
 
 ```as3
  /* 
@@ -310,7 +310,7 @@ El archivo *Loan.pdf* está escrito en el directorio C:\Adobe folder located on 
 
 >[!NOTE]
 >
->Antes de ejecutar este inicio rápido, asegúrese de crear una aplicación de AEM Forms denominada Aplicaciones/Aplicación de formularios. Cree una carpeta dentro de la aplicación denominada FormsFolder y coloque el archivo XDP en la carpeta.
+>Antes de ejecutar este inicio rápido, asegúrese de crear una aplicación de AEM Forms denominada Aplicaciones/FormsApplication. Cree una carpeta dentro de la aplicación denominada FormsFolder y coloque el archivo XDP en la carpeta.
 
 ```as3
  /* 

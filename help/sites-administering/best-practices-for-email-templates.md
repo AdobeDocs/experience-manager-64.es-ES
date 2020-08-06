@@ -11,21 +11,24 @@ topic-tags: best-practices
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
 source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+workflow-type: tm+mt
+source-wordcount: '1054'
+ht-degree: 1%
 
 ---
 
 
 # Prácticas recomendadas para plantillas de correo electrónico{#best-practices-for-email-templates}
 
-Este documento describe algunas de las optimizaciones en torno al diseño del correo electrónico, lo que resulta en una plantilla de campaña de correo electrónico bien desarrollada.
+Este documento describe algunas de las prácticas recomendadas en torno al diseño del correo electrónico, lo que resulta en una plantilla de campaña de correo electrónico bien desarrollada.
 
-La campaña de demostración disponible en AEM sigue todas estas prácticas recomendadas. Se describe cómo se implementan las prácticas recomendadas en la campaña de demostración para cada práctica recomendada.
+La campaña de demostración disponible en AEM sigue todas estas optimizaciones. La forma en que se implementan las prácticas recomendadas en la campaña de demostración se describe para cada práctica recomendada.
 
 Siga estas prácticas recomendadas para crear su propia newsletter.
 
 >[!NOTE]
 >
->Todo el contenido de la campaña debe crearse en una `master` página de tipo `cq/personalization/components/ambitpage`. Por ejemplo: si está planeando una estructura de campaña, es algo así:
+>Todo el contenido de campaña debe crearse en una `master` página de tipo `cq/personalization/components/ambitpage`. Por ejemplo, si está planeando una estructura de campaña, es algo así:
 >
 >* `/content/campaigns/teasers/en/campaign-promotion-global`
 >
@@ -41,7 +44,7 @@ Asegúrese de que reside en una página de formato:
 
 ## Plantilla/componente de página {#template-page-component}
 
-***/libs/mcm/campaign/components/campaign_newsletterpage***
+***/libs/mcm/campaña/components/campaña_newsletterpage***
 
 <table> 
  <tbody> 
@@ -50,11 +53,11 @@ Asegúrese de que reside en una página de formato:
    <td><strong>Implementación</strong></td> 
   </tr> 
   <tr> 
-   <td><p>Especifique el tipo de documento para garantizar una representación coherente.</p> <p>Agregar DOCTYPE al principio (HTML o XHTML)</p> </td> 
-   <td><p>Se puede configurar mediante diseño, cambiando la propiedad <i>cq:doctype</i> en<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transicional//ES" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
+   <td><p>Especifique el tipo de documento para garantizar una representación coherente.</p> <p>Añadir DOCTYPE al principio (HTML o XHTML)</p> </td> 
+   <td><p>Se puede configurar mediante diseño, cambiando la propiedad <i>cq:doctype</i> en<i>"/etc/designs/default/jcr:content/campaña_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transicional//ES" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Especifique la definición de caracteres para garantizar la representación correcta de caracteres especiales.</p> <p>Agregar la declaración CHARSET (por ejemplo, iso-8859-15, UTF-8) a &lt;head&gt;</p> </td> 
+   <td><p>Especifique la definición de caracteres para garantizar la representación correcta de caracteres especiales.</p> <p>Añadir la declaración CHARSET (p. ej. iso-8859-15, UTF-8) en &lt;head&gt;</p> </td> 
    <td><p>Se establece en UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
@@ -66,8 +69,8 @@ Asegúrese de que reside en una página de formato:
    <td><p>Todas las tablas contienen atributos necesarios como <i>borde</i>, <i>relleno</i>de celdas, <i>espaciado</i> de celdas y <i>ancho</i>.</p> <p>Para armonizar la posición del elemento dentro de las tablas, todas las celdas de la tabla tienen el atributo <i>valign="top"</i> definido.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Si es posible, tenga en cuenta la facilidad de uso de los dispositivos móviles. Utilice las consultas de medios para aumentar el tamaño del texto en pantallas pequeñas y proporcione áreas de visita del tamaño de la miniatura para los vínculos.</p> <p>Haga que un correo electrónico responda si el diseño lo permite.</p> </td> 
-   <td>En cuanto a los estilos CSS que se utilizan para ilustrar el diseño de la demostración, las consultas de medios se utilizan para ofrecer una versión móvil compatible.</td> 
+   <td><p>Si es posible, tenga en cuenta la facilidad de uso de los dispositivos móviles. Utilice consultas de medios para aumentar el tamaño del texto en pantallas pequeñas y proporcione áreas de visita del tamaño de la miniatura para los vínculos.</p> <p>Haga que un correo electrónico responda si el diseño lo permite.</p> </td> 
+   <td>En cuanto a los estilos CSS que se utilizan para ilustrar el diseño de demostración, se utilizan consultas de medios para realizar la oferta de una versión móvil compatible.</td> 
   </tr> 
   <tr> 
    <td>La CSS en línea es mejor que colocar toda la CSS al principio.</td> 
@@ -78,7 +81,7 @@ Asegúrese de que reside en una página de formato:
    <td>En cuanto a los estilos CSS que se utilizan para ilustrar el diseño de demostración, se siguen las recomendaciones CSS.</td> 
   </tr> 
   <tr> 
-   <td>Los mensajes de correo electrónico deben tener una anchura máxima de 600-800 píxeles. Esto hará que se comporten mejor dentro del tamaño del panel de vista previa proporcionado por muchos clientes.</td> 
+   <td>Los mensajes de correo electrónico deben tener una anchura máxima de 600-800 píxeles. Esto hará que se comporten mejor dentro del tamaño del panel de previsualización proporcionado por muchos clientes.</td> 
    <td>El <i>ancho</i> de la tabla de contenido está limitado a 600 px en el diseño de demostración.</td> 
   </tr> 
  </tbody> 
@@ -86,18 +89,18 @@ Asegúrese de que reside en una página de formato:
 
 ## Imágenes {#images}
 
-/libs/mcm/campaign/components/image
+/libs/mcm/campaña/components/image
 
 | **Práctica recomendada** | **Implementación** |
 |---|---|
-| Agregar atributos *alt* a imágenes | El atributo *alt* se ha definido como obligatorio para el componente de imagen. |
+| Añadir atributos *alt* a imágenes | El atributo *alt* se ha definido como obligatorio para el componente de imagen. |
 | Usar *jpg* en lugar de formato *png* para imágenes | El componente de imagen siempre servirá como JPG las imágenes. |
 | Utilice `<img>` elementos en lugar de imágenes de fondo en una tabla. | No se utilizan datos de imagen de fondo en las plantillas. |
-| Agregue attribute style=&quot;display block&quot; en las imágenes. Permite mostrar bien en Gmail. | Todas las imágenes contienen de forma predeterminada el atributo *style=&quot;display block&quot;* . |
+| Añada attribute style=&quot;display block&quot; en imágenes. Permite mostrar bien en Gmail. | Todas las imágenes contienen de forma predeterminada el atributo *style=&quot;display block&quot;* . |
 
 ## Texto y vínculos {#text-and-links}
 
-/libs/mcm/campaign/components/heading, /libs/mcm/campaign/components/textimage
+/libs/mcm/campaña/components/heading, /libs/mcm/campaña/components/textimage
 
 <table> 
  <tbody> 
@@ -121,16 +124,16 @@ Asegúrese de que reside en una página de formato:
 | **Práctica recomendada** | **Implementación** |
 |---|---|
 | Use el validador de W3C para corregir el código HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se validó el código. En el caso de Doctype de transición XHTML, solo falta el atributo xmlns que falta para el `<html>` elemento. |
-| No se preocupe por JavaScript o Flash: los clientes de correo electrónico no admiten estas tecnologías. | En la plantilla de newsletter no se utiliza JavaScript ni Flash. |
-| Agregue una versión de texto sin formato para el envío de varias partes. | Se ha incorporado una nueva utilidad en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Se puede utilizar como punto de partida para la versión final de texto sin formato. |
+| No se preocupe por JavaScript o Flash: los clientes de correo electrónico no admiten estas tecnologías. | No se utiliza JavaScript ni Flash en la plantilla de newsletter. |
+| Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado una nueva utilidad en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Se puede utilizar como punto de partida para la versión final de texto sin formato. |
 
-## Plantillas y ejemplos de boletines informativos de campañas {#campaign-newsletter-templates-and-examples}
+## Ejemplos y plantillas de newsletter de Campaña {#campaign-newsletter-templates-and-examples}
 
-AEM incluye varias plantillas y componentes listos para usar para crear boletines de campaña. Puede utilizar estas plantillas y componentes para crear boletines informativos personalizados.
+AEM incluye varias plantillas y componentes listos para usar para crear newsletters de campaña. Puede utilizar estas plantillas y componentes para crear boletines informativos personalizados.
 
 ### Plantillas {#templates}
 
-Para ofrecer una base sólida y ampliar la variedad de posibilidades de flujo de contenido, hay tres tipos de plantilla ligeramente diferentes disponibles. Puede utilizarlos fácilmente para crear una newsletter personalizada.
+Para oferta de una base sólida y ampliar la variedad de posibilidades de flujo de contenido, hay tres tipos de plantilla ligeramente diferentes disponibles de forma predeterminada. Puede utilizarlos fácilmente para crear una newsletter personalizada.
 
 Todos tienen un **encabezado**, un **pie** de página y una sección de **cuerpo** . Debajo de la sección body, cada plantilla difiere en el diseño **de** columna (1, 2 o 3 columnas).
 
@@ -138,17 +141,17 @@ Todos tienen un **encabezado**, un **pie** de página y una sección de **cuerpo
 
 ### Componentes {#components}
 
-Actualmente hay [siete componentes disponibles para su uso dentro de las plantillas](/help/sites-authoring/adobe-campaign-components.md)de campaña. Todos estos componentes se basan en el lenguaje de marcado de Adobe **HTL**.
+Actualmente hay [siete componentes disponibles para su uso dentro de plantillas de campaña](/help/sites-authoring/adobe-campaign-components.md). Todos estos componentes se basan en el lenguaje de marcado Adobe **HTL**.
 
 | **Nombre del componente** | **Ruta del componente** |
 |---|---|
-| Encabezado | /libs/mcm/campaign/components/heading |
-| Imagen | /libs/mcm/campaign/components/image |
-| Texto y personalización | /libs/mcm/campaign/components/personalization |
-| Textimage | /libs/mcm/campaign/components/textimage |
-| Vínculo | /libs/mcm/campaign/components/reference |
-| Plantilla de imagen de Scene7 | /libs/mcm/campaign/s7image |
-| Referencia de objetivo | /libs/mcm/campaign/components/reference |
+| Encabezado | /libs/mcm/campaña/components/heading |
+| Imagen | /libs/mcm/campaña/components/image |
+| Texto y personalización | /libs/mcm/campaña/components/personalization |
+| Textimage | /libs/mcm/campaña/components/textimage |
+| Vínculo | /libs/mcm/campaña/components/reference |
+| Plantilla de imagen de Scene7 | /libs/mcm/campaña/s7image |
+| Referencia de objetivo | /libs/mcm/campaña/components/reference |
 
 >[!NOTE]
 >

@@ -1,8 +1,8 @@
 ---
-title: Consolas de administración
-seo-title: Consolas de administración
-description: Obtenga información sobre cómo utilizar las consolas de administración disponibles en AEM.
-seo-description: Obtenga información sobre cómo utilizar las consolas de administración disponibles en AEM.
+title: Admin Console
+seo-title: Admin Console
+description: Obtenga información sobre cómo utilizar los Admin Console disponibles en AEM.
+seo-description: Obtenga información sobre cómo utilizar los Admin Console disponibles en AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 2%
 
 ---
 
 
-# Consolas de administración{#admin-consoles}
+# Admin Console{#admin-consoles}
 
 De forma predeterminada, se ha deshabilitado la capacidad de cambiar a la IU clásica a través de las consolas de administración. Por lo tanto, ya no se muestran los iconos emergentes que se vieron al pasar el ratón sobre determinados iconos de la consola, lo que permite acceder a la IU clásica.
 
@@ -43,7 +46,7 @@ En este ejemplo, estamos volviendo a habilitar la IU clásica para la consola Si
    * **Ubicación de la superposición**: `/apps/`
    * **Coincidir tipos** de nodos: activo (seleccione la casilla de verificación)
 
-1. Agregue la siguiente propiedad booleana al nodo superpuesto:
+1. Añada la siguiente propiedad booleana al nodo superpuesto:
 
    `enableDesktopOnly = {Boolean}true`
 

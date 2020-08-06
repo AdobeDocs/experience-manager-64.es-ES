@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +24,11 @@ Si tiene instalado Connector para Documentum de EMC, además de las instruccione
 
 Realice una copia de seguridad del entorno de formularios AEM mediante el repositorio de ECM y las siguientes tareas:
 
-* Realice una copia de seguridad de los formularios AEM siguiendo las instrucciones descritas en este documento.
+* Realice una copia de seguridad de AEM formularios siguiendo las instrucciones descritas en este documento.
 * Haga backup de su sistema Documentum de ECM siguiendo las instrucciones de [Backup de Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server)de Documentum de EMC.
 
-Restaure el entorno de formularios AEM utilizando el repositorio de ECM y realizando las siguientes tareas:
+Restaure AEM entorno de formularios mediante el repositorio de ECM y realice las siguientes tareas:
 
 * Restaure su sistema ECM correspondiente siguiendo las instrucciones de [Restore de Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server)de Documentum de EMC.
-* Restaure los formularios de AEM siguiendo las instrucciones descritas en este documento.
+* Restaure AEM formularios siguiendo las instrucciones descritas en este documento.
 

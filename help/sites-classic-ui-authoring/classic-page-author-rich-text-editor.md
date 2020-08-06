@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 90%
 
 ---
 
@@ -157,7 +160,7 @@ Pueden crearse listas anidadas aplicando sangría a uno o varios elementos de li
 
 El estilo de una lista puede cambiar con solo colocar el cursor dentro de ella y luego seleccionar el otro estilo. Una sublista también puede tener un estilo diferente a la lista que la contiene. Este puede aplicarse una vez que se ha creado la sublista (mediante sangría).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_listas_use](assets/cq55_rte_lists_use.png)
 
 ### Vínculos {#links}
 
@@ -408,6 +411,7 @@ Crear una tabla anidada creará una nueva tabla autocontenida dentro de la celda
 >
 >* Windows IE: use Ctrl + clic con el botón principal del ratón (generalmente el izquierdo) para seleccionar varias celdas.
 >* Firefox: arrastre el ratón para seleccionar un rango de celdas.
+
 >
 
 

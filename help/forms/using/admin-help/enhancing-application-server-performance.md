@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
 source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
 
 # Mejora del rendimiento del servidor de aplicaciones{#enhancing-application-server-performance}
 
-Este contenido describe los ajustes opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
+Este contenido describe la configuración opcional que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
 
 ## Configuración de los orígenes de datos del servidor de aplicaciones {#configuring-application-server-data-sources}
 
-Los formularios AEM utilizan el repositorio de formularios AEM como su origen de datos. El repositorio de formularios AEM almacena los recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso comercial automatizado.
+AEM formularios utiliza el repositorio de AEM formularios como su origen de datos. El repositorio de AEM formularios almacena los recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso comercial automatizado.
 
 El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios AEM que esté ejecutando y del número de usuarios simultáneos que accedan a la aplicación. El acceso a la fuente de datos se puede optimizar mediante el agrupamiento de conexiones. *El agrupamiento* de conexiones es una técnica que se utiliza para evitar la sobrecarga de realizar nuevas conexiones de bases de datos cada vez que un objeto de servidor o de aplicación requiere acceso a la base de datos. El agrupamiento de conexiones se utiliza generalmente en aplicaciones basadas en la Web y en aplicaciones empresariales, y normalmente lo gestiona un servidor de aplicaciones, pero no se limita a él.
 
@@ -85,16 +88,16 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 
 Si normalmente procesa documentos de un tamaño relativamente pequeño, puede mejorar el rendimiento asociado con la velocidad de transferencia de documento y el espacio de almacenamiento. Para ello, implemente las siguientes configuraciones de producto de formularios AEM:
 
-* Aumente el tamaño de línea máximo del documento predeterminado para los formularios AEM de modo que sea mayor que el tamaño de la mayoría de los documentos.
+* Aumente el tamaño de línea máximo del documento predeterminado para AEM formularios de modo que sea mayor que el tamaño de la mayoría de los documentos.
 * Para procesar archivos más grandes, especifique los directorios de almacenamiento que se encuentran en un sistema de discos de alta velocidad o un disco RAM.
 
 El tamaño de línea máximo y los directorios de almacenamiento (el directorio de archivos temporales de formularios AEM y el directorio GDS) se configuran en la consola de administración.
 
 ### Tamaño de Documento y tamaño de línea máximo {#document-size-and-maximum-inline-size}
 
-Cuando un documento enviado para su procesamiento por formularios AEM es menor o igual al tamaño en línea máximo de documento predeterminado, el documento se almacena en línea en el servidor y el documento se serializa como un objeto de Documento de Adobe. El almacenamiento de documentos en línea puede tener importantes beneficios de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también puede almacenarse en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
+Cuando un documento enviado para su procesamiento por AEM formularios es menor o igual al tamaño en línea máximo de documento predeterminado, el documento se almacena en el servidor en línea y el documento se serializa como objeto de Documento de Adobe. El almacenamiento de documentos en línea puede tener importantes beneficios de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también puede almacenarse en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
 
-Un documento mayor que el tamaño máximo en línea se almacena en el sistema de archivos local. El objeto Adobe Documento que se transfiere desde y hacia el servidor es sólo un puntero a ese archivo.
+Un documento mayor que el tamaño máximo en línea se almacena en el sistema de archivos local. El objeto de Documento de Adobe que se transfiere desde y hacia el servidor es sólo un puntero a ese archivo.
 
 Cuando el contenido de documento está alineado (es decir, es menor que el tamaño en línea máximo), el contenido se almacena en la base de datos como parte de la carga útil de serialización del documento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
 
@@ -105,7 +108,7 @@ Cuando el contenido de documento está alineado (es decir, es menor que el tama�
 
    >[!NOTE]
    >
-   >El valor de la propiedad Tamaño en línea máximo de Documento debe ser idéntico para AEM Forms en el entorno JEE y AEM Forms en el paquete OSGi incluido en AEM Forms en el entorno JEE. Este paso actualiza el valor solo para AEM Forms en el entorno JEE y no para AEM Forms en el paquete OSGi incluía AEM Forms en el entorno JEE.
+   >El valor de la propiedad Tamaño en línea máximo de Documento debe ser idéntico para AEM Forms en el entorno JEE y AEM Forms en el paquete OSGi incluido AEM Forms en el entorno JEE. Este paso actualiza el valor solo para AEM Forms en el entorno JEE y no para AEM Forms en el paquete OSGi incluido AEM Forms en el entorno JEE.
 
 1. Reinicie el servidor de aplicaciones con la siguiente propiedad del sistema:
 
@@ -113,7 +116,7 @@ Cuando el contenido de documento está alineado (es decir, es menor que el tama�
 
    >[!NOTE]
    >
-   >La propiedad de sistema mencionada anteriormente anula el valor de la propiedad Tamaño en línea máximo de Documento establecida para AEM Forms en entorno JEE y AEM Forms en paquete OSGi incluía AEM Forms en entorno JEE.
+   >La propiedad del sistema antes mencionada anula el valor de la propiedad Tamaño en línea máximo de Documento establecida para AEM Forms en el entorno JEE y AEM Forms en el paquete OSGi incluye AEM Forms en el entorno JEE.
 
 >[!NOTE]
 >

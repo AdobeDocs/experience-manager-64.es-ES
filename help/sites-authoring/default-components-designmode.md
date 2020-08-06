@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 87%
 
 ---
 
@@ -86,6 +89,7 @@ Para activar o desactivar un componente:
 
    * Componentes permitidos
    * Configuración
+
    **Componentes permitidos**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ Para activar o desactivar un componente:
    * Un signo menos indica se ha seleccionado al menos uno, pero no todos los elementos de un grupo.
    * Puede realizar búsquedas filtrando por el nombre de los componentes.
    * Los recuentos que aparecen a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados de dichos grupos, independientemente del filtro.
+
    La configuración se define por el componente de la página. Si en las páginas infantiles se utiliza la misma plantilla y/o componente de la página (normalmente en formato alineado), se aplicará la misma configuración al sistema de párrafos correspondiente.
 
    >[!NOTE]
@@ -130,6 +135,7 @@ Para activar o desactivar un componente:
    * Principal
    * Características
    * Estilos
+
    **Propiedades**
 
    La ficha **Propiedades** le permite configurar los parámetros de diseño importantes del componente. Por ejemplo, para un componente de imagen, puede definir el tamaño máximo y mínimo permitido de la imagen.
@@ -148,7 +154,7 @@ Para activar o desactivar un componente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadros de diálogo de entrada múltiple.
+   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadro de diálogo de varias entradas.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 

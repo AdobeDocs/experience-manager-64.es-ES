@@ -1,6 +1,6 @@
 ---
-title: Preparación de AEM Forms para la copia de seguridad
-seo-title: Preparación de AEM Forms para la copia de seguridad
+title: Preparación de AEM Forms para Backup
+seo-title: Preparación de AEM Forms para Backup
 description: nulo
 seo-description: nulo
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
@@ -11,15 +11,18 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2484'
+ht-degree: 0%
 
 ---
 
 
-# Preparación de AEM Forms para la copia de seguridad {#preparing-aem-forms-for-backup}
+# Preparación de AEM Forms para Backup {#preparing-aem-forms-for-backup}
 
 ## Acerca del servicio de backup y restauración {#about-the-backup-and-restore-service}
 
-El servicio de copia de seguridad y restauración permite colocar los formularios AEM en el modo *de* copia de seguridad, lo que permite realizar copias de seguridad en caliente. El servicio de copia de seguridad y restauración no realiza una copia de seguridad de AEM Forms ni restaura el sistema. En su lugar, pone el servidor en un estado para realizar copias de seguridad coherentes y fiables, permitiendo al mismo tiempo que el servidor continúe ejecutándose. Usted es responsable de las acciones para realizar una copia de seguridad del Almacenamiento de documentos global (GDS) y de la base de datos conectada al servidor de formularios. El GDS es un directorio que se utiliza para almacenar los archivos que se utilizan en un proceso duradero.
+El servicio de copia de seguridad y restauración permite poner a AEM Forms en modo *de* copia de seguridad, lo que permite realizar copias de seguridad en caliente. El servicio Backup and Restore no realiza una copia de seguridad de AEM Forms ni restaura el sistema. En su lugar, pone el servidor en un estado para realizar copias de seguridad coherentes y fiables, permitiendo al mismo tiempo que el servidor continúe ejecutándose. Usted es responsable de las acciones para realizar una copia de seguridad del Almacenamiento de Documento global (GDS) y de la base de datos conectada al servidor de formularios. El GDS es un directorio que se utiliza para almacenar los archivos que se utilizan en un proceso duradero.
 
 El modo de copia de seguridad es un estado en el que entra el servidor para que los archivos del GDS no se purguen mientras se realiza un procedimiento de copia de seguridad. En su lugar, los subdirectorios se crean en el directorio GDS para mantener un registro de los archivos que se van a purgar después de que finalice el modo de copia de seguridad guardada. Un archivo está diseñado para sobrevivir a reinicios del sistema y puede abarcar días o incluso años. Estos archivos son una parte crítica del estado general del servidor de formularios y pueden incluir archivos PDF, políticas o plantillas de formulario. Si alguno de estos archivos se pierde o se daña, los procesos del servidor de formularios pueden volverse inestables y se podrían perder datos.
 
@@ -31,7 +34,7 @@ Puede utilizar el servicio de copia de seguridad y restauración para agregar ap
 
 >[!NOTE]
 >
->Al igual que con cualquier otro aspecto de la implementación de AEM Forms, la estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en la producción para garantizar que toda la solución funcione según lo esperado sin pérdida de datos.
+>Al igual que con cualquier otro aspecto de la implementación de AEM Forms, su estrategia de backup y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en producción para garantizar que toda la solución funcione según lo esperado sin pérdida de datos.
 
 Puede realizar estas tareas mediante el servicio de copia de seguridad y restauración:
 
@@ -40,7 +43,7 @@ Puede realizar estas tareas mediante el servicio de copia de seguridad y restaur
 
 >[!NOTE]
 >
->Para obtener más información sobre qué considerar al realizar copias de seguridad de AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
+>Para obtener más información sobre qué considerar al realizar copias de seguridad para AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
 
 >[!NOTE]
 >
@@ -54,7 +57,7 @@ El modo de copia de seguridad permite realizar copias de seguridad en caliente d
 * Hora a la que se completa el procedimiento de copia de seguridad.
 * Un indicador que indica si debe estar en modo de copia de seguridad continua, lo que resulta útil sólo si realiza copias de seguridad móviles.
 
-Antes de escribir aplicaciones para entrar en el modo de copia de seguridad, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizarán después de colocar el servidor de formularios en el modo de copia de seguridad. Para obtener más información sobre qué considerar al realizar copias de seguridad de AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
+Antes de escribir aplicaciones para entrar en el modo de copia de seguridad, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizarán después de colocar el servidor de formularios en el modo de copia de seguridad. Para obtener más información sobre qué considerar al realizar copias de seguridad para AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
 
 >[!NOTE]
 >
@@ -95,7 +98,7 @@ Después de entrar en el modo de copia de seguridad, puede recuperar informació
 
 **Realizar la copia de seguridad del GDS y la base de datos**
 
-Una vez que haya entrado correctamente en el modo de copia de seguridad, puede realizar una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado el servidor de formularios. Este paso es específico de su organización, ya que puede realizar este paso manualmente o puede ejecutar otras herramientas para realizar el procedimiento de copia de seguridad.
+Una vez que haya entrado correctamente en el modo de copia de seguridad, puede realizar una copia de seguridad del Almacenamiento de Documento global (GDS) y de la base de datos a la que está conectado el servidor de formularios. Este paso es específico de su organización, ya que puede realizar este paso manualmente o puede ejecutar otras herramientas para realizar el procedimiento de copia de seguridad.
 
 ### Introduzca el modo de copia de seguridad mediante la API de Java {#enter-backup-mode-using-the-java-api}
 
@@ -108,8 +111,8 @@ Introduzca el modo de copia de seguridad mediante la API de servicio de copia de
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-   * jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+   * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+   * jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 1. Creación de un objeto de API de cliente de BackupService
 
@@ -134,11 +137,11 @@ Introduzca el modo de copia de seguridad mediante la API de servicio de copia de
 
 1. Recuperar información sobre la sesión de modo de copia de seguridad en el servidor
 
-   Recupere información utilizando el `BackupModeEntryResult` objeto que se devuelve después de invocar el `enterBackupMode` método. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
+   Recupere información utilizando el `BackupModeEntryResult` objeto que se devuelve después de invocar el `enterBackupMode` método. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y el tiempo de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad del Almacenamiento de documentos global (GDS) y de la base de datos a la que está conectado el servidor de formularios. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms e incluso pueden incluir pasos manuales específicos de los procedimientos de copia de seguridad de la organización.
+   Haga una copia de seguridad del Almacenamiento de Documento global (GDS) y de la base de datos a la que está conectado el servidor de formularios. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms e incluso pueden incluir pasos manuales específicos de los procedimientos de copia de seguridad de la organización.
 
 ### Introduzca el modo de copia de seguridad mediante la API de servicio Web {#enter-backup-mode-using-the-web-service-api}
 
@@ -169,17 +172,17 @@ Introduzca el modo de copia de seguridad mediante el servicio Web proporcionado 
 
 1. Recuperar información sobre la sesión de modo de copia de seguridad en el servidor
 
-   Recupere información sobre la sesión del modo de copia de seguridad después de invocar el método enterBackupMode desde BackupModeEntryResult que se devuelve para verificar que se ha realizado correctamente. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
+   Recupere información sobre la sesión de modo de copia de seguridad después de invocar el método enterBackupMode desde BackupModeEntryResult que se devuelve para verificar que se ha realizado correctamente. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y el tiempo de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad del Almacenamiento de documentos global (GDS) y de la base de datos a la que está conectado el servidor de formularios. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms e incluso pueden incluir pasos manuales específicos de los procedimientos de copia de seguridad de la organización.
+   Haga una copia de seguridad del Almacenamiento de Documento global (GDS) y de la base de datos a la que está conectado el servidor de formularios. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms e incluso pueden incluir pasos manuales específicos de los procedimientos de copia de seguridad de la organización.
 
 ## Salida del modo de copia de seguridad en el servidor de formularios {#leaving-backup-mode-on-the-forms-server}
 
-El modo de copia de seguridad se deja para que el servidor de formularios reanude la depuración de archivos del GDS (Global Document Storage) en el servidor de formularios.
+El modo de copia de seguridad se deja para que el servidor de formularios reanude la depuración de archivos del GDS (Almacenamiento de Documento global) en el servidor de formularios.
 
-Antes de escribir aplicaciones para entrar en el modo de salida, se recomienda comprender los procedimientos de copia de seguridad que se utilizan con AEM Forms. Para obtener más información sobre qué considerar al realizar copias de seguridad de AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
+Antes de escribir aplicaciones para entrar en el modo de salida, se recomienda que entienda los procedimientos de copia de seguridad que se utilizan con AEM Forms. Para obtener más información sobre qué considerar al realizar copias de seguridad para AEM Forms, consulte la ayuda [de](https://www.adobe.com/go/learn_aemforms_admin_63)administración.
 
 >[!NOTE]
 >
@@ -206,7 +209,7 @@ Para salir del modo de copia de seguridad mediante programación, cree un objeto
 
 **Salir del modo de copia de seguridad**
 
-Deje el modo de copia de seguridad para reanudar la depuración normal de archivos desde Global Document Storage (GDS). Antes de salir del modo de copia de seguridad, debe comprobar que los procedimientos de copia de seguridad se han completado.
+Deje el modo de copia de seguridad para reanudar la depuración normal de archivos desde el Almacenamiento de Documento global (GDS). Antes de salir del modo de copia de seguridad, debe comprobar que los procedimientos de copia de seguridad se han completado.
 
 **Recuperar información sobre la sesión de modo de copia de seguridad que finalizó**
 
@@ -223,8 +226,8 @@ Deje el modo de copia de seguridad mediante la API de servicio de copia de segur
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-   * jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+   * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+   * jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 1. Creación de un objeto de API de cliente de BackupService
 
@@ -239,7 +242,7 @@ Deje el modo de copia de seguridad mediante la API de servicio de copia de segur
 
 1. Recuperar información sobre la sesión de modo de copia de seguridad en el servidor
 
-   Recupere información sobre la operación con el `BackupModeResult` objeto devuelto. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
+   Recupere información sobre la operación con el `BackupModeResult` objeto devuelto. La información que puede recuperar después de entrar en el modo de copia de seguridad puede resultar útil para la integración con los procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y el tiempo de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
 
 ### Abandonar el modo de copia de seguridad mediante la API de servicio Web {#leave-backup-mode-using-the-web-service-api}
 

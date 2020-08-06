@@ -150,7 +150,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 ## Inicio rápido (modo SOAP): Salida del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que Forms Server salga explícitamente del modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
+El siguiente ejemplo de código Java hace que Forms Server deje el modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)de formularios.)
 
 ```as3
  /* 

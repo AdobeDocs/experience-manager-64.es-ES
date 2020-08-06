@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar la experiencia de cumplimentación de formularios invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
 
-Este documento se centra en escribir un JavaScript con la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
+Este documento se centra en escribir un JavaScript usando la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 

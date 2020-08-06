@@ -12,6 +12,9 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 0%
 
 ---
 
@@ -21,17 +24,17 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 AEM Communities utiliza el correo electrónico para
 
 * [Notificaciones de comunidades](notifications.md)
-* [Suscripciones a comunidades](subscriptions.md)
+* [Suscripciones de comunidades](subscriptions.md)
 
 De forma predeterminada, la función de correo electrónico no funciona, ya que requiere la especificación de un servidor SMTP y un usuario SMTP.
 
 >[!CAUTION]
 >
->El correo electrónico para notificaciones y suscripciones solo se debe configurar en el editor [principal](deploy-communities.md#primary-publisher).
+>El correo electrónico para las notificaciones y suscripciones solo debe configurarse en el editor [principal](deploy-communities.md#primary-publisher).
 
 ## Configuración predeterminada del servicio de correo {#default-mail-service-configuration}
 
-El servicio de correo predeterminado es necesario tanto para notificaciones como para suscripciones.
+El servicio de correo predeterminado es necesario tanto para las notificaciones como para las suscripciones.
 
 * En el editor principal
 * Inicio de sesión con privilegios de administrador
@@ -60,7 +63,7 @@ Por ejemplo (rellenado con valores únicamente para fines ilustrativos):
 * **[!UICONTROL SMTP utiliza SSL]**: Si se selecciona, se enviará un correo electrónico seguro. Asegúrese de que el puerto esté establecido en 465 o según sea necesario para el servidor SMTP.
 * **[!UICONTROL Depurar correo electrónico]**: Si se selecciona, habilita el registro de interacciones del servidor SMTP.
 
-## Configuración de correo electrónico de comunidades AEM {#aem-communities-email-configuration}
+## Configuración de correo electrónico de AEM Communities {#aem-communities-email-configuration}
 
 Una vez configurado el servicio [de correo](#default-mail-service-configuration) predeterminado, las dos instancias existentes de la configuración de `AEM Communities Email Reply Configuration` OSGi, incluidas en la versión, funcionan.
 
@@ -100,9 +103,9 @@ Esta configuración no debe modificarse.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
-### Configuración para suscripciones {#configuration-for-subscriptions}
+### Configuración de Suscripciones {#configuration-for-subscriptions}
 
-En el caso de las suscripciones de Comunidades, es posible activar o desactivar la capacidad de un miembro para publicar contenido respondiendo a un correo electrónico.
+En el caso de suscripciones de comunidades, es posible activar o desactivar la capacidad de un miembro para publicar contenido respondiendo a un mensaje de correo electrónico.
 
 * Localice la variable `AEM Communities Email Reply Configuration`
 * Seleccione el icono de edición
@@ -112,8 +115,8 @@ En el caso de las suscripciones de Comunidades, es posible activar o desactivar 
 
 * **[!UICONTROL Nombre]** : *(obligatorio)* `subscriptions-email`. No editar.
 
-* **[!UICONTROL Crear anuncio desde correo electrónico]** de respuesta: Si se selecciona, el destinatario del correo electrónico de suscripción puede publicar contenido enviando una respuesta. El valor predeterminado está marcado.
-* **[!UICONTROL Agregar la identificación rastreada al encabezado]**:El valor predeterminado es `Reply-To`.
+* **[!UICONTROL Crear anuncio desde correo electrónico]** de respuesta: Si se selecciona, el destinatario de correo electrónico de suscripción puede publicar contenido enviando una respuesta. El valor predeterminado está marcado.
+* **[!UICONTROL Añadir la identificación rastreada en el encabezado]**: El valor predeterminado es `Reply-To`.
 
 * **[!UICONTROL Longitud máxima del sujeto]**: Si se agrega la identificación del rastreador a la línea de asunto, ésta es la longitud máxima del sujeto, excluyendo la identificación rastreada, tras la cual se recortará. Tenga en cuenta que esto debe ser lo más pequeño posible para evitar que la información de identificación rastreada se pierda. El valor predeterminado es 200.
 * **[!UICONTROL Dirección]**&quot;De&quot; de correo electrónico: *(obligatorio)* Dirección desde la que se enviaría el correo electrónico de notificación. Es probable que el mismo usuario **** SMTP especificado para el servicio [de correo](#configuredefaultmailservice)predeterminado. El valor predeterminado es `no-reply@example.com`.
@@ -134,20 +137,21 @@ En el caso de las suscripciones de Comunidades, es posible activar o desactivar 
 
 Para que el correo electrónico se introduzca en el repositorio, es necesario configurar un importador de encuestas y configurar sus propiedades en el repositorio de forma manual.
 
-### Agregar nuevo importador de encuestas {#add-new-polling-importer}
+### Añadir nuevo importador de encuestas {#add-new-polling-importer}
 
 * En el editor principal
 * Inicio de sesión con privilegios de administrador
 * Vaya a la consola del importador de encuestasPor ejemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
-* Seleccione **[!UICONTROL Agregar]**
+* Seleccionar **[!UICONTROL Añadir]**
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-* **[!UICONTROL Tipo]**: *(obligatorio)* Despliegue para seleccionar `POP3 (over SSL).`
+* **[!UICONTROL Tipo]**: *(requerido)* Despliegue para seleccionar `POP3 (over SSL).`
 
 * **[!UICONTROL Dirección URL]**: *(obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL Importar a ruta]**&amp;ast;: *(obligatorio)* Establezca en `/content/usergenerated/mailFolder/postEmails`buscando en la `postEmails`carpeta y seleccione **Aceptar**
+* **[!UICONTROL Importar a ruta]**&amp;ast;: *(obligatorio)* Configure en `/content/usergenerated/mailFolder/postEmails`mediante la opción 
+`postEmails`y seleccione **Aceptar**
 
 * **[!UICONTROL Intervalo de actualización en segundos]**: *(opcional)* El servidor de correo configurado para el servicio de correo predeterminado puede tener requisitos con respecto al valor del intervalo de actualización. Por ejemplo, Gmail puede requerir un intervalo de `300`.
 
@@ -161,7 +165,7 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 Una vez guardada la nueva configuración de sondeo, es necesario modificar las propiedades del importador de correo electrónico de suscripción para cambiar el protocolo de `POP3` a `emailreply`
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * En el editor principal
 * Inicio de sesión con privilegios de administrador

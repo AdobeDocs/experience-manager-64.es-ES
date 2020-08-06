@@ -1,8 +1,8 @@
 ---
 title: Uso de puntos de inicio
 seo-title: Uso de puntos de inicio
-description: Pasos para trabajar con un proceso de AEM Forms desde el dispositivo móvil definido en Workbench.
-seo-description: Pasos para trabajar con un proceso de AEM Forms desde el dispositivo móvil definido en Workbench.
+description: Pasos para trabajar con un proceso de AEM Forms desde un dispositivo móvil definido en Workbench.
+seo-description: Pasos para trabajar con un proceso de AEM Forms desde un dispositivo móvil definido en Workbench.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Para iniciar un proceso desde la aplicación de AEM Forms, debe tener un punto d
 **inicio de un proceso definido en Workbench**
 
 1. Para realizar la vista de los puntos de inicio disponibles en la aplicación de AEM Forms, vaya a la pantalla [de inicio](/help/forms/using/home-screen.md).
-1. De forma predeterminada, en la pantalla **[!UICONTROL Inicio]** se muestra la lista **[!UICONTROL Todos los formularios]** .
+1. De forma predeterminada, en la pantalla **[!UICONTROL Inicio]** se muestra la lista **[!UICONTROL Todo Forms]** .
 
    El punto de inicio se asocia a un formulario. Toque el formulario asociado de punto de inicio en la lista para abrirlo.
 

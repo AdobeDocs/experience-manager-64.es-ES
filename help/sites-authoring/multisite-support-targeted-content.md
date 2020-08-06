@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 93%
 
 ---
 
@@ -54,6 +57,7 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 >
 >* Cuando utilice lanzamientos o Live Copies, necesitará una licencia MSM.
 >* Cuando utilice la función de sincronización a Adobe Target, necesitará una licencia de Adobe Target.
+
 >
 
 
@@ -246,6 +250,7 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 >
 >* Solo se pueden suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender o desasociar Live Copies para expandir una actividad heredada. También puede crear **nuevas** experiencias y ofertas locales para dicha actividad. Si desea modificar una actividad existente, deberá suspender la herencia.
+
 >
 
 
@@ -260,6 +265,7 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
    1. Seleccione un elemento de la actividad, como la audiencia. AEM muestra automáticamente la casilla de confirmación Suspender Live Copy. (Puede suspender Live Copy si pulsa o hacer clic en cualquier elemento durante el proceso de establecimiento de objetivos).
    1. Seleccione **Suspender Live Copy** en el menú desplegable de la barra de herramientas.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
 1. Tap or click **Suspend** to suspend the activity. Las actividades suspendidas están marcadas en rojo.

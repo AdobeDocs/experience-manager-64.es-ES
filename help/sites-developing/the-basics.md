@@ -1,8 +1,8 @@
 ---
-title: Conceptos principales de AEM
+title: Conceptos principales AEM
 seo-title: Conceptos básicos
-description: Información general sobre los conceptos básicos de cómo AEM está estructurado y cómo desarrollarse sobre él, incluida la comprensión del JCR, Sling, OSGi, el distribuidor, los flujos de trabajo y MSM
-seo-description: Información general sobre los conceptos básicos de cómo AEM está estructurado y cómo desarrollarse sobre él, incluida la comprensión del JCR, Sling, OSGi, el distribuidor, los flujos de trabajo y MSM
+description: Una visión general de los conceptos básicos de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluyendo la comprensión del JCR, Sling, OSGi, el expedidor, los flujos de trabajo y MSM
+seo-description: Una visión general de los conceptos básicos de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluyendo la comprensión del JCR, Sling, OSGi, el expedidor, los flujos de trabajo y MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Conceptos principales de AEM {#aem-core-concepts}
+# Conceptos principales AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
->Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el tutorial de WKND en el documento [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md) de AEM para obtener una descripción general del proceso de desarrollo de AEM e introducir los conceptos básicos.
+>Antes de profundizar en los conceptos básicos de AEM, Adobe recomienda completar el Tutorial de WKND en el documento [Introducción al Desarrollo de AEM Sites](/help/sites-developing/getting-started.md) para obtener una visión general del proceso de desarrollo de AEM e introducción a los conceptos básicos.
 
-## Requisitos previos para el desarrollo en AEM {#prerequisites-for-developing-on-aem}
+## Requisitos previos para desarrollar en AEM {#prerequisites-for-developing-on-aem}
 
-Necesitará las siguientes habilidades para desarrollar AEM:
+Necesitará las siguientes habilidades para desarrollar sobre AEM:
 
 * Conocimientos básicos de las técnicas de aplicación web, incluidos:
 
@@ -44,13 +44,13 @@ También se recomienda leer y seguir las [Directrices y optimizaciones](/help/si
 
 El estándar de Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
 
-Adobe Research (Suiza) AG se encarga de llevar a cabo la especificación.
+Adobe Research (Suiza) AG es el responsable de la especificación.
 
 Paquete [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr.&amp;ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server proporciona los servicios de experiencia en los que AEM está compilado y que se pueden aprovechar para crear aplicaciones personalizadas, e incrusta el repositorio de contenido basado en Jackrabbit.
+Experience Server proporciona los servicios de experiencia en los que se AEM y que se pueden aprovechar para crear aplicaciones personalizadas, e incrusta el repositorio de contenido basado en Jackrabbit.
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) es una implementación de código abierto, totalmente conforme, de la API de JCR 2.0.
 
@@ -58,11 +58,11 @@ Experience Server proporciona los servicios de experiencia en los que AEM está 
 
 ### Introducción a Sling {#introduction-to-sling}
 
-AEM se ha creado con [Sling](https://sling.apache.org/site/index.html), un marco de Aplicación web basado en los principios REST que facilita el desarrollo de aplicaciones orientadas al contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit, o en el caso de AEM, el repositorio de contenido CRX, como su almacén de datos. Sling ha sido aportado a la Apache Software Foundation - más información se puede encontrar en Apache.
+AEM se construye con [Sling](https://sling.apache.org/site/index.html), un marco de Aplicación web basado en los principios REST que facilita el desarrollo de aplicaciones orientadas al contenido. Sling utiliza un repositorio JCR, como Apache Jackrabbit, o en el caso de AEM, el Repositorio de contenido CRX, como su almacén de datos. Sling ha sido aportado a la Apache Software Foundation - más información se puede encontrar en Apache.
 
 Con Sling, el tipo de contenido que se va a procesar no es la primera consideración de procesamiento. En su lugar, la principal consideración es si la dirección URL se resuelve en un objeto de contenido para el que se puede encontrar una secuencia de comandos para realizar la representación. Esto proporciona una excelente compatibilidad a los autores de contenido web para crear páginas que se adapten fácilmente a sus necesidades.
 
-Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando se necesitan páginas que se puedan personalizar fácilmente. En concreto, al implementar un sistema de Gestor de contenido web como WCM en la solución AEM.
+Las ventajas de esta flexibilidad son evidentes en aplicaciones con una amplia gama de elementos de contenido diferentes o cuando se necesitan páginas que se puedan personalizar fácilmente. En particular, al implementar un sistema de Gestor de contenido Web como WCM en la solución AEM.
 
 Consulte [Discover Sling en 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conocer los primeros pasos para el desarrollo con Sling.
 
@@ -70,7 +70,7 @@ En el diagrama siguiente se explica la resolución del script Sling: muestra có
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-En el diagrama siguiente se explican todos los parámetros de solicitud ocultos pero potentes que puede utilizar al trabajar con SlingPostServlet, el controlador predeterminado para todas las solicitudes POST que le ofrece infinitas opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
+En el diagrama siguiente se explican todos los parámetros de solicitud ocultos pero potentes que puede utilizar al trabajar con SlingPostServlet, el controlador predeterminado para todas las solicitudes de POST que le ofrece infinitas opciones para crear, modificar, eliminar, copiar y mover nodos en el repositorio.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -153,7 +153,7 @@ La ruta especificada por el `sling:resourceType` puede ser:
 * absoluto
 * relativo, a un parámetro de configuración
 
-   Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
+   Las rutas relativas se recomiendan por Adobe, ya que aumentan la portabilidad.
 
 Todos los scripts Sling se almacenan en subcarpetas de `/apps` o `/libs`, que se buscarán en este orden (consulte [Personalización de componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -167,17 +167,17 @@ Otros puntos a tener en cuenta son:
    * `.java`:: Compilador de servlet Java (ejecución en el servidor)
    * `.jst`:: Plantillas de JavaScript (ejecución del cliente)
 
-La lista de los motores de secuencias de comandos admitidos por la instancia de AEM indicada se muestra en la Consola de administración de Félix ( `http://<host>:<port>/system/console/slingscripting`).
+La lista de los motores de secuencia de comandos admitidos por la instancia de AEM dada se muestra en la Consola de administración Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
 Además, Apache Sling admite la integración con otros motores de secuencias de comandos populares (por ejemplo, Groovy, JRuby, Freemarker) y proporciona una manera de integrar nuevos motores de secuencias de comandos.
 
 Si se utiliza el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` entonces para:
 
-* Solicitudes GET/HEAD y direcciones URL que finalizan en .html (tipos de solicitud predeterminados, formato predeterminado)
+* Solicitudes de GET/HEAD y direcciones URL que finalizan en .html (tipos de solicitud predeterminados, formato predeterminado)
 
    El script será /apps/hr/jobs/jobs.esp; la última sección de sling:resourceType forma el nombre del archivo.
 
-* Solicitudes POST (todos los tipos de solicitud excluyendo GET/HEAD, el nombre del método debe estar en mayúsculas)
+* Solicitudes de POST (todos los tipos de solicitud, excluyendo GET/HEAD, el nombre del método debe estar en mayúsculas)
 
    POST se utilizará en el nombre de la secuencia de comandos.
 
@@ -233,7 +233,7 @@ Supongamos que tenemos la siguiente lista de scripts en la ubicación correcta:
 
 Entonces el orden de preferencia sería (8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).
 
-Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad), también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
+Además de los tipos de recursos (definidos principalmente por la `sling:resourceType` propiedad) también está el supertipo de recurso. Esto suele indicarse en la `sling:resourceSuperType` propiedad. Estos supertipos también se tienen en cuenta al intentar encontrar una secuencia de comandos. La ventaja de los supertipos de recursos es que pueden formar una jerarquía de recursos donde el tipo de recurso predeterminado `sling/servlet/default` (utilizado por los servlets predeterminados) es la raíz.
 
 El supertipo de recurso de un recurso se puede definir de dos maneras:
 
@@ -277,9 +277,9 @@ Dentro de Sling, no se pueden llamar directamente a las secuencias de comandos, 
 
 Si llama a la representación (la secuencia de comandos) directamente, oculte el recurso dentro de la secuencia de comandos, de modo que la estructura (Sling) ya no lo sepa. Por lo tanto, se pierden ciertas funciones:
 
-* administración automática de métodos http distintos de GET, incluidos:
+* administración automática de métodos http distintos de la GET, incluidos:
 
-   * POST, PUT, ELIMINAR que se gestionan con una implementación predeterminada de sling
+   * POST, PUT y DELETE que se administran con una implementación predeterminada de sling
    * la `POST.jsp` secuencia de comandos de la ubicación sling:resourceType
 
 * su arquitectura de código ya no es tan limpia ni tan claramente estructurada como debería ser; de importancia primordial para el desarrollo a gran escala
@@ -331,7 +331,7 @@ Esto le permite realizar las siguientes acciones en cualquiera de los paquetes d
 
 Consulte [la Consola](/help/sites-deploying/web-console.md)web, Configuración [](/help/sites-deploying/configuring-osgi.md) OSGI y Configuración [](/help/sites-deploying/osgi-configuration-settings.md) OSGi para obtener más información.
 
-## Objetos de desarrollo en el Entorno AEM {#development-objects-in-the-aem-environment}
+## Objetos de desarrollo en el Entorno de AEM {#development-objects-in-the-aem-environment}
 
 Los siguientes son de interés para el desarrollo:
 
@@ -355,11 +355,11 @@ Con currentNode siendo el objeto de nodo actual.
 
 Para obtener más información sobre la manipulación de objetos Node, consulte [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Utilidad** En AEM, todos los datos introducidos por el usuario son administrados por widgets. A menudo se utilizan para controlar la edición de un fragmento de contenido.
+**Widget** En AEM todos los datos introducidos por el usuario son administrados por widgets. A menudo se utilizan para controlar la edición de un fragmento de contenido.
 
 Los cuadros de diálogo se crean combinando utilidades.
 
-AEM se ha desarrollado utilizando la biblioteca de widgets ExtJS.
+AEM ha sido desarrollado utilizando la biblioteca de utilidades ExtJS.
 
 **Cuadro de diálogo** Un cuadro de diálogo es un tipo especial de utilidad.
 
@@ -369,7 +369,7 @@ Los diálogos también se utilizan para editar metadatos y por diversas herramie
 
 **Componente** Un componente de software es un elemento del sistema que ofrece un servicio o evento predefinido y puede comunicarse con otros componentes.
 
-Dentro de AEM, un componente se utiliza a menudo para representar el contenido de un recurso. Cuando el recurso es una página, el componente que lo procesa se denomina componente de nivel superior o componente de página. Sin embargo, un componente no tiene que representar contenido ni estar vinculado a un recurso específico; por ejemplo, un componente de navegación mostrará información sobre varios recursos.
+En AEM, un componente se utiliza a menudo para representar el contenido de un recurso. Cuando el recurso es una página, el componente que lo procesa se denomina componente de nivel superior o componente de página. Sin embargo, un componente no tiene que representar contenido ni estar vinculado a un recurso específico; por ejemplo, un componente de navegación mostrará información sobre varios recursos.
 
 La definición de un componente incluye:,
 
@@ -432,7 +432,7 @@ La siguiente lista proporciona una visión general de la estructura que verá de
 
 * `/libs`
 
-   Bibliotecas y definiciones que pertenecen al núcleo de AEM. Las subcarpetas de `/libs` representan las funciones de AEM predeterminadas, como por ejemplo la búsqueda o la replicación. El contenido de `/libs` no debe modificarse ya que afecta al modo de funcionamiento de AEM. Las funciones específicas de su sitio web deben desarrollarse en `/apps` (consulte [Personalización de componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Bibliotecas y definiciones que pertenecen al núcleo del AEM. Las subcarpetas de `/libs` representan las funciones predeterminadas AEM como, por ejemplo, búsqueda o replicación. El contenido de `/libs` no debe modificarse ya que afecta al modo de funcionamiento AEM. Las funciones específicas de su sitio web deben desarrollarse en `/apps` (consulte [Personalización de componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -448,17 +448,17 @@ Con AEM, un entorno de producción suele constar de dos tipos diferentes de inst
 
 ## El despachante {#the-dispatcher}
 
-Dispatcher es la herramienta de Adobe para almacenar en caché y/o equilibrar la carga. Encontrará más información en [el Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+Dispatcher es la herramienta del Adobe para almacenamiento en caché y/o equilibrio de carga. Encontrará más información en [el Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (sistema de revisión de origen) {#filevault-source-revision-system}
 
-FileVault proporciona a su repositorio JCR asignación de file systems y control de versiones. Se puede utilizar para administrar proyectos de desarrollo de AEM con total compatibilidad para almacenar y generar versiones del código de proyecto, el contenido, las configuraciones, etc., en sistemas de control de versiones estándar (por ejemplo, Subversion).
+FileVault proporciona a su repositorio JCR asignación de file systems y control de versiones. Puede utilizarse para administrar proyectos de desarrollo AEM con total compatibilidad para almacenar y generar versiones del código del proyecto, el contenido, las configuraciones, etc., en sistemas de control de versiones estándar (por ejemplo, Subversion).
 
 Consulte la documentación de la herramienta [](/help/sites-developing/ht-vlttool.md) FileVault para obtener información detallada.
 
 ## Flujos de trabajo {#workflows}
 
-El contenido suele estar sujeto a procesos organizativos, incluidos pasos como aprobación y aprobación por parte de varios participantes. Estos procesos se pueden representar como flujos de trabajo, [definir y desarrollar dentro de AEM](/help/sites-developing/workflows-models.md)y, a continuación, aplicarse a las páginas [de contenido](/help/sites-administering/workflows.md) adecuadas o a los recursos [](/help/assets/assets-workflow.md) digitales según sea necesario.
+El contenido suele estar sujeto a procesos organizativos, incluidos pasos como aprobación y aprobación por parte de varios participantes. Estos procesos pueden representarse como flujos de trabajo, [definirse y desarrollarse dentro de AEM](/help/sites-developing/workflows-models.md)y luego aplicarse a las páginas [de contenido](/help/sites-administering/workflows.md) adecuadas o a los recursos [](/help/assets/assets-workflow.md) digitales según sea necesario.
 
 El Motor de flujos de trabajo se utiliza para administrar la implementación de sus flujos de trabajo y su aplicación posterior al contenido.
 

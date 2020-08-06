@@ -39,13 +39,13 @@ Este controlador almacena el mensaje de respuesta de SAML cifrado en el nodo de 
 
 ## Configuración del controlador de autenticación SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso a la configuración del controlador de autenticación [SAML](http://saml.xml.org/saml-specifications) 2.0 denominado Controlador de autenticación **Adobe Granite SAML 2.0**. Se pueden establecer las siguientes propiedades.
+La consola [](/help/sites-deploying/configuring-osgi.md) Web proporciona acceso a la configuración del controlador de autenticación [SAML](http://saml.xml.org/saml-specifications) 2.0, denominado Controlador **de autenticación** Adobe Granite SAML 2.0. Se pueden establecer las siguientes propiedades.
 
 >[!NOTE]
 >
 >El controlador de autenticación SAML 2.0 está deshabilitado de forma predeterminada. Debe establecer al menos una de las siguientes propiedades para habilitar el controlador:
 >
->* Dirección URL POST del proveedor de identidad.
+>* Dirección URL del POST del proveedor de identidad.
 >* ID de entidad de Proveedor de servicio.
 
 >
@@ -60,7 +60,7 @@ La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso 
 
 **Valor de clasificación de servicios** OSGi Framework Service Ranking para indicar el orden en el que llamar a este servicio. Se trata de un valor entero en el que los valores más altos designan una prioridad mayor.
 
-**Alias** de certificado de IDP El alias del certificado de IdP en el almacén de confianza global. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado. Consulte el capítulo &quot;Añadir el certificado de IdP en el almacén de confianza de AEM&quot; a continuación sobre cómo configurarlo.
+**Alias** de certificado de IDP El alias del certificado de IdP en el almacén de confianza global. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado. Consulte el capítulo &quot;Añadir el certificado de IdP al almacén de confianza de AEM&quot; a continuación sobre cómo configurarlo.
 
 **Dirección URL** del proveedor de identidad del IDP al que se debe enviar la solicitud de autenticación SAML. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado.
 
@@ -108,7 +108,7 @@ Las aserciones SAML están firmadas y pueden cifrarse de forma opcional. Para qu
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Añadir la cadena de certificados y la clave de Proveedor de servicio en el almacén de claves de AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Añadir la clave del Proveedor de servicio y la cadena de certificados al almacén de claves de AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >

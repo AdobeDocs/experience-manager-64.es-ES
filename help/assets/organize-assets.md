@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Todos los recursos digitales, los metadatos y el contenido de los documentos de Microsoft Office y PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Administración de activos digitales.
 
-Recursos AEM admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
+AEM Assets admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad-hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Organización de recursos en carpetas {#organize-using-folders}
 
@@ -35,13 +35,13 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
    * **Carpetas** basadas en fecha: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que la personalización o la automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si ya se ha publicado un recurso, utilice AEM para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación original del recurso publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* en AEM y no se puede cancelar la publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
+* Si un recurso ya está publicado, utilice AEM para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación del recurso publicado original seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se *pierde* por AEM y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a otra carpeta.
 
 ## Organización de recursos con etiquetas {#use-tags-to-organize-assets}
 
-Mediante el uso de etiquetas como metadatos, puede buscar fácilmente recursos, crear colecciones utilizando los resultados de búsqueda, mejorar la clasificación de la búsqueda de algunos recursos y aprovechar los algoritmos de AI de Adobe Sensei para la detección de recursos.
+Mediante el uso de etiquetas como metadatos, puede buscar fácilmente recursos, crear colecciones mediante los resultados de la búsqueda, mejorar la clasificación de la búsqueda de algunos recursos y aprovechar los algoritmos de AI de Adobe Sensei para la detección de recursos.
 
-Recursos Adobe Experience Manager utiliza un algoritmo de autoaprendizaje para crear etiquetas muy descriptivas que le permiten encontrar el recurso correcto en tan solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, nuestra inteligencia artificial y nuestro marco de aprendizaje automático, que se puede capacitar para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras individuales o frases y aplicar automáticamente etiquetas descriptivas a los recursos
+Adobe Experience Manager Assets utiliza un algoritmo de autoaprendizaje para crear etiquetas muy descriptivas que le permiten encontrar el recurso correcto en tan solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, nuestra inteligencia artificial y nuestro sistema de aprendizaje automático, que se puede capacitar para reconocer y aplicar a las imágenes etiquetas estándar y específicas del negocio. Las etiquetas inteligentes también pueden identificar contenido, palabras individuales o frases y aplicar automáticamente etiquetas descriptivas a los recursos
 
 Para obtener más información, consulte los siguientes artículos:
 
@@ -51,7 +51,7 @@ Para obtener más información, consulte los siguientes artículos:
 
 ## Organizar como colecciones {#organize-as-collections}
 
-Con las colecciones de recursos de Experience Manager, puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas y colecciones, así como las colecciones que extraen recursos en función de criterios de búsqueda.  También puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y edición de privilegios.
+Con las colecciones de recursos en Recursos Experience Manager, puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas y colecciones, así como las colecciones que extraen recursos en función de criterios de búsqueda.  También puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y edición de privilegios.
 
 Para obtener más información, consulte [Gestión de colecciones](managing-collections-touch-ui.md)
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +35,9 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-## Visitante anónimo del sitio {#anonymous-site-visitor}
+## Visitante de sitio anónimo {#anonymous-site-visitor}
 
-Un visitante anónimo del sitio ve lo siguiente en la interfaz de usuario:
+Un visitante de sitio anónimo ve lo siguiente en la interfaz de usuario:
 
 * Título del sitio. Tutorial de introducción
 * Sin vínculo de perfil
@@ -68,7 +71,7 @@ Para proteger el contenido del sitio de la comunidad del acceso de usuarios anó
    ![page-properties](assets/page-properties.png)
 
 1. Enable **[!UICONTROL Authentication Requirement]**.
-1. Agregue la ruta de la página de inicio de sesión. Por ejemplo, `/content/......./GetStarted`.
+1. Añada la ruta de la página de inicio de sesión. Por ejemplo, `/content/......./GetStarted`.
 1. Publique la página.
 
 ## Miembro de la comunidad de confianza {#trusted-community-member}
@@ -83,7 +86,7 @@ Una vez que haya iniciado sesión, observe que hay un nuevo elemento de menú, q
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
-Observe que la página Calendario es la página principal porque la plantilla de sitio de referencia elegida incluía primero la función Calendario, seguida de la función Flujo de actividad, la función Foro, etc. Esta estructura está visible desde la consola Plantilla [](sites.md#edit-site-template) del sitio o al modificar las propiedades del sitio en el entorno de creación:
+Observe que la página Calendario es la página de inicio porque la plantilla de sitio de referencia elegida incluía primero la función Calendario, seguida de la función Flujo de Actividad, la función Foro, etc. Esta estructura está visible desde la consola Plantilla [](sites.md#edit-site-template) del sitio o al modificar las propiedades del sitio en el entorno de creación:
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
@@ -93,17 +96,18 @@ Observe que la página Calendario es la página principal porque la plantilla de
 >
 >* [Componentes](author-communities.md) de comunidades (para autores)
 >* [Componentes, funciones y características esenciales](essentials.md) (para desarrolladores)
+
 >
 
 
 
 ## Vínculo de foro {#forum-link}
 
-Para ver la función básica del foro, seleccione el vínculo Foro.
+Para Vista de la función básica de foro, seleccione el vínculo Foro.
 
 Los miembros pueden publicar un tema nuevo o seguir un tema.
 
-Los visitantes del sitio pueden ver los anuncios y ordenarlos de diversas maneras.
+Los visitantes del sitio pueden realizar vistas de anuncios y ordenarlos de diversas maneras.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
@@ -113,7 +117,7 @@ Como Aaron es administrador de grupos, si selecciona el vínculo Grupos, Aaron p
 
 Este es un ejemplo en el que se crea un grupo en el entorno de publicación.
 
-Los grupos también se pueden crear en el entorno de creación y administrar dentro del sitio de la comunidad en el entorno de creación (la consola [Grupos de](groups.md)comunidad). La experiencia de [crear grupos en el autor](nested-groups.md) es la siguiente en este tutorial.
+Los grupos también pueden crearse en el entorno del autor y gestionarse dentro del sitio de la comunidad en el entorno del autor (la consola [Grupos](groups.md)de la comunidad). La experiencia de [crear grupos en el autor](nested-groups.md) es la siguiente en este tutorial.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -135,7 +139,7 @@ Una vez creado el nuevo grupo, **seleccione el nuevo grupo** Deportes para crear
 
 ![chlimage_1-318](assets/chlimage_1-318.png)
 
-El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports`grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes. `Groups`
+El segundo conjunto de vínculos, comenzando por `Blog`, pertenece al grupo seleccionado actualmente, el `Sports`grupo. Al seleccionar el vínculo Deportes, es posible anidar dos grupos dentro del grupo Deportes `Groups` .
 
 Como ejemplo, agregue dos n `ew groups.`
 
@@ -152,15 +156,16 @@ Como ejemplo, agregue dos n `ew groups.`
 * Esta plantilla *no incluye la función de grupos, por lo que no será posible anidar más grupos
 * Al crear, la consola [](groups.md) Grupos ofrece una tercera opción: un `Public Group` (abono opcional)
 
-Una vez creados ambos grupos, seleccione el grupo de béisbol, un grupo abierto y observe sus vínculos: `Discussions``What's New` Los vínculos `Members`del grupo se muestran debajo de los vínculos del sitio principal y se muestran de la siguiente manera:
+Una vez creados ambos grupos, seleccione el grupo de béisbol, un grupo abierto y observe sus vínculos: `Discussions` `What's New` `Members`
+Los vínculos del grupo se muestran debajo de los vínculos del sitio principal y se muestran de la siguiente manera:
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
 En el caso del autor: con privilegios administrativos, vaya a la consola [Grupos de](members.md) comunidades y agregue Weston McCall al `Community Engage Gymnastics <uid> Members` grupo.
 
-Continuando con la publicación, cierre la sesión como Aaron McDonald y vea los grupos del grupo de deportes como un visitante anónimo del sitio:
+Continuando con la publicación, cierre la sesión como Aaron McDonald y vista los grupos en el grupo de deportes como un visitante anónimo en el sitio:
 
-* Desde la página principal
+* Desde página de inicio
 * Select `Groups`link
 * Select `Sports`link
 * Seleccione el `Groups`vínculo Deportes
@@ -173,15 +178,15 @@ Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y nav
 
 ## Vínculo de página Web {#web-page-link}
 
-Para ver la página Web básica incluida en el sitio, seleccione el vínculo Página Web. Las herramientas de creación de AEM estándar pueden utilizarse para añadir contenido a esta página en el entorno de creación.
+Vista la página Web básica incluida en el sitio seleccionando el vínculo Página Web. Las herramientas AEM de creación estándar pueden utilizarse para agregar contenido a esta página en el entorno de creación.
 
-Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de vista previa para seleccionar el `Web Page`vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
+Por ejemplo, vaya a la instancia de **autor** , abra la `engage` carpeta en la consola [Sitios de](sites-console.md)comunidades, seleccione el icono **Abrir sitio** para entrar al modo de edición de autor. A continuación, seleccione el modo de previsualización para seleccionar el `Web Page`vínculo y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
-![chlimage_1-325](assets/chlimage_1-321.png)
+![chlimage_1-321](assets/chlimage_1-321.png)
 
 ## Vínculo de administración {#administration-link}
 
-Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo Administración estará visible y, al seleccionarlo, se mostrará el contenido de la comunidad publicado y se podrá [moderar](moderate-ugc.md) de forma similar a la consola [de](moderation.md) moderación en el entorno de creación.
+Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo Administración estará visible y, al seleccionarlo, se mostrará el contenido de la comunidad publicado y se podrá [moderar](moderate-ugc.md) de forma similar a la consola [de](moderation.md) moderación del entorno de creación.
 
 Utilice el botón Atrás del explorador para volver al sitio publicado. La mayoría de las consolas no son accesibles desde la navegación global en el entorno de publicación.
 

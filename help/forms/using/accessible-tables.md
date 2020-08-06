@@ -10,20 +10,23 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
 source-git-commit: e12b8e370badfa0eb0d549cff18dc2ef43226758
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 
 # Creación de tablas complejas accesibles en formularios HTML5 {#create-accessible-complex-tables-in-html-forms}
 
-La implementación predeterminada de tablas en formularios HTML5 utiliza elementos DIV HTML para representar una tabla. El procesamiento implica el uso de funciones ARIA para cumplir los requisitos de accesibilidad.
+La implementación predeterminada de tablas en HTML5 Forms utiliza elementos DIV HTML para representar una tabla. El procesamiento implica el uso de funciones ARIA para cumplir los requisitos de accesibilidad.
 
 Para evitar problemas de accesibilidad con lectores de pantalla que no admiten completamente las funciones ARIA utilizadas con tablas de datos, HTML5 Forms proporciona una representación alternativa para las tablas. Estas tablas se basan en el nuevo formato de tabla introducido en Designer, que también admite:
 
 * Encabezados de fila
 * Intervalo de filas
 
-Para utilizar el nuevo formato en formularios HTML5, marque la tabla como compleja. Para marcar la tabla como compleja, agregue la `extras` etiqueta en el subformulario de origen XML de tabla de la siguiente manera:
+Para utilizar el nuevo formato en HTML5 Forms, marque la tabla como compleja. Para marcar la tabla como compleja, agregue la `extras` etiqueta en el subformulario de origen XML de tabla de la siguiente manera:
 
 ```
 </extras>
@@ -33,7 +36,7 @@ Para utilizar el nuevo formato en formularios HTML5, marque la tabla como comple
 
 Las tablas marcadas como *complejaTable* siguen la representación HTML nativa y proporcionan una mejor compatibilidad de accesibilidad para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
 
-*****Nota: La creación de un lapso de filas solo funciona para las celdas situadas más a la izquierda.*
+***Nota:**La creación de un lapso de filas solo funciona para las celdas situadas más a la izquierda.*
 
 Para marcar una fila como encabezado de fila, seleccione todas las celdas de la fila, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 

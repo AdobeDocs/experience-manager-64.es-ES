@@ -1,8 +1,8 @@
 ---
 title: Alimentación de productos
 seo-title: Alimentación de productos
-description: Obtenga información sobre la fuente de productos de AEM.
-seo-description: Obtenga información sobre la fuente de productos de AEM.
+description: Obtenga información sobre la fuente de productos AEM.
+seo-description: Obtenga información sobre la fuente de productos AEM.
 uuid: 99eb9bdc-2717-45d4-9203-6394b7d7ddc6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 2%
 
 ---
 
@@ -21,16 +24,16 @@ AEM se integra con [Search&amp;Promote](https://www.adobe.com/solutions/testing-
 
 * utilice la API de comercio electrónico, independientemente de la estructura de repositorio subyacente y la plataforma de comercio.
 * aproveche la función Conector de índice de Search&amp;Promote para proporcionar una fuente de producto en formato XML.
-* aproveche la función de control remoto de Search&amp;Promote para realizar solicitudes programadas o a petición de la fuente de productos
+* aproveche la función de control remoto de Search&amp;Promote para realizar solicitudes a petición o programadas de la fuente de productos
 * generación de fuentes para distintas cuentas de Search&amp;Promote, configuradas como configuraciones de servicios en la nube.
 
-Debe tener una cuenta válida y [configurar la conexión con Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). También debe comprobar que está utilizando el centro [de](/help/sites-administering/search-and-promote.md#configuring-the-data-center) datos correcto y asegurarse de que el **URI del servidor remoto **está configurado.
+Debe tener una cuenta válida y [configurar la conexión a Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). También debe comprobar que está utilizando el centro [de](/help/sites-administering/search-and-promote.md#configuring-the-data-center) datos correcto y asegurarse de que el **URI del servidor remoto **está configurado.
 
 ## Configuración de la fuente de productos {#set-up-the-product-feed}
 
 Primero debe introducir una raíz del sitio Web y un atributo de identificador. Para ello:
 
-1. Vaya a la configuración de Search&amp;Promote.
+1. Vaya a la configuración de la Search&amp;Promote.
 1. Haga clic en **[!UICONTROL Editar]**.
 1. Haga clic en la ficha Configuración **[!UICONTROL de fuente del conector]** de índice.
 1. Introduzca el atributo raíz **[!UICONTROL e]** identificador del sitio **[!UICONTROL Web]**.
@@ -45,27 +48,27 @@ Primero debe introducir una raíz del sitio Web y un atributo de identificador. 
 
 A continuación, también debe editar dos configuraciones en la consola web para poder generar fuentes de productos.
 
-### Configuración de la implementación de CQ Search&amp;Promote Products Crawler para Geometrixx en el día {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
+### Configuración de la implementación de Crawler de productos de CQ Day para Geometrixx {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
 
 1. Vaya a [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Haga clic en **[!UICONTROL Día de implementación del buscador de productos CQ Search&amp;Promote para Geometrixx]**.
+1. Haga clic en Implementación del explorador de productos de CQ **[!UICONTROL Day para la Geometrixx]**.
 1. Especifique el número de cuenta de Search&amp;Promote al que está vinculado este explorador. Se utilizará para buscar la configuración de servicios en la nube utilizada por este buscador.
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-### Configuración del Generador de fuentes de productos CQ Search&amp;Promote para Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
+### Configuración del generador de fuentes de productos de CQ para el día de Search&amp;Promote para Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
 
 1. Vaya a [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Haga clic en **[!UICONTROL Día Generador de fuentes de productos CQ Search&amp;Promote para Geometrixx]**.
+1. Haga clic en Generador de fuentes de productos de CQ **[!UICONTROL Day para la Geometrixx]**.
 1. Especifique el número de cuenta de Search&amp;Promote al que está vinculado este generador. Se utilizará para buscar la configuración de servicios en la nube utilizada por este generador.
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Programar la fuente de productos {#schedule-the-product-feed}
 
-Para habilitar la generación de fuentes programadas, debe configurar un programador para ella.\
-Un programador se configura como una configuración secundaria de la configuración de servicios en la nube de Search&amp;Promote específica.
+Para habilitar la generación programada de fuentes, debe configurar un Planificador para ella.\
+Un Planificador se configura como una configuración secundaria de la configuración de servicios de Search&amp;Promote cloud específica.
 
-1. Vaya a la configuración de Search&amp;Promote.
-1. Haga clic en **[!UICONTROL +]** junto a la configuración **[!UICONTROL de]** Programador.
+1. Vaya a la configuración de la Search&amp;Promote.
+1. Haga clic en **[!UICONTROL +]** junto a la configuración **[!UICONTROL del]** Planificador.
 1. Introduzca un **[!UICONTROL Título]** reconocible para los autores de páginas y un **[!UICONTROL Nombre]**&#x200B;único.
 1. Haga clic en **[!UICONTROL Crear]**. Se abre un cuadro de diálogo.
 
@@ -75,7 +78,7 @@ Un programador se configura como una configuración secundaria de la configuraci
 
    >[!NOTE]
    >
-   >No es la contraseña de su cuenta de Search&amp;Promote. Puede encontrar y cambiar esta contraseña iniciando sesión en su cuenta de Search&amp;Promote y yendo a **[!UICONTROL Index]** y luego a **[!UICONTROL Remote Control]**.
+   >Esta no es la contraseña de su cuenta de Search&amp;Promote. Puede buscar y cambiar esta contraseña iniciando sesión en su cuenta de Search&amp;Promote y yendo a **[!UICONTROL Index]** y luego a **[!UICONTROL Remote Control]**.
 
 1. Marque **[!UICONTROL Habilitar programación]** .
 1. Seleccione una **[!UICONTROL programación]**. Es el programa de generación de fuentes real.
@@ -83,7 +86,7 @@ Un programador se configura como una configuración secundaria de la configuraci
 
    >[!NOTE]
    >
-   >La función de indexación a petición utiliza la función de control remoto de Search&amp;Promote. Cuando se llama a una indexación remota, la indexación no se iniciará inmediatamente, pero se publicará una solicitud de indización en Search&amp;Promote mediante la función de control remoto.
+   >La función de indexación a petición utiliza la función de control remoto de Search&amp;Promote. Cuando se llama a una indexación remota, la indexación no se inicio inmediatamente, pero se publicará una solicitud de indización en Search&amp;Promote mediante la función de control remoto.
 
 1. Haga clic en **[!UICONTROL Aceptar]**.
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 translation-type: tm+mt
 source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -59,6 +62,6 @@ Si se utilizan para el seguimiento, entonces:
 * deben actualizarse periódicamente.
 * sólo se debe mantener una copia maestra y todos deben saber dónde está la copia maestra.
 * deben ser accesibles para todos los miembros del proyecto.
-* si la seguridad es un problema (a menudo ocurre en grandes empresas) y el acceso común no es posible, las copias se pueden distribuir siempre que todos entiendan que se trata de copias y no se puedan actualizar.
+* si la seguridad es un problema (a menudo ocurre en grandes compañías) y no es posible el acceso común, las copias se pueden distribuir siempre que todos entiendan que se trata de copias y no se puedan actualizar.
 
 Nuevamente, existen muchas herramientas de propiedad para rastrear errores y requisitos de características.

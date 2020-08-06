@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
 
 # Modificar el aspecto (HBS) {#alter-the-appearance-hbs}
 
-Ahora que los componentes del sistema de comentarios personalizados del directorio de aplicaciones (/apps) están implementados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/vista personalizado registrado, es posible modificar la implementación.
+Ahora que los componentes del sistema de comentarios personalizados del directorio de aplicaciones (/apps) están implementados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/Vista personalizado registrado, es posible modificar la implementación.
 
 Para una demostración sencilla, se elimina una característica visual, el avatar que se muestra del usuario que ha iniciado sesión y que publica un comentario.
 
@@ -27,7 +30,7 @@ Para una demostración sencilla, se elimina una característica visual, el avata
 
 ## Modificación de los scripts de HBS {#modify-the-hbs-scripts}
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Abrir [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -65,9 +68,9 @@ Una manera de hacerlo es
    * Desmarcar `Only Modified`
    * Botón Seleccionar `Activate`
 
-## Ver comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
+## Vista Comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando con la experiencia](extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para ver la modificación y eliminar el avatar:
+[Continuando la experiencia](extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para realizar la vista de la modificación para eliminar el avatar:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 

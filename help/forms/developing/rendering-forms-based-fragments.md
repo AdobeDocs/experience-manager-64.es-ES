@@ -1,6 +1,6 @@
 ---
-title: Representación de formularios basados en fragmentos
-seo-title: Representación de formularios basados en fragmentos
+title: Representación de Forms según fragmentos
+seo-title: Representación de Forms según fragmentos
 description: nulo
 seo-description: nulo
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
@@ -12,13 +12,16 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '2187'
+ht-degree: 7%
 
 ---
 
 
-# Representación de formularios basados en fragmentos {#rendering-forms-based-on-fragments}
+# Representación de Forms según fragmentos {#rendering-forms-based-on-fragments}
 
-## Representación de formularios basados en fragmentos {#rendering-forms-based-on-fragments-inner}
+## Representación de Forms según fragmentos {#rendering-forms-based-on-fragments-inner}
 
 El servicio Forms puede procesar formularios basados en fragmentos creados con Designer. Un *fragmento* es una parte reutilizable de un formulario y se guarda como un archivo XDP independiente que se puede insertar en varios diseños de formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal.
 
@@ -38,24 +41,24 @@ A continuación se indican las ventajas de utilizar fragmentos:
 
 ### Compilación de un diseño de formulario ensamblado mediante fragmentos {#assembling-a-form-design-assembled-using-fragments}
 
-Puede montar un diseño de formulario para pasarlo al servicio Forms en función de varios fragmentos. Para ensamblar varios fragmentos, utilice el servicio Ensamblador. Para ver un ejemplo del uso del servicio Compilación para crear un diseño de formulario que utilice otro servicio de Forms (el servicio Output), consulte [Creación de documentos PDF con fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). En lugar de utilizar el servicio Output, puede realizar el mismo flujo de trabajo con el servicio Forms.
+Puede montar un diseño de formulario para pasarlo al servicio Forms en función de varios fragmentos. Para ensamblar varios fragmentos, utilice el servicio Ensamblador. Para ver un ejemplo del uso del servicio Compilación para crear un diseño de formulario que utilice otro servicio de Forms (el servicio Output), consulte [Creación de Documentos PDF con fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). En lugar de utilizar el servicio Output, puede realizar el mismo flujo de trabajo con el servicio Forms.
 
 Al utilizar el servicio Compilador, se pasa un diseño de formulario que se ensambló con fragmentos. El diseño de formulario creado no hace referencia a otros fragmentos. Por el contrario, en este tema se trata el paso de un diseño de formulario que hace referencia a otros fragmentos al servicio Forms. Sin embargo, el diseño de formulario no fue ensamblado por el Ensamblador. Se creó en Designer.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Para obtener información sobre la creación de una aplicación basada en Web que procesa formularios basados en fragmentos, consulte [Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Para obtener más información sobre la creación de una aplicación basada en Web que procesa formularios basados en fragmentos, consulte [Creación de Aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 ### Resumen de los pasos {#summary-of-steps}
 
 Para procesar un formulario basado en fragmentos, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un objeto de API de Forms Client.
+1. Cree un objeto de API de cliente de Forms.
 1. Especifique los valores de URI.
 1. Representar el formulario.
 1. Escriba la secuencia de datos del formulario en el navegador web del cliente.
@@ -70,15 +73,15 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Especificar valores de URI**
 
-Para procesar correctamente un formulario basado en fragmentos, debe asegurarse de que el servicio Forms puede localizar tanto el formulario como los fragmentos (archivos XDP) a los que hace referencia el diseño de formulario. Por ejemplo, supongamos que el formulario se denomina PO.xdp y que este formulario utiliza dos fragmentos denominados FooterUS.xdp y FooterCanada.xdp. En este caso, el servicio Forms debe poder localizar los tres archivos XDP.
+Para procesar correctamente un formulario basado en fragmentos, debe asegurarse de que el servicio Forms puede localizar tanto el formulario como los fragmentos (archivos XDP) a los que hace referencia el diseño de formulario. Por ejemplo, supongamos que el formulario se denomina PO.xdp y que este formulario utiliza dos fragmentos denominados FooterUS.xdp y FooterCanada.xdp. En este caso, el servicio de Forms debe poder localizar los tres archivos XDP.
 
-Puede organizar un formulario y sus fragmentos colocándolo en una ubicación y los fragmentos en otra, o bien puede colocar todos los archivos XDP en la misma ubicación. A efectos de esta sección, supongamos que todos los archivos XDP se encuentran en el repositorio de AEM Forms. Para obtener información sobre la colocación de archivos XDP en el repositorio de AEM Forms, consulte [Escritura de recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Puede organizar un formulario y sus fragmentos colocándolo en una ubicación y los fragmentos en otra, o bien puede colocar todos los archivos XDP en la misma ubicación. A los efectos de esta sección, supongamos que todos los archivos XDP se encuentran en el repositorio de AEM Forms. Para obtener información sobre la colocación de archivos XDP en el repositorio de AEM Forms, consulte [Escritura de recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
-Cuando se procesa un formulario basado en fragmentos, solo se debe hacer referencia al propio formulario y no a los fragmentos. Por ejemplo, debe hacer referencia a PO.xdp y no a FooterUS.xdp o FooterCanada.xdp. Asegúrese de colocar los fragmentos en una ubicación en la que el servicio Forms pueda localizarlos.
+Cuando se procesa un formulario basado en fragmentos, solo se debe hacer referencia al propio formulario y no a los fragmentos. Por ejemplo, debe hacer referencia a PO.xdp y no a FooterUS.xdp o FooterCanada.xdp. Asegúrese de colocar los fragmentos en una ubicación en la que el servicio de Forms pueda localizarlos.
 
 **Representar el formulario**
 
-Un formulario basado en fragmentos se puede procesar del mismo modo que los formularios no fragmentados. Es decir, puede procesar el formulario como PDF, HTML o guías de formulario (obsoleto). El ejemplo de esta sección representa un formulario basado en fragmentos como un formulario PDF interactivo. (Consulte [Representación de formularios](/help/forms/developing/rendering-interactive-pdf-forms.md)PDF interactivos).
+Un formulario basado en fragmentos se puede procesar del mismo modo que los formularios no fragmentados. Es decir, puede procesar el formulario como PDF, HTML o guías de formulario (obsoleto). El ejemplo de esta sección representa un formulario basado en fragmentos como un formulario PDF interactivo. (Consulte [Representación de PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)interactivos).
 
 **Escribir el flujo de datos del formulario en el navegador web del cliente**
 
@@ -94,11 +97,11 @@ Cuando el servicio Forms procesa un formulario, devuelve una secuencia de datos 
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creación de aplicaciones Web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Representar formularios en función de fragmentos mediante la API de Java {#render-forms-based-on-fragments-using-the-java-api}
 
@@ -117,18 +120,19 @@ Representar un formulario basado en fragmentos mediante la API de Forms (Java):
 
    * Cree un `URLSpec` objeto que almacene valores URI mediante su constructor.
    * Invoque el `URLSpec` método del `setApplicationWebRoot` objeto y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` método del `setContentRootURI` objeto y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario y los fragmentos están ubicados en el URI raíz de contenido. De lo contrario, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
-   * Invoque el `URLSpec` método del `setTargetURL` objeto y pase un valor de cadena que especifique el valor de la dirección URL de destino al que se registran los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
+   * Invoque el `URLSpec` método del `setContentRootURI` objeto y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario y los fragmentos están ubicados en el URI raíz de contenido. Si no es así, el servicio Forms emite una excepción. Para hacer referencia al repositorio, especifique `repository://`.
+   * Invoque el `URLSpec` método del `setTargetURL` objeto y pase un valor de cadena que especifique el valor de URL de destinatario al que se registran los datos del formulario. Si define la URL de destinatario en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Representar el formulario
 
    Invoque el `FormsServiceClient` método del `renderPDFForm` objeto y pase los valores siguientes:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un `com.adobe.idp.Document` objeto vacío.
    * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución.
-   * Un `URLSpec` objeto que contiene valores URI que el servicio Forms requiere para procesar un formulario basado en fragmentos.
+   * Un `URLSpec` objeto que contiene valores de URI que el servicio de Forms necesita para procesar un formulario basado en fragmentos.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `renderPDFForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -143,7 +147,7 @@ Representar un formulario basado en fragmentos mediante la API de Forms (Java):
 
 **Consulte también**
 
-[Representación de formularios basados en fragmentos](#rendering-forms-based-on-fragments)
+[Representación de Forms según fragmentos](#rendering-forms-based-on-fragments)
 
 [Inicio rápido (modo SOAP): Representación de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
@@ -157,7 +161,7 @@ Representar un formulario basado en fragmentos mediante la API de Forms (servici
 
 1. Incluir archivos de proyecto
 
-   * Cree clases proxy de Java que consuman el WSDL del servicio Forms.
+   * Cree clases proxy de Java que consuman el WSDL del servicio de Forms.
    * Incluya las clases proxy de Java en la ruta de clases.
 
 1. Creación de un objeto de API de Forms Client
@@ -168,22 +172,23 @@ Representar un formulario basado en fragmentos mediante la API de Forms (servici
 
    * Cree un `URLSpec` objeto que almacene valores de URI mediante su constructor.
    * Invoque el `URLSpec` método del `setApplicationWebRoot` objeto y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` método del `setContentRootURI` objeto y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz de contenido. De lo contrario, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
-   * Invoque el `URLSpec` método del `setTargetURL` objeto y pase un valor de cadena que especifique el valor de la dirección URL de destino al que se registran los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
+   * Invoque el `URLSpec` método del `setContentRootURI` objeto y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz de contenido. Si no es así, el servicio Forms emite una excepción. Para hacer referencia al repositorio, especifique `repository://`.
+   * Invoque el `URLSpec` método del `setTargetURL` objeto y pase un valor de cadena que especifique el valor de URL de destinatario al que se registran los datos del formulario. Si define la URL de destinatario en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Representar el formulario
 
    Invoque el `FormsService` método del `renderPDFForm` objeto y pase los valores siguientes:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`.
    * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución. Tenga en cuenta que la opción PDF con etiquetas no se puede establecer si el documento de entrada es un documento PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción PDF con etiquetas.
-   * Un `URLSpec` objeto que contiene valores URI requeridos por el servicio Forms.
+   * Un `URLSpec` objeto que contiene valores URI requeridos por el servicio de Forms.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el método . Este parámetro se utiliza para almacenar el formulario procesado.
    * Objeto vacío `javax.xml.rpc.holders.LongHolder` que se rellena con el método . Este argumento almacenará el número de páginas del formulario.
    * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método . Este argumento almacenará el valor de configuración regional.
    * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+
    El `renderPDFForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
@@ -198,6 +203,6 @@ Representar un formulario basado en fragmentos mediante la API de Forms (servici
 
 **Consulte también**
 
-[Representación de formularios basados en fragmentos](#rendering-forms-based-on-fragments)
+[Representación de Forms según fragmentos](#rendering-forms-based-on-fragments)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

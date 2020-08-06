@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >El RGPD se utiliza como ejemplo en las secciones que figuran a continuación, pero los detalles abarcados son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-Los AEM Communities exponen las API integradas para administrar los perfiles de los usuarios y el contenido generado por los usuarios (UGC) de forma masiva. Una vez activado, el servicio **UserUgcManagement** permite a los usuarios privilegiados (administradores de la comunidad y moderadores) desactivar los perfiles de usuario y eliminar o exportar de forma masiva UGC para usuarios específicos. Estas API también permiten que los controladores y los procesadores de datos de los clientes cumplan con las Normas Generales de Protección de Datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
+AEM Communities expone las API integradas para administrar los perfiles de los usuarios y el contenido generado por los usuarios (UGC) de forma masiva. Una vez activado, el servicio **UserUgcManagement** permite a los usuarios privilegiados (administradores de la comunidad y moderadores) desactivar los perfiles de usuario y eliminar o exportar de forma masiva UGC para usuarios específicos. Estas API también permiten que los controladores y los procesadores de datos de los clientes cumplan con las Normas Generales de Protección de Datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
 
-Para obtener más información, consulte la página del [RGPD en el Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de privacidad de Adobe.
+Para obtener más información, consulte la página del [RGPD en el Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de Privacidad del Adobe.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Estas API permiten realizar las siguientes funciones.
 * **usuario**: ID autorizable de un usuario.
 * **outputStream**: el resultado se devuelve como flujo de salida, que es un archivo zip que incluye el contenido generado por el usuario (como archivo json) y los archivos adjuntos (que incluyen imágenes o vídeos cargados por el usuario).
 
-Por ejemplo, para exportar el UGC de un usuario llamado Weston McCall, que utiliza weston.mccall@dodgit.com como ID autorizada para iniciar sesión en el sitio de comunidades, puede enviar una solicitud http GET similar a la siguiente:
+Por ejemplo, para exportar el UGC de un usuario llamado Weston McCall, que utiliza weston.mccall@dodgit.com como ID autorizada para iniciar sesión en el sitio de comunidades, puede enviar una solicitud de GET http similar a la siguiente:
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
@@ -57,14 +57,14 @@ Por ejemplo, para exportar el UGC de un usuario llamado Weston McCall, que utili
 
 * **usuario**: ID autorizable del usuario.
 
-Por ejemplo, para eliminar el UGC de un usuario con un ID autorizado weston.mccall@dodgit.com mediante una solicitud http-POST, utilice los parámetros siguientes:
+Por ejemplo, para eliminar el UGC de un usuario con un ID autorizado weston.mccall@dodgit.com mediante una solicitud de http-POST, utilice los parámetros siguientes:
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUgc
 
 ### Eliminar UGC de Adobe Analytics {#delete-ugc-from-analytics}
 
-Para eliminar datos de usuario del Analytics de Adobe, siga el flujo de trabajo de Analytics del RGPD; ya que la API no elimina datos de usuario de Adobe Analytics.
+Para eliminar datos de usuario del Adobe Analytics, siga el flujo de trabajo de GDPR Analytics; ya que la API no elimina datos de usuario de Adobe Analytics.
 
 Para las asignaciones de variables de Adobe Analytics utilizadas por AEM Communities, consulte la siguiente imagen:
 
@@ -80,11 +80,11 @@ Para las asignaciones de variables de Adobe Analytics utilizadas por AEM Communi
 >
 >Al deshabilitar un usuario, se elimina todo el contenido generado por el usuario que tiene en el servidor.
 
-Por ejemplo, para eliminar el perfil de un usuario con un ID autorizado weston.mccall@dodgit.com mediante una solicitud http-POST, utilice los parámetros siguientes:
+Por ejemplo, para eliminar el perfil de un usuario con un ID autorizado weston.mccall@dodgit.com mediante una solicitud de http-POST, utilice los parámetros siguientes:
 
 * user= weston.mccall@dodgit.com
 * operation= deleteUser
 
 >[!NOTE]
 >
->la API deleteUserAccount() solo deshabilita un perfil de usuario en el sistema y elimina el UGC. Sin embargo, para eliminar un perfil de usuario del sistema, vaya a **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), busque el nodo de usuario y elimínelo.
+>la API deleteUserAccount() solo deshabilita un perfil de usuario en el sistema y elimina el UGC. Sin embargo, para eliminar un perfil de usuario del sistema, vaya al **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), busque el nodo de usuario y elimínelo.

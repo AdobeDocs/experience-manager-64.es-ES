@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 9%
 
 ---
 
@@ -753,7 +756,7 @@ Los objetos JSON utilizados en el espacio de trabajo de AEM Forms se describen a
   <tr>
    <td>formattedDescription<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Descripción de datos adjuntos con formato. Se utiliza para mostrar caracteres especiales presentes en la descripción de datos adjuntos en el espacio de trabajo de AEM Forms.<br type="_moz" /> </td> 
+   <td>Descripción de datos adjuntos con formato. Se utiliza para mostrar caracteres especiales presentes en la descripción del archivo adjunto en el espacio de trabajo de AEM Forms.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 |---|---|
 |  | **[Manillares de SCF Ayudantes](handlebars-helpers.md)** |
 
-Para personalizar el aspecto y/o el comportamiento de un componente de AEM Communities en el lado del cliente, existen varios métodos.
+Para personalizar el aspecto y/o el comportamiento de un componente de AEM Communities en el lado del cliente, existen varios enfoques.
 
 Dos enfoques principales son superponer o ampliar un componente.
 
@@ -39,7 +42,7 @@ El directorio /apps es el primer lugar en el que se busca para resolver solicitu
 
 El componente predeterminado en el directorio /libs nunca debe modificarse, ya que los parches futuros y las actualizaciones son libres de alterar el directorio /libs de cualquier manera necesaria mientras se mantienen las interfaces públicas.
 
-Esto es diferente de [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como tipo de recurso superior.
+Esto es diferente a [ampliar](#extensions) un componente predeterminado donde el deseo es realizar modificaciones para un uso específico, crear una ruta única al componente y confiar en hacer referencia al componente predeterminado original en el directorio /libs como tipo de recurso superior.
 
 Para ver un ejemplo rápido de superposición del componente de comentarios, pruebe el tutorial [](overlay-comments.md)Overlay Comments Component.
 
@@ -102,7 +105,7 @@ Los estilos personalizados ahora anularán los estilos de marco predeterminados 
 
 >[!CAUTION]
 >
->**Cualquier nombre de clase CSS con el prefijo** scf-js-&amp;ast; tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
+>Cualquier nombre de clase CSS con el prefijo **scf-js-&amp;ast;** tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, alternar entre oculto y visible) y no deben superarse ni eliminarse.
 >
 >Mientras que scf-js-&amp;ast; las clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, puede haber efectos secundarios.
 
@@ -112,11 +115,11 @@ Para ampliar una implementación de componentes Javascript, solo necesita
 
 1. Cree un componente para su aplicación con un jcr:resourceSuperType definido en el valor de jcr:resourceType del componente extendido, por ejemplo, social/forum/components/hbs/forum
 1. Examine el JavaScript predeterminado del componente SCF para determinar qué métodos deben registrarse mediante SCF.registerComponent()
-1. Copie el JavaScript del componente extendido o comience desde cero
+1. Copie el Javascript o el inicio del componente extendido desde cero
 1. Ampliar el método
-1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y las vistas personalizados.
+1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y vistas personalizados.
 
-### forum.js: Extensión de muestra del foro - HBS {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Extensión de muestra del foro - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -143,7 +146,7 @@ Para ampliar una implementación de componentes Javascript, solo necesita
 
 ## Etiquetas de script {#script-tags}
 
-Las etiquetas de script son una parte inherente del entorno de cliente. Son el pegamento que ayuda a enlazar el marcado generado en el servidor con los modelos y las vistas del lado del cliente.
+Las etiquetas de script son una parte inherente del entorno de cliente. Son el pegamento que ayuda a enlazar el marcado generado en el servidor con los modelos y vistas del lado del cliente.
 
 Las etiquetas de script de los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en el HTML se identifican con el atributo `data-scf-json=`true.
 
@@ -169,9 +172,9 @@ Estas versiones se encuentran en:
 Por ejemplo:
 
 * Nodo de carpeta de cliente: /etc/clientlibs/social/hbs/forum
-* Propiedad Categories: cq.social.hbs.forum
+* Categorías, propiedad: cq.social.hbs.forum
 
-La guía [Componentes](components-guide.md) comunitarios enumera los clientlibs completos requeridos para cada componente SCF.
+La guía [Componentes de](components-guide.md) comunidad lista todos los clientes requeridos para cada componente SCF.
 
 [Clientlibs for Communities Components](clientlibs.md) describe cómo agregar clientlibs a una página.
 
@@ -188,9 +191,9 @@ Estas versiones se encuentran en la carpeta de bibliotecas de SCF:
 Por ejemplo:
 
 * Nodo de carpeta de cliente: /libs/social/forum/hbs/forum/clientlibs
-* Propiedad Categories: cq.social.author.hbs.forum
+* Categorías, propiedad: cq.social.author.hbs.forum
 
-Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí enumeran sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
+Nota: aunque los clientlibs de autor nunca incorporan otras bibliotecas, sí que lista sus dependencias. Cuando se incrustan en otras bibliotecas, las dependencias no se extraen automáticamente y también se deben incrustar.
 
 Los clientlibs de creación requeridos pueden identificarse insertando &quot;author&quot; en los clientlibs enumerados para cada componente SCF en la guía [Componentes de](components-guide.md)comunidad.
 

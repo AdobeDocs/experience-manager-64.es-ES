@@ -1,6 +1,6 @@
 ---
-title: Uso de Dynamic Media
-seo-title: Uso de Dynamic Media
+title: Trabajo con Dynamic Media
+seo-title: Trabajo con Dynamic Media
 description: Dynamic Media ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento
 seo-description: Dynamic Media ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 translation-type: tm+mt
 source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 88%
 
 ---
 
 
-# Uso de Dynamic Media{#working-with-dynamic-media}
+# Trabajo con Dynamic Media{#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento.
 

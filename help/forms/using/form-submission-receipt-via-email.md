@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 ## Envío de datos de formulario adaptable {#adaptive-form-data-submission}
 
-Los formularios adaptables proporcionan varios flujos de trabajo de [envío de acciones](/help/forms/using/configuring-submit-actions.md) listos para usar para enviar los datos del formulario a diferentes extremos.
+Los formularios adaptables proporcionan varios flujos de trabajo de [envío predeterminados de acciones](/help/forms/using/configuring-submit-actions.md) para enviar los datos del formulario a diferentes extremos.
 
 Por ejemplo, la acción de envío de acción **de** correo electrónico envía un mensaje de correo electrónico cuando se envía correctamente un formulario adaptable. También se puede configurar para enviar los datos del formulario y el PDF en el correo electrónico.
 
@@ -34,13 +37,13 @@ La acción Correo electrónico permite a un autor enviar correos electrónicos a
 
 >[!NOTE]
 >
->Para utilizar la acción Correo electrónico, debe configurar el servicio de correo de AEM tal como se describe en [Configuración del servicio](/help/sites-administering/notification.md#configuring-the-mail-service)de correo.
+>Para utilizar la acción Correo electrónico, debe configurar el servicio de correo AEM como se describe en [Configuración del servicio](/help/sites-administering/notification.md#configuring-the-mail-service)de correo.
 
 ### Activación de la acción de correo electrónico en un formulario adaptable {#enabling-email-action-on-an-adaptive-form}
 
 1. Abra un formulario adaptable en modo de edición.
 
-1. Haga clic en **Editar** junto al **inicio de una barra de herramientas de formulario** adaptable.
+1. Haga clic en **Editar** junto al **Inicio de la barra de herramientas Formulario** adaptable.
 
    Se abre el cuadro de diálogo Editar componente.
 

@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## Diseño para actualizaciones {#design-for-upgrades}
 
-Al ampliar los comportamientos de la OOTB, es importante tener en cuenta las actualizaciones. Siempre aplique personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para extender el comportamiento de fuera del cuadro. Aunque es posible que se necesiten algunas modificaciones para admitir una nueva versión de AEM, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
+Al ampliar los comportamientos de la OOTB, es importante tener en cuenta las actualizaciones. Siempre aplique personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para extender el comportamiento de fuera del cuadro. Aunque se necesitan algunas modificaciones para admitir una nueva versión de AEM, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
 
 ### Volver a utilizar plantillas y componentes cuando sea posible {#reuse-template-and-components-when-possible}
 

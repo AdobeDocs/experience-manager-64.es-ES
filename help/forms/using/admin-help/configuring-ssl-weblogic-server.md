@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +52,7 @@ El comando keytool generalmente se encuentra en el directorio jre/bin de Java y 
   <tr> 
    <td><p>-keyalg</p></td> 
    <td><p>El algoritmo que se va a usar para generar el par de claves.</p></td> 
-   <td><p>RSA</p><p>Puede utilizar un algoritmo diferente, según la política de su empresa.</p></td> 
+   <td><p>RSA</p><p>Puede utilizar un algoritmo diferente, según la política de su compañía.</p></td> 
   </tr> 
   <tr> 
    <td><p>-keystore</p></td> 
@@ -68,7 +71,7 @@ El comando keytool generalmente se encuentra en el directorio jre/bin de Java y 
   <tr> 
    <td><p>-valid</p></td> 
    <td><p>Número de días que el certificado se considera válido.</p></td> 
-   <td><p>3650</p><p>Puede usar un valor diferente, según la política de su empresa.</p></td> 
+   <td><p>3650</p><p>Puede utilizar un valor diferente, según la política de su compañía.</p></td> 
   </tr> 
   <tr> 
    <td><p>-storepass</p></td> 
@@ -111,7 +114,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 
    >[!NOTE]
    >
-   >Reemplace `[JAVA_HOME]`*con el directorio donde está instalado JDK y reemplace el texto en cursiva por valores que correspondan con su entorno.*
+   >Reemplace `[JAVA_HOME]`*con el directorio donde está instalado el JDK y reemplace el texto en cursiva por valores que correspondan con su entorno.*
 
    Por ejemplo:
 
@@ -144,7 +147,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 1. Copie el archivo ads-ca.cer en cualquier equipo host que necesite una comunicación segura con el servidor de aplicaciones.
 1. Inserte el certificado en un nuevo archivo de almacén de claves (el almacén de claves de confianza personalizada) mediante el siguiente comando:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
@@ -162,9 +165,9 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
 
 ## Configurar WebLogic para utilizar SSL {#configure-weblogic-to-use-ssl}
 
-1. Inicie la consola de administración de WebLogic Server escribiendo el nombre `https://`*[de ]*host`:7001/console`en la línea URL de un explorador Web.
+1. Inicio la consola de administración de WebLogic Server escribiendo el nombre `https://`*[de ]*host`:7001/console`en la línea URL de un explorador Web.
 1. En Entorno, en Configuraciones de dominio, seleccione **Servidores >[Servidor]> Configuración > General**.
-1. En General, en Configuración, asegúrese de que estén activadas **el puerto de** escucha y el puerto de escucha **SSL habilitado** . Si no está habilitado, haga lo siguiente:
+1. En General, en Configuración, asegúrese de que **Escuchar puerto habilitado** y Puerto de escucha **SSL habilitado** están seleccionados. Si no está habilitado, haga lo siguiente:
 
    1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar las selecciones y los valores.
    1. Marque las casillas de verificación Puerto de **escucha habilitado** y Puerto de escucha **SSL habilitado** .
@@ -174,10 +177,10 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
 1. En Entorno, en Configuraciones de dominio, haga clic en **Servidores > Servidor [**]administrado > Configuración > General**.
 1. En General, en Configuración, seleccione **Palabras clave**.
 1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar las selecciones y los valores.
-1. Haga clic en **Cambiar** para obtener la lista desplegable almacén de claves como y seleccione Identidad **personalizada y Confianza** personalizada.
+1. Haga clic en **Cambiar** para obtener la lista del almacén de claves como lista desplegable y seleccione Identidad **personalizada y Confianza** personalizada.
 1. En Identidad, especifique los siguientes valores:
 
-   **Almacén** de claves de identidad personalizado: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, donde *[appserverdomain] *es la ruta de acceso real y *[server name]* es el nombre del servidor de aplicaciones.
+   **Almacén** de claves de identidad personalizado: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, donde *[appserverdomain] *es la ruta de acceso real y el nombre *[del]* servidor es el nombre del servidor de aplicaciones.
 
    **Tipo** de almacén de claves de identidad personalizada: JKS
 
@@ -204,7 +207,7 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
 ## Deshabilitar la función de verificación de nombre de host {#disable-the-hostname-verification-feature}
 
 1. En la ficha Configuración, haga clic en SSL.
-1. En Avanzada, seleccione Ninguno en la lista Verificación del nombre de host.
+1. En Avanzada, seleccione Ninguno en la lista de verificación de nombre de host.
 
    Si la verificación del nombre de host no está deshabilitada, el nombre común (CN) debe contener el nombre de host del servidor.
 

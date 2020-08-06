@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Marcar los recursos como agua {#watermarking}
 
-Recursos de Adobe Experience Manager (AEM) permite añadir una marca de agua digital a las imágenes para ayudar a los usuarios a comprobar la autenticidad y propiedad de los recursos con copyright. Los AEM Assets admiten texto que se va a utilizar como marca de agua en archivos PNG y JPEG.
+Recursos Adobe Experience Manager (AEM) le permite agregar una marca de agua digital a las imágenes para ayudar a los usuarios a comprobar la autenticidad y propiedad de los recursos con copyright. AEM Assets admite texto que se va a utilizar como marca de agua en archivos PNG y JPEG.
 
 Para poder aplicar marcas de agua a los recursos, agregue el paso [!UICONTROL Marca de agua] en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM.
 
@@ -34,6 +34,6 @@ Para poder aplicar marcas de agua a los recursos, agregue el paso [!UICONTROL Ma
    ![Proporcione los argumentos en el paso de adición de marca de agua en Recursos](assets/arguments_add_watermark_aem_assets.png)
 
 1. Guarde el flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]** con el paso de marca de agua.
-1. En la interfaz de usuario de AEM, cargue un recurso de ejemplo. La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición configurada en los pasos anteriores.
+1. En la interfaz de usuario AEM, cargue un recurso de ejemplo. La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición configurada en los pasos anteriores.
 
-Para marcar documentos PDF mediante programación o con información dinámica, considere la posibilidad de utilizar la oferta de servicios [de Documento de](/help/forms/using/overview-aem-document-services.md) AEM.
+Para marcar documentos PDF mediante programación o con información dinámica, considere la posibilidad de utilizar [AEM oferta de servicios](/help/forms/using/overview-aem-document-services.md) de Documento.

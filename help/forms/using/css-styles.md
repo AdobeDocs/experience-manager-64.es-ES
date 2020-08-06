@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ La representación HTML5 de una plantilla de formulario basada en XFA consta de 
 >
 >En las clases CSS, no cambie el valor de los atributos width, height, border-thickness, top, left, right, bottom, padding, margin y otros atributos de posición y tamaño. Cualquier cambio en los atributos de posición y tamaño produce cambios en la presentación del formulario.
 
-## Clases CSS para elementos {#css-classes-nbsp-for-elements-nbsp}
+## Clases CSS para elementos  {#css-classes-nbsp-for-elements-nbsp}
 
 Cada elemento contiene clases CSS bien definidas. Puede modificar estas clases para cambiar el aspecto de un elemento. Cada elemento, excepto los elementos field y draw, tiene dos clases CSS: clase Type y clase Name.
 
@@ -46,7 +49,7 @@ El elemento field contiene dos elementos anidados: y rótulo.
 El elemento widget contiene el elemento de interfaz de usuario para interactuar con los usuarios. Tiene tres clases CSS:
 
 * **Utilidad**: Cada utilidad tiene esta clase.
-* **name**: Todos los widgets enviados con AEM contienen la clase de nombre de la utilidad. Para widgets personalizados, el desarrollador de utilidades proporciona la clase Widget name.
+* **name**: Todos los widgets enviados con AEM contienen la clase de nombre del widget. Para widgets personalizados, el desarrollador de utilidades proporciona la clase Widget name.
 * **type**: Cada utilidad tiene un elemento de interfaz de usuario. Esta clase define el tipo del elemento de interfaz de usuario.
 
 ```xml
@@ -229,7 +232,7 @@ Puede insertar elementos de dibujo estáticos como texto e imágenes mediante AE
 | **Dibujar tipo** | **Clase de CSS** |
 |---|---|
 | Texto | text |
-| Imagen | imagen |
+| Imagen | image |
 | Rectángulo | rectangle |
 | Línea | line |
 

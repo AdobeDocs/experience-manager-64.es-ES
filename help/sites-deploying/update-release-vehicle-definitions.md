@@ -11,11 +11,14 @@ topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
 source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
+workflow-type: tm+mt
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
 
-# Definiciones del vehículo de la versión de actualización de AEM {#update-release-vehicle-definitions}
+# AEM Actualización de las definiciones del vehículo de lanzamiento {#update-release-vehicle-definitions}
 
 Este documento incluye detalles sobre los distintos tipos de versiones de Adobe Experience Manager (AEM), incluidas versiones completas, paquetes de funciones y paquetes de servicios que Adobe ofrece a sus clientes.
 
@@ -45,7 +48,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
     <ul> 
      <li>Nuevas funciones</li> 
      <li>Mejoras</li> 
-     <li>Correcciones de errores</li> 
+     <li>Corrección de errores</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -65,7 +68,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td>
     <ul> 
      <li>Se entrega como un instalador de producto independiente</li> 
-     <li>Disponible en el sitio web de licencias y en el sitio web de licencias de servicios gestionados</li> 
+     <li>Disponible en el sitio web de licencias y en el sitio web de licencias de Managed Services</li> 
      <li>Puede requerir la migración del repositorio de contenido</li> 
     </ul> </td> 
   </tr>
@@ -102,7 +105,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td>
     <ul> 
      <li>Mejoras</li> 
-     <li>Correcciones de errores</li> 
+     <li>Corrección de errores</li> 
      <li>Paquetes de funciones de interés común (si los hay)</li> 
     </ul> </td> 
   </tr>
@@ -146,7 +149,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td><strong>Definición</strong></td> 
    <td>
     <ul> 
-     <li>Modelo de entrega única de correcciones de liberación</li> 
+     <li>Modelo de envío único de correcciones de liberación</li> 
      <li>Paquete de contenido agregado que contiene el paquete de contenido de componentes individuales</li> 
      <li>Los archivos CFP son la sustitución de las correcciones rápidas y no se incluyen mejoras.</li> 
     </ul> </td> 
@@ -245,7 +248,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
   </tr>
   <tr>
    <td><strong>Documentación</strong></td> 
-   <td>Las notas de la versión de las revisiones públicas solo están disponibles en función de la solicitud del cliente a través del portal de asistencia de AEM.</td> 
+   <td>Las notas de la versión de las revisiones públicas solo están disponibles en función de la solicitud del cliente a través del Portal de asistencia técnica de AEM.</td> 
   </tr>
   <tr>
    <td><strong>Cadence</strong></td> 
@@ -266,7 +269,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td>
     <ul> 
      <li>Validado por el Servicio de atención al cliente</li> 
-     <li>Las correcciones rápidas de AEM no se benefician del mismo nivel de garantía de calidad que los Service Packs o las versiones de productos. Por lo tanto, primero deben validarse en un entorno de ensayo como parte de los procesos de implementación de calidad.</li> 
+     <li>AEM correcciones rápidas no se benefician del mismo nivel de garantía de calidad que los Service Packs o las versiones de productos. Por lo tanto, primero deben validarse en un entorno de ensayo como parte de los procesos de implementación de calidad.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -300,8 +303,8 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td><strong>Disponibilidad e instalación</strong></td> 
    <td>
     <ul> 
-     <li>Entregado como paquete por el Servicio de atención al cliente de AEM</li> 
-     <li>No necesariamente se incluye en los Service Packs o en las versiones completas</li> 
+     <li>Entregado como paquete por AEM Servicio de atención al cliente</li> 
+     <li>No necesariamente incluidos en los Service Packs o en las versiones completas</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -319,9 +322,9 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td><strong>Definición</strong></td> 
    <td>
     <ul> 
-     <li>Los paquetes de funciones son funcionalidades adicionales y se entregan a través de Service Packs. Si una versión de AEM ha lanzado su último Service Pack, Adobe no proporcionará ningún paquete de funciones para él en el futuro.</li> 
-     <li>Los programas PDF contienen mejoras del producto, programadas para una versión posterior del producto, pero entregadas con antelación según la decisión de la Administración de productos de Adobe.</li> 
-     <li>Las funciones siempre se combinan con la siguiente versión principal y, a continuación, se adaptan a la versión de AEM requerida por el cliente</li> 
+     <li>Los paquetes de funciones son funcionalidades adicionales y se entregan a través de Service Packs. Si una versión AEM ha lanzado su último Service Pack, Adobe no proporcionará ningún paquete de funciones para él en el futuro.</li> 
+     <li>Los programas PDF contienen mejoras de productos, programadas para una versión posterior del producto, pero entregadas con antelación según la decisión de la Administración de productos del Adobe.</li> 
+     <li>Las funciones siempre se combinan con la siguiente versión principal y, a continuación, se adaptan a la versión AEM que requiera el cliente</li> 
      <li>Los paquetes de funciones de Interés común y GA se combinan en el siguiente Service Pack</li> 
     </ul> </td> 
   </tr>
@@ -351,7 +354,7 @@ Este documento incluye detalles sobre los distintos tipos de versiones de Adobe 
    <td>
     <ul> 
      <li>Entregado como paquete</li> 
-     <li>Disponible en Uso compartido de paquetes. Los clientes aceptan los términos y condiciones de Adobe a través del uso compartido de paquetes.</li> 
+     <li>Disponible en Uso compartido de paquetes. Los clientes aceptan los términos y condiciones del Adobe a través de Package Share.</li> 
     </ul> </td> 
   </tr>
   <tr>

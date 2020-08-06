@@ -69,8 +69,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 **Creación de un objeto de API de cliente de codificación**
 
@@ -141,7 +141,7 @@ Cifrar un documento PDF con una contraseña mediante la API de cifrado (Java):
    * Especifique los recursos de documento PDF que desea cifrar invocando el `PasswordEncryptionOptionSpec` método `setEncryptOption` del objeto y pasando un valor de `PasswordEncryptionOption` lista desglosada que especifica los recursos de documento que desea cifrar. Por ejemplo, para cifrar todo el documento PDF, incluidos sus metadatos y sus archivos adjuntos, especifique `PasswordEncryptionOption.ALL`.
    * Cree un `java.util.List` objeto que almacene los permisos de codificación mediante el `ArrayList` constructor.
    * Especifique un permiso invocando el `java.util.List` método s `add` del objeto y pasando un valor de lista desglosada que corresponda al permiso que desea establecer. Por ejemplo, para establecer el permiso que permite a un usuario copiar datos ubicados en el documento PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita este paso para cada permiso que desee establecer).
-   * Especifique la opción de compatibilidad con Acrobat invocando el `PasswordEncryptionOptionSpec` método del `setCompatability` objeto y pasando un valor de lista desglosada que especifica el nivel de compatibilidad de Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * Especifique la opción de compatibilidad con Acrobat invocando el `PasswordEncryptionOptionSpec` método del `setCompatability` objeto y pasando un valor de lista desglosada que especifica el nivel de compatibilidad con Acrobat. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * Especifique el valor de la contraseña que permite al usuario abrir el documento PDF cifrado invocando el `PasswordEncryptionOptionSpec` método `setDocumentOpenPassword` del objeto y pasando un valor de cadena que representa la contraseña abierta.
    * Especifique el valor de la contraseña maestra que permite al usuario eliminar el cifrado del documento PDF invocando el `PasswordEncryptionOptionSpec` método `setPermissionPassword` del objeto y pasando un valor de cadena que representa la contraseña maestra.
 
@@ -184,12 +184,12 @@ Cifre un documento PDF con una contraseña mediante la API de cifrado (servicio 
 1. Cree un objeto de API de cliente de cifrado.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -206,7 +206,7 @@ Cifre un documento PDF con una contraseña mediante la API de cifrado (servicio 
 
    * Cree un `PasswordEncryptionOptionSpec` objeto con su constructor.
    * Especifique los recursos de documento PDF que desea cifrar asignando un valor de `PasswordEncryptionOption` lista desglosada al miembro de `PasswordEncryptionOptionSpec` datos del `encryptOption` objeto. Para cifrar todo el PDF, incluidos sus metadatos y sus archivos adjuntos, asigne `PasswordEncryptionOption.ALL` a este miembro de datos.
-   * Especifique la opción de compatibilidad de Acrobat asignando un valor de `PasswordEncryptionCompatability` lista desglosada al miembro de `PasswordEncryptionOptionSpec` datos del `compatability` objeto. Por ejemplo, asigne `PasswordEncryptionCompatability.ACRO_7` a este miembro de datos.
+   * Especifique la opción de compatibilidad con Acrobat asignando un valor de `PasswordEncryptionCompatability` lista desglosada al miembro de `PasswordEncryptionOptionSpec` datos del `compatability` objeto. Por ejemplo, asigne `PasswordEncryptionCompatability.ACRO_7` a este miembro de datos.
    * Especifique el valor de la contraseña que permite al usuario abrir el documento PDF cifrado asignando un valor de cadena que representa la contraseña abierta al miembro de `PasswordEncryptionOptionSpec` datos del `documentOpenPassword` objeto.
    * Especifique el valor de la contraseña que permite al usuario eliminar el cifrado del documento PDF asignando un valor de cadena que representa la contraseña maestra al miembro de `PasswordEncryptionOptionSpec` datos del `permissionPassword` objeto.
 
@@ -230,9 +230,9 @@ Cifre un documento PDF con una contraseña mediante la API de cifrado (servicio 
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Codificación de Documentos PDF con certificados {#encrypting-pdf-documents-with-certificates}
 
@@ -278,8 +278,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Creación de un objeto de API de cliente de codificación**
 
@@ -357,7 +357,7 @@ Cifrar un documento PDF con un certificado mediante la API de cifrado (Java):
 
    * Cree un `CertificateEncryptionOptionSpec` objeto invocando su constructor.
    * Especifique los recursos de documento PDF que desea cifrar invocando el `CertificateEncryptionOptionSpec` método `setOption` del objeto y pasando un valor de `CertificateEncryptionOption` lista desglosada que especifica los recursos de documento que desea cifrar. Por ejemplo, para cifrar todo el documento PDF, incluidos sus metadatos y sus archivos adjuntos, especifique `CertificateEncryptionOption.ALL`.
-   * Especifique la opción de compatibilidad de Acrobat invocando el `CertificateEncryptionOptionSpec` método `setCompat` del objeto y pasando un valor de `CertificateEncryptionCompatibility` lista desglosada que especifica el nivel de compatibilidad de Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
+   * Especifique la opción de compatibilidad con Acrobat invocando el `CertificateEncryptionOptionSpec` método `setCompat` del objeto y pasando un valor de `CertificateEncryptionCompatibility` lista desglosada que especifica el nivel de compatibilidad con Acrobat. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Cree un documento PDF con cifrado de certificado.
 
@@ -399,12 +399,12 @@ Cifre un documento PDF con un certificado mediante la API de cifrado (servicio w
 1. Cree un objeto de API de cliente de cifrado.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -434,7 +434,7 @@ Cifre un documento PDF con un certificado mediante la API de cifrado (servicio w
 
    * Cree un `CertificateEncryptionOptionSpec` objeto con su constructor.
    * Especifique los recursos de documento PDF que desea cifrar asignando un valor de `CertificateEncryptionOption` lista desglosada al miembro de `CertificateEncryptionOptionSpec` datos del `option` objeto. Para cifrar todo el documento PDF, incluidos sus metadatos y sus archivos adjuntos, asigne `CertificateEncryptionOption.ALL` a este miembro de datos.
-   * Especifique la opción de compatibilidad de Acrobat asignando un valor de `CertificateEncryptionCompatibility` lista desglosada al miembro de `CertificateEncryptionOptionSpec` datos del `compat` objeto. Por ejemplo, asigne `CertificateEncryptionCompatibility.ACRO_7` a este miembro de datos.
+   * Especifique la opción de compatibilidad con Acrobat asignando un valor de `CertificateEncryptionCompatibility` lista desglosada al miembro de `CertificateEncryptionOptionSpec` datos del `compat` objeto. Por ejemplo, asigne `CertificateEncryptionCompatibility.ACRO_7` a este miembro de datos.
 
 1. Cree un documento PDF con cifrado de certificado.
 
@@ -457,13 +457,13 @@ Cifre un documento PDF con un certificado mediante la API de cifrado (servicio w
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Eliminación de la codificación basada en certificados {#removing-certificate-based-encryption}
 
-El cifrado basado en certificados se puede eliminar de un documento PDF para que los usuarios puedan abrir el documento PDF en Adobe Reader o Acrobat. Para eliminar la codificación de un documento PDF cifrado con un certificado, se debe hacer referencia a una clave pública. Después de eliminar la codificación de un documento PDF, ya no es segura.
+La codificación basada en certificados se puede eliminar de un documento PDF para que los usuarios puedan abrir el documento PDF en Adobe Reader o Acrobat. Para eliminar la codificación de un documento PDF cifrado con un certificado, se debe hacer referencia a una clave pública. Después de eliminar la codificación de un documento PDF, ya no es segura.
 
 >[!NOTE]
 >
@@ -488,8 +488,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio de cifrado**
 
@@ -505,7 +505,7 @@ Para eliminar el cifrado basado en certificados de un documento PDF cifrado, se 
 
 >[!NOTE]
 >
->Una clave privada se almacena en el almacén de confianza de AEM Forms. Cuando se coloca un certificado allí, se especifica un valor de alias.
+>Una clave privada se almacena en AEM Forms Trust Store. Cuando se coloca un certificado allí, se especifica un valor de alias.
 
 **Guardar el documento PDF**
 
@@ -580,12 +580,12 @@ Elimine el cifrado basado en certificados mediante la API de cifrado (servicio w
 1. Cree un cliente de servicio de cifrado.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -618,13 +618,13 @@ Elimine el cifrado basado en certificados mediante la API de cifrado (servicio w
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Eliminación del cifrado de contraseña {#removing-password-encryption}
 
-El cifrado basado en contraseña se puede eliminar de un documento PDF para que los usuarios puedan abrir el documento PDF en Adobe Reader o Acrobat sin tener que especificar una contraseña. Una vez que se elimina la codificación basada en contraseña de un documento PDF, el documento ya no es seguro.
+La codificación basada en contraseña se puede eliminar de un documento PDF para que los usuarios puedan abrir el documento PDF en Adobe Reader o Acrobat sin tener que especificar una contraseña. Una vez que se elimina la codificación basada en contraseña de un documento PDF, el documento ya no es seguro.
 
 >[!NOTE]
 >
@@ -649,8 +649,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 **Crear un cliente de servicio de cifrado**
 
@@ -729,12 +729,12 @@ Elimine el cifrado basado en contraseña mediante la API de cifrado (servicio we
 1. Cree un cliente de servicio de cifrado.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -765,13 +765,13 @@ Elimine el cifrado basado en contraseña mediante la API de cifrado (servicio we
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Desbloqueo de Documentos PDF cifrados {#unlocking-encrypted-pdf-documents}
 
-Un documento PDF con cifrado de contraseña o certificado debe desbloquearse antes de poder realizar otra operación de AEM Forms en él. Si intenta realizar una operación en un documento PDF cifrado, generará una excepción. Después de desbloquear un documento PDF cifrado, puede realizar una o varias operaciones en él. Estas operaciones pueden pertenecer a otros servicios, como el servicio de extensiones de Acrobat Reader DC.
+Un documento PDF con cifrado de contraseña o certificado debe desbloquearse antes de que se pueda realizar otra operación de AEM Forms. Si intenta realizar una operación en un documento PDF cifrado, generará una excepción. Después de desbloquear un documento PDF cifrado, puede realizar una o varias operaciones en él. Estas operaciones pueden pertenecer a otros servicios, como el servicio de extensiones de Acrobat Reader DC.
 
 >[!NOTE]
 >
@@ -796,8 +796,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio de cifrado**
 
@@ -894,12 +894,12 @@ Desbloquear un documento PDF cifrado mediante la API de cifrado (servicio web):
 1. Cree un cliente de servicio de cifrado.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -936,9 +936,9 @@ Desbloquear un documento PDF cifrado mediante la API de cifrado (servicio web):
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Determinación del tipo de cifrado {#determining-encryption-type}
 
@@ -973,8 +973,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio**
 
@@ -1050,12 +1050,12 @@ Determine el tipo de codificación que protege un documento PDF mediante la API 
 1. Cree un cliente de servicio.
 
    * Cree un `EncryptionServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `EncryptionServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `EncryptionServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -1077,6 +1077,6 @@ Determine el tipo de codificación que protege un documento PDF mediante la API 
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

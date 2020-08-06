@@ -135,6 +135,7 @@ Puede reenviar una tarea junto con cualquier nota o archivo adjunto a otro usuar
    * **Avanzar**
    * **Compartir**
    * **Consultar**
+
    >[!NOTE]
    >
    >Según la tarea, también puede realizar estas acciones desde la lista Tareas pendientes sin abrir la tarea.
@@ -232,6 +233,7 @@ Al completar una tarea, según la tarea, puede aparecer un cuadro de diálogo de
    * Seleccione la tarea y haga clic en el botón correspondiente para el siguiente paso requerido en el proceso en la parte inferior de la lista.
    * Si el formulario no tiene botones y el botón de completado del espacio de trabajo de AEM Forms está disponible, haga clic en **Completar**.
    * Si el formulario tiene botones y el botón de completado del espacio de trabajo de AEM Forms no está disponible, haga clic en el botón correspondiente del formulario para el siguiente paso requerido en el proceso.
+
    Si el formulario no tiene botones y el botón de completado del espacio de trabajo de AEM Forms no está disponible, aparece un mensaje que indica que no se puede enviar el formulario.
 
 1. Si aparece un cuadro de diálogo de confirmación, realice una de estas acciones:
@@ -270,7 +272,7 @@ Puede enviar varias tareas desde la lista Tareas pendientes. Sólo se pueden env
 
 Puede recibir y completar tareas por correo electrónico. La participación en tareas mediante correos electrónicos elimina la necesidad de comprobar rutinariamente la lista de tareas pendientes en busca de nuevas tareas o comprobar el estado de una tarea en la página de seguimiento.
 
-En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas en la lista de tareas pendientes o en cualquier lista de trabajo de grupo al que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
+En primer lugar, defina las preferencias del espacio de trabajo de AEM Forms para recibir notificaciones por correo electrónico. El espacio de trabajo de AEM Forms puede enviar notificaciones por correo electrónico para tareas en la lista de tareas pendientes o en cualquier lista de trabajo de grupo a la que pertenezca. El administrador determina cuándo se envían los mensajes de notificación por correo electrónico y quién los recibe.
 
 Los mensajes de correo electrónico pueden contener un vínculo que abre la tarea en el espacio de trabajo de AEM Forms, un archivo adjunto del formulario que se utiliza para la tarea o acciones para completar la tarea por correo electrónico. Si se incluye un formulario en el mensaje de correo electrónico, puede abrirlo y completar la tarea si los botones para completar la tarea están creados en el formulario. Si las acciones para completar la tarea se incluyen en el mensaje de correo electrónico, puede completar la tarea haciendo clic en las acciones del correo electrónico o respondiendo al correo electrónico con la acción escrita como primera línea en el cuerpo del correo electrónico.
 
@@ -278,7 +280,7 @@ Los mensajes de correo electrónico pueden contener un vínculo que abre la tare
 >
 >Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la Guía [de administración de JEE de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms.
 
-Cuando se completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
+Cuando completa una tarea por correo electrónico, la tarea se elimina de la lista de tareas pendientes en el espacio de trabajo de AEM Forms.
 
 >[!NOTE]
 >
@@ -292,7 +294,7 @@ Cuando se completa una tarea por correo electrónico, la tarea se elimina de la 
 
 1. Haga clic en **Preferencias**.
 1. En la lista **Notificar Eventos de Tarea por correo electrónico** , seleccione **Sí**.
-1. Para incluir el formulario y los datos con el mensaje de correo electrónico, en la lista **Adjuntar formularios en correo electrónico** , seleccione **Sí**.
+1. Para incluir el formulario y los datos con el mensaje de correo electrónico, en la lista **Adjuntar Forms en correo electrónico** , seleccione **Sí**.
 
 ## Participación en tareas a través de dispositivos móviles {#participating-in-tasks-through-mobile-devices}
 

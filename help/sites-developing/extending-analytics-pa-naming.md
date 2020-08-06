@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Adobe Analytics utiliza la `s.pageName` propiedad para identificar de forma excl
 
 * Diseñe el componente de página para que incluya la variable de CQ que asigne a la `s.pageName` propiedad. (Consulte [Implementación del seguimiento de Adobe Analytics para componentes](/help/sites-developing/extending-analytics-components.md)personalizados).
 
-Para exponer datos de informes de Analytics en la consola Sitios y en Content Insight, AEM requiere el valor de la propiedad de cada página `s.pageName` . La API de Java de AEM Analytics define la `AnalyticsPageNameProvider` interfaz que implementa para proporcionar a la consola Sitios y a Content Insights el valor de la `s.pageName` propiedad. El `AnaltyicsPageNameProvider` servicio resuelve la propiedad pageName en el servidor para la generación de informes, ya que se puede establecer dinámicamente mediante JavaScript en el cliente para fines de seguimiento.
+Para exponer los datos de informes de Analytics en la consola Sitios y en Content Insight, AEM requiere el valor de la propiedad de cada página `s.pageName` . La API de Java de AEM Analytics define la `AnalyticsPageNameProvider` interfaz que implementa para proporcionar a la consola Sitios y a Content Insights el valor de la `s.pageName` propiedad. El `AnaltyicsPageNameProvider` servicio resuelve la propiedad pageName en el servidor para fines de sistema de informes, ya que se puede establecer dinámicamente mediante JavaScript en el cliente para fines de seguimiento.
 
 ## El servicio de proveedor de nombres de página de Analytics predeterminado {#the-default-analytics-page-name-provider-service}
 
@@ -49,14 +52,14 @@ Si no asigna una variable de CQ a la `s.pageName` propiedad en el marco, el valo
 >
 >El servicio DefaultPageNameProvider utiliza una clasificación de servicio de 100.
 
-## Mantenimiento de la continuidad en los informes de Analytics {#maintaining-continuity-in-analytics-reporting}
+## Mantenimiento de la continuidad en el Sistema de informes de Analytics {#maintaining-continuity-in-analytics-reporting}
 
-El mantenimiento de un historial completo de datos de análisis para una página requiere que el valor de la propiedad s.pageName que se utiliza para una página nunca cambie. Sin embargo, las propiedades de análisis que define el componente de página de base se pueden cambiar fácilmente. Por ejemplo, al mover una página se cambia el valor de `pagedata.path` y se rompe la continuidad del historial de informes:
+El mantenimiento de un historial completo de datos de análisis para una página requiere que el valor de la propiedad s.pageName que se utiliza para una página nunca cambie. Sin embargo, las propiedades de análisis que define el componente de página de base se pueden cambiar fácilmente. Por ejemplo, al mover una página se cambia el valor de `pagedata.path` y se rompe la continuidad del historial de sistemas de informes:
 
 * Los datos recopilados para la ruta anterior ya no se asocian a la página.
 * Si una página diferente utiliza la ruta que otra vez utilizó, la página diferente hereda los datos de esa ruta.
 
-Para garantizar la continuidad de los informes, el valor de `s.pageName` debe tener las características siguientes:
+Para garantizar la continuidad del sistema de informes, el valor de `s.pageName` debe tener las características siguientes:
 
 * Única.
 * Estable.

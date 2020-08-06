@@ -50,7 +50,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
 **Imágenes:** PayNow y ValueAddedServices
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
 1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
 1. En el asistente de **Canales** :
@@ -111,7 +111,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
 **Imágenes:** PayNowWeb y ValueAddedServicesWeb
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
 1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
 1. En el asistente de **Canales** :
@@ -171,7 +171,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Toque el componente de texto y seleccione ![Editar](assets/edit.png) (Editar).
    1. En la sección **Borde** , especifique **1,5 px** como Ancho **** del borde, seleccione **Sólido** como Estilo ******** **** del borde y especifique 46 pxcomo Radio del borde.
    1. Seleccione Rojo como color de fondo para el botón en la sección **Fondo** .
-   1. En el campo **Margen** de la sección **Dimensiones y posición** , toque el icono **Editar simultáneamente** y defina el margen **Derecho** como **450 px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
+   1. En el campo **Margen** de la sección **Dimension y posición** , toque el icono **Editar simultáneamente** y defina el margen **Derecho** como **450 px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
 
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
@@ -192,7 +192,7 @@ También puede crear una comunicación interactiva habilitando la sincronizació
 
 Ejecute los siguientes pasos para derivar el contenido del canal web mediante el canal de impresión:
 
-1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y Documentos]**.
+1. Inicie sesión en la instancia de creación de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 1. Toque **Crear** y seleccione Comunicación **** interactiva. Se muestra el asistente **Crear comunicación** interactiva.
 1. Especifique **create_first_ic** en el campo **Título** y **Nombre** . Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y toque **Siguiente**.
 1. En el asistente de **Canales** :

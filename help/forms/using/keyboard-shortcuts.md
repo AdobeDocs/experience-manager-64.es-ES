@@ -79,8 +79,8 @@ Este artículo lista los métodos abreviados de teclado que se pueden utilizar c
 | Contraer todos los acordeones en el árbol Objetos de formulario del navegador de contenido cuando están en foco | Ctrl+A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer | Comando+A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer |
 | Expandir el acordeón seleccionado en el árbol Objetos de formulario | Flecha derecha | Flecha derecha |
 | Contraer el acordeón seleccionado en el árbol Objetos de formulario | Flecha izquierda | Flecha izquierda |
-| Seleccione el siguiente elemento en el árbol Objetos de formulario | Flecha hacia abajo | Flecha hacia abajo |
-| Seleccione el elemento anterior en el árbol Objetos de formulario | Flecha hacia arriba | Flecha hacia arriba |
+| Seleccione el siguiente elemento en el árbol Objetos de Forms | Flecha hacia abajo | Flecha hacia abajo |
+| Seleccione el elemento anterior en el árbol Objetos de Forms | Flecha hacia arriba | Flecha hacia arriba |
 
 [1] Reemplaza Ctrl + Flecha derecha para Windows y Comando + Flecha derecha para Mac OS.\
 [2] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para Mac OS.
@@ -280,7 +280,7 @@ Esta sección lista varios teclados y accesos directos de accesibilidad que pued
   </tr>
   <tr>
    <td><p>Disminuir tamaño de fuente </p> </td> 
-   <td><p>Ctrl+Shift+&lt;</p> </td> 
+   <td><p>Ctrl + Mayús +&lt;</p> </td> 
    <td>Ctrl + Mayús +&lt;</td> 
   </tr>
  </tbody>

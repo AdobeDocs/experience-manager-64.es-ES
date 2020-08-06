@@ -1,8 +1,8 @@
 ---
 title: Inicio y parada de WebSphere Application Server
 seo-title: Inicio y parada de WebSphere Application Server
-description: Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar los productos de formularios AEM. Este documento describe cómo iniciar y detener el servidor de aplicaciones WebSphere.
-seo-description: Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar los productos de formularios AEM. Este documento describe cómo iniciar y detener el servidor de aplicaciones WebSphere.
+description: Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Este documento describe cómo realizar el inicio y detener el servidor de aplicaciones WebSphere.
+seo-description: Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Este documento describe cómo realizar el inicio y detener el servidor de aplicaciones WebSphere.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
 
 # Inicio y parada de WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
-Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar los productos de formularios AEM. Si no está seguro de si el servidor de aplicaciones se ha iniciado, puede ver primero el estado de WebSphere Application Server.
+Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Si no está seguro de si el servidor de aplicaciones se ha iniciado, primero puede vista el estado de WebSphere Application Server.
 
-## Ver el estado de WebSphere Application Server {#view-the-status-of-websphere-application-server}
+## Vista del estado de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
 1. Desde un símbolo del sistema, vaya al directorio raíz *[/bin de]* appserver.
 1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
@@ -27,7 +30,7 @@ Varios procedimientos requieren que detenga o inicie la instancia de WebSphere e
    * (Windows) `serverStatus.bat`*server_name *
    * (Linux, UNIX) ./ `serverStatus.sh`*server_name *
 
-## Iniciar servidor de aplicaciones WebSphere {#start-websphere-application-server}
+## Inicio WebSphere Application Server {#start-websphere-application-server}
 
 1. Desde un símbolo del sistema, vaya al directorio raíz *[/bin de]* appserver.
 1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:

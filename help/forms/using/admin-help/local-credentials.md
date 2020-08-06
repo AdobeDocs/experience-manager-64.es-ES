@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,18 @@ Los formularios AEM admiten credenciales RSA y DSA de hasta 4096 bits en formato
 
 Puede importar y exportar cualquier número de credenciales. Si desea reemplazar una credencial caducada con el mismo alias, elimine la credencial y, a continuación, importe la nueva credencial con el mismo alias.
 
-Para obtener información e instrucciones sobre las extensiones de Acrobat Reader DC, consulte [Configuración de credenciales para su uso con extensiones](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)de Acrobat Reader DC.
+Para obtener información e instrucciones relacionadas con las extensiones de Acrobat Reader DC, consulte [Configuración de credenciales para su uso con extensiones](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)de Acrobat Reader DC.
 
 ## Importación de credenciales {#import-a-credential}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales locales.
 1. Haga clic en Importar. En Tipo de almacén de confianza, seleccione una de estas opciones:
 
-   * **** Credencial de firma de documento: Una credencial utilizada para emitir una firma digital en un documento.
-   * **** Credenciales de extensiones de Acrobat Reader DC: Un certificado digital específico de las extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos PDF producidos.
-   * **** Predeterminado: Indica que es la credencial predeterminada que se utiliza con las extensiones de Acrobat Reader DC.
-   Para obtener más información sobre la obtención de credenciales, consulte [Preparación de la instalación de formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)AEM.
+   * **Credencial de firma de Documento:** Una credencial utilizada para emitir una firma digital en un documento.
+   * **Credenciales de extensiones de Acrobat Reader DC:** Un certificado digital específico de extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos PDF producidos.
+   * **Predeterminado:** Indica que es la credencial predeterminada que se utiliza con las extensiones de Acrobat Reader DC.
+
+   Para obtener información sobre la obtención de credenciales, consulte [Preparación de la instalación de AEM formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de las credenciales en las extensiones de Acrobat Reader DC y en el servicio Signature. Este alias también se utiliza para acceder a las credenciales mediante programación mediante el SDK de formularios AEM.
 

@@ -144,7 +144,7 @@ Para probar la secuencia de comandos de muestra del lado del servidor, necesitar
    1. Copie y pegue el código siguiente en `MessageEventHandler.java`
 
 1. Haga clic en **[!UICONTROL Guardar todo]**
-1. Vaya a todas las instrucciones de importación `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` y agréguelas tal como están escritas en el `MessageEventHandler.java` código.
+1. Vaya a todas las instrucciones de importación `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` y agréguelas como están escritas en el `MessageEventHandler.java` código.
 1. Crear el paquete
 1. Asegúrese de que el servicio `Day CQ Mail Service`OSGi esté configurado
 1. Inicie sesión como un usuario de demostración y envíe un correo electrónico a otro

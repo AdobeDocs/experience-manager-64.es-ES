@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 17%
 
 ---
 
 
 # Componentes, funciones y características esenciales {#component-function-and-feature-essentials}
 
-Las funciones de comunidades AEM requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el sitio [de la](overview.md#communitiessites) comunidad antes de poder publicar contenido. Por lo tanto, las plantillas [de sitio de](sites.md)comunidad, a partir de las cuales se [crea](sites-console.md)un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
+Las funciones de AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el sitio [de la](overview.md#communitiessites) comunidad antes de poder publicar contenido. Por lo tanto, las plantillas [de sitio de](sites.md)comunidad, a partir de las cuales se [crea](sites-console.md)un sitio de comunidad, están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsqueda, moderación y traducción.
 
 Un sitio de comunidad admitirá a los miembros que crean grupos de la comunidad cuando la función [de grupos de](functions.md#groups-function) comunidad se incluya en la plantilla de sitio de la comunidad seleccionada.
 
@@ -61,13 +64,13 @@ A continuación encontrará enlaces a información esencial para los componentes
 * [Puntuación y distintivos](configure-scoring.md)
 * [Buscar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Proveedor](srp-and-ugc.md) de recursos de almacenamiento `(SRP)`
+* [Proveedor de recursos de Almacenamiento](srp-and-ugc.md) `(SRP)`
 
 * [Etiquetado](tag.md)
 
 ## Javadocs {#javadocs}
 
-Los javadocs [en](../../help/sites-developing/reference-materials.md) línea reflejan las API disponibles en la versión 6.3 de AEM.\
+Los javadocs [](../../help/sites-developing/reference-materials.md) en línea reflejan las API disponibles en la versión AEM 6.3.\
 Las API de Communities están en `com.adobe.cq.social.*` paquetes.
 
 Para cada [paquete](deploy-communities.md#latestfeaturepack)de funciones, hay disponible un tarro de javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
@@ -78,7 +81,7 @@ Para cada [paquete](deploy-communities.md#latestfeaturepack)de funciones, hay di
 
    * [Personalizaciones del lado del cliente](client-customize.md)
    * [Personalizaciones del lado del servidor](server-customize.md)
-   * [Información general del proveedor de recursos de almacenamiento](srp.md)
+   * [Información general del proveedor de recursos de Almacenamiento](srp.md)
 
 * [Directrices de codificación](code-guide.md)
 * [Tutoriales](tutorials.md)

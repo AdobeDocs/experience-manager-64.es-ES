@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 21%
 
 ---
 
@@ -37,6 +40,7 @@ Para obtener toda la documentación sobre la creación, administración, uso y d
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
+
 >
 >
 Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
@@ -86,7 +90,7 @@ Por ejemplo, en la página Sitios se hace referencia al fragmento de contenido d
 
 Para obtener más información, consulte:
 
-* [Uso de fragmentos de contenido](/help/assets/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/assets/content-fragments.md)
 
    * Obtenga información sobre cómo crear, editar y administrar sus recursos de fragmento de contenido.
 

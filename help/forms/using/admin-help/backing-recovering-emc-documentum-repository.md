@@ -1,8 +1,8 @@
 ---
 title: Backup y recuperación del repositorio de Documentum de EMC
 seo-title: Backup y recuperación del repositorio de Documentum de EMC
-description: En este documento se describen las tareas necesarias para realizar copias de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
-seo-description: En este documento se describen las tareas necesarias para realizar copias de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
+description: Este documento describe las tareas necesarias para realizar backup y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
+seo-description: Este documento describe las tareas necesarias para realizar backup y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
 source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
 
 # Backup y recuperación del repositorio de Documentum de EMC {#backing-up-and-recovering-the-emc-documentum-repository}
 
-En esta sección se describen las tareas necesarias para realizar copias de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
+Esta sección describe las tareas necesarias para realizar backup y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
 
 >[!NOTE]
 >
->Estas instrucciones suponen que los formularios AEM con Connectors para ECM y Content Server de Documentum de EMC están instalados y configurados según sea necesario.
+>Estas instrucciones suponen que los formularios AEM con Connectors para ECM y Content Server de Documentum de EMC se instalan y configuran según sea necesario.
 
-Para los procesos de backup y restore, hay dos tareas principales:
+Para los procesos de backup y restore, existen dos tareas principales:
 
-* Copia de seguridad (o restauración) del entorno de formularios AEM.
+* Copias de seguridad (o restauración) del entorno de formularios AEM.
 * Backup (o restore) de Content Server de Documentum de EMC.
 
 >[!NOTE]
 >
->Realice un backup de los datos de los formularios de AEM antes de hacer backup del sistema Documentum de EMC y, posteriormente, restaure el sistema Documentum de EMC antes de restaurar el entorno de formularios de AEM.
+>Haga backup de sus datos de formularios AEM antes de hacer backup del sistema Documentum de EMC y, posteriormente, restaure el sistema Documentum de EMC antes de restaurar el entorno de formularios AEM.
 
 ## Requisitos de software {#software-requirements}
 
@@ -44,7 +47,7 @@ Necesita los siguientes módulos NetWorker de EMC:
 * Módulo NetWorker para el tipo de base de datos que utiliza Content Server
 * Módulo NetWorker para Documentum
 
-## Preparación de Document Content Server de EMC para backup y recuperación {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## Preparación de EMC Documento Content Server para backup y recuperación {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 Esta sección describe la instalación y configuración del software NetWorker de EMC en Content Server.
 
@@ -219,13 +222,13 @@ Esta sección describe la instalación y configuración del software NetWorker d
 **Creación de un dispositivo de copia de seguridad**
 
 1. Cree un nuevo directorio en el servidor de Documentum de EMC y comparta la carpeta dando derechos completos a todos los usuarios.
-1. Inicie NetWorker Administrator de EMC y haga clic en Administración de medios > Dispositivos.
+1. Inicio EMC NetWorker Administrator y haga clic en Administración de medios > Dispositivos.
 1. Haga clic con el botón derecho en Dispositivos y seleccione Crear.
 1. Introduzca los valores siguientes y haga clic en Aceptar:
 
-   **** Nombre: Ruta completa del directorio compartido
+   **Nombre:** Ruta completa del directorio compartido
 
-   **** Tipo de medio: `File`
+   **Tipo de medio:** `File`
 
 1. Haga clic con el botón derecho en el nuevo dispositivo y seleccione Operaciones.
 1. Haga clic en Etiqueta, escriba un nombre, haga clic en Aceptar y, a continuación, en Montar.
@@ -234,11 +237,11 @@ Se agrega un dispositivo al que se guardarán los archivos de copia de seguridad
 
 ## Haga backup de Content Server de Documentum de EMC {#back-up-the-emc-documentum-content-server}
 
-Realice las siguientes tareas después de completar una copia de seguridad completa de los datos de formularios de AEM. (Consulte [Copia de seguridad de datos](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)de formularios de AEM).
+Realice las siguientes tareas después de completar una copia de seguridad completa de los datos de los formularios AEM. (Consulte [Copia de seguridad de los datos](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)de formularios AEM).
 
 >[!NOTE]
 >
->Las secuencias de comandos requieren la ruta completa al archivo nsrnmd_win.cfg que creó al [preparar EMC Document Content Server para backup y recuperación](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Las secuencias de comandos requieren la ruta completa al archivo nsrnmd_win.cfg que creó al [preparar EMC Documento Content Server para backup y recuperación](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Abra un símbolo del sistema y cambie a *[NetWorker_root]*\Legato\nsr\bin.
 1. Ejecute el siguiente comando:
@@ -249,14 +252,14 @@ Realice las siguientes tareas después de completar una copia de seguridad compl
 
 ## Restore de Content Server de Documentum de EMC {#restore-the-emc-documentum-content-server}
 
-Realice las siguientes tareas antes de restaurar los datos de los formularios de AEM. (Consulte [Recuperación de datos](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)de formularios de AEM).
+Realice las siguientes tareas antes de restaurar los datos de los formularios AEM. (Consulte [Recuperación de los datos](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)de formularios AEM).
 
 >[!NOTE]
 >
->Las secuencias de comandos requieren la ruta completa al archivo nsrnmd_win.cfg que creó al [preparar EMC Document Content Server para backup y recuperación](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Las secuencias de comandos requieren la ruta completa al archivo nsrnmd_win.cfg que creó al [preparar EMC Documento Content Server para backup y recuperación](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Detenga el servicio Docbase que está restaurando.
-1. Inicie la utilidad NetWorker User para su módulo de base de datos (por ejemplo, *NetWorker User for SQL Server*).
+1. Inicio de la utilidad NetWorker User para su módulo de base de datos (por ejemplo, *NetWorker User for SQL Server*).
 1. Haga clic en la herramienta Restaurar y, a continuación, seleccione Normal.
 1. En la parte izquierda de la pantalla, seleccione la base de datos de la Docbase y haga clic en el botón Inicio de la barra de herramientas.
 1. Cuando se restaura la base de datos, reinicie el servicio Docbase.

@@ -1,8 +1,8 @@
 ---
 title: Configuración del Conector para IBM FileNet
 seo-title: Configuración del Conector para IBM FileNet
-description: Obtenga información sobre cómo configurar el conector para IBM FileNet para permitir la comunicación entre los formularios AEM y IBM FileNet.
-seo-description: Obtenga información sobre cómo configurar el conector para IBM FileNet para permitir la comunicación entre los formularios AEM y IBM FileNet.
+description: Obtenga información sobre cómo configurar Connector para IBM FileNet para habilitar la comunicación entre AEM formularios y IBM FileNet.
+seo-description: Obtenga información sobre cómo configurar Connector para IBM FileNet para habilitar la comunicación entre AEM formularios y IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # Configuración del Conector para IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector for IBM FileNet permite la comunicación entre los formularios AEM y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia](https://www.adobe.com/go/learn_aemforms_services_63)de servicios.
+Connector for IBM FileNet permite la comunicación entre AEM formularios y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia](https://www.adobe.com/go/learn_aemforms_services_63)de servicios.
 
 >[!NOTE]
 >
->En versiones anteriores, los recursos se podían almacenar en un repositorio de ECM. En esta versión, los recursos se almacenan en el repositorio nativo de formularios de AEM y los servicios del proveedor de repositorios se han quedado obsoletos. La migración de recursos de un repositorio de ECM al repositorio de formularios de AEM se realiza al realizar una actualización a los formularios de AEM. Para obtener más información, consulte la guía de actualización de formularios de AEM para su servidor de aplicaciones.
+>En versiones anteriores, los recursos se podían almacenar en un repositorio de ECM. En esta versión, los recursos se almacenan en el repositorio nativo de formularios de AEM y los servicios del proveedor de repositorios se han quedado obsoletos. La migración de recursos de un repositorio de ECM al repositorio de formularios AEM se realiza cuando se realiza una actualización a AEM formularios. Para obtener más información, consulte la guía de actualización de formularios AEM para su servidor de aplicaciones.
 
 ## Configurar la conexión al motor de contenido {#configure-the-connection-to-the-content-engine}
 
@@ -51,7 +51,7 @@ IBM FileNet P8 Content Engine proporciona servicios de software para administrar
    * Si seleccionó Borrar como el esquema de protección de credenciales, se ignorarán esta palabra clave y su valor.
    * Si seleccionó Simétrico como el esquema de protección de credenciales, la ruta que introduzca señalará a la ubicación de un archivo de codificación en el servidor de formularios que contenga las claves criptográficas que se utilizarán.
 
-1. En el cuadro Almacén de objetos predeterminado, introduzca el conector del almacén de objetos al que se conectan los formularios AEM de forma predeterminada.
+1. En el cuadro Almacén de objetos predeterminado, introduzca el conector del almacén de objetos al que AEM formularios se conectan de forma predeterminada.
 1. En el cuadro Nombre de usuario, introduzca el nombre de usuario de un usuario que tenga derechos de acceso al almacén de objetos predeterminado que especificó en el paso anterior.
 1. En el cuadro Contraseña, introduzca la contraseña del usuario y haga clic en Guardar.
 

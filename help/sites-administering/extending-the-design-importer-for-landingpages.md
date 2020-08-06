@@ -1,8 +1,8 @@
 ---
-title: Ampliación y configuración del Importador de diseños para páginas de aterrizaje
-seo-title: Ampliación y configuración del Importador de diseños para páginas de aterrizaje
-description: Descubra cómo configurar el Importador de diseños para las páginas de aterrizaje.
-seo-description: Descubra cómo configurar el Importador de diseños para las páginas de aterrizaje.
+title: Ampliación y configuración del Importador de diseños para Páginas de aterrizaje
+seo-title: Ampliación y configuración del Importador de diseños para Páginas de aterrizaje
+description: Obtenga información sobre cómo configurar el Importador de diseños para páginas de aterrizaje.
+seo-description: Obtenga información sobre cómo configurar el Importador de diseños para páginas de aterrizaje.
 uuid: b2bfe831-bfaf-43f3-babc-687bf229dd44
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 63%
 
 ---
 
 
-# Ampliación y configuración del Importador de diseños para páginas de aterrizaje{#extending-and-configuring-the-design-importer-for-landing-pages}
+# Ampliación y configuración del Importador de diseños para Páginas de aterrizaje{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-Esta sección describe cómo configurar y, si se desea, ampliar el importador de diseños para las páginas de aterrizaje. El trabajo con las páginas de aterrizaje después de la importación se trata en las páginas [de aterrizaje.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+Esta sección describe cómo configurar y, si se desea, ampliar el importador de diseños para las páginas de aterrizaje. El trabajo con Páginas de aterrizaje después de la importación está cubierto en [Páginas de aterrizaje.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
 **Cómo hacer que el importador de diseños extraiga su componente personalizado**
 
@@ -39,11 +42,11 @@ Estos son los pasos lógicos para que el importador de diseños reconozca su com
 
 ## Preparar el HTML para su importación {#preparing-the-html-for-import}
 
-Después de crear una página de importador, puede importar la página de aterrizaje HTML completa. Para importar su página de aterrizaje HTML, primero debe comprimir su contenido en un paquete de diseño. El paquete de diseño contiene la página de aterrizaje HTML y los recursos a los que hace referencia (imágenes, css, iconos, scripts, etc.).
+Después de crear una página de importación, puede importar la página de aterrizaje HTML completa. Para importar su página de aterrizaje HTML, primero debe comprimir su contenido en un paquete de diseño. El paquete de diseño contiene la página de aterrizaje HTML y los recursos a los que hace referencia (imágenes, css, iconos, scripts, etc.).
 
 La hoja de trucos siguiente le muestra cómo preparar el HTML para la importación:
 
-Hoja de consejos de la página de aterrizaje
+Hoja de Página de aterrizaje
 
 [Obtener archivo](assets/cheatsheet.zip)
 
@@ -55,7 +58,7 @@ Hoja de consejos de la página de aterrizaje
 
 A continuación se muestra un ejemplo de diseño de archivo comprimido:
 
-* /index.html -> archivo HTML de la página de aterrizaje
+* /index.html -> Archivo HTML de página de aterrizaje
 * /css -> para agregar a la clientlib CSS
 * /img -> todas las imágenes y recursos
 * /js -> para agregar a la clientlib JS
@@ -98,13 +101,13 @@ Es posible que, antes de importar la página de aterrizaje, desee convertir cier
 
 Para ello, añada el `data-cq-component` al componente apropiado del archivo HTML que desee importar.
 
-En la sección siguiente se describe cómo editar su archivo HTML para poder convertir ciertas partes de sus páginas de aterrizaje en diferentes componentes de AEM editables. Los componentes se describen en detalle en los componentes [de las páginas de](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)aterrizaje.
+En la sección siguiente se describe cómo editar su archivo HTML para poder convertir ciertas partes de sus páginas de aterrizaje en diferentes componentes de AEM editables. Los componentes se describen en detalle en [Páginas de aterrizaje Componentes](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
 >El código HTML que se utiliza para convertir partes de la página de aterrizaje en componentes de AEM tiene una forma larga y una declaración abreviada de tag. Ambas se describen para cada componente.
 
-### Restricciones  {#limitations}
+### Restricciones     {#limitations}
 
 Antes de importar, tenga en cuenta las restricciones siguientes:
 
@@ -246,7 +249,7 @@ Propiedades admitidas
 * URL de destino, admite URL de AEM y de terceros
 * Opciones de procesamiento de página (misma ventana, nueva ventana, etc.)
 
-La tag HTML debe incluir el componente de pulsaciones en el archivo comprimido importado. Aquí href se asigna a la dirección URL de destino, &quot;Ver detalles del producto&quot; se asigna a la etiqueta, etc.
+La tag HTML debe incluir el componente de pulsaciones en el archivo comprimido importado. Aquí href se asigna a la dirección URL del destinatario, &quot;Detalles del producto de la Vista&quot; se asigna a la etiqueta, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -279,7 +282,7 @@ Propiedades admitidas
 * URL de destino, admite URL de AEM y de terceros
 * Opciones de procesamiento de página (misma ventana, nueva ventana, etc.)
 
-Tag HTML para incluir un componente de vínculo gráfico en el archivo comprimido importado. Aquí href se asignará a la dirección URL de destino, img src será la imagen de procesamiento, &quot;title&quot; se tomará como texto al pasar el ratón, etc.
+Tag HTML para incluir un componente de vínculo gráfico en el archivo comprimido importado. Aquí href se asignará a URL de destinatario, img src será la imagen de procesamiento, &quot;title&quot; se tomará como texto al pasar el ratón, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -321,7 +324,7 @@ Los formularios de posibles clientes se utilizan para recopilar información de 
 * Asigne campos de formulario de posibles clientes utilizando nombres predefinidos específicos del formulario de posibles clientes de llamada a acción, por ejemplo: firstName para el nombre en el formulario de posibles clientes, etc.
 * Los campos que no se asignen a un formulario de posibles clientes se asignarán a componentes de cq:form: texto, botón de opción, casilla de verificación, menú desplegable, oculto, contraseña.
 * El usuario puede especificar el título mediante la tag “label” y escoger el estilo con el atributo de estilo “class” (solo disponible para los componentes de Llamada a acción: formulario de posibles clientes).
-* La página de agradecimiento y la lista de suscripciones se pueden proporcionar como parámetros ocultos del formulario (presentes en index.htm) o se pueden agregar o editar desde la barra de edición de &quot;Inicio del formulario de posibles clientes&quot;
+* La página de agradecimiento y la lista de suscripción se pueden proporcionar como parámetros ocultos del formulario (presentes en index.htm) o se pueden agregar o editar desde la barra de edición de &quot;Inicio del formulario de posibles clientes&quot;
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/es/user/register/thank_you&quot;/>
 
@@ -447,7 +450,7 @@ Supongamos que tiene un componente al que desea hacer referencia en el HTML medi
 
 La ruta en data-cq-component debería ser el resourceType del componente.
 
-### Prácticas recomendadas  {#best-practices}
+### Prácticas recomendadas   {#best-practices}
 
 No se recomienda utilizar selectores de CSS similares a los siguientes con elementos marcados para la conversión de componentes durante la importación.
 
@@ -493,12 +496,12 @@ La tabla que aparece a continuación describe brevemente las propiedades:
   <tr> 
    <td>Generador de páginas de aterrizaje</td> 
    <td>Patrón de archivos</td> 
-   <td>El Generador de páginas de aterrizaje puede configurarse para gestionar archivos HTML que coincidan con una expresión regular, tal como se define en el patrón de archivos.</td> 
+   <td>El Generador de Páginas de aterrizaje puede configurarse para gestionar archivos HTML que coincidan con una expresión normal, tal como se define en el patrón de archivos.</td> 
   </tr> 
   <tr> 
    <td>Generador de páginas de aterrizaje móviles</td> 
    <td>Patrón de archivos</td> 
-   <td>El Generador de páginas de aterrizaje puede configurarse para gestionar archivos HTML que coincidan con una expresión regular, tal como se define en el patrón de archivos.</td> 
+   <td>El Generador de Páginas de aterrizaje puede configurarse para gestionar archivos HTML que coincidan con una expresión normal, tal como se define en el patrón de archivos.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -548,7 +551,7 @@ En caso de que se produzcan errores (por ejemplo, el paquete importado no es un 
 
 ### Advertencias que se muestran tras la importación {#warnings-displayed-after-import}
 
-En caso de que aparezca alguna advertencia (p. ej., HTML hace referencia a imágenes que no existen dentro del paquete), el importador de diseños importará el zip pero, al mismo tiempo, mostrará una lista de problemas/advertencias en el panel de resultados. Al hacer clic en el vínculo de problemas, se mostrará una lista de advertencias que señalarán cualquier problema dentro del paquete de diseño. Los siguientes son casos en los que el importador de diseños captura y muestra advertencias:
+En caso de que aparezca alguna advertencia (p. ej., HTML se refiere a imágenes que no existen dentro del paquete), el importador de diseños importará el zip pero, al mismo tiempo, mostrará una lista de problemas/advertencias en el panel de resultados. Al hacer clic en el vínculo de problemas, se mostrará una lista de advertencias que señalan cualquier problema dentro del paquete de diseño. Los siguientes son casos en los que el importador de diseños captura y muestra advertencias:
 
 * HTML hace referencia a imágenes que no existen dentro del paquete.
 * HTML hace referencia a secuencias de comandos que no existen en el paquete.
@@ -556,7 +559,7 @@ En caso de que aparezca alguna advertencia (p. ej., HTML hace referencia a imág
 
 ### Where are the files of the ZIP file being stored in AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Tras importar la página de aterrizaje, los archivos (imágenes, css, js, etc.) dentro del paquete de diseño se almacenan en la siguiente ubicación de AEM:
+Tras importar la página de aterrizaje, los archivos (imágenes, css, js, etc.) dentro del paquete de diseño se almacenan en la siguiente ubicación en AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 

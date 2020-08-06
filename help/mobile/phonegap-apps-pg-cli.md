@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -41,9 +44,9 @@ Para Android: Para desarrollarse para iPhone y iPad, necesita el Android Stuido 
 
 ## Descargar la fuente {#download-the-source}
 
-Una vez que haya superado con éxito el entorno de desarrollo, descargue el origen del icono de compilación de aplicaciones de AEM:
+Una vez que haya superado con éxito el entorno de desarrollo, descargue la fuente desde el icono de compilación de aplicaciones de AEM:
 
-* Haga clic en el elemento desplegable PhoneGap Build.
+* Haga clic en el escaparate de mosaico del PhoneGap Build.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -91,9 +94,10 @@ phonegap run ios
 >1. Navegar a helloWorld (cd helloWorld)
 >1. Ejecute &#39;phonegap run android (o reemplace android con ios como se ha indicado anteriormente).
 >1. El emulador abrirá la ejecución de la aplicación PhoneGap recién creada, diciendo &quot;Preparado para el dispositivo&quot; si el puente de JavaScript a nativo está operativo.
+
 >
 >
-Esto comprobará que su entorno de desarrollo de la CLI de PhoneGap está activo y funcionando correctamente.
+Esto comprobará que el entorno de desarrollo de la CLI de PhoneGap está activo y funcionando correctamente.
 
 ## Depurar JavaScript con la depuración de Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 

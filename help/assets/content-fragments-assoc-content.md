@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 El contenido asociado proporciona la conexión para que los recursos (es decir, los) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
-## Adición de contenido asociado {#adding-associated-content}
+## Añadir contenido asociado {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ Para crear la asociación, primero debe [agregar los recursos de medios a una co
 Una vez asociada una colección, puede:
 
 * **Elimine** la asociación.
-* **Agregar recursos** a la colección.
+* **Añadir recursos** a la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
 

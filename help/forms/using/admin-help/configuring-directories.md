@@ -137,7 +137,7 @@ Aunque el DN base es una configuración obligatoria en la consola de administrac
 
 **Iniciales:** Atributo de Esquema para las iniciales del usuario
 
-**Calendario comercial:** Le permite asignar un calendario comercial a un usuario, en función del valor de esta configuración (la clave del calendario comercial). Los calendarios comerciales definen los días laborables y no laborables. Los formularios AEM pueden utilizar calendarios comerciales para calcular las fechas y horas futuras de eventos como recordatorios, plazos y escalaciones. La manera en que asigne las claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
+**Calendario comercial:** Permite asignar un calendario comercial a un usuario, según el valor de esta configuración (la clave del calendario comercial). Los calendarios comerciales definen los días laborables y no laborables. AEM formularios pueden utilizar calendarios comerciales para calcular fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La manera en que asigne las claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
 
 Si utiliza un dominio de empresa, puede asignar la configuración del calendario de negocios a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo de *país* y desea asignar calendarios comerciales en función del país en el que se encuentra el usuario, especifique el nombre del campo de *país* como valor para la configuración del calendario comercial. A continuación, puede asignar las claves de calendario empresarial (los valores definidos para el campo de *país* en el directorio LDAP) a los calendarios comerciales en el flujo de trabajo de formularios.
 
@@ -159,7 +159,7 @@ La cantidad de espacio que se utiliza para mostrar el nombre de la clave de cale
 
 **Huso horario:** Atributo de Esquema que contiene el huso horario donde se encuentra el usuario. El valor es una cadena como Ciudad/País.
 
-**Habilitar el control de Vista de Lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos por lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos usuarios, al habilitar VLV se crea un índice que la Administración de usuarios puede utilizar al buscar usuarios. Esta función resulta útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede activar VLV para grupos. Si selecciona Activar control de Vista de Lista virtual (VLV), especifique un nombre en el cuadro Campo de ordenación.
+**Habilitar el control de Vista de Lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos usuarios, al habilitar VLV se crea un índice que la Administración de usuarios puede utilizar al buscar usuarios. Esta función resulta útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede activar VLV para grupos. Si selecciona Activar control de Vista de Lista virtual (VLV), especifique un nombre en el cuadro Campo de ordenación.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Si DN se especifica como identificador único, no es necesario configurar el ide
 
 **Modificar marca de hora:** Para habilitar la sincronización de directorios delta, establezca este valor para modificar TimeStamp. (Consulte Activación de la sincronización de directorios delta).
 
-**Habilitar el control de Vista de Lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos por lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos grupos, al habilitar VLV se crea un índice que la Administración de usuarios puede utilizar al buscar grupos. Esta función resulta útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para los usuarios. Si selecciona Activar control de Vista de Lista virtual (VLV), especifique un nombre de campo de ordenación.
+**Habilitar el control de Vista de Lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos grupos, al habilitar VLV se crea un índice que la Administración de usuarios puede utilizar al buscar grupos. Esta función resulta útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para los usuarios. Si selecciona Activar control de Vista de Lista virtual (VLV), especifique un nombre de campo de ordenación.
 
 >[!NOTE]
 >
@@ -219,9 +219,9 @@ Si DN se especifica como identificador único, no es necesario configurar el ide
 
 ## Configurar la administración de usuarios para utilizar la Vista de Listas virtuales (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
-La sincronización de directorios es un requisito importante para la Administración de usuarios. Los usuarios y grupos se sincronizan desde un directorio de empresa a la base de datos de formularios de AEM para asignar funciones y permisos. El número de usuarios varía de 100 a 100000 o más según los requisitos, y supone un desafío de ingeniería para sincronizar los datos de manera eficiente.
+La sincronización de directorios es un requisito importante para la Administración de usuarios. Los usuarios y grupos se sincronizan desde un directorio de empresa a la base de datos de formularios AEM para asignar funciones y permisos. El número de usuarios varía de 100 a 100000 o más según los requisitos, y supone un desafío de ingeniería para sincronizar los datos de manera eficiente.
 
-El protocolo LDAP proporciona un mecanismo para la consulta de grandes conjuntos de datos de forma paginada mediante controles de solicitud. Al utilizar Microsoft Active Directory, la sincronización de bases de datos de formularios LDAP con AEM utiliza PagedResultsControl para recuperar datos en lotes de un tamaño concreto. Sun ONE Directory Server no admite este control. Para completar una consulta paginada con el servidor de directorio Sun ONE, utilice el control de Vista de Lista virtual (VLV). Este control implica tanto la configuración del lado del servidor del directorio como la implementación del lado del cliente.
+El protocolo LDAP proporciona un mecanismo para la consulta de grandes conjuntos de datos de forma paginada mediante controles de solicitud. Cuando se utiliza Microsoft Active Directory, LDAP para AEM sincronización de bases de datos de formularios utiliza PagedResultsControl para recuperar datos en lotes de un tamaño concreto. Sun ONE Directory Server no admite este control. Para completar una consulta paginada con el servidor de directorio Sun ONE, utilice el control de Vista de Lista virtual (VLV). Este control implica tanto la configuración del lado del servidor del directorio como la implementación del lado del cliente.
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ Esta es una entrada LDIF de script de muestra para VLV para usuarios:
 
 **Creación de entradas de objeto mediante una secuencia de comandos**
 
-1. La secuencia de comandos de ejemplo tiene una entrada LDAP denominada `lcuser`. Esta entrada es para la configuración relacionada con VLV para la sincronización de usuarios en formularios AEM. Modifique las siguientes propiedades según corresponda:
+1. La secuencia de comandos de ejemplo tiene una entrada LDAP denominada `lcuser`. Esta entrada es para la configuración relacionada con VLV para la sincronización de usuarios en AEM formularios. Modifique las siguientes propiedades según corresponda:
 
    **Nombre de entrada:** El nombre de entrada de este ejemplo es `lcuser`. Si `lcuser` se cambia, debe cambiarse en todas las áreas de la secuencia de comandos de ejemplo.
 

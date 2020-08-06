@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ El tiempo de espera de sesión de un usuario se puede configurar en la Consola d
 
 Para establecer el tiempo de espera, inicie sesión en `https://[server]:[port]/adminui`, vaya a **Configuración > Administración de usuarios > Configuración > Configurar atributos** avanzados del sistema y realice los ajustes que desee.
 
-En el espacio de trabajo de AEM Forms, el tiempo de espera se gestiona de la siguiente manera:
+En el espacio de trabajo de AEM Forms, el tiempo de espera se gestiona como:
 
 * La duración de la sesión de un usuario está disponible como respuesta a una `initialize` llamada que inicializa la sesión del usuario.
 * Un cuadro de diálogo emergente notifica al usuario que la sesión está a punto de caducar, 15 segundos antes de que caduque la sesión.

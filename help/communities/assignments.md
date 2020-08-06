@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Los componentes Asignaciones de habilitación y Catálogo [de](catalog.md) habil
 
 El componente Asignaciones de habilitación permite que el miembro de la comunidad que ha iniciado sesión (alumno) acceda a los recursos [de](resources.md)habilitación asignados.
 
-En el tutorial [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](enablement-published-site.md) publicado.
+En el tutorial [Introducción a AEM Communities para la habilitación](getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](enablement-published-site.md) publicado.
 
 ## Información adicional {#additional-information}
 

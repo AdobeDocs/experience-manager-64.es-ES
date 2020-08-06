@@ -1,8 +1,8 @@
 ---
 title: Visión general del servicio de salida
 seo-title: Visión general del servicio de salida
-description: Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento con varios formatos.
-seo-description: Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento con varios formatos.
+description: Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos.
+seo-description: Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos.
 uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 
 # Visión general del servicio de salida {#overview-of-output-service}
 
-Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento con varios formatos. El flujo de salida se puede enviar a una impresora de red, una impresora local o un archivo de disco
+Output permite combinar datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos. El flujo de salida se puede enviar a una impresora de red, una impresora local o un archivo de disco
 
-Puede utilizar la página Salida en la consola de administración para administrar el servicio Output. La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó mediante la API de formularios de AEM. La configuración que se realiza mediante el SDK de formularios AEM anula la configuración establecida mediante la consola de administración.
+Puede utilizar la página Salida en la consola de administración para administrar el servicio Output. La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó mediante la API de formularios AEM. La configuración que se realiza mediante el SDK de formularios AEM anula la configuración establecida mediante la consola de administración.
 
 Para obtener información adicional sobre el servicio Output, consulte [Referencia](https://www.adobe.com/go/learn_aemforms_services_61)de servicios.
 

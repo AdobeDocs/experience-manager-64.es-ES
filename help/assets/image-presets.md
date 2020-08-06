@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 11%
 
 ---
 
@@ -25,9 +28,9 @@ En esta sección se describe cómo utilizar los ajustes preestablecidos de image
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de la publicación para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
 
-Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualice.
+Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualización.
 
 **Para aplicar ajustes preestablecidos** de imagen de Dynamic Media:
 
@@ -45,8 +48,9 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
 1. Realice una de las acciones siguientes:
 
-   * Seleccione una representación dinámica para obtener una vista previa del ajuste preestablecido de imagen.
+   * Seleccione una representación dinámica para previsualización del ajuste preestablecido de imagen.
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]**, si corresponde) no están disponibles.

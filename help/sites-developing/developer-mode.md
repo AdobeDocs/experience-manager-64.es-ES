@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ Esto ayuda a los desarrolladores a:
 >
 >* en una instancia de autor mediante nosamplecontent run-mode
 >* una instancia de publicación
+
 >
 >
 Debe deshabilitarse de nuevo después de su uso.
@@ -55,8 +59,8 @@ Debe deshabilitarse de nuevo después de su uso.
 >
 >Consulte:
 >
->* Artículo de la Base de conocimiento, [Resolución de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de la IU táctil de AEM, para obtener más sugerencias y herramientas.
->* Sesión de AEM Gems sobre el modo [de desarrollador de](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)AEM 6.0.
+>* Artículo de la Base de conocimiento, [Resolución de problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de la IU táctil, para obtener más sugerencias y herramientas.
+>* AEM sesión de Gems sobre [AEM modo](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)de desarrollador de 6.0.
 
 
 ## Abrir modo de desarrollador {#opening-developer-mode}
@@ -82,7 +86,7 @@ Muestra un árbol de componentes que:
 * Permite expandir el árbol y seleccionar componentes específicos dentro del árbol. La selección proporciona acceso a los detalles del componente; como:
 
    * Ruta del repositorio
-   * Vínculos a scripts (a los que se accede en CRXDE Lite)
+   * Vínculos a secuencias de comandos (a los que se accede en CRXDE Lite)
 
 * Los componentes seleccionados (en el flujo de contenido, indicados con un borde azul) se resaltarán en el árbol de contenido (y viceversa).
 
@@ -100,6 +104,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
    * todas las secuencias de comandos de componentes utilizadas para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Editar secuencia de comandos**: un vínculo que:
@@ -110,6 +115,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
    * La jerarquía dentro del componente seleccionado.
    * Tiempos de procesamiento para el componente seleccionado de forma aislada, componentes individuales anidados en él y el total combinado.
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
@@ -122,7 +128,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 Es de esperar que la ficha **Errores** siempre esté vacía (como se muestra arriba), pero cuando se produzcan problemas se muestran los siguientes detalles para cada componente:
 
-* Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código apropiado dentro de CRXDE Lite.
+* Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código apropiado dentro del CRXDE Lite.
 * Una advertencia si el componente abre una sesión de administración.
 
 Por ejemplo, en una situación en la que se llama a un método no definido, el error resultante se mostrará en la ficha **Errores** :

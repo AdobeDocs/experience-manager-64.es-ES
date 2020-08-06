@@ -11,15 +11,18 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
 
 # Personalización de gestos {#gesture-customization}
 
-Puede personalizar los gestos de la aplicación AEM Forms para proporcionar un método distinto de interacción con la aplicación. Por ejemplo, puede agregar nuevos gestos para abrir o cerrar una tarea o un punto de inicio.
+Puede personalizar los gestos de la aplicación de AEM Forms para proporcionar un método distinto de interacción con la aplicación. Por ejemplo, puede agregar nuevos gestos para abrir o cerrar una tarea o un punto de inicio.
 
-## Personalización de gestos en la aplicación de AEM Forms {#to-customize-gestures-in-aem-forms-app}
+## Para personalizar gestos en la aplicación de AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
 En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o punto de inicio, mientras que el barrido derecho no hace nada. En el ejemplo siguiente se proporcionan pasos para abrir una nueva tarea o un punto de inicio al realizar los gestos de barrido derecho en la aplicación de AEM Forms.
 
@@ -34,6 +37,7 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o punt
    * En Xcode, vaya a la carpeta **Captura > www > wsmobile > js > tiempo de ejecución > vistas** .
    * En Eclipse, vaya a la carpeta **assets > www > wsmobile > js > tiempo de ejecución > vistas** .
    * En Visual Studio, vaya a la carpeta **MWSWinwindows > www > wsmobile > js > tiempo de ejecución > vistas** .
+
    >[!NOTE]
    >
    >El archivo tarea.js contiene la vista de red troncal asociada a cada tarea o punto de inicio que se enumera en las listas de tarea o punto de inicio.

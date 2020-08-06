@@ -1,8 +1,8 @@
 ---
-title: Agregar Clientlibs
-seo-title: Agregar Clientlibs
-description: Agregar una ClientLibraryFolder
-seo-description: Agregar una ClientLibraryFolder
+title: Añadir Clientlibs
+seo-title: Añadir Clientlibs
+description: Añadir una ClientLibraryFolder
+seo-description: Añadir una ClientLibraryFolder
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 3%
 
 ---
 
 
-# Agregar Clientlibs {#add-clientlibs}
+# Añadir Clientlibs {#add-clientlibs}
 
-## Agregar una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Añadir una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Cree una ClientLibraryFolder con el nombre `clientlibs`que contendrá el JS y CSS utilizados para procesar las páginas del sitio.
 
@@ -42,7 +45,7 @@ En la ficha **[!UICONTROL Propiedades]** del nuevo `clientlibs` nodo, introduzca
 * Haga clic en **[!UICONTROL Agregar]**
 * Haga clic en **[!UICONTROL Guardar todo]**
 
-Nota: anteponer el valor de las categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Agregue marcadores `js.txt` de posición y `css.txt` archivos. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
+Nota: anteponer el valor de categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Añada los marcadores `js.txt` de posición y `css.txt` los archivos. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
 
 
 1. Haga clic con el botón derecho en **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -79,7 +82,7 @@ En la ficha **[!UICONTROL Propiedades]** del `clientlibs` nodo, introduzca la pr
 
 **Tenga en cuenta** que este puede ser o no el método deseado para usar en un sitio de producción, ya que existen consideraciones de conveniencia en comparación con el tamaño y la velocidad de los clientes descargados para cada página.
 
-Si solo utiliza una función en una página, puede incluir la clientlib completa de esa característica directamente en la página, por ejemplo: &lt;% ui:includeClientLib categories=cq.social.hbs.forum&quot; %>
+Si solo utiliza una función en una página, puede incluir la clientlib completa de esa característica directamente en la página, por ejemplo: &lt;% ui:includeClientLib categorías=cq.social.hbs.forum&quot; %>
 
 En este caso, los incluimos a todos, por lo que preferiríamos a los clientes más básicos de SCF, que son los clientes autores:
 
@@ -91,7 +94,7 @@ En este caso, los incluimos a todos, por lo que preferiríamos a los clientes m�
 
    *&lt;enter> abrirá un cuadro de diálogo*
 
-   *Haga clic **[+]**después de cada entrada para agregar las siguientes categorías de clientlib:*
+   *Haga clic **[+]**después de cada entrada para agregar las siguientes categorías clientlib:*
 
    * **`cq.ckeditor`**
    * **`cq.social.author.hbs.comments`**
@@ -111,7 +114,7 @@ Así es como `/etc/designs/an-scf-sandbox/clientlibs` debería aparecer en el re
 
 ## Incluir Clientlibs en la plantilla PlayPage {#include-clientlibs-in-playpage-template}
 
-Sin incluir la categoría `apps.an-scf-sandbox` ClientLibraryFolder en la página, los componentes SCF no funcionarán ni se les aplicará estilo, ya que no estarán disponibles los JavaScript ni los estilos necesarios.
+Sin incluir la categoría `apps.an-scf-sandbox` ClientLibraryFolder en la página, los componentes SCF no funcionarán ni se les aplicará estilo, ya que no estarán disponibles los JavaScript y los estilos necesarios.
 
 Por ejemplo, sin incluir clientlibs, el componente de comentarios de SCF no tiene estilo:
 
@@ -129,7 +132,7 @@ La instrucción include pertenece al <head><meta http-equiv="Content-Type" conte
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Copiar]** (o seleccione Copiar en la barra de herramientas)
 1. Seleccione **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]** (o seleccione Pegar en la barra de herramientas)
-1. Haga doble clic en **`headlibs.jsp`** para abrirlo
+1. Haga clic en el Doble **`headlibs.jsp`** para abrirlo
 1. Anexe la línea siguiente al final del archivo
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
@@ -155,14 +158,14 @@ Cargue el sitio web en el navegador y vea si el fondo no es azul.
 
 ## Guardar su trabajo hasta ahora {#saving-your-work-so-far}
 
-En este punto, existe un simulador de pruebas minimalista y puede que valga la pena guardarlo como paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, puede desactivar el servidor, cambiar el nombre o eliminar la carpeta crx-quickstart/, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
+En este punto, existe un simulador de pruebas minimalista y puede que valga la pena guardarlo como paquete para que, mientras se reproduce, si el repositorio se daña y desea pasar el inicio, pueda desactivar el servidor, cambiar el nombre o eliminar la carpeta crx-quickstart/, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
 
-Este paquete existe en el tutorial [Crear una página](create-sample-page.md) de muestra para aquellos que no pueden esperar para simplemente saltar y empezar a reproducir...
+Este paquete existe en el tutorial [Crear una página](create-sample-page.md) de muestra para aquellos que no pueden esperar para simplemente saltar y reproducir el inicio!...
 
 Para crear un paquete:
 
 
-* En **[!UICONTROL CRXDE Lite]**, haga clic en el icono [Paquete](http://localhost:4502/crx/packmgr/)
+* En el **[!UICONTROL CRXDE Lite]**, haga clic en el icono [Paquete](http://localhost:4502/crx/packmgr/)
 * Haga clic en **[!UICONTROL Crear paquete]**
 
    * Nombre del paquete: `an-scf-sandbox-minimal-pkg`
@@ -172,15 +175,15 @@ Para crear un paquete:
 
 * Haga clic en **[!UICONTROL Editar]**
 
-   * Ficha Seleccionar **[!UICONTROL filtros]**
+   * Ficha Seleccionar **[!UICONTROL Filtros]**
 
-      * Haga clic en **[!UICONTROL Agregar filtro]**
+      * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/apps/an-scf-sandbox`>
       * Haga clic en **[!UICONTROL Finalizado]**
-      * Haga clic en **[!UICONTROL Agregar filtro]**
+      * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/etc/designs/an-scf-sandbox`>
       * Haga clic en **[!UICONTROL Finalizado]**
-      * Haga clic en **[!UICONTROL Agregar filtro]**
+      * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/content/an-scf-sandbox`>
       * Haga clic en **[!UICONTROL Finalizado]**
    * Haga clic en **[!UICONTROL Guardar]**

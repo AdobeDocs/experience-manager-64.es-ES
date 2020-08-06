@@ -1,6 +1,6 @@
 ---
-title: ¿Qué entornos de prueba son necesarios?
-seo-title: ¿Qué entornos de prueba son necesarios?
+title: ¿Qué Entornos de prueba son necesarios?
+seo-title: ¿Qué Entornos de prueba son necesarios?
 description: Se deben considerar varios entornos como parte de las pruebas
 seo-description: Se deben considerar varios entornos como parte de las pruebas
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 translation-type: tm+mt
 source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
 
-# ¿Qué entornos de prueba serán necesarios?{#which-test-environments-will-be-needed}
+# ¿Qué Entornos de prueba serán necesarios?{#which-test-environments-will-be-needed}
 
 Para definir qué configuraciones se deben probar, debe tener en cuenta lo siguiente:
 
@@ -29,12 +32,12 @@ También tendrá que decidir qué instancias necesitará donde (normalmente al m
 
 **Autor** : Esta instancia permite a los autores introducir y publicar contenido.
 
-**Publicar** : Esta instancia presenta el sitio web en su formulario publicado para el acceso de los visitantes.
+**Publicar** : Esta instancia presenta el sitio web en su forma publicada para el acceso desde visitantes.
 
 Debe probarse junto con el despachante.
 
-Por último, se debe considerar el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cercano posible al entorno de lanzamiento final. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
+Por último, se debe considerar el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible de la configuración del entorno final activo. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
 
-**Lanzamiento** suave: disponibilidad reducida; que permite tiempo para pruebas de rendimiento, ajustes y optimización en condiciones realistas en el entorno de producción.
+**Lanzamiento** suave: disponibilidad reducida; que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
 
 **Inicio** duro: disponibilidad completa.

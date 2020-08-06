@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '1540'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ Handlebars Helpers (ayudantes) son métodos que se pueden llamar desde scripts H
 
 La implementación incluye una definición de cliente y de servidor. También es posible que los desarrolladores creen asistentes personalizados.
 
-Los asistentes personalizados de SCF entregados con comunidades AEM se definen en la biblioteca [del cliente](../../help/sites-developing/clientlibs.md):
+Los ayudantes personalizados de SCF que se entregan con AEM Communities se definen en la biblioteca [del cliente](../../help/sites-developing/clientlibs.md):
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
@@ -57,7 +60,7 @@ Si safeString se establece en true, la cadena devuelta es SafeString.
 
    (opcional) El valor predeterminado es el número de palabras de la cadena recortada.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (opcional) Devuelve Handlebars.SafeString() si es true. El valor predeterminado es false.
 
@@ -109,7 +112,7 @@ Un ayudante para agregar dos grupos debajo de un div, uno para el texto completo
 
    (opcional) El texto que se va a mostrar y que indica que hay texto oculto. El valor predeterminado es &quot;...&quot;.
 
-* **safeString**:Booleano
+* **safeString**: Booleano
 
    (opcional) Valor booleano que indica si se deben aplicar o no Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
 
@@ -181,7 +184,7 @@ Un asistente para devolver contenido según una condición de igualdad.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Asistente de bloque que prueba el valor actual del modo [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM con una lista de modos separados por cadenas.
+Asistente de bloque que prueba el valor actual del modo [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) WCM con una lista de modos separada por cadenas.
 
 ### Parámetros {#parameters-4}
 
@@ -234,9 +237,9 @@ Consulte también [Internacionalización de cadenas en código](../../help/sites
 
 Un asistente para incluir un componente como recurso no existente en una plantilla.
 
-Esto permite que el recurso se personalice mediante programación más fácilmente de lo que es posible para un recurso agregado como nodo JCR. Consulte [Agregar o incluir un componente](scf.md#add-or-include-a-communities-component)de comunidades.
+Esto permite que el recurso se personalice mediante programación más fácilmente de lo que es posible para un recurso agregado como nodo JCR. Consulte [Añadir o incluir un componente](scf.md#add-or-include-a-communities-component)de comunidades.
 
-Solo se pueden incluir algunos componentes de Comunidades. Para AEM 6.1, los que son incluyentes son [comentarios](essentials-comments.md), [clasificación](rating-basics.md), [revisiones](reviews-basics.md)y [votación](essentials-voting.md).
+Solo se pueden incluir algunos componentes de Comunidades. Para AEM 6.1, aquellos que son incluyentes son [comentarios](essentials-comments.md), [calificaciones](rating-basics.md), [críticas](reviews-basics.md)y [votaciones](essentials-voting.md).
 
 Este asistente, adecuado solo en el servidor, proporciona una funcionalidad similar a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -262,7 +265,7 @@ Este asistente, adecuado solo en el servidor, proporciona una funcionalidad simi
 
    (obligatorio) La ruta al recurso. Si la ruta es relativa, se debe proporcionar un contexto; de lo contrario, se devuelve la cadena vacía.
 
-* **authoringDisabled**:Booleano
+* **authoringDisabled**: Booleano
 
    (opcional) El valor predeterminado es false. Solo para uso interno.
 
@@ -276,7 +279,7 @@ Esto incluirá un nuevo componente de comentarios en `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
-Un asistente que incluye una biblioteca de cliente HTML de AEM, que puede ser un js, un css o una biblioteca de temas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en la secuencia de comandos Handlebars.
+Un asistente que incluye una biblioteca de cliente HTML AEM, que puede ser un js, un css o una biblioteca de temas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en la secuencia de comandos Handlebars.
 
 Este asistente, adecuado solo en el servidor, proporciona una funcionalidad similar a las secuencias de comandos [ui:includeClientLib](../../help/sites-developing/taglib.md) para JSP.
 
@@ -284,19 +287,19 @@ Este asistente, adecuado solo en el servidor, proporciona una funcionalidad simi
 
 * **categorías**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+   (opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS de las categorías determinadas. El nombre del tema se extrae de la solicitud.
 
 * **tema**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con temas (CSS y JS) para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+   (opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con el tema (CSS y JS) para las categorías dadas. El nombre del tema se extrae de la solicitud.
 
 * **js**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript para las categorías determinadas.
+   (opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript de las categorías dadas.
 
 * **css**: Cadena
 
-   (opcional) Una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS para las categorías determinadas.
+   (opcional) Una lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS de las categorías dadas.
 
 ### Ejemplos {#examples-2}
 
@@ -395,7 +398,7 @@ NOTA: no es un validador y no se utiliza para escribir valores de atributos.
 
 Un asistente que codifica una cadena de origen para escribir en un valor de atributo HTML para ayudar a protegerse de XSS.
 
-NOTA: no es un validador y no se utiliza para escribir atributos procesables (href, src, controladores de eventos).
+NOTA: no es un validador y no se utiliza para escribir atributos procesables (href, src, controladores de evento).
 
 ### Parámetros {#parameters-10}
 

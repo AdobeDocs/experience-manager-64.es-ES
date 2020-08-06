@@ -1,33 +1,36 @@
 ---
-title: Gestión de recursos de vídeo
-description: Obtenga información sobre cómo cargar, previsualizar, anotar y publicar recursos de vídeo.
+title: Administrar recursos de vídeo
+description: Obtenga información sobre cómo cargar, previsualización, realizar anotaciones y publicar recursos de vídeo.
 uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
 source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 8%
 
 ---
 
 
-# Gestión de recursos de vídeo {#managing-video-assets}
+# Administrar recursos de vídeo {#managing-video-assets}
 
 Obtenga información sobre cómo administrar y editar los recursos de vídeo en Recursos Adobe Experience Manager (AEM). Además, si tiene licencia para usar Dynamic Media, consulte la documentación [de vídeo de](video.md)Dynamic Media.
 
-## Carga y vista previa de recursos de vídeo {#uploading-and-previewing-video-assets}
+## Carga y previsualización de recursos de vídeo {#uploading-and-previewing-video-assets}
 
-Recursos AEM genera vistas previas para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una vista previa. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede obtener una vista previa de estas representaciones en la interfaz de usuario de Recursos AEM.
+AEM Assets genera previsualizaciones para recursos de vídeo con la extensión MP4. Si el formato del recurso no es MP4, instale el paquete FFmpeg para generar una previsualización. FFmpeg crea representaciones de vídeo de tipo OGG y MP4. Puede realizar la previsualización de estas representaciones en la interfaz de usuario de AEM Assets.
 
 1. En la carpeta o subcarpetas de recursos digitales, navegue a la ubicación donde desee agregar recursos digitales.
 1. Para cargar el recurso, toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Archivos]**. Como alternativa, suéltela directamente en el área de recursos. Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets) para obtener más información sobre la operación de carga.
-1. Para obtener una vista previa de un vídeo en la vista de tarjeta, toque el botón **[!UICONTROL Reproducir]** del recurso de vídeo.
+1. Para previsualización de un vídeo en la vista de tarjetas, toque el botón **[!UICONTROL Reproducir]** del recurso de vídeo.
 
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
-   Puede pausar o reproducir vídeo solo en la vista **[!UICONTROL Tarjeta]** . El botón Reproducir/Pausa no está disponible en la vista **[!UICONTROL Lista]** .
+   Puede pausar o reproducir vídeo solo en la vista **[!UICONTROL Tarjeta]** . El botón Reproducir/Pausa no está disponible en la vista de **[!UICONTROL Lista]** .
 
-1. Toque el icono **[!UICONTROL Editar]** de la tarjeta para obtener una vista previa del vídeo en la vista **[!UICONTROL Detalles]** .
+1. Toque el icono **[!UICONTROL Editar]** de la tarjeta para previsualización del vídeo en la vista **[!UICONTROL Detalles]** .
 
    El vídeo se reproduce en el reproductor de vídeo nativo del navegador. Puede reproducir, pausar, controlar el volumen y aplicar zoom en el vídeo a pantalla completa.
 
@@ -35,12 +38,12 @@ Recursos AEM genera vistas previas para recursos de vídeo con la extensión MP4
 
 ## Configuración para cargar recursos de más de 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-De forma predeterminada, Recursos AEM no permite cargar recursos que superen los 2 GB debido a un límite de tamaño de archivo. Sin embargo, puede sobrescribir este límite si ingresa a CRXDE Lite y crea un nodo en el `/apps` directorio. El nodo debe tener el mismo nombre de nodo, estructura de directorio y propiedades de nodo comparables de order.
+De forma predeterminada, AEM Assets no permite cargar recursos que superen los 2 GB debido a un límite de tamaño de archivo. Sin embargo, puede sobrescribir este límite si ingresa al CRXDE Lite y crea un nodo en el `/apps` directorio. El nodo debe tener el mismo nombre de nodo, estructura de directorio y propiedades de nodo comparables de order.
 
-Además de la configuración de Recursos AEM, cambie las configuraciones siguientes para cargar recursos de gran tamaño:
+Además de la configuración de AEM Assets, cambie las configuraciones siguientes para cargar recursos de gran tamaño:
 
 * Aumente el tiempo de caducidad del token. Consulte [!UICONTROL Adobe Granite CSRF Servlet] en la consola web en `https://[aem_server]:[port]/system/console/configMgr`. Para obtener más información, consulte Protección [de](/help/sites-developing/csrf-protection.md)CSRF.
-* Aumente la `receiveTimeout` configuración de Dispatcher. Para obtener más información, consulte Configuración [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher.
+* Aumente la `receiveTimeout` configuración de Dispatcher. Para obtener más información, consulte Configuración [de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
 
 >[!NOTE]
 >
@@ -49,7 +52,7 @@ Además de la configuración de Recursos AEM, cambie las configuraciones siguien
 Para configurar un límite de tamaño de archivo mayor, realice los siguientes pasos en el `/apps` directorio.
 
 1. En AEM, pulse **[!UICONTROL Herramientas > General > CRXDE Lite]**.
-1. En la página **[!UICONTROL CRXDE Lite]** , en la ventana de directorio de la izquierda, navegue hasta `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Para ver la ventana del directorio, toque `>>` el icono .
+1. En la página **[!UICONTROL CRXDE Lite]** , en la ventana de directorio de la izquierda, vaya a `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Para ver la ventana del directorio, toque `>>` el icono .
 1. From the toolbar, tap **[!UICONTROL Overlay Node]**. También puede seleccionar **[!UICONTROL Nodo de superposición]** en el menú contextual.
 1. En el cuadro de diálogo **[!UICONTROL Nodo de superposición]**, pulse **[!UICONTROL Aceptar]**.
 
@@ -67,7 +70,7 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 1. Toque **[!UICONTROL Guardar]**.
 1. En AEM, toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página Modelos **[!UICONTROL de]** flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y, a continuación, toque **[!UICONTROL Editar]**.
-1. En la página **[!UICONTROL Flujo de trabajo]** , toque dos veces el componente Proceso **[!UICONTROL del servicio de vídeo de]** Dynamic Media.
+1. En la página **[!UICONTROL Flujo de trabajo]** , toque con el doble el componente Proceso **[!UICONTROL del servicio de vídeo de medios]** dinámicos.
 1. En el cuadro de diálogo **[!UICONTROL Propiedades del paso]**, en la pestaña **[!UICONTROL Común]**, expanda **[!UICONTROL Configuración avanzada]**.
 1. En el campo **[!UICONTROL Tiempo de espera]**, especifique un valor de `18000` y, a continuación, pulse **[!UICONTROL Aceptar]** para volver a la página de flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]**.
 1. Cerca de la parte superior de la página, debajo del título de la página de codificación de vídeo **[!UICONTROL de]** Dynamic Media, toque **[!UICONTROL Guardar]**.
@@ -79,10 +82,10 @@ Una vez publicados los recursos de vídeo, estarán disponibles para incluirlos 
 ## Anotación de recursos de vídeo {#annotating-video-assets}
 
 1. Desde la consola Recursos, toque el icono **[!UICONTROL Editar]** de la tarjeta de recursos para mostrar la página de detalles de recursos.
-1. Toque el icono **[!UICONTROL Vista previa]** para reproducir el vídeo.
+1. Toque el icono de **[!UICONTROL Previsualización]** para reproducir el vídeo.
 1. Para realizar anotaciones en el vídeo, toque el botón **[!UICONTROL Anotar]** . Se agrega una anotación en el punto de tiempo (fotograma) concreto del vídeo.
 
-   Al realizar anotaciones, puede dibujar en el lienzo e incluir un comentario con el dibujo. Los comentarios se guardan automáticamente en Recursos de Adobe Experience Manager.
+   Al realizar anotaciones, puede dibujar en el lienzo e incluir un comentario con el dibujo. Los comentarios se guardan automáticamente en Adobe Experience Manager Assets.
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -92,6 +95,6 @@ Una vez publicados los recursos de vídeo, estarán disponibles para incluirlos 
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 
-1. Haga clic en una anotación para verla en la línea de tiempo. Toque **[!UICONTROL Eliminar]** para eliminar la anotación de la línea de tiempo.
+1. Haga clic en una anotación para vista en la línea de tiempo. Toque **[!UICONTROL Eliminar]** para eliminar la anotación de la línea de tiempo.
 
-   ![chlimage_1-205](assets/chlimage_1-206.png)
+   ![chlimage_1-206](assets/chlimage_1-206.png)

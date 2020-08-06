@@ -55,7 +55,7 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 En Experience Manager, un recurso contiene los siguientes elementos:
 
 * Propiedades y metadatos del recurso.
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo o páginas extraídas de archivos PDF o Adobe InDesign.
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o Adobe InDesign.
 * Comentarios opcionales.
 
 En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:

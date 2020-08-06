@@ -1,8 +1,8 @@
 ---
 title: Configuración del seguimiento de videos para Adobe Analytics
 seo-title: Configuración del seguimiento de videos para Adobe Analytics
-description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
-seo-description: Obtenga información sobre la configuración del seguimiento de videos para SiteCatalyst.
+description: Obtenga información sobre la configuración del seguimiento de vídeo para SiteCatalyst.
+seo-description: Obtenga información sobre la configuración del seguimiento de vídeo para SiteCatalyst.
 uuid: c72d2d59-915d-4af1-aeb9-821915979571
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Configuración del seguimiento de videos para Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Existen varios métodos disponibles para el seguimiento de eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
+Existen varios métodos disponibles para rastrear eventos de vídeo, dos de los cuales son opciones heredadas para versiones anteriores de Adobe Analytics. Estas opciones heredadas son: Hitos heredados y segundos heredados.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Utilice el procedimiento siguiente para configurar un marco para el seguimiento 
    * [Hitos heredados](/help/sites-administering/adobeanalytics.md)
    * [Segundos heredados](/help/sites-administering/adobeanalytics.md)
 
-1. Al seleccionar un método de seguimiento, la lista de las variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con las propiedades de Adobe Analytics.
+1. Al seleccionar un método de seguimiento, la lista de las variables de CQ cambia en consecuencia. Utilice las secciones siguientes para obtener información sobre cómo seguir configurando el componente y asignar las variables de CQ con propiedades de Adobe Analytics.
 
 ## Milestones {#milestones}
 
@@ -113,7 +113,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>Enviado en cada hito; aparece como pev3 en la llamada de Analytics de Adobe, generalmente enviada como "video"<br /> </td> 
+   <td>Enviado en cada hito; aparece como pev3 en la llamada de Adobe Analytics, generalmente enviada como "video"<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -319,7 +319,7 @@ Este método es similar al método Hitos con la diferencia de que los hitos espe
 
    El **resto de la información** relevante en la llamada se enviará en **una** variable denominada **pev3**.
 
-   **Las llamadas** de muestra a Adobe Analytics que utilicen el ejemplo proporcionado deben tener este aspecto cuando se visualizan con DigitalPulse Debugger:
+   **Las llamadas** de ejemplo a Adobe Analytics que utilicen el ejemplo proporcionado deben tener este aspecto cuando se visualizan con DigitalPulse Debugger:
 
    ![lmilestones1](assets/lmilestones1.png)
 

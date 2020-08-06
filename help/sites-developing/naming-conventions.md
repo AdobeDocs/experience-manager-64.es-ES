@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 19%
 
 ---
 
@@ -23,7 +26,7 @@ Nodes in the repository are subject to naming conventions of the [Java Content R
 
 Estas convenciones de nombres se implementan en varios niveles:
 
-* JcrUtil: la implementación de AEM de las utilidades [](#jcr-utilities)JCR.
+* JcrUtil: la implementación AEM de las utilidades [](#jcr-utilities)JCR.
 * PageManager: el Administrador [de páginas](#page-manager) proporciona métodos para las operaciones de nivel de página.
 * Según la IU que se utiliza:
 
@@ -32,7 +35,7 @@ Estas convenciones de nombres se implementan en varios niveles:
 
 ### Utilidades de JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) es la implementación de AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) es la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
 

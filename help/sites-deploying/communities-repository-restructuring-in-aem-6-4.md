@@ -1,8 +1,8 @@
 ---
 title: Reestructuración del repositorio para AEM Communities en 6.4
 seo-title: Reestructuración del repositorio para AEM Communities en 6.4
-description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.4 for Communities.
-seo-description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.4 for Communities.
+description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.4 para Comunidades.
+seo-description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.4 para Comunidades.
 uuid: d161655f-4074-44a7-8d69-38e80934c58b
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -10,18 +10,21 @@ topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
 
 # Reestructuración del repositorio para AEM Communities en 6.4{#repository-restructuring-for-aem-communities-in}
 
-Como se describe en la página principal Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado a los cambios del repositorio que afectan a la solución AEM Communities. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden aplazar hasta una actualización a 6.5.
+Como se describe en la página principal Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución AEM Communities. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden posponer hasta una actualización a 6.5.
 
 **Con actualización a 6.4**
 
 * [Plantillas de notificación de correo electrónico](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#e-mail-notification-templates)
-* [Configuraciones de suscripción](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#subscription-configurations)
+* [Configuraciones de Suscripción](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md#subscription-configurations)
 
 **Antes de la actualización a 6.5**
 
@@ -60,7 +63,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Configuraciones de suscripción {#subscription-configurations}
+### Configuraciones de Suscripción {#subscription-configurations}
 
 <table> 
  <tbody>
@@ -97,7 +100,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
   </tr>
   <tr>
    <td><strong>Orientación de reestructuración</strong></td> 
-   <td>Hay disponible una tarea de migración diferida para limpiar las configuraciones de comunidades.<br /> <p>La tarea mueve las palabras clave de <code>/etc/watchwords</code> a <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si las palabras clave personalizadas se almacenan en SCM, entonces deben implementarse en <code>/apps/settings/...</code> y debe asegurarse de que no hay una configuración de superposición <code>/conf/global/settings/...</code> que tenga prioridad.</p> <p>La tarea de migración elimina <code>/etc</code> ubicaciones.</p> </td> 
+   <td>Hay disponible una tarea de migración diferida para limpiar las configuraciones de comunidades.<br /> <p>La Tarea mueve las palabras clave de <code>/etc/watchwords</code> a <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si las palabras clave personalizadas se almacenan en SCM, entonces deben implementarse en <code>/apps/settings/...</code> y debe asegurarse de que no hay una configuración de superposición <code>/conf/global/settings/...</code> que tenga prioridad.</p> <p>La tarea de migración elimina <code>/etc</code> las ubicaciones.</p> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 
@@ -184,11 +187,11 @@ Como se describe en la página principal Reestructuración [del repositorio en A
     <ol> 
      <li>Migrar configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol> 
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión de Facebook Social mediante la interfaz de usuario de creación de AEM en <strong>Herramientas &gt; Servicios de nube &gt; Configuración</strong>de inicio de sesión de Facebook Social.<br /> o <br /> </li> 
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión de Facebook Social mediante la IU de creación de AEM en <strong>Herramientas &gt; Cloud Services &gt; Configuración</strong>de inicio de sesión de Facebook Social.<br /> o <br /> </li> 
        <li>Copie cualquier configuración de nube de Facebook nueva de Ubicación anterior en la Ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Actualice cualquier raíz del sitio de comunidades AEM para hacer referencia a la nueva configuración de inicio de sesión social de Facebook estableciendo la propiedad en la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
-     <li>Desasocie el servicio heredado de Facebook Connect Cloud de cualquier raíz de sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li> 
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva Configuración de inicio de sesión social de Facebook estableciendo la propiedad en la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
+     <li>Desasocie el Cloud Service heredado de Facebook Connect de cualquier raíz de sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -240,11 +243,11 @@ Como se describe en la página principal Reestructuración [del repositorio en A
     <ol> 
      <li>Migrar configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol> 
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión de Pinterest Social mediante la interfaz de usuario de creación de AEM en <strong>Herramientas &gt; Servicios de nube &gt; Configuración</strong>de inicio de sesión de Pinterest Social.<br /> o</li> 
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión de Pinterest Social mediante la IU de creación de AEM en <strong>Herramientas &gt; Cloud Services &gt; Configuración</strong>de inicio de sesión de Pinterest Social.<br /> o</li> 
        <li>Copie cualquier configuración nueva de Pinterest Cloud desde Ubicación anterior a la Ubicación nueva correspondiente en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Actualice cualquier raíz del sitio de comunidades de AEM para hacer referencia a la nueva configuración de inicio de sesión social de Pinterest mediante la configuración de la propiedad a la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
-     <li>Desasocie el servicio heredado de Pinterest Connect Cloud de cualquier raíz de sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li> 
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva Configuración de inicio de sesión social de Pinterest mediante la configuración de la propiedad en la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
+     <li>Desasocie el Cloud Service heredado de Pinterest Connect de cualquier raíz de sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -306,11 +309,11 @@ Como se describe en la página principal Reestructuración [del repositorio en A
     <ol> 
      <li>Migrar configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol> 
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter mediante la interfaz de usuario de creación de AEM en <strong>Herramientas &gt; Servicios de nube &gt; Configuración</strong>de inicio de sesión social de Twitter.<br /> o <br /> </li> 
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter mediante la IU de creación de AEM en <strong>Herramientas &gt; Cloud Services &gt; Configuración</strong>de inicio de sesión social de Twitter.<br /> o <br /> </li> 
        <li>Copie las configuraciones nuevas de Twitter Cloud desde Ubicación anterior a la Ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
-     <li>Actualice cualquier raíz del sitio de comunidades AEM para hacer referencia a la nueva configuración de inicio de sesión social de Twitter estableciendo la propiedad en la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
-     <li>Desasocie el servicio heredado de nube de Twitter Connect de cualquier raíz de sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li> 
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva Configuración de inicio de sesión social de Twitter estableciendo la propiedad en la ruta absoluta de la nueva ubicación. <code>[cq:Page]/jcr:content@cq:conf</code></li> 
+     <li>Desasocie el Cloud Service heredado de Twitter Connect de todas las raíces del sitio de AEM Communities actualizadas para hacer referencia a la nueva ubicación.</li> 
     </ol> </td> 
   </tr>
   <tr>

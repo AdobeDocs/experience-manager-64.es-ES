@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe no planea mejorar aún más los correos electrónicos abiertos o devueltos por el servicio SMTP de AEM.\
->La recomendación es [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)de AEM.
+>Adobe no planea mejorar aún más los correos electrónicos abiertos o devueltos por el servicio SMTP AEM.\
+>Se recomienda [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)AEM.
 
 El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
 
@@ -95,7 +98,7 @@ En este documento se describen los conceptos básicos para crear boletines en AE
 
    * **Lista de destinatarios predeterminada**
 
-      Lista predeterminada que debe recibir la newsletter.
+      lista predeterminada que debe recibir la newsletter.
    Pueden actualizarse posteriormente desde el cuadro de diálogo **Propiedades...**.
 
 1. Haga clic en **Aceptar** para guardar.
@@ -193,6 +196,7 @@ Para personalizar la configuración de la newsletter:
    1. Modifique el **Asunto** del correo, si es necesario.
    1. Seleccione una **Lista de destinatarios predeterminada** de la lista desplegable.
    1. Haga clic en **Aceptar**.
+
    Cuando pruebe o envíe el boletín, los destinatarios recibirán correos electrónicos con el asunto y la dirección especificados.
 
 ## Prueba de envío de boletines {#flight-testing-newsletters}

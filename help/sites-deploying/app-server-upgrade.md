@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
 
 En esta sección se describe el procedimiento que debe seguirse para actualizar AEM para las instalaciones de Application Server.
 
-Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicaciones e implican que ya tiene implementada una versión de AEM. El procedimiento está diseñado para documentar las actualizaciones realizadas desde la versión 5.6 a la 6.3 **de** AEM.
+Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicaciones e implican que ya tiene implementada una versión de trabajo de AEM. El procedimiento tiene por objeto el documento de las actualizaciones realizadas desde **AEM versión 5.6 a 6.3**.
 
-1. Primero, inicie JBoss. En la mayoría de los casos, puede hacerlo ejecutando la secuencia de comandos de `standalone.sh` inicio, ejecutando este comando desde el terminal:
+1. Primero, inicio JBoss. En la mayoría de los casos, puede hacerlo ejecutando la secuencia de comandos de `standalone.sh` inicio, ejecutando este comando desde el terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -90,11 +93,12 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-   Estos dos archivos configurarán AEM para que utilice un almacén de nodos TarMK y un almacén de datos de archivos.
+
+   Estos dos archivos configurarán AEM para utilizar un almacén de nodos TarMK y un almacén de datos File.
 
 1. Edite los archivos de configuración para que estén listos para su uso. Más específicamente:
 
-   * Agregue la siguiente línea a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Añada la siguiente línea a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
@@ -111,7 +115,7 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Ahora debe cambiar los modos de ejecución en el archivo de guerra AEM 6.3. Para ello, cree primero una carpeta temporal que alojará la guerra de AEM 6.3. El nombre de la carpeta en este ejemplo será **temp**. Una vez copiado el archivo de guerra, extraiga su contenido ejecutándose desde la carpeta temp:
+1. Ahora debe cambiar los modos de ejecución en el archivo de guerra AEM 6.3. Para hacerlo, primero cree una carpeta temporal que albergue la guerra de AEM 6.3. El nombre de la carpeta en este ejemplo será **temp**. Una vez copiado el archivo de guerra, extraiga su contenido ejecutándose desde la carpeta temp:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war

@@ -1,8 +1,8 @@
 ---
 title: Configuración de la segmentación
 seo-title: Configuración de la segmentación
-description: Obtenga información sobre cómo configurar la segmentación para AEM Campaign.
-seo-description: Obtenga información sobre cómo configurar la segmentación para AEM Campaign.
+description: Obtenga información sobre cómo configurar la segmentación para AEM Campaña.
+seo-description: Obtenga información sobre cómo configurar la segmentación para AEM Campaña.
 uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +26,9 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 
 La segmentación es una consideración clave al crear una campaña. Consulte el glosario [de](/help/sites-authoring/segmentation-overview.md) segmentación para obtener información sobre el funcionamiento de la segmentación y los términos clave.
 
-Según la información que ya haya recopilado sobre los visitantes del sitio y los objetivos que desee alcanzar, deberá definir los segmentos y estrategias necesarios para el contenido de destino.
+En función de la información que ya haya recopilado sobre los visitantes del sitio y los objetivos que desee alcanzar, deberá definir los segmentos y estrategias necesarios para el contenido objetivo.
 
-Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la sección [Campañas](/help/sites-authoring/personalization.md) del sitio web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento del visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar un visitante con contenido dirigido específicamente. Este contenido se mantiene en la sección de [Campañas](/help/sites-authoring/personalization.md) del sitio web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
 AEM le permite crear y actualizar fácilmente segmentos, teasers y campañas. También le permite verificar los resultados de sus definiciones.
 
@@ -33,7 +36,7 @@ El Editor **** de segmentos le permite definir fácilmente un segmento:
 
 ![segmenteditor-1](assets/segmenteditor-1.png)
 
-Puede **editar** cada segmento para especificar un factor de **título**, **descripción** y **ampliación** . Con la barra de tareas puede agregar contenedores **Y** y **O** para definir la lógica **de** segmento y, a continuación, agregar las características **de** segmento necesarias para definir los criterios de selección.
+Puede **editar** cada segmento para especificar un factor de **título**, **descripción** y **ampliación** . Con la barra de tareas puede agregar contenedores **Y** y **O** para definir la lógica **de** segmento y, a continuación, agregar las características de **segmento requeridas** para definir los criterios de selección.
 
 ## Factor de ampliación {#boost-factor}
 
@@ -83,7 +86,7 @@ Las siguientes características de segmento están disponibles de forma predeter
   </tr> 
   <tr> 
    <td> Script</td> 
-   <td>Expresión de JavaScript que se va a evaluar.<br /> </td> 
+   <td>expresión de Javascript que se va a evaluar.<br /> </td> 
   </tr> 
   <tr> 
    <td> Referencia del segmento <br /> </td> 
@@ -95,7 +98,7 @@ Las siguientes características de segmento están disponibles de forma predeter
   </tr> 
   <tr> 
    <td> Edad del usuario<br /> </td> 
-   <td>Tomado del perfil de usuario.<br /> </td> 
+   <td>Tomado del perfil del usuario.<br /> </td> 
   </tr> 
   <tr> 
    <td> Propiedad de usuario<br /> </td> 
@@ -106,7 +109,7 @@ Las siguientes características de segmento están disponibles de forma predeter
 
 Puede combinar estas características con los operadores booleanos O y Y (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar este segmento.
 
-Cuando toda la instrucción se evalúa como true, este segmento se ha resuelto. En caso de que se apliquen varios segmentos, también se utilizará el factor **[Ampliación](/help/sites-administering/campaign-segmentation.md#boost-factor)**.
+Cuando toda la instrucción se evalúa como true, este segmento se ha resuelto. En el evento de que se apliquen varios segmentos, también se utiliza el factor de **[ampliación](/help/sites-administering/campaign-segmentation.md#boost-factor)**.
 
 >[!CAUTION]
 >
@@ -129,8 +132,8 @@ Para definir el nuevo segmento:
 
    ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
 
-1. **Utilice la barra de tareas o el menú contextual (normalmente, haga clic con el botón secundario del ratón y, a continuación, seleccione** Nuevo... para abrir la ventana Insertar nuevo componente) para buscar la característica del segmento que necesita. A continuación, arrástrelo al Editor **de segmentos** para que aparezca en el contenedor **AND** predeterminado.
-1. Haga doble clic en la nueva característica para editar los parámetros específicos; por ejemplo, la posición del ratón:
+1. Utilice la barra de tareas o el menú contextual (normalmente, haga clic con el botón secundario del ratón y, a continuación, seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente) para buscar la característica del segmento que necesita. A continuación, arrástrelo al Editor **de segmentos** para que aparezca en el contenedor **AND** predeterminado.
+1. Haga clic con el botón Doble en la nueva característica para editar los parámetros específicos; por ejemplo, la posición del ratón:
 
    ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
 
@@ -139,14 +142,14 @@ Para definir el nuevo segmento:
 
    ![screen_shot_2012-02-02at103547am](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Agregue más características si es necesario. Puede formular expresiones booleanas utilizando los componentes Contenedor **** Y y Contenedor **O que se encuentran en Lógica** **** de segmento. Con el editor de segmentos puede eliminar características o contenedores que ya no necesite o arrastrarlos a nuevas posiciones dentro de la instrucción.
+1. Añada más características si es necesario. Puede formular expresiones booleanas utilizando los componentes **Y Contenedor** y **O Contenedor** que se encuentran en Lógica **** de segmentos. Con el editor de segmentos puede eliminar características o contenedores que ya no necesite o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
-## Uso de contenedores Y y O {#using-and-and-or-containers}
+## Uso de Contenedores Y y O {#using-and-and-or-containers}
 
-Puede crear segmentos complejos en AEM. Esto ayuda a tener en cuenta algunos puntos básicos:
+Puede construir segmentos complejos en AEM. Esto ayuda a tener en cuenta algunos puntos básicos:
 
 * El nivel superior de la definición es siempre el contenedor AND que se crea inicialmente; esto no se puede cambiar, pero no afecta al resto de la definición del segmento.
-* Asegúrese de que el anidado del contenedor tenga sentido. Los contenedores pueden verse como corchetes de la expresión booleana.
+* Asegúrese de que la anidación del contenedor tenga sentido. Los contenedores se pueden ver como corchetes de la expresión booleana.
 
 El ejemplo siguiente se utiliza para seleccionar visitantes que:
 
@@ -156,7 +159,7 @@ O
 
 Mujeres y entre 16 y 62 años
 
-Como el operador principal es O, debe comenzar con un contenedor **O**. Dentro de esto tiene 2 instrucciones AND, para cada una de ellas necesita un contenedor **AND**, en el cual puede agregar las características individuales.
+Como el operador principal es OR, debe tener un inicio con un Contenedor **O**. Dentro de esto tiene 2 instrucciones AND, para cada una de ellas se necesita un Contenedor **AND**, en el cual se pueden agregar las características individuales.
 
 ![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png)
 
@@ -189,4 +192,4 @@ Si pasa el ratón por encima de un párrafo de teaser, se mostrarán los segment
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan actualmente en [Campañas](/help/sites-authoring/personalization.md). Se utilizan para dirigir el contenido real que ven las audiencias objetivo específicas. Consulte [Explicación de los segmentos](/help/sites-authoring/segmentation-overview.md) para obtener más información.
+Los segmentos se utilizan actualmente en [Campañas](/help/sites-authoring/personalization.md). Se utilizan para dirigir el contenido real que ven audiencias de destinatario específicas. Consulte [Explicación de los segmentos](/help/sites-authoring/segmentation-overview.md) para obtener más información.

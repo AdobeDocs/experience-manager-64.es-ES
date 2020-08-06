@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ AEM proporciona varios mecanismos que le permiten personalizar las consolas (y l
 
    Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
 
-Se pueden usar de muchas formas para ampliar las consolas de AEM. A continuación se incluye una pequeña selección (de alto nivel).
+Estos pueden utilizarse de muchas maneras para ampliar las consolas de AEM. A continuación se incluye una pequeña selección (de alto nivel).
 
 >[!NOTE]
 >
@@ -40,9 +43,10 @@ Se pueden usar de muchas formas para ampliar las consolas de AEM. A continuació
 >* Usar y crear [clientlibs](/help/sites-developing/clientlibs.md).
 >* Uso y creación de [superposiciones](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
-Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) : personalización de la interfaz [de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalización de la interfaz [de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
@@ -56,6 +60,7 @@ Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/cont
    >
    >
 1. Realice los cambios en `/apps`
+
 >
 
 
@@ -93,7 +98,7 @@ Por ejemplo, se pueden superponer las siguientes ubicaciones dentro de la `/libs
 -->
 >[!NOTE]
 >
->Consulte el artículo de la Base de conocimiento, [Resolución de problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de AEM TouchUI, para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento, [Resolución de problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de la IU táctil, para obtener más sugerencias y herramientas.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -182,7 +187,7 @@ You can find the code of this page on GitHub
         * `srcPath` = `cq/core/content/nav`
 -->
 
-## Personalización de la vista predeterminada de una consola {#customizing-the-default-view-for-a-console}
+## Personalización de la Vista predeterminada para una consola {#customizing-the-default-view-for-a-console}
 
 Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una consola:
 
@@ -192,13 +197,13 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
 
    La primera entrada será la predeterminada.
 
-   Los nodos disponibles se correlacionan con las opciones de visualización disponibles:
+   Los nodos disponibles se correlacionan con las opciones de vista disponibles:
 
    * `column`
    * `card`
    * `list`
 
-1. Por ejemplo, en una superposición para una lista:
+1. Por ejemplo, en una superposición para lista:
 
    `/apps/wcm/core/content/sites/jcr:content/views/list`
 
@@ -256,7 +261,7 @@ You can find the code of this page on GitHub
           `/apps/<yourProject>/admin/ext/launches/content/jcr:content/body/rail`
 -->
 
-## Agregar nueva acción a la barra de herramientas {#add-new-action-to-the-toolbar}
+## Añadir nueva acción en la barra de herramientas {#add-new-action-to-the-toolbar}
 
 1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para acciones personalizadas. Por ejemplo, una acción **Promocionar a Twitter** en:
 
@@ -270,7 +275,7 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Restringir una acción de barra de herramientas a un grupo específico {#restrict-a-toolbar-action-to-a-specific-group}
+## Restringir una acción de la barra de herramientas a un grupo específico {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. Puede utilizar una condición de procesamiento personalizada para superponer la acción estándar e imponer condiciones específicas que deben cumplirse antes de procesarse.
 
@@ -359,7 +364,7 @@ You can restrict access to a navigation option using ACLs:
     * `communities`
 -->
 
-## Personalización de columnas en la vista de lista {#customizing-columns-in-the-list-view}
+## Personalización de columnas en la Vista Lista {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
@@ -375,15 +380,15 @@ You can find the code of this page on GitHub
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-sites-extension-listview-columns/archive/master.zip)
 -->
 
-Para personalizar las columnas en la vista de lista:
+Para personalizar las columnas de la vista de lista:
 
-1. Superponga la lista de columnas disponibles.
+1. Superponga la lista de las columnas disponibles.
 
    * En el nodo:
 
       `/apps/wcm/core/content/common/availablecolumns`
 
-   * Agregue las nuevas columnas o elimine las existentes.
+   * Añada las nuevas columnas o elimine las existentes.
    Consulte [Uso de superposiciones (y fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
 
 1. De forma opcional:
@@ -397,6 +402,6 @@ Para personalizar las columnas en la vista de lista:
 
 ## Filtrado de recursos {#filtering-resources}
 
-Cuando se utiliza una consola, un caso de uso común es cuando el usuario debe seleccionar entre los recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
+Cuando se utiliza una consola, un caso de uso común es cuando el usuario debe seleccionar entre los recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la cual el autor debe elegir un elemento.
 
-Para mantener la lista en un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.
+Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.

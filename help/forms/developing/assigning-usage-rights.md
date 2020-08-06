@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '3895'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,17 @@ El servicio de extensiones de Acrobat Reader DC permite a su organización compa
 
 Puede realizar estas tareas mediante el servicio de extensiones de Acrobat Reader DC:
 
-* Aplicar derechos de uso a documentos PDF. Para obtener más información, consulte [Aplicación de derechos de uso a documentos](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)PDF.
-* Elimine los derechos de uso de los documentos PDF. Para obtener más información, consulte [Eliminación de derechos de uso de documentos](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)PDF.
+* Aplicar derechos de uso a documentos PDF. Para obtener más información, consulte [Aplicación de derechos de uso a Documentos](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)PDF.
+* Elimine los derechos de uso de los documentos PDF. Para obtener más información, consulte [Eliminación de derechos de uso de Documentos](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)PDF.
 * Recuperar detalles de credenciales. Para obtener más información, consulte [Recuperación de información](assigning-usage-rights.md#retrieving-credential-information)de credenciales.
 
 >[!NOTE]
 >
 >Para obtener más información sobre el servicio de extensiones de Acrobat Reader DC, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Aplicación de derechos de uso a documentos PDF {#applying-usage-rights-to-pdf-documents}
+## Aplicación de derechos de uso a Documentos PDF {#applying-usage-rights-to-pdf-documents}
 
-Puede aplicar derechos de uso a documentos PDF mediante las extensiones de Acrobat Reader DC API de Java Client y el servicio Web. Los derechos de uso se refieren a funciones que están disponibles de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardarlo. Los documentos PDF que tienen derechos de uso aplicados se denominan documentos habilitados para derechos. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar operaciones que estén activadas para ese documento específico.
+Puede aplicar derechos de uso a documentos PDF mediante las extensiones de Acrobat Reader DC, la API de Java Client y el servicio Web. Los derechos de uso se refieren a la funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardar el formulario. Los documentos PDF que tienen derechos de uso aplicados se denominan documentos habilitados para derechos. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar operaciones habilitadas para ese documento específico.
 
 >[!NOTE]
 >
@@ -58,17 +61,17 @@ Para aplicar derechos de uso a un documento PDF, lleve a cabo los siguientes pas
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios Web, asegúrese de incluir los archivos proxy.
 
-**Creación de un objeto de cliente para extensiones de Acrobat Reader DC**
+**Creación de un objeto de cliente de extensiones de Acrobat Reader DC**
 
-Para realizar mediante programación una operación de servicio de extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceClient` objeto. Si utiliza la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
+Para realizar mediante programación una operación de servicio Extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceClient` objeto. Si está utilizando la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
 
 **Recuperar un documento PDF**
 
-Debe recuperar un documento PDF para aplicar derechos de uso. Los documentos PDF con derechos activados contienen un diccionario de derechos de uso. Cuando Adobe Reader abre un documento que contiene dicho diccionario, solo activa los derechos de uso especificados en el diccionario para ese documento. Si el documento no contiene un diccionario de derechos de uso, el servicio de extensiones de Acrobat Reader DC crea uno. Si ya contiene un diccionario, el servicio de extensiones de Acrobat Reader DC sobrescribe los derechos de uso existentes con los que especifique. El diccionario especifica los derechos de uso activados. Cuando un usuario abre el documento en Adobe Reader, solo se permiten los derechos de uso especificados en el diccionario.
+Debe recuperar un documento PDF para poder aplicar derechos de uso. Los documentos PDF con derechos activados contienen un diccionario de derechos de uso. Cuando Adobe Reader abre un documento que contiene dicho diccionario, solo activa los derechos de uso especificados en el diccionario para ese documento. Si el documento no contiene un diccionario de derechos de uso, el servicio de extensiones de Acrobat Reader DC crea uno. Si ya contiene un diccionario, el servicio de extensiones de Acrobat Reader DC sobrescribe los derechos de uso existentes con los que especifique. El diccionario especifica qué derechos de uso están habilitados. Cuando un usuario abre el documento en Adobe Reader, solo se permiten los derechos de uso especificados en el diccionario.
 
 **Especifique los derechos de uso que aplicar**
 
-Los derechos de uso que puede establecer están determinados por una credencial que adquiere de Adobe Systems Incorporated. Normalmente, las credenciales proporcionan permiso para establecer un grupo de derechos de uso relacionados, como los relativos a los formularios interactivos. Cada credencial proporciona el derecho de crear un determinado número de documentos PDF con derechos activados. Las credenciales de evaluación dan derecho a crear un número ilimitado de borradores de documentos.
+Los derechos de uso que puede establecer están determinados por una credencial que adquiere de Adobe Systems Incorporated. Normalmente, las credenciales proporcionan permiso para establecer un grupo de derechos de uso relacionados, como los relativos a los formularios interactivos. Cada credencial proporciona el derecho de crear un determinado número de documentos PDF con derechos activados. Las credenciales de evaluación dan derecho a crear un número ilimitado de documentos de borrador.
 
 >[!NOTE]
 >
@@ -92,7 +95,7 @@ Después de que el servicio de extensiones de Acrobat Reader DC aplique derechos
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
+[Inicios rápidos de la API del servicio Extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
 ### Aplicar derechos de uso mediante la API de Java {#apply-usage-rights-using-the-java-api}
 
@@ -129,6 +132,7 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
       * Un valor de cadena que especifica el alias de la credencial que le permite aplicar derechos de uso.
       * Un valor de cadena que especifica el valor de contraseña correspondiente. (Actualmente, se ignora este parámetro. Puedes pasar `null`).
    * El `ReaderExtensionsOptionSpec` objeto que contiene opciones de tiempo de ejecución.
+
    El `applyUsageRights` método devuelve un `com.adobe.idp.Document` objeto que contiene el documento PDF con derechos activados.
 
 1. Guarde el documento PDF con derechos activados.
@@ -138,7 +142,7 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
 
 **Consulte también**
 
-[Aplicación de derechos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
+[Aplicación de derechos de uso a Documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
 [Inicio rápido (modo SOAP):Aplicación de derechos de uso mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -148,7 +152,7 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
 
 ### Aplicar derechos de uso mediante la API de servicio Web {#apply-usage-rights-using-the-web-service-api}
 
-Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acrobat Reader DC (servicio Web):
+Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acrobat Reader DC (servicio web):
 
 1. Incluir archivos de proyecto.
 
@@ -161,12 +165,12 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
 1. Cree un objeto de cliente de extensiones de Acrobat Reader DC.
 
    * Cree un `ReaderExtensionsServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
+   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -195,6 +199,7 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
       * Un valor de cadena que especifica el alias de la credencial que le permite aplicar derechos de uso.
       * Un valor de cadena que especifica el valor de contraseña correspondiente. (Actualmente, se ignora este parámetro. Puedes pasar `null`).
    * El `ReaderExtensionsOptionSpec` objeto que contiene opciones de tiempo de ejecución.
+
    El `applyUsageRights` método devuelve un `BLOB` objeto que contiene el documento PDF con derechos activados.
 
 1. Guarde el documento PDF con derechos activados.
@@ -206,15 +211,15 @@ Aplique derechos de uso a un documento PDF mediante la API de extensiones de Acr
 
 **Consulte también**
 
-[Aplicación de derechos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
+[Aplicación de derechos de uso a Documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Eliminación de derechos de uso de documentos PDF {#removing-usage-rights-from-pdf-documents}
+## Eliminación de derechos de uso de Documentos PDF {#removing-usage-rights-from-pdf-documents}
 
-Puede quitar derechos de uso de un documento con derechos activados. También es necesario quitar derechos de uso de un documento PDF con derechos activados para realizar otras operaciones de AEM Forms en él. Por ejemplo, debe firmar digitalmente (o certificar) un documento PDF antes de definir los derechos de uso. Por lo tanto, si desea realizar operaciones en un documento con derechos activados, debe quitar derechos de uso del documento PDF, realizar las demás operaciones, como firmar digitalmente el documento y volver a aplicar derechos de uso al documento.
+Puede eliminar los derechos de uso de un documento con derechos activados. También es necesario quitar derechos de uso de un documento PDF con derechos activados para realizar otras operaciones de AEM Forms en él. Por ejemplo, debe firmar digitalmente (o certificar) un documento PDF antes de definir los derechos de uso. Por lo tanto, si desea realizar operaciones en un documento con derechos activados, debe quitar los derechos de uso del documento PDF, realizar las demás operaciones, como firmar digitalmente el documento y volver a aplicar los derechos de uso al documento.
 
 >[!NOTE]
 >
@@ -234,9 +239,9 @@ Para quitar derechos de uso de un documento PDF con derechos activados, lleve a 
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios Web, asegúrese de incluir los archivos proxy.
 
-**Creación de un objeto de cliente para extensiones de Acrobat Reader DC**
+**Creación de un objeto de cliente de extensiones de Acrobat Reader DC**
 
-Para poder realizar mediante programación una operación de servicio de extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java, cree un `ReaderExtensionsServiceClient` objeto. Si utiliza la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
+Para poder realizar mediante programación una operación de servicio de extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java, cree un `ReaderExtensionsServiceClient` objeto. Si está utilizando la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
 
 **Recuperar un documento PDF con derechos activados**
 
@@ -248,7 +253,7 @@ Después de recuperar un documento PDF con derechos activados, puede eliminar lo
 
 **Guardar el documento PDF**
 
-Puede guardar el documento PDF que ya no contenga derechos de uso como archivo PDF. Una vez guardado como archivo PDF, el documento PDF se puede ver en Adobe Reader o Acrobat.
+Puede guardar el documento PDF que ya no contiene derechos de uso como archivo PDF. Una vez guardado como archivo PDF, el documento PDF se puede ver en Adobe Reader o Acrobat.
 
 **Consulte también**
 
@@ -260,9 +265,9 @@ Puede guardar el documento PDF que ya no contenga derechos de uso como archivo P
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
+[Inicios rápidos de la API del servicio Extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
-[Aplicación de derechos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
+[Aplicación de derechos de uso a Documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
 ### Eliminar los derechos de uso mediante la API de Java {#remove-usage-rights-using-the-java-api}
 
@@ -292,7 +297,7 @@ Elimine los derechos de uso de un documento PDF con derechos activados mediante 
 
 **Consulte también**
 
-[Eliminación de derechos de uso de documentos PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
+[Eliminación de derechos de uso de Documentos PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
 [Inicio rápido (modo SOAP): Eliminación de derechos de uso de un documento PDF mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -315,12 +320,12 @@ Elimine los derechos de uso de un documento PDF con derechos activados mediante 
 1. Cree un objeto de cliente de extensiones de Acrobat Reader DC.
 
    * Cree un `ReaderExtensionsServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
+   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -345,15 +350,15 @@ Elimine los derechos de uso de un documento PDF con derechos activados mediante 
 
 **Consulte también**
 
-[Eliminación de derechos de uso de documentos PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
+[Eliminación de derechos de uso de Documentos PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Recuperación de información de credenciales {#retrieving-credential-information}
 
-Puede recuperar información sobre las credenciales utilizadas para aplicar derechos de uso a un documento PDF con derechos activados. Al recuperar información sobre una credencial, puede obtener información como la fecha después de la cual el certificado ya no es válido.
+Puede recuperar información sobre las credenciales que se utilizaron para aplicar derechos de uso a un documento PDF con derechos activados. Al recuperar información sobre una credencial, puede obtener información como la fecha después de la cual el certificado ya no es válido.
 
 >[!NOTE]
 >
@@ -372,9 +377,9 @@ Para recuperar información sobre las credenciales utilizadas para aplicar derec
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios Web, asegúrese de incluir los archivos proxy.
 
-**Creación de un objeto de cliente para extensiones de Acrobat Reader DC**
+**Creación de un objeto de cliente de extensiones de Acrobat Reader DC**
 
-Para poder realizar mediante programación una operación de servicio de extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java, cree un `ReaderExtensionsServiceClient` objeto. Si utiliza la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
+Para poder realizar mediante programación una operación de servicio de extensiones de Acrobat Reader DC, debe crear un objeto cliente de servicio de extensiones de Acrobat Reader DC. Si utiliza la API de Java, cree un `ReaderExtensionsServiceClient` objeto. Si está utilizando la API de servicio web de extensiones de Acrobat Reader DC, cree un `ReaderExtensionsServiceService` objeto.
 
 **Recuperar un documento PDF con derechos activados**
 
@@ -400,7 +405,7 @@ Después de recuperar un documento PDF con derechos activados, puede obtener inf
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
+[Inicios rápidos de la API del servicio Extensiones de Acrobat Reader DC](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
 ### Recuperar información de credenciales mediante la API de Java {#retrieve-credential-information-using-the-java-api}
 
@@ -423,7 +428,7 @@ Recupere información de credenciales mediante la API de extensiones de Acrobat 
 
    * Recupere información sobre las credenciales utilizadas para aplicar derechos de uso al documento PDF invocando el `ReaderExtensionsServiceClient` método del `getDocumentUsageRights` objeto y pasando el `com.adobe.idp.Document` objeto que contiene el documento PDF con derechos activados. Este método devuelve un `GetUsageRightsResult` objeto que contiene información de credenciales.
    * Recupere la fecha después de la cual la credencial ya no es válida invocando el `GetUsageRightsResult` método `getNotAfter` del objeto. Este método devuelve un `java.util.Date` objeto que representa la fecha después de la cual la credencial ya no es válida.
-   * Recupere el mensaje que se muestra en Adobe Reader cuando se abre el documento PDF con derechos activados invocando el `GetUsageRightsResult` método del `getMessage` objeto. Este método devuelve un valor de cadena que representa el mensaje.
+   * Recupere el mensaje que se muestra en Adobe Reader cuando se abre el documento PDF con derechos activados invocando el `GetUsageRightsResult` método `getMessage` del objeto. Este método devuelve un valor de cadena que representa el mensaje.
 
 **Consulte también**
 
@@ -437,7 +442,7 @@ Recupere información de credenciales mediante la API de extensiones de Acrobat 
 
 ### Recuperar información de credenciales mediante la API de servicio web {#retrieve-credential-information-using-the-web-service-api}
 
-Recupere información de credenciales mediante la API de extensiones de Acrobat Reader DC (servicio Web):
+Recuperar información de credenciales mediante la API de extensiones de Acrobat Reader DC (servicio web):
 
 1. Incluir archivos de proyecto.
 
@@ -450,12 +455,12 @@ Recupere información de credenciales mediante la API de extensiones de Acrobat 
 1. Cree un objeto de cliente de extensiones de Acrobat Reader DC.
 
    * Cree un `ReaderExtensionsServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
+   * Cree un `ReaderExtensionsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Asegúrese de especificar `?blob=mtom`).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -472,13 +477,13 @@ Recupere información de credenciales mediante la API de extensiones de Acrobat 
 
    * Recupere información sobre las credenciales utilizadas para aplicar derechos de uso al documento PDF invocando el `ReaderExtensionsServiceClient` método del `getDocumentUsageRights` objeto y pasando el `com.adobe.idp.Document` objeto que contiene el documento PDF con derechos activados. Este método devuelve un `GetUsageRightsResult` objeto que contiene información de credenciales.
    * Recupere la fecha después de la cual la credencial ya no es válida obteniendo el valor del miembro de `GetUsageRightsResult` datos del `notAfter` objeto. El tipo de datos de este miembro de datos es `System.DateTime`.
-   * Recupere el mensaje que se muestra cuando se abre el documento PDF con derechos activados en Adobe Reader obteniendo el valor del miembro de `GetUsageRightsResult` datos del `message` objeto. El tipo de datos de este miembro de datos es una cadena.
+   * Recupere el mensaje que se muestra cuando el documento PDF con derechos activados se abre en Adobe Reader obteniendo el valor del miembro de `GetUsageRightsResult` datos del `message` objeto. El tipo de datos de este miembro de datos es una cadena.
    * Recupere el número de veces que se utiliza la credencial obteniendo el valor del miembro de `GetUsageRightsResult` datos del `useCount` objeto. El tipo de datos de este miembro de datos es un entero.
 
 **Consulte también**
 
 [Recuperación de información de credenciales](assigning-usage-rights.md#retrieving-credential-information)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

@@ -1,8 +1,8 @@
 ---
 title: Procesar recursos 3D
 seo-title: Procesar recursos 3D
-description: Obtenga información sobre cómo procesar recursos 3D que ha manipulado y guardado en AEM para crear imágenes 2D para sus páginas web.
-seo-description: Obtenga información sobre cómo procesar recursos 3D que ha manipulado y guardado en AEM para crear imágenes 2D para sus páginas web.
+description: Obtenga información sobre cómo procesar recursos 3D que haya manipulado y guardado en AEM para crear imágenes 2D para sus páginas web.
+seo-description: Obtenga información sobre cómo procesar recursos 3D que haya manipulado y guardado en AEM para crear imágenes 2D para sus páginas web.
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 73%
 
 ---
 

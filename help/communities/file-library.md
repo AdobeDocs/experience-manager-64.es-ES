@@ -1,8 +1,8 @@
 ---
 title: Función de la biblioteca de archivos
 seo-title: Función de la biblioteca de archivos
-description: La función Biblioteca de archivos permite a los visitantes del sitio que inician sesión cargar, administrar y descargar archivos
-seo-description: La función Biblioteca de archivos permite a los visitantes del sitio que inician sesión cargar, administrar y descargar archivos
+description: La función Biblioteca de archivos permite que los visitantes del sitio iniciados en sesión carguen, gestionen y descarguen archivos
+seo-description: La función Biblioteca de archivos permite que los visitantes del sitio iniciados en sesión carguen, gestionen y descarguen archivos
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -23,10 +26,10 @@ La función de biblioteca de archivos proporciona un lugar para que los visitant
 
 Esta sección de la documentación describe
 
-* Adición de la función de biblioteca de archivos a un sitio de AEM
+* Añadir la función de biblioteca de archivos en un sitio AEM
 * Configuración del `File Library` componente
 
-## Adición de una biblioteca de archivos a una página {#adding-a-file-library-to-a-page}
+## Añadir una biblioteca de archivos en una página {#adding-a-file-library-to-a-page}
 
 Para agregar un `File Library` componente a una página en modo de autor, ubique el componente
 
@@ -52,13 +55,14 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
 
 * **[!UICONTROL Permitir comentarios en archivos]** Si está activada, permita comentarios en los archivos cargados. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Comentarios por página]** Limita el número de comentarios que se muestran por página, así como el número de respuestas que se muestran. El valor predeterminado es **10**.
+* **[!UICONTROL Comentarios por página]** Limita el número de comentarios que se muestran por página, así como el número de respuestas que se muestran. El valor predeterminado es 
+**10**.
 
 * **[!UICONTROL Tamaño]** máximo del archivoEste valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
 
 * **[!UICONTROL Longitud]** máxima del mensaje Número máximo de caracteres que se pueden introducir en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
 
-* **[!UICONTROL Tipos]** de archivo permitidos Una lista de extensiones de archivo separadas por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+* **[!UICONTROL Tipos]** de archivo permitidos lista de extensiones de archivo separadas por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Editor]** de texto enriquecido Si está marcado, los comentarios se pueden introducir con marcado. El valor predeterminado no está marcado.
 
@@ -66,7 +70,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
 
 * **[!UICONTROL Permitir etiquetado]** Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Espacios]** de nombres permitidos Si se selecciona Permitir etiquetado, las etiquetas disponibles se limitarán a los espacios de nombres marcados. Si no se marca ninguna, se permite todo. El valor predeterminado es todos los espacios de nombres.
+* **[!UICONTROL Áreas de nombres]** permitidas Si se selecciona Permitir etiquetado, las etiquetas disponibles se limitarán a las Áreas de nombres seleccionadas. Si no se marca ninguna, se permite todo. El valor predeterminado es todas las Áreas de nombres.
 
 * **[!UICONTROL Límite]** de sugerencias Si se selecciona Permitir etiquetado, esta configuración limita el número de etiquetas sugeridas para mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
 
@@ -88,15 +92,17 @@ En la ficha Moderación **** del usuario, configure la moderación de los coment
 
 * **[!UICONTROL Cerrar/volver a abrir Comentarios]** Si está activado, permita que los moderadores de miembros de confianza cierren y vuelvan a abrir los comentarios. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Marcar comentarios]** Si se selecciona, permita a los visitantes marcar los comentarios como inapropiados. El valor predeterminado no está marcado.
+* **[!UICONTROL Marcar comentarios]** Si está activada, permita que los visitantes marquen comentarios como inapropiados. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Indicar lista]** de motivos Si está activada, permita que los visitantes elijan, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
+* **[!UICONTROL Marcar Lista]** de motivo Si está activada, permita que los visitantes elijan, desde una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Razón]** de marca personalizada Si se selecciona, permita que los visitantes introduzcan su propio motivo para marcar un comentario como inapropiado. El valor predeterminado no está marcado.
+* **[!UICONTROL Razón]** de marca personalizada Si está activada, permita que los visitantes introduzcan su propio motivo para marcar un comentario como inapropiado. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Umbral]** de moderaciónEspecifique el número de veces que los visitantes deben marcar un comentario antes de que se notifique a los moderadores. El valor predeterminado es una vez (**1**).
+* **[!UICONTROL Umbral]** de moderaciónIntroduzca el número de veces que los visitantes deben marcar un comentario antes de que se notifique a los moderadores. El valor predeterminado es una vez (
+**1**).
 
-* **[!UICONTROL Límite]** de marcado Escriba el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser mayor o igual que el umbral **de moderación**. El valor predeterminado es 5.
+* **[!UICONTROL Límite]** de marcado Escriba el número de veces que se debe marcar un comentario antes de que se oculte en la vista pública. Este número debe ser bueno o igual que la variable 
+**Umbral de moderación**. El valor predeterminado es 5.
 
 ## Información adicional {#additional-information}
 

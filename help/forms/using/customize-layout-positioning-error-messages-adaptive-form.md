@@ -1,8 +1,8 @@
 ---
 title: Personalización de la presentación y colocación de los mensajes de error de un formulario adaptable
 seo-title: Personalización de la presentación y colocación de los mensajes de error de un formulario adaptable
-description: 'Puede personalizar el diseño y la posición de los mensajes de error de una adaptación para. '
-seo-description: 'Puede personalizar el diseño y la posición de los mensajes de error de una adaptación para. '
+description: 'Puede personalizar el diseño y la posición de los mensajes de error de un adaptador para. '
+seo-description: 'Puede personalizar el diseño y la posición de los mensajes de error de un adaptador para. '
 uuid: 18b6d770-8b68-4aa0-b866-6325a6ceabcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Siga estos pasos para aplicar un diseño personalizado a un solo campo:
 
 ### Personalización de la presentación de todos los campos de un formulario {#customize-layout-of-all-the-fields-of-a-form}
 
-Con AEM Forms, ahora puede crear un tema y aplicarlo al formulario. El editor de temas permite especificar el estilo de los componentes del formulario en un solo lugar. Al crear un tema, se especifica el estilo en un nivel de componente. Para obtener más información sobre los temas, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
+Con AEM Forms, ahora puede crear un tema y aplicarlo al formulario. El editor de temas permite especificar el estilo de los componentes del formulario en un solo lugar. Al crear un tema, se especifica el estilo en un nivel de componente. Para obtener más información sobre temáticas, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
 
 Cree un tema con el Editor de temas para personalizar la presentación de todos los campos del formulario. Después de crear un tema, realice los siguientes pasos para aplicarlo a un formulario:
 
@@ -57,7 +60,7 @@ Cree un tema con el Editor de temas para personalizar la presentación de todos 
 
 1. Para agregar nuevos estilos y comportamiento, cree una biblioteca de cliente en el nodo /etc.
 
-   Por ejemplo, en la ubicación /etc/af-field-layout-clientlib, cree el nodo client-library. Agregue la propiedad categories con el valor af.field.errorOnRight y el archivo style.less con el siguiente código:
+   Por ejemplo, en la ubicación /etc/af-field-layout-clientlib, cree el nodo client-library. Añada la propiedad categorías con el valor af.field.errorOnRight y el archivo style.less con el siguiente código:
 
    ```css
    .widgetErrorWrapper {

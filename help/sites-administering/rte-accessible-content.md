@@ -1,8 +1,8 @@
 ---
 title: Configuración de RTE para la producción de sitios accesibles
 seo-title: Configuración de RTE para la producción de sitios accesibles
-description: Obtenga información sobre cómo configurar el editor de texto enriquecido de AEM para crear sitios accesibles.
-seo-description: Obtenga información sobre cómo configurar el editor de texto enriquecido de AEM para crear sitios accesibles.
+description: Obtenga información sobre cómo configurar el Editor de texto enriquecido AEM para crear sitios accesibles.
+seo-description: Obtenga información sobre cómo configurar el Editor de texto enriquecido AEM para crear sitios accesibles.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,7 @@ El componente **Texto** de AEM está disponible tanto para las IU táctiles como
 >
 >* [Complementos y sus funciones](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Complementos y sus funciones: IU táctil](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -63,9 +67,9 @@ Las instrucciones completas sobre la configuración de RTE están disponibles en
 * [Activar un complemento y Configurar la propiedad de funciones](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configuración de otra funcionalidad del RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Al configurar un complemento dentro de la `rtePlugins` subramificación adecuada en CRXDE Lite (ver la siguiente imagen), puede activar todas las características o específicas de ese complemento.
+Al configurar un complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite (consulte la siguiente imagen), puede activar todas las funciones o características específicas de ese complemento.
 
-![CRXDE Lite muestra un ejemplo de rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Lite que muestra un ejemplo de rtePlugin.](assets/chlimage_1-208.png)
 
 ### Ejemplo: Especificación de formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -77,6 +81,7 @@ Los nuevos formatos de bloque semántico pueden estar disponibles para su selecc
 1. Los formatos de párrafo están disponibles para el autor del contenido desde los campos de selección en RTE. Se puede acceder a ellos:
 
    * Uso del icono de párrafo ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) en la IU táctil:
+
    ![Icono de párrafo (pilcrow).](do-not-localize/chlimage_1-7.png)
 
    * Uso del campo **Formato** (selector desplegable) en la IU clásica.
@@ -92,13 +97,13 @@ En algunos casos, los autores de contenido encontrarán necesario examinar y aju
 >
 >Utilice la `sourceedit` función con cuidado. Los errores de escritura y/o las funciones no compatibles pueden provocar más problemas.
 
-## Adición de compatibilidad con elementos y atributos HTML adicionales {#adding-support-for-additional-html-elements-and-attributes}
+## Añadir compatibilidad con elementos y atributos HTML adicionales {#adding-support-for-additional-html-elements-and-attributes}
 
-Para ampliar aún más las funciones de accesibilidad de AEM, es posible ampliar los componentes existentes basados en RTE (como los componentes **Texto** y **Tabla** ) con elementos y atributos adicionales.
+Para ampliar aún más las características de accesibilidad de AEM, es posible ampliar los componentes existentes basados en el RTE (como los componentes **Texto** y **Tabla** ) con elementos y atributos adicionales.
 
 El siguiente procedimiento ilustra cómo ampliar el componente **Tabla** con un elemento **Rótulo** que proporciona información sobre una tabla de datos a los usuarios de tecnología de asistencia:
 
-### Ejemplo: Adición del rótulo al cuadro de diálogo Propiedades de tabla {#example-adding-the-caption-to-the-table-properties-dialog}
+### Ejemplo: Añadir el rótulo al cuadro de diálogo Propiedades de tabla {#example-adding-the-caption-to-the-table-properties-dialog}
 
 En el constructor del `TablePropertiesDialog`, agregue un campo de entrada de texto adicional que se utilice para editar el rótulo. Tenga en cuenta que `itemId` debe configurarse en `caption` (es decir, el nombre del atributo DOM) para gestionar automáticamente su contenido.
 
@@ -110,7 +115,7 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
 
 ### Instrucciones paso a paso {#step-by-step-instructions}
 
-1. Inicie CRXDE Lite. Por ejemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Inicio CRXDE Lite. Por ejemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copiar:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -131,7 +136,7 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
 
-1. Abra el siguiente archivo para editarlo (ábralo con doble clic):
+1. Abra el siguiente archivo para editarlo (ábralo con doble-clic):
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
@@ -141,7 +146,7 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
    var dialogRef = this;
    ```
 
-   Agregue el siguiente código:
+   Añada el siguiente código:
 
    ```
    editItems.push({
@@ -157,7 +162,7 @@ En la **tabla** debe establecer o eliminar explícitamente el atributo en o desd
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Agregue el siguiente código al final del `transferConfigToTable` método:
+1. Añada el siguiente código al final del `transferConfigToTable` método:
 
    ```
    /**

@@ -1,8 +1,8 @@
 ---
 title: Uso de "Me gusta"
 seo-title: Uso de "Me gusta"
-description: Adición y configuración del componente "Me gusta"
-seo-description: Adición y configuración del componente "Me gusta"
+description: Añadir y configurar el componente "Me gusta"
+seo-description: Añadir y configurar el componente "Me gusta"
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 El `Liking`componente es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el `Liking`componente, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
 
-## Adición de &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
+## Añadir &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
 
 Para agregar un `Liking` componente a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -43,13 +46,19 @@ En la ficha **[!UICONTROL Textos y etiquetas]** , especifique las propiedades ut
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Etiqueta]** de respuesta positiva (*obligatoria*) El nombre de la propiedad para una respuesta positiva.
+* **[!UICONTROL Etiqueta de respuesta positiva]**
+(
+*Requerido*) El nombre de la propiedad para una respuesta positiva.
 
-* **[!UICONTROL Etiqueta]** de respuesta negativa (*obligatoria*) El nombre de la propiedad para una respuesta negativa.
+* **[!UICONTROL Etiqueta de respuesta negativa]**
+(
+*Requerido*) El nombre de la propiedad para una respuesta negativa.
 
-* **[!UICONTROL Tally Name]**(*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+* **[!UICONTROL Nombre de recuento]**
+(
+*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 

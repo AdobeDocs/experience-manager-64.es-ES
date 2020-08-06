@@ -11,27 +11,30 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
 
 # Aprovisionamiento de usuarios justo a tiempo {#just-in-time-user-provisioning}
 
-Los formularios de AEM admiten el aprovisionamiento puntual de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento justo a tiempo, los usuarios se agregan automáticamente a Administración de usuarios después de autenticar correctamente sus credenciales. Además, las funciones y los grupos relevantes se asignan de forma dinámica al nuevo usuario.
+AEM formularios admite el aprovisionamiento justo a tiempo de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento justo a tiempo, los usuarios se agregan automáticamente a Administración de usuarios después de autenticar correctamente sus credenciales. Además, las funciones y los grupos relevantes se asignan de forma dinámica al nuevo usuario.
 
 ## Necesidad de aprovisionamiento de usuarios justo a tiempo {#need-for-just-in-time-user-provisioning}
 
 Así es como funciona la autenticación tradicional:
 
-1. Cuando un usuario intenta iniciar sesión en formularios AEM, la Administración de usuarios pasa las credenciales del usuario secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.)
+1. Cuando un usuario intenta iniciar sesión en formularios AEM, Administración de usuarios pasa las credenciales del usuario secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.)
 1. El proveedor de autenticación valida las credenciales.
 1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de Administración de usuarios. Los siguientes son posibles resultados:
 
-   **** Existe: Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o está bloqueado, Administración de usuarios devuelve un error de autenticación.
+   **Existe:** Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o está bloqueado, Administración de usuarios devuelve un error de autenticación.
 
-   **** No existe: Administración de usuarios devuelve un error de autenticación.
+   **No existe:** Administración de usuarios devuelve un error de autenticación.
 
-   **** No válido: Administración de usuarios devuelve un error de autenticación.
+   **No válido:** Administración de usuarios devuelve un error de autenticación.
 
 1. Se evalúa el resultado devuelto por el proveedor de autenticación. Si el proveedor de autenticación devolvió la autenticación correctamente, se permite al usuario iniciar sesión. De lo contrario, la Administración de usuarios comprueba con el siguiente proveedor de autenticación (pasos 2 a 3).
 1. Se devuelve un error de autenticación si ningún proveedor de autenticación disponible valida las credenciales de usuario.
@@ -42,7 +45,7 @@ Cuando se implementa el aprovisionamiento justo a tiempo, se crea dinámicamente
 
 ### API para aprovisionamiento justo a tiempo {#apis-for-just-in-time-provisioning}
 
-Los formularios AEM proporcionan las siguientes API para el aprovisionamiento justo a tiempo:
+AEM formularios proporciona las siguientes API para el aprovisionamiento justo a tiempo:
 
 ```as3
 package com.adobe.idp.um.spi.authentication  ; 
@@ -92,13 +95,13 @@ public Boolean assign(User user);
 
    * En la Consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios > Nuevo dominio de empresa.
    * Configure el dominio y seleccione Habilitar aprovisionamiento justo a tiempo. <!--Fix broken link (See Setting up and managing domains).-->
-   * Agregue proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un Creador de identidad y un Proveedor de asignación registrados.
+   * Añadir proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un Creador de identidad y un Proveedor de asignación registrados.
 
 1. Guarde el nuevo dominio.
 
 ## Entre bastidores {#behind-the-scenes}
 
-Supongamos que un usuario está intentando iniciar sesión en formularios AEM y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de Administración de usuarios, se produce un error en la comprobación de identidad del usuario. Los formularios AEM ahora realizan las siguientes acciones:
+Supongamos que un usuario intenta iniciar sesión en AEM formularios y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de Administración de usuarios, se produce un error en la comprobación de identidad del usuario. AEM formularios ahora realiza las siguientes acciones:
 
 1. Cree un `UserProvisioningBO` objeto con los datos de autenticación y colóquelo en un mapa de credenciales.
 1. Según la información de dominio devuelta por `UserProvisioningBO`, recupere e e invoque el registro `IdentityCreator` y `AssignmentProvider` para el dominio.

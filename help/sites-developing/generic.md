@@ -1,8 +1,8 @@
 ---
 title: Desarrollo (genérico)
 seo-title: Desarrollo (genérico)
-description: El marco de integración incluye una capa de integración con una API que le permite crear componentes de AEM para las capacidades de comercio electrónico
-seo-description: El marco de integración incluye una capa de integración con una API que le permite crear componentes de AEM para las capacidades de comercio electrónico
+description: El marco de integración incluye una capa de integración con una API que le permite crear componentes AEM para las capacidades de comercio electrónico
+seo-description: El marco de integración incluye una capa de integración con una API que le permite crear componentes AEM para las capacidades de comercio electrónico
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >[La documentación](/help/sites-developing/ecommerce.md#api-documentation) de API también está disponible.
 
-El marco de integración incluye una capa de integración con una API. Esto le permite crear componentes de AEM para las capacidades de comercio electrónico (independientemente de su motor de comercio electrónico específico). También le permite utilizar la base de datos CRX interna o conectar un sistema de comercio electrónico y extraer datos de productos en AEM.
+El marco de integración incluye una capa de integración con una API. Esto le permite crear componentes de AEM para las capacidades de comercio electrónico (independientemente del motor de comercio electrónico específico). También le permite utilizar la base de datos CRX interna o conectar un sistema de comercio electrónico y extraer datos de productos en AEM.
 
-Se proporcionan varios componentes de AEM integrados para utilizar la capa de integración. Actualmente son:
+Se proporcionan varios componentes de AEM listos para usar para utilizar la capa de integración. Actualmente son:
 
 * Un componente de visualización de productos
 * Un carro de compras
@@ -35,11 +35,11 @@ Se proporcionan varios componentes de AEM integrados para utilizar la capa de in
 * Cierre de compra
 * Búsqueda  
 
-Para buscar, se proporciona un enlace de integración que le permite utilizar la búsqueda de AEM, una búsqueda de terceros (como Search&amp;Promote) o una combinación de estos.
+Para la búsqueda se proporciona un enlace de integración que le permite utilizar la búsqueda AEM, una búsqueda de terceros (como Search&amp;Promote) o una combinación de estos.
 
 ## Selección del motor de comercio electrónico {#ecommerce-engine-selection}
 
-El marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico; AEM debe identificar el motor que se utiliza, incluso cuando se utiliza el motor genérico AEM:
+El marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico; el motor que se utiliza debe identificarse por AEM, incluso cuando se utiliza el motor genérico AEM:
 
 * Los motores de comercio electrónico son servicios OSGi que admiten la `CommerceService` interfaz
 
@@ -59,7 +59,7 @@ El marco de comercio electrónico se puede utilizar con cualquier solución de c
    * Por ejemplo, una `cq:commerceProvider` propiedad con el valor geometrixx se correlacionará con la configuración OSGi para **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), donde el parámetro `commerceProvider` también tiene el valor `geometrixx`.
    * Aquí se pueden configurar otras propiedades (cuando sea apropiado y esté disponible).
 
-En una instalación estándar de AEM se requiere una implementación específica, por ejemplo:
+En una instalación AEM estándar se requiere una implementación específica, por ejemplo:
 
 |  |  |
 |---|---|
@@ -125,7 +125,7 @@ Cualquier recurso de producto puede representarse mediante un `Product API`. La 
 >
 >De hecho, los ejes de variante se determinan por lo que `Product.getVariantAxes()` devuelva:
 >
->* para la implementación genérica, AEM la lee desde una propiedad de los datos del producto ( `cq:productVariantAxes`)
+>* para la implementación genérica AEM leerla desde una propiedad en los datos del producto ( `cq:productVariantAxes`)
 >
 >
 Mientras que los productos (en general) pueden tener muchos ejes de variante, el componente de producto listo para usar solo gestiona dos:
@@ -135,7 +135,7 @@ Mientras que los productos (en general) pueden tener muchos ejes de variante, el
 
 >
 >   
-Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
+Esta variante adicional se selecciona mediante la `variationAxis` propiedad de la referencia del producto (generalmente `color` para Geometrixx Outdoors).
 
 #### Referencias del producto y datos PIM {#product-references-and-pim-data}
 
@@ -259,7 +259,7 @@ public class AxisFilter implements VariantFilter {
          * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda los atributos de producto directamente de sus propios antecesores.
 
 
-* **Estructura de producto genérica de AEM**
+* **Estructura de producto AEM-genérica**
 
    * Cada variante debe tener su propio nodo de hoja.
    * La interfaz de producto representa productos y variantes, pero el nodo de repositorio relacionado es específico sobre cuál es.
@@ -335,16 +335,16 @@ public class AxisFilter implements VariantFilter {
 
 * Almacenamiento
 
-   * En los casos genéricos de AEM, los carros de compras de se almacenan en [ClientContext](/help/sites-administering/client-context.md)
+   * En el caso AEM genéricos, los carros de compras se almacenan en el [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalización**
 
-* La personalización siempre debe impulsarse a través de [ClientContext](/help/sites-administering/client-context.md).
+* La personalización siempre debe impulsarse a través del [ClientContext](/help/sites-administering/client-context.md).
 * Se crea un ClientContext `/version/` del carro de compras en todos los casos:
 
    * Los productos deben agregarse mediante el `CommerceSession.addCartEntry()` método .
 
-* A continuación se muestra un ejemplo de información del carro de compras en el carro de compras ClientContext:
+* A continuación se muestra un ejemplo de información del carro de compras en el carro de ClientContexts:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -477,10 +477,10 @@ El punto de entrada para la API de búsqueda es el `CommerceService#search` mét
 
       * `DiscountPromotionHandler`, que aplica un descuento absoluto o porcentual para todo el carro de compras
       * `PerfectPartnerPromotionHandler`, que aplica un descuento absoluto o porcentual del producto si el producto asociado también está en el carro de compras
-   * ClientContext `SegmentMgr` resuelve los segmentos y ClientContext `CartMgr` resuelve las promociones. Se activarán todas las promociones que estén sujetas a al menos un segmento resuelto.
+   * El ClientContext `SegmentMgr` resuelve los segmentos y el ClientContext `CartMgr` resuelve las promociones. Se activarán todas las promociones que estén sujetas a al menos un segmento resuelto.
 
       * Las promociones activadas se envían nuevamente al servidor mediante una llamada AJAX para volver a calcular el carro de compras.
-      * Las promociones activadas (y los cupones agregados) también se muestran en el panel ClientContext.
+      * Las promociones activadas (y los cupones añadidos) también se muestran en el panel ClientContext.
 
 
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ En AEM 6, la compatibilidad con LDAP incluye una nueva implementación que requi
 Todas las configuraciones de LDAP están ahora disponibles como configuraciones de OSGi. Se pueden configurar mediante la consola de administración web en:\
 `https://serveraddress:4502/system/console/configMgr`
 
-Para que LDAP funcione con AEM, debe crear tres configuraciones OSGi:
+Para que LDAP funcione con AEM, debe crear tres configuraciones de OSGi:
 
 1. Proveedor de identidad LDAP (IDP).
 1. Controlador de sincronización.
@@ -42,7 +45,7 @@ Para que LDAP funcione con AEM, debe crear tres configuraciones OSGi:
 >
 >Observe el módulo de inicio de sesión externo de [Oak: autenticándose con LDAP y más allá](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) para crear módulos de inicio de sesión externos profundos.
 >
->Para leer un ejemplo de cómo configurar Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.4 para utilizar el servicio de directorio Apache.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
+>Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.4 para utilizar el servicio de directorio Apache.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
 
 ## Configuración del proveedor de identidad LDAP {#configuring-the-ldap-identity-provider}
 
@@ -124,7 +127,7 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
   </tr> 
   <tr> 
    <td><strong>Clases de objetos de grupo</strong></td> 
-   <td>Lista de clases de objetos que debe contener una entrada de grupo.</td> 
+   <td>La lista de las clases de objeto que debe contener una entrada de grupo.</td> 
   </tr> 
   <tr> 
    <td><strong>Atributo de nombre de grupo</strong></td> 
@@ -169,7 +172,7 @@ Las siguientes opciones de configuración están disponibles para el controlador
   </tr> 
   <tr> 
    <td><strong>Asignación de propiedades de usuario</strong></td> 
-   <td>Enumerar la definición de asignación de propiedades locales de las externas.</td> 
+   <td>Definición de asignación de Listas de propiedades locales de las externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefijo de ruta de usuario</strong></td> 
@@ -193,7 +196,7 @@ Las siguientes opciones de configuración están disponibles para el controlador
   </tr> 
   <tr> 
    <td><strong>Asignación de propiedades de grupo</strong></td> 
-   <td>Enumerar la definición de asignación de propiedades locales de las externas.</td> 
+   <td>Definición de asignación de Listas de propiedades locales de las externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefijo de ruta de grupo</strong></td> 
@@ -223,7 +226,7 @@ Están disponibles las siguientes opciones de configuración:
 
 >[!NOTE]
 >
->Si planea tener más de una configuración LDAP con su instancia de AEM, es necesario crear proveedores de identidad y controladores de sincronización independientes para cada configuración.
+>Si planea tener más de una configuración LDAP con la instancia de AEM, deben crearse proveedores de identidad y controladores de sincronización independientes para cada configuración.
 
 ## Configurar LDAP sobre SSL {#configure-ldap-over-ssl}
 
@@ -255,7 +258,7 @@ Los certificados con firma automática se pueden utilizar al configurar AEM para
 
    `openssl req -new -x509 -days [number of days for certification] -key certificatefile.key -out root-ca.crt -config CA/openssl.cnf`
 
-1. Inspeccione el certificado recién generado para asegurarse de que todo está en orden:
+1. Inspect el certificado recién generado para asegurarse de que todo está en orden:
 
    `openssl x509 -noout -text -in root-ca.crt`
 
@@ -289,11 +292,11 @@ Para habilitar el registro de depuración, debe:
 
 ## Una palabra sobre la afiliación al grupo {#a-word-on-group-affiliation}
 
-Los usuarios sincronizados mediante LDAP pueden formar parte de diferentes grupos en AEM. Estos grupos pueden ser grupos LDAP externos que se agregarán a AEM como parte del proceso de sincronización, pero también pueden ser grupos que se agregan por separado y que no forman parte del esquema de afiliación de grupo LDAP original.
+Los usuarios sincronizados a través de LDAP pueden formar parte de diferentes grupos en AEM. Estos grupos pueden ser grupos LDAP externos que se agregarán a AEM como parte del proceso de sincronización, pero también pueden ser grupos que se agregan por separado y que no forman parte del esquema de afiliación de grupo LDAP original.
 
-En la mayoría de los casos, estos grupos pueden ser agregados por un administrador local de AEM o por cualquier otro proveedor de identidad.
+En la mayoría de los casos, estos grupos pueden ser agregados por un administrador de AEM local o por cualquier otro proveedor de identidad.
 
-Si se elimina un usuario de un grupo en el servidor LDAP, el cambio también se reflejará en AEM una vez que se haya realizado la sincronización. Sin embargo, todas las demás afiliaciones de grupo del usuario que no fueron agregadas por LDAP permanecerán en su lugar.
+Si un usuario se elimina de un grupo en el servidor LDAP, el cambio también se reflejará en el lado AEM una vez que se haya realizado la sincronización. Sin embargo, todas las demás afiliaciones de grupo del usuario que no fueron agregadas por LDAP permanecerán en su lugar.
 
 AEM detecta y gestiona la depuración de usuarios de grupos externos mediante el uso de la `rep:externalId` propiedad. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
 

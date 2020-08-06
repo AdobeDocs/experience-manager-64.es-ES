@@ -296,8 +296,8 @@ Algunas prácticas recomendadas y puntos clave que hay que recordar al trabajar 
 * El componente Archivo adjunto, de forma predeterminada, permite al usuario adjuntar un solo archivo. Sin embargo, puede configurar las propiedades del componente para que admitan varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden provocar algunos problemas. Por lo tanto, se recomienda asociar un identificador único para cada archivo adjunto enviado en el envío del formulario. Para ello:
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager > Herramientas > Operaciones > Consola]** web.
-   1. Busque y toque el servicio **[!UICONTROL de configuración de formularios]** adaptables.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
+   1. Toque y busque el servicio **** de configuración adaptable de Forms.
+   1. En el cuadro de diálogo Servicio de configuración adaptable de Forms, active **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
 
 * Para permitir que los usuarios adjunten un PDF mediante el navegador Safari, asegúrese de que **[!UICONTROL application/pdf]** se agrega a la propiedad Tipos de archivo admitidos del componente Archivo adjunto. Los formularios adaptables creados con la versión anterior de AEM Forms pueden contener **[!UICONTROL .pdf]** en lugar de **[!UICONTROL application/pdf]** en la propiedad Tipos de archivo admitidos.
 

@@ -95,7 +95,7 @@ Para generar informes, asegúrese de lo siguiente:
 
    ![Página de detalles del informe Uso compartido de vínculos](assets/link_share.png)
 
-1. Haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. En la página **[!UICONTROL Configurar columnas]** , se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Anule la selección de una columna seleccionada para excluirla del informe.
 
@@ -105,7 +105,7 @@ Para generar informes, asegúrese de lo siguiente:
 
    ![Seleccionar o anular la selección de las columnas del informe](assets/custom_columns.png)
 
-1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 1. En la página Informes [!UICONTROL de] recursos, el estado de generación de informes se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Éxito], [!UICONTROL Error], [!UICONTROL En cola]o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones.Para vista de la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
@@ -146,7 +146,7 @@ Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
    Para agregar más columnas personalizadas, haga clic en **[!UICONTROL Añadir]** y repita los pasos 5 y 6.
 
-1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 
 ## Configurar el servicio de depuración {#configure-purging-service}
 

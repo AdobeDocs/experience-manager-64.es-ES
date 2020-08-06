@@ -1,8 +1,8 @@
 ---
-title: Referencia de predicado del Generador de consultas
-seo-title: Referencia de predicado del Generador de consultas
-description: Referencia de predicado completa para la API de Query Builder.
-seo-description: Referencia de predicado completa para la API de Query Builder.
+title: Referencia de predicado del Generador de Consultas
+seo-title: Referencia de predicado del Generador de Consultas
+description: Referencia de predicado completa para la API de Consulta Builder.
+seo-description: Referencia de predicado completa para la API de Consulta Builder.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 3%
 
 ---
 
 
-# Referencia de predicado del Generador de consultas{#query-builder-predicate-reference}
+# Referencia de predicado del Generador de Consultas{#query-builder-predicate-reference}
 
 ## General {#general}
 
@@ -54,13 +57,15 @@ Coincide con las propiedades BOOLEAN de JCR. Solo acepta los valores &quot; `tru
 
 El parámetro &quot; `operation`&quot; heredado no tiene significado.
 
-Admite extracción de facetas. Proporcionará bloques para cada `true` o `false` valor, pero sólo para las propiedades existentes.
+Admite la extracción de facetas. Proporcionará bloques para cada `true` o `false` valor, pero sólo para las propiedades existentes.
 
 #### Propiedades {#properties}
 
-* **ruta** relativa de la propiedad boolproperty a la propiedad, por ejemplo `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
+* **ruta** relativa de la propiedad boolproperty a la propiedad, por ejemplo 
+`myFeatureEnabled` o `jcr:content/myFeatureEnabled`
 
-* **valor** para comprobar la propiedad, &quot; `true`&quot; o &quot; `false`&quot;
+* **value** value para comprobar la propiedad, &quot; 
+`true`&quot; o &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -76,7 +81,7 @@ No admite la extracción de facetas.
 
 ### dateComparison {#datecomparison}
 
-Compara dos propiedades JCR DATE entre sí. Puede probar si son iguales, desiguales, mayores o mayores que o iguales.
+Compara dos propiedades JCR DATE entre sí. Puede probar si son iguales, desiguales, buenos o buenos que o iguales.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
@@ -92,7 +97,7 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
 * **operation**
 
-   &quot; `=`&quot; para coincidencia exacta, &quot; `!=`&quot; para comparación de desigualdad, &quot; `>`&quot; para propiedad1 mayor que property2, &quot; `>=`&quot; para propiedad1 mayor o igual que property2. El valor predeterminado es &quot; `=`&quot;.
+   &quot; `=`&quot; para coincidencia exacta, &quot; `!=`&quot; para comparación de desigualdad, &quot; `>`&quot; para propiedad1 buena que propiedad2, &quot; `>=`&quot; para propiedad1 buena o igual a propiedad2. El valor predeterminado es &quot; `=`&quot;.
 
 ### daterange {#daterange}
 
@@ -101,7 +106,7 @@ para fechas y horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) y permite también representac
 
 Puede buscar cualquier cosa entre dos marcas de hora, cualquier cosa nueva o anterior a una fecha determinada, y también elegir entre intervalos abiertos e inclusivos.
 
-Admite extracción de facetas. Proporcionará cubos &quot;hoy&quot;, &quot;esta semana&quot;, &quot;este mes&quot;, &quot;los últimos 3 meses&quot;, &quot;este año&quot;, &quot;el año pasado&quot; y &quot;antes que el año pasado&quot;.
+Admite la extracción de facetas. Proporcionará cubos &quot;hoy&quot;, &quot;esta semana&quot;, &quot;este mes&quot;, &quot;los últimos 3 meses&quot;, &quot;este año&quot;, &quot;el año pasado&quot; y &quot;antes que el año pasado&quot;.
 
 No admite el filtrado.
 
@@ -133,7 +138,7 @@ No admite el filtrado.
 
 ### excludepaths {#excludepaths}
 
-Excluye los nodos del resultado donde su ruta coincide con una expresión regular.
+Excluye los nodos del resultado donde su ruta coincide con una expresión normal.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
@@ -143,7 +148,7 @@ No admite la extracción de facetas.
 
 * **excludepaths**
 
-   expresión regular coincidente con las rutas de resultados, excluyendo las coincidentes del resultado.
+   expresión regular comparada con rutas de resultados, excluyendo las coincidentes del resultado.
 
 ### fulltext {#fulltext}
 
@@ -167,7 +172,7 @@ No admite la extracción de facetas.
 
 Permite crear condiciones anidadas. Los grupos pueden contener grupos anidados. Todo en una consulta querybuilder está implícito en un grupo raíz, que también puede tener `p.or` y `p.not` parámetros.
 
-Ejemplo de coincidencia de una de las dos propiedades con un valor:
+Ejemplo para hacer coincidir una de las dos propiedades con un valor:
 
 ```
 group.p.or=true
@@ -230,7 +235,7 @@ Busca páginas de CQ en un idioma específico. Esto observa tanto la propiedad d
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
-Admite extracción de facetas. Proporcionará bloques para cada código de idioma único.
+Admite la extracción de facetas. Proporcionará bloques para cada código de idioma único.
 
 #### Propiedades {#properties-8}
 
@@ -244,7 +249,7 @@ Comprueba si un nodo es un recurso principal DAM y no un recurso secundario. Bá
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
-Admite extracción de facetas. Proporcionará 2 bloques para los recursos principales y los subrecursos.
+Admite la extracción de facetas. Proporcionará 2 bloques para los recursos principales y los subrecursos.
 
 #### Propiedades {#properties-9}
 
@@ -268,7 +273,7 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
 Coincide en los nombres de nodo JCR.
 
-Admite extracción de facetas. Proporcionará bloques para cada nombre de nodo único (nombre de archivo).
+Admite la extracción de facetas. Proporcionará bloques para cada nombre de nodo único (nombre de archivo).
 
 #### Propiedades {#properties-11}
 
@@ -278,7 +283,7 @@ Admite extracción de facetas. Proporcionará bloques para cada nombre de nodo �
 
 ### notexpired {#notexpired}
 
-Coincide con los elementos comprobando si una propiedad DATE de JCR es mayor o igual que la hora del servidor actual. Se puede utilizar para comprobar una propiedad de fecha &quot; `expiresAt`&quot; similar y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
+Coincide con los elementos comprobando si una propiedad JCR DATE es buena o igual a la hora del servidor actual. Se puede utilizar para comprobar una propiedad de fecha &quot; `expiresAt`&quot; similar y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
 
 No admite el filtrado.
 
@@ -302,7 +307,7 @@ Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, est
 
 * **orderby**
 
-   el nombre de la propiedad JCR indicado por un signo @, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`, u otro predicado en la consulta, por ejemplo `2_property`, en el que ordenar
+   el nombre de la propiedad JCR se indica mediante un signo @, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`, u otro predicado de la consulta, por ejemplo `2_property`, en el que ordenar
 
 * **ordenar**
 
@@ -340,7 +345,7 @@ No admite la extracción de facetas.
 
 Coincide con las propiedades JCR y sus valores.
 
-Admite extracción de facetas. Proporcionará bloques para cada valor de propiedad único en los resultados.
+Admite la extracción de facetas. Proporcionará bloques para cada valor de propiedad único en los resultados.
 
 #### Propiedades {#properties-15}
 
@@ -432,9 +437,9 @@ Admite la extracción de facetas del mismo modo que el predicado de rango de fec
 
 ### root {#root}
 
-Grupo predicado raíz. Admite todas las características de un grupo y permite establecer parámetros de consulta globales.
+Grupo predicado raíz. Admite todas las funciones de un grupo y permite establecer parámetros de consulta globales.
 
-El nombre &quot;root&quot; nunca se utiliza en una consulta, es implícito.
+El nombre &quot;root&quot; nunca se usa en una consulta, es implícito.
 
 #### Propiedades {#properties-18}
 
@@ -464,7 +469,7 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, es implícito.
 
    * **completa**:
 
-      representación JSON sling del nodo, con `jcr:path` indicación de la ruta de la visita: de forma predeterminada, sólo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado determinado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      representación JSON sling del nodo, con `jcr:path` indicación de la ruta de la visita: de forma predeterminada, solo lista las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado determinado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **selectivo**:
 
@@ -472,11 +477,11 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, es implícito.
 
 ### savedquery {#savedquery}
 
-Incluye todos los predicados de una consulta querybuilder persistente en la consulta actual como predicado de subgrupo.
+Incluye todos los predicados de una consulta de querybuilder persistente en la consulta actual como predicado de subgrupo.
 
 Tenga en cuenta que esto no ejecutará una consulta adicional sino que extenderá la consulta actual.
 
-Las consultas pueden persistir mediante programación mediante `QueryBuilder#storeQuery()`. El formato puede ser una propiedad String de varias líneas o un `nt:file` nodo que contenga la consulta como archivo de texto en formato de propiedades Java.
+Las Consultas pueden persistir mediante programación mediante `QueryBuilder#storeQuery()`. El formato puede ser una propiedad String de varias líneas o un `nt:file` nodo que contenga la consulta como archivo de texto en formato de propiedades Java.
 
 No admite la extracción de facetas para los predicados de la consulta guardada.
 
@@ -496,13 +501,14 @@ No admite el filtrado. No admite la extracción de facetas.
 
 * **ruta de acceso absoluta similar** al nodo para el que buscar nodos similares
 
-* **local** una ruta relativa a un nodo descendiente o `.` para el nodo actual (opcional, el valor predeterminado es &quot; `.`&quot;)
+* **local** una ruta relativa a un nodo descendiente o 
+`.` para el nodo actual (opcional, el valor predeterminado es &quot; `.`&quot;)
 
 ### tag {#tag}
 
 Busca contenido etiquetado con una o varias etiquetas, especificando las rutas de título de las etiquetas.
 
-Admite extracción de facetas. Proporcionará bloques para cada etiqueta única, utilizando su ruta de título de etiqueta actual.
+Admite la extracción de facetas. Proporcionará bloques para cada etiqueta única, utilizando su ruta de título de etiqueta actual.
 
 #### Propiedades {#properties-21}
 
@@ -522,7 +528,7 @@ Admite extracción de facetas. Proporcionará bloques para cada etiqueta única,
 
 Busca contenido etiquetado con una o varias etiquetas, especificando los ID de las etiquetas.
 
-Admite extracción de facetas. Proporcionará bloques para cada etiqueta única, utilizando su ID de etiqueta actual.
+Admite la extracción de facetas. Proporcionará bloques para cada etiqueta única, utilizando su ID de etiqueta actual.
 
 #### Propiedades {#properties-22}
 
@@ -566,7 +572,7 @@ No admite la extracción de facetas.
 
 Restringe los resultados a un tipo de nodo JCR específico, tanto el tipo de nodo principal como el tipo de mezcla. También se encontrarán subtipos de ese tipo de nodo. Tenga en cuenta que los índices de búsqueda del repositorio deben cubrir los tipos de nodos para una ejecución eficaz.
 
-Admite extracción de facetas. Proporcionará bloques para cada tipo único en los resultados.
+Admite la extracción de facetas. Proporcionará bloques para cada tipo único en los resultados.
 
 #### Propiedades {#Properties-2}
 

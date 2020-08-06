@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 74%
 
 ---
 
@@ -153,7 +156,7 @@ Puede configurar lo siguiente en las fichas **Visualización**, **Información d
 
 * **Información del objeto Link**
 
-   Agrega información adicional sobre cómo utilizar el vínculo.
+   Añade información adicional sobre cómo utilizar el vínculo.
 
 * **LinkType**
 
@@ -161,7 +164,7 @@ Puede configurar lo siguiente en las fichas **Visualización**, **Información d
 
 * **Parámetro de URL adicional**
 
-   Agregue parámetros de URL adicionales. Haga clic en Añadir elemento para añadir varios elementos.
+   Añada cualquier parámetro de URL adicional. Haga clic en Añadir elemento para añadir varios elementos.
 
 >[!NOTE]
 >
@@ -271,6 +274,7 @@ En el editor directo puede añadir texto, cambiar la justificación, añadir y q
 >
 >* Los campos de personalización estarán disponibles dependiendo de la plantilla de Adobe Campaign a la que está vinculada el boletín.
 >* Después de seleccionar una persona de ContextHub, los campos de personalización se sustituyen automáticamente con datos del perfil seleccionado.
+
 >
 >
 Consulte [Insertar personalización](/help/sites-authoring/campaign.md#inserting-personalization).
@@ -319,7 +323,7 @@ En la tabla siguiente se describen los componentes que pueden visualizar y modif
   <tr> 
    <td><p>Casilla (Campaign)</p> </td> 
    <td><p>boolean</p> </td> 
-   <td><p>Ya no hay contacto (por ningún canal)</p> </td> 
+   <td><p>Ya no hay contacto (por cualquier canal)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td> 
@@ -364,7 +368,7 @@ En la mayoría de los componentes puede configurar lo siguiente:
 
 * **Descripción**
 
-   Agregue una descripción al campo para proporcionar más información a los usuarios.
+   Añada una descripción en el campo para proporcionar más información a los usuarios.
 
 * **Mostrar sólo valor**
 
@@ -425,7 +429,8 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 * **Mensaje de restricción**
 
    Además, puede agregar un mensaje de restricción para que los usuarios sepan cómo formatear sus respuestas correctamente.
-* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando los iconos **+** y **-** o introduciendo un número.
+* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando en el 
+**+** y **-** o escribir un número.
 
 En el siguiente ejemplo se muestra el componente Campo de fecha (Campaign) con el ancho ajustado que se está visualizando.
 
@@ -442,7 +447,8 @@ Puede configurar lo siguiente en el componente Clave principal cifrada (Campaign
 * **Título y texto - Nombre del elemento**
 
    Valores predeterminados de encryptPK. Solo debe cambiar el nombre del elemento cuando esté en conflicto con el nombre de otro elemento del formulario. Dos campos de formulario no pueden tener el mismo nombre de elemento.
-* **Adobe Campaign: Parámetro de URL** Añadir el parámetro de URL para la EPK. Por ejemplo, puede utilizar el valor **EPK**.
+* **Adobe Campaign: Parámetro de URL** Añadir el parámetro de URL para la EPK. Por ejemplo, puede utilizar el valor 
+**epk**.
 
 En el siguiente ejemplo se muestra el componente Clave principal cifrada (Campaign) que se está visualizando.
 
@@ -458,7 +464,7 @@ En el siguiente ejemplo se muestra el componente Visualización de error (Campai
 
 ### Clave de reconciliación oculta (Campaign) {#hidden-reconciliation-key-campaign}
 
-El componente Clave de reconciliación oculta (Campaign) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
+El componente Clave de reconciliación oculta (Campaña) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
 
 Puede configurar lo siguiente en el componente Clave de reconciliación oculta (Campaign):
 
@@ -484,7 +490,8 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 * **Mensaje de restricción**
 
    Además, puede agregar un mensaje de restricción para que los usuarios sepan cómo formatear sus respuestas correctamente.
-* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando los iconos **+** y **-** o introduciendo un número.
+* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando en el 
+**+** y **-** o escribir un número.
 
 En el siguiente ejemplo se muestra el componente Campo numérico (Campaign) con el ancho configurado que se está visualizando.
 
@@ -500,7 +507,7 @@ Puede [configurar las opciones comunes a la mayoría de componentes de Adobe Cam
 
 En el siguiente ejemplo se muestra el componente Campo de opciones (Campaign) que se está visualizando.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 ### Lista de comprobación de suscripciones (Campaign) {#subscriptions-checklist-campaign}
 
@@ -538,5 +545,5 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 
 En el siguiente ejemplo se muestra el componente Campo de texto (Campaign) que se está visualizando.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 

@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # Lectores de pantalla para formularios HTML5 {#screen-readers-for-html-forms}
 
-Los componentes de formularios HTML5 representan la plantilla de formulario XFA en un formato HTML5. Todos los navegadores estándar compatibles con HTML5 pueden procesar estos formularios. Para admitir una experiencia de captura de datos similar en formularios PDF y HTML5, la presentación de los formularios PDF se conserva en formularios HTML5.
+Los componentes de formularios HTML5 representan la plantilla de formulario XFA en un formato HTML5. Todos los navegadores estándar compatibles con HTML5 pueden procesar estos formularios. Para admitir una experiencia de captura de datos similar en formularios PDF y HTML5, la presentación de PDF forms se conserva en formularios HTML5.
 
 Los formularios HTML5 utilizan construcciones HTML estándar que permiten utilizar herramientas de accesibilidad regulares para HTML con estos formularios. Si un formulario está diseñado según las prácticas recomendadas para formularios accesibles, funciona con cualquier lector de pantalla admitido. Además, estos formularios están activados para la navegación mediante el teclado.
 

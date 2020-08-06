@@ -1,8 +1,8 @@
 ---
 title: Creación de apariencias personalizadas para campos de formulario adaptables
 seo-title: Creación de apariencias personalizadas para campos de formulario adaptables
-description: 'Personalice el aspecto de los componentes integrados en los formularios adaptables. '
-seo-description: 'Personalice el aspecto de los componentes integrados en los formularios adaptables. '
+description: 'Personalice el aspecto de los componentes integrados en Forms adaptable. '
+seo-description: 'Personalice el aspecto de los componentes integrados en Forms adaptable. '
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Analicemos primero los términos y conceptos clave utilizados en este artículo.
 
 **Complemento** jQuery Proporciona un mecanismo estándar, basado en el marco de utilidades jQuery, para implementar un aspecto alternativo.
 
-**ClientLib** Un sistema de bibliotecas del lado del cliente en el procesamiento del lado del cliente de AEM impulsado por código JavaScript y CSS complejo. Para obtener más información, consulte Uso de bibliotecas del lado del cliente.
+**ClientLib** Un sistema de bibliotecas del lado del cliente en AEM procesamiento del lado del cliente impulsado por código JavaScript y CSS complejo. Para obtener más información, consulte Uso de bibliotecas del lado del cliente.
 
 **Archetype** Juego de herramientas de plantilla de proyecto Maven definido como un patrón o modelo original para proyectos Maven. Para obtener más información, consulte Introducción a los arquetipos.
 
@@ -64,8 +67,8 @@ El comando descarga los complementos de Maven y la información de arquetipo del
 * **artiactId**: ID de artefacto utilizado por el proyecto Maven generado.
 * **versión**: Versión del proyecto Maven generado.
 * **paquete**: Paquete utilizado para la estructura de archivos.
-* **artiactName**: Nombre de artefacto del paquete AEM generado.
-* **packageGroup**: Grupo de paquetes del paquete AEM generado.
+* **artiactName**: Nombre del artefacto del paquete de AEM generado.
+* **packageGroup**: Grupo de paquetes del paquete de AEM generado.
 * **widgetName**: Nombre de aspecto utilizado como referencia.
 
 El proyecto generado tiene la siguiente estructura:
@@ -137,15 +140,15 @@ Una vez creada la plantilla de proyecto, realice los siguientes cambios, según 
   </tr> 
   <tr> 
    <td><code>getCommitValue</code></td> 
-   <td>La estructura de la utilidad jQuery carga la función cada vez que se guarda el valor de la utilidad jQuery en el modelo XFA (por ejemplo, en el suceso exit de un campo de texto). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td> 
+   <td>La estructura de la utilidad jQuery carga la función cada vez que se guarda el valor de la utilidad jQuery en el modelo XFA (por ejemplo, en el evento de salida de un campo de texto). La implementación debe devolver el valor guardado en la utilidad. El controlador se proporciona con el nuevo valor para la opción.</td> 
   </tr> 
   <tr> 
    <td><code>showValue</code></td> 
-   <td>De forma predeterminada, en XFA cuando se produce el suceso enter, se muestra el nombre <code>rawValue</code> del campo. Se llama a esta función para mostrar al usuario <code>rawValue</code> . </td> 
+   <td>De forma predeterminada, en XFA cuando se introduce el evento, se muestra el nombre <code>rawValue</code> del campo. Se llama a esta función para mostrar al usuario <code>rawValue</code> . </td> 
   </tr> 
   <tr> 
    <td><code>showDisplayValue</code></td> 
-   <td>De forma predeterminada, en XFA cuando se produce un evento exit, se muestra el nombre <code>formattedValue</code> del campo. Se llama a esta función para mostrar al usuario <code>formattedValue</code> . </td> 
+   <td>De forma predeterminada, en XFA en el evento de salida, se muestra el <code>formattedValue</code> nombre del campo. Se llama a esta función para mostrar al usuario <code>formattedValue</code> . </td> 
   </tr> 
  </tbody> 
 </table>
@@ -156,9 +159,9 @@ Una vez creada la plantilla de proyecto, realice los siguientes cambios, según 
    * Extienda la utilidad desde una clase de utilidad lista para usar adecuada. En la mayoría de los casos, es la clase de widget que corresponde al widget existente que se está reemplazando. El nombre de clase principal se utiliza en varias ubicaciones, por lo que se recomienda buscar todas las instancias de la cadena `xfaWidget.textField` en el archivo y reemplazarlas por la clase principal real utilizada.
    * Amplíe el `render` método para proporcionar una IU alternativa. Es la ubicación desde la que se invocará el complemento jQuery para actualizar la interfaz de usuario o el comportamiento de la interacción. El `render` método debe devolver un elemento de control de usuario.
    * Amplíe el `getOptionsMap` método para anular cualquier opción que se vea afectada por un cambio en la utilidad. La función devuelve una asignación que proporciona detalles para la acción que se realizará al cambiar una opción. Las claves son las opciones proporcionadas al widget y los valores son las funciones a las que se llama cada vez que se detecta un cambio en la opción.
-   * El `getEventMap` método asigna eventos activados por la utilidad, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos HTML estándar para la utilidad predeterminada y debe actualizarse si se activa un evento alternativo.
+   * El `getEventMap` método asigna los eventos activados por el widget, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos HTML estándar para el widget predeterminado y debe actualizarse si se activa un evento alternativo.
    * La cláusula de visualización `showDisplayValue` `showValue` y aplicación de la cláusula de visualización y edición de imagen y se puede anular para tener un comportamiento alternativo.
-   * El marco de formularios adaptables llama al `getCommitValue` método cuando se produce el `commit`suceso. Generalmente, es el evento exit, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar. Para obtener más información, consulte Expresiones [de formularios](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)adaptables.
+   * El marco de formularios adaptables llama al `getCommitValue` método cuando se produce el `commit`evento. Generalmente, es el evento de salida, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar. Para obtener más información, consulte Expresiones [adaptables de Forms](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
    * El archivo de plantilla proporciona implementación de muestra para varios métodos. Elimine los métodos que no se van a ampliar.
 
 ### Creación de una biblioteca de cliente {#create-a-client-library}
@@ -167,7 +170,7 @@ El proyecto de muestra generado por el arquetipo Maven crea automáticamente las
 
 ### Generar e instalar {#build-and-install}
 
-Para crear el proyecto, ejecute el siguiente comando en el shell para generar un paquete CRX que debe instalarse en el servidor AEM.
+Para crear el proyecto, ejecute el siguiente comando en el shell para generar un paquete CRX que necesita instalarse en el servidor de AEM.
 
 `mvn clean install`
 
@@ -183,7 +186,7 @@ Para aplicar el aspecto personalizado a un campo de formulario adaptable:
 1. Abra el cuadro de diálogo **Propiedad** del campo en el que desea aplicar el aspecto personalizado.
 1. En la ficha **Estilo** , actualice la propiedad `CSS class` para agregar el nombre de aspecto en el `widget_<widgetName>` formato. Por ejemplo: **widget_numericstep**
 
-## Ejemplo: Crear un aspecto personalizado {#sample-create-a-custom-appearance-nbsp}
+## Ejemplo: Crear un aspecto personalizado   {#sample-create-a-custom-appearance-nbsp}
 
 Veamos ahora un ejemplo para crear un aspecto personalizado para que un campo numérico aparezca como un paso numérico o un deslizador. Siga estos pasos:
 
@@ -304,7 +307,7 @@ Veamos ahora un ejemplo para crear un aspecto personalizado para que un campo nu
 
    `mvn clean install`
 
-1. Instale el paquete mediante el Administrador de paquetes de AEM.
+1. Instale el paquete mediante AEM Administrador de paquetes.
 
 1. Abra el formulario adaptable en modo de edición en el que desea aplicar el aspecto personalizado y haga lo siguiente:
 

@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -26,21 +29,21 @@ Cuando un proceso se detiene, no se ejecutan más operaciones hasta que se soluc
 
 Para cada elemento detenido, la lista muestra la siguiente información:
 
-**** Nombre de la operación o nombre de la rama: Nombre de la operación o rama.
+**Nombre de la operación o nombre de la rama:** Nombre de la operación o rama.
 
-**** Estado: Siempre se ESTABLECE para los elementos que se han detenido.
+**Estado:** Siempre se ESTABLECE para los elementos que se han detenido.
 
-**** Error: Breve descripción del problema.
+**Error:** Breve descripción del problema.
 
-**** ID del proceso: El entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
+**ID del proceso:** El entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
 
-**** Nombre del proceso - Versión: Nombre del proceso asignado en Workbench.
+**Nombre del proceso - Versión:** Nombre del proceso asignado en Workbench.
 
-**** Fecha de detención: Fecha y hora en que la operación o rama se ha detenido.
+**Fecha de detención:** Fecha y hora en que la operación o rama se ha detenido.
 
 Puede realizar las siguientes tareas en la página Operaciones paralizadas o Ramas paralizadas:
 
-* Seleccione un error para ver los detalles del mismo. Cuando selecciona un error, aparece la página Detalles del error.
+* Seleccione un error para vista de detalles sobre él. Cuando selecciona un error, aparece la página Detalles del error.
 * Finalice o vuelva a intentar las operaciones que se han detenido o reintente las ramas que se han detenido.
 
 ## Terminación o reintento de operaciones o sucursales interrumpidas {#terminating-or-retrying-stalled-operations-or-branches}
@@ -51,7 +54,7 @@ Al finalizar una instancia de proceso, esta se detiene y no se realizan más ope
 
 En la página Operaciones fijas o en la página Ramas fijas, puede reintentar la operación o rama.
 
-Cuando se reintenta una operación, se envía una solicitud al flujo de trabajo de Forms para reiniciar la operación. Si el error que provocó que el proceso se paralizara se ha corregido y la solicitud de reintento se realiza correctamente, el proceso comienza a ejecutarse de nuevo desde el punto en que se detuvo y su estado cambia a EJECUCIÓN. Si la operación no se puede reiniciar, permanece INSTALADA y es posible que tenga que finalizarla.
+Cuando reintenta una operación, se envía una solicitud al flujo de trabajo de Forms para reiniciar la operación. Si el error que provocó que el proceso se paralizara se ha corregido y la solicitud de reintento se realiza correctamente, el proceso comienza a ejecutarse de nuevo desde el punto en que se detuvo y su estado cambia a EJECUCIÓN. Si la operación no se puede reiniciar, permanece INSTALADA y es posible que tenga que finalizarla.
 
 ### Finalización de una operación detenida {#terminate-a-stalled-operation}
 
@@ -65,7 +68,7 @@ Cuando se reintenta una operación, se envía una solicitud al flujo de trabajo 
 
 ## Visualización de detalles de error sobre operaciones o ramas paralizadas {#viewing-error-details-about-stalled-operations-or-branches}
 
-Si selecciona un error en la lista de elementos que se han detenido en la página Operaciones paralizadas o Ramas paralizadas, aparecerá la página Detalles del error, que muestra detalles sobre el error que pueden ayudarle a solucionar el problema.
+Si selecciona un error en la lista de los elementos que se han detenido en la página Operaciones paralizadas o Ramas paralizadas, aparecerá la página Detalles del error, que muestra detalles sobre el error que pueden ayudarle a solucionar el problema.
 
 El cuadro en la parte inferior de la página contiene la información de error.
 
@@ -73,12 +76,12 @@ También puede finalizar o reintentar las operaciones en espera y reintentar las
 
 ## El proceso no se detiene cuando el usuario de escalación no existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Los errores se producen cuando la operación Asignar tarea del servicio Usuario de formularios AEM está configurada para escalar la tarea a otro usuario después de un período de tiempo específico y el usuario de escalación se elimina después de que se ejecute la operación Asignar tarea pero antes de que se produzca la escalación.
+Los errores se producen cuando la operación Asignar Tarea del servicio Usuario de formularios AEM está configurada para escalar la tarea a otro usuario después de un período de tiempo específico y el usuario de escalación se elimina después de que se ejecute la operación Asignar Tarea pero antes de que se produzca la escalación.
 
 Cuando se produce esta situación, el estado del proceso y la tarea no cambia en el tiempo de escalación configurado y la escalación no se produce pero el proceso no se detiene. Aparece el siguiente mensaje en el registro del servidor:
 
 &quot;La entidad de seguridad especificada para la escalación no es válida para taskID: *número*, cola especificada: *número*&quot;.
 
-Si el usuario de escalación se elimina antes de que se genere la tarea (antes de que se ejecute la operación Asignar tarea), se detendrá el proceso o se generará el evento de excepción InvalidPrincipal.
+Si se elimina el usuario de escalación antes de que se genere la tarea (antes de que se ejecute la operación Asignar Tarea), se detendrá el proceso o se emitirá el evento de excepción InvalidPrincipal.
 
-Para evitar este problema, al eliminar un usuario, busque las tareas que pertenecen a ese usuario y tratarlas como corresponde. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Para evitar este problema, al eliminar un usuario, busque tareas que pertenezcan a ese usuario y tratarlas como corresponde. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

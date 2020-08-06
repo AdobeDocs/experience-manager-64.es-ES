@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: c9591211c80d453de5172c90501d2d2907eba4e6
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +39,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) es un repositorio de contenido jerárquico escalable y de rendimiento que constituye la base de AEM.
+[Oak](/help/sites-deploying/platform.md) es un repositorio de contenido jerárquico escalable y de rendimiento que es la base de AEM.
 
 <table> 
  <tbody>
@@ -58,11 +61,11 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
   <tr>
    <td>Opciones del almacén de datos</td> 
    <td><a href="/help/sites-deploying/data-store-config.md">Configuración de nodos y almacenes de datos</a></td> 
-   <td>En este documento se explican las prácticas recomendadas para almacenar datos binarios y nodos de contenido. Incluye información sobre el uso del almacén de datos de Amazon S3.</td> 
+   <td>Este documento explica las prácticas recomendadas para almacenar datos binarios y nodos de contenido. Incluye información sobre el uso del almacén de datos Amazon S3.</td> 
   </tr>
   <tr>
    <td>Buscar en OAK</td> 
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Prácticas recomendadas para consultas e indexación</a><br /> </td> 
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Prácticas recomendadas para Consultas e indexación</a><br /> </td> 
    <td>Describe las prácticas recomendadas para indexar contenido.</td> 
   </tr>
  </tbody>
@@ -70,7 +73,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## Communities {#communities}
 
-AEM Communities simplifica la creación y gestión de comunidades locales. Las prácticas recomendadas para comunidades AEM se describen a continuación:
+AEM Communities simplifica la creación y gestión de comunidades locales. Las prácticas recomendadas para AEM Communities se describen a continuación:
 
 [Almacenamiento](/help/communities/working-with-srp.md) de contenido de comunidad: analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir la [topología](/help/communities/topologies.md)subyacente.
 
@@ -80,9 +83,9 @@ AEM Communities simplifica la creación y gestión de comunidades locales. Las p
 
 A continuación se describen las prácticas recomendadas en la interfaz de usuario:
 
-[Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md)
+[Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
-Actualmente, AEM tiene dos IU: IU clásica y táctil en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre qué utilizar durante la implementación del proyecto. Este documento tiene por objeto ayudar a encontrar la opción correcta.
+AEM tiene dos IU actualmente: IU clásica y táctil en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre qué utilizar durante la implementación del proyecto. Este documento tiene por objeto ayudar a encontrar la opción correcta.
 
 ## Actuación {#performance}
 
@@ -103,12 +106,12 @@ A continuación se detallan las prácticas recomendadas sobre el rendimiento:
   <tr>
    <td>Optimización del rendimiento</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md">Optimización del rendimiento</a></td> 
-   <td>Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes.</td> 
+   <td>Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de visitante.</td> 
   </tr>
   <tr>
    <td>Prueba de rendimiento</td> 
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Prácticas recomendadas para pruebas de rendimiento</a></td> 
-   <td>Describe las prácticas recomendadas para ejecutar pruebas de rendimiento en una implementación de AEM.<br /> </td> 
+   <td>Describe las prácticas recomendadas para ejecutar pruebas de rendimiento en una implementación AEM.<br /> </td> 
   </tr>
  </tbody>
 </table>

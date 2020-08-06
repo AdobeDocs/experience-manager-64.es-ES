@@ -1,8 +1,8 @@
 ---
 title: 'Administración de sitios web '
 seo-title: 'Administración de sitios web '
-description: Obtenga información sobre cómo administrar sitios web multilingües en AEM.
-seo-description: Obtenga información sobre cómo administrar sitios web multilingües en AEM.
+description: Aprenda a administrar sitios web multilingües en AEM.
+seo-description: Aprenda a administrar sitios web multilingües en AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +53,8 @@ El diagrama siguiente ilustra cómo se intersectan los conceptos principales (pe
 >En estos escenarios, y comparables, MSM no administra las diferentes versiones de idioma como tales.
 >
 >* [MSM](/help/sites-administering/msm.md) administra la implementación de contenido traducido de un modelo (por ejemplo, un maestro global) a las copias en vivo (por ejemplo, los sitios locales), dentro de los límites de un idioma.
->* Las funciones de integración de [traducción](/help/sites-administering/translation.md) de AEM, junto con los servicios de gestión de traducción de terceros, gestionan los idiomas y traducen el contenido a estos idiomas.
+>* La capacidad de integración de [traducción](/help/sites-administering/translation.md) de AEM, junto con los servicios de gestión de traducción de terceros, gestiona los idiomas y traduce el contenido a estos diferentes idiomas.
+
 >
 >
 Para casos de uso más avanzados, también se puede usar MSM en los maestros de idioma.

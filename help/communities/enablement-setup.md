@@ -11,31 +11,34 @@ content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
 
 # Configuración inicial para la habilitación {#initial-setup-for-enablement}
 
-## Iniciar instancias de creación y publicación {#start-author-and-publish-instances}
+## Instancias de creación y publicación de Inicio {#start-author-and-publish-instances}
 
 Para fines de desarrollo y demostración, será necesario ejecutar un autor y una instancia de publicación.
 
 Siga las instrucciones básicas de [introducción](../../help/sites-deploying/deploy.md#getting-started) de AEM que resultarán en
 
-* entorno de creación en [localhost:4502](http://localhost:4502/)
+* entorno de autor en [localhost:4502](http://localhost:4502/)
 * entorno de publicación en [localhost:4503](http://localhost:4503/)
 
 Para AEM Communities,
 
-* El entorno de creación es para
+* El entorno del autor es para
 
    * Desarrollo de sitios, plantillas, componentes, recursos de habilitación y rutas de aprendizaje
    * Asignación de miembros y grupos de miembros para habilitar recursos y rutas de aprendizaje
    * Generación de informes sobre asignaciones, vistas y anuncios
-   * Tareas administrativas y de configuración
+   * tareas administrativas y de configuración
 
-* El entorno de publicación es para
+* El entorno de publicación está para
 
    * Aprendizaje/formación basado en temas administrados por el administrador de habilitación
    * Recursos y rutas de aprendizaje de habilitación de comentario y clasificación
@@ -43,7 +46,7 @@ Para AEM Communities,
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Instalar la versión más reciente de las comunidades {#install-latest-communities-release}
 
@@ -51,7 +54,7 @@ Este tutorial crea un sitio [de comunidad de](overview.md#enablement-community)h
 
 * [Últimas versiones](deploy-communities.md#latest-releases)
 
-Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a las comunidades](getting-started.md)de AEM.
+Para ver un tutorial que crea un sitio [de comunidad de](overview.md#engagement-community)participación, visite [Introducción a AEM Communities](getting-started.md).
 
 ## Configurar funciones de habilitación {#configure-enablement-features}
 
@@ -63,7 +66,7 @@ Cuando [Adobe Analytics está configurado para el sitio](analytics.md)de la comu
 
 ## Configurar correo electrónico para notificaciones {#configure-email-for-notifications}
 
-La función de notificaciones, disponible de forma predeterminada para todos los sitios creados con la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
+La función de notificaciones, disponible de forma predeterminada para todos los sitios creados mediante la `Communities Sites` consola, proporciona un canal de correo electrónico para las notificaciones.
 
 Lo que se necesita es que el correo electrónico se configure correctamente para el sitio.
 
@@ -79,7 +82,7 @@ Para obtener instrucciones sencillas para habilitar el servicio de túnel, consu
 
 ## Crear etiquetas de tutoriales {#create-tutorial-tags}
 
-Cree etiquetas para utilizarlas en los tutoriales de participación y activación, utilizando el espacio de nombres de etiquetas de `Tutorial`.
+Cree etiquetas para utilizarlas en los tutoriales de participación y activación mediante la Área de nombres de etiquetas de `Tutorial`.
 
 Utilice la consola [Etiquetado](../../help/sites-administering/tags.md#tagging-console) para crear las etiquetas siguientes:
 
@@ -97,19 +100,19 @@ Siga las instrucciones para
 1. [Definir los permisos de etiqueta](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
-Paquete de muestra de etiquetas creadas para los tutoriales de introducción de AEM Communities
+Paquete de muestra de etiquetas creadas para los Tutorials de introducción de AEM Communities
 
 [Obtener archivo](assets/communities_tutorialtags-10.zip)
 
 ## Crear miembros y grupos de habilitación {#create-enablement-members-and-groups}
 
-Para un sitio de comunidad de habilitación, los visitantes del sitio no deben poder [registrarse ni utilizar el inicio de sesión](sites-console.md#user-management)social.
+Para un sitio de la comunidad de habilitación, los visitantes del sitio no deben ser capaces de [autorregistrarse ni utilizar el inicio de sesión](sites-console.md#user-management)social.
 
 En su lugar, con el servicio [de](#enable-the-tunnel-service) túnel habilitado, se utiliza la consola [](members.md) Miembros para registrar nuevos miembros en el entorno de publicación.
 
 En este tutorial, se crean tres miembros en el entorno de publicación. Dos miembros se convertirán en miembros de un grupo de usuarios asignado a una ruta de aprendizaje, mientras que el tercer miembro se convertirá en un contacto de recursos de habilitación.
 
-Se crea un cuarto usuario en el entorno de creación y se asignan las funciones Administrador de comunidades y Administrador de habilitación de la comunidad.
+Se crea un cuarto usuario en el entorno de creación y se asignan las funciones de Administrador de comunidades y Administrador de habilitación de la comunidad.
 
 >[!NOTE]
 >
@@ -123,10 +126,10 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 [Cree un miembro](members.md#create-new-member) que se agregará a un grupo de alumnos: el grupo Clase de esquí de la comunidad.
 
-* **ID**:riley
+* **ID**: riley
 * **Correo electrónico**: riley.taylor@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Riley
 * **Apellido**: Taylor
 
@@ -136,8 +139,8 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 * **ID**: sidney
 * **Correo electrónico**: sidney.croft@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Sidney
 * **Apellido**: Recortar
 
@@ -147,22 +150,22 @@ Se crea un cuarto usuario en el entorno de creación y se asignan las funciones 
 
 * **ID**: quinn
 * **Correo electrónico**: quinn.harper@mailinator.com
-* **Contraseña**:password
-* **Confirmar contraseña**:password
+* **Contraseña**: password
+* **Confirmar contraseña**: password
 * **Nombre**: Quinn
 * **Apellido**: Harper
 
-### Agregar un grupo de usuarios: Clase de esquí de la comunidad {#add-a-user-group-community-ski-class}
+### Añadir un grupo de usuarios - Clase de esquí de la comunidad {#add-a-user-group-community-ski-class}
 
-[Agregue un nuevo grupo](members.md#create-new-group) denominado Community Ski Class.
+[Añada un nuevo grupo](members.md#create-new-group) denominado Community Ski Class.
 
 * **ID**: community-ski-class
 * **Nombre**: Clase de esquí de comunidad
 * **Descripción**: un grupo de muestra para asignar recursos de habilitación
-* **Agregar miembros al grupo** &#39;agregar&#39;:
+* **Añadir miembros al grupo** &#39;agregar&#39;:
 
    * riley
-   *  sidney
+   * sidney
 
 * Seleccione **[!UICONTROL Guardar]**
 
@@ -191,14 +194,14 @@ Cree un usuario en el *autor*, al que se le asigna la función de administrador 
    * Por ejemplo: nombre de usuario &#39;admin&#39; / contraseña &#39;admin&#39;
 
 * Desde la consola principal, vaya a **[!UICONTROL Herramientas, Operaciones > Seguridad > Usuarios]**
-* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Agregar usuario]**
+* En el menú **[!UICONTROL Editar]** , seleccione **[!UICONTROL Añadir usuario]**
 
 * En el cuadro de diálogo `Create New User` , introduzca
 
    * **ID&amp;Último;**: sirius
    * **Dirección** de correo electrónico: sirius.nilson@mailinator.com
-   * **Contraseña&amp;Último;**:password
-   * **Confirmar contraseña&amp;Último;**:password
+   * **Contraseña&amp;Último;**: password
+   * **Confirmar contraseña&amp;Último;**: password
    * **Nombre**: Sirius
    * **Apellido&amp;ma;Último;**: Nilson
 

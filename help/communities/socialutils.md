@@ -1,8 +1,8 @@
 ---
 title: Refactorización de SocialUtils
 seo-title: Refactorización de SocialUtils
-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils se dejó de utilizar en AEM 6.1
-seo-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils se dejó de utilizar en AEM 6.1
+description: El paquete com.adobe.cq.social.ugcbase.SocialUtils quedó obsoleto en AEM 6.1
+seo-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils quedó obsoleto en AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 El paquete **com.adobe.cq.social.ugcbase.SocialUtils** quedó obsoleto en AEM 6.1.
 
-En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar de los métodos de SocialUtils.
+Las siguientes tablas lista los métodos que se deben utilizar en lugar de los métodos de SocialUtils.
 
-## Paquete SocialResourceUtilities {#socialresourceutilities-package}
+## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Métodos de com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -36,7 +39,7 @@ En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar
 | Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
 | boolean hasModeratePermissions(recurso de recurso) |  |
 | String resourceToACLPath(recurso de recurso) |  |
-| String resourceToUGCStoragePath(recurso de recurso) | reemplaza a String resourceToUGCPath(Resource resource) |
+| String resourceToUGCStoragePath(recurso de recurso) | reemplaza String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(recurso de recurso) |  |
 | String UGCToResourcePath(String ugcPath) | firma de método cambiada |
 | String UGCToResourcePath(String ugcPath, resolver ResourceResolver) | nuevo |

@@ -1,6 +1,6 @@
 ---
 title: Configure RTE para varios editores in-situ.
-description: Para crear varios editores in situ en Adobe Experience Manager, configure el Editor de texto enriquecido.
+description: Cree varios editores in-situ en Adobe Experience Manager configurando el Editor de texto enriquecido.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92

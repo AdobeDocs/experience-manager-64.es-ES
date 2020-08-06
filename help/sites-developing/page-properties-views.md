@@ -1,6 +1,6 @@
 ---
-title: Personalización de vistas de propiedades de página
-seo-title: Personalización de vistas de propiedades de página
+title: Personalización de Vistas de propiedades de página
+seo-title: Personalización de Vistas de propiedades de página
 description: Cada página tiene un conjunto de propiedades que puede editar según sea necesario
 seo-description: Cada página tiene un conjunto de propiedades que puede editar según sea necesario
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
 
-# Personalización de vistas de propiedades de página{#customizing-views-of-page-properties}
+# Personalización de Vistas de propiedades de página{#customizing-views-of-page-properties}
 
 Cada página tiene un conjunto de [propiedades](/help/sites-authoring/editing-page-properties.md) que los usuarios pueden ver y editar; algunas son necesarias al crear la página (crear vista), otras se pueden ver y editar (editar vista) en una etapa posterior. Estas propiedades de página se definen y quedan disponibles mediante el cuadro de diálogo ( `cq:dialog`) del componente de página correspondiente.
 
@@ -25,9 +28,9 @@ Cada página tiene un conjunto de [propiedades](/help/sites-authoring/editing-pa
 
 El estado predeterminado de cada propiedad de página es:
 
-* oculto en la vista de creación (por ejemplo, **asistente para crear página** )
+* oculto en la vista de creación (p. ej., **asistente para crear página** )
 
-* disponible en la vista de edición (por ejemplo, **Ver propiedades**)
+* disponible en la vista de edición (p. ej., Propiedades de **Vista**)
 
 Los campos deben configurarse específicamente si se requiere algún cambio. Esto se realiza con las propiedades de nodo correspondientes:
 
@@ -36,7 +39,7 @@ Los campos deben configurarse específicamente si se requiere algún cambio. Est
    * Nombre: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* Propiedad de página disponible en la vista de edición (por ejemplo, **Ver**/**Editar**), **Propiedades** :
+* Propiedad de página disponible en la vista de edición (por ejemplo, **Vista**/**edición**) **Propiedades** :
 
    * Nombre: `cq:hideOnEdit`
    * Tipo: `Boolean`
@@ -100,6 +103,7 @@ Por ejemplo, de forma predeterminada, el asistente [**Crear página **](/help/si
    * **Nombre**: `cq:showOnCreate`
    * **Tipo**: `Boolean`
    * **Valor**: `false`
+
    La sección **Más títulos y descripción** ya no se mostrará en el asistente **Crear página** .
 
 >[!NOTE]

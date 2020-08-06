@@ -1,6 +1,6 @@
 ---
-title: Función Flujos de actividad
-seo-title: Función Flujos de actividad
+title: Función de flujo de Actividad
+seo-title: Función de flujo de Actividad
 description: Actividades de un miembro de la comunidad que ha iniciado sesión
 seo-description: Actividades de un miembro de la comunidad que ha iniciado sesión
 uuid: 8a05a5ed-0edf-4528-a145-f9dc37d10247
@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 
-# Función Flujos de actividad {#activity-streams-feature}
+# Función de flujo de Actividad {#activity-streams-feature}
 
 ## Introducción {#introduction}
 
-Las actividades de un miembro de la comunidad que ha firmado, como publicar en un foro o blog, se recopilan en un flujo que puede filtrarse y mostrarse de diversas maneras a través de la configuración del `Activity Streams` componente.
+Las actividades de un miembro de la comunidad firmado, como publicar en un foro o blog, se recopilan en un flujo que puede filtrarse y mostrarse de diversas maneras a través de la configuración del `Activity Streams` componente.
 
-La capacidad de seguir agrega otra visión de las actividades cuando los miembros de la comunidad siguen publicaciones de interés o siguen las actividades de otros miembros de la comunidad.
+La capacidad de seguir agrega otra vista de actividades cuando los miembros de la comunidad siguen publicaciones de interés o siguen las actividades de otros miembros de la comunidad.
 
 Esta sección de la documentación describe
 
-* Adición del componente Flujos de actividad a un sitio de AEM
-* Configuración del componente Flujos de actividad
+* Añadir el componente Flujos de Actividad en un sitio AEM
+* Configuración del componente Flujos de Actividad
 
-## Adición de flujos de actividad a una página {#adding-activity-streams-to-a-page}
+## Añadir flujos de Actividad en una página {#adding-activity-streams-to-a-page}
 
 Si desea agregar un `Activity Streams` componente a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -42,7 +45,7 @@ Cuando se incluyen las bibliotecas [del lado del cliente](essentials-activities.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-## Configuración de flujos de actividad {#configuring-activity-streams}
+## Configuración de flujos de Actividad {#configuring-activity-streams}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Activity Streams` `Configure` icono que abre el cuadro de diálogo de edición.
 
@@ -52,11 +55,11 @@ En la ficha Actividades **** del usuario, especifique qué actividades mostrar:
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Número máximo de actividades]** El número de actividades que se van a mostrar
+* **[!UICONTROL Número máximo de actividades]** El número de actividades que se mostrarán
 * **[!UICONTROL Ruta]** de recursos de flujo Deje en blanco para establecer de forma predeterminada el sitio de comunidad o el grupo de comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
-* **[!UICONTROL Mostrar vista]** de actividades del usuario si está activada, la página de actividades incluirá una ficha que filtra las actividades en función de las generadas en la comunidad por el miembro actual. El valor predeterminado está marcado.
-* **[!UICONTROL Mostrar todas las actividades Ver]** Si está activada, la página de actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
-* **[!UICONTROL Mostrar vista]** siguiente Si está activada, la página de actividades incluirá una ficha que filtra las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar Vista]** de Actividades de usuario si está activada, la página actividades incluirá una ficha que filtros actividades basadas en las generadas dentro de la comunidad por el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar la Vista]** Todas las Actividades Si está activada, la página actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar Vista]** siguiente Si está activada, la página actividades incluirá una ficha que filtros actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
 
 ## Vista siguiente {#following-view}
 
@@ -79,4 +82,4 @@ Aparecerá el botón **Seguir** :
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Flujos de actividad esenciales](essentials-activities.md) para desarrolladores.
+Puede encontrar más información en la página [Actividad Streams Essentials](essentials-activities.md) para desarrolladores.

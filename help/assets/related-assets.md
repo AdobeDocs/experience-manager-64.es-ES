@@ -4,13 +4,16 @@ description: Obtenga información sobre cómo relacionar recursos que comparten 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 0%
 
 ---
 
 
 # Activos relacionados {#related-assets}
 
-Recursos Adobe Experience Manager (AEM) le permite relacionar recursos manualmente en función de las necesidades de su organización mediante la función Recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen o vídeo en un tema similar. Puede relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF que se genera a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
+Recursos Adobe Experience Manager (AEM) permite relacionar recursos manualmente en función de las necesidades de la organización mediante la función Recursos relacionados. Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen/vídeo en un tema similar. Puede relacionar recursos que comparten determinados atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF que se genera a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
 
 De este modo, tiene la flexibilidad de compartir un archivo de baja resolución (por ejemplo, PDF/JPG) con proveedores/agencias y de poner a disposición el archivo de alta resolución (por ejemplo, INDD) únicamente si lo solicita.
 
@@ -35,8 +38,9 @@ De este modo, tiene la flexibilidad de compartir un archivo de baja resolución 
 1. Realice una de las acciones siguientes:
 
    * Para relacionar el archivo de origen del recurso, seleccione **[!UICONTROL Origen]** en la lista.
-   * Para relacionar un archivo derivado, seleccione **[!UICONTROL Derivado]** en la lista.
+   * Para relacionar un archivo derivado, seleccione **[!UICONTROL Derivado]** de la lista.
    * Para crear una relación bidireccional entre los recursos, seleccione **[!UICONTROL Otros]** en la lista.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. En la pantalla **[!UICONTROL Seleccionar recurso]** , navegue hasta la ubicación del recurso que desee relacionar y selecciónelo.
@@ -44,7 +48,7 @@ De este modo, tiene la flexibilidad de compartir un archivo de baja resolución 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Toque o haga clic en el icono **[!UICONTROL Confirmar]** .
-1. Toque o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. En función de la elección de la relación en el paso 3, el activo relacionado se incluye en una categoría adecuada en la sección **[!UICONTROL Relacionado]** . Por ejemplo, si el recurso relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
+1. Toque o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. Según la relación que elija en el paso 3, el recurso relacionado se incluirá en una categoría adecuada en la sección **[!UICONTROL Relacionado]** . Por ejemplo, si el recurso relacionado es el archivo de origen del recurso actual, aparece en **[!UICONTROL Origen]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -60,7 +64,7 @@ De este modo, tiene la flexibilidad de compartir un archivo de baja resolución 
 
 ## Traducción de recursos relacionados {#translating-related-assets}
 
-La creación de relaciones de origen y derivadas entre recursos mediante la función Recursos relacionados también resulta útil en los flujos de trabajo de traducción. Al ejecutar un flujo de trabajo de traducción en un recurso derivado, Recursos AEM obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
+La creación de relaciones de origen/derivadas entre recursos mediante la función Recursos relacionados también resulta útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, AEM Assets obtiene automáticamente cualquier recurso al que hace referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el recurso de origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen como se muestra.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
@@ -68,7 +72,7 @@ Si el archivo de origen está relacionado con otro recurso, AEM Assets obtiene e
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
-1. Traduzca los recursos de la carpeta de origen a un idioma de destino siguiendo los pasos de [Creación de un nuevo proyecto](translation-projects.md#create-a-new-translation-project)de traducción. Por ejemplo, en este caso, traduzca sus recursos al francés.
+1. Traduzca los recursos de la carpeta de origen a un idioma de destinatario siguiendo los pasos de [Creación de un nuevo proyecto](translation-projects.md#create-a-new-translation-project)de traducción. Por ejemplo, en este caso, traduzca sus recursos al francés.
 1. En la página Proyectos, abra la carpeta de traducción.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
@@ -77,11 +81,11 @@ Si el archivo de origen está relacionado con otro recurso, AEM Assets obtiene e
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Toque o haga clic en las elipses debajo de la tarjeta Trabajo de traducción para ver el estado de la traducción.
+1. Toque o haga clic en las elipses debajo de la tarjeta Trabajo de traducción para vista del estado de la traducción.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Seleccione el recurso y, a continuación, toque o haga clic en **[!UICONTROL Mostrar en recursos]** en la barra de herramientas para ver el estado de traducción del recurso.
+1. Seleccione el recurso y, a continuación, toque o haga clic en **[!UICONTROL Mostrar en recursos]** en la barra de herramientas para vista del estado de traducción del recurso.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 

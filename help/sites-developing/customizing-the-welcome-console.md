@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 9%
 
 ---
 
@@ -21,20 +24,20 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >
 >Esta página trata la IU clásica.
 >
->Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU táctil estándar.
+>Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU estándar con capacidad táctil.
 
 La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades de AEM.
 
 ![cq_welcomesscreen](assets/cq_welcomescreen.png)
 
-Es posible configurar los vínculos visibles. Esto se puede definir para usuarios o grupos específicos. Las acciones que se deben realizar dependen del tipo de destino (que se correlaciona con la sección de la consola en la que se encuentran):
+Es posible configurar los vínculos visibles. Esto se puede definir para usuarios o grupos específicos. Las acciones que deben realizarse dependen del tipo de destinatario (que se correlaciona con la sección de la consola en la que se encuentren):
 
 * [Consolas](#links-in-main-console-left-pane) principales: vínculos en la consola principal (panel izquierdo)
 * [Recursos, documentación y referencia, características](#links-in-sidebar-right-pane) : vínculos en la barra lateral (panel derecho)
 
 ## Vínculos en la consola principal (panel izquierdo) {#links-in-main-console-left-pane}
 
-Muestra las consolas principales de AEM.
+Esto lista las principales consolas de AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -46,7 +49,7 @@ Los permisos de nivel de nodo determinan si el vínculo se puede ver o no. Los n
 
 * **Recursos digitales:** `/libs/wcm/core/content/damadmin`
 
-* **** Comunidad: `/libs/collab/core/content/admin`
+* **Comunidad:** `/libs/collab/core/content/admin`
 
 * **Campañas:** `/libs/mcm/content/admin`
 
@@ -83,7 +86,7 @@ De forma predeterminada, hay tres secciones (separadas ligeramente):
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Servicios de nube</td> 
+   <td> Cloud Services</td> 
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td> 
   </tr> 
   <tr> 
@@ -187,7 +190,7 @@ Consulte la sección [](/help/sites-administering/security.md) Seguridad para ob
 
 ### Mecanismo de selección de vínculos {#link-selection-mechanism}
 
-En `/libs/cq/core/components/welcome/welcome.jsp` uso está [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en los nodos que tienen la propiedad:
+En `/libs/cq/core/components/welcome/welcome.jsp` uso se utiliza [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en los nodos que tienen la propiedad:
 
 * `jcr:mixinTypes` con el valor: `cq:Console`
 
@@ -196,17 +199,18 @@ En `/libs/cq/core/components/welcome/welcome.jsp` uso está [ConsoleUtil](https:
 >Ejecute la siguiente consulta para ver la lista existente:
 >
 >* `select * from cq:Console`
+
 >
 
 
 
 Cuando un usuario o grupo no tiene permiso de lectura en un nodo con la mezcla `cq:Console`, la `ConsoleUtil` búsqueda no recupera ese nodo, por lo que no aparece en la consola.
 
-### Adición de un elemento personalizado {#adding-a-custom-item}
+### Añadir un elemento personalizado {#adding-a-custom-item}
 
 El mecanismo [de selección de](#link-selection-mechanism) vínculos puede utilizarse para agregar su propio elemento personalizado a la lista de vínculos.
 
-Agregue el elemento personalizado a la lista agregando la `cq:Console` mezcla a la utilidad o el recurso. Esto se realiza definiendo la propiedad:
+Añada el elemento personalizado en la lista agregando la `cq:Console` mezcla a la utilidad o al recurso. Esto se realiza definiendo la propiedad:
 
 * `jcr:mixinTypes` con el valor: `cq:Console`
 

@@ -1,8 +1,8 @@
 ---
 title: Emuladores
 seo-title: Emuladores
-description: AEM permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página
-seo-description: AEM permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página
+description: AEM permite a los autores realizar la vista de una página en un emulador que simula el entorno en el que un usuario final realizará la vista de la página
+seo-description: AEM permite a los autores realizar la vista de una página en un emulador que simula el entorno en el que un usuario final realizará la vista de la página
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página, por ejemplo, en un dispositivo móvil o en un cliente de correo electrónico.
+Adobe Experience Manager (AEM) permite a los autores crear vistas de una página en un emulador que simula el entorno en el que un usuario final vista la página, por ejemplo, en un dispositivo móvil o en un cliente de correo electrónico.
 
 El marco del emulador de AEM:
 
@@ -93,7 +96,7 @@ Se han agregado dos etiquetas div:
 
 Las nuevas clases CSS también se asignan a los nuevos divs del emulador: representan el nombre del emulador actual.
 
-Los complementos de un emulador pueden ampliar aún más la lista de clases CSS asignadas, como en el ejemplo del complemento de rotación, insertando una clase &quot;vertical&quot; u &quot;horizontal&quot; en función de la rotación actual del dispositivo.
+Los complementos de un emulador pueden ampliar aún más la lista de las clases CSS asignadas, como en el ejemplo del complemento de rotación, insertando una clase &quot;vertical&quot; u &quot;horizontal&quot; en función de la rotación actual del dispositivo.
 
 De este modo, la apariencia completa del emulador se puede controlar teniendo clases CSS correspondientes a los ID y las clases CSS de los divs del emulador.
 
@@ -150,5 +153,6 @@ Para crear un emulador móvil personalizado:
    * Nombre = `canRotate`, Tipo = `Boolean`, Valor = `true`: para incluir la funcionalidad de rotación.
 
    * Nombre = `touchScrolling`, Tipo = `Boolean`, Valor = `true`: para incluir la funcionalidad de desplazamiento táctil.
+
    Se pueden agregar más funcionalidades definiendo sus propios complementos.
 

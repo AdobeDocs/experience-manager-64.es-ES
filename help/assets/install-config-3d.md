@@ -20,26 +20,26 @@ ht-degree: 0%
 
 # Instalación y configuración de AEM 3D {#installing-and-configuring-aem-d}
 
-La instalación y configuración de AEM 3D (versión 3.0) incluye lo siguiente:
+La instalación y configuración de AEM 3D (versión 3.0) implica lo siguiente:
 
 1. Instalación de la biblioteca del SDK de Autodesk® FBX®.
 1. Descarga e instalación del paquete de código 3D nativo.
 1. Configuración del flujo de trabajo de ingestión de recursos 3D y reinicio de AEM.
-1. Validación de la configuración de AEM 3D.
+1. Validando la configuración de AEM 3D.
 
 Consulte también [Uso de recursos](assets-3d.md)3D.
 
-Consulte también las notas [de la versión de Recursos 3D de](/help/release-notes/aem3d-release-notes.md) AEM para conocer los requisitos previos, los navegadores admitidos y otra información importante de la versión.
+Consulte también [AEM notas](/help/release-notes/aem3d-release-notes.md) de la versión de Recursos 3D para conocer los requisitos previos, los navegadores admitidos y otra información importante de la versión.
 
 Consulte también [Uso del componente](using-the-3d-sites-component.md)Sitios 3D.
 
 >[!NOTE]
 >
->Antes de descargar e instalar el paquete 3D, asegúrese de que ha instalado correctamente todos los paquetes de AEM necesarios. See the [AEM 3D Release Notes.](install-config-3d.md)
+>Antes de descargar e instalar el paquete 3D, asegúrese de haber instalado correctamente todos los paquetes AEM requisitos previos. See the [AEM 3D Release Notes.](install-config-3d.md)
 
 ## Instalación de la biblioteca del SDK de Autodesk FBX {#installing-the-autodesk-fbx-sdk-library}
 
-El código AEM 3D nativo requiere que la biblioteca FBX de Autodesk admita el formato de archivo FBX. (Adobe no puede redistribuir esta biblioteca en este momento).
+El código 3D nativo de AEM requiere que la biblioteca FBX de Autodesk admita el formato de archivo FBX. (Actualmente, Adobe no puede redistribuir esta biblioteca).
 
 Consulte también Configuración [avanzada](advanced-config-3d.md).
 
@@ -64,8 +64,8 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
 1. Instale el SDK de FBX:
 
-   * Windows. Instale en la misma unidad en la que se encuentra AEM.
-   * Mac. Instale en la misma partición en la que se encuentra AEM.
+   * Windows. Instale en la misma unidad donde se encuentra AEM.
+   * Mac. Instale en la misma partición donde se encuentra AEM.
    * Linux. Extraiga el paquete descargado y siga las instrucciones de la `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Instale el SDK en `/usr`.
 
 ## Descarga e instalación del paquete de código 3D nativo {#downloading-and-installing-the-native-d-code-package}
@@ -98,15 +98,15 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    El archivo `sample-3D-content.zip` se coloca en la carpeta raíz de **[!UICONTROL Recursos]** . Consulte [Validación de la configuración de AEM 3D](#validating-the-setup-of-aem-d) para obtener más información.
 
-## Configuración del flujo de trabajo de ingestión de recursos 3D y reinicio de AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
+## Configuración del flujo de trabajo de ingestión de recursos 3D y reinicio del AEM {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
 
 **Para configurar el flujo de trabajo** de ingestión de recursos 3D:
 
-1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL Flujo de trabajo > Modelos]**.
+1. En AEM, haga clic en el logotipo AEM para acceder a la consola de navegación global y, a continuación, haga clic en el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL Flujo de trabajo > Modelos]**.
 1. En la página Modelos **[!UICONTROL de]** flujo de trabajo, pase el ratón por encima del flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM y, cuando aparezca la marca de verificación, selecciónela.
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**.
-1. En la pantalla **[!UICONTROL DAM Update Asset]** , en el panel flotante de AEM, haga clic en el icono **[!UICONTROL Plus]** situado a la derecha de Workflow para expandir la lista. Seleccione **[!UICONTROL Paso]** de proceso en la lista.
+1. En la pantalla **[!UICONTROL DAM Update Asset]** , en el panel flotante AEM, haga clic en el icono **[!UICONTROL Plus]** situado a la derecha de Workflow para expandir la lista. Seleccione **[!UICONTROL Paso]** de proceso en la lista.
 1. Arrastre el paso **** Proceso y colóquelo en el flujo de trabajo justo antes de que **[!UICONTROL DAM Update Asset Workflow se haya completado]** cerca del final del flujo de trabajo.
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
@@ -123,7 +123,7 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 1. Cerca de la esquina superior derecha de la página Recurso **[!UICONTROL de actualización de]** DAM, haga clic en **[!UICONTROL Sincronizar]** para guardar el modelo de flujo de trabajo editado.
 1. Reinicie AEM.
 
-   Después del reinicio, ya puede cargar contenido 3D y hacer que AEM lo procese.
+   Después del reinicio, ya puede cargar contenido 3D y AEM procesarlo.
 
    Continúe con la [Validación de la configuración de AEM 3D](#validating-the-setup-of-aem-d).
 
@@ -184,21 +184,21 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 >
 >Esta tarea de configuración es opcional.
 
-Opcionalmente, puede configurar la compatibilidad con AEM 3D para los recursos de dimensión de Adobe.
+Opcionalmente, puede configurar la compatibilidad con AEM 3D para los recursos de Adobe Dimension.
 
-Debe configurar un servicio de conversión externo para permitir la ingestión, previsualización y publicación de recursos de Adobe Dimension 3D en AEM. El servicio convierte del formato exclusivo de Adobe Dimension (`.dn`) a una variante de glTF (formateada como un `.glb` archivo) que se guarda con el recurso Dn como una representación. La `.glb` representación se utiliza para la visualización basada en web del recurso 3D en AEM Assets, sitios y pantallas, y también está disponible para su descarga con aplicaciones de terceros.
+Debe configurar un servicio de conversión externo para permitir la ingestión, previsualización y publicación de recursos Adobe Dimension 3D en AEM. El servicio convierte del formato Adobe Dimension (`.dn`) propietario a una variante de glTF (formateada como `.glb` archivo) que se guarda con el recurso Dn como una representación. La `.glb` representación se utiliza para la visualización basada en web del recurso 3D en AEM Assets, Sitios y Pantallas, y también se puede descargar para su uso con aplicaciones de terceros.
 
 >[!NOTE]
 >
->Adobe aloja el servicio de conversión en Amazon AWS. Después de configurar correctamente el servicio, `.dn` los archivos cargados en AEM se copian de forma segura en el servicio de conversión mediante almacenamiento temporal en Amazon S3. El resultado de la conversión se transfiere de nuevo a AEM mediante el almacenamiento temporal S3. Todas las transferencias y los almacenamientos están garantizados. Además, el contenido persiste en S3 y el servicio de conversión solo se mantiene brevemente (normalmente no más de unos minutos).
+>Adobe aloja el servicio de conversión en Amazon AWS. Después de configurar correctamente el servicio, `.dn` los archivos cargados en AEM se copian de forma segura en el servicio de conversión mediante almacenamientos temporales en Amazon S3. El resultado de la conversión se transfiere de nuevo a AEM mediante el almacenamiento temporal S3. Todas las transferencias y los almacenamientos están garantizados. Además, el contenido persiste en S3 y el servicio de conversión solo se mantiene brevemente (normalmente no más de unos minutos).
 
-**Para configurar la compatibilidad con los recursos** de dimensión de Adobe:
+**Para configurar la compatibilidad con los recursos** de Adobe Dimension:
 
-1. Póngase en contacto con el administrador de cuentas de Adobe AEM, con un experto en aprovisionamiento o con un representante de asistencia técnica para solicitar las credenciales de **AEM3D Services**.
+1. Póngase en contacto con el administrador de cuentas de Adobe AEM, el experto de aprovisionamiento o el representante de asistencia técnica para solicitar las credenciales de los servicios **AEM3D**.
 
    >[!NOTE]
    >
-   >Solo se requiere un conjunto de credenciales para cada organización, independientemente del número de instancias de AEM en las que estén instaladas las credenciales.
+   >Solo se requiere un conjunto de credenciales para cada organización, independientemente del número de instancias de AEM en las que se instalan las credenciales.
 
 1. Compruebe que ha recibido la siguiente información:
 
@@ -210,23 +210,23 @@ Debe configurar un servicio de conversión externo para permitir la ingestión, 
    * clientId
 
 1. Como administrador, inicie sesión en la instancia de creación de AEM donde desee instalar las credenciales y, a continuación, abra **[!UICONTROL CRXDE Lite]**.
-1. Configure la nueva información de credenciales haciendo lo siguiente en CRXDE Lite:
+1. Configure la nueva información de las credenciales haciendo lo siguiente en CRXDE Lite:
 
    1. Vaya a `/libs/settings/dam/v3D/services/dncr` y establezca la `clientId` propiedad en el nuevo valor.
    1. Vaya a `/libs/settings/dam/v3D/services/aws` los nuevos valores y establezca las propiedades `accountId`, `customerId`, `identityPoolId`y `userPoolId` .
    1. Cargue el nuevo valor de contraseña en la `encryptedPassword` propiedad. Este valor se cifra automáticamente al tocar **[!UICONTROL Guardar todo]**.
    1. Toque **[!UICONTROL Guardar todo]**, vuelva a cargar la página y compruebe que la `encryptedPassword` propiedad muestra una cadena diferente entre llaves. Este aspecto indica que la contraseña está cifrada y protegida correctamente.
 
-1. Especifique el formato de la representación de `.glb` conversión haciendo lo siguiente en **[!UICONTROL CRXDE Lite]**:
+1. Especifique el formato de la representación de `.glb` conversión haciendo lo siguiente en el **[!UICONTROL CRXDE Lite]**:
 
-   1. Vaya a `/libs/settings/dam/v3D/services/dncr` en **[!UICONTROL CRXDE Lite]**.
+   1. Vaya a `/libs/settings/dam/v3D/services/dncr` en el **[!UICONTROL CRXDE Lite]**.
    1. Establezca la `outputFormat` propiedad en `Dn` o `generic`.
 
-      Cuando se establece en `Dn`, la `.glb` conversión incluye extensiones específicas de Adobe, como la iluminación de IBL, para obtener la mejor calidad al visualizar recursos Dn en AEM. Sin embargo, es posible que la representación .glb convertida no se represente correctamente en aplicaciones de terceros.
+      Cuando se configura en `Dn`, la `.glb` conversión incluye extensiones específicas del Adobe, como la iluminación IBL, para obtener la mejor calidad al ver los recursos Dn en AEM. Sin embargo, es posible que la representación .glb convertida no se represente correctamente en aplicaciones de terceros.
 
-      Cuando se establece en `generic`, la `.glb` representación es genérica sin extensiones específicas de Adobe. Esta configuración permite utilizarla en aplicaciones de terceros, mientras que la visualización con el visor AEM 3D no será visualmente óptima.
+      Cuando se establece en `generic`, la `.glb` representación es genérica sin extensiones específicas del Adobe. Esta configuración permite usarla en aplicaciones de terceros, mientras que la visualización con el visor 3D AEM será visualmente subóptima.
 
-1. Habilite el formato de archivo Dn haciendo lo siguiente en **[!UICONTROL CRXDE Lite]**:
+1. Habilite el formato de archivo Dn haciendo lo siguiente en el **[!UICONTROL CRXDE Lite]**:
 
    1. Ir a `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. Establezca la `Enabled` propiedad en true.
@@ -247,5 +247,5 @@ Debe configurar un servicio de conversión externo para permitir la ingestión, 
    En ese caso, puede solucionar los problemas de la conversión haciendo lo siguiente:
 
    * Elimine el recurso y vuelva a cargarlo.
-   * Asegúrese de que ha establecido correctamente todos los parámetros de configuración en **[!UICONTROL CRXDE Lite]**.
+   * Asegúrese de que ha establecido correctamente todos los parámetros de configuración en el **[!UICONTROL CRXDE Lite]**.
    * Compruebe que ningún servidor de seguridad está bloqueando el acceso al servicio de conversión y a los extremos de AWS.

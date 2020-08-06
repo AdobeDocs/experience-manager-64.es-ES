@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
@@ -40,13 +43,13 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 >
 >No se puede editar una asignación de certificado existente.
 
-**Agregar una asignación de certificado**
+**Añadir una asignación de certificado**
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Asignación de certificados.
-1. Haga clic en Asignación de certificado nuevo y, en la lista Para emisor, seleccione el alias de certificado según la configuración de Administración de almacén de confianza.
+1. Haga clic en Asignación de certificado nuevo y, en la lista Para emisor, seleccione el alias de certificado tal como está configurado en Administración de almacén de confianza.
 1. Asigne uno de los atributos del certificado al atributo de un usuario. Por ejemplo, puede asignar el nombre común del certificado al ID de inicio de sesión del usuario.
 
-   Si el contenido del atributo del certificado es diferente del contenido del atributo del usuario en la base de datos de Administración de usuarios, puede utilizar una expresión regular de Java (regex) para coincidir con los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de Administración de usuarios es *Alex Pink*, utilice un regex para extraer la parte requerida del atributo de certificado (en este ejemplo, *Alex Pink*). La expresión regular que especifique debe ajustarse a la especificación de regex de Java.
+   Si el contenido del atributo del certificado es diferente del contenido del atributo del usuario en la base de datos de Administración de usuarios, puede utilizar una Expresión de Java Regular (regex) para coincidir con los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de Administración de usuarios es *Alex Pink*, utilice un regex para extraer la parte requerida del atributo de certificado (en este ejemplo, *Alex Pink*). La expresión regular que especifique debe ajustarse a la especificación de Java regex.
 
    Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se utiliza con el `java.util.regex.Matcher.replaceAll()` método . El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) se debe especificar en consecuencia.
 
@@ -55,29 +58,30 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
    Puede utilizar los siguientes caracteres en el regex:
 
    * . (cualquier carácter)
-   *  &amp;ast; (0 o más ocurrencias)
+   * &amp;ast; (0 o más ocurrencias)
    * () (especifique el grupo entre corchetes)
    * \ (utilizado para escapar de un carácter regex a un carácter normal)
    * $n (utilizado para hacer referencia al grupo n)
+
    Ejemplos de expresiones regulares:
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex Pink (Autenticación)&quot;
 
-      **** Regex: (.&amp;ast;) \(Autenticación\)
+      **Regex:** (.&amp;ast;) \(Autenticación\)
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex (Authentication) Pink&quot;
 
-      **** Regex: (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
    * Para extraer &quot;Alex Rosa&quot; de &quot;Alex (Autenticación) Rosa&quot;
 
-      **** Regex: (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
+      **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
       Orden personalizado: $2 $1 (devuelve el segundo grupo, concatenado al primer grupo, capturado con un carácter de espacio en blanco)
 
    * Para extraer &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-      **** Regex: smtp:(.&amp;ast;)
+      **Regex:** smtp:(.&amp;ast;)
    Para obtener más información sobre el uso de expresiones regulares, consulte el tutorial de [Java sobre expresiones](https://java.sun.com/docs/books/tutorial/essential/regex/)regulares.
 
 1. En la lista Para dominio, seleccione el dominio del usuario.
@@ -87,7 +91,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 
 1. En la Consola de administración, haga clic en Configuración > Administración de usuarios > Configuración.
 1. Haga clic en Asignación de certificados.
-1. Seleccione la asignación de certificados para editar y editar su configuración. Puede actualizar la expresión regular y el orden personalizado.
+1. Seleccione la asignación de certificados para editar y editar su configuración. Puede actualizar la expresión normal y el orden personalizado.
 1. Para probar los cambios, haga clic en Examinar para cargar un certificado de muestra, haga clic en Probar certificado y, a continuación, haga clic en Aceptar.
 
 **Eliminar una asignación de certificado**

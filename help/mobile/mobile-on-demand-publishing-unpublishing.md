@@ -1,8 +1,8 @@
 ---
 title: Publicar contenido de cancelación de publicación
 seo-title: Publicar contenido de cancelación de publicación
-description: Una vez que esté familiarizado con las acciones de administración de contenido en artículos, pancartas y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. También puede cancelar la publicación del contenido.
-seo-description: Una vez que esté familiarizado con las acciones de administración de contenido en artículos, pancartas y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. También puede cancelar la publicación del contenido.
+description: Una vez que esté familiarizado con las acciones de los gestoras de contenido en artículos, pancartas y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. También puede cancelar la publicación del contenido.
+seo-description: Una vez que esté familiarizado con las acciones de los gestoras de contenido en artículos, pancartas y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. También puede cancelar la publicación del contenido.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Una vez que esté familiarizado con las acciones de administración de contenido en artículos, pancartas y colecciones, puede publicar el contenido. También puede cancelar la publicación del contenido.
+Una vez que esté familiarizado con las acciones del gestor de contenido en artículos, pancartas y colecciones, puede publicar el contenido. También puede cancelar la publicación del contenido.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Flujo de trabajo general para publicar/cancelar la publicación de un artículo:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
 1. Seleccione un artículo.
-1. Agregue artículos adicionales si es necesario desde la vista de lista.
+1. Añada artículos adicionales si es necesario desde la vista de lista.
 1. Seleccione Publicar en la barra de acciones. Después de unos momentos, sus artículos serán ahora públicos.
 1. Siga los mismos pasos descritos anteriormente para Cancelar la publicación de artículos.
 
@@ -53,9 +56,9 @@ Flujo de trabajo general para publicar/cancelar la publicación de un artículo:
 
 Una vez que haya aprendido a crear y publicar contenido, consulte
 
-* [Desarrollo de contenido de AEM para los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Administración de contenido para utilizar los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile.md)
+* [Desarrollo de contenido AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 O necesita conocer los temas de creación, consulte
 
-[Creación de contenido de AEM para aplicaciones de servicios bajo demanda de AEM Mobile](/help/mobile/mobile-apps-ondemand.md)
+[Creación de contenido AEM para aplicaciones de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

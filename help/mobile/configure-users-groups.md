@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -23,32 +26,32 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 En este capítulo se describen las funciones de usuario y cómo configurar los usuarios y grupos para que admitan la creación y la gestión de las aplicaciones móviles.
 
-## Usuarios y administración de grupos de aplicaciones de AEM Mobile {#aem-mobile-application-users-and-group-administration}
+## Usuarios de aplicaciones y administración de grupos de AEM Mobile {#aem-mobile-application-users-and-group-administration}
 
-Para ayudar a organizar y administrar el modelo de permisos de las aplicaciones AEM, hay disponibles los dos grupos siguientes:
+Para ayudar a organizar y administrar el modelo de permisos de AEM aplicaciones, hay disponibles los dos grupos siguientes:
 
 * administradores de aplicaciones para administradores de aplicaciones
 * autores de aplicaciones para autores de aplicaciones
 
-### Autores de contenido de aplicaciones de AEM Mobile (grupo de autores de aplicaciones) {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile Application Content Authors (grupo de creación de aplicaciones) {#aem-mobile-application-content-authors-app-author-group}
 
-Los miembros del grupo de creación de aplicaciones son responsables de la creación del contenido de la aplicación móvil de AEM, incluidas las páginas, el texto, las imágenes y los vídeos.
+Los miembros del grupo de creación de aplicaciones son responsables de la creación AEM contenido de aplicaciones móviles, incluidas páginas, texto, imágenes y vídeos.
 
 #### Configuración de grupo: app-author {#group-configuration-app-authors}
 
 1. Cree un nuevo grupo de usuarios llamado &#39;app-author&#39;:
 
-   Vaya a la Consola de administración de usuarios: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Vaya al Admin Console de usuarios: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Desde la consola de grupo de usuarios, seleccione el botón &#39;+&#39; para crear un grupo.
 
-   Establezca el ID de este grupo en &#39;app-author&#39; para indicar que es un tipo específico de grupo de usuarios autores específico para la creación de aplicaciones móviles en AEM.
+   Establezca el ID de este grupo en &#39;app-author&#39; para indicar que es un tipo específico de grupo de usuarios autores específico para la creación de aplicaciones móviles dentro de AEM.
 
-1. Agregar miembro al grupo: Autores
+1. Añadir miembro en grupo: Autores
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-   Agregar autores de aplicaciones al grupo Autores
+   Añadir autores de aplicaciones al grupo Autores
 
 1. Ahora que ha creado el grupo de usuarios autores de aplicaciones, puede agregar miembros individuales del equipo a este nuevo grupo a través de la consola [Administración de](http://localhost:4502/libs/granite/security/content/useradmin.md)usuarios.
 
@@ -61,13 +64,13 @@ Los miembros del grupo de creación de aplicaciones son responsables de la creac
    * (Leer) en /etc/cloudservices
    >[!NOTE]
    >
-   >App Authors amplía el grupo predeterminado de autores de contenido (autores) de AEM, heredando así la capacidad de crear contenido en /content/phonegap
+   >App Authors amplía el grupo predeterminado content-author (Autores) de AEM heredando así la capacidad de crear contenido en /content/phonegap
 
 ### Grupo de administradores de aplicaciones de AEM Mobile (grupo de administradores de aplicaciones) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Los miembros del grupo de administradores de aplicaciones pueden crear contenido de aplicación con los mismos permisos incluidos con autores de aplicaciones **Y** además son responsables de:
 
-* Configuración de PhoneGap Build y Adobe Mobile Services cloud services en AEM
+* Configuración de los servicios en la nube de PhoneGap Build y Adobe Mobile Services en AEM
 * Ensayo, publicación y borrado de las actualizaciones OTA de sincronización de contenido de la aplicación
 
 >[!NOTE]
@@ -79,10 +82,11 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 #### Configuración de grupo: administradores de aplicaciones {#group-configuration-app-admins}
 
 1. Cree un nuevo grupo llamado administradores de aplicaciones.
-1. Agregue los siguientes grupos al nuevo grupo de administradores de aplicaciones:
+1. Añada los siguientes grupos en su nuevo grupo de administradores de aplicaciones:
 
    * content-author
    * flujos de trabajo-usuarios
+
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. Vaya a la consola [](http://localhost:4502/useradmin) Permisos y agregue permisos para administrar cloudservices
@@ -94,6 +98,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
    * (Leer, Modificar, Crear, Eliminar, Replicar) en /etc/packages/mobileapp
    * (Leer) en /var/contentsync
+
    >[!NOTE]
    >
    >La replicación de paquetes se utiliza para publicar actualizaciones de aplicaciones desde la instancia de autor para publicar la instancia
@@ -104,11 +109,11 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
    >
    >Si se omite el permiso READ, los paquetes de actualización vacíos se pueden crear y replicar.
 
-1. Agregar miembros a este grupo según sea necesario
+1. Añadir miembros a este grupo según sea necesario
 
-## Permisos de mosaico de tablero {#dashboard-tile-permissions}
+## Permisos de mosaico de Panel {#dashboard-tile-permissions}
 
-Los mosaicos de tablero pueden exponer diferentes acciones en función de los permisos que tenga el usuario. A continuación se describen las acciones disponibles para cada mosaico.
+Los mosaicos de Panel pueden exponer diferentes acciones en función de los permisos que tenga el usuario. A continuación se describen las acciones disponibles para cada mosaico.
 
 Además de estos permisos, también se puede mostrar u ocultar una acción en función de la configuración de la aplicación actual. Por ejemplo, no tiene sentido exponer la acción &#39;Compilación remota&#39; si no se ha asignado una configuración de nube PhoneGap a la aplicación. Estos se enumerarán a continuación en las secciones &#39;Condición **de configuración**&#39;.
 

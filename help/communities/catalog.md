@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 Los componentes [ y `Enablement Assignments`](assignments.md) del grupo Comunidades en el navegador de componentes son componentes de una comunidad `Enablement Catalog` de [](overview.md#enablement-community)habilitación.
 
-El `Enablement Catalog` componente permite a los miembros de la comunidad acceder a un catálogo de recursos [de](resources.md)habilitación. El uso de etiquetas AEM es una parte importante de la administración de la lista de recursos de activación de un catálogo (consulte [Etiquetado de recursos](tag-resources.md)de habilitación).
+El `Enablement Catalog` componente permite a los miembros de la comunidad acceder a un catálogo de recursos [de](resources.md)habilitación. El uso de etiquetas AEM es una parte importante de la administración de la lista de recursos de habilitación de un catálogo (consulte [Etiquetado de recursos](tag-resources.md)de habilitación).
 
-En el tutorial [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](enablement-published-site.md) publicado.
+En el tutorial [Introducción a AEM Communities para la habilitación](getting-started-enablement.md) , consulte la vista de asignaciones y catálogos de un miembro en la sección [Experiencia del sitio](enablement-published-site.md) publicado.
 
 ## Información adicional {#additional-information}
 

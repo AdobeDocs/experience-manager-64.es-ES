@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 translation-type: tm+mt
 source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
 El marco de integración proporciona los mecanismos y componentes para:
 
 * conexión a un motor de comercio electrónico
-* extracción de datos en AEM
+* extraer datos en AEM
 * mostrar esos datos y recopilar las respuestas del comprador
 * devolver detalles de transacción
 * buscar los datos de ambos sistemas
@@ -38,17 +41,18 @@ Esto significa que:
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    >
    >
-* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+* [Commerce Cloud SAP](/help/sites-administering/sap-commerce-cloud.md)
    >
    >
-* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+* [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
+
 >
 
 
 
 >[!CAUTION]
 >
->El marco [de integración de](https://www.adobe.com/solutions/web-experience-management/commerce.html) eCommerce es un complemento de AEM.
+>El marco [de integración de](https://www.adobe.com/solutions/web-experience-management/commerce.html) eCommerce es un AEM Añada.
 >
 >Su representante de ventas podrá dar detalles completos, según el motor apropiado.
 
@@ -60,7 +64,7 @@ Esto significa que:
 
 >[!CAUTION]
 >
->La instalación estándar de AEM incluye la implementación genérica de comercio electrónico de AEM (JCR).
+>La instalación de AEM estándar incluye la implementación de comercio electrónico de AEM genérica (JCR).
 >
 >Actualmente, se ha diseñado para fines de demostración o como base básica de una implementación personalizada según sus necesidades.
 
@@ -73,7 +77,7 @@ Para optimizar el funcionamiento, tanto AEM como el motor de comercio electróni
       * Información del producto del motor de comercio electrónico.
    * Proporcione:
 
-      * Vistas del usuario para obtener información sobre el producto, el carro de compras y el cierre de compra.
+      * vistas del usuario para obtener información sobre el producto, el carro de compras y el cierre de compra.
       * Carro de compras e información de cierre de compra al motor de comercio electrónico.
       * Optimización de motores de búsqueda (SEO).
       * Funcionalidad de la comunidad.
@@ -100,7 +104,7 @@ Para optimizar el funcionamiento, tanto AEM como el motor de comercio electróni
 >
 >Los detalles exactos dependerán del motor de comercio electrónico y de la implementación del proyecto.
 
-Se proporcionan varios componentes de AEM integrados para utilizar la capa de integración. En la actualidad se incluyen:
+Se proporcionan varios componentes de AEM listos para usar para utilizar la capa de integración. En la actualidad se incluyen:
 
 * Información del producto
 * Carro de compras
@@ -121,21 +125,22 @@ La estructura le permite acceder a funciones como:
 
 ### Implementaciones {#implementations}
 
-AEM eCommerce se implementa con un motor de comercio electrónico:
+AEM comercio electrónico se implementa con un motor de comercio electrónico:
 
 * El marco de integración de eCommerce se ha creado para que pueda integrar fácilmente un motor de comercio electrónico con AEM. El motor de comercio electrónico creado específicamente controla los datos del producto, los carros de compras, el cierre de compra y el cumplimiento de pedidos, mientras que AEM controla la visualización de datos y las campañas de marketing.
 
 
 >[!NOTE]
 >
->La instalación estándar de AEM incluye la implementación genérica de comercio electrónico de AEM (JCR).
+>La instalación de AEM estándar incluye la implementación de comercio electrónico de AEM genérica (JCR).
 >
 >Actualmente, se ha diseñado para fines de demostración o como base básica de una implementación personalizada según sus necesidades.
 >
->El comercio electrónico de AEM implementado en AEM mediante el uso de un desarrollo genérico basado en JCR es:
+>AEM comercio electrónico implementado dentro de AEM usando desarrollo genérico basado en JCR es:
 >
->* Un ejemplo de comercio electrónico independiente y nativo de AEM que ilustra el uso de la API. Esto se puede utilizar para controlar los datos del producto, los carros de compras y el cierre de compra junto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos de productos se almacena en el repositorio nativo de AEM (implementación de [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)por parte de Adobe).\
-   >  La instalación estándar de AEM contiene los conceptos básicos de la implementación [genérica de comercio electrónico](/help/sites-administering/generic.md).
+>* Un ejemplo de comercio electrónico independiente y AEM para ilustrar el uso de la API. Esto puede utilizarse para controlar los datos del producto, los carros de compras y el cierre de compra junto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos de productos se almacena en el repositorio nativo de AEM (implementación de [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)por parte del Adobe).\
+   >  La instalación de AEM estándar contiene los conceptos básicos de la implementación [genérica de comercio electrónico](/help/sites-administering/generic.md).
+
 >
 
 
@@ -144,7 +149,7 @@ AEM eCommerce se implementa con un motor de comercio electrónico:
 
 Al importar datos desde un motor de comercio a su sitio de comercio electrónico de AEM, se utiliza un proveedor de comercio para proporcionar datos a los importadores. Un proveedor de comercio puede admitir varios importadores.
 
-Un proveedor de comercio es un código AEM personalizado para:
+Un proveedor de comercio es AEM código personalizado para:
 
 * interfaz a un motor de comercio back-end
 * implementar un sistema de comercio en la parte superior del repositorio JCR
@@ -154,13 +159,13 @@ Actualmente hay dos proveedores de comercio de ejemplo disponibles para AEM:
 * una para geometrixx-hybris
 * otro para geometrixx-generic (JCR)
 
-Aunque normalmente un proyecto necesitará desarrollar su propio proveedor de comercio personalizado específico a su PIM y esquema de datos de producto.
+Aunque normalmente un proyecto necesitará desarrollar su propio proveedor de comercio personalizado específico a su PIM y al esquema de datos del producto.
 
 >[!NOTE]
 >
 >Los importadores de geometrixx utilizan archivos CSV; hay una descripción del esquema aceptado (con las propiedades personalizadas permitidas) en los comentarios sobre su implementación.
 
-ProductServicesManager [mantiene (a través de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) OSGi [)una lista de implementaciones de las interfaces](/help/sites-deploying/configuring.md#osgi-configuration-settings)ProductImporter [y](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) CatalogBlueprintImporter [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) . Se enumeran en el campo desplegable **Importador/Proveedor** de comercio del asistente de importación (con la `commerceProvider` propiedad como nombre).
+ProductServicesManager [mantiene (a través de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) OSGi [)una lista de las implementaciones de las interfaces](/help/sites-deploying/configuring.md#osgi-configuration-settings)ProductImporter [y](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) CatalogBlueprintImporter [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) . Se enumeran en el campo desplegable **Importador/Proveedor** de comercio del asistente de importación (con la `commerceProvider` propiedad como nombre).
 
 Cuando un importador o proveedor de comercio específico está disponible en la lista desplegable, los datos complementarios que necesita deben definirse (según el tipo de importador) en:
 
@@ -193,7 +198,7 @@ El sistema integrado se ocupa de las siguientes funciones para mantener los dato
 
 * Surfista/comprador que:
 
-   * Visualiza la información del producto.
+   * Vista la información del producto.
    * Coloca los artículos en el carro de compras.
    * Comprueba sus pedidos.
    * Se espera el cumplimiento del pedido.
@@ -206,17 +211,17 @@ Aunque la ubicación real puede depender de la implementación; por ejemplo, gen
 
 ### Producto Datos de datos en comparación con datos de marketing {#product-data-versus-marketing-data}
 
-#### Categorías estructurales y de marketing {#structural-versus-marketing-categories}
+#### Categorías estructurales frente a mercadotecnia {#structural-versus-marketing-categories}
 
-Si se pueden diferenciar las dos categorías siguientes, esto le permite aclarar las direcciones URL con una estructura significativa (árboles de `cq:Page` nodos) y, por lo tanto, muy próximas a la administración de contenido clásica de AEM):
+Si se pueden diferenciar las dos categorías siguientes, esto le permite aclarar las direcciones URL con una estructura significativa (árboles de `cq:Page` nodos) y, por lo tanto, muy cerca del gestor de contenido de AEM clásico):
 
-* *Categorías *estructurales
+* *categorías *estructurales
 
    El árbol de categorías que define *qué es un producto*; por ejemplo:
 
    `/products/mens/shoes/sneakers`
 
-* *Categorías de mercadotecnia*
+* *categorías de marketing*
 
    Todas las demás categorías a las que puede pertenecer un *producto*; por ejemplo:
 
@@ -229,7 +234,7 @@ Para presentar y administrar su producto, querrá tener una amplia gama de infor
 Los datos del producto pueden ser:
 
 * mantenido directamente en AEM (genérico).
-* mantenido en el motor de comercio electrónico y disponible en AEM.
+* se mantiene en el motor de comercio electrónico y está disponible en AEM.
 
    Según el tipo de datos, se [sincroniza](#catalog-maintenance-data-synchronization) según sea necesario o se accede directamente a ellos; por ejemplo: los datos críticos y altamente volátiles, como los precios de los productos, se recuperan del motor de comercio electrónico en cada solicitud de página para garantizar que siempre estén actualizados.
 
@@ -249,7 +254,7 @@ Para los productos adecuados también se puede obtener información sobre las va
 
 ### Atributos del producto {#product-attributes}
 
-Los atributos individuales de cada producto pueden depender del motor de comercio electrónico que se utilice y de la implementación de AEM. Están disponibles (según corresponda) al ver páginas de productos o al editar la información de productos y pueden incluir:
+Los atributos individuales que se poseen sobre cada producto pueden depender del motor de comercio electrónico que se esté utilizando y de su implementación AEM. Están disponibles (según corresponda) al ver páginas de productos o al editar la información de productos y pueden incluir:
 
 * **Imagen**
 
@@ -269,7 +274,7 @@ Los atributos individuales de cada producto pueden depender del motor de comerci
 
 * **Categoría de recursos predeterminada**
 
-   Categoría predeterminada para los recursos.
+   Una categoría predeterminada para los recursos.
 
 * **Datos de ERP**
 
@@ -311,15 +316,15 @@ Para una tienda multilingüe, puede importar el catálogo para cada árbol de id
 
 #### Catálogos para varias marcas {#catalogs-for-multiple-brands}
 
-Al igual que en el caso de los idiomas, las grandes empresas multinacionales pueden necesitar atender a múltiples marcas.
+Al igual que con los idiomas, las grandes compañías multinacionales pueden necesitar atender a múltiples marcas.
 
 #### Catálogos por etiquetas {#catalogs-by-tags}
 
-Las etiquetas también se pueden usar para agrupar productos en un catálogo. Pueden utilizarse para catálogos más dinámicos, como ofertas de temporada.
+Las etiquetas también se pueden usar para agrupar productos en un catálogo. Pueden utilizarse para catálogos más dinámicos, como ofertas estacionales.
 
 ### Configuración del catálogo (importación inicial) {#catalog-setup-initial-import}
 
-Según la implementación, puede importar los datos de producto necesarios para el catálogo base en AEM desde:
+Según la implementación, puede importar en AEM los datos de producto requeridos para el catálogo base desde:
 
 * un archivo CSV (para la implementación genérica)
 * el motor de comercio electrónico
@@ -391,13 +396,13 @@ En los casos en que los productos no contienen recursos (imágenes) que se van a
 
 #### Prueba de rendimiento {#performance-testing}
 
-Las pruebas de rendimiento deben tenerse en cuenta en las implementaciones de comercio electrónico de AEM:
+Las pruebas de rendimiento deben tenerse en cuenta en AEM implementaciones de comercio electrónico:
 
-* Entorno de creación:
+* entorno del autor:
 
-   La actividad en segundo plano (por ejemplo, la importación) puede producirse al mismo tiempo que la actividad normal del usuario (por ejemplo, la edición de páginas) e incluso si el rendimiento en primer plano tiene (en general) una prioridad mayor, el mal rendimiento que ven los autores en línea puede provocar frustraciones que puedan bloquear una decisión de lanzamiento.
+   La actividad en segundo plano (por ejemplo, la importación) puede producirse al mismo tiempo que la actividad normal del usuario (por ejemplo, la edición de páginas) e incluso si el rendimiento en primer plano tiene (en general) una prioridad mayor, el mal rendimiento que ven los autores en línea puede generar frustraciones que pueden bloquear una decisión de lanzamiento.
 
-* Entorno de publicación:
+* entorno de publicación:
 
    La replicación es un proceso crítico para garantizar que el contenido se publique de manera rápida y confiable. Esto puede verse afectado por la forma en que el autor agrupa el contenido que se va a publicar.
 
@@ -405,14 +410,14 @@ Las pruebas de rendimiento deben tenerse en cuenta en las implementaciones de co
 
    La combinación de invalidaciones de caché y de front-end puede generar posibles sorpresas en el rendimiento. La prueba ayuda a evitarlos.
 
-Tenga en cuenta que esta prueba de rendimiento requiere conocimientos y análisis de su objetivo:
+Tenga en cuenta que esta prueba de rendimiento requiere conocimiento y análisis de su destinatario:
 
 * Volúmenes de contenido
 
    * Assets
    * Productos y SKU localizados de I18ned
 
-* Actividad del usuario:
+* actividad del usuario:
 
    * Edición masiva
    * Publicación masiva
@@ -429,7 +434,7 @@ Tenga en cuenta que esta prueba de rendimiento requiere conocimientos y análisi
 
 En todas las implementaciones se pueden tener en cuenta los siguientes puntos:
 
-* Como producto, las unidades y categorías de almacenamiento pueden ser numerosas, intente utilizar el menor número posible de nodos para modelar el contenido.
+* Como producto, las unidades de almacenamiento y las categorías pueden ser numerosas, intente utilizar el menor número posible de nodos para modelar el contenido.
 
    Cuantos más nodos tenga, más flexible será su contenido (por ejemplo, parsys). Sin embargo, todo es una solución y ¿necesita flexibilidad individual (de forma predeterminada) al manipular (por ejemplo) productos de 30.000 rpm?
 
@@ -471,7 +476,7 @@ Las secciones del catálogo le proporcionan, por ejemplo:
 
 Las páginas de productos proporcionan información completa sobre productos individuales. También se reflejan las actualizaciones dinámicas de; por ejemplo, los cambios de precios registrados en el motor de comercio electrónico.
 
-Las páginas de producto son páginas de AEM que utilizan el componente **Producto** ; por ejemplo, dentro de la plantilla Producto **de** comercio:
+Las páginas de producto son páginas AEM que utilizan el componente **Producto** ; por ejemplo, dentro de la plantilla Producto **de** comercio:
 
 ![ecommerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
 
@@ -488,23 +493,23 @@ Esta información permite al comprador seleccionar lo siguiente al agregar un el
 
 #### Páginas de aterrizaje del producto {#product-landing-pages}
 
-Son páginas de AEM que proporcionan información principalmente estática; por ejemplo, una introducción y una descripción general con vínculos a las páginas de productos subyacentes.
+Son páginas AEM que proporcionan información principalmente estática; por ejemplo, una introducción y una descripción general con vínculos a las páginas de productos subyacentes.
 
 ### Componente del producto {#product-component}
 
-El componente **Producto** se puede agregar a cualquier página con una página principal que ofrezca los metadatos requeridos (es decir, las rutas a `cartPage` y `cartObject`). En el lugar de la demostración, Geometrixx Outdoors, este servicio es suministrado por `UserInfo.jsp`.
+El componente **Producto** se puede agregar a cualquier página con una página principal que ofrezca los metadatos requeridos (es decir, las rutas a `cartPage` y `cartObject`). En el sitio de demostración, Geometrixx Outdoors, esto es suministrado por `UserInfo.jsp`.
 
 El componente **Producto** también puede personalizarse según sus necesidades individuales.
 
 ### Páginas proxy {#proxy-pages}
 
-Las páginas proxy se utilizan para simplificar la estructura del repositorio y optimizar el almacenamiento para los catálogos grandes.
+Las páginas proxy se utilizan para simplificar la estructura del repositorio y optimizar el almacenamiento de los catálogos grandes.
 
 La creación de un catálogo utilizará diez nodos por producto, ya que proporciona componentes individuales para cada producto que puede actualizar y personalizar en AEM. Este gran número de nodos puede convertirse en un problema si el catálogo contiene cientos o incluso miles de productos. Para evitar problemas, puede crear el catálogo con páginas proxy.
 
 Las páginas proxy utilizan una estructura de dos nodos ( `cq:Page` y `jcr:content`) que no contiene ningún contenido real del producto. El contenido se genera, a petición, haciendo referencia a los datos del producto y a la página de plantilla.
 
-Sin embargo, hay una compensación. No podrá personalizar la información del producto dentro de AEM; se utilizará una plantilla estándar (definida para su sitio).
+Sin embargo, hay una compensación. No podrá personalizar la información del producto dentro de AEM, se utilizará una plantilla estándar (definida para su sitio).
 
 >[!NOTE]
 >
@@ -539,13 +544,13 @@ En AEM:
 
 >[!NOTE]
 >
->AEM utiliza el término **Cupón**, que es sinónimo del término **Cupón**.
+>AEM utiliza el término **Cupón**, es sinónimo del término **Cupón**.
 
 ### Promociones {#promotions}
 
 Las promociones, junto con los vales, le permiten realizar situaciones como:
 
-* Una empresa proporciona precios personalizados para los empleados, que es una lista de usuarios creada a mano.
+* Una compañía proporciona precios personalizados para los empleados, que es una lista artesanal de los usuarios.
 * Los clientes a largo plazo reciben descuentos en todos los pedidos.
 * Precio de venta ofrecido durante un período de tiempo bien definido.
 * Un cliente recibe un asiento cuando su pedido anterior excede una cantidad específica.
@@ -559,7 +564,7 @@ Normalmente, los administradores de información de productos no se encargan de 
    * Una prioridad
    * Una ruta del controlador de promoción
 
-* Puede conectar las promociones a una campaña para definir la fecha y hora de activación y de desactivación.
+* Puede conectar las promociones a una campaña para definir su fecha y hora de activación/desactivación.
 * Puede conectar las promociones a una experiencia para definir sus segmentos.
 * Las promociones que no están conectadas a una experiencia no se activan por sí solas, sino que pueden ser activadas por un cupón.
 * El componente Promoción contiene:
@@ -567,14 +572,14 @@ Normalmente, los administradores de información de productos no se encargan de 
    * PROCESADORES y diálogos para la administración de promociones
    * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
 
-En AEM, las promociones también se integran en la administración de [campañas](/help/sites-authoring/personalization.md):
+En AEM, las promociones también se integran en la [Gestión de la campaña](/help/sites-authoring/personalization.md):
 
-* una [campaña](/help/sites-authoring/personalization.md) especifica los tiempos de activación y desactivación
-* [las experiencias](/help/sites-authoring/personalization.md) *dentro* de la campaña se utilizan para agrupar recursos (teaserpages, promociones, etc.) según el segmento de audiencia al que corresponden
+* una [campaña](/help/sites-authoring/personalization.md) especifica los tiempos de activación/desactivación
+* [las experiencias](/help/sites-authoring/personalization.md) *dentro* de la campaña se utilizan para agrupar recursos (teaserpages, promociones, etc.) de acuerdo con el segmento de audiencia al que corresponden
 
-Una promoción se puede realizar en una experiencia o directamente en la campaña:
+Una promoción puede realizarse en una experiencia o directamente en la campaña:
 
-* Si una promoción se realiza en una experiencia, se puede aplicar automáticamente a un segmento de audiencia.
+* Si una promoción se mantiene en una experiencia, se puede aplicar automáticamente a un segmento de audiencia.
 
    Por ejemplo, en el sitio de muestra de geometrixx-outdoors, la promoción:
 
@@ -588,7 +593,7 @@ Una promoción se puede realizar en una experiencia o directamente en la campañ
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   está fuera de una experiencia, por lo que nunca se activa automáticamente (por ejemplo: en función de la segmentación). Sin embargo, las licencias hacen referencia a él, que se puede encontrar en varias de las experiencias de la campaña de artículos. Si se introducen esos códigos de asiento en el carro de compras, se activará la promoción.
+   está fuera de una experiencia, por lo que nunca se activa automáticamente (por ejemplo: en función de la segmentación). Sin embargo, los vales hacen referencia a él, que se puede encontrar en varias de las experiencias de la campaña del artículo. Si se introducen esos códigos de asiento en el carro de compras, se activará la promoción.
 
 >[!NOTE]
 >
@@ -598,7 +603,7 @@ Una promoción se puede realizar en una experiencia o directamente en la campañ
 
 ### Registro de clientes y cuentas {#customer-registration-and-accounts}
 
-Cuando se registra un comprador, es necesario sincronizar los detalles de la cuenta entre AEM y el motor de comercio electrónico. Los datos confidenciales se conservan de forma independiente, pero los perfiles se comparten:
+Cuando se registra un comprador, los detalles de la cuenta deben sincronizarse entre AEM y el motor de comercio electrónico. Los datos confidenciales se conservan de forma independiente, pero se comparten perfiles:
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -610,18 +615,18 @@ El mecanismo exacto puede depender del escenario:
 
 1. La cuenta de usuario solo existe en AEM:
 
-   1. El usuario se creará en el motor de comercio electrónico con el mismo ID de cuenta y una contraseña aleatoria que se almacenarán en AEM.
-   1. La contraseña aleatoria es necesaria, ya que AEM intenta iniciar sesión en el motor de comercio electrónico en la primera llamada (por ejemplo, cuando se solicita una página de producto y se hace referencia al motor de comercio electrónico para el precio). Como esto sucede después del inicio de sesión de AEM, la contraseña no está disponible.
+   1. El usuario se creará en el motor de comercio electrónico con el mismo ID de cuenta y una contraseña aleatoria que se almacenará en AEM.
+   1. La contraseña aleatoria es necesaria, ya que AEM intenta iniciar sesión en el motor de comercio electrónico en la primera llamada (por ejemplo, cuando se solicita una página de producto y se hace referencia al motor de comercio electrónico para el precio). Dado que esto sucede después del inicio de sesión AEM, la contraseña no está disponible.
 
 1. La cuenta de usuario solo existe en el motor de comercio electrónico:
 
    1. La cuenta se creará en AEM con el mismo ID de cuenta y contraseña.
 
-Al utilizar un motor de comercio electrónico, AEM solo almacena el ID de cuenta y la contraseña (opcionalmente, un grupo de usuarios). El resto de la información se almacena en el motor de comercio electrónico.
+Cuando se utiliza un motor de comercio electrónico, AEM solamente almacena el ID de cuenta y la contraseña (opcionalmente, un grupo de usuarios). El resto de la información se almacena en el motor de comercio electrónico.
 
 >[!NOTE]
 >
->Al utilizar un motor de comercio electrónico, debe asegurarse de que las cuentas creadas para los usuarios que inician sesión en una instancia de AEM se replican (por ejemplo, mediante flujos de trabajo) en cualquier otra instancia de AEM que se comunique con dicho motor.
+>Al utilizar un motor de comercio electrónico, debe asegurarse de que las cuentas creadas para los usuarios que inician sesión en una instancia de AEM se replican (por ejemplo, mediante flujos de trabajo) en cualquier otra instancia de AEM que se comunique con ese motor.
 >
 >De lo contrario, estas otras instancias de AEM también intentarán crear cuentas para los mismos usuarios en el motor. Estas acciones fallarán con una `DuplicateUidException` salida del motor.
 
@@ -639,11 +644,11 @@ A menudo se requiere el registro para que el comprador tenga acceso al carro de 
 
 Después de registrarse, el comprador puede iniciar sesión con su cuenta para poder realizar un seguimiento de sus acciones y cumplir sus pedidos.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 ### Inicio de sesión único {#single-sign-on}
 
-Se proporciona el inicio de sesión único (SSO) para que los autores sean conocidos tanto en AEM como en el sistema de comercio electrónico sin tener que iniciar sesión dos veces.
+Se proporciona el inicio de sesión único (SSO), de modo que los autores son conocidos tanto en AEM como en el sistema de comercio electrónico sin tener que iniciar sesión dos veces.
 
 ### myAccount {#myaccount}
 
@@ -655,7 +660,7 @@ Hay una página que le permite administrar fácilmente la información de su cue
 
 ### Libreta de direcciones {#address-book}
 
-Su sitio deberá almacenar una selección de direcciones; incluidas la entrega, la facturación y las direcciones alternativas. Esto se puede implementar mediante formularios basados en el formato de dirección predeterminado o puede utilizar el componente Libreta de direcciones proporcionado por AEM.
+Su sitio deberá almacenar una selección de direcciones; incluyendo envíos, facturación y direcciones alternativas. Esto se puede implementar mediante formularios basados en el formato de dirección predeterminado o puede utilizar el componente Libreta de direcciones proporcionado por AEM.
 
 Este componente de Libreta de direcciones permite:
 
@@ -669,7 +674,7 @@ Se puede acceder al componente de libreta de direcciones desde la página **Mi c
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-**Puede hacer clic en** Agregar nueva dirección... para agregar una nueva dirección en la libreta de direcciones. Se abre un formulario que se puede rellenar y, a continuación, se hace clic en **Agregar dirección**.
+Puede hacer clic en **Añadir nueva dirección...** para agregar una nueva dirección en la libreta de direcciones. Se abre un formulario que puede rellenar y, a continuación, hacer clic en **Añadir dirección**.
 
 >[!NOTE]
 >
@@ -680,13 +685,13 @@ La Libreta de direcciones se utiliza cuando cierra la compra:
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 Las direcciones se conservan a continuación `user_home/profile/addresses`.\
-Por ejemplo, para Alison Parker, estaría en /home/users/geometrixx/aparker@geometrixx.info/profile/address
+Por ejemplo, para Alison Parker, estaría en /home/users/geometrixx/aparker@geometrixx.info/perfil/address
 
-Puede elegir la dirección que desee de forma predeterminada; esta información se mantiene en el perfil del comprador en lugar de en la dirección. La propiedad de perfil `address.default` se establece con la ruta de la dirección seleccionada para el valor.
+Puede elegir la dirección que desee de forma predeterminada; esta información se mantiene en el perfil del comprador en lugar de en la dirección. La propiedad perfil `address.default` se establece con la ruta de la dirección seleccionada para el valor.
 
 ### Precios específicos del cliente {#customer-specific-pricing}
 
-El motor de comercio electrónico utiliza el contexto (básicamente la información del comprador) para determinar el precio que tiene y, a continuación, devuelve la información correcta a AEM.
+El motor de comercio electrónico utiliza el contexto (básicamente la información del comprador) para determinar el precio que tiene y, a continuación, proporciona la información correcta a AEM.
 
 ## Carro de compras y pedidos {#shopping-cart-and-orders}
 
@@ -696,8 +701,8 @@ Al comprar, el comprador explorará las páginas de productos y seleccionará lo
 
 Un cliente anónimo puede:
 
-* Ver productos
-* Agregar productos al carro de compras
+* Productos de Vista
+* Añadir productos a su carro
 * Realizar el cierre de compra para realizar el pedido
 
 >[!NOTE]
@@ -709,10 +714,10 @@ Un cliente anónimo puede:
 Un cliente registrado puede:
 
 * Iniciar sesión en su cuenta
-* Ver productos
-* Agregar productos al carro de compras
+* Productos de Vista
+* Añadir productos a su carro
 * Realizar el cierre de compra para realizar el pedido
-* Ver y rastrear pedidos anteriores
+* Vista y seguimiento de pedidos anteriores
 
 ### Información general del contenido del carro de compras {#shopping-cart-content-overview}
 
@@ -729,7 +734,7 @@ El carro de compras proporciona:
 
 El carro de compras se guarda según el motor que se utilice:
 
-* AEM generic almacena el carro en una cookie.
+* AEM genérico almacena el carro en una cookie.
 * Ciertos motores de comercio electrónico pueden almacenar el carro de compras en una sesión.
 
 En cualquier caso, los elementos permanecen en el carro (y se pueden restaurar) a través del inicio de sesión o el cierre de sesión (pero solo en el mismo equipo o explorador). Por ejemplo:
@@ -747,7 +752,7 @@ En cualquier caso, los elementos permanecen en el carro (y se pueden restaurar) 
 
 >[!NOTE]
 >
->No se recomienda probar la restauración del contenido del carro de compras con la `admin` cuenta, ya que esto puede entrar en conflicto con la `admin` cuenta del motor de comercio electrónico (p. ej., hybris).
+>No se recomienda probar la restauración del contenido del carro de compras con la `admin` cuenta, ya que esto puede entrar en conflicto con la `admin` cuenta del motor de comercio electrónico (por ejemplo, hybris).
 
 >[!NOTE]
 >
@@ -757,7 +762,7 @@ Antes del cierre de compra, los cambios de precios se reflejan (en ambos sistema
 
 ### Información del pedido {#order-information}
 
-Según la información de implementación sobre un pedido que se mantenga en el motor de comercio electrónico o en AEM, AEM procesa esta información.
+Según la implementación, la información sobre un pedido se guarda en el motor de comercio electrónico o en el AEM, esta información la procesa AEM.
 
 Se almacena una variedad de información, que puede incluir:
 
@@ -779,7 +784,7 @@ Se almacena una variedad de información, que puede incluir:
 
 * **Elementos de contenido**
 
-   Una lista de elementos ordenados.
+   Una lista de artículos ordenados.
 
 * **Subtotal**
 
@@ -819,7 +824,7 @@ Se almacena una variedad de información, que puede incluir:
 
 * **Número de seguimiento**
 
-   Cualquier número de seguimiento utilizado por la empresa de envío.
+   Cualquier número de seguimiento utilizado por la compañía de envío.
 
 * **Vínculo de seguimiento**
 
@@ -830,7 +835,7 @@ Se almacena una variedad de información, que puede incluir:
 >Los campos utilizados en el asistente para crear orden dependen de que haya un andamiaje táctil para la ubicación. En el ejemplo genérico, se encuentra en:\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
-Cuando el pedido se realiza en AEM, la consola Orden muestra lo siguiente para cada pedido:
+Cuando el orden se mantiene en AEM, la consola Orden muestra lo siguiente para cada pedido:
 
 * el número de elementos del carro de compras
 * el valor total del pedido
@@ -845,23 +850,23 @@ Después de realizar un pedido, los compradores suelen regresar a:
 
 * Comprobar el estado de su pedido
 * Eliminar productos del pedido
-* Agregar productos al pedido
+* Añadir productos al pedido
 
-Después de recibir la entrega del pedido, es posible que los compradores también deseen ver el historial de pedidos realizados durante un período de tiempo.
+Después de recibir el envío del pedido, es posible que los compradores también deseen vista del historial de pedidos realizados durante un período de tiempo.
 
-El despacho y seguimiento de pedidos generalmente son administrados por el motor de comercio electrónico. AEM puede mostrar información mediante el componente Historial de pedidos, que muestra todos los detalles relevantes, incluidos los comprobantes y las promociones aplicadas. Por ejemplo:
+El despacho y seguimiento de pedidos generalmente son administrados por el motor de comercio electrónico. La información se puede mostrar AEM el componente Historial de pedidos, que muestra todos los detalles relevantes, incluidos los asientos y las promociones aplicadas. Por ejemplo:
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
 ## Cierre de compra {#checkout}
 
-El cierre de compra se implementa con los formularios estándar de AEM. Esto permite al administrador de marketing personalizar la experiencia con el contenido de marketing.
+El cierre de compra se implementa con formularios de AEM estándar. Esto permite al administrador de marketing personalizar la experiencia con el contenido de marketing.
 
-A continuación, eCommerce administra el proceso de cierre de compra con los datos introducidos en los formularios de AEM.
+A continuación, eCommerce administra el proceso de cierre de compra con datos de los formularios AEM.
 
 ### Seguridad de pago {#payment-security}
 
-Los detalles de pago, incluida la información de la tarjeta de crédito, suelen ser administrados por el motor de comercio electrónico. AEM reenvía dicha información de transacción al motor (desde donde se reenvía a un servicio de procesamiento de pagos).
+Los detalles de pago, incluida la información de la tarjeta de crédito, suelen ser administrados por el motor de comercio electrónico. AEM reenvía dicha información de transacción al motor (desde donde se remite a un servicio de procesamiento de pagos).
 
 Se puede lograr una complicación de la industria de tarjetas de pago (PCI).
 
@@ -871,9 +876,9 @@ El pedido se confirma en pantalla y se puede rastrear con el seguimiento de [ped
 
 ## Búsqueda {#search-features}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
-Dado que AEM utiliza páginas estándar para productos, puede utilizar el componente de búsqueda estándar para crear una página de búsqueda.
+Dado que AEM utiliza páginas estándar para los productos, puede utilizar el componente de búsqueda estándar para crear una página de búsqueda.
 
 Si necesita una implementación más exhaustiva, puede:
 

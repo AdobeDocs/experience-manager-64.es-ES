@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 90%
 
 ---
 
@@ -44,6 +47,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 >
 >* [Promover un lanzamiento anidado](#promoting-a-nested-launch) cuando haya más de un lanzamiento en la estructura.
 >* [Lanzamientos: el orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener más información sobre la promoción y la publicación automáticas.
+
 >
 
 
@@ -71,6 +75,7 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
    * **Promocionar las páginas modificadas**
    * **Promocionar página actual**
    * **Promocionar la página actual y sus páginas secundarias**
+
    Por ejemplo, al seleccionar para promocionar solo las páginas modificadas:
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
       * **Promocionar las páginas modificadas**
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
+
    ![climage_1-4](assets/chlimage_1-4.png)
 
 1. Seleccione **Siguiente**.

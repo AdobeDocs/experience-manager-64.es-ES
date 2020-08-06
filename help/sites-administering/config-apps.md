@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 0%
 
 ---
 
 
 # Configuración para aplicaciones AEM{#configuring-for-aem-apps}
 
-Las aplicaciones de Adobe Experience Manager permiten actualizar el contenido de la aplicación por aire (OTA). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación del dispositivo se conecte a la instancia de publicación y buscar actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
+Las aplicaciones de Adobe Experience Manager permiten actualizar el contenido de la aplicación a través del aire (OTA). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación del dispositivo se conecte a la instancia de publicación y buscar actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de remitente del reenvío vacío.
 
-## Configuración del encabezado de referente vacío {#configuring-empty-referrer-header}
+## Configuración del encabezado de Remitente del reenvío vacío {#configuring-empty-referrer-header}
 
-Para configurar el servicio de filtros de referente:
+Para configurar el servicio de filtros de remitente del reenvío:
 
 * Abra la consola Apache Felix (**Configuraciones**) en:
 * https://&lt;server>:&lt;número_puerto>/system/console/configMgr
 * Inicie sesión como administrador.
-* En el menú **Configuraciones** , seleccione: Filtro de referente *Apache Sling*
-* Marque el campo Permitir vacío para permitir encabezados de referente vacíos o ausentes.
+* En el menú **Configuraciones** , seleccione: *Filtro Remitente del reenvío Apache Sling*
+* Marque el campo Permitir vacío para permitir encabezados de remitente del reenvío vacíos o que faltan.
 * Click **Save** to save your changes.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)

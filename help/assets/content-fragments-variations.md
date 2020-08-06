@@ -45,7 +45,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 >[!CAUTION]
 >
->Una vez publicado o referenciado un fragmento, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+>Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Creación de contenido {#authoring-your-content}
 
@@ -199,6 +199,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >* [Alemán (de) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italiano (it) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Español (es) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -216,6 +217,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.
    * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
    * Haga clic en cualquier frase no resaltada para eliminarla.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Seleccione **[!UICONTROL Resumir]** para confirmar los cambios.
@@ -277,6 +279,7 @@ Se añadirán a la secuencia de párrafos del fragmento sin ningún formato; el 
 
    * desplazarse al recurso necesario en DAM
    * buscar el recurso en DAM
+
    Una vez localizado, seleccione el recurso requerido haciendo clic en la miniatura.
 
 1. Utilice **[!UICONTROL Seleccionar]** para agregar el recurso al sistema de párrafos del fragmento de contenido en la ubicación actual.
@@ -372,6 +375,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
    * verde indica el contenido agregado (a la variación)
    * rojo indica que el contenido se ha eliminado (de la variación)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Seleccione **[!UICONTROL Sincronizar]**, la variación se actualizará y se mostrará.

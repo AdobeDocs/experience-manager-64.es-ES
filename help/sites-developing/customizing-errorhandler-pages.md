@@ -1,8 +1,8 @@
 ---
 title: Personalización de páginas mostradas por el controlador de errores
 seo-title: Personalización de páginas mostradas por el controlador de errores
-description: AEM viene con un controlador de error estándar para gestionar errores HTTP
-seo-description: AEM viene con un controlador de error estándar para gestionar errores HTTP
+description: AEM viene con un controlador de error estándar para el manejo de errores HTTP
+seo-description: AEM viene con un controlador de error estándar para el manejo de errores HTTP
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 # Personalización de páginas mostradas por el controlador de errores{#customizing-pages-shown-by-the-error-handler}
 
-AEM viene con un controlador de errores estándar para gestionar errores HTTP; por ejemplo, mostrando:
+AEM viene con un controlador de error estándar para controlar los errores HTTP; por ejemplo, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -46,8 +49,9 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 
 1. En el repositorio, copie las secuencias de comandos predeterminadas:
 
-   * from `/libs/sling/servlet/errorhandler/`
+   * de `/libs/sling/servlet/errorhandler/`
    * hasta `/apps/sling/servlet/errorhandler/`
+
    Como la ruta de destino no existe de forma predeterminada, deberá crearla al hacerlo por primera vez.
 
 1. Ir a `/apps/sling/servlet/errorhandler`. Aquí puede:
@@ -61,7 +65,7 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 >
 >Los controladores 404.jsp y 403.jsp se han diseñado específicamente para adaptarse a la autenticación CQ5; en particular, permitir el inicio de sesión del sistema en caso de estos errores.
 >
->Por lo tanto, la sustitución de estos dos controladores debe hacerse con gran cuidado.
+>Por lo tanto, la sustitución de estos dos controladores debe realizarse con bueno cuidado.
 
 ### Personalización de la respuesta a los errores HTTP 500 {#customizing-the-response-to-http-errors}
 
@@ -69,13 +73,14 @@ Los errores HTTP 500 son causados por excepciones del lado del servidor.
 
 * **[500 Error](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**interno del servidor El servidor encontró una condición inesperada que impedía que cumpliera la solicitud.
 
-Cuando el procesamiento de solicitudes resulta en una excepción, el marco de Apache Sling (en el que AEM está integrado):
+Cuando el procesamiento de la solicitud resulta en una excepción, el marco de Apache Sling (en el que AEM está integrado):
 
 * registra la excepción
 * devuelve:
 
    * el código de respuesta HTTP 500
    * seguimiento de pila de excepciones
+
    en el cuerpo de la respuesta.
 
 Al [personalizar las páginas que muestra el controlador](#how-to-customize-pages-shown-by-the-error-handler) de errores, se puede crear una `500.jsp` secuencia de comandos. Sin embargo, sólo se utiliza si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un captador de excepciones.

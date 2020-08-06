@@ -1,8 +1,8 @@
 ---
 title: Arquitectura de formularios HTML5
 seo-title: Arquitectura de formularios HTML5
-description: Los formularios HTML5 se implementan como un paquete dentro de la instancia AEM incrustada y exponen la funcionalidad como punto final REST sobre HTTP/S mediante la arquitectura RESTful Apache Sling.
-seo-description: Los formularios HTML5 se implementan como un paquete dentro de la instancia AEM incrustada y exponen la funcionalidad como punto final REST sobre HTTP/S mediante la arquitectura RESTful Apache Sling.
+description: Los formularios HTML5 se implementan como un paquete dentro de la instancia de AEM incrustada y exponen la funcionalidad como punto final REST sobre HTTP/S mediante la arquitectura RESTful Apache Sling.
+seo-description: Los formularios HTML5 se implementan como un paquete dentro de la instancia de AEM incrustada y exponen la funcionalidad como punto final REST sobre HTTP/S mediante la arquitectura RESTful Apache Sling.
 uuid: f32f9946-20f6-4c64-b1bd-03882517e11a
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2053'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +35,9 @@ La funcionalidad de formularios HTML5 se implementa como un paquete dentro de la
 
 Para obtener más información sobre el extremo REST y los parámetros de solicitud admitidos, consulte [Representación de plantilla](/help/forms/using/rendering-form-template.md)de formulario.
 
-Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un navegador iOS o Android, Sling resuelve primero el nodo de Perfil en función de la dirección URL de la solicitud. Desde este nodo de Perfil, lee **sling:resourceSuperType** y **sling:resourceType** para determinar todas las secuencias de comandos disponibles que pueden gestionar esta solicitud de procesamiento de formularios. A continuación, utiliza selectores de solicitud Sling junto con el método de solicitud para identificar la secuencia de comandos más adecuada para gestionar esta solicitud. Una vez que la solicitud llega a un JSP de procesador de Perfil, JSP llama al servicio OSGi de Forms.
+Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un navegador iOS o Android, Sling resuelve primero el nodo de Perfil en función de la dirección URL de la solicitud. Desde este nodo de Perfil, lee **sling:resourceSuperType** y **sling:resourceType** para determinar todas las secuencias de comandos disponibles que pueden gestionar esta solicitud de procesamiento de formularios. A continuación, utiliza selectores de solicitud Sling junto con el método de solicitud para identificar la secuencia de comandos más adecuada para gestionar esta solicitud. Una vez que la solicitud llega a un JSP de procesador de Perfil, el JSP llama al servicio OSGi de Forms.
 
-Para obtener más información sobre la resolución de secuencias de comandos sling, consulte [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) o Descomposición [de URL Sling de](https://sling.apache.org/site/url-decomposition.html)Apache.
+Para obtener más información sobre la resolución de secuencias de comandos sling, consulte [AEM descomposición](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) de hojas [de consejos Sling o](https://sling.apache.org/site/url-decomposition.html)Apache Sling Url.
 
 ### Flujo de llamada de procesamiento de formularios habitual {#typical-form-processing-call-flow}
 
@@ -42,32 +45,32 @@ Los formularios HTML5 almacenan en caché todos los objetos intermedios necesari
 
 Formulario móvil mantiene dos niveles diferentes de caché: caché de preprocesamiento y caché de procesamiento. La caché preRender contiene todos los fragmentos e imágenes de una plantilla resuelta y la caché de procesamiento contiene contenido procesado como HTML.
 
-![Flujo de trabajo](assets/cacheworkflow.png)de formularios HTML5 **Figura:** Flujo de trabajo de formularios *HTML5*
+![Flujo de trabajo](assets/cacheworkflow.png)de formularios HTML5 **Figura:** *Flujo de trabajo de formularios HTML5*
 
 Los formularios HTML5 no almacenan en caché plantillas que no tienen referencias de fragmentos e imágenes. Si los formularios HTML5 tardan más de lo normal, compruebe en los registros del servidor si faltan referencias y advertencias. Asegúrese también de que no se alcance el tamaño máximo del objeto.
 
 El servicio OSGi de Forms procesa una solicitud en dos pasos:
 
-* **Presentación y generación** de estado de formulario inicial: El servicio de procesamiento OSGi de Forms llama al componente Caché de formularios para determinar si el formulario ya se ha almacenado en caché y no se ha invalidado. Si el formulario está en caché y es válido, proporciona el HTML generado a partir de la caché. Si el formulario está invalidado, el servicio de procesamiento OSGi de Forms genera Presentación de formulario inicial y Estado de formulario en formato XML. El servicio OSGi de Forms transforma este XML en HTML layout y estado de formulario JSON inicial y, a continuación, se almacena en caché para solicitudes posteriores.
-* **Formularios** rellenados previamente: Durante la representación, si un usuario solicita formularios con datos rellenados previamente, el servicio de procesamiento OSGi de Forms llama al contenedor de servicio Forms y genera un nuevo estado de Formulario con datos combinados. Sin embargo, como el diseño ya se ha generado en el paso anterior, esta llamada es más rápida que la primera llamada. Esta llamada solo realiza la combinación de datos y ejecuta las secuencias de comandos en los datos.
+* **Presentación y generación** de estado de formulario inicial: El servicio de procesamiento OSGi de Forms llama al componente Caché de Forms para determinar si el formulario ya se ha almacenado en caché y no se ha invalidado. Si el formulario está en caché y es válido, proporciona el HTML generado a partir de la caché. Si el formulario está invalidado, el servicio de procesamiento OSGi de Forms genera Presentación de formulario inicial y Estado de formulario en formato XML. El servicio OSGi de Forms transforma este XML en formato HTML y estado de formulario JSON inicial en formato HTML y, a continuación, lo almacena en caché para solicitudes posteriores.
+* **Forms** prerellenado: Durante la representación, si un usuario solicita formularios con datos previamente rellenados, el servicio de procesamiento OSGi de Forms llama al contenedor de servicio de Forms y genera un nuevo estado de formulario con datos combinados. Sin embargo, como el diseño ya se ha generado en el paso anterior, esta llamada es más rápida que la primera llamada. Esta llamada solo realiza la combinación de datos y ejecuta las secuencias de comandos en los datos.
 
-Si hay alguna actualización en el formulario o alguno de los recursos utilizados dentro del formulario, el componente de la caché del formulario la detecta y la caché de ese formulario en particular se invalida. Una vez que el servicio OSGi de Forms finaliza el procesamiento, el jsp del procesador de Perfil agrega referencias de biblioteca y estilo de JavaScript a este formulario y devuelve la respuesta al cliente. Aquí se puede utilizar un servidor web típico como [Apache](https://httpd.apache.org/) con compresión HTML activada. Un servidor web reduciría el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir los datos entre el servidor y el equipo cliente de forma significativa.
+Si hay alguna actualización en el formulario o alguno de los recursos utilizados dentro del formulario, el componente de la caché del formulario la detecta y la caché de ese formulario en particular se invalida. Una vez que el servicio OSGi de Forms finaliza el procesamiento, el jsp del procesador de Perfil agrega referencias de biblioteca de JavaScript y estilo a este formulario y devuelve la respuesta al cliente. Aquí se puede utilizar un servidor web típico como [Apache](https://httpd.apache.org/) con compresión HTML activada. Un servidor web reduciría el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir los datos entre el servidor y el equipo cliente de forma significativa.
 
 Cuando un usuario envía el formulario, el explorador envía el estado del formulario en formato JSON al proxy [de](/help/forms/using/service-proxy.md)envío del servicio; a continuación, el proxy de servicio de envío genera un XML de datos con datos JSON y envía ese XML de datos para enviar el extremo.
 
 ## Componentes {#components}
 
-Se requiere un paquete de complementos de AEM Forms para activar formularios HTML5. Para obtener más información sobre la instalación del paquete del complemento AEM Forms, consulte [Instalación y configuración de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+Se requiere el paquete de complementos de AEM Forms para activar los formularios HTML5. Para obtener información sobre la instalación del paquete de complementos de AEM Forms, consulte [Instalación y configuración de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
 ### Componentes OSGi (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**El procesador de formularios XFA de Adobe (com.adobe.livecycle.adobe-lc-forms-core)** es el nombre para mostrar del paquete OSGi de formularios HTML5 cuando se visualiza desde la Vista de paquetes de la consola de administración Felix (https://[host]:[port]/system/console/buncles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** es el nombre para mostrar del paquete OSGi de formularios HTML5 cuando se visualiza desde la Vista Bundle de la consola de administración Felix (https://[host]:[port]/system/console/buncles).
 
 Este componente contiene componentes OSGi para la configuración de procesamiento, administración de caché y configuración.
 
 #### Servicio OSGi de Forms {#forms-osgi-service}
 
-Este servicio OSGi contiene la lógica para procesar un XDP como HTML y gestiona el envío de un formulario para generar datos XML. Este servicio utiliza el contenedor de servicio de Forms. El contenedor del servicio Forms llama internamente al componente nativo `XMLFormService.exe` que realiza el procesamiento.
+Este servicio OSGi contiene la lógica para procesar un XDP como HTML y gestiona el envío de un formulario para generar datos XML. Este servicio utiliza el contenedor de servicio de Forms. El contenedor de servicio de Forms llama internamente al componente nativo `XMLFormService.exe` que realiza el procesamiento.
 
 Si se recibe una solicitud de procesamiento, este componente llama al contenedor de servicios de Forms para generar información de presentación y estado que se procesa más adelante para generar estados DOM de formularios HTML y JSON.
 
@@ -108,7 +111,7 @@ Los formularios HTML5 se guardan en la memoria caché mediante la estrategia LRU
 
 El servicio de configuración permite ajustar los parámetros de configuración y la configuración de caché para formularios HTML5.
 
-Para actualizar esta configuración, vaya a la Consola de administración de CQ Felix (disponible en `https://[server]:[port]/system/console/configMgr`), busque y seleccione Configuración de formularios móviles.
+Para actualizar esta configuración, vaya al Admin Console CQ Felix (disponible en `https://[server]:[port]/system/console/configMgr`), busque y seleccione Configuración de Mobile Forms.
 
 Puede configurar el tamaño de caché o deshabilitar la caché mediante el servicio de configuración. También puede habilitar la depuración mediante el parámetro Opciones de depuración. Encontrará más información sobre la depuración de formularios en [Depuración de formularios](/help/forms/using/debug.md)HTML5.
 
@@ -120,7 +123,7 @@ El paquete de tiempo de ejecución contiene las bibliotecas del lado del cliente
 
 #### Motor de secuencias de comandos {#scripting-engine}
 
-La implementación de Adobe XFA admite dos tipos de lenguajes de secuencias de comandos para permitir la ejecución lógica definida por el usuario en formularios: JavaScript y FormCalc.
+La implementación XFA de Adobe admite dos tipos de lenguajes de secuencias de comandos para habilitar la ejecución lógica definida por el usuario en formularios: JavaScript y FormCalc.
 
 El motor de secuencias de comandos de HTML Forms se escribe en JavaScript para admitir la API de secuencias de comandos XFA en ambos idiomas.
 
@@ -167,7 +170,7 @@ El paquete Sling contiene contenido relacionado con Perfiles y procesador de Per
 
 #### Perfiles {#profiles}
 
-Los Perfiles son los nodos de recursos de sling que representan un formulario o una familia de formularios. A nivel de CQ, estos perfiles son nodos JCR. Los nodos residen en la carpeta **/content** del repositorio JCR y pueden estar dentro de cualquier subcarpeta de la carpeta **/content** .
+Los Perfiles son los nodos de recursos en sling que representan un formulario o familia de Forms. A nivel de CQ, estos perfiles son nodos JCR. Los nodos residen en la carpeta **/content** del repositorio JCR y pueden estar dentro de cualquier subcarpeta de la carpeta **/content** .
 
 #### Representadores de Perfil {#profile-renderers}
 
@@ -179,7 +182,7 @@ El nodo Perfil tiene una propiedad **sling:resourceSuperType** con valor **xfafo
 Estas bibliotecas están modeladas como bibliotecas de cliente de CQ que aprovecha las ventajas de la concatenación automática, la minimización y las capacidades de compresión de las bibliotecas JavaScript del marco de CQ.\
 Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html)de CQ Clientlib.
 
-Como se ha descrito anteriormente, el procesador de perfil JSP llama a Forms Service mediante una inclusión de sling. Este JSP también establece varias opciones de depuración en función de la configuración de administración o los parámetros de solicitud.
+Como se ha descrito anteriormente, el JSP del procesador de perfil llama al servicio Forms a través de un inclusión de sling. Este JSP también establece varias opciones de depuración en función de la configuración de administración o los parámetros de solicitud.
 
 Los formularios HTML5 permiten a los desarrolladores crear un procesador de Perfil y Perfil para personalizar el aspecto de los formularios. Por ejemplo, los formularios HTML permiten a los desarrolladores integrar formularios en un panel o en la sección &lt;div> de un portal HTML existente.\
 Para obtener más información sobre la creación de perfiles personalizados, consulte [Creación de un Perfil](/help/forms/using/custom-profile.md)personalizado.

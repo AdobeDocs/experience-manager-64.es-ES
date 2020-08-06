@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +53,7 @@ Al editar una página, se puede acceder a la **Ayuda** desde los siguientes punt
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes  {#components-browser}
+## Navegador de componentes   {#components-browser}
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación apropiada y editarse para añadir contenido.
 
@@ -90,10 +93,12 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
       * Los iconos de componentes estándar son monocromo.
       * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
+
    Desde la barra de herramientas superior del explorador de componentes, puede realizar las siguientes acciones:
 
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
+
    Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de componentes (si está disponible).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -205,7 +210,7 @@ Si la página contiene fragmentos de contenido, también podrá acceder al [nave
 
 **Referencias** muestra las conexiones a la página seleccionada:
 
-* Modelos
+* Planes
 * Lanzamientos
 * Live Copies
 * Copias de idioma
@@ -270,7 +275,7 @@ Por ejemplo, cuando corresponda, **Información de página** también dispone de
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página  {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
@@ -301,6 +306,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+
 >
 
 
@@ -309,7 +315,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](/help/sites-authoring/author-environment-tools.md#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) permite una selección más sólida.
 
-### Campos de rutas  {#path-fields}
+### Campos de rutas   {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 

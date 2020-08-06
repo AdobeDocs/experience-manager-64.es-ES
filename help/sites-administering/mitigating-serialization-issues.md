@@ -1,8 +1,8 @@
 ---
 title: Mitigación de problemas de serialización en AEM
 seo-title: Mitigación de problemas de serialización en AEM
-description: Aprenda a mitigar los problemas de serialización en AEM.
-seo-description: Aprenda a mitigar los problemas de serialización en AEM.
+description: Obtenga información sobre cómo mitigar los problemas de serialización en AEM.
+seo-description: Obtenga información sobre cómo mitigar los problemas de serialización en AEM.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 El equipo de AEM en Adobe ha estado trabajando estrechamente con el proyecto de código abierto [NotSoSerial](https://github.com/kantega/notsoserial) para ayudar a mitigar las vulnerabilidades descritas en **CVE-2015-7501**. NotSoSerial tiene licencia bajo la licencia [](https://www.apache.org/licenses/LICENSE-2.0) Apache 2 e incluye código ASM con licencia bajo su propia licencia [tipo](https://asm.ow2.org/license.html)BSD.
 
-El frasco del agente incluido en este paquete es la distribución modificada de NotSoSerial de Adobe.
+El frasco del agente incluido en este paquete es la distribución modificada de NotSoSerial por parte del Adobe.
 
-NotSoSerial es una solución de nivel Java para un problema de nivel Java y no es específica de AEM. Agrega una verificación previa a un intento de deserializar un objeto. Esta comprobación probará un nombre de clase con una lista de permitidas o una lista de bloques de estilo cortafuegos. Debido al número limitado de clases en la lista de bloques predeterminada, es poco probable que esto afecte a los sistemas o el código.
+NotSoSerial es una solución de nivel Java para un problema de nivel Java y no es AEM específico. Agrega una verificación previa a un intento de deserializar un objeto. Esta comprobación probará un nombre de clase con una lista de permitidos o lista de bloqueados de estilo cortafuegos. Debido al número limitado de clases en la lista de bloqueados predeterminada, es poco probable que esto afecte a los sistemas o el código.
 
-De forma predeterminada, el agente realizará una comprobación de la lista de bloques con respecto a las clases vulnerables conocidas actuales. Esta lista de bloqueos está pensada para protegerle de la lista actual de vulnerabilidades que usan este tipo de vulnerabilidad.
+De forma predeterminada, el agente realizará una comprobación de lista de bloqueados con las clases vulnerables conocidas actuales. Esta lista de bloqueados tiene por objeto protegerle de la lista actual de vulnerabilidades que utilizan este tipo de vulnerabilidad.
 
-La lista de bloques y la lista de permitidos se pueden configurar siguiendo las instrucciones de la sección [Configuración del agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de este artículo.
+La lista de bloqueados y la lista de permitidos se pueden configurar siguiendo las instrucciones de la sección [Configuración del agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de este artículo.
 
 El agente está diseñado para ayudar a mitigar las últimas clases vulnerables conocidas. Si el proyecto está deserializando datos que no son de confianza, es posible que siga siendo vulnerable a ataques de denegación de servicio, ataques de memoria insuficiente y explosiones de deserialización futuras desconocidas.
 
@@ -49,15 +49,15 @@ Adobe admite oficialmente Java 6, 7 y 8, pero entendemos que NotSoSerial tambié
 
 ## Instalación del agente en servidores de aplicaciones {#installing-the-agent-on-application-servers}
 
-El agente NotSoSerial no se incluye en la distribución estándar de AEM para servidores de aplicaciones. Sin embargo, puede extraerlo de la distribución AEM jar y utilizarlo con la configuración del servidor de aplicaciones:
+El agente NotSoSerial no se incluye en la distribución estándar de AEM para servidores de aplicaciones. Sin embargo, puede extraerlo de la distribución jar de AEM y utilizarlo con la configuración del servidor de aplicaciones:
 
-1. En primer lugar, descargue el archivo de inicio rápido de AEM y extráigalo:
+1. En primer lugar, descargue el archivo de inicio rápido AEM y extráigalo:
 
    ```shell
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Vaya a la ubicación del inicio rápido de AEM recién descomprimido y copie la `crx-quickstart/opt/notsoserial/` carpeta en la `crx-quickstart` carpeta de la instalación del servidor de aplicaciones de AEM.
+1. Vaya a la ubicación del inicio rápido AEM recién descomprimido y copie la `crx-quickstart/opt/notsoserial/` carpeta en la `crx-quickstart` carpeta de la instalación del servidor de aplicaciones AEM.
 
 1. Cambie la propiedad de `/opt` al usuario que ejecuta el servidor:
 
@@ -69,7 +69,7 @@ El agente NotSoSerial no se incluye en la distribución estándar de AEM para se
 
 ## Configuración del agente {#configuring-the-agent}
 
-La configuración predeterminada es adecuada para la mayoría de las instalaciones. Esto incluye una lista de bloques de clases vulnerables de ejecución remota conocidas y una lista de paquetes permitidos en los que la deserialización de datos de confianza debería ser relativamente segura.
+La configuración predeterminada es adecuada para la mayoría de las instalaciones. Esto incluye una lista de bloqueados de clases vulnerables de ejecución remota conocidas y una lista de permitidos de paquetes donde la deserialización de datos de confianza debería ser relativamente segura.
 
 La configuración del cortafuegos es dinámica y se puede cambiar en cualquier momento:
 
@@ -83,7 +83,7 @@ La configuración del cortafuegos es dinámica y se puede cambiar en cualquier m
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Esta configuración contiene la lista de permitidos, la lista de bloques y el registro de deserialización.
+Esta configuración contiene el registro de lista de permitidos, lista de bloqueados y deserialización.
 
 **Permitir listado**
 
@@ -91,7 +91,7 @@ En la sección Permitir listado, son clases o prefijos de paquete que se permiti
 
 **Bloqueo de anuncios**
 
-En la sección de listado de bloques hay clases que nunca se permiten para la deserialización. El conjunto inicial de estas clases se limita a las clases que se han encontrado vulnerables a ataques de ejecución remota. La lista de bloques se aplica antes de permitir las entradas enumeradas.
+En la sección de listado de bloques hay clases que nunca se permiten para la deserialización. El conjunto inicial de estas clases se limita a las clases que se han encontrado vulnerables a ataques de ejecución remota. La lista de bloqueados se aplica antes de permitir entradas enumeradas.
 
 **Registro de diagnóstico**
 
@@ -129,11 +129,11 @@ Para cargar el agente manualmente, siga las instrucciones siguientes:
 
    >[!NOTE]
    >
-   >Esto requiere también el uso de la opción -nofork CQ/AEM, junto con la configuración de memoria JVM adecuada, ya que el agente no se habilitará en un JVM falsificado.
+   >Esto requiere también el uso de la opción -nofork CQ/AEM, junto con la configuración de memoria JVM adecuada, ya que el agente no se habilitará en una JVM falsificada.
 
    >[!NOTE]
    >
-   >La distribución de Adobe del tarro del agente NotSoSerial se encuentra en la `crx-quickstart/opt/notsoserial/` carpeta de la instalación de AEM.
+   >La distribución de Adobe del frasco del agente NotSoSerial se encuentra en la `crx-quickstart/opt/notsoserial/` carpeta de la instalación de AEM.
 
 1. Detenga y reinicie el JVM;
 

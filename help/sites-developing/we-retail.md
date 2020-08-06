@@ -1,8 +1,8 @@
 ---
 title: Implementación de referencia de We.Retail
 seo-title: Implementación de referencia de We.Retail
-description: We.Retail es una vista previa de tecnología de una implementación de referencia que ilustra la manera recomendada de configurar una presencia en línea con AEM
-seo-description: We.Retail es una vista previa de tecnología de una implementación de referencia que ilustra la manera recomendada de configurar una presencia en línea con AEM
+description: We.Retail es una previsualización tecnológica de una implementación de referencia que ilustra la manera recomendada de configurar una presencia en línea con AEM
+seo-description: We.Retail es una previsualización tecnológica de una implementación de referencia que ilustra la manera recomendada de configurar una presencia en línea con AEM
 uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 11%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 ## Introducción {#introduction}
 
-We.Retail es una implementación de referencia y contenido de muestra que ilustra la forma recomendada de configurar una presencia en línea con Adobe Experience Manager.
+We.Retail es una implementación de referencia y contenido de muestra que ilustra la manera recomendada de configurar una presencia en línea con Adobe Experience Manager.
 
-We.Retail utiliza las últimas tecnologías de AEM, como HTL, diseños interactivos, plantillas editables, componentes principales y mucho más.
+We.Retail utiliza las últimas tecnologías de AEM como HTL, diseños adaptables, plantillas editables, componentes principales y mucho más.
 
 Aunque ilustra una vertical de venta minorista, la forma en que se configura el sitio puede aplicarse a cualquier vertical, y sólo el catálogo de productos y las características del carro de compras son específicas del comercio minorista.
 
 ## Características {#features}
 
-Como implementación de referencia estándar de AEM, We.Retail muestra algunas de las funciones más potentes de AEM.
+Como AEM implementación de referencia estándar, We.Retail muestra algunas de las características más poderosas de AEM.
 
 | **Función** | **Descripción** | **¿Interesado?** |
 |---|---|---|
@@ -36,14 +39,14 @@ Como implementación de referencia estándar de AEM, We.Retail muestra algunas d
 | [Plantillas editables](/help/sites-developing/page-templates-editable.md) | Todas las páginas se basan en plantillas editables, lo que permite a los no desarrolladores adaptar y personalizar las plantillas. | [¡Pruébelo!](/help/sites-developing/we-retail-editable-templates.md) |
 | [Lenguaje de plantilla HTML](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | Todos los componentes se basan en HTL |  |
 | [Capacidades de comercio electrónico](/help/sites-developing/ecommerce.md) | Presenta un catálogo de productos |  |
-| [Sitios de comunidades](/help/communities/overview.md) | Permitir que los visitantes participen en discusiones de la comunidad, lean blogs y mucho más |  |
-| [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébelo!](/help/sites-developing/we-retail-core-components.md) |
+| [Sitios de comunidades](/help/communities/overview.md) | Permitir que los visitantes se unan a las discusiones de la comunidad, lean blogs y mucho más |  |
+| [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébelo!](/help/sites-developing/we-retail-core-components.md) |
 | [Fragmentos de contenido](/help/assets/content-fragments.md) | La sección Experiencias de We.Retail muestra el poder de reutilizar contenido mediante fragmentos de contenido. | [¡Pruébelos!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) | Un fragmento de experiencias es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas. | [¡Pruébelos!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Introducción {#getting-started}
 
-We.Retail se entrega como contenido de muestra de AEM. Para utilizarlo, solo tiene que [iniciar AEM como lo haría](/help/sites-deploying/deploy.md#getting-started)normalmente, para asegurarse de que el contenido de muestra no está desactivado.
+We.Retail se entrega como AEM contenido de muestra. Para utilizarla, basta con [inicio AEM como lo haría](/help/sites-deploying/deploy.md#getting-started)normalmente, asegurándose de que el contenido de muestra no está deshabilitado.
 
 >[!CAUTION]
 >
@@ -51,15 +54,15 @@ We.Retail se entrega como contenido de muestra de AEM. Para utilizarlo, solo tie
 
 >[!CAUTION]
 >
->We.Retail se basa en la tecnología AEM más reciente y, por tanto, no admite la creación de IU [clásica](/help/sites-classic-ui-authoring/home.md).
+>We.Retail se basa en la tecnología de AEM más reciente y, por lo tanto, no admite la creación de IU [clásica](/help/sites-classic-ui-authoring/home.md).
 
 ### Última versión {#latest-version}
 
-Aunque We.Retail se distribuye con la versión de AEM, las actualizaciones del contenido y sus funciones pueden realizarse después de la versión. Por lo tanto, es posible [descargar la última versión de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) y, a continuación, [cargarla](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) e [instalarla](/help/sites-administering/package-manager.md#installing-packages) como paquete en la instancia de AEM.
+Aunque We.Retail se distribuye con la versión de AEM, es posible que las actualizaciones del contenido y sus funciones se realicen después de la versión. Por lo tanto, es posible [descargar la última versión de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) y luego [cargarla](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) e [instalarla](/help/sites-administering/package-manager.md#installing-packages) como paquete en su instancia de AEM.
 
 ### Primeros pasos {#first-steps}
 
-1. Una vez que se inicia AEM (y/o se instala We.Retail), el sitio **We.Retail** está disponible en la consola [](/help/sites-authoring/basic-handling.md#global-navigation)Sitios.
+1. Una vez que AEM (y/o se haya instalado We.Retail), el sitio **We.Retail** estará disponible en la consola [](/help/sites-authoring/basic-handling.md#global-navigation)Sitios.
 1. Por ejemplo: se puede abrir la página siguiente y debe tener el aspecto que se muestra en el [apéndice](#appendix) siguiente:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -82,21 +85,21 @@ La siguiente tabla ofrece una visión general de las principales funciones dispo
 | Estructura global del sitio | Maestros de idioma copiados en vivo en sitios específicos de países | No disponible |
 | Fragmentos de contenido | Disponible | No disponible |
 | Fragmentos de experiencias | Disponible | No disponible |
-| Diseño interactivo  | Para todas las páginas | Solo medios Geometrixx |
+| Diseño adaptable  | Para todas las páginas | Solo Geometrixx Medias |
 | Plantillas editables | Para todas las páginas | No disponible |
 | HTL | Todos los componentes | Limitado |
-| Direccionamiento | Para todas las páginas | Sólo Geometrixx Outdoors |
+| Direccionamiento | Para todas las páginas | Solo Geometrixx Outdoors |
 | Pantallas | Disponible | No disponible |
 | Móvil | No disponible | Disponible |
 | Manuscritos | No disponible | Disponible |
 | Componentes de carrusel, descarga, gráfico | No disponible | Disponible |
-| Control de columna | Se reemplazó por un contenedor de diseño | Disponible |
+| Control de columna | Se sustituye por el contenedor de diseño | Disponible |
 | Forms | No disponible | Disponible |
 | Campaign | No hay ejemplos de correo electrónico | Disponible |
 
 >[!NOTE]
 >
->Esta lista trata de ser completa, pero no debe considerarse exhaustiva.
+>Esta lista se esfuerza por ser completa, pero no debe considerarse exhaustiva.
 
 ## Contribute {#contribute}
 
@@ -117,7 +120,7 @@ Siéntase libre de hacer fork o contribuir con solicitudes [de](https://github.c
 
 ## Vista previa {#preview}
 
-Vista previa de la página de bienvenida de We.Retail:
+Previsualización de la página de bienvenida de We.Retail:
 
 ![screencapture-localhost-4502-editor-html-content-we-retail-us-es-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
 

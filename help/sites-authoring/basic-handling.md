@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
 source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
    >
 * Algunas funciones no están disponibles en todas las consolas y determinadas consolas pueden disponer de funciones adicionales. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -44,7 +48,7 @@ Al hacer clic en una de las opciones se abre la consola correspondiente. Para co
 
 Pulse o haga clic en **Sitios** para comenzar.
 
-### Navegación de productos  {#product-navigation}
+### Navegación de productos    {#product-navigation}
 
 Cuando un usuario accede por primera vez a una consola, se inicia un tutorial de navegación por el producto. Dedíquele un momento para ver una buena descripción general del funcionamiento básico de AEM.
 
@@ -66,9 +70,9 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 >
 >La primera vez que inicia sesión se le presenta el panel **Navegación**.
 
-La navegación global dispone de dos paneles, representados por sendos iconos en el lado izquierdo de la pantalla:
+La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* **Navegación**: se representa mediante una brújula 
+* **Navegación**: se representa mediante una brújula   
 * **Herramientas**: se representa mediante un martillo
 
 Las opciones disponibles en estos paneles se describen a continuación.
@@ -102,7 +106,7 @@ Las opciones disponibles en estos paneles se describen a continuación.
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragmento de experiencia</a> es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias.</td> 
   </tr>
   <tr>
-   <td>Formularios</td> 
+   <td>Forms</td> 
    <td>Esta consola permite crear, administrar y procesar sus <a href="/help/forms/using/introduction-aem-forms.md">formularios y documentos</a>&gt;.</td> 
   </tr>
   <tr>
@@ -114,7 +118,7 @@ Las opciones disponibles en estos paneles se describen a continuación.
    <td>La <a href="/help/sites-authoring/touch-ui-managing-projects.md">consola Proyectos le permite acceder directamente a sus proyectos</a>. Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a medios, flujos de trabajo y tareas, para que todos los miembros puedan trabajar en un objetivo común. <br /> </td> 
   </tr>
   <tr>
-   <td>Sitios</td> 
+   <td>Sites</td> 
    <td>La consola Sitios le permite <a href="/help/sites-authoring/author-environment-tools.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td> 
   </tr>
  </tbody>
@@ -265,7 +269,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas  {#quick-actions}
+## Acciones rápidas    {#quick-actions}
 
 En la [vista de tarjeta](#quick-actions), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -282,13 +286,13 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista ](#list-view)
+* [Vista de lista  ](#list-view)
 
 >[!NOTE]
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos  {#selecting-resources}
+### Selección de recursos    {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -326,7 +330,7 @@ La selección de un recurso específico depende de la vista y el dispositivo com
     </ul> </td> 
   </tr>
   <tr>
-   <td>Vista de lista </td> 
+   <td>Vista de lista   </td> 
    <td>
     <ul> 
      <li>Escritorio: <br /> haga clic en la miniatura.</li> 
@@ -372,6 +376,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 * Puede desplazarse hacia arriba y hacia abajo por el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha de este nombre.
 
    * El nombre del recurso y las comillas angulares se resaltarán cuando los toque o haga clic en ellos.
+
    ![chlimage_1-361](assets/chlimage_1-361.png)
 
    * Los elementos secundarios del recurso que ha tocado o en el que ha hecho clic se muestran en la columna a la derecha de dicho recurso.
@@ -382,6 +387,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
    * Cuando se selecciona una miniatura, sobre ella se superpone una casilla de verificación y el nombre del recurso se muestra resaltado.
    * Los detalles del recurso seleccionado se mostrarán en la última columna.
+
    ![chlimage_1-362](assets/chlimage_1-362.png)
 
    Cuando en la vista de columna hay una página seleccionada, esta se muestra en la última columna, junto a los datos siguientes:
@@ -415,7 +421,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista  {#list-view}
+### Vista de lista    {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
@@ -435,7 +441,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
       * Toque o haga clic en la casilla de nuevo para anular todas las selecciones.
 
 
-* Seleccione las columnas que se mostrarán con la opción **Ver configuración **ubicada debajo del botón Vistas. Las siguientes columnas están disponibles para la visualización:
+* Seleccione las columnas que se mostrarán con la opción **Configuración de Vista **situada debajo del botón Vistas. Las siguientes columnas están disponibles para la visualización:
 
    * **Nombre**: nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia con el idioma
    * **Modificada**: fecha de la última modificación y el usuario que la efectuó
@@ -444,6 +450,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Análisis de la página**
    * **Visitantes únicos**
    * **Tiempo empleado en la página**
+
    ![screen_shot_2018-03-23at105952](assets/screen_shot_2018-03-23at105952.png)
 
    De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma distinto, y ver el nombre de las mismas (que no suele variar) puede suponer una gran ayuda si se desconoce el idioma de la página.

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 24%
@@ -409,7 +409,7 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 * Error de análisis al abrir un fragmento de contenido que tiene caracteres dólar ($) y llave abierta ({) uno tras otro. Revisión para CQ-4270266
 * VersionPreviewServlet genera errores en NullPointerException al intentar mostrar una versión de un fragmento de experiencia en la línea de tiempo. NPR-30074: revisión para CQ-4271881
 * No se pueden bloquear los fragmentos de contenido mediante la función de protección. NPR-29923: revisión para CQ-4258785
-* Error de verificación de firma en el controlador de autenticación SAML. NPR-30379: Solicitud de puerto de respaldo para GRANITE-26567.
+* Error de verificación de firma en el controlador de autenticación SAML. NPR-30379: Solicitud de puerto de respaldo para GRANITE-26567
 
 **Replicación**
 
@@ -793,7 +793,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * El flujo de trabajo predeterminado &quot;Solicitud de eliminación&quot; no elimina las páginas correctamente. NPR-28668: revisión para CQ-4263195
 * La interfaz de usuario de estado de relación no muestra los valores de año o marca de hora adecuados para los campos de selector de datos de coral relacionados. NPR-28666: revisión para CQ-4263661
 * Ejecución de scripts en sitios múltiples (XSS) en SuggestionHandler para 6.4. NPR-28693: Revisión para CQ-4253821
-* Mover la carpeta desde siteadmin termina en memoria insuficiente y hace que AEM no esté disponible. NPR-28346: revisión para CQ-4261398
+* El movimiento de una carpeta desde siteadmin termina en memoria insuficiente y hace que AEM no esté disponible. NPR-28346: revisión para CQ-4261398
 * Las configuraciones de despliegue de LiveCopy de MSM se pierden tras la actualización. NPR-28311: revisión para CQ-4258705
 * No se puede desplazar más allá de las 40 configuraciones de modelo. NPR-27640: revisión para CQ-4239166
 * El uso de SyneticResource como referencia produce una excepción de puntero nulo y bloquea el movimiento de las páginas.  NPR-27576: revisión para CQ-4258262
@@ -1378,7 +1378,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * Bucle de reindexación | NPE mientras realiza la extracción de texto binario durante la actualización directa de 6.3 a 6.4. Revisión de Granite - 21677
 * Anulación transfronteriza de la ruta de acceso marcada interna /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Problema al ejecutar el detector de patrones. NPR-25036: revisión para CQ-4248597
 * Las entradas de registro no se escribieron debido a NPE en LogEntryImpl. NPR-25627: revisión para Granite-22383
-* La replicación del evento de eliminación no comprueba los derechos. NPR-25679: revisión para CQ-4241234
+* La replicación del evento de eliminación no comprueba la existencia de derechos. NPR-25679: revisión para CQ-4241234
 * Se Añadió la compatibilidad con STARTTLS en &quot;Day CQ Mail Service&quot;. NPR-25611: revisión para CQ-4249924
 * Correcciones proactivas de backport para granite.platform.login para mejorar la accesibilidad. NPR-25176: Revisión para Granite 21746 y Granite-21309
 * (AEM 6.4) Error al volver a compilar el paquete y volver a instalarlo. NPR-25173: revisión para CQ-4247939

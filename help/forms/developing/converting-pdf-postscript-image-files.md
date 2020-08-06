@@ -60,7 +60,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 
 Para poder realizar mediante programación una operación de servicio Convertir PDF, debe crear un cliente de servicio Convertir PDF. Si utiliza la API de Java, cree un `ConvertPdfServiceClient` objeto. Si utiliza la API de servicio Web, cree un `ConvertPDFServiceService` objeto.
 
-En esta sección se utiliza la funcionalidad de servicio web que se introduce en AEM Forms. Para acceder a la nueva funcionalidad, debe construir el objeto proxy utilizando el `lc_version` atributo . (Consulte &quot;Acceso a nuevas funciones mediante servicios web&quot; en [Invocación de formularios AEM mediante servicios](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)web).
+Esta sección utiliza la funcionalidad de servicio Web que se incorpora en AEM Forms. Para acceder a la nueva funcionalidad, debe construir el objeto proxy utilizando el `lc_version` atributo . (Consulte &quot;Acceso a nuevas funciones mediante servicios Web&quot; en [Invocación de AEM Forms mediante servicios](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)Web).
 
 **Hacer referencia al documento PDF para convertirlo en un archivo PostScript**
 
@@ -76,7 +76,7 @@ Del mismo modo, si selecciona la `ExpandToFit` opción (que expande la salida de
 
 >[!NOTE]
 >
->Para obtener información sobre los valores en tiempo de ejecución que puede definir, consulte la referencia de la `ToPSOptionsSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+>Para obtener información sobre los valores en tiempo de ejecución que puede establecer, consulte la referencia de la `ToPSOptionsSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Convertir el documento PDF en un archivo PostScript**
 
@@ -119,7 +119,7 @@ Convertir un documento PDF a PostScript mediante la API de servicio Convertir PD
 1. Configure las opciones de tiempo de ejecución de conversión.
 
    * Cree un `ToPSOptionsSpec` objeto invocando su constructor.
-   * Configure las opciones de tiempo de ejecución invocando un método adecuado que pertenece al `ToPSOptionsSpec` objeto. Por ejemplo, para definir el nivel PostScript que se crea, invoque el `ToPSOptionsSpec` método del `setPsLevel` objeto y pase un valor de `PSLevel` lista desglosada que especifique el nivel PostScript. Para obtener información sobre todos los valores en tiempo de ejecución que puede establecer, consulte la referencia de la `ToPSOptionsSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+   * Configure las opciones de tiempo de ejecución invocando un método adecuado que pertenece al `ToPSOptionsSpec` objeto. Por ejemplo, para definir el nivel PostScript que se crea, invoque el `ToPSOptionsSpec` método del `setPsLevel` objeto y pase un valor de `PSLevel` lista desglosada que especifique el nivel PostScript. Para obtener información sobre todos los valores en tiempo de ejecución que puede establecer, consulte la referencia de `ToPSOptionsSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 1. Convierta el documento PDF en un archivo PostScript.
 
@@ -160,12 +160,12 @@ Convertir un documento PDF a PostScript mediante la API de servicio Convertir PD
 1. Cree un cliente Convertir PDF.
 
    * Cree un `ConvertPdfServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `ConvertPdfServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `ConvertPdfServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `ConvertPdfServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -203,9 +203,9 @@ Convertir un documento PDF a PostScript mediante la API de servicio Convertir PD
 
 [Resumen de los pasos](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversión de Documentos PDF a formatos de imagen {#converting-pdf-documents-to-image-formats}
 
@@ -242,7 +242,7 @@ Debe recuperar el documento PDF para convertir en una imagen. No se puede conver
 
 **Definición de opciones de tiempo de ejecución**
 
-Debe definir opciones de tiempo de ejecución como el formato de imagen y los valores de resolución. Para obtener información sobre los valores en tiempo de ejecución, consulte la referencia de la `ToImageOptionsSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+Debe definir opciones de tiempo de ejecución como el formato de imagen y los valores de resolución. Para obtener información sobre los valores en tiempo de ejecución, consulte la referencia de la `ToImageOptionsSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Convertir el PDF en una imagen**
 
@@ -321,12 +321,12 @@ Convertir un documento PDF a un formato de imagen mediante la API de Convertir s
 1. Cree un cliente PDF de conversión.
 
    * Cree un `ConvertPdfServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `ConvertPdfServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `ConvertPdfServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `ConvertPdfServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -364,6 +364,6 @@ Convertir un documento PDF a un formato de imagen mediante la API de Convertir s
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

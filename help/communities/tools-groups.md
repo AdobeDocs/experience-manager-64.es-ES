@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +60,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
 * **[!UICONTROL Deshabilitado/Habilitado]** Un conmutador que controla si se puede hacer referencia a la plantilla
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Informes personalizados en proceso Sistema de informes
 seo-title: Informes personalizados en proceso Sistema de informes
-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de JEE Process Sistema de informes.
+description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
 seo-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
 uuid: 8974ec2d-ac54-4b44-9758-b1cf44b732fa
 content-type: reference
@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de Consult
    >
    >En cada consulta, el parámetro path señala a la ubicación del almacenamiento crx y los caracteres se escapan según el estándar de URL.
 
-## Creación de un servicio mediante la API de Consulta Builder {#creating-a-service-using-query-builder-api-nbsp}
+## Creación de un servicio mediante la API de Consulta Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 El requisito previo para crear un servicio mediante la API del creador de Consultas es [crear e implementar el paquete](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) CQ OSGI y [utilizar la API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)del creador de Consultas.
 
@@ -420,7 +423,7 @@ El `pom.xml`archivo de muestra que se va a generar por encima del servicio es:
 </project>
 ```
 
-## Creación de una IU independiente {#creating-a-separate-ui-nbsp}
+## Creación de una IU independiente  {#creating-a-separate-ui-nbsp}
 
 Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creación de un nodo](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX y provisión de los privilegios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acceso adecuados.
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integración de la interfaz de usuario del informe en la interfaz de usuario de Sistema de informes de procesos existente {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integración de la interfaz de usuario del informe en la interfaz de usuario de Sistema de informes de procesos existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creación de un nodo](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX y provisión de los privilegios [de](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)acceso adecuados.
 
@@ -640,6 +643,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
    * **link**- Especifica un vínculo relativo al procesador de la IU independiente. El vínculo se crea en el paso 1.
    * **descripción**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de descripción.
    * **icono**: especifica la imagen que se va a representar en forma de imagen el informe. Puede dejar vacío el campo de icono.
+
    ![Propiedades del nodo ](assets/nodeproperties.png)
 
    Propiedades del nodo

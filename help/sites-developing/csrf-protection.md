@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Marco de protección de la CSRF{#the-csrf-protection-framework}
 
-Además del filtro de referente Sling de Apache, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataques.
+Además del filtro de Remitente del reenvío Apache Sling, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataque.
 
 El marco utiliza tokens para garantizar que la solicitud del cliente es legítima. Los tokens se generan cuando se envía el formulario al cliente y se validan cuando se devuelve el formulario al servidor.
 

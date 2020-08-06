@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ## Información general {#overview}
 
-El contenido de la comunidad, también conocido como contenido generado por el usuario (UGC, por sus siglas en inglés), se crea cuando un miembro (visitante que ha iniciado sesión en el sitio) publica contenido desde un sitio de la comunidad publicado mediante la interacción con uno de los siguientes componentes de la comunidad:
+El contenido de la comunidad, también conocido como contenido generado por el usuario (UGC, por sus siglas en inglés), se crea cuando un miembro (que ha iniciado sesión en el visitante del sitio) publica contenido desde un sitio de la comunidad publicado mediante la interacción con uno de los siguientes componentes de la comunidad:
 
 * [Blog](blog-feature.md): los miembros publican un artículo de blog o un comentario
-* [Calendario](calendar.md): los miembros publican un evento de calendario o un comentario
+* [Calendario](calendar.md): los miembros publican un evento o comentario de calendario
 * [Comentarios](comments.md): los miembros publican un comentario o responden a un comentario
 * [Foro](forum.md): los miembros publican un tema nuevo o responden a él
 * [Ideación](ideation-feature.md): los miembros publican una idea o un comentario
 * [QnA](working-with-qna.md): los miembros crean una pregunta o responden a una pregunta
 * [Reseñas](reviews.md): los miembros publican un comentario al valorar un elemento
 
-La moderación de UGC es útil para reconocer las contribuciones positivas así como para limitar las negativas (como spam y lenguaje abusivo). UGC se puede moderar desde varios entornos:
+La moderación de UGC es útil para reconocer las contribuciones positivas así como para limitar las negativas (como spam y lenguaje abusivo). La UGC se puede moderar desde varios entornos:
 
 * [Consola de moderación masiva](moderation.md)
 
-   Los administradores y los moderadores [de la](users.md) comunidad pueden acceder a la consola Moderación en el entorno público, así como los administradores del entorno de creación. Esto es posible cuando el contenido de la comunidad se almacena en una tienda [](working-with-srp.md)común.
+   Los administradores y los moderadores [de la](users.md) comunidad del entorno público, así como los administradores del entorno de creación, pueden acceder a la consola Moderación. Esto es posible cuando el contenido de la comunidad se almacena en una tienda [](working-with-srp.md)común.
 
 * [Moderación en contexto](in-context.md)
 
@@ -165,7 +168,7 @@ Los administradores o los moderadores de la comunidad pueden realizar la acción
 
 Marcar es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono de desmarca que permitirá al mismo miembro desmarcar el contenido.
 
-La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos del indicador seleccionables se puede configurar, incluso si se puede especificar o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no activa ninguna acción en particular. Solo el número de indicadores activa una notificación. El contenido marcado se anotará como tal, de manera que los moderadores puedan actuar en él.
+La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de indicador seleccionables se puede configurar, incluso si se puede especificar o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no activa ninguna acción en particular. Solo el número de indicadores activa una notificación. El contenido marcado se anotará como tal, de manera que los moderadores puedan actuar en él.
 
 El sistema realiza un seguimiento de todos los indicadores, que se marcan, y del motivo del indicador y envía un evento cuando se alcanza el umbral. Si un moderador de la comunidad permite el UGC, estos indicadores se archivan. Después de permitir y archivar, si se producen retazos posteriores, se archivarían como si no hubiera habido retazos anteriores.
 
@@ -187,7 +190,7 @@ Cuando UGC se modera previamente, la publicación no aparecerá en el sitio publ
 
 ### Detección de spam {#spam-detection}
 
-La detección de correo no deseado es una funcionalidad de moderación automática que filtra los fragmentos indeseables de contenido generado por el usuario enviado marcándolos como correo no deseado. Una vez activado, identifica si el contenido generado por el usuario es spam o no se basa en una colección preconfigurada de palabras de spam. Las palabras de spam predeterminadas se proporcionan en
+La detección de correo no deseado es una funcionalidad de moderación automática que filtros partes indeseables de contenido generado por el usuario enviado marcándolos como correo no deseado. Una vez activado, identifica si el contenido generado por el usuario es spam o no se basa en una colección preconfigurada de palabras de spam. Las palabras de spam predeterminadas se proporcionan en
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
@@ -203,8 +206,8 @@ Para habilitar el motor de detección de spam, siga estos pasos:
 
 1. Abra la consola [web](http://localhost:4502/system/console/configMgr), vaya a `/system/console/configMgr`.
 
-1. Busque la configuración de Moderación **[!UICONTROL automática de comunidades]** AEM y edítela.
-1. Agregue la `SpamProcess` entrada.
+1. Busque la configuración de Moderación **[!UICONTROL automática de]** AEM Communities y edítela.
+1. Añada la `SpamProcess` entrada.
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -216,7 +219,7 @@ Para habilitar el motor de detección de spam, siga estos pasos:
 
 La opinión se calcula en función del número de palabras clave positivas y negativas ([palabras clave](#configuringwatchwords)) presentes en una publicación (UGC).
 
-El análisis de opinión utiliza un conjunto de reglas preconfiguradas y calcula la opinión del UGC. Las reglas predeterminadas se encuentran en `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+La análisis de opinión utiliza un conjunto de reglas preconfiguradas y calcula la opinión del UGC. Las reglas predeterminadas se encuentran en `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 El valor que generan las reglas es de 1 (todas negativas, ninguna positiva) a 10 (todas positivas, ninguna negativa). Un valor de opinión de 5 es una opinión neutra y es el valor predeterminado.
 
@@ -231,17 +234,17 @@ Para sobrescribir o agregar reglas, cree un conjunto de reglas en el directorio 
 
 Una vez analizada, la opinión se almacena con el UGC.
 
-Desde la consola [de moderación](moderation.md)masiva, es posible filtrar y ver UGC en función de si la opinión es negativa, neutra o positiva.
+Desde la consola [de moderación](moderation.md)masiva, es posible filtrar y vista UGC en función de si la opinión es negativa, neutra o positiva.
 
 #### Watchwords {#watchwords}
 
-Las comunidades de AEM proporcionan un *analizador de palabras clave *como un paso en el proceso para evaluar la [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de las palabras clave negativas y positivas utilizadas en el contenido publicado, así como de las palabras prohibidas.
+AEM comunidades proporciona un *analizador de palabras clave *como un paso en el proceso para evaluar la [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de las palabras clave negativas y positivas utilizadas en el contenido publicado, así como de las palabras prohibidas.
 
 #### Configurar la opinión y las palabras clave {#configure-sentiment-and-watchwords}
 
 La lista de palabras de observación positivas y negativas se puede personalizar, al igual que las reglas de opinión.
 
-La lista predeterminada de palabras de observación se puede introducir como propiedades de un nodo en el repositorio, de forma similar a la predeterminada o anulando la predeterminada configurando el servicio OSGi `sentimentprocess.name`con la lista de palabras.
+La lista predeterminada de las palabras clave se puede introducir como propiedades de un nodo en el repositorio, de forma similar a la predeterminada o anulando la predeterminada configurando el servicio OSGi `sentimentprocess.name`con la lista de palabras.
 
 También se puede modificar **sentimentprocess.name** para que haga referencia a la ubicación de un conjunto personalizado de reglas de opinión.
 
@@ -255,13 +258,15 @@ Para configurar la opinión y las palabras clave:
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
-* **Palabras** de observación positivas Una lista de palabras separadas por coma que contribuyen a una opinión positiva que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+* **Palabras** de observación positivas Una lista de palabras separadas por coma que contribuye a una opinión positiva que anula los valores predeterminados. El valor predeterminado es una lista vacía.
 
-* **Palabras** de observación negativas Una lista de palabras separadas por coma que contribuyen a una opinión negativa que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+* **Palabras** de observación negativas Una lista de palabras separadas por coma que contribuye a una opinión negativa que anula los valores predeterminados. El valor predeterminado es una lista vacía.
 
-* **Ruta explícita al nodo** Watchwords La ubicación del repositorio de un nodo que contiene propiedades predeterminadas `positive` y `negative` que especifican las palabras clave predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
+* **Ruta explícita al nodo** Watchwords La ubicación del repositorio de un nodo que contiene el valor predeterminado 
+`positive` y `negative` propiedades que especifican las palabras clave predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
 
-* **Reglas** de opinión La ubicación del repositorio de las reglas para calcular la opinión en función de las palabras de observación positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
+* **Reglas** de opinión La ubicación del repositorio de las reglas para calcular la opinión en función de las palabras de observación positivas y negativas. El valor predeterminado es 
+`/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo implicado).
 
 A continuación se muestra un ejemplo de una entrada personalizada para las palabras clave predeterminadas, cuando `Explicit Path to Watchwords Node` se establece en `/libs/settings/community/watchwords/default`.
 

@@ -30,7 +30,7 @@ El servicio Generar PDF utiliza aplicaciones nativas para convertir los siguient
 
    >[!NOTE]
    >
-   >Se requiere Acrobat® 9.2 o posterior para convertir el formato de Microsoft XPS a PDF.
+   >Se requiere Acrobat® 9.2 o posterior para convertir el formato Microsoft XPS a PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 y 2009 para convertir DWF, DWG y DXW (solo en inglés)
 * Corel WordPerfect 12 y X4 para convertir WPD, QPW, SHW (solo en inglés)
@@ -70,11 +70,11 @@ El servicio Generar PDF convierte PDF a los siguientes formatos de archivo (solo
 
 El servicio Generar PDF requiere que realice estas tareas administrativas:
 
-* Instalación de las aplicaciones nativas necesarias en el equipo que aloja AEM Forms
-* Instalación de Adobe Acrobat Professional o Acrobat Pro Extended 9.2 en el equipo con AEM Forms
+* Instalar las aplicaciones nativas necesarias en el equipo que aloja AEM Forms
+* Instale Adobe Acrobat Professional o Acrobat Pro Extended 9.2 en el equipo con AEM Forms
 * Realizar tareas de configuración posteriores a la instalación
 
-Estas tareas se describen en Instalación e implementación de formularios AEM mediante JBoss Turnkey.
+Estas tareas se describen en Instalación e implementación de formularios AEM con JBoss Turnkey.
 
 Puede realizar estas tareas mediante el servicio Generar PDF:
 
@@ -210,12 +210,12 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
 1. Crear un cliente de Generar PDF.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -253,9 +253,9 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API de 
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversión de Documentos HTML a Documentos PDF {#converting-html-documents-to-pdf-documents}
 
@@ -367,12 +367,12 @@ Convertir contenido HTML en un documento PDF mediante la API de generación de P
 1. Crear un cliente de Generar PDF.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -403,9 +403,9 @@ Convertir contenido HTML en un documento PDF mediante la API de generación de P
 
 [Conversión de Documentos HTML a Documentos PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Conversión de Documentos PDF a formatos que no son de imagen {#converting-pdf-documents-to-non-image-formats}
 
@@ -518,12 +518,12 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
 1. Crear un cliente Generar PDf.
 
    * Cree un `GeneratePDFServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
+   * Cree un `GeneratePDFServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) No es necesario usar el `lc_version` atributo. Sin embargo, especifique `?blob=mtom`.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `GeneratePDFServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -558,9 +558,9 @@ Convertir un documento PDF en un archivo RTF mediante la API de generación de P
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de formularios AEM mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Añadir compatibilidad con formatos de archivo nativos adicionales {#adding-support-for-additional-native-file-formats}
 
@@ -574,7 +574,7 @@ Esta sección también explica lo siguiente:
 
 ### Interacciones de componentes {#component-interactions}
 
-El servicio Generar PDF convierte los formatos de archivo nativos invocando la aplicación asociada al formato de archivo y, a continuación, interactuando con la aplicación para imprimir el documento con la impresora predeterminada. La impresora predeterminada debe configurarse como impresora Adobe PDF.
+El servicio Generar PDF convierte los formatos de archivo nativos invocando la aplicación asociada al formato de archivo y, a continuación, interactuando con la aplicación para imprimir el documento con la impresora predeterminada. La impresora predeterminada debe configurarse como la impresora Adobe PDF.
 
 En esta ilustración se muestran los componentes y los controladores involucrados en la compatibilidad con aplicaciones nativas. También menciona los gramáticas XML que influyen en las interacciones.
 
@@ -724,8 +724,8 @@ Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comand
 
 Los archivos de cuadro de diálogo y de secuencia de comandos residen en el archivo appmondata.jar. Para poder modificar cualquiera de estos archivos o agregar nuevos archivos de script o de diálogo, debe desempaquetar este archivo JAR. Por ejemplo, supongamos que desea agregar compatibilidad con la aplicación EditPlus. Puede crear dos archivos XML, denominados appmon.editplus.script.en_US.xml y appmon.editplus.script.addis.es_ES.xml. Estas secuencias de comandos XML deben agregarse al archivo adobe-appmondata.jar en dos ubicaciones, tal como se especifica a continuación:
 
-* adobe-livecycle-native-jleader-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. El archivo adobe-livecycle-native-jpatrón-x86_win32.ear se encuentra en la carpeta de exportación de *[AEM forms install directory]\*configurationManager. (si AEM Forms se implementa en otro servidor de aplicaciones J2EE, sustituya el archivo adobe-livecycle-native-jpatrón-x86_win32.ear por el archivo EAR que corresponde a su servidor de aplicaciones J2EE).
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (el archivo adobe-appmondata.jar se encuentra en el archivo adobe-generatepdf-dsc.jar). El archivo adobe-generatepdf-dsc.jar se encuentra en la carpeta *[AEM Forms install directory]*\deploy.
+* adobe-livecycle-native-jleader-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. El archivo adobe-livecycle-native-jpatrón-x86_win32.ear se encuentra en la carpeta de exportación de *[AEM directorio]de instalación de formularios\*configurationManager. (si AEM Forms se implementa en otro servidor de aplicaciones J2EE, reemplace el archivo adobe-livecycle-native-jpatrón-x86_win32.ear por el archivo EAR que corresponde a su servidor de aplicaciones J2EE).
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (el archivo adobe-appmondata.jar se encuentra en el archivo adobe-generatepdf-dsc.jar). El archivo adobe-generatepdf-dsc.jar se encuentra en la carpeta *[AEM directorio]* de instalación\implementar de formularios.
 
 Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe volver a implementar el componente GeneratePDF. Para agregar archivos XML de cuadro de diálogo y secuencia de comandos al archivo adobe-appmondata.jar, lleve a cabo las siguientes tareas:
 
@@ -916,7 +916,7 @@ Después de crear la nueva variable de entorno, debe reiniciar el servidor en el
 
 **Crear una variable de sistema en el entorno de Windows XP**
 
-1. Seleccione **Panel de control > Sistema**.
+1. Seleccione **Panel de control de Campaign > Sistema**.
 1. En el cuadro de diálogo Propiedades del sistema, haga clic en la ficha **Avanzadas** y, a continuación, haga clic en Variables **de Entorno**.
 1. En Variables del sistema en el cuadro de diálogo Variables de Entorno, haga clic en **Nuevo**.
 1. En el cuadro de diálogo Nueva variable del sistema, en el cuadro Nombre **de** variable, escriba un nombre que utilice el formato *[applicationname]*_PATH.

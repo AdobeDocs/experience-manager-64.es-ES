@@ -20,15 +20,16 @@ Aunque puede personalizar el código de seguimiento para permitir que las soluci
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM:
 
 1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Insights Configuration]**.
-1. [Configurar la instancia de AEM con el servicio de nube de DTM](../sites-administering/dtm.md)
+1. [Configurar AEM instancia con el Cloud Service de DTM](../sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de las perspectivas de recursos, ya que la integración de los sitios de AEM con las perspectivas de recursos sigue en marcha.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite Configuración **[!UICONTROL de cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de Asset Insights, ya que la integración de AEM Sites con Asset Insights aún está en marcha.
 
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/)y seleccione una Compañía, según corresponda.
 1. Crear/abrir una propiedad web existente
 
    * Seleccione la ficha Propiedades **** web y, a continuación, toque o haga clic en **[!UICONTROL Añadir propiedad]**.
    * Actualice los campos según corresponda y toque o haga clic en **[!UICONTROL Crear propiedad]** (consulte [la documentación](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. En la ficha **[!UICONTROL Reglas]** , seleccione **[!UICONTROL Reglas]** de carga de página en el panel de navegación y toque o haga clic en **[!UICONTROL Crear nueva regla]**.
@@ -45,9 +46,9 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
    >[!NOTE]
    >
    >* `AppMeasurement.js` se ha eliminado. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
-   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
-   >* Según el lugar en el que esté alojado el rastreador de páginas de perspectivas de recursos (por ejemplo, AEM, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
-   >* Para el rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
+   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que la función se llame una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
+   >* Según el lugar donde se aloja el rastreador de páginas de perspectivas de recursos (por ejemplo, AEM, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
+   >* Para el Rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
 
 
 

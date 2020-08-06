@@ -1,8 +1,8 @@
 ---
 title: Prácticas de desarrollo
 seo-title: Prácticas de desarrollo
-description: Prácticas recomendadas para desarrollar en AEM
-seo-description: Prácticas recomendadas para desarrollar en AEM
+description: Prácticas recomendadas para desarrollar la AEM
+seo-description: Prácticas recomendadas para desarrollar la AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Sin un DoD bien definido, es fácil terminar en una situación en la que muchas 
 
 Cosas como los niveles de sangría y el espacio en blanco pueden no parecer importantes, pero tener un código formateado adecuadamente contribuye en gran medida a la legibilidad y mantenimiento. Las convenciones deben debatirse y acordarse como un equipo y seguirse en el código.
 
-### Objetivo para una cobertura de prueba alta {#aim-for-high-test-coverage}
+### Objetivo para una cobertura de prueba alta  {#aim-for-high-test-coverage}
 
 A medida que la implementación de un proyecto crece en tamaño, también lo hará la cantidad de tiempo necesaria para probarlo. Sin una buena cobertura de pruebas, el equipo de pruebas no podrá escalar y los desarrolladores terminarán enterrados en errores.
 
@@ -50,19 +53,19 @@ El sistema debe estar disponible para demostraciones al negocio al final de cada
 
 ### Implementar un entorno de integración continua y utilizarlo {#implement-a-continuous-integration-environment-and-use-it}
 
-La implementación de un entorno de integración continua le permitirá ejecutar de forma fácil y repetida pruebas de unidad y de integración. También desacoplará los despliegues del equipo de desarrollo, lo que permitirá a las demás partes del equipo ser más eficientes y lograr despliegues más estables y predecibles.
+La implementación de un entorno de integración continua le permitirá ejecutar de forma fácil y repetida pruebas unitarias y pruebas de integración. También desacoplará los despliegues del equipo de desarrollo, lo que permitirá a las demás partes del equipo ser más eficientes y lograr despliegues más estables y predecibles.
 
 ### Mantenga el ciclo de desarrollo rápido manteniendo los tiempos de compilación bajos {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
 Si las pruebas unitarias tardan mucho en ejecutarse, los desarrolladores evitarán ejecutarlas y perderán su valor. Si lleva mucho tiempo crear el código e implementarlo, las personas lo harán con menos frecuencia. Hacer de los tiempos de construcción cortos una prioridad garantiza que el tiempo que hemos invertido en nuestra cobertura de pruebas e infraestructura de CI seguirá haciendo que el equipo sea más productivo.
 
-### Afinar Sonar y otras herramientas de análisis de código estático y actuar en sus informes {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Ajustar Sonar y otras herramientas de análisis de código estático y actuar en sus informes {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-Las herramientas de análisis de código pueden ser valiosas, pero sólo si sus informes llevan a la acción por parte del equipo de desarrollo. Sin perfeccionar el análisis que proporcionan estas herramientas, las recomendaciones que generan no serán relevantes y perderán su valor.
+Las herramientas de análisis de código pueden ser valiosas, pero sólo si sus informes llevan a la acción por parte del equipo de desarrollo. Sin perfeccionar la análisis que estas herramientas proporcionan, las recomendaciones que generan no serán relevantes y perderán su valor.
 
-### Siga la regla de boy scout {#follow-the-boy-scout-rule}
+### Siga la regla del Scout de niños {#follow-the-boy-scout-rule}
 
-Los Boy Scouts tienen una regla: &quot;Déjalo mejor de lo que lo encontraste&quot;. Mientras todos los miembros del equipo de desarrollo se adhieran a esta regla y limpien algo cuando se encuentren con un desastre, el código mejorará constantemente.
+Los Scout Boy tienen una regla: &quot;Déjalo mejor de lo que lo encontraste&quot;. Mientras todos los miembros del equipo de desarrollo se adhieran a esta regla y limpien algo cuando se encuentren con un desastre, el código mejorará constantemente.
 
 ### Evite implementar características YAGNI {#avoid-implementing-yagni-features}
 

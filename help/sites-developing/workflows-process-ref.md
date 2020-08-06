@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
 
 # Referencia del proceso de flujo de trabajo{#workflow-process-reference}
 
-AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelos de flujo de trabajo. También se pueden agregar pasos de proceso personalizados para tareas que no están cubiertas por los pasos integrados (consulte [Creación de modelos](/help/sites-developing/workflows-models.md)de flujo de trabajo).
+AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelos de flujo de trabajo. También se pueden agregar pasos de proceso personalizados para tareas no cubiertas por los pasos integrados (consulte [Creación de modelos](/help/sites-developing/workflows-models.md)de flujo de trabajo).
 
 ## Características del proceso {#process-characteristics}
 
@@ -34,15 +37,15 @@ Los pasos del proceso se definen mediante una clase Java o ECMAScript.
 
 La carga útil es la entidad en la que actúa una instancia de flujo de trabajo. La carga útil se selecciona implícitamente en el contexto en el que se inicia una instancia de flujo de trabajo.
 
-Por ejemplo, si se aplica un flujo de trabajo a una página *P* de AEM, la *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso actúa de alguna manera de forma opcional sobre *P* .
+Por ejemplo, si se aplica un flujo de trabajo a una página *P* AEM, entonces la *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso actúa de alguna manera de manera opcional sobre *P* .
 
-En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página de AEM o un recurso). Una carga útil de Nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). En algunos casos, la carga útil puede ser una propiedad JCR (pasada como una ruta JCR), una dirección URL, un objeto binario o un objeto Java genérico. Los pasos de proceso individuales que actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de manera diferente según el tipo de carga útil. Para cada proceso que se describe a continuación, se describe el tipo de carga útil esperado, si existe.
+En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página AEM o un recurso). Una carga útil de Nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). En algunos casos, la carga útil puede ser una propiedad JCR (pasada como una ruta JCR), una dirección URL, un objeto binario o un objeto Java genérico. Los pasos de proceso individuales que actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de manera diferente según el tipo de carga útil. Para cada proceso que se describe a continuación, se describe el tipo de carga útil esperado, si existe.
 
 ### Argumentos {#arguments}
 
 Algunos procesos de flujo de trabajo aceptan argumentos que el administrador especifica al configurar el paso de flujo de trabajo.
 
-Los argumentos se introducen como una sola cadena en la propiedad Argumentos **de** proceso en el panel **Propiedades** del editor de flujo de trabajo. Para cada proceso que se describe a continuación, el formato de la cadena del argumento se describe en una gramática EBNF simple. Por ejemplo, lo siguiente indica que la cadena de argumento consta de uno o más pares delimitados por comas, donde cada par consta de un nombre (que es una cadena) y un valor, separados por dos puntos:
+Los argumentos se introducen como una sola cadena en la propiedad Argumentos **de** proceso en el panel **Propiedades** del editor de flujo de trabajo. Para cada proceso que se describe a continuación, el formato de la cadena del argumento se describe en una gramática EBNF simple. Por ejemplo, lo siguiente indica que la cadena de argumento consta de uno o más pares delimitados por comas, donde cada par consta de un nombre (que es una cadena) y un valor, separados por dos puntos de doble:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -55,7 +58,7 @@ Los argumentos se introducen como una sola cadena en la propiedad Argumentos **d
 
 Después de este período de tiempo de espera, el paso del flujo de trabajo ya no funciona. Algunos procesos de flujo de trabajo respetan el tiempo de espera, mientras que para otros no se aplica y se ignora.
 
-### Permisos  {#permissions}
+### Permisos    {#permissions}
 
 La sesión que se pasa al `WorkflowProcess` está respaldada por el usuario del servicio para el servicio de proceso de flujo de trabajo, que tiene los siguientes permisos en la raíz del repositorio:
 
@@ -220,11 +223,11 @@ Por ejemplo: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 Bloquea la carga útil del flujo de trabajo.
 
-* **** Clase Java: `com.day.cq.workflow.impl.process.LockProcess`
+* **Clase Java:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Carga útil: JCR_PATH y JCR_UUID
-* **** Argumentos: Ninguno
-* **** Tiempo de espera: Ignorado
+* **Carga útil:** JCR_PATH y JCR_UUID
+* **Argumentos:** Ninguno
+* **Tiempo de espera:** Ignorado
 
 El paso no tiene efecto en las siguientes circunstancias:
 
@@ -235,11 +238,11 @@ El paso no tiene efecto en las siguientes circunstancias:
 
 Desbloquea la carga útil del flujo de trabajo.
 
-* **** Clase Java: `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Clase Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Carga útil: JCR_PATH y JCR_UUID
-* **** Argumentos: Ninguno
-* **** Tiempo de espera: Ignorado
+* **Carga útil:** JCR_PATH y JCR_UUID
+* **Argumentos:** Ninguno
+* **Tiempo de espera:** Ignorado
 
 El paso no tiene efecto en las siguientes circunstancias:
 
@@ -252,7 +255,7 @@ El siguiente proceso realiza una tarea relacionada con la versión.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Crea una nueva versión de la carga útil del flujo de trabajo (página de AEM o recurso DAM).
+Crea una nueva versión de la carga útil del flujo de trabajo (AEM página o recurso DAM).
 
 * **Clase** Java: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

@@ -36,7 +36,7 @@ AEM Forms proporciona un componente Tabla en el navegador de componentes de la b
 
 Para crear una tabla, arrastre y suelte el componente Tabla desde el navegador de componentes en la barra de tareas del formulario adaptable. De forma predeterminada, la tabla contiene dos columnas y tres filas, incluida la fila de encabezado.
 
-![Componente de tabla en la barra lateral de AEM](assets/sidebar-tables.png)
+![Componente de tabla en AEM barra lateral](assets/sidebar-tables.png)
 
 ### Acerca del encabezado y las celdas de cuerpo {#about-header-and-body-cells}
 
@@ -132,7 +132,7 @@ Para obtener la lista completa de clases de formularios adaptables, eventos, obj
 
 ## Diseños móviles {#mobile-layouts}
 
-Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: encabezados en las columnas izquierda y contraíbles.
+Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: Encabezados a la izquierda y Columnas que pueden contraerse.
 
 Puede configurar un diseño móvil para una tabla desde la ficha Estilo del cuadro de diálogo Editar componente para una tabla.
 
@@ -160,7 +160,7 @@ Las siguientes imágenes comparan el aspecto de una tabla en un dispositivo con 
 
 ## Combinar datos en una tabla {#merge-data-in-a-table}
 
-Las tablas de formularios adaptables permiten rellenar la tabla en tiempo de ejecución utilizando datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo en el que se ejecuta el servidor de AEM Forms o en el repositorio de CRX.
+Las tablas de formularios adaptables permiten rellenar la tabla en tiempo de ejecución utilizando datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo en el que se ejecuta AEM Forms Server o en el repositorio de CRX.
 
 Veamos un ejemplo de la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
 
@@ -242,7 +242,7 @@ Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que
 
 ## Utilizar componentes XDP y tipos complejos XSD {#use-xdp-components-and-xsd-complex-types}
 
-Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la ficha Modelo de datos de AEM Content Finder. Puede arrastrar y soltar estos elementos XFA, incluidas las tablas, en el formulario adaptable.
+Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la ficha Modelo de datos de AEM Buscador de contenido. Puede arrastrar y soltar estos elementos XFA, incluidas las tablas, en el formulario adaptable.
 
 El elemento de tabla XFA se asigna al componente Tabla y funciona de forma predeterminada en formularios adaptables. Todas las propiedades y funcionalidades de la tabla XDP se conservan cuando se mueven a un formulario adaptable, y puede realizar cualquier operación en ella al igual que con la tabla de formulario adaptable nativa. Por ejemplo, si una fila de una tabla XDP está marcada como repetible, también se repetirá cuando se suelte en formularios adaptables.
 

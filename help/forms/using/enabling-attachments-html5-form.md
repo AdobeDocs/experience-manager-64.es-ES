@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
 
 # Activación de datos adjuntos para un formulario HTML5 {#enabling-attachments-for-an-html-form}
 
-Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De forma predeterminada, la compatibilidad con datos adjuntos está deshabilitada. Para habilitar la compatibilidad con los datos adjuntos:
+Puede cargar, previsualización y enviar archivos adjuntos con formularios HTML5. De forma predeterminada, la compatibilidad con datos adjuntos está deshabilitada. Para habilitar la compatibilidad con los datos adjuntos:
 
 1. Cree un perfil [](/help/forms/using/custom-profile.md) personalizado con la propiedad de cadena mutiselect `mfAttachmentOptions`.
 1. En el perfil personalizado, especifique las propiedades `fileSizeLimit``multiSelect`y `buttonTex`t para configurar las opciones del widget de datos adjuntos del archivo. Si es necesario, también puede especificar más propiedades personalizadas.
@@ -27,12 +30,13 @@ Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De
    * **fileSizeLimit** -> value_in_mb (digamos 5) (2 MB de forma predeterminada)
    * **buttonText** -> Texto del botón para la ventana emergente (&quot;Adjuntar&quot; de forma predeterminada)
    * **aceptar** -> tipos de archivo para aceptar (&quot;audio/&amp;último;, vídeo/&amp;último;, imagen/&amp;último;, texto/&amp;último;, .pdf&quot; de forma predeterminada)
+
    >[!NOTE]
    >
    >En Microsoft Internet Explorer 9, los usuarios pueden adjuntar archivos que superen el límite especificado. Se trata de un problema conocido.
 
 1. Utilice el editor [de](/help/forms/using/manage-form-metadata.md) metadatos para seleccionar el perfil personalizado que ha creado anteriormente para los formularios HTML 5.
-1. Representar la plantilla de formulario con un perfil personalizado y el icono de archivos adjuntos aparecería en la barra de herramientas de formularios.
+1. Representar la plantilla de formulario con perfil personalizado y el icono de archivos adjuntos aparecerá en la barra de herramientas de formularios.
 
    >[!NOTE]
    >
@@ -42,11 +46,11 @@ Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De
 
    >[!NOTE]
    >
-   >Para obtener una vista previa de un archivo adjunto, haga clic en el nombre del mismo.
+   >Para previsualización de un archivo adjunto, haga clic en el nombre del mismo.
 
    >[!NOTE]
    >
-   >La opción de vista previa de archivos no está disponible para usuarios anónimos.
+   >La opción de previsualización de archivos no está disponible para usuarios anónimos.
 
 ## Formato de envío de datos adjuntos {#attachment-submission-format}
 

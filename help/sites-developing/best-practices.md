@@ -1,8 +1,8 @@
 ---
 title: 'Prácticas recomendadas  '
 seo-title: 'Prácticas recomendadas  '
-description: Los equipos de ingeniería y consultoría de Adobe han desarrollado un completo conjunto de prácticas recomendadas para los desarrolladores de AEM
-seo-description: Los equipos de ingeniería y consultoría de Adobe han desarrollado un completo conjunto de prácticas recomendadas para los desarrolladores de AEM
+description: Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un conjunto completo de optimizaciones para desarrolladores de AEM
+seo-description: Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un conjunto completo de optimizaciones para desarrolladores de AEM
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 9%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ## Prácticas recomendadas para desarrolladores: Introducción {#best-practices-for-developers-getting-started}
 
-Los equipos de ingeniería y consultoría de Adobe han desarrollado un completo conjunto de prácticas recomendadas para los desarrolladores de AEM. Los desarrolladores de Adobe siguen estas prácticas recomendadas a medida que desarrollan actualizaciones de productos principales de AEM y código de cliente para implementaciones de clientes.
+Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un amplio conjunto de mejores prácticas para desarrolladores de AEM. Los desarrolladores de Adobe se adhieren a estas optimizaciones a medida que desarrollan actualizaciones de productos AEM principales y código de cliente para implementaciones de clientes.
 
-Antes de realizar el inicio de su proyecto de desarrollo de AEM, consulte estas prácticas recomendadas:
+Antes de realizar el inicio del proyecto de desarrollo de AEM, revise primero estas optimizaciones:
 
 * [Prácticas de desarrollo](/help/sites-developing/development-practices.md)
 * [Arquitectura del contenido](/help/sites-developing/content-architecture.md)
@@ -36,7 +39,7 @@ Antes de realizar el inicio de su proyecto de desarrollo de AEM, consulte estas 
 
 Las siguientes áreas tienen documentación disponible específica para desarrollar las mejores prácticas:
 
-* [Sitios](#sites)
+* [Sites](#sites)
 * [Comunidades](/help/sites-developing/best-practices.md#communities)
 * [Tooling/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
@@ -72,7 +75,7 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
   <tr>
    <td>Flujos de trabajo</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desarrollo y ampliación de Flujos de trabajo</a></td> 
-   <td><p>Los Flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran parte del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar las implementaciones de flujos de trabajo con cuidado.</p> </td> 
+   <td><p>Los Flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar las implementaciones de flujos de trabajo con cuidado.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -90,7 +93,7 @@ A continuación se describen algunas prácticas recomendadas para las comunidade
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) es un nuevo sistema de plantillas HTML, introducido con AEM 6.0. Reemplaza JSP y ESP como el sistema de plantillas preferido de AEM.
+HTML Template Language (HTL) es un nuevo sistema de plantillas HTML, introducido con AEM 6.0. Reemplaza JSP y ESP como el sistema de plantilla preferido de AEM.
 
 |  |  |  |
 |---|---|---|
@@ -99,6 +102,6 @@ HTML Template Language (HTL) es un nuevo sistema de plantillas HTML, introducido
 
 >[!NOTE]
 >
->El siguiente tutorial en varias partes puede ser de interés para la práctica recomendada para configurar un nuevo proyecto de AEM, en el que se detallan los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes:\
->[Introducción a los sitios de AEM: Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>El siguiente tutorial de varias partes puede ser de interés para la práctica recomendada para configurar un nuevo proyecto de AEM, en el que se detallan los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes:\
+>[Introducción a AEM Sites: Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 

@@ -34,7 +34,7 @@ Con las plantillas editables, los fragmentos que crean una página están aislad
 
 >[!NOTE]
 >
->Se requiere AEM 6.4.5.0 o posterior para utilizar plantillas editables con el Editor [de](/help/sites-developing/spa-overview.md)SPA.
+>Se necesita AEM 6.4.5.0 o posterior para utilizar plantillas editables con el Editor [de](/help/sites-developing/spa-overview.md)SPA.
 
 >[!NOTE]
 >
@@ -54,13 +54,13 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 >[!NOTE]
 >
 >El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto:\
->[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Introducción a AEM Sites Parte 2 - Creación de una página base y una plantilla](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 La creación de plantillas editables se realiza principalmente con la consola de [plantillas y el editor](/help/sites-authoring/templates.md) de plantillas. En esta sección se ofrece una visión general de este proceso y se ofrece una descripción de lo que ocurre a nivel técnico.
 
-Para obtener información sobre cómo utilizar plantillas editables en un proyecto de AEM, consulte [Creación de un proyecto de AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Para obtener información sobre cómo utilizar plantillas editables en un proyecto AEM, consulte [Creación de un proyecto AEM con Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Al crear una nueva plantilla editable, realiza estas acciones:
 
@@ -120,7 +120,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
    * Una plantilla puede habilitarse o deshabilitarse para que esté disponible o no esté disponible para los autores de la página.
    * Una plantilla puede estar disponible o no disponible para determinadas ramas de la página.
 
-   Para obtener más información sobre cómo el autor de una plantilla habilita una plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)de página.
+   Para obtener más información sobre cómo un autor de plantilla habilita una plantilla, consulte [Creación de plantillas](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)de página.
 
    Para obtener información técnica sobre cómo habilitar una plantilla, consulte [Activación y autorización de una plantilla para](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)uso en este documento
 
@@ -239,7 +239,7 @@ Las carpetas de plantillas para la implementación [de referencia de](/help/site
 
 #### El grupo de autores de plantillas {#the-template-authors-group}
 
-El `template-authors` grupo es el grupo que se utiliza para administrar el acceso a las plantillas y viene de serie con AEM, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
+El `template-authors` grupo es el grupo que se utiliza para administrar el acceso a las plantillas y viene estándar con AEM, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
 
 >[!CAUTION]
 >
@@ -254,7 +254,7 @@ En la tabla siguiente se detallan los permisos necesarios para editar plantillas
   <tr> 
    <th>Ruta</th> 
    <th>Función/Grupo</th> 
-   <th>Permisos <br /> </th> 
+   <th>Permisos   <br /> </th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -303,7 +303,7 @@ En la tabla siguiente se detallan los permisos necesarios para editar plantillas
  </tbody> 
 </table>
 
-Este `template-authors` grupo predeterminado solo cubre la configuración del proyecto, donde todos `template-authors` los miembros pueden acceder a todas las plantillas y crearlas. Para configuraciones más complejas, donde se necesitan varios grupos de autores de plantillas para separar el acceso a las plantillas, se deben crear más grupos de autores de plantillas personalizadas. Sin embargo, los permisos para los grupos de autores de plantillas seguirían siendo los mismos.
+Este `template-authors` grupo predeterminado solo cubre la configuración del proyecto, donde todos `template-authors` los miembros pueden acceder y crear todas las plantillas. Para configuraciones más complejas, donde se necesitan varios grupos de autores de plantillas para separar el acceso a las plantillas, se deben crear más grupos de autores de plantillas personalizadas. Sin embargo, los permisos para los grupos de autores de plantillas seguirían siendo los mismos.
 
 #### Plantillas heredadas en /conf/global {#legacy-templates-under-conf-global}
 
@@ -314,7 +314,7 @@ Las plantillas ya no deben almacenarse en `/conf/global`, pero para algunas inst
   <tr> 
    <th>Ruta</th> 
    <th>Función/Grupo</th> 
-   <th>Permisos <br /> </th> 
+   <th>Permisos   <br /> </th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -430,7 +430,7 @@ Al crear una nueva plantilla editable, el valor se copia del tipo de plantilla a
 Si ha creado una plantilla que puede servir de base para otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
 1. Cree una plantilla como lo haría con cualquier plantilla editable [como se documenta aquí](/help/sites-authoring/templates.md#creating-a-new-template-template-author), lo que servirá de base para el tipo de plantilla.
-1. Con CRXDE Lite, copie la plantilla recién creada del `templates` nodo en el `template-types` nodo situado debajo de la carpeta [de](/help/sites-developing/page-templates-editable.md#template-folders)plantilla.
+1. Con CRXDE Lite, copie la plantilla recién creada del `templates` nodo en el `template-types` nodo situado debajo de la carpeta [de](/help/sites-developing/page-templates-editable.md#template-folders)plantillas.
 1. Elimine la plantilla del `templates` nodo situado debajo de la carpeta [de la](/help/sites-developing/page-templates-editable.md#template-folders)plantilla.
 1. En la copia de la plantilla que se encuentra bajo el `template-types` nodo, elimine todas `cq:template` las propiedades y `cq:templateType``jcr:content` .
 
@@ -617,7 +617,7 @@ El diagrama anterior muestra cómo las plantillas, el contenido y los componente
 
 * Controlador - `/content/<my-site>/<my-page>`
 
-   Página resultante que hace referencia a la plantilla. El contenido controla todo el proceso. De acuerdo con las definiciones, accede a la plantilla y los componentes correspondientes.
+   Página resultante que hace referencia a la plantilla. El contenido controla todo el proceso. De acuerdo con las definiciones, accede a la plantilla y los componentes adecuados.
 
 * Configuración - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 

@@ -11,18 +11,21 @@ content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 
 # Integración con ExactTarget{#integrating-with-exacttarget}
 
-La integración de AEM con Exact Target le permite administrar y enviar correos electrónicos creados en AEM mediante ExactTarget. También le permite utilizar las funciones de administración de posibles clientes de ExactTarget mediante formularios AEM en páginas de AEM.
+La integración de AEM con Exact Destinatario le permite administrar y enviar correos electrónicos creados en AEM mediante Exact Destinatario. También le permite utilizar las funciones de administración de posibles clientes de Exact Destinatario a través de formularios AEM en páginas AEM.
 
 La integración proporciona las siguientes funciones:
 
-* La capacidad de crear correos electrónicos en AEM y publicarlos en ExactTarget para su distribución.
-* La capacidad de definir la acción de un formulario AEM para crear un suscriptor de ExactTarget.
+* La capacidad de crear correos electrónicos en AEM y publicarlos en Exact Destinatario para su distribución.
+* La capacidad de definir la acción de un formulario AEM para crear un suscriptor de Exact Destinatario.
 
 Una vez configurado ExactTarget, puede publicar newsletters o correos electrónicos en ExactTarget. Consulte [Publicación de newsletters en un servicio](/help/sites-authoring/personalization.md)de correo electrónico.
 
@@ -52,7 +55,7 @@ Para crear una configuración de ExactTarget en Cloud Services:
 
    ExactTarget se ha configurado. Puede editar la configuración haciendo clic en **Editar**. Puede ir a ExactTarget haciendo clic en **Ir a ExactTarget**.
 
-1. AEM ahora ofrece una función de extensión de datos. Puede importar columnas de extensión de datos de ExactTarget. Esto se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de crear correctamente la configuración de ExactTarget. Se puede seleccionar cualquiera de las extensiones de datos existentes en la lista desplegable. Para obtener más información sobre cómo configurar extensiones de datos, consulte la documentación de [ExactTarget](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM ahora proporciona una función de extensión de datos. Puede importar columnas de extensión de datos de ExactTarget. Esto se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de crear correctamente la configuración de ExactTarget. Se puede seleccionar cualquiera de las extensiones de datos existentes en la lista desplegable. Para obtener más información sobre cómo configurar extensiones de datos, consulte la documentación de [ExactTarget](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 
    Las columnas de extensión de datos importadas se pueden utilizar posteriormente a través del componente **Texto y Personalización** .
 
@@ -63,7 +66,7 @@ Para crear una configuración de ExactTarget en Cloud Services:
 Para crear una configuración de ExactTarget en Herramientas:
 
 1. En la página de bienvenida, haga clic en **Herramientas**. O navegue allí directamente yendo a `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccione **Herramientas**, Configuración de servicios **de nube y, a continuación,** **ExactTarget**.
+1. Seleccione **Herramientas**, luego **Cloud Services Configuraciones,** luego **ExactTarget**.
 1. Click **New** to open the **Create Page **window.
 
    ![chlimage_1-34](assets/chlimage_1-34.jpeg)
@@ -71,10 +74,10 @@ Para crear una configuración de ExactTarget en Herramientas:
 1. Introduzca el **Título** y, opcionalmente, el **Nombre** y haga clic en **Crear**.
 1. Introduzca la información de configuración como se indica en el paso 4 del procedimiento anterior. Siga ese procedimiento para finalizar la configuración de ExactTarget.
 
-### Adición de varias configuraciones {#adding-multiple-configurations}
+### Añadir varias configuraciones {#adding-multiple-configurations}
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Services** y, a continuación, en **ExactTarget**. Haga clic en el botón **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se enumeran todas las configuraciones disponibles.
+1. En la página de bienvenida, haga clic en **Cloud Services** y en **ExactTarget**. Haga clic en el botón **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se enumeran todas las configuraciones disponibles.
 1. Haga clic en el signo **+** junto a Configuraciones disponibles. Se abre la ventana **Crear configuraciones** . Siga el procedimiento de configuración anterior para crear una nueva configuración.
 

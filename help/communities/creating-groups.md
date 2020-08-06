@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Se seleccionan una o varias plantillas de grupo para la función de grupo cuando
 
 La capacidad de crear un nuevo grupo de comunidad depende de la existencia de un sitio de comunidad que incluya la función de grupos, como uno creado a partir de la ` [Reference Site Template](sites.md)`.
 
-Los ejemplos que siguen utilizan el sitio de comunidad creado a partir del `Reference Site Template` informe, tal como se describe en el tutorial [Introducción a las comunidades](getting-started.md) de AEM.
+Los ejemplos que siguen utilizan el sitio de comunidad creado a partir de la página `Reference Site Template` tal como se describe en el tutorial [Introducción a AEM Communities](getting-started.md) .
 
 Esta es la página que se carga al publicar cuando se selecciona el elemento de menú **[!UICONTROL Grupos]** :
 
@@ -45,15 +48,17 @@ En la ficha **[!UICONTROL Configuración]** , se proporcionan las funciones bás
 
 * **[!UICONTROL Descripción]** Una descripción del grupo que se mostrará en el sitio de la comunidad.
 
-* **[!UICONTROL Invitar]** una lista de miembros para invitar a unirse al grupo. La búsqueda de tipo por adelantado proporcionará sugerencias de los miembros de la comunidad que invitar.
+* **[!UICONTROL Invitar]** a una lista de miembros a invitar a unirse al grupo. La búsqueda de tipo por adelantado proporcionará sugerencias de los miembros de la comunidad que invitar.
 
 * **[!UICONTROL Nombre]** de la dirección URL del grupo El nombre de la página del grupo que forma parte de la dirección URL.
 
-* **[!UICONTROL Abrir grupo]** La selección `Open Group` indica que cualquier visitante anónimo del sitio puede ver el contenido y se deseleccionará `Member Only Group`.
+* **[!UICONTROL Abrir selección de grupo]** 
+`Open Group` indica que cualquier visitante anónimo del sitio puede vista del contenido y se deseleccionará `Member Only Group`.
 
-* **[!UICONTROL Grupo]** de miembrosSeleccionar `Member Only Group` indica que solo los miembros del grupo pueden ver el contenido y se deseleccionarán `Open Group`.
+* **[!UICONTROL Selección de grupo]** de miembros solamente 
+`Member Only Group` indica que solo los miembros del grupo pueden realizar vistas en el contenido y se desseleccionará `Open Group`.
 
-En la ficha **[!UICONTROL Plantilla]** se encuentra la capacidad de seleccionar de la lista de plantillas de grupo de comunidad que se especificaron cuando la función de grupo se incluyó en la estructura del sitio de comunidad o en una plantilla de sitio de comunidad.
+En la ficha **[!UICONTROL Plantilla]** se encuentra la posibilidad de seleccionar entre la lista de las plantillas de grupo de comunidad que se especificaron cuando la función de grupo se incluyó en la estructura del sitio de comunidad o en una plantilla de sitio de comunidad.
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 

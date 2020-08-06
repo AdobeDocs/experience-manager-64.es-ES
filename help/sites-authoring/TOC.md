@@ -16,7 +16,7 @@ ht-degree: 89%
 # Guía del usuario de creación de AEM 6.4 {#authoring}
 
 + [Descripción general de la Guía del usuario de creación](home.md)
-+ tareas, herramientas y conceptos básicos para la creación de AEM {#essentials}
++ tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
@@ -41,7 +41,7 @@ ht-degree: 89%
    + [Crear una página para dispositivos móviles ](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
-   + [Prácticas recomendadas ](best-practices.md)
+   + [Prácticas recomendadas  ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Uso de etiquetas](tags.md)
    + [Creación de plantillas de página  ](templates.md)

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ Realice los siguientes pasos para mostrar los componentes de la barra lateral en
 
    Al seleccionar y abrir la propiedad components, aparece el cuadro de diálogo Editar componentes. El cuadro de diálogo Editar componentes permite agregar o quitar grupos de componentes mediante los botones **+** y **-** . Puede agregar un grupo de componentes que incluya componentes que desee que utilicen los autores.
 
-   ![Agregar o quitar componentes de la directiva](assets/add-components-list1.png)
+   ![Añadir o quitar componentes de la directiva](assets/add-components-list1.png)
 
    Después de agregar un grupo de componentes, haga clic en **Aceptar** para actualizar la lista y, a continuación, haga clic en **Guardar todo** encima de la barra de direcciones CRXDE y actualícelo.
 

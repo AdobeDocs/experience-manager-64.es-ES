@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +23,7 @@ Este artículo incluye información general, casos de uso de muestra, flujo de t
 
 ![](do-not-localize/correspondence-management.png)
 
-Interactive Communications centraliza y gestiona la creación, el ensamblaje y la entrega de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos electrónicos de marketing, facturas y kits de bienvenida.
+Interactive Communications centraliza y administra la creación, el ensamblaje y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
 
 ## Funciones clave {#key-capabilities}
 
@@ -29,9 +32,9 @@ A continuación se describen las funciones clave de Interactive Communications:
 * Integración lista para usar con el modelo de datos de formulario para permitir un acceso fácil y simplificado a las bases de datos back-end y otros sistemas CRM, como MS® Dynamics
 * Interfaz de creación integrada para canales web e impresos con capacidad para generar automáticamente canales web a partir del canal de impresión
 * Gráficos para presentar información en formatos visuales fáciles de entender en impresión y Web
-* Los fragmentos de documento admiten el editor de reglas y el modelo de datos de formulario
-* La interfaz de usuario del agente muestra la impresión y la vista previa web de la comunicación interactiva
-* Arrastrar y soltar componentes para construir rápidamente canales de impresión y web
+* Los fragmentos de Documento admiten el editor de reglas y el modelo de datos de formulario
+* La interfaz de usuario del agente muestra la impresión y la previsualización web de la comunicación interactiva
+* Arrastrar y soltar componentes para construir rápidamente canales de impresión y Web
 
 ## Ejemplo de caso de uso {#sample-use-case}
 
@@ -47,28 +50,28 @@ Para crear una comunicación interactiva, tenga los [componentes](#buildingblock
 
 1. Elija [crear una comunicación](/help/forms/using/create-interactive-communication.md)interactiva.
 
-1. Especifique el modelo [de datos de](/help/forms/using/data-integration.md)formulario, el servicio de cumplimentación previa y las plantillas [de canal web e](/help/forms/using/web-channel-print-channel.md)impresión. Puede elegir generar un canal web a partir del canal de impresión.
+1. Especifique el modelo [de datos de](/help/forms/using/data-integration.md)formulario, el servicio de cumplimentación previa y las plantillas [de canal web e](/help/forms/using/web-channel-print-channel.md)impresión. Puede elegir generar canal web desde el canal de impresión.
 
-1. Mediante la interfaz [de](/help/forms/using/introduction-interactive-communication-authoring.md)arrastrar y soltar, agregue fragmentos de documento, imágenes, componentes a la impresión y al canal web de la comunicación interactiva según sea necesario.
+1. Mediante la interfaz [de](/help/forms/using/introduction-interactive-communication-authoring.md)arrastrar y soltar, agregue fragmentos de documento, imágenes, componentes para imprimir y canal web de la comunicación interactiva según sea necesario.
 1. Configure las propiedades de los componentes insertados, como por ejemplo:
 
    1. Imágenes
    1. [Tablas](/help/forms/using/create-interactive-communication.md#tables) (incluidos los fragmentos de diseño)
    1. [Gráficos](/help/forms/using/chart-component-interactive-communications.md)
-   1. [Fragmentos de documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
+   1. [Fragmentos de Documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Obtenga una vista previa de los canales web y de impresión y, si es necesario, edite la comunicación interactiva.
-1. El agente utiliza la interfaz de usuario del agente para [preparar la comunicación](/help/forms/using/prepare-send-interactive-communication.md) interactiva para enviarla al proceso de destinatario o anuncio.
+1. Imprima Previsualización y canales web y, si es necesario, edite la Comunicación interactiva.
+1. El agente utiliza la interfaz de usuario del agente para [preparar la comunicación](/help/forms/using/prepare-send-interactive-communication.md) interactiva para enviarla al proceso de destinatario o publicación.
 
 ### Componentes {#buildingblocks}
 
 A continuación se indican los componentes necesarios para crear una comunicación interactiva:
 
 * [Modelo de datos de formulario](/help/forms/using/data-integration.md)
-* [Plantillas de canal web e impresión](/help/forms/using/web-channel-print-channel.md)
-* [Fragmentos de documento](/help/forms/using/document-fragments.md)
+* [Plantillas de impresión y canal web](/help/forms/using/web-channel-print-channel.md)
+* [Fragmentos de Documento](/help/forms/using/document-fragments.md)
 * Imágenes
-* [Temas](/help/forms/using/themes.md) para el canal Web
+* [Temáticas](/help/forms/using/themes.md) para el canal Web
 
 ## Comunicaciones Interactivas Frente A Administración De Correspondencia {#interactive-communications-vs-correspondence-management}
 
@@ -103,47 +106,47 @@ Interactive Communication es el método predeterminado y recomendado para crear 
      <li>Editor de reglas de compatibilidad de texto y condición para crear condiciones en línea</li> 
      <li>El editor de comunicaciones interactivas admite la aplicación de reglas en componentes del canal web</li> 
     </ul> </td> 
-   <td>No hay IU para la creación de expresiones condicionales</td> 
+   <td>No hay IU para la creación de expresión condicional</td> 
   </tr>
   <tr>
-   <td>Creación </td> 
-   <td>Interfaz de arrastrar y soltar para construir canales web e impresos</td> 
+   <td>Creación  </td> 
+   <td>Interfaz de arrastrar y soltar para la construcción de impresión y canal web</td> 
    <td>Sin mecanismo de arrastrar y soltar </td> 
   </tr>
   <tr>
    <td>Gráficos</td> 
-   <td>Gráficos admitidos tanto en impresión como en canal web</td> 
+   <td>Gráficos admitidos en impresión y canal web</td> 
    <td>No se admite</td> 
   </tr>
   <tr>
    <td>Temas</td> 
-   <td>Utiliza temas para aplicar estilo al canal web</td> 
-   <td>No admite temas</td> 
+   <td>Utiliza temáticas para aplicar estilo al canal web</td> 
+   <td>No admite temáticas</td> 
   </tr>
   <tr>
    <td>Auditoría y control de versiones</td> 
    <td>No se admite</td> 
-   <td>Admitido</td> 
+   <td>Compatible</td> 
   </tr>
   <tr>
    <td>Borra y gestiona instancias</td> 
    <td>No se admite</td> 
-   <td>Admitido</td> 
+   <td>Compatible</td> 
   </tr>
   <tr>
    <td>Procesamiento por lotes</td> 
-   <td>Admitido </td> 
-   <td>Admitido</td> 
+   <td>Compatible </td> 
+   <td>Compatible</td> 
   </tr>
   <tr>
    <td>Firma del agente</td> 
    <td>No se admite</td> 
-   <td>Admitido</td> 
+   <td>Compatible</td> 
   </tr>
   <tr>
    <td>Funciones remotas</td> 
    <td>No se admite</td> 
-   <td>Admitido</td> 
+   <td>Compatible</td> 
   </tr>
  </tbody>
 </table>

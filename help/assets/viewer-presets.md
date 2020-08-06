@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 23%
 
 ---
 
 
 # Applying Dynamic Media viewer presets {#applying-viewer-presets}
 
-Un ajuste preestablecido de visor es una colección de ajustes que determinan el modo en que los usuarios ven los recursos de medios enriquecidos en las pantallas de sus equipos y en los dispositivos móviles. Puede aplicar cualquier ajuste preestablecido de visor creado por el administrador a un recurso.
+Un ajuste preestablecido de visor es una colección de ajustes que determinan la forma en que los usuarios vista los recursos de medios enriquecidos en las pantallas de sus equipos y en los dispositivos móviles. Puede aplicar cualquier ajuste preestablecido de visor creado por el administrador a un recurso.
 
 Si es un administrador y necesita gestionar, crear, ordenar y eliminar ajustes preestablecidos de visor, consulte [Administración de ajustes preestablecidos](managing-viewer-presets.md)de visor.
 
@@ -39,4 +42,4 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Resoluci�
 
 ## Obtención de direcciones URL de ajustes preestablecidos de visor {#obtaining-viewer-preset-urls}
 
-Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación](linking-urls-to-yourwebapplication.md)web.
+Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la Aplicación web](linking-urls-to-yourwebapplication.md).

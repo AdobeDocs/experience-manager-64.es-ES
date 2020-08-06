@@ -12,6 +12,9 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
 source-git-commit: 8a8e38bc9f34d6a81aa91ba83cf35caa4b03ee3f
+workflow-type: tm+mt
+source-wordcount: '3439'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +31,11 @@ Tanto los almacenes de datos como los almacenes de nodos se pueden configurar me
 
 Para configurar el almacén de nodos y el almacén de datos, lleve a cabo los siguientes pasos:
 
-1. Copie el archivo JAR de inicio rápido de AEM en su directorio de instalación.
+1. Copie el archivo JAR de inicio rápido AEM en su directorio de instalación.
 1. Cree una carpeta `crx-quickstart/install` en el directorio de instalación.
 1. Primero, configure el almacén de nodos creando un archivo de configuración con el nombre de la opción de almacén de nodos que desee utilizar en el `crx-quickstart/install` directorio.
 
-   Por ejemplo, el almacén de nodos de Document (que es la base de la implementación MongoMK de AEM) utiliza el archivo `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
+   Por ejemplo, el almacén de nodos de Documento (que es la base para AEM implementación de MongoMK) utiliza el archivo `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Edite el archivo y defina las opciones de configuración.
 1. Cree un archivo de configuración con el PID del almacén de datos que desee utilizar. Edite el archivo para establecer las opciones de configuración.
@@ -41,7 +44,7 @@ Para configurar el almacén de nodos y el almacén de datos, lleve a cabo los si
    >
    >Consulte Configuraciones [del almacén de](#node-store-configurations) nodos y Configuraciones del almacén [de datos](#data-store-configurations) para ver las opciones de configuración.
 
-1. Inicie AEM.
+1. Inicio AEM.
 
 ## Configuraciones del almacén de nodos {#node-store-configurations}
 
@@ -51,22 +54,22 @@ Para configurar el almacén de nodos y el almacén de datos, lleve a cabo los si
 >
 >Si actualiza desde una versión anterior de Oak, asegúrese de realizar una copia de seguridad de la `crx-quickstart/install` carpeta en primer lugar. Después de la actualización, restaure el contenido de la carpeta en la instalación actualizada y modifique la extensión de los archivos de configuración de **.cfg** a **.config**.
 >
->Si está leyendo este artículo como preparación para una actualización desde una instalación de **AEM 5.x** , asegúrese de consultar primero la documentación de la [actualización](https://docs.adobe.com/content/docs/en/aem/6-0/deploy/upgrade.html) .
+>Si está leyendo este artículo como preparación para una actualización desde una instalación **AEM 5.x** , asegúrese de consultar primero la documentación de la [actualización](https://docs.adobe.com/content/docs/en/aem/6-0/deploy/upgrade.html) .
 
 ### Almacén de nodos de segmento {#segment-node-store}
 
-El almacén de nodos de segmentos es la base de la implementación TarMK de Adobe en AEM6. Utiliza el `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID para la configuración.
+El almacén de nodos de segmentos es la base de la implementación TarMK del Adobe en AEM6. Utiliza el `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID para la configuración.
 
 >[!CAUTION]
 >
->El PID para el almacén de nodos del segmento ha cambiado de AEM 6 a AEM 6.3 `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` de `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` . Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
+>El PID para el almacén de nodos del segmento ha cambiado de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` AEM 6 a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` en AEM 6.3. Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 
 Puede configurar las siguientes opciones:
 
 * `repository.home`:: Ruta al directorio raíz del repositorio en el cual se almacenan los datos relacionados con el repositorio. De forma predeterminada, los archivos de segmentos se almacenan en el `crx-quickstart/segmentstore` directorio.
 
 * `tarmk.size`:: Tamaño máximo de un segmento en MB. El máximo predeterminado es 256 MB.
-* `customBlobStore`:: Valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es true para AEM 6.3 y versiones posteriores. Antes de AEM 6.3, el valor predeterminado era false.
+* `customBlobStore`:: Valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es true para AEM versiones 6.3 y posteriores. Antes de AEM 6.3, el valor predeterminado era false.
 
 A continuación se muestra un `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` archivo de muestra:
 
@@ -81,9 +84,9 @@ tarmk.size=I"256"
 customBlobStore=B"true"
 ```
 
-### Almacén de nodos de documentos {#document-node-store}
+### Almacén de nodos de Documento {#document-node-store}
 
-El almacén de nodos de documentos es la base de la implementación de MongoMK de AEM. Utiliza el `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` PID ****. Están disponibles las siguientes opciones de configuración:
+El almacén de nodos de documento es la base de AEM implementación de MongoMK. Utiliza el `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` PID ****. Están disponibles las siguientes opciones de configuración:
 
 * `mongouri`:: El [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necesario para conectarse a la base de datos de Mongo. El valor predeterminado es `mongodb://localhost:27017`
 
@@ -120,7 +123,7 @@ A continuación se describen los detalles de las diferentes configuraciones y al
 
 >[!NOTE]
 >
->Para habilitar los Almacenes de datos personalizados, debe asegurarse de que `customBlobStore` está configurado `true` en el archivo de configuración correspondiente del Almacén de nodos (almacén[de nodos de](/help/sites-deploying/data-store-config.md#segment-node-store) segmentos o almacén [de nodos de](/help/sites-deploying/data-store-config.md#document-node-store)documentos).
+>Para habilitar los Almacenes de datos personalizados, debe asegurarse de que `customBlobStore` está configurado `true` en el archivo de configuración correspondiente del Almacén de nodos (almacén[de nodos de](/help/sites-deploying/data-store-config.md#segment-node-store) segmentos o almacén [de nodos de](/help/sites-deploying/data-store-config.md#document-node-store)documento).
 
 ### Almacén de datos de archivo {#file-data-store}
 
@@ -140,13 +143,13 @@ Estas opciones de configuración están disponibles:
 
 ## Amazon S3 Data Store {#amazon-s-data-store}
 
-AEM se puede configurar para almacenar datos en el servicio de almacenamiento simple (S3) de Amazon. Utiliza el `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID para la configuración.
+AEM se puede configurar para almacenar datos en Amazon Simple Almacenamiento Service (S3). Utiliza el `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID para la configuración.
 
-Para habilitar la funcionalidad del almacén de datos S3, es necesario descargar e instalar un paquete de funciones que contenga el conector del almacén de datos S3. Vaya al repositorio [de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) Adobe y descargue la versión más reciente de las versiones 1.8.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.s3Connector-1.8.0.zip). Además, también debe descargar e instalar el Service Pack más reciente de AEM, tal como se indica en la página de notas [de la versión de Service Pack de](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html) AEM 6.4.
+Para habilitar la funcionalidad del almacén de datos S3, es necesario descargar e instalar un paquete de funciones que contenga el conector del almacén de datos S3. Vaya al Repositorio [de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) Adobe y descargue la versión más reciente de las versiones 1.8.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.s3Connector-1.8.0.zip). Además, también debe descargar e instalar el Service Pack de AEM más reciente, tal y como se indica en la página Notas [de la versión de Service Pack 6.4 de](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html) AEM.
 
 >[!NOTE]
 >
->Al utilizar AEM 6.4 con TarMK, los binarios se almacenarán de forma predeterminada en el `FileDataStore`. Para utilizar TarMK con el almacén de datos S3, debe iniciar AEM usando el `crx3tar-nofds` modo de ejecución, por ejemplo:
+>Al utilizar AEM 6.4 con TarMK, los binarios se almacenarán de forma predeterminada en el `FileDataStore`. Para utilizar TarMK con el almacén de datos S3, debe realizar un inicio de AEM mediante el uso del `crx3tar-nofds` modo de ejecución, por ejemplo:
 
 ```shell
 java -jar aem6.4.jar -r crx3tar-nofds
@@ -172,17 +175,19 @@ Una vez descargado, puede instalar y configurar el S3 Connector de la siguiente 
 1. Vuelva a la ubicación temporal en la que se ha extraído el paquete de funciones y copie el contenido de la siguiente carpeta:
 
    * `jcr_root/libs/system/config`
+
    hasta
 
    * `<aem-install>/crx-quickstart/install`
-   Asegúrese de que sólo copia los archivos de configuración necesarios para la configuración actual. Copie el `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` archivo tanto para un almacén de datos dedicado como para una configuración compartida del almacén de datos.
+
+   Asegúrese de que sólo copia los archivos de configuración necesarios para la configuración actual. Copie el `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` archivo tanto para un almacén de datos dedicado como para una configuración de almacén de datos compartido.
 
    >[!NOTE]
    >
    >En una configuración de clúster, realice los pasos anteriores en todos los nodos del clúster uno por uno. Además, asegúrese de utilizar la misma configuración de S3 para todos los nodos.
 
 1. Edite el archivo y agregue las opciones de configuración requeridas por la configuración.
-1. Inicie AEM.
+1. Inicio AEM.
 
 ### Actualización a una nueva versión del conector 1.8.x S3 {#upgrading-to-a-new-version-of-the-x-s-connector}
 
@@ -195,6 +200,7 @@ Si necesita actualizar a una nueva versión del conector 1.8.x S3 (por ejemplo, 
 
    * **oak-blob-cloud-1.6.1.jar**
    * **aws-java-sdk-osgi-1.10.76.jar**
+
    >[!NOTE]
    >
    >Los nombres de archivo presentados anteriormente se utilizan únicamente con fines ilustrativos y no son definitivos.
@@ -202,15 +208,15 @@ Si necesita actualizar a una nueva versión del conector 1.8.x S3 (por ejemplo, 
 1. Descargue la versión más reciente del paquete de funciones 1.8.x del repositorio [de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)Adobe.
 1. Descomprima el contenido en una carpeta independiente y, a continuación, vaya a `jcr_root/libs/system/install/15`.
 1. Copie los archivos jar en **&lt;aem-install>**/crx-quickstart/install/15 en la carpeta de instalación de AEM.
-1. Inicie AEM y compruebe la funcionalidad del conector.
+1. Inicio AEM y compruebe la funcionalidad del conector.
 
 Puede utilizar el archivo de configuración con las siguientes opciones:
 
 * accessKey: Clave de acceso de AWS.
-* secretKey: La clave de acceso secreto de AWS. **** Nota: Como alternativa, las funciones [de](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) IAM se pueden usar para la autenticación. Si está utilizando funciones de IAM, ya no necesita especificar el `accessKey` y `secretKey`.
+* secretKey: La clave de acceso secreto de AWS. **Nota:** Como alternativa, las funciones [de](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) IAM se pueden usar para la autenticación. Si está utilizando funciones de IAM, ya no necesita especificar el `accessKey` y `secretKey`.
 * s3Bucket: El nombre del bloque.
 * s3Region: La región del cubo.
-* path: Ruta del almacén de datos. El valor predeterminado es **&lt;carpeta de instalación de AEM>/repositorio/almacén de datos**
+* path: Ruta del almacén de datos. El valor predeterminado es **&lt;AEM carpeta de instalación>/repositorio/almacén de datos**
 * minRecordLength: El tamaño mínimo de un objeto que debe almacenarse en el almacén de datos. El mínimo/predeterminado es de **16 KB.**
 * maxCachedBinarySize: Los binarios con un tamaño menor o igual que este tamaño se almacenarán en la memoria caché. El tamaño está en bytes. El valor predeterminado es **17408 **(17 KB).
 
@@ -279,11 +285,11 @@ Se buscará en la caché local el registro del archivo o blob solicitado antes d
 
 **Carga asincrónica**
 
-La caché admite cargas asincrónicas en DataStore. Los archivos se escalonan localmente, en la caché (en el sistema de archivos) y un trabajo asincrónico comienza a cargar el archivo. El número de cargas asincrónicas está limitado por el tamaño de la caché de ensayo. El tamaño de la caché de ensayo se configura mediante el `stagingSplitPercentage` parámetro . Este parámetro define el porcentaje de tamaño de caché que se utilizará para la caché de ensayo. Además, el porcentaje de caché disponible para descargas se calcula como **(100 -`stagingSplitPercentage`) &amp;ast;`cacheSize`**.
+La caché admite cargas asincrónicas en DataStore. Los archivos se escalonan localmente, en la caché (en el sistema de archivos) y en un inicio de trabajo asincrónico para cargar el archivo. El número de cargas asincrónicas está limitado por el tamaño de la caché de ensayo. El tamaño de la caché de ensayo se configura mediante el `stagingSplitPercentage` parámetro . Este parámetro define el porcentaje de tamaño de caché que se utilizará para la caché de ensayo. Además, el porcentaje de caché disponible para descargas se calcula como **(100 -`stagingSplitPercentage`) &amp;ast;`cacheSize`**.
 
 Las cargas asincrónicas son de varios subprocesos y el número de subprocesos se configura mediante el `uploadThreads` parámetro .
 
-Los archivos se mueven a la caché de descarga principal una vez finalizadas las cargas. Cuando el tamaño de caché de ensayo supera su límite, los archivos se cargan sincrónicamente en DataStore hasta que se completen las cargas asincrónicas anteriores y vuelva a haber espacio disponible en la caché de ensayo. Los archivos cargados se eliminan del área de ensayo mediante un trabajo periódico cuyo intervalo está configurado por el `stagingPurgeInterval` parámetro.
+Los archivos se mueven a la caché de descarga principal una vez finalizadas las cargas. Cuando el tamaño de la caché de ensayo supera su límite, los archivos se cargan sincrónicamente en DataStore hasta que se completen las cargas asincrónicas anteriores y vuelva a haber espacio disponible en la caché de ensayo. Los archivos cargados se eliminan del área de ensayo mediante un trabajo periódico cuyo intervalo está configurado por el `stagingPurgeInterval` parámetro.
 
 Las cargas fallidas (por ejemplo, debido a una interrupción de la red) se colocan en una cola de reintentos y se vuelven a intentar periódicamente. El intervalo de reintentos se configura usando el `stagingRetryInterval parameter`.
 
@@ -296,7 +302,7 @@ Para configurar la replicación sin binarios con S3, se requieren los siguientes
 1. Pulse el botón **Editar** en la sección **Configuración** .
 1. Cambie la opción **Serialización** a **Binario menos**.
 
-1. Agregue el parámetro &quot; `binaryless`= `true`&quot; en el URI de transporte. Después del cambio, el URI debería tener un aspecto similar al siguiente:
+1. Añada el parámetro &quot; `binaryless`= `true`&quot; en el URI de transporte. Después del cambio, el URI debería tener un aspecto similar al siguiente:
 
    *http://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
@@ -308,22 +314,23 @@ Para configurar la replicación sin binarios con S3, se requieren los siguientes
 
    `java -jar cq-quickstart.jar -unpack`
 
-1. Una vez desempaquetado AEM, cree una carpeta dentro del directorio de instalación *crx-quickstart*/*install*.
+1. Después de desempaquetar AEM, cree una carpeta dentro del directorio de instalación *crx-quickstart*/*install*.
 
 1. Cree estos dos archivos dentro de la `crx-quickstart` carpeta:
 
-   * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
+   * *org.apache.jackrabbit.oak.plugins.documento.DocumentNodeStoreService*.*config*
    * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
+
    Después de crear los archivos, agregue las opciones de configuración según sea necesario.
 
 1. Instale los dos paquetes necesarios para el almacén de datos S3 como se explica anteriormente.
 1. Asegúrese de que MongoDB esté instalado y de que `mongod` se esté ejecutando una instancia de.
-1. Inicie AEM con el siguiente comando:
+1. Inicio AEM con el siguiente comando:
 
    `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Repita los pasos del 1 al 4 para la segunda instancia de AEM.
-1. Inicie la segunda instancia de AEM.
+1. Inicio de la segunda instancia de AEM.
 
 #### Configuración de un almacén de datos compartido {#configuring-a-shared-data-store}
 
@@ -341,7 +348,7 @@ Para configurar la replicación sin binarios con S3, se requieren los siguientes
 
    >[!NOTE]
    >
-   >Si se configura un almacén de nodos de segmento, se debe especificar la ruta del repositorio. De forma predeterminada, la ruta es `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si se configura un almacén de nodos de Document, puede utilizar un URI [de cadena de conexión](https://docs.mongodb.org/manual/reference/connection-string/)Mongo.
+   >Si se configura un almacén de nodos de segmento, se debe especificar la ruta del repositorio. De forma predeterminada, la ruta es `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si se configura un almacén de nodos de Documento, puede utilizar un URI [de cadena de conexión](https://docs.mongodb.org/manual/reference/connection-string/)Mongo.
 
    >[!NOTE]
    >
@@ -349,10 +356,10 @@ Para configurar la replicación sin binarios con S3, se requieren los siguientes
    >
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
-   >Tenga en cuenta que se deben utilizar distintas versiones de la herramienta en función de la versión de Oak que utilice con la instalación de AEM. Consulte la lista de requisitos de versión que aparece a continuación antes de utilizar la herramienta:
+   >Tenga en cuenta que es necesario utilizar diferentes versiones de la herramienta en función de la versión de Oak que utilice con la instalación de AEM. Compruebe la lista de requisitos de versión que aparece a continuación antes de utilizar la herramienta:
    >
    >* Para las versiones Oak **1.2.x** , utilice Oak-run **1.2.12 o posterior**
-   >* Para las versiones de Oak **más recientes que las anteriores**, utilice la versión de Oak-run que coincida con el núcleo Oak de la instalación de AEM.
+   >* Para las versiones de Oak **más recientes que las anteriores**, utilice la versión de Oak-run que coincida con el núcleo Oak de su instalación de AEM.
 
 
 1. Por último, valide la configuración. Para ello, debe buscar un archivo único agregado al almacén de datos por cada repositorio que lo comparte. El formato de los archivos es `repository-[UUID]`, donde el UUID es un identificador único de cada repositorio individual.
@@ -372,7 +379,7 @@ Para habilitar la funcionalidad del almacén de datos de Azure, es necesario des
 
 >[!NOTE]
 >
->Al utilizar AEM 6.4 con TarMK, los binarios se almacenan de forma predeterminada en FileDataStore. Para utilizar TarMK con el Almacén de datos de Azure, debe iniciar AEM usando el `crx3tar-nofds` modo de ejecución, por ejemplo:
+>Al utilizar AEM 6.4 con TarMK, los binarios se almacenan de forma predeterminada en FileDataStore. Para utilizar TarMK con el Almacén de datos de Azure, debe realizar un inicio de AEM mediante el `crx3tar-nofds` modo de ejecución, por ejemplo:
 
 ```shell
 java -jar aem6.4.jar -r crx3tar-nofds
@@ -395,17 +402,17 @@ Una vez descargado, puede instalar y configurar el conector de Azure de la sigui
 
 1. Vuelva a la ubicación temporal en la que se ha extraído el paquete de funciones y copie el contenido de `jcr_root/libs/system/config` en la `<aem-install>/crx-quickstart/install` carpeta.
 1. Edite el archivo de configuración y agregue las opciones de configuración requeridas por la configuración.
-1. Inicie AEM.
+1. Inicio AEM.
 
 Puede utilizar el archivo de configuración con las siguientes opciones:
 
-* azureSas=&quot;&quot;: En la versión 1.6.3 del conector, se agregó compatibilidad con la firma Azure Shared Access (SAS). **Si las credenciales SAS y de almacenamiento existen en el archivo de configuración, SAS tiene prioridad.** Para obtener más información sobre SAS, consulte la documentación [oficial](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Asegúrese de que el carácter &#39;=&#39; tiene un carácter de escape como &#39;\=&#39;.
+* azureSas=&quot;&quot;: En la versión 1.6.3 del conector, se agregó compatibilidad con la firma Azure Shared Access (SAS). **Si las credenciales SAS y almacenamiento existen en el archivo de configuración, SAS tiene prioridad.** Para obtener más información sobre SAS, consulte la documentación [oficial](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Asegúrese de que el carácter &#39;=&#39; tiene un carácter de escape como &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot;: Extremo de blob de Azure. Por ejemplo, https://&lt;storage-account>.blob.core.windows.net.
+* azureBlobEndpoint=&quot;&quot;: Extremo de blob de Azure. Por ejemplo, https://&lt;cuenta-almacenamiento>.blob.core.windows.net.
 * accessKey=&quot;&quot;: El nombre de la cuenta de almacenamiento. Para obtener más información sobre las credenciales de autenticación de Microsoft Azure, consulte la documentación [oficial](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
 
-* secretKey=&quot;&quot;: La clave de acceso al almacenamiento. Asegúrese de que el carácter &#39;=&#39; tiene un carácter de escape como &#39;\=&#39;.
-* container=&quot;&quot;: Nombre del contenedor de almacenamiento blob de Microsoft Azure. El contenedor es una agrupación de un conjunto de blobs. Para más detalles, lea la documentación [oficial](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
+* secretKey=&quot;&quot;: La clave de acceso de almacenamiento. Asegúrese de que el carácter &#39;=&#39; tiene un carácter de escape como &#39;\=&#39;.
+* contenedor=&quot;&quot;: El nombre del contenedor de almacenamiento blob de Microsoft Azure. El contenedor es una agrupación de un conjunto de blobs. Para más detalles, lea la documentación [oficial](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
 * maxConnections=&quot;&quot;: Número simultáneo de solicitudes simultáneas por operación. El valor predeterminado es 1.
 * maxErrorRetry=&quot;&quot;: Número de reintentos por solicitud. El valor predeterminado es 3.
 * socketTimeout=&quot;&quot;: Intervalo de tiempo de espera, en milisegundos, utilizado para la solicitud. El valor predeterminado es 5 minutos.
@@ -452,11 +459,11 @@ Puede ejecutar la recopilación de elementos no utilizados del almacén de datos
 
 >[!NOTE]
 >
->Al realizar la recopilación de elementos no utilizados en una configuración de almacén de datos agrupados o compartidos (con Mongo o Segment Tar), el registro puede mostrar advertencias sobre la incapacidad de eliminar determinados identificadores de blob. Esto sucede porque otros clústeres o nodos compartidos que no tienen información sobre las eliminaciones de ID vuelven a hacer referencia a los ID de blob eliminados en una colección de elementos no utilizados anterior. Como resultado, cuando se realiza la recolección de elementos no utilizados, registra una advertencia cuando intenta eliminar un ID que ya se eliminó en la última ejecución. Este comportamiento no afecta al rendimiento ni a la funcionalidad.
+>Al realizar la recopilación de elementos no utilizados en una configuración de almacén de datos agrupados o compartidos (con Mongo o Segment Tar), el registro puede mostrar advertencias sobre la imposibilidad de eliminar determinados identificadores de blob. Esto sucede porque otros clústeres o nodos compartidos que no tienen información sobre las eliminaciones de ID vuelven a hacer referencia a los ID de blob eliminados en una colección de elementos no utilizados anterior. Como resultado, cuando se realiza la recolección de elementos no utilizados, registra una advertencia cuando intenta eliminar un ID que ya se eliminó en la última ejecución. Este comportamiento no afecta al rendimiento ni a la funcionalidad.
 
-Con las versiones más recientes de AEM, la recopilación de elementos no utilizados del almacén de datos también se puede ejecutar en almacenes de datos compartidos por más de un repositorio. Para poder ejecutar la recopilación de elementos no utilizados del almacén de datos en un almacén de datos compartido, lleve a cabo los siguientes pasos:
+Con versiones más recientes de AEM, la recopilación de elementos no utilizados del almacén de datos también se puede ejecutar en almacenes de datos compartidos por más de un repositorio. Para poder ejecutar la recopilación de elementos no utilizados del almacén de datos en un almacén de datos compartido, lleve a cabo los siguientes pasos:
 
-1. Asegúrese de que todas las tareas de mantenimiento configuradas para la recopilación de datos no utilizados del almacén de datos estén desactivadas en todas las instancias del repositorio que compartan el almacén de datos.
+1. Asegúrese de que todas las tareas de mantenimiento configuradas para la recopilación de elementos no utilizados del almacén de datos estén desactivadas en todas las instancias del repositorio que compartan el almacén de datos.
 1. Ejecute los pasos mencionados en [Binary Garbage Collection](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individualmente en **todas** las instancias del repositorio que compartan el almacén de datos. Sin embargo, asegúrese de escribir `true` para el `markOnly` parámetro antes de hacer clic en el botón Invocar:
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
@@ -466,5 +473,6 @@ Con las versiones más recientes de AEM, la recopilación de elementos no utiliz
    1. Vaya a la consola JMX y seleccione el grano del administrador de repositorios.
    1. Haga clic en el vínculo **Click startDataStoreGC(boolean markOnly)** .
    1. En el cuadro de diálogo siguiente, vuelva a introducir `false` el `markOnly` parámetro.
+
    De este modo, se recopilarán todos los archivos encontrados con la fase de marca utilizada anteriormente y se eliminarán los demás que no se utilicen del almacén de datos.
 

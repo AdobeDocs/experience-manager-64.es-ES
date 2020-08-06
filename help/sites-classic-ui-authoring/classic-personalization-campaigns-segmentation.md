@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 72%
 
 ---
 
@@ -41,7 +44,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Usuario** Un usuario es un visitante que se registra en el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan identificación adicional como, por ejemplo, una dirección de correo electrónico y el género, entre otros datos. La información adicional también se puede recopilar, incluyendo la actividad de la comunidad y los modelos de compra, entre otros datos. En función de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Característica** Una característica es una característica o propiedad de un visitante que puede utilizarse para determinar la pertenencia a un segmento específico.
+**Característica** Una característica es una característica o propiedad de un visitante que se puede utilizar para determinar la pertenencia a un segmento específico.
 
 **Segmento** Un segmento es una colección de visitantes que comparten ciertas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
@@ -75,7 +78,7 @@ Por ejemplo, la combinación de la dirección URL de referencia (como caracterí
 
 **Párrafo** de teaser Es un párrafo que extrae contenido de otra página en función de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
 
-**Lista** Se extrae una lista de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
+**Lista** Una lista se extrae de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
 
 >[!NOTE]
 >

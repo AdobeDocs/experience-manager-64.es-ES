@@ -20,14 +20,14 @@ ht-degree: 21%
 
 # Integración con Adobe Analytics{#integrating-with-adobe-analytics}
 
-La integración de Adobe Analytics y AEM le permite realizar un seguimiento de la actividad de su página web:
+La integración de Adobe Analytics y AEM le permite rastrear la actividad de su página web:
 
-* La configuración de Adobe Analytics permite que AEM se autentique con Adobe Analytics.
-* Un marco de trabajo identifica los datos que se envían al grupo de informes de Adobe Analytics.
+* Una configuración de Adobe Analytics permite AEM autenticarse con Adobe Analytics.
+* Un marco identifica los datos que se envían al grupo de informes de Adobe Analytics.
 
 Los datos incluyen datos de página y de usuario; por ejemplo:
 
-* datos que recopilan los componentes de AEM
+* datos que AEM los componentes recopilan
 * clics en vínculos
 * información de uso de vídeo
 * el número de visitas a la página desde Adobe Analytics
@@ -50,7 +50,7 @@ También puede utilizar el asistente para la [inclusión](/help/sites-administer
 Consulte:
 
 * [Ampliación de la integración](/help/sites-developing/extending-analytics.md) de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
-* El artículo de la base de conocimientos, Integración de [Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración de Adobe Analytics.
+* El artículo de la base de conocimientos, Integración con [Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
 
 >[!NOTE]
 >

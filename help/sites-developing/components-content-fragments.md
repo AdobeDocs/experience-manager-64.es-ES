@@ -1,8 +1,8 @@
 ---
 title: Componentes para fragmentos de contenido
 seo-title: Componentes para fragmentos de contenido
-description: Los fragmentos de contenido de AEM se crean y administran como recursos independientes de la página
-seo-description: Los fragmentos de contenido de AEM se crean y administran como recursos independientes de la página
+description: AEM fragmentos de contenido se crean y administran como recursos independientes de la página
+seo-description: AEM fragmentos de contenido se crean y administran como recursos independientes de la página
 uuid: 289ed9cb-9531-43a9-b0d8-a3499e2e9ee5
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y admini
 
 >[!NOTE]
 >
->Este componente de fragmento de contenido se introdujo en AEM 6.2 como una versión mejorada del componente de artículo, que ha quedado obsoleto.
+>Este componente de fragmento de contenido se introdujo en AEM 6.2 como una versión mejorada del componente Artículo, que ha quedado obsoleto.
 
 >[!NOTE]
 >
@@ -102,7 +105,7 @@ Para utilizar el componente de fragmento de contenido incorporado como modelo de
 * Vuelva a utilizar la secuencia de comandos de procesamiento HTL y su POJO asociado para ver cómo se implementa la función de contenido intermedio.
 * Reutilice el nodo de fragmento de contenido: `cq:editConfig`
 
-   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para desencadenar eventos JS. Estos eventos se gestionarán en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente para mostrar el contenido asociado en el panel lateral.
+   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para activar eventos JS. Estos eventos se gestionarán en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente para mostrar el contenido asociado en el panel lateral.
    * Los `cq:dropTargets` están configurados para admitir la posibilidad de arrastrar recursos de fragmentos de contenido.
    * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor in-situ de fragmentos se define en la biblioteca del `cq.authoring.editor.plugin.cfm` cliente y permite un vínculo rápido para abrir el [elemento/variación](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el editor [de](/help/assets/content-fragments-variations.md)fragmentos.
 
@@ -116,7 +119,7 @@ La configuración lista para usar utiliza los siguientes transformadores:
 
 * `transformer-cfm-payloadfilter` - solo para recuperar la parte `body` ( `<body>...</body>`) del HTML del fragmento
 
-* `transformer-cfm-parfilter` - filtra los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
+* `transformer-cfm-parfilter` - filtros los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
 * `transformer-cfm-assetprocessor` - se utiliza internamente para recuperar una lista de los recursos incrustados en el fragmento
 
 El proceso de procesamiento se expone mediante ` [com.adobe.cq.dam.cfm.content.FragmentRenderService](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)` y, si es necesario, se puede aprovechar (por ejemplo) mediante componentes personalizados.

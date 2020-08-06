@@ -1,8 +1,8 @@
 ---
 title: Integración del espacio de trabajo de formularios AEM con Microsoft Office SharePoint Server
 seo-title: Integración del espacio de trabajo de formularios AEM con Microsoft Office SharePoint Server
-description: 'Puede integrar el espacio de trabajo de formularios AEM con Microsoft Office SharePoint Server. '
-seo-description: 'Puede integrar el espacio de trabajo de formularios AEM con Microsoft Office SharePoint Server. '
+description: 'Puede integrar AEM espacio de trabajo de formularios con Microsoft Office SharePoint Server. '
+seo-description: 'Puede integrar AEM espacio de trabajo de formularios con Microsoft Office SharePoint Server. '
 uuid: d43396d4-117f-47ea-91e4-10ee96107bc8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 **Nivel** de usuario Comienzo
 
-Puede utilizar AEM Forms Workspace como elemento Web en Microsoft Office SharePoint Server (por ejemplo, Microsoft Office SharePoint Server 2007). Los usuarios pueden acceder a AEM Forms Workspace conectándose a su servidor de SharePoint mediante un navegador web para proporcionar una experiencia unificada. En este artículo, aprenderá los pasos básicos para mostrar AEM Forms Workspace como elemento web en Microsoft Office SharePoint Server. Puede realizar los pasos descritos en este artículo para proporcionar una experiencia unificada de modo que los usuarios que se conecten a su servidor de SharePoint puedan acceder a AEM Forms Workspace desde el mismo puerto.
+Puede utilizar AEM Forms Workspace como elemento Web en Microsoft Office SharePoint Server( Por ejemplo, Microsoft Office SharePoint Server 2007). Los usuarios pueden acceder a AEM Forms Workspace conectándose a su servidor de SharePoint mediante un navegador web para proporcionar una experiencia unificada. En este artículo, aprenderá los pasos básicos para mostrar AEM Forms Workspace como elemento Web en Microsoft Office SharePoint Server. Puede realizar los pasos descritos en este artículo para proporcionar una experiencia unificada de modo que los usuarios que se conecten a su servidor de SharePoint puedan acceder a AEM Forms Workspace desde el mismo puerto.
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ Puede utilizar AEM Forms Workspace como elemento Web en Microsoft Office SharePo
 
 ## Integración de AEM Forms Workspace con Microsoft Office SharePoint Server 2007 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
-Siga estos pasos para integrar AEM Forms Workspace en un elemento web:
+Siga estos pasos para integrar AEM Forms Workspace en un elemento Web:
 
 1. En un navegador web, navegue al sitio de SharePoint como, por ejemplo, https://*[myMOSSserver]:*44299/default.aspx donde *[myMOSSserver]* es el nombre o la dirección IP del servidor de SharePoint.
 
@@ -39,21 +42,21 @@ Siga estos pasos para integrar AEM Forms Workspace en un elemento web:
    >44299 es el número de puerto predeterminado para el servidor de SharePoint. El número de puerto depende de la instalación de SharePoint Server.
 
 1. En la parte superior derecha de la página web, haga clic en Acciones **** del sitio y seleccione **Editar página**.
-1. Haga clic en el botón **Agregar un elemento** Web.
-1. En el cuadro de diálogo Agregar elementos Web - página Web, en Miscelánea, seleccione Elemento **Web Visor de** páginas y, a continuación, haga clic en **Agregar**.
+1. Haga clic en el botón **Añadir un elemento** Web.
+1. En el cuadro de diálogo Añadir elementos Web - página Web, en Miscelánea, seleccione Elemento **Web Visor de** páginas y, a continuación, haga clic en **Añadir**.
 1. En el cuadro Elemento Web del visor de páginas, haga clic en **editar** y seleccione **Modificar elemento** Web compartido.
 
    >[!NOTE]
    >
-   >El cuadro Elemento Web Visor de páginas aparece debajo del botón **Agregar un elemento** Web en el que hizo clic en el paso 3, como se muestra en la siguiente ilustración (Figura 1):
+   >El cuadro Elemento Web Visor de páginas aparece debajo del botón **Añadir un elemento** Web en el que hizo clic en el paso 3, como se muestra en la siguiente ilustración (Figura 1):
 
    ![Cuadro de elemento Web del visor de páginas en el servidor de Microsoft Office SharePoint.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **** Figura: *Cuadro Elemento Web del visor de páginas en el servidor de Microsoft Office SharePoint.*
+   **Figura:** *Cuadro Elemento Web del visor de páginas en el servidor de Microsoft Office SharePoint.*
 
 1. En la página Visor de páginas, realice las siguientes tareas:
 
-   1. En el cuadro Vínculo, escriba la dirección URL de AEM Forms Workspace, como https://*[AEM_forms_Server]:*8080/lc/ws donde *[AEM_forms_Server]* representa la dirección IP o el nombre del servidor de formularios AEM.
+   1. En el cuadro Vínculo, escriba la dirección URL de AEM Forms Workspace, como https://*[AEM_forms_Server]:*8080/lc/ws, donde *[AEM_forms_Server]* representa la dirección IP o el nombre de AEM servidor de formularios.
    1. Haga clic en **Aspecto** y modifique la altura, la anchura y el título para que pueda ver toda la interfaz de usuario de Workspace. Por ejemplo, puede establecer la altura y la anchura en 6 pulgadas y 11 pulgadas, respectivamente.
    1. Haga clic en **Test Link**. Aparece una nueva ventana del navegador web con Workspace.
    1. (Opcional) Haga clic en **Diseño** y modifique el diseño de Espacio de trabajo en el elemento Web.
@@ -67,5 +70,5 @@ Después de completar los pasos anteriores, el sitio de SharePoint tiene un aspe
 
 ![AEM Forms Workspace integrado con Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
-**** Figura: Espacio de trabajo de *AEM Forms integrado con Microsoft Office SharePoint Server*
+**Figura:** *AEM Forms Workspace integrado con Microsoft Office SharePoint Server*
 

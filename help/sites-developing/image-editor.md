@@ -1,8 +1,8 @@
 ---
 title: Editor de imágenes
 seo-title: Editor de imágenes
-description: El Editor de imágenes es una parte central de AEM y puede ser utilizado por componentes para facilitar la manipulación de imágenes por los autores de contenido.
-seo-description: El Editor de imágenes es una parte central de AEM y puede ser utilizado por componentes para facilitar la manipulación de imágenes por los autores de contenido.
+description: El Editor de imágenes es un elemento central de la AEM y se puede aprovechar mediante componentes para facilitar la manipulación de imágenes por parte de los autores de contenido.
+seo-description: El Editor de imágenes es un elemento central de la AEM y se puede aprovechar mediante componentes para facilitar la manipulación de imágenes por parte de los autores de contenido.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 6%
 
 ---
 
 
 # Editor de imágenes{#image-editor}
 
-El Editor de imágenes es una parte central de AEM y puede ser utilizado por componentes para facilitar la manipulación de imágenes por los autores de contenido.
+El Editor de imágenes es un elemento central de la AEM y se puede aprovechar mediante componentes para facilitar la manipulación de imágenes por parte de los autores de contenido.
 
 >[!CAUTION]
 >

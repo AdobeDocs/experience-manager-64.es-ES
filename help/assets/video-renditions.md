@@ -4,27 +4,30 @@ description: Representaciones de vídeo
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
 
 # Video renditions {#video-renditions}
 
-Recursos Adobe Experience Manager (AEM) genera representaciones de vídeo para recursos de vídeo de varios formatos, incluidos OGG, FLV, etc.
+Adobe Experience Manager (AEM) Assets genera representaciones de vídeo para recursos de vídeo de varios formatos, incluidos OGG, FLV, etc.
 
-Recursos AEM admite representaciones estáticas y dinámicas (representaciones con codificación DM) para recursos multimedia.
+AEM Assets admite representaciones estáticas y dinámicas (representaciones con codificación DM) para recursos multimedia.
 
 Las representaciones estáticas se generan de forma nativa utilizando FFMPEG (instalado y disponible en la ruta del sistema) y se almacenan en el repositorio de contenido.
 
 Las representaciones con codificación DM se almacenan en el servidor proxy y se sirven en tiempo de ejecución.
 
-Los recursos de AEM admiten la reproducción de estas representaciones en el lado del cliente.
+Los recursos de AEM permiten reproducir estas representaciones en el lado del cliente.
 
-Para ver las representaciones de un recurso de vídeo concreto, abra su página de recursos y toque el icono de navegación global. A continuación, seleccione **[!UICONTROL Representaciones]** en la lista.
+Para vista de las representaciones de un recurso de vídeo concreto, abra su página de recursos y toque el icono Navegación global. A continuación, elija **[!UICONTROL Representaciones]** en la lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La lista de representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]** .
+La lista de las representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]** .
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 

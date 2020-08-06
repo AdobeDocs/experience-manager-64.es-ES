@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
 source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 1%
 
 ---
 
 
 # Esenciales de puntuación y distintivos {#scoring-and-badges-essentials}
 
-La función de puntuación y distintivos de comunidades de AEM permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos de AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los detalles de la configuración de la función se describen en
 
@@ -31,7 +34,7 @@ Esta página contiene detalles técnicos adicionales:
 
 >[!CAUTION]
 >
->La estructura de implementación visible en CRXDE Lite está sujeta a cambios.
+>La estructura de implementación visible en el CRXDE Lite está sujeta a cambios.
 
 ## Visualización de distintivos {#displaying-badges}
 
@@ -79,14 +82,14 @@ Para obtener instrucciones detalladas, visite [Crear un archivo](../../help/site
 
 Para configurar rápidamente un archivo de registro de inclinación:
 
-1. Acceda, por ejemplo, a la compatibilidad **[!UICONTROL del registro de la consola web de]** Adobe Experience Manager
+1. Acceda, por ejemplo, a la compatibilidad con **[!UICONTROL el registro de la consola web de]** Adobe Experience Manager
 
    * http://localhost:4502/system/console/slinglog
 
 1. Seleccione **[!UICONTROL Añadir nuevo registrador]**
 
    1. Seleccionar `DEBUG` para nivel **[!UICONTROL de registro]**
-   1. Escriba un nombre para el archivo **[!UICONTROL de registro]**, por ejemplo
+   1. Escriba un nombre para el archivo **** de registro, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **[!UICONTROL Logger]** (clase) (mediante `+` icono)
@@ -118,11 +121,11 @@ Para ver las entradas de registro:
 
 Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el Almacenamiento [de contenido](working-with-srp.md) de la comunidad y el proveedor de recursos de [Almacenamiento](srp.md)).
 
-Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+Las descripciones para acceder a los datos de puntuación y de identificación utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP del autor**: experimentar en el entorno del autor resulta en UGC que solo es visible desde el entorno del autor.
 
-**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](../../help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [activar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](../../help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [habilitar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -139,9 +142,9 @@ Los últimos Javadocs para las [versiones](deploy-communities.md#LatestReleases)
 
 ### Ejemplo de configuración {#example-setup}
 
-Las capturas de pantalla de los datos del repositorio provienen de la configuración de la puntuación y el distintivo para un foro en dos sitios de AEM diferentes:
+Las capturas de pantalla de los datos del repositorio provienen de la configuración de la puntuación y la identificación para un foro en dos sitios de AEM diferentes:
 
-1. Un sitio de AEM con un identificador único (sitio de comunidad creado con el asistente):
+1. Un sitio AEM con un identificador único (sitio de comunidad creado mediante un asistente):
 
    * Uso del sitio Tutorial de introducción (participación) creado durante el tutorial de [introducción](getting-started.md)
    * Localizar el nodo de la página del foro
@@ -167,7 +170,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
 
 
-1. Un sitio de AEM *sin* una identificación única:
+1. Un sitio AEM *sin* una identificación única:
 
    * Uso de la guía Componentes [de comunidad](components-guide.md)
    * Localizar el nodo de la página del foro
@@ -176,12 +179,14 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
    * Añadir las propiedades de puntuación y marca
 
       * 
+
          ```
          scoringRules = [/etc/community/scoring/rules/comments-scoring,
          /etc/community/scoring/rules/forums-scoring]
          ```
 
       * 
+
          ```
          badgingRules =[/etc/community/badging/rules/comments-scoring,
          /etc/community/badging/rules/forums-scoring]
@@ -221,6 +226,7 @@ Como un usuario ha obtenido dos insignias de bronce y ha recibido una insignia d
    >
    >
 * creación de imágenes de distintivo únicas para distintos sitios de AEM
+
 >
 
 
@@ -235,7 +241,7 @@ Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene
 
 El nodo secundario de `scoring`es el nombre de la regla de puntuación. Por lo tanto, una práctica recomendada es que los nombres de las reglas de puntuación en un servidor sean globalmente únicos.
 
-Para el sitio de participación de Geometrixx, el usuario y su puntuación se encuentran en una ruta con el nombre de la regla de puntuación, la identificación del sitio de la comunidad ( `engage-ba81p`), una identificación única y la identificación del usuario:
+Para el sitio de participación en la Geometrixx, el usuario y su puntuación se encuentran en una ruta con el nombre de la regla de puntuación, la identificación del sitio de la comunidad ( `engage-ba81p`), una identificación única y la identificación del usuario:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 

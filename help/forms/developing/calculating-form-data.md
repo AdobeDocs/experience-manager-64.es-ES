@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
 source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ El usuario introduce valores en el formulario y hace clic en el botón Calcular 
 * El usuario accede a una página HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java llamado `GetLoanForm`.
 * El `GetLoanForm` servlet procesa un formulario de préstamo. Este formulario contiene una secuencia de comandos, campos interactivos, un botón de cálculo y un botón de envío.
 * El usuario introduce valores en los campos del formulario y hace clic en el botón Calcular. El formulario se envía al servlet de Java `CalculateData` donde se ejecuta la secuencia de comandos. El formulario se devuelve al usuario con los resultados de cálculo mostrados en el formulario.
-* El usuario continúa introduciendo y calculando valores hasta que se muestra un resultado satisfactorio. Cuando esté satisfecho, el usuario hace clic en el botón Enviar para procesar el formulario. El formulario se envía a otro servlet Java denominado `ProcessForm` que es responsable de recuperar los datos enviados. (Consulte [Gestión de formularios](/help/forms/developing/rendering-forms.md#handling-submitted-forms)enviados).
+* El usuario continúa introduciendo y calculando valores hasta que se muestra un resultado satisfactorio. Cuando esté satisfecho, el usuario hace clic en el botón Enviar para procesar el formulario. El formulario se envía a otro servlet Java denominado `ProcessForm` que es responsable de recuperar los datos enviados. (Consulte [Administración de Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)enviado).
 
 El diagrama siguiente muestra el flujo lógico de la aplicación.
 
@@ -49,7 +52,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
   </tr> 
   <tr> 
    <td><p>2</p></td> 
-   <td><p>El servlet <code>GetLoanForm</code> Java utiliza la API del cliente de servicios de Forms para procesar el formulario de préstamo en el navegador web del cliente. La diferencia entre procesar un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor y procesar un formulario que no contiene una secuencia de comandos es que debe especificar la ubicación de destinatario utilizada para ejecutar la secuencia de comandos. Si no se especifica una ubicación de destinatario, no se ejecuta una secuencia de comandos configurada para ejecutarse en el servidor. Por ejemplo, considere la aplicación introducida en esta sección. El Servlet <code>CalculateData</code> Java es la ubicación de destinatario donde se ejecuta la secuencia de comandos.</p></td> 
+   <td><p>El servlet <code>GetLoanForm</code> Java utiliza la API de cliente de servicio de Forms para procesar el formulario de préstamo en el navegador web del cliente. La diferencia entre procesar un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor y procesar un formulario que no contiene una secuencia de comandos es que debe especificar la ubicación de destinatario utilizada para ejecutar la secuencia de comandos. Si no se especifica una ubicación de destinatario, no se ejecuta una secuencia de comandos configurada para ejecutarse en el servidor. Por ejemplo, considere la aplicación introducida en esta sección. El Servlet <code>CalculateData</code> Java es la ubicación de destinatario donde se ejecuta la secuencia de comandos.</p></td> 
   </tr> 
   <tr> 
    <td><p>3</p></td> 
@@ -66,7 +69,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
  </tbody> 
 </table>
 
-Normalmente, un formulario que se envía como contenido PDF contiene secuencias de comandos que se ejecutan en el cliente. Sin embargo, también se pueden ejecutar cálculos del lado del servidor. No se puede utilizar un botón Enviar para calcular secuencias de comandos. En este caso, los cálculos no se ejecutan porque el servicio Forms considera que la interacción está completa.
+Normalmente, un formulario que se envía como contenido PDF contiene secuencias de comandos que se ejecutan en el cliente. Sin embargo, también se pueden ejecutar cálculos del lado del servidor. No se puede utilizar un botón Enviar para calcular secuencias de comandos. En este caso, los cálculos no se ejecutan porque el servicio de Forms considera que la interacción está completa.
 
 Para ilustrar el uso de una secuencia de comandos de diseño de formulario, en esta sección se examina un formulario interactivo sencillo que contiene una secuencia de comandos configurada para ejecutarse en el servidor. El diagrama siguiente muestra un diseño de formulario que contiene una secuencia de comandos que agrega valores que un usuario introduce en los dos primeros campos y muestra el resultado en el tercer campo.
 
@@ -80,7 +83,7 @@ La sintaxis de la secuencia de comandos ubicada en este diseño de formulario es
      NumericField3 = NumericField2 + NumericField1
 ```
 
-En este diseño de formulario, el botón Calcular es un botón de comando y la secuencia de comandos se encuentra en el `Click` evento de este botón. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio Forms, donde se ejecuta la secuencia de comandos. El servicio Forms devuelve el formulario al dispositivo cliente con los resultados del cálculo que se muestran en el campo NumericField3.
+En este diseño de formulario, el botón Calcular es un botón de comando y la secuencia de comandos se encuentra en el `Click` evento de este botón. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio Forms, donde se ejecuta la secuencia de comandos. El servicio Forms vuelve a procesar el formulario en el dispositivo cliente con los resultados del cálculo que se muestran en el campo NumericField3.
 
 >[!NOTE]
 >
@@ -88,14 +91,14 @@ En este diseño de formulario, el botón Calcular es un botón de comando y la s
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
 Para calcular los datos del formulario, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un objeto de API de Forms Client.
+1. Cree un objeto de API de cliente de Forms.
 1. Recupere un formulario que contenga una secuencia de comandos de cálculo.
 1. Volver a escribir el flujo de datos del formulario en el navegador web del cliente
 
@@ -109,9 +112,9 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Recuperar un formulario que contenga una secuencia de comandos de cálculo**
 
-La API de cliente de servicios de Forms se utiliza para crear una lógica de aplicación que gestiona un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor. El proceso es similar al de administrar un formulario enviado. (Consulte [Gestión de formularios](/help/forms/developing/handling-submitted-forms.md)enviados).
+La API de cliente de servicio de Forms se utiliza para crear una lógica de aplicación que gestiona un formulario que contiene una secuencia de comandos configurada para ejecutarse en el servidor. El proceso es similar al de administrar un formulario enviado. (Consulte [Administración de Forms](/help/forms/developing/handling-submitted-forms.md)enviado).
 
-Compruebe que el estado de procesamiento asociado con el formulario enviado es `1``(Calculate)`, lo que significa que el servicio Forms está realizando una operación de cálculo en los datos del formulario y que los resultados se deben devolver al usuario. En este caso, se ejecuta automáticamente una secuencia de comandos configurada para ejecutarse en el servidor.
+Compruebe que el estado de procesamiento asociado con el formulario enviado es `1``(Calculate)`, lo que significa que el servicio de Forms está realizando una operación de cálculo en los datos del formulario y que los resultados se deben devolver al usuario. En este caso, se ejecuta automáticamente una secuencia de comandos configurada para ejecutarse en el servidor.
 
 **Volver a escribir el flujo de datos del formulario en el navegador web del cliente**
 
@@ -123,11 +126,11 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicios rápidos de la API de Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Representación de formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Creación de Aplicaciones web que procesan formularios](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Creación de Aplicaciones web que procesan Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular datos de formulario mediante la API de Java {#calculate-form-data-using-the-java-api}
 
@@ -151,6 +154,7 @@ Calcular los datos del formulario mediante la API de Forms (Java):
       * Un valor de cadena que especifica variables de entorno, incluyendo todos los encabezados HTTP relevantes. Debe especificar el tipo de contenido que se va a gestionar especificando uno o varios valores para la variable de `CONTENT_TYPE` entorno. Por ejemplo, para gestionar datos XML y PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un `RenderOptionsSpec` objeto que almacena opciones de tiempo de ejecución.
+
       El `processFormSubmission` método devuelve un `FormsResult` objeto que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado `1` invoca el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden volver a escribir en el explorador web del cliente.
@@ -176,7 +180,7 @@ Calcular los datos del formulario mediante la API de Forms (servicio web):
 
 1. Incluir archivos de proyecto
 
-   * Cree clases proxy de Java que consuman el WSDL del servicio Forms.
+   * Cree clases proxy de Java que consuman el WSDL del servicio de Forms.
    * Incluya las clases proxy de Java en la ruta de clases.
 
 1. Creación de un objeto de API de Forms Client
@@ -205,6 +209,7 @@ Calcular los datos del formulario mediante la API de Forms (servicio web):
       * Objeto vacío `javax.xml.rpc.holders.ShortHolder` que se rellena con el método .
       * Objeto vacío `MyArrayOf_xsd_anyTypeHolder` que se rellena con el método . Este parámetro se utiliza para almacenar archivos adjuntos enviados junto con el formulario.
       * Objeto vacío `FormsResultHolder` que se rellena con el método con el formulario que se envía.
+
       El `processFormSubmission` método rellena el `FormsResultHolder` parámetro con los resultados del envío del formulario. El `processFormSubmission` método devuelve un `FormsResult` objeto que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado `1` invoca el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden volver a escribir en el explorador web del cliente.
@@ -219,4 +224,4 @@ Calcular los datos del formulario mediante la API de Forms (servicio web):
 
 **Consulte también**
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

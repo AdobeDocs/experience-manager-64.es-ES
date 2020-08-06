@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de proxy de recursos
-description: 'Un proxy es una instancia de AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones admitidas, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
+description: 'Un proxy es una instancia AEM que utiliza los trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones admitidas, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Desarrollo de proxy de recursos {#assets-proxy-development}
 
-Recursos Adobe Experience Manager (AEM) utiliza un proxy para distribuir el procesamiento para determinadas tareas.
+Adobe Experience Manager (AEM) Assets utiliza un proxy para distribuir el procesamiento de determinadas tareas.
 
-Un proxy es una instancia específica (y a veces independiente) de AEM que utiliza los trabajadores proxy como procesadores responsables de gestionar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un proxy de Recursos AEM, esto se puede utilizar para cargar recursos para procesarlos en Recursos AEM. Por ejemplo, el trabajador [proxy](indesign.md) IDS utiliza un servidor de InDesign para procesar archivos que se utilizarán en Recursos AEM.
+Un proxy es una instancia AEM específica (y a veces independiente) que utiliza los trabajadores proxy como procesadores responsables de la gestión de un trabajo y la creación de un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un proxy de AEM Assets, se puede utilizar para cargar recursos para procesarlos en AEM Assets. Por ejemplo, el trabajador [proxy](indesign.md) IDS utiliza un InDesign Server para procesar archivos para utilizarlos en AEM Assets.
 
 Cuando el proxy es una instancia de AEM independiente, esto ayuda a reducir la carga en las instancias de creación de AEM. De forma predeterminada, AEM Assets ejecuta las tareas de procesamiento de recursos en el mismo JVM (externalizado mediante proxy) para reducir la carga en la instancia de creación de AEM.
 
@@ -40,7 +40,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
    **Requisitos**: se `jobid` debe establecer el parámetro.
 
-   **Resultado**: Devuelve una representación JSON del nodo de resultado tal como la creó el procesador de trabajos.
+   **Resultado**: Devuelve una representación JSON del nodo resultante tal como la creó el procesador de trabajos.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -109,11 +109,11 @@ A continuación se muestra un ejemplo del uso de API:
 >
 >La documentación de referencia para la API de proxy está disponible en [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Tanto las configuraciones de trabajo proxy como las de proxy están disponibles mediante configuraciones de servicios en la nube, ya que se puede acceder a ellas desde la consola de **herramientas** de AEM Assets o desde `/etc/cloudservices/proxy`. Se espera que cada trabajador proxy agregue un nodo debajo `/etc/cloudservices/proxy` para los detalles de configuración específicos del trabajador (por ejemplo, `/etc/cloudservices/proxy/workername`).
+Tanto las configuraciones de trabajo proxy como las de proxy están disponibles mediante configuraciones de servicios en la nube, ya que se puede acceder a ellas desde la consola **Herramientas** de AEM Assets o desde `/etc/cloudservices/proxy`. Se espera que cada trabajador proxy agregue un nodo debajo `/etc/cloudservices/proxy` para los detalles de configuración específicos del trabajador (por ejemplo, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Consulte Configuración [del trabajo proxy de](indesign.md#configuring-the-proxy-worker-for-indesign-server) Indesign Server y configuración [de](../sites-developing/extending-cloud-config.md) Cloud Services para obtener más información.
+>Consulte Configuración [y configuración](indesign.md#configuring-the-proxy-worker-for-indesign-server) del trabajo proxy de [Indesign Server para](../sites-developing/extending-cloud-config.md) obtener más información.
 
 A continuación se muestra un ejemplo del uso de API:
 
@@ -132,9 +132,9 @@ A continuación se muestra un ejemplo del uso de API:
 
 ### Desarrollo de un trabajador proxy personalizado {#developing-a-customized-proxy-worker}
 
-El trabajador [proxy](indesign.md) IDS es un ejemplo de un trabajador proxy de Recursos AEM que ya se ha incorporado para externalizar el procesamiento de recursos de Indesign.
+El trabajador [proxy](indesign.md) IDS es un ejemplo de un trabajador proxy de AEM Assets que ya se ha proporcionado de forma predeterminada para externalizar el procesamiento de recursos de Indesign.
 
-También puede desarrollar y configurar su propio trabajador proxy de Recursos AEM para crear un trabajador especializado que distribuya y externalice sus tareas de procesamiento de Recursos AEM.
+También puede desarrollar y configurar su propio trabajador proxy de AEM Assets para crear un trabajador especializado que distribuya y externalice sus tareas de procesamiento de AEM Assets.
 
 La configuración de su propio trabajador proxy personalizado requiere que:
 
@@ -176,9 +176,9 @@ El diagrama y los pasos siguientes detallan cómo proceder:
 
 >[!NOTE]
 >
->Lo que el marco proxy de Recursos AEM no proporciona de forma predeterminada es el mecanismo de agrupación.
+>Lo que la estructura proxy de AEM Assets no proporciona de forma predeterminada es el mecanismo de agrupación.
 >
->La integración de InDesign permite el acceso a un grupo de servidores de indesign (IDSPool). Este agrupamiento es específico de la integración de Indesign y no forma parte del marco proxy de AEM Assets.
+>La integración de InDesign permite el acceso a un grupo de servidores de indesign (IDSPool). Este agrupamiento es específico de la integración de Indesign y no de la estructura proxy de AEM Assets.
 
 >[!NOTE]
 >

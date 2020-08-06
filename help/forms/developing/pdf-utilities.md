@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 1%
 
 ---
 
@@ -19,22 +22,22 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 **Acerca del servicio de utilidades de PDF**
 
-El servicio Utilidades de PDF puede convertir entre formatos de archivo PDF y XDP, establecer y recuperar propiedades de documento PDF y manipular metadatos XMP. Por ejemplo, antes de convertir un documento PDF a otro formato, resulta útil inspeccionar sus propiedades para determinar qué operación de servicio se va a invocar para la conversión.
+El servicio Utilidades de PDF puede convertir entre formatos de archivo PDF y XDP, establecer y recuperar propiedades de documento PDF y manipular metadatos de XMP. Por ejemplo, antes de convertir un documento PDF a otro formato, resulta útil inspeccionar sus propiedades para determinar qué operación de servicio se va a invocar para la conversión.
 
 Puede realizar estas tareas mediante el servicio Utilidades de PDF:
 
 * Convertir documentos PDF en documentos XDP.
-* Convertir documentos XDP en documentos PDF. (Consulte [Conversión de documentos XDP en documentos](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)PDF).
-* Recupere las propiedades del documento PDF. (Consulte [Recuperación de propiedades](pdf-utilities.md#retrieving-pdf-document-properties)del documento PDF).
-* Guarde un documento PDF y optimícelo para una visualización rápida en la Web. (Consulte [Configuración de los modos](pdf-utilities.md#setting-pdf-document-save-modes)de guardado de documentos PDF).
+* Convertir documentos XDP en documentos PDF. (Consulte [Conversión de Documentos XDP en Documentos](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)PDF).
+* Recupere las propiedades del documento PDF. (Consulte [Recuperación de propiedades](pdf-utilities.md#retrieving-pdf-document-properties)de Documento PDF).
+* Guarde un documento PDF y optimícelo para una visualización rápida de la Web. (Consulte [Configuración de los modos](pdf-utilities.md#setting-pdf-document-save-modes)de guardado de Documento PDF).
 
 >[!NOTE]
 >
 >Para obtener más información sobre el servicio de utilidades de PDF, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Conversión de documentos PDF en documentos XDP {#converting-pdf-documents-into-xdp-documents}
+## Conversión de Documentos PDF en Documentos XDP {#converting-pdf-documents-into-xdp-documents}
 
-Puede utilizar las API de servicio Web y Java de Utilidades de PDF para convertir documentos PDF en documentos XDP mediante programación.
+Puede utilizar las API de servicio web y Java de Utilidades de PDF para convertir documentos PDF en documentos XDP mediante programación.
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ Después de crear el cliente de servicio, puede invocar la operación de convers
 
 **Consulte también**
 
-[Conversión de documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
+[Convertir documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
 [Convertir documentos PDF en documentos XDP mediante la API de servicio web](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
@@ -70,7 +73,7 @@ Después de crear el cliente de servicio, puede invocar la operación de convers
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Conversión de documentos PDF en documentos XDP mediante la API de Java {#convert-pdf-documents-into-xdp-documents-using-the-java-api}
+### Convertir documentos PDF en documentos XDP mediante la API de Java {#convert-pdf-documents-into-xdp-documents-using-the-java-api}
 
 Convertir documentos PDF en documentos XDP mediante la API de utilidades de PDF (Java):
 
@@ -88,7 +91,7 @@ Convertir documentos PDF en documentos XDP mediante la API de utilidades de PDF 
 
 **Consulte también**
 
-[Conversión de documentos PDF en documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
+[Conversión de Documentos PDF en Documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -113,15 +116,15 @@ Convertir documentos PDF en documentos XDP mediante la API de utilidades de PDF 
 
 **Consulte también**
 
-[Conversión de documentos PDF en documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
+[Conversión de Documentos PDF en Documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Conversión de documentos XDP en documentos PDF {#converting-xdp-documents-into-pdf-documents}
+## Conversión de Documentos XDP en Documentos PDF {#converting-xdp-documents-into-pdf-documents}
 
-Puede utilizar las API de servicio Web y Java de Utilidades de PDF para convertir documentos XDP en documentos PDF mediante programación.
+Puede utilizar las API de servicio Web y Java de Utilidades PDF para convertir documentos XDP en documentos PDF mediante programación.
 
 >[!NOTE]
 >
@@ -149,7 +152,7 @@ Después de crear el cliente de servicio, puede invocar la operación de convers
 
 **Consulte también**
 
-[Conversión de documentos XDP en documentos PDF mediante la API de Java](pdf-utilities.md#convert-xdp-documents-into-pdf-documents-using-the-java-api)
+[Convertir documentos XDP en documentos PDF mediante la API de Java](pdf-utilities.md#convert-xdp-documents-into-pdf-documents-using-the-java-api)
 
 [Conversión de documentos XDP en documentos PDF mediante la API de servicio web](pdf-utilities.md#converting-xdp-documents-into-pdf-documents-using-the-web-service-api)
 
@@ -157,7 +160,7 @@ Después de crear el cliente de servicio, puede invocar la operación de convers
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Conversión de documentos XDP en documentos PDF mediante la API de Java {#convert-xdp-documents-into-pdf-documents-using-the-java-api}
+### Convertir documentos XDP en documentos PDF mediante la API de Java {#convert-xdp-documents-into-pdf-documents-using-the-java-api}
 
 Convertir documentos XDP en documentos PDF mediante la API de utilidades de PDF (Java):
 
@@ -175,7 +178,7 @@ Convertir documentos XDP en documentos PDF mediante la API de utilidades de PDF 
 
 **Consulte también**
 
-[Conversión de documentos XDP en documentos PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
+[Conversión de Documentos XDP en Documentos PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -200,19 +203,19 @@ Convertir documentos XDP en documentos PDF mediante la API de utilidades de PDF 
 
 **Consulte también**
 
-[Conversión de documentos XDP en documentos PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
+[Conversión de Documentos XDP en Documentos PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Recuperación de propiedades del documento PDF {#retrieving-pdf-document-properties}
+## Recuperación de propiedades de Documento PDF {#retrieving-pdf-document-properties}
 
-Puede utilizar las API de servicio Web y Java de Utilidades de PDF para recuperar mediante programación las propiedades del documento PDF, como si el documento es un formulario rellenable o la versión mínima de Acrobat necesaria para leer el documento.
+Puede utilizar las API de servicio Web y Java de Utilidades PDF para recuperar mediante programación las propiedades de documento PDF, como si el documento es un formulario rellenable o la versión mínima de Acrobat necesaria para leer el documento.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de utilidades de PDF, consulte Referencia de [servicios para formularios AEM](https://www.adobe.com/go/learn_aemforms_services_63)
+>Para obtener más información sobre el servicio de utilidades de PDF, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -236,7 +239,7 @@ Después de crear el cliente de servicio, puede invocar la operación de recuper
 
 **Consulte también**
 
-[Recuperar propiedades del documento PDF mediante la API de Java](pdf-utilities.md#retrieve-pdf-document-properties-using-the-java-api)
+[Recuperar propiedades de documento PDF mediante la API de Java](pdf-utilities.md#retrieve-pdf-document-properties-using-the-java-api)
 
 [Recuperar propiedades de documento PDF mediante la API de servicio Web](pdf-utilities.md#retrieve-pdf-document-properties-using-the-web-service-api)
 
@@ -244,7 +247,7 @@ Después de crear el cliente de servicio, puede invocar la operación de recuper
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Recuperar propiedades del documento PDF mediante la API de Java {#retrieve-pdf-document-properties-using-the-java-api}
+### Recuperar propiedades de documento PDF mediante la API de Java {#retrieve-pdf-document-properties-using-the-java-api}
 
 Recupere las propiedades del documento PDF mediante la API de utilidades de PDF (Java):
 
@@ -262,11 +265,12 @@ Recupere las propiedades del documento PDF mediante la API de utilidades de PDF 
 
    * Un `com.adobe.idp.Document` objeto que representa el documento PDF.
    * Un `PDFPropertiesOptionSpec` objeto que contiene las propiedades que se van a evaluar.
+
    El método devuelve un `PDFPropertiesResult` objeto que contiene los resultados de la consulta.
 
 **Consulte también**
 
-[Recuperación de propiedades del documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
+[Recuperación de propiedades de Documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -274,7 +278,7 @@ Recupere las propiedades del documento PDF mediante la API de utilidades de PDF 
 
 ### Recuperar propiedades de documento PDF mediante la API de servicio Web {#retrieve-pdf-document-properties-using-the-web-service-api}
 
-Recupere las propiedades del documento PDF mediante la API del servicio Web de Utilidades PDF:
+Recupere las propiedades del documento PDF mediante la API del servicio web de Utilidades PDF:
 
 1. Incluir archivos de proyecto
 
@@ -291,19 +295,20 @@ Recupere las propiedades del documento PDF mediante la API del servicio Web de U
 
    * Un `BLOB` objeto que representa el documento PDF.
    * Un `PDFPropertiesOptionSpec` objeto que contiene las propiedades que se van a evaluar.
+
    El método devuelve un `PDFPropertiesResult` objeto que contiene los resultados de la consulta.
 
 **Consulte también**
 
-[Recuperación de propiedades del documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
+[Recuperación de propiedades de Documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Configuración de los modos de guardado de documentos PDF {#setting-pdf-document-save-modes}
+## Configuración de los modos de guardado de Documento PDF {#setting-pdf-document-save-modes}
 
-Puede utilizar las API de servicio Web y Java del servicio Utilidades de PDF para establecer mediante programación un modo de guardado para un documento PDF. Al utilizar el servicio Utilidades PDF para establecer un modo de guardado, el servicio Utilidades PDF solo establece el modo de guardado y no guarda el documento PDF. El documento PDF se guarda cuando se pasa a otra operación de servicio. Por ejemplo, puede utilizar el servicio Utilidades de PDF para establecer un modo de guardado específico y pasarlo al servicio Cifrado, donde el documento PDF se guarda y se cifra.
+Puede utilizar el servicio de utilidades de PDF Java y las API de servicio Web para establecer mediante programación un modo de guardado para un documento PDF. Al utilizar el servicio Utilidades PDF para establecer un modo de guardado, el servicio Utilidades PDF solo establece el modo de guardado y no guarda el documento PDF. El documento PDF se guarda cuando se pasa a otra operación de servicio. Por ejemplo, puede utilizar el servicio Utilidades PDF para establecer un modo de guardado específico y pasarlo al servicio Cifrado, donde el documento PDF se guarda y se cifra.
 
 >[!NOTE]
 >
@@ -311,7 +316,7 @@ Puede utilizar las API de servicio Web y Java del servicio Utilidades de PDF par
 
 ### Resumen de los pasos {#summary_of_steps-3}
 
-Para definir la opción de guardado de documentos PDF, realice los siguientes pasos:
+Para definir la opción de guardar para documentos PDF, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un cliente PDFUtilityService.
@@ -341,25 +346,25 @@ Después de crear el cliente de servicio, puede invocar la operación de recuper
 
 **Pasar el documento PDF a otra operación de AEM Forms**
 
-Una vez que el servicio Utilidades PDF establece el modo Guardar especificado, pase el documento PDF a otra operación de AEM Forms. Una vez devuelto desde esa operación, el documento PDF se guarda en el modo especificado. Por ejemplo, si utiliza el servicio Utilidades de PDF para establecer el `FAST_WEB_VIEW` modo y, a continuación, pasar el documento PDF a la `encryptUsingPassword` operación del servicio de cifrado, el documento PDF devuelto se codifica con una contraseña y se guarda en el `FAST_WEB_VIEW` modo.
+Una vez que el servicio Utilidades PDF establece el modo Guardar especificado, pase el documento PDF a otra operación de AEM Forms. Una vez devuelta la operación, el documento PDF se guarda en el modo especificado. Por ejemplo, si utiliza el servicio Utilidades PDF para establecer el `FAST_WEB_VIEW` modo y, a continuación, pasar el documento PDF a la operación del servicio de cifrado, el documento PDF devuelto se cifrará con una contraseña y se guardará en el `encryptUsingPassword` modo `FAST_WEB_VIEW` .
 
 >[!NOTE]
 >
->El inicio rápido asociado a esta sección establece el `FAST_WEB_VIEW` modo y, a continuación, pasa el documento PDF a la operación del servicio de cifrado `encryptUsingPassword` .
+>El Inicio rápido asociado con esta sección establece el `FAST_WEB_VIEW` modo y, a continuación, pasa el documento PDF a la operación del servicio de cifrado `encryptUsingPassword` .
 
 **Consulte también**
 
-[Definir las opciones de guardado de documentos PDF mediante la API de Java](pdf-utilities.md#set-pdf-document-save-options-using-the-java-api)
+[Definir las opciones de guardado del documento PDF mediante la API de Java](pdf-utilities.md#set-pdf-document-save-options-using-the-java-api)
 
-[Definición de las opciones de guardado de documentos PDF mediante la API de servicio Web](pdf-utilities.md#set-pdf-document-save-options-using-the-web-service-api)
+[Establecer las opciones de guardado de documento PDF mediante la API de servicio Web](pdf-utilities.md#set-pdf-document-save-options-using-the-web-service-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Cifrado de documentos PDF con contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Cifrado de Documentos PDF con contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
-### Definir las opciones de guardado de documentos PDF mediante la API de Java {#set-pdf-document-save-options-using-the-java-api}
+### Definir las opciones de guardado del documento PDF mediante la API de Java {#set-pdf-document-save-options-using-the-java-api}
 
 Configure las opciones de guardado del documento PDF mediante la API de utilidades de PDF (Java):
 
@@ -383,6 +388,7 @@ Configure las opciones de guardado del documento PDF mediante la API de utilidad
    * Un `com.adobe.idp.Document` objeto que representa el documento PDF.
    * Un `PDFUtilitySaveMode` objeto que contiene el estilo de guardado que se va a utilizar.
    * Un valor booleano que se utiliza para determinar si se debe anular cualquier configuración anterior.
+
    El método devuelve un `com.adobe.idp.Document` objeto formateado con el estilo de guardado especificado.
 
 1. Pasar el documento PDF a otra operación de AEM Forms
@@ -391,15 +397,15 @@ Configure las opciones de guardado del documento PDF mediante la API de utilidad
 
 **Consulte también**
 
-[Configuración de los modos de guardado de documentos PDF](pdf-utilities.md#setting-pdf-document-save-modes)
+[Configuración de los modos de guardado de Documento PDF](pdf-utilities.md#setting-pdf-document-save-modes)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Definición de las opciones de guardado de documentos PDF mediante la API de servicio Web {#set-pdf-document-save-options-using-the-web-service-api}
+### Establecer las opciones de guardado de documento PDF mediante la API de servicio Web {#set-pdf-document-save-options-using-the-web-service-api}
 
-Configure las opciones de guardado del documento PDF mediante el AP de Utilidades PDF (servicio Web):
+Defina las opciones de guardado del documento PDF mediante el AP de Utilidades PDF (servicio Web):
 
 1. Incluir archivos de proyecto
 
@@ -422,7 +428,8 @@ Configure las opciones de guardado del documento PDF mediante el AP de Utilidade
    * Un `BLOB` objeto que representa el documento PDF.
    * Un `PDFUtilitySaveMode` objeto que contiene el estilo de guardado que se va a utilizar.
    * Un valor booleano que se utiliza para determinar si se debe anular cualquier configuración anterior.
-   El método devuelve un `BLOB` objeto formateado con el estilo de guardado especificado. A continuación, puede guardar ese objeto como documento PDF.
+
+   El método devuelve un `BLOB` objeto formateado con el estilo de guardado especificado. A continuación, puede guardar ese objeto como un documento PDF.
 
 1. Pasar el documento PDF a otra operación de Forms
 
@@ -430,13 +437,13 @@ Configure las opciones de guardado del documento PDF mediante el AP de Utilidade
 
 **Consulte también**
 
-[Configuración de los modos de guardado de documentos PDF](pdf-utilities.md#setting-pdf-document-save-modes)
+[Configuración de los modos de guardado de Documento PDF](pdf-utilities.md#setting-pdf-document-save-modes)
 
-[Invocación de formularios AEM con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creación de un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Anidación de documentos PDF {#sanitizing-pdf-documents}
+## Anidación de Documentos PDF {#sanitizing-pdf-documents}
 
 Puede utilizar las API de Java de Utilidades de PDF para convertir documentos PDF en documentos XDP mediante programación.
 
@@ -446,7 +453,7 @@ Puede utilizar las API de Java de Utilidades de PDF para convertir documentos PD
 
 ### Resumen de los pasos {#summary_of_steps-4}
 
-Para sanear un documento PDF, realice los siguientes pasos:
+Para sanear el documento PDF, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un cliente PDFUtilityService.
@@ -466,7 +473,7 @@ Después de crear el cliente de servicio, puede invocar la operación de saneami
 
 **Consulte también**
 
-[Conversión de documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
+[Convertir documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
 [Convertir documentos PDF en documentos XDP mediante la API de servicio web](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
@@ -474,9 +481,9 @@ Después de crear el cliente de servicio, puede invocar la operación de saneami
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Optimización de documentos PDF mediante la API de Java {#sanitize-pdf-documents-using-the-java-api}
+### Optimizar documentos PDF mediante la API de Java {#sanitize-pdf-documents-using-the-java-api}
 
-Optimizar documentos mediante la API de utilidades de PDF (Java):
+Sanear documentos mediante la API de utilidades de PDF (Java):
 
 1. Incluir archivos de proyecto
 

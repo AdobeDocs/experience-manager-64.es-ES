@@ -6,45 +6,45 @@ translation-type: tm+mt
 source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 2%
+ht-degree: 22%
 
 ---
 
 
-# Operaciones asincrónicas {#asynchronous-operations}
+# Asynchronous operations {#asynchronous-operations}
 
 Para reducir el impacto negativo en el rendimiento, [!DNL Adobe Experience Manger Assets] procesa de forma asíncrona ciertas operaciones de activos de larga duración y con gran densidad de recursos. El procesamiento asincrónico implica poner en cola varias tareas y, finalmente, ejecutarlas en serie, según la disponibilidad de los recursos del sistema. Estas operaciones incluyen:
 
-* Eliminación de muchos recursos.
-* Mover muchos recursos o recursos con muchas referencias.
+* Eliminar muchos recursos.
+* Desplazar muchos recursos o recursos con muchas referencias.
 * Exportación e importación masiva de metadatos de recursos.
 
 Puede vista del estado de las tareas asincrónicas desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
 >[!NOTE]
 >
->De forma predeterminada, las [!DNL Assets] tareas se ejecutan en paralelo. Si `N` es el número de núcleos de CPU, `N/2` las tareas se pueden ejecutar en paralelo de forma predeterminada. Para utilizar la configuración personalizada de la cola de tareas, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte Configuraciones [de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>De forma predeterminada, las [!DNL Assets] tareas se ejecutan en paralelo. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. Para utilizar la configuración personalizada de la cola de tareas, modifique la configuración de la cola **[!UICONTROL predeterminada de operaciones]** asincrónicas desde la consola web. Para obtener más información, consulte [configuraciones de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitorear el estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
+## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que [!DNL Assets] procese una operación de forma asíncrona, recibirá una notificación en la [!DNL Experience Manager] Bandeja de entrada [](/help/sites-authoring/inbox.md) y por correo electrónico. Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. Para ver en detalle el estado de las operaciones asincrónicas, vaya a la página **[!UICONTROL Estado del trabajo asincrónico]**.
 
-1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Operaciones]** > **[!UICONTROL Trabajos]**.
+1. In the [!DNL Experience Manager] interface click **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
-1. En la página Estado **[!UICONTROL del trabajo]** asincrónico, revise los detalles de las operaciones.
+1. En la página **[!UICONTROL Estado del trabajo asincrónico]**, revise los detalles de las operaciones.
 
    ![Estado y detalles de las operaciones asincrónicas](assets/job_status.png)
 
    Para comprobar el progreso de una operación, consulte la columna **[!UICONTROL Estado]** . Según el progreso, se muestra uno de los siguientes estados:
 
-   * **[!UICONTROL Activo]**: La operación se está procesando.
+   * **[!UICONTROL Activo]**: Se está procesando la operación.
    * **[!UICONTROL Correcto]**: Se completó la operación.
    * **[!UICONTROL Fallo]** o **[!UICONTROL Error]**: No se pudo procesar la operación.
    * **[!UICONTROL Programado]**: La operación está programada para procesarse más tarde.
 
-1. Para detener una operación activa, selecciónela en la lista y haga clic en **[!UICONTROL Detener]** icono ![de](assets/do-not-localize/stop_icon.svg) detención en la barra de herramientas.
+1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** ![stop icon](assets/do-not-localize/stop_icon.svg) from the toolbar.
 
-1. Para vista de detalles adicionales, por ejemplo descripción y registros, seleccione la operación y haga clic en **[!UICONTROL Abrir]** ![open_icon](assets/do-not-localize/edit_icon.svg) en la barra de herramientas. Se muestra la página de detalles de la tarea.
+1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** ![open_icon](assets/do-not-localize/edit_icon.svg) from the toolbar. Se muestra la página de detalles de la tarea.
 
    ![Detalles de una tarea de importación de metadatos](assets/job_details.png)
 
@@ -64,7 +64,7 @@ Siempre que [!DNL Assets] procese una operación de forma asíncrona, recibirá 
 Puede modificar la programación de la tarea de depuración y la duración durante la cual se conservan los detalles de las tareas completadas antes de que se eliminen. También puede configurar el número máximo de tareas completadas para las que se conservan los detalles en cualquier momento.
 
 1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-1. Abra la tarea Depuración programada **[!UICONTROL de trabajos asincrónicos de]** Adobe CQ DAM.
+1. Abra la tarea Depuración programada **[!UICONTROL de trabajos asincrónicos DAM de]** Adobe CQ.
 1. Especifique el número de umbral de días después de los cuales se eliminan las tareas completadas y el número máximo de tareas para las que se conservan los detalles en el historial. Guarde los cambios.
 
    ![Configuración para programar la depuración de tareas asincrónicas](assets/purge_job.png)
@@ -74,7 +74,7 @@ Puede modificar la programación de la tarea de depuración y la duración duran
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral establecido, la operación de eliminación se realiza de forma asíncrona.
 
 1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-1. En la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de eliminación]** asincrónica.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]** , especifique los números de umbral para eliminar de forma asíncrona recursos, carpetas o referencias. Guarde los cambios.
 
    ![Establecer el límite de umbral para la tarea de eliminación de recursos](assets/delete_threshold.png)
@@ -84,7 +84,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral establecido, la operación de movimiento se realiza de forma asíncrona.
 
 1. En la [!DNL Experience Manager] interfaz, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
-1. En la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de movimiento]** asincrónico.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
 1. En el cuadro **[!UICONTROL Umbral número de recursos/referencias]** , especifique los números de umbral para mover recursos, carpetas o referencias de forma asíncrona. Guarde los cambios.
 
    ![Establecer el límite de umbral para que la tarea mueva recursos](assets/move_threshold.png)
@@ -92,5 +92,5 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 >[!MORELIKETHIS]
 >
 >* [Configure el correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
->* [Importe y exporte metadatos de recursos de forma masiva](/help/assets/metadata-import-export.md).
+>* [Importe y exporte metadatos de recursos de manera masiva](/help/assets/metadata-import-export.md).
 

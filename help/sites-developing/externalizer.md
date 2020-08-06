@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
@@ -42,26 +45,28 @@ Para definir una asignación de dominio para el servicio **Externalizer** :
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, donde:
 
-   * **el esquema** suele ser http o https, pero también puede ser ftp, etc.; utilice https para aplicar vínculos https si lo desea;se utilizará si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
+   * **el esquema** suele ser http o https, pero también puede ser ftp, etc.; utilice https para aplicar los vínculos https si lo desea; se utilizará si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
    * **server** es el nombre de host (puede ser un nombre de dominio o una dirección IP).
    * **puerto** (opcional) es el número de puerto.
    * **contextpath** (opcional) solo se establece si AEM está instalado como una aplicación web en una ruta de contexto diferente.
+
    Por ejemplo: `production https://my.production.instance`
 
-   Los siguientes nombres de asignación están predefinidos y siempre se deben configurar como AEM depende de ellos:
+   Los siguientes nombres de asignación están predefinidos y siempre deben configurarse como AEM dependen de ellos:
 
    * **local** : la instancia local
    * **autor** : DNS del sistema de creación
    * **publicar** : DNS del sitio web de cara pública
+
    >[!NOTE]
    >
-   >Una configuración personalizada le permite agregar una nueva categoría, como &quot;producción&quot;, &quot;ensayo&quot; o incluso sistemas externos que no sean de AEM, como &quot;my-internal-webservice&quot;, y resulta útil para evitar codificar dichas direcciones URL en diferentes lugares del código de un proyecto.
+   >Una configuración personalizada permite agregar una nueva categoría, como &quot;producción&quot;, &quot;ensayo&quot; o incluso sistemas externos no AEM como &quot;my-internal-webservice&quot;, y resulta útil para evitar codificar dichas direcciones URL en diferentes lugares del código de un proyecto.
 
 1. Click **Save** to save your changes.
 
 >[!NOTE]
 >
->Adobe recomienda [agregar la configuración al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>Adobe recomienda que [agregue la configuración al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Uso del servicio Externalizer {#using-the-externalizer-service}
 

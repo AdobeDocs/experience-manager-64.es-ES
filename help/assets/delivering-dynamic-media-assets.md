@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 23%
 
 ---
 
@@ -30,22 +33,22 @@ Con Dynamic Media dispone de varias opciones:
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de la publicación para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Adición de recursos de Dynamic Media a páginas web](adding-dynamic-media-assets-to-pages.md)
+* [Añadir recursos de Dynamic Media en páginas web](adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visor de imágenes o vídeos en una página web](embed-code.md)
-* [Activación de la protección de los enlaces interactivos en Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
+* [Activar la protección de los vínculos interactivos de Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
 * Integración de la marca de agua digital no visible (Digimarc) con Dynamic Media (próximamente)
-* [Vinculación de URL en la aplicación web](linking-urls-to-yourwebapplication.md)
-* [Distribución de imágenes optimizadas para un sitio interactivo](responsive-site.md)
+* [Vincular URL en la aplicación web](linking-urls-to-yourwebapplication.md)
+* [Distribución de imágenes adaptables para un sitio interactivo](responsive-site.md)
 * [Entrega HTTP2 de contenido](http2.md)
-* [Invalidación del contenido en caché de CDN](invalidate-cdn-cached-content.md)
-* [Uso de conjuntos de reglas para transformar direcciones URL](using-rulesets-to-transform-urls.md)
+* [Invalidar el contenido en caché de CDN](invalidate-cdn-cached-content.md)
+* [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
 
-## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## envío HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de entrega mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
+AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Consulte [HTTP/2 Entrega de contenido Preguntas](/help/sites-administering/scene7-http2faq.md) más frecuentes para obtener más información.
+Consulte Envío [HTTP/2 de las preguntas](/help/sites-administering/scene7-http2faq.md) más frecuentes sobre el contenido para obtener más información.

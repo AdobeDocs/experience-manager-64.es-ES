@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 6%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 ## Introducción {#introduction}
 
-La función de comentarios se utiliza para permitir que los visitantes (miembros) del sitio que inician sesión compartan sus opiniones y conocimientos sobre el contenido del sitio. Esta función suele estar presente en otras funciones, pero puede agregarse a cualquier sitio web.
+La función de comentarios se utiliza para permitir que los visitantes del sitio (miembros) que inicien sesión compartan sus opiniones y conocimientos sobre el contenido del sitio. Esta función suele estar presente en otras funciones, pero puede agregarse a cualquier sitio web.
 
 Esta sección de la documentación describe
 
-* Adición `Comments`a una página
+* Añadir `Comments`a una página
 * Configuración del `Comments`componente
 
 >[!NOTE]
 >
 >No se admite la publicación anónima de un comentario. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar.
 
-## Adición de comentarios a una página {#adding-comments-to-a-page}
+## Añadir comentarios a una página {#adding-comments-to-a-page}
 
 Para agregar un `Comments`componente a una página en modo de autor, utilice el navegador de componentes para localizar
 
@@ -80,7 +83,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique cómo los visitantes intr
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Una lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es relevante si está activada la opción Permitir cargas de archivos. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
@@ -124,7 +127,7 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **[!UICONTROL Lista de motivos de indicación]**
 
-   Si se selecciona, permita que los miembros elijan, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
+   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado no está marcado.
 
 * **[!UICONTROL Motivo de indicación personalizado]**
 
@@ -136,7 +139,7 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **[!UICONTROL Límite de indicación]**
 
-   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo en la vista pública. Este número debe ser mayor o igual que el umbral **[!UICONTROL de moderación]**. El valor predeterminado es 5.
+   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **[!UICONTROL de moderación]**. El valor predeterminado es 5.
 
 ### Ficha Ordenar configuración {#sort-settings-tab}
 
@@ -154,7 +157,7 @@ En la ficha **[!UICONTROL Ordenar configuración]** , especifique cómo se orden
 
 Al cambiar el tipo de recurso de comentarios, el sistema de comentarios ya no generará una instancia de un comentario usando el valor predeterminado, sino una instancia personalizada (ampliada) por los desarrolladores.
 
-Una vez conocidos los tipos de recursos personalizados, introduzca el modo [de](../../help/sites-authoring/default-components-designmode.md) diseño y haga doble clic en el componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
+Una vez conocidos los tipos de recursos personalizados, ingrese en Modo [de](../../help/sites-authoring/default-components-designmode.md) diseño y haga clic en el doble del `Comments` componente colocado para abrir un cuadro de diálogo con una ficha adicional.
 
 En la ficha Tipos **[!UICONTROL de]** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
 
@@ -164,19 +167,19 @@ En la ficha Tipos **[!UICONTROL de]** recursos, especifique el resourceType pers
 
    Vaya al resourceType de un `comment`componente extendido (un solo comentario) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
 
-   Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
+   Este recurso identificará el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **[!UICONTROL Tipo de medio de votación]**
 
    Vaya al resourceType de un `voting`componente extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
 
-   Este recurso identificará el tipo de recurso del UGC creado cuando un visitante publica una votación.
+   Este recurso identificará el tipo de recurso del UGC creado cuando un visitante publique una votación.
 
 * **[!UICONTROL Tipo de recurso del sistema de comentarios]**
 
    Vaya al resourceType de un `comments`componente extendido (sistema de comentarios) en /apps. Deje en blanco a menos que la plantilla de página incluya [](scf.md#add-or-include-a-communities-component) dinámicamente el sistema de comentarios en la secuencia de comandos subyacente en lugar de agregarlo a la página como recurso (nodo de comentarios). Obtenga más información leyendo sobre el asistente [{{include}}](handlebars-helpers.md#include).
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Moderadores y administradores {#moderators-and-administrators}
 
@@ -184,7 +187,7 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 ### Miembros {#members}
 
-Cuando el visitante del sitio ha iniciado sesión, según la configuración, es posible que
+Cuando se inicia sesión en el visitante del sitio, según la configuración, es posible que
 
 * Publicar un nuevo comentario
 * Editar su propio comentario

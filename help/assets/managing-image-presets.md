@@ -1,6 +1,6 @@
 ---
 title: Administración de ajustes preestablecidos de imagen de Dynamic Media
-description: Conozca los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
+description: Obtenga información sobre los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y administrar ajustes preestablecidos de imagen
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 # Managing Dynamic Media image presets {#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten a los AEM Assets distribuir imágenes de forma dinámica en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen generadas dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para el envío de la imagen. También puede elegir comandos de formato para que el aspecto de la imagen se optimice cuando se distribuya para su visualización.
+Los ajustes preestablecidos de imagen permiten a AEM Assets distribuir dinámicamente imágenes de diferentes tamaños, formatos diferentes o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para el envío de la imagen. También puede elegir comandos de formato para que el aspecto de la imagen se optimice cuando se distribuya para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido cuando exportan imágenes, lo que también cambia el formato de las imágenes según las especificaciones del administrador.
 
@@ -35,7 +35,7 @@ En esta sección se describe cómo crear, modificar y administrar, en general, l
 
 Al igual que una macro de software, un ajuste preestablecido de imagen es una colección predefinida de comandos de tamaño y formato guardados con un nombre. Para comprender cómo funcionan los ajustes preestablecidos de imagen, supongamos que el sitio web requiere que cada imagen de producto aparezca en diferentes tamaños, formatos diferentes y tasas de compresión para el envío de escritorio y móvil.
 
-Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno denominado *Ampliar* para mostrar imágenes de 500 x 500 píxeles y otro denominado *Miniatura* para mostrar imágenes de 150 x 150 píxeles. Para distribuir imágenes con el tamaño Ampliación y Miniatura, AEM busca la definición del ajuste preestablecido de imagen Ampliación y el ajuste preestablecido de imagen en miniatura. A continuación, AEM genera dinámicamente una imagen con las especificaciones de tamaño y formato de cada ajuste preestablecido de imagen.
+Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno denominado *Ampliar* para mostrar imágenes de 500 x 500 píxeles y otro denominado *Miniatura* para mostrar imágenes de 150 x 150 píxeles. Para distribuir imágenes con el tamaño Ampliación y Miniatura, AEM la definición del ajuste preestablecido de imagen Ampliación y el ajuste preestablecido de imagen en miniatura. A continuación, AEM genera dinámicamente una imagen con las especificaciones de tamaño y formato de cada ajuste preestablecido de imagen.
 
 Las imágenes con un tamaño reducido al distribuirse dinámicamente pueden perder nitidez y detalle. Por este motivo, cada ajuste preestablecido de imagen contiene controles de formato para optimizar una imagen cuando se distribuye con un tamaño concreto. Estos controles garantizan que las imágenes sean nítidas y claras cuando se envían al sitio web o a la aplicación.
 
@@ -51,9 +51,9 @@ Para administrar los ajustes preestablecidos de imagen en AEM, toque el logotipo
 >
 >Los ajustes preestablecidos de imagen que cree también estarán disponibles como representaciones dinámicas cuando realice la previsualización o entrega de recursos.
 >
->En el modo ** Dynamic Media - Scene7, *no es necesario* publicar ajustes preestablecidos de imagen, ya que los ajustes preestablecidos de imagen se publican automáticamente.
+>En el modo *Medios* dinámicos: Scene7, *no es necesario* publicar ajustes preestablecidos de imagen, ya que los ajustes preestablecidos de imagen se publican automáticamente.
 >
->En *Dynamic Media: modo* híbrido, es necesario publicar manualmente los ajustes preestablecidos de imagen.
+>En el modo *Medios* dinámicos: híbrido, es necesario publicar manualmente los ajustes preestablecidos de imagen.
 >
 >See [Publishing Image Presets.](#publishing-image-presets)
 
@@ -61,11 +61,11 @@ Para administrar los ajustes preestablecidos de imagen en AEM, toque el logotipo
 >
 >El sistema muestra una serie de representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de **[!UICONTROL detalles]** de un recurso. Puede aumentar o disminuir el número de ajustes preestablecidos de imagen que se muestran. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formatos de archivo de Adobe Illustrator (AI), Postscript (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formatos de archivo Adobe Illustrator (AI), Postscript (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Si desea admitir la ingestión de archivos AI, EPS y PDF para poder generar representaciones dinámicas de estos formatos de archivo, puede que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.
 
-El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de los AEM Assets, son las siguientes:
+El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de AEM Assets, son las siguientes:
 
 * Los documentos de Adobe Illustrator constan de una sola página con varias capas. Cada capa se extrae como un subrecurso PNG en el recurso principal de Illustrator.
 * Los documentos PDF constan de una o varias páginas. Cada página se extrae como un subrecurso PDF de una sola página en el documento PDF principal de varias páginas.
@@ -80,7 +80,7 @@ Para utilizar Dynamic Media para la previsualización y generación de represent
 
 1. En el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM, el componente de proceso **[!UICONTROL Rasterizar representación]** de Previsualización de imagen PDF/AI rasteriza la primera página del recurso original con la resolución configurada en una `cqdam.preview.png` representación.
 
-1. A continuación, el componente de proceso Recursos `cqdam.preview.png` de imagen del proceso de **[!UICONTROL Dynamic Media Process dentro del flujo de trabajo optimiza la representación]** en un PTIFF.
+1. A continuación, la `cqdam.preview.png` representación se optimiza en un PTIFF mediante el componente de proceso Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media dentro del flujo de trabajo.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!
   <tr> 
    <td>Tipos MIME</td> 
    <td><p>application/pdf</p> <p>application/postscript</p> <p>aplicación/ilustrador<br /> </p> </td> 
-   <td>Lista de tipos MIME de documento que se consideran documentos PDF o de Illustrator.<br /> </td> 
+   <td>Lista de tipos MIME de documento que se consideran documentos PDF o Illustrator.<br /> </td> 
   </tr> 
   <tr> 
    <td>Ancho máximo</td> 
@@ -139,15 +139,15 @@ Con los argumentos de proceso predeterminados, la primera página de un document
 
 El componente de proceso **[!UICONTROL Rasterizar representación]** de Previsualización de imagen PDF/AI tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes de gran tamaño pueden desbordar la memoria proporcionada a la JVM (Máquina virtual Java). Se debe tener cuidado de proporcionar al JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, y cada uno de ellos tiene la posibilidad de crear una imagen con el tamaño máximo configurado.
 
-### Formato de archivo de InDesign (INDD) {#indesign-indd-file-format}
+### Formato de archivo InDesign (INDD) {#indesign-indd-file-format}
 
 Si desea admitir la ingestión de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.
 
-En el caso de los archivos de InDesign, los subrecursos solo se extraen si el servidor de Adobe InDesign está integrado con AEM. Los recursos a los que se hace referencia están vinculados según sus metadatos. InDesign Server no es necesario para la vinculación. Sin embargo, los recursos a los que se hace referencia deben estar presentes en AEM antes de que se procesen los archivos de InDesign para poder crear los vínculos entre los archivos de InDesign y los recursos a los que se hace referencia.
+Para los archivos InDesign, los subrecursos se extraen solo si el servidor Adobe InDesign está integrado con AEM. Los recursos a los que se hace referencia están vinculados según sus metadatos. No se requiere InDesign Server para la vinculación. Sin embargo, los recursos a los que se hace referencia deben estar presentes en AEM antes de que se procesen los archivos de InDesign para que se creen los vínculos entre los archivos de InDesign y los recursos a los que se hace referencia.
 
 See [Integrating AEM Assets with InDesign Server](indesign.md).
 
-El componente de proceso de Extracción de medios del flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM ejecuta varios scripts **[!UICONTROL ampliados]** preconfigurados para procesar archivos de InDesign.
+El componente de proceso de Extracción de medios del flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM ejecuta varios **[!UICONTROL Extend Scripts]** preconfigurados para procesar archivos de InDesign.
 
 ![Rutas de Extend Script en los argumentos del proceso de Extracción de medios](assets/media_extraction_arguments.png)
 
@@ -170,7 +170,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Sí</td> 
-   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado en el recurso de InDesign. El flujo de trabajo también lo optimiza y lo convierte en un PTIFF <code>DAM Update Asset</code> .<br /> </td> 
+   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso InDesign. El flujo de trabajo también lo optimiza y lo convierte en un PTIFF <code>DAM Update Asset</code> .<br /> </td> 
   </tr> 
   <tr> 
    <td>PDFPagesExport.jsx</td> 
@@ -182,7 +182,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 ## Configuración del tamaño de miniatura de imagen {#configuring-image-thumbnail-size}
 
-Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media) para recursos de imagen dinámicos y el otro (Miniaturas de **[!UICONTROL proceso]**) para la generación de miniaturas estáticas o cuando el resto de procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
+Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos) para recursos de imagen dinámicos y el otro (Miniaturas de **[!UICONTROL proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
@@ -202,7 +202,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **width:height:c
 **Para configurar el tamaño** de la miniatura:
 
 1. Toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
-1. Toque el paso Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media y, a continuación, toque la ficha **[!UICONTROL Miniaturas]** . Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Toque el paso Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos y, a continuación, toque la ficha **[!UICONTROL Miniaturas]** . Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
 
    ![step_properties_thumbnailwords](assets/step_properties_thumbnailarguments.png)
 
@@ -216,7 +216,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **width:height:c
 
 ### Aumento o disminución del número de ajustes preestablecidos de imagen de Dynamic Media que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas al realizar la previsualización de recursos. AEM muestra una gran variedad de representaciones dinámicas al visualizar recursos desde Vista de **[!UICONTROL detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
+Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas al realizar la previsualización de recursos. AEM muestra una variedad de representaciones dinámicas al visualizar recursos desde Vista de **[!UICONTROL detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
 
 **Para aumentar o reducir el número de ajustes preestablecidos de imagen de Dynamic Media que se muestran**:
 
@@ -235,7 +235,7 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 
 ### Creating Dynamic Media image presets {#creating-image-presets}
 
-La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al obtener una vista previa o al publicar.
+La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al realizar una vista previa o publicar.
 
 >[!NOTE]
 >
@@ -244,15 +244,15 @@ La creación de un ajuste preestablecido de imagen de Dynamic Media le permite a
 Si desea admitir la ingestión de archivos AI, PDF y EPS para poder generar una representación dinámica de estos formatos de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.\
 Consulte [Adobe Illustrator (AI), Postscript (EPS) y formatos](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)de archivo PDF.
 
-Si desea admitir la ingestión de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.  Consulte Formato [de archivo de InDesign (INDD)](#indesign-indd-file-format).
+Si desea admitir la ingestión de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.  Consulte Formato [de archivo](#indesign-indd-file-format)InDesign (INDD).
 
 >[!NOTE]
 >
->Para crear ajustes preestablecidos de imagen de Dynamic Media, debe tener privilegios de administrador como administrador de AEM o administrador de Admin Console.
+>Para crear ajustes preestablecidos de imagen de Dynamic Media, debe tener privilegios de administrador como administrador AEM o administrador de Admin Console.
 
 **Para crear un ajuste preestablecido** de imagen de Dynamic Media:
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global.
+1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
 1. Toque **[!UICONTROL Crear]**.
 
@@ -272,7 +272,7 @@ Si desea admitir la ingestión de archivos INDD para poder generar una represent
 
 Para crear un ajuste preestablecido de imagen interactivo, siga los pasos que se indican en [Creación de ajustes preestablecidos](#creating-image-presets)de imagen. Al introducir la altura y la anchura en la ventana **[!UICONTROL Editar ajuste preestablecido]** de imagen, borre los valores y déjelos en blanco.
 
-Dejarlos en blanco indica a AEM que este ajuste preestablecido de imagen responde. Puede ajustar los demás valores según corresponda.
+Si se dejan en blanco, AEM que este ajuste preestablecido de imagen responde. Puede ajustar los demás valores según corresponda.
 
 ![chlimage_1-498](assets/chlimage_1-498.png)
 
@@ -280,13 +280,13 @@ Dejarlos en blanco indica a AEM que este ajuste preestablecido de imagen respond
 >
 >In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
 >
->En el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
+>En el modo Dynamic Media: Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
 >
->En Dynamic Media: modo híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
+>En el modo Dynamic Media: híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
 
 ### Opciones de ajustes preestablecidos de imagen {#image-preset-options}
 
-Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda las siguientes tres opciones de *prácticas* recomendadas para el inicio:
+Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda las siguientes tres opciones de *mejores prácticas* para el inicio:
 
 * **[!UICONTROL Formato]** (ficha **[!UICONTROL Básico]** ): seleccione **[!UICONTROL JPEG]** u otro formato que satisfaga sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
 * **[!UICONTROL Activar enfoque]** simple: no seleccione **[!UICONTROL Activar enfoque]** simple (este filtro de enfoque oferta menos control que la configuración de máscara de enfoque).
@@ -397,7 +397,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><strong>Bi-Lineal</strong> : el método de remuestreo más rápido. Algunos artefactos de solapamiento son evidentes.</li> 
      <li><strong>Bicúbico</strong> : aumenta el uso de CPU pero genera imágenes más nítidas con artefactos de solapamiento menos evidentes.</li> 
      <li><strong>Sharp2</strong> : Puede producir resultados ligeramente más enfocados que los bicúbicos, pero a un costo de CPU aún mayor.</li> 
-     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que en Adobe Photoshop se denomina <strong>bibicúbico más nítido</strong> .</li> 
+     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que se denomina <strong>bibicúbico más nítido</strong> en Adobe Photoshop.</li> 
      <li><strong>Cada color</strong> y <strong>brillo</strong> : cada método puede basarse en el color o el brillo. De forma predeterminada, <strong>se selecciona Cada color</strong> .</li> 
     </ul> </td> 
   </tr> 
@@ -416,7 +416,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><code>req=saveToFile</code></li> 
      <li><code>req=targets</code></li> 
      <li><code>template=</code></li> 
-     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li> 
+     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes y impresión virtual</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -476,7 +476,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
 **Para editar ajustes preestablecidos** de imagen:
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global.
+1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
 
    ![chlimage_1-504](assets/chlimage_1-504.png)
@@ -486,13 +486,13 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
 
-Si está ejecutando Dynamic Media en modo híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
+Si está ejecutando el modo Dynamic Media: híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
 
-Si está ejecutando el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no es necesario que complete estos pasos.
+Si está ejecutando Dynamic Media en modo Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no es necesario que complete estos pasos.
 
 **Para publicar ajustes preestablecidos de imagen en Dynamic Media: modo** híbrido:
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global.
+1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
 1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen en la lista de ajustes preestablecidos de imagen y, a continuación, toque **[!UICONTROL Publicar]**.
 1. Después de publicar el ajuste preestablecido de imagen, el estado cambia de no publicado a publicado.
@@ -503,7 +503,7 @@ Si está ejecutando el modo Dynamic Media - Scene7, los ajustes preestablecidos 
 
 **Para eliminar ajustes preestablecidos** de imagen de Dynamic Media:
 
-1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global.
+1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
 1. Seleccione un ajuste preestablecido y, a continuación, toque **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]**.
 

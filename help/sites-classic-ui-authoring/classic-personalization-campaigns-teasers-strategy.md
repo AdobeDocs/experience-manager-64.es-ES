@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 88%
 
 ---
 
@@ -21,16 +24,16 @@ Las campañas suelen utilizar teasers como mecanismo para atraer un segmento con
 
 >[!NOTE]
 >
-> El componente Teaser está en desuso en AEM 6.2.
+>El componente Teaser está en desuso en AEM 6.2.
 
 * **Las páginas** de marcas se almacenan en la sección Campañas del sitio web. Una marca contiene campañas individuales.
 
-* **Las páginas** de campaña se almacenan en la sección Campañas del sitio web. Cada campaña dispone de una página independiente, en la que se incluyen las definiciones del teaser. La página contenedora, o de descripción general, también incluye determinada información y estadísticas relacionadas con las páginas de teaser individuales.
+* **Las páginas** de Campaña se almacenan en la sección Campañas del sitio web. Cada campaña dispone de una página independiente, en la que se incluyen las definiciones del teaser. La página contenedora, o de descripción general, también incluye determinada información y estadísticas relacionadas con las páginas de teaser individuales.
 
 Los teasers de AEM constan de distintas partes:
 
 * **Las páginas** de teaser se almacenan en la página de campaña adecuada y contienen las definiciones de los párrafos de teaser disponibles para cada campaña específica. Estas definiciones se utilizan al mostrar los párrafos de teaser, incluyendo la variación de contenido, el segmento que se utilizará para seleccionar una variación y el factor de realce.
-* El **componente Teaser** está disponible en la versión básica y permite crear una instancia de un párrafo de teaser específico en una página de contenido. El componente Teaser se puede arrastrar desde la barra de tareas y, a continuación, se puede especificar la definición del teaser para crear un párrafo de teaser propio. **** Nota: El componente Teaser está en desuso en AEM 6.2.
+* El **componente Teaser** está disponible en la versión básica y permite crear una instancia de un párrafo de teaser específico en una página de contenido. El componente Teaser se puede arrastrar desde la barra de tareas y, a continuación, se puede especificar la definición del teaser para crear un párrafo de teaser propio. **Nota:** El componente Teaser está en desuso en AEM 6.2.
 
 * Los **párrafos de teaser** son instancias reales del teaser en una página de contenido. Estos párrafos animan a un segmento de visitantes a acceder a contenido centrado en sus intereses.
 * Las páginas que incluyen contenido de campaña se centran en un segmento de visitantes concreto. Los párrafos de teaser suelen dirigir a los visitantes a estas páginas
@@ -236,7 +239,7 @@ Tras crear su marca y campaña, puede crear y configurar la experiencia de tease
 
 >[!NOTE]
 >
-> El componente Teaser está en desuso en AEM 6.2.
+>El componente Teaser está en desuso en AEM 6.2.
 
 1. Desplácese a la página de contenido donde desee colocar el párrafo de teaser que dirigirá a la página de campaña.
 1. Añada un componente **Teaser** (disponible en la sección **Personalización** de la barra de tareas) en la posición necesaria. Al crearla, mostrará que la ruta de campaña no se ha configurado:

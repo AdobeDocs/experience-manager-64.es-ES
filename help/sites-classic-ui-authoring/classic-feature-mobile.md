@@ -1,6 +1,6 @@
 ---
-title: 'Creación de una página para dispositivos móviles '
-seo-title: 'Creación de una página para dispositivos móviles '
+title: Crear una página para dispositivos móviles
+seo-title: Crear una página para dispositivos móviles
 description: Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
 seo-description: Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
@@ -11,15 +11,18 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 84%
 
 ---
 
 
-# Creación de una página para dispositivos móviles {#authoring-a-page-for-mobile-devices}
+# Crear una página para dispositivos móviles {#authoring-a-page-for-mobile-devices}
 
 Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías Característica, Inteligente y Táctil según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página para móvil, AEM detecta el dispositivo y envía la representación correspondiente al grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página para móvil, AEM detecta el dispositivo y envía la representación correspondiente al grupo de dispositivos.
 
 >[!NOTE]
 >
@@ -46,5 +49,5 @@ La página presenta un aspecto similar al siguiente:
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando una página de la instancia del autor se solicita desde un dispositivo móvil. La creación se puede realizar mediante la IU táctil.
+>Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar mediante la IU táctil.
 

@@ -1,6 +1,6 @@
 ---
-title: Editar el contenido de una página
-seo-title: Editar el contenido de una página
+title: Edición del contenido de una página
+seo-title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 seo-description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 uuid: e689c979-855d-4e70-9408-7ba7325e113c
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 93%
 
 ---
 
@@ -151,16 +154,18 @@ Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aqu
 1. Existen dos formas de seleccionar y añadir un nuevo componente desde el sistema de párrafo:
 
    * Seleccione la opción **Insertar componente** (+) en la barra de herramientas de un componente existente o el cuadro **Arrastrar componentes aquí**.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
    * En un dispositivo de escritorio puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
+
    Se abrirá el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido: 
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
 1. El componente seleccionado se agregará a la parte inferior de la página. [Edite](#edit-content) el componente como sea necesario.
 
-### Inserción de un componente mediante el navegador de recursos  {#inserting-a-component-using-the-assets-browser}
+### Inserción de un componente mediante el navegador de recursos   {#inserting-a-component-using-the-assets-browser}
 
 También puede añadir un componente nuevo a la página arrastrando un recurso desde el [navegador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser). De este modo se crea automáticamente un componente nuevo del tipo correspondiente (que contiene el recurso).
 
@@ -268,6 +273,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
    * Puede pegar componentes en la misma página o en otra distinta.
    * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
    * La acción Pegar se muestra únicamente si hay contenido en el portapapeles.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -305,7 +311,7 @@ Hay dos métodos para añadir y/o editar contenido en los componentes:
 * Abra el [cuadro de diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#inserting-a-component-using-the-assets-browser) desde el navegador de recursos para agregar contenido directamente.
 
-### Cuadro de diálogo de edición de contenido  {#component-edit-dialog}
+### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
 
 Puede abrir un componente para editar su contenido mediante el icono de [edición (lápiz) de la barra de herramientas de componentes](#edit-configure-copy-cut-delete-paste).
 
@@ -394,6 +400,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
    * Se muestran los controles de cambio de tamaño del componente.
    * La barra de herramientas del emulador aparece en la parte superior de la pantalla.
    * En la barra de herramientas del componente se muestran las acciones de diseño en vez de las acciones de edición normales.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
    Ahora puede modificar el diseño del componente como haría en el [modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
@@ -450,7 +457,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Estado de Live Copy  {#live-copy-status}
+## Estado de Live Copy   {#live-copy-status}
 
 El [modo de la página de estado de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) le permite echar un vistazo al estado de la Live Copy y ver los componentes que se han heredado o no:
 
@@ -465,7 +472,7 @@ Por ejemplo:
 
 [Las anotaciones](/help/sites-authoring/annotations.md) permiten que los revisores y otros autores hagan comentarios sobre el contenido. A menudo se utilizan para revisiones y validaciones.
 
-## Previsualizar páginas  {#previewing-pages}
+## Previsualizar páginas   {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 
@@ -478,6 +485,7 @@ Existen dos métodos para visualizar la vista previa de una página:
 >* Los vínculos del contenido están visibles en el modo de edición, pero no puede accederse a ellos.
 >* Utilice cualquiera de las opciones de vista previa si desea navegar mediante sus vínculos.
 >* Utilice el [atajo de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para cambiar entre la vista previa y el último modo seleccionado.
+
 >
 
 
@@ -502,7 +510,7 @@ Al crear proyectos, el modo de vista previa está disponible mediante el icono s
 
 La opción **Ver tal y como aparece publicado** se muestra disponible en el menú [Información de página](/help/sites-authoring/author-environment-tools.md#page-information). Esta opción abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparecerá en el entorno de publicación.
 
-## Bloquear una página  {#locking-a-page}
+## Bloquear una página   {#locking-a-page}
 
 AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
 
@@ -512,6 +520,7 @@ Las páginas se pueden bloquear desde:
 
    1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleccione el icono de bloqueo.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
@@ -578,6 +587,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* Rehacer acciones siempre y cuando no haya realizado ninguna edición en la página desde que usó el comando Deshacer por última vez.
 >* Deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* Utilizar los [métodos abreviados del teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para deshacer y rehacer.
+
 >
 
 

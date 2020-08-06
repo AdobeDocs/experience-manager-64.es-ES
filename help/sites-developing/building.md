@@ -1,8 +1,8 @@
 ---
-title: Creación del etiquetado en una aplicación AEM
-seo-title: Creación del etiquetado en una aplicación AEM
-description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación personalizada de AEM
-seo-description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación personalizada de AEM
+title: Creación de etiquetas en una aplicación AEM
+seo-title: Creación de etiquetas en una aplicación AEM
+description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación AEM personalizada
+seo-description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación AEM personalizada
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Creación del etiquetado en una aplicación AEM{#building-tagging-into-an-aem-application}
+# Creación de etiquetas en una aplicación AEM{#building-tagging-into-an-aem-application}
 
-Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación personalizada de AEM, en esta página se describe el uso de la variable
+Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada, esta página describe el uso de la variable
 
 * [API de etiquetado](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -198,5 +198,5 @@ El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquet
 
 >[!NOTE]
 >
->El nuevo idioma debe ser uno de los idiomas reconocidos por AEM, es decir, debe estar disponible como nodo a continuación `/libs/wcm/core/resources/languages`.
+>El nuevo idioma debe ser uno de los idiomas AEM reconocidos, es decir, debe estar disponible como nodo de abajo `/libs/wcm/core/resources/languages`.
 

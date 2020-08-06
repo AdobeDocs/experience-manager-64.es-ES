@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Realice los siguientes pasos para crear una plantilla:
 1. Toque el icono **Guardar como plantilla** ![save_as_](assets/save_as_template.png)templateicon. Aparece un cuadro de diálogo para especificar el nombre de la plantilla.
 1. Especifique el nombre de la plantilla y toque **Guardar**. La plantilla aparece en la carpeta de plantillas.
 
-   Si existe una plantilla con el mismo nombre, aparece un cuadro de diálogo para confirmar que se sobrescribe la plantilla existente. Para reemplazar la plantilla existente por una nueva plantilla, toque **Continuar** o para guardar la plantilla con un nombre diferente, toque **Cancelar**.
+   Si existe una plantilla con el mismo nombre, aparece un cuadro de diálogo para confirmar que se sobrescribe la plantilla existente. Para reemplazar la plantilla existente con una nueva plantilla, toque **Continuar** o para guardar la plantilla con un nombre diferente, toque **Cancelar**.
 
 Ahora puede abrir la plantilla guardada. Cada vez que se abre una plantilla, se crea un nuevo formulario o tarea y el formulario muestra los datos y las opciones guardadas. Con las plantillas, puede editar los datos precargados, agregar un archivo adjunto, guardarlo como borrador, enviar la tarea o crear otra plantilla que lo utilice. Las plantillas son específicas de los dispositivos móviles y no se sincronizan con el servidor de Adobe Experience Manager Forms.
 

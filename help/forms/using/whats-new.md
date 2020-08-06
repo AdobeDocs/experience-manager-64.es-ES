@@ -1,6 +1,6 @@
 ---
-title: Resumen de las nuevas funciones| AEM 6.4 Forms
-seo-title: Resumen de las nuevas funciones| AEM 6.4 Forms
+title: Resumen de las nuevas funciones | AEM 6.4 Forms
+seo-title: Resumen de las nuevas funciones | AEM 6.4 Forms
 description: Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms.
 seo-description: Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
@@ -10,44 +10,47 @@ topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '2017'
+ht-degree: 0%
 
 ---
 
 
-# Resumen de las nuevas funciones| AEM 6.4 Forms {#new-features-summary-aem-forms}
+# Resumen de las nuevas funciones | AEM 6.4 Forms {#new-features-summary-aem-forms}
 
 Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms.
 
-AEM Forms incluye varias funciones y mejoras nuevas que optimizan aún más la creación, la gestión y la experiencia del usuario con formularios adaptables y comunicaciones interactivas.
+AEM Forms incluye varias funciones y mejoras nuevas que simplifican aún más la creación, la gestión y las experiencias de los usuarios con formularios adaptables y comunicaciones interactivas.
 
-Continúe leyendo para obtener una introducción rápida a las nuevas funciones y mejoras. Visite la documentación de recursos para obtener detalles. Consulte también las notas de la [versión](/help/release-notes/forms.md)de AEM 6.4 Forms. Para obtener toda la documentación de AEM 6.4 Forms, visite la Guía [del usuario de](/help/forms/home.md)AEM 6.4 Forms.
+Continúe leyendo para obtener una introducción rápida a las nuevas funciones y mejoras. Visite la documentación de recursos para obtener detalles. Consulte también las notas de [la versión](/help/release-notes/forms.md)de Forms de AEM 6.4. Para obtener la documentación completa de AEM 6.4 para Forms, visite [AEM Guía](/help/forms/home.md)del usuario de Forms 6.4.
 
 ## Comunicaciones interactivas {#interactive-communications}
 
 ![gestión de correspondencia](assets/correspondence-management.png)
 
-Interactive Communications centraliza y gestiona la creación, montaje y entrega de correspondencia segura, personalizada e interactiva, como correspondencia comercial, cartas, documentos, declaraciones, avisos de beneficios, folleto de gestión de riqueza, correos electrónicos de marketing, facturas y kits de bienvenida.
+Interactive Communications centraliza y gestiona la creación, el ensamblaje y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, cartas, documentos, declaraciones, avisos de beneficios, prospectos de gestión patrimonial, correos electrónicos de marketing, facturas y kits de bienvenida.
 
-Interactive Communications utiliza la misma tecnología, procesos y componentes subyacentes que los formularios adaptables para crear comunicaciones interactivas multicanal, como los formularios adaptables adaptables.
+Interactive Communications utiliza la misma tecnología, procesos y componentes subyacentes que los formularios adaptables para crear comunicaciones interactivas de varios canales, como los formularios adaptables interactivos.
 
-La comunicación interactiva ofrece ventajas significativas:
+ofertas de comunicación interactiva ventajas significativas:
 
 * Proporciona integración de OOTB con el modelo de datos de formulario para permitir un acceso fácil y optimizado a las bases de datos back-end y a otros sistemas CRM como MS Dynamics
 * Proporciona una interfaz de creación integrada para canales web e impresos
-* Proporciona una interfaz de creación basada en la función de arrastrar y soltar, similar a la creación de formularios adaptables, tanto para canales web como de impresión.
+* Proporciona una interfaz de creación basada en la función de arrastrar y soltar, similar a la creación de Forms adaptable, tanto para canales web como de impresión.
 
 La comunicación interactiva es el método predeterminado y recomendado para crear comunicaciones con los clientes. Para seguir utilizando las letras de AEM 6.3 Forms y AEM 6.2 Forms, debe instalar un paquete de compatibilidad.
 
-### Creación de comunicaciones interactivas multicanal {#multi-channel-interactive-communication-authoring}
+### Creación de comunicaciones interactivas con varios canales {#multi-channel-interactive-communication-authoring}
 
-Mediante la comunicación interactiva, puede crear y editar documentos impresos y Web desde un único editor de documentos. Al utilizar los mismos fragmentos de documento para generar representaciones de ambos canales, puede eliminar la duplicación de esfuerzos.
+Mediante la comunicación interactiva, puede crear y editar documentos impresos y Web desde un único editor de documento. Al utilizar los mismos fragmentos de documento para generar representaciones de ambos canales, puede eliminar la duplicación de esfuerzos.
 ![printweb_2](assets/printweb_2.png)
 
 Para obtener más información, consulte Información general sobre comunicaciones [interactivas](/help/forms/using/interactive-communications-overview.md).
 
-### Editor de documentos WYSIWYG {#wysiwyg-document-editor}
+### Editor de Documentos WYSIWYG {#wysiwyg-document-editor}
 
-El editor de documentos WYSIWYG para arrastrar y soltar es práctico para el negocio. La interfaz intuitiva, la funcionalidad de arrastrar y soltar, los componentes estándar, los modelos de datos y el repositorio integrado para los recursos facilitan la creación rápida y sencilla de comunicaciones interactivas.
+El editor de documentos de arrastrar y soltar WYSIWYG es práctico para el negocio. La interfaz intuitiva, la funcionalidad de arrastrar y soltar, los componentes estándar, los modelos de datos y el repositorio integrado para los recursos facilitan la creación rápida y sencilla de comunicaciones interactivas.
 
 Para crear una comunicación interactiva o editar una existente, los usuarios empresariales pueden utilizar los siguientes componentes: Canales, Contenido, Propiedades, Recursos, Componentes y Fuentes de datos.
 
@@ -57,33 +60,33 @@ Para obtener más información, consulte [Introducción a la creación de comuni
 
 ### Generar automáticamente una versión web a partir de contenido impreso en comunicación interactiva {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
-Los autores pueden generar automáticamente contenido de documentos web desde la impresión de documentos hasta la creación, la vista previa y la edición de documentos impresos y web en el mismo editor. Los autores de comunicaciones interactivas pueden crear una sola vez y publicar en todos los canales. Los autores de comunicaciones interactivas pueden utilizar los mismos fragmentos de documento en la impresión y en el canal web para evitar la duplicación de esfuerzos.
+Los autores pueden generar automáticamente contenido de documento web desde documentos de impresión hasta creación, previsualización y edición de documentos impresos y web en el mismo editor. Los autores de comunicaciones interactivas pueden crear una sola vez y publicar en todos los canales. Los autores de comunicaciones interactivas pueden utilizar los mismos fragmentos de documento en la impresión y el canal web para evitar la duplicación de esfuerzos.
 
-Para obtener más información, consulte Canal [de impresión y canal](/help/forms/using/web-channel-print-channel.md)Web.
+Para obtener más información, consulte [Imprimir canal y canal](/help/forms/using/web-channel-print-channel.md)web.
 
-### Utilizar temas para diseñar el canal web de comunicación interactiva {#use-themes-to-style-web-channel-of-interactive-communication}
+### Usar temáticas para aplicar estilo al canal web de comunicación interactiva {#use-themes-to-style-web-channel-of-interactive-communication}
 
-La comunicación interactiva admite temas. Puede crear temas y aplicarlos a su comunicación interactiva. Un tema contiene detalles de estilo para componentes y paneles. Puede reutilizar un tema en diferentes comunicaciones interactivas para darles un aspecto y una marca comunes y coherentes.
+La comunicación interactiva admite temáticas. Puede crear temáticas y aplicarlas a la comunicación interactiva. Un tema contiene detalles de estilo para componentes y paneles. Puede reutilizar un tema en diferentes comunicaciones interactivas para darles un aspecto y una marca comunes y coherentes.
 
-AEM Forms incluye un tema incorporado para las comunicaciones interactivas. Con un tema, también puede personalizar el aspecto de una comunicación interactiva en un dispositivo.
+AEM Forms incluye un tema inicial para las comunicaciones interactivas. Con un tema, también puede personalizar el aspecto de una comunicación interactiva en un dispositivo.
 
-Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
+Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
 
 ### Interfaz de agente mejorada {#enhanced-agent-interface}
 
-La interfaz de usuario del agente ahora admite la impresión y la vista previa web de la comunicación interactiva. Desde la misma interfaz de usuario del agente, puede elegir editar el canal de impresión y obtener una vista previa del canal web de la comunicación interactiva multicanal. Los campos, variables, elementos FDM y fragmentos de documento en el canal de impresión se pueden configurar para que el agente los modifique en la interfaz de usuario del agente. La compatibilidad del modelo de datos de formulario le permite generar vistas previas con datos de ejemplo rellenados previamente.
+La interfaz de usuario del agente ahora admite la impresión y la previsualización web de la comunicación interactiva. Desde la misma interfaz de usuario del agente, puede elegir editar el canal de impresión y el canal web de previsualización de la comunicación interactiva de varios canales. Los campos, variables, elementos FDM y fragmentos de documento del canal de impresión se pueden configurar para que el agente los modifique en la interfaz de usuario del agente. La compatibilidad del modelo de datos de formulario le permite generar previsualizaciones con datos de ejemplo rellenados previamente.
 
 Para obtener más información, consulte [Preparación y envío de comunicación interactiva mediante la interfaz de usuario](/help/forms/using/prepare-send-interactive-communication.md)del agente.
 
 ### Presentar información en gráficos {#present-information-in-charts}
 
-La comunicación interactiva admite gráficos en la Web y el canal de impresión para comunicaciones más enriquecidas. Mediante gráficos como circular, circular, barra y columna, puede condensar y presentar visualmente grandes cantidades de información para facilitar la interpretación y el análisis.
+La comunicación interactiva admite gráficos en la Web y el canal de impresión para comunicaciones más enriquecidas. Mediante gráficos como circular, circular, barra y columna, puede condensar y presentar visualmente grandes cantidades de información para facilitar la interpretación y la análisis.
 
 ![gráfico 2](assets/chart-2.png) ![gráfico](assets/chart.png)
 
 Para obtener más información, consulte [Uso de gráficos en Interactive Communications](/help/forms/using/chart-component-interactive-communications.md).
 
-### Conectores de datos listos para usar para rellenar documentos de antemano {#out-of-the-box-data-connectors-to-prefill-documents}
+### Conectores de datos listos para usar para rellenar documentos {#out-of-the-box-data-connectors-to-prefill-documents}
 
 La comunicación interactiva proporciona integración de datos con herramientas empresariales para conectarse con varios sistemas empresariales, incluidos sistemas CRM, y personalizar datos en documentos.
 
@@ -107,7 +110,7 @@ Para obtener más información, consulte:
 
 ### Paquete de compatibilidad para recursos existentes {#compatibility-package-for-existing-assets}
 
-De forma predeterminada, esta versión no admite los recursos de letras de las versiones anteriores de AEM Forms. Si desea seguir utilizando las cartas de AEM 6.3 Forms y AEM 6.2 Forms, debe instalar el paquete de compatibilidad.
+De forma predeterminada, los recursos de letras de las versiones anteriores de AEM Forms no son compatibles con esta versión. Si desea seguir utilizando las letras de AEM 6.3 Forms y AEM 6.2 Forms, debe instalar el paquete de compatibilidad.
 
 ## Integración de datos {#data-integration}
 
@@ -127,15 +130,15 @@ Para obtener más información, consulte [Creación de un modelo](/help/forms/us
 
 ### Crear propiedades calculadas {#create-computed-properties}
 
-Los autores y desarrolladores de formularios pueden crear propiedades calculadas en el modelo de datos de formulario. Permiten calcular un valor para la propiedad mediante la creación de reglas o lógica en los datos disponibles en orígenes de datos configurados. Una regla es una expresión que se evalúa cuando los datos se cargan en el modelo de datos de formulario o cuando cambian los valores de las propiedades de la expresión. Por ejemplo, una propiedad calculada denominada Installments calcula el importe mensual que se pagará por un préstamo según el tipo de interés especificado en el origen de datos y el importe y la tenencia del préstamo especificados por el usuario en el formulario.
+Los autores y desarrolladores de Forms pueden crear propiedades calculadas en el modelo de datos de formulario. Permiten calcular un valor para la propiedad mediante la creación de reglas o lógica en los datos disponibles en orígenes de datos configurados. Una regla es una expresión que se evalúa cuando los datos se cargan en el modelo de datos de formulario o cuando cambian los valores de las propiedades de la expresión. Por ejemplo, una propiedad calculada denominada Installments calcula el importe mensual que se pagará por un préstamo según el tipo de interés especificado en el origen de datos y el importe y la tenencia del préstamo especificados por el usuario en el formulario.
 
 Una propiedad calculada reside localmente en un modelo de datos de formulario y no existe en un origen de datos. Puede utilizar propiedades calculadas en formularios adaptables y comunicaciones interactivas.
 
 Para obtener más información, consulte [Trabajo con el modelo](/help/forms/using/work-with-form-data-model.md)de datos de formulario.
 
-### Vista previa de formularios y documentos con datos de ejemplo {#preview-forms-and-documents-with-sample-data}
+### formularios y documentos de Previsualización con datos de ejemplo {#preview-forms-and-documents-with-sample-data}
 
-El modelo de datos de formulario permite generar datos de ejemplo para propiedades de todas las entidades en un modelo de datos de formulario. Los datos generados corresponden a los tipos de datos configurados para las propiedades. Cuando se obtiene una vista previa de un formulario o documento adaptable asociado al modelo de datos de formulario, se procesa con datos de ejemplo rellenados previamente.
+El modelo de datos de formulario permite generar datos de ejemplo para propiedades de todas las entidades en un modelo de datos de formulario. Los datos generados corresponden a los tipos de datos configurados para las propiedades. Cuando se previsualización un formulario o un documento adaptable asociado al modelo de datos de formulario, se procesa con datos de ejemplo rellenados previamente.
 
 Los datos de ejemplo son un conjunto de valores aleatorios que cambian cada vez que se generan. Sin embargo, puede editar y guardar los datos de ejemplo que persisten incluso si los vuelve a generar. Por ejemplo, si edita y guarda los datos de ejemplo para las propiedades Nombre y Apellido y posteriormente agrega otra propiedad o entidad en el modelo de datos de formulario y vuelve a generar los datos de ejemplo, las propiedades Nombre y Apellido mostrarán los valores guardados mientras se regeneran los valores de otras propiedades.
 
@@ -143,11 +146,11 @@ Para obtener más información, consulte [Uso del modelo](/help/forms/using/usin
 
 ### Refresh data source definitions {#refresh-data-source-definitions}
 
-Cualquier actualización en propiedades o entidades de origen de datos no se refleja automáticamente en los modelos de datos de formulario asociados. El editor del modelo de datos de formulario ahora incluye ![refresh_forms_di](assets/refresh_forms_di.png) (Actualizar definiciones de fuentes de datos) que invalida la caché del servidor y obtiene el esquema actualizado del origen de datos para que se refleje inmediatamente en el modelo de datos de formulario.
+Cualquier actualización en propiedades o entidades de origen de datos no se refleja automáticamente en los modelos de datos de formulario asociados. El editor de modelos de datos de formulario ahora incluye ![refresh_forms_di](assets/refresh_forms_di.png) (Actualizar definiciones de fuentes de datos) que invalida la caché del servidor y obtiene el esquema actualizado del origen de datos para que se refleje inmediatamente en el modelo de datos de formulario.
 
 ### Configuración de fuentes de datos mediante la interfaz de usuario táctil {#configure-data-sources-using-touch-user-interface}
 
-Con esta versión, la configuración de servicios en la nube para fuentes de datos está disponible en la interfaz de usuario táctil. Además, la ubicación para configurar los servicios en la nube ha cambiado a **[!UICONTROL Herramientas > Servicios en la nube > Fuentes]** de datos. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+Con esta versión, la configuración de servicios en la nube para fuentes de datos está disponible en la interfaz de usuario táctil. Además, la ubicación para configurar los servicios en la nube ha cambiado a **[!UICONTROL Herramientas > Cloud Services > Fuentes]** de datos. See [Configure data sources](/help/forms/using/configure-data-sources.md).
 
 ## Formularios adaptables {#adaptive-forms}
 
@@ -163,47 +166,47 @@ Esta versión incorpora varias mejoras en la función de carga diferida:
 * Los fragmentos de formulario adaptables con la carga diferida activada se admiten en los paneles repetitivos.
 * Los formularios adaptables con fragmentos habilitados para la carga diferida son compatibles con la aplicación de AEM Forms.
 
-## Flujos de trabajo de AEM centrados en formularios {#forms-centric-aem-workflows}
+## Flujos de trabajo de AEM centrados en Forms {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Gracias a la función Flujos de trabajo AEM centrados en formularios, puede crear e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi. Ya no es necesario instalar la capacidad de administración de procesos disponible en la pila JEE, lo que simplifica la implementación y elimina los costos de infraestructura y servidor de aplicaciones. Para obtener más información, consulte Flujos de trabajo centrados en [formularios en OSGi](/help/forms/using/aem-forms-workflow.md).
+Con la funcionalidad de Flujos de trabajo de AEM centrados en Forms, puede crear e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi. Ya no es necesario instalar la capacidad de administración de procesos disponible en la pila JEE, lo que simplifica la implementación y elimina los costos de infraestructura y servidor de aplicaciones. Para obtener más información, consulte flujos de trabajo centrados en [Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
-A continuación se describen las mejoras en los flujos de trabajo de AEM centrados en Forms: ・
+Las siguientes son las mejoras en los Flujos de trabajo de AEM centrados en Forms: ・
 
-* El editor de modelos de flujo de trabajo está disponible en la interfaz de usuario táctil. Ayuda a reducir el tiempo necesario para crear flujos de trabajo de AEM centrados en el formulario.
+* El editor de modelos de flujo de trabajo está disponible en la interfaz de usuario táctil. Ayuda a reducir el tiempo necesario para crear Flujos de trabajo de AEM centrados en el formulario.
 * Paso del flujo de trabajo para enviar correos electrónicos. Por ejemplo, puede utilizar el paso de correo electrónico para enviar un documento de registro al finalizar un flujo de trabajo.
-* Paso del flujo de trabajo para utilizar los servicios del modelo de datos de formulario en un modelo de flujo de trabajo. Este paso le permite invocar servicios de integración de datos sin escribir ningún código personalizado. Por ejemplo, puede invocar un servicio GET para obtener los detalles de los empleados de los archivos de base de datos sin escribir ningún código personalizado.
+* Paso del flujo de trabajo para utilizar los servicios del modelo de datos de formulario en un modelo de flujo de trabajo. Este paso le permite invocar servicios de integración de datos sin escribir ningún código personalizado. Por ejemplo, puede invocar un servicio de GET para obtener los detalles de un empleado de los archivos de una base de datos sin escribir ningún código personalizado.
 
 ## Aplicación de AEM Forms {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-La aplicación AEM Forms permite a los trabajadores de campo sincronizar sus dispositivos móviles con un servidor de AEM Forms y trabajar en sus formularios. La aplicación funciona sin problemas cuando el dispositivo está sin conexión, al guardar datos localmente en el dispositivo y sincronizar los datos con el servidor cuando el dispositivo vuelve a estar en línea. Para obtener más información, consulte Aplicación de [AEM Forms](/help/forms/using/aem-forms-app.md).
+La aplicación de AEM Forms permite a los trabajadores de campo sincronizar sus dispositivos móviles con un servidor AEM Forms y trabajar en sus formularios. La aplicación funciona perfectamente cuando el dispositivo está sin conexión, al guardar datos localmente en el dispositivo y sincronizar los datos con el servidor cuando el dispositivo vuelve a estar en línea. Para obtener más información, consulte Aplicación [AEM Forms](/help/forms/using/aem-forms-app.md).
 
-A continuación se describen las mejoras realizadas en la aplicación de AEM Forms:
+A continuación se indican las mejoras en la aplicación de AEM Forms:
 
 * Los formularios adaptables con fragmentos habilitados para la carga diferida son compatibles con la aplicación de AEM Forms.
 * Los formularios adaptables con modelo de datos de formulario son compatibles con la aplicación de AEM Forms.
 
 ## :Seguridad de los documentos{#document-security}
 
-![aem-forms-document-security-](assets/aem-forms-document-security-.png)
+![aem-forms-documento-security-](assets/aem-forms-document-security-.png)
 
-Con la seguridad de los documentos, puede distribuir con seguridad cualquier información que haya guardado en un formato compatible. Document Security garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Los siguientes son los principales cambios en la seguridad de los documentos:
+Con la seguridad de documento, puede distribuir con seguridad cualquier información que haya guardado en un formato compatible. La seguridad de Documento garantiza que solo los usuarios autorizados puedan utilizar sus documentos. A continuación se indican los principales cambios en la seguridad de los documentos:
 
-* Document Security proporciona una biblioteca de protección [portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger un documento de forma local, sin necesidad de enviarlo al servidor de AEM Forms. Solo las credenciales de seguridad y los detalles de política se desplazan por la red al servidor de AEM Forms. AEM 6.4 Forms ha introducido la biblioteca de protección portátil (PPL) en un formato de paquete OSGi. Ahora puede instalar directamente la biblioteca PPL en un servidor de AEM Forms y utilizar las funciones de AEM y PPL en conjunto.
-* El SDK de C++ y la biblioteca PPL de C++ de seguridad de documentos se pueden compilar con Microsoft Visual Studio 2013. La versión admitida anteriormente era Microsoft Visual Studio 2010.
+* La seguridad de Documento proporciona una biblioteca de protección [portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger un documento localmente, sin enviar el documento al servidor de AEM Forms. Sólo las credenciales de seguridad y los detalles de directivas se desplazan por la red al servidor de AEM Forms. AEM 6.4 Forms ha introducido Portable Protection Library (PPL) en un formato de paquete OSGi. Ahora, puede instalar directamente la biblioteca PPL en un servidor AEM Forms y utilizar las capacidades de AEM y PPL en conjunto.
+* El SDK de seguridad de Documento C++ y la biblioteca PPL de C++ se pueden compilar con Microsoft Visual Studio 2013. La versión admitida anteriormente era Microsoft Visual Studio 2010.
 
 ## Plataformas compatibles {#supported-platforms}
 
-Los formularios AEM se pueden configurar con cualquier combinación de sistemas operativos, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico admitidos. Los siguientes son los principales cambios en las plataformas admitidas:
+AEM Forms se puede configurar mediante cualquier combinación de sistemas operativos admitidos, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico. Los siguientes son los principales cambios en las plataformas admitidas:
 
 <table> 
  <tbody> 
   <tr> 
    <td>Componente</td> 
-   <td>Se agregó compatibilidad</td> 
+   <td>Compatibilidad Añadida</td> 
    <td>Compatibilidad eliminada</td> 
   </tr> 
   <tr> 

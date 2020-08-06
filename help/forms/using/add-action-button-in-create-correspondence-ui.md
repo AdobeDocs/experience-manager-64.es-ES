@@ -380,7 +380,7 @@ Proceso de LiveCycle requerido que habilita el proceso de servicio de correo ele
 
 1. Haga clic en **[!UICONTROL Importar]**.
 
-#### Añadir ServiceName en la lista de servicio AllowListed {#adding-servicename-to-the-allowlisted-service-list}
+#### Añadir ServiceName en la lista de servicio Incluido en la lista de permitidos {#adding-servicename-to-the-allowlisted-service-list}
 
 Mencione en el servidor de AEM los servicios de LiveCycle a los que desea acceder el servidor de AEM.
 

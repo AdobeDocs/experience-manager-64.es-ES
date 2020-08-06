@@ -1,6 +1,6 @@
 ---
-title: 'Uso de etiquetas '
-seo-title: 'Uso de etiquetas '
+title: 'Uso de etiquetas  '
+seo-title: 'Uso de etiquetas  '
 description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
 seo-description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
 uuid: a91f8724-fc35-4f40-b21c-bee90429765b
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 translation-type: tm+mt
 source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 82%
 
 ---
 
 
-# Uso de etiquetas  {#using-tags}
+# Uso de etiquetas   {#using-tags}
 
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o marcas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el contenido relacionado.
 
@@ -46,7 +49,7 @@ Las etiquetas son un método rápido y fácil de clasificar contenido dentro de 
 
 A la hora de diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, considere la ligereza y la accesibilidad que el etiquetado proporciona.
 
-## Aplicación de etiquetas  {#applying-tags}
+## Aplicación de etiquetas   {#applying-tags}
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 

@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ El componente Diseño del panel de formulario adaptable controla la forma en que
 >La definición de la propiedad `guideComponentType`en el valor `fd/af/layouts/panel` determina que la presentación es un diseño de panel.
 
 1. Cambie el nombre del archivo `tabbedPanelLayout.jsp` bajo el nuevo diseño a customPanelLayout.jsp.
-1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de clientes en el `etc` nodo. Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categories af.panel.custom. Tiene los siguientes archivos .css y .js:
+1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de clientes en el `etc` nodo. Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categorías af.panel.custom. Tiene los siguientes archivos .css y .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -198,7 +201,7 @@ El componente Diseño del panel de formulario adaptable controla la forma en que
 
 1. Abra un formulario adaptable en el modo de creación. El diseño de panel que ha definido se agrega a la lista para la configuración de los diseños de panel.
 
-   ![El diseño del panel personalizado aparece en la lista](assets/auth-layt.png) de diseño del panel ![Captura de pantalla de un formulario adaptable que utiliza el diseño](assets/s1.png) del panel personalizado ![Captura de pantalla que muestra la funcionalidad de alternancia del diseño personalizado](assets/s2.png)
+   ![La presentación del panel personalizado se muestra en la lista](assets/auth-layt.png) de diseño del panel ![Captura de pantalla de un formulario adaptable que utiliza la presentación](assets/s1.png) del panel personalizado ![Captura de pantalla que muestra la funcionalidad de alternancia de la presentación personalizada](assets/s2.png)
 
 ZIP de muestra para un diseño de panel personalizado y un formulario adaptable que lo utiliza.
 

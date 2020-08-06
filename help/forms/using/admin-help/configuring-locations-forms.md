@@ -1,8 +1,8 @@
 ---
-title: Configuración de ubicaciones para formularios
-seo-title: Configuración de ubicaciones para formularios
-description: Obtenga información sobre cómo configurar la ubicación de Forms.
-seo-description: Obtenga información sobre cómo configurar la ubicación de Forms.
+title: Configuración de ubicaciones para Forms
+seo-title: Configuración de ubicaciones para Forms
+description: Obtenga información sobre cómo configurar la ubicación para Forms.
+seo-description: Obtenga información sobre cómo configurar la ubicación para Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
 content-type: reference
@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Configuración de ubicaciones para formularios {#configuring-locations-for-forms}
+# Configuración de ubicaciones para Forms {#configuring-locations-for-forms}
 
 Puede especificar la dirección URL, el URI y las ubicaciones de archivos de atributos como la raíz web, la ubicación de los formularios que se van a recuperar, el archivo PDF raíz que se utiliza en las transformaciones PDFForm y la ubicación de la caché.
 
-1. En la consola de administración, haga clic en Servicios > Formularios.
+1. En la consola de administración, haga clic en Servicios > Forms.
 1. En Ubicaciones, especifique las opciones correspondientes. Las opciones se describen a continuación.
 1. Haga clic en Guardar.
 
@@ -44,17 +44,17 @@ El ejemplo siguiente apunta al mismo contenido (mediante URI de raíz de conteni
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI raíz web de FS:** Dirección URL de la aplicación web Forms. Puede dejar este cuadro vacío si la aplicación web Forms y la aplicación cliente están implementadas en el mismo servidor de aplicaciones; se utilizará la URL raíz web de la API de formulario.
+**URI raíz web de FS:** Dirección URL de la aplicación web de Forms. Puede dejar este cuadro vacío si la aplicación web de Forms y la aplicación cliente están implementadas en el mismo servidor de aplicaciones; se utilizará la URL raíz web de la API de Forms.
 
-Si la aplicación web Forms y la aplicación cliente no están implementadas en el mismo servidor de aplicaciones, proporcione la URL de la aplicación web Forms en este cuadro, como se muestra en este ejemplo:
+Si la aplicación web de Forms y la aplicación cliente no están implementadas en el mismo servidor de aplicaciones, proporcione la URL de la aplicación web de Forms en este cuadro, como se muestra en este ejemplo:
 
 `https://<host name>:<port>/FormServer`
 
-Dónde `host name`y `port` son el nombre del servidor y el número de puerto del servidor que aloja la aplicación web Forms.
+Dónde `host name`y `port` son el nombre del servidor y el número de puerto del servidor que aloja la aplicación web de Forms.
 
 El valor predeterminado es una cadena vacía.
 
-**URI raíz web:** La raíz web de la aplicación. Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante el SDK de formularios AEM para construir una dirección URL absoluta para acceder al contenido web específico de la aplicación.
+**URI raíz web:** La raíz web de la aplicación. Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante el SDK de formularios AEM, para construir una dirección URL absoluta que permita acceder al contenido web específico de la aplicación.
 
 El valor predeterminado es una cadena vacía.
 
@@ -62,11 +62,11 @@ El valor predeterminado es una cadena vacía.
 
 El valor predeterminado es una cadena vacía.
 
-**URI de configuración XCI:** Ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. Para un valor relativo, se supone que el archivo XCI reside en el archivo EAR de formularios AEM implementable.
+**URI de configuración XCI:** Ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. Para un valor relativo, se supone que el archivo XCI reside en el archivo EAR de formularios AEM implementables.
 
 El valor predeterminado es `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. Para un valor relativo, se da por hecho que este archivo reside en el archivo EAR de formularios AEM implementable.
+**URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. Para un valor relativo, se supone que este archivo reside en el archivo EAR de formularios AEM implementables.
 
 El archivo de asignación de fuentes se utiliza para crear asignaciones de fuentes personalizadas para transformaciones HTML en formularios, lo que permite especificar qué fuente se sustituirá cuando una fuente no esté disponible en el equipo del cliente.
 
@@ -76,7 +76,7 @@ La entrada siguiente es un ejemplo de una entrada en el archivo de asignación d
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Archivo PDF de inicialización:** El archivo PDF inicial que se utiliza en una transformación PDFForm para optimizar el envío. El archivo PDF de raíz especifica un archivo PDF personalizado (que solo contiene flujo XFA, imagen y recursos de fuente) que se anexa al diseño y los datos del formulario. El formulario se procesa con Acrobat 7 o posterior y se aplica a la transformación PDFForm.
+**Archivo PDF de inicialización:** El archivo PDF inicial que se utiliza en una transformación PDFForm para optimizar el envío. El archivo PDF de raíz especifica un archivo PDF personalizado (que solo contiene flujo XFA, imagen y recursos de fuente) que se anexa al diseño y los datos del formulario. El formulario lo procesa Acrobat 7 o posterior y se aplica a la transformación PDFForm.
 
 El valor predeterminado es una cadena vacía.
 

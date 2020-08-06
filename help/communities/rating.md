@@ -1,8 +1,8 @@
 ---
 title: Uso de clasificaciones
 seo-title: Uso de clasificaciones
-description: Adición de un componente Clasificación a una página
-seo-description: Adición de un componente Clasificación a una página
+description: Añadir un componente Clasificación en una página
+seo-description: Añadir un componente Clasificación en una página
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ En la ficha **[!UICONTROL Textos y etiquetas]** , especifique el identificador i
 
 **[!UICONTROL Tally Name]**(*Requerido*) Un nombre sencillo para la instancia `Rating`que identifica exclusivamente a esta instancia. Debe ser un nombre de nodo válido para el repositorio.
 
-## Experiencia del visitante del sitio {#site-visitor-experience}
+## Experiencia de Visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 

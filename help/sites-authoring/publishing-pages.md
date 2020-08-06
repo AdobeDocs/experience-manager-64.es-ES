@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +39,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
    >
    >
 * **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
+   >  Son los términos técnicos que describen el movimiento de datos (p. ej. contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
 >
 
 
@@ -48,6 +51,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >* Se activará un flujo de trabajo para notificar a la persona adecuada la solicitud de publicación.
 >* Este [flujo de trabajo puede haber sido personalizado](/help/sites-developing/workflows-models.md) por el equipo de desarrollo.
 >* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
+
 >
 
 
@@ -74,6 +78,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
       * Especificar qué recurso/etiqueta/etc. desea publicar junto con la página y, a continuación, utilizar **Publicar** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
+
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
 1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se mostrará un mensaje que confirma la acción de publicación.
@@ -92,8 +97,8 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida ](/help/sites-authoring/publishing-pages.md#quick-publish)
-* [Administrar publicación ](/help/sites-authoring/publishing-pages.md#manage-publication)
+* [Publicación rápida](/help/sites-authoring/publishing-pages.md#quick-publish)
+* [Administrar publicación](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### Publicación rápida  {#quick-publish}
 
@@ -115,7 +120,7 @@ Para publicar una página con Publicación rápida:
 >
 >La Publicación rápida no es profunda; es decir, solo se publica la página o páginas seleccionadas, y no las páginas secundarias.
 
-#### Administrar publicación  {#manage-publication}
+#### Administrar publicación     {#manage-publication}
 
 **Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
@@ -129,6 +134,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    * Elija si publica o cancela la publicación de las páginas seleccionadas.
    * Elija si la acción se realizará ahora o en una fecha posterior.
+
    Posponer la publicación inicia un flujo de trabajo que publicará la página o páginas seleccionadas en el momento especificado. Por su parte, cancelar la publicación inicia un flujo de trabajo para anular la publicación de la página o páginas seleccionadas en un momento especificado.
 
    Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para finalizar el flujo de trabajo correspondiente.
@@ -152,6 +158,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Incluir sus elementos secundarios.
    * Eliminarlo de la selección.
    * Gestionar sus referencias publicadas.
+
    ![screen_shot_2018-03-21at153450](assets/screen_shot_2018-03-21at153450.png)
 
    Al hacer clic en **Incluir elementos secundarios** se abre un cuadro de diálogo que le permite lo siguiente:
@@ -159,6 +166,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Incluir solo los elementos secundarios inmediatos.
    * Incluir solo las páginas modificadas.
    * Incluir solo las páginas ya publicadas.
+
    Haga clic en **Añadir** para añadir las páginas secundarias que se van a publicar o dejar de publicar, en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
@@ -196,6 +204,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Definir el título del flujo de trabajo.
    * Mantener el paquete del flujo de trabajo, siempre que este [sea compatible con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
+
    Click **Publish** or **Publish Later **to complete the publication.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
@@ -209,11 +218,11 @@ De forma [similar a la publicación](/help/sites-authoring/publishing-pages.md#
 * [Desde el editor de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Desde la consola Sitios](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Cancelación de la publicación desde el editor  {#unpublishing-from-the-editor}
+### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
 Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Cancelación de la publicación desde la consola  {#unpublishing-from-the-console}
+### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 
 Al igual que [utiliza la opción Administrar publicación para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), puede usarla para cancelar la publicación.
 
@@ -244,6 +253,7 @@ Para hacerlo, puede utilizar la opción [Administrar publicación](/help/sites-a
 
    * Incluir solo los elementos secundarios inmediatos
    * Incluir solo las páginas ya publicadas
+
    Estas opciones están seleccionadas de forma predeterminada, por lo que debe acordarse de anular su selección. Haga clic en **Añadir** para confirmar y añadir el contenido a la publicación/cancelación de publicación.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)

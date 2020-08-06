@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
 
-# Lanzamientos Información general{#launches}
+# Información general sobre lanzamientos{#launches}
 
 Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. 
 
@@ -82,12 +85,14 @@ Los lanzamientos permiten realizar lo siguiente:
 
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [Crear un lanzamiento anidado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch): lanzamiento dentro de un lanzamiento.
 
    * El origen es un lanzamiento existente.
    * Puede [promocionar un lanzamiento anidado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a cualquier destino; esto puede ser un lanzamiento principal o bien las páginas de origen de nivel superior (producción).
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 1%
 
 ---
 
@@ -27,27 +30,27 @@ Ahora que el sitio de la comunidad recién creado y sus recursos de habilitació
 
 Comience navegando hasta la dirección URL que se muestra al crear el sitio, pero en el servidor de publicación, p. ej.
 
-* URL de autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
+* dirección URL de autor = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL de publicación = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Si la página principal [predeterminada estaba configurada](enablement-create-site.md#changethedefaulthomepage), entonces simplemente navegando a [http://localhost:4503/](http://localhost:4503/) debería iniciar el sitio.
+Si la página de inicio [predeterminada estaba establecida](enablement-create-site.md#changethedefaulthomepage), simplemente navegando a [http://localhost:4503/](http://localhost:4503/) debería iniciar el sitio.
 
 Al llegar por primera vez al sitio publicado, el visitante del sitio no suele haber iniciado sesión y sería anónimo.
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-432](assets/chlimage_1-433.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
-## Visitante anónimo del sitio {#anonymous-site-visitor}
+## Visitante de sitio anónimo {#anonymous-site-visitor}
 
 Un visitante anónimo del sitio se presenta inmediatamente con la página de inicio de sesión de este sitio de comunidad de habilitación privada. Tenga en cuenta que no hay opción de registrarse por sí mismo ni de iniciar sesión en Facebook o Twitter.
 
-Observe que esta página principal muestra cuatro elementos de menú: `Assignments, Ski Catalog, What's New` y `Discussions`, pero no se puede acceder a ninguno sin iniciar sesión.
+Observe que esta página de inicio muestra cuatro elementos de menú: `Assignments, Ski Catalog, What's New` y `Discussions`, pero no se puede llegar a ninguno sin iniciar sesión.
 
 >[!NOTE]
 >
->Es posible otorgar acceso anónimo a un sitio de habilitación sin permitir que los visitantes se automatriculen.\
->Si un recurso de habilitación está establecido en `show in catalog` y `allow anonymous access`, los visitantes anónimos del sitio podrán ver los recursos del catálogo.
+>Es posible otorgar acceso anónimo a un sitio de habilitación sin permitir que los visitantes del sitio se autoricen.\
+>Si un recurso de habilitación está establecido en `show in catalog` y `allow anonymous access`, será posible que visitantes anónimos del sitio realicen vistas en los recursos del catálogo.
 
 ### Impedir el acceso anónimo a JCR {#prevent-anonymous-access-on-jcr}
 
@@ -70,7 +73,7 @@ Para proteger el contenido del sitio de la comunidad del acceso de usuarios anó
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. Agregue la ruta de la página de inicio de sesión. Por ejemplo, `/content/......./GetStarted`.
+1. Añada la ruta de la página de inicio de sesión. Por ejemplo, `/content/......./GetStarted`.
 1. Publique la página.
 
 ## Miembro matriculado {#enrolled-member}
@@ -82,9 +85,9 @@ Iniciar sesión con
 * `Username: riley`
 * `Password: password`
 
-Si el perfil de usuario no se creó mediante el registro propio, la primera vez que un miembro inicia sesión, se muestra su página de perfil para que pueda verificarla y modificarla según sea necesario.
+Si el perfil de usuario no se creó mediante el registro propio, la primera vez que un miembro inicia sesión, se muestra su página de Perfil para que pueda verificarla y modificarla según sea necesario.
 
-La próxima vez que el miembro inicie sesión, se mostrará la página principal, identificada por el primer elemento de menú.
+La próxima vez que el miembro inicie sesión, se mostrará la página de inicio, identificada por el primer elemento de menú.
 
 ![chlimage_1-434](assets/chlimage_1-434.png)
 
@@ -112,13 +115,13 @@ Si selecciona *Clases de esquí 1* , se abrirá la página de detalles del recur
 
 Desde la página de detalles, el miembro puede aprender, [clasificar](rating.md) la lección y agregar [comentarios](comments.md). Cualquier actividad de miembro se verá reflejada en la sección Novedades del sitio.
 
-Las interacciones con el recurso de habilitación se anotarán en la sección Informe accesible en el entorno de creación.
+Las interacciones con el recurso de habilitación se anotarán en la sección Informe accesible en el entorno del autor.
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
 ### Catálogo de esquí {#ski-catalog}
 
-La página Catálogo de esquí es el catálogo de recursos de habilitación etiquetados con etiquetas del `Tutorial` espacio de nombres. Los dos recursos de *lección* de esquí están etiquetados con la `Skiing` etiqueta , de modo que si se selecciona cualquier etiqueta que no sea `All` o `Tutorial: Sports / Skiing` , no se muestra nada.
+La página Catálogo de esquí es el catálogo de recursos de habilitación etiquetados con etiquetas de la `Tutorial` Área de nombres. Los dos recursos de *lección* de esquí están etiquetados con la `Skiing` etiqueta , de modo que si se selecciona cualquier etiqueta que no sea `All` o `Tutorial: Sports / Skiing` , no se muestra nada.
 
 Cuando a un miembro no se le han asignado recursos de habilitación, ya sea directamente o a través de una ruta de aprendizaje, es posible interactuar con los recursos de habilitación ubicados dentro de un catálogo y proporcionar comentarios a través de comentarios y clasificaciones.
 
@@ -153,17 +156,17 @@ Iniciar sesión con
 * `Username: quinn`
 * `Password: password`
 
-Una vez que haya iniciado sesión, observe que hay un nuevo elemento de menú, que aparece `Administration`porque se le ha dado al miembro la función de moderador.
+Una vez que haya iniciado sesión, observe que hay un nuevo elemento de menú, que `Administration`aparece porque se le ha dado al miembro la función de moderador.
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
-La página principal se identifica mediante el primer elemento de menú, Asignaciones. Quinn es el contacto de recursos de moderador y habilitación y no se ha matriculado en ningún recurso de habilitación o ruta de aprendizaje, por lo que no hay nada que mostrar.
+La página de inicio se identifica mediante el primer elemento de menú, Asignaciones. Quinn es el contacto de recursos de moderador y habilitación y no se ha matriculado en ningún recurso de habilitación o ruta de aprendizaje, por lo que no hay nada que mostrar.
 
 ### Administración {#administration}
 
-Lo que hay, es la actividad de los dos alumnos `Riley Taylor` y `Sidney Croft. By s`al seleccionar el `Administration`vínculo para acceder a la consola de moderación, Quinn puede utilizar la consola [de moderación](moderation.md) masiva para moderar sus publicaciones.
+Lo que hay es la actividad de los dos alumnos `Riley Taylor` y, al `Sidney Croft. By s`seleccionar el `Administration`vínculo para acceder a la Consola de moderación, Quinn puede utilizar la consola [de moderación](moderation.md) masiva para moderar sus publicaciones.
 
-Al seleccionar el icono del panel lateral, se abren los filtros utilizados para buscar contenido de comunidad.
+Al seleccionar el icono del panel lateral, se abren los filtros utilizados para buscar contenido de la comunidad.
 
 Al pasar el ratón por encima de una tarjeta de comentarios se muestran las acciones de moderación.
 
@@ -171,7 +174,7 @@ Al pasar el ratón por encima de una tarjeta de comentarios se muestran las acci
 
 ## Informes sobre el autor {#reports-on-author}
 
-Existen dos formas de acceder a los informes de los alumnos y a los recursos de habilitación.
+Existen dos formas de acceder al sistema de informes de los alumnos y a los recursos de activación.
 
 En el autor, vaya a la consola **[Comunidades,](resources.md)**Recursos, donde se administran los recursos de habilitación y, después de seleccionar un sitio de comunidad, podrá generar informes para
 
@@ -184,7 +187,7 @@ Vaya a la consola **[Comunidades,](reports.md)**Informes y genere informes segú
 * Anuncios en un sitio de comunidad durante un período específico
 * Vistas (visitas al sitio) de un sitio de la comunidad durante un período específico
 
-* Los anuncios y las vistas pueden estar en todo el contenido o en contenido específico:
+* Los anuncios y vistas pueden estar en todo el contenido o en contenido específico:
 
    * Foro
    * Tema de foro
@@ -206,7 +209,7 @@ Con un poco de actividad e interacción con los recursos al publicar, vale la pe
 * Seleccione el `Report`icono para ver un resumen de todos los recursos
 * Seleccione un recurso y, a continuación, el `Report`icono de un informe sobre ese recurso
 
-Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar de 1 a 12 horas en aparecer. Sin embargo, los informes SCORM básicos ya están disponibles.
+Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, que pueden tardar de 1 a 12 horas en aparecer. Sin embargo, el sistema de informes SCORM básico ya está disponible.
 
 #### Informe de recursos de lecciones de esquí {#ski-lessons-resource-report}
 
@@ -227,7 +230,7 @@ Tenga en cuenta que es muy probable que se muestren datos de Adobe Analytics, qu
 La consola Informes permite generar informes en
 
 * **Asignaciones** para cualquier sitio de la comunidad de habilitación
-* **Vistas** de cualquier sitio de comunidad
+* **Vistas** para cualquier sitio de comunidad
 * **Anuncios** para cualquier sitio de comunidad
 
 Para informes sobre asignaciones:

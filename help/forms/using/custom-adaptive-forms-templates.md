@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Requisitos previos {#prerequisites}
 
-* Explicación de la creación de plantillas [de](/help/sites-authoring/templates.md) página y formularios [adaptables de AEM](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Comprensión de la creación de plantillas [de](/help/sites-authoring/templates.md) página AEM y formularios [adaptables](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Información sobre las bibliotecas del [cliente de AEM](/help/sites-developing/clientlibs.md)
+* Explicación de AEM bibliotecas del lado del [cliente](/help/sites-developing/clientlibs.md)
 
 ## Adaptive form template {#adaptive-form-template}
 
-Una plantilla de formulario adaptable es una plantilla de página de AEM especializada, con determinadas propiedades y estructura de contenido que se utiliza para crear un formulario adaptable. La plantilla tiene diseños, estilos y estructura de contenido inicial básica preconfigurados.
+Una plantilla de formulario adaptable es AEM plantilla de página especializada, con determinadas propiedades y estructura de contenido que se utiliza para crear un formulario adaptable. La plantilla tiene diseños, estilos y estructura de contenido inicial básica preconfigurados.
 
 Una vez creado un formulario, los cambios realizados en la estructura de contenido de la plantilla original no se reflejan en el formulario.
 
@@ -33,10 +36,10 @@ Una vez creado un formulario, los cambios realizados en la estructura de conteni
 AEM QuickStart proporciona las siguientes plantillas de formulario adaptables:
 
 * Básico: Permite crear un formulario adaptable con varias fichas con una presentación de fichas a la izquierda, donde puede visitar las fichas en cualquier orden aleatorio.
-* Básico con Adobe Sign: Permite crear un formulario con varias fichas y un asistente. Utiliza un diseño de fichas a la izquierda que permite visitar las fichas en cualquier orden. Utiliza los servicios de firma y verificación de Adobe Document Cloud.
-* Plantilla en blanco: Permite crear un formulario sin encabezado, pie de página ni contenido inicial. Puede agregar componentes como cuadros de texto, botones e imágenes. La plantilla en blanco le permite crear un formulario que puede [incrustar en las páginas](/help/forms/using/embed-adaptive-form-aem-sites.md)del sitio de AEM.
+* Básico con Adobe Sign: Permite crear un formulario con varias fichas y un asistente. Utiliza un diseño de fichas a la izquierda que permite visitar las fichas en cualquier orden. Utiliza los servicios de diseño de Adobe Document Cloud para firmar y verificar.
+* Plantilla en blanco: Permite crear un formulario sin encabezado, pie de página ni contenido inicial. Puede agregar componentes como cuadros de texto, botones e imágenes. La plantilla en blanco le permite crear un formulario que puede [incrustar en AEM páginas](/help/forms/using/embed-adaptive-form-aem-sites.md)del sitio.
 
-Estas plantillas tienen la `sling:resourceType` propiedad establecida en el componente de página correspondiente. El componente de página procesa la página de CQ, que contiene el contenedor de formularios adaptables, que a su vez procesa el formulario adaptable.
+Estas plantillas tienen la `sling:resourceType` propiedad establecida en el componente de página correspondiente. El componente de página procesa la página de CQ, que contiene el contenedor de formulario adaptable, que a su vez procesa el formulario adaptable.
 
 La siguiente tabla enumera la asociación entre plantillas y componentes de página:
 
@@ -48,7 +51,7 @@ La siguiente tabla enumera la asociación entre plantillas y componentes de pág
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td> 
-   <td><p>/libs/fd/af/components/page/survey</p> </td> 
+   <td><p>/libs/fd/af/components/page/encuesta</p> </td> 
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/templates/simpleEnregistrationTemplate</p> </td> 
@@ -67,9 +70,9 @@ La siguiente tabla enumera la asociación entre plantillas y componentes de pág
 
 ## Creación de una plantilla de formulario adaptable mediante el editor de plantillas {#creating-an-adaptive-form-template-using-template-editor}
 
-Puede especificar la estructura y el contenido inicial de un formulario adaptable mediante el Editor de plantillas. Por ejemplo, desea que todos los autores de formularios tengan pocos cuadros de texto, botones de navegación y un botón de envío en un formulario de inscripción. Puede crear una plantilla que los autores puedan utilizar para crear un formulario coherente con otros formularios de inscripción. El Editor de plantillas de AEM le permite:
+Puede especificar la estructura y el contenido inicial de un formulario adaptable mediante el Editor de plantillas. Por ejemplo, desea que todos los autores de formularios tengan pocos cuadros de texto, botones de navegación y un botón de envío en un formulario de inscripción. Puede crear una plantilla que los autores puedan utilizar para crear un formulario coherente con otros formularios de inscripción. AEM Editor de plantillas le permite:
 
-* Adición de componentes de encabezado y pie de página de un formulario en la capa de estructura
+* Añadir componentes de encabezado y pie de página de un formulario en la capa de estructura
 * Proporcione el contenido inicial del formulario.
 * Especifique un tema.
 * Especifique acciones como enviar, restablecer y desplazarse.
@@ -78,7 +81,7 @@ Para obtener más información, consulte Editor [de plantillas](/help/forms/usin
 
 ## Creación de una plantilla de formulario adaptable a partir de CRXDE {#creating-an-adaptive-form-template-from-crxde}
 
-En lugar de utilizar las plantillas disponibles, puede crear una plantilla y utilizarla para crear formularios adaptables. Las plantillas personalizadas se basan en varios componentes de página que hacen referencia a contenedores de formularios adaptables y elementos de página, como el encabezado y el pie de página.
+En lugar de utilizar las plantillas disponibles, puede crear una plantilla y utilizarla para crear formularios adaptables. Las plantillas personalizadas se basan en varios componentes de página que hacen referencia a contenedores de formulario adaptables y elementos de página, como el encabezado y el pie de página.
 
 Puede crear estos componentes con el componente de página base del sitio Web. También puede ampliar el componente de página del formulario adaptable que utilizan las plantillas integradas.
 

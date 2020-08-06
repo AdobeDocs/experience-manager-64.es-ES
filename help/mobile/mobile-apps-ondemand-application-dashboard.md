@@ -1,8 +1,8 @@
 ---
-title: Panel de aplicaciones de AEM Mobile
-seo-title: Panel de aplicaciones de AEM Mobile
-description: Puede administrar el contenido de la aplicación y de la aplicación móvil desde el panel de aplicaciones de AEM Mobile o desde el centro de control. Siga esta página para obtener más información.
-seo-description: Puede administrar el contenido de la aplicación y de la aplicación móvil desde el panel de aplicaciones de AEM Mobile o desde el centro de control. Siga esta página para obtener más información.
+title: AEM Mobile Application Panel
+seo-title: AEM Mobile Application Panel
+description: Puede administrar el contenido de la aplicación y de la aplicación móvil desde AEM Mobile Application Panel o el Centro de control. Siga esta página para obtener más información.
+seo-description: Puede administrar el contenido de la aplicación y de la aplicación móvil desde AEM Mobile Application Panel o el Centro de control. Siga esta página para obtener más información.
 uuid: 0d182989-eb83-4207-a8e0-050edbf98ff9
 contentOwner: User
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
 
-# Panel de aplicaciones de AEM Mobile {#aem-mobile-application-dashboard}
+# AEM Mobile Application Panel {#aem-mobile-application-dashboard}
 
 >[!NOTE]
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Puede administrar el contenido de la aplicación y de la aplicación móvil desde el panel de aplicaciones de AEM Mobile o desde el centro de control.
+Puede administrar el contenido de la aplicación y de la aplicación móvil desde AEM Mobile Application Panel o el Centro de control.
 
-Puede explorar cada mosaico en el Centro de control para ver o editar los detalles haciendo clic en el botón &#39;...&#39; en la esquina inferior derecha.
+Puede explorar en profundidad cada mosaico del Centro de control para realizar vistas o editar los detalles haciendo clic en el botón &#39;...&#39; en la esquina inferior derecha.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -49,7 +52,7 @@ El icono **Administrar aplicación** muestra la información de la aplicación d
 
 ## El icono Administrar conexión {#the-manage-connection-tile}
 
-El mosaico **Administrar conexión** muestra la información de conexión de On-Demand Services de AEM Mobile:
+El mosaico **Administrar conexión** muestra la información de conexión de AEM Mobile On-demand Services:
 
 * Nombre de configuración de nube
 * Nombre e ID del proyecto
@@ -77,14 +80,14 @@ Cada mosaico puede expandirse para proporcionar una vista de lista más detallad
 
 El mosaico **Administrar pancartas** le permite administrar el contenido de un letrero. Se muestra la siguiente información para una pancarta:
 
-* imagen
+* image
 * **TÍTULO**: nombre del letrero
 * **MODIFICADO**: última modificación en AEM
-* **CARGADO**: última carga desde AEM
-* **PUBLICADO**: última solicitud publicada de AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On Demand)
 
-La siguiente imagen muestra el mosaico **Administrar pancartas** en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar pancartas** en AEM Mobile Application Panel:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -96,14 +99,14 @@ La siguiente imagen muestra el mosaico **Administrar pancartas** en el panel de 
 
 El mosaico **Administrar artículos** permite administrar el contenido de un artículo. Se muestra la siguiente información para un artículo:
 
-* imagen
+* image
 * **TÍTULO**: nombre del artículo
 * **MODIFICADO**: última modificación en AEM
-* **CARGADO**: última carga desde AEM
-* **PUBLICADO**: última solicitud publicada de AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On-Demand)
 
-La siguiente imagen muestra el mosaico **Administrar artículos** en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar artículos** en AEM Mobile Application Panel:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -115,14 +118,14 @@ La siguiente imagen muestra el mosaico **Administrar artículos** en el panel de
 
 El mosaico **Administrar colecciones** le permite administrar el contenido de una colección. Se muestra la siguiente información para una colección:
 
-* imagen
+* image
 * **TÍTULO**: nombre de la colección
 * **MODIFICADO**: última modificación en AEM
-* **CARGADO**: última carga desde AEM
-* **PUBLICADO**: última solicitud publicada de AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On-Demand)
 
-La siguiente imagen muestra el mosaico **Administrar colecciones** en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar colecciones** en AEM Mobile Application Panel:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -132,16 +135,16 @@ La siguiente imagen muestra el mosaico **Administrar colecciones** en el panel d
 
 ### Pasos siguientes {#the-next-steps}
 
-Una vez que esté familiarizado con el panel de la aplicación, consulte los siguientes recursos para crear una aplicación móvil:
+Una vez familiarizado con el panel de la aplicación, consulte los siguientes recursos para crear una aplicación móvil:
 
 * [Acciones de creación y configuración de aplicaciones](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Asociación de una aplicación bajo demanda a una configuración de nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
-* [Acciones de administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [Acciones de Gestor de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-### Additional Resources {#additional-resources}
+### Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los siguientes recursos:
 
-* [Desarrollo de contenido de AEM para los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Administración de contenido para utilizar los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile.md)
+* [Desarrollo de contenido AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 

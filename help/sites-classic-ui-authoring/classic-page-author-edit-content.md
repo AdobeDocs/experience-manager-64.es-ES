@@ -1,6 +1,6 @@
 ---
-title: Editar el contenido de una página
-seo-title: Editar el contenido de una página
+title: Edición del contenido de una página
+seo-title: Edición del contenido de una página
 description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
 seo-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
 uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 98%
 
 ---
 
@@ -74,6 +77,7 @@ Para insertar un nuevo componente:
    * Hacer doble clic en el área etiquetada **Arrastrar componentes o recursos aquí...** (se abre la barra de herramientas **Insertar nuevo componente**). Seleccione un componente y haga clic en **Aceptar**.
    * Arrastrar un componente desde la barra de herramientas flotante (denominada barra de tareas) para insertar un nuevo párrafo.
    * Hacer clic con el botón derecho en un párrafo existente y seleccionar **Nuevo...** (se abre la barra de herramientas Insertar nuevo componente). Seleccione un componente y haga clic en **Aceptar**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Tanto en la barra de tareas como en la barra de herramientas **Insertar nuevo componente**, se ve una lista de los componentes (tipos de párrafo) disponibles. Pueden estar divididos en varias secciones (por ejemplo, General, Columnas, etc.), que pueden expandirse según se requiera.
@@ -182,9 +186,11 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
    Si un componente forma parte de una Live Copy o un lanzamiento, esta situación se indica mediante un icono de cerrojo. Puede hacer clic en el cerrojo para cancelar la herencia.
 
    * El icono de cerrojo se mostrará cuando el componente esté seleccionado; por ejemplo:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * El cerrojo también se muestra en el cuadro de diálogo de los componentes; por ejemplo:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **Un sistema de párrafos heredado**
@@ -197,7 +203,7 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 [Las anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permiten que el resto de los autores hagan comentarios sobre el contenido. Esta opción acostumbra a utilizarse para revisiones y validaciones.
 
-## Previsualizar páginas  {#previewing-pages}
+## Previsualizar páginas   {#previewing-pages}
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para previsualizar las páginas:
 
@@ -279,6 +285,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* Rehacer acciones siempre y cuando no haya realizado ninguna edición en la página desde que usó el comando Deshacer por última vez.
 >* Deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* Utilizar [los métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
+
 >
 
 

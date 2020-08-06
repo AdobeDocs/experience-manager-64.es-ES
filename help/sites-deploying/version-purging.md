@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Depuración de versiones{#version-purging}
 
-En una instalación estándar, AEM crea una nueva versión de una página o nodo cuando activa una página después de actualizar el contenido.
+En una instalación estándar, AEM crea una nueva versión de una página o nodo cuando se activa una página después de actualizar el contenido.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Puede crear versiones adicionales si así lo solicita mediante la ficha **Versio
 
 Estas versiones nunca se depuran, por lo que el tamaño del repositorio crecerá con el tiempo y, por lo tanto, es necesario administrarlo.
 
-AEM se suministra con varios mecanismos para ayudarle a administrar su repositorio:
+AEM incluye varios mecanismos para ayudarle a administrar su repositorio:
 
 * Administrador de [versiones](#version-manager)
 
@@ -100,7 +100,7 @@ Las opciones disponibles son las siguientes:
 
 >[!NOTE]
 >
->No se recomienda mantener un gran número de versiones en el repositorio. Por lo tanto, al configurar la operación de purga de versiones tenga en cuenta que no se excluirán demasiadas versiones de la purga, de lo contrario el tamaño del repositorio no se optimizará correctamente. Si mantiene un gran número de versiones debido a un requisito comercial, póngase en contacto con el servicio de asistencia de Adobe para encontrar formas alternativas de optimizar el tamaño del repositorio.
+>No se recomienda mantener un gran número de versiones en el repositorio. Por lo tanto, al configurar la operación de purga de versiones tenga en cuenta que no se excluirán demasiadas versiones de la purga, de lo contrario el tamaño del repositorio no se optimizará correctamente. Si mantiene un gran número de versiones debido a un requerimiento comercial, póngase en contacto con el servicio de soporte de Adobe para encontrar formas alternativas de optimizar el tamaño del repositorio.
 
 ### Combinación de opciones de retención {#combining-retention-options}
 

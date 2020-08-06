@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Un ejemplo:
 
 1. El usuario hace clic en una plantilla de tarea en la lista de tarea.
 1. La vista de Tarea escucha el clic y llama a la función de procesamiento en el modelo de tarea.
-1. El modelo de Tarea llama posteriormente al servicio, que es un punto común para todas las comunicaciones con el servidor de AEM Forms.
+1. Posteriormente, el modelo de Tarea llama al servicio, que es un punto común para todas las comunicaciones con el servidor de AEM Forms.
 1. La clase de servicio llama al extremo REST de AEM Forms para el método de procesamiento mediante ajax.
 1. La llamada de retorno de éxito para esta invocación de Ajax se define en el modelo de tarea.
 1. El modelo de Tarea genera un evento de red troncal cuando se notifica que se ha completado la llamada de procesamiento.

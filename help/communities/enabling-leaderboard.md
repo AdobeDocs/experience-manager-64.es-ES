@@ -1,8 +1,8 @@
 ---
 title: Función de tabla de clasificación
 seo-title: Función de tabla de clasificación
-description: Adición de un componente Leadboard a una página
-seo-description: Adición de un componente Leadboard a una página
+description: Añadir un componente de tabla de clasificación en una página
+seo-description: Añadir un componente de tabla de clasificación en una página
 uuid: 2a766b63-3ab4-44cd-8a26-629a71b837ea
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +28,7 @@ Antes de incluir el componente de la tabla de clasificación en una página, es 
 
 Esta sección de la documentación describe
 
-* Adición del `Leaderboard` componente a un sitio [de comunidad](overview.md#community-sites)
+* Añadir el `Leaderboard` componente en un sitio [de comunidad](overview.md#community-sites)
 
 * Configuración del `Leaderboard` componente
 
@@ -57,7 +60,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique la información relaci
 
    El valor predeterminado es `Leaderboard`si no se ha introducido nada.
 
-* **[!UICONTROL Distintivo]** Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
+* **[!UICONTROL Distintivo]** Si está marcado, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
 
    El valor predeterminado no está marcado.
 
@@ -65,7 +68,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique la información relaci
 
    El valor predeterminado no está marcado.
 
-* **[!UICONTROL Use Avatar]** Si está marcado, la imagen de avatar del miembro se incluye en el panel de control, junto al vínculo de nombre de su perfil de miembro.
+* **[!UICONTROL Use Avatar]** Si está marcado, la imagen de avatar del miembro se incluye en el panel de control, junto al vínculo de nombre del perfil del miembro.
 
    El valor predeterminado no está marcado.
 

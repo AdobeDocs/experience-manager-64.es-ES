@@ -92,7 +92,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 | **Imagen panorámica** | Los visores Panoramic Image y PanoramicVR representan imágenes panorámicas esféricas para sumergir a los usuarios en una experiencia de visualización de 360° de una habitación, propiedad, ubicación o paisaje. |
 |  | Para que una imagen cargada se considere panorámica esférica, debe tener una o ambas de las opciones siguientes: <ul><li>Proporción de aspecto de 2:1.</li><li>Etiquetado con las palabras clave equirectangulares, esféricas y panorámicas, esféricas y panorámicas. Consulte [Uso de etiquetas](../sites-authoring/tags.md).</li></ul> |
 |  | Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles de recursos y el componente WCM &quot;Panoramic Media&quot;. |
-|  | Importante: Este visor solo está disponible en el modo Dynamic Media - Scene7. |
+|  | Importante: Este visor solo está disponible en el modo Dynamic Media: Scene7. |
 | **Conjunto de giros** | Proporciona varias vistas de una imagen para que los usuarios puedan girar el objeto para examinar los diferentes lados y ángulos. |
 | **Vídeo** | Reproduce vídeo mediante flujo continuo de velocidad de bits progresiva o adaptable. El flujo de velocidad de bits adaptable realiza automáticamente la detección de ancho de banda y dispositivos para ofrecer el vídeo de calidad adecuada en el formato correcto. |
 | **Zoom vertical** | El visor de zoom vertical le permite maximizar una experiencia de visualización de imágenes de producto para ofrecer a los usuarios la mejor representación de un producto. La ubicación vertical de las muestras hace lo siguiente: <ul><li>Garantiza que las muestras estén por encima del pliegue. Con las muestras horizontales, en función del tamaño de la pantalla  escritorio del usuario, las muestras no eran visibles hasta que el usuario se desplazaba por la página. Al colocar las muestras verticalmente en el visor, garantiza que sean visibles independientemente del tamaño de pantalla del usuario.</li><li>Maximiza el tamaño de la imagen principal. Con las muestras horizontales, es necesario reservar espacio en la página para asegurarse de que son visibles. Esta posición redujo el tamaño de la imagen principal. Sin embargo, con un diseño de muestra vertical, no es necesario asignar este espacio. Como tal, puede maximizar el tamaño de la imagen principal.</li></ul> |
@@ -100,7 +100,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ## Lista de ajustes preestablecidos de visor integrados {#list-of-out-of-the-box-viewer-presets}
 
-La siguiente tabla identifica todos los ajustes preestablecidos de visor predefinidos y listos para usar que se incluyen con Dynamic Media.
+La siguiente tabla identifica todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
 Consulte también Demostraciones [en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -181,7 +181,7 @@ AEM muestra una amplia variedad de ajustes preestablecidos de visor al ver recur
 
 La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con AEM Assets.
 
-Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **Activado**) en la página Ajustes preestablecidos **[!UICONTROL de visor]** . Este estado significa que está visible en el componente de **[!UICONTROL Dynamic Media]** y en el componente de medios **** interactivos y siempre que se previsualización una imagen o un vídeo.
+Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **Activado**) en la página Ajustes preestablecidos **[!UICONTROL de visor]** . Este estado significa que está visible en el componente de medios **[!UICONTROL dinámicos]** y en el componente de medios **** interactivos y siempre que se previsualización una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visor tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visor. Según el ajuste preestablecido de visor que esté creando, es posible que desee tener en cuenta estas consideraciones especiales.
 
@@ -297,7 +297,7 @@ La lógica que utiliza el visor para la cantidad de miniaturas que se muestran e
 
 ### Consideraciones especiales para crear un ajuste preestablecido de visor de pancarta carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-Al crear ajustes preestablecidos de visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
+Al crear ajustes preestablecidos del visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
 |  | **Descripción** | **Acciones** |
 |---|---|---|
@@ -316,7 +316,7 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 ## Publishing Dynamic Media viewer presets {#publishing-viewer-presets}
 
-Al activar (o activar *la activación*) el estado de un ajuste preestablecido de visor, éste se muestra visible en el componente de Dynamic Media, el componente de medios interactivos y siempre que se realiza la vista de un recurso.
+Al activar (o activar *la activación*) el estado de un ajuste preestablecido de visor, se ve en el componente Dynamic Media, en el componente Interactive Media y siempre que se vista un recurso.
 
 Sin embargo, para distribuir un recurso con un ajuste preestablecido de visor, también se debe publicar el ajuste preestablecido de visor. All viewer presets must be activated *and* published to obtain URL or embed code for an asset. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
@@ -332,7 +332,7 @@ Consulte también [Vista previa de recursos](previewing-assets.md).
 
 ## Sorting Dynamic Media viewer presets {#sorting-viewer-presets}
 
-**Para ordenar los ajustes preestablecidos** de visor de Dynamic Media:
+**Para ordenar los ajustes preestablecidos** del visor de Dynamic Media:
 
 1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **Herramientas** (icono de martillo) **[!UICONTROL > Assets > Ajustes preestablecidos de visualizador]**.
 1. Haga clic en **[!UICONTROL Título preestablecido]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** o **[!UICONTROL Estado]** para ordenar por ese encabezado de la columna. Por ejemplo, haga clic en **[!UICONTROL Tipo]** para ordenar los tipos de ajustes preestablecidos de visualizador en orden alfabético o alfabético inverso.
@@ -341,7 +341,7 @@ Consulte también [Vista previa de recursos](previewing-assets.md).
 
 Tenga en cuenta que la edición de cualquier ajuste preestablecido de visor *preestablecido* no es un escenario compatible. Si edita un ajuste preestablecido de visor incorporado, se le pedirá que lo guarde con un nuevo nombre.
 
-**Para editar ajustes preestablecidos** de visor de Dynamic Media:
+**Para editar los ajustes preestablecidos** del visor de Dynamic Media:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. Seleccione un ajuste preestablecido marcando la casilla a la izquierda del título del ajuste preestablecido de visor.
@@ -352,11 +352,11 @@ Tenga en cuenta que la edición de cualquier ajuste preestablecido de visor *pre
    * Toque **[!UICONTROL Guardar]** para guardar los cambios y volver a la página Ajustes preestablecidos **[!UICONTROL de visor]** .
    * Toque **[!UICONTROL Cancelar]** para anular los cambios realizados y volver a la página Ajustes preestablecidos **[!UICONTROL de visor]** .
 
-## Eliminación de ajustes preestablecidos de visor Dynamic Media personalizados {#deleting-custom-viewer-presets}
+## Eliminación de ajustes preestablecidos de visor de Dynamic Media personalizados {#deleting-custom-viewer-presets}
 
 Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a Dynamic Media.
 
-**Para eliminar ajustes preestablecidos** de visor de Dynamic Media personalizados:
+**Para eliminar ajustes preestablecidos** del visor de Dynamic Media personalizado:
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. En la página Ajustes preestablecidos **[!UICONTROL de visor]** , marque un Título **[!UICONTROL de]** ajuste preestablecido y, a continuación, toque el icono **[!UICONTROL Papelera]** .

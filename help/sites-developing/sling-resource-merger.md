@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 1%
 
 ---
 
 
-# Uso de la fusión de recursos de Sling en AEM{#using-the-sling-resource-merger-in-aem}
+# Using the Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Función {#purpose}
 
@@ -37,7 +40,7 @@ Con la fusión de recursos de Sling, los recursos y/o propiedades de superposici
 >
 >Las superposiciones/anulaciones de otras áreas (incluidos otros aspectos de un componente táctil o de la IU clásica) implican copiar el nodo y la estructura adecuados del original al lugar donde se definirá la personalización.
 
-### Objetivos para AEM {#goals-for-aem}
+### Objetivos de AEM {#goals-for-aem}
 
 Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 
@@ -50,7 +53,7 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 >
 >Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
 >
->Sin embargo, las anulaciones suelen definirse en `/apps`, ya que la mejor opción en AEM es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
+>Sin embargo, las anulaciones suelen definirse en `/apps`, ya que la mejor forma de definir las personalizaciones en AEM `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
 
 >[!CAUTION]
 >
@@ -64,6 +67,7 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
    >
    >
 1. Realice los cambios en `/apps`
+
 >
 
 
@@ -84,7 +88,7 @@ La combinación de recursos proporciona las siguientes propiedades:
 
 * `sling:hideChildren` ( `String` o `String[]`)
 
-   Contiene el nodo secundario o la lista de nodos secundarios que se van a ocultar. Se mantendrán las propiedades del nodo.
+   Contiene el nodo secundario, o lista de nodos secundarios, que se va a ocultar. Se mantendrán las propiedades del nodo.
 
    El comodín `*` oculta todo.
 
@@ -141,7 +145,7 @@ Por lo tanto, en el ejemplo de superposición anterior, se necesitan los nodos s
 
 Estos, junto con la funcionalidad estándar, le permiten:
 
-* **Agregar una propiedad**
+* **Añadir una propiedad**
 
    La propiedad no existe en la `/libs` definición, pero es necesaria en la `/apps` superposición/anulación.
 
@@ -211,7 +215,8 @@ Estos, junto con la funcionalidad estándar, le permiten:
    1. Cree la propiedad `sling:hideChildren`:
 
       * tipo: `String[]`
-      * value: una lista de los nodos secundarios (tal como se define en `/libs`) que se ocultan o omiten
+      * value: una lista de nodos secundarios (como se define en `/libs`) para ocultar/ignorar
+
       &amp;ast; comodín; puede utilizarse para ocultar o ignorar todos los nodos secundarios.
 
 
@@ -244,7 +249,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
    * propósito: combinar recursos en función de su ruta de búsqueda
    * punto de montaje: `/mnt/overlay`
    * usage: `mount point + relative path`
-   *  ejemplo:
+   * ejemplo:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
@@ -253,7 +258,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
    * propósito: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
    * usage: `mount point + absolute path`
-   *  ejemplo:
+   * ejemplo:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 

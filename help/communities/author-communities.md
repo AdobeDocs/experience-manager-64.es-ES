@@ -1,8 +1,8 @@
 ---
 title: Componentes de Communities
 seo-title: Componentes de Communities
-description: 'Adición de funciones de comunidad a cualquier sitio de AEM '
-seo-description: 'Adición de funciones de comunidad a cualquier sitio de AEM '
+description: 'Añadir las características de la comunidad en cualquier sitio AEM '
+seo-description: 'Añadir las características de la comunidad en cualquier sitio AEM '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -23,17 +26,17 @@ Cuando se dispone de una licencia de AEM Communities, además de crear sitios de
 
 Para obtener más información sobre la creación de un sitio de comunidad, visite:
 
-* [Información general sobre comunidades AEM](overview.md)
+* [Información general de AEM Communities](overview.md)
 * [Introducción a Comunidades de AEM](getting-started.md)
-* [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md)
+* [Introducción a AEM Communities para la habilitación](getting-started-enablement.md)
 
 >[!NOTE]
 >
->Si no está familiarizado con el entorno de creación, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con el entorno de creación, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponibles {#available-communities-components}
 
-En la tabla siguiente se muestran los componentes de Communities visibles para los autores cuando están activados en el navegador de componentes (barra de tareas).
+La siguiente tabla lista los componentes de Communities visibles para los autores cuando están activados en el navegador de componentes (barra de tareas).
 
 Consulte también la guía [de componentes](components-guide.md)comunitarios interactivos.
 
@@ -48,7 +51,7 @@ Consulte también la guía [de componentes](components-guide.md)comunitarios int
 | Barra lateral de blog | [Blog](blog-feature.md) |
 | Calendario | [Calendario](calendar.md) |
 | Comentarios | [Comentarios](comments.md) |
-| Lista de actividades de la comunidad | [Tendencias de actividades](trends.md) |
+| Lista de actividades de la comunidad | [Tendencias de Actividad](trends.md) |
 | Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](creating-groups.md) |
 | Componer mensaje | [Mensajes](configure-messaging.md) |
 | Asignaciones de habilitación | [Asignaciones](assignments.md) |
@@ -69,14 +72,14 @@ Consulte también la guía [de componentes](components-guide.md)comunitarios int
 | Preguntas relacionadas | [Preguntas y respuestas](working-with-qna.md) |
 | Críticas | [Críticas](reviews.md) |
 | Resumen de críticas (visualización) | [Críticas](reviews.md) |
-| Búsqueda  | [Buscar](search.md) |
+| Búsqueda   | [Buscar](search.md) |
 | Resultado de búsqueda | [Buscar](search.md) |
 | Nube de etiquetas social | [Nube de etiquetas social](tagcloud.md) |
 | Votación | [Votación](voting.md) |
 
 >[!NOTE]
 >
->El componente de encuesta ya no está disponible y es compatible con las comunidades de Experience Manager.
+>El componente de encuesta ya no está disponible y es compatible con las comunidades Experience Manager.
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 

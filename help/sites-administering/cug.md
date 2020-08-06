@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Para configurar dicho área dentro del sitio web:
 
 Para crear un grupo de usuarios cerrado:
 
-1. Vaya a **Herramientas - Seguridad** desde la pantalla de inicio de AEM.
+1. Vaya a **Herramientas - Seguridad** desde la AEM pantalla principal.
 
    >[!NOTE]
    >
@@ -74,7 +77,7 @@ Para aplicar el CUG a una página:
 1. En la siguiente ventana, vaya a la ficha **Avanzadas** .
 1. Desplácese hacia abajo y active la casilla de verificación en la sección Requisito **de autenticación** .
 
-1. Agregue la ruta de configuración siguiente y, a continuación, presione Guardar.
+1. Añada la ruta de configuración a continuación y, a continuación, pulse Guardar.
 1. A continuación, vaya a la ficha **Permisos** y presione el botón **Editar grupo** cerrado de usuarios.
 
    ![captura de pantalla_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
@@ -93,15 +96,15 @@ Para aplicar el CUG a una página:
 
    Esto es opcional, si se deja en blanco, se utilizará la página de inicio de sesión estándar.
 
-1. Agregue los grupos **** admitidos. Utilice + para agregar grupos o - para eliminar. Sólo los miembros de estos grupos podrán iniciar sesión y acceder a las páginas.
+1. Añada los grupos **** admitidos. Utilice + para agregar grupos o - para eliminar. Sólo los miembros de estos grupos podrán iniciar sesión y acceder a las páginas.
 1. Asigne un **territorio** (un nombre para los grupos de páginas) si es necesario. Déjelo vacío para utilizar el título de página.
 1. Click **OK** to save the specification.
 
-Consulte Administración [de identidades](/help/sites-administering/identity-management.md) para obtener información sobre perfiles en el entorno de publicación y formularios para iniciar y cerrar sesión.
+Consulte [Identity Management](/help/sites-administering/identity-management.md) para obtener información sobre perfiles en el entorno de publicación y formularios para iniciar y cerrar sesión.
 
 ## Vinculación al reino {#linking-to-the-realm}
 
-Dado que el objetivo de cualquier vínculo al Reino de CUG no es visible para el usuario anónimo, el comprobador de vínculos eliminará dichos vínculos.
+Dado que el destinatario de cualquier vínculo al Reino de CUG no es visible para el usuario anónimo, el comprobador de vínculos eliminará dichos vínculos.
 
 Para evitarlo, es aconsejable crear páginas de redireccionamiento no protegidas que apunten a páginas dentro del reino de CUG. Las entradas de navegación se procesan sin causar ningún problema al comprobador de vínculos. Solo cuando se acceda realmente a la página de redireccionamiento se redirigirá al usuario dentro del reino CUG, después de proporcionar correctamente sus credenciales de inicio de sesión.
 

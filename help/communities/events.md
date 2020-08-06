@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 4%
 
 ---
 
@@ -33,8 +36,8 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 |---|---|
 | POST | miembro crea un evento de calendario |
 | AÑADIR | comentarios de miembros en un evento de calendario |
-| ACTUALIZAR | se edita el evento de calendario o comentario del miembro |
-| ELIMINAR | se elimina el evento de calendario o comentario del miembro |
+| ACTUALIZAR | se edita el evento o comentario del calendario del miembro |
+| ELIMINAR | se elimina el evento o comentario del calendario del miembro |
 
 [Componente](essentials-comments.md)ComentariosSocialEvent `topic`= com/adobe/cq/social/comment
 
@@ -63,7 +66,7 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 | ACTUALIZAR | se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
 
-[Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/journal
+[Componente](blog-developer-basics.md)HistorialSocialEvent `topic`= com/adobe/cq/social/historial
 
 | **Verbo** | **Descripción** |
 |---|---|
@@ -95,14 +98,14 @@ Para los componentes Communities entregados en la versión, las tablas siguiente
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR CLASIFICACIÓN | el contenido del miembro se ha valorado |
+| AÑADIR CLASIFICACIÓN | el contenido del miembro se ha valorado |
 | QUITAR CLASIFICACIÓN | el contenido del miembro se ha reducido |
 
 [Componente](essentials-voting.md)de votaciónSocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descripción** |
 |---|---|
-| AGREGAR VOTACIÓN | el contenido de los miembros ha sido votado |
+| AÑADIR VOTACIÓN | el contenido de los miembros ha sido votado |
 | ELIMINAR VOTACIÓN | el contenido de los miembros ha sido rechazado |
 
 **Componentes** habilitados para moderaciónSocialEvent `topic`= com/adobe/cq/social/moderation
@@ -126,9 +129,9 @@ El evento personalizado anularía el método `getVerb()` para que `verb`se devue
 >
 >Asegúrese de que una extensión personalizada esté registrada con una clasificación inferior a cualquier implementación existente en el producto.
 
-### Pseudocódigo para el evento de componente personalizado {#pseudo-code-for-custom-component-event}
+### Pseudocódigo para el Evento de componentes personalizados {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
+[org.osgi.service.evento.Evento](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);\
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);\
 [com.adobe.granite.activityStream.ObjectTypes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);\
 [com.adobe.granite.activity.stream.Verbs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
@@ -227,11 +230,11 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Ejemplo de EventListener para filtrar datos de flujo de actividad {#sample-eventlistener-to-filter-activity-stream-data}
+## Ejemplo de EventListener para filtrar datos de flujo de Actividad {#sample-eventlistener-to-filter-activity-stream-data}
 
-Es posible escuchar eventos para modificar lo que aparece en el flujo de actividades.
+Es posible escuchar eventos para modificar lo que aparece en el flujo de actividad.
 
-El siguiente ejemplo de pseudocódigo eliminará los eventos DELETE para el componente Comentarios del flujo de actividades.
+El siguiente ejemplo de pseudocódigo eliminará los eventos de DELETE para el componente Comentarios del flujo de actividad.
 
 ### Pseudocódigo para EventListener {#pseudo-code-for-eventlistener}
 

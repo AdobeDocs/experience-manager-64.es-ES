@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 93%
 
 ---
 
@@ -41,10 +44,11 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Lanzamientos**:
 
       1. Seleccione **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
-   * **Sitios**:
+   * **Sites**:
 
       1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
       1. Aquí, seleccione **Crear lanzamiento** para abrir el asistente.
+
    >[!NOTE]
    >
    >En la consola de **Sites** también puede utilizar el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar una página antes de hace clic en **Crear**.
@@ -55,6 +59,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    * Vaya a la ubicación requerida.
    * Seleccione la(s) página(s) de origen y confírmela(s) (marca).
+
    Repita el proceso tantas veces como sea necesario.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Incluir páginas secundarias**:
 
       * Especifique si desea crear un lanzamiento con o sin las páginas secundarias.  De forma predeterminada, se incluyen estas subpáginas.
+
    Continúe con **Siguiente**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
       De forma predeterminada, está opción está seleccionada.
 
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Utilice **Crear** para completar el proceso y crear el lanzamiento nuevo. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.

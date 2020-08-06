@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
 source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
 
 AEM le ofrece dos entornos:
 
-* Creación
+* Autor
 * Publicación
 
 Interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan leerlo.
@@ -35,7 +38,7 @@ En el entorno de creación, las funciones de AEM están disponibles mediante dos
 
 >[!NOTE]
 >
->AEM y Dispatcher se utilizan para publicar esta documentación de AEM.
+>AEM y Dispatcher se utilizan para publicar esta documentación AEM.
 
 ## Entorno de creación {#author-environment}
 
@@ -93,4 +96,4 @@ Cuando el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.
 
 ## Dispatcher {#dispatcher}
 
-A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implementa almacenamiento en caché y equilibrio de carga.
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)implementa almacenamiento en caché y equilibrio de carga.**

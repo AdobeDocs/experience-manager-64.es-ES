@@ -1,27 +1,30 @@
 ---
 title: Guía de tamaño de recursos
-description: 'Prácticas recomendadas para determinar métricas eficaces para estimar la infraestructura y los recursos necesarios para implementar Recursos AEM. '
+description: 'Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar AEM Assets. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
 source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 0%
 
 ---
 
 
 # Guía de tamaño de recursos {#assets-sizing-guide}
 
-Al ajustar el tamaño del entorno para una implementación de Recursos Adobe Experience Manager (AEM), es importante asegurarse de que hay suficientes recursos disponibles en cuanto a rendimiento de red, de disco, CPU, memoria, E/S y rendimiento de red. Cambiar el tamaño de muchos de estos recursos requiere comprender cuántos recursos se cargan en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la página de la biblioteca para buscar la velocidad a la que se crean los recursos.
+Al ajustar el tamaño del entorno para una implementación de Adobe Experience Manager (AEM) Assets, es importante asegurarse de que hay suficientes recursos disponibles en cuanto a rendimiento de disco, CPU, memoria, E/S y red. Cambiar el tamaño de muchos de estos recursos requiere comprender cuántos recursos se cargan en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la página de la biblioteca para buscar la velocidad a la que se crean los recursos.
 
 ## Disco {#disk}
 
 ### Almacén de datos {#datastore}
 
-Un error común que se produce al ajustar el tamaño del espacio de disco necesario para una implementación de Recursos es basar los cálculos en el tamaño de las imágenes sin procesar que se van a ingerir en el sistema. De forma predeterminada, AEM crea tres representaciones además de la imagen original para utilizarlas en la representación de los elementos de la interfaz de usuario de AEM. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos que se ingieren.
+Un error común que se produce al ajustar el tamaño del espacio de disco necesario para una implementación de Recursos es basar los cálculos en el tamaño de las imágenes sin procesar que se van a ingerir en el sistema. De forma predeterminada, AEM crea tres representaciones además de la imagen original para utilizarlas en la representación de los elementos de la interfaz de usuario AEM. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos que se ingieren.
 
-La mayoría de los usuarios definen las representaciones personalizadas además de las representaciones predeterminadas. Además de las representaciones, Recursos AEM permite extraer subrecursos de tipos de archivo comunes, como InDesign e Illustrator.
+La mayoría de los usuarios definen las representaciones personalizadas además de las representaciones predeterminadas. Además de las representaciones, AEM Assets permite extraer subrecursos de tipos de archivo comunes, como InDesign y Illustrator.
 
 Por último, las funciones de control de versiones de AEM almacenan duplicados de los recursos en el historial de versiones. Puede configurar las versiones que se purgarán con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio adicional en el almacenamiento.
 
@@ -30,7 +33,7 @@ Teniendo en cuenta estos factores, se requiere una metodología para calcular un
 1. Determine el tamaño y el número de recursos que se cargarán en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en AEM. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y de la complejidad de las imágenes.
 1. Defina las representaciones que se utilizarán.
-1. Cree las representaciones en AEM mediante ImageMagick o las aplicaciones de Adobe Creative Cloud. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Scene7, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
+1. Cree las representaciones en AEM mediante las aplicaciones de Creative Cloud de ImageMagick o Adobe. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Scene7, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
 1. Si planea utilizar subrecursos, genérelos para los tipos de archivo correspondientes. Consulte la documentación en línea sobre cómo generar páginas de subrecursos a partir de archivos de InDesign o archivos PNG/PDF a partir de capas de Illustrator.
 1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de recursos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se mantendrán las versiones de los recursos en el sistema.
@@ -47,7 +50,7 @@ La realización de los pasos 1 a 9 ayuda a determinar lo siguiente:
 * Número de nuevos recursos cargados cada mes
 * Años de crecimiento para asignar espacio
 
-Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto del mantenimiento de versiones de recursos o la modificación de recursos en AEM en el crecimiento del disco.
+Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto de mantener versiones de recursos o modificar los recursos en el crecimiento de AEM en disco.
 
 Los datos de ejemplo completados en la herramienta muestran la importancia de realizar los pasos mencionados. Si cambia el tamaño del almacén de datos basándose únicamente en las imágenes sin procesar que se están cargando (1 TB), puede que haya subestimado el tamaño del repositorio en un factor de 15.
 
@@ -102,13 +105,13 @@ Para el repositorio, utilice discos SSD o discos con un nivel de IOPS bueno a 30
 
 ## Red {#network}
 
-Recursos AEM tiene varios casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos de AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá siendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en consideraciones de recursos de [AEM para la experiencia del usuario, tamaño de instancia, evaluación del flujo de trabajo y topología](assets-network-considerations.md)de red.
+AEM Assets tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá siendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en [AEM consideraciones de recursos para la experiencia del usuario, tamaño de instancia, evaluación del flujo de trabajo y topología](assets-network-considerations.md)de red.
 
 ## WebDAV {#webdav}
 
-Si agrega la aplicación de escritorio de AEM a la combinación, los problemas de red se agravan debido a las ineficiencias del protocolo WebDAV.
+Si agrega la aplicación de escritorio AEM a la combinación, los problemas de red se agravan debido a las ineficiencias del protocolo WebDAV.
 
-Para ilustrar estas ineficiencias, Adobe probó el rendimiento del sistema con WebDAV en OS X. Se ha abierto, editado y guardado un archivo de InDesign de 3,5 MB. Se formularon las siguientes observaciones:
+Para ilustrar estas ineficiencias, Adobe probó el rendimiento del sistema mediante WebDAV en OS X. Se ha abierto, editado y guardado un archivo InDesign de 3,5 MB. Se formularon las siguientes observaciones:
 
 * Se generaron alrededor de 100 solicitudes HTTP para completar la operación
 * El archivo se cargó cuatro veces a través de HTTP
@@ -118,13 +121,13 @@ Para ilustrar estas ineficiencias, Adobe probó el rendimiento del sistema con W
 
 Al analizar el tiempo de ahorro promedio para los archivos a través de WebDAV, se descubrió que el rendimiento aumenta considerablemente a medida que el ancho de banda aumenta hasta el nivel de 5 a 10 Mbps. Por lo tanto, Adobe recomienda que cada usuario que acceda al sistema simultáneamente tenga al menos 10 Mbps de velocidad de carga y un ancho de banda de 5 a 10 Mbps.
 
-Para obtener más información, consulte [Resolución de problemas de la aplicación](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)de escritorio AEM.
+Para obtener más información, consulte [Resolución de problemas de AEM aplicación](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)de escritorio.
 
-## Restricciones      {#limitations}
+## Restricciones     {#limitations}
 
 Al ajustar el tamaño de una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos en varias implementaciones de Recursos.
 
-El tamaño del archivo no es el único factor que contribuye a problemas de memoria insuficiente (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto al inicio de AEM.
+El tamaño del archivo no es el único factor que contribuye a problemas de memoria insuficiente (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto cuando inicio AEM.
 
 Además, puede editar la propiedad de tamaño de umbral del `com.day.cq.dam.commons.handler.StandardImageHandler` componente en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
 
@@ -136,10 +139,10 @@ While the limit for the number of nodes in a repository has not been determined,
 
 El límite en el número de archivos que pueden existir en un almacén de datos puede ser de 2.1 billones debido a las limitaciones del sistema de archivos. Es probable que el repositorio encuentre problemas debido a un gran número de nodos mucho antes de alcanzar el límite del almacén de datos.
 
-Si las representaciones se generan incorrectamente, utilice la biblioteca de Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 &amp;ast;) 1024 &amp;ast; 1024 píxeles)&#39;. *El tamaño del recurso es insignificante*.
+Si las representaciones no se generan correctamente, utilice la biblioteca Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 &amp;ast;) 1024 &amp;ast; 1024 píxeles)&#39;. *El tamaño del recurso es insignificante*.
 
-Es difícil estimar con precisión el tamaño del archivo TIFF compatible de fábrica (OOTB) con un montón específico para AEM, ya que factores adicionales, como el procesamiento de la influencia del tamaño de píxel. Es posible que AEM pueda procesar un archivo de tamaño de 255 MB OOTB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
+Es difícil estimar con precisión el tamaño del archivo TIFF admitido de forma predeterminada (OOTB) con un montón específico para AEM, ya que factores adicionales, como el procesamiento de la influencia del tamaño de los píxeles. Es posible que AEM procesar un archivo de tamaño de 255 MB OOTB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
 
 ## Tamaño de los recursos {#size-of-assets}
 
-De forma predeterminada, AEM le permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)muy grandes.
+De forma predeterminada, AEM permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)muy grandes.

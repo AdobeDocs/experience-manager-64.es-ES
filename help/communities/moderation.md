@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 3%
 
 ---
 
 
 # Consola de moderación {#moderation-console}
 
-En las comunidades AEM, los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores) pueden [moderar de forma masiva el contenido](moderate-ugc.md) de la comunidad desde los entornos de creación y publicación.
+En AEM Communities, los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores) pueden [moderar de forma masiva el contenido](moderate-ugc.md) de la comunidad a partir de los entornos de creación y publicación.
 
 Los administradores y los moderadores de la comunidad también pueden realizar una moderación [en contexto](in-context.md) en el entorno de publicación.
 
 Una característica de todos los sitios [de](sites-console.md) comunidad es un elemento de `Administration`menú disponible para los usuarios que inician sesión con privilegios administrativos. El `Administration`vínculo proporciona acceso a la consola Moderación.
 
-Desde la consola Moderación, los administradores y los moderadores de la comunidad tendrán acceso a todo el contenido generado por el usuario (UGC) para el que tengan permiso de moderación. Si se permite moderar varios sitios, es posible ver anuncios en todos los sitios o filtrar por sitios de comunidades seleccionados.
+Desde la consola Moderación, los administradores y los moderadores de la comunidad tendrán acceso a todo el contenido generado por el usuario (UGC) para el que tengan permiso de moderación. Si se permite moderar varios sitios, es posible realizar vistas de anuncios en todos los sitios o filtrar por sitios de comunidades seleccionados.
 
 Para obtener información más detallada, visite [Administración de usuarios y grupos](users.md)de usuarios.
 
@@ -35,7 +38,7 @@ La consola Moderación admite:
 
 Sólo cuando se inicia sesión como administrador o como miembro con ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, se pueden realizar tareas de moderación.
 
-## Acceso al entorno de publicación {#publish-environment-access}
+## Acceso a Entorno de publicación {#publish-environment-access}
 
 El acceso a la consola Moderación desde un sitio de comunidad publicado se realiza a través de un vínculo Administración que aparece cuando un moderador de la comunidad ha iniciado sesión.
 
@@ -45,9 +48,9 @@ Al seleccionar el vínculo Administración, aparece la consola Moderación:
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## Acceso al entorno de creación {#author-environment-access}
+## Acceso a Entorno de autor {#author-environment-access}
 
-En el entorno de creación, para acceder a la consola Moderación
+En el entorno de creación, para llegar a la consola Moderación
 
 * Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Moderación]**
 
@@ -110,7 +113,7 @@ El área de contenido contiene información para la UGC publicada:
 
 El icono del panel lateral abre el carril del filtro. El carril del filtro, que aparece a la izquierda del área de contenido, proporciona diferentes filtros, cada uno de los cuales tiene un efecto inmediato en el UGC referenciado que aparece en el área de contenido.
 
-Los filtros dentro de cada categoría están **** Oed juntos, y los filtros en diferentes categorías están **** Yed juntos.
+Los filtros dentro de cada categoría están **** Oed juntos, y los filtros en diferentes categorías están **** Y juntos.
 
 Por ejemplo, si marca **Pregunta** y **Respuesta**, verá contenido que sea una **pregunta** *o* una **respuesta**.
 
@@ -122,7 +125,7 @@ Sin embargo, si selecciona **Pregunta** y **Pendiente**, solo verá contenido qu
 
 ![searchicon](assets/searchicon.png)
 
-Cuando el carril del filtro está abierto, el icono de búsqueda activa el panel lateral cerrado. Sin embargo, para cerrar el carril del filtro y ver únicamente el contenido generado por el usuario, haga clic en el icono Buscar y seleccione la opción Solo contenido.
+Cuando el carril del filtro está abierto, el icono de búsqueda activa el panel lateral cerrado. Sin embargo, para cerrar el carril del filtro y solo realizar la vista del contenido generado por el usuario, haga clic en el icono Buscar y seleccione la opción Solo contenido.
 
 #### Ruta de contenido {#content-path}
 
@@ -144,7 +147,7 @@ El sitio limita el UGC referenciado mostrado a los anuncios en los sitios de com
 
 >[!NOTE]
 >
->Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el asistente [de creación de](sites-console.md)sitios, como los ejemplos de Geometrixx.
+>Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el asistente [de creación del](sites-console.md)sitio, como los ejemplos de Geometrixx.
 >
 >Cuando un miembro de la comunidad de confianza accede a la consola de moderación masiva al publicar, solo se muestran las referencias a UGC creadas para los sitios de la comunidad que el miembro está autorizado a moderar y se pueden filtrar con el filtro del sitio.
 
@@ -188,7 +191,7 @@ Para agregar recursos adicionales en los que filtrar:
 
 El resultado es un nuevo filtro seleccionable `Voting`en el grupo de `Content Type` filtros.
 
-Cuando se selecciona ese filtro, el contenido del tablero mostrará UGC que coincida con cualquiera de los ResourceTypes especificados.
+Cuando se selecciona ese filtro, el contenido del panel mostrará UGC que coincida con cualquiera de los ResourceTypes especificados.
 
 #### Estado {#status}
 
@@ -216,7 +219,7 @@ Los miembros limitan el UGC referenciado que se muestra en UGC publicado por el 
 
 #### Enviado en el último {#posted-in-the-last}
 
-Publicado en Última limita el UGC referenciado que se muestra a las publicaciones realizadas en la última hora, día, semana, mes o año.
+Publicado en Última limita el UGC referenciado mostrado a las publicaciones realizadas en la última hora, día, semana, mes o año.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
@@ -256,17 +259,17 @@ Los iconos que permiten estas acciones solo aparecen en la barra de herramientas
 
 En el modo de selección única, es posible
 
-* Ver detalles del usuario seleccionando el nombre del usuario
-* Ver el anuncio en contexto seleccionando el vínculo al anuncio
+* Vista de los detalles del usuario seleccionando el nombre del usuario
+* Vista del anuncio en contexto seleccionando el vínculo al anuncio
 * [respuesta](#reply)
 * [Permitir](#allow)
 * [Denegar](#deny)
 * [Eliminar](#delete)
 * [Cerrar](#close)
-* Ver historial [de moderación](#moderation-history)
+* Historial de [moderación de Vista](#moderation-history)
 * [Ver detalles](#viewdetails)
 
-Presente en la vista de tarjeta encima de los iconos de acción de moderación es el texto de la publicación y debajo hay datos que indican
+Presente en la vista de la tarjeta sobre los iconos de la acción de moderación es el texto de la publicación y debajo hay datos que indican
 
 * Si las respuestas están precedidas por el número de respuestas
 * Si se ha marcado

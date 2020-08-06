@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Para realizar una comprobación de coherencia, vaya a la página de administraci
 
 **Herramientas > Consola web > Principal (en la barra de menús) > JMX > com.adobe.granite (Repositorio)**
 
-**[En una instalación predeterminada, se encuentra aquí:  |Mostrar|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+En una instalación predeterminada, se encuentra aquí:  **[|Mostrar|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 En la sección **Operaciones** de la página encontrará dos métodos: **`traversalCheck`** y **`consistencyCheck`**. Para ejecutar una comprobación, haga clic en la operación e introduzca los parámetros deseados.
 

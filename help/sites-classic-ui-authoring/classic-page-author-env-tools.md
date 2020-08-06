@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 87%
 
 ---
 
@@ -98,7 +101,7 @@ Esta ficha enumera los productos. Después de crear un párrafo apropiado (por e
 
 ### Búsqueda de páginas {#finding-pages}
 
-Esta ficha muestra todas las páginas. Haga doble clic en cualquier página para abrirla y editarla.
+Esta ficha muestra todas las páginas. Haga clic con el Doble en cualquier página para abrirla y editarla.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -154,7 +157,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Seleccione** Mostrar referencias... AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
+1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -177,7 +180,7 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
 
-## Modos de página  {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página con la IU clásica hay varios modos a los que se puede acceder mediante los iconos en la parte inferior de la barra de tareas:
 

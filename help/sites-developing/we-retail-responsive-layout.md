@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 7%
 
 ---
 
 
 # Intentando un diseño adaptable en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseños proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
 
 ## Intentándolo {#trying-it-out}
 
@@ -25,7 +28,7 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Cambie a **Vista previa** para ver la página tal como se representaría para un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Aloha espirits en el norte de Noruega*.
+1. Cambie a **Previsualización** para ver la página tal como se representaría en un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Aloha espirits en el norte de Noruega*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -41,8 +44,8 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
 1. Al capturar y arrastrar el controlador de cambio de tamaño del componente, se muestra automáticamente la cuadrícula de diseño para ayudarle con el cambio de tamaño.
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 ## Información adicional {#further-information}
 
-Para obtener más información, consulte el documento de creación [Diseño](/help/sites-authoring/responsive-layout.md) adaptable o el documento de administrador [Configuración del contenedor de diseño y el modo](/help/sites-administering/configuring-responsive-layout.md) de diseño para obtener detalles técnicos completos.
+Para obtener más información, consulte Diseño [adaptable](/help/sites-authoring/responsive-layout.md) de documento de creación o el documento de administración [Configuración del Contenedor de diseño y el modo](/help/sites-administering/configuring-responsive-layout.md) de diseño para obtener más información técnica.

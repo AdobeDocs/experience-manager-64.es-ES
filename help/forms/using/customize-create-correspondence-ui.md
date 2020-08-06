@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ La administración de correspondencia le permite cambiar la marca de su plantill
 
 Puede cambiar el logotipo en la interfaz de usuario Crear correspondencia con el logotipo de su organización.
 
-![](assets/0_1_introscreenshot.png) Icono personalizado en la **figura Crear interfaz de usuario** de correspondencia: *El icono personalizado en la interfaz de usuario Crear correspondencia*
+![Icono personalizado en la](assets/0_1_introscreenshot.png)figura Crear interfaz de usuario **de correspondencia:** *Icono personalizado en la interfaz de usuario Crear correspondencia*
 
 ### Cambio del logotipo en la interfaz de usuario Crear correspondencia {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -42,9 +45,9 @@ Para cualquier personalización, cree una estructura de carpetas paralela, como 
 
 La rama /apps (estructura de carpetas):
 
-* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o una corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
+* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
 * Le ayuda a no perturbar el sistema o ramificación actual, que posiblemente pueda desestabilizarse por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
-* Ayuda a sus recursos a obtener una mayor prioridad cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para buscar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas en ella).
+* Ayuda a los recursos a obtener una mayor prioridad cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas en ella).
 
 Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps:
 
@@ -59,11 +62,11 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Ruta:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Ubicación de superposición: /apps/
+      **Ubicación de superposición:** /apps/
 
-      **** Coincidir tipos de nodo: Verificado
+      **Coincidir tipos de nodo:** Verificado
 
       ![Ruta del nodo de superposición](assets/0_1_5ioverlaynodedialog.png)
 
@@ -83,11 +86,11 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
    1. Haga clic con el botón derecho en la carpeta **imgs** de la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Ruta:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Ubicación de superposición: /apps/
+      **Ubicación de superposición:** /apps/
 
-      **** Coincidir tipos de nodo: Verificado
+      **Coincidir tipos de nodo:** Verificado
 
    1. Haga clic en **Aceptar**.
 
@@ -128,18 +131,18 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Haga doble clic en la propiedad **jcr:data** .
+1. Haga clic con el Doble en la propiedad **jcr:data** .
 
    Aparecerá el cuadro de diálogo Editar jcr:datos.
 
-   Ahora haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y defina type nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
+   Ahora haga clic en la carpeta newlogo.png, doble haga clic en jcr:content (opción dim) y defina type nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
 
 1. En el cuadro de diálogo Editar jcr:datos, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 
    Los formatos de archivo de imagen admitidos dependen del navegador que utilice para acceder a AEM Forms. Todos los navegadores admiten JPEG, GIF y PNG. Para obtener más información, consulte la documentación específica del navegador sobre los formatos de imagen admitidos.
 
    ![Archivo de logotipo personalizado de muestra](assets/geometrixx-outdoors.png)
-   **** Figura: *Ejemplo: CustomLogo.png para su uso como logotipo personalizado*
+   **Figura:** *Ejemplo: CustomLogo.png para usar como logotipo personalizado*
 
 1. Haga clic en **Guardar todo**.
 
@@ -158,7 +161,7 @@ Siga los pasos siguientes para configurar la hoja de estilo para procesar el log
 
    1. Haga clic con el botón derecho en la carpeta **css** y seleccione **Crear > Crear archivo**.
    1. En el cuadro de diálogo Nuevo archivo, especifique el nombre del CSS como `customcss.css`(no puede utilizar otro nombre de archivo) y haga clic en **Aceptar**.
-   1. Agregue el siguiente código al archivo css recién creado. En content:url, en el código, especifique el nombre de la imagen que ha cargado en la carpeta imgs en CRXDE.
+   1. Añada el siguiente código al archivo css recién creado. En content:url, en el código, especifique el nombre de la imagen que ha cargado en la carpeta imgs en CRXDE.
 
       ```css
       .logo, .logo:after {
@@ -172,5 +175,5 @@ Siga los pasos siguientes para configurar la hoja de estilo para procesar el log
 
 Borre la caché del explorador y, a continuación, abra la instancia Crear interfaz de usuario de correspondencia en el explorador. Debería ver su logotipo personalizado.
 
-![](assets/0_1_introscreenshot-1.png) Cree una interfaz de usuario de correspondencia con un logotipo **** personalizado Figura: *El icono personalizado en la interfaz de usuario Crear correspondencia*
+![Cree una interfaz de usuario de correspondencia con un logotipo](assets/0_1_introscreenshot-1.png)**personalizado Figura:** *Icono personalizado en la interfaz de usuario Crear correspondencia*
 

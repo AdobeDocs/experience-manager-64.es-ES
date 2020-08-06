@@ -1,8 +1,8 @@
 ---
 title: Lista de comprobación de seguridad
 seo-title: Lista de comprobación de seguridad
-description: Obtenga información sobre las diversas consideraciones de seguridad al configurar e implementar AEM.
-seo-description: Obtenga información sobre las diversas consideraciones de seguridad al configurar e implementar AEM.
+description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
+seo-description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Security Checklist{#security-checklist}
 
-En esta sección se describen los distintos pasos que debe seguir para garantizar que la instalación de AEM sea segura cuando se implemente. La lista de comprobación debe aplicarse de arriba a abajo.
+Esta sección trata de varios pasos que debe realizar para garantizar que la instalación de AEM sea segura cuando se implemente. La lista de comprobación debe aplicarse de arriba a abajo.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ En esta sección se describen los distintos pasos que debe seguir para garantiza
 
 ## Principales medidas de seguridad {#main-security-measures}
 
-### Ejecución de AEM en modo de producción lista {#run-aem-in-production-ready-mode}
+### Ejecutar AEM en modo listo para producción {#run-aem-in-production-ready-mode}
 
 Para obtener más información, consulte [Ejecución de AEM en modo](/help/sites-administering/production-ready.md)listo para la producción.
 
@@ -48,13 +48,13 @@ La activación de la capa de transporte HTTPS en instancias de creación y publi
 
 Asegúrese de que ha instalado las revisiones de [seguridad más recientes proporcionadas por Adobe](https://helpx.adobe.com/es/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Cambio de las contraseñas predeterminadas para las cuentas de administración de la consola de AEM y OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Cambiar las contraseñas predeterminadas de las cuentas de administración de la consola de AEM y OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe recomienda encarecidamente que, tras la instalación, cambie la contraseña de las cuentas [**privilegiadas de **AEM`admin`](#changing-the-aem-admin-password)(en todas las instancias).
+Adobe recomienda encarecidamente que después de la instalación cambie la contraseña de las cuentas de [**AEM **`admin`privilegiadas](#changing-the-aem-admin-password)(en todas las instancias).
 
 Estas cuentas incluyen:
 
-* La cuenta de AEM `admin`
+* La cuenta AEM `admin`
 
    Una vez que haya cambiado la contraseña de la cuenta de administrador de AEM, deberá utilizar la nueva contraseña al acceder a CRX.
 
@@ -76,7 +76,7 @@ Aquí puede editar la `admin` cuenta y [cambiar la contraseña](/help/sites-admi
 
 #### Importancia de cambiar la contraseña de la consola web OSGi {#importance-of-changing-the-osgi-web-console-password}
 
-Aparte de la cuenta de AEM `admin` , si no se cambia la contraseña predeterminada para la contraseña de la consola web OSGi, puede producirse lo siguiente:
+Aparte de la cuenta de AEM `admin` , si no se cambia la contraseña predeterminada de la contraseña de la consola web OSGi, puede producirse lo siguiente:
 
 * Exposición del servidor con una contraseña predeterminada durante el inicio y el apagado (que puede tardar minutos en los servidores grandes);
 * Exposición del servidor cuando el repositorio está inactivo o reiniciando el paquete y OSGI se está ejecutando.
@@ -107,13 +107,13 @@ Adobe recomienda definir las páginas de tratamiento de errores personalizadas, 
 >
 >Consulte [Cómo puedo crear secuencias de comandos personalizadas o artículos de la base de conocimientos de controladores](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) de errores para obtener más información.
 
-### Lista de comprobación de seguridad completa de Dispatcher {#complete-dispatcher-security-checklist}
+### Lista de comprobación de seguridad completa del despachante {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher es una parte fundamental de su infraestructura. Adobe recomienda encarecidamente que complete la lista de comprobación de seguridad del [despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html).
 
 >[!CAUTION]
 >
->Con el Dispatcher debe deshabilitar el selector &quot;.form&quot;.
+>Con Dispatcher debe deshabilitar el selector &quot;.form&quot;.
 
 ## Pasos de verificación {#verification-steps}
 
@@ -131,13 +131,13 @@ Por motivos de seguridad, ambos deben modificarse para reflejar el caso de uso p
 
 ### Compruebe las comprobaciones de estado de seguridad de Panel de operaciones {#check-the-operations-dashboard-security-health-checks}
 
-AEM 6 presenta el nuevo Panel de operaciones, destinado a ayudar a los gestores de sistemas a solucionar problemas y supervisar el estado de una instancia.
+AEM 6 presenta el nuevo Panel de operaciones, que tiene por objeto ayudar a los operadores de sistemas a solucionar problemas y supervisar el estado de una instancia.
 
 El panel también incluye una serie de controles de seguridad. Se recomienda que verifique el estado de todas las comprobaciones de seguridad antes de empezar a usar la instancia de producción. Para obtener más información, consulte la documentación [del Panel de](/help/sites-administering/operations-dashboard.md)operaciones.
 
 ### Compruebe si el contenido de ejemplo está presente {#check-if-example-content-is-present}
 
-Todos los usuarios y el contenido de ejemplo (por ejemplo, el proyecto Geometrixx y sus componentes) deben desinstalarse y eliminarse completamente en un sistema productivo antes de ponerlo a disposición del público.
+Todos los usuarios y el contenido de ejemplo (por ejemplo, el proyecto de Geometrixx y sus componentes) deben desinstalarse y eliminarse completamente en un sistema productivo antes de ponerlo a disposición del público.
 
 >[!NOTE]
 >
@@ -147,21 +147,21 @@ Todos los usuarios y el contenido de ejemplo (por ejemplo, el proyecto Geometrix
 
 Estos paquetes OSGi de desarrollo deben desinstalarse tanto en los sistemas productivos de creación como de publicación antes de hacerlos accesibles.
 
-* Compatibilidad con Adobe CRXDE (com.adobe.granite.crxde-support)
+* Compatibilidad con CRXDE de Adobe (com.adobe.granite.crxde-support)
 * Explorador de Adobe Granite CRX (com.adobe.granite.crx-explorer)
-* Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
+* CRXDE Lite de granito de Adobe (com.adobe.granite.crxde-lite)
 
 ### Compruebe si el paquete de desarrollo Sling está presente {#check-if-the-sling-development-bundle-is-present}
 
-Las herramientas de desarrollador de [AEM para Eclipse](/help/sites-developing/aem-eclipse.md) implementan la instalación de compatibilidad con herramientas de Apache Sling (org.apache.sling.tooling.support.install).
+Las [AEM Herramientas para desarrolladores de Eclipse](/help/sites-developing/aem-eclipse.md) implementan la Instalación de soporte de Apache Sling Tooling (org.apache.sling.tooling.support.install).
 
 Este paquete OSGi debe desinstalarse tanto en los sistemas productivos de creación como de publicación antes de hacerlos accesibles.
 
-### Proteger contra falsificaciones de solicitudes entre sitios {#protect-against-cross-site-request-forgery}
+### Protect contra falsificación de solicitudes entre sitios {#protect-against-cross-site-request-forgery}
 
 #### Marco de protección de la CSRF {#the-csrf-protection-framework}
 
-AEM 6.1 incluye un mecanismo que ayuda a proteger contra los ataques de falsificación de solicitudes entre sitios, denominado **CSRF Protection Framework**. Para obtener más información sobre cómo utilizarla, consulte la [documentación](/help/sites-developing/csrf-protection.md).
+AEM 6.1 se suministra con un mecanismo que ayuda a proteger contra los ataques de falsificación de solicitudes entre sitios, denominado **CSRF Protection Framework**. Para obtener más información sobre cómo utilizarla, consulte la [documentación](/help/sites-developing/csrf-protection.md).
 
 #### El filtro Remitente del reenvío Sling {#the-sling-referrer-filter}
 
@@ -216,7 +216,7 @@ Algunos ajustes de OSGI se establecen de forma predeterminada para facilitar la 
 
 Para cada uno de los siguientes servicios es necesario cambiar la configuración especificada:
 
-* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md):
+* [Administrador](/help/sites-deploying/osgi-configuration-settings.md)de biblioteca HTML de Adobe Granite:
 
    * active **Minify** (para eliminar caracteres de CRLF y de espacio en blanco).
    * active **Gzip** (para permitir que se comprueben los archivos y se acceda a ellos con una sola solicitud).
@@ -265,7 +265,7 @@ Un ataque de denegación de servicio (DoS) es un intento de hacer que un recurso
 
    Todas las variaciones válidas (p. ej., devolver una `200` respuesta y configuradas para ser almacenadas en caché) serán almacenadas en la caché por el despachante, lo que finalmente conducirá a un sistema de archivos completo y a la ausencia de servicio para más solicitudes.
 
-Hay muchos puntos de configuración para prevenir estos ataques, aquí solo analizamos los relacionados directamente con AEM.
+Hay muchos puntos de configuración para prevenir estos ataques, aquí solamente discutimos los directamente relacionados con AEM.
 
 **Configuración de Sling para evitar DoS**
 
@@ -301,9 +301,9 @@ Para ayudar a evitar el uso indebido de DoS, puede:
 
       **Resultados** máximos de JSON ( `json.maximumresults`)
 
-      en la configuración del servlet [Apache Sling GET](/help/sites-deploying/osgi-configuration-settings.md). Cuando se supera este límite, el procesamiento se contraerá. El valor predeterminado para Sling dentro de AEM es `200`.
+      en la configuración del servlet de GET [Apache Sling](/help/sites-deploying/osgi-configuration-settings.md). Cuando se supera este límite, el procesamiento se contraerá. El valor predeterminado para Sling dentro de AEM es `200`.
 
-   * Como medida preventiva, deshabilite los demás procesadores predeterminados (HTML, texto sin formato, XML). Nuevamente configurando el servlet [Apache Sling GET](/help/sites-deploying/osgi-configuration-settings.md).
+   * Como medida preventiva, deshabilite los demás procesadores predeterminados (HTML, texto sin formato, XML). Nuevamente configurando el Servlet de GET [Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
    >
    >No deshabilite el procesador JSON, esto es necesario para el funcionamiento normal de AEM.
@@ -316,9 +316,9 @@ Para ayudar a evitar el uso indebido de DoS, puede:
 
 >[!NOTE]
 >
->Esta mitigación solo debe realizarse en entornos AEM que no utilicen Forms.
+>Esta mitigación solo debe realizarse en entornos de AEM que no utilicen Forms.
 
-Dado que AEM no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formularios en consultas desencadena una costosa inversión del repositorio, que normalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia de **&amp;ast;.form.&amp;ast;** cadena en consultas.
+Dado que AEM no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formulario en consultas desencadena una costosa inversión del repositorio, que normalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia de **&amp;ast;.form.&amp;ast;** cadena en consultas.
 
 Para mitigar esto, siga los pasos a continuación:
 
@@ -331,9 +331,9 @@ Para mitigar esto, siga los pasos a continuación:
 
 **Mitigar los errores causados por el servlet de descarga de recursos**
 
-El servlet de descarga de recursos predeterminado en AEM permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor o la red.
+El servlet de descarga de recursos predeterminado de AEM permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor o la red.
 
-Para mitigar los posibles riesgos de denegación de servicio causados por esta función, el componente `AssetDownloadServlet` OSGi está desactivado de forma predeterminada para las instancias de publicación en las versiones más recientes de AEM.
+Para mitigar los posibles riesgos de DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está deshabilitado de forma predeterminada para las instancias de publicación en las versiones de AEM más recientes.
 
 Si la configuración requiere que el servidor de descarga de recursos esté habilitado, consulte [este artículo](/help/assets/download-assets-from-aem.md#disable-asset-download-servlet) para obtener más información.
 
@@ -361,15 +361,15 @@ WebDAV debe deshabilitarse tanto en la entorno de creación como en la de public
 
    >[!NOTE]
    >
-   >No es necesario reiniciar AEM.
+   >No es necesario reiniciar el AEM.
 
 ### Verifique que no esté revelando información de identificación personal en la ruta principal de los usuarios {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 Es importante que proteja a los usuarios asegurándose de que no expone ninguna información personal que pueda identificar en la ruta de inicio de los usuarios del repositorio.
 
-Desde AEM 6.1, la forma en que se almacenan los nombres de nodo de ID de usuario (también conocidos como autorizables) se cambia con una nueva implementación de la `AuthorizableNodeName` interfaz. La nueva interfaz ya no mostrará el ID de usuario en el nombre del nodo, sino que generará un nombre aleatorio.
+Desde AEM 6.1, la forma en que se almacenan los nombres de nodos de ID de usuario (también conocidos como autorizables) se cambia con una nueva implementación de la `AuthorizableNodeName` interfaz. La nueva interfaz ya no mostrará el ID de usuario en el nombre del nodo, sino que generará un nombre aleatorio.
 
-No es necesario realizar ninguna configuración para habilitarla, ya que esta es la forma predeterminada de generar ID autorizables en AEM.
+No es necesario realizar ninguna configuración para habilitarla, ya que ésta es la forma predeterminada de generar ID autorizables en AEM.
 
 Aunque no se recomienda, puede deshabilitarlo en caso de que necesite la implementación antigua para la compatibilidad con versiones anteriores con las aplicaciones existentes. Para ello, debe:
 
@@ -393,7 +393,7 @@ Para obtener más [información sobre el rastreo de clics, consulte el sitio](ht
 
 ### Asegúrese De Replicar Correctamente Las Claves De Cifrado Cuando Sea Necesario {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
-Determinadas funciones de AEM y esquemas de autenticación requieren que se reproduzcan las claves de cifrado en todas las instancias de AEM.
+Determinadas funciones de AEM y esquemas de autenticación requieren que se replicen las claves de cifrado en todas las instancias AEM.
 
 Antes de hacer esto, tenga en cuenta que la replicación de claves se realiza de manera diferente entre las versiones, ya que la manera en que se almacenan las claves es diferente entre las versiones 6.3 y anteriores.
 
@@ -407,7 +407,7 @@ Por lo tanto, para replicar las claves en las instancias, debe copiarlas de la i
 
 Más concretamente, debe:
 
-1. Acceda a la instancia de AEM, que suele ser una instancia de autor, que contiene el material clave que copiar;
+1. Acceda a la instancia de AEM, normalmente una instancia de autor, que contiene el material clave que copiar;
 1. Busque el paquete com.adobe.granite.crypto.file en el sistema de archivos local. Por ejemplo, en esta ruta:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
@@ -429,25 +429,25 @@ Más concretamente, debe:
 
 >[!NOTE]
 >
->Puede volver al método previo a la versión 6.3 para almacenar claves agregando el parámetro siguiente cuando instale AEM por primera vez:
+>Puede volver al método previo 6.3 de almacenamiento de claves agregando el parámetro siguiente cuando instale por primera vez AEM:
 >
 >`-Dcom.adobe.granite.crypto.file.disable=true`
 
-#### Replicar claves para AEM 6.2 y versiones anteriores {#replicating-keys-for-aem-and-older-versions}
+#### Replicar claves para versiones AEM 6.2 y anteriores {#replicating-keys-for-aem-and-older-versions}
 
-En AEM 6.2 y versiones anteriores, las claves se almacenan en el repositorio bajo el `/etc/key` nodo.
+En las versiones AEM 6.2 y anteriores, las claves se almacenan en el repositorio bajo el `/etc/key` nodo.
 
 La manera recomendada de replicar de forma segura las claves en todas las instancias es replicar sólo este nodo. Puede replicar nodos de forma selectiva mediante CRXDE Lite:
 
-1. Abra CRXDE Lite en *https://&lt;serrveraddress>:4502/crx/de/index.jsp*
+1. Abra el CRXDE Lite en *https://&lt;serrveraddress>:4502/crx/de/index.jsp*
 1. Select the `/etc/key` node.
 1. Vaya a la ficha **Replicación** .
 1. Pulse el botón **Replicación** .
 
 ### Realizar una prueba de penetración {#perform-a-penetration-test}
 
-Adobe recomienda encarecidamente realizar una prueba de penetración de su infraestructura de AEM antes de continuar con la producción.
+Adobe recomienda encarecidamente realizar una prueba de penetración de su infraestructura AEM antes de continuar con la producción.
 
 ### Optimizaciones para el desarrollo {#development-best-practices}
 
-Es fundamental que el nuevo desarrollo siga las optimizaciones [de](/help/sites-developing/security.md) seguridad para garantizar que el entorno de AEM permanezca seguro.
+Es fundamental que el nuevo desarrollo siga las optimizaciones [de](/help/sites-developing/security.md) seguridad para garantizar que el entorno AEM permanezca seguro.

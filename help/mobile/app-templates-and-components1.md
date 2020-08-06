@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ Cada plantilla le presentará una selección de componentes disponibles para su 
 
 >[!NOTE]
 >
->Para obtener información sobre cómo desarrollar la aplicación AEM con CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para obtener información sobre cómo desarrollar su aplicación AEM con CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Una plantilla es la base de una página.
 
@@ -60,18 +63,19 @@ Este nodo contiene *un nodo jcr:content (cq:PageContent)* que se utiliza como ba
 >
 >* [Plantillas](/help/sites-developing/templates.md)
 >* [Componentes](/help/sites-developing/components.md)
+
 >
 
 
 
 Una vez que conozca las plantillas y los componentes de forma básica, consulte los siguientes recursos:
 
-* [Creación y adición de plantillas y componentes](/help/mobile/mobile-ondemand-app-templates.md)
+* [Creación y Añade de plantillas y componentes](/help/mobile/mobile-ondemand-app-templates.md)
 * [Uso de las propiedades del contenido para exportar contenido](/help/mobile/on-demand-content-properties-exporting.md)
-* [Prácticas recomendadas ](/help/mobile/best-practices-aem-mobile.md)
+* [Prácticas recomendadas  ](/help/mobile/best-practices-aem-mobile.md)
 * [Desarrollo de AEM Mobile Content Services](/help/mobile/developing-content-services.md)
 
-### Additional Resources {#additional-resources}
+### Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre temas adicionales en aplicaciones móviles, consulte los vínculos siguientes:
 

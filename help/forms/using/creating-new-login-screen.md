@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
@@ -45,6 +48,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
 
    1. Cambie el nombre de la carpeta por el nombre de configuración regional que desee admitir. Por ejemplo, `ar`.
    1. Cambie el valor de la propiedad `jcr:language` a `ar`(para la `ar` carpeta).
+
    >[!NOTE]
    >
    >Si la configuración regional es una combinación de código de país de idioma, por ejemplo, `ar-DZ`, cambie el nombre de la carpeta y el valor de la propiedad a `ar-DZ`.
@@ -192,6 +196,7 @@ Puede modificar la pantalla de inicio de sesión de todos los módulos de AEM Fo
       * de `/libs/livecycle/core/components/login`
       * hasta `/apps/livecycle/core/components/login`
    1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar el texto recientemente agregado.
+
    ![captura](assets/capture.png)
 
    ```

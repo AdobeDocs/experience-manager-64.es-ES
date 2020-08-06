@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +27,15 @@ Los autores de formularios pueden configurar una página para cada formulario, a
 1. Proporcione la dirección URL de la página de redireccionamiento en Página de agradecimiento en la sección Envío.
 1. Opcionalmente, en Enviar acción, para la acción de extremo Enviar a REST, puede configurar el parámetro que se pasará a la página de redirección.
 
-![](assets/thank-you-setting-1.png) Configuración **de página de redirección** Figura: Configuración de la página de *redirección*
+![Configuración](assets/thank-you-setting-1.png)de página de redirección **Figura:** *Redireccionar configuración de página*
 
 Los autores de formularios pueden utilizar los siguientes parámetros que se pasan a la página de agradecimiento. Para todas las acciones de envío disponibles, se pasan `status` y `owner` los parámetros. Además de estos dos parámetros, se pasan algunos parámetros adicionales para las siguientes acciones de envío:
 
-* **Acción** de almacenamiento de contenido (desaprobada): `contentPath`—se pasa la ruta del nodo en el repositorio donde se almacenan los datos enviados.
+* **Acción** de almacenamiento de contenido (desaprobada): `contentPath`se pasa la ruta del nodo del repositorio en el que se almacenan los datos enviados.
 
-* **Acción** de almacenar PDF (desaprobada): `contentPath`—de los datos enviados y de la ruta al nodo que almacena el archivo PDF en el repositorio—se pasa.
+* **Acción** de almacenar PDF (desaprobada): `contentPath`—de los datos enviados y de la ruta al nodo que almacena el archivo PDF en el repositorio— se pasa.
 
-* **Flujo de trabajo** Enviar a Forms: Se pasan los parámetros de salida devueltos por el flujo de trabajo de formularios.
+* **Enviar al flujo de trabajo** de Forms: Se pasan los parámetros de salida devueltos por el flujo de trabajo de formularios.
 
 * **Enviar al extremo** REST: Se pasan los parámetros añadidos para la asignación de parámetros en el campo. `status` y `owner` no se pasan parámetros en esta acción de envío. Para obtener más información, consulte [Configuración de la acción](/help/forms/using/configuring-submit-actions.md)Enviar a envío de extremo REST.
 

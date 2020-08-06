@@ -1,6 +1,6 @@
 ---
-title: Elementos de almacenamiento en AEM 6.4
-seo-title: Elementos de almacenamiento en AEM 6.4
+title: Elementos de Almacenamiento en AEM 6.4
+seo-title: Elementos de Almacenamiento en AEM 6.4
 description: Obtenga información sobre las implementaciones de almacenamiento de nodos disponibles en AEM 6.4 y cómo mantener el repositorio.
 seo-description: Obtenga información sobre las implementaciones de almacenamiento de nodos disponibles en AEM 6.4 y cómo mantener el repositorio.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
@@ -12,34 +12,37 @@ discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 1%
 
 ---
 
 
-# Elementos de almacenamiento en AEM 6.4{#storage-elements-in-aem}
+# Elementos de Almacenamiento en AEM 6.4{#storage-elements-in-aem}
 
 En este artículo trataremos:
 
-* [Información general sobre el almacenamiento en AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Visión general del Almacenamiento en el AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## Información general sobre el almacenamiento en AEM 6 {#overview-of-storage-in-aem}
+## Visión general del Almacenamiento en el AEM 6 {#overview-of-storage-in-aem}
 
-Uno de los cambios más importantes en AEM 6 son las innovaciones a nivel de repositorio.
+Uno de los cambios más importantes del AEM 6 son las innovaciones a nivel de repositorio.
 
-Actualmente, hay dos implementaciones de almacenamiento de nodos disponibles en AEM6: Almacenamiento de etiquetas y almacenamiento MongoDB.
+Actualmente, hay dos implementaciones de almacenamiento de nodos disponibles en AEM6: almacenamiento Tar y almacenamiento MongoDB.
 
-### Almacenamiento de información de etiquetas {#tar-storage}
+### Almacenamiento Tar {#tar-storage}
 
-#### Ejecución de una instancia de AEM recién instalada con Almacenamiento de la barra {#running-a-freshly-installed-aem-instance-with-tar-storage}
+#### Ejecución de una instancia de AEM recién instalada con el Almacenamiento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
 >[!CAUTION]
 >
 >El PID para el almacén de nodos del segmento ha cambiado de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService en versiones anteriores de AEM 6 a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService en AEM 6.3. Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 
-De forma predeterminada, AEM 6 utiliza el almacenamiento de etiquetas para almacenar nodos y binarios, mediante las opciones de configuración predeterminadas. Para configurar manualmente su configuración de almacenamiento, siga el procedimiento siguiente:
+De forma predeterminada, AEM 6 utiliza el almacenamiento Tar para almacenar nodos y binarios, utilizando las opciones de configuración predeterminadas. Para configurar manualmente su configuración de almacenamiento, siga el procedimiento siguiente:
 
-1. Descargue el tarro de inicio rápido de AEM 6 y colóquelo en una nueva carpeta.
+1. Descargue el tarro de inicio rápido AEM 6 y colóquelo en una nueva carpeta.
 1. Desempaquetar AEM ejecutando:
 
    `java -jar cq-quickstart-6.jar -unpack`
@@ -48,20 +51,20 @@ De forma predeterminada, AEM 6 utiliza el almacenamiento de etiquetas para almac
 
 1. Cree un archivo llamado `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` en la carpeta recién creada.
 
-1. Edite el archivo y defina las opciones de configuración. Las siguientes opciones están disponibles para el almacén de nodos de segmento, que es la base de la implementación de almacenamiento de información de etiquetas de AEM:
+1. Edite el archivo y defina las opciones de configuración. Las siguientes opciones están disponibles para el almacén de nodos de segmento, que es la base de AEM implementación de almacenamiento de etiquetas:
 
    * `repository.home`:: Ruta al directorio raíz del repositorio en el cual se almacenan varios datos relacionados con el repositorio. De forma predeterminada, los archivos de segmentos se almacenarían en el directorio crx-quickstart/segmentstore.
    * `tarmk.size`:: Tamaño máximo de un segmento en MB. El valor predeterminado es 256 MB.
 
-1. Inicie AEM.
+1. Inicio AEM.
 
-### Almacenamiento de Mongo {#mongo-storage}
+### Almacenamiento Mongo {#mongo-storage}
 
-#### Ejecución de una instancia de AEM recién instalada con Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
+#### Ejecución de una instancia de AEM recién instalada con el Almacenamiento Mongo {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM 6 se puede configurar para que se ejecute con el almacenamiento MongoDB siguiendo el procedimiento siguiente:
+AEM 6 puede configurarse para ejecutarse con el almacenamiento MongoDB siguiendo el procedimiento siguiente:
 
-1. Descargue el tarro de inicio rápido de AEM 6 y colóquelo en una nueva carpeta.
+1. Descargue el tarro de inicio rápido AEM 6 y colóquelo en una nueva carpeta.
 1. Desempaquetar AEM ejecutando el siguiente comando:
 
    `java -jar cq-quickstart-6.jar -unpack`
@@ -70,7 +73,7 @@ AEM 6 se puede configurar para que se ejecute con el almacenamiento MongoDB sigu
 1. Cree una carpeta con el nombre `crx-quickstart\install` en el directorio de instalación.
 1. Configure el almacén de nodos creando un archivo de configuración con el nombre de la configuración que desee utilizar en el `crx-quickstart\install` directorio.
 
-   El almacén de nodos de documentos (que es la base de la implementación de almacenamiento MongoDB de AEM) utiliza un archivo denominado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   El almacén de nodos de Documento (que es la base de AEM implementación de almacenamiento de MongoDB) utiliza un archivo llamado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Edite el archivo y defina las opciones de configuración. Las opciones disponibles son las siguientes:
 
@@ -82,20 +85,20 @@ AEM 6 se puede configurar para que se ejecute con el almacenamiento MongoDB sigu
 
 1. Cree un archivo de configuración con el PID del almacén de datos que desee utilizar y edite el archivo para configurar las opciones de configuración. Para obtener más información, consulte [Configuración de almacenes de nodos y almacenes](/help/sites-deploying/data-store-config.md)de datos.
 
-1. Inicie el archivo AEM 6 con un servidor de almacenamiento MongoDB ejecutando:
+1. Inicio el tarro de AEM 6 con un fondo de almacenamiento MongoDB ejecutando:
 
    ```shell
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Dónde **`-r`** está el modo de ejecución back-end. En este ejemplo, comenzará con la compatibilidad con MongoDB.
+   Dónde **`-r`** está el modo de ejecución back-end. En este ejemplo, inicio con la compatibilidad con MongoDB.
 
 #### Desactivación de páginas grandes transparentes {#disabling-transparent-huge-pages}
 
-Red Hat Linux utiliza un algoritmo de administración de memoria llamado Transparent Enorme Pages (THP). Mientras AEM realiza lecturas y escrituras específicas, THP está optimizado para operaciones de gran tamaño. Debido a esto, se recomienda desactivar THP tanto en almacenamiento Tar como en almacenamiento Mongo. Para deshabilitar el algoritmo, siga estos pasos:
+Red Hat Linux utiliza un algoritmo de administración de memoria llamado Transparent Enorme Pages (THP). Mientras AEM realiza lecturas y escrituras específicas, THP está optimizado para operaciones de gran tamaño. Debido a esto, se recomienda desactivar THP tanto en Tar como en el almacenamiento Mongo. Para deshabilitar el algoritmo, siga estos pasos:
 
 1. Abra el `/etc/grub.conf` archivo en el editor de texto que desee.
-1. Agregue la siguiente línea al archivo **grub.conf** :
+1. Añada la siguiente línea al archivo **grub.conf** :
 
    ```
    transparent_hugepage=never
@@ -119,6 +122,7 @@ Red Hat Linux utiliza un algoritmo de administración de memoria llamado Transpa
 >
 >* Para obtener más información acerca de las páginas transparentes y grandes en Red Hat Linux, consulte este [artículo](https://access.redhat.com/solutions/46111).
 >* Para obtener sugerencias de ajuste para Linux, consulte este [artículo](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 

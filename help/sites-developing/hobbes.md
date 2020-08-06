@@ -1,8 +1,8 @@
 ---
 title: Prueba de la IU
 seo-title: Prueba de la IU
-description: AEM proporciona un marco para automatizar las pruebas en la interfaz de usuario de AEM
-seo-description: AEM proporciona un marco para automatizar las pruebas en la interfaz de usuario de AEM
+description: AEM proporciona un marco para automatizar las pruebas de la IU AEM
+seo-description: AEM proporciona un marco para automatizar las pruebas de la IU AEM
 uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,23 +11,26 @@ topic-tags: testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 
 
 # Prueba de la IU{#testing-your-ui}
 
-AEM proporciona un marco para automatizar las pruebas en la interfaz de usuario de AEM. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. La estructura proporciona la API de ajavascript para crear pruebas.
+AEM proporciona un marco para automatizar las pruebas de la IU AEM. Con el marco, las pruebas de interfaz de usuario se escriben y ejecutan directamente en un navegador web. La estructura proporciona la API de ajavascript para crear pruebas.
 
-El marco de pruebas de AEM utiliza Hobbes.js, una biblioteca de pruebas escrita en JavaScript. El marco Hobbes.js se desarrolló para probar AEM como parte del proceso de desarrollo. El módulo ya está disponible para uso público para probar sus aplicaciones AEM.
+El marco de AEM prueba utiliza Hobbes.js, una biblioteca de pruebas escrita en JavaScript. El marco Hobbes.js fue desarrollado para probar AEM como parte del proceso de desarrollo. El módulo ya está disponible para uso público para probar las aplicaciones AEM.
 
 >[!NOTE]
 >
->Consulte la [documentación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
+>Consulte la [documentación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) de Hobbes.js para obtener más información sobre la API.
 
 ## Estructura de las pruebas {#structure-of-tests}
 
-Al utilizar pruebas automatizadas en AEM, es importante comprender los siguientes términos:
+Al utilizar pruebas automatizadas dentro de AEM, es importante comprender los siguientes términos:
 
 |  |  |
 |---|---|
@@ -89,7 +92,7 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
    ![](do-not-localize/chlimage_1-8.png)
 
-1. Para ver los resultados de cada caso de prueba, toque o haga clic en el título del caso de prueba. Al tocar o hacer clic en el nombre de la prueba en el panel **Resultado** se muestran todos los detalles.
+1. Para vista de los resultados de cada caso de prueba, toque o haga clic en el título del caso de prueba. Al tocar o hacer clic en el nombre de la prueba en el panel **Resultado** se muestran todos los detalles.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -101,12 +104,12 @@ Para obtener más información sobre la creación de sus propios grupos de prueb
 
 1. Abra CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 1. Haga clic con el botón secundario en la `/etc/clientlibs` carpeta y, a continuación, haga clic en **Crear > Crear carpeta**. Escriba `myTests` el nombre y haga clic en **Aceptar**.
-1. Haga clic con el botón secundario en la `/etc/clientlibs/myTests` carpeta y haga clic en **Crear > Crear nodo**. Utilice los siguientes valores de propiedad y haga clic en **Aceptar**:
+1. Haga clic con el botón secundario en la `/etc/clientlibs/myTests` carpeta y, a continuación, haga clic en **Crear > Crear nodo**. Utilice los siguientes valores de propiedad y haga clic en **Aceptar**:
 
    * Nombre: `myFirstTest`
    * Tipo: `cq:ClientLibraryFolder`
 
-1. Agregue las siguientes propiedades al nodo myFirstTest:
+1. Añada las siguientes propiedades al nodo myFirstTest:
 
    | Nombre | Tipo | Value |
    |---|---|---|

@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
 source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ Este documento DDX combina dos documentos PDF denominados *map.pdf* y *direccion
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Compilador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -79,8 +82,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms.
 
@@ -104,7 +107,7 @@ Tanto el archivo map.pdf como el archivo direccionamiento.pdf deben colocarse en
 
 **Definición de opciones de tiempo de ejecución**
 
-Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede definir, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Compilación de los documentos PDF de entrada**
 
@@ -191,6 +194,7 @@ Monte un documento PDF mediante la API de servicio de ensamblador (Java):
    * Un `com.adobe.idp.Document` objeto que representa el documento DDX que se va a utilizar
    * Un `java.util.Map` objeto que contiene los archivos PDF de entrada que se van a montar
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos
+
    El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
 1. Extraiga los resultados.
@@ -200,6 +204,7 @@ Monte un documento PDF mediante la API de servicio de ensamblador (Java):
    * Invocar el `AssemblerResult` método del `getDocuments` objeto. Esto devuelve un `java.util.Map` objeto.
    * Repita el `java.util.Map` objeto hasta que encuentre el `com.adobe.idp.Document` objeto resultante. (Puede utilizar el elemento de resultado PDF especificado en el documento DDX para obtener el documento).
    * Invocar el `com.adobe.idp.Document` método del `copyToFile` objeto para extraer el documento PDF.
+
    >[!NOTE]
    >
    >Si `*LOG_LEVEL*` se configuró para generar un registro, puede extraer el registro utilizando el `*AssemblerResult*` método `*getJobLog*` del objeto.
@@ -227,12 +232,12 @@ Compilación de documentos PDF mediante la API de servicio de ensamblador (servi
 1. Cree un cliente de ensamblador de PDF.
 
    * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -270,6 +275,7 @@ Compilación de documentos PDF mediante la API de servicio de ensamblador (servi
    * Un `BLOB` objeto que representa el documento DDX.
    * La `mapItem` matriz que contiene los documentos PDF de entrada. Sus claves deben coincidir con los nombres de los archivos de origen PDF y sus valores deben ser los `BLOB` objetos que correspondan a dichos archivos.
    * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución.
+
    El `invoke` método devuelve un `AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que puedan haberse producido.
 
 1. Extraiga los resultados.
@@ -279,10 +285,11 @@ Compilación de documentos PDF mediante la API de servicio de ensamblador (servi
    * Acceda al `AssemblerResult` campo del `documents` objeto, que es un `Map` objeto que contiene los documentos PDF resultantes.
    * Repita el `Map` objeto hasta que encuentre la clave que coincida con el nombre del documento resultante. A continuación, convierta los elementos del miembro `value` de la matriz en un `BLOB`.
    * Extraiga los datos binarios que representan el documento PDF accediendo a la propiedad de su `BLOB` objeto `MTOM` . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
+
    >[!NOTE]
    >
    >Si `LOG_LEVEL` se configuró para generar un registro, puede extraer el registro obteniendo el valor del miembro de datos del `AssemblerResult` objeto `jobLog` .
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

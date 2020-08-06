@@ -1,38 +1,41 @@
 ---
-title: Creación de formularios adaptables mediante el esquema JSON
-seo-title: Creación de formularios adaptables mediante el esquema JSON
-description: 'Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que permite aprovechar los esquemas JSON existentes para crear formularios adaptables. '
-seo-description: 'Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que permite aprovechar los esquemas JSON existentes para crear formularios adaptables. '
+title: Creación de formularios adaptables con Esquema JSON
+seo-title: Creación de formularios adaptables con Esquema JSON
+description: 'Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que le permite aprovechar los esquemas JSON existentes para crear formularios adaptables. '
+seo-description: 'Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que le permite aprovechar los esquemas JSON existentes para crear formularios adaptables. '
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1233'
+ht-degree: 4%
 
 ---
 
 
-# Creación de formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
+# Creación de formularios adaptables con Esquema JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Requisitos previos {#prerequisites}
 
-La creación de un formulario adaptable con un esquema JSON como modelo de formulario requiere una comprensión básica del esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
+La creación de un formulario adaptable con un Esquema JSON como modelo de formulario requiere una comprensión básica del Esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
 
 * [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
-## Uso de un esquema JSON como modelo de formulario {#using-a-json-schema-as-form-model}
+## Uso de un Esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
 
-AEM Forms admite la creación de un formulario adaptable mediante un esquema JSON existente como modelo de formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las especificaciones [de](https://json-schema.org/draft-04/schema)v4.
+AEM Forms admite la creación de un formulario adaptable utilizando un Esquema JSON existente como modelo de formulario. Este Esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El Esquema JSON que utilice debe cumplir con las especificaciones [de](https://json-schema.org/draft-04/schema)v4.
 
-Las características clave del uso de un esquema JSON son:
+Las características clave del uso de un Esquema JSON son:
 
 * La estructura del JSON se muestra como un árbol en la ficha Buscador de contenido en el modo de creación de un formulario adaptable. Puede arrastrar y agregar elementos de la jerarquía JSON al formulario adaptable.
-* Puede rellenar previamente el formulario con JSON que sea compatible con el esquema asociado.
-* Al enviar, los datos introducidos por el usuario se envían como JSON que se alinean con el esquema asociado.
+* Puede rellenar previamente el formulario con JSON compatible con el esquema asociado.
+* Al enviarlos, los datos introducidos por el usuario se envían como JSON que coinciden con el esquema asociado.
 
-Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente de formulario adaptable correspondiente.
+Un Esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente de formulario adaptable correspondiente.
 
 Esta asignación de elementos JSON con componentes de formulario adaptables es la siguiente:
 
@@ -85,25 +88,25 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
  </tbody> 
 </table>
 
-### Propiedades de esquema comunes {#common-schema-properties}
+### Propiedades comunes del esquema {#common-schema-properties}
 
-El formulario adaptable utiliza la información disponible en el esquema JSON para asignar cada campo generado. En particular:
+El formulario adaptable utiliza la información disponible en el Esquema JSON para asignar cada campo generado. En particular:
 
 * La propiedad title sirve como etiqueta para los componentes del formulario adaptable.
 * La propiedad description se define como una descripción larga para un componente de formulario adaptable.
 * La propiedad predeterminada sirve como valor inicial de un campo de formulario adaptable.
 * La propiedad maxLength se establece como el atributo maxlength del componente de campo de texto.
 * Para el componente de cuadro numérico se utilizan las propiedades Minimum, Maximum, uniqueMinimum y uniqueMaximum como mínimo.
-* Para admitir el intervalo para el componente DatePicker, se proporcionan las propiedades adicionales minDate y maxDate del esquema JSON.
+* Para admitir el intervalo para el componente DatePicker, se proporcionan las propiedades de Esquema JSON minDate y maxDate adicionales.
 * Las propiedades minItems y maxItems se utilizan para restringir el número de elementos o campos que se pueden agregar o quitar de un componente de panel.
 * La propiedad readOnly establece el atributo de sólo lectura de un componente de formulario adaptable.
 * La propiedad required marca el campo de formulario adaptable como obligatorio, mientras que en el caso de panel (donde type es object), los datos JSON enviados por última vez tienen campos con el valor vacío correspondiente a ese objeto.
 * La propiedad pattern se define como el patrón de validación (expresión regular) en forma adaptable.
-* La extensión del archivo de esquema JSON debe conservarse como .schema.json. Por ejemplo, &lt;filename>.schema.json.
+* La extensión del archivo Esquema JSON debe conservarse como .esquema.json. Por ejemplo, &lt;filename>.esquema.json.
 
 ## Esquema JSON de muestra {#sample-json-schema}
 
-Este es un ejemplo de un esquema JSON.
+Este es un ejemplo de un Esquema JSON.
 
 ```
 {
@@ -285,7 +288,7 @@ Este es un ejemplo de un esquema JSON.
 
 ### Definiciones de esquema reutilizables {#reusable-schema-definitions}
 
-Las claves de definición se utilizan para identificar esquemas reutilizables. Las definiciones de esquema reutilizables se utilizan para crear fragmentos. Es similar a identificar tipos complejos en XSD. A continuación se muestra un esquema JSON de muestra con definiciones:
+Las claves de definición se utilizan para identificar esquemas reutilizables. Las definiciones de esquema reutilizables se utilizan para crear fragmentos. Es similar a identificar tipos complejos en XSD. A continuación se muestra un Esquema JSON de muestra con definiciones:
 
 ```
 {
@@ -312,11 +315,11 @@ Las claves de definición se utilizan para identificar esquemas reutilizables. L
 }
 ```
 
-El ejemplo anterior define un registro de cliente, donde cada cliente tiene una dirección de envío y una dirección de facturación. La estructura de ambas direcciones es la misma: las direcciones tienen una dirección, ciudad y estado— por lo tanto, es recomendable no duplicar las direcciones. También facilita la adición y eliminación de campos para cualquier cambio futuro.
+El ejemplo anterior define un registro de cliente, donde cada cliente tiene una dirección de envío y una dirección de facturación. La estructura de ambas direcciones es la misma: las direcciones tienen una dirección, ciudad y estado— así que es una buena idea no duplicado las direcciones. También facilita la adición y eliminación de campos para cualquier cambio futuro.
 
-## Configuración previa de campos en la definición de esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Configuración previa de campos en la definición de Esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo Esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
+Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo de Esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
 ```
 {
@@ -338,12 +341,12 @@ Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo Esq
 
 ## Límite de valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puede agregar las siguientes restricciones a los elementos de esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
+Puede agregar las siguientes restricciones a los elementos de Esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> Propiedad de esquema</strong></p> </td> 
+   <td><p><strong> Esquema, propiedad</strong></p> </td> 
    <td><p><strong>Tipo de datos</strong></p> </td> 
    <td><p><strong>Descripción</strong></p> </td> 
    <td><p><strong>Componente</strong></p> </td> 
@@ -384,7 +387,7 @@ Puede agregar las siguientes restricciones a los elementos de esquema JSON para 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
    <td><p>Booleano</p> </td> 
-   <td><p>Si es true, el valor numérico o la fecha especificados en el componente del formulario deben ser mayores que el valor numérico o la fecha especificados para la propiedad mínima.</p> <p>Si es false, el valor numérico o la fecha especificados en el componente del formulario deben ser mayores o iguales que el valor numérico o la fecha especificados para la propiedad mínima.</p> </td> 
+   <td><p>Si es true, el valor numérico o la fecha especificados en el componente del formulario deben ser buenos que el valor numérico o la fecha especificados para la propiedad mínima.</p> <p>Si es false, el valor numérico o la fecha especificados en el componente del formulario deben ser buenos o iguales al valor numérico o la fecha especificados para la propiedad mínima.</p> </td> 
    <td> 
     <ul> 
      <li>Cuadro numérico</li> 
@@ -395,7 +398,7 @@ Puede agregar las siguientes restricciones a los elementos de esquema JSON para 
   <tr> 
    <td><p><code>minLength</code></p> </td> 
    <td><p>Cadena</p> </td> 
-   <td><p>Especifica el número mínimo de caracteres permitidos en un componente. La longitud mínima debe ser igual o mayor que cero.</p> </td> 
+   <td><p>Especifica el número mínimo de caracteres permitidos en un componente. La longitud mínima debe ser igual o buena a cero.</p> </td> 
    <td> 
     <ul> 
      <li>Cuadro de texto</li> 
@@ -404,7 +407,7 @@ Puede agregar las siguientes restricciones a los elementos de esquema JSON para 
   <tr> 
    <td><code>maxLength</code></td> 
    <td>Cadena</td> 
-   <td>Especifica el número máximo de caracteres permitidos en un componente. La longitud máxima debe ser igual o mayor que cero.</td> 
+   <td>Especifica el número máximo de caracteres permitidos en un componente. La longitud máxima debe ser igual o buena a cero.</td> 
    <td> 
     <ul> 
      <li>Cuadro de texto</li> 
@@ -422,30 +425,30 @@ Puede agregar las siguientes restricciones a los elementos de esquema JSON para 
   <tr> 
    <td>maxItems</td> 
    <td>Cadena</td> 
-   <td>Especifica el número máximo de elementos de una matriz. Los elementos máximos deben ser iguales o mayores que cero.</td> 
+   <td>Especifica el número máximo de elementos de una matriz. Los elementos máximos deben ser iguales o buenos a cero.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>minItems</td> 
    <td>Cadena</td> 
-   <td>Especifica el número mínimo de elementos de una matriz. Los elementos mínimos deben ser iguales o mayores que cero.</td> 
+   <td>Especifica el número mínimo de elementos de una matriz. Los elementos mínimos deben ser iguales o buenos a cero.</td> 
    <td> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Construcciones no compatibles {#non-supported-constructs}
+## Construcciones no compatibles  {#non-supported-constructs}
 
-Los formularios adaptables no admiten las siguientes construcciones de esquema JSON:
+Los formularios adaptables no admiten las siguientes construcciones de Esquema JSON:
 
 * Tipo nulo
-* Tipos de Unión como cualquiera, y
+* tipos de Unión como cualquiera, y
 * OneOf, AnyOf, AllOf y NOT
 * Solo se admiten matrices homogéneas. Por lo tanto, la restricción items debe ser un objeto y no una matriz.
 
-## Frequently asked questions {#frequently-asked-questions}
+## Preguntas frecuentes {#frequently-asked-questions}
 
-**¿Por qué no se pueden arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxOccurs son mayores que 1)?**
+**¿Por qué no se pueden arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxoccur son buenos a partir de 1)?**
 
 En un subformulario repetible, debe utilizar el subformulario completo. Si solo desea campos selectivos, utilice toda la estructura y elimine los no deseados.
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 75%
 
 ---
 
@@ -109,6 +112,7 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
    >
    >
 * Se requieren dos de las herramientas de correo electrónico: **Dirección física de envío (obligatoria)** y **Centro de perfiles (obligatorio)**. Cuando se publica el correo electrónico en ExactTarget, se añaden estas dos herramientas de correo electrónico de forma predeterminada en la parte inferior de cada mensaje.
+
 >
 
 

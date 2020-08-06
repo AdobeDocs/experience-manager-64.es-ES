@@ -1,6 +1,6 @@
 ---
 title: Consideraciones de la red de recursos
-description: Analiza las consideraciones de red al diseñar una implementación de Recursos AEM.
+description: Analiza las consideraciones de red al diseñar una implementación de AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
@@ -21,14 +21,14 @@ Asegúrese de incluir lo siguiente en el diagrama de red:
 * Topología de la red corporativa
 * Vínculo ascendente a Internet desde la red corporativa y el entorno AEM
 * Topología del entorno AEM
-* Definir consumidores simultáneos de la interfaz de red de AEM
+* Definir consumidores simultáneos de la interfaz de red AEM
 * flujos de trabajo definidos de la instancia de AEM
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comience creando un diagrama de la conectividad entre los dispositivos cliente individuales y la red corporativa. En este momento, identifique los recursos compartidos, como las conexiones Wi-Fi, donde varios usuarios acceden al mismo punto o conmutador Ethernet para cargar y descargar recursos.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 Los dispositivos cliente se conectan a la red corporativa de diversas maneras, como WiFi compartido, Ethernet a un conmutador compartido y VPN. La identificación y comprensión de los puntos de chokepoint en esta red es importante para la planificación de Recursos y para modificar la red.
 
@@ -42,7 +42,7 @@ El equipo que se muestra a la derecha tiene una subida limitada a la red corpora
 
 ## Topología de la red corporativa {#topology-of-the-corporate-network}
 
-![chlimage_1-354](assets/chlimage_1-354.png)
+![chlimage_1-356](assets/chlimage_1-354.png)
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las que se utilizan generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, podría ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
@@ -52,13 +52,13 @@ El diagrama muestra velocidades de enlace ascendente más altas dentro de la red
 
 Es importante tener en cuenta factores desconocidos en Internet y en la conexión VPC, ya que el ancho de banda de Internet puede verse afectado debido a la carga máxima o a interrupciones de proveedores a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
 
-En el enlace ascendente desde una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante saber cuánto ancho de banda se puede dedicar o priorizar para Recursos AEM. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80 % de utilización, solo puede asignar un máximo del 20 % del ancho de banda para los recursos de AEM.
+En el enlace ascendente desde una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante comprender cuánto del ancho de banda se puede dedicar o priorizar para AEM Assets. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80 % de utilización, solo puede asignar un máximo del 20 % del ancho de banda para los recursos AEM.
 
 Los servidores de seguridad y los proxies empresariales también pueden dar forma al ancho de banda de muchas formas diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de interrupción importantes que hay que examinar, ya que pueden afectar significativamente a la experiencia del usuario de Recursos.
 
 En este ejemplo, la empresa tiene un vínculo superior de 10 Gbps. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede reducir potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo ascendente a Internet sea de 10 Gbps.
 
-Este es el punto de chokepoint más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o una lista permitida con el grupo de operaciones de red a cargo de este servidor de seguridad.
+Este es el punto de chokepoint más pequeño orientado al cliente. Sin embargo, puede evaluar un cambio o una lista de permitidos con el grupo de operaciones de red a cargo de este servidor de seguridad.
 
 En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas de los usuarios.
 
@@ -66,13 +66,13 @@ En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un c
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-El diseño de la topología del entorno AEM requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
+El diseño de la topología del entorno de AEM requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
 
 El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y medios dinámicos configurados.
 
 El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la instancia de AEM. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
-La instancia de AEM comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
+La instancia de AEM comparte su conexión de 1Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
 
 Al revisar la red desde el dispositivo cliente a la instancia de AEM, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
 
@@ -90,7 +90,7 @@ Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguient
 
 Estos son algunos de los temas a considerar:
 
-* Lectura y reescritura de metadatos XMP
+* Lectura y reescritura de metadatos de XMP
 * activación y replicación automáticas
 * Marcas de agua
 * extracción de página/ingestión de subconjuntos

@@ -1,6 +1,6 @@
 ---
-title: 'Su bandeja de entrada '
-seo-title: 'Su bandeja de entrada '
+title: 'Su bandeja de entrada  '
+seo-title: 'Su bandeja de entrada  '
 description: Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
 seo-description: Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 93%
 
 ---
 
 
-# Su bandeja de entrada {#your-inbox}
+# Su bandeja de entrada   {#your-inbox}
 
 Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
 
@@ -42,6 +45,7 @@ Para ver las notificaciones:
 
    * [Suscripción a las notificaciones](#subscribing-to-notifications)
    * [Procesamiento de notificaciones](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## Suscripción a las notificaciones {#subscribing-to-notifications}
@@ -66,6 +70,7 @@ Para suscribirse a notificaciones:
 
    * **Bandeja de entrada**: las notificaciones se mostrarán en su bandeja de entrada de AEM.
    * **Correo electrónico**: las notificaciones se enviarán a la dirección de correo electrónico definida en su perfil de usuario.
+
    >[!NOTE]
    >
    >Es necesario configurar unas pocas opciones para recibir notificaciones por correo electrónico. También es posible personalizar la plantilla de correo electrónico o añadir una plantilla de correo electrónico para un nuevo idioma. Consulte [Configuración de notificaciones por correo electrónico](/help/sites-administering/notification.md#configuringemailnotification) para configurar las notificaciones por correo electrónico en AEM.
@@ -92,6 +97,7 @@ Para suscribirse a notificaciones:
       Para recibir notificaciones únicamente para acciones en la página definida por la ruta, establezca **¿Exacto?** en **Sí**.
 
    * Para permitir la regla, establezca **Regla** en **Permitir**. Si la establece en **Denegar**, se deniega la regla pero no se quita y se puede permitir después.
+
    Para quitar una definición, seleccione la fila al hacer clic en una celda de tabla y haga clic en **Eliminar**.
 
 1. Haga clic en **Guardar** para guardar la configuración.

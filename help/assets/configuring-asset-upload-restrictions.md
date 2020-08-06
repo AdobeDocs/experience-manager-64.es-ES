@@ -4,13 +4,16 @@ description: Obtenga información sobre cómo configurar Recursos Adobe Experien
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 30%
 
 ---
 
 
 # Configurar restricciones de carga de recursos {#configuring-asset-upload-restrictions}
 
-Puede configurar Recursos Adobe Experience Manager (AEM) para restringir el tipo de recursos (archivos) que los usuarios pueden cargar. Esta función le ayuda a eliminar la posibilidad de que los usuarios carguen recursos en un formato no deseado o carguen archivos maliciosos. El `Day CQ DAM Asset Upload Restriction` servicio le permite controlar el tipo de archivos que los usuarios pueden cargar. De forma predeterminada, Recursos AEM permite a los usuarios cargar recursos de todos los tipos MIME. Sin embargo, puede configurar el servicio para que restrinja a los usuarios la carga de archivos de tipos MIME específicos solamente.
+Puede configurar Recursos Adobe Experience Manager (AEM) para restringir el tipo de recursos (archivos) que los usuarios pueden cargar. Esta función le ayuda a eliminar la posibilidad de que los usuarios carguen recursos en un formato no deseado o carguen archivos maliciosos. El `Day CQ DAM Asset Upload Restriction` servicio le permite controlar el tipo de archivos que los usuarios pueden cargar. De forma predeterminada, AEM Assets permite a los usuarios cargar recursos de todos los tipos MIME. Sin embargo, puede configurar el servicio para que restrinja a los usuarios la carga de archivos de tipos MIME específicos solamente.
 
 1. Para abrir la consola web de Configuration Manager, acceda a `https://[AEM_server]:[port]/system/console/configMgr`.
 1. Abra el servicio **[!UICONTROL Day CQ DAM Asset Upload Restriction]** en modo de edición. De forma predeterminada, está seleccionada la opción **Permitir todo MIME** , que permite a los usuarios cargar archivos de todos los tipos MIME.

@@ -468,7 +468,7 @@ Lista de Contenedor.
 
 **Descripción**
 
-El tipo de nodo `cq:contentPage` contiene las definiciones de propiedad y nodo secundario para las páginas de contenido de ContentBus. Solo cuando se agrega este tipo de mezcla a un nodo de tipo `cq:page`, un nodo se convierte en una página de contenido de ContentBus.
+El tipo de nodo `cq:contentPage` contiene las definiciones de propiedad y nodo secundario para las páginas de contenido de ContentBus. Solo cuando este tipo de mezcla se agrega a un nodo de tipo `cq:page`, un nodo se convierte en una página de contenido de ContentBus.
 
 Los elementos de una `cq:Cq4ContentPage` son:
 
@@ -618,7 +618,7 @@ Configuración de Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Para AEM 5.4, añada al final de la lista:
+Para AEM 5.4 añádase al final de la lista:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 

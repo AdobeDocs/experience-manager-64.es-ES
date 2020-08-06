@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ La siguiente lista de comprobación resalta algunos de los problemas principales
 
 | Comprobar | Respuesta | Acción | Propietario | Vence el |
 |---|---|---|---|---|
-| ¿Se ha establecido un mecanismo claro y regular de presentación de informes? |  |  |  |  |
+| ¿Se ha establecido un mecanismo de sistema de informes claro y regular? |  |  |  |  |
 | ¿Participan los jugadores clave (del equipo de prueba) en las reuniones de estado? |  |  |  |  |
 | ¿Están claramente definidas las responsabilidades de las pruebas (en particular para el cliente)? |  |  |  |  |
 | ¿Cuenta el cliente con la experiencia necesaria para cumplir sus compromisos de pruebas? |  |  |  |  |

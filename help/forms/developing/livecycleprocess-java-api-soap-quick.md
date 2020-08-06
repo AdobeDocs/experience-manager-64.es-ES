@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de LiveCycleProcess Java API(SOAP)Quick
-seo-title: Inicio rápido de LiveCycleProcess Java API(SOAP)Quick
+title: Inicio rápido de la API de Java (SOAP)LiveCycleProcess
+seo-title: Inicio rápido de la API de Java (SOAP)LiveCycleProcess
 description: nulo
 seo-description: nulo
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
@@ -11,13 +11,16 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
 
 # Inicio rápido de la API de Java (SOAP) de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-El inicio rápido de la API de Java (SOAP) está disponible para los procesos. Una instancia *de* proceso es una incidencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
+El Inicio rápido de la API de Java (SOAP) está disponible para los procesos. Una instancia *de* proceso es una incidencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
 
 [Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -31,11 +34,11 @@ El inicio rápido de la API de Java (SOAP) está disponible para los procesos. U
 
 [Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en Forms si utiliza otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
+>Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en el Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
 
 ## Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
@@ -249,7 +252,7 @@ El siguiente ejemplo de código Java suspende una instancia de proceso. Para sus
 
 ## Inicio rápido (modo SOAP): Inicio de instancias de proceso suspendidas mediante la API de Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-El siguiente ejemplo de código Java inicia una instancia de proceso suspendida.
+El siguiente ejemplo de código Java inicio una instancia de proceso suspendida.
 
 ```as3
  /* 
@@ -428,7 +431,7 @@ El siguiente ejemplo de código Java finaliza una instancia de proceso con el va
 
 ## Inicio rápido (modo SOAP): Depuración de datos de proceso mediante la API de Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-El siguiente código Java purga los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* es mayor que 200.
+El siguiente código Java purga los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* es buena a 200.
 
 ```as3
  /* 
@@ -535,7 +538,7 @@ El siguiente código Java purga los datos de un proceso denominado *SecureDocume
 
 ## Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-En el siguiente ejemplo de código se recupera el estado de 10 trabajos de AEM Forms.
+El siguiente ejemplo de código recupera el estado de 10 trabajos de AEM Forms.
 
 ```as3
  /* 

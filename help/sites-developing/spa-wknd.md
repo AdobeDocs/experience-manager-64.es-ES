@@ -24,9 +24,9 @@ Sumérjase en el desarrollo de SPA con este tutorial de varias partes que le gui
 
 ## Tutoriales {#tutorials}
 
-Para ver un ejemplo completo de la creación de su propia aplicación de una sola página que se puede editar con AEM a partir de la configuración del proyecto mediante el enrutamiento de la aplicación, consulte los tutoriales de WKND SPA:
+Para ver un ejemplo completo de cómo crear su propia aplicación de una sola página que se puede editar con AEM comenzando con la configuración del proyecto mediante el enrutamiento de la aplicación, consulte los Tutorials de WKND SPA:
 
-* [Introducción al Editor de AEM SPA y a Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Introducción al editor de AEM SPA y reacción](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Introducción al Editor de SPA de AEM y a Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Introducción al Editor de SPA de AEM y reacción](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, asegúrese de revisar también el [desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md) documento.
+Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, asegúrese de revisar también el [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md) documento.

@@ -10,6 +10,9 @@ topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 translation-type: tm+mt
 source-git-commit: 7e1d32127ee82f4353d768e5a2446a4bf4db2f57
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -30,14 +33,14 @@ Si bien un sistema modular y distribuido tiene sus propios beneficios, el desaf�
 
 ![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-La integración de datos de AEM Forms permite configurar y conectar orígenes de datos dispares con AEM Forms. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades comerciales y servicios entre fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario, una extensión del esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos del modelo de datos. Un modelo de datos de formulario permite:
+La integración de datos de AEM Forms permite configurar y conectar distintas fuentes de datos con AEM Forms. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de las entidades comerciales y los servicios a través de las fuentes de datos conectadas. La representación unificada se denomina modelo de datos de formulario, extensión de esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos del modelo de datos. Un modelo de datos de formulario permite:
 
 * Acceda a objetos, propiedades y servicios del modelo de datos desde orígenes de datos conectados.
 * Creación de propiedades y objetos del modelo de datos personalizado
 * Cree asociaciones entre objetos de modelo de datos dentro de y entre orígenes de datos.
-* Invocar los servicios de objetos del modelo de datos para consultar o escribir datos en orígenes de datos y desde ellos.
+* Invocar los servicios de objetos del modelo de datos para la consulta o escritura de datos desde y hacia orígenes de datos.
 
-Una vez creado el modelo de datos de formulario, puede utilizarlo en varios flujos de trabajo de comunicaciones interactivas y formularios adaptables, como:
+Una vez creado el modelo de datos de formulario, puede utilizarlo en varios flujos de trabajo de comunicación interactivos y de formulario adaptable, como:
 
 * Crear formularios adaptables y comunicaciones interactivas basadas en el modelo de datos de formulario
 * Rellenar formularios adaptables y comunicaciones interactivas desde orígenes de datos configurados

@@ -671,6 +671,6 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 
 ### Cómo trabajar con AEM Communities {#how-to-work-with-aem-communities}
 
-Cuando dispone de una licencia para la función de AEM Communities, se necesita un tarro de API adicional.
+Cuando dispone de licencia para la función AEM Communities, se necesita un jar de API adicional.
 
 Para obtener más información, consulte [Uso de Maven para comunidades](/help/communities/maven.md)

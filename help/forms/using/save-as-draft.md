@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Puede descartar los borradores tanto en modo sin conexión como en modo en líne
 
 Siga los pasos siguientes para eliminar un borrador:
 
-1. En la aplicación AEM Forms, vaya a **Forms.**
+1. En la aplicación de AEM Forms, vaya a **Forms.**
 1. Seleccione **Borradores** en la lista desplegable situada junto a Buscar.
 1. Un formulario con el icono de edición ![edit-draft-app](assets/edit-draft-app.png) indica un borrador. Puntee en las elipsis horizontales junto al borrador.
 1. En las opciones que aparecen cuando toca los puntos suspensivos horizontales, toque **Eliminar borrador**.

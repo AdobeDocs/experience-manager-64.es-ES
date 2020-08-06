@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 
 ## Ejemplo {#example}
 
-Supongamos que el encabezado del componente de comentarios debe mostrarse con un aspecto alternativo en un sitio de la instancia de AEM, mientras aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentarios para todas las instancias, una mejor solución es asegurarse de que hay varios componentes de comentarios disponibles para su uso en varios sitios.
+Supongamos que el encabezado del componente de comentario debe mostrarse con un aspecto alternativo en un sitio de la instancia de AEM, mientras aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentarios para todas las instancias, una mejor solución es asegurarse de que hay varios componentes de comentarios disponibles para su uso en varios sitios.
 
 Para implementar esta solución, cree un nuevo componente que extienda (anule) el existente y modifique la secuencia de comandos Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la extendida, mientras que los sitios que utilizan la apariencia predeterminada no se verán afectados.
 
@@ -36,6 +39,6 @@ El componente de comentarios es en realidad uno de los dos componentes que compo
 Para ampliar los comentarios deberá:
 
 1. [Crear los componentes](extend-create-components.md)
-1. [Agregar comentario a la página de muestra](extend-sample-page.md)
+1. [Añadir comentario a página de muestra](extend-sample-page.md)
 1. [Modificar el aspecto](extend-alter-appearance.md)
 

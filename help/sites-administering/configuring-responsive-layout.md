@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +45,8 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
          Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de este; por ejemplo, para obtener el control de columna.
 
-* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de diseño Una vez colocado el contenedor de diseño en la página, puede utilizar el modo **Diseño**para colocar el contenido en la cuadrícula adaptable.
+* **[Modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de diseño Una vez colocado el contenedor de diseño en la página, puede utilizar la variable
+**Modo de diseño** para colocar el contenido dentro de la cuadrícula adaptable.
 
 * [**Emulador **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web adaptables que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
@@ -100,7 +104,7 @@ Estos procedimientos se utilizan para habilitar el modo **Diseño** en el sitio.
 * Se heredan de la jerarquía del nodo principal y se pueden anular a voluntad.
 * Hay un punto de interrupción predeterminado (predeterminado) que cubre todo lo que se encuentra por encima del último punto de interrupción *configurado* .
 
-Se pueden definir con CRXDE Lite o XML.
+Pueden definirse mediante CRXDE Lite o XML.
 
 >[!NOTE]
 >
@@ -114,13 +118,14 @@ Si va a migrar un proyecto existente (con contenido existente), debe:
 >* agregar puntos de interrupción a las plantillas
 >* agregar los mismos puntos de interrupción a las páginas existentes\
    >  Como la herencia está en funcionamiento, puede limitarla a la página raíz del contenido.
+
 >
 
 
 
-#### Configuración de puntos de interrupción con CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Configuración de puntos de interrupción mediante CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Con CRXDE Lite (o equivalente), navegue hasta:
+1. Con el CRXDE Lite (o equivalente), navegue hasta:
 
    * La definición de la plantilla.
    * El `jcr:content` nodo de la página.

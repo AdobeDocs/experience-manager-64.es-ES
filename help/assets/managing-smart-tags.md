@@ -7,6 +7,9 @@ contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 translation-type: tm+mt
 source-git-commit: 7771cbb218d80247f65e92cbe7e8cdfd9720b75e
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 2%
 
 ---
 
@@ -20,16 +23,16 @@ La moderación de las etiquetas inteligentes también ayuda a restringir las bú
 También puede asignar una clasificación superior a una etiqueta para aumentar su relevancia con respecto a una imagen. La promoción de una etiqueta para una imagen aumenta las posibilidades de que la imagen aparezca en los resultados de búsqueda cuando se realiza una búsqueda en función de la etiqueta en particular.
 
 1. En el cuadro OmniSearch, busque recursos basados en una etiqueta.
-1. Inspeccione los resultados de la búsqueda para identificar una imagen que no considere relevante para la búsqueda.
+1. Inspect muestra los resultados de la búsqueda para identificar una imagen que no le parece relevante para la búsqueda.
 1. Seleccione la imagen y, a continuación, toque o haga clic en el icono **[!UICONTROL Administrar etiquetas]** de la barra de herramientas.
 1. En la página **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas. Si no desea buscar la imagen en función de una etiqueta específica, seleccione la etiqueta y toque o haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas. O bien, toque o haga clic en el símbolo (**[!UICONTROL X]**) que aparece junto a la etiqueta.
 1. Para asignar una clasificación superior a una etiqueta, selecciónela y toque o haga clic en el icono **[!UICONTROL Promocionar]** de la barra de herramientas. La etiqueta promocionada se mueve a la sección **[!UICONTROL Etiquetas]** .
 1. Pulse o haga clic en **[!UICONTROL Guardar]** y, a continuación, pulse o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo de éxito.
 1. Vaya a la página de propiedades de la imagen. Observe que la etiqueta promocionada tiene una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-## Comprender los resultados de búsqueda de AEM con etiquetas inteligentes {#understand-search-results-with-smart-tags}
+## Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understand-search-results-with-smart-tags}
 
-De forma predeterminada, la búsqueda de AEM combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con etiquetas inteligentes `woman` o con etiquetas inteligentes `running` . Los resultados de la búsqueda son una combinación de:
+De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con etiquetas inteligentes `woman` o `running` con etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
 
 * recursos con palabras clave `woman` y `running` en los metadatos.
 * los recursos se etiquetaron de forma inteligente con cualquiera de las palabras clave.

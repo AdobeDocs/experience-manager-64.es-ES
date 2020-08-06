@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Puede personalizar para cambiar lo siguiente en la configuración de fuente:
 Para ello, debe:
 
 1. [Personalice las fuentes editando el archivo tbxeditor-config.xml en CRX](#customizefonts)
-1. [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts)
+1. [Añadir fuentes personalizadas al equipo cliente](#addcustomfonts)
 
 ## Personalice las fuentes editando el archivo tbxeditor-config.xml en CRX {#customizefonts}
 
@@ -47,11 +50,11 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/config
+      **Ruta:** /libs/fd/cm/config
 
-      **** Ubicación: /apps/
+      **Ubicación:** /apps/
 
-      **** Coincidir tipos de nodo: Seleccionado
+      **Coincidir tipos de nodo:** Seleccionado
 
       ![Nodo Overlay](assets/2-2.png)
 
@@ -70,7 +73,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
 1. Abra el archivo tbxeditor-config.xml en apps/fd/cm/config y, a continuación, realice los cambios necesarios.
 
-   1. Haga doble clic en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
+   1. Haga clic con el botón Doble en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abre el archivo.
 
       ```xml
       <editorConfig>
@@ -159,18 +162,19 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. Realice los cambios necesarios en el archivo para cambiar lo siguiente en la configuración de fuente:
 
-      * Agregar o quitar familia y tamaño de fuente
+      * Añadir o quitar la familia y el tamaño de fuente
       * Propiedades como altura y espaciado entre letras
       * Valores predeterminados de familia y tamaño de fuente, altura, espaciado entre letras y formato de fecha
       * Sangrías de viñeta
-      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Adición de fuentes personalizadas al equipo](#addcustomfonts)cliente.
+
+      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el ordenador cliente para acceder a la personalización de fuentes y trabajar con ella. Para obtener más información, consulte [Añadir fuentes personalizadas al equipo](#addcustomfonts)cliente.
 
       También puede cambiar los valores predeterminados para varios aspectos del texto y, al eliminar las entradas, quitar las fuentes del editor de texto.
 
    1. Haga clic en **Guardar todo**.
 
 
-## Agregar fuentes personalizadas al equipo cliente {#addcustomfonts}
+## Añadir fuentes personalizadas al equipo cliente {#addcustomfonts}
 
 Al acceder a una fuente en el editor de texto de Correspondence Management, debe estar presente en el ordenador cliente que está utilizando para acceder a Correspondence Management. Para poder usar una fuente personalizada en el editor de texto, primero debe instalar la misma en el ordenador cliente.
 
@@ -181,7 +185,7 @@ Para obtener más información sobre la instalación de fuentes, consulte:
 
 ## Acceso a las personalizaciones de fuentes {#access-font-customizations}
 
-Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a AEM Forms, los cambios aparecen en el editor de texto.
+Después de realizar cambios en las fuentes del archivo tbxeditor-config.xml en CRX e instalar las fuentes necesarias en el ordenador cliente que se utiliza para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
 
 Por ejemplo, la fuente Sazanami Mincho Medium agregada en el archivo [Personalizar fuentes editando el archivo tbxeditor-config.xml en el procedimiento CRX](#customizefonts) aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 

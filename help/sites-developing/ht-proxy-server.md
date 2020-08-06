@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para administración de usuarios
 
-Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un navegador web y AEM. Esto le permite monitorear exactamente lo que sucede cuando solicita una página de CQ.
+Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un explorador Web y un AEM. Esto le permite monitorear exactamente lo que sucede cuando solicita una página de CQ.
 
 ## Inicio de la herramienta Servidor proxy {#starting-the-proxy-server-tool}
 
-Inicie el servidor en la línea de comandos:
+Inicio del servidor en la línea de comandos:
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
@@ -46,7 +49,7 @@ Esta es la dirección host de la instancia de CRX a la que desea conectarse. Si 
 
 `<remoteport>`
 
-Es el puerto host de la instancia CRX de destino. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el valor predeterminado de una instancia de autor de AEM recién instalada es `4502`.
+Este es el puerto host de la instancia CRX de destinatario. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el valor predeterminado de una instancia de autor AEM recién instalada es `4502`.
 
 `<localport>`
 
@@ -64,7 +67,7 @@ Si busca combinaciones de bytes específicas en el tráfico, habilite el modo bi
 
 `-t` (entradas de registro de marca de hora)
 
-Agrega una marca de hora a cada salida del registro. La marca de hora se marca en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
+Añade una marca de hora a cada salida de registro. La marca de hora se marca en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
 
 `-logfile <filename>`(escribir en el archivo de registro)
 
@@ -85,7 +88,7 @@ Por ejemplo: una solicitud para una página Web puede tener el siguiente aspecto
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
 * C significa que esta entrada proviene del cliente (es una solicitud para una página Web)
-* 0 es el número de conexión (el contador de conexiones comienza en 0)
+* 0 es el número de conexión (el contador de conexiones inicio en 0)
 * # 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
 * `[GET <?>]` es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
@@ -126,13 +129,13 @@ El contenido de `test.html` es:
 </html>
 ```
 
-Suponiendo que la instancia de AEM se está ejecutando en `localhost:4502` nosotros iniciamos el proxy de este modo:
+Suponiendo que la instancia de AEM se está ejecutando en `localhost:4502` nosotros se inicio el proxy de esta manera:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
 Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y todas las comunicaciones a través de este puerto se registran en `test.log`.
 
-Si ahora vemos el resultado del proxy, veremos la interacción entre el navegador y la instancia de AEM.
+Si ahora vemos la salida del proxy, veremos la interacción entre el explorador y la instancia de AEM.
 
 Al iniciar, el proxy genera lo siguiente:
 
@@ -210,7 +213,7 @@ Mantener vivo es una característica de HTTP que permite al cliente reutilizar l
 
 Para comprobar si la función Mantener viva funciona:
 
-* Inicie el servidor proxy.
+* Inicio del servidor proxy.
 * Solicite una página.
 * Si la función Mantener vivo funciona, el contador de conexiones nunca debe superar las 5 a 10 conexiones.
 * Si la función Mantener vivo no funciona, el contador de conexiones aumenta rápidamente.
@@ -219,15 +222,15 @@ Para comprobar si la función Mantener viva funciona:
 
 Si pierde solicitudes en un servidor complejo, por ejemplo con un servidor de seguridad y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un servidor de seguridad:
 
-* Iniciar un proxy antes de un servidor de seguridad
-* Iniciar otro proxy después de un servidor de seguridad
+* Inicio de un proxy antes de un servidor de seguridad
+* Inicio de otro proxy después de un servidor de seguridad
 * Utilícelos para ver hasta dónde llegan las solicitudes.
 
 **Solicitudes en cola**
 
 Si experimenta solicitudes de bloqueo de vez en cuando:
 
-* Inicie el proxy.
+* Inicio el proxy.
 * Espere o escriba el registro de acceso en un archivo con cada entrada con una marca de tiempo.
-* Cuando la solicitud empieza a colgar, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
+* Cuando el inicio de la solicitud se encuentra suspendido, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
 

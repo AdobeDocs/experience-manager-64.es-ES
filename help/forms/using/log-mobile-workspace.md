@@ -10,22 +10,25 @@ topic-tags: forms-app
 discoiquuid: e5aa84a5-9b47-4cc8-8622-510a0a2950bf
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
 
 # Inicio de sesión en la aplicación de AEM Forms {#logging-in-to-aem-forms-app}
 
-Cuando inicio la aplicación de AEM Forms, primero debe proporcionar las credenciales de inicio de sesión y la URL del servidor de AEM Forms.
+Cuando inicio su aplicación de AEM Forms, primero debe proporcionar sus credenciales de inicio de sesión y una URL del servidor de AEM Forms.
 
 ## inicio de la aplicación {#to-start-the-app}
 
-1. Toque el icono de la aplicación de AEM Forms en el dispositivo móvil.
-1. Para iniciar sesión en la aplicación, introduzca un nombre de usuario, una contraseña y una URL de servidor de AEM Forms.
+1. Toque el icono de la aplicación de AEM Forms en su dispositivo móvil.
+1. Para iniciar sesión en la aplicación, introduzca un nombre de usuario, una contraseña y una URL del servidor de AEM Forms.
 
    >[!NOTE]
    >
-   >La aplicación móvil almacena en caché todas las direcciones URL del servidor de AEM Forms que se introduzcan.
+   >La aplicación móvil almacena en caché todas las URL de servidor de AEM Forms que introduzca.
    >
    >* Para mostrar la lista de las direcciones URL del servidor, haga clic en la flecha de lista en la esquina derecha del cuadro de texto URL del servidor.
    >* Puede seleccionar una URL de servidor de AEM Forms para iniciar sesión mediante la aplicación.

@@ -109,7 +109,7 @@ El índice Pedido es una extensión del índice Propiedad. Sin embargo, ha queda
 
 ### Índice de texto completo de Lucene {#the-lucene-full-text-index}
 
-Un indizador de texto completo basado en Apache Lucene está disponible en AEM 6.
+Un indizador de texto completo basado en Apache Lucene está disponible en la AEM 6.
 
 Si se configura un índice de texto completo, todas las consultas que tengan una condición de texto completo utilizarán el índice de texto completo, independientemente de que haya otras condiciones indizadas y sin importar si hay una restricción de ruta.
 
@@ -308,7 +308,7 @@ Puede configurar el servidor Solr incrustado mediante:
 
    >[!NOTE]
    >
-   >La configuración del directorio de inicio de Solr (solr.home.path) buscará una carpeta con el mismo nombre en la carpeta de instalación de AEM.
+   >La configuración del directorio raíz de Solr (solr.home.path) buscará una carpeta con el mismo nombre en la carpeta de instalación de AEM.
 
 1. Abra CRXDE e inicie sesión como administrador.
 1. Añada un nodo llamado **solrlndex** de tipo **oak:QueryIndexDefinition** en **oak:index** con las siguientes propiedades:
@@ -319,9 +319,9 @@ Puede configurar el servidor Solr incrustado mediante:
 
 1. Guarde los cambios.
 
-### Configuración de AEM con un único servidor remoto Solr {#configuring-aem-with-a-single-remote-solr-server}
+### Configuración de AEM con un único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM también se puede configurar para que funcione con una instancia de servidor remoto de Solr:
+AEM también se puede configurar para que funcione con una instancia de servidor Solr remoto:
 
 1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte la documentación [de instalación de](https://cwiki.apache.org/confluence/display/solr/Installing+Solr)Apache Solr.
 1. Ahora, cree dos fragmentos de Solr. Para ello, cree carpetas para cada elemento compartido en la carpeta en la que se ha realizado la copia de seguridad de Solr:
@@ -366,7 +366,7 @@ AEM también se puede configurar para que funcione con una instancia de servidor
    ```
 
 1. Una vez iniciados los dos shards, compruebe que todo esté activo y en funcionamiento conectándose a la interfaz de Solr en `http://localhost:8983/solr/#/`
-1. Inicio de AEM y vaya a la consola web en `http://localhost:4502/system/console/configMgr`
+1. Inicio AEM y vaya a la consola web en `http://localhost:4502/system/console/configMgr`
 1. Defina la siguiente configuración en Configuración **del servidor remoto** Oak Solr:
 
    * Solr HTTP URL: `http://localhost:8983/solr/`
@@ -399,7 +399,7 @@ AEM 6.1 también integra dos herramientas de indexación presentes en AEM 6.0 co
 1. **Explicar la Consulta**, una herramienta diseñada para ayudar a los administradores a comprender cómo se ejecutan las consultas;
 1. **Oak Index Manager**, una interfaz de usuario web para mantener índices existentes.
 
-Ahora puede ponerse en contacto con ellos si accede a **Herramientas - Operaciones - Panel - Diagnóstico** desde la pantalla de bienvenida de AEM.
+Ahora puede ponerse en contacto con ellos en **Herramientas - Operaciones - Panel - Diagnóstico** desde la pantalla de bienvenida de AEM.
 
 Para obtener más información sobre cómo utilizarlos, consulte la documentación [de](/help/sites-administering/operations-dashboard.md)Operaciones Panel.
 
@@ -431,7 +431,7 @@ Para habilitar el registro, debe habilitar los registros de nivel **DEBUG** para
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-La **categoría com.day.cq.search** solo es aplicable si utiliza la utilidad QueryBuilder proporcionada por AEM.
+La **categoría com.day.cq.search** solo es aplicable si utiliza la utilidad QueryBuilder proporcionada por el AEM.
 
 >[!NOTE]
 >

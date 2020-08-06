@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 90%
 
 ---
 
@@ -38,7 +41,7 @@ La estructura de un sitio web se puede considerar como una *estructura de árbol
 
 A continuación encontrará un fragmento del sitio Geometrixx, desde el que se accederá, por ejemplo, a la página `Triangle`:
 
-* Entorno de creación
+* entorno de autor
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -204,7 +207,7 @@ Puede abrir la página que desee [editar](/help/sites-classic-ui-authoring/class
 
 * Una vez que haya abierto una página, puede desplazarse a otras páginas dentro del sitio (para editarlas) si hace clic en hipervínculos.
 
-### Copiar y pegar una página  {#copying-and-pasting-a-page}
+### Copiar y pegar una página    {#copying-and-pasting-a-page}
 
 Al copiar, puede copiar cualquiera de estas opciones:
 
@@ -223,6 +226,7 @@ Al copiar, puede copiar cualquiera de estas opciones:
 
    * **Pegar**: para pegar la página junto con todas las subpáginas
    * **Mayús + Pegar**: para pegar la página seleccionada únicamente
+
    Las páginas se pegan en la nueva ubicación.
 
    >[!NOTE]
@@ -325,7 +329,7 @@ Puede [bloquear o desbloquear una página](/help/sites-classic-ui-authoring/clas
 >A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de las carpetas están también sujetas a las [convenciones de nomenclatura de páginas](#page-naming-conventions).
 
 1. Abra la consola **Sitios web** y vaya hasta la ubicación deseada.
-1. **** En el **Nuevo... (haga clic en la flecha junto a** Nuevo...**), seleccione** Nueva carpeta... .
+1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
 1. Se abrirá el cuadro de diálogo **Crear carpeta**. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)

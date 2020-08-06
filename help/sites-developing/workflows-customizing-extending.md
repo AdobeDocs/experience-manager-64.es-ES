@@ -68,6 +68,7 @@ El `/libs/cq/workflow/components/model/step` componente es el antecesor común m
 
    * **Frecuentes**: para editar el título y la descripción.
    * **Avanzado**: para editar las propiedades de notificación de correo electrónico.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ Utilice el procedimiento siguiente para especificar los valores predeterminados 
 >* El cuadro de diálogo de edición del paso almacena el título y la descripción en las siguientes ubicaciones: >
 >* `./jcr:title`
 >* `./jcr:description` ubicaciones
+
 >
 >  
 Este requisito se cumple cuando el cuadro de diálogo de edición utiliza la ficha Común que implementa el `/libs/cq/flow/components/step/step` componente.
@@ -132,6 +134,7 @@ Este requisito se cumple cuando el cuadro de diálogo de edición utiliza la fic
 
    * Nombre: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    >[!NOTE]
    >
    >Para obtener más información sobre el nodo cq:editConfig, consulte [Configuración del comportamiento de edición de un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ Para enfocar el componente para utilizarlo en un escenario de flujo de trabajo e
 
    * Nombre: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Para obtener más información sobre el nodo cq:editConfig, consulte [Configuración del comportamiento de edición de un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Debajo del nodo cq:EditConfig, agregue el nodo siguiente:
@@ -203,7 +207,7 @@ Para enfocar el componente para utilizarlo en un escenario de flujo de trabajo e
 
 1. Para eliminar la capacidad de los desarrolladores de modelos de cambiar los valores de propiedad, anule el cuadro de diálogo del supertipo de componente.
 
-### Añadir formularios y diálogos a pasos de participantes {#adding-forms-and-dialogs-to-participant-steps}
+### Añadir Forms y diálogos a los pasos de los participantes {#adding-forms-and-dialogs-to-participant-steps}
 
 Personalice el componente de paso del participante para proporcionar funciones que se encuentran en los componentes Paso [del participante en el](/help/sites-developing/workflows-step-ref.md#form-participant-step) formulario y Paso [del participante en el](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) cuadro de diálogo:
 
@@ -216,6 +220,7 @@ Realice el siguiente procedimiento en el nuevo componente (consulte [Creación d
 
    * Nombre: `cq:editConfig`
    * Tipo: `cq:EditConfig`
+
    Para obtener más información sobre el nodo cq:editConfig, consulte [Configuración del comportamiento de edición de un componente](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Debajo del nodo cq:EditConfig, agregue el nodo siguiente:
@@ -365,7 +370,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 ### Secuencias de comandos y argumentos de proceso {#scripts-and-process-arguments}
 
-Dentro de una secuencia de comandos para un componente **de paso** de proceso, los argumentos están disponibles a través del `args` objeto.
+Dentro de una secuencia de comandos para un componente Paso **de** proceso, los argumentos están disponibles a través del `args` objeto.
 
 Al crear un componente de paso personalizado, el objeto `metaData` está disponible en una secuencia de comandos. Este objeto está limitado a un solo argumento de cadena.
 
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ Una forma sencilla de crear su propio paso personalizado es copiar un paso exist
       * Proyectos
       * Flujo de trabajo de WCM
       * Flujo de trabajo
+
    ![wf-35](assets/wf-35.png)
 
 1. Ahora puede abrir un modelo de flujo de trabajo para editarlo. En el navegador de pasos puede filtrar para ver **Mi paso** personalizado:
@@ -887,6 +894,7 @@ Después de [crear el paso](#creating-the-basic-step)básico, defina el paso del
       Define el título predeterminado en la tarjeta de paso del mapa del modelo y en el campo **Título** del cuadro de diálogo de configuración **Mi personalizado - Propiedades** del paso.
 
    * También puede definir sus propias propiedades personalizadas.
+
    ![wf-40](assets/wf-40.png)
 
 1. Configure las propiedades en el nodo `cq:listeners`.
@@ -899,6 +907,7 @@ Después de [crear el paso](#creating-the-basic-step)básico, defina el paso del
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Esta configuración es esencial para el correcto funcionamiento del editor. En la mayoría de los casos, esta configuración no debe modificarse.
 
    Sin embargo, si se establece `cq:inherit` en true (en el `cq:editConfig` nodo, véase más arriba), se puede heredar esta configuración sin necesidad de incluirla explícitamente en la definición del paso. Si no hay ninguna herencia, deberá agregar este nodo con las siguientes propiedades y valores.
@@ -1030,7 +1039,7 @@ El `_cq_dialog/.content.xml` ejemplo utilizado en este ejemplo:
 >
 >Los cuadros de diálogo del editor de modelos de IU clásica seguirán funcionando con el editor de IU estándar con capacidad táctil.
 >
->Aunque AEM dispone de una herramienta de conversión [de](/help/sites-developing/dialog-conversion.md) cuadro de diálogo si desea actualizar los cuadros de diálogo de paso de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión, todavía hay algunas mejoras manuales que se pueden realizar en el cuadro de diálogo en determinados casos.
+>Aunque AEM cuenta con una herramienta de conversión [de](/help/sites-developing/dialog-conversion.md) cuadro de diálogo si desea actualizar los cuadros de diálogo de pasos de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión, todavía hay algunas mejoras manuales que se pueden realizar en el cuadro de diálogo en determinados casos.
 >
 >* En los casos en que un cuadro de diálogo actualizado esté vacío, puede consultar los cuadros de diálogo en los `/libs` que tengan una funcionalidad similar a la de ejemplos de cómo proporcionar una solución. Por ejemplo:
    >
@@ -1040,6 +1049,7 @@ El `_cq_dialog/.content.xml` ejemplo utilizado en este ejemplo:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 No debe modificar nada en `/libs`, simplemente úselo como ejemplos. Si desea aprovechar cualquiera de los pasos existentes, cópielos `/apps` y modifíquelos allí.

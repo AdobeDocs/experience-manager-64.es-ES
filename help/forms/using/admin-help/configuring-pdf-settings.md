@@ -1,8 +1,8 @@
 ---
 title: Configuración de la configuración de Adobe PDF
 seo-title: Configuración de la configuración de Adobe PDF
-description: Obtenga información sobre cómo configurar los ajustes de Adobe PDF.
-seo-description: Obtenga información sobre cómo configurar los ajustes de Adobe PDF.
+description: Obtenga información sobre cómo configurar las opciones de Adobe PDF.
+seo-description: Obtenga información sobre cómo configurar las opciones de Adobe PDF.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configuración de la configuración de Adobe PDF{#configuring-adobe-pdf-settings}
 
-La página Configuración de Adobe PDF muestra la configuración de conversión que se puede especificar para las fuentes que se van a utilizar. Puede utilizar cualquiera de los ajustes predefinidos de PDF o crear los suyos propios. La configuración de PDF determina con precisión cómo se convierten los archivos y la estructura y las funciones de PDF resultantes. La configuración de Adobe PDF se conocía anteriormente como parámetros o opciones de trabajo de Distiller®.
+La página Configuración de Adobe PDF muestra la configuración de conversión que se puede especificar para las fuentes que se van a utilizar. Puede utilizar cualquiera de los ajustes predefinidos de PDF o crear los suyos propios. La configuración de PDF determina con precisión cómo se convierten los archivos y la estructura y las funciones de PDF resultantes. La configuración de Adobe PDF se conocía anteriormente como parámetros de Distiller® u opciones de trabajo.
 
 En la página Configuración de Adobe PDF, puede realizar las siguientes tareas:
 
@@ -58,9 +58,9 @@ Estos archivos PDF se pueden abrir en Adobe Acrobat 5 y Adobe Acrobat Reader® 5
 
 **Páginas de gran tamaño:** Crea documentos PDF que son adecuados para una visualización e impresión fiables de dibujos de ingeniería de más de 200 x 200 pulgadas. Los documentos PDF creados se pueden abrir en Adobe Acrobat Professional y Acrobat Standard, versión 7 o posterior, y en Adobe Reader 7 o posterior.
 
-**PDF/A-1B CMYK 2005 / PDF/A-1B RGB 2005:** Comprueba que los trabajos entrantes sean compatibles con el estándar ISO para la conservación (archivado) a largo plazo de documentos electrónicos y crea archivos PDF/A solo si son compatibles. Estos archivos se utilizan principalmente para archivar. Los archivos compatibles solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. PDF/A-1b utiliza PDF 1.4 y convierte todos los colores a CMYK o RGB, según el estándar que elija. Los archivos PDF creados con este archivo de configuración se pueden abrir en Acrobat 5 y Acrobat Reader 5 y posterior. Para obtener más información sobre PDF/A, consulte Adobe y los estándares del sector.
+**PDF/A-1B CMYK 2005 / PDF/A-1B RGB 2005:** Comprueba que los trabajos entrantes sean compatibles con el estándar ISO para la conservación (archivado) a largo plazo de documentos electrónicos y crea archivos PDF/A solo si son compatibles. Estos archivos se utilizan principalmente para archivar. Los archivos compatibles solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben incrustarse para que los documentos se puedan abrir y ver como se crearon. PDF/A-1b utiliza PDF 1.4 y convierte todos los colores a CMYK o RGB, según el estándar que elija. Los archivos PDF creados con este archivo de configuración se pueden abrir en Acrobat 5 y Acrobat Reader 5 y posterior. Para obtener más información sobre PDF/A, consulte Adobe y estándares del sector.
 
-**PDF/X-1a 2001:** Comprueba la compatibilidad con PDF/X-1a de los trabajos entrantes y crea archivos PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros PDF correspondientes y que el color aparezca como CMYK o tintas planas. Los archivos PDF que cumplen los requisitos de PDF/X-1a están dirigidos a una condición de salida específica, como la impresión de desplazamiento de Web según las especificaciones de las publicaciones de contrapartida Web. Para obtener más información sobre PDF/X, consulte Adobe y los estándares del sector.
+**PDF/X-1a 2001:** Comprueba la compatibilidad con PDF/X-1a de los trabajos entrantes y crea archivos PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros PDF correspondientes y que el color aparezca como CMYK o tintas planas. Los archivos PDF que cumplen los requisitos de PDF/X-1a están dirigidos a una condición de salida específica, como la impresión de desplazamiento de Web según las especificaciones de las publicaciones de contrapartida Web. Para obtener más información sobre PDF/X, consulte Adobe y estándares del sector.
 
 **PDF/X-3 2002:** Comprueba la compatibilidad con PDF/X-3 de los trabajos entrantes y crea archivos PDF solo si son compatibles. Al igual que PDF/X-1a, PDF/X-3 es un estándar ISO para el intercambio de contenido gráfico. La principal diferencia es que PDF/X-3 admite color independiente del dispositivo.
 
@@ -73,7 +73,7 @@ Estos archivos PDF se pueden abrir en Adobe Acrobat 5 y Adobe Acrobat Reader® 5
 * no rota automáticamente las páginas en función de la orientación del texto o de los comentarios de las convenciones de estructuración de documentos (DSC)
 * utiliza otros ajustes para conservar la cantidad máxima de información sobre el documento original.
 
-Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5 y posterior.
+Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. Estos archivos PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5 y versiones posteriores.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ La configuración de PDF determina con precisión cómo se convierten los archiv
 
 Puede tener la configuración de PDF disponible en el servidor de PDF Generator cargándolos desde un equipo local o una ubicación de red.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF y, a continuación, haga clic en Cargar.
+1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF y, a continuación, en Cargar.
 1. En la página Cargar configuración de Adobe PDF, haga clic en Examinar, busque el archivo de configuración de PDF y haga clic en Abrir.
 1. Haga clic en Aceptar y, a continuación, en Aceptar nuevamente.
 
@@ -127,11 +127,11 @@ Puede eliminar de forma permanente la configuración de PDF si ya no es necesari
 
 ## Opciones generales {#general-options}
 
-Utilice las opciones generales para especificar la versión de Acrobat que se va a utilizar para la compatibilidad de archivos y otras opciones de archivos y dispositivos. Para obtener instrucciones sobre cómo acceder a las opciones Generales, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
+Utilice las opciones generales para especificar la versión de Acrobat que se utilizará para la compatibilidad de archivos y otras opciones de archivos y dispositivos. Para obtener instrucciones sobre cómo acceder a las opciones Generales, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
 
 ### Opciones de archivo {#file-options}
 
-**Compatibilidad:** Nivel de compatibilidad del archivo PDF. Para documentos que se distribuirán ampliamente, considere la posibilidad de seleccionar Acrobat 4 (PDF 1.3) o Acrobat 5 (PDF 1.4) para garantizar que todos los usuarios puedan realizar vistas e imprimir el documento. Si crea archivos con compatibilidad con Acrobat 5 o posterior, es posible que no sean compatibles con versiones anteriores de Acrobat. Las subsecciones siguientes muestran algunas de las diferencias entre los archivos PDF que se crean con diferentes niveles de compatibilidad con Acrobat.
+**Compatibilidad:** Nivel de compatibilidad del archivo PDF. Para documentos que se distribuirán ampliamente, considere la posibilidad de seleccionar Acrobat 4 (PDF 1.3) o Acrobat 5 (PDF 1.4) para garantizar que todos los usuarios puedan vista e imprimir el documento. Si crea archivos con compatibilidad con Acrobat 5 o posterior, es posible que no sean compatibles con versiones anteriores de Acrobat. Las subsecciones siguientes muestran algunas de las diferencias entre los archivos PDF que se crean con diferentes niveles de compatibilidad con Acrobat.
 
 <table> 
  <tbody> 
@@ -149,9 +149,9 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
   </tr> 
   <tr> 
    <td><p>No puede contener ilustraciones que utilicen efectos de transparencia activos. Cualquier transparencia debe acoplarse antes de convertir a PDF 1.3.</p> </td> 
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td> 
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td> 
-   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función de Acrobat Distiller acopla la transparencia).</p> </td> 
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td> 
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td> 
+   <td><p>Admite el uso de transparencia en directo en las ilustraciones. (La función Acrobat Distiller aplana la transparencia).</p> </td> 
   </tr> 
   <tr> 
    <td><p>Las capas no son compatibles.</p> </td> 
@@ -182,9 +182,9 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
 
 **Compresión de nivel de objeto:** Consolida objetos pequeños (cada uno de los cuales no se puede comprimir por sí mismo) en flujos que se pueden comprimir de forma eficaz.
 
-**Desactivado:** No comprime ninguna información estructural en el documento PDF. Seleccione esta opción si desea que los usuarios realicen vistas, naveguen e interactúen con marcadores y otra información estructural mediante Acrobat 5 y posterior.
+**Desactivado:** No comprime ninguna información estructural en el documento PDF. Seleccione esta opción si desea que los usuarios realicen vistas, naveguen e interactúen con marcadores y otra información estructural mediante Acrobat 5 y versiones posteriores.
 
-**Sólo etiquetas:** Comprime la información estructural del documento PDF. Si utiliza esta opción, se abre un archivo PDF que se puede imprimir con Acrobat 5. Los usuarios no pueden realizar vistas de la información de accesibilidad, estructura o PDF con etiquetas en Acrobat 5 o Acrobat Reader 5.0, pero sí pueden realizar vistas de esta información en Acrobat 6 y Adobe Reader 6.0.
+**Sólo etiquetas:** Comprime la información estructural del documento PDF. Si utiliza esta opción, se abre un archivo PDF que se puede imprimir con Acrobat 5. Los usuarios no pueden realizar vistas de la información de accesibilidad, estructura o PDF con etiquetas en Acrobat 5 o Acrobat Reader 5.0, pero sí pueden vista de esta información en Acrobat 6 y Adobe Reader 6.0.
 
 **Rotar páginas automáticamente:** Define la rotación automática de las páginas en función de la orientación del texto o de los comentarios de DSC. Por ejemplo: algunas páginas (como páginas que contienen tablas) pueden requerir que el usuario las ponga de lado para leerlas. Seleccione Individualmente para rotar cada página en función de la dirección del texto en esa página. Seleccione Colectivamente por archivo para rotar todas las páginas del documento en función de la orientación de la mayoría del texto.
 
@@ -206,7 +206,7 @@ Utilice las opciones generales para especificar la versión de Acrobat que se va
 
 ### Tamaño de página predeterminado {#default-page-size}
 
-Las opciones Tamaño de página predeterminado especifican el tamaño de página que se debe utilizar cuando no se especifica ninguno en el archivo original. Normalmente, los archivos PostScript de Adobe incluyen esta información, excepto los archivos PostScript encapsulados (EPS), que proporcionan un tamaño de cuadro delimitador pero no un tamaño de página. El tamaño máximo de página permitido es de 31.800.000 pulgadas (15.000.000 cm) en cualquier dirección. Estas opciones configuran el tamaño de página predeterminado:
+Las opciones Tamaño de página predeterminado especifican el tamaño de página que se debe utilizar cuando no se especifica ninguno en el archivo original. Normalmente, los archivos de Adobe PostScript incluyen esta información, excepto los archivos PostScript encapsulados (EPS), que proporcionan un tamaño de cuadro delimitador pero no un tamaño de página. El tamaño máximo de página permitido es de 31.800.000 pulgadas (15.000.000 cm) en cualquier dirección. Estas opciones configuran el tamaño de página predeterminado:
 
 **Ancho:** Ancho de la página
 
@@ -268,7 +268,7 @@ Esta tabla muestra los tipos de impresoras y su resolución medida en ppp, su re
  </tbody> 
 </table>
 
-**Compresión:** Establezca un valor para aplicarlo a imágenes en color, escala de grises y monocromo. Para las imágenes en color y escala de grises, defina también la calidad de la imagen:
+**Compresión:** Defina un valor para aplicarlo a imágenes en color, escala de grises y monocromo. Para las imágenes en color y escala de grises, defina también la calidad de la imagen:
 
 * Para imágenes en color o escala de grises, seleccione ZIP para aplicar compresión que funcione bien en imágenes que tengan grandes áreas de color único o patrones repetitivos. Algunos ejemplos son capturas de pantalla, imágenes simples creadas con programas de pintura e imágenes monocromas que contienen patrones repetitivos. Seleccione JPEG, de calidad mínima a máxima, para aplicar compresión adecuada para imágenes en escala de grises o en color, como fotografías en tono continuo que contengan más detalles que los que se pueden reproducir en pantalla o en impresión. Seleccione Automático (JPEG) para determinar automáticamente la mejor calidad de las imágenes en color y escala de grises.
 * Para las imágenes monocromas, seleccione la compresión Grupo 4 CCITT, Grupo 3 CCITT, ZIP, JPEG200, Automático (JPEG2000) o Longitud de ejecución.
@@ -317,15 +317,15 @@ Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo P
 
 >[!NOTE]
 >
->Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que están instalados los formularios AEM.
+>Las fuentes se seleccionan de la caché de fuentes del sistema de Windows y es necesario reiniciar el sistema para actualizar la caché. Después de especificar el directorio de fuentes del cliente, asegúrese de reiniciar el sistema en el que se instalan AEM formularios.
 
 ## Opciones de color {#color-options}
 
 Las opciones de color definen toda la información de gestión de color para el generador de PDF. Para obtener instrucciones sobre cómo acceder a las opciones de color, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
 
-### Configuración de color de Adobe {#adobe-color-settings}
+### Configuración de Adobe Color {#adobe-color-settings}
 
-**Archivo de configuración:** Esta lista contiene una lista de los ajustes de color que también se utilizan en las principales aplicaciones gráficas, como Adobe Photoshop y Adobe Illustrator. La configuración de color que seleccione determina el resto de la configuración de color de Adobe en esta página. Por ejemplo, si selecciona una configuración que no sea Ninguno, todas las opciones que no sean Datos dependientes del dispositivo estarán predefinidas y atenuadas. Puede editar los ajustes Directivas de administración de color y Espacios de trabajo solo si selecciona Ninguno en Archivo de configuración.
+**Archivo de configuración:** Esta lista contiene una lista de la configuración de color que también se utiliza en las principales aplicaciones gráficas, como Adobe Photoshop y Adobe Illustrator. La configuración de color que seleccione determina el resto de la configuración de color del Adobe en esta página. Por ejemplo, si selecciona una configuración que no sea Ninguno, todas las opciones que no sean Datos dependientes del dispositivo estarán predefinidas y atenuadas. Puede editar los ajustes Directivas de administración de color y Espacios de trabajo solo si selecciona Ninguno en Archivo de configuración.
 
 ### Directivas de administración de color {#color-management-policies}
 
@@ -333,7 +333,7 @@ Si seleccionó Ninguno para el archivo de configuración, el área Directivas de
 
 **No cambiar el color:** Mantiene los colores dependientes del dispositivo sin cambios y conserva los colores independientes del dispositivo como el equivalente más cercano posible en PDF. Esta opción resulta útil para imprimir tiendas que han calibrado todos sus dispositivos, utilizado esa información para especificar el color del archivo y solo genera resultados para dichos dispositivos.
 
-**Etiquete todo para la administración de color:** Incrusta un perfil de International Color Consortium al convertir archivos y calibrar el color de las imágenes, lo que hace que los colores de los archivos PDF resultantes sean independientes del dispositivo si selecciona la compatibilidad con Acrobat 4 (PDF 1.3) o posterior. Sin embargo, los espacios de color dependientes del dispositivo en archivos (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB).
+**Etiquete todo para la administración de color:** Incrusta un perfil de International Color Consortium al destilar archivos y calibrar el color de las imágenes, lo que hace que los colores de los archivos PDF resultantes sean independientes del dispositivo si selecciona la compatibilidad con Acrobat 4 (PDF 1.3) o posterior. Sin embargo, los espacios de color dependientes del dispositivo en archivos (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB).
 
 **Etiquetar solo imágenes para la administración de color:** Incrusta perfiles ICC únicamente en imágenes, no en texto ni en gráficos, al convertir archivos si ha seleccionado la compatibilidad con Acrobat 4 (PDF 1.3). Esta opción evita que el texto negro experimente cualquier cambio de color. Sin embargo, los espacios de color dependientes del dispositivo en imágenes (RGB, escala de grises y CMYK) se convierten en espacios de color independientes del dispositivo (CalRGB, CalGray y LAB). El texto y los gráficos no se convierten.
 
@@ -375,7 +375,7 @@ Para todos los valores de la lista en Directivas de administración de color, ex
 
 ### Datos dependientes del dispositivo {#device-dependent-data}
 
-Estas opciones se aplican si trabaja con documentos creados con aplicaciones gráficas y de documentación de gama alta, como Adobe Illustrator y Adobe InDesign. Para obtener más información, consulte la documentación incluida con la aplicación.
+Estas opciones se aplican si trabaja con documentos creados con aplicaciones gráficas y de documentación de alto nivel, como Adobe Illustrator y Adobe InDesign. Para obtener más información, consulte la documentación incluida con la aplicación.
 
 Las funciones de transferencia se utilizan para el efecto artístico y para ajustar las especificaciones de un dispositivo de salida específico. Por ejemplo, un archivo que se va a generar en una fotocomponedora concreta puede contener funciones de transferencia que compensen la ganancia de puntos inherente a esa impresora.
 
@@ -391,7 +391,7 @@ Las funciones de transferencia se utilizan para el efecto artístico y para ajus
 
 **Conservar información de semitonos:** Conserva la información de semitonos en los archivos. La información de semitonos consiste en puntos que controlan cuánto depositan los dispositivos de semitonos de tinta en una ubicación específica del papel. La variación del tamaño y la densidad del punto crea la ilusión de variaciones de color gris o continuo. Para una imagen CMYK, se utilizan cuatro pantallas de semitonos, una para cada tinta que se utiliza en el proceso de impresión.
 
-En la producción de impresión tradicional, se produce un semitono colocando una pantalla de semitonos entre una pieza de película y la imagen, y luego exponiendo la película. Los equivalentes electrónicos, como en Adobe Photoshop, permiten a los usuarios especificar los atributos de la pantalla de semitonos antes de producir la película o el papel. La información de semitonos está destinada a utilizarse con un dispositivo de salida concreto.
+En la producción de impresión tradicional, se produce un semitono colocando una pantalla de semitonos entre una pieza de película y la imagen, y luego exponiendo la película. Los equivalentes electrónicos, como en Adobe Photoshop, permiten a los usuarios especificar los atributos de pantalla de semitonos antes de producir la película o el papel. La información de semitonos está destinada a utilizarse con un dispositivo de salida concreto.
 
 ## Opciones avanzadas {#advanced-options}
 
@@ -399,7 +399,7 @@ Las opciones avanzadas especifican qué convenciones de estructura de Documento 
 
 Al trabajar con las opciones avanzadas, resulta útil conocer el lenguaje PostScript y cómo se traduce a PDF. (Consulte [Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html).)
 
-**Permitir que el archivo PostScript anule la configuración de Adobe PDF:** Utiliza los ajustes almacenados en un archivo PostScript en lugar del archivo de configuración de Adobe PDF actual. Antes de procesar un archivo PostScript, puede colocar parámetros en el archivo para controlar los siguientes aspectos:
+**Permitir que el archivo PostScript anule la configuración de Adobe PDF:** Utiliza valores almacenados en un archivo PostScript en lugar del archivo de configuración actual de Adobe PDF. Antes de procesar un archivo PostScript, puede colocar parámetros en el archivo para controlar los siguientes aspectos:
 
 * compresión de texto y gráficos
 * disminución de resolución y codificación de imágenes muestreadas
@@ -407,7 +407,7 @@ Al trabajar con las opciones avanzadas, resulta útil conocer el lenguaje PostSc
 
 **Permitir XObject PostScript:** Los objetos XObject de PostScript almacenan información que aparece en muchas páginas del mismo archivo, como una imagen de fondo o información de encabezado y pie de página. El uso de XObject PostScript puede resultar en una impresión más rápida, pero requiere más memoria de impresora. Para evitar que se creen objetos XObject de PostScript, anule la selección de esta opción si crea archivos PDF con compatibilidad con Acrobat 5 (PDF 1.4) o posterior.
 
-**Convertir degradados en sombras suaves:** Convierte las mezclas en sombras suaves para Acrobat 4 y posterior, lo que reduce el tamaño de los archivos PDF y mejora potencialmente la calidad de la salida final. PDF Generator convierte los degradados de Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress y Microsoft PowerPoint.
+**Convertir degradados en sombras suaves:** Convierte las mezclas en sombras suaves para Acrobat 4 y versiones posteriores, lo que reduce el tamaño de los archivos PDF y mejora potencialmente la calidad de la salida final. PDF Generator convierte los degradados de Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress y Microsoft PowerPoint.
 
 **Convertir líneas suaves en curvas:** Reduce la cantidad de puntos de control utilizados para crear curvas en dibujos CAD, lo que da como resultado archivos PDF más pequeños y una representación en pantalla más rápida.
 
@@ -451,7 +451,7 @@ Los archivos compatibles con PDF/A se utilizan principalmente para archivar. Dad
 
 Para obtener instrucciones sobre cómo acceder al sistema de informes de normas y a las opciones de cumplimiento, consulte [Añadir o editar la configuración](configuring-pdf-settings.md#add-or-edit-pdf-settings)de PDF.
 
-**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple con los requisitos y, si no, qué problemas se han encontrado. Cuando Compatibilidad en la página Configuración general se establece en Acrobat 4.0, se activan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo se pueden seleccionar las opciones de Acrobat 5.0. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
+**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple con los requisitos y, si no, qué problemas se han encontrado. Cuando Compatibilidad en la página Configuración general se establece en Acrobat 4.0, se activan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo las opciones de Acrobat 5.0 están disponibles para seleccionar. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
 
 * PDF/X-1a (compatible con Acrobat 4.0)
 * PDF/X-3 (compatible con Acrobat 4.0)
@@ -525,7 +525,7 @@ Las opciones de documento controlan el aspecto del documento dentro de la ventan
 
 >[!NOTE]
 >
->La configuración predeterminada de las opciones de ampliación y presentación de página utiliza la configuración de usuario individual en las preferencias de Presentación de página de Acrobat o Adobe Reader.
+>La opción Predeterminado para las opciones de ampliación y presentación de página utiliza la configuración de usuario individual en las preferencias de Presentación de página de Acrobat o Adobe Reader.
 
 ### Opciones de ventana {#window-options}
 

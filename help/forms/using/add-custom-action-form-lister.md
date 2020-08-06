@@ -1,6 +1,6 @@
 ---
-title: Adición de acciones personalizadas a elementos de la lista de formularios
-seo-title: Adición de acciones personalizadas a elementos de la lista de formularios
+title: Añadir acción personalizada en elementos de lista de formularios
+seo-title: Añadir acción personalizada en elementos de lista de formularios
 description: Los desarrolladores de formularios pueden agregar más acciones a la lista de formularios en la página del portal de formularios. De forma predeterminada, la lista de formularios permite acceder al formulario, rellenarlo y enviarlo.
 seo-description: Los desarrolladores de formularios pueden agregar más acciones a la lista de formularios en la página del portal de formularios. De forma predeterminada, la lista de formularios permite acceder al formulario, rellenarlo y enviarlo.
 uuid: 02c64f7d-f726-4a5b-a303-ec96934e9c01
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
 
-# Adición de acciones personalizadas a elementos de la lista de formularios {#adding-custom-action-on-form-lister-items}
+# Añadir acción personalizada en elementos de lista de formularios {#adding-custom-action-on-form-lister-items}
 
-En AEM Forms, puede crear una página de portal con los formularios disponibles. De forma predeterminada, puede buscar y enumerar formularios en una página de portal. Puede abrir formularios para rellenar y enviar la información. Solo se proporcionan acciones de representación de forma predeterminada para los formularios enumerados en una página de portal. Para obtener más información sobre las acciones disponibles en una página de portal, consulte [Creación de una página](/help/forms/using/creating-form-portal-page.md)de portal de formularios.
+En AEM Forms, puede crear una página de portal con los formularios disponibles. De forma predeterminada, puede buscar y lista de formularios en una página de portal. Puede abrir formularios para rellenar y enviar la información. Solo se proporcionan acciones de representación de forma predeterminada para los formularios enumerados en una página de portal. Para obtener más información sobre las acciones disponibles en una página de portal, consulte [Creación de una página](/help/forms/using/creating-form-portal-page.md)de portal de formularios.
 
 Puede agregar otras opciones a la página del portal. Estas opciones o acciones se pueden personalizar personalizando la plantilla del portal de formularios.
 

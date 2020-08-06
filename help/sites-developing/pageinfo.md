@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -27,14 +30,15 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Si necesita información de página en formato JSON para proporcionar contenido a canales que no son páginas web tradicionales de AEM, como:
+>Si necesita información de página en formato JSON para proporcionar el envío de contenido a canales que no son páginas web AEM tradicionales como:
 >
 >* Aplicaciones de una sola página
 >* Aplicaciones móviles nativas
 >* Otros canales y puntos de contacto externos a AEM
+
 >
 >
-Consulte el documento [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md).
+Consulte documento [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md).
 
 ## Proveedores de información de la página {#page-information-providers}
 
@@ -49,19 +53,19 @@ Los componentes de página se pueden asociar con uno o varios `com.day.cq.wcm.ap
 
 >[!NOTE]
 >
->De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar las listas de información en formato JSON. (Consulte [Personalización de la Consola](/help/sites-developing/customizing-siteadmin.md)de administración de sitios web).
+>De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar listas de información en formato JSON. (Consulte [Personalización de la Consola](/help/sites-developing/customizing-siteadmin.md)de administración de sitios web).
 
 ## Proveedores de información de página predeterminados {#default-page-information-providers}
 
 El `/libs/foundation/components/page` componente está asociado con los siguientes servicios de PageInfoProvider:
 
-* **** Proveedor de estado de página predeterminado: Información sobre el estado de la página, como si está bloqueada, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
-* **** Proveedor de información de relación directa: Información sobre la administración de varios sitios (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
-* **** Servlet de idioma de contenido: Idioma de la página actual e información sobre cada idioma en el que está disponible la página.
-* **** Proveedor de estado de flujo de trabajo: Información de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
-* **** Proveedor de información del paquete de workflow: Información sobre cada paquete de workflow almacenado en el repositorio y si cada paquete contiene el recurso actual.
-* **** Proveedor de información del emulador: Información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no representa páginas móviles, no hay emuladores disponibles.
-* **** Proveedor de información de anotaciones: Información sobre las anotaciones que se encuentran en la página.
+* **Proveedor de estado de página predeterminado:** Información sobre el estado de la página, como si está bloqueada, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
+* **Proveedor de información de relación directa:** Información sobre la administración de varios sitios (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
+* **Servlet de idioma de contenido:** Idioma de la página actual e información sobre cada idioma en el que está disponible la página.
+* **Proveedor de estado de flujo de trabajo:** Información de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
+* **Proveedor de información del paquete de workflow:** Información sobre cada paquete de workflow almacenado en el repositorio y si cada paquete contiene el recurso actual.
+* **Proveedor de información del emulador:** Información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no representa páginas móviles, no hay emuladores disponibles.
+* **Proveedor de información de anotaciones:** Información sobre las anotaciones que se encuentran en la página.
 
 Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para el `/content/we-retail/us/en` nodo:
 
@@ -474,7 +478,7 @@ Configure el servicio Day CQ WCM Workflow Package Info Provider de modo que solo
 
 >[!NOTE]
 >
->La ficha Flujo de trabajo de la barra de tareas utiliza el servlet PageInfo para obtener una lista de los paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
+>La ficha Flujo de trabajo de la barra de tareas utiliza el servlet PageInfo para obtener una lista de los paquetes de flujo de trabajo. Desde la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
 
 
 El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una `workflowpackageinfoprovider.filter` propiedad.
@@ -494,11 +498,11 @@ El servicio aplica el resultado acumulado de todos los filtros. Por ejemplo, los
 
 >[!NOTE]
 >
->Al trabajar con AEM, existen varios métodos para gestionar la configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
+>Al trabajar con AEM existen varios métodos para administrar la configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
 
 Por ejemplo, para configurar el servicio mediante CRXDE Lite:
 
-1. Abra CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Abra el CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. En la carpeta config de la aplicación, cree un nodo:
 
    * Nombre: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -514,7 +518,7 @@ Por ejemplo, para configurar el servicio mediante CRXDE Lite:
 
 Para configurar el servicio en el origen del proyecto:
 
-1. Busque o cree la carpeta de configuración para la aplicación AEM en el origen del proyecto.
+1. Busque o cree la carpeta de configuración para la aplicación de AEM en el origen del proyecto.
 
    Por ejemplo, si ha utilizado el arquetipo multimódulo del complemento Maven del paquete de contenido para crear el proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. En la carpeta config, cree un archivo de texto denominado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
@@ -542,9 +546,9 @@ Cree un servicio de proveedor de información de página personalizado para agre
 1. Agrupe e implemente la clase como un servicio OSGi.
 1. Cree un componente de página en la aplicación. Se utiliza `foundation/components/page` como valor de la `sling:resourceSuperType` propiedad.
 
-1. Agregue un nodo debajo del nodo de componente llamado `cq:infoProviders`.
+1. Añada un nodo debajo del nodo de componente denominado `cq:infoProviders`.
 1. Debajo del `cq:infoProviders` nodo, agregue un nodo para el servicio PageInfoProvider. Puede especificar cualquier nombre para el nodo.
-1. Agregue la siguiente propiedad al nodo PageInfoProvider:
+1. Añada la siguiente propiedad al nodo PageInfoProvider:
 
    * Nombre: className
    * Tipo: Cadena
@@ -601,7 +605,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-El siguiente ejemplo, en CRXDE Lite, muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider:
+El ejemplo siguiente, en CRXDE Lite, muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider:
 
 ![climage_1-3](assets/chlimage_1-3.png)
 

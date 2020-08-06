@@ -4,13 +4,16 @@ description: Obtenga información sobre cómo retirar recursos para editarlos y 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 4%
 
 ---
 
 
 # Archivos de ingreso y salida en Assets {#check-in-and-check-out-files-in-assets}
 
-Recursos Adobe Experience Manager (AEM) le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a activarlo en Recursos AEM. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+Recursos Adobe Experience Manager (AEM) le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que lo vuelva a registrar en AEM Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
 Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
@@ -38,7 +41,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sin embargo, puede tocar o hacer clic en el icono **[!UICONTROL Ver propiedades]** para editar los metadatos del recurso bloqueado.
+   Sin embargo, puede tocar o hacer clic en el icono Propiedades **[!UICONTROL de la]** Vista para editar los metadatos del recurso bloqueado.
 
 1. Toque o haga clic en el icono Editar para abrir el recurso en modo de edición.
 
@@ -54,13 +57,13 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   El recurso modificado está registrado en Recursos AEM y está disponible para su edición para otros usuarios.
+   El recurso modificado está registrado en AEM Assets y está disponible para su edición por otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger recursos que otros usuarios han extraído.
 
-1. Inicie sesión en Recursos AEM como administrador.
+1. Inicie sesión en AEM Assets como administrador.
 1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos que hayan sido retirados por otros usuarios.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

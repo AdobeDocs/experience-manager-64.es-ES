@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ El nodo perfil tiene la propiedad **sling:resourceSuperType** y el valor predete
 
 Los scripts Sling son scripts JSP. Estas secuencias de comandos JSP sirven como contenedores para reunir el HTML para el formulario solicitado y los artefactos JS/CSS requeridos. Estas secuencias de comandos de Sling también se denominan secuencias de comandos del procesador de **Perfil.** El procesador de perfil llama al servicio OSGi de Forms para procesar el formulario solicitado.
 
-La secuencia de comandos de perfil está en html.jsp y html.POST.jsp para solicitudes GET y POST. Puede copiar y modificar uno o varios archivos para anular y agregar las personalizaciones. No realice ningún cambio en el lugar, la actualización del parche sobrescribe dichos cambios.
+La secuencia de comandos de perfil está en html.jsp y html.POST.jsp para solicitudes de GET y POST. Puede copiar y modificar uno o varios archivos para anular y agregar las personalizaciones. No realice ningún cambio en el lugar, la actualización del parche sobrescribe dichos cambios.
 
 Un perfil contiene varios módulos. Los módulos son formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_filename.jsp y Football.jsp.
 
@@ -56,13 +59,13 @@ Para crear un perfil personalizado, realice los siguientes pasos:
 
 ### Crear nodo de Perfil {#create-profile-node}
 
-1. Vaya a la interfaz CRX DE en la dirección URL: `https://[server]:[port]/crx/de` e inicie sesión en la interfaz con credenciales de administrador.
+1. Vaya a la interfaz CRX DE en la dirección URL: `https://[server]:[port]/crx/de` e inicie sesión en la interfaz con las credenciales del administrador.
 
 1. En el panel izquierdo, navegue a la ubicación */contenido/formularios/perfiles*.
 
 1. Copie el nodo predeterminado y pegue el nodo en otra carpeta (*/content/perfiles*) con el nombre *hrform*.
 
-1. Seleccione el nuevo nodo, *formulario* y agregue una propiedad de cadena: *sling:resourceType* con valor: *Forma de formulario/demostración*.
+1. Seleccione el nuevo nodo, *formulario* y agregue una propiedad de cadena: *sling:resourceType* con valor: *reforma/demostración*.
 
 1. Haga clic en Guardar todo en el menú de la barra de herramientas para guardar los cambios.
 
@@ -80,4 +83,4 @@ Después de crear un perfil personalizado, agregue información de procesamiento
 
 1. Para comprobar que se ha creado el perfil, abra la dirección URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Para comprobar los formularios, [importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) del sistema de archivos local a AEM Forms y [previsualización el formulario](/help/forms/using/previewing-forms.md) en la instancia de creación del servidor AEM.
+Para comprobar los formularios, [importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) del sistema de archivos local a AEM Forms y [previsualización del formulario](/help/forms/using/previewing-forms.md) en AEM instancia de autor del servidor.

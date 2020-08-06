@@ -1,6 +1,6 @@
 ---
-title: Agregar una acción personalizada a la vista Lista de recursos
-seo-title: Agregar una acción personalizada a la vista Lista de recursos
+title: Añadir acción personalizada en la vista Lista de recursos
+seo-title: Añadir acción personalizada en la vista Lista de recursos
 description: Este artículo enseña cómo agregar acciones personalizadas a la vista Lista de recursos
 seo-description: Este artículo enseña cómo agregar acciones personalizadas a la vista Lista de recursos
 uuid: 72ce6c24-2758-4888-b797-1b134acc54d2
@@ -10,11 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 2%
 
 ---
 
 
-# Agregar una acción personalizada a la vista Lista de recursos {#add-custom-action-to-the-asset-listing-view}
+# Añadir acción personalizada en la vista Lista de recursos {#add-custom-action-to-the-asset-listing-view}
 
 ## Información general {#overview}
 
@@ -25,7 +28,7 @@ Puede agregar una acción personalizada a la vista Lista de recursos para:
 * Uno o más tipos de recursos o letras
 * Ejecución (acción/comando se activa) al seleccionar varios recursos/letras o al seleccionar uno o varios o sin seleccionar
 
-Esta personalización se muestra con el escenario que agrega el comando &quot;Descargar PDF plano&quot; a la vista Lista de recursos para las cartas. Este escenario de personalización permite a los usuarios descargar archivos PDF planos de una sola letra seleccionada.
+Esta personalización se muestra con el escenario que agrega el comando &quot;Descargar PDF plano&quot; a la vista Lista de recursos para cartas. Este escenario de personalización permite a los usuarios descargar archivos PDF planos de una sola letra seleccionada.
 
 ### Requisitos previos {#prerequisites}
 
@@ -35,9 +38,9 @@ Para completar el siguiente escenario o uno similar, necesita conocer:
 * JavaScript
 * Java
 
-## Escenario: Agregue un comando a la interfaz de usuario de la lista Cartas para descargar una versión PDF plana de una carta {#addcommandtoletters}
+## Escenario: Añadir un comando a la interfaz de usuario de la lista Letters para descargar una versión PDF plana de una carta {#addcommandtoletters}
 
-Los pasos siguientes agregan un comando &quot;Descargar PDF plano&quot; a la vista Lista de recursos para las cartas y permiten a los usuarios descargar archivos PDF planos de la carta seleccionada. Mediante estos pasos con el código y los parámetros adecuados, puede agregar otra funcionalidad para un recurso diferente, como diccionarios de datos o textos.
+Los pasos siguientes agregan un comando &quot;Descargar PDF plano&quot; a la vista Lista de recursos para cartas y permiten a los usuarios descargar archivos PDF planos de la carta seleccionada. Mediante estos pasos con el código y los parámetros adecuados, puede agregar otra funcionalidad para un recurso diferente, como diccionarios de datos o textos.
 
 Para personalizar la gestión de correspondencia a fin de permitir que los usuarios descarguen un PDF plano de letras, complete los siguientes pasos:
 
@@ -60,11 +63,11 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/Selection/items
+      **[!UICONTROL Ruta:]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/Selection/items
 
-      **** Ubicación: /apps/
+      **[!UICONTROL Ubicación:]** /apps/
 
-      **** Coincidir tipos de nodo: Seleccionado
+      **[!UICONTROL Coincidir tipos de nodo:]** Seleccionado
 
       ![Nodo Overlay](assets/2_createnodedownloadflatpdf.png)
 
@@ -78,12 +81,13 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **[!UICONTROL Aceptar]**:
 
-      **** Nombre: downloadFlatPDF (o el nombre que desea asignar a esta propiedad)
+      **[!UICONTROL Nombre:]** downloadFlatPDF (o el nombre que desea asignar a esta propiedad)
 
-      **** Tipo: nt:no estructurado
+      **[!UICONTROL Tipo:]** nt:no estructurado
 
    1. Haga clic en el nuevo nodo que ha creado (aquí downloadFlatPDF). CRX muestra las propiedades del nodo.
-   1. Agregue las siguientes propiedades al nodo (aquí downloadFlatPDF) y haga clic en **[!UICONTROL Guardar todo]**:
+   1. Añada las siguientes propiedades al nodo (aquí downloadFlatPDF) y haga clic en **[!UICONTROL Guardar todo]**:
+
    <table> 
     <tbody> 
     <tr> 
@@ -99,7 +103,7 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Cadena</td> 
-    <td><p>{"target": ".cq-manage-asset-admin-children pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> puede ser uno o varios para permitir selecciones de uno o varios recursos en los que se realiza la acción personalizada.</p> <p><strong>el tipo</strong> puede ser uno o varios (varias entradas separadas por coma) de los siguientes: LETRA,TEXTO,LISTA,CONDICIÓN,DATADICCIONARIO</p> </td> 
+    <td><p>{"destinatario": ".cq-manage-asset-admin-children pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> puede ser uno o varios para permitir selecciones de uno o varios recursos en los que se realiza la acción personalizada.</p> <p><strong>el tipo</strong> puede ser uno o varios (varias entradas separadas por coma) de los siguientes: LETRA,TEXTO,LISTA,CONDICIÓN,DATADICCIONARIO</p> </td> 
     </tr> 
     <tr> 
     <td>icono</td> 
@@ -142,15 +146,15 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL Ruta:]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Ubicación: /apps/
+      **[!UICONTROL Ubicación:]** /apps/
 
-      **** Coincidir tipos de nodo: Seleccionado
+      **[!UICONTROL Coincidir tipos de nodo:]** Seleccionado
 
    1. Haga clic en **[!UICONTROL Aceptar]**. La estructura de carpetas se crea en la carpeta de aplicaciones. Haga clic en **[!UICONTROL Guardar todo]**.
 
-1. En la carpeta js, cree un archivo llamado formaction.js con el código para el control de acciones del botón mediante los siguientes pasos:
+1. En la carpeta js, cree un archivo llamado formaction.js con el código para la gestión de acciones del botón mediante los siguientes pasos:
 
    1. Haga clic con el botón derecho en la carpeta **[!UICONTROL js]** de la siguiente ruta y seleccione **[!UICONTROL Crear > Crear archivo]**:
 
@@ -158,7 +162,7 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
       Asigne al archivo el nombre formaction.js.
 
-   1. Haga doble clic en el archivo para abrirlo en CRX.
+   1. Haga clic con el Doble en el archivo para abrirlo en CRX.
    1. En el archivo formaction.js (en la rama /apps), copie el código del archivo formaction.js en la siguiente ubicación:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
@@ -232,11 +236,11 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
-      **** Ruta: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Ruta:]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Ubicación: /apps/
+      **[!UICONTROL Ubicación:]** /apps/
 
-      **** Coincidir tipos de nodo: Seleccionado
+      **[!UICONTROL Coincidir tipos de nodo:]** Seleccionado
 
    1. Haga clic en **[!UICONTROL Aceptar]**. La estructura de carpetas se crea en la carpeta de aplicaciones.
 
@@ -248,13 +252,13 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **[!UICONTROL Aceptar]**:
 
-      **** Nombre: letterpdfdownloader (o el nombre que desea asignar a esta propiedad) debe ser único. Si utiliza un nombre diferente aquí, especifique lo mismo en la variable ACTION_URL del archivo formaction.js).
+      **[!UICONTROL Nombre:]** letterpdfdownloader (o el nombre que desea asignar a esta propiedad) debe ser único. Si utiliza un nombre diferente aquí, especifique lo mismo en la variable ACTION_URL del archivo formaction.js).
 
-      **** Tipo: nt:no estructurado
+      **[!UICONTROL Tipo:]** nt:no estructurado
 
    1. Haga clic en el nuevo nodo que ha creado (aquí downloadFlatPDF). CRX muestra las propiedades del nodo.
 
-   1. Agregue la siguiente propiedad al nodo (aquí letterpdfdownloader) y haga clic en **[!UICONTROL Guardar todo]**:
+   1. Añada la siguiente propiedad al nodo (aquí letterpdfdownloader) y haga clic en **[!UICONTROL Guardar todo]**:
 
       | **Nombre** | **Tipo** | **Value** |
       |---|---|---|
@@ -270,12 +274,12 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
       Asigne al archivo el nombre POST.jsp. (El nombre de archivo solo debe ser POST.jsp).
 
-   1. Haga doble clic en el archivo **[!UICONTROL POST.jsp]** para abrirlo en CRX.
-   1. Agregue el siguiente código al archivo POST.jsp y haga clic en **[!UICONTROL Guardar todo]**:
+   1. Haga clic con el botón Doble en el archivo **[!UICONTROL POST.jsp]** para abrirlo en CRX.
+   1. Añada el siguiente código al archivo POST.jsp y haga clic en **[!UICONTROL Guardar todo]**:
 
       Este código es específico del servicio de procesamiento de letras. Para cualquier otro recurso, agregue las bibliotecas de Java de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte API [de](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
-      Para obtener más información sobre las bibliotecas de AEM, consulte [Componentes](/help/sites-developing/components.md)de AEM.
+      Para obtener más información sobre las bibliotecas de AEM, consulte AEM [Componentes](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -348,11 +352,11 @@ Después de agregar la funcionalidad personalizada para descargar archivos PDF p
 
 1. Vaya a `https://[server]:[port]/[ContextPath]/projects.html` e inicie sesión.
 
-1. Seleccione **[!UICONTROL Formularios > Cartas]**. Correspondence Management enumera las cartas disponibles en el sistema.
+1. Seleccione **[!UICONTROL Forms > Cartas]**. Correspondence Management lista las cartas disponibles en el sistema.
 1. Haga clic en **[!UICONTROL Seleccionar]** y, a continuación, haga clic en una letra para seleccionarla.
 1. Seleccione **[!UICONTROL Más]** > &lt;Descargar PDF plano> (la funcionalidad personalizada creada con las instrucciones de este artículo). Aparece el cuadro de diálogo Descargar carta como PDF.
 
-   El nombre, la funcionalidad y el texto alternativo del elemento de menú dependen de la personalización creada en [Escenario: Agregue un comando a la interfaz de usuario de la lista Cartas para descargar una versión PDF plana de una carta.](#addcommandtoletters)
+   El nombre, la funcionalidad y el texto alternativo del elemento de menú dependen de la personalización creada en [Escenario: Añada un comando a la interfaz de usuario de la lista Letras para descargar una versión PDF plana de una letra.](#addcommandtoletters)
 
    ![Funcionalidad personalizada: Descargar archivo PDF plano](assets/5_downloadflatpdf.png)
 

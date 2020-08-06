@@ -22,7 +22,7 @@ ht-degree: 0%
 
 La seguridad de Documento garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Con la seguridad de documento, puede distribuir con seguridad cualquier información que haya guardado en un formato compatible. Los formatos de archivo admitidos son:
 
-* Archivos PDF de Adobe
+* Archivos Adobe PDF
 * Archivos de Microsoft® Word, Excel y PowerPoint
 
 Para obtener más información acerca de cómo las políticas protegen los tipos de archivo admitidos, consulte [Información](https://www.adobe.com/go/learn_aemforms_doc_security_63)adicional sobre seguridad de documento.
@@ -33,7 +33,7 @@ Puede proteger documentos mediante políticas. Una *política* es una recopilaci
 
 Los usuarios de seguridad de Documento crean políticas a través de las páginas web del usuario final. Los administradores utilizan las páginas web de seguridad de documento para crear conjuntos de políticas que contengan directivas compartidas disponibles para todos los usuarios autorizados.
 
-Aunque las directivas se almacenan en seguridad de documento, se aplican a los documentos a través de la aplicación cliente. La forma de aplicar políticas a documentos PDF se describe en detalle en la Ayuda *de* Acrobat. La aplicación de políticas mediante otras aplicaciones, como Microsoft Office, está documentada en la Ayuda *de extensiones de* Acrobat Reader DC para la aplicación.
+Aunque las directivas se almacenan en seguridad de documento, se aplican a los documentos a través de la aplicación cliente. La forma de aplicar políticas a documentos PDF se describe en detalle en la Ayuda de *Acrobat*. La aplicación de políticas mediante otras aplicaciones, como Microsoft Office, está documentada en la Ayuda *de extensiones de* Acrobat Reader DC para la aplicación.
 
 Cuando se aplica una política a un documento, la configuración de confidencialidad especificada en la política protege la información que contiene el documento. La configuración de confidencialidad también protege cualquier archivo (texto, audio o vídeo) dentro de un documento PDF. Puede distribuir el documento protegido por una política a destinatarios autorizados por la política.
 
@@ -183,7 +183,7 @@ Si el uso sin conexión está activado, los destinatarios también pueden utiliz
 
 ### Cómo funcionan los documentos protegidos por políticas {#how-policy-protected-documents-work}
 
-Para abrir y utilizar documentos protegidos por políticas, la política debe incluir su nombre como destinatario y debe tener una cuenta de seguridad de documento válida. Para documentos PDF, necesita Acrobat o Adobe Reader®. Para otros tipos de archivo, necesita la aplicación adecuada para el archivo con las extensiones de Acrobat Reader DC instaladas.
+Para abrir y utilizar documentos protegidos por políticas, la política debe incluir su nombre como destinatario y debe tener una cuenta de seguridad de documento válida. Para documentos PDF, necesita Acrobat o Adobe Reader®. Para otros tipos de archivos, necesita la aplicación adecuada para el archivo con las extensiones de Acrobat Reader DC instaladas.
 
 Al intentar abrir un documento protegido por una política, Acrobat, Adobe Reader o las extensiones de Acrobat Reader DC se conectan a la seguridad de documento para autenticarlo. A continuación, puede iniciar sesión. Si se está auditando el uso del documento, aparece un mensaje de notificación. Una vez que la seguridad de documento determina qué permisos de documento conceder, administra el descifrado del documento. A continuación, puede utilizar el documento según los parámetros de confidencialidad de la política.
 
@@ -202,7 +202,7 @@ Puede seguir utilizando un documento en estas condiciones:
 
 También puede utilizar documentos protegidos por políticas sin conexión (sin conexión a Internet o a la red) si la política permite el acceso sin conexión. Primero debe iniciar sesión en documento security para sincronizar el documento. A continuación, puede utilizar el documento durante el período de concesión sin conexión especificado en la política.
 
-Cuando finaliza el período de concesión sin conexión, debe volver a sincronizar el documento con la seguridad de documento, ya sea conectándose y abriendo un documento protegido por una política o utilizando un comando en la aplicación cliente. (Consulte la Ayuda *de* Acrobat o la Ayuda *correspondiente de extensiones de* Acrobat Reader DC para obtener más información).
+Cuando finaliza el período de concesión sin conexión, debe volver a sincronizar el documento con la seguridad de documento, ya sea conectándose y abriendo un documento protegido por una política o utilizando un comando en la aplicación cliente. (Consulte la Ayuda *de* Acrobat o la Ayuda *de extensiones de* Acrobat Reader DC correspondiente para obtener más información).
 
 Si guarda una copia de un documento protegido por una política mediante el comando de menú Guardar o Guardar como, la política se aplica automáticamente y se aplica para el nuevo documento. Eventos como los intentos de abrir el nuevo documento también se auditan y registran para el documento original.
 

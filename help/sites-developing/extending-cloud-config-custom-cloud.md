@@ -1,8 +1,8 @@
 ---
-title: Creación de un servicio de nube personalizado
-seo-title: Creación de un servicio de nube personalizado
-description: El conjunto predeterminado de servicios de nube se puede ampliar con tipos de servicios de nube personalizados
-seo-description: El conjunto predeterminado de servicios de nube se puede ampliar con tipos de servicios de nube personalizados
+title: Creación de un Cloud Service personalizado
+seo-title: Creación de un Cloud Service personalizado
+description: El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados
+seo-description: El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 12%
 
 ---
 
 
-# Creación de un servicio de nube personalizado{#creating-a-custom-cloud-service}
+# Creación de un Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-El conjunto predeterminado de servicios de nube se puede ampliar con tipos de servicios de nube personalizados. Esto le permite insertar marcas personalizadas en la página de forma estructurada. Esto será útil principalmente para proveedores de análisis de terceros, como Google Analytics, Chartbeat, etc. Los servicios de nube se heredan de las páginas principales a las páginas secundarias con la capacidad de romper la herencia en cualquier nivel.
+El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto le permite insertar marcas personalizadas en la página de forma estructurada. Esto será útil principalmente para proveedores de análisis de terceros, como Google Analytics, Chartbeat, etc. Los Cloud Services se heredan de las páginas principales a las páginas secundarias con la capacidad de romper la herencia en cualquier nivel.
 
 >[!NOTE]
 >
->Esta guía paso a paso para crear un nuevo servicio de nube es un ejemplo de uso de Google Analytics. Todo podría no aplicarse a su caso de uso.
+>Esta guía paso a paso para crear un nuevo Cloud Service es un ejemplo de uso de Google Analytics. Todo podría no aplicarse a su caso de uso.
 
 1. En CRXDE Lite, cree un nuevo nodo en `/apps`:
 
@@ -37,13 +40,14 @@ El conjunto predeterminado de servicios de nube se puede ampliar con tipos de se
 
    * **Nombre**: componentes
    * **Tipo**: `sling:Folder`
+
    y
 
    * **Nombre**: plantillas
    * **Tipo**: `sling:Folder`
 
 
-1. Haga clic con el botón derecho en `/apps/acs/analytics/components`. **** Seleccione **Crear... seguido de** Crear componente... El cuadro de diálogo que se abre permite especificar:
+1. Haga clic con el botón derecho en `/apps/acs/analytics/components`. Seleccione **Crear...** seguido de **Crear componente...** El cuadro de diálogo que se abre permite especificar:
 
    * **Etiqueta**: `googleanalyticspage`
    * **Título**: `Google Analytics Page`
@@ -53,12 +57,13 @@ El conjunto predeterminado de servicios de nube se puede ampliar con tipos de se
 1. Haga clic en **Siguiente** dos veces y especifique:
 
    * **Principales permitidos:** `acs/analytics/templates/googleanalytics`
+
    Haga clic en **Siguiente** dos veces y haga clic en **Aceptar**.
 
-1. Agregue una propiedad a `googleanalyticspage`:
+1. Añadir una propiedad a `googleanalyticspage`:
 
    * **Nombre:** `cq:defaultView`
-   * **** Valor: `html`
+   * **Valor:** `html`
 
 1. Cree un nuevo archivo denominado `content.jsp` debajo de `/apps/acs/analytics/components/googleanalyticspage`, con el siguiente contenido:
 
@@ -150,7 +155,7 @@ El conjunto predeterminado de servicios de nube se puede ampliar con tipos de se
 
 1. Crear nuevo componente: `/apps/acs/analytics/components/googleanalytics`.
 
-   Agregue el siguiente contenido a `googleanalytics.jsp`:
+   Añada el siguiente contenido a `googleanalytics.jsp`:
 
    ```xml
    <%@page import="org.apache.sling.api.resource.Resource,
@@ -195,7 +200,8 @@ El conjunto predeterminado de servicios de nube se puede ampliar con tipos de se
 
    * **Título**: `Google Analytics`
    * **Nombre**: `googleanalytics`
-   Vuelva a CRXDE Lite y, en `/etc/cloudservices/googleanalytics`, agregue la siguiente propiedad a `jcr:content`:
+
+   Vuelva al CRXDE Lite y, en `/etc/cloudservices/googleanalytics`, agregue la siguiente propiedad a `jcr:content`:
 
    * **Nombre**: `componentReference`
    * **Tipo**: `String`
@@ -206,6 +212,7 @@ El conjunto predeterminado de servicios de nube se puede ampliar con tipos de se
 
    * **Configuración principal**: `/etc/cloudservices/googleanalytics`
    * **Título:**  `My First GA Config`
+
    Elija Configuración **de** Google Analytics y haga clic en **Crear**.
 
 1. Escriba un ID **de cuenta**, por ejemplo `AA-11111111-1`. Haga clic en **Aceptar**.

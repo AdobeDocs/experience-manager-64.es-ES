@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Los ensayos deberán definir claramente:
 * Resultados esperados.
 * Criterios claros para aprobar o fallar.
 
-La perspectiva de automatizar casos de prueba es obviamente atractiva, ya que puede eliminar tareas repetitivas.
+El cliente potencial de automatizar los casos de prueba es obviamente atractivo ya que puede eliminar tareas repetitivas.
 
 ## Pruebas manuales frente a automatizadas {#manual-versus-automated-tests}
 
@@ -48,17 +51,17 @@ Sin embargo, la automatización de los casos de prueba es una inversión importa
 
 ## Prueba de aspectos específicos {#testing-specific-aspects}
 
-Al probar AEM, algunos detalles específicos son de particular interés:
+Cuando se realizan pruebas AEM algunos detalles específicos son de particular interés:
 
 Entornos de creación y publicación
 
-Aunque se trata en [entornos](/help/sites-developing/the-basics.md#environments) , vale la pena destacar un factor decisivo de AEM con respecto a las pruebas.
+Aunque, abarcado por [Entornos](/help/sites-developing/the-basics.md#environments) , vale la pena destacar un factor decisivo de AEM con respecto a los ensayos.
 
 Debe considerar AEM como dos aplicaciones:
 
 * entorno **Autor** Esta instancia permite a los autores introducir y publicar contenido.
 Esto tiene un conjunto pequeño (er) y predecible de usuarios, para los que es crucial una funcionalidad y un rendimiento específicos.
-* entorno de **publicación** Esta instancia presenta el sitio web en su formulario publicado para que los visitantes puedan acceder a él.
+* entorno de **publicación** Esta instancia presenta el sitio web en su formulario publicado para el acceso desde visitantes.
 Generalmente, este grupo de usuarios es mayor, ya que el volumen de tráfico no siempre es 100% predecible. El rendimiento sigue siendo crucial cuando se responde a las solicitudes. También se debe considerar el almacenamiento en caché y el equilibrio de carga.
 
 Aunque el mismo software como tal:
@@ -83,7 +86,7 @@ La mayoría de los proyectos instalarán Dispatcher para almacenamiento en cach�
 
 La prueba es difícil (el almacenamiento en caché se realiza en varios niveles y en varias ubicaciones) y debe realizarse en forma de caja negra. Los aspectos clave para probar son:
 
-* **Precisión**; asegúrese de que el visitante del sitio web ve las actualizaciones de contenido.
+* **Precisión**; asegúrese de que el visitante del sitio web pueda ver las actualizaciones de contenido.
 * **Continuidad**; asegúrese de que el sitio web siga estando disponible cuando se cierre un servidor.
 * **Los clústeres** se utilizan para proporcionar:
    * **Failover** Si un servidor falla, otros servidores del clúster se harán cargo del procesamiento.
@@ -93,6 +96,6 @@ Cuando se utiliza para un proyecto de cliente, se debe probar el clúster para c
 
 ## Prueba de software de terceros {#testing-third-party-software}
 
-Se hará referencia a cualquier software de terceros que interactúe con AEM en las Especificaciones detalladas de requisitos.
+Cualquier software de terceros interconectado a AEM será referenciado en las Especificaciones detalladas de requisitos.
 
 Todas las pruebas requeridas (según el ámbito definido) deben analizarse y obtenerse pruebas limpias.

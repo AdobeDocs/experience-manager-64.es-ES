@@ -1,8 +1,8 @@
 ---
 title: Funcionamiento de Process Sistema de informes
 seo-title: Funcionamiento de Process Sistema de informes
-description: Descripción de los servicios que conforman AEM Forms en el Sistema de informes de proceso JEE y una introducción a la interfaz de usuario de Process Sistema de informes
-seo-description: Descripción de los servicios que conforman AEM Forms en el Sistema de informes de proceso JEE y una introducción a la interfaz de usuario de Process Sistema de informes
+description: Descripción de los servicios que conforman el Sistema de informes de procesos de AEM Forms en JEE y una introducción a la interfaz de usuario de Sistema de informes de procesos
+seo-description: Descripción de los servicios que conforman el Sistema de informes de procesos de AEM Forms en JEE y una introducción a la interfaz de usuario de Sistema de informes de procesos
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +21,9 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Process Sistema de informes es el módulo de sistema de informes de AEM Forms en JEE.
 
-Process Sistema de informes permite ejecutar informes en procesos y tareas de AEM Forms.
+El Sistema de informes de procesos permite ejecutar informes en procesos y tareas de AEM Forms.
 
-Process Sistema de informes utiliza el repositorio de Process Sistema de informes incrustado para publicar datos de Forms. Luego utiliza esos datos para ejecutar informes.
+Process Sistema de informes utiliza el repositorio integrado de Process Sistema de informes para publicar datos de Forms. Luego utiliza esos datos para ejecutar informes.
 
 El Sistema de informes de procesos consta de los siguientes módulos:
 
@@ -60,7 +63,7 @@ A continuación, el servicio utiliza los servicios OSGi para obtener los datos d
 
 ### Interfaz de usuario de Sistema de informes de procesos {#process-reporting-user-interface-br}
 
-La interfaz de usuario de Process Sistema de informes es una interfaz basada en explorador Web. Esta interfaz se utiliza para vista de información sobre procesos y tareas publicada en la base de datos de AEM Forms.
+La interfaz de usuario de Process Sistema de informes es una interfaz basada en explorador Web. Esta interfaz se utiliza para vista de información sobre procesos y tareas que se publica desde la base de datos de AEM Forms.
 
 ### Servicio QueryDataServlet {#querydataservlet-service-br-1}
 

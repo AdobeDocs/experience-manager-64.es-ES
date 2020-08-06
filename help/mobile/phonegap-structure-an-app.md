@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '973'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Un proyecto de AEM Mobile incluye un conjunto diverso de tipos de contenido, como páginas, bibliotecas de clientes JavaScript y CSS, componentes de AEM reutilizables, configuraciones de Content Sync y contenido del shell de la aplicación PhoneGap. Basar su nueva aplicación de AEM Mobile en el [Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) es una buena forma de incorporar todos los tipos de contenido a nuestra estructura recomendada para facilitar la portabilidad y el mantenimiento a largo plazo.
+Un proyecto de AEM Mobile incluye un conjunto diverso de tipos de contenido, como páginas, bibliotecas de cliente JavaScript y CSS, componentes de AEM reutilizables, configuraciones de sincronización de contenido y contenido del shell de la aplicación PhoneGap. Basar su nueva aplicación de AEM Mobile en el [Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) es una buena forma de incorporar todos los tipos de contenido a nuestra estructura recomendada para facilitar la portabilidad y el mantenimiento a largo plazo.
 
 ## Contenido de la página {#page-content}
 
@@ -29,13 +32,13 @@ Las páginas de la aplicación deben estar situadas debajo de /content/mobileapp
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Según la convención de AEM, la primera página de la aplicación debe ser una redirección a uno de sus elementos secundarios, que sirve como idioma predeterminado de la aplicación (en tanto en los casos de Geometrixx como de Starter Kit). La página de configuración regional de nivel superior suele heredar del componente básico &#39;splash-page&#39; (/libs/mobileapps/components/splash-page) que se encarga de la inicialización necesaria para admitir la instalación de actualizaciones de sincronización de contenido sobre el contenido (el código contentInit se encuentra en /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Por AEM convención, la primera página de la aplicación debe ser una redirección a uno de sus elementos secundarios, que sirve como idioma predeterminado de la aplicación (&#39;en&#39; en los casos de Geometrixx y de Starter Kit). La página de configuración regional de nivel superior suele heredar del componente básico &#39;splash-page&#39; (/libs/mobileapps/components/splash-page) que se encarga de la inicialización necesaria para admitir la instalación de actualizaciones de sincronización de contenido sobre el contenido (el código contentInit se encuentra en /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Plantillas y componentes {#templates-and-components}
 
-La plantilla y el código de componente de la aplicación deben encontrarse en /apps/&lt;nombre de marca>/&lt;nombre de la aplicación>. De conformidad con la convención, debe colocar la plantilla y el código de componente en /apps/&lt;nombre de marca>/&lt;nombre de la aplicación>. Este patrón debe ser conocido por los desarrolladores que ya han trabajado con el sitio en AEM. Generalmente se sigue porque /apps/ está bloqueado de forma predeterminada en el acceso anónimo en las instancias de publicación. En consecuencia, el código JSP sin procesar está oculto para los posibles atacantes.
+La plantilla y el código de componente de la aplicación deben encontrarse en /apps/&lt;nombre de marca>/&lt;nombre de la aplicación>. De conformidad con la convención, debe colocar la plantilla y el código de componente en /apps/&lt;nombre de marca>/&lt;nombre de la aplicación>. Este patrón debe ser familiar para los programadores que ya han trabajado con el sitio en AEM. Generalmente se sigue porque /apps/ está bloqueado de forma predeterminada en el acceso anónimo en las instancias de publicación. En consecuencia, el código JSP sin procesar está oculto para los posibles atacantes.
 
-Las plantillas específicas de la aplicación se pueden configurar para que solo se presenten mediante el nodo de propiedades de la propia plantilla y estableciendo su valor en &#39;/content/mobileapps(/). `allowedPaths`&amp;ast;)?&#39; - o incluso algo más específico si la plantilla solo debería utilizarse para una sola aplicación. Las propiedades `allowedParents` y `allowedChildren` también se pueden aprovechar para obtener un control detallado de qué plantillas estarán disponibles para un autor en función del lugar en el que se esté creando la nueva página.
+Las plantillas específicas de la aplicación se pueden configurar para que solo se presenten mediante el nodo de propiedades de la propia plantilla y estableciendo su valor en &#39;/content/mobileapps(/). `allowedPaths`&amp;ast;)?&#39; - o incluso algo más específico si la plantilla solo debería utilizarse para una sola aplicación. Las propiedades `allowedParents` y `allowedChildren` también se pueden aprovechar para obtener un control detallado de las plantillas que estarán disponibles para un autor en función del lugar donde se esté creando la nueva página.
 
 Al crear un nuevo componente de página de aplicación desde cero, se recomienda establecer su propiedad en &#39;mobileapps/components/angular/ng-page&#39; `sling:resourceSuperType` . Esto configurará la página para la creación y el procesamiento como una aplicación de una sola página y le permitirá superponer cualquier archivo .jsp que su componente deba cambiar. Dado que ng-page no incluye ningún marco de interfaz de usuario, un desarrollador normalmente terminará superponiendo (al menos) &#39;template.jsp&#39; (superpuesto desde /libs/mobileapps/components/angular/ng-page/template.jsp).
 
@@ -45,7 +48,7 @@ Los componentes de página autorizados, que desean aprovechar AngularJS, tienen 
 
 Cuando se trata de bibliotecas de cliente, hay algunas opciones disponibles para el desarrollador de dónde colocarlas en el repositorio. Se ofrece la siguiente pauta de orientación, pero no es un requisito difícil.
 
-Si el código de cliente puede mantenerse por su cuenta y no se relaciona con un componente específico de la aplicación, lo que significa que puede reutilizarse en otras aplicaciones, se recomienda almacenarlo en /etc/clientlibs/&lt;nombre de marca>/&lt;nombre de biblioteca>. Por otro lado, si la clientlib es específica de una sola aplicación, puede anidarla como un elemento secundario del nodo de diseño de la aplicación; /etc/designs/phonegap/&lt;nombre de marca>/&lt;nombre de aplicación>/clientlibs. La categoría de clientlib no debe ser utilizada por otras bibliotecas y debe utilizarse para incrustar otras bibliotecas según sea necesario. Si sigue estos patrones, el desarrollador no tendrá que agregar nuevas configuraciones de sincronización de contenido cada vez que se agregue una biblioteca de cliente a la aplicación, sino que simplemente actualizará la propiedad &#39;embeds&#39; de la clientlib de diseño de la aplicación. Por ejemplo, observe el nodo de configuración Geometrixx clientlibs-all Content Sync en /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
+Si el código de cliente puede mantenerse por su cuenta y no se relaciona con un componente específico de la aplicación, lo que significa que puede reutilizarse en otras aplicaciones, se recomienda almacenarlo en /etc/clientlibs/&lt;nombre de marca>/&lt;nombre de biblioteca>. Por otro lado, si la clientlib es específica de una sola aplicación, puede anidarla como un elemento secundario del nodo de diseño de la aplicación; /etc/designs/phonegap/&lt;nombre de marca>/&lt;nombre de aplicación>/clientlibs. La categoría de clientlib no debe ser utilizada por otras bibliotecas y debe utilizarse para incrustar otras bibliotecas según sea necesario. Si sigue estos patrones, el desarrollador no tendrá que agregar nuevas configuraciones de sincronización de contenido cada vez que se agregue una biblioteca de cliente a la aplicación, sino que simplemente actualizará la propiedad &#39;embeds&#39; de la clientlib de diseño de la aplicación. Por ejemplo, observe el nodo de configuración de Geometrixx clientlibs-all Content Sync en /content/phonegap/geometrixx-outdoors/en/jcr:content/pge-app/app-config/clientlibs-all.
 
 Si el código de cliente está estrechamente vinculado a un componente específico, colóquelo en una biblioteca de cliente anidada debajo de la ubicación del componente en /apps/ e incruste su categoría en la clientlib &#39;design&#39; de la aplicación.
 

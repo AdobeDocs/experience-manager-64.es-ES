@@ -1,8 +1,8 @@
 ---
 title: Sistema de informes de Consultas ad hoc en proceso
 seo-title: Sistema de informes de Consultas ad hoc en proceso
-description: Crear consultas personalizadas para buscar AEM Forms en los detalles de proceso y tarea JEE en Sistema de informes de proceso
-seo-description: Crear consultas personalizadas para buscar AEM Forms en los detalles de proceso y tarea JEE en Sistema de informes de proceso
+description: Crear consultas personalizadas para buscar AEM Forms en los detalles de proceso y tarea JEE en Sistema de informes de procesos
+seo-description: Crear consultas personalizadas para buscar AEM Forms en los detalles de proceso y tarea JEE en Sistema de informes de procesos
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1690'
+ht-degree: 0%
 
 ---
 
 
 # Sistema de informes de Consultas ad hoc en proceso {#ad-hoc-queries-in-process-reporting}
 
-Las consultas ad-hoc en el Sistema de informes de procesos permiten crear consultas personalizadas que se pueden utilizar para buscar detalles de proceso y tarea de las instancias de proceso de AEM Forms definidas en el entorno de AEM Forms.
+Las consultas ad-hoc en el Sistema de informes de procesos le permiten crear consultas personalizadas que puede utilizar para buscar detalles de proceso y tarea de las instancias de procesos de AEM Forms definidas en su entorno AEM Forms.
 
 Además, se pueden definir consultas ad hoc mediante filtros de propiedades de proceso y tarea. Estos filtros se pueden guardar y utilizar para ejecutar los informes más adelante.
 
@@ -121,11 +124,12 @@ Utilice las opciones del panel **Mis Filtros** para **Añadir** ![lc_pr_add_filt
 1. Los siguientes campos se muestran en un resultado de búsqueda de proceso:
 
    * **ID** de proceso: ID del proceso. El campo está hipervinculado. Si hace clic en un ID de proceso en este campo, se le redirigirá al panel Detalles **[!UICONTROL del]** proceso para el proceso.
-   * **Iniciador**: Usuario de AEM Forms que inició la instancia de proceso
+   * **Iniciador**: El usuario de AEM Forms que inició la instancia de proceso
    * **Hora** de creación: Fecha y hora en que se inició la instancia de proceso
    * **Hora** de finalización: Fecha y hora en que se completó la instancia del proceso
    * **Duración**: Duración desde el inicio hasta la finalización de la instancia de proceso
    * **Estado**: Estado actual de la instancia de proceso.
+
    De forma predeterminada, el resultado se ordena por ID de proceso. Sin embargo, para ordenar el resultado por cualquiera de los campos, haga clic en el título del campo.
 
    Dado que la ordenación es una operación de alternancia, haga clic en un encabezado de columna para ordenar el resultado de forma ascendente y vuelva a hacer clic en él para ordenar de forma descendente.
@@ -133,12 +137,13 @@ Utilice las opciones del panel **Mis Filtros** para **Añadir** ![lc_pr_add_filt
    Del mismo modo, los campos siguientes se muestran en un resultado de búsqueda de Tarea:
 
    * **ID** de Tarea: ID de la tarea. El campo está hipervinculado. Si hace clic en un ID de tarea en este campo, se le redirigirá al panel Detalles **[!UICONTROL de]** Tarea de la tarea.
-   * **Iniciador**: Usuario de AEM Forms que inició la instancia de proceso
+   * **Iniciador**: El usuario de AEM Forms que inició la instancia de proceso
    * **Hora** de creación: Fecha y hora en que se inició la instancia de proceso
 
    * **Hora** de finalización: Fecha y hora en que se completó la instancia del proceso
    * **Duración**: Duración desde el inicio hasta la finalización de la instancia de proceso
    * **Estado**: Estado actual de la instancia de proceso.
+
    De forma predeterminada, el resultado se ordena por ID de Tarea. Sin embargo, para ordenar el resultado por cualquiera de los campos, haga clic en el título del campo. El resultado se ordena por la columna indicada con una flecha oscura junto al encabezado de la columna.
 
    Dado que la ordenación es una operación de alternancia, haga clic en un encabezado de campo para ordenar el resultado en orden ascendente y vuelva a hacer clic en él para ordenar en orden descendente. El orden actual (ascendente/descendente) se indica mediante la dirección de la flecha oscurecida situada junto al encabezado de la columna.
@@ -150,6 +155,7 @@ Utilice las opciones del panel **Mis Filtros** para **Añadir** ![lc_pr_add_filt
 
    * **Actualizar**: Actualiza el informe con los datos más recientes en el almacenamiento
    * **Exportar a CSV**: Exporte los datos del informe a un archivo separado por comas.
+
    >[!NOTE]
    >
    >Al exportar un informe, todo el resultado de la búsqueda se exporta a un archivo CSV y no sólo a la página actual
@@ -162,7 +168,7 @@ Del mismo modo, se utiliza el panel Detalles **de la** Tarea para vista de los d
 
 ### A los detalles del proceso de vista/Tarea {#to-view-process-task-details}
 
-Puede vista de los detalles de un proceso o tarea de AEM Forms específico:
+Puede vista de los detalles de un proceso/tarea de AEM Forms específico:
 
 * **A partir de un resultado de búsqueda de proceso/Tarea**
 * **Al introducir el ID de proceso/Tarea en el panel Detalles de proceso/Tarea**
@@ -195,6 +201,7 @@ Puede vista de los detalles de un proceso o tarea de AEM Forms específico:
    * Duración del proceso
    * Estado del proceso
    * Iniciador de proceso
+
    **Panel superior derecho:** Muestra los siguientes detalles de las tareas que conforman el proceso seleccionado:
 
    * ID de Tarea
@@ -205,6 +212,7 @@ Puede vista de los detalles de un proceso o tarea de AEM Forms específico:
    * Hora de la fecha de finalización de la Tarea
    * Duración de la Tarea
    * Estado de Tarea
+
    **Panel inferior derecho:** Muestra los siguientes detalles del historial de procesos del proceso seleccionado:
 
    * Nombre del proceso
@@ -212,6 +220,7 @@ Puede vista de los detalles de un proceso o tarea de AEM Forms específico:
    * Hora de la fecha de actualización del proceso
    * Hora de finalización del proceso
    * Estado del proceso
+
    **Resultado de Detalles de Tarea**
 
    ![tarea_details](assets/task_details.png)
@@ -226,12 +235,14 @@ Puede vista de los detalles de un proceso o tarea de AEM Forms específico:
    * Duración de la Tarea
    * Estado de Tarea
    * Ruta de tarea seleccionada
+
    **Panel superior derecho:** Muestra los siguientes detalles de los formularios que conforman la tarea seleccionada:
 
    * ID del formulario
    * Hora de creación del formulario
    * Hora de la actualización del formulario
    * Url de plantilla de formulario
+
    **Panel inferior derecho:** Muestra los siguientes detalles del historial de procesos de la tarea seleccionada:
 
    * Tipo de asignación de Tarea

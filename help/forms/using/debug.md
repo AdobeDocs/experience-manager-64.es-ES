@@ -68,12 +68,15 @@ Compruebe los siguientes parámetros:
    Asegúrese de que el estado de los siguientes paquetes está &quot;activo&quot;:
 
    * scala-lang.bundle [osgi]
+
    (adobe.livecyclcom.com-lang.bundle)
 
-   * Adobe XFA Forms Renderer
+   * Procesador Adobe XFA Forms
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC Connector
+   * Conector XFA Forms LC de Adobe
+
    (com.adobe.livecycle.adobe-lc-forms-lc-Connector)
 
 ## Problema: El formulario se procesa sin estilos {#problem-form-renders-without-styles}
@@ -114,7 +117,7 @@ Compruebe los siguientes parámetros:
 
 ## Problema: No se puede enviar el formulario {#problem-unable-to-submit-the-form}
 
-1. Asegúrese de que tiene derechos para acceder al servidor AEM y de que está conectado al servidor.
+1. Asegúrese de que tiene derechos para acceder al servidor de AEM y de que está conectado al servidor.
 1. Compruebe que el parámetro submitUrl es correcto.
 1. Habilite los registros del lado del cliente como se indica en [Registros para los formularios](/help/forms/using/enable-logs.md) HTML5 mediante la opción de depuración **1-a5-b5-c5**. A continuación, procese el formulario y haga clic en Enviar. Abra la consola de depuración del navegador y compruebe si hay algún error.
 1. Localice los registros del servidor como se indica en [Registros para los formularios](/help/forms/using/enable-logs.md)HTML5. Compruebe si hubo algún error en los registros del servidor durante el envío.

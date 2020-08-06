@@ -1,6 +1,6 @@
 ---
-title: 'Diseño interactivo '
-seo-title: 'Diseño interactivo '
+title: Diseño adaptable
+seo-title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 seo-description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1798'
+ht-degree: 93%
 
 ---
 
 
-# Diseño interactivo {#responsive-layout}
+# Diseño adaptable {#responsive-layout}
 
 AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente **Contenedor de diseño**.
 
@@ -109,24 +112,29 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
    * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
+
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Al seleccionar un dispositivo específico para emular, puede efectuar cualquiera de las siguientes acciones:
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
    * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
+
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
 1. Una vez que haya seleccionado un dispositivo específico, puede:
 
    * Ver el marcador activo del dispositivo seleccionado; por ejemplo, **iPad.**
    * Ver el marcador activo del [punto de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) adecuado; por ejemplo, **Tableta.**
+
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
    * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6**).
+
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
    * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
@@ -175,6 +183,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
    * El contenedor de diseños anidado en la parte inferior se mostrará en negro.
    * El siguiente contenedor de diseños anidado se mostrará de color gris oscuro.
    * Cada contenedor sucesivo aparecerá en un tono más claro de gris.
+
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
 1. De esta forma se resaltará toda la cuadrícula con su contenido. Se muestra la barra de herramientas de acciones, desde donde puede seleccionar una acción, como, por ejemplo, **Eliminar.**
@@ -231,25 +240,31 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:
 
    * **Principal**: seleccione el componente principal.
+
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Mostrar componentes ocultos**: permite mostrar todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos existen en ese momento. El contador muestra cuántos componentes hay ocultos.
+
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
+
    ![](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
+
    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Ocultar componente**: oculte el componente actual.
+
    ![](do-not-localize/screen_shot_2018-03-23at090834.png)
 
    >[!NOTE]
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar componentes** Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
+**Mostrar la opción de componentes** ocultos. En este ejemplo, hay dos componentes ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.

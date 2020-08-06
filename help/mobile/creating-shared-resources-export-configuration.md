@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -39,25 +42,26 @@ La configuración de sincronización de contenido que se encuentra en **&lt;dps-
 
 >[!CAUTION]
 >
->Puede realizar los pasos siguientes para ver los recursos compartidos de muestra, solo si tiene:
+>Puede realizar los pasos siguientes para vista de recursos compartidos de muestra, solo si tiene:
 >
 >* se instaló el contenido de muestra
->* ejecución de una instancia de AEM
+>* ejecución de AEM instancia
 >* no hay contexto personalizado configurado o un puerto diferente
+
 >
 
 
 
-Para ver un recurso compartido de muestra, consulte los pasos siguientes:
+Para vista de recursos compartidos de muestra, consulte los pasos siguientes:
 
-1. Abra CRXDE Lite en su servidor AEM.
-1. Vaya a esta ruta *[/etc/contentsync/templates/dps-we-less-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*para ver los recursos compartidos de muestra.
+1. Abra el CRXDE Lite en el servidor AEM.
+1. Vaya a esta ruta *[/etc/contentsync/templates/dps-we-less-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*para obtener la vista de los recursos compartidos de muestra.
 
-   Puede ver todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
+   Puede realizar la vista de todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
 >[!NOTE]
 >
->Los recursos compartidos deben cargarse o exportarse a On-Demand Services de AEM Mobile cuando cambie alguno de los recursos compartidos.
+>Los recursos compartidos deben cargarse o exportarse a AEM Mobile On-demand Services cuando cambie alguno de los recursos compartidos.
 

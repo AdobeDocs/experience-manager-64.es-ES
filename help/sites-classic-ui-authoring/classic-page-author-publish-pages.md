@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +39,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
    >
    >
 * **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
+   >  Son los términos técnicos que describen el movimiento de datos (p. ej. contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
 >
 
 
@@ -47,6 +50,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >* Se activará un flujo de trabajo para notificar a la persona adecuada la solicitud de publicación.
 >* Se mostrará un mensaje para notificárselo (durante un breve periodo de tiempo).
+
 >
 
 

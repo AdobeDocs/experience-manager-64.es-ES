@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
 
 # Moderación en contexto {#in-context-moderation}
 
-En el caso de las comunidades AEM, la moderación puede ser realizada por administradores y miembros de la comunidad de confianza directamente en la página publicada en la que se publicó el contenido de la comunidad.
+Para AEM Communities, la moderación puede ser realizada por administradores y miembros de la comunidad de confianza directamente en la página publicada donde se publicó el contenido de la comunidad.
 
 Al utilizar una consola [de](moderation.md)moderación, la información mostrada para el contenido incluye un vínculo a la página publicada para permitir el acceso a acciones de moderación adicionales disponibles al moderar en contexto.
 
@@ -37,7 +40,7 @@ La interfaz de usuario presentada al moderador en la instancia de publicación e
 
 ## Ejemplo {#example}
 
-Con el sitio [Participación](http://localhost:4503/content/sites/engage/en.html) de Geometrixx creado al [iniciarse en comunidades](getting-started.md)de AEM, es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se muestra a continuación.
+Mediante el uso del sitio de [Geometrixx](http://localhost:4503/content/sites/engage/en.html) creado al [iniciarse en AEM Communities](getting-started.md), es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se muestra a continuación.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) fue identificado como un miembro de la comunidad de confianza al agregarlo al grupo de moderadores de participación de la comunidad al crear el sitio.
 
@@ -87,7 +90,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
 A continuación se muestra una vista del foro vista por un visitante del sitio que no ha iniciado sesión (5).
 
-Un visitante anónimo del sitio solo puede ver el foro, pero no puede publicar contenido ni realizar acciones de moderación.
+Un visitante anónimo del sitio solo puede realizar vistas en el foro, pero no puede publicar contenido ni realizar acciones de moderación.
 
 ![chlimage_1](assets/chlimage_1.png)
 

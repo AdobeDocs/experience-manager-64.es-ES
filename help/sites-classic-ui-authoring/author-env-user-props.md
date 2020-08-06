@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 69%
 
 ---
 
@@ -21,7 +24,8 @@ AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
 Al utilizar la [configuración de la cuenta](#account-settings) y las [preferencias de usuario](#user-preferences), se pueden definir las siguientes opciones y preferencias:
 
-* **Barra de herramientas de edición** Seleccione si desea que se muestre la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del navegador, tiene los botones **Copiar**, **Cortar**, **Pegar** y **Eliminar**, que se pueden usar con los componentes de párrafo de la página:
+* **Barra de herramientas de edición** Seleccione si desea que se muestre la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona 
+**Botones Copiar**, **Cortar**, **Pegar** y **Eliminar** para utilizar con los componentes de párrafo de esa página:
 
    * Mostrar si es necesario (predeterminado)
    * Mostrar siempre
@@ -29,12 +33,12 @@ Al utilizar la [configuración de la cuenta](#account-settings) y las [preferenc
 
 * **Suplantar como** Con la función [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
 
-* **Idioma** El idioma que se va a utilizar en la interfaz de usuario del entorno de creación.Seleccione el idioma requerido en la lista de idiomas disponibles.
+* **Idioma** El idioma que se va a utilizar en la interfaz de usuario del entorno de creación. Seleccione el idioma requerido en la lista disponible.
 
 * **Gestión de ventanas** Seleccione una de estas opciones:
 
-   * Varias ventanas (predeterminado):Las páginas se abrirán en una ventana nueva.
-   * Ventana única:Las páginas se abrirán en la ventana actual.
+   * Varias ventanas (predeterminado): Las páginas se abrirán en una ventana nueva.
+   * Ventana única: Las páginas se abrirán en la ventana actual.
 
 ## Configuración de la cuenta {#account-settings}
 

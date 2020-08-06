@@ -78,7 +78,7 @@ Puede editar un fragmento de documento de texto existente mediante los siguiente
 
 ## Personalización de un fragmento de documento de texto mediante las propiedades del modelo de datos de formulario {#formdatamodel}
 
-Puede personalizar los fragmentos de documento de texto insertando las propiedades del modelo de datos de formulario. Al insertar propiedades del modelo de datos de formulario en el texto, puede recuperar y rellenar datos específicos del destinatario del origen de datos asociado mientras previsualiza una comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
+Puede personalizar los fragmentos de documento de texto insertando las propiedades del modelo de datos de formulario. Al insertar propiedades del modelo de datos de formulario en el texto, puede recuperar y rellenar datos específicos del destinatario del origen de datos asociado mientras previsualiza una comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
 Si ha especificado un modelo de datos de formulario al crear un texto, las propiedades del modelo de datos de formulario aparecen en el panel izquierdo del editor de texto. El modelo de datos de formulario especificado debe ser el mismo para el fragmento de documento de texto que para la comunicación interactiva que lo incluye.
 
@@ -254,7 +254,7 @@ El editor de texto ha incorporado compatibilidad con 210 caracteres especiales. 
 
 Cuando se trabaja con fragmentos de documento de texto que contienen una gran cantidad de texto, es necesario buscar una cadena de texto específica. También es posible que tenga que reemplazar una cadena de texto específica por una cadena alternativa.
 
-La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena de texto en un fragmento de documento de texto. La función también incluye una potente búsqueda de expresiones regular.
+La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena de texto en un fragmento de documento de texto. La función también incluye una potente búsqueda de expresión regular.
 
 1. Abra un fragmento de documento de texto para [editarlo](#edittext).
 1. Toque **[!UICONTROL Buscar y reemplazar]**.

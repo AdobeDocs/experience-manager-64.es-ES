@@ -9,6 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
 source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+workflow-type: tm+mt
+source-wordcount: '3866'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ Normalmente, los usuarios empresariales no necesitan conocer las representacione
 
 ## Requisitos previos {#prerequisite}
 
-Instale el paquete [de](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilidad para vista de la opción Diccionarios **de** datos en la página **Formularios** .
+Instale el paquete [de](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) compatibilidad para vista de la opción Diccionarios **de** datos en la página de **Forms** .
 
 ## Creación de un diccionario de datos {#createdatadictionary}
 
@@ -46,7 +49,7 @@ Puede utilizar el Editor de diccionario de datos para crear un diccionario de da
 >
 >Para varias letras que requieren elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos grandes con un gran número de elementos puede provocar problemas de rendimiento al utilizar el diccionario de datos y cargar los elementos, como letras y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para letras diferentes.
 
-1. Seleccione **Formularios** > Diccionarios **de datos**.
+1. Seleccione **Forms** > Diccionarios **de datos**.
 1. Toque **Crear diccionario** de datos.
 1. En la pantalla Propiedades, agregue lo siguiente:
 
@@ -56,6 +59,7 @@ Puede utilizar el Editor de diccionario de datos para crear un diccionario de da
    * **Descripción**: (Opcional) Descripción del diccionario de datos.
    * **Etiquetas:** (Opcional) Para crear una etiqueta personalizada, introduzca un valor en el campo de texto y pulse Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas recientemente agregadas.
    * **Propiedades** extendidas: (Opcional) Toque **Añadir campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad, introduzca un nombre de propiedad único. En la columna Valor, introduzca un valor para asociarlo a la propiedad.
+
    ![Propiedades del diccionario de datos especificadas en alemán](do-not-localize/1_ddproperties.png)
 
 1. (Opcional) Para cargar una definición de esquema XSD para el diccionario de datos, en el panel Estructura del diccionario de datos, toque **Cargar Esquema** XML. Vaya al archivo XSD, selecciónelo y toque **Abrir**. Se crea un diccionario de datos en función del esquema XML cargado. Es necesario modificar los nombres y las descripciones de los elementos en el diccionario de datos. Para ello, seleccione los nombres de los elementos tocándolos y editando sus descripciones, nombres para mostrar y otros detalles en los campos del panel derecho.
@@ -78,6 +82,7 @@ Puede utilizar el Editor de diccionario de datos para crear un diccionario de da
    * Un DDE compuesto contiene otros DDE, que pueden ser de tipo primitivo, compuesto o colección. Por ejemplo, una dirección que consta de una dirección de calle, ciudad, provincia, país y código postal.
    * Los DDE primitivos son elementos como cadenas, números, fechas y valores booleanos que contienen información como el nombre de una ciudad.
    * Una colección es una lista de DDE simples o compuestos similares. Por ejemplo, un cliente con varias ubicaciones o distintas direcciones de facturación y envío.
+
    A continuación se indican algunas reglas para crear un diccionario de datos:
 
    * Solo se permite el tipo compuesto como DDE de nivel superior en un diccionario de datos.
@@ -85,6 +90,7 @@ Puede utilizar el Editor de diccionario de datos para crear un diccionario de da
    * El nombre de referencia debe ser único.
    * Un DDE principal (compuesto) no puede tener dos elementos secundarios con el mismo nombre.
    * Los números solo contienen tipos de cadenas primitivas.
+
    Para obtener más información sobre los elementos Compuesto, Colección y Primitivo y trabajar con elementos del diccionario de datos, consulte [Asignación de elementos del diccionario de datos a Esquema](#mappingddetoschema)XML.
 
    Para obtener información sobre las validaciones en el diccionario de datos, consulte Validaciones del editor [de diccionarios de datos](#ddvalidations).
@@ -125,6 +131,7 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
    * Pase el ratón sobre un diccionario de datos y toque Editar.
    * Seleccione un diccionario de datos y, a continuación, toque Editar en el encabezado.
    * Pase el ratón sobre un diccionario de datos y toque Seleccionar. A continuación, toque Editar en el encabezado.
+
    O toque un diccionario de datos para vista.
 
 1. En el diccionario de datos, toque un elemento sencillo para seleccionarlo. Los elementos compuestos y de colección no tienen referencias.
@@ -357,7 +364,7 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
   </tr> 
   <tr> 
    <td><p>xs:element donde maxOccurs &gt; 1<br /> </p> </td> 
-   <td><p>DDE de tipo: COLLECTION-<br /> Se crea un nodo DDE junto al DDE COLLECTION que captura información del nodo COLLECTION principal. Lo mismo se crea para la recopilación de tipos de datos simples/compuestos. Siempre que tenga una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos captura los campos constituyentes en los elementos secundarios del DDE creados para capturar información de tipo.<br /> - DDE (COLECCIÓN)<br /> - DDE(COMPOSITE para información de tipo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /><br /> </p> </td> 
+   <td><p>DDE de tipo: COLLECTION-<br /> Se crea un nodo DDE junto al DDE COLLECTION que captura información del nodo COLLECTION principal. Lo mismo se crea para la recopilación de tipos de datos simples/compuestos. Siempre que tenga una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos captura los campos constituyentes en los elementos secundarios del DDE creados para capturar información de tipo.<br /> - DDE (COLECCIÓN)<br /> - DDE(COMPOSITE para información de tipo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td> 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
@@ -559,7 +566,7 @@ El siguiente ejemplo muestra el esquema de una nota.
    <td>/note/to</td> 
   </tr> 
   <tr> 
-   <td>from</td> 
+   <td>de</td> 
    <td>/note/from</td> 
   </tr> 
   <tr> 

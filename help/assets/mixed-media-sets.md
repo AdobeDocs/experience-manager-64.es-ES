@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1477'
+ht-degree: 18%
 
 ---
 
@@ -21,7 +24,7 @@ Los conjuntos de medios mixtos le permiten proporcionar una combinación de imá
 
 Los conjuntos de medios mixtos se designan mediante un banner con la palabra **[!UICONTROL MixedMediaSet]**. Además, si se publica el conjunto de medios mixtos, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto a la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-347](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -47,29 +50,29 @@ Para ayudarle en el uso inicial de los conjuntos de medios mixtos, siga estos pa
 
    Consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos]** de visor para crear o editar ajustes preestablecidos de visor.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visor.](managing-viewer-presets.md)
+   Consulte [Añadir y editar ajustes preestablecidos de visor.](managing-viewer-presets.md)
 
-1. [Vista previa de conjuntos de medios mixtos.](#previewing-mixed-media-sets)
+1. [Conjuntos de medios mixtos de Previsualización.](#previewing-mixed-media-sets)
 
-   Seleccione el conjunto de medios mixtos y puede previsualizarlo. Haga clic en los iconos de miniaturas para examinar el conjunto de medios mixtos en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
+   Seleccione el conjunto de medios mixtos y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de medios mixtos en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
 1. [Publicar conjuntos de medios mixtos.](#publishing-mixed-media-sets)
 
    Al publicar un conjunto de medios mixtos, se activa la URL y la cadena Incrustar. Además, debe [publicar el ajuste preestablecido](managing-viewer-presets.md#publishing-viewer-presets)de visor.
 
-1. [Vincule direcciones URL a la aplicación](linking-urls-to-yourwebapplication.md) web o [incruste el visor](embed-code.md)de vídeo o de imágenes.
+1. [Vincule las direcciones URL a la Aplicación web](linking-urls-to-yourwebapplication.md) o [incruste el visor](embed-code.md)de vídeo o de imágenes.
 
-   Recursos AEM crea llamadas mediante URL para conjuntos de medios mixtos y los activa después de publicar los conjuntos de medios mixtos. Puede copiar estas direcciones URL al obtener una vista previa de los recursos. Como alternativa, puede incrustarlos en su sitio Web.
+   AEM Assets crea llamadas mediante URL para conjuntos de medios mixtos y los activa después de publicar los conjuntos de medios mixtos. Puede copiar estas direcciones URL cuando previsualización recursos. Como alternativa, puede incrustarlos en su sitio Web.
 
    Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 
    Consulte [Vinculación de un conjunto de medios mixtos a una página web](linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](embed-code.md).
 
-Si lo necesita, puede editar los conjuntos [de medios](#editing-mixed-media-sets)mixtos. Además, puede ver y modificar las propiedades [de conjuntos de medios](managing-assets-touch-ui.md#editing-properties)mixtos.
+Si lo necesita, puede editar los conjuntos [de medios](#editing-mixed-media-sets)mixtos. Además, puede realizar vistas y modificar propiedades [de conjuntos de medios](managing-assets-touch-ui.md#editing-properties)mixtos.
 
 >[!NOTE]
 >
->Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media - modo](troubleshoot-dms7.md)Scene7.
+>Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media: modo](troubleshoot-dms7.md)Scene7.
 
 ## Carga de recursos {#uploading-assets}
 
@@ -87,7 +90,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 1. En Assets, desplácese hasta donde desee crear un conjunto de medios mixtos, haga clic en **Crear** y seleccione **[!UICONTROL Conjunto de medios mixtos]**. También puede crear el conjunto desde una carpeta que contenga los recursos.
 
-   ![chlimage_1-349](assets/chlimage_1-349.png)
+   ![chlimage_1-347](assets/chlimage_1-349.png)
 
 1. En la página Editor **[!UICONTROL de conjuntos de medios]** mixtos, en **[!UICONTROL Título]**, introduzca un nombre para el conjunto de medios mixtos. El nombre aparece en la pancarta del conjunto de medios mixtos. De forma opcional, introduzca una descripción.
 
@@ -105,7 +108,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 
-1. Vuelva a ordenar los recursos arrastrándolos hacia arriba o hacia abajo en la lista (debe seleccionar el icono de reordenar), según sea necesario.
+1. Vuelva a ordenar los recursos arrastrándolos hacia arriba o hacia abajo en la lista (debe seleccionar el icono de reordenación), según sea necesario.
 
    ![chlimage_1-352](assets/chlimage_1-352.png)
 
@@ -113,7 +116,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    >[!NOTE]
    >
-   >Si desea agregar recursos, toque **[!UICONTROL Agregar recurso]**.
+   >Si desea agregar recursos, toque **[!UICONTROL Añadir recurso]**.
 
 1. Para eliminar un recurso, seleccione la casilla de verificación correspondiente y toque **[!UICONTROL Eliminar recurso]**.
 1. Para aplicar un ajuste preestablecido, toque **[!UICONTROL Ajuste preestablecido]** en la esquina superior derecha y seleccione un ajuste preestablecido para aplicarlo a los recursos.
@@ -123,7 +126,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 Puede realizar varias tareas de edición de recursos en conjuntos de medios mixtos directamente en la interfaz de usuario, [como lo haría con cualquier recurso de Recursos](managing-assets-touch-ui.md). También puede realizar las siguientes acciones en los conjuntos de medios mixtos:
 
-* Agregue recursos al conjunto de medios mixtos.
+* Añada recursos al conjunto de medios mixtos.
 * Vuelva a ordenar los recursos en el conjunto de medios mixtos.
 * Elimine recursos del conjunto de medios mixtos.
 * Aplicación de ajustes preestablecidos de visor.
@@ -140,9 +143,10 @@ Puede realizar varias tareas de edición de recursos en conjuntos de medios mixt
 1. En el Editor de conjuntos de medios mixtos, realice una de las siguientes acciones:
 
    * Para reordenar recursos: en el panel izquierdo, toque **[!UICONTROL Recursos]** (icono de imagen) y arrastre un recurso a una nueva ubicación.
-   * Para agregar recursos: en la barra de herramientas, toque **[!UICONTROL Agregar recurso]**. Vaya a los recursos. Para cada recurso que desee agregar, pase el ratón sobre la imagen del recurso (no el nombre del recurso) y toque el icono de marca de verificación. En la esquina superior derecha, toque **[!UICONTROL Seleccionar]**.
+   * Para agregar recursos: en la barra de herramientas, toque **[!UICONTROL Añadir recurso]**. Vaya a los recursos. Para cada recurso que desee agregar, pase el ratón sobre la imagen del recurso (no el nombre del recurso) y toque el icono de marca de verificación. En la esquina superior derecha, toque **[!UICONTROL Seleccionar]**.
    * Para eliminar un recurso: en el panel izquierdo, toque **[!UICONTROL Recursos]** (icono de imagen) y, a continuación, seleccione el recurso. En la barra de herramientas, toque **[!UICONTROL Eliminar recurso]**.
    * Para ordenar los recursos por su nombre en orden ascendente o descendente, en el panel izquierdo, toque **[!UICONTROL Recursos]** (icono de imagen). A la derecha del encabezado de **[!UICONTROL Recursos]** , toque los iconos de los caracteres de intercalación hacia arriba o hacia abajo.
+
    >[!NOTE]
    >
    >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view) navigate to the Mixed Media Set. Pase el ratón sobre el recurso y pulse el icono de marca de verificación para seleccionarlo. Press **[!UICONTROL Backspace]** on the keyboard, or tap **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
@@ -159,7 +163,7 @@ Puede realizar varias tareas de edición de recursos en conjuntos de medios mixt
 
 ## Vista previa de conjuntos de medios mixtos {#previewing-mixed-media-sets}
 
-Consulte [Vista previa de recursos](previewing-assets.md) para obtener más información sobre cómo obtener una vista previa de conjuntos de medios mixtos.
+Consulte [Vista previa de recursos](previewing-assets.md) para obtener más información sobre cómo previsualización de conjuntos de medios mixtos.
 
 ## Publicación de conjuntos de medios mixtos {#publishing-mixed-media-sets}
 
@@ -167,5 +171,5 @@ Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md) para obte
 
 >[!NOTE]
 >
->Si la Det de medios mixtos no termina por completo en el servicio de entrega la primera vez que lo publica, es posible que tenga que publicar el conjunto de medios mixtos por segunda vez.
+>Si la Det de medios mixtos no termina por completo en el servicio de envío la primera vez que lo publica, es posible que tenga que publicar el conjunto de medios mixtos por segunda vez.
 

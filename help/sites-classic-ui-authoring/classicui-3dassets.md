@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 88%
 
 ---
 
@@ -25,5 +28,5 @@ Consulte también [Instalación y configuración de AEM 3D](/help/assets/install
 
 >[!NOTE]
 >
->AEM 3D solo está disponible desde la IU táctil de AEM, no desde la clásica. Consulte [Uso de recursos 3D](/help/assets/assets-3d.md) en la documentación de edición estándar para obtener información detallada. 
+>AEM 3D solo está disponible desde la IU táctil AEM, no desde la IU clásica. Consulte [Uso de recursos 3D](/help/assets/assets-3d.md) en la documentación de edición estándar para obtener información detallada. 
 

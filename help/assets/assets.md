@@ -1,16 +1,19 @@
 ---
-title: Acerca de Recursos AEM
-description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta de recursos AEM de Adobe.
+title: Acerca de AEM Assets
+description: Conozca qué es la administración de recursos digitales, sus casos de uso y la oferta de activos AEM Adobe.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 49%
 
 ---
 
 
-# Acerca de Recursos AEM {#about-assets}
+# Acerca de AEM Assets {#about-assets}
 
-Assets es una herramienta de gestión de recursos digitales (DAM) totalmente integrada con la plataforma AEM y que permite a su empresa compartir y distribuir recursos digitales. Los usuarios de una organización pueden administrar y almacenar imágenes, vídeos, documentos, clips de audio o medios enriquecidos tales como archivos Flash, así como acceder a ellos, a fin de utilizarlos en Internet, para imprimirlos o para distribuirlos de forma digital.
+Assets es una herramienta de administración de activos digitales (DAM) que está totalmente integrada con la plataforma AEM y permite a su empresa compartir y distribuir recursos digitales. Los usuarios de una organización pueden administrar y almacenar imágenes, vídeos, documentos, clips de audio o medios enriquecidos tales como archivos Flash, así como acceder a ellos, a fin de utilizarlos en Internet, para imprimirlos o para distribuirlos de forma digital.
 
 ## What is Digital Asset Management (DAM)? {#what-is-digital-asset-management}
 
@@ -25,7 +28,7 @@ AEM Assets está completamente integrado en AEM y permite hacer lo siguiente:
 * Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importar y exportar varios activos digitales de forma simultánea mediante una carpeta WebDAV o CIFS.
 * Usar los flujos de trabajo y las notificaciones para permitir el procesamiento y la descarga de forma conjunta de cualquier grupo de activos y administrar los derechos de acceso a los activos.
 
-### AEM Assets está completamente integrado con las funciones WCM de AEM {#aem-assets-fully-integrated-in-cq-wcm}
+### AEM Assets está completamente integrado con AEM funciones WCM {#aem-assets-fully-integrated-in-cq-wcm}
 
 AEM Assets está totalmente integrado con CQ WCM y la funcionalidad está disponible mediante el icono DAM:
 
@@ -41,11 +44,11 @@ A continuación, se puede acceder a los recursos administrados en CQ DAM mediant
 
 >[!NOTE]
 >
->La navegación básica de la interfaz de usuario es la misma que la del resto de AEM. Consulte [Visión general de la consola](/help/sites-authoring/qg-page-authoring.md) GUI para obtener más información.
+>La navegación básica de la interfaz de usuario es la misma que el resto de AEM: consulte [Visión General de la Consola](/help/sites-authoring/qg-page-authoring.md) GUI para obtener más detalles.
 
 ### Administración de recursos digitales frente al componente de imagen {#digital-asset-management-versus-image-component}
 
-Al determinar si se debe colocar una imagen en Recursos AEM o utilizar el componente Imagen, tenga en cuenta el ciclo vital de la imagen:
+Al determinar si desea colocar una imagen en AEM Assets o utilizar el componente Imagen, tenga en cuenta el ciclo vital de la imagen:
 
 * Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente Imagen.
 * Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, emplee AEM Assets.
@@ -78,7 +81,7 @@ Cuando se trabaja con activos digitales en AEM, debe conocer los siguientes tér
 
 * **Versiones:** Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **Subrecursos:** Los subrecursos son recursos que conforman un recurso, por ejemplo, capas en un archivo de Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
+* **Subrecursos:** Los subrecursos son recursos que conforman un recurso, por ejemplo, capas en un archivo Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
 
 ### Cómo trabajar con activos {#how-to-work-with-assets}
 

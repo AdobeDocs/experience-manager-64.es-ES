@@ -1,5 +1,5 @@
 ---
-title: Administración de derechos digitales en [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management en [!DNL Adobe Experience Manager Assets].
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
@@ -114,7 +114,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
+1. Click **[!UICONTROL Publish]** from the toolbar. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -165,7 +165,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Administración de derechos digitales en [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management en [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde [!DNL Adobe Experience Manager Assets].
 

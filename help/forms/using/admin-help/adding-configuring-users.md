@@ -40,7 +40,7 @@ Al crear usuarios, puede agregarlos a grupos y asignarles funciones.
 
    >[!NOTE]
    >
-   >Si se produce algún problema de inicio de sesión con el usuario, consulte [AEM Forms en JEE. El usuario no puede iniciar sesión en AEM Forms en OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Si encuentra algún problema de inicio de sesión con el usuario, consulte [AEM Forms en JEE cuando el usuario no puede iniciar sesión en AEM Forms en OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Configuración de usuario {#user-settings}
 
@@ -72,7 +72,7 @@ Evite utilizar caracteres de subrayado (_) en nombres canónicos, por ejemplo, `
 
 **Configuración regional:** Configuración regional ISO del usuario
 
-**Clave del calendario comercial:** Permite asignar un calendario comercial a un usuario, según el valor de esta configuración. Los calendarios comerciales definen los días laborables y no laborables. Los formularios AEM pueden utilizar calendarios comerciales para calcular las fechas y horas futuras de eventos como recordatorios, plazos y escalaciones. La forma en que asigne claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte [Añadir dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains)).
+**Clave del calendario comercial:** Permite asignar un calendario comercial a un usuario, según el valor de esta configuración. Los calendarios comerciales definen los días laborables y no laborables. AEM formularios pueden utilizar calendarios comerciales para calcular fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La forma en que asigne claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte [Añadir dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains)).
 
 Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para estos usuarios, establezca la clave del calendario comercial en una cadena. A continuación, asigne la clave del calendario comercial (la cadena) a un calendario comercial en el flujo de trabajo de los formularios.
 
@@ -88,7 +88,7 @@ En los dominios de empresa, utilice un atributo que no sea DN como ID de usuario
 
 Asegúrese de que el ID de usuario sea único. No utilice uno que se haya asignado a un usuario eliminado.
 
-Los formularios AEM no pueden diferenciar entre cuentas de usuario que tienen ID de usuario y contraseñas idénticas pero que pertenecen a dominios diferentes. Para evitar este problema, no cree cuentas que tengan el mismo ID de usuario en varios dominios.
+AEM formularios no pueden diferenciar entre cuentas de usuario que tienen ID de usuario y contraseñas idénticas pero que pertenecen a dominios diferentes. Para evitar este problema, no cree cuentas que tengan el mismo ID de usuario en varios dominios.
 
 Cuando se utiliza SQL Server como base de datos, no se puede crear un ID de usuario que supere los 255 caracteres.
 
@@ -159,20 +159,20 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 
 >[!NOTE]
 >
->AEM Forms en JEE también permite que los usuarios del complemento de formularios AEM que se ejecutan en un OSGi se reconozcan como usuarios de AEM. Esto es necesario en situaciones en las que se requiere el inicio de sesión único entre AEM Forms en JEE y el complemento de formularios AEM que se ejecuta en un OSGi (por ejemplo, un espacio de trabajo HTML). La operación de eliminación mencionada anteriormente elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento AEM Forms que se ejecuta en entorno OSGi. Sin embargo, cualquier intento de inicio de sesión realizado después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE del complemento AEM Forms o en el complemento AEM Forms en el entorno OSGi) se deniega.
+>AEM Forms en JEE también permite que los usuarios del complemento de formularios AEM que se ejecutan en un OSGi se reconozcan como usuarios AEM. Esto es necesario para situaciones en las que se requiere el inicio de sesión único entre AEM Forms en JEE y AEM complemento de formularios que se ejecuta en un OSGi (por ejemplo, espacio de trabajo HTML). La operación de eliminación mencionada anteriormente elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento de AEM Forms que se ejecuta en OSGi entorno. Pero cualquier intento de inicio de sesión realizado después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE del complemento de AEM Forms o en el complemento de AEM Forms en el entorno OSGi) se deniega.
 
 ## Crear un controlador de error de inicio de sesión personalizado {#create-custom-login-error-handler}
 
-Si un usuario sin los formularios AEM y los permisos CQ necesarios intenta iniciar sesión en las siguientes aplicaciones integradas en CQ, se le redirige a la página predeterminada de CQ 404 que contiene el seguimiento de errores:
+Si un usuario sin los formularios de AEM y los permisos de CQ necesarios intenta iniciar sesión en las siguientes aplicaciones integradas en CQ, se le redirige a la página predeterminada de CQ 404 que contiene el seguimiento de errores:
 
 * Solución de administración de correspondencia
-* Espacio de trabajo de formularios AEM
+* Área de trabajo de formularios AEM
 
-   ***nota **: Flex Workspace está en desuso para la versión de formularios AEM.*
+   ***nota **: Flex Workspace está obsoleto para AEM versión de formularios.*
 
 * administrador de formularios
 * Informes de procesos
 
 CQ proporciona un mecanismo para anular el jsp predeterminado del controlador 404.
 
-Para obtener más información sobre cómo personalizar la página de gestión de errores, consulte [Personalización de páginas que muestra el controlador](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) de errores en la documentación de Adobe Experience Manager.
+Para obtener más información sobre cómo personalizar la página de gestión de errores, consulte [Personalización de páginas que muestra el controlador de errores](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) en la documentación de Adobe Experience Manager.

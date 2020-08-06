@@ -90,7 +90,7 @@ El editor del modelo de datos de formulario permite generar y editar datos de ej
 
 Para previsualización de una comunicación interactiva con datos del modelo de datos de formulario de ejemplo:
 
-1. En la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Formularios y Documentos]**.
+1. En AEM instancia de autor, vaya a **[!UICONTROL Forms > Forms y Documentos]**.
 1. Seleccione una comunicación interactiva y toque **[!UICONTROL Previsualización]** en la barra de herramientas para seleccionar Canal **** web, Canal **[!UICONTROL de]** impresión o **[!UICONTROL Ambos Canales]** para previsualización de la comunicación interactiva.
 1. En el cuadro de diálogo [*canal*] de Previsualización, asegúrese de que está seleccionada la opción **[!UICONTROL Probar datos del modelo]** de datos de formulario y toque la **[!UICONTROL Previsualización]**.
 
@@ -102,7 +102,7 @@ Del mismo modo, para previsualización de un formulario adaptable con datos de e
 
 ## Rellenar previamente mediante el servicio de modelo de datos de formulario {#prefill}
 
-AEM Forms ofrece el servicio de cumplimentación previa del modelo de datos de formulario incorporado que puede activar para formularios adaptables y comunicaciones interactivas basadas en el modelo de datos de formulario. El servicio de cumplimentación previa consulta orígenes de datos para objetos del modelo de datos en el formulario adaptable y la comunicación interactiva y, en consecuencia, antepone los datos al procesar el formulario o la comunicación.
+AEM Forms proporciona el servicio de cumplimentación previa del modelo de datos de formulario incorporado que puede activar para formularios adaptables y comunicaciones interactivas basadas en el modelo de datos de formulario. El servicio de cumplimentación previa consulta orígenes de datos para objetos del modelo de datos en el formulario adaptable y la comunicación interactiva y, en consecuencia, antepone los datos al procesar el formulario o la comunicación.
 
 Para habilitar el servicio de cumplimentación previa del modelo de datos de formulario para un formulario adaptable, abra las propiedades del Contenedor de formulario adaptable y seleccione el servicio **[!UICONTROL de cumplimentación previa del modelo de datos de]** formulario en la lista desplegable Servicio **[!UICONTROL de]** cumplimentación previa del acordeón Básico. A continuación, guarde las propiedades.
 
@@ -116,7 +116,7 @@ Cuadro de diálogo Editar propiedades para una comunicación interactiva
 
 ## Escribir datos de formularios adaptables enviados en orígenes de datos {#write-af}
 
-Cuando un usuario envía un formulario basado en un modelo de datos de formulario, se puede configurar el formulario para escribir los datos enviados para un objeto de modelo de datos en sus orígenes de datos. Para lograr este caso de uso, los AEM Forms proporcionan la acción [de envío del Modelo de datos de](/help/forms/using/configuring-submit-actions.md)formulario, disponible de forma predeterminada solo para formularios adaptables basados en un modelo de datos de formulario. Escribe los datos enviados para un objeto de modelo de datos en su origen de datos.
+Cuando un usuario envía un formulario basado en un modelo de datos de formulario, se puede configurar el formulario para escribir los datos enviados para un objeto de modelo de datos en sus orígenes de datos. Para lograr este caso de uso, AEM Forms proporciona una acción [de envío del modelo de datos de](/help/forms/using/configuring-submit-actions.md)formulario, disponible de forma predeterminada solo para formularios adaptables basados en un modelo de datos de formulario. Escribe los datos enviados para un objeto de modelo de datos en su origen de datos.
 
 Para configurar la acción de envío del modelo de datos de formulario, abra las propiedades del Contenedor de formulario adaptable y seleccione **[!UICONTROL Enviar mediante el modelo]** de datos de formulario en la lista desplegable Enviar acción en el acordeón Envío. A continuación, busque y seleccione un objeto de modelo de datos en la lista desplegable **[!UICONTROL Nombre del objeto de modelo de datos para enviar]** . Guarde las propiedades.
 

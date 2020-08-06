@@ -1,8 +1,8 @@
 ---
-title: Iniciando flujos de trabajo
-seo-title: Iniciando flujos de trabajo
-description: Obtenga información sobre cómo iniciar flujos de trabajo en AEM.
-seo-description: Obtenga información sobre cómo iniciar flujos de trabajo en AEM.
+title: Inicio de Flujos de trabajo
+seo-title: Inicio de Flujos de trabajo
+description: Aprenda a inicio de Flujos de trabajo en AEM.
+seo-description: Aprenda a inicio de Flujos de trabajo en AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 5%
 
 ---
 
 
-# Iniciando flujos de trabajo{#starting-workflows}
+# Inicio de Flujos de trabajo{#starting-workflows}
 
-Al administrar flujos de trabajo, puede iniciarlos con diversos métodos:
+Al administrar flujos de trabajo, puede darles inicio mediante diversos métodos:
 
 * Manualmente:
 
@@ -26,7 +29,7 @@ Al administrar flujos de trabajo, puede iniciarlos con diversos métodos:
 
 * Automáticamente:
 
-   * En respuesta a los cambios de nodo; [con un iniciador](#workflows-launchers).
+   * En respuesta a los cambios de nodo; [mediante un iniciador](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -36,15 +39,16 @@ Al administrar flujos de trabajo, puede iniciarlos con diversos métodos:
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md)
 >* [Formularios AEM](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Proyectos de traducción](/help/sites-administering/tc-manage.md)
+
 >
 
 
 
 ## Modelos de flujo de trabajo {#workflow-models}
 
-Puede iniciar un flujo de trabajo [basado en uno de los modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) enumerados en la consola Modelos de flujo de trabajo. La única información obligatoria es la carga útil, aunque también se puede añadir un título y/o comentario.
+Puede realizar el inicio de un flujo de trabajo [basado en uno de los modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) enumerados en la consola Modelos de flujo de trabajo. La única información obligatoria es la carga útil, aunque también se puede añadir un título y/o comentario.
 
-## Iniciadores de flujos de trabajo {#workflows-launchers}
+## Lanzadores de Flujos de trabajo {#workflows-launchers}
 
 Workflow Launcher supervisa los cambios en el repositorio de contenido para iniciar flujos de trabajo en función de la ubicación y el tipo de recurso del nodo modificado.
 
@@ -54,7 +58,7 @@ Con el **iniciador** puede:
 * Seleccione un flujo de trabajo para iniciar cuando se haya creado/modificado/eliminado un determinado nodo/tipo de nodo.
 * Elimine una relación existente de flujo de trabajo a nodo.
 
-Se puede crear un iniciador para cualquier nodo. Sin embargo, los cambios realizados en determinados nodos no inician flujos de trabajo. Los cambios en los nodos situados debajo de las rutas siguientes no provocan que se inicien los flujos de trabajo:
+Se puede crear un iniciador para cualquier nodo. Sin embargo, los cambios realizados en determinados nodos no inician flujos de trabajo. Los cambios en los nodos situados debajo de las rutas siguientes no provocan que se inicien flujos de trabajo:
 
 * `/var/workflow/instances`
 * Cualquier nodo de bandeja de entrada de flujo de trabajo ubicado en cualquier parte de la `/home/users` rama
@@ -66,9 +70,9 @@ Se puede crear un iniciador para cualquier nodo. Sin embargo, los cambios realiz
 * `/var/mobile`
 * `/var/statistics`
 
-   * Excepción: Los cambios en los nodos siguientes `/var/statistics/tracking` hacen que ** se inicien los flujos de trabajo.
+   * Excepción: Los cambios en los nodos siguientes `/var/statistics/tracking` hacen que ** se inicien flujos de trabajo.
 
-La instalación estándar incluye varias definiciones. Se utilizan para tareas de administración de activos digitales y colaboración social:
+La instalación estándar incluye varias definiciones. Se utilizan para la administración de recursos digitales y tareas de colaboración social:
 
 ![wf-100](assets/wf-100.png)
 
@@ -93,9 +97,9 @@ Un paquete de workflow:
 
    >[!NOTE]
    >
-   >El indicador **[Temporal](/help/sites-developing/workflows.md#transient-workflows)**muestra los flujos de trabajo para los que no se mantendrá el historial de flujo de trabajo.
+   >El indicador **[Temporal](/help/sites-developing/workflows.md#transient-workflows)**muestra flujos de trabajo para los que no se mantendrá el historial de flujo de trabajo.
 
-1. Seleccione **Iniciar flujo de trabajo** en la barra de herramientas.
+1. Seleccione Flujo de trabajo **de Inicio** en la barra de herramientas.
 1. Se abrirá el cuadro de diálogo Ejecutar flujo de trabajo, que le permite especificar:
 
    * **Carga útil**
@@ -114,7 +118,7 @@ Un paquete de workflow:
 ## Creación de una configuración de iniciador {#creating-a-launcher-configuration}
 
 1. Vaya a la consola **de lanzadores** de flujo de trabajo mediante **Herramientas**, **Flujo de trabajo** y, a continuación, **Lanzadores**.
-1. Seleccione **Crear** y, a continuación, **Agregar iniciador** para abrir el cuadro de diálogo:
+1. Seleccione **Crear** y, a continuación, **Añadir iniciador** para abrir el cuadro de diálogo:
 
    ![wf-105](assets/wf-105.png)
 
@@ -139,20 +143,21 @@ Un paquete de workflow:
 
    * **Condiciones**
 
-      Una lista de condiciones para los valores de nodo que, al evaluarse, determinan si se inicia el flujo de trabajo. Por ejemplo, la siguiente condición hace que el flujo de trabajo se inicie cuando el nodo tenga un nombre de propiedad con el valor Usuario:
+      lista de condiciones para valores de nodo que, al evaluarse, determinan si se inicia el flujo de trabajo. Por ejemplo, la siguiente condición hace que el flujo de trabajo se inicie cuando el nodo tenga un nombre de propiedad con el valor Usuario:
 
       name==User
 
    * **Características**
 
-      Lista de funciones que se habilitarán. Seleccione las funciones necesarias con el selector desplegable.
+      lista de características que se van a habilitar. Seleccione las funciones necesarias con el selector desplegable.
 
    * **Funciones desactivadas**
-   Lista de funciones que se van a deshabilitar. Seleccione las funciones necesarias con el selector desplegable.
+
+   lista de funciones que se van a deshabilitar. Seleccione las funciones necesarias con el selector desplegable.
 
    * **Modelo de flujo de trabajo**
 
-      Flujo de trabajo que se iniciará cuando se produzca el tipo de evento en el tipo de nodo y/o ruta en la condición definida.
+      Flujo de trabajo que se iniciará cuando se produzca el Tipo de evento en el tipo de nodo o en la ruta de acceso en la condición definida.
 
    * **Descripción**
 
@@ -162,7 +167,7 @@ Un paquete de workflow:
 
       Controla si el iniciador del flujo de trabajo está activado:
 
-      * Seleccione **Habilitar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
+      * Seleccione **Activar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
       * Seleccione **Deshabilitar** cuando el flujo de trabajo no se debe ejecutar (ni siquiera cuando se cumplen las propiedades de configuración).
    * **Lista de exclusiones**
 
@@ -172,6 +177,7 @@ Un paquete de workflow:
 
       * `property-name` ignore cualquier `jcr` evento que se active en el nombre de propiedad especificado. &quot;
       * `event-user-data:<*someValue*>` ignora cualquier evento que contenga el `*<someValue*`> `user-data` establecido mediante la [ `ObservationManager` API](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Por ejemplo:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
@@ -186,8 +192,8 @@ Un paquete de workflow:
 
 1. Seleccione **Crear** para crear el iniciador y volver a la consola.
 
-   Una vez que se produce el evento apropiado, se activará el iniciador y se iniciará el flujo de trabajo.
+   Una vez que se produce el evento adecuado, se activa el iniciador y se inicia el flujo de trabajo.
 
 ## Administración de la configuración de un iniciador {#managing-a-launcher-configuration}
 
-Después de crear la configuración del iniciador, puede utilizar la misma consola para seleccionar la instancia y, a continuación, **Ver propiedades** (y editarlas) o **Eliminar**.
+Después de crear la configuración del iniciador, puede utilizar la misma consola para seleccionar la instancia y, a continuación, **Vista Propiedades** (y editarlas) o **Eliminar**.

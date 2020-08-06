@@ -1,8 +1,8 @@
 ---
 title: Conceptos básicos de los componentes de comunidades
 seo-title: Conceptos básicos de los componentes de comunidades
-description: Adición de funciones de comunidades a sitios de AEM en modo de edición y configuración de componentes
-seo-description: Adición de funciones de comunidades a sitios de AEM en modo de edición y configuración de componentes
+description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
+seo-description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Información general {#overview}
 
-En la sección de creación de la documentación se describe la adición de funciones de Comunidades a los sitios de AEM en modo de edición de autor, así como la descripción de las configuraciones de componentes.
+La sección de creación de la documentación describe cómo agregar funciones de Comunidades a AEM sitios en modo de edición de autor, así como la descripción de las configuraciones de componentes.
 
-Los componentes se pueden explorar con una instancia de AEM y con la guía [de componentes](components-guide.md)comunitarios interactiva.
+Los componentes pueden explorarse con una instancia de AEM y la guía [interactiva](components-guide.md)Community Components.
 
 ## Acceso a componentes de comunidades {#accessing-communities-components}
 
@@ -33,7 +36,7 @@ Los componentes de Comunidades disponibles se enumeran [aquí](author-communitie
 >
 >Para obtener información general sobre la creación, consulte la guía [rápida de creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md)básica.
+>Si no está familiarizado con AEM, vista la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md)básica.
 
 ### Introducción al modo de diseño {#entering-design-mode}
 
@@ -67,7 +70,7 @@ Cuando se agrega un componente Comunidades a una página, si el resultado es un 
 
 Muchas funciones de Comunidades se pueden configurar para permitir que los miembros etiqueten el contenido introducido (publicado) en el entorno de publicación.
 
-Si se permite el etiquetado, la configuración del sitio de la comunidad puede establecerse para limitar los espacios de nombres presentados a los miembros en el entorno de publicación. Consulte la consola Sitios [de comunidad](sites-console.md#tagging).
+Si se permite el etiquetado, la configuración del sitio de la comunidad puede establecerse para limitar las Áreas de nombres presentadas a los miembros en el entorno de publicación. Consulte la consola Sitios [de comunidad](sites-console.md#tagging).
 
 Características que permiten el etiquetado: [blog](blog-feature.md), [calendario](calendar.md), biblioteca [](file-library.md)de archivos, [foro](forum.md)
 
@@ -79,13 +82,13 @@ Para obtener información sobre la creación:
 
 Para información administrativa:
 
-* Creación de espacios de nombres de etiquetas (taxonomía): [Administración de etiquetas](../../help/sites-administering/tags.md)
+* Creación de Áreas de nombres de etiquetas (taxonomía): [Administración de etiquetas](../../help/sites-administering/tags.md)
 * Configuración del sitio de la comunidad: consulte [ETIQUETADO](sites-console.md#tagging)
 * [Etiquetado de contenido generado por el usuario](../../help/sites-authoring/tags.md)
 * [Etiquetado de recursos de habilitación](tag-resources.md)
 
 Para obtener información sobre desarrolladores:
 
-* [AEM Tagging Framework](../../help/sites-developing/framework.md)
+* [AEM marco de etiquetado](../../help/sites-developing/framework.md)
 * [Etiquetado de elementos esenciales](tag.md)
 

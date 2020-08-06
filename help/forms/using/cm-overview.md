@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Introducción {#introduction}
 
-Correspondence Management centraliza y gestiona la creación, montaje y entrega de correspondencia segura, personalizada e interactiva. Le permite reunir rápidamente la correspondencia de contenido preaprobado y de creación personalizada en un proceso optimizado, desde la creación hasta el archivado. Como resultado, sus clientes obtienen la comunicación correcta en el momento adecuado de la manera correcta: oportuno, preciso, conveniente, seguro y relevante. Su empresa maximiza el valor de las interacciones con los clientes y minimiza los costos y los riesgos con un proceso optimizado para facilitar, acelerar y aumentar la productividad.
+Correspondence Management centraliza y gestiona la creación, montaje y envío de correspondencia segura, personalizada e interactiva. Le permite reunir rápidamente la correspondencia de contenido preaprobado y de creación personalizada en un proceso optimizado, desde la creación hasta el archivado. Como resultado, sus clientes obtienen la comunicación correcta en el momento adecuado de la manera correcta: oportuno, preciso, conveniente, seguro y relevante. Su empresa maximiza el valor de las interacciones con los clientes y minimiza los costos y los riesgos con un proceso optimizado para facilitar, acelerar y aumentar la productividad.
 
 ## Beneficios {#benefits}
 
@@ -34,15 +37,15 @@ Simplifica el procesamiento, permitiéndole:
 Proporciona comunicaciones de mayor calidad, lo que le permite:
 
 * Administrar reglas comerciales y contenido aprobado en un repositorio de contenido centralizado
-* Uso de AEM DAM para administrar imágenes
-* Creación de archivos PDF de Adobe para archivado y auditoría
+* Usar AEM DAM para administrar imágenes
+* Creación de archivos Adobe PDF para archivado y auditoría
 * Cree mensajes compatibles con la organización utilizando contenido preaprobado mediante reglas comerciales incrustadas.
 
 ### Amplia {#extensive}
 
 Mejora el compromiso del cliente, permitiéndole:
 
-* Agregue tecnologías interactivas para habilitar un canal bidireccional, reduciendo los envíos de papel
-* Proteja la información confidencial con la seguridad integrada de documentos end-to-end
+* Añada tecnologías interactivas para permitir un canal bidireccional, reduciendo los envíos de papel
+* Información confidencial de Protect con seguridad de documento integral incorporada
 * Envíe la correspondencia a través del canal de comunicación preferido del cliente, ya sea por correo electrónico, correo electrónico, móvil o fax.
 

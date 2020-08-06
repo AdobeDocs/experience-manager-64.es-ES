@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ Esta sección le ofrece una descripción general de las principales tareas que u
 
 Cubre:
 
-* [Introducción](#getting-started):Detalla la secuencia básica de eventos necesaria para crear y publicar su primera página.
+* [Introducción](#getting-started): Detalla la secuencia básica de eventos que necesita para crear y publicar su primera página.
 
-* [Otras acciones](#further-actions):A continuación se describen otras muchas acciones que puede utilizar al crear.
+* [Otras acciones](#further-actions): A continuación se describen otras muchas acciones que puede utilizar al crear.
 
 ## Introducción {#getting-started}
 
@@ -52,7 +55,7 @@ Tanto si la instancia ya tiene páginas como si acaba de crear una página nueva
 * [Cortar, copiar o pegar un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilizar el modo de vista preliminar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver cómo aparecerá al publicarse)
-* [Bloquear una página ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Bloquear una página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publicar una página {#publishing-a-page}

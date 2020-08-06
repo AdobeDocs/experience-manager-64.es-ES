@@ -1,8 +1,8 @@
 ---
-title: 'Prácticas recomendadas '
-seo-title: 'Prácticas recomendadas '
-description: Siga esta página para conocer las prácticas recomendadas y las directrices que ayudarán a los desarrolladores experimentados de AEM para sitios que deseen crear plantillas y componentes de aplicaciones móviles.
-seo-description: Siga esta página para conocer las prácticas recomendadas y las directrices que ayudarán a los desarrolladores experimentados de AEM para sitios que deseen crear plantillas y componentes de aplicaciones móviles.
+title: 'Prácticas recomendadas  '
+seo-title: 'Prácticas recomendadas  '
+description: Siga esta página para conocer las prácticas recomendadas y las directrices que ayudarán a los desarrolladores AEM experimentados de los sitios que deseen crear plantillas y componentes de aplicaciones móviles.
+seo-description: Siga esta página para conocer las prácticas recomendadas y las directrices que ayudarán a los desarrolladores AEM experimentados de los sitios que deseen crear plantillas y componentes de aplicaciones móviles.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Prácticas recomendadas  {#best-practices}
+# Prácticas recomendadas   {#best-practices}
 
 >[!NOTE]
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-La creación de una aplicación de servicios bajo demanda de AEM Mobile es diferente de la creación de una aplicación que se ejecute directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con:
+La creación de una aplicación de AEM Mobile On-demand Services es diferente a la creación de una aplicación que se ejecuta directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con:
 
 * Los complementos que se admiten de forma predeterminada, así como los complementos específicos de AEM Mobile.
 
@@ -31,6 +34,7 @@ La creación de una aplicación de servicios bajo demanda de AEM Mobile es difer
 >
 >* [Uso de complementos de Cordova en AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
 >* [Uso de complementos específicos de AEM Mobile adaptados para Cordova](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+
 >
 
 
@@ -43,7 +47,7 @@ La creación de una aplicación de servicios bajo demanda de AEM Mobile es difer
 
 Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM para sitios que deseen crear plantillas y componentes de aplicaciones móviles:
 
-**Estructurar plantillas de sitios de AEM para fomentar la reutilización y la extensibilidad**
+**Estructurar plantillas de sitios AEM para fomentar la reutilización y la extensibilidad**
 
 * Preferir varios archivos de secuencias de comandos de componentes sobre uno solo y monolítico
 
@@ -52,7 +56,7 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 
 * Preferir Sightly/HTL sobre JSP como idioma de plantilla
 
-   * El uso de esto fomenta la separación del código del marcado, ofrece protección XSS integrada y tiene una sintaxis más familiar
+   * El uso de esto fomenta la separación del código del marcado, ofertas integradas en la protección XSS y tiene una sintaxis más familiar
 
 **Optimizar el rendimiento en el dispositivo**
 
@@ -67,7 +71,7 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 **Prefiere las bibliotecas JS y CSS de cliente específicas de la aplicación en lugar de las bibliotecas específicas de la web**
 
 * Para evitar sobrecargas en bibliotecas como jQuery Mobile con el fin de gestionar una gran variedad de dispositivos y exploradores
-* Cuando una plantilla se está ejecutando en la vista web de una aplicación, tiene control sobre las plataformas y versiones que la aplicación va a admitir, así como el conocimiento de que estará presente la compatibilidad con JavaScript. Por ejemplo, prefiera Iónico (quizás solo CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
+* Cuando una plantilla se está ejecutando en la vista web de una aplicación, tiene control sobre las plataformas y versiones que la aplicación va a admitir, así como el conocimiento de que estará presente la compatibilidad con JavaScript. Por ejemplo, prefiera Iónico (quizás solo CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen en lugar de Bootstrap.
 
 >[!NOTE]
 >
@@ -89,4 +93,4 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 Para obtener más información sobre las otras dos funciones y responsabilidades, consulte los recursos siguientes:
 
 * [Administrador](/help/mobile/aem-mobile.md)
-* [Creación](/help/mobile/aem-mobile-on-demand.md)
+* [Autor](/help/mobile/aem-mobile-on-demand.md)

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 translation-type: tm+mt
 source-git-commit: 0982b1378c5edad000ad3dea4406093d4f13c496
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-De forma realista, los candidatos de la tienda personalizada definirán funciones adicionales o anularán la configuración inicial de la tienda. En el repositorio siguiente se instalan varios candidatos [a tiendas de](/help/sites-developing/ch-samplestores.md) muestra `/libs/granite/contexthub/components/stores`. Para aprender de estos ejemplos, utilice CRXDE Lite para abrir los archivos de javascript.
+De forma realista, los candidatos de la tienda personalizada definirán funciones adicionales o anularán la configuración inicial de la tienda. En el repositorio siguiente se instalan varios candidatos [a tiendas de](/help/sites-developing/ch-samplestores.md) muestra `/libs/granite/contexthub/components/stores`. Para obtener más información sobre estos ejemplos, utilice CRXDE Lite para abrir los archivos de javascript.
 
 ### Registro de un candidato a la tienda de ContextHub {#registering-a-contexthub-store-candidate}
 

@@ -1,8 +1,8 @@
 ---
 title: Vídeo
 seo-title: Vídeo
-description: Obtenga información sobre la administración centralizada de recursos de vídeo de Recursos AEM, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Recursos AEM. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
-seo-description: Obtenga información sobre la administración centralizada de recursos de vídeo de Recursos AEM, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Recursos AEM. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
+description: Obtenga información sobre la administración centralizada de recursos de vídeo en AEM Assets, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde AEM Assets. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
+seo-description: Obtenga información sobre la administración centralizada de recursos de vídeo en AEM Assets, donde puede cargar vídeos para codificarlos automáticamente en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde AEM Assets. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1670'
+ht-degree: 55%
 
 ---
 
 
 # Vídeo {#video}
 
-Assets permite gestionar recursos de vídeo de forma centralizada, donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic (Scene7) y acceder a vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
+Assets proporciona administración centralizada de recursos de vídeo, donde puede cargar vídeos directamente en Recursos para codificarlos automáticamente en Dynamic Media Classic (Scene7) y acceder a vídeos de Dynamic Media Classic directamente desde Recursos para la creación de páginas.
 
 La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección de ancho de banda y dispositivo automático).
 
@@ -33,7 +36,7 @@ El proceso de codificación de vídeo predeterminado se basa en el uso de la int
 
 Tenga en cuenta que al habilitar y configurar la integración de Dynamic Media Classic no se eliminan ni se desactivan automáticamente estos dos pasos del flujo de trabajo de inserción de DAM. Si ya utiliza codificación de vídeo basada en FFMPEG en AEM, es probable que tenga FFMPEG instalado en sus entornos de creación. En este caso, un nuevo vídeo ingestado mediante DAM se codificaría dos veces: una vez desde el codificador FFMPEG y otra desde la integración de Dynamic Media Classic.
 
-Si tiene configurada la codificación de vídeo basada en FFMPEG en AEM y FFMPEG instalado, Adobe recomienda eliminar los dos flujos de trabajo de FFMPEG de los flujos de trabajo de ingesta de DAM.
+Si tiene la codificación de vídeo basada en FFMPEG configurada y AEM FFMPEG instalada, Adobe recomienda eliminar los dos flujos de trabajo FFMPEG de sus flujos de trabajo de inserción DAM.
 
 ## Formatos admitidos {#supported-formats}
 
@@ -53,7 +56,7 @@ Si la respuesta es “sí” a una o ambas preguntas, cargue el vídeo directame
 
 ### If you are uploading your video directly to Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Si necesita un flujo de trabajo o una versión para sus recursos, primero debe cargar a Adobe DAM. El flujo de trabajo siguiente es el recomendado:
+Si necesita un flujo de trabajo o una versión para los recursos, primero debe cargar en Adobe DAM. El flujo de trabajo siguiente es el recomendado:
 
 1. Cargue el recurso de vídeo en Adobe DAM y codifique y publique automáticamente en Dynamic Media Classic.
 1. En AEM, acceda a los recursos de vídeo de WCM en la pestaña **[!UICONTROL Películas]** del buscador de contenido.
@@ -119,7 +122,7 @@ En la matriz siguiente se explica cuándo debe utilizar el componente:
 
 >[!NOTE]
 >
->El componente de vídeo de S7, listo para usar, utiliza el perfil de vídeo universal. Sin embargo, puede obtener el reproductor de vídeo basado en HTML5 para que lo utilice AEM siguiendo uno de estos procedimientos en Scene7: copie el código incrustado del reproductor de vídeo HTML5 incorporado y colóquelo en la página de AEM.
+>El componente de vídeo de S7, listo para usar, utiliza el perfil de vídeo universal. Sin embargo, puede obtener el reproductor de vídeo basado en HTML5 para utilizarlo AEM realizando una de las siguientes acciones en Scene7: copie el código incrustado del reproductor de vídeo HTML5 incorporado y colóquelo en la página de AEM.
 
 ## Componente de vídeo de AEM {#aem-video-component}
 
@@ -149,7 +152,7 @@ Las distintas codificaciones de vídeo se crean de acuerdo con los ajustes prees
 
 1. En AEM, toque **[!UICONTROL Tools > Configuration Console**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Crear un nuevo perfil de vídeo de S7. **[!UICONTROL En el]** Nuevo... , seleccione **[!UICONTROL Crear página]** y, a continuación, la plantilla de perfil de vídeo de Scene7. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
+1. Crear un nuevo perfil de vídeo de S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -177,8 +180,8 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >
 >Los cambios realizados en el diseño requieren la activación del diseño para que surtan efecto en la publicación.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. A continuación, elimine los perfiles predeterminados y agregue los nuevos perfiles de vídeo S7. El orden de la lista de perfiles en el cuadro de diálogo de diseño define el orden del elemento de orígenes de vídeo al realizar el procesamiento.
-1. Para los exploradores que no admiten HTML5, el componente de vídeo permite configurar una reserva Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configure los ajustes de Flash Player y asigne un perfil de reserva para el reproductor Flash.
+1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. A continuación, elimine los perfiles listos para usar y agregue los nuevos perfiles de vídeo S7. El orden de la lista de perfil en el cuadro de diálogo de diseño define el orden del elemento de orígenes de vídeo al realizar el procesamiento.
+1. Para los exploradores que no admiten HTML5, el componente de vídeo permite configurar una reserva de Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configure los ajustes del reproductor de Flash y asigne un perfil de reserva para el reproductor Flash.
 
 #### Lista de comprobación {#checklist}
 

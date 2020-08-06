@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 78%
 
 ---
 
@@ -128,7 +131,8 @@ Puede configurar lo siguiente en las fichas **Visualización**, **Información d
 
 * **Información sobre herramientas del vínculo** Añade información adicional sobre cómo utilizar el vínculo.
 
-* **Tipo de vínculo** En la lista desplegable, seleccione entre una **Dirección URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
+* **LinkType** En la lista desplegable, seleccione entre una 
+**Dirección URL** personalizada y un Documento **** adaptable. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
 
 * **Parámetro de URL adicional** Añada cualquier parámetro de URL adicional. Haga clic en Añadir elemento para añadir varios elementos.
 
@@ -179,7 +183,7 @@ Arrastre una imagen desde el buscador de contenido o haga clic para echar una oj
 
    * **Vincular a**
 
-      Cree un vínculo a recursos u otras páginas dentro del sitio web.
+      Create a link to assets or other pages within your website.
 
    * **Descripción**
 
@@ -250,7 +254,7 @@ En la tabla siguiente se describen los componentes que pueden visualizar y modif
   <tr> 
    <td><p>Casilla (Campaign)</p> </td> 
    <td><p>boolean</p> </td> 
-   <td><p>Ya no hay contacto (por ningún canal)</p> </td> 
+   <td><p>Ya no hay contacto (por cualquier canal)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td> 
@@ -293,7 +297,7 @@ En la mayoría de los componentes puede configurar lo siguiente:
 
 * **Descripción**
 
-   Agregue una descripción al campo para proporcionar más información a los usuarios.
+   Añada una descripción en el campo para proporcionar más información a los usuarios.
 
 * **Mostrar sólo valor**
 
@@ -371,9 +375,9 @@ Puede configurar lo siguiente en el componente Clave principal cifrada (Campaign
 
    Valores predeterminados de encryptPK. Solo debe cambiar el nombre del elemento cuando esté en conflicto con el nombre de otro elemento del formulario. Dos campos de formulario no pueden tener el mismo nombre de elemento.
 
-* **Adobe Campaign: parámetro de URL**
+* **Adobe Campaign - parámetro de URL**
 
-   Agregue el parámetro de URL para el EPK. Por ejemplo, puede utilizar el valor **EPK**.
+   Añada el parámetro de URL para el EPK. Por ejemplo, puede utilizar el valor **EPK**.
 
 En el siguiente ejemplo se muestra el componente Clave principal cifrada (Campaign) que se está visualizando.
 
@@ -389,7 +393,7 @@ En el siguiente ejemplo se muestra el componente Visualización de error (Campai
 
 ### Clave de reconciliación oculta (Campaign) {#hidden-reconciliation-key-campaign}
 
-El componente Clave de reconciliación oculta (Campaign) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
+El componente Clave de reconciliación oculta (Campaña) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
 
 Puede configurar lo siguiente en el componente Clave de reconciliación oculta (Campaign):
 
@@ -415,11 +419,12 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 * **Mensaje de restricción**
 
    Además, puede agregar un mensaje de restricción para que los usuarios sepan cómo formatear sus respuestas correctamente.
-* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando los iconos **+** y **-** o introduciendo un número.
+* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando en el 
+**+** y **-** o escribir un número.
 
 En el siguiente ejemplo se muestra el componente Campo numérico (Campaign) con el ancho configurado que se está visualizando.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### Campo de opciones (Campaign) {#option-field-campaign}
 

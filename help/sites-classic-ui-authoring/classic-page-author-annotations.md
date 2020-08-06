@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
@@ -77,6 +80,7 @@ Los tres iconos situados en la parte izquierda permiten minimizar la anotación 
 >
 >* El icono no se mostrará.
 >* Los bocetos existentes, creados en otro navegador, no aparecerán.
+
 >
 
 

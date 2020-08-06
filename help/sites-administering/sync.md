@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 2%
 
 ---
 
@@ -125,13 +128,14 @@ A continuación se indican los pasos necesarios para habilitar la sincronizació
 >
 >* El usuario predeterminado asignado es **`admin`**.
 >* No use `*communities-user-admin *user*.*`
+
 >
 
 
 
 #### Cómo Añadir ACL {#addacls}
 
-* acceso a CRXDE Lite
+* CRXDE Lite de acceso
 
    * por ejemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -154,7 +158,7 @@ Consulte también
 * [Administración de derechos de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sección Resolución de problemas [Modificar excepción de operación durante el procesamiento](#modify-operation-exception-during-response-processing)de la respuesta.
 
-### 3. Distribución de Adobe Granite: proveedor secreto de transporte de contraseña cifrada {#adobegraniteencpasswrd}
+### 3. Distribución de granito de Adobe - Proveedor secreto de transporte de contraseña cifrada {#adobegraniteencpasswrd}
 
 **Configurar permisos**
 
@@ -202,7 +206,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5. Distribución de Adobe Granite: Fábrica de observación de diferencias {#diffobserver}
+### 5. Distribución de granito de Adobe - Fábrica de observación de diferencias {#diffobserver}
 
 **Habilitar sincronización de grupos**
 
@@ -382,7 +386,7 @@ Repita estos pasos hasta que todas las instancias de publicación tengan un ID d
 
 Para que las actualizaciones se sincronizen correctamente, es necesario modificar el creador de paquetes de bóveda para la sincronización del usuario:
 
-* en cada instancia de publicación de AEM
+* en cada instancia de publicación AEM
 * acceder a la consola [web](/help/sites-deploying/configuring-osgi.md)
 
    * por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -490,7 +494,7 @@ A continuación se presentan vistas de cómo deben aparecer las configuraciones 
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-#### (autor) Un proveedor secreto de transporte de contraseña cifrada de Adobe Granite Distribution {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
+#### (autor) Distribución de granito de Adobe: proveedor secreto de transporte de contraseña cifrada {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
@@ -498,7 +502,7 @@ A continuación se presentan vistas de cómo deben aparecer las configuraciones 
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### (publicación) Una distribución de granito de Adobe: Fábrica de observación de diferencias {#publish-one-adobe-granite-distribution-diff-observer-factory}
+#### (publicación) Distribución de granito de un Adobe - Fábrica de observación de diferencias {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
@@ -562,7 +566,7 @@ Véase la sección [9. ID de Sling único](#unique-sling-id)
 
    * [importar el paquete](/help/sites-administering/package-manager.md#installing-packages)
 
-Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: Agente de distribución [Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory)
+Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: [Agente de distribución Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Cuando un publicador deja de estar disponible {#when-a-publisher-becomes-unavailable}
 

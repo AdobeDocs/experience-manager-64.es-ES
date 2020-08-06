@@ -1,6 +1,6 @@
 ---
-title: 'Creación de una página para dispositivos móviles '
-seo-title: 'Creación de una página para dispositivos móviles '
+title: Crear una página para dispositivos móviles
+seo-title: Crear una página para dispositivos móviles
 description: Al crear un elemento para móvil, puede cambiar entre varios emuladores para ver qué es lo que verá el usuario final
 seo-description: Al crear un elemento para móvil, puede cambiar entre varios emuladores para ver qué es lo que verá el usuario final
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
@@ -11,15 +11,18 @@ topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 89%
 
 ---
 
 
-# Creación de una página para dispositivos móviles {#authoring-a-page-for-mobile-devices}
+# Crear una página para dispositivos móviles {#authoring-a-page-for-mobile-devices}
 
 Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías Característica, Inteligente y Táctil según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página para móvil, AEM detecta el dispositivo y envía la representación correspondiente al grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página para móvil, AEM detecta el dispositivo y envía la representación correspondiente al grupo de dispositivos.
 
 >[!NOTE]
 >
@@ -42,5 +45,5 @@ La página presenta un aspecto similar al siguiente:
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando una página de la instancia del autor se solicita desde un dispositivo móvil.
+>Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil.
 

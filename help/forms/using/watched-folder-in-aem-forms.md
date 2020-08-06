@@ -160,7 +160,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 
    Cuando los archivos se colocan en la carpeta vigilada, se lista la entrada de los archivos, lo que puede reducir el rendimiento si se realiza el análisis cada segundo. El aumento del intervalo de exploración puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
 
-* **throttleOn (Boolean)**: Cuando se selecciona esta opción, se limita el número de trabajos de carpetas vigiladas que los AEM Forms procesan en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. El valor predeterminado es true. (Consulte [Acerca de la limitación](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)).
+* **throttleOn (Boolean)**: Cuando esta opción está seleccionada, limita el número de trabajos de carpetas vigiladas que AEM Forms procesa en un momento dado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. El valor predeterminado es true. (Consulte [Acerca de la limitación](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)).
 
 * **overwriteDuplicateFilename (Boolean)**: Cuando se establece en True, se sobrescriben los archivos de la carpeta de resultados y la carpeta de preservación. Cuando se establece en False, se utilizan para el nombre archivos y carpetas con un sufijo de índice numérico. El valor predeterminado es False.
 * **preserveOnFailure (Boolean)**: Preservar archivos de entrada en caso de error al ejecutar la operación en un servicio. El valor predeterminado es true.
@@ -172,7 +172,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 >Por diseño, los flujos de trabajo son asincrónicos. Incluso si establece el valor en false, los flujos de trabajo se inician en el modo asincrónico.
 
 * **enabled (Boolean)**: Desactiva y activa la búsqueda de una carpeta vigilada. Establezca enabled en true para que el inicio analice la carpeta vigilada. El valor predeterminado es true.
-* **payloadMapperFilter**: Cuando una carpeta se configura como carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta vigilada. La estructura tiene carpetas para proporcionar entradas, recibir resultados, guardar datos para fallos, conservar datos para procesos de larga duración y guardar datos para diversas etapas. La estructura de carpetas de una carpeta vigilada puede servir como una carga útil de flujos de trabajo centrados en Forms. Un asignador de carga útil permite definir la estructura de una carga útil que utiliza una carpeta vigilada para entrada, salida y procesamiento. Por ejemplo, si utiliza el asignador predeterminado, asigna el contenido de la carpeta vigilada con la carpeta [payload]\input y [payload]\output. Hay dos implementaciones de mapeador de carga útil integradas disponibles. Si no tiene [una implementación](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)personalizada, utilice una implementación lista para usar:
+* **payloadMapperFilter**: Cuando una carpeta se configura como carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta vigilada. La estructura tiene carpetas para proporcionar entradas, recibir resultados, guardar datos para fallos, conservar datos para procesos de larga duración y guardar datos para diversas etapas. La estructura de carpetas de una carpeta vigilada puede servir como carga útil de flujos de trabajo centrados en Forms. Un asignador de carga útil permite definir la estructura de una carga útil que utiliza una carpeta vigilada para entrada, salida y procesamiento. Por ejemplo, si utiliza el asignador predeterminado, asigna el contenido de la carpeta vigilada con la carpeta [payload]\input y [payload]\output. Hay dos implementaciones de mapeador de carga útil integradas disponibles. Si no tiene [una implementación](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)personalizada, utilice una implementación lista para usar:
 
    * **Asignador predeterminado:** Utilice el asignador de carga útil predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil. Además, en la ruta de carga útil de un flujo de trabajo, utilice rutas de [carga]/entrada/ [carga]/salida para recuperar y guardar el contenido.
    * **Asignador de carga útil simple basado en archivos:** Utilice el asignador de carga útil simple basado en archivos para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
@@ -321,9 +321,9 @@ Realice los siguientes pasos para procesar archivos mediante flujos de trabajo:
    * workflowSession
    * metadata
 
-Si utiliza el lenguaje de programación Java para implementar el flujo de trabajo, el motor de flujos de trabajo de AEM proporciona valor para las variables workItem, workflowSession y metadata. Estas variables se pasan como argumentos al método execute() de la implementación de WorkflowProcess personalizada.
+Si utiliza el lenguaje de programación Java para implementar el flujo de trabajo, el motor de flujos de trabajo AEM proporciona valor para variables workItem, workflowSession y metadata. Estas variables se pasan como argumentos al método execute() de la implementación de WorkflowProcess personalizada.
 
-Si utiliza ECMAScript para implementar el flujo de trabajo, el motor de flujos de trabajo de AEM proporciona valor para las variables graniteWorkItem, graniteWorkflowSession y metadata. Estas variables se pasan como argumentos al método WorkflowContextService.execute().
+Si utiliza ECMAScript para implementar el flujo de trabajo, el motor de flujos de trabajo AEM proporciona valor para las variables graniteWorkItem, graniteWorkflowSession y metadata. Estas variables se pasan como argumentos al método WorkflowContextService.execute().
 
 El argumento de processWorkflowContext() es un objeto de tipo com.adobe.aemfd.watchfolder.workflow.api.WorkflowContext. La interfaz WorkflowContext tiene las siguientes API para facilitar las consideraciones específicas del flujo de trabajo mencionadas anteriormente:
 
@@ -394,17 +394,17 @@ log.info("Exiting workflow script!")
 
 Cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se está viendo. La estructura de carpetas tiene carpetas de etapa, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada para el flujo de trabajo y aceptar resultados de un flujo de trabajo. También puede lista puntos de error, si los hay.
 
-Si la estructura de una carga útil es diferente a la de la carpeta vigilada, puede escribir secuencias de comandos personalizadas para asignar la estructura de la carpeta vigilada a la carga útil. Esta secuencia de comandos se denomina filtro de mapeador de carga útil. De forma predeterminada, AEM Forms proporciona un filtro de mapeador de carga útil para asignar la estructura de la carpeta controlada a una carga útil.
+Si la estructura de una carga útil es diferente a la de la carpeta vigilada, puede escribir secuencias de comandos personalizadas para asignar la estructura de la carpeta vigilada a la carga útil. Esta secuencia de comandos se denomina filtro de mapeador de carga útil. De forma predeterminada, AEM Forms proporciona un filtro de mapeador de carga útil para asignar la estructura de la carpeta vigilada a una carga útil.
 
 #### Creación de un filtro personalizado de asignador de carga útil {#creating-a-custom-payload-mapper-filter}
 
-1. Descargue [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Descargue el SDK [del cliente de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar)Adobe.
 1. Configure el SDK de cliente en la ruta de compilación del proyecto basado en lotes. Para comenzar, puede descargar y abrir el siguiente proyecto basado en lotes en el IDE que desee.
 1. Edite el código de filtro del asignador de carga útil disponible en el paquete de muestra para adaptarlo a sus necesidades.
 1. Utilice maven para crear un paquete del filtro personalizado del asignador de carga útil.
-1. Utilice la consola [de paquetes de](http://localhost:4502/system/console/bundles) AEM para instalar el paquete.
+1. Utilice [AEM consola](http://localhost:4502/system/console/bundles) de paquetes para instalar el paquete.
 
-   Ahora, el filtro personalizado del asignador de carga útil aparece en la interfaz de usuario de la carpeta vigilada por AEM. Puede utilizarla con su flujo de trabajo.
+   Ahora, el filtro personalizado del asignador de carga útil aparece en AEM interfaz de usuario de la carpeta vigilada. Puede utilizarla con su flujo de trabajo.
 
    El siguiente código de ejemplo implementa un asignador simple basado en archivos para los archivos guardados en relación con una carga útil. Puede usarlo para empezar.
 
@@ -492,7 +492,7 @@ Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una 
 
 >[!NOTE]
 >
->Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos en la carpeta vigilada. Si los AEM Forms no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
+>Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos en la carpeta vigilada. Si AEM Forms no puede eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
 
 ## Información adicional sobre las carpetas vigiladas {#additional-information-about-the-watched-folders}
 
@@ -512,7 +512,7 @@ La limitación evita que la carpeta vigilada invoque nuevos trabajos cuando los 
 
 * La carpeta vigilada depende del número de archivos presentes en la carpeta del escenario para averiguar cuántos trabajos están en curso. Si los archivos siguen sin procesarse en la carpeta del escenario, la carpeta vigilada no invocará más trabajos. Por ejemplo, si el tamaño del lote es cuatro y se han detenido tres trabajos, la carpeta vigilada solo invocará un trabajo en las invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de escenario. Cuando los trabajos están paralizados, el administrador puede finalizar el proceso en la página de administración de Process Management para que Watched Folder mueva los archivos fuera de la carpeta del escenario.
 * Si el servidor de AEM Forms deja de funcionar antes de que la carpeta vigilada invoque los trabajos, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Si el servidor AEM Forms se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamar, lo que ocurre cuando los servicios no inicio en la secuencia ordenada, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Si el servidor de AEM Forms se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamar, lo que ocurre cuando los servicios no inicio en la secuencia ordenada, el administrador puede mover los archivos fuera de la carpeta del escenario. Para obtener más información, consulte Puntos [de error y recuperación](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### Puntos de error y recuperación Puntos de error y recuperación {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -538,7 +538,7 @@ Cuando la carpeta de inspección no puede procesar los archivos de origen en la 
    * Cambie la propiedad includeFilePattern de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, introduzca NOMATCH).
    * Suspenda el proceso de creación de nuevos archivos de entrada.
 
-   Espere hasta que el AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
 1. Determinar qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y aún quedan archivos sin procesar en la carpeta de escenario, vaya al paso siguiente.
 
@@ -636,7 +636,7 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 ### Crear un flujo de trabajo {#create-a-workflow}
 
-1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador.
+1. Abra AEM interfaz de usuario de workflow en una ventana del explorador.
 
    https://[nombredeservidor]:[puerto]/flujo de trabajo
 
@@ -727,7 +727,7 @@ ECMAScript utilizaría la API createPDF del generador de PDF para convertir docu
 
 ### Crear un flujo de trabajo {#create-a-workflow-1}
 
-1. Abra la interfaz de usuario de flujo de trabajo de AEM en una ventana del navegador. `https://[server]:[port]/workflow`
+1. Abra AEM interfaz de usuario de workflow en una ventana del explorador. `https://[server]:[port]/workflow`
 
 1. En la vista Modelos, haga clic en **Nuevo**. En el cuadro de diálogo Nuevo flujo de trabajo, especifique **Título** y haga clic en **Aceptar**.
 1. Seleccione el flujo de trabajo recién creado y haga clic en **Editar**. El flujo de trabajo se abre en una ventana nueva.

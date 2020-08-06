@@ -1,8 +1,8 @@
 ---
-title: Supervisión y mantenimiento de la instancia de AEM
-seo-title: Supervisión y mantenimiento de la instancia de AEM
-description: Obtenga información sobre cómo supervisar AEM.
-seo-description: Obtenga información sobre cómo supervisar AEM.
+title: Monitoreo y mantenimiento de la instancia de AEM
+seo-title: Monitoreo y mantenimiento de la instancia de AEM
+description: Aprenda a supervisar AEM.
+seo-description: Aprenda a supervisar AEM.
 uuid: 371791ab-2ea3-4d77-9db5-e1672c6b0831
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Supervisión y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
+# Monitoreo y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Una vez implementadas las instancias de AEM, se necesitarán ciertas tareas para supervisar y mantener su funcionamiento, rendimiento e integridad.
 
@@ -32,7 +32,7 @@ Un factor clave aquí es que para reconocer los problemas potenciales necesita s
 | Se están supervisando los sistemas de archivos. | El repositorio de CRX se &quot;bloqueará&quot; si no hay suficiente espacio libre en el disco. Se reanudará cuando haya espacio disponible. | Los mensajes &quot; `*ERROR* LowDiskSpaceBlocker`&quot; se pueden ver en el archivo de registro cuando el espacio libre se reduce. |
 | [Se están supervisando los archivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro. |  |  |
 | La supervisión del sistema se está ejecutando (constantemente) en segundo plano. | Incluido el uso de CPU, memoria, disco y red. Usando, por ejemplo, iostat / vmstat / permon. | Los datos registrados se visualizan y pueden utilizarse para rastrear problemas de rendimiento. También se puede acceder a los datos sin procesar. |
-| [Se está supervisando](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)el rendimiento de AEM. | Incluidos los contadores de [solicitudes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) para supervisar los niveles de tráfico. | Si se observa una pérdida significativa, o a largo plazo, de rendimiento, debe realizarse una investigación detallada. |
+| [AEM rendimiento se está supervisando](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluidos los contadores de [solicitudes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) para supervisar los niveles de tráfico. | Si se observa una pérdida significativa, o a largo plazo, de rendimiento, debe realizarse una investigación detallada. |
 | Está monitoreando los agentes [de replicación](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | Purgue regularmente instancias de flujo de trabajo. | Tamaño del repositorio y rendimiento del flujo de trabajo. | Consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de flujo de trabajo. |
 
@@ -70,7 +70,7 @@ Después de la instalación, o de cambios significativos en la configuración, r
 
 Para ello, debe [realizar una copia de seguridad de todo el repositorio](#backing-up-your-repository) y, a continuación:
 
-1. Detenga AEM.
+1. Detén AEM.
 1. Realice una copia de seguridad de todo el sistema `<cq-installation-dir>` de archivos.
 
 >[!CAUTION]
@@ -173,7 +173,7 @@ AEM WCM registra registros detallados. Después de desempaquetar y inicio QuickS
 
 #### Rotación de archivos de registro {#log-file-rotation}
 
-La rotación del archivo de registro se refiere al proceso que limita el crecimiento del archivo mediante la creación periódica de un nuevo archivo. En AEM, un archivo de registro llamado `error.log` se rotará una vez al día según las reglas especificadas:
+La rotación del archivo de registro se refiere al proceso que limita el crecimiento del archivo mediante la creación periódica de un nuevo archivo. En AEM, un archivo de registro llamado `error.log` se rotará una vez al día según las reglas dadas:
 
 * Se cambia el nombre del `error.log` archivo según el patrón {original_filename} `.yyyy-MM-dd`. Por ejemplo, el 11 de julio de 2010, se cambia el nombre del archivo de registro actual `error.log-2010-07-10`y, a continuación, `error.og` se crea un nuevo archivo.
 * Los archivos de registro anteriores no se eliminan, por lo que es responsabilidad suya limpiar los archivos de registro antiguos periódicamente para limitar el uso del disco.
@@ -184,13 +184,13 @@ La rotación del archivo de registro se refiere al proceso que limita el crecimi
 
 ### Búsqueda de los archivos de registro {#finding-the-log-files}
 
-En el servidor de archivos donde instaló AEM se conservan varios archivos de registro:
+En el servidor de archivos donde instaló AEM se guardan varios archivos de registro:
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
    * `access.log`
 
-      Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
+      Todas las solicitudes de acceso a AEM WCM y al repositorio están registradas aquí.
 
    * `audit.log`
 
@@ -210,7 +210,7 @@ En el servidor de archivos donde instaló AEM se conservan varios archivos de re
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Este registro solo se utiliza si el medio dinámico está habilitado. El registro de acceso s7registra cada solicitud realizada a Dynamic Media a través `/is/image` y `/is/content`.
+      Este registro solo se utiliza si el medio dinámico está habilitado. El registro s7access registra cada solicitud realizada a Dynamic Media a través `/is/image` y `/is/content`.
 
    * `stderr.log`
 
@@ -232,7 +232,7 @@ En el servidor de archivos donde instaló AEM se conservan varios archivos de re
 
 >[!NOTE]
 >
->Los registros ImageServer y s7access no se incluyen en el paquete **Descargar completo** que se genera desde la página **system/console/status-Bundlelist** . Por motivos de asistencia técnica, si tiene problemas con Dynamic Media, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con la asistencia al cliente.
+>Los registros ImageServer y s7access no se incluyen en el paquete **Descargar completo** que se genera desde la página **system/console/status-Bundlelist** . Por motivos de asistencia técnica, si tiene problemas con Dynamic Media, anexe también los registros de ImageServer y s7access cuando se ponga en contacto con el servicio de asistencia al cliente.
 
 ### Activación del nivel de registro DEBUG {#activating-the-debug-log-level}
 
@@ -399,7 +399,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >* una programación de fecha y hora
 
    >
-   >para indicar cuándo se creará un archivo nuevo (y se cambiará el nombre del archivo existente según el patrón de nombre).
+   >para indicar cuándo se creará un nuevo archivo (y se cambiará el nombre del archivo existente según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como el número de bytes o puede agregar uno de los indicadores de tamaño - `KB`, `MB`, o `GB` (se omiten las mayúsculas y minúsculas).
    >* Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
@@ -425,7 +425,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
       esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
       >
       >  
-   1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
+   1. Utilice sólo caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 
 1. Lea el nuevo archivo de registro con la herramienta elegida.
@@ -436,9 +436,9 @@ La consola de Felix también proporciona información sobre la compatibilidad co
 
 ### Búsqueda de los registros de auditoría {#finding-the-audit-records}
 
-Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para los eventos WCM y OSGi de AEM.
+Los registros de auditoría se conservan para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría para los eventos AEM WCM y OSGi.
 
-#### Se muestran los registros de auditoría de AEM WCM al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM registros de auditoría de WCM que se muestran al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Abra una página.
 1. Desde la barra de tareas puede seleccionar la ficha con el icono de candado y, a continuación, hacer clic con el doble en Registro de **auditoría...**
@@ -448,7 +448,7 @@ Los registros de auditoría se conservan para proporcionar un registro de quién
 
 1. Haga clic en **Aceptar** cuando desee cerrar la ventana.
 
-#### Registros de auditoría de AEM WCM dentro del repositorio {#aem-wcm-auditing-records-within-the-repository}
+#### AEM registros de auditoría de WCM dentro del repositorio {#aem-wcm-auditing-records-within-the-repository}
 
 Dentro de la `/var/audit` carpeta, los registros de auditoría se guardan según el recurso. Puede explorar en profundidad hasta que vea los registros individuales y la información que contienen.
 
@@ -519,7 +519,7 @@ Las siguientes listas plantean problemas comunes de rendimiento, junto con propu
 
 | Área | Síntomas | Para aumentar la capacidad... | Para reducir el volumen... |
 |---|---|---|---|
-| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplifique el diseño (HTML). |
+| Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplificar el diseño (HTML). |
 |  | Uso bajo de CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
 |  | Algunos clientes son rápidos, algunos lentos. |  |  |
 | Servidor |  |  |  |
@@ -527,7 +527,7 @@ Las siguientes listas plantean problemas comunes de rendimiento, junto con propu
 |  | La navegación local en el servidor es (comparativamente) rápida. | Aumente el ancho de banda de la red. | Reduzca el &quot;peso&quot; de las páginas web (p. ej., menos imágenes, HTML optimizado). |
 | Servidor web | El uso de CPU en el servidor web es alto. | Clasificar los servidores Web. | Reduzca las visitas individuales por página (visita). |
 |  |  | Utilice un equilibrador de carga de hardware. |  |
-| Aplicación | El uso de CPU del servidor es alto. | Agrupe las instancias de AEM. | Busque y elimine los cartuchos de CPU y memoria (utilice revisión de código, salida de temporización, etc.). |
+| Aplicación | El uso de CPU del servidor es alto. | Clasifique las instancias AEM. | Busque y elimine los cartuchos de CPU y memoria (utilice revisión de código, salida de temporización, etc.). |
 |  | Alto consumo de memoria. |  | Mejore el almacenamiento en caché en todos los niveles. |
 |  | Tiempos de respuesta bajos. |  | Optimizar plantillas y componentes (por ejemplo, estructura, lógica). |
 | Repositorio |  |  |  |
@@ -586,7 +586,7 @@ Algunos de ellos dependerán del sistema operativo.
   <tr> 
    <td>Voladizos de montón</td> 
    <td>Problemas de memoria insuficiente que causan un rendimiento lento.</td> 
-   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de Java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td> 
+   <td><p>Añada el:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> a la llamada de java a AEM.</p> <p>Consulte la Guía de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">solución de problemas de Java SE 6 con HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Llamadas del sistema</td> 
@@ -663,7 +663,7 @@ El registro de solicitudes registra cada solicitud realizada, junto con la respu
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Al calcular el total de todas las entradas GET dentro de un período específico (por ejemplo, en varios períodos de 24 horas), puede hacer declaraciones sobre el tráfico promedio en su sitio web.
+Al calcular el total de todas las entradas de GET dentro de un período específico (por ejemplo, en varios períodos de 24 horas), puede hacer declaraciones sobre el tráfico promedio en su sitio web.
 
 #### Monitoreo de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -736,7 +736,7 @@ Se deben realizar pruebas para determinar cuántos usuarios simultáneos puede g
 
 ### Uso de rlog.jar para encontrar solicitudes con largos tiempos de duración {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM incluye varias herramientas de ayuda en:\
+AEM incluye varias herramientas de ayuda ubicadas en:\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Una de ellas, `rlog.jar`, se puede utilizar para ordenar rápidamente `request.log` de modo que las solicitudes se muestren por duración, desde el tiempo más largo hasta el más corto.
@@ -845,7 +845,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-Los números anteriores provienen de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación predeterminada de AEM. La página es muy sencilla, pero no está optimizada para el rendimiento.
+Los números anteriores se toman de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación AEM predeterminada. La página es muy sencilla, pero no está optimizada para el rendimiento.
 
 `apachebench` también muestra el tiempo por solicitud como la media en todas las solicitudes simultáneas; consulte `Time per request: 54.595 [ms]` (media, en todas las solicitudes simultáneas). Puede cambiar el valor del parámetro de concurrencia `-c` (número de varias solicitudes que se van a realizar a la vez) para ver cualquier efecto.
 
@@ -1099,7 +1099,7 @@ Si el sistema se está quedando sin memoria, esto se puede ver de varias maneras
 
 En estos casos, compruebe:
 
-* la configuración de JVM utilizada para [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
+* la configuración de JVM utilizada para el [inicio de AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
    * [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)

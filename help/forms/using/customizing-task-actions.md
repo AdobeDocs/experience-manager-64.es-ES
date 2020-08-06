@@ -138,7 +138,7 @@ Para mostrar solo imágenes para acciones, personalice las imágenes utilizadas 
 
 ### Menú emergente de acción de tarea de Lista de Tarea {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Es necesario un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista de Tarea del espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Se requiere un paquete de desarrollo para personalizar los elementos del menú emergente de acción de tarea de lista de espacio de trabajo de AEM Forms. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de código de espacio de trabajo de AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copie /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`reemplazar el siguiente fragmento de código:
 

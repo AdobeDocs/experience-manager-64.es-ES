@@ -1,8 +1,8 @@
 ---
 title: Carga de recursos compartidos
 seo-title: Carga de recursos compartidos
-description: Las acciones de Administración de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener información sobre cómo cargar recursos compartidos.
-seo-description: Las acciones de Administración de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener información sobre cómo cargar recursos compartidos.
+description: Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener información sobre cómo cargar recursos compartidos.
+seo-description: Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener información sobre cómo cargar recursos compartidos.
 uuid: f3595299-1279-4b94-9a49-9d1893250549
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las acciones de Administración de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
+Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
 
 >[!NOTE]
 >
@@ -52,9 +55,9 @@ Siga estos pasos para cargar los recursos compartidos de un artículo:
 
 Una vez que haya aprendido a crear y publicar contenido, consulte
 
-* [Desarrollo de contenido de AEM para los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Administración de contenido para utilizar los servicios bajo demanda de AEM Mobile](/help/mobile/aem-mobile.md)
+* [Desarrollo de contenido AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 O necesita conocer los temas de creación, consulte
 
-[Creación de contenido de AEM para aplicaciones de servicios bajo demanda de AEM Mobile](/help/mobile/mobile-apps-ondemand.md)
+[Creación de contenido AEM para aplicaciones de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

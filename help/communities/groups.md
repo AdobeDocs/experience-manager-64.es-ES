@@ -12,6 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Varios aspectos de los grupos comunitarios son:
 
 >[!NOTE]
 >
->Los grupos de comunidad, creados en el entorno de publicación antes de la [existencia de la consola](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)Grupos de comunidad, no se enumerarán en la consola Grupos de comunidad y, por lo tanto, no se pueden modificar mediante la consola.
+>Los grupos de la comunidad, creados en el entorno de publicación antes de [que exista la consola](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)Grupos de la comunidad, no se enumerarán en la consola Grupos de la comunidad y, por lo tanto, no se pueden modificar mediante la consola.
 
 >[!NOTE]
 >
@@ -83,7 +86,7 @@ Desde esta consola Grupos, es posible crear nuevos grupos.
 
 * **[!UICONTROL Nombre]** del grupo de la comunidad: El nombre de la página raíz del grupo que aparece en la dirección URL
 
-   * Verifique dos veces el nombre, ya que no es fácil cambiarlo después de crear el grupo
+   * Compruebe el nombre en Doble, ya que no es fácil cambiarlo después de crear el grupo
    * La dirección URL base se mostrará debajo de la variable `Community Group Name`
    * Para una dirección URL válida, anexe &quot;.html&quot;
 
@@ -97,7 +100,7 @@ Desde esta consola Grupos, es posible crear nuevos grupos.
 
 ![communitygrouptopic](assets/communitygrouptheme.png)
 
-El marco utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas precargados de Bootstrap para aplicar estilo a la plantilla de grupo de comunidad seleccionada o se puede cargar un tema de Bootstrap.
+La estructura utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar una de las muchas temáticas de Bootstrap precargadas para aplicar estilo a la plantilla de grupo de comunidad seleccionada o se puede cargar un tema de Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaca.
 
@@ -120,9 +123,9 @@ Al crear o seleccionar una imagen, tenga en cuenta:
 * No hay cambio de tamaño de la imagen, de modo que cuando la anchura de la imagen es...
 
    * Menor que el ancho del navegador, la imagen se repetirá horizontalmente
-   * Si la imagen es mayor que la anchura del navegador, parece que se recorta
+   * Buena al ancho del explorador, la imagen parece que se recorta
 
-### Paso 3:Configuración {#step-settings}
+### Paso 3: Configuración {#step-settings}
 
 #### MODERATION {#moderation}
 
@@ -132,7 +135,7 @@ De forma predeterminada, se hereda la lista de moderadores del sitio de la comun
 
 Es posible agregar moderadores específicos al grupo:
 
-* Busque miembros (desde el entorno de publicación) para agregarlos como moderadores
+* Buscar miembros (desde el entorno de publicación) para agregarlos como moderadores
 
 #### MEMBERSHIP {#membership}
 
@@ -145,7 +148,7 @@ La configuración de pertenencia permite seleccionar una de las tres formas de a
    Si se selecciona, el grupo de comunidad es un grupo público. Los miembros del sitio pueden participar en el grupo y publicar sin unirse explícitamente al grupo. Predeterminado está seleccionado.
 * Suscripción requerida
 
-   si se selecciona, el grupo de comunidad es un grupo abierto. Los miembros del sitio de la comunidad pueden ver el contenido del grupo, pero deben unirse al grupo antes de poder publicar contenido. Los miembros se unen seleccionando el `Join` botón en el entorno de publicación. El valor predeterminado no está seleccionado.
+   si se selecciona, el grupo de comunidad es un grupo abierto. Los miembros del sitio de la comunidad pueden realizar vistas en el contenido del grupo, pero deben unirse al grupo antes de poder publicar contenido. Los miembros se unen seleccionando el `Join` botón en el entorno de publicación. El valor predeterminado no está seleccionado.
 
 * Suscripción restringida
 
@@ -183,7 +186,7 @@ Cuando se completa el proceso, la tarjeta del nuevo sitio de subcomunidad (grupo
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-El contenido de página de un grupo puede crearse con las mismas herramientas que cualquier otra página de AEM. Para abrir el grupo para la creación, seleccione el icono Abrir sitio que aparece al pasar el ratón por encima de la tarjeta del grupo.
+El contenido de la página de un grupo se puede crear con las mismas herramientas que cualquier otra página AEM. Para abrir el grupo para la creación, seleccione el icono Abrir sitio que aparece al pasar el ratón por encima de la tarjeta del grupo.
 
 ## Modificación de las propiedades del grupo {#modifying-group-properties}
 
@@ -191,7 +194,7 @@ Las propiedades de un sitio de subcomunidad existente, especificadas durante el 
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-Los detalles de las siguientes propiedades coinciden con las descripciones proporcionadas en la sección Creación [de](#group-creation) grupos. Se puede modificar cualquier grupo anidado, tanto si se crea en el entorno de publicación como en el entorno de creación.
+Los detalles de las siguientes propiedades coinciden con las descripciones proporcionadas en la sección Creación [de](#group-creation) grupos. Se puede modificar cualquier grupo anidado, tanto si se crea en el entorno de publicación como en el entorno de autor.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -239,7 +242,7 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 >
 >Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
 
-#### Ejemplo: Adición de una función de calendario a una estructura de subcomunidad (grupo) {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+#### Ejemplo: Añadir una función de calendario en una estructura de subcomunidad (grupo) {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -262,7 +265,7 @@ El panel [MIEMBROS](#membership) es meramente informativo. No es posible modific
 
 ### Modificar miniatura {#modify-thumbnail}
 
-El panel [MINIATURAS](#thumbnail) permite cargar una imagen para representar el grupo de la comunidad a los visitantes del sitio en el entorno de publicación, así como en la consola Grupos del sitio de comunidades en el entorno de creación.
+El panel [MINIATURAS](#thumbnail) permite cargar una imagen para representar el grupo de la comunidad en los visitantes del sitio en el entorno de publicación, así como en la consola Grupos del sitio de comunidades en el entorno de creación.
 
 ## Publicación del grupo {#publishing-the-group}
 

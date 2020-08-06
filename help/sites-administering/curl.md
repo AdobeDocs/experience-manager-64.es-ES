@@ -20,9 +20,9 @@ ht-degree: 2%
 
 # Uso de cURL con AEM{#using-curl-with-aem}
 
-Los administradores generalmente necesitan automatizar o simplificar tareas comunes dentro de cualquier sistema. En AEM, por ejemplo, la administración de usuarios, la instalación de paquetes y la administración de paquetes OSGi son tareas que se deben realizar con frecuencia.
+Los administradores generalmente necesitan automatizar o simplificar tareas comunes dentro de cualquier sistema. En AEM, por ejemplo, administrar usuarios, instalar paquetes y administrar paquetes OSGi son tareas que se deben realizar con frecuencia.
 
-Debido a la naturaleza RESTful de la estructura Sling en la que se basa AEM, la mayoría de las tareas se pueden reducir a una llamada mediante URL. cURL puede utilizarse para ejecutar estas llamadas mediante URL y puede ser una herramienta útil para los administradores de AEM.
+Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se genera el AEM, la mayoría de las tareas se pueden reducir a una llamada de URL. cURL puede utilizarse para ejecutar estas llamadas de URL y puede ser una herramienta útil para administradores de AEM.
 
 ## Qué es cURL {#what-is-curl}
 
@@ -30,11 +30,11 @@ cURL es una herramienta de línea de comandos de código abierto que se utiliza 
 
 cURL es una herramienta bien establecida y ampliamente utilizada para obtener o enviar datos usando la sintaxis de la dirección URL y fue lanzada originalmente en 1997. El nombre cURL originalmente significaba &quot;ver URL&quot;.
 
-Debido a la naturaleza RESTful de la estructura Sling en la que se crea AEM, la mayoría de las tareas se pueden reducir a una llamada de URL, que se puede ejecutar con cURL. [Las tareas](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) de manipulación de contenido, como la activación de páginas y flujos de trabajo de inicio, así como tareas [](/help/sites-administering/curl.md#common-operational-aem-curl-commands) operativas como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede [crear sus propios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para la mayoría de las tareas de AEM.
+Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se genera el AEM, la mayoría de las tareas se pueden reducir a una llamada de URL, que se puede ejecutar con cURL. [Las tareas](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) de manipulación de contenido, como la activación de páginas y flujos de trabajo de inicio, así como tareas [](/help/sites-administering/curl.md#common-operational-aem-curl-commands) operativas como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede [crear sus propios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para la mayoría de las tareas de AEM.
 
 >[!NOTE]
 >
->Cualquier comando de AEM ejecutado mediante cURL debe autorizarse como cualquier usuario a AEM. Se respetan todas las ACL y los derechos de acceso al utilizar cURL para ejecutar un comando de AEM.
+>Cualquier comando de AEM ejecutado mediante cURL debe estar autorizado como cualquier usuario para AEM. Se respetan todas las ACL y los derechos de acceso al utilizar cURL para ejecutar un comando AEM.
 
 ## Descarga de cURL {#downloading-curl}
 
@@ -42,15 +42,15 @@ cURL es una parte estándar de macOS y algunas distribuciones Linux. Sin embargo
 
 El repositorio de origen de cURL también se encuentra en GitHub.
 
-## Creación de un comando AEM listo para cURL {#building-a-curl-ready-aem-command}
+## Creación de un comando de AEM listo para cURL {#building-a-curl-ready-aem-command}
 
-Los comandos cURL se pueden crear para la mayoría de las operaciones en AEM, como activar flujos de trabajo, comprobar configuraciones de OSGi, activar comandos JMX, crear agentes de replicación y mucho más.
+Los comandos cURL se pueden crear para la mayoría de las operaciones de AEM, como activar flujos de trabajo, comprobar configuraciones OSGi, activar comandos JMX, crear agentes de replicación y mucho más.
 
-Para encontrar el comando exacto que necesita para una operación concreta, debe utilizar las herramientas de desarrollador del navegador para capturar la llamada POST al servidor cuando ejecute el comando AEM.
+Para encontrar el comando exacto que necesita para una operación concreta, debe utilizar las herramientas de desarrollador del explorador para capturar la llamada del POST al servidor cuando ejecute el comando AEM.
 
 Los pasos siguientes describen cómo hacerlo mediante la creación de una nueva página en el navegador Chrome como ejemplo.
 
-1. Prepare la acción que desee invocar en AEM. En este caso, hemos llegado al final del asistente **Crear página** , pero aún no hemos hecho clic en **Crear**.
+1. Prepare la acción que desee invocar dentro de AEM. En este caso, hemos llegado al final del asistente **Crear página** , pero aún no hemos hecho clic en **Crear**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -59,7 +59,7 @@ Los pasos siguientes describen cómo hacerlo mediante la creación de una nueva 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Haga clic en **Crear** en el asistente **Crear página** para crear el flujo de trabajo.
-1. Haga clic con el botón derecho en la acción POST resultante y seleccione **Copiar** -> **Copiar como cURL**.
+1. Haga clic con el botón derecho en la acción de POST resultante y seleccione **Copiar** -> **Copiar como cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -69,15 +69,15 @@ Los pasos siguientes describen cómo hacerlo mediante la creación de una nueva 
 
 1. Ejecute el comando cURL a través de la línea de comandos y vista la respuesta.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
-## Comandos de AEM cURL operativos comunes {#common-operational-aem-curl-commands}
+## Comandos comunes de cURL de AEM operativo {#common-operational-aem-curl-commands}
 
-Esta es una lista de los comandos cURL de AEM para tareas administrativas y operativas comunes.
+Esta es una lista de AEM comandos cURL para tareas administrativas y operativas comunes.
 
 >[!NOTE]
 >
->En los siguientes ejemplos se da por supuesto que AEM se está ejecutando `localhost` en el puerto `4502` y utiliza al usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se definen entre paréntesis angulares.
+>En los siguientes ejemplos se asume que AEM se está ejecutando `localhost` en el puerto `4502` y utiliza al usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se definen entre paréntesis angulares.
 
 ### Administración de paquetes {#package-management}
 
@@ -304,7 +304,7 @@ Consulte Recopilación [de elementos no utilizados del almacén](/help/sites-adm
 
 ### Integración de Analytics y Destinatario {#analytics-and-target-integration}
 
-Consulte [Opción en Adobe Analytics y Adobe Destinatario](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) para obtener más información.
+Consulte [Opción en Adobe Analytics y Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) para obtener más información.
 
 ### Inicio de sesión único {#single-sign-on}
 
@@ -312,13 +312,13 @@ Consulte [Opción en Adobe Analytics y Adobe Destinatario](/help/sites-administe
 
 Consulte Inicio de sesión [único](/help/sites-deploying/single-sign-on.md) para obtener más información.
 
-## Comandos cURL de AEM de Manipulación de contenido común {#common-content-manipulation-aem-curl-commands}
+## Comandos cURL de Manipulación de contenido común AEM {#common-content-manipulation-aem-curl-commands}
 
-Esta es una lista de los comandos cURL de AEM para la manipulación de contenido.
+Esta es una lista de AEM comandos cURL para la manipulación de contenido.
 
 >[!NOTE]
 >
->En los siguientes ejemplos se da por supuesto que AEM se está ejecutando `localhost` en el puerto `4502` y utiliza al usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se definen entre paréntesis angulares.
+>En los siguientes ejemplos se asume que AEM se está ejecutando `localhost` en el puerto `4502` y utiliza al usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se definen entre paréntesis angulares.
 
 ### Administración de páginas {#page-management}
 

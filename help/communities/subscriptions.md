@@ -1,6 +1,6 @@
 ---
-title: Suscripciones a comunidades
-seo-title: Suscripciones a comunidades
+title: Suscripciones de comunidades
+seo-title: Suscripciones de comunidades
 description: 'Los miembros de la comunidad interactúan con otros miembros a través del correo electrónico '
 seo-description: 'Los miembros de la comunidad interactúan con otros miembros a través del correo electrónico '
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
 
-# Suscripciones a comunidades {#communities-subscriptions}
+# Suscripciones de comunidades {#communities-subscriptions}
 
 ## Información general {#overview}
 
 A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), los miembros de la comunidad pueden interactuar con la comunidad a través del correo electrónico mediante una función denominada suscripciones.
 
-Las suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
+Las Suscripciones son similares a [las notificaciones](notifications.md) , ya que los miembros pueden suscribirse a continuación de artículos de blog, temas de foro o preguntas de control de calidad.
 
 Lo que distingue las suscripciones de las notificaciones es:
 
@@ -37,11 +40,11 @@ El correo electrónico debe configurarse para que las suscripciones funcionen y 
 
 Para obtener instrucciones sobre cómo configurar el correo electrónico, consulte [Configuración del correo electrónico](email.md).
 
-**Habilitar suscripciones y seguir**
+**Habilitar Suscripciones y seguir**
 
 Los componentes deben configurarse para habilitar las suscripciones *y las* siguientes. Las funciones que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
 
-## Suscripciones desde: {#subscriptions-from-following}
+## Suscripciones de lo siguiente {#subscriptions-from-following}
 
 ![climage_1-5](assets/chlimage_1-5.png)
 

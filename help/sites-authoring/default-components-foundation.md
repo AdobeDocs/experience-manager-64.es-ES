@@ -13,6 +13,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '6592'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->En esta sección se analizan los componentes de base, que están disponibles con AEM en muchas versiones y que están listos para usarse en las instalaciones estándar de AEM. Sin embargo, varios componentes de base han quedado obsoletos con AEM 6.4.
+>En esta sección se analizan los componentes de base, que están disponibles con AEM en muchas versiones y que están listos para usarse en las instalaciones estándar de AEM. Sin embargo, varios de los componentes de base han quedado obsoletos con AEM 6.4.
 >
 >Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
 
@@ -29,7 +32,7 @@ Los componentes de base están diseñados para utilizarse al crear contenido par
 
 Some are immediately available through component browser, various others are also available by using [design mode](/help/sites-authoring/default-components-designmode.md) (if the page is based on a static template) or by [editing the template](/help/sites-authoring/templates.md) (if the page is based on an editable template).
 
-Se admite el uso de componentes básicos, pero se han sustituido por componentes principales que ofrecen más extensibilidad y flexibilidad.
+Se admite el uso de componentes básicos, pero han sido sustituidos por componentes básicos que oferta una mayor extensibilidad y flexibilidad.
 
 >[!NOTE]
 >
@@ -58,7 +61,7 @@ Los componentes generales son los básicos que se utilizan para crear contenido.
 ### Elemento de cuenta {#account-item}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Es posible definir un vínculo con título y descripción.
 
@@ -67,7 +70,7 @@ Es posible definir un vínculo con título y descripción.
 ### Imagen adaptable {#adaptive-image}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>Este componente de base ya no se utiliza. Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) instead.
 
 El componente de base de la imagen adaptable genera imágenes que se ajustan al tamaño de la ventana en la que se abre la página web. Para utilizar el componente, escoja un medio de imagen del sistema de archivos o DAM. Cuando se abre la página web, el navegador web descarga una copia de la imagen que ha cambiado de tamaño para ajustarse a la ventana actual.
 
@@ -89,7 +92,7 @@ Puede utilizar archivos de imagen con las extensiones de nombre de archivo sigui
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; Los archivos .gif animados no son compatibles con AEM para representaciones adaptables.
+>&amp;ast;&amp;ast; Los archivos .gif animados no se admiten en AEM para representaciones adaptables.
 
 #### Calidad y tamaño de imagen {#images-sizes-and-quality}
 
@@ -189,7 +192,7 @@ Están disponibles en dos fichas:
 
    * **Lista de creación que utiliza**
 
-      Existen varias formas de crear una lista de páginas: páginas secundarias, lista fija, búsqueda o búsqueda avanzada (todas ellas descritas a continuación).
+      Existen varias formas de crear una lista de página: páginas secundarias, Lista fija, búsqueda o búsqueda avanzada (todas ellas se describen a continuación).
 
       Tenga en cuenta que no importa qué método elija, las páginas incluidas en la lista ya deben disponer de una imagen asociada a la página, que será la imagen que se muestre en el carrusel. Si no existe ninguna imagen para una página determinada en sus propiedades de página, es necesario asociar una imagen a la página antes de comenzar, ya que de lo contrario el carrusel mostrará una página en blanco (o casi en blanco). Consulte [Edición de las propiedades de página](/help/sites-authoring/editing-page-properties.md).
 
@@ -201,7 +204,8 @@ Están disponibles en dos fichas:
 Especificar una ruta manualmente o con el selector. Deje esta opción en blanco para utilizar la página actual como página principal.
       * **Opciones de Lista fija**
 
-         * **Páginas** Seleccione una lista de páginas. Utilice `+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
+         * **Páginas** Seleccione una lista de páginas. Usar 
+`+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
       * **Opciones de Buscar**
 
          * **Iniciar en**
@@ -215,7 +219,7 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda mediante notación de predicado de QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -330,7 +334,7 @@ La aplicación externa se integra en el sistema de párrafos de la página AEM; 
 ### Flash {#flash}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Flash permite cargar una película Flash. Puede arrastrar un recurso flash desde el buscador de contenido al componente, o bien, puede utilizar el cuadro de diálogo:
 
@@ -493,7 +497,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda mediante notación de predicado de QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -527,12 +531,12 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
 En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede mostrar una lista de páginas secundarias, con el diseño controlado mediante las definiciones CSS personalizadas del diseño del sitio.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Inicio de sesión {#login}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Este componente proporciona los campos Nombre de usuario y Contraseña.
 
@@ -625,7 +629,7 @@ El componente Búsqueda añade la capacidad de búsqueda a la página.
 
 Puede configurar:
 
-* Búsqueda 
+* Búsqueda  
 
    * **Tipos de nodo**
 
@@ -838,7 +842,7 @@ Puede configurar:
 
    * **Vincular a**
 
-      Especifique una ruta de destino.
+      Especifique una ruta de destinatario.
 
    * **Descripción**
 
@@ -883,6 +887,7 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 * Vídeo
 
    * **Recurso de vídeo**
+
    Cargue o suelte el recurso de vídeo.
 
    * **Tamaño**
@@ -896,7 +901,8 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Vídeo Flash)
+>* `FLV` (vídeo de Flash)
+
 >
 
 
@@ -1054,7 +1060,7 @@ Entre el inicio y el fin de un formulario, puede añadir componentes que definir
 
 >[!NOTE]
 >
->El componente de formulario de componentes de base solo admite el uso de otros componentes de formulario de componentes de base (botón, texto, oculto, etc.). No se admite el uso de componentes de formulario de [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en un formulario de componentes de base (y viceversa).
+>El componente de formulario de componentes de base solo admite el uso de otros componentes de formulario de componentes de base (botón, texto, oculto, etc.). No se admite el uso de componentes de formulario de [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en un formulario de componentes de base (y viceversa).
 
 #### Inicio de formulario {#start-of-form}
 
@@ -1070,7 +1076,8 @@ Este componente es necesario para definir el inicio de un nuevo formulario en un
 
 * **Avanzado**
 
-   * **Tipo** de acción Un formulario necesita una acción. La acción define la operación que se activa para la ejecución con los datos enviados por el usuario (similar a action= en HTML). Algunos necesitan una configuración **de** acción correspondiente.
+   * **Tipo** de acción Un formulario necesita una acción. La acción define la operación que se activa para la ejecución con los datos enviados por el usuario (similar a action= en HTML). Algunos necesitan una 
+**Configuración de la acción**.
 
       Se incluye una selección de tipos de acciones en la instalación AEM estándar:
 
@@ -1162,7 +1169,7 @@ Este componente es necesario para definir el inicio de un nuevo formulario en un
 
          * **El posible cliente se agregará a la lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
       * **Crear y actualizar cuenta**
 
          * **Grupo inicial**
@@ -1225,7 +1232,7 @@ Este componente es necesario para definir el inicio de un nuevo formulario en un
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
 
 
 
@@ -1283,7 +1290,7 @@ El componente está configurado para su uso inmediato, pero es posible cambiar l
 ### Captcha {#captcha}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 El componente Captcha requiere que el usuario escriba una cadena alfanumérica tal y como se muestra en pantalla. La cadena cambia con cada actualización.
 
@@ -1308,7 +1315,7 @@ Es posible especificar varios parámetros, incluidos el título, una descripció
 ### Detalles de la tarjeta de crédito {#credit-card-details}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en su lugar.
 
 Permite proporcionar los campos necesarios para introducir los datos de las tarjetas de crédito. Se puede configurar para especificar los tipos de tarjeta aceptadas y la información obligatoria (por ejemplo, el código de seguridad).
 

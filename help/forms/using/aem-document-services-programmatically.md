@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Uso de los servicios de Documento de AEM mediante programación {#using-aem-document-services-programmatically}
 
-Las clases de cliente necesarias para crear proyectos dinámicos con AEM Documento Services están disponibles en el tarro del SDK [del cliente de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms. Para obtener información sobre varios proyectos, consulte [cómo crear un proyecto de AEM con Maven](/help/sites-developing/ht-projects-maven.md).
+Las clases de cliente necesarias para crear proyectos dinámicos con AEM Documento Services están disponibles en el tarro del SDK [del cliente de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms. Para obtener más información sobre los proyectos principales, consulte [cómo crear el proyecto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Incluye las opciones necesarias para Reader Extender un documento PDF</td> 
+   <td>Incluye las opciones necesarias para la ampliación de un documento PDF por parte del Reader</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1341,7 +1341,7 @@ secureDocument le permite cifrar, firmar/certificar y leer extender un Documento
 
 **Codificación de documentos PDF con contraseña**
 
-Al cifrar un documento PDF con una contraseña, el usuario debe especificar la contraseña para abrir el documento PDF en Adobe Reader o Acrobat. Además, antes de que otra operación de AEM Forms Documento Services utilice el documento, debe desbloquearse un documento PDF con contraseña cifrada.
+Al cifrar un documento PDF con una contraseña, el usuario debe especificar la contraseña para abrir el documento PDF en Adobe Reader o Acrobat. Además, antes de que otra operación de AEM Forms Documento Services utilice el documento, se debe desbloquear un documento PDF con contraseña cifrada.
 
 **Codificación de documentos PDF con certificados**
 
@@ -1362,13 +1362,13 @@ Además, las listas de revocación de certificados (CRL) proporcionan informaci�
 
 >[!NOTE]
 >
->Para poder cifrar un documento PDF con un certificado, debe asegurarse de agregar el certificado al almacén de confianza de AEM.
+>Para poder cifrar un documento PDF con un certificado, debe asegurarse de agregar el certificado a AEM almacén de confianza.
 
 **Aplicación de derechos de uso a documentos PDF**
 
-Puede aplicar derechos de uso a documentos PDF mediante la API del cliente Java de Reader Extensions y el servicio Web. Los derechos de uso se refieren a funciones que están disponibles de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardarlo. Los documentos PDF que tienen derechos de uso aplicados se denominan documentos habilitados para derechos. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar operaciones habilitadas para ese documento específico.
+Puede aplicar derechos de uso a documentos PDF mediante la API del cliente Java de Extensiones de Reader y el servicio Web. Los derechos de uso se refieren a la funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardar el formulario. Los documentos PDF que tienen derechos de uso aplicados se denominan documentos habilitados para derechos. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar operaciones habilitadas para ese documento específico.
 
-Antes de poder ampliar un documento PDF con un certificado, debe asegurarse de agregar el certificado a AEM Keystore.
+Antes de que el Reader pueda extender un documento PDF con un certificado, debe asegurarse de agregar el certificado a AEM almacén de claves.
 
 **Firma digital de documentos PDF**
 
@@ -1382,7 +1382,7 @@ La clave pública se almacena en el certificado del usuario que debe estar dispo
 
 >[!NOTE]
 >
->Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar las credenciales en AEM Keystore. La credencial es la clave privada que se utiliza para firmar.
+>Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar las credenciales en AEM almacén de claves. La credencial es la clave privada que se utiliza para firmar.
 
 >[!NOTE]
 >
@@ -1402,7 +1402,7 @@ El autor o creador del documento puede especificar que el documento se puede mod
 
 Por ejemplo, el documento puede permitir rellenar formularios o comentarios. Si el autor especifica que no se permite una modificación determinada,
 
-Acrobat impide que los usuarios modifiquen el documento de esa manera. Si se realizan dichas modificaciones, como por ejemplo mediante otra aplicación, la firma certificada no es válida y Acrobat emite una advertencia cuando un usuario abre el documento. (Con las firmas no certificadas, no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
+Acrobat impide que los usuarios modifiquen el documento de esa manera. Si se realizan dichas modificaciones, como por ejemplo utilizando otra aplicación, la firma certificada no es válida y Acrobat emite una advertencia cuando un usuario abre el documento. (Con las firmas no certificadas, no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
 
 En el momento de la firma, el documento se analiza para detectar tipos específicos de contenido que podrían hacer que el contenido de un documento sea ambiguo o engañoso.
 
@@ -1410,7 +1410,7 @@ Por ejemplo, una anotación podría oscurecer algún texto de una página que se
 
 >[!NOTE]
 >
->Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar las credenciales en AEM Keystore. La credencial es la clave privada que se utiliza para firmar.
+>Para poder firmar digitalmente un documento PDF, debe asegurarse de agregar las credenciales en AEM almacén de claves. La credencial es la clave privada que se utiliza para firmar.
 
 
 **Sintaxis**:
@@ -1445,7 +1445,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Incluye las opciones necesarias para Reader Extender un documento PDF</td> 
+   <td>Incluye las opciones necesarias para que el Reader extienda un documento PDF</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1454,7 +1454,7 @@ secureDocument(Document inDoc,
  </tbody> 
 </table>
 
-**Muestra 1**: Este ejemplo se utiliza para codificar contraseñas, certificando un campo de firma y Reader ampliando el documento PDF.
+**Muestra 1**: Este ejemplo se utiliza para codificar contraseñas, certificando un campo de firma y un Reader Ampliando el documento PDF.
 
 ```
 /*************************************************************************
@@ -1756,7 +1756,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Muestra 2**: Este ejemplo se utiliza para realizar la codificación PKI, firmar un campo de firma y Reader para ampliar el documento PDF.
+**Muestra 2**: Este ejemplo se utiliza para realizar la codificación PKI, firmar un campo de firma y Reader Ampliar el documento PDF.
 
 ```java
 /*************************************************************************
@@ -2735,7 +2735,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verificación de varias firmas digitales {#verifying-multiple-digital-signatures}
 
-AEM le permite comprobar las firmas digitales en documentos PDF. Un documento PDF puede contener varias firmas digitales si está sujeto a un proceso comercial que requiere firmas de varios firmantes. Por ejemplo, una transacción financiera requiere la firma del responsable del préstamo y del administrador. Puede utilizar la API de servicio de firma para comprobar todas las firmas del documento PDF. Al verificar varias firmas digitales, puede comprobar el estado y las propiedades de cada firma. Antes de confiar en una firma digital, Adobe recomienda verificarla.
+AEM permite comprobar las firmas digitales en documentos PDF. Un documento PDF puede contener varias firmas digitales si está sujeto a un proceso comercial que requiere firmas de varios firmantes. Por ejemplo, una transacción financiera requiere la firma del responsable del préstamo y del administrador. Puede utilizar la API de servicio de firma para comprobar todas las firmas del documento PDF. Al verificar varias firmas digitales, puede comprobar el estado y las propiedades de cada firma. Antes de confiar en una firma digital, Adobe recomienda verificarla.
 
 **Sintaxis**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -4900,7 +4900,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-El servicio Distiller convierte archivos PostScript, PostScript encapsulado (EPS) y archivos de texto de impresora (PRN) en archivos PDF. El servicio Distiller se utiliza con frecuencia para convertir grandes volúmenes de documentos impresos en documentos electrónicos, como facturas y estados de cuentas. La conversión de documentos a PDF también permite a las empresas enviar a sus clientes una versión en papel y una versión electrónica de un documento. Los formatos de archivo admitidos son .ps, .eps y .prn. El servicio admite la siguiente API:
+El servicio de Distiller convierte archivos PostScript, PostScript encapsulado (EPS) y archivos de texto de impresora (PRN) en archivos PDF. El servicio Distiller se utiliza con frecuencia para convertir grandes volúmenes de documentos impresos en documentos electrónicos, como facturas y estados de cuentas. La conversión de documentos a PDF también permite a las empresas enviar a sus clientes una versión en papel y una versión electrónica de un documento. Los formatos de archivo admitidos son .ps, .eps y .prn. El servicio admite la siguiente API:
 
 El servicio createPDF devuelve un archivo java.util.Map con resultados. Las claves del mapa son:
 

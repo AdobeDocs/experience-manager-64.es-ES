@@ -1,14 +1,17 @@
 ---
 title: Recorrido por el sitio de referencia de autoservicio de los empleados
 seo-title: Autoservicio del empleado
-description: El sitio de referencia de AEM Forms muestra cómo las organizaciones pueden aprovechar las funciones de AEM Forms para implementar flujos de trabajo de autoservicio y contratación de empleados.
-seo-description: El sitio de referencia de AEM Forms muestra cómo las organizaciones pueden aprovechar las funciones de AEM Forms para implementar flujos de trabajo de autoservicio y contratación de empleados.
+description: El sitio de referencia de AEM Forms muestra cómo las organizaciones pueden aprovechar las funciones de AEM Forms para implementar los flujos de trabajo de contratación y autoservicio de los empleados.
+seo-description: El sitio de referencia de AEM Forms muestra cómo las organizaciones pueden aprovechar las funciones de AEM Forms para implementar los flujos de trabajo de contratación y autoservicio de los empleados.
 uuid: ecc98e0d-c964-44dc-b219-9ebe92632d22
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1644'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ## Requisitos previos {#prerequisite}
 
-Configure los sitios de referencia tal como se describe en [Configuración y configuración de los sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
+Configure los sitios de referencia tal como se describe en [Configurar y configurar sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
 
 ## Información general {#overview}
 
-Los sistemas de autoservicio de los empleados, generalmente alojados en la Intranet de la empresa, proporcionan a los empleados acceso a una gran cantidad de información y servicios que pueden utilizar en sus escritorios. Permite a los empleados y les da control total para realizar acciones como acceder a sus datos laborales, solicitar licencias y enviar informes de gastos. Por otra parte, ayuda a las organizaciones a mejorar la eficiencia de los procesos y a reducir los costos manteniendo a los empleados informados y comprometidos.
+Los sistemas de autoservicio de los empleados, generalmente alojados en la Intranet de la compañía, proporcionan a los empleados acceso a una gran cantidad de información y servicios que pueden utilizar en sus escritorios. Permite a los empleados y les da control total para realizar acciones como acceder a sus datos laborales, solicitar licencias y enviar informes de gastos. Por otra parte, ayuda a las organizaciones a mejorar la eficiencia de los procesos y a reducir los costos manteniendo a los empleados informados y comprometidos.
 
-El sitio de referencia de autoservicio de empleados muestra cómo puede aprovechar los formularios AEM para implementar el sistema de autoservicios de los empleados en su organización.
+El sitio de referencia de autoservicio de los empleados muestra cómo puede aprovechar AEM Forms para implementar el sistema de autoservicios de los empleados en su organización.
 
 >[!NOTE]
 >
@@ -31,17 +34,17 @@ El sitio de referencia de autoservicio de empleados muestra cómo puede aprovech
 
 ## Tutorial del cuestionario sobre conflictos de interés {#conflict-of-interest-questionnaire-walkthrough}
 
-De vez en cuando, las organizaciones piden a sus empleados que presenten un cuestionario sobre conflictos de intereses para identificar actividades externas o relaciones personales de sus empleados que puedan entrar en conflicto con su organización.
+De vez en cuando, las organizaciones piden a sus empleados que presenten un cuestionario sobre Conflicto de intereses para identificar actividades externas o relaciones personales de sus empleados que puedan entrar en conflicto con su organización.
 
 El departamento de Cumplimiento de la organización de Sarah ha pedido a los empleados que presenten el cuestionario de Conflicto de Intereses.
 
 ### Sarah presenta el cuestionario sobre conflicto de intereses {#sarah-submits-the-conflict-of-interest-questionnaire}
 
-Sarah va al portal de su organización, inicia sesión y hace clic en Empleado para acceder al tablero del empleado. Encuentra el cuestionario Conflicto de intereses en el tablero del empleado y hace clic en **[!UICONTROL Aplicar]**.
+Sarah va al portal de su organización, inicia sesión y hace clic en Empleado para acceder al panel del empleado. Encuentra un cuestionario de Conflicto de Intereses en el panel del empleado y hace clic en **[!UICONTROL Aplicar]**.
 
-![](assets/we-finance-home.png) we-Finance-home **** Figura: Portal *de organización*
+![we-Finance-home](assets/we-finance-home.png)**Figura:** *Portal de organización*
 
-![](assets/employee-dashboard.png) empleado-tablero **** Figura: Tablero de *empleados*
+![empleado-panel](assets/employee-dashboard.png)**Figura:** *panel de empleados*
 
 Sarah navega por el formulario con el botón Siguiente y lee las secciones Introducción y Definición. Ella responde a las preguntas en la sección Preguntas. Por último, firma y presenta el cuestionario.
 
@@ -51,43 +54,43 @@ El portal y el cuestionario de la organización responden a las necesidades de l
 
 **Cómo funciona**
 
-El portal de organización y el tablero de empleados son páginas de AEM Sites. El tablero enumera varias opciones de autoservicio, como el cuestionario Conflicto de intereses. El botón Aplicar está vinculado a un formulario adaptable.
+El portal de la organización y el panel de empleados son páginas de AEM Sites. El panel lista varias opciones de autoservicio, como el cuestionario sobre conflictos de intereses. El botón Aplicar está vinculado a un formulario adaptable.
 
 El formulario adaptable utiliza reglas para mostrar y ocultar información en función de la respuesta proporcionada en la ficha Preguntas. Asimismo, el formulario utiliza el componente Garabatos para firmar en la ficha Declaración. Revise el formulario adaptable en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** al cuestionario Conflicto de intereses. Revisar y enviar el cuestionario.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al panel y, a continuación, haga clic en **[!UICONTROL Aplicar]** al cuestionario de conflicto de intereses. Revisar y enviar el cuestionario.
 
 ### Gloria revisa y aprueba la presentación del cuestionario sobre el conflicto de intereses {#gloria-reviews-and-approves-the-conflict-of-interest-questionnaire-submission}
 
-El cuestionario sobre el conflicto de intereses presentado por Sarah se asigna a Gloria Rios para su revisión. Gloria trabaja como Oficial de Cumplimiento en la organización. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas que se le han asignado. Aprueba el cuestionario enviado por Sarah y completa la tarea.
+El cuestionario sobre el conflicto de intereses presentado por Sarah se asigna a Gloria Rios para su revisión. Gloria trabaja como Oficial de Cumplimiento en la organización. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas asignadas a ella. Aprueba el cuestionario enviado por Sarah y completa la tarea.
 
-![](assets/conflict-inbox.png) conflicto-bandeja de entrada **** Figura: La bandeja de entrada de *Gloria*
+![conflicto-bandeja de entrada](assets/conflict-inbox.png)**Figura:** *La bandeja de entrada de Gloria*
 
-![](assets/conflict-approved.png) aprobado **por** conflictos Figura: *Abrir tarea*
+![aprobado](assets/conflict-approved.png)por **conflictos Figura:** *Abrir tarea*
 
 **Cómo funciona**
 
-La acción de envío del cuestionario Conflicto de intereses desencadena un flujo de trabajo que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revisar el flujo de trabajo de formularios en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+La acción de envío del cuestionario Conflicto de intereses desencadena un flujo de trabajo que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Consulte al Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
 ![empleado-autoservicio-sitio de referencia](assets/employee-self-service-reference-site.png)
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para el cuestionario Conflicto de intereses y apóyala.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para el cuestionario Conflicto de intereses y agréguelo.
 
 ## Recorrido de la aplicación de tarjeta corporativa {#corporate-card-application-walkthrough}
 
-Sarah viaja mucho por negocios y requiere una tarjeta de crédito corporativa para pagar sus facturas en movimiento. Ella solicita una tarjeta corporativa a través del portal de empleados de su organización.
+Sarah viaja mucho por negocios y necesita una tarjeta de crédito corporativa para pagar sus facturas en movimiento. Ella solicita una tarjeta corporativa a través del portal de empleados de su organización.
 
 ### Sarah presenta la solicitud de tarjeta corporativa {#sarah-submits-the-corporate-card-application}
 
-Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al tablero del empleado. Encuentra la aplicación de tarjeta corporativa en el tablero de trabajo del empleado y hace clic en **[!UICONTROL Aplicar]**.
+Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al panel del empleado. Encuentra la aplicación de tarjeta corporativa en el panel del empleado y hace clic en **[!UICONTROL Aplicar]**.
 
-![](assets/we-finance-home-1.png) we-Finance-home-1 **** Figura: Portal *de organización*
+![we-Finance-home-1](assets/we-finance-home-1.png)**Figura:** *Portal de organización*
 
-![](assets/employee-dashboard-1.png) dashboard-empleado-1 **** Figura: Tablero de *empleados*
+![empleado-panel-1](assets/employee-dashboard-1.png)**Figura:** *panel de empleados*
 
 Ella hace clic en **[!UICONTROL Aplicar]** en la aplicación de tarjeta corporativa. Se abre una aplicación de una sola página. Ella rellena todos los detalles y hace clic en **[!UICONTROL Aplicar]** para enviar la solicitud.
 
@@ -95,32 +98,32 @@ Ella hace clic en **[!UICONTROL Aplicar]** en la aplicación de tarjeta corporat
 
 **Cómo funciona**
 
-El portal de organización y el tablero de empleados son páginas de AEM Sites. El tablero enumera varias opciones de autoservicio, como la aplicación de tarjeta corporativa. El botón Aplicar de la aplicación está vinculado a un formulario adaptable.
+El portal de la organización y el panel de empleados son páginas de AEM Sites. El panel lista varias opciones de autoservicio, como la aplicación de tarjeta corporativa. El botón Aplicar de la aplicación está vinculado a un formulario adaptable.
 
 El formulario adaptable para la aplicación de tarjetas corporativas es un formulario adaptable sencillo, de una página y adaptable. Utiliza componentes de formulario adaptables básicos como texto, teléfono, cuadro numérico y paso numérico. Revise el formulario adaptable en:\
 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación de tarjeta corporativa. Complete los detalles y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al panel y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación de tarjeta corporativa. Complete los detalles y envíe la solicitud.
 
 ### Gloria revisa y aprueba la aplicación de tarjetas corporativas {#gloria-reviews-and-approves-the-corporate-card-application}
 
-La solicitud de tarjeta corporativa presentada por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas que se le han asignado. Aprueba la solicitud presentada por Sarah y completa la tarea.
+La solicitud de tarjeta corporativa presentada por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas asignadas a ella. Aprueba la solicitud presentada por Sarah y completa la tarea.
 
-![](assets/corporate-card-inbox.png) corporate-card-inbox **** Figura: La bandeja de entrada de *Gloria*
+![corporate-card-inbox](assets/corporate-card-inbox.png)**Figura:** *La bandeja de entrada de Gloria*
 
-![](assets/corporate-card-approved.png) tarjeta corporativa aprobada **** Figura: *Abrir tarea*
+![tarjeta corporativa aprobada](assets/corporate-card-approved.png)**Figura:** *Abrir tarea*
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación de tarjeta corporativa activa un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revisar el flujo de trabajo de formularios en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+El flujo de trabajo de envío de la aplicación de tarjeta corporativa activa un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Consulte al Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
 ![corporate-card-workflow-model](assets/corporate-card-workflow-model.png)
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para la aplicación de tarjeta corporativa y apóyala.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para la aplicación de tarjeta corporativa y agréguela.
 
 ## Recorrido de envío de informe de gastos {#expense-report-submission-walkthrough}
 
@@ -128,11 +131,11 @@ Mientras Sarah invierte en viajes de negocios, necesita presentar informes de ga
 
 ### Sarah envía la aplicación Informe de gastos {#sarah-submits-the-expense-report-application}
 
-Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al tablero del empleado. Encuentra la aplicación Informe de gastos en el tablero de mandos del empleado y hace clic en **[!UICONTROL Aplicar]**.
+Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al panel del empleado. Encuentra la aplicación Informe de gastos en el panel del empleado y hace clic en **[!UICONTROL Aplicar]**.
 
-![](assets/we-finance-home-2.png) we-Finance-home-2 **** Figura: Portal *de organización*
+![we-Finance-home-2](assets/we-finance-home-2.png)**Figura:** *Portal de organización*
 
-![](assets/employee-dashboard-2.png) dashboard-empleado-2 **** Figura: Tablero de *empleados*
+![panel-empleado-2](assets/employee-dashboard-2.png)**Figura:** *panel de empleados*
 
 Ella hace clic en **[!UICONTROL Aplicar]** en la aplicación Informe de gastos. Se abre un formulario de aplicación que tiene dos fichas: Nombre del informe y Detalles del informe. El icono **+** de la ficha Detalles del informe le permite agregar más que gastos en un informe.
 
@@ -142,25 +145,25 @@ El portal y las aplicaciones de la organización son adaptables y fáciles de us
 
 **Cómo funciona**
 
-El portal de organización y el tablero de empleados son páginas de AEM Sites. El tablero enumera varias opciones de autoservicio, como la aplicación Informe de gastos. El botón Aplicar está vinculado a un formulario adaptable.
+El portal de la organización y el panel de empleados son páginas de AEM Sites. El panel lista varias opciones de autoservicio, como la aplicación Informe de gastos. El botón Aplicar está vinculado a un formulario adaptable.
 
 Las fichas Nombre del informe y Detalles del informe del formulario adaptable son componentes del panel. El panel Detalles del informe contiene el panel Gastos. Es un panel repetible que permite agregar varios gastos en el informe. Revise el formulario adaptable y sus configuraciones en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación Informe de gastos. Rellene los detalles y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al panel y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación Informe de gastos. Rellene los detalles y envíe la solicitud.
 
 ### Gloria revisa y aprueba el informe de gastos {#gloria-reviews-and-approves-the-expense-report}
 
-El informe de gastos presentado por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas que se le han asignado. Aprueba la solicitud presentada por Sarah y completa la tarea.
+El informe de gastos presentado por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas asignadas a ella. Aprueba la solicitud presentada por Sarah y completa la tarea.
 
-![](assets/expense-report-inbox.png) cost-report-inbox **** Figura: La bandeja de entrada de *Gloria*
+![cost-report-inbox](assets/expense-report-inbox.png)**Figura:** *La bandeja de entrada de Gloria*
 
-![](assets/expense-report-approved.png) informe de gastos aprobado **** Figura: *Abrir tarea*
+![informe de gastos aprobado](assets/expense-report-approved.png)**Figura:** *Abrir tarea*
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación Informe de gastos desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revisar el flujo de trabajo de formularios en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+El flujo de trabajo de envío de la aplicación Informe de gastos desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Consulte al Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
 ![corporate-card-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
@@ -174,11 +177,11 @@ Sarah está planeando unas vacaciones familiares el mes que viene y quiere solic
 
 ### Sarah presenta la solicitud de licencia {#sarah-submits-the-leave-application}
 
-Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al tablero del empleado. Encontrará dejar la aplicación en el tablero del empleado y hace clic en **[!UICONTROL Aplicar]**.
+Sarah va al portal de su organización, inicia sesión y hace clic en **[!UICONTROL Empleado]** para acceder al panel del empleado. Ella encuentra la solicitud de permiso en el panel del empleado y hace clic en **[!UICONTROL Aplicar]**.
 
-![](assets/we-finance-home-3.png) we-Finance-home-3 **** Figura: Portal *de organización*
+![we-Finance-home-3](assets/we-finance-home-3.png)**Figura:** *Portal de organización*
 
-![](assets/employee-dashboard-3.png) dashboard-empleado-3 **** Figura: Tablero de *empleados*
+![panel-empleado-3](assets/employee-dashboard-3.png)**Figura:** *panel de empleados*
 
 La solicitud de licencia se abre con el nombre de Sarah y la identificación del empleado cumplimentados previamente en el formulario. También muestra su historial y balance de vacaciones. Ella rellena los detalles de la licencia y presenta la solicitud de aprobación.
 
@@ -188,9 +191,9 @@ El portal y las aplicaciones de la organización son adaptables y fáciles de us
 
 **Cómo funciona**
 
-El portal de organización y el tablero de empleados son páginas de AEM Sites. El tablero enumera varias opciones de autoservicio, como la aplicación de dejar. El botón Aplicar está vinculado a un formulario adaptable.
+El portal de la organización y el panel de empleados son páginas de AEM Sites. El panel lista varias opciones de autoservicio, como la aplicación de licencia. El botón Aplicar está vinculado a un formulario adaptable.
 
-El formulario adaptable para la aplicación de salida se basa en el modelo de datos Hojas de empleados. En la sección Saldo de salida, la tabla de saldo de salida se rellena con el servicio Modelo de datos de `getLeavesOf` formulario. Los campos Fechas de inicio y finalización utilizan reglas para validar que los valores de fecha sean iguales o posteriores a la fecha actual. La duración de la licencia se calcula mediante la `calcBusinessDays` función .
+El formulario adaptable para la aplicación de salida se basa en el modelo de datos Hojas de empleados. En la sección Saldo de salida, la tabla de saldo de salida se rellena con el servicio Modelo de datos de `getLeavesOf` formulario. Los campos de fechas Inicio y Fin utilizan reglas para validar que los valores de fecha sean iguales o posteriores a la fecha actual. La duración de la licencia se calcula mediante la `calcBusinessDays` función .
 
 Puede revisar el formulario adaptable y el modelo de datos de formulario en las siguientes ubicaciones:
 
@@ -200,22 +203,22 @@ Puede revisar el formulario adaptable y el modelo de datos de formulario en las 
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** al salir de la aplicación. Rellene los detalles y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión usando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al panel y, a continuación, haga clic en **[!UICONTROL Aplicar]** al salir de la aplicación. Rellene los detalles y envíe la solicitud.
 
 ### Gloria revisa y aprueba la solicitud de licencia {#gloria-reviews-and-approves-the-leave-application}
 
-La solicitud de licencia presentada por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas que se le han asignado. Aprueba la solicitud presentada por Sarah y completa la tarea.
+La solicitud de licencia presentada por Sarah se asigna a Gloria Rios para su revisión. Gloria inicia sesión en su Bandeja de entrada AEM y revisa las tareas asignadas a ella. Aprueba la solicitud presentada por Sarah y completa la tarea.
 
-![](assets/leave-inbox.png) deja-inbox **** Figura: La bandeja de entrada de *Gloria*
+![deja-inbox](assets/leave-inbox.png)**Figura:** *La bandeja de entrada de Gloria*
 
-![](assets/leave-approved.png) aprobado por **licencia** Figura: *Abrir tarea*
+![aprobado por](assets/leave-approved.png)licencia **Figura:** *Abrir tarea*
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación de salida desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revisar el flujo de trabajo de formularios en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+El flujo de trabajo de envío de la aplicación de salida desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Consulte al Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![corporate-card-left-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 
 **Véalo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para dejar la aplicación y apóyala.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión usando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para dejar la aplicación y aprobarla.

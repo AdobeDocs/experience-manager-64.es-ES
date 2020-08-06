@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -80,4 +83,4 @@ Los formularios HTML5 admiten tres métodos para pasar los parámetros de proces
 
 ### Parámetros de envío {#submit-parameters}
 
-los formularios HTML5 envían datos; ejecutar scripts de servidor y servicios web en servidores AEM. Para obtener información detallada sobre los parámetros utilizados para ejecutar secuencias de comandos de servidor y servicios Web en servidores AEM, consulte Proxy [de servicio de formularios](/help/forms/using/service-proxy.md)HTML5.
+los formularios HTML5 envían datos; ejecutar secuencias de comandos y servicios Web del lado del servidor en servidores AEM. Para obtener información detallada sobre los parámetros utilizados para ejecutar secuencias de comandos de servidor y servicios Web en servidores AEM, consulte Proxy [de servicio de formularios](/help/forms/using/service-proxy.md)HTML5.

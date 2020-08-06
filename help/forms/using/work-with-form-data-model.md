@@ -44,7 +44,7 @@ Puede agregar objetos y servicios del modelo de datos a partir de orígenes de d
 
 Para agregar objetos y servicios del modelo de datos:
 
-1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desee agregar objetos de modelo de datos.
+1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Forms > Integraciones]** de datos y abra el modelo de datos de formulario en el que desee agregar objetos de modelo de datos.
 1. En el panel Fuentes de datos, expanda las fuentes de datos para vista de los objetos y servicios del modelo de datos disponibles.
 1. Seleccione los objetos y servicios del modelo de datos que desee agregar al modelo de datos de formulario y toque **[!UICONTROL Añadir seleccionados]**.
 
@@ -80,7 +80,7 @@ Aunque puede agregar objetos de modelo de datos desde orígenes de datos configu
 
 Para crear un objeto de modelo de datos sin orígenes de datos:
 
-1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Formularios > Integraciones]** de datos y abra el modelo de datos de formulario en el que desea crear una entidad u objeto de modelo de datos.
+1. Inicie sesión en la instancia de creación de AEM, vaya a **[!UICONTROL Forms > Integraciones]** de datos y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Puntee **[!UICONTROL Crear entidad]**.
 1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y toque **[!UICONTROL Añadir]**. Se agrega un objeto de modelo de datos al modelo de datos de formulario. Tenga en cuenta que el objeto del modelo de datos recientemente agregado no está enlazado a un origen de datos y no tiene ninguna propiedad, como se muestra en la siguiente imagen.
 
@@ -160,7 +160,7 @@ Para leer y escribir datos para un objeto de modelo de datos, haga lo siguiente 
 
    ![edit-argumento](assets/edit-argument.png)
 
-   Enlace del argumento id al atributo empid del Perfil de usuario de AEM
+   Enlace del argumento id al atributo empid de AEM Perfil de usuario
 
 1. Toque **[!UICONTROL Listo]** para guardar el argumento, **[!UICONTROL Listo]** para guardar las propiedades y, a continuación, **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 
@@ -201,7 +201,7 @@ Para agregar una asociación:
 
    ![add-collection-example](assets/add-association-example.png)
 
-   El argumento predeterminado para el servicio de lectura Dependientes es dependiente
+   El argumento predeterminado para el servicio de lectura de dependientes depende
 
    Sin embargo, el argumento debe ser una propiedad común entre el objeto del modelo de datos asociado, que en este ejemplo es `Employeeid`. Por lo tanto, el `Employeeid` argumento debe enlazarse a la `id` propiedad del objeto del modelo de datos Empleado para recuperar los detalles de dependientes asociados del objeto del modelo de datos Dependientes.
 

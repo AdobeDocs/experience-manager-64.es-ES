@@ -31,15 +31,15 @@ Puede utilizar la interfaz de usuario de la carpeta controlada para:
 
 Antes de configurar una carpeta vigilada, asegúrese de lo siguiente:
 
-* Las carpetas vigiladas son una función avanzada de los formularios AEM. Requiere que funcione el paquete de complementos de formularios AEM. Asegúrese de que está instalado y configurado el paquete de complementos AEM Forms adecuado.
-* Puede crear la carpeta vigilada en un almacenamiento compartido o local. Asegúrese de que el usuario de formularios AEM configurado para ejecutar la carpeta controlada tiene permisos de lectura y escritura en la carpeta vigilada.
+* Las carpetas vigiladas son una característica avanzada de AEM formularios. Requiere que funcione AEM paquete de complementos de formularios. Asegúrese de que el paquete adicional de AEM Forms adecuado está instalado y configurado.
+* Puede crear la carpeta vigilada en un almacenamiento compartido o local. Asegúrese de que AEM usuario de formularios configurado para ejecutar la carpeta vigilada tiene permisos de lectura y escritura en la carpeta vigilada.
 * Puede utilizar un servicio, un flujo de trabajo o una secuencia de comandos para automatizar una operación con una carpeta vigilada. Asegúrese de que el servicio, el flujo de trabajo o una secuencia de comandos correspondientes están creados y listos para ejecutarse. Para obtener información sobre la creación de un servicio, un flujo de trabajo y una secuencia de comandos, consulte [Diversos métodos de procesamiento de archivos](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Una carpeta vigilada tiene varias propiedades, consulte Propiedades de la carpeta [vigilada](/help/forms/using/watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Realice los siguientes pasos para crear una carpeta vigilada:
 
 1. Toque el icono de **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
-1. Puntee **Herramientas** > **Formularios** > **Configurar carpeta vigilada.** Se muestra una lista de las carpetas ya configuradas controladas.
+1. Toque **Herramientas** > **Forms** > **Configurar carpeta vigilada.** Se muestra una lista de las carpetas ya configuradas controladas.
 1. Toque **Nuevo**. Se muestra una lista de los campos necesarios para crear la carpeta controlada:
 
    * **Nombre**: Identifica la carpeta vigilada. Utilice sólo caracteres alfanuméricos para el nombre.
@@ -50,6 +50,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
       * Para Flujo de trabajo, especifique el modelo de flujo de trabajo que se va a ejecutar. Por ejemplo, /etc/workflow/models/&lt;nombre_de_workflow>/jcr:content/model
       * Para Script, especifique la ruta de JCR de la secuencia de comandos que se va a ejecutar. Por ejemplo, /etc/watchfolder/test/testScript.ecma
       * En Servicio, especifique el filtro utilizado para localizar un servicio OSGi. El servicio está registrado como una implementación de la interfaz com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad personalizada (foo=bar).
+
    >[!NOTE]
    >
    >Si ha seleccionado **Servicio** para el campo **Procesar archivos usando** , el valor del campo Nombre del servicio (inputProcessorType) debe estar entre paréntesis. Por ejemplo, (foo=bar).
@@ -105,7 +106,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
       Si el intervalo de exploración es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se sueltan con frecuencia en la carpeta vigilada, debe reducir el intervalo de exploración. Si los archivos se retiran con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
-   * **Acelerador activado:** Cuando esta opción está activada, limita el número de trabajos de carpetas vigilados que procesa AEM Forms en un momento dado. El valor Tamaño de lote determina el número máximo de trabajos. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
+   * **Acelerador activado:** Cuando esta opción está activada, limita el número de trabajos de carpeta observados que se procesan AEM formularios en un momento dado. El valor Tamaño de lote determina el número máximo de trabajos. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Sobrescribir archivos existentes con un nombre** similar: Cuando se establece en True, se sobrescriben los archivos de la carpeta de resultados y la carpeta de preservación. Cuando se establece en False, se utilizan para el nombre archivos y carpetas con un sufijo de índice numérico. El valor predeterminado es False.
    * **Conservar archivos si se produce un error:** Cuando se establece en True, los archivos de entrada se conservan en caso de error. El valor predeterminado es true.
    * **Incluir archivos con patrón:** Especifique una lista delimitada por punto y coma (;) de los patrones que utiliza la carpeta vigilada para determinar qué carpetas y archivos se deben analizar y recoger. Por ejemplo, si el Patrón de archivos de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; son recogidos. Para obtener más información, consulte la Ayuda [de administración](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
@@ -119,7 +120,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 Además de cambiar el nombre de la carpeta vigilada, puede modificar todas las propiedades de una carpeta observada existente. Realice los siguientes pasos para modificar las propiedades de una carpeta vigilada existente:
 
 1. Toque el icono de **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
-1. Puntee **Herramientas** > **Formularios** > **Configurar carpeta vigilada.** Se muestra una lista de las carpetas ya configuradas controladas.
+1. Toque **Herramientas** > **Forms** > **Configurar carpeta vigilada.** Se muestra una lista de las carpetas ya configuradas controladas.
 1. En la parte izquierda de la pantalla Carpeta vigilada, seleccione la carpeta de inspección y toque **Editar.** Se muestra una lista de los campos necesarios para crear la carpeta vigilada. Los campos enumerados en la ficha **Básico** son obligatorios. La ficha avanzada contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Puede modificar estas propiedades según sus necesidades.
 1. Después de modificar las propiedades, toque **Actualizar**. Las propiedades modificadas se guardan.
 

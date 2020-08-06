@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Los componentes principales son componentes modernos y flexibles, que ofrecen un
 
 ## Intentándolo {#trying-it-out}
 
-1. Inicie AEM con el contenido de muestra de We.Retail y abra la consola [](/help/sites-authoring/default-components-console.md)Componentes.
+1. Inicio AEM con el contenido de muestra de We.Retail y abra la consola [](/help/sites-authoring/default-components-console.md)Componentes.
 
    **Navegación global -> Herramientas -> Componentes**
 
@@ -29,6 +32,7 @@ Los componentes principales son componentes modernos y flexibles, que ofrecen un
 
    * `.core-wcm`:: Los componentes principales estándar
    * `.core-wcm-form`:: Componentes principales de envío de formulario
+
    Choose `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
@@ -72,7 +76,7 @@ Los componentes principales son componentes modernos y flexibles, que ofrecen un
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
 1. En el menú Información **de** página, seleccione **Editar plantilla**.
-1. En el Editor de plantillas de la página, haga clic en el icono **Política** del componente Texto en el Contenedor **de** diseño de la página.
+1. En el Editor de plantillas de la página, haga clic en el icono **Política** del componente Texto en el Contenedor **** Diseño de la página.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -84,6 +88,6 @@ Los componentes principales son componentes modernos y flexibles, que ofrecen un
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los componentes principales, consulte el documento de creación Componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales para obtener una visión general de las capacidades de los componentes principales y el documento para desarrolladores [Desarrollar componentes](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principales para obtener una descripción general técnica.
+Para obtener más información sobre los componentes principales, consulte los componentes [principales de documento de creación para obtener una descripción general de las funciones de los componentes principales y el documento de desarrollo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) Desarrollar componentes [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principales para obtener una descripción general técnica.
 
-También puede que desee investigar más a fondo las plantillas [](/help/sites-developing/we-retail-editable-templates.md)editables. Consulte el documento de creación [Creación de plantillas](/help/sites-authoring/templates.md) de página o el documento para desarrolladores [Plantillas de página - Editables](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre plantillas editables.
+También puede que desee investigar más a fondo las plantillas [](/help/sites-developing/we-retail-editable-templates.md)editables. Consulte el documento de creación [Creación de plantillas](/help/sites-authoring/templates.md) de página o [Plantillas de página de documento para desarrolladores - Editable](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre las plantillas editables.

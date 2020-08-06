@@ -13,11 +13,11 @@ ht-degree: 11%
 ---
 
 
-# Guía del usuario de la implementación de AEM 6.4 {#deploying}
+# Guía del usuario de implementación de AEM 6.4 {#deploying}
 
 + [Guía del usuario de implementación](home.md)
-+ Introducción a AEM Platform {#introduction}
-   + [Introducción a AEM Platform](platform.md)
++ Introducción a la Plataforma AEM {#introduction}
+   + [Introducción a la Plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de Almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
@@ -50,7 +50,7 @@ ht-degree: 11%
    + [Resolución de problemas de replicación](troubleshoot-rep.md)
    + [Caducidad de objetos estáticos](expiration-static-objects.md)
    + [Depuración de versiones](version-purging.md)
-   + [Supervisión y mantenimiento de la instancia de AEM](monitoring-and-maintaining.md)
+   + [Monitoreo y mantenimiento de la instancia de AEM](monitoring-and-maintaining.md)
    + [Descarga de trabajos](offloading.md)
    + [Inicio de sesión único](single-sign-on.md)
    + [Asignación de recursos](resource-mapping.md)
@@ -73,7 +73,7 @@ ht-degree: 11%
    + [Uso de la herramienta de migración CRX2Oak](using-crx2oak.md)
    + [Tareas de mantenimiento previas a la actualización](pre-upgrade-maintenance-tasks.md)
    + [Comprobaciones posteriores a la actualización y resolución de problemas](post-upgrade-checks-and-troubleshooting.md)
-   + [Actualización de formularios de búsqueda personalizados](upgrading-custom-search-forms.md)
+   + [Actualización de Forms de búsqueda personalizada](upgrading-custom-search-forms.md)
    + [Upgrades sostenibles](sustainable-upgrades.md)
    + [Actualización del código y las personalizaciones](upgrading-code-and-customizations.md)
    + [Pasos de actualización para las instalaciones de Application Server](app-server-upgrade.md)
@@ -82,22 +82,22 @@ ht-degree: 11%
    + [Reestructuración del repositorio en AEM 6.4](repository-restructuring.md)
    + [Reestructuración común de repositorios en AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de sitios en AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de recursos en AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Reestructuración del repositorio de activos en AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de Dynamic Media en AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de formularios en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
+   + [Reestructuración del repositorio de Forms en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de comercio electrónico en AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio para AEM Communities en 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Información general sobre comercio electrónico](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Prácticas recomendadas  {#practices}
++ Prácticas recomendadas   {#practices}
    + [Implementación de optimizaciones](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)
    + [Prácticas recomendadas para Consultas e indexación](best-practices-for-queries-and-indexing.md)
-   + [Recomendaciones de interfaz de usuario para clientes](ui-recommendations.md)
+   + [Interfaz de usuario de Recommendations para clientes](ui-recommendations.md)
    + [Rendimiento y escalabilidad](performance.md)
 
 

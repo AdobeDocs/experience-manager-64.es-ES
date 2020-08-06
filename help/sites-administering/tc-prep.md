@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 
@@ -39,11 +42,11 @@ La copia de idioma para la que originalmente se creó el contenido del sitio es 
 
 Siga los pasos siguientes para preparar el sitio para la traducción:
 
-1. Cree la raíz del idioma del maestro de idioma. Por ejemplo, la raíz del idioma del sitio de demostración de Geometrixx en inglés es /content/geometrixx/en. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Creación de una raíz](/help/sites-administering/tc-prep.md#creating-a-language-root)de idioma.
+1. Cree la raíz del idioma del maestro de idioma. Por ejemplo, la raíz de idioma del sitio de demostración de Geometrixx en inglés es /content/geometrixx/en. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Creación de una raíz](/help/sites-administering/tc-prep.md#creating-a-language-root)de idioma.
 1. Cree el contenido del maestro de idioma.
 1. Cree la raíz de idioma de cada copia de idioma para el sitio. Por ejemplo, la copia en francés del sitio de muestra de Geometrixx es /content/geometrixx/fr.
 
-Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. (Consulte [Creación de un proyecto](/help/sites-administering/tc-manage.md)de traducción). Para obtener una descripción general del proceso de traducción de contenido en AEM, consulte [Traducción de contenido para sitios web](/help/sites-administering/translation.md)multilingües.
+Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. (Consulte [Creación de un proyecto](/help/sites-administering/tc-manage.md)de traducción). Para obtener una descripción general del proceso de traducción de contenido en AEM, consulte [Traducir contenido para sitios web](/help/sites-administering/translation.md)multilingües.
 
 ## Creación de una raíz de idioma {#creating-a-language-root}
 
@@ -55,14 +58,14 @@ Para crear la raíz de idioma, cree una página y utilice un código de idioma I
 
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`El código de país admitido es un código de dos letras en minúscula o en mayúscula, tal como se define en la norma ISO 3166, por ejemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global.  Por ejemplo, la página raíz de la copia en francés del sitio Geometrixx tiene `fr` la propiedad Name. Tenga en cuenta que la propiedad Name se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página. (http://localhost:4502/content/geometrixx/fr.html)
+Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global.  Por ejemplo, la página raíz de la copia en francés del sitio de Geometrixx tiene `fr` como propiedad Name. Tenga en cuenta que la propiedad Name se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página. (http://localhost:4502/content/geometrixx/fr.html)
 
 El siguiente procedimiento utiliza la IU táctil para crear una copia de idioma de un sitio web. Para obtener instrucciones sobre cómo utilizar la IU clásica, consulte [Creación de una raíz de idioma con la IU](/help/sites-administering/tc-lroot-classic.md)clásica.
 
 1. Vaya a Sitios.
 1. Toque o haga clic en el sitio para el que desea crear una copia de idioma.
 
-   Por ejemplo, para crear una copia de idioma del sitio de Geometrixx Outdoors, debe tocar o hacer clic en el sitio de Geometrixx Outdoors.
+   Por ejemplo: para crear una copia de idioma del sitio de Geometrixx Outdoors, debe tocar o hacer clic en el sitio de Geometrixx Outdoors.
 
 1. Toque o haga clic en Crear y, a continuación, toque o haga clic en Crear página.
 

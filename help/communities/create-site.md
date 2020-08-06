@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +52,7 @@ En el paso [Plantilla de](sites-console.md#step2013asitetemplate)sitio, escriba 
 
 * **[!UICONTROL Nombre]** del sitio de la comunidad: participar
 
-   * Verifique dos veces el nombre, ya que no es fácil cambiarlo después de crear el sitio
+   * Compruebe el Doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
    * La dirección URL inicial se mostrará debajo del nombre del sitio de la comunidad
    * Para una dirección URL válida, anexe un código de idioma base + &quot;.html&quot;
    * *Por ejemplo*, http://localhost:4502/content/sites/ `engage/en.html`
@@ -76,11 +79,11 @@ Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el 
 
 Seleccione **[!UICONTROL Siguiente]**.
 
-### Paso 3:Configuración {#step-settings}
+### Paso 3: Configuración {#step-settings}
 
 En el paso Configuración, antes de seleccionar `Next`, fíjese en que hay siete secciones que proporcionan acceso a configuraciones que incluyen administración de usuarios, etiquetado, moderación, administración de grupos, análisis, traducción y habilitación.
 
-Visite el tutorial [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md) para experimentar el trabajo con las funciones de habilitación.
+Visite el tutorial [Introducción a AEM Communities para habilitar](getting-started-enablement.md) para experimentar el trabajo con las funciones de habilitación.
 
 #### USER MANAGEMENT {#user-management}
 
@@ -100,9 +103,9 @@ Marcar todas las casillas de verificación para Administración [de usuarios](si
 
 #### TAGGING {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando los espacios de nombres de AEM definidos previamente mediante la Consola [de](../../help/sites-administering/tags.md#tagging-console) etiquetado (como el espacio de nombres [Tutorial](setup.md#create-tutorial-tags)).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres definidas previamente mediante la Consola [de](../../help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](setup.md#create-tutorial-tags)Tutorial).
 
-La búsqueda de espacios de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
+La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
 * Escriba &#39;tut&#39;
 * Seleccione `Tutorial`
@@ -134,7 +137,7 @@ Acepte la configuración global predeterminada para [moderar](sites-console.md#m
 
 #### ANALYTICS {#analytics}
 
-Si Adobe Analytics tiene licencia y se ha configurado un marco y un servicio en la nube de Analytics, es posible activar Analytics y seleccionar el marco.
+Si Adobe Analytics tiene licencia y se ha configurado un servicio en la nube y un marco de trabajo de Analytics, es posible activar Analytics y seleccionar el marco.
 
 Consulte Configuración [de Analytics para funciones](analytics.md)de comunidades.
 
@@ -157,7 +160,7 @@ La configuración [de](sites-console.md#translation) traducción especifica el i
 
 Deje vacío al crear una comunidad de participación.
 
-Para ver un tutorial similar con el fin de crear rápidamente una comunidad [de](overview.md#enablement-community)habilitación, consulte [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md).
+Para ver un tutorial similar con el fin de crear rápidamente una comunidad [de](overview.md#enablement-community)habilitación, consulte [Introducción a AEM Communities para la habilitación](getting-started-enablement.md).
 
 Seleccione **[!UICONTROL Siguiente]**.
 
@@ -213,6 +216,7 @@ De izquierda a derecha están:
 >1. Al lado de **[!UICONTROL Configuración]** , seleccione **[!UICONTROL Editar]**
 >1. En el cuadro de diálogo emergente Configuración del agente, seleccione la ficha Transporte
 >1. En URI, cambie el número de puerto, 4503, al número de puerto deseado
+
 >
 >
 Por ejemplo, para utilizar el puerto 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -240,14 +244,14 @@ Para este nuevo sitio de comunidad, dado el nombre del sitio &quot;participar&qu
 * Administradores de comunidad de participación
 * Administradores de grupos de participación de la comunidad
 * Miembros de participación de la comunidad
-*  Moderadores de participación de la comunidad
+* Moderadores de participación de la comunidad
 * Miembros privilegiados de participación de la comunidad
 * Community Engage Sitecontentmanager
 
 Observe que [Aaron McDonald](tutorials.md#demo-users) es miembro de
 
 * Administradores de comunidad de participación
-*  Moderadores de participación de la comunidad
+* Moderadores de participación de la comunidad
 * Miembros de participación de la comunidad (indirectamente como miembro del grupo Moderadores)
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
@@ -260,15 +264,15 @@ Observe que [Aaron McDonald](tutorials.md#demo-users) es miembro de
 
 Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
-Agregar un `Login Page Mapping` como
+Añadir un `Login Page Mapping` como
 
 * /content/sites/engagement/es/sign:/content/sites/engagement/es
 
 ## Pasos opcionales {#optional-steps}
 
-### Cambiar la página principal predeterminada {#change-the-default-home-page}
+### Cambiar la Página de inicio predeterminada {#change-the-default-home-page}
 
-Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página principal predeterminada al nuevo sitio.
+Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página de inicio predeterminada al nuevo sitio.
 
 Para ello, es necesario utilizar [CRXDE](http://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](../../help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
 
@@ -289,14 +293,14 @@ Para empezar:
 
 1. Con el nodo recién creado `localhost.4503` seleccionado
 
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:match
       * **Cadena de tipo**
       * **Valor** localhost.4503/\$
 
          (debe terminar con &#39;$&#39; char)
-   * Agregar propiedad
+   * Añadir propiedad
 
       * **Nombre** sling:internalRedirect
       * **Cadena de tipo**
@@ -317,17 +321,17 @@ Para empezar:
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
-Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador &#39;punto&#39; y no `localhost:4503` con un separador &#39;dos puntos&#39;, ya que no `localhost`es un prefijo de espacio de nombres válido.
+Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;puntos&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que no `localhost`es un prefijo de Área de nombres válido.
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión regular es crucial, por lo que solo `http://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `http://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ### Modificar el sitio {#modify-the-site}
 
-Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación de AEM estándar.
+Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación AEM estándar.
 
 Además, los administradores pueden utilizar el icono [](sites-console.md#modifying-site-properties) Editar sitio para modificar las propiedades del sitio, como el título.
 
@@ -335,4 +339,4 @@ Tras cualquier modificación, recuerde **guardar** y **volver a publicar** el si
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, consulte la documentación sobre la gestión [](../../help/sites-authoring/basic-handling.md) básica y una guía [rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).

@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 3%
 
 ---
 
@@ -22,17 +25,17 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!CAUTION]
 >
->La función Servicios de contenido está documentada únicamente con fines de vista previa.
+>La función Servicios de contenido está documentada únicamente para fines de previsualización.
 >
 >Está sujeto a cambios con la versión de 6.3 GA Service Pack 1.
 
 AEM Mobile Content Services es una función ligera para solicitar contenido administrado por AEM. Esto proporciona a todos los desarrolladores de aplicaciones una manera de alto rendimiento de recuperar contenido sin tener que tener un profundo conocimiento del repositorio de contenido (JCR) y del marco de trabajo web (Sling) de AEM. Permite que las aplicaciones que solicitan se desvinculen del repositorio de contenido.
 
-Content Services introduce varias construcciones AEM nuevas que permiten a los desarrolladores acceder al contenido gestionado por AEM sin tener conocimiento de la estructura de repositorio de dicho contenido.
+Content Services introduce varias construcciones de AEM nuevas que permiten a los desarrolladores acceder a AEM contenido administrado sin tener conocimiento de la estructura de repositorio de dicho contenido.
 
-Estas construcciones son necesarias para mantener la flexibilidad y permitir una futura expansión proporcionando una capa de abstracción entre el contenido gestionado por AEM y las aplicaciones móviles que consumen el contenido. Esto permite que AEM Content Services funcione como una capa de abstracción entre los requisitos de contenido de la aplicación nativa y el repositorio de contenido de AEM.
+Estas construcciones son necesarias para mantener la flexibilidad y permitir una futura expansión proporcionando una capa de abstracción entre el contenido administrado AEM y las aplicaciones móviles que consumen el contenido. Esto permite que AEM Content Services funcione como una capa de abstracción entre los requisitos de contenido de la aplicación nativa y el repositorio de contenido AEM.
 
-Content Services puede entregar el contenido como recursos, HTML empaquetado (HTML/CSS/JS) o como contenido independiente del canal.
+Content Services puede entregar el contenido como recursos, HTML empaquetado (HTML/CSS/JS) o como contenido independiente de canal.
 
 >[!CAUTION]
 >
@@ -44,8 +47,8 @@ Content Services puede entregar el contenido como recursos, HTML empaquetado (HT
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-Una vez que haya establecido el indicador de Content Services y habilitado los modelos de datos en el navegador de configuración, consulte los recursos siguientes para empezar a usar AEM Mobile Content Services, familiarizarse con los conceptos de Content Services como la administración de modelos, la administración de entidades y la entrega/representación de contenido para AEM Mobile Content Services.
+Una vez que haya establecido el indicador de Content Services y habilitado los modelos de datos en el navegador de configuración, consulte los recursos siguientes para empezar a usar AEM Mobile Content Services, familiarizarse con los conceptos de Content Services como administración de modelos, administración de entidades seguida de envío/procesamiento de contenido para AEM Mobile Content Services.
 
 * Modelos en el repositorio
-* Procesamiento y envío
+* Procesamiento y Envío
 

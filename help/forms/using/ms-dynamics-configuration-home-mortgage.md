@@ -9,6 +9,9 @@ topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 0%
 
 ---
 
@@ -34,18 +37,18 @@ Antes de comenzar a configurar y configurar Dynamics 365, asegúrese de que:
 * Aplicación registrada para el servicio Dynamics 365 con Microsoft® Azure Active Directory
 * ID de cliente y secreto de cliente para la aplicación registrada
 
-## Vincule la calculadora de hipotecas domésticas con la página principal del sitio {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Vincule la calculadora de hipoteca con la página de inicio del sitio {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
 1. En la instancia de creación, vaya a la siguiente página:
 
    https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
 
 1. Desplácese hacia abajo hasta la calculadora de hipotecas domésticas.
-1. Resalte el panel de la columna derecha (calculadora) y toque para mostrar el menú emergente. En el menú emergente, toque Configurar. Aparecerá el cuadro de diálogo Editar contenedor de AEM Forms.
+1. Resalte el panel de la columna derecha (calculadora) y toque para mostrar el menú emergente. En el menú emergente, toque Configurar. Aparecerá el cuadro de diálogo Editar Contenedor de AEM Forms.
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. En el cuadro de diálogo Editar contenedor de AEM Forms, examine la ruta de acceso del recurso, seleccione la calculadora de hipotecas domésticas en la siguiente ruta y toque **Confirmar**:
+1. En el cuadro de diálogo Editar Contenedor de AEM Forms, examine la ruta de acceso del recurso y seleccione la calculadora de hipotecas domésticas en la siguiente ruta y toque **Confirmar**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -56,7 +59,7 @@ Antes de comenzar a configurar y configurar Dynamics 365, asegúrese de que:
 
    >[!NOTE]
    >
-   >El enlace de los campos de la calculadora con el FDM está preconfigurado a través del paquete del sitio de referencia We.Finance. Para ver el enlace, puede abrir el formulario en el modo de creación y ver las referencias de enlace de campo.
+   >El enlace de los campos de la calculadora con el FDM está preconfigurado a través del paquete del sitio de referencia We.Finance. Para vista del enlace, puede abrir el formulario en el modo de creación y ver las referencias de enlace de campo.
 
 1. Para crear una entidad personalizada para almacenar el registro de solicitante para la aplicación de hipoteca, importe el paquete de la solución AEMFormsFSIRefsite_1_0.zip a la instancia de Microsoft® Dynamics:
 

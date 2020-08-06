@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '1143'
+ht-degree: 6%
 
 ---
 
@@ -23,22 +26,22 @@ Consulte también [Notas de la versión de AEM 3D](/help/release-notes/aem3d-rel
 
 Consulte también [Instalación y configuración de AEM 3D](install-config-3d.md).
 
-## Acerca de los modelos y las fases de AEM 3D {#about-models-and-stages-in-aem-d}
+## Acerca de los modelos y las etapas en AEM 3D {#about-models-and-stages-in-aem-d}
 
-AEM 3D le permite ver y procesar modelos 3D estáticos e independientes de alta calidad en entornos predefinidos denominados Fases. Básicamente, un escenario proporciona &quot;iluminación&quot; para la escena 3D y la configuración para el procesamiento en una aplicación nativa como Autodesk® Maya® o Autodesk 3ds Max®. Además, el escenario puede incluir, opcionalmente, cámaras predefinidas, fondos y geometría de plano de tierra.
+AEM 3D le permite realizar vistas y procesar modelos 3D estáticos independientes de alta calidad en entornos predefinidos denominados Fases. Básicamente, un escenario proporciona &quot;iluminación&quot; para la escena 3D y la configuración para el procesamiento en una aplicación nativa como Autodesk® Maya® o Autodesk 3ds Max®. Además, el escenario puede incluir, opcionalmente, cámaras predefinidas, fondos y geometría de plano de tierra.
 
-Los archivos 3D cargados que contienen luces se consideran un escenario. Puede revertir estos recursos para que sean objetos 3D simples si abre el recurso en la página de detalles del recurso. Toque **[!UICONTROL Ver propiedades]** y, a continuación, toque la ficha **[!UICONTROL Básico]** . En el encabezado Metadatos, en la lista desplegable Clase de recurso, seleccione un objeto **** 3D.
+Los archivos 3D cargados que contienen luces se consideran un escenario. Puede revertir estos recursos para que sean objetos 3D simples si abre el recurso en la página de detalles del recurso. Toque Propiedades **[!UICONTROL de]** Vista y, a continuación, toque la ficha **[!UICONTROL Básico]** . En el encabezado Metadatos, en la lista desplegable Clase de recurso, seleccione un objeto **** 3D.
 
 Cuando cree modelos 3D para su uso en AEM 3D, tenga en cuenta lo siguiente:
 
 * Los archivos del modelo 3D deben contener un solo objeto, sin fondos, planos de tierra, iluminación de escenas o cámaras.
-* Coloque el modelo sobre el plano de masa. Este posicionamiento es especialmente importante cuando se visualiza o procesa con etapas que proporcionan un plano de tierra. Hay una configuración disponible (y habilitada de forma predeterminada) que hace que el objeto se mueva por encima del plano de tierra al obtener una vista previa o al procesarlo con una precisión rápida. Esta configuración no afecta al procesamiento con procesadores de terceros (por ejemplo, a través de Maya) y, por tanto, los objetos que no están ubicados por encima del plano de tierra pueden estar parcialmente ocultos.
-* Coloque el modelo de modo que esté razonablemente centrado lateralmente alrededor del origen del sistema de coordenadas (0,0,0). De este modo, se garantiza una buena experiencia de visualización interactiva.
+* Coloque el modelo sobre el plano de masa. Este posicionamiento es especialmente importante cuando se realiza una vista o representación con etapas que proporcionan un plano de tierra. Hay una configuración disponible (y habilitada de forma predeterminada) que hace que el objeto se mueva por encima del plano de tierra al obtener una vista previa o al procesarlo con una precisión rápida. Esta configuración no afecta al procesamiento con procesadores de terceros (por ejemplo, a través de Maya) y, por tanto, los objetos que no están ubicados por encima del plano de tierra pueden estar parcialmente ocultos.
+* Sitúe el modelo de modo que esté razonablemente centrado lateralmente alrededor del origen del sistema de coordenadas (0,0,0). De este modo, se garantiza una buena experiencia de visualización interactiva.
 * Aparte de los mapas de textura, se admiten las referencias de archivo externas. Por lo tanto, debe incrustar cualquier contenido al que se haga referencia en el archivo del modelo principal antes de cargarlo en AEM.
 
    Consulte [Acerca de la carga y el procesamiento de los recursos 3D en AEM](upload-processing-3d-assets.md).
 
-* La iluminación general de la escena la proporciona el escenario. Por lo tanto, Adobe no recomienda incluir luces con archivos de modelo 3D. Puede incluir luces en el modelo. Sin embargo, solo deben ser específicos del modelo. Por ejemplo, puede que sea necesario incluir iluminación adicional para iluminar una parte del objeto que está oscurecida por otras partes. Por lo tanto, no sería suficientemente visible con sólo las luces del escenario.
+* La iluminación general de la escena la proporciona el escenario. Como tal, Adobe no recomienda incluir luces con archivos de modelo 3D. Puede incluir luces en el modelo. Sin embargo, solo deben ser específicos del modelo. Por ejemplo, puede que sea necesario incluir iluminación adicional para iluminar una parte del objeto que está oscurecida por otras partes. Por lo tanto, no sería suficientemente visible con sólo las luces del escenario.
 
 ## Archivos admitidos en AEM 3D {#supported-files-in-aem-d}
 
@@ -66,7 +69,7 @@ El fichero del modelo 3D principal contiene la geometría real del modelo 3D y l
   </tr> 
   <tr> 
    <td>Conservar referencias<br /> </td> 
-   <td><p>Anular selección.</p> <p>Actualmente, AEM 3D no admite referencias externas.</p> </td> 
+   <td><p>Anular selección.</p> <p>AEM 3D no admite actualmente referencias externas.</p> </td> 
   </tr> 
   <tr> 
    <td>Malla suave<br /> </td> 
@@ -94,11 +97,11 @@ El fichero del modelo 3D principal contiene la geometría real del modelo 3D y l
   </tr> 
   <tr> 
    <td>Conversión de eje - Eje ascendente</td> 
-   <td><p><strong>Y-up</strong></p> <p>Y-up proporciona resultados coherentes al exportar desde Maya y es el sistema de coordenadas preferido para archivos FBX en esta versión de AEM 3D.</p> </td> 
+   <td><p><strong>Y-up</strong></p> <p>Y-up proporciona resultados coherentes al exportar desde Maya y es el sistema de coordenadas preferido para archivos FBX en esta versión AEM 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Incrustar medios</td> 
-   <td>Ambas opciones son compatibles. Si se selecciona incrustado, AEM 3D extrae los medios incrustados en una carpeta adyacente que tenga el mismo nombre que el archivo de modelo con <code>.fbm</code> anexo.</td> 
+   <td>Ambas opciones son compatibles. Si se selecciona incrustado, AEM 3D extrae el medio incrustado en una carpeta adyacente que tenga el mismo nombre que el archivo de modelo con <code>.fbm</code> anexo.</td> 
   </tr> 
   <tr> 
    <td>Formato de archivo FBX: Tipo</td> 
@@ -137,7 +140,7 @@ Los materiales del archivo de modelo 3D principal pueden hacer referencia a otro
 
 ### Imágenes de IBL (iluminación basada en imágenes) {#ibl-image-based-lighting-images}
 
-Un archivo de modelo 3D que define una etapa puede hacer referencia a una única imagen de entorno IBL. Actualmente, AEM 3D solo admite imágenes TIFF de 32 bits en formato de latitud/longitud para IBL difuso y para reflejos. También se admiten imágenes RGB de 8 bits para el fondo de escena esférica.
+Un archivo de modelo 3D que define un escenario puede hacer referencia a una única imagen de entorno IBL. Actualmente, AEM 3D solo admite imágenes TIFF de 32 bits en formato de latitud/longitud para IBL difuso y para reflejos. También se admiten imágenes RGB de 8 bits para el fondo de escena esférica.
 
 See [About working with IBL stages](working-with-ibl-stages.md).
 

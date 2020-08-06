@@ -31,6 +31,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
    * empid
    * reason
    * duration
+
    >[!NOTE]
    >
    >Este procesador es la plantilla de página de resumen.

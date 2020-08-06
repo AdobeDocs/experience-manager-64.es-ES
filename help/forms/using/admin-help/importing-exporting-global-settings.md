@@ -24,7 +24,7 @@ Puede importar y exportar definiciones de plantillas de búsqueda y configuraci�
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 Por ejemplo, puede pasar de un entorno de desarrollo a un entorno de producción exportando las definiciones de plantilla de búsqueda y la configuración global de un entorno e importándolos al otro.
 
@@ -67,7 +67,7 @@ Puede modificar el archivo de configuración global; sin embargo, la única conf
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 El archivo de configuración global de Workspace incluye la siguiente configuración:
 
@@ -87,7 +87,7 @@ La configuración de *SpecialRoutes* especifica las propiedades de las rutas esp
 
 ### Configuración de JGroup {#jgroup-settings}
 
-Esta configuración solo aparece si se ha actualizado desde Adobe LiveCycle ES 2.5 o anterior.
+Esta configuración solo aparece si ha actualizado desde Adobe LiveCycle ES 2.5 o anterior.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** El tiempo máximo que el grupo de trabajo espera los mensajes de evento. No se debe cambiar esta configuración.
 
@@ -125,7 +125,7 @@ Para obtener información adicional sobre JGroups y Workspace, consulte [JGroups
 
 **server_debugLevel:** No cambie esta configuración.
 
-**client_pollingInterval:** Establece el intervalo de sondeo (en segundos) utilizado en el espacio de trabajo de Flex (obsoleto para formularios AEM en JEE) para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
+**client_pollingInterval:** Establece el intervalo de sondeo (en segundos) utilizado en Flex Workspace (obsoleto para AEM formularios en JEE) para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
 
 **client_systemContext_name:** Especifique un nombre personalizado (por ejemplo, Ciudadano) para mostrar en el campo Añadido por (en la ficha Archivos adjuntos) los datos adjuntos de una tarea en AEM Forms Workspace.
 

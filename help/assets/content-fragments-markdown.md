@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
@@ -101,7 +104,7 @@ La sintaxis incluye:
 
 * Signo de exclamación: !;
 * seguido de un conjunto de corchetes que contiene el texto del atributo alt de la imagen;
-* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta de la imagen, y de un atributo de título opcional entre comillas dobles o simples.
+* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta de la imagen, y un atributo de título opcional entre comillas simples o dobles.
 
 Una imagen de estilo de referencia tiene la siguiente sintaxis:
 

@@ -60,7 +60,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 ## Visualización de las raíces de idioma {#viewing-language-roots}
 
-La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en Recursos AEM.
+La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en AEM Assets.
 
 1. En la consola Recursos, seleccione el idioma principal para el que desea crear copias de idioma.
 1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Referencias]** para abrir el panel Referencia.

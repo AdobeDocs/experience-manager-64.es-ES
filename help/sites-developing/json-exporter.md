@@ -1,8 +1,8 @@
 ---
 title: JSON Exporter for Content Services
 seo-title: JSON Exporter for Content Services
-description: 'Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. '
-seo-description: 'Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. '
+description: 'Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente. '
+seo-description: 'Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web. Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente. '
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 # JSON Exporter for Content Services{#json-exporter-for-content-services}
 
-Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM más allá del enfoque en las páginas web.
 
-Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan el envío de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que pueden ser consumidos por cualquier cliente. Estos canales pueden incluir:
 
 * [Aplicaciones de una sola página](spa-walkthrough.md)
 * Aplicaciones móviles nativas
@@ -36,9 +36,9 @@ Con los fragmentos de contenido que utilizan contenido estructurado, puede propo
 
 ## Exportador JSON con componentes principales de fragmento de contenido {#json-exporter-with-content-fragment-core-components}
 
-Con el exportador JSON de AEM, puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
+Con el exportador JSON de AEM puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
 
-Dentro de AEM, el envío se logra mediante el selector `model` y la `.json` extensión.
+Dentro de AEM el envío se logra mediante el selector `model` y la `.json` extensión.
 
 `.model.json`
 
@@ -104,5 +104,5 @@ Para obtener más información, consulte:
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 

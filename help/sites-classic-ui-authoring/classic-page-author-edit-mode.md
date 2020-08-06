@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 85%
 
 ---
 
@@ -69,7 +72,7 @@ Puede utilizar archivos de imagen con las extensiones de nombre de archivo sigui
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; Los archivos .gif animados no son compatibles con AEM para representaciones adaptables.
+>&amp;ast;&amp;ast; Los archivos .gif animados no se admiten en AEM para representaciones adaptables.
 
 #### Calidad y tamaño de imagen {#images-sizes-and-quality}
 
@@ -165,7 +168,7 @@ Están disponibles en dos fichas:
 
    * **Lista de creación que utiliza**
 
-      Existen varias formas de crear una lista de páginas: páginas secundarias, lista fija, búsqueda o búsqueda avanzada (todas ellas descritas a continuación).
+      Existen varias formas de crear una lista de página: páginas secundarias, Lista fija, búsqueda o búsqueda avanzada (todas ellas se describen a continuación).
 
       Tenga en cuenta que no importa qué método elija, las páginas incluidas en la lista ya deben disponer de una imagen asociada a la página, que será la imagen que se muestre en el carrusel. Si no existe ninguna imagen para una página determinada en sus propiedades de página, es necesario asociar una imagen a la página antes de comenzar, ya que de lo contrario el carrusel mostrará una página en blanco (o casi en blanco). Consulte [Edición de las propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -192,7 +195,7 @@ Están disponibles en dos fichas:
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda mediante notación de predicado de QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -442,10 +445,10 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
          * **Páginas** : seleccione una lista de páginas. Utilice + para añadir más entradas y los botones de subida y bajada para ajustar el orden.
       * **Opciones de Buscar**
 
-         * **Iniciar en** : introduzca una ruta de inicio manualmente o con el selector. Consulta de búsqueda  Puede introducir una consulta de búsqueda en forma de texto sin formato.
+         * **Inicio en** : introduzca una ruta de inicio manualmente o con el selector. Consulta de búsqueda  Puede introducir una consulta de búsqueda en forma de texto sin formato.
       * **Opciones de Búsqueda avanzada**
 
-         * **Anotación** predicada de QueryBuilder: puede introducir una consulta de búsqueda mediante notación predicada de QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que todas las páginas con &quot;Marketing&quot; en su contenido se muestren en el Carrusel. Consulte la API [de](/help/sites-developing/querybuilder-api.md) QueryBuilder para obtener un análisis completo de las expresiones de consulta y más ejemplos.
+         * **Anotación** predicada de QueryBuilder: puede introducir una consulta de búsqueda con notación predicada de QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que todas las páginas con &quot;Marketing&quot; en su contenido se muestren en el Carrusel. Consulte la API [de](/help/sites-developing/querybuilder-api.md) QueryBuilder para obtener un análisis completo de las expresiones de consulta y más ejemplos.
       * **Etiquetas** : especifique la página **** principal, **Etiquetas/Palabras clave** y los criterios de coincidencia necesarios.
    * **Mostrar como**
 
@@ -474,7 +477,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
 En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede mostrar una lista de páginas secundarias, con el diseño controlado mediante las definiciones CSS personalizadas del diseño del sitio.
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_lista_use](assets/dc_list_use.png)
 
 ### Inicio de sesión {#login}
 
@@ -566,7 +569,7 @@ El componente Búsqueda añade la capacidad de búsqueda a la página.
 
 Puede configurar:
 
-* Búsqueda 
+* Búsqueda  
 
    * **Tipos de nodo**
 
@@ -762,7 +765,7 @@ Puede configurar:
 
    * **Vincular a**
 
-      Especifique una ruta de destino.
+      Especifique una ruta de destinatario.
 
    * **Descripción**
 
@@ -820,7 +823,8 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Vídeo Flash)
+>* `FLV` (vídeo de Flash)
+
 >
 
 
@@ -1072,7 +1076,7 @@ Página a la que se hace referencia para agradecer a los visitantes su contenido
 
          * **El posible cliente se agregará a la lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
       * **Crear y actualizar cuenta**
 
          * **Grupo inicial**
@@ -1135,7 +1139,7 @@ Página a la que se hace referencia para agradecer a los visitantes su contenido
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posible cliente requerida.
 
 
 

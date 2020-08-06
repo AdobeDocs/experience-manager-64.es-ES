@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +24,11 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 FFmpeg es una solución para convertir y transmitir audio y vídeo y, cuando se instala, se utiliza para una transcodificación adecuada de los recursos [de](../../help/sites-authoring/default-components-foundation.md#video) vídeo, así como para la función de habilitación de AEM Communities.
 
-FFmpeg se utiliza en el entorno de creación para obtener metadatos de los recursos de activación cargados, así como para generar una miniatura que se mostrará al enumerar el recurso de habilitación.
+FFmpeg se utiliza en el entorno del autor para obtener metadatos de los recursos de activación cargados, así como para generar una miniatura que se mostrará al enumerar el recurso de activación.
 
 ## Instalación de FFmpeg {#installing-ffmpeg}
 
-FFmpeg debe instalarse en los servidores que alojen las instancias de *autor* de AEM.
+FFmpeg debe estar instalado en el servidor que aloja las instancias de *autor* de AEM.
 
 1. Vaya a [https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. Descargue la versión más reciente de FFmpeg para su entorno específico (Macintosh, Windows o Linux)
@@ -44,18 +47,18 @@ FFmpeg debe instalarse en los servidores que alojen las instancias de *autor* de
 
 De forma predeterminada, cuando se instala FFmpeg, se configuran varias representaciones (transcodificaciones) según la definición del flujo de trabajo de recursos de actualización de DAM.
 
-Dado que las transcodificaciones requieren un uso intensivo de la CPU, se recomienda modificar la lista de representaciones de destino. En la mayoría de los casos, la transcodificación no es necesaria.
+Dado que las transcodificaciones requieren un uso intensivo de CPU, se recomienda modificar la lista de las representaciones de destinatario. En la mayoría de los casos, la transcodificación no es necesaria.
 
 Para modificar el flujo de trabajo de recursos de actualización de DAM y, en este ejemplo, desactivar la transcodificación:
 
 * Inicie sesión en la instancia de creación con privilegios administrativos
 * Desde la navegación global: **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**
 * Localizar recurso de actualización **[!UICONTROL DAM]**
-* Haga doble clic para abrir el flujo de trabajo y editarlo en la IU clásica
+* Haga clic con el Doble para abrir el flujo de trabajo y editarlo en la IU clásica
 
    Ubicación resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Haga doble clic en el paso de transcodificación **[!UICONTROL FFmpeg]** para acceder al cuadro de diálogo Propiedades del paso
+* Haga clic con el botón Doble en el paso de transcodificación **[!UICONTROL FFmpeg]** para acceder al cuadro de diálogo Propiedades del paso
 * En la ficha **[!UICONTROL Proceso]** :
 
    * **[!UICONTROL Arumentos]**: Borre todas las entradas para desactivar la transcodificación Valores predeterminados: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`

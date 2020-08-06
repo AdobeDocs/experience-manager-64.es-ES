@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +56,7 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
    * Nombre: `an-scf-sandbox`
    * Seleccionar **[!UICONTROL una plantilla de reproducción de Simulador para pruebas SCF]**
    * Haga clic en **[!UICONTROL Crear]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. En el panel del explorador, seleccione la página que acaba de crear `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo > Nueva página]**:
@@ -77,9 +81,9 @@ Ahora que hay una plantilla [de](initial-app.md#createthepagetemplate)página, p
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-## Agregar la ruta de diseño {#add-the-design-path}
+## Añadir la ruta de diseño {#add-the-design-path}
 
-Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó mediante la sección de diseños de la consola Herramientas, la propiedad &quot;
+Cuando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se creó con la sección de diseños de la consola Herramientas, la propiedad &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 

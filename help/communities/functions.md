@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '2542'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 El tipo de características que se esperan de una experiencia de comunidad son bien conocidas. Las funciones de la comunidad están disponibles como funciones de la comunidad. Fundamentalmente, son una o más páginas preprogramadas para implementar una función de comunidad que requiere más que simplemente agregar un componente a una página en modo de autor. Son los componentes básicos utilizados para definir la estructura de una plantilla [de sitio de](sites.md) comunidad desde la cual se [crean](sites-console.md)los sitios de la comunidad.
 
-Una vez creado un sitio de comunidad, se puede añadir contenido a las páginas resultantes mediante el modo [de creación estándar de](../../help/sites-authoring/editing-content.md)AEM.
+Una vez creado un sitio de comunidad, se puede agregar contenido a las páginas resultantes mediante el modo [de creación estándar](../../help/sites-authoring/editing-content.md)AEM.
 
 Hay varias funciones de comunidad disponibles de inmediato, como se ve en la consola de funciones de comunidad. En futuras versiones se ofrecerán más funciones de la comunidad y también se podrán crear funciones personalizadas.
 
@@ -37,9 +40,9 @@ En el entorno de creación, para llegar a la consola de funciones de comunidad
 
 ## Funciones prediseñadas {#pre-built-functions}
 
-A continuación se ofrece una breve descripción de las funciones realizadas con AEM Communities. Cada función consta de una o varias páginas de AEM que contienen componentes de Communities conectados en una función que se incorpora fácilmente a una plantilla [de sitio de](sites.md)comunidad.
+A continuación se ofrece una breve descripción de las funciones que se ofrecen con AEM Communities. Cada función está compuesta de una o más páginas AEM que contienen componentes de Comunidades conectados en una función que se incorpora fácilmente a una plantilla [de sitio de](sites.md)comunidad.
 
-Una plantilla de sitio de comunidad proporciona la estructura de un sitio de comunidad, que incluye funciones de inicio de sesión, perfiles de usuario, notificaciones, mensajes, menú del sitio, búsqueda, tema y marca.
+Una plantilla de sitio de comunidad proporciona la estructura de un sitio de comunidad, incluyendo inicio de sesión, perfiles de usuario, notificaciones, mensajes, menú del sitio, búsqueda, tema y características de marca.
 
 ### Configuración de título y dirección URL {#title-and-url-settings}
 
@@ -51,9 +54,11 @@ Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
-* **[!UICONTROL Título]**(*obligatorio*) El texto que aparece en el menú de funciones del sitio
+* **[!UICONTROL Título]**
+(
+*requerido*) Texto que aparece en el menú de características del sitio
 
-* **[!UICONTROL URL]**(*requerido*) El nombre utilizado para generar el URI. El nombre debe cumplir las convenciones [de](../../help/sites-developing/naming-conventions.md) nomenclatura impuestas por AEM y JCR.
+* **[!UICONTROL URL]**(*requerido*) El nombre utilizado para generar el URI. El nombre debe ajustarse a las convenciones [de](../../help/sites-developing/naming-conventions.md) nomenclatura impuestas por AEM y JCR.
 
 Por ejemplo, si utiliza el sitio creado a partir del tutorial [Introducción](getting-started.md) , si
 
@@ -66,20 +71,20 @@ A continuación, la dirección URL de la página es http://local_host:4503/conte
 
 ### Función Secuencia de actividades {#activity-stream-function}
 
-La función de flujo de actividad es una página con un componente [de flujos de](activities.md) actividad con todas las vistas seleccionadas (todas las actividades, actividades del usuario y siguientes). Consulte también [Activity Stream Essentials](essentials-activities.md) para desarrolladores.
+La función de flujo de actividad es una página con un componente [de flujo de](activities.md) Actividad con todas las vistas seleccionadas (todas las actividades, actividades de usuario y siguientes). Consulte también [Actividad Stream Essentials](essentials-activities.md) para desarrolladores.
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 #### Detalles de la función de configuración {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![chlimage_1-302](assets/chlimage_1-382.png)
 
 * Consulte Configuración [de título y URL](#title-and-url-settings)
-* **[!UICONTROL Mostrar la vista]**&quot;Mis actividades&quot; Si está activada, la página Actividades incluirá una ficha que filtra las actividades en función de las generadas en la comunidad por el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar la vista]**&quot;Mis Actividades&quot; Si está activada, la página Actividades incluirá una ficha que filtros actividades basadas en las generadas dentro de la comunidad por el miembro actual. El valor predeterminado está marcado.
 
-* **[!UICONTROL Mostrar la vista]**&quot;Todas las actividades&quot; Si está activada, la página Actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar la vista]**&quot;Todas las Actividades&quot; Si está activada, la página Actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
 
-* **[!UICONTROL Mostrar la vista]**&quot;Fuente de noticias&quot; Si está activada, la página Actividades incluirá una ficha que filtra las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
+* **[!UICONTROL Mostrar la vista]**&quot;Fuente de noticias&quot; Si está activada, la página Actividades incluirá una ficha que filtros las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
 
 ### Función Asignaciones {#assignments-function}
 
@@ -115,7 +120,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 ![chlimage_1-384](assets/chlimage_1-384.png)
 
 * Consulte Configuración [de título y URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas al tema se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
+* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas de temas se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir miembros]** privilegiados Si se selecciona, el blog solo permitirá que los miembros privilegiados creen artículos permitiendo la selección de un grupo [de miembros](users.md#privileged-members-group)privilegiados. Si no se selecciona, todos los miembros de la comunidad pueden crear. El valor predeterminado no está marcado.
 
@@ -131,16 +136,16 @@ La función de catálogo permite a los miembros de la comunidad [](overview.md#e
 
 Todos los recursos de habilitación y las rutas de aprendizaje del sitio de la comunidad mostrarán en todos los catálogos si su propiedad, ` [Show in Catalog](resources.md)`, está establecida en true. Para incluir explícitamente recursos y rutas de aprendizaje, es necesario aplicar un [prefiltro](catalog-developer-essentials.md#pre-filters) al catálogo.
 
-Cuando se agrega a una plantilla, la configuración permite especificar los espacios de nombres de etiquetas utilizados para configurar el filtro de etiquetas presentado a los visitantes del sitio:
+Cuando se agrega a una plantilla, la configuración permite especificar las Áreas de nombres de etiquetas utilizadas para configurar el filtro de etiquetas presentado en los visitantes del sitio:
 
 ![catalogfunc](assets/catalogfunc.png)
 
 * Consulte Configuración [de título y URL](#title-and-url-settings)
 * **[!UICONTROL Seleccionar todos los espacios de nombres]**
 
-   * Los espacios de nombres de etiquetas seleccionados definen qué etiquetas pueden seleccionar los visitantes para filtrar la lista de recursos de activación que se muestra en el catálogo.
-   * Si se selecciona, todos los espacios de nombres de etiquetas permitidos para el sitio de comunidad están disponibles.
-   * Si no se selecciona, es posible seleccionar uno o varios espacios de nombres permitidos para el sitio de comunidad.
+   * Las Áreas de nombres de etiquetas seleccionadas definen las etiquetas que pueden seleccionar los visitantes para filtrar la lista de los recursos de activación enumerados en el catálogo.
+   * Si se selecciona, están disponibles todas las Áreas de nombres de etiquetas permitidas para el sitio de la comunidad.
+   * Si no se selecciona, es posible seleccionar una o varias Áreas de nombres permitidas para el sitio de la comunidad.
    * El valor predeterminado está marcado.
 
 ### Función de contenido destacado {#featured-content-function}
@@ -168,7 +173,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
 * Consulte Configuración [de título y URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas al tema se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
+* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas de temas se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir miembros]** privilegiados Si se selecciona, el foro solo permitirá que los miembros privilegiados publiquen temas al permitir la selección de un grupo [de miembros](users.md#privileged-members-group)privilegiados. Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está marcado.
 
@@ -188,11 +193,11 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 La función de grupos permite a los miembros de la comunidad crear subcomunidades dentro del sitio de la comunidad en el entorno de publicación.
 
-Según la [configuración](sites-console.md#groupmanagement) cuando la función Grupos se incluya en una plantilla [de sitio de](sites.md)comunidad, los grupos pueden ser públicos o privados y se pueden configurar una o varias plantillas de grupo de comunidad para proporcionar una selección de plantillas cuando se cree realmente el grupo de comunidad (como en el entorno de publicación). Una plantilla [de grupo de](tools-groups.md) comunidad especifica qué funciones de comunidades se crean para las páginas de grupo, como los foros y los calendarios.
+Según la [configuración](sites-console.md#groupmanagement) cuando la función Grupos se incluya en una plantilla [de sitio de](sites.md)comunidad, los grupos pueden ser públicos o privados y se pueden configurar una o varias plantillas de grupo de comunidad para proporcionar una selección de plantillas cuando se cree realmente el grupo de comunidad (por ejemplo, desde el entorno de publicación). Una plantilla [de grupo de](tools-groups.md) comunidad especifica qué funciones de comunidades se crean para las páginas de grupo, como los foros y los calendarios.
 
 Cuando se crea un grupo de comunidad, se crea dinámicamente un grupo de miembros para el nuevo grupo, al que se pueden asignar o unir miembros. Para obtener más información, consulte [Administración de usuarios y grupos](users.md)de usuarios.
 
-A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de Comunidades, los grupos de comunidades se crean en el entorno de creación mediante la consola [Grupos de sitios de](groups.md)comunidades y se pueden crear en el entorno de publicación cuando están habilitados.
+A partir del paquete de [funciones 1](deploy-communities.md#latestfeaturepack)de Comunidades, los grupos de comunidades se crean en el entorno de creación mediante la consola [Grupos de sitios de](groups.md)comunidades y se pueden crear en el entorno de publicación cuando están activados.
 
 Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
@@ -203,7 +208,7 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **[!UICONTROL Permitir miembros]** privilegiados Si se selecciona, el foro solo permitirá que los miembros privilegiados publiquen temas al permitir la selección de un grupo [de seguridad de miembros](users.md#privileged-members-group)privilegiados. Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está marcado.
 
-* **[!UICONTROL Permitir creación]** de publicación Si está activada, los miembros autorizados de la comunidad pueden crear un grupo en el entorno de publicación. Si no se selecciona, los nuevos grupos (subcomunidades) solo se pueden crear en el entorno de creación desde la consola Grupos de sitios de comunidades.
+* **[!UICONTROL Permitir la creación]** de publicaciones Si está activada, es posible que los miembros autorizados de la comunidad creen un grupo en el entorno de publicación. Si no se selecciona, los nuevos grupos (subcomunidades) solo se pueden crear en el entorno de creación desde la consola Grupos de sitios de comunidades.
 
    El valor predeterminado es `checked`.
 
@@ -243,13 +248,13 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que e
 
    El valor predeterminado no está marcado.
 
-* **[!UICONTROL Mostrar avatar]** Si está marcado, la imagen de avatar del miembro se incluye en la tabla de clasificación, junto al vínculo de nombre de su perfil de miembro.
+* **[!UICONTROL Mostrar avatar]** Si está marcado, la imagen de avatar del miembro se incluye en la tabla de clasificación, junto al vínculo de nombre del perfil del miembro.
 
    El valor predeterminado no está marcado.
 
 ### Función Página {#page-function}
 
-La función de página agrega una página en blanco al sitio de la comunidad que está conectada a las características del sitio de la comunidad: inicio de sesión, menú, notificaciones, mensajes, temas y marca. El contenido se puede añadir a la página mediante el modo [de creación AEM](../../help/sites-authoring/editing-content.md)estándar.
+La función de página agrega una página en blanco al sitio de la comunidad que está conectada a las características del sitio de la comunidad: inicio de sesión, menú, notificaciones, mensajes, temas y marca. El contenido se puede agregar a la página mediante el modo [de creación de AEM](../../help/sites-authoring/editing-content.md)estándar.
 
 Cuando se agrega a una plantilla, la única configuración es para el [título y la configuración](#title-and-url-settings)de URL.
 
@@ -262,7 +267,7 @@ Cuando se agrega a una plantilla, la configuración permite la restricción a lo
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
 * Consulte Configuración [de título y URL](#title-and-url-settings)
-* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas al tema se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
+* **[!UICONTROL Permitir fijar]** si está activada, el foro permitirá que las respuestas de temas se fijen al principio de la lista de comentarios. El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir miembros]** privilegiados Si se selecciona, el foro QnA solo permitirá que los miembros privilegiados publiquen preguntas al permitir la selección de un grupo [de miembros](users.md#privileged-members-group)privilegiados. Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está marcado.
 
@@ -284,7 +289,7 @@ La capacidad de crear una función de comunidad se alcanza seleccionando el icon
 
 En el panel Nombre de función de comunidad, se configuran un nombre, una descripción y si la función está habilitada o deshabilitada:
 
-* **[!UICONTROL Nombre]** de función de la comunidad El nombre de función que se utiliza para la visualización y el almacenamiento
+* **[!UICONTROL Nombre]** de función de la comunidad El nombre de función que se utiliza para mostrar y almacenamiento
 
 * **[!UICONTROL Descripción]** de la función CommunityDescripción de la función para visualización
 
@@ -302,7 +307,7 @@ Dado que la función de comunidad se implementa como una [Live Copy](../../help/
 
 Consulte también Administrador [de varios sitios](../../help/sites-administering/msm.md).
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
@@ -316,7 +321,7 @@ Seleccione el `Open Community Function` icono para entrar en el modo de edición
 
 ### Configurar componentes {#configuring-components}
 
-Una función de comunidad se implementa como Live Copy de un modelo AEM, cuyos detalles se documentan en [Multi Site Manager](../../help/sites-administering/msm.md).
+Una función de comunidad se implementa como Live Copy de un modelo de AEM, cuyos detalles se documentan en [Multi Site Manager](../../help/sites-administering/msm.md).
 
 Es posible no sólo crear contenido de página, sino también configurar componentes.
 

@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +42,7 @@ En la tabla siguiente se muestran las propiedades y los nodos **de la aplicació
   <tr>
    <td>dps-cloudConfig</td>
    <td>Cadena:Ruta</td>
-   <td><p>Ruta a un servicio de Mobile On-Demand Cloud configurado. Se utiliza para las acciones On-Demand de AEM Mobile a Mobile (invocación de API)</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige un servicio de nube móvil bajo demanda para asociar la aplicación.</p> </td>
+   <td><p>Ruta a un Cloud Service de Mobile On-Demand configurado. Utilizado para acciones de AEM Mobile a Mobile On-Demand (invocación de API)</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige un Cloud Service de Mobile On-Demand para asociar la aplicación.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -49,7 +52,7 @@ En la tabla siguiente se muestran las propiedades y los nodos **de la aplicació
   <tr>
    <td>dps-projectId</td>
    <td>Cadena</td>
-   <td><p>Id/URI del proyecto de Mobile On-Demand al que está vinculada esta aplicación.</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige el proyecto de una lista de proyectos disponibles para el servicio de nube móvil bajo demanda asociado.</p> </td>
+   <td><p>Id/URI del proyecto de Mobile On-Demand al que está vinculada esta aplicación.</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige el proyecto de una lista de proyectos disponibles para el Cloud Service de Mobile On-Demand asociado.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -64,17 +67,17 @@ En la tabla siguiente se muestran las propiedades y los nodos **de la aplicació
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Fecha</td>
-   <td>Fecha de la última carga de recursos compartidos de AEM en AEM Mobile.</td>
+   <td>Fecha de la última carga de recursos compartidos de AEM a AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>Cadena:userid</td>
-   <td>ID del usuario que realizó la última carga de la solicitud de recursos compartidos de AEM a AEM Mobile.</td>
+   <td>Id del usuario que realizó la última carga de la solicitud de recursos compartidos de AEM a AEM Mobile.</td>
   </tr>
   <tr>
-   <td>page-dashboard-config</td>
+   <td>page-panel-config</td>
    <td>Cadena:Ruta</td>
-   <td>Ruta a una configuración de tablero. La ruta se puede redirigir a una configuración de tablero personalizada según sea necesario.</td>
+   <td>Ruta a una configuración de panel. La ruta se puede redirigir a una configuración de tablero personalizada según sea necesario.</td>
   </tr>
   <tr>
    <td>sling:resourceType</td>

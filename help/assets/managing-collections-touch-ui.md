@@ -14,7 +14,7 @@ ht-degree: 15%
 
 # Administrar colecciones {#managing-collections}
 
-Una colección es un conjunto de recursos dentro de Recursos de Adobe Experience Manager. Utilice colecciones para compartir recursos entre usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
+Una colección es un conjunto de recursos de Adobe Experience Manager Assets. Utilice colecciones para compartir recursos entre usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
 
 A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir colecciones con varios usuarios a los que se han asignado diferentes niveles de privilegios, como ver, editar, etc.
 
@@ -194,7 +194,7 @@ Para personalizar la página de [!UICONTROL propiedades] de metadatos, incluida 
 
 ## Buscar colecciones {#searching-collections}
 
-Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro Omniture, los AEM Assets buscan nombres de recopilación, metadatos y las etiquetas agregadas a las colecciones.
+Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro Omniture, AEM Assets busca los nombres de las colecciones, los metadatos y las etiquetas agregadas a las colecciones.
 
 Si busca colecciones desde el nivel superior, solo se devuelven colecciones individuales en los resultados de búsqueda. Se excluyen los recursos o las carpetas de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
@@ -202,7 +202,7 @@ Si busca colecciones desde el nivel superior, solo se devuelven colecciones indi
 
 En la consola Colecciones, toque o haga clic en una colección para abrirla.
 
-Dentro de una colección, la búsqueda de recursos de AEM está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
+Dentro de una colección, AEM búsqueda de recursos está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
 
 ## Editar la configuración de la colección {#editing-collection-settings}
 

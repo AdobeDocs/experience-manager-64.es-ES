@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +30,7 @@ Los componentes están disponibles durante [la edición de una página](/help/si
 >
 >En función de su instancia, puede disponer de componentes personalizados desarrollados explícitamente para sus necesidades. Pueden tener incluso el mismo nombre que algunos de los componentes mencionados aquí.
 
-## Uso general  {#general-usage}
+## Uso general   {#general-usage}
 
 Los componentes están disponibles en la ficha **Componentes** del panel lateral del editor de páginas al [editar una página](/help/sites-authoring/editing-content.md).
 
@@ -55,11 +58,11 @@ La [consola Componentes](/help/sites-authoring/default-components-console.md) le
 
 Las páginas siguientes proporcionan vínculos a información adicional e importante sobre los componentes:
 
-* [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
+* [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
 * [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) : la funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
+* [eCommerce](/help/sites-administering/ecommerce.md) : La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
 
 ### Configurar componentes {#configuring-components}
 

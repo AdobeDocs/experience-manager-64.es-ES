@@ -4,6 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +39,7 @@ Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda
 
 1. Toque o haga clic en el icono de GlobalNav. Se muestra el panel Filtros.
 
-   ![filters_panel-1](assets/filters_panel-1.png)
+   ![filtros_panel-1](assets/filters_panel-1.png)
 
    Según el tipo de elementos que busque, el número de coincidencias se indica en la parte superior de los resultados de búsqueda.
 
@@ -54,7 +57,7 @@ Puede reducir aún más el alcance de la búsqueda especificando el tipo MIME pa
 
 ![mime_type](assets/mime_type.png)
 
-Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo, PDF o MS Word.
+Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo PDF o MS Word.
 
 ![documentos](assets/documents.png)
 
@@ -95,6 +98,6 @@ Use el predicado **Perspectivas** para buscar recursos en función de las estad�
 * Puntuación de uso
 * Impresiones
 * Clics
-* Canales de medios en los que aparecen los recursos
+* canales de medios en los que aparecen los recursos
 
 ![perspectivas](assets/insights.png)

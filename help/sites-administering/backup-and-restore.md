@@ -1,8 +1,8 @@
 ---
 title: Copia de seguridad y restauración
 seo-title: Copia de seguridad y restauración
-description: Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido de AEM.
-seo-description: Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido de AEM.
+description: Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido AEM.
+seo-description: Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido AEM.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '2295'
+ht-degree: 0%
 
 ---
 
 
 # Copia de seguridad y restauración{#backup-and-restore}
 
-Existen dos formas de realizar copias de seguridad y restaurar el contenido del repositorio en AEM:
+Existen dos maneras de hacer backup y restaurar el contenido del repositorio en AEM:
 
 * Puede crear una copia de seguridad externa del repositorio y almacenarla en una ubicación segura. Si el repositorio se desglosa, puede restaurarlo al estado anterior.
 * Puede crear versiones internas del contenido del repositorio. Estas versiones se almacenan en el repositorio junto con el contenido, para que pueda restaurar rápidamente los nodos y los árboles que haya cambiado o eliminado.
@@ -39,13 +42,13 @@ No ejecute la copia de seguridad en paralelo con la recolección de elementos no
 
 ## Backup sin conexión {#offline-backup}
 
-Siempre puede realizar una copia de seguridad sin conexión. Esto requiere un tiempo de inactividad de AEM, pero puede ser bastante eficiente en cuanto al tiempo necesario en comparación con un respaldo en línea.
+Siempre puede realizar una copia de seguridad sin conexión. Esto requiere un tiempo de inactividad de AEM, pero puede ser bastante eficiente en cuanto al tiempo requerido en comparación con un backup en línea.
 
-En la mayoría de los casos, utilizará una instantánea del filesystem para crear una copia de sólo lectura del almacenamiento de información en ese momento. Para crear una copia de seguridad sin conexión, siga estos pasos:
+En la mayoría de los casos, utilizará una instantánea del sistema de archivos para crear una copia de sólo lectura del almacenamiento en ese momento. Para crear una copia de seguridad sin conexión, siga estos pasos:
 
 * detener la aplicación
 * hacer una copia de seguridad de instantánea
-* iniciar la aplicación
+* inicio de la aplicación
 
 Dado que el backup de copias instantáneas generalmente tarda sólo unos segundos, el tiempo de inactividad completo es de menos de unos minutos.
 
@@ -55,34 +58,34 @@ Este método de copia de seguridad crea una copia de seguridad de todo el reposi
 
 Puede restaurar todo el repositorio (y cualquier aplicación) más adelante.
 
-Este método funciona como una copia de seguridad &quot;en caliente&quot; o &quot;en línea&quot; para que se pueda realizar mientras se ejecuta el repositorio. Por lo tanto, el repositorio se puede utilizar mientras se ejecuta la copia de seguridad. Este método funciona para las instancias de repositorio predeterminadas basadas en almacenamiento de etiquetas.
+Este método funciona como una copia de seguridad &quot;en caliente&quot; o &quot;en línea&quot; para que se pueda realizar mientras se ejecuta el repositorio. Por lo tanto, el repositorio se puede utilizar mientras se ejecuta la copia de seguridad. Este método funciona para las instancias de repositorio predeterminadas, basadas en almacenamientos de etiquetas.
 
 Al crear una copia de seguridad, tiene las siguientes opciones:
 
-* Realizar una copia de seguridad en un directorio mediante la herramienta de copia de seguridad integrada de AEM.
+* Realizar una copia de seguridad en un directorio mediante AEM herramienta de copia de seguridad integrada.
 * Realizar una copia de seguridad en un directorio mediante una instantánea del sistema de archivos
 
 En cualquier caso, la copia de seguridad crea una imagen (o instantánea) del repositorio. Luego, el agente de backup de sistemas debe tener cuidado de transferir esta imagen a un sistema de backup dedicado (unidad de cinta).
 
 >[!NOTE]
 >
->Si la función de copia de seguridad en línea de AEM se utiliza en una instancia de AEM que tiene una configuración de tipo bogavante personalizada, se recomienda configurar la ruta del almacén de datos para que esté fuera del directorio &quot; `crx-quickstart`&quot; y realizar una copia de seguridad del almacén de datos por separado.
+>Si se utiliza AEM función de copia de seguridad en línea en una instancia de AEM que tiene una configuración de tipo bogavante personalizada, se recomienda configurar la ruta del almacén de datos para que esté fuera del directorio &quot; `crx-quickstart`&quot; y realizar una copia de seguridad del almacén de datos por separado.
 
 >[!CAUTION]
 >
->La copia de seguridad en línea sólo realiza una copia de seguridad del sistema de archivos. Si almacena el contenido del repositorio y/o los archivos del repositorio en una base de datos, dicha base de datos debe realizarse de forma independiente. Si utiliza AEM con MongoDB, consulte la documentación sobre cómo utilizar las herramientas [de copia de seguridad nativas de](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)MongoDB.
+>La copia de seguridad en línea sólo realiza una copia de seguridad del sistema de archivos. Si almacena el contenido del repositorio y/o los archivos del repositorio en una base de datos, dicha base de datos debe realizarse de forma independiente. Si está utilizando AEM con MongoDB, consulte la documentación sobre cómo utilizar las herramientas [de copia de seguridad nativas de](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)MongoDB.
 
-### Backup en línea de AEM {#aem-online-backup}
+### Backup AEM en línea {#aem-online-backup}
 
 Una copia de seguridad en línea del repositorio le permite crear, descargar y eliminar archivos de copia de seguridad. Se trata de una función de copia de seguridad &quot;en caliente&quot; o &quot;en línea&quot;, por lo que se puede ejecutar mientras el repositorio se utiliza normalmente en modo de lectura y escritura.
 
 >[!CAUTION]
 >
->No ejecute AEM Online Backup al mismo tiempo que [Datastore Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) o [Revision Cleanup](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Afectará negativamente el rendimiento del sistema.
+>No ejecute AEM copia de seguridad en línea de forma concurrente con la recopilación [de elementos no utilizados del almacén de datos o la limpieza de](/help/sites-administering/data-store-garbage-collection.md) revisiones [](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Afectará negativamente el rendimiento del sistema.
 
-Al iniciar una copia de seguridad, puede especificar una ruta **de** destino y/o un **retraso**.
+Al iniciar una copia de seguridad puede especificar una ruta **de** Destinatario y/o un **retraso**.
 
-**Ruta** de destino Los archivos de copia de seguridad generalmente se guardan en la carpeta principal de la carpeta que contiene el archivo jar de inicio rápido (.jar). Por ejemplo, si el archivo AEM jar se encuentra en /InstallationKits/AEM, la copia de seguridad se generará en /InstallationKits. También puede especificar un objetivo para una ubicación de su elección.
+**Ruta** de Destinatario Los archivos de copia de seguridad generalmente se guardan en la carpeta principal de la carpeta que contiene el archivo jar de inicio rápido (.jar). Por ejemplo, si tiene el archivo jar AEM ubicado en /InstallationKits/AEM, la copia de seguridad se generará en /InstallationKits. También puede especificar un destinatario para una ubicación de su elección.
 
 Si **TargetPath** es un directorio, la imagen del repositorio se crea en este directorio. Si el mismo directorio se utiliza varias veces (o siempre) para almacenar la copia de seguridad,
 
@@ -100,18 +103,19 @@ Si **TargetPath** es un directorio, la imagen del repositorio se crea en este di
 >* el proceso de compresión lo realiza el repositorio y puede influir en su rendimiento.
 >* Retrasa el proceso de backup.
 >* Hasta Java 1.6 Java sólo puede crear archivos ZIP de hasta 4 gigabytes.
+
 >
 >
 Si necesita crear un ZIP como formato de copia de seguridad, debe realizar una copia de seguridad en un directorio y luego utilizar un programa de compresión para crear el archivo zip.
 
-**Retraso** Indica un retraso de tiempo (en milisegundos) para que el rendimiento del repositorio no se vea afectado. De forma predeterminada, la copia de seguridad del repositorio se ejecuta a toda velocidad. Puede ralentizar la creación de una copia de seguridad en línea para que no ralentice otras tareas.
+**Retraso** Indica un tiempo de espera (en milisegundos), de modo que el rendimiento del repositorio no se ve afectado. De forma predeterminada, la copia de seguridad del repositorio se ejecuta a toda velocidad. Puede ralentizar la creación de una copia de seguridad en línea para que no ralentice otras tareas.
 
 Cuando utilice un retraso muy grande, asegúrese de que el backup en línea no dure más de 24 horas. Si lo hizo, descarte esta copia de seguridad, ya que podría no contener todos los binarios.\
 Un retraso de 1 milisegundo suele dar como resultado un uso del 10% de la CPU y un retraso de 10 milisegundos suele dar como resultado un uso de menos del 3% de la CPU. El retraso total en segundos se puede calcular de la siguiente manera: Tamaño del repositorio en MB, multiplicado por retraso en milisegundos, dividido por 2 (si se utiliza la opción zip) o dividido por 4 (al realizar una copia de seguridad en un directorio). Esto significa que una copia de seguridad en un directorio de un repositorio de 200 MB con una demora de 1 ms aumenta el tiempo de backup en unos 50 segundos.
 
 >[!NOTE]
 >
->Consulte [Cómo funciona](#how-aem-online-backup-works) AEM Online Backup para obtener detalles internos del proceso.
+>Consulte [Cómo funciona](#how-aem-online-backup-works) AEM copia de seguridad en línea para obtener detalles internos del proceso.
 
 Para crear una copia de seguridad:
 
@@ -122,7 +126,7 @@ Para crear una copia de seguridad:
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. En la consola de copia de seguridad, especifique la ruta **[de](#aem-online-backup)**destino y el**[ retraso](#aem-online-backup)**.
+1. En la consola de copia de seguridad, especifique la ruta **[de](#aem-online-backup)**Destinatario y el**[ retraso](#aem-online-backup)**.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -149,15 +153,15 @@ Para crear una copia de seguridad:
 
    >[!NOTE]
    >
-   >Si ha realizado una copia de seguridad en un directorio: una vez finalizado el proceso de copia de seguridad, AEM no escribirá en el directorio de destino.
+   >Si ha realizado una copia de seguridad en un directorio: una vez finalizado el proceso de copia de seguridad AEM no se escribirá en el directorio de destinatario.
 
-### Automatización del backup en línea de AEM {#automating-aem-online-backup}
+### Automatización del backup AEM en línea {#automating-aem-online-backup}
 
 Si es posible, la copia de seguridad en línea debe ejecutarse cuando haya poca carga en el sistema, por ejemplo por la mañana.
 
 Las copias de seguridad se pueden automatizar mediante los clientes `wget` o `curl` HTTP. A continuación se muestran ejemplos de cómo automatizar el backup mediante curl.
 
-#### Realizar una copia de seguridad del directorio de Target predeterminado {#backing-up-to-the-default-target-directory}
+#### Realizar una copia de seguridad del directorio de Destinatarios predeterminado {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
@@ -174,7 +178,7 @@ El comando curl se devuelve inmediatamente, por lo que debe controlar este direc
 * nombre del archivo zip resultante: `backup.zip`
 * nombre del directorio temporal: `backup.f4d5.temp`
 
-#### Realizar una copia de seguridad de un directorio de Target no predeterminado {#backing-up-to-a-non-default-target-directory}
+#### Copia de seguridad de un directorio de Destinatario no predeterminado {#backing-up-to-a-non-default-target-directory}
 
 Normalmente, el archivo o directorio de copia de seguridad se crea en el servidor en la carpeta principal de la carpeta que contiene la `crx-quickstart` carpeta.
 
@@ -188,11 +192,11 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!CAUTION]
 >
->Al utilizar un servidor de aplicaciones diferente (como JBoss), es posible que la copia de seguridad en línea no funcione según lo esperado, ya que el directorio de destino no se puede escribir. En este caso, póngase en contacto con la asistencia técnica.
+>Al utilizar un servidor de aplicaciones diferente (como JBoss), es posible que la copia de seguridad en línea no funcione según lo esperado, ya que el directorio destinatario no se puede escribir. En este caso, póngase en contacto con la asistencia técnica.
 
 >[!NOTE]
 >
->También se puede activar una copia de seguridad [con los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
+>También se puede activar una copia de seguridad [utilizando los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
 
 ### Backup de Instantánea del Sistema de Archivos {#filesystem-snapshot-backup}
 
@@ -202,49 +206,49 @@ El proceso descrito aquí es especialmente adecuado para repositorios grandes.
 >
 >Si desea utilizar este método de copia de seguridad, su sistema debe admitir copias instantáneas del filesystem. Por ejemplo, para Linux esto significa que sus sistemas de ficheros deben colocarse en un volumen lógico.
 
-1. Realice una instantánea del sistema de archivos en el que se implementa AEM.
+1. Haga una instantánea del sistema de archivos en el que se implementa el AEM.
 
 1. Monte la instantánea del sistema de archivos.
 1. Realice una copia de seguridad y desmonte la instantánea.
 
-### Cómo funciona AEM Online Backup {#how-aem-online-backup-works}
+### Cómo funciona AEM backup en línea {#how-aem-online-backup-works}
 
-El respaldo en línea de AEM consta de una serie de acciones internas para garantizar la integridad de los datos a los que se realiza una copia de seguridad y la creación de los archivos de copia de seguridad. Éstos se enumeran a continuación para los interesados.
+AEM Online Backup está compuesto por una serie de acciones internas para garantizar la integridad de los datos a los que se realiza backup y de los archivos de backup que se están creando. Éstos se enumeran a continuación para los interesados.
 
 La copia de seguridad en línea utiliza el siguiente algoritmo:
 
-1. Al crear un archivo zip, el primer paso es crear o localizar el directorio de destino.
+1. Al crear un archivo zip, el primer paso es crear o localizar el directorio destinatario.
 
-   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio comienza por `backup.` y termina por `.temp`; por ejemplo `backup.f4d3.temp`.
-   * Si realiza una copia de seguridad en un directorio, se utiliza el nombre especificado en la ruta de destino. Se puede utilizar un directorio existente; de lo contrario, se creará un nuevo directorio.
+   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio inicio con `backup.` y termina con `.temp`; por ejemplo `backup.f4d3.temp`.
+   * Si realiza una copia de seguridad en un directorio, se utiliza el nombre especificado en la ruta de destinatario. Se puede utilizar un directorio existente; de lo contrario, se creará un nuevo directorio.
 
-      Cuando se inicia la copia de seguridad, se crea un archivo vacío denominado `backupInProgress.txt` en el directorio de destino. Este archivo se elimina cuando la copia de seguridad finaliza.
+      Cuando se realiza la copia de seguridad, se crea un archivo vacío con el nombre `backupInProgress.txt` en el directorio de destinatario. Este archivo se elimina cuando la copia de seguridad finaliza.
 
-1. Los archivos se copian del directorio de origen al directorio de destino (o directorio temporal al crear un archivo zip). El almacén de segmentos se copia antes del almacén de datos para evitar daños en el repositorio. Los datos de índice y caché se omiten al crear la copia de seguridad. Como resultado, los datos de `crx-quickstart/repository/cache` y no `crx-quickstart/repository/index` se incluyen en la copia de seguridad. El indicador de la barra de progreso del proceso se encuentra entre 0% y 70% al crear un archivo zip, o entre 0% y 100% si no se crea ningún archivo zip.
+1. Los archivos se copian del directorio de origen al directorio de destinatario (o directorio temporal al crear un archivo zip). El almacén de segmentos se copia antes del almacén de datos para evitar daños en el repositorio. Los datos de índice y caché se omiten al crear la copia de seguridad. Como resultado, los datos de `crx-quickstart/repository/cache` y no `crx-quickstart/repository/index` se incluyen en la copia de seguridad. El indicador de la barra de progreso del proceso se encuentra entre 0% y 70% al crear un archivo zip, o entre 0% y 100% si no se crea ningún archivo zip.
 
-1. Si la copia de seguridad se está realizando en un directorio preexistente, se eliminarán los archivos &quot;antiguos&quot; del directorio de destino. Los archivos antiguos son archivos que no existen en el directorio de origen.
+1. Si la copia de seguridad se está realizando en un directorio preexistente, se eliminarán los archivos &quot;antiguos&quot; del directorio de destinatario. Los archivos antiguos son archivos que no existen en el directorio de origen.
 
-Los archivos se copian en el directorio de destino en cuatro etapas:
+Los archivos se copian en el directorio destinatario en cuatro etapas:
 
 1. En la primera etapa de la copia (indicador de progreso 0% - 63% al crear un archivo zip o 0% - 90% si no se crea ningún archivo zip), todos los archivos se copian mientras el repositorio se ejecuta normalmente. El proceso consta de dos fases:
 
    * Fase A: todo se copia excepto el almacén de datos (con retraso).
    * Fase B: solo se copia el almacén de datos (con retraso).
 
-1. En la segunda etapa de la copia (indicador de progreso 63% - 65,8% al crear un archivo zip o 90% - 94% si no se crea ningún archivo zip), solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la primera etapa de la copia. En función de la actividad del repositorio, esto puede variar desde ningún archivo hasta un número significativo de archivos (ya que la primera etapa de copia de archivos suele tardar mucho tiempo). El proceso de copia es similar a la primera etapa (fase A y fase B con retraso).
+1. En la segunda etapa de la copia (indicador de progreso 63% - 65,8% al crear un archivo zip o 90% - 94% si no se crea ningún archivo zip), solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la primera etapa de la copia. Dependiendo de la actividad del repositorio, esto puede variar desde ningún archivo hasta un número significativo de archivos (ya que la primera etapa de copia del archivo suele llevar mucho tiempo). El proceso de copia es similar a la primera etapa (fase A y fase B con retraso).
 1. En la tercera etapa de copia (indicador de progreso 65,8% - 68,6% al crear un archivo zip o 94% - 98% si no se crea ningún archivo zip), solo se copian los archivos que se crearon o modificaron en el directorio de origen desde que se inició la segunda etapa de copia. Según la actividad del repositorio, es posible que no haya archivos para copiar o que haya un número muy pequeño de archivos (ya que la segunda etapa de copia de archivos suele ser rápida). El proceso de copia es similar a la segunda etapa: Fase A y Fase B, pero sin demora.
 1. Las etapas de copia de archivos de uno a tres se realizan al mismo tiempo que se ejecuta el repositorio. Solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la tercera etapa de copia. Según la actividad del repositorio, es posible que no haya archivos para copiar, o que haya un número muy, muy pequeño de archivos (porque la segunda etapa de copia de archivos suele ser muy rápida). Indicador de progreso 68,6% - 70% al crear un archivo zip o 98% - 100% si no se crea ningún archivo zip. El proceso de copia es similar a la tercera etapa.
-1. Según el objetivo:
+1. Según el destinatario:
 
    * Si se ha especificado un archivo zip, ahora se crea desde el directorio temporal. Indicador de progreso 70% - 100%. A continuación, se elimina el directorio temporal.
-   * Si el destino era un directorio, el archivo vacío llamado `backupInProgress.txt` se elimina para indicar que la copia de seguridad ha finalizado.
+   * Si el destinatario era un directorio, se elimina el archivo vacío llamado `backupInProgress.txt` para indicar que la copia de seguridad ha finalizado.
 
 ## Restauración de la copia de seguridad {#restoring-the-backup}
 
 Puede restaurar una copia de seguridad de la siguiente manera:
 
 * En caso de que realice una copia de seguridad de instantáneas del sistema de archivos, puede simplemente restaurar una imagen del sistema.
-* En caso de que haya creado la copia de seguridad como archivo zip, solo tiene que descomprimir el contenido en una nueva carpeta e iniciar AEM desde esa ubicación.
+* En caso de que haya creado la copia de seguridad como archivo zip, solo tiene que descomprimir el contenido de una nueva carpeta y el AEM de inicio desde esa ubicación.
 
 ## Copia de seguridad de paquetes {#package-backup}
 
@@ -258,7 +262,7 @@ Cuando realiza una copia de seguridad de nodos mediante el Administrador de paqu
 
 * El contenido del repositorio debajo del árbol seleccionado.
 * Definiciones de tipo de nodo que se utilizan para el contenido del que realiza una copia de seguridad.
-* Definiciones de espacio de nombres que se utilizan para el contenido del que realiza una copia de seguridad.
+* Las definiciones de Área de nombres que se utilizan para el contenido del que realiza una copia de seguridad.
 
 Al realizar la copia de seguridad, AEM pierde la siguiente información:
 

@@ -1,6 +1,6 @@
 ---
-title: 'Exportar a CSV '
-seo-title: 'Exportar a CSV '
+title: 'Exportar a CSV  '
+seo-title: 'Exportar a CSV  '
 description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
 seo-description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 78%
 
 ---
 
 
-# Exportar a CSV {#export-to-csv}
+# Exportar a CSV  {#export-to-csv}
 
 **Al crear una exportación de CSV** puede exportar información sobre las páginas a un archivo CSV en el sistema local.
 

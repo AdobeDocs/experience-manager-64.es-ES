@@ -1,6 +1,6 @@
 ---
-title: Introducción a Comunidades de AEM para la habilitación
-seo-title: Introducción a Comunidades de AEM para la habilitación
+title: Introducción a AEM Communities para la habilitación
+seo-title: Introducción a AEM Communities para la habilitación
 description: Tutorial sobre cómo configurar una comunidad de habilitación
 seo-description: Tutorial sobre cómo configurar una comunidad de habilitación
 uuid: 25b43ee4-6fdd-496c-94fe-daf1d300aecb
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
 
-# Introducción a Comunidades de AEM para la habilitación {#getting-started-with-aem-communities-for-enablement}
+# Introducción a AEM Communities para la habilitación  {#getting-started-with-aem-communities-for-enablement}
 
-AEM Communities ayuda a las marcas a crear experiencias coherentes en todos los canales digitales y en persona, ya que facilita la activación entre empleados y clientes con un catálogo de recursos de activación, contenido asignado y recomendaciones dinámicas, todo ello dentro de una comunidad social para fomentar la participación.
+AEM Communities ayuda a las marcas a crear experiencias coherentes en canales digitales y en persona, ya que facilita la activación entre empleados y clientes con un catálogo de recursos de activación, contenido asignado y recomendaciones dinámicas, todo ello dentro de una comunidad social para fomentar la participación.
 
 A continuación se muestra un tutorial sobre la configuración rápida de una comunidad [de](overview.md#enablement-community) habilitación para fines de demostración o desarrollo.
 
-Para ver un tutorial sobre la configuración rápida de una comunidad [de](overview.md#engagement-community)participación, visite [Introducción a las comunidades](getting-started.md)de AEM.
+Para ver un tutorial sobre la configuración rápida de una comunidad [de](overview.md#engagement-community)participación, visite [Introducción a AEM Communities](getting-started.md).
 
 >[!NOTE]
 >

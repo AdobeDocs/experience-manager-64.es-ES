@@ -1,8 +1,8 @@
 ---
 title: Actualización del vínculo a la documentación
 seo-title: Actualización del vínculo a la documentación
-description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizado.
-seo-description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizado.
+description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizada.
+seo-description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizada.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 3%
 
 ---
 
 
 # Actualización del vínculo a la documentación {#updating-the-link-to-the-documentation}
 
-Puede acceder al contenido de ayuda predeterminado del espacio de trabajo de AEM Forms seleccionando **Ayuda > Ayuda** de Workspace. Señala la documentación en línea del sitio web de Adobe. Sin embargo, puede actualizarla para que apunte a cualquier otra dirección URL.
+Puede acceder al contenido de ayuda predeterminado del espacio de trabajo de AEM Forms seleccionando **Ayuda > Ayuda** de Workspace. Señala la documentación en línea en el sitio web de Adobe. Sin embargo, puede actualizarla para que apunte a cualquier otra dirección URL.
 
 Considere los siguientes casos de uso en los que puede que desee cambiar la dirección URL de ayuda predeterminada:
 

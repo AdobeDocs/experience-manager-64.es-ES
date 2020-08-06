@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
 
 # Elementos esenciales del blog {#blog-essentials}
 
-Desde AEM 6.1 Communities, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente los artículos de blog solo podían crearse en el entorno de creación y publicarse.
+Desde AEM comunidades 6.1, un blog es una actividad comunitaria. Los artículos de blog ahora se publican desde el entorno de publicación, donde anteriormente, los artículos de blog solamente podían crearse en el entorno del autor y publicarse.
 
 Los artículos de blog ahora pueden ser creados por cualquier miembro de la comunidad, a menos que estén restringidos a miembros privilegiados.
 
@@ -25,7 +28,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 >[!NOTE]
 >
->La infraestructura subyacente de la función de blog es la función de diario.
+>La infraestructura subyacente de la función de blog es la característica de historial.
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -37,7 +40,7 @@ La función de blog consta de dos componentes principales disponibles mediante l
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td> 
-   <td>social/diario/componentes/hbs/diario</td> 
+   <td>social/historial/componentes/hbs/historial</td> 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td> 
@@ -45,7 +48,7 @@ La función de blog consta de dos componentes principales disponibles mediante l
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.journal</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.historial</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -64,7 +67,7 @@ La función de blog consta de dos componentes principales disponibles mediante l
 
 ### Barra lateral de blog {#blog-sidebar}
 
-| **resourceType** | social/diario/componentes/hbs/barra lateral |
+| **resourceType** | social/historial/componentes/hbs/barra lateral |
 |---|---|
 | [**inclusible **](scf.md#add-or-include-a-communities-component) | No |
 | [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
@@ -91,13 +94,13 @@ Una estructura de sitio de comunidad que incluye la función [](functions.md#blo
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
 Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Comunidades, el uso de un almacén [](working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: introducción y uso del repositorio
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
 * [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
 * [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
@@ -110,9 +113,9 @@ Consulte Editor [principal](deploy-communities.md#primary-publisher) para obtene
 
 ## Permitir medios enriquecidos {#allowing-rich-media}
 
-La plataforma AEM bloquea los vínculos de otros sitios web para evitar ataques XSS, tal como se describe en
+La plataforma AEM bloquea los vínculos de otros sitios web para evitar los ataques XSS como se describe en
 
-* [Proteger contra secuencias de comandos entre sitios (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect contra scripts entre sitios (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 A partir de AEM 6.2, las modificaciones que anteriormente se requerían manualmente se incluyen en el archivo de configuración predeterminado AntiSamy.
 

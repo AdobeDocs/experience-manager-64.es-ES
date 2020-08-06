@@ -84,7 +84,7 @@ Para centrarse en un contenido específico, puede hacer clic en el icono de pant
 
 El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la parte superior para que pueda cambiar entre las dos páginas.
 
-![chlimage_1-356](assets/chlimage_1-356.png)
+![chlimage_1-354](assets/chlimage_1-356.png)
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5e1e0039-670e-4051-9f2a-e88162482467
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 65%
 
 ---
 
@@ -66,31 +69,31 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>o</p> <p>Persp</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga pulsada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de perspectiva<br /> . Suelte la tecla para volver al modo de Zoom.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga presionada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de perspectiva<br /> . Suelte la tecla para volver al modo de Zoom.</p> 
         <ul> 
         <li><strong>Zoom</strong>-Acercar y alejar la cámara, lo que la aleja del recurso<br /> que está viendo. El zoom es el comportamiento predeterminado de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
-        <li><strong>Perspectiva</strong>: cambia la distancia focal (también conocida como campo de visión) de la cámara mientras se mantiene el tamaño relativo del recurso en la vista. La perspectiva es el comportamiento alternativo de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
+        <li><strong>Perspectiva</strong>: cambia la distancia focal (también conocida como campo de vista) de la cámara mientras se mantiene el tamaño relativo del recurso en la vista. La perspectiva es el comportamiento alternativo de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbit</p> <p>o</p> <p>Panorámica</p> </td> 
       <td><p>Toque o haga clic para alternar entre los modos Orbit y Pan.</p> <p>O bien, mantenga pulsada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de desplazamiento. Suelte la tecla para volver al modo de Giro.</p> 
         <ul> 
-        <li><strong>Orbit</strong>: mueve la cámara de visualización en una esfera centrada en un punto de destino que se encuentra cerca del centro del recurso 3D como valor predeterminado. El giro es el comportamiento predeterminado al arrastrar con el botón izquierdo o al arrastrar con un solo toque en dispositivos móviles.</li> 
+        <li><strong>Orbit</strong>: Mueve la cámara de visualización en una esfera centrada en un punto de destinatario que se encuentra cerca del centro del recurso 3D por defecto. El giro es el comportamiento predeterminado al arrastrar con el botón izquierdo o al arrastrar con un solo toque en dispositivos móviles.</li> 
         <li><strong>Recorrido</strong>: mueve la cámara en el plano de visualización. El punto de destino se mueve en consecuencia, de manera que las acciones de giro posteriores moverán la cámara alrededor de un nuevo punto de destino. La panorámica es el comportamiento alternativo al arrastrar con el botón izquierdo y al arrastrar con un solo toque.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Examinar</p> <p>o</p> <p>Destino</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Examinar y Destino.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Examinar y Destinatario.</p> 
         <ul> 
-        <li><strong>Toque</strong>o toque para entrar en el modo de Target.</li> 
-        <li><strong>Puntee</strong>en un punto del recurso 3D o haga clic en él para centrar la vista en esa parte del recurso.<br /> Las acciones de giro utilizan el nuevo punto de destino.</li> 
+        <li><strong>Examine</strong>-Toque o haga clic para entrar en el modo Destinatario.</li> 
+        <li><strong>Destinatario</strong>: toque o haga clic en un punto del recurso 3D para centrar la vista en esa parte del recurso.<br /> Las acciones de giro utilizan el nuevo punto de destino.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td>Restablecer</td> 
-      <td>Toque o haga clic para restaurar el punto de destino de vista al centro del modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toque o haga clic para restaurar el punto de destinatario de la vista al centro del modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
       </tr> 
     </tbody> 
     </table>

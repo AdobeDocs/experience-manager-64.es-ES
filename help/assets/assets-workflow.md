@@ -39,7 +39,7 @@ Utilice flujos de trabajo en recursos digitales para activar el recurso o crear 
 >
 >Si un flujo de trabajo disponible en la IU clásica no está disponible en la IU táctil, como [!UICONTROL Solicitud de activación] y [!UICONTROL Solicitud de desactivación], consulte [Creación de modelos](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)de flujo de trabajo.
 
-## Aplicación de un flujo de trabajo a un recurso de AEM {#apply-a-workflow-to-an-aem-asset}
+## Aplicación de un flujo de trabajo a un recurso AEM {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.

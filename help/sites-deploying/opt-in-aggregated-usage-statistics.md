@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## Introducción {#introduction}
 
-Puede ayudar a mejorar Adobe Marketing Cloud enviando estadísticas de Adobe sobre cómo interactúa con AEM. Esta información no contiene ningún dato sobre los visitantes del sitio de su empresa y solo se utilizará para ayudar a Adobe a ofrecer asistencia técnica y mejorar su experiencia de usuario.
+Puede ayudar a mejorar Adobe Marketing Cloud enviando estadísticas de Adobe sobre cómo interactúa con AEM. Esta información no contiene datos sobre los visitantes del sitio de su compañía y solo se utilizará para ayudar a Adobe a ofrecer, apoyar y mejorar su experiencia de usuario.
 
 Puede optar por la recopilación de estadísticas de uso mediante la IU táctil o la consola web.
 
 >[!NOTE]
 >
->Existen diversas regulaciones de protección de datos y privacidad; por ejemplo, el RGPD y la CCPA. AEM Sites está listo para ayudar a los clientes con sus obligaciones de protección de datos y cumplimiento de la privacidad. Esta página guía a los clientes a través de los procedimientos para la inclusión (o exclusión) de la Recopilación de estadísticas de uso agregada.
+>Existen diversas regulaciones de protección de datos y privacidad; por ejemplo, el RGPD y la CCPA. AEM Sites está preparado para ayudar a los clientes con sus obligaciones de protección de datos y cumplimiento de la privacidad. Esta página guía a los clientes a través de los procedimientos para la inclusión (o exclusión) de la Recopilación de estadísticas de uso agregada.
 >
->Para obtener más información, consulte también el Centro de privacidad de [Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información, consulte también el Centro de privacidad del [Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->También puede optar por no participar en cualquier momento, ya sea mediante la consola [](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) web o seleccionando la opción de no participar en la pantalla de inclusión de AEM.
+>También puede optar por no participar en cualquier momento, ya sea mediante la consola [](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) web o si no selecciona la opción de no participar en la pantalla de AEM.
 
 ## Inclusión mediante la IU táctil {#opt-in-by-using-the-touch-ui}
 
-La primera vez que inicie AEM, puede optar por la participación mediante la IU táctil de la siguiente manera:
+La primera vez que realice el inicio de AEM, puede optar por la opción de participación mediante la IU táctil de la siguiente manera:
 
-1. En la pantalla de navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
+1. En la pantalla Navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
 
    ![usage_statistical snavigationscreen](assets/usage_statisticsnavigationscreen.png)
 

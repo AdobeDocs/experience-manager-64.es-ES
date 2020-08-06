@@ -74,5 +74,5 @@ El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experie
 >
 >* [Descargar recursos](drm.md)protegidos con DRM.
 >* [Descargue recursos mediante la aplicación de escritorio Experience Manager en el escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)de Windows o Mac.
->* [Descargue recursos mediante Adobe Assets Link desde las aplicaciones](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)compatibles de Adobe Creative Cloud.
+>* [Descargue recursos mediante el vínculo Recursos de Adobe desde las aplicaciones](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)de Adobe Creative Cloud admitidas.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Seguridad de Documento | Gestión de datos de usuario {#document-security-handling-user-data}
 
-La seguridad de documento de AEM Forms le permite crear, almacenar y aplicar ajustes de seguridad predefinidos a sus documentos. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger documentos mediante políticas. Una directiva es una recopilación de información que incluye la configuración de seguridad y una lista de usuarios autorizados. Puede aplicar una política a uno o varios documentos y autorizar a los usuarios que se agreguen en la administración de usuarios JEE de AEM Forms.
+La seguridad de AEM Forms documento le permite crear, almacenar y aplicar a sus documentos configuraciones de seguridad predefinidas. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger documentos mediante políticas. Una directiva es una recopilación de información que incluye la configuración de seguridad y una lista de usuarios autorizados. Puede aplicar una política a uno o varios documentos y autorizar a los usuarios que se agreguen en la administración de usuarios de AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -211,6 +211,6 @@ Haga lo siguiente para eliminar los datos de seguridad de documento para un ID p
    >
    >Los administradores pueden buscar, acceder y eliminar datos de usuario de las políticas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de Documento > Mis políticas]** mediante la consola de administración.
 
-1. Elimine los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte Administración de usuarios [de formularios | Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
-1. Inicio del servidor de AEM Forms.
+1. Elimine los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte Administración de usuarios de [Forms | Gestión de datos](/help/forms/using/user-management-handling-user-data.md)de usuario.
+1. Inicio del servidor AEM Forms.
 

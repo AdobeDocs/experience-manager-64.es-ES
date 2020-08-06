@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1061'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +40,7 @@ En Proyectos, puede crear un proyecto, asociar recursos al proyecto y, además, 
 >
 >For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and **/home/groups**.
 
-## Creación de un proyecto  {#creating-a-project}
+## Creación de un proyecto    {#creating-a-project}
 
 En la versión básica, AEM proporciona estas plantillas para elegir al crear un proyecto:
 

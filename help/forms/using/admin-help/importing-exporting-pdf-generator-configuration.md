@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ El archivo de configuración contiene la información de conversión del generad
 
 >[!NOTE]
 >
->No puede cambiar la configuración de tiempo de espera para el generador de PDF importando un archivo nativo2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo para fines informativos y muestra la configuración actual en el generador de PDF. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de los parámetros de rendimiento de PDF Generator&quot; en [Instalación e implementación de formularios](https://www.adobe.com/go/learn_aemforms_installJBoss_63)AEM.
+>No puede cambiar la configuración de tiempo de espera para el generador de PDF importando un archivo nativo2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo para fines informativos y muestra la configuración actual en el generador de PDF. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de los parámetros de rendimiento del generador de PDF&quot; en [Instalación e implementación de AEM formularios](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Exportar el archivo de configuración actual {#export-your-current-configuration-file}
 
@@ -31,7 +34,7 @@ El archivo de configuración contiene la información de conversión del generad
    * Para exportar todos los ajustes con nombre, seleccione Descargar toda la configuración.
    * Para exportar solo una configuración de Adobe PDF, configuración de seguridad o configuración de tipo de archivo, seleccione Descargar configuración mínima.
 
-      Si va a exportar una configuración mínima, seleccione los ajustes de Adobe PDF, seguridad y tipo de archivo que desea exportar.
+      Si va a exportar una configuración mínima, seleccione la configuración de Adobe PDF, seguridad y tipo de archivo que desea exportar.
 
 1. Haga clic en Descargar y guarde el archivo XML en una ubicación adecuada.
 

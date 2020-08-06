@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
 
 # Herramienta de conversión de cuadro de diálogo{#dialog-conversion-tool}
 
-La herramienta de conversión de cuadro de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basada en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo duplicado diseñado para la interfaz de usuario estándar, basado en la interfaz de usuario de Granite y Coral 3.
+La herramienta de conversión de cuadro de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basada en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo de duplicado diseñado para la interfaz de usuario estándar, basado en la interfaz de usuario de Granite y Coral 3.
 
-El objetivo de esta herramienta es automatizar la actualización en la medida de lo posible, aumentar la eficiencia y reducir los errores. Sin embargo, como la herramienta no puede abarcar todos los escenarios, el proceso no puede automatizarse completamente y el usuario debe revisar los diálogos convertidos y posiblemente realizar ajustes adicionales. La herramienta está pensada como una ayuda para ayudarle a iniciar el proceso de conversión, pero no para tomar el control total de la conversión.
+El objetivo de esta herramienta es automatizar la actualización en la medida de lo posible, aumentar la eficiencia y reducir los errores. Sin embargo, como la herramienta no puede abarcar todos los escenarios, el proceso no puede automatizarse completamente y el usuario debe revisar los diálogos convertidos y posiblemente realizar ajustes adicionales. La herramienta está pensada como una ayuda para ayudarle a realizar el inicio del proceso de conversión, pero no para tomar el control total de la conversión.
 
 La herramienta creará el nuevo cuadro de diálogo utilizando la IU granita estándar y la IU basada en Coral 3, pero omitirá lo que no puede convertir. Por lo tanto, el cuadro de diálogo resultante puede contener nodos del cuadro de diálogo original copiados tal cual, si ninguna regla coincide con ese componente específico. Además, un componente convertido puede tener algunas propiedades sin convertir, ya que no había ninguna regla apropiada para convertirlas.
 
@@ -46,7 +49,7 @@ Puede encontrar el código de esta página en GitHub
 
 >[!NOTE]
 >
->AEM no se envía con la herramienta de conversión de cuadro de diálogo. Debe descargarlo e instalarlo para utilizarlo.
+>AEM se envía con la herramienta de conversión de cuadro de diálogo. Debe descargarlo e instalarlo para utilizarlo.
 
 Siga estos pasos para instalar la herramienta de conversión de cuadro de diálogo.
 
@@ -73,21 +76,22 @@ Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-   En la tabla se muestran todos los cuadros de diálogo preexistentes debajo de la ruta introducida. Cada cuadro de diálogo tiene su tipo en la lista. Los tipos incluyen:
+   La tabla lista todos los cuadros de diálogo heredados existentes debajo de la ruta introducida. Cada cuadro de diálogo tiene su tipo en la lista. Los tipos incluyen:
 
-   * **** Clásico: Nodos de tipo `cq:Dialog` que tienen nombre de nodo `dialog` o `design_dialog`
-   * **** Coral 2: Nodos con nombre `cq:dialog` o `cq:design_dialog` que tienen una interfaz de usuario de Granite/tipo de recurso Coral 2 en el nodo de contenido secundario
-   Cada fila contiene un vínculo para ver el cuadro de diálogo y un vínculo a CRXDE Lite para ver su estructura de nodos.
+   * **Clásico:** Nodos de tipo `cq:Dialog` que tienen nombre de nodo `dialog` o `design_dialog`
+   * **Coral 2:** Nodos con nombre `cq:dialog` o `cq:design_dialog` que tienen una interfaz de usuario de Granite/tipo de recurso Coral 2 en el nodo de contenido secundario
+
+   Cada fila contiene un vínculo para la vista del cuadro de diálogo y un vínculo al CRXDE Lite para la vista de su estructura de nodos.
 
    >[!NOTE]
    >
    >Los componentes que no tienen un cuadro de diálogo para la IU clásica o Coral 2 en absoluto (es decir, diseñados con la IU de Granite / Coral 3) no aparecen en la lista.
 
-1. Seleccione uno o varios cuadros de diálogo para la conversión y toque o haga clic en **Convertir cuadros de diálogo X para iniciar el proceso de conversión** .
+1. Seleccione uno o varios cuadros de diálogo para la conversión y toque o haga clic en **Convertir cuadros de diálogo X para inicio del proceso de conversión** .
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Los cuadros de diálogo seleccionados se muestran con los resultados de sus conversiones. Si la conversión se ha realizado correctamente, la fila contiene vínculos para ver el cuadro de diálogo convertido o para abrirlo en CRXDE Lite.
+1. Los cuadros de diálogo seleccionados se muestran con los resultados de sus conversiones. Si la conversión se ha realizado correctamente, la fila contiene vínculos para la vista del cuadro de diálogo convertido o para abrirlo en CRXDE Lite.
 
    Toque o haga clic en **Atrás** para volver a la herramienta de conversión de cuadro de diálogo.
 
@@ -113,7 +117,7 @@ La herramienta de conversión de cuadro de diálogo utiliza este método para re
 
 El algoritmo de reescritura toma como parámetro el árbol que se va a reescribir y un conjunto de reglas de reescritura. Pasa por el árbol en orden previo y, para cada nodo, comprueba si se aplica una regla para el subárbol que se origina en ese nodo. La primera regla que coincide se aplica a ese subárbol para reescribirla. A continuación, el recorrido se reinicia desde la raíz. El algoritmo se detiene tan pronto como se ha atravesado todo el árbol y ninguna regla ha coincidido con ningún subárbol. Como medida de optimización, el algoritmo rastrea un conjunto de nodos que son finales y, por lo tanto, no es necesario volver a comprobar las coincidencias en los posteriores pasos. Depende de las reglas de reescritura definir qué nodos del árbol reescrito son finales y cuáles deben ser revisados por futuras pasadas del algoritmo.
 
-El punto de entrada para la conversión es el `DialogConversionServlet`, que se registra en las solicitudes POST a `/libs/cq/dialogconversion/content/convert.json`. Acepta un parámetro de solicitud de ruta, que es una matriz que contiene las rutas a los cuadros de diálogo que se deben convertir. Para cada cuadro de diálogo, el servlet vuelve a escribir el árbol de diálogo correspondiente aplicando todas las reglas de reescritura de cuadro de diálogo definidas.
+El punto de entrada para la conversión es el `DialogConversionServlet`, que se registra en las solicitudes del POST a `/libs/cq/dialogconversion/content/convert.json`. Acepta un parámetro de solicitud de ruta, que es una matriz que contiene las rutas a los cuadros de diálogo que se deben convertir. Para cada cuadro de diálogo, el servlet vuelve a escribir el árbol de diálogo correspondiente aplicando todas las reglas de reescritura de cuadro de diálogo definidas.
 
 ### Reescribir tipos de reglas {#rewrite-rule-types}
 
@@ -163,7 +167,7 @@ Si la propiedad a la que se hace referencia no existe en el árbol original, se 
 
 `${<path>:<default>}`
 
-Las propiedades que contienen caracteres &#39; `:`&#39; se pueden citar con comillas simples para evitar conflictos al proporcionar un valor predeterminado. Las propiedades booleanas se anulan si el prefijo de la expresión es &#39; `!`&#39;. Las propiedades asignadas se pueden multivalor, en cuyo caso se les asignará el valor de la primera propiedad que exista en el árbol coincidente.
+Las propiedades que contienen caracteres &#39; `:`&#39; se pueden citar con comillas simples para evitar conflictos al proporcionar un valor predeterminado. Las propiedades booleanas se anulan si la expresión lleva el prefijo &#39; `!`&#39;. Las propiedades asignadas se pueden multivalor, en cuyo caso se les asignará el valor de la primera propiedad que exista en el árbol coincidente.
 
 Por ejemplo, se `one` asignará a la siguiente propiedad el valor de la propiedad `./two/three` del árbol original coincidente.
 
@@ -195,10 +199,10 @@ El árbol de reemplazo también admite las siguientes propiedades especiales (cu
 
 * `cq:rewriteFinal` (boolean)
 
-   Se trata de una medida de optimización que indica al algoritmo que el nodo que contiene esta propiedad es final y no es necesario volver a comprobar si hay reglas de reescritura coincidentes. Cuando se coloca en el nodo de reemplazo mismo, todo el árbol de reemplazo se considera final.
+   Se trata de una medida de optimización que indica al algoritmo que el nodo que contiene esta propiedad es final y no es necesario volver a comprobar si hay reglas de reescritura coincidentes. Cuando se coloca en el propio nodo de reemplazo, todo el árbol de reemplazo se considera final.
 * `cq:rewriteCommonAttrs` (boolean)
 
-   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para asignar propiedades relevantes del nodo raíz original a los equivalentes de atributos comunes Granite en la raíz de copia. Administrará los atributos de datos copiando/creando el `granite:data` subnodo en el destino y escribiendo `data-*` las propiedades allí.
+   Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para asignar propiedades relevantes del nodo raíz original a los equivalentes de atributos comunes Granite en la raíz de copia. Administrará los atributos de datos copiando/creando el `granite:data` subnodo en el destinatario y escribiendo `data-*` las propiedades allí.
 * `cq:rewriteRenderCondition` (boolean)
 
    Establezca esta propiedad en el nodo de reemplazo ( `rule`/ `replacement`) para copiar cualquier condición de procesamiento de Granite ( `rendercondition` o `granite:rendercondition``granite:rendercondition` ) nodo secundario del nodo raíz original en un elemento secundario de la raíz de copia.

@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-La asociación de una aplicación bajo demanda a una configuración de nube permite a Adobe Experience Manager (AEM) comunicarse directamente con un proyecto alojado de Mobile On-Demand estableciendo un vínculo bidireccional. Al vincular su aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, pancartas y colecciones dentro de AEM, pero también podrá utilizarlo en Mobile On-Demand.
+La asociación de una aplicación bajo demanda a una configuración de nube permite a Adobe Experience Manager (AEM) comunicarse directamente con un proyecto alojado de Mobile On-Demand estableciendo un vínculo bidireccional. Al vincular su aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, pancartas y colecciones dentro de AEM, pero también podrá ofrecer dicho contenido a Mobile On-Demand.
 
 A partir de ahí, se puede publicar, previsualizar y administrar el contenido. También puede importar contenido de Mobile On-Demand existente en AEM y realizar ediciones de contenido.
 
@@ -29,13 +32,13 @@ A partir de ahí, se puede publicar, previsualizar y administrar el contenido. T
 
 >[!CAUTION]
 >
->Antes de empezar a configurar la configuración de nube para la aplicación bajo demanda, debe estar familiarizado con AEM Mobile Provisioning y Configuring AEM Mobile On-Demand Services Client.
+>Antes de inicio de configurar la configuración de la nube para la aplicación bajo demanda, debe estar familiarizado con AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Para obtener más información, consulte [Configuración de los servicios](/help/mobile/aem-mobile-setup.md) bajo demanda de AEM Mobile en la sección Administración.
+>Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
-Para configurar Mobile On-Demand Cloud Services, haga clic en el engranaje superior situado en la esquina superior derecha del mosaico **Administrar conexión** del tablero de aplicaciones.
+Para configurar los Cloud Services bajo demanda de Mobile, haga clic en el engranaje superior situado en la esquina superior derecha del mosaico **Administrar conexión** del panel de la aplicación.
 
-Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte el panel de la aplicación [AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
+Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte [AEM Mobile Application Panel](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
 ### Configuración del vínculo a la configuración de nube {#setting-up-link-to-cloud-configuration}
 
@@ -43,7 +46,7 @@ Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibl
 >
 >Asegúrese de tener una configuración de cliente y nube bajo demanda existente.
 >
->Para obtener más información, consulte [Configuración de los servicios](/help/mobile/aem-mobile-setup.md) bajo demanda de AEM Mobile en la sección Administración.
+>Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
 En los pasos siguientes se describe la configuración del vínculo a la configuración de nube:
 
@@ -68,7 +71,7 @@ En los pasos siguientes se describe la configuración del vínculo a la configur
 
    >[!CAUTION]
    >
-   >Si intenta cambiar el proyecto al que está asociada esta aplicación mientras cambia de proyecto en el tablero, recibirá una advertencia para los problemas de integridad del contenido, como se muestra en la figura siguiente:
+   >Si intenta cambiar el proyecto al que está asociada esta aplicación mientras cambia de proyecto en el panel, recibirá una advertencia para los problemas de integridad del contenido, como se muestra en la figura siguiente:
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 

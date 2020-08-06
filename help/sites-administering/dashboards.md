@@ -1,8 +1,8 @@
 ---
 title: Tableros
 seo-title: Tableros
-description: Obtenga información sobre cómo crear, configurar y desarrollar nuevos tableros de AEM.
-seo-description: Obtenga información sobre cómo crear, configurar y desarrollar nuevos tableros de AEM.
+description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
+seo-description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 58%
 
 ---
 
@@ -72,7 +75,7 @@ Es posible que quiera tener varios tableros para ver información sobre el conte
 
 ### Información general {#overview}
 
-Los componentes de tablero no son más que componentes [normales de](/help/sites-developing/developing-components-samples.md)AEM. En esta sección se describen los componentes de informe que se envían con AEM.
+Los componentes de Panel no son más que componentes [AEM normales](/help/sites-developing/developing-components-samples.md). En esta sección se describen los componentes de informe que se envían con AEM.
 
 ### Componentes de informes analíticos web {#web-analytics-reporting-components}
 
@@ -91,7 +94,7 @@ Los componentes de informe se inician con una configuración predeterminada que 
 
 La ficha **Básico** permite acceder a las entradas de configuración siguientes:
 
-**Título** El título que se muestra en el tablero.
+**Título** El título que se muestra en el panel.
 
 **Tipo** de solicitud El modo en que se solicitan los datos.
 
@@ -121,7 +124,7 @@ Cada componente también define ajustes específicos.
 
 **Métricas** La lista de eventos que desea mostrar.
 
-**Elementos** Lista de elementos que desglosa los datos de métricas en el gráfico.
+**Elementos** La lista de elementos que desglosa los datos de métricas en el gráfico.
 
 #### Informe de lista clasificada {#ranked-list-report}
 
@@ -193,7 +196,7 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 El siguiente archivo Javascript se define en la Biblioteca `geout.reporting.topauthors` de [](/help/sites-developing/clientlibs.md) clientes como un elemento secundario del propio componente.
 
-El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
+El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consulta del repositorio a `cq:AuditEvent` nodos de lectura. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
 
 #### top_author.js {#top-authors-js}
 

@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
 
@@ -41,4 +44,4 @@ Esto permitirá que los consumidores de su API evolucionen junto con usted. Cuan
 
 ## Incluir información de tipo de milímetro cuando se exponga {#include-metatype-information-where-exposed}
 
-Al especificar información significativa sobre los tipos de metadatos, sus servicios y componentes serán más fáciles de entender en la consola Felix. Puede encontrar una lista de anotaciones y atributos de SCR en: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Al especificar información significativa sobre los tipos de metadatos, sus servicios y componentes serán más fáciles de entender en la consola Felix. Puede encontrar una lista de las anotaciones y los atributos del SCR en: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

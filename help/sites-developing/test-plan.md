@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ En algún momento puede asignar el equipo de prueba adecuado o una persona de pr
 
 ## Resumen o Información general
 
-Para los informes, debe proporcionar una visión general de los resultados de la prueba:
+Para fines de sistema de informes, debe proporcionar una descripción general de los resultados de la prueba:
 
 * Porcentaje de pruebas ya cubiertas.
 * Porcentaje de éxito/error.

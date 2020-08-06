@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Requisitos previos {#prerequisites}
 
-* [AEM 6.4 Platform](../../help/sites-deploying/deploy.md)
+* [Plataforma AEM 6.4](../../help/sites-deploying/deploy.md)
 
 * Licencia de AEM Communities
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 **Para la plataforma[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
-* Instalación de las últimas actualizaciones de [AEM 6.4](#aem-updates)
+* Instalar las últimas actualizaciones de [AEM 6.4](#aem-updates)
 
 * Si no utiliza los puertos predeterminados (4502, 4503), [configure los agentes de replicación](#replication-agents-on-author)
 * [replicar la clave criptográfica](#replicate-the-crypto-key)
@@ -74,14 +74,14 @@ ht-degree: 2%
       * No es una tienda UGC compartida:
 
          * UGC nunca se replica
-         * UGC solo visible en la instancia o clúster de AEM en el que se introdujo
+         * UGC solo visible en AEM instancia o clúster en el que se introdujo
       * El valor predeterminado es JSRP
 
    Para la función de **[habilitación](overview.md#enablement-community)**
 
    * [Instalar y configurar FFmpeg](ffmpeg.md)
    * [Instalación del controlador JDBC para MySQL](#jdbc-driver-for-mysql)
-   * [Instalación del motor SCORM de AEM Communities](#scorm-package)
+   * [Instalación del motor AEM Communities SCORM](#scorm-package)
    * [Instalar y configurar MySQL para la habilitación](mysql.md)
 
 
@@ -91,13 +91,13 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA incluye el paquete Communities. Para obtener información sobre las actualizaciones de AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulte las Notas [de la versión de](/help/release-notes/release-notes.md#release-information)AEM 6.4.
+AEM 6.4 Buques GA de Comunidades con paquete Communities. Para conocer las actualizaciones de AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulte [AEM Notas](/help/release-notes/release-notes.md#release-information)de la versión 6.4.
 
 ### Actualizaciones de AEM 6.4 {#aem-updates}
 
-A partir de AEM 6.3, las actualizaciones de Communities se entregan como parte de los paquetes de correcciones acumulativas de AEM y los paquetes de servicios.
+A partir de AEM 6.3, las actualizaciones a las comunidades se entregan como parte de AEM paquetes de correcciones acumulativas y Service Packs.
 
-Para las últimas actualizaciones de AEM 6.4, asegúrese de comprobar los paquetes de correcciones acumulativas y los paquetes de servicios de [Adobe Experience Manager 6.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
+Para obtener las últimas actualizaciones de AEM 6.4, asegúrese de comprobar los paquetes de correcciones acumulativas de [Adobe Experience Manager 6.4 y los Service Packs](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
 
 ### Historial de versiones {#version-history}
 
@@ -146,11 +146,11 @@ Encontrará más información sobre la instalación de paquetes en la página Co
 
 El Modelo de referencia de objetos de contenido compartido (SCORM) es una colección de estándares y especificaciones para el aprendizaje electrónico. SCORM también define cómo se puede empaquetar el contenido en un archivo ZIP transferible.
 
-El motor SCORM de AEM Communities es necesario para la [función de habilitación](overview.md#enablement-community) . Los paquetes de Scorm admitidos en la versión 6.4 de AEM Communities son:
+El motor AEM Communities SCORM es necesario para la [función de habilitación](overview.md#enablement-community) . Los paquetes de Scorm admitidos en la versión 6.4 de AEM Communities son:
 
-* **[cq -social- scorm -package, versión 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Este paquete SCORM es compatible con todas las versiones de AEM 6.4 Communities.
+* **[cq -social- scorm -package, versión 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Este paquete SCORM es compatible con todas las versiones de comunidades AEM 6.4.
 
-* **[cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**incluye el motor[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Este paquete SCORM es compatible con las comunidades AEM 6.4.2.x a partir de ahora.
+* **[cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**incluye el motor[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Este paquete SCORM es compatible AEM comunidades 6.4.2.x y posteriores.
 
 Para una nueva instalación del motor SCORM, debe utilizarse el paquete que contiene [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (que es [ cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)). Para que pueda reproducir recursos de aprendizaje compatibles con SCORM 2017.
 
@@ -191,7 +191,7 @@ Si lo desea, el nivel de registro se puede establecer en WARN para el `RusticiSo
 
 Para trabajar con registros, consulte [Uso de registros de auditoría y archivos](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)de registro.
 
-### MLS avanzados de AEM {#aem-advanced-mls}
+### MLS AEM avanzado {#aem-advanced-mls}
 
 Para que la colección SRP (MSRP o DSRP) admita la búsqueda multilingüe avanzada (MLS), se necesitan nuevos complementos Solr además de una configuración personalizada de esquema y Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable.
 
@@ -200,7 +200,7 @@ La descarga avanzada de MLS (también conocida como &#39;phasetwo&#39;) está di
 * [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * Versión 1.2.40, 6 de abril de 2016
-   * Descargar AEM-SOLR-MLS-phasetwo-1.2.40.zip
+   * Descargue AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Para obtener información detallada y sobre la instalación, visite [Solr Configuration](solr.md) for SRP.
 
@@ -208,30 +208,30 @@ Para obtener información detallada y sobre la instalación, visite [Solr Config
 
 **Paquetes visibles en Adobe AEM Cloud**
 
-Los vínculos a los paquetes de esta página no requieren ninguna instancia de AEM en ejecución, ya que se usarán para el uso compartido de paquetes en `adobeaemcloud.com`. Mientras los paquetes son visibles, el `Install`botón es para instalar los paquetes en un sitio alojado de Adobe. Si desea realizar la instalación en una instancia de AEM local, la selección `Install`producirá un error.
+Los vínculos a los paquetes de esta página no requieren ninguna instancia de AEM en ejecución, ya que son para el uso compartido de paquetes en `adobeaemcloud.com`. Mientras los paquetes son visibles, el `Install`botón es para instalar los paquetes en un sitio alojado de Adobe. Si desea realizar la instalación en una instancia de AEM local, la selección `Install`producirá un error.
 
-**Cómo instalar en una instancia local de AEM**
+**Cómo instalar en una instancia de AEM local**
 
 Para instalar los paquetes visibles en `adobeaemcloud.com` una instancia de AEM local, el paquete debe descargarse primero en un disco local:
 
 * Select the **[!UICONTROL Assets]** tab
 * Seleccione **[!UICONTROL descargar en disco]**
 
-En la instancia local de AEM, utilice el administrador de paquetes (por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) para cargar en el repositorio de paquetes de AEM local.
+En la instancia de AEM local, utilice el administrador de paquetes (por ejemplo, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) para cargar en el repositorio de paquetes de AEM local.
 
-Como alternativa, si accede al paquete mediante el uso compartido de paquetes desde la instancia local de AEM (por ejemplo, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), el `Download`botón se descargará en el repositorio de paquetes de la instancia local de AEM.
+Como alternativa, si accede al paquete mediante el uso compartido de paquetes desde la instancia de AEM local (por ejemplo, [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), el `Download`botón se descargará en el repositorio de paquetes de la instancia de AEM local.
 
-Una vez en el repositorio de paquetes de la instancia local de AEM, utilice el administrador de paquetes para instalar el paquete.
+Una vez en el repositorio de paquetes de la instancia de AEM local, utilice el administrador de paquetes para instalar el paquete.
 
 Para obtener más información, visite [Cómo trabajar con paquetes](../../help/sites-administering/package-manager.md#package-share).
 
 ## Implementaciones recomendadas {#recommended-deployments}
 
-En los AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y a menudo se denomina proveedor de recursos de [almacenamiento (SRP)](working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
+En AEM Communities, un almacén común se utiliza para almacenar contenido generado por el usuario (UGC) y se le suele llamar proveedor de recursos de [almacenamiento (SRP)](working-with-srp.md). La implementación recomendada se centra en elegir una opción de SRP para la tienda común.
 
 El almacén común admite moderación y análisis de UGC en el entorno de publicación, al tiempo que elimina la necesidad de [replicación](sync.md) de UGC.
 
-* [Almacenamiento](working-with-srp.md)de contenido de la comunidad: analiza las opciones de almacenamiento de SRP para las comunidades de AEM
+* [Almacenamiento](working-with-srp.md)de contenido de la comunidad: analiza las opciones de almacenamiento de SRP para las comunidades AEM
 
 * [Topologías](topologies.md)recomendadas: analiza la topología que se va a usar en función del caso de uso y la opción de SRP
 
@@ -245,7 +245,7 @@ Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.4](
 
 ### Editor principal {#primary-publisher}
 
-Cuando la implementación elegida es un conjunto de servidores [de](topologies.md#tarmk-publish-farm)publicación, una instancia de publicación de AEM debe identificarse como la **`primary publisher`** de actividades que no deben producirse en todas las instancias, como las funciones que dependen de **las notificaciones** o **Adobe Analytics**.
+Cuando la implementación elegida es un conjunto de servidores [de](topologies.md#tarmk-publish-farm)publicación, una instancia de publicación AEM debe identificarse como la **`primary publisher`** de actividades que no deben producirse en todas las instancias, como las funciones que dependen de **las notificaciones** o **Adobe Analytics**.
 
 De forma predeterminada, la configuración de `AEM Communities Publisher Configuration` OSGi se configura con la casilla de verificación **`Primary Publisher`** activada, de modo que todas las instancias de publicación de un conjunto de servidores de publicación se identificarán como principales.
 
@@ -282,7 +282,7 @@ Hay dos agentes de replicación en el entorno de creación que necesitan configu
 * Siga el mismo procedimiento para ambos agentes:
 
    * **Agente predeterminado (publicación)**
-   * **Agente de replicación inversa (publicar en sentido inverso)**
+   * **Agente de replicación inversa (publicar inversa)**
 
       1. Seleccione el agente
       1. Select **[!UICONTROL edit]**
@@ -296,7 +296,7 @@ Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 
 
 ![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### Agente de replicación inversa (publicar en sentido inverso) {#reverse-replication-agent-publish-reverse}
+#### Agente de replicación inversa (publicar inversa) {#reverse-replication-agent-publish-reverse}
 
 ![chlimage_1-413](assets/chlimage_1-413.png)
 
@@ -327,7 +327,7 @@ Para habilitar el servicio de túnel:
 
 ### Replicar la clave de cifrado {#replicate-the-crypto-key}
 
-Existen dos funciones de AEM Communities que requieren que todas las instancias de servidor de AEM utilicen las mismas claves de cifrado. Son [Analytics](analytics.md) y [ASRP](asrp.md).
+Existen dos funciones de AEM Communities que requieren que todas las instancias de servidor AEM utilicen las mismas claves de cifrado. Son [Analytics](analytics.md) y [ASRP](asrp.md).
 
 A partir de AEM 6.3, el material clave se almacena en el sistema de archivos y ya no en el repositorio.
 
@@ -350,7 +350,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 
 
 
-* Para cada instancia de AEM de destinatario
+* Para cada instancia de AEM destinatario
 
    * Navegar a la carpeta de datos
 
@@ -358,7 +358,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Pegar los 2 archivos copiados anteriormente
-   * Es necesario [actualizar el paquete](#refresh-the-granite-crypto-bundle) Granite Crypto si la instancia de destinatario AEM se está ejecutando en este momento
+   * Es necesario [actualizar el paquete](#refresh-the-granite-crypto-bundle) Granite Crypto si la instancia de destinatario AEM se está ejecutando en ese momento
 
 
 >[!CAUTION]
@@ -367,7 +367,7 @@ Para copiar el material clave del autor en todos los demás casos, es necesario:
 
 #### Replicación del repositorio {#repository-replication}
 
-El hecho de que el material clave esté almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
+El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -377,7 +377,7 @@ El hecho de que el material clave esté almacenado en el repositorio, como ocurr
 
 Con el material clave almacenado en el repositorio, la manera de replicar la clave criptográfica de autor a otras instancias es la siguiente:
 
-Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * vaya a [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 * select `/etc/key`
@@ -428,9 +428,9 @@ En particular, tenga cuidado de utilizar el nombre de servidor correcto, no `loc
 
 ### Dispatcher {#dispatcher}
 
-Si utiliza un Dispatcher, consulte:
+Si utiliza un despachante, consulte:
 
-* Documentación de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) de AEM
+* Documentación de AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Configuración de Dispatcher para Comunidades](dispatcher.md)
 * [Problemas conocidos](troubleshooting.md#dispatcher-refetch-fails)

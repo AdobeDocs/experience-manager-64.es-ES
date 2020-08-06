@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9c4f8e1e-c2f7-4648-9a2a-104bd540a47a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
@@ -19,4 +22,4 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Para habilitar la barra de herramientas Comentario y marca en un archivo PDF que se visualiza mediante el complemento del navegador web de Adobe Reader, debe haber una colaboración en el servidor, como un servidor de revisión. Si no hay disponible un back-end de colaboración, debe guardar el archivo PDF en el equipo, revisar y marcar el archivo en Adobe Reader y enviarlo de nuevo al creador.
 
-Si se requieren comentarios en línea en un entorno que no sea de colaboración, póngase en contacto con el servicio de asistencia técnica de Adobe para obtener más información.
+Si se requiere realizar comentarios en línea en un entorno no colaborativo, póngase en contacto con el servicio de soporte técnico de Adobe para obtener más información.

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5fca5401-502d-483b-bfc1-ef53e2c041b7
 translation-type: tm+mt
 source-git-commit: 9fa15a44cf83a50538cea3fb37bcccf405f66738
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +40,7 @@ Para volver a habilitar la opción **Abrir en la IU** clásica en el menú Infor
    * **Ubicación de la superposición**: `/apps/`
    * **Coincidir tipos** de nodos: activo (seleccione la casilla de verificación)
 
-1. Agregue la siguiente propiedad de texto de varios valores al nodo superpuesto:
+1. Añada la siguiente propiedad de texto de varios valores al nodo superpuesto:
 
    `sling:hideProperties = ["granite:hidden"]`
 

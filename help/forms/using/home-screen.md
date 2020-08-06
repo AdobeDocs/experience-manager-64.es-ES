@@ -23,12 +23,12 @@ Al iniciar sesión en la aplicación de AEM Forms, se le redirige a la pantalla 
 
 ## Pantalla principal predeterminada {#default-home-screen}
 
-De forma predeterminada, la pantalla Inicio muestra todos los formularios, incluidos los puntos de inicio y las tareas (si el servidor conectado está habilitado para Flujo de trabajo de AEM Forms), junto con las miniaturas asociadas. Puede especificar las miniaturas en el servidor de AEM Forms.
+De forma predeterminada, la pantalla Inicio muestra todos los formularios, incluidos los puntos de inicio y las tareas (si el servidor conectado está habilitado para AEM Forms Workflow), junto con las miniaturas asociadas. Puede especificar las miniaturas en el servidor de AEM Forms.
 
 La siguiente figura está anotada con llamadas a los componentes esenciales en la pantalla de inicio predeterminada.
-![Pantalla](assets/home-screen-1.png)principal de la aplicación de formularios[Haga clic para ampliar](assets/home-screen-1-1.png)
+![Pantalla](assets/home-screen-1.png)principal de la aplicación de Forms[Haga clic para ampliar](assets/home-screen-1-1.png)
 
-1. **Botón** de menú: Toque el botón **Menú** para desplazarse a Tareas, Formularios, Bandeja de salida y Configuración. Si la aplicación de AEM Forms está conectada a un servidor JEE de AEM Forms, puede ver la opción Tareas. La opción Tareas también almacena los borradores creados a partir de tareas en un proceso. En los servidores OSGi de AEM Forms, la opción Tareas está oculta. Outbox almacena los formularios y borradores guardados antes de que se sincronicen con el servidor. Todos los formularios y borradores guardados en la Bandeja de salida se cargan en el servidor de AEM Forms cuando la aplicación se [sincroniza con el servidor](/help/forms/using/sync-app.md). Para obtener información sobre la configuración, consulte [Actualización de la configuración](/help/forms/using/update-general-settings.md)general.
+1. **Botón** de menú: Toque el botón **Menú** para desplazarse a Tareas, Forms, Bandeja de salida y Configuración. Si la aplicación de AEM Forms está conectada a un servidor AEM Forms JEE, puede ver la opción Tareas. La opción Tareas también almacena los borradores creados a partir de tareas en un proceso. Para los servidores OSGi de AEM Forms, la opción Tareas está oculta. Outbox almacena los formularios y borradores guardados antes de que se sincronicen con el servidor. Todos los formularios y borradores guardados en la Bandeja de salida se cargan en el servidor de AEM Forms cuando la aplicación se [sincroniza con el servidor](/help/forms/using/sync-app.md). Para obtener información sobre la configuración, consulte [Actualización de la configuración](/help/forms/using/update-general-settings.md)general.
 1. **Tarea o formulario**: Toque la tarea o el formulario de la lista con los que desee trabajar.
 1. **Puntos suspensivos** horizontales: Indica que hay acciones disponibles para el formulario. Al tocar los puntos suspensivos se muestran las acciones y la descripción que ha proporcionado el autor. La opción **Eliminar borrador** y **completar** está visible al tocar los puntos suspensivos.
 1. **Icono** Actualizar: Toque el icono de actualización para sincronizar la aplicación con el servidor de AEM Forms.
@@ -41,5 +41,5 @@ Puede cambiar la pantalla de inicio predeterminada de la aplicación desde la co
 
 El cambio realizado en la configuración de la pantalla de inicio de la aplicación afecta a la pantalla de inicio del usuario registrado o del dispositivo móvil actual.
 
-Sin embargo, el cambio realizado en HTML Workspace afecta a todos los usuarios de la aplicación de AEM Forms que iniciaron sesión en el servidor de AEM Forms.
+Sin embargo, el cambio realizado en el espacio de trabajo HTML afecta a todos los usuarios de la aplicación de AEM Forms que iniciaron sesión en el servidor de AEM Forms.
 

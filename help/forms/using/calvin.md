@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de interfaz 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>Reglas de expresión</p> <p> </p> </td> 
+   <td><p>Reglas de Expresión</p> <p> </p> </td> 
    <td> 
     <ul> 
      <li>¿Las expresiones asociadas con objetos de formulario, como calculate, visible, ejecutan secuencias de comandos después de salir de un campo, y se ejecutan después de realizar las operaciones de interfaz de usuario correspondientes?<br /> </li> 
@@ -122,7 +125,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
 >[!NOTE]
 >
->La clientlib granite.testing.calvin.af contiene todas las API de formularios adaptables. Estas API forman parte del espacio de nombres de llamada.
+>La clientlib granite.testing.calvin.af contiene todas las API de formularios adaptables. Estas API forman parte de la Área de nombres de cálculo.
 
 ![1_post_registration](assets/1_aftestregistration.png)
 
@@ -159,12 +162,12 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    * Nombre: testForm (su nombre de formulario)
    * Tipo: cq:ClientLibraryFolder
 
-1. Agregue las siguientes propiedades al nodo recién creado (aquí testForm) para probar un formulario adaptable:
+1. Añada las siguientes propiedades en el nodo recién creado (aquí testForm) para probar un formulario adaptable:
 
    | **Propiedad** | **Tipo** | **Value** |
    |---|---|---|
    | categorías | Cadena[] | granite.testing.hobbes.testing, granite.testing.hobbes.testing.testForm |
-   | dependencias | Cadena[] | granite.testing.calvin.testing |
+   | dependencias | Cadena[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -282,7 +285,7 @@ Los grupos de pruebas se pueden ejecutar de forma individual. Al ejecutar un gru
 
 Un icono de marca de verificación indica una prueba pasada: ![marca de verificación](assets/checkmark.png)
 
-El icono &quot;X&quot; indica que la prueba ha fallado: ![cruz](assets/cross.png)
+El icono &quot;X&quot; indica que la prueba ha fallado: ![cross](assets/cross.png)
 
 Para ejecutar un grupo de pruebas:
 
@@ -302,7 +305,7 @@ Para ejecutar un grupo de pruebas:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Los pasos para probar los formularios adaptables de AEM son similares a los pasos para probar la interfaz de usuario de AEM. Para obtener más información sobre la prueba de formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
+Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU AEM. Para obtener más información sobre la prueba de formularios adaptables, consulte los siguientes temas en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * Visualización de grupos de pruebas
 * Ejecución de varias pruebas
@@ -321,7 +324,7 @@ Los pasos para probar los formularios adaptables de AEM son similares a los paso
   </tr> 
   <tr> 
    <td><p>Caso de prueba</p> </td> 
-   <td><p>Un caso de prueba representa una tarea que un usuario realiza mediante su interfaz de usuario. Agregue casos de prueba a su grupo de pruebas para probar las actividades que realizan los usuarios.</p> </td> 
+   <td><p>Un caso de prueba representa una tarea que un usuario realiza mediante su interfaz de usuario. Añada casos de prueba a su grupo de pruebas para probar las actividades que realizan los usuarios.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Acciones</p> </td> 
@@ -329,7 +332,7 @@ Los pasos para probar los formularios adaptables de AEM son similares a los paso
   </tr> 
   <tr> 
    <td><p>Crear o publicar entorno</p> </td> 
-   <td><p>En general, los formularios se pueden probar en el entorno de creación o publicación. En el caso del entorno de publicación, de forma predeterminada, el acceso para ejecutar la prueba está restringido. Esto se debe a que todas las bibliotecas de cliente relacionadas con el ejecutor de pruebas se encuentran dentro de /libs en la estructura JCR.</p> </td> 
+   <td><p>En general, los formularios se pueden probar en el entorno de creación o publicación. En caso de publicación, de forma predeterminada, el acceso para ejecutar la prueba está restringido. Esto se debe a que todas las bibliotecas de cliente relacionadas con el ejecutor de pruebas se encuentran dentro de /libs en la estructura JCR.</p> </td> 
   </tr> 
  </tbody> 
 </table>

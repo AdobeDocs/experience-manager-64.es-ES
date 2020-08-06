@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
 
 # Personalización de la consola Sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
 
-## Adición de una columna personalizada a la consola Siteadmin (Siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Añadir una columna personalizada en la consola Siteadmin (Siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
 La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas. La consola se basa en un objeto JSON que se puede ampliar creando un servicio OSGI que implemente la `ListInfoProvider` interfaz. Este servicio modifica el objeto JSON que se envía al cliente para crear la consola.
 
@@ -33,6 +36,7 @@ Este tutorial paso a paso explica cómo mostrar una nueva columna en la consola 
 >
 >* la consola Recursos digitales
 >* la consola Community
+
 >
 
 
@@ -52,14 +56,14 @@ Los argumentos para ambos métodos son:
 
 La implementación de muestra a continuación:
 
-* Agrega una propiedad *estelar* para cada elemento, que es `true` si el nombre de la página comienza con un *e* y `false` no lo hace.
+* Añade una propiedad *con estrellas* para cada elemento, que es `true` si el nombre de la página inicio con un *e* y `false` de otro modo.
 
-* Agrega una *propiedad starredCount* , que es global para la lista y contiene el número de elementos de la lista con estrellas.
+* Añade una propiedad *starredCount* , que es global para la lista y contiene el número de elementos de lista con estrellas.
 
 Para crear el servicio OSGI:
 
 1. En CRXDE Lite, [cree un paquete](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
-1. Agregue el código de muestra siguiente.
+1. Añada el código de muestra siguiente.
 1. Cree el paquete.
 
 El nuevo servicio está en funcionamiento.
@@ -109,21 +113,22 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* La implementación debe decidir, en función de la solicitud y/o el recurso proporcionados, si debe agregar o no la información al objeto JSON.
 >* Si la `ListInfoProvider` implementación define una propiedad que ya existe en el objeto de respuesta, su valor será sobrescrito por el que proporcione.\
    >  Puede utilizar [la clasificación](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) del servicio para administrar el orden de ejecución de varias `ListInfoProvider` implementaciones.
+
 >
 
 
 
 ### Prueba del nuevo servicio {#testing-the-new-service}
 
-Cuando abre la consola Administración de sitios web y navega por el sitio, el explorador emite una llamada ajax para obtener el objeto JSON que se utiliza para crear la consola. Por ejemplo, cuando se desplaza a la `/content/geometrixx` carpeta, se envía la siguiente solicitud al servidor AEM para crear la consola:
+Cuando abre la consola Administración de sitios web y navega por el sitio, el explorador emite una llamada ajax para obtener el objeto JSON que se utiliza para crear la consola. Por ejemplo, cuando se desplaza a la `/content/geometrixx` carpeta, se envía la siguiente solicitud al servidor de AEM para crear la consola:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Para asegurarse de que el nuevo servicio se está ejecutando después de haber implementado el paquete que lo contiene:
 
 1. Seleccione la siguiente dirección URL en el navegador:
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. La respuesta debe mostrar las nuevas propiedades de la siguiente manera:
 
@@ -131,7 +136,7 @@ Para asegurarse de que el nuevo servicio se está ejecutando después de haber i
 
 ### Visualización de la nueva columna {#displaying-the-new-column}
 
-El último paso consiste en adaptar la estructura de nodos de la consola Administración de sitios web para mostrar la nueva propiedad de todas las páginas de Geometrixx superponiendo `/libs/wcm/core/content/siteadmin`. Proceda de la siguiente manera:
+El último paso consiste en adaptar la estructura de nodos de la consola Administración de sitios web para mostrar la nueva propiedad de todas las páginas de Geometrixx mediante superposición `/libs/wcm/core/content/siteadmin`. Proceda de la siguiente manera:
 
 1. En CRXDE Lite, cree la estructura de nodos `/apps/wcm/core/content` con nodos de tipo `sling:Folder` para reflejar la estructura `/libs/wcm/core/content`.
 
@@ -152,11 +157,11 @@ El último paso consiste en adaptar la estructura de nodos de la consola Adminis
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Agregue un `starred` nodo (de tipo **nt:unstructure**) a continuación `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con las siguientes propiedades:
+1. Añada un `starred` nodo (de tipo **nt:unestructure**) a continuación `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con las siguientes propiedades:
 
-   * **dataIndex**: `starred` de tipo Cadena
-   * **header**: `Starred` de tipo Cadena
-   * **xtype**: `gridcolumn` de tipo Cadena
+   * **dataIndex**: `starred` de tipo String
+   * **header**: `Starred` de tipo String
+   * **xtype**: `gridcolumn` de tipo String
 
 1. (opcional) Suelte las columnas que no desee mostrar en `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 

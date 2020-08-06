@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas de supervisión de recursos
-description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la instancia de AEM una vez implementada.
+description: Prácticas recomendadas para supervisar el entorno y el rendimiento de la instancia de AEM después de implementarla.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas para la supervisión de activos {#assets-monitoring-best-practices}
 
-Desde el punto de vista de Recursos Adobe Experience Manager (AEM), la supervisión debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
+Desde el punto de vista de los recursos (AEM) de Adobe Experience Manager, la supervisión debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
 
 * CPU del sistema
 * Uso de memoria del sistema
@@ -26,7 +26,7 @@ Desde el punto de vista de Recursos Adobe Experience Manager (AEM), la supervisi
 
 * Comprobaciones de estado de la consola OSGi
 
-Normalmente, los recursos de AEM se pueden supervisar de dos formas: mediante la supervisión en directo y la supervisión a largo plazo.
+Normalmente, AEM Assets se puede monitorear de dos maneras: monitorado en vivo y monitoreo a largo plazo.
 
 ## Monitoreo en directo {#live-monitoring}
 
@@ -41,24 +41,24 @@ Debe realizar un monitoreo en vivo durante la fase de prueba de rendimiento de s
 * [Ftop](http://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de Ethernet/red. Iftop muestra las estadísticas de canal de comunicaciones de las entidades que utilizan Ethernet y la cantidad de ancho de banda que utilizan. Si se puede instalar en la mayoría de los sistemas Linux usando `yum install iftop` o `apt-get install iftop`.
 
 * Grabador de vuelos Java (JFR): Herramienta comercial de Oracle que puede utilizar libremente en entornos que no sean de producción. Para obtener más información, consulte [Cómo utilizar la grabadora de vuelos Java para diagnosticar problemas](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)de CQ Runtime.
-* Archivo error.log de AEM: Puede investigar el archivo error.log de AEM para obtener más información sobre los errores registrados en el sistema. Utilice el comando `tail -F quickstart/logs/error.log` para identificar los errores que debe investigar.
+* AEM archivo error.log: Puede investigar el archivo AEM error.log para obtener detalles de los errores registrados en el sistema. Utilice el comando `tail -F quickstart/logs/error.log` para identificar los errores que debe investigar.
 * [Consola](../sites-administering/workflows.md)de flujo de trabajo: Aproveche la consola de flujo de trabajo para supervisar flujos de trabajo que se quedan atrás o se quedan atascados.
 
 Normalmente, estas herramientas se utilizan juntas para obtener una idea completa del rendimiento de la instancia de AEM.
 
 >[!NOTE]
 >
->Estas herramientas son herramientas estándar y no son compatibles directamente con Adobe. No requieren licencias adicionales.
+>Estas herramientas son herramientas estándar y no son directamente compatibles con Adobe. No requieren licencias adicionales.
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## Monitoreo a largo plazo {#long-term-monitoring}
 
-La supervisión a largo plazo de una instancia de AEM implica la supervisión durante más tiempo de las mismas partes que se supervisan en directo. También incluye la definición de las alertas específicas de su entorno.
+El monitoreo a largo plazo de una instancia de AEM implica monitorear durante más tiempo las mismas partes que se supervisan en directo. También incluye la definición de las alertas específicas de su entorno.
 
 ### Agregación y sistema de informes de registros {#log-aggregation-and-reporting}
 
-Existen varias herramientas disponibles para los registros acumulados, por ejemplo Splunk(TM) y Elastic Search/Logstash/Kabana (ELK). Para evaluar el tiempo de actividad de la instancia de AEM, es importante conocer los eventos de registro específicos del sistema y crear alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
+Existen varias herramientas disponibles para los registros acumulados, por ejemplo Splunk(TM) y Elastic Search/Logstash/Kabana (ELK). Para evaluar el tiempo de actividad de la instancia de AEM, es importante comprender los eventos de registro específicos del sistema y crear alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
 
 ### Supervisión de Entornos {#environment-monitoring}
 
@@ -75,7 +75,7 @@ Se requieren herramientas externas, como NewRelic(TM) y AppDynamics(TM), para su
 
 #### Supervisión interna de aplicaciones {#internal-application-monitoring}
 
-La supervisión interna de las aplicaciones incluye la supervisión de los componentes de la aplicación que conforman la pila de AEM, incluidos JVM, el repositorio de contenido y la supervisión mediante el código de aplicación personalizado creado en la plataforma. En general, se realiza a través de los Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) y otras. Para sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
+La supervisión interna de las aplicaciones incluye el monitoreo de los componentes de la aplicación que componen la pila de AEM, incluyendo JVM, el repositorio de contenido y el monitoreo a través del código de la aplicación personalizado creado en la plataforma. En general, se realiza a través de los Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) y otras. Para sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
 
 El acceso remoto a los mbeans de JMX no está habilitado de forma predeterminada. Para obtener más información sobre la supervisión a través de JMX, consulte [Monitoreo y administración con tecnología](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)JMX.
 
@@ -83,7 +83,7 @@ En muchos casos, se requiere una base de referencia para monitorear eficazmente 
 
 **Monitoreo de JVM**
 
-Al igual que con cualquier pila de aplicaciones basada en Java, AEM depende de los recursos que se le proporcionan a través de la máquina virtual Java subyacente. Puede monitorear el estado de muchos de estos recursos a través de los MXBeans de plataforma expuestos por JVM. Para obtener más información sobre MXBeans, consulte [Uso de MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)de plataforma y servidor MBean.
+Al igual que con cualquier pila de aplicaciones basada en Java, la AEM depende de los recursos que se le proporcionen a través de la máquina virtual Java subyacente. Puede monitorear el estado de muchos de estos recursos a través de los MXBeans de plataforma expuestos por JVM. Para obtener más información sobre MXBeans, consulte [Uso de MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)de plataforma y servidor MBean.
 
 Estos son algunos parámetros de línea de base que puede monitorear para JVM:
 
@@ -105,9 +105,9 @@ Subprocesos
 * Umbral de alarma: Cuando el número de subprocesos es bueno a más del 150% de la línea base.
 * Definición de alarma: O bien existe un proceso de fuga activo, o bien una operación ineficiente consume una gran cantidad de recursos. Analice un volcado de subprocesos para llegar a una definición.
 
-**Supervisión de AEM**
+**AEM supervisión**
 
-AEM también expone un conjunto de estadísticas y operaciones a través de JMX. Esto puede ayudar a evaluar el estado del sistema e identificar los problemas potenciales antes de que afecten a los usuarios. Para obtener más información, consulte [documentación](/help/sites-administering/jmx-console.md) sobre MBeans de AEM JMX.
+AEM también revela un conjunto de estadísticas y operaciones a través de JMX. Esto puede ayudar a evaluar el estado del sistema e identificar los problemas potenciales antes de que afecten a los usuarios. Para obtener más información, consulte la [documentación](/help/sites-administering/jmx-console.md) sobre AEM MBeans de JMX.
 
 Estos son algunos parámetros de línea de base que puede supervisar para AEM:
 
@@ -186,7 +186,7 @@ Estas son algunas de las comprobaciones de estado integradas que son útiles par
 
 ## Problemas y resoluciones comunes  {#common-issues-and-resolutions}
 
-En el proceso de supervisión, si se producen problemas, se presentan algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con las instancias de AEM:
+En el proceso de supervisión, si se producen problemas, se presentan algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con AEM instancias:
 
 * Si utiliza TarMK, ejecute la compactación Tar con frecuencia. Para obtener más información, consulte [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 * Compruebe `OutOfMemoryError` los registros. Para obtener más información, consulte [Análisis de problemas](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)de memoria.
@@ -194,5 +194,5 @@ En el proceso de supervisión, si se producen problemas, se presentan algunas ta
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan correctamente. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Revisa el monitoreo en vivo y busca cuellos de botella adicionales o altos consumidores de cualquier recurso específico.
 * Investigue los puntos de salida desde la red del cliente y los puntos de entrada a la red de instancias de AEM, incluido el despachante. A menudo, estas son áreas de cuello de botella. Para obtener más información, consulte Consideraciones [de red de](assets-network-considerations.md)Assets.
-* Actualice su servidor AEM. Es posible que no tenga un tamaño adecuado para la instancia de AEM. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si el servidor tiene un tamaño inferior al normal.
+* Actualice el servidor AEM. Es posible que no tenga un tamaño adecuado para su instancia de AEM. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor tiene un tamaño inferior al normal.
 * Examine los `access.log` archivos y `error.log` los archivos en busca de entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añada a la lista de eventos que supervise.

@@ -44,13 +44,13 @@ El viaje inicio con aprender el caso de uso:
 Un operador de telecomunicaciones envía facturas mensuales a los clientes a través del correo electrónico. El proyecto de ley es una comunicación interactiva. El correo electrónico incluye:
 
 * Un PDF protegido con contraseña, denominado canal de impresión en este tutorial. Incluye detalles del cliente, detalles de la factura, resumen de cargos, modos convenientes de pagar la factura y detalles de uso.
-* Un vínculo a la versión web de la lista, denominada canal web en este tutorial. La versión web de la ley, además de los detalles que se tratan en la versión PDF, proporciona una representación gráfica de los detalles de uso y las ofertas personalizadas basadas en Adobe Target. La versión web también contiene un formulario de pago en línea. Ayuda a realizar pagos en línea sin salir del IC.
+* Un vínculo a la versión web de la lista, denominada canal web en este tutorial. La versión web de la ley, además de los detalles de la versión en PDF, ofrece una representación gráfica de los detalles de uso y ofertas personalizadas basadas en Adobe Target. La versión web también contiene un formulario de pago en línea. Ayuda a realizar pagos en línea sin salir del IC.
 * Vínculo a servicios de valor añadido, como almacenamiento en línea, suscripciones musicales y suscripciones de vídeo a petición.
 
 ## Requisitos previos {#prerequisites}
 
-* Configure una instancia de autor de AEM.
-* Instalación del complemento [](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms en la instancia de creación
+* Configure una instancia de autor AEM.
+* Instalación de [AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de creación
 * Configuración de la base de datos MYSQL
 * Obtenga el controlador de base de datos JDBC (archivo JAR) del proveedor de base de datos. Los ejemplos del tutorial se basan en la base de datos MySQL y utilizan el controlador [de base de datos JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html)MySQL de Oracle.
 
@@ -76,7 +76,7 @@ Para crear una anatomía para la comunicación interactiva con los siguientes mo
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modelo de datos de formulario permite conectar una comunicación interactiva a orígenes de datos dispares. Por ejemplo, perfil de usuarios de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de las entidades comerciales y los servicios disponibles en fuentes de datos conectadas. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de orígenes de datos conectados. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de formularios](/help/forms/using/data-integration.md)AEM.
+Un modelo de datos de formulario permite conectar una comunicación interactiva a orígenes de datos dispares. Por ejemplo, AEM perfil del usuario, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de las entidades comerciales y los servicios disponibles en los orígenes de datos conectados. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de orígenes de datos conectados. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos de](/help/forms/using/data-integration.md)AEM Forms.
 
 **Objetivos:**
 
@@ -109,16 +109,16 @@ Los fragmentos de Documento son componentes reutilizables de una correspondencia
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor AEM para Canales impresos y Web.
+Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para Canales impresos y Web.
 
-Las plantillas para el canal de impresión se crean en Adobe Forms Designer y se cargan en el servidor AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
+Las plantillas para el canal de impresión se crean en Adobe Forms Designer y se cargan en el servidor de AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
-Las plantillas para el canal web se crean en AEM. Los creadores y administradores de plantillas pueden crear, editar y habilitar plantillas web. Una vez creadas y habilitadas, estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
+Las plantillas para el canal Web se crean en AEM. Los creadores y administradores de plantillas pueden crear, editar y habilitar plantillas web. Una vez creadas y habilitadas, estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
 **Objetivos:**
 
-* Creación de plantillas XDP para canal de impresión con Adobe Forms Designer
-* Carga de plantillas XDP en el servidor de AEM Forms
+* Creación de plantillas XDP para canal de impresión mediante Adobe Forms Designer
+* Cargar las plantillas XDP en AEM Forms Server
 * Crear y habilitar plantillas para el canal Web
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)

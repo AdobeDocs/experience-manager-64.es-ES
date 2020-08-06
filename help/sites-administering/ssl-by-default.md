@@ -1,8 +1,8 @@
 ---
 title: SSL de forma predeterminada
 seo-title: SSL de forma predeterminada
-description: Aprenda a utilizar SSL de forma predeterminada en AEM.
-seo-description: Aprenda a utilizar SSL de forma predeterminada en AEM.
+description: Obtenga información sobre cómo utilizar SSL de forma predeterminada en AEM.
+seo-description: Obtenga información sobre cómo utilizar SSL de forma predeterminada en AEM.
 uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
 # SSL de forma predeterminada{#ssl-by-default}
 
-Con el fin de mejorar continuamente la seguridad de AEM, Adobe ha introducido una función denominada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a instancias de AEM.
+En un esfuerzo por mejorar continuamente la seguridad de AEM, Adobe ha introducido una función llamada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a AEM instancias.
 
 ## Habilitar SSL de forma predeterminada {#enabling-ssl-by-default}
 
-Puede empezar a configurar SSL de forma predeterminada haciendo clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Ver todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
+Para configurar SSL de forma predeterminada, haga clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Vista todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
 
 En la lista, seleccione y abra la alerta **Configurar HTTPS** :
 
@@ -53,7 +56,7 @@ Se ha creado un usuario de servicio llamado **ssl-service** para esta función. 
 
 Existen tres maneras de automatizar SSL de manera predeterminada.
 
-### Mediante HTTP POST {#via-http-post}
+### Mediante el POST HTTP {#via-http-post}
 
 El primer método implica la publicación en el servidor SSLSetup que está utilizando el asistente de configuración:
 
@@ -61,7 +64,7 @@ El primer método implica la publicación en el servidor SSLSetup que está util
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Puede utilizar la siguiente carga útil en su POST para automatizar la configuración:
+Puede utilizar la siguiente carga útil en el POST para automatizar la configuración:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -90,7 +93,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-El servlet, como cualquier servlet sling POST, responderá con 200 OK o con un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo HTML de la respuesta.
+El servlet, como cualquier servlet POST sling, responderá con 200 OK o con un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo HTML de la respuesta.
 
 A continuación se muestran ejemplos de una respuesta correcta y de un error.
 
@@ -193,7 +196,7 @@ Finalmente, cargue **localhostprivate.der** como Private Key y **localhost.crt**
 
 >[!NOTE]
 >
->Consulte [Uso de cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de comandos cURL útiles en AEM.
+>Consulte [Uso de cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para ver una lista centralizada de comandos cURL útiles en AEM.
 
 También puede automatizar la configuración SSL mediante la herramienta cURL. Para ello, publique los parámetros de configuración en esta dirección URL:
 

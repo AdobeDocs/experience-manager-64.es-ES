@@ -26,7 +26,7 @@ Puede ejecutar keytool utilizando un único comando que incluya toda la informac
 
 En este procedimiento:
 
-* `[appserver root]` es el directorio principal del servidor de aplicaciones que ejecuta formularios AEM.
+* `[appserver root]` es el directorio principal del servidor de aplicaciones que ejecuta AEM formularios.
 * `[type]` es un nombre de carpeta que varía según el tipo de instalación que haya realizado.
 
 ## Crear una credencial SSL {#create-an-ssl-credential}
@@ -141,7 +141,7 @@ En este procedimiento:
 
    * Para instalaciones llave en mano:
 
-      * En el Panel de control de Windows, haga clic en Herramientas administrativas y, a continuación, en Servicios.
+      * En el Panel de control de Campaign de Windows, haga clic en Herramientas administrativas y, a continuación, en Servicios.
       * Seleccione JBoss para formularios Adobe Experience Manager.
       * Seleccione Acción > Detener.
       * Espere a que el estado del servicio aparezca como detenido.
@@ -163,7 +163,7 @@ En este procedimiento:
 
 1. Para acceder a la consola de administración mediante SSL, escriba `https://[host name]:[port]/adminui` en un navegador web:
 
-   El puerto SSL predeterminado para JBoss es 8443. A partir de aquí, especifique este puerto al acceder a los formularios AEM.
+   El puerto SSL predeterminado para JBoss es 8443. A partir de aquí, especifique este puerto al acceder a AEM formularios.
 
 ## Solicitud de una credencial de una CA {#request-a-credential-from-a-ca}
 

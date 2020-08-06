@@ -1,8 +1,8 @@
 ---
 title: Generar previsualización HTML5 de un formulario XDP
 seo-title: Generar previsualización HTML5 de un formulario XDP
-description: La ficha HTML de Previsualización de LiveCycle Designer se puede utilizar para previsualización de formularios tal como aparecen en un explorador.
-seo-description: La ficha HTML de Previsualización de LiveCycle Designer se puede utilizar para previsualización de formularios tal como aparecen en un explorador.
+description: La ficha HTML de Previsualización en LiveCycle Designer se puede utilizar para crear previsualizaciones de formularios tal como aparecen en un explorador.
+seo-description: La ficha HTML de Previsualización en LiveCycle Designer se puede utilizar para crear previsualizaciones de formularios tal como aparecen en un explorador.
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 # Generar previsualización HTML5 de un formulario XDP {#generate-html-preview-of-an-xdp-form}
 
-Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación PDF de un formulario, también se puede realizar una previsualización de una representación HTML5 del mismo. Puede utilizar la ficha **Previsualización HTML** para realizar la previsualización de un formulario tal como aparecería en un explorador.
+Al diseñar un formulario en AEM Forms Designer, además de obtener una vista previa de la representación en PDF de un formulario, también se puede realizar una previsualización de una representación en HTML5 del mismo. Puede utilizar la ficha **Previsualización HTML** para realizar la previsualización de un formulario tal como aparecería en un explorador.
 
 ## Habilitar Previsualización HTML para formularios XDP en Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -30,9 +30,9 @@ Para permitir que Designer genere previsualizaciones HTML de formularios XDP, re
 
 ### Configuración del servicio de autenticación Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Ir a `https://[server]:[port]/system/console/configMgr` en AEM Forms que se ejecutan en OSGi o
+1. Vaya a `https://[server]:[port]/system/console/configMgr` en AEM Forms que se ejecute en OSGi o
 
-   `https://[server]:[port]/lc/system/console/configMgr` en AEM Forms que se ejecutan en JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` en AEM Forms que se ejecuta en JEE.
 
 1. Busque y haga clic en la configuración del servicio **de autenticación Sling de** Apache para abrirlo en modo de edición.
 
@@ -56,14 +56,14 @@ Para permitir que Designer genere previsualizaciones HTML de formularios XDP, re
 
 ### Deshabilitar modo protegido {#disable-protected-mode}
 
-El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede deshabilitarlo para un entorno de desarrollo con la previsualización de formularios HTML5 en Designer. Realice los siguientes pasos para deshabilitarlo:
+El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activado de forma predeterminada. Manténgalo habilitado para los entornos de producción. Puede deshabilitarlo para un entorno de desarrollo para la previsualización de HTML5 Forms en Designer. Realice los siguientes pasos para deshabilitarlo:
 
-1. Inicie sesión en AEM Web Console como administrador.
+1. Inicie sesión en AEM consola web como administrador.
 
-   * La dirección URL para AEM Forms en OSGi es `https://[server]:[port]/system/console/configMgr`
-   * La dirección URL para AEM Forms en JEE es `https://[server]:[port]/lc/system/console/configMgr`
+   * La dirección URL de AEM Forms en OSGi es `https://[server]:[port]/system/console/configMgr`
+   * La dirección URL de AEM Forms en JEE es `https://[server]:[port]/lc/system/console/configMgr`
 
-1. Abra Configuraciones **[!UICONTROL de formularios]** móviles para editarlas.
+1. Abra Configuraciones **[!UICONTROL móviles de Forms]** para editarlas.
 1. Anule la selección de la opción Modo **** protegido y haga clic en **[!UICONTROL Guardar]**.
 
 ### Proporcionar detalles del servidor de AEM Forms {#provide-details-of-aem-forms-server}
@@ -72,7 +72,7 @@ El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activ
 1. En la ventana Opciones, seleccione la página Opciones **** del servidor, proporcione los siguientes detalles y haga clic en **Aceptar**.
 
    * **URL** del servidor: URL del servidor de AEM Forms.
-   * **Número** de puerto HTTP: Puerto del servidor AEM. El valor predeterminado es 4502.
+   * **Número** de puerto HTTP: AEM puerto del servidor. El valor predeterminado es 4502.
    * **Contexto de Previsualización HTML:** Ruta del perfil para procesar formularios XFA. Se utilizan los siguientes perfiles predeterminados para la previsualización del formulario en Designer. Sin embargo, también puede especificar la ruta a un perfil personalizado.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms en OSGi)
@@ -82,7 +82,7 @@ El modo [](/help/forms/using/get-xdp-pdf-documents-aem.md) protegido está activ
       * `/aem/forms` (AEM Forms en OSGi)
       * `/lc/forms` (AEM Forms en JEE)
 
-   **Nota:** *Asegúrese de que el servidor de AEM Forms esté activo y en ejecución. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Nota:** *Asegúrese de que el servidor de AEM Forms está activo y en ejecución. The HTML preview connects to the CRX server to* generate *a preview.*
 
    ![Opciones de AEM Forms Designer ](assets/server_options.png)
 
@@ -114,6 +114,6 @@ Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asig
 
 ## Formularios de Previsualización ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
 
-En los AEM Forms, puede previsualización de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
+En AEM Forms, puede realizar previsualizaciones de formularios y documentos en un repositorio. La Previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
 
 [**Comuníquese con la asistencia técnica **](https://www.adobe.com/account/sign-in.supportportal.html)

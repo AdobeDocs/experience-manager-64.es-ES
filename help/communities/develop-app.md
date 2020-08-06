@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 3%
 
 ---
 
@@ -34,14 +37,14 @@ Uso de CRXDE Lite:
     * Tipo: `String`
     * Valor: &quot;foundation/components/page&quot;
 
-1. Haga clic en verde **[!UICONTROL [+]Agregar]**
+1. Haga clic en verde **[!UICONTROL [+]Añadir]**
 1. Haga clic en **[!UICONTROL Guardar todo]**
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Secuencias de comandos de cabeza y cuerpo {#head-and-body-scripts}
 
-1. En el panel **CRXDE Lite** explorer, navegue hasta el archivo `/apps/an-scf-sandbox/components/playpage` y haga doble clic en él `playpage.jsp` para abrirlo en el panel de edición.
+1. En el panel **CRXDE Lite** explorer, navegue hasta el archivo `/apps/an-scf-sandbox/components/playpage` y haga clic con el doble en el archivo `playpage.jsp` para abrirlo en el panel de edición.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -92,6 +95,7 @@ Uso de CRXDE Lite:
 
       * Nombre: **body.jsp**
    1. Haga clic en **[!UICONTROL Guardar todo]**
+
    Abra `/apps/an-scf-sandbox/components/playpage/body.jsp` y pegue el siguiente texto:
 
    ```xml
@@ -112,7 +116,7 @@ Uso de CRXDE Lite:
 
 1. Haga clic en **[!UICONTROL Guardar todo]**
 
-**Vea la página en un navegador en modo de edición:**
+**Vista de la página en un navegador en modo de edición:**
 
 * IU estándar: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
@@ -130,11 +134,11 @@ A continuación se muestra cómo aparece la página de reproducción en la IU cl
 
 ## Componentes de Communities {#communities-components}
 
-Para habilitar los componentes de Comunidades para la creación, comience por seguir estas instrucciones:
+Para habilitar los componentes de Communities para la creación, siga estas instrucciones para el inicio:
 
 * [Acceso a componentes de comunidades](basics.md#accessing-communities-components)
 
-A los efectos de este simulador para pruebas, comience con estos componentes de **Comunidades** (active la casilla de verificación):
+A efectos de este simulador para pruebas, el inicio de estos componentes de **Comunidades** (activarlos marcando la casilla):
 
 * Comentarios
 * Foro
@@ -174,4 +178,4 @@ Cambie la dirección URL del explorador a la página raíz: [http://localhost:45
 
 Una vez que se publique el sitio, la búsqueda en la página raíz de una instancia de publicación se redirigirá a la página en inglés.
 
-El último paso antes de jugar con los componentes SCF de las comunidades es agregar una carpeta de biblioteca de clientes (clientlibs)... .  **[](add-clientlibs.md)**
+El último paso antes de jugar con los componentes SCF de las comunidades es agregar una carpeta de biblioteca de clientes (clientlibs).... **[FINLANDO](add-clientlibs.md)**

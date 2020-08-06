@@ -1,8 +1,8 @@
 ---
 title: Consideraciones al ejecutar AdministrationConsole
 seo-title: Consideraciones al ejecutar AdministrationConsole
-description: Este documento enumera algunos puntos que deben tenerse en cuenta al ejecutar la Consola de administración.
-seo-description: Este documento enumera algunos puntos que deben tenerse en cuenta al ejecutar la Consola de administración.
+description: Este documento lista algunos puntos que deben tenerse en cuenta al ejecutar la Consola de administración.
+seo-description: Este documento lista algunos puntos que deben tenerse en cuenta al ejecutar la Consola de administración.
 uuid: e260f187-4728-44f3-a5c1-7388ff3965c4
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,7 @@ Estos son algunos aspectos a tener en cuenta al ejecutar la Consola de administr
 
    * Al hacer clic en un vínculo regresa a la página de inicio de sesión en lugar del vínculo esperado.
    * Al hacer clic en un vínculo se muestra un error de permiso.
+
    Se recomienda ejecutar la consola de administración desde otro navegador, como Mozilla Firefox, para garantizar que no se produzca ningún error en los vínculos.
 
 * No utilice caracteres de barra invertida () al realizar búsquedas en la consola de administración.

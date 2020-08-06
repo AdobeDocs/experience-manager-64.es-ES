@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 translation-type: tm+mt
 source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +36,7 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
+
 >
 >
 Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
@@ -67,7 +71,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    * Pueden utilizar contenido multimedia asociado seleccionado según relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página  {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página       {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla. 
 
@@ -77,6 +81,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
 
    * Abra el navegador **[!UICONTROL Recursos]** y filtre por **[!UICONTROL Fragmentos de contenido]** (el valor predeterminado es Imágenes). Arrastre el fragmento en cuestión a la instancia de componente.
    * Seleccione el componente de fragmento de contenido y, a continuación, **[!UICONTROL Configurar]** en la barra de herramientas. En el cuadro de diálogo, puede abrir el cuadro de diálogo de selección para buscar y seleccionar el **[!UICONTROL fragmento de contenido]** requerido.
+
    >[!NOTE]
    >
    >Otra posibilidad es arrastrar un fragmento de contenido específico directamente a la página. Esto creará automáticamente el componente asociado (fragmento de contenido). 
@@ -112,6 +117,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
    * El valor predeterminado **[!UICONTROL Principal]** siempre aparecerá disponible.
    * Se podrá hacer una selección si el fragmento se creó con una plantilla adecuada.
+
    >[!NOTE]
    >
    >Los elementos disponibles dependen de la plantilla utilizada.
@@ -138,7 +144,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-## Agregar contenido intermedio  {#adding-in-between-content}
+## Añadir contenido intermedio       {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **[!UICONTROL Arrastre los componentes aquí]** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -171,11 +177,12 @@ Para el contenido intermedio puede:
 >* Los componentes intermedios tienen una posición absoluta dentro de la secuencia de componentes en el flujo del fragmento. Esta posición no cambia, aunque varíe el contenido de los párrafos del fragmento.\
    >  Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
+
 >
 
 
 
-## Uso de contenido asociado  {#using-associated-content}
+## Uso de contenido asociado       {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 

@@ -1,9 +1,12 @@
 ---
 title: Selector de recursos
-description: Obtenga información sobre cómo utilizar el selector de recursos para buscar, filtrar, examinar y recuperar metadatos de recursos en Recursos Adobe Experience Manager (AEM). También aprenderá a personalizar la interfaz del selector de recursos.
+description: Obtenga información sobre cómo utilizar el selector de recursos para buscar, filtrar, examinar y recuperar metadatos de recursos dentro de Recursos Adobe Experience Manager (AEM). También aprenderá a personalizar la interfaz del selector de recursos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
@@ -14,13 +17,13 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 >
 >El Selector de recursos se denominaba Selector [de recursos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de AEM.
 
-El selector de recursos le permite buscar, filtrar y examinar recursos dentro de Recursos Adobe Experience Manager (AEM). También puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Para personalizar la interfaz del selector de recursos, puede iniciarla con parámetros de solicitud admitidos. Estos parámetros establecen el contexto del selector de recursos para un escenario en particular.
+El selector de recursos permite buscar, filtrar y examinar recursos dentro de Recursos Adobe Experience Manager (AEM). También puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Para personalizar la interfaz del selector de recursos, puede iniciarla con parámetros de solicitud admitidos. Estos parámetros establecen el contexto del selector de recursos para un escenario en particular.
 
 Actualmente, puede pasar los parámetros de solicitud `Asset Type` (*Imagen/Vídeo/Texto*) y `Selection mode` (*Único/Múltiple*) como información contextual para el selector de recursos, que permanece intacto durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 **Window.postMessage** para enviar datos del recurso seleccionado al destinatario.
 
-El selector de recursos se basa en el vocabulario del selector de base de Granite. De forma predeterminada, el selector de recursos funciona en el modo Examinar. Sin embargo, puede aplicar filtros mediante la experiencia de Omniture Search para restringir la búsqueda de recursos concretos.
+El selector de recursos se basa en el vocabulario del selector de base de Granite. De forma predeterminada, el selector de recursos funciona en el modo Examinar. Sin embargo, puede aplicar filtros utilizando la experiencia de Omniture para restringir la búsqueda de recursos concretos.
 
 Puede integrar cualquier página web (independientemente de si forma parte del contenedor de CQ) con el selector de recursos (`https://[AEM_server]:[port]/aem/assetpicker.html`).
 

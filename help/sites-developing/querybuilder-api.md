@@ -13,6 +13,9 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
 source-git-commit: dbb6156b375382a23b9a3faece2dcdf47fd7cd82
+workflow-type: tm+mt
+source-wordcount: '2350'
+ht-degree: 0%
 
 ---
 
@@ -35,11 +38,11 @@ La API de REST proporciona acceso a exactamente las mismas funciones a través d
 
 ## Sesión de Gem {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en Adobe Experience Manager realizadas por expertos de Adobe. Esta sesión dedicada al generador de consultas es muy útil para una visión general y el uso de la herramienta.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en Adobe Experience Manager realizadas por expertos en Adobe. Esta sesión dedicada al generador de consultas es muy útil para una visión general y el uso de la herramienta.
 
 >[!NOTE]
 >
->Consulte la sesión de AEM Gem [Buscar formularios fácilmente con el querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) de AEM para obtener una descripción detallada del generador de consultas.
+>Consulte la sesión de Gem AEM [Los formularios de búsqueda se facilitan con el querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) de AEM para obtener una descripción detallada del generador de consultas.
 
 ## Consultas de muestra {#sample-queries}
 
@@ -291,7 +294,7 @@ property.3_value=bar
 
 De forma predeterminada, el servlet JSON de QueryBuilder devolverá un conjunto predeterminado de propiedades para cada nodo del resultado de búsqueda (por ejemplo, ruta, nombre, título, etc.). Para obtener el control sobre qué propiedades se devuelven, puede realizar una de las siguientes acciones:
 
-Especificar
+Especifique
 
 ```
 p.hits=full
@@ -323,7 +326,7 @@ separado por un espacio:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) p. [hits=selectivo&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primariaType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selectivo&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primarioType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -467,7 +470,7 @@ o bien el servlet json querybuilder en
 
 ( `path=/tmp` es sólo un ejemplo).
 
-### Recomendaciones generales de depuración {#general-debugging-recommendations}
+### Recommendations de depuración general {#general-debugging-recommendations}
 
 ### Obtención de XPath explicable mediante registro {#obtain-explain-able-xpath-via-logging}
 
@@ -486,7 +489,7 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 ### Obtenga XPath explicable mediante el depurador de Consulta Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Utilice el depurador de AEM QueryBuilder para generar una consulta XPath explicable:
+* Utilice el depurador AEM QueryBuilder para generar una consulta XPath explicable:
 
 Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al conjunto de índices de destinatario.
 
@@ -496,7 +499,7 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
    * Vaya a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Cree un nuevo registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 
-* Una vez que DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por el Generador de Consultas.
+* Una vez que DEBUG se haya habilitado para la clase anterior, los registros mostrarán el XPath generado por Consulta Builder.
 * Copie la consulta XPath de la entrada de registro de la consulta asociada de QueryBuilder. Por ejemplo:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
@@ -505,7 +508,7 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 **Obtenga XPath explicable mediante el depurador de Consulta Builder**
 
-* Utilice el depurador de AEM QueryBuilder para generar una consulta XPath explicable:
+* Utilice el depurador AEM QueryBuilder para generar una consulta XPath explicable:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 

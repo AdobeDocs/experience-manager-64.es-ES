@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
 
 # Administración de listas de revocación de certificados{#managing-certificate-revocationlists}
 
-Mediante la administración de almacén de confianza, puede importar, editar y eliminar listas de revocación de certificados (CRL). Se admiten las listas de revocación de certificados codificadas en DER y base64.
+Mediante la administración de almacén de confianza, puede importar, editar y eliminar listas de revocación de certificados (CRL). Se admiten listas de revocación de certificados con codificación Base64 y DER.
 
 ## Importar una CRL {#import-a-crl}
 

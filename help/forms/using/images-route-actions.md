@@ -1,8 +1,8 @@
 ---
 title: Personalización de imágenes utilizadas en acciones de ruta
 seo-title: Personalización de imágenes utilizadas en acciones de ruta
-description: Personalización de las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
-seo-description: Personalización de las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
+description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
+seo-description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

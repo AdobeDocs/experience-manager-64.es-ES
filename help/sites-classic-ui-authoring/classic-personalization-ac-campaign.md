@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 64%
 
 ---
 
@@ -34,7 +37,7 @@ A continuación, el contenido se puede sincronizar con un envío en Adobe Campai
 
 Después de configurar AEM y Adobe Campaign, puede crear contenido de envío de correo electrónico directamente en AEM y, a continuación, procesarlo en Adobe Campaign.
 
-Al crear contenido de Adobe Campaign en AEM, debe establecer un vínculo a un servicio de Adobe Campaign antes de editar el contenido para acceder a todas las funciones.
+Al crear contenido de Adobe Campaign en AEM, debe vincular a un servicio de Adobe Campaign antes de editar el contenido para acceder a todas las funciones.
 
 Existen dos casos posibles:
 
@@ -61,8 +64,9 @@ Las instrucciones detalladas se describen en este documento.
 1. Select **New** > **New Page** to create new email content.
 1. Seleccione una de las plantillas disponibles específicas de Adobe Campaign y rellene las propiedades generales de la página. De forma predeterminada, están disponibles tres plantillas:
 
-   * **Correo electrónico de Adobe Campaign (AC 6.1)**: permite agregar contenido a una plantilla predefinida antes de enviarla a Adobe Campaign 6.1 para su envío.
+   * **Correo electrónico de Adobe Campaign (AC 6.1)**: permite agregar contenido a una plantilla predefinida antes de enviarla a Adobe Campaign 6.1 para envío.
    * **Correo electrónico de Adobe Campaign (ACS)**: permite agregar contenido a una plantilla predefinida antes de enviarla a Adobe Campaign Standard para su envío.
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -112,8 +116,8 @@ Puede editar el contenido de correo electrónico en la interfaz de usuario clás
 
 Al editar el contenido, puede insertar:
 
-* Campos de contexto de Adobe Campaign. Estos son campos que puede insertar en el texto y que se adaptarán según los datos del destinatario (por ejemplo, nombre, apellidos o cualquier dato de la dimensión de destino).
-* Bloques de personalización de Adobe Campaign. Son bloques de contenido predefinido que no están relacionados con los datos del destinatario, como un logotipo de marca o un vínculo a una página reflejada.
+* Campos de contexto de Adobe Campaign. Son campos que se pueden insertar en el texto y que se adaptarán según los datos del destinatario (por ejemplo, nombre, apellidos o cualquier dato de la dimensión de destinatario).
+* Bloques de personalización de Adobe Campaign. Son bloques de contenido predefinido que no están relacionados con los datos del destinatario, como un logotipo de marca o un vínculo a una página espejo.
 
 Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) para obtener una descripción exhaustiva de los componentes de Campaign.
 
@@ -121,6 +125,7 @@ Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classi
 >
 >* Solo se tienen en cuenta los campos de la dimensión objetivo **Perfiles** de Adobe Campaign.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. Puede acceder a ellos directamente desde el correo electrónico durante la edición.
+
 >
 
 
@@ -151,7 +156,7 @@ Puede previsualizar el aspecto que tendrá la newsletter, así como la personali
 1. Abra la newsletter que desee previsualizar y haga clic en Vista previa (lupa) para reducir el tamaño de la barra de tareas.
 1. Haga clic en uno de los iconos del cliente de correo electrónico para ver el aspecto que tendrá la newsletter en cada cliente de correo electrónico.
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 1. Expanda la barra de tareas para volver a comenzar a editar.
 
@@ -175,7 +180,7 @@ En Adobe Campaign Standard:
 
 En Adobe Campaign 6.1:
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 >[!NOTE]
 >

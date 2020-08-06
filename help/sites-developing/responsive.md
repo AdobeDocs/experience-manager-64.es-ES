@@ -54,7 +54,7 @@ A medida que diseña, utilice la **!UICONTROL barra de tareas]**para previsualiz
 
 ## Antes de desarrollar {#before-you-develop}
 
-Antes de desarrollar la aplicación AEM que admite las páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, necesita tener la siguiente información:
+Antes de desarrollar la aplicación de AEM que admite las páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, necesita tener la siguiente información:
 
 * Los dispositivos a los que está dirigido.
 * Tamaños de la ventanilla del destinatario.
@@ -62,7 +62,7 @@ Antes de desarrollar la aplicación AEM que admite las páginas web, se deben to
 
 ### Estructura de la aplicación {#application-structure}
 
-La estructura típica de la aplicación de AEM admite todas las implementaciones de diseño adaptables:
+La estructura típica de la aplicación AEM admite todas las implementaciones de diseño adaptables:
 
 * Los componentes de página residen debajo de /apps/*application_name*/components
 * Las plantillas residen debajo de /apps/*application_name*/templates
@@ -70,7 +70,7 @@ La estructura típica de la aplicación de AEM admite todas las implementaciones
 
 ## Uso de consultas de medios {#using-media-queries}
 
-Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. Las herramientas y funciones de desarrollo de AEM le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
+Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. AEM herramientas y características de desarrollo le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
 
 El grupo W3C proporciona la recomendación Consultas [de](https://www.w3.org/TR/css3-mediaqueries/) medios que describe esta función CSS3 y la sintaxis.
 
@@ -101,7 +101,7 @@ La siguiente tabla lista los archivos de la carpeta secundaria css.
   </tr> 
   <tr> 
    <td>bootstrap.css</td> 
-   <td>Estilos comunes, definidos por Twitter Bootstrap.</td> 
+   <td>Estilos comunes, definidos por el Bootstrap de Twitter.</td> 
    <td>N/D</td> 
   </tr> 
   <tr> 
@@ -151,7 +151,7 @@ responsive-1200px.css
 
 **Sugerencia**: Los nombres de archivo descriptivos permiten identificar fácilmente el tamaño de la ventanilla de destino.
 
-### Uso de Consultas de medios con páginas de AEM {#using-media-queries-with-aem-pages}
+### Uso de Consultas de medios con páginas AEM {#using-media-queries-with-aem-pages}
 
 Incluya la carpeta de la biblioteca de cliente en la secuencia de comandos JSP del componente de página para generar el archivo CSS que incluye las consultas de medios y para hacer referencia al archivo.
 
@@ -222,7 +222,7 @@ Para especificar los grupos de dispositivos que aparecen en la lista Dispositivo
 
 Los nodos de grupo de dispositivos se encuentran en la `/etc/mobile/groups` carpeta.
 
-Por ejemplo, la página raíz del sitio Geometrixx Media es `/content/geometrixx-media`. El `/content/geometrixx-media/jcr:content` nodo incluye la siguiente propiedad:
+Por ejemplo: la página raíz del sitio Geometrixx Medias es `/content/geometrixx-media`. El `/content/geometrixx-media/jcr:content` nodo incluye la siguiente propiedad:
 
 * Nombre: `cq:deviceGroups`
 * Tipo: `String[]`
@@ -286,11 +286,11 @@ Cuando se representa la página, picturefull.js inserta un `img` elemento como �
 </div>
 ```
 
-En una página de AEM, el valor del `data-src` atributo es la ruta a un recurso del repositorio.
+En una página AEM, el valor del `data-src` atributo es la ruta a un recurso en el repositorio.
 
 ### Implementación de imágenes adaptables en AEM {#implementing-adaptive-images-in-aem}
 
-Para implementar imágenes adaptables en la aplicación AEM, debe agregar las bibliotecas de javascript necesarias e incluir el código HTML necesario en las páginas.
+Para implementar imágenes adaptables en la aplicación de AEM, debe agregar las bibliotecas de javascript necesarias e incluir el marcado HTML necesario en las páginas.
 
 **Bibliotecas**
 
@@ -305,7 +305,7 @@ Obtenga las siguientes bibliotecas de javascript e inclúyalas en una carpeta de
 
 **HTML**
 
-Cree un componente que genere los elementos div necesarios que espera el código de picturefill.js. En una página de AEM, el valor del atributo data-src es la ruta a un recurso en el repositorio. Por ejemplo, un componente de página puede codificar las consultas de medios y las rutas asociadas para las representaciones de imágenes en DAM. O bien, cree un componente de imagen personalizado que permita a los autores seleccionar representaciones de imagen o especificar opciones de representación en tiempo de ejecución.
+Cree un componente que genere los elementos div necesarios que espera el código de picturefill.js. En una página AEM, el valor del atributo data-src es la ruta a un recurso en el repositorio. Por ejemplo, un componente de página puede codificar las consultas de medios y las rutas asociadas para las representaciones de imágenes en DAM. O bien, cree un componente de imagen personalizado que permita a los autores seleccionar representaciones de imagen o especificar opciones de representación en tiempo de ejecución.
 
 El siguiente ejemplo de HTML selecciona entre dos representaciones DAM de la misma imagen.
 
@@ -323,6 +323,7 @@ El siguiente ejemplo de HTML selecciona entre dos representaciones DAM de la mis
 >
 >* Carpeta de biblioteca de cliente: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Secuencia de comandos que genera el código HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 La sección siguiente proporciona detalles sobre este componente.
@@ -330,7 +331,7 @@ La sección siguiente proporciona detalles sobre este componente.
 
 ### Explicación de la representación de imágenes en AEM {#understanding-image-rendering-in-aem}
 
-Para personalizar la representación de imágenes, debe comprender la implementación predeterminada de representación de imágenes estáticas de AEM. AEM proporciona el componente Imagen y un servlet de procesamiento de imágenes que funcionan juntos para procesar imágenes para páginas web. La siguiente secuencia de eventos se produce cuando el componente Imagen se incluye en el sistema de párrafos de la página:
+Para personalizar la representación de imágenes, debe comprender la implementación predeterminada de representación de imágenes estáticas AEM. AEM proporciona el componente Imagen y un servlet de procesamiento de imágenes que funcionan juntos para procesar imágenes para páginas web. La siguiente secuencia de eventos se produce cuando el componente Imagen se incluye en el sistema de párrafos de la página:
 
 1. Creación: Los autores editan el componente Imagen para especificar el archivo de imagen que se incluirá en una página HTML. La ruta de acceso al archivo se almacena como un valor de propiedad del nodo del componente Imagen.
 1. Solicitud de página: El JSP del componente de página genera el código HTML. El JSP del componente Imagen genera y agrega un elemento img a la página.
@@ -352,7 +353,7 @@ Cuando el explorador carga la página, solicita la imagen utilizando el valor de
 
 El `image_0` nodo tiene un `jcr:resourceType` valor de `foundation/components/image`, que tiene un `sling:resourceSuperType` valor de `foundation/components/parbase`. El componente parbase incluye la secuencia de comandos img.GET.java que coincide con el selector y la extensión de nombre de archivo de la dirección URL de la solicitud. CQ utiliza esta secuencia de comandos (servlet) para procesar la imagen.
 
-Para ver el código fuente de la secuencia de comandos, utilice CRXDE Lite para abrir el `/libs/foundation/components/parbase/img.GET.java`\
+Para ver el código fuente de la secuencia de comandos, utilice CRXDE Lite para abrir la `/libs/foundation/components/parbase/img.GET.java`\
 archivo.
 
 ## Escalado de imágenes para el tamaño actual de la ventanilla móvil {#scaling-images-for-the-current-viewport-size}
@@ -487,7 +488,7 @@ Para obtener información sobre cómo configurar los servicios de AEM, consulte 
   </tr> 
   <tr> 
    <th>Nombre de servicio o nodo</th> 
-   <td>El nombre del servicio de la ficha Configuración es el servlet de componentes de imagen adaptable de Adobe CQ</td> 
+   <td>El nombre de servicio de la ficha Configuración es el servlet de componente de imagen adaptable de Adobe CQ</td> 
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
   </tr> 
   <tr> 
@@ -561,7 +562,7 @@ El servlet está enlazado a `cq:page` los recursos y admite la extensión de arc
 
 `path-to-page-node.image.jpg`
 
-Por ejemplo, Sling reenvía solicitudes HTTP con la URL `http://localhost:4502/content/geometrixx/en.image.jpg` al servlet de modificación de referencia de imagen.
+Por ejemplo, Sling reenvía solicitudes HTTP con la dirección URL `http://localhost:4502/content/geometrixx/en.image.jpg` al servlet de modificación de referencia de imagen.
 
 Tres selectores adicionales especifican la anchura, la altura y la calidad (opcional) de la imagen solicitada. El ejemplo siguiente solicita una imagen de anchura de 770 píxeles, altura de 360 píxeles y calidad media.
 
@@ -663,7 +664,7 @@ La `ImageReferenceModificationServlet` clase anula el `createLayer` método e im
 
 ## Desarrollo de una red de fluidos {#developing-a-fluid-grid}
 
-AEM le permite implementar cuadrículas fluidas de forma eficaz y eficiente. En esta página se explica cómo integrar la cuadrícula fluida o una implementación de cuadrícula existente (como [Bootstrap](https://twitter.github.com/bootstrap/)) en la aplicación AEM.
+AEM le permite implementar de manera eficiente y eficaz las cuadrículas fluidas. En esta página se explica cómo integrar la cuadrícula fluida o una implementación de cuadrícula existente (como [Bootstrap](https://twitter.github.com/bootstrap/)) en la aplicación AEM.
 
 Si no está familiarizado con las cuadrículas fluidas, consulte la sección [Introducción a las cuadrículas](/help/sites-developing/responsive.md#developing-a-fluid-grid) fluidas en la parte inferior de esta página. Esta introducción proporciona una visión general de las cuadrículas fluidas y una guía para diseñarlas.
 
@@ -714,7 +715,7 @@ El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto 
 
 >[!NOTE]
 >
->El ejemplo de Geometrixx Media integra el marco de trabajo de JavaScript de [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) en su implementación de cuadrícula fluida. El marco de Bootstrap proporciona el archivo bootstrap.css.
+>El ejemplo de Geometrixx Medias integra la estructura de javascript del [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) en su implementación de cuadrícula fluida. La estructura Bootstrap proporciona el archivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -746,7 +747,7 @@ El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto 
 
 #### Cambio de posición del contenido en la cuadrícula de componentes Página {#repositioning-content-in-the-page-component-grid}
 
-Las páginas de la aplicación de medios de Geometrixx de muestra distribuyen filas de bloques de contenido horizontalmente en ventanillas móviles anchas. En ventanillas móviles más pequeñas, los mismos bloques se distribuyen verticalmente. El siguiente ejemplo de CSS muestra los estilos que implementan este comportamiento para el código HTML que genera el componente de página de inicio de medios:
+Las páginas de la aplicación Geometrixx Medias de ejemplo distribuyen filas de bloques de contenido horizontalmente en ventanillas móviles anchas. En ventanillas móviles más pequeñas, los mismos bloques se distribuyen verticalmente. El siguiente ejemplo de CSS muestra los estilos que implementan este comportamiento para el código HTML que genera el componente de página de inicio de medios:
 
 * La CSS predeterminada para la página de bienvenida de medios asigna el `float:left` estilo a `span*` las clases que están dentro de `row-fluid` las clases.
 
@@ -980,4 +981,4 @@ La siguiente CSS podría implementar este comportamiento:
 
 Para el diseño de página de cada tamaño de ventanilla de visualización objetivo, determine el número de columnas que ocupa cada bloque de contenido. A continuación, determine qué clase utilizar para los elementos div de esos bloques de contenido.
 
-Una vez establecidas las clases div, puede implementar la cuadrícula mediante la aplicación AEM.
+Una vez establecidas las clases div, puede implementar la cuadrícula con la aplicación AEM.

@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Para obtener una descripción general del proceso de internacionalización y loc
 
 ## Internacionalización de cadenas en código Java y JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-El paquete `com.day.cq.i18n` Java le permite mostrar cadenas localizadas en la interfaz de usuario. La `I18n` clase proporciona el `get` método que recupera las cadenas localizadas del diccionario AEM. El único parámetro requerido del `get` método es el literal de cadena en inglés. El inglés es el idioma predeterminado para la interfaz de usuario. El ejemplo siguiente localiza la palabra `Search`:
+El paquete `com.day.cq.i18n` Java le permite mostrar cadenas localizadas en la interfaz de usuario. La `I18n` clase proporciona el `get` método que recupera las cadenas localizadas del diccionario de AEM. El único parámetro requerido del `get` método es el literal de cadena en inglés. El inglés es el idioma predeterminado para la interfaz de usuario. El ejemplo siguiente localiza la palabra `Search`:
 
 `i18n.get("Search");`
 
@@ -82,7 +85,7 @@ i18n.get("Enter a search keyword");
 
 #### Uso de sugerencias de traducción {#using-translation-hints}
 
-Especifique la sugerencia [de](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) traducción de la cadena internacionalizada para distinguir entre cadenas duplicadas en el diccionario. Utilice el segundo parámetro opcional del `get` método para proporcionar la sugerencia de traducción. La sugerencia de traducción debe coincidir exactamente con la propiedad Comment del elemento del diccionario.
+Especifique la sugerencia [de](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) traducción de la cadena internacionalizada para distinguir entre cadenas de duplicado en el diccionario. Utilice el segundo parámetro opcional del `get` método para proporcionar la sugerencia de traducción. La sugerencia de traducción debe coincidir exactamente con la propiedad Comment del elemento del diccionario.
 
 Por ejemplo, el diccionario contiene la cadena `Request` dos veces: una vez como verbo y otra como sustantivo. El código siguiente incluye la sugerencia de traducción como argumento en el `get` método:
 
@@ -92,7 +95,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusión de variables en frases localizadas {#including-variables-in-localized-sentences}
 
-Incluya variables en la cadena localizada para crear un significado contextual en una frase. Por ejemplo, después de iniciar sesión en una aplicación web, la página principal muestra el mensaje &quot;Welcome back Administrator&quot; (Bienvenido administrador). Tienes 2 mensajes en tu bandeja de entrada&quot;. El contexto de página determina el nombre de usuario y el número de mensajes.
+Incluya variables en la cadena localizada para crear un significado contextual en una frase. Por ejemplo, después de iniciar sesión en una aplicación web, la página de inicio muestra el mensaje &quot;Welcome back Administrator&quot; (Bienvenido al administrador). Tienes 2 mensajes en tu bandeja de entrada&quot;. El contexto de página determina el nombre de usuario y el número de mensajes.
 
 [En el diccionario](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), las variables se representan en cadenas como índices entre corchetes. Especifique los valores de las variables como argumentos del `get` método. Los argumentos se colocan siguiendo la sugerencia de traducción y los índices se corresponden con el orden de los argumentos:
 
@@ -117,7 +120,7 @@ La `I18N` clase define un `get` método estático que resulta útil cuando se ne
 
 La API de Javascript permite localizar cadenas en el cliente. Al igual que con el código [Java y JSP](#internationalizing-strings-in-java-and-jsp-code) , la API de Javascript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
 
-La carpeta `granite.utils` de biblioteca de [](/help/sites-developing/clientlibs.md) cliente proporciona la API de JavaScript. Para utilizar la API, incluya esta carpeta de la biblioteca de cliente en la página. Las funciones de localización utilizan el `Granite.I18n` espacio de nombres.
+La carpeta `granite.utils` de biblioteca de [](/help/sites-developing/clientlibs.md) cliente proporciona la API de JavaScript. Para utilizar la API, incluya esta carpeta de la biblioteca de cliente en la página. Las funciones de Localización utilizan la `Granite.I18n` Área de nombres.
 
 Antes de presentar cadenas localizadas, debe establecer la configuración regional mediante la `Granite.I18n.setLocale` función . La función requiere el código de idioma de la configuración regional como argumento:
 
@@ -164,7 +167,7 @@ En el siguiente ejemplo, la secuencia de comandos JSP recupera la `jcr:title` pr
 
 #### Especificación de sugerencias de traducción para nodos JCR {#specifying-translation-hints-for-jcr-nodes}
 
-De forma similar a las sugerencias de [traducción de la API](#using-translation-hints)de Java, puede proporcionar sugerencias de traducción para distinguir las cadenas duplicadas en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad de sugerencia está compuesto por el nombre de la propiedad internacionalizada con el `_commentI18n` sufijo:
+De forma similar a las sugerencias de [traducción de la API](#using-translation-hints)de Java, puede proporcionar sugerencias de traducción para distinguir las cadenas de duplicado en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad de sugerencia está compuesto por el nombre de la propiedad internacionalizada con el `_commentI18n` sufijo:
 
 `${prop}_commentI18n`
 
@@ -176,7 +179,7 @@ Compruebe si ha internacionalizado todas las cadenas de la interfaz de usuario. 
 
 `USR_*Default-String*_尠`
 
-La siguiente imagen muestra la traducción de código auxiliar de la página de inicio de AEM:
+La siguiente imagen muestra la traducción de stub para la página de inicio AEM:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

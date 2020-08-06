@@ -9,15 +9,18 @@ topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
 
-# Asociación de revisores de envío con un formulario {#associating-submission-reviewers-with-a-form}
+# Asociación de revisores de envío con un formulario  {#associating-submission-reviewers-with-a-form}
 
 Al crear un formulario, puede especificar los usuarios que lo revisan mediante el portal de formularios y proporcionar comentarios. Su organización puede recopilar comentarios y retrabajar los formularios enviados.
 
-AEM Forms permite asociar un grupo de revisores a un formulario. Los usuarios agregados a un grupo de revisión de un formulario ven los envíos de este formulario y proporcionan sus comentarios.
+AEM Forms permite asociar un grupo de revisores con un formulario. Los usuarios agregados a un grupo de revisión de un formulario ven los envíos de este formulario y proporcionan sus comentarios.
 
 Los grupos de revisores asignados a un formulario solo pueden revisar los envíos del formulario especificado.
 
@@ -29,8 +32,8 @@ Para asociar un grupo de revisores a un formulario, edite el esquema de metadato
 
 Para editar el esquema de metadatos:
 
-1. En el modo de creación, en Experience Manager, haga clic en **[!UICONTROL Herramientas > Recursos > Esquemas]** de metadatos.
-1. En la página Formularios de esquema, vaya a **[!UICONTROL Formularios > Formularios creados en AEM]**.
+1. En el modo de autor, en Experience Manager, haga clic en **[!UICONTROL Herramientas > Recursos > Esquemas]** de metadatos.
+1. En la página de Esquema Forms, vaya a **[!UICONTROL Forms > Forms Authoring in AEM]**.
 
    La dirección URL de la página es:
 
@@ -51,19 +54,19 @@ Para editar el esquema de metadatos:
 
 ## Asociación de revisores de envío con un formulario {#associating-submission-reviewers-with-a-form-1}
 
-Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agregue usuarios a él. Agregue el grupo de revisores creado en el campo revisor de envío de formulario en las propiedades avanzadas del formulario.\
+Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agregue usuarios a él. Añada el grupo de revisores creado en el campo revisor de envío de formulario en las propiedades avanzadas del formulario.\
 Los grupos de usuarios permiten asociar diferentes conjuntos de revisores de envío con diferentes formularios adaptables. Esta función evita que un usuario no autorizado revise el envío.
 
 Antes de realizar los siguientes pasos, consulte [Requisito previo](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
 Para crear un grupo y agregarle miembros, vaya a **[!UICONTROL Herramientas > Operaciones > Seguridad > Grupos]**.\
 Para obtener más información, consulte Administración [de usuarios y servicios](/help/sites-administering/security.md).\
-Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios se envía con AEM Forms y garantiza que los usuarios se añadan como revisores de envío.
+Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios se envía con AEM Forms y garantiza que los usuarios se agreguen como revisores de envío.
 
 Para asociar grupos de usuarios con un formulario adaptable:
 
-1. En el modo de creación, vaya a **[!UICONTROL Formularios > Formularios y documentos]**.
-1. Utilice la opción **[!UICONTROL Seleccionar]** para seleccionar un formulario adaptable y haga clic en **[!UICONTROL Ver propiedades]**.
+1. En el modo de creación, vaya a **[!UICONTROL Forms > Forms y Documentos]**.
+1. Utilice la opción **[!UICONTROL Seleccionar]** para seleccionar un formulario adaptable y haga clic en Propiedades de **[!UICONTROL Vista]**.
 1. En la ventana Propiedades del formulario, haga clic en **[!UICONTROL Editar]** y, a continuación, en **[!UICONTROL AVANZADO]**.
 1. Introduzca el grupo en el campo de grupo de revisor de envío y haga clic en **[!UICONTROL Finalizado]**.
 

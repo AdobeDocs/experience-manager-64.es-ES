@@ -1,5 +1,5 @@
 ---
-title: NO PUBLICAR, PERO NO ELIMINAR LA personalización de tipos de datos para modelos de fragmentos de contenido
+title: NO PUBLIQUE, PERO NO DELETE Personalización de tipos de datos para modelos de fragmentos de contenido
 seo-title: Personalización de tipos de datos para modelos de fragmentos de contenido
 description: Los tipos de datos utilizados en los modelos de fragmentos de contenido se pueden personalizar.
 seo-description: Los tipos de datos utilizados en los modelos de fragmentos de contenido se pueden personalizar.
@@ -10,15 +10,18 @@ discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
 
-# NO PUBLICAR, PERO NO ELIMINAR LA personalización de tipos de datos para modelos de fragmentos de contenido{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# NO PUBLIQUE, PERO NO DELETE Personalización de tipos de datos para modelos de fragmentos de contenido{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
 [Los fragmentos](/help/assets/content-fragments.md) de contenido se basan en modelos [de fragmentos de](/help/assets/content-fragments-models.md)contenido. Estos modelos se crean a partir de [elementos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) de diferentes tipos de datos.
 
-Hay disponibles varios tipos de datos predeterminados, como texto de una sola línea, texto enriquecido multilínea, campos numéricos, selectores booleanos, opciones de menú desplegable, fecha y hora, etc. Los usuarios de AEM pueden seleccionar tipos de datos en función de la intención editorial de los fragmentos correspondientes. Esto le permite adaptarse a modelos de texto sencillos a través de modelos complejos con diferentes tipos de contenido y la experiencia de creación de fragmentos asociada.
+Hay disponibles varios tipos de datos predeterminados, como texto de una sola línea, texto enriquecido multilínea, campos numéricos, selectores booleanos, opciones de menú desplegable, fecha y hora, etc. AEM usuarios pueden seleccionar tipos de datos en función de la intención editorial de los fragmentos correspondientes. Esto le permite adaptarse a modelos de texto sencillos a través de modelos complejos con diferentes tipos de contenido y la experiencia de creación de fragmentos asociada.
 
 Los tipos de datos se definen mediante una [combinación de propiedades](#properties) de nodo que se mantienen en ubicaciones [específicas del repositorio](#locations-in-the-repository). También puede crear sus propios tipos [de](#creating-your-data-type) datos y [fieldProperties](#creating-your-own-fieldproperties-property).
 
@@ -84,7 +87,7 @@ Deben estar presentes las siguientes propiedades para que el tipo de datos esté
 
 * `fieldViewResourceType`
 
-   Tipo de recurso Sling utilizado para representar el tipo de datos en la vista previa, al construir el modelo. Cuando el usuario arrastra el tipo de datos a la izquierda del editor de modelos, la `fieldViewResourceType` propiedad representa el componente que se procesa allí. Se utiliza para los casos en los que no se desea procesar el componente completo, pero solo se desea procesar un sustituto que minimice la sobrecarga en el editor de modelos.
+   Tipo de recurso Sling utilizado para representar el tipo de datos en la previsualización, al construir el modelo. Cuando el usuario arrastra el tipo de datos a la izquierda del editor de modelos, la `fieldViewResourceType` propiedad representa el componente que se procesa allí. Se utiliza para los casos en los que no se desea procesar el componente completo, pero solo se desea procesar un sustituto que minimice la sobrecarga en el editor de modelos.
 
 * `fieldTitle`
 
@@ -144,7 +147,7 @@ Deben estar presentes las siguientes propiedades para que el tipo de datos esté
   <tr> 
    <td>Enumeración</td> 
    <td>string/long</td> 
-   <td>enumeración</td> 
+   <td>lista desglosada</td> 
   </tr> 
   <tr> 
    <td>Etiquetas</td> 
@@ -216,7 +219,7 @@ Las propiedades de configuración de cada tipo de datos. Valores para `fieldProp
 
 * `numbervaluefield`
 
-   Un selector de valores `numberfield` predeterminado para el **número** `type.options` Esto agrega las opciones de entrada para el tipo de datos de **enumeración** , que se utiliza para determinar los valores del componente de cuadro de selección.
+   Un selector de valores `numberfield` predeterminado para el **número** `type.options` Agrega la entrada de opciones para el tipo de datos de **Lista desglosada** , que se utiliza para determinar los valores del componente de cuadro de selección.
 
 * `placeholderfield`
 
@@ -292,6 +295,7 @@ La estructura de nodos debe crearse en `/apps` para poder superponer los tipos d
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
+
    Definen cómo se procesarán los componentes del tipo de datos. Pueden ser cualquier componente; incluyendo sus propios componentes personalizados (necesita un conjunto de ` [fieldProperties](#fieldproperties)`).
 
    Defina estas propiedades, con los valores correspondientes, en el nodo del tipo de datos.
@@ -311,6 +315,7 @@ La estructura de nodos debe crearse en `/apps` para poder superponer los tipos d
    * `renderType`
    * `valueType`
    * `listOrder`
+
    Defina estas propiedades, con los valores correspondientes, en el nodo del tipo de datos.
 
 ### Uso del tipo de datos {#using-your-data-type}
@@ -335,7 +340,7 @@ Puede elegir entre [fieldProperties](#fieldproperties)predefinidas o crear las s
 
       `sling:include`
 
-   1. Este componente debe representar un campo (si un usuario necesita introducir datos) o una entrada oculta con las propiedades necesarias para el tipo de datos. Por ejemplo, un componente multicampo requiere un nodo secundario con el tipo de campo que debe duplicar, por lo que debe haber una entrada que pueda crear (mediante mecánicas POST de sling) un nodo secundario de un tipo específico.
+   1. Este componente debe representar un campo (si un usuario necesita introducir datos) o una entrada oculta con las propiedades necesarias para el tipo de datos. Por ejemplo, un componente multicampo requiere un nodo secundario con el tipo de campo que debe duplicado, por lo que debe haber una entrada que pueda crear (mediante mecánica de POST sling) un nodo secundario de un tipo específico.
 
 1. Se debe agregar el nombre base de este componente a `fieldProperties`.
 1. Repita el procedimiento para todas las propiedades que necesite.

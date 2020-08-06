@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Puede cambiar la fuente que se muestra en el espacio de trabajo de AEM Forms. Las fuentes utilizadas en una sección específica de la interfaz de usuario se definen en la sección correspondiente de la hoja de estilo. Puede cambiar las fuentes de la interfaz de usuario de forma selectiva.
 
-Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md) el espacio de trabajo de AEM Forms y, según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
+Siga los pasos [Genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md) el espacio de trabajo de AEM Forms y, según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
 
 1. Cambie o agregue la familia de fuentes en un estilo existente.
 1. Cambie o agregue la familia de fuentes en línea para el elemento HTML.
@@ -27,7 +30,7 @@ Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-ht
 
 Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegación superior a Courier New, siga estos pasos:
 
-1. Inicie sesión en CRXDE Lite accediendo `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Inicie sesión en el CRXDE Lite accediendo a `https://[server]:[port]/lc/crx/de/index.jsp`.
 1. Realice una de las acciones siguientes:
 
    1. Para cambiar la familia de fuentes en un estilo existente, agregue lo siguiente en el archivo newStyle.css en /apps/ws/css.
@@ -74,6 +77,6 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
 
 1. Vuelva a iniciar el espacio de trabajo y borre la caché del explorador para que los cambios estén visibles.
 
-![change_font_before](assets/change_font_before.png)**Figure:** Barra de navegación *superior antes de personalizar la fuente*
+![change_font_before](assets/change_font_before.png)**Figure:** *Barra de navegación superior antes de personalizar la fuente*
 
-![change_font_after](assets/change_font_after.png)**Figure:** Barra de navegación *superior después de personalizar la fuente de la primera ficha*
+![change_font_after](assets/change_font_after.png)**Figure:** *Barra de navegación superior después de personalizar la fuente de la primera ficha*

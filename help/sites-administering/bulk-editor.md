@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 El Editor en masa permite una edición muy eficaz cuando el contexto visual de la página no es necesario, ya que le permite:
 
-* buscar (y mostrar) contenido de varias páginas; esto se realiza con GQL (Google Query Language)
+* buscar (y mostrar) contenido de varias páginas; esto se realiza con GQL (Google Consulta Language)
 * editar este contenido directamente en el editor masivo
 * guardar los cambios (en las páginas de origen)
 * exportar este contenido a un archivo de hoja de cálculo separado por tabuladores (.tsv)
@@ -28,20 +31,20 @@ El Editor en masa permite una edición muy eficaz cuando el contexto visual de l
 >
 >También puede importar contenido en el repositorio, pero de forma predeterminada está deshabilitado para el Editor masivo como está disponible en la consola **Herramientas** .
 
-En esta sección se describe cómo trabajar con el editor masivo en la consola **Herramientas** . Normalmente, los administradores utilizan el editor masivo para buscar y editar varios elementos. Esto se realiza rellenando la tabla con una consulta GQL y seleccionando los elementos de contenido en los que trabajar. Los autores suelen utilizar el editor masivo como parte de una aplicación de editor masivo personalizada a la que se puede acceder a través del componente de listado [de](/help/sites-authoring/default-components.md) productos.
+En esta sección se describe cómo trabajar con el editor masivo en la consola **Herramientas** . Normalmente, los administradores utilizan el editor masivo para buscar y editar varios elementos. Esto se lleva a cabo rellenando la tabla con una consulta GQL y, a continuación, seleccionando los elementos de contenido en los que trabajar. Los autores suelen utilizar el editor masivo como parte de una aplicación de editor masivo personalizada a la que se puede acceder a través del componente de listado [de](/help/sites-authoring/default-components.md) productos.
 
 >[!CAUTION]
 >
->Con la [desaprobación de la IU](/help/release-notes/deprecated-removed-features.md) clásica en AEM 6.4, el Editor masivo también se ha desaprobado y, por lo tanto, Adobe no tiene pensado mejorar aún más el Editor masivo.
+>Con la [desaprobación de la IU](/help/release-notes/deprecated-removed-features.md) clásica en AEM 6.4, el Editor masivo también se ha desaprobado y, por lo tanto, Adobe no planea seguir mejorando el Editor masivo.
 
 ## Ejemplo de caso de uso para el Editor masivo {#example-use-case-for-the-bulk-editor}
 
-Por ejemplo: si necesita todos los nombres y direcciones de correo electrónico de los usuarios que completaron un estudio en particular, el Editor masivo puede proporcionar esa información y puede exportarla a una hoja de cálculo.
+Por ejemplo, si necesita todos los nombres y direcciones de correo electrónico de los usuarios que han rellenado una encuesta determinada, el Editor en masa puede proporcionar esa información y puede exportarla a una hoja de cálculo.
 
-En el sitio web de Geometrixx se incluye un ejemplo para ilustrar este caso de uso:
+En el sitio web de la Geometrixx se incluye un ejemplo para ilustrar este caso de uso:
 
-1. Vaya a la página **Asistencia** y, a continuación, a la encuesta de satisfacción **del servicio** al cliente.
-1. **Edite** el párrafo **Inicio de formulario** . **En el cuadro de diálogo, haga clic en la ficha** Avanzadas **, expanda Configuración** de **acción y, a continuación, haga clic en** Ver datos... .
+1. Vaya a la página de **asistencia** y, a continuación, a la encuesta de satisfacción del servicio de **atención al cliente** .
+1. **Edite** el **Inicio del párrafo Formulario** . En el cuadro de diálogo, haga clic en la ficha **Avanzadas** , expanda Configuración **de** acción y, a continuación, haga clic en Datos de **Vista...**.
 
    ![custom survey](assets/custsatsurvey.png)
 
@@ -63,7 +66,7 @@ El editor masivo le permite:
 Para utilizar el editor masivo para editar varios elementos simultáneamente:
 
 1. En la consola **Herramientas** , haga clic en la carpeta **Importadores** para expandirla.
-1. Haga doble clic en el Editor **masivo** para abrirlo.
+1. Haga clic con el botón Doble en el Editor **masivo** para abrirlo.
 1. Especifique los requisitos de selección:
 
 <table> 
@@ -90,7 +93,7 @@ Para utilizar el editor masivo para editar varios elementos simultáneamente:
   </tr> 
   <tr> 
    <td>Columnas / propiedades personalizadas</td> 
-   <td>Introduzca cualquier otra propiedad que no aparezca en el campo <strong>Propiedades/Columnas</strong> . Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades mediante una coma para separar las propiedades. <i></i> Nota: Si agrega una propiedad personalizada que aún no existe, AEM WCM muestra una celda vacía. Cuando se modifica la celda vacía y se guarda, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td> 
+   <td>Introduzca cualquier otra propiedad que no aparezca en el campo <strong>Propiedades/Columnas</strong> . Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades mediante una coma para separar las propiedades. <i>Nota:</i> Si agrega una propiedad personalizada que aún no existe, AEM WCM muestra una celda vacía. Cuando se modifica la celda vacía y se guarda, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y las Áreas de nombres de propiedad.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -105,7 +108,7 @@ Por ejemplo:
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Haga doble clic en una celda para realizar los cambios que necesite.
+1. Realice los cambios que necesite haciendo clic con el doble en una celda.
 
    ![srchresultedit](assets/srchresultedit.png)
 
@@ -115,12 +118,12 @@ Por ejemplo:
    >
    >Los cambios que realice aquí se escribirán en el contenido del repositorio; por ejemplo, la página a la que se hace referencia en **Ruta**.
 
-#### Parámetros de consulta GQL adicionales {#additional-gql-query-parameters}
+#### Parámetros de Consulta GQL adicionales {#additional-gql-query-parameters}
 
-* **** path: solo los nodos de búsqueda situados debajo de esta ruta. Si especifica más de un término con un prefijo de ruta, solo se considerará el último.
-* **** type: solo los nodos de retorno de los tipos de nodo dados. Esto incluye tanto tipos primarios como mixtos. Puede especificar varios tipos de nodos separados por comas. GQL devolverá nodos que sean de cualquiera de los tipos especificados.
-* **** order: ordene el resultado según las propiedades especificadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga el nombre de la propiedad con un signo menos. Por ejemplo: order:-name. El uso de un signo más devolverá el resultado en orden ascendente, que también es el valor predeterminado.
-* **** límite: limita el número de resultados mediante un intervalo. Por ejemplo: limit:10..20 Tenga en cuenta que el intervalo está basado en cero, el inicio es inclusivo y el final es exclusivo. También puede especificar un intervalo abierto:limit:10. o límite:..20 Si se omiten los puntos y se especifica un solo valor, GQL devolverá como máximo este número de resultados. Por ejemplo, limit:10 (devolverá los primeros 10 resultados)
+* **path:** solo los nodos de búsqueda situados debajo de esta ruta. Si especifica más de un término con un prefijo de ruta, solo se considerará el último.
+* **type:** solo los nodos de retorno de los tipos de nodo dados. Esto incluye tanto tipos primarios como mixtos. Puede especificar varios tipos de nodos separados por comas. GQL devolverá nodos que sean de cualquiera de los tipos especificados.
+* **order:** ordene el resultado según las propiedades especificadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga el nombre de la propiedad con un signo menos. Por ejemplo: order:-name. El uso de un signo más devolverá el resultado en orden ascendente, que también es el valor predeterminado.
+* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo: limit:10..20 Tenga en cuenta que el intervalo está basado en cero, el inicio es inclusivo y el final es exclusivo. También puede especificar un intervalo abierto:limit:10. o límite:..20 Si se omiten los puntos y se especifica un solo valor, GQL devolverá como máximo este número de resultados. Por ejemplo, limit:10 (devolverá los primeros 10 resultados)
 
 ### Exportación de contenido {#exporting-content}
 
@@ -138,7 +141,7 @@ Para exportar contenido:
    ![srchrsesultexport](assets/srchrsesultexport.png)
 
 1. Seleccione la ubicación y confirme que desea descargar el archivo.
-1. Después de descargar el archivo, puede abrirlo desde su programa de hojas de cálculo, por ejemplo, Microsoft Excel. El programa de hoja de cálculo importa el archivo y lo convierte en un formato de hoja de cálculo.
+1. Después de descargar el archivo, puede abrirlo desde el programa de la hoja de cálculo, por ejemplo, Microsoft Excel. El programa de hoja de cálculo importa el archivo y lo convierte en un formato de hoja de cálculo.
 
    ![exportinexcel](assets/exportinexcel.png)
 
@@ -153,7 +156,7 @@ De forma predeterminada, la funcionalidad de importación se oculta al abrir el 
 Para importar contenido:
 
 1. Abra el Editor masivo.
-1. Agregar `?hib=false` a la dirección URL, por ejemplo:
+1. Añadir `?hib=false` a la dirección URL, por ejemplo:
 
    `http://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 

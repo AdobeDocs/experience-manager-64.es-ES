@@ -1,8 +1,8 @@
 ---
 title: Purgar registros de la base de datos de Job Manager
 seo-title: Purgar registros de la base de datos de Job Manager
-description: Los datos de procesos grandes pueden reducir el rendimiento de los formularios AEM. Se recomienda depurar los datos del proceso cuando ya no se necesitan registros.
-seo-description: Los datos de procesos grandes pueden reducir el rendimiento de los formularios AEM. Se recomienda depurar los datos del proceso cuando ya no se necesitan registros.
+description: Los datos de procesos grandes pueden resultar en un menor rendimiento AEM los formularios. Se recomienda depurar los datos del proceso cuando ya no se necesitan registros.
+seo-description: Los datos de procesos grandes pueden resultar en un menor rendimiento AEM los formularios. Se recomienda depurar los datos del proceso cuando ya no se necesitan registros.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -21,16 +24,16 @@ Los datos de proceso que se generan cuando se invoca un proceso de larga duraci�
 
 Puede utilizar la consola de administración para realizar una purga única de registros obsoletos o para programar purgas automáticas regulares. Otros métodos para depurar registros obsoletos se analizan en [Depuración de datos](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)de procesos.
 
-**Acceso a la página Programador de Depuración de Trabajos**
+**Acceso a la página Planificador de Depuración de Trabajos**
 
 1. En la Consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página.
-1. Haga clic en la ficha Programador de depuración de trabajos.
+1. Haga clic en la ficha Planificador Depuración de trabajos.
 
-La información sobre cualquier purga programada actualmente se muestra en el cuadro Información del programador de depuración de trabajos.
+La información sobre las purgas programadas actualmente se muestra en el cuadro Información del Planificador de depuración de trabajos.
 
 >[!NOTE]
 >
->Al hacer clic en Detener programador se detienen las purgas programadas en el futuro, pero no se detiene un trabajo de depuración que ya está en curso.
+>Al hacer clic en Detener Planificador se detienen las purgas programadas en el futuro, pero no se detiene un trabajo de purga que ya está en curso.
 
 **Programar una purga única**
 
@@ -45,9 +48,9 @@ La información sobre cualquier purga programada actualmente se muestra en el cu
 
    >[!NOTE]
    >
-   >Si especifica una fecha y hora de inicio que ya existían, la purga se produce inmediatamente al hacer clic en Iniciar programador.
+   >Si especifica una fecha y hora de inicio que ya existían, la purga se produce inmediatamente al hacer clic en Planificador de Inicio.
 
-1. Haga clic en Iniciar programador. Cualquier configuración del programador programada previamente se sustituye por la nueva configuración.
+1. Haga clic en Planificador de Inicio. Cualquier configuración de Planificador previamente programada se sustituye por la nueva configuración.
 
 **Configurar una programación de depuración automática**
 
@@ -62,7 +65,7 @@ La información sobre cualquier purga programada actualmente se muestra en el cu
 
    >[!NOTE]
    >
-   >Si especifica una fecha y hora de inicio que ya existían, los formularios AEM calcularán la fecha lógica de inicio siguiente en función de la fecha especificada. Por ejemplo, si programa que las purgas de trabajos se produzcan semanalmente a partir del 7 de abril y ahora es el 9 de abril, la primera purga tendrá lugar el 14 de abril.
+   >Si especifica una fecha y hora de inicio que ya existían, AEM formularios calculará la fecha lógica siguiente de inicio en función de la fecha especificada. Por ejemplo, si programa que las purgas de trabajos se produzcan semanalmente a partir del 7 de abril y ahora es el 9 de abril, la primera purga tendrá lugar el 14 de abril.
 
-1. Haga clic en Iniciar programador. Cualquier configuración del programador programada previamente se sustituye por la nueva configuración.
+1. Haga clic en Planificador de Inicio. Cualquier configuración de Planificador previamente programada se sustituye por la nueva configuración.
 

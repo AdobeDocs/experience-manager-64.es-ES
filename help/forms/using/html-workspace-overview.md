@@ -1,8 +1,8 @@
 ---
 title: Uso del espacio de trabajo de AEM Forms
 seo-title: Uso del espacio de trabajo de AEM Forms
-description: Empiece a trabajar con el espacio de trabajo de AEM Forms con esta rápida descripción general de los flujos de trabajo del proceso.
-seo-description: Empiece a trabajar con el espacio de trabajo de AEM Forms con esta rápida descripción general de los flujos de trabajo del proceso.
+description: Comience con el espacio de trabajo de AEM Forms con esta rápida descripción general de los flujos de trabajo de proceso.
+seo-description: Comience con el espacio de trabajo de AEM Forms con esta rápida descripción general de los flujos de trabajo de proceso.
 uuid: fac103bd-142b-46cc-9db7-22d1880260f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-El espacio de trabajo de AEM Forms forma parte de AEM Forms. Workspace facilita la representación de formularios HTML además de los formularios PDF. Ahora puede participar en procesos empresariales desde interfaces móviles y aplicaciones web.
+El espacio de trabajo de AEM Forms forma parte de AEM Forms. Workspace facilita la representación de HTML Forms además de PDF forms. Ahora puede participar en procesos empresariales desde interfaces móviles y aplicaciones web.
 
-Además, el espacio de trabajo de AEM Forms es altamente personalizable mediante las metodologías de desarrollo estándar HTML y JavaScript™. Es un software basado en componentes que se integra fácilmente con sus otras aplicaciones web.
+Además, el espacio de trabajo de AEM Forms es altamente personalizable mediante las metodologías de desarrollo estándar de HTML y JavaScript™. Es un software basado en componentes que se integra fácilmente con sus otras aplicaciones web.
 
 Para obtener más información, consulte [Introducción al espacio de trabajo](/help/forms/using/introduction-html-workspace.md)de AEM Forms.
 
@@ -55,9 +55,9 @@ AEM Forms en JEE también implementa Flex Workspace de forma predeterminada. Sig
 
 **Migración de procesos existentes al espacio de trabajo de AEM Forms:**
 
-En el espacio de trabajo de AEM Forms, los servicios predeterminados de procesamiento y envío, en el perfil de acciones predeterminado, asociados a formularios XDP, han cambiado y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío. Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](/help/forms/using/new-render-submit-service.md).
+En el espacio de trabajo de AEM Forms, los servicios de procesamiento y envío predeterminados, en el perfil de acción predeterminado, asociados a los formularios XDP, han cambiado y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío. Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](/help/forms/using/new-render-submit-service.md).
 
-**Asignación de las personalizaciones de Flex Workspace con el espacio de trabajo de AEM Forms:**
+**Asignación de personalizaciones de Flex Workspace con el espacio de trabajo de AEM Forms:**
 
 La asignación entre varios tipos de personalizaciones en ambos espacios de trabajo es la siguiente.
 
@@ -112,7 +112,7 @@ La asignación entre varios tipos de personalizaciones en ambos espacios de trab
 
 ### Limitaciones del espacio de trabajo de AEM Forms {#limitations-of-aem-forms-workspace}
 
-Algunas de las funciones de Flex Workspace que no están disponibles en el espacio de trabajo de AEM Forms son: mensajes y notificaciones, página de bienvenida, contenedor de aprobación y opción para administrar encabezados de columna. Para obtener una lista completa, consulte [Funciones de Flex Workspace no disponibles en el espacio de trabajo](/help/forms/using/features-flex-workspace-available-html.md)de AEM Forms.
+Algunas de las funciones de Flex Workspace que no están disponibles en el espacio de trabajo de AEM Forms incluyen: mensajes y notificaciones, página de bienvenida, contenedor de aprobación y opción para administrar encabezados de columna. Para obtener una lista completa, consulte [Funciones de Flex Workspace no disponibles en el espacio de trabajo](/help/forms/using/features-flex-workspace-available-html.md)de AEM Forms.
 
 ## Desarrollo con el espacio de trabajo de AEM Forms {#developing-with-aem-forms-workspace}
 
@@ -134,14 +134,14 @@ El artículo de [personalización](introduction-customizing-html-workspace.md) e
 
 Los elementos que se pueden entregar en el espacio de trabajo de AEM Forms incluyen un paquete CRX implementado en CRX, un archivo SDK que contiene el código fuente completo, bibliotecas JavaScript de terceros y secuencias de comandos de compilación del espacio de trabajo de AEM Forms. Utilícelos para configurar el entorno del desarrollador para realizar las personalizaciones mencionadas anteriormente. Para obtener más información, consulte [Creación del código](introduction-customizing-html-workspace.md#building-html-workspace-code)del espacio de trabajo de AEM Forms.
 
-Puede personalizar una parte importante de la interfaz y la funcionalidad básica, como fuentes, combinación de colores, logotipo, pantalla de inicio de sesión, diálogos de error, integración con aplicaciones de terceros y reutilización de componentes en aplicaciones de terceros. También puede mejorar el contenido que se muestra en la página Resumen de Tarea, mostrar imágenes para acciones de ruta de tarea e incluso modificar los modelos de red troncal de bajo nivel y las Vistas que crean la aplicación de espacio de trabajo de AEM Forms.
+Puede personalizar una parte importante de la interfaz y la funcionalidad básica, como fuentes, combinación de colores, logotipo, pantalla de inicio de sesión, diálogos de error, integración con aplicaciones de terceros y reutilización de componentes en aplicaciones de terceros. También puede mejorar el contenido mostrado en la página Resumen de Tarea, mostrar imágenes para acciones de ruta de tarea e incluso modificar los modelos y Vistas de red troncal de bajo nivel que crean la aplicación de espacio de trabajo de AEM Forms.
 
-### Representación HTML de formularios XDP {#html-rendering-of-xdp-forms}
+### Representación HTML de XDP Forms {#html-rendering-of-xdp-forms}
 
 De forma predeterminada, para un nuevo proceso, un formulario XDP se procesa en formato PDF en un escritorio y en formato HTML en una tablet. Siempre es posible procesar un formulario XDP en formato HTML. Para obtener más información, consulte [Nuevo servicio](/help/forms/using/new-render-submit-service.md)de procesamiento y envío.
 
-[La función de formularios](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) móviles, que funciona con [perfiles](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, &#39;Representar nuevo formulario HTML&#39; utiliza `default.html` perfil, que puede cambiar. También puede agregar cambios personalizados que se producen antes de procesar un formulario XDP en formato HTML.
+[La función de Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) móvil, que funciona con [perfiles](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, &#39;Representar nuevo formulario HTML&#39; utiliza `default.html` perfil, que puede cambiar. También puede agregar cambios personalizados que se producen antes de procesar un formulario XDP en formato HTML.
 
 ## Aplicación del espacio de trabajo de AEM Forms {#aem-forms-workspace-app}
 
-Para trabajar en los procesos empresariales en un dispositivo móvil, puede utilizar la aplicación de espacio de trabajo de AEM Forms que ofrece AEM Forms. Para obtener más información, consulte Descripción general [de la aplicación del espacio de trabajo de](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)AEM Forms.
+Para trabajar en los procesos empresariales en un dispositivo móvil, puede utilizar la oferta de aplicaciones de espacio de trabajo de AEM Forms de AEM Forms. Para obtener más información, consulte la descripción general [de la aplicación del espacio de trabajo de](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)AEM Forms.

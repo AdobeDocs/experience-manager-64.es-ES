@@ -1,8 +1,8 @@
 ---
 title: Creación de una acción de barra de herramientas personalizada
 seo-title: Creación de una acción de barra de herramientas personalizada
-description: Los desarrolladores de formularios pueden crear acciones de barra de herramientas personalizadas para formularios adaptables en AEM Forms. El uso de acciones personalizadas permite a los autores proporcionar más flujos de trabajo y opciones a los usuarios finales.
-seo-description: Los desarrolladores de formularios pueden crear acciones de barra de herramientas personalizadas para formularios adaptables en AEM Forms. El uso de acciones personalizadas permite a los autores proporcionar más flujos de trabajo y opciones a los usuarios finales.
+description: Los desarrolladores de formularios pueden crear acciones de barra de herramientas personalizadas para formularios adaptables en AEM Forms. El uso de acciones personalizadas permite que los autores de formularios proporcionen más flujos de trabajo y opciones a los usuarios finales.
+seo-description: Los desarrolladores de formularios pueden crear acciones de barra de herramientas personalizadas para formularios adaptables en AEM Forms. El uso de acciones personalizadas permite que los autores de formularios proporcionen más flujos de trabajo y opciones a los usuarios finales.
 uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +54,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
 
 1. Para proporcionar funcionalidad al botón Revisar, agregue código JavaScript y CSS y código del lado del servidor en el archivo init.jsp, presentes dentro del `reviewbeforesubmit` nodo.
 
-   Agregue el siguiente código en `init.jsp`.
+   Añada el siguiente código en `init.jsp`.
 
    ```
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -109,7 +112,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
    </div><!-- /.modal -->
    ```
 
-   Agregue el siguiente código en el `ReviewBeforeSubmit.js` archivo.
+   Añada el siguiente código en el `ReviewBeforeSubmit.js` archivo.
 
    ```
    /*anonymous function to handle show of review before submit view */
@@ -144,7 +147,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
    });
    ```
 
-   Agregue el siguiente código al `ReviewBeforeSubmit.css` archivo.
+   Añada el siguiente código en el `ReviewBeforeSubmit.css` archivo.
 
    ```css
    .modal-list .reviewlabel {
@@ -173,7 +176,7 @@ Para ilustrar la creación de una acción de barra de herramientas personalizada
    }
    ```
 
-1. Para comprobar la funcionalidad de la acción personalizada, abra el formulario adaptable en modo de vista previa y haga clic en Revisar en la barra de herramientas.
+1. Para comprobar la funcionalidad de la acción personalizada, abra el formulario adaptable en modo de Previsualización y haga clic en Revisar en la barra de herramientas.
 
    >[!NOTE]
    >

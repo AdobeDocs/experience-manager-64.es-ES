@@ -10,13 +10,16 @@ topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 0%
 
 ---
 
 
 # Envío asincrónico de formularios adaptables {#asynchronous-submission-of-adaptive-forms}
 
-Tradicionalmente, los formularios web están configurados para enviarse sincrónicamente. Cuando los usuarios envían un formulario, se les redirige a una página de confirmación o, en caso de error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están adquiriendo popularidad cuando la página web permanece estática mientras que la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables configurando el envío asincrónico. En este caso, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
+Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. Cuando los usuarios envían un formulario, se les redirige a una página de confirmación o, en caso de error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están adquiriendo popularidad cuando la página web permanece estática mientras que la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables configurando el envío asincrónico. En este caso, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
 
 Continúe leyendo para obtener más información sobre el envío asincrónico en formularios adaptables.
 
@@ -24,7 +27,7 @@ Continúe leyendo para obtener más información sobre el envío asincrónico en
 
 Para configurar el envío asincrónico para un formulario adaptable:
 
-1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor de formularios y toque ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
+1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor Formulario y toque ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
 1. En la sección Propiedades de **[!UICONTROL envío]** , habilite **[!UICONTROL Usar envío]** asincrónico.
 1. En la sección **[!UICONTROL Al enviar]** , seleccione una de las siguientes opciones para realizar el envío correcto del formulario.
 
@@ -39,7 +42,7 @@ AEM Forms proporciona controladores de éxito y de error predeterminados para lo
 
 Además, los autores y desarrolladores de formularios pueden escribir reglas en el nivel de formulario para anular los controladores predeterminados. Para obtener más información, consulte [Anulación de controladores predeterminados mediante reglas](#custom).
 
-En primer lugar, analicemos la respuesta del servidor para los eventos de éxito y error.
+En primer lugar, analicemos la respuesta del servidor en busca de eventos de éxito y error.
 
 ### Respuesta del servidor para el evento de éxito de envío {#server-response-for-submission-success-event}
 
@@ -65,7 +68,7 @@ El controlador de éxito lee la respuesta del servidor y, en consecuencia, redir
 
 ### Respuesta del servidor para el evento de error de envío {#server-response-for-submission-error-event}
 
-La estructura para la respuesta del servidor para el evento de error de envío es la siguiente:
+La estructura para el evento de error de envío de la respuesta del servidor es la siguiente:
 
 ```
 {
@@ -98,5 +101,5 @@ Realice los siguientes pasos para escribir reglas en el editor de código para g
 1. Seleccione Editor **[!UICONTROL de código]** en la lista desplegable de selección de modo.
 1. En el editor de código, toque **[!UICONTROL Editar código]**. Toque **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
 1. Seleccione Envío **** correcto o **[!UICONTROL Error en envío]** en la lista desplegable **[!UICONTROL Evento]** .
-1. Escriba una regla para el evento seleccionado y toque **[!UICONTROL Listo]** para guardar la regla.
+1. Escriba una regla para el evento seleccionado y toque **[!UICONTROL Listo]** para guardarla.
 

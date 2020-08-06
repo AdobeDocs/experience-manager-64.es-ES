@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 71%
 
 ---
 
@@ -44,7 +47,7 @@ Para crear segmentos:
 Para crear una marca:
 
 1. En **Sitios**, vaya a la carpeta **Campañas** (por ejemplo, en We.Retail).
-1. Haga clic en **Crear página **e introduzca un título para la página, por ejemplo, Marca We.Retail y seleccione la plantilla **Marca **Plantilla.
+1. Click **Create Page **and enter a title for the page, for example We.Retail Brand and select the **Brand **template.
 
 ### Creación de una campaña {#creating-a-campaign}
 

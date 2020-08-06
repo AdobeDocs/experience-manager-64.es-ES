@@ -1,6 +1,6 @@
 ---
-title: Uso de selectores
-seo-title: Uso de selectores
+title: Trabajar con selectores
+seo-title: Trabajar con selectores
 description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
 seo-description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 19%
 
 ---
 
 
-# Uso de selectores {#working-with-selectors}
+# Trabajar con selectores {#working-with-selectors}
 
 Al trabajar con una imagen interactiva, un vídeo interactivo o una pancarta de carrusel, se seleccionan recursos y se seleccionan sitios y productos para las zonas interactivas y los mapas de imagen con los que se desea establecer el vínculo. Al trabajar con conjuntos de imágenes, conjuntos de giros y conjuntos multimedia, también se seleccionan recursos con el selector de recursos.
 
@@ -27,7 +30,7 @@ Por ejemplo, en este letrero de carrusel, utilice el selector de productos si es
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zonas interactivas o los mapas de imagen, está utilizando el selector. El selector de sitios solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM Commerce.
+Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zonas interactivas o los mapas de imagen, está utilizando el selector. El selector de sitios solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM comercio.
 
 ## Selección de productos {#selecting-products}
 
@@ -47,7 +50,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Puede cambiar el lugar en el que AEM busca datos de productos tocando **[!UICONTROL Examinar]** y navegando a otra carpeta.
+   Puede cambiar el lugar donde AEM los datos del producto tocando **[!UICONTROL Examinar]** y navegando a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -63,13 +66,13 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En el modo de **[!UICONTROL vista previa]** , puede tocar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo de **[!UICONTROL Previsualización]** , puede tocar la zona interactiva o el mapa de imágenes y ver el aspecto de la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Seleccionar sitios {#selecting-sites}
 
-Utilice el selector de sitios para elegir una página web cuando desee que un punto interactivo o un mapa de imagen se vincule a una página web que se administre en los sitios de AEM.
+Utilice el selector de sitios para elegir una página Web cuando desee que un punto interactivo o mapa de imágenes se vincule a una página Web administrada dentro de AEM sitios.
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
@@ -85,7 +88,7 @@ Utilice el selector de sitios para elegir una página web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo de **[!UICONTROL vista previa]** , si toca la zona interactiva o el mapa de imágenes, navegará a la página del sitio de AEM que haya especificado.
+1. En el modo de **[!UICONTROL Previsualización]** , si toca el punto interactivo o el mapa de imagen, navegará a la página del sitio AEM que especificó.
 
 ## Selección de recursos {#selecting-assets}
 
@@ -102,7 +105,7 @@ Consulte también Selector [de recursos](asset-selector.md) para obtener más in
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Puede cambiar el lugar donde AEM busca recursos navegando a otra carpeta en el campo **[!UICONTROL Ruta]** .
+   Puede cambiar el lugar donde AEM exploran los recursos navegando a otra carpeta en el campo **[!UICONTROL Ruta]** .
 
    Toque **[!UICONTROL Colección]** para buscar solo recursos dentro de las colecciones.
 

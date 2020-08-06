@@ -1,8 +1,8 @@
 ---
 title: Espacios y entidades
 seo-title: Desarrollo de AEM Mobile Content Services
-description: Esta página sirve como página de aterrizaje para el desarrollo de AEM Mobile Content Services.
-seo-description: Esta página sirve como página de aterrizaje para el desarrollo de AEM Mobile Content Services.
+description: Esta página sirve una página de aterrizaje para desarrollar AEM Mobile Content Services.
+seo-description: Esta página sirve una página de aterrizaje para desarrollar AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
@@ -24,23 +27,23 @@ Un espacio es una ubicación conveniente para almacenar entidades expuestas a tr
 
 >[!NOTE]
 >
->Para hacer que algo esté disponible para cualquier canal desde Content Services, debe estar en un espacio.
+>Para hacer que algo esté disponible para cualquier canal de Content Services, debe estar en un espacio.
 
 ## Creación de un espacio {#creating-a-space}
 
 Si el usuario desea exponer un montón de contenido y recursos a una aplicación móvil, crea el espacio mediante el panel de AEM Mobile.
 
-Para el primer usuario, que no ha configurado los servicios de contenido para trabajar con espacios, el panel de AEM Mobile muestra solo las aplicaciones después de seleccionar **Content Services**.
+Para el primer usuario, que no ha configurado los servicios de contenido para que trabajen con espacios, AEM Mobile panel solo muestra las aplicaciones después de seleccionar **Content Services**.
 
 >[!CAUTION]
 >
 >**Requisitos previos para agregar un espacio**
 >
->Seleccione **Activar AEM Content Services** para que funcione con Spaces y actívelo en el panel de la aplicación de AEM Mobile.
+>Marque **Activar AEM servicios** de contenido para trabajar con espacios y habilitarlo en el panel de la aplicación de AEM Mobile.
 >
 >Consulte [Administración de servicios](/help/mobile/developing-content-services.md) de contenido para obtener más información.
 
-Una vez configurados los espacios en el tablero, siga estos pasos para crear espacios:
+Una vez configurados los espacios en panel, siga estos pasos para crear espacios:
 
 1. Elija **Espacios** en Content Services.
 
@@ -54,9 +57,9 @@ Una vez configurados los espacios en el tablero, siga estos pasos para crear esp
 
 ## Administración de un espacio {#managing-a-space}
 
-Una vez creado un espacio, haga clic en el lado izquierdo para administrarlo.
+Una vez creado el espacio, haga clic en el lado izquierdo para administrarlo en la lista.
 
-Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de AEM.
+Puede vista de propiedades del espacio, eliminar el espacio o publicar el espacio y su contenido en una instancia de publicación AEM.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -68,7 +71,7 @@ Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su con
 
 **Publicación de un espacio** Cuando se publica un espacio, también se publican todas las carpetas y entidades de ese espacio.
 
-1. Seleccione el espacio haciendo clic en su icono en la lista Consola de espacio
+1. Seleccione el espacio haciendo clic en su icono en la lista de la consola espacial
 1. Elegir árbol **de publicación**
 
 >[!NOTE]
@@ -107,7 +110,7 @@ La función de copia **de** idioma permite a los autores copiar su copia de idio
 >
 >Se recomienda colocar cualquier contenido que pueda traducirse en el nodo Copia de idioma.
 
-### Adición de una copia de idioma {#adding-language-copy}
+### Añadir copia de idioma {#adding-language-copy}
 
 1. Una vez que haya creado espacio, haga clic en ese espacio para crear una copia del idioma.
 
@@ -119,7 +122,7 @@ La función de copia **de** idioma permite a los autores copiar su copia de idio
    >
    >Los nodos de copia de idioma sólo pueden existir como elementos secundarios directos del espacio.
 
-1. **** Elija **Content Package Language&amp;ast; e introduzca el** Título&amp;Último; en el cuadro de diálogo **Crear copia** de idioma.
+1. Elija **Content Package Language&amp;ast;** e introduzca el **Título&amp;Último;** en el cuadro de diálogo **Crear copia** de idioma.
 
    Haga clic en **Crear**.
 
@@ -131,12 +134,12 @@ La función de copia **de** idioma permite a los autores copiar su copia de idio
 
    >[!NOTE]
    >
-   >Seleccione **Maestro** de idioma para ver las carpetas de copia de idioma.
+   >Seleccione **Maestro** de idioma para la vista de las carpetas de copia de idioma.
 
 ### Eliminación de una carpeta del espacio {#removing-a-folder-from-the-space}
 
 1. Seleccione la carpeta en la lista de contenido de espacio
-1. Haga clic en **Eliminar** en la barra de herramientas
+1. Click **Delete** from the toolbar
 
    >[!NOTE]
    >
@@ -144,7 +147,7 @@ La función de copia **de** idioma permite a los autores copiar su copia de idio
 
 ## Uso de entidades en un espacio {#working-with-entities-in-a-space}
 
-Las entidades representan el contenido expuesto a través del extremo del servicio Web. Las entidades se almacenan en espacios para que se puedan encontrar fácilmente y se mantengan independientes de la estructura de repositorio de AEM que contiene el contenido relacionado.
+Las entidades representan el contenido expuesto a través del extremo del servicio Web. Las entidades se almacenan en espacios para que se puedan encontrar fácilmente y se mantengan independientes de la estructura del repositorio de AEM que contiene el contenido relacionado.
 
 Es posible que desee agrupar entidades en alguna recopilación lógica. Para ello, puede crear cualquier número de carpetas.
 
@@ -158,11 +161,11 @@ Si los elementos secundarios de entidad, que son otras entidades, se recopilan p
 
 1. Abra la consola Espacio y haga clic en el título del espacio.
 
-   Si lo desea, puede desplazarse a la carpeta haciendo clic en el título de la carpeta en la lista.
+   Si lo desea, puede desplazarse hasta la carpeta haciendo clic en el título de la lista.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Elija el modelo para la entidad. Es el tipo de entidad que desea crear. Haga clic en Siguiente.
+1. Elija el modelo para la entidad. Es el tipo de entidad que desea crear. Haga clic en Siguiente. 
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -196,7 +199,7 @@ Si los elementos secundarios de entidad, que son otras entidades, se recopilan p
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   También puede hacer clic en **Vista previa** para ver el vínculo json.
+   También puede hacer clic en **Previsualización** para vista del vínculo json.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -210,7 +213,7 @@ Si los elementos secundarios de entidad, que son otras entidades, se recopilan p
 
    >[!NOTE]
    >
-   >Una vez agregada una entidad, debe guardarse para que funcione el vínculo Vista previa. Para ver la vista previa, haga clic en **Guardar**. Al hacer clic en la **vista previa** se muestra el archivo del recurso agregado, como se muestra en la figura siguiente:
+   >Una vez agregada una entidad, debe guardarse para que funcione el vínculo de Previsualización. Para vista de la previsualización, haga clic en **Guardar**. Al hacer clic en la **Previsualización** , se muestra el archivo del recurso agregado, como se muestra en la figura siguiente:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
@@ -218,7 +221,7 @@ Si los elementos secundarios de entidad, que son otras entidades, se recopilan p
    >
    >Cuando haya terminado de agregar recursos a la entidad, puede elegir **Guardar** para guardar los cambios o elegir **Guardar y cerrar** para guardar y redirigir a la lista de la consola Espacio donde se definen las entidades.
 
-   Además, seleccione una entidad en la lista de la consola de espacio y haga clic en **Propiedades** para ver y editar las propiedades de una entidad definida.
+   Además, seleccione una entidad en la lista de la consola de espacio y haga clic en **Propiedades** para realizar la vista y editar las propiedades de una entidad definida.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -228,7 +231,7 @@ Si los elementos secundarios de entidad, que son otras entidades, se recopilan p
 
 ### Eliminación de una entidad {#removing-an-entity}
 
-1. Seleccione la entidad en la lista de contenido de espacio
+1. Seleccione la entidad desde la lista del contenido del espacio
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 

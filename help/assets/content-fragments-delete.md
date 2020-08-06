@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 12%
 
 ---
 
@@ -87,9 +90,9 @@ Los requisitos previos de permisos para permitir que un usuario o grupo específ
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
 
-Estos `remove` privilegios deben [administrarse mediante listas de control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Estos `remove` privilegios deben [administrarse mediante Listas de Control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Los privilegios `add` y `modify` se pueden administrar también en CRXDE Lite o mediante la consola de Administración de usuarios.
+Los privilegios `add` y `modify` también se pueden administrar en CRXDE Lite o mediante la consola de Administración de usuarios.
 
 Por ejemplo, la definición de los `remove` privilegios de un grupo `content-authors-no-delete`:
 

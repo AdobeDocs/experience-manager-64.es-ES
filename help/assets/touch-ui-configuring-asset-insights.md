@@ -1,16 +1,19 @@
 ---
 title: Configuración de perspectivas de recursos
-description: Obtenga información sobre cómo configurar las perspectivas de recursos en Recursos AEM.
+description: Obtenga información sobre cómo configurar las perspectivas de recursos en AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 10%
 
 ---
 
 
 # Configuración de perspectivas de recursos {#configuring-asset-insights}
 
-Recursos Adobe Experience Manager (AEM) obtiene datos de uso de los recursos de AEM utilizados por sitios web de terceros desde Adobe Analytics. Para habilitar Asset Insights para recuperar estos datos y generar perspectivas, primero configure la función para integrarla con Adobe Analytics.
+Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso de AEM recursos utilizados por sitios web de terceros. Para habilitar Asset Insights para recuperar estos datos y generar perspectivas, primero configure la función para integrarla con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -26,12 +29,12 @@ Recursos Adobe Experience Manager (AEM) obtiene datos de uso de los recursos de 
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Pulse o haga clic en **[!UICONTROL Autenticar]**.
-1. Una vez que AEM haya autenticado sus credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde el que desee que Asset Insights obtenga datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Una vez que AEM haya configurado el grupo de informes, toque o haga clic en **[!UICONTROL Listo]**.
+1. Después de autenticar AEM las credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde donde desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Después de AEM configurar el grupo de informes, toque o haga clic en **[!UICONTROL Finalizado]**.
 
 ## Rastreador de páginas {#page-tracker}
 
-Después de configurar la cuenta de Analytics, se genera el código de rastreador de páginas. Para habilitar Assets Insights a fin de rastrear los recursos de AEM utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de Recursos AEM para generar el código de seguimiento de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas](touch-ui-using-page-tracker.md)web.
+Después de configurar la cuenta de Analytics, se genera el código de rastreador de páginas. Para permitir que Assets Insights rastree AEM recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de AEM Assets para generar el código del rastreador de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas](touch-ui-using-page-tracker.md)web.
 
 1. In AEM, click the **[!UICONTROL Tools > Assets]**.
 

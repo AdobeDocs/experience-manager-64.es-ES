@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Aspectos básicos de etiquetas {#tag-essentials}
 
-Cuando los componentes de Comunidades AEM están configurados con etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
+Cuando los componentes de AEM Communities están configurados con etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
 
-La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido en el entorno de creación, como páginas y recursos:
+La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido del entorno de creación, como páginas y recursos:
 
 * Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado de contenido](tag-ugc.md) generado por el usuario (UGC) para obtener información sobre cómo crear y administrar etiquetas.
 

@@ -75,7 +75,7 @@ Para cada clúster, verá una lista de miembros del clúster que indica el orden
 
 Para cada instancia del clúster, puede ver varias propiedades relacionadas con la topología:
 
-* Una lista de temas permitidos para el consumidor de trabajos de la instancia.
+* Una lista de permitidos de temas para el consumidor laboral de la instancia.
 * Los extremos expuestos para la conexión con la topología.
 * Temas de trabajo para los que se ha registrado la instancia para la descarga.
 * Temas de trabajo que procesa la instancia.
@@ -108,10 +108,10 @@ Utilice el procedimiento siguiente para abrir la página Administración de topo
 
 El servicio de detección basado en recursos de Apache Sling se ejecuta en cada instancia para controlar cómo interactúan las instancias de Experience Manager con una topología.
 
-El servicio de detección envía solicitudes POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de direcciones IP permitidas o nombres de host permitidos para unirse a la topología:
+El servicio de detección envía solicitudes de POST periódicas (latidos) a los servicios de Topology Connector para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de permitidos de direcciones IP o nombres de host que pueden unirse a la topología:
 
 * Para unir una instancia a una topología, especifique la dirección URL del servicio Conector de topología del miembro raíz.
-* Para habilitar una instancia para que se una a una topología, agregue la instancia a la lista allow del servicio Topology Connector del miembro raíz.
+* Para habilitar una instancia para que se una a una topología, agregue la instancia a la lista de permitidos del servicio Topology Connector del miembro raíz.
 
 Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes propiedades del servicio org.apache.sling.discover.impt.Config:
 
@@ -148,7 +148,7 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Lista de permitidos del conector de topología</td> 
+   <td>lista de permitidos del conector de topología</td> 
    <td>topologíaConnectorWhitelist</td> 
    <td>lista de direcciones IP o nombres de host que permite el servicio Conector de topología local en la topología. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -174,7 +174,7 @@ Realice el siguiente procedimiento en el miembro raíz de la topología. El proc
 1. Abra la consola web en el explorador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Haga clic en Principal > Administración de topología.
 1. Haga clic en Configurar servicio de detección.
-1. Para cada miembro de la topología, agregue un elemento a la propiedad allow list del conector de topología y especifique el nombre de host o la dirección IP del miembro de la topología.
+1. Para cada miembro de la topología, agregue un elemento a la propiedad de lista de permitidos Conector de topología y especifique el nombre de host o la dirección IP del miembro de la topología.
 
 ## Configuración del consumo de temas {#configuring-topic-consumption}
 
@@ -215,11 +215,11 @@ Hay varias implementaciones de JobConsumer instaladas con Experience Manager. Lo
 
 ### Desactivación y activación de temas para una instancia {#disabling-and-enabling-topics-for-an-instance}
 
-El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista de temas permitidos y listas de bloques. Configure estas propiedades para habilitar o deshabilitar el procesamiento de temas específicos en una instancia de Experience Manager.
+El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista de permitidos y lista de bloqueados de temas. Configure estas propiedades para habilitar o deshabilitar el procesamiento de temas específicos en una instancia de Experience Manager.
 
 **Nota:** Si la instancia pertenece a una topología, también puede utilizar el Explorador de descargas en cualquier equipo de la topología para habilitar o deshabilitar temas.
 
-La lógica que crea la lista de temas habilitados primero permite todos los temas que están en la lista de permitidos y luego elimina los temas que están en la lista de bloques.De manera predeterminada, todos los temas están habilitados (el valor de la lista de permitidos es `*`) y no hay temas deshabilitados (la lista de bloques no tiene valor).
+La lógica que crea la lista de los temas habilitados primero permite todos los temas que están en la lista de permitidos y luego elimina los temas que están en la lista de bloqueados.De forma predeterminada, todos los temas están habilitados (el valor de lista de permitidos es `*`) y no hay temas deshabilitados (la lista de bloqueados no tiene valor).
 
 Utilice la consola web o un `sling:OsgiConfig` nodo para configurar las siguientes propiedades. Para `sling:OsgiConfig` los nodos, el PID del servicio Job Consumer Manager es org.apache.sling.evento.impl.job.JobConsumerManager.
 
@@ -297,7 +297,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transporte > URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transporte > Usuario de transporte | Usuario de replicación en instancia de destinatario |
    | Transporte > Pasaporte de transporte | Contraseña de usuario de replicación en la instancia de destinatario |
-   | Extended > Método HTTP | OBTENER |
+   | Extended > Método HTTP | GET |
 
 ### Creación del agente de salida {#creating-the-outbox-agent}
 
@@ -333,7 +333,7 @@ El siguiente procedimiento asume las siguientes características para la topolog
 * Los usuarios no interactúan directamente con una o varias instancias de Experience Manager que procesan los recursos DAM. Estas instancias están dedicadas al procesamiento en segundo plano de los recursos DAM.
 
 1. En cada instancia de Experience Manager, configure el servicio de detección para que apunte al conector de topografía raíz. (Consulte [Configuración de la pertenencia](#title4)a la topología).
-1. Configure el Conector de topografía raíz para que las instancias de conexión estén en la lista de permitidas.
+1. Configure el Conector de topografía raíz para que las instancias de conexión estén en la lista de permitidos.
 1. Abra el navegador de descargas y deshabilite el `com/adobe/granite/workflow/offloading` tema en las instancias con las que los usuarios interactúan para cargar o cambiar recursos DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)

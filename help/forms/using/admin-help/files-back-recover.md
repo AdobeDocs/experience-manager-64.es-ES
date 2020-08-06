@@ -73,9 +73,9 @@ Una configuración de solución de administración de correspondencia simple inc
 
 el administrador de formularios optimiza el proceso de actualización, administración y retirada de formularios.
 
-### Espacio de trabajo de AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
-Espacio de trabajo de AEM Forms coincide con las funciones de Flex Workspace (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más fácil de usar.
+AEM Forms Workspace se ajusta a las funciones de Flex Workspace (obsoleto para formularios AEM en JEE) y agrega nuevas funciones para ampliar e integrar Workspace y hacerlo más sencillo de usar.
 
 >[!NOTE]
 >

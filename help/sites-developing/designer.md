@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
 >[!CAUTION]
 >
->En este artículo se describe cómo crear un sitio web basado en la IU clásica. Adobe recomienda aprovechar las últimas tecnologías de AEM para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de sitios](/help/sites-developing/getting-started.md)de AEM.
+>En este artículo se describe cómo crear un sitio web basado en la IU clásica. Adobe recomienda aprovechar las tecnologías de AEM más recientes para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
 Deberá crear un diseño para el sitio web y, en AEM, hacerlo mediante Designer.
 
 >[!NOTE]
 >
->Para obtener más información sobre la accesibilidad web, consulte [AEM y las Directrices](/help/managing/web-accessibility.md)de accesibilidad web.
+>Para obtener más información sobre la accesibilidad Web, consulte [AEM y las Directrices](/help/managing/web-accessibility.md)de accesibilidad Web.
 
 ## Uso de Designer {#using-the-designer}
 
@@ -59,7 +62,7 @@ Al desarrollar un sitio web, se recomienda almacenar imágenes y archivos CSS en
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
 ```
 
-El ejemplo anterior ofrece varias ventajas:
+El ejemplo anterior oferta varios beneficios:
 
 * Los componentes pueden tener un aspecto diferente en función de cada sitio mediante una ruta de diseño diferente.
 * El rediseño del sitio web se puede realizar simplemente señalando la ruta de diseño a un nodo diferente en la raíz del sitio, de `design/v1` a `design/v2.`

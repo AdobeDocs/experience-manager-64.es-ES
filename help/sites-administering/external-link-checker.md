@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
-# Comprobador de vínculos externos{#the-external-link-checker}
+# The External Link Checker{#the-external-link-checker}
 
-AEM proporciona un comprobador de vínculos externo. Comprobador de vínculos:
+En AEM se proporciona un comprobador de vínculos externo. Comprobador de vínculos:
 
 * analiza todas las páginas de contenido
 * genera una lista de todos los vínculos válidos y no válidos
@@ -28,8 +31,8 @@ AEM proporciona un comprobador de vínculos externo. Comprobador de vínculos:
 Para utilizar el comprobador de vínculos externo:
 
 1. Open the **Tools** console.
-1. Haga doble clic en el Comprobador **de vínculos** externos (a la derecha o a la izquierda). Se genera una lista de todos los vínculos externos.
-1. Valide un vínculo específico seleccionándolo en la lista y luego haciendo clic en **Comprobar**:
+1. Haga clic con el Doble en el Comprobador **de vínculos** externos (panel derecho o izquierdo). Se genera una lista de todos los vínculos externos.
+1. Valide un vínculo específico seleccionándolo en la lista y haciendo clic en **Comprobar**:
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -40,6 +43,7 @@ Para utilizar el comprobador de vínculos externo:
    * tiempo transcurrido desde la última validación del vínculo
    * tiempo transcurrido desde la última vez que el vínculo estuvo disponible
    * tiempo transcurrido desde la última vez que se accedió al vínculo
+
    se muestra.
 
 1. En las páginas de contenido individuales, los vínculos no válidos se mostrarán como rotos:

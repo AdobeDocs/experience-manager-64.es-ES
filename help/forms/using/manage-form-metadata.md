@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1995'
+ht-degree: 1%
 
 ---
 
@@ -20,21 +23,21 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 
 Los metadatos facilitan la categorización y organización de los recursos y ayudan a los usuarios que buscan un recurso específico.
 
-De forma predeterminada, AEM Forms proporciona un conjunto definido de metadatos para cada tipo de recurso. Más allá de los metadatos predeterminados, puede agregar metadatos personalizados a cada uno de los tipos de recursos. AEM Forms también le proporciona los medios adecuados para crear, gestionar e intercambiar todos estos metadatos de forma eficaz en los formularios.
+De forma predeterminada, AEM Forms proporciona un conjunto definido de metadatos para cada tipo de recurso. Más allá de los metadatos predeterminados, puede agregar metadatos personalizados a cada uno de los tipos de recursos. AEM Forms también le proporciona los medios adecuados para crear, administrar e intercambiar todos estos metadatos de forma eficaz en los formularios.
 
-Si es desarrollador o propietario de un sitio, puede personalizar Forms Portal, la interfaz de usuario final para AEM Forms para que refleje los metadatos que utiliza en su organización. Para obtener más información sobre Forms Portal, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+Si es desarrollador o propietario de un sitio, puede personalizar Forms Portal, la interfaz de usuario final de AEM Forms para que refleje los metadatos que utiliza en su organización. Para obtener más información sobre Forms Portal, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Metadatos en AEM Forms {#metadata-in-aem-forms-nbsp}
+## Metadatos en AEM Forms  {#metadata-in-aem-forms-nbsp}
 
-En AEM Forms, la lista de propiedades de metadatos asociadas a un recurso depende de su tipo. Además, si agrega una propiedad de metadatos personalizada, se agrega a todos los recursos del tipo en el que se agregaron los metadatos personalizados.
+En AEM Forms, la lista de las propiedades de metadatos asociadas a un recurso depende de su tipo. Además, si agrega una propiedad de metadatos personalizada, se agrega a todos los recursos del tipo en el que se agregaron los metadatos personalizados.
 
 ### Asset types  {#asset-types-nbsp}
 
-Los siguientes tipos de recurso son compatibles con AEM Forms:
+AEM Forms admite los siguientes tipos de recursos:
 
 * Plantillas de formulario (formularios XFA)
-* Formularios PDF
-* Documento (PDF planos)
+* PDF forms
+* Documento (archivos PDF planos)
 * Formularios adaptables
 * Medios
 * XFS
@@ -83,11 +86,11 @@ A continuación se muestra una extensa lista de propiedades de metadatos admitid
    <td>Un valor de sólo lectura que especifica la hora en que se modificó el recurso por última vez.</td> 
   </tr> 
   <tr> 
-   <td>Creación</td> 
+   <td>Autor</td> 
    <td>Todos excepto el recurso</td> 
    <td><p>Valor de sólo lectura que se calcula automáticamente en función del tipo de formulario.</p> 
     <ul> 
-     <li>PDF/Plantilla de formulario/Documento: recuperado del archivo binario cargado.</li> 
+     <li>Documento/plantilla de PDF/formulario: recuperado del archivo binario cargado.</li> 
      <li>Formulario adaptable: se ha iniciado sesión de usuario en el momento de la creación del formulario.</li> 
     </ul> </td> 
   </tr> 
@@ -126,7 +129,7 @@ A continuación se muestra una extensa lista de propiedades de metadatos admitid
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Perfil de representación HTML</td> 
+   <td>perfil de procesamiento HTML</td> 
    <td>Plantilla de formulario</td> 
    <td>El perfil de procesamiento HTML utilizado al procesar una plantilla de formulario en formato HTML.</td> 
   </tr> 
@@ -148,7 +151,7 @@ A continuación se muestra una extensa lista de propiedades de metadatos admitid
   <tr> 
    <td>Referencias</td> 
    <td><p>Formulario adaptable</p> <p>Plantilla de formulario</p> <p>Medio</p> </td> 
-   <td><p>Lista de recursos (otros formularios o recursos) a los que está relacionado este formulario. Estos recursos pueden clasificarse en las dos categorías siguientes:</p> 
+   <td><p>Lista de recursos (otros formularios o recursos) a los que está relacionado este formulario. Estos recursos se pueden incluir en las dos categorías siguientes:</p> 
     <ul> 
      <li>Se refiere a: Recursos a los que se refiere el formulario actual.</li> 
      <li>Denominado por: Recursos que hacen referencia al activo actual.</li> 
@@ -160,7 +163,7 @@ A continuación se muestra una extensa lista de propiedades de metadatos admitid
    <td><p>Especifica qué modelo de formulario se utiliza durante la creación del formulario adaptable. Esta propiedad puede tener los siguientes valores:</p> 
     <ul> 
      <li>Plantilla de formulario: Se selecciona una plantilla de formulario entre las existentes en el repositorio. Este valor se puede actualizar.</li> 
-     <li>Esquema XML: Se carga un archivo XSD. Este valor se puede actualizar.</li> 
+     <li>esquema XML: Se carga un archivo XSD. Este valor se puede actualizar.</li> 
      <li>Ninguna</li> 
     </ul> 
     <div>
@@ -170,36 +173,37 @@ A continuación se muestra una extensa lista de propiedades de metadatos admitid
  </tbody> 
 </table>
 
-## Visualización de los metadatos del formulario {#view-form-metadata-nbsp}
+## Metadatos del formulario de Vista {#view-form-metadata-nbsp}
 
 Los recursos tienen valores de propiedad existentes, que se pueden ver en modo de solo lectura. Estos metadatos se originan en el momento de la carga o creación del formulario.
 
-1. Vaya a la ubicación del recurso para el que desea ver los metadatos.
+1. Navegue hasta la ubicación del recurso para el que desea realizar la vista de metadatos.
 
 1. Abra la página de propiedades de una de las siguientes maneras:
 
-   1. Haga clic en el icono Ver propiedades ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) en Acciones rápidas.
+   1. Haga clic en el icono Propiedades de la Vista ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) en Acciones rápidas.
 
       >[!NOTE]
       >
       >Acciones rápidas son los elementos de acción que se muestran sobre una miniatura al pasar el ratón por encima.
 
-   1. Seleccione el formulario y haga clic en el icono Ver propiedades ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) que aparece en la barra de herramientas.
-   1. Vaya a la página de detalles del formulario haciendo clic en la miniatura del formulario cuando no se encuentra en el modo de selección. Ahora, haga clic en el icono del ojo ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) en la esquina superior derecha y, a continuación, haga clic en Propiedades en la lista situada debajo.
+   1. Seleccione el formulario y haga clic en el icono Propiedades de la Vista ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) que aparece en la barra de herramientas.
+   1. Vaya a la página de detalles del formulario haciendo clic en la miniatura del formulario cuando no se encuentra en el modo de selección. A continuación, haga clic en el icono del ojo ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) en la esquina superior derecha y, a continuación, haga clic en Propiedades en la lista situada debajo.
 
 1. La página de propiedades que se abre muestra un esquema que contiene solo las propiedades de metadatos que contienen algún valor.
 
    La página de propiedades tiene una barra de herramientas que contiene dos iconos de acción:
 
-   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Editar los valores de las propiedades de metadatos
-   * Ver: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Vaya a la página de detalles del formulario, que abre el formulario en el modo de vista previa.
+   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Editar los valores de propiedad de metadatos
+   * Vista: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Vaya a la página de detalles del formulario, que abre el formulario en modo de previsualización.
+
    La parte de contenido se divide en dos partes:
 
    * El panel izquierdo contiene una miniatura del formulario
    * El panel derecho contiene propiedades de metadatos en el modo de solo lectura, distribuidas en varias fichas.
 
 
-## Agregar o actualizar valores de metadatos de formulario {#add-update-form-metadata-values-nbsp}
+## Añadir/actualizar valores de metadatos de formulario {#add-update-form-metadata-values-nbsp}
 
 Puede editar el valor de las propiedades de metadatos existentes o agregar nuevos valores a un campo de propiedad de metadatos existente (por ejemplo, cuando un campo de metadatos está en blanco).
 
@@ -219,45 +223,47 @@ Puede editar el valor de las propiedades de metadatos existentes o agregar nuevo
 
    * Cancelar: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancelar los cambios realizados hasta ahora en los valores de las propiedades de metadatos
    * Listo: ![aem6forms_check](assets/aem6forms_check.png) Guarde todos los cambios realizados hasta ahora en los valores de las propiedades de metadatos
+
    Ambas acciones dirigen al usuario de nuevo al modo de solo lectura de la página de propiedades que contiene los valores actualizados.
 
-### Actualizar la miniatura del formulario {#update-the-form-thumbnail-nbsp}
+### Actualizar la miniatura del formulario  {#update-the-form-thumbnail-nbsp}
 
 El panel izquierdo de la página de propiedades muestra la miniatura del formulario. De forma predeterminada, la miniatura que se muestra es la generada en el momento de la creación del formulario (formulario adaptable) o en el momento de la carga del formulario.
 
 Para todos los tipos de formulario, puede cargar una imagen haciendo clic en **[!UICONTROL Cargar imagen]** y buscando un archivo de imagen desde el directorio local. La imagen seleccionada se utiliza como miniatura en lugar de como predeterminada.
 
-Para los formularios adaptables, se proporciona una funcionalidad adicional, que permite al usuario generar una miniatura como instantánea de la vista previa del formulario adaptable actual. Dado que AEM Forms también admite la creación de formularios adaptables, la vista previa del formulario adaptable puede cambiar cada vez que se cambia el formulario adaptable. Esta funcionalidad para generar una miniatura le ayuda a obtener una miniatura nueva para el formulario adaptable en función del estado de vista previa actual. Haga clic en **[!UICONTROL Generar vista previa]** para realizar esta acción.
+Para los formularios adaptables, se proporciona una funcionalidad adicional que permite al usuario generar una miniatura como instantánea de la previsualización de formulario adaptable actual. Como AEM Forms también admite la creación de formularios adaptables, la previsualización del formulario adaptable puede cambiar cada vez que se cambia el formulario adaptable. Esta funcionalidad para generar una miniatura le ayuda a obtener una miniatura nueva para el formulario adaptable en función del estado de previsualización actual. Haga clic en **[!UICONTROL Generar Previsualización]** para realizar esta acción.
 
 >[!NOTE]
 >
->* Utilice una imagen cuadrada para la miniatura. Cuando se utiliza una imagen no cuadrada y se ve la miniatura en la vista de lista, la miniatura aparece recortada.
+>* Utilice una imagen cuadrada para la miniatura. Cuando se utiliza una imagen no cuadrada y se vista la miniatura en la vista de lista, la miniatura aparece recortada.
 >* Una vez que se carga o genera una nueva imagen, la miniatura se reemplaza por esta imagen y no se puede restaurar a la imagen anterior.
+
 >
 
 
 
-## Agregar metadatos personalizados {#add-custom-metadata-nbsp}
+## Añadir metadatos personalizados  {#add-custom-metadata-nbsp}
 
-Aparte de los metadatos proporcionados de forma predeterminada, AEM Forms admite nuevos metadatos personalizados.
+Además de los metadatos proporcionados de forma predeterminada, AEM Forms admite nuevos metadatos personalizados.
 
-Se proporciona una herramienta (Editor de esquemas de metadatos) para definir el esquema de la presentación de metadatos; es decir, la presentación de lo que aparece en la página **[!UICONTROL Propiedades]** de un formulario. El Editor de esquemas de metadatos permite agregar o modificar un esquema personalizado para los recursos.
+Se proporciona una herramienta (Editor de Esquemas de metadatos) para definir el esquema de la presentación de metadatos; es decir, la presentación de lo que aparece en la página **[!UICONTROL Propiedades]** de un formulario. El Editor de Esquemas de metadatos permite agregar o modificar un esquema personalizado para los recursos.
 
-AEM Forms muestra los esquemas de metadatos de los tipos de formularios admitidos en esta herramienta. De este modo, puede acceder a estos esquemas y utilizar la funcionalidad proporcionada en el editor de esquemas de metadatos para agregar propiedades personalizadas.
+AEM Forms expone los esquemas de metadatos de los tipos de formularios admitidos en esta herramienta. De este modo, puede acceder a estos esquemas y utilizar la funcionalidad proporcionada en el editor de esquemas de metadatos para agregar propiedades personalizadas.
 
-### Navegar por el editor de esquemas de metadatos {#navigate-the-metadata-schema-editor-nbsp}
+### Navegar por el editor de esquemas de metadatos  {#navigate-the-metadata-schema-editor-nbsp}
 
 1. Vaya a **[!UICONTROL Herramientas > Recursos > Esquemas]** de metadatos.
 
-1. Haga clic en **[!UICONTROL formularios]** de los formularios de esquema enumerados.
+1. Haga clic en **[!UICONTROL formularios]** en los formularios de esquema enumerados.
 
 1. En la lista que se abre, haga clic en el tipo de recurso para el que desee agregar metadatos personalizados.
 
    >[!NOTE]
    >
-   >Estos esquemas contienen propiedades de metadatos que se proporcionan de forma predeterminada y no se deben modificar o editar (al seleccionar la casilla de verificación y hacer clic en Editar desde la barra de herramientas) para evitar problemas funcionales.
+   >Estos esquemas contienen propiedades de metadatos que se proporcionan de forma predeterminada y no se deben modificar/editar (al seleccionar la casilla de verificación y hacer clic en Editar desde la barra de herramientas) para evitar problemas funcionales.
 
-1. Cualquier tipo de recurso en el que se hace clic abre una lista que contiene la `extendedmetadata` opción. Editar este esquema.
+1. Cualquier tipo de recurso en el que se hace clic abre una lista que contiene la `extendedmetadata` opción. Edite este esquema.
 
 1. Seleccione la casilla de verificación situada junto `extendedmetadata` y, a continuación, haga clic en el icono Editar ![aem6forms_edit](assets/aem6forms_edit.png) que aparece en la barra de herramientas.
 
@@ -276,7 +282,7 @@ AEM Forms muestra los esquemas de metadatos de los tipos de formularios admitido
    1. Puede agregar un campo personalizado del tipo deseado arrastrando el componente de campo de la sección **[!UICONTROL Generar formulario]** a la página de esquema.
    1. Las especificaciones de este campo se pueden proporcionar en la sección **[!UICONTROL Configuración]** después de hacer clic en el campo.
 
-### Agregar propiedad de metadatos personalizada en el editor de esquemas {#add-custom-metadata-property-in-schema-editor-nbsp}
+### Añadir propiedad de metadatos personalizada en el editor de esquemas  {#add-custom-metadata-property-in-schema-editor-nbsp}
 
 1. Vaya a la ficha (existente o nueva) donde desee agregar la propiedad personalizada.
 

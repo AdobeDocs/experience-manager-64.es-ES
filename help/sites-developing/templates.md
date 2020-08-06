@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Las siguientes plantillas se tratan en detalle:
 
 ## Plantillas - Páginas {#templates-pages}
 
-AEM ahora ofrece dos tipos básicos de plantillas para crear páginas:
+AEM ahora oferta dos tipos básicos de plantillas para crear páginas:
 
 >[!NOTE]
 >
@@ -60,7 +63,7 @@ Ventajas de las plantillas editables:
 
 >[!NOTE]
 >
->Hay disponible un artículo de la comunidad de AEM que explica cómo desarrollar un sitio de Experience Manager con plantillas editables; consulte [Creación de un sitio web de Adobe Experience Manager 6.4 con plantillas](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)editables.
+>Hay disponible un artículo AEM de la comunidad que explica cómo desarrollar un sitio de Experience Manager con plantillas editables; consulte [Creación de un sitio web de Adobe Experience Manager 6.4 con plantillas](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)editables.
 
 ### Plantillas estáticas {#static-templates}
 
@@ -78,15 +81,15 @@ Plantillas estáticas:
 >
 >A partir de AEM 6.4, el uso de plantillas estáticas no se considera una práctica recomendada. Utilice plantillas editables en su lugar.
 >
->[Las herramientas de modernización](modernization-tools.md) de AEM pueden ayudarle a migrar de plantillas estáticas a plantillas editables.
+>[AEM herramientas de modernización](modernization-tools.md) pueden ayudarle a migrar de plantillas estáticas a editables.
 
 ### Disponibilidad de la plantilla {#template-availability}
 
 >[!CAUTION]
 >
->AEM ofrece varias propiedades para controlar las plantillas permitidas en **Sitios**. Sin embargo, combinarlos puede llevar a reglas muy complejas que son difíciles de rastrear y administrar.
+>AEM oferta varias propiedades para controlar las plantillas permitidas en **Sitios**. Sin embargo, combinarlos puede llevar a reglas muy complejas que son difíciles de rastrear y administrar.
 >
->Por lo tanto, Adobe recomienda empezar con sencillez, definiendo:
+>Por lo tanto, Adobe recomienda que el inicio sea sencillo, definiendo:
 >
 >* solo la `cq:allowedTemplates` propiedad
    >
@@ -100,9 +103,9 @@ Para ver un ejemplo, consulte We.Retail: `/content/we-retail/jcr:content`
 >
 >Una ventaja adicional es que un autor puede actualizar las `cq:allowedTemplates` propiedades en la ficha **Avanzadas** de las Propiedades de la **página**. Las demás propiedades de plantilla no se pueden actualizar con la IU (estándar), por lo que sería necesario que un desarrollador mantuviera las reglas y una implementación de código para cada cambio.
 
-Al crear una nueva página en la interfaz de administración del sitio, la lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
+Al crear una nueva página en la interfaz de administración del sitio, la lista de las plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
 
-Las siguientes propiedades determinan si `T` se permite utilizar una plantilla para que una nueva página se coloque como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para hacer coincidir con rutas:
+Las siguientes propiedades determinan si `T` se permite utilizar una plantilla para que una nueva página se coloque como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más Expresiones regulares que se utilizan para hacer coincidir con rutas:
 
 * La `cq:allowedTemplates` propiedad del `jcr:content` subnodo de `P` o un antecesor de `P`.
 
@@ -132,7 +135,7 @@ El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
 #### Limitación de plantillas utilizadas en páginas secundarias {#limiting-templates-used-in-child-pages}
 
-Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la `cq:allowedTemplates` propiedad del `jcr:content` nodo de la página para especificar la lista de plantillas que se permitirán como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo `/apps/geometrixx/templates/contentpage`.
+Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la `cq:allowedTemplates` propiedad del `jcr:content` nodo de la página para especificar la lista de las plantillas que se permitirán como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo `/apps/geometrixx/templates/contentpage`.
 
 Puede utilizar la `cq:allowedTemplates` `jcr:content` propiedad en el nodo de la plantilla para que esta configuración se aplique a todas las páginas creadas recientemente que utilicen esta plantilla.
 

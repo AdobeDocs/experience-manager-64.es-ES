@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ Un XDP se puede procesar como formulario PDF o HTML. Las nuevas funciones incluy
 * Representar y enviar un formulario XDP como HTML
 * Representar y enviar un formulario XDP como PDF en el escritorio y como HTML en dispositivos móviles (por ejemplo, un iPad)
 
-### Nuevo servicio de formularios HTML {#new-html-forms-service}
+### Nuevo servicio de Forms HTML {#new-html-forms-service}
 
-El nuevo servicio de formularios HTML aprovecha la nueva función de Forms para admitir la representación de formularios XDP como HTML. El nuevo servicio de formularios HTML expone los siguientes métodos:
+El nuevo servicio de Forms HTML aprovecha la nueva función de Forms para admitir el procesamiento de formularios XDP como HTML. El nuevo servicio de Forms HTML expone los siguientes métodos:
 
 ```java
 /*
@@ -140,7 +143,7 @@ Y, procesos de envío equivalentes.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué Perfiles de acción estarán disponibles de forma predeterminada?**
 
-Para formularios XDP:
+Para XDP Forms:
 
 * Predeterminado (procesar/enviar mediante los nuevos procesos &#39;Predeterminado de procesamiento/envío&#39;)
 

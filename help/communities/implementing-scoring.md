@@ -1,8 +1,8 @@
 ---
 title: Puntuación y distintivos de comunidades
 seo-title: Puntuación y distintivos de comunidades
-description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
-seo-description: La puntuación y las insignias de los AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
+seo-description: La puntuación y las insignias de AEM Communities le permiten identificar y premiar a los miembros de la comunidad
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Información general {#overview}
 
-La función de puntuación y distintivos para AEM Communities permite identificar y premiar a los miembros de la comunidad.
+La función de puntuación y distintivos de AEM Communities permite identificar y premiar a los miembros de la comunidad.
 
 Los principales aspectos de la puntuación y las insignias son:
 
@@ -345,7 +345,7 @@ La `scoringRules`propiedad de una regla de identificación simplemente restringe
 
 >[!NOTE]
 >
->Práctica recomendada: cree imágenes de distintivo únicas para cada sitio de AEM.
+>Práctica recomendada: cree imágenes de distintivo únicas para cada sitio AEM.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -404,7 +404,7 @@ Los distintivos pueden asignarse a miembros mediante la consola [de](members.md#
 
 Los siguientes comandos cURL muestran lo que es necesario para una solicitud HTTP para asignar y revocar distintivos. El formato básico es:
 
-cURL -i -X POST -H *header* -u *inicio de sesión * -F *operación * -F *distintivo * *miembro-perfil-url*
+cURL -i -X POST -H *encabezado* -u *inicio de sesión * -F *operación * -F *distintivo * *miembro-perfil-url*
 
 *header* = &quot;Accept:application/json&quot;\
 encabezado personalizado para pasar al servidor (requerido)
@@ -586,7 +586,7 @@ Si la función no funciona correctamente, asegúrese de que los datos se hayan i
 
 Es posible probar rápidamente la puntuación y la identificación mediante el sitio [Tutorial](getting-started.md) de introducción (participación):
 
-* Acceso a CRXDE Lite en autor
+* CRXDE Lite de acceso al autor
 * Vaya a la página base:
 
    * /content/sites/engagement/es/jcr:content
@@ -617,9 +617,9 @@ Es posible probar rápidamente la puntuación y la identificación mediante el s
 
 ![chlimage_1-370](assets/chlimage_1-370.png)
 
-A continuación, asegúrese de que los componentes de foro y comentarios permiten mostrar distintivos:
+A continuación, asegúrese de que los componentes de foro y comentarios permiten que se muestren distintivos:
 
-* De nuevo con CRXDE Lite
+* Volver a usar CRXDE Lite
 * Vaya al componente de foro
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`

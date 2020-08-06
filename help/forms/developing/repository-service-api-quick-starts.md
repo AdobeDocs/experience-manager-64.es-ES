@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido de API de servicio de repositorio
-seo-title: Inicio rápido de API de servicio de repositorio
+title: Inicios rápidos de API de servicio de repositorio
+seo-title: Inicios rápidos de API de servicio de repositorio
 description: nulo
 seo-description: nulo
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
@@ -11,13 +11,16 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 
-# Inicio rápido de API de servicio de repositorio {#repository-service-api-quick-starts}
+# Inicios rápidos de API de servicio de repositorio {#repository-service-api-quick-starts}
 
-Los siguientes inicios rápidos están disponibles para el servicio Repositorio de AEM Forms.
+Los siguientes Inicios rápidos están disponibles para el servicio Repositorio de AEM Forms.
 
 [Inicio rápido (modo SOAP): Creación de una carpeta mediante la API de Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -39,11 +42,11 @@ Los siguientes inicios rápidos están disponibles para el servicio Repositorio 
 
 [Inicio rápido (modo SOAP): Eliminación de un recurso mediante la API de Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP
+Las operaciones de AEM Forms se pueden realizar con la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP
 
 **Aplicaciones/FormsApplication**
 
-La mayor parte del servicio de repositorio de AEM Forms comienza a interactuar rápidamente con una aplicación denominada `Applications/FormsApplication,` , como se muestra en la siguiente ilustración.
+La mayoría de los inicios rápidos del servicio de repositorio de AEM Forms interactúan con una aplicación denominada `Applications/FormsApplication,` como se muestra en la siguiente ilustración.
 
 La carpeta FormsFolder es una ubicación del repositorio de AEM Forms. Por ejemplo, puede agregar esta carpeta mediante programación a `Applications/FormsApplication`. (Consulte Inicio [rápido (modo SOAP): Creación de una carpeta mediante la API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)de Java).
 
@@ -53,11 +56,11 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web https://[server name]:[server port]/repository. Puede verificar los resultados de inicio rápido mediante un navegador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede ver el contenido en un navegador web.
+>Puede examinar el repositorio de AEM Forms mediante un navegador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador Web https://[server name]:[server port]/repository. Puede comprobar los resultados de inicios rápidos mediante un navegador web. Por ejemplo, si agrega contenido al Repositorio de AEM Forms, puede ver el contenido en un explorador Web.
 
 >[!NOTE]
 >
->Aplicaciones/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación mediante Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)de procesos.
+>Aplicaciones/FormsApplication no existe de forma predeterminada. Para seguir los inicios rápidos, cree esta aplicación mediante Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)de procesos.
 
 ## Inicio rápido (modo SOAP): Creación de una carpeta mediante la API de Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
@@ -295,7 +298,7 @@ El siguiente ejemplo de código Java escribe un recurso llamado *loan.xdp* en el
 
 ## Inicio rápido (modo SOAP): Lista de recursos mediante la API de Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-El siguiente ejemplo de código Java enumera los recursos que se encuentran en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Lista de recursos](/help/forms/developing/aem-forms-repository.md#listing-resources)).
+El siguiente ejemplo de código Java lista los recursos que se encuentran en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Lista de recursos](/help/forms/developing/aem-forms-repository.md#listing-resources)).
 
 ```as3
  /* 

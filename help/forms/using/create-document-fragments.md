@@ -64,7 +64,7 @@ El fragmento documento Detalles de la factura incluye los campos siguientes:
 
 Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como origen de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 
 1. Seleccione **Crear** > **Texto**.
 1. Especifique la siguiente información:
@@ -126,7 +126,7 @@ El fragmento documento Detalles del cliente incluye los campos siguientes:
 
 Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como origen de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Seleccione **Crear** > **Texto**.
 1. Especifique la siguiente información:
 
@@ -187,7 +187,7 @@ El fragmento documento Resumen de factura incluye los siguientes campos:
 
 Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como origen de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Seleccione **Crear** > **Texto**.
 1. Especifique la siguiente información:
 
@@ -252,7 +252,7 @@ El fragmento documento Resumen de cargos incluye los siguientes campos:
 
 Siga estos pasos para crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
 
-1. Seleccione **[!UICONTROL Formularios]** > Fragmentos **[!UICONTROL de Documento]**.
+1. Seleccione **[!UICONTROL Forms]** > Fragmentos **[!UICONTROL de Documento]**.
 1. Seleccione **Crear** > **Texto**.
 1. Especifique la siguiente información:
 
@@ -284,7 +284,7 @@ Siga estos pasos para crear texto estático y utilizar elementos del modelo de d
 1. Coloque el cursor junto al campo Cargos **itinerantes** internacionales y haga clic con el botón doble en las **facturas** > **propiedad roamingintnl** .
 1. Coloque el cursor junto al campo **Valor de los cargos** de servicios Añadidos y haga clic con el doble en la propiedad **efectos** > **lienzo** .
 1. Sitúe el cursor junto al campo Cargos **** totales y haga clic con el doble en la propiedad **Facetas** > **Cargos** de uso.
-1. Coloque el cursor junto al campo **TOTAL PAGO** y haga clic con el botón doble en la propiedad **efectos** > **cobros** de uso.
+1. Coloque el cursor junto al campo **TOTAL PAGABLE** y haga clic con el botón doble en la propiedad **efectos** > **cobros** de uso.
 
    ![summary_loads_static_fdm](assets/summary_charges_static_fdm.png)
 

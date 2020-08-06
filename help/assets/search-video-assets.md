@@ -1,9 +1,12 @@
 ---
 title: Búsqueda de recursos de vídeo
-description: Utilice palabras clave, propiedades de archivo como un tipo de MIME, un tamaño o una marca de hora modificada recientemente para encontrar rápidamente el archivo en Recursos AEM.
+description: Use palabras clave, propiedades de archivo como un tipo de MIME, tamaño o una marca de hora modificada recientemente para encontrar rápidamente el archivo en AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 4%
 
 ---
 
@@ -12,17 +15,17 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 Para ahorrar tiempo y esfuerzo al tener que navegar por cientos de posibles vídeos, utilice palabras clave, propiedades de archivo como el tipo de archivo o una marca de hora recientemente modificada para encontrar rápidamente el archivo.
 
-Si no ve el archivo que busca, puede cambiar el alcance completo de una búsqueda haciendo clic en una de las opciones en la parte inferior de los resultados de búsqueda. Por ejemplo, si busca un archivo en la biblioteca de documentos pero no lo encuentra, puede hacer clic en Bibliotecas para expandir la búsqueda al resto de las bibliotecas. Para obtener más información, consulte [Buscar un archivo o una carpeta](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
+Si no ve el archivo que busca, puede cambiar el alcance completo de una búsqueda haciendo clic en una de las opciones en la parte inferior de los resultados de búsqueda. Por ejemplo, si busca un archivo en la biblioteca de Documentos pero no lo encuentra, puede hacer clic en Bibliotecas para expandir la búsqueda al resto de las bibliotecas. Para obtener más información, consulte [Buscar un archivo o una carpeta](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder).
 
 Puede buscar recursos digitales en función de una o varias de las siguientes propiedades:
 
 | Campo de búsqueda | Valores de propiedades de búsqueda |
 |---|---|
-| Tipos MIME | [!UICONTROL Imágenes], [!UICONTROL Documentos], [!UICONTROL Multimedia], [!UICONTROL Archivos]u Otros. |
+| Tipos MIME | [!UICONTROL Imágenes], [!UICONTROL Documentos], [!UICONTROL multimedia], [!UICONTROL archivos]u otros. |
 | [!UICONTROL Última modificación] | Hora, día, semana, mes o año. |
 | [!UICONTROL Tamaño del archivo] | Pequeño, Medio o Grande. |
 | [!UICONTROL Estado de publicación] | Publicado o sin publicar. |
-| [!UICONTROL Estado de aprobación] | Aprobado o rechazado. |
+| [!UICONTROL Estado de aprobación] | Aprobado o Rechazado. |
 | [!UICONTROL Orientación] | Horizontal, Vertical o Cuadrado. |
 | [!UICONTROL Estilo] | Color o Blanco y negro. |
 | Altura del vídeo | Especificado como valor mínimo y máximo. El valor se almacena únicamente en los metadatos de las representaciones de vídeo. |
@@ -43,7 +46,7 @@ Puede buscar recursos digitales en función de una o varias de las siguientes pr
 
    * Búsqueda mediante palabras clave
 
-      En el campo Introducir palabras clave, empiece a escribir y, a continuación, pulse Intro.
+      En el campo Introducir palabras clave, escriba el inicio y, a continuación, pulse Intro.
 
       La vista actual se filtra según las palabras clave que escriba. Los archivos se muestran como resultados de búsqueda si las palabras clave coinciden con el nombre del archivo, las etiquetas de metadatos u otras propiedades.
 
@@ -55,4 +58,4 @@ Puede buscar recursos digitales en función de una o varias de las siguientes pr
 
       Escriba una palabra clave pero, en lugar de presionar Intro, expanda una lista de propiedades de audio o vídeo y, a continuación, defina los valores que desee.
 
-1. (Opcional) Cerca de la parte inferior de la página, toque **[!UICONTROL Guardar colección]** inteligente e introduzca un nombre para la búsqueda. Seleccione **[!UICONTROL Público]** si desea que la búsqueda guardada esté disponible para otros usuarios de la cuenta de Adobe Experience Manager. Desmarque si desea que la búsqueda esté disponible solo cuando haya iniciado sesión en la cuenta. Toque **[!UICONTROL Guardar]**.
+1. (Opcional) Cerca de la parte inferior de la página, toque **[!UICONTROL Guardar colección]** inteligente e introduzca un nombre para la búsqueda. Marque **[!UICONTROL Público]** si desea que la búsqueda guardada esté disponible para otros usuarios de la cuenta de Adobe Experience Manager. Desmarque si desea que la búsqueda esté disponible solo cuando haya iniciado sesión en la cuenta. Toque **[!UICONTROL Guardar]**.

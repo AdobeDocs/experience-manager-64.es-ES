@@ -19,7 +19,7 @@ ht-degree: 7%
 + Introduction to AEM Communities {#introduction}
    + [Sitios de comunidades](administer-landing.md)
    + [Información general de AEM Communities](overview.md)
-   + [Novedades de AEM 6.4 Communities](whats-new-aem-communities.md)
+   + [Novedades en comunidades AEM 6.4](whats-new-aem-communities.md)
    + [Notas de versión de AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Introducción a Comunidades de AEM](getting-started.md)
    + [Introducción a AEM Communities para la habilitación](getting-started-enablement.md)
@@ -40,7 +40,7 @@ ht-degree: 7%
    + [Servicio de administración de usuarios y usuarios por usuario en AEM Communities](user-ugc-management-service.md)
    + [Sitios de comunidades](administer-landing.md)
    + [Consolas de comunidades](consoles.md)
-   + [Funciones de Configuración de Analytics para Comunidades](analytics.md)
+   + [Funciones de configuración de Analytics para comunidades](analytics.md)
    + [Configuración de las funciones de habilitación](enablement.md)
    + [Configuración de mensajes](messaging.md)
    + [Moderación del contenido de la comunidad](moderate-ugc.md)

@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
@@ -171,11 +174,11 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
    1. En Chrome, abra chrome://plugins para vista de los complementos disponibles.
    1. Consulte los detalles del complemento Adobe Flash® Player.
-   1. Desactive PepperFlash en el complemento Adobe Flash Player.
+   1. Desactive PepperFlash en el complemento Flash Player Adobe.
 
-1. He personalizado el espacio de trabajo de AEM Forms, pero no puedo ver los cambios.
+1. He personalizado el espacio de trabajo de AEM Forms pero no puedo ver los cambios.
 
-   Borre la caché del navegador y, a continuación, acceda al espacio de trabajo de AEM Forms.
+   Borre la caché del explorador y, a continuación, acceda al espacio de trabajo de AEM Forms.
 
 1. ¿Qué debe hacer el usuario para permitir que el formulario se procese en HTML cuando se abre en el escritorio?
 
@@ -189,6 +192,6 @@ Las secuencias de comandos y los estilos se pueden depurar en distintos navegado
 
    Cierre la sesión en la otra aplicación de formularios y, a continuación, inicie sesión en el espacio de trabajo.
 
-1. Los formularios HTML, mediante Propiedades de proceso en su diseño, se muestran en el espacio de trabajo de AEM Forms con el botón Enviar dentro del formulario.
+1. Los formularios HTML, utilizando Propiedades de proceso en su diseño, cuando se procesan en el espacio de trabajo de AEM Forms, muestran el botón Enviar dentro del formulario.
 
-   Al diseñar formularios, cuando se utilizan propiedades de proceso, se agrega un botón Enviar dentro del formulario. Cuando se procesa como un PDF en el espacio de trabajo de AEM Forms, el usuario final no ve el botón Enviar. Sin embargo, cuando se procesa como un formulario HTML en el espacio de trabajo de AEM Forms, el usuario final puede ver el botón Enviar. Al hacer clic en este botón Enviar dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario, se completa la tarea.
+   Al diseñar formularios, cuando se utilizan propiedades de proceso, se agrega un botón Enviar dentro del formulario. Cuando se procesa como PDF en el espacio de trabajo de AEM Forms, el usuario final no ve el botón Enviar. Sin embargo, cuando se procesa como un formulario HTML en el espacio de trabajo de AEM Forms, el usuario final puede ver el botón Enviar. Al hacer clic en este botón Enviar dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario, se completa la tarea.

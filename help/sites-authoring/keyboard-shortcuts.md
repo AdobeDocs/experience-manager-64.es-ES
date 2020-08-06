@@ -1,6 +1,6 @@
 ---
-title: 'Métodos abreviados del teclado para las consolas '
-seo-title: 'Métodos abreviados del teclado para las consolas '
+title: 'Métodos abreviados del teclado para las consolas  '
+seo-title: 'Métodos abreviados del teclado para las consolas  '
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 seo-description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
 
-# Métodos abreviados del teclado para las consolas {#keyboard-shortcuts-for-consoles}
+# Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
 
 Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 

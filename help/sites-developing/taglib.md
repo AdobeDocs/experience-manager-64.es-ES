@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 1%
 
 ---
 
@@ -37,27 +40,27 @@ El global también declara la biblioteca [Sling](/help/sites-developing/taglib.m
 
 ### <ui:includeClientLib> {#ui-includeclientlib}
 
-La `<ui:includeClientLib>` etiqueta incluye una biblioteca de cliente HTML de AEM, que puede ser un js, un css o una biblioteca de temas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en el jsp. Esta etiqueta es un envoltorio práctico alrededor de la interfaz de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` servicio.
+La `<ui:includeClientLib>` etiqueta Incluye una biblioteca de cliente HTML AEM, que puede ser un js, un css o una biblioteca de temas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en el jsp. Esta etiqueta es un envoltorio práctico alrededor de la interfaz de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` servicio.
 
 Tiene los atributos siguientes:
 
-**categorías** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+**categorías** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS de las categorías determinadas. El nombre del tema se extrae de la solicitud.
 
 Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**tema** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con temas (CSS y JS) para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+**tema** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con el tema (CSS y JS) para las categorías dadas. El nombre del tema se extrae de la solicitud.
 
 Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript para las categorías determinadas.
+**js** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript de las categorías dadas.
 
 Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS para las categorías determinadas.
+**css** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS de las categorías dadas.
 
 Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**themed** : se debe incluir un indicador que indique únicamente bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a las exclusiones JS o CSS puras (no para categorías o temas incluidos).
+**themed** : se debe incluir un indicador que indique únicamente bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a las inclusiones JS o CSS puras (no para categorías o temas incluidos).
 
 La `<ui:includeClientLib>` etiqueta se puede usar de la siguiente manera en un jsp:
 
@@ -79,7 +82,7 @@ La `<ui:includeClientLib>` etiqueta se puede usar de la siguiente manera en un j
 
 La biblioteca de etiquetas CQ contiene funciones útiles.
 
-Para utilizar la biblioteca de etiquetas CQ en la secuencia de comandos, la secuencia de comandos debe comenzar con el siguiente código:
+Para utilizar la biblioteca de etiquetas CQ en la secuencia de comandos, la secuencia de comandos debe tener en inicio el siguiente código:
 
 ```xml
 <%@taglib prefix="cq" uri="https://www.day.com/taglibs/cq/1.0" %>
@@ -89,7 +92,7 @@ Para utilizar la biblioteca de etiquetas CQ en la secuencia de comandos, la secu
 >
 >Cuando el `/libs/foundation/global.jsp` archivo se incluye en el script, la biblioteca de etiquetas se declara automáticamente.
 
-Al desarrollar el script jsp de un componente AEM, se recomienda incluir el siguiente código en la parte superior del script:
+Al desarrollar la secuencia de comandos jsp de un componente AEM, se recomienda incluir el siguiente código en la parte superior de la secuencia de comandos:
 
 ```xml
 <%@include file="/libs/foundation/global.jsp"%>
@@ -157,7 +160,7 @@ Algunos ejemplos de cómo se puede usar la `<cq:text>` etiqueta en un JSP:
 
 ### <cq:setContentBundle> {#cq-setcontentbundle}
 
-La `<cq:setContentBundle>` etiqueta crea un contexto de localización de i18n y lo almacena en la variable de `javax.servlet.jsp.jstl.fmt.localizationContext` configuración.
+La `<cq:setContentBundle>` etiqueta crea un contexto de localización i18n y lo almacena en la variable de `javax.servlet.jsp.jstl.fmt.localizationContext` configuración.
 
 Tiene los atributos siguientes:
 
@@ -210,7 +213,7 @@ Tiene los atributos siguientes:
 
 **vaciar**
 
-* Un booleano que define si se debe vaciar la salida antes de incluir el destino.
+* Un booleano que define si se debe vaciar la salida antes de incluir el destinatario.
 
 **path**
 
@@ -249,36 +252,36 @@ Tiene los atributos siguientes:
 
 ¿Deberías usar `<cq:include>` o `<sling:include>`?
 
-* Al desarrollar componentes de AEM, Adobe recomienda que los utilice `<cq:include>`.
+* Al desarrollar componentes de AEM, Adobe recomienda su uso `<cq:include>`.
 * `<cq:include>` permite incluir directamente los archivos de secuencias de comandos por su nombre al utilizar el atributo de secuencia de comandos. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más simple que el cumplimiento estricto de la resolución de secuencias de comandos de Sling mediante selectores y extensiones.
 
 ### <cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` ha quedado obsoleto desde AEM 5.6. [ En su lugar `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) debe utilizarse.
+>`<cq:includeClientLib>` ha quedado obsoleto desde AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) en su lugar.
 
-La `<cq:includeClientLib>` etiqueta incluye una biblioteca de cliente HTML de AEM, que puede ser un js, un css o una biblioteca de temas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en el jsp. Esta etiqueta es un envoltorio práctico alrededor de la interfaz de `com.day.cq.widget.HtmlLibraryManager` servicio.
+La `<cq:includeClientLib>` etiqueta Incluye una biblioteca de cliente HTML AEM, que puede ser una biblioteca de js, un css o un tema. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe usarse varias veces en el jsp. Esta etiqueta es un envoltorio práctico alrededor de la interfaz de `com.day.cq.widget.HtmlLibraryManager` servicio.
 
 Tiene los atributos siguientes:
 
-**categorías** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+**categorías** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript y CSS de las categorías determinadas. El nombre del tema se extrae de la solicitud.
 
 Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**tema** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con temas (CSS y JS) para las categorías determinadas. El nombre del tema se extrae de la solicitud.
+**tema** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas relacionadas con el tema (CSS y JS) para las categorías dadas. El nombre del tema se extrae de la solicitud.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript para las categorías determinadas.
+**js** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas Javascript de las categorías dadas.
 
 Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** : una lista de categorías de bibliotecas de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS para las categorías determinadas.
+**css** : lista de categorías de biblioteca de cliente separadas por coma. Esto incluirá todas las bibliotecas CSS de las categorías dadas.
 
 Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**themed** : se debe incluir un indicador que indique únicamente bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a las exclusiones JS o CSS puras (no para categorías o temas incluidos).
+**themed** : se debe incluir un indicador que indique únicamente bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a las inclusiones JS o CSS puras (no para categorías o temas incluidos).
 
 La `<cq:includeClientLib>` etiqueta se puede usar de la siguiente manera en un jsp:
 
@@ -314,7 +317,7 @@ La `<cq:defineObjects>` etiqueta expone los siguientes objetos de secuencias de 
 
 **currentPage**
 
-* el objeto de página actual de AEM WCM (interfaz com.day.cq.wcm.api.Page).
+* el objeto de página WCM AEM actual (interfaz com.day.cq.wcm.api.Page).
 
 **currentStyle**
 
@@ -500,7 +503,7 @@ Ejemplo:
 
 La biblioteca de etiquetas Sling contiene funciones Sling útiles.
 
-Cuando se utiliza la biblioteca de etiquetas Sling en la secuencia de comandos, la secuencia de comandos debe comenzar con el siguiente código:
+Cuando se utiliza la biblioteca de etiquetas Sling en la secuencia de comandos, la secuencia de comandos debe tener en inicio el siguiente código:
 
 ```xml
 <%@ taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0" %>
@@ -518,7 +521,7 @@ Tiene los atributos siguientes:
 
 **vaciar**
 
-* Un booleano que define si se debe vaciar la salida antes de incluir el destino.
+* Un booleano que define si se debe vaciar la salida antes de incluir el destinatario.
 
 **medio**
 

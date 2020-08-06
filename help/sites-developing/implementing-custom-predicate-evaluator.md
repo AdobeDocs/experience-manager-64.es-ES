@@ -1,8 +1,8 @@
 ---
-title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
-seo-title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
-description: El Generador de consultas ofrece una forma sencilla de consultar el repositorio de contenido
-seo-description: El Generador de consultas ofrece una forma sencilla de consultar el repositorio de contenido
+title: Implementación de un evaluador de predicados personalizado para el Generador de Consultas
+seo-title: Implementación de un evaluador de predicados personalizado para el Generador de Consultas
+description: El Generador de Consulta oferta una forma sencilla de consultar el repositorio de contenido
+seo-description: El Generador de Consulta oferta una forma sencilla de consultar el repositorio de contenido
 uuid: 5b599b60-a149-4425-b7ac-7fbe7e048bca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
 
-# Implementación de un evaluador de predicados personalizado para el Generador de consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementación de un evaluador de predicados personalizado para el Generador de Consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-En esta sección se describe cómo ampliar el Generador [de](/help/sites-developing/querybuilder-api.md) consultas mediante la implementación de un evaluador de predicados personalizado.
+En esta sección se describe cómo ampliar el Generador [de](/help/sites-developing/querybuilder-api.md) Consultas mediante la implementación de un evaluador de predicados personalizado.
 
 ## Información general {#overview}
 
-El Generador de [consultas](/help/sites-developing/querybuilder-api.md) ofrece una forma sencilla de consultar el repositorio de contenido. AEM incluye un conjunto de evaluadores predicados que le ayudan a gestionar sus datos.
+El Generador de [Consultas](/help/sites-developing/querybuilder-api.md) oferta una forma sencilla de consultar el repositorio de contenido. AEM incluye un conjunto de evaluadores predicados que le ayudan a tratar los datos.
 
-Sin embargo, es posible que desee simplificar las consultas mediante la implementación de un evaluador de predicados personalizado que oculte cierta complejidad y garantice una mejor semántica.
+Sin embargo, es posible que desee simplificar sus consultas implementando un evaluador de predicados personalizado que oculte cierta complejidad y garantice una mejor semántica.
 
 Un predicado personalizado también puede realizar otras cosas que no son directamente posibles con XPath, por ejemplo:
 
@@ -36,7 +39,7 @@ Un predicado personalizado también puede realizar otras cosas que no son direct
 
 >[!NOTE]
 >
->Puede encontrar ejemplos de consultas en la sección Generador de [consultas](/help/sites-developing/querybuilder-api.md) .
+>Puede encontrar ejemplos de consultas en la sección Generador de [Consultas](/help/sites-developing/querybuilder-api.md) .
 
 CÓDIGO DE GITHUB
 
@@ -47,7 +50,7 @@ Puede encontrar el código de esta página en GitHub
 
 ## Predicar evaluador en detalle {#predicate-evaluator-in-detail}
 
-Un evaluador de predicados se encarga de la evaluación de ciertos predicados, que son las restricciones que definen una consulta.
+Un evaluador de predicados se encarga de la evaluación de ciertos predicados, que son las limitaciones que definen una consulta.
 
 Asigna una restricción de búsqueda de nivel superior (como &quot;anchura > 200&quot;) a una consulta JCR específica que se ajusta al modelo de contenido real (por ejemplo, metadata/@width > 200). O puede filtrar manualmente los nodos y comprobar sus restricciones.
 
@@ -63,11 +66,11 @@ Como ejemplo, en esta sección se describe cómo crear un evaluador predicado pe
 
 * `cq:lastReplicatedBy` que almacena la identificación del usuario que activó la última acción de replicación
 
-* `cq:lastReplicationAction` que almacena la última acción de replicación (por ejemplo, activación, desactivación)
+* `cq:lastReplicationAction` que almacena la última acción de replicación (por ejemplo, Activación, Desactivación)
 
 ### Consulta de metadatos de replicación con evaluadores de predicados predeterminados {#querying-replication-metadata-with-default-predicate-evaluators}
 
-La siguiente consulta obtiene la lista de nodos de `/content` ramificación que se han activado `admin` desde el comienzo del año.
+La siguiente consulta obtiene la lista de los nodos de `/content` ramificación que se han activado `admin` desde el comienzo del año.
 
 ```xml
 path=/content
@@ -83,7 +86,7 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-Esta consulta es válida pero difícil de leer y no resalta la relación entre las tres propiedades de replicación. La implementación de un evaluador de predicado personalizado reducirá la complejidad y mejorará la semántica de esta consulta.
+Esta consulta es válida pero difícil de leer y no resalta la relación entre las tres propiedades de replicación. Implementar un evaluador de predicado personalizado reducirá la complejidad y mejorará la semántica de esta consulta.
 
 ### Objetivos {#objectives}
 
@@ -103,7 +106,7 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicado pe
 
 >[!NOTE]
 >
->La configuración de los nuevos proyectos de AEM mediante muven está documentada por [Cómo crear proyectos de AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>La configuración de nuevos proyectos de AEM usando maven está documentada por [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Primero debe actualizar las dependencias de Maven del proyecto. El `PredicateEvaluator` es parte del `cq-search` artefacto, por lo que debe agregarse al archivo pom Maven.
 
@@ -138,7 +141,7 @@ El `cq-search` proyecto contiene la clase `AbstractPredicateEvaluator` abstracta
 
 >[!NOTE]
 >
->El siguiente procedimiento explica cómo generar una `Xpath` expresión para filtrar datos. Otra opción sería implementar el `includes` método que selecciona los datos por fila. See the [Java documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) for more information.
+>El siguiente procedimiento explica cómo crear una `Xpath` expresión para filtrar datos. Otra opción sería implementar el `includes` método que selecciona los datos por fila. See the [Java documentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) for more information.
 
 1. Crear una nueva clase Java que se extienda `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Realice anotaciones en la clase con `@Component` una

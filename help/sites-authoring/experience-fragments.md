@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +46,7 @@ Puede utilizar los fragmentos de experiencias:
 >
 >Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
-## ¿Cuándo se deben utilizar los fragmentos de experiencias?  {#when-should-you-use-experience-fragments}
+## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
 
 Los fragmentos de experiencias deben usarse en los siguientes casos:
 
@@ -91,7 +94,7 @@ En el siguiente ejemplo se muestran los fragmentos de experiencia estructurados 
 
 >[!CAUTION]
 >
->La siguiente captura de pantalla se tomó del sitio WKND con Adobe Experience Manager como servicio de nube.
+>La siguiente captura de pantalla fue tomada del sitio WKND usando Adobe Experience Manager como Cloud Service.
 
 ![Carpetas para fragmentos de experiencias](assets/xf-folders.png)
 
@@ -212,7 +215,8 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
    * **[!UICONTROL Nombre]**; si se deja en blanco, se deriva del título
    * **[!UICONTROL Descripción]**
    * **[!UICONTROL Etiquetas de variación]**
-   ![xf-authoring-06](assets/xf-authoring-07.png)
+
+   ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. Confirme con **[!UICONTROL Listo]** (icono de marca de graduación) y la nueva variación se mostrará en el panel:
 
@@ -234,6 +238,7 @@ Ahora puede utilizar el fragmento de experiencia para crear páginas:
 
    * Arrastre el fragmento necesario desde el explorador de activos y colóquelo en el componente
    * Seleccione **[!UICONTROL Configurar]** en la barra de herramientas del componente y especifique el fragmento que quiere utilizar; confirme con **Listo** (marca de graduación)
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -292,7 +297,7 @@ La representación HTML sin formato agrega el protocolo, el host y la ruta de co
 
 * del tipo: `src`, `href`o `action`
 
-* o finalizar con: `-src`o `-href`
+* o finalizar con: `-src`, o `-href`
 
 Por ejemplo:
 
@@ -304,7 +309,7 @@ Por ejemplo:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportación de fragmentos de experiencias  {#exporting-experience-fragments}
+## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 
 De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Los canales de AEM y los canales similares de terceros pueden usar esta opción.
 

@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
@@ -39,6 +42,7 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 >
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md).
 >* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -98,6 +102,7 @@ Puede especificar los detalles:
    * **Título del flujo de trabajo**
 
       * Puede especificar un título para esta instancia, de modo que pueda identificarlo en una etapa posterior.
+
    Según el modelo de flujo de trabajo, también están disponibles las siguientes opciones. Estas permiten conservar el paquete creado como carga útil después de que se haya completado el flujo de trabajo.
 
    * **Conservar paquete de flujo de trabajo**
@@ -114,7 +119,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Agregar contenido** para abrir el explorador [de](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir el explorador [de](/help/sites-authoring/author-environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
    * Un recurso existente para ver acciones adicionales:
 
       * **Incluir elementos secundarios** para especificar que en el flujo de trabajo se incluirán los elementos secundarios de ese recurso.
@@ -124,9 +129,11 @@ Puede especificar los detalles:
          * Incluir solo los elementos secundarios inmediatos.
          * Incluir solo las páginas modificadas.
          * Incluir solo las páginas ya publicadas.
+
          Los elementos secundarios especificados se añaden a la lista de recursos a los que se aplicará el flujo de trabajo.
 
       * **Eliminar selección** para eliminar ese recurso del flujo de trabajo.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]

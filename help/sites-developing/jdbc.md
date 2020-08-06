@@ -1,8 +1,8 @@
 ---
 title: Conexión a bases de datos SQL
 seo-title: Conexión a bases de datos SQL
-description: Acceda a una base de datos SQL externa para que las aplicaciones de AEM puedan interactuar con los datos
-seo-description: Acceda a una base de datos SQL externa para que las aplicaciones de AEM puedan interactuar con los datos
+description: Acceda a una base de datos SQL externa para que las aplicaciones AEM puedan interactuar con los datos
+seo-description: Acceda a una base de datos SQL externa para que las aplicaciones AEM puedan interactuar con los datos
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Algunos proveedores de bases de datos proporcionan controladores JDBC en un paqu
 
 En el siguiente ejemplo se utiliza el complemento [Paquete para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para envolver el controlador HSQLDB en un paquete OSGi. El POM ordena al complemento que incruste el archivo hsqldb.jar que se identifica como una dependencia. Se exportan todos los paquetes org.hsqldb.
 
-El complemento determina automáticamente qué paquetes se van a importar y los enumera en el archivo MANIFEST.MF del paquete. Si alguno de los paquetes no está disponible en el servidor de CQ, el paquete no se iniciará tras la instalación. Dos soluciones posibles son las siguientes:
+El complemento determina automáticamente qué paquetes se importarán y los lista en el archivo MANIFEST.MF del paquete. Si alguno de los paquetes no está disponible en el servidor de CQ, el paquete no se inicio tras la instalación. Dos soluciones posibles son las siguientes:
 
 * Indique en el POM que los paquetes son opcionales. Utilice esta solución cuando la conexión JDBC no requiera realmente los miembros del paquete. Utilice el elemento Import-Package para indicar paquetes opcionales como en el ejemplo siguiente:
 
@@ -84,13 +87,13 @@ El conocimiento del código fuente le permite decidir qué solución utilizar. T
 
 Los siguientes vínculos abren las páginas de descarga de algunos productos de base de datos populares:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
 ### Configuración del servicio JDBC Connection Pool {#configuring-the-jdbc-connection-pool-service}
 
-Agregue una configuración para el servicio Pool de conexiones JDBC que utilice el controlador JDBC para crear objetos de origen de datos. El código de la aplicación utiliza este servicio para obtener el objeto y conectarse a la base de datos.
+Añada una configuración para el servicio Pool de Conexiones JDBC que utilice el controlador JDBC para crear objetos de origen de datos. El código de la aplicación utiliza este servicio para obtener el objeto y conectarse a la base de datos.
 
 JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) es un servicio de fábrica. Si necesita conexiones que utilicen propiedades diferentes, por ejemplo, acceso de solo lectura o de lectura y escritura, cree varias configuraciones.
 
@@ -172,5 +175,5 @@ El siguiente ejemplo de código JSP obtiene una instancia del origen de datos hs
 
 >[!NOTE]
 >
->Para obtener información sobre cómo insertar un DataSourcePool en un paquete OSGi, consulte [Inyección de un servicio DataSourcePool en un paquete OSGi de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>Para obtener información sobre cómo insertar un DataSourcePool en un paquete OSGi, consulte [Inyección de un servicio DataSourcePool en un paquete](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)OSGi de Adobe Experience Manager.
 

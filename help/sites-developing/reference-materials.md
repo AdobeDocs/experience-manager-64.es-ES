@@ -1,8 +1,8 @@
 ---
 title: Guías de API
 seo-title: Guías de API
-description: Documentación de las API que AEM proporciona para el desarrollo de aplicaciones
-seo-description: Documentación de las API que AEM proporciona para el desarrollo de aplicaciones
+description: Documentación de las API que AEM para desarrollar aplicaciones
+seo-description: Documentación de las API que AEM para desarrollar aplicaciones
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,6 +12,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
@@ -34,14 +37,14 @@ AEM proporciona varias API para desarrollar aplicaciones. La siguiente lista pro
 
 * [Referencia de la API de Editor Core Javascript](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-Referencias de la API de JavaScript del marco del SDK del Editor de aplicaciones de una sola página (SPA) de AEM:
+Referencias de la API de JavaScript del marco del SDK del Editor de la aplicación de una sola página AEM (SPA):
 
 * [Asignación de componentes](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
 * [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
 * [Componentes editables React](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
 * [Componentes editables angulares](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-API de administración de contenido y envío de AEM:
+API de Gestor de contenido y Envío de AEM:
 
 * Componentes principales (JSON)
 
@@ -51,7 +54,7 @@ API de administración de contenido y envío de AEM:
 
 * [API HTTP de AEM Assets](/help/assets/mac-api-assets.md)
 
-Los siguientes recursos externos son sólo de referencia:
+Los siguientes recursos externos son solo de referencia:
 
 * [API de Apache Sling 10](https://sling.apache.org/apidocs/sling10/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)

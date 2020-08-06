@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
 source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 66%
 
 ---
 
 
 # Creative Project e integración PIM{#creative-project-and-pim-integration}
 
-Si es un especialista en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project de Adobe Experience Manager (AEM) para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
+Si es un especialista en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project en Adobe Experience Manager (AEM) para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
 
 En concreto, puede utilizar Proyecto creativo para agilizar las tareas siguientes en el flujo de trabajo de la sesión fotográfica:
 
@@ -73,7 +76,7 @@ Un proyecto de sesión fotográfica del producto incluye los siguientes flujos d
 
 Utilice el flujo de trabajo de la sesión fotográfica del producto (integración del comercio) para asignar los recursos de imagen a los productos de AEM. Este flujo de trabajo aprovecha la integración del comercio para vincular las imágenes aprobadas a los datos del producto existentes en la ubicación */etc/commerce*.
 
-El flujo de trabajo de la sesión fotográfica del producto (Integración del comercio) incluye las siguientes tareas:
+El flujo de trabajo de sesión fotográfica de producto (Integración comercial) incluye las siguientes tareas:
 
 * Crear lista de tomas
 * Cargar sesión fotográfica
@@ -109,7 +112,7 @@ Utilice la información siguiente para controlar el progreso de un proyecto:
 
 * **Lista de tareas**
 
-La tarjeta Tarea muestra el progreso general del proyecto. Aparece en la página Detalles del proyecto solo si el proyecto tiene alguna tarea relacionada. La tarjeta de la tarea muestra el estado de finalización del proyecto actual de acuerdo con el número de tareas completadas. No incluye las tareas futuras.
+La tarjeta de Tarea muestra el progreso general del proyecto. Aparece en la página Detalles del proyecto solo si el proyecto tiene alguna tarea relacionada. La tarjeta de la tarea muestra el estado de finalización del proyecto actual de acuerdo con el número de tareas completadas. No incluye las tareas futuras.
 
 La tarjeta de la tarea proporciona la información siguiente:
 
@@ -153,6 +156,7 @@ Para configurar el flujo de trabajo de la **sesión fotográfica del producto**:
    * Retocar la sesión fotográfica del producto
    * Revisión de sesión fotográfica
    * Mover a producción
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 En esta sección se describe cómo integrar la administración de la información del producto en su proyecto creativo.
@@ -219,6 +223,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
    * Los recursos correspondientes a la jerarquía del producto se crean en una carpeta con el mismo nombre que el título del flujo de trabajo.
    * Los metadatos para los recursos se convierten en editables mediante la consola Recursos, incluso antes de que el fotógrafo proporcione las imágenes.
    * Se crea una carpeta de la sesión fotográfica en que se almacenan las imágenes que el fotógrafo proporciona. La carpeta de la sesión fotográfica contiene las subcarpetas para cada entrada del producto en la lista de tomas.
+
    Cargar lista de tomas es la primera tarea del flujo de trabajo de la sesión fotográfica del producto (sin integración del comercio). Toque o haga clic en **Cargar lista de tomas** para cargar un archivo **shotlist.csv**. El archivo CSV debe contener el identificador del producto. Los demás campos son opcionales. Puede utilizarlos para asignar recursos a los productos.
 
 ### Tarea Cargar lista de tomas {#upload-shot-list-task}
@@ -245,7 +250,7 @@ Un producto puede pertenecer a una categoría determinada. La categoría del pro
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. El flujo de trabajo reconoce este archivo como origen que se utilizará para extraer los datos del producto para la tarea siguiente.
-1. Cargue un archivo CSV que contenga la información del producto en el formato adecuado. El **vínculo Ver recursos cargados **aparece debajo de la tarjeta después de cargar el archivo CSV.
+1. Cargue un archivo CSV que contenga la información del producto en el formato adecuado. El vínculo **Vista Recursos cargados **aparece debajo de la tarjeta después de cargar el archivo CSV.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -316,7 +321,7 @@ Puede navegar a los recursos del proyecto a través de la IU de Recursos y verif
 
 Toque o haga clic en el nivel siguiente para ver los productos de acuerdo con su jerarquía de datos del producto.
 
-Creative Project asocia los recursos aprobados al producto utilizado como referencia. Los metadatos del recurso se actualizan con la referencia del producto y la información básica en la ficha **Datos del producto **Propiedades del recurso que aparecen en la sección Metadatos de recursos de AEM.
+Creative Project asocia los recursos aprobados al producto utilizado como referencia. Los metadatos del recurso se actualizan con la referencia del producto y la información básica en la ficha **Datos del producto **Propiedades del recurso que aparecen en la sección Metadatos del recurso de AEM.
 
 >[!NOTE]
 En el flujo de trabajo de la sesión fotográfica del producto (sin integración del comercio), las imágenes aprobadas no están asociadas a los productos.
@@ -359,11 +364,11 @@ Puede personalizar los flujos de trabajo de la sesión fotográfica del proyecto
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
 1. Open the **Role Based Task** step.
-1. En la pestaña **Tarea**, especifique un nombrepara la tarea que se mostrará en la lista **Tarea**. También puede asignar la tarea a una función, establecer la prioridad predeterminada, proporcionar una descripción y especificar la hora en la que debe realizarse la tarea.
+1. En la pestaña **Tarea**, especifique un nombrepara la tarea que se mostrará en la lista **Tarea**. También puede asignar la tarea a una función, establecer la prioridad predeterminada, proporcionar una descripción y especificar una hora en la que vence la tarea.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. En la pestaña **Enrutamiento**, especifique las acciones para la tarea. Para agregar varias acciones, toque o haga clic en el vínculo **Agregar elemento **link.
+1. En la pestaña **Enrutamiento**, especifique las acciones para la tarea. Para agregar varias acciones, toque o haga clic en el vínculo **Añadir elemento **link.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 

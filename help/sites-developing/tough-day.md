@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ El Día duro 2 es una aplicación que le permite probar los límites de su insta
 
 ## Cómo ejecutar el Día duro 2 {#how-to-run-tough-day}
 
-Descargue la versión más reciente de Tough Day 2 desde el repositorio [de](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)Adobe. Después de descargar la aplicación, puede ejecutarla de forma predeterminada proporcionando el `host` parámetro . En el ejemplo siguiente, la instancia de AEM se ejecuta localmente para que se utilice el `localhost` valor:
+Descargue la versión más reciente del Día duro 2 desde el Repositorio [de](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)Adobes. Después de descargar la aplicación, puede ejecutarla de forma predeterminada proporcionando el `host` parámetro . En el ejemplo siguiente, la instancia de AEM se ejecuta localmente para utilizar el `localhost` valor:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -54,7 +57,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 ### Ayuda {#getting-help}
 
-Tough Day 2 ofrece una amplia gama de opciones de ayuda a las que se puede acceder desde la línea de comandos. Por ejemplo:
+El Día duro 2 oferta una amplia gama de opciones de ayuda a las que se puede acceder desde la línea de comandos. Por ejemplo:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -91,22 +94,22 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
   </tr> 
   <tr> 
    <td> —help —runmode/publishmode type=&lt;Modo&gt;</td> 
-   <td>Muestra información sobre el modo de ejecución o publicación especificado.</td> 
+   <td>Lista información sobre el modo de ejecución o publicación especificado.</td> 
    <td><p>java -jar toughday2.jar —help —runmode type=constantload</p> <p>java -jar toughday2.jar —help —publishmode type=periods</p> </td> 
   </tr> 
   <tr> 
    <td>—help —suite=&lt;nombreDeGrupo&gt;</td> 
-   <td>Enumera todas las pruebas de un conjunto determinado y sus respectivas propiedades configurables.</td> 
+   <td>Lista todas las pruebas de un conjunto determinado y sus respectivas propiedades configurables.</td> 
    <td><br /> java -jar toughday2.jar —help —suite=get_testing</td> 
   </tr> 
   <tr> 
    <td> —help —tag=&lt;Etiqueta&gt;</td> 
-   <td><br /> Enumera todos los elementos que tienen la etiqueta especificada.</td> 
+   <td><br /> Lista todos los elementos que tienen la etiqueta especificada.</td> 
    <td>java -jar toughday2.jar —help —tag=publish</td> 
   </tr> 
   <tr> 
    <td>—help &lt;TestClass/PublisherClass&gt;</td> 
-   <td><br /> Enumera todas las propiedades configurables para una prueba o publicador determinado.</td> 
+   <td><br /> Lista todas las propiedades configurables para la prueba o el publicador determinado.</td> 
    <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPublisher</p> </td> 
   </tr> 
  </tbody> 
@@ -114,7 +117,7 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
 
 ### Parámetros globales {#global-parameters}
 
-El Día duro 2 ofrece parámetros globales que establecen o modifican el entorno para las pruebas. Entre ellos se incluyen el host de destino, el número de puerto, el protocolo utilizado, el usuario y la contraseña de la instancia y muchos más. Por ejemplo:
+Día duro 2 oferta los parámetros globales que establecen o modifican el entorno de las pruebas. Entre ellos se incluyen el host de destino, el número de puerto, el protocolo utilizado, el usuario y la contraseña de la instancia y muchos más. Por ejemplo:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
@@ -124,7 +127,7 @@ Puede encontrar los parámetros relevantes en la lista siguiente:
 
 | **Parámetro** | **Descripción** | **Valor predeterminado** | **Valores posibles** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Instala o omite el paquete de contenido predeterminado Día duro 2. | verdadero |  true o false |
+| `--installsamplecontent=<Val>` | Instala o omite el paquete de contenido predeterminado Día duro 2. | verdadero | true o false |
 | `--protocol=<Val>` | Protocolo utilizado para el host. | http | http o https |
 | `--host=<Val>` | El nombre de host o la dirección IP objetivo. |  |  |
 | `--port=<Val>` | El puerto del host. | 4502 |  |
@@ -132,11 +135,11 @@ Puede encontrar los parámetros relevantes en la lista siguiente:
 | `--password=<Val>` | Contraseña para el usuario determinado. | administrador |  |
 | `--duration=<Val>` | Duración de las pruebas. Puede expresarse en (**s**)segundos, (**m**)minutos, (**h**)horas y (**d**)días. | 1d |  |
 | `--timeout=<Val>` | Duración de la prueba antes de que se interrumpa y se marque como fallida. Se expresa en segundos. | 180 |  |
-| `--suite=<Val>` | El valor puede ser uno o una lista (separados por comas) de conjuntos de pruebas predefinidos. | toughday |  |
+| `--suite=<Val>` | El valor puede ser uno o una lista (separada por comas) de conjuntos de pruebas predefinidos. | toughday |  |
 | `--configfile=<Val>` | El archivo de configuración yaml de destino. |  |  |
 | `--contextpath=<Val>` | Ruta de contexto de la instancia. |  |  |
 | `--loglevel=<Val>` | Nivel de registro para el motor del Día duro 2. | INFORMACIÓN | TODOS, DEPURAR, INFORMACIÓN, ADVERTENCIA, ERROR, FATAL, DESACTIVADO |
-| `--dryrun=<Val>` | Si es true, imprime la configuración resultante y no ejecuta ninguna prueba. | false |  true o false |
+| `--dryrun=<Val>` | Si es true, imprime la configuración resultante y no ejecuta ninguna prueba. | false | true o false |
 
 ## Personalización {#customizing}
 
@@ -144,7 +147,7 @@ La personalización se puede lograr de dos maneras: parámetros de línea de com
 
 La única manera de guardar una configuración de prueba es copiarla en formato yaml. Para obtener más información, consulte esta configuración [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) y los ejemplos de configuración yaml en las secciones siguientes.
 
-### Adición de una nueva prueba {#adding-a-new-test}
+### Añadir una nueva prueba {#adding-a-new-test}
 
 Si no desea utilizar el grupo `toughday` predeterminado, puede agregar una prueba de su elección utilizando el `add` parámetro . Los ejemplos siguientes muestran cómo agregar la `CreateAssetTreeTest` prueba utilizando parámetros de línea de comandos o un archivo de configuración de yaml.
 
@@ -163,7 +166,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Adición de varias instancias de la misma prueba {#adding-multiple-instances-of-the-same-test}
+### Añadir varias instancias de la misma prueba  {#adding-multiple-instances-of-the-same-test}
 
 También puede agregar y ejecutar varias instancias de la misma prueba, pero cada instancia debe tener un nombre único. Los ejemplos siguientes muestran cómo agregar dos instancias de la misma prueba, ya sea mediante parámetros de línea de comandos o mediante un archivo de configuración yaml.
 
@@ -280,7 +283,7 @@ tests:
 
 ### Ejecutar modos {#run-modes}
 
-El Día duro 2 se puede ejecutar en uno de los siguientes modos: carga **normal** y **constante**.
+El Día duro 2 se puede ejecutar en uno de los siguientes modos: **carga** normal y **constante**.
 
 El modo de ejecución **normal** tiene dos parámetros:
 
@@ -307,7 +310,7 @@ El modo de ejecución de carga **** constante difiere del modo de ejecución nor
 
 ### Selección de prueba {#test-selection}
 
-El proceso de selección de la prueba es el mismo para ambos modos de ejecución y sigue este procedimiento: todas las pruebas tienen una `weight` propiedad que determina la probabilidad de ejecución en un subproceso. Por ejemplo, si tenemos dos pruebas, una con un peso de 5 y otra con un peso de 10, la segunda tiene dos veces más probabilidades de ser ejecutada que la primera.
+El proceso de selección de la prueba es el mismo para ambos modos de ejecución y sigue este procedimiento: todas las pruebas tienen una `weight` propiedad que determina la probabilidad de ejecución en un subproceso. Por ejemplo, si tenemos dos pruebas, una con un peso de 5 y otra con un peso de 10, es dos veces más probable que la segunda se ejecute que la primera.
 
 Además, las pruebas pueden tener una `count` propiedad que limita el número de ejecuciones a un número determinado. Después de superar este número, no se realizarán más ejecuciones de la prueba. Todas las instancias de prueba que ya se estén ejecutando finalizarán la ejecución según la configuración. En el siguiente ejemplo se muestra cómo agregar estos parámetros en la línea de comandos o mediante un archivo de configuración yaml.
 
@@ -346,7 +349,7 @@ El Día duro 2 genera tanto métricas de prueba como registros. Para obtener má
 
 ### Métricas de prueba {#test-metrics}
 
-El Día duro 2 actualmente informa 9 métricas de prueba que puede evaluar. **Métricas con**&amp;ast; solo se notifican después de ejecutarse correctamente:
+El Día duro 2 actualmente informa 9 métricas de prueba que puede evaluar. Métricas con **&amp;ast;** solo se notifican después de ejecutarse correctamente:
 
 | **Nombre** | **Descripción** |
 |---|---|

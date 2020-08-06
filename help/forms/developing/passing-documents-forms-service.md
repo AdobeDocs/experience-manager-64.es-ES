@@ -1,6 +1,6 @@
 ---
-title: Pasar documentos a FormsService
-seo-title: Pasar documentos a FormsService
+title: Pasar Documentos a FormsService
+seo-title: Pasar Documentos a FormsService
 description: nulo
 seo-description: nulo
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
@@ -12,28 +12,31 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 translation-type: tm+mt
 source-git-commit: 4602c684ccea9a7f45c4d7eda2f2be25707ca1b3
+workflow-type: tm+mt
+source-wordcount: '1652'
+ht-degree: 0%
 
 ---
 
 
-# Pasar documentos al servicio Forms {#passing-documents-to-the-formsservice}
+# Pasar Documentos al servicio Forms {#passing-documents-to-the-formsservice}
 
-El servicio AEM Forms procesa formularios PDF interactivos en dispositivos cliente, normalmente exploradores Web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. Desde AEM Forms, puede pasar un `com.adobe.idp.Document` objeto que contenga el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario ubicado en el `com.adobe.idp.Document` objeto.
+El servicio AEM Forms procesa PDF forms interactivos en los dispositivos cliente, generalmente en los exploradores Web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. Desde AEM Forms, puede pasar un `com.adobe.idp.Document` objeto que contenga el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario ubicado en el `com.adobe.idp.Document` objeto.
 
-Una ventaja de pasar un `com.adobe.idp.Document` objeto al servicio Forms es que otras operaciones de servicio devuelven una `com.adobe.idp.Document` instancia. Es decir, puede obtener una `com.adobe.idp.Document` instancia de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (desaprobado) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
+Una ventaja de pasar un `com.adobe.idp.Document` objeto al servicio de Forms es que otras operaciones de servicio devuelven una `com.adobe.idp.Document` instancia. Es decir, puede obtener una `com.adobe.idp.Document` instancia de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (desaprobado) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
 
-Puede recuperar mediante programación Loan.xdp de Content Services (desaprobado) (desaprobado) y pasar el archivo XDP al servicio Forms dentro de un `com.adobe.idp.Document` objeto.
+Puede recuperar mediante programación Loan.xdp de Content Services (desaprobado) (desaprobado) y pasar el archivo XDP al servicio de Forms dentro de un `com.adobe.idp.Document` objeto.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
-Para pasar un documento obtenido de Content Services (desaprobado) al servicio Forms, realice las siguientes tareas:
+Para pasar un documento obtenido de Content Services (desaprobado) al servicio de Forms, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un objeto de API de Forms y Document Management Client.
+1. Cree un objeto de Forms y una API de cliente de administración de Documento.
 1. Recupere el diseño de formulario de Content Services (desaprobado).
 1. Representar el formulario PDF interactivo.
 1. Realice una acción con el flujo de datos del formulario.
@@ -42,21 +45,21 @@ Para pasar un documento obtenido de Content Services (desaprobado) al servicio F
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios Web, incluya los archivos proxy.
 
-**Creación de un objeto de API de Forms y Document Management Client**
+**Creación de un objeto de API de cliente de administración de Documentos y Forms**
 
-Antes de realizar una operación de API de servicio de Forms mediante programación, cree un objeto de API de cliente de Forms. Además, como este flujo de trabajo recupera un archivo XDP de Content Services (desaprobado), cree un objeto de API de Document Management.
+Antes de realizar una operación de API de servicio de Forms mediante programación, cree un objeto de API de cliente de Forms. Además, como este flujo de trabajo recupera un archivo XDP de Content Services (desaprobado), cree un objeto API de administración de Documento.
 
 **Recuperar el diseño de formulario de Content Services (obsoleto)**
 
-Recupere el archivo XDP de Content Services (desaprobado) mediante Java o la API de servicio Web. El archivo XDP se devuelve dentro de una `com.adobe.idp.Document` instancia (o una `BLOB` instancia si utiliza servicios Web). A continuación, puede pasar la `com.adobe.idp.Document` instancia al servicio Forms.
+Recupere el archivo XDP de Content Services (desaprobado) mediante Java o la API de servicio Web. El archivo XDP se devuelve dentro de una `com.adobe.idp.Document` instancia (o una `BLOB` instancia si utiliza servicios Web). A continuación, puede pasar la `com.adobe.idp.Document` instancia al servicio de Forms.
 
 **Representar un formulario PDF interactivo**
 
-Para procesar un formulario interactivo, pase la `com.adobe.idp.Document` instancia devuelta por Content Services (desaprobada) al servicio Forms.
+Para procesar un formulario interactivo, pase la `com.adobe.idp.Document` instancia devuelta por Content Services (desaprobada) al servicio de Forms.
 
 >[!NOTE]
 >
->Puede pasar un `com.adobe.idp.Document` formulario que contenga el diseño de formulario al servicio Forms. Dos nuevos métodos con nombre `renderPDFForm2` y `renderHTMLForm2` aceptar un `com.adobe.idp.Document` objeto que contiene un diseño de formulario.
+>Puede pasar un `com.adobe.idp.Document` diseño de formulario al servicio Forms. Dos nuevos métodos con nombre `renderPDFForm2` y `renderHTMLForm2` aceptar un `com.adobe.idp.Document` objeto que contiene un diseño de formulario.
 
 **Realizar una acción con el flujo de datos del formulario**
 
@@ -68,17 +71,17 @@ Según el tipo de aplicación cliente, puede escribir el formulario en un navega
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Inicio rápido de la API del servicio de formularios](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-## Transmisión de documentos al servicio de formularios mediante la API de Java {#pass-documents-to-the-forms-service-using-the-java-api}
+## Transmitir documentos al servicio Forms mediante la API de Java {#pass-documents-to-the-forms-service-using-the-java-api}
 
-Transmitir un documento obtenido de Content Services (desaprobado) mediante el servicio de formularios y la API de Content Services (desaprobada) (Java):
+Transmitir un documento obtenido de Content Services (desaprobado) mediante la API (Java) del servicio y los servicios de contenido de Forms (desaprobada):
 
 1. Incluir archivos de proyecto
 
    Incluya archivos JAR de cliente, como adobe-forms-client.jar y adobe-contentservices-client.jar, en la ruta de clases del proyecto Java.
 
-1. Creación de un objeto de API de Forms y Document Management Client
+1. Creación de un objeto de API de cliente de administración de Documentos y Forms
 
    * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión. (Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión).
    * Cree un `FormsServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
@@ -91,6 +94,7 @@ Transmitir un documento obtenido de Content Services (desaprobado) mediante el s
    * Un valor de cadena que especifica el almacén donde se agrega el contenido. La tienda predeterminada es `SpacesStore`. Este valor es un parámetro obligatorio.
    * Un valor de cadena que especifica la ruta completa del contenido que se va a recuperar (por ejemplo, `/Company Home/Form Designs/Loan.xdp`). Este valor es un parámetro obligatorio.
    * Un valor de cadena que especifica la versión. Este valor es un parámetro opcional y puede pasar una cadena vacía. En este caso, se recupera la versión más reciente.
+
    El `retrieveContent` método devuelve un `CRCResult` objeto que contiene el archivo XDP. Obtenga una `com.adobe.idp.Document` instancia invocando el `CRCResult` método `getDocument` del objeto.
 
 1. Representar un formulario PDF interactivo
@@ -102,6 +106,7 @@ Transmitir un documento obtenido de Content Services (desaprobado) mediante el s
    * Un `PDFFormRenderSpec` objeto que almacena opciones de tiempo de ejecución. Este valor es un parámetro opcional y puede especificar `null` si no desea especificar opciones de tiempo de ejecución.
    * Un `URLSpec` objeto que contiene valores de URI. Este valor es un parámetro opcional y se puede especificar `null`.
    * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+
    El `renderPDFForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
 
 1. Realizar una acción con el flujo de datos del formulario
@@ -116,40 +121,41 @@ Transmitir un documento obtenido de Content Services (desaprobado) mediante el s
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Paso de documentos al servicio de formularios mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Inicio rápido (modo SOAP): Pasar documentos al servicio Forms mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Transmisión de documentos al servicio de formularios mediante la API de servicio Web {#pass-documents-to-the-forms-service-using-the-web-service-api}
+## Transmitir documentos al servicio Forms mediante la API de servicio Web {#pass-documents-to-the-forms-service-using-the-web-service-api}
 
-Transmitir un documento obtenido de Content Services (desaprobado) mediante el servicio de formularios y la API de Content Services (desaprobada) (servicio web):
+Transmitir un documento obtenido de Content Services (desaprobado) mediante la API (servicio web) de Forms Service and Content Services (desaprobada):
 
 1. Incluir archivos de proyecto
 
    Cree un proyecto de Microsoft .NET que utilice MTOM. Dado que esta aplicación cliente invoca dos servicios de AEM Forms, cree dos referencias de servicio. Utilice la siguiente definición WSDL para la referencia de servicio asociada al servicio Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
-   Utilice la siguiente definición WSDL para la referencia de servicio asociada al servicio de Document Management: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
+   Utilice la siguiente definición WSDL para la referencia de servicio asociada al servicio de gestión de Documentos: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
    Debido a que el tipo de datos es común a ambas referencias de servicio, califique completamente el tipo de datos `BLOB` `BLOB` cuando lo utilice. En el inicio rápido correspondiente del servicio Web, todas `BLOB` las instancias están completamente cualificadas.
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
+   >Reemplace `localhost`* con la dirección IP del servidor que aloja AEM Forms. *
 
-1. Creación de un objeto de API de Forms y Document Management Client
+1. Creación de un objeto de API de cliente de administración de Documentos y Forms
 
    * Cree un `FormsServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `FormsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormsService?WSDL`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un `FormsServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormsService?WSDL`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `FormsServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Repita estos pasos para el cliente de servicio `DocumentManagementServiceClient`*. *
@@ -178,6 +184,7 @@ Transmitir un documento obtenido de Content Services (desaprobado) mediante el s
    * Parámetro de salida largo que se utiliza para almacenar el recuento de páginas.
    * Parámetro de salida de cadena que se utiliza para almacenar el valor de configuración regional.
    * Parámetro `FormsResult` de salida que se utiliza para almacenar el formulario PDF interactivo `.`
+
    El `renderPDFForm2` método devuelve un `FormsResult` objeto que contiene el formulario PDF interactivo.
 
 1. Realizar una acción con el flujo de datos del formulario
@@ -190,4 +197,4 @@ Transmitir un documento obtenido de Content Services (desaprobado) mediante el s
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

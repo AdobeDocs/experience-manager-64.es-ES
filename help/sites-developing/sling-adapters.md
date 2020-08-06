@@ -1,8 +1,8 @@
 ---
-title: Uso de adaptadores Sling
-seo-title: Uso de adaptadores Sling
-description: Sling ofrece un patrón de adaptador para traducir convenientemente objetos que implementan la interfaz adaptable
-seo-description: Sling ofrece un patrón de adaptador para traducir convenientemente objetos que implementan la interfaz adaptable
+title: Usar los adaptadores de Sling
+seo-title: Usar los adaptadores de Sling
+description: Sling oferta un patrón de adaptador para traducir convenientemente objetos que implementan la interfaz adaptable
+seo-description: Sling oferta un patrón de adaptador para traducir convenientemente objetos que implementan la interfaz adaptable
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
 source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+workflow-type: tm+mt
+source-wordcount: '1747'
+ht-degree: 1%
 
 ---
 
 
-# Uso de adaptadores Sling{#using-sling-adapters}
+# Usar los adaptadores de Sling{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) ofrece un patrón [](https://sling.apache.org/site/adapters.html) Adapter para traducir convenientemente objetos que implementan la interfaz [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . Esta interfaz proporciona un método [adaptableTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) genérico que traducirá el objeto al tipo de clase que se pasa como argumento.
+[Sling](https://sling.apache.org) oferta un patrón [Adapter](https://sling.apache.org/site/adapters.html) para traducir convenientemente objetos que implementan la interfaz [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . Esta interfaz proporciona un método [adaptableTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) genérico que traducirá el objeto al tipo de clase que se pasa como argumento.
 
 Por ejemplo, para traducir un objeto Resource al objeto Node correspondiente, simplemente puede hacer lo siguiente:
 
@@ -47,7 +50,7 @@ Existen los siguientes casos de uso:
 
 Esto se debe a varios motivos, entre ellos:
 
-* la implementación no admite el tipo de objetivo
+* la implementación no admite el tipo de destinatario
 * no está activo un generador de adaptador que maneje este caso (p. ej. debido a que faltan referencias de servicio)
 * error en la condición interna
 * el servicio no está disponible
@@ -75,7 +78,7 @@ Existen varias maneras de `Adaptable.adaptTo()` implementarlas:
 
 * Una combinación de ambos.
 
-En el primer caso, los javadocs pueden indicar lo que `adaptTo-targets` es posible. Sin embargo, para subclases específicas como el recurso basado en JCR, a menudo esto no es posible. En este último caso, las implementaciones de `AdapterFactory` suelen formar parte de las clases privadas de un paquete y, por lo tanto, no están expuestas en una API de cliente ni están enumeradas en javadocs. En teoría, sería posible acceder a todas `AdapterFactory` las implementaciones desde el tiempo de ejecución del servicio [OSGi](/help/sites-deploying/configuring-osgi.md) y observar sus configuraciones &quot;adaptables&quot; (fuentes y destinos), pero no asignarlas entre sí. Al final, esto depende de la lógica interna, que debe ser documentada. De ahí esta referencia.
+En el primer caso, los javadocs pueden indicar lo que `adaptTo-targets` es posible. Sin embargo, para subclases específicas como el recurso basado en JCR, a menudo esto no es posible. En este último caso, las implementaciones de `AdapterFactory` suelen formar parte de las clases privadas de un paquete y, por lo tanto, no están expuestas en una API de cliente ni están enumeradas en javadocs. En teoría, sería posible acceder a todas `AdapterFactory` las implementaciones desde el tiempo de ejecución del servicio [OSGi](/help/sites-deploying/configuring-osgi.md) y observar sus configuraciones &quot;adaptables&quot; (fuentes y destinatarios), pero no asignarlas entre sí. Al final, esto depende de la lógica interna, que debe ser documentada. De ahí esta referencia.
 
 ## Referencia {#reference}
 
@@ -186,7 +189,7 @@ En el primer caso, los javadocs pueden indicar lo que `adaptTo-targets` es posib
 
 [**SlingHttpServletRequest **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)se adapta a:
 
-Aún no hay destinos, pero implementa Adaptable y se puede usar como origen en un AdapterFactory personalizado.
+Aún no hay destinatarios, pero implementa Adaptable y se puede usar como fuente en un AdapterFactory personalizado.
 
 [**SlingHttpServletResponse **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)se adapta a:
 
@@ -237,7 +240,7 @@ Aún no hay destinos, pero implementa Adaptable y se puede usar como origen en u
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /></a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Recurso</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>Recurso de la plantilla.</td> 
   </tr> 
   <tr> 

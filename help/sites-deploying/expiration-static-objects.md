@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ El estándar HTTP especifica las caducidad de los archivos (consulte, por ejempl
 >
 >Esta configuración está completamente separada (y no funcionará para) el despachante.
 >
->El Dispatcher tiene como objetivo almacenar en caché los datos frente a AEM.
+>El propósito del despachante es almacenar en caché los datos delante de AEM.
 
 Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden y deben almacenarse en caché. La configuración del servidor Apache HTTPD podría tener el aspecto siguiente: según el entorno:
 
@@ -50,7 +53,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un mes, hasta que caduquen. Esto significa que no es necesario solicitarlas desde AEM ni desde el servidor web, pero sí que pueden permanecer en la caché del navegador.
+   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un mes, hasta que caduquen. Esto significa que no es necesario solicitarlas a AEM o al servidor web, pero sí pueden permanecer en la caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 

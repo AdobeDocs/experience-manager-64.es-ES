@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
 source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -17,15 +20,15 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 ## Requisitos previos {#pre-requisites}
 
-Configure el sitio de referencia tal como se describe en [Configuración y configure el sitio](/help/forms/using/setup-reference-sites.md)de referencia de formularios de AEM 6.4.
+Configure el sitio de referencia tal como se describe en [Configuración y configure AEM sitio](/help/forms/using/setup-reference-sites.md)de referencia de Forms 6.4.
 
-## Escenario de sitio de referencia de We.Finance {#we-finance-reference-site-scenario}
+## Escenario de sitio de referencia de We.Finance  {#we-finance-reference-site-scenario}
 
-El sitio Web de We.Finance es un sitio de servicios financieros diseñado para ayudarle a aprender las capacidades de comunicación interactiva de AEM Forms.
+El sitio Web de We.Finance es un sitio de servicios financieros diseñado para ayudarle a aprender las capacidades de comunicación interactivas de AEM Forms.
 
-Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo los formularios AEM y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una empresa de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una empresa financiera.
+Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM formularios y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
-**El viaje comienza con el caso de uso:**
+**El inicio del viaje con el caso de uso:**
 
 Sarah Rose es una cliente existente de We.Finance y ha adquirido una póliza de seguro de automóviles. Ahora es el momento del año para la renovación de su póliza de seguro. Gloria Rios, agente de seguros, We.Finance envía un recordatorio a Sarah sobre la renovación de su política. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa el proceso con éxito.
 
@@ -38,7 +41,7 @@ El escenario de la aplicación de seguros automáticos We.Finance es una narraci
 
 ### Gloria envía una comunicación de renovación de pólizas de seguros desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria inicia sesión en la instancia de AEM, hace clic en Renovación **automática de seguros y,** a continuación, hace clic en **Abrir interfaz de usuario del agente.** El clic se muestra como prefijo en el documento de seguro con los detalles de la póliza de Sarah Rose. Gloria hace clic **en Enviar** y aparece un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en pocos segundos &quot;Enviado correctamente&quot;.
+Gloria inicia sesión en AEM instancia, hace clic en Renovación **automática de seguros y,** a continuación, hace clic en **Abrir interfaz de usuario del agente.** El clic se muestra como prefijo al documento de seguro con los detalles de póliza de Sarah Rose. Gloria hace clic **en Enviar** y aparece un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en pocos segundos &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Su renovación automática del seguro&quot;.
 
@@ -46,7 +49,7 @@ Sarah recibe un correo electrónico con el asunto &quot;Su renovación automáti
 
 #### Véalo usted mismo {#see-it-yourself}
 
-Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos** > **We.Finance** > **Auto Insurance**. Seleccione la comunicación interactiva **Renovación** automática de seguros y haga clic en **Abrir interfaz de usuario** del agente. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para recibir el correo electrónico con el documento de directiva adjunto y haga clic en Enviar.
+Vaya a **Adobe Experience Manager** > **Forms** > **Forms &amp; Documentos** > **We.Finance** > **Auto Insurance**. Seleccione la comunicación interactiva **Renovación** automática de seguros y haga clic en **Abrir interfaz de usuario** del agente. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para recibir el correo electrónico con el documento de directiva adjunto y haga clic en Enviar.
 
 Puede acceder a la comunicación interactiva Renovación automática de seguros y revisarla directamente desde `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -60,7 +63,7 @@ Sarah hace clic en **Renovar ahora** y se dirige a la versión web de su carta d
 
 #### Cómo funciona {#how-it-works}
 
-La salida web y de impresión de la carta de Seguros automáticos se crean utilizando las capacidades multicanal de Comunicaciones interactivas.
+La salida web y de impresión de la carta de Seguros automáticos se crean mediante las funciones de canales múltiples de Comunicaciones interactivas.
 
 El botón Renovar ahora del correo electrónico está vinculado a la aplicación Renovación automática de seguros, que es una comunicación interactiva en una instancia de publicación.
 
@@ -100,6 +103,6 @@ Cuando Sarah rellena los detalles de la tarjeta de crédito y hace clic en Envia
 
 #### Véalo usted mismo {#see-it-yourself-3}
 
-Puede ver el mensaje de confirmación después de hacer clic en Realizar pago en
+Puede vista del mensaje de confirmación después de hacer clic en Realizar pago en
 
 `https://[authorServer]:[authorPort]/content/forms/af/we-finance/credit-card/ccbillpayment/jcr:content/guideContainer.guideThankYouPage.html?owner=admin&status=Submitted`

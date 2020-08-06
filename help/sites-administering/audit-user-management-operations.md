@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
@@ -37,10 +40,11 @@ Para redireccionar el resultado de registro a un archivo de registro independien
 1. Busque la configuración **del registrador de registros Sling de** Apache. A continuación, presione &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
 1. Cree la siguiente configuración:
 
-   * **** Nivel de registro:Información
-   * **** Archivo de registro: logs/useraudit.log
-   * **** Patrón de mensajes: nivel predeterminado
-   * **** Registrador: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **Nivel de registro:** Información
+   * **Archivo de registro:** logs/useraudit.log
+   * **Patrón de mensajes:** nivel predeterminado
+   * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Para introducir ambos registradores en el campo **Registrador** , debe introducir el nombre del primero, luego crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
 ## Ejemplo de salida {#example-output}

@@ -1,8 +1,8 @@
 ---
 title: Personalización de cuadros de diálogo de error
 seo-title: Personalización de cuadros de diálogo de error
-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para añadir distintas descripciones de errores.
-seo-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para añadir distintas descripciones de errores.
+description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para agregar distintas descripciones de errores.
+seo-description: Personalización de los cuadros de diálogo de error del espacio de trabajo de LiveCycle AEM Forms para agregar distintas descripciones de errores.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
 
 # Personalización de cuadros de diálogo de error {#customizing-error-dialogs}
 
-El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo de error. Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md) el espacio de trabajo de AEM Forms seguidos de los pasos a continuación para personalizar los cuadros de diálogo de error.
+El espacio de trabajo de AEM Forms permite personalizar los cuadros de diálogo de error. Realice los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md) del espacio de trabajo de AEM Forms seguidos de los pasos a continuación para personalizar los diálogos de error.
 
 ## Personalización del texto {#customizing-text}
 

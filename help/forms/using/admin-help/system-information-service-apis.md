@@ -1,8 +1,8 @@
 ---
-title: API del servicio de información del sistema
-seo-title: API del servicio de información del sistema
-description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio de información del sistema.
-seo-description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio de información del sistema.
+title: API de servicio informativo del sistema
+seo-title: API de servicio informativo del sistema
+description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio informativo del sistema.
+seo-description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio informativo del sistema.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
 
-# API del servicio de información del sistema {#system-information-service-apis}
+# API de servicio informativo del sistema {#system-information-service-apis}
 
-El servicio de información del sistema proporciona un conjunto de API de REST para recuperar información. La siguiente tabla proporciona información detallada sobre las API:
+El servicio informativo del sistema proporciona un conjunto de API de REST para recuperar información. La siguiente tabla proporciona información detallada sobre las API:
 
 <table>
  <thead>
@@ -51,7 +54,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.services</p></td> 
    <td><p>https://[servidor]:[puerto]/rest/services/ SystemInfo.services</p></td> 
-   <td><p>Recupera el estado y los parámetros de configuración de los servicios de formularios AEM.</p></td> 
+   <td><p>Recupera el estado y los parámetros de configuración de AEM servicios de formularios.</p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td> 
@@ -104,7 +107,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[servidor]:[puerto]/rest/services/ SystemInfo.info</p></td> 
-   <td><p>Esta API es un envoltorio para todas las API de servicios de información del sistema. Internamente, ejecuta todas las API de información del sistema y descarga información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona el seguimiento de recuento y pila de subprocesos activos. </i></p></td> 
+   <td><p>Esta API es un envoltorio para todas las API de servicio informativo del sistema. Internamente, ejecuta todas las API de información del sistema y descarga información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona el seguimiento de recuento y pila de subprocesos activos. </i></p></td> 
   </tr> 
  </tbody> 
 </table>

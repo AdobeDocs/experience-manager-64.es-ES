@@ -28,11 +28,11 @@ Esta página proporciona más detalles para detallar y/o aumentar los documentos
 >
 >Las listas que figuran en esta subsección no son exhaustivas, sino que tienen por objeto ser una introducción.
 
-### Funciones de AEM {#features-within-aem}
+### Funciones dentro de AEM {#features-within-aem}
 
-Al implementar AEM (especialmente por primera vez), tendrá que revisar las [capacidades y flujos de trabajo de AEM](https://www.adobe.com/es/marketing/experience-manager.html) para asegurarse de qué áreas desea o necesita.
+Al implementar AEM (especialmente por primera vez), deberá revisar las [capacidades y flujos de trabajo de AEM](https://www.adobe.com/es/marketing/experience-manager.html) para asegurarse de qué áreas desea o necesita.
 
-Considere las funciones de AEM que va a utilizar y el impacto en su diseño; por ejemplo:
+Considere las características de AEM que utilizará y el impacto en su diseño; por ejemplo:
 
 * [Comercio](/help/sites-administering/ecommerce.md)
 * [Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
@@ -43,11 +43,11 @@ Considere las funciones de AEM que va a utilizar y el impacto en su diseño; por
 * [Comunidades](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Además, compruebe las [Notas](/help/release-notes/release-notes.md)de la versión, en las distintas versiones de AEM, para ver cuándo se agregaron nuevas funciones.
+Además, consulte las [Notas](/help/release-notes/release-notes.md)de la versión, para ver las distintas versiones de AEM, cuándo se agregaron nuevas funciones.
 
 ### Integraciones {#integrations}
 
-AEM se puede integrar con otros productos de Adobe y/o servicios de terceros. Esto puede aumentar la potencia y la funcionalidad a su disposición.
+AEM puede integrarse con otros productos de Adobe y/o servicios de terceros. Esto puede aumentar la potencia y la funcionalidad a su disposición.
 
 Consulte Integración [de](/help/sites-administering/integration.md) soluciones para obtener información completa.
 
@@ -69,7 +69,7 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
 
 >[!NOTE]
 >
->Estos puntos son genéricos, la lista [de comprobación de](/help/managing/best-practices.md) optimizaciones trata aspectos específicos relacionados con AEM.
+>Estos puntos son genéricos, la lista [de comprobación de](/help/managing/best-practices.md) optimizaciones trata los aspectos específicos relacionados con AEM.
 
 * **Funciones**
 
@@ -111,7 +111,7 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
    Definir claramente qué es lo que debe cubrir el proyecto a varios niveles:
 
    * las versiones individuales (si se utiliza un proceso de lanzamiento iterativo, independientemente de si se entregan a los clientes o al equipo de prueba interno).
-   * el proyecto de AEM.
+   * el proyecto AEM.
    * todo el proyecto; incluyendo cualquier software de terceros, su impacto en las pruebas, problemas de organización y muchos otros.
    * Para algunos aspectos también puede ser útil indicar lo que *no* está dentro del ámbito del proyecto. Esto puede ayudar a evitar confusiones y suposiciones incorrectas, aunque debería limitarse a cuestiones esenciales.
 
@@ -194,7 +194,7 @@ Todas las métricas que se medirán se verán afectadas, de alguna manera, por e
 
 Por lo tanto, debe definir las métricas de destinatario *antes* de decidir el diseño. Esto le permite optimizar el diseño en función de estos factores. Una vez que el proyecto se haya desarrollado, será difícil realizar cambios en los principios básicos de diseño.
 
-Cuando cree la estructura del sitio web, siga la estructura recomendada para los sitios web de AEM. Asegúrese de comprender los siguientes problemas y/o principios:
+Cuando cree la estructura para el sitio web, siga la estructura recomendada para AEM sitios web. Asegúrese de comprender los siguientes problemas y/o principios:
 
 * Cómo estructurar el contenido del sitio web.
 * Cómo funcionan las plantillas y los componentes.
@@ -217,7 +217,7 @@ Para definir o evaluar la infraestructura, ayudará a definir valores de destina
 Según su situación y la importancia estratégica del sitio web, esto le ayudará a evaluar y elegir su infraestructura:
 
 * número de servidores
-* número de instancias de AEM (creación y publicación)
+* número de instancias de AEM (autor y publicación)
 
 ### Actuación {#performance}
 
@@ -279,13 +279,13 @@ Los números anteriores asumen las siguientes condiciones:
 
 * medidas en la publicación (sin entorno de creación y/o sobrecarga de CFC)
 * medida en el servidor (sin sobrecarga de red)
-* no almacenado en caché (sin caché de salida AEM, sin caché de Dispatcher)
+* no almacenado en caché (sin caché de salida de AEM, sin caché de Dispatcher)
 * solo para elementos complejos con muchas dependencias (HTML, JS, PDF, ...)
 * no hay otra carga en el sistema
 
 Existen varios mecanismos que puede utilizar para supervisar los tiempos de respuesta:
 
-* **Supervisión de los tiempos de respuesta con el archivo request.log de AEM**
+* **Monitoreo de los tiempos de respuesta con AEM request.log**
 
    Un buen punto de partida para la análisis del rendimiento es el registro de solicitudes. Entre otra información, puede utilizarla para ver los tiempos de respuesta de solicitudes individuales. Consulte Optimización [del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
@@ -315,9 +315,9 @@ La configuración de destinatarios para solicitudes de búsqueda es, nuevamente,
 * su índice de búsqueda
 * la complejidad de la función de búsqueda; una función de búsqueda básica que sólo permite la entrada de un término de búsqueda será más rápida que una búsqueda avanzada que permite al usuario crear afirmaciones de búsqueda complejas mediante Y/O/NO.
 
-Estos deben planificarse e integrarse desde el inicio mismo de su proyecto. Entre los mecanismos disponibles para la vigilancia figuran los siguientes:
+Estos deben planificarse e integrarse desde el inicio mismo del proyecto. Entre los mecanismos disponibles para la vigilancia figuran los siguientes:
 
-* **Supervisión de los tiempos de respuesta de búsqueda con el archivo request.log de AEM**
+* **Monitoreo de los tiempos de respuesta de búsqueda con AEM request.log**
 
    Nuevamente, request.log puede utilizarse para monitorear los tiempos de respuesta de las solicitudes de búsqueda; consulte Optimización [del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
@@ -359,8 +359,8 @@ Antes de analizar las métricas relacionadas, una definición rápida de los té
    |---|---|---|
    | Cliente | Potencia computacional del equipo del usuario. | Complejidad del diseño de página. |
    | Red | Ancho de banda de la red. | Tamaño de la página (código, imágenes, etc.). |
-   | Caché de Dispatcher | Memoria del servidor del servidor Web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
-   | Caché de salida | Memoria del servidor de AEM (memoria principal y unidad de disco duro). | Número y tamaño de las páginas en la caché de salida, número de dependencias por página. La caché del despachante disminuye este volumen. |
+   | Caché de despachante | Memoria del servidor del servidor Web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
+   | Caché de salida | Memoria del servidor del servidor AEM (memoria principal y disco duro). | Número y tamaño de las páginas en la caché de salida, número de dependencias por página. La caché del despachante disminuye este volumen. |
    | Servidor web | Potencia computacional del servidor Web. | Cantidad de solicitudes. El almacenamiento en caché reduce este volumen. |
    | Plantilla | Potencia computacional del servidor Web. | Complejidad de las plantillas. |
    | Repositorio | Rendimiento del repositorio. | Número de páginas cargadas desde el repositorio. |
@@ -377,7 +377,7 @@ Sin embargo, es preferible tener un pequeño conjunto de métricas principales p
 
 La seguridad es crucial y un desafío cada vez mayor. Se ***debe*** considerar y planificar desde las primeras etapas del proyecto.
 
-La lista de comprobación [de seguridad](/help/sites-administering/security-checklist.md) detalla los pasos que debe seguir para garantizar que la instalación de AEM sea segura cuando se implemente. Otros aspectos relacionados con la seguridad se tratan en [Seguridad (al desarrollarse)](/help/sites-developing/security.md) y Administración y seguridad [del usuario](/help/sites-administering/security.md).
+La lista [de comprobación de](/help/sites-administering/security-checklist.md) seguridad detalla los pasos que debe seguir para garantizar que la instalación de AEM sea segura cuando se implemente. Otros aspectos relacionados con la seguridad se tratan en [Seguridad (al desarrollarse)](/help/sites-developing/security.md) y Administración y seguridad [del usuario](/help/sites-administering/security.md).
 
 ## Tareas paralelas e iterativas {#parallel-and-iterative-tasks}
 
@@ -385,7 +385,7 @@ La lista de comprobación [de seguridad](/help/sites-administering/security-chec
 >
 >Lo siguiente:
 >
->* Oferta una descripción general relacionada con la *primera* implementación de un proyecto de AEM.
+>* Oferta una descripción general relacionada con la *primera* implementación de un proyecto AEM.
 >* Está concebido como una visión general abstracta; consulte la lista de comprobación [del proyecto](/help/managing/best-practices.md) para fases/hitos/tareas específicas.
 >* Cualquier escalón de tiempo es teórico.
 
@@ -393,7 +393,7 @@ La lista de comprobación [de seguridad](/help/sites-administering/security-chec
 
 
 
-Para una nueva implementación de un proyecto AEM estándar, deberá considerar tareas como:
+Para una nueva implementación de un proyecto de AEM estándar, deberá considerar tareas como:
 
 * Entrega desde el proceso de ventas.
 * Implementación de la aplicación para clientes (**Desarrollo**).
@@ -427,7 +427,7 @@ Algunos puntos a tener en cuenta para cada categoría son:
       * La primera impresión resulta en la primera implementación en el entorno de prueba.
       * Cada sprint tiene un resultado ejecutable.
       * Cada sprint recibe una firma del cliente (prueba estructurada mínima con comentarios).
-   * Planee la posibilidad de actualizar la versión de AEM disponible durante el proyecto.
+   * Planee la eventualidad de una actualización de la versión de AEM disponible durante el proyecto.
    * Planifique pruebas y optimización durante las copias.
    * Planee las fases de estabilización y optimización.
    * Cree un registro de los elementos que se planearán para futuras versiones.
@@ -479,7 +479,7 @@ La siguiente lista muestra las aproximaciones estándar y las interrelaciones de
 
 >[!CAUTION]
 >
->Estas cifras sólo pueden utilizarse para las estimaciones iniciales. Un desarrollador experimentado de AEM debe realizar la análisis detallada.
+>Estas cifras sólo pueden utilizarse para las estimaciones iniciales. Un desarrollador AEM experimentado debe realizar la análisis detallada.
 
 | Fase | Esfuerzo |
 |---|---|
@@ -527,7 +527,7 @@ Se proporciona la siguiente lista para informarle de las herramientas que se pue
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>La propia AEM proporciona una serie de mecanismos que le ayudan a supervisar, probar, investigar y depurar su aplicación; incluyendo:</p>
+   <td><p>El propio AEM proporciona una serie de mecanismos que le ayudan a supervisar, probar, investigar y depurar su aplicación; incluyendo:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Modo de desarrollador</a></li>
      <li>Consola <a href="/help/sites-developing/hobbes.md">de pruebas</a></li>
@@ -558,11 +558,11 @@ Se proporciona la siguiente lista para informarle de las herramientas que se pue
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse es un IDE de código abierto, compuesto por varios proyectos. Se centran en la creación de una plataforma de desarrollo abierta compuesta de marcos, herramientas y tiempos de ejecución ampliables para la creación, implementación y administración de software durante todo el ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Cómo desarrollar proyectos de AEM con Eclipse</a> para obtener más información.</p> </td>
+   <td><p>Eclipse es un IDE de código abierto, compuesto por varios proyectos. Se centran en la creación de una plataforma de desarrollo abierta compuesta de marcos, herramientas y tiempos de ejecución ampliables para la creación, implementación y administración de software durante todo el ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Cómo desarrollar proyectos AEM con Eclipse</a> para obtener más información.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE profesional (y, por lo tanto, responsable de los costes de licencia) que ofrece una amplia gama de características. </p> <p>Consulte <a href="/help/sites-developing/ht-intellij.md">Cómo desarrollar proyectos de AEM con IntelliJ IDEA</a> para obtener más información.</p> </td>
+   <td><p>Un IDE profesional (y, por lo tanto, responsable de los costes de licencia) que ofrece una amplia gama de características. </p> <p>Consulte <a href="/help/sites-developing/ht-intellij.md">Cómo desarrollar proyectos AEM con IntelliJ IDEA</a> para obtener más información.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
@@ -579,9 +579,9 @@ Además, las siguientes secciones son de particular interés:
 * [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
 * [Monitoreo y mantenimiento de la instancia](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Prácticas recomendadas  {#best-practices}
+### Prácticas recomendadas   {#best-practices}
 
-Adobe ofrece otras optimizaciones para todas las fases y audiencias:
+Adobe proporciona otras optimizaciones para todas las fases y audiencias:
 
 * [Implementación](/help/sites-deploying/best-practices.md)
 * [Creación  ](/help/sites-authoring/best-practices.md)

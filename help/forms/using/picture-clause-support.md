@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor con formato para los símbolos numéricos, de texto y de fecha. Se admiten las siguientes Expresiones de cláusula Picture:
 
-* categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}| categoría(configuración regional){cláusula-imagen}
+* categoría(configuración regional){cláusula-imagen} | categoría(configuración regional){cláusula-imagen} | categoría(configuración regional){cláusula-imagen}
 * category.subcategory{}
 
 >[!NOTE]
@@ -92,25 +95,25 @@ Cláusula de expresión admitida para la imagen de fecha:
 
 ## Cláusula de imagen numérica {#numeric-picture-clause}
 
-Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, existe una diferencia en la compatibilidad entre los formularios PDF y los formularios HTML.
+Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, hay una diferencia en la compatibilidad entre PDF forms y HTML Forms.
 
-En los formularios **** PDF, se aplica formato a un número independientemente del número de símbolos que tenga la cláusula Picture
+En **PDF forms**, se aplica formato a un número independientemente del número de símbolos que tenga la cláusula Picture
 
-En los formularios **** HTML, un número solo tiene formato si el número tiene dígitos menores que el número de símbolos de la cláusula Picture.
+En Forms **** HTML, un número solo tiene formato si el número tiene dígitos menores que el número de símbolos de la cláusula Picture.
 
 **Ejemplo**: Considere una cláusula Picture: num{zzz,zzz,zz9}.
 
-El número **10000** tiene un formato de **10.000** en formularios HTML y PDF.
+El número **10000** tiene un formato de **10.000** tanto en HTML como en PDF forms.
 
-El número 1000000 tiene un formato de 1000.000 en formularios PDF. Sin embargo, en los formularios HTML, el número permanece sin formato como 1000000.
+El número 1000000 tiene un formato de 1000.000 en PDF forms. Sin embargo, en HTML Forms el número permanece sin formato como 1000000.
 
-Las expresiones admitidas para la cláusula de imagen numérica en los formularios **** HTML son:
+Las expresiones admitidas para la cláusula de imagen numérica en Forms **** HTML son:
 
 * num.integer{}
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{Numeric Picture Clause Symbols}
+* num{Símbolos de cláusula de imagen numérica}
 
 <table> 
  <tbody>

@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
 source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
+workflow-type: tm+mt
+source-wordcount: '2526'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ Cuando un usuario hace clic en el marcador *Abrir los detalles* del préstamo, s
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Compilador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio de ensamblador, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -113,8 +116,8 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (obligatorio si AEM Forms se implementa en JBoss)
-* jbossall-client.jar (obligatorio si AEM Forms se implementa en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms se implementa en JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss)
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de biblioteca Java de AEM Forms.
 
@@ -151,7 +154,7 @@ Debe agregar el documento PDF al que se agregan los marcadores y el documento XM
 
 **Definición de opciones de tiempo de ejecución**
 
-Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede definir, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de formularios](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM.
+Puede definir opciones en tiempo de ejecución que controlen el comportamiento del servicio de ensamblador mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Ensamblador que continúe procesando un trabajo si se produce un error. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de la `AssemblerOptionSpec` clase en Referencia [de API de](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Compilación del documento PDF**
 
@@ -222,6 +225,7 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
    * Un `com.adobe.idp.Document` objeto que representa el documento DDX que se va a utilizar
    * Un `java.util.Map` objeto que contiene el documento PDF de entrada y el documento XML de marcador.
    * Un `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos
+
    El `invokeDDX` método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
 1. Guarde el documento PDF que contiene marcadores.
@@ -255,12 +259,12 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
 1. Cree un cliente de ensamblador de PDF.
 
    * Cree un `AssemblerServiceClient` objeto utilizando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un `AssemblerServiceClient.Endpoint.Address` objeto mediante el `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario usar el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
    * Cree un `System.ServiceModel.BasicHttpBinding` objeto obteniendo el valor del `AssemblerServiceClient.Endpoint.Binding` campo. Convierta el valor devuelto a `BasicHttpBinding`.
    * Establezca el `System.ServiceModel.BasicHttpBinding` campo del `MessageEncoding` objeto en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de AEM formularios al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -309,6 +313,7 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
    * Un `BLOB` objeto que representa el documento DDX
    * La `MyMapOf_xsd_string_To_xsd_anyType` matriz que contiene los documentos de entrada
    * Un `AssemblerOptionSpec` objeto que especifica opciones de tiempo de ejecución
+
    El `invokeDDX` método devuelve un `AssemblerResult` objeto que contiene los resultados del trabajo y las excepciones que puedan haberse producido.
 
 1. Guarde el documento PDF que contiene marcadores.
@@ -321,4 +326,4 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
 
 **Consulte también**
 
-[Invocación de formularios AEM mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

@@ -11,6 +11,9 @@ topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y un r
 
    >[!NOTE]
    >
-   >Las dimensiones del campo seleccionado en Forms Designer se reflejan cuando se procesa el campo. Sin embargo, la dimensión del cuadro de firma procesado se calcula en función de la proporción de aspecto del campo y no de la dimensión especificada en Forms Designer.
+   >Los Dimension del campo seleccionado en Forms Designer se reflejan cuando se procesa el campo. Sin embargo, la dimensión del cuadro de firma procesado se calcula en función de la proporción de aspecto del campo y no de la dimensión especificada en Forms Designer.
 
 1. Configure el campo Creación de firma.
 

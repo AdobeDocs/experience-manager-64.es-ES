@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +100,7 @@ El campo personalizado solo debe anular la `render.jsp` secuencia de comandos, d
 
 Para agregar un comportamiento específico del lado del cliente a su componente:
 
-1. Cree una clientlib de categoría `cq.authoring.dialog`.
+1. Crear una clientlib de categoría `cq.authoring.dialog`.
 1. Cree una clientlib de categoría `cq.authoring.dialog` y defina su `JS`/ `CSS` interior.
 
    Defina su `JS`/ `CSS` dentro de la clientlib.

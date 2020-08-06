@@ -1,8 +1,8 @@
 ---
-title: Configuración de formularios AEM para recuperar previamente información de dominio
-seo-title: Configuración de formularios AEM para recuperar previamente información de dominio
-description: 'Configure los formularios AEM para recuperar previamente la información del dominio si experimenta un tiempo de respuesta más lento debido a grupos profundamente anidados o si es miembro de muchos grupos. '
-seo-description: 'Configure los formularios AEM para recuperar previamente la información del dominio si experimenta un tiempo de respuesta más lento debido a grupos profundamente anidados o si es miembro de muchos grupos. '
+title: Configurar formularios AEM para recuperar previamente información de dominio
+seo-title: Configurar formularios AEM para recuperar previamente información de dominio
+description: 'Configure AEM formularios para recuperar previamente la información del dominio si experimenta un tiempo de respuesta más lento debido a grupos profundamente anidados o si es miembro de muchos grupos. '
+seo-description: 'Configure AEM formularios para recuperar previamente la información del dominio si experimenta un tiempo de respuesta más lento debido a grupos profundamente anidados o si es miembro de muchos grupos. '
 uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
 
-# Configuración de formularios AEM para recuperar previamente información de dominio {#configure-aem-forms-to-prefetchdomain-information}
+# Configurar formularios AEM para recuperar previamente información de dominio {#configure-aem-forms-to-prefetchdomain-information}
 
-Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están anidados profundamente (por ejemplo, 30 niveles). Si tiene este problema, puede configurar formularios AEM para recuperar previamente información de determinados dominios.
+Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están anidados profundamente (por ejemplo, 30 niveles). Si tiene este problema, puede configurar formularios AEM para recuperar previamente información de ciertos dominios.
 
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Configuración > Importar y exportar archivos]** de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en **[!UICONTROL Exportar]** y guarde el archivo de configuración en otra ubicación.
-1. Agregue el nodo siguiente (marcado en negrita):
+1. Añada el nodo siguiente (marcado en negrita):
 
    ```as3
     <node name="UM"> 

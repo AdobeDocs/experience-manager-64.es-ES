@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ El procesamiento de plantillas adaptables proporciona una forma de administrar u
 
 ## Información general {#overview}
 
-Las plantillas generalmente se crean en torno a una cuadrícula adaptable y las páginas creadas en función de estas plantillas responden plenamente, ajustándose automáticamente a la ventanilla del dispositivo cliente. Con la barra de herramientas del emulador del editor de páginas, los autores pueden dirigir los diseños a dispositivos específicos.
+Las plantillas generalmente se crean en torno a una cuadrícula adaptable y las páginas creadas en función de estas plantillas responden plenamente, ajustándose automáticamente a la ventanilla del dispositivo cliente. Mediante la barra de herramientas del emulador del editor de páginas, los autores pueden destinatario de diseños a dispositivos específicos.
 
 También es posible configurar plantillas para admitir el procesamiento adaptable. Cuando los grupos de dispositivos están configurados correctamente, la página se procesará con un selector diferente en la URL al seleccionar un dispositivo en el modo de emulador. Mediante un selector, se puede llamar directamente a una representación de página específica mediante la dirección URL.
 

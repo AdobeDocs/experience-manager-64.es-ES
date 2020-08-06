@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 0%
 
 ---
 
@@ -23,14 +26,14 @@ CRX2Oak es una herramienta diseñada para migrar datos entre diferentes reposito
 
 Puede utilizarse para migrar datos de versiones anteriores de CQ basadas en Apache Jackrabbit 2 a Oak, y también puede utilizarse para copiar datos entre repositorios de Oak.
 
-Puede descargar la versión más reciente de crx2oak desde el repositorio público de Adobe en esta ubicación:\
+Puede descargar la versión más reciente de crx2oak desde el repositorio público de Adobes en esta ubicación:\
 [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 La lista de cambios y correcciones para la versión más reciente se encuentra en las Notas [de revisión de](/help/release-notes/crx2oak.md)CRX2Oak.
 
 >[!NOTE]
 >
->Para obtener más información sobre Apache Oak y los conceptos clave de la asistencia AEM, consulte [Introducción a la plataforma](/help/sites-deploying/platform.md)AEM.
+>Para obtener más información sobre Apache Oak y los conceptos clave de AEM resistencia, consulte [Introducción a la Plataforma](/help/sites-deploying/platform.md)de AEM.
 
 ## Casos de uso de la migración {#migration-use-cases}
 
@@ -48,17 +51,17 @@ El diagrama siguiente ilustra todas las combinaciones de migración posibles adm
 
 ## Características {#features}
 
-CRX2Oak se llama durante las actualizaciones de AEM de forma que el usuario pueda especificar un perfil de migración predefinido que automatice la reconfiguración de los modos de persistencia. Esto se denomina modo de inicio rápido.
+Se llama a CRX2Oak durante AEM actualizaciones de manera que el usuario pueda especificar un perfil de migración predefinido que automatice la reconfiguración de los modos de persistencia. Esto se denomina modo de inicio rápido.
 
-También se puede ejecutar por separado en caso de que requiera más personalización. Sin embargo, tenga en cuenta que en este modo solo se realizan cambios en el repositorio y que cualquier reconfiguración adicional de AEM debe realizarse manualmente. Esto se denomina modo independiente.
+También se puede ejecutar por separado en caso de que requiera más personalización. Sin embargo, tenga en cuenta que en este modo sólo se realizan cambios en el repositorio y que cualquier reconfiguración adicional de AEM debe realizarse manualmente. Esto se denomina modo independiente.
 
 Otra cosa a tener en cuenta es que con la configuración predeterminada en modo independiente, sólo se migrará el almacén de nodos y el nuevo repositorio reutilizará el antiguo almacenamiento binario.
 
 ### Modo de inicio rápido automatizado {#automated-quickstart-mode}
 
-Desde AEM 6.3, CRX2Oak puede gestionar perfiles de migración definidos por el usuario que se pueden configurar con todas las opciones de migración ya disponibles. Esto permite una mayor flexibilidad y la capacidad de automatizar la configuración de AEM, funciones que no están disponibles si se utiliza la herramienta en modo independiente.
+Desde AEM 6.3, CRX2Oak es capaz de manejar perfiles de migración definidos por el usuario que pueden configurarse con todas las opciones de migración ya disponibles. Esto permite una mayor flexibilidad y la capacidad de automatizar la configuración de AEM, funciones que no están disponibles si se utiliza la herramienta en modo independiente.
 
-Para cambiar CRX2Oak al modo de inicio rápido, debe definir la ruta a la carpeta crx-quickstart en el directorio de instalación de AEM a través de esta variable ambiental del sistema operativo:
+Para cambiar CRX2Oak al modo de inicio rápido, debe definir la ruta a la carpeta crx-quickstart en el directorio de instalación de AEM mediante esta variable ambiental del sistema operativo:
 
 **Para sistemas basados en UNIX y macOS:**
 
@@ -119,8 +122,8 @@ Ambos parámetros también admiten un formato de fecha, en caso de que desee cop
 Una versión de código abierto de CRX2Oak está disponible en forma de actualización de roak. Admite todas las funciones excepto:
 
 * Compatibilidad con CRX2
-* Compatibilidad con perfiles de migración
-* Compatibilidad con la reconfiguración automatizada de AEM
+* Compatibilidad con el perfil de migración
+* Compatibilidad con la reconfiguración AEM automatizada
 
 See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.html) for more information.
 
@@ -137,7 +140,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--user`:: Usuario para la RDB objetivo
 
-* `--password`:: Contraseña para la RDB de destino.
+* `--password`:: Contraseña para la RDB de destinatario.
 
 ### Opciones de migración {#migration-options}
 
@@ -155,9 +158,9 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 #### Opciones de ruta {#path-options}
 
-* `--include-paths:` Lista separada por comas de las rutas que se incluirán durante la copia
-* `--merge-paths`:: Lista de rutas separadas por comas para combinar durante la copia
-* `--exclude-paths:` Lista separada por comas de las rutas que se van a excluir durante la copia.
+* `--include-paths:` lista separada por comas de las rutas que se incluirán durante la copia
+* `--merge-paths`:: lista separada por comas de las rutas que se van a combinar durante la copia
+* `--exclude-paths:` lista separada por comas de las rutas que se van a excluir durante la copia.
 
 ### Opciones del almacén de blob de origen {#source-blob-store-options}
 
@@ -171,13 +174,13 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 ### Opciones de BlobStore de destino {#destination-blobstore-options}
 
-* `--datastore:` El directorio del almacén de datos que se utilizará como destino `FileDataStore`
+* `--datastore:` El directorio del almacén de datos que se utilizará como destinatario `FileDataStore`
 
-* `--fileblobstore:` El directorio del almacén de datos que se utilizará como destino `FileBlobStore`
+* `--fileblobstore:` El directorio del almacén de datos que se utilizará como destinatario `FileBlobStore`
 
-* `--s3datastore`:: El directorio del almacén de datos que se usará para el destino `S3DataStore`
+* `--s3datastore`:: El directorio del almacén de datos que se usará para el destinatario `S3DataStore`
 
-* `--s3config`:: El archivo de configuración del destino `S3DataStore`.
+* `--s3config`:: El archivo de configuración del destinatario `S3DataStore`.
 
 ### Opciones de ayuda {#help-options}
 
@@ -195,11 +198,11 @@ También puede habilitar la información de depuración para el proceso de migra
   </tr> 
   <tr> 
    <td>Modo de inicio rápido</td> 
-   <td>Puede agregar las <strong>—nivel de registro TRACE</strong> o <strong>— </strong>opciones DEBUG a nivel de registro a la línea de comandos cuando ejecute CRX2Oak. En este modo, los registros se redirigen automáticamente al archivo <strong></strong>upgrade.log.</td> 
+   <td>Puede agregar las <strong>—TRACE</strong> de nivel de registro o <strong>— </strong>opciones DEBUG de nivel de registro a la línea de comandos al ejecutar CRX2Oak. En este modo, los registros se redirigen automáticamente al archivo <strong></strong>upgrade.log.</td> 
   </tr> 
   <tr> 
    <td>Modo independiente</td> 
-   <td><p>Agregue las <strong>—opciones de seguimiento</strong> a la línea de comandos CRX2Oak para mostrar los eventos TRACE en la salida estándar (debe redirigir los registros usted mismo usando el carácter de redirección: '&gt;' o 'tee' para una inspección posterior).</p> </td> 
+   <td><p>Añada las <strong>—opciones de rastreo</strong> a la línea de comandos CRX2Oak para mostrar eventos de TRACE en la salida estándar (debe redirigir los registros usted mismo usando el carácter de redirección: '&gt;' o 'tee' para una inspección posterior).</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,8 +1,8 @@
 ---
 title: Creación de modelos de flujo de trabajo
 seo-title: Creación de modelos de flujo de trabajo
-description: Puede crear un modelo de flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicia el flujo de trabajo.
-seo-description: Puede crear un modelo de flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicia el flujo de trabajo.
+description: Puede crear un modelo de flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicio el flujo de trabajo.
+seo-description: Puede crear un modelo de flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicio el flujo de trabajo.
 uuid: 53d94176-4d5f-4ab3-9628-6b7d44f81139
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 >
 >Para obtener información sobre el uso de la IU clásica, consulte la documentación [de](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) AEM 6.3.
 
-Puede crear un modelo [de](/help/sites-developing/workflows.md#model) flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicia el flujo de trabajo. También puede definir propiedades de modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos.
+Puede crear un modelo [de](/help/sites-developing/workflows.md#model) flujo de trabajo para definir la serie de pasos ejecutados cuando un usuario inicio el flujo de trabajo. También puede definir propiedades de modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos.
 
-Cuando un usuario inicia un flujo de trabajo, se inicia una instancia; este es el modelo de tiempo de ejecución correspondiente, creado al [sincronizar](#sync-your-workflow-generate-a-runtime-model) los cambios.
+Cuando un usuario inicio un flujo de trabajo, se inicia una instancia; este es el modelo de tiempo de ejecución correspondiente, creado al [sincronizar](#sync-your-workflow-generate-a-runtime-model) los cambios.
 
 ## Creating a New Workflow {#creating-a-new-workflow}
 
@@ -44,7 +47,7 @@ Para crear un nuevo flujo de trabajo con el editor:
    [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
 
 1. Select **[!UICONTROL Create]**, then **[!UICONTROL Create Model]**.
-1. Aparece el cuadro de diálogo **[!UICONTROL Agregar modelo]** de workflow. Introduzca el **[!UICONTROL Título]** y el **[!UICONTROL Nombre]** (opcional) antes de seleccionar **[!UICONTROL Finalizado]**.
+1. Aparecerá el cuadro de diálogo **[!UICONTROL Añadir modelo]** de flujo de trabajo. Introduzca el **[!UICONTROL Título]** y el **[!UICONTROL Nombre]** (opcional) antes de seleccionar **[!UICONTROL Finalizado]**.
 1. El nuevo modelo se muestra en la consola Modelos **[!UICONTROL de]** flujo de trabajo.
 1. Seleccione el nuevo flujo de trabajo y, a continuación, utilice [**[!UICONTROL Editar ]**para abrirlo y configurarlo](#editing-a-workflow):
 
@@ -74,7 +77,7 @@ Cuando se completen las actualizaciones del flujo de trabajo, debe utilizar **[!
 
 ### Sincronizar el flujo de trabajo - Generar un modelo de tiempo de ejecución {#sync-your-workflow-generate-a-runtime-model}
 
-**La sincronización** (derecha en la barra de herramientas del editor) genera un modelo [de](/help/sites-developing/workflows.md#runtime-model)tiempo de ejecución. El modelo de tiempo de ejecución es el modelo que se utiliza realmente cuando un usuario inicia un flujo de trabajo. Si no **[!UICONTROL sincroniza]** los cambios, los cambios no estarán disponibles en tiempo de ejecución.
+**La sincronización** (derecha en la barra de herramientas del editor) genera un modelo [de](/help/sites-developing/workflows.md#runtime-model)tiempo de ejecución. El modelo de tiempo de ejecución es el modelo que se utiliza realmente cuando un usuario inicio un flujo de trabajo. Si no **[!UICONTROL sincroniza]** los cambios, los cambios no estarán disponibles en tiempo de ejecución.
 
 Cuando usted (o cualquier otro usuario) realice cambios en el flujo de trabajo, debe utilizar la **[!UICONTROL sincronización]** para generar un modelo de tiempo de ejecución, incluso cuando los diálogos individuales (por ejemplo, para pasos) tengan sus propias opciones de guardado.
 
@@ -107,7 +110,7 @@ Al seleccionar **[!UICONTROL Editar]** :
 
 ![wf-22](assets/wf-22.png)
 
-### Adición de un paso a un modelo {#adding-a-step-to-a-model}
+### Añadir un paso a un modelo {#adding-a-step-to-a-model}
 
 Deberá agregar pasos al modelo para representar la actividad que se va a realizar: cada paso realiza una actividad específica. Hay una selección de componentes de paso disponibles en una instancia de AEM estándar.
 
@@ -121,12 +124,13 @@ Al editar un modelo, los pasos disponibles aparecen en los distintos grupos del 
 
 **Para agregar un paso a un modelo**:
 
-1. Abra un modelo de flujo de trabajo existente para editarlo. En la consola **[!UICONTROL Modelo]** de flujos de trabajo, seleccione el modelo requerido y, a continuación, **[!UICONTROL Editar]**.
+1. Abra un modelo de flujo de trabajo existente para editarlo. En la consola Modelo **[!UICONTROL de]** Flujos de trabajo, seleccione el modelo requerido y, a continuación, **[!UICONTROL Editar]**.
 1. Abra el navegador **[!UICONTROL Pasos]** ; con **[!UICONTROL Alternar panel]** lateral, en el extremo izquierdo de la barra de herramientas superior. Aquí puede hacer lo siguiente:
 
    * **[!UICONTROL Filtre]** para pasos específicos.
    * Utilice el selector desplegable para limitar la selección a un grupo específico de pasos.
    * Seleccione el icono Mostrar descripción ![wf-step-info-icon](assets/wf-stepinfo-icon.png) para mostrar más detalles sobre el paso adecuado.
+
    ![wf-02](assets/wf-02.png)
 
 1. Arrastre los pasos correspondientes a la ubicación requerida en el modelo.
@@ -137,7 +141,7 @@ Al editar un modelo, los pasos disponibles aparecen en los distintos grupos del 
 
    ![wf-03](assets/wf-03.png)
 
-1. Agregue tantos pasos u otras actualizaciones como sea necesario.
+1. Añada tantos pasos u otras actualizaciones como sea necesario.
 
    En tiempo de ejecución, los pasos se ejecutan en el orden en que aparecen en el modelo. Después de agregar componentes de paso, puede arrastrarlos a otra ubicación del modelo.
 
@@ -156,7 +160,8 @@ Puede **configurar** y personalizar el comportamiento de un paso de flujo de tra
 1. Para abrir el cuadro de diálogo Propiedades **[!UICONTROL del]** paso para realizar un paso:
 
    * Puntee en el paso del modelo de flujo de trabajo y seleccione **[!UICONTROL Configurar]** en la barra de herramientas de componentes.
-   * Haga doble clic en el paso.
+   * Haga clic con el Doble en el paso.
+
    >[!NOTE]
    >
    >Para obtener información sobre los componentes de paso principales instalados con AEM, consulte Referencia [de pasos](/help/sites-developing/workflows-step-ref.md)de flujo de trabajo.
@@ -186,24 +191,24 @@ Puede crear un modelo de flujo de trabajo [transitorio](/help/sites-developing/w
 
 >[!NOTE]
 >
->Al ejecutar un flujo de trabajo en modo [transitorio](/help/sites-developing/workflows.md#transient-workflows) , AEM no almacena ningún historial de flujo de trabajo. Por lo tanto, [Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) no muestra información relacionada con ese flujo de trabajo. [](/help/sites-authoring/basic-handling.md#timeline)
+>Cuando se ejecuta un flujo de trabajo en modo [transitorio](/help/sites-developing/workflows.md#transient-workflows) , AEM no almacena ningún historial de flujo de trabajo. Por lo tanto, [Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) no muestra información relacionada con ese flujo de trabajo. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ### Hacer que los modelos de flujo de trabajo estén disponibles en la IU táctil {#make-workflow-models-available-in-touchui}
 
-Si hay un modelo de flujo de trabajo en la IU clásica, pero falta en el menú emergente de selección en el carril **[!UICONTROL Línea de tiempo]** de la IU táctil, siga la configuración para que esté disponible. Los siguientes pasos ilustran el uso del modelo de flujo de trabajo llamado **[!UICONTROL Solicitud de activación]**.
+Si hay un modelo de flujo de trabajo en la IU clásica, pero falta en el menú emergente de selección en el carril **[!UICONTROL Línea de tiempo]** de la IU táctil, siga la configuración para que esté disponible. Los siguientes pasos ilustran el uso del modelo de flujo de trabajo llamado **[!UICONTROL Solicitud de Activación]**.
 
-1. Confirme que el modelo no está disponible en la IU táctil. Acceda a un recurso mediante `/assets.html/content/dam` la ruta. Seleccione un recurso. Abra **[!UICONTROL Línea de tiempo]** en el carril izquierdo. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]** y confirme que el modelo de **[!UICONTROL solicitud de activación]** no está presente en la lista emergente.
+1. Confirme que el modelo no está disponible en la IU táctil. Acceda a un recurso mediante `/assets.html/content/dam` la ruta. Seleccione un recurso. Abra **[!UICONTROL Línea de tiempo]** en el carril izquierdo. Haga clic en Flujo de trabajo **[!UICONTROL de]** Inicio y confirme que el modelo de **[!UICONTROL Solicitud de Activación]** no está presente en la lista emergente.
 
 1. Vaya a **[!UICONTROL Herramientas > General > Etiquetado]**. Seleccione **[!UICONTROL Flujo de trabajo]**.
 
 1. Seleccione **[!UICONTROL Crear > Crear etiqueta]**. Defina **[!UICONTROL Título]** como `DAM` y **[!UICONTROL Nombre]** como `dam`. Seleccione **[!UICONTROL Enviar]**.
    ![Crear etiqueta en modelo de flujo de trabajo](assets/workflow_create_tag.png)
 
-1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccione **[!UICONTROL Solicitud de activación]** y, a continuación, seleccione **[!UICONTROL Editar]**.
+1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccione **[!UICONTROL Solicitud de Activación]** y, a continuación, seleccione **[!UICONTROL Editar]**.
 
 1. Seleccione **[!UICONTROL Editar]** y, a continuación, abra Propiedades **[!UICONTROL del modelo de workflow]**. Vaya a la ficha **[!UICONTROL Básico]** .
 
-1. Agregar `Workflow : DAM` al campo **[!UICONTROL Etiquetas]** . Confirme la selección con la marca de verificación (visto).
+1. Añada `Workflow : DAM` al campo **[!UICONTROL Etiquetas]** . Confirme la selección con la marca de verificación (visto).
 
 1. Confirme la adición de la etiqueta con **[!UICONTROL Guardar y cerrar]**.
    ![Editar propiedades de página del modelo](assets/workflow_model_edit_activation1.png)
@@ -239,7 +244,7 @@ Para definir **[!UICONTROL las fases]** del flujo de trabajo:
 
 1. Abra el modelo de flujo de trabajo para editarlo.
 1. Seleccione Propiedades **[!UICONTROL del modelo]** de workflow en la barra de herramientas. A continuación, abra la ficha **[!UICONTROL Etapas]** .
-1. Agregue (y coloque) las **[!UICONTROL etapas]** requeridas. Puede definir cualquier número de etapas para el modelo de flujo de trabajo.
+1. Añada (y coloque) las **[!UICONTROL etapas]** requeridas. Puede definir cualquier número de etapas para el modelo de flujo de trabajo.
 
    Por ejemplo:
 
@@ -278,24 +283,24 @@ Para definir **[!UICONTROL las fases]** del flujo de trabajo:
 
 1. Open the **[!UICONTROL Filters]** tab.
 
-1. Seleccione **[!UICONTROL Agregar filtro]** y especifique la ruta del *diseño* del modelo de flujo de trabajo:
+1. Seleccione **[!UICONTROL Añadir filtro]** y especifique la ruta del *diseño* del modelo de flujo de trabajo:
 
    `/conf/global/settings/workflow/models/<*your-model-name*>`
 
    Haga clic en **[!UICONTROL Finalizado]**.
 
-1. Seleccione **[!UICONTROL Agregar filtro]** y especifique la ruta del modelo de flujo de trabajo de *tiempo de ejecución* :
+1. Seleccione **[!UICONTROL Añadir filtro]** y especifique la ruta del modelo de flujo de trabajo de *tiempo de ejecución* :
 
    `/var/workflow/models/<*your-model-name*>`
 
    Haga clic en **[!UICONTROL Finalizado]**.
 
-1. Agregue filtros adicionales para cualquier secuencia de comandos personalizada que utilice el modelo.
+1. Añada filtros adicionales para las secuencias de comandos personalizadas que utilice el modelo.
 1. Haga clic en **[!UICONTROL Guardar]** para confirmar las definiciones del filtro.
 1. Seleccione **[!UICONTROL Generar]** en la barra de herramientas de la definición del paquete.
 1. Seleccione **[!UICONTROL Descargar]** en la barra de herramientas del paquete.
 
-## Uso de flujos de trabajo para procesar envíos de formularios {#using-workflows-to-process-form-submissions}
+## Uso de Flujos de trabajo para procesar envíos de formularios {#using-workflows-to-process-form-submissions}
 
 Puede configurar un formulario para que lo procese el flujo de trabajo seleccionado. Cuando los usuarios envían el formulario, se crea una nueva instancia de flujo de trabajo con los datos del envío del formulario como carga útil.
 
@@ -304,25 +309,25 @@ Para configurar el flujo de trabajo que se utilizará con el formulario:
 1. Cree una nueva página y ábrala para editarla.
 1. Add a **[!UICONTROL Form]** component to the page.
 1. Configure el componente Inicio **[!UICONTROL de]** formulario que aparece en la página.
-1. Utilice **[!UICONTROL Iniciar flujo de trabajo]** para seleccionar el flujo de trabajo deseado de entre los disponibles:
+1. Utilice el flujo de trabajo de **[!UICONTROL Inicio]** para seleccionar el flujo de trabajo deseado de entre los disponibles:
 
    ![wf-12](assets/wf-12.png)
 
 1. Confirme la nueva configuración del formulario con la marca de verificación.
 
-## Comprobación de flujos de trabajo {#testing-workflows}
+## Flujos de trabajo de prueba {#testing-workflows}
 
 Es una buena práctica, al probar un flujo de trabajo, utilizar diversos tipos de carga útil; incluir tipos distintos de los tipos para los que se ha desarrollado. Por ejemplo, si desea que el flujo de trabajo se ocupe de los recursos, pruébelo configurando una página como carga útil y asegúrese de que no arroja errores.
 
 Por ejemplo, pruebe el nuevo flujo de trabajo de la siguiente manera:
 
-1. [Inicie el modelo](/help/sites-administering/workflows-starting.md) de flujo de trabajo desde la consola.
+1. [Inicio el modelo](/help/sites-administering/workflows-starting.md) de flujo de trabajo desde la consola.
 1. Defina la **[!UICONTROL carga útil]** y confirme.
 
 1. Realice las acciones necesarias para que el flujo de trabajo continúe.
 1. Monitoree los archivos de registro mientras se ejecuta el flujo de trabajo.
 
-También puede configurar AEM para que muestre los mensajes **[!UICONTROL DEBUG]** en los archivos de registro. Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener más información y, cuando termine el desarrollo, vuelva a establecer el nivel **** de registro en **[!UICONTROL Información]**.
+También puede configurar AEM para que muestren los mensajes **[!UICONTROL DEBUG]** en los archivos de registro. Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener más información y, cuando termine el desarrollo, vuelva a establecer el nivel **** de registro en **[!UICONTROL Información]**.
 
 ## Ejemplos {#examples}
 
@@ -342,17 +347,18 @@ Para ilustrar algunas de las posibilidades de crear un flujo de trabajo, en el s
 
    * Haga clic en el paso y seleccione **[!UICONTROL Eliminar]** en la barra de herramientas de componentes. Confirme la acción.
 
-1. En la selección de **[!UICONTROL Flujo de trabajo]** del navegador de pasos, arrastre un Paso **[!UICONTROL de]** participante al flujo de trabajo y colóquelo entre Inicio **[!UICONTROL de]** flujo y **Fin[!UICONTROL de flujo*]*.
+1. En la selección de **[!UICONTROL Flujo de trabajo]** del navegador de pasos, arrastre un Paso **[!UICONTROL de]** participante al flujo de trabajo y colóquelo entre el Inicio **[!UICONTROL de]** flujo y **Fin[!UICONTROL de flujo*]*.
 1. Para abrir el cuadro de diálogo de propiedades:
 
    * Haga clic en el paso del participante y seleccione **[!UICONTROL Configurar]** en la barra de herramientas de componentes.
-   * Haga doble clic en el paso del participante.
+   * Haga clic con el Doble en el paso del participante.
 
 1. En la ficha **[!UICONTROL Común]** , introduzca `Validate Content` tanto el **[!UICONTROL Título]** como la **[!UICONTROL Descripción]**.
 1. Abra la ficha **[!UICONTROL Usuario/Grupo]** :
 
    * Activate **[!UICONTROL Notify user via email]**.
    * Seleccione `Administrator` ( `admin`) para el campo **[!UICONTROL Usuario/Grupo]** .
+
    >[!NOTE]
    >
    >Para que se envíen correos electrónicos, es necesario configurar [el servicio](/help/sites-administering/notification.md)de correo y los detalles de la cuenta de usuario.
@@ -454,8 +460,8 @@ function check() {
 }
 ```
 
-### Ejemplo: Solicitud de activación personalizada {#example-customized-request-for-activation}
+### Ejemplo: Solicitud de Activación personalizada {#example-customized-request-for-activation}
 
-Puede personalizar cualquiera de los flujos de trabajo integrados. Para tener un comportamiento personalizado, superponga los detalles del flujo de trabajo adecuado.
+Puede personalizar cualquiera de los flujos de trabajo listos para usar. Para tener un comportamiento personalizado, superponga los detalles del flujo de trabajo adecuado.
 
-Por ejemplo, **[!UICONTROL Solicitud de activación]**. Este flujo de trabajo se utiliza para publicar páginas dentro de **[!UICONTROL sitios]** y se activa automáticamente cuando un autor de contenido no tiene los derechos de replicación adecuados. Consulte [Personalización de la creación de páginas: personalización del flujo de trabajo](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) de solicitud de activación para obtener más información.
+Por ejemplo, **[!UICONTROL Solicitud de Activación]**. Este flujo de trabajo se utiliza para publicar páginas dentro de **[!UICONTROL sitios]** y se activa automáticamente cuando un autor de contenido no tiene los derechos de replicación adecuados. Consulte [Personalización de la creación de páginas: Personalización del flujo de trabajo](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) de solicitudes de Activación para obtener más detalles.

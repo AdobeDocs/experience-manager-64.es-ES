@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 85%
 
 ---
 
@@ -21,7 +24,7 @@ Entre los flujos de trabajo de proyecto disponibles de fábrica se incluye lo si
 
 * **Flujo de trabajo** de aprobación de proyectos: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Inicio** de solicitud: flujo de trabajo que solicita un inicio.
-* **Solicitud de página** de aterrizaje: este flujo de trabajo solicita una página de aterrizaje.
+* **Página de aterrizaje** de solicitud: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Sesión fotográfica del producto y sesión fotográfica del producto (comercio)**: se asignan recursos a productos.
 * **Crear y traducir copia DAM y Crear copia de idioma DAM**: crea elementos binarios, metadatos y etiquetas traducidos para los recursos y las carpetas.
@@ -63,7 +66,7 @@ Este flujo de trabajo permite solicitar un manuscrito de un usuario y, a continu
 1. En el proyecto de medios, seleccione el signo **+** en el mosaico **Flujos de trabajo** y seleccione **Solicitar copia del flujo de trabajo**.
 1. Introduzca un título para el manuscrito y un breve resumen de lo que se solicita. Si fuera necesario, introduzca un recuento de palabras de destino, la prioridad de las tareas y una fecha de vencimiento.
 
-   ![chlimage_1-325](assets/chlimage_1-321.png)
+   ![chlimage_1-321](assets/chlimage_1-321.png)
 
 1. Haga clic en **Crear**. Se inicia el flujo de trabajo. La tarea aparece en el mosaico **Tareas**.
 
@@ -95,7 +98,7 @@ Este flujo de trabajo permite solicitar un lanzamiento.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Haga clic en **Crear**. Se inicia el flujo de trabajo. **El flujo de trabajo aparece en la lista** Flujos **de trabajo (haga clic en elipses**... en el mosaico **Flujos de trabajo** para acceder a esta lista).
+1. Haga clic en **Crear**. Se inicia el flujo de trabajo. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## Flujo de trabajo Solicitar página de aterrizaje {#request-landing-page-workflow}
 

@@ -1,8 +1,8 @@
 ---
 title: Actualización a AEM 6.4
 seo-title: Actualización a AEM 6.4
-description: Obtenga información sobre los conceptos básicos para actualizar una instalación de AEM anterior a AEM 6.4.
-seo-description: Obtenga información sobre los conceptos básicos para actualizar una instalación de AEM anterior a AEM 6.4.
+description: Obtenga información sobre los conceptos básicos para actualizar una instalación AEM anterior a AEM 6.4.
+seo-description: Obtenga información sobre los conceptos básicos para actualizar una instalación AEM anterior a AEM 6.4.
 uuid: aa878528-5161-4df3-9fed-cc779fb6bdbe
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -12,6 +12,9 @@ discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 3%
 
 ---
 
@@ -32,26 +35,26 @@ En esta sección tratamos la actualización de una instalación de AEM a AEM 6.4
 * [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md)
 * [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
-Para facilitar la referencia a las instancias de AEM implicadas en estos procedimientos, se utilizan los siguientes términos en todos estos artículos:
+Para facilitar la referencia a las instancias AEM involucradas en estos procedimientos, se utilizan los términos siguientes en todos estos artículos:
 
 * La instancia de *origen* es la instancia de AEM desde la que se está actualizando.
-* La instancia de *destino* es la que se está actualizando.
+* La instancia de *destinatario* es la que se está actualizando.
 
 >[!NOTE]
 >
->Como parte de los esfuerzos por mejorar la fiabilidad de las actualizaciones, AEM 6.4 ha pasado por una reestructuración completa de los repositorios. Para obtener más información sobre cómo alinearse con la nueva estructura, consulte Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md)
+>Como parte de los esfuerzos por mejorar la fiabilidad de las actualizaciones, AEM 6.4 ha sido objeto de una reestructuración general de los repositorios. Para obtener más información sobre cómo alinearse con la nueva estructura, consulte Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
 ## ¿Qué Ha Cambiado? {#what-has-changed}
 
-A continuación se indican los principales cambios de nota de las últimas versiones de AEM:
+A continuación se indican los principales cambios de nota en las últimas versiones de AEM:
 
-AEM 6.0 introdujo el nuevo repositorio Jackrabbit Oak. Los administradores de persistencia fueron reemplazados por [micros](/help/sites-deploying/recommended-deploys.md). A partir de la versión 6.1, CRX2 ya no es compatible. Es necesario ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta](/help/sites-deploying/using-crx2oak.md)de migración CRX2OAK.
+AEM 6.0 presentó el nuevo repositorio Jackrabbit Oak. Los administradores de persistencia fueron reemplazados por [micros](/help/sites-deploying/recommended-deploys.md). A partir de la versión 6.1, CRX2 ya no es compatible. Es necesario ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta](/help/sites-deploying/using-crx2oak.md)de migración CRX2OAK.
 
-Si se va a utilizar Asset Insights y se va a actualizar desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID mediante un archivo .porter JMX. En nuestras pruebas internas, se migraron 125.000 recursos en un entorno TarMK en una hora, pero sus resultados pueden variar.
+Si se va a utilizar Asset Insights y se está actualizando desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID mediante un archivo .porter JMX. En nuestras pruebas internas, se migraron 125.000 recursos en un entorno TarMK en una hora, pero los resultados pueden variar.
 
-AEM 6.3 ha introducido un nuevo formato para el `SegmentNodeStore`, que es la base de la implementación de TarMK. Si está actualizando desde una versión anterior a AEM 6.3, esto requerirá una migración del repositorio como parte de la actualización, lo que implica downtime del sistema.
+AEM 6.3 introdujo un nuevo formato para el `SegmentNodeStore`, que es la base de la implementación del TarMK. Si está actualizando desde una versión anterior a AEM 6.3, esto requerirá una migración del repositorio como parte de la actualización, lo que implica downtime del sistema.
 
-El departamento de ingeniería de Adobe calcula que esto es de unos 20 minutos. Tenga en cuenta que no será necesario volver a indexar. Además, se ha lanzado una nueva versión de la herramienta crx2oak para trabajar con el nuevo formato de repositorio.
+Adobe Engineering calcula que esto es de unos 20 minutos. Tenga en cuenta que no será necesario volver a indexar. Además, se ha lanzado una nueva versión de la herramienta crx2oak para trabajar con el nuevo formato de repositorio.
 
 **Esta migración no es necesaria si se actualiza de AEM 6.3 a AEM 6.4.**
 
@@ -61,15 +64,15 @@ Las opciones de uso de la línea de comandos de la herramienta crx2oak han sido 
 
 Las comprobaciones posteriores a la actualización también han permitido la automatización.
 
-La recolección periódica de elementos no utilizados de las revisiones y la recolección de elementos no utilizados del almacén de datos son ahora tareas de mantenimiento rutinarias que deben realizarse periódicamente. Con la introducción de AEM 6.3, Adobe admite y recomienda la limpieza de revisiones en línea. Consulte Limpieza [de revisión](/help/sites-deploying/revision-cleanup.md) para obtener información sobre cómo configurar estas tareas.
+La recolección periódica de elementos no utilizados de las revisiones y la recolección de elementos no utilizados del almacén de datos son ahora tareas de mantenimiento rutinarias que deben realizarse periódicamente. Con la introducción de AEM 6.3, Adobe apoya y recomienda la limpieza de revisiones en línea. Consulte Limpieza [de revisión](/help/sites-deploying/revision-cleanup.md) para obtener información sobre cómo configurar estas tareas.
 
-**AEM 6.4** presenta el [detector](/help/sites-deploying/pattern-detector.md) de patrones para evaluar la complejidad de la actualización a medida que comienza a planificar la actualización. 6.4 también se centra en la compatibilidad [](/help/sites-deploying/backward-compatibility.md) con versiones anteriores de las funciones. Por último, también se añaden las mejores prácticas para las actualizaciones [](/help/sites-deploying/sustainable-upgrades.md) sostenibles.
+**AEM 6.4** presenta el [detector](/help/sites-deploying/pattern-detector.md) de patrones para evaluar la complejidad de la actualización a medida que planifica el inicio para la actualización. 6.4 también se centra en la compatibilidad [](/help/sites-deploying/backward-compatibility.md) con versiones anteriores de las funciones. Por último, también se añaden las mejores prácticas para las actualizaciones [](/help/sites-deploying/sustainable-upgrades.md) sostenibles.
 
-Para obtener más información sobre los cambios que se han producido en las versiones recientes de AEM, consulte las notas de la versión completas:
+Para obtener más información sobre los cambios que se han producido en las versiones AEM recientes, consulte las notas de la versión completas:
 
-* [https://helpx.adobe.com/es/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/es/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/es/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
+* [https://helpx.adobe.com/es/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/es/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/es/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/es/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/es/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/es/experience-manager/6-4/release-notes.html)
 
 ## Información general de la actualización {#upgrade-overview}
 
@@ -79,7 +82,7 @@ La actualización de AEM es un proceso de varios pasos, a veces de varios meses.
 
 ## Flujo de actualización con mejoras de actualización a la versión 6.4 {#upgrade-overview-1}
 
-El diagrama siguiente captura el flujo general recomendado que resalta el método de actualización. Tenga en cuenta la referencia a las nuevas funciones que hemos introducido. La actualización debe comenzar con el detector de patrones (consulte [Evaluación de la complejidad de la actualización con el detector](/help/sites-deploying/pattern-detector.md)de patrones), que debería permitirle decidir la ruta que desea seguir para la compatibilidad con AEM 6.4 según los patrones del informe generado.
+El diagrama siguiente captura el flujo general recomendado que resalta el método de actualización. Tenga en cuenta la referencia a las nuevas funciones que hemos introducido. La actualización debe estar en inicio con el detector de patrones (consulte [Evaluación de la complejidad de la actualización con el detector](/help/sites-deploying/pattern-detector.md)de patrones), lo cual le permitirá decidir la ruta que desea seguir para la compatibilidad con AEM 6.4 en base a los patrones en el informe generado.
 
 En la versión 6.4 se ha centrado la atención en mantener todas las nuevas funciones compatibles con versiones anteriores, pero en los casos en que aún se observan algunos problemas de compatibilidad con versiones anteriores, el modo de compatibilidad permite aplazar temporalmente el desarrollo para mantener el código personalizado conforme con la versión 6.4. Este método le ayuda a evitar el esfuerzo de desarrollo inmediatamente después de la actualización (consulte Compatibilidad [con versiones anteriores en AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 

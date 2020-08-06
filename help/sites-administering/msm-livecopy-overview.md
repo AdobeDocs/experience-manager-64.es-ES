@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 La **Live Copy Overview** le permite:
 
-* Ver/administrar la herencia en un sitio:
+* Vista y administración de herencia en un sitio:
 
-   * Ver el árbol de modelo y la estructura de Live Copy correspondiente, junto con su estado de herencia
+   * Vista del árbol de modelo y la estructura de Live Copy correspondiente, junto con su estado de herencia
    * Cambiar el estado de herencia; por ejemplo, suspender, reanudar
-   * Ver propiedades de modelo y Live Copy
+   * Propiedades de modelo de Vista y Live Copy
 
 * Realizar acciones de implementación
 
@@ -100,7 +103,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 * [Estado de la relación](#relationship-status)
 
-   * Ver información sobre el estado y la herencia.
+   * Información de Vista sobre el estado y la herencia.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
@@ -137,7 +140,7 @@ Esta ficha proporciona información detallada sobre el estado de la relación en
 
 ### Información de Live Copy {#live-copy-information}
 
-Esta ficha le permite ver y editar la configuración de Live Copy:
+Esta ficha le permite realizar vistas y editar la configuración de Live Copy:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 

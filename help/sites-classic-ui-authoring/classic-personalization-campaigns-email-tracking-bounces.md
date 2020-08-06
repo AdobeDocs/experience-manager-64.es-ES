@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 84%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe no planea mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos por el servicio SMTP de AEM.
+>Adobe no planea mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos por AEM servicio SMTP.
 >
->La recomendación es [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)de AEM.
+>Se recomienda [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)AEM.
 
 Cuando envíe una newsletter a varios usuarios, normalmente habrá direcciones de correo electrónico inválidas en la lista. Si se envían newsletters a estas direcciones, se devolverán. AEM puede administrar el correo devuelto y dejar de enviar newsletters a dichas direcciones una vez se haya superado el contador de devoluciones. De forma predeterminada, la tasa de devolución es de 3, pero puede configurarse.
 

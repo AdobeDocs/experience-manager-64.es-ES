@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 88%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * Iluminación direccional
    * Luces focales
    * Apuntar luces 
+
    Otros tipos de iluminación se ignoran o se convierten en uno de los tipos compatibles anteriores cuando el escenario se carga en AEM 3D. Los tipos convertidos se usan cuando consulta el recurso y cuando lo procesa mediante el procesador integrado Rapid Refine. Se utilizan los tipos iluminación originales cuando se realizan operaciones de procesamiento con Maya.
 
 1. Cree un plano del fondo si es necesario y aplique un material adecuado.

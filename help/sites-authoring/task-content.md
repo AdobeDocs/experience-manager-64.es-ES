@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +56,7 @@ Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la l
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea en particular, en la Lista de tareas, toque o haga clic en la tarea y **Detalles de la tarea **abra.
+Para obtener más información sobre una tarea en particular, en la Lista Tarea, toque o haga clic en la tarea y **Detalles de Tarea **abrir.
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 

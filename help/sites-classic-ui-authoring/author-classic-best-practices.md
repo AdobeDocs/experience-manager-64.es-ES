@@ -1,6 +1,6 @@
 ---
-title: 'Prácticas recomendadas '
-seo-title: 'Prácticas recomendadas '
+title: 'Prácticas recomendadas  '
+seo-title: 'Prácticas recomendadas  '
 description: Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 seo-description: Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
 
-# Prácticas recomendadas {#best-practices}
+# Prácticas recomendadas  {#best-practices}
 
 Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
 Existe documentación sobre prácticas recomendadas en relación con las áreas siguientes:
 
 * [Assets](#assets)
-* [Sitios](#sites)
-* [Formularios](#forms)
+* [Sites](#sites)
+* [Forms](#forms)
 
 Para conocer las prácticas recomendadas sobre administración, implementación y mantenimiento o desarrollo, consulte uno de estos documentos:
 
@@ -66,10 +69,10 @@ Las prácticas recomendadas sobre Assets, incluidas la capacidad Dynamic Media y
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
-Creación: Herramientas [y entorno de](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) creación: Proporciona información general sobre cómo crear páginas.
+Creación: [entorno y herramientas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) de creación: Proporciona información general sobre cómo crear páginas.
 
-## Formularios {#forms}
+## Forms {#forms}
 
-Formularios adaptables: Prácticas [recomendadas para trabajar con formularios](/help/forms/using/adaptive-forms-best-practices.md) adaptables: describe prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
+Formularios adaptables: [Prácticas recomendadas para trabajar con formularios](/help/forms/using/adaptive-forms-best-practices.md) adaptables: describe prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
 
 HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.

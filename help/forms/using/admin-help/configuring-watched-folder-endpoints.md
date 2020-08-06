@@ -36,7 +36,7 @@ Después de configurar el servicio de carpetas vigiladas, agregue un extremo de 
 Puede crear una carpeta vigilada de las dos formas siguientes:
 
 * Al configurar la configuración de un extremo de carpeta vigilada, escriba la ruta completa al directorio principal en el cuadro Ruta y anexe el nombre de la carpeta vigilada que se va a crear, como se muestra en este ejemplo:
-   `  C:\MyPDFs\MyWatchedFolder`Dado que la carpeta MyWatchedFolder no existe, los formularios AEM intentan crearla en esa ubicación.
+   `  C:\MyPDFs\MyWatchedFolder`Como la carpeta MyWatchedFolder no existe, AEM formularios intentan crearla en esa ubicación.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un extremo de carpeta vigilado y, a continuación, escriba la ruta completa en el cuadro Ruta.
 
@@ -49,7 +49,7 @@ En Windows, si el servidor de aplicaciones se está ejecutando como un servicio,
 
 ## Encadenado de carpetas vigiladas {#chaining-together-watched-folders}
 
-Las carpetas vigiladas se pueden encadenar juntas para que el documento resultante de una carpeta vigilada sea el documento de entrada de la siguiente carpeta vigilada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta vigilada podría convertir archivos PDF a Adobe PostScript® y una segunda carpeta vigilada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure la carpeta de *resultados* de la carpeta vigilada definida por el primer punto final para que señale a la carpeta de *entrada* de la carpeta vigilada definida por el segundo punto final.
+Las carpetas vigiladas se pueden encadenar juntas para que el documento resultante de una carpeta vigilada sea el documento de entrada de la siguiente carpeta vigilada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta vigilada podría convertir archivos PDF a Adobe PostScript® y otra carpeta vigilada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure la carpeta de *resultados* de la carpeta vigilada definida por el primer punto final para que señale a la carpeta de *entrada* de la carpeta vigilada definida por el segundo punto final.
 
 El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result  (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
 
@@ -63,13 +63,13 @@ Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una 
 
 >[!NOTE]
 >
->Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos de la carpeta vigilada. Si los formularios AEM no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se invocará indefinidamente.
+>Asegúrese de que el servidor de aplicaciones ha eliminado el acceso a los archivos de la carpeta vigilada. Si AEM formularios no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se invocará indefinidamente.
 
 ## Salida de carpeta vigilada {#watched-folder-output}
 
-Cuando la entrada es una carpeta y el resultado consta de varios archivos, los formularios AEM crea una carpeta de salida con el mismo nombre que la carpeta de entrada y copia los archivos de salida en dicha carpeta. Cuando el resultado consiste en un mapa de documento que contiene un par clave-valor, como el resultado de un proceso Output, la clave se utilizará como nombre de archivo de salida.
+Cuando la entrada es una carpeta y el resultado consta de varios archivos, AEM formularios crea una carpeta de salida con el mismo nombre que la carpeta de entrada y copia los archivos de salida en dicha carpeta. Cuando el resultado consiste en un mapa de documento que contiene un par clave-valor, como el resultado de un proceso Output, la clave se utilizará como nombre de archivo de salida.
 
-Los nombres de archivo de salida que resultan de un proceso de extremo no pueden contener caracteres que no sean letras, números y un punto (.) antes de la extensión del archivo. Los formularios AEM convierten otros caracteres en sus valores hexadecimales.
+Los nombres de archivo de salida que resultan de un proceso de extremo no pueden contener caracteres que no sean letras, números y un punto (.) antes de la extensión del archivo. AEM formularios convierte otros caracteres a sus valores hexadecimales.
 
 Las aplicaciones cliente recogen los documentos resultantes de la carpeta de resultados de la carpeta controlada. Los errores de proceso se registran en la carpeta de errores de la carpeta controlada.
 
@@ -129,7 +129,7 @@ Utilice la siguiente configuración para configurar un extremo de carpeta vigila
 
 **Repetir recuento:** Número de veces que la carpeta vigilada explora la carpeta o el directorio. Un valor de -1 indica la digitalización indefinida. El valor predeterminado es -1.
 
-**Acelerador:** Cuando se selecciona esta opción, se limita el número de trabajos de carpeta observados que procesan los formularios AEM en un momento dado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. (Consulte Acerca de la limitación).
+**Acelerador:** Cuando se selecciona esta opción, se limita el número de trabajos de carpeta observados que se procesan AEM formularios en un momento dado. El número máximo de trabajos viene determinado por el valor Tamaño de lote. (Consulte Acerca de la limitación).
 
 **Nombre de usuario:** (Obligatorio) El nombre de usuario que se utiliza al invocar un servicio de destinatario desde la carpeta controlada. El valor predeterminado es SuperAdmin.
 
@@ -347,7 +347,7 @@ Cuando la carpeta de inspección no puede procesar los archivos de origen en la 
    * En Aplicaciones y servicios, cambie el parámetro Incluir patrón de archivo para el extremo de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, enter `NOMATCH`).
    * Suspenda el proceso de creación de nuevos archivos de entrada.
 
-   Espere hasta que los formularios de AEM recuperen y procesen todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que AEM formularios recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera a que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
 1. Determinar qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y aún quedan archivos sin procesar en la carpeta de escenario, vaya al paso siguiente.
 
@@ -419,7 +419,7 @@ Para todos los servicios, debe ajustar el tamaño del lote y el intervalo de rep
 
 * Para obtener el mejor rendimiento al procesar formularios con códigos de barras (archivos pequeños), introduzca `10` Tamaño de lote y `2` Intervalo de repetición.
 * Cuando se colocan muchos archivos en la carpeta de entrada, pueden producirse errores con archivos ocultos llamados *thumbs.db* . Por lo tanto, se recomienda configurar el Patrón de archivos de inclusión para los archivos de inclusión con el mismo valor especificado para la variable de entrada (por ejemplo, `*.tiff`). Esto evita que la carpeta vigilada procese los archivos de base de datos.
-* Normalmente, un valor de tamaño de lote `5` e intervalo de repetición de `2` es suficiente, ya que el servicio de formularios con códigos de barras tarda aproximadamente 0,5 segundos en procesar un código de barras.
+* Un valor de tamaño de lote `5` y intervalo de repetición de `2` es normalmente suficiente, ya que el servicio Forms con códigos de barras suele tardar unos 0,5 segundos en procesar un código de barras.
 * La carpeta vigilada no espera a que el motor de proceso finalice el trabajo antes de que recopile nuevos archivos o carpetas. Sigue analizando la carpeta vigilada e invocando el servicio de destinatario. Este comportamiento puede sobrecargar el motor, causando problemas de recursos y tiempos de espera. Asegúrese de utilizar el intervalo de repetición y el tamaño del lote para reducir la entrada de la carpeta vigilada. Puede aumentar el intervalo de repetición y reducir el tamaño del lote si existen más carpetas vigiladas o habilitar la limitación en el extremo. Para obtener información sobre la limitación, consulte [Acerca de la limitación](configuring-watched-folder-endpoints.md#about-throttling).
 * La carpeta vigilada suplantará al usuario especificado en el nombre de usuario y el nombre de dominio. La carpeta vigilada invoca el servicio como este usuario si se invoca directamente o si el proceso es de corta duración. Para un proceso de larga duración, el proceso se invoca con el contexto del sistema. Los administradores pueden establecer directivas del sistema operativo para la carpeta vigilada a fin de determinar a qué usuario permitir o denegar el acceso.
 * Utilice patrones de archivo para organizar los resultados, las fallas y la conservación de carpetas. (Consulte [Acerca de los patrones](configuring-watched-folder-endpoints.md#about-file-patterns)de archivo.)

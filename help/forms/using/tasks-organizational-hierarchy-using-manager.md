@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
 
 # Administración de tareas en una jerarquía organizativa mediante la Vista del administrador {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-En el espacio de trabajo de AEM Forms, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar varias acciones en ellas. Las tareas están disponibles en la ficha Tareas pendientes del espacio de trabajo de AEM Forms. Las acciones admitidas en las tareas de los informes directos son:
+En el espacio de trabajo de AEM Forms, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la ficha Tareas pendientes del espacio de trabajo de AEM Forms. Las acciones admitidas en las tareas de los informes directos son:
 
 **Reenviar** una tarea desde un informe directo a cualquier usuario.
 
@@ -29,8 +32,8 @@ En el espacio de trabajo de AEM Forms, los administradores ahora pueden acceder 
 
 AEM Forms restringe el acceso de los usuarios únicamente a aquellas tareas para las que el usuario tiene control de acceso (ACL). Esta comprobación garantiza que un usuario solo puede recuperar las tareas en las que tiene permisos de acceso. Mediante el uso de implementaciones y servicios Web de terceros para definir la jerarquía, una organización puede personalizar la definición de administrador y dirigir informes para adaptarlos a sus necesidades.
 
-1. Crear un DSC. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para AEM Forms&quot; en la guía [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
-1. En DSC, defina un nuevo SPI para la administración de jerarquías a fin de definir jerarquías e informes directos dentro de los usuarios de AEM Forms. A continuación se muestra un fragmento de código Java™ de muestra.
+1. Crear un DSC. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para formularios AEM&quot; en la guía [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. En DSC, defina un nuevo SPI para la administración de jerarquías a fin de definir la jerarquía y los informes directos dentro de los usuarios de AEM Forms. A continuación se muestra un fragmento de código Java™ de muestra.
 
    ```as3
    public class MyHierarchyMgmtService 

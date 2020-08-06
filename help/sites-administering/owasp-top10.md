@@ -38,7 +38,7 @@ XSS es una prioridad principal durante las pruebas y el desarrollo, y cualquier 
 
 ## 3. Autenticación y administración de sesiones dañadas {#broken-authentication-and-session-management}
 
-AEM utiliza técnicas de autenticación sólidas y probadas, basadas en [Apache Jackrabbit](https://jackrabbit.apache.org/) y [Apache Sling](https://sling.apache.org/). Las sesiones HTTP/explorador no se utilizan en AEM.
+AEM utiliza técnicas de autenticación de sonido y comprobadas, basándose en [Apache Jackrabbit](https://jackrabbit.apache.org/) y [Apache Sling](https://sling.apache.org/). Las sesiones HTTP/explorador no se utilizan en AEM.
 
 ## 4. Referencias de objeto directo inseguras {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ Todo acceso a los objetos de datos está mediado por el repositorio y, por lo ta
 
 ## 5. Falsificación de solicitudes entre sitios (CSRF) {#cross-site-request-forgery-csrf}
 
-La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyección automática de un token criptográfico en todos los formularios y solicitudes AJAX y la verificación de este token en el servidor para cada POST.
+La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyección automática de un token criptográfico en todos los formularios y solicitudes de AJAX y la verificación de este token en el servidor para cada POST.
 
-Además, AEM incluye un filtro basado en encabezados de remitente del reenvío, que se puede configurar para *permitir* solosolicitudes POST de hosts específicos (definidas en una lista).
+Además, AEM incluye un filtro basado en encabezados de remitente del reenvío, que se puede configurar para *permitir* solosolicitudes de POST de hosts específicos (definidas en una lista).
 
 ## 6. Error de configuración de seguridad {#security-misconfiguration}
 
-Es imposible garantizar que todo el software esté siempre correctamente configurado. Sin embargo, nos esforzamos por brindar la mayor orientación posible y hacer la configuración lo más simple posible. Además, AEM incluye comprobaciones de estado de seguridad [integradas](/help/sites-administering/operations-dashboard.md) que le ayudan a supervisar la configuración de seguridad de un vistazo.
+Es imposible garantizar que todo el software esté siempre correctamente configurado. Sin embargo, nos esforzamos por brindar la mayor orientación posible y hacer la configuración lo más simple posible. Además, AEM incluye comprobaciones de seguridad [integradas](/help/sites-administering/operations-dashboard.md) que le ayudan a supervisar la configuración de seguridad de un vistazo.
 
 Revise la lista [de comprobación de](/help/sites-administering/security-checklist.md) seguridad para obtener más información que le proporcione instrucciones de refuerzo paso a paso.
 

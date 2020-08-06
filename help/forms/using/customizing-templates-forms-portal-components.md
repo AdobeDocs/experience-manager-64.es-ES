@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
 
 1. Cree un nodo sling:Folder en */apps *
 
-   Agregue una propiedad &quot;fpContentType&quot;. Especifique los valores adecuados para la propiedad en función del componente para el que esté definiendo la plantilla personalizada.
+   Añada una propiedad &quot;fpContentType&quot;. Especifique los valores adecuados para la propiedad en función del componente para el que esté definiendo la plantilla personalizada.
 
    * Componente Búsqueda y listado: &quot;/libs/fd/fp/formTemplate&quot;
    * Componente Borradores y envíos:
@@ -42,10 +45,11 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
       * Sección Borradores: /libs/fd/fp/DraftTemplate
       * Sección de Envíos: /libs/fd/fp/submitTemplate
    * Componente de vínculo: /libs/fd/fp/linkTemplate
-   Agregue un título que desee mostrar al seleccionar plantillas de diseño.
+
+   Añada un título que desee que se muestre al seleccionar plantillas de diseño.
 
    *Nota: El título puede ser diferente del nombre de nodo de sling:Folder que ha creado. *
-   *La siguiente imagen muestra la configuración del componente Buscar y listado.* ![Creación de un sling:Folder](assets/1-3.png)
+   *La siguiente imagen muestra la configuración del componente Buscar y listado.* ![Creación de una sling:Folder](assets/1-3.png)
 
 1. Cree un archivo template.html en esta carpeta para que sirva de plantilla personalizada.
 1. Escriba la plantilla personalizada y utilice los metadatos personalizados como se describe a continuación.
@@ -80,7 +84,7 @@ Forms Portal proporciona una sintaxis para que los marcadores de posición muest
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repetible** en **true**.
 
-*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-container&quot;, funciona como un elemento contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **de datos repetitivos** presente en el elemento Div tiene el valor **true**.
+*En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. La primera, con la clase CSS &quot;__FP_boxes-contenedor&quot;, funciona como un elemento de contenedor para los formularios que se muestran. El segundo, con la clase CSS &quot;__FP_boxes&quot;, es una plantilla para las entidades básicas, en este caso un formulario. El atributo **de datos repetitivos** presente en el elemento Div tiene el valor **true**.
 
 Cada marcador de posición tiene un conjunto exclusivo de metadatos OTB. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la propiedad **** $metadata_prop en el lugar.
 
@@ -92,7 +96,7 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 
 ### Componente Búsqueda y listado {#search-amp-lister-component}
 
-* **** Título: Título del formulario
+* **Título:** Título del formulario
 * **name**: Nombre del formulario (en su mayoría es el mismo que el título)
 * **descripción**: Descripción del formulario
 * **formUrl**: URL para procesar el formulario como HTML
@@ -106,7 +110,7 @@ Varios componentes de Forms Portal proporcionan conjuntos exclusivos de metadato
 
 Compatibilidad con la localización, clasificación y uso de las propiedades de configuración en la interfaz de usuario (solo Search &amp; Lister):
 
-1. **Asistencia** para la localización: Para localizar cualquier texto estático, utilice el atributo **${localize-***YOUR_TEXT***}** y haga que el valor localizado esté disponible, si no existe ya.
+1. **Compatibilidad** con Localizaciones: Para localizar cualquier texto estático, utilice el atributo **${localize-***YOUR_TEXT***}** y haga que el valor localizado esté disponible, si no existe ya.
 
    *En el ejemplo analizado, los atributos ${localize-Apply} y ${localize-Download} se utilizan para localizar el texto Aplicar y Descargar.*
 
@@ -118,9 +122,9 @@ Compatibilidad con la localización, clasificación y uso de las propiedades de 
 
 ### Componente de vínculo {#link-component}
 
-* **** Título: Título del formulario
+* **Título:** Título del formulario
 * **formUrl**: URL para procesar el formulario como HTML
-* **target**: Atributo objetivo del vínculo. Los valores válidos son &quot;_blank&quot; y &quot;_self&quot;.
+* **destinatario**: Destinatario del vínculo. Los valores válidos son &quot;_blank&quot; y &quot;_self&quot;.
 * **linkText**: Rótulo de vínculo
 
 ### Componente Borradores y envíos {#drafts-amp-submissions-component}
@@ -147,24 +151,24 @@ Compatibilidad con la localización, clasificación y uso de las propiedades de 
 
 ![Nodo Borradores y envío](assets/raw-image-with-index.png)
 
-**A**. Elemento contenedor
+**A**. Elemento Contenedor
 
-**** B. metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
+**B.** metadatos de &quot;ruta&quot; con una jerarquía fija para obtener la miniatura almacenada para cada formulario.
 
 **C.** Atributo repetible de datos utilizado para la sección de plantilla para cada formulario
 
-**** D. Para localizar la cadena &quot;Aplicar&quot;
+**D.** Para localizar la cadena &quot;Aplicar&quot;
 
-**** E. Uso de la propiedad de configuración pdfLinkText
+**E.** Uso de la propiedad de configuración pdfLinkText
 
-**** F. Uso de los metadatos &quot;pdfUrl&quot;
+**F.** Uso de los metadatos &quot;pdfUrl&quot;
 
 ## Sugerencias, trucos y problemas conocidos {#tips-tricks-and-known-issues}
 
 1. No utilice comillas simples (&#39;) en ninguna plantilla personalizada.
 1. Para metadatos personalizados, almacene esta propiedad únicamente en el nodo **jcr:content/metadata** . Si lo almacena en cualquier otro lugar, Forms Portal no puede mostrar los metadatos.
 1. Asegúrese de que el nombre de los metadatos personalizados o los metadatos existentes no incluya dos puntos (:). Si lo hace, no puede mostrarlo en la interfaz de usuario.
-1. **los datos repetibles** no tienen importancia para un componente **de vínculo** . Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente Vínculo.
+1. **los datos repetibles** no tienen importancia para un componente **de vínculo** . Adobe recomienda evitar el uso de esta propiedad en la plantilla de un componente de vínculo.
 
 ## Artículos relacionados
 

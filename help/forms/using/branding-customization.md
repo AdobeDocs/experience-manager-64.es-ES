@@ -1,8 +1,8 @@
 ---
 title: Personalización de promoción de la marca
 seo-title: Personalización de promoción de la marca
-description: Personalice el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto y una presentación distintos específicos de la organización.
-seo-description: Personalice el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto y una presentación distintos específicos de la organización.
+description: Personalice el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto específico de la organización.
+seo-description: Personalice el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto específico de la organización.
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 2%
 
 ---
 
 
 # Personalización de promoción de la marca {#branding-customization}
 
-Puede personalizar el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para que la aplicación de AEM Forms tenga un aspecto específico de la organización. Por ejemplo, puede cambiar las imágenes para utilizar logotipos de su organización. La aplicación de AEM Forms admite las siguientes personalizaciones:
+Puede personalizar el icono de la aplicación, el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto específico de la organización. Por ejemplo, puede cambiar las imágenes para utilizar logotipos de su organización. La aplicación de AEM Forms admite las siguientes personalizaciones:
 
 * Personalización del icono de la aplicación y las imágenes de inicio
 * Personalización del nombre de la aplicación
@@ -42,6 +45,7 @@ Siga estos pasos para personalizar el icono predeterminado de la aplicación y l
 
    * Para vertical: `Default-Portrait~ipad.png` y `Default-Portrait@2x~ipad.png`
    * Para horizontal: `Default-Landscape~ipad.png` y `Default-Landscape@2x~ipad.png`
+
    Cargue los archivos en el proyecto Capturar para reemplazar los archivos existentes en el proyecto.
 
    >[!NOTE]
@@ -63,6 +67,7 @@ Siga estos pasos para personalizar el icono predeterminado de la aplicación y l
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
+
    >[!NOTE]
    >
    >Asegúrese de que el nombre y la resolución de la imagen coinciden con la imagen que reemplaza en el proyecto.
@@ -173,7 +178,7 @@ Asegúrese de que tiene las siguientes imágenes:
 1. Vaya a la `MWSWindows\www\wsmobile\images`carpeta.
 1. Para cambiar el logotipo, reemplace el `LC-logo.png` archivo predeterminado por el `LC-logo.png` archivo personalizado.
 1. Para cambiar el fondo, reemplace el `Landing_bg.jpeg` archivo predeterminado por el `Landing_bg.jpeg`archivo personalizado.
-1. Cree y ejecute la aplicación de AEM Forms en el dispositivo Windows.
+1. Cree y ejecute aplicaciones de AEM Forms en dispositivos Windows.
 
 ## Personalización del logotipo en el menú de la aplicación {#customizing_images_on_the_login_page-1}
 
@@ -220,4 +225,4 @@ Asegúrese de que tiene la siguiente imagen:
 
 1. Vaya a la `MWSWindows\www\wsmobile\images`carpeta.
 1. Para cambiar el logotipo, reemplace el `aem_icon.png` archivo predeterminado por el `aem_icon.png` archivo personalizado.
-1. Cree y ejecute la aplicación de AEM Forms en el dispositivo Windows.
+1. Cree y ejecute aplicaciones de AEM Forms en dispositivos Windows.

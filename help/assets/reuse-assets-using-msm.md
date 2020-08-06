@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # Reutilización de recursos con MSM para recursos {#reuse-assets-using-msm-for-assets}
 
-La funcionalidad Multi Site Manager (MSM) en Adobe Experience Manager (AEM) permite a los usuarios reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que la funcionalidad MSM para recursos. Con MSM para recursos, puede:
+La funcionalidad Multi Site Manager (MSM) en Adobe Experience Manager (AEM) permite a los usuarios reutilizar contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que la funcionalidad MSM para recursos. Con MSM para recursos, puede:
 
 * Cree recursos una vez y, a continuación, haga copias de estos recursos para reutilizarlos en otras áreas del sitio.
 * Mantenga varias copias en sincronización y actualice la copia primaria original una vez para insertar los cambios en las copias secundarias.
@@ -65,7 +65,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus copias activa
 Para crear una Live Copy desde uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
 
 * **Método 1**: Seleccione los recursos de origen y haga clic en **[!UICONTROL Crear > Live Copy]** en la barra de herramientas de la parte superior.
-* **Método 2**: En la interfaz de usuario de AEM, haga clic en **[!UICONTROL Crear > Live Copy]** desde la esquina superior derecha de la interfaz.
+* **Método 2**: En AEM interfaz de usuario, haga clic en **[!UICONTROL Crear > Live Copy]** desde la esquina superior derecha de la interfaz.
 
 Puede crear copias activas de un recurso o de una carpeta a la vez. Puede crear copias en vivo que se deriven de un recurso o de una carpeta que sea una copia en vivo.
 
@@ -74,15 +74,15 @@ Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al inten
 Para crear copias en vivo con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Creación de una Live Copy desde la interfaz de AEM](assets/lc_create1.png)
+   ![Crear Live Copy desde AEM interfaz](assets/lc_create1.png)
 1. Seleccione el recurso o la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione el título y el nombre. Los recursos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede optar por incluir o excluir elementos secundarios.
 1. Seleccione una configuración de despliegue. Haga clic en **[!UICONTROL Crear]**.
 
 Para crear copias en vivo con el segundo método, siga estos pasos:
 
-1. En la interfaz de AEM, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Creación de una Live Copy desde la interfaz de AEM](assets/lc_create2.png)
+1. En AEM interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
+   ![Crear Live Copy desde AEM interfaz](assets/lc_create2.png)
 1. Seleccione el recurso o la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione el título y el nombre. Los recursos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede optar por incluir o excluir elementos secundarios.
@@ -115,7 +115,7 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 
 ### Información y estados de todas las copias activas de una carpeta {#information-status-of-all-lcs-of-folder}
 
-AEM proporciona una consola para comprobar las estatuas de todas las copias activas de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
+AEM proporciona una consola para comprobar las estatuas de todas las copias en vivo de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
 
 1. Seleccione una carpeta de origen. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice la combinación de teclas `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
@@ -132,7 +132,7 @@ AEM proporciona una consola para comprobar las estatuas de todas las copias acti
 Para un recurso o una carpeta de origen, puede ver la siguiente información y realizar las siguientes acciones directamente desde el carril Referencias:
 
 * Consulte las rutas de las copias en vivo.
-* Abra o revele una copia concreta en directo en la interfaz de usuario de AEM.
+* Abra o revele una copia concreta en directo en AEM interfaz de usuario.
 * Sincronice las actualizaciones con una Live Copy específica.
 * Suspenda la relación o cambie la configuración de implementación para una Live Copy específica.
 * Acceda a la consola de información general de Live Copy.
@@ -150,7 +150,7 @@ Para una Live Copy específica, haga clic en **[!UICONTROL Editar Live Copy]** p
 Para una carpeta o un recurso de Live Copy, puede ver la siguiente información y realizar las siguientes acciones directamente desde el carril Referencias:
 
 * Consulte la ruta de su origen.
-* Abra o revele una copia concreta en directo en la interfaz de usuario de AEM.
+* Abra o revele una copia concreta en directo en AEM interfaz de usuario.
 * Despliegue las actualizaciones.
 
 Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
@@ -183,7 +183,7 @@ También puede iniciar una acción de despliegue desde el carril [!UICONTROL Ref
 
 Una acción de sincronización extrae las modificaciones de un origen únicamente a la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas tras cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde se encuentra la interfaz de AEM | Cuándo y por qué usar | Cómo usar |
+| Dónde en AEM interfaz | Cuándo y por qué usar | Cómo usar |
 |---|---|---|
 | [!UICONTROL Barra de referencias] | Sincronice rápidamente cuando ya haya seleccionado el origen. | Consulte Acciones [rápidas desde el carril Referencias para ver el origen](#quick-actions-from-references-rail-for-source) |
 | Barra de herramientas de la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronización de una Live Copy](#synchronize-live-copy) |
@@ -221,7 +221,7 @@ Puede deshacer todas las modificaciones locales y revertir el recurso al estado 
 
 ## Eliminar la relación en directo {#remove-live-relationship}
 
-Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Desasociar. La Live Copy se convierte en un recurso o una carpeta independiente después de desconectarla. Se muestra como un nuevo recurso en la interfaz de AEM, inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
+Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Desasociar. La Live Copy se convierte en un recurso o una carpeta independiente después de desconectarla. Se muestra como un nuevo recurso en AEM interfaz, inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
 
 1. Seleccione una carpeta o un recurso de Live Copy. Click **[!UICONTROL Properties]** from the toolbar. Como alternativa, utilice el método abreviado de teclado p.
 1. Click **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Separar]** en el cuadro de diálogo presentado.
@@ -244,7 +244,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
 ## Ampliar MSM para recursos {#extend-msm-for-assets}
 
-AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para Recursos, la extensión funciona igual que con MSM para el sitio. Para obtener más información, consulte [Ampliación del MSM](../sites-developing/extending-msm.md) y las secciones siguientes para obtener información sobre tareas específicas:
+AEM le permite ampliar la funcionalidad mediante las API de Java MSM. Para Recursos, la extensión funciona igual que con MSM para el sitio. Para obtener más información, consulte [Ampliación del MSM](../sites-developing/extending-msm.md) y las secciones siguientes para obtener información sobre tareas específicas:
 
 * [Información general sobre las API](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Crear una nueva acción de sincronización](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -260,7 +260,7 @@ AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para Re
 
 ## Efectos de las tareas de gestión de activos en las copias en vivo {#impact-of-asset-management-tasks-on-live-copies}
 
-Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en AEM tienen un impacto específico en las copias en directo.
+Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de activos de AEM tienen un impacto específico en las copias en vivo.
 
 * Al copiar una Live Copy, se crea un recurso de Live Copy con el mismo origen que la primera Live Copy.
 * Al mover un origen o su Live Copy, se mantiene la relación activa.

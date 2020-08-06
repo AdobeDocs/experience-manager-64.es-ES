@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Cuando los usuarios hacen clic en los vínculos de las páginas del sitio web, puede capturar la información relacionada en Adobe Analytics. Por ejemplo: utilice el seguimiento de vínculos para conocer la forma en que los usuarios interactúan con el sitio, rastrear las descargas de archivos y rastrear los vínculos de salida.
 
-## Configuración del seguimiento de vínculos para un Analytics Framework de Adobe {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Configuración del seguimiento de vínculos para un Adobe Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Con **Navegación**, vaya a través de **Implementación**, **Cloud Service** a la sección Analytics **de** Adobe.
+1. Con **Navegación**, vaya a través de **Implementación**, **Cloud Services** a la sección **Adobe Analytics** .
 
-1. Con **Mostrar configuraciones**, abra el marco de trabajo requerido de Adobe Analytics.
+1. Con **Mostrar configuraciones**, abra el marco de trabajo de Adobe Analytics requerido.
 1. Expanda la sección Configuración **de seguimiento de** vínculos y configúrela según sea necesario (esta página proporciona más detalles):
 
    ![aa-08](assets/aa-08.png)
@@ -60,7 +60,7 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 
 Para habilitar el seguimiento de descargas para el marco de trabajo de Adobe Analytics:
 
-1. [Abra el marco de trabajo de Adobe Analytics y expanda la sección](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuración del seguimiento de vínculos.
+1. [Abra el marco de Adobe Analytics y expanda la sección](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuración del seguimiento de vínculos.
 1. Habilite **Rastrear descargas**.
 1. En el cuadro **Descargar tipos** de archivo, escriba las extensiones de nombre de archivo para los tipos de archivos que desee rastrear.
 
@@ -68,9 +68,9 @@ Para habilitar el seguimiento de descargas para el marco de trabajo de Adobe Ana
 
 Puede rastrear los clics de los vínculos externos (vínculos de salida) en las páginas.
 
-Para rastrear vínculos externos para su marco de trabajo de Adobe Analytics:
+Para rastrear vínculos externos para su entorno de Adobe Analytics:
 
-1. [Abra el marco de trabajo de Adobe Analytics y expanda la sección Configuración **de seguimiento de** vínculos](#configuring-link-tracking-for-an-adobe-analytics-framework).
+1. [Abra el marco de Adobe Analytics y expanda la sección Configuración **de seguimiento de** vínculos](#configuring-link-tracking-for-an-adobe-analytics-framework).
 1. Configure las siguientes propiedades según sus necesidades.
 
 Propiedades para el seguimiento cuando se hace clic en vínculos externos:
@@ -106,24 +106,24 @@ s.linkLeaveQueryString= false;
 
 ## Envío de datos de variables con clics en vínculos {#sending-variable-data-with-link-clicks}
 
-Puede configurar AEM para que envíe datos de variables y eventos a Adobe Analytics cuando un usuario haga clic en un vínculo. Las propiedades de configuración **de seguimiento de** vínculos le permiten especificar los eventos y variables de Adobe Analytics para rastrear cuándo se producen clics en los vínculos.
+Puede configurar AEM para enviar datos de variables y eventos a Adobe Analytics cuando un usuario haga clic en un vínculo. Las propiedades de configuración **de seguimiento de** vínculos le permiten especificar las eventos y variables de Adobe Analytics para rastrear cuándo se producen clics en los vínculos.
 
 Las asignaciones de la estructura determinan los valores de evento y variable. Puede asignar variables de Adobe Analytics a las variables de los componentes de contenido que almacenan los datos que desea rastrear cuando se hace clic en los vínculos.
 
 Para enviar datos de variables con clics en vínculos:
 
-1. [Abra el marco de trabajo de Adobe Analytics y expanda la sección](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuración del seguimiento de vínculos.
+1. [Abra el marco de Adobe Analytics y expanda la sección](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuración del seguimiento de vínculos.
 1. Configure las siguientes propiedades según sus necesidades.
 
 Propiedades para enviar datos de variables con clics en vínculos:
 
-* **Eventos** de seguimiento de vínculos Introduzca las variables de evento de Analytics de Adobe que desea utilizar para contar los clics en vínculos.
+* **Eventos** de seguimiento de vínculos Introduzca las variables de evento de Adobe Analytics que desea utilizar para contar los clics en vínculos.
 
    Separe los nombres de varias variables con una coma.
 
    El valor predeterminado de `None` no provoca el seguimiento de eventos.
 
-* **Vars** de seguimiento de vínculos Introduzca las variables de Analytics de Adobe que desea enviar a Adobe Analytics cuando se haga clic en los vínculos. Separe los nombres de varias variables con una coma.
+* **Vars** de seguimiento de vínculos Introduzca las variables de Adobe Analytics que desea enviar a Adobe Analytics cuando se haga clic en los vínculos. Separe los nombres de varias variables con una coma.
 
    El valor predeterminado de `None` hace que no se envíen datos de variables.
 
@@ -151,18 +151,18 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
    >
    >Si no es así, debería tener su propio componente expuesto allí (definiendo un subnodo de análisis en su componente de página).
 
-   Configure la asignación según la tabla siguiente, arrastrando la variable Analytics (SiteCatalyst) desde el panel izquierdo:
+   Configure la asignación según la tabla siguiente, arrastrando la variable de Analytics (SiteCatalyst) desde el panel izquierdo:
 
 <table> 
  <tbody> 
   <tr> 
    <th>CQ Variable<br /> </th> 
    <th>Entrada en el explorador de variables<br /> </th> 
-   <th>Adobe Analytics Variable</th> 
+   <th>Variable Adobe Analytics</th> 
   </tr> 
   <tr> 
    <td>pagedata.title</td> 
-   <td>eVar personalizada 1 (eVar1)</td> 
+   <td>eVar personalizado 1 (eVar 1)</td> 
    <td>eVar1</td> 
   </tr> 
   <tr> 
@@ -173,23 +173,23 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
  </tbody> 
 </table>
 
-1. Arrastre el componente Buscar al área de asignaciones del marco. El componente Buscar pertenece al grupo de componentes General de la barra de tareas. Configure la asignación según la tabla siguiente, arrastrando la variable Analytics (SiteCatalyst) desde el panel izquierdo:
+1. Arrastre el componente Buscar al área de asignaciones del marco. El componente Buscar pertenece al grupo de componentes General de la barra de tareas. Configure la asignación según la tabla siguiente, arrastrando la variable de Analytics (SiteCatalyst) desde el panel izquierdo:
 
 <table> 
  <tbody> 
   <tr> 
    <th>CQ Variable<br /> </th> 
    <th>Entrada en el explorador de variables</th> 
-   <th>Adobe Analytics Variable</th> 
+   <th>Variable Adobe Analytics</th> 
   </tr> 
   <tr> 
    <td>eventdata.keyword</td> 
-   <td>eVar personalizada 2 (eVar2)</td> 
+   <td>eVar personalizado 2 (eVar 2)</td> 
    <td>eVar2</td> 
   </tr> 
   <tr> 
    <td>eventdata.results</td> 
-   <td>eVar personalizada 3 (eVar3)</td> 
+   <td>eVar personalizado 3 (eVar 3)</td> 
    <td>eVar3</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
 
 1. Cambie al modo **de** Previsualización y haga clic en el vínculo.
 
-La llamada realizada tendrá este aspecto cuando se visualice con el depurador de Adobe Marketing Cloud:
+La llamada realizada tendrá este aspecto cuando se visualice con Adobe Marketing Cloud Debugger:
 
 ![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -265,9 +265,9 @@ Para habilitar el seguimiento de vínculos ad-hoc debe:
 
 ### Habilitación del seguimiento de vínculos ad-hoc {#enabling-ad-hoc-link-tracking}
 
-Configure el marco de trabajo de Adobe Analytics para habilitar el seguimiento de vínculos ad-hoc.
+Configure el marco de Adobe Analytics para habilitar el seguimiento de vínculos ad-hoc.
 
-1. Abra el marco de trabajo de Adobe Analytics y expanda la sección Configuración **del seguimiento de** vínculos.
+1. Abra el marco de Adobe Analytics y expanda la sección Configuración **de seguimiento de** vínculos.
 
 1. Habilite el seguimiento **de vínculos específicos**.
 
@@ -330,20 +330,22 @@ Utilice el procedimiento siguiente para configurar el seguimiento de vínculos p
 
    ![aa-17](assets/aa-17.png)
 
-1. Active el seguimiento **de vínculos** personalizados para anular la configuración del seguimiento de vínculos del marco de trabajo de Adobe Analytics y habilitar el seguimiento de vínculos para el vínculo actual.
+1. Habilite el seguimiento de vínculos **personalizados** para anular la configuración del seguimiento de vínculos del marco de Adobe Analytics y habilitar el seguimiento de vínculos para el vínculo actual.
 
-1. (Opcional) Para rastrear eventos con el clic en el vínculo, agregue los nombres de eventos de Adobe Analytics en el campo **Incluir variables** de Analytics de Adobe. Separe el nombre de varios eventos con comas, por ejemplo
+1. (Opcional) Para rastrear eventos con el clic en el vínculo, agregue los nombres de eventos de Adobe Analytics en el campo **Incluir variables** de Adobe Analytics. Separe el nombre de varios eventos con comas, por ejemplo
 
    `event1, event22`.
 
-1. (Opcional) Para rastrear datos de variables con el clic en el vínculo, agregue variables de Adobe Analytics en el campo **Incluir variables** de Analytics de Adobe. Utilice cualquiera de los formatos siguientes:
+1. (Opcional) Para rastrear datos de variables con el clic en el vínculo, agregue variables de Adobe Analytics en el campo **Incluir variables** de Adobe Analytics. Utilice cualquiera de los formatos siguientes:
 
    * `*<Variable-name>*: *<Dynamic Value>*`
    * `*<Variable-name>*: *‘CONSTANT’*`
+
    Los siguientes ejemplos ilustran cada formato:
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    Separe varios valores con una coma.
 
 1. Seleccione **Aceptar**.

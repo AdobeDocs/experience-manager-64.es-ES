@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 99%
 
 ---
 
@@ -67,6 +70,7 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
    * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar lanzamiento**. 
+
    Las páginas de origen se mostrarán.
 
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
@@ -87,6 +91,7 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
    * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar propiedades**. 
+
    Se mostrarán los detalles.
 
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.

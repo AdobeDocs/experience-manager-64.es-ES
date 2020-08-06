@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 A medida que Granite incorpora la implementación del repositorio CRX de la especificación de API de JCR, cuenta con su propia administración de usuarios y grupos.
 
-Estas cuentas son la base subyacente de las cuentas [de](/help/sites-administering/security.md) AEM y cualquier cambio de cuenta realizado con la administración de Granite se reflejará si se accede a las cuentas desde la consola [Usuarios de](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (p. ej. `http://localhost:4502/useradmin`). Desde la consola Usuarios de AEM también puede administrar los privilegios y otros detalles específicos de AEM.
+Estas cuentas son la base subyacente de las cuentas [de](/help/sites-administering/security.md) AEM y cualquier cambio de cuenta realizado con la administración Granite se reflejará si se accede a las cuentas desde la consola [Usuarios de](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (p. ej. `http://localhost:4502/useradmin`). Desde la consola Usuarios de AEM también puede administrar los privilegios y otros AEM específicos.
 
 Las consolas Granite de administración de usuarios y grupos están disponibles desde la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**de la IU táctil:
 
@@ -31,7 +34,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   La consola **Usuarios** muestra:
+   listas de la consola **Usuarios** :
 
    * el nombre de usuario
    * nombre de inicio de sesión del usuario (nombre de cuenta)
@@ -41,7 +44,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   La consola **Grupos** enumera:
+   listas de la consola **Grupos** :
 
    * el nombre del grupo
    * la descripción del grupo
@@ -49,9 +52,9 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 ## Administración de usuarios {#user-administration}
 
-### Adición de un nuevo usuario {#adding-a-new-user}
+### Añadir un nuevo usuario {#adding-a-new-user}
 
-1. Utilice el icono **Agregar usuario** :
+1. Utilice el icono **Añadir usuario** :
 
    ![](do-not-localize/chlimage_1-1.png)
 
@@ -89,7 +92,8 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
    * **Acerca de**
    * **Configuración de la cuenta**
 
-      * **Estado** Puede marcar la cuenta como **activa** o **inactiva**.
+      * **Estado** Puede marcar la cuenta como 
+**activo** o **inactivo**.
    * **Fotografía**
 
       Aquí puede cargar una foto para usarla como avatar.
@@ -104,7 +108,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    * **Grupos**
 
-      Una lista de los grupos a los que pertenece actualmente el usuario. Utilice la **X** por el nombre para anular la selección antes de guardar.
+      lista de grupos de los que el usuario es miembro en este momento. Utilice la **X** por el nombre para anular la selección antes de guardar.
 
 
 1. Cuando haya definido la cuenta de usuario, utilice:
@@ -116,17 +120,17 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como en [Adición de un nuevo usuario](#adding-a-new-user).
+1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user).
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como en [Adición de un nuevo usuario](#adding-a-new-user).
+1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user).
 
 ### Cambio de la contraseña de un usuario existente {#changing-the-password-for-an-existing-user}
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como en [Adición de un nuevo usuario](#adding-a-new-user). En Configuración **de cuenta** hay un vínculo para **Cambiar contraseña**.
+1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user). En Configuración **de cuenta** hay un vínculo para **Cambiar contraseña**.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -165,9 +169,9 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 ## Administración de grupos {#group-administration}
 
-### Adición de un nuevo grupo {#adding-a-new-group}
+### Añadir un nuevo grupo {#adding-a-new-group}
 
-1. Utilice el icono Agregar grupo:
+1. Utilice el icono Añadir grupo:
 
    ![](do-not-localize/chlimage_1-4.png)
 
@@ -187,7 +191,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    * **Descripción**
 
-       Una descripción del grupo.
+      Una descripción del grupo.
 
    * **Añadir miembros al grupo**
 
@@ -206,7 +210,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 1. Acceda a los detalles del grupo desde el vínculo situado bajo el nombre del grupo en la consola Grupos.
 
-1. Ahora puede editar y guardar los detalles como en [Adición de un nuevo grupo](#adding-a-new-group).
+1. Ahora puede editar y guardar los detalles como al [Añadir un nuevo grupo](#adding-a-new-group).
 
 ### Copia de un grupo existente {#copying-an-existing-group}
 
@@ -219,7 +223,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    La ID del grupo será la misma que la original, pero con el prefijo `Copy of`. Debe editarlo, ya que el ID no puede contener espacios. Todos los demás detalles serán los mismos que el original.
 
-   Ahora puede editar y guardar los detalles como en [Adición de un nuevo grupo](#adding-a-new-group).
+   Ahora puede editar y guardar los detalles como al [Añadir un nuevo grupo](#adding-a-new-group).
 
 ### Eliminación de un grupo existente {#deleting-an-existing-group}
 

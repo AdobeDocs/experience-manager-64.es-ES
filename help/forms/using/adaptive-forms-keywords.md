@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 15%
 
 ---
 
 
 # Palabras clave de formularios adaptables {#adaptive-forms-keywords}
 
-Las palabras clave de formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. En la tabla siguiente se enumeran todas las palabras clave que son identificadores reservados para formularios adaptables.
+Las palabras clave de formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. La siguiente tabla lista todas las palabras clave que son identificadores reservados para formularios adaptables.
 
 <table> 
  <tbody>

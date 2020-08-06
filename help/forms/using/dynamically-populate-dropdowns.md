@@ -10,22 +10,25 @@ topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 translation-type: tm+mt
 source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 
-# Rellenado dinámico de listas desplegables {#dynamically-populating-drop-down-lists}
+# Rellenado dinámico de listas desplegables  {#dynamically-populating-drop-down-lists}
 
 ## Requisitos previos {#prerequisites}
 
 * [Creación de paquetes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Desarrollo de componentes de AEM](/help/sites-developing/components.md)
+* [Desarrollo de componentes AEM](/help/sites-developing/components.md)
 * [Creación de formularios adaptables](/help/forms/using/creating-adaptive-form.md)
 * [Creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md)
 
 ## Procedimiento para rellenar dinámicamente listas desplegables {#procedure-to-dynamically-populate-drop-down-lists}
 
-Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función de un valor que seleccione en la lista desplegable **País** . Si selecciona Australia en la lista desplegable **País** , la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo realizar esta tarea.
+Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función de un valor que seleccione en la lista desplegable **País** . Si selecciona Australia en la lista desplegable **País** , la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo llevar a cabo esta tarea.
 
 1. Cree un proyecto con los siguientes módulos:
 
@@ -148,11 +151,11 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
 1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
-1. Cree un formulario adaptable y agregue dos listas desplegables: País y Estado. La lista de países puede incluir los nombres de los países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
+1. Cree un formulario adaptable y agregue dos listas desplegables: País y Estado. La lista puede incluir los nombres de los países. La lista de estado puede rellenar dinámicamente los nombres de estados del país seleccionado en la primera lista.
 
-   Agregue los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista País.
+   Añada los nombres de los países para mostrarlos en la lista del país. En la lista de Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista de país.
 
-   ![Adición de nombres](assets/country-dropdown.png) de países ![Adición de una secuencia de comandos para rellenar los nombres](assets/state-dropdown.png) de estado Las listas desplegables ![País y Estado se reúnen](assets/2dropdowns.png)
+   ![Añadir nombres](assets/country-dropdown.png) de países ![Añadiendo secuencia de comandos para rellenar nombres](assets/state-dropdown.png) de estado listas desplegables ![País y Estado para reunir](assets/2dropdowns.png)
 
    ```
    JSON.parse(

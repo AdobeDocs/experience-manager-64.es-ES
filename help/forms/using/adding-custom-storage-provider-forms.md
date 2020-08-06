@@ -1,6 +1,6 @@
 ---
-title: Almacenamiento personalizado para borradores y componentes de envíos
-seo-title: Almacenamiento personalizado para borradores y componentes de envíos
+title: almacenamiento personalizado para los borradores y el componente de envíos
+seo-title: almacenamiento personalizado para los borradores y el componente de envíos
 description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 seo-description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -10,11 +10,14 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
 
-# Almacenamiento personalizado para borradores y componentes de envíos {#custom-storage-for-drafts-and-submissions-component}
+# almacenamiento personalizado para los borradores y el componente de envíos {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
@@ -31,7 +34,7 @@ De forma predeterminada, AEM Forms almacena los datos de usuario asociados con e
 
 ## Servicio de borradores de datos {#draft-data-service}
 
-Para personalizar el almacenamiento de datos de usuario para borradores, debe implementar todos los métodos de la `DraftDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la `DraftDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
@@ -96,7 +99,7 @@ public interface DraftDataService {
 
 ## Servicio de envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de datos de usuario para envíos, debe implementar todos los métodos de la `SubmitDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la `SubmitDataService` interfaz. El siguiente código de muestra describe los métodos y argumentos.
 
 ```java
 /**
@@ -181,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar una ID única propia. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar una ID única personalizada para cada borrador y formulario enviado. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
+El portal de Forms utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar una ID única propia. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar una ID única personalizada para cada borrador y formulario enviado. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
 
 ```java
 public interface FPKeyGeneratorService {

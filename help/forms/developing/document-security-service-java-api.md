@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Inicio rápido de la API de Java del servicio de seguridad de Documento (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-El Inicio rápido de la API de Java (SOAP) está disponible para el servicio Rights Management:
+El Inicio rápido de la API de Java (SOAP) está disponible para el servicio de Rights Management:
 
 [Inicio rápido (modo SOAP): Creación de una directiva mediante la API de Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -50,7 +50,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con
 
 >[!NOTE]
 >
->El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor de Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
+>El Inicio rápido ubicado en Programación con AEM Forms se basa en el sistema operativo del servidor Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de conexión.
 
 ## Inicio rápido (modo SOAP): Creación de una directiva mediante la API de Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
@@ -2056,7 +2056,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Inicio rápido (modo SOAP): Proteger un PDF en el flujo de trabajo de instrucciones para un usuario existente mediante la API de Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Inicio rápido (modo SOAP): Protect un PDF en flujo de trabajo de instrucciones para un usuario existente, mediante la API de Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 El siguiente ejemplo de código Java muestra el método para proteger un Documento en el flujo de trabajo de instrucciones, para un usuario existente.
 
@@ -2164,7 +2164,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Inicio rápido (modo SOAP): Proteger un PDF en el flujo de trabajo de instrucciones para un nuevo usuario mediante la API de Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Inicio rápido (modo SOAP): Protect un PDF en flujo de trabajo de instrucciones para un nuevo usuario, mediante la API de Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 El siguiente ejemplo de código Java muestra cómo puede proteger un documento en el flujo de trabajo de instrucciones. Se trata de un proceso de dos pasos:
 

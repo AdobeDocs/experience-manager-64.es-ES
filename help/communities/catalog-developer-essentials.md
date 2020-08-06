@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 La función de catálogo, cuando se incluye en un sitio de la comunidad, permite a los miembros de la comunidad examinar y seleccionar los recursos de activación enumerados en un catálogo.
 
-El [ componente `enablement catalog` permite a los miembros de la comunidad acceder a un catálogo de recursos](catalog.md) de [](resources.md)activación. El uso de etiquetas AEM es una parte importante de la gestión del aspecto de los recursos de activación en un catálogo.
+El [ componente `enablement catalog` permite a los miembros de la comunidad acceder a un catálogo de recursos](catalog.md) de [](resources.md)activación. El uso de etiquetas AEM es una parte importante de la administración del aspecto de los recursos de habilitación en un catálogo.
 
 Consulte [Etiquetado de recursos](tag-resources.md)de habilitación.
 
@@ -62,7 +65,7 @@ Consulte [Etiquetado de recursos](tag-resources.md)de habilitación.
 
 Una estructura de sitio de comunidad que incluye la función [](functions.md#catalog-function)Catálogo, incluye un `enablement catalog` componente configurado.
 
-### Prefiltros {#pre-filters}
+### Filtros previos {#pre-filters}
 
 Cuando se agrega una función de catálogo a un sitio de comunidad, es posible restringir los recursos de habilitación y las rutas de aprendizaje que aparecen en el catálogo especificando un prefiltro. Esto se realiza estableciendo propiedades en la instancia del recurso de catálogo para el sitio.
 
@@ -77,7 +80,7 @@ Uso del ejemplo del Tutorial de [habilitación](getting-started-enablement.md):
 
    * Por ejemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Agregar un nodo de filtros secundarios
+* Añadir un nodo de filtros secundarios
 
    * Seleccione el `catalog`nodo
    * Seleccione **[!UICONTROL Crear nodo]**
@@ -87,16 +90,16 @@ Uso del ejemplo del Tutorial de [habilitación](getting-started-enablement.md):
    * Seleccione **[!UICONTROL Guardar todo]**
 
 
-* Agregar `se_resource-tags` propiedad al `filters` nodo
+* Añadir `se_resource-tags` propiedad en el `filters` nodo
 
    * Seleccione el `filters` nodo
-   * Agregar una propiedad múltiple
+   * Añadir una propiedad Multi
 
       * Nombre: `se_resource-tags`
       * Tipo: Cadena
       * Valor: *&lt;ingrese un[TagID](#pre-filter-tagids)>*
       * Seleccionar **[!UICONTROL varios]**
-      * Seleccione **[!UICONTROL Agregar]**
+      * Seleccionar **[!UICONTROL Añadir]**
 
          * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiqueta previos al filtro adicionales
 
@@ -114,7 +117,7 @@ Los [TagIDs](../../help/sites-developing/framework.md#tagid) de prefiltro deben 
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API de informes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API de Sistema de informes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API de Sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 

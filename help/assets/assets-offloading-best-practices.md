@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Esta función ya no se utiliza en AEM 6.4 y se elimina en AEM 6.5. Planifique en consecuencia.
+>Esta función está en desuso AEM la versión 6.4 y se elimina en la AEM 6.5. Planifique en consecuencia.
 
-La administración de archivos de gran tamaño y flujos de trabajo en ejecución en Recursos Adobe Experience Manager (AEM) puede consumir una cantidad considerable de recursos de CPU, memoria y E/S. En particular, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia con la que se realiza la ingesta de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor consumo de recursos incluyen la ingestión de recursos de AEM y flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
+La administración de archivos de gran tamaño y flujos de trabajo en ejecución en Adobe Experience Manager (AEM) Assets puede consumir considerables recursos de CPU, memoria y E/S. En particular, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia con la que se realiza la ingesta de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor uso de recursos incluyen AEM flujos de trabajo de replicación e ingestión de recursos. El uso intensivo de estos flujos de trabajo en una sola instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
 
 La descarga de estas tareas a instancias de trabajo dedicadas puede reducir los gastos de CPU, memoria y E/S. En general, la idea detrás de la descarga es distribuir tareas que consuman recursos intensivos de CPU/memoria/E a instancias de trabajo dedicadas. Las siguientes secciones incluyen casos de uso recomendados para la descarga de recursos.
 
 ## Descarga de AEM Assets {#aem-assets-offloading}
 
-AEM Assets implementa una extensión de flujo de trabajo nativa específica de recursos para la descarga. Se basa en la extensión genérica del flujo de trabajo que proporciona el marco de descarga, pero incluye funciones adicionales específicas de los recursos en la implementación. El objetivo de la descarga de recursos es ejecutar eficazmente el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos le permite obtener un bueno control de los flujos de trabajo de ingestión.
+AEM Assets implementa una extensión de flujo de trabajo específica de recursos nativa para la descarga. Se basa en la extensión genérica del flujo de trabajo que proporciona el marco de descarga, pero incluye funciones adicionales específicas de los recursos en la implementación. El objetivo de la descarga de recursos es ejecutar eficazmente el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos le permite obtener un bueno control de los flujos de trabajo de ingestión.
 
-## AEM Assets descargando componentes {#aem-assets-offloading-components}
+## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
 
 En el diagrama siguiente se muestran los componentes principales del proceso de descarga de recursos:
 
@@ -39,7 +39,7 @@ El flujo de trabajo de descarga de recursos de actualización de DAM se ejecuta 
 
 El administrador de trabajos distribuye nuevos trabajos a instancias de trabajador. Al diseñar el mecanismo de distribución, es importante tener en cuenta la habilitación de temas. Los trabajos solo se pueden asignar a instancias en las que el tema del trabajo está activado. Deshabilite el tema `com/adobe/granite/workflow/offloading` en el principal y habilite el trabajo en el trabajador para asegurarse de que el trabajo está asignado al trabajador.
 
-### Descarga de AEM {#aem-offloading}
+### AEM descarga {#aem-offloading}
 
 El marco de descarga identifica los trabajos de descarga de flujo de trabajo asignados a instancias de trabajador y utiliza la replicación para transportarlos físicamente, incluida su carga útil (por ejemplo, imágenes que se van a ingerir), a los trabajadores.
 
@@ -49,7 +49,7 @@ Una vez que se ha escrito un trabajo en el trabajador, el administrador de traba
 
 ## Topología de Sling {#sling-topology}
 
-La topología de Sling agrupa las instancias de AEM y les permite ser conscientes entre sí, independientemente de la persistencia subyacente. Esta característica de la topología Sling permite crear topologías para escenarios no agrupados, agrupados y mixtos. Una instancia puede exponer propiedades a toda la topología. El marco proporciona llamadas de retorno para escuchar los cambios en la topología (instancias y propiedades). La topología Sling proporciona la base para los trabajos distribuidos Sling.
+La topología de Sling agrupa AEM instancias y les permite ser conscientes entre sí, independientemente de la persistencia subyacente. Esta característica de la topología Sling permite crear topologías para escenarios no agrupados, agrupados y mixtos. Una instancia puede exponer propiedades a toda la topología. El marco proporciona llamadas de retorno para escuchar los cambios en la topología (instancias y propiedades). La topología Sling proporciona la base para los trabajos distribuidos Sling.
 
 ### Creación de trabajos distribuidos {#sling-distributed-jobs}
 
@@ -73,7 +73,7 @@ El marco de descarga también incluye una interfaz de usuario para visualizar y 
 
 Cada implementación es única y, como tal, no existe una configuración de descarga única para todos los casos. Las siguientes secciones proporcionan orientación y optimizaciones sobre la descarga de ingesta de recursos.
 
-La descarga de activos también impone gastos generales al sistema, incluidos los gastos generales de funcionamiento. Si tiene problemas con la carga de ingestión de recursos, Adobe recomienda que primero mejore la configuración sin descargar. Considere las siguientes opciones antes de pasar a la descarga de recursos:
+La descarga de activos también impone gastos generales al sistema, incluidos los gastos generales de funcionamiento. Si se producen problemas con la carga de ingestión de recursos, Adobe recomienda mejorar primero la configuración sin descargar. Considere las siguientes opciones antes de pasar a la descarga de recursos:
 
 * Escalar hardware
 * Optimizar flujos de trabajo
@@ -96,7 +96,7 @@ Para obtener más información sobre la configuración de un almacén de datos, 
 
 ### Desactivación de la administración automática de agentes {#turning-off-automatic-agent-management}
 
-Adobe recomienda desactivar la administración automática de agentes porque no admite la replicación sin binarios y puede causar confusión al configurar una nueva topología de descarga. Además, no soporta automáticamente el flujo de replicación hacia adelante requerido por la replicación sin binarios.
+Adobe recomienda desactivar la administración automática de agentes porque no admite replicación sin binarios y puede causar confusión al configurar una nueva topología de descarga. Además, no soporta automáticamente el flujo de replicación hacia adelante requerido por la replicación sin binarios.
 
 1. Abra Configuration Manager desde la dirección URL `http://localhost:4502/system/console/configMgr`.
 1. Abra la configuración para `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).

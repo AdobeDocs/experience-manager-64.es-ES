@@ -1,9 +1,12 @@
 ---
 title: Configuración de los complementos del editor de texto enriquecido
-description: Aprenda a configurar los complementos del editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
+description: Aprenda a configurar los complementos del Editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+workflow-type: tm+mt
+source-wordcount: '4220'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +19,7 @@ Para obtener más información sobre las demás configuraciones de RTE, consulte
 
 >[!NOTE]
 >
->Al trabajar con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante Guardar todo.
+>Cuando trabaje con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante Guardar todo.
 
 ## Activar un complemento y configurar la propiedad features {#activateplugin}
 
@@ -28,7 +31,7 @@ De forma predeterminada, `format`, `link`, `list`, `justify`y `control` los comp
 >
 >El nodo rtePlugins correspondiente se denomina &lt;*rtePlugins-node*> para evitar duplicaciones en este artículo.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree el nodo principal de `<rtePlugins-node>` si no existe, antes de configurar los complementos RTE:
 
    * Según el componente, los nodos principales son:
@@ -36,12 +39,12 @@ De forma predeterminada, `format`, `link`, `list`, `justify`y `control` los comp
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nodo de configuración alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Son del tipo: **jcr:parentType**`cq:Widget`
+   * Son del tipo: **jcr:parentType** `cq:Widget`
    * Ambas tienen la siguiente propiedad:
 
       * **Nombre** `name`
       * **Tipo** `String`
-      * **Valor**`./text`
+      * **Valor** `./text`
 
 
 1. En función de la interfaz para la que esté configurando, cree un nodo `<rtePlugins-node>`, si no existe:
@@ -73,7 +76,7 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
   <tr> 
    <td><strong>Tipo</strong></td> 
    <td>Cadena</td> 
-   <td>String[] (multi-string; configure Type en String y haga clic en Multi en CRXDE Lite)</td> 
+   <td>String[] (multi-string; defina el tipo en Cadena y haga clic en Múltiple en el CRXDE Lite)</td> 
    <td>Cadena</td> 
   </tr> 
   <tr> 
@@ -99,11 +102,11 @@ Al utilizar RTE, los autores pueden pegar contenido en uno de los tres modos sig
 
 * **Modo** del explorador: Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas.
 
-* **Modo** de texto sin formato: Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM.
+* **Modo** de texto sin formato: Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en AEM componente.
 
 * **Modo** MS Word: Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial.
 
-### Configure las opciones de pegado disponibles en la barra de herramientas RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configure las opciones de pegado disponibles en la barra de herramientas RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Puede proporcionar algunos, todos o ninguno de estos tres iconos a sus autores en la barra de herramientas RTE:
 
@@ -130,7 +133,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 * Pegue texto mediante la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que podría introducir marcas no deseadas. Configurado usando `browser` abajo.
 
-* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente AEM. Configurado usando `plaintext` abajo.
+* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en AEM componente. Configurado usando `plaintext` abajo.
 
 * Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite copiar y pegar texto de otro origen, como una página web o MS Excel, y solo se conserva el formato parcial. Configurado usando `wordhtml` abajo.
 
@@ -143,7 +146,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 ### Configurar los formatos permitidos al pegar contenido {#pasteformats}
 
-El modo de pegado como Microsoft Word (`paste-wordhtml`) se puede seguir configurando para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft Word.
+El modo de pegado como Microsoft Word (`paste-wordhtml`) se puede configurar más para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft Word.
 
 Por ejemplo, si solo se deben permitir formatos y listas en negrita al pegar en AEM, puede filtrar los demás formatos. Esto se denomina filtrado de pegado configurable, que se puede realizar para ambos:
 
@@ -172,6 +175,7 @@ Para configurar qué formatos se permiten al pegar texto en AEM desde otro progr
    * **Nombre** `underline`
    * **Nombre** `anchor` (para vínculos y anclajes con nombre)
    * **Nombre** `image`
+
    Todas las propiedades son de **tipo** `Boolean`, por lo que en el **valor** correspondiente puede seleccionar o quitar la marca de verificación para habilitar o deshabilitar la funcionalidad.
 
    >[!NOTE]
@@ -290,6 +294,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
    * **Nombre** `externalStyleSheets`
    * **Tipo** `String[]` (multicadena; haga clic en **Múltiples** en CRXDE)
    * **Valores** La ruta y el nombre de archivo de cada hoja de estilo que desee incluir. Utilice rutas de repositorio.
+
    >[!NOTE]
    Puede agregar referencias a hojas de estilo adicionales más adelante.
 
@@ -411,7 +416,7 @@ Si define formatos personalizados, se eliminan los formatos predeterminados (`<p
 
 ## Configurar caracteres especiales {#spchar}
 
-En una instalación estándar de AEM, cuando el `misctools` complemento está habilitado para caracteres especiales (`specialchars`), inmediatamente se puede utilizar una selección predeterminada; por ejemplo, los símbolos de copyright y marca comercial.
+En una instalación de AEM estándar, cuando el `misctools` complemento está habilitado para caracteres especiales (`specialchars`), inmediatamente se puede utilizar una selección predeterminada; por ejemplo, los símbolos de copyright y marca comercial.
 
 Puede configurar el RTE para que su propia selección de caracteres esté disponible; definiendo caracteres distintos o una secuencia completa.
 
@@ -425,7 +430,7 @@ Añadir sus propios caracteres especiales anula la selección predeterminada. Si
 
    * **Nombre** `features`
    * **Tipo** `String[]`
-   * **Valor**`specialchars`
+   * **Valor** `specialchars`
 
           (o `String / *` si se aplican todas las características de este complemento)
 
@@ -469,10 +474,12 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
 1. En este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
+
       **Tipo** `Long`
       **Valor** de la representación [Unicode](https://unicode.org/) (decimal) del primer carácter del rango
 
    * **Nombre** `rangeEnd`
+
       **Tipo** `Long`
       **Valor** de la representación [Unicode](https://unicode.org/) (decimal) del último carácter del rango
 
@@ -486,7 +493,7 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
 
    ![Los autores verán los caracteres especiales disponibles en RTE en una ventana emergente](assets/rtepencil.png)
 
-         Los autores verán los caracteres *especiales disponibles en RTE en una ventana emergente*
+         *Los autores verán los caracteres especiales disponibles en RTE en una ventana emergente*
 
 ## Configuración de estilos de tabla {#tablestyles}
 
@@ -504,6 +511,7 @@ La copia y pegado de tablas en o desde el componente RTE depende del explorador.
    * **Nombre** `features`
    * **Tipo** `String`
    * **Valor** `*` (asterisco)
+
    >[!NOTE]
    Si no desea habilitar todas las funciones de tabla, puede crear la `features` propiedad como:
    * **Tipo** `String[]`
@@ -574,7 +582,7 @@ Cuando se activa el complemento de revisión de ortografía, RTE utiliza diccion
 >[!NOTE]
 El mensaje `Spell checking failed` se muestra si se intenta comprobar un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame correspondientes. No modifique los archivos.
 
-Una instalación estándar de AEM incluye los diccionarios Inglés americano (`en_us`) e Inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
+Una instalación AEM estándar incluye los diccionarios Inglés Americano (`en_us`) e Inglés Británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
 
 1. Vaya a la página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -647,6 +655,7 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
    * **Nombre** `height`
    * **Tipo** `Long`
    * **Valor** de la altura del lienzo de edición en píxeles
+
    >[!NOTE]
    Esto no cambia la altura de la ventana del cuadro de diálogo.
 
@@ -664,16 +673,18 @@ Al agregar vínculos en AEM, puede definir:
 
 Para configurar cómo se agregan vínculos en AEM desde otro programa, defina las reglas HTML.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree un nuevo nodo en el mismo nivel que `<rtePlugins-node>`, es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `htmlRules`
    * **Tipo** `nt:unstructured`
+
    >[!NOTE]
    El `../items/text` nodo tiene la propiedad:
    * **Nombre** `xtype`
    * **Tipo** `String`
-   * **Valor**`richtext`
+   * **Valor** `richtext`
+
    La ubicación del `../items/text` nodo puede variar en función de la estructura del cuadro de diálogo; dos ejemplos incluyen:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -710,6 +721,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
 
       * **Nombre** `targetConfig`
       * **Tipo** `nt:unstructured`
+
       En el nodo `targetConfig`: defina las propiedades requeridas:
 
       * Especifique el modo de destinatario:

@@ -1,6 +1,6 @@
 ---
-title: Procesamiento y envío
-seo-title: Procesamiento y envío
+title: Procesamiento y Envío
+seo-title: Procesamiento y Envío
 description: nulo
 seo-description: nulo
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
@@ -10,21 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 7%
 
 ---
 
 
-# Procesamiento y envío{#rendering-and-delivery}
+# Procesamiento y Envío{#rendering-and-delivery}
 
 >[!NOTE]
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El contenido de AEM se puede procesar fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
+AEM contenido se puede procesar fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
 
 Los procesamientos listos para usar generalmente dirigen el repositorio y devuelven contenido tal cual.
 
-AEM, a través de Sling, también admite el desarrollo y la implementación de representadores de sling personalizados para controlar completamente el esquema y el contenido procesados.
+AEM, a través de Sling, también admite el desarrollo e implementación de representaciones de sling personalizadas para tomar el control total del esquema y el contenido procesados.
 
 Los procesadores predeterminados de Content Services llenan el espacio entre los valores predeterminados de Sling predeterminados y el desarrollo personalizado, lo que permite la personalización y el control de muchos aspectos del contenido procesado sin necesidad de desarrollo.
 
@@ -93,7 +96,7 @@ En la tabla siguiente se muestran las propiedades de la configuración de export
    <td>Cadena[]</td>
    <td>excluir nada</td>
    <td>Prefijos de propiedad</td>
-   <td>excluya las propiedades que comienzan con prefijos especificados de la exportación JSON</td>
+   <td>excluir propiedades que inicio con prefijos especificados de la exportación JSON</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
@@ -222,7 +225,7 @@ Esta configuración amplía el valor predeterminado para incluir elementos secun
 
 &lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
 
-### Additional Resources {#additional-resources}
+### Recursos adicionales {#additional-resources}
 
 Consulte los recursos siguientes para obtener información sobre temas adicionales en Content Services:
 

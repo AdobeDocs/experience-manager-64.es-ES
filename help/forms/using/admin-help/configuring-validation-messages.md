@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
@@ -22,31 +25,31 @@ En el caso de los formularios procesados como HTML, los errores de validación q
 ## Especificar cómo se muestran los mensajes de validación {#specify-how-validation-messages-are-displayed}
 
 1. En la consola de administración, haga clic en Servicios > formularios.
-1. En Resultados de validación, en la lista Informes, seleccione una de las siguientes opciones:
+1. En Salida de validación, en la lista de Sistema de informes, seleccione una de las siguientes opciones:
 
-   **** Cuadro de mensaje: Para mostrar mensajes de validación en un cuadro de diálogo independiente.
+   **Cuadro de mensaje:** Para mostrar mensajes de validación en un cuadro de diálogo independiente.
 
-   **** Marco: Para mostrar mensajes de validación dentro de un marco de la misma ventana.
+   **Marco:** Para mostrar mensajes de validación dentro de un marco de la misma ventana.
 
-   **** Sin marco: Para mostrar mensajes de validación en la misma ventana. Este valor es el predeterminado.
+   **Sin marco:** Para mostrar mensajes de validación en la misma ventana. Este valor es el predeterminado.
 
-   **** Mediante API (con datos): Para devolver los mensajes de validación a través de la API (con datos). Los mensajes de validación no se muestran en la pantalla.
+   **Mediante API (con datos):** Para devolver los mensajes de validación a través de la API (con datos). Los mensajes de validación no se muestran en la pantalla.
 
-   **** Mediante API (con formulario): Para devolver los mensajes de validación a través de la API (con el formulario). Los mensajes de validación no se muestran en la pantalla.
+   **Mediante API (con formulario):** Para devolver los mensajes de validación a través de la API (con el formulario). Los mensajes de validación no se muestran en la pantalla.
 
-   **** Ninguno: Para no mostrar mensajes de validación.
+   **Ninguno:** Para no mostrar mensajes de validación.
 
 1. Haga clic en Guardar.
 
 ## Especificar la ubicación de los mensajes de validación en relación con el formulario devuelto en el explorador Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
-Cuando Informes se establece en Marco o Sin marco, puede especificar la ubicación de los mensajes de validación.
+Cuando Sistema de informes se establece en Marco o Sin marco, puede especificar la ubicación de los mensajes de validación.
 
-1. En Resultados de validación, en la lista Posición, seleccione una de las siguientes opciones:
+1. En Salida de validación, en la lista Posición, seleccione una de las siguientes opciones:
 
-   **** Izquierda: Para mostrar mensajes de validación en el lado izquierdo del explorador web.
+   **Izquierda:** Para mostrar mensajes de validación en el lado izquierdo del explorador web.
 
-   **** Derecha: Para mostrar mensajes de validación en el lado derecho del explorador web.
+   **Derecha:** Para mostrar mensajes de validación en el lado derecho del explorador web.
 
    **Superior**: Para mostrar mensajes de validación en la parte superior del explorador Web. Este valor es el predeterminado.
 
@@ -56,11 +59,11 @@ Cuando Informes se establece en Marco o Sin marco, puede especificar la ubicaci�
 
 ## Especificar el tamaño del borde del marco {#specify-the-frame-border-size}
 
-Cuando Informes se establece en Marco, puede especificar el tamaño del borde del marco.
+Cuando Sistema de informes se establece en Marco, puede especificar el tamaño del borde del marco.
 
 1. En Salida de validación, en el cuadro Tamaño del borde, escriba el tamaño del borde del marco, en píxeles.
 
-   El tamaño del borde debe ser igual o mayor que 0. El valor predeterminado es 1.
+   El tamaño del borde debe ser igual o bueno a 0. El valor predeterminado es 1.
 
 1. Haga clic en Guardar.
 

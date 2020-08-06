@@ -22,9 +22,9 @@ ht-degree: 0%
 
 El espacio de trabajo de AEM Forms ofrece compatibilidad inmediata con los idiomas inglés, francés, alemán y japonés. También permite localizar la interfaz de usuario del espacio de trabajo de AEM Forms en cualquier otro idioma.
 
-Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms en el idioma que elija:
+Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms según el idioma que elija:
 
-* Localización del texto del espacio de trabajo de AEM Forms.
+* Localizar texto del espacio de trabajo de AEM Forms.
 * Localice categorías contraídas, colas y procesos.
 * Localizar selector de fechas
 
@@ -38,9 +38,9 @@ Antes de realizar los pasos anteriores, asegúrese de seguir los pasos que se in
 
 Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y el código de configuración regional del explorador *ahora*.
 
-1. Inicie sesión en CRXDE Lite.
+1. Inicie sesión en el CRXDE Lite.
 
-   La dirección URL predeterminada de CRXDE Lite es `https://[server]:[port]/lc/crx/de/index.jsp`.
+   La dirección URL predeterminada del CRXDE Lite es `https://[server]:[port]/lc/crx/de/index.jsp`.
 
 1. Vaya a la ubicación `apps/ws/locales` y cree una nueva carpeta `nw.`
 1. Copie el archivo `translation.json`de la ubicación `/apps/ws/locales/en-US` a la ubicación `/apps/ws/locales/nw`.
@@ -52,7 +52,7 @@ Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y
 
 ## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
 
-El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código de espacio de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de código de espacio de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
@@ -111,7 +111,7 @@ Siga estos pasos para localizar las imágenes:
 
 ## Localización del selector de fechas {#localizing-date-picker}
 
-Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de un código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espacio de trabajo de AEM Forms.
+Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación de código](introduction-customizing-html-workspace.md#building-html-workspace-code)de espacio de trabajo de AEM Forms.
 
 1. Descargue y extraiga el paquete [de IU de](https://jqueryui.com/download/all/)jQuery, vaya a *&lt;paquete de IU de jquery extraído>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copie el archivo jquery.ui.datepicker-nw.js para el código de configuración regional ahora en las aplicaciones/ws/js/libs/jqueryui y realice cambios específicos de configuración regional en el archivo.

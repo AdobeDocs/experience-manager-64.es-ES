@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 0%
 
 ---
 
 
 # Importar y administrar aplicaciones{#import-and-manage-applications}
 
-En los formularios AEM, una *aplicación* es un contenedor para almacenar recursos necesarios para implementar una solución de formularios AEM. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas HTML y archivos SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden implementar aplicaciones directamente desde la vista Aplicaciones de Workbench. Una vez implementadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
+En AEM formularios, una *aplicación* es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios AEM. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas HTML y archivos SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden implementar aplicaciones directamente desde la vista Aplicaciones de Workbench. Una vez implementadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
 
 Cuando se completa una aplicación y está lista para su implementación en un servidor de producción, el usuario de Workbench la empaqueta en un archivo *de aplicación de formularios* AEM (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de la aplicación mediante la ficha Aplicaciones de la página Administración de aplicaciones.
 
@@ -25,9 +28,9 @@ También puede utilizar la ficha Archivos de la página Administración de aplic
 
 >[!NOTE]
 >
->Se sabe que los archivos LCA de una versión futura no son necesariamente compatibles con versiones anteriores. Si bien es posible ver e importar archivos LCA de una versión futura de formularios AEM (por ejemplo, una versión de vista previa), no se admite esta acción y puede provocar un comportamiento aberrante.
+>Se sabe que los archivos LCA de una versión futura no son necesariamente compatibles con versiones anteriores. Si bien es posible realizar la vista e importación de archivos LCA desde una versión futura de formularios AEM (por ejemplo, una versión de previsualización), hacerlo no es compatible y puede provocar un comportamiento aberrante.
 
-Utilice la ficha Aplicaciones para importar y administrar las aplicaciones creadas en Workbench. Los administradores de aplicaciones también pueden exportar la configuración del tiempo de ejecución para una aplicación. Exportar la configuración del tiempo de ejecución elimina la necesidad de reconfigurar manualmente los ajustes en el entorno de producción antes de iniciar las aplicaciones implementadas. El archivo de configuración de tiempo de ejecución contiene:
+Utilice la ficha Aplicaciones para importar y administrar las aplicaciones creadas en Workbench. Los administradores de aplicaciones también pueden exportar la configuración del tiempo de ejecución para una aplicación. Exportar la configuración del tiempo de ejecución elimina la necesidad de volver a configurar manualmente los ajustes en el entorno de producción antes de iniciar las aplicaciones implementadas. El archivo de configuración de tiempo de ejecución contiene:
 
 * configuración del servicio
 * configuración del grupo
@@ -38,8 +41,8 @@ Utilice la ficha Aplicaciones para importar y administrar las aplicaciones cread
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en Importar.
-1. Haga clic en Examinar y seleccione el archivo .lca que desea importar y haga clic en Vista previa. La página Vista previa de la aplicación muestra información sobre la aplicación.
-1. (Opcional) Para ver una lista de los recursos contenidos en la aplicación, haga clic en Ver recursos.
+1. Haga clic en Examinar y seleccione el archivo .lca que desea importar y haga clic en Previsualización. La página Aplicación de Previsualización muestra información sobre la aplicación.
+1. (Opcional) Para ver una lista de los recursos contenidos en la aplicación, haga clic en Vista de recursos.
 1. (Opcional) Para implementar los recursos en tiempo de ejecución, seleccione Implementar recursos en tiempo de ejecución cuando se complete la importación. Si no selecciona esta opción, puede implementar los recursos más adelante.
 1. Haga clic en Importar. La aplicación aparece en la ficha Aplicaciones.
 1. Inicie sesión en el repositorio de CRX con credenciales de administrador.
@@ -85,31 +88,31 @@ Si un administrador de la aplicación exportó la configuración de tiempo de ej
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en el nombre de la aplicación.
-1. Haga clic en Importar configuración de tiempo de ejecución.
+1. Click Import Runtime Config.
 1. Haga clic en Examinar y seleccione el archivo XML que contiene la configuración de tiempo de ejecución.
 1. Haga clic en Importar.
 
-## Exportación de la configuración del tiempo de ejecución de una aplicación {#export-an-application-s-runtime-configuration}
+## Export an application’s runtime configuration {#export-an-application-s-runtime-configuration}
 
-Puede exportar la información de configuración del tiempo de ejecución para las aplicaciones implementadas.
+You can export the runtime configuration information for deployed applications.
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en el nombre de la aplicación.
-1. Haga clic en Exportar configuración de tiempo de ejecución y guarde el archivo de configuración (XML) generado.
+1. Click Export Runtime Config and save the configuration file (XML) that is produced.
 
-## Implementación con secuencias de comandos de aplicaciones de formularios AEM {#scripted-deployment-of-aem-forms-applications}
+## Scripted deployment of AEM forms applications {#scripted-deployment-of-aem-forms-applications}
 
-También puede utilizar una herramienta de implementación mediante secuencias de comandos para implementar archivos de aplicación, incluido un archivo settings.xml que especifica la siguiente configuración:
+You can also use a scripted deployment tool to deploy application files, including a settings.xml file that specifies the following settings:
 
-* configuración del servicio
-* configuración del grupo
+* service configuration settings
+* pool configuration settings
 * configuración de extremo
 * perfiles de seguridad
 
-La implementación con secuencias de comandos elimina la necesidad de reconfigurar manualmente los ajustes en el entorno de producción antes de iniciar las aplicaciones implementadas.
+La implementación con secuencias de comandos elimina la necesidad de reconfigurar manualmente las opciones del entorno de producción antes de iniciar las aplicaciones implementadas.
 
 1. Desde un símbolo del sistema, desplácese hasta *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
 1. Revise el archivo ReadMe.txt para obtener instrucciones más detalladas.
 1. Modifique manualmente los archivos scriptedDeploy.bat y sample-files/sample.xml tal como se describe en el archivo readme.txt.
-1. Ejecute el archivo scriptedDeploy.bat. Esta acción implementa el archivo de archivos de formularios AEM con la configuración de anulación.
+1. Ejecute el archivo scriptedDeploy.bat. Esta acción implementa el archivo de AEM formularios con la configuración de anulación.
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 93%
 
 ---
 
@@ -195,12 +198,14 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
 
    * Seleccione la plantilla que desea utilizar para crear la nueva página y, a continuación, toque o haga clic en **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. En el último paso del asistente puede realizar una de las acciones siguientes:
 
    * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
    * Utilice **Atrás** para volver a la selección de plantillas.
+
    Los campos clave son:
 
    * **Título**:
@@ -211,6 +216,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
       * Si se proporciona un valor **Nombre** al crear una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
       * No **se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
+
    >[!NOTE]
    >
    >Consulte [Convenciones de nomenclatura para las páginas](#page-naming-conventions).
@@ -245,6 +251,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#product-navigation) y la barra de herramientas
+
    A continuación, seleccione el icono **Editar**:
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -255,7 +262,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 >
 >Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página   {#copying-and-pasting-a-page}
+### Copiar y pegar una página    {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
@@ -264,6 +271,7 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#product-navigation) y la barra de herramientas
+
    A continuación, seleccione el icono de la página **Copiar**:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -306,6 +314,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#product-navigation) y la barra de herramientas
+
    A continuación, seleccione el icono **Mover página**:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -316,6 +325,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
    * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
    * **Haga clic en Cancelar** para anular el proceso.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    El nombre de la página puede seguir siendo el mismo si solo va a mover la página.
@@ -331,6 +341,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
    * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -360,14 +371,14 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
    >[!NOTE]
    >
-   >Como medida de seguridad, el icono de página **Eliminar** no está disponible como acción rápida.
+   >Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
 
-1. Un cuadro de diálogo solicitará confirmación.
+1. Aparecerá un cuadro de diálogo que le pedirá que confirme la acción.
 
-   * **¿Seguro que quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
+   * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
       * [Las versiones se pueden restaurar más adelante.](/help/sites-authoring/working-with-page-versions.md)
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
-      * Esta opción solo está disponible en la versión 6.4.7.0 de AEM.
+      * Esta opción solo está disponible desde AEM versión 6.4.7.0.
    * Seleccione **Cancelar** para cancelar la acción.
    * Seleccione **Eliminar** para confirmar la acción:
 
@@ -397,6 +408,7 @@ Puede crear carpetas para organizar archivos y páginas.
 >* Las carpetas solo se pueden crear directamente en **Sitios** o en otras carpetas. No se pueden crear en una página.
 >* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
 >* Las carpetas no están disponibles para la selección en una Live Copy.
+
 >
 
 

@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Requisitos previos {#prerequisites}
 
-El componente de vínculo es un miembro de la categoría de Document Services. Asegúrese de que la categoría de Document Services esté visible en el navegador de componentes de AEM. Si la categoría no aparece en la lista, siga los pasos que se indican en [Activación de los componentes](/help/forms/using/enabling-forms-portal-components.md)del portal de formularios.
+El componente de vínculo es miembro de la categoría de Documento Services. Asegúrese de que la categoría de Documento Services esté visible en el navegador de componentes de AEM. Si la categoría no aparece en la lista, siga los pasos que se indican en [Activación de los componentes](/help/forms/using/enabling-forms-portal-components.md)del portal de formularios.
 
 ## Componente de vínculo {#link-component}
 
-El componente Vínculo permite a los autores del portal de formularios crear un vínculo a un formulario adaptable desde cualquier lugar de una página. El componente Vínculo está disponible en la sección Document Services del navegador de componentes.
+El componente Vínculo permite a los autores del portal de formularios crear un vínculo a un formulario adaptable desde cualquier lugar de una página. El componente Vínculo está disponible en la sección Servicios de Documento del navegador de componentes.
 
 Realice los siguientes pasos para agregar un componente Vínculo a la página:
 
@@ -39,8 +42,8 @@ Realice los siguientes pasos para agregar un componente Vínculo a la página:
 1. Abra la ficha Información **del** recurso y especifique el tipo de recurso. Un recurso puede ser un **formulario**. Según el tipo de recurso seleccionado, se muestran las opciones siguientes:
 
    * **Ruta** del recurso: Ruta del repositorio donde se almacena el recurso.
-   * **Tipo** de procesamiento: El formato de procesamiento: PDF, HTML o Automático. El tipo de procesamiento automático detecta el entorno de usuario y, en consecuencia, procesa el formulario como HTML o PDF. Por ejemplo, si se accede al formulario desde un dispositivo móvil, el tipo de procesamiento automático procesa el formulario en HTML.
-   * **** Enviar URL:  Dirección URL del servlet donde se envían los datos del formulario.
+   * **Tipo** de procesamiento: El formato de procesamiento: PDF, HTML o Automático. El tipo de procesamiento automático detecta el entorno del usuario y, en consecuencia, procesa el formulario como HTML o PDF. Por ejemplo, si se accede al formulario desde un dispositivo móvil, el tipo de procesamiento automático procesa el formulario en HTML.
+   * **Enviar URL:**  Dirección URL del servlet donde se envían los datos del formulario.
    * **Perfil** HTML: Perfil para procesar el formulario como HTML.
    * **Perfil** PDF: Perfil para procesar el formulario como documento PDF.
 
@@ -54,6 +57,6 @@ Realice los siguientes pasos para agregar un componente Vínculo a la página:
 * La dirección URL de envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:
 
    1. La dirección URL de envío incrustada en el formulario (en el botón de envío) tiene la prioridad más alta.
-   1. La dirección URL de envío mencionada en Forms Manager tiene la prioridad media.
+   1. La dirección URL de envío mencionada en el Administrador de Forms tiene la prioridad media.
    1. La dirección URL de envío mencionada en el portal de formularios tiene la prioridad más baja.
 

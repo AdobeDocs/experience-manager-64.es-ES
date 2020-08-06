@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 >
 >* Windows: Ctrl + clic en los componentes necesarios.
 >* Mac: Cmd + clic en los componentes necesarios.
+
 >
 
 
@@ -166,7 +170,7 @@ Existen otros métodos abreviados del teclado para los desarrolladores de escrit
   </tr> 
   <tr> 
    <td>Modo de edición</td> 
-   <td><br /> Defina el sufijo siguiente en la URL: <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Para ver estadísticas de tiempo para la carga de páginas.</td> 
   </tr> 
  </tbody> 

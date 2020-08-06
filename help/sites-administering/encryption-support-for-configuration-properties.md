@@ -11,6 +11,9 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ Estos pasos muestran cómo cifrar la contraseña SMTP para el servicio de correo
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. En el campo **Texto** sin formato, introduzca el texto de los datos confidenciales que desea proteger.
-1. Seleccione **Proteger**. El texto protegido se muestra como texto cifrado.
+1. Seleccione **Protect**. El texto protegido se muestra como texto cifrado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 

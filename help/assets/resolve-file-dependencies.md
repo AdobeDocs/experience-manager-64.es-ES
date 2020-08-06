@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 40%
 
 ---
 
@@ -42,6 +45,7 @@ Las dependencias principales de archivo de modelo 3D, como archivos de mapa de t
 
       1. Tenga en cuenta las rutas de acceso y los nombres de archivo no disponibles.
       1. Cerca de la esquina superior derecha de la página Propiedades, toque **[!UICONTROL Cerrar]**.
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. El recurso recién cargado se muestra ahora correctamente como recurso al que se hace referencia.
 
    * **Ignore las dependencias**.

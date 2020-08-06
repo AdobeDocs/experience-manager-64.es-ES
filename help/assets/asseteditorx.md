@@ -31,7 +31,7 @@ Las siguientes páginas de muestra se incluyen en geometrixx:
 
 Los componentes de AEM Assets utilizan una extensión de la clientlib de edición de WCM. Los clientes suelen estar cargados en `init.jsp`.
 
-En comparación con la carga de clientlib predeterminada (en core `init.jsp`), una plantilla de Recursos AEM debe tener lo siguiente:
+En comparación con la carga de clientlib predeterminada (en core `init.jsp`), una plantilla de AEM Assets debe tener lo siguiente:
 
 * La plantilla debe incluir la `cq.dam.edit` clientlib (en lugar de `cq.wcm.edit`).
 
@@ -41,7 +41,7 @@ En la mayoría de los casos, la copia de la muestra existente `init.jsp` (`/apps
 
 ### Configuración de acciones JS {#configuring-js-actions}
 
-Algunos componentes de Recursos AEM requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
+Algunos de los componentes de AEM Assets requieren funciones JS definidas en `component.js`. Copie este archivo en el directorio de componentes y vincúlelo.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,13 +51,13 @@ El ejemplo carga este origen de javascript en `head.jsp`(`/apps/geometrixx/compo
 
 ### Hojas de estilo adicionales {#additional-style-sheets}
 
-Algunos componentes de Recursos AEM utilizan la biblioteca de widgets AEM. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
+Algunos componentes de AEM Assets utilizan la biblioteca de widgets de AEM. Para procesarse correctamente en el contexto de contenido, se debe cargar una hoja de estilo adicional. El componente de acción de etiqueta requiere uno más.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Hoja de estilo Geometrixx {#geometrixx-style-sheet}
+### Hoja de estilo de Geometrixx {#geometrixx-style-sheet}
 
 Los componentes de página de ejemplo requieren que todos los selectores tengan inicio con `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los `.asseteditor` selectores en la hoja de estilo y ajuste las reglas como desee.
 

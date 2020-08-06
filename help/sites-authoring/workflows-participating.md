@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 78%
 
 ---
 
@@ -46,6 +49,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
       * Usar las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
       * Hacer clic o pulsar en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccionar el flujo de trabajo que desee visualizar en la barra de estado.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -108,7 +112,7 @@ También puede utilizar la escala de tiempo para completar y hacer avanzar una e
 
 1. Según el flujo de trabajo, puede seleccionar la siguiente etapa:
 
-   ![wf-67](assets/wf-67.png)
+   ![wf-68](assets/wf-67.png)
 
 1. Seleccione **Avanzar** para confirmar la acción.
 

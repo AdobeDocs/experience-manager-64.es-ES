@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -75,7 +78,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>3</td> 
-   <td>Creación de la vista previa</td> 
+   <td>Creación de previsualización</td> 
    <td>El archivo FBX u OBJ se ingesta y se procesa. Las dependencias de archivo se evalúan y se resuelven como referencias de recurso, en la medida de lo posible.</td> 
   </tr> 
   <tr> 

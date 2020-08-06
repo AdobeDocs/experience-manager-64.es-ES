@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 Con la administración de almacén de confianza, puede importar, editar y eliminar certificados en los que confía en el servidor para validar firmas digitales y autenticación de certificados. Puede importar y exportar cualquier número de certificados. Después de importar un certificado, puede editar la configuración de confianza y el tipo de almacén de confianza. Tenga en cuenta las siguientes opciones al combinar tipos de almacén de confianza:
 
-* **** Confiar en la autenticación de certificado con CA: Para la validación de CRL, también seleccione Confiar en la identidad.
-* **** Confianza para la autenticación de certificados con ICA: Seleccione solo Confiar en la identidad. No se debe confiar en una ICA para la autenticación de certificado. Si confía en el ICA para la autenticación de certificados, el ICA se convierte en una CA para la creación de rutas. Si la ICA es de confianza tanto para la autenticación de certificado como para la identidad, el certificado de proveedor de CA se ignora porque la ICA se convierte en la CA.
-* **** Confiar en el servidor OCSP con HTTP: Si el servidor de respuesta OSCP reside en una ubicación HTTP, también debe seleccionar Confiar en conexiones SSL. Si el encuestado OSCP requiere validación de CRL, asegúrese de seleccionar también Confiar en la identidad.
-* **** Raíz de Adobe: No seleccione Conexiones SSL ni Tipos de almacén de confianza del servidor OCSP. La raíz de Adobe no es de confianza para conexiones SSL y el servidor OCSP. Adobe no emite certificados OCSP y SSL. Adobe Root es de confianza implícita en un alias name=&quot;ADOBEROOT&quot;.
+* **Confiar en la autenticación de certificado con CA:** Para la validación de CRL, también seleccione Confiar en la identidad.
+* **Confianza para la autenticación de certificados con ICA:** Seleccione solo Confiar en la identidad. No se debe confiar en una ICA para la autenticación de certificado. Si confía en el ICA para la autenticación de certificados, el ICA se convierte en una CA para la creación de rutas. Si la ICA es de confianza tanto para la autenticación de certificado como para la identidad, el certificado de proveedor de CA se ignora porque la ICA se convierte en la CA.
+* **Confiar en el servidor OCSP con HTTP:** Si el servidor de respuesta OSCP reside en una ubicación HTTP, también debe seleccionar Confiar en conexiones SSL. Si el encuestado OSCP requiere validación de CRL, asegúrese de seleccionar también Confiar en la identidad.
+* **Raíz de Adobe:** No seleccione Conexiones SSL ni Tipos de almacén de confianza del servidor OCSP. La raíz de Adobe no es de confianza para conexiones SSL y el servidor OCSP. Adobe no emite certificados OCSP y SSL. La raíz de Adobe es de confianza implícita en un alias name=&quot;ADOBEROOT&quot;.
 
 Solo se admiten los certificados X509v3. Este tipo de certificado se puede suministrar en un archivo binario con codificación DER (.cer) o en un archivo de texto que contenga una versión con codificación Base64 del mismo certificado con codificación DER (incluidos los certificados X509 en formato Privacy Enhanced Mail (PEM)).
 
@@ -35,12 +38,13 @@ También puede importar y eliminar certificados mediante la API del Administrado
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de almacén de confianza > Certificados]**.
 1. Haga clic en Importar y, en Tipo de almacén de confianza, seleccione una de estas opciones:
 
-   * **** Confiar en conexiones SSL: Especifica que los formularios AEM pueden utilizar certificados para conectarse a sistemas externos a través de SSL.
-   * **** Confiar para certificar firma: Especifica que los certificados son de confianza en las operaciones de firma de documentos para certificar firmas digitales de autor.
-   * **** Confiar en la firma: Especifica que los certificados son de confianza en las operaciones de firma de documentos para firmas digitales que no son de autor.
-   * **** Confianza para la autenticación de certificado: Especifica que los formularios AEM utilizan certificados para autenticar usuarios mediante autenticación de certificado o tarjeta inteligente.
-   * **** Confiar en el servidor OCSP: Especifica que los formularios de AEM pueden utilizar certificados para conectarse a respondedores de OCSP externos
-   * **** Confianza en la identidad: Especifica que los certificados se pueden utilizar para confiar en información que no sea de los tipos especificados anteriormente.
+   * **Confiar en conexiones SSL:** Especifica que AEM formularios pueden utilizar certificados para conectarse a sistemas externos a través de SSL.
+   * **Confiar para certificar firma:** Especifica que los certificados son de confianza en las operaciones de firma de documento para la certificación de firmas digitales de autor.
+   * **Confiar en la firma:** Especifica que los certificados son de confianza en las operaciones de firma de documento para firmas digitales que no son de autor.
+   * **Confianza para la autenticación de certificado:** Especifica AEM formularios utiliza certificados para autenticar usuarios mediante autenticación de certificado o tarjeta inteligente.
+   * **Confiar en el servidor OCSP:** Especifica que los formularios AEM pueden utilizar certificados para conectarse a respondedores OCSP externos
+   * **Confianza en la identidad:** Especifica que los certificados se pueden utilizar para confiar en información que no sea de los tipos especificados anteriormente.
+
    >[!NOTE]
    >
    >El almacén de confianza confía implícitamente en un certificado raíz de Adobe para la autenticación de certificados, la firma, la certificación de la firma y la identidad.
@@ -51,7 +55,7 @@ También puede importar y eliminar certificados mediante la API del Administrado
 ## Exportar un certificado {#export-a-certificate}
 
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de almacén de confianza > Certificados]**.
-1. Haga clic en el nombre de alias del certificado que desea exportar. Se muestra la página Detalles **** del certificado.
+1. Haga clic en el nombre de alias del certificado que desea exportar. The **[!UICONTROL Certificate Details]** page is displayed.
 1. Haga clic en **[!UICONTROL Exportar]**, siga las instrucciones para exportar el certificado y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 
 ## Editar la configuración de confianza de un certificado y el tipo de almacén de confianza {#edit-a-certificate-s-trust-settings-and-trust-store-type}

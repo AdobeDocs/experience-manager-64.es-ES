@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Los componentes del espacio de trabajo de AEM Forms están diseñados para la ar
 * Plantilla, es decir, un archivo HTML que contiene controles de interfaz.
 * Vista, que actúa como una clase Controller de Template.
 
-Los recursos de todos los componentes se colocan en la estructura de carpetas que se describe a continuación. Para acceder a los recursos, inicie sesión en CRXDE Lite y busque `/libs/ws/js/runtime/`.
+Los recursos de todos los componentes se colocan en la estructura de carpetas que se describe a continuación. Para acceder a los recursos, inicie sesión en el CRXDE Lite y busque `/libs/ws/js/runtime/`.
 
 **modelos** Contiene modelos de red troncal.
 
@@ -33,7 +36,7 @@ Los recursos de todos los componentes se colocan en la estructura de carpetas qu
 
 **route** Contiene rutas universales. La carpeta Templates dentro de las rutas contiene el código HTML y las referencias a los componentes.
 
-**services** Contiene una interfaz de servicio para llamar a las API de servidor de Adobe Experience Manager en el extremo REST.
+**services** Contiene la interfaz de servicio para llamar a las API de servidor de Adobe Experience Manager en el extremo REST.
 
 **util** Contiene utilidades genéricas utilizables por varios componentes.
 

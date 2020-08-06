@@ -1,8 +1,8 @@
 ---
 title: Introducción a Process Sistema de informes
 seo-title: Introducción a Process Sistema de informes
-description: Pasos que debe seguir para empezar a utilizar AEM Forms en el Sistema de informes de procesos JEE
-seo-description: Pasos que debe seguir para empezar a utilizar AEM Forms en el Sistema de informes de procesos JEE
+description: Los pasos que debe seguir para empezar a usar AEM Forms en el Sistema de informes de procesos JEE
+seo-description: Los pasos que debe seguir para empezar a usar AEM Forms en el Sistema de informes de procesos JEE
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,23 +19,23 @@ ht-degree: 0%
 
 # Introducción a Process Sistema de informes {#getting-started-with-process-reporting}
 
-Process Sistema de informes permite a los usuarios de AEM Forms realizar consultas de información sobre los procesos de AEM Forms que están definidos actualmente en la implementación de AEM Forms. Sin embargo, Process Sistema de informes no accede a los datos directamente desde el repositorio de AEM Forms. Los datos se publican primero en el repositorio de Process Sistema de informes de forma programada (*por los* servicios ProcessDataPublisher y ProcessDataStorage). Los informes y consultas en el Sistema de informes de proceso se generan a partir de los datos de Sistema de informes de proceso publicados en el repositorio. Process Sistema de informes se instala como parte del módulo Flujo de trabajo de formularios.
+El Sistema de informes de procesos permite a los usuarios de AEM Forms obtener información de consulta sobre los procesos de AEM Forms que se definen actualmente en la implementación de AEM Forms. Sin embargo, Process Sistema de informes no accede a los datos directamente desde el repositorio de AEM Forms. Los datos se publican primero en el repositorio de Process Sistema de informes de forma programada (*por los* servicios ProcessDataPublisher y ProcessDataStorage). Los informes y consultas en el Sistema de informes de proceso se generan a partir de los datos de Sistema de informes de proceso publicados en el repositorio. El Sistema de informes de procesos se instala como parte del módulo Forms Workflow.
 
-En este artículo se detallan los pasos para permitir la publicación de datos de AEM Forms en el repositorio de Process Sistema de informes. Después de lo cual, podrá utilizar Process Sistema de informes para ejecutar informes y consultas. El artículo también cubre las opciones disponibles para configurar los servicios de Sistema de informes de procesos.
+Este artículo detalla los pasos para habilitar la publicación de datos de AEM Forms en el repositorio de Process Sistema de informes. Después de lo cual, podrá utilizar Process Sistema de informes para ejecutar informes y consultas. El artículo también cubre las opciones disponibles para configurar los servicios de Sistema de informes de procesos.
 
 ## Requisitos previos de Sistema de informes de procesos {#process-reporting-pre-requisites}
 
 ### Purgar procesos no esenciales {#purge-non-essential-processes}
 
-Si actualmente utiliza Forms Workflow, la base de datos de AEM Forms puede contener una gran cantidad de datos
+Si actualmente está utilizando Forms Workflow, la base de datos de AEM Forms puede contener una gran cantidad de datos
 
 Los servicios de publicación de Process Sistema de informes publicarán todos los datos de AEM Forms disponibles actualmente en la base de datos. Esto implica que, si la base de datos contiene datos heredados sobre los que no desea ejecutar informes y consultas, todos esos datos también se publicarán en el repositorio aunque no sean necesarios para el sistema de informes. Se recomienda depurar estos datos antes de ejecutar los servicios para publicar los datos en el repositorio de Process Sistema de informes. Esto mejorará el rendimiento tanto del servicio del editor como del servicio que consulta los datos para el sistema de informes.
 
-Para obtener más información sobre la depuración de datos de proceso de AEM Forms, consulte [Depuración de datos](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)de proceso.
+Para obtener más información sobre la depuración de datos de procesos de AEM Forms, consulte [Depuración de datos](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)de procesos.
 
 >[!NOTE]
 >
->Para obtener sugerencias y trucos sobre la herramienta de depuración, consulte el artículo de Adobe Developer Connection sobre la [depuración de procesos y trabajos](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Para obtener sugerencias y trucos de la utilidad de depuración, consulte el artículo de Adobe Developer Connection sobre [Depuración de procesos y trabajos](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
 ## Configuración de los servicios de Sistema de informes de procesos {#configuring-process-reporting-services}
 
@@ -43,7 +43,7 @@ Para obtener más información sobre la depuración de datos de proceso de AEM F
 
 Los servicios de Sistema de informes de procesos publican datos de la base de datos de AEM Forms en el repositorio de Process Sistema de informes de forma programada.
 
-Esta operación puede requerir muchos recursos y puede afectar al rendimiento de los servidores de AEM Forms. Se recomienda programar esto fuera de los espacios de tiempo ocupados del servidor de AEM Forms.
+Esta operación puede requerir muchos recursos y puede afectar al rendimiento de los servidores AEM Forms. Se recomienda programar esto fuera de los espacios de tiempo ocupados del servidor de AEM Forms.
 
 De forma predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a.m.
 
@@ -51,11 +51,11 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 
 >[!NOTE]
 >
->Si ejecuta la implementación de AEM Forms en un clúster, lleve a cabo los siguientes pasos en cada nodo del clúster.
+>Si está ejecutando la implementación de AEM Forms en un clúster, lleve a cabo los siguientes pasos en cada nodo del clúster.
 
 #### JBoss Application Server {#jboss-application-server}
 
-1. Detenga la instancia de servidor de AEM Forms.
+1. Detenga la instancia del servidor de AEM Forms.
    * (Para Windows) Abra el `[*JBoss root*]/bin/run.conf.bat` archivo en un editor.
    * (Para Linux, AIX y Solaris) `[*JBoss root*]/bin/run.conf.sh` en un editor.
 
@@ -67,11 +67,11 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 
 1. Guarde y cierre el `run.conf.bat` archivo.
 
-1. Reinicie la instancia de servidor de AEM Forms.
+1. Reinicie la instancia del servidor de AEM Forms.
 
 #### Servidor de aplicaciones WebSphere {#websphere-application-server}
 
-1. Detenga la instancia de servidor de AEM Forms.
+1. Detenga la instancia del servidor de AEM Forms.
 1. Inicie sesión en la Consola administrativa de WebSphere. En el árbol de navegación, haga clic en **Servidores** > Servidores **** de aplicaciones y, a continuación, en el panel derecho, haga clic en el nombre del servidor.
 
 1. En Infraestructura de servidor, haga clic en **Java y Administración** de procesos > Definición **de proceso**.
@@ -86,11 +86,11 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 
 1. Haga clic en **Aplicar**, en Aceptar y, a continuación, en **Guardar directamente en la configuración** maestra.
 
-1. Reinicie la instancia de servidor de AEM Forms.
+1. Reinicie la instancia del servidor de AEM Forms.
 
 #### Servidor de aplicaciones WebLogic {#weblogic-application-server}
 
-1. Detenga la instancia de servidor de AEM Forms.
+1. Detenga la instancia del servidor de AEM Forms.
 1. Inicie sesión en la Consola de administración de WebLogic. La dirección predeterminada de la Consola de administración de WebLogic es `https://[hostname]:[port]/console`.
 
 1. En Centro de cambios, haga clic en **Bloquear y editar**.
@@ -107,7 +107,7 @@ Realice los siguientes pasos para cambiar la programación de publicación:
 
 1. Haga clic en **Guardar** y, a continuación, en **Activar cambios**.
 
-1. Reinicie la instancia de servidor de AEM Forms.
+1. Reinicie la instancia del servidor de AEM Forms.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
 
@@ -278,7 +278,7 @@ Para ver el procedimiento para crear y mostrar informes personalizados, consulte
 
 Haga clic en el título en cualquier momento para volver a la pantalla de inicio.
 
-**Hora de la última actualización:** Los datos de proceso se publican de forma programada desde la base de datos de AEM Forms al repositorio de Process Sistema de informes.
+**Hora de la última actualización:** Los datos del proceso se publican desde la base de datos de AEM Forms en el repositorio de Process Sistema de informes de forma programada.
 
 La hora de la última actualización muestra la última fecha y hora hasta la cual se insertaron las actualizaciones de datos en el repositorio de Process Sistema de informes.
 

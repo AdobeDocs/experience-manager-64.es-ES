@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
@@ -78,6 +81,7 @@ Algunos nodos de la ruta son carpetas y otros componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 

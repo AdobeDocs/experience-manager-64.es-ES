@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 84%
 
 ---
 
@@ -26,5 +29,5 @@ Con Dynamic Media dispone de varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Adición de recursos de Dynamic Media a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+* [Agregar recursos de Dynamic Media a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
 

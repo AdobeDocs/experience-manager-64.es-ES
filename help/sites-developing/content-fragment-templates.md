@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 translation-type: tm+mt
 source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 5%
 
 ---
 
@@ -37,13 +40,11 @@ Puede crear plantillas específicas del sitio para fragmentos de contenido en:
 
 * `/apps/settings/dam/cfm/templates`
 
-   
-Ubicación para superponer plantillas listas para usar o proporcionar plantillas específicas para el cliente y para toda la aplicación que no están pensadas para ampliarse o cambiarse en tiempo de ejecución.
+   Ubicación para superponer plantillas listas para usar o proporcionar plantillas específicas para el cliente y para toda la aplicación que no están pensadas para ampliarse o cambiarse en tiempo de ejecución.
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   
-La ubicación de las plantillas específicas del cliente para toda la instancia que deben cambiarse en tiempo de ejecución.
+   La ubicación de las plantillas específicas del cliente para toda la instancia que deben cambiarse en tiempo de ejecución.
 
 El orden de prioridad es (en orden descendente) `/conf`, `/apps`, `/libs`.
 
@@ -59,6 +60,7 @@ El orden de prioridad es (en orden descendente) `/conf`, `/apps`, `/libs`.
    >
    >
 1. Realice los cambios en `/apps`
+
 >
 
 
@@ -161,7 +163,7 @@ Más detalles sobre los nodos y sus propiedades son:
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>required</p> </td> 
-   <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para el elemento <strong>Principal</strong> , pero puede contener [1...n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama de modelo del fragmento.</p> <p>El primer elemento (como se ve en CRXDE Lite) se considera automáticamente el elemento <i>principal</i> ; el nombre del nodo es irrelevante y el nodo en sí no tiene una importancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td> 
+   <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para el elemento <strong>Principal</strong> , pero puede contener [1...n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama de modelo del fragmento.</p> <p>El primer elemento (como se ve en el CRXDE Lite) se considera automáticamente el elemento <i>principal</i> ; el nombre del nodo es irrelevante y el nodo en sí no tiene una importancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td> 
   </tr> 
  </tbody> 
 </table>

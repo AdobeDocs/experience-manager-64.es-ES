@@ -1,9 +1,12 @@
 ---
 title: Facetas de búsqueda
-description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
+description: Este artículo describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '2537'
+ht-degree: 22%
 
 ---
 
@@ -12,19 +15,19 @@ source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
 
 Obtenga información sobre cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 
-Una implementación en toda la empresa de Recursos Adobe Experience Manager (AEM) tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede resultar difícil y llevar mucho tiempo si solo se utilizan las funciones de búsqueda genéricas de AEM.
+Una implementación de Adobe Experience Manager (AEM) Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede ser difícil y llevar mucho tiempo si solo se utilizan las capacidades de búsqueda genéricas de AEM.
 
 Utilice las facetas de búsqueda del panel Filtros para agregar más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda agregan varias dimensiones (predicados) que le permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
 En resumen, las facetas de búsqueda permiten buscar recursos de varias formas en lugar de hacerlo en un único orden taxonómico predeterminado. Puede desplazarse fácilmente hasta el nivel de detalle deseado para una búsqueda más enfocada.
 
-Por ejemplo, si busca una imagen, puede elegir si desea un mapa de bits o una imagen vectorial. Puede reducir aún más el alcance de la búsqueda especificando el tipo MIME para la imagen. Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo, PDF o MS Word.
+Por ejemplo, si busca una imagen, puede elegir si desea un mapa de bits o una imagen vectorial. Puede reducir aún más el alcance de la búsqueda especificando el tipo MIME para la imagen. Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo PDF o MS Word.
 
-## Adición de un predicado {#adding-a-predicate}
+## Añadir un predicado {#adding-a-predicate}
 
 Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formulario de búsqueda subyacente mediante predicados. Para mostrar más o diferentes facetas, agregue predicados al formulario predeterminado o utilice un formulario personalizado que incluya facetas de su elección.
 
-Para las búsquedas de texto completo, agregue el predicado Texto completo al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad concreta. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
+Para las búsquedas de texto completo, agregue el predicado Texto completo al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad concreta. Añada el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
 1. Pulse o haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then tap  **Edit** ![aemassets_edit](assets/aemassets_edit.png).
@@ -35,7 +38,7 @@ Para las búsquedas de texto completo, agregue el predicado Texto completo al fo
 
    >[!NOTE]
    >
-   >Para utilizar la funcionalidad de búsqueda de carpetas desde el carril **de búsqueda de administración de** recursos preconfigurado desde una versión anterior de AEM, lleve a cabo los siguientes pasos:
+   >Para utilizar la funcionalidad de búsqueda de carpetas desde el carril **de búsqueda de administración de** recursos preconfigurado de una versión anterior de AEM, lleve a cabo los siguientes pasos:
    > 
    >1. Vaya a */conf/global/settings/dam/search/facets/assets/jcr:content/items* en CRX-DE.
    >1. Elimine el nodo de **tipo** .
@@ -65,21 +68,21 @@ Para las búsquedas de texto completo, agregue el predicado Texto completo al fo
 
    Asociación de una propiedad de metadatos con un predicado en el campo Nombre de propiedad
 
-1. Toque o haga clic en la **[!UICONTROL vista previa]** de la ![vista previa](assets/preview.png) para generar una vista previa del panel Filtros tal como aparece después de agregar el predicado.
-1. Revise el diseño del predicado en el modo de vista previa.
+1. Toque o haga clic en la **[!UICONTROL Previsualización]** de la ![previsualización](assets/preview.png) para generar una previsualización del panel Filtros tal como aparece después de agregar el predicado.
+1. Revise la presentación del predicado en el modo de Previsualización.
 
-   ![Vista previa del formulario de búsqueda antes de enviar los cambios](assets/preview-1.png)
+   ![Previsualización del formulario de búsqueda antes de enviar los cambios](assets/preview-1.png)
 
-   Vista previa del formulario de búsqueda antes de enviar los cambios
+   Previsualización del formulario de búsqueda antes de enviar los cambios
 
-1. Para cerrar la vista previa, toque o haga clic en **[!UICONTROL Cerrar]** ![cerrar](assets/close.png) en la esquina superior derecha de la vista previa.
+1. Para cerrar la previsualización, toque o haga clic en **[!UICONTROL Cerrar]** ![cerrar](assets/close.png) en la esquina superior derecha de la previsualización.
 1. Toque **[!UICONTROL Listo]** para guardar la configuración.
 1. Vaya al panel Buscar en la interfaz de usuario de Recursos. El predicado Propiedad se agrega al panel.
-1. Escriba una descripción del recurso que se buscará en el cuadro de texto. Por ejemplo, escriba &quot;Adobe&quot;. Cuando realiza una búsqueda, los recursos con una descripción que coincide con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
+1. Escriba una descripción del recurso que se buscará en el cuadro de texto. Por ejemplo, escriba &quot;Adobe&quot;. Al realizar una búsqueda, los recursos con una descripción que coincida con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
 
-## Adición de un predicado de opciones {#adding-an-options-predicate}
+## Añadir un predicado de opciones {#adding-an-options-predicate}
 
-El predicado Opciones permite agregar varias opciones de búsqueda en el panel Filtros. Puede seleccionar una o varias de estas opciones en el panel Filtros para buscar recursos. Por ejemplo, para buscar recursos en función del tipo de archivo, configure las opciones como Imágenes, Multimedia, Documentos y Archivos en el formulario de búsqueda. Después de configurar estas opciones, la búsqueda se realiza en recursos de tipo GIF, JPEG, PNG, etc., al seleccionar la opción Imágenes en el panel Filtros.
+El predicado Opciones permite agregar varias opciones de búsqueda en el panel Filtros. Puede seleccionar una o varias de estas opciones en el panel Filtros para buscar recursos. Por ejemplo, para buscar recursos en función del tipo de archivo, configure opciones como Imágenes, Multimedia, Documentos y Archivos en el formulario de búsqueda. Después de configurar estas opciones, la búsqueda se realiza en recursos de tipo GIF, JPEG, PNG, etc., al seleccionar la opción Imágenes en el panel Filtros.
 
 Para asignar las opciones a la propiedad correspondiente, cree una estructura de nodos para las opciones y proporcione la ruta del nodo principal en la propiedad Nombre de propiedad del predicado Opciones. El nodo principal debe ser del tipo `sling`: `OrderedFolder`. Las opciones deben ser del tipo `nt:unstructured`. Los nodos de opciones deben tener las propiedades `jcr:title` y `value` configuradas.
 
@@ -120,7 +123,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 1. Realice una de las acciones siguientes:
 
    * In the **[!UICONTROL Property Name]** field, mention the path of the JSON file where you define the nodes for the options and specify corresponding key-value pairs.
-   * Toque ![Agregar icono](assets/do-not-localize/aem_assets_add_icon.png) junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para agregar otra opción, toque o haga clic en ![Agregar icono](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
+   * Toque ![Añadir icono](assets/do-not-localize/aem_assets_add_icon.png) junto al campo Opciones para especificar el texto y el valor de visualización de las opciones que desea proporcionar en el panel Filtros. Para agregar otra opción, toque o haga clic en ![Añadir icono](assets/do-not-localize/aem_assets_add_icon.png) y repita el paso.
 
 1. Compruebe que la opción **[!UICONTROL Selección única]** se borra para que el usuario pueda seleccionar varias opciones a la vez para diferentes tipos de archivos (por ejemplo, imágenes, documentos, multimedia y archivos). Si elige **[!UICONTROL Selección única]**, el usuario solo puede seleccionar una opción para diferentes tipos de archivo a la vez.
 
@@ -131,12 +134,12 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 1. En el campo **Descripción** , introduzca una descripción opcional y, a continuación, haga clic en **[!UICONTROL Finalizado]**.
 1. Vaya al panel Buscar. El predicado Opciones se agrega al panel **Buscar** . Las opciones de Tipo **[!UICONTROL de archivo]** se muestran como casillas de verificación.
 
-## Adición de un predicado de propiedad de varios valores {#adding-a-multi-value-property-predicate}
+## Añadir un predicado de propiedad de varios valores {#adding-a-multi-value-property-predicate}
 
-El predicado de propiedades de varios valores permite buscar varios valores en los recursos. Imagine un escenario en el que tiene imágenes de varios productos en Recursos AEM y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
+El predicado de propiedades de varios valores permite buscar varios valores en los recursos. Imagine un escenario en el que tiene imágenes de varios productos en AEM Assets y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
-1. En la página Buscar formularios, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y toque **Editar** aemassets_edit ![](assets/aemassets_edit.png).
+1. En la página Buscar en Forms, seleccione **[!UICONTROL Recursos Administración Barra]** de búsqueda, toque **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
 1. Asegúrese de que la opción **[!UICONTROL Compatibilidad con delimitadores]** está seleccionada. En el campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuales. De forma predeterminada, se especifica una coma como delimitador. Puede especificar un delimitador diferente.
@@ -144,15 +147,15 @@ El predicado de propiedades de varios valores permite buscar varios valores en l
 1. Vaya al panel Filtros de la interfaz de usuario de Assets. El predicado **[!UICONTROL Propiedad de varios valores]** se agrega al panel.
 1. Especifique varios valores en el campo Valor múltiple separado por los delimitadores y realice la búsqueda. El predicado obtiene una coincidencia de texto exacta para los valores especificados.
 
-## Adición de un predicado de etiquetas {#adding-a-tags-predicate}
+## Añadir un predicado de etiquetas {#adding-a-tags-predicate}
 
-El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, Recursos AEM busca en los recursos una o varias etiquetas coincidentes en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación O utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción de coincidencia con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, AEM Assets busca en los recursos una o varias etiquetas coincidentes en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación O utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción de coincidencia con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
-1. En la página Buscar formularios, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y toque **Editar** aemassets_edit ![](assets/aemassets_edit.png).
+1. En la página Buscar en Forms, seleccione **[!UICONTROL Recursos Administración Barra]** de búsqueda y toque **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. En la ficha Configuración, introduzca un texto de marcador de posición para el predicado. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
-1. Configure la propiedad de ruta de etiquetas raíz de este predicado para rellenar varias etiquetas en la lista Etiquetas.
+1. Configure la propiedad de ruta de las etiquetas raíz de este predicado para rellenar varias etiquetas en la lista Etiquetas.
 1. Seleccione la opción **[!UICONTROL Mostrar todas las etiquetas]** para buscar recursos que incluyan todas las etiquetas que especifique.
 
    ![Configuración típica del predicado Etiquetas](assets/tags_predicate.png)
@@ -161,7 +164,7 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 
 1. En el campo **[!UICONTROL Descripción]** , introduzca una descripción opcional y toque o haga clic en **[!UICONTROL Listo]**.
 1. Vaya al panel Buscar. El predicado **[!UICONTROL Etiquetas]** se agrega al panel Buscar.
-1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccione en la lista de sugerencias.
+1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccione entre la lista de sugerencias.
 
    ![Sugerencia proporcionada por AEM al escribir el nombre de la etiqueta](assets/chlimage_1-419.png)
 
@@ -169,7 +172,7 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
-## Adición de otros predicados {#adding-other-predicates}
+## Añadir otros predicados {#adding-other-predicates}
 
 De forma similar a como se agrega un predicado de propiedad o un predicado de opciones, se pueden agregar los siguientes predicados adicionales al panel Buscar:
 
@@ -181,7 +184,7 @@ De forma similar a como se agrega un predicado de propiedad o un predicado de op
 | [!UICONTROL Estado de publicación] | Buscar predicado para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad </li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha relativa] | El predicado de búsqueda busca recursos en función de la fecha relativa de su creación. Por ejemplo, puede configurar opciones, como hace 2 meses, hace 3 semanas, etc. | <ul><li>Etiqueta</li><li>Nombre de la propiedad </li><li>Fecha relativa</li></ul> |
 | [!UICONTROL Intervalo] | El predicado de búsqueda busca recursos que se encuentran dentro de un rango especificado. En el panel Buscar, puede especificar los valores mínimo y máximo para el rango. | <ul><li>Etiqueta</li><li>Nombre de la propiedad </li><li>Descripción</li></ul> |
-| [!UICONTROL Intervalo de fechas] | El predicado de búsqueda busca recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización con los selectores de fecha. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad </li><li>Texto de rango (Desde)</li><li>Texto de intervalo (hasta)</li><li>Descripción</li></ul> |
+| [!UICONTROL Intervalo de fechas] | El predicado de búsqueda busca recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de Inicio y de finalización mediante selectores de fecha. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad </li><li>Texto de rango (Desde)</li><li>Texto de intervalo (hasta)</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha] | Busque en el predicado una búsqueda de recursos basada en deslizadores basada en una propiedad de fecha. | <ul><li>Etiqueta</li><li>Nombre de la propiedad </li><li>Descripción</li></ul> |
 | [!UICONTROL Tamaño del archivo] | El predicado de búsqueda busca recursos en función de su tamaño. Se trata de un predicado basado en el silenciador en el que se seleccionan las opciones del deslizador de un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio de CRX. El tamaño del archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad </li><li>Ruta</li><li>Descripción</li></ul> |
 | [!UICONTROL Última modificación del recurso] | Buscar predicado para buscar recursos modificados recientemente | <ul><li>Nombre de la propiedad </li><li>Valor de propiedad</li><li>Descripción</li></ul> |
@@ -192,15 +195,15 @@ De forma similar a como se agrega un predicado de propiedad o un predicado de op
 
 ## Restauración de facetas de búsqueda predeterminadas {#restoring-default-search-facets}
 
-De forma predeterminada, aparece un icono Bloquear antes del carril **[!UICONTROL de búsqueda Administración de]** recursos en la página **[!UICONTROL Buscar formularios]** . El icono Bloquear desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
+De forma predeterminada, aparece un icono Bloquear antes del carril **[!UICONTROL de búsqueda Administración de]** recursos en la página **[!UICONTROL Buscar en Forms]** . El icono Bloquear desaparece si agrega facetas de búsqueda al formulario que indican que se ha modificado el formulario predeterminado.
 
-![El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
+![El icono Bloquear en una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
 
-El icono Bloquear en una opción de la página Buscar formularios indica que la configuración predeterminada está intacta y no está personalizada.
+El icono Bloquear en una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada.
 
 Para restaurar la faceta de búsqueda predeterminada, realice los siguientes pasos:
 
-1. Seleccione el carril **[!UICONTROL de búsqueda de administración de]** recursos en la página **[!UICONTROL Buscar formularios]** .
+1. Seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda en la página **[!UICONTROL Buscar en Forms]** .
 1. Toque **[!UICONTROL Eliminar]** ![eliminar contorno](assets/deleteoutline.png) en la barra de herramientas.
 1. En el cuadro de diálogo de confirmación, toque **[!UICONTROL Eliminar]** para eliminar los cambios personalizados.
 
@@ -208,9 +211,9 @@ Para restaurar la faceta de búsqueda predeterminada, realice los siguientes pas
 
 ## User permissions {#user-permissions}
 
-Si no se le ha asignado una función de administrador, aquí tiene una lista de permisos que necesita para realizar acciones de edición, eliminación y vista previa que involucran facetas de búsqueda.
+Si no se le asigna una función de administrador, aquí tiene una lista de permisos que necesita para realizar acciones de edición, eliminación y previsualización que involucran facetas de búsqueda.
 
-| Acción | Permisos  |
+| Acción | Permisos    |
 |---|---|
 | [!UICONTROL Editar] | Permisos de lectura y escritura en el nodo /apps de CRX |
 | [!UICONTROL Eliminar] | Permisos de lectura, escritura y eliminación en el nodo /apps de CRX |

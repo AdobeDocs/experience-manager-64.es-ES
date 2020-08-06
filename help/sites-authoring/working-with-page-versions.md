@@ -79,6 +79,7 @@ Cuando haya creado una versión, puede volver a dicha versión si es necesario.
 >* Restaure la primera versión; p. ej. 1.0.
 >* Vuelva a crear versiones nuevas.
 >* Las etiquetas generadas y los nombres de nodo ahora serán 1.0.0, 1.0.1, 1.0.2, etc.
+
 >
 
 

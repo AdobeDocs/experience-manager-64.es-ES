@@ -1,6 +1,6 @@
 ---
-title: Desarrollo y ampliación de flujos de trabajo
-seo-title: Desarrollo y ampliación de flujos de trabajo
+title: Desarrollo y ampliación de Flujos de trabajo
+seo-title: Desarrollo y ampliación de Flujos de trabajo
 description: AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo e interactuar mediante programación con flujos de trabajo
 seo-description: AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo e interactuar mediante programación con flujos de trabajo
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 1%
 
 ---
 
 
-# Desarrollo y ampliación de flujos de trabajo{#developing-and-extending-workflows}
+# Desarrollo y ampliación de Flujos de trabajo{#developing-and-extending-workflows}
 
 AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo e interactuar mediante programación con flujos de trabajo.
 
-Los flujos de trabajo le permiten automatizar procesos para administrar recursos y publicar contenido en su entorno AEM. Los flujos de trabajo se componen de una serie de pasos, en los que cada paso lleva a cabo una tarea discreta. Puede utilizar datos lógicos y de tiempo de ejecución para tomar decisiones sobre cuándo puede continuar un proceso y seleccionar el siguiente paso de uno de los varios pasos posibles.
+Los Flujos de trabajo le permiten automatizar procesos para administrar recursos y publicar contenido en su entorno de AEM. Los Flujos de trabajo constan de una serie de pasos, cada uno de los cuales realiza una tarea discreta. Puede utilizar datos lógicos y de tiempo de ejecución para tomar decisiones sobre cuándo puede continuar un proceso y seleccionar el siguiente paso de uno de los varios pasos posibles.
 
-Por ejemplo, los procesos empresariales para crear y publicar páginas web incluyen tareas de aprobación y de cierre de sesión realizadas por varios participantes. Estos procesos se pueden modelar con flujos de trabajo de AEM y aplicar a contenido específico.
+Por ejemplo, los procesos empresariales para crear y publicar páginas web incluyen tareas de aprobación y de cierre de sesión de varios participantes. Estos procesos se pueden modelar con flujos de trabajo de AEM y aplicar a contenido específico.
 
 A continuación se explican los aspectos clave, mientras que en las páginas siguientes se explican más detalles:
 
 * [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md)
 * [Ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows-customizing-extending.md)
-* [Interactuar con flujos de trabajo mediante programación](/help/sites-developing/workflows-program-interaction.md)
+* [Interactuar con Flujos de trabajo mediante programación](/help/sites-developing/workflows-program-interaction.md)
 * [Referencia de pasos de flujo de trabajo](/help/sites-developing/workflows-step-ref.md)
 * [Referencia del proceso de flujo de trabajo](/help/sites-developing/workflows-process-ref.md)
 * [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
@@ -36,12 +39,13 @@ A continuación se explican los aspectos clave, mientras que en las páginas sig
 >
 >Para obtener información sobre:
 >
->* Para participar en flujos de trabajo, consulte [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
->* Administración de flujos de trabajo e instancias de flujo de trabajo, consulte [Administración de flujos de trabajo](/help/sites-administering/workflows.md).
->* Para consultar un artículo completo de la comunidad, consulte [Modificación de recursos digitales mediante flujos de trabajo de Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
->* Consulte el seminario web de [preguntas a los expertos de AEM sobre flujos de trabajo](https://bit.ly/ATACE218).
->* Para consultar un artículo completo de la comunidad, consulte [Creación de un paso](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)de participante dinámico de Adobe Experience Manager 6.3 personalizado.
+>* Para participar en flujos de trabajo, consulte [Uso de Flujos de trabajo](/help/sites-authoring/workflows.md).
+>* Administración de flujos de trabajo e instancias de flujo de trabajo, consulte [Administración de Flujos de trabajo](/help/sites-administering/workflows.md).
+>* Para consultar un artículo completo de la comunidad, consulte [Modificación de recursos digitales mediante Flujos de trabajo de Adobe Experience Manager.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* Consulte el seminario web de [preguntas a los expertos AEM sobre Flujos de trabajo](https://bit.ly/ATACE218).
+>* Para consultar un artículo completo de la comunidad, consulte [Creación de un paso](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)personalizado de Adobe Experience Manager 6.3 Dynamic Participant.
 >* Cambios en la ubicación de la información consulte Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md) y Prácticas recomendadas [de flujo de trabajo - Ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
+
 >
 
 
@@ -66,11 +70,11 @@ Las ediciones al modelo de flujo de trabajo que se producen y/o los modelos de t
 
 ### Etapa {#step}
 
-Cada paso lleva a cabo una tarea discreta. Existen diferentes tipos de pasos de flujo de trabajo:
+Cada paso logra una tarea discreta. Existen diferentes tipos de pasos de flujo de trabajo:
 
 * Participante (usuario/grupo): Estos pasos generan un elemento de trabajo y lo asignan a un usuario o grupo. Un usuario debe completar el elemento de trabajo para avanzar en el flujo de trabajo.
-* Proceso (secuencia de comandos, llamada al método Java): El sistema ejecuta automáticamente estos pasos. Una secuencia de comandos ECMA o una clase Java implementa el paso. Los servicios se pueden desarrollar para escuchar eventos de flujo de trabajo especiales y realizar tareas según la lógica empresarial.
-* Contenedor (Subflujo de trabajo): Este tipo de paso inicia otro modelo de flujo de trabajo.
+* Proceso (secuencia de comandos, llamada al método Java): El sistema ejecuta automáticamente estos pasos. Una secuencia de comandos ECMA o una clase Java implementa el paso. Los servicios se pueden desarrollar para escuchar eventos especiales de flujo de trabajo y realizar tareas según la lógica empresarial.
+* Contenedor (Subflujo de trabajo): Este tipo de paso inicio otro modelo de flujo de trabajo.
 * O Dividir/Unir: Utilice la lógica para decidir qué paso ejecutar después en el flujo de trabajo.
 * Y dividir/unir: Permite ejecutar varios pasos simultáneamente.
 
@@ -125,11 +129,11 @@ Existen varios tipos de flujo de trabajo, como se indica en la consola Modelos d
 
 * **Valor predeterminado**
 
-   Estos son los flujos de trabajo integrados que se incluyen en una instancia estándar de AEM.
+   Estos son los flujos de trabajo predeterminados que se incluyen en una instancia de AEM estándar.
 
-* Flujos de trabajo personalizados (sin indicador en la consola)
+* flujos de trabajo personalizados (sin indicador en la consola)
 
-   Son flujos de trabajo que se han creado como nuevos o a partir de flujos de trabajo integrados que se han superpuesto con personalizaciones.
+   Son flujos de trabajo que se han creado como nuevos o a partir de flujos de trabajo listos para usar que se han superpuesto con personalizaciones.
 
 * **Heredado**
 
@@ -137,9 +141,9 @@ Existen varios tipos de flujo de trabajo, como se indica en la consola Modelos d
 
 ### Flujos de trabajo transitorios {#transient-workflows}
 
-Los flujos de trabajo estándar guardan la información del tiempo de ejecución (historial) durante su ejecución. También puede definir un modelo de flujo de trabajo como **transitorio** para evitar que dicho historial se mantenga. Se utiliza para ajustar el rendimiento, ya que ahorra/evita el tiempo/recursos utilizados para mantener la información.
+Los flujos de trabajo estándar guardan información de tiempo de ejecución (historial) durante la ejecución. También puede definir un modelo de flujo de trabajo como **transitorio** para evitar que dicho historial se mantenga. Se utiliza para ajustar el rendimiento, ya que ahorra/evita el tiempo/recursos utilizados para mantener la información.
 
-Los flujos de trabajo transitorios pueden utilizarse para cualquier flujo de trabajo que:
+Pueden utilizarse flujos de trabajo transitorios para cualquier flujos de trabajo que:
 
 * se ejecutan con frecuencia.
 * no necesita el historial de flujo de trabajo.
@@ -157,6 +161,7 @@ Se introdujeron flujos de trabajo transitorios para cargar un gran número de re
 >* El tipo de carga útil (por ejemplo, vídeo) requiere pasos externos para el procesamiento; en estos casos, el historial de tiempo de ejecución es necesario para la confirmación del estado.
 >* El flujo de trabajo entra en una división **AND**; en estos casos, el historial de tiempo de ejecución es necesario para la confirmación del estado.
 >* Cuando el flujo de trabajo transitorio entra en el paso de un participante, cambia el modo (en tiempo de ejecución) a no transitorio; a medida que la tarea se pasa a una persona, el historial debe persistir
+
 >
 
 
@@ -171,7 +176,7 @@ Se introdujeron flujos de trabajo transitorios para cargar un gran número de re
 
 >[!NOTE]
 >
->Consulte [Prácticas recomendadas para recursos](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obtener más información sobre el impacto de los flujos de trabajo transitorios en el rendimiento de los recursos.
+>Consulte [Prácticas recomendadas para los recursos](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obtener más información sobre el impacto de los Flujos de trabajo transitorios en el rendimiento de los recursos.
 
 ### Compatibilidad con varios recursos {#multi-resource-support}
 
@@ -185,9 +190,9 @@ Si la compatibilidad con **** varios recursos no está activada para el modelo d
 
 ### Etapas del flujo de trabajo {#workflow-stages}
 
-Las fases de flujo de trabajo ayudan a visualizar el progreso de un flujo de trabajo al administrar tareas. Se pueden utilizar para proporcionar una visión general de hasta dónde está el flujo de trabajo a través del procesamiento, ya que cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso descrito por **etapa** (en lugar de un paso individual).
+Las etapas del flujo de trabajo ayudan a visualizar el progreso de un flujo de trabajo al administrar tareas. Se pueden utilizar para proporcionar una visión general de hasta dónde está el flujo de trabajo a través del procesamiento, ya que cuando se ejecuta el flujo de trabajo, el usuario puede realizar una vista del progreso descrito por **etapa** (en lugar de un paso individual).
 
-Dado que los nombres de los pasos individuales pueden ser específicos y técnicos, los nombres de las etapas se pueden definir para proporcionar una vista conceptual del progreso del flujo de trabajo.
+Como los nombres de los pasos individuales pueden ser específicos y técnicos, los nombres de las etapas se pueden definir para proporcionar una vista conceptual del progreso del flujo de trabajo.
 
 Por ejemplo, para un flujo de trabajo con seis pasos y cuatro etapas:
 
@@ -195,6 +200,7 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro etapas:
 
    * Se pueden crear varios nombres de etapa.
    * A continuación, se asigna un nombre de escenario individual a cada paso (se puede asignar un nombre de escenario a uno o varios pasos).
+
    | **Nombre del paso** | **Etapa (asignada al paso)** |
    |---|---|
    | Etapa 1 | Crear |
@@ -204,14 +210,14 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro etapas:
    | Etapa 5 | Completar |
    | Etapa 6 | Completar |
 
-1. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso según los nombres de las etapas (en lugar de los nombres de los pasos). El progreso del flujo de trabajo se mostrará en la ficha INFORMACIÓN DEL [FLUJO DE TRABAJO de la ventana de detalles de la tarea del elemento](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) de trabajo que aparece en la [Bandeja de entrada](/help/sites-authoring/inbox.md).
+1. Cuando se ejecuta el flujo de trabajo, el usuario puede realizar la vista del progreso según los nombres de las fases (en lugar de los nombres de los pasos). El progreso del flujo de trabajo se mostrará en la ficha INFORMACIÓN DEL [FLUJO DE TRABAJO de la ventana de detalles de tarea del elemento](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) de trabajo que aparece en la [Bandeja de entrada](/help/sites-authoring/inbox.md).
 
-### Flujos de trabajo y formularios {#workflows-and-forms}
+### Flujos de trabajo y Forms {#workflows-and-forms}
 
-Normalmente, los flujos de trabajo se utilizan para procesar envíos de formularios en AEM. Esto puede suceder con los componentes [principales de los componentes](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) de formulario disponibles en una instancia estándar de AEM o con la solución [](/help/forms/using/aem-forms-workflow.md)AEM Forms.
+Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en AEM. Esto puede suceder con los componentes [principales de los componentes](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) de formulario disponibles en una instancia de AEM estándar o con la solución [](/help/forms/using/aem-forms-workflow.md)AEM Forms.
 
 Al crear un nuevo formulario, el envío del formulario se puede asociar fácilmente con un modelo de flujo de trabajo; por ejemplo, almacenar el contenido en una ubicación concreta del repositorio o notificar al usuario el envío del formulario y su contenido.
 
 ### Flujos de trabajo y traducción {#workflows-and-translation}
 
-Los flujos de trabajo también forman parte integrante del proceso de [traducción](/help/sites-administering/translation.md) .
+Los Flujos de trabajo también forman parte integrante del proceso de [traducción](/help/sites-administering/translation.md) .

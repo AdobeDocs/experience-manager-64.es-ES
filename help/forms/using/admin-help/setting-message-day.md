@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -27,13 +30,13 @@ Si es necesario, puede utilizar las etiquetas HTML admitidas por Adobe Flash® P
 * &lt;font> Etiqueta de fuente
 * &lt;img> Etiqueta de imagen
 * &lt;i> Etiqueta cursiva
-* &lt;li> Etiqueta de elemento de lista
+* Etiqueta de elemento de Lista &lt;li>
 * &lt;p> Etiqueta de párrafo
 * Etiqueta &lt;span> Span
 * Etiqueta de formato de texto &lt;textformat>
 * &lt;u> Subrayar etiqueta
 
-Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad de la `htmlText` clase TextField en la Referencia [del lenguaje](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad de la `htmlText` clase TextField en la Referencia [del lenguaje de](https://www.adobe.com/support/documentation/en/flex/)Flex.
 
 ## Configurar el mensaje del día {#set-the-message-of-the-day}
 
@@ -43,5 +46,5 @@ Para obtener más información sobre las etiquetas admitidas, consulte la defini
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 

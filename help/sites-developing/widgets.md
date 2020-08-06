@@ -1,8 +1,8 @@
 ---
 title: Uso y ampliación de utilidades (IU clásica)
 seo-title: Uso y ampliación de utilidades (IU clásica)
-description: La interfaz basada en web de AEM utiliza AJAX y otras tecnologías de navegador modernas para permitir a los autores editar y dar formato al contenido WYSIWYG directamente en la página web
-seo-description: La interfaz basada en web de AEM utiliza AJAX y otras tecnologías de navegador modernas para permitir a los autores editar y dar formato al contenido WYSIWYG directamente en la página web
+description: AEM interfaz basada en la web utiliza AJAX y otras tecnologías modernas del navegador para permitir a los autores WYSIWYG editar y dar formato al contenido directamente en la página web
+seo-description: AEM interfaz basada en la web utiliza AJAX y otras tecnologías modernas del navegador para permitir a los autores WYSIWYG editar y dar formato al contenido directamente en la página web
 uuid: e8dfa140-dab7-4e08-a790-d703adf86d6f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '5182'
+ht-degree: 0%
 
 ---
 
 
 # Uso y ampliación de utilidades (IU clásica){#using-and-extending-widgets-classic-ui}
 
-La interfaz basada en la web de Adobe Experience Manager utiliza AJAX y otras tecnologías de navegador modernas para permitir a los autores editar y dar formato al contenido WYSIWYG directamente en la página web.
+La interfaz basada en la web de Adobe Experience Manager utiliza AJAX y otras tecnologías modernas del navegador para permitir a los autores editar y dar formato al contenido WYSIWYG directamente en la página web.
 
 Adobe Experience Manager (AEM) utiliza la biblioteca de widgets [ExtJS](https://www.sencha.com/) , que proporciona elementos de interfaz de usuario muy pulidos que funcionan en todos los exploradores más importantes y permiten la creación de experiencias de interfaz de usuario de escritorio.
 
-Estas utilidades se incluyen en AEM y, además de ser utilizadas por AEM, pueden ser utilizadas por cualquier sitio web creado con AEM.
+Estos widgets están incluidos en AEM y, además de ser utilizados por AEM mismo, pueden ser utilizados por cualquier sitio web creado con AEM.
 
-Para obtener una referencia completa de todas las utilidades disponibles en AEM, consulte la documentación [de la API de la](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) utilidad o la [lista de xtypes](/help/sites-developing/xtypes.md)existentes. Además, en el sitio web [Sencha](https://www.sencha.com/products/extjs/examples/) , el propietario del marco, encontrará muchos ejemplos que muestran cómo utilizar el marco de trabajo ExtJS.
+Para obtener una referencia completa de todos los widgets disponibles en AEM puede consultar la documentación [de la API de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) utilidad o la [lista de xtypes](/help/sites-developing/xtypes.md)existentes. Además, en el sitio web [Sencha](https://www.sencha.com/products/extjs/examples/) , el propietario del marco, encontrará muchos ejemplos que muestran cómo utilizar el marco de trabajo ExtJS.
 
 Esta página proporciona algunas perspectivas sobre cómo utilizar y ampliar utilidades. En primer lugar, se describe cómo [incluir código de cliente en una página](#including-the-client-sided-code-in-a-page). A continuación, se describen algunos componentes de muestra que se han creado para ilustrar el uso básico y la extensión. Estos componentes están disponibles en el paquete **Uso de utilidades** ExtJS en Uso compartido de **paquetes**.
 
@@ -41,7 +44,7 @@ El paquete incluye ejemplos de:
 
 >[!NOTE]
 >
->En esta página se describe el uso de las utilidades en la IU clásica. Adobe recomienda aprovechar la moderna interfaz de usuario [táctil basada en la IU](/help/sites-developing/touch-ui-concepts.md) de [Coral y la IU de](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>En esta página se describe el uso de las utilidades en la IU clásica. Adobe recomienda aprovechar la moderna interfaz de usuario [táctil basada en la IU](/help/sites-developing/touch-ui-concepts.md) [Coral y la IU](/help/sites-developing/touch-ui-concepts.md#coral-ui) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## Inclusión del código de cliente en una página {#including-the-client-sided-code-in-a-page}
 
@@ -66,9 +69,9 @@ Para crear una biblioteca de cliente:
 
 1. Debajo `clientlib` cree las `css` carpetas y `js` (nt:folder).
 
-1. A continuación, `clientlib` cree los archivos `css.txt` y `js.txt` (nt:files). Estos archivos .txt enumeran los archivos que se incluyen en la biblioteca.
+1. A continuación, `clientlib` cree los archivos `css.txt` y `js.txt` (nt:files). Estos archivos .txt lista los archivos incluidos en la biblioteca.
 
-1. Editar `js.txt`: debe comenzar con &#39; `#base=js`&#39; seguido de la lista de archivos que agregará el servicio de biblioteca del cliente de CQ, por ejemplo:
+1. Editar `js.txt`: debe entrar en inicio con &#39; `#base=js`&#39; seguido de la lista de los archivos que agregará el servicio de biblioteca del cliente de CQ, por ejemplo:
 
    ```
    #base=js
@@ -79,7 +82,7 @@ Para crear una biblioteca de cliente:
     InsertTextPlugin.js
    ```
 
-1. Editar `css.txt`: debe comenzar con &#39; `#base=css`&#39; seguido de la lista de archivos que agregará el servicio de biblioteca del cliente de CQ, por ejemplo:
+1. Editar `css.txt`: debe entrar en inicio con &#39; `#base=css`&#39; seguido de la lista de los archivos que agregará el servicio de biblioteca del cliente de CQ, por ejemplo:
 
    ```
    #base=css
@@ -100,8 +103,7 @@ Para incluir la biblioteca del cliente en el jsp del componente de página:
 
    `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
 
-   
-donde `<category-nameX>` es el nombre de la biblioteca del lado del cliente.
+   donde `<category-nameX>` es el nombre de la biblioteca del lado del cliente.
 
 * para incluir únicamente código javascript:
 
@@ -119,14 +121,13 @@ En algunos casos, una biblioteca de cliente solo debería estar disponible en mo
 
 ### Introducción a los ejemplos {#getting-started-with-the-samples}
 
-Para seguir los tutoriales de esta página, instale el paquete llamado **Uso de utilidades** ExtJS en una instancia local de AEM y cree una página de muestra en la que se incluirán los componentes. Para ello:
+Para seguir los tutoriales de esta página, instale el paquete llamado **Uso de utilidades** ExtJS en una instancia de AEM local y cree una página de muestra en la que se incluirán los componentes. Para ello:
 
-1. En la instancia de AEM, descargue el paquete denominado **Uso de utilidades ExtJS (v01)** desde Package Share e instálelo. Crea el proyecto `extjstraining` siguiente `/apps` en el repositorio.
+1. En la instancia de AEM, descargue el paquete llamado **Uso de utilidades ExtJS (v01)** desde Package Share e instale el paquete. Crea el proyecto `extjstraining` siguiente `/apps` en el repositorio.
 
-1. Incluya la biblioteca de cliente que contiene las secuencias de comandos (js) y la hoja de estilo (css) en la etiqueta head de la página geometrixx jsp, ya que incluirá los componentes de muestra en una nueva página de la rama **Geometrixx** :
+1. Incluya la biblioteca de cliente que contiene las secuencias de comandos (js) y la hoja de estilo (css) en la etiqueta head de la página jsp de geometrixx, ya que incluirá los componentes de muestra en una nueva página de la rama de **Geometrixx** :
 
-   
-en **CRXDE Lite** , abra el archivo `/apps/geometrixx/components/page/headlibs.jsp` y agregue la `cq.extjstraining` categoría a la etiqueta existente de la `<ui:includeClientLib>` siguiente manera:
+   en el **CRXDE Lite** , abra el archivo `/apps/geometrixx/components/page/headlibs.jsp` y agregue la `cq.extjstraining` categoría a la `<ui:includeClientLib>` etiqueta existente de la siguiente manera:
 
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 
@@ -137,15 +138,15 @@ en **CRXDE Lite** , abra el archivo `/apps/geometrixx/components/page/headlibs.j
 
 >[!NOTE]
 >
->Los ejemplos de esta página se basan en el contenido de muestra de Geometrixx, que ya no se envía con AEM, tras haber sido reemplazado por We.Retail. Consulte el documento Implementación [de referencia de](/help/sites-developing/we-retail.md#we-retail-geometrixx) We.Retail para ver cómo descargar e instalar Geometrixx.
+>Los ejemplos de esta página se basan en el contenido de muestra de Geometrixx, que ya no se envía con AEM, tras haber sido reemplazado por We.Retail. Consulte la Implementación [de referencia de documento](/help/sites-developing/we-retail.md#we-retail-geometrixx) We.Retail para ver cómo descargar e instalar Geometrixx.
 
 ### Cuadros de diálogo básicos {#basic-dialogs}
 
-Los diálogos se utilizan generalmente para editar contenido, pero también pueden mostrar información. Una manera fácil de ver un cuadro de diálogo completo es acceder a su representación en formato json. Para ello, señale el explorador a:
+Los diálogos se utilizan generalmente para editar contenido, pero también pueden mostrar información. Una manera fácil de vista de un diálogo completo es acceder a su representación en formato json. Para ello, señale el explorador a:
 
 `http://localhost:4502/<path-to-dialog>.-1.json`
 
-El primer componente del grupo **Utilizando utilidades** ExtJS en la barra de tareas se denomina **1. Conceptos básicos** del cuadro de diálogo e incluye cuatro cuadros de diálogo básicos creados con utilidades integradas y sin lógica personalizada de javascript. Los cuadros de diálogo se almacenan a continuación `/apps/extjstraining/components/dialogbasics`. Los diálogos básicos son:
+El primer componente del grupo **Utilizando utilidades** ExtJS en la barra de tareas se denomina **1. Conceptos básicos** de cuadro de diálogo e incluye cuatro cuadros de diálogo básicos creados con utilidades integradas y sin lógica personalizada de javascript. Los cuadros de diálogo se almacenan a continuación `/apps/extjstraining/components/dialogbasics`. Los diálogos básicos son:
 
 * el cuadro de diálogo Completo ( `full` nodo): muestra una ventana con 3 fichas, cada una con 2 campos de texto.
 
@@ -155,7 +156,7 @@ El primer componente del grupo **Utilizando utilidades** ExtJS en la barra de ta
 
 Incluya el **1. Componente Conceptos básicos** de cuadro de diálogo en la página de muestra:
 
-1. Agregue el **1. Conceptos básicos** de cuadro de diálogo para la página de muestra desde la ficha **Uso de utilidades** de ExcelJS en la **barra de tareas**.
+1. Añada el **1. Conceptos básicos** de cuadro de diálogo para la página de muestra desde la ficha **Uso de utilidades** de ExcelJS en la **barra de tareas**.
 
 1. El componente muestra un título, texto y un vínculo **PROPIEDADES** : haga clic en el vínculo para mostrar las propiedades del párrafo almacenado en el repositorio. Vuelva a hacer clic en el vínculo para ocultar las propiedades.
 
@@ -242,8 +243,7 @@ Para utilizar el cuadro de diálogo Panel múltiple:
 
 1. Sustituya el cuadro de diálogo del componente Conceptos básicos **del** cuadro de diálogo por el cuadro de diálogo **Varios paneles** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente: el cuadro de diálogo muestra lo siguiente:
 
@@ -272,8 +272,7 @@ Para utilizar el cuadro de diálogo **Ricos** :
 
 1. Sustituya el cuadro de diálogo del componente Conceptos básicos **del** cuadro de diálogo por el cuadro de diálogo **Ricos** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente: el cuadro de diálogo muestra lo siguiente:
 
@@ -289,7 +288,7 @@ El segundo componente del grupo **Uso de utilidades** ExtJS en la barra de tarea
 
 Para incluir el **2. Componente de diálogos** dinámicos en la página de muestra:
 
-1. Agregue el **2. Diálogos** dinámicos a la página de muestra desde la ficha **Uso de utilidades** ExtJS en la **barra de tareas**.
+1. Añada el **2. Diálogos** dinámicos a la página de muestra desde la ficha **Uso de utilidades** ExtJS en la **barra de tareas**.
 
 1. El componente muestra un título, texto y un vínculo **PROPIEDADES** : haga clic para mostrar las propiedades del párrafo almacenado en el repositorio. Haga clic de nuevo para ocultar las propiedades.
 
@@ -316,7 +315,7 @@ Sus principales características son:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/switchtabs.-1.json`
 
-La lógica se implementa mediante los oyentes de eventos y el código javascript de la siguiente manera:
+La lógica se implementa a través de los oyentes de evento y el código javascript de la siguiente manera:
 
 * El nodo de cuadro de diálogo tiene un detector &quot; `beforeshow`&quot; que oculta todas las fichas opcionales antes de que se muestre el cuadro de diálogo:
 
@@ -382,7 +381,7 @@ Sus principales características son:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/arbitrary.-1.json`
 
-La lógica se implementa mediante los oyentes de eventos y el código javascript de la siguiente manera:
+La lógica se implementa a través de los oyentes de evento y el código javascript de la siguiente manera:
 
 * El widget de dibujo de propietario tiene un detector &quot; `loadcontent`&quot; que muestra información sobre la página que contiene el componente y el recurso al que hace referencia el widget de archivo inteligente cuando se carga el contenido:
 
@@ -412,8 +411,7 @@ Para utilizar el cuadro de diálogo **Arbitrario** :
 
 1. Reemplazar el cuadro de diálogo del componente Diálogo **** dinámico por el cuadro de diálogo **Arbitrario** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente: el cuadro de diálogo muestra lo siguiente:
 
@@ -439,9 +437,9 @@ Sus principales características son:
 
    `http://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
 
-La lógica se implementa mediante los oyentes de eventos y el código javascript de la siguiente manera:
+La lógica se implementa a través de los oyentes de evento y el código javascript de la siguiente manera:
 
-* la ficha de selección tiene 2 oyentes: uno que muestra el conjunto de campos de diálogo cuando se carga el contenido (&quot; `loadcontent`&quot; evento) y uno que muestra el conjunto de campos de diálogo cuando se cambia la selección (&quot; `selectionchanged`&quot; evento):
+* la ficha de selección tiene 2 oyentes: uno que muestra el conjunto de campos de diálogo cuando se carga el contenido (&quot; `loadcontent`&quot; evento) y otro que muestra el conjunto de campos de diálogo cuando se cambia la selección (&quot; `selectionchanged`&quot; evento):
 
    `loadcontent="function(field,rec,path){Ejst.x2.toggleFieldSet(field);}"`
 
@@ -463,8 +461,7 @@ Para utilizar el cuadro de diálogo **Alternar campos** :
 
 1. Reemplazar el cuadro de diálogo del componente Cuadro de diálogo **** dinámico con el cuadro de diálogo **Alternar campos** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente: el cuadro de diálogo muestra lo siguiente:
 
@@ -472,7 +469,7 @@ siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel
 
 ### Widgets personalizados {#custom-widgets}
 
-Los widgets integrados que se envían con AEM deben cubrir la mayoría de los casos de uso. Sin embargo, a veces puede ser necesario crear una utilidad personalizada para cubrir un requisito específico del proyecto. Los widgets personalizados se pueden crear ampliando los existentes. Para ayudarle a empezar a personalizarla, el paquete **Uso de utilidades** de ExtJS incluye tres cuadros de diálogo que utilizan tres utilidades personalizadas diferentes:
+Los widgets listos para usar que se envían con AEM deben cubrir la mayoría de los casos de uso. Sin embargo, a veces puede ser necesario crear una utilidad personalizada para cubrir un requisito específico del proyecto. Los widgets personalizados se pueden crear ampliando los existentes. Para ayudarle a empezar a personalizarla, el paquete **Uso de utilidades** de ExtJS incluye tres cuadros de diálogo que utilizan tres utilidades personalizadas diferentes:
 
 * el cuadro de diálogo Campo múltiple ( `multifield` nodo) muestra una ventana con una ficha. La ficha tiene un widget de varios campos personalizado que tiene dos campos: un menú desplegable con dos opciones y un campo de texto. Como se basa en la utilidad lista para usar (que solo tiene un campo de texto), `multifield` tiene todas las funciones de la `multifield` utilidad.
 
@@ -481,7 +478,7 @@ Los widgets integrados que se envían con AEM deben cubrir la mayoría de los ca
 
 Los widgets personalizados y el complemento se incluyen en el componente llamado **3. Widgets** personalizados del paquete **Uso de utilidades** ExtJS. Para incluir este componente en la página de muestra:
 
-1. Agregue el **3. Componente Widgets** personalizados a la página de muestra desde la ficha **Uso de utilidades** ExtJS en la **barra de tareas**.
+1. Añada el **3. Componente Widgets** personalizados a la página de muestra desde la ficha **Uso de utilidades** ExtJS en la **barra de tareas**.
 
 1. El componente muestra un título, texto y, al hacer clic en el vínculo **PROPIEDADES** , las propiedades del párrafo almacenadas en el repositorio. Al volver a hacer clic se ocultan las propiedades.
 
@@ -508,8 +505,7 @@ Cuadro de diálogo basado en el widget **personalizado de varios campos** :
 
       `/apps/extjstraining/clientlib/js/exercises.js`
 
-      
-y devuelve 2 opciones.
+      y devuelve 2 opciones.
 
 * Está definido por el `multifield` nodo en:
 
@@ -590,7 +586,7 @@ La utilidad de exploración de árbol personalizada (xtype = `ejstbrowse`):
    * Tiene un botón **Aceptar** que establece el valor del trazado seleccionado y oculta el panel.
 
 * La ventana está anclada debajo del campo **Ruta** .
-* La ruta seleccionada se pasa del campo Examinar a la ventana en caso de `show` evento.
+* La ruta seleccionada se pasa del campo Examinar a la ventana en `show` evento.
 
 * Se registra como xtype &#39; `ejstbrowse`&#39;:
 
@@ -600,8 +596,7 @@ Para utilizar el cuadro de diálogo basado en la utilidad **Restablecimiento** p
 
 1. Reemplazar el cuadro de diálogo del componente Widgets **** personalizados con el cuadro de diálogo Examinar **personalizado** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente: el cuadro de diálogo muestra lo siguiente:
 
@@ -611,7 +606,7 @@ siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel
 
 El cuadro de diálogo basado en el complemento Editor de texto **enriquecido (RTE)** es un cuadro de diálogo basado en editor de texto enriquecido que tiene un botón personalizado para insertar texto personalizado entre corchetes. El texto personalizado se puede analizar con alguna lógica del lado del servidor (no implementada en este ejemplo), por ejemplo para agregar texto definido en la ruta dada:
 
-Cuadro de diálogo basado en el complemento **RTE** :
+Cuadro de diálogo **basado en el complemento** RTE:
 
 * Está definido por el nodo replugin en:
 
@@ -653,8 +648,7 @@ Para utilizar el cuadro de diálogo basado en el complemento Editor de texto **e
 
 1. Reemplace el cuadro de diálogo del componente Widgets **** personalizados con el cuadro de diálogo basado en el complemento Editor de texto **enriquecido (RTE)** :
 
-   
-siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
+   siga los pasos descritos para el [Ejemplo 2: Cuadro de diálogo de un solo panel](#example-single-panel-dialog)
 
 1. Edite el componente .
 1. Haga clic en el último icono de la derecha (el que tiene cuatro flechas). Introduzca una ruta y haga clic en **Aceptar**:
@@ -677,7 +671,7 @@ El objeto predeterminado [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/exper
 
 Para incluir el componente Información general **de** árbol en la página de muestra:
 
-1. Agregue el **4. El componente Información general** de árbol de la página de muestra de la ficha **Uso de utilidades** ExtJS de la **barra de tareas**.
+1. Añada el **4. El componente Información general** de árbol de la página de muestra de la ficha **Uso de utilidades** ExtJS de la **barra de tareas**.
 
 1. El componente muestra:
 
@@ -701,7 +695,7 @@ El jsp del componente:
 
 * Recupera las propiedades de ancho, alto y acoplado del repositorio.
 * Muestra texto sobre el formato de datos de información general de árbol.
-* Incrusta la lógica de la ventana en el jsp del componente entre etiquetas de javascript.
+* Incrusta la lógica de ventana en el jsp del componente entre etiquetas de javascript.
 * Se define en:
 
    `apps/extjstraining/components/treeoverview/content.jsp`
@@ -749,7 +743,7 @@ Un panel de cuadrícula representa los datos en un formato de tabla de filas y c
 
 * Tienda: el modelo que contiene los registros de datos (filas).
 * Modelo de columna: la composición de la columna.
-* Ver: encapsula la interfaz de usuario.
+* Vista: encapsula la interfaz de usuario.
 * Modelo de selección: el comportamiento de selección.
 
 El componente Información general de cuadrícula incluido en el paquete **Uso de utilidades** ExtJS muestra cómo mostrar los datos en formato de tabla:
@@ -759,7 +753,7 @@ El componente Información general de cuadrícula incluido en el paquete **Uso d
 
 Para incluir el componente Información general de cuadrícula en la página de muestra:
 
-1. Agregue el **5. El componente Información general** de cuadrícula a la página de muestra desde la ficha **Uso de utilidades** de ExcelJS en la **barra de tareas**.
+1. Añada el **5. El componente Información general** de cuadrícula a la página de muestra desde la ficha **Uso de utilidades** de ExcelJS en la **barra de tareas**.
 
 1. El componente muestra:
 
@@ -844,7 +838,7 @@ Como se explica en la sección anterior, el objeto window obtiene su [`CQ.Ext.gr
 
 Cambie el archivo .js al que se hace referencia en el archivo jsp del componente:
 
-1. En **CRXDE Lite**, en el `content.jsp` archivo del componente, haga un comentario de la línea que incluye el `defaultgrid.js` archivo, de modo que tenga el siguiente aspecto:
+1. En el **CRXDE Lite**, en el `content.jsp` archivo del componente, haga un comentario sobre la línea que incluye el `defaultgrid.js` archivo, de modo que tenga el siguiente aspecto:
 
    `<!-- script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script-->`
 
@@ -889,5 +883,5 @@ El código javascript al que se hace referencia en el jsp (`referencesearch.js`)
    * el `afteredit` oyente se asegura de que después de editar una celda de la columna &quot;**Prueba**&quot;:
 
       * la propiedad &#39; `test`&#39; del nodo en la ruta definida por la columna &quot;**jcr:path**&quot; se establece en el repositorio con el valor de la celda
-      * si POST se realiza correctamente, el valor se agrega al `store` objeto; de lo contrario, se rechaza
+      * si el POST se realiza correctamente, el valor se agrega al `store` objeto; de lo contrario, se rechaza
 

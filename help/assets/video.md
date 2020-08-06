@@ -28,10 +28,10 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!NOTE]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado Cloud Service de Dynamic Media.
+>Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado Cloud Services de Dynamic Media.
 >
->* Consulte [Configuración de Cloud Service de Dynamic Media en Configuración de Dynamic Media - Modo híbrido.](/help/assets/config-dynamic.md)
->* Consulte [Configuración de Dynamic Media: modo](config-dms7.md) de Scene7 y [Resolución de problemas de Dynamic Media: modo de Scene7](troubleshoot-dms7.md)
+>* Consulte [Configuración de Cloud Services de Dynamic Media en Configuración de Dynamic Media - Modo híbrido.](/help/assets/config-dynamic.md)
+>* Consulte [Configuración de Dynamic Media - Modo](config-dms7.md) Scene7 y [Resolución de problemas de Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
 
 >
 
@@ -102,7 +102,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 1. **Publique sus vídeos** de Dynamic Media siguiendo uno de estos procedimientos:
 
-   * Si utiliza Adobe Experience Manager como sistema de gestor de contenido web, puede agregar vídeos directamente a las páginas web.
+   * Si utiliza Adobe Experience Manager como sistema de gestoras de contenido web, puede agregar vídeos directamente a sus páginas web.
 
       * [Añadir vídeos a las páginas](adding-dynamic-media-assets-to-pages.md)web.
    * Si utiliza un sistema de gestor de contenido web de terceros, puede vincular o incrustar vídeos en sus páginas web.
@@ -121,7 +121,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 ## Uso de vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para transmitir en varias pantallas, incluidos dispositivos móviles de escritorio, iOS, Android, Blackberry y Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para flujo continuo en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptable. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tablets.
 
@@ -154,7 +154,7 @@ Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Pu
 
 Puede encontrar los dispositivos Windows compatibles con este formato de vídeo en los siguientes: [Formatos de vídeo compatibles con Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Reproducción de vídeo con los ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproducción de vídeo con ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
 
    * Visores de vídeos únicos.
    * Visores de medios mixtos que combinan contenido de vídeo y de imagen.
@@ -184,7 +184,7 @@ Para el flujo continuo de vídeo adaptable móvil y de escritorio, los vídeos u
 
 La reproducción de vídeo se produce mediante flujo continuo de vídeo HLS (HTTP Live Streaming) o descarga de vídeo progresiva. En versiones anteriores de AEM, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
 
-Sin embargo, en AEM 6.3 y versiones posteriores, los vídeos ahora se transmiten a través de HTTPS (es decir, flujo de vídeo HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS también. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS, a menos que el explorador no lo admita. (véase la siguiente tabla). Por tanto,
+Sin embargo, en AEM 6.3 y en adelante, los vídeos ahora se transmiten a través de HTTPS (es decir, flujo de vídeo HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS también. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS, a menos que el explorador no lo admita. (véase la siguiente tabla). Por tanto,
 
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, la transmisión está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, la transmisión de flujo continuo es correcta y no hay problemas de contenido mixto en el navegador web.
@@ -443,11 +443,11 @@ Dynamic Media recomienda el uso de ajustes preestablecidos de codificación de v
 
 ## Publicación de vídeos en YouTube {#publishing-videos-to-youtube}
 
-Puede publicar recursos de vídeo de AEM in situ directamente en un canal de YouTube que haya creado anteriormente.
+Puede publicar recursos de vídeo in situ AEM directamente en un canal de YouTube que haya creado anteriormente.
 
 Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. Si el recurso de vídeo no tiene una etiqueta, no se publicará en YouTube.
 
-Al publicar en YouTube, se evita el sistema de perfil de procesamiento en AEM y, por tanto, el perfil de codificación de vídeo. Esta omisión se produce porque YouTube tiene su propia codificación, por lo que no es necesario un perfil de procesamiento de vídeo. Sin embargo, en la mayoría de los casos, se espera que los recursos de vídeo ya se hayan sometido a un perfil de procesamiento de vídeo. Al omitir el perfil de procesamiento de vídeo y publicar directamente en YouTube, solo significa que el recurso de vídeo en Recursos AEM no obtiene una miniatura visible. También significa que si se ejecuta en el modo de ejecución de Dynamic Media, los vídeos que no estén codificados no funcionarán con ninguno de los tipos de recursos de Dynamic Media.
+Al publicar en YouTube se evita el sistema de perfil de procesamiento en AEM y, por lo tanto, el perfil de codificación de vídeo. Esta omisión se produce porque YouTube tiene su propia codificación, por lo que no es necesario un perfil de procesamiento de vídeo. Sin embargo, en la mayoría de los casos, se espera que los recursos de vídeo ya se hayan sometido a un perfil de procesamiento de vídeo. Al omitir el perfil de procesamiento de vídeo y publicar directamente en YouTube, solo significa que el recurso de vídeo en AEM recurso no obtiene una miniatura visible. También significa que si se ejecuta en el modo de ejecución de Dynamic Media, los vídeos que no estén codificados no funcionarán con ninguno de los tipos de recursos de Dynamic Media.
 
 La publicación de recursos de vídeo en servidores de YouTube implica completar las siguientes tareas para garantizar una autenticación segura de servidor a servidor con YouTube:
 
@@ -480,7 +480,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta GMA
    Si ya tiene una cuenta de Google, vaya al paso siguiente.
 
 1. Vaya a [https://cloud.google.com/](https://cloud.google.com/).
-1. En la página de Platform de Google Cloud, cerca de la parte superior, toque **[!UICONTROL Consola]**. Es posible que necesite **iniciar sesión** con sus credenciales de cuenta de Google.
+1. En la página Plataforma de Google Cloud, cerca de la parte superior, toque **[!UICONTROL Consola]**. Es posible que necesite **iniciar sesión** con sus credenciales de cuenta de Google.
 1. En la página **[!UICONTROL Panel]** , toque **[!UICONTROL Crear proyecto]**.
 1. En el cuadro de diálogo **[!UICONTROL Nuevo proyecto]** , introduzca un nombre de proyecto.
 
@@ -516,7 +516,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta GMA
 1. On the Credentials page, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail address that you are currently using.
 1. En el campo de texto debajo del encabezado Nombre **[!UICONTROL del producto mostrado a los usuarios]** , escriba lo que desea mostrar en la pantalla de consentimiento.
 
-   La pantalla de consentimiento se muestra al administrador de AEM cuando se autentica en YouTube; AEM se pondrá en contacto con YouTube para obtener permiso.
+   La pantalla de consentimiento se muestra al administrador de AEM cuando se autentica en YouTube; AEM contactará YouTube para obtener permiso.
 
 1. Puntee **[!UICONTROL Continuar]**.
 1. Bajo el encabezado **[!UICONTROL Descargar credenciales]** , toque **[!UICONTROL Descargar]**.
@@ -534,7 +534,7 @@ La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si 
 
 >[!CAUTION]
 >
->Asegúrese de que ya ha configurado uno o varios canales en YouTube &amp;ast;before&amp;ast; puede añadir canales en Configuración de YouTube en AEM (consulte [Configuración de YouTube en AEM](#setting-up-youtube-in-aem) más abajo). Si no lo hace, no recibirá ninguna advertencia de que no hay canales existentes. Sin embargo, la autenticación de Google sigue teniendo lugar cuando se agrega un canal, pero no hay una opción para elegir el canal que se envía el vídeo.
+>Asegúrese de que ya ha configurado uno o varios canales en YouTube &amp;ast;before&amp;ast; puede agregar canales en Configuración de YouTube en AEM (consulte [Configuración de YouTube en AEM](#setting-up-youtube-in-aem) más abajo). Si no lo hace, no recibirá ninguna advertencia de que no hay canales existentes. Sin embargo, la autenticación de Google sigue teniendo lugar cuando se agrega un canal, pero no hay una opción para elegir el canal que se envía el vídeo.
 
 **Para crear un canal** de YouTube:
 
@@ -544,7 +544,7 @@ La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si 
 1. En la página **[!UICONTROL Canales]** , toque **[!UICONTROL Crear un nuevo canal]**.
 1. En la página Cuenta **[!UICONTROL de]** marca, en el campo Nombre **[!UICONTROL de cuenta de]** marca, introduzca un nombre comercial o cualquier otro nombre de canal que elija donde desea publicar los recursos de vídeo y, a continuación, toque **[!UICONTROL Crear]**.
 
-   Recuerde el nombre que ha introducido aquí porque tendrá que volver a introducirlo cuando configure YouTube en AEM.
+   Recuerde el nombre que ingresa aquí porque deberá introducirlo nuevamente cuando configure YouTube en AEM.
 
 1. (Opcional) Si es necesario, agregue más canales.
 
@@ -554,7 +554,7 @@ La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si 
 
 Para publicar vídeos en YouTube, AEM asocia etiquetas a uno o varios canales de YouTube. Para agregar etiquetas para la publicación, consulte [Administración de etiquetas](/help/sites-administering/tags.md).
 
-O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y acceder a [Habilitar el agente](#enabling-the-youtube-publish-replication-agent)de replicación de YouTube Publish.
+O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y ir a [Habilitar el agente](#enabling-the-youtube-publish-replication-agent)de replicación de YouTube Publish.
 
 ### Activación del agente de replicación de YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
@@ -564,7 +564,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 1. Seleccione la casilla de verificación **[!UICONTROL Habilitado]** para activar el agente de replicación.
 1. toque **[!UICONTROL Aceptar]**.
 
-   Ahora configurará YouTube en AEM.
+   Ahora configurarás YouTube en AEM.
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -601,7 +601,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 
    Ahora configurará las etiquetas para la publicación.
 
-1. **Configuración de etiquetas para publicación** : en la página **[!UICONTROL Cloud Service > YouTube]** , toque el icono del **[!UICONTROL lápiz]** para editar la lista de las etiquetas que desee utilizar.
+1. **Configuración de etiquetas para publicación** : en la página **[!UICONTROL Cloud Services > YouTube]** , toque el icono del **[!UICONTROL lápiz]** para editar la lista de las etiquetas que desee utilizar.
 1. Toque el icono de lista desplegable (intercalación vertical) para mostrar la lista de las etiquetas disponibles en AEM.
 1. Toque una o varias etiquetas para agregarlas.
 
@@ -685,9 +685,9 @@ Para crear el perfil de procesamiento de metadatos, en primer lugar copiará val
 
 ### Publicación de vídeos en el canal de YouTube {#publishing-videos-to-your-youtube-channel}
 
-Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. Este proceso permite a AEM saber qué recursos publicar en su canal de YouTube.
+Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. Este proceso permite AEM los recursos que se van a publicar en el canal de YouTube.
 
-Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
+Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que permite supervisar el progreso y la vista de la información sobre errores.
 Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para publicar vídeos en su canal** de YouTube:
@@ -718,7 +718,7 @@ Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONT
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
+Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
 
 La URL de YouTube no está disponible para copiarse hasta que haya publicado el recurso de vídeo en YouTube.
 
@@ -738,9 +738,9 @@ Al cancelar la publicación de un recurso de vídeo en AEM, el vídeo se elimina
 
 >[!CAUTION]
 >
->Si elimina un vídeo directamente desde YouTube, AEM no se da cuenta y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
+>Si elimina un vídeo directamente desde YouTube, AEM no lo sabe y sigue comportándose como si el vídeo se siguiera publicando en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
 
-Para eliminar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Cancelar publicación de YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
+Para eliminar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Cancelar publicación de YouTube]** , que permite supervisar el progreso y vista de cualquier información de error.
 Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Para cancelar la publicación de vídeos para eliminarlos de YouTube**:
@@ -783,7 +783,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >It may take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
    >* Configuración de cola de trabajos de Apache Sling
-   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   >* Controlador de trabajos de proceso externo de flujo de trabajo de granito de Adobe
    >* Cola de tiempo de espera de flujo de trabajo de granito
 
    > 
@@ -816,7 +816,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >It may take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
    >* Configuración de cola de trabajos de Apache Sling
-   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   >* Controlador de trabajos de proceso externo de flujo de trabajo de granito de Adobe
    >* Cola de tiempo de espera de flujo de trabajo de granito
 
    >
@@ -837,7 +837,7 @@ Es posible que necesite derechos administrativos para acceder al menú **[!UICON
 
 La configuración de la notificación depende de si desea recibir notificaciones para trabajos de codificación o de publicación en YouTube:
 
-* Para los trabajos de codificación, puede acceder a la página de configuración de todas las notificaciones por correo electrónico del flujo de trabajo de AEM en **[!UICONTROL Herramientas > Operaciones > Consola]** web y buscando el servicio **[!UICONTROL de notificación por correo electrónico del flujo de trabajo de CQ]** diario. Consulte [Configuración de notificaciones por correo electrónico en AEM](/help/sites-administering/notification.md). Puede activar o desactivar las casillas de verificación de **[!UICONTROL Notificar al anular]** o **[!UICONTROL Notificar al completar]** según corresponda.
+* Para los trabajos de codificación, puede acceder a la página de configuración de todas las notificaciones por correo electrónico AEM flujo de trabajo en **[!UICONTROL Herramientas > Operaciones > Consola]** web y buscando el servicio **[!UICONTROL de notificación por correo electrónico de flujo de trabajo de CQ]** diario. Consulte [Configuración de notificaciones por correo electrónico en AEM](/help/sites-administering/notification.md). Puede activar o desactivar las casillas de verificación de **[!UICONTROL Notificar al anular]** o **[!UICONTROL Notificar al completar]** según corresponda.
 
 * Para los trabajos de publicación de YouTube, haga lo siguiente:
 
@@ -859,7 +859,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 ## Visualización de informes de vídeo {#viewing-video-reports}
 
-Los informes de video están disponibles cuando ejecuta Dynamic Media - modo híbrido; los informes no están disponibles cuando se ejecuta el modo Dynamic Media - Scene7.
+Los informes de vídeo están disponibles al ejecutar Dynamic Media - modo híbrido; los informes no están disponibles cuando se ejecuta el modo Dynamic Media - Scene7.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -873,9 +873,9 @@ También se muestra una tabla de todos los vídeos *publicados* para que pueda r
 
 Al tocar un nombre de vídeo en la lista, se muestra el informe de retención de audiencias (desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas para un momento determinado durante la reproducción del vídeo. Al reproducir el vídeo, la barra vertical realiza un seguimiento en sincronización con el indicador de tiempo del reproductor. Las caídas de los datos del gráfico de líneas indican dónde se produce la audiencia por desinterés.
 
-Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no están disponibles.
+Si el vídeo se codificó fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no están disponibles.
 
-Consulte también [Configuración de Cloud Service](/help/assets/config-dynamic.md)de Dynamic Media.
+Consulte también [Configuración de Cloud Services](/help/assets/config-dynamic.md)de Dynamic Media.
 
 >[!NOTE]
 >
@@ -883,7 +883,7 @@ Consulte también [Configuración de Cloud Service](/help/assets/config-dynamic.
 
 De forma predeterminada, la primera vez que se ingresa a Informes de video, el informe muestra los datos de video comenzando en el primer mes actual y finalizando con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que ingrese Informes de video, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Service de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la Configuración de Dynamic Media Cloud y tocar **Aceptar**.
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Services de medios dinámicos. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la configuración de Dynamic Media Cloud y tocar **Aceptar**.
 
 **Para vista de informes** de vídeo:
 
@@ -901,15 +901,15 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
 
-### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor HTML5 de Scene7 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor HMTL5 de Scene7 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visor personalizado basado en un visor de vídeo incorporado, no se requieren pasos adicionales para la vista de informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en el SDK de visor HTML5 de Scene7, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
 Utilice la referencia de visores de Scene7 y el SDK de visores HTML5 de Scene7 para crear sus propios visores de vídeo.
 
-Consulte Guía [de referencia de visores de Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte Guía de referencia de visores de [Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
-Descargue el SDK de visor HTML de Scene7 desde Adobe Developer Connection.
+Descargue Scene7 HTML Viewer SDK de Adobe Developer Connection.
 
 Consulte [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
@@ -1035,9 +1035,9 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
->El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
+>El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 se puede descargar desde [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 está disponible como descarga de [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 Puede crear una lista de capítulo para el vídeo de la misma manera que crea rótulos. Es decir, se crea un archivo WebVTT. Tenga en cuenta, sin embargo, que este archivo debe ser independiente de cualquier archivo de subtítulos WebVTT que también esté utilizando; no puede combinar rótulos y capítulos en un archivo WebVTT.
 
@@ -1069,7 +1069,7 @@ Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://dev.w3.
 
 **Para agregar marcadores de capítulo al vídeo:**
 
-1. Con un editor de texto sencillo fuera de AEM, cree el archivo de capítulos de vídeo.
+1. Con un editor de texto simple fuera de AEM, cree el archivo de capítulos de vídeo.
 
    Para obtener compatibilidad global con capítulos de vídeo en idiomas distintos del inglés, el estándar WebVTT requiere que cree llamadas y archivos .vtt independientes para cada idioma que desee admitir.
 
@@ -1123,7 +1123,7 @@ Si lo prefiere, puede elegir cargar una miniatura personalizada para representar
 
 >[!NOTE]
 >
->Las miniaturas de vídeo personalizadas solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
+>Las miniaturas de vídeo personalizadas solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
 
 ### Añadir una miniatura de vídeo {#adding-a-video-thumbnail}
 
@@ -1166,7 +1166,7 @@ Para configurar el intervalo de tiempo predeterminado en el que se generan las m
    * Toque el icono de flecha arriba y el icono de flecha abajo para reordenar los valores de intervalo.
 
 1. Toque **[!UICONTROL Aceptar]** para volver a la ficha **[!UICONTROL Propiedades]** .
-1. Cerca de la esquina superior izquierda de la página de CRXDE Lite, toque **[!UICONTROL Guardar todo]** y, a continuación, toque el icono **[!UICONTROL Página de inicio]** posterior en la esquina superior izquierda para volver a AEM.
+1. Cerca de la esquina superior izquierda de la página CRXDE Lite, toque **[!UICONTROL Guardar todo]** y, a continuación, toque el icono **[!UICONTROL Página de inicio]** en la esquina superior izquierda para volver a AEM.
 
    Consulte [Añadir una miniatura de vídeo.](#adding-a-video-thumbnail)
 

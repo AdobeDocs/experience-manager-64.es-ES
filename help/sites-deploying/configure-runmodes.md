@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Puede hacer lo siguiente:
 
 * [Defina colecciones de parámetros de configuración para cada modo](#defining-configuration-properties-for-a-run-mode)de ejecución.
 
-   Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución, puede ajustar conjuntos adicionales según el propósito de su entorno específico. Se aplican según sea necesario.
+   Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución, puede ajustar conjuntos adicionales según el propósito del entorno específico. Se aplican según sea necesario.
 
 * [Defina paquetes adicionales para instalar en un modo](#defining-additional-bundles-to-be-installed-for-a-run-mode)particular.
 
@@ -119,7 +122,7 @@ Estas carpetas son del tipo `nt:folder` y deben contener el paquete adecuado.
 
 Si ha definido configuraciones para varios modos de ejecución, debe definir cuál se utilizará al iniciar. Existen varios métodos para especificar qué modo de ejecución se debe utilizar; el orden de resolución es:
 
-1. [ `sling.properties` archivo](#using-the-sling-properties-file)
+1. [ `sling.properties` file](#using-the-sling-properties-file)
 1. [ `-r` opción](#using-the-r-option)
 1. [propiedades del sistema (`-D`)](#using-a-system-property-in-the-start-script)
 
@@ -135,7 +138,7 @@ El `sling.properties` archivo se puede utilizar para definir el modo de ejecuci�
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Agregue las siguientes propiedades; el siguiente ejemplo es para autor:
+1. Añadir las siguientes propiedades; el siguiente ejemplo es para autor:
 
    `sling.run.modes=author`
 
@@ -180,6 +183,6 @@ en el archivo:
 
 `WEB-INF/web.xml`
 
-Esto se encuentra en el archivo `war` AEM y debe actualizarse antes de la implementación.
+Esto se encuentra en el `war` archivo AEM y debe actualizarse antes de la implementación.
 
 Consulte [Instalación de AEM con un servidor](/help/sites-deploying/application-server-install.md) de aplicaciones para obtener más información.

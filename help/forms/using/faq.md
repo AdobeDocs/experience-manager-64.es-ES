@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1895'
+ht-degree: 0%
 
 ---
 
@@ -95,7 +98,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué se muestran algunas fuentes en el formulario HTML diferentes de las utilizadas al diseñar el formulario?
 
-   Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los formularios PDF en los que las fuentes se incrustan dentro del formulario). Para que la versión HTML del formulario se represente según lo esperado, asegúrese de que las fuentes especificadas en XDP están disponibles en el servidor y en el ordenador cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de otoño. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
+   Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los PDF forms en los que las fuentes se incrustan dentro del formulario). Para que la versión HTML del formulario se represente según lo esperado, asegúrese de que las fuentes especificadas en XDP están disponibles en el servidor y en el ordenador cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de otoño. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
 
 1. ¿Se admiten los atributos vAlign y hAlign en los formularios HTML?
 
@@ -109,11 +112,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    Respuesta: Sí, los formularios HTML5 tienen algunas limitaciones. Si el número de dígitos es mayor que el recuento especificado en la cláusula de imagen, los números no se localizan y se muestran en la configuración regional de inglés.
 
-1. ¿Por qué los formularios HTML tienen un tamaño mayor que los formularios PDF?
+1. ¿Por qué los formularios HTML tienen un tamaño mayor que los PDF forms?
 
    Se requieren muchas estructuras de datos intermedias y objetos como el uso de formularios, el uso de datos y el uso de diseños para procesar un XDP en un formulario HTML.
 
-   Para los formularios PDF, Adobe Acrobat tiene un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se ocupa del diseño y las secuencias de comandos.
+   Para PDF forms, Adobe Acrobat tiene un motor XTG integrado para crear estructuras de datos y objetos intermedios. Acrobat también se encarga del diseño y de los scripts.
 
    En el caso de los formularios HTML5, los exploradores no tienen un motor XTG integrado para crear estructuras de datos intermedias ni objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, la secuencia de comandos y el motor de diseño basados en javascript utilizan estas estructuras intermedias.
 
@@ -161,7 +164,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 ## Creación de secuencias de comandos {#scripting}
 
-1. ¿Hay alguna limitación en la implementación de JavaScript para formularios HTML?
+1. ¿Hay alguna limitación en la implementación de JavaScript para HTML Forms?
 
    Respuesta:
 
@@ -180,7 +183,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
-   Sí, los formularios HTML5 admiten campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de procesamiento:
+   Sí, HTML5 Forms admite campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de procesamiento:
 
    >[!NOTE]
    >
@@ -188,7 +191,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    1. Abra la lista CRXde y navegue hasta el `/content/xfaforms/profiles/default` nodo.
    1. Añada una propiedad `mfDataDependentFloatingField` de tipo String y defina el valor de la propiedad en `true`**.**
-   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para los formularios HTML mediante el perfil de procesamiento actualizado.
+   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para el Forms HTML mediante el perfil de procesamiento actualizado.
 
       >[!NOTE]
       >

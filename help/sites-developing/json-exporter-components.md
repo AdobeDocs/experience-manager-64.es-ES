@@ -79,7 +79,7 @@ La interfaz del modelo debe anotarse correctamente para definir qué métodos de
 
 ## Ejemplo {#example}
 
-Los componentes principales son compatibles con la exportación de JSON desde la versión [1.1.0 de los componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales y pueden utilizarse como referencia.
+Los componentes principales son compatibles con la exportación de JSON desde la versión [1.1.0 de los componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y pueden utilizarse como referencia.
 
 Para ver un ejemplo, consulte la implementación del modelo Sling del componente principal de imagen y su interfaz anotada.
 
@@ -99,5 +99,5 @@ Para obtener más información, consulte:
 * [Modelos de fragmento de contenido](/help/assets/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md)
-* [Componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 

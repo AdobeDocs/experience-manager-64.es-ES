@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 2%
 
 ---
 
 
 # Replicar usando SSL mutuo{#replicating-using-mutual-ssl}
 
-Configure AEM para que un agente de replicación de la instancia de creación utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí.
+Configure AEM para que un agente de replicación en la instancia de creación utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí.
 
 La configuración de MSSL para replicación implica realizar los siguientes pasos:
 
@@ -64,7 +67,7 @@ Utilice el procedimiento siguiente para crear una clave privada y un certificado
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -alias | author | instancias de publicación |
    | -keystore | author.keystore | publish.keystore |
@@ -75,7 +78,7 @@ Utilice el procedimiento siguiente para crear una clave privada y un certificado
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -alias | author | instancias de publicación |
    | -archivo | author.cer | publish.cer |
@@ -91,7 +94,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -101,7 +104,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
@@ -114,7 +117,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -en | author_request.csr | publish_request.csr |
@@ -126,7 +129,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Opción | Creación | Publicación |
+   | Opción | Autor | Publicación |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
@@ -151,7 +154,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Haga Clic En Agregar Clave Privada Del Archivo De Almacenamiento De Clave.
+1. Haga clic en Añadir clave privada del archivo de almacén de claves.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -167,7 +170,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
 1. Si el vínculo Crear almacén de confianza aparece en el área Configuración de la cuenta, haga clic en el vínculo, cree una contraseña para el almacén de confianza y haga clic en Aceptar.
 1. En el área Configuración de la cuenta, haga clic en Administrar TrustStore.
-1. Haga clic en Agregar certificado desde archivo CER.
+1. Haga clic en Añadir certificado del archivo CER.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -191,7 +194,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
 1. Si el vínculo Crear almacén de claves aparece en el área Configuración de la cuenta, haga clic en el vínculo. Configure una contraseña y haga clic en Aceptar.
 1. En el área Configuración de la cuenta, haga clic en Administrar almacén de claves.
-1. Haga Clic En Agregar Clave Privada Del Archivo De Almacenamiento De Clave.
+1. Haga clic en Añadir clave privada del archivo de almacén de claves.
 1. Haga clic en Seleccionar archivo de almacén de claves, busque y seleccione el archivo publish.keystore o publish.pfx si utiliza pkcs#12 y, a continuación, haga clic en Abrir.
 1. Introduzca un alias y la contraseña para el almacén de claves. Introduzca el alias y la contraseña de la clave privada y, a continuación, haga clic en Enviar.
 1. Cierre el cuadro de diálogo Administración de KeyStore.
@@ -202,7 +205,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 1. Busque la cuenta de usuario que utiliza para ejecutar solicitudes de replicación y toque o haga clic en el nombre de usuario.
 1. Si el vínculo Crear almacén de confianza aparece en el área Configuración de la cuenta, haga clic en el vínculo, cree una contraseña para el almacén de confianza y haga clic en Aceptar.
 1. En el área Configuración de la cuenta, haga clic en Administrar TrustStore.
-1. Haga clic en Agregar certificado desde archivo CER.
+1. Haga clic en Añadir certificado del archivo CER.
 1. Asegúrese de que la opción Asignar certificado a usuario está seleccionada. Haga clic en Seleccionar archivo de certificado, seleccione author.cer y haga clic en Abrir.
 1. Haga clic en Enviar y, a continuación, cierre el cuadro de diálogo Administración de TrustStore.
 
@@ -210,7 +213,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 
 Configure las propiedades del servicio HTTP Apache Felix Jetty Based en la instancia de publicación para que utilice HTTPS al acceder a Granite Keystore. El PID del servicio es `org.apache.felix.http`.
 
-En la tabla siguiente se enumeran las propiedades de OSGi que debe configurar si utiliza la consola web.
+La siguiente tabla lista las propiedades de OSGi que necesita para configurar si utiliza la consola web.
 
 | Nombre de propiedad en la consola web | Nombre de propiedad OSGi | Value |
 |---|---|---|
@@ -250,7 +253,7 @@ Para habilitar MSSL, configure las propiedades en la ficha Transporte según la 
  </tbody> 
 </table>
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-78](assets/chlimage_1-70.png)
 
 Después de configurar el agente de replicación, pruebe la conexión para determinar si MSSL está configurado correctamente.
 

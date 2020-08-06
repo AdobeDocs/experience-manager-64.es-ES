@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 ## Información general {#overview}
 
-Esta función le permite comprobar la capacidad de actualización de las instancias de AEM existentes detectando patrones en uso que:
+Esta función le permite comprobar la capacidad de actualización de las instancias de AEM existentes mediante la detección de patrones en uso que:
 
 1. Violar ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización
-1. Utilice una función de AEM 6.x o una API que no sea compatible con AEM 6.4 y que pueda romperse tras la actualización.
+1. Utilice una función AEM 6.x o una API que no sea compatible con versiones anteriores en AEM 6.4 y que pueda romperse tras la actualización.
 
-Esto podría servir como una evaluación del esfuerzo de desarrollo que implica la actualización a AEM 6.4.
+Esto podría servir como una evaluación de las actividades de desarrollo que entrañan la mejora a la AEM 6.4.
 
 ## Configuración {#how-to-set-up}
 
-El detector de patrones se publica por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de AEM de origen desde la actualización 6.1 a la 6.5 dirigida a AEM 6.5. Se puede instalar mediante el Administrador de [paquetes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+El detector de patrones se libera por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen AEM de 6.1 a 6.5 con el objetivo AEM actualización 6.5. Se puede instalar mediante el Administrador de [paquetes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Usos {#how-to-use}
 
@@ -38,14 +41,14 @@ El detector de patrones se publica por separado como [un paquete](https://www.ad
 >
 >* aumentar la velocidad de detección
 >* evitar cualquier desaceleración en instancias críticas del negocio\
-   >al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más cercanos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+   >al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más próximos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 
 
 Puede utilizar varios métodos para comprobar la salida del detector de patrones:
 
 * **A través de la consola de Felix Inventory:**
 
-1. Vaya a la consola web de AEM navegando hasta: https://<i></i>serveraddress:serverport/system/console/configMgr
+1. Vaya a la consola web de AEM navegando a: https://<i></i>serveraddress:serverport/system/console/configMgr
 1. Seleccione **Estado - Detector** de patrones como se muestra en la siguiente imagen:
 
    ![captura de pantalla: detector de patrones 2-5-2-2018](assets/screenshot-2018-2-5pattern-detector.png)
@@ -67,7 +70,7 @@ El resultado está disponible actualmente en 2 direcciones URL:
 
 ## Gestión de la interfaz de texto sin formato {#handling-the-plain-text-interface}
 
-La información del resultado tiene un formato de serie de entradas de evento. Existen dos canales: uno para publicar infracciones y el otro para publicar el progreso actual.
+La información del resultado tiene un formato de serie de entradas de evento. Hay dos canales: uno para publicar infracciones y otro para publicar el progreso actual.
 
 Se pueden obtener mediante los siguientes comandos:
 

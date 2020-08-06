@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 2%
 
 ---
 
@@ -67,13 +70,13 @@ Una estructura de sitio de comunidad que incluya la función [](functions.md#cal
 
 ### Acceso a anuncios de calendario (UGC) {#accessing-calendar-posts-ugc}
 
-A partir de AEM 6.1 Communities, el uso de un almacén [](working-with-srp.md) común para UGC incluye acceso mediante programación a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM 6.1 Comunidades, el uso de un almacén [](working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general](srp.md) del proveedor de recursos de almacenamiento de información: introducción y uso del repositorio
+* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
 * [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
 * [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales

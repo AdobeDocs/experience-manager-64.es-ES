@@ -30,16 +30,16 @@ ht-degree: 0%
 
 Aproveche [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) en sus aplicaciones AEM mediante la integración con [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html).
 
-Instrumente sus aplicaciones de AEM para rastrear, informar y comprender cómo los usuarios interactúan con su aplicación móvil y contenido, así como para medir métricas clave del ciclo vital como inicios, tiempo en la aplicación y tasa de bloqueo.
+Instrumente sus aplicaciones AEM para rastrear, informar y comprender cómo los usuarios interactúan con su aplicación y contenido móvil, y para medir métricas clave del ciclo vital, tales como inicios, tiempo en la aplicación y tasa de bloqueo.
 
-En esta sección se describe cómo *los desarrolladores* de AEM pueden:
+En esta sección se describe AEM *los desarrolladores* pueden:
 
 * Integrar Mobile Analytics en la aplicación móvil
 * Probar el seguimiento de análisis con Bloodhound
 
 ## Prerrequisitos {#prerequisties}
 
-AEM Mobile requiere una cuenta de Analytics de Adobe para recopilar y crear informes de los datos de seguimiento en la aplicación. Como parte de la configuración, el *administrador* de AEM primero deberá:
+AEM Mobile requiere una cuenta de Adobe Analytics para recopilar y crear informes de los datos de seguimiento en la aplicación. Como parte de la configuración, el *administrador* de AEM primero tendrá que:
 
 * Configure una cuenta de Adobe Analytics y cree un grupo de informes para la aplicación en Mobile Services.
 * Configure un Cloud Service de AMS en Adobe Experience Manager (AEM).
@@ -50,9 +50,9 @@ AEM Mobile requiere una cuenta de Analytics de Adobe para recopilar y crear info
 
 Una vez configurada la cuenta de Analytics, deberá crear una configuración de sincronización de contenido para extraer el contenido de la aplicación móvil.
 
-Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración deberá indicar a Content Sync que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación Geometrixx Outdoors, la configuración de la sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para el desarrollo; sin embargo, es idéntica a la configuración de no desarrollo en el caso de Geometrixx Outdoors.
+Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración deberá indicar a Content Sync que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación Geometrixx Outdoors, la configuración de la sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para el desarrollo; sin embargo, es idéntico a la configuración de no desarrollo en el caso de los Geometrixx Outdoors.
 
-Para obtener más información sobre cómo descargar ADBMobileConfig desde el panel de aplicaciones AEM de aplicaciones móviles, consulte Analytics - Mobile Services - Archivo de configuración del SDK de Adobe Mobile Services.
+Para obtener más información sobre cómo descargar ADBMobileConfig desde el panel de aplicaciones de AEM móviles, consulte Analytics - Mobile Services - Archivo de configuración del SDK de Adobe Mobile Services.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -91,7 +91,7 @@ Para iOS, el archivo deberá copiarse en el directorio de **recursos** del proye
 
 ### Añadir el complemento AMS en la aplicación {#add-the-ams-plugin-in-the-app}
 
-Para que la aplicación recopile los datos, es necesario incluir el complemento Adobe Mobile Services (AMS) como parte de la aplicación. Al incluir el complemento como una función en el archivo config.xml de la aplicación, se puede usar otro enlace de Cordova para agregar automáticamente el complemento durante el proceso de compilación de PhoneGap.
+Para que la aplicación recopile los datos, el complemento de Adobe Mobile Services (AMS) debe incluirse como parte de la aplicación. Al incluir el complemento como una función en el archivo config.xml de la aplicación, se puede usar otro enlace de Cordova para agregar automáticamente el complemento durante el proceso de compilación de PhoneGap.
 
 ```xml
 <feature name="ADBMobile">
@@ -101,7 +101,7 @@ Para que la aplicación recopile los datos, es necesario incluir el complemento 
 
 El archivo config.xml de la aplicación Geometrixx Outdoors se encuentra en */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*. El ejemplo anterior solicita una versión específica del complemento que se utilizará agregando un &#39;#&#39; y, a continuación, un valor de etiqueta después de la dirección URL del complemento. Se trata de una buena práctica a seguir para garantizar que no aparezcan problemas imprevistos debido a la adición de complementos no probados durante una compilación.
 
-Después de realizar estos pasos, la aplicación se habilitará para informar de todas las métricas del ciclo vital proporcionadas por Adobe Analytics. Esto incluye datos como inicios, bloqueos e instalaciones. Si esa es la única información que te importa, entonces ya has terminado. Si desea recopilar datos personalizados, deberá instrumentar su código.
+Después de realizar estos pasos, su aplicación se habilitará para informar de todas las métricas del ciclo vital proporcionadas por Adobe Analytics. Esto incluye datos como inicios, bloqueos e instalaciones. Si esa es la única información que te importa, entonces ya has terminado. Si desea recopilar datos personalizados, deberá instrumentar su código.
 
 ### Instrumente el código para el seguimiento completo de la aplicación {#instrument-your-code-for-full-app-tracking}
 
@@ -122,7 +122,7 @@ Al instrumentar el código fuente con estas llamadas de método, puede recopilar
 
 <!--NOTE TO WRITER: Reference to Bloodhound no longer valid. Bloodhound is EOL. Russell Whitchurch can provide details/alternate options.-->
 
-De forma opcional, antes de realizar la implementación en producción, puede utilizar la herramienta de Adobe Bloodhound para probar la configuración de análisis. Para probar la configuración de análisis, deberá editar el archivo ADBMobileConfig.json para que apunte al servidor en el que se está ejecutando Bloodhound en lugar del servidor de Analytics real. Para realizar este cambio, desde ADBMobileConfig.json cambie la siguiente entrada.
+Opcionalmente, antes de realizar la implementación en producción, puede utilizar la herramienta Adobe Bloodhound para probar la configuración de análisis. Para probar la configuración de análisis, deberá editar el archivo ADBMobileConfig.json para que apunte al servidor en el que se está ejecutando Bloodhound en lugar del servidor de Analytics real. Para realizar este cambio, desde ADBMobileConfig.json cambie la siguiente entrada.
 
 ```xml
 ...

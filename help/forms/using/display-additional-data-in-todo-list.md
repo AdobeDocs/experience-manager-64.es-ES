@@ -1,8 +1,8 @@
 ---
 title: Visualización de datos adicionales en la lista ToDo
 seo-title: Visualización de datos adicionales en la lista ToDo
-description: Personalización de la visualización del espacio de trabajo Tareas pendientes de LiveCycle AEM Forms para mostrar más información además de la predeterminada.
-seo-description: Personalización de la visualización del espacio de trabajo Tareas pendientes de LiveCycle AEM Forms para mostrar más información además de la predeterminada.
+description: Cómo personalizar la visualización del espacio de trabajo de la lista de tareas pendientes de LiveCycle AEM Forms para mostrar más información además del valor predeterminado.
+seo-description: Cómo personalizar la visualización del espacio de trabajo de la lista de tareas pendientes de LiveCycle AEM Forms para mostrar más información además del valor predeterminado.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Visualización de datos adicionales en la lista ToDo {#displaying-additional-data-in-todo-list}
 
-De forma predeterminada, la lista Tareas pendientes del espacio de trabajo de AEM Forms muestra el nombre y la descripción para mostrar de la tarea. Sin embargo, puede agregar otra información, como fecha de creación o fecha límite. También puede agregar iconos y cambiar el estilo de la pantalla.
+De forma predeterminada, la lista Tareas pendientes del área de trabajo de AEM Forms muestra el nombre y la descripción para mostrar de la tarea. Sin embargo, puede agregar otra información, como fecha de creación o fecha límite. También puede agregar iconos y cambiar el estilo de la pantalla.
 
 ![Una mirada a la ficha Tareas pendientes de HTML Workspace que muestra la configuración predeterminada](assets/html-todo-list.png)
 
@@ -30,7 +33,7 @@ Para obtener más información sobre la descripción del objeto JSON, consulte [
 
 ## Visualización de información en una tarea {#displaying-information-on-a-task}
 
-1. Siga los pasos [genéricos para personalizar](/help/forms/using/generic-steps-html-workspace-customization.md)el espacio de trabajo de AEM Forms.
+1. Siga los pasos [Genéricos para la personalización](/help/forms/using/generic-steps-html-workspace-customization.md)del espacio de trabajo de AEM Forms.
 1. Para mostrar información adicional para una tarea, los pares de clave-valor correspondientes deben agregarse dentro del bloque de tarea de `translation.json`.
 
    Por ejemplo, cambiar `/apps/ws/locales/en-US/translation.json` para inglés:

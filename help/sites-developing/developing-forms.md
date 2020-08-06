@@ -1,6 +1,6 @@
 ---
-title: Desarrollo de formularios (IU clásica)
-seo-title: Desarrollo de formularios (IU clásica)
+title: Desarrollo de Forms (IU clásica)
+seo-title: Desarrollo de Forms (IU clásica)
 description: Aprenda a desarrollar formularios
 seo-description: Aprenda a desarrollar formularios
 uuid: 124e63ba-8d87-4173-aa35-7809b39811d7
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 18%
 
 ---
 
 
-# Desarrollo de formularios (IU clásica){#developing-forms-classic-ui}
+# Desarrollo de Forms (IU clásica){#developing-forms-classic-ui}
 
 La estructura básica de un formulario es:
 
-* Inicio del formulario
+* inicio de formulario
 * Elementos de formulario
 * Fin del formulario
 
-Todo esto se realiza con una serie de componentes [de](/help/sites-authoring/default-components.md)formulario predeterminados, disponibles en una instalación estándar de AEM.
+Todo esto se realiza con una serie de componentes [de](/help/sites-authoring/default-components.md)formulario predeterminados, disponibles en una instalación de AEM estándar.
 
 Además de [desarrollar nuevos componentes](/help/sites-developing/developing-components-samples.md) para su uso en los formularios, también puede:
 
@@ -37,11 +40,11 @@ Además de [desarrollar nuevos componentes](/help/sites-developing/developing-co
 
 >[!NOTE]
 >
->Este documento se centra en el desarrollo de formularios mediante los componentes [](/help/sites-authoring/default-components-foundation.md) de base en la IU clásica. Adobe recomienda aprovechar los nuevos componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales y [ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
+>Este documento se centra en el desarrollo de formularios mediante los componentes [](/help/sites-authoring/default-components-foundation.md) básicos en la IU clásica. Adobe recomienda aprovechar los nuevos componentes [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y [ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
 
 ## Precargar valores de formulario {#preloading-form-values}
 
-El componente de inicio de formulario proporciona un campo para la ruta de **carga**, una ruta opcional que apunta a un nodo del repositorio.
+El componente inicio de formulario proporciona un campo para la ruta de **carga**, una ruta opcional que apunta a un nodo del repositorio.
 
 Ruta de carga es la ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en varios campos del formulario.
 
@@ -59,7 +62,7 @@ Varios campos de formulario también tienen la ruta **de carga de** elementos, o
 
 Ruta **de carga de** elementos es la ruta a las propiedades de nodo que se utiliza para cargar valores predefinidos en ese campo específico del formulario, por ejemplo, una lista [](/help/sites-authoring/default-components-foundation.md#dropdown-list)desplegable, un grupo [de](/help/sites-authoring/default-components-foundation.md#checkbox-group) casillas de verificación o un grupo [de](/help/sites-authoring/default-components-foundation.md#radio-group)radio.
 
-### Ejemplo: Precarga de una lista desplegable con varios valores {#example-preloading-a-dropdown-list-with-multiple-values}
+### Ejemplo: Precarga de una Lista desplegable con varios valores {#example-preloading-a-dropdown-list-with-multiple-values}
 
 Se puede configurar una lista desplegable con el rango de valores para la selección.
 
@@ -69,7 +72,7 @@ La ruta **de carga de** elementos se puede utilizar para acceder a una lista des
 
    for example, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Agregue una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para contener la lista de elementos desplegables. El contenido también se puede importar mediante una secuencia de comandos, como con una secuencia de comandos JSP o cURL en una secuencia de comandos de shell.
+1. Añada una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para que contenga la lista de elementos desplegables. El contenido también se puede importar mediante una secuencia de comandos, como con una secuencia de comandos JSP o cURL en una secuencia de comandos de shell.
 
 1. Utilice la ruta completa en el campo **Ruta de carga de elementos**:
 
@@ -86,13 +89,13 @@ AEM generará la lista como:
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
 
-Esta función puede, por ejemplo, utilizarse bien en una configuración de varios idiomas.
+Esta función puede, por ejemplo, utilizarse bien en un ajuste de varios idiomas.
 
 ### Desarrollo de sus propias acciones de formulario {#developing-your-own-form-actions}
 
 Un formulario necesita una acción. Una acción define la operación que se ejecuta cuando el formulario se envía con los datos del usuario.
 
-Se ofrece una serie de acciones con una instalación estándar de AEM, que se pueden ver en:
+Se proporciona una serie de acciones con una instalación AEM estándar, que se pueden ver en:
 
 `/libs/foundation/components/form/actions`
 
@@ -116,12 +119,12 @@ Puede agregar su propia acción en `/apps` :
    * `componentGroup` - definir como `.hidden`
    * De forma opcional:
 
-      * `jcr:title` - especifique un título de su elección; se mostrará en la lista desplegable de selección. Si no se establece, se muestra el nombre del nodo
+      * `jcr:title` - especifique un título de su elección, esto se mostrará en la lista de selección desplegable. Si no se establece, se muestra el nombre del nodo
       * `jcr:description` - escriba una descripción de su elección
 
 1. En la carpeta, cree un nodo de cuadro de diálogo:
 
-   1. Agregue campos para que el autor pueda editar el cuadro de diálogo de formularios una vez seleccionada la acción.
+   1. Añada los campos para que el autor pueda editar el cuadro de diálogo de formularios una vez seleccionada la acción.
 
 1. En la carpeta, cree una de las opciones siguientes:
 
@@ -131,12 +134,12 @@ Puede agregar su propia acción en `/apps` :
 
       La secuencia de comandos posterior se invoca cuando se envía un formulario para procesarlo, contiene el código que controla los datos que llegan desde el formulario `POST`.
 
-   1. Agregue una secuencia de comandos de reenvío que se invoque al enviar el formulario.
+   1. Añada una secuencia de comandos hacia delante que se invoque al enviar el formulario.
 
       El nombre de la secuencia de comandos es `forward.<extension`>, por ejemplo: `forward.jsp`
 
       Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenvía a la ruta especificada.
-   La llamada necesaria es `FormsHelper#setForwardPath` (2 variantes). Un caso típico es realizar alguna validación, o lógica, para encontrar la ruta de destino y luego reenviar a esa ruta, permitiendo que el servlet Sling POST predeterminado realice el almacenamiento real en JCR.
+   La llamada necesaria es `FormsHelper#setForwardPath` (2 variantes). Un caso típico es realizar alguna validación, o lógica, para encontrar la ruta de destinatario y luego avanzar a esa ruta, permitiendo que el servlet predeterminado del POST Sling haga el almacenamiento real en JCR.
 
    También puede haber otro servlet que realice el procesamiento real, en tal caso la acción del formulario y el `forward.jsp` solo actuaría como el código &quot;pegado&quot;. Un ejemplo de esto es la acción de correo en `/libs/foundation/components/form/actions/mail`, que envía detalles `<currentpath>.mail.html`donde se encuentra un servlet de correo.
 
@@ -144,6 +147,7 @@ Puede agregar su propia acción en `/apps` :
 
    * a `post.POST.jsp` resulta útil para las operaciones pequeñas que se realizan plenamente mediante la propia acción
    * mientras que la `forward.jsp` es útil cuando sólo se requiere la delegación.
+
    El orden de ejecución de las secuencias de comandos es:
 
    * Al procesar el formulario ( `GET`):
@@ -171,7 +175,7 @@ Puede agregar su propia acción en `/apps` :
 
       El nombre de la secuencia de comandos es `addfields.<extension>`, por ejemplo: `addfields.jsp`
 
-      Se invoca una secuencia de comandos addfields inmediatamente después de escribir el código HTML para el inicio del formulario. Esto permite que la acción agregue campos de entrada personalizados u otro código HTML dentro del formulario.
+      Se invoca una secuencia de comandos addfields inmediatamente después de escribir el HTML para el inicio de formulario. Esto permite que la acción agregue campos de entrada personalizados u otro código HTML dentro del formulario.
 
    1. Una secuencia de comandos de inicialización.
 
@@ -216,7 +220,7 @@ Puede agregar sus propias restricciones para un campo individual (debajo `/apps`
    * `constraintMessage` - un mensaje personalizado que se mostrará si el campo no es válido, según la restricción, al enviar el formulario
    * De forma opcional:
 
-      * `jcr:title` - especifique un título de su elección, se mostrará en la lista de selección. Si no se establece, se muestra el nombre del nodo
+      * `jcr:title` - especifique un título de su elección, esto se mostrará en la lista de selección. Si no se establece, se muestra el nombre del nodo
       * `hint` - información adicional, para el usuario, sobre cómo utilizar el campo
 
 1. Dentro de esta carpeta, puede necesitar las siguientes secuencias de comandos:
@@ -291,7 +295,8 @@ En Javascript, las condiciones utilizan el valor de la propiedad Nombre del elem
       * **todo** : si todas las condiciones deben ser verdaderas para mostrar u ocultar el componente
       * **cualquiera** : si solo una o varias condiciones deben ser verdaderas para mostrar u ocultar el componente
    * En la línea de condición (una se presenta como predeterminada), seleccione un componente, operador y, a continuación, especifique un valor.
-   * Agregue más condiciones si es necesario haciendo clic en **Agregar condición**.
+   * Añada más condiciones si es necesario haciendo clic en **Añadir condición**.
+
    Por ejemplo:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
@@ -308,7 +313,7 @@ En Javascript, las condiciones utilizan el valor de la propiedad Nombre del elem
    >
    >Se pueden ver y probar los efectos de las definiciones Mostrar/Ocultar:
    >
-   >* en el modo de **vista previa** en el entorno de creación (se necesita volver a cargar la página al cambiar por primera vez a la vista previa)
+   >* en el modo de **Previsualización** en el entorno de creación (se necesita volver a cargar la página al cambiar por primera vez a la previsualización)
    >* en el entorno de publicación
 
 
@@ -318,7 +323,7 @@ Las condiciones de la función de mostrar y ocultar utilizan el valor de la prop
 
 Cuando la configuración Mostrar/Ocultar no es válida, la configuración se proporciona únicamente como código JavaScript. Edite el código para corregir los problemas. El código utilizará la propiedad Nombre de elemento utilizada originalmente para hacer referencia a los componentes.
 
-### Desarrollo de secuencias de comandos para su uso con formularios {#developing-scripts-for-use-with-forms}
+### Desarrollo de secuencias de comandos para su uso con Forms {#developing-scripts-for-use-with-forms}
 
 Para obtener más información sobre los elementos de API que se pueden utilizar al escribir secuencias de comandos, consulte los [javadocs relacionados con los formularios](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 

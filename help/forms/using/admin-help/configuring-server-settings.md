@@ -30,9 +30,9 @@ La página Ajustes del servidor proporciona acceso a varias opciones de configur
 
 Puede especificar una cuenta de correo electrónico para el servidor de formularios, a través del cual se envían mensajes de correo electrónico a los usuarios y administradores de formularios AEM. Estos mensajes de correo electrónico se utilizan para notificar y recordar a los usuarios las tareas que deben completar, notificar al usuario las tareas que han alcanzado un plazo y notificar al administrador los errores de proceso que se produzcan.
 
-Para habilitar el envío de mensajes de correo electrónico entre los formularios AEM y los usuarios, configure la configuración de correo electrónico saliente en la página Configuración de correo electrónico. El correo electrónico saliente debe utilizar un servidor SMTP.
+Para habilitar el envío de mensajes de correo electrónico entre AEM formularios y usuarios, configure la configuración de correo electrónico saliente en la página Configuración de correo electrónico. El correo electrónico saliente debe utilizar un servidor SMTP.
 
-Para permitir que los formularios AEM reciban y gestionen mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio de Tarea completa. (Consulte [Creación de un extremo de correo electrónico para el servicio](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)de Tarea completa).
+Para permitir que AEM formularios reciban y gestionen mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio de Tarea completa. (Consulte [Creación de un extremo de correo electrónico para el servicio](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)de Tarea completa).
 
 Si los procesos están diseñados e implementados sin necesidad de enviar un correo electrónico, no es necesario configurar ninguna de las opciones de la página Configuración de correo electrónico.
 
@@ -58,9 +58,9 @@ Si los procesos están diseñados e implementados sin necesidad de enviar un cor
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
-De forma predeterminada, los correos electrónicos enviados por formularios AEM contienen vínculos a Flex Workspace (obsoleto para formularios AEM en JEE). Puede configurar formularios AEM para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre Flex Workspace (obsoleto para formularios AEM en JEE), consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
+De forma predeterminada, los correos electrónicos enviados por AEM formularios contienen vínculos a Flex Workspace (obsoleto para AEM formularios en JEE). Puede configurar AEM formularios para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre (obsoleto para formularios AEM en JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
 
 1. En la consola de administración, haga clic en Inicio > Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de Tarea.
 1. Abra la plantilla de asignación de tareas.
@@ -84,13 +84,13 @@ Para generar notificaciones por correo electrónico para un grupo, especifique u
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 ### Configurar recordatorios para usuarios o grupos {#configure-reminders-for-users-or-groups}
 
 Puede enviar notificaciones de recordatorio al usuario o grupo asignado cuando se aproxime la fecha límite para completar una tarea. El desarrollador del proceso determina las reglas para determinar exactamente cuándo se envía una notificación de recordatorio.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de Tarea.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Notificaciones de Tarea.
 1. En Tipo de notificación, haga clic en Recordatorio (para usuarios) o Grupo - Recordatorio (para grupos).
 1. Seleccione Habilitar recordatorio o Habilitar grupo: recordatorio.
 1. (Solo notificaciones del usuario) Para incluir un archivo adjunto del formulario y sus datos con el mensaje de correo electrónico del recordatorio, seleccione Incluir datos del formulario.
@@ -104,7 +104,7 @@ Puede enviar notificaciones de recordatorio al usuario o grupo asignado cuando s
 
 Puede enviar notificaciones de asignación de tareas a un usuario o grupo cuando se les asigne una tarea.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de Tarea.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Notificaciones de Tarea.
 1. En Tipo de notificación, haga clic en Asignación de Tarea para usuarios o Asignación de grupo - Tarea para grupos.
 1. Seleccione Habilitar asignación de Tarea para usuarios o Habilitar asignación de grupo - Tarea para grupos.
 1. (Solo notificaciones del usuario) Para incluir un archivo adjunto del formulario y sus datos con el mensaje de correo electrónico de asignación de tareas, seleccione Incluir datos del formulario.
@@ -118,7 +118,7 @@ Puede enviar notificaciones de asignación de tareas a un usuario o grupo cuando
 
 Puede enviar notificaciones de fecha límite a usuarios y grupos cuando haya transcurrido el plazo para actuar en función de una tarea asignada. Una notificación de fecha límite suele ser informativa porque el usuario ya no puede actuar en la tarea asignada.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de Tarea.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Notificaciones de Tarea.
 1. En Tipo de notificación, haga clic en Fecha límite (para usuarios) o Grupo - Fecha límite (para grupos).
 1. Seleccione Activar fecha límite o Habilitar grupo: fecha límite.
 1. En el cuadro Asunto, escriba el texto de la línea de asunto del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
@@ -127,9 +127,9 @@ Puede enviar notificaciones de fecha límite a usuarios y grupos cuando haya tra
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que usará la mayoría de los usuarios fuera de Japón. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
-### Ocultar la etiqueta NO ELIMINAR para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
+### Ocultar la etiqueta NO DELETE para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
 
-Puede configurar el correo electrónico para que se oculte en la etiqueta de seguimiento NO ELIMINAR en todos los correos electrónicos enviados en un proceso centrado en el ser humano. Para obtener más información, consulte [Cómo ocultar la etiqueta &#39;NO-ELIMINAR&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+Puede configurar el correo electrónico para que se oculte en la etiqueta de seguimiento DO NOT DELETE en todos los correos electrónicos enviados en un proceso centrado en el ser humano. Para obtener más información, consulte [Cómo ocultar la etiqueta &#39;DO-NOT-DELETE&#39; con CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Configuración de notificaciones para administradores {#configuring-notifications-for-administrators}
 
@@ -144,7 +144,7 @@ Los administradores pueden configurar los siguientes tipos de notificaciones:
 
 Si una rama se detiene (deja de continuar deliberadamente o debido a un error), puede enviar una notificación por correo electrónico a un administrador u otro usuario, que luego puede investigar el problema.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de administrador.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Notificaciones de administrador.
 1. En Tipo de notificación, haga clic en Rama detenida.
 1. Seleccione Activar rama paralizada.
 1. En el cuadro Dirección de correo electrónico, escriba las direcciones de los usuarios a los que se debe notificar cuando se estanca una rama. Utilice el formato user@domain.com y separe cada dirección con una coma. Normalmente, esta dirección de correo electrónico es para un administrador.
@@ -158,7 +158,7 @@ Si una rama se detiene (deja de continuar deliberadamente o debido a un error), 
 
 Si una operación se detiene (deja de continuar deliberadamente o debido a un error), puede enviar una notificación por correo electrónico a un administrador u otro usuario, que puede investigar el problema.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de administrador.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Notificaciones de administrador.
 1. En Tipo de notificación, haga clic en Operación detenida.
 1. Seleccione Activar operación paralizada.
 1. En el cuadro Direcciones de correo electrónico, escriba las direcciones de los usuarios a los que se notificará cuando se detenga una operación. Utilice el formato user@domain.com y separe cada dirección con una coma. Normalmente, esta dirección de correo electrónico es para un administrador.
@@ -192,7 +192,7 @@ Solo para notificaciones de Tarea, el flujo de trabajo de Forms incluye dos conf
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios AEM.
+>Flex Workspace está obsoleto para AEM versión de formularios.
 
 Si la solución está implementada en un entorno agrupado, reemplace `@@notification-host@@` por la dirección del clúster.
 
@@ -208,7 +208,7 @@ Para que estas direcciones URL funcionen correctamente, reemplace `<`*PORT *`>`p
 
 >[!NOTE]
 >
->Si está utilizando una aplicación web personalizada que no sea Forms para proporcionar a los usuarios acceso a las tareas, debe utilizar un formato de URL adecuado para la aplicación personalizada.
+>Si está utilizando una aplicación web personalizada que no sea Forms para proporcionar a los usuarios acceso a las tareas, debe utilizar en su lugar un formato URL adecuado para la aplicación personalizada.
 
 ### Selector de variable {#variable-picker}
 
@@ -282,7 +282,7 @@ El Monitoreo de la Actividad del negocio, un módulo opcional, proporciona un co
 
 En la página Configuración de BAM, configure las conexiones al servidor que ejecuta BAM para que los eventos relacionados con el proceso se puedan rastrear y transmitir a ese servidor.
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Configuración del servidor > Configuración de BAM.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Configuración de BAM.
 1. En el cuadro Host de BAM, escriba el nombre del servidor que ejecuta BAM. El valor predeterminado es localhost.
 1. En el cuadro Puerto de BAM, escriba el puerto que se va a utilizar para conectarse al servidor que ejecuta BAM. El puerto predeterminado de BAM para JBoss es 8080, WebLogic es 7001 y WebSphere es 9080.
 1. En el cuadro Host del servidor, escriba el nombre o la dirección IP del servidor de formularios de host. El valor predeterminado es localhost.

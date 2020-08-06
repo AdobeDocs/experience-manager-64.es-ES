@@ -1,8 +1,8 @@
 ---
-title: Configuración de formularios de búsqueda
-seo-title: Configuración de formularios de búsqueda
-description: Obtenga información sobre cómo configurar los formularios de búsqueda.
-seo-description: Obtenga información sobre cómo configurar los formularios de búsqueda.
+title: Configurar formularios de búsqueda
+seo-title: Configurar formularios de búsqueda
+description: Obtenga información sobre cómo configurar Search Forms.
+seo-description: Obtenga información sobre cómo configurar Search Forms.
 uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 12%
 
 ---
 
 
-# Configuración de formularios de búsqueda{#configuring-search-forms}
+# Configurar formularios de búsqueda{#configuring-search-forms}
 
-Utilice los formularios **de** búsqueda para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas de AEM y/o paneles del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
+Utilice **Buscar en Forms** para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas de AEM y/o paneles del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
 
 Hay una [variedad de](#predicates-and-their-settings)predicados disponibles de forma predeterminada. Puede agregar varios predicados, incluido (entre otros) el predicado de texto completo para búsquedas de texto completo, el predicado de propiedades para buscar recursos que coincidan con una sola propiedad especificada por usted o el predicado de opciones para buscar recursos que coincidan con uno o más valores especificados para una propiedad concreta.
 
@@ -112,7 +115,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr> 
   <tr> 
    <td>Análisis </td> 
-   <td>Funciones de búsqueda/filtro en el navegador Sitios al mostrar datos con alimentación de análisis. Los filtros de búsqueda de Analytics se cargan para coincidir con las columnas de análisis personalizado asignadas.</td> 
+   <td>Funciones de búsqueda/filtro en el navegador Sitios al mostrar datos con alimentación de análisis. Los filtros de búsqueda de Analytics se cargan para coincidir con las columnas de análisis personalizados asignadas.</td> 
    <td> 
     <ul> 
      <li>Etiqueta de campo</li> 
@@ -148,7 +151,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr> 
   <tr> 
    <td>Intervalo de fechas </td> 
-   <td>Buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td> 
+   <td>Buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de Inicio y finalización.</td> 
    <td> 
     <ul> 
      <li>Etiqueta de campo</li> 
@@ -203,7 +206,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr> 
   <tr> 
    <td>Opciones </td> 
-   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Adición de un predicado</a> de opciones para obtener más información.</p> </td> 
+   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Añadir un predicado</a> de opciones para obtener más información.</p> </td> 
    <td> 
     <ul> 
      <li>Etiqueta de campo</li> 
@@ -243,7 +246,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td> 
     <ul> 
      <li>Etiqueta de campo</li> 
-     <li>Agregar ruta de búsqueda</li> 
+     <li>Añadir ruta de búsqueda</li> 
      <li>Descripción</li> 
     </ul> </td> 
   </tr> 
@@ -350,6 +353,7 @@ Los siguientes predicados están disponibles, según la configuración:
 * Los predicados de búsqueda relacionados solo con siteadmin (IU clásica) se encuentran en:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Están en desuso y solo están disponibles para compatibilidad con versiones anteriores.
+
 > 
 >
 Esta información es sólo de referencia, no debe realizar cambios en `/libs`.
@@ -382,7 +386,7 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * **Valor de propiedad**
 
-   El valor de propiedad como una cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
+   El valor de la propiedad como una cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
@@ -398,7 +402,8 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Ruta** del nodo de opciones Igual que la ruta **de** opciones, solo se encuentra en el campo predicado común y el otro es específico para los recursos.
+* **La ruta** del nodo de opciones es igual que la del 
+**Ruta** de opciones, solo que se encuentra en el campo predicado común, mientras que el otro es específico para recursos.
 
 * **Selección**&#x200B;única Si está activada, las opciones se procesan como casillas de verificación que solo permiten una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
@@ -406,11 +411,11 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * &amp;ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error
 
-## Configuración de los formularios de búsqueda {#configuring-your-search-forms}
+## Configuración de la búsqueda en Forms {#configuring-your-search-forms}
 
 ### Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}
 
-1. Vaya a **Herramientas**, **Operaciones** y Formularios **de búsqueda**.
+1. Vaya a **Herramientas**, **Operaciones**, **Buscar en Forms**.
 
 1. Seleccione la configuración que desee personalizar.
 1. Utilice el icono **Editar** para abrir la configuración y actualizarla.
@@ -425,7 +430,7 @@ Según el predicado, hay una selección de opciones disponibles para la configur
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Agregar o editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
+### Añadir/editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puede agregar o editar campos y definir o actualizar su configuración:
 
@@ -451,7 +456,7 @@ Puede agregar o editar campos y definir o actualizar su configuración:
 
 ### Vista preliminar de la configuración de búsqueda {#previewing-the-search-configuration}
 
-1. Seleccione el icono Vista previa:
+1. Seleccione el icono de Previsualización:
 
    ![](do-not-localize/chlimage_1-31.png)
 
@@ -459,12 +464,12 @@ Puede agregar o editar campos y definir o actualizar su configuración:
 
    ![chlimage_1-377](assets/chlimage_1-377.png)
 
-1. **Cierre** la vista previa para volver y finalizar la configuración.
+1. **Cierre** la previsualización para volver y finalizar la configuración.
 
 ### Eliminación de un campo predicado {#deleting-a-predicate-field}
 
 1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
-1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y seleccione el icono **Eliminar** (abajo a la izquierda).
+1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
 
    ![](do-not-localize/chlimage_1-32.png)
 
@@ -488,7 +493,7 @@ La eliminación de una configuración personalizada se realiza desde la consola:
 
 1. Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).
 
-### Adición de predicados de opciones {#adding-options-predicates}
+### Predicados de opciones de Añada {#adding-options-predicates}
 
 Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.
 
@@ -502,6 +507,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    * `jcr:title` - la etiqueta de campo que se mostrará en el carril de búsqueda
    * `value` - el valor de propiedad en el que se buscará
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
@@ -517,7 +523,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    >1. Realice los cambios en `/apps.`
 
 
-1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda.
+1. Abra la consola **Buscar en Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda.
 
    A continuación, toque o haga clic en el icono **Editar formularios** de búsqueda.
 
@@ -526,7 +532,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    * **Nombre de propiedad**
 
-      Especifique la propiedad node que se buscará en los nodos de destino. Por ejemplo:
+      Especifique la propiedad node que se buscará en los nodos destinatario. Por ejemplo:
 
       `jcr:content/cq:template`
 
@@ -544,13 +550,13 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
 ## Permisos de usuario {#user-permissions}
 
-En la tabla siguiente se muestran los permisos necesarios para realizar acciones de edición, eliminación y vista previa en formularios de búsqueda.
+La siguiente tabla lista los permisos necesarios para realizar acciones de edición, eliminación y previsualización en los formularios de búsqueda.
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>Acción</strong></td> 
-   <td><strong>Permisos </strong></td> 
+   <td><strong>Permisos   </strong></td> 
   </tr> 
   <tr> 
    <td>Editar </td> 

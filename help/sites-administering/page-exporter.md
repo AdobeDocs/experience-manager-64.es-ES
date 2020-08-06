@@ -1,8 +1,8 @@
 ---
 title: Exportador de páginas
 seo-title: Exportador de páginas
-description: Aprenda a utilizar AEM Page Exporter.
-seo-description: Aprenda a utilizar AEM Page Exporter.
+description: Obtenga información sobre cómo utilizar el Exportador de páginas AEM.
+seo-description: Obtenga información sobre cómo utilizar el Exportador de páginas AEM.
 uuid: 2ca2b8f1-c723-4e6b-8c3d-f5886cd0d3f1
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
 
 # Exportador de páginas{#the-page-exporter}
 
-AEM le permite exportar una página como una página web completa que incluye imágenes, archivos .js y archivos .css.
+AEM permite exportar una página como una página web completa que incluye imágenes, archivos .js y .css.
 
 Una vez configurada la exportación, solo tiene que solicitar una página en el navegador sustituyéndola `html` por `export.zip` en la URL y obtener una descarga de archivo zip que contenga la página representada en formato html y los recursos a los que se hace referencia. Todas las rutas de la página, por ejemplo las rutas a las imágenes, se reescriben para que apunten a los archivos incluidos en el archivo zip o a los recursos del servidor.
 
@@ -31,7 +34,7 @@ Para exportar una página:
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
 1. Abra el cuadro de diálogo de propiedades de página, seleccione la ficha **Avanzadas** y expanda el conjunto de campos **Exportar** .
 
-1. Haga clic en el icono de lupa y seleccione una plantilla de configuración. Seleccione la plantilla **geometrixx** , ya que es la predeterminada para el sitio Geometrixx. Haga clic en **Aceptar**.
+1. Haga clic en el icono de lupa y seleccione una plantilla de configuración. Seleccione la plantilla **geometrixx** , ya que es la predeterminada para el sitio de Geometrixx. Haga clic en **Aceptar**.
 
 1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo de propiedades de página.
 1. Solicite la página reemplazando `html` por `export.zip` en la dirección URL.
@@ -56,13 +59,13 @@ AEM incrusta algunas plantillas, entre las que se incluyen:
    * Es la plantilla de reserva cuando no se encuentra ninguna plantilla de configuración en el repositorio.
    * Puede servir de base para una nueva plantilla de configuración.
 
-* Una que está dedicada al sitio **Geometrixx** , en `/etc/contentsync/templates/geometrixx`. Esta plantilla puede utilizarse como ejemplo para crear una nueva.
+* Una dedicada al sitio de **Geometrixx** , en `/etc/contentsync/templates/geometrixx`. Esta plantilla puede utilizarse como ejemplo para crear una nueva.
 
 Para crear una plantilla de configuración de exportador de páginas:
 
-1. En **CRXDE Lite**, cree un nodo a continuación `/etc/contentsync/templates`:
+1. En **CRXDE Lite**, cree un nodo debajo `/etc/contentsync/templates`:
 
-   * Nombre:p. ej. `mysite`. El nombre aparece en el cuadro de diálogo de propiedades de página al elegir la plantilla del exportador de páginas.
+   * Nombre: p. ej. `mysite`. El nombre aparece en el cuadro de diálogo de propiedades de página al elegir la plantilla del exportador de páginas.
    * Tipo: `nt:unstructured`
 
 1. Debajo del nodo de plantilla, llamado aquí `mysite`, cree una estructura de nodos utilizando los nodos de configuración que se describen a continuación.
@@ -124,7 +127,7 @@ Por ejemplo, el siguiente nodo de configuración copia los archivos geometrixx c
 }
 ```
 
-La plantilla de configuración de exportación de página **Geometrixx** muestra cómo se puede configurar una exportación de página. Para ver la estructura de nodos de la plantilla en el navegador como formato json, solicite la siguiente URL:
+La plantilla de configuración de exportación de página de **Geometrixx** muestra cómo se puede configurar una exportación de página. Para vista de la estructura de nodos de la plantilla en el navegador como formato json, solicite la siguiente URL:
 
 `http://localhost:4502/etc/contentsync/templates/geometrixx.-1.json`
 

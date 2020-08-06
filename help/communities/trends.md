@@ -1,8 +1,8 @@
 ---
-title: Tendencias de actividades
-seo-title: Tendencias de actividades
-description: Adición de un componente Lista de actividades de comunidad a una página
-seo-description: Adición de un componente Lista de actividades de comunidad a una página
+title: Tendencias de Actividad
+seo-title: Tendencias de Actividad
+description: Añadir un componente de Lista de Actividad comunitaria en una página
+seo-description: Añadir un componente de Lista de Actividad comunitaria en una página
 uuid: 6a030340-0e69-432a-98f1-3effb2b97136
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,29 +11,32 @@ content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 4%
 
 ---
 
 
-# Tendencias de actividades {#activity-trends}
+# Tendencias de Actividad {#activity-trends}
 
 ## Introducción {#introduction}
 
-El `Community Activity List` componente proporciona la capacidad de agregar información de tendencias con respecto a las publicaciones y vistas de los miembros, así como las publicaciones y vistas del contenido.
+El `Community Activity List` componente proporciona la capacidad de agregar información de tendencias con respecto a anuncios y vistas de miembros, así como anuncios y vistas de contenido.
 
 Esta sección de la documentación describe
 
-* Adición del `Community Activity List` componente a un sitio [de comunidad](overview.md#community-sites)
+* Añadir el `Community Activity List` componente en un sitio [de comunidad](overview.md#community-sites)
 
 * Configuración del `Community Activity List` componente
 
 ## Requisito {#requirement}
 
-Los datos para el `Community Activity List` sitio solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
+Los datos del `Community Activity List` sitio solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
 
 Consulte Configuración [de Analytics para funciones](analytics.md)de comunidades.
 
-## Adición de una lista de actividades de comunidad a una página {#adding-a-community-activity-list-to-a-page}
+## Añadir una Lista de Actividad de comunidad en una página {#adding-a-community-activity-list-to-a-page}
 
 Para agregar un `Community Activity List` componente a una página en modo de autor, ubique el componente `Communities / Community Activity List` y arrástrelo a su lugar en una página.
 
@@ -43,7 +46,7 @@ Cuando se coloca por primera vez en una página de un sitio de comunidad, así e
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Configuración de la lista de actividades de la comunidad {#configuring-community-activity-list}
+## Configuración de la Lista de Actividad de la comunidad  {#configuring-community-activity-list}
 
 Seleccione el componente colocado al que desea acceder y seleccione el `Community Activity List` `Configure` icono que abre el cuadro de diálogo de edición.
 
@@ -60,6 +63,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
    Seleccionar de
    * `Members`
    * `Content`
+
    El valor predeterminado es `Members`.
 
 * **[!UICONTROL Título que se mostrará]**
@@ -70,7 +74,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
 
 * **[!UICONTROL Número de de visualizaciones]**
 
-   El número de elementos que se van a mostrar.
+   Número de elementos que se van a lista.
 
    El valor predeterminado es 10.
 
@@ -81,6 +85,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
    * `Posts`(creación de UGC)
    * `Follows`
    * `Likes`
+
    El valor predeterminado es Vistas.
 
 * **[!UICONTROL Período de tiempo]**
@@ -92,11 +97,12 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    El valor predeterminado es `Total`.
 
 * **[!UICONTROL Ruta de contexto]**
 
-   Proporciona la capacidad de ampliar la actividad a un subconjunto del sitio, como un blog específico.
+   Proporciona la capacidad de ampliar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
 
    El valor predeterminado es todo el sitio de la comunidad.
 
@@ -108,12 +114,12 @@ En la ficha **[!UICONTROL Comentarios]** , especifique si se mostrarán los come
 
 ## Ejemplo de página con 4 componentes {#example-page-with-components}
 
-**Configuración de visitantes** principales: Tipo = Miembros, tipo de actividad = Vistas
+**Configuración de Visitantes** principales: Tipo = Miembros, tipo de Actividad = Vistas
 
-**Configuración de colaboradores** principales: Tipo = Miembros, Tipo de actividad = Anuncios
+**Configuración de colaboradores** principales: Tipo = Miembros, tipo de Actividad = Anuncios
 
-**Configuración de contenido** superior: Tipo = Contenido, Tipo de actividad = Vistas,
+**Configuración de contenido** superior: Tipo = Contenido, tipo de Actividad = Vistas,
 
-**Configuración de contenido** de tendencias: Tipo = Contenido, Tipo de actividad = Anuncios
+**Configuración de contenido** de tendencias: Tipo = Contenido, tipo de Actividad = Anuncios
 
 ![chlimage_1-230](assets/chlimage_1-230.png)

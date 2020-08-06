@@ -1,8 +1,8 @@
 ---
 title: Visualización de recursos 3D
 seo-title: Visualización de recursos 3D
-description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para ver recursos 3D.
-seo-description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para ver recursos 3D.
+description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para la vista de recursos 3D.
+seo-description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para la vista de recursos 3D.
 uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 33%
 
 ---
 
 
 # Visualización de recursos 3D {#viewing-d-assets}
 
-Este documento describe cómo ver los recursos 3D en los detalles de los recursos y cómo ver los recursos que se encuentran en el componente 3D en los sitios.
+En este documento se describe cómo realizar la vista de recursos 3D en los detalles de recursos y cómo realizar la vista de recursos que se encuentran en el componente 3D de los sitios.
 
 ## Visualización de recursos 3D en la página Detalles del recurso {#viewing-d-assets-in-the-asset-details-page}
 
@@ -31,7 +34,7 @@ Consulte [Acerca del uso de escenarios en AEM 3D](about-the-use-of-stages-in-aem
 
 >[!NOTE]
 >
->Para ver un recurso 3D, el navegador de su dispositivo o de escritorio debe tener WebGL activado. Además, el hardware de gráficos subyacente debe tener suficientes capacidades y memoria para procesar modelos de tamaño y complejidad deseados. Algunas funciones de vista previa, como sombra proyectada, no están disponibles en todos los navegadores.
+>Para ver un recurso 3D, el navegador de su dispositivo o de escritorio debe tener WebGL activado. Además, el hardware de gráficos subyacente debe tener suficientes capacidades y memoria para procesar modelos de tamaño y complejidad deseados. Algunas funciones de previsualización, como sombra proyectada, no están disponibles en todos los navegadores.
 
 ### Consideraciones de rendimiento al ver recursos 3D {#performance-considerations-when-you-view-d-assets}
 
@@ -69,36 +72,37 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>o</p> <p>Persp</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga pulsada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de perspectiva<br /> . Suelte la tecla para volver al modo de Zoom.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga presionada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de perspectiva<br /> . Suelte la tecla para volver al modo de Zoom.</p> 
       <ul> 
       <li><strong>Zoom</strong>-Acercar y alejar la cámara, lo que la aleja del recurso<br /> que está viendo. El zoom es el comportamiento predeterminado de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
-      <li><strong>Perspectiva</strong>: cambia la distancia focal (también conocida como campo de visión) de la cámara mientras se mantiene el tamaño relativo del recurso en la vista. La perspectiva es el comportamiento alternativo de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
+      <li><strong>Perspectiva</strong>: cambia la distancia focal (también conocida como campo de vista) de la cámara mientras se mantiene el tamaño relativo del recurso en la vista. La perspectiva es el comportamiento alternativo de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbit</p> <p>o</p> <p>Panorámica</p> </td> 
       <td><p>Toque o haga clic para alternar entre los modos Orbit y Pan.</p> <p>O bien, mantenga pulsada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de desplazamiento. Suelte la tecla para volver al modo de Giro.</p> 
       <ul> 
-      <li><strong>Orbit</strong>: mueve la cámara de visualización en una esfera centrada en un punto de destino que se encuentra cerca del centro del recurso 3D como valor predeterminado. El giro es el comportamiento predeterminado al arrastrar con el botón izquierdo o al arrastrar con un solo toque en dispositivos móviles.</li> 
+      <li><strong>Orbit</strong>: Mueve la cámara de visualización en una esfera centrada en un punto de destinatario que se encuentra cerca del centro del recurso 3D por defecto. El giro es el comportamiento predeterminado al arrastrar con el botón izquierdo o al arrastrar con un solo toque en dispositivos móviles.</li> 
       <li><strong>Recorrido</strong>: mueve la cámara en el plano de visualización. El punto de destino se mueve en consecuencia, de manera que las acciones de giro posteriores moverán la cámara alrededor de un nuevo punto de destino. La panorámica es el comportamiento alternativo al arrastrar con el botón izquierdo y al arrastrar con un solo toque.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Examinar</p> <p>o</p> <p>Destino</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Examinar y Destino.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Examinar y Destinatario.</p> 
       <ul> 
-      <li><strong>Toque</strong>o toque para entrar en el modo de Target.</li> 
-      <li><strong>Puntee</strong>en un punto del recurso 3D o haga clic en él para centrar la vista en esa parte del recurso.<br /> Las acciones de giro utilizan el nuevo punto de destino.</li> 
+      <li><strong>Examine</strong>-Toque o haga clic para entrar en el modo Destinatario.</li> 
+      <li><strong>Destinatario</strong>: toque o haga clic en un punto del recurso 3D para centrar la vista en esa parte del recurso.<br /> Las acciones de giro utilizan el nuevo punto de destino.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td>Restablecer</td> 
-      <td>Toque o haga clic para restaurar el punto de destino de vista al centro del modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toque o haga clic para restaurar el punto de destinatario de la vista al centro del modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
       </tr> 
     </tbody> 
     </table>
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Seleccione un nombre de escenario con el fondo y la iluminación que desee aplicar al recurso 3D.
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    Las etapas proporcionan el fondo del entorno, el plano de tierra y la iluminación en la que se ve el modelo 3D.
@@ -106,6 +110,7 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
    Consulte [Información acerca del uso de escenarios en AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
    * Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    A menudo, los escenarios proporcionan cámaras predefinidas. Puede volver a seleccionar la cámara actual para restaurarla a su configuración predefinida.
@@ -143,13 +148,13 @@ Consulte también [Vista previa de una página web que tiene un componente](usin
 
 Para trabajar con componentes 3D con dispositivos de pantalla táctil:
 
-1. Utilice un dedo para arrastrar o realizar un barrido para mover (&quot;orbitar&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede ver el objeto desde cualquier dirección.
+1. Utilice un dedo para arrastrar o realizar un barrido para mover (&quot;orbitar&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede realizar una vista del objeto desde cualquier dirección.
 
 1. Utilice un pellizco de dos dedos para mover la cámara hacia el objeto o más lejos de él. Esta acción es similar a acercar o alejar y permite inspeccionar los detalles del objeto. Como alternativa, mantenga pulsados los botones + o - para mover la cámara más cerca o más lejos del objeto.
 
 1. Utilice un arrastre de dos dedos para desplazar la cámara. Esta acción mueve la cámara lateralmente para permitirle ver diferentes partes del objeto mientras se amplía. Como alternativa, toque el botón Alternar **[!UICONTROL órbita/giro]** para cambiar al modo de desplazamiento y, a continuación, arrastre un dedo para recorrer la cámara. Toque el botón Alternar **[!UICONTROL giro/]** órbita para volver al modo de **[!UICONTROL órbita]** .
 
-1. Toque **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción vuelve al objeto a la vista completa y, si está activada, reanuda el giro automático.
+1. Toque **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción lleva al objeto a una vista completa y, si está activada, reanuda el giro automático.
 
 1. Toque **[!UICONTROL Pantalla]** completa para acceder al modo de pantalla completa (si el dispositivo lo admite). Vuelva a tocar Pantalla **[!UICONTROL completa]** para restaurar el visor 3D al modo incrustado en la página.
 
@@ -157,13 +162,13 @@ Para trabajar con componentes 3D con dispositivos de pantalla táctil:
 
 Para trabajar con componentes 3D con dispositivos táctiles:
 
-1. Arrastre con un dedo mientras mantiene pulsado el botón (izquierdo) del panel táctil para mover (&quot;órbita&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede ver el objeto desde cualquier dirección.
+1. Arrastre con un dedo mientras mantiene pulsado el botón (izquierdo) del panel táctil para mover (&quot;órbita&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede realizar una vista del objeto desde cualquier dirección.
 
 1. Utilice un arrastre de dos dedos hacia abajo o hacia arriba con los botones de la almohadilla táctil para mover la cámara más cerca o más lejos del objeto. Esta acción es similar a acercar o alejar y permite inspeccionar los detalles del objeto. También puede hacer clic y mantener pulsados los botones **[!UICONTROL Acercar]** o **[!UICONTROL Alejar]** para acercar o alejar la cámara del objeto.
 
-1. Arrastre un dedo mientras mantiene presionada la tecla **ALT/opción** y el botón (izquierdo) del panel táctil para recorrer la cámara. Esta acción mueve la cámara lateralmente para permitirle ver diferentes partes del objeto mientras se amplía. Como alternativa, haga clic en el botón Alternar **[!UICONTROL órbita/giro]** para cambiar al modo **[!UICONTROL de desplazamiento]** y, a continuación, arrastre un dedo mientras mantiene presionado el botón (izquierda) para recorrer la cámara. Vuelva a hacer clic en el botón Alternar **[!UICONTROL giro/]** órbita para volver al modo **[!UICONTROL Orbit]** .
+1. Arrastre un dedo mientras mantiene presionada la tecla **ALT/opción** y el botón (izquierdo) del panel táctil para recorrer la cámara. Esta acción mueve la cámara lateralmente para permitirle ver diferentes partes del objeto mientras se amplía. Como alternativa, haga clic en el botón Alternar **[!UICONTROL órbita/giro]** para cambiar al modo **[!UICONTROL de desplazamiento]** y, a continuación, arrastre un dedo mientras mantiene presionado el botón (izquierda) para recorrer la cámara. Vuelva a hacer clic en el botón Alternar **[!UICONTROL giro/]** órbita para volver al modo **[!UICONTROL órbita]** .
 
-1. Haga clic en **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción vuelve al objeto a la vista completa y, si está activada, reanuda el giro automático.
+1. Haga clic en **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción lleva al objeto a una vista completa y, si está activada, reanuda el giro automático.
 
 1. Haga clic en Pantalla **[!UICONTROL completa]** para acceder al modo de pantalla completa. Utilice la tecla **Escape** del teclado o haga clic en Pantalla **** completa de nuevo para restaurar el visor 3D al modo incrustado en la página.
 
@@ -171,11 +176,11 @@ Para trabajar con componentes 3D con dispositivos táctiles:
 
 Para trabajar con componentes 3D con dispositivos mouse y trackball:
 
-1. Arrastre mientras mantiene pulsado el botón izquierdo del ratón para mover (&quot;órbita&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede ver el objeto desde cualquier dirección.
+1. Arrastre mientras mantiene pulsado el botón izquierdo del ratón para mover (&quot;órbita&quot;) el punto de vista (&quot;cámara&quot;) alrededor del objeto. Puede realizar una vista del objeto desde cualquier dirección.
 
 1. Utilice la rueda de desplazamiento para acercar o alejar la cámara del objeto. Esto es similar a acercar o alejar y permite inspeccionar los detalles del objeto. También puede hacer clic y mantener pulsados los botones **[!UICONTROL Acercar]** o **[!UICONTROL Alejar]** para acercar o alejar la cámara del objeto.
 
 1. Arrastre mientras mantiene presionada la tecla **ALT/opción** y el botón izquierdo del ratón para recorrer la cámara. Esto mueve la cámara lateralmente para permitir observar diferentes partes del objeto mientras se amplía. Como alternativa, haga clic en el botón Alternar **[!UICONTROL órbita/recorrido]** para cambiar al modo de **[!UICONTROL desplazamiento]** y, a continuación, arrastre mientras mantiene pulsado el botón izquierdo del ratón para recorrer la cámara. Vuelva a hacer clic en el **[!UICONTROL alternador]** Orbit/Pan para volver al modo **[!UICONTROL Orbit]** .
-1. Haga clic en **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción vuelve al objeto a la vista completa y, si está activada, reanuda el giro automático.
+1. Haga clic en **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción lleva al objeto a una vista completa y, si está activada, reanuda el giro automático.
 1. Haga clic en Pantalla **[!UICONTROL completa]** para acceder al modo de pantalla completa. Utilice la tecla **[!UICONTROL Escape]** del teclado o haga clic en Pantalla **** completa de nuevo para restaurar el visor 3D al modo incrustado en la página.
 

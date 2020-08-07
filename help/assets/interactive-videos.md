@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 4d1c3bcc4262781d7032273504ccf41e36f5c3a5
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 4%
@@ -142,7 +142,7 @@ Durante este proceso es importante visitar diferentes áreas del sitio web, con 
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU del producto es la única pieza de datos necesaria para agregar miniaturas a un segmento de tiempo en el vídeo interactivo de AEM.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable separada en la definición de datos en miniatura en AEM.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable independiente en la definición de datos en miniatura en AEM.
 
 Considere los siguientes ejemplos de URL de vista rápida y sus variables de miniatura resultantes:
 
@@ -235,7 +235,7 @@ Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquier
 
 Cuando se hace clic en una miniatura en el entorno de creación, aparece una previsualización del cuadro de diálogo Vista **[!UICONTROL rápida]** .
 
-![chlimage_1-129](assets/chlimage_1-127.png)
+![chlimage_1-127](assets/chlimage_1-127.png)
 
 Si lo desea, puede crear su propio ajuste preestablecido de visor de vídeo interactivo personalizado. Puede determinar, entre otras cosas, el estilo del reproductor de vídeo, las miniaturas interactivas y la vista de cuadrícula de miniaturas que aparece al final del vídeo.
 
@@ -334,7 +334,7 @@ Después de guardar el vídeo interactivo, éste se abre inmediatamente en la Pr
 
    Para ilustrarlo, las tres capturas de pantalla siguientes utilizan el mismo vídeo. Observe que la anchura de cada segmento cambia según la configuración de la escala de **[!UICONTROL escala]** de tiempo.
 
-   ![chlimage_1-127](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
    Captura de pantalla A
 

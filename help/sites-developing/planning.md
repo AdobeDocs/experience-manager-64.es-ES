@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 Este documento describe lo que debe saber para planificar la prueba. Además, debe responder a estas preguntas antes de realizar las pruebas:
 
-* [¿Qué entornos de prueba serán necesarios?](/help/sites-developing/test-environments.md)
+* [¿Qué Entornos de prueba serán necesarios?](/help/sites-developing/test-environments.md)
 * [Definición de los casos de prueba](/help/sites-developing/test-cases.md)
 * [Pruebas: ¿cuándo y con quién?](/help/sites-developing/when-who.md)
 
 ## Antes de comenzar {#before-you-start}
 
-Antes de comenzar con el análisis y la definición reales de las pruebas, revise la siguiente información:
+Antes de realizar el inicio con la análisis real y la definición de las pruebas, revise la siguiente información:
 
-**Arquitectura** de AEM: consulte Conceptos básicos para familiarizarse con la arquitectura y los principios básicos de AEM.
+**Arquitectura** de AEM: consulte Conceptos básicos para presentarse a la arquitectura y los principios básicos de AEM.
 
 **Documentación** : consulte cualquiera de las secciones de documentación, o los artículos Instrucciones de uso, para obtener más información.
 
@@ -43,13 +46,13 @@ Aunque los números futuros no se pueden predecir con una precisión del 100 %, 
 
 El director del proyecto tiene la responsabilidad de decidir e iniciar las acciones que dependan de los resultados.
 
-**Involucrarse** - Aunque es responsabilidad del director del proyecto asegurar que todas las partes participen plenamente en cualquier reunión (estado, talleres, etc.), también debe intentar participar lo antes posible en el ciclo del proyecto, incluidos los procesos de recopilación de información y análisis de requisitos.
+**Involucrarse** - Aunque es responsabilidad del director del proyecto asegurar que todas las partes participen plenamente en cualquier reunión (estado, talleres, etc.), también debe intentar participar lo antes posible en el ciclo del proyecto, incluyendo los procesos de recopilación de información y análisis de requisitos.
 
 **Involucrar al cliente** : en un tema similar, trate de involucrar al cliente (cuando sea posible) al definir los casos de prueba y el plan.
 
 ## Tipos de pruebas {#types-of-tests}
 
-Existen varias clasificaciones estándar de pruebas que son adecuadas para su uso al probar un proyecto de AEM. Debe estar familiarizado con ellos para decidir qué utilizará:
+Existen varias clasificaciones estándar de pruebas que son apropiadas para su uso al probar un proyecto AEM. Debe estar familiarizado con ellos para decidir qué utilizará:
 
 >[!NOTE]
 >
@@ -69,7 +72,7 @@ Las pruebas en caja negra son pruebas funcionales de una unidad completa, compon
 
 Ellos prueban la funcionalidad en forma de caja negra.
 
-**Pruebas** de rendimiento: las pruebas de rendimiento son cruciales al probar AEM.
+**Pruebas** de rendimiento: las pruebas de rendimiento son cruciales cuando se realiza una prueba de AEM.
 
 Se utilizan para ilustrar el rendimiento en diferentes condiciones:
 
@@ -79,13 +82,13 @@ Se utilizan para ilustrar el rendimiento en diferentes condiciones:
 
 * Pico
 
-   Condiciones que se experimentarán durante un período proporcionalmente breve debido a circunstancias especiales; por ejemplo, cuando todos los autores utilizan el sistema al mismo tiempo o cuando se publica contenido nuevo y un número mayor de visitantes ven el sitio.
+   Condiciones que se experimentarán durante un período proporcionalmente breve debido a circunstancias especiales; por ejemplo, cuando todos los autores utilizan el sistema al mismo tiempo o cuando se publica contenido nuevo y un número mayor de visitantes vista al sitio.
 
 * Extremo
 
    Se puede utilizar para emular la previsión de rendimiento cuando se publica contenido nuevo y extremadamente interesante en el sitio web. Luego se puede ver un pico extremo -aunque esto puede no ser siempre totalmente predecible.
 
-   Estas circunstancias se ven a veces cuando se ponen a disposición entradas para eventos específicos, o cuando se publica un muy esperado sitio web por primera vez.
+   Estas circunstancias se ven a veces cuando se ponen a disposición boletos para eventos específicos, o cuando se publica un muy esperado sitio web por primera vez.
 
 Los resultados se utilizan para ajustar la aplicación.
 
@@ -97,7 +100,7 @@ Las pruebas de regresión son buenas candidatas para la automatización (si es p
 
 **Pruebas** de aceptación: las pruebas de aceptación son una categoría especial, ya que se utilizan para indicar la aceptación del cliente del proyecto.
 
-La lista de pruebas de aceptación puede contener una combinación de pruebas de las distintas categorías anteriores y se seleccionan para verificar que el proyecto cumple los requisitos del cliente
+La lista de las pruebas de aceptación puede contener una combinación de pruebas de las distintas categorías anteriores y se seleccionan para comprobar que el proyecto cumple los requisitos del cliente
 
 Consulte [Aceptación y desactivación](/help/sites-developing/acceptance-signoff.md) para obtener más información.
 
@@ -108,7 +111,7 @@ Antes de comenzar con los casos de prueba y el plan de pruebas detallados, puede
 **Definir los objetivos** : defina los objetivos de alto nivel para que sirvan de punto de partida para el ajuste a medida que avanza la prueba. Desea:
 
 * Pruebe la funcionalidad según la especificación detallada de requisitos.
-* Probar rendimiento según las métricas [de Target](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* Probar el rendimiento según las métricas de [Destinatario](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 entre otros.
 
@@ -118,6 +121,6 @@ Estas cifras darán una indicación del tráfico actual (volumen y difusión) en
 
 **Recopilar estadísticas de tráfico de sitios web** externos: Si es posible, puede intentar recopilar estadísticas de tráfico de otros sitios web para compararlas, pero estas cifras no siempre se publican.
 
-**Confirmar métricas** de objetivo: las métricas se utilizan para definir mediciones cuantitativas de la calidad del sitio web, ya que representan los objetivos de rendimiento que se deben alcanzar.
+**Confirmar métricas** de Destinatario: las métricas se utilizan para definir mediciones cuantitativas de la calidad del sitio web, ya que representan los objetivos de rendimiento que se deben alcanzar.
 
-Deben definirse al inicio del proyecto, junto con el cliente. Consulte Métricas [de Target](/help/sites-developing/planning.md) para obtener más información.
+Deben definirse en el inicio del proyecto, junto con el cliente. Consulte Métricas [de Destinatario](/help/sites-developing/planning.md) para obtener más información.

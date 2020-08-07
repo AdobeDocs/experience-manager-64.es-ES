@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,11 @@ Antes de agregar la regla de índice cq:tags
 
 * **consulta Consulta Builder**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=my:tag
+   ```
 
 * **Plan de Consulta**
 
@@ -100,24 +98,20 @@ Después de agregar la regla de índice cq:tags
 
 * **cq:regla de índice de etiquetas**
 
-   * 
-
-      ```
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
-
+       &quot;
+ /     oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+     @name=jcr:content/cq:tags
+     @propertyIndex=true
+     &quot;
+   
 * **consulta Consulta Builder**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
-
+       &quot;
+ type=cq:Page     
+ property=jcr:content/cq:tags     
+ property.value=myTagNamespace:myTag     
+     &quot;
+   
 * **Plan de Consulta**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -193,21 +187,18 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+       property=jcr:content/contentType
+       property.value=article-page
+      ```
 
-         ```
-          property=jcr:content/contentType
-          property.value=article-page
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-          type=cq:Page 
-          property=jcr:content/contentType 
-          property.value=article-page
-         ```
+      ```
+       type=cq:Page 
+       property=jcr:content/contentType 
+       property.value=article-page
+      ```
    Las Consultas que carecen de una restricción de tipo de nodo obligan a AEM a asumir el `nt:base` tipo de nodo, que cada nodo de AEM es un subtipo de, lo que resulta en una restricción de tipo de nodo.
 
    La configuración `type=cq:Page` restringe esta consulta solo a `cq:Page` nodos y resuelve la consulta a AEM cqPageLucene, limitando los resultados a un subconjunto de nodos (solo `cq:Page` nodos) en AEM.
@@ -216,22 +207,19 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+      type=nt:hierarchyNode
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=nt:hierarchyNode
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    `nt:hierarchyNode` es el tipo de nodo principal de `cq:Page`, y suponiendo que `jcr:content/contentType=article-page` se aplique solamente a `cq:Page` los nodos a través de nuestra aplicación personalizada, esta consulta sólo devolverá `cq:Page` nodos donde `jcr:content/contentType=article-page`. Sin embargo, esta es una restricción subóptima porque:
 
    * Otros nodos heredan de `nt:hierarchyNode` (p. ej. `dam:Asset`) añadiendo innecesariamente al conjunto de posibles resultados.
@@ -243,20 +231,17 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+        property=jcr:content/contentType
+        property.value=article-page
+      ```
 
-         ```
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-         property=jcr:content/sling:resourceType
-         property.value=my-site/components/structure/article-page
-         ```
+      ```
+      property=jcr:content/sling:resourceType
+      property.value=my-site/components/structure/article-page
+      ```
    Si se cambia la restricción de propiedad de `jcr:content/contentType` (un valor personalizado) a la propiedad bien conocida, la consulta `sling:resourceType` puede resolver en el índice de propiedades `slingResourceType` que indexa todo el contenido por `sling:resourceType`.
 
    Los índices de propiedades (a diferencia de los índices de propiedades de Lucene) se utilizan mejor cuando la consulta no se detecta por nodetype y una única restricción de propiedad domina el conjunto de resultados.
@@ -265,24 +250,21 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    Al aplicar una escala `path=/content`a la restricción de ruta, `path=/content/my-site/us/en` los índices pueden reducir el número de entradas de índice que deben inspeccionarse. Cuando la consulta puede restringir la ruta muy bien, más allá de solo `/content` o `/content/dam`, asegúrese de que el índice tiene `evaluatePathRestrictions=true`.
 
    Tenga en cuenta que el uso `evaluatePathRestrictions` aumenta el tamaño del índice.
@@ -291,23 +273,20 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.operation=like
+      property.value=%article%
+      ```
 
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.operation=like
-         property.value=%article%
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-         type=cq:Page
-         fulltext=article
-         fulltext.relPath=jcr:content/contentType
-         ```
+      ```
+      type=cq:Page
+      fulltext=article
+      fulltext.relPath=jcr:content/contentType
+      ```
    La condición LIKE es lenta de evaluar porque no se puede utilizar ningún índice si el texto está inicio con un comodín (&quot;%...&#39;). La condición jcr:contains permite utilizar un índice de texto completo y, por lo tanto, es preferible. Esto requiere que el Índice de propiedades de Lucene resuelto tenga indexRule para `jcr:content/contentType` con `analayzed=true`.
 
    El uso de funciones de consulta como `fn:lowercase(..)` puede resultar más difícil de optimizar, ya que no hay equivalentes más rápidos (fuera de configuraciones de analizador de índices más complejas y obtrusivas). Lo mejor es identificar otras restricciones de creación de ámbitos para mejorar el rendimiento general de la consulta, lo que requiere que las funciones funcionen en el conjunto más pequeño posible de resultados potenciales.
@@ -318,21 +297,18 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta no optimizada**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         ```
    * **consulta optimizada**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content
-         p.guessTotal=100
-         ```
+      ```
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
    En los casos en los que la ejecución de la consulta es rápida pero el número de resultados es grande, p. `guessTotal` es una optimización crítica para las consultas del Generador de Consultas.
 
    `p.guessTotal=100` indica a Consulta Builder que solo recopile los primeros 100 resultados y defina un indicador booleano que indique si existen al menos otros resultados (pero no cuántos más, ya que contar este número sería lento). Esta optimización destaca para los casos de uso de paginación o carga infinita, donde sólo se muestra un subconjunto de resultados de forma incremental.
@@ -345,24 +321,20 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta Consulta Builder**
 
-      * 
+      ```
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
-         ```
-         query type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         orderby=@jcr:content/publishDate
-         orderby.sort=desc
-         ```
    * **XPath generado a partir de la consulta del Generador de Consultas**
 
-      * 
-
-         ```
-         /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-         ```
-
+      ```
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. Proporcione el XPath (o JCR-SQL2) al generador [de definiciones de índice](https://oakutils.appspot.com/generate/index) Oak para generar la definición optimizada del índice de propiedades de Lucene.
 
@@ -398,21 +370,17 @@ En el siguiente ejemplo se utiliza Consulta Builder ya que es el lenguaje de con
 
    * **consulta Consulta Builder**
 
-      * 
+      ```
+      type=myApp:Author
+      property=firstName
+      property.value=ira
+      ```
 
-         ```
-         type=myApp:Author
-         property=firstName
-         property.value=ira
-         ```
    * **XPath generado a partir de la consulta del Generador de Consultas**
 
-      * 
-
-         ```
-         //element(*, myApp:Page)[@firstName = 'ira']
-         ```
-
+      ```
+      //element(*, myApp:Page)[@firstName = 'ira']
+      ```
 
 1. Proporcione el XPath (o JCR-SQL2) al generador [de definiciones de índice](https://oakutils.appspot.com/generate/index) Oak para generar la definición optimizada del índice de propiedades de Lucene.
 

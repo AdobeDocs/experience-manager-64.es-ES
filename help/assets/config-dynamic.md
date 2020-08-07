@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Para activar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Medi
 
    Si está publicando en s7envío, también debe incluir los siguientes argumentos trustStore:
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -301,13 +301,13 @@ Debe configurar la autenticación de replicación en el autor para replicar imá
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Toque **[!UICONTROL Aceptar]**.
 
-### Validating the Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
+### Validación del Agente de replicación para Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
-To validate the replication agent for dynamic media, do the following:
+Para validar el agente de replicación para medios dinámicos, haga lo siguiente:
 
-Tap **[!UICONTROL Test Connection]**. Example output is as follows:
+Toque **[!UICONTROL Probar conexión]**. El resultado de ejemplo es el siguiente:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -324,18 +324,18 @@ Replication test succeeded
 ```
 
 >[!NOTE]
-You can also check by doing one of the following:
-* Check the replication logs to make sure the asset is replicated.
-* Publish an image. Tap the image and select **[!UICONTROL Viewers]** in drop-down menu. Select a viewer preset, then tap **[!UICONTROL URL]**, and copy and paste the URL in the browser to verify that you can see the image.
+También puede realizar una de las siguientes comprobaciones:
+* Compruebe los registros de replicación para asegurarse de que el recurso se replica.
+* Publique una imagen. Toque la imagen y seleccione **[!UICONTROL Visores]** en el menú desplegable. Seleccione un ajuste preestablecido de visor, toque la **[!UICONTROL URL]** y copie y pegue la URL en el navegador para comprobar que puede ver la imagen.
 
 
-### Troubleshooting Authentication {#troubleshooting-authentication}
+### Resolución de problemas de autenticación {#troubleshooting-authentication}
 
-When setting up authentication, here are some issues you may run into with their solutions. Before checking these, make sure you have set up replication.
+A la hora de configurar la autenticación, se presentan algunos problemas con sus soluciones. Antes de comprobarlos, asegúrese de haber configurado la replicación.
 
-#### Problem: HTTP Status Code 401 with Message - Authorization Required {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Código de estado HTTP 401 con mensaje: se requiere autorización {#problem-http-status-code-with-message-authorization-required}
 
-This issue can be caused by a failure to set up the KeyStore for `dynamic-media-replication` user.
+Este problema puede deberse a un error al configurar KeyStore para `dynamic-media-replication` el usuario.
 
 ```shell
 Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
@@ -356,9 +356,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Solution**: Check that the `KeyStore` is saved to **[!UICONTROL dynamic-media-replication]** user and is provided with the correct password.
+**Solución**: Compruebe que el `KeyStore` archivo está guardado en el usuario de replicación **[!UICONTROL de medios]** dinámicos y que se le ha proporcionado la contraseña correcta.
 
-#### Problem: Could Not Decrypt Key - Could Not Decrypt Data {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### Problema: No Se Pudo Descifrar La Clave: No Se Pudieron Descifrar Los Datos {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -372,18 +372,18 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Solution**: Check the password. The password saved in the replication agent is not the same password that was used to create keystore.
+**Solución**: Compruebe la contraseña. La contraseña guardada en el agente de replicación no es la misma que se utilizó para crear el almacén de claves.
 
-#### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### Problema: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-This issue is caused by a configuration error in your AEM Author instance. The java process on the Author is not getting the correct `javax.net.ssl.trustStore`. You see this error in the replication log:
+Este problema se debe a un error de configuración en la instancia de AEM Author. El proceso de Java del autor no está obteniendo lo correcto `javax.net.ssl.trustStore`. Puede ver este error en el registro de replicación:
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
 14.04.2016 09:37:43 - Error while replicating: com.day.cq.replication.ReplicationException: Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
 ```
 
-Or the error log:
+O el registro de errores:
 
 ```shell
 07.25.2019 12:00:59.893 *ERROR* [sling-threadpool-db2763bb-bc50-4bb5-bb64-10a09f432712-(apache-sling-job-thread-pool)-90-com_day_cq_replication_job_s7delivery(com/day/cq/replication/job/s7delivery)] com.day.cq.replication.Agent.s7delivery.queue Error during processing of replication.
@@ -392,13 +392,13 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Solution**: Make sure the java process on the AEM Author has the system property **-Djavax.net.ssl.trustStore=** set to a valid truststore.
+**Solución**: Asegúrese de que el proceso de Java de AEM Author tenga la propiedad del sistema **-Djavax.net.ssl.trustStore=** establecida en un almacén de confianza válido.
 
-#### Problem: KeyStore is either not set up or it is not initialized {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: KeyStore no está configurado o no está inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Este problema puede deberse a una corrección urgente o a que un paquete de funciones sobrescriba el nodo **[!UICONTROL dynamic-media-user]** o **[!UICONTROL keystore]** .
 
-Replication log example:
+Ejemplo de registro de replicación:
 
 ```shell
 Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
@@ -412,22 +412,22 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 **Solución**:
 
-1. Navigate to the **[!UICONTROL User Management]** page:
+1. Vaya a la página Administración **[!UICONTROL de usuarios]** :
 
    `localhost:4502/libs/granite/security/content/useradmin.html`
-1. On the **[!UICONTROL User Management]** page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then tap to open.
-1. Tap the **[!UICONTROL KeyStore]** tab. Si aparece el botón **[!UICONTROL Crear almacén]** de claves, debe rehacer los pasos que se encuentran en [Configuración de la autenticación](#setting-up-authentication) anteriormente.
-1. If you had to redo the **[!UICONTROL KeyStore]** setup, you may need to do [Configuring the Replication Agent](config-dynamic.md#configuring-the-replication-agent) again, as well.
+1. En la página Administración **[!UICONTROL de]** usuarios, navegue hasta el usuario de replicación **[!UICONTROL de medios]** dinámicos y, a continuación, toque para abrir.
+1. Puntee en la ficha **[!UICONTROL KeyStore]** . Si aparece el botón **[!UICONTROL Crear almacén]** de claves, debe rehacer los pasos que se encuentran en [Configuración de la autenticación](#setting-up-authentication) anteriormente.
+1. Si tuvo que rehacer la configuración de **[!UICONTROL KeyStore]** , es posible que tenga que [configurar nuevamente el Agente](config-dynamic.md#configuring-the-replication-agent) de replicación.
 
-   Reconfigure the s7delivery Replication Agent.
+   Vuelva a configurar el agente de replicación de s7envío.
 
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
 
-1. Tap **[!UICONTROL Test Connection]** to verify the configuration is valid.
+1. Toque **[!UICONTROL Probar conexión]** para comprobar que la configuración es válida.
 
-#### Problem: Publish Agent is using SSL instead of OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### Problema: El agente de publicación utiliza SSL en lugar de OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
-This issue may be caused by a hot fix or a feature pack that did not install correctly or overwrote the settings.
+Este problema puede deberse a una corrección urgente o a un paquete de funciones que no se instaló correctamente o que sobrescribió la configuración.
 
 Ejemplo de registro de replicación:
 
@@ -447,122 +447,121 @@ Ejemplo de registro de replicación:
 
    `localhost:4502/crx/de/index.jsp`
 
-1. Navigate to the **[!UICONTROL s7delivery Replication Agent]** node.
+1. Vaya al nodo **[!UICONTROL s7envío Replication Agent]** .
 
    `localhost:4502/crx/de/index.jsp#/etc/replication/agents.author/s7delivery/jcr:content`
 
-1. Add this setting to the replication agent (Boolean with value set to **[!UICONTROL True]**):
+1. Añada esta configuración al agente de replicación (booleano con el valor establecido en **[!UICONTROL True]**):
 
    `enableOauth=true`
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+1. Cerca de la esquina superior izquierda de la página, toque **[!UICONTROL Guardar todo]**.
 
-### Testing your configuration {#testing-your-configuration}
+### Prueba de la configuración {#testing-your-configuration}
 
-Adobe recommends that you perform an end-to-end test of the configuration.
+Adobe recomienda que realice una prueba end-to-end de la configuración.
 
-Be sure you have already done the following prior to beginning this test:
+Asegúrese de que ya ha hecho lo siguiente antes de comenzar esta prueba:
 
-* Added Image Presets.
-* Configure **Dynamic Media Configuration (Pre 6.3)** under **[!UICONTROL Cloud Services]**. The Image Service URL is required for this test
+* Ajustes preestablecidos de imagen añadidos.
+* Configure la Configuración de medios **dinámicos (anterior a 6.3)** en **[!UICONTROL Cloud Services]**. Se requiere la dirección URL del servicio de imágenes para esta prueba
 
-To test your configuration:
+Para probar la configuración:
 
-1. Upload an image asset. (In Assets, tap **[!UICONTROL Create > Files]** and select the file.)
-1. Wait for the workflow to finish.
-1. Publique el recurso de imagen. (Select the asset and tap **[!UICONTROL Quick Publish]**.)
+1. Cargue un recurso de imagen. (En Recursos, toque **[!UICONTROL Crear > Archivos]** y seleccione el archivo).
+1. Espere a que finalice el flujo de trabajo.
+1. Publique el recurso de imagen. (Seleccione el recurso y toque **[!UICONTROL Publicación]** rápida).
 1. Vaya a las representaciones de esa imagen abriendo la imagen y tocando **[!UICONTROL Representaciones]**.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
-1. Select any dynamic rendition.
-1. Tap **[!UICONTROL URL]** to obtain the URL for this asset.
-1. Navigate to the selected URL and check whether the image behaves as expected.
+1. Seleccione cualquier representación dinámica.
+1. Toque **[!UICONTROL URL]** para obtener la URL de este recurso.
+1. Vaya a la dirección URL seleccionada y compruebe si la imagen se comporta como se espera.
 
-Another way to test that your assets were delivered is to append req=exists to your URL.
+Otra forma de comprobar que los recursos se han entregado es adjuntar req=exists a la dirección URL.
 
 ## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-The Dynamic Media Cloud service provides support for cloud services such as hybrid publishing and delivery of images and video, video analytics, and video encoding, among other things.
+El servicio de Dynamic Media Cloud ofrece compatibilidad con servicios en la nube, como la publicación híbrida y el envío de imágenes y vídeos, análisis de vídeo y codificación de vídeo, entre otras cosas.
 
-As part of the configuration, you need to enter a registration ID, video service URL, image service URL, replication service URL and set up authentication. You should have received all this information as part of the account provisioning process. If you did not receive this information, contact your Adobe Experience Manager Administrator or Adobe Technical Support to obtain the information.
+Como parte de la configuración, debe introducir un ID de registro, una URL de servicio de vídeo, una URL de servicio de imágenes, una URL de servicio de replicación y configurar la autenticación. Debería haber recibido toda esta información como parte del proceso de aprovisionamiento de cuentas. Si no ha recibido esta información, póngase en contacto con el administrador de Adobe Experience Manager o con el servicio de asistencia técnica de Adobe para obtener la información.
 
 >[!NOTE]
-Before setting up Dynamic Media Cloud Services, be sure to have your publish instance set up. You must also have replication set up before configuring Dynamic Media Cloud Services.
+Antes de configurar los Cloud Services de Dynamic Media, asegúrese de configurar la instancia de publicación. También debe tener la replicación configurada antes de configurar los Cloud Services de Dynamic Media.
 
-**To configure dynamic media cloud services**:
+**Para configurar los servicios** de nube de medios dinámicos:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3)]**.
-1. On the **[!UICONTROL Dynamic Media Configuration Browser]** page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create]**.
-1. In the **[!UICONTROL Create Dynamic Media Configuration]** dialog box, in the **[!UICONTROL Title]** field, type a title.
-1. If you are configuring Dynamic Media for video,
+1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y toque **[!UICONTROL Herramientas > Cloud Services > Configuración de Dynamic Media (Pre-6.3)]**.
+1. En la página Explorador **[!UICONTROL de configuración de medios]** dinámicos, en el panel izquierdo, seleccione **[!UICONTROL global]** y, a continuación, toque **[!UICONTROL Crear]**.
+1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** de Dynamic Media, en el campo **[!UICONTROL Título]** , escriba un título.
+1. Si está configurando Dynamic Media para vídeo,
 
-   * In the **[!UICONTROL Registration ID]** field, type your registration ID.
+   * En el campo ID **[!UICONTROL de registro]** , escriba su ID de registro.
    * En el campo URL **[!UICONTROL del servicio de]** vídeo, introduzca la URL del servicio de vídeo para Dynamic Media Gateway.
 
-1. If you are configuring Dynamic Media for imaging, in the **[!UICONTROL Image Service URL]** field, enter the image service URL for the Dynamic Media Gateway.
-1. Tap **[!UICONTROL Save]** to return to the Dynamic Media Configuration Browser page.
-1. Tap the AEM logo to access the global navigation console.
+1. Si está configurando Dynamic Media para imágenes, en el campo URL **[!UICONTROL del servicio de]** imágenes, introduzca la URL del servicio de imágenes para Dynamic Media Gateway.
+1. Toque **[!UICONTROL Guardar]** para volver a la página del explorador de configuración de Dynamic Media.
+1. Toque el logotipo AEM para acceder a la consola de navegación global.
 
-## Configuring video reporting {#configuring-video-reporting}
+## Configuración del sistema de informes de vídeo {#configuring-video-reporting}
 
-You can configure video reporting across multiple installations of AEM using Dynamic Media – Hybrid mode.
+Puede configurar el sistema de informes de vídeo en varias instalaciones de AEM mediante el modo Dynamic Media: híbrido.
 
-**When to use:** At the time you configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**, numerous features are started including video reporting. The configuration creates a report suite in a regional Analytics company. If you configure multiple Author nodes, you create a separate report suite for each one. As a result, reporting data is inconsistent among installations. Furthermore, if each Author node refers to the same Hybrid Publish server, the last Author installation changes the destination report suite for all video reporting. This issue overloads the Analytics system with too many report suites.
+**Cuándo usar:** Al configurar la Configuración de medios **[!UICONTROL dinámicos (anterior a 6.3)]**, se inician numerosas funciones, incluido el sistema de informes de vídeo. La configuración crea un grupo de informes en una compañía regional de Analytics. Si configura varios nodos Autor, creará un grupo de informes independiente para cada uno. Como resultado, los datos de sistema de informes son incoherentes entre las instalaciones. Además, si cada nodo Autor hace referencia al mismo servidor de publicación híbrido, la última instalación de Autor cambia el grupo de informes de destino para todos los sistemas de informes de vídeo. Este problema sobrecarga el sistema de Analytics con demasiados grupos de informes.
 
-**Get started:** Configure video reporting by completing the following three tasks.
+**Introducción:** Configure el sistema de informes de vídeo completando las tres tareas siguientes.
 
-1. Create a [!DNL Video Analytics] preset package after you configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** on the first Author node. This initial task is important because it allows a new configuration to continue using the same report suite.
-1. Install the [!DNL Video Analytics] preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3).
+1. Cree un paquete [!DNL Video Analytics] preestablecido después de configurar la Configuración de medios **[!UICONTROL dinámicos (anterior a la versión 6.3)]** en el primer nodo Autor. Esta tarea inicial es importante porque permite que una nueva configuración continúe utilizando el mismo grupo de informes.
+1. Instale el paquete [!DNL Video Analytics] preestablecido en cualquier nodo ***nuevo*** de Author ***antes*** de configurar la Configuración de Dynamic Media (anterior a 6.3).
 
-1. Verify and debug the package installation.
+1. Compruebe y depure la instalación del paquete.
 
-### Creating a [!DNL Video Analytics] preset package after configuring the first Author node {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Creación de un paquete [!DNL Video Analytics] preestablecido después de configurar el primer nodo Autor {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
-When you have finished this task, you will have a package file that contains the [!DNL Video Analytics] presets. These presets contain a report suite, the tracking server, the tracking namespace, and the Marketing Cloud Organization ID, if available.
+Cuando haya finalizado esta tarea, tendrá un archivo de paquete que contiene los [!DNL Video Analytics] ajustes preestablecidos. Estos ajustes preestablecidos contienen un grupo de informes, el servidor de seguimiento, la Área de nombres de seguimiento y la ID de organización de Marketing Cloud, si están disponibles.
 
-1. If you have not already done so, configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**.
-1. (Optional) View and copy the **[!UICONTROL Report Suite ID]** (you must have access to the JCR). While having the **[!UICONTROL Report Suite ID]** is not required, it makes validation easier.
-1. Create a package using **[!UICONTROL Package Manager]**.
-1. Edit the package to include a filter.
+1. Si aún no lo ha hecho, configure la Configuración de medios **[!UICONTROL dinámicos (anterior a 6.3)]**.
+1. (Opcional) Vista y copie la ID **[!UICONTROL del grupo de]** informes (debe tener acceso al JCR). Aunque no se requiere la ID **[!UICONTROL del grupo de]** informes, la validación es más sencilla.
+1. Cree un paquete mediante el Administrador **[!UICONTROL de paquetes]**.
+1. Edite el paquete para incluir un filtro.
 
-   In AEM: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+   En AEM: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-1. Build the package.
-1. Download or share the [!DNL Video Analytics] preset package so that it can be shared with subsequent new Author nodes.
+1. Cree el paquete.
+1. Descargue o comparta el paquete de ajustes preestablecidos para que se pueda compartir con los nuevos nodos de creación subsiguientes. [!DNL Video Analytics]
 
-### Installing the [!DNL Video Analytics] preset package before you configure additional Author nodes {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Instalación del paquete de ajustes preestablecidos [!DNL Video Analytics] antes de configurar nodos de creación adicionales {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
-Be sure that you complete this task _before_ you configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**. Failure to do so results in the creation of another unused report suite. In addition, even though video reporting will continue to work correctly, the gathering of data is not optimized.
+Asegúrese de completar esta tarea _antes_ de configurar la Configuración de medios **[!UICONTROL dinámicos (anterior a 6.3)]**. Si no lo hace, se crea otro grupo de informes no utilizado. Además, aunque el sistema de informes de vídeo seguirá funcionando correctamente, la recopilación de datos no se optimiza.
 
 Asegúrese de que el paquete [!DNL Video Analytics] preestablecido del primer nodo Autor es accesible en el nuevo nodo Autor.
 
-1. Upload the [!DNL Video Analytics] preset package that you created eariler to **[!UICONTROL Package Manager]**.
-1. Install the [!DNL Video Analytics] preset package.
+1. Cargue el paquete [!DNL Video Analytics] preestablecido que creó anteriormente en el Administrador **[!UICONTROL de paquetes]**.
+1. Instale el paquete [!DNL Video Analytics] preestablecido.
 1. Configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**.
 
-### Verifying and debugging the package installation {#verifying-and-debugging-the-package-installation}
+### Verificación y depuración de la instalación del paquete {#verifying-and-debugging-the-package-installation}
 
-1. Do any one of the following to verify and, if necessary, debug the package installation:
+1. Realice una de las siguientes acciones para verificar y, si es necesario, depurar la instalación del paquete:
 
-   * **Check the[!DNL Video Analytics]preset by way of the JCR**
-To check the [!DNL Video Analytics] preset by way of the JCR, you must have access to **[!UICONTROL CRXDE Lite]**.
+   * **Compruebe el[!DNL Video Analytics]ajuste preestablecido mediante el JCR** Para comprobar el [!DNL Video Analytics] ajuste preestablecido mediante el JCR, debe tener acceso al **[!UICONTROL CRXDE Lite]**.
 
-      AEM - In **[!UICONTROL CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
+      AEM - En el **[!UICONTROL CRXDE Lite]**, navegue hasta `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
 
       Esto es `http://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
-      If you do not have access to **[!UICONTROL CRXDE Lite]** on the Author node, you can check the preset through the Publish server.
+      Si no tiene acceso al **[!UICONTROL CRXDE Lite]** en el nodo Autor, puede comprobar el ajuste preestablecido a través del servidor de publicación.
 
-   * **Check the[!DNL Video Analytics]preset through the Image Server**
+   * **Comprobación del[!DNL Video Analytics]ajuste preestablecido a través del servidor de imágenes**
 
-      You can validate the [!DNL Video Analytics] preset directly by making an Image Server `req=userdata` request.
+      Puede validar el [!DNL Video Analytics] ajuste preestablecido directamente mediante una solicitud del servidor de imágenes `req=userdata` .
 
-      For example, to see the [!DNL Video Analytics] preset on the Author node, you can make the following request:
+      Por ejemplo, para ver el [!DNL Video Analytics] ajuste preestablecido en el nodo Autor, puede realizar la siguiente solicitud:
 
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      To validate the preset on Publish servers, you can make a similar direct request to the Publish server. The responses are the same on Author and Publish nodes. La respuesta es similar a la siguiente:
+      Para validar el ajuste preestablecido en servidores de publicación, puede realizar una solicitud directa similar en el servidor de publicación. Las respuestas son las mismas en los nodos Autor y Publicación. La respuesta es similar a la siguiente:
 
       ```
       marketingCloudOrgId=0FC4E86B573F99CC7F000101
@@ -571,81 +570,81 @@ To check the [!DNL Video Analytics] preset by way of the JCR, you must have acce
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-   * **Check the[!DNL Video Analytics]preset through the Video Reporting tool in AEM**
+   * **Compruebe el[!DNL Video Analytics]ajuste preestablecido a través de la herramienta Sistema de informes de vídeo en AEM**
 
-      Tap **[!UICONTROL Tools > Assets > Video Reporting]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+      Toque **[!UICONTROL Herramientas > Recursos > Sistema de informes de vídeo]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
-      If you see the following error message, the report suite is available, but unpopulated. This error is correct--and desired--in a new installation before the system collects any data.
+      Si ve el siguiente mensaje de error, el grupo de informes está disponible, pero sin rellenar. Este error es correcto (y deseado) en una nueva instalación antes de que el sistema recopile datos.
 
       ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
-   To generate reporting data, upload and publish one video. Use **[!UICONTROL Copy URL]** and run the video at least one time.
+   Para generar datos de sistema de informes, cargue y publique un vídeo. Utilice **[!UICONTROL Copiar URL]** y ejecute el vídeo al menos una vez.
 
-   Be aware that it can take up to 12 hours before the reporting data is populated from Video Viewer usage.
+   Tenga en cuenta que los datos de sistema de informes pueden tardar hasta 12 horas en completarse a partir del uso del visor de vídeo.
 
-   If there is an error and the report suite is not set correctly, the following alert is displayed.
+   Si hay un error y el grupo de informes no está configurado correctamente, se muestra la siguiente alerta.
 
    ![screen_shot_2018-05-23at52612pm](assets/screen_shot_2018-05-23at52612pm.png)
 
-   This error is also displayed if Video Reporting is run before you configure **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** services.
+   Este error también se muestra si el Sistema de informes de vídeo se ejecuta antes de configurar los servicios de configuración de medios **[!UICONTROL dinámicos (anteriores a 6.3)]** .
 
-### Troubleshooting the video reporting configuration {#troubleshooting-the-video-reporting-configuration}
+### Resolución de problemas de la configuración del sistema de informes de vídeo {#troubleshooting-the-video-reporting-configuration}
 
-* During installation, sometimes connections to the Analytics API server times out. The installation retries the connection 20 times, but it still fails. When this situation occurs, the log file records multiple errors. Buscar `SiteCatalystReportService`.
-* Not installing the [!DNL Video Analytics] preset package first can cause the creation of a new report suite.
-* Upgrading from AEM 6.3 to AEM 6.4 or AEM 6.4.1, then configuring **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**, still creates a report suite. This issue is known and slated to be fixed for AEM 6.4.2.
+* Durante la instalación, a veces se agota el tiempo de espera de las conexiones al servidor de la API de Analytics. La instalación reintentos la conexión 20 veces, pero sigue fallando. Cuando se produce esta situación, el archivo de registro registra varios errores. Buscar `SiteCatalystReportService`.
+* Si no se instala primero el paquete [!DNL Video Analytics] preestablecido, puede crearse un nuevo grupo de informes.
+* Si se actualiza de AEM 6.3 a AEM 6.4 o AEM 6.4.1 y, a continuación, se configura la Configuración de medios **[!UICONTROL dinámicos (anterior a 6.3)]**, se seguirá creando un grupo de informes. Se sabe que este problema se ha solucionado para AEM 6.4.2.
 
-### About the [!DNL Video Analytics] preset {#about-the-video-analytics-preset}
+### Acerca del [!DNL Video Analytics] ajuste preestablecido {#about-the-video-analytics-preset}
 
-The [!DNL Video Analytics] preset—sometimes known simply as analytics preset--is stored next to the Viewer presets in Dynamic Media. It is basically the same as a Viewer preset but with information used to configure AppMeasurement and Video Heartbeat reporting.
+El [!DNL Video Analytics] ajuste preestablecido (a veces conocido simplemente como ajuste preestablecido de análisis) se almacena junto a los ajustes preestablecidos de visor en Dynamic Media. Es básicamente lo mismo que un ajuste preestablecido de visor, pero con información utilizada para configurar AppMeasurement y el sistema de informes de Video Heartbeat.
 
-The preset’s properties are the following:
+Las propiedades del ajuste preestablecido son las siguientes:
 
 * **[!UICONTROL reportSuite]**
 * **[!UICONTROL trackingServer]**
 * **[!UICONTROL trackingNamespace]**
-* **[!UICONTROL marketingCloudOrgId]** (not present in older AEM versions)
+* **[!UICONTROL marketingCloudOrgId]** (no está presente en versiones anteriores de AEM)
 
-AEM 6.4 and newer versions save this preset at `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+AEM 6.4 y versiones posteriores guardan este ajuste preestablecido en `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-## Replicating Catalog Settings {#replicating-catalog-settings}
+## Replicar la configuración del catálogo {#replicating-catalog-settings}
 
-You must publish your own default catalog settings as part of the setup process through the JCR. To replicate catalog settings:
+Debe publicar su propia configuración de catálogo predeterminada como parte del proceso de configuración mediante el JCR. Para replicar la configuración del catálogo:
 
-1. In a Terminal window, run the following:
+1. En una ventana Terminal, ejecute lo siguiente:
 
    `curl -u admin:admin localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-1. In AEM, navigate to the following location in **[!UICONTROL CRXDE Lite]** (requires admin privileges):
+1. En AEM, navegue a la siguiente ubicación en el **[!UICONTROL CRXDE Lite]** (requiere privilegios de administrador):
 
    `https://<server>:<port>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
-1. Tap the **[!UICONTROL Replication]** tab.
-1. Tap **[!UICONTROL Replicate]**.
+1. Puntee en la ficha **[!UICONTROL Replicación]** .
+1. Toque **[!UICONTROL Replicar]**.
 
-## Replicating Viewer Presets {#replicating-viewer-presets}
+## Replicar ajustes preestablecidos de visor {#replicating-viewer-presets}
 
-Para distribuir un recurso con un ajuste preestablecido de visor, debe replicar/publicar el ajuste preestablecido de visor. (All viewer presets must be activated _and_ replicated to obtain the URL or embed code for an asset.) See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets) for more information.
+Para distribuir un recurso con un ajuste preestablecido de visor, debe replicar/publicar el ajuste preestablecido de visor. (All viewer presets must be activated _and_ replicated to obtain the URL or embed code for an asset.) Consulte Ajustes preestablecidos [de visor de](managing-viewer-presets.md#publishing-viewer-presets) publicación para obtener más información.
 
 >[!NOTE]
-By default, the system shows a variety of renditions when you select **[!UICONTROL Renditions]** and a variety of viewer presets when you select **[!UICONTROL Viewers]** in the asset&#39;s detail view. You can increase or decrease the number seen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+By default, the system shows a variety of renditions when you select **[!UICONTROL Renditions]** and a variety of viewer presets when you select **[!UICONTROL Viewers]** in the asset&#39;s detail view. Puede aumentar o disminuir el número visto. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-## Filtering Assets for Replication {#filtering-assets-for-replication}
+## Filtrado de Recursos para Replicación {#filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate _all_ assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
+En implementaciones de medios no dinámicos, se replican _todos_ los recursos (imágenes y vídeo) desde el entorno de creación de AEM al nodo de publicación de AEM. Este flujo de trabajo es necesario porque los servidores de publicación AEM también entregan los recursos.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the cloud, there is no need to replicate those same assets to AEM publish nodes. Such a &quot;hybrid publishing&quot; workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Dynamic Media viewers, Site pages, and static content continue to be served from the AEM publish nodes.
+Sin embargo, en las implementaciones de Dynamic Media, como los recursos se entregan a través de la nube, no es necesario replicar esos mismos recursos en AEM nodos de publicación. Este flujo de trabajo de &quot;publicación híbrida&quot; evita costes de almacenamiento adicionales y tiempos de procesamiento más largos para replicar recursos. Otros contenidos, como los visores de Dynamic Media, las páginas del sitio y el contenido estático, se siguen ofreciendo desde los nodos de publicación de AEM.
 
 Además de replicar los recursos, también se replican los siguientes no activos:
 
-* Dynamic Media Delivery configuration: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
+* Configuración de Envío de Dynamic Media: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
 * Ajustes preestablecidos de imagen: `/conf/global/settings/dam/dm/presets/macros`
 * Ajustes preestablecidos de visor: `/conf/global/settings/dam/dm/presets/viewer`
 
-The filters provide a way for you to _exclude_ assets from being replicated to the AEM publish node.
+Los filtros permiten _excluir_ recursos de la replicación en el nodo de publicación AEM.
 
-### Using default Asset Filters for replication {#using-default-asset-filters-for-replication}
+### Uso de Filtros de recursos predeterminados para la replicación {#using-default-asset-filters-for-replication}
 
-If you are using Dynamic Media for 1) imaging in production _or_ 2) imaging and video, then you can use the default filters that we provide as-is. The following filters are active by default:
+Si utiliza Dynamic Media para 1) imágenes en producción _o_ 2) imágenes y vídeo, puede utilizar los filtros predeterminados que se proporcionan tal cual. Los siguientes filtros están activos de forma predeterminada:
 
 <table> 
  <tbody> 
@@ -658,45 +657,45 @@ If you are using Dynamic Media for 1) imaging in production _or_ 2) imaging and 
   <tr> 
    <td>Envío de imágenes de Dynamic Media</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td> 
-   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will: 
+   <td><p>Inicios con <strong>imagen/</strong></p> <p>Contiene <strong>la aplicación/</strong> y termina con <strong>set</strong>.</p> </td> 
+   <td>Las "imágenes de filtro" integradas (se aplican a recursos de imágenes únicas, incluidas imágenes interactivas) y "conjuntos de filtros" (se aplican a conjuntos de giros, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de carrusel): 
     <ul> 
-     <li>Include PTIFF images and Metadata for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
-     <li>Exclude from replication the original image and static image renditions.</li> 
+     <li>Incluir imágenes y metadatos PTIFF para la replicación (cualquier representación que comience con <strong>cqdam</strong>).</li> 
+     <li>Excluya de la replicación la imagen original y las representaciones de imágenes estáticas.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Envío de vídeo de Dynamic Media</td> 
    <td>filter-video</td> 
-   <td>Starts with <strong>video/</strong></td> 
+   <td>Inicios con <strong>vídeo/</strong></td> 
    <td>El "video-filtro" incorporado: 
     <ul> 
-     <li>Include proxy video renditions, video thumbnail/poster image, metadata (both at parent video and video renditions) for replication (Any rendition starting with <strong>cqdam</strong>).</li> 
-     <li>Excluya de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> <strong>Note:</strong> The proxy video renditions do not contain binaries, but instead are just node properties. Hence, there is no impact on publisher repository size.</li> 
+     <li>Incluya representaciones de vídeo proxy, miniaturas de vídeo/imagen de póster, metadatos (tanto en las representaciones de vídeo principales como en las representaciones de vídeo) para la replicación (cualquier representación que comience con <strong>cqdam</strong>).</li> 
+     <li>Excluya de la replicación el vídeo original y las representaciones de miniaturas estáticas.<br /> <br /> <strong>Nota:</strong> Las representaciones de vídeo proxy no contienen binarios, sino que son solo propiedades de nodo. Por lo tanto, no hay impacto en el tamaño del repositorio del editor.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic (Scene7) integration</td> 
+   <td>Integración de Dynamic Media Classic (Scene7)</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td> 
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> <p>Starts with <strong>video/</strong></p> </td> 
-   <td><p>You configure the Transport URI to point to your AEM publish server instead of the Adobe Dynamic Media Cloud Replication Service URL. Setting up this filter will allow Dynamic Media Classic to deliver assets instead of the AEM publish instance.</p> <p>The out-of-the-box "filter-images," "filter-sets," and "filter-video" will:</p> 
+   <td><p>Inicios con <strong>imagen/</strong></p> <p>Contiene <strong>la aplicación/</strong> y termina con <strong>set</strong>.</p> <p>Inicios con <strong>vídeo/</strong></p> </td> 
+   <td><p>Configure el URI de transporte para que señale al servidor de publicación de AEM en lugar de a la URL del servicio de replicación de Adobe Dynamic Media Cloud. La configuración de este filtro permitirá a Dynamic Media Classic entregar recursos en lugar de la instancia de publicación AEM.</p> <p>Las "imágenes de filtro" integradas, "conjuntos de filtros" y "video-filtro" incorporadas:</p> 
     <ul> 
-     <li>Include PTIFF image, proxy video renditions, and metadata for replication. However, because they do not exist in the JCR-for those running AEM - Dynamic Media Classic integration-it effectively does nothing.</li> 
-     <li>Exclude from replication the original image, static image renditions, original video, and static thumbnail renditions. Instead, Dynamic Media Classic will be delivering image and video assets.</li> 
+     <li>Incluya imágenes PTIFF, representaciones de vídeo proxy y metadatos para la replicación. Sin embargo, como no existen en el JCR para los que ejecutan AEM (integración de Dynamic Media Classic), no hace nada.</li> 
+     <li>Excluya de la replicación la imagen original, las representaciones de imágenes estáticas, el vídeo original y las representaciones de miniaturas estáticas. En su lugar, Dynamic Media Classic distribuirá recursos de imagen y vídeo.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
-Los Filtros se aplican a tipos de MIME y no pueden ser específicos de la ruta.
+Los filtros se aplican a tipos de MIME y no pueden ser específicos de la ruta.
 
-### Setting up Asset Filters for video-only deployments {#setting-up-asset-filters-for-video-only-deployments}
+### Configuración de Filtros de recursos para implementaciones solo de vídeo {#setting-up-asset-filters-for-video-only-deployments}
 
-If you are using Dynamic Media for video-only, follow these steps to set up asset filters for replication:
+Si utiliza Dynamic Media solo para vídeo, siga estos pasos para configurar filtros de recursos para la replicación:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish)]**.
+1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y toque **[!UICONTROL Herramientas > Implementación > Replicación > Agentes en el autor]**.
+1. En la página Agentes de creación, toque Agente **[!UICONTROL predeterminado (publicación)]**.
 1. Toque **[!UICONTROL Editar]**.
 1. En el cuadro de diálogo Configuración **[!UICONTROL del]** agente, en la ficha [!UICONTROL Configuración] , marque **[!UICONTROL Habilitado]** para activar el agente.
 1. Toque **[!UICONTROL Aceptar]**.
@@ -766,7 +765,7 @@ Para personalizar de forma opcional los filtros de recursos para la replicación
  <tbody> 
   <tr> 
    <td><strong>Carácter que utilizar</strong></td> 
-   <td><strong>filtros de recursos para replicación</strong></td> 
+   <td><strong>Filtros de recursos para replicación</strong></td> 
   </tr> 
   <tr> 
    <td>*</td> 

@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 54%
@@ -37,7 +37,7 @@ Si bien una sola imagen HDR suele ser suficiente para los escenarios de IBL, AEM
 
 * **Imagen** de Entorno de iluminación difusa: este tipo de imagen debe ser una imagen HDR, pero puede ser relativamente pequeña, ya que la imagen se filtrará mucho antes de usarla para iluminación difusa.
 * **Imagen** de Entorno de reflejo: este tipo de imagen se utiliza para crear reflejos en superficies de objeto. Puede ser una imagen RGB de 8 bits estándar de un tamaño y una resolución que proporcione la calidad y el enfoque deseados de los reflejos. Si se especifica una imagen HDR, AEM 3D la convierte a RGB de 8 bits antes de usar un algoritmo privado.
-* **Imagen** de Entorno de fondo: este tipo de imagen se utiliza como fondo. Puede ser una imagen RGB de 8 bits estándar y debe tener el tamaño, la resolución o el nivel de detalle deseados para el fondo del escenario. Si se especifica una imagen HDR, AEM 3D la convierte a RGB de 8 bits mediante un algoritmo privado. ``
+* **Imagen** de Entorno de fondo: este tipo de imagen se utiliza como fondo. Puede ser una imagen RGB de 8 bits estándar y debe tener el tamaño, la resolución o el nivel de detalle deseados para el fondo del escenario. Si se especifica una imagen HDR, AEM 3D la convierte a RGB de 8 bits mediante un algoritmo privado.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Puede ajustar el aspecto del escenario de IBL con las siguientes propiedades de 
    <td>Si el fondo IBL aparece distorsionado cerca del horizonte, es posible reducir o eliminar la distorsión ajustando esta propiedad. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Iluminación de Entorno</td> 
+   <td>Iluminación de entorno</td> 
    <td><p><span class="diff-html-added">Permite controlar la iluminación difusa. Es posible que tenga que ajustar esta propiedad manualmente para corregir el brillo de la iluminación si la imagen de entorno de iluminación difusa es inusualmente clara u oscura (por ejemplo, escenas nocturnas).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Actualmente no se utiliza.</li> 

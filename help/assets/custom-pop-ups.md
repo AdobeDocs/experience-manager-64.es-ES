@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1063'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
    * Visor de imágenes interactivo: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visor de vídeo interactivo: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ahora necesita configurar el &quot;controlador&quot; quickViewActivate.
+1. Ahora debe configurar el `quickViewActivate` controlador.
 
    El controlador quickViewActivate controla las vistas rápidas del visor. El controlador contiene la lista de variable y las llamadas de función que se utilizarán con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida, así como una llamada a la función loadQuickView de muestra.
 

@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ A continuación se muestra una descripción de los efectos del repositorio al mo
 
    Un valor especial para la `cq:movedTo` propiedad es `nirvana`: se aplica cuando se elimina la etiqueta pero no se puede eliminar del repositorio porque hay subetiquetas con una `cq:movedTo` que se deben guardar.
 
-   >[!NOTE]La propiedad `cq:movedTo` solo se agrega a la etiqueta movida o combinada si se cumple alguna de estas condiciones:
+   >[!NOTE]
+   >
+   >La propiedad `cq:movedTo` solo se agrega a la etiqueta movida o combinada si se cumple alguna de estas condiciones:
+   >
    >1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O
    >1. La etiqueta tiene elementos secundarios que ya se han movido.
 
 
 * `cq:backlinks` mantiene las referencias en la otra dirección, es decir, mantiene una lista de todas las etiquetas que se han movido a la etiqueta B o que se han combinado con ella. Esto se requiere principalmente para mantener `cq:movedTo`las propiedades actualizadas cuando la etiqueta B se mueve/combina/elimina también o cuando se activa la etiqueta B, en cuyo caso también se deben activar todas sus etiquetas de vínculos atrasados.
 
->[!NOTE]La propiedad `cq:backlinks` solo se agrega a la etiqueta movida o combinada si se cumple alguna de estas condiciones:
+>[!NOTE]
+>
+>La propiedad `cq:backlinks` solo se agrega a la etiqueta movida o combinada si se cumple alguna de estas condiciones:
+>
 >1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O
 >1. La etiqueta tiene elementos secundarios que ya se han movido.
 

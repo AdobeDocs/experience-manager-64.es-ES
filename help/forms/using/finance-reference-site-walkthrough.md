@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 0%
@@ -305,7 +305,10 @@ Realice los siguientes pasos para experimentar la creación de una prueba A/B pa
 1. Ahora abra el formulario en el navegador Chrome varias veces con la siguiente URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Quite la cookie con el nombre **mbox** de la persistencia de cookies del explorador antes de abrir el formulario la próxima vez. Verá la experiencia A y B del formulario al azar.
+
+   >[!NOTE]
+   >
+   >Quite la cookie con el nombre **mbox** de la persistencia de cookies del explorador antes de abrir el formulario la próxima vez. Verá la experiencia A y B del formulario al azar.
 
 1. Seleccione el formulario, haga clic en **Más** y, a continuación, en Informe **de prueba** A/B. No encontrará muchos datos en el informe, ya que acaba de iniciar la prueba. Proporcionemos ahora algunos datos iniciales para ver el aspecto del informe de prueba A/B.
 
@@ -330,7 +333,7 @@ El escenario de hipoteca We.Finance involucra a las siguientes personas:
 * Gloria Rios, Responsable de Tarjeta de Crédito e Hipoteca, We.Finance
 * John Doe, Representante de Atención al Cliente de We.Finance
 
-La siguiente infografía muestra el flujo de trabajo paso a paso de una aplicación hipotecaria.
+La siguiente infografía muestra el flujo de trabajo paso a paso de una aplicación de hipoteca.
 
 ![home_hipoage_application_walkthrough](assets/home_mortgage_application_walkthrough.png)
 
@@ -552,13 +555,19 @@ Realice los siguientes pasos en la instancia de autor para experimentar la creac
 1. Ahora abra el formulario en el navegador Chrome varias veces con la siguiente URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Quite la cookie con el nombre **mbox** de la persistencia de cookies del explorador antes de abrir el formulario la próxima vez. Verá la experiencia A y B del formulario al azar.
+
+   >[!NOTE]
+   >
+   >Quite la cookie con el nombre **mbox** de la persistencia de cookies del explorador antes de abrir el formulario la próxima vez. Verá la experiencia A y B del formulario al azar.
 
 1. Seleccione el formulario, haga clic en **Más** y, a continuación, en Informe **de prueba** A/B. No encontrará muchos datos en el informe, ya que acaba de iniciar la prueba. Proporcionemos ahora algunos datos iniciales para ver el aspecto del informe de prueba A/B.
 
 1. Abra el CRXDE Lite y realice una copia de seguridad del siguiente archivo: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Reemplace la definición de la `onReportLoadSuccess` función en el archivo mencionado anteriormente con la definición de la función en el archivo siguiente: /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
+
+   >[!NOTE]
+   >
+   >Estos cambios solo sirven para fines de demostración. Asegúrese de restaurar el contenido del archivo después de completar este procedimiento.
 
 1. Actualice el informe que ha generado y verá algo como lo siguiente. Revise el panel del sistema de informes.
 
@@ -773,7 +782,7 @@ El escenario de Administración de riqueza de We.Finance incluye la siguiente pe
 
 * Sarah Rose, una cliente de We.Finance
 
-El tutorial sobre la gestión de la riqueza demuestra cómo un cliente de We.Finance puede usar el sitio para aprender sobre un fondo mutuo, el Blue Chip Growth Fund. El sitio de referencia utiliza una comunicación interactiva para mostrar información sobre el fondo. La información está disponible en formatos web y PDF. El tutorial termina con un cliente enviando la versión PDF de la información a su hermano.
+El tutorial sobre la gestión de la riqueza demuestra cómo un cliente de We.Finance puede usar el sitio para aprender sobre un fondo mutuo, el Blue Chip Growth Fund. El sitio de referencia utiliza una comunicación interactiva para mostrar información sobre el fondo. La información está disponible en formatos web y PDF. El tutorial termina con un cliente que envía la versión PDF de la información a su hermano.
 
 La siguiente imagen muestra el flujo de trabajo del tutorial de gestión de riqueza:
 

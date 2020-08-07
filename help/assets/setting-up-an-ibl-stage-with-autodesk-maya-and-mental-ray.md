@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 73%
@@ -59,7 +59,7 @@ ht-degree: 73%
 
       * **Calidad global**: `0.5` o menos
       * **Modo** de difusión indirecta (GI) - `Final Gather`
-      * ``**Filter Size** - `2.0`, `2.0`
+      * **Tamaño** del filtro - `2.0`, `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si fuera necesario, ajuste las luces, la configuración de procesamiento o ambas opciones para conseguir los resultados deseados.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.

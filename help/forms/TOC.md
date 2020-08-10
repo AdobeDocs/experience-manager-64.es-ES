@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía del usuario de AEM 6.4 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3715'
 ht-degree: 1%
 
 ---
@@ -111,9 +111,9 @@ ht-degree: 1%
    + [Importación y exportación de recursos a AEM Forms](using/import-export-forms-templates.md)
    + [Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables](using/supporting-new-language-localization.md)
    + Gestión de datos de usuario {#handling-user-data}
-      + [flujos de trabajo centrados en Forms en OSGi](using/forms-workflow-osgi-handling-user-data.md)
+      + [Flujos de trabajo centrados en Forms en OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Administración de usuarios de Forms](using/user-management-handling-user-data.md)
-      + [flujos de trabajo JEE de Forms](using/forms-workflow-jee-handling-user-data.md)
+      + [Flujos de trabajo JEE de Forms](using/forms-workflow-jee-handling-user-data.md)
       + [Forms Portal](using/forms-portal-handling-user-data.md)
       + [Administración de correspondencia](using/correspondence-management-handling-user-data.md)
       + [Integración con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
@@ -204,7 +204,7 @@ ht-degree: 1%
    + [Funciones del espacio de trabajo de Flex no disponibles en el espacio de trabajo de AEM Forms](using/features-flex-workspace-available-html.md)
    + [Interacción de la red troncal](using/backbone-interaction.md)
    + [Descripción de los componentes reutilizables](using/description-reusable-components.md)
-   + [Detalles de Documento para el procesador](using/document-details-renderer.md)
+   + [Detalles de documento para el procesador](using/document-details-renderer.md)
    + [Integración de componentes del espacio de trabajo de AEM Forms en aplicaciones web](using/integrating-html-ws-components-web.md)
    + [Nuevo servicio de procesamiento y envío](using/new-render-submit-service.md)
    + [Explicación de la estructura de carpetas](using/folder-structure.md)
@@ -347,7 +347,7 @@ ht-degree: 1%
    + [Activación de componentes del portal de formularios](using/enabling-forms-portal-components.md)
    + [Creación de una página de portal de formularios](using/creating-form-portal-page.md)
    + [API para trabajar con formularios enviados en el portal de formularios](using/report-submitted-data-forms.md)
-   + [almacenamiento personalizado para los borradores y el componente de envíos](using/adding-custom-storage-provider-forms.md)
+   + [Almacenamiento personalizado para los borradores y el componente de envíos](using/adding-custom-storage-provider-forms.md)
 + Servicios de documentos {#use-document-services}
    + [Visión general de AEM servicios de Documento](using/overview-aem-document-services.md)
    + [Servicio de Forms](using/forms-service.md)
@@ -359,7 +359,7 @@ ht-degree: 1%
    + [Uso de los servicios de Documento de AEM mediante programación](using/aem-document-services-programmatically.md)
    + [Uso de la API sendToPrinter](using/using-sendtoprinter-api.md)
 + :Seguridad de los documentos{#use-document-security}
-   + [Ofertas de seguridad de Documento](using/document-security-offerings.md)
+   + [Ofertas de seguridad de documento](using/document-security-offerings.md)
    + [Habilitar AEM para buscar documentos PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Reader ampliando documentos PDF protegidos por políticas mediante la biblioteca de protección portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Habilitar AEM para buscar documentos de Microsoft Office y PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
@@ -476,11 +476,11 @@ ht-degree: 1%
       + [Configuración de SSL para el servidor de aplicaciones WebSphere](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
    + Uso de la seguridad de documento {#work-with-document-security}
       + [Seguridad de documento](/help/forms/using/admin-help/document-security.md)
-      + [envío de información segura de gran volumen](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
+      + [Envío de información segura de gran volumen](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
       + [Configuración de las opciones de cliente y servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
       + [Administración de cuentas de usuario invitadas y locales](/help/forms/using/admin-help/invited-local-user-accounts.md)
       + [Control del acceso a documentos protegidos por políticas](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
-      + [eventos de supervisión](/help/forms/using/admin-help/monitoring-events.md)
+      + [Eventos de supervisión](/help/forms/using/admin-help/monitoring-events.md)
       + [Creación y gestión de políticas](/help/forms/using/admin-help/creating-policies.md)
       + [Uso de las páginas web de seguridad de documento](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Creación y administración de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
@@ -525,8 +525,8 @@ ht-degree: 1%
    + Monitor de estado {#health-monitor}
       + [Visión general del monitor de estado](/help/forms/using/admin-help/overview-11.md)
       + [Mejora del rendimiento del monitor de mantenimiento](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
-      + [Estadísticas de Vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md)
-      + [Información del sistema de Vista](/help/forms/using/admin-help/view-system-information.md)
+      + [Estadísticas de vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md)
+      + [Información del sistema de vista](/help/forms/using/admin-help/view-system-information.md)
       + [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md)
    + Mantenimiento de AEM formularios {#maintain-aem-forms}
       + [Archivos de registro](/help/forms/using/admin-help/log-files.md)
@@ -559,7 +559,7 @@ ht-degree: 1%
       + [Recuperación de los datos de formularios AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Estrategia de Backup para Usuarios de Connector para Documentum de EMC](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
       + [Estrategia para backup y restore en un entorno agrupado](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
-   + servicio informativo del sistema {#system-information-service}
+   + Servicio informativo del sistema {#system-information-service}
       + [Configuración del servicio informativo del sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API de servicio informativo del sistema](/help/forms/using/admin-help/system-information-service-apis.md)
 + Informes de procesos {#process-reporting}
@@ -577,6 +577,7 @@ ht-degree: 1%
    + [Referencia de API de Java de AEM Forms](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [Referencia de la API de Java de AEM Forms en JEE](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [API de puente de formulario para formularios HTML5](using/form-bridge-apis.md)
+   + [Referencia de la API de la biblioteca JavaScript para Forms adaptable](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [Servicio de ensamblador y referencia DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Ayuda de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + Programación con AEM Forms en JEE {#programming-aem-forms-jee}
@@ -584,7 +585,7 @@ ht-degree: 1%
          + [Introducción a la API de Java QuickStart](developing/introducing-java-api-soap-quick.md)
          + [Invocación de AEM Forms mediante API](developing/invoking-aem-forms-using-apis.md)
          + [Explicación de los procesos de AEM Forms](developing/aem-forms-processes.md)
-         + [contenedor de servicio](developing/service-container.md)
+         + [Contenedor de servicio](developing/service-container.md)
       + Inicio rápido de la API de Java: ejemplos de código {#java-api-quick-start-code-examples}
          + [Inicio rápido JavaAPI del cliente de Application Manager (SOAP)](developing/application-manager-client-java-api.md)
          + [Inicio rápido de JavaAPI del servicio Application Manager (SOAP)](developing/application-manager-service-java-api.md)
@@ -597,8 +598,8 @@ ht-degree: 1%
          + [Inicio rápido de la API de Java del servicio de credenciales (SOAP)](developing/credential-service-java-api-quick.md)
          + [QuickStart (SOAP) de la API de Java del servicio de Distiller](developing/distiller-service-java-api-quick.md)
          + [Inicio rápido de API de Java del servicio DocConverter (SOAP)](developing/docconverter-service-java-api-quick.md)
-         + [Servicio de administración de Documentos (obsoleto)Inicio rápido de la API de Java (SOAP)](developing/document-management-service-deprecated-java.md)
-         + [Inicio rápido de JavaAPI (SOAP) del servicio de seguridad de Documento](developing/document-security-service-java-api.md)
+         + [Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)](developing/document-management-service-deprecated-java.md)
+         + [Inicio rápido de JavaAPI (SOAP) del servicio de seguridad de documento](developing/document-security-service-java-api.md)
          + [QuickStart (SOAP) de la API de Java del servicio de cifrado](developing/encryption-service-java-api-quick.md)
          + [Inicio rápido de la API de Java del Registro de Extremo (SOAP)](developing/endpoint-registry-java-api-quick.md)
          + [Inicio rápido de JavaAPI (SOAP) del servicio de integración de datos de formulario](developing/form-data-integration-service-java.md)
@@ -610,7 +611,7 @@ ht-degree: 1%
          + [Servicio de utilidades PDF APIQuick Inicio (SOAP) Java](developing/pdf-utilities-service-java-api.md)
          + [Inicios rápidos de API de servicio de repositorio](developing/repository-service-api-quick-starts.md)
          + [Inicio rápido de la API de Java del servicio de firma (SOAP)](developing/signature-service-java-api-quick.md)
-         + [Inicio rápido de la API de Java del servicio Administrador de Tareas (SOAP)](developing/task-manager-service-java-api.md)
+         + [Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)](developing/task-manager-service-java-api.md)
          + [Inicio rápido de la API de Java del Administrador de usuarios (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Inicio (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}

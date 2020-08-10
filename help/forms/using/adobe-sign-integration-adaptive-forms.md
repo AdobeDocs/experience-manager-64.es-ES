@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
    * widget_write
    * workflow_read
 
-   Para obtener información paso a paso sobre la configuración de OAuth para una aplicación de Adobe Sign y obtener las claves, consulte [Configuración de autenticación para la documentación del desarrollador de la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) .
+   Para obtener información paso a paso sobre la configuración de OAuth para una aplicación de Adobe Sign y obtener las claves, consulte [Configuración de autenticación para la documentación del desarrollador de la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) .
 
    ![Configuración de OAuth](assets/oauth_config.png)
 
@@ -78,7 +78,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
    **na1** hace referencia al uso compartido predeterminado de la base de datos.
 
-   Puede modificar el valor del uso compartido de la base de datos. Reinicie el servidor para poder utilizar el nuevo valor para el uso compartido de la base de datos.
+   Puede modificar el valor del uso compartido de la base de datos. Reinicie el servidor para poder usar el nuevo valor para el uso compartido de la base de datos.
 
 1. Especifique el ID **[!UICONTROL de]** cliente (también denominado ID de aplicación) y el secreto **[!UICONTROL de cliente]**. Seleccione la opción **[!UICONTROL Activar Adobe Sign para archivos adjuntos también]** para anexar archivos adjuntos a un formulario adaptable al documento de Adobe Sign correspondiente enviado para firmar.
 

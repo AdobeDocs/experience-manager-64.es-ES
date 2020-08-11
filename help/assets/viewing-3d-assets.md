@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 33%
+source-wordcount: '1806'
+ht-degree: 32%
 
 ---
 
 
 # Visualización de recursos 3D {#viewing-d-assets}
+
+>[!IMPORTANT]
+>
+>Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) para vista de recursos 3D.
 
 En este documento se describe cómo realizar la vista de recursos 3D en los detalles de recursos y cómo realizar la vista de recursos que se encuentran en el componente 3D de los sitios.
 
@@ -166,7 +170,7 @@ Para trabajar con componentes 3D con dispositivos táctiles:
 
 1. Utilice un arrastre de dos dedos hacia abajo o hacia arriba con los botones de la almohadilla táctil para mover la cámara más cerca o más lejos del objeto. Esta acción es similar a acercar o alejar y permite inspeccionar los detalles del objeto. También puede hacer clic y mantener pulsados los botones **[!UICONTROL Acercar]** o **[!UICONTROL Alejar]** para acercar o alejar la cámara del objeto.
 
-1. Arrastre un dedo mientras mantiene presionada la tecla **ALT/opción** y el botón (izquierdo) del panel táctil para recorrer la cámara. Esta acción mueve la cámara lateralmente para permitirle ver diferentes partes del objeto mientras se amplía. Como alternativa, haga clic en el botón Alternar **[!UICONTROL órbita/giro]** para cambiar al modo **[!UICONTROL de desplazamiento]** y, a continuación, arrastre un dedo mientras mantiene presionado el botón (izquierda) para recorrer la cámara. Vuelva a hacer clic en el botón Alternar **[!UICONTROL giro/]** órbita para volver al modo **[!UICONTROL órbita]** .
+1. Arrastre un dedo mientras mantiene presionada la tecla **ALT/opción** y el botón (izquierdo) del panel táctil para recorrer la cámara. Esta acción mueve la cámara lateralmente para permitirle ver diferentes partes del objeto mientras se amplía. Como alternativa, haga clic en el botón Alternar **[!UICONTROL órbita/giro]** para cambiar al modo **[!UICONTROL de desplazamiento]** y, a continuación, arrastre un dedo mientras mantiene presionado el botón (izquierda) para recorrer la cámara. Vuelva a hacer clic en el botón Alternar **[!UICONTROL giro/]** órbita para volver al modo **[!UICONTROL Orbit]** .
 
 1. Haga clic en **[!UICONTROL Restablecer visor]** para restablecer la cámara. Esta acción lleva al objeto a una vista completa y, si está activada, reanuda el giro automático.
 

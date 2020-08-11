@@ -1,5 +1,5 @@
 ---
-title: Uso de recursos 3D
+title: Uso de AEM recursos 3D
 seo-title: Uso de recursos 3D
 description: Aprenda a trabajar con recursos 3D en AEM 3D
 seo-description: Aprenda a trabajar con recursos 3D en AEM 3D
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 5%
 
 ---
 
 
-# Uso de recursos 3D {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D (Adobe Experience Manager 3D) permite cargar, administrar, visualizar y procesar contenido 3D. La compatibilidad para la visualización y el procesamiento se optimiza para objetos individuales.
 
@@ -37,7 +41,7 @@ Cuando cree modelos 3D para su uso en AEM 3D, tenga en cuenta lo siguiente:
 * Los archivos del modelo 3D deben contener un solo objeto, sin fondos, planos de tierra, iluminación de escenas o cámaras.
 * Coloque el modelo sobre el plano de masa. Este posicionamiento es especialmente importante cuando se realiza una vista o representación con etapas que proporcionan un plano de tierra. Hay una configuración disponible (y habilitada de forma predeterminada) que hace que el objeto se mueva por encima del plano de tierra al obtener una vista previa o al procesarlo con una precisión rápida. Esta configuración no afecta al procesamiento con procesadores de terceros (por ejemplo, a través de Maya) y, por tanto, los objetos que no están ubicados por encima del plano de tierra pueden estar parcialmente ocultos.
 * Sitúe el modelo de modo que esté razonablemente centrado lateralmente alrededor del origen del sistema de coordenadas (0,0,0). De este modo, se garantiza una buena experiencia de visualización interactiva.
-* Aparte de los mapas de textura, se admiten las referencias de archivo externas. Por lo tanto, debe incrustar cualquier contenido al que se haga referencia en el archivo del modelo principal antes de cargarlo en AEM.
+* Aparte de los mapas de textura, se admiten las referencias de archivo externas. Por lo tanto, debe incrustar cualquier contenido referenciado en el archivo del modelo principal antes de cargarlo en AEM.
 
    Consulte [Acerca de la carga y el procesamiento de los recursos 3D en AEM](upload-processing-3d-assets.md).
 

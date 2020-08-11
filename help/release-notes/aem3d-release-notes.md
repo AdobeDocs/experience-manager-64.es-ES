@@ -1,8 +1,8 @@
 ---
 title: Notas de la versión de AEM 3D
 seo-title: Notas de la versión de AEM 3D
-description: Notas de la versión específicas del contenido 3D en Recursos de Adobe Experience Manager.
-seo-description: Notas de la versión específicas del contenido 3D en Recursos de Adobe Experience Manager.
+description: Notas de la versión específicas del contenido 3D en Adobe Experience Manager Assets.
+seo-description: Notas de la versión específicas del contenido 3D en Adobe Experience Manager Assets.
 uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,15 +10,19 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
 
 
 # Notas de la versión de AEM 3D {#aem-d-release-notes}
+
+>[!IMPORTANT]
+>
+>El paquete de funciones AEM 3D de AEM 6.4 ya no es compatible. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM-6.4-DynamicMedia-3D versión 3.1.0 (10 de octubre de 2018)
 
@@ -60,7 +64,7 @@ Es posible que otros exploradores no admitan la visualización interactiva de co
 
 * CPU: el procesamiento y procesamiento 3D es muy exigente en la CPU de un equipo. Como tal, se recomienda un servidor contemporáneo con un mínimo de ocho núcleos de CPU.
 * Memoria: se recomienda un mínimo de 32 GB.
-* almacenamiento masivo: se recomienda el almacenamiento SSD de gran ancho de banda.
+* Almacenamiento masivo: se recomienda el almacenamiento SSD de gran ancho de banda.
 
    Durante la carga, los recursos 3D se convierten a un formato propio para una visualización rápida e interactiva. Según el tipo de recurso 3D, se requiere un espacio de almacenamiento de 2 a 3 veces el tamaño del recurso 3D cargado.
 
@@ -106,7 +110,7 @@ Versión 3.1
 
 * Esta versión de AEM3D tiene compatibilidad limitada con archivos .dn creados con Adobe Dimension.
 * Durante el procesamiento de la carga, AEM aprovecha un servicio de conversión alojado en Adobe y basado en la nube para crear una representación glTF a partir del archivo .dn nativo. Se requiere acceso al servicio de conversión y selección de los extremos de Amazon AWS.
-* Se proporciona un nuevo visor de GlTF que permite ver recursos Dn en AEM Assets y en Sitios/Pantallas. La compatibilidad con las fases en el visor aún no está disponible.
+* Se proporciona un nuevo visor de GlTF que admite la visualización de recursos Dn en AEM Assets y en Sitios/Pantallas. La compatibilidad con las fases en el visor aún no está disponible.
 * Los modelos Dn pueden incrustar luces y fondos IBL que se muestran, si están presentes. Como alternativa, el visor aplica una iluminación predeterminada, un color de fondo predeterminado o ambos.
 * La representación de alta calidad para los recursos Dn aún no está disponible.
 * Las dependencias como los mapas de textura están incrustadas en los recursos Dn y no se pueden administrar explícitamente en AEM.
@@ -114,7 +118,7 @@ Versión 3.1
 ### Compatibilidad {#compatibility}
 
 * **No se puede ejecutar como un servicio de Windows (solo Windows)** . Esto puede funcionar pero no se ha probado.
-* **Dynamic Media** ( `dynamicmedia-scene7` modo): La compatibilidad de AEM3D con la nueva solución Dynamic Media lanzada con AEM 6.4 aún no se ha verificado completamente. Si Dynamic Media y AEM3D se implementan juntos, se recomienda colocar los recursos 3D y sus dependencias solo en un área del repositorio de AEM Assets que no esté asignada a Dynamic Media. Esta recomendación es especialmente importante para los archivos TIFF de 32 bits que son necesarios para las fases 3D pero no son compatibles con Dynamic Media.
+* **Medios** dinámicos ( `dynamicmedia-scene7` modo): La compatibilidad de AEM3D con la nueva solución Dynamic Media lanzada con AEM 6.4 aún no se ha verificado completamente. Si Dynamic Media y AEM3D se implementan juntos, se recomienda colocar recursos 3D y sus dependencias solo en un área del repositorio de AEM Assets que no esté asignada a Dynamic Media. Esta recomendación es especialmente importante para los archivos TIFF de 32 bits que son necesarios para las fases 3D pero no son compatibles con Dynamic Media.
 
 ### General {#general}
 
@@ -154,7 +158,7 @@ Versión 3.1
 * **Imagen de fondo invertida para el escenario** IBL: las imágenes para las etapas IBL se voltean horizontalmente de forma intencionada para coincidir con el comportamiento del procesador de rayos mentales NVIDIA proporcionado con Autodesk Maya. Solución: Gire las imágenes utilizadas para las etapas de IBL en Photoshop antes de cargarlas.
 * **Brillo de las etapas** de IBL: la análisis automática de la imagen IBL puede resultar en una escena demasiado oscura o brillante. Para ajustar el brillo de la iluminación de las etapas de IBL, navegue hasta Propiedades **** básicas y ajuste el valor **luminoso** de **Entorno Lighting** según sea necesario.
 
-### Componente 3D de AEM Sites {#aem-sites-d-component}
+### Componente AEM Sites 3D {#aem-sites-d-component}
 
 * **Un componente 3D por página** : en este momento, solo se permite una instancia del componente 3D en cada página web. Si se agrega más de un componente 3D a la misma página, ninguno de los componentes 3D funcionará correctamente.
 * **Falta la Vista 3D al obtener una vista previa en Sitios** : cuando utiliza la **Previsualización** en Sitios, la página debe volver a cargarse en el explorador para inicializar completamente el visor 3D. No se trata de un problema que se produzca cuando se vista la página web directamente (es decir, cuando `edit.html` se elimina de la ruta) en los nodos Autor o Publicar.
@@ -165,4 +169,4 @@ Versión 3.1
 
 * **Configuración** de componentes 3D: debe instalar el paquete de funciones 3D en todos los nodos activos de Publish y cada nodo debe configurarse con **CRXDE Lite** a las mismas opciones de configuración en `/libs/settings/dam/v3D/WebGLSites`.
 
-* **Faltan texturas, fondo o iluminación después de la publicación** : el mecanismo **Publicar** en AEM Sites publica automáticamente las dependencias principales de la página, incluido el modelo 3D y el escenario 3D al que hace referencia el componente 3D. Las etapas 3D y los modelos 3D suelen depender de los recursos secundarios para las imágenes IBL y los mapas de textura, que el mecanismo Publicación de sitios no publica automáticamente. Solución: publicar todos los recursos 3D de Recursos antes de publicar la página web desde Sitios. De este modo, se garantiza que todas las dependencias de los recursos 3D estén disponibles en los nodos Publicar.
+* **Faltan texturas, fondo o iluminación después de la publicación** : el mecanismo de **publicación** de AEM Sites publica automáticamente las dependencias principales de la página, incluido el modelo 3D y el escenario 3D al que hace referencia el componente 3D. Las etapas 3D y los modelos 3D suelen depender de los recursos secundarios para las imágenes IBL y los mapas de textura, que el mecanismo Publicación de sitios no publica automáticamente. Solución: publicar todos los recursos 3D de Recursos antes de publicar la página web desde Sitios. De este modo, se garantiza que todas las dependencias de los recursos 3D estén disponibles en los nodos Publicar.

@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
 
 
 # Instalación y configuración de AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 La instalación y configuración de AEM 3D (versión 3.0) implica lo siguiente:
 
@@ -111,7 +115,7 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
 
-1. Haga clic con el Doble en el paso del proceso recientemente agregado.
+1. Haga clic con el doble en el paso del proceso recientemente agregado.
 1. En el cuadro de diálogo Propiedades **[!UICONTROL del]** paso, en la ficha **[!UICONTROL Común]** , en el campo **[!UICONTROL Título]** , introduzca una descripción adecuada para el proceso como, por ejemplo, `Process 3D content`.
 1. Click the **[!UICONTROL Process]** tab.
 
@@ -170,7 +174,7 @@ Consulte también Configuración [avanzada](advanced-config-3d.md).
 
    Cerca de la esquina superior derecha de la página logo-esfera.fbx, haga clic en el icono de Elementos destacados del escenario para expandir el menú desplegable y, a continuación, seleccione `stage-spotlights.fbx`.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. En la lista desplegable **[!UICONTROL Elementos destacados]** del escenario, seleccione `stage-helipad.fbx`.
 
@@ -242,7 +246,7 @@ Debe configurar un servicio de conversión externo para permitir la ingestión, 
 
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
-   Si se muestra un &quot;Error de procesamiento&quot; en el recurso Dn en la Vista **[!UICONTROL de]** tarjeta después de 10-15 minutos, se producirá un error en la conversión.
+   Si aparece un &quot;Error de procesamiento&quot; en el recurso Dn en la Vista **[!UICONTROL de]** tarjeta después de 10-15 minutos, se producirá un error en la conversión.
 
    En ese caso, puede solucionar los problemas de la conversión haciendo lo siguiente:
 

@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 72%
+source-wordcount: '868'
+ht-degree: 68%
 
 ---
 
 
 # Acerca de la carga y el procesamiento de los recursos 3D en AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
+
+>[!IMPORTANT]
+>
+>Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html).
 
 Utilice mecanismos estándar de carga o sincronización para insertar los recursos 3D y sus archivos de referencia asociados en AEM Assets.
 

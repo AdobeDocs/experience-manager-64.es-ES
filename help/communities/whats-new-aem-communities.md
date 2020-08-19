@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 0%
@@ -69,7 +69,7 @@ AEM 6.4 agrega dos [nuevos filtros](moderation.md#filter-rail), llamados Respond
 
 Al seleccionar el estado Respondido, todas las preguntas respondidas son visibles para el moderador en el área de contenido. Mientras que, si solo se selecciona el estado No respondido, el moderador verá todo el contenido (para todos los tipos de contenido) excepto las preguntas respondidas, porque la propiedad responsable de la pregunta respondida no existe en el caso de preguntas no respondidas y otro contenido como tema del foro, artículo del blog o comentarios.
 
-### filtros de moderación de marcadores {#bookmark-moderation-filters}
+### Filtros de moderación de marcadores {#bookmark-moderation-filters}
 
 AEM Communities permite [marcar los filtros](moderation.md#filter-rail) de moderación predefinidos en la consola de moderación. Estos marcadores guardados se pueden volver a examinar más adelante y compartir con otros usuarios.
 
@@ -95,7 +95,7 @@ AEM 6.4 Comunidades proporciona el icono Eliminar sitio en los sitios de comunid
 
 ## Administración de UGC y perfiles de usuario {#managing-ugc-and-user-profiles}
 
-Al mantener la protección de datos de los usuarios en el centro de la experiencia de las comunidades, AEM Communities expone [las API integradas](user-ugc-management-service.md) y el servlet de [muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Estas API ayudan a administrar de forma masiva (eliminación masiva y exportación masiva) el contenido generado por los usuarios y a eliminar perfiles de los usuarios, y son fundamentales para gestionar las solicitudes de cumplimiento del RGPD de la UE.
+Al mantener la protección de datos de los usuarios en el centro de la experiencia de las comunidades, AEM Communities expone [las API integradas](user-ugc-management-service.md) y el servlet de [muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Estas API ayudan a administrar de forma masiva (eliminación masiva y exportación masiva) el contenido generado por los usuarios y a eliminar perfiles de los usuarios, y son fundamentales para gestionar las solicitudes de cumplimiento del RGPD de la UE.
 
 ## Cambios {#what-s-changed}
 

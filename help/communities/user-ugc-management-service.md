@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 77cca35f74db2ced556b71c3192058b7c352ab4d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para obtener más información, consulte la página del [RGPD en el Centro](http
 >
 >Si ha configurado [Adobe Analytics en el sitio de AEM Communities](analytics.md) , los datos de usuario capturados se envían al servidor de Adobe Analytics. Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario y cumplir con el RGPD. Para obtener más información, consulte [Enviar solicitudes](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)de acceso y eliminación.
 
-Para poner estas API en uso, debe habilitar el extremo activando el servicio UserUgcManagement `/services/social/ugcmanagement` . Para activar este servicio, instale el servlet de [muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). A continuación, toque el extremo en la instancia de publicación del sitio de comunidades con los parámetros adecuados mediante una solicitud http, similar a la siguiente:
+Para poner estas API en uso, debe habilitar el extremo activando el servicio UserUgcManagement `/services/social/ugcmanagement` . Para activar este servicio, instale el servlet de [muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). A continuación, toque el extremo en la instancia de publicación del sitio de comunidades con los parámetros adecuados mediante una solicitud http, similar a la siguiente:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 

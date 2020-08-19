@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 La funcionalidad de formularios HTML5 se implementa como un paquete dentro de la instancia de AEM incrustada y se expone como un punto final de REST sobre HTTP/S mediante RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-    [ ![01-aem-forms-Architecture](assets/01-aem-forms-architecture.jpg)
-*Vista de tamaño* completo](javascript:void(0).md)
-
-    [ ![02-aem-forms-Architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-Architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Uso de Sling Framework {#using-sling-framework}
 
@@ -160,7 +157,7 @@ Motor de secuencias de comandos de cliente:
 1. Genera un nuevo estado JSON
 1. Combina el nuevo estado JSON en el cliente cuando se devuelve la respuesta.
 
-#### Paquetes de recursos de Localización {#localization-resource-bundles}
+#### Paquetes de recursos de localización {#localization-resource-bundles}
 
 Los formularios HTML5 admiten italiano (it), español (es), portugués brasileño (pt_BR), chino simplificado (zh_CN), chino tradicional (solo compatibilidad limitada) (zh_TW), coreano (ko_KR), inglés (en_US), francés (fr_FR), alemán (de_DE) y japonés (ja). Según la configuración regional recibida en el encabezado de la solicitud, se envía al cliente el paquete de recursos correspondiente. Este paquete de recursos se agrega a Perfil JSP como una biblioteca de cliente de CQ con el nombre de categoría **xfaforms.I18N**. Puede anular la lógica de selección del paquete de configuración regional en el perfil.
 
@@ -170,9 +167,9 @@ El paquete Sling contiene contenido relacionado con Perfiles y procesador de Per
 
 #### Perfiles {#profiles}
 
-Los Perfiles son los nodos de recursos en sling que representan un formulario o familia de Forms. A nivel de CQ, estos perfiles son nodos JCR. Los nodos residen en la carpeta **/content** del repositorio JCR y pueden estar dentro de cualquier subcarpeta de la carpeta **/content** .
+Los perfiles son los nodos de recursos en sling que representan un formulario o familia de Forms. A nivel de CQ, estos perfiles son nodos JCR. Los nodos residen en la carpeta **/content** del repositorio JCR y pueden estar dentro de cualquier subcarpeta de la carpeta **/content** .
 
-#### Representadores de Perfil {#profile-renderers}
+#### Representadores de perfil {#profile-renderers}
 
 El nodo Perfil tiene una propiedad **sling:resourceSuperType** con valor **xfaforms/perfil**. Esta propiedad envía internamente solicitudes a la secuencia de comandos sling para nodos Perfil ubicados en la carpeta **/libs/xfaforms/perfil** . Estas secuencias de comandos son páginas JSP, que son contenedores para agrupar los formularios HTML y los artefactos JS/CSS requeridos. Las páginas incluyen referencias a:
 

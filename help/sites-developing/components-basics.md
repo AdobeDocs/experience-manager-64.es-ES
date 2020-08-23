@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Por esta razón, en esta página trataremos los aspectos básicos de ambos, y c�
 
 >[!NOTE]
 >
->Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [AEM Herramientas de moderación&amp;(moderniatzion-tools.md) puede facilitar la migración.
+>Adobe recomienda aprovechar la IU táctil para beneficiarse de la tecnología más reciente. [AEM herramientas](modernization-tools.md) de modernización pueden facilitar la migración.
 
 ### Lógica de contenido y marcado de procesamiento  {#content-logic-and-rendering-markup}
 
@@ -173,7 +173,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * propiedades de jcr:
 
-      lista de las propiedades jcr; son variables y algunas pueden ser opcionales a través de la estructura básica de un nodo de componente, sus propiedades y subnodos están definidos por la `cq:Component` definición
+      Lista de las propiedades jcr; son variables y algunas pueden ser opcionales a través de la estructura básica de un nodo de componente, sus propiedades y subnodos están definidos por la `cq:Component` definición
 
    * Medios:
 
@@ -569,7 +569,7 @@ Los componentes dentro de AEM están sujetos a tres jerarquías diferentes:
    * cuadros de diálogo
    * descripciones (incluidas imágenes en miniatura, iconos, etc.)
 
-* **Jerarquía de Contenedor**
+* **Jerarquía de contenedor**
 
    Se utiliza para rellenar los ajustes de configuración del componente secundario y se utiliza con mayor frecuencia en un escenario parsys.
 

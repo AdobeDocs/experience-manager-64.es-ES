@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 34%
 
 ---
@@ -39,7 +39,7 @@ Añadir un componente de Dynamic Media en una página es lo mismo que agregar un
 >Para evitar este problema, asegúrese de que los usuarios de AEM Sites tienen los permisos necesarios para acceder a los recursos.
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
-1. En el panel del lado izquierdo de la página (es posible que deba alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
+1. En el panel del lado izquierdo de la página (es posible que necesite alternar la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]** .
 1. En la lista desplegable **[!UICONTROL Componentes]** , seleccione Medios **[!UICONTROL dinámicos]**. Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
@@ -69,7 +69,7 @@ Si no hay componentes de Dynamic Media disponibles para agregar a una página, e
 1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
 1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
 
-   ![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![Lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
 
@@ -213,7 +213,7 @@ Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos 
 * **[!UICONTROL URL, Abrir en]**Puede definir un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Altura** y **[!UICONTROL anchura]** Introduzca el valor en píxeles si desea que la imagen de recorte inteligente tenga un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
+* **[!UICONTROL Altura]** y **[!UICONTROL anchura]** Introduzca el valor en píxeles si desea que la imagen de recorte inteligente tenga un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
 
 ### Interactive Media component {#interactive-media-component}
 
@@ -264,7 +264,7 @@ Si el ajuste preestablecido de visor que está buscando no está visible, asegú
 
 ### Uso de HTTP/2 para envío de recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 

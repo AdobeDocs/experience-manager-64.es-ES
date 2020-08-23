@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -89,12 +89,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 La configuración de la utilidad se proporciona como un objeto JSON (una colección de pares de valor clave) donde la clave identifica los campos y el valor representa la utilidad que se utilizará con esos campos. Se muestra una configuración de ejemplo:
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,\
-&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
-..\
+*“identifier1” : “customwidgetname”,  
+“identifier2” : “customwidgetname2”,  
+..  
 }*
+```
 
 donde &quot;identificador&quot; es un selector CSS de jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. La siguiente lista el valor del identificador en diferentes casos:
 

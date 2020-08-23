@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Para configurar la dirección de correo electrónico, agregue un `sling:OsgiConf
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de tipo `sling:OsgiConfig`
 
-1. Añada una `String` propiedad en el nodo] denominado `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
+1. Añada una `String` propiedad al nodo denominado `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
 
 1. Haga clic en **Guardar todo**.
 

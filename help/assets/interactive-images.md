@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4300'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ Cuando la supervisión de red está activada en el explorador, active la vista r
 
 Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una parte o ruta de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU es la única pieza de datos que necesita para agregar zonas interactivas a la imagen de la pancarta.
 
@@ -260,9 +260,9 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 1. En la vista Recursos, desplácese hasta la pancarta de imagen que desee hacer interactiva.
 1. Realice una de las acciones siguientes:
 
-   * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). En la barra de herramientas, toque **[!UICONTROL Editar**.
+   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). En la barra de herramientas, toque **[!UICONTROL Editar]**.
    * Pase el ratón sobre la imagen y, a continuación, toque **[!UICONTROL Más acciones]** (icono de tres puntos) > **[!UICONTROL Editar]**.
-   * Toque la imagen para abrirla en la página Vista **[!UICONTROL de]** detalles. En la barra de herramientas, toque **[!UICONTROL Editar**.
+   * Toque la imagen para abrirla en la página Vista **[!UICONTROL de]** detalles. En la barra de herramientas, toque **[!UICONTROL Editar]**.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
@@ -318,7 +318,7 @@ d. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, 
 
 ### (Opcional) Vista previa de imágenes interactivas {#optional-previewing-interactive-images}
 
-Puede utilizar la Previsualización para ver cómo se verá la imagen interactiva para los clientes y para probar las zonas interactivas de la imagen para asegurarse de que se comportan de la forma esperada.
+Puede utilizar la Previsualización para ver cómo se verá la imagen interactiva para los clientes y probar las zonas interactivas de la imagen para asegurarse de que se comportan de la forma esperada.
 
 Cuando esté satisfecho con la imagen interactiva, puede publicarla.\
 See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).\

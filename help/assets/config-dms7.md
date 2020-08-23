@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5549'
+source-wordcount: '5547'
 ht-degree: 4%
 
 ---
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    Tenga en cuenta que Formulario [!UICONTROL de]Vista, tal como se define en la esquina superior derecha de la página [!UICONTROL Detalles] , es la vista predeterminada.
 
 1. En el panel Lista **** preestablecida, toque **[!UICONTROL Añadir]** para activar los campos de definición en el panel **[!UICONTROL Detalles]** del lado derecho de la pantalla.
-1. En el panel **[!UICONTROL Detalles]** , en el campo [!Nombre de ajuste preestablecido de UICONTROL[!UICONTROL, escriba un nombre para el ajuste preestablecido.
+1. En el panel **[!UICONTROL Detalles]** , en el campo Nombre [!UICONTROL de] ajuste preestablecido, escriba un nombre para el ajuste preestablecido.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. En la lista desplegable **[!UICONTROL Subtipo]** , seleccione Conjunto de giros de **[!UICONTROL varios ejes]**.
 1. Expanda Convenciones **[!UICONTROL de nombres de]** recursos y, a continuación, en la lista desplegable Nombre de **[!UICONTROL archivo]** , toque **[!UICONTROL Personalizar]**.

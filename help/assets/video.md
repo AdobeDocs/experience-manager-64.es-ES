@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10507'
+source-wordcount: '10502'
 ht-degree: 4%
 
 ---
@@ -490,7 +490,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta GMA
 1. En el **[!UICONTROL Panel]** del proyecto, en la tarjeta **[!UICONTROL Introducción]** , toque **[!UICONTROL Activar API y obtenga las credenciales como claves]**.
 1. Cerca de la parte superior de la página de **[!UICONTROL Panel]** , toque **[!UICONTROL Activar API]**.
 1. En la página **[!UICONTROL Biblioteca]** , en las API de YouTube, toque la API **[!UICONTROL de datos de]** YouTube.
-1. Cerca de la parte superior de la página API de datos de **YouTube v3]** , toque **[!UICONTROL Habilitar]** para activarla.
+1. Cerca de la parte superior de la página API de datos de **[!UICONTROL YouTube v3]** , toque **[!UICONTROL Habilitar]** para activarla.
 1. Para utilizar la API, es posible que necesite credenciales. Si es necesario, toque **[!UICONTROL Crear credenciales]**.
 1. Desde **[!UICONTROL ¿De dónde va a llamar a la API?]** lista desplegable, seleccione Servidor **[!UICONTROL Web (por ejemplo, node.js, Tomcat)]**.
 1. En **[!UICONTROL ¿A qué datos accederá?]** seleccione Datos **[!UICONTROL de usuario]**.
@@ -570,7 +570,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Bajo el encabezado Servicios **[!UICONTROL de]** terceros, en YouTube, toque **[!UICONTROL Configurar ahora]**.
-1. En el cuadro de diálogo **Crear configuración]** , introduzca un título (obligatorio) y un nombre (opcional) en los campos correspondientes.
+1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , introduzca un título (obligatorio) y un nombre (opcional) en los campos correspondientes.
 1. Toque **[!UICONTROL Crear]**.
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
@@ -586,7 +586,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
    Ahora configurará canales de YouTube en AEM.
 
 1. A la derecha de **[!UICONTROL Canales disponibles]**, pulse **[!UICONTROL +]** (icono del signo “más”).
-1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel ]**earlier.
+1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]** earlier.
 
    Si lo desea, puede agregar una descripción.
 
@@ -597,7 +597,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
    * Según el número de canales que tenga su cuenta, verá dos o más elementos. Seleccione un canal. No seleccione la dirección de correo electrónico.
    * En la página siguiente, toque **[!UICONTROL Aceptar]** para permitir el acceso a este canal.
 
-1. Puntee **[!Permitir** UICONTROL.
+1. Toque **[!UICONTROL Permitir]**.
 
    Ahora configurará las etiquetas para la publicación.
 
@@ -634,7 +634,7 @@ Para crear el perfil de procesamiento de metadatos, en primer lugar copiará val
 
       Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree el perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar (como Personas y blogs o Ciencia y tecnología).
+   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee usar (como Personas y blogs o Ciencia y tecnología).
 
       Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree el perfil de procesamiento de metadatos. Deje abierto el editor de texto.
 
@@ -656,7 +656,7 @@ Para crear el perfil de procesamiento de metadatos, en primer lugar copiará val
 1. Cerca de la esquina superior derecha de la página Editor **[!UICONTROL de Esquemas de]** metadatos, toque **[!UICONTROL Cancelar]**.
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
-1. En la página **[!UICONTROL Metadata Perfiles** , cerca de la esquina superior derecha de la página, toque **[!UICONTROL Create**. In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
+1. En la página Perfiles **[!UICONTROL de]** metadatos, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Crear]**. In the **[!UICONTROL Add Metadata Profile]** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
 1. En la página Editor **[!UICONTROL de Perfiles de]** metadatos, toque la ficha **[!UICONTROL Avanzar]** .
 1. Añada los valores de publicación de YouTube copiados en el perfil haciendo lo siguiente:
 
@@ -676,7 +676,7 @@ Para crear el perfil de procesamiento de metadatos, en primer lugar copiará val
    * En la parte derecha de la página, en la ficha Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Privacy`.
    * Tap the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Single Line Text]** and drop it below the **[!UICONTROL YouTube Privacy]** heading you just created.
    * Tap **[!UICONTROL Field Label]** to select the component.
-   * En la parte derecha de la página, en la ficha **[!UICONTROL Configuración]** , pegue los valores de Publicación **[!UICONTROL de]** YouTube (valor de etiqueta **[!UICONTROL de]** campo y valor de **[!UICONTROL asignación a propiedad]** ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor **[!UICONTROL Choices** en el campo Valor **** predeterminado.
+   * En la parte derecha de la página, en la ficha **[!UICONTROL Configuración]** , pegue los valores de Publicación **[!UICONTROL de]** YouTube (valor de etiqueta **[!UICONTROL de]** campo y valor de **[!UICONTROL asignación a propiedad]** ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor **[!UICONTROL Opciones]** en el campo Valor **** predeterminado.
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. Aplique el perfil de metadatos Publicación de YouTube a las carpetas en las que va a cargar los vídeos. Tendrá que establecer tanto el Perfil de metadatos como el Perfil de vídeo.
@@ -758,7 +758,7 @@ Al cargar un nuevo vídeo en una carpeta que tenga aplicada la codificación de 
 
 Para supervisar el progreso (incluida la codificación fallida/publicación en YouTube):
 
-1. Progreso de la codificación de vídeo de Vista en la carpeta de recursos:
+1. Progreso de la codificación de vídeo de vista en la carpeta de recursos:
 
    * En la Vista **[!UICONTROL de]** tarjetas, el progreso de la codificación de vídeo se muestra en el recurso por porcentaje. Si hay un error, esta información también se muestra en el recurso.
 
@@ -772,7 +772,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
 
       ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Progreso de la Vista en los detalles del recurso. Cuando toque un recurso, abra el menú desplegable y seleccione **[!UICONTROL Línea de tiempo]**. Para reducirlo a actividades de flujo de trabajo como la codificación o la publicación en YouTube, seleccione **[!UICONTROL Flujos de trabajo]**.
+1. Progreso de la vista en los detalles del recurso. Cuando toque un recurso, abra el menú desplegable y seleccione **[!UICONTROL Línea de tiempo]**. Para reducirlo a actividades de flujo de trabajo como la codificación o la publicación en YouTube, seleccione **[!UICONTROL Flujos de trabajo]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -844,7 +844,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 1. En AEM, seleccione **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. Seleccione el flujo de trabajo **[!UICONTROL Publicar en YouTube]** y, a continuación, toque **[!UICONTROL Editar]**.
 1. Haga clic con el botón secundario en el paso del flujo de trabajo de carga **[!UICONTROL de]** YouTube y, a continuación, toque **[!UICONTROL Editar]**.
-1. Puntee en la ficha **Argumentos **.
+1. Puntee en la ficha **Argumentos** .
 1. Puede seleccionar o borrar las siguientes casillas de verificación:
 
    * **[!UICONTROL Inicio de publicación]**

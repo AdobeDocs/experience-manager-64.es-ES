@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 10%
@@ -139,7 +139,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
    Por ejemplo, si el ID de registro fuera `87654321|MyCompany`, el nombre del cliente sería `MyCompany`.
 
-1. Cerca de la esquina superior izquierda de la página, toque **[!Cloud Services** UICONTROL, toque el icono de AEM y vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. Cerca de la esquina superior izquierda de la página, toque **[!UICONTROL Cloud]Services** y, a continuación, toque el icono de AEM y vaya a **[!UICONTROL General > CRXDE Lite]**.
 1. Copie toda la ruta de representación de vídeo desde el JCR (repositorio de contenido de Java).
 
    Por ejemplo, la ruta de representación del vídeo puede tener un aspecto similar al siguiente:
@@ -203,6 +203,6 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
 ## Uso de HTTP/2 para distribuir los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.

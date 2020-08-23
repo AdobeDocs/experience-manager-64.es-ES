@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5549'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Con la nueva arquitectura, AEM es responsable de los recursos principales y de l
 
 [Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe activarlas.
 
->[NOTA]
+>[!NOTE]
 >
 >Medios dinámicos: el modo Scene7 es solo para la instancia de AEM Author. Como tal, debe configurar `runmode=dynamicmedia_scene7`la instancia de AEM Author, no la de AEM Publish.
 
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 Si está actualizando AEM Dynamic Media de 6.3 a 6.4 (que ahora incluye la capacidad de cero implementaciones de tiempo de inactividad), debe ejecutar el siguiente comando curl para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` CRXDE Lite.
 
->[NOTA]
+>[!NOTE]
 >
 >Si ejecuta la instancia de AEM en modo de compatibilidad (es decir, tiene la compatibilidad empaquetada instalada), no es necesario ejecutar estos comandos.
 
@@ -146,7 +146,7 @@ Las tareas de configuración y configuración son:
 
 #### Configuración de publicación para Image Server {#publishing-setup-for-image-server}
 
-La configuración de configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Medios dinámicos envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud de envío de una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
+La configuración de configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Medios dinámicos envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud para entregar una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
 
 Para configurar Ajuste de publicación: en Dynamic Media Classic, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor]** de imágenes.
 
@@ -158,7 +158,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 * **[!UICONTROL Valores predeterminados para los campos]** del catálogo: esta configuración se refiere a la resolución y al tipo de miniatura predeterminada de las imágenes.
 * **[!UICONTROL Atributos]** de administración de color: esta configuración determina qué perfiles de color ICC se utilizan.
 * **[!UICONTROL Atributos]** de compatibilidad: Esta configuración permite que los párrafos al inicio y al final de las capas de texto se traten como en la versión 3.6 para lograr compatibilidad con versiones anteriores.
-* **[!UICONTROL Compatibilidad]** con Localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de la compatibilidad con Localizaciones, consulte [Consideraciones al configurar la localización de recursos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Compatibilidad]** con localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de la compatibilidad con Localizaciones, consulte [Consideraciones al configurar la localización de recursos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
 
@@ -166,7 +166,7 @@ Para abrir la página Configuración [!UICONTROL general de] la aplicación, en 
 
 **[!UICONTROL Servidores]** : Al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados para la compañía. Estos servidores se utilizan para construir cadenas URL para el sitio Web y las aplicaciones. Estas llamadas mediante URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga AEM soporte técnico.
 
-**[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: ya sea que reemplacen el original o se conviertan en duplicados. Se cambia el nombre de los recursos de Duplicado por &quot;-1&quot; (por ejemplo, silla.tif se denomina silla-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
+**[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: ya sea que reemplacen el original o se conviertan en duplicados. Se cambia el nombre de los recursos de duplicado por &quot;-1&quot; (por ejemplo, silla.tif se denomina silla-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
 
 * **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión]** de imagen base: esta opción es la regla más estricta para reemplazar. Requiere que la imagen de sustitución se cargue en la misma carpeta que la imagen original y que la imagen de sustitución tenga la misma extensión de nombre de archivo que la imagen original. Si no se cumplen estos requisitos, se crea un duplicado.
 
@@ -195,7 +195,7 @@ Para configurar las propiedades de color predeterminadas para habilitar la corre
 
    Puede establecer las siguientes propiedades de corrección de color:
 
-   * [!UICONTROL Espacio] de color predeterminado CMYK: nombre del perfil de color predeterminado CMYK
+   * [!UICONTROL Espacio] de color predeterminado CMYK: nombre del perfil de color CMYK predeterminado
    * [!UICONTROL Espacio] de color predeterminado de escala de grises: nombre del perfil de color gris predeterminado
    * [!UICONTROL Espacio] de color predeterminado RGB: nombre del perfil de color RGB predeterminado
    * [!UICONTROL Calidad] de representación de conversión de color: especifica la interpretación. Los valores aceptables son `perceptual`, `relative``colometric`, `saturation`y `absolute colometric`. Adobe recommends `relative` as the default.
@@ -206,7 +206,7 @@ Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado R
 
 Al hacerlo, se haría lo siguiente:
 
-* Activa la corrección de color para imágenes RGB y CMYK.
+* Permite la corrección de color para imágenes RGB y CMYK.
 * Las imágenes RGB que no tengan un perfil de color se considerarán como en el espacio de `sRGB` color.
 * Las imágenes CMYK que no tengan un perfil de color se considerarán en el espacio de `WebCoated` color.
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el espacio de `sRGB` color.
@@ -220,7 +220,7 @@ Puede definir qué tipos de recursos deben procesarse con Dynamic Media y person
 * Convertir un Documento de Adobe Photoshop (.PSD) en un recurso de plantilla de letrero para su personalización.
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo PostScript encapsulado de Adobe Photoshop (.EPS).
 
->[NOTA]
+>[!NOTE]
 >
 >Los Perfiles de vídeo y los Perfiles de imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
@@ -310,7 +310,7 @@ En primer lugar, defina la convención de nombre para la forma en que los recurs
 
 Al cargar archivos, Dynamic Media crea automáticamente un conjunto con todos los archivos que coinciden con la convención de nombre definida en los ajustes preestablecidos activos.
 
-**Configuración de la asignación de nombres predeterminada**
+**Configuración de la nomenclatura predeterminada**
 
 Cree una convención de nombre predeterminada que se utilice en cualquier fórmula de ajuste preestablecido de conjunto de lotes. La convención de nombre predeterminada seleccionada en la definición del ajuste preestablecido de conjunto de lotes puede ser todo lo que la compañía necesita para generar conjuntos por lotes. Se crea un ajuste preestablecido de conjunto de lotes para utilizar la convención de nombre predeterminada que defina. Puede crear tantos ajustes preestablecidos de conjunto de lotes como desee con convenciones de nombre personalizadas alternativas necesarias para un conjunto concreto de contenido en casos en los que exista una excepción a la nomenclatura predeterminada definida por la compañía.
 
@@ -600,7 +600,7 @@ Si utiliza Dynamic Media para imágenes y/o vídeos, puede utilizar los filtros 
 
 >[!NOTE]
 >
->Los Filtros se aplican a tipos de MIME y no pueden ser específicos de la ruta.
+>Los filtros se aplican a tipos de MIME y no pueden ser específicos de la ruta.
 
 #### Personalización de filtros de recursos para replicación {#customizing-asset-filters-for-replication}
 
@@ -631,7 +631,7 @@ Si utiliza Dynamic Media para imágenes y/o vídeos, puede utilizar los filtros 
     <tbody> 
     <tr> 
     <td><strong>Carácter que utilizar</strong></td> 
-    <td><strong>filtros de recursos para replicación</strong></td> 
+    <td><strong>Filtros de recursos para replicación</strong></td> 
     </tr> 
     <tr> 
     <td>*</td> 

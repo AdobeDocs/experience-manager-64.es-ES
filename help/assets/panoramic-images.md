@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 4%
@@ -60,7 +60,7 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
    >
    >Solo se admiten las imágenes que alcanzan el tamaño máximo permitido de imagen. Las solicitudes de imágenes que superen el límite de tamaño darán como resultado una respuesta de 403.
 
-1. En el encabezado Atributos de **solicitud]** , haga lo siguiente:
+1. En el encabezado Atributos **[de]** solicitud, haga lo siguiente:
 
    * Establezca **[!UICONTROL el modo]** de confusión de solicitudes en **[!UICONTROL Deshabilitado]**.
    * Establezca **[!UICONTROL el modo]** de bloqueo de solicitudes en **[!UICONTROL Deshabilitado]**.

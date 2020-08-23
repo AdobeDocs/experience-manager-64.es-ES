@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5341'
 ht-degree: 1%
@@ -46,11 +46,11 @@ Desarrolle aplicaciones de Adobe Experience Manager (AEM) que generen páginas H
 
 Consulte los siguientes temas para obtener información sobre la implementación del comportamiento de diseño interactivo:
 
-* [consultas de medios](/help/sites-developing/responsive.md#using-media-queries)
+* [Consultas de medios](/help/sites-developing/responsive.md#using-media-queries)
 * [Cuadrículas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imágenes adaptables](/help/sites-developing/responsive.md#using-adaptive-images)
 
-A medida que diseña, utilice la **!UICONTROL barra de tareas]**para previsualización de las páginas en distintos tamaños de pantalla.
+A medida que diseña, utilice la **[!UICONTROL barra de tareas]** para la previsualización de las páginas en distintos tamaños de pantalla.
 
 ## Antes de desarrollar {#before-you-develop}
 
@@ -70,7 +70,7 @@ La estructura típica de la aplicación AEM admite todas las implementaciones de
 
 ## Uso de consultas de medios {#using-media-queries}
 
-Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. AEM herramientas y características de desarrollo le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
+Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. AEM herramientas y funciones de desarrollo le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
 
 El grupo W3C proporciona la recomendación Consultas [de](https://www.w3.org/TR/css3-mediaqueries/) medios que describe esta función CSS3 y la sintaxis.
 

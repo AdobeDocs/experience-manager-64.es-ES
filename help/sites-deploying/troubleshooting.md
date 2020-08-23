@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 1%
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Esto genera un archivo de volcado de pila (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede continuar ejecutándose después de que se generara el volcado de pila. Normalmente, un archivo de volcado de pila es suficiente para analizar el problema.
 
-### **La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer doble clic en el inicio rápido de AEM{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer doble clic en el inicio rápido de AEM {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 En determinadas situaciones, las pantallas de bienvenida de AEM WCM no se muestran automáticamente aunque el repositorio se esté ejecutando correctamente. Esto puede depender de la configuración del sistema operativo, de la configuración del explorador o de factores similares.
 

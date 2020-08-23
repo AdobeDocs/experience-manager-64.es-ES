@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 96%
@@ -316,7 +316,7 @@ Las proporciones siguientes de una plantilla se pueden editar:
 
 * [Diseño](#editing-a-template-layout-template-author)
 
-   Aquí puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de **[Diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**para la creación de páginas].
+   Aquí puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de **[Diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** para la creación de páginas.
 
 * [Políticas de la página](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    >[!NOTE]
    >
-   >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja el mismo mecanismo de restricción en **[Modo diseño](/help/sites-authoring/default-components-designmode.md)**para las plantillas estáticas.
+   >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja el mismo mecanismo de restricción en **[Modo diseño](/help/sites-authoring/default-components-designmode.md)** para las plantillas estáticas.
 
    ***Propiedades***
 

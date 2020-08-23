@@ -3,9 +3,9 @@ title: Esquemas de metadatos
 description: 'El esquema de metadatos define la presentación de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar el esquema de metadatos y aplicar el esquema de metadatos a los recursos.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 12%
 
 ---
@@ -41,12 +41,12 @@ Para vista de una lista de formularios/plantillas, en [!DNL Experience Manager] 
 |---|---|---|
 | [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
 |  | Los siguientes formularios secundarios heredan las propiedades del formulario [!UICONTROL predeterminado] : |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulario de Esquema para vídeos de Dynamic Media. |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de Esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, image/jpeg, image/png, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de Esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de Esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
-|  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo, application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulario de Esquema para recursos con subtipo pdf. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de Esquema para recursos con tipo MIME &quot;video&quot;, como video/avi, video/mp4, etc. |
-| [!UICONTROL colección] |  | Formulario de Esquema para colecciones. |
-| [!UICONTROL contentfragment] |  | Formulario de Esquema para fragmentos de contenido. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Formulario de esquema para recursos con el tipo MIME &quot;image&quot;, por ejemplo, image/jpeg, image/png, etc. <br> El formulario [!UICONTROL de imagen] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de esquema para los recursos con subtipo [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME &quot;aplicación&quot;, por ejemplo, application/ pdf, application/ zip, etc. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con subtipo pdf. |
+|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos con tipo MIME &quot;video&quot;, como video/avi, video/mp4, etc. |
+| [!UICONTROL colección] |  | Formulario de esquema para colecciones. |
+| [!UICONTROL contentfragment] |  | Formulario de esquema para fragmentos de contenido. |
 | [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
@@ -113,7 +113,7 @@ Para editar las propiedades de un componente de metadatos en el formulario, haga
 
 **Etiqueta** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades del recurso.
 
-**Asignar a propiedad**: Esta propiedad especifica la ruta/nombre relativos al nodo del recurso en el que se guarda en el repositorio de CRX. inicio con `./` porque indica que la ruta está debajo del nodo del recurso.
+**Asignar a propiedad**: Esta propiedad especifica la ruta/nombre relativos al nodo del recurso en el que se guarda en el repositorio de CRX. Inicio con `./` porque indica que la ruta está debajo del nodo del recurso.
 
 Los siguientes son los valores válidos para esta propiedad:
 
@@ -165,7 +165,7 @@ En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTR
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]**, **[!UICONTROL IPTC]** y **[!UICONTROL Extensión IPTC]** de forma predeterminada.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Haga clic en `+` para agregar una nueva ficha a un formulario de esquema. De forma predeterminada, la nueva ficha tiene el nombre `Unnamed-1`. Puede modificar el nombre desde la ficha **[!UICONTROL Configuración]** . Haga clic en `X` para eliminar una ficha.
 
@@ -185,7 +185,7 @@ Para eliminar un formulario, selecciónelo y haga clic en el icono **[!UICONTROL
 >
 >No puede eliminar los formularios de esquema de metadatos predeterminados en AEM Assets.
 
-## Formularios de Esquema para tipos MIME {#schema-forms-for-mime-types}
+## Formularios de esquema para tipos MIME {#schema-forms-for-mime-types}
 
 AEM Assets proporciona formularios predeterminados para varios tipos MIME predeterminados. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
 
@@ -206,7 +206,7 @@ En este caso, cree un nuevo nodo en `/etc/dam/metadataeditor/mimetypemappings` e
 
 AEM Assets asigna los siguientes tipos MIME y formularios de esquema:
 
-| Formulario de Esquema | Tipos MIME |
+| Formulario de esquema | Tipos MIME |
 |---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
@@ -292,6 +292,6 @@ Esta configuración agrega una propiedad `hasValidMetadata` a jcr:content de los
 >
 >Si se agrega un recurso después de la comprobación programada, el recurso no se marca con `hasValidMetadata` hasta la siguiente comprobación programada. Los recursos no aparecen en los resultados de búsqueda intermedios.
 
->[!Csubasta]
+>[!CAUTION]
 >
 >Las comprobaciones de validación de metadatos requieren muchos recursos y pueden afectar al rendimiento del sistema. Programe las comprobaciones en consecuencia. Si la implementación AEM tiene problemas de rendimiento, intente deshabilitar este trabajo.

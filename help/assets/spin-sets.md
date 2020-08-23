@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1838'
 ht-degree: 6%
 
 ---
@@ -63,13 +63,13 @@ Para ayudarle en el uso inicial de los conjuntos de giros, siga este flujo de tr
 
    Puede vista y acceder a los conjuntos creados mediante ajustes preestablecidos de conjunto de lotes de tres formas diferentes. (Los conjuntos creados con ajustes preestablecidos de conjunto de lotes *no aparecen* en la interfaz de usuario).
 
-1. [Conjuntos de giros de Previsualización.](previewing-assets.md)
+1. [Conjuntos de giros de previsualización.](previewing-assets.md)
 
    Seleccione el conjunto de giros y puede previsualización. Girar el conjunto de giros. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
 1. [Publicar conjuntos de giros.](publishing-dynamicmedia-assets.md)
 
-   Al publicar un conjunto de giros, se activa el orden en que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlos para que el giro sea una vista suave de 360 grados.**[!UICONTROL URL]** y cadena **[!UICONTROL de incrustación]** . In addition, you must [publish the viewer preset](managing-viewer-presets.md).
+   Al publicar un conjunto de giros, se activa el orden en que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlos para que el giro sea una vista suave de 360 grados.**[!UICONTROL URL]** y cadena **[!UICONTROL de incrustación]** . Además, debe [publicar el ajuste preestablecido](managing-viewer-presets.md)de visor.
 
 1. [Vincule las direcciones URL a la Aplicación web](linking-urls-to-yourwebapplication.md) o [incruste el visor](embed-code.md)de vídeo o de imágenes.
 
@@ -89,11 +89,11 @@ Puede cargar imágenes para los conjuntos de giros como lo haría con cualquier 
 
 ### Pautas para grabar imágenes de conjuntos de giros {#guidelines-for-shooting-spin-set-images}
 
-A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto de giro de la imagen. However, including many images in the set also increases the amount of time it takes for the images to load. AEM recommends these guidelines for shooting images for use in Spin Sets:
+A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta el tiempo que tardan las imágenes en cargarse. AEM recomienda estas directrices para la toma de imágenes para su uso en conjuntos de giros:
 
-* Como mínimo, utilice entre 8 y 12 imágenes en un conjunto de giros unidimensional y entre 16 y 24 imágenes en un conjunto de giros bidimensional. A minimum of 8 images is necessary to be able to turn 360 degrees. One-dimensional Spin Sets are more common as creating two-dimensional Spin Sets is labor intensive.
-* Use a lossless format; TIFF and PNG are recommended.
-* Mask all images so the item appears on a pure white or other high-contrast background. Optionally, add shadows.
+* Como mínimo, utilice entre 8 y 12 imágenes en un conjunto de giros unidimensional y entre 16 y 24 imágenes en un conjunto de giros bidimensional. Se necesita un mínimo de 8 imágenes para poder girar 360 grados. Los conjuntos de giros unidimensionales son más comunes ya que la creación de conjuntos de giros bidimensionales requiere mucho trabajo.
+* Utilizar un formato sin pérdida; Se recomiendan TIFF y PNG.
+* Enmascara todas las imágenes para que el elemento aparezca sobre un fondo blanco puro u otro de alto contraste. De forma opcional, agregue sombras.
 * Asegúrese de que los detalles del producto están bien iluminados y enfocados.
 * Tome imágenes de giro para ropa de moda con un maniquí o modelo. A menudo, el maniquí está completamente enmascarado (con un maniquí de vidrio) o se muestra en la imagen un maniquí o una forma de vestir estilizada. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para guiar al modelo hacia el paso y mirar en la dirección de cada toma.
 
@@ -110,24 +110,24 @@ Los conjuntos de lotes son creados por IPS (Image Production System) como parte 
 
 **Para crear conjuntos de giros:**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set**. También puede crear el conjunto desde una carpeta que contenga los recursos.
+1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. También puede crear el conjunto desde una carpeta que contenga los recursos.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
 1. En la página Editor **[!UICONTROL de conjuntos de]** giros, en el campo **[!UICONTROL Título]** , introduzca un nombre para el conjunto de giros. El nombre aparece en la pancarta del conjunto de giros. De forma opcional, introduzca una descripción.
 
-   ![chlimage_1-302](assets/chlimage_1-382.png)
+   ![chlimage_1-382](assets/chlimage_1-382.png)
 
    Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, toque **[!UICONTROL Cambiar miniatura]**. Seleccione cualquier imagen (puede desplazarse a otras carpetas para buscar imágenes también). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. Realice una de las siguientes acciones:
 
    * Cerca de la esquina superior izquierda de la página Editor **[!UICONTROL de conjuntos de]** giros, toque **[!UICONTROL Añadir recurso]**.
-   * Near the middle of the **[!UICONTROL Spin Set Editor]** page, tap **[!UICONTROL Tap to open Asset Selector]**.
+   * Cerca del centro de la página Editor **[!UICONTROL de conjuntos de]** giros, toque **[!UICONTROL Tocar para abrir el Selector]** de recursos.
 
-   Tap to select assets that you want to include in your Spin Set. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   Toque para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. To change the view, near the upper-right corner of the page, tap the **[!UICONTROL View]** icon then tap **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, toque el icono de **[!UICONTROL Vista]** situado junto a la esquina superior derecha de la página y, a continuación, toque la Vista **[!UICONTROL de]** columna, la Vista **[!UICONTROL de]** tarjeta o la Vista **[!UICONTROL de]** Lista.
 
    See [Working with Selectors](working-with-selectors.md).
 
@@ -152,7 +152,7 @@ También puede realizar vistas de conjuntos mediante la interfaz de usuario, tal
 
 **Para vista de conjuntos de giros:**
 
-1. Al abrir las propiedades de un recurso individual. Properties indicate what sets the selected asset is a member of (under **[!UICONTROL Member of Sets]**). Toque el nombre del conjunto para ver el conjunto completo.
+1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de los que es miembro el recurso seleccionado (en **[!UICONTROL Miembro de conjuntos]**). Toque el nombre del conjunto para ver el conjunto completo.
 
    ![chlimage_1-384](assets/chlimage_1-384.png)
 
@@ -181,13 +181,13 @@ Puede realizar varias tareas de edición en los conjuntos de giros, como las sig
 1. Realice una de las siguientes acciones:
 
    * Pase el ratón sobre un recurso de conjunto de giros y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz).
-   * Hover over a Spin Set asset, tap **[!UICONTROL Select]** (checkmark icon), then tap **[!UICONTROL Edit]** on the toolbar.
+   * Pase el ratón sobre un recurso de conjunto de giros, toque **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, a continuación, toque **[!UICONTROL Editar]** en la barra de herramientas.
    * Puntee en un recurso de conjunto de giros y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
 
 1. Para editar el conjunto de giros, realice una de las siguientes acciones:
 
    * Para reordenar imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
-   * To sort items in ascending or descending order, tap the column heading.
+   * Para ordenar los elementos en orden ascendente o descendente, toque el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, toque **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
 Si elimina la imagen que AEM utiliza para la miniatura reemplazándola por otra imagen, el recurso original seguirá mostrándose.
    * Para eliminar un recurso, selecciónelo y toque **[!UICONTROL Eliminar recurso]**.

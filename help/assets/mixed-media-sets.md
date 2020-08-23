@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ Los conjuntos de medios mixtos le permiten proporcionar una combinación de imá
 
 Los conjuntos de medios mixtos se designan mediante un banner con la palabra **[!UICONTROL MixedMediaSet]**. Además, si se publica el conjunto de medios mixtos, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto a la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-347](assets/chlimage_1-348.png)
+![chlimage_1-348](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Para ayudarle en el uso inicial de los conjuntos de medios mixtos, siga estos pa
 
    Consulte [Añadir y editar ajustes preestablecidos de visor.](managing-viewer-presets.md)
 
-1. [Conjuntos de medios mixtos de Previsualización.](#previewing-mixed-media-sets)
+1. [Conjuntos de medios mixtos de previsualización.](#previewing-mixed-media-sets)
 
    Seleccione el conjunto de medios mixtos y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de medios mixtos en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
@@ -90,7 +90,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 1. En Assets, desplácese hasta donde desee crear un conjunto de medios mixtos, haga clic en **Crear** y seleccione **[!UICONTROL Conjunto de medios mixtos]**. También puede crear el conjunto desde una carpeta que contenga los recursos.
 
-   ![chlimage_1-347](assets/chlimage_1-349.png)
+   ![chlimage_1-349](assets/chlimage_1-349.png)
 
 1. En la página Editor **[!UICONTROL de conjuntos de medios]** mixtos, en **[!UICONTROL Título]**, introduzca un nombre para el conjunto de medios mixtos. El nombre aparece en la pancarta del conjunto de medios mixtos. De forma opcional, introduzca una descripción.
 
@@ -153,7 +153,7 @@ Puede realizar varias tareas de edición de recursos en conjuntos de medios mixt
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. Toque **[!UICONTROL Guardar** cuando haya terminado de editar.
+1. Toque **[!UICONTROL Guardar]** cuando haya terminado de editar.
 
    >[!NOTE]
    >

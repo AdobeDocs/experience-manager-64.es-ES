@@ -3,9 +3,9 @@ title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4206'
 ht-degree: 3%
 
 ---
@@ -303,11 +303,10 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 >[!NOTE]
 Al utilizar RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar las hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto de CSS se pierde en el editor, por lo que puede que desee emular este contexto para mejorar la experiencia WYSIWYG.
 El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID del `CQrte` cual se pueden utilizar para proporcionar diferentes estilos de visualización y edición:
-# CQ td {
-// define el estilo de visualización }
-# CQrte td {
-// define el estilo para la edición }
-
+`#CQ td {`
+` // defines the style for viewing }`
+`#CQrte td {`
+` // defines the style for editing }`
 
 ### Especifique los estilos disponibles en la lista emergente {#stylesindropdown}
 
@@ -471,7 +470,7 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
    * **Nombre** puede especificar el nombre, pero debe reflejar el rango de caracteres; por ejemplo, lápices.
    * **Tipo** `nt:unstructured`
 
-1. En este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
+1. Bajo este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
 
@@ -485,7 +484,7 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
 
 1. Guarde los cambios.
 
-   Por ejemplo, si define un intervalo de 9998 a 10000, se proporcionan los siguientes caracteres.
+   Por ejemplo, si define un intervalo de 9998 a 10000, obtendrá los siguientes caracteres.
 
    ![En CRXDE, defina un rango de caracteres para que estén disponibles en RTE](assets/chlimage_1-413.png)
 
@@ -741,7 +740,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
          * **Nombre** `targetInternal`
          * **Tipo** `String`
          * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el &quot;modo es `auto`)
-      * destinatario para vínculos externos:
+      * Destinatario para vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`

@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Consulte también [Integración de AEM 3D con AutoDesk 3ds Max](integrating-aem-
 
 1. Añada la ruta a la carpeta ejecutable Maya en la variable de entorno de Windows PATH.
 
-   Por ejemplo, en Windows Server 2012, toque **[!UICONTROL Inicio > Panel de control de Campaign > Sistema y seguridad > Sistema > Configuración avanzada del sistema > Variables** de Entorno. Anexe la ruta completa a la `Maya2016\bin` carpeta a la variable `Path`del sistema.
+   Por ejemplo, en Windows Server 2012, toque **[!UICONTROL Inicio]>[!UICONTROL Panel de control de Campaign]>[!UICONTROL Sistema y seguridad]>[!UICONTROL Sistema]> Configuración** avanzada del sistema > Variables de Entorno. Anexe la ruta completa a la `Maya2016\bin` carpeta a la variable `Path`del sistema.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -79,7 +79,7 @@ Consulte también [Integración de AEM 3D con AutoDesk 3ds Max](integrating-aem-
 
    Tenga en cuenta que `sample-3D-content.zip` se ha descargado anteriormente para validar la funcionalidad 3D básica.
 
-1. Vuelva a la vista **[!UICONTROL Card** y observe los letreros de mensaje que se muestran en los recursos cargados.
+1. Vuelva a la vista **[!UICONTROL Tarjeta]** y observe los letreros de mensaje que se muestran en los recursos cargados.
 
    La pancarta Formato de conversión se muestra mientras Maya está convirtiendo el `.MA` formato nativo a `.FBX`.
 

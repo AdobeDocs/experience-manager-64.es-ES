@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '6146'
 ht-degree: 2%
@@ -114,7 +114,7 @@ Puede eliminar una configuración de tipo de archivo que ya no se utilice.
 
 Las siguientes opciones determinan cómo se convierten los archivos de imagen a PDF. Para obtener instrucciones sobre cómo acceder a esta configuración, consulte [Crear o editar la configuración](configuring-file-type-settings.md#create-or-edit-file-type-settings)del tipo de archivo.
 
-**Extensiones de nombre de archivo:** lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
+**Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
 **Probar convertidor de reserva:** PDF Generator puede utilizar Java™ o Acrobat para convertir archivos de imagen a PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
@@ -136,7 +136,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen a 
 
 **ClearScan:** Sintetiza una nueva fuente Type 3 que se aproxima al original y conserva el fondo de la página mediante una copia de baja resolución.
 
-**Disminuir resolución de imágenes:** Reduce el número de píxeles en imágenes en color, escala de grises y monocromo una vez que se ha completado el OCR. Elija el grado de disminución de resolución que desee aplicar. Las opciones con mayor número reducen la resolución, lo que produce archivos PDF de mayor resolución.
+**Disminuir resolución de imágenes:** Reduce el número de píxeles en imágenes en color, escala de grises y monocromas una vez que se ha completado el OCR. Elija el grado de disminución de resolución que desee aplicar. Las opciones con mayor número reducen la resolución, lo que produce archivos PDF de mayor resolución.
 
 ## Configuración de exportación de Adobe PDF (solo Windows) {#adobe-pdf-export-settings-windows-only}
 
@@ -182,7 +182,7 @@ Active estas opciones para especificar cómo se convierten las páginas HTML. En
 
 **Definir configuración de Vista inicial:** Permite configurar las opciones de Documento, las opciones de ventana y las opciones de interfaz de usuario. Esta configuración determina cómo se muestra inicialmente el contenido.
 
-### Opciones de Documento {#document-options}
+### Opciones de documento {#document-options}
 
 Habilite estas opciones para especificar cómo mostrar contenido, cómo mostrar páginas en el documento PDF y cómo especificar el nivel de ampliación:
 
@@ -220,7 +220,7 @@ Active estas opciones para especificar el aspecto de la ventana:
 
 PDF Generator admite la capacidad de enviar un vídeo para Adobe Flash (archivo SWF o FLV) y crear un archivo PDF con un vídeo para Adobe Flash incrustado en él. Esta conversión no requiere que el Flash Player de Adobe esté instalado en el servidor de formularios. Para obtener instrucciones sobre cómo acceder a esta opción, consulte [Creación o edición de ajustes](configuring-file-type-settings.md#create-or-edit-file-type-settings)de tipo de archivo.
 
-**Extensiones de nombre de archivo:** lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
+**Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
 ## Configuración de XPS a PDF {#xps-to-pdf-settings}
 
@@ -238,7 +238,7 @@ PDF Generator permite reducir el tamaño de los archivos PDF. Tanto si utiliza t
 
 Para obtener instrucciones sobre cómo acceder a esta configuración, consulte [Creación o edición de la configuración](configuring-file-type-settings.md#create-or-edit-file-type-settings)del tipo de archivo.
 
-**Versión de Destinatario PDF:** Especifica la versión de Acrobat con la que es compatible el PDF.
+**Versión de destinatario PDF:** Especifica la versión de Acrobat con la que es compatible el PDF.
 
 ### Fuentes {#fonts}
 
@@ -301,7 +301,11 @@ Seleccione **Transparencia** para definir la configuración de transparencia y o
 
 **Convertir todos los trazos en contornos** Convierte todos los trazos en trazados rellenos simples en páginas con transparencia. Esta opción garantiza que la anchura de los trazos sea la misma durante el acoplamiento. Tenga en cuenta que, al habilitar esta opción, los trazos finos aparecen ligeramente más gruesos y pueden degradar el rendimiento de acoplamiento.
 
-**Recortar regiones** complejas Garantiza que los límites entre las ilustraciones vectoriales y las rasterizadas se sitúen a lo largo de los trazados de objetos. Esta opción reduce los artefactos de costura que resultan cuando parte de un registro] &quot;>
+**Recortar regiones** complejas Garantiza que los límites entre las ilustraciones vectoriales y las rasterizadas se sitúen a lo largo de los trazados de objetos. Esta opción reduce los artefactos de unión que se producen cuando parte de un registro
+
+<!--
+NOTE to WRITER - The above sentence is incomplete.
+-->
 
 >[!NOTE]
 >
@@ -600,7 +604,7 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 * HTML
 * XML
 
-**PDF** con etiquetas: Permite la creación de archivos PDF con etiquetas desde documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede ayudar a mostrar el documento en dispositivos con diferentes pantallas y al utilizar software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento PDF, como leer en voz alta el contenido del documento PDF.
+**PDF** con etiquetas: Permite la creación de archivos PDF con etiquetas desde documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede ayudar a mostrar el documento en dispositivos con pantallas diferentes y al utilizar software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento PDF, como leer en voz alta el contenido del documento PDF.
 
 **Notas** de exportación: Convierte las notas de los documentos de OpenOffice en notas del documento PDF generado.
 

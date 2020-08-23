@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,7 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 Almacena información sobre el entorno del cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
 
-### Ubicación de origen {#source-location-surferinfo
+### Ubicación de origen {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 

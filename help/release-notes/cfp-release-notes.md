@@ -4,9 +4,9 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2158'
 ht-degree: 21%
 
 ---
@@ -124,8 +124,8 @@ Adobe Experience Manager 6.4.8.1 proporciona correcciones a los siguientes probl
 * Forms adaptable: Analytics habilitado en un formulario adaptable incrustado en una [!DNL Sites] página no registra datos para eventos de envío y abandono (NPR-31359).
 * Forms adaptable: Cuando un usuario pega el contenido de un [!DNL Word] documento en un formulario adaptable y lo envía, el formulario adaptable enviado incluye caracteres Unicode. Además, la conversión de PDF a PDF/A falla debido a caracteres Unicode (NPR-33348).
 * BackendIntegration: Las solicitudes del modelo de datos de formulario fallan al caducar el token de actualización debido a un estado inactivo incorrecto (NPR-33168).
-* Servicios de Documento: El servicio de conversión de PDF no puede convertir documentos PDF a PostScript debido a que faltan tarros Gibson para [!DNL WebLogic] el servidor [!DNL Linux] (NPR-33515, CQ-4292239).
-* Servicios de Documento: Cuando un usuario convierte un archivo de texto a un PDF, los caracteres japoneses no se representan correctamente (NPR-33239).
+* Servicios de documento: El servicio de conversión de PDF no puede convertir documentos PDF a PostScript debido a que faltan tarros Gibson para [!DNL WebLogic] el servidor [!DNL Linux] (NPR-33515, CQ-4292239).
+* Servicios de documento: Cuando un usuario convierte un archivo de texto a un PDF, los caracteres japoneses no se representan correctamente (NPR-33239).
 * XSS almacenado con GuideSOMProviderServlet (NPR-32701).
 
 
@@ -192,7 +192,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 
 Para determinar la plataforma certificada para la ejecución con esta versión de AEM Sites y Assets, consulte Requisitos [técnicos](../sites-deploying/technical-requirements.md).
 
->[!Note]
+>[!NOTE]
 >On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### Actualización de visores de Dynamic Media (5.10.1) {#update-dynamic-media-viewers}

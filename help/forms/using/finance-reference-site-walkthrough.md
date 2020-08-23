@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Configure los sitios de referencia tal como se describe en [Configurar y configu
 
 ## Escenarios del sitio de referencia de We.Finance {#we-finance-reference-site-scenarios}
 
-We.Finance es una organización líder en el ámbito de los servicios financieros que oferta soluciones financieras completas y personalizadas para satisfacer los requerimientos de diversos perfiles de clientes. oferta tarjetas de crédito, hipotecas y servicios de seguros de vivienda.
+We.Finance es una organización líder en el ámbito de los servicios financieros que oferta soluciones financieras completas y personalizadas para satisfacer los requerimientos de diversos perfiles de clientes. Oferta tarjetas de crédito, hipotecas y servicios de seguros de vivienda.
 
 Su objetivo es llegar a los clientes actuales y futuros en su dispositivo preferido, explicar los beneficios de sus servicios y ayudarles a inscribirse en sus servicios. Además, buscan presentar más productos financieros como tarjetas complementarias que los clientes pueden encontrar interesantes.
 
@@ -196,7 +196,7 @@ La aplicación de tarjeta complementaria es un formulario adaptable integrado en
 
 #### Véalo usted mismo {#see-it-yourself-3}
 
-Haga clic en el botón **[!UICONTROL Reanudar]** del correo electrónico recibido en el paso anterior. Abre la aplicación de borrador. Rellene todos los detalles y envíe la solicitud. Recibirá un kit de bienvenida. Revise el kit de bienvenida.
+Haga clic en el botón **[!UICONTROL Reanudar]** del correo electrónico recibido en el paso anterior. Abre el borrador de la aplicación. Rellene todos los detalles y envíe la solicitud. Recibirá un kit de bienvenida. Revise el kit de bienvenida.
 
 También puede realizar la vista del kit de bienvenida en la siguiente URL:
 
@@ -214,7 +214,7 @@ Sarah hace clic en Declaración de Vista en el correo electrónico para vista de
 
 * Resumen de la declaración
 * Informe de gastos detallado
-* análisis de gastos gráficos
+* Análisis de gastos gráficos
 * Opción de realizar un pago por la cantidad adeudada desde el estado de cuenta
 * Descargar el recibo de pago
 
@@ -446,7 +446,7 @@ Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de 
 
 ### Sarah recibe el kit de bienvenida {#sarah-receives-the-welcome-kit}
 
-A medida que se aprueba la solicitud de hipoteca de Sarah, recibe un correo electrónico con un enlace al kit de bienvenida. Abre el kit de bienvenida, que incluye un carrusel con ofertas promocionales personalizadas para Sarah.
+A medida que se aprueba la solicitud hipotecaria de Sarah, recibe un correo electrónico con un enlace al kit de bienvenida. Abre el kit de bienvenida, que incluye un carrusel con ofertas promocionales personalizadas para Sarah.
 
 ![hipoteca-bienvenido-kit](assets/mortgage-welcome-kit.png)
 
@@ -489,7 +489,7 @@ La declaración de hipoteca es una comunicación interactiva. Se genera mediante
 
 #### Véalo usted mismo {#see-it-yourself-9}
 
-Puede revisar el estado de cuenta de hipoteca interactiva en la siguiente URL:
+Puede revisar el estado de cuenta de hipoteca interactiva en la siguiente dirección URL:
 
 https://&lt;*hostname*>:&lt;*port*>/content/forms/af/we-finance/mortgage-account-statement.html?wcmmode=disabled
 
@@ -509,7 +509,7 @@ Las métricas de rendimiento del formulario de solicitud de hipoteca se rastrean
 
 #### Véalo usted mismo {#see-it-yourself-br-1}
 
-Para que pueda realizar la vista y explorar el informe de análisis, proporcionamos los datos iniciales de la aplicación de hipoteca en el sitio de referencia. Antes de usar datos de raíz, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para vista del informe con los datos de inicialización:
+Para que pueda realizar la vista y explorar el informe de análisis, proporcionamos los datos de inicialización de la aplicación de hipoteca en el sitio de referencia. Antes de usar datos de raíz, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para vista del informe con los datos de inicialización:
 
 1. Vaya a la interfaz de usuario de **Forms y Documentos** en https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
@@ -522,7 +522,7 @@ Para generar un informe de análisis con datos de inicialización:
 
 1. En el navegador de direcciones de la lista CRXDE, escriba lo siguiente: `/apps/we-finance/demo-artifacts/analyticsTestData/HomeMortgageAnalyticsTestData`
 1. Los datos de prueba se seleccionan en la estructura del directorio del lado izquierdo.
-1. Haga clic con el botón Doble en el archivo seleccionado para abrir su contenido en el panel de la derecha.
+1. Haga clic con el botón doble en el archivo seleccionado para abrir su contenido en el panel de la derecha.
 1. Copie todo el contenido del archivo de datos raíz.
 1. En CRXDE, vaya a: `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
 1. En el campo analyticsdata de Propiedades, pegue el contenido copiado del archivo de datos raíz.
@@ -782,7 +782,7 @@ El escenario de Administración de riqueza de We.Finance incluye la siguiente pe
 
 * Sarah Rose, una cliente de We.Finance
 
-El tutorial sobre la gestión de la riqueza demuestra cómo un cliente de We.Finance puede usar el sitio para aprender sobre un fondo mutuo, el Blue Chip Growth Fund. El sitio de referencia utiliza una comunicación interactiva para mostrar información sobre el fondo. La información está disponible en formatos web y PDF. El tutorial termina con un cliente que envía la versión PDF de la información a su hermano.
+El tutorial sobre la gestión de la riqueza demuestra cómo un cliente de We.Finance puede usar el sitio para aprender sobre un fondo mutuo, el Blue Chip Growth Fund. El sitio de referencia utiliza una comunicación interactiva para mostrar información sobre el fondo. La información está disponible en formatos web y PDF. El tutorial termina con un cliente enviando la versión PDF de la información a su hermano.
 
 La siguiente imagen muestra el flujo de trabajo del tutorial de gestión de riqueza:
 
@@ -845,7 +845,7 @@ El escenario de la aplicación de seguros automáticos We.Finance incluye la sig
 * Sarah Rose, una cliente de We.Finance
 * Conrad Simms, Agente de Seguros, We.Finance
 
-Sarah Rose es una cliente existente de We.Finance y ha adquirido una póliza de seguro de automóviles. Ahora es el momento del año para la renovación de su póliza de seguro. Conrad Simms, Agente de Seguros, We.Finance envía un recordatorio a Sarah sobre su renovación de pólizas. El correo electrónico del recordatorio contiene un PDF con los detalles de renovación de la directiva y un vínculo a la versión web de la comunicación interactiva. Las comunicaciones interactivas tienen un diseño adaptable y móvil. Puede abrir la comunicación interactiva en cualquier dispositivo y la comunicación interactiva se reorganiza para adaptarse al tamaño de pantalla del dispositivo subyacente. La versión PDF de la comunicación interactiva, adjunta al correo electrónico, resulta útil para la lectura sin conexión.
+Sarah Rose es una cliente existente de We.Finance y ha adquirido una póliza de seguro de automóviles. Ahora es el momento del año para la renovación de su póliza de seguro. Conrad Simms, Agente de Seguros, We.Finance envía un recordatorio a Sarah sobre su renovación de pólizas. El correo electrónico del recordatorio contiene un PDF con los detalles de renovación de la directiva y un vínculo a la versión web de la comunicación interactiva. Las comunicaciones interactivas tienen un diseño adaptable y móvil. Puede abrir la comunicación interactiva en cualquier dispositivo y la comunicación interactiva se reajusta para adaptarse al tamaño de pantalla del dispositivo subyacente. La versión PDF de la comunicación interactiva, adjunta al correo electrónico, resulta útil para la lectura sin conexión.
 
 Sarah sigue las instrucciones proporcionadas en el correo electrónico y renueva el proceso con éxito. La siguiente imagen muestra el flujo de trabajo del tutorial de la aplicación de seguros automáticos:  ![auto-seguro-aplicación-tutorial](assets/auto-insurance-application-walkthrough.png)
 
@@ -871,7 +871,7 @@ El tutorial sobre el seguro de automóviles también contiene otro cliente, Alis
 * La política estándar cuesta menos que la política de primas.
 * La política de primas tiene recompensa antirrobo y la política estándar tiene recompensa por viajes inteligentes
 
-Ambas políticas utilizan la misma comunicación interactiva. Las secciones de la directiva se cambian u ocultan según la condición de tipo de directiva. Puede acceder y revisar la comunicación interactiva de renovación de seguro automático directamente desde https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoseguro/auto-seguro-renovación
+Ambas políticas utilizan la misma comunicación interactiva. Las secciones de la directiva se cambian u ocultan según la condición de tipo de directiva. Puede acceder y revisar la comunicación interactiva de renovación de seguro automático directamente desde `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Uso de Microsoft Dynamics como origen de datos**
 

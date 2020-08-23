@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Al abrir una plantilla para editarla, se pueden ver los siguientes componentes A
 
    * **Alternar panel** lateral: Permite mostrar u ocultar la barra lateral.
    * **Información** de página: Permite especificar información como, por ejemplo, la hora de publicación/cancelación de publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca del lado del cliente de diseño de página.
-   * **Emulador**: Permite simular y personalizar el aspecto de distintos dispositivos.
+   * **Emulador**: Permite simular y personalizar el aspecto de los distintos dispositivos.
    * **Selector de capas:** Permite cambiar la capa.
 
       Puede elegir la capa **Estructura** o Contenido **** inicial. La capa de estructura permite agregar y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
@@ -79,11 +79,11 @@ El selector de capas está disponible junto a la opción de Previsualización en
 
 Al seleccionar la capa de estructura en el Editor de plantillas, se pueden ver los contenedores de diseño encima y debajo del Contenedor Formulario adaptable. Los autores pueden utilizar estos contenedores de diseño para el encabezado y el pie de página. Puede agregar, editar o personalizar el encabezado y el pie de página. Arrastre y suelte el componente Encabezado de formulario adaptable en el contenedor de presentación encima del Contenedor Formulario adaptable para personalizar el encabezado de la plantilla. Arrastre y suelte el componente Pie de página del formulario adaptable en el contenedor de presentación debajo del Contenedor Formulario adaptable para personalizar el pie de página de la plantilla.
 
-![contenedor de diseño en la capa de estructura](assets/header-layer-selector.png)
+![Contenedor de diseño en la capa de estructura](assets/header-layer-selector.png)
 
-**Figura:** *contenedores de diseño en la capa de estructura*
+**Figura:** *Contenedores de diseño en la capa de estructura*
 
-**A.** contenedor de diseño para el componente **B de encabezado.** contenedor de diseño para el componente Pie de página
+**A.** Contenedor de diseño para el componente **B de encabezado.** Contenedor de diseño para el componente Pie de página
 
 Arrastre y suelte el componente Encabezado de formulario adaptable en el contenedor de presentación encima del Contenedor Formulario adaptable. Después de agregar el componente, puede especificar sus propiedades que le permiten agregar un logotipo y proporcionar su título.
 
@@ -109,11 +109,11 @@ Cuando se selecciona la opción Contenido inicial, el Contenedor Formulario adap
 
 Los autores de formularios lo utilizan como base para crear un formulario. La estructura de flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de la Previsualización en la barra de herramientas de la página, toque ![lienzo-desplegable](assets/canvas-drop-down.png)**[!UICONTROL > Contenido ]**inicial.
 
-    [ ![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
+![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
 
 La capa de contenido inicial del Editor de plantillas muestra el Contenedor de formulario adaptable seleccionado para especificar propiedades.
 
-](assets/initial-content-layer-1.png) En la capa Contenido inicial, se crea la plantilla de formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la creación de un formulario; se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, recursos y componentes.
+En la capa Contenido inicial, se crea la plantilla de formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la creación de un formulario; se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, recursos y componentes.
 
 Consulte [Barra lateral](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -141,11 +141,11 @@ Para crear las fichas Información general e Información profesional, agregue d
 
 #### Añadir contenido en fichas {#adding-content-in-tabs}
 
-    [ ![Añadir campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
+![Añadir campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
 
 Añadir campos en la plantilla
 
-](assets/template-edit-initial-content-1.png) Después de agregar paneles y estructurarlos como fichas, puede agregar campos dentro de las fichas. Cuando selecciona una ficha en el editor, puede ver la opción **[!UICONTROL Arrastrar componentes aquí]** . Puede arrastrar y soltar componentes como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el navegador de componentes en la barra lateral.
+Después de agregar paneles y estructurarlos como fichas, puede agregar campos dentro de las fichas. Cuando selecciona una ficha en el editor, puede ver la opción **[!UICONTROL Arrastrar componentes aquí]** . Puede arrastrar y soltar componentes como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el navegador de componentes en la barra lateral.
 
 Cada componente tiene propiedades que mejoran la captura y manipulación de datos. Por ejemplo, puede activar la propiedad **[!UICONTROL Required field]** de un componente. Los autores pueden especificar un mensaje que sus clientes verán cuando omitan rellenar un campo obligatorio. Especifique el mensaje en la propiedad Mensaje **[!UICONTROL de campo]** requerido.
 
@@ -187,7 +187,7 @@ Siga estos pasos para mostrar y ocultar plantillas:
 1. Localice y abra la configuración **[!UICONTROL de]** FormsManager:
 
    * Para mostrar u ocultar la plantilla de formularios adaptables, marque o desmarque la opción **Incluir fuera de la casilla Plantillas** AF y AD.
-   * Para mostrar u ocultar las plantillas de formulario adaptables que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 de Forms pero que ahora están en desuso, active o desactive la opción **Incluir plantillas** AF AEM 6.0. Si esta opción está activada, para que surta efecto, requiere que se habilite la configuración **[!UICONTROL Incluir fuera de la casilla Plantillas]** AF y AD.
+   * Para mostrar u ocultar las plantillas de formulario adaptables que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 de Forms, pero que ahora están en desuso, active o desactive la opción **Incluir plantillas** AF AEM 6.0. Si esta opción está activada, para que surta efecto, requiere que se habilite la configuración **[!UICONTROL Incluir fuera de la casilla Plantillas]** AF y AD.
 
 1. Haga clic en **[!UICONTROL Guardar.]** Se cambian las opciones de visualización de las plantillas listas para usar.
 

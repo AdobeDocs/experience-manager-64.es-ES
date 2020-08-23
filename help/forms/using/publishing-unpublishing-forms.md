@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ El servidor de AEM Forms proporciona dos instancias: Autor y publicación. La in
 AEM Forms admite los siguientes tipos de recursos:
 
 * Formularios adaptables
-* documentos adaptables
+* Documentos adaptables
 * Fragmentos de formulario adaptables
 * Temas
 * Plantillas de formulario (formularios XFA)
@@ -145,7 +145,7 @@ Siga estos pasos para programar la fecha y hora de publicación y cancelación d
    1. Mueva el puntero sobre un recurso y toque **[!UICONTROL Cancelar publicación]** para ![cancelar la publicación](assets/unpublish.png).
    1. Siga uno de estos procedimientos y toque Cancelar publicación:
 
-      * Si está en la vista de tarjeta, toque **[!UICONTROL Entrar selección** ![aem6formularios_verificación-círculo](assets/aem6forms_check-circle.png)y toque el recurso. El recurso está seleccionado.
+      * Si está en la vista de tarjeta, toque **[!UICONTROL Intro selección]** ![aem6formularios_verificación-círculo](assets/aem6forms_check-circle.png)y toque el recurso. El recurso está seleccionado.
       * Si se encuentra en la vista de lista, pase el ratón sobre un recurso y toque ![selectassetmark](assets/selectassetcheckmark.png) . El recurso está seleccionado.
       * Toque un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso tocando Propiedades de la Vista ![Ver propiedades](assets/viewproperties.png).

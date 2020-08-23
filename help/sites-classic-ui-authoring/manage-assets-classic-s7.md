@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 31%
 
 ---
@@ -109,7 +109,7 @@ Para ello, configure la configuración de la nube para la página en la que apar
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. Haga clic en **[!Cloud Services UICONTROL > Añadir servicios > Dynamic Media Classic (Scene7)**.
+1. Haga clic en **[!UICONTROL Cloud Services]>[!UICONTROL Añadir servicios]>[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. En la lista desplegable Adobe Dynamic Media Classic, seleccione la configuración que desee y haga clic en **[!UICONTROL Aceptar]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -240,7 +240,7 @@ El componente de imagen de Dynamic Media Classic le permite añadir la funcional
 
 **[!UICONTROL Formato]** de salida: seleccione el formato de salida de la imagen, por ejemplo jpeg. En función del formato de salida que seleccione, puede tener opciones de configuración adicionales. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Enfoque]** : seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en Calidad de imagen de Dynamic Media Classic de [*Adobe y en Optimizaciones *](/help/assets/assets/s7_sharpening_images.pdf)de enfoque.
+**[!UICONTROL Enfoque]** : seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en Calidad de imagen de Dynamic Media Classic de [*Adobe y en Optimizaciones*](/help/assets/assets/s7_sharpening_images.pdf) de enfoque.
 
 **[!UICONTROL Modificadores]** de URL: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales de Dynamic Media Classic. These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 

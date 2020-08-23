@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 54%
 
 ---
@@ -31,7 +31,7 @@ Actualmente, AEM 3D solo admite archivos TIFF de 32 bits. Si es necesario, utili
 * **[!UICONTROL Profundidad]** de bits: 32 bits (flotante)
 * **[!UICONTROL Orden]** de píxeles: intercalado (RGBRGB)
 * **[!UICONTROL Compresión]** de imágenes - LZW
-* **[!UICONTROL Byte Order** - IBM PC
+* **[!UICONTROL Byte Order]** - IBM PC
 
 Si bien una sola imagen HDR suele ser suficiente para los escenarios de IBL, AEM 3D proporciona un control adicional sobre los efectos de IBL y permite hasta tres imágenes independientes:
 
@@ -77,7 +77,7 @@ Puede ajustar el aspecto del escenario de IBL con las siguientes propiedades de 
  </tbody> 
 </table>
 
-## Aumento del diámetro de fondo esférico de una etapa de IBL {#increasing-the-spherical-background-diameter-of-an-ibl-stage}
+## Aumento del diámetro de fondo esférico de una fase IBL {#increasing-the-spherical-background-diameter-of-an-ibl-stage}
 
 Las etapas de IBL utilizan imágenes de fondo esférico de 20 metros de diámetro de forma predeterminada. Estas etapas funcionan bien para objetos de hasta 10 metros. Sin embargo, si muestra objetos más grandes, puede aumentar el diámetro de fondo esférico de una etapa de IBL.
 

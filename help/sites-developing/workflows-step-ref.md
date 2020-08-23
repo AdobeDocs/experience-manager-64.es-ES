@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2831'
 ht-degree: 2%
 
 ---
@@ -108,11 +108,11 @@ La división **[!UICONTROL Y]** crea una división en el flujo de trabajo, tras 
 
 Un paso de **[!UICONTROL Contenedor]** inicio otro modelo de flujo de trabajo que se ejecuta como flujo de trabajo secundario.
 
-Este **[!UICONTROL Contenedor]]**le permite reutilizar modelos de flujo de trabajo para implementar secuencias comunes de pasos. Por ejemplo, un modelo de flujo de trabajo de traducción podría utilizarse en varios flujos de trabajo de edición.
+Este **[!UICONTROL Contenedor]** le permite reutilizar modelos de flujo de trabajo para implementar secuencias comunes de pasos. Por ejemplo, un modelo de flujo de trabajo de traducción podría utilizarse en varios flujos de trabajo de edición.
 
 ![wf-28](assets/wf-28.png)
 
-### Paso de Contenedor: Configuración {#container-step-configuration}
+### Paso de contenedor: Configuración {#container-step-configuration}
 
 Para configurar el paso, edite y utilice las fichas siguientes:
 
@@ -138,7 +138,7 @@ Para configurar el paso, edite y utilice las fichas siguientes:
 * [**[!UICONTROL Común]**](#step-properties-common-tab)
 * **[!UICONTROL Proceso]**
 
-   * **[!UICONTROL El paso a seguir]]**: Seleccione el paso que desea ejecutar.
+   * **[!UICONTROL Paso a seguir]**: Seleccione el paso que desea ejecutar.
    * **[!UICONTROL Ruta]** de script: Ruta de acceso al ECMAScript que determina si se ejecuta el paso **[!UICONTROL Goto]**.
    * **[!UICONTROL Secuencia de comandos]**: El ECMAScript que determina si se ejecuta el paso **[!UICONTROL Ir]**.
 
@@ -268,7 +268,7 @@ Para configurar el paso, edite y utilice las fichas siguientes:
 * [**[!UICONTROL Usuario/grupo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Cuadro de diálogo]**
 
-   * **[!Ruta** del cuadro de diálogo UICONTROL: Ruta al nodo de cuadro de diálogo del [cuadro de diálogo que cree](#dialog-participant-step-creating-a-dialog).
+   * **Ruta[!UICONTROL del cuadro de diálogo**]: Ruta al nodo de cuadro de diálogo del [cuadro de diálogo que cree](#dialog-participant-step-creating-a-dialog).
 
 #### Paso de participante en el cuadro de diálogo - Creación de un cuadro de diálogo{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Para configurar el paso, edite y utilice las fichas siguientes:
 
 #### Etapa de participante dinámica: desarrollo del selector de participantes {#dynamic-participant-step-developing-the-participant-chooser}
 
-Puede crear el selector de participantes. Por lo tanto, puede utilizar cualquier lógica o criterio de selección. Por ejemplo, el selector de participantes puede seleccionar el usuario (dentro de un grupo) que tenga la menor cantidad de elementos de trabajo. Puede crear cualquier número de usuarios que desee utilizar con distintas instancias del componente Etapa **de participante *dinámica]*en los modelos de flujo de trabajo.
+Puede crear el selector de participantes. Por lo tanto, puede utilizar cualquier lógica o criterio de selección. Por ejemplo, el selector de participantes puede seleccionar el usuario (dentro de un grupo) que tenga la menor cantidad de elementos de trabajo. Puede crear cualquier número de usuarios que desee utilizar con distintas instancias del componente Etapa **de participante** dinámica en los modelos de flujo de trabajo.
 
 Cree un servicio OSGi o un ECMAScript que seleccione un usuario al que asignar el elemento de trabajo.
 
@@ -514,7 +514,7 @@ Para configurar el paso, edite y utilice las fichas siguientes:
 * [**[!UICONTROL Usuario/grupo]**](#step-properties-user-group-tab)
 * **[!UICONTROL Formulario]**
 
-   * **Ruta** del formulario [!UICONTROL: Ruta al [formulario que se crea](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Ruta]** del formulario: Ruta al [formulario que se crea](#form-participant-step-creating-the-form).
 
 #### Paso del participante en el formulario: Creación del formulario {#form-participant-step-creating-the-form}
 

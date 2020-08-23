@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ El modelo de página aprovecha el exportador de modelos JSON, que se basa en la 
 * `:hierarchyType`:: Tipo jerárquico de un recurso. Actualmente `PageModelManager` admite el tipo de página
 
 * `:items`:: Recursos de contenido secundario del recurso actual (estructura anidada, solo presentes en contenedores)
-* `:itemsOrder`:: lista ordenada de los niños. El objeto de mapa JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
+* `:itemsOrder`:: Lista ordenada de los niños. El objeto de mapa JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
 * `:path`:: Ruta de contenido de un elemento (presente en elementos que representan una página)
 
 Consulte también [Introducción a los servicios de contenido de AEM.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
@@ -278,7 +278,7 @@ El siguiente fragmento ilustra la representación HTML típica de una estructura
 
 La aplicación posee el enrutamiento. El desarrollador front-end primero debe implementar un componente de navegación (asignado a un componente de navegación AEM). Este componente procesaría los vínculos de URL que se usarían junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
 
-La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca subyacente y su módulo `[`ModelRouter`](/help/sites-developing/spa-routing.md) (activado de forma predeterminada) son responsables de la recuperación previa y el acceso al modelo asociado con una ruta de recursos determinada.
+La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca subyacente y su [`ModelRouter`](/help/sites-developing/spa-routing.md) módulo (activado de forma predeterminada) son responsables de la recuperación previa y del acceso al modelo asociado a una ruta de recursos determinada.
 
 Las dos entidades están relacionadas con la noción de enrutamiento, pero el [`ModelRouter`](/help/sites-developing/spa-routing.md) solo es responsable de que [`PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) se cargue con un modelo de datos estructurado en sincronización con el estado de la aplicación actual.
 

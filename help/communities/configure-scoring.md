@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Para configurar rápidamente un archivo de registro de inclinación:
 1. Seleccione **[!UICONTROL Añadir nuevo registrador]**
 
    1. Seleccionar `DEBUG` para nivel **[!UICONTROL de registro]**
-   1. Escriba un nombre para el archivo **[!UICONTROL de registro]**, por ejemplo
+   1. Escriba un nombre para el archivo **** de registro, por ejemplo
 
       * logs/scoring-debug.log
    1. Introduzca dos entradas **[!UICONTROL Logger]** (clase) (mediante `+` icono)
@@ -152,10 +152,12 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
       * `/content/sites/engage/en/forum/jcr:content`
    * Añadir las propiedades de puntuación y marca
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * Localización del nodo del componente del foro
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`

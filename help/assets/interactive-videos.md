@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6008'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->Si crea un vídeo interactivo para iniciar una página web cuando un usuario hace clic en una imagen en miniatura, algunos dispositivos bloquearán la apertura de la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, toque **[!UICONTROL Settings** > **Safari** > **Bloquear ventanas emergentes** y, a continuación, deslice el control a **[!UICONTROL Off**. Ahora, al reproducir un vídeo interactivo y hacer clic en una miniatura, se le preguntará si desea abrir la ventana emergente. Si lo acepta, se abre la página web.
+>Si crea un vídeo interactivo para iniciar una página web cuando un usuario hace clic en una imagen en miniatura, algunos dispositivos bloquearán la apertura de la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, toque **[!UICONTROL Configuración]** > **Safari** > **Bloquear ventanas emergentes** y, a continuación, deslice el control a **[!UICONTROL Desactivado]**. Ahora, al reproducir un vídeo interactivo y hacer clic en una miniatura, se le preguntará si desea abrir la ventana emergente. Si lo acepta, se abre la página web.
 
 ## Vea cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
 
@@ -138,11 +138,11 @@ Cuando la supervisión de red está activada en el explorador, active la vista r
 
 Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una parte o ruta de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU del producto es la única pieza de datos necesaria para agregar miniaturas a un segmento de tiempo en el vídeo interactivo de AEM.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable independiente en la definición de datos en miniatura en AEM.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable separada en la definición de datos en miniatura en AEM.
 
 Considere los siguientes ejemplos de URL de vista rápida y sus variables de miniatura resultantes:
 
@@ -350,7 +350,7 @@ Después de guardar el vídeo interactivo, éste se abre inmediatamente en la Pr
 
    Captura de pantalla C
 
-   En la captura de pantalla C anterior, el ajuste Escala **[!UICONTROL de]** escala de tiempo se movió a 8 segundos. Observe cómo los segmentos que contienen miniaturas de productos se han reducido. El alejamiento de este modo resulta útil si tiene un vídeo largo y desea ver una descripción general de más segmentos que normalmente se ajustarían al ancho de la página.
+   En la captura de pantalla C anterior, el ajuste Escala **[!UICONTROL de]** escala de tiempo se movió a 8 segundos. Observe cómo los segmentos que contienen miniaturas de productos se han reducido. El alejamiento de este modo resulta útil si tiene un vídeo largo y desea ver una descripción general de más segmentos que normalmente caben en el ancho de la página.
 
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
@@ -438,7 +438,7 @@ Después de guardar el vídeo interactivo, éste se abre inmediatamente en la Pr
        </ul><strong>Nota</strong>: Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.</p></tr>&lt; 
       <tr> 
       <td>Para editar una acción ya asignada a una imagen en miniatura</td> 
-      <td>En un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
+      <td>Dentro de un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
       </tr> 
       <tr> 
       <td>Cambio de la etiqueta de texto de una imagen en miniatura</td> 

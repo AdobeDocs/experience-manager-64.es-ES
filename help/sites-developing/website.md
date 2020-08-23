@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ Después de instalar AEM, acceda al entorno de desarrollo de CRXDE Lite haciendo
 
 Utilice CRXDE Lite para crear la estructura de la aplicación mywebsite en el repositorio:
 
-1. En el árbol de la parte izquierda del CRXDE Lite, haga clic con el botón secundario en la **`/apps`** carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **Crear carpeta** , escriba `mywebsite` como nombre de carpeta y haga clic en **[!UICONTROL OK**.
+1. En el árbol de la parte izquierda del CRXDE Lite, haga clic con el botón secundario en la **`/apps`** carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **Crear carpeta** , escriba `mywebsite` como nombre de carpeta y haga clic en **Aceptar**.
 1. Haga clic con el botón secundario en la `/apps/mywebsite` carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , escriba `components` como nombre de carpeta y haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic con el botón secundario en la `/apps/mywebsite` carpeta y, a continuación, haga clic en **[!UICONTROL Crear > Crear carpeta]**. En el cuadro de diálogo **[!UICONTROL Crear carpeta]** , escriba `templates` como nombre de carpeta y haga clic en **[!UICONTROL Aceptar]**.
 
@@ -220,7 +220,7 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
 
 1. En la página de bienvenida de AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), haga clic en Sitios web.
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. En el árbol de carpetas, seleccione la carpeta **[!UICONTROL Sitios]** web y, a continuación, haga clic en **[!UICONTROL Nuevo > Nueva página]**.
 1. En la ventana **[!UICONTROL Crear página]** , escriba lo siguiente:
@@ -411,7 +411,7 @@ En la primera versión del componente de navegación superior (topnav), los elem
 
 La navegación superior tendrá el siguiente aspecto:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 #### Creación del componente de navegación superior {#creating-the-top-navigation-component-1}
 
@@ -1082,7 +1082,7 @@ En esta sección, se incluye el componente de título, que es uno de los compone
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NOTE]
 >Puede definir un título diferente y el tipo o tamaño en el modo de **[!UICONTROL edición]** .
 
 ### Inclusión del componente de sistema de párrafos {#including-the-paragraph-system-component}
@@ -1105,7 +1105,7 @@ Añada el componente parsys (uno de los componentes de base) en el componente co
 
 1. En el explorador, actualice la página **[!UICONTROL Productos]** . Ahora tiene el componente parsys, que se ve de la siguiente manera:
 
-   ![chlimage_1-129](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Creación del componente de imagen {#creating-the-image-component}
 
@@ -1213,7 +1213,7 @@ En esta sección, vista la página **[!UICONTROL Productos]** y agregará el com
 1. Haga clic en el botón **[!UICONTROL Editar]** para editar el cuadro de diálogo de diseño de par.
 1. En el cuadro de diálogo, se muestra una lista de los componentes **** permitidos; desplácese a **[!UICONTROL MyWebsite]**, seleccione el componente **** Mi imagen y haga clic en **[!UICONTROL Aceptar]**.
 1. Vuelva al modo **** Editar.
-1. Haga clic con el botón Doble en el marco parsys (en **[!UICONTROL Arrastrar componentes o recursos aquí]**). Los selectores **[!UICONTROL Insertar nuevo componente]** y **[!UICONTROL barra de tareas]** tienen el siguiente aspecto:
+1. Haga clic con el botón doble en el marco parsys (en **[!UICONTROL Arrastrar componentes o recursos aquí]**). Los selectores **[!UICONTROL Insertar nuevo componente]** y **[!UICONTROL barra de tareas]** tienen el siguiente aspecto:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1275,7 +1275,7 @@ El cuadro de entrada de búsqueda tendrá el siguiente aspecto en la página **[
       * **[!UICONTROL Descripción]**: Este es mi componente de búsqueda
       * **[!UICONTROL Grupo]**: MyWebsite
    1. Haga clic en **[!UICONTROL Siguiente]** y luego en **[!UICONTROL Siguiente]** nuevamente.
-   1. En el panel **[!UICONTROL Padres** permitidos, haga clic en el botón **[!UICONTROL +]** y escriba `*/parsys`.
+   1. En el panel Padres **** permitidos, haga clic en el botón **[!UICONTROL +]** y escriba `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 

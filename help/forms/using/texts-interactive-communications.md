@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2255'
+source-wordcount: '2249'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ El fragmento de documento de texto de Comunicación interactiva admite el siguie
 1. Seleccione **`[!UICONTROL Create]`** > **[!UICONTROL Texto]**.
 1. Especifique la siguiente información:
 
-   * **[!UICONTROL Título]**: (Opcional) Introduzca el título del fragmento de documento de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres que no son del inglés. Los textos se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
+   * **[!UICONTROL Título]**: (Opcional) Introduzca el título del fragmento de documento de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres que no sean del inglés. Los textos se remiten por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
    * **[!UICONTROL Nombre]**: Nombre exclusivo del texto, dentro de una carpeta. No pueden existir dos fragmentos de documento (texto, condición o lista) en ningún estado con el mismo nombre en una carpeta. En el campo Nombre, solo puede introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente según el campo Título. Los caracteres especiales, espacios, números y caracteres no ingleses introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **[!UICONTROL Descripción]**: Escriba una descripción del texto.
    * **[!UICONTROL Modelo]** de datos de formulario: De forma opcional, seleccione el botón de opción Modelo de datos de formulario para crear el texto basado en un modelo de datos de formulario. Al seleccionar el botón de opción Modelo de datos de formulario, aparece el campo Modelo de datos **[!UICONTROL de formulario*]** . Examine y seleccione un modelo de datos de formulario. Al crear texto y condiciones para una comunicación interactiva, asegúrese de utilizar el mismo modelo de datos que desea utilizar en la comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte Integración [de datos](/help/forms/using/data-integration.md).
@@ -141,7 +141,7 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 
 * Cadenas
 * Números
-* expresión matemática
+* Expresión matemática
 * Fechas
 * Propiedades del modelo de datos de formulario asociado
 * Cualquier variable que haya creado en el texto
@@ -154,7 +154,7 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 
 1. Toque **[!UICONTROL Crear regla]**.
 
-   Aparece el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, en el Editor de reglas también se encuentran disponibles las siguientes opciones para crear instrucciones de las reglas:
+   Aparecerá el cuadro de diálogo Crear regla. Además de la cadena, el número, la expresión matemática y la fecha, en el Editor de reglas también se encuentran disponibles las siguientes opciones para crear instrucciones de las reglas:
 
    * Propiedades del modelo de datos de formulario asociado
    * Cualquier variable que haya creado
@@ -194,11 +194,10 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 ## Formato del texto {#formatting}
 
 Durante la creación o edición de texto, la barra de herramientas cambia según el tipo de edición que elija: Párrafo, alineación o Lista:
-[ ![Seleccionar tipo de barra de herramientas](do-not-localize/toolbarselection.png)
 
 Seleccionar tipo de barra de herramientas: Párrafo, alineación o lista
 
-](assets/toolbarselection.png) Barra de herramientas de edición ![de fuentes](do-not-localize/paragraphtoolbar-1.png)
+![Barra de herramientas de edición de fuentes](do-not-localize/paragraphtoolbar-1.png)
 
 Barra de herramientas de edición de fuentes
 
@@ -224,7 +223,7 @@ De forma opcional, también puede ir a la ficha Avanzado para seleccionar el ton
 
 ### Pegar texto con formato {#paste}
 
-Para reutilizar uno o varios párrafos de texto que existen en otra aplicación, como los de páginas de Microsoft® Word o HTML, copie y pegue el texto en el editor de texto. El formato del texto copiado se conserva en el editor de texto.
+Para reutilizar uno o varios párrafos de texto que existen en otra aplicación, como páginas de Microsoft® Word o HTML, copie y pegue el texto en el editor de texto. El formato del texto copiado se conserva en el editor de texto.
 
 Puede copiar y pegar uno o varios párrafos de texto en un fragmento de documento de texto editable. Por ejemplo, puede tener un documento de Microsoft® Word con una lista con viñetas de pruebas de residencia aceptables como, por ejemplo:
 

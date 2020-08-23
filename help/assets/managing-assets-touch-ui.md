@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 2%
 
 ---
@@ -64,13 +64,13 @@ Antes de cargar un recurso, asegúrese de que tiene un formato [](assets-formats
 
    Para seleccionar varios archivos, pulse la tecla Ctrl/Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Desde un iPad, solo puede seleccionar un archivo a la vez.
 
-   Puede pausar la carga de recursos de gran tamaño (buenos de 500 MB) y reanudarla más tarde desde la misma página. Puntee en el icono **[!UICONTROL Pausa]** situado junto a la barra de progreso que aparece cuando se cargan los inicios.
+   Puede pausar la carga de recursos grandes (buenos de 500 MB) y reanudarla más tarde desde la misma página. Puntee en el icono **[!UICONTROL Pausa]** situado junto a la barra de progreso que aparece cuando se cargan los inicios.
 
    ![climage_1-5](assets/chlimage_1-5.png)
 
    Se puede configurar el tamaño por encima del cual un recurso se considera un recurso grande. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de 500 MB) como recursos grandes. En este caso, el botón **[!UICONTROL Pausa]** de la barra de progreso aparece cuando se cargan recursos de tamaño bueno superior a 1000 MB.
 
-   El botón **[!UICONTROL Pausar]]**no muestra si un archivo bueno de más de 1000 MB se carga con un archivo de menos de 1000 MB. Sin embargo, si cancela la carga de archivos de menos de 1000 MB, aparece el botón**[!UICONTROL Pausa ]**.
+   El botón **[!UICONTROL Pausa]** no muestra si un archivo bueno de más de 1000 MB se carga con un archivo de menos de 1000 MB. Sin embargo, si cancela la carga de archivos de menos de 1000 MB, aparece el botón **[!UICONTROL Pausa]** .
 
    Para modificar el límite de tamaño, configure la `chunkUploadMinFileSize` propiedad del `fileupload`nodo en el repositorio de CRX.
 
@@ -145,7 +145,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 >[!NOTE]
 >
 >Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM autor. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
-Si se utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
+Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**
 
@@ -180,7 +180,7 @@ Si se utiliza FTP para cargar recursos, se ignora la configuración de carga esp
 | Opciones de trabajo |  | Toque o haga clic en Opciones **[!UICONTROL de]** trabajo para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga y elija las opciones que afectan a todo el trabajo de carga. Estas opciones son las mismas para todos los tipos de archivo.<br>Puede elegir las opciones predeterminadas para cargar archivos empezando por la página Configuración general de la aplicación. Para abrir esta página, seleccione **[!UICONTROL Ajustes]** > Ajustes **[!UICONTROL de aplicación]**. Toque el botón Opciones **[!UICONTROL de carga]** predeterminadas para abrir el cuadro de diálogo Opciones [!UICONTROL de trabajo de] carga. |
 |  | Cuando | Seleccione Una vez o Recurrente. Para configurar un trabajo recurrente, elija una opción de repetición (diaria, semanal, mensual o personalizada) para especificar cuándo desea que se repita el trabajo de carga de FTP. A continuación, especifique las opciones de programación según sea necesario. |
 |  | Incluir subcarpetas | Cargue todas las subcarpetas de la carpeta que desee cargar. Los nombres de la carpeta y de las subcarpetas que cargue se introducirán automáticamente en AEM Assets. |
-|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
+|  | Opciones de recorte | Para recortar manualmente de los lados de una imagen, seleccione el menú Recortar y elija Manual. A continuación, introduzca el número de píxeles que desea recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen. Por ejemplo, si la imagen muestra 150 ppp y se introduce 75 en los cuadros de texto Superior, Derecha, Inferior e Izquierda, se recortará media pulgada de cada lado.<br> Para recortar automáticamente píxeles de espacio en blanco de una imagen, abra el menú Recortar, elija Manual e introduzca las medidas en píxeles en los campos Superior, Derecha, Inferior e Izquierda para recortar desde los lados. También puede elegir Recortar en el menú Recortar y elegir estas opciones:<br> **Recortar según** <ul><li>**Color** : elija la opción Color. A continuación, seleccione el menú Esquina y elija la esquina de la imagen con el color que mejor represente el color de espacio en blanco que desea recortar.</li><li>**Transparencia** : elija la opción Transparencia.<br> **Tolerancia** : arrastre el control deslizante para especificar una tolerancia de 0 a 1.Para recortar según el color, especifique 0 para recortar píxeles solo si coinciden exactamente con el color seleccionado en la esquina de la imagen. Los números más cercanos a 1 permiten una mayor diferencia de color.<br>Para recortar según la transparencia, especifique 0 para recortar píxeles solo si son transparentes. Los números más cercanos a 1 permiten una mayor transparencia.</li></ul><br>Tenga en cuenta que estas opciones de recorte no son destructivas. |
 |  | Opciones de Perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para envío:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contengan información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy ya tienen el perfil de color adecuado incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacio de color sRGB (estándar rojo verde azul). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. Para las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza utilizando los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no se alineen con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizado de > Para<br> abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en. Esta opción avanzada anula toda la información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que va a enviar contengan datos de perfil de color incorrectos o falten.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte [Configuración de las opciones de edición de imágenes durante la carga](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte [Configuración de las opciones](#setting-postscript-and-illustrator-upload-options)de carga de PostScript y Illustrator. |
@@ -207,7 +207,7 @@ Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar l
 | Máscara de enfoque |  | Permite ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución, controlando la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora.<br> Este efecto utiliza las mismas opciones que el filtro Máscara de enfoque de Photoshop. Contrariamente a lo que indica el nombre, Máscara de enfoque es un filtro de enfoque. En Máscara de enfoque, defina las opciones que desee. Las opciones de configuración se describen a continuación: |
 |  | Cantidad | Controla la cantidad de contraste que se aplica a los píxeles del borde.<br> Piensen en ello como la intensidad del efecto. La diferencia principal entre los valores de cantidad de Máscara de enfoque en Medios dinámicos y los valores de cantidad en Adobe Photoshop es que Photoshop tiene un rango de cantidad del 1% al 500%. Mientras que, en Dynamic Media, el rango de valores es de 0,0 a 5,0. Un valor de 5,0 es el equivalente aproximado del 500 % en Photoshop; un valor de 0,9 es el equivalente al 90 %, y así sucesivamente. |
 |  | Radio | Controla el radio del efecto. El intervalo de valores es 0-250.<br> El efecto se ejecuta en todos los píxeles de una imagen e irradia desde todos los píxeles en todas las direcciones. El radio se mide en píxeles. Por ejemplo, para obtener un efecto de enfoque similar para una imagen de 2000 x 2000 píxeles y una imagen de 500 x 500 píxeles, debe establecer un radio de dos píxeles en la imagen de 2000 x 2000 píxeles y un valor de radio de un píxel en la imagen de 500 x 500 píxeles. Se utiliza un valor mayor para una imagen que tiene más píxeles. |
-|  | Umbral | Umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Es importante que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El rango de valores es 0-255, que es el número de pasos de brillo de una imagen en escala de grises. 0=negro, 128=50% gris y 255=blanco.<br> Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde a áreas de contraste como, por ejemplo, donde las pestañas tocan la piel.<br> Por ejemplo, si tiene una fotografía de la cara de alguien, la máscara de enfoque afecta a las partes contrastantes de la imagen, como por ejemplo dónde se tocan las pestañas y la piel para crear un área obvia de contraste y la piel lisa en sí. Incluso la piel más suave presenta cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en píxeles de piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que mejora el enfoque.<br> Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian el contraste de forma drástica, como la piel lisa.<br> En el gráfico de cremallera que se muestra anteriormente, observe la textura junto a las cremalleras. Se muestra ruido de imagen porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
+|  | Umbral | Umbral es un rango de contraste que se ignora cuando se aplica el filtro Máscara de enfoque. Es importante que no se introduzca ningún &quot;ruido&quot; en una imagen cuando se utilice este filtro. El rango de valores es 0-255, que es el número de pasos de brillo de una imagen en escala de grises. 0=negro, 128=50% gris y 255=blanco.<br> Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar ruido, pero agrega contraste al borde a áreas de contraste como, por ejemplo, donde las pestañas tocan la piel.<br> Por ejemplo, si tiene una fotografía de la cara de alguien, la máscara de enfoque afecta a las partes contrastantes de la imagen, como por ejemplo dónde se tocan las pestañas y la piel para crear un área obvia de contraste y la piel lisa en sí. Incluso la piel más suave presenta cambios sutiles en los valores de brillo. Si no utiliza un valor de umbral, el filtro acentúa estos cambios sutiles en píxeles de piel. A su vez, se crea un efecto ruidoso e indeseable mientras que el contraste en las pestañas aumenta, lo que mejora el enfoque.<br> Para evitar este problema, se introduce un valor de umbral que indica al filtro que ignore los píxeles que no cambian el contraste de forma drástica, como la piel lisa.<br> En el gráfico de cremallera mostrado anteriormente, observe la textura junto a los cremalleras. Se muestra ruido de imagen porque los valores de umbral eran demasiado bajos para suprimir el ruido. |
 |  | Monocromo | Seleccione esta opción para aplicar máscara de enfoque al brillo (intensidad) de la imagen.<br> Anule la selección para aplicar máscara de enfoque a cada componente de color por separado. |
 | Fondo de cobertura |  | Elimina automáticamente el fondo de una imagen al cargarla. Esta técnica resulta útil para llamar la atención sobre un objeto concreto y para que destaque desde un fondo muy ocupado. Seleccione esta opción para activar o &quot;activar&quot; la función Fondo de cobertura y las siguientes subopciones: |
 |  | Esquina | Requerido.<br> Esquina de la imagen que se utiliza para definir el color de fondo de la cobertura.<br> Puede elegir entre **Superior izquierda**, **Inferior izquierda**, **Superior derecha** o **Inferior derecha**. |
@@ -249,7 +249,7 @@ Utilice las opciones **[!UICONTROL de recorte]** y de Perfil **[!UICONTROL de co
 | Extender las capas al tamaño de fondo |  | Extiende el tamaño de las capas de imagen extraídas al tamaño de la capa de fondo. |
 | Nombres de capas |  | Las capas del archivo PSD se cargan como imágenes independientes. |
 |  | Nombre de la capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio en el archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop (Fondo, Capa 1, Capa 2, etc.), las imágenes recibirán el nombre de sus números de capa en el archivo PSD, no de sus nombres de capa predeterminados. |
-|  | Photoshop y número de capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD, sin tener en cuenta los nombres de las capas originales. Las imágenes reciben el nombre del archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Anuncio primavera.psd se denomina Anuncio primavera_2 aunque tenga un nombre no predeterminado en Photoshop. |
+|  | Photoshop y número de capa | Asigna a las imágenes los nombres de sus capas en el archivo PSD, sin tener en cuenta los nombres de las capas originales. Las imágenes reciben el nombre del archivo de Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Anuncio primavera.psd se denomina Anuncio primavera_2 aunque tenga un nombre no predeterminado en Photoshop. |
 |  | Photoshop y nombre de capa | Nombra las imágenes después del archivo PSD seguido del nombre o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Etiqueta de precio en un archivo PSD llamado Anuncio primavera se denomina Anuncio primavera_Etiqueta de precio. Una capa con el nombre predeterminado Capa 2 se denomina Anuncio primavera_2. |
 | Ancla |  | Especifique cómo se anclan las imágenes en plantillas que se generan a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen mejor el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo ocupen el espacio asignado en la plantilla. |
 
@@ -290,7 +290,7 @@ Puede transcodificar un archivo de vídeo eligiendo entre varios ajustes preesta
 
 #### Definir ajustes preestablecidos de conjunto por lotes al cargar {#setting-batch-set-presets-at-upload}
 
-Si desea crear automáticamente un conjunto de imágenes o de giros a partir de imágenes cargadas, haga clic en la columna **[!UICONTROL Activo** para el ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido.
+Si desea crear automáticamente un conjunto de imágenes o de giros a partir de imágenes cargadas, haga clic en la columna **[!UICONTROL Activo]** del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido.
 
 Consulte [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) de giros para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.
 
@@ -318,7 +318,7 @@ Algunas limitaciones de la función son:
 
 * No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Sólo puede extraer un archivo ZIP a la vez.
 
-## Recursos de Previsualización {#previewing-assets}
+## Recursos de previsualización {#previewing-assets}
 
 **Para previsualización de recursos**:
 
@@ -338,7 +338,7 @@ Algunas limitaciones de la función son:
 >[!MORELIKETHIS]
 >
 >* [Previsualización de recursos](/help/assets/previewing-assets.md)de medios dinámicos.
->* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de Vista.
+>* [Subrecursos](managing-linked-subassets.md#viewing-subassets)de vista.
 
 
 ## Editar propiedades {#editing-properties}
@@ -487,7 +487,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque el icono **[!UICONTROL Eliminar representación]** de la [barra de herramientas](/help/sites-authoring/basic-handling.md). Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque el icono **[!UICONTROL Eliminar representación]** en la [barra de herramientas](/help/sites-authoring/basic-handling.md). Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -523,7 +523,7 @@ Para resolver o eliminar las referencias entrantes de otras páginas, actualice 
 
 Asimismo, desactive el botón de forzar eliminación mediante una superposición para impedir que los usuarios eliminen los recursos a los que se hace referencia y dejen vínculos rotos.
 
-Para poder eliminar un recurso, se requieren permisos de eliminación en la represa o el recurso. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
+Para poder eliminar un recurso, es necesario disponer de permisos de eliminación en la represa o el recurso. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
 
 **Para eliminar recursos**:
 
@@ -716,7 +716,7 @@ En la consola [](managing-collections-touch-ui.md#navigating-the-collections-con
 **Para utilizar la línea de tiempo**:
 
 1. Abra la página de recursos de un recurso o selecciónela en la interfaz de usuario de Recursos.
-1. Toque el icono Navegación **** global y elija **Línea de tiempo]** en la lista.
+1. Toque el icono Navegación **** global y elija **[Línea de tiempo]** en la lista.
 
    ![línea de tiempo](assets/timeline.png)
 
@@ -746,7 +746,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
@@ -775,7 +775,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### Anotaciones guardadas en la Vista {#viewing-saved-annotations}
+### Anotaciones guardadas en la vista {#viewing-saved-annotations}
 
 1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 

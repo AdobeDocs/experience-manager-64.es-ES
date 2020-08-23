@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -40,10 +40,10 @@ Para integrar Adobe Sign con AEM Forms, es necesario lo siguiente:
 
 Una vez que se hayan establecido los requisitos previos, realice los siguientes pasos para configurar Adobe Sign con AEM Forms en la instancia de autor:
 
-1. En la instancia de autor de AEM Forms, vaya a **[!UICONTROL Herramientas **![martillo](assets/hammer.png)>**General **>**Navegador]**de configuración.
+1. En la instancia de autor de AEM Forms, vaya a **[!UICONTROL Herramientas** ![martillo](assets/hammer.png) > **General** > **Navegador]** de configuración.
 1. En la página **[!UICONTROL Navegador]** de configuración, toque **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , especifique un **[!UICONTROL Título]** para la configuración, habilite Configuraciones **[!UICONTROL de]** nube y toque **[!UICONTROL Crear]**. Crea un contenedor de configuración para los servicios en la nube.
-1. Vaya a **[!UICONTROL Herramientas **![martillo](assets/hammer.png)>**Cloud Services **>**Adobe Sign]**y seleccione el contenedor de configuración que ha creado en el paso anterior.
+1. Vaya a **[!UICONTROL Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Adobe Sign]** y seleccione el contenedor de configuración que ha creado en el paso anterior.
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
    1. Abra una ventana del explorador e inicie sesión en la cuenta de desarrollador de Adobe Sign.
    1. Seleccione la aplicación configurada para AEM Forms y toque Configurar OAuth para la aplicación.
-   1. En el cuadro **[!UICONTROL Redireccionar URL]** , agregue la URL HTTPS copiada en el paso anterior y haga clic en **[!UICONTROL Guardar]**.
+   1. En el cuadro URL **[!UICONTROL de]** redirección, agregue la URL HTTPS copiada en el paso anterior y haga clic en **[!UICONTROL Guardar]**.
    1. Habilite la siguiente configuración de OAuth para la aplicación Adobe Sign y haga clic en **[!UICONTROL Guardar]**.
    * aggrement_read
    * aggrement_write
@@ -70,7 +70,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
    ![Configuración de OAuth](assets/oauth_config.png)
 
-1. Vuelva a la página **[!UICONTROL Crear configuración]** de Adobe Sign. En la ficha **[!UICONTROL Configuración]** , el campo URL de **!UICONTROL OAuth **menciona la siguiente dirección URL predeterminada:
+1. Vuelva a la página **[!UICONTROL Crear configuración]** de Adobe Sign. En la ficha **[!UICONTROL Configuración]** , el campo URL **[!UICONTROL de]** OAuth menciona la siguiente dirección URL predeterminada:
 
    `https://secure.na1.echosign.com/public/oauth`
 
@@ -88,7 +88,7 @@ Una vez que se hayan establecido los requisitos previos, realice los siguientes 
 
 1. Abra AEM consola web. La dirección URL es `https://[server]:[port]/system/console/configMgr`
 1. Abra **[!UICONTROL Forms Common Configuration Service]**.
-1. En el campo **[!UICONTROL Permitir]** , seleccione **[!UICONTROL Todos los usuarios]** : todos los usuarios, anónimos o conectados, pueden previsualización de datos adjuntos, comprobar y firmar formularios y hacer clic en **[!UICONTROL Guardar]**. La instancia de autor está configurada para usar Adobe Sign.
+1. En el campo **[!UICONTROL Permitir]** , seleccione **[!UICONTROL Todos los usuarios]** : todos los usuarios, anónimos o conectados, pueden previsualización de archivos adjuntos, comprobar y firmar formularios y hacer clic en **[!UICONTROL Guardar]**. La instancia de autor está configurada para usar Adobe Sign.
 1. En la instancia de [publicación](/help/sites-deploying/deploy.md) , inicie sesión y abra la siguiente URL:
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`

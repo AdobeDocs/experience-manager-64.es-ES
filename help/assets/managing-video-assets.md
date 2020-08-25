@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 8%
 
 ---
@@ -58,10 +58,8 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. Actualice el explorador. El nodo de superposición `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` está seleccionado.
-1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, introduzca el siguiente valor para aumentar el límite de tamaño a 30 GB:
-
-   `{sizeLimit : "32212254720"}`
+1. Actualice el explorador. El nodo de superposición `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` está seleccionado.
+1. En la ficha **[!UICONTROL Propiedades]** , introduzca el valor apropiado en bytes para aumentar el límite de tamaño al tamaño deseado. Por ejemplo, introduzca `32212254720` un valor para aumentar el límite de tamaño a 30 GB.
 
 1. En la barra de herramientas, toque **[!UICONTROL Guardar todo]**.
 1. En AEM, pulse **[!UICONTROL Herramientas > Operaciones > Consola web]**.

@@ -3,9 +3,9 @@ title: Cómo editar o agregar metadatos
 description: Obtenga información sobre los metadatos de los recursos en AEM Assets y las distintas formas de editar los metadatos de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '483'
 ht-degree: 8%
 
 ---
@@ -54,3 +54,11 @@ Puede agregar sus propias Áreas de nombres dentro de AEM. Al igual que hay Áre
 
 1. Para agregar una Área de nombres, toque o haga clic en **[!UICONTROL Nuevo]** en la parte inferior.
 1. Especifique una Área de nombres personalizada en la convención de Área de nombres XML (especifique el identificador en forma de URI y un prefijo asociado para el identificador) y toque o haga clic en **[!UICONTROL Guardar]**.
+
+## Sugerencias y limitaciones {#best-practices-limitations}
+
+* Las actualizaciones de metadatos mediante la IU táctil modifican las propiedades de metadatos de la `dc` Área de nombres. Cualquier actualización realizada mediante la API HTTP cambia las propiedades de metadatos de la `jcr` Área de nombres. Consulte [cómo actualizar metadatos mediante la API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
+
+>[!MORELIKETHIS]
+>
+>* [Acerca de los metadatos y sus necesidades en Recursos](metadata.md)

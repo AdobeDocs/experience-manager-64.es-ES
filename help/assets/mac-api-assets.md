@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,9 @@ La respuesta de API es un archivo JSON para algunos tipos MIME y un código de r
 
 Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz [!DNL Assets] web y de la API HTTP. La API devuelve un mensaje de error 404 si [!UICONTROL Tiempo] de activación está en el futuro o Tiempo de [!UICONTROL desactivación] está en el pasado.
 
+>[!CAUTION]
+>
+>[La API HTTP actualiza las propiedades](#update-asset-metadata) de metadatos en la `jcr` Área de nombres. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos de la `dc` Área de nombres.
 
 ## modelo Data {#data-model}
 
@@ -66,17 +69,17 @@ En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
 La API HTTP de Assets incluye las siguientes funciones:
 
-* Recupere una lista de carpetas.
-* Crear una carpeta.
-* Cree un recurso.
-* Actualice el binario de recursos.
-* Actualice los metadatos del recurso.
-* Cree una representación de recursos.
-* Actualizar una representación de recursos.
-* Cree un comentario de recurso.
-* Copie una carpeta o un recurso.
-* Mover una carpeta o un recurso.
-* Elimine una carpeta, recurso o representación.
+* [Recupere una lista](#retrieve-a-folder-listing)de carpetas.
+* [Crear una carpeta](#create-a-folder).
+* [Cree un recurso](#create-an-asset).
+* [Actualizar binario](#update-asset-binary)de recursos.
+* [Actualice los metadatos](#update-asset-metadata)del recurso.
+* [Cree una representación](#create-an-asset-rendition)de recursos.
+* [Actualizar una representación](#update-an-asset-rendition)de recursos.
+* [Cree un comentario](#create-an-asset-comment)de recurso.
+* [Copie una carpeta o un recurso](#copy-a-folder-or-asset).
+* [Mover una carpeta o un recurso](#move-a-folder-or-asset).
+* [Elimine una carpeta, recurso o representación](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
@@ -102,7 +105,7 @@ Recupera una representación sirena de una carpeta existente y de sus entidades 
 
 **Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
 
-## Crear una carpeta {#create-a-folder}
+## Cree una carpeta  . {#create-a-folder}
 
 Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
@@ -157,7 +160,7 @@ Actualiza el binario de un recurso (representación con el nombre original). Una
 
 Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propiedad de la `dc:` Área de nombres, la API actualiza la misma propiedad en la `jcr` Área de nombres. La API no sincroniza las propiedades de las dos Áreas de nombres.
 
-**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Solicitud**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Códigos** de respuesta: Los códigos de respuesta son:
 
@@ -165,6 +168,27 @@ Actualiza las propiedades de metadatos de recurso. Si actualiza cualquier propie
 * 404 - NO ENCONTRADO - si no se pudo encontrar o acceder al recurso en el URI proporcionado.
 * 412 - ERROR DE PRECONDICIÓN: si no se encuentra la colección raíz o no se puede obtener acceso a ella.
 * 500 - ERROR DEL SERVIDOR INTERNO - si algo más sale mal.
+
+### Sincronizar actualización de metadatos entre `dc` y `jcr` Área de nombres {#sync-metadata-between-namespaces}
+
+El método API actualiza las propiedades de metadatos de la `jcr` Área de nombres. Las actualizaciones realizadas con la IU táctil modifican las propiedades de metadatos de la `dc` Área de nombres. Para sincronizar los valores de metadatos entre `dc` y la `jcr` Área de nombres, puede crear un flujo de trabajo y configurar un Experience Manager para que ejecute el flujo de trabajo tras la edición de recursos. Utilice una secuencia de comandos ECMA para sincronizar las propiedades de metadatos necesarias. La siguiente secuencia de comandos de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Creación de una representación de recursos {#create-an-asset-rendition}
 

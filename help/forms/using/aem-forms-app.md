@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 0%
@@ -28,11 +28,11 @@ El código fuente de la aplicación de AEM Forms está disponible para los clien
 
 La aplicación de AEM Forms es compatible con dispositivos iOS, Android y Windows. Puede instalar la aplicación de AEM Forms para Android desde Google Play, iOS desde la App Store y Windows desde la Tienda Windows.
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar y distribuir la aplicación en dispositivos iOS, Android o Windows, consulte [Personalización, compilación y distribución de la aplicación](#customize-build-distribute)de AEM Forms.
 
@@ -96,7 +96,7 @@ Con el servidor de AEM Forms sin el flujo de trabajo de AEM Forms, se procesa en
 
 Puede sincronizar la aplicación con el servidor de AEM Forms Workflow y trabajar con tareas y formularios en su dispositivo móvil.
 
-Una tarea en el dispositivo móvil contiene un formulario adaptable, un formulario HTML5 o un conjunto de formularios, y también puede contener archivos adjuntos y una dirección URL [de](/help/forms/using/getting-task-variables-summary-url.md)resumen. De forma predeterminada, las tareas asignadas se colocan en la carpeta **[!UICONTROL Tareas]** . Al trabajar en una tarea, puede cambiar la tarea y guardar una copia de tarea en borrador en el servidor de AEM Forms.
+Una tarea en el dispositivo móvil contiene un formulario adaptable, un formulario HTML5 o un conjunto de formularios, y también puede contener archivos adjuntos y una dirección URL [de](/help/forms/using/getting-task-variables-summary-url.md)resumen. De forma predeterminada, las tareas asignadas se colocan en la carpeta **[!UICONTROL Tareas]** . Al trabajar en una tarea, puede cambiar la tarea y guardar una copia borrador de la tarea en el servidor de AEM Forms.
 
 Un formulario del dispositivo móvil puede ser un formulario adaptable o un formulario móvil. Forms habilitado para la sincronización en la aplicación de formularios está disponible en la carpeta Forms. Puede sincronizar formularios habilitados en el servidor de AEM Forms sin el flujo de trabajo de AEM Forms (AEM Forms en OSGi).
 
@@ -163,7 +163,7 @@ La aplicación de AEM Forms es una aplicación basada en PhoneGap 5.0 en la que 
 
 La aplicación de AEM Forms es fácil de personalizar para las necesidades específicas de la organización. El código fuente de la aplicación se proporciona junto con AEM Forms. Puede cambiar el código fuente y crear su propia solución de mano de obra móvil. También puede firmar la aplicación con su propia clave de empresa.
 
-### Personalizar {#customize}
+### Personalización {#customize}
 
 Puede personalizar la aplicación para:
 

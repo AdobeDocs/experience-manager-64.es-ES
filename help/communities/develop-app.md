@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -33,9 +33,10 @@ El primer paso es agregar una propiedad super type de recurso al `/apps/an-scf-s
 Uso de CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nombre: `sling:resourceSuperType`
-    * Tipo: `String`
-    * Valor: &quot;foundation/components/page&quot;
+
+* Nombre: `sling:resourceSuperType`
+* Tipo: `String`
+* Value: `foundation/components/page`
 
 1. Haga clic en verde **[!UICONTROL [+]Añadir]**
 1. Haga clic en **[!UICONTROL Guardar todo]**

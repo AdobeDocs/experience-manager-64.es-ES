@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
+source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2499'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, según el servidor. Puede definir flujos de trabajo centrados en [Forms en flujos de trabajo OSGi](/help/forms/using/aem-forms-workflow.md) o [Forms en JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Por ejemplo, se ejecuta una empresa bancaria y se utiliza AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación activando el formulario de verificación en dispositivos móviles. El trabajador de campo puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y obtiene los formularios activados para dispositivos móviles. Si la aplicación está sin conexión, almacena datos localmente.
+La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, según el servidor. Puede definir flujos de trabajo centrados en [Forms en flujos de trabajo OSGi](/help/forms/using/aem-forms-workflow.md) o [Forms en JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Por ejemplo, se ejecuta una empresa bancaria y se utiliza AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación activando el formulario de verificación en dispositivos móviles. El trabajador de campo puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y obtiene los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, almacena datos localmente.
 
 El código fuente de la aplicación de AEM Forms está disponible para los clientes a través de Distribución de software. El paquete de código fuente de Distribución de software está disponible como: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 La aplicación de AEM Forms es compatible con dispositivos iOS, Android y Windows. Puede instalar la aplicación de AEM Forms para Android desde Google Play, iOS desde la App Store y Windows desde la Tienda Windows.
 
-    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
-    
-    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+[![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+
+[![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+
+[![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar y distribuir la aplicación en dispositivos iOS, Android o Windows, consulte [Personalización, compilación y distribución de la aplicación](#customize-build-distribute)de AEM Forms.
 

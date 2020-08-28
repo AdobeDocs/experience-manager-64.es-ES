@@ -10,7 +10,7 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 11%
@@ -228,17 +228,17 @@ También puede [asociar contenido](content-fragments-assoc-content.md) con un fr
 
 ## Visualización y edición de los metadatos (propiedades) del fragmento {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-Puede vista y edición de las propiedades de un fragmento mediante la ficha [!UICONTROL Metadatos](content-fragments-metadata.md) .
+Puede vista y edición de las propiedades de un fragmento mediante la ficha [[!UICONTROL Metadatos]](content-fragments-metadata.md) .
 
 ## Cronología de los fragmentos de contenido {#timeline-for-content-fragments}
 
 Además de las opciones estándar, la [línea de tiempo](managing-assets-touch-ui.md#timeline) proporciona información y acciones específicas de los fragmentos de contenido:
 
-* Información de Vista sobre versiones, comentarios y anotaciones
+* Información de vista sobre versiones, comentarios y anotaciones
 * Acciones para versiones
 
-   * **[!UICONTROL Revertir a esta versión](#reverting-to-a-version)**(seleccione un fragmento existente y, a continuación, una versión específica)
-   * **[!UICONTROL Comparar con actual](#comparing-fragment-versions)**(seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[[!UICONTROL Revertir a esta versión]](#reverting-to-a-version)** (seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[[!UICONTROL Comparar con actual]](#comparing-fragment-versions)** (seleccione un fragmento existente y, a continuación, una versión específica)
    * Añadir una **[!UICONTROL etiqueta]** o un **[!UICONTROL comentario]** (seleccione un fragmento existente y, a continuación, una versión específica)
    * **[!UICONTROL Guardar como versión]** (seleccione un fragmento existente y, a continuación, la flecha hacia arriba en la parte inferior de la línea de tiempo)
 
@@ -268,7 +268,7 @@ Por ejemplo:
 
 ## Comparación de versiones de fragmento {#comparing-fragment-versions}
 
-La acción **[!UICONTROL Comparar con actual]** está disponible en la [!UICONTROL línea de tiempo](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) después de seleccionar una versión específica.
+La acción **[!UICONTROL Comparar con actual]** está disponible en la [[!UICONTROL línea de tiempo]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) después de seleccionar una versión específica.
 
 Se abrirá:
 
@@ -298,7 +298,7 @@ Se mostrarán en paralelo, donde:
 
 Puede volver a una versión específica del fragmento:
 
-* Directamente desde la [!UICONTROL línea de tiempo](content-fragments-managing.md#timeline-for-content-fragments).
+* Directamente desde la [[!UICONTROL línea de tiempo]](content-fragments-managing.md#timeline-for-content-fragments).
 
    Seleccione la versión requerida y, a continuación, la acción **[!UICONTROL Revertir a esta versión]** .
 

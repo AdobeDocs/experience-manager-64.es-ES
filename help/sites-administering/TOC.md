@@ -150,7 +150,6 @@ ht-degree: 14%
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Integración de Destinatario con fragmentos de experiencia](experience-fragments-target.md)
-   + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
 + Prácticas recomendadas   {#bestpractices}
    + [Prácticas recomendadas  ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)

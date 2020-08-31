@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía del usuario de AEM 6.4 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -251,7 +251,7 @@ ht-degree: 1%
    + [Configure el proyecto de Visual Studio y genere la aplicación de Windows](using/setup-visual-studio-project-build-installer.md)
    + [Configure el proyecto de estudio de Android y cree la aplicación de Android](using/setup-android-studio-project-build-installer.md)
    + [Creación de la aplicación AEM Forms Android](using/setup-eclipse-project-build-installer.md)
-   + [Distribución de la aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
+   + [Distribuir aplicación de AEM Forms](using/distribute-mobile-workspace-app.md)
    + [Personalización de gestos](using/gesture-customization.md)
    + [Personalización de promoción de la marca](using/branding-customization.md)
    + [Personalización de temas](using/theme-customization.md)
@@ -362,7 +362,7 @@ ht-degree: 1%
    + [Ofertas de seguridad de documento](using/document-security-offerings.md)
    + [Habilitar AEM para buscar documentos PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Reader ampliando documentos PDF protegidos por políticas mediante la biblioteca de protección portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
-   + [Habilitar AEM para buscar documentos de Microsoft Office y PDF protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
+   + [Habilitar AEM para buscar en los documentos PDF y de Microsoft Office protegidos por seguridad de documento](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento en nombre de otro usuario](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
    + [Uso de Designer](http://www.adobe.com/go/learn_aemforms_designer_64)
@@ -468,7 +468,7 @@ ht-degree: 1%
       + [Configuración de fuentes de reserva](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificación de la configuración de conversión de exportación de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Conversión de archivos con PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + Configuración de SSL {#configure-ssl}
+   + Cómo configurar SSL {#configure-ssl}
       + [Información general sobre la configuración de SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configuración de SSL para el servidor de aplicaciones JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Configuración de SSL en Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -504,7 +504,6 @@ ht-degree: 1%
       + [Disponibilidad de fuentes](/help/forms/using/admin-help/make-fonts-available.md)
       + [Especificar fuentes para incrustar](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Especificar la configuración de seguridad](/help/forms/using/admin-help/specify-security-settings.md)
-      + [Cambiar el conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
    + Configuración del flujo de trabajo de formularios{#configure-forms-workflow}
       + [Acerca de la administración y la terminología del proceso](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Administración de procesos](/help/forms/using/admin-help/processes.md)
@@ -601,7 +600,7 @@ ht-degree: 1%
          + [Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)](developing/document-management-service-deprecated-java.md)
          + [Inicio rápido de JavaAPI (SOAP) del servicio de seguridad de documento](developing/document-security-service-java-api.md)
          + [QuickStart (SOAP) de la API de Java del servicio de cifrado](developing/encryption-service-java-api-quick.md)
-         + [Inicio rápido de la API de Java del Registro de Extremo (SOAP)](developing/endpoint-registry-java-api-quick.md)
+         + [QuickStart (SOAP) de la API de Java de Endpoint Registry](developing/endpoint-registry-java-api-quick.md)
          + [Inicio rápido de JavaAPI (SOAP) del servicio de integración de datos de formulario](developing/form-data-integration-service-java.md)
          + [Inicios rápidos de la API de servicio de Forms](developing/forms-service-api-quick-starts.md)
          + [Generate PDF Service Java API QuickStart(SOAP)](developing/generate-pdf-service-java-api.md)

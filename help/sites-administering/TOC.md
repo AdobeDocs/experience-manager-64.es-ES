@@ -5,10 +5,10 @@ audience: admin-user
 user-guide-title: Guía del usuario de administración de AEM 6.4
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 14%
+source-wordcount: '614'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 + [Información general sobre la Guía del usuario de administración](home.md)
 + Funciones del sitio {#introduction}
    + [Administración de sitios web](msm-and-translation.md) 
-   + [Reutilización del contenido: Multi Site Manager y Live Copy](msm.md)
+   + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
    + [Consola de información general de Live Copy](msm-livecopy-overview.md)
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
@@ -105,7 +105,7 @@ ht-degree: 14%
    + [Conceptos ](concepts.md)
    + [Administración de comercio electrónico genérico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Comercio AEM - Preparación para RGPD](gdpr-compliance-commerce.md)
 + Integración {#integration}
@@ -149,7 +149,7 @@ ht-degree: 14%
    + [Clasificaciones de Adobes](adobeanalytics-classifications.md)
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
-   + [Integración de Destinatario con fragmentos de experiencia](experience-fragments-target.md)
+   + [Integración de destinatario con fragmentos de experiencia](experience-fragments-target.md)
 + Prácticas recomendadas   {#bestpractices}
    + [Prácticas recomendadas  ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
@@ -163,5 +163,5 @@ ht-degree: 14%
    + [Administración de etiquetas](tags.md)
    + [Exportador de páginas](page-exporter.md)
    + [Consola de etiquetado de IU clásica](classic-console.md)
-   + [Gestor de contenido para pantallas](content-management-screens.md)
+   + [gestor de contenido para pantallas](content-management-screens.md)
    + [Acceso a WebDAV](webdav-access.md)

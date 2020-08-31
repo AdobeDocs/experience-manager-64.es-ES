@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de AEM 6.4
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 89%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 89%
 # Guía del usuario de creación de AEM 6.4 {#authoring}
 
 + [Descripción general de la Guía del usuario de creación](home.md)
-+ tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
++ Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
@@ -55,7 +55,6 @@ ht-degree: 89%
    + [Andamiaje](scaffolding.md)
    + [Configurar componentes en modo Diseño](default-components-designmode.md)
    + [Componentes de base](default-components-foundation.md)
-   + [Andamiaje](scaffolding.md)
 + Proyectos {#projects}
    + [Proyectos](projects.md)
    + [Administración de proyectos](touch-ui-managing-projects.md)
@@ -65,8 +64,8 @@ ht-degree: 89%
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
    + [Creación de lanzamientos](launches-creating.md)
-   + [Edición de lanzamientos](launches-editing.md) 
-   + [Promoción de lanzamientos](launches-promoting.md) 
+   + [Edición de lanzamientos](launches-editing.md)
+   + [Promoción de lanzamientos](launches-promoting.md)
 + Flujos de trabajo {#workflows}
    + [Uso de flujos de trabajo](workflows.md)
    + [Aplicación de flujos de trabajo a las páginas](workflows-applying.md)
@@ -84,7 +83,7 @@ ht-degree: 89%
    + [Uso del contenido de destino de varios sitios](multisite-support-targeted-content.md)
    + [Estructurar la administración de diversos sitios para el contenido segmentado](technical-multisite-targeted.md)
    + [Administración de actividades](activitylib.md)
-   + [Administrar audiencias](managing-audiences.md) 
+   + [Administrar audiencias](managing-audiences.md)
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
 + AEM y Adobe Campaign {#aem-adobe-campaign}

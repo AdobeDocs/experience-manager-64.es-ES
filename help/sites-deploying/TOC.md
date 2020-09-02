@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guía de implementación de AEM 6.4
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 11%
 + Introducción a la Plataforma AEM {#introduction}
    + [Introducción a la Plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
-   + [Elementos de Almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
+   + [Elementos de almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
 + Implementación de AEM {#deploying}
    + [Implementación y mantenimiento](deploy.md)
@@ -68,6 +68,7 @@ ht-degree: 11%
    + [Evaluación de la complejidad de la actualización con el detector de patrones](pattern-detector.md)
    + [Compatibilidad con versiones anteriores en AEM 6.4](backward-compatibility.md)
    + [Procedimiento de actualización](upgrade-procedure.md)
+   + [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](upgrade-offline-reindexing.md)
    + [Realización de una actualización in situ](in-place-upgrade.md)
    + [Migración de contenido diferido](lazy-content-migration.md)
    + [Uso de la herramienta de migración CRX2Oak](using-crx2oak.md)
@@ -89,7 +90,7 @@ ht-degree: 11%
    + [Reestructuración del repositorio para AEM Communities en 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Información general sobre comercio electrónico](ecommerce.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [COMMERCE CLOUD SAP](sap-commerce-cloud.md)
    + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Prácticas recomendadas   {#practices}

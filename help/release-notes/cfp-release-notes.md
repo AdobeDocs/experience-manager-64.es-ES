@@ -4,9 +4,9 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3331'
 ht-degree: 14%
 
 ---
@@ -158,6 +158,8 @@ Adobe Experience Manager 6.4.8.2 proporciona correcciones para los siguientes pr
 **Actualización**
 
 * Al actualizar la versión a [!DNL JBoss] 7.0.9 para [!DNL Experience Manager Forms] Documento Security en un [!DNL Linux] entorno, se produce un error (CQ-4300546).
+
+Para obtener información sobre las actualizaciones de seguridad, consulte la página [de boletines de seguridad de](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
 
 ## Revisiones y paquetes de funciones incluidos en los paquetes de correcciones acumulativas anteriores {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 

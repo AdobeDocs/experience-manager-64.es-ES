@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 3%
@@ -124,7 +124,7 @@ Una vez que se incluye apps.an-scf-sandbox clientlibs, el componente de comentar
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-La instrucción include pertenece al <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> de la sección <html> script. El valor predeterminado **`foundation head.jsp`** incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
+La sentencia include pertenece a la `<head>` sección de la `<html>` secuencia de comandos. El valor predeterminado **`foundation head.jsp`** incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
 
 **Copie headlibs.jsp e incluya clientlibs:**
 
@@ -132,7 +132,7 @@ La instrucción include pertenece al <head><meta http-equiv="Content-Type" conte
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Copiar]** (o seleccione Copiar en la barra de herramientas)
 1. Seleccione **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]** (o seleccione Pegar en la barra de herramientas)
-1. Haga clic en el Doble **`headlibs.jsp`** para abrirlo
+1. Haga clic en el doble **`headlibs.jsp`** para abrirlo
 1. Anexe la línea siguiente al final del archivo
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**

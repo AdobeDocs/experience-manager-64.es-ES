@@ -3,9 +3,9 @@ title: Metadatos en cascada
 description: En este artículo se describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 13%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 13%
 # Cascading Metadata {#cascading-metadata}
 
 En este artículo se describe cómo definir metadatos en cascada para los recursos.
+
+>[!CAUTION]
+>
+>Los metadatos en cascada no son compatibles con los fragmentos de contenido.
 
 Al capturar la información de metadatos de un recurso, los usuarios proporcionan información en los distintos campos disponibles. Puede mostrar campos de metadatos específicos o valores de campo que dependen de las opciones seleccionadas en los demás campos. Esta visualización condicional de metadatos se denomina metadatos en cascada. En otras palabras, puede crear una dependencia entre un valor o campo de metadatos concreto y uno o más campos y/o sus valores.
 

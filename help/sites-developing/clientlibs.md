@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -181,8 +181,8 @@ A continuación, establezca la `allowProxy` propiedad en `foo` true.
 1. Seleccione la carpeta de la biblioteca del cliente y haga clic en **Crear > Crear archivo**.
 1. En el cuadro Nombre de archivo, escriba uno de los siguientes nombres de archivo y haga clic en Aceptar:
 
-   * **`js.txt`::**Utilice este nombre de archivo para generar un archivo JavaScript.
-   * **`css.txt`::**Utilice este nombre de archivo para generar una hoja de estilo en cascada.
+   * **`js.txt`::** Utilice este nombre de archivo para generar un archivo JavaScript.
+   * **`css.txt`::** Utilice este nombre de archivo para generar una hoja de estilo en cascada.
 
 1. Abra el archivo y escriba el siguiente texto para identificar la raíz de la ruta de los archivos de origen:
 
@@ -242,7 +242,6 @@ En algunos casos, es posible que el HTML final generado para una página típica
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ Por ejemplo, en la tabla siguiente se lista el valor de la `channels` propiedad 
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*ningún valor *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*ningún valor*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |

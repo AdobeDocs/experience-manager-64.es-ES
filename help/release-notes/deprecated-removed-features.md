@@ -2,10 +2,10 @@
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 27%
+source-wordcount: '1281'
+ht-degree: 26%
 
 ---
 
@@ -40,6 +40,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Forms | Uso desaprobado de JSONObject en Consulta y OperationOptions. Las siguientes API están en desuso: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Uso de la `IValueMap` API |
 | Forms | Servicio de puente de migración central obsoleto. | No se ofrece reemplazo. |
 | Assets | La descarga de recursos ha quedado obsoleta a partir de AEM 6.4. |  |
+| Desarrolladores | Biblioteca de cliente de guion bajo/guion bajo. Adobe no planea seguir manteniendo y actualizando la biblioteca de clientes Lodash/underscore que se envía como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún requieren Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -162,10 +163,10 @@ La tabla siguiente lista las funciones y capacidades que se han eliminado de la 
 | Forms | Se ha eliminado la compatibilidad con imágenes dentro de fragmentos de documento. | Las comunicaciones interactivas permiten utilizar imágenes directamente en canales impresos y Web. |
 | Forms | Actualización fuera del lugar | No hay soporte para realizar la actualización fuera del lugar |
 | Forms | Transferir para migraciones de TarMK a DocumentMK | Puede exportar los datos de sistemas anteriores y luego importarlos en un sistema de configuración reciente. Para obtener instrucciones detalladas, consulte AEM Forms en documentación de actualización de JEE |
-| Forms | No hay AEM Forms disponibles en el instalador de 32 bits JEE. | Adobe ha dejado de enviar AEM Forms en el programa de instalación JEE de 32 bits. Puede seguir utilizando el instalador de 64 bits para instalar AEM Forms en JEE. |
+| Forms | AEM Forms en el instalador de 32 bits JEE no está disponible. | Adobe ha dejado de enviar AEM Forms en el instalador de 32 bits JEE. Puede seguir utilizando el instalador de 64 bits para instalar AEM Forms en JEE. |
 | Forms | Se ha eliminado la compatibilidad con el uso de imágenes DAM en el componente Fragmento de Documento. | Puede utilizar los componentes Imagen y Gráfico en el canal de impresión de la comunicación interactiva. Si utiliza el componente de fragmento de documento de documento adaptable en formularios adaptables, dejará de funcionar después de actualizar a AEM 6.4 Forms. |
 | Forms | Se ha eliminado la función Documentos adaptables | Puede utilizar la función de comunicaciones interactivas para crear comunicaciones impresas y basadas en Web. Si utiliza Documentos adaptables, instale el paquete de compatibilidad para seguir utilizando documentos adaptables existentes |
-| Forms | Se han eliminado AEM Forms de la página de aterrizaje específica de JEE. | AEM Forms en la página de aterrizaje JEE se sustituye por AEM página de aterrizaje (/aem/start.html) |
+| Forms | Se ha eliminado AEM Forms en la página de aterrizaje específica de JEE. | La página de aterrizaje de AEM Forms en JEE se sustituye por AEM página de aterrizaje (/aem/start.html) |
 | Forms | Se ha eliminado la compatibilidad con Captcha predeterminada | Utilice el servicio reCAPTCHA de Google. |
 | Forms | Se ha eliminado la compatibilidad con campos Flash en AEM Designer. AEM Designer no permite editar campos Flash utilizados en un formulario. | Puede utilizar AEM Designer lanzado para una versión anterior para editar estos formularios. |
 | Communities | Se ha eliminado la compatibilidad con la verificación de Captcha. | Utilice la integración captcha personalizada (como reCAPTCHA por Google) para la verificación. |

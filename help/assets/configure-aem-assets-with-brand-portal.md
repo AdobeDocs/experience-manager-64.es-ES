@@ -3,10 +3,10 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Descubra cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 46%
+source-wordcount: '1678'
+ht-degree: 47%
 
 ---
 
@@ -254,10 +254,6 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >
    >Los agentes de replicación trabajan en paralelo y comparten la distribución del trabajo por igual, aumentando así la velocidad de publicación en cuatro veces la velocidad original. Una vez configurado el servicio en la nube, no se requiere una configuración adicional para habilitar los agentes de replicación activados de forma predeterminada para habilitar la publicación en paralelo de varios recursos.
 
-   >[!NOTE]
-   >
-   >Evite desactivar cualquiera de los agentes de replicación, ya que puede provocar errores en la replicación de algunos de los recursos.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -267,15 +263,13 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
    ![](assets/test-integration5.png)
 
-   >[!NOTE]
-   >
-   >Los agentes de replicación trabajan en paralelo y comparten la distribución del trabajo por igual, aumentando así la velocidad de publicación en cuatro veces la velocidad original. Una vez configurado el servicio en la nube, no se requiere una configuración adicional para habilitar los agentes de replicación activados de forma predeterminada para habilitar la publicación en paralelo de varios recursos.
 
 1. Compruebe los resultados de la prueba en los cuatro agentes de replicación uno por uno.
 
    >[!NOTE]
    >
    >Evite desactivar cualquiera de los agentes de replicación, ya que puede provocar errores en la replicación de algunos de los recursos.
+   >Asegúrese de que los cuatro agentes de replicación estén configurados para evitar errores de tiempo de espera. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal se ha configurado correctamente con su instancia de autor de AEM Assets. Ahora puede:
 

@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 1%
@@ -63,9 +63,9 @@ El `package.json` archivo define los requisitos del paquete completo de SPA. Las
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -86,7 +86,7 @@ Puede encontrar más detalles [en GitHub aquí](https://github.com/wcm-io-fronte
 >
 >La versión mínima del `aem-clientlib-generator` requerido es 1.4.1.
 
-El `aem-clientlib-generator` se configura en el `clientlib.config.js` archivo como se indica a continuación.
+El `aem-clientlib-generator` se configura en el `clientlib.config.js` archivo de la siguiente manera.
 
 ```
 module.exports = {
@@ -139,10 +139,10 @@ Un componente de imagen simplificado se utiliza como ejemplo, pero todos los com
 
 El punto de entrada en la SPA es, por supuesto, el archivo mostrado aquí se simplifica para centrarse en el contenido importante. `index.js`
 
-```
+```javascript
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -167,7 +167,7 @@ Cuando se crea una instancia del componente mediante una plantilla de componente
 Al procesar la aplicación, realiza llamadas `index.js` `App.js`, que se muestran aquí en una versión simplificada para centrarse en el contenido importante.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -185,7 +185,7 @@ export default withModel(App);
 Al procesar la página, las llamadas `App.js` `Page.js` se enumeran aquí en una versión simplificada.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -206,7 +206,7 @@ Con la página representada, se pueden procesar los componentes como `Image.js` 
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -249,7 +249,7 @@ Puede exportar un componente y mantenerlo editable.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 

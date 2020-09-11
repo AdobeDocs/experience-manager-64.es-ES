@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Guía del usuario en desarrollo
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 10%
 
 ---
@@ -48,8 +48,8 @@ ht-degree: 10%
    + [Creación de un nuevo componente de campo de interfaz de usuario de Granite](granite-ui-component.md)
    + Query Builder{#query-builder}
       + [Implementación de un evaluador de predicados personalizado para el Generador de Consultas](implementing-custom-predicate-evaluator.md)
-      + [Referencia de predicado del Generador de Consultas](querybuilder-predicate-reference.md)
-      + [API de Consulta Builder](querybuilder-api.md)
+      + [Referencia de predicado del Generador de consultas](querybuilder-predicate-reference.md)
+      + [API de consulta Builder](querybuilder-api.md)
    + Etiquetado{#tagging}
       + [Etiquetado](tags.md)
       + [AEM marco de etiquetado](framework.md)
@@ -114,7 +114,7 @@ ht-degree: 10%
       + [Enrutamiento del modelo SPA](spa-routing.md)
       + [Integración de SPA y Adobe Experience Platform Launch](spa-launch.md)
       + [SPA y procesamiento del lado del servidor](spa-ssr.md)
-      + [Referencias de la API de JavaScript de SPA](spa-reference-materials.md)
+      + [Materiales de referencia de SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragmentos de contenido](/help/assets/content-fragments.md)
    + [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)

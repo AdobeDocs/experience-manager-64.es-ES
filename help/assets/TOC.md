@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de AEM 6.4 Assets
+breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 44%
@@ -27,7 +28,7 @@ ht-degree: 44%
    + [Recursos multilingües](multilingual-assets.md)
    + [Uso de recursos de Adobe Stock en AEM Assets](aem-assets-adobe-stock.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
-   + [Flujo de Actividad en la línea de tiempo](activity-stream.md)
+   + [Flujo de actividad en la línea de tiempo](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
    + [Añadir mapas de imagen](image-maps.md)
    + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)

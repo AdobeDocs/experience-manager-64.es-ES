@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ La `PageModelManager` biblioteca se proporciona como un paquete NPM para que lo 
 
 En nombre de la SPA, abstrae la recuperación y administración de la estructura JSON que representa la estructura de contenido real. También es responsable de la sincronización con la SPA para informarle de cuándo tiene que volver a procesar sus componentes.
 
-Consulte el paquete NPM [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Consulte el paquete NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Al inicializar la `PageModelManager`, la biblioteca carga primero el modelo raíz proporcionado de la aplicación (mediante parámetro, meta propiedad o URL actual). Si la biblioteca identifica que el modelo de la página actual no forma parte del modelo raíz que busca e incluye como modelo de una página secundaria.
 
@@ -99,14 +99,14 @@ La separación de las preocupaciones ayuda a facilitar la ejecución del proyect
 
 Para facilitar la interoperabilidad de las bibliotecas, Adobe aconseja al módulo específico de la estructura que agrupe las siguientes bibliotecas. Si es necesario, la capa puede encapsular y adaptar las API subyacentes antes de exponerlas al proyecto.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-mapeo de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementaciones {#implementations}
 
 #### React {#react}
 
-módulo npm: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+módulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Angular {#angular}
 
@@ -169,7 +169,7 @@ El componente Cuadrícula adaptable debe estar preasignado a su contraparte AEM,
 * `gridClassNames:` Nombres de clase proporcionados para la cuadrícula adaptable
 * `columnClassNames:` Nombres de clase proporcionados para la columna adaptable
 
-Consulte también el recurso npm [@adobe/cq-response-editable-components#srccomponentsSresponsivegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Consulte también el recurso npm [@adobe/aem-response-editable-components#srccomponentsSresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Marcador de posición de la cuadrícula de respuesta {#placeholder-of-the-reponsive-grid}
 

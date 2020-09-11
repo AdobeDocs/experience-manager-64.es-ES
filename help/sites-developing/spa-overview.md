@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -49,7 +49,7 @@ El componente de página de un SPA no proporciona los elementos HTML de sus comp
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `cq-react-editable-components` npm. El modelo de página es un intérprete entre AEM y la SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
+La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `aem-react-editable-components` npm. El modelo de página es un intérprete entre AEM y la SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página SPA hereda del componente principal de la página, hay dos opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
 
@@ -223,7 +223,7 @@ Para obtener información adicional sobre la propiedad `editElementQuery` y la c
 
 El SDK del Editor de SPA de AEM se introdujo con AEM 6.4 service pack 2. Cuenta con el pleno apoyo del Adobe y, como nueva característica, sigue ampliándose y ampliándose. El Editor de SPA aún no cubre las siguientes funciones de AEM:
 
-* Modo Destinatario
+* Modo destinatario
 * ContextHub
 * Edición de imágenes en línea
 * Editar configuraciones (p. ej. oyentes)

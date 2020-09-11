@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: d731d290738403f41e601da8e9bdb9bd3b94bcd4
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '9984'
 ht-degree: 0%
@@ -153,7 +153,7 @@ Debe especificar el nombre de la aplicación y el nombre del proceso en la defin
 
 >[!NOTE]
 >
->Para obtener información sobre el proceso de corta duración de ejemplo `MyApplication/EncryptDocument` , consulte Ejemplo [de proceso de](/help/forms/developing/aem-forms-processes.md)corta duración.
+>Para obtener más información sobre el proceso de corta duración de ejemplo `MyApplication/EncryptDocument` , consulte Ejemplo [](/help/forms/developing/aem-forms-processes.md)de proceso de corta duración.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Asigne valores a los campos que pertenecen a la `BLOB` instancia de la siguiente
 
 El protocolo de transmisión de los objetos devueltos `BLOB` depende de varios factores, que se consideran en el siguiente orden, que se detienen cuando se cumple la condición principal:
 
-1. **La URL de Destinatario especifica el protocolo** de transmisión. Si la URL de destinatario especificada en la invocación SOAP contiene el parámetro `blob="`*BLOB_TYPE *&quot;,* BLOB_TYPE *determina el protocolo de transmisión.* BLOB_TYPE *es un marcador de posición para base64, DIME, Mime, http, Mtom o swaref.
+1. **La URL de destinatario especifica el protocolo** de transmisión. Si la URL de destinatario especificada en la invocación SOAP contiene el parámetro `blob="`*BLOB_TYPE*&quot;, *BLOB_TYPE* determina el protocolo de transmisión. *BLOB_TYPE* es un marcador de posición para base64, DIME, Mime, http, Mtom o swaref.
 1. **El extremo SOAP de servicio es inteligente**. Si las condiciones siguientes son verdaderas, los documentos de salida se devuelven utilizando el mismo protocolo de transmisión que los documentos de entrada:
 
    * El parámetro de extremo SOAP del servicio Protocolo predeterminado para objetos de blob de salida se establece en Smart.
@@ -349,7 +349,7 @@ La siguiente tabla lista los tipos de datos Java y muestra el tipo de datos corr
 
 **Sitio web de Adobe Developer**
 
-El sitio web de Adobe Developer contiene el siguiente artículo que trata la invocación de los servicios de AEM Forms mediante la API de servicio web:
+El sitio web de desarrolladores de Adobe contiene el siguiente artículo que analiza la invocación de servicios de AEM Forms mediante la API de servicio web:
 
 [Creación de formularios que procesan aplicaciones ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
 
@@ -361,7 +361,7 @@ El sitio web de Adobe Developer contiene el siguiente artículo que trata la inv
 
 ## Creación de clases proxy de Java mediante JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
-Puede utilizar JAX-WS para convertir un servicio de Forms WSDL a clases proxy de Java. Estas clases le permiten invocar operaciones de servicios de AEM Forms. Apache Ant permite crear una secuencia de comandos de compilación que genera clases proxy de Java haciendo referencia a un WSDL de servicio de AEM Forms. Puede generar archivos proxy JAX-WS siguiendo estos pasos:
+Puede utilizar JAX-WS para convertir un servicio de Forms WSDL a clases proxy de Java. Estas clases le permiten invocar operaciones de servicios de AEM Forms. Apache Ant le permite crear una secuencia de comandos de compilación que genera clases proxy de Java haciendo referencia a un WSDL de servicio de AEM Forms. Puede generar archivos proxy JAX-WS siguiendo estos pasos:
 
 1. Instale Apache Ant en el equipo cliente. (Consulte [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi)).
 
@@ -1507,12 +1507,12 @@ Para asegurarse de que la invocación asincrónica funciona, modifique el valor 
 La siguiente lista especifica otros servicios que necesitan un archivo de enlace personalizado cuando se invocan de forma asíncrona:
 
 * PDFG3D
-* Administrador de Tareas
+* Administrador de tareas
 * Application Manager
 * Administrador de directorios
 * Distiller
 * Rights Management
-* Administración de Documentos
+* Administración de documentos
 
 ### Diferencias en los servidores de aplicaciones J2EE {#differences-in-j2ee-application-servers}
 

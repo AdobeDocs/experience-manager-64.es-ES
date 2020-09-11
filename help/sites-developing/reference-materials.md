@@ -11,7 +11,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 4%
@@ -39,10 +39,10 @@ AEM proporciona varias API para desarrollar aplicaciones. La siguiente lista pro
 
 Referencias de la API de JavaScript del marco del SDK del Editor de la aplicación de una sola página AEM (SPA):
 
-* [Asignación de componentes](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [Componentes editables React](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [Componentes editables angulares](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [Componentes editables React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Componentes editables angulares](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 API de Gestor de contenido y Envío de AEM:
 
@@ -54,7 +54,7 @@ API de Gestor de contenido y Envío de AEM:
 
 * [API HTTP de AEM Assets](/help/assets/mac-api-assets.md)
 
-Los siguientes recursos externos son solo de referencia:
+Los siguientes recursos externos son sólo de referencia:
 
 * [API de Apache Sling 10](https://sling.apache.org/apidocs/sling10/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)

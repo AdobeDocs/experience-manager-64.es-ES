@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 1%
@@ -62,9 +62,9 @@ El `package.json` archivo define los requisitos del paquete completo de SPA. Aqu
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -78,7 +78,7 @@ Puede encontrar más detalles [en GitHub aquí](https://github.com/wcm-io-fronte
 >
 >La versión mínima del `aem-clientlib-generator` requerido es 1.4.1.
 
-El `aem-clientlib-generator` se configura en el `clientlib.config.js` archivo como se indica a continuación.
+El `aem-clientlib-generator` se configura en el `clientlib.config.js` archivo de la siguiente manera.
 
 ```
 module.exports = {
@@ -131,12 +131,12 @@ Un componente de imagen simplificado se utiliza como ejemplo, pero todos los com
 
 El punto de entrada en la SPA es el `app.module.ts` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ Cuando se crea una instancia del componente mediante una plantilla de componente
 
 Una vez `app.module.ts` arrancados `AppComponent`, puede inicializar la aplicación, que se muestra aquí en una versión simplificada para centrarse en el contenido importante.
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -194,13 +194,13 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-Al procesar la página, `app.component.ts` las llamadas `main-content.component.ts` se enumeran aquí en una versión simplificada.
+Al procesar la página, `app.component.ts` las llamadas `main-content.component.ts` se enumeran en una versión simplificada.
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',

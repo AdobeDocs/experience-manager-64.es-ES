@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Cada elemento presente en el modelo contiene un `:type` campo que expone un tipo
 
 Consulte el documento de modelo [SPA](/help/sites-developing/spa-blueprint.md) para obtener más información sobre el análisis de modelos y el acceso de componentes front-end al modelo.
 
-Consulte también el paquete npm: [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+Consulte también el paquete npm: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Aplicación de página única basada en modelo {#model-driven-single-page-application}
 

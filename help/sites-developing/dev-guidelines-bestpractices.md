@@ -1,6 +1,6 @@
 ---
-title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
-seo-title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
+title: '"Desarrollo de AEM: directrices y prácticas recomendadas"'
+seo-title: '"Desarrollo de AEM: directrices y prácticas recomendadas"'
 description: Directrices y mejores prácticas para la elaboración de AEM
 seo-description: Directrices y mejores prácticas para la elaboración de AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff

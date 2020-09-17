@@ -3,9 +3,9 @@ title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de AEM para habilitar funcionalidades individuales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 3%
 
 ---
@@ -470,7 +470,7 @@ En CRXDE, agregue un solo carácter para que esté disponible en la barra de her
    * **Nombre** puede especificar el nombre, pero debe reflejar el rango de caracteres; por ejemplo, lápices.
    * **Tipo** `nt:unstructured`
 
-1. Bajo este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
+1. En este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
 
@@ -706,7 +706,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
       * **Nombre** `cssExternal`
       * **Tipo** `String`
       * **Valor** del nombre de la clase CSS (sin un &#39;.&#39; anterior); for example, `cssClass` instead of `.cssClass`)
-   * Matriz de **protocolos** válidos (incluidos https://, https:// file://, mailto:, entre otros)
+   * Matriz de **protocolos** válidos. Los protocolos admitidos son `http://`, `https://`, `file://`y `mailto:`.
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`

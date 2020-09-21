@@ -3,10 +3,10 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Descubra cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
+source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 47%
+source-wordcount: '1692'
+ht-degree: 46%
 
 ---
 
@@ -78,6 +78,11 @@ Realice los siguientes pasos en la secuencia mostrada si va a configurar AEM Ass
 1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
 1. [Configurar el servicio en la nube](#configure-the-cloud-service)
 1. [Probar la configuración](#test-integration)
+
+>[!NOTE]
+>
+>Una instancia de autor de AEM Assets solo se configurará con un inquilino de Brand Portal.
+
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 

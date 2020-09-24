@@ -7,10 +7,10 @@ uuid: b0280a70-643e-4455-82ea-fa7a90823b53
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Para ejecutar un grupo de pruebas:
 
 1. El marcador de posición se reemplaza por el contenido de la página a medida que se ejecuta la prueba.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Revise los resultados del caso de prueba tocando o haciendo clic en la descripción para abrir el panel **Resultado** . Al tocar o hacer clic en el nombre del caso de prueba en el panel **Resultado** se muestran todos los detalles.
 
@@ -104,7 +104,7 @@ Para obtener más información sobre la creación de sus propios grupos de prueb
 
 1. Abra CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 1. Haga clic con el botón secundario en la `/etc/clientlibs` carpeta y, a continuación, haga clic en **Crear > Crear carpeta**. Escriba `myTests` el nombre y haga clic en **Aceptar**.
-1. Haga clic con el botón secundario en la `/etc/clientlibs/myTests` carpeta y, a continuación, haga clic en **Crear > Crear nodo**. Utilice los siguientes valores de propiedad y haga clic en **Aceptar**:
+1. Haga clic con el botón secundario en la `/etc/clientlibs/myTests` carpeta y haga clic en **Crear > Crear nodo**. Utilice los siguientes valores de propiedad y haga clic en **Aceptar**:
 
    * Nombre: `myFirstTest`
    * Tipo: `cq:ClientLibraryFolder`

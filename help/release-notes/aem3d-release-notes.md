@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 0%
@@ -155,7 +155,7 @@ Versión 3.1
 * **Imagen de fondo de las etapas** de IBL: en algunas escenas de IBL, la imagen de fondo puede tener una calidad deficiente, como ser demasiado brillante o demasiado borrosa. Para maximizar la calidad visual del fondo de la imagen de las etapas de IBL, Adobe recomienda que prepare una imagen JPEG de alta resolución de 8 bits independiente y la adjunte al escenario de IBL como imagen **de Entorno de** fondo.
 
 * **Imagen en negro cuando se procesa con Maya utilizando un escenario** IBL: este problema probablemente se deba a que Maya no encuentra la dependencia de imagen IBL porque la imagen IBL original a la que hace referencia el escenario se reemplazó por una imagen con un nombre diferente. Para evitar este problema, asegúrese de que al menos una de las tres dependencias a las que hace referencia la etapa Maya IBL tiene el mismo nombre que la referencia del archivo IBL original en el archivo Maya.
-* **Imagen de fondo invertida para el escenario** IBL: las imágenes para las etapas IBL se voltean horizontalmente de forma intencionada para coincidir con el comportamiento del procesador de rayos mentales NVIDIA proporcionado con Autodesk Maya. Solución: Gire las imágenes utilizadas para las etapas de IBL en Photoshop antes de cargarlas.
+* **Imagen de fondo invertida para el escenario** IBL: las imágenes para las etapas IBL se voltean horizontalmente intencionadamente para coincidir con el comportamiento del procesador de rayos mentales NVIDIA que se proporciona con Autodesk Maya. Solución: Gire las imágenes utilizadas para las etapas de IBL en Photoshop antes de cargarlas.
 * **Brillo de las etapas** de IBL: la análisis automática de la imagen IBL puede resultar en una escena demasiado oscura o brillante. Para ajustar el brillo de la iluminación de las etapas de IBL, navegue hasta Propiedades **** básicas y ajuste el valor **luminoso** de **Entorno Lighting** según sea necesario.
 
 ### Componente AEM Sites 3D {#aem-sites-d-component}
@@ -169,4 +169,4 @@ Versión 3.1
 
 * **Configuración** de componentes 3D: debe instalar el paquete de funciones 3D en todos los nodos activos de Publish y cada nodo debe configurarse con **CRXDE Lite** a las mismas opciones de configuración en `/libs/settings/dam/v3D/WebGLSites`.
 
-* **Faltan texturas, fondo o iluminación después de la publicación** : el mecanismo de **publicación** de AEM Sites publica automáticamente las dependencias principales de la página, incluido el modelo 3D y el escenario 3D al que hace referencia el componente 3D. Las etapas 3D y los modelos 3D suelen depender de los recursos secundarios para las imágenes IBL y los mapas de textura, que el mecanismo Publicación de sitios no publica automáticamente. Solución: publicar todos los recursos 3D de Recursos antes de publicar la página web desde Sitios. De este modo, se garantiza que todas las dependencias de los recursos 3D estén disponibles en los nodos Publicar.
+* **Faltan texturas, fondo o iluminación después de la publicación** : el mecanismo de **publicación** de AEM Sites publica automáticamente las dependencias principales de la página, incluidos el modelo 3D y el escenario 3D al que hace referencia el componente 3D. Las etapas 3D y los modelos 3D suelen depender de los recursos secundarios para las imágenes IBL y los mapas de textura, que el mecanismo Publicación de sitios no publica automáticamente. Solución: publicar todos los recursos 3D de Recursos antes de publicar la página web desde Sitios. De este modo, se garantiza que todas las dependencias de los recursos 3D estén disponibles en los nodos Publicar.

@@ -7,10 +7,10 @@ uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
-topic-tags: grdp
+topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Como breve introducción, las regulaciones para la protección y la privacidad d
 
 * Entidades comerciales (CCPA) y/o controladores de datos (RGPD)
 
-* Proveedores de servicio (CCPA) y/o procesadores de datos (RGPD)
+* proveedores de servicio (CCPA) y/o procesadores de datos (RGPD)
 
 Las principales disposiciones de esos reglamentos son las siguientes:
 
@@ -68,7 +68,7 @@ Para Adobe Experience Manager:
 
    * Esto significa que el cliente gestiona las funciones reglamentarias, incluidas las entidades comerciales y el Proveedor de servicio, el controlador de datos y el procesador de datos, entre otras.
 
-   * Adobe Experience Platform Privacy Service no formará parte del flujo de trabajo para AEM, como se ilustra en el diagrama siguiente.
+   * El Adobe Experience Platform Privacy Service no formará parte del flujo de trabajo para AEM, como se ilustra en el diagrama siguiente.
 
 * AEM incluye documentación y procedimientos para que el administrador de privacidad del cliente y/o AEM administrador ejecuten las solicitudes de regulación de privacidad; manualmente o a través de API, cuando esté disponible.
 
@@ -132,7 +132,7 @@ AEM Forms incluye componentes y flujos de trabajo que capturan, procesan y almac
 * [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Administración de correspondencia](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integración con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-* [flujos de trabajo centrados en Forms en OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [flujos de trabajo](/help/forms/using/forms-workflow-jee-handling-user-data.md) Forms JEE (solo AEM Forms JEE)
-* [Seguridad](/help/forms/using/document-security-handling-user-data.md) de Documento (solo AEM Forms JEE)
+* [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Flujos de trabajo](/help/forms/using/forms-workflow-jee-handling-user-data.md) Forms JEE (solo AEM Forms JEE)
+* [Seguridad](/help/forms/using/document-security-handling-user-data.md) de documento (solo AEM Forms JEE)
 * [Administración](/help/forms/using/user-management-handling-user-data.md) de usuarios (solo AEM Forms JEE)

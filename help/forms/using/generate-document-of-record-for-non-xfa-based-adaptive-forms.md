@@ -5,12 +5,12 @@ description: Explica cómo se puede generar una plantilla para un documento de r
 seo-description: Explica cómo se puede generar una plantilla para un documento de registros (DoR) para formularios adaptables.
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 3%
@@ -51,7 +51,7 @@ Cuando se crea un formulario adaptable, se puede seleccionar un modelo de formul
 
 Al seleccionar un modelo de formulario, configure el documento del registro mediante las opciones disponibles en Documento de la Configuración de la plantilla de registro. See [Document of Record Template Configuration](#document-of-record-template-configuration).
 
-## documento generado automáticamente del registro {#automatically-generated-document-of-record}
+## Documento generado automáticamente del registro {#automatically-generated-document-of-record}
 
 Un documento de registro permite a los clientes conservar una copia del formulario enviado para imprimirlo. Cuando se genera automáticamente un documento de registro, cada vez que se cambia el formulario, su documento de registro se actualiza inmediatamente. Por ejemplo, se quita el campo de edad para los clientes que seleccionan Estados Unidos de América como su país. Cuando estos clientes generan un documento de registro, el campo de edad no es visible para ellos en el documento del registro.
 
@@ -212,7 +212,7 @@ Los componentes de la tabla de formularios adaptables, como el encabezado, el pi
 
 ## Plantilla base de un documento de registro {#base-template-of-a-document-of-record}
 
-La plantilla base proporciona información de estilo y apariencia para el documento del registro. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, desea agregar el logotipo de la compañía en el encabezado y la información de copyright en el pie del documento del registro. La página de formato de la plantilla base se utiliza como página de formato para el documento de la plantilla de registro. La página de formato puede tener información como encabezado de página, pie de página y número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento del registro mediante la plantilla base para la generación automática del documento del registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
+La plantilla base proporciona información de estilo y apariencia para el documento del registro. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, desea agregar el logotipo de compañía en el encabezado y la información de copyright en el pie del documento del registro. La página de formato de la plantilla base se utiliza como página de formato para el documento de la plantilla de registro. La página de formato puede tener información como encabezado de página, pie de página y número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento del registro mediante la plantilla base para la generación automática del documento del registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
 Siga las convenciones [de plantilla](#base-template-conventions) base al diseñar la plantilla base.
 
@@ -272,7 +272,7 @@ Realice los siguientes pasos para configurar un documento de registros para form
 
    >[!NOTE]
    >
-   >En la ficha Modelo de formulario, asegúrese de seleccionar **Esquema** o **Ninguno** en la lista desplegable **Seleccionar desde** . **[!UICONTROL No se admite el Documento de registros en formularios basados en XFA o adaptables con la plantilla de formulario como modelo de formulario.]**
+   >En la ficha Modelo de formulario, asegúrese de seleccionar **Esquema** o **Ninguno** en la lista desplegable **Seleccionar desde** . **[!UICONTROL No se admite el documento de registros en formularios basados en XFA o adaptables con la plantilla de formulario como modelo de formulario.]**
 
 1. En la sección Documento de la configuración de la plantilla de registro de la ficha Modelo de formulario, seleccione una de las siguientes opciones.
 
@@ -362,7 +362,7 @@ Campos de un panel procesados en una composición de columnas en el documento de
 
 ## Documento de la configuración de registro {#document-of-record-settings}
 
-El Documento de la configuración de registro permite elegir las opciones que desee incluir en el documento de registro. Por ejemplo, un banco acepta el nombre, la edad, el número de la seguridad social y el número de teléfono en un formulario. El formulario genera un número de cuenta bancaria y detalles de sucursal. Puede elegir mostrar únicamente el nombre, el número de la seguridad social, la cuenta bancaria y los detalles de la sucursal en documento del registro.
+El documento de la configuración de registro permite elegir las opciones que desee incluir en el documento de registro. Por ejemplo, un banco acepta el nombre, la edad, el número de la seguridad social y el número de teléfono en un formulario. El formulario genera un número de cuenta bancaria y detalles de sucursal. Puede elegir mostrar únicamente el nombre, el número de la seguridad social, la cuenta bancaria y los detalles de la sucursal en documento del registro.
 
 El documento de la configuración de registro de un componente está disponible en sus propiedades. Para acceder a las propiedades de un componente, selecciónelo y haga clic en ![cmppr](assets/cmppr.png) en la superposición. Las propiedades se enumeran en la barra lateral y se pueden encontrar los siguientes ajustes.
 
@@ -383,10 +383,10 @@ El documento de la configuración de registro de un componente está disponible 
 
 Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en documento de registros para formularios adaptables.
 
-* El Documento de plantillas de registro no admite texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento del registro.
-* Los fragmentos de Documento de un formulario adaptable no aparecen en el documento del registro. Sin embargo, se admiten fragmentos de formulario adaptables.
+* El documento de plantillas de registro no admite texto enriquecido. Por lo tanto, cualquier texto enriquecido del formulario adaptable estático o de la información rellenada por el usuario final aparece como texto sin formato en el documento del registro.
+* Los fragmentos de documento de un formulario adaptable no aparecen en el documento del registro. Sin embargo, se admiten fragmentos de formulario adaptables.
 * El documento del registro se utiliza únicamente para fines de impresión.
 * No se admite el enlace de contenido en documento de registros generado para formularios adaptables basados en Esquema XML.
 * No se admite el enlace de contenido en documento de registros generado para formularios adaptables basados en Esquema XML.
-* La versión localizada del documento del registro se crea a petición de una configuración regional cuando el usuario solicita la representación del documento del registro. La Localización del documento del registro se produce junto con la localización de la forma adaptable. Para obtener más información sobre la localización del documento de formularios adaptables y de registro, consulte [Uso de AEM flujo de trabajo de traducción para localizar formularios adaptables y documento de registros](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* La versión localizada del documento del registro se crea a petición de una configuración regional cuando el usuario solicita la representación del documento del registro. La localización del documento del registro se produce junto con la localización de la forma adaptable. Para obtener más información sobre la localización del documento de formularios adaptables y de registro, consulte [Uso de AEM flujo de trabajo de traducción para localizar formularios adaptables y documento de registros](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 

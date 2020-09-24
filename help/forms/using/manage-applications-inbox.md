@@ -6,10 +6,10 @@ seo-description: AEM bandeja de entrada le permite iniciar flujos de trabajo cen
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Cuando se activa un flujo de trabajo de Forms y usted es un usuario asignado o p
 
 ### Reclamar o delegar tareas {#claim-or-delegate-tasks}
 
-Las Tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los miembros del grupo. Cualquier miembro del grupo puede reclamar esa tarea o delegarla en otro miembro del grupo. Para ello:
+Las tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los miembros del grupo. Cualquier miembro del grupo puede reclamar esa tarea o delegarla en otro miembro del grupo. Para ello:
 
 1. Toque para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea aparecen en la parte superior.
 
@@ -59,7 +59,7 @@ Las Tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los m
 
    ![reclamar](assets/claim.png)
 
-### Detalles de Vista y realización de acciones en tareas {#view-details-and-perform-actions-on-tasks}
+### Detalles de vista y realización de acciones en tareas {#view-details-and-perform-actions-on-tasks}
 
 Al abrir una tarea, puede realizar vistas de los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en el paso Asignar tarea del flujo de trabajo de Forms asociado.
 
@@ -74,7 +74,7 @@ Al abrir una tarea, puede realizar vistas de los detalles de la tarea y realizar
 
 La vista detallada de la tarea comprende las siguientes secciones:
 
-* Detalles de Tarea
+* Detalles de tarea
 * Formulario 
 * Detalles del flujo de trabajo
 * Barra de herramientas Acciones
@@ -101,7 +101,7 @@ La barra de herramientas Acciones muestra todas las opciones disponibles para la
 
 A medida que realiza una acción en la tarea, esta continúa en el flujo de trabajo.
 
-### tareas completadas de Vista {#view-completed-tasks}
+### Tareas completadas de vista {#view-completed-tasks}
 
 AEM bandeja de entrada solo muestra tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar filtros de la Bandeja de entrada para filtrar tareas en función de varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para vista tareas completadas:
 

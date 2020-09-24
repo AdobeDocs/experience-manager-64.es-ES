@@ -5,11 +5,11 @@ description: Utilice AEM Forms Workflow para automatizar y generar rápidamente 
 seo-description: Utilice AEM Forms Workflow para automatizar y generar rápidamente revisiones y aprobaciones, para los servicios de documento de inicio (por ejemplo, para convertir un documento PDF a otro formato), integrar con el flujo de trabajo de firma de Adobe Sign, etc.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Junto con los flujos de trabajo de revisión y aprobación para audiencias inter
 
 Puede utilizar Flujos de trabajo de AEM para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo pueden utilizarse para revisiones y aprobaciones, flujos de procesos comerciales, servicios de documento de inicio, integración con el flujo de trabajo de firma de Adobe Sign y operaciones similares. Por ejemplo, el procesamiento de la aplicación de tarjeta de crédito, el empleado deja flujos de trabajo de aprobación y guarda un formulario como documento PDF. Además, estos flujos de trabajo se pueden usar dentro de una organización o a través de un servidor de seguridad de red.
 
-Con el flujo de trabajo centrado en Forms en OSGi, puede crear e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la capacidad de administración de procesos completa en la pila JEE. El desarrollo y la administración de flujos de trabajo utilizan las funciones conocidas de Flujo de trabajo de AEM y Bandeja de entrada de AEM. Los Flujos de trabajo constituyen la base para automatizar los procesos comerciales del mundo real que abarcan múltiples sistemas de software, redes, departamentos e incluso organizaciones.
+Con el flujo de trabajo centrado en Forms en OSGi, puede crear e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la capacidad de administración de procesos completa en la pila JEE. El desarrollo y la administración de flujos de trabajo utilizan las funciones conocidas de Flujo de trabajo de AEM y Bandeja de entrada de AEM. Los flujos de trabajo constituyen la base para automatizar los procesos comerciales del mundo real que abarcan múltiples sistemas de software, redes, departamentos e incluso organizaciones.
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o una carta de administración [de](/help/forms/using/cm-overview.md) correspondencia. Con estas funciones AEM de flujo de trabajo mejoradas, AEM Forms oferta dos funciones distintas pero similares. Como parte de su estrategia de implementación, debe decidir cuál es la que mejor le conviene. Consulte una [comparación](/help/forms/using/capabilities-osgi-jee-workflows.md) de los Flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -112,7 +112,7 @@ En el ejemplo se crea un modelo de flujo de trabajo con una aplicación de hipot
    }
    ```
 
-   **Fragmento de código para la rama 2**
+   **Fragmento de código para la ramificación 2**
 
    Cuando un usuario toca **[!UICONTROL Rechazar]** en AEM Bandeja de entrada, se activa la Ramificación 2.
 

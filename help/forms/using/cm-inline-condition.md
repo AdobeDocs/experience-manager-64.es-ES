@@ -6,10 +6,10 @@ seo-description: 'Con las condiciones en línea y la repetición en comunicacion
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
 
 1. Para crear una condición para evaluar si el texto seleccionado/condicionalizado aparece en la letra y, a continuación, toque la marca de verificación para guardar la expresión, haga lo siguiente:
 
-   Toque con el Doble un elemento DD para insertarlo en la condición. Inserte el operador adecuado y cree la siguiente condición en el cuadro de diálogo.
+   Toque con el doble un elemento DD para insertarlo en la condición. Inserte el operador adecuado y cree la siguiente condición en el cuadro de diálogo.
 
    ```java
    ${DD_creditcard_Gender=="Male"}
@@ -120,7 +120,7 @@ En el siguiente ejemplo se muestran los pasos para usar la opción de repetició
 
 1. Seleccione Salto de línea como separador y, si es necesario, toque Añadir condición para crear una regla. También puede utilizar el texto como separador y especificar los caracteres de texto que se utilizarán como separadores.
 
-   Aparece el cuadro de diálogo Crear regla.
+   Aparecerá el cuadro de diálogo Crear regla.
 
 1. Cree una regla que muestre las transacciones con fecha posterior al 28 de febrero de 2018 para incluir las transacciones solo para el mes de marzo en la Comunicación interactiva.
 

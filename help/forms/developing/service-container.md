@@ -1,16 +1,16 @@
 ---
-title: contenedor de servicio
-seo-title: contenedor de servicio
+title: Contenedor de servicio
+seo-title: Contenedor de servicio
 description: nulo
 seo-description: nulo
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# contenedor de servicio {#service-container}
+# Contenedor de servicio {#service-container}
 
 Los servicios de AEM Forms ubicados en el contenedor de servicios (incluidos los servicios estándar como el servicio de cifrado, los procesos duraderos y de corta duración) se pueden invocar mediante varios proveedores, como un proveedor de EJB. Un proveedor EJB permite que los servicios de AEM Forms se invoquen a través de RMI/IIOP. Un proveedor de servicio web expone los servicios como servicios web (generación WSDL) mediante estándares como SOAP/HTTP y SOAP/JMS.
 

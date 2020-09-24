@@ -5,11 +5,11 @@ description: Los formularios adaptables pueden utilizar el esquema XML como mode
 seo-description: Los formularios adaptables pueden utilizar el esquema XML como modelo de formulario, lo que permite aprovechar las plantillas XSD existentes para crear formularios adaptables. Puede arrastrar y soltar elementos de esquema desde XSD en el formulario adaptable.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 5%
@@ -24,7 +24,7 @@ ht-degree: 5%
 La creación de un formulario adaptable con un esquema XML como modelo de formulario requiere una comprensión básica de los esquemas XML. Además, se recomienda leer el siguiente contenido antes de este artículo.
 
 * [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
-* [esquema XML](https://www.w3.org/TR/xmlschema-2/)
+* [ESQUEMA XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso de un esquema XML como modelo de formulario {#using-an-xml-schema-as-form-model}
 

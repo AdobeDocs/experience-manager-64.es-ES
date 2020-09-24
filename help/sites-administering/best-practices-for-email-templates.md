@@ -7,10 +7,10 @@ uuid: 714090bd-a742-4004-a968-aebd8fd03e04
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: best-practices, integration
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Este documento describe algunas de las prácticas recomendadas en torno al diseño del correo electrónico, lo que resulta en una plantilla de campaña de correo electrónico bien desarrollada.
 
-La campaña de demostración disponible en AEM sigue todas estas optimizaciones. La forma en que se implementan las prácticas recomendadas en la campaña de demostración se describe para cada práctica recomendada.
+La campaña de demostración disponible en AEM sigue todas estas prácticas recomendadas. La forma en que se implementan las prácticas recomendadas en la campaña de demostración se describe para cada práctica recomendada.
 
 Siga estas prácticas recomendadas para crear su propia newsletter.
 
@@ -127,7 +127,7 @@ Asegúrese de que reside en una página de formato:
 | No se preocupe por JavaScript o Flash: los clientes de correo electrónico no admiten estas tecnologías. | No se utiliza JavaScript ni Flash en la plantilla de newsletter. |
 | Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado una nueva utilidad en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Se puede utilizar como punto de partida para la versión final de texto sin formato. |
 
-## Ejemplos y plantillas de newsletter de Campaña {#campaign-newsletter-templates-and-examples}
+## Ejemplos y plantillas de newsletter de campaña {#campaign-newsletter-templates-and-examples}
 
 AEM incluye varias plantillas y componentes listos para usar para crear newsletters de campaña. Puede utilizar estas plantillas y componentes para crear boletines informativos personalizados.
 

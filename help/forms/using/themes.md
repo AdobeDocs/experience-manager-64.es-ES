@@ -5,11 +5,11 @@ description: Puede utilizar temáticas para estilizar y proporcionar una identid
 seo-description: Puede utilizar temáticas para estilizar y proporcionar una identidad visual a un formulario adaptable o una comunicación interactiva. Puede compartir un tema en cualquier número de formularios adaptables o comunicaciones interactivas.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Puede hacer lo siguiente:
 
 ## Creación, descarga o carga de un tema {#creating-downloading-or-uploading-a-theme}
 
-Con AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las Temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
+Con AEM Forms, puede crear, descargar o cargar temáticas. Se crea un tema como otros recursos, como formularios, documentos y letras. El tema se guarda como una entidad independiente, con metapropiedades como los formularios. El hecho de que las temáticas sean una entidad independiente permite su reutilización en varios formularios adaptables y comunicaciones interactivas. También puede mover un tema a otra instancia de AEM Forms y reutilizarlo.
 
 ### Creación de un tema {#creating-a-theme}
 
@@ -65,7 +65,7 @@ Puede exportar temáticas como archivo zip y utilizarlas en otros proyectos o in
 
 >[!NOTE]
 >
->Si descarga un tema que tiene un formulario adaptable asociado a él y el formulario adaptable asociado se basa en una plantilla personalizada, descargue también la plantilla personalizada. Al cargar el tema descargado y el formulario adaptable en un servidor de AEM Forms, cargue también la plantilla personalizada relacionada.
+>Si descarga un tema que tiene asociado un formulario adaptable y el formulario adaptable asociado se basa en una plantilla personalizada, descargue también la plantilla personalizada. Al cargar el tema descargado y el formulario adaptable en un servidor de AEM Forms, cargue también la plantilla personalizada relacionada.
 
 ### Carga de un tema {#uploading-a-theme}
 
@@ -224,19 +224,19 @@ El Editor de temas se divide en dos paneles:
    * **Estado:** Permite personalizar estilos de un objeto en un estado específico. Por ejemplo, puede especificar el aspecto que tendrá un objeto cuando esté en estado predeterminado, de enfoque, deshabilitado, de desplazamiento o de error.
    * **Categorías de propiedades:** Las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimension y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
    * **Avanzado:** Permite agregar CSS personalizada a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
-   * **CSS** de Vista: Permite la vista de CSS del componente seleccionado
+   * **CSS** de vista: Permite la vista de CSS del componente seleccionado
 
    Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, se obtienen dos opciones más: **Simular el éxito** y **simular errores.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [a continuación](/help/forms/using/themes.md#using-rail).
 
    [ ![Editor de temas con raíl y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
-### Componentes de estilo {#styling-components}
+### Styling components {#styling-components}
 
 Puede utilizar un tema en varios formularios adaptables y comunicaciones interactivas, lo que importa el formato de componente que haya especificado en el tema. Puede aplicar estilo a varios componentes, como títulos, descripciones, paneles, campos, iconos y cuadros de texto. Utilice widgets para configurar las propiedades de los componentes en un tema. No se requiere un conocimiento previo de CSS o MENOS, pero se desea, aunque la sección Anulaciones de CSS permite escribir código CSS o proporcionar selectores personalizados. La sección Anulaciones de CSS aparece al seleccionar un componente en la barra lateral.
 
 ![Componentes estabilizables en la barra lateral](assets/stylable-components.png)
 
-Opciones de la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
+Opciones en la barra lateral que permiten seleccionar y aplicar estilo a diferentes componentes.
 
 Al hacer clic en el botón de edición de un componente en la barra lateral, se selecciona el componente en Lienzo y se le permite aplicar estilo al componente mediante las opciones de la barra lateral.
 
@@ -246,7 +246,7 @@ Haga clic en **EXPANDIR TODO** en la barra lateral para aplicar vista, seleccion
 
 ### Diseños del panel Estilo {#styling-panel-layouts-br}
 
-Las Temáticas de AEM Forms admiten el estilo de los elementos en la presentación de paneles en los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
+Las temáticas de AEM Forms admiten el estilo de los elementos en la presentación de paneles en los formularios y las comunicaciones interactivas. Se admite el estilo de los elementos en diseños y diseños personalizados integrados.
 
 Los paneles integrados incluyen:
 
@@ -263,7 +263,7 @@ Los paneles integrados incluyen:
 Los selectores varían para cada diseño.\
 El diseño de diseños personalizados desde el Editor de temas implica:
 
-* Definición de los componentes de un diseño que se puede diseñar y de los selectores CSS para identificar de forma exclusiva estos componentes
+* Definición de los componentes de un diseño que se puede diseñar, y de los selectores CSS para identificar de forma exclusiva estos componentes
 * Definición de las propiedades CSS que se pueden aplicar a estos componentes
 * Defina el estilo de estos componentes de forma interactiva desde la interfaz de usuario
 
@@ -306,7 +306,7 @@ Cuando se proporciona un nombre personalizado para un estilo, este se asocia a u
 
    ![Eliminar el estilo guardado](assets/manage-styles.png)
 
-### previsualización en directo, guardado y descartado de cambios {#live-preview-save-and-discard-changes}
+### Previsualización en directo, guardado y descartado de cambios {#live-preview-save-and-discard-changes}
 
 Las modificaciones realizadas en el estilo se reflejan instantáneamente en el formulario o en la comunicación interactiva cargada en el Lienzo. La previsualización en directo permite definir y ver de forma interactiva el impacto del estilo. Cuando se cambia el estilo de un componente, el botón **[!UICONTROL Finalizado]** se activa en la barra lateral. Para conservar los cambios, utilice el botón **[!UICONTROL Listo]** .
 
@@ -354,7 +354,7 @@ En la barra de herramientas Lienzo, verá:
 * **[!UICONTROL Opciones]** de tema: opciones de ![tema](assets/theme-options.png): Proporciona tres opciones
 
    * Configurar: Proporciona opciones para seleccionar el formulario de previsualización o la comunicación interactiva, la clientlib base y la configuración typekit.
-   * CSS de tema de Vista: Genera CSS para el tema seleccionado.
+   * CSS de tema de vista: Genera CSS para el tema seleccionado.
    * Administrar estilos: Proporciona opciones para administrar estilos de texto e imagen
    * Ayuda: Ejecuta una visita guiada de imagen del Editor de temas.
 
@@ -488,7 +488,7 @@ Para simular el comportamiento de estados que no sean errores y éxitos, utilice
 
 Utilice la regla en Lienzo para seleccionar puntos de interrupción para dispositivos con pantallas más pequeñas. Haga clic en ![la regla](assets/ruler.png) del emulador en Lienzo para ir a la regla de vista y a los puntos de interrupción. Los puntos de interrupción permiten la previsualización de un formulario o comunicación interactiva para tamaños de pantalla pertenecientes a diferentes dispositivos, como teléfonos y tablets. El Editor de temas admite varios tamaños de visualización.
 
-Para aplicar estilo a los componentes de los distintos puntos de interrupción:
+Para aplicar estilo a los componentes de diferentes puntos de interrupción:
 
 1. En el Lienzo, seleccione un punto de interrupción encima de la regla.
 
@@ -635,9 +635,9 @@ Cuando se especifican estilos para los componentes en el Editor de temas, se gen
 
 Puede ver la CSS generada mediante las siguientes opciones:
 
-* **Opción CSS** de Vista en la barra lateral: Cuando selecciona un componente en el tema, puede ver la opción CSS de VISTA en la barra lateral. Muestra la CSS generada, incluida la CSS para `::before` y los `::after` pseudoelementos.
+* **Opción CSS** de vista en la barra lateral: Cuando selecciona un componente en el tema, puede ver la opción CSS de VISTA en la barra lateral. Muestra la CSS generada, incluida la CSS para `::before` y los `::after` pseudoelementos.
 
-* **Opción CSS** de tema de Vista en la barra de herramientas del lienzo: En la barra de herramientas del lienzo, haga clic en Opciones ![de](assets/theme-options.png) tema > CSS **de tema de** Vista. Puede ver todo el tema CSS generado a partir de las propiedades definidas en el Editor de temas.
+* **Opción CSS** de tema de vista en la barra de herramientas del lienzo: En la barra de herramientas del lienzo, haga clic en Opciones ![de](assets/theme-options.png) tema > CSS **de tema de** Vista. Puede ver todo el tema CSS generado a partir de las propiedades definidas en el Editor de temas.
 
 ## Solución de problemas, recomendaciones y prácticas recomendadas {#troubleshooting-recommendations-and-best-practices}
 

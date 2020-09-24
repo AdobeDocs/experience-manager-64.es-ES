@@ -1,17 +1,17 @@
 ---
 title: Migrar recursos y documentos de AEM Forms
 seo-title: Migrar recursos y documentos de AEM Forms
-description: La herramienta de migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
-seo-description: La herramienta de migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
+description: La utilidad Migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
+seo-description: La utilidad Migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Para los recursos de Correspondencia:
 * Para los recursos importados de la plataforma anterior, se agrega una propiedad: **fd:version=1.0**.
 * Desde AEM 6.1 Forms, los comentarios no están disponibles de forma predeterminada. Los comentarios que se agregaron anteriormente están disponibles en los recursos pero no son visibles en la interfaz automáticamente. Debe personalizar la propiedad expandedProperties en la interfaz de usuario de AEM Forms para que los comentarios sean visibles.
 * En algunas de las versiones anteriores, como LiveCycle ES4, el texto se editaba con Flex RichTextEditor, pero desde AEM 6.1 Forms se utiliza el editor HTML. Debido a esta representación y al aspecto de las fuentes, los tamaños de fuente y los márgenes de fuente pueden ser diferentes de los de las versiones anteriores en la interfaz de usuario de Autor. Sin embargo, las letras se ven iguales cuando se procesan.
-* Las Listas en los módulos de texto se han mejorado y ahora se presentan de forma diferente. Puede haber diferencias visuales. Le recomendamos que procese y vea las letras donde está utilizando listas en los módulos de texto.
+* Las listas en los módulos de texto se han mejorado y ahora se presentan de forma diferente. Puede haber diferencias visuales. Le recomendamos que procese y vea las letras donde está utilizando listas en los módulos de texto.
 * Dado que los módulos de contenido de imagen se convierten en recursos DAM y que los diseños y fragmentos se agregan a los formularios durante la migración, la propiedad Actualizado por de estos módulos cambia a admin.
 * El historial de versiones de los recursos no se migra y no está disponible tras la migración. Se mantiene el historial de versiones posterior a la migración.
 * El estado Listo para publicar está en desuso desde AEM Forms 6.1, por lo que todos los recursos del estado Listo para publicar se han cambiado al estado Modificado.
@@ -92,10 +92,10 @@ Al ejecutar la Utilidad de migración por primera vez, se crea un registro con l
 
 1. Para realizar la migración, haga lo siguiente:
 
-   * Para migrar **recursos**, toque Migración de recursos de AEM Forms y, en la pantalla siguiente, haga clic en Migración de **Inicios**. Se migrará lo siguiente:
+   * Para migrar **recursos**, toque Migración de recursos de AEM Forms y, en la siguiente pantalla, haga clic en Migración de **Inicios**. Se migrará lo siguiente:
 
       * Formularios adaptables
-      * Fragmentos de Documento
+      * Fragmentos de documento
       * Temas
       * Cartas
       * Diccionarios de datos
@@ -133,19 +133,19 @@ Al ejecutar la Utilidad de migración por primera vez, se crea un registro con l
    * Servicios de nube del modelo de datos de formulario
 
       * Ruta de origen: /etc/cloudservices/fdm
-      * Ruta de Destinatario: /conf/global/settings/cloudconfigs/fdm
+      * Ruta de destinatario: /conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
       * Ruta de origen: /etc/cloudservices/recaptcha
-      * Ruta de Destinatario: /conf/global/settings/cloudconfigs/recaptcha
+      * Ruta de destinatario: /conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
       * Ruta de origen: /etc/cloudservices/echosign
-      * Ruta de Destinatario: /conf/global/settings/cloudconfigs/echosign
+      * Ruta de destinatario: /conf/global/settings/cloudconfigs/echosign
    * Servicios de nube de Typekit
 
       * Ruta de origen: /etc/cloudservices/typekit
-      * Ruta de Destinatario: /conf/global/settings/cloudconfigs/typekit
+      * Ruta de destinatario: /conf/global/settings/cloudconfigs/typekit
 
    La ventana del explorador muestra lo siguiente a medida que se produce el proceso de migración:
 
@@ -155,7 +155,7 @@ Al ejecutar la Utilidad de migración por primera vez, se crea un registro con l
    Cuando se ejecuta, la utilidad Migración hace lo siguiente:
 
    * **Añade las etiquetas en los recursos**: Añade la etiqueta &quot;Gestión de correspondencia: Migrated Assets&quot; / &quot;Adaptive Forms : Recursos migrados&quot;. a los recursos migrados, para que los usuarios puedan identificar los recursos migrados. Al ejecutar la utilidad de migración, todos los recursos existentes en el sistema se marcan como Migrados.
-   * **Genera etiquetas**: Las Categorías y subcategorías presentes en el sistema anterior se crean como etiquetas y, a continuación, estas etiquetas se asocian a los recursos de Correspondence Management relevantes en AEM. Por ejemplo, una Categoría (Reclamaciones) y una subcategoría (Reclamaciones) de una plantilla de carta se generan como etiquetas.
+   * **Genera etiquetas**: Las categorías y subcategorías presentes en el sistema anterior se crean como etiquetas y, a continuación, estas etiquetas se asocian a los recursos de Correspondence Management relevantes en AEM. Por ejemplo, una Categoría (Reclamaciones) y una subcategoría (Reclamaciones) de una plantilla de carta se generan como etiquetas.
    * **Mueve los diseños y los fragmentos de diseño a la interfaz** de usuario de Forms AEM 6.4: Si está actualizando de 6.2 a 6.4, las plantillas de diseño y los fragmentos de diseño se agregan como formularios en la sección de interfaz de usuario de AEM Forms 6.4.
 
    >[!NOTE]
@@ -164,7 +164,7 @@ Al ejecutar la Utilidad de migración por primera vez, se crea un registro con l
 
 1. Una vez que la utilidad de migración haya terminado de ejecutarse, continúe con las tareas [de](#housekeepingtasks)limpieza.
 
-### tareas domésticas después de ejecutar la utilidad de migración {#housekeepingtasks}
+### Tareas domésticas después de ejecutar la utilidad de migración {#housekeepingtasks}
 
 Después de ejecutar la utilidad de migración, tenga en cuenta las siguientes tareas de limpieza:
 

@@ -5,11 +5,11 @@ description: El editor de reglas de formularios adaptables permite agregar un co
 seo-description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin necesidad de codificar ni utilizar secuencias de comandos.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6348'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones de usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
+La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
 
 El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas oferta un editor visual para todos los usuarios. Además, solo para usuarios con poder de formularios, el editor de reglas proporciona un editor de código para escribir reglas y secuencias de comandos. Algunas de las acciones clave que se pueden realizar con objetos de formulario adaptables mediante reglas son:
 
@@ -288,11 +288,11 @@ Para iniciar la interfaz de usuario del editor de reglas:
 1. Toque **[!UICONTROL Crear]** para escribir una nueva regla. El editor visual de la interfaz de usuario del editor de reglas se abre de forma predeterminada cuando se inicia el editor de reglas por primera vez.
    ![UI del editor de reglas](assets/rule-editor-ui.png)
 
-   [Haga clic para ampliar](assets/rule-editor-ui-1.png)Observemos en detalle cada componente de la interfaz de usuario del editor de reglas.
+   [Haga clic para ampliar](assets/rule-editor-ui-1.png)Veamos en detalle cada componente de la interfaz de usuario del editor de reglas.
 
 ### A. Pantalla de regla de componente {#a-component-rule-display}
 
-Muestra el título del objeto de formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
+Muestra el título del objeto de formulario adaptable a través del cual se inició el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
 
 ### B. Form objects and functions {#b-form-objects-and-functions-br}
 
@@ -694,7 +694,7 @@ Para copiar y pegar reglas, haga lo siguiente:
 
 1. Toque **Hecho** para guardar la regla.
 
-## expresiones anidadas {#nestedexpressions}
+## Expresiones anidadas {#nestedexpressions}
 
 El editor de reglas permite utilizar varios operadores Y y O para crear reglas anidadas. Puede combinar varios operadores Y y O en las reglas.
 

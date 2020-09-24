@@ -6,10 +6,10 @@ seo-description: AEM Forms proporciona herramientas para administrar Forms adapt
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -72,7 +72,7 @@ El panel Forms y Documento también ofrece opciones para:
 
 ### Temas  {#themes}
 
-Un tema contiene detalles de estilo para componentes y paneles. Las Temáticas tienen una identidad independiente. Por lo tanto, puede reutilizar un tema en varios formularios adaptables. Puede especificar estilos para un componente o modificar las propiedades CSS de los distintos componentes utilizados en los formularios. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia y tamaño. Puede guardar las personalizaciones en un tema y colocarlas en componentes del formulario como un ajuste preestablecido. Al agregar el tema al formulario, el estilo especificado se refleja en los componentes correspondientes del formulario. Con AEM 6.2 Forms, puede crear temáticas y aplicarlas a sus formularios.
+Un tema contiene detalles de estilo para componentes y paneles. Las temáticas tienen una identidad independiente. Por lo tanto, puede reutilizar un tema en varios formularios adaptables. Puede especificar estilos para un componente o modificar las propiedades CSS de los distintos componentes utilizados en los formularios. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia y tamaño. Puede guardar las personalizaciones en un tema y colocarlas en componentes del formulario como un ajuste preestablecido. Al agregar el tema al formulario, el estilo especificado se refleja en los componentes correspondientes del formulario. Con AEM 6.2 Forms, puede crear temáticas y aplicarlas a sus formularios.
 
 Para obtener información sobre la creación y el uso de temáticas, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
 
@@ -84,7 +84,7 @@ Para obtener información sobre la creación y el uso de letras, consulte [Creac
 
 ### Fragmentos de documento {#document-fragments}
 
-Los fragmentos de Documento son partes reutilizables o componentes de una correspondencia que permite componer letras. Los fragmentos de documento son de tipo texto, lista, condición y fragmento de diseño. Para obtener información sobre la creación y el uso de fragmentos de documento, consulte [Creación de fragmentos](/help/forms/using/document-fragments.md)de documento.
+Los fragmentos de documento son partes reutilizables o componentes de una correspondencia que permite componer letras. Los fragmentos de documento son de tipo texto, lista, condición y fragmento de diseño. Para obtener información sobre la creación y el uso de fragmentos de documento, consulte [Creación de fragmentos](/help/forms/using/document-fragments.md)de documento.
 
 ### Diccionarios de datos {#data-dictionaries}
 
@@ -98,7 +98,7 @@ AEM panel de herramientas contiene herramientas para varios componentes. Para na
 
 * **Configurar carpeta vigilada:** Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, para que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie una operación preconfigurada y se manipule el archivo. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **Configurar el servicio sin conexión de la aplicación de Forms:** El servicio sin conexión de la aplicación de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento del servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajo en modo](/help/forms/using/work-offline-mode.md)sin conexión.
+* **Configurar el servicio sin conexión de la aplicación de Forms:** El servicio sin conexión de la aplicación de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento en el servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajo en modo](/help/forms/using/work-offline-mode.md)sin conexión.
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 
@@ -114,7 +114,7 @@ AEM panel de herramientas contiene herramientas para varios componentes. Para na
    * **Referencias:** Un recurso de AEM Forms se puede utilizar en varios recursos de AEM Forms. Por ejemplo, un fragmento de documento se puede utilizar en varias letras. Referencias es una lista de recursos (otros formularios o recursos) en los que se utiliza el recurso seleccionado y también la lista de otros recursos que utiliza el recurso seleccionado.
 
 * **Rutas de exploración:** Una ruta de exploración representa el título de la consola o carpeta actual. Puede hacer clic en la opción Ruta de exploración para navegar entre el nivel de carpetas que están en una jerarquía superior.
-* **Conmutador de Vistas:** Puede hacer clic en la ![lista](assets/viewlist.png) de vistas del icono del conmutador de Vistas o en la ![tarjeta](assets/viewcard.png) de visualización para cambiar rápidamente entre la lista y la vista de la tarjeta. Para obtener más información sobre los componentes comunes de la interfaz de usuario, consulte [Uso del Entorno](/help/sites-authoring/basic-handling.md)de creación.
+* **Conmutador de vistas:** Puede hacer clic en la ![lista](assets/viewlist.png) de vistas del icono del conmutador de Vistas o en la ![tarjeta](assets/viewcard.png) de visualización para cambiar rápidamente entre la lista y la vista de la tarjeta. Para obtener más información sobre los componentes comunes de la interfaz de usuario, consulte [Uso del Entorno](/help/sites-authoring/basic-handling.md)de creación.
 * **Buscar:** La ![búsqueda](assets/search.png) de opciones de búsqueda permite encontrar rápidamente y saltar al contenido y las herramientas que necesita. Escriba el nombre del contenido o la capacidad del producto y seleccione entre las sugerencias; por ejemplo, escriba &quot;Documentos&quot; para buscar rápidamente y navegar a la consola de Forms y Documentos o Fragmentos de Documento. Para obtener más información sobre la búsqueda, consulte AEM artículo de [búsqueda](/help/sites-authoring/search.md) 6.2
 * **Barra de herramientas** Acciones: Al seleccionar un recurso, la barra de herramientas de acciones aparece encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el cursor sobre un icono de herramienta para vista de la información sobre herramientas que describe su funcionalidad
 

@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 
 **Contraseña y Confirmar contraseña:** Contraseña que utiliza el usuario para iniciar sesión. Debe tener un mínimo de ocho caracteres. No se requiere una contraseña para un usuario que forme parte de un dominio híbrido.
 
-## Detalles de Vista sobre un usuario {#view-details-about-a-user}
+## Detalles de vista sobre un usuario {#view-details-about-a-user}
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Usuarios y grupos.
 1. Especifique la información para reducir la búsqueda y, en la lista En, seleccione Usuarios y, a continuación, haga clic en Buscar. Los resultados de la búsqueda se enumeran en la parte inferior de la página. Puede ordenar la lista haciendo clic en cualquiera de los encabezados de columna.
@@ -159,7 +159,7 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 
 >[!NOTE]
 >
->AEM Forms en JEE también permite que los usuarios del complemento de formularios AEM que se ejecutan en un OSGi se reconozcan como usuarios AEM. Esto es necesario para situaciones en las que se requiere el inicio de sesión único entre AEM Forms en JEE y AEM complemento de formularios que se ejecuta en un OSGi (por ejemplo, espacio de trabajo HTML). La operación de eliminación mencionada anteriormente elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento de AEM Forms que se ejecuta en OSGi entorno. Pero cualquier intento de inicio de sesión realizado después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE del complemento de AEM Forms o en el complemento de AEM Forms en el entorno OSGi) se deniega.
+>AEM Forms en JEE también permite que los usuarios del complemento de formularios AEM que se ejecutan en un OSGi se reconozcan como usuarios AEM. Esto es necesario para situaciones en las que se requiere el inicio de sesión único entre AEM Forms en JEE y AEM complemento de formularios que se ejecuta en un OSGi (por ejemplo, espacio de trabajo HTML). La operación de eliminación mencionada anteriormente elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento de AEM Forms que se ejecuta en OSGi entorno. Sin embargo, se deniega cualquier intento de inicio de sesión que se realice después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE del complemento de AEM Forms o en el complemento de AEM Forms en el entorno OSGi).
 
 ## Crear un controlador de error de inicio de sesión personalizado {#create-custom-login-error-handler}
 

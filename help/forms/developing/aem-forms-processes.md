@@ -7,10 +7,10 @@ uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
 
    >[!NOTE]
    >
-   >Generalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >Normalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    *La programación con* formularios de AEM describe las siguientes formas en las que puede invocar mediante programación este proceso de corta duración:
 
-   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (con una aplicación de Flex)
+   * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (con una aplicación Flex)
    * [Invocación de un proceso de corta duración mediante la API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) de invocación (Java Invocation API)
    * [Invocación de AEM Forms mediante codificación](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (ejemplo de servicio Web)
    * [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (ejemplo de servicio web)

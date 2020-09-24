@@ -1,12 +1,12 @@
 ---
-description: 'El boletín informativo de Dynamic Media de Experience League es un boletín mensual. Está diseñado para ayudarle a ponerse al día con los medios dinámicos y los medios dinámicos clásicos, de modo que pueda obtener un inicio del valor de inmediato. En este boletín de noticias de una sola empresa encontrará valiosos recursos para la creación de conocimientos, entre los que se incluyen vídeos, descripciones generales de soluciones e presentaciones de algunas de las funciones y funciones clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más. '
+description: 'El boletín informativo de Dynamic Media de Experience League es un boletín mensual. Está diseñado para ayudarle a ponerse al día con los medios dinámicos y los medios dinámicos clásicos, de modo que pueda obtener un inicio del valor inmediatamente. En este boletín de noticias de una sola empresa encontrará valiosos recursos para la creación de conocimientos, entre los que se incluyen vídeos, descripciones generales de soluciones e presentaciones de algunas de las funciones y funciones clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más. '
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: Los recursos para la creación de conocimientos están disponibles en este boletín de noticias de una sola vez, que incluye información sobre vídeos, descripciones generales de soluciones e introducción a algunas de las funciones y funciones clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más.
 seo-title: 'Boletín de Adobe Dynamic Media '
-solution: Dynamic Media
+solution: Dynamic Media Classic
 title: Boletín de Dynamic Media
 translation-type: tm+mt
-source-git-commit: 787fcf312eabcb44cfe114b5b3b80341fa295637
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%

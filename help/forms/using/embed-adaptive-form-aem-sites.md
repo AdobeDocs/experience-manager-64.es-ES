@@ -6,10 +6,10 @@ seo-description: Puede incrustar formularios adaptables en páginas de sitios AE
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Para obtener información sobre la incrustación de un formulario adaptable en u
 
 En la página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante:
 
-* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms Contenedor AEM Forms proporciona un componente que puede agregar a las páginas del sitio. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
+* **[Componente](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms Contenedor AEM Forms proporciona un componente que puede agregar a las páginas del sitio. El componente Contenedor de AEM Forms permite incrustar un formulario adaptable y una comunicación interactiva.
 
-* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**de recursos Todos los formularios y las comunicaciones interactivas que cree estarán disponibles en Recursos. Puede arrastrar y soltar el formulario como recurso en la página.
+* **[Navegador](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** de recursos Todos los formularios y las comunicaciones interactivas que cree estarán disponibles en Recursos. Puede arrastrar y soltar el formulario como recurso en la página.
 
 ## Requisitos previos {#prerequisites}
 

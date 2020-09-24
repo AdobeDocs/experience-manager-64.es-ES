@@ -5,11 +5,11 @@ description: Conceder acceso restringido al editor de reglas para seleccionar gr
 seo-description: Conceder acceso restringido al editor de reglas para seleccionar grupos de usuarios.
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -32,7 +32,7 @@ AEM Forms permite limitar el acceso del editor de reglas a los usuarios en funci
 
    ![1](assets/1.png)
 
-1. En la ventana de la consola web, ubique y haga clic en Servicio **** de configuración de formulario adaptable. **Aparece el cuadro de diálogo Servicio** de configuración de formulario adaptable. No cambie ningún valor y haga clic en **Guardar**.
+1. En la ventana de la consola web, ubique y haga clic en Servicio **de configuración de formularios** adaptables. **Aparece el cuadro de diálogo Servicio** de configuración de formulario adaptable. No cambie ningún valor y haga clic en **Guardar**.
 
    Crea un archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config en el repositorio de CRX.
 

@@ -6,11 +6,11 @@ seo-description: 'La administración de un proyecto para implementar Adobe Exper
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Para ayudarle, las prácticas recomendadas consisten en:
 
 * Documentación, basada directamente en la [lista](/help/managing/best-practices-checklist.md)de comprobación, que detalla:
 
-   * [análisis de Project Heartbeat](#project-heartbeat-dashboard) .
+   * [Análisis de Project Heartbeat](#project-heartbeat-dashboard) .
    * [Información general de estado por función](#status-by-role) .
    * [Fases e hitos](#phases-and-milestones).
    * [Persona](#persona) clave y su participación en cada etapa (pertinente).
@@ -57,7 +57,7 @@ La hoja de cálculo de **Project Heartbeat** proporciona una visión general gr�
 
 ## Estado por función {#status-by-role}
 
-La hoja de cálculo **Estado por función** muestra un desglose detallado de **[salud, calidad y complejidad](#project-heartbeat-dashboard)**por**[ fase](#phases-and-milestones)** y **[personal](#persona)**.
+La hoja de cálculo **Estado por función** muestra un desglose detallado de **[salud, calidad y complejidad](#project-heartbeat-dashboard)** por **[fase](#phases-and-milestones)** y **[personal](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 
@@ -184,8 +184,8 @@ Planificar el desarrollo es clave para garantizar que el proyecto se construya s
    * Interfaces; hardware, software e interacción humana
    * Servidores para cada entorno; consulte los requisitos [técnicos](/help/sites-deploying/technical-requirements.md) y las directrices de cambio de tamaño [de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Procesos para cada entorno; por ejemplo, los requisitos de despliegue y mantenimiento
-   * actividades de mantenimiento (Almacén de datos GC, optimización de TarPM, etc.)
-   * [Almacenamiento en caché de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)
+   * Actividades de mantenimiento (Almacén de datos GC, optimización de TarPM, etc.)
+   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Almacenamiento en caché de Dispatcher
    * [Publicación/Uso compartido autorizado de clústeres](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * Rendimiento del lado del cliente (JS minify, concat, sprites css, número total de solicitudes http y otras)
 
@@ -263,7 +263,7 @@ De manera similar, las operaciones deben planificarse correctamente para asegura
    El monitoreo y el mantenimiento son aspectos clave para garantizar el buen funcionamiento de la solución una vez que se pone en marcha. Para ello, debe definir:
 
    * Qué necesita supervisión
-   * tareas de mantenimiento; tanto en casos ordinarios como especiales
+   * Tareas de mantenimiento; tanto en casos ordinarios como especiales
 
    Consulte también [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
 

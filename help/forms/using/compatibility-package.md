@@ -1,16 +1,16 @@
 ---
 title: Paquete de compatibilidad
 seo-title: Paquete de compatibilidad
-description: 'La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos '
-seo-description: La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
+description: 'La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos '
+seo-description: La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: correspondence-management
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 translation-type: tm+mt
-source-git-commit: 9a2ebded0068213903020d2c5633a05b6ffb07ef
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Instalar paquete de compatibilidad {#compatibility-package}
 
-La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
+La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
 
 ## Información general {#overview}
 
@@ -28,7 +28,7 @@ La comunicación interactiva es el método predeterminado y recomendado para cre
 
 El paquete de compatibilidad AEMFD le permite utilizar los siguientes recursos de AEM Forms 6.3 y 6.2 en AEM Forms 6.4:
 
-* Fragmentos de Documento creados en AEM Forms 6.3 y 6.2
+* Fragmentos de documento creados en AEM Forms 6.3 y 6.2
 * Cartas
 * Diccionarios de datos
 * Plantillas y páginas obsoletas de formularios adaptables

@@ -1,16 +1,17 @@
 ---
-title: Guía del usuario de AEM 6.4 Assets
+title: Guía de recursos
 description: Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
+user-guide-title: Guía de recursos
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 23%
+source-wordcount: '336'
+ht-degree: 24%
 
 ---
 
 
-# Guía del usuario de AEM 6.4 Assets
+# Guía de recursos
 
 Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
 

@@ -3,9 +3,9 @@ title: Activación de perspectivas de recursos mediante DTM
 description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Activación de perspectivas de recursos mediante DTM {#enabling-asset-insights-through-dtm}
 
-La administración dinámica de etiquetas de Adobe es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics.
+La administración dinámica de etiquetas de Adobe es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo son compatibles y se proporcionan para imágenes.
 
-Aunque puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights, Adobe recomienda utilizar DTM para insertar etiquetas de Asset Insights.
+>[!CAUTION]
+>
+>La DTM de Adobe está en desuso en favor de Adobe Experience Platform Launch y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda que [utilice Launch para obtener perspectivas](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)de recursos.
 
 Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM:
 
@@ -49,7 +51,6 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
    >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que la función se llame una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
    >* Según el lugar donde se aloja el rastreador de páginas de perspectivas de recursos (por ejemplo, AEM, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
    >* Para el Rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
-
 
 
 1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Haga clic en Información general en la propiedad web y haga clic en Añadir herramienta o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método de configuración en Automático.

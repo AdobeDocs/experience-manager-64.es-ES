@@ -3,10 +3,10 @@ description: 'El boletín informativo de Dynamic Media de Experience League es u
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: Los recursos para la creación de conocimientos están disponibles en este boletín de noticias de una sola vez, que incluye información sobre vídeos, descripciones generales de soluciones e introducción a algunas de las funciones y funciones clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más.
 seo-title: 'Boletín de Adobe Dynamic Media '
-solution: Dynamic Media
+solution: Dynamic Media Classic
 title: Boletín de Dynamic Media
 translation-type: tm+mt
-source-git-commit: 8038ae762811bc376768be7fff143521629bc96a
+source-git-commit: 6caef5222b9f2163bfe7f7ded0e989fbc402bfef
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%

@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
+source-git-commit: 821cbc7fc1f92f1ac2a4044798c7e008c6248b92
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Si utiliza Apache Maven como sistema de compilación (que es el caso de la mayor
 
 Si su compañía ya está utilizando un Administrador de repositorios de Maven como Sontype Nexus, Apache Archiva o JFrog ArtiFactory, agregue la configuración adecuada a su proyecto para hacer referencia a este administrador de repositorios y agregar el repositorio de Maven del Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) a su administrador de repositorios.
 
+>[!NOTE]
+>
+>A partir de AEM 6.4.8.2, UberJar y otros artefactos relacionados están disponibles en el repositorio [de](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) Maven Central en lugar del repositorio de Adobe Public Maven (repo.adobe.com). Se cambia el nombre del archivo principal de UberJar a `uber-jar-<version>.jar`. Como resultado, no hay ningún `classifier`valor, con `apis` como valor, para la `dependency` etiqueta.
+
 Si no utiliza un administrador de repositorio, deberá agregar un elemento de *repositorio* al archivo *pom.xml* :
 
 ```xml
@@ -67,7 +71,7 @@ Si no utiliza un administrador de repositorio, deberá agregar un elemento de *r
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -75,7 +79,7 @@ Si no utiliza un administrador de repositorio, deberá agregar un elemento de *r
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
@@ -447,7 +451,7 @@ Debajo es necesario agregar dependencias al POM de los `content` módulos.
 
 >[!NOTE]
 >
->A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración del AEM como se describe más arriba. Los comentarios de cada entrada a continuación muestran el paquete que se va a buscar en el Buscador de dependencias.
+>A menos que importe las dependencias del producto como se ha descrito anteriormente, también deben agregarse al POM principal junto con la versión que coincida con la configuración del AEM como se describe más arriba. Los comentarios de cada entrada a continuación muestran el paquete que buscar en el Buscador de dependencias.
 
 >[!NOTE]
 >

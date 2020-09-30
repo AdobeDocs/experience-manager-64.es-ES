@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Los pasos necesarios son:
       * Cree y publique un servicio [de nube de](#create-a-twitter-connect-cloud-service)Twitter Connect.
 
 
-1. [**Habilite **el inicio de sesión](#enable-social-login)social para un sitio de comunidad.
+1. [**Habilite** el inicio de sesión](#enable-social-login) social para un sitio de comunidad.
 
 Existen dos conceptos básicos:
 
@@ -98,7 +98,7 @@ Una vez creada la aplicación, ubique la configuración de ID **[!UICONTROL de]*
 
 ### Creación de un Cloud Service de Facebook Connect {#create-a-facebook-connect-cloud-service}
 
-La instancia de aplicación y proveedor [de](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) Adobe Granite OAuth, creada mediante la creación de una configuración de servicio en la nube, identifica la aplicación de Facebook y los grupos de miembros a los que se agregan los nuevos usuarios.
+La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-and-provider) Adobe Granite OAuth, creada mediante la creación de una configuración de servicio en la nube, identifica la aplicación de Facebook y los grupos de miembros a los que se agregan los nuevos usuarios.
 
 1. En la instancia de creación de AEM, inicie sesión con privilegios de administrador.
 1. En la navegación global, seleccione **[!UICONTROL Herramientas > Cloud Services > Configuración]** de inicio de sesión de Facebook Social.
@@ -242,7 +242,7 @@ En la sección Permisos de la administración de aplicaciones de Twitter:
    * Si no se selecciona, el perfil del usuario en AEM no incluirá su dirección de correo electrónico.
    * Las instrucciones de Twitter indican pasos adicionales que deben seguirse.
 
-La única solicitud REST realizada para el inicio de sesión social es para *[GET de credenciales](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*de cuenta o verificación.
+La única solicitud de REST que se realiza para iniciar sesión en redes sociales es para *[GET de credenciales](https://dev.twitter.com/rest/reference/get/account/verify_credentials)* de cuenta o verificación.
 
 ### Creación de un Cloud Service de Twitter Connect {#create-a-twitter-connect-cloud-service}
 
@@ -265,9 +265,9 @@ La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-an
 
    * **[!UICONTROL Título]** (*obligatorio*) Introduzca un título que identifique la aplicación de Twitter. Se recomienda utilizar el mismo nombre introducido que el nombre *para* mostrar para la aplicación de Twitter.
 
-   * **[!UICONTROL Clave del cliente]** (*obligatoria*) Introduzca la clave **de** consumidor (API) para la aplicación de Twitter. Identifica la aplicación [Adobe Granite OAuth y la instancia de proveedor](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creada a partir del cuadro de diálogo.
+   * **[!UICONTROL clave del cliente]** (*obligatoria*) Introduzca la clave **de** consumidor (API) para la aplicación de Twitter. Identifica la aplicación [Adobe Granite OAuth y la instancia de proveedor](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creada a partir del cuadro de diálogo.
 
-   * **[!UICONTROL Secreto de cliente]** (*obligatorio*) Introduzca el secreto ***de*** consumidor (API) para la aplicación de Twitter.
+   * **[!UICONTROL secreto de cliente]** (*obligatorio*) Introduzca el secreto ***de*** consumidor (API) para la aplicación de Twitter.
 
    * **[!UICONTROL Crear usuarios]** Si está marcado, el inicio de sesión con una cuenta de Twitter creará una entrada de usuario AEM y la agregará como miembro a los grupos de usuarios seleccionados. El valor predeterminado está marcado (se recomienda enfáticamente).
 
@@ -458,7 +458,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindexar]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL reindexCount]**: 3
 
 1. Bajo el nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 

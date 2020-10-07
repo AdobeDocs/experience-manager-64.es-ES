@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 6%
+source-wordcount: '1835'
+ht-degree: 7%
 
 ---
 
@@ -58,7 +58,6 @@ Una vez familiarizado con estos conceptos básicos, encontrará información má
 * [Introducción a la Plataforma AEM](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Actualizar definiciones del vehículo de lanzamiento](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [¿Qué es AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Conceptos básicos {#basic-concepts}
@@ -69,9 +68,9 @@ Adobe Experience Manager es un sistema de cliente-servidor basado en web para cr
 
 A nivel de infraestructura, AEM ofrece lo siguiente:
 
-* **Servidor** de Aplicación web: AEM puede implementarse en modo independiente (incluye un servidor web integrado de Jetty) o como una aplicación web dentro de un servidor de aplicaciones de terceros (WebLogic, WebSphere, etc.).
-* **Marco** de Aplicación web: AEM incorpora el Sling Aplicación web Framework que simplifica la escritura de aplicaciones web orientadas al contenido RESTful.
-* **Repositorio** de contenido: AEM incluye un repositorio de contenido Java (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no sólo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación.
+* **Servidor** de aplicación web: AEM puede implementarse en modo independiente (incluye un servidor web integrado de Jetty) o como una aplicación web dentro de un servidor de aplicaciones de terceros (WebLogic, WebSphere, etc.).
+* **Marco** de aplicación web: AEM incorpora el Sling Aplicación web Framework que simplifica la escritura de aplicaciones web orientadas al contenido RESTful.
+* **Repositorio** de contenido: AEM incluye un repositorio de contenido Java (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no sólo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos que utiliza la aplicación.
 
 Sobre esta base, AEM también una serie de funciones a nivel de aplicación para la administración de:
 
@@ -108,7 +107,7 @@ Las siguientes secciones describen ambos escenarios:
 
 ### On-premise {#on-premise}
 
-Puede instalar AEM en los servidores de su entorno corporativo. Las instancias de instalación habituales incluyen: entornos de desarrollo, prueba y publicación. Consulte la sección [Introducción](/help/sites-deploying/deploy.md#getting-started) para obtener detalles básicos sobre cómo obtener el software de AEM para instalarlo localmente.
+Puede instalar AEM en los servidores de su entorno corporativo. Las instancias de instalación habituales incluyen: Entornos de desarrollo, prueba y publicación. Consulte la sección [Introducción](/help/sites-deploying/deploy.md#getting-started) para obtener detalles básicos sobre cómo obtener el software de AEM para instalarlo localmente.
 
 Para obtener más información sobre las implementaciones locales típicas, consulte Implementación [recomendada](/help/sites-deploying/recommended-deploys.md).
 
@@ -128,13 +127,13 @@ Con AEM Managed Services, los clientes pueden obtener las siguientes ventajas:
 
 **Administrador** de nube: Cloud Manager, que forma parte de la oferta de Adobe Experience Manager Managed Services, es un portal de autoservicio que permite a las organizaciones autoadministrar Adobe Experience Manager en la nube. Incluye una integración continua de última generación y una canalización de envío continuo (CI/CD) que permite a los equipos de TI y a los socios de implementación acelerar el envío de personalizaciones o actualizaciones sin comprometer el rendimiento ni la seguridad. Cloud Manager solo está disponible para los clientes de servicios gestionados de Adobe.
 
-Para obtener más información sobre Cloud Manager y sus recursos, consulte la Guía [**del usuario de **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)Cloud Manager.
+Para obtener más información sobre Cloud Manager y sus recursos, consulte la Guía [**del usuario de**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)Cloud Manager.
 
 ## Introducción {#getting-started}
 
 ### Requisitos previos {#prerequisites}
 
-Aunque las instancias de producción se ejecutan normalmente en equipos dedicados que ejecutan un sistema operativo oficialmente admitido (consulte Requisitos [](/help/sites-deploying/technical-requirements.md)técnicos), el servidor Experience Manager se ejecutará en cualquier sistema que admita [**Java Standard Edition 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Aunque las instancias de producción se ejecutan normalmente en equipos dedicados que ejecutan un sistema operativo oficialmente admitido (consulte Requisitos [](/help/sites-deploying/technical-requirements.md)técnicos), el servidor Experience Manager se ejecutará en cualquier sistema que admita [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 Para familiarizarse y desarrollar en AEM es bastante común utilizar una instancia instalada en el equipo local que ejecuta Apple OS X o versiones de escritorio de Microsoft Windows o Linux.
 
@@ -142,7 +141,7 @@ En el lado del cliente, AEM funciona con todos los exploradores modernos (**Micr
 
 ### Obtención del software {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 El paquete de software AEM está disponible en dos formatos:
 
@@ -320,6 +319,5 @@ La sección anterior debería proporcionarle una buena comprensión de los conce
 * [Introducción a la Plataforma AEM](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Actualizar definiciones del vehículo de lanzamiento](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [¿Qué es AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 

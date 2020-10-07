@@ -4,7 +4,7 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
+source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 2%
@@ -145,7 +145,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 >[!NOTE]
 >
 >Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM autor. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
-Si se utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
+Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**
 
@@ -425,7 +425,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 ### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
-Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican, a diferencia de lo que ocurre al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación. Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
+Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican a diferencia de lo que sucede al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación. Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
 
 ![Puede volver a publicar un recurso ya publicado al moverlo](assets/republish-on-move.png)
 
@@ -760,7 +760,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 

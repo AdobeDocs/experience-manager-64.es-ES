@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -117,7 +117,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -142,7 +142,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -161,7 +161,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -204,7 +204,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -229,7 +229,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -240,7 +240,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
-   <td>Convierte un archivo PDF plano al formato PostScript mediante las opciones especificadas en la especificación de opciones.</td> 
+   <td>Convierte un archivo PDF plano al formato PostScript utilizando las opciones especificadas en la especificación de opciones.</td> 
    <td>Documentos procesados</td> 
    <td> </td> 
   </tr>
@@ -254,7 +254,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -273,7 +273,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -317,7 +317,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -336,7 +336,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -350,7 +350,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 ## API de captura de datos facturables {#billable-data-capture-apis}
 
-Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [de informes de](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transacciones proporcionada para registrar un envío de PDF forms como una transacción.
+Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [de informes de](record-transaction-custom-implementation.md) transacciones proporcionada para registrar un envío de PDF forms como una transacción.
 
 ### Formularios adaptables {#adaptive-forms}
 
@@ -359,7 +359,7 @@ Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de
   <tr>
    <td><p>Caso práctico   </p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -382,7 +382,7 @@ Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de
   <tr>
    <td><p>Caso práctico   </p> </td> 
    <td>Descripción </td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -401,7 +401,7 @@ Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -428,7 +428,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -449,7 +449,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
   <tr>
    <td><p>API</p> </td> 
    <td>Descripción</td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>
@@ -469,7 +469,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
  <tbody>
   <tr>
    <td><p>Caso de uso</p> </td> 
-   <td>categoría del informe de transacciones</td> 
+   <td>Categoría del informe de transacciones</td> 
    <td>Información adicional</td> 
   </tr>
   <tr>

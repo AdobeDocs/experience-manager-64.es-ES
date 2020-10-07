@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
 workflow-type: tm+mt
-source-wordcount: '9811'
+source-wordcount: '10015'
 ht-degree: 2%
 
 ---
@@ -145,7 +145,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 >[!NOTE]
 >
 >Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM autor. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración](/help/assets/bulk-ingest-migrate.md)masiva de recursos.
-Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
+Si se utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**
 
@@ -425,6 +425,12 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
 ### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
+Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican, a diferencia de lo que ocurre al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación. Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
+
+![Puede volver a publicar un recurso ya publicado al moverlo](assets/republish-on-move.png)
+
+Para mover recursos o carpetas:
+
 1. Navegue hasta la ubicación del recurso que desee mover.
 
 1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
@@ -462,6 +468,14 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * Toque **[!UICONTROL Cancelar]** para detener la operación de movimiento.
 
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
+
+### Mover recursos mediante la operación de arrastrar {#move-using-drag}
+
+Puede mover recursos (o carpetas) a una carpeta del mismo nivel arrastrándolos a la ubicación del destinatario, en lugar de utilizar la opción [!UICONTROL Mover] de la interfaz de usuario. Sin embargo, esta operación solo es posible en la vista de lista.
+
+Al mover recursos arrastrándolos, no se abre el asistente para [!UICONTROL mover recursos] , por lo que no se puede cambiar el nombre de los recursos al moverlos. Además, los recursos ya publicados se vuelven a publicar al moverlos arrastrándolos, sin necesidad de obtener la aprobación del usuario para volver a publicarlos.
+
+![Mover recursos a carpetas del mismo nivel arrastrándolos](assets/move-by-drag.gif)
 
 ## Administrar representaciones {#managing-renditions}
 
@@ -746,7 +760,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 

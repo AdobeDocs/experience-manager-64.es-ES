@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 4e4dfb105e12b6855ec32a72246d6b921d6d7829
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,7 @@ Una vez creado el nodo, agregue las siguientes propiedades:
    false (of type Boolean)
    ```
 
-* **includePropertyNames:** `["alias"] (of type String)`
+* **includePropertyNames:** `[alias]` (de tipo String)
 
 >[!NOTE]
 >
@@ -359,13 +359,13 @@ AEM también se puede configurar para que funcione con una instancia de servidor
    java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
    ```
 
-1. Para Inicio el segundo elemento compartido, vaya a `aemsolr2\node2` y ejecute el siguiente comando:
+1. Para inicio el segundo elemento compartido, vaya a `aemsolr2\node2` y ejecute el siguiente comando:
 
    ```xml
    java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
    ```
 
-1. Una vez iniciados los dos shards, compruebe que todo esté activo y en funcionamiento conectándose a la interfaz de Solr en `http://localhost:8983/solr/#/`
+1. Una vez que se hayan iniciado ambos shards, compruebe que todo esté activo y en funcionamiento conectándose a la interfaz de Solr en `http://localhost:8983/solr/#/`
 1. Inicio AEM y vaya a la consola web en `http://localhost:4502/system/console/configMgr`
 1. Defina la siguiente configuración en Configuración **del servidor remoto** Oak Solr:
 
@@ -491,6 +491,6 @@ También puede proporcionar una salida JMX consolidada mediante `https://servera
 
 Puede recopilar detalles adicionales para ayudar a solucionar el problema, como:
 
-1. La versión Oak en la que se está ejecutando su instancia. Puede ver esto abriendo CRXDE y mirando la versión en la esquina inferior derecha de la página de bienvenida, o comprobando la versión del `org.apache.jackrabbit.oak-core` paquete.
+1. Versión Oak en la que se está ejecutando su instancia. Puede ver esto abriendo CRXDE y mirando la versión en la esquina inferior derecha de la página de bienvenida, o comprobando la versión del `org.apache.jackrabbit.oak-core` paquete.
 1. Salida del depurador QueryBuilder de la consulta problemática. Se puede acceder al depurador en: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
 

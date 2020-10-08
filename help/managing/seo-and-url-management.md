@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 98%
@@ -254,7 +254,7 @@ A continuación se muestra un ejemplo de cómo se produce este problema:
 
 1. El despachante almacena en la caché la respuesta en `/my-page.html` y le devuelve la respuesta al usuario.
 1. Un autor de contenido hace un cambio en esta página y la activa.
-1. El agente de vaciado del despachante envía una solicitud de anulación para `/content/my-brand/my-page`**.**Dado que el despachante no tiene una página en la caché en esta ruta, el contenido antiguo permanece en la caché y estará obsoleto.
+1. El agente de vaciado del despachante envía una solicitud de anulación para `/content/my-brand/my-page`**.** Dado que el despachante no tiene una página en la caché en esta ruta, el contenido antiguo permanece en la caché y estará obsoleto.
 
 Existen maneras de configurar reglas de vaciado de despacho personalizadas que asignarán la URL más corta a la URL más larga para invalidar la caché.
 

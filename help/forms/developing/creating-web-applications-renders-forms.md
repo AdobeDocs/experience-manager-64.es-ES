@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Para ver la ubicación de estos archivos JAR, consulte [Inclusión de archivos](
 
 >[!NOTE]
 >
->Para obtener información sobre la creación de la página HTML que invoca el servlet `RenderFormFragment` Java, consulte[Creación de la página](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
+>Para obtener información sobre la creación de la página HTML que invoca el servlet `RenderFormFragment` Java, consulte [Creación de la página](/help/forms/developing/rendering-forms.md#creating-the-web-page)web.
 
 ### Creación de la lógica de la aplicación Java para el servlet {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Para implementar el servlet Java que invoca el servicio Forms, empaquete la apli
 
 1. En la ventana **Explorador** de proyectos, haga clic con el botón derecho en el `FragmentsWebApplication` proyecto y seleccione **Exportar** > archivo **** WAR.
 1. En el cuadro de texto Módulo **** Web, escriba `FragmentsWebApplication` el nombre del proyecto Java.
-1. En el cuadro de texto **Destino** , escriba `FragmentsWebApplication.war`**el nombre del **archivo, especifique la ubicación del archivo WAR y, a continuación, haga clic en Finalizar.
+1. En el cuadro de texto **Destino** , escriba `FragmentsWebApplication.war`**el nombre del** archivo, especifique la ubicación del archivo WAR y, a continuación, haga clic en Finalizar.
 
 ### Implementación del archivo WAR en el servidor de aplicaciones J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 

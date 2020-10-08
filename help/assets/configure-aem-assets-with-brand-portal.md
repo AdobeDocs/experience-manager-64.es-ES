@@ -3,7 +3,7 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Descubra cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 46%
@@ -21,15 +21,14 @@ Los recursos de Adobe Experience Manager (AEM) se configuran con Brand Portal a 
 >
 >Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización.
 
-
 >[!TIP]
 >
 >***Solo para clientes existentes***
 >
 >Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante E/S de Adobe.
 
-
 Esta ayuda describe los dos casos de uso siguientes:
+
 * [Nueva configuración](#configure-new-integration-64): Si es un usuario nuevo de Brand Portal y desea configurar la instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en E/S de Adobe.
 * [Configuración](#upgrade-integration-64)de actualización: Si ya es usuario de Brand Portal y su instancia de autor de AEM Assets está configurada con Brand Portal en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en E/S de Adobe.
 
@@ -46,7 +45,6 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 * Una instancia de autor de AEM Assets en ejecución con el Service Pack más reciente.
 * URL del inquilino de Brand Portal.
 * Un usuario con privilegios de administrador del sistema en la organización IMS del inquilino de Brand Portal.
-
 
 [Descargar e instalar AEM 6.4](#aemquickstart)
 
@@ -73,6 +71,7 @@ Para obtener instrucciones detalladas, consulte
 ## Crear configuración {#configure-new-integration-64}
 
 Realice los siguientes pasos en la secuencia mostrada si va a configurar AEM Assets con Brand Portal por primera vez:
+
 1. [Obtener un certificado público](#public-certificate)
 1. [Crear la integración de Adobe I/O](#createnewintegration)
 1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Realice los siguientes pasos en la secuencia mostrada si va a configurar AEM Ass
 >[!NOTE]
 >
 >Una instancia de autor de AEM Assets solo se configurará con un inquilino de Brand Portal.
-
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 
@@ -205,8 +203,6 @@ Asegúrese de haber realizado los siguientes pasos:
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
-
-
 ### Configurar el servicio en la nube {#configure-the-cloud-service}
 
 Siga estos pasos para crear la configuración del servicio en la nube de Brand Portal:
@@ -258,7 +254,6 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >[!NOTE]
    >
    >Los agentes de replicación trabajan en paralelo y comparten la distribución del trabajo por igual, aumentando así la velocidad de publicación en cuatro veces la velocidad original. Una vez configurado el servicio en la nube, no se requiere una configuración adicional para habilitar los agentes de replicación activados de forma predeterminada para habilitar la publicación en paralelo de varios recursos.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -360,4 +355,3 @@ Después de que la replicación se realice correctamente, puede publicar recurso
 * [Publicar recursos en Brand Portal](brand-portal-publish-assets.md)
 * [Publicación de recursos y carpetas en Brand Portal](brand-portal-publish-folder.md)
 * [Publicar colecciones en Brand Portal](brand-portal-publish-collection.md)
-

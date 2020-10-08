@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Antes de empezar a instalar y configurar los servicios de AEM Forms documento, a
 >[!NOTE]
 >
 >* En Microsoft Windows, PDF Generator admite rutas de conversión de WebKit, Acrobat WebCapture y PhantomJS para convertir archivos HTML a documentos PDF.
->* En sistemas operativos basados en UNIX, PDF Generator admite rutas de conversión de WebKit y PhantomJS para convertir archivos HTML en documentos PDF.
+>* En sistemas operativos basados en UNIX, PDF Generator admite rutas de conversión de WebKit y PhantomJS para convertir archivos HTML a documentos PDF.
 
 >
 
@@ -219,7 +219,7 @@ Configure las variables de entorno para el kit de desarrollo de Java de 32 y 64 
  <tbody> 
   <tr> 
    <td><p><strong>Aplicación</strong></p> </td> 
-   <td><p><strong>Variable de Entorno</strong></p> </td> 
+   <td><p><strong>Variable de entorno</strong></p> </td> 
    <td><p><strong>Ejemplo</strong></p> </td> 
   </tr> 
   <tr> 
@@ -488,7 +488,7 @@ Se requiere una cuenta de usuario local para ejecutar el servicio de generador d
 En Microsoft Windows, el servicio de generación de archivos PDF utiliza Adobe Acrobat para convertir los formatos de archivo admitidos a un documento PDF. Realice los siguientes pasos para configurar Adobe Acrobat para el servicio de generador de PDF:
 
 1. Abra Acrobat y seleccione **[!UICONTROL Editar]**> **[!UICONTROL Preferencias]**> **[!UICONTROL Actualizador]**. En Buscar actualizaciones, anule la selección de Instalar actualizaciones **** automáticamente y haga clic en **[!UICONTROL Aceptar]**. Cierre Acrobat.
-1. Haga clic con el Doble en un documento PDF del sistema. Cuando Acrobat inicio por primera vez, aparecen los cuadros de diálogo para Iniciar sesión, Pantalla de bienvenida y EULA. Descartar estos cuadros de diálogo para todos los usuarios configurados para utilizar el generador de PDF.
+1. Haga clic con el doble en un documento PDF del sistema. Cuando Acrobat inicio por primera vez, aparecen los cuadros de diálogo para Iniciar sesión, Pantalla de bienvenida y EULA. Descartar estos cuadros de diálogo para todos los usuarios configurados para utilizar el generador de PDF.
 1. Ejecute el archivo por lotes de la utilidad Generator de PDF para configurar Acrobat para el servicio de generador de PDF:
 
    1. Abra [AEM Administrador](http://localhost:4502/crx/packmgr/index.jsp) de paquetes y descargue el `adobe-aemfd-pdfg-common-pkg-[version].zip` archivo desde el administrador de paquetes.
@@ -555,8 +555,7 @@ Realice los siguientes pasos para configurar los certificados:
 
    >[!NOTE]
    >
-   >* En el entorno de producción, reemplace las credenciales de evaluación por las credenciales de producción. Asegúrese de eliminar las credenciales antiguas de las extensiones de Reader antes de actualizar una credencial de evaluación o caducada.
-
+   >En el entorno de producción, reemplace las credenciales de evaluación por las credenciales de producción. Asegúrese de eliminar las credenciales antiguas de las extensiones de Reader antes de actualizar una credencial de evaluación o caducada.
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]** en la página **[!UICONTROL Editar configuración]** de usuario.
 
@@ -616,6 +615,6 @@ El servicio Ensamblador depende del servicio Extensiones de Reader, el servicio 
 
 Tiene un entorno de servicios de documento de AEM Forms en funcionamiento. Puede utilizar los servicios de documento mediante:
 
-* [flujos de trabajo centrados en el formulario en OSGi](/help/forms/using/aem-forms-workflow.md)
+* [Flujos de trabajo centrados en el formulario en OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Carpetas inspeccionadas](/help/forms/using/watched-folder-in-aem-forms.md)
-* [API de servicios de Documento](/help/forms/using/aem-document-services-programmatically.md)
+* [API de servicios de documento](/help/forms/using/aem-document-services-programmatically.md)

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Complete los siguientes pasos para agregar un gráfico a una comunicación inter
 
 1. En la barra lateral de componentes, arrastre y suelte el componente Gráfico en una de las siguientes opciones de impresión o canal web de una comunicación interactiva:
 
-   * canal de impresión: Área de Destinatario y campo Imagen
-   * canal web: Área de panel y Destinatario
+   * Canal de impresión: Área de destinatario y campo Imagen
+   * Canal web: Área de panel y Destinatario
 
    El componente Gráfico colocado crea un marcador de posición para un gráfico.
 
@@ -95,7 +95,7 @@ Para lograrlo, debe especificar:
 * **[!UICONTROL Título]** para los ejes X e Y (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo, Importe ($) para el eje X y Gasto para el eje Y.
 * **[!UICONTROL Dirección]** de etiqueta (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo `Tilt Left`
 
-* **[!UICONTROL Información]** de objeto para mostrar al pasar el ratón sobre un gasto (solo canal web); en este ejemplo `${x}: $ ${y}`, que se muestra como Etiqueta de [gastos: $ Amount] (Ejemplo: Visita al parque temático: 315 $)
+* **[!UICONTROL Información]** de objeto para mostrar al pasar el ratón sobre un gasto (solo canal web): en este ejemplo `${x}: $ ${y}`, que se muestra como `[Expense Label: $ Amount]` (Ejemplo: Visita al parque temático: 315 $)
 
 ![Gráfico de columnas en la salida de impresión de una](assets/chartprintchannel.png)figura de comunicación **interactiva:** *Gráfico de columnas en la salida de impresión de una comunicación interactiva*
 
@@ -107,7 +107,7 @@ Para lograrlo, debe especificar:
 
 ## Ejemplo 2: Aplicación de las funciones Suma y Frecuencia en un gráfico de líneas {#applicationsumfrequency}
 
-Mediante la aplicación de funciones en un gráfico, puede trazar datos que el modelo de datos de formulario no proporciona directamente. En este ejemplo, utilizamos un ejemplo de extracto de tarjetas de crédito para comprender cómo se pueden aplicar las funciones Suma y Frecuencia al gráfico.
+Mediante la aplicación de funciones en un gráfico, puede trazar datos que el modelo de datos de formulario no proporciona directamente. En este ejemplo, utilizamos un ejemplo de extracto de tarjeta de crédito para comprender cómo se pueden aplicar las funciones Suma y Frecuencia al gráfico.
 
 ![Gráfico de líneas sin función con tres transacciones](assets/creditcarddatalinechartcopy.png)de &quot;bed and breakfast&quot;**Figura:** *Gráfico de líneas sin función con tres transacciones &quot;Bed and Breakfast&quot;*
 

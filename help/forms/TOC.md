@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'formularios '
 audience: end-user
-user-guide-title: Guía del usuario de AEM 6.4 Forms
+user-guide-title: Guía de Adobe Experience Manager 6.4 para Forms
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3713'
 ht-degree: 1%
 
 ---
 
-# AEM 6.4: Guía del usuario de Forms {#forms}
+# Adobe Experience Manager 6.4 Forms Guide {#forms}
 
 + [Guía del usuario de AEM 6.4 Forms](home.md)
 + Notas de la versión {#release-notes-new-features}
@@ -486,7 +486,7 @@ ht-degree: 1%
       + [Uso de las páginas web de seguridad de documento](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Creación y administración de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registrarse como usuario](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Control de Forms {#configure-forms}
+   + Configuración de Forms {#configure-forms}
       + [Fundamentos de la configuración de formularios](/help/forms/using/admin-help/overview-7.md)
       + [Configuración de las opciones de internacionalización](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Configuración del almacenamiento en caché para Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -517,7 +517,7 @@ ht-degree: 1%
       + [Configuración de colas compartidas](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Uso de tareas](/help/forms/using/admin-help/tasks.md)
    + Configuración del espacio de trabajo {#configure-workspace}
-      + [Configuración general de Workspace](/help/forms/using/admin-help/overview-10.md)
+      + [Información general sobre Workspace](/help/forms/using/admin-help/overview-10.md)
       + [Importación y exportación de la configuración global](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Configuración del mensaje del día](/help/forms/using/admin-help/setting-message-day.md)
       + [Personalización de plantillas de búsqueda](/help/forms/using/admin-help/customizing-search-templates.md)
@@ -529,7 +529,7 @@ ht-degree: 1%
       + [Información del sistema de vista](/help/forms/using/admin-help/view-system-information.md)
       + [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md)
    + Mantenimiento de AEM formularios {#maintain-aem-forms}
-      + [de registro](/help/forms/using/admin-help/log-files.md)
+      + [Archivos de registro](/help/forms/using/admin-help/log-files.md)
       + [Administración de usuarios](/help/forms/using/admin-help/user-management.md)
       + [Supervisión de las implementaciones de formularios AEM](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Administrador de trabajo y limitación](/help/forms/using/admin-help/manager-throttling.md)

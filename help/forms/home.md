@@ -1,18 +1,18 @@
 ---
-title: Guía del usuario de AEM 6.4 Forms
+title: Guía de Adobe Experience Manager 6.4 para Forms
 seo-title: Guía del usuario de AEM 6.4 Forms
 description: Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 seo-description: Abarca todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 22%
 
 ---
 
 
-# Guía del usuario de AEM 6.4 Forms
+# Guía de Adobe Experience Manager 6.4 para Forms
 
 Esta guía cubre todas las tareas de AEM Forms, incluida la creación, gestión, publicación y actualización de formularios digitales.
 

@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 2%
 
 ---
@@ -424,7 +424,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >El icono **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
 
-### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
+## Mover y cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
 Al mover recursos (o carpetas) a otra ubicación, los recursos (o carpetas) no se duplican a diferencia de lo que sucede al copiar el recurso. Los recursos (o las carpetas) se colocan en la ubicación del destinatario y se eliminan de la ubicación de origen. También puede cambiar el nombre del recurso al moverlo a la nueva ubicación. Si va a mover un recurso publicado a una ubicación diferente, tiene la opción de volver a publicarlo. De forma predeterminada, la operación de movimiento en un recurso publicado la cancela automáticamente. El recurso movido se vuelve a publicar si el autor selecciona la opción [!UICONTROL Volver a publicar] al mover el recurso.
 
@@ -434,39 +434,42 @@ Para mover recursos o carpetas:
 
 1. Navegue hasta la ubicación del recurso que desee mover.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![Puede volver a publicar un recurso ya publicado al moverlo](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+Para mover recursos o carpetas:
 
-1. En el asistente para **[!UICONTROL mover recursos]** , realice una de las siguientes acciones:
+1. Navegue hasta la ubicación del recurso que desee mover.
 
-   * Especifique el nombre del recurso después de moverlo. A continuación, toque **[!UICONTROL Siguiente]** para continuar.
-   * Toque **[!UICONTROL Cancelar]** para detener el proceso.
+1. Seleccione el recurso y haga clic en la opción **[!UICONTROL Mover]** de la barra de herramientas.
+   ![Opción Mover de la barra de herramientas Recursos](assets/do-not-localize/move_icon.png)
 
+1. En el asistente para [!UICONTROL mover recursos] , realice una de las siguientes acciones:
+
+   * Especifique el nombre del recurso después de moverlo. A continuación, haga clic en **[!UICONTROL Siguiente]** para continuar.
+
+   * Haga clic en **[!UICONTROL Cancelar]** para detener el proceso.
    >[!NOTE]
    >
-   >Puede especificar el mismo nombre para el recurso si no hay ningún recurso con ese nombre en la nueva ubicación. Sin embargo, debe utilizar un nombre diferente si mueve el recurso a una ubicación en la que exista un recurso con el mismo nombre. Si utiliza el mismo nombre, el sistema genera automáticamente una variación del nombre. Por ejemplo, si el recurso tiene el nombre Cuadrado, el sistema genera el nombre Cuadrado1 para su copia.
-
-   >[!NOTE]
-   >
-   >No se admiten los siguientes caracteres (lista separada por espacios):
-   >* el nombre del archivo de recurso no debe contener  `* / : [ \ \ ] | # % { } ? &`
-   >* el nombre de la carpeta de recursos no debe contener  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* Puede especificar el mismo nombre para el recurso si no hay ningún recurso con ese nombre en la nueva ubicación. Sin embargo, debe utilizar un nombre diferente si mueve el recurso a una ubicación en la que exista un recurso con el mismo nombre. Si utiliza el mismo nombre, el sistema genera automáticamente una variación del nombre. Por ejemplo, si el recurso tiene el nombre Cuadrado, el sistema genera el nombre Cuadrado1 para su copia.
+   >* Al cambiar el nombre, no se permiten espacios en blanco en el nombre del archivo.
 
 
-1. En la página **[!UICONTROL Seleccionar destino]** , realice una de las siguientes acciones:
+1. En el cuadro de diálogo **[!UICONTROL Seleccionar destino]** , realice una de las siguientes acciones:
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Toque **[!UICONTROL Atrás]** para volver a la página **[!UICONTROL Cambiar nombre]** .
+   * Vaya a la nueva ubicación de los recursos y, a continuación, haga clic en **[!UICONTROL Siguiente]** para continuar.
+
+   * Haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Cambiar nombre]** .
 
 1. Si los recursos que se mueven tienen páginas, recursos o colecciones de referencia, la ficha **[!UICONTROL Ajustar referencias]** aparece junto a la ficha **[!UICONTROL Seleccionar destino]** .
 
-   Realice una de las siguientes acciones en la página **[!UICONTROL Ajustar referencias]** :
+   Realice una de las siguientes acciones en la pantalla **[!UICONTROL Ajustar referencias]** :
 
-   * Especifique las referencias que se van a ajustar en función de los nuevos detalles y, a continuación, toque **[!UICONTROL Mover]** para continuar.
+   * Especifique las referencias que se van a ajustar en función de los nuevos detalles y, a continuación, haga clic en **[!UICONTROL Mover]** para continuar.
+
    * En la columna **[!UICONTROL Ajustar]** , seleccione o anule la selección de referencias a los recursos.
-   * Puntee **[!UICONTROL Atrás]** para volver a la página **[!UICONTROL Seleccionar destino]** .
-   * Toque **[!UICONTROL Cancelar]** para detener la operación de movimiento.
+   * Haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Seleccionar destino]** .
+
+   * Haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
 
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
 
@@ -761,7 +764,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 

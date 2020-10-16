@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de administración de AEM 6.4
-breadcrumb-title: Managing Guide
-user-guide-description: Learn how to manage an AEM project.
+breadcrumb-title: Guía de gestión
+user-guide-description: Obtenga información sobre cómo administrar un proyecto de AEM.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 44%
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 

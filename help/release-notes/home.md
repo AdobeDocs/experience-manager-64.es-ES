@@ -1,20 +1,20 @@
 ---
 title: Notas de la versión de Adobe Experience Manager 6.4
 seo-title: Notas de la versión 6.4 de AEM
-description: Las Notas de la versión de AEM cubren información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos.
-seo-description: Las Notas de la versión de AEM cubren información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos.
+description: Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
+seo-description: Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 20%
+ht-degree: 45%
 
 ---
 
 
 # Notas de la versión de Adobe Experience Manager 6.4
 
-Las Notas de la versión de AEM cubren información importante sobre la última versión de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas y los problemas conocidos.
+Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
 
 ## Artículos de AEM clave
 

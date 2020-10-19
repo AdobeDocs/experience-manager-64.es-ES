@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 1%
 
 ---
@@ -188,7 +188,7 @@ Consulte las limitaciones [](#known-limitations-and-design-implications)conocida
 
 ### Probar la integración {#test-driving-your-integration}
 
-Adobe recomienda que realice una prueba de la integración haciendo que la carpeta raíz apunte solo a una subcarpeta en lugar de a una compañía entera.
+Adobe recomienda que realice una prueba de la integración haciendo que la carpeta raíz apunte a una subcarpeta en lugar de a una compañía entera.
 
 >[!CAUTION]
 >
@@ -217,7 +217,7 @@ Puede configurar AEM para cargar recursos en Dynamic Media Classic. Los recursos
 Para configurar Dynamic Media Classic para integrarlo con AEM, debe completar los siguientes pasos:
 
 1. [Definir una configuración](#creating-a-cloud-configuration-for-scene) de nube: define la asignación entre una carpeta de Dynamic Media Classic y una carpeta de recursos. Debe completar este paso aunque solo desee sincronizar unidireccionalmente (de AEM Assets a Dynamic Media Classic).
-1. [Habilite el detector **de presas de **](#enabling-the-adobe-cq-scene-dam-listener)Adobe CQ s7dam - Hecho en la consola[!UICONTROL OSGi].
+1. [Habilite el detector **de presas de**](#enabling-the-adobe-cq-scene-dam-listener) Adobe CQ s7dam - Hecho en la consola [!UICONTROL OSGi] .
 1. Si desea que AEM recursos se carguen automáticamente a Dynamic Media Classic, debe activar esa opción y agregar Dynamic Media Classic al flujo de trabajo de recursos de actualización de DAM. También puede cargar recursos manualmente.
 1. Añadir componentes de Dynamic Media Classic en la barra de tareas. Esto permite a los usuarios utilizar componentes de Dynamic Media Classic en sus páginas AEM.
 1. [Asigne la configuración a la página de AEM](#enabling-scene-for-wcm) : Este paso es necesario para realizar la vista de cualquier ajuste preestablecido de vídeo que haya creado en Dynamic Media Classic. También es necesario si necesita publicar un recurso desde fuera de la carpeta de destinatario de CQ en Dynamic Media Classic.
@@ -277,7 +277,7 @@ Con la sincronización entre AEM Assets y Dynamic Media Classic, actualmente hay
    <td>Si se carga un vídeo en AEM Assets para su codificación mediante Dynamic Media Classic, las miniaturas de vídeo y los vídeos codificados pueden tardar algún tiempo en estar disponibles en AEM Assets, según el tiempo de procesamiento del vídeo.</td> 
   </tr> 
   <tr> 
-   <td>Subcarpetas de Destinatario</td> 
+   <td>Subcarpetas de destinatario</td> 
    <td><p>Si utiliza subcarpetas dentro de la carpeta destinatario, asegúrese de utilizar nombres únicos para cada recurso (independientemente de la ubicación) o de configurar Dynamic Media Classic (en el área Configuración) para que no sobrescriba los recursos independientemente de la ubicación.</p> <p>De lo contrario, se cargarán los recursos con el mismo nombre que se cargan en una subcarpeta de destinatario de Dynamic Media Classic, pero se eliminará el recurso con el mismo nombre de la carpeta de destinatario. </p> </td> 
   </tr> 
  </tbody> 
@@ -398,7 +398,7 @@ Para configurar la carga automática desde AEM Assets:
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Vuelva a la página de bienvenida de AEM y toque **[!UICONTROL Flujos de trabajo]**. Haga clic con el botón Doble en el flujo de trabajo de recursos **de actualización de** DAM para abrirlo.
+1. Vuelva a la página de bienvenida de AEM y toque **[!UICONTROL Flujos de trabajo]**. Haga clic con el botón doble en el flujo de trabajo de recursos **de actualización de** DAM para abrirlo.
 1. En la barra de tareas, vaya a los componentes **[!UICONTROL Flujo de trabajo]** y seleccione **[!UICONTROL Dynamic Media Classic]**. Arrastre **[!UICONTROL Dynamic Media Classic]** al flujo de trabajo y toque **[!UICONTROL Guardar]**. Los recursos añadidos a AEM Assets en la carpeta destinatario se cargarán automáticamente en Dynamic Media Classic.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
@@ -425,7 +425,7 @@ Sin embargo, si no desea que los recursos insertados en Dynamic Media Classic se
 
 Para poder insertar recursos en Dynamic Media Classic sin publicarlos, debe configurar lo siguiente:
 
-1. Póngase en contacto con el servicio de atención al cliente de Dynamic Media Classic (s7support@adobe.com) para habilitar la previsualización segura para su cuenta de Dynamic Media Classic.
+1. [Utilice el Admin Console para crear un caso de soporte técnico.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) En el caso de soporte técnico, solicite que la previsualización segura se habilite para su cuenta de Dynamic Media Classic.
 1. Siga las instrucciones para [configurar la previsualización segura para su cuenta de Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Estos son los mismos pasos que debe seguir para crear cualquier configuración de prueba segura en Dynamic Media Classic.
@@ -543,7 +543,7 @@ Para configurar los ajustes preestablecidos universales para el componente de v�
 
 Puede activar los parámetros configurables de trabajos de carga de Dynamic Media Classic que se activan mediante la sincronización de recursos de Digital Asset Manager/Dynamic Media Classic.
 
-Específicamente, se configura el formato de archivo aceptado por tipo MIME en el área OSGi (Iniciativa de puerta de enlace de servicio abierta) del panel Configuración de la consola web de AEM. A continuación, puede personalizar los parámetros individuales del trabajo de carga que se utilizan para cada tipo MIME en el JCR (repositorio de contenido de Java).
+Concretamente, puede configurar el formato de archivo aceptado por tipo MIME en el área OSGi (Iniciativa de puerta de enlace de servicio abierta) del panel Configuración de la consola web de AEM. A continuación, puede personalizar los parámetros individuales del trabajo de carga que se utilizan para cada tipo MIME en el JCR (repositorio de contenido de Java).
 
 **Para habilitar los recursos basados en tipos MIME:**
 

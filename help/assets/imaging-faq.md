@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
@@ -120,8 +120,8 @@ El primer dominio personalizado no tiene costo adicional con una licencia de Dyn
 
 Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita automáticamente.
 
-1. Iniciar una solicitud de asistencia técnica (correo electrónico: s7support@adobe.com).
-1. Proporcione la siguiente información en su solicitud de asistencia:
+1. [Utilice el Admin Console para crear un caso de soporte técnico.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Proporcione la siguiente información en su caso de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
    1. Todos los dominios que se van a habilitar para las imágenes inteligentes (es decir, imágenes.compañía.com o miempresa.escena7.com).

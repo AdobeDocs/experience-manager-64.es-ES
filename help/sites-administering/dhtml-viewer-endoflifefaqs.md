@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Los estándares web evolucionan constantemente y DHTML es una tecnología de des
 * Compatibilidad total con fuentes
 * Reproducción de vídeo sin complementos
 
-Específicamente para la plataforma de visor DHTML de Scene7, tanto la solución basada en JSP como las API de Javascript no se han optimizado para dispositivos móviles para aprovechar las funciones de multitáctil y gesto. Y aunque los visores DHTML que se lanzaron en 2011/principios de 2012 están optimizados para dispositivos móviles, fueron difíciles de personalizar y mantener debido a la falta de un marco de desarrollo flexible basado en componentes SDK.
+Específicamente para la plataforma de visor DHTML de Scene7, tanto la solución basada en JSP como las API de Javascript no se han optimizado para dispositivos móviles para aprovechar las funciones de multitáctil y gesto. Y aunque los visores DHTML que se lanzaron en 2011/principios de 2012 están optimizados para dispositivos móviles, eran difíciles de personalizar y mantener debido a la falta de un marco de desarrollo flexible basado en componentes SDK.
 
 Debido a estas limitaciones en DHTML y a la rápida tracción del sector con HTML5 como estándar emergente tanto en equipos de escritorio como móviles, Scene7 ha decidido invertir en una plataforma de visor basada en HTML5. Esta inversión oferta a nuestros clientes una plataforma sólida con la que pueden crear visores interactivos más enriquecidos y atractivos que puedan llegar a los usuarios en varias pantallas, incluidos los dispositivos de escritorio, iOS y Android.
 
@@ -131,4 +131,4 @@ Aunque todavía puede estar en producción con visores basados en DHTML, es impo
 
 **¿Con quién puedo contactar para obtener más información?**
 
-Si esta sección de preguntas recientes no soluciona su problema, contacte con el servicio de asistencia técnica ([s7support@adobe.com](mailto:s7support@adobe.com)) o con el administrador de cuentas de Adobe.
+Si esta pregunta frecuente no responde a todas sus preguntas, [utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia o póngase en contacto con el administrador de cuentas de Adobe.

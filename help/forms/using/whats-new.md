@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms.
 
 AEM Forms incluye varias funciones y mejoras nuevas que simplifican aún más la creación, la gestión y las experiencias de los usuarios con formularios adaptables y comunicaciones interactivas.
 
-Continúe leyendo para obtener una introducción rápida a las nuevas funciones y mejoras. Visite la documentación de recursos para obtener detalles. Consulte también las notas de [la versión](/help/release-notes/forms.md)de Forms de AEM 6.4. Para obtener la documentación completa de AEM 6.4 para Forms, visite [AEM Guía](/help/forms/home.md)del usuario de Forms 6.4.
+Continúe leyendo para obtener una introducción rápida a las nuevas funciones y mejoras. Visite la documentación de recursos para obtener detalles. Consulte también las notas de [la versión](/help/release-notes/forms.md)de Forms de AEM 6.4. Para obtener la documentación completa de AEM 6.4 para Forms, visite [AEM Guía](/help/forms/home.md)de Forms 6.4.
 
 ## Comunicaciones interactivas {#interactive-communications}
 
@@ -33,7 +33,7 @@ Interactive Communications centraliza y gestiona la creación, el ensamblaje y e
 
 Interactive Communications utiliza la misma tecnología, procesos y componentes subyacentes que los formularios adaptables para crear comunicaciones interactivas de varios canales, como los formularios adaptables interactivos.
 
-ofertas de comunicación interactiva ventajas significativas:
+Ofertas de comunicación interactiva ventajas significativas:
 
 * Proporciona integración de OOTB con el modelo de datos de formulario para permitir un acceso fácil y optimizado a las bases de datos back-end y a otros sistemas CRM como MS Dynamics
 * Proporciona una interfaz de creación integrada para canales web e impresos
@@ -86,7 +86,7 @@ La comunicación interactiva admite gráficos en la Web y el canal de impresión
 
 Para obtener más información, consulte [Uso de gráficos en Interactive Communications](/help/forms/using/chart-component-interactive-communications.md).
 
-### Conectores de datos listos para usar para rellenar documentos {#out-of-the-box-data-connectors-to-prefill-documents}
+### Conectores de datos listos para usar para rellenar previamente documentos {#out-of-the-box-data-connectors-to-prefill-documents}
 
 La comunicación interactiva proporciona integración de datos con herramientas empresariales para conectarse con varios sistemas empresariales, incluidos sistemas CRM, y personalizar datos en documentos.
 
@@ -124,7 +124,7 @@ Esta versión incorpora varias funciones y mejoras nuevas en la integración de 
 
 Los usuarios empresariales y los autores de formularios ahora pueden crear un modelo de datos de formulario que incluya sus entidades y propiedades sin configurar un origen de datos, y se puede utilizar para crear formularios y documentos adaptables. Puede enlazar el modelo de datos de formulario a orígenes de datos más adelante. Elimina la dependencia de los orígenes de datos para crear formularios y documentos mediante el modelo de datos de formulario.
 
-Del mismo modo, puede crear entidades y propiedades secundarias en un modelo de datos de formulario existente y enlazarlas a las entidades y propiedades correspondientes en un origen de datos más adelante.
+Del mismo modo, puede crear entidades y propiedades secundarias en un modelo de datos de formulario existente y enlazarlas a entidades y propiedades correspondientes en un origen de datos más adelante.
 
 Para obtener más información, consulte [Creación de un modelo](/help/forms/using/create-form-data-models.md)de datos de formulario.
 
@@ -136,7 +136,7 @@ Una propiedad calculada reside localmente en un modelo de datos de formulario y 
 
 Para obtener más información, consulte [Trabajo con el modelo](/help/forms/using/work-with-form-data-model.md)de datos de formulario.
 
-### formularios y documentos de Previsualización con datos de ejemplo {#preview-forms-and-documents-with-sample-data}
+### formularios y documentos de previsualización con datos de ejemplo {#preview-forms-and-documents-with-sample-data}
 
 El modelo de datos de formulario permite generar datos de ejemplo para propiedades de todas las entidades en un modelo de datos de formulario. Los datos generados corresponden a los tipos de datos configurados para las propiedades. Cuando se previsualización un formulario o un documento adaptable asociado al modelo de datos de formulario, se procesa con datos de ejemplo rellenados previamente.
 
@@ -193,10 +193,10 @@ A continuación se indican las mejoras en la aplicación de AEM Forms:
 
 ![aem-forms-documento-security-](assets/aem-forms-document-security-.png)
 
-Con la seguridad de documento, puede distribuir con seguridad cualquier información que haya guardado en un formato compatible. La seguridad de Documento garantiza que solo los usuarios autorizados puedan utilizar sus documentos. A continuación se indican los principales cambios en la seguridad de los documentos:
+Con la seguridad de documento, puede distribuir con seguridad cualquier información que haya guardado en un formato compatible. La seguridad de documento garantiza que solo los usuarios autorizados puedan utilizar sus documentos. A continuación se indican los principales cambios en la seguridad de los documentos:
 
-* La seguridad de Documento proporciona una biblioteca de protección [portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger un documento localmente, sin enviar el documento al servidor de AEM Forms. Sólo las credenciales de seguridad y los detalles de directivas se desplazan por la red al servidor de AEM Forms. AEM 6.4 Forms ha introducido Portable Protection Library (PPL) en un formato de paquete OSGi. Ahora, puede instalar directamente la biblioteca PPL en un servidor AEM Forms y utilizar las capacidades de AEM y PPL en conjunto.
-* El SDK de seguridad de Documento C++ y la biblioteca PPL de C++ se pueden compilar con Microsoft Visual Studio 2013. La versión admitida anteriormente era Microsoft Visual Studio 2010.
+* La seguridad de documento proporciona una biblioteca de protección [portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger un documento localmente, sin enviar el documento al servidor de AEM Forms. Sólo las credenciales de seguridad y los detalles de directivas se desplazan por la red al servidor de AEM Forms. AEM 6.4 Forms ha introducido Portable Protection Library (PPL) en un formato de paquete OSGi. Ahora, puede instalar directamente la biblioteca PPL en un servidor AEM Forms y utilizar las capacidades de AEM y PPL en conjunto.
+* El SDK de seguridad de documento C++ y la biblioteca PPL de C++ se pueden compilar con Microsoft Visual Studio 2013. La versión admitida anteriormente era Microsoft Visual Studio 2010.
 
 ## Plataformas compatibles {#supported-platforms}
 

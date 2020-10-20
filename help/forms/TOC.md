@@ -7,16 +7,16 @@ user-guide-title: Guía de Adobe Experience Manager 6.4 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3721'
 ht-degree: 2%
 
 ---
 
 # Guía de Adobe Experience Manager 6.4 de Forms {#forms}
 
-+ [Guía del usuario de AEM 6.4 Forms](home.md)
++ [Guía de Forms de AEM 6.4](home.md)
 + Notas de la versión {#release-notes-new-features}
    + [Notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [Resumen de las nuevas funciones](using/whats-new.md)

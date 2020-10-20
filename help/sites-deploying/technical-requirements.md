@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 2%
 
 ---
@@ -270,7 +270,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1, pero inferior
 |---|---|
 | **Motor Servlet integrado de arranque rápido (Jetty 9.3)** | A: Admitido |
 | Oracle WebLogic Server 12.2 (12cR2) | A: Admitido |
-| Envío continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | A: Admitido |
+| ENVÍO continuo (LibertyProfile) de Application Server para IBM WebSphere con Web Perfil 7.0 e IBM JRE 1.8 | A: Admitido |
 | IBM WebSphere Application Server 9.0 | A: Admitido |
 | Apache Tomcat 8.5.x | A: Admitido |
 | JBoss EAP 7.1.0 con el servidor de aplicaciones JBoss | A: Admitido (1) |
@@ -319,7 +319,7 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor:
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x y 4.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. AEM características del complemento de formulario solo son compatibles con CentOS 7 y Red Hat Enterprise Linux 6.5 y 7.
+1. Linux Kernel 2.6, 3.x y 4.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones adicionales de AEM Forms solo son compatibles con CentOS 7 y Red Hat Enterprise Linux 7.
 1. AEM Assets: Consulte la sección [Compatibilidad con XMP eliminación de metadatos](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets: No es compatible con Dynamic Media Imaging. Se admite el vídeo de Dynamic Media.
 1. AEM Forms solo se admite en Ubuntu 16.04 LTS.

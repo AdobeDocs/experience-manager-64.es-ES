@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 1%
+source-wordcount: '3305'
+ht-degree: 0%
 
 ---
 
@@ -253,7 +253,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 ### Sistemas operativos de servidor {#server-operating-systems}
 
-#### entornos de producción {#production-environments}
+#### Entornos de producción {#production-environments}
 
 <table> 
  <tbody> 
@@ -278,7 +278,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td><p>Actualizaciones y parches</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Nota:</b> Red Hat Enterprise Linux 6 alcanza el final de la fase de mantenimiento y transiciones a la fase de vida extendida el 30 de noviembre de 2020. Adobe recomienda Red Hat Enterprise Linux 7 para la actualización y las nuevas instalaciones.</p> </td> 
    <td><p>A: Admitido</p> </td> 
    <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td> 
   </tr> 
@@ -309,11 +309,11 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 >
 >AEM Forms en JEE solo admite sistemas operativos de 64 bits.
 
-#### entorno virtualizado {#virtualized-environment}
+#### Entorno virtualizado {#virtualized-environment}
 
 Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Sin embargo, si encuentra algún problema con AEM Forms en un entorno virtual, intente replicar el problema en una máquina física. Si el problema persiste en la máquina física, póngase en contacto con la asistencia de Adobe para obtener una resolución. Para problemas que no se replican en la máquina física, póngase en contacto con el proveedor de entornos virtuales.
 
-#### entornos de desarrollo {#development-environments}
+#### Entornos de desarrollo {#development-environments}
 
 <table> 
  <tbody> 
@@ -346,7 +346,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 1. AEM Forms en JEE no admite Oracle WebLogic ni JBoss® en IBM® AIX®.
 1. AEM Forms en JEE no admite Oracle WebLogic ni IBM® WebSphere® con MySQL.
 1. AEM Forms en JEE no es compatible con Oracle Solaris™ con la arquitectura Intel® (solo se admite SPARC®).
-1. AEM Forms en JEE no admite Oracle WebLogic ni JBoss en SUSE Linux Enterprise Server 12. Sólo IBM WebSphere es compatible con SUSE Linux Enterprise Server 12.
+1. AEM Forms en JEE no admite Oracle WebLogic ni JBoss en SUSE Linux Enterprise Server 12. Solo se admite IBM WebSphere en SUSE Linux Enterprise Server 12.
 1. AEM Forms en JEE no admite ningún JDK con JBoss® excepto Oracle Java™ SE.
 1. AEM Forms on JEE no admite ningún JDK con IBM® WebSphere®, excepto IBM® JDK.
 1. AEM Forms en JEE no admite IBM® DB2 con JBoss®.
@@ -571,9 +571,9 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
    <td>Requisitos de hardware para un pequeño entorno de producción</td> 
    <td> 
     <ul> 
-     <li><strong>entorno</strong>con tecnología Intel: Intel® Xeon® E5-2680, 2,4 GHz o bueno. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li> 
-     <li><strong>entorno alimentado por Sun SPARC:</strong> UltraSPARC V o posterior</li> 
-     <li><strong>entorno con tecnología IBM AIX:</strong> Power6 o posterior<br /> </li> 
+     <li><strong>Entorno</strong>con tecnología Intel: Intel® Xeon® E5-2680, 2,4 GHz o bueno. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li> 
+     <li><strong>Entorno alimentado por Sun SPARC:</strong> UltraSPARC V o posterior</li> 
+     <li><strong>ENTORNO con tecnología IBM AIX:</strong> Power6 o posterior<br /> </li> 
      <li><strong>Memoria: </strong>4 GB <br /> </li> 
     </ul> </td> 
   </tr> 
@@ -769,7 +769,7 @@ La aplicación de AEM Forms está disponible en las siguientes plataformas:
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>Flash Player (Base)</strong></p> </th> 
+   <th><p><strong>Flash Player (base)</strong></p> </th> 
    <th><p><strong>Definiciones de parches admitidas</strong></p> </th> 
   </tr> 
   <tr> 
@@ -809,4 +809,4 @@ Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros
 
 También puede encontrar información adicional sobre parches de terceros buscando en el sitio de soporte empresarial de Adobe artículos de la base de conocimiento relacionados con su producto.
 
-[**Comuníquese con la asistencia técnica **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Comuníquese con la asistencia técnica**](https://www.adobe.com/account/sign-in.supportportal.html)

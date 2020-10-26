@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1668'
 ht-degree: 4%
 
 ---
@@ -52,6 +52,7 @@ AEM 6.4 viene con el paquete de funciones 1.2.6 de Livefyre preinstalado. Este p
 ### Configurar AEM para usar Livefyre: Crear una carpeta de configuración {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. En la página de inicio de AEM, haga clic en el icono **Herramientas** en el carril izquierdo y, a continuación, vaya a **General > Navegador** de configuración.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Haga clic en **Crear** para abrir el cuadro de diálogo Crear configuración.
 1. Asigne un nombre a la configuración y marque la casilla de verificación Configuraciones **de** nube.
 
@@ -73,6 +74,8 @@ Configure AEM para utilizar las credenciales de licencia de Livefyre de su organ
    >Las carpetas deben tener configuraciones de nube habilitadas en sus propiedades para poder agregarlas a las configuraciones de Livefyre. Las carpetas de configuración se crean y administran en el navegador de configuración.
    >
    >No se puede crear un nombre para una configuración; se hace referencia a ella en la ruta de la carpeta en la que se encuentra. Sólo puede tener una configuración por carpeta.
+   >
+   >See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Seleccione la tarjeta de configuración de Livefyre recién creada y, a continuación, haga clic en **Propiedades**.
 

@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ Para crear una plantilla de canal web Complete los siguientes pasos:
 1. Cree una carpeta Plantilla para mantener las plantillas web de comunicación interactiva, si aún no dispone de una. Para obtener más información, consulte Carpetas de plantilla en Plantillas de [página - Editable](/help/sites-developing/page-templates-editable.md).
 
    1. Toque **[!UICONTROL Herramientas]** ![Herramientas-1](assets/tools-1.png) > Navegador **** de configuración.
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. En la página Navegador de configuración, toque **[!UICONTROL Crear]**.
    1. En el cuadro de diálogo Crear configuración, especifique un título para la carpeta, marque Plantillas **[!UICONTROL editables y toque]** Crear ****.
 

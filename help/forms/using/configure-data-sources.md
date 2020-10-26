@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ Todas las configuraciones de servicios en la nube en AEM se consolidan en la `/c
 Para configurar la carpeta para las configuraciones del servicio en la nube:
 
 1. Vaya a **[!UICONTROL Herramientas > General > Navegador]** de configuración.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. Haga lo siguiente para habilitar la carpeta global para las configuraciones de nube o omita este paso para crear y configurar otra carpeta para las configuraciones de servicio en la nube.
 
    1. En el Explorador **[!UICONTROL de]** configuración, seleccione la `global` carpeta y toque **[!UICONTROL Propiedades]**.

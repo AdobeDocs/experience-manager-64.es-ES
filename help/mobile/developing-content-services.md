@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '303'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,9 @@ Content Services puede entregar el contenido como recursos, HTML empaquetado (HT
 >
 >Antes de empezar a usar los servicios de contenido, asegúrese de activar el indicador de los servicios de contenido. Para habilitar la creación y la administración de modelos en la aplicación, debe activar los modelos de datos en el navegador de configuración.
 >
->Consulte **[Administración de servicios](/help/mobile/developing-content-services.md)**de contenido para obtener más información.
+>Consulte **[Administración de servicios](/help/mobile/developing-content-services.md)** de contenido para obtener más información.
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

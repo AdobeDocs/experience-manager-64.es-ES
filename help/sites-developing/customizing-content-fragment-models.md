@@ -1,5 +1,5 @@
 ---
-title: NO PUBLIQUE, PERO NO DELETE LA Personalización De Modelos De Fragmento De Contenido
+title: NO PUBLIQUE, PERO NO DELETE Personalización De Modelos De Fragmento De Contenido
 seo-title: Personalización de modelos de fragmentos de contenido
 description: Los modelos de fragmento de contenido se pueden personalizar y ampliar.
 seo-description: Los modelos de fragmento de contenido se pueden personalizar y ampliar.
@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# NO PUBLIQUE, PERO NO DELETE LA Personalización De Modelos De Fragmento De Contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NO PUBLIQUE, PERO NO DELETE Personalización De Modelos De Fragmento De Contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
 El editor del modelo de fragmentos de contenido es un asistente basado en `Formbuilder`, heredado de:
 
@@ -27,7 +27,7 @@ Este componente tiene las herramientas necesarias para procesar la interfaz de a
 
 ## Ubicaciones {#locations}
 
-Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene activada la propiedad [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenido. Esta configuración también se puede ver en las Propiedades **de** configuración, a las que se puede acceder desde el explorador **de configuración**.
+Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene activada la propiedad [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenido. Esta configuración también se puede ver en las Propiedades **de** configuración, a las que se puede acceder desde el explorador **[de configuración](/help/sites-administering/configurations.md)**.
 
 1. Vaya al explorador a través de **Herramientas**, **General**, Navegador **de** configuración. Por ejemplo, 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`

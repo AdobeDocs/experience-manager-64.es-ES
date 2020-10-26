@@ -8,9 +8,9 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,7 @@ Para crear una plantilla de canal web, defina una carpeta en la que puede guarda
 Siga los pasos siguientes para crear una carpeta para las plantillas editables:
 
 1. Toque **Herramientas** ![Herramientas](assets/tools-icon.svg) > **Navegador** de configuración.
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. En la página Navegador de configuración, toque **Crear**.
 1. En el cuadro de diálogo **Crear configuración** , especifique **Create_First_IC_templates** como título para la carpeta, marque Plantillas **** editables y toque **Crear**.
 

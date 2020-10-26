@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2840'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,7 @@ La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-an
 1. Vaya a **[!UICONTROL Herramientas > General > Navegador]** de configuración. Seleccione el contexto y edite las propiedades. Habilite las configuraciones de nube si aún no están habilitadas.
 
    ![config-propertiesping](assets/config-propertiespng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Crear/editar la configuración del servicio en la nube de Facebook.
 
@@ -258,6 +259,7 @@ La instancia de aplicación y proveedor [de](#adobe-granite-oauth-application-an
 1. Vaya a **[!UICONTROL Herramientas > General > Navegador]** de configuración. Seleccione el contexto y edite las propiedades. Habilite las configuraciones de nube si aún no están habilitadas.
 
    ![twitterconfigproping](assets/twitterconfigproppng.png)
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 1. Crear/editar la configuración del servicio en la nube de Twitter.
 
@@ -443,7 +445,7 @@ Si se ven advertencias transversales en los registros, se recomienda agregar est
 
 En una instancia de autor, ha iniciado sesión con privilegios administrativos:
 
-1. Desde la navegación global: seleccione **Herramientas,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Desde la navegación global: seleccione **Herramientas, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Cree un índice denominado ntBaseLucene-oauth a partir de una copia de ntBaseLucene:
 
    * En node /oak:index
@@ -458,7 +460,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindexar]**: true
-   * **[!UICONTROL reindexCount]**: 3
+   * **[!UICONTROL reindexCount]**: 1
 
 1. Bajo el nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 

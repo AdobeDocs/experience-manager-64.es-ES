@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Un factor clave aquí es que para reconocer los problemas potenciales necesita s
 | [Se están supervisando los archivos](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) de registro. |  |  |
 | La supervisión del sistema se está ejecutando (constantemente) en segundo plano. | Incluido el uso de CPU, memoria, disco y red. Usando, por ejemplo, iostat / vmstat / permon. | Los datos registrados se visualizan y pueden utilizarse para rastrear problemas de rendimiento. También se puede acceder a los datos sin procesar. |
 | [AEM rendimiento se está supervisando](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Incluidos los contadores de [solicitudes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) para supervisar los niveles de tráfico. | Si se observa una pérdida significativa, o a largo plazo, de rendimiento, debe realizarse una investigación detallada. |
-| Está monitoreando los agentes [de replicación](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| Está monitoreando los agentes [de replicación](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Purgue regularmente instancias de flujo de trabajo. | Tamaño del repositorio y rendimiento del flujo de trabajo. | Consulte Depuración [regular de instancias](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)de flujo de trabajo. |
 
 ## Copias de seguridad {#backups}
@@ -99,13 +99,13 @@ Esta sección trata las operaciones de mantenimiento relacionadas con la funció
 
 ### Información general {#overview}
 
-La herramienta **Purgar versiones** está disponible en la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, en**Versiones **o directamente en: &quot;
+La herramienta **Purgar versiones** está disponible en la consola **[Herramientas](/help/sites-administering/tools-consoles.md)** , en **Versiones** o directamente en:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Ruta** del Inicio Una ruta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de Inicio haciendo clic en el navegador de árbol del repositorio.
+**Ruta** del inicio Una ruta absoluta en la que se debe realizar la purga. Puede seleccionar la Ruta de Inicio haciendo clic en el navegador de árbol del repositorio.
 
 **Recursivo** Al depurar datos, puede elegir entre realizar la operación en un nodo o en una jerarquía completa seleccionando Recursivo. En el último caso, la ruta dada define el nodo raíz de la jerarquía.
 
@@ -121,7 +121,7 @@ La herramienta **Purgar versiones** está disponible en la consola **[Herramient
 
 Para depurar versiones de un sitio web, siga estos pasos:
 
-1. Vaya a la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, seleccione**Versiones **y haga clic con el botón doble en**Purgar versiones **.
+1. Vaya a la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**, seleccione **Versiones** y haga clic con el botón doble en **Purgar versiones**.
 1. Configure la ruta de inicio del contenido que se va a purgar (p. ej. `/content/geometrixx-outdoors`).
 
    * Si solo desea depurar el nodo definido por la ruta de acceso, anule la selección de **Recursivo**.
@@ -143,7 +143,7 @@ Para depurar versiones de un sitio web, siga estos pasos:
 Los procesos **Ensayo** y **Depuración** lista todos los nodos procesados. Durante el proceso, un nodo puede tener uno de los siguientes estados:
 
 * `ignore (not versionnable)`:: el nodo no admite el control de versiones y se omite durante el proceso.
-* `ignore (no version)`:: el nodo no tiene ninguna versión y se ignora durante el proceso. &quot;
+* `ignore (no version)`:: el nodo no tiene ninguna versión y se ignora durante el proceso.
 * `retained`:: el nodo no se depura.
 * `purged`:: el nodo se purga.
 
@@ -317,10 +317,15 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >`org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
    >
    >{0} Marca de tiempo del tipo `java.util.Date`
+   >
    >{1} el marcador de registro
-   >{2} nombre del subproceso actual\
-   >{3} nombre del registrador\
-   >{4} nivel de registro\
+   >
+   >{2} nombre del subproceso actual
+   >
+   >{3} nombre del registrador
+   >
+   >{4} nivel de registro
+   >
    >{5} el mensaje de registro
    >
    >Si la llamada de registro incluye un `Throwable` seguimiento de pila se anexa al mensaje.
@@ -405,27 +410,26 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >* Se puede especificar una programación de fecha y hora como un `java.util.SimpleDateFormat` patrón. Esto define el período de tiempo después del cual se rotará el archivo; también el sufijo anexado al archivo rotado (para identificación).
 
    >
-   >  El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria del registro).
    >
-   >  Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
+   >Por ejemplo, a la medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esto sea preciso), ../logs/error.log cambiará su nombre a ../logs/error.log.2010-01-20. El registro para el 21 de enero se enviará a (nuevo y vacío) ../logs/error.log hasta que se pase a la siguiente modificación del día.
    >
-   >  | `'.'yyyy-MM` | Rotación al comienzo de cada mes |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotación en el primer día de cada semana (depende de la configuración regional). |
-   >  | `'.'yyyy-MM-dd` | Rotación a medianoche cada día. |
-   >  | `'.'yyyy-MM-dd-a` | Rotación a medianoche y mediodía de cada día. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotación en la parte superior de cada hora. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotación al principio de cada minuto. |
+   >| `'.'yyyy-MM` | Rotación al comienzo de cada mes |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotación en el primer día de cada semana (depende de la configuración regional). |
+   >| `'.'yyyy-MM-dd` | Rotación a medianoche cada día. |
+   >| `'.'yyyy-MM-dd-a` | Rotación a medianoche y mediodía de cada día. |
+   >| `'.'yyyy-MM-dd-HH` | Rotación en la parte superior de cada hora. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotación al principio de cada minuto. |
    >
-   >  Nota: Al especificar una fecha/hora:
-   >
-   >  1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
+   >Nota: Al especificar una fecha/hora:
+   > 1. Debe &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
       >
       >     
       esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
       >
       >  
-   1. Utilice sólo caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
+   1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier lugar de la opción.
 
 
 1. Lea el nuevo archivo de registro con la herramienta elegida.
@@ -456,7 +460,7 @@ Estas entradas contienen la misma información que se muestra al editar una pág
 
 #### Registros de auditoría de OSGi desde la consola web {#osgi-audit-records-from-the-web-console}
 
-Los eventos OSGi también generan registros de auditoría que se pueden ver en la ficha Estado **de** configuración -> **Archivos de registro **ficha en la consola web de AEM:
+Los eventos OSGi también generan registros de auditoría que se pueden ver en la ficha Estado **de** configuración -> Archivos **** de registro de la consola web de AEM:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -474,7 +478,7 @@ Para monitorear un agente de replicación:
 
 1. Acceda a la ficha **Herramientas** de AEM.
 1. Haga clic en **Replicación**.
-1. Haga clic con el botón Doble en el vínculo a los agentes para el entorno correspondiente (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
+1. Haga clic con el botón doble en el vínculo a los agentes para el entorno correspondiente (a la izquierda o al panel derecho); por ejemplo, **Agentes en el autor**.
 
    La ventana resultante muestra una visión general de todos los agentes de replicación para el entorno de creación, incluidos su destinatario y estado.
 
@@ -489,7 +493,7 @@ Para monitorear un agente de replicación:
    * Ver si la cola de replicación está activa actualmente (habilitada).
    * Ver si hay elementos en la cola.
    * **Actualizar** o **Borrar** para actualizar la visualización de las entradas de cola; esto le ayuda a ver los elementos entrar y salir de la cola.
-   * **Registro** de Vista para acceder al registro de cualquier acción realizada por el agente de replicación.
+   * **Registro** de vista para acceder al registro de cualquier acción realizada por el agente de replicación.
    * **Probar la conexión** a la instancia de destinatario.
    * **Forzar reintento** en cualquier elemento de la cola si es necesario.
 
@@ -520,7 +524,7 @@ Las siguientes listas plantean problemas comunes de rendimiento, junto con propu
 | Área | Síntomas | Para aumentar la capacidad... | Para reducir el volumen... |
 |---|---|---|---|
 | Cliente | Uso elevado de CPU cliente. | Instale una CPU cliente con mayor rendimiento. | Simplificar el diseño (HTML). |
-|  | Uso bajo de CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
+|  | Uso bajo de la CPU del servidor. | Actualice a un explorador más rápido. | Mejore la caché del cliente. |
 |  | Algunos clientes son rápidos, algunos lentos. |  |  |
 | Servidor |  |  |  |
 | Red | Uso bajo de CPU tanto en servidores como en clientes. | Elimine los cuellos de botella de red. | Mejore/optimice la configuración de la caché del cliente. |
@@ -581,7 +585,7 @@ Algunos de ellos dependerán del sistema operativo.
   <tr> 
    <td>Vertederos de rosca</td> 
    <td>Observe los subprocesos JVM. Identificar contenciones, bloqueos y corredores de largo plazo.</td> 
-   <td><p>Depende del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de Análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
+   <td><p>Depende del sistema operativo:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (modo de consola): Ctrl-Salto<br /> </p> <p>También hay disponibles herramientas de análisis, como <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Voladizos de montón</td> 
@@ -624,14 +628,14 @@ Algunos de ellos dependerán del sistema operativo.
    <td><p>Uso: jvisualvm o visualvm<br /> </p> <p>Consulte <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> y rendimiento <a href="#monitoring-performance-using-j-visualvm">de supervisión mediante (J)VisualVM</a>.</p> <p><strong>Nota:</strong> Con JDK 1.6, VisualVM se puede ampliar con complementos.</p> </td> 
   </tr> 
   <tr> 
-   <td>trazo/correa, lsof</td> 
-   <td>análisis de procesos y llamadas al núcleo (Unix).</td> 
+   <td>trazo/trazo, lsof</td> 
+   <td>Análisis de procesos y llamadas al núcleo (Unix).</td> 
    <td>Comandos Unix/Linux.</td> 
   </tr> 
   <tr> 
    <td>Estadísticas de temporización</td> 
    <td>Consulte las estadísticas de temporización para el procesamiento de páginas.</td> 
-   <td><p>Para ver las estadísticas de temporización de la representación de página, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td> 
+   <td><p>Para ver las estadísticas de temporización de la representación de páginas, puede utilizar <strong>Ctrl-Mayús-U</strong> junto con <code>?debugClientLibs=true</code> el conjunto de direcciones URL.</p> </td> 
   </tr> 
   <tr> 
    <td>Herramienta de generación de perfiles de memoria y CPU<br /> </td> 
@@ -845,7 +849,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-Los números anteriores se toman de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación AEM predeterminada. La página es muy sencilla, pero no está optimizada para el rendimiento.
+Los números anteriores se toman de un portátil MAcBook Pro estándar (mediados de 2010) que accede a la página de compañía de geometrixx, tal como se incluye en una instalación AEM predeterminada. La página es muy sencilla, pero no optimizada para el rendimiento.
 
 `apachebench` también muestra el tiempo por solicitud como la media en todas las solicitudes simultáneas; consulte `Time per request: 54.595 [ms]` (media, en todas las solicitudes simultáneas). Puede cambiar el valor del parámetro de concurrencia `-c` (número de varias solicitudes que se van a realizar a la vez) para ver cualquier efecto.
 
@@ -1121,7 +1125,7 @@ Si el sistema se está quedando sin espacio en disco, o si nota que se está blo
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
-   * [El Historial consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [El historial consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación de rendimiento regular {#regular-performance-degradation}
 

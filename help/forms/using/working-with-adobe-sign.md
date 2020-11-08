@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3569'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ En un escenario típico de Adobe Sign y formularios adaptables, un usuario relle
 
 La integración de Adobe Sign con AEM Forms es compatible con:
 
-* flujos de trabajo de firma de un solo usuario y de varios usuarios
-* flujos de trabajo de firma secuenciales y simultáneas
+* Flujos de trabajo de firma de un solo usuario y de varios usuarios
+* Flujos de trabajo de firma secuenciales y simultáneas
 * Experiencias de firma dentro y fuera de formulario
 * Firma de formularios como un usuario anónimo o que ha iniciado sesión
 * Procesos de firma dinámica (integración con el flujo de trabajo de AEM Forms)
@@ -78,6 +78,10 @@ Siga estos pasos para crear un formulario adaptable para Adobe Sign:
    1. Especifique el **nombre** y el **título** del formulario adaptable.
    1. Seleccione el contenedor [de](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuración creado al configurar Adobe Sign con AEM Forms.
 
+      >[!NOTE]
+      >
+      >La lista desplegable Cloud Service **[!UICONTROL de]** Adobe Sign muestra los servicios en la nube configurados en el contenedor de configuración seleccionado en este campo. La lista desplegable **[!UICONTROL Adobe Sign Cloud Service]** está disponible en la sección Firma **** electrónica de las propiedades del formulario adaptable cuando se selecciona la opción **[!UICONTROL Activar Adobe Sign]** .
+
 1. En la ficha Modelo de **[!UICONTROL formulario]** , seleccione una de las siguientes opciones:
 
    * Seleccione la opción **[!UICONTROL Asociar plantilla de formulario como Documento de plantilla]** de registro y seleccione un Documento de plantilla de registro. Si utiliza un formulario adaptable basado en una plantilla de formulario, las documentos enviadas para firmar solo mostrarán los campos basados en la plantilla de formulario asociada. No muestra todos los campos del formulario adaptable.
@@ -103,7 +107,7 @@ Siga estos pasos para utilizar Adobe Sign en un formulario adaptable existente:
 
 Adobe Sign tiene varios campos que se pueden colocar en un formulario adaptable. Estos campos aceptan varios tipos de datos, como firmas, iniciales, compañía o título, y ayudan a recopilar información adicional durante la firma, junto con las firmas. Puede utilizar el componente Bloque de Adobe Sign para colocar los campos de Adobe Sign en varias ubicaciones en un formulario adaptable.
 
-Siga estos pasos para agregar campos a un formulario adaptable y personalizar varias opciones relacionadas con estos campos:
+Siga estos pasos para agregar campos a un formulario adaptable y personalizar diversas opciones relacionadas con estos campos:
 
 1. Arrastre y suelte el componente Bloque **de** Adobe Sign desde el navegador de componentes al formulario adaptable. El componente Bloque de Adobe Sign tiene todos los campos de Adobe Sign admitidos. De forma predeterminada, agrega un campo de **firma** al formulario adaptable.
 
@@ -154,6 +158,8 @@ Realice los siguientes pasos para seleccionar un servicio en la nube y el orden 
 
    Si la lista de **Adobe Sign Cloud Service** está vacía, siga el artículo [Configurar Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) para configurar el servicio.
 
+   El menú desplegable lista los servicios de nube que existen en la `global` carpeta en Herramientas > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Además, el menú desplegable también lista los servicios en la nube que existen en la carpeta seleccionada en el campo Contenedor **[!UICONTROL de]** configuración al crear un formulario adaptable.
+
 1. Seleccione el orden de firma en el cuadro de diálogo **Los firmantes pueden firmar** . Los cantantes de Adobe Sign pueden firmar un formulario adaptable **secuencialmente** , uno tras otro firmante o **simultáneamente** , en cualquier orden.
 
    En orden secuencial, un firmante recibe el formulario para firmar por vez. Una vez que un firmante completa la firma del documento, el formulario se envía al siguiente firmante, etc.
@@ -174,7 +180,7 @@ Solo puede tener un firmante o varios para un formulario adaptable. Al agregar u
    Haga clic en el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png) para especificar la siguiente información sobre el firmante:
 
    * **Título:** Especifique un título para identificar exclusivamente a un firmante.
-   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está definida como **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
+   * **¿Son iguales el firmante y la persona que rellena el formulario?:** Seleccione **Sí** si la persona que rellena el formulario y la que firma primero son la misma. Si la opción está establecida en **No,** no utilice el componente de paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente en Sí.
    * **Dirección de correo electrónico del firmante:** Especifique la dirección de correo electrónico del firmante. El firmante recibe documentos/formulario firmados en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en AEM perfil de usuario del usuario que ha iniciado sesión o introducir manualmente una dirección de correo electrónico. Es un paso obligatorio. Además, tenga en cuenta que, si solo ha configurado un firmante, asegúrese de que la dirección de correo electrónico del firmante no es idéntica a la cuenta de Adobe Sign utilizada para configurar los servicios de nube de AEM.
    * **Método de autenticación del firmante:** Especifique el método para autenticar a un usuario antes de abrir un formulario para firmar. Puede elegir entre teléfono, base de conocimientos y autenticación social basada en la identidad.
 

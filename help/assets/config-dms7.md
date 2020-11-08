@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5547'
+source-wordcount: '5571'
 ht-degree: 4%
 
 ---
@@ -140,8 +140,8 @@ Las tareas de configuración y configuración son:
 * [Configuración de publicación para Image Server](#publishing-setup-for-image-server)
 * [Configuración de la configuración general de la aplicación](#configuring-application-general-settings)
 * [Configuración de la administración de color](#configuring-color-management)
-* [Configuración del procesamiento de recursos](#configuring-asset-processing)
-* [Añadir tipos MIME personalizados para formatos no admitidos](#adding-custom-mime-types-for-unsupported-formats)
+* [Edición de tipos MIME para formatos admitidos](#editing-mime-types-for-supported-formats)
+* [Añadir tipos MIME para formatos no admitidos](#adding-mime-types-for-unsupported-formats)
 * [Creación de ajustes preestablecidos de conjunto de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuración de publicación para Image Server {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Al hacerlo, se haría lo siguiente:
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el espacio de `sRGB` color.
 * Las representaciones dinámicas que devuelven una salida CMYK la devolverán en el espacio de `WebCoated` color.
 
-#### Configuración del procesamiento de recursos {#configuring-asset-processing}
+#### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
 
 Puede definir qué tipos de recursos deben procesarse con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
 
 * Convertir un Adobe PDF en un recurso de catálogo electrónico.
 * Convertir un Documento de Adobe Photoshop (.PSD) en un recurso de plantilla de letrero para su personalización.
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo PostScript encapsulado de Adobe Photoshop (.EPS).
-
->[!NOTE]
->
->Los Perfiles de vídeo y los Perfiles de imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
+* [Se pueden utilizar Perfiles](/help/assets/video-profiles.md) de vídeo y Perfiles [de](/help/assets/image-profiles.md) imagen para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
-**Para configurar el procesamiento** de recursos:
+**Para editar tipos de MIME para formatos admitidos**
 
 1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global y, a continuación, toque el icono **[!UICONTROL Herramientas]** (martillo) y vaya a **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
@@ -252,7 +249,7 @@ Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
 Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before **[!UICONTROL image_]** and its enabled value is set to **[!UICONTROL false]**.
 
-**Para agregar tipos MIME personalizados para formatos** no admitidos:
+**Adición de tipos MIME personalizados para formatos no admitidos**
 
 1. En AEM, haga clic en **[!UICONTROL Herramientas > Operaciones > Consola]** web.
 
@@ -498,7 +495,7 @@ Para actualizar cualquiera de estos parámetros, siga los pasos que se indican e
 
 La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
 
-**Para actualizar la cola** Granite Transient Workflow:
+**Para actualizar la cola Granite Transient Workflow**
 
 1. Vaya a [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) y busque la **[!UICONTROL cola: Granite Transient Workflow Queue]**.
 
@@ -508,11 +505,13 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
+   Puede aumentar los trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
 
-   Adobe recomienda configurar 32 trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media Classic.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toque **[!UICONTROL Guardar]**.
 

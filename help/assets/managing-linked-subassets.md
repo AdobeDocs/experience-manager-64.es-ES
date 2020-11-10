@@ -3,9 +3,9 @@ title: Administre recursos compuestos y genere subrecursos.
 description: Obtenga información sobre cómo crear referencias a AEM recursos desde archivos de InDesign, Adobe Illustrator y Photoshop. Aprenda también a utilizar la función Visor de páginas para la vista de páginas individuales de archivos de varias páginas, incluidos archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo 
 
 Los subrecursos solo se muestran si se generan y están disponibles para el recurso de varias páginas seleccionado. Para vista de los subrecursos generados, abra el recurso de varias páginas. En el área superior izquierda de la página, haga clic en el icono ![del carril](assets/do-not-localize/aem_leftrail_contentonly.png) izquierdo y haga clic en **[!UICONTROL Subrecursos]** en la lista. Al seleccionar **[!UICONTROL Subrecursos]** en la lista. Como alternativa, utilice el método abreviado de teclado `alt + 5`.
 
-![Subrecursos de Vista para un recurso de varias páginas](assets/view_subassets_simulation.gif)
+![Subrecursos de vista para un recurso de varias páginas](assets/view_subassets_simulation.gif)
 
 ## Vista de páginas de un archivo de varias páginas {#view-pages-of-a-multi-page-file}
 
@@ -117,7 +117,7 @@ Para InDesign, puede extraer páginas mediante el servidor de InDesign. Si las p
 
 Las siguientes opciones están disponibles en la barra de herramientas, en el carril izquierdo y en los controles del visor de páginas:
 
-* **[!UICONTROL Acciones]** de escritorio para abrir o mostrar un subrecurso específico mediante AEM aplicación de escritorio. Consulte cómo [configurar acciones](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) de escritorio si utiliza AEM aplicación de escritorio.
+* **[!UICONTROL Acciones]** de escritorio para abrir o mostrar un subrecurso específico mediante AEM aplicación de escritorio. Consulte cómo [configurar acciones](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) de escritorio si utiliza AEM aplicación de escritorio.
 
 * **[!UICONTROL La opción Propiedades]** abre la página [!UICONTROL Propiedades] del subrecurso específico.
 
@@ -133,4 +133,5 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 
 >[!MORELIKETHIS]
 >
->* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Uso de la aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+

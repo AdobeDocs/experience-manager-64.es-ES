@@ -1,17 +1,17 @@
 ---
-title: Flujo de Actividad en la línea de tiempo
+title: Flujo de actividad en la línea de tiempo
 description: 'En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 40%
+source-wordcount: '214'
+ht-degree: 36%
 
 ---
 
 
-# Flujo de Actividad en la línea de tiempo {#activity-stream-in-timeline}
+# Flujo de actividad en la línea de tiempo {#activity-stream-in-timeline}
 
 Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager (AEM), la función de flujo de Actividad actualiza la línea de tiempo para reflejar la actividad.
 
@@ -28,7 +28,7 @@ Las siguientes operaciones se registran en el flujo de actividad:
 
 Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. 
 
-Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran en AEM los recursos existentes mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o la [aplicación de escritorio de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html).
+Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran en AEM los recursos existentes mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o la [aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 
 >[!NOTE]
 >

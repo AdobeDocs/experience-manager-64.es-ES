@@ -3,9 +3,9 @@ title: Uso compartido de carpetas de AEM Assets con Creative Cloud
 description: Configuración y prácticas recomendadas para permitir a los usuarios de Adobe Experience Manager Assets intercambiar carpetas de recursos con usuarios de Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ En el diagrama siguiente se proporciona una descripción general de la integraci
 La integración incluye los siguientes elementos:
 
 * **Servidor** AEM Assets implementado en la red empresarial (servicios administrados o in situ): El uso compartido de carpetas se inicia aquí.
-* **Servicio** principal de Adobe Marketing Cloud Assets: Actúa como intermediario entre los servicios de almacenamiento AEM y Creative Cloud. El administrador de la compañía que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la instancia de AEM Assets. También [definen una lista de colaboradores](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)Creative Cloud aprobados, que los usuarios de AEM Assets también pueden compartir carpetas para mayor seguridad.
+* **Servicio** principal de Adobe Marketing Cloud Assets: Actúa como intermediario entre los servicios de almacenamiento AEM y Creative Cloud. El administrador de la compañía que utiliza la integración necesita establecer una relación de confianza entre la organización de Marketing Cloud y la instancia de AEM Assets. También [definen una lista de colaboradores](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets)Creative Cloud aprobados, que los usuarios de AEM Assets también pueden compartir carpetas para mayor seguridad.
 * **Servicios** web de Creative Cloud Assets (interfaz de usuario web de almacenamiento y archivos de Creative Cloud): Aquí es donde usuarios específicos del Creative Cloud, con los que se compartió una carpeta de AEM Assets, podrían aceptar la invitación y ver la carpeta en el almacenamiento de su cuenta de Creative Cloud.
 * **Aplicación** de escritorio Creative Cloud: (Opcional) Permite el acceso directo a las carpetas o archivos compartidos desde el escritorio del usuario creativo mediante la sincronización con el almacenamiento de Creative Cloud Assets.
 

@@ -1,17 +1,17 @@
 ---
-title: Guía de recursos
+title: Guía de Assets
 description: Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
-user-guide-title: Guía de recursos
+user-guide-title: Guía de Assets
 translation-type: tm+mt
-source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 24%
+source-wordcount: '325'
+ht-degree: 17%
 
 ---
 
 
-# Guía de recursos
+# Guía de Assets
 
 Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
 
@@ -32,20 +32,20 @@ Esta guía cubre todas las tareas de AEM Assets, como la creación, administraci
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Pantallas](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía muestra los conceptos básicos de AEM. |
 | [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Aprenda a crear su instancia de AEM. |
 | [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar un proyecto AEM correctamente. |
 | [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
+| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos AEM clave
 
 * [Tutoriales AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
-* [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
-* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

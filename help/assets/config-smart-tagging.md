@@ -3,9 +3,9 @@ title: Configure el etiquetado de recursos mediante el servicio de contenido int
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1212'
 ht-degree: 34%
 
 ---
@@ -41,7 +41,7 @@ Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, inst
 
 A public certificate allows you to authenticate your profile on [!DNL Adobe Developer Console].
 
-1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > Cloud Services **** preexistentes.
+1. En la [!DNL Experience Manager] interfaz de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > Cloud Services **** preexistentes.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
@@ -83,7 +83,7 @@ Una vez que caduca un certificado, ya no es de confianza. No puede renovar un ce
 
    ![Eliminar la entrada de búsqueda por similitudes existente en Keystore para agregar un nuevo certificado de seguridad](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Imagen: Elimine la entrada`similaritysearch`en el almacén de claves para añadir un nuevo certificado de seguridad.*
+   *Imagen: Elimine la entrada `similaritysearch` en el almacén de claves para añadir un nuevo certificado de seguridad.*
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servicios de nube heredados]**. Haga clic en **[!UICONTROL Etiquetas inteligentes de recursos]** > **[!UICONTROL Mostrar configuración]** > **[!UICONTROL Configuraciones disponibles]**. Haga clic en la configuración requerida.
 
@@ -190,5 +190,4 @@ Después de completar la configuración, utilice un MBean de JMX para validar la
 >* [Administrar etiquetas inteligentes](managing-smart-tags.md)
 >* [Descripción general y cómo se enseñan las etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Directrices y reglas para la formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
->* [Tutorial de vídeo sobre cómo configurar etiquetas inteligentes](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 

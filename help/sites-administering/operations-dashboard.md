@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramienta
 
 ## Informes de estado {#health-reports}
 
-El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. oferta las medidas y el umbral de ciertos contadores configurables y, en algunos casos, oferta información sobre cómo resolver el problema.
+El sistema de informes de estado proporciona información sobre el estado de una instancia de AEM a través de Sling Health Checks. Esto se puede realizar mediante solicitudes OSGI, JMX, HTTP (a través de JSON) o mediante la IU táctil. Oferta las medidas y el umbral de ciertos contadores configurables y, en algunos casos, oferta información sobre cómo resolver el problema.
 
 Tiene varias características, que se describen a continuación.
 
@@ -206,7 +206,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
   </tr> 
   <tr> 
    <td>Límites de recorrido de la consulta</td> 
-   <td><p>Límites de recorrido de Consulta comprueba el <code>QueryEngineSettings</code> MB, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p> 
+   <td><p>Límites de recorrido de consulta comprueba el <code>QueryEngineSettings</code> MB, más específicamente los atributos <code>LimitInMemory</code> y <code>LimitReads</code> , y devuelve el siguiente estado:</p> 
     <ul> 
      <li>devuelve el estado de advertencia si uno de los límites es igual o superior a la variable <code>Integer.MAX_VALUE</code></li> 
      <li>devuelve el estado de advertencia si uno de los límites es menor que 10000 (la configuración recomendada de Oak)</li> 
@@ -296,7 +296,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
   </tr> 
   <tr> 
    <td>Comprobaciones de seguridad</td> 
-   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales abordan diferentes preocupaciones de la lista de comprobación de seguridad disponible en la página de documentación de la lista de comprobación de <a href="/help/sites-administering/security-checklist.md">seguridad.</a> La comprobación es útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">security check,type=HealthCheck</a></p> </td> 
+   <td><p>La comprobación de seguridad es un compuesto que agrega los resultados de varias comprobaciones relacionadas con la seguridad. Estas comprobaciones de estado individuales abordan diferentes preocupaciones de la lista de comprobación de seguridad disponible en la página de documentación de la lista de comprobación de <a href="/help/sites-administering/security-checklist.md">seguridad.</a> La comprobación es útil como prueba de humo de seguridad cuando se inicia la instancia. </p> <p>El MBean de esta revisión de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securityChecks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>Paquetes activos</td> 
@@ -389,7 +389,7 @@ El Panel Health Check se puede integrar con Nagios a través de los granitos JMX
        }
    ```
 
-1. Compruebe su panel Nagios para el servicio recién creado:
+1. Compruebe su panel Nagios para ver el servicio recién creado:
 
    ![chlimage_1-417](assets/chlimage_1-417.png)
 
@@ -483,7 +483,7 @@ La página muestra:
 
 Para cualquier consulta dada, Oak intenta averiguar la mejor manera de ejecutar según los índices Oak definidos en el repositorio bajo el nodo **oak:index** . Según la consulta, Oak puede elegir diferentes índices. Comprender cómo Oak está ejecutando una consulta es el primer paso para optimizar la consulta.
 
-La Consulta Explicar es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a él desde la pantalla de bienvenida de AEM, en **Herramientas - Operaciones - Diagnóstico** , y luego haciendo clic en Rendimiento **de** Consulta y pasando a la ficha **Explicar Consulta** .
+La Consulta Explicar es una herramienta que explica cómo Oak está ejecutando una consulta. Se puede acceder a ella desde la pantalla de bienvenida de AEM, en **Herramientas - Operaciones - Diagnóstico** , y luego haciendo clic en Rendimiento **de** Consulta y pasando a la ficha **Explicar Consulta** .
 
 **Características**
 
@@ -587,7 +587,7 @@ Para obtener más información sobre la recopilación de elementos no utilizados
 
 ### Workflow purge {#workflow-purge}
 
-Los Flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
+Los flujos de trabajo también se pueden purgar del Panel de mantenimiento. Para ejecutar la tarea Depuración del flujo de trabajo, debe:
 
 1. Haga clic en la página Ventana **Mantenimiento** Semanal.
 1. En la página siguiente, haga clic en el botón **Reproducir** de la tarjeta de depuración **del flujo de trabajo** .

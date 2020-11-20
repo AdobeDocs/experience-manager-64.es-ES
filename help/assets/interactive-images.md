@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4300'
 ht-degree: 1%
@@ -136,7 +136,7 @@ Considere los siguientes ejemplos de direcciones URL de Quickview y sus variable
          <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li> 
-        </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena productId= de consulta y es claramente un valor de SKU. Por lo tanto, nuestras zonas interactivas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
+        </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena de consulta productId= y es claramente un valor de SKU. Por lo tanto, nuestras zonas interactivas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
       </tr> 
       <tr> 
        <td><p>SKU único, que se encuentra en la ruta de URL.</p> </td> 
@@ -246,7 +246,7 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 >[!NOTE]
 >
 >Cuando se agregan zonas interactivas a una imagen en una imagen interactiva o una pancarta de carrusel, la información de las zonas interactivas se almacena en la misma ubicación de metadatos (en relación con la ubicación de la imagen), independientemente de si se trata de una imagen interactiva o de una pancarta de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con los datos de puntos interactivos definidos) en cualquier visor.
-
+>
 >Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 >
 >Consulte también Pancartas [de carrusel](carousel-banners.md).

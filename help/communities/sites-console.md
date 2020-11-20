@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 3%
@@ -98,7 +98,7 @@ En el panel Plantilla del sitio, se especifican el título, la descripción, la 
 
 * **[!UICONTROL Nombre]** del sitio de la comunidad: El nombre de la página raíz del sitio que aparece en la dirección URL
 
-   * Compruebe el Doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
+   * Compruebe el doble del nombre, ya que no es fácil cambiarlo después de crear el sitio
    * La dirección URL base ( `https://*server:port/site root/site name*)` se mostrará debajo de la variable `Community Site Name`
    * Para una dirección URL válida, anexe un código de idioma base + &quot;.html&quot;
 
@@ -216,10 +216,11 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
    No marcar un sitio de comunidad *privada* . El valor predeterminado no está marcado.
 
 >[!NOTE]
-
-**[!UICONTROL Permitir inicios de sesión sociales]**
->Aunque las configuraciones de Facebook y Twitter de muestra pueden existir y ser seleccionables, para un entorno [de](../../help/sites-administering/production-ready.md)producción es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte Inicio de sesión en [Social con Facebook y Twitter](social-login.md).
 >
+>**[!UICONTROL Permitir inicios de sesión sociales]**
+>
+>Aunque las configuraciones de Facebook y Twitter de muestra pueden existir y ser seleccionables, para un entorno [de](../../help/sites-administering/production-ready.md)producción es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte Inicio de sesión en [Social con Facebook y Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -240,15 +241,15 @@ Encontrar miembros de la comunidad es fácil mediante la búsqueda por tipo.
 
 * **[!UICONTROL Administradores de la comunidad]**
 
-   Escritura de Inicios para seleccionar uno o más miembros de la comunidad o grupos miembros que pueden administrar miembros de la comunidad y grupos miembros.
+   Escritura de inicios para seleccionar uno o más miembros de la comunidad o grupos miembros que pueden administrar miembros de la comunidad y grupos miembros.
 
 * **[!UICONTROL Moderadores de la comunidad]**
 
-   Escritura de Inicios para seleccionar uno o varios miembros de la comunidad o grupos de miembros en los que se debe confiar como moderadores del contenido generado por el usuario.
+   Escritura de inicios para seleccionar uno o varios miembros de la comunidad o grupos de miembros en los que se debe confiar como moderadores del contenido generado por el usuario.
 
 * **[!UICONTROL Miembros privilegiados de la comunidad]**
 
-   Escritura de Inicios para seleccionar uno o varios miembros de la comunidad o grupos de miembros para que se les pueda crear contenido nuevo cuando `Allow Privileged Member` se haya seleccionado para una función [de](functions.md)comunidad.
+   Escritura de inicios para seleccionar uno o varios miembros de la comunidad o grupos de miembros para que se les pueda crear contenido nuevo cuando `Allow Privileged Member` se haya seleccionado para una función [de](functions.md)comunidad.
 
 #### MODERATION {#moderation}
 
@@ -392,7 +393,8 @@ El contenido de un sitio puede crearse con las mismas herramientas que cualquier
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>
+>Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Modificación de las propiedades del sitio {#modifying-site-properties}
 
@@ -439,15 +441,20 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
       modifique el orden de las funciones como se muestra en la barra de navegación de nivel superior del sitio
 
 >[!NOTE]
-Puede cambiar el orden de todas las funciones en la estructura del sitio, excepto la función en la parte superior. Por lo tanto, no se puede cambiar la página de inicio del sitio de las comunidades.
+>
+>Puede cambiar el orden de todas las funciones en la estructura del sitio, excepto la función en la parte superior. Por lo tanto, no se puede cambiar la página de inicio del sitio de las comunidades.
 
 >[!CAUTION]
-Aunque el título de visualización se puede cambiar sin efectos secundarios, no se recomienda editar el nombre de la dirección URL de una función de comunidad que pertenece a un sitio de comunidad.
-Por ejemplo, si se cambia el nombre de la URL, no se moverá el UGC existente, lo que tendrá el efecto de &#39;perder&#39; UGC.
+>
+>Aunque el título de visualización se puede cambiar sin efectos secundarios, no se recomienda editar el nombre de la dirección URL de una función de comunidad que pertenece a un sitio de comunidad.
+>
+>Por ejemplo, si se cambia el nombre de la URL, no se moverá el UGC existente, lo que tendrá el efecto de &#39;perder&#39; UGC.
 
 >[!CAUTION]
-La función de grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
-Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
+>
+>La función de grupos *no debe* ser la *primera ni la única* función de la estructura del sitio.
+>
+>Cualquier otra función, como la función [de](functions.md#page-function)página, debe incluirse y enumerarse en primer lugar.
 
 #### Ejemplo: Añadir una función de catálogo en una estructura de sitio de comunidad {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -525,8 +532,10 @@ Tenga en cuenta que los miembros asignados a funciones como moderadores o admini
 Para obtener más información, consulte [Administración de usuarios y grupos](users.md)de usuarios.
 
 >[!NOTE]
-Si [permite el inicio de sesión en Social: Facebook](#user-management) está habilitado una vez que el grupo de usuarios
-* community-*&lt;nombre-sitio>*-*&lt;uid>*-miembros
+>
+>Si [permite el inicio de sesión en Social: Facebook](#user-management) está habilitado una vez que el grupo de usuarios
+>
+>* community-*&lt;nombre-sitio>*-*&lt;uid>*-miembros
 
 se crea, el servicio [de nube de](social-login.md#createafacebookcloudservice) Facebook aplicado debe configurarse para agregar usuarios a este grupo.
 

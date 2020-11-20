@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4787'
 ht-degree: 4%
@@ -251,7 +251,7 @@ Consulte [(Opcional) Vista previa de letreros](#optional-previewing-carousel-ban
 >[!NOTE]
 >
 >Cuando se agregan zonas interactivas a una imagen en una imagen [interactiva](interactive-images.md) o una pancarta de carrusel, la información de puntos interactivos se almacena en la misma ubicación de metadatos (en relación con la ubicación de la imagen), independientemente de si se trata de una imagen interactiva o de una pancarta de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con los datos de puntos interactivos definidos) en cualquier visor.
-
+>
 >Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 
 >[!NOTE]

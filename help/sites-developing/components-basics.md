@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 1%
@@ -1030,10 +1030,12 @@ El `cq:listeners` nodo (tipo de nodo `cq:EditListenersConfig`) define lo que suc
 >[!NOTE]
 >
 >En el caso de los componentes anidados, existen ciertas restricciones en acciones definidas como propiedades en el `cq:listeners` nodo:
-
->* Para los componentes anidados, los valores de las siguientes propiedades *deben* ser `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>
+>* Para los componentes anidados, los valores de las siguientes propiedades *deben* ser `REFRESH_PAGE`:
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 El controlador de evento se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
@@ -1045,7 +1047,8 @@ El siguiente ejemplo equivale a la configuración `REFRESH_INSERTED` :
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ y la `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) utilidad.
+>
+>Para ver qué parámetros se pueden utilizar en la IU clásica, consulte la sección `before<action>` y `after<action>` eventos de la documentación de la [ y la `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) utilidad.
 
 Con la siguiente configuración, la página se actualiza después de eliminar, editar, insertar o mover el componente:
 

@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3726'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Seleccione la letra a previsualización siguiendo los pasos siguientes:
 
 1. Si ha seleccionado **Previsualización** > **Personalizado**, se abre un cuadro de diálogo. En el cuadro de diálogo, seleccione un archivo de datos, correspondiente al diccionario de datos, para previsualización de la letra con y, a continuación, seleccione **Previsualización**. Se crea un archivo de datos basado en un diccionario de datos para una letra específica. Para obtener más información sobre el archivo de datos, consulte Diccionario [de datos](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
-   ![Carta de Previsualización](assets/8_previewcustomdatafile.png)
+   ![Carta de previsualización](assets/8_previewcustomdatafile.png)
 
 1. La previsualización HTML de la letra (previsualización de formularios móviles) se abre con la ficha Datos en foco de forma predeterminada.
 
@@ -57,7 +57,7 @@ Seleccione la letra a previsualización siguiendo los pasos siguientes:
    Hay tres fichas: datos, contenido y datos adjuntos. Si no hay elementos de datos (variables de marcador de posición y campos de diseño), la letra se abre directamente con la ficha Contenido que se muestra. La ficha Archivos adjuntos solo está disponible cuando los archivos adjuntos están presentes o el acceso a la biblioteca está habilitado.
 
    >[!NOTE]
-
+   >
    >Para obtener más información sobre el cambio entre el modo de representación HTML o PDF de la previsualización de letras, consulte [Cambio del modo de representación de letras](#changerenditionmode). Para obtener más información sobre la compatibilidad con PDF en Administración de correspondencia y AEM, consulte [Interrupción de los complementos del navegador NPAPI y su impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) y [PDF forms en HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
 
 ### Enter data {#enterdata}
@@ -170,7 +170,7 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
    * **Texto** Muestra la suma de las variables únicas de marcador de posición sin rellenar y los elementos de diccionario de datos contenidos en el módulo de texto.
    * **Condición** Muestra la suma de las variables de condición únicas no rellenadas incluidas en la condición y las variables incluidas en los módulos resultantes.
    * **Lista** Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados a la lista.
-   * **Área** de Destinatario Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados al área de destinatario.
+   * **Área** de destinatario Muestra la suma de todas las variables únicas sin rellenar contenidas en los módulos asignados al área de destinatario.
 
    Tenga en cuenta lo siguiente con respecto a las variables con valores predeterminados:
 
@@ -198,11 +198,11 @@ En la ficha de contenido, administre el contenido como fragmentos de documento y
 * Editar (sólo módulos de texto): Abra el editor de texto enriquecido para editar el módulo de texto.
 * Panel de datos (módulos de texto y condición): Abra todas las variables del módulo.
 
-**Módulo Lista**
+**Módulo lista**
 
 * Insertar línea en blanco: Inserta una nueva línea en blanco.
 * Biblioteca de contenido: Abre la biblioteca de contenido para agregar módulos a la lista.
-* Configuración de Lista (solo lista anidada):
+* Configuración de lista (solo lista anidada):
 * Bloqueo de pedido (información): Indica que no se puede cambiar el orden de los elementos de lista.
 
 ### Administrar archivos adjuntos {#manage-attachments}
@@ -317,16 +317,16 @@ Esta opción existe para las personas que tienen problemas con el almacenamiento
 
 1. Si es necesario, configure el nombre de usuario y la contraseña con los que desea acceder al servidor.
 
-#### envío de datos adjuntos {#attachmentdelivery}
+#### Envío de datos adjuntos {#attachmentdelivery}
 
 * Los archivos adjuntos de la carta están disponibles en el proceso posterior del PDF, que se crea después del envío de la carta.
 * Cuando la carta se procesa con las API del lado del servidor como un PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos PDF adjuntos.
 * Cuando se carga un proceso de publicación asociado a una plantilla de carta como parte de las operaciones Enviar o completar correspondencia mediante la interfaz de usuario Crear correspondencia, los archivos adjuntos se pasan como la Lista&lt;com.adobe.idp.Documento> en el parámetro AttachmentDocs.
 * Los mecanismos de envío predeterminados, como correo electrónico e impresión, también proporcionan archivos adjuntos junto con el PDF de la correspondencia generada.
 
-## Modos de representación de la previsualización de letras: previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modos de representación de la previsualización de letras: Previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-La Administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la revertir a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
+La Administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la reversión a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre el cambio entre el modo de previsualización HTML y PDF, consulte [Cambio del modo de letra](#changerenditionmode)de representación.
 
 A continuación se describen las ventajas y la funcionalidad disponibles en la previsualización de HTML y PDF.
 
@@ -340,7 +340,7 @@ A continuación se describen las ventajas y la funcionalidad disponibles en la p
 **Ventajas de la previsualización de PDF**
 
 * **Salto** de página: En la previsualización PDF, se puede realizar una vista exacta de cómo los saltos de página de la letra afectan a su salida.
-* **previsualización** final: En la previsualización PDF, puede realizar una vista del formato y el aspecto exactos de la letra, ya que la letra aparecerá en su salida.
+* **Previsualización** final: En la previsualización PDF, puede realizar una vista del formato y el aspecto exactos de la letra, ya que la letra aparecerá en su salida.
 
 Para obtener información sobre la compatibilidad con secuencias de comandos en PDF forms, consulte Compatibilidad con [secuencias de comandos](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 

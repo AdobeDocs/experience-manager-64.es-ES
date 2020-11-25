@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 4%
 
 Las comunidades de Adobe Experience Manager (AEM) ofrecen la posibilidad de crear rápidamente un sitio de comunidad local que tenga un rendimiento y una gestión mejorados, y que anime a los visitantes a convertirse en miembros valiosos de la comunidad.
 
-Póngase en contacto con el representante de cuentas para obtener información sobre la licencia de AEM Communities, así como sobre las licencias adicionales para funciones de habilitación y Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Funciones de comunidades {#communities-features}
 
@@ -116,7 +118,7 @@ La consola de herramientas globales proporciona acceso a las siguientes herramie
 
    * Crear y administrar funciones de comunidad
 
-* [Consola de configuración](tools.md#storageconfiguratonconsole) de Almacenamiento
+* [Consola de configuración](tools.md#storageconfiguratonconsole) de almacenamiento
 
    * Seleccionar y configurar el almacén [](working-with-srp.md) común para el sitio
 
@@ -182,7 +184,7 @@ Las características de una comunidad de participación pueden incluir:
 * Moderación
 * Notificaciones
 * Puntuación y distintivos
-* sistema de informes de Analytics
+* Sistema de informes de Analytics
 
 Para experimentar la facilidad de crear rápidamente una nueva comunidad de participación, visite [Introducción a AEM Communities](getting-started.md).
 

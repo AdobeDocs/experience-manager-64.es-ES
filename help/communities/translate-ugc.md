@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Cuando se configura un marco de integración de traducción además del proveedo
 
 ## El servicio de traducción predeterminado {#the-default-translation-service}
 
-AEM Communities se entrega con una licencia [de](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) prueba para un servicio [de traducción](../../help/sites-administering/tc-msconf.md) predeterminado habilitado para varios idiomas.
+AEM Communities incluye una licencia [de](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) prueba para un servicio [de traducción](../../help/sites-administering/tc-msconf.md) predeterminado habilitado para varios idiomas.
 
 Al [crear un sitio](sites-console.md)de comunidad, el servicio de traducción predeterminado se activa cuando `Allow Machine Translation` se comprueba desde el subpanel [TRANSLACIÓN](sites-console.md#translation) .
 
@@ -56,7 +56,7 @@ Al [crear un sitio](sites-console.md)de comunidad, el servicio de traducción pr
 
 Cuando un sitio web tiene varias copias [de](../../help/sites-administering/tc-prep.md)idioma, el servicio de traducción predeterminado no reconoce que el UGC introducido en un sitio puede estar relacionado con el UGC introducido en otro, como cuando el UGC se genera esencialmente por el mismo componente (la copia de idioma de la página que contiene el componente).
 
-Es similar a los grupos de personas que discuten un tema que no tiene conocimiento de los comentarios hechos en grupos distintos de los suyos, en comparación con todos los que participan en una conversación en un grupo grande.
+Es similar a los grupos de personas que discuten sobre un tema que no tiene conocimiento de que los comentarios se hagan en grupos distintos de los suyos, en comparación con todos los que participan en una conversación en un grupo grande.
 
 Si se desea una &quot;conversación de un grupo&quot;, es posible habilitar la traducción global en un sitio web con varias copias de idioma, de modo que todo el subproceso sea visible independientemente de qué copia de idioma se esté viendo.
 

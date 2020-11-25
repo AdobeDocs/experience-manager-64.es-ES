@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## Lista de comprobación de instalación {#installation-checklist}
 
-**Para la plataforma[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Para la plataforma [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * Instalar las últimas actualizaciones de [AEM 6.4](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    (la configuración de muestra se proporciona para el desarrollo)
 
-**Para la capacidad de[Comunidades](overview.md)**
+**Para la capacidad de [Comunidades](overview.md)**
 
 * Si implementa un conjunto de servidores [de](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)publicación, [identifique al editor principal](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Buques GA de Comunidades con paquete Communities. Para conocer las actualizaciones de AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulte [AEM Notas](/help/release-notes/release-notes.md#release-information)de la versión 6.4.
+AEM 6.4 Communities GA incluye el paquete Communities. Para conocer las actualizaciones de AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities), consulte [AEM Notas](/help/release-notes/release-notes.md#release-information)de la versión 6.4.
 
 ### Actualizaciones de AEM 6.4 {#aem-updates}
 
@@ -127,7 +127,7 @@ Los pasos necesarios son:
    * Examinar... para seleccionar el paquete extraído del archivo ZIP descargado
    * Compruebe que el controlador JDBC de *Oracle Corporation para MySQLcom.mysql.jdbc* está activo y inicio si no (o compruebe los registros)
 
-1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a conectar JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
+1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a vincular JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
 
    * Por ejemplo, http://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` configuración
@@ -150,7 +150,7 @@ El motor AEM Communities SCORM es necesario para la [función de habilitación](
 
 * **[cq -social- scorm -package, versión 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Este paquete SCORM es compatible con todas las versiones de comunidades AEM 6.4.
 
-* **[cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**incluye el motor[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/). Este paquete SCORM es compatible AEM comunidades 6.4.2.x y posteriores.
+* **[cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** incluye el motor [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) . Este paquete SCORM es compatible AEM comunidades 6.4.2.x y posteriores.
 
 Para una nueva instalación del motor SCORM, debe utilizarse el paquete que contiene [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (que es [ cq -social- scorm -package, versión 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)). Para que pueda reproducir recursos de aprendizaje compatibles con SCORM 2017.
 
@@ -162,7 +162,7 @@ Para una nueva instalación del motor SCORM, debe utilizarse el paquete que cont
 1. Descargue **`/libs/social/config/scorm/database_scormengine_data.sql`** de la instancia cq y ejecútela en el servidor mysql para crear un esquema de scormEngineDB actualizado.
 1. Añada `/content/communities/scorm/RecordResults` en la propiedad Rutas excluidas en el filtro CSRF desde `https://<hostname>;:<port>/system/console/configMgr` los editores.
 
-Las instalaciones SCORM existentes se pueden actualizar a [**cq-social-scorm-package, versión 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(que utiliza[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), si el contenido del curso creado requiere SCORM 2017.1.
+Las instalaciones SCORM existentes se pueden actualizar a [**cq-social-scorm-package, versión 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (que utiliza [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), si el contenido del curso creado requiere SCORM 2017.1.
 
 >[!NOTE]
 >
@@ -282,7 +282,7 @@ Hay dos agentes de replicación en el entorno de creación que necesitan configu
 * Siga el mismo procedimiento para ambos agentes:
 
    * **Agente predeterminado (publicación)**
-   * **Agente de replicación inversa (publicar inversa)**
+   * **Agente de replicación inversa (publicar en sentido inverso)**
 
       1. Seleccione el agente
       1. Select **[!UICONTROL edit]**
@@ -296,7 +296,7 @@ Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 
 
 ![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### Agente de replicación inversa (publicar inversa) {#reverse-replication-agent-publish-reverse}
+#### Agente de replicación inversa (publicar en sentido inverso) {#reverse-replication-agent-publish-reverse}
 
 ![chlimage_1-413](assets/chlimage_1-413.png)
 

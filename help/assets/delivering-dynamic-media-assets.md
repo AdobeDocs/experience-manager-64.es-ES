@@ -33,11 +33,11 @@ Con Dynamic Media dispone de varias opciones:
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](imaging-faq.md) para obtener más información.
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Añadir recursos de Dynamic Media en páginas web](adding-dynamic-media-assets-to-pages.md)
+* [Añadir Dynamic Media Assets a páginas web](adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visor de imágenes o vídeos en una página web](embed-code.md)
 * [Activar la protección de los vínculos interactivos de Dynamic Media](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
 * Integración de la marca de agua digital no visible (Digimarc) con Dynamic Media (próximamente)
@@ -47,8 +47,8 @@ Para obtener más información, consulte los temas siguientes:
 * [Invalidar el contenido en caché de CDN](invalidate-cdn-cached-content.md)
 * [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
 
-## envío HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## ENVÍO HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Consulte Envío [HTTP/2 de las preguntas](/help/sites-administering/scene7-http2faq.md) más frecuentes sobre el contenido para obtener más información.
+Consulte [HTTP/2 Envío de las preguntas más frecuentes sobre el contenido](/help/sites-administering/scene7-http2faq.md) para obtener más información.

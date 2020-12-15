@@ -1,6 +1,6 @@
 ---
 title: Administración de ajustes preestablecidos de imagen de Dynamic Media
-description: Obtenga información sobre los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y administrar ajustes preestablecidos de imagen
+description: Conozca los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -17,7 +17,7 @@ ht-degree: 8%
 ---
 
 
-# Managing Dynamic Media image presets {#managing-image-presets}
+# Administración de ajustes preestablecidos de imagen de Dynamic Media {#managing-image-presets}
 
 Los ajustes preestablecidos de imagen permiten a AEM Assets distribuir dinámicamente imágenes de diferentes tamaños, formatos diferentes o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para el envío de la imagen. También puede elegir comandos de formato para que el aspecto de la imagen se optimice cuando se distribuya para su visualización.
 
@@ -25,13 +25,13 @@ Los administradores pueden crear ajustes preestablecidos para exportar recursos.
 
 También puede crear ajustes preestablecidos de imagen adaptables. Si se aplica un ajuste preestablecido de imagen interactivo a los recursos, éstos cambian según el dispositivo o el tamaño de pantalla en el que se vean. Puede configurar los ajustes preestablecidos de imagen para que utilicen CMYK en el espacio de color además de RGB o Gris.
 
-En esta sección se describe cómo crear, modificar y administrar, en general, los ajustes preestablecidos de imagen. Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualización. See [Applying Image Presets](image-presets.md).
+En esta sección se describe cómo crear, modificar y administrar, en general, los ajustes preestablecidos de imagen. Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualización. Consulte [Aplicación de ajustes preestablecidos de imagen](image-presets.md).
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte Imágenes [inteligentes](imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](imaging-faq.md) para obtener más información.
 
-## Understanding Dynamic Media image presets {#understanding-image-presets}
+## Explicación de los ajustes preestablecidos de imagen de Dynamic Media {#understanding-image-presets}
 
 Al igual que una macro de software, un ajuste preestablecido de imagen es una colección predefinida de comandos de tamaño y formato guardados con un nombre. Para comprender cómo funcionan los ajustes preestablecidos de imagen, supongamos que el sitio web requiere que cada imagen de producto aparezca en diferentes tamaños, formatos diferentes y tasas de compresión para el envío de escritorio y móvil.
 
@@ -41,9 +41,9 @@ Las imágenes con un tamaño reducido al distribuirse dinámicamente pueden perd
 
 Los administradores pueden crear ajustes preestablecidos de imagen. Para crear un ajuste preestablecido de imagen, puede realizar inicios desde cero o puede realizar inicios desde uno existente y guardarlo con un nombre nuevo.
 
-## Managing Dynamic Media image presets {#managing-image-presets-1}
+## Administración de ajustes preestablecidos de imagen de Dynamic Media {#managing-image-presets-1}
 
-Para administrar los ajustes preestablecidos de imagen en AEM, toque el logotipo de AEM para acceder a la consola de navegación global y, a continuación, toque el icono Herramientas y vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
+Para administrar los ajustes preestablecidos de imagen en AEM, toque el logotipo de AEM para acceder a la consola de navegación global y, a continuación, toque el icono Herramientas y vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
@@ -51,15 +51,15 @@ Para administrar los ajustes preestablecidos de imagen en AEM, toque el logotipo
 >
 >Los ajustes preestablecidos de imagen que cree también estarán disponibles como representaciones dinámicas cuando realice la previsualización o entrega de recursos.
 >
->En el modo *Medios* dinámicos: Scene7, *no es necesario* publicar ajustes preestablecidos de imagen, ya que los ajustes preestablecidos de imagen se publican automáticamente.
+>En *Dynamic Media - modo Scene7*, *no* necesita publicar ajustes preestablecidos de imagen cuando los ajustes preestablecidos de imagen se publican automáticamente.
 >
->En el modo *Medios* dinámicos: híbrido, es necesario publicar manualmente los ajustes preestablecidos de imagen.
+>En *Dynamic Media - Modo híbrido*, debe publicar manualmente los ajustes preestablecidos de imagen.
 >
->See [Publishing Image Presets.](#publishing-image-presets)
+>Consulte [Publicación de ajustes preestablecidos de imagen.](#publishing-image-presets)
 
 >[!NOTE]
 >
->El sistema muestra una serie de representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de **[!UICONTROL detalles]** de un recurso. Puede aumentar o disminuir el número de ajustes preestablecidos de imagen que se muestran. See [Increasing the number of image presets that display](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>El sistema muestra una variedad de representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista **[!UICONTROL Detalle]** de un recurso. Puede aumentar o disminuir el número de ajustes preestablecidos de imagen que se muestran. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Formatos de archivo Adobe Illustrator (AI), Postscript (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -70,34 +70,34 @@ El formato de archivo de Adobe Illustrator es una variante de PDF. Las principal
 * Los documentos de Adobe Illustrator constan de una sola página con varias capas. Cada capa se extrae como un subrecurso PNG en el recurso principal de Illustrator.
 * Los documentos PDF constan de una o varias páginas. Cada página se extrae como un subrecurso PDF de una sola página en el documento PDF principal de varias páginas.
 
-Los subrecursos los crea el `Create Sub Asset process` componente dentro del flujo de trabajo general `DAM Update Asset` . Para ver este componente de proceso dentro del flujo de trabajo, toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
+Los subrecursos son creados por el componente `Create Sub Asset process` dentro del flujo de trabajo general `DAM Update Asset`. Para ver este componente de proceso dentro del flujo de trabajo, toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
 
-Consulte también [Visualización de páginas de un archivo](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)de varias páginas.
+Consulte también [Visualización de páginas de un archivo de varias páginas](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-Puede vista de los subrecursos o las páginas al abrir el recurso, tocar el menú Contenido y seleccionar **[!UICONTROL Subrecursos]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. Es decir, las páginas PDF se extraen mediante el componente de `Create Sub Asset` flujo de trabajo. Después se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el flujo de trabajo Actualizar recurso **[!UICONTROL de]** DAM los procesa.
+Puede vista de los subrecursos o las páginas al abrir el recurso, tocar el menú Contenido y seleccionar **[!UICONTROL Subrecursos]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. Es decir, las páginas PDF se extraen mediante el componente de flujo de trabajo `Create Sub Asset`. Luego se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]** los procesa.
 
 Para utilizar Dynamic Media para la previsualización y generación de representaciones dinámicas para archivos AI, EPS o PDF, se requieren los siguientes pasos de procesamiento:
 
-1. En el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM, el componente de proceso **[!UICONTROL Rasterizar representación]** de Previsualización de imagen PDF/AI rasteriza la primera página del recurso original con la resolución configurada en una `cqdam.preview.png` representación.
+1. En el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**, el componente de proceso **[!UICONTROL Rasterizar representación de Previsualización de imagen PDF/AI]** rasteriza la primera página del recurso original utilizando la resolución configurada en una representación `cqdam.preview.png`.
 
-1. A continuación, la `cqdam.preview.png` representación se optimiza en un PTIFF mediante el componente de proceso Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media dentro del flujo de trabajo.
+1. A continuación, la representación `cqdam.preview.png` se optimiza en un PTIFF mediante el componente de proceso **[!UICONTROL Dynamic Media Process Image Assets]** dentro del flujo de trabajo.
 
 >[!NOTE]
 >
->In the **[!UICONTROL DAM Update Asset]** workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
+>En el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**, el paso **[!UICONTROL Miniaturas de EPS]** genera miniaturas para los archivos EPS.
 
 ### Propiedades de metadatos de recursos PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propiedad Metadata** | **Descripción** |
 |---|---|
-| dam:Physicalwidthinpulgadas | Ancho del Documento en pulgadas. |
-| dam:Physicalheightinpulgadas | Altura del Documento en pulgadas. |
+| dam:Physicalwidthinpulgadas | Ancho del documento en pulgadas. |
+| dam:Physicalheightinpulgadas | Altura del documento en pulgadas. |
 
-Puede acceder a **[!UICONTROL Rasterizar opciones de componentes de proceso de representación]** de Previsualización de imágenes PDF/AI mediante el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM.
+Puede acceder a **[!UICONTROL Rasterizar las opciones de componentes de Previsualización de imagen PDF/AI]** mediante el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**.
 
-Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página Modelos **[!UICONTROL de]** flujo de trabajo, seleccione **[!UICONTROL DAM Update Asset]** y, a continuación, en la barra de herramientas, toque **[!UICONTROL Editar]**. En la página de flujo de trabajo **[!UICONTROL de recursos de actualización de]** DAM, toque con el doble el componente de proceso **[!UICONTROL Rasterizar representación]** de Previsualización de imágenes PDF/AI para abrir el cuadro de diálogo Propiedades **[!UICONTROL de]** paso.
+Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione **[!UICONTROL Recurso de actualización de DAM]** y, a continuación, en la barra de herramientas, toque **[!UICONTROL Editar]**. En la página **[!UICONTROL Flujo de trabajo de recursos de actualización de DAM]**, toque con el doble el componente de proceso **[!UICONTROL Rasterizar representación de Previsualización de imagen PDF/AI]** para abrir su cuadro de diálogo **[!UICONTROL Propiedades de los pasos]**.
 
-### Rasterize PDF/AI image preview rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
+### Rasterizar opciones de representación de previsualización de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar el flujo de trabajo de archivos PDF o AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -135,9 +135,9 @@ Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!
 
 Con los argumentos de proceso predeterminados, la primera página de un documento PDF/AI se rasteriza a 72 ppp y la imagen de previsualización generada tiene un tamaño de 2048 x 2048 píxeles. Para una implementación típica, puede aumentar la resolución a un mínimo de 150 ppp o más. Por ejemplo, un documento de tamaño de letra de EE. UU. a 300 ppp requiere una anchura y una altura máximas de 2550 x 3300 píxeles, respectivamente.
 
-**[!UICONTROL La anchura]** máxima y la altura **** máxima limitan la resolución a la que se debe rasterizar. Por ejemplo, si los máximos no cambian y la resolución se establece en 300 ppp, un documento de carta de EE. UU. se rasteriza a 186 ppp. Es decir, el documento es de 1581 x 2046 píxeles.
+**[!UICONTROL La]** anchura máxima  **[!UICONTROL y la]** altura máxima limitan la resolución en la que se rasterizará. Por ejemplo, si los máximos no cambian y la resolución se establece en 300 ppp, un documento de carta de EE. UU. se rasteriza a 186 ppp. Es decir, el documento es de 1581 x 2046 píxeles.
 
-El componente de proceso **[!UICONTROL Rasterizar representación]** de Previsualización de imagen PDF/AI tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes de gran tamaño pueden desbordar la memoria proporcionada a la JVM (Máquina virtual Java). Se debe tener cuidado de proporcionar al JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, y cada uno de ellos tiene la posibilidad de crear una imagen con el tamaño máximo configurado.
+El componente de proceso **[!UICONTROL Rasterizar representación de Previsualización de imagen PDF/AI]** tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes de gran tamaño pueden desbordar la memoria proporcionada a la JVM (Máquina virtual Java). Se debe tener cuidado de proporcionar al JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, y cada uno de ellos tiene la posibilidad de crear una imagen con el tamaño máximo configurado.
 
 ### Formato de archivo InDesign (INDD) {#indesign-indd-file-format}
 
@@ -145,13 +145,13 @@ Si desea admitir la ingestión de archivos INDD para poder generar una represent
 
 Para los archivos InDesign, los subrecursos se extraen solo si el servidor Adobe InDesign está integrado con AEM. Los recursos a los que se hace referencia están vinculados según sus metadatos. No se requiere InDesign Server para la vinculación. Sin embargo, los recursos a los que se hace referencia deben estar presentes en AEM antes de que se procesen los archivos de InDesign para que se creen los vínculos entre los archivos de InDesign y los recursos a los que se hace referencia.
 
-See [Integrating AEM Assets with InDesign Server](indesign.md).
+Consulte [Integración de AEM Assets con InDesign Server](indesign.md).
 
-El componente de proceso de Extracción de medios del flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM ejecuta varios **[!UICONTROL Extend Scripts]** preconfigurados para procesar archivos de InDesign.
+El componente de proceso de Extracción de medios del flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]** ejecuta varios **[!UICONTROL Scripts]** preconfigurados para procesar archivos de InDesign.
 
 ![Rutas de Extend Script en los argumentos del proceso de Extracción de medios](assets/media_extraction_arguments.png)
 
-Las rutas de **[!UICONTROL ampliación de secuencias de comandos]** en los argumentos del componente de proceso de Extracción **[!UICONTROL de]** medios en el flujo de trabajo de **[!UICONTROL DAM Update Asset]** .
+Las rutas **[!UICONTROL Extend Script]** en los argumentos del componente de proceso **[!UICONTROL Media Extracción]** en el flujo de trabajo **[!UICONTROL DAM Update Asset]**.
 
 La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
@@ -165,12 +165,12 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
   <tr> 
    <td>ThumbnailExport.jsx</td> 
    <td>Sí</td> 
-   <td>Genera una representación de 300 ppp <code>thumbnail.jpg</code> que se optimiza y se convierte en una representación PTIFF por componente <code>Dynamic Media Process Image Assets</code> de proceso.<br /> </td> 
+   <td>Genera una representación de 300 ppp <code>thumbnail.jpg</code> que se optimiza y se convierte en una representación PTIFF mediante <code>Dynamic Media Process Image Assets</code> componente de proceso.<br /> </td> 
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Sí</td> 
-   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso InDesign. El flujo de trabajo también lo optimiza y lo convierte en un PTIFF <code>DAM Update Asset</code> .<br /> </td> 
+   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso InDesign. También se optimiza y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td> 
   </tr> 
   <tr> 
    <td>PDFPagesExport.jsx</td> 
@@ -182,11 +182,11 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 ## Configuración del tamaño de miniatura de imagen {#configuring-image-thumbnail-size}
 
-Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos) para recursos de imagen dinámicos y el otro (Miniaturas de **[!UICONTROL proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
+Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**) para recursos de imagen dinámica y el otro (**[!UICONTROL Miniaturas de proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
-El tamaño de las miniaturas se define en el siguiente formato: **width:height:center**, por ejemplo, *80:80:false*. La anchura y la altura determinan el tamaño en píxeles de la miniatura; el valor central es false o true y, si se define como true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centrará dentro de la miniatura.
+El tamaño de las miniaturas se define en el siguiente formato: **width:height:center**, por ejemplo *80:80:false*. La anchura y la altura determinan el tamaño en píxeles de la miniatura; el valor central es false o true y, si se define como true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centrará dentro de la miniatura.
 
 >[!NOTE]
 >
@@ -201,12 +201,12 @@ El tamaño de las miniaturas se define en el siguiente formato: **width:height:c
 
 **Para configurar el tamaño** de la miniatura:
 
-1. Toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
-1. Toque el paso Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos y, a continuación, toque la ficha **[!UICONTROL Miniaturas]** . Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Puntee **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
+1. Toque el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]** y, a continuación, toque la ficha **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
 
    ![step_properties_thumbnailwords](assets/step_properties_thumbnailarguments.png)
 
-1. Pulse el paso **[!UICONTROL Procesar miniaturas]** y, a continuación, pulse la pestaña **[!UICONTROL Miniaturas]**. Change the thumbnail size, as needed, and tap **[!UICONTROL OK]**.
+1. Pulse el paso **[!UICONTROL Procesar miniaturas]** y, a continuación, pulse la pestaña **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y toque **[!UICONTROL Aceptar]**.
 
    >[!NOTE]
    >
@@ -214,9 +214,9 @@ El tamaño de las miniaturas se define en el siguiente formato: **width:height:c
 
 1. Toque **[!UICONTROL Guardar]** para guardar los cambios en el flujo de trabajo.
 
-### Aumento o disminución del número de ajustes preestablecidos de imagen de Dynamic Media que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### Aumento o disminución del número de ajustes preestablecidos de imagen de Dynamic Media que muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas al realizar la previsualización de recursos. AEM muestra una variedad de representaciones dinámicas al visualizar recursos desde Vista de **[!UICONTROL detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
+Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas al realizar la previsualización de recursos. AEM muestra una variedad de representaciones dinámicas al ver un recurso desde **[!UICONTROL Vista de detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
 
 **Para aumentar o reducir el número de ajustes preestablecidos de imagen de Dynamic Media que se muestran**:
 
@@ -225,7 +225,7 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 
    ![Increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL value]**, which is set to 15 by default, to the desired number.
+1. En la propiedad **[!UICONTROL limit]**, cambie el **[!UICONTROL valor]**, que se establece en 15 de forma predeterminada, por el número deseado.
 1. Vaya al origen de datos de ajustes preestablecidos de imagen en `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -233,18 +233,18 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
 1. En la propiedad limit, cambie el número al número deseado, por ejemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Toque **[!UICONTROL Guardar todo]**.
 
-### Creating Dynamic Media image presets {#creating-image-presets}
+### Creación de ajustes preestablecidos de imagen de Dynamic Media {#creating-image-presets}
 
-La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al realizar una vista previa o publicar.
+La creación de un ajuste preestablecido de imagen de Dynamic Media le permite aplicar estos ajustes a cualquier imagen al obtener una vista previa o al publicar.
 
 >[!NOTE]
 >
 >Si utiliza Internet Explorer 9, la creación de un ajuste preestablecido no aparece en la lista preestablecida inmediatamente después de guardarlo. Para solucionar este problema, deshabilite la caché para IE9.
 
 Si desea admitir la ingestión de archivos AI, PDF y EPS para poder generar una representación dinámica de estos formatos de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.\
-Consulte [Adobe Illustrator (AI), Postscript (EPS) y formatos](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)de archivo PDF.
+Consulte [Formatos de archivo Adobe Illustrator (AI), Postscript (EPS) y PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
-Si desea admitir la ingestión de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.  Consulte Formato [de archivo](#indesign-indd-file-format)InDesign (INDD).
+Si desea admitir la ingestión de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.  Consulte [Formato de archivo InDesign (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
@@ -253,7 +253,7 @@ Si desea admitir la ingestión de archivos INDD para poder generar una represent
 **Para crear un ajuste preestablecido** de imagen de Dynamic Media:
 
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
-1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
+1. Toque el icono **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
 1. Toque **[!UICONTROL Crear]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -262,15 +262,15 @@ Si desea admitir la ingestión de archivos INDD para poder generar una represent
    >
    >Para que este ajuste preestablecido de imagen sea interactivo, borre los valores de los campos de **[!UICONTROL anchura]** y **[!UICONTROL altura]** y déjelos en blanco.
 
-1. En la página **[!UICONTROL Editar ajuste preestablecido]** de imagen, introduzca valores en las fichas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** según corresponda, incluido un nombre. Las opciones se describen en [Opciones de ajustes preestablecidos de imagen](#image-preset-options). Los ajustes preestablecidos aparecen en el panel izquierdo y se pueden utilizar sobre la marcha con otros recursos.
+1. En la página **[!UICONTROL Editar ajuste preestablecido de imagen]**, introduzca valores en las fichas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** según corresponda, incluido un nombre. Las opciones se describen en [Opciones de ajustes preestablecidos de imagen](#image-preset-options). Los ajustes preestablecidos aparecen en el panel izquierdo y se pueden utilizar sobre la marcha con otros recursos.
 
    ![chlimage_1-497](assets/chlimage_1-497.png)
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-### Creating a responsive image preset {#creating-a-responsive-image-preset}
+### Creación de un ajuste preestablecido de imagen interactivo {#creating-a-responsive-image-preset}
 
-Para crear un ajuste preestablecido de imagen interactivo, siga los pasos que se indican en [Creación de ajustes preestablecidos](#creating-image-presets)de imagen. Al introducir la altura y la anchura en la ventana **[!UICONTROL Editar ajuste preestablecido]** de imagen, borre los valores y déjelos en blanco.
+Para crear un ajuste preestablecido de imagen interactivo, siga los pasos que se describen en [Creación de ajustes preestablecidos de imagen](#creating-image-presets). Al introducir la altura y la anchura en la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, borre los valores y déjelos en blanco.
 
 Si se dejan en blanco, AEM que este ajuste preestablecido de imagen responde. Puede ajustar los demás valores según corresponda.
 
@@ -278,19 +278,19 @@ Si se dejan en blanco, AEM que este ajuste preestablecido de imagen responde. Pu
 
 >[!NOTE]
 >
->In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
+>Para ver los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]** al aplicar un ajuste preestablecido de imagen a un recurso, el recurso debe publicarse.
 >
->En el modo Dynamic Media: Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
+>En el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen y los recursos de imagen se publican automáticamente.
 >
->En el modo Dynamic Media: híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
+>En Dynamic Media: modo híbrido, debe publicar manualmente ajustes preestablecidos de imagen y recursos de imagen.
 
 ### Opciones de ajustes preestablecidos de imagen {#image-preset-options}
 
-Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda las siguientes tres opciones de *mejores prácticas* para el inicio:
+Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda las siguientes tres opciones *prácticas recomendadas* para el inicio:
 
-* **[!UICONTROL Formato]** (ficha **[!UICONTROL Básico]** ): seleccione **[!UICONTROL JPEG]** u otro formato que satisfaga sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
-* **[!UICONTROL Activar enfoque]** simple: no seleccione **[!UICONTROL Activar enfoque]** simple (este filtro de enfoque oferta menos control que la configuración de máscara de enfoque).
-* **[!UICONTROL Enfoque: Modo]** de remuestreo: seleccione **[!UICONTROL Bicúbico]**.
+* **[!UICONTROL Formato]** (**** ficha de base): seleccione  **** JPEG u otro formato que cumpla sus requisitos. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
+* **[!UICONTROL Activar enfoque]**  simple: no seleccione  **[!UICONTROL Activar enfoque]**  simple (este filtro de enfoque oferta menos control que la configuración de máscara de enfoque).
+* **[!UICONTROL Enfoque: Modo]**  de remuestreo: seleccione  **[!UICONTROL Bicúbico]**.
 
 #### Opciones de ficha básicas {#basic-tab-options}
 
@@ -310,30 +310,36 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr> 
   <tr> 
    <td><strong>Formato</strong></td> 
-   <td><p>Elija un formato en el menú.</p> <p>Al elegir <strong>JPEG</strong> , se ofertas las siguientes opciones adicionales:</p> 
+   <td><p>Elija un formato en el menú.</p> <p>Al elegir <strong>JPEG</strong> se ofertas las siguientes opciones adicionales:</p> 
     <ul> 
      <li><strong>Calidad</strong> : controla el nivel de compresión JPEG. Esta configuración afecta tanto al tamaño del archivo como a la calidad de la imagen. La escala de calidad JPEG es de 1 a 100. La escala está visible al arrastrar el control deslizante.</li> 
-     <li><strong>Activar disminución de resolución</strong> de crominancia JPG: como el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de color y luminancia. Cuando se comprime una imagen JPEG, el componente de luminancia se deja con una resolución completa, mientras que los componentes de color se reducen al calcular el promedio de grupos de píxeles. La disminución de resolución reduce el volumen de datos en una mitad o en un tercio, sin afectar prácticamente a la calidad percibida. La disminución de resolución no se aplica a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).</li> 
+     <li><strong>Activar disminución de resolución</strong>  de crominancia JPG: como el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de color y luminancia. Cuando se comprime una imagen JPEG, el componente de luminancia se deja con una resolución completa, mientras que los componentes de color se reducen al calcular el promedio de grupos de píxeles. La disminución de resolución reduce el volumen de datos en una mitad o en un tercio, sin afectar prácticamente a la calidad percibida. La disminución de resolución no se aplica a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).</li> 
     </ul> 
     <div>
-      Al elegir <strong>GIF</strong> o <strong>GIF con alfa</strong> se proporcionan las siguientes opciones adicionales de Cuantificación <strong>de color</strong> GIF: 
+      Elección 
+     <strong>GIF</strong> o 
+     <strong>GIF con alpha</strong> proporciona estas 
+     <strong>Opciones de Cuantificación de color GIF</strong>: 
     </div> 
     <ul> 
-     <li><strong>Tipo </strong>- Seleccione <strong>Adaptable</strong> (opción predeterminada), <strong>Web</strong>o <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li> 
-     <li><strong>Tramado</strong> : seleccione <strong>Difusión</strong> o <strong>Desactivado</strong>.</li> 
-     <li><strong>Número de colores </strong>- Introduzca un número entre 2 y 256.</li> 
-     <li><strong>Lista</strong> de color: introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, introduzca 000000,888888,ffffff.</li> 
+     <li><strong>Tipo  </strong>- Seleccione  <strong>Adaptable</strong>  (opción predeterminada),  <strong>Web</strong> o  <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no está disponible.</li> 
+     <li><strong>Tramado</strong> : seleccione  <strong></strong> Difusor o  <strong>Desactivado</strong>.</li> 
+     <li><strong>Número de colores  </strong>- Introduzca un número entre 2 y 256.</li> 
+     <li><strong>Lista</strong>  de color: introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, introduzca 000000,888888,ffffff.</li> 
     </ul> 
     <div>
-      La selección de <strong>PDF</strong>, <strong>TIFF</strong>o <strong>TIFF con alfa</strong> proporciona esta opción adicional: 
+      Elección 
+     <strong>PDF</strong>, 
+     <strong>TIFF</strong>, o 
+     <strong>TIFF con alpha</strong> proporciona esta opción adicional: 
     </div> 
     <ul> 
-     <li><strong>Compresión</strong> : seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son <strong>None</strong>, <strong>Zip</strong>y <strong>Jpeg</strong>; TIFF son <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>y <strong>Zip</strong>; y para TIFF con Alpha son <strong>None</strong>, <strong>LZW</strong>y <strong>Zip</strong>.</li> 
+     <li><strong>Compresión</strong> : seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son <strong>None</strong>, <strong>Zip</strong> y <strong>Jpeg</strong>; para TIFF son <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> y <strong>Zip</strong>; y para TIFF con alfa son <strong>Ninguno</strong>, <strong>LZW</strong> y <strong>Zip</strong>.</li> 
     </ul> <p>Al elegir <strong>PNG</strong>, <strong>PNG con alfa,</strong> o <strong>EPS</strong> no se proporcionan opciones adicionales.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Enfoque</strong></td> 
-   <td>Select the <strong>Enable Simple Sharpening</strong> option to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </td> 
+   <td>Seleccione la opción <strong>Activar enfoque simple</strong> para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -348,7 +354,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr> 
   <tr> 
    <td><strong>Espacio de color</strong></td> 
-   <td>Seleccione <strong>RGB,</strong> CMYK o <strong>Escala de grises</strong> para el espacio de color.</td> 
+   <td>Seleccione <strong>RGB, CMYK,</strong> o <strong>Escala de grises</strong> para el espacio de color.</td> 
   </tr> 
   <tr> 
    <td><strong>Perfil de color</strong></td> 
@@ -358,10 +364,10 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
    <td><strong>Procesar intención</strong></td> 
    <td>Puede anular la interpretación predeterminada. Las interpretaciones determinan lo que sucede con los colores que no se pueden reproducir en el perfil de color del destinatario (fuera de gama). La calidad de representación se omite si no es compatible con el perfil ICC. 
     <ul> 
-     <li>Seleccione <strong>Perceptual</strong> para comprimir la gama total de un espacio de color en otro espacio de color cuando uno o varios colores de la imagen original se encuentren fuera de la gama del espacio de color de destino.</li> 
-     <li>Seleccione <strong>Relativa colorimétrica</strong> cuando un color del espacio de color actual esté fuera de gama en el espacio de color de destinatario y desee asignarlo al color más cercano posible dentro de la gama del espacio de color de destinatario sin afectar a ningún otro color. </li> 
+     <li>Seleccione <strong>Perceptual</strong> para comprimir la gama total de un espacio de color en otro espacio de color cuando uno o varios colores de la imagen original están fuera de la gama del espacio de color de destino.</li> 
+     <li>Seleccione <strong>Colorimétrica relativa</strong> cuando un color del espacio de color actual esté fuera de gama en el espacio de color de destinatario y desee asignarlo al color más cercano posible dentro de la gama del espacio de color de destinatario sin afectar a ningún otro color. </li> 
      <li>Seleccione <strong>Saturación</strong> para reproducir la saturación de color de la imagen original al convertirla en el espacio de color del destinatario. </li> 
-     <li>Seleccione Colorimétrica <strong>absoluta</strong> para que los colores coincidan exactamente sin ningún ajuste para puntos blancos o negros que pueda alterar el brillo de la imagen.</li> 
+     <li>Seleccione <strong>Colorimétrica absoluta</strong> para que coincida exactamente con los colores sin ningún ajuste para el punto blanco o el punto negro que pueda alterar el brillo de la imagen.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -374,31 +380,32 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr> 
   <tr> 
    <td><strong>Tipo de enfoque</strong></td> 
-   <td><p>Seleccione <strong>Ninguno</strong>, <strong>Enfocar</strong>o Máscara de <strong>enfoque</strong>. </p> 
+   <td><p>Seleccione <strong>Ninguno</strong>, <strong>Enfocar</strong> o <strong>Máscara de enfoque</strong>. </p> 
     <ul> 
      <li>Seleccione <strong>Ninguno</strong> para desactivar el enfoque.</li> 
-     <li>Seleccione <strong>Enfocar </strong>para aplicar un filtro de enfoque básico a la imagen después de que se haya realizado todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </li> 
-     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se omitirá. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Photoshop.</li> 
-    </ul> <p>En Máscara de <strong>enfoque</strong>, tiene las siguientes opciones:</p> 
+     <li>Seleccione <strong>Enfocar </strong>para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </li> 
+     <li>Seleccione<strong> Máscara de enfoque</strong> para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se omitirá. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Photoshop.</li> 
+    </ul> <p>En <strong>Máscara de enfoque</strong>, tiene las siguientes opciones:</p> 
     <ul> 
      <li><strong>Cantidad</strong> : controla la cantidad de contraste aplicado a los píxeles del borde. El valor de número real predeterminado es 1,0. Para imágenes de alta resolución, puede aumentarlas hasta 5,0. Considere la cantidad como una medida de la intensidad del filtro.</li> 
      <li><strong>Radio</strong> : determina el número de píxeles que rodean los píxeles del borde que afectan al enfoque. Para las imágenes de alta resolución, introduzca un número real entre 1 y 2. Un valor bajo enfoca solo los píxeles del borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen.</li> 
      <li><strong>Umbral</strong> : determina el rango de contraste que se debe ignorar al aplicar el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia entre los píxeles enfocados y el área que los rodea antes de que se consideren píxeles de borde y se enfoquen. Para evitar introducir ruido, experimente con valores enteros entre 2 y 20. </li> 
-     <li><strong>Aplicar a: determina si el enfoque se aplica a cada color o brillo.</strong></li> 
+     <li><strong>Aplicar a: determina si el enfoque se aplica a cada color o brillo. </strong> </li> 
     </ul> 
     <div>
-      El enfoque se describe en <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Enfoque de imágenes</a>. 
+      El enfoque se describe en 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Enfoque de imágenes</a>. 
     </div> </td> 
   </tr> 
   <tr> 
    <td><strong>Modo de remuestreo</strong></td> 
-   <td>Seleccione una opción <strong>Modo</strong> de remuestreo. Estas opciones enfocan la imagen cuando se reduce su resolución: 
+   <td>Seleccione una opción <strong>Modo de remuestreo</strong>. Estas opciones enfocan la imagen cuando se reduce su resolución: 
     <ul> 
-     <li><strong>Bi-Lineal</strong> : el método de remuestreo más rápido. Algunos artefactos de solapamiento son evidentes.</li> 
+     <li><strong>Bilineal</strong> : el método de remuestreo más rápido. Algunos artefactos de solapamiento son evidentes.</li> 
      <li><strong>Bicúbico</strong> : aumenta el uso de CPU pero genera imágenes más nítidas con artefactos de solapamiento menos evidentes.</li> 
-     <li><strong>Sharp2</strong> : Puede producir resultados ligeramente más enfocados que los bicúbicos, pero a un costo de CPU aún mayor.</li> 
-     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que se denomina <strong>bibicúbico más nítido</strong> en Adobe Photoshop.</li> 
-     <li><strong>Cada color</strong> y <strong>brillo</strong> : cada método puede basarse en el color o el brillo. De forma predeterminada, <strong>se selecciona Cada color</strong> .</li> 
+     <li><strong>Sharp2</strong> - Puede producir resultados ligeramente más nítidos que Bicúbicos, pero a un costo de CPU aún mayor.</li> 
+     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que se denomina  <strong>bibicúbico </strong> enfoque en Adobe Photoshop.</li> 
+     <li><strong>Cada </strong> color y  <strong>brillo</strong> : cada método puede basarse en el color o el brillo. De forma predeterminada <strong>Cada color</strong> está seleccionado.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -407,16 +414,16 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr> 
   <tr> 
    <td><strong>Modificador de imagen</strong></td> 
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo Modificadores <strong>de</strong> imagen. Estos parámetros se definen en la referencia <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">del comando del protocolo</a>de servidor de imágenes.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p> 
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Protocolo del servidor de imágenes</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p> 
     <ul> 
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li> 
-     <li>Comandos de Localización: <code>locale=</code> y <code>req=xlate</code></li> 
+     <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li> 
      <li><code>req=set</code> no está disponible para uso general.</li> 
      <li><code>req=mbrset</code></li> 
      <li><code>req=saveToFile</code></li> 
      <li><code>req=targets</code></li> 
      <li><code>template=</code></li> 
-     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes y impresión virtual</li> 
+     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -424,7 +431,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 
 ## Definición de opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las fichas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** , puede definir modificadores de imagen para ofrecer más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes depende de la API de procesamiento de imágenes de Dynamic Media. La API se define en detalle en la Referencia [del protocolo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)HTTP.
+Además de las opciones disponibles en las fichas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]**, puede definir modificadores de imagen para proporcionar más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes depende de la API de procesamiento de imágenes de Dynamic Media. La API se define en detalle en la [Referencia del protocolo HTTP](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
 A continuación se proporcionan algunos ejemplos básicos de lo que se puede hacer con los modificadores de imagen.
 
@@ -470,40 +477,40 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 
 **Para editar ajustes preestablecidos** de imagen:
 
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
-1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
+1. Toque el icono **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
 
    ![chlimage_1-504](assets/chlimage_1-504.png)
 
-1. Seleccione un ajuste preestablecido y, a continuación, toque **[!UICONTROL Editar]**.
-1. En la página **[!UICONTROL Editar ajustes preestablecidos]** de imagen, realice los cambios que desee y toque **[!UICONTROL Guardar]**.
+1. Seleccione un ajuste preestablecido y toque **[!UICONTROL Editar]**.
+1. En la página **[!UICONTROL Editar ajustes preestablecidos de imagen]**, realice los cambios que desee y toque **[!UICONTROL Guardar]**.
 
-## Publishing Dynamic Media image presets {#publishing-image-presets}
+## Publicación de ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
 
-Si está ejecutando el modo Dynamic Media: híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
+Si está ejecutando Dynamic Media en modo híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
 
-Si está ejecutando Dynamic Media en modo Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no es necesario que complete estos pasos.
+Si ejecuta el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen se publican automáticamente; no es necesario que complete estos pasos.
 
 **Para publicar ajustes preestablecidos de imagen en Dynamic Media: modo** híbrido:
 
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
-1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
+1. Toque el icono **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
 1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen en la lista de ajustes preestablecidos de imagen y, a continuación, toque **[!UICONTROL Publicar]**.
 1. Después de publicar el ajuste preestablecido de imagen, el estado cambia de no publicado a publicado.
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
-## Deleting Dynamic Media image presets {#deleting-image-presets}
+## Eliminación de ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 
 **Para eliminar ajustes preestablecidos** de imagen de Dynamic Media:
 
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
-1. Toque el icono **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Recursos > Ajustes preestablecidos]** de imagen.
-1. Seleccione un ajuste preestablecido y, a continuación, toque **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]**.
+1. Toque el icono **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
+1. Seleccione un ajuste preestablecido y toque **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]**.
 

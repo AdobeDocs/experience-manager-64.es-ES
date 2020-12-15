@@ -21,7 +21,7 @@ Los metadatos de Dublin Core proporcionan un conjunto estandarizado de convencio
 
 El conjunto de elementos de metadatos básico de Dublín (DCMES) simple contiene 15 elementos de metadatos como se muestra en la tabla siguiente. Cada elemento Dublin Core es opcional y se puede repetir. Puede agregar o eliminar información de metadatos de Dublin Core como lo haría con metadatos específicos de tipo de medios.
 
-Además del DCMES, hay otros elementos de metadatos creados por la Iniciativa Dublin Core. Consulte la Iniciativa [](http://dublincore.org/) Dublin Core para obtener más información.
+Además del DCMES, hay otros elementos de metadatos creados por la Iniciativa Dublin Core. Consulte la [Iniciativa Dublin Core](http://dublincore.org/) para obtener más información.
 
 | Propiedad | Descripción |
 |---|---|

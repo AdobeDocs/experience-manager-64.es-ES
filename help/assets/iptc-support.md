@@ -23,14 +23,14 @@ La página Propiedades de los recursos ahora incluye fichas independientes para 
 
 1. En la interfaz de usuario de Recursos, seleccione una imagen.
 1. Toque o haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
-1. En la página Propiedades, toque o haga clic en la ficha **[!UICONTROL IPTC]** para vista de metadatos IPTC del recurso.
+1. En la página Propiedades, toque o haga clic en la ficha **[!UICONTROL IPTC]** para vista de metadatos IPTC para el recurso.
 1. Edite las propiedades de metadatos IPTC según sea necesario.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Pulse o haga clic en la pestaña **[!UICONTROL Extensión IPTC]** para ver los metadatos de la extensión IPTC para el recurso.
 1. Edite las propiedades de metadatos de ITPC Extension según sea necesario.
-1. Tap/click **[!UICONTROL Save &amp; Close]** to save the changes.
+1. Toque o haga clic **[!UICONTROL Guardar y cerrar]** para guardar los cambios.
 
 ## Compatibilidad con clasificación creativa {#creative-rating-support}
 
@@ -44,7 +44,7 @@ Sin embargo, esta propiedad no está indizada actualmente para evitar conflictos
 
 ## Compatibilidad con palabras clave {#keyword-support}
 
-La ficha **[!UICONTROL IPTC]** de la página Propiedades también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas. También puede editar estas palabras clave y agregar más palabras clave desde la ficha **[!UICONTROL IPTC]** .
+La ficha **[!UICONTROL IPTC]** de la página Propiedades también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas. También puede editar estas palabras clave y agregar más palabras clave desde la ficha **[!UICONTROL IPTC]**.
 
 ![keywords](assets/keywords.png)
 

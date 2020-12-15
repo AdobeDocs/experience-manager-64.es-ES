@@ -19,22 +19,22 @@ Si realiza las modificaciones posteriores a la colección original en AEM Assets
 
 >[!NOTE]
 >
->Los fragmentos de contenido no se pueden publicar en Brand Portal. Therefore, if you select content fragment(s) on AEM Author, then **[Publish to Brand Portal]** action is not available.
+>Los fragmentos de contenido no se pueden publicar en Brand Portal. Por lo tanto, si selecciona fragmentos de contenido en AEM Author, la acción **[Publicar en Brand Portal]** no estará disponible.
 >
 >Si las colecciones que contienen fragmentos de contenido se publican desde AEM Author hasta Brand Portal, todos los contenidos de la carpeta, excepto los fragmentos de contenido, se replican en la interfaz de Brand Portal.
 
-## Publicación de una colección en Brand Portal {#publish-a-collection-to-brand-portal}
+## Publicar una colección en Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. En la interfaz de usuario de AEM Assets, toque o haga clic en el logotipo de AEM. A continuación, vaya a **[!UICONTROL Recursos > Colecciones]** desde la página **[!UICONTROL de navegación]** .
+1. En la interfaz de usuario de AEM Assets, toque o haga clic en el logotipo de AEM. A continuación, vaya a **[!UICONTROL Recursos > Colecciones]** desde la página **[!UICONTROL Navegación]**.
 2. En la consola Colecciones, seleccione la colección que desee publicar en Brand Portal.
 
    ![select_collection](assets/select_collection.png)
 
-3. From the toolbar, tap/click **[!UICONTROL Publish to Brand Portal]**.
+3. En la barra de herramientas, toque o haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
-4. In the confirmation dialog, tap/click **[!UICONTROL Publish]**.
+4. En el cuadro de diálogo de confirmación, toque o haga clic en **[!UICONTROL Publicar]**.
 5. Cierre el mensaje de confirmación.
 6. Inicie sesión en Brand Portal como administrador. La colección publicada está disponible en la consola Colecciones.
 
@@ -48,9 +48,9 @@ Puede cancelar la publicación de las colecciones que publique desde AEM Assets 
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. From the toolbar, tap/click the **[!UICONTROL Remove from Brand Portal]** icon.
+2. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Quitar de Brand Portal]**.
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
-3. In the dialog, tap/click **[!UICONTROL Unpublish]**.
+3. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Cancelar la publicación]**.
 4. Cierre el mensaje de confirmación. La colección se quita de la interfaz de Brand Portal.

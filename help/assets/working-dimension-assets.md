@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >El paquete de funciones AEM 3D de AEM 6.4 ya no es compatible. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) al trabajar con recursos de Adobe Dimension.
 
-El paquete de funciones AEM 3D ofrece compatibilidad con recursos (`.dn` archivos) de Adobe Dimension en AEM Assets, AEM Sites y AEM Screens.
+El paquete de funciones AEM 3D proporciona compatibilidad con los recursos de Adobe Dimension (`.dn` archivos) en AEM Assets, AEM Sites y AEM Screens.
 
 Un nuevo visor 3D basado en el estándar abierto glTF ofrece funciones de visualización de previsualización y Sitios y pantallas para los recursos de Adobe Dimension.
 
@@ -32,28 +32,28 @@ Un nuevo visor 3D basado en el estándar abierto glTF ofrece funciones de visual
 
 Cuando se carga un recurso de Dimension en AEM, se reenvía una copia del archivo a un servicio en la nube gestionado por Adobe alojado en Amazon AWS. Este servicio convierte el formato de archivo Dimension propiedad del Adobe al formato glTF estándar abierto. El modelo 3D convertido se empaqueta como un glTF binario (`.glb`). AEM almacena el modelo convertido con el recurso de Dimension principal como una representación.
 
-Puede configurar el formato de `.glb` conversión de una de las dos formas siguientes (consulte [Instalación y configuración de AEM 3D](install-config-3d.md) para obtener instrucciones):
+Puede configurar el formato de conversión `.glb` de dos maneras (consulte [Instalación y configuración de AEM 3D](install-config-3d.md) para obtener instrucciones):
 
 * Incluya extensiones específicas del Adobe para maximizar la calidad visual al utilizar el visor glTF de Adobe para vista de recursos Dimension en AEM Assets, AEM Sites o AEM Screens. Esto hace que las `.glb` representaciones sean incompatibles con la mayoría de las aplicaciones de terceros.
-* Excluya las extensiones específicas del Adobe para lograr la compatibilidad de la `.glb` representación con aplicaciones de terceros. Esto limita la calidad visual al visualizarla en AEM Assets, AEM Sites o AEM Screens (por ejemplo, sin iluminación IBL) para simular la calidad de las aplicaciones típicas de terceros.
+* Excluya extensiones específicas del Adobe para lograr la compatibilidad de la representación `.glb` con aplicaciones de terceros. Esto limita la calidad visual al visualizarla en AEM Assets, AEM Sites o AEM Screens (por ejemplo, sin iluminación IBL) para simular la calidad de las aplicaciones típicas de terceros.
 
 La transferencia de los archivos Dimension/glTF a o desde Amazon AWS y su almacenamiento temporal en AWS están totalmente protegidos. Estos archivos persisten en Amazon AWS durante un período de tiempo mínimo; normalmente, no más de unos minutos durante operaciones normales.
 
-Para habilitar la compatibilidad con los recursos de Dimension, debe obtener las credenciales de Adobe para acceder al servicio de conversión. See [Installing and configuring AEM 3D](install-config-3d.md).
+Para habilitar la compatibilidad con los recursos de Dimension, debe obtener las credenciales de Adobe para acceder al servicio de conversión. Consulte [Instalación y configuración de AEM 3D](install-config-3d.md).
 
 >[!NOTE]
 >
 >Si instala y utiliza las credenciales proporcionadas, comprenderá y aceptará que los recursos de Adobe Dimension 3D se transferirán al servicio de conversión basado en la nube gestionado por Adobe y procesado por él, alojado en Amazon AWS.
 
-### Ver en AEM Assets {#viewing-on-aem-assets}
+### Visualización en AEM Assets {#viewing-on-aem-assets}
 
 El paquete de funciones 3D de AEM incluye un nuevo visor basado en el estándar abierto glTF que se utiliza para la vista de recursos de Adobe Dimension. Este visor se selecciona automáticamente al abrir un archivo Dimension o un glTF comprimido en la vista de detalles en AEM Assets o con el componente 3D en AEM Sites.
 
 Tenga en cuenta que la interfaz de usuario del visor de GlTF es algo diferente del visor 3D estándar que se utiliza para todos los demás tipos de recursos 3D.
 
-#### See also the following: {#see-also-the-following}
+#### Consulte también lo siguiente: {#see-also-the-following}
 
-* [AEM notas](/help/release-notes/aem3d-release-notes.md) de la versión 3D para restricciones y limitaciones aplicables a los recursos Dn y al visor glTF.
-* [Uso del componente](using-the-3d-sites-component.md) Sitios 3D para propiedades de componentes específicas de recursos de Adobe Dimension.
-* [Instalación y configuración de AEM 3D](install-config-3d.md) para configurar el servicio de conversión basado en la nube.
+* [AEM notas de la versión 3D ](/help/release-notes/aem3d-release-notes.md) para restricciones y limitaciones aplicables a los recursos Dn y al visor glTF.
+* [Uso del ](using-the-3d-sites-component.md) componente Sitios 3D para propiedades de componentes específicas de recursos de Adobe Dimension.
+* [Instalación y configuración de AEM 3](install-config-3d.md) datos para configurar el servicio de conversión basado en la nube.
 

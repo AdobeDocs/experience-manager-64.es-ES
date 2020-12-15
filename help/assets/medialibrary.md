@@ -30,9 +30,9 @@ La biblioteca de medios de AEM es una parte designada del repositorio de conteni
 Las funciones únicas que solo están disponibles para los clientes de AEM Assets son:
 
 1. la capacidad para extraer y editar metadatos que no sean título, etiquetas y descripción.
-1. el administrador de AEM Assets, disponible en la pantalla de bienvenida haciendo clic en el segundo botón situado junto al `siteadmin`.
+1. el administrador de AEM Assets, disponible en la pantalla de bienvenida, haciendo clic en el segundo botón al lado de `siteadmin`.
 1. Todos los pasos del flujo de trabajo relacionados con la administración de recursos digitales, a saber, la ingestión de recursos AEM, la eliminación de AEM Assets, el manejo de subrecursos de AEM Assets y la extracción de metadatos de AEM Assets.
-1. bibliotecas, incluido `dam` el espacio del paquete im.
+1. bibliotecas que incluyen `dam` espacio de paquete im.
 
 El uso de estas funciones requiere una licencia válida de AEM Assets.
 
@@ -62,5 +62,5 @@ En este caso de uso no es necesario comprar AEM Assets, incluso el uso de la bib
 
 >[!MORELIKETHIS]
 >
->* [lista detallada de las diferencias de características](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [Lista detallada de las diferencias de características](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
 

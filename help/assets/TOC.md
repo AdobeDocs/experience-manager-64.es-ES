@@ -139,7 +139,7 @@ ht-degree: 46%
    + [Fragmentos de contenido: Eliminar consideraciones](content-fragments-delete.md)
    + [Fragmentos de contenido: Markdown](content-fragments-markdown.md)
    + [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ Administrar recursos {#managing}
    + [Gestión de recursos con la UI táctil optimizada](managing-assets-touch-ui.md)
    + [Administración de varios recursos y colecciones](managing-multiple-assets.md)
    + [Selector de recursos](asset-selector.md)

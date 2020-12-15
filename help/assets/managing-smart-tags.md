@@ -24,21 +24,21 @@ También puede asignar una clasificación superior a una etiqueta para aumentar 
 
 1. En el cuadro OmniSearch, busque recursos basados en una etiqueta.
 1. Inspect muestra los resultados de la búsqueda para identificar una imagen que no le parece relevante para la búsqueda.
-1. Seleccione la imagen y, a continuación, toque o haga clic en el icono **[!UICONTROL Administrar etiquetas]** de la barra de herramientas.
-1. En la página **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas. Si no desea buscar la imagen en función de una etiqueta específica, seleccione la etiqueta y toque o haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas. O bien, toque o haga clic en el símbolo (**[!UICONTROL X]**) que aparece junto a la etiqueta.
-1. Para asignar una clasificación superior a una etiqueta, selecciónela y toque o haga clic en el icono **[!UICONTROL Promocionar]** de la barra de herramientas. La etiqueta promocionada se mueve a la sección **[!UICONTROL Etiquetas]** .
+1. Seleccione la imagen y toque o haga clic en el icono **[!UICONTROL Administrar etiquetas]** de la barra de herramientas.
+1. En la página **[!UICONTROL Administrar etiquetas]**, inspeccione las etiquetas. Si no desea buscar la imagen en función de una etiqueta específica, seleccione la etiqueta y toque o haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas. O bien, toque o haga clic en el símbolo (**[!UICONTROL X]**) que aparece junto a la etiqueta.
+1. Para asignar una clasificación superior a una etiqueta, seleccione la etiqueta y toque o haga clic en el icono **[!UICONTROL Promocionar]** de la barra de herramientas. La etiqueta que promocione se moverá a la sección **[!UICONTROL Etiquetas]**.
 1. Pulse o haga clic en **[!UICONTROL Guardar]** y, a continuación, pulse o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo de éxito.
 1. Vaya a la página de propiedades de la imagen. Observe que la etiqueta promocionada tiene una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
 ## Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understand-search-results-with-smart-tags}
 
-De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una `OR` cláusula adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. For example, consider searching for `woman running`. Los recursos con solo `woman` o solamente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con etiquetas inteligentes `woman` o `running` con etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
+De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. Por ejemplo: considere buscar `woman running`. Los recursos con sólo `woman` o `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
 
-* recursos con palabras clave `woman` y `running` en los metadatos.
+* recursos con ambas palabras clave, `woman` y `running` en los metadatos.
 * los recursos se etiquetaron de forma inteligente con cualquiera de las palabras clave.
 
 Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
 
-1. coincidencias de en `woman running` los distintos campos de metadatos.
-1. coincidencias de `woman running` en etiquetas inteligentes.
-1. coincidencias de `woman` o de `running` en etiquetas inteligentes.
+1. coincidencias de `woman running` en los distintos campos de metadatos.
+1. coincidencias de `woman running` en las etiquetas inteligentes.
+1. coincidencias de `woman` o de `running` en las etiquetas inteligentes.

@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Consideraciones sobre la red de recursos {#assets-network-considerations}
+# Consideraciones de la red de recursos {#assets-network-considerations}
 
 Comprender la red es tan importante como comprender los recursos de Adobe Experience Manager (AEM). La red puede afectar a las experiencias de carga, descarga y usuario. La creación de diagramas de topología de red ayuda a identificar los puntos de bloqueo y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
 
@@ -22,7 +22,7 @@ Asegúrese de incluir lo siguiente en el diagrama de red:
 * Vínculo ascendente a Internet desde la red corporativa y el entorno AEM
 * Topología del entorno AEM
 * Definir consumidores simultáneos de la interfaz de red AEM
-* flujos de trabajo definidos de la instancia de AEM
+* Flujos de trabajo definidos de la instancia de AEM
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -42,11 +42,11 @@ El equipo que se muestra a la derecha tiene una subida limitada a la red corpora
 
 ## Topología de la red corporativa {#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las que se utilizan generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, podría ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y AEM entorno {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo ascendente a Internet desde la red corporativa y el entorno de AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -74,9 +74,9 @@ El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo ext
 
 La instancia de AEM comparte su conexión de 1Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
 
-Al revisar la red desde el dispositivo cliente a la instancia de AEM, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la Guía [de cambio de tamaño de](assets-sizing-guide.md) recursos para determinar la experiencia del usuario.
+Al revisar la red desde el dispositivo cliente a la instancia de AEM, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la [Guía de tamaño de recursos](assets-sizing-guide.md) para determinar la experiencia del usuario.
 
-## flujos de trabajo definidos de la instancia de AEM {#defined-workflows-of-the-aem-instance}
+## Flujos de trabajo definidos de la instancia de AEM {#defined-workflows-of-the-aem-instance}
 
 Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 
@@ -91,10 +91,10 @@ Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguient
 Estos son algunos de los temas a considerar:
 
 * Lectura y reescritura de metadatos de XMP
-* activación y replicación automáticas
+* Activación y replicación automáticas
 * Marcas de agua
-* extracción de página/ingestión de subconjuntos
-* flujos de trabajo superpuestos.
+* Extracción de página/ingestión de subconjuntos
+* Flujos de trabajo superpuestos.
 
 Este es un ejemplo de cliente para la definición de un flujo de trabajo de recursos.
 

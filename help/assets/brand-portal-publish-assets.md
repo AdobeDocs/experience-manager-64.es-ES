@@ -39,13 +39,13 @@ Después de que la replicación se realice correctamente, puede publicar recurso
 
 Para publicar los recursos seleccionados en Brand Portal, haga una de las acciones siguientes:
 
-* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. A continuación, en la **[!UICONTROL acción]** , seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]** , seleccione **[!UICONTROL Ahora]**. Tap/ click **[!UICONTROL Next].**
+   1. A continuación, en la **[!UICONTROL Acción]** seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Toque o haga clic **[!UICONTROL Siguiente].**
 
-   2. En **[!UICONTROL Ámbito]**, confirme la selección y toque o haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+   2. Dentro de **[!UICONTROL Ámbito]**, confirme la selección y toque o haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
@@ -54,13 +54,13 @@ Aparece un mensaje que indica que los recursos se han puesto en cola para su pub
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
 1. Una vez que haya seleccionado los recursos o las carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
-2. En la página **[!UICONTROL Administrar publicación]** , seleccione **[!UICONTROL Publicar en Brand Portal]** en **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
+2. En la página **[!UICONTROL Administrar publicación]**, seleccione **[!UICONTROL Publicar en portal de marca]** en **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Tap/ click **[!UICONTROL Next]**.
-4. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Tap/ click **[!UICONTROL Next]**.
-5. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Tap/ click **[!UICONTROL Publish Later]**.
+3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic en **[!UICONTROL Siguiente]**.
+4. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic en **[!UICONTROL Siguiente]**.
+5. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Toque o haga clic en **[!UICONTROL Publicar posteriormente]**.
 
    ![publishworkflow](assets/publishworkflow.png)
 

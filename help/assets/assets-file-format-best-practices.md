@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Assets file format best practices {#assets-file-format-best-practices}
+# Prácticas recomendadas sobre el formato de archivo de recursos {#assets-file-format-best-practices}
 
 AEM Assets admite muchas bibliotecas de formato de archivos de propiedad y de terceros para satisfacer los diversos requisitos de compatibilidad de archivos de los usuarios. Las bibliotecas de Adobe admitidas son Adobe Camera Raw, Gibson, Adobe PDF Rasterizer y Adobe InDesign Server. Además, AEM Assets admite bibliotecas de terceros, como ImageMagick, DoceMonos, etc.
 
-For the supported file formats, see [Assets supported formats](assets-formats.md).
+Para ver los formatos de archivo admitidos, consulte [Formatos admitidos por los recursos](assets-formats.md).
 
 ## Biblioteca de Adobe Camera Raw {#adobe-camera-raw-library}
 
@@ -26,7 +26,7 @@ Para un rendimiento óptimo, Adobe recomienda utilizar la biblioteca de Adobe Ca
 
 La biblioteca de Adobe Camera Raw admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en espacio de color RGB y admite la salida en formato JPEG solamente. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
 
-Para obtener más información, consulte Asistencia técnica [Camera Raw](camera-raw.md) en AEM Assets.
+Para obtener más información, consulte [Soporte Camera Raw](camera-raw.md) en AEM Assets.
 
 ## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -44,7 +44,7 @@ Adobe recomienda utilizar el servidor de Adobe InDesign para extraer representac
 
 ## Dynamic Media  {#dynamic-media}
 
-Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de gestión de la campaña digital. Para obtener más información sobre cómo activar Dynamic Media, consulte [Configuración de Dynamic Media](config-dynamic.md).
+Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Ofrece experiencias de visualización interactivas y optimiza el proceso de gestión de la campaña digital. Para obtener más información sobre cómo habilitar Dynamic Media, consulte [Configuración de Dynamic Media](config-dynamic.md).
 
 Actualmente, Dynamic Media puede admitir vídeos de hasta 15 GB de contenido por archivo.
 
@@ -73,4 +73,4 @@ La biblioteca de transcodificación de imágenes admite los siguientes tipos MIM
 * ICO
 * ICN
 
-Para obtener más información, consulte Biblioteca [de transcodificación de imágenes](imaging-transcoding-library.md).
+Para obtener más información, consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md).

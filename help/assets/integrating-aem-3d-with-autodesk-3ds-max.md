@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir la compatibilidad con archivos 3ds Max nativos (.MAX). El procesamiento mediante 3ds Max no se admite en este momento.
 
-Consulte Configuración [avanzada](advanced-config-3d.md).
+Consulte [Configuración avanzada](advanced-config-3d.md).
 
 Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with-3d.md).
 
@@ -40,11 +40,11 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
    >
    >Para evitar problemas de acceso denegado, instale 3ds Max con la misma cuenta de usuario administrador que AEM.
 
-1. En 3ds Max, haga clic en **[!UICONTROL Personalizar > Administrador]** de complementos.
+1. En 3ds Max, haga clic en **[!UICONTROL Personalizar > Administrador de complementos]**.
 
-   Busque `FBXMAX.DLU` y verifique que su **[!UICONTROL estado]** esté **[!UICONTROL cargado]**.
+   Busque `FBXMAX.DLU` y verifique que su **[!UICONTROL Estado]** esté **[!UICONTROL cargado]**.
 
-   Cierre el cuadro de diálogo Administrador **[!UICONTROL de complementos]** y 3ds Max.
+   Cierre el cuadro de diálogo **[!UICONTROL Administrador de complementos]** y 3ds Max.
 
 1. Actualice la secuencia de comandos de conversión.
 
@@ -52,7 +52,7 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
    1. Abra el CRXDE Lite y vaya a `/libs/settings/dam/v3D/scripts/max`.
    1. Haga clic con el doble `export-fbx.bat` para abrirlo.
-   1. Edite la primera línea de la secuencia de comandos según sea necesario para reflejar la ubicación de la `3dsmaxcmd.exe` utilidad. Por ejemplo, si se utiliza 3ds Max 2017 y AEM está instalado en una unidad de disco diferente:
+   1. Edite la primera línea de la secuencia de comandos según sea necesario para reflejar la ubicación de la utilidad `3dsmaxcmd.exe`. Por ejemplo, si se utiliza 3ds Max 2017 y AEM está instalado en una unidad de disco diferente:
 
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
 
@@ -64,13 +64,13 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
    1. En CRXDE Lite, vaya a `/libs/settings/dam/v3D/Paths/maxWorkPath`. De forma predeterminada, el valor de esta configuración es `./MaxWork`, que es relativo a la carpeta raíz de la instalación de AEM.
    1. Inicie sesión en el propio servidor y utilice el Explorador de archivos para desplazarse a la carpeta raíz de la instalación de AEM.
-   1. Elimine la carpeta **[!UICONTROL MaxWork]** , incluido todo su contenido, si existe.
+   1. Elimine la carpeta **[!UICONTROL MaxWork]**, incluido su contenido completo, si existe.
 
       La carpeta se vuelve a crear automáticamente la próxima vez que se ingrese un archivo .MAX.
 
 1. Habilite 3ds Max para la ingestión haciendo lo siguiente:
 
-   1. En CRXDE Lite, vaya a `/libs/settings/dam/v3D/assetTypes/max` y establezca la propiedad **[!UICONTROL Enabled]** en true:
+   1. En CRXDE Lite, navegue hasta `/libs/settings/dam/v3D/assetTypes/max` y establezca la propiedad **[!UICONTROL Enabled]** en true:
 
    ![image2018-6-22_13-50-50](assets/image2018-6-22_13-50-50.png)
 
@@ -78,15 +78,15 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
 ## Prueba de la integración de AEM 3D con Autodesk 3ds Max {#testing-the-integration-of-aem-d-with-autodesk-ds-max}
 
-1. Abra AEM Assets y, a continuación, cargue el `.max` archivo ubicado en `sample-3D-content/models` la carpeta **[!UICONTROL test3d]** .
+1. Abra AEM Assets y, a continuación, cargue el archivo `.max` ubicado en `sample-3D-content/models` en la carpeta **[!UICONTROL test3d]**.
 
    Tenga en cuenta que sample-3D-content.zip se ha descargado anteriormente para validar la funcionalidad 3D básica.
 
-1. Vuelva a la vista **[!UICONTROL Tarjeta]** y observe los letreros de mensaje que se muestran en los recursos cargados.
+1. Vuelva a la vista **[!UICONTROL Card]** y observe los letreros de mensaje que se muestran en los recursos cargados.
 
    La pancarta Formato de conversión se muestra mientras 3ds Max está convirtiendo el formato nativo 3ds Max a .FBX.
 
-1. Una vez finalizado el procesamiento, abra `logo-sphere.max` en la vista **[!UICONTROL Detalle]** .
+1. Una vez finalizado el procesamiento, abra `logo-sphere.max` en la vista **[!UICONTROL Detail]**.
 
    La experiencia de Previsualización es la misma que con `logo_sphere.fbx`.
 

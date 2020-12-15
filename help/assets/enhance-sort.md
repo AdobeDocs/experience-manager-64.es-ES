@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# Ordenación mejorada de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
+# Se mejoró la clasificación de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
 
 Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 
@@ -19,7 +19,7 @@ La capacidad de búsqueda de Recursos Adobe Experience Manager (AEM) se ha mejor
 
 AEM Assets implementa la ordenación del lado del servidor para ordenar el conjunto completo de recursos (por grande que sea) dentro de una carpeta o una consulta de búsqueda a la vez, en lugar de ordenarlos por lotes en el lado del cliente. De este modo, los resultados recuperados previamente se pueden mostrar rápidamente en la interfaz de usuario, lo que hace que la operación de ordenación sea más receptiva y dinámica.
 
-## Ordenación de recursos en la vista de Listas {#sorting-assets-in-list-view}
+## Ordenar recursos en la vista de Lista {#sorting-assets-in-list-view}
 
 AEM Assets permite ordenar los recursos de carpetas en función de los campos siguientes:
 
@@ -50,9 +50,9 @@ AEM Assets permite ordenar los recursos de carpetas en función de los campos si
 
 >[!NOTE]
 >
->Para ordenar los valores en las `Name` o `Title`columnas, superponga `/libs/dam/gui/content/commons/availablecolumns` y cambie el valor de `sortable` a `True`.
+>Para ordenar los valores en las columnas `Name` o `Title`, superponga `/libs/dam/gui/content/commons/availablecolumns` y cambie el valor de `sortable` a `True`.
 
-## Clasificación de recursos en los resultados de búsqueda {#sorting-assets-in-search-results}
+## Ordenar recursos en los resultados de búsqueda {#sorting-assets-in-search-results}
 
 Puede ordenar los resultados de búsqueda en función de los campos siguientes:
 
@@ -85,7 +85,7 @@ AEM Assets permite ordenar cronológicamente las entradas de la línea de tiempo
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Ordenar]** que hay junto a la etiqueta **[!UICONTROL Fecha]** . Según su selección, las anotaciones se enumeran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
+1. Toque o haga clic en el icono **[!UICONTROL Ordenar]** junto a la etiqueta **[!UICONTROL Fecha]**. Según su selección, las anotaciones se enumeran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
 
-   ![chlimage_1-401](assets/chlimage_1-401.png)
+   ![chlimage_1-481](assets/chlimage_1-401.png)
 

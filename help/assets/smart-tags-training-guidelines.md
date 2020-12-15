@@ -14,11 +14,11 @@ ht-degree: 12%
 ---
 
 
-# Directrices de formación de Smart Content Service {#smart-content-service-training-guidelines}
+# Pautas de capacitación de Smart Content Service {#smart-content-service-training-guidelines}
 
 Para poder etiquetar eficazmente las imágenes de su marca, el servicio de contenido inteligente requiere que las imágenes de formación se ajusten a determinadas directrices.
 
-## Directrices para la formación {#guidelines-for-training}
+## Pautas para capacitación {#guidelines-for-training}
 
 Para obtener los mejores resultados, las imágenes del conjunto de formación deben cumplir las siguientes directrices:
 
@@ -26,13 +26,13 @@ Para obtener los mejores resultados, las imágenes del conjunto de formación de
 
 **Coherencia**: Las imágenes de una etiqueta deben ser visualmente similares.
 
-Por ejemplo, no es recomendable etiquetar todas estas imágenes como *mi grupo* (para formación) porque no son visualmente similares.
+Por ejemplo, no es recomendable etiquetar todas estas imágenes como *my-party* (para formación) porque no son visualmente similares.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coherence.png)
 
 **Cobertura**: Las imágenes de la formación deben ser suficientemente variadas. La idea es dar algunos ejemplos, pero razonablemente diversos, para que AEM aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
 
-Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
+Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coverage_1.png)
 
@@ -52,7 +52,7 @@ Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imág
 
 * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
 * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-* El etiquetado se admite en las configuraciones regionales en las que se AEM. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
+* El etiquetado se admite en las configuraciones regionales en las que se AEM. Para obtener una lista de idiomas, consulte [Notas de la versión de los servicios de contenido inteligente](/help/release-notes/smart-content-service-release-notes.md).
 
 Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la búsqueda Omni-search de recursos (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 

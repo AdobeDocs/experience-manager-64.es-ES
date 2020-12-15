@@ -15,9 +15,9 @@ ht-degree: 19%
 
 XMP (Extensible Metadata Platform) es el estándar de metadatos utilizado por AEM Assets para la administración de todos los metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-Además de ofrecer codificación de metadatos universales que se puede integrar en todos los formatos de archivo, XMP ofrece un modelo [de](xmp.md#xmp-core-concepts) contenido enriquecido y es [compatible con Adobe](xmp.md#advantages-of-xmp) y otras compañías, de modo que los usuarios de XMP en combinación con AEM Assets tienen una plataforma sólida sobre la que construir.
+Además de ofrecer codificación de metadatos universales que se puede incrustar en todos los formatos de archivo, XMP proporciona un [modelo de contenido enriquecido](xmp.md#xmp-core-concepts) y [es compatible con Adobe](xmp.md#advantages-of-xmp) y otras compañías, de modo que los usuarios de XMP en combinación con AEM Assets tienen una poderosa plataforma sobre la que construir.
 
-La especificación [](https://www.adobe.com/devnet/xmp.html) XMP está disponible en Adobe.
+La [especificación de XMP](https://www.adobe.com/devnet/xmp.html) está disponible en Adobe.
 
 ## ¿Qué es XMP? {#what-is-xmp}
 
@@ -36,7 +36,7 @@ entidad concreta denominada recurso; es decir, las propiedades son &quot;acerca&
 
 Adobe introdujo por primera vez el estándar XMP como parte del producto de software Adobe Acrobat. Desde entonces, la norma XMP ha sido ampliamente adoptada.
 
-### XMP ecosistema {#xmp-ecosystem}
+### ecosistema XMP {#xmp-ecosystem}
 
 XMP define un modelo de [metadatos](https://es.wikipedia.org/wiki/Metadatos) que se puede utilizar con cualquier conjunto definido de elementos de metadatos. XMP también define [esquemas](https://en.wikipedia.org/wiki/XML_schema) específicos para propiedades básicas útiles para registrar el historial de un recurso a medida que pasa por varios pasos de procesamiento, desde ser fotografiado, [escaneado](https://es.wikipedia.org/wiki/Esc%C3%A1ner_inform%C3%A1tico) o creado como texto, pasando por etapas de edición fotográfica (como [recorte](https://en.wikipedia.org/wiki/Cropping_%28image%29) o ajuste de color), hasta ensamblarse en una imagen final. XMP permite a cada programa o dispositivo de software añadir su propia información a un recurso digital, que se puede retener en el archivo digital final.
 
@@ -59,7 +59,7 @@ El XMP estándar está diseñado para ser extensible, lo que le permite agregar 
 >
 >XMP generalmente no permite incrustar tipos de datos binarios. Para transmitir datos binarios en XMP, por ejemplo, imágenes en miniatura, deben codificarse en un formato compatible con XML, como Base64.
 
-## Conceptos principales XMP {#xmp-core-concepts}
+## Conceptos principales de XMP {#xmp-core-concepts}
 
 En las secciones siguientes se describen los conceptos básicos de XMP, incluidas Áreas de nombres y esquemas, propiedades y valores, y alternativas de idioma.
 
@@ -76,11 +76,11 @@ XMP pueden incluir propiedades de uno o varios de los esquemas.
 
 Por ejemplo, un subconjunto típico utilizado por muchas aplicaciones Adobe puede incluir lo siguiente:
 
-* esquema central de Dublín: dc:title, dc:creator, dc:subject, dc:format, dc:rights
+* Esquema central de Dublín: dc:title, dc:creator, dc:subject, dc:format, dc:rights
 * XMP esquema básico: xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
 * esquema de gestión de derechos de XMP: xmpRights:WebStatement, xmpRights:Marked
 * esquema de administración de medios XMP: xmpMM:DocumentID
 
 ### Alternativas de idioma {#language-alternatives}
 
-XMP oferta la capacidad de agregar una propiedad **xml:lang** a las propiedades de texto para especificar el idioma del texto.
+XMP le oferta la capacidad de agregar una propiedad **xml:lang** a las propiedades de texto para especificar el idioma del texto.

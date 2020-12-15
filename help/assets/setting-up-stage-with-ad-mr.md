@@ -43,15 +43,15 @@ ht-degree: 85%
 
    Configure las opciones de procesamiento con las sugerencias siguientes:
 
-   * **[!UICONTROL Ficha Común]**
+   * **** Comúnmente
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las cámaras procesables.
 
    * **[!UICONTROL Ficha Calidad]**
 
-      * **[!UICONTROL Calidad]** global o inferior `- 0.5`
-      * **[!UICONTROL Modo]** de difusión indirecta (GI) - `Final Gather`
-      * **[!UICONTROL Tamaño]** del filtro - `2.0`, `2.0`
+      * **[!UICONTROL Calidad total o]** `- 0.5` inferior
+      * **[!UICONTROL Modo]**  de difusión indirecta (GI):  `Final Gather`
+      * **[!UICONTROL Tamaño]**  del filtro-  `2.0`,  `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si es necesario, perfeccione las luces, procese las configuraciones o realice ambas acciones para conseguir los resultados que desea.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.
@@ -66,6 +66,6 @@ ht-degree: 85%
 
    Si Autodesk® Maya® no se configura en el servidor de AEM, exporte un FBX de Maya y cárguelo en AEM.
 
-1. Abra Propiedades del recurso en AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
+1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de etapa]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
 1. Abra un recurso 3D, seleccione el nuevo escenario y verifique que su vista previa y procesamiento sean los esperados.
 

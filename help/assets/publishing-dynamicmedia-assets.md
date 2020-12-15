@@ -1,6 +1,6 @@
 ---
-title: Publicación de recursos de Dynamic Media
-seo-title: Publicación de recursos de Dynamic Media
+title: Publicación de Dynamic Media Assets
+seo-title: Publicación de Dynamic Media Assets
 description: Cómo publicar recursos de medios dinámicos
 seo-description: Cómo publicar recursos de medios dinámicos
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
@@ -18,11 +18,11 @@ ht-degree: 8%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Publicación de Dynamic Media Assets {#publishing-dynamic-media-assets}
 
 Para publicar los recursos de Dynamic Media, selecciónelos y toque **[!UICONTROL Publicar]**. Una vez publicados los recursos de medios dinámicos, estarán disponibles para incluirlos en una página web mediante URL o mediante incrustación.
 
-También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media: modo](config-dms7.md)Scene7.
+También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media - modo Scene7](config-dms7.md).
 
 En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
@@ -32,9 +32,9 @@ En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terr
 
 Si tiene intención de publicar recursos de vídeo inmediatamente después de codificarlos, asegúrese de que la codificación está completa. Cuando se siguen codificando los vídeos, el sistema le permite saber que hay un flujo de trabajo de procesamiento de vídeo en curso. Cuando haya terminado la codificación de vídeo, debería poder realizar la previsualización de las representaciones de vídeo. En ese momento, puede publicar los vídeos sin incurrir en errores de publicación.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Consulte también [Vinculación de direcciones URL a su Aplicación web](linking-urls-to-yourwebapplication.md).
 
-Consulte también [Incrustación del visor de vídeos en una página web.](embed-code.md)
+Consulte también [Incrustación del visor de vídeos en una página Web.](embed-code.md)
 
 >[!NOTE]
 >
@@ -45,10 +45,10 @@ Consulte también [Incrustación del visor de vídeos en una página web.](embed
 
 
 
-Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos.](managing-assets-touch-ui.md)
+Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publishing Assets.](managing-assets-touch-ui.md)
 
-## envío HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## ENVÍO HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Consulte el envío [HTTP/2 del contenido de las preguntas](/help/sites-administering/scene7-http2faq.md) más frecuentes para obtener más información.
+Consulte [HTTP/2 envío de contenido de preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md) para obtener más información.

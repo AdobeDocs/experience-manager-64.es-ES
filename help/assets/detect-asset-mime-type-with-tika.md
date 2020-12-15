@@ -22,9 +22,9 @@ Esta función está deshabilitada de forma predeterminada. Para habilitar la fun
 >La detección de tipo MIME mediante la biblioteca Apache Tika es una operación que utiliza muchos recursos.
 
 1. Vaya a `https://[AEM_server]:[port]/system/console/configMgr` para abrir la consola web de Configuration Manager.
-1. En la lista de servicios, localice el servicio **[!UICONTROL Day CQ DAM Mime Type y toque o haga clic en el icono]** Editar **** que hay junto a él para abrirlo en el modo de edición.
+1. En la lista de servicios, ubique **[!UICONTROL Day CQ DAM Mime Type Service]** y toque o haga clic en el icono **[!UICONTROL Editar]** que hay junto a él para abrirlo en el modo de edición.
 
-1. Seleccione la opción **[!UICONTROL Detectar MIME del contenido]** para permitir el análisis de los recursos cargados para determinar su tipo MIME mientras se omiten las extensiones de archivo. De forma predeterminada, esta opción no está seleccionada.
+1. Seleccione la opción **[!UICONTROL Detectar MIME del contenido]** para habilitar el análisis de los recursos cargados para determinar su tipo MIME mientras se omiten las extensiones de archivo. De forma predeterminada, esta opción no está seleccionada.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 

@@ -17,16 +17,16 @@ Aprenda a añadir mapas de imagen hipervinculados a los recursos de imagen.
 
 Los mapas de imagen le permiten agregar una o más áreas con hipervínculos que funcionan como otros hipervínculos.
 
-1. Realice una de las siguientes acciones para abrir el Editor **[!UICONTROL de imágenes]** in-situ:
+1. Para abrir **[!UICONTROL Editor de imágenes in situ]**, realice una de las siguientes acciones:
 
-   * Mediante Acciones rápidas, toque el icono **[!UICONTROL Editar]** que aparece en un recurso en la vista **[!UICONTROL Tarjeta]** . En la vista de Lista, seleccione el recurso y toque el icono **Editar** de la barra de herramientas.
+   * Mediante Acciones rápidas, toque el icono **[!UICONTROL Editar]** que aparece en un recurso en la vista **[!UICONTROL Tarjeta]**. En la vista de Lista, seleccione el recurso y toque el icono **Editar** en la barra de herramientas.
 
       >[!NOTE]
       >
-      >Acciones rápidas no está disponible en la vista de **[!UICONTROL Lista]** .
+      >Las acciones rápidas no están disponibles en la vista **[!UICONTROL Lista]**.
 
-   * En la vista **[!UICONTROL Tarjeta]** o **[!UICONTROL Lista]** , seleccione el recurso y toque el icono **[!UICONTROL Editar]** de la barra de herramientas.
-   * Puntee en el icono **[!UICONTROL Editar]** de la página de recursos.
+   * En la vista **[!UICONTROL Card]** o **[!UICONTROL Lista]**, seleccione el recurso y toque el icono **[!UICONTROL Edit]** de la barra de herramientas.
+   * Toque el icono **[!UICONTROL Editar]** desde la página de recursos.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
@@ -38,15 +38,15 @@ Los mapas de imagen le permiten agregar una o más áreas con hipervínculos que
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Toque el punto interactivo e introduzca la URL y el texto Alt. En la lista **[!UICONTROL Destinatario]** , especifique dónde desea que se muestre el mapa de imagen, por ejemplo, la misma ficha, una nueva ficha o un iFrame. Por ejemplo, introduzca `https://www.adobe.com` como URL, `Adobe website` como texto alternativo, y especifique **[!UICONTROL Nueva ficha]** desde la lista de **[!UICONTROL Destinatario]** para que el mapa de imagen se abra en una nueva ficha.
+1. Toque el punto interactivo e introduzca la URL y el texto Alt. En la lista **[!UICONTROL Destinatario]**, especifique dónde desea que se muestre el mapa de imagen, por ejemplo la misma ficha, una nueva ficha o un iFrame. Por ejemplo, escriba `https://www.adobe.com` como URL, `Adobe website` como texto alternativo y especifique **[!UICONTROL Nueva ficha]** de la lista **[!UICONTROL Destinatario]** para que el mapa de imagen se abra en una nueva ficha.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Toque el icono **[!UICONTROL Confirmar]** y, a continuación, toque el icono **[!UICONTROL Finalizar]** de la barra de herramientas para guardar los cambios.
+1. Toque el icono **[!UICONTROL Confirmar]** y luego toque el icono **[!UICONTROL Finalizar]** de la barra de herramientas para guardar los cambios.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Para eliminar el mapa de imagen, toque el punto interactivo y el icono **[!UICONTROL Eliminar]** .
+   Para eliminar el mapa de imagen, toque el punto interactivo y el icono **[!UICONTROL Eliminar]**.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -54,4 +54,4 @@ Los mapas de imagen le permiten agregar una o más áreas con hipervínculos que
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si la opción Medios dinámicos está activada, vaya al editor de recursos y toque el icono **[!UICONTROL Mapa]** para vista de todos los mapas de imagen aplicados.
+   Si la opción Dynamic Media está activada, vaya al editor de recursos y toque el icono **[!UICONTROL Asignar]** para vista de todos los mapas de imagen aplicados.

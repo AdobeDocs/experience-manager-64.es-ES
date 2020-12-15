@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Video renditions {#video-renditions}
+# Representaciones de vídeo {#video-renditions}
 
 Adobe Experience Manager (AEM) Assets genera representaciones de vídeo para recursos de vídeo de varios formatos, incluidos OGG, FLV, etc.
 
@@ -27,13 +27,13 @@ Para vista de las representaciones de un recurso de vídeo concreto, abra su pá
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La lista de las representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]** .
+La lista de las representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]**.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Para configurar el servidor proxy para las representaciones con codificación DM, [configure los servicios de Dynamic Media Cloud.](config-dynamic.md)
+Para configurar el servidor proxy para representaciones con codificación DM, [configure los servicios de Dynamic Media Cloud.](config-dynamic.md)
 
-Para generar representaciones de vídeo con parámetros deseados, [cree un perfil](video-profiles.md)de vídeo correspondiente.
+Para generar representaciones de vídeo con parámetros deseados, [cree un perfil de vídeo correspondiente](video-profiles.md).
 
 Después de configurar el servidor proxy y crear perfiles de vídeo, puede incluir este ajuste preestablecido de vídeo en un perfil de procesamiento y aplicar el perfil de procesamiento a una carpeta.
 

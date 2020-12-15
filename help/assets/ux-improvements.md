@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Mejoras de la experiencia del usuario en los recursos {#user-experience-enhancements-in-assets}
+# Mejoras en la experiencia del usuario en Assets {#user-experience-enhancements-in-assets}
 
 AEM 6.4 Assets incluye varias mejoras de uso que proporcionan una experiencia de usuario sin problemas y mejoran la productividad. El aumento en la velocidad con la que puede crear/administrar su contenido de lanzamiento al mercado mejora la velocidad de contenido del negocio.
 
@@ -31,11 +31,11 @@ Según el dispositivo que utilice y la cantidad de detalles que necesite, puede 
 
 Para cambiar el tamaño de las miniaturas en la vista de tarjetas, lleve a cabo estos pasos:
 
-1. Toque o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija la opción Configuración **[!UICONTROL de]** Vista.
+1. Toque o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija la opción **[!UICONTROL Configuración de Vista]**.
 
    ![vista_settings](assets/view_settings.png)
 
-1. En el cuadro de diálogo Configuración **[!UICONTROL de]** Vista, seleccione el tamaño de miniatura deseado y, a continuación, toque o haga clic en **[!UICONTROL Actualizar]**.
+1. En el cuadro de diálogo **[!UICONTROL Configuración de Vista]**, seleccione el tamaño de miniatura deseado y, a continuación, toque o haga clic en **[!UICONTROL Actualizar]**.
 
    ![vista_settings_dialog](assets/view_settings_dialog.png)
 
@@ -47,27 +47,27 @@ El mosaico de la vista de tarjetas ahora muestra información adicional, como el
 
 ![publish_status](assets/publish_status.png)
 
-## Mejoras en la vista de Listas {#list-view-improvements}
+## Mejoras en la vista de listas {#list-view-improvements}
 
 En la vista de Lista, la primera columna ahora muestra los nombres de archivo de los recursos de forma predeterminada. También se muestra información adicional, como el estado de publicación y procesamiento y la configuración regional.
 
 ![lista_vista](assets/list_view.png)
 
-Puede configurar la cantidad de detalles que desea mostrar. Toque o haga clic en el icono Diseño, elija la opción Configuración **[!UICONTROL de]** Vista y especifique las columnas que desea que se muestren en el cuadro de diálogo Configuración **[!UICONTROL de]** Vista.
+Puede configurar la cantidad de detalles que desea mostrar. Toque o haga clic en el icono Diseño, elija la opción **[!UICONTROL Configuración de Vista]** y especifique las columnas que desee mostrar en el cuadro de diálogo **[!UICONTROL Configuración de Vista]**.
 
 ![vista_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Mejoras en la vista de columnas {#column-view-improvements}
 
-Además de las vistas de tarjetas y Listas, ahora puede desplazarse a la página de detalles de un recurso desde la vista Columna. Seleccione un recurso en la vista Columna y, a continuación, toque o haga clic en **[!UICONTROL Más detalles]** en la instantánea del recurso.
+Además de las vistas de tarjetas y Listas, ahora puede desplazarse a la página de detalles de un recurso desde la vista Columna. Seleccione un recurso en la vista Columna y, a continuación, toque o haga clic **[!UICONTROL Más detalles]** en la instantánea del recurso.
 
 ![more_details](assets/more_details.png)
 
-## vista de árbol {#tree-view}
+## Vista de árbol {#tree-view}
 
 Recursos AEM 6.4 incluye una vista de árbol que le permite explorar cómodamente la jerarquía de recursos y desplazarse hasta el recurso o la carpeta que desee.
 
-Para abrir la vista de árbol, toque o haga clic en el icono de GlobalNav en el `Assets UI`menú y elija el árbol **** de contenido en el menú.
+Para abrir la vista de árbol, toque o haga clic en el icono de GlobalNav en `Assets UI` y elija **[!UICONTROL Árbol de contenido]** en el menú.
 
 ![content_tree](assets/content_tree.png)
 

@@ -15,11 +15,11 @@ ht-degree: 6%
 
 Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Experience Manager (AEM) que esté disponible exclusivamente para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. Según el nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, por ejemplo, vistas de recursos dentro de la carpeta o ediciones de los recursos.
 
-1. En la consola Recursos, toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
+1. En la consola Recursos, toque o haga clic **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Añadir carpeta]** , introduzca un título y un nombre (opcional) para la carpeta y seleccione **[!UICONTROL Privado]**.
+1. En el cuadro de diálogo **[!UICONTROL Añadir carpeta]**, introduzca un título y un nombre (opcional) para la carpeta y seleccione **[!UICONTROL Privado]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -35,7 +35,7 @@ Puede crear una carpeta privada en la interfaz de usuario de Recursos Adobe Expe
    >
    >La carpeta no estará visible para ningún otro usuario hasta que la comparta.
 
-1. In the Folder Prperties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. En la página Propiedades de la carpeta, seleccione un usuario de la lista **[!UICONTROL Añadir usuario]**, asigne una función al usuario de la carpeta privada y haga clic en **[!UICONTROL Añadir]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 

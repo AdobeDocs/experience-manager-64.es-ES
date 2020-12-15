@@ -44,7 +44,7 @@ Para personalizar la página de propiedades de metadatos, incluida la adición, 
    >[!NOTE]
    >
    >* En la página de propiedades, puede quitar recursos de la lista de recursos anulándolos. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que se eliminan de la lista no se actualizan.
-   >* En la parte superior de la lista de recursos, active la casilla de verificación situada junto a **Título** para alternar entre seleccionar los recursos y borrar la lista.
+   >* En la parte superior de la lista assets, active la casilla de verificación situada cerca de **Título** para alternar entre seleccionar los recursos y borrar la lista.
 
 
 1. Para seleccionar otro esquema de metadatos para los recursos, toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas y seleccione el esquema que desee.
@@ -61,7 +61,7 @@ Para evitar una situación similar a DOS, AEM limita el número de parámetros a
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Para cambiar el límite, acceda a **[!UICONTROL Herramientas > Operaciones > Consola Web]** y cambie el valor de [!UICONTROL Parámetros máximos de POST] en [!UICONTROL Administración de parámetros de solicitud de Apache Sling] Configuración de OSGi.
 
 >[!MORELIKETHIS]
 >

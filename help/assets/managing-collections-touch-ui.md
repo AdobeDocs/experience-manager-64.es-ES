@@ -25,26 +25,26 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 * Colección que contiene una lista de referencia estática de recursos, carpetas y otras colecciones.
 * Colección inteligente que incluye de forma dinámica recursos basados en criterios de búsqueda.
 
-## Acceso a la consola de colecciones {#navigating-the-collections-console}
+## Acceda a la consola de colecciones {#navigating-the-collections-console}
 
-Para abrir las **[!UICONTROL colecciones]**, toque o haga clic en el logotipo del Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Para abrir las **[!UICONTROL colecciones]**, toque o haga clic en el logotipo del Experience Manager. En la página de navegación, vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Colecciones]**.
 
-## Creación de una colección {#creating-a-collection}
+## Crear una colección {#creating-a-collection}
 
-Puede crear una colección con referencias [](#creating-a-collection-with-static-references) estáticas o basada en un filtro [basado en criterios de](#creating-a-smart-collection)búsqueda. También puede crear una colección a partir de una caja de iluminación.
+Puede crear una colección con [referencias estáticas](#creating-a-collection-with-static-references) o basadas en un [filtro basado en criterios de búsqueda](#creating-a-smart-collection). También puede crear una colección a partir de una caja de iluminación.
 
-### Creación de una colección con referencias estáticas {#creating-a-collection-with-static-references}
+### Crear una colección con referencias estáticas {#creating-a-collection-with-static-references}
 
 Puede crear una colección con referencias estáticas, por ejemplo, una colección con referencias a recursos, carpetas, colecciones, conjuntos de giros y conjuntos de imágenes.
 
-1. Vaya a la consola **[!UICONTROL Colecciones]** .
+1. Vaya a la consola **[!UICONTROL Colecciones]**.
 1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Crear]**.
-1. En la página **[!UICONTROL Crear colección]** , introduzca un título y una descripción opcional para la colección.
+1. En la página **[!UICONTROL Crear colección]**, escriba un título y una descripción opcional para la colección.
 1. Agregue miembros a la colección y asigne los permisos correspondientes. Como alternativa, seleccione **[!UICONTROL Colección pública]** para permitir que todos los usuarios tengan acceso a la colección.
 
    >[!NOTE]
    >
-   >Para permitir que los miembros compartan colecciones con otros usuarios, proporcione los permisos de lectura del `dam-users` grupo en la ruta `home/users`. Otorgue permiso a los usuarios en la `/content/dam/collections` ubicación para permitir que los usuarios realicen la vista de las colecciones en listas emergentes. Como alternativa, haga que el usuario forme parte del `dam-users` grupo.
+   >Para permitir que los miembros compartan colecciones con otros usuarios, proporcione los `dam-users` permisos de lectura del grupo en la ruta `home/users`. Otorgue permiso a los usuarios en la ubicación `/content/dam/collections` para permitir que los usuarios realicen la vista de las colecciones en listas emergentes. También puede hacer que el usuario forme parte del grupo `dam-users`.
 
 1. (Opcional) Añada una imagen en miniatura para la colección.
 1. Toque o haga clic en **[!UICONTROL Crear]** y, a continuación, pulse o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. En la consola Colecciones se abre una colección con el título y las propiedades especificados.
@@ -53,14 +53,14 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
    >
    >Recursos Experience Manager permite crear tareas de revisión para una colección de forma similar a como se crean tareas de revisión para una carpeta de recursos.
 
-   Para añadir recursos a la colección, vaya a la interfaz de usuario de Recursos. Para obtener más información, consulte [Añadir recursos en una colección](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
+   Para añadir recursos a la colección, vaya a la interfaz de usuario de Recursos. Para obtener más información, consulte [Añadir recursos a una colección](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
-### Creación de colecciones mediante dropzone {#create-collections-using-dropzone}
+### Crear colecciones con dropzone {#create-collections-using-dropzone}
 
 Puede arrastrar recursos de la interfaz de usuario de Recursos a una colección. También puede crear una copia de una colección y arrastrar los recursos allí.
 
 1. En la interfaz de usuario de Recursos, seleccione los recursos que desee agregar a una colección.
-1. Arrastre los recursos a la zona **[!UICONTROL Colocar en colección]** .
+1. Arrastre los recursos a la zona **[!UICONTROL Colocar en colección]**.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
@@ -68,7 +68,7 @@ Puede arrastrar recursos de la interfaz de usuario de Recursos a una colección.
 
    ![drop_to_add](assets/drop_to_add.png)
 
-   O bien, toque o haga clic en el icono **[!UICONTROL A colección]** de la barra de herramientas.
+   También puede tocar o hacer clic en el icono **[!UICONTROL Colección]** de la barra de herramientas.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -79,7 +79,7 @@ Puede arrastrar recursos de la interfaz de usuario de Recursos a una colección.
 1. En el cuadro de diálogo **[!UICONTROL Crear nueva colección]**, indique un nombre para la colección. Si desea que todos los usuarios tengan acceso a la colección, seleccione **[!UICONTROL Colección pública]**.
 1. Toque o haga clic en **[!UICONTROL Continuar]** para crear la colección.
 
-### Creación de una colección inteligente {#creating-a-smart-collection}
+### Crear una colección inteligente {#creating-a-smart-collection}
 
 Una colección inteligente utiliza criterios de búsqueda para rellenar recursos de forma dinámica. Puede crear una colección inteligente utilizando solo archivos y no carpetas o archivos y carpetas.
 
@@ -89,22 +89,22 @@ Para crear una colección inteligente, siga los pasos:
 
 1. Escriba la palabra clave de búsqueda en el cuadro Omniture y pulse Intro. Abra el panel Filtros y aplique un filtro de búsqueda.
 
-1. En la lista **[!UICONTROL Archivos y carpetas]** , seleccione **[!UICONTROL Archivos]**.
+1. En la lista **[!UICONTROL Files &amp; Folders]**, seleccione **[!UICONTROL Files]**.
 
    ![files_option](assets/files_option.png)
 
-1. Toque o haga clic en **[!UICONTROL Guardar colección]** inteligente.
+1. Toque o haga clic en **[!UICONTROL Guardar colección inteligente]**.
 1. Especifique un nombre para la colección. Seleccione **[!UICONTROL Público]** para agregar el grupo Usuarios de DAM con la función Visor a la colección inteligente.
 
    ![save_collection](assets/save_collection.png)
 
    >[!NOTE]
    >
-   >Si selecciona **[!UICONTROL Público]**, la colección inteligente estará disponible para todos los usuarios con la función de propietario después de crearla. Si anula la selección de la opción **[!UICONTROL Público]** , el grupo de usuarios DAM ya no estará asociado a la colección inteligente.
+   >Si selecciona **[!UICONTROL Público]**, la colección inteligente estará disponible para todos los usuarios con la función de propietario después de crearla. Si anula la selección de la opción **[!UICONTROL Público]**, el grupo de usuarios DAM ya no se asocia a la colección inteligente.
 
 1. Pulse o haga clic en **[!UICONTROL Guardar]** para crear la colección inteligente y, a continuación, cierre el cuadro de mensaje para completar el proceso.
 
-   The new smart collection is also added to the **[!UICONTROL Saved Searches]** list.
+   La nueva colección inteligente también se agrega a la lista **[!UICONTROL Búsquedas guardadas]**.
 
    ![collection_lists](assets/collection_listing.png)
 
@@ -112,23 +112,23 @@ Para crear una colección inteligente, siga los pasos:
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-## Añadir recursos en una colección {#adding-assets-to-a-collection}
+## Añadir recursos a una colección {#adding-assets-to-a-collection}
 
 Puede agregar recursos a una colección que contenga una lista de los recursos o carpetas a los que se hace referencia. Las colecciones inteligentes utilizan una consulta de búsqueda para rellenar los recursos. Por lo tanto, las referencias estáticas a recursos y carpetas no son aplicables a ellos.
 
-1. En la interfaz de usuario de Recursos, seleccione el recurso y toque o haga clic en el icono **[!UICONTROL A colección]** de la barra de herramientas.
+1. En la interfaz de usuario de Recursos, seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Colección]** de la barra de herramientas.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección]** de la interfaz. Añada los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para Añadir]**.
 
-1. En la página **[!UICONTROL Añadir a colección]** , seleccione la colección a la que desea agregar el recurso.
+1. En la página **[!UICONTROL Añadir a la colección]**, seleccione la colección a la que desea agregar el recurso.
 
-1. Toque o haga clic en **[!UICONTROL Añadir]** y, a continuación, cierre el mensaje de confirmación. El recurso se agrega a la colección.
+1. Toque o haga clic **[!UICONTROL Añada]** y cierre el mensaje de confirmación. El recurso se agrega a la colección.
 
-## Edición de una colección inteligente {#editing-a-smart-collection}
+## Editar una colección inteligente {#editing-a-smart-collection}
 
-Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la búsqueda [](#editing-saved-searches)guardada.
+Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la [búsqueda guardada](#editing-saved-searches).
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono de búsqueda de la barra de herramientas.
 
@@ -142,27 +142,27 @@ Las colecciones inteligentes se crean al guardar una búsqueda para que pueda mo
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
-1. En la lista **[!UICONTROL Archivos y carpetas]** , seleccione **[!UICONTROL Archivos]**.
+1. En la lista **[!UICONTROL Files &amp; Folders]**, seleccione **[!UICONTROL Files]**.
 
-1. Modifique uno o varios filtros, según sea necesario. Toque o haga clic en **[!UICONTROL Editar colección]** inteligente.
+1. Modifique uno o varios filtros, según sea necesario. Toque o haga clic **[!UICONTROL Editar colección inteligente]**.
 
    También puede editar el nombre de la colección inteligente.
 
    ![edit_smart_collection_dialog](assets/edit_smart_collectiondialog.png)
 
-1. Tap/click **[!UICONTROL Save]**. Aparecerá el cuadro de diálogo **[!UICONTROL Editar colección]** inteligente.
+1. Toque o haga clic en **[!UICONTROL Guardar]**. Aparece el cuadro de diálogo **[!UICONTROL Editar colección inteligente]**.
 
-1. Toque o haga clic en **[!UICONTROL Sobrescribir]** para reemplazar la colección inteligente original por la colección editada. También puede seleccionar **[!UICONTROL Guardar como]** para guardar la colección editada por separado.
+1. Toque o haga clic **[!UICONTROL Sobrescribir]** para reemplazar la colección inteligente original por la colección editada. También puede seleccionar **[!UICONTROL Guardar como]** para guardar la colección editada por separado.
 
-1. En el cuadro de diálogo de confirmación, toque o haga clic en **[!UICONTROL Guardar]** para completar el proceso.
+1. En el cuadro de diálogo de confirmación, toque o haga clic **[!UICONTROL Guardar]** para completar el proceso.
 
-## Vista y edición de metadatos de la colección {#viewing-and-editing-collection-metadata}
+## Vista y edición de metadatos de recopilación {#viewing-and-editing-collection-metadata}
 
 Los metadatos de la colección incluyen datos sobre la colección, incluidas las etiquetas que se agreguen.
 
 1. En la consola Colecciones, seleccione una colección y toque o haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
 1. En la página **[!UICONTROL Metadatos de la colección]**, consulte los metadatos de la colección desde las pestañas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]**.
-1. Modifique los metadatos según sea necesario y, a continuación, toque o haga clic en **[!UICONTROL Guardar y cerrar]** en la barra de herramientas para guardar los cambios.
+1. Modifique los metadatos, según sea necesario, y toque o haga clic **[!UICONTROL Guardar y cerrar]** en la barra de herramientas para guardar los cambios.
 
 ### Editar metadatos de varias colecciones de forma masiva {#editing-collection-metadata-in-bulk}
 
@@ -176,17 +176,17 @@ Puede editar los metadatos de varias colecciones simultáneamente. Esta funciona
    >[!NOTE]
    >
    >* En la página de propiedades de la colección, puede quitar colecciones de la lista de colecciones anulándolas. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. Los metadatos de las colecciones que elimine no se actualizarán.
-   >* En la parte superior de la lista, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
+   >* En la parte superior de la lista, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
 
 
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]** desde la barra de herramientas y, a continuación, cierre el cuadro de diálogo de confirmación para completar el proceso.
-1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
+1. Toque o haga clic **[!UICONTROL Guardar y cerrar]** desde la barra de herramientas y, a continuación, cierre el cuadro de diálogo de confirmación para completar el proceso.
+1. Para anexar los nuevos metadatos con los metadatos existentes, seleccione **[!UICONTROL Modo de anexado]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Pulse o haga clic en **[!UICONTROL Enviar]**.
 
    >[!NOTE]
    >
-   >Los metadatos que se agregan para las colecciones seleccionadas sobrescriben los metadatos anteriores para estas colecciones. Utilice el modo  Anexar para agregar nuevos valores a los metadatos existentes en los campos que pueden contener varios valores. Los campos de un solo valor siempre se sobrescriben. Las etiquetas que agregue al campo [!UICONTROL Etiquetas] se anexan a la lista de etiquetas existente en los metadatos.
+   >Los metadatos que se agregan para las colecciones seleccionadas sobrescriben los metadatos anteriores para estas colecciones. Utilice el [!UICONTROL modo Anexar] para agregar nuevos valores a los metadatos existentes en los campos que pueden contener varios valores. Los campos de un solo valor siempre se sobrescriben. Las etiquetas que agregue en el campo [!UICONTROL Etiquetas] se anexan a la lista existente de etiquetas en los metadatos.
 
-Para personalizar la página de [!UICONTROL propiedades] de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de Esquema.
+Para personalizar la página [!UICONTROL Propiedades] de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de Esquema.
 
 >[!TIP]
 >
@@ -208,8 +208,8 @@ Dentro de una colección, AEM búsqueda de recursos está restringida a los recu
 
 Puede editar la configuración de la colección, como título y descripción, o bien añadir miembros a una colección.
 
-1. Seleccione una colección y toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas. También puede utilizar la acción rápida **[!UICONTROL Configuración]** de la miniatura de la colección.
-1. Modifique la configuración de la colección en la página **[!UICONTROL Configuración de la colección]**. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
+1. Seleccione una colección y toque o haga clic en el icono **[!UICONTROL Configuración]** de la barra de herramientas. También puede utilizar la acción rápida **[!UICONTROL Settings]** de la miniatura de la colección.
+1. Modifique la configuración de la colección en la página **[!UICONTROL Configuración de la colección]**. Por ejemplo, modifique el título de la colección, las descripciones, los miembros y los permisos como se explica en [Añadir colecciones](#creating-a-collection).
 
 1. Para guardar los cambios, toque o haga clic en **[!UICONTROL Guardar]**.
 
@@ -217,11 +217,11 @@ Puede editar la configuración de la colección, como título y descripción, o 
 
 1. En la consola Colecciones, seleccione una o varias colecciones y toque o haga clic en el icono Eliminar de la barra de herramientas.
 
-1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Eliminar]** para confirmar la acción de eliminación.
+1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Eliminar]** para confirmar la acción de eliminar.
 
    >[!NOTE]
    >
-   >También puede eliminar colecciones inteligentes [eliminando las búsquedas](#deleting-saved-searches)guardadas.
+   >También puede eliminar colecciones inteligentes [eliminando las búsquedas guardadas](#deleting-saved-searches).
 
 ## Descargar una colección {#downloading-a-collection}
 
@@ -229,7 +229,7 @@ Al descargar una colección, se descarga toda la jerarquía de recursos de la co
 
 1. En la consola Colecciones, seleccione una o varias colecciones para descargar.
 1. En la barra de herramientas, toque o haga clic en el icono de descarga.
-1. En el cuadro de diálogo **[!UICONTROL Descargar]** , toque o haga clic en **[!UICONTROL Descargar]**. Si desea descargar las representaciones de los recursos de la colección, seleccione **[!UICONTROL Representaciones]**. Seleccione la opción **[!UICONTROL Correo electrónico]** para enviar una notificación por correo electrónico al propietario de la colección.
+1. En el cuadro de diálogo **[!UICONTROL Descargar]**, toque o haga clic en **[!UICONTROL Descargar]**. Si desea descargar las representaciones de los recursos de la colección, seleccione **[!UICONTROL Representaciones]**. Seleccione la opción **[!UICONTROL Correo electrónico]** para enviar una notificación por correo electrónico al propietario de la colección.
 
    Cuando selecciona una colección para descargar, se descarga la jerarquía completa de carpetas bajo la colección. Para incluir cada colección que descargue (incluidos los recursos de las colecciones secundarias anidadas en la colección principal) en una carpeta individual, seleccione **[!UICONTROL Crear una carpeta independiente para cada recurso]**.
 
@@ -237,17 +237,17 @@ Al descargar una colección, se descarga toda la jerarquía de recursos de la co
 
 Puede agregar una colección a otra colección, creando así una colección anidada.
 
-1. En la consola Colecciones, seleccione la colección o el grupo de colecciones que desee y toque o haga clic en el icono **[!UICONTROL A colección]** de la barra de herramientas.
+1. En la consola Colecciones, seleccione la colección o el grupo de colecciones que desee y toque o haga clic en el icono **[!UICONTROL Para colección]** de la barra de herramientas.
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. En la página **[!UICONTROL Añadir a colección]** , seleccione la colección en la que desea agregar la colección.
+1. En la página **[!UICONTROL Añadir a colección]**, seleccione la colección en la que desea agregar la colección.
 
    >[!NOTE]
    >
-   >La colección actualizada más recientemente se selecciona de forma predeterminada en la página **[!UICONTROL Añadir a colección]** .
+   >La colección actualizada más recientemente está seleccionada de forma predeterminada en la página **[!UICONTROL Añadir a colección]**.
 
-1. Toque o haga clic en **[!UICONTROL Añadir]**. Un mensaje confirma que la colección se agrega a la colección de destinatarios en la página **[!UICONTROL Seleccionar destino]** . Cierre el mensaje para completar el proceso.
+1. Toque o haga clic **[!UICONTROL Añadir]**. Un mensaje confirma que la colección se agrega a la colección de destinatarios en la página **[!UICONTROL Seleccionar destino]**. Cierre el mensaje para completar el proceso.
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ En la interfaz de usuario de Assets, puede buscar o filtrar recursos en función
 
 ### Crear búsquedas guardadas {#creating-saved-searches}
 
-Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. The Saved Searches query for the collection is saved in the `dam:query` property in crxde at the relative location `/content/dam/collections/`. No hay límites para las búsquedas que puede guardar ni para las búsquedas guardadas que se muestran en la lista.
+Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. La consulta Búsquedas guardadas para la colección se guarda en la propiedad `dam:query` en crxde en la ubicación relativa `/content/dam/collections/`. No hay límites para las búsquedas que puede guardar ni para las búsquedas guardadas que se muestran en la lista.
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Las búsquedas guardadas se crean al crear una colección inteligente. Las colec
 
 ### Editar búsquedas guardadas {#editing-saved-searches}
 
-Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Para obtener más información, consulte [Edición de una colección](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection)inteligente.
+Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Para obtener más información, consulte [Edición de una colección inteligente](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection).
 
 ### Eliminar búsquedas guardadas {#deleting-saved-searches}
 
@@ -281,25 +281,25 @@ Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Par
 
 1. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros.
 
-1. From the **[!UICONTROL Saved Searches]** list, tap/click the delete icon next to the smart collection that you want to delete.
+1. En la lista **[!UICONTROL Búsquedas guardadas]**, toque o haga clic en el icono Eliminar situado junto a la colección inteligente que desee eliminar.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
 1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Eliminar]** para eliminar la búsqueda guardada.
 
-## Ejecución de un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
+## Ejecutar un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
 
 Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la colección contiene colecciones anidadas, el flujo de trabajo también se ejecuta en los recursos de las colecciones anidadas. Sin embargo, si la colección y la colección anidada contienen recursos de duplicado, el flujo de trabajo solo se ejecuta una vez para dichos recursos.
 
 1. En la consola Colecciones, seleccione una colección en la que desee ejecutar un flujo de trabajo.
-1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Cronología]** en la lista.
+1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Línea de tiempo]** en la lista.
 1. En la cronología, pulse o haga clic en el icono del circunflejo invertido en la parte inferior y, a continuación, pulse o haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. En la sección **[!UICONTROL Iniciar flujo de trabajo]**, seleccione un modelo de flujo de trabajo de la lista. Por ejemplo, seleccione el modelo **[!UICONTROL Recurso de actualización DAM]**.
-1. Introduzca un título para el flujo de trabajo y toque o haga clic en **[!UICONTROL Inicio]**.
-1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Continuar]**. El flujo de trabajo se ejecuta en todos los recursos de la colección.
+1. Escriba un título para el flujo de trabajo y toque o haga clic en **[!UICONTROL Inicio]**.
+1. En el cuadro de diálogo, toque o haga clic **[!UICONTROL Continuar]**. El flujo de trabajo se ejecuta en todos los recursos de la colección.
 
 >[!MORELIKETHIS]
 >

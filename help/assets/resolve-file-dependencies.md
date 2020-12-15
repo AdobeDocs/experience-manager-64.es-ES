@@ -20,41 +20,41 @@ ht-degree: 40%
 
 # Resolución de dependencias de archivo {#resolving-file-dependencies}
 
-Las dependencias principales de archivo de modelo 3D, como archivos de mapa de textura, se resuelven automáticamente en la medida de lo posible. Para conseguir esta funcionalidad, AEM debe buscar en carpetas de Assets cercanas archivos con los mismos nombres que los que se encuentran en el archivo 3D. If one or more dependencies are unresolvable during the Creating preview processing stage, the asset&#39;s card displays the following red banner message in the **[!UICONTROL Card View]**:
+Las dependencias principales de archivo de modelo 3D, como archivos de mapa de textura, se resuelven automáticamente en la medida de lo posible. Para conseguir esta funcionalidad, AEM debe buscar en carpetas de Assets cercanas archivos con los mismos nombres que los que se encuentran en el archivo 3D. Si una o varias dependencias no se pueden resolver durante la etapa de procesamiento de la creación de previsualizaciones, la tarjeta del recurso muestra el siguiente mensaje de letrero rojo en la **[!UICONTROL Vista de tarjetas]**:
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 **Para resolver dependencias de archivo**:
 
-1. In the **[!UICONTROL Card View]**, hover the pointer over the **[!UICONTROL Unresolved Dependencies]** banner message on the card, then tap the **[!UICONTROL Exclamation Point]** icon.
+1. En la **[!UICONTROL Vista de tarjeta]**, pase el puntero sobre el mensaje de la pancarta **[!UICONTROL Dependencias no resueltas]** de la tarjeta y, a continuación, toque el icono **[!UICONTROL Signo de exclamación]**.
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
-1. On the **[!UICONTROL Metadata Properties]** page, tap the **[!UICONTROL Dependencies]** tab.
+1. En la página **[!UICONTROL Propiedades de metadatos]**, toque la ficha **[!UICONTROL Dependencias]**.
 
-   The files that AEM could not auto-resolve are listed under the **[!UICONTROL Original Paths]** column, in red.
+   Los archivos que AEM no se pudieron resolver automáticamente se muestran en la columna **[!UICONTROL Rutas originales]**, en rojo.
 
 1. Realice una o varias de las acciones siguientes:
 
    * **Busque y seleccione las dependencias**. (Esta opción da por hecho que ya ha cargado los archivos de dependencia).
 
-      1. Tap the **[!UICONTROL File Browse]** icon to the left of the red path.
-      1. On the **[!UICONTROL Select Content]** page, navigate to the missing file, then tap on the file&#39;s card to select it.
-      1. In the upper-left corner of the **[!UICONTROL Select Content]** page, tap **[!UICONTROL Close]** (X icon) to return to the **[!UICONTROL View Properties]** page.
+      1. Toque el icono **[!UICONTROL Examinar archivo]** a la izquierda de la ruta roja.
+      1. En la página **[!UICONTROL Seleccionar contenido]**, desplácese hasta el archivo que falta y toque la tarjeta del archivo para seleccionarlo.
+      1. En la esquina superior izquierda de la página **[!UICONTROL Seleccionar contenido]**, toque **[!UICONTROL Cerrar]** (icono X) para volver a la página **[!UICONTROL Propiedades de la Vista]**.
    * **Cargue las dependencias**. (Esta opción da por hecho que todavía no ha cargado los archivos no disponibles).
 
       1. Tenga en cuenta las rutas de acceso y los nombres de archivo no disponibles.
       1. Cerca de la esquina superior derecha de la página Propiedades, toque **[!UICONTROL Cerrar]**.
 
-   After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. El recurso recién cargado se muestra ahora correctamente como recurso al que se hace referencia.
+   Después de cargar los archivos, vuelva a la página **[!UICONTROL Propiedades de la Vista > Dependencias]**. El recurso recién cargado se muestra ahora correctamente como recurso al que se hace referencia.
 
    * **Ignore las dependencias**.
 
-      If a missing dependency is no longer needed, under the **[!UICONTROL Referenced Asset]** column, in the text field to the left of the missing file, type `n/a` so that AEM 3D ignores the file.
+      Si ya no necesita una dependencia que falta, en la columna **[!UICONTROL Recurso al que se hace referencia]**, en el campo de texto a la izquierda del archivo que falta, escriba `n/a` para que AEM 3D ignore el archivo.
 
 
 
-1. Near the upper-right corner of the **[!UICONTROL View Properties]** page, tap **[!UICONTROL Save]**.
+1. Cerca de la esquina superior derecha de la página **[!UICONTROL Propiedades de la Vista]**, toque **[!UICONTROL Guardar]**.
 1. Toque **[!UICONTROL Cerrar]****[!UICONTROL para volver a la vista de tarjeta]**.
 
    El recurso se vuelve a procesar automáticamente con las dependencias recién resueltas.

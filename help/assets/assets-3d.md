@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Working with AEM 3D assets {#working-with-d-assets}
+# Uso de AEM activos 3D {#working-with-d-assets}
 
 >[!IMPORTANT]
 >
@@ -30,18 +30,18 @@ Consulte también [Notas de la versión de AEM 3D](/help/release-notes/aem3d-rel
 
 Consulte también [Instalación y configuración de AEM 3D](install-config-3d.md).
 
-## Acerca de los modelos y las etapas en AEM 3D {#about-models-and-stages-in-aem-d}
+## Acerca de los modelos y las etapas de AEM 3D {#about-models-and-stages-in-aem-d}
 
 AEM 3D le permite realizar vistas y procesar modelos 3D estáticos independientes de alta calidad en entornos predefinidos denominados Fases. Básicamente, un escenario proporciona &quot;iluminación&quot; para la escena 3D y la configuración para el procesamiento en una aplicación nativa como Autodesk® Maya® o Autodesk 3ds Max®. Además, el escenario puede incluir, opcionalmente, cámaras predefinidas, fondos y geometría de plano de tierra.
 
-Los archivos 3D cargados que contienen luces se consideran un escenario. Puede revertir estos recursos para que sean objetos 3D simples si abre el recurso en la página de detalles del recurso. Toque Propiedades **[!UICONTROL de]** Vista y, a continuación, toque la ficha **[!UICONTROL Básico]** . En el encabezado Metadatos, en la lista desplegable Clase de recurso, seleccione un objeto **** 3D.
+Los archivos 3D cargados que contienen luces se consideran un escenario. Puede revertir estos recursos para que sean objetos 3D simples si abre el recurso en la página de detalles del recurso. Toque **[!UICONTROL Propiedades de Vista]** y luego toque la ficha **[!UICONTROL Básico]**. En el encabezado Metadatos, en la lista desplegable Clase de recurso, seleccione **[!UICONTROL objeto 3D]**.
 
 Cuando cree modelos 3D para su uso en AEM 3D, tenga en cuenta lo siguiente:
 
 * Los archivos del modelo 3D deben contener un solo objeto, sin fondos, planos de tierra, iluminación de escenas o cámaras.
 * Coloque el modelo sobre el plano de masa. Este posicionamiento es especialmente importante cuando se realiza una vista o representación con etapas que proporcionan un plano de tierra. Hay una configuración disponible (y habilitada de forma predeterminada) que hace que el objeto se mueva por encima del plano de tierra al obtener una vista previa o al procesarlo con una precisión rápida. Esta configuración no afecta al procesamiento con procesadores de terceros (por ejemplo, a través de Maya) y, por tanto, los objetos que no están ubicados por encima del plano de tierra pueden estar parcialmente ocultos.
 * Sitúe el modelo de modo que esté razonablemente centrado lateralmente alrededor del origen del sistema de coordenadas (0,0,0). De este modo, se garantiza una buena experiencia de visualización interactiva.
-* Aparte de los mapas de textura, se admiten las referencias de archivo externas. Por lo tanto, debe incrustar cualquier contenido referenciado en el archivo del modelo principal antes de cargarlo en AEM.
+* Aparte de los mapas de textura, se admiten las referencias de archivo externas. Por lo tanto, debe incrustar cualquier contenido al que se haga referencia en el archivo del modelo principal antes de cargarlo en AEM.
 
    Consulte [Acerca de la carga y el procesamiento de los recursos 3D en AEM](upload-processing-3d-assets.md).
 
@@ -49,7 +49,7 @@ Cuando cree modelos 3D para su uso en AEM 3D, tenga en cuenta lo siguiente:
 
 ## Archivos admitidos en AEM 3D {#supported-files-in-aem-d}
 
-Un recurso 3D típico tiene un archivo de modelo principal y ninguno o más archivos a los que se hace referencia. Los archivos a los que se hace referencia incluyen, por ejemplo, mapas de textura o imágenes **IBL (Iluminación basada en imágenes)** .
+Un recurso 3D típico tiene un archivo de modelo principal y ninguno o más archivos a los que se hace referencia. Los archivos a los que se hace referencia incluyen elementos como mapas de textura o imágenes **IBL (Iluminación basada en imágenes)**.
 
 ### Acerca del archivo de modelo 3D principal {#about-the-primary-d-model-file}
 
@@ -63,7 +63,7 @@ El fichero del modelo 3D principal contiene la geometría real del modelo 3D y l
 
    Formato de intercambio de archivos 3D de Autodesk; formatos binario y ASCII.
 
-   Al crear archivos FBX en aplicaciones de terceros, Adobe recomienda los siguientes ajustes de configuración (consulte la tabla siguiente). Esta configuración puede ayudarle a obtener los mejores resultados para los archivos 3D que desea utilizar en AEM. Los nombres de las opciones se toman del cuadro de diálogo Opciones **** de exportación de Autodesk Maya FBX.
+   Al crear archivos FBX en aplicaciones de terceros, Adobe recomienda los siguientes ajustes de configuración (consulte la tabla siguiente). Esta configuración puede ayudarle a obtener los mejores resultados para los archivos 3D que desea utilizar en AEM. Los nombres de las opciones se toman del cuadro de diálogo Opciones de exportación de **[!UICONTROL Autodesk Maya FBX]**.
 
 <table> 
  <tbody> 
@@ -89,11 +89,11 @@ El fichero del modelo 3D principal contiene la geometría real del modelo 3D y l
   </tr> 
   <tr> 
    <td>Cámaras</td> 
-   <td><p>Seleccione para las etapas <strong></strong>3D.</p> <p>Anule la selección de los modelos 3D.</p> </td> 
+   <td><p>Seleccione <strong>3D stage</strong>.</p> <p>Anule la selección de los modelos 3D.</p> </td> 
   </tr> 
   <tr> 
    <td>Luces</td> 
-   <td><p>Seleccione para las etapas <strong></strong>3D.</p> <p>Anule la selección para modelos <strong></strong>3D.</p> </td> 
+   <td><p>Seleccione <strong>3D stage</strong>.</p> <p>Anule la selección para <strong>modelos 3D</strong>.</p> </td> 
   </tr> 
   <tr> 
    <td>Unidades - Automático</td> 
@@ -105,11 +105,11 @@ El fichero del modelo 3D principal contiene la geometría real del modelo 3D y l
   </tr> 
   <tr> 
    <td>Incrustar medios</td> 
-   <td>Ambas opciones son compatibles. Si se selecciona incrustado, AEM 3D extrae el medio incrustado en una carpeta adyacente que tenga el mismo nombre que el archivo de modelo con <code>.fbm</code> anexo.</td> 
+   <td>Ambas opciones son compatibles. Si se selecciona incrustado, AEM 3D extrae el medio incrustado en una carpeta adyacente que tenga el mismo nombre que el archivo de modelo con <code>.fbm</code> anexado a él.</td> 
   </tr> 
   <tr> 
    <td>Formato de archivo FBX: Tipo</td> 
-   <td>Tanto <strong>binario </strong>como <strong>ASCII </strong>son compatibles.</td> 
+   <td>Tanto <strong>Binary </strong>como <strong>ASCII </strong>son compatibles.</td> 
   </tr> 
   <tr> 
    <td>Formato de archivo FBX: versión</td> 
@@ -122,13 +122,13 @@ Se admiten los siguientes formatos de archivo adicionales si Autodesk Maya está
 
 * Autodesk Maya
 
-   Formatos ASCII `.ma` y `.mb` binarios.
+   Formatos ASCII `.ma` y binario `.mb`.
 
 * `Jupiter Tesselation (ISO 14306-1).jt`.
 
    Formato de intercambio de datos CAD, colaboración y visualización de productos estándar del sector.
 
-### Compatibilidad con archivos de mapa de textura {#support-for-texture-map-files}
+### Compatibilidad con archivos de mapas de textura {#support-for-texture-map-files}
 
 Las definiciones de material en archivos de modelos 3D pueden incluir referencias a archivos de imagen externos que proporcionan mapas de textura. AEM 3D admite los siguientes tipos de archivos de mapas de textura:
 
@@ -142,11 +142,11 @@ Las definiciones de material en archivos de modelos 3D pueden incluir referencia
 
 Los materiales del archivo de modelo 3D principal pueden hacer referencia a otros tipos de mapas que AEM 3D ignora.
 
-### Imágenes de IBL (iluminación basada en imágenes) {#ibl-image-based-lighting-images}
+### Imágenes IBL (iluminación basada en imágenes) {#ibl-image-based-lighting-images}
 
 Un archivo de modelo 3D que define un escenario puede hacer referencia a una única imagen de entorno IBL. Actualmente, AEM 3D solo admite imágenes TIFF de 32 bits en formato de latitud/longitud para IBL difuso y para reflejos. También se admiten imágenes RGB de 8 bits para el fondo de escena esférica.
 
-See [About working with IBL stages](working-with-ibl-stages.md).
+Consulte [Acerca del trabajo con las etapas de IBL](working-with-ibl-stages.md).
 
 >[!NOTE]
 >
@@ -165,5 +165,5 @@ Consulte [Procesamiento de recursos 3D](rendering-3d-assets.md).
 
 ## Asignación de nombres a materiales en un archivo de modelo 3D principal {#naming-materials-in-a-primary-d-model-file}
 
-Una *superficie* se define como la superficie de un modelo 3D cubierto por el mismo material. Este material también proporciona el nombre de la superficie. Como tal, Adobe recomienda que asigne un nombre adecuado a los materiales incluidos en los archivos del modelo 3D principal. Por ejemplo, el uso de nombres específicos como &quot;Cuerpo&quot;, &quot;Ventanas&quot;, &quot;Neumáticos&quot; o &quot;Rims&quot; es preferible al uso de nombres vagos como &quot;Rojo&quot;, &quot;Cristal&quot;, &quot;Caucho&quot;, &quot;Aluminio&quot;.
+Una *superficie* se define como el área de superficie de un modelo 3D cubierto por el mismo material. Este material también proporciona el nombre de la superficie. Como tal, Adobe recomienda que asigne un nombre adecuado a los materiales incluidos en los archivos del modelo 3D principal. Por ejemplo, el uso de nombres específicos como &quot;Cuerpo&quot;, &quot;Ventanas&quot;, &quot;Neumáticos&quot; o &quot;Rims&quot; es preferible al uso de nombres vagos como &quot;Rojo&quot;, &quot;Cristal&quot;, &quot;Caucho&quot;, &quot;Aluminio&quot;.
 

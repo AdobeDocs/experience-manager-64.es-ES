@@ -24,8 +24,8 @@ Los escenarios son archivos de escena 3D ligeros que proporcionan el entorno de 
 
 >[!NOTE]
 >
->The **[!UICONTROL OBJ 3D]** format does not support lights. Por lo tanto, no se puede utilizar para proporcionar a escenarios AEM 3D.
+>El formato **[!UICONTROL OBJ 3D]** no admite luces. Por lo tanto, no se puede utilizar para proporcionar a escenarios AEM 3D.
 
-El formato de archivo del escenario determina qué procesador puede utilizar con dicho escenario. For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. Si tiene previsto utilizar únicamente el procesador Rapid Refine™ predeterminado, se acepta cualquier formato de archivo de escenario.
+El formato de archivo del escenario determina qué procesador puede utilizar con dicho escenario. Por ejemplo, si Autodesk® Maya® se utiliza para una representación de alta calidad, la etapa debe estar en formato `.ma` o `.mb`. Si tiene previsto utilizar únicamente el procesador Rapid Refine™ predeterminado, se acepta cualquier formato de archivo de escenario.
 
 Todos los ajustes de procesamiento en AEM 3D, excepto el tipo y tamaño de la imagen de salida, deben preconfigurarse y guardarse en el archivo del escenario antes de cargarlo en AEM.

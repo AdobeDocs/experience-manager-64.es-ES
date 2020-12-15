@@ -60,11 +60,11 @@ Los datos de ejemplo completados en la herramienta muestran la importancia de re
 
 Para grandes almacenes de datos, puede implementar un almacén de datos compartido a través de un almacén de datos de archivos compartidos en una unidad conectada a la red o a través de un almacén de datos S3. En este caso, las instancias individuales no necesitan mantener una copia de los binarios. Además, un almacén de datos compartido facilita la replicación sin binarios y ayuda a reducir el ancho de banda utilizado para replicar recursos para publicar entornos o descargar instancias.
 
-#### Use Cases {#use-cases}
+#### Casos de uso {#use-cases}
 
 El almacén de datos se puede compartir entre una instancia de autor principal y en espera para minimizar el tiempo que se tarda en actualizar la instancia en espera con los cambios realizados en la instancia principal. Adobe recomienda compartir el almacén de datos entre una instancia de autor principal y instancias de autor de descarga para reducir los gastos generales en la descarga del flujo de trabajo. También puede compartir el almacén de datos entre el autor y las instancias de publicación para minimizar el tráfico durante la replicación.
 
-#### Desventajas {#drawbacks}
+#### Inconvenientes {#drawbacks}
 
 Debido a algunos escollos, no se recomienda compartir un almacén de datos en todos los casos.
 
@@ -88,14 +88,14 @@ Un almacén de datos compartido requiere que los binarios se almacenen en una un
 
 La latencia en implementaciones S3 se introduce mediante los subprocesos de escritura en segundo plano. Los procedimientos de copia de seguridad deben tener en cuenta esta latencia y los procedimientos de descarga. Es posible que el recurso S3 no esté presente en S3 cuando inicio un trabajo de descarga. Además, los índices de Lucene pueden estar incompletos al realizar una copia de seguridad. Se aplica a cualquier archivo con distinción de tiempo escrito en el almacén de datos S3 y al que se acceda desde otra instancia.
 
-### Tienda de nodos/almacén de Documentos {#node-store-document-store}
+### Almacén de nodos/Tienda de Documentos {#node-store-document-store}
 
 Es difícil obtener cifras precisas de tamaño para un NodeStore o DocumentStore debido a los recursos que consumen los siguientes:
 
 * Metadatos del recurso
 * Versiones de recursos
 * Registros de auditoría
-* flujos de trabajo archivados y activos
+* Flujos de trabajo archivados y activos
 
 Dado que los binarios se almacenan en el almacén de datos, cada binario ocupa algún espacio. La mayoría de los repositorios tienen un tamaño inferior a 100 GB. Sin embargo, es posible que haya repositorios más grandes de hasta 1 TB de tamaño. Además, para realizar una compactación sin conexión, se necesita suficiente espacio libre en el volumen para reescribir el repositorio compactado junto con la versión compactada previamente. Una buena regla general es ajustar el tamaño del disco a 1,5 veces el tamaño esperado para el repositorio.
 
@@ -105,7 +105,7 @@ Para el repositorio, utilice discos SSD o discos con un nivel de IOPS bueno a 30
 
 ## Red {#network}
 
-AEM Assets tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá siendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en [AEM consideraciones de recursos para la experiencia del usuario, tamaño de instancia, evaluación del flujo de trabajo y topología](assets-network-considerations.md)de red.
+AEM Assets tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá siendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en [consideraciones de AEM recurso para la experiencia del usuario, tamaño de instancia, evaluación del flujo de trabajo y topología de red](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
@@ -121,7 +121,7 @@ Para ilustrar estas ineficiencias, Adobe probó el rendimiento del sistema media
 
 Al analizar el tiempo de ahorro promedio para los archivos a través de WebDAV, se descubrió que el rendimiento aumenta considerablemente a medida que el ancho de banda aumenta hasta el nivel de 5 a 10 Mbps. Por lo tanto, Adobe recomienda que cada usuario que acceda al sistema simultáneamente tenga al menos 10 Mbps de velocidad de carga y un ancho de banda de 5 a 10 Mbps.
 
-Para obtener más información, consulte [Resolución de problemas de AEM aplicación](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)de escritorio.
+Para obtener más información, consulte [Solución de problemas de AEM aplicación de escritorio](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Restricciones     {#limitations}
 
@@ -129,7 +129,7 @@ Al ajustar el tamaño de una implementación, es importante tener en cuenta las 
 
 El tamaño del archivo no es el único factor que contribuye a problemas de memoria insuficiente (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto cuando inicio AEM.
 
-Además, puede editar la propiedad de tamaño de umbral del `com.day.cq.dam.commons.handler.StandardImageHandler` componente en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
+Además, puede editar la propiedad de tamaño de umbral del componente `com.day.cq.dam.commons.handler.StandardImageHandler` en Configuration Manager para utilizar un archivo temporal intermedio bueno que no sea cero.
 
 ## Número máximo de recursos {#maximum-number-of-assets}
 
@@ -145,4 +145,4 @@ Es difícil estimar con precisión el tamaño del archivo TIFF admitido de forma
 
 ## Tamaño de los recursos {#size-of-assets}
 
-De forma predeterminada, AEM permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)muy grandes.
+De forma predeterminada, AEM permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

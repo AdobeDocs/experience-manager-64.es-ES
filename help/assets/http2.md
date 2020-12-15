@@ -1,6 +1,6 @@
 ---
-title: Envío de contenido HTTP2
-seo-title: Envío de contenido HTTP2
+title: ENVÍO de contenido HTTP2
+seo-title: ENVÍO de contenido HTTP2
 description: HTTP/2 mejora la forma en que se comunican los exploradores y los servidores, lo que permite una transferencia de información más rápida y, al mismo tiempo, reduce la cantidad de potencia de procesamiento necesaria.
 seo-description: HTTP/2 mejora la forma en que se comunican los exploradores y los servidores, lo que permite una transferencia de información más rápida y, al mismo tiempo, reduce la cantidad de potencia de procesamiento necesaria.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HTTP2 Delivery of Content {#http-delivery-of-content}
+# ENVÍO HTTP2 del contenido {#http-delivery-of-content}
 
 Adobe está emocionado de anunciar la disponibilidad del envío de contenido HTTP/2 con el beneficio general de mejorar el rendimiento.
 
@@ -32,7 +32,7 @@ El siguiente sitio web describe HTTP/2 y sus beneficios de una manera breve y si
 
 ## ¿Cuáles son las ventajas clave del cambio a HTTP/2 para el envío de contenido? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-La mejora del rendimiento varía ampliamente en función de factores como el código del sitio web, el uso de Dynamic Media, el dispositivo, la pantalla y la ubicación del consumidor, etc.
+La mejora del rendimiento varía ampliamente en función de factores como el código de su sitio web, el uso de Dynamic Media, el dispositivo del consumidor, la pantalla y la ubicación, etc.
 
 Las propias pruebas de Adobe dieron los siguientes resultados:
 
@@ -55,11 +55,11 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
    Si no tiene un dominio dedicado, Adobe programará su transición a HTTP/2 en 2018.
 
-## ¿Cuál es el proceso para activar HTTP/2 en mi cuenta de Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## ¿Cuál es el proceso para habilitar HTTP/2 en mi cuenta de Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 Debe iniciar la solicitud para cambiar a HTTP/2; no se hace automáticamente por usted.
 
-1. Inicie una solicitud de asistencia técnica para cambiar a HTTP2. Consulte [Acceso al portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)de asistencia técnica de AEM.
+1. Inicie una solicitud de asistencia técnica para cambiar a HTTP2. Consulte [Acceso al portal de soporte de AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Proporcione la siguiente información en su solicitud de asistencia:
 

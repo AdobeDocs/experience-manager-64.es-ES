@@ -39,15 +39,15 @@ Se pueden configurar los siguientes eventos para que se registren:
 * Subrecurso actualizado (SUBASSET_UPDATED)
 * Subrecurso eliminado (SUBASSET_REMOVED)
 
-## Configuración del registro de Eventos AEM Assets {#configuring-aem-assets-events-recording}
+## Configuración del registro de Eventos de AEM Assets {#configuring-aem-assets-events-recording}
 
-La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso al ajuste de la grabadora de Evento de AEM Assets. Para configurar el grabador de AEM Assets Evento, siga estos pasos:
+La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso al ajuste del grabador de Evento de AEM Assets. Para configurar el grabador de AEM Assets Evento, siga estos pasos:
 
-1. Navegar a la consola **[!UICONTROL Web]**
+1. Vaya a la **[!UICONTROL consola web]**
 
 1. Haga clic en **[!UICONTROL Configuración]**.
 
-1. Doble haga clic en **[!UICONTROL Día de CQ DAM Evento Grabador]**.
+1. Haga clic en el doble **[!UICONTROL Grabador de Eventos CQ DAM]**.
 
 1. Marque **[!UICONTROL Habilita este servicio]**.
 
@@ -55,6 +55,6 @@ La consola [](/help/sites-deploying/configuring-osgi.md) web proporciona acceso 
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-## Leer eventos grabados {#reading-recorded-events}
+## Leyendo eventos registrados {#reading-recorded-events}
 
-Los eventos registrados se almacenan como actividades. Puede leerlos mediante programación mediante la API [de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)Activity Manager.
+Los eventos registrados se almacenan como actividades. Puede leerlos mediante programación mediante la [API de Activity Manager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

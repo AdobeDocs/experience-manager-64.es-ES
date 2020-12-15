@@ -31,10 +31,10 @@ Si realiza las modificaciones posteriores en el recurso o la carpeta original en
 
    Para publicar las carpetas seleccionadas en Brand Portal, haga una de las acciones siguientes:
 
-   * En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
    * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-3. A continuación, en la **[!UICONTROL acción]** , seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]** , seleccione **[!UICONTROL Ahora]**. Puntee **[!UICONTROL Siguiente].**
+3. A continuación, en la **[!UICONTROL Acción]** seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Toque **[!UICONTROL Siguiente].**
 4. En **[!UICONTROL Ámbito]**, confirme la selección y toque **[!UICONTROL Publicar en Brand Portal]**.
 
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
@@ -44,12 +44,12 @@ Si realiza las modificaciones posteriores en el recurso o la carpeta original en
    Para programar el flujo de trabajo de publicación en Brand Portal de carpetas de recursos para una fecha u hora posterior:
 
    1. Una vez que haya seleccionado los recursos y las carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
-   2. En la página **[!UICONTROL Administrar publicación]** , seleccione **[!UICONTROL Publicar en Brand Portal]** en **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
+   2. En la página **[!UICONTROL Administrar publicación]**, seleccione **[!UICONTROL Publicar en portal de marca]** en **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Puntee **[!UICONTROL Siguiente]**.
-   4. Confirme la selección en **[!UICONTROL Ámbito]**. Puntee **[!UICONTROL Siguiente]**.
+   3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque **[!UICONTROL Siguiente]**.
+   4. Confirme la selección en **[!UICONTROL Ámbito]**. Toque **[!UICONTROL Siguiente]**.
    5. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Toque **[!UICONTROL Publicar posteriormente]**.
 
       ![manageschedulepub](assets/manageschedulepub.png)
@@ -70,9 +70,9 @@ Tiene la opción de cancelar la publicación de carpetas desde Brand Portal ráp
 
    Para cancelar rápidamente la publicación de la carpeta deseada desde Brand Portal:
 
-   1. En la página **[!UICONTROL Administrar publicación]** , en **[!UICONTROL Acción]** , seleccione **[!UICONTROL Cancelar publicación en Brand Portal]** y, en **[!UICONTROL Programación]** , seleccione **[!UICONTROL Ahora]**.
-   2. Tap/ click **[!UICONTROL Next].**
-   3. Dentro del **[!UICONTROL ámbito]**, confirme la selección y toque **[!UICONTROL Cancelar publicación desde Brand Portal]**.
+   1. En la página **[!UICONTROL Administrar publicación]**, en **[!UICONTROL Acción]** seleccione **[!UICONTROL Cancelar publicación en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
+   2. Toque o haga clic **[!UICONTROL Siguiente].**
+   3. Dentro de **[!UICONTROL Ámbito]**, confirme la selección y toque **[!UICONTROL Cancelar la publicación desde Brand Portal]**.
 
    ![confirmar-cancelar publicación](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ Tiene la opción de cancelar la publicación de carpetas desde Brand Portal ráp
 
    Para programar la publicación de una carpeta desde Brand Portal a una fecha y hora posteriores:
 
-   1. En la página **[!UICONTROL Administrar publicación]** , en **[!UICONTROL Acción]** , seleccione **[!UICONTROL Cancelar publicación en Brand Portal]** y, en **[!UICONTROL Programación]** , seleccione **[!UICONTROL Más adelante].**
-   2. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Puntee **[!UICONTROL Siguiente]**.
-   3. En **[!UICONTROL Ámbito]**, confirme la selección y toque **[!UICONTROL Siguiente]**.
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. Toque **[!UICONTROL Cancelar la publicación posteriormente].**
+   1. En la página **[!UICONTROL Administrar publicación]**, en **[!UICONTROL Acción]** seleccione **[!UICONTROL Cancelar publicación en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Más adelante].**.
+   2. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque **[!UICONTROL Siguiente]**.
+   3. Dentro de **[!UICONTROL Ámbito]**, confirme la selección y toque **[!UICONTROL Siguiente]**.
+   4. Especifique un **[!UICONTROL título de flujo de trabajo]** en **[!UICONTROL Flujos de trabajo]**. Toque **[!UICONTROL Cancelar la publicación posteriormente].**
 
       ![flujos de trabajo sin publicar](assets/unpublishworkflows.png)
 

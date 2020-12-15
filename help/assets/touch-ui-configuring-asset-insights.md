@@ -29,14 +29,14 @@ Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso de
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Pulse o haga clic en **[!UICONTROL Autenticar]**.
-1. Después de autenticar AEM las credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde donde desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Después de AEM configurar el grupo de informes, toque o haga clic en **[!UICONTROL Finalizado]**.
+1. Después de AEM autenticar las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Después de AEM configure el grupo de informes, toque o haga clic **[!UICONTROL Listo]**.
 
 ## Rastreador de páginas {#page-tracker}
 
-Después de configurar la cuenta de Analytics, se genera el código de rastreador de páginas. Para permitir que Assets Insights rastree AEM recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de AEM Assets para generar el código del rastreador de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas](touch-ui-using-page-tracker.md)web.
+Después de configurar la cuenta de Analytics, se genera el código de rastreador de páginas. Para permitir que Assets Insights rastree AEM recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de AEM Assets para generar el código del rastreador de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas y el código incrustado en páginas web](touch-ui-using-page-tracker.md).
 
-1. In AEM, click the **[!UICONTROL Tools > Assets]**.
+1. En AEM, haga clic en **[!UICONTROL Herramientas > Recursos]**.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 

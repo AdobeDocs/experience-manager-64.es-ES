@@ -11,17 +11,17 @@ ht-degree: 5%
 ---
 
 
-# Procesar recursos Uso de controladores y flujos de trabajo de medios {#processing-assets-using-media-handlers-and-workflows}
+# Procesar recursos con controladores de medios y flujos de trabajo {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets proporciona un conjunto de flujos de trabajo predeterminados y controladores de medios para procesar los recursos. Un flujo de trabajo define una tarea de procesamiento y administración de recursos típica y, a continuación, delega las tareas específicas a los controladores de medios, como la generación de miniaturas o la extracción de metadatos.
 
-Se puede definir un flujo de trabajo que se ejecute automáticamente cuando se cargue en el servidor un recurso de un tipo o formato concreto. Los pasos de procesamiento se definen como una serie de controladores de medios de AEM Assets. AEM proporciona algunos controladores [integrados,](#default-media-handlers) y otros adicionales se pueden [personalizar, desarrollar](#creating-a-new-media-handler) o definir delegando el proceso en una herramienta [de línea de](#command-line-based-media-handler)comandos.
+Se puede definir un flujo de trabajo que se ejecute automáticamente cuando se cargue en el servidor un recurso de un tipo o formato concreto. Los pasos de procesamiento se definen como una serie de controladores de medios de AEM Assets. AEM proporciona algunos [controladores integrados,](#default-media-handlers) y otros adicionales pueden [desarrollarse de forma personalizada](#creating-a-new-media-handler) o definirse delegando el proceso en una [herramienta de línea de comandos](#command-line-based-media-handler).
 
 Los controladores de medios son servicios dentro de AEM Assets que realizan acciones específicas en los recursos. Por ejemplo, cuando se carga un archivo de audio MP3 en AEM, un flujo de trabajo activa un controlador MP3 que extrae los metadatos y genera una miniatura. Los controladores de medios generalmente se utilizan en combinación con flujos de trabajo. La mayoría de los tipos MIME comunes son compatibles con AEM. Se pueden realizar tareas específicas en los recursos ampliando/creando flujos de trabajo, ampliando/creando controladores de medios o deshabilitando/habilitando controladores de medios.
 
 >[!NOTE]
 >
->Consulte la página Formatos [admitidos de](assets-formats.md) Recursos para obtener una descripción de todos los formatos admitidos por AEM Assets, así como de las funciones admitidas para cada formato.
+>Consulte la página [Formatos admitidos por los recursos](assets-formats.md) para obtener una descripción de todos los formatos admitidos por AEM Assets, así como de las características admitidas para cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
@@ -49,17 +49,17 @@ Todos los controladores realizan las siguientes tareas:
 
 Es posible realizar la vista de los controladores de medios activos:
 
-1. In your browser, navigate to `http://localhost:4502/system/console/components`.
+1. En el explorador, navegue a `http://localhost:4502/system/console/components`.
 1. Haga clic en el vínculo `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Se muestra una lista con todos los controladores de medios activos. Por ejemplo:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Usar controladores de medios en flujos de trabajo para realizar tareas en recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Utilice controladores de medios en flujos de trabajo para realizar tareas en Recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Los controladores de medios son servicios que generalmente se utilizan en combinación con flujos de trabajo.
 
-AEM tiene algunos flujos de trabajo predeterminados para procesar los recursos. Para vistas, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]** : los títulos de flujo de trabajo que entran en inicio con AEM Assets son los específicos de los recursos.
+AEM tiene algunos flujos de trabajo predeterminados para procesar los recursos. Para vistas, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]**: los títulos de flujo de trabajo que entran en inicio con AEM Assets son los específicos de los recursos.
 
 Los flujos de trabajo existentes se pueden ampliar y se pueden crear nuevos para procesar los recursos según requisitos específicos.
 
@@ -71,10 +71,10 @@ Los controladores de medios pueden deshabilitarse o habilitarse a través de la 
 
 Para habilitar/deshabilitar un controlador de medios:
 
-1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
+1. En el explorador, navegue a `https://<host>:<port>/system/console/components`.
 1. Haga clic en **[!UICONTROL Deshabilitar]** junto al nombre del controlador de medios. Por ejemplo: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. Actualice la página: se muestra un icono junto al controlador de medios que indica que está deshabilitado.
-1. Para habilitar el controlador de medios, haga clic en **[!UICONTROL Habilitar]** junto al nombre del controlador de medios.
+1. Para habilitar el controlador de medios, haga clic en **[!UICONTROL Habilitar]** al lado del nombre del controlador de medios.
 
 ### Creación de un nuevo controlador de medios {#creating-a-new-media-handler}
 
@@ -82,9 +82,9 @@ Para admitir un nuevo tipo de medio o ejecutar tareas específicas en un recurso
 
 #### Clases e interfaces importantes {#important-classes-and-interfaces}
 
-La mejor manera de inicio de una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la `com.day.cq.dam.core.AbstractAssetHandler` clase.
+La mejor manera de inicio de una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la clase `com.day.cq.dam.core.AbstractAssetHandler`.
 
-Esta clase ya proporciona un descriptor de servicio abstracto. Si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador inherit en `true`.
+Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador inherit en `true`.
 
 Implemente los siguientes métodos:
 
@@ -98,7 +98,7 @@ Esta es un ejemplo de plantilla:
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para Añadir un nuevo tipo de MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para añadir un nuevo tipo de MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
@@ -117,7 +117,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para Añadir un nuevo tipo de MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para añadir un nuevo tipo de MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
 
@@ -127,27 +127,27 @@ En esta sección, creará un controlador de texto específico que genere miniatu
 
 Proceda de la siguiente manera:
 
-Consulte Herramientas [de](../sites-developing/dev-tools.md) desarrollo para instalar y configurar Eclipse con un complemento Maven y para configurar las dependencias necesarias para el proyecto Maven.
+Consulte [Herramientas de desarrollo](../sites-developing/dev-tools.md) para instalar y configurar Eclipse con un complemento Maven y para configurar las dependencias necesarias para el proyecto Maven.
 
 Después de realizar el siguiente procedimiento, al cargar un archivo de texto en AEM, se extraen los metadatos del archivo y se generan dos miniaturas con una marca de agua.
 
-1. En Eclipse, cree un proyecto `myBundle` Maven:
+1. En Eclipse, cree `myBundle` proyecto Maven:
 
    1. En la barra de menús, haga clic en **[!UICONTROL Archivo > Nuevo > Otro]**.
    1. En el cuadro de diálogo, expanda la carpeta Maven, seleccione Maven Project y haga clic en **[!UICONTROL Siguiente]**.
-   1. Marque la casilla Crear un proyecto simple y la casilla Usar ubicaciones de espacio de trabajo predeterminadas y, a continuación, haga clic en **[!UICONTROL Siguiente]**.
+   1. Marque la casilla Crear un proyecto simple y la casilla Usar ubicaciones de espacio de trabajo predeterminadas, luego haga clic en **[!UICONTROL Siguiente]**.
    1. Defina el proyecto Maven:
 
       * Id Del Grupo: com.day.cq5.myhandler
       * ID del artefacto: myBundle
       * Nombre: Mi paquete AEM
       * Descripción: Este es mi paquete AEM
-   1. Click **[!UICONTROL Finish]**.
+   1. Haga clic en **[!UICONTROL Finalizar]**.
 
 
 1. Establezca el compilador de Java en la versión 1.5:
 
-   1. Haga clic con el botón secundario en el `myBundle` proyecto y seleccione Propiedades.
+   1. Haga clic con el botón derecho en el proyecto `myBundle` y seleccione Propiedades.
    1. Seleccione Java Compiler y defina las siguientes propiedades en 1.5:
 
       * Nivel de cumplimiento del compilador
@@ -276,13 +276,13 @@ Después de realizar el siguiente procedimiento, al cargar un archivo de texto e
 1. Cree el paquete `com.day.cq5.myhandler` que contiene las clases de Java en `myBundle/src/main/java`:
 
    1. En myBundle, haga clic con el botón derecho `src/main/java`, seleccione Nuevo y, a continuación, Empaquetar.
-   1. Asígnele un nombre `com.day.cq5.myhandler` y haga clic en Finalizar.
+   1. Asígnele el nombre `com.day.cq5.myhandler` y haga clic en Finalizar.
 
 1. Cree la clase Java `MyHandler`:
 
-   1. En Eclipse, en `myBundle/src/main/java`, haga clic con el botón derecho en el `com.day.cq5.myhandler` paquete, seleccione Nuevo y, a continuación, Clase.
+   1. En Eclipse, en `myBundle/src/main/java`, haga clic con el botón derecho en el paquete `com.day.cq5.myhandler`, seleccione Nuevo y, a continuación, Clase.
    1. En la ventana de diálogo, asigne un nombre a la clase Java MyHandler y haga clic en Finalizar. Eclipse crea y abre el archivo MyHandler.java.
-   1. En `MyHandler.java` sustituya el código existente por el siguiente y, a continuación, guarde los cambios:
+   1. En `MyHandler.java` reemplace el código existente con lo siguiente y, a continuación, guarde los cambios:
 
    ```java
    package com.day.cq5.myhandler; 
@@ -426,12 +426,12 @@ Después de realizar el siguiente procedimiento, al cargar un archivo de texto e
 
 1. Compile la clase Java y cree el paquete:
 
-   1. Haga clic con el botón secundario en el proyecto myBundle, seleccione **[!UICONTROL Ejecutar como]** y, a continuación, **[!UICONTROL Maven Install]**.
+   1. Haga clic con el botón secundario en el proyecto myBundle, seleccione **[!UICONTROL Ejecutar como]** y, a continuación, **[!UICONTROL Instalación de Maven]**.
    1. El paquete `myBundle-0.0.1-SNAPSHOT.jar` (que contiene la clase compilada) se crea en `myBundle/target`.
 
 1. En el Explorador de CRX, cree un nuevo nodo en `/apps/myApp`. Nombre = `install`, Tipo = `nt:folder`.
 1. Copie el paquete `myBundle-0.0.1-SNAPSHOT.jar` y guárdelo en `/apps/myApp/install` (por ejemplo, con WebDAV). El nuevo controlador de texto ahora está activo en AEM.
-1. En el navegador, abra la consola de gestión web Apache Felix. Seleccione la ficha Componentes y desactive el controlador de texto predeterminado `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. En el navegador, abra la consola de gestión web Apache Felix. Seleccione la ficha Componentes y deshabilite el controlador de texto predeterminado `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Controlador de medios basado en línea de comandos {#command-line-based-media-handler}
 
@@ -442,13 +442,13 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en A
 * Transformación de EPS y AI mediante [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/)
 * Transcodificación de vídeo FLV mediante [FFmpeg](https://ffmpeg.org/)
 * Codificación MP3 con [LAME](http://lame.sourceforge.net/)
-* Procesamiento de audio mediante [SOX](http://sox.sourceforge.net/)
+* Procesamiento de audio con [SOX](http://sox.sourceforge.net/)
 
 >[!NOTE]
 >
 >En sistemas que no son de Windows, la herramienta FFMpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una sola comilla (&#39;) en el nombre de archivo. Si el nombre del archivo de vídeo incluye una comilla simple, elimínelo antes de cargarlo a AEM.
 
-El `CommandLineProcess` proceso realiza las siguientes operaciones en el orden en que aparecen:
+El proceso `CommandLineProcess` realiza las siguientes operaciones en el orden en que aparecen:
 
 * Filtros el archivo según tipos de MIME específicos, si se especifica.
 * Crea un directorio temporal en el disco que aloja el servidor AEM.
@@ -464,7 +464,7 @@ En el siguiente ejemplo se muestra cómo configurar el paso del proceso de la l�
 
 Para ello, utilice ImageMagick. Instale ImageMagick en el disco que aloja el servidor AEM:
 
-1. Instalar ImageMagick. Consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/download.php) para obtener más información.
+1. Instalar ImageMagick. Consulte la [documentación de ImageMagick](https://www.imagemagick.org/script/download.php) para obtener más información.
 1. Configure la herramienta para que pueda ejecutar la conversión en la línea de comandos.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
@@ -480,9 +480,9 @@ Para ello, utilice ImageMagick. Instale ImageMagick en el disco que aloja el ser
 
 A continuación, agregue el paso del proceso de la línea de comandos al flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**:
 
-1. Vaya a la consola **[!UICONTROL Flujo de trabajo]** .
-1. En la ficha **[!UICONTROL Modelos]** , edite el modelo **[!UICONTROL DAM Update Asset]** .
-1. Cambie la configuración de la representación **[!UICONTROL habilitada para]** Web de la siguiente manera:
+1. Vaya a la consola **[!UICONTROL Workflow]**.
+1. En la ficha **[!UICONTROL Modelos]**, edite el modelo **[!UICONTROL Recurso de actualización de DAM]**.
+1. Cambie la configuración del paso **[!UICONTROL Representación habilitada para Web]** de la siguiente manera:
 
    `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
@@ -490,34 +490,34 @@ A continuación, agregue el paso del proceso de la línea de comandos al flujo d
 
 Para probar el flujo de trabajo modificado, agregue un recurso a `/content/dam`.
 
-1. En el sistema de archivos, obtenga una imagen TIFF de su elección. Cambie su nombre `myImage.tiff` y cópielo en `/content/dam`, por ejemplo, mediante WebDAV.
-1. Vaya a la consola **[!UICONTROL CQ5 DAM]** , por ejemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
-1. Abra el recurso `myImage.tiff` y compruebe que se hayan creado la imagen volteada y las tres miniaturas.
+1. En el sistema de archivos, obtenga una imagen TIFF de su elección. Cambie su nombre a `myImage.tiff` y cópielo a `/content/dam`, por ejemplo mediante WebDAV.
+1. Vaya a la consola **[!UICONTROL CQ5 DAM]**, por ejemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Abra el recurso `myImage.tiff` y verifique que se hayan creado la imagen volteada y las tres miniaturas.
 
 #### Configurar el paso del proceso CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-En esta sección se describe cómo establecer los **[!UICONTROL argumentos de proceso]** de `CommandLineProcess`. Separe los valores de los argumentos [!UICONTROL de] proceso con una coma y no inicio un valor con un espacio en blanco.
+En esta sección se describe cómo establecer los **[!UICONTROL argumentos de proceso]** de `CommandLineProcess`. Separe los valores de [!UICONTROL Argumentos de proceso] mediante una coma y no cree un inicio con un espacio en blanco.
 
 | Argument-Format | Descripción |
 |---|---|
 | mime:&lt;tipo-mime> | Argumento opcional. El proceso se aplica si el recurso tiene el mismo tipo MIME que el argumento. <br>Se pueden definir varios tipos de MIME. |
 | tn:&lt;anchura>:&lt;altura> | Argumento opcional. El proceso crea una miniatura con las dimensiones definidas en el argumento. <br>Se pueden definir varias miniaturas. |
-| cmd: &lt;comando> | Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos. Sólo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`nombre del archivo de entrada, por ejemplo original.jpg <br> `${file}`:: nombre completo de ruta del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`:: directorio del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original <br>`${extension}`: extensión del archivo de entrada, por ejemplo jpg |
+| cmd: &lt;comando> | Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos. Sólo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}` nombre del archivo de entrada, por ejemplo original.jpg  <br> `${file}`:: nombre completo de ruta del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`:: directorio del archivo de entrada, por ejemplo /tmp/cqdam0816.tmp  <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original  <br>`${extension}`: extensión del archivo de entrada, por ejemplo jpg |
 
-Por ejemplo, si ImageMagick está instalado en el disco que aloja el servidor de AEM y crea un paso de proceso mediante **CommandLineProcess** como Implementación y los siguientes valores como Argumentos **de** proceso:
+Por ejemplo, si ImageMagick está instalado en el disco que aloja el servidor AEM y crea un paso de proceso utilizando **CommandLineProcess** como Implementación y los siguientes valores como **Argumentos de proceso**:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 a continuación, cuando se ejecuta el flujo de trabajo, el paso solo se aplica a los recursos que tienen tipo mime/gif o mime:image/tiff, crea una imagen al revés del original, la convierte en .jpg y crea tres miniaturas con las dimensiones siguientes: 140 x 100, 48 x 48 y 10 x 250.
 
-Utilice los siguientes argumentos [!UICONTROL de proceso] para crear las tres miniaturas estándar con ImageMagick:
+Utilice los siguientes [!UICONTROL Argumentos de proceso] para crear las tres miniaturas estándar con ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Utilice los siguientes argumentos [!UICONTROL de proceso] para crear la representación con web habilitada mediante ImageMagick:
+Utilice los siguientes [!UICONTROL Argumentos de proceso] para crear la representación con la Web habilitada mediante ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->El `CommandLineProcess` paso solo se aplica a Recursos (nodos de tipo `dam:Asset`) o descendientes de un recurso.
+>El paso `CommandLineProcess` sólo se aplica a los recursos (nodos de tipo `dam:Asset`) o descendientes de un recurso.

@@ -24,21 +24,21 @@ ht-degree: 10%
 >
 >Algunas funciones de fragmento de contenido requieren la aplicación de [AEM 6.4 Service Pack 2 (6.4.2.0) o posterior](/help/release-notes/sp-release-notes.md).
 
-## Edición de propiedades / metadatos {#editing-properties-meta-data}
+## Edición de propiedades/metadatos {#editing-properties-meta-data}
 
 Puede vista y edición de los metadatos (propiedades) de los fragmentos de contenido:
 
-1. En la consola **[!UICONTROL Recursos]** , navegue a la ubicación del fragmento de contenido.
+1. En la consola **[!UICONTROL Assets]** navegue a la ubicación del fragmento de contenido.
 1. O bien:
 
-   * Seleccione Propiedades de [Vista para abrir los cuadros de diálogo](managing-assets-touch-ui.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
-   * Abra el fragmento de [contenido para editar](content-fragments-managing.md#opening-the-fragment-editor)y, a continuación, seleccione **[!UICONTROL Metadatos]** en el panel lateral.
+   * Seleccione [Propiedades de Vista para abrir los cuadros de diálogo](managing-assets-touch-ui.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
+   * Abra el fragmento de contenido [para editar](content-fragments-managing.md#opening-the-fragment-editor) y, a continuación, seleccione **[!UICONTROL Metadatos]** en el panel lateral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. La ficha **[!UICONTROL Básico]** proporciona opciones que puede editar o vista:
+1. La ficha **[!UICONTROL Basic]** proporciona opciones que puede editar o vista:
 
-   * Miniatura, para la cual puede **cargar la imagen**
+   * Miniatura, para la cual puede **Cargar imagen**
    * **Título**
    * **Descripción**
    * **Etiquetas**

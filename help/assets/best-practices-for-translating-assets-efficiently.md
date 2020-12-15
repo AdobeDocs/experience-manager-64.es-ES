@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Prácticas recomendadas para traducir recursos de forma eficaz {#best-practices-for-translating-assets-efficiently}
+# Prácticas recomendadas para traducir recursos de manera eficiente {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager (AEM) Assets admite flujos de trabajo multilingües para traducir binarios, metadatos y etiquetas para recursos digitales en varias configuraciones regionales y administrar los recursos traducidos. Para obtener más información, consulte Recursos [multilingües](multilingual-assets.md).
+Adobe Experience Manager (AEM) Assets admite flujos de trabajo multilingües para traducir binarios, metadatos y etiquetas para recursos digitales en varias configuraciones regionales y administrar los recursos traducidos. Para obtener más información, consulte [Recursos multilingües](multilingual-assets.md).
 
-Para una administración eficiente de los recursos a fin de garantizar que las distintas versiones traducidas permanezcan sincronizadas, cree copias [de](preparing-assets-for-translation.md) idioma de los recursos antes de ejecutar flujos de trabajo de traducción.
+Para una administración eficiente de los recursos a fin de garantizar que las distintas versiones traducidas permanezcan sincronizadas, cree [copias de idioma](preparing-assets-for-translation.md) de los recursos antes de ejecutar flujos de trabajo de traducción.
 
 Una copia de idioma de un recurso o un grupo de recursos es un elemento secundario de idioma (o una versión de los recursos en un idioma de dominio) con una jerarquía de contenido similar.
 
@@ -32,18 +32,18 @@ También puede realizar algunos cambios en la configuración de un par de flujos
    * [Configuración del almacén de datos de archivos](/help/sites-deploying/data-store-config.md)
    * [Configuración del almacén de datos Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Deshabilitar el flujo de trabajo de [reescritura de metadatos](/help/sites-administering/workflow-offloader.md#disable-offloading) DAM
+1. Deshabilitar el flujo de trabajo [reescritura de metadatos de DAM](/help/sites-administering/workflow-offloader.md#disable-offloading)
 
-   Como indica el nombre, el flujo de trabajo de reescritura *de metadatos* DAM vuelve a escribir los metadatos en el archivo binario. Como los metadatos cambian después de la traducción, volver a escribirlos en el archivo binario genera un binario diferente para una copia de idioma.
+   Como indica el nombre, el flujo de trabajo *reescritura de metadatos DAM* vuelve a escribir los metadatos en el archivo binario. Como los metadatos cambian después de la traducción, volver a escribirlos en el archivo binario genera un binario diferente para una copia de idioma.
 
    >[!NOTE]
    >
-   >Al desactivar el flujo de trabajo de *reescritura de metadatos* DAM, se desactiva la reescritura de metadatos XMP en los binarios de recursos. En consecuencia, los cambios futuros en los metadatos ya no se guardan dentro de los recursos. Evalúe las consecuencias antes de desactivar este flujo de trabajo.
+   >Al deshabilitar el flujo de trabajo *Reescritura de metadatos de DAM* se desactiva la reescritura de metadatos XMP en los binarios de recursos. En consecuencia, los cambios futuros en los metadatos ya no se guardan dentro de los recursos. Evalúe las consecuencias antes de desactivar este flujo de trabajo.
 
-1. Habilite el flujo de trabajo *Establecer fecha* de última modificación.
+1. Habilite el flujo de trabajo *Establecer fecha de la última modificación*.
 
-   El flujo de trabajo de *reescritura de metadatos* DAM configura la fecha de la última modificación de un recurso. Como este flujo de trabajo se desactiva en el paso 2, AEM Assets ya no puede mantener actualizada la última fecha de modificación de los recursos. Por lo tanto, habilite el flujo de trabajo *Establecer fecha* de última modificación para garantizar que las últimas fechas de modificación de los recursos estén actualizadas. Los recursos con fechas de última modificación desactualizadas pueden provocar errores.
+   El flujo de trabajo *reescritura de metadatos de DAM* configura la fecha de la última modificación de un recurso. Como este flujo de trabajo se desactiva en el paso 2, AEM Assets ya no puede mantener actualizada la última fecha de modificación de los recursos. Por lo tanto, habilite el flujo de trabajo *Establecer fecha de última modificación* para garantizar que las últimas fechas modificadas de los recursos estén actualizadas. Los recursos con fechas de última modificación desactualizadas pueden provocar errores.
 
-1. [Configure el marco](/help/sites-administering/tc-tic.md) de integración de traducción para dejar de traducir los binarios de recursos. Anule la selección de la opción &quot;Traducir recursos&quot; en la ficha Recursos para detener la traducción de los binarios de recursos.
-1. Traduzca metadatos y etiquetas de recursos mediante flujos de trabajo [de recursos](multilingual-assets.md)multilingües.
+1. [Configure el ](/help/sites-administering/tc-tic.md) marco de integración de traducción para dejar de traducir los binarios de recursos. Anule la selección de la opción &quot;Traducir recursos&quot; en la ficha Recursos para detener la traducción de los binarios de recursos.
+1. Traduzca las etiquetas y metadatos de los recursos mediante [flujos de trabajo de recursos multilingües](multilingual-assets.md).
 

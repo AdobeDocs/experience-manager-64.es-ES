@@ -24,7 +24,7 @@ ht-degree: 4%
 >
 >Algunas funciones de fragmento de contenido requieren la aplicación de [AEM 6.4 Service Pack 2 (6.4.2.0) o posterior](/help/release-notes/sp-release-notes.md).
 
-Cuando se [crea](content-fragments-variations.md#authoring-your-content)contenido, el editor de fragmentos de contenido utiliza la sintaxis de *reducción* para permitir escribir contenido fácilmente:
+Cuando se [está creando](content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *markdown* para permitirle escribir contenido fácilmente:
 
 ![editor de marcas](/help/assets/assets/cfm-6420-08.png)
 
@@ -114,7 +114,7 @@ Donde &quot;id&quot; es el nombre de una referencia de imagen definida. Las refe
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Bloquear cotizaciones {#block-quotes}
+## Comillas de bloque {#block-quotes}
 
 Puede citar texto agregando el símbolo > delante del texto. Por ejemplo:
 

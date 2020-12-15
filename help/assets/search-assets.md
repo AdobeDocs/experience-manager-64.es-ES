@@ -32,9 +32,9 @@ Puede realizar búsquedas en función de las siguientes opciones (predicados):
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](search-facets.md)búsqueda. Para mostrar el panel Filtros, lleve a cabo estos pasos:
+Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante [facetas de búsqueda](search-facets.md). Para mostrar el panel Filtros, lleve a cabo estos pasos:
 
-1. En la interfaz de usuario de Recursos, toque o haga clic en ![search_icon](assets/search_icon.png) desde la barra de herramientas para mostrar el cuadro de búsqueda de Omniture.
+1. En la interfaz de usuario de Recursos, toque o haga clic ![search_icon](assets/search_icon.png) en la barra de herramientas para mostrar el cuadro de búsqueda de Omniture.
 1. Escriba el término de búsqueda y pulse Intro. Como alternativa, simplemente pulse Intro sin introducir ningún término de búsqueda. No introduzca ningún espacio de interlineado, de lo contrario la búsqueda no funcionará.
 
 1. Toque o haga clic en el icono de GlobalNav. Se muestra el panel Filtros.
@@ -49,7 +49,7 @@ Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda
 
 El panel Filtros ayuda a agregar más granularidad a la experiencia de búsqueda y hace que la funcionalidad de búsqueda sea más versátil. Puede desplazarse fácilmente hasta el nivel de detalle deseado.
 
-Por ejemplo, si busca una imagen, utilice el predicado Tipo **[!UICONTROL de]** archivo para elegir si desea una imagen de mapa de bits o una imagen vectorial.
+Por ejemplo, si busca una imagen, utilice el predicado **[!UICONTROL Tipo de archivo]** para elegir si desea una imagen de mapa de bits o una imagen vectorial.
 
 ![image_type](assets/image_type.png)
 
@@ -61,13 +61,13 @@ Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo 
 
 ![documentos](assets/documents.png)
 
-## Búsqueda según el tamaño del archivo {#search-based-on-file-size}
+## Búsqueda basada en el tamaño de archivo {#search-based-on-file-size}
 
-Utilice el predicado Tamaño **de archivo** para buscar recursos en función de su tamaño. Puede especificar los límites inferior y superior del intervalo de tamaño para reducir la búsqueda. También puede especificar la unidad de medida, por ejemplo Kilobytes, Megabytes, etc.
+Utilice el predicado **Tamaño de archivo** para buscar recursos en función de su tamaño. Puede especificar los límites inferior y superior del intervalo de tamaño para reducir la búsqueda. También puede especificar la unidad de medida, por ejemplo Kilobytes, Megabytes, etc.
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
-## Buscar en función de la última modificación de los recursos {#search-based-on-when-assets-are-last-modified}
+## Buscar en función de cuándo se modificaron por última vez los recursos {#search-based-on-when-assets-are-last-modified}
 
 Si está administrando recursos en curso o supervisando un flujo de trabajo de revisión, puede buscar cuándo se modificó un recurso por última vez en función de marcas de hora precisas. Por ejemplo, especifique las fechas antes o después de las cuales se modificaron los recursos.
 
@@ -77,9 +77,9 @@ También puede utilizar las siguientes opciones para lograr un nivel de granular
 
 ![timestamp](assets/timestamp.png)
 
-## Búsqueda según el estado {#search-based-on-status}
+## Búsqueda basada en el estado {#search-based-on-status}
 
-Utilice el predicado **Estado** para buscar recursos en función de varios tipos de estado, como Publicar, Aprobación, Cierre de compra y Caducidad.
+Use el predicado **Estado** para buscar recursos en función de diversos tipos de estado, como Publicar, Aprobación, Cierre de compra y Caducidad.
 
 ![estado](assets/status.png)
 
@@ -93,11 +93,11 @@ Cuando supervise el estado de revisión de los recursos, utilice la opción adec
 
 ## Búsqueda basada en datos de perspectivas {#search-based-on-insights-data}
 
-Use el predicado **Perspectivas** para buscar recursos en función de las estadísticas de uso que hayan obtenido de varias aplicaciones de Creative. Los datos de uso se agrupan en las siguientes categorías:
+Use el predicado **Perspectivas** para buscar recursos en función de las estadísticas de uso obtenidas de varias aplicaciones de Creative. Los datos de uso se agrupan en las siguientes categorías:
 
 * Puntuación de uso
 * Impresiones
 * Clics
-* canales de medios en los que aparecen los recursos
+* Canales de medios en los que aparecen los recursos
 
 ![perspectivas](assets/insights.png)

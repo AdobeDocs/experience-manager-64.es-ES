@@ -19,24 +19,24 @@ La Página de inicio Recursos Adobe Experience Manager (AEM) proporciona una exp
 
 La Página de inicio Recursos está deshabilitada de forma predeterminada. Para habilitarlo, realice los siguientes pasos:
 
-1. Para acceder a AEM Administrador de configuración, haga clic en **[!UICONTROL Herramientas > Operación > Consola]** web.
-1. Abra el servicio **Day CQ DAM Evento Recorder** .
-1. Seleccione **[!UICONTROL Activar este servicio]** para activar la grabación de actividades.
+1. Para acceder a AEM Administrador de configuración, haga clic en **[!UICONTROL Herramientas > Operación > Consola web]**.
+1. Abra el servicio **Grabador de Eventos CQ DAM**.
+1. Seleccione **[!UICONTROL Habilitar este servicio]** para habilitar la grabación de actividad.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. En la lista **Tipos de evento** , seleccione los eventos que desea registrar y guarde los cambios.
+1. En la lista **Tipos de evento**, seleccione los eventos que se van a registrar y guarde los cambios.
 
    >[!CAUTION]
    >
    >Al habilitar las opciones de vista de recursos, de proyectos vistos y de colecciones, se aumenta considerablemente el número de eventos registrados.
 
-1. Abra el servicio Marca **[!UICONTROL de característica de Página de inicio de recursos]** DAM desde Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Seleccione la opción **[!UICONTROL isEnabled.name]** para activar la función de Página de inicio de recursos. Guarde los cambios.
+1. Abra el servicio **[!UICONTROL Marca de característica de Página de inicio de recursos de DAM]** desde Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Seleccione la opción **[!UICONTROL isEnabled.name]** para habilitar la función de Página de inicio de recursos. Guarde los cambios.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Abra el cuadro de diálogo Preferencias **[!UICONTROL de]** usuario y seleccione **[!UICONTROL Activar Página de inicio]** de recursos. Guarde los cambios.
+1. Abra el cuadro de diálogo **[!UICONTROL Preferencias del usuario]** y seleccione **[!UICONTROL Habilitar Página de inicio de recursos]**. Guarde los cambios.
 
    ![user_Preferences](assets/user_preferences.png)
 
@@ -44,7 +44,7 @@ Después de activar la Página de inicio Recursos, navegue a la interfaz de usua
 
 ![home_page](assets/home_page.png)
 
-Toque o haga clic en el **[!UICONTROL vínculo]** Haga clic aquí para configurar su experiencia y agregar su nombre de usuario, imagen de fondo e imagen de perfil.
+Toque o haga clic en **[!UICONTROL Haga clic aquí para configurar el vínculo de experiencia]** para agregar el nombre de usuario, la imagen de fondo y la imagen de perfil.
 
 La Página de inicio Recursos incluye las siguientes secciones:
 
@@ -65,13 +65,13 @@ Esta sección aparece debajo de la sección de bienvenida y muestra los widgets 
 * Reciente
 * Descubrir
 
-**Actividad**: En esta sección, la utilidad **Mi Actividad** muestra las actividades recientes realizadas por el usuario que ha iniciado sesión con los recursos (incluidos los recursos sin representaciones), como cargas de recursos, descargas, creación de recursos, ediciones, comentarios, anotaciones y compartidos.
+**Actividad**: En esta sección, la utilidad  **Mi** actividad muestra actividades recientes realizadas por el usuario que ha iniciado sesión con recursos (incluidos recursos sin representaciones), por ejemplo, cargas de recursos, descargas, creación de recursos, ediciones, comentarios, anotaciones y compartidos.
 
-**Reciente**: La utilidad Vista **** recientemente de esta sección muestra las entidades a las que ha accedido recientemente el usuario que ha iniciado sesión, incluidas las carpetas, las colecciones y los proyectos.
+**Reciente**: La utilidad  **Vista** reciente de esta sección muestra las entidades a las que ha accedido recientemente el usuario que ha iniciado sesión, incluidas las carpetas, las colecciones y los proyectos.
 
-**Discover**: La **nueva** utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la instancia de AEM Assets.
+**Discover**: La  **** nueva utilidad de esta sección muestra los recursos y las representaciones cargados recientemente en la instancia de AEM Assets.
 
-Para habilitar la depuración de datos de actividad de usuario, habilite el servicio **de depuración de Eventos** DAM desde Configuration Manager. Después de habilitar este servicio, el sistema elimina las actividades del usuario que ha iniciado sesión y que exceden un número especificado.
+Para habilitar la depuración de datos de actividad de usuario, habilite el **servicio de depuración de Eventos DAM** desde Configuration Manager. Después de habilitar este servicio, el sistema elimina las actividades del usuario que ha iniciado sesión y que exceden un número especificado.
 
 La pantalla de bienvenida proporciona ayuda para la navegación sencilla, por ejemplo, iconos en la barra de herramientas para acceder a carpetas, colecciones y catálogos.
 
@@ -83,6 +83,6 @@ La pantalla de bienvenida proporciona ayuda para la navegación sencilla, por ej
 >
 >La captura, el filtrado y la depuración de actividades de usuario necesarias para la Página de inicio de recursos imponen una sobrecarga en el rendimiento. Por lo tanto, los administradores deben configurar la Página de inicio de forma eficaz para los usuarios de destinatario.
 >
->Adobe recomienda que los administradores y usuarios que realizan operaciones masivas eviten utilizar la función de Página de inicio de recursos para evitar un aumento de las actividades de los usuarios. Además, los administradores pueden excluir actividades de grabación para usuarios específicos configurando el grabador **de Evento CQ DAM** de Day desde Configuration Manager.
+>Adobe recomienda que los administradores y usuarios que realizan operaciones masivas eviten utilizar la función de Página de inicio de recursos para evitar un aumento de las actividades de los usuarios. Además, los administradores pueden excluir actividades de grabación para usuarios específicos configurando **Grabador de Eventos DAM CQ de día** desde Configuration Manager.
 >
 >Si utiliza la función, Adobe recomienda programar la frecuencia de purga en función de la carga del servidor.

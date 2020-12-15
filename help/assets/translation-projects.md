@@ -31,7 +31,7 @@ Este flujo de trabajo se ejecuta para traducir un grupo adicional de recursos e 
 >
 >Si se inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y archivos InDesign, sus subrecursos o representaciones (si existen) no se envían para su traducción.
 
-## Crear y traducir flujos de trabajo {#create-and-translate-workflow}
+## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
 
 Utilice el flujo de trabajo Crear y traducir para generar copias de idioma para un idioma en particular por primera vez. El flujo de trabajo ofrece las siguientes opciones:
 
@@ -48,11 +48,11 @@ Utilice la opción **Crear solo estructura** para diseñar una jerarquía de car
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
+1. Toque o haga clic **[!UICONTROL Crear y traducir]** en la parte inferior.
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
+1. En la lista **[!UICONTROL Idiomas de Destinatario]**, seleccione el idioma para el que desea crear una estructura de carpetas.
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -60,7 +60,7 @@ Utilice la opción **Crear solo estructura** para diseñar una jerarquía de car
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. Pulse o haga clic en **[!UICONTROL Crear]**. La nueva estructura del idioma de destinatario se muestra en Copias **[!UICONTROL de idioma]**.
+1. Pulse o haga clic en **[!UICONTROL Crear]**. La nueva estructura del idioma de destinatario se muestra en **[!UICONTROL Copias de idioma]**.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -77,7 +77,7 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
+1. Toque o haga clic **[!UICONTROL Crear y traducir]** en la parte inferior.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -85,7 +85,7 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. En la lista **[!UICONTROL Proyecto]** , seleccione **[!UICONTROL Crear un nuevo proyecto]** de traducción.
+1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Crear un nuevo proyecto de traducción]**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -93,7 +93,7 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Click/tap on **[!UICONTROL Create]**. Los recursos de la carpeta de origen se copian en las carpetas de destinatario para las configuraciones regionales seleccionadas en el paso 4.
+1. Toque o haga clic en **[!UICONTROL Crear]**. Los recursos de la carpeta de origen se copian en las carpetas de destinatario para las configuraciones regionales seleccionadas en el paso 4.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -103,7 +103,7 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
 1. Vaya a la consola Proyectos. La carpeta de traducción se copia en la consola Proyectos.
 
-   ![chlimage_1-78](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70.png)
 
 1. Abra la carpeta para vista del proyecto de traducción.
 
@@ -113,11 +113,11 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Para vista del estado del trabajo de traducción, haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción.
+1. Para vista del estado del trabajo de traducción, haga clic en los puntos suspensivos en la parte inferior del mosaico **[!UICONTROL Trabajo de traducción]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   Para obtener más información sobre los estados de los trabajos, consulte [Supervisión del estado de un trabajo](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de traducción.
+   Para obtener más información sobre los estados de los trabajos, consulte [Monitoreo del estado de un trabajo de traducción](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Vaya a la interfaz de usuario de Recursos y abra la página Propiedades de cada uno de los recursos traducidos para realizar la vista de los metadatos traducidos.
 
@@ -134,7 +134,7 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 1. En la interfaz de usuario de Recursos, navegue a la carpeta de origen que contenga recursos sin traducir.
 1. Seleccione un recurso que desee traducir y abra el **[!UICONTROL panel Referencias]**. La sección **[!UICONTROL Textos en idiomas]** muestra el número de traducciones disponibles en ese momento.
 1. Pulse o haga clic en **[!UICONTROL Textos en idiomas]** en **[!UICONTROL Textos]**. Se muestra una lista de las traducciones disponibles.
-1. Toque o haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
+1. Toque o haga clic **[!UICONTROL Crear y traducir]** en la parte inferior.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -148,9 +148,9 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
    >[!NOTE]
    >
-   >Si selecciona la opción **[!UICONTROL Añadir a proyecto]** de traducción existente, el proyecto de traducción se agrega a un proyecto preexistente solo si la configuración del proyecto coincide exactamente con la del proyecto preexistente. De lo contrario, se crea un nuevo proyecto.
+   >Si elige la opción **[!UICONTROL Añadir a proyecto de traducción existente]**, el proyecto de traducción se agrega a un proyecto preexistente sólo si la configuración del proyecto coincide exactamente con la configuración del proyecto preexistente. De lo contrario, se crea un nuevo proyecto.
 
-1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
+1. En la lista **[!UICONTROL Proyecto de traducción existente]**, seleccione un proyecto para agregar el recurso a la traducción.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -163,7 +163,7 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. Click/tap the ellipsis at the bottom of the **Translation Job** tile to view the assets in the translation workflow. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+1. Toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **Trabajo de traducción** para vista de los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
    >
    >Si el recurso que agrega al trabajo de traducción incluye subrecursos, selecciónelos y elimínelos para que la traducción continúe sin problemas.
 
-1. Para inicio de la traducción de los recursos, toque o haga clic en la flecha del mosaico Trabajo **[!UICONTROL de]** traducción y seleccione **[!UICONTROL Inicio]** en la lista.
+1. Para inicio de la traducción de los recursos, toque o haga clic en la flecha del mosaico **[!UICONTROL Trabajo de traducción]** y seleccione **[!UICONTROL Inicio]** en la lista.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -185,11 +185,11 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
    ![chlimage_1-82](assets/chlimage_1-82.png)
 
-1. Para vista del estado del trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción.
+1. Para vista del estado del trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **[!UICONTROL Trabajo de traducción]**.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   Para obtener más información, consulte [Supervisión del estado de un trabajo](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de traducción.
+   Para obtener más información, consulte [Monitoreo del estado de un trabajo de traducción](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Una vez finalizada la traducción, el estado cambia a Listo para revisar. Vaya a la interfaz de usuario de Recursos y abra la página Propiedades de cada uno de los recursos traducidos para realizar la vista de los metadatos traducidos.
 
@@ -210,11 +210,11 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. Toque o haga clic en **[!UICONTROL Actualizar copias]** de idioma en la parte inferior.
+1. Toque o haga clic **[!UICONTROL Actualizar copias de idioma]** en la parte inferior.
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
-1. En la lista **[!UICONTROL Proyecto]** , elija **[!UICONTROL Crear un nuevo proyecto]** de traducción.
+1. En la lista **[!UICONTROL Project]**, elija **[!UICONTROL Crear un nuevo proyecto de traducción]**.
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
@@ -235,7 +235,7 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Para inicio de la traducción de los recursos, haga clic en la flecha del mosaico Trabajo **[!UICONTROL de]** traducción y seleccione **[!UICONTROL Inicio]** en la lista.
+1. Para inicio de la traducción de los recursos, haga clic en la flecha del mosaico **[!UICONTROL Trabajo de traducción]** y seleccione **[!UICONTROL Inicio]** en la lista.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -243,11 +243,11 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Para vista del estado del trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción.
+1. Para vista del estado del trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **[!UICONTROL Trabajo de traducción]**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-   Para obtener más información sobre los estados de los trabajos, consulte [Supervisión del estado de un trabajo](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)de traducción.
+   Para obtener más información sobre los estados de los trabajos, consulte [Monitoreo del estado de un trabajo de traducción](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Vaya a la interfaz de usuario de Recursos y abra la página Propiedades de cada uno de los recursos traducidos para realizar la vista de los metadatos traducidos.
 
@@ -264,22 +264,22 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Toque o haga clic en **[!UICONTROL Actualizar copias]** de idioma en la parte inferior.
+1. Toque o haga clic **[!UICONTROL Actualizar copias de idioma]** en la parte inferior.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
-1. En la lista **[!UICONTROL Proyecto]** , elija **[!UICONTROL Añadir a proyecto]** de traducción existente.
+1. En la lista **[!UICONTROL Project]**, elija **[!UICONTROL Añadir a proyecto de traducción existente]**.
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-1. En la lista de proyecto **[!UICONTROL de traducción]** existente, seleccione un proyecto para agregar el recurso a la traducción.
+1. En la lista **[!UICONTROL Proyecto de traducción existente]**, seleccione un proyecto para agregar el recurso a la traducción.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
 1. Pulse o haga clic en **[!UICONTROL Iniciar]**.
-1. Véanse los pasos 9 a 14 de [Añadir al proyecto](translation-projects.md#add-to-existing-translation-project) de traducción existente para completar el resto del procedimiento.
+1. Consulte los pasos 9 a 14 de [Añadir al proyecto de traducción existente](translation-projects.md#add-to-existing-translation-project) para completar el resto del procedimiento.
 
-## Creación de copias de idioma temporales {#creating-temporary-language-copies}
+## Creación de copias temporales de idioma {#creating-temporary-language-copies}
 
 Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. AEM Assets almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma permanece sin cambios.
 
@@ -292,8 +292,8 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
 1. Edite el recurso y guarde los cambios.
-1. Realice los pasos 2 a 14 del procedimiento de [Añadir al proyecto](#add-to-existing-translation-project) de traducción existente para actualizar la copia del idioma.
-1. Toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Trabajo **[!UICONTROL de]** traducción. Desde la lista de recursos en la página Trabajo **[!UICONTROL de]** traducción, puede realizar una vista clara de la ubicación temporal en la que se almacena la versión traducida del recurso.
+1. Realice los pasos 2 a 14 del procedimiento [Añadir al proyecto de traducción existente](#add-to-existing-translation-project) para actualizar la copia del idioma.
+1. Toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **[!UICONTROL Trabajo de traducción]**. Desde la lista de recursos en la página **[!UICONTROL Trabajo de traducción]**, puede realizar una vista clara de la ubicación temporal en la que se almacena la versión traducida del recurso.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
@@ -306,10 +306,10 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
    >
    >Para habilitar el flujo de trabajo de traducción para actualizar los recursos de destino, acepte tanto el recurso como los metadatos.
 
-   Toque o haga clic en **[!UICONTROL Rechazar traducción]** para conservar la versión traducida originalmente del recurso en la raíz de configuración regional de destinatario y rechazar la versión editada.
+   Toque o haga clic **[!UICONTROL Rechazar traducción]** para conservar la versión traducida originalmente del recurso en la raíz de configuración regional de destinatario y rechazar la versión editada.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. Vaya a la consola Recursos y abra la página Propiedades de cada uno de los recursos traducidos para vista de los metadatos traducidos.
 
-Para obtener sugerencias sobre la traducción eficiente de metadatos para recursos, consulte [5 pasos para la traducción eficaz de metadatos](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Para obtener sugerencias sobre la traducción eficiente de metadatos para recursos, consulte [5 pasos para traducir metadatos de forma eficiente](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).

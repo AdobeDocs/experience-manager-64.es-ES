@@ -25,17 +25,17 @@ ht-degree: 73%
 1. Cree una referencia (temporal) a un modelo representativo. De este modo, se facilita la evaluación de la iluminación, la configuración de las cámaras y la configuración del procesador.
 1. Establezca la iluminación basada en imágenes.
 
-   1. In **[!UICONTROL Render Settings]**, select **[!UICONTROL Render Render Using: mental ray]**, and open the Scene tab.
-   1. Open the **[!UICONTROL Render Environment]** accordion and click **[!UICONTROL Render Create Image Based Lighting]**.
-   1. Click the box icon that has a right arrow on the left side of the box to select the IBL node `mentalRayIblShape1`, then exit **[!UICONTROL Render Settings]**.
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. En **[!UICONTROL Configuración de procesamiento]**, seleccione **[!UICONTROL Representar con: mental ray]** y abra la ficha Escena.
+   1. Abra el acordeón **[!UICONTROL Entorno de procesamiento]** y haga clic en **[!UICONTROL Representar para crear iluminación basada en imagen]**.
+   1. Haga clic en el icono de cuadro que tiene una flecha derecha en el lado izquierdo del cuadro para seleccionar el nodo IBL `mentalRayIblShape1` y luego salir de **[!UICONTROL Configuración de procesamiento]**.
+   1. En el **[!UICONTROL Editor de atributos]**, seleccione el nodo de transformación `mentalRayIbl1` y, a continuación, cambie el nombre del nodo de transformación a `AdobeIbl`.
    1. Establezca la escala del nodo para hacer que la esfera del entorno sea significativamente más grande que el objeto 3D de mayor tamaño que se mostrará con este escenario (por ejemplo, `10000,10000,10000`).
    1. Seleccione el nodo `AdobeIblShape` y configúrelo como sigue:
 
       * **[!UICONTROL Asignación]**: esférica
       * **[!UICONTROL Tipo]**: archivo de imagen
       * **[!UICONTROL Emitir luz]**: verdadero
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. Adjunte la imagen TIFF de 32 bits deseada al nodo `AdobeIbl`.
 
 
 1. Configure el plano de tierra.
@@ -49,17 +49,17 @@ ht-degree: 73%
 
 1. Configure el procesamiento con Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions.
+   Configure la **[!UICONTROL Configuración de procesamiento]** con las siguientes sugerencias.
 
-   * **[!UICONTROL Ficha Común]**
+   * **** Comúnmente
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
+      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las **[!UICONTROL Cámaras procesables]**.
 
    * **[!UICONTROL Ficha Calidad]**
 
       * **Calidad global**: `0.5` o menos
-      * **Modo** de difusión indirecta (GI) - `Final Gather`
-      * **Tamaño** del filtro - `2.0`, `2.0`
+      * **Modo**  de difusión indirecta (GI):  `Final Gather`
+      * **Tamaño**  del filtro-  `2.0`,  `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si fuera necesario, ajuste las luces, la configuración de procesamiento o ambas opciones para conseguir los resultados deseados.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.
@@ -79,7 +79,7 @@ ht-degree: 73%
 
    Es posible que AEM 3D no pueda detectar la imagen de IBL configurada en el escenario. En estas situaciones, debe resolver manualmente las dependencias que faltan. Puede asignar la misma imagen IBL PTIFF cargada anteriormente para cada una de las dependencias que faltan. O bien, puede asignar diferentes imágenes para controlar aún más los efectos de IBL. Después de resolver las dependencias, asegúrese de pulsar en **[!UICONTROL Guardar]** para iniciar el reprocesamiento. 
 
-1. Abra Propiedades del recurso en AEM. Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
+1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de etapa]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
 
 1. Abra un recurso 3D, seleccione el nuevo escenario y verifique que su vista previa y procesamiento sean los esperados.
 

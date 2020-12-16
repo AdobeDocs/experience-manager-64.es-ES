@@ -7,9 +7,9 @@ user-guide-title: Guía del usuario de administración de AEM 6.4
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 17%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 17%
 # Guía del usuario de administración de AEM 6.4 {#administering}
 
 + [Información general sobre la Guía del usuario de administración](home.md)
-+ Funciones del sitio {#introduction}
++ Características del sitio {#introduction}
    + [Administración de sitios web](msm-and-translation.md) 
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
    + [Consola de información general de Live Copy](msm-livecopy-overview.md)
@@ -50,7 +50,7 @@ ht-degree: 17%
    + [Editor masivo](bulk-editor.md)
    + [Configuración de la notificación por correo electrónico](notification.md)
    + [Configuración de RTE para la producción de sitios accesibles](rte-accessible-content.md)
-   + [Comprobador de vínculos externos](external-link-checker.md)
+   + [Verificador de vínculos](external-link-checker.md)
    + [Resolución de problemas AEM](troubleshoot.md)
    + [Mantenimiento del registro de auditoría en AEM 6](operations-audit-log.md)
    + [Editor](enable-classic-ui-editor.md)
@@ -153,7 +153,7 @@ ht-degree: 17%
    + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Integración de destinatario con fragmentos de experiencia](experience-fragments-target.md)
-+ Prácticas recomendadas   {#bestpractices}
++ Prácticas recomendadas    {#bestpractices}
    + [Prácticas recomendadas  ](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)

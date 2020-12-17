@@ -10,10 +10,10 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6fc1a2502187be0fbbfbea516788e705f1a2697c
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obtener una lista de los cambios de contenido y configuración que no están incluidos en el ámbito del paquete de compatibilidad, consulte Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Para obtener una lista de los cambios de contenido y configuración que no están incluidos en el ámbito del paquete de compatibilidad, consulte [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 En AEM 6.4, todas las características se han desarrollado teniendo en cuenta la compatibilidad con versiones anteriores.
 
 En la mayoría de los casos, los clientes que ejecutan AEM 6.3 no deben tener que cambiar el código o las personalizaciones al realizar la actualización. Para los clientes de AEM 6.1 y 6.2 no hay cambios de ruptura adicionales que los que se producirían durante una actualización a 6.3.
 
-Para las excepciones en las que las funciones no se podían mantener compatibles con versiones anteriores, se puede lograr la compatibilidad con versiones anteriores para paquetes y contenido mediante la instalación de un paquete de compatibilidad para 6.3 (consulte cómo configurar a continuación para obtener más información sobre dónde descargar). Este paquete compat restaurará la compatibilidad para aplicaciones compatibles con AEM 6.3.
+Para las excepciones en las que las funciones no se podían mantener compatibles con versiones anteriores, se puede lograr la compatibilidad con versiones anteriores para paquetes y contenido mediante la instalación de un paquete de compatibilidad para 6.3 (consulte cómo configurar a continuación para obtener más información sobre dónde descargar). Este paquete de compatibilidad restaurará la compatibilidad para las aplicaciones compatibles con AEM 6.3.
 
 El paquete de compatibilidad le permite ejecutar AEM en modo de compatibilidad y diferir el desarrollo personalizado con nuevas funciones de AEM:
 
@@ -62,7 +62,7 @@ El modo heredado es para clientes que tienen interfaces personalizadas basadas e
 
 ## Configuración {#how-to-set-up}
 
-El paquete de compatibilidad de AEM 6.3 se podrá instalar como paquete mediante el Administrador de paquetes en este [vínculo](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+El paquete de compatibilidad de AEM 6.3 se puede instalar como paquete mediante el Administrador de paquetes. Puede descargar el paquete de compatibilidad [AEM 6.3 desde el sitio Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Una vez instalado el Paquete de compatibilidad, el enrutamiento se puede habilitar o deshabilitar mediante un conmutador en la configuración OSGI, como se muestra a continuación:
 

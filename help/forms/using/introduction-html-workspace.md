@@ -31,5 +31,5 @@ El espacio de trabajo de AEM Forms es compatible con más dispositivos y factore
 * Aplique a los participantes en todo el proceso con PDF forms dinámicos, interfaces móviles y aplicaciones web.
 * Integre fácilmente los componentes del espacio de trabajo con sus aplicaciones web. Como el espacio de trabajo de AEM Forms es un software basado en componentes, se puede personalizar y reutilizar fácilmente.
 * Amplíe los procesos empresariales a los trabajadores móviles en línea y sin conexión con la aplicación de espacio de trabajo de AEM Forms.
-* Informes de Vista para supervisar los atrasos, las colas de trabajos y los indicadores de rendimiento clave (KPI). Puede utilizar las API para extraer datos para una análisis posterior mediante herramientas de sistema de informes de terceros.
+* Informes de vista para supervisar los atrasos, las colas de trabajos y los indicadores de rendimiento clave (KPI). Puede utilizar las API para extraer datos para una análisis posterior mediante herramientas de sistema de informes de terceros.
 

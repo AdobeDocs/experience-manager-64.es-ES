@@ -18,29 +18,29 @@ ht-degree: 6%
 ---
 
 
-# Función de tabla de clasificación {#leaderboard-feature}
+# Característica de tabla de clasificación {#leaderboard-feature}
 
 ## Introducción {#introduction}
 
-El `Leaderboard` componente proporciona la capacidad de obtener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos ganados (puntuación básica) o su experiencia (puntuación avanzada).
+El componente `Leaderboard` proporciona la capacidad de obtener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos ganados (puntuación básica) o su experiencia (puntuación avanzada).
 
-Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](implementing-scoring.md).
+Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar [Puntuación de comunidades y distintivos](implementing-scoring.md).
 
 Esta sección de la documentación describe
 
-* Añadir el `Leaderboard` componente en un sitio [de comunidad](overview.md#community-sites)
+* Añadir el componente `Leaderboard` en un [sitio de comunidad](overview.md#community-sites)
 
-* Configuración del `Leaderboard` componente
+* Configuración del componente `Leaderboard`
 
-## Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
+## Añadir un Leaderboard en una página {#adding-a-leaderboard-to-a-page}
 
-Para agregar un `Leaderboard` componente a una página en modo de autor, ubique el componente
+Para agregar un componente `Leaderboard` a una página en modo de autor, busque el componente
 
 * `Communities / Leaderboard`
 
 y arrástrelo a su lugar en una página.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
 Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
 
@@ -48,51 +48,59 @@ Cuando se coloca por primera vez en una página de un sitio de comunidad, así e
 
 ## Configuración de la tabla de clasificación {#configuring-leaderboard}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Leaderboard` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Leaderboard` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Ficha Configuración {#settings-tab}
 
-En la ficha **[!UICONTROL Configuración]** , especifique la información relacionada con el miembro que se muestra:
+En la ficha **[!UICONTROL Configuración]**, especifique qué información relacionada con el miembro se muestra:
 
-* **[!UICONTROL Nombre para mostrar]** Un nombre descriptivo que se mostrará para el tablero, que refleja las reglas seleccionadas para mostrar distintivos y puntuaciones.
+* **[!UICONTROL Mostrar]**
+nombreNombre descriptivo que se mostrará en el tablero, reflejando las reglas seleccionadas para mostrar distintivos y puntuaciones.
 
-   El valor predeterminado es `Leaderboard`si no se ha introducido nada.
+   El valor predeterminado es `Leaderboard`, si no se ha introducido nada.
 
-* **[!UICONTROL Distintivo]** Si está marcado, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
-
-   El valor predeterminado no está marcado.
-
-* **[!UICONTROL Nombre]** del distintivo Si se selecciona, se incluye una columna para el nombre del distintivo en la tabla de clasificación.
+* ****
+DistintivoSi se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
 
    El valor predeterminado no está marcado.
 
-* **[!UICONTROL Use Avatar]** Si está marcado, la imagen de avatar del miembro se incluye en el panel de control, junto al vínculo de nombre del perfil del miembro.
+* **[!UICONTROL Nombre]**
+del distintivoSi se selecciona, se incluye una columna para el nombre del distintivo en la tabla de clasificación.
+
+   El valor predeterminado no está marcado.
+
+* **[!UICONTROL Use]**
+AvatarSi se selecciona, la imagen de avatar del miembro se incluye en la tabla de clasificación, junto al vínculo de nombre del perfil del miembro.
 
    El valor predeterminado no está marcado.
 
 ### Ficha Reglas {#rules-tab}
 
-Bajo la ficha **[!UICONTROL Reglas]** , el sitio de la comunidad y sus reglas de puntuación y de distintivo
+En la ficha **[!UICONTROL Reglas]**, el sitio de la comunidad y sus reglas de puntuación y de distintivo
 
-* **[!UICONTROL Ubicación]** de la regla (obligatoria) Ubicación en la que está configurada la regla de puntuación/distintivo.
+* **[!UICONTROL Ubicación]**
+ de la regla (obligatoria) Ubicación en la que está configurada la regla de puntuación/distintivo.
 
-* **[!UICONTROL Regla]** de puntuación (obligatoria) Regla específica que genera las puntuaciones que se van a mostrar.
+* **[!UICONTROL Regla]**
+ de puntuación (obligatoria) Regla específica que genera las puntuaciones que se van a mostrar.
 
-* **[!UICONTROL Regla]** de asignación de distintivos (obligatoria) Regla específica que genera el distintivo que se va a mostrar.
+* **[!UICONTROL Regla]**
+ de asignación de distintivos (obligatoria) Regla específica que genera el distintivo que se va a mostrar.
 
-* **[!UICONTROL Límite]** de visualización Número de miembros que se mostrarán por página.
+* **[!UICONTROL Mostrar]**
+LímiteNúmero de miembros que se mostrarán por página.
 
    El valor predeterminado es 10.
 
-## Ejemplo: Mesa de liderazgo de los participantes {#example-participants-leaderboard}
+## Ejemplo: Panel de liderazgo de los participantes {#example-participants-leaderboard}
 
 Este marcador de posición indica los resultados de la aplicación de reglas de puntuación básicas.
 
 Configuración del componente de la tabla de clasificación:
 
-* **[!UICONTROL Ficha Configuración]** :
+* **** Colocación:
 
    * Nombre para mostrar = `Participation Board`
    * `checked`:
@@ -101,7 +109,7 @@ Configuración del componente de la tabla de clasificación:
       * Nombre de distintivo
       * Usar avatar
 
-* **[!UICONTROL Ficha Reglas]** :
+* **[!UICONTROL Acrónimo]** :
 
    * Ubicación de la regla = `/content/sites/communities/jcr:content`
    * Regla de puntuación = `/etc/community/scoring/rules/forums-scoring`
@@ -116,15 +124,15 @@ Este marcador de posición indica los resultados de la aplicación de reglas de 
 
 Configuración del componente de la tabla de clasificación:
 
-* **[!UICONTROL Ficha Configuración]** :
+* **** Colocación:
 
    * Nombre para mostrar = `Expertise Board`
-   * `checked`:
+   * `checked`::
 
       * Distintivo
       * Usar avatar
 
-* **[!UICONTROL Ficha Reglas]** :
+* **[!UICONTROL Acrónimo]** :
 
    * Ubicación de la regla = `/content/sites/communities/jcr:content`
    * Regla de puntuación = `/etc/community/scoring/rules/adv-forums-scoring`
@@ -137,4 +145,4 @@ Configuración del componente de la tabla de clasificación:
 
 Puede encontrar más información en la página [Leaderboard Essentials](leaderboard.md) para desarrolladores.
 
-Las instrucciones para crear reglas se proporcionan en la página Puntuación de [comunidades y distintivos](implementing-scoring.md) para administradores.
+Las instrucciones para crear reglas se proporcionan en la página [Puntuación de comunidades y distintivos](implementing-scoring.md) para administradores.

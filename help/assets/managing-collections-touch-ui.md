@@ -132,7 +132,7 @@ Las colecciones inteligentes se crean al guardar una búsqueda para que pueda mo
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono de búsqueda de la barra de herramientas.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Con el cursor en el cuadro Omniture search, presione la tecla Retorno.
 

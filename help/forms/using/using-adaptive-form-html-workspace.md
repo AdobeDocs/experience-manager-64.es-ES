@@ -31,13 +31,13 @@ Realice lo siguiente para habilitar los formularios adaptables para su uso en el
 * En la hoja de propiedades Asignar área de trabajo de Tarea/punto de Inicio, puede ocultar la barra de herramientas de nivel superior/global de un formulario adaptable.
 * Puede utilizar nuevos perfiles de acción para procesar y enviar acciones en formularios adaptables.
 
-### Exportación e importación de aplicaciones LiveCycle {#livecycle-application-export-and-import}
+### Exportación e importación de aplicaciones de LiveCycle {#livecycle-application-export-and-import}
 
 Dado que los formularios adaptables se encuentran en el repositorio de AEM, la exportación de la aplicación LiveCycle solo contiene las referencias para los formularios adaptables utilizados. Por lo tanto, la exportación e importación de la aplicación de LiveCycle es un proceso de dos pasos. La aplicación LiveCycle incluye definiciones de procesos, etc. Un paquete independiente que contiene formularios adaptables se exporta como archivo ZIP desde AEM. Durante la importación, la aplicación LiveCycle se importa a través de Workbench y los formularios adaptables se importan a través de AEM.
 
 ## Experiencia del usuario en formularios adaptables en HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-HTML Workspace proporciona algunos controles adaptables específicos de formularios, además de los controles disponibles para formularios móviles. Un usuario puede agregar datos adjuntos, guardarlos, firmarlos, enviarlos y navegar por los formularios adaptables en el espacio de trabajo HTML cuando abre una Tarea o un punto de Inicio. Los siguientes son los detalles específicos:
+HTML Workspace proporciona algunos controles adaptables específicos del formulario, además de los controles disponibles para los formularios móviles. Un usuario puede agregar datos adjuntos, guardarlos, firmarlos, enviarlos y navegar por los formularios adaptables en el espacio de trabajo HTML cuando abre una Tarea o un punto de Inicio. Los siguientes son los detalles específicos:
 
 1. Para **adjuntar **los archivos utilizan archivos adjuntos de Tarea, como ocurrió en Mobile Forms. Cualquier botón de tipo Archivo adjunto del formulario adaptable está oculto.
 
@@ -66,7 +66,7 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
    ![Crear nuevo proceso](assets/create_new_process.png)
 
 1. Cree un punto de Inicio o asigne una Tarea y haga clic en él con el botón doble.
-1. En la sección **[!UICONTROL Presentación y datos]** , seleccione **[!UICONTROL usar un recurso]** CRX y haga clic en las elipses antes del recurso.
+1. En la sección **[!UICONTROL Presentación y datos]**, seleccione **[!UICONTROL usar un recurso CRX]** y haga clic en las elipses antes del recurso.
 
    ![Uso de un recurso CRX](assets/use_crx_asset.png)
 
@@ -76,7 +76,7 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
 
    >[!NOTE]
    >
-   >Para obtener más información sobre la creación de un formulario adaptable, consulte [Creación de un formulario](/help/forms/using/creating-adaptive-form.md)adaptable.
+   >Para obtener más información sobre la creación de un formulario adaptable, consulte [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md).
    >
-   >Para obtener más información sobre la creación de un proceso, consulte [Creación y administración de procesos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Para obtener más información sobre cómo crear un proceso, consulte [Creación y administración de procesos](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
 

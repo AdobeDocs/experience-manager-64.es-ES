@@ -26,7 +26,7 @@ Una revisión es un mecanismo que permite a uno o más revisores comentar un rec
 ## Configuración de una revisión {#setting-up-a-review}
 
 1. Vaya a la ficha Forms y seleccione un formulario.
-1. Si el recurso no tiene una revisión en curso, aparecerá un icono de Inicio Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Haga clic en el icono Inicio Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Si el recurso no tiene una revisión en curso, aparecerá un icono de Inicio Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Haga clic en el icono Inicio Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Indique la siguiente información:
 
    * Nombre de revisión: Obligatorio, puede contener caracteres alfanuméricos, guiones o subrayado.
@@ -44,7 +44,7 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 1. A todos los revisores se les asigna una tarea de revisión. La tarea aparece en la sección Notificaciones. Un revisor puede hacer clic en una notificación o ir a la Bandeja de entrada para realizar la vista de la tarea. Un revisor puede hacer clic para abrir la tarea de revisión, para vista del formulario y para agregar comentarios en inicio.
 
    ![Alerta de notificación del revisor](assets/noti.png)
-   **Figura:** *Alerta de notificación del revisor*
+   **Figura:Alerta de notificación** *del revisor*
 
 1. El cuadro de comentarios está disponible para el iniciador y los revisores del recurso. Otros pueden vista los comentarios, pero no pueden escribirlos.
 
@@ -58,7 +58,7 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
 
 1. Si un recurso tiene una revisión en curso y usted es el iniciador de la revisión, aparecerá un icono Administrar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Solo el iniciador de revisión puede administrar (actualizar/finalizar) la revisión.
 
-   Haga clic en el ![icono Administrar revisión aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)comment.
+   Haga clic en el icono Administrar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Para usuarios que no sean el iniciador, el icono Administrar revisión está deshabilitado.
 

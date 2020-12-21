@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Este contenido describe la configuración opcional que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
 
-## Configuración de los orígenes de datos del servidor de aplicaciones {#configuring-application-server-data-sources}
+## Configuración de las fuentes de datos del servidor de aplicaciones {#configuring-application-server-data-sources}
 
 AEM formularios utiliza el repositorio de AEM formularios como su origen de datos. El repositorio de AEM formularios almacena los recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso comercial automatizado.
 
-El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios AEM que esté ejecutando y del número de usuarios simultáneos que accedan a la aplicación. El acceso a la fuente de datos se puede optimizar mediante el agrupamiento de conexiones. *El agrupamiento* de conexiones es una técnica que se utiliza para evitar la sobrecarga de realizar nuevas conexiones de bases de datos cada vez que un objeto de servidor o de aplicación requiere acceso a la base de datos. El agrupamiento de conexiones se utiliza generalmente en aplicaciones basadas en la Web y en aplicaciones empresariales, y normalmente lo gestiona un servidor de aplicaciones, pero no se limita a él.
+El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios AEM que esté ejecutando y del número de usuarios simultáneos que accedan a la aplicación. El acceso a la fuente de datos se puede optimizar mediante el agrupamiento de conexiones. *La* agrupación de conexiones es una técnica que se utiliza para evitar la sobrecarga de realizar nuevas conexiones de base de datos cada vez que una aplicación u objeto de servidor requiere acceso a la base de datos. El agrupamiento de conexiones se utiliza generalmente en aplicaciones basadas en la Web y en aplicaciones empresariales, y normalmente lo gestiona un servidor de aplicaciones, pero no se limita a él.
 
 Es importante configurar correctamente los parámetros del grupo de conexiones para que nunca se queden sin conexiones, lo que puede ocasionar que el rendimiento de la aplicación se deteriore.
 
@@ -36,7 +36,7 @@ Puede supervisar varias estadísticas para cada instancia de origen de datos JDB
 
 Cuando el administrador del servidor de aplicaciones determina la configuración correcta del grupo de conexiones, esa persona debe comunicar esta información al administrador de la base de datos. El administrador de la base de datos necesita esta información porque el número de conexiones de la base de datos es igual al número de conexiones del grupo de conexiones para el origen de datos. A continuación, complete los pasos para configurar la configuración del grupo de conexiones para el servidor de aplicaciones y el tipo de fuente de datos como se describe a continuación.
 
-### Configuración de la configuración del grupo de conexiones para WebLogic para Oracle y MySQL {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
+### Configurar la configuración del grupo de conexiones para WebLogic para Oracle y MySQL {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
 
 1. En Estructura de dominio, haga clic en Servicios > JDBC > Fuentes de datos y, en el panel derecho, haga clic en IDP_DS.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Grupo de conexiones e introduzca un valor en los cuadros siguientes:
@@ -49,7 +49,7 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 1. Haga clic en Guardar y, a continuación, en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
-### Configuración de la configuración del grupo de conexiones para WebLogic para SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
+### Configurar la configuración del grupo de conexiones para WebLogic para SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
 1. En Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Servicios > JDBC > Fuentes de datos y, en el panel derecho, haga clic en EDC_DS.
@@ -63,21 +63,21 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 1. Haga clic en Guardar y, a continuación, en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
-### Configuración de la configuración del grupo de conexiones para WebSphere para DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
+### Configurar la configuración del grupo de conexiones para WebSphere para DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
 
 1. En el árbol de navegación, haga clic en Recursos > JDBC > Proveedores JDBC. En el panel derecho, haga clic en el origen de datos que ha creado, ya sea DB2 Universal JDBC Driver Provider o LiveCycle - db2 - IDP_DS.
 1. En Propiedades adicionales, haga clic en Fuentes de datos y, a continuación, seleccione IDP_DS.
 1. En la pantalla siguiente, en Propiedades adicionales, haga clic en Propiedades del grupo de conexiones e introduzca un valor en el cuadro Número máximo de conexiones y en el cuadro Conexiones mínimas.
 1. Haga clic en Aceptar o Aplicar y, a continuación, haga clic en Guardar directamente en configuración maestra.
 
-### Configuración de la configuración del pool de conexiones para WebSphere para Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Configurar la configuración del grupo de conexiones para WebSphere para Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. En el árbol de navegación, haga clic en Recursos > JDBC > Proveedores JDBC. En el panel derecho, haga clic en el origen de datos del controlador JDBC de Oracle que ha creado.
 1. En Propiedades adicionales, haga clic en Fuentes de datos y, a continuación, seleccione IDP_DS.
 1. En la pantalla siguiente, en Propiedades adicionales, haga clic en Propiedades del grupo de conexiones e introduzca un valor en el cuadro Número máximo de conexiones y en el cuadro Conexiones mínimas.
 1. Haga clic en Aceptar o Aplicar y, a continuación, haga clic en Guardar directamente en configuración maestra.
 
-### Configuración de la configuración del grupo de conexiones para WebSphere para SqlServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
+### Configurar la configuración del grupo de conexiones para WebSphere para SqlServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. En el árbol de navegación, haga clic en Recursos > JDBC > Proveedores JDBC y, en el panel derecho, haga clic en el origen de datos de controlador JDBC definido por el usuario que ha creado.
 1. En Propiedades adicionales, haga clic en Fuentes de datos y, a continuación, seleccione IDP_DS.
@@ -93,7 +93,7 @@ Si normalmente procesa documentos de un tamaño relativamente pequeño, puede me
 
 El tamaño de línea máximo y los directorios de almacenamiento (el directorio de archivos temporales de formularios AEM y el directorio GDS) se configuran en la consola de administración.
 
-### Tamaño de Documento y tamaño de línea máximo {#document-size-and-maximum-inline-size}
+### Tamaño de documento y tamaño de línea máximo {#document-size-and-maximum-inline-size}
 
 Cuando un documento enviado para su procesamiento por AEM formularios es menor o igual al tamaño en línea máximo de documento predeterminado, el documento se almacena en el servidor en línea y el documento se serializa como objeto de Documento de Adobe. El almacenamiento de documentos en línea puede tener importantes beneficios de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también puede almacenarse en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño de línea máximo puede afectar al tamaño de la base de datos.
 
@@ -158,14 +158,14 @@ Esta sección describe la configuración específica de un entorno de servidor d
 
 Si está ejecutando Configuration Manager o está intentando generar código de implementación de JavaBeans (EJB) Enterprise mediante la utilidad de línea de comandos *ejbdeploy* y se produce un error OutOfMemory, aumente la cantidad de memoria asignada a JVM.
 
-1. Edite la secuencia de comandos ejbdeploy en el directorio raíz *[/deployment/itp/ de]* appserver:
+1. Edite la secuencia de comandos ejbdeploy en el directorio *[appserver root]*/DeployTool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux y UNIX) `ejbdeploy.sh`
 
-1. Busque el `-Xmx256M` parámetro y cámbielo a un valor más alto, como `-Xmx1024M`.
+1. Busque el parámetro `-Xmx256M` y cámbielo a un valor más alto, como `-Xmx1024M`.
 1. Guarde el archivo.
-1. Ejecute el `ejbdeploy` comando o vuelva a implementar con Configuration Manager.
+1. Ejecute el comando `ejbdeploy` o vuelva a implementar con Configuration Manager.
 
 ## Mejora del rendimiento de Windows Server 2003 con LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -173,10 +173,10 @@ Este contenido describe la configuración específica de un entorno del sistema 
 
 El uso de la agrupación de conexiones en la conexión de búsqueda puede reducir el número de puertos necesarios hasta en un 50%. Esto se debe a que la conexión siempre utiliza las mismas credenciales para un dominio determinado y el contexto y los objetos relacionados se cierran explícitamente.
 
-### Configuración de Windows Server para el agrupamiento de conexiones {#configure-your-windows-server-for-connection-pooling}
+### Configure Windows Server para el agrupamiento de conexiones {#configure-your-windows-server-for-connection-pooling}
 
 1. Haga clic en Inicio > Ejecutar para inicio del editor del Registro y, en el cuadro Abrir, escriba `regedit` y haga clic en Aceptar.
-1. Ir a la clave del Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Vaya a la clave del Registro `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. En el panel derecho del editor del Registro, busque el nombre del valor TcpTimedWaitDelay. Si el nombre no aparece, seleccione Editar > Nuevo > Valor DWORD en la barra de menús para agregar el nombre.
 1. En el cuadro Nombre, escriba `TcpTimedWaitDelay`
 
@@ -185,10 +185,10 @@ El uso de la agrupación de conexiones en la conexión de búsqueda puede reduci
    >Si no ve un cursor parpadeante y `New Value #` dentro del cuadro, haga clic con el botón derecho en el panel derecho, seleccione Cambiar nombre y, en el cuadro Nombre, escriba `TcpTimedWaitDelay`*.*
 
 1. Repita el paso 4 para los nombres de valor MaxUserPort, MaxHashTableSize y MaxFreeTcbs.
-1. Haga clic con el Doble en el panel derecho para establecer el valor TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.
-1. Haga clic con el Doble en el panel derecho para establecer el valor de MaxUserPort. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65534`.
-1. Haga clic con el Doble dentro del panel derecho para establecer el valor de MaxHashTableSize. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65536`.
-1. Haga clic con el Doble dentro del panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
+1. Haga clic con el doble en el panel derecho para establecer el valor TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.
+1. Haga clic con el doble en el panel derecho para establecer el valor de MaxUserPort. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65534`.
+1. Haga clic con el doble dentro del panel derecho para establecer el valor de MaxHashTableSize. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65536`.
+1. Haga clic con el doble dentro del panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
 
 >[!NOTE]
 >

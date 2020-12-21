@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Esta página proporciona la información esencial para trabajar con la función de tabla de clasificación.
 
-Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar la Puntuación de [comunidades y los distintivos](implementing-scoring.md). Consulte también [Puntuación y distintivos esenciales](configure-scoring.md).
+Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar [Puntuación de comunidades y distintivos](implementing-scoring.md). Consulte también [Esenciales de puntuación y distintivos](configure-scoring.md).
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
@@ -50,7 +50,7 @@ Antes de incluir el componente de la tabla de clasificación en una página, es 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td> 
-   <td>Consulte Función <a href="enabling-leaderboard.md">de tabla de clasificación</a></td> 
+   <td>Consulte <a href="enabling-leaderboard.md">Función de tabla de clasificación</a></td> 
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Antes de incluir el componente de la tabla de clasificación en una página, es 
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la función [de](functions.md#leaderboard-function)Mesa de liderazgo, incluye un `leaderboard` componente configurado.
+Una estructura de sitio de comunidad que incluye la [función de tabla de clasificación](functions.md#leaderboard-function), incluye un componente configurado `leaderboard`.

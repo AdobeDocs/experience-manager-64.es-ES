@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Inicio de un nuevo proceso con los datos de proceso existentes en el espacio de trabajo de AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
+# Inicio de un nuevo proceso con datos de proceso existentes en el espacio de trabajo de AEM Forms {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
 Puede iniciar un nuevo proceso utilizando los datos de un proceso existente. La necesidad de iniciar un nuevo proceso a partir de los datos de proceso existentes surge cuando tenemos que utilizar el mismo formulario frecuentemente con pocos cambios en el contenido, como el de los formularios de tiempo libre de pago. Esta función ahorra tiempo y esfuerzo a los usuarios, especialmente cuando el proceso tiene un largo formulario que rellenar.
 
@@ -27,7 +27,7 @@ A continuación se indican los pasos para iniciar un nuevo proceso a partir de l
 
    * En Seguimiento, haga clic en la instancia de proceso cuyos datos desee utilizar. En la vista Historial de procesos del panel derecho, haga clic en la fila de tarea correspondiente al punto de inicio.
    * En Seguimiento, seleccione una plantilla de búsqueda para mostrar una lista de instancias de proceso. Seleccione la instancia cuyos datos desee utilizar.
-   * En la ficha **[!UICONTROL Tareas pendientes]** , seleccione la tarea. Haga clic en la ficha **[!UICONTROL Historial]** y seleccione la tarea que inició la instancia de proceso.
+   * En la ficha **[!UICONTROL Tareas pendientes]**, seleccione la tarea. Haga clic en la ficha **[!UICONTROL Historial]** y seleccione la tarea que inició la instancia de proceso.
 
    ![inicio3](assets/start3.png) ![inicio1](assets/start1.png)
 

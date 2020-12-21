@@ -28,22 +28,22 @@ Antes de utilizar un servicio, debe configurar y habilitar un punto final. Un pu
 
 Los siguientes tipos de extremos se pueden agregar a los servicios. No todos los servicios admiten todos los extremos:
 
-**Correo electrónico:** Permite que un usuario invoque un servicio enviando un mensaje de correo electrónico con uno o varios archivos adjuntos a una cuenta de correo electrónico específica. Antes de configurar un extremo de correo electrónico, debe configurar las cuentas de correo electrónico necesarias. (Consulte Configuración de los extremos de correo electrónico).
+**Correo electrónico:** permite que un usuario invoque un servicio mediante el envío de un mensaje de correo electrónico con uno o varios archivos adjuntos a una cuenta de correo electrónico específica. Antes de configurar un extremo de correo electrónico, debe configurar las cuentas de correo electrónico necesarias. (Consulte Configuración de los extremos de correo electrónico).
 
-**Carpeta vigilada:** Permite que un usuario invoque un servicio colocando un archivo en una carpeta, que se analiza a un intervalo definido. (Consulte Configuración de los extremos de carpeta observados).
+**Carpeta vigilada:** permite al usuario invocar un servicio mediante la colocación de un archivo en una carpeta, que se analiza en un intervalo definido. (Consulte Configuración de los extremos de carpeta observados).
 
-**Administrador de tareas:** Permite que un usuario de Workspace invoque el servicio.
+**TaskManager:** permite que un usuario de Workspace invoque el servicio.
 
-**Remoting:** Habilita una aplicación creada con Flex para invocar el servicio mediante (obsoleto para AEM formularios) AEM formularios Remoting. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
+**Remoting:** permite que una aplicación creada con Flex invoque el servicio mediante (obsoleto para formularios AEM) AEM formularios Remoting. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
 
-**SOAP:** Permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el modo SOAP. Se crea automáticamente un extremo SOAP para cada servicio activado.
+**SOAP:** permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el modo SOAP. Se crea automáticamente un extremo SOAP para cada servicio activado.
 
-**nota**: *La seguridad se puede quitar de los documentos de seguridad de documento cuando se utiliza el extremo SOAP mientras se ven los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los puntos finales SOAP en sus documentos LCRM, consulte[Deshabilitar los puntos finales SOAP para documentos de seguridad de documento](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**:  *La seguridad se puede quitar de los documentos de seguridad de documento cuando se utiliza el extremo SOAP mientras se ven los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los puntos de conexión SOAP en sus documentos LCRM, consulte [Deshabilitar los puntos de conexión SOAP para documentos de seguridad de documento](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
-**EJB:** Habilita una aplicación cliente desarrollada mediante las API de programación de formularios AEM para invocar el servicio mediante el modo de JavaBeans Enterprise (EJB). Se crea automáticamente un punto final de EJB para cada servicio activado.
+**EJB:** habilita una aplicación cliente desarrollada mediante las API de programación de formularios AEM para invocar el servicio mediante el modo de JavaBeans (EJB) empresarial. Se crea automáticamente un punto final de EJB para cada servicio activado.
 
-**WSDL:** Permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el lenguaje de definición de servicio Web (WSDL). La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de AEM formularios. (Consulte Configuración general de AEM formularios).
+**WSDL:** permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el lenguaje de definición de servicio Web (WSDL). La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de AEM formularios. (Consulte Configuración general de AEM formularios).
 
 **REST:** Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativa (REST). Las solicitudes REST se envían desde páginas HTML. Es decir, puede invocar un proceso de formularios AEM directamente desde una página web mediante una solicitud REST.
 
-Los extremos Correo electrónico, TaskManager, Carpeta vigilada y Remoting solo exponen una operación específica del servicio. Para Añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método para invocar el servicio, configurar parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
+Los extremos Correo electrónico, TaskManager, Carpeta vigilada y Remoting solo exponen una operación específica del servicio. Para añadir estos extremos se requiere un segundo paso de configuración para seleccionar un método para invocar el servicio, configurar parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.

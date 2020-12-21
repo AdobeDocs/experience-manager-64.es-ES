@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Revisar los derechos de uso de un archivo PDF {#review-the-usage-rights-of-a-pdf-file}
+# Revise los derechos de uso de un archivo PDF {#review-the-usage-rights-of-a-pdf-file}
 
 Al cargar un archivo PDF en la aplicación web de extensiones de Acrobat Reader DC, puede realizar la vista de esta información: para vista si se ha ampliado el Reader, si se han aplicado derechos de uso y sus fechas de caducidad.
 
-1. Inicie sesión en la aplicación web de extensiones de Acrobat Reader DC en http://localhost:*[port]*/ReaderExtensions (donde el *[puerto]* es el número de puerto del servidor de aplicaciones).
+1. Inicie sesión en la aplicación web de extensiones de Acrobat Reader DC en http://localhost:*[puerto]*/ReaderExtensions (donde *[puerto]* es el número de puerto del servidor de aplicaciones).
 1. Haga clic en Examinar para cargar el archivo PDF y, a continuación, haga clic en Información. La información aparece debajo del nombre del archivo.
 
    Consulte la Ayuda de extensiones de Acrobat Reader DC para obtener más información sobre cómo modificar los derechos de uso del archivo.

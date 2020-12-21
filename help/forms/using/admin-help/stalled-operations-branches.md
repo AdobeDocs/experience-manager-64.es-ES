@@ -29,24 +29,24 @@ Cuando un proceso se detiene, no se ejecutan más operaciones hasta que se soluc
 
 Para cada elemento detenido, la lista muestra la siguiente información:
 
-**Nombre de la operación o nombre de la rama:** Nombre de la operación o rama.
+**Nombre de Operación o Nombre de Rama:** El nombre de la operación o ramificación.
 
-**Estado:** Siempre se ESTABLECE para los elementos que se han detenido.
+**Estado:** Siempre se INSTALA para los elementos que están inmovilizados.
 
-**Error:** Breve descripción del problema.
+**Error:** una breve descripción del problema.
 
-**ID del proceso:** El entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
+**ID de proceso:** el entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inician un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
 
-**Nombre del proceso - Versión:** Nombre del proceso asignado en Workbench.
+**Nombre del proceso: Versión:** el nombre del proceso asignado en Workbench.
 
-**Fecha de detención:** Fecha y hora en que la operación o rama se ha detenido.
+**Fecha de Parada:** La fecha y la hora en que la operación o rama se ha detenido.
 
 Puede realizar las siguientes tareas en la página Operaciones paralizadas o Ramas paralizadas:
 
 * Seleccione un error para vista de detalles sobre él. Cuando selecciona un error, aparece la página Detalles del error.
 * Finalice o vuelva a intentar las operaciones que se han detenido o reintente las ramas que se han detenido.
 
-## Terminación o reintento de operaciones o sucursales interrumpidas {#terminating-or-retrying-stalled-operations-or-branches}
+## Finalización o reintento de operaciones o ramas paralizadas {#terminating-or-retrying-stalled-operations-or-branches}
 
 En la página Operaciones fijas, puede finalizar las instancias de proceso mostradas.
 
@@ -61,7 +61,7 @@ Cuando reintenta una operación, se envía una solicitud al flujo de trabajo de 
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Errores de operaciones fijas.
 1. En la página Operaciones fijas, seleccione el elemento que desee finalizar y haga clic en Finalizar.
 
-### Reintentar una operación o rama paralizada {#retry-a-stalled-operation-or-branch}
+### Reintentar una operación o rama inmovilizada {#retry-a-stalled-operation-or-branch}
 
 1. En la consola de administración, haga clic en Servicios > flujo de trabajo de formularios y, a continuación, haga clic en Errores de operaciones paralizadas o Errores de ramificación paralizados.
 1. En la página Operaciones fijas o Ramas fijas, seleccione el elemento que desee reintentar y haga clic en Reintentar.
@@ -80,8 +80,8 @@ Los errores se producen cuando la operación Asignar Tarea del servicio Usuario 
 
 Cuando se produce esta situación, el estado del proceso y la tarea no cambia en el tiempo de escalación configurado y la escalación no se produce pero el proceso no se detiene. Aparece el siguiente mensaje en el registro del servidor:
 
-&quot;La entidad de seguridad especificada para la escalación no es válida para taskID: *número*, cola especificada: *número*&quot;.
+&quot;La entidad de seguridad especificada para la escalación no es válida para taskID: *número*, cola especificada: *número*.&quot;
 
 Si se elimina el usuario de escalación antes de que se genere la tarea (antes de que se ejecute la operación Asignar Tarea), se detendrá el proceso o se emitirá el evento de excepción InvalidPrincipal.
 
-Para evitar este problema, al eliminar un usuario, busque tareas que pertenezcan a ese usuario y tratarlas como corresponde. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Para evitar este problema, al eliminar un usuario, busque tareas que pertenezcan a ese usuario y tratarlas como corresponde. (Consulte [Uso de tareas](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

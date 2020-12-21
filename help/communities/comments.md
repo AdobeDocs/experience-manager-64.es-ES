@@ -26,8 +26,8 @@ La función de comentarios se utiliza para permitir que los visitantes del sitio
 
 Esta sección de la documentación describe
 
-* Añadir `Comments`a una página
-* Configuración del `Comments`componente
+* Añadir `Comments`en una página
+* Configuración del componente `Comments`
 
 >[!NOTE]
 >
@@ -35,31 +35,31 @@ Esta sección de la documentación describe
 
 ## Añadir comentarios a una página {#adding-comments-to-a-page}
 
-Para agregar un `Comments`componente a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Comments`a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Comments`
 
 y arrástrelo a su lugar en una página, como una posición relativa a la función en la que los usuarios pueden comentar o simplemente en la parte inferior de la página.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](essentials-comments.md#essentials-for-client-side) necesarias, así es como aparecerá el `Comments`componente.
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](essentials-comments.md#essentials-for-client-side), así es como aparecerá el componente `Comments`.
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Solo puede existir un `Comments`componente en una página. Tenga en cuenta que varias funciones de Comunidades ya incluyen comentarios, como un blog, calendario, foro, control de calidad y reseñas.
+>Sólo puede existir un componente `Comments`en una página. Tenga en cuenta que varias funciones de Comunidades ya incluyen comentarios, como un blog, calendario, foro, control de calidad y reseñas.
 
 ## Configuración de comentarios {#configuring-comments}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Comments` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Comments` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configurar](assets/configure.png) ![comentarios](assets/commentssettings.png)
+![](assets/configure.png) ![configurecommentssettings](assets/commentssettings.png)
 
 ### Ficha Comentarios {#comments-tab}
 
-En la ficha **[!UICONTROL Comentarios]** , especifique cómo los visitantes introducen los comentarios.
+En la ficha **[!UICONTROL Comentarios]**, especifique cómo los visitantes introducen los comentarios.
 
 * **[!UICONTROL Permitir respuestas]**
 
@@ -83,7 +83,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique cómo los visitantes intr
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es relevante si está activada la opción Permitir cargas de archivos. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
@@ -103,7 +103,7 @@ En la ficha **[!UICONTROL Comentarios]** , especifique cómo los visitantes intr
 
 ### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha Moderación **** del usuario, especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+En la ficha **[!UICONTROL Moderación del usuario]**, especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
 * **[!UICONTROL Moderación previa]**
 
@@ -139,45 +139,45 @@ En la ficha Moderación **** del usuario, especifique cómo se administran los c
 
 * **[!UICONTROL Límite de indicación]**
 
-   Especifique el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al umbral **[!UICONTROL de moderación]**. El valor predeterminado es 5.
+   Escriba el número de veces que se debe marcar un comentario antes de que se oculte de la vista pública. Este número debe ser bueno o igual al **[!UICONTROL Umbral de moderación]**. El valor predeterminado es 5.
 
 ### Ficha Ordenar configuración {#sort-settings-tab}
 
-En la ficha **[!UICONTROL Ordenar configuración]** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **[!UICONTROL Ordenar configuración]**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **[!UICONTROL Campo de ordenación]**
 
-   Despliegue para seleccionar uno de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`o `Most Liked`.
+   Despliegue para seleccionar uno de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` o `Most Liked`.
 
 * **[!UICONTROL Orden]**
 
    Despliegue para seleccionar uno de `Ascending` o `Descending`.
 
-### Cambio a un tipo de comentario personalizado {#changing-to-a-custom-comment-type}
+### Cambiar a un tipo de comentario personalizado {#changing-to-a-custom-comment-type}
 
 Al cambiar el tipo de recurso de comentarios, el sistema de comentarios ya no generará una instancia de un comentario usando el valor predeterminado, sino una instancia personalizada (ampliada) por los desarrolladores.
 
-Una vez conocidos los tipos de recursos personalizados, ingrese en Modo [de](../../help/sites-authoring/default-components-designmode.md) diseño y haga clic en el doble del `Comments` componente colocado para abrir un cuadro de diálogo con una ficha adicional.
+Una vez conocidos los tipos de recursos personalizados, introduzca [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga clic en el doble del componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
 
-En la ficha Tipos **[!UICONTROL de]** recursos, especifique el resourceType personalizado para las nuevas instancias de los `Comments or Voting`componentes:
+En la ficha **[!UICONTROL Tipos de recursos]**, especifique el resourceType personalizado para nuevas instancias de los componentes `Comments or Voting`:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Tipo de medio de comentario]**
 
-   Vaya al resourceType de un `comment`componente extendido (un solo comentario) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
+   Vaya al resourceType de un componente `comment`extendido (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
 
    Este recurso identificará el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **[!UICONTROL Tipo de medio de votación]**
 
-   Vaya al resourceType de un `voting`componente extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
+   Vaya al resourceType de un componente `voting`extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
 
    Este recurso identificará el tipo de recurso del UGC creado cuando un visitante publique una votación.
 
 * **[!UICONTROL Tipo de recurso del sistema de comentarios]**
 
-   Vaya al resourceType de un `comments`componente extendido (sistema de comentarios) en /apps. Deje en blanco a menos que la plantilla de página incluya [](scf.md#add-or-include-a-communities-component) dinámicamente el sistema de comentarios en la secuencia de comandos subyacente en lugar de agregarlo a la página como recurso (nodo de comentarios). Obtenga más información leyendo sobre el asistente [{{include}}](handlebars-helpers.md#include).
+   Vaya al resourceType de un componente `comments`extendido (sistema de comentarios) en /apps. Deje en blanco a menos que la plantilla de página [incluya dinámicamente](scf.md#add-or-include-a-communities-component) el sistema de comentarios en la secuencia de comandos subyacente en lugar de agregarla a la página como un recurso (nodo de comentarios). Obtenga más información leyendo sobre el asistente [{{include}}](handlebars-helpers.md#include).
 
 ## Experiencia de Visitante del sitio {#site-visitor-experience}
 
@@ -200,8 +200,8 @@ Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los com
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Comentarios esenciales](essentials-comments.md) para desarrolladores.
+Puede encontrar más información en la página [Comments Essentials](essentials-comments.md) para desarrolladores.
 
-Para moderar los comentarios publicados, consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Para obtener información sobre la moderación de los comentarios publicados, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-Para ver la traducción de los comentarios publicados, consulte [Traducción de contenido](translate-ugc.md)generado por el usuario.
+Para ver la traducción de los comentarios publicados, consulte [Traducción de contenido generado por el usuario](translate-ugc.md).

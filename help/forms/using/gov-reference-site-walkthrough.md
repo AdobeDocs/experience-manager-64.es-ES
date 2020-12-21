@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Recorrido por el sitio de referencia We.Gov {#we-gov-reference-site-walkthrough}
+# Recorrido del sitio de referencia de We.Gov {#we-gov-reference-site-walkthrough}
 
 ## Requisito previo {#pre-requisite}
 
-Configure su sitio de referencia de We.Gov tal como se describe en [Configurar y configurar sitios](/help/forms/using/setup-reference-sites.md)de referencia de AEM Forms.
+Configure el sitio de referencia de We.Gov tal como se describe en [Configure y configure los sitios de referencia de AEM Forms](/help/forms/using/setup-reference-sites.md).
 
-## Escenario de sitio de referencia {#reference-site-scenario}
+## Escenario del sitio de referencia {#reference-site-scenario}
 
 We.Gov es una organización estatal que permite a los padres adoptivos inscribirse para recibir apoyo infantil si adoptan a un niño. El sitio administra lo siguiente:
 
@@ -42,7 +42,7 @@ Una vez presentada la solicitud y abonada la tasa, el solicitante recibe un corr
 
 La organización We.Gov recibe la solicitud. La organización recibe la evaluación de la aplicación y aprueba las solicitudes que son genuinas.
 
-Una vez aprobada la solicitud, el solicitante recibe un correo electrónico del sitio Web We.Gov. La opción Documento **de** Vista del correo electrónico enlaza a un documento con los detalles de inscripción del solicitante.
+Una vez aprobada la solicitud, el solicitante recibe un correo electrónico del sitio Web We.Gov. La opción **Documento de Vista** del correo electrónico enlaza a un documento con los detalles de inscripción del solicitante.
 
 La siguiente infografía muestra el flujo de trabajo paso a paso del escenario del sitio de referencia We.Gov.
 
@@ -57,9 +57,9 @@ El escenario incluye las siguientes personas:
 
 ## Sarah inicia su comprobación de elegibilidad {#sarah-initiates-her-eligibility-check}
 
-Un solicitante puede comprobar si reúne los requisitos para solicitar prestaciones por manutención de los hijos. El sitio permite a los usuarios responder preguntas para permitirles determinar si su aplicación es elegible para recibir beneficios. Sarah, una madre adoptiva, es una posible solicitante. El formulario de elegibilidad es parte de la Solicitud de Servicios de Apoyo a la Infancia del sitio Web We.Gov. Para verificar su elegibilidad, Sarah hace clic en **[!UICONTROL Apoyo]** Infantil en el sitio Web We.Gov. En la página Asistencia para niños, Sarah hace clic en **[!UICONTROL Verificar su elegibilidad]**.
+Un solicitante puede comprobar si reúne los requisitos para solicitar prestaciones por manutención de los hijos. El sitio permite a los usuarios responder preguntas para permitirles determinar si su aplicación es elegible para recibir beneficios. Sarah, una madre adoptiva, es una posible solicitante. El formulario de elegibilidad es parte de la Solicitud de Servicios de Apoyo a la Infancia del sitio Web We.Gov. Para comprobar su elegibilidad, Sarah hace clic **[!UICONTROL Asistencia para niños]** en el sitio Web de We.Gov. En la página Asistencia para niños, Sarah hace clic en **[!UICONTROL Comprobar su elegibilidad]**.
 
-Además del enfoque anterior, Sarah puede hacer clic en **[!UICONTROL Comenzar]** en la página principal. Sarah se desplaza a la página Todas las Aplicaciones, donde puede hacer clic en Aplicar en **[!UICONTROL Solicitud de Servicios]** de Apoyo para Niños. A Sarah la llevan a la verificación de elegibilidad.
+Además del enfoque anterior, Sarah puede hacer clic en **[!UICONTROL Introducción]** en la página principal. Sarah se desplaza a la página Todas las Aplicaciones, donde puede hacer clic en Aplicar en **[!UICONTROL Aplicación para Servicios de Apoyo para Niños]**. A Sarah la llevan a la verificación de elegibilidad.
 
 En la página Verificar elegibilidad para la manutención de los hijos, a Sarah se le hace una serie de preguntas para determinar su elegibilidad para recibir beneficios de manutención de los hijos. A través del conjunto de preguntas, se le hace:
 
@@ -84,20 +84,20 @@ La comprobación de elegibilidad forma parte del formulario adaptable de la apli
 
 ### Véalo usted mismo {#see-it-yourself}
 
-In your browser, open `https://<hostname>:<PublishPort>/content/we-gov/en.html`. En el sitio Web de We.Gov, haga clic en Asistencia para niños. En la página Asistencia para niños, haga clic en Verificar su elegibilidad.
+En el explorador, abra `https://<hostname>:<PublishPort>/content/we-gov/en.html`. En el sitio Web de We.Gov, haga clic en Asistencia para niños. En la página Asistencia para niños, haga clic en Verificar su elegibilidad.
 
 Para ver las reglas:
 
 1. Abra el formulario en modo de edición en la instancia de creación. URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. Select a component and click ![edit-rules](assets/edit-rules.png).
+1. Seleccione un componente y haga clic en ![edit-rules](assets/edit-rules.png).
 
    Se abre el Editor de reglas, que enumera todas las reglas aplicadas en el formulario.
 
-1. En el panel del lado izquierdo, haga clic en reglas `passMsg` y `failMsg` comprenda cómo funciona la comprobación de elegibilidad.
+1. En el panel del lado izquierdo, haga clic en reglas `passMsg` y `failMsg` para comprender cómo funciona la comprobación de elegibilidad.
 
-## Sarah inicio su solicitud de ayuda a los niños {#sarah-starts-her-application-for-child-support}
+## Sarah inicio su solicitud de ayuda para niños {#sarah-starts-her-application-for-child-support}
 
-Sarah hace clic en Solicitud de **[!UICONTROL Inicio]** después de que se le informe de su elegibilidad para recibir apoyo infantil.\
+Sarah hace clic en **[!UICONTROL Solicitud de Inicio]** después de que se le informe de su elegibilidad para recibir ayuda para niños.\
 En la página Solicitud de Servicios de Apoyo para Niños, Sarah proporciona detalles en las siguientes secciones:
 
 * **[!UICONTROL Acerca del solicitante]**: Le permite a Sarah proporcionar sus detalles en esta sección.
@@ -108,11 +108,11 @@ En la página Solicitud de Servicios de Apoyo para Niños, Sarah proporciona det
 
 * **[!UICONTROL Pago]** de comisiones: Le permite a Sarah proporcionar los datos de su tarjeta de crédito para pagar la tasa de solicitud.
 
-De forma predeterminada, Sarah se dirige a la sección **[!UICONTROL Acerca del solicitante]** .
+De forma predeterminada, Sarah se dirige a la sección **[!UICONTROL Acerca del solicitante]**.
 
-![Aplicación de soporte secundario en el escritorio](assets/desktop.png)
+![Aplicación de soporte para niños en el escritorio](assets/desktop.png)
 
-En cualquier momento, Sarah puede hacer clic en **[!UICONTROL Volver más tarde]** y reanudar con su solicitud. Cuando hace clic en **[!UICONTROL Volver más tarde]**, su progreso se guarda como borrador y obtiene una opción para enviar el borrador por correo electrónico.
+En cualquier momento, Sarah puede hacer clic en **[!UICONTROL Volver más tarde]** y reanudar con su aplicación. Cuando hace clic en **[!UICONTROL Volver más tarde]**, su progreso se guarda como borrador y obtiene una opción para enviar el borrador por correo electrónico.
 
 Cuando hace clic en **[!UICONTROL Enviar correo electrónico]**, recibe un correo electrónico con un vínculo al borrador del formulario.
 
@@ -128,7 +128,7 @@ Sarah puede proporcionar detalles en cualquier sección, pero la tasa de solicit
 
 ### <strong>Sarah brinda su información</strong> {#strong-sarah-provides-her-information-strong}
 
-Después de que Sarah haga clic en Solicitud **[!UICONTROL de]** Inicio, se la lleva a la sección Información del solicitante de la página de Solicitud de Servicios de Apoyo Infantil. En Información del solicitante, Sarah navega a través de las fichas y proporciona su información personal para la solicitud. Ella hace clic en **[!UICONTROL Siguiente]** para navegar por las fichas.
+Después de que Sarah haga clic en **[!UICONTROL Solicitud de Inicio]**, se le dirigirá a la sección Información del solicitante de la página Solicitud de Servicios de Apoyo para Niños. En Información del solicitante, Sarah navega a través de las fichas y proporciona su información personal para la solicitud. Ella hace clic **[!UICONTROL Siguiente]** para navegar por las fichas.
 
 En Información del solicitante, se le pide que proporcione detalles en las fichas siguientes:
 
@@ -144,9 +144,9 @@ En Información básica, Sarah proporciona su prueba de identificación y su inf
 
    En Información adicional, Sarah ingresa un número de identificación, su fecha de nacimiento y la dirección y número de teléfono actuales.
 
-### Sarah proporciona información de los niños {#sarah-provides-child-information}
+### Sarah proporciona información secundaria {#sarah-provides-child-information}
 
-Después de que Sarah proporcione su información personal y haga clic en **[!UICONTROL Siguiente]**, se la lleva a la sección Información infantil.
+Después de que Sarah proporcione su información personal y haga clic en **[!UICONTROL Siguiente]**, se la llevará a la sección Información del niño.
 
 En la sección Información del niño, proporciona los siguientes detalles:
 
@@ -158,7 +158,7 @@ Sarah escoge a su hijo único, Joe, y escribe su nombre.
 
 ### Sarah proporciona información de pago {#sarah-provides-payment-information}
 
-Después de que Sarah proporcione información sobre el niño adoptado (o niños) y haga clic en **[!UICONTROL Siguiente]**, se la llevará a la sección Información **[!UICONTROL de]** pago.
+Después de que Sarah proporcione información sobre el niño adoptado (o niños) y haga clic **[!UICONTROL Siguiente]**, se la llevará a la sección **[!UICONTROL Información de pago]**.
 
 En la sección Información de Pago, proporciona los detalles de la cuenta bancaria en la que puede recibir las prestaciones de manutención de los hijos.\
 Ella ingresa su número de cuenta bancaria de 10 dígitos.
@@ -166,7 +166,7 @@ Ella ingresa su número de cuenta bancaria de 10 dígitos.
 ## Sarah paga la tasa de solicitud y firma el formulario {#sarah-pays-the-application-fee-and-signs-the-form}
 
 Después de que Sarah acepta los términos y condiciones de la solicitud, paga la tarifa de solicitud de $25. Se requiere la tasa de solicitud para procesar su solicitud.\
-Sarah ingresa los datos de su tarjeta de crédito y hace clic en **[!UICONTROL Pagar ahora]**. Después de pagar las tarifas, aparece una versión en PDF de la aplicación con un campo de firma.
+Sarah ingresa los detalles de su tarjeta de crédito y hace clic **[!UICONTROL Pagar ahora]**. Después de pagar las tarifas, aparece una versión en PDF de la aplicación con un campo de firma.
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
@@ -185,7 +185,7 @@ We.Gov procesa la solicitud, y Sarah está informada que recibirá una compensac
 
 La aplicación de compatibilidad secundaria utiliza una combinación de diseños de panel como ficha superior, asistente y acordeón para crear la experiencia. Utiliza una plantilla de formulario llamada Plantilla secundaria We.Gov.
 
-El solicitante puede moverse entre secciones para rellenar diferentes componentes del formulario. Cuando el solicitante rellena el formulario, lo envía, acepta los términos y condiciones y paga la tarifa, se inicia un flujo de trabajo personalizado. El flujo de trabajo personalizado envía un correo electrónico automatizado al solicitante que acepta el envío de la solicitud. La solicitud se remite al departamento correspondiente de la organización para su verificación y aprobación.
+El solicitante puede desplazarse por secciones para rellenar distintos componentes del formulario. Cuando el solicitante rellena el formulario, lo envía, acepta los términos y condiciones y paga la tarifa, se inicia un flujo de trabajo personalizado. El flujo de trabajo personalizado envía un correo electrónico automatizado al solicitante que acepta el envío de la solicitud. La solicitud se remite al departamento correspondiente de la organización para su verificación y aprobación.
 
 La presentación del formulario se especifica en el tema del servicio de asistencia para niños del Gobierno. El estilo incluye estilo de componente, fondo de página, formato de estado de error de los componentes y estilos de fuente.
 
@@ -221,7 +221,7 @@ Cuando Sarah rellena y envía la aplicación de soporte para niños, se crea un 
 
 ### Véalo usted mismo {#see-it-yourself-2}
 
-Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, toque **[!UICONTROL Iniciar sesión]**, seleccione la casilla de verificación **[!UICONTROL Iniciar sesión como representante]** e inicie sesión en la bandeja de entrada AEM con grios/password como nombre de usuario/contraseña para Gloria Ríos. Aparece la aplicación de soporte secundario. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
+Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, toque **[!UICONTROL Iniciar sesión]**, seleccione la casilla **[!UICONTROL Iniciar sesión como representante]** e inicie sesión en la bandeja de entrada de AEM con grios/password como nombre de usuario/contraseña para Gloria Rios. Aparece la aplicación de soporte secundario. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administración de aplicaciones y tareas de Forms en AEM Bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
 
 ![La bandeja de entrada de Gloria en el reflujo de We.Gov](assets/gloria-inbox.png)
 
@@ -242,14 +242,14 @@ La aplicación de Sarah es un punto de partida en el flujo de trabajo AEM. Inici
 
 Si se ha completado la configuración, el flujo de trabajo de AEM inicio inmediatamente después de enviar el formulario. Inicie sesión en la bandeja de entrada con las credenciales de Gloria.
 
-Acceda a la bandeja de entrada en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. En la página, toque **[!UICONTROL Iniciar sesión]** y seleccione la casilla de verificación **[!UICONTROL Iniciar sesión como representante]** . Utilice las credenciales predeterminadas de Gloria:
+Acceda a la bandeja de entrada en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html. En la página, toque **[!UICONTROL Iniciar sesión]**, seleccione la casilla **[!UICONTROL Iniciar sesión como representante]** para utilizar las credenciales predeterminadas de Gloria:
 
 * Nombre de usuario: grios
 * Contraseña: password
 
 En su bandeja de entrada AEM, la aplicación de Sarah se agrega como una tarea de revisión. Seleccione la tarea y haga clic en **Evaluación requerida** para continuar con el paso siguiente.
 
-### Conard obtiene la tarea de evaluación {#conard-assessment-task}
+### Conard obtiene la tarea de Evaluación {#conard-assessment-task}
 
 Cuando Gloria hace clic en **[!UICONTROL Evaluación requerida]**, Conard obtiene la tarea de revisión en su Bandeja de entrada AEM. La tarea es el siguiente paso en el flujo de trabajo de AEM definido en el modelo de flujo de trabajo. Él ve la tarea de revisión y la abre.
 
@@ -263,7 +263,7 @@ Conard verifica todos los detalles que Sarah proporcionó, y Sarah firma la eval
 
 ![enviar para reevaluación](assets/submit-for-re-evaluation.png)
 
-La recomendación hace clic en **[!UICONTROL Enviar para reevaluación]** y el flujo de trabajo de AEM envía la evaluación a la organización We.Gov.
+Haga clic en **[!UICONTROL Enviar para reevaluación]** y el flujo de trabajo de AEM envía la evaluación a la organización We.Gov.
 
 ### Cómo funciona {#how-it-works-4}
 
@@ -282,9 +282,9 @@ Las credenciales predeterminadas de Conard son:
 
 Puede ver una nueva tarea de Solicitud de evaluación agregada en la bandeja de entrada. Envíe la evaluación finalizada y continúe con el paso siguiente.
 
-### Gloria revisa la evaluación y aprueba la solicitud {#gloria-reviews-the-assessment-and-approves-the-application}
+### Gloria revisa la evaluación y aprueba la aplicación {#gloria-reviews-the-assessment-and-approves-the-application}
 
-Después de que Conard envíe la evaluación, Gloria ve una tarea de Review en su bandeja de entrada. Selecciona y abre **[!UICONTROL Revisión]**.
+Después de que Conard envíe la evaluación, Gloria ve una tarea de Review en su bandeja de entrada. Selecciona y abre **[!UICONTROL Revisar]**.
 
 ![gloriainbox-1](assets/gloriainbox-1.png)
 
@@ -308,9 +308,9 @@ Abra la tarea para ver el estado de la última acción realizada. En base a la e
 
 Después de que Gloria apruebe la solicitud, Sarah recibe un correo electrónico de We.Gov en el que se indica que su solicitud ha sido aprobada.
 
-El botón Documento **[!UICONTROL de]** Vista del correo electrónico vincula los detalles de su matriculación. Sarah hace clic en el Documento **[!UICONTROL de Vista.]**
+El botón **[!UICONTROL Documento de Vista]** del mensaje de correo electrónico vincula los detalles de su inscripción. Sarah hace clic en **[!UICONTROL Documento de Vista.]**
 
-![approved-registration-kit-email](assets/approval-enrolment-kit-email.png)
+![Aprobación-matriculación-kit-correo electrónico](assets/approval-enrolment-kit-email.png)
 
 Los detalles de listas del documento de inscripción como, por ejemplo, el ID de referencia, el hijo cubierto, la fecha de inicio, el número de cuenta bancaria, la frecuencia de pago y el importe de pago.
 
@@ -340,26 +340,26 @@ We.Gov, de vez en cuando, revisa el rendimiento de su aplicación de servicios d
 
 ### Cómo funciona {#how-it-works-7}
 
-Las métricas de rendimiento del formulario de aplicación de servicios de soporte secundario se rastrean con Adobe Analytics. Para obtener más información sobre la configuración y visualización de Adobe Analytics, consulte [Configuración de análisis para formularios y documentos](/help/forms/using/configure-analytics-forms-documents.md).
+Las métricas de rendimiento del formulario de aplicación de servicios de soporte secundario se rastrean con Adobe Analytics. Para obtener más información sobre la configuración de Adobe Analytics y la visualización de informes, consulte [Configuración de análisis para formularios y documentos](/help/forms/using/configure-analytics-forms-documents.md).
 
 ### Véalo usted mismo {#see-it-yourself-7}
 
 Para que pueda realizar la vista y explorar el informe de análisis, proporcionamos datos de inicialización para la aplicación de servicios de soporte secundarios en el sitio de referencia. Antes de usar datos de raíz, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para vista del informe con los datos de inicialización:
 
-1. Vaya a la interfaz de usuario de **[!UICONTROL Forms y Documentos]** en https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Vaya a **[!UICONTROL Forms &amp; Documentos]** UI en https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
-1. Haga clic para abrir la carpeta **We.Gov** .
-1. Seleccione **[!UICONTROL Aplicación para el formulario adaptable de Servicios]** de asistencia para niños y, a continuación, haga clic en **[!UICONTROL Habilitar análisis]** en la barra de herramientas.
+1. Haga clic para abrir la carpeta **We.Gov**.
+1. Seleccione **[!UICONTROL Aplicación para servicios de soporte para niños]** formulario adaptable y haga clic en **[!UICONTROL Habilitar Analytics]** en la barra de herramientas.
 
-1. Seleccione el formulario de nuevo y haga clic en Informe **** de análisis en la barra de herramientas para generar el informe. Primero verá un informe en blanco.
+1. Seleccione el formulario de nuevo y haga clic en **[!UICONTROL Informe de Analytics]** en la barra de herramientas para generar el informe. Primero verá un informe en blanco.
 
 Para generar un informe de análisis con datos de inicialización:
 
-1. En el navegador de direcciones de la lista CRXDE, escriba: **/apps/we-gov/demo-artifacts/analyticsDatos de prueba del servicio de asistencia técnica TestData/Child Datos de prueba de Analytics**
+1. En el navegador de direcciones de la lista CRXDE, escriba: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Datos de prueba de Analytics**
 1. Los datos de inicialización se seleccionan en la estructura del directorio del lado izquierdo.
 1. Doble haga clic en el archivo seleccionado para abrir su contenido en el panel de la derecha.
 1. Copie todo el contenido del archivo de datos de prueba.
 1. En CRXDE, vaya a: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsepdays**
 1. En el campo analyticsdata de Propiedades, pegue el contenido copiado del archivo de datos de prueba.
-1. Ahora vuelva a generar el informe de análisis para **[!UICONTROL la aplicación para servicios]** de asistencia para niños. Puede ver los datos de inicialización en el informe generado.
+1. Ahora vuelva a generar el informe de análisis para **[!UICONTROL Aplicación para servicios de soporte para niños]**. Puede ver los datos de inicialización en el informe generado.
 

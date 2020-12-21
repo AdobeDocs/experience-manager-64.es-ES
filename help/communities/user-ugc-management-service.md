@@ -24,15 +24,15 @@ ht-degree: 0%
 >
 >El RGPD se utiliza como ejemplo en las secciones que figuran a continuación, pero los detalles abarcados son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-AEM Communities expone las API integradas para administrar los perfiles de los usuarios y el contenido generado por los usuarios (UGC) de forma masiva. Una vez activado, el servicio **UserUgcManagement** permite a los usuarios privilegiados (administradores de la comunidad y moderadores) desactivar los perfiles de usuario y eliminar o exportar de forma masiva UGC para usuarios específicos. Estas API también permiten que los controladores y los procesadores de datos de los clientes cumplan con las Normas Generales de Protección de Datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
+AEM Communities expone las API integradas para administrar los perfiles de los usuarios y el contenido generado por los usuarios (UGC) de forma masiva. Una vez habilitado, el servicio **UserUgcManagement** permite a los usuarios privilegiados (administradores de la comunidad y moderadores) deshabilitar los perfiles de usuario y eliminar o exportar de forma masiva UGC para usuarios específicos. Estas API también permiten que los controladores y los procesadores de datos de los clientes cumplan con las Normas Generales de Protección de Datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
 
-Para obtener más información, consulte la página del [RGPD en el Centro](https://www.adobe.com/privacy/general-data-protection-regulation.html)de Privacidad del Adobe.
+Para obtener más información, consulte la página [RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Si ha configurado [Adobe Analytics en el sitio de AEM Communities](analytics.md) , los datos de usuario capturados se envían al servidor de Adobe Analytics. Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario y cumplir con el RGPD. Para obtener más información, consulte [Enviar solicitudes](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)de acceso y eliminación.
+>Si configuró [Adobe Analytics en el sitio AEM Communities](analytics.md), los datos de usuario capturados se envían al servidor Adobe Analytics. Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario y cumplir con el RGPD. Para obtener más información, consulte [Enviar solicitudes de acceso y eliminación](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-Para poner estas API en uso, debe habilitar el extremo activando el servicio UserUgcManagement `/services/social/ugcmanagement` . Para activar este servicio, instale el servlet de [muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). A continuación, toque el extremo en la instancia de publicación del sitio de comunidades con los parámetros adecuados mediante una solicitud http, similar a la siguiente:
+Para poner estas API en uso, debe habilitar el extremo `/services/social/ugcmanagement` activando el servicio UserUgcManagement. Para activar este servicio, instale el [servlet de muestra](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). A continuación, toque el extremo en la instancia de publicación del sitio de comunidades con los parámetros adecuados mediante una solicitud http, similar a la siguiente:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -87,4 +87,4 @@ Por ejemplo, para eliminar el perfil de un usuario con un ID autorizado weston.m
 
 >[!NOTE]
 >
->la API deleteUserAccount() solo deshabilita un perfil de usuario en el sistema y elimina el UGC. Sin embargo, para eliminar un perfil de usuario del sistema, vaya al **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), busque el nodo de usuario y elimínelo.
+>la API deleteUserAccount() solo deshabilita un perfil de usuario en el sistema y elimina el UGC. Sin embargo, para eliminar un perfil de usuario del sistema, vaya a **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), busque el nodo de usuario y elimínelo.

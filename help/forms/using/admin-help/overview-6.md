@@ -24,7 +24,7 @@ Puede crear credenciales de Capa de sockets seguros (SSL) y configurar SSL en el
 
 Como producto de seguridad, Rights Management requiere la configuración de SSL. Al configurar los certificados SSL, asegúrese de utilizar sólo claves RSA. Los certificados SSL con claves DSA no son compatibles.
 
-La información proporcionada se aplica a las instalaciones llave en mano, automáticas y manuales. oferta un ejemplo de un método para configurar SSL. También puede utilizar otros métodos que sean más adecuados para su red u organización.
+La información proporcionada se aplica a las instalaciones llave en mano, automáticas y manuales. Oferta un ejemplo de un método para configurar SSL. También puede utilizar otros métodos que sean más adecuados para su red u organización.
 
 >[!NOTE]
 >
@@ -34,4 +34,4 @@ La información proporcionada se aplica a las instalaciones llave en mano, autom
 >
 >Al crear certificados de seguridad SSL y credenciales, utilice los mismos privilegios de cuenta de usuario que utilizó para ejecutar el servidor de aplicaciones. Si el servidor de aplicaciones se ejecuta con otros privilegios de usuario, es posible que el formulario no se procese correctamente en las representaciones de PDFForm cuando ContentRootURI apunta a https.
 
-Si tiene un servidor LDAP habilitado para SSL, configure la Administración de usuarios para que funcione con él. (Consulte [Configuración de la administración de usuarios para un servidor](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)LDAP con SSL habilitado).
+Si tiene un servidor LDAP habilitado para SSL, configure la Administración de usuarios para que funcione con él. (Consulte [Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).

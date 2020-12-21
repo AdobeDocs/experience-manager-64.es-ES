@@ -27,7 +27,7 @@ La función de análisis de AEM Forms está disponible como parte del paquete de
 
 Además del paquete de complemento, necesita una cuenta de Adobe Analytics. Para obtener información sobre la solución, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento en los formularios o documentos como se describe en [Configurar análisis e informes](/help/forms/using/configure-analytics-forms-documents.md).
+Una vez que tenga el paquete de complementos de AEM Forms y una cuenta de Adobe Analytics, integre la cuenta de Adobe Analytics con AEM Forms y habilite el seguimiento en los formularios o documentos como se describe en [Configuración de análisis e informes](/help/forms/using/configure-analytics-forms-documents.md).
 
 ## Cómo se registra la información de interacción del usuario {#how-user-interaction-information-is-recorded}
 
@@ -55,17 +55,17 @@ Realice los siguientes pasos para los informes de análisis de vista:
 1. Haga clic en **Forms > Forms y Documentos**.
 
 1. Seleccione el formulario para el que desea realizar la vista de los informes de análisis.
-1. Seleccione **Más > Informes** de Analytics.
+1. Seleccione **Más > Informes de Analytics**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Informe de Analytics, comando
+**A.Informe** de Analytics, comando
 
 AEM Forms muestra los informes de análisis del formulario y de cada panel del formulario, como se muestra a continuación.
 
 ![Informe de resumen de un formulario adaptable](assets/analyticsdashboard_callout.png)
 
-**A.** Conversiones **B.** Resumen a nivel de formulario **C.** Resumen a nivel de panel **D.** Exploradores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma de los visitantes: filtrar
+**A.** Conversiones  **B.Resumen a nivel de** formulario  **C.** Resumen a nivel de panel  **D.** Exploradores de visitantes - filtro  **E.** OS de visitantes - filtro  **** F.Lenguaje de visitantes - filtro
 
 De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede vista de informes de los últimos 15 días, de un último mes, etc., o especificar un intervalo de fechas.
 
@@ -95,11 +95,11 @@ La sección de resumen de nivel de formulario proporciona una visión detallada 
 * **Borradores**: Número de veces que el formulario se ha guardado como borrador
 * **Envíos**: Número de veces que se ha enviado el formulario
 * **Anular**: Número de veces que los usuarios empezaron a rellenar el formulario y luego se fueron sin cumplimentar el formulario
-* **Visitantes**&#x200B;únicos: Número de veces que el formulario se &quot;procesa mediante visitantes únicos. Para obtener más información sobre visitantes únicos, consulte Visitantes [únicos, Visitas y comportamiento](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)del cliente.
+* **Visitantes** únicos: Número de veces que el formulario se &quot;procesa mediante visitantes únicos. Para obtener más información sobre visitantes únicos, consulte [Visitantes únicos, visitas y comportamiento del cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Informe de análisis de resumen de nivel de formulario ampliado](assets/analytics-report.png)
 
-## Panel report {#bottom-summary-report}
+## Informe de panel {#bottom-summary-report}
 
 La sección de resumen de nivel de panel proporciona la siguiente información sobre cada panel del formulario:
 
@@ -119,7 +119,7 @@ El informe detallado muestra los valores de todos los campos del panel.
 
 El informe de panel tiene tres fichas:
 
-* **Informe** de tiempo (predeterminado): Muestra el tiempo, en número de segundos, empleado en rellenar cada uno de los campos del panel
+* **Informe**  de tiempo (predeterminado): Muestra el tiempo, en número de segundos, empleado en rellenar cada uno de los campos del panel
 * **Informe** de errores: Muestra el número de errores encontrados por los usuarios al rellenar los campos
 * **Informe** de ayuda: Número de veces que se ha accedido a la ayuda de un campo concreto
 
@@ -129,9 +129,9 @@ Puede desplazarse entre los paneles si hay varios paneles disponibles.
 
 Las tablas Distribución del explorador, Distribución del sistema operativo y Distribución de idioma muestran las representaciones, visitantes y envíos según los exploradores, el sistema operativo y el idioma de los usuarios del formulario. De forma predeterminada, estas tablas muestran un máximo de cinco entradas. Puede hacer clic en Mostrar más para mostrar más entradas y hacer clic en Mostrar menos para volver a las cinco entradas normales o menos.
 
-Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo: si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
+Para filtrar más los datos de análisis, puede hacer clic en una entrada de cualquiera de las tablas. Por ejemplo, si hace clic en Google Chrome en la tabla de distribución del explorador, el informe se procesa nuevamente con datos relevantes para el explorador Google Chrome de la siguiente manera:
 
-![Filtro aplicado al informe de Analytics - Google Chrome ](assets/filter.png)
+![Filtro aplicado al informe de Analytics - Google Chrome  ](assets/filter.png)
 
 Si vista el informe del panel después de aplicar un filtro, los datos del informe del panel también se muestran según el filtro aplicado.
 
@@ -147,4 +147,4 @@ Una vez aplicado el filtro:
 
 Si tiene habilitadas las pruebas A/B y configuradas para el formulario, la página del informe tiene una lista desplegable que puede utilizar para mostrar el informe de prueba A/B. El informe de prueba A/B muestra el rendimiento comparativo de dos versiones del formulario según se ha configurado.
 
-Para obtener más información sobre la prueba A/B, consulte [Creación y gestión de pruebas A/B para formularios](/help/forms/using/ab-testing-adaptive-forms.md)adaptables.
+Para obtener más información sobre la prueba A/B, consulte [Creación y administración de pruebas A/B para formularios adaptables](/help/forms/using/ab-testing-adaptive-forms.md).

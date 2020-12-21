@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Configuración de las opciones de internacionalización{#setting-internationalization-options}
 
-## Especificar la configuración regional utilizada para procesar formularios {#specify-the-locale-used-to-render-forms}
+## Especifique la configuración regional utilizada para procesar formularios {#specify-the-locale-used-to-render-forms}
 
 Puede especificar la configuración regional que se utilizará al procesar un formulario PDF. Los campos de un formulario PDF utilizan la configuración regional especificada para mostrar los datos. Por ejemplo, si la configuración regional se establece en alemán, el formulario utiliza separadores decimales alemanes para los valores numéricos. La configuración regional también se utiliza para enviar mensajes de validación a dispositivos cliente, como exploradores web, como parte de transformaciones HTML.
 
@@ -32,7 +32,7 @@ Puede especificar la configuración regional que se utilizará al procesar un fo
 
 1. En Internacionalización, en la lista Conjunto de caracteres, seleccione un conjunto de caracteres. Esta configuración depende de la API utilizada, ya sea reneHTMLForm o renePDFForm. Para especificar un conjunto de caracteres distinto de los enumerados, seleccione Personalizado y especifique un valor de codificación en el cuadro que se muestra.
 
-   Para las transformaciones HTML, AEM formularios admiten valores de codificación de caracteres definidos por el `java.nio.charset` paquete. Si sFormPreference es PDFForm, solo se admiten conjuntos de caracteres específicos. El conjunto de caracteres debe ser un nombre canónico válido. El valor predeterminado es ISO-8859-1.
+   Para las transformaciones HTML, AEM formularios admiten valores de codificación de caracteres definidos por el paquete `java.nio.charset`. Si sFormPreference es PDFForm, solo se admiten conjuntos de caracteres específicos. El conjunto de caracteres debe ser un nombre canónico válido. El valor predeterminado es ISO-8859-1.
 
 1. Haga clic en Guardar.
 

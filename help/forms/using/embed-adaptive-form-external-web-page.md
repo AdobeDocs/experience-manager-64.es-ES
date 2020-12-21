@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Aprenda a incrustar un formulario adaptable en una página web externa
 
-Puede [incrustar un formulario adaptable en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+Puede [Incrustar un formulario adaptable en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) o en una página Web alojada fuera de AEM. El formulario adaptable incrustado es totalmente funcional y los usuarios pueden rellenar y enviar el formulario sin salir de la página. Ayuda al usuario a permanecer en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
 ## Requisitos previos {#prerequisites}
 
@@ -28,8 +28,8 @@ Realice los siguientes pasos antes de incrustar un formulario adaptable en un si
 
 * Publique el formulario adaptable en la instancia de AEM Publish.
 * Cree o identifique una página web en el sitio web para alojar el formulario adaptable. Asegúrese de que la página web pueda [leer archivos jQuery desde una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o tenga una copia local de jQuery incorporada. jQuery es necesario para procesar un formulario adaptable.
-* Cuando AEM servidor y la página web se encuentren en distintos dominios, lleve a cabo los pasos enumerados en la sección , [permita que AEM Forms ofrezca formularios adaptables a un sitio](#cross-domain-sites)de varios dominios.
-* [Configure el proxy](#reveseproxy) inverso para habilitar la comunicación entre la página externa y el servidor de AEM Forms.
+* Cuando AEM servidor y la página Web están en diferentes dominios, realice los pasos enumerados en la sección [para permitir que AEM Forms proporcione formularios adaptables a un sitio de dominios cruzados](#cross-domain-sites).
+* [Configure el ](#reveseproxy) proxy inverso para habilitar la comunicación entre la página externa y el servidor de AEM Forms.
 
 ## Incrustar formulario adaptable {#embed-adaptive-form}
 
@@ -99,9 +99,9 @@ Puede incrustar un formulario adaptable insertando algunas líneas de JavaScript
 
 1. En el código incrustado:
 
-   * Cambie el valor de la `options.path` variable por la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se está ejecutando en una ruta de contexto, asegúrese de que la dirección URL incluye la ruta de contexto. Por ejemplo, el código anterior y el código adaptable de residen en el mismo servidor de formularios aem, de modo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
-   * Reemplazar `options.dataRef` por atributos para pasar por la dirección URL. Puede utilizar la variable dataref para [rellenar previamente un formulario](/help/forms/using/prepopulate-adaptive-form-fields.md)adaptable.
-   * Reemplazar `options.themePath` por la ruta de un tema distinto del configurado en el formulario adaptable. También puede especificar la ruta del tema mediante el atributo de solicitud.
+   * Cambie el valor de la variable `options.path` por la ruta de la URL de publicación del formulario adaptable. Si el servidor de AEM se está ejecutando en una ruta de contexto, asegúrese de que la dirección URL incluye la ruta de contexto. Por ejemplo, el código anterior y el código adaptable de residen en el mismo servidor de formularios aem, de modo que el ejemplo utiliza la ruta de contexto del formulario adaptable /content/forms/af/locbasic.html.
+   * Reemplace `options.dataRef` por atributos para pasarlos por la dirección URL. Puede utilizar la variable dataref para [rellenar previamente un formulario adaptable](/help/forms/using/prepopulate-adaptive-form-fields.md).
+   * Reemplace `options.themePath` por la ruta a un tema que no sea el tema configurado en el formulario adaptable. También puede especificar la ruta del tema mediante el atributo de solicitud.
    * `CSS_Selector` es el selector de CSS del contenedor de formulario en el que se incrusta el formulario adaptable. Por ejemplo, la clase css .customafsection es el selector de CSS del ejemplo anterior.
 
 El formulario adaptable se incrusta en la página web. Observe lo siguiente en el formulario adaptable incrustado:
@@ -113,27 +113,27 @@ El formulario adaptable se incrusta en la página web. Observe lo siguiente en e
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionan en el formulario incrustado.
 * Si Adobe Analytics está configurado en el formulario original, los datos de análisis se capturan en el servidor de Adobe Analytics. Sin embargo, no está disponible en el informe de análisis de Forms.
 
-## Configurar proxy inverso  {#reveseproxy}
+## Configurar proxy inverso {#reveseproxy}
 
 La página web externa que incrusta el formulario adaptable envía solicitudes al servidor de AEM, que normalmente se encuentra detrás del servidor de seguridad en una red privada. Para asegurarse de que las solicitudes se dirigen de forma segura al servidor AEM, se recomienda configurar un servidor proxy inverso.
 
-Veamos un ejemplo de cómo configurar un servidor proxy inverso Apache 2.4 sin despachante. En este ejemplo, alojará el servidor de AEM con ruta de `/forms` contexto y asignación `/forms` para el proxy inverso. Garantiza que cualquier solicitud de `/forms` en el servidor Apache se dirija a la instancia de AEM. Esta topología ayuda a reducir el número de reglas en la capa de distribuidor, ya que todas las solicitudes tienen el prefijo `/forms` route al servidor de AEM.
+Veamos un ejemplo de cómo configurar un servidor proxy inverso Apache 2.4 sin despachante. En este ejemplo, alojará el servidor de AEM con `/forms` ruta de contexto y asignará `/forms` para el proxy inverso. Garantiza que cualquier solicitud de `/forms` en el servidor Apache se dirija a la instancia de AEM. Esta topología ayuda a reducir el número de reglas en la capa de despachante, ya que todas las solicitudes tienen el prefijo `/forms` route to the AEM server.
 
-1. Abra el archivo de configuración y quite el comentario de las siguientes líneas de código. `httpd.conf` Como alternativa, puede agregar estas líneas de código en el archivo.
+1. Abra el archivo de configuración `httpd.conf` y quite el comentario de las siguientes líneas de código. Como alternativa, puede agregar estas líneas de código en el archivo.
 
    ```
    LoadModule proxy_html_module modules/mod_proxy_html.so 
     LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-1. Configure las reglas de proxy agregando las siguientes líneas de código en el archivo de configuración `httpd-proxy.conf` .
+1. Configure las reglas de proxy agregando las siguientes líneas de código en el archivo de configuración `httpd-proxy.conf`.
 
    ```
    ProxyPass /forms https://[AEM_Instance]/forms 
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Reemplazar `[AEM_Instance]` con la URL de publicación del servidor de AEM en las reglas.
+   Reemplace `[AEM_Instance]` con la URL de publicación del servidor de AEM en las reglas.
 
 Si no monta el servidor de AEM en una ruta de contexto, las reglas de proxy en la capa Apache serán las siguientes:
 
@@ -154,7 +154,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 >
 >Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, rellenado previo y otras a la lista de permitidos en la capa del despachante.
 
-## Best practices {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 Al incrustar un formulario adaptable en una página web, tenga en cuenta las siguientes prácticas recomendadas:
 
@@ -164,8 +164,8 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 * Utilice la API [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) para descargar el formulario adaptable desde HTML DOM.
 * Configure el encabezado access-control-origen al enviar la respuesta desde AEM servidor.
 
-## Permitir que AEM Forms ofrezca formularios adaptables a un sitio de varios dominios  {#cross-domain-sites}
+## Permitir que AEM Forms ofrezca formularios adaptables a un sitio de dominio cruzado {#cross-domain-sites}
 
 1. En AEM instancia de autor, vaya a AEM Administrador de configuración de la consola web en `http://[server]:[port]/system/console/configMgr`.
-1. Busque y abra la configuración del filtro de Remitente del reenvío **** Apache Sling.
-1. En el campo Hosts **** permitidos, especifique el dominio en el que se encuentra la página web. Permite que el host realice solicitudes de POST al servidor AEM. También puede utilizar la expresión regular para especificar una serie de dominios de aplicación externos.
+1. Busque y abra la configuración del filtro **Remitente del reenvío Sling de Apache**.
+1. En el campo **Hosts permitidos**, especifique el dominio donde reside la página web. Permite que el host realice solicitudes de POST al servidor AEM. También puede utilizar la expresión regular para especificar una serie de dominios de aplicación externos.

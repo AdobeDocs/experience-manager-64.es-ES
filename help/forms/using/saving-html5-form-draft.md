@@ -23,9 +23,9 @@ Puede guardar un formulario HTML5 como borrador y volver a rellenarlo más adela
 
 ## Perfil personalizado para permitir la función Guardar como borrador {#custom-profile-to-allow-save-as-draft-feature}
 
-De forma predeterminada, AEM Forms proporciona un perfil **Guardar como borrador** . Puede procesar un formulario con el perfil Guardar como borrador para activar la funcionalidad de borrador en un formulario HTML5. Puede especificar el perfil de procesamiento HTML para un formulario en [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+De forma predeterminada, AEM Forms proporciona un perfil **Guardar como borrador**. Puede procesar un formulario con el perfil Guardar como borrador para activar la funcionalidad de borrador en un formulario HTML5. Puede especificar el perfil de procesamiento HTML para un formulario en [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
-Para habilitar la funcionalidad Guardar como borrador para el perfil [](/help/forms/using/custom-profile.md)personalizado existente, agregue las siguientes propiedades al nodo de perfil personalizado:
+Para habilitar la funcionalidad Guardar como borrador para el [perfil personalizado](/help/forms/using/custom-profile.md) existente, agregue las siguientes propiedades al nodo de perfil personalizado:
 
 <table> 
  <tbody> 
@@ -50,9 +50,9 @@ Para habilitar la funcionalidad Guardar como borrador para el perfil [](/help/fo
  </tbody> 
 </table>
 
-## Borradores almacenamiento y lista {#drafts-storage-and-listing}
+## Borradores almacenamiento y listado {#drafts-storage-and-listing}
 
-Después de activar la funcionalidad Guardar como borrador para un formulario; cuando se guarda el formulario, se muestra en el componente [](/help/forms/using/draft-submission-component.md)Borradores y envío. Puede recuperar y rellenar en inicio el formulario guardado desde el componente Borrador y envío.
+Después de activar la funcionalidad Guardar como borrador para un formulario; cuando se guarda el formulario, aparece en el componente [Borradores y envío](/help/forms/using/draft-submission-component.md). Puede recuperar y rellenar en inicio el formulario guardado desde el componente Borrador y envío.
 
 Para habilitar la lista de formularios para el componente Borrador y envío, agregue la siguiente propiedad al nodo perfil:
 
@@ -61,16 +61,16 @@ Para habilitar la lista de formularios para el componente Borrador y envío, agr
   <tr> 
    <td><strong>Nombre de propiedad</strong></td> 
    <td><strong>Tipo</strong></td> 
-   <td><strong>Value</strong></td> 
+   <td><strong>Valor</strong></td> 
    <td><strong>Descripción</strong></td> 
   </tr> 
   <tr> 
    <td>fp.enablePortalSubmit</td> 
    <td>Cadena</td> 
    <td>verdadero</td> 
-   <td>Para permitir que los borradores y formularios se incluyan en el componente Borradores y envíos de Forms Portal después del<br /> envío</td> 
+   <td>Para permitir que los borradores y formularios se incluyan en el componente Borradores y envíos de Forms Portal después del envío<br /></td> 
   </tr> 
  </tbody> 
 </table>
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de Publish. Puede agregar su proveedor de almacenamiento personalizado para obtener más información, consulte el componente [almacenamiento](/help/forms/using/adding-custom-storage-provider-forms.md)personalizado para borradores y envíos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo /content/forms/fp de la instancia de Publish. Puede agregar su proveedor de almacenamiento personalizado; para obtener más información, consulte [almacenamiento personalizado para borradores y envíos, componente](/help/forms/using/adding-custom-storage-provider-forms.md).

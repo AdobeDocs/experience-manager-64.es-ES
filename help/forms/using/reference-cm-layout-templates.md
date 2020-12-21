@@ -52,7 +52,7 @@ Con un logotipo en la parte superior, la plantilla clásica es adecuada para una
 
 ![clásica](assets/classic.png)
 
-previsualización PDF de una carta creada con la plantilla clásica
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla clásica
 
 ## Clásico simple {#classic-simple}
 
@@ -60,7 +60,7 @@ Incluye campos para capturar el número de teléfono y la dirección de correo e
 
 ![Fragmento de información de contacto](assets/classicsimple.png)
 
-previsualización en PDF de una carta creada con la plantilla Classic Simple
+PREVISUALIZACIÓN en PDF de una carta creada con la plantilla Classic Simple
 
 ## Equilibrado a la izquierda {#balanced-left}
 
@@ -68,15 +68,15 @@ La plantilla Equilibrada izquierda incluye un logotipo a la izquierda de la letr
 
 ![balancedleft](assets/balancedleft.png)
 
-previsualización PDF de una carta creada con la plantilla Izquierda equilibrada
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla Izquierda equilibrada
 
-## Equilibrado a la derecha {#balanced-right}
+## Equilibrado derecho {#balanced-right}
 
-La plantilla Equilibrada a la derecha tiene el logotipo de compañía a la izquierda y proporciona espacio para introducir la dirección de destinatarios en la propia carta. La plantilla Equilibrada a la derecha también incluye un pie de página que se reajusta cuando la carta tiene varias páginas.
+La plantilla Equilibrada a la derecha tiene el logotipo de compañía a la izquierda y proporciona espacio para introducir la dirección de destinatarios en la propia carta. La plantilla Equilibrada a la derecha también incluye un pie de página que se reorganiza cuando la carta tiene varias páginas.
 
 ![balancedright](assets/balancedright.png)
 
-previsualización en PDF de una carta creada con la plantilla Derecha equilibrada
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla Derecha equilibrada
 
 ## Visual Left {#visual-left}
 
@@ -84,7 +84,7 @@ La plantilla Izquierda visual tiene un encabezado lateral a la izquierda de la p
 
 ![visualleft](assets/visualleft.png)
 
-previsualización PDF de una carta creada con la plantilla Izquierda visual
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla Izquierda visual
 
 ## Visual Top {#visual-top}
 
@@ -92,7 +92,7 @@ La plantilla Visual Top tiene un margen visual en la parte superior. La plantill
 
 ![visualtop](assets/visualtop.png)
 
-previsualización PDF de una carta creada con la plantilla Visual Top
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla Visual Top
 
 ## Visual Top - Classic {#visual-top-classic}
 
@@ -100,5 +100,5 @@ La plantilla Visual Top - Classic tiene un encabezado en la parte superior de la
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-previsualización PDF de una carta creada con la plantilla Visual Top - Classic
+PREVISUALIZACIÓN PDF de una carta creada con la plantilla Visual Top - Classic
 

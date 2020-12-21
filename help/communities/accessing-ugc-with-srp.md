@@ -22,21 +22,21 @@ ht-degree: 0%
 
 ## Acerca de SRP {#about-srp}
 
-Todos los componentes y funciones de AEM Communities se crean en el marco de componentes [sociales (SCF)](scf.md), que invoca la API de SocialResourceProvider para acceder a todo el contenido generado por el usuario (UGC).
+Todos los componentes y características de AEM Communities se crean en el [marco de componentes sociales (SCF)](scf.md), que invoca la API de SocialResourceProvider para acceder a todo el contenido generado por el usuario (UGC).
 
-Antes de crear un sitio de comunidad, el proveedor de recursos de [almacenamiento (SRP)](working-with-srp.md) debe configurarse para seleccionar una implementación coherente con la [topología](topologies.md)subyacente. Las implementaciones de SRP se basan en tres opciones de almacenamiento:
+Antes de crear un sitio de comunidad, el [proveedor de recursos de almacenamiento (SRP)](working-with-srp.md) debe configurarse para seleccionar una implementación coherente con la [topología subyacente](topologies.md). Las implementaciones de SRP se basan en tres opciones de almacenamiento:
 
-1. [ASRP](asrp.md) : almacenamiento a pedido de Adobe
+1. [ASRP](asrp.md) : almacenamiento a pedido de Adobes
 2. [MSRP](msrp.md) - MongoDB
-3. [JSRP](jsrp.md) - JCR
+3. [JSRP](jsrp.md) : JCR
 
 ## Acerca del Almacenamiento UGC {#about-ugc-storage}
 
-Lo que es importante saber sobre el almacenamiento de UGC es que, cuando un sitio está configurado para utilizar ASRP o MSRP, el UGC real no se almacena en AEM almacén [de](../../help/sites-deploying/data-store-config.md) nodos (JCR).
+Lo que es importante saber sobre el almacenamiento de UGC es que, cuando un sitio está configurado para utilizar ASRP o MSRP, el UGC real no se almacena en AEM [almacén de nodos](../../help/sites-deploying/data-store-config.md) (JCR).
 
 Aunque puede haber nodos en JCR que ocultan el UGC para proporcionar metadatos útiles, estos nodos no deben confundirse con el UGC real.
 
-Consulte Información general del proveedor de recursos de [Almacenamiento.](srp.md)
+Consulte [Información general del proveedor de recursos de Almacenamiento.](srp.md)
 
 ## Práctica recomendada {#best-practice}
 
@@ -51,7 +51,7 @@ Métodos para utilizar:
 * Sling API (recurso de Sling)
    * No asumir que hay nodos JCR
 
-* Eventos OSGi
+* EVENTOS OSGi
    * No supongamos que hay eventos JCR
 
 * [Utilidades de recursos sociales](socialutils.md#socialresourceutilities-package)
@@ -60,7 +60,7 @@ Métodos para utilizar:
 Métodos para evitar:
 
 * API de nodo
-* eventos JCR
+* Eventos JCR
 * Iniciadores de flujo de trabajo (que utilizan eventos JCR)
 
 ### Usar colecciones de búsqueda {#use-search-collections}
@@ -71,8 +71,8 @@ Para obtener más información, consulte [Search Essentials](search-implementati
 
 ## Medios {#resources}
 
-* [Almacenamiento](working-with-srp.md) de contenido de la comunidad: analiza las opciones de SRP disponibles para una tienda común UGC
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Esenciales](search-implementation.md) de búsqueda: información esencial para buscar UGC
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Almacenamiento](working-with-srp.md)  de contenido de la comunidad: analiza las opciones de SRP disponibles para una tienda común UGC
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio
+* [Elementos esenciales](srp-and-ugc.md)  de SRP y UGC: métodos y ejemplos de utilidad SRP
+* [Search Essentials](search-implementation.md) : información esencial para buscar UGC
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales

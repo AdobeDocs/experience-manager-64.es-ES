@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la `guidelib.dataIntegrationUtils.executeOperation` API en el editor de código del editor [de](/help/forms/using/rule-editor.md)reglas.
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación invocando servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio de modelo de datos, puede crear una regla en el editor visual o especificar un JavaScript mediante la API `guidelib.dataIntegrationUtils.executeOperation` en el editor de código del [editor de reglas](/help/forms/using/rule-editor.md).
 
-Este documento se centra en escribir un JavaScript usando la `guidelib.dataIntegrationUtils.executeOperation` API para invocar un servicio.
+Este documento se centra en escribir un JavaScript usando la API `guidelib.dataIntegrationUtils.executeOperation` para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 
-La `guidelib.dataIntegrationUtils.executeOperation` API invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
+La API `guidelib.dataIntegrationUtils.executeOperation` invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ La API requiere los siguientes parámetros.
 | `inputs` | Estructura para especificar objetos de formulario cuyos valores se introducen en la operación de servicio |
 | `outputs` | Estructura para especificar objetos de formulario que se rellenarán con los valores devueltos por la operación de servicio |
 
-La estructura de la `guidelib.dataIntegrationUtils.executeOperation` API especifica detalles sobre la operación de servicio. La sintaxis de la estructura es la siguiente:
+La estructura de la API `guidelib.dataIntegrationUtils.executeOperation` especifica detalles sobre la operación del servicio. La sintaxis de la estructura es la siguiente:
 
 ```
 var operationInfo = {
@@ -87,9 +87,9 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
 
 ## Secuencia de comandos de ejemplo para invocar un servicio {#sample-script-to-invoke-a-service}
 
-La siguiente secuencia de comandos de ejemplo utiliza la `guidelib.dataIntegrationUtils.executeOperation` API para invocar la operación de `getAccountById` servicio configurada en el modelo de datos del `employeeAccount` formulario.
+La siguiente secuencia de comandos de ejemplo utiliza la API `guidelib.dataIntegrationUtils.executeOperation` para invocar la operación de servicio `getAccountById` configurada en el modelo de datos de formulario `employeeAccount`.
 
-La `getAccountById` operación toma el valor en el campo del `employeeID` formulario como entrada para el `empId` argumento y devuelve el nombre del empleado, el número de cuenta y el saldo de la cuenta del empleado correspondiente. Los valores de salida se rellenan en los campos de formulario especificados. Por ejemplo, el valor del `name` argumento se rellena en el elemento de `fullName` formulario y el valor del `accountNumber` argumento en el elemento `account` de formulario.
+La operación `getAccountById` toma el valor del campo de formulario `employeeID` como entrada para el argumento `empId` y devuelve el nombre del empleado, el número de cuenta y el saldo de la cuenta del empleado correspondiente. Los valores de salida se rellenan en los campos de formulario especificados. Por ejemplo, el valor del argumento `name` se rellena en el elemento de formulario `fullName` y el valor del argumento `accountNumber` en el elemento de formulario `account`.
 
 ```
 var operationInfo = {

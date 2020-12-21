@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Actualización de la configuración general {#updating-general-settings}
+# Actualizando configuración general {#updating-general-settings}
 
 La configuración general de la aplicación de AEM Forms le permite especificar opciones de configuración como la captura de archivos adjuntos, el modo sin conexión, la pantalla de aterrizaje, la categoría predeterminada y la frecuencia de guardado automático.
 
@@ -27,7 +27,7 @@ Al sincronizar la aplicación con el servidor de AEM Forms, todos los formulario
 
 La solución integrada de aplicaciones de AEM Forms no descarga los archivos adjuntos asociados a cada formulario cuando la aplicación está sincronizada.
 
-En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexión, la pantalla de aterrizaje, el guardado automático y la configuración de sincronización. Puede cambiar la pantalla de [inicio](/help/forms/using/home-screen.md) de la aplicación.
+En la ficha General, cambie los datos adjuntos de descarga, el modo sin conexión, la pantalla de aterrizaje, el guardado automático y la configuración de sincronización. Puede cambiar la [pantalla principal](/help/forms/using/home-screen.md) de la aplicación.
 
 **Vaya a la ficha General de la pantalla Configuración**
 
@@ -46,9 +46,9 @@ Puede realizar los siguientes cambios en la configuración de la aplicación.
 
 * **Buscar adjuntos** de tarea: Para especificar si desea descargar o no los archivos adjuntos asociados cuando se descargue cada tarea en la aplicación.
 
-* **Modo** sin conexión: Para activar o desactivar el servicio sin conexión para la aplicación de AEM Forms. Consulte [Uso del modo](/help/forms/using/work-offline-mode.md) sin conexión para obtener más información.
+* **Modo** sin conexión: Para activar o desactivar el servicio sin conexión para la aplicación de AEM Forms. Consulte [Uso del modo sin conexión](/help/forms/using/work-offline-mode.md) para obtener más información.
 
-* **Pantalla** de aterrizaje: Para definir la ubicación del inicio (pantalla[de inicio](/help/forms/using/home-screen.md)) para la aplicación.
+* **Pantalla** de aterrizaje: Para definir la ubicación del inicio (pantalla [de inicio](/help/forms/using/home-screen.md)) para la aplicación.
 
    Opciones disponibles:
 
@@ -56,11 +56,11 @@ Puede realizar los siguientes cambios en la configuración de la aplicación.
    * Tareas
    * Favoritos
 
-* **categoría** predeterminada: Permite seleccionar la categoría de los formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las Categorías se rellenan en función de los formularios cargados en la aplicación. Forms está disponible en la aplicación en función de la configuración de formulario especificada en el servidor de AEM Forms.
+* **Categoría** predeterminada: Permite seleccionar la categoría de los formularios que se mostrarán en la pantalla de inicio. Cuando selecciona Todo, puede ver todos los formularios en la pantalla de inicio. Las categorías se rellenan en función de los formularios cargados en la aplicación. Forms está disponible en la aplicación en función de la configuración de formulario especificada en el servidor de AEM Forms.
 
-* **Frecuencia** de guardado automático: Para definir la frecuencia con la que la aplicación [móvil guarda los datos](/help/forms/using/autosave-data-app.md) del formulario localmente.
+* **Frecuencia** de guardado automático: Para definir la frecuencia con la que la aplicación  [móvil guarda los datos ](/help/forms/using/autosave-data-app.md) de forma local.
 
-* **Frecuencia** de sincronización: Para definir la frecuencia con la que la aplicación [móvil se sincroniza](/help/forms/using/sync-app.md) con el servidor de AEM Forms en modo en línea.
+* **Frecuencia** de sincronización: Para definir la frecuencia con la que la aplicación  [móvil se ](/help/forms/using/sync-app.md) sincroniza con el servidor de AEM Forms en modo en línea.
 
 **Borrar datos** locales: Borre la base de datos, incluida la configuración y los datos locales de todos los usuarios y el almacenamiento de archivos desde el dispositivo.
 

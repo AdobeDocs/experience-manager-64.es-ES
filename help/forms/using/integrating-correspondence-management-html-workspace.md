@@ -24,15 +24,15 @@ Estas capacidades se mejoran aún más. AEM Forms ahora admite la colaboración 
 
 Por ejemplo, consideremos la gestión de correspondencia como el candidato de muestra para la integración con el espacio de trabajo de AEM Forms. Correspondence Management tiene el concepto de una &#39;Carta&#39;, que puede procesarse y permite realizar acciones.
 
-## Crear recursos de Correspondencia {#create-correspondence-management-assets}
+## Crear recursos de Administración de correspondencia {#create-correspondence-management-assets}
 
-Inicio mediante la creación de una plantilla de gestión de correspondencia de muestra que se procesa en el espacio de trabajo de AEM Forms. Para obtener más información, consulte [Creación de una plantilla](/help/forms/using/create-letter.md)de carta.
+Inicio mediante la creación de una plantilla de gestión de correspondencia de muestra que se procesa en el espacio de trabajo de AEM Forms. Para obtener más información, consulte [Creación de una plantilla de carta](/help/forms/using/create-letter.md).
 
-Acceda a la plantilla Gestión de correspondencia en su dirección URL para comprobar si la plantilla Gestión de correspondencia se puede procesar correctamente. La dirección URL tiene un patrón similar al `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Acceda a la plantilla Gestión de correspondencia en su dirección URL para comprobar si la plantilla Gestión de correspondencia se puede procesar correctamente. La dirección URL tiene un patrón similar a `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 donde `encodedLetterId` es el Id. de letra con codificación URL. Especifique el mismo ID de letra al definir el proceso de procesamiento para la tarea del espacio de trabajo en Workbench.
 
-## Crear una tarea para procesar y enviar una carta en AEM espacio de trabajo {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Cree una tarea para procesar y enviar una carta en AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Antes de ejecutar estos pasos, asegúrese de que es miembro de los siguientes grupos:
 
@@ -44,8 +44,8 @@ Para obtener más información, consulte [Añadir y configurar usuarios](/help/f
 Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM Workspace:
 
 1. Inicie Workbench. Inicie sesión en localhost como administrador.
-1. Haga clic en Archivo > Nuevo > Aplicación. En el campo Nombre de la aplicación, introduzca `CMDemoSample` y haga clic en Finalizar.
-1. Seleccione `CMDemoSample/1.0` y haga clic con el botón derecho `NewProcess`. En el campo de nombre, introduzca `CMRenderer` y haga clic en Finalizar.
+1. Haga clic en Archivo > Nuevo > Aplicación. En el campo Nombre de la aplicación, escriba `CMDemoSample` y haga clic en Finalizar.
+1. Seleccione `CMDemoSample/1.0` y haga clic con el botón derecho `NewProcess`. En el campo de nombre, escriba `CMRenderer` y haga clic en Finalizar.
 1. Arrastre el selector de actividades de punto de Inicio y configúrelo:
 
    1. En Datos de presentación, seleccione Utilizar un recurso CRX.
@@ -101,13 +101,14 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM Wo
    }
    ```
 
-   [DSC de descarga de archivos](assets/dscsample.zip): Hay disponible un DSC de muestra en el archivo adjunto `DSCSample.zip` . Descargue y descomprima el `DSCSample.zip` archivo. Antes de utilizar el servicio DSC, debe configurarlo. Para obtener más información, consulte [Configuración del servicio](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)DSC.
+   [Descargar ](assets/dscsample.zip)
+archivo DSC: Hay disponible un DSC de muestra en el  `DSCSample.zip` archivo adjunto. Descargue y descomprima el archivo `DSCSample.zip`. Antes de utilizar el servicio DSC, debe configurarlo. Para obtener más información, consulte [Configuración del servicio DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    En el cuadro de diálogo Definir Actividad, seleccione la actividad adecuada, como getLetterInstanceInfo, y haga clic en **Aceptar**.
 
 1. Implemente la aplicación. Si se le solicita que registre y guarde los recursos.
-1. Inicie sesión en el espacio de trabajo de formularios AEM en `https://[server]:[port]/lc/content/ws`.
-1. Abra la tarea que ha agregado, CMRenderer. Aparece la carta de Correspondencia de Administración.
+1. Inicie sesión en el área de trabajo de formularios AEM en `https://[server]:[port]/lc/content/ws`.
+1. Abra la tarea que ha agregado, CMRenderer. Aparecerá la carta de Correspondencia Management.
 
    ![cminárea de trabajo](assets/cminworkspace.png)
 

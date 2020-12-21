@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Sitios web del servidor de aplicaciones {#application-server-websites}
+# Sitios web de servidores de aplicaciones {#application-server-websites}
 
 Esta lista contiene vínculos a los sitios web del fabricante para todos los servidores de aplicaciones admitidos.
 

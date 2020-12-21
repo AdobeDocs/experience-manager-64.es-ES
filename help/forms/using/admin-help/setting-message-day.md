@@ -24,21 +24,21 @@ Puede configurar un mensaje para que se muestre en la página de bienvenida de l
 
 Si es necesario, puede utilizar las etiquetas HTML admitidas por Adobe Flash® Player para dar formato al aspecto del texto:
 
-* &lt;a> Etiqueta delimitadora
-* &lt;b> Etiqueta Negrita
-* &lt;br> Etiqueta break
-* &lt;font> Etiqueta de fuente
+* &lt;a> Etiqueta delimitadora&lt;/a>
+* &lt;b> Etiqueta Negrita&lt;/b>
+* &lt;br> Etiqueta de salto
+* &lt;font> Etiqueta de fuente&lt;/font>
 * &lt;img> Etiqueta de imagen
-* &lt;i> Etiqueta cursiva
-* Etiqueta de elemento de Lista &lt;li>
+* &lt;i> Etiqueta en cursiva&lt;/i>
+* &lt;li> Etiqueta de elemento de lista
 * &lt;p> Etiqueta de párrafo
-* Etiqueta &lt;span> Span
-* Etiqueta de formato de texto &lt;textformat>
-* &lt;u> Subrayar etiqueta
+* &lt;span> Etiqueta de expansión&lt;/span>
+* &lt;textformat> Etiqueta de formato de texto
+* &lt;u> Etiqueta Subrayado&lt;/u>
 
-Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad de la `htmlText` clase TextField en la Referencia [del lenguaje de](https://www.adobe.com/support/documentation/en/flex/)Flex.
+Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad `htmlText` para la clase TextField en la [Referencia del lenguaje de Flex](https://www.adobe.com/support/documentation/en/flex/).
 
-## Configurar el mensaje del día {#set-the-message-of-the-day}
+## Configure el mensaje del día {#set-the-message-of-the-day}
 
 1. En la consola de administración, haga clic en Servicios > Espacio de trabajo > Mensaje del día.
 1. En el cuadro Mensaje del día, proporcione el texto que se mostrará en la pantalla de bienvenida.

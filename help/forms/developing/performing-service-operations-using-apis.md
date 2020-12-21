@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Realización de operaciones de servicio mediante API {#performing-service-operations-using-apis}
 
-Antes de realizar el inicio del desarrollo de aplicaciones de cliente mediante las API de AEM Forms, se recomienda leer en primer lugar Invocar AEM Forms, que describe las distintas formas de invocar servicios. (Consulte contenedor [de servicio](/help/forms/developing/service-container.md#service-container)).
+Antes de realizar el inicio del desarrollo de aplicaciones de cliente mediante las API de AEM Forms, se recomienda leer en primer lugar Invocar AEM Forms, que describe las distintas formas de invocar servicios. (Consulte [contenedor de servicio](/help/forms/developing/service-container.md#service-container).)
 
 Después de familiarizarse con los diferentes métodos de invocación, puede aprender a interactuar mediante programación con cada servicio. Puede desarrollar una aplicación cliente en Adobe Flex® Builder™, en un entorno de desarrollo Java o en un entorno como Microsoft Visual Studio .NET que le permita utilizar el WSDL expuesto para el consumo en una pila SOAP nativa.
 

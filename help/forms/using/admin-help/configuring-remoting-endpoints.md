@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Un extremo remoto permite que una aplicación creada con Flex invoque el servicio mediante (obsoleto para formularios AEM) AEM formularios Remoting. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio relevante.
 
-## Configuración de punto final remoto {#remoting-endpoint-settings}
+## Configuración del extremo remoto {#remoting-endpoint-settings}
 
-**Método de autenticación del cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas o no válidas.
+**Método de autenticación de cliente de Flex:** determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas o no válidas.

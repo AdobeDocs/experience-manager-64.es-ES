@@ -34,7 +34,7 @@ El servicio informativo del sistema proporciona un conjunto de API de REST para 
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[servidor]:[puerto]/rest/services/SystemInfo.properties`</p></td> 
-   <td><p>Esta API es un envoltorio para la API <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">de Java system.getProperties</a> . Recupera la configuración del entorno de trabajo actual. </p></td> 
+   <td><p>Esta API es un envoltorio para la API de Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configuración del entorno de trabajo actual. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 

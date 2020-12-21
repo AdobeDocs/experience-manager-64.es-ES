@@ -1,6 +1,6 @@
 ---
-title: Estadísticas de Vista relacionadas con el Administrador de trabajo
-seo-title: Estadísticas de Vista relacionadas con el Administrador de trabajo
+title: Estadísticas de vista relacionadas con el Administrador de trabajo
+seo-title: Estadísticas de vista relacionadas con el Administrador de trabajo
 description: La ficha Administrador de trabajo muestra las estadísticas relacionadas con los elementos del Administrador de trabajo. Descubra cómo puede aplicar vistas y filtros a los elementos de trabajo.
 seo-description: La ficha Administrador de trabajo muestra las estadísticas relacionadas con los elementos del Administrador de trabajo. Descubra cómo puede aplicar vistas y filtros a los elementos de trabajo.
 uuid: c3a575c7-773d-477a-bc75-6cbcf8b836b8
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Estadísticas de Vista relacionadas con el Administrador de trabajo {#view-statistics-related-to-work-manager}
+# Estadísticas de vista relacionadas con el Administrador de trabajo {#view-statistics-related-to-work-manager}
 
-La ficha Administrador de trabajo muestra las estadísticas relacionadas con los elementos del Administrador de trabajo. Estos elementos de trabajo se encuentran en diferentes estados según el lugar en el que se encuentren en el proceso. (Consulte [Estado (solo para categorías predeterminadas, de flujo de trabajo o de Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Puede filtrar la información para que solo se vista un subconjunto de los elementos mediante las distintas opciones disponibles (por ejemplo, Estado o Categoría). Puede ordenar los elementos de trabajo o trabajo resultantes (en orden ascendente o descendente) haciendo clic en uno de los encabezados de columna. Además, puede administrar los elementos de trabajo mediante las herramientas de operación que se muestran encima de la lista de elementos de trabajo.
+La ficha Administrador de trabajo muestra las estadísticas relacionadas con los elementos del Administrador de trabajo. Estos elementos de trabajo se encuentran en diferentes estados según el lugar en el que se encuentren en el proceso. (Consulte [Estado (solo para categorías de predeterminada, flujo de trabajo o Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Puede filtrar la información para que solo se vista un subconjunto de los elementos mediante las distintas opciones disponibles (por ejemplo, Estado o Categoría). Puede ordenar los elementos de trabajo o trabajo resultantes (en orden ascendente o descendente) haciendo clic en uno de los encabezados de columna. Además, puede administrar los elementos de trabajo mediante las herramientas de operación que se muestran encima de la lista de elementos de trabajo.
 
 ## Filtrar los elementos de trabajo {#filter-the-work-items}
 
@@ -29,53 +29,53 @@ La ficha Administrador de trabajo muestra las estadísticas relacionadas con los
 
 ### Categoría {#category}
 
-**Predeterminado:** Todos los elementos de trabajo a los que el cliente no asignó una categoría cuando se enviaron. El Administrador de trabajo administra estos elementos, por lo que los estados pertenecen al Administrador de trabajo.
+**Valor predeterminado:** todos los elementos de trabajo a los que el cliente no asignó una categoría cuando se enviaron. El Administrador de trabajo administra estos elementos, por lo que los estados pertenecen al Administrador de trabajo.
 
-**Administrador de trabajos:** Todos los trabajos que pertenecen al Administrador de trabajos. Job Manager administra sus propios trabajos y tiene sus propios estados. Consulte los estados de trabajos específicos que se describen a continuación.
+**Administrador de trabajos:** todos los trabajos que pertenecen al Administrador de trabajos. Job Manager administra sus propios trabajos y tiene sus propios estados. Consulte los estados de trabajos específicos que se describen a continuación.
 
-**Flujo de trabajo:** Todos los elementos de trabajo que pertenecen a la ejecución del flujo de trabajo. Workflow no administra sus propios elementos de trabajo, sino que depende del Administrador de trabajo; por lo tanto, los estados pertenecen al Administrador de trabajos.
+**Flujo de trabajo:** todos los elementos de trabajo que pertenecen a la ejecución de Flujo de trabajo. Workflow no administra sus propios elementos de trabajo, sino que depende del Administrador de trabajo; por lo tanto, los estados pertenecen al Administrador de trabajos.
 
-**Eventos:** Todos los elementos de trabajo que pertenecen a Administración de Eventos. Evento Management no administra sus propios elementos de trabajo, sino que depende del Administrador de trabajo; por lo tanto, los estados pertenecen al Administrador de trabajos.
+**Eventos:** todos los elementos de trabajo que pertenecen a Administración de Eventos. Evento Management no administra sus propios elementos de trabajo, sino que depende del Administrador de trabajo; por lo tanto, los estados pertenecen al Administrador de trabajos.
 
-### Estado (solo para categorías predeterminadas, de flujo de trabajo o de Eventos) {#status-for-default-workflow-or-events-categories-only}
+### Estado (solo para categorías de Eventos, flujo de trabajo o predeterminado) {#status-for-default-workflow-or-events-categories-only}
 
-**Mostrar todo:** Muestra todos los elementos de trabajo actuales.
+**Mostrar todo:** muestra todos los elementos de trabajo actuales.
 
-**Programado:** Muestra todos los elementos de trabajo listos para ser ejecutados por el servidor de aplicaciones pero aún no iniciados.
+**Programado:** muestra todos los elementos de trabajo listos para ser ejecutados por el servidor de aplicaciones pero aún no iniciados.
 
-**En pausa:** Muestra todos los elementos de trabajo programados que la aplicación cliente ha pausado. Estos elementos se pueden ejecutar o eliminar. (Consulte Gestión de los elementos de trabajo o los trabajos).
+**Pausado:** muestra todos los elementos de trabajo programados que la aplicación cliente ha pausado. Estos elementos se pueden ejecutar o eliminar. (Consulte Gestión de los elementos de trabajo o los trabajos).
 
-**En curso:** Muestra todos los elementos de trabajo que el Administrador de trabajo del servidor de aplicaciones seleccionó y que se completarán o no. No se pueden usar operaciones en estos elementos de trabajo.
+**En curso:** muestra todos los elementos de trabajo que el administrador de trabajo del servidor de aplicaciones seleccionó y que se completarán o no. No se pueden usar operaciones en estos elementos de trabajo.
 
-**Completado:** Muestra todos los elementos de trabajo que se ejecutaron correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al completar las rellamadas a los controladores de rellamada. Puede eliminar estos elementos mediante la operación Eliminar elementos. (Consulte Gestión de los elementos de trabajo o los trabajos).
+**Finalizado:** muestra todos los elementos de trabajo que se ejecutaron correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al completar las rellamadas a los controladores de rellamada. Puede eliminar estos elementos mediante la operación Eliminar elementos. (Consulte Gestión de los elementos de trabajo o los trabajos).
 
-**Error:** Muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Gestión de los elementos de trabajo o los trabajos). Un vínculo Error en la columna Estado permite acceder a los detalles del error.
+**Error:** muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Gestión de los elementos de trabajo o los trabajos). Un vínculo Error en la columna Estado permite acceder a los detalles del error.
 
-**Desconocido:** Muestra todos los elementos de trabajo cuyo estado es desconocido.
+**Desconocido:** muestra todos los elementos de trabajo cuyo estado es desconocido.
 
-### Estado (solo para la categoría de Job Manager) {#status-for-job-manager-category-only}
+### Estado (solo para categoría de Job Manager) {#status-for-job-manager-category-only}
 
-**Finalizado:** Muestra todos los trabajos que se han ejecutado correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al completar las rellamadas a los controladores de rellamada.
+**Finalizado:** muestra todos los trabajos que se han ejecutado correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al completar las rellamadas a los controladores de rellamada.
 
-**Completar solicitado:** Muestra los trabajos para los que se realizó una solicitud completa.
+**Completar solicitado:** muestra los trabajos para los que se realizó una solicitud completa.
 
-**Error solicitado:** Muestra los trabajos para los que se realizó una solicitud de error.
+**Error solicitado:** muestra los trabajos para los que se realizó una solicitud de error.
 
-**Error:** Muestra los trabajos que no se completaron correctamente debido a una condición de error. Un vínculo Error en la columna Estado permite acceder a los detalles del error.
+**Error:** muestra los trabajos que no se completaron correctamente debido a una condición de error. Un vínculo Error en la columna Estado permite acceder a los detalles del error.
 
-**Finalización solicitada:** Muestra los trabajos para los que se realizó una solicitud de finalización.
+**Finalización solicitada:** muestra los trabajos para los que se realizó una solicitud de finalización.
 
-**Finalizado:** Muestra los trabajos que finalizaron sin completarse.
+**Finalizado:** muestra los trabajos que finalizaron sin completarse.
 
-**Suspender solicitado:** Muestra los trabajos para los que se realizó una solicitud de suspensión.
+**Suspender solicitado:** muestra los trabajos para los que se realizó una solicitud de suspensión.
 
-**Suspendido:** Muestra los trabajos que están suspendidos.
+**Suspendido:** muestra los trabajos que están suspendidos.
 
-**Reanudación solicitada:** Muestra los trabajos para los que se realizó una solicitud de reanudación.
+**Reanudar solicitado:** muestra los trabajos para los que se realizó una solicitud de reanudación.
 
-**En cola:** Muestra los trabajos que están en la cola.
+**En cola:** muestra los trabajos que están en la cola.
 
-**Ejecutando:** Muestra los trabajos que se están ejecutando.
+**Ejecución:** muestra los trabajos que se están ejecutando.
 
 ### Nombre del servidor {#server-name}
 
@@ -93,9 +93,9 @@ Por ejemplo, si selecciona Crear hora = 1 día y Antes de = Usar fecha y hora ac
 
 >[!NOTE]
 >
->En implementaciones de bases de datos Oracle, los filtros de intervalos de fechas (es decir, Crear tiempo y Antes de los ajustes) no funcionan correctamente. Utilice otro filtro para recuperar elementos de trabajo.
+>En las implementaciones de bases de datos de Oracle, los filtros de intervalo de fechas (es decir, Crear tiempo y Antes de la configuración) no funcionan correctamente. Utilice otro filtro para recuperar elementos de trabajo.
 
-## Acerca de la interfaz de la ficha Administrador de trabajo {#about-the-work-manager-tab-interface}
+## Acerca de la interfaz de ficha Administrador de trabajo {#about-the-work-manager-tab-interface}
 
 Cuando se ejecuta una consulta de Administrador de trabajos o se realiza una operación en un trabajo o trabajo, aparece un mensaje encima de la lista. Este mensaje proporciona comentarios sobre la acción que ha iniciado y, en algunos casos, un vínculo Más información para proporcionar detalles. Por ejemplo, si falla la operación iniciada, el mensaje indica tanto y proporciona un vínculo para obtener detalles sobre el error.
 
@@ -109,13 +109,13 @@ Al hacer clic en Más información, el cuadro de diálogo Detalles de la operaci
    >
    >Las operaciones están disponibles en función del estado del elemento.
 
-   **Eliminar elementos:** Elimina el elemento de trabajo o trabajo seleccionado.
+   **Eliminar elementos:** elimina el elemento de trabajo o trabajo seleccionado.
 
-   **Pausar elementos:** Pausa el elemento de trabajo o trabajo seleccionado.
+   **Pausar elementos:** pausa el elemento de trabajo o trabajo seleccionado.
 
-   **Reanudar elementos:** Reanuda el elemento de trabajo o trabajo seleccionado desde su estado en pausa.
+   **Reanudar elementos:** reanuda el elemento de trabajo o trabajo seleccionado desde su estado en pausa.
 
-   **Elementos de reintento:** Intenta volver a ejecutar el trabajo o elemento de trabajo seleccionado desde su estado actual.
+   **Elementos de reintento:** intenta volver a ejecutar el trabajo o elemento de trabajo seleccionado desde su estado actual.
 
    Puede comprobar si una operación se ha realizado correctamente haciendo clic en Más información sobre la lista. Se muestra un cuadro de diálogo que contiene los elementos de trabajo o trabajos seleccionados y sus estados.
 

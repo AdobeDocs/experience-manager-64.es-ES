@@ -17,40 +17,40 @@ ht-degree: 0%
 ---
 
 
-# Informes predefinidos en Sistema de informes de procesos {#pre-defined-reports-in-process-reporting}
+# Informes predefinidos en el Sistema de informes de procesos {#pre-defined-reports-in-process-reporting}
 
-AEM Forms Process Sistema de informes se entrega con los siguientes informes *predeterminados* :
+AEM Forms Process Sistema de informes se envía con los siguientes *informes predeterminados*:
 
-* **[Procesos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**de larga duración: Un informe de todos los procesos de AEM Forms que tardaron más de un tiempo en completarse
+* **[Procesos](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)** de larga duración: Un informe de todos los procesos de AEM Forms que tardaron más de un tiempo en completarse
 
-* **[Gráfico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**de duración del proceso: Informe de un proceso de AEM Forms especificado por duración
+* **[Gráfico](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)** de duración del proceso: Informe de un proceso de AEM Forms especificado por duración
 
-* **[Volumen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**de flujo de trabajo: Un informe de las instancias en ejecución y completadas del proceso especificado por fecha
+* **[Volumen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)** de flujo de trabajo: Un informe de las instancias en ejecución y completadas del proceso especificado por fecha
 
-## Procesos de larga duración {#long-running-processes}
+## Procesos de larga ejecución {#long-running-processes}
 
 El informe Procesos de larga ejecución muestra los procesos de AEM Forms que han tardado más de un tiempo en completarse.
 
 ### Para ejecutar un informe de proceso de larga ejecución {#to-execute-a-long-running-process-report-br}
 
-1. Para vista de la lista de informes predefinidos en el Sistema de informes de procesos, en la vista de árbol de Sistemas de informes **de** procesos, haga clic en el nodo **Informes** .
-1. Haga clic en el nodo del informe Procesos **de ejecución** prolongada.
+1. Para vista de la lista de informes predefinidos en Process Sistema de informes, en la vista de árbol **Sistema de informes de proceso**, haga clic en el nodo **Informes**.
+1. Haga clic en el nodo del informe **Procesos de larga ejecución**.
 
    ![long_running_node](assets/long_running_node.png)
 
-   Al seleccionar un informe, se muestra el panel Parámetros **del** informe a la derecha de la vista de árbol.
+   Al seleccionar un informe, se muestra el panel **Parámetros del informe** a la derecha de la vista de árbol.
 
    ![panel Parámetros del informe de procesos en ejecución prolongada](assets/report_parameters_panel.png)
 
    Parámetros:
 
-   * **Duración**(*obligatoria*): Especifique una duración y una unidad de tiempo. Muestre todos los procesos de AEM Forms que se han ejecutado durante más tiempo del especificado.
-   * **Iniciado después** (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron después de la fecha especificada.
-   * **Iniciado antes** (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron antes de la fecha especificada.
+   * **Duración** (*obligatoria*): Especifique una duración y una unidad de tiempo. Muestre todos los procesos de AEM Forms que se han ejecutado durante más tiempo del especificado.
+   * **Iniciado después**  (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron después de la fecha especificada.
+   * **Iniciado antes**  (*opcional*): Seleccione una fecha. Filtre el informe para mostrar las instancias de proceso que comenzaron antes de la fecha especificada.
 
 1. Haga clic en **Ir** para ejecutar el informe.
 
-   El informe se muestra en el panel **Informe** a la derecha de la ventana Sistema de informes **de** proceso.
+   El informe se muestra en el panel **Informe** a la derecha de la ventana **Sistema de informes de proceso**.
 
    ![long_running_process](assets/long_running_processes.png)
 
@@ -66,18 +66,18 @@ El informe Duración del proceso muestra el número de instancias de un proceso 
 
 ### Para ejecutar un informe de duración del proceso {#to-execute-a-process-duration-report-br}
 
-1. Para vista de los informes predefinidos en Process Sistema de informes, en la vista del árbol de Sistemas de informes **de** procesos, haga clic en el nodo **Informes** .
-1. Haga clic en el nodo del informe **Duración** de los procesos.
+1. Para vista de los informes predefinidos en Process Sistema de informes, en la vista de árbol **Sistema de informes de proceso**, haga clic en el nodo **Informes**.
+1. Haga clic en el nodo del informe **Duración de los procesos**.
 
    ![process_duration_node](assets/process_duration_node.png)
 
-   Al seleccionar un informe, se muestra el panel Parámetros **del** informe a la derecha de la vista de árbol.
+   Al seleccionar un informe, se muestra el panel **Parámetros del informe** a la derecha de la vista de árbol.
 
    ![panel Parámetros del informe de procesos en ejecución prolongada](assets/process_duration_params.png)
 
    Parámetros:
 
-   * **Seleccionar proceso** (*obligatorio*): Seleccione un proceso de AEM Forms.
+   * **Seleccionar proceso**  (*obligatorio*): Seleccione un proceso de AEM Forms.
 
 1. Haga clic en **Ir** para ejecutar el informe.
 
@@ -97,24 +97,24 @@ El informe Volumen del flujo de trabajo muestra el número de instancias de un p
 
 ### Para ejecutar un informe de volumen de flujo de trabajo {#to-execute-a-workflow-volume-report-br}
 
-1. Para vista de los informes predefinidos en Process Sistema de informes, en la vista del árbol de Sistemas de informes **de** procesos, haga clic en el nodo **Informes** .
-1. Haga clic en el nodo del informe Volumen **de** flujo de trabajo.
+1. Para vista de los informes predefinidos en Process Sistema de informes, en la vista de árbol **Sistema de informes de proceso**, haga clic en el nodo **Informes**.
+1. Haga clic en el nodo del informe **Volumen del flujo de trabajo**.
 
    ![workflow_volume_node](assets/workflow_volume_node.png)
 
-   Al seleccionar un informe, se muestra el panel Parámetros **del** informe a la derecha de la vista de árbol.
+   Al seleccionar un informe, se muestra el panel **Parámetros del informe** a la derecha de la vista de árbol.
 
    ![panel Parámetros del informe de procesos en ejecución prolongada](assets/workflow_volume_params.png)
 
    Parámetros:
 
-   * **Seleccionar proceso**(*obligatorio*): Seleccione un proceso de AEM Forms.
-   * **Iniciado después** (*opcional*): Seleccione una fecha. Filtros el informe para mostrar las instancias de proceso que comenzaron después de la fecha especificada.
-   * **Iniciado antes** (*opcional*): Seleccione una fecha. Filtros el informe para mostrar las instancias de proceso que comenzaron antes de la fecha especificada.
+   * **Seleccionar proceso** (*obligatorio*): Seleccione un proceso de AEM Forms.
+   * **Iniciado después**  (*opcional*): Seleccione una fecha. Filtros el informe para mostrar las instancias de proceso que comenzaron después de la fecha especificada.
+   * **Iniciado antes**  (*opcional*): Seleccione una fecha. Filtros el informe para mostrar las instancias de proceso que comenzaron antes de la fecha especificada.
 
 1. Haga clic en **Ir** para ejecutar el informe.
 
-   El informe se muestra en el panel **Informe** a la derecha de la ventana Sistema de informes **de** proceso.
+   El informe se muestra en el panel **Informe** a la derecha de la ventana **Sistema de informes de proceso**.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 

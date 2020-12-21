@@ -17,9 +17,9 @@ ht-degree: 3%
 ---
 
 
-# Propiedades de configuración de Correspondencia Management {#correspondence-management-configuration-properties}
+# Propiedades de configuración de la administración de correspondencia {#correspondence-management-configuration-properties}
 
-Para configurar estas propiedades, abra la siguiente URL en un explorador: `https://<server>:<port>/<contextPath>/system/console/configMgr` y seleccione Configuraciones **de administración de correspondencia**.
+Para configurar estas propiedades, abra la siguiente URL en un explorador: `https://<server>:<port>/<contextPath>/system/console/configMgr` y seleccione **Configuraciones de Administración de Correspondencia**.
 
 Correspondence Management tiene las siguientes propiedades de configuración:
 
@@ -34,19 +34,19 @@ Correspondence Management tiene las siguientes propiedades de configuración:
   <tr> 
    <td><p>Sangría</p> </td> 
    <td>Sangría en módulos<p> </p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12,7 mm</p> </td> 
    <td><p>Cualquier número</p> </td> 
   </tr> 
   <tr> 
    <td>Ancho mínimo del número</td> 
    <td>Anchura mínima que se aplicará al campo viñeta/número, al utilizar Listas numeradas aparte de números romanos</td> 
-   <td>8.0mm</td> 
+   <td>8,0 mm</td> 
    <td>Cualquier número</td> 
   </tr> 
   <tr> 
    <td><p>Anchura mínima de números romanos</p> </td> 
    <td><p>Ancho mínimo que se aplicará al campo viñeta/número, al utilizar números romanos</p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12,7 mm</p> </td> 
    <td><p>Cualquier número</p> </td> 
   </tr> 
   <tr> 
@@ -62,14 +62,14 @@ Correspondence Management tiene las siguientes propiedades de configuración:
    <td><p>true / false</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Tipo de resaltado de Destinatario</p> </td> 
-   <td><p>Tipo de resaltado de Destinatario en la aplicación Crear correspondencia</p> </td> 
+   <td><p>Tipo de resaltado de destinatario</p> </td> 
+   <td><p>Tipo de resaltado de destinatario en la aplicación Crear correspondencia</p> </td> 
    <td><p>border</p> </td> 
    <td><p>borde / relleno / ninguno</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Color de resaltado de Destinatario</p> </td> 
-   <td><p>Color de resaltado de Destinatario en la aplicación Crear correspondencia</p> </td> 
+   <td><p>Color de resaltado de destinatario</p> </td> 
+   <td><p>Color de resaltado de destinatario en la aplicación Crear correspondencia</p> </td> 
    <td><p>90;155;245</p> </td> 
    <td><p>Cualquier color RGB en formato R;G;B</p> </td> 
   </tr> 
@@ -155,13 +155,13 @@ Correspondence Management tiene las siguientes propiedades de configuración:
    <td><p>Formatos de visualización de datos</p> </td> 
    <td><p>Especifica el formato de visualización específico de configuración regional para los datos</p> </td> 
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td><p>Formato de edición de datos</p> </td> 
    <td><p>Editar formato para los datos. Se utiliza al escribir datos como String o al analizar datos desde String</p> </td> 
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td>--<p> </p> </td> 
+   <td>—<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Administrar instancias de carta en publicación</p> </td> 
@@ -244,18 +244,18 @@ Correspondence Management tiene las siguientes propiedades de configuración:
   <tr> 
    <td><p>Raíz del usuario de CM</p> </td> 
    <td><p>Dirección URL de la carpeta que contiene todos los recursos de usuario de Correspondence Management</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
    <td><p>Ubicación de carpeta válida</p> </td> 
   </tr> 
   <tr> 
    <td><p>Tamaño de caché de letras</p> </td> 
-   <td><p>Especifique el número máximo de letras que se guardarán en la caché.</p> <p>Si cambia este valor, se depurará la <code>in-memory</code> caché.</p> </td> 
+   <td><p>Especifique el número máximo de letras que se guardarán en la caché.</p> <p>Si cambia este valor, se depurará la caché <code>in-memory</code>.</p> </td> 
    <td><p>100</p> </td> 
    <td><p>Cualquier valor numérico</p> </td> 
   </tr> 
   <tr> 
    <td><p>Habilitar caché de letras</p> </td> 
-   <td><p>Habilite o deshabilite la caché de letras.</p> <p>Si cambia este valor, se depurará la <code>in-memory </code> caché.</p> </td> 
+   <td><p>Habilite o deshabilite la caché de letras.</p> <p>Si cambia este valor, se depurará la caché <code>in-memory </code>.</p> </td> 
    <td><p>verdadero</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -291,7 +291,7 @@ Correspondence Management tiene las siguientes propiedades de configuración:
   </tr> 
   <tr> 
    <td><p>Depurar directorio </p> <p> </p> </td> 
-   <td>Ubicación de la carpeta del sistema de archivos para la depuración. Si el directorio no <code>exists</code>lo hace, no se generará ningún volcado de depuración.</td> 
+   <td>Ubicación de la carpeta del sistema de archivos para la depuración. Si el directorio no <code>exists</code>, no se generará ningún archivo de depuración.</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

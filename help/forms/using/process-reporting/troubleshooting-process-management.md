@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Problemas al crear filtros en Internet Explorer 9 en Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Si crea filtros para informes predefinidos, se producen de forma intermitente los siguientes problemas en el entorno de **Internet Explorer 9** para **Microsoft Windows 7** :
+Si crea filtros para informes predefinidos, se producen de forma intermitente los siguientes problemas en el entorno **Internet Explorer 9** para **Microsoft Windows 7**:
 
 * La lista desplegable del campo Valor muestra identificadores únicos en lugar de valores.
 * El control Calendario del campo Valor muestra caracteres japoneses.

@@ -45,34 +45,34 @@ Complete los siguientes pasos para agregar un gráfico a una comunicación inter
 
    El componente Gráfico colocado crea un marcador de posición para un gráfico.
 
-1. Toque el componente de gráfico en el editor de comunicación interactiva y, en la barra de herramientas Componente, seleccione **[!UICONTROL Configurar (]** configure_icon ![](assets/configure_icon.png)).
+1. Toque el componente de gráfico en el editor de Comunicación interactiva y, en la barra de herramientas Componente, seleccione **[!UICONTROL Configurar (]** ![configurar_icono](assets/configure_icon.png)).
 
    La barra lateral de propiedades aparece con las propiedades básicas del gráfico en el foco.
 
    ![Propiedades básicas de un gráfico de tipo de línea en el canal de impresión](assets/chart_basicproperties.png)
-   **Figura:** *Propiedades básicas de un gráfico de tipo de línea en el canal de impresión*
+   **Figura:Propiedades** *básicas de un gráfico de tipo de línea en el canal de impresión*
 
    ![Propiedades básicas de un gráfico de tipo de línea en el canal web](assets/basicpropertieswebchannel.png)
-   **Figura:** *Propiedades básicas de un gráfico de tipo de línea en el canal web*
+   **Figura:Propiedades** *básicas de un gráfico de tipos de línea en el canal web*
 
 1. Configure las propiedades básicas del gráfico para el canal de impresión y el canal web. Aparte de las propiedades comunes, existen propiedades específicas de impresión y canal web y del tipo de gráfico.
 
    * **[!UICONTROL Nombre]**: Nombre del objeto de gráfico. El nombre del gráfico que especifique aquí no aparece en el resultado del gráfico, sino que se utiliza en las reglas para hacer referencia al gráfico.
    * **[!UICONTROL Tipo]** de gráfico: Especifique el tipo de gráfico: Circular, Columna, Tono, Línea, Línea y Punto, Punto o Área.
    * **[!UICONTROL Ocultar objeto]**: Seleccione esta opción para ocultar el gráfico en el resultado final.
-   * Especifique lo siguiente para los ejes **** X e **[!UICONTROL Y]**:
+   * Especifique lo siguiente para **[!UICONTROL eje x]** y **[!UICONTROL eje y]**:
 
       * **[!UICONTROL Título]**: Especifique los títulos de los ejes X e Y que se mostrarán en la Comunicación interactiva.
       * **[!UICONTROL Objeto del modelo de datos *]**: Examine y seleccione los objetos del modelo de datos para los ejes X e Y del gráfico desde el modelo de datos de formulario especificado al crear la comunicación interactiva. Elija dos propiedades de colección/tipo de matriz del mismo objeto del modelo de datos principal que sean significativas en relación mutua para trazar en los ejes X e Y de un gráfico.
-      * **[!UICONTROL Función]**: Para utilizar funciones estadísticas para calcular los valores en el eje, seleccione una función para el eje X / Y. Para obtener más información sobre las funciones, consulte [Uso de funciones en el gráfico](#usefunction) y [Ejemplo 2: Aplicación de funciones de suma y media en un gráfico](#applicationsumfrequency)de líneas.
+      * **[!UICONTROL Función]**: Para utilizar funciones estadísticas para calcular los valores en el eje, seleccione una función para el eje X / Y. Para obtener más información sobre las funciones, consulte [Utilizar funciones en el gráfico](#usefunction) y [Ejemplo 2: Aplicación de funciones de suma y media en un gráfico de líneas](#applicationsumfrequency).
 
    >[!NOTE]
    >
    >En el caso del canal de impresión, en el eje X, el objeto del modelo de datos que se enlace debe ser de tipo Número, Cadena o Fecha. En el eje Y, el objeto del modelo de datos que se enlace debe ser del tipo Número. Se recomienda utilizar la leyenda del lado derecho en el canal de impresión.
 
-   Para obtener más información sobre las propiedades del gráfico, consulte Propiedades [básicas de los gráficos](#basicpropertiescharts).
+   Para obtener más información sobre las propiedades del gráfico, consulte [Propiedades básicas en gráficos](#basicpropertiescharts).
 
-1. (Solo canal de impresión) En Configuración del agente, especifique si es obligatorio que el agente utilice este gráfico. Si la opción **[!UICONTROL t es obligatorio para que el agente utilice este gráfico]** no está seleccionada, el agente puede tocar el icono de ojo del gráfico en la ficha Contenido de la interfaz del agente para mostrar u ocultar el gráfico.
+1. (Solo canal de impresión) En Configuración del agente, especifique si es obligatorio que el agente utilice este gráfico. Si la opción i **[!UICONTROL t es obligatoria para que el agente utilice este gráfico]** no está seleccionada, el agente puede tocar el icono de ojo del gráfico en la ficha Contenido de la interfaz de usuario del agente para mostrar u ocultar el gráfico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
@@ -90,28 +90,31 @@ Comprendamos en detalle la información mínima requerida en las propiedades bá
 
 Para lograrlo, debe especificar:
 
-* **[!UICONTROL Tipo]** de gráfico: en este ejemplo, Columna para el canal de impresión y Salida para el canal web
-* **[!UICONTROL Objetos]** del modelo de datos como origen para los ejes X e Y del gráfico; en este ejemplo, Importe de transacción para el eje X y Nombre de gasto para el eje Y
-* **[!UICONTROL Título]** para los ejes X e Y (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo, Importe ($) para el eje X y Gasto para el eje Y.
-* **[!UICONTROL Dirección]** de etiqueta (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo `Tilt Left`
+* **[!UICONTROL Tipo]**  de gráfico: en este ejemplo, Columna para el canal de impresión y Salida para el canal web
+* **[!UICONTROL Objetos del modelo de datos]** como origen para los ejes X e Y del gráfico; en este ejemplo, Importe de transacción para el eje X y Nombre de gasto para el eje Y
+* **** Título para los ejes X e Y (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo, Importe ($) para el eje X y Gasto para el eje Y.
+* **[!UICONTROL Dirección]**  de etiqueta (para el gráfico de tipo Columna en el canal de impresión solo en este ejemplo): en este ejemplo  `Tilt Left`
 
-* **[!UICONTROL Información]** de objeto para mostrar al pasar el ratón sobre un gasto (solo canal web): en este ejemplo `${x}: $ ${y}`, que se muestra como `[Expense Label: $ Amount]` (Ejemplo: Visita al parque temático: 315 $)
+* **** Herramienta para mostrar al pasar el ratón sobre un gasto (solo canal web); en este ejemplo  `${x}: $ ${y}`, que se muestra como  `[Expense Label: $ Amount]` (Ejemplo: Visita al parque temático: 315 $)
 
-![Gráfico de columnas en la salida de impresión de una](assets/chartprintchannel.png)figura de comunicación **interactiva:** *Gráfico de columnas en la salida de impresión de una comunicación interactiva*
+![Gráfico de columnas en la salida de impresión de una ](assets/chartprintchannel.png)
+**comunicación interactivaFigura:Gráfico de** *columnas en la salida de impresión de una comunicación interactiva*
 
-**A.** Eje Y: cantidad recuperada de la propiedad del modelo de datos del formulario y la propiedad Title establecida en Amount ($) **B.** Dirección de la etiqueta del eje X definida en Inclinación izquierda **C.** Eje X - Descripción del gasto recuperada de la propiedad del modelo de datos del formulario y la propiedad Título establecida en Gasto
+**Eje A.** Y: cantidad recuperada de la propiedad del modelo de datos del formulario y la propiedad Title establecida en Amount ($)  **B.** Label Dirección del eje X definido en Tilt Left Eje  **C.** X - Descripción de gastos recuperada de la propiedad del modelo de datos del formulario y propiedad Title establecida en Cost
 
-![Gráfico circular en la salida web de una](assets/chartwebchannel.png)figura de comunicación **interactiva:** *Gráfico circular en la salida web de una comunicación interactiva*
+![Gráfico circular en la salida web de una ](assets/chartwebchannel.png)
+**comunicación interactivaFigura:** *Gráfico circular en la salida web de una comunicación interactiva*
 
-**A.** La propiedad Radio interior de la rosca se establece en **B.** La propiedad Mostrar leyenda está seleccionada y la propiedad Posición de leyenda está establecida a la derecha **C.** La información del objeto muestra el detalle del elemento al pasar el ratón sobre él. La información del objeto está establecida en ${x}: $ ${y}
+**A.** Inner Radius property of the donut is set  **B.** Show Legend property is selected and Legend Position property is set to Right  **C.** Tooltip muestra el detalle del elemento al pasar el ratón sobre - Tooltip está establecido en ${x}: $ ${y}
 
 ## Ejemplo 2: Aplicación de las funciones Suma y Frecuencia en un gráfico de líneas {#applicationsumfrequency}
 
 Mediante la aplicación de funciones en un gráfico, puede trazar datos que el modelo de datos de formulario no proporciona directamente. En este ejemplo, utilizamos un ejemplo de extracto de tarjeta de crédito para comprender cómo se pueden aplicar las funciones Suma y Frecuencia al gráfico.
 
-![Gráfico de líneas sin función con tres transacciones](assets/creditcarddatalinechartcopy.png)de &quot;bed and breakfast&quot;**Figura:** *Gráfico de líneas sin función con tres transacciones &quot;Bed and Breakfast&quot;*
+![Gráfico de líneas sin función con tres ](assets/creditcarddatalinechartcopy.png)
+**transacciones &quot;Bed and Breakfast&quot; Figura:** *Gráfico de líneas sin función con tres transacciones &quot;Bed and Breakfast&quot;*
 
-### Sum, función {#sum-function}
+### Función de suma {#sum-function}
 
 Puede aplicar la función sum para agregar valores de varias instancias de la misma propiedad de datos y mostrarlos solo una vez. Por ejemplo: en el gráfico siguiente, la función Suma se aplica en el eje Y para sumar la cantidad de las tres transacciones de Bed and Breakfast (99,45 $, 78 $ y 12 $) y mostrar sólo una transacción (189,45 $).
 
@@ -129,29 +132,29 @@ La función Frecuencia devuelve el número de valores en el eje X o Y para un va
 
 En la ficha Básico, puede configurar las siguientes propiedades:
 
-**Nombre** Un identificador para el elemento de gráfico. El nombre no está visible en el gráfico, pero ayuda a hacer referencia al elemento desde otros componentes, secuencias de comandos y expresiones SOM.
+**** NombreIdentificador del elemento de gráfico. El nombre no está visible en el gráfico, pero ayuda a hacer referencia al elemento desde otros componentes, secuencias de comandos y expresiones SOM.
 
 **Título (solo canal de impresión)** Especifica el título del gráfico.
 
-**Tipo** de gráfico Especifica el tipo de gráfico que desea generar. Las opciones disponibles son circular, columna, anillo, barra (solo canal web), línea, línea y punto, punto y área. Para obtener más información, consulte Ejemplo 1: Salida de gráfico en impresión y Web.
+**Tipo de** gráficoEspecifica el tipo de gráfico que desea generar. Las opciones disponibles son circular, columna, anillo, barra (solo canal web), línea, línea y punto, punto y área. Para obtener más información, consulte Ejemplo 1: Salida de gráfico en impresión y Web.
 
-**Eje X > Título** Especifica el título del eje X.
+**Eje X >** TítuloEspecifica el título del eje X.
 
-**Eje X > Objeto del modelo de datos &amp;ast;** Especifique el nombre del elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje x.
+**Eje X > Objeto del modelo de datos &amp;último;** Especifique el nombre del elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje X.
 
-**Eje X > Función** Especifica la función estadística/personalizada que se utilizará para calcular los valores en el eje X. Para obtener más información sobre las funciones, consulte Uso de funciones en el gráfico y Ejemplo 2: Aplicación de funciones de suma y media en un gráfico de líneas.
+**Eje X >** FunciónEspecifica la función estadística/personalizada que se utilizará para calcular los valores en el eje X. Para obtener más información sobre las funciones, consulte Uso de funciones en el gráfico y Ejemplo 2: Aplicación de funciones de suma y media en un gráfico de líneas.
 
-**Eje X > Dirección** de etiqueta Dirección de la etiqueta en el canal de impresión. Si elige la dirección de la etiqueta como Rotación personalizada, aparece el campo Ángulo de rotación personalizado (grados). En el campo Ángulo de rotación personalizado (grados), puede elegir un ángulo de rotación en pasos de 15 grados.
+**Eje X >** Dirección de etiquetaDirección de la etiqueta del gráfico en el canal de impresión. Si elige la dirección de la etiqueta como Rotación personalizada, aparece el campo Ángulo de rotación personalizado (grados). En el campo Ángulo de rotación personalizado (grados), puede elegir un ángulo de rotación en pasos de 15 grados.
 
-**Eje Y > Título** Especifica el título del eje Y.
+**Eje Y >** TítuloEspecifica el título del eje Y.
 
-**Eje Y > Objeto del modelo de datos &amp;ast;** Especifica el elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje Y. En el canal Imprimir, el objeto del modelo de datos para el eje Y debe ser del tipo Número.
+**Eje Y > Objeto del modelo de datos &amp;último;** Especifica el elemento de recopilación del modelo de datos de formulario que se va a trazar en el eje Y. En el canal Imprimir, el objeto del modelo de datos para el eje Y debe ser del tipo Número.
 
-**Eje Y > Función** Especifica la función estadística/personalizada que se utilizará para calcular los valores en el eje Y. Para obtener más información sobre las funciones, consulte Uso de funciones en el gráfico y Ejemplo 2: Aplicación de funciones de suma y media en un gráfico de líneas.
+**Eje Y >** FunciónEspecifica la función estadística/personalizada que se utilizará para calcular los valores en el eje Y. Para obtener más información sobre las funciones, consulte Uso de funciones en el gráfico y Ejemplo 2: Aplicación de funciones de suma y media en un gráfico de líneas.
 
-**Mostrar leyenda** Muestra una leyenda para el gráfico circular o circular cuando está activada.
+**Mostrar** leyendaMuestra una leyenda para el gráfico circular o circular cuando está activada.
 
-**Posición** de leyenda Especifica la posición de la leyenda con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior.
+**Posición** de leyendaEspecifica la posición de la leyenda con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior.
 
 **Altura (solo canal de impresión)** Altura del gráfico en píxeles.
 
@@ -161,7 +164,7 @@ En la ficha Básico, puede configurar las siguientes propiedades:
 >
 >Puede controlar la anchura del gráfico en el canal web con la capa de estilo o aplicando un tema.
 
-**Información del objeto (solo canal web)** Especifica el formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos en el gráfico del canal web. El valor predeterminado es \${x}(\${y}). Según el tipo de gráfico, cuando se señala el ratón en un punto, una barra o una fracción del gráfico, las variables \${x} y \${y} se reemplazan dinámicamente con los valores correspondientes en los ejes X e Y y y se muestran en la información del objeto.
+**Información del objeto (solo canal web)**  Especifica el formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos en el gráfico del canal web. El valor predeterminado es \${x}(\${y}). Según el tipo de gráfico, cuando se señala el ratón en un punto, una barra o una fracción del gráfico, las variables \${x} y \${y} se reemplazan dinámicamente con los valores correspondientes en los ejes X e Y y y se muestran en la información del objeto.
 
 Para desactivar la información del objeto, deje el campo Información del objeto en blanco. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte [Ejemplo 1: Salida de gráfico en impresión y Web](#chartoutputprintweb).
 
@@ -173,7 +176,7 @@ Para desactivar la información del objeto, deje el campo Información del objet
 
 **Sangría (solo canal de impresión)** Especifique la sangría del gráfico desde la izquierda de la página.
 
-**Configuraciones** específicas del gráfico Además de configuraciones comunes, están disponibles las siguientes configuraciones específicas del gráfico:
+**Configuraciones específicas del gráficoAdemás de las configuraciones comunes, están disponibles las siguientes configuraciones específicas del gráfico:** 
 
 * **Radio interior**: disponible para gráficos circulares para especificar el radio (en píxeles) del círculo interior del gráfico.
 * **Color** de línea: disponible para gráficos de líneas, líneas y puntos, y de áreas para especificar el valor hexadecimal del color de la línea en el gráfico.
@@ -199,19 +202,19 @@ Las siguientes funciones están disponibles de forma predeterminada con el compo
 
 **Media (Promedio)** Devuelve la media de los valores en los ejes X o Y de un valor determinado en el otro eje.
 
-**Suma** Devuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
+**** SumaDevuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
 
-**Máximo** Devuelve el máximo de los valores del eje X o Y para un valor determinado del otro eje.
+**** MáximoDevuelve el máximo de los valores del eje X o Y para un valor determinado del otro eje.
 
-**Frecuencia** Devuelve el número de valores en el eje X o Y para un valor determinado en el otro eje.
+**** FrecuenciaDevuelve el número de valores en el eje X o Y para un valor determinado en el otro eje.
 
-**Intervalo** Devuelve la diferencia entre el máximo y el mínimo de los valores en los ejes X e Y para un valor determinado en el otro eje.
+**** IntervaloDevuelve la diferencia entre el máximo y el mínimo de los valores en los ejes X e Y para un valor determinado en el otro eje.
 
-**Mediana** Devuelve el valor que separa los valores más altos e inferiores a la mitad en el eje X o Y para un valor determinado en el otro eje.
+**** MedianaDevuelve el valor que separa los valores más altos e inferiores a la mitad en el eje X o Y para un valor determinado en el otro eje.
 
-**Mínimo** Devuelve el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
+**** MínimoDevuelve el mínimo de los valores en los ejes X o Y para un valor determinado en el otro eje.
 
-**Modo** Devuelve el valor con la mayoría de las incidencias en los ejes X o Y de un valor determinado en el otro eje
+**** ModeDevuelve el valor con la mayor cantidad de incidencias en el eje X o Y de un valor determinado en el otro eje
 
 ### Funciones personalizadas en el canal web {#custom-functions-in-web-channel}
 
@@ -231,14 +234,14 @@ Multiply(valueArray, category) {
 
 Una vez que haya escrito una función personalizada, haga lo siguiente para que esté disponible para su uso en la configuración del gráfico:
 
-1. Añada la función personalizada en la biblioteca del cliente asociada a la comunicación interactiva pertinente. Para obtener más información, consulte [Configuración de la acción](/help/forms/using/configuring-submit-actions.md) Enviar y [Uso de bibliotecas](/help/sites-developing/clientlibs.md)del lado del cliente.
+1. Añada la función personalizada en la biblioteca del cliente asociada a la comunicación interactiva pertinente. Para obtener más información, consulte [Configuración de la acción Enviar](/help/forms/using/configuring-submit-actions.md) y [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
 
-1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un `nt:unstructured` nodo en la carpeta de aplicaciones con las siguientes propiedades:
+1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un nodo `nt:unstructured` en la carpeta de aplicaciones con las siguientes propiedades:
 
-   * Añada la propiedad `guideComponentType` con el valor como `fd/af/reducer`. (obligatorio)
+   * Añada la propiedad `guideComponentType` con el valor `fd/af/reducer`. (obligatorio)
    * Añada la propiedad `value` a un nombre completo de la función personalizada de JavaScript™. (obligatorio) y establezca su valor en el nombre de la función personalizada, como Multiplicar.
    * Añada la propiedad `jcr:description` con el valor que desea mostrar como nombre de la función personalizada que aparece en la lista desplegable Función. Por ejemplo, **Multiplicar**.
-   * Añada la propiedad `qtip` con un valor que describa brevemente la función personalizada. Aparece como información de objeto al pasar el puntero sobre el nombre de la función en la lista desplegable **Función** .
+   * Añada la propiedad `qtip` con un valor que será una breve descripción de la función personalizada. Aparece como información de objeto al pasar el puntero sobre el nombre de la función en la lista desplegable **Function**.
 
 1. Haga clic en **Guardar todo** para guardar la configuración.
 

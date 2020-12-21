@@ -103,7 +103,7 @@ Para obtener información de seguridad sobre los servidores de aplicaciones comp
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Busque Información sobre la seguridad de WebLogic en <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
+   <td><p>Busque Explicación de la seguridad de WebLogic en <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -141,7 +141,7 @@ Para obtener información de seguridad sobre las bases de datos compatibles con 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
-   <td>Buscar en la Web "SQL Server 2016: Seguridad"</td> 
+   <td>Buscar "SQL Server 2016: Seguridad"</td> 
   </tr> 
   <tr> 
    <td><p>MySQL 5</p> </td> 
@@ -149,7 +149,7 @@ Para obtener información de seguridad sobre las bases de datos compatibles con 
   </tr> 
   <tr> 
    <td><p>Oracle® 12c</p> </td> 
-   <td><p>Consulte el capítulo Seguridad de la documentación de <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g</a></p> </td> 
+   <td><p>Consulte el capítulo Seguridad en la <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentación de Oracle 12g</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -178,7 +178,7 @@ En esta tabla se describen los puertos predeterminados que deben abrirse durante
   </tr> 
   <tr> 
    <td><p>WebSphere</p> </td> 
-   <td><p>9060, si Seguridad global está habilitada, el valor predeterminado del puerto SSL es 9043.</p> <p>9080</p> </td> 
+   <td><p>9060, si Global Security está habilitado, el valor predeterminado del puerto SSL es 9043.</p> <p>9080</p> </td> 
   </tr> 
   <tr> 
    <td><p>Servidor BAM</p> </td> 
@@ -217,18 +217,18 @@ JBoss Application Server utiliza 8080 como puerto HTTP predeterminado. JBoss tam
 
 1. Abra el siguiente archivo para editarlo:
 
-   Instalación de un solo servidor: [Raíz]de JBoss /standalone/configuration/standalone.xml
+   Instalación de un solo servidor: [Raíz de JBoss]/standalone/configuration/standalone.xml
 
-   Instalaciones de clúster: [Raíz]de JBoss /domain/configuration/domain.xml
+   Instalaciones de clúster: [Raíz de JBoss]/domain/configuration/domain.xml
 
-1. Cambie el valor del atributo de **puerto** en la etiqueta **&lt;socket-binding>** por un número de puerto personalizado. Por ejemplo, los siguientes usuarios utilizan el puerto 8090:
+1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** por un número de puerto personalizado. Por ejemplo, los siguientes usuarios utilizan el puerto 8090:
 
-   &lt;nombre de enlace de socket=&quot;http&quot; port=&quot;8090&quot;/>
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
 1. Guarde y cierre el archivo.
 1. Reinicie el servidor de aplicaciones JBoss.
 
-## AEM Forms en consideraciones de seguridad de JEE {#aem-forms-on-jee-security-considerations}
+## Consideraciones de seguridad de AEM Forms en JEE {#aem-forms-on-jee-security-considerations}
 
 Esta sección describe algunos problemas de seguridad específicos de AEM Forms sobre JEE que debe conocer.
 
@@ -244,7 +244,7 @@ AEM Forms en JEE utiliza AEM Forms en la base de datos JEE para almacenar inform
 
 El servidor de aplicaciones que se utiliza para ejecutar AEM Forms en JEE requiere su propia configuración para acceder a la base de datos a través de un origen de datos configurado en el servidor de aplicaciones. Asegúrese de que el servidor de aplicaciones no muestra la contraseña de la base de datos en texto sin formato en el archivo de configuración del origen de datos.
 
-El archivo lc_[database].xml no debe contener una contraseña en formato de texto sin formato. Consulte con el proveedor del servidor de aplicaciones cómo cifrar estas contraseñas para el servidor de aplicaciones.
+El archivo lc_[database].xml no debe contener la contraseña en formato de texto sin formato. Consulte con el proveedor del servidor de aplicaciones cómo cifrar estas contraseñas para el servidor de aplicaciones.
 
 >[!NOTE]
 >

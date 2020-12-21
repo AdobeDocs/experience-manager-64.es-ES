@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Creación de tablas complejas accesibles en formularios HTML5 {#create-accessible-complex-tables-in-html-forms}
+# Crear tablas complejas accesibles en formularios HTML5 {#create-accessible-complex-tables-in-html-forms}
 
 La implementación predeterminada de tablas en HTML5 Forms utiliza elementos DIV HTML para representar una tabla. El procesamiento implica el uso de funciones ARIA para cumplir los requisitos de accesibilidad.
 
@@ -26,7 +26,7 @@ Para evitar problemas de accesibilidad con lectores de pantalla que no admiten c
 * Encabezados de fila
 * Intervalo de filas
 
-Para utilizar el nuevo formato en HTML5 Forms, marque la tabla como compleja. Para marcar la tabla como compleja, agregue la `extras` etiqueta en el subformulario de origen XML de tabla de la siguiente manera:
+Para utilizar el nuevo formato en HTML5 Forms, marque la tabla como compleja. Para marcar la tabla como compleja, agregue la etiqueta `extras` en el subformulario de origen XML de tabla de la siguiente manera:
 
 ```
 </extras>
@@ -42,7 +42,7 @@ Para marcar una fila como encabezado de fila, seleccione todas las celdas de la 
 
 Para marcar una celda como encabezado de columna, seleccione cualquier celda de la columna, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 
-Limitaciones en el nuevo formato *AccessibleTable* :
+Limitaciones en el nuevo formato *AccessibleTable*:
 
 * Falta de compatibilidad con los campos ampliables si se utiliza rowspan en la tabla
 * No se admiten tablas anidadas (tablas dentro de celdas de tabla)

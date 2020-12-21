@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Cambio del logotipo de la organización para la marca {#changing-the-organization-logo-for-branding}
+# Cambio del logotipo de organización para la marca {#changing-the-organization-logo-for-branding}
 
-El logotipo de la organización se muestra en la esquina superior izquierda del espacio de trabajo de AEM Forms. Para actualizar el logotipo, siga los pasos [Genéricos de la personalización](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) del espacio de trabajo de AEM Forms y, a continuación, siga los pasos siguientes.
+El logotipo de la organización se muestra en la esquina superior izquierda del espacio de trabajo de AEM Forms. Para actualizar el logotipo, siga los [pasos genéricos de personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) y, a continuación, siga los pasos siguientes.
 
 1. Cree un logotipo y asigne un nombre al archivo como `NewWorkspace.png`. Coloque el archivo de imagen en la carpeta /apps/ws/images mediante un cliente WebDAV.
 

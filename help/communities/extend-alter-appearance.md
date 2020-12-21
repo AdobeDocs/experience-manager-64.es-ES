@@ -28,9 +28,9 @@ Para una demostración sencilla, se elimina una característica visual, el avata
 >
 >Para utilizar la extensión, la instancia del sistema de comentarios de un sitio web que se verá afectado (/content) debe establecer resourceType como el sistema de comentarios personalizado.
 
-## Modificación de los scripts de HBS {#modify-the-hbs-scripts}
+## Modificar los scripts de HBS {#modify-the-hbs-scripts}
 
-Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Abrir [/apps/custom/components/comments/comment/comment.hbs](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -64,13 +64,13 @@ Una manera de hacerlo es
 
    * Seleccione **[!UICONTROL Herramientas > Operaciones > Replicación]**
    * Seleccione `Activate Tree`
-   * Definir `Start Path`: to `/apps/custom`
+   * Set `Start Path`: a `/apps/custom`
    * Desmarcar `Only Modified`
    * Botón Seleccionar `Activate`
 
-## Vista Comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
+## Comentario modificado de vista en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando la experiencia](extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para realizar la vista de la modificación para eliminar el avatar:
+[Si continúa la ](extend-sample-page.md#publish-sample-page) experiencia en la instancia de publicación, que aún ha iniciado sesión como el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para realizar la vista de la modificación para eliminar el avatar:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 

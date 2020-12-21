@@ -34,8 +34,8 @@ AEM Forms proporciona varias API para enviar formularios, procesar documentos y 
 
 Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento procesado. Un informe de transacciones divide las transacciones en tres categorías: Documentos procesados, Documentos procesados y Forms enviado.
 
-* **Forms enviado:** Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio o base de datos de almacenamiento de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable, Formulario HTML5, PDF forms y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de sistema de informes de transacciones lo cuenta como 5 envíos.
-* **Documentos procesados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digital de un documento, el uso de una API de servicios de documento facturable para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
+* **Forms Enviado:** cuando se envían datos desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, enviar un formulario adaptable, Formulario HTML5, PDF forms y conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de sistema de informes de transacciones lo cuenta como 5 envíos.
+* **Documentos procesados:** la generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digital de un documento, el uso de una API de servicios de documento facturable para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos procesados.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
-### Documento del servicio de registro (servicio DoR) {#document-of-record-service-dor-service}
+### Documento de Servicio de Registro (Servicio de DoR) {#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
@@ -278,7 +278,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invoke</a></td> 
-   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">EnsemblerResult</a> que contiene los documentos resultantes. </td> 
+   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblyResult</a> que contiene los documentos resultantes. </td> 
    <td>Documentos procesados</td> 
    <td>Las siguientes operaciones no se contabilizan como transacciones:
     <ul> 
@@ -288,7 +288,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Ejecuta el documento DDX especificado y devuelve un <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> objeto AssemblerResult</a> que contiene los documentos resultantes. </td> 
+   <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblyResult</a> que contiene los documentos resultantes. </td> 
    <td>Documentos procesados</td> 
    <td>Todos los formatos de archivo de entrada que los servicios de generación de archivos PDF, Forms y Output admiten, el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td> 
   </tr>
@@ -310,7 +310,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 
 
-### Servicio de utilidades de PDF  {#pdf-utility-service}
+### Servicio de utilidad PDF {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -343,14 +343,14 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>La API le permite proteger su documento. Puede utilizar la API para firmar, certificar, ampliar o cifrar un documento PDF. </td> 
    <td>Documentos procesados</td> 
-   <td>Sólo se facturan la firma y la certificación de la operación de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> .</td> 
+   <td>Sólo se facturan las operaciones de firma y certificación de <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a>.</td> 
   </tr>
  </tbody>
 </table>
 
 ## API de captura de datos facturables {#billable-data-capture-apis}
 
-Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la API [de informes de](record-transaction-custom-implementation.md) transacciones proporcionada para registrar un envío de PDF forms como una transacción.
+Todos los eventos de envío de formularios adaptables, HTML5 Forms y conjunto de formularios se contabilizan como transacciones. De forma predeterminada, el envío de un formulario PDF no se contabiliza como una transacción. Utilice la [API de informes de transacciones](record-transaction-custom-implementation.md) proporcionada para registrar un envío de PDF forms como una transacción.
 
 ### Formularios adaptables {#adaptive-forms}
 
@@ -442,7 +442,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### Comunicación interactiva: Canal de impresión {#interactive-communication-print-channel}
 
 <table> 
  <tbody>
@@ -453,7 +453,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
    <td>Información adicional</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">procesar</a> (convertir a PDF)</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">procesar</a>  (convertir a PDF)</td> 
    <td>Genera la versión PDF de una comunicación interactiva.</td> 
    <td>Documentos procesados</td> 
    <td>
@@ -463,7 +463,7 @@ Asignar pasos de servicios de tarea y documento de Flujos de trabajo de AEM cent
  </tbody>
 </table>
 
-### Flujos de trabajo de AEM centrados en el formulario en OSGi  {#form-centric-aem-workflows-on-osgi}
+### Flujos de trabajo de AEM centrados en el formulario en OSGi {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>

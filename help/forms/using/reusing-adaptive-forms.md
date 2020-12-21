@@ -38,7 +38,7 @@ Copie un formulario adaptable mediante cualquiera de los siguientes métodos:
 
 1. Seleccione el formulario adaptable. El proceso de selección es diferente para vistas diferentes.
 
-   Si se encuentra en la vista de tarjetas, vaya al modo de selección haciendo clic en el icono ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) de selección y haga clic en todos los formularios adaptables que desee copiar.
+   Si se encuentra en la vista de tarjetas, vaya al modo de selección haciendo clic en el icono de selección ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y haga clic en todos los formularios adaptables que desee copiar.
 
    Si está en vista de lista, haga clic en las casillas de verificación de todos los formularios adaptables para seleccionarlos.
 
@@ -46,17 +46,17 @@ Copie un formulario adaptable mediante cualquiera de los siguientes métodos:
    >
    >Todos los recursos seleccionados deben ser formularios adaptables, ya que la funcionalidad de copiar y pegar solo se admite en formularios adaptables y todos los recursos seleccionados deben estar presentes en la misma carpeta.
 
-   Después de seleccionar los recursos, haga clic en el icono copiar ![aem6forms_copy](assets/aem6forms_copy.png) presente en la barra de herramientas para copiar el formulario adaptable seleccionado.
+   Después de seleccionar los recursos, haga clic en el icono copiar ![aem6forms_copy](assets/aem6forms_copy.png) que se encuentra en la barra de herramientas para copiar el formulario adaptable seleccionado.
 
 ### Pegar un formulario adaptable {#paste-an-adaptive-form}
 
-Al hacer clic en la acción copiar, se sale automáticamente del modo de selección y se hace visible el icono pegar ![aem6forms_paste](assets/aem6forms_paste.png) . Vaya a la ruta de la carpeta deseada y haga clic en el icono para pegar ![aem6forms_paste](assets/aem6forms_paste.png) para pegar el formulario adaptable copiado.
+Al hacer clic en la acción copiar, se sale automáticamente del modo de selección y se hace visible el icono Pegar ![aem6formularios_pegar](assets/aem6forms_paste.png). A continuación, vaya a la ruta de la carpeta deseada y haga clic en el icono para pegar ![aem6forms_paste](assets/aem6forms_paste.png) para pegar el formulario adaptable copiado.
 
 Si está pegando en la misma carpeta o existe otro archivo con el mismo nombre de nodo (con el que se almacena en el repositorio de CRX) en esta carpeta de destinatario, se agrega 1 al sufijo (por ejemplo, myaf se convierte en myaf1 y si myaf1 existe en la misma ubicación, myaf se convierte en myaf2. Todas las demás propiedades permanecen igual que el formulario adaptable original.
 
-Después de hacer clic en el icono de pegar ![aem6forms_paste](assets/aem6forms_paste.png) , volverá a ocultarse. Al mismo tiempo, solo puede pegar una vez. Para volver a crear una copia del mismo recurso, vuelva a copiarla.
+Después de hacer clic en el icono de pegar ![aem6forms_paste](assets/aem6forms_paste.png), volverá a ocultarse. Al mismo tiempo, solo puede pegar una vez. Para volver a crear una copia del mismo recurso, vuelva a copiarla.
 
-### Cambiar el contenido de un nuevo formulario adaptable {#change-contents-of-new-adaptive-form}
+### Cambiar el contenido del nuevo formulario adaptable {#change-contents-of-new-adaptive-form}
 
 El contenido de los formularios adaptables pegados se puede cambiar mediante los siguientes métodos para que sea diferente del formulario copiado:
 
@@ -66,7 +66,7 @@ El contenido de los formularios adaptables pegados se puede cambiar mediante los
 
 1. **Cambiar XFA/XSD para Forms adaptable basado en XFA/XSD:**
 
-   Puede cambiar el XFA/XSD utilizado en formularios adaptables. Para obtener información sobre cómo se pueden cambiar estos formularios adaptables, consulte [Administración de metadatos de formularios](/help/forms/using/manage-form-metadata.md)
+   Puede cambiar el XFA/XSD utilizado en formularios adaptables. Para saber cómo se pueden cambiar estos formularios adaptables, consulte [Administración de metadatos de formulario](/help/forms/using/manage-form-metadata.md)
 
 1. **Volver a publicar:**
 

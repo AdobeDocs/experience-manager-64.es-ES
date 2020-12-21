@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Modificar el aspecto {#alter-the-appearance}
 
-## Modificación de la secuencia de comandos {#modify-the-script}
+## Modificar la secuencia de comandos {#modify-the-script}
 
 La secuencia de comandos comment.hbs es responsable de crear el HTML general para cada comentario.
 
@@ -28,11 +28,11 @@ Para no mostrar el avatar al lado de cada comentario publicado:
 
 1. Copiar `comment.hbs`de `libs`a `apps`
    1. Seleccione `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Seleccionar **[!UICONTROL copia]**
+   1. Seleccione **[!UICONTROL Copiar]**
    1. Seleccione `/apps/social/commons/components/hbs/comments/comment`
-   1. Seleccionar **[!UICONTROL pegar]**
-1. Abrir las superposiciones `comment.hbs`
-   * Doble-clic en el nodo `comment.hbs`en `/apps/social/commons/components/hbs/comments/comment folder`
+   1. Seleccione **[!UICONTROL Pegar]**
+1. Abra el `comment.hbs` superpuesto
+   * Haga clic en doble en el nodo `comment.hbs`en `/apps/social/commons/components/hbs/comments/comment folder`
 1. Busque las líneas siguientes y elimínelas o coméntelas:
 
    ```xml
@@ -54,19 +54,19 @@ Inserte el componente de comentarios superpuestos en la instancia de publicació
 
 >[!NOTE]
 >
->Una forma más sólida de replicación sería crear un paquete en el Administrador de paquetes y [activarlo](../../help/sites-administering/package-manager.md#replicating-packages) . Se puede exportar y archivar un paquete.
+>Una forma más sólida de replicación sería crear un paquete en el Administrador de paquetes y [activarlo](../../help/sites-administering/package-manager.md#replicating-packages). Se puede exportar y archivar un paquete.
 
-En la navegación global, seleccione **[!UICONTROL Herramientas > Implementación > Replicación]** y, a continuación, **[!UICONTROL Activar árbol]**.
+En la navegación global, seleccione **[!UICONTROL Herramientas > Implementación > Replicación]** y luego **[!UICONTROL Activar árbol]**.
 
-Para la Ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
+Para la ruta de Inicio, introduzca `/apps/social/commons` y seleccione **[!UICONTROL Activar]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## Resultados de Vista {#view-results}
+## Resultados de vista {#view-results}
 
 Si inicia sesión en la instancia de publicación como administrador, por ejemplo: http://localhost:4503/crx/de como administrador/administrador, puede comprobar que los componentes superpuestos están allí.
 
-Si cierra la sesión y vuelve a iniciarla `aaron.mcdonald@mailinator.com/password` y actualiza la página, observará que el comentario publicado ya no se muestra con un avatar, sino que se muestra un sencillo &#39;xxx&#39;.
+Si cierra sesión y vuelve a iniciarla como `aaron.mcdonald@mailinator.com/password` y actualiza la página, observará que el comentario publicado ya no se muestra con un avatar, sino que se muestra un simple &#39;xxx&#39;.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 

@@ -31,13 +31,13 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil para agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija un perfil existente. Para saber cómo crear un perfil, consulte [Creación de un nuevo Perfil](/help/forms/using/custom-profile.md)
 
 1. **Creación de una hoja de estilo CSS para aplicar estilo a los formularios HTML5**
 
    Vaya a la carpeta en la que ha creado el procesador de perfil y cree un archivo de hoja de estilo CSS. Los pasos a seguir son
 
-   1. Haga clic con el botón derecho en la carpeta y seleccione **crear** -> **crear archivo** desde el menú
+   1. Haga clic con el botón derecho en la carpeta y seleccione **crear** -> **crear archivo** en el menú
    Para saber qué clases CSS crear para un componente concreto en los formularios HTML5, consulte [Introducción a los estilos](/help/forms/using/css-styles.md).
 
 1. **Incluir la hoja de estilo en el procesador de Perfil**
@@ -46,11 +46,11 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
    1. Busque la línea siguiente en la página del procesador:
 
-      &lt;cq:includeClientLib categorías=&quot;xfaforms.perfil&quot; />
+      &lt;cq:includeclientlib categories=&quot;xfaforms.profile&quot; />
 
    1. Inserte lo siguiente debajo de la línea anterior para incluir la hoja de estilo:
 
-      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
+      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
 
    1. Guarde el archivo.
 

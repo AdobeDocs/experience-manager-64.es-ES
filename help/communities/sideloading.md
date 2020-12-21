@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Descarga de componentes {#component-sideloading}
+# Descarga del componente {#component-sideloading}
 
 ## Información general {#overview}
 
@@ -34,7 +34,7 @@ Los pasos para agregar componentes SCF dinámicamente son:
 
 1. [Añadir el componente al DOM](#dynamically-add-component-to-dom)
 
-1. [Cargue el componente](#sideload-by-invoking-scf) en un sitio mediante uno de los dos métodos siguientes:
+1. [Cargue el ](#sideload-by-invoking-scf) componente en el equipo mediante uno de los dos métodos siguientes:
 
 * [Inclusión dinámica](#dynamic-inclusion)
    * Boostrap de todos los componentes agregados dinámicamente
@@ -43,9 +43,9 @@ Los pasos para agregar componentes SCF dinámicamente son:
 
 >[!NOTE]
 >
->No se admite la transferencia de recursos [](scf.md#add-or-include-a-communities-component) no existentes.
+>No se admite la transferencia de [recursos no existentes](scf.md#add-or-include-a-communities-component).
 
-## Añadir dinámicamente un componente a DOM {#dynamically-add-component-to-dom}
+## Añadir dinámicamente el componente a DOM {#dynamically-add-component-to-dom}
 
 Tanto si el componente se incluye dinámicamente como si se carga dinámicamente, primero debe agregarse al DOM.
 
@@ -53,9 +53,11 @@ Al agregar el componente SCF, la etiqueta más común que se debe utilizar es la
 
 Cualquiera que sea la etiqueta que se utilice, como mínimo, el elemento debe cumplir con el patrón de elementos raíz SCF normal al contener estos dos atributos:
 
-* **data-component-id** La ruta efectiva al componente agregado
+* **data-component-**
+idRuta efectiva al componente agregado
 
-* **data-scf-component** El resourceType del componente
+* **data-scf-**
+componentEl resourceType del componente
 
 A continuación se muestra un ejemplo de un componente de comentarios agregado:
 
@@ -86,4 +88,4 @@ En lugar de arrancar todos los componentes SCF que se encuentran en el DOM, es p
 
 SCF.addComponent(documento.getElementById(*someId*));
 
-Donde *someId* es el valor del atributo **data-component-id** .
+Donde *someId* es el valor del atributo **data-component-id**.

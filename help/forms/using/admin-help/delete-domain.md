@@ -24,6 +24,6 @@ Utilice la página Administración de dominios para marcar un dominio existente 
 
 Si crea un dominio con el mismo nombre que un dominio eliminado, se restablece el dominio eliminado junto con la información que contiene. No se puede eliminar el dominio DefaultDom.
 
-1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Administración]** de dominios.
+1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Administración de dominios]**.
 1. Seleccione la casilla de verificación del dominio que desea eliminar, haga clic en **[!UICONTROL Eliminar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]**.
 

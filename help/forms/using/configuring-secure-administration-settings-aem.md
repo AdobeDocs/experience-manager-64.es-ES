@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración de la administración segura para AEM Forms en JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Configuración de la configuración de administración segura para AEM Forms en JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Obtenga información sobre cómo administrar cuentas de usuario y servicios que, aunque son necesarios en un entorno de desarrollo privado, no son necesarios en un entorno de producción de AEM Forms en JEE.
 
@@ -43,12 +43,12 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
 
 1. Haga clic en **Servicios > Aplicaciones y servicios > Preferencias**.
 1. Configure las preferencias para que la vista alcance un máximo de 200 servicios y extremos en la misma página.
-1. Haga clic en **Servicios** > **Aplicaciones y servicios** > Administración de **extremos**.
-1. Seleccione **EJB** en la lista **Proveedor** y, a continuación, haga clic en **Filtro**.
-1. Para desactivar todos los extremos de EJB, active la casilla de verificación situada junto a cada uno de los extremos de la lista y haga clic en **Deshabilitar**.
+1. Haga clic en **Servicios** > **Aplicaciones y servicios** > **Administración de extremos**.
+1. Seleccione **EJB** en la lista **Provider** y haga clic en **Filter**.
+1. Para deshabilitar todos los extremos de EJB, active la casilla de verificación situada junto a cada uno de los extremos de la lista y haga clic en **Deshabilitar**.
 1. Haga clic en **Siguiente** y repita el paso anterior para todos los extremos de EJB. Asegúrese de que EJB aparece en la columna Proveedor antes de deshabilitar los extremos.
-1. Seleccione **SOAP** en la lista de **proveedor** y, a continuación, haga clic en **Filtro**.
-1. Para eliminar los puntos finales de SOAP, active la casilla de verificación situada junto a cada uno de los puntos de la lista y haga clic en **Eliminar**. No elimine los puntos finales siguientes:
+1. Seleccione **SOAP** en la lista **Provider** y haga clic en **Filter**.
+1. Para eliminar los extremos de SOAP, active la casilla de verificación situada junto a cada uno de los extremos de la lista y haga clic en **Eliminar**. No elimine los puntos finales siguientes:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -76,9 +76,9 @@ Algunos servicios de servidor de formularios permiten la invocación no autentic
             https://[host name]:[port]/adminui
    ```
 
-1. Haga clic en **Servicios > Aplicaciones y servicios > Administración** de servicios.
+1. Haga clic en **Servicios > Aplicaciones y servicios > Administración de servicios**.
 1. Haga clic en el nombre del servicio que desea deshabilitar (por ejemplo, AuthenticationManagerService).
-1. Haga clic en la ficha **** Seguridad, anule la selección de Acceso **anónimo permitido** y haga clic en **Guardar**.
+1. Haga clic en la ficha **Seguridad**, anule la selección de **Acceso anónimo permitido** y haga clic en **Guardar**.
 1. Complete los pasos 3 y 4 para los siguientes servicios:
 
    * AuthenticationManagerService
@@ -119,8 +119,8 @@ Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, ap
             https://[host name]:[port]/adminui
    ```
 
-1. Haga clic en **Configuración > Administración de usuarios > Configuración > Importar y exportar archivos** de configuración.
-1. Haga clic en **Exportar** para crear un archivo config.xml con la configuración de AEM Forms existente.
+1. Haga clic en **Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración**.
+1. Haga clic en **Exportar** para generar un archivo config.xml con la configuración de AEM Forms existente.
 1. Abra el archivo XML en un editor y busque la siguiente entrada:
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`

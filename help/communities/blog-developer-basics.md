@@ -32,7 +32,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Esenciales para el cliente {#essentials-for-client-side}
 
-La función de blog consta de dos componentes principales disponibles mediante la adición de la función [](functions.md#blog-function) Blog o la adición de los componentes a una página en modo de edición de autor.
+La función de blog consta de dos componentes principales disponibles mediante la adición de la [función de blog](functions.md#blog-function) o la adición de los componentes a una página en modo de edición de autor.
 
 ### Blog {#blog}
 
@@ -60,7 +60,7 @@ La función de blog consta de dos componentes principales disponibles mediante l
   </tr>
   <tr>
    <td><strong> propiedades</strong></td> 
-   <td>consulte Función <a href="blog-feature.md">de blog</a></td> 
+   <td>consulte <a href="blog-feature.md">Función de blog</a></td> 
   </tr>
  </tbody>
 </table>
@@ -69,11 +69,11 @@ La función de blog consta de dos componentes principales disponibles mediante l
 
 | **resourceType** | social/historial/componentes/hbs/barra lateral |
 |---|---|
-| [**inclusible **](scf.md#add-or-include-a-communities-component) | No |
-| [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| [**inclusible**](scf.md#add-or-include-a-communities-component) | No |
+| [**clientllibs**](clientlibs.md) | cq.social.hbs.journal_sidebar |
+| **plantillas** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propiedades** | consulte Función [de blog](blog-feature.md) |
+| **propiedades** | consulte [Función de blog](blog-feature.md) |
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
@@ -87,29 +87,29 @@ La función de blog consta de dos componentes principales disponibles mediante l
 
 ### Función Blog {#blog-function}
 
-Una estructura de sitio de comunidad que incluye la función [](functions.md#blog-function) Bog tendrá componentes `Blog` y `Blog Sidebar` configurados. La función Blog permite identificar un grupo [de usuarios miembros](users.md#privileged-members-group)privilegiados.
+Una estructura de sitio de la comunidad que incluye la [función Bog](functions.md#blog-function) tendrá componentes `Blog` y `Blog Sidebar` configurados. La función Blog permite identificar un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a entradas de blog (UGC) {#accessing-blog-entries-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Comunidades, el uso de un almacén [](working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio
+* [Elementos esenciales](srp-and-ugc.md)  de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
 
 ## Editor principal {#primary-publisher}
 
 Cuando la implementación es un conjunto de servidores de publicación, es necesario identificar un editor principal que sondeará los artículos programados para publicarse.
 
-Consulte Editor [principal](deploy-communities.md#primary-publisher) para obtener más información.
+Consulte [Editor principal](deploy-communities.md#primary-publisher) para obtener más información.
 
 ## Permitir medios enriquecidos {#allowing-rich-media}
 
@@ -119,5 +119,5 @@ La plataforma AEM bloquea los vínculos de otros sitios web para evitar los ataq
 
 A partir de AEM 6.2, las modificaciones que anteriormente se requerían manualmente se incluyen en el archivo de configuración predeterminado AntiSamy.
 
-Los medios enriquecidos se incorporan en un artículo de blog seleccionando el `Embed Media from External Sites` icono:  ![chlimage_1-471](assets/chlimage_1-471.png)
+Los medios enriquecidos se incorporan en un artículo de blog seleccionando el icono `Embed Media from External Sites`:  ![chlimage_1-471](assets/chlimage_1-471.png)
 

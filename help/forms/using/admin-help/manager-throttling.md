@@ -28,7 +28,7 @@ En AEM formularios, las operaciones realizadas por los servicios pueden durar po
 
 Las operaciones de larga duración pueden abarcar sistemas o incluso extenderse más allá de la organización, como cuando un cliente debe completar y enviar un formulario de solicitud de préstamo como parte de una solución más amplia que integra múltiples tareas automatizadas y humanas. Esas operaciones deben continuar mientras se espera una respuesta. Las operaciones de larga duración realizan su trabajo subyacente de forma asíncrona, lo que permite que los recursos se utilicen de otro modo mientras se espera la finalización. A diferencia de una operación de corta duración, Work Manager no considera que una operación de larga duración se complete una vez que se ha invocado. Para completar la operación debe producirse un activador externo, como un sistema que solicite otra operación en el mismo servicio o un usuario que envíe un formulario.
 
-## Acerca del Administrador de trabajo {#about-work-manager}
+## Acerca de Work Manager {#about-work-manager}
 
 AEM formularios (y versiones anteriores) utilizaban colas JMS para ejecutar operaciones de forma asíncrona. AEM formularios utiliza Work Manager para programar y ejecutar operaciones asincrónicas mediante subprocesos administrados.
 
@@ -38,7 +38,7 @@ Las operaciones asincrónicas se gestionan de esta manera:
 1. El Administrador de trabajo almacena el elemento de trabajo en una tabla de base de datos y asigna un identificador único al elemento de trabajo. El registro de base de datos contiene toda la información necesaria para ejecutar el elemento de trabajo.
 1. Los subprocesos del Administrador de trabajo extraen elementos de trabajo cuando los subprocesos se liberan. Antes de extraer los elementos de trabajo, los subprocesos pueden comprobar si se inician los servicios necesarios, si hay suficiente tamaño de pila para extraer el siguiente elemento de trabajo y si hay suficientes ciclos de CPU para procesar el elemento de trabajo. El Administrador de trabajo también evalúa los atributos del elemento de trabajo (como su prioridad) al programar su ejecución.
 
-Los administradores de formularios AEM pueden utilizar el Monitor de estado para comprobar las estadísticas del Administrador de trabajo, como el número de elementos de trabajo en la cola y sus estados. También puede utilizar el Monitor de estado para pausar, reanudar, reintentar o eliminar elementos de trabajo. (Consulte las estadísticas de [Vista relacionadas con el Administrador](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)de trabajo).
+Los administradores de formularios AEM pueden utilizar el Monitor de estado para comprobar las estadísticas del Administrador de trabajo, como el número de elementos de trabajo en la cola y sus estados. También puede utilizar el Monitor de estado para pausar, reanudar, reintentar o eliminar elementos de trabajo. (Consulte [Estadísticas de Vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configuración de las opciones de limitación del Administrador de trabajo {#configuring-work-manager-throttling-options}
 
@@ -62,7 +62,7 @@ Puede configurar la limitación para el Administrador de trabajo, de modo que lo
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.enabled</code></td> 
-   <td><p>Configure esta opción para <code>true</code> habilitar la limitación en función de la configuración de control de memoria que se describe a continuación o para <code>false</code> deshabilitar la limitación.</p></td> 
+   <td><p>Establezca esta opción en <code>true</code> para habilitar la limitación en función de la configuración de control de memoria que se describe a continuación o en <code>false</code> para deshabilitar la limitación.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.high-limit</code></td> 
@@ -82,12 +82,12 @@ Puede configurar la limitación para el Administrador de trabajo, de modo que lo
 **Añadir las opciones de Java a JBoss**
 
 1. Detenga el servidor de aplicaciones JBoss.
-1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java necesarias, en el formato `-Dproperty=value`.
+1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java según sea necesario, con el formato `-Dproperty=value`.
 1. Reinicie el servidor.
 
 **Añadir las opciones de Java a WebLogic**
 
-1. Inicio la Consola de administración de WebLogic escribiendo el `https://`*[nombre ]*de host`:`*[puerto]* `/console` en un explorador Web.
+1. Escriba `https://`*[nombre de host ]*`:`*[puerto]* `/console` &lt;a4/> en un explorador Web para obtener un inicio de la Consola de administración de WebLogic.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Inicio del servidor.

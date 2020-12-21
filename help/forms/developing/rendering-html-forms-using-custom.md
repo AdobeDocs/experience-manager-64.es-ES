@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Representación de HTML en Forms mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
+# Representación de HTML Forms mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
 
 El servicio Forms procesa formularios HTML en respuesta a una solicitud HTTP procedente de un navegador web. Al procesar un formulario HTML, el servicio de Forms puede hacer referencia a un archivo CSS personalizado. Puede crear un archivo CSS personalizado para cumplir los requisitos comerciales y hacer referencia a ese archivo CSS cuando utilice el servicio Forms para procesar formularios HTML.
 
@@ -41,7 +41,7 @@ Puede recuperar un archivo CSS de ejemplo mediante la aplicación FormsIVS. Carg
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -101,37 +101,37 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 1. Creación de un objeto de API de Forms Java
 
-   * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
-   * Cree un `FormsServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Hacer referencia al archivo CSS
 
-   * Cree un `HTMLRenderSpec` objeto con su constructor.
-   * Para procesar el formulario HTML que utiliza un archivo CSS personalizado, invoque el `HTMLRenderSpec` método del `setCustomCSSURI` objeto y pase un valor de cadena que especifique la ubicación y el nombre del archivo CSS.
+   * Cree un objeto `HTMLRenderSpec` utilizando su constructor.
+   * Para procesar el formulario HTML que utiliza un archivo CSS personalizado, invoque el método `HTMLRenderSpec` del objeto `setCustomCSSURI` y pase un valor de cadena que especifique la ubicación y el nombre del archivo CSS.
 
 1. Representar un formulario HTML
 
-   Invoque el `FormsServiceClient` método del `(Deprecated) (Deprecated) renderHTMLForm` objeto y pase los valores siguientes:
+   Invoque el método `FormsServiceClient` del objeto `(Deprecated) (Deprecated) renderHTMLForm` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valor `TransformTo` enum que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * Un `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un `com.adobe.idp.Document` objeto vacío.
-   * El `HTMLRenderSpec` objeto que almacena las opciones de tiempo de ejecución HTML.
-   * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
-   * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un valor de enumeración `TransformTo` que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
+   * Un objeto `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un objeto vacío `com.adobe.idp.Document`.
+   * El objeto `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución HTML.
+   * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Un objeto `URLSpec` que almacena valores URI necesarios para procesar un formulario HTML.
+   * Objeto `java.util.HashMap` que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   El `(Deprecated) renderHTMLForm` método devuelve un `FormsResult` objeto que contiene una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
+   El método `(Deprecated) renderHTMLForm` devuelve un objeto `FormsResult` que contiene una secuencia de datos de formulario que debe escribirse en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
 
-   * Cree un `com.adobe.idp.Document` objeto invocando el `FormsResult` método ‘s `getOutputContent` .
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` objeto invocando su `getContentType` método.
-   * Defina el tipo de contenido del `javax.servlet.http.HttpServletResponse` objeto invocando su `setContentType` método y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
-   * Cree un `javax.servlet.ServletOutputStream` objeto que se utilice para escribir la secuencia de datos del formulario en el navegador web del cliente invocando el `javax.servlet.h\ttp.HttpServletResponse` método `getOutputStream` del objeto.
-   * Cree un `java.io.InputStream` objeto invocando el `com.adobe.idp.Document` método `getInputStream` del objeto.
-   * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando el `InputStream` método del `read` objeto y pasando la matriz de bytes como argumento.
-   * Invoque el `javax.servlet.ServletOutputStream` método del `write` objeto para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al `write` método .
+   * Cree un objeto `com.adobe.idp.Document` invocando el método `FormsResult` del objeto ‘s `getOutputContent`.
+   * Obtenga el tipo de contenido del objeto `com.adobe.idp.Document` invocando su método `getContentType`.
+   * Configure el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `com.adobe.idp.Document`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` que se utilice para escribir la secuencia de datos del formulario en el navegador web del cliente invocando el método `javax.servlet.h\ttp.HttpServletResponse` del objeto `getOutputStream`.
+   * Cree un objeto `java.io.InputStream` invocando el método `com.adobe.idp.Document` del objeto `getInputStream`.
+   * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
+   * Invoque el método `javax.servlet.ServletOutputStream` del objeto `write` para enviar la secuencia de datos del formulario al explorador Web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 
@@ -143,7 +143,7 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Representar un formulario HTML que utiliza un archivo CSS mediante la API de servicio web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
+## Representar un formulario HTML que utiliza un archivo CSS mediante la API de servicio Web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
 Representar un formulario HTML que utiliza un archivo CSS personalizado mediante la API de Forms (servicio web):
 
@@ -154,42 +154,42 @@ Representar un formulario HTML que utiliza un archivo CSS personalizado mediante
 
 1. Creación de un objeto de API de Forms Java
 
-   Cree un `FormsService` objeto y defina los valores de autenticación.
+   Cree un objeto `FormsService` y defina los valores de autenticación.
 
 1. Hacer referencia al archivo CSS
 
-   * Cree un `HTMLRenderSpec` objeto con su constructor.
-   * Para procesar el formulario HTML que utiliza un archivo CSS personalizado, invoque el `HTMLRenderSpec` método del `setCustomCSSURI` objeto y pase un valor de cadena que especifique la ubicación y el nombre del archivo CSS.
+   * Cree un objeto `HTMLRenderSpec` utilizando su constructor.
+   * Para procesar el formulario HTML que utiliza un archivo CSS personalizado, invoque el método `HTMLRenderSpec` del objeto `setCustomCSSURI` y pase un valor de cadena que especifique la ubicación y el nombre del archivo CSS.
 
 1. Representar un formulario HTML
 
-   Invoque el `FormsService` método del `(Deprecated) renderHTMLForm` objeto y pase los valores siguientes:
+   Invoque el método `FormsService` del objeto `(Deprecated) renderHTMLForm` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un valor `TransformTo` enum que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * Un `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de Forms con diseños](/help/forms/developing/prepopulating-forms-flowable-layouts.md)de posición variable).
-   * El `HTMLRenderSpec` objeto que almacena las opciones de tiempo de ejecución HTML.
-   * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Puede pasar una cadena vacía si no desea establecer este valor.
-   * Un `URLSpec` objeto que almacena valores URI necesarios para procesar un formulario HTML.
-   * Un `java.util.HashMap` objeto que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
-   * Objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este valor de parámetro almacena el formulario procesado.
-   * Objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este parámetro almacena los datos XML de salida.
-   * Objeto vacío `javax.xml.rpc.holders.LongHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este argumento almacena el número de páginas del formulario.
-   * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este argumento almacena el valor de configuración regional.
-   * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el `(Deprecated) renderHTMLForm` método . Este argumento almacena el valor de representación HTML que se utiliza.
-   * Un `com.adobe.idp.services.holders.FormsResultHolder` objeto vacío que contendrá los resultados de esta operación.
+   * Un valor de enumeración `TransformTo` que especifica el tipo de preferencia HTML. Por ejemplo, para procesar un formulario HTML compatible con HTML dinámico para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
+   * Un objeto `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de Forms con diseños de posición variable](/help/forms/developing/prepopulating-forms-flowable-layouts.md)).
+   * El objeto `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución HTML.
+   * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Puede pasar una cadena vacía si no desea establecer este valor.
+   * Un objeto `URLSpec` que almacena valores URI necesarios para procesar un formulario HTML.
+   * Objeto `java.util.HashMap` que almacena archivos adjuntos. Es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el método `(Deprecated) renderHTMLForm`. Este valor de parámetro almacena el formulario procesado.
+   * Un objeto vacío `com.adobe.idp.services.holders.BLOBHolder` que se rellena con el método `(Deprecated) renderHTMLForm`. Este parámetro almacena los datos XML de salida.
+   * Un objeto vacío `javax.xml.rpc.holders.LongHolder` que se rellena con el método `(Deprecated) renderHTMLForm`. Este argumento almacena el número de páginas del formulario.
+   * Un objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método `(Deprecated) renderHTMLForm`. Este argumento almacena el valor de configuración regional.
+   * Un objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método `(Deprecated) renderHTMLForm`. Este argumento almacena el valor de representación HTML que se utiliza.
+   * Un objeto vacío `com.adobe.idp.services.holders.FormsResultHolder` que contendrá los resultados de esta operación.
 
-   El `(Deprecated) renderHTMLForm` método rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con una secuencia de datos de formulario que se debe escribir en el explorador Web del cliente.
+   El método `(Deprecated) renderHTMLForm` rellena el objeto `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con una secuencia de datos de formulario que debe escribirse en el explorador Web del cliente.
 
 1. Escribir el flujo de datos del formulario en el navegador web del cliente
 
-   * Cree un `FormResult` objeto obteniendo el valor del `com.adobe.idp.services.holders.FormsResultHolder` miembro de `value` datos del objeto.
-   * Cree un `BLOB` objeto que contenga datos de formulario invocando el `FormsResult` método `getOutputContent` del objeto.
-   * Obtenga el tipo de contenido del `BLOB` objeto invocando su `getContentType` método.
-   * Defina el tipo de contenido del `javax.servlet.http.HttpServletResponse` objeto invocando su `setContentType` método y pasando el tipo de contenido del `BLOB` objeto.
-   * Cree un `javax.servlet.ServletOutputStream` objeto que se utilice para escribir la secuencia de datos del formulario en el navegador web del cliente invocando el `javax.servlet.http.HttpServletResponse` método `getOutputStream` del objeto.
-   * Cree una matriz de bytes y rellénela invocando el `BLOB` método `getBinaryData` del objeto. Esta tarea asigna el contenido del `FormsResult` objeto a la matriz de bytes.
-   * Invoque el `javax.servlet.http.HttpServletResponse` método del `write` objeto para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al `write` método .
+   * Cree un objeto `FormResult` obteniendo el valor del miembro de datos `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value`.
+   * Cree un objeto `BLOB` que contenga datos de formulario invocando el método `FormsResult` del objeto `getOutputContent`.
+   * Obtenga el tipo de contenido del objeto `BLOB` invocando su método `getContentType`.
+   * Configure el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `BLOB`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` que se utilice para escribir la secuencia de datos del formulario en el navegador web del cliente invocando el método `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream`.
+   * Cree una matriz de bytes y rellénela invocando el método `BLOB` del objeto `getBinaryData`. Esta tarea asigna el contenido del objeto `FormsResult` a la matriz de bytes.
+   * Invoque el método `javax.servlet.http.HttpServletResponse` del objeto `write` para enviar la secuencia de datos del formulario al explorador Web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 

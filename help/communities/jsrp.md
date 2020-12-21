@@ -26,7 +26,7 @@ Cuando AEM Communities utiliza JSRP como opción de almacenamiento (opción pred
 
 Debido a la simplicidad de la implementación, el JSRP suele ser el más adecuado para entornos de demostración o desarrollo de una instancia de publicación y una instancia de autor.
 
-Consulte también [Características de las Opciones](working-with-srp.md#characteristics-of-srp-options) de SRP y Topologías [](topologies.md)recomendadas.
+Consulte también [Características de las opciones de SRP](working-with-srp.md#characteristics-of-srp-options) y [Topologías recomendadas](topologies.md).
 
 ## Configuración {#configuration}
 
@@ -34,7 +34,7 @@ Consulte también [Características de las Opciones](working-with-srp.md#charact
 
 De forma predeterminada, JSRP es la opción de almacenamiento para UGC.
 
-La consola [Configuración de](srp-config.md) Almacenamiento permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
+La [consola de configuración de Almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
 
 En el entorno de creación, para llegar a la consola de Configuración de Almacenamiento
 
@@ -42,7 +42,7 @@ En el entorno de creación, para llegar a la consola de Configuración de Almace
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* Select **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Seleccione **[!UICONTROL Proveedor de recursos de Almacenamiento JCR (JSRP)]**
 * Seleccione **[!UICONTROL Enviar]**
 
 ### Publicación de la configuración {#publishing-the-configuration}
@@ -56,12 +56,12 @@ Aunque JSRP es la configuración predeterminada, para asegurarse de que la confi
    * **[!UICONTROL Ruta de inicio]**:
 
       * Vaya a `/conf/global/settings/community/srpc/`
-   * Seleccionar **[!UICONTROL activar]**
+   * Seleccione **[!UICONTROL Activar]**
 
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información sobre *usuarios*, perfiles *de* usuarios y grupos *de* usuarios, que se especifican a menudo en el entorno de publicación, visite
+Para obtener información acerca de *usuarios*, *perfiles de usuario* y *grupos de usuarios*, que a menudo se introducen en el entorno de publicación, visite
 
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
@@ -76,14 +76,14 @@ En todas las instancias de creación y publicación de AEM, vuelva a la consola 
 
 * en JCR, si [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa que el proveedor de almacenamiento es JSRP
-   * Si el nodo srpc existe y contiene la configuración [predeterminada](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)del nodo, las propiedades de configuración predeterminada deben definir JSRP para que sea el proveedor predeterminado
+   * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), significa que el proveedor de almacenamiento es JSRP
+   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), las propiedades predeterminadas de la configuración deben definir JSRP para que sea el proveedor predeterminado
 
 ### UGC no visible en la instancia de creación {#ugc-not-visible-on-author-instance}
 
 Esto no es un error. Una característica del JSRP es que el contenido de la comunidad introducido en el entorno de publicación solo será visible en el entorno de publicación.
 
-### UGC no visible en instancia de publicación {#ugc-not-visible-on-publish-instance}
+### UGC no visible en la instancia de publicación {#ugc-not-visible-on-publish-instance}
 
 Si se implementa una única instancia de publicación o un clúster de publicación, siga las instrucciones para [UGC Not Visible en JCR](#ugc-not-visible-in-jcr).
 

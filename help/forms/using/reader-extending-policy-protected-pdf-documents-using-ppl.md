@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# Reader ampliando documentos PDF protegidos por políticas mediante la biblioteca de protección portátil {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
+# Reader extendiendo documentos PDF protegidos por políticas mediante la biblioteca de protección portátil {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Debe estar familiarizado con los conceptos de seguridad de documento, extensión de lector y lenguaje de programación Java para que el lector pueda ampliar los documentos PDF protegidos por políticas de seguridad de documento.
 
-Puede utilizar la seguridad de documento para restringir el acceso de documentos PDF específicos solo a usuarios autorizados. También puede determinar cómo un destinatario puede utilizar un documento protegido. Por ejemplo, puede especificar si los destinatarios pueden imprimir, copiar o editar texto de un documento protegido por una política de seguridad de documento. Para obtener más información sobre la seguridad de los documentos, consulte [sobre la seguridad](/help/forms/using/admin-help/document-security.md)de los documentos.
+Puede utilizar la seguridad de documento para restringir el acceso de documentos PDF específicos solo a usuarios autorizados. También puede determinar cómo un destinatario puede utilizar un documento protegido. Por ejemplo, puede especificar si los destinatarios pueden imprimir, copiar o editar texto de un documento protegido por una política de seguridad de documento. Para obtener más información sobre la seguridad de documento, consulte [acerca de la seguridad de documento](/help/forms/using/admin-help/document-security.md).
 
-Puede utilizar extensiones de lector para activar funciones interactivas en Adobe PDF documento a través de Acrobat Reader. Estas funciones interactivas normalmente solo están disponibles a través de Adobe Acrobat Professional y Standard. Para obtener más información sobre las funciones interactivas que la extensión de lector puede activar, consulte el servicio [DocAssurance de](/help/forms/using/overview-aem-document-services.md)**Adobe Experience Manager Forms.**
+Puede utilizar extensiones de lector para activar funciones interactivas en Adobe PDF documento a través de Acrobat Reader. Estas funciones interactivas normalmente solo están disponibles a través de Adobe Acrobat Professional y Standard. Para obtener más información sobre las funciones interactivas que la extensión de lector puede habilitar, consulte [Servicio de Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
 
 Puede utilizar la biblioteca de protección portátil para aplicar políticas en el documento sin necesidad de documentos que viajen por la red. Sólo las credenciales de seguridad y los detalles de la política de protección viajan por la red. El documento real nunca sale del cliente y las políticas de protección se aplican localmente en el cliente.
 
-## Reader ampliando documentos PDF protegidos por políticas de seguridad de documento {#reader-extending-document-security-policy-protected-pdf-documents}
+## Reader extendiendo documentos PDF protegidos por políticas de seguridad de documento {#reader-extending-document-security-policy-protected-pdf-documents}
 
 Los documentos protegidos por políticas son documentos cifrados. No se pueden usar API de extensión de lector estándar para aplicar, quitar y recuperar derechos de uso de documentos PDF protegidos por políticas. Solo el servicio Extensiones de Reader de la biblioteca de protección portátil proporciona API para aplicar, quitar y recuperar derechos de uso de documentos PDF protegidos por políticas de seguridad de documento.
 
-### Reader Extensions, servicio {#reader-extensions-service}
+### Servicio Extensiones de Reader {#reader-extensions-service}
 
 El servicio de extensión de lector agrega derechos de uso a un documento PDF protegido por una política, activando funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Acrobat Reader. También tiene API para eliminar y recuperar los derechos de uso de un documento protegido por una política.
 
@@ -154,7 +154,7 @@ Puede utilizar la API de `removeUsageRights`Java para eliminar los derechos de u
   </tr> 
   <tr> 
    <td><p> </p> <p>inputFile</p> </td> 
-   <td>Especifique InputStream que represente el documento PDF del que se eliminarán los derechos de uso<br /> . Puede utilizar documentos protegidos por seguridad de LiveCycle Rights Management o AEM Forms documento.</td> 
+   <td>Especifique InputStream que represente el documento PDF del que se eliminarán los derechos de uso<br />. Puede utilizar documentos protegidos por seguridad de LiveCycle Rights Management o AEM Forms documento.</td> 
   </tr> 
  </tbody> 
 </table>

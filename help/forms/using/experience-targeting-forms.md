@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Adobe Target integrado con AEM le permite crear experiencias personalizadas para una audiencia de destinatario. Con Adobe Target, puede crear pruebas A/B, medir la respuesta del usuario y generar contenido web personalizado para los usuarios objetivo. Puede integrar Adobe Target con AEM Forms en componentes de imagen de destinatario de formularios adaptables y comunicaciones interactivas.
 
-Configure Adobe Target en AEM para utilizarlo con formularios adaptables y comunicaciones interactivas, consulte [Creación de una configuración de Destinatario en AEM](/help/sites-administering/target.md) y [Añadir un marco](/help/sites-administering/target.md).
+Configure Adobe Target en AEM para utilizarlo con formularios adaptables y comunicaciones interactivas, consulte [Creación de una configuración de Destinatario en AEM](/help/sites-administering/target.md) y [Añada un módulo](/help/sites-administering/target.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Configure Adobe Target en AEM para utilizarlo con formularios adaptables y comun
 1. En la página Actividades, toque **Crear > Crear marca**.
 1. Se le pedirá que elija una plantilla e introduzca las propiedades.
 
-   Seleccione una plantilla y toque **Siguiente.** Escriba el título de la marca en la sección Propiedades y toque **Crear.**
+   Seleccione una plantilla, toque **Siguiente.** Escriba el título de la marca en la sección Propiedades y toque  **Crear.**
 Su marca ahora aparece en la página Actividades.
 
 1. Toque su marca en la página Actividades.
@@ -48,9 +48,9 @@ Su marca ahora aparece en la página Actividades.
 
    La sección Detalles incluye nombre, motor de objetivo y objetivo. Al seleccionar Adobe Target como motor de determinación de objetivos, se activa la opción de configuración de nube de Destinatario. Elija la configuración de la nube de Destinatario, elija el tipo de Actividad, proporcione el objetivo de la actividad y toque **Siguiente**. La comunicación interactiva solo admite el tipo de Actividad de segmentación de experiencias.
 
-   La sección Destinatario permite agregar una experiencia de audiencia y asignarle un nombre. Haga clic en **Añadir experiencia** para activar las opciones **Seleccionar Audiencia** y **Nombrar experiencia** . Toque **Seleccionar Audiencia** para ver una lista de audiencias y su origen. Seleccione una audiencia en la lista Nombre de Audiencia. Toque **Añadir experiencia** para asignar un nombre a la experiencia y toque **Siguiente**.
+   La sección Destinatario permite agregar una experiencia de audiencia y asignarle un nombre. Haga clic en **Añadir experiencia** para habilitar las opciones **Seleccionar Audiencia** y **Asignar nombre a la experiencia**. Toque **Seleccionar Audiencia** para ver una lista de audiencias y su origen. Seleccione una audiencia en la lista Nombre de Audiencia. Toque **Añadir experiencia** para asignar un nombre a la experiencia y toque **Siguiente**.
 
-   La sección Objetivos y configuración le permite programar y priorizar su actividad. Establezca la fecha de inicio, la fecha de finalización y la prioridad de la actividad, la métrica de objetivo, la métrica adicional y toque **Guardar**.
+   La sección Objetivos y configuración le permite programar y priorizar su actividad. Establezca la fecha de inicio, la fecha de finalización y la prioridad de la actividad, métrica de objetivo, métrica adicional y toque **Guardar**.
 
    La actividad aparece ahora en la página de su marca.
 
@@ -74,12 +74,12 @@ Su marca ahora aparece en la página Actividades.
 
 1. Para habilitar la estructura de destinatario para formularios adaptables, navegue hasta el formulario o la comunicación interactiva y ábralo en modo de edición.
 
-   Para abrir un formulario o una comunicación interactiva en modo de edición, toque **Seleccionar** y, a continuación, **Abrir**.
+   Para abrir un formulario o una comunicación interactiva en modo de edición, toque **Seleccionar** y, a continuación, toque **Abrir**.
 
    También aparecen cuatro botones cuando mueve el puntero sobre el formulario o el icono de comunicación interactiva sin seleccionarlo. Puede tocar el botón **Editar** que aparece para abrir el formulario en modo de edición.
 
-1. En la barra de herramientas de la página, toque **Información** de página, opciones de ![tema](assets/theme-options.png) > **Abrir propiedades**.
-1. En la ficha General, elija una configuración para el campo **Adobe Target** . Toque **Guardar y cerrar**.
+1. En la barra de herramientas de la página, toque **Información de la página** ![opciones del tema](assets/theme-options.png) > **Abrir propiedades**.
+1. En la ficha General, elija una configuración para el campo **Adobe Target**. Toque **Guardar y cerrar**.
 
 ## Aplicación de la actividad creada a una imagen de formulario adaptable o a una imagen de comunicación interactiva {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 
@@ -91,30 +91,30 @@ Su marca ahora aparece en la página Actividades.
    >
    >AEM Forms solo admite componentes de imagen de destino. Asegúrese de que el panel que aloja el componente de imagen no contenga ningún otro componente y de que el número de columnas del panel esté establecido en 1.
 
-1. Cambie del modo **Editar** al modo **Segmentación** . La opción para cambiar de modo está cerca de la esquina superior derecha.
-1. Seleccione una **MARCA**, seleccione **ACTIVIDAD** y toque Objetivo de **Inicio**. El menú **Audiencias** aparece en la parte derecha del editor.
+1. Cambie del modo **Editar** al modo **Segmentación**. La opción para cambiar de modo está cerca de la esquina superior derecha.
+1. Seleccione una **MARCA**, seleccione **ACTIVIDAD** y toque **Objetivo de Inicio**. El menú **Audiencias** aparece en la parte derecha del editor.
 
    ![targeting-menu](assets/targeting-menu.png)
 
-1. Seleccione una audiencia en el menú **Audiencias** y toque la imagen en destinatario. Aparece un menú. En el menú, toque **Destinatario**. Toque la imagen y **Configurar**. En la ventana de propiedades, seleccione la imagen que desea mostrar para la audiencia seleccionada. Repita el paso para todas las audiencias. La segmentación de experiencias está habilitada para la imagen en la comunicación interactiva o en el formulario adaptable.
+1. Seleccione una audiencia en el menú **Audiencias** y toque la imagen en destinatario. Aparece un menú. En el menú, toque **Destinatario**. Toque la imagen y toque **Configurar**. En la ventana de propiedades, seleccione la imagen que desea mostrar para la audiencia seleccionada. Repita el paso para todas las audiencias. La segmentación de experiencias está habilitada para la imagen en la comunicación interactiva o en el formulario adaptable.
 
 ## Compruebe si la actividad creada se sincroniza con el servidor de Destinatario {#check-if-the-created-activity-syncs-with-the-target-server}
 
-actividad utilizada para dirigir sincronizaciones con el servidor de Destinatario. Para comprobar si la actividad está sincronizada con el servidor de destinatario, compruebe el estado de la actividad en la página de marca.
+Actividad utilizada para dirigir sincronizaciones con el servidor de Destinatario. Para comprobar si la actividad está sincronizada con el servidor de destinatario, compruebe el estado de la actividad en la página de marca.
 
 Asegúrese de que el estado de la actividad es Sincronizado.
 
-## Validación del comportamiento de Destinatario {#validate-target-behavior}
+## Validar comportamiento de Destinatario {#validate-target-behavior}
 
 Para validar el comportamiento de Destinatario:
 
-* Usar objetivos con `wcmmode preview` en el modo de autor
-* Usar segmentación con `wcmmode preview` y `wcmmode disabled` en el modo de publicación
+* Usar objetivos con `wcmmode preview` en el modo de creación
+* Usar objetivos con `wcmmode preview` y `wcmmode disabled` en el modo de publicación
 
-## Monitoreo de la segmentación para el componente de imagen {#monitor-targeting-for-the-image-component}
+## Monitoreo del objetivo para el componente de imagen {#monitor-targeting-for-the-image-component}
 
 Para supervisar la segmentación de componentes de imagen en el formulario, publique sus imágenes, actividades y formularios adaptables.
 
 ## Problemas abiertos {#open-issues}
 
-expresión de visibilidad, error de enfoque establecido para imágenes de destino en formularios adaptables.
+Expresión de visibilidad, error de enfoque establecido para imágenes de destino en formularios adaptables.

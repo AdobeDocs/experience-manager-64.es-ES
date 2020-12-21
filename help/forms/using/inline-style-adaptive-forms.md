@@ -18,14 +18,14 @@ ht-degree: 2%
 
 # Estilo en línea de los componentes de formularios adaptables {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante el editor [de](/help/forms/using/themes.md)temas. Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualización los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante [editor de temas](/help/forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualización los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
 Para agregar estilos en línea a un componente:
 
-1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
-1. Seleccione un componente en la página y toque el botón de ![edición](assets/edit-button.png). Las propiedades de estilo se abren en la barra lateral.
+1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, toque ![lista desplegable de lienzos](assets/canvas-drop-down.png) > **Estilo**.
+1. Seleccione un componente en la página y toque el botón de edición ![botón de edición](assets/edit-button.png). Las propiedades de estilo se abren en la barra lateral.
 
    También puede seleccionar componentes del árbol de jerarquía de formularios en la barra lateral. El árbol de jerarquía de formularios está disponible como objetos de formulario en la barra lateral.
 
@@ -43,7 +43,7 @@ Para agregar estilos en línea a un componente:
    * Avanzado (le permite escribir CSS personalizada para el componente)
 
 1. Del mismo modo, se pueden aplicar estilos a otras partes de un componente, como Utilidad, Rótulo y Ayuda.
-1. Toque **Listo** para confirmar los cambios o **Cancelar** para descartarlos.
+1. Toque **Listo** para confirmar los cambios o **Cancelar** para descartar los cambios.
 
 ## Ejemplo: estilos en línea para un componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -78,7 +78,7 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
   <tr> 
    <td><p>Etiqueta</p> </td> 
    <td><p>Dimensiones y posición &gt; anchura</p> </td> 
-   <td><p>100px</p> </td> 
+   <td><p>100 px</p> </td> 
    <td><p>Corrige la anchura como 100 px para la etiqueta</p> </td> 
   </tr> 
   <tr> 
@@ -96,7 +96,8 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
  </tbody> 
 </table>
 
-![Estilo del cuadro de texto después de aplicar](assets/applied-style.png)el estilo en línea **Figura:** *Componente de cuadro de texto después de aplicar propiedades de estilo en línea*
+![Estilo del cuadro de texto después de ](assets/applied-style.png)
+**aplicar estilo en líneaFigura:componente** *Cuadro de texto después de aplicar propiedades de estilo en línea*
 
 Siguiendo los pasos anteriores, puede seleccionar y aplicar estilo a otros componentes, como paneles, botones de envío y botones de radio.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Naming Conventions {#naming-conventions}
+# Convenciones de nombres {#naming-conventions}
 
 ## Guiones en el nombre del paquete Java {#hyphens-in-java-package-name}
 
@@ -26,8 +26,8 @@ Al crear una ubicación para una clase Java, tenga en cuenta que el nombre del p
 
 Aunque el uso de guiones en los nombres de los elementos del repositorio es una práctica recomendada en el desarrollo de AEM, los guiones no son válidos en los nombres de paquetes de Java.
 
-La plataforma CRX subyacente debe poder distinguir entre un guión bajo &#39;_&#39; real y un guión &#39;-&#39;. Por lo tanto, en JCR, el guión debe reemplazarse por su valor Unicode (u002d) y escaparse con un guión bajo &#39;_&#39;.
+La plataforma CRX subyacente debe poder distinguir entre un guión bajo real &#39;_&#39; y un guión &#39;-&#39;. Por lo tanto, en JCR, el guión debe reemplazarse por su valor Unicode (u002d) y escaparse con un guión bajo &#39;_&#39;.
 
 Por ejemplo, si la ruta del repositorio es **/apps/my-example/component/info/Info.java**, el nombre del paquete debe ser `java package apps.my_002dexample.component.info;`
 
-Observe que un subrayado debe ser escapado de forma similar, de modo que `_` se convierta en `_005f`.
+Tenga en cuenta que un subrayado debe tener un carácter de escape similar, de modo que `_` se convierta en `_005f`.

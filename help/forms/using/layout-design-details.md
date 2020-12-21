@@ -17,12 +17,12 @@ ht-degree: 0%
 ---
 
 
-# Diseño de maquetación {#layout-design}
+# Diseño de diseño {#layout-design}
 
 Las plantillas de formulario XFA o XDP son las plantillas para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir canal](/help/forms/using/web-channel-print-channel.md#printchannel) de comunicaciones [interactivas](/help/forms/using/interactive-communications-overview.md)
+* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de comunicaciones  [interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de diseños
 
@@ -123,7 +123,7 @@ Utilice un campo si desea capturar datos de módulos o datos de elementos de dic
 
 Cuando elementos como el logotipo y la dirección de su organización aparezcan en todas las páginas de una carta o comunicación interactiva, cree campos de formulario para esos elementos y colóquelos en la página de formato. Utilice el enlace Nombre (Nombre del campo) para estos campos.
 
-## Especificar el formato de procesamiento del servidor {#specify-the-server-nbsp-render-format}
+## Especifique el formato de procesamiento del servidor {#specify-the-server-nbsp-render-format}
 
 Utilice el formato de procesamiento del servidor de la presentación en Formulario XML dinámico; de lo contrario, las letras o comunicaciones interactivas basadas en este diseño no se pueden procesar correctamente. De forma predeterminada, el formato de procesamiento del servidor en Forms Designer se establece en Formulario XML dinámico. Para asegurarse de que está utilizando el formato correcto:
 

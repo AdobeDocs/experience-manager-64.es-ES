@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Información general sobre la administración de correspondencias {#correspondence-management-overview}
+# Información general de la administración de correspondencias {#correspondence-management-overview}
 
 ## Introducción {#introduction}
 
@@ -25,7 +25,7 @@ Correspondence Management centraliza y gestiona la creación, montaje y envío d
 
 ## Beneficios {#benefits}
 
-### Eficaz y productiva {#efficient-and-productive}
+### Eficiente y Productiva {#efficient-and-productive}
 
 Simplifica el procesamiento, permitiéndole:
 
@@ -41,7 +41,7 @@ Proporciona comunicaciones de mayor calidad, lo que le permite:
 * Creación de archivos Adobe PDF para archivado y auditoría
 * Cree mensajes compatibles con la organización utilizando contenido preaprobado mediante reglas comerciales incrustadas.
 
-### Amplia {#extensive}
+### Extensivo {#extensive}
 
 Mejora el compromiso del cliente, permitiéndole:
 

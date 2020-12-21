@@ -46,7 +46,7 @@ Si el portal tiene el nombre de plantilla Carta a mano, la dirección URL podrí
 
 ## Invocación basada en datos en línea {#inline-data-based-invocation}
 
-Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, mientras se envían los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible/ideal en el método anterior.
+Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la dirección URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, mientras se envían los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible/ideal en el método anterior.
 
 ### Parámetros para especificar la letra {#parameters-for-specifying-letter}
 
@@ -118,7 +118,7 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Booleano</td> 
-   <td>True para abrir la letra en el modo de previsualización<br /> </td> 
+   <td>True para abrir la letra en modo de previsualización<br /> </td> 
   </tr>
   <tr>
    <td>Aleatorio</td> 

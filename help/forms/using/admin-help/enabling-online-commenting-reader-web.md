@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Activación de los comentarios en línea para el complemento del navegador web de Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Habilitación de comentarios en línea para el complemento del explorador Web de Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
 Para habilitar la barra de herramientas Comentario y marca en un archivo PDF que se visualiza mediante el complemento del navegador web de Adobe Reader, debe haber una colaboración en el servidor, como un servidor de revisión. Si no hay disponible un back-end de colaboración, debe guardar el archivo PDF en el equipo, revisar y marcar el archivo en Adobe Reader y enviarlo de nuevo al creador.
 

@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# Introduction to AEM Forms {#introduction-to-aem-forms}
+# Introducción a AEM Forms {#introduction-to-aem-forms}
 
 Para obtener información sobre las últimas funciones y mejoras de AEM Forms, consulte [Novedades de AEM Forms](/help/forms/using/whats-new.md).
 
@@ -25,7 +25,7 @@ Para obtener información sobre las últimas funciones y mejoras de AEM Forms, c
 
 Adobe Experience Manager (AEM) proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos al tiempo que se integra con los procesos back-end, las reglas comerciales y los datos.
 
-Formularios AEM combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. AEM Forms, diseñado para funcionar en canales web y móviles, puede integrarse de manera eficaz en sus procesos empresariales, reduciendo los procesos y errores de papel y mejorando al mismo tiempo la eficacia.
+AEM Forms combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. AEM Forms, diseñado para funcionar en canales web y móviles, puede integrarse de manera eficaz en sus procesos empresariales, reduciendo los procesos y errores de papel y mejorando al mismo tiempo la eficacia.
 
 AEM Forms aprovecha y amplía las capacidades de sus inversiones existentes en formularios XFA y soluciones de LiveCycle de Adobe.
 
@@ -35,7 +35,7 @@ AEM Forms proporciona herramientas de administración de formularios que no solo
 
 ![](do-not-localize/4th-draft.gif)
 
-### Funciones clave {#key-capabilities}
+### Capacidades clave {#key-capabilities}
 
 En resumen, AEM Forms proporciona potentes funciones de administración de formularios, como las siguientes, que reducen los procesos manuales y aumentan la satisfacción del cliente.
 
@@ -47,7 +47,7 @@ En resumen, AEM Forms proporciona potentes funciones de administración de formu
 * Integración con los servicios de Adobe Document Cloud eSign o Scribble para firmar electrónicamente documentos que contengan información confidencial
 * Funciones automatizadas de publicación de formularios y la capacidad de ofrecer una comunicación oportuna, personalizada y coherente a través de varios canales
 
-## AEM tipos de formulario {#aem-form-types}
+## Tipos de formularios AEM {#aem-form-types}
 
 AEM Forms permite ampliar los formularios nuevos y existentes para crear:
 
@@ -64,7 +64,7 @@ Los formularios basados en navegador HTML5 se pueden ver tanto en dispositivos m
 
 **Formularios adaptables**
 
-Los formularios adaptables se pueden adaptar dinámicamente a las respuestas del usuario agregando o eliminando campos o secciones según sea necesario. AEM permite reutilizar plantillas de formulario XML de Adobe para crear formularios adaptables.
+Los formularios adaptables se pueden adaptar dinámicamente a las respuestas del usuario mediante la adición o eliminación de campos o secciones, según sea necesario. AEM permite reutilizar plantillas de formulario XML de Adobe para crear formularios adaptables.
 
 ### Funciones admitidas {#supported-features}
 
@@ -90,11 +90,11 @@ Capturar los datos sin conexión y sincronizarlos la próxima vez que vuelva a e
 **Ventajas de utilizar Forms Workspace para la recopilación de datos sin conexión**
 
 * Aplicación de espacio de trabajo HTML fácil de usar para asignación y seguimiento de tareas
-* entorno de diseño de flujo de trabajo de arrastrar y soltar
+* Entorno de diseño de flujo de trabajo de arrastrar y soltar
 * Conectores de gestor de contenido Enterprise (ECM)
 * Compatibilidad con estándares abiertos, incluidos XML y SOAP para conectar datos de formularios con sistemas empresariales
 * Los informes HTML predeterminados supervisan los atrasos, las colas de trabajos y los indicadores de rendimiento clave (KPI)
-* paneles personalizables para una perspectiva en tiempo real de las operaciones comerciales
+* Paneles personalizables para una perspectiva en tiempo real de las operaciones comerciales
 * API para conectarse con herramientas de sistema de informes de terceros
 
 ![](do-not-localize/3rd-draft.gif)
@@ -109,13 +109,13 @@ Los documentos personalizados, como recibos, kits de bienvenida y extractos, pue
 
 **Características principales**
 
-* entorno de creación de correspondencia compatible con plantillas, bloques de contenido, reglas comerciales y mucho más
-* Conversión y ensamblado de Documentos
+* Entorno de creación de correspondencia compatible con plantillas, bloques de contenido, reglas comerciales y mucho más
+* Conversión y ensamblado de documentos
 * Compatibilidad con el envío de documentos por lotes o bajo demanda a través de varios canales, incluidos la Web, el correo electrónico y el papel
 * Auditar seguimientos con historial de cambios
 * Compatibilidad con firmas digitales para validar la integridad del contenido y la identidad del firmante
-* Complemento de seguridad de Documento para AEM Forms que incluye cifrado, políticas de uso, seguimiento y auditoría
+* Complemento de seguridad de documento para AEM Forms que incluye cifrado, políticas de uso, seguimiento y auditoría
 
 ![](do-not-localize/layout-02.png)
-**Figura:** *Flujo de trabajo de comunicación personalizado optimizado*
+**Figura:Flujo de trabajo de comunicación personalizado** *optimizado*
 

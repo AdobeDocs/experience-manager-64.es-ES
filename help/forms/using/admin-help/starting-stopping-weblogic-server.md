@@ -51,7 +51,7 @@ Varios procedimientos requieren el inicio o la detención de la instancia de Web
 
 >[!NOTE]
 >
->Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca la variable de `LD_ASSUME_KERNEL` entorno en 2.4.19 mediante el `export LD_ASSUME_KERNEL=2.4.19` comando. A continuación, ejecute WebLogic Server desde el mismo shell en el que configuró esta variable de entorno.
+>Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca la variable de entorno `LD_ASSUME_KERNEL` en 2.4.19 mediante el comando `export LD_ASSUME_KERNEL=2.4.19`. A continuación, ejecute WebLogic Server desde el mismo shell en el que configuró esta variable de entorno.
 
 ## Inicio WebLogic Server {#start-weblogic-server}
 
@@ -63,7 +63,7 @@ Varios procedimientos requieren el inicio o la detención de la instancia de Web
 
 ## Detener WebLogic Server {#stop-weblogic-server}
 
-1. Consola de administración de Inicio WebLogic Server escribiendo `https://[host name]:7001/console` en la línea URL de un explorador Web.
+1. Consola de administración de inicio WebLogic Server escribiendo `https://[host name]:7001/console` en la línea URL de un explorador Web.
 1. Inicie sesión escribiendo el nombre de usuario y la contraseña que se usaron al crear esta configuración de WebLogic y, a continuación, haga clic en Iniciar sesión.
 1. En Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores.
@@ -74,17 +74,17 @@ Varios procedimientos requieren el inicio o la detención de la instancia de Web
 
 La consola de administración de WebLogic Server ya no está disponible y el símbolo del sistema desde el que ejecutó el comando inicio está disponible.
 
-## Consola de administración de Inicio WebLogic {#start-weblogic-administration-console}
+## Consola de administración de inicio WebLogic {#start-weblogic-administration-console}
 
-1. Si WebLogic Admin Server no se está ejecutando, vaya al directorio raíz *[\user_projects\domains\[domainname]]de *appserver e introduzca el siguiente comando:
+1. Si WebLogic Admin Server no se está ejecutando, vaya al directorio *[appserver root]\user_projects\domains\[domainname]* desde un símbolo del sistema e introduzca el siguiente comando:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Acceda a la consola de administración de WebLogic Server escribiendo `https://*[host name]:`[Port] `/console` en la línea URL de un explorador Web, donde *[Port]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
+1. Acceda a la consola de administración de WebLogic Server escribiendo `https://*[host name]:`[Puerto] `/console` en la línea URL de un explorador Web, donde *[Puerto]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
 1. En la pantalla de inicio de sesión, escriba el nombre de usuario y la contraseña del administrador y haga clic en Iniciar sesión.
 
-## Administrador de nodos de Inicio {#start-node-manager}
+## Administrador de nodos de inicio {#start-node-manager}
 
 1. Asegúrese de que se esté ejecutando WebLogic Server.
 1. Desde un nuevo símbolo del sistema, vaya a *[appserver root]*/server/bin.
@@ -104,7 +104,7 @@ Después de cerrar WebLogic Server, puede cerrar el símbolo del sistema desde e
 >Esta tarea solo se puede realizar después de crear un dominio WebLogic y un servidor administrado.
 
 1. Asegúrese de que WebLogic Server y Node Manager se estén ejecutando.
-1. Consola de administración de Inicio WebLogic Server escribiendo el nombre `https://`*[de]host:[puerto ]*`/console`en la línea URL de un explorador Web.
+1. Consola de administración de inicio WebLogic Server escribiendo `https://`*[nombre de host]:[puerto ]*`/console` en la línea URL de un explorador Web.
 1. En Estructura de dominio, haga clic en Entorno > Servidores.
 1. En el panel derecho, haga clic en la ficha Control.
 1. Seleccione el servidor administrado que desea inicio.
@@ -112,7 +112,7 @@ Después de cerrar WebLogic Server, puede cerrar el símbolo del sistema desde e
 
 ## Detener un servidor administrado por WebLogic {#stop-a-weblogic-managed-server}
 
-1. Consola de administración de Inicio WebLogic Server escribiendo el nombre `https://`*[de]host:[puerto ]*`/console`en la línea URL de un explorador Web.
+1. Consola de administración de inicio WebLogic Server escribiendo `https://`*[nombre de host]:[puerto ]*`/console` en la línea URL de un explorador Web.
 1. En Estructura de dominio, haga clic en Entorno > Servidores.
 1. En el panel derecho, haga clic en la ficha Control.
 1. Seleccione el servidor administrado que desea detener.

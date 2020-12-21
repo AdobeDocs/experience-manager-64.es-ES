@@ -32,17 +32,17 @@ Para obtener más información sobre la creación de un sitio de comunidad, visi
 
 >[!NOTE]
 >
->Si no está familiarizado con el entorno de creación, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con el entorno de creación, vista la documentación sobre [administración básica](../../help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponibles {#available-communities-components}
 
 La siguiente tabla lista los componentes de Communities visibles para los autores cuando están activados en el navegador de componentes (barra de tareas).
 
-Consulte también la guía [de componentes](components-guide.md)comunitarios interactivos.
+Consulte también la guía interactiva [Community Components](components-guide.md).
 
 >[!NOTE]
 >
->Lea Conceptos básicos de componentes de [comunidades](basics.md) , ya que contiene la información necesaria para la creación con componentes de Comunidades.
+>Lea [Conceptos básicos de componentes de comunidades](basics.md), ya que contiene la información necesaria para la creación con componentes de comunidades.
 
 | **Título del componente** | **Función** |
 |---|---|
@@ -51,7 +51,7 @@ Consulte también la guía [de componentes](components-guide.md)comunitarios int
 | Barra lateral de blog | [Blog](blog-feature.md) |
 | Calendario | [Calendario](calendar.md) |
 | Comentarios | [Comentarios](comments.md) |
-| Lista de actividades de la comunidad | [Tendencias de Actividad](trends.md) |
+| Lista de actividades de la comunidad | [Tendencias de actividad](trends.md) |
 | Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](creating-groups.md) |
 | Componer mensaje | [Mensajes](configure-messaging.md) |
 | Asignaciones de habilitación | [Asignaciones](assignments.md) |
@@ -83,9 +83,9 @@ Consulte también la guía [de componentes](components-guide.md)comunitarios int
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visite [Implementar comunidades](deploy-communities.md) para conocer las implementaciones recomendadas.
+* Visite [Implementación de comunidades](deploy-communities.md) para conocer las implementaciones recomendadas.
 
-* Visite [Administración de sitios](administer-landing.md) de comunidades para obtener información sobre cómo crear un sitio de comunidad, configurar plantillas de sitio de comunidad, moderar contenido de comunidad, administrar miembros y configurar mensajes.
+* Visite [Administración de sitios de comunidades](administer-landing.md) para obtener información sobre cómo crear un sitio de comunidad, configurar plantillas de sitio de comunidad, moderar contenido de comunidad, administrar miembros y configurar mensajes.
 
-* Visite [Desarrollar comunidades](communities.md) para conocer el marco de componentes sociales (SCF) y personalizar componentes y características de Comunidades.
+* Visite [Desarrollar comunidades](communities.md) para conocer el marco de componentes sociales (SCF) y personalizar componentes y características de Communities.
 

@@ -16,7 +16,7 @@ ht-degree: 4%
 ---
 
 
-# Creación de formularios adaptables con Esquema JSON {#creating-adaptive-forms-using-json-schema}
+# Creación de formularios adaptables mediante el Esquema JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Requisitos previos {#prerequisites}
 
@@ -25,9 +25,9 @@ La creación de un formulario adaptable con un Esquema JSON como modelo de formu
 * [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
-## Uso de un Esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
+## Uso de un Esquema JSON como modelo de formulario {#using-a-json-schema-as-form-model}
 
-AEM Forms admite la creación de un formulario adaptable utilizando un Esquema JSON existente como modelo de formulario. Este Esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El Esquema JSON que utilice debe cumplir con las especificaciones [de](https://json-schema.org/draft-04/schema)v4.
+AEM Forms admite la creación de un formulario adaptable utilizando un Esquema JSON existente como modelo de formulario. Este Esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El Esquema JSON que utilice debe cumplir con [especificaciones v4](https://json-schema.org/draft-04/schema).
 
 Las características clave del uso de un Esquema JSON son:
 
@@ -67,18 +67,18 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
   </tr> 
   <tr> 
    <td>number, propiedad<br /> </td> 
-   <td>Campo numérico con subtipo configurado para flotar<br /> </td> 
+   <td>Campo numérico con subtipo definido como flotante<br /> </td> 
   </tr> 
   <tr> 
    <td>integer, propiedad<br /> </td> 
    <td>Campo numérico con subtipo definido como entero<br /> </td> 
   </tr> 
   <tr> 
-   <td>boolean, propiedad<br /> </td> 
+   <td>propiedad booleana<br /> </td> 
    <td>Cambiar<br /> </td> 
   </tr> 
   <tr> 
-   <td>object property<br /> </td> 
+   <td>propiedad object<br /> </td> 
    <td>Panel<br /> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
  </tbody> 
 </table>
 
-### Propiedades comunes del esquema {#common-schema-properties}
+### Propiedades de esquema comunes {#common-schema-properties}
 
 El formulario adaptable utiliza la información disponible en el Esquema JSON para asignar cada campo generado. En particular:
 
@@ -98,7 +98,7 @@ El formulario adaptable utiliza la información disponible en el Esquema JSON pa
 * La propiedad maxLength se establece como el atributo maxlength del componente de campo de texto.
 * Para el componente de cuadro numérico se utilizan las propiedades Minimum, Maximum, uniqueMinimum y uniqueMaximum como mínimo.
 * Para admitir el intervalo para el componente DatePicker, se proporcionan las propiedades de Esquema JSON minDate y maxDate adicionales.
-* Las propiedades minItems y maxItems se utilizan para restringir el número de elementos o campos que se pueden agregar o quitar de un componente de panel.
+* Las propiedades minItems y maxItems se utilizan para restringir el número de elementos/campos que se pueden agregar o quitar de un componente de panel.
 * La propiedad readOnly establece el atributo de sólo lectura de un componente de formulario adaptable.
 * La propiedad required marca el campo de formulario adaptable como obligatorio, mientras que en el caso de panel (donde type es object), los datos JSON enviados por última vez tienen campos con el valor vacío correspondiente a ese objeto.
 * La propiedad pattern se define como el patrón de validación (expresión regular) en forma adaptable.
@@ -317,9 +317,9 @@ Las claves de definición se utilizan para identificar esquemas reutilizables. L
 
 El ejemplo anterior define un registro de cliente, donde cada cliente tiene una dirección de envío y una dirección de facturación. La estructura de ambas direcciones es la misma: las direcciones tienen una dirección, ciudad y estado— así que es una buena idea no duplicado las direcciones. También facilita la adición y eliminación de campos para cualquier cambio futuro.
 
-## Configuración previa de campos en la definición de Esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Preconfiguración de campos en Definición de Esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo de Esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
+Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo de Esquema JSON para asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
 ```
 {
@@ -437,12 +437,12 @@ Puede agregar las siguientes restricciones a los elementos de Esquema JSON para 
  </tbody> 
 </table>
 
-## Construcciones no compatibles  {#non-supported-constructs}
+## Construcciones no admitidas {#non-supported-constructs}
 
 Los formularios adaptables no admiten las siguientes construcciones de Esquema JSON:
 
 * Tipo nulo
-* tipos de Unión como cualquiera, y
+* tipos de unión como cualquiera, y
 * OneOf, AnyOf, AllOf y NOT
 * Solo se admiten matrices homogéneas. Por lo tanto, la restricción items debe ser un objeto y no una matriz.
 

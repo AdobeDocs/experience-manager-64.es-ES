@@ -244,7 +244,7 @@ El componente de medios interactivos es inteligente, ya sea que agregue una imag
 > 
 >Para evitar este problema, asegúrese de que los usuarios de AEM Sites tienen los permisos necesarios para acceder a los recursos.
 
-![chlimage_1-541](assets/chlimage_1-541.png)
+![chlimage_1-540](assets/chlimage_1-541.png)
 
 Puede editar las siguientes opciones de configuración **[!UICONTROL General]** al hacer clic en **[!UICONTROL Editar]** en el componente.
 

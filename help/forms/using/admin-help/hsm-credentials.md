@@ -30,7 +30,7 @@ AEM formularios Digital Signatures puede utilizar credenciales almacenadas en un
 >
 >Después de cambiar la configuración de HSM, reinicie el servidor de formularios AEM.
 
-## Crear un alias para una credencial HSM cuando el dispositivo HSM está en línea {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+## Cree un alias para una credencial HSM cuando el dispositivo HSM esté en línea {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM y, a continuación, haga clic en Añadir.
 1. En el cuadro Nombre de Perfil, escriba una cadena que se utilice para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma.
@@ -38,14 +38,14 @@ AEM formularios Digital Signatures puede utilizar credenciales almacenadas en un
 1. Haga clic en Probar conectividad HSM. Si AEM formularios pueden conectarse al dispositivo HSM, aparece un mensaje que indica que el HSM está disponible. Haga clic en Siguiente. 
 1. Utilice el Nombre del token, ID de ranura o Índice de Lista de ranura para identificar dónde se almacenan las credenciales en el HSM.
 
-   * **Nombre del token:** Corresponde al nombre de la partición HSM que se va a utilizar (por ejemplo, HSMPART1).
+   * **Nombre del token:** corresponde al nombre de la partición HSM que se va a utilizar (por ejemplo, HSMPART1).
    * **Id. de ranura:** El ID de ranura es un identificador de ranura de tipo de datos largo.
-   * **Índice de Lista de ranuras:** Si selecciona Índice de Lista de ranura, establezca la Información de ranura en un entero que corresponda a la ranura. Es un índice basado en 0, lo que significa que si el cliente está registrado primero con la partición HSMPART1, HSMPART1 se referirá usando el valor 0 de SlotListIndex.
+   * **Índice de Lista de ranura:** si selecciona Índice de Lista de ranura, establezca la información de ranura en un entero que corresponda a la ranura. Es un índice basado en 0, lo que significa que si el cliente está registrado primero con la partición HSMPART1, HSMPART1 se referirá usando el valor 0 de SlotListIndex.
 
 1. En el cuadro Pin de token, escriba la contraseña necesaria para acceder a la clave HSM y haga clic en Siguiente.
 1. En el cuadro Credenciales, seleccione una credencial. Haga clic en Guardar.
 
-## Crear un alias para una credencial HSM cuando el dispositivo HSM está sin conexión {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
+## Cree un alias para una credencial HSM cuando el dispositivo HSM esté sin conexión {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM y, a continuación, haga clic en Añadir.
 1. En el cuadro Nombre de Perfil, escriba una cadena que se utilice para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma.
@@ -59,16 +59,16 @@ AEM formularios Digital Signatures puede utilizar credenciales almacenadas en un
 
       El ID de ranura se establece cliente por cliente. Si ha registrado una segunda máquina en una partición diferente (por ejemplo, HSMPART2 en el mismo dispositivo HSM), entonces la ranura 1 se asociará con la partición HSMPART2 para ese cliente.
 
-   * **Índice de ranuras:** Si selecciona Índice de ranura, establezca la Información de ranura en un entero que corresponda a la ranura. Es un índice basado en 0, lo que significa que si el cliente está registrado primero con la partición HSMPART1, la ranura 1 se asigna a HSMPART1 para este cliente. Debido a que HSMPART1 es la primera partición registrada, el Índice de ranuras es 0.
+   * **Índice de ranura:** si selecciona Índice de ranura, establezca la información de ranura en un entero que corresponda a la ranura. Es un índice basado en 0, lo que significa que si el cliente está registrado primero con la partición HSMPART1, la ranura 1 se asigna a HSMPART1 para este cliente. Debido a que HSMPART1 es la primera partición registrada, el Índice de ranuras es 0.
 
 1. Seleccione una de estas opciones y proporcione la ruta:
 
    * **Certificado**: (No es necesario si se utiliza SHA1) Haga clic en Examinar y busque la ruta a la clave pública para las credenciales que está utilizando.
-   * **Certificado SHA1:** (No es necesario si se utiliza un certificado físico) Escriba el valor SHA1 (huella digital) del archivo de clave pública (.cer) para la credencial que está utilizando. Asegúrese de que no hay espacios utilizados en el valor SHA1.
+   * **Certificado SHA1:**  (no obligatorio si se utiliza un certificado físico) Escriba el valor SHA1 (huella digital) del archivo de clave pública (.cer) para la credencial que está utilizando. Asegúrese de que no hay espacios utilizados en el valor SHA1.
 
 1. En el cuadro Contraseña, escriba la contraseña necesaria para acceder a la clave HSM de la información de ranura dada y, a continuación, haga clic en Guardar.
 
-## Propiedades de alias de credenciales HSM de Vista {#view-hsm-credential-alias-properties}
+## Propiedades de alias de credenciales HSM de vista {#view-hsm-credential-alias-properties}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM.
 1. Haga clic en el nombre de alias del alias de credenciales para vista de las propiedades y, a continuación, haga clic en Aceptar.
@@ -98,12 +98,12 @@ Restablezca las conexiones abiertas a un dispositivo HSM después de cualquier i
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM.
 1. Seleccione las casillas de verificación de las credenciales de HSM que desee eliminar, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
 
-## Configuración de la compatibilidad remota con HSM {#configure-remote-hsm-support}
+## Configurar la compatibilidad con HSM remoto {#configure-remote-hsm-support}
 
-AEM formularios utiliza un mecanismo IPC/RPC basado en servicios Web. Este mecanismo permite que AEM formularios utilicen un HSM instalado en un equipo remoto. Para utilizar esta funcionalidad, instale el servicio Web en el equipo remoto en el que esté instalado el HSM. Consulte [](https://kb2.adobe.com/cps/808/cpsid_80835.html)Configuración de la compatibilidad con HSM para formularios AEM ES con Sun JDK en plataformas de 64 bits de Windows para obtener más información.
+AEM formularios utiliza un mecanismo IPC/RPC basado en servicios Web. Este mecanismo permite que AEM formularios utilicen un HSM instalado en un equipo remoto. Para utilizar esta funcionalidad, instale el servicio Web en el equipo remoto en el que esté instalado el HSM. Consulte [Configuración de la compatibilidad con HSM para formularios AEM ES con Sun JDK en plataformas Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html)para obtener más información.
 
 Este mecanismo no admite la creación en línea de perfiles de HSM ni comprobaciones de estado. Sin embargo, existen dos formas de crear perfiles HSM y realizar comprobaciones de estado:
 
-* Cree una credencial de cliente de formularios AEM pasándola al certificado del firmante. Siga los pasos que se describen en [Configuración de la compatibilidad con HSM para formularios AEM ES mediante Sun JDK en una plataforma](https://kb2.adobe.com/cps/808/cpsid_80835.html)de Windows de 64 bits. La ubicación del servicio Web se transfiere como propiedad Credential. También se admiten perfiles HSM sin conexión que se crean con el certificado de identificación o el certificado SHA-1 hexadecimal. Sin embargo, si ha actualizado los formularios a AEM de una versión anterior de AEM formularios, realice cambios en el cliente porque las credenciales contienen certificados e información de servicio Web.
-* La ubicación del servicio Web se especifica en la consola de administración para el servicio Signature. (Consulte Configuración [del servicio](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)de firma). Aquí, el cliente solo llevaba el alias del perfil HSM en el almacén de confianza. Puede utilizar esta opción sin problemas sin ningún cambio de cliente, incluso si ha actualizado a AEM formularios de una versión anterior de AEM formularios. Esta opción no admite perfiles HSM que utilicen el certificado SHA-1.
+* Cree una credencial de cliente de formularios AEM pasándola al certificado del firmante. Siga los pasos descritos en [Configuración de la compatibilidad con HSM para formularios AEM ES mediante Sun JDK en la plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). La ubicación del servicio Web se transfiere como propiedad Credential. También se admiten perfiles HSM sin conexión que se crean con el certificado de identificación o el certificado SHA-1 hexadecimal. Sin embargo, si ha actualizado los formularios a AEM de una versión anterior de AEM formularios, realice cambios en el cliente porque las credenciales contienen certificados e información de servicio Web.
+* La ubicación del servicio Web se especifica en la consola de administración para el servicio Signature. (Consulte [Configuración del servicio de firma](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)). Aquí, el cliente solo llevaba el alias del perfil HSM en el almacén de confianza. Puede utilizar esta opción sin problemas sin ningún cambio de cliente, incluso si ha actualizado a AEM formularios de una versión anterior de AEM formularios. Esta opción no admite perfiles HSM que utilicen el certificado SHA-1.
 

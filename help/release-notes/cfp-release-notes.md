@@ -4,9 +4,9 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 11%
 
 ---
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2 proporciona correcciones para los siguientes pr
 * Puede suspender el [!DNL Live Copy] de una página y la herencia se interrumpe como se ve en el modo Editor. Sin embargo, en las propiedades Página, el icono que representa la herencia indica incorrectamente que la herencia existe y no está dañada (NPR-34096).
 * Problema con la visualización de componentes permitidos en la página Editar plantilla (CQ-4297295).
 * Después de actualizar Chrome y Firefox, los menús emergentes no funcionan del modo esperado. Al cargar las propiedades de página, no muestra el panel cuando hay datos en él (CQ-4292995).
+* Varias instancias de secuencias de comandos entre sitios en [!DNL Experience Manager Sites] componentes (NPR-33926).
+* Las entradas de usuario no se codifican correctamente para varios componentes al enviar información al cliente (NPR-33696).
+* Una dirección URL que termina con `childrenlist.html` muestra una página HTML en lugar de una respuesta 404. Estas direcciones URL son vulnerables a los scripts entre sitios (NPR-33441).
 
 #### Assets {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2 proporciona correcciones para los siguientes pr
 * La acción de envío **[!UICONTROL Enviar a extremo REST]** no funciona para un formulario adaptable (NPR-34513).
 
 * Accesibilidad: Al intentar enviar un formulario adaptable sin cargar un archivo adjunto para un campo obligatorio, el enfoque no se desplaza automáticamente al campo adjunto (NPR-34511).
+
+* Las entradas de usuario no se codifican correctamente para los componentes [!DNL Forms] al enviar información al cliente (NPR-33611).
 
 **Flujo de trabajo**
 
@@ -433,7 +438,7 @@ Para determinar la plataforma certificada para ejecutarse con esta versión de A
 
 ### Actualizar visores de Dynamic Media (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.3 contiene una nueva versión de visores de Dynamic Media (5.10.1) que permite comprobar los nombres de duplicados en la página Ajustes preestablecidos de imagen. Se aconseja a los clientes de Dynamic Media que ejecuten el siguiente comando para actualizar los ajustes preestablecidos del visor del equipo.
+AEM 6.4.8.3 contiene una nueva versión de los visores de Dynamic Media (5.10.1) que permite comprobar los nombres de los duplicados en la página Ajustes preestablecidos de imagen. Se recomienda a los clientes de Dynamic Media que ejecuten el siguiente comando para actualizar los ajustes preestablecidos del visor de la caja.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 

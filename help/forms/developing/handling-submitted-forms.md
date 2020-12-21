@@ -19,11 +19,11 @@ ht-degree: 0%
 ---
 
 
-# Gestión de Forms enviado {#handling-submitted-forms}
+# Administración de Forms enviado {#handling-submitted-forms}
 
 Las aplicaciones basadas en la Web que permiten al usuario rellenar formularios interactivos requieren que los datos se envíen de nuevo al servidor. Con el servicio Forms, puede recuperar los datos introducidos por el usuario en un formulario interactivo. Después de recuperar los datos, puede procesarlos para cumplir con los requisitos comerciales. Por ejemplo, puede almacenar los datos en una base de datos, enviarlos a otra aplicación, enviarlos a otro servicio, combinar los datos en un diseño de formulario, mostrar los datos en un explorador Web, etc.
 
-Los datos de formulario se envían al servicio de Forms como datos XML o PDF, una opción que se establece en Designer. Un formulario que se envía como XML permite extraer valores de datos de campo individuales. Es decir, puede extraer el valor de cada campo de formulario que el usuario haya introducido en el formulario. Un formulario que se envía como datos PDF es datos binarios, no datos XML. Puede guardar el formulario como archivo PDF o enviarlo a otro servicio. Si desea extraer datos de un formulario enviado como XML y, a continuación, utilizar los datos del formulario para crear un documento PDF, invoque otra operación de AEM Forms. (Consulte [Creación de Documentos PDF con datos](/help/forms/developing/creating-pdf-documents-submitted-xml.md)XML enviados)
+Los datos de formulario se envían al servicio de Forms como datos XML o PDF, una opción que se establece en Designer. Un formulario que se envía como XML permite extraer valores de datos de campo individuales. Es decir, puede extraer el valor de cada campo de formulario que el usuario haya introducido en el formulario. Un formulario que se envía como datos PDF es datos binarios, no datos XML. Puede guardar el formulario como archivo PDF o enviarlo a otro servicio. Si desea extraer datos de un formulario enviado como XML y, a continuación, utilizar los datos del formulario para crear un documento PDF, invoque otra operación de AEM Forms. (Consulte [Creación de Documentos PDF con datos XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 El diagrama siguiente muestra los datos que se envían a un servlet Java denominado `HandleData` desde un formulario interactivo que se muestra en un explorador Web.
 
@@ -64,7 +64,8 @@ La siguiente ilustración muestra los datos XML correspondientes que se recupera
 
 ![hs_hs_loandata](assets/hs_hs_loandata.png)
 
-Los campos del formulario de préstamo. Estos valores se pueden recuperar mediante clases XML de Java.
+Los campos del formulario de préstamo. Estos valores se pueden recuperar
+uso de clases XML de Java.
 
 >[!NOTE]
 >
@@ -95,7 +96,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
    <td><p>El servicio Forms procesa un formulario PDF interactivo en el navegador web del cliente.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>El usuario rellena un formulario interactivo y hace clic en un botón de envío. El formulario se devuelve al servicio Forms como datos PDF. Esta opción se establece en Designer.</p></td>
   </tr>
   <tr>
@@ -105,13 +106,13 @@ En la tabla siguiente se describen los pasos de este diagrama.
  </tbody>
 </table>
 
-## Gestión de datos UTF-16 de la URL enviada {#handling-submitted-url-utf-16-data}
+## Gestión de datos UTF-16 de URL enviados {#handling-submitted-url-utf-16-data}
 
-Si los datos del formulario se envían como datos UTF-16 de URL, el equipo cliente requiere Adobe Reader o Acrobat 8.1 o posterior. Además, si el diseño de formulario contiene un botón de envío con datos codificados con URL (HTTP Post) y la opción de codificación de datos es UTF-16, el diseño de formulario debe modificarse en un editor de texto como el Bloc de notas. Puede definir la opción de codificación en `UTF-16LE` o `UTF-16BE` para el botón de envío. Designer no proporciona esta funcionalidad.
+Si los datos del formulario se envían como datos UTF-16 de URL, el equipo cliente requiere Adobe Reader o Acrobat 8.1 o posterior. Además, si el diseño de formulario contiene un botón de envío con datos codificados con URL (HTTP Post) y la opción de codificación de datos es UTF-16, el diseño de formulario debe modificarse en un editor de texto como el Bloc de notas. Puede establecer la opción de codificación en `UTF-16LE` o `UTF-16BE` para el botón de envío. Designer no proporciona esta funcionalidad.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio de Forms, consulte Referencia de [servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -129,19 +130,19 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 
 **Creación de un objeto de API de Forms Client**
 
-Para poder realizar mediante programación una operación de API de cliente de servicio de Forms, debe crear un cliente de servicio de Forms. Si utiliza la API de Java, cree un `FormsServiceClient` objeto. Si utiliza la API de servicio web de Forms, cree un `FormsService` objeto.
+Para poder realizar mediante programación una operación de API de cliente de servicio de Forms, debe crear un cliente de servicio de Forms. Si utiliza la API de Java, cree un objeto `FormsServiceClient`. Si utiliza la API de servicio Web de Forms, cree un objeto `FormsService`.
 
 **Recuperar datos de formulario**
 
-Para recuperar los datos de formulario enviados, se invoca el `FormsServiceClient` método `processFormSubmission` del objeto. Al invocar este método, debe especificar el tipo de contenido del formulario enviado. Cuando los datos se envían desde un navegador web del cliente al servicio Forms, se pueden enviar como datos en formato XML o PDF. Para recuperar los datos introducidos en los campos de formulario, estos se pueden enviar como datos XML.
+Para recuperar los datos de formulario enviados, se invoca el método `FormsServiceClient` del objeto `processFormSubmission`. Al invocar este método, debe especificar el tipo de contenido del formulario enviado. Cuando los datos se envían desde un navegador web del cliente al servicio Forms, se pueden enviar como datos en formato XML o PDF. Para recuperar los datos introducidos en los campos de formulario, estos se pueden enviar como datos XML.
 
 También puede recuperar campos de formulario de un formulario enviado como datos PDF estableciendo las siguientes opciones en tiempo de ejecución:
 
-* Pase el siguiente valor al `processFormSubmission` método como parámetro de tipo de contenido: `CONTENT_TYPE=application/pdf`.
-* Definir el `RenderOptionsSpec` valor del `PDFToXDP` objeto en `true`
-* Definir el `RenderOptionsSpec` valor del `ExportDataFormat` objeto en `XMLData`
+* Pase el siguiente valor al método `processFormSubmission` como parámetro de tipo de contenido: `CONTENT_TYPE=application/pdf`.
+* Establezca el valor `RenderOptionsSpec` del objeto `PDFToXDP` en `true`
+* Establezca el valor `RenderOptionsSpec` del objeto `ExportDataFormat` en `XMLData`
 
-Especifique el tipo de contenido del formulario enviado cuando invoque el `processFormSubmission` método. La siguiente lista especifica los valores de tipo de contenido aplicables:
+Especifique el tipo de contenido del formulario enviado cuando invoque el método `processFormSubmission`. La siguiente lista especifica los valores de tipo de contenido aplicables:
 
 * **text/xml**: Representa el tipo de contenido que se utiliza cuando un formulario PDF envía datos de formulario como XML.
 * **application/x-www-form-urlencoded**: Representa el tipo de contenido que se utiliza cuando un formulario HTML envía datos como XML.
@@ -155,15 +156,15 @@ Los datos de formulario que se publicaron en el servicio de Forms se recuperan y
 
 El servicio Forms devuelve los siguientes valores para indicar si ha terminado de procesar los datos:
 
-* **0 (Enviar):** Los datos enviados están listos para ser procesados.
+* **0 (Enviar): los datos** enviados están listos para procesarse.
 * **1 (Calcular):** El servicio de Forms realizó una operación de cálculo en los datos y los resultados se deben devolver al usuario.
-* **2 (Validar):** El servicio Forms validó los datos del formulario y los resultados se deben devolver al usuario.
+* **2 (Validar):** Los datos del formulario validados por el servicio Forms y los resultados se deben devolver al usuario.
 * **3 (Siguiente):** La página actual ha cambiado con resultados que deben escribirse en la aplicación cliente.
 * **4 (Anterior**): La página actual ha cambiado con resultados que deben escribirse en la aplicación cliente.
 
 >[!NOTE]
 >
->Los cálculos y las validaciones se deben devolver al usuario. (Consulte [Cálculo de datos](/help/forms/developing/calculating-form-data.md#calculating-form-data)de formulario.)
+>Los cálculos y las validaciones se deben devolver al usuario. (Consulte [Cálculo de datos de formulario](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
 
 **Determinar si el envío del formulario contiene archivos adjuntos**
 
@@ -177,7 +178,7 @@ Después de determinar si un formulario contiene archivos adjuntos, puede proces
 
 **Procesar los datos enviados**
 
-Según el tipo de contenido de los datos enviados, puede extraer valores de campo de formulario individuales de los datos XML enviados o guardar los datos PDF enviados como archivo PDF (o enviarlos a otro servicio). Para extraer campos de formulario individuales, convierta los datos XML enviados a un origen de datos XML y, a continuación, recupere los valores del origen de datos XML mediante `org.w3c.dom` clases.
+Según el tipo de contenido de los datos enviados, puede extraer valores de campo de formulario individuales de los datos XML enviados o guardar los datos PDF enviados como archivo PDF (o enviarlos a otro servicio). Para extraer campos de formulario individuales, convierta los datos XML enviados a un origen de datos XML y, a continuación, recupere los valores del origen de datos XML mediante clases `org.w3c.dom`.
 
 **Consulte también**
 
@@ -193,7 +194,7 @@ Según el tipo de contenido de los datos enviados, puede extraer valores de camp
 
 ## Administrar formularios enviados mediante la API de Java {#handle-submitted-forms-using-the-java-api}
 
-Gestionar un formulario enviado mediante la API de Forms (Java):
+Administre un formulario enviado mediante la API de Forms (Java):
 
 1. Incluir archivos de proyecto
 
@@ -201,35 +202,35 @@ Gestionar un formulario enviado mediante la API de Forms (Java):
 
 1. Creación de un objeto de API de Forms Client
 
-   * Cree un `ServiceClientFactory` objeto que contenga propiedades de conexión.
-   * Cree un `FormsServiceClient` objeto utilizando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Recuperar datos de formulario
 
-   * Para recuperar datos de formulario publicados en un servlet de Java, cree un `com.adobe.idp.Document` objeto utilizando su constructor e invocando el `javax.servlet.http.HttpServletResponse` método del `getInputStream` objeto desde el constructor.
-   * Cree un `RenderOptionsSpec` objeto con su constructor. Establezca el valor de configuración regional invocando el `RenderOptionsSpec` método `setLocale` del objeto y pasando un valor de cadena que especifica el valor de configuración regional.
+   * Para recuperar datos de formulario publicados en un servlet Java, cree un objeto `com.adobe.idp.Document` utilizando su constructor e invocando el método `javax.servlet.http.HttpServletResponse` del objeto `getInputStream` desde dentro del constructor.
+   * Cree un objeto `RenderOptionsSpec` utilizando su constructor. Establezca el valor de configuración regional invocando el método `RenderOptionsSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional.
 
    >[!NOTE]
    >
-   >Puede indicar al servicio de Forms que cree datos XDP o XML a partir del contenido PDF enviado invocando el `RenderOptionsSpec` método del `setPDF2XDP` objeto y pasando `true` y también llamando `setXMLData` y pasando `true`. A continuación, puede invocar el `FormsResult` método del `getOutputXML` objeto para recuperar los datos XML que corresponden a los datos XDP/XML. (El `FormsResult` objeto se devuelve mediante el método `processFormSubmission`*, que se explica en el siguiente subpaso.)*
+   >Puede indicar al servicio de Forms que cree datos XDP o XML a partir de contenido PDF enviado invocando el método `RenderOptionsSpec` del objeto `setPDF2XDP` y pasando `true`, y también llamando a `setXMLData` y pasando `true`. A continuación, puede invocar el método `FormsResult` del objeto `getOutputXML` para recuperar los datos XML que corresponden a los datos XDP/XML. (El objeto `FormsResult` es devuelto por el método `processFormSubmission`*, que se explica en el siguiente subpaso.)*
 
-   * Invoque el `FormsServiceClient` método del `processFormSubmission` objeto y pase los valores siguientes:
+   * Invoque el método `FormsServiceClient` del objeto `processFormSubmission` y pase los siguientes valores:
 
-      * El `com.adobe.idp.Document` objeto que contiene los datos del formulario.
+      * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
       * Un valor de cadena que especifica variables de entorno, incluyendo todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a gestionar. Para gestionar datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para gestionar datos PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
-      * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado, por ejemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Este valor de parámetro es opcional.
-      * Un `RenderOptionsSpec` objeto que almacena opciones de tiempo de ejecución.
+      * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, por ejemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Este valor de parámetro es opcional.
+      * Un objeto `RenderOptionsSpec` que almacena opciones de tiempo de ejecución.
 
-      El `processFormSubmission` método devuelve un `FormsResult` objeto que contiene los resultados del envío del formulario.
+      El método `processFormSubmission` devuelve un objeto `FormsResult` que contiene los resultados del envío del formulario.
 
-   * Determine si el servicio Forms ha terminado de procesar los datos del formulario invocando el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `0`, los datos están listos para ser procesados.
+   * Determine si el servicio de Forms ha terminado de procesar los datos del formulario invocando el método `FormsResult` del objeto `getAction`. Si este método devuelve el valor `0`, los datos están listos para ser procesados.
 
 
 
 1. Determinar si el envío del formulario contiene archivos adjuntos
 
-   * Invocar el `FormsResult` método del `getAttachments` objeto. Este método devuelve un `java.util.List` objeto que contiene archivos enviados con el formulario.
-   * Repita el `java.util.List` objeto para determinar si hay archivos adjuntos. Si hay archivos adjuntos, cada elemento es una `com.adobe.idp.Document` instancia. Puede guardar los archivos adjuntos invocando el `com.adobe.idp.Document` método del `copyToFile` objeto y pasando un `java.io.File` objeto.
+   * Invocar el método `FormsResult` del objeto `getAttachments`. Este método devuelve un objeto `java.util.List` que contiene archivos enviados con el formulario.
+   * Repita el objeto `java.util.List` para determinar si hay archivos adjuntos. Si hay archivos adjuntos, cada elemento es una instancia `com.adobe.idp.Document`. Puede guardar los archivos adjuntos invocando el método `com.adobe.idp.Document` del objeto `copyToFile` y pasando un objeto `java.io.File`.
 
    >[!NOTE]
    >
@@ -239,17 +240,17 @@ Gestionar un formulario enviado mediante la API de Forms (Java):
 
    * Si el tipo de contenido de datos es `application/vnd.adobe.xdp+xml` o `text/xml`, cree una lógica de aplicación para recuperar valores de datos XML.
 
-      * Cree un `com.adobe.idp.Document` objeto invocando el `FormsResult` método `getOutputContent` del objeto.
-      * Cree un `java.io.InputStream` objeto invocando el `java.io.DataInputStream` constructor y pasando el `com.adobe.idp.Document` objeto.
-      * Cree un `org.w3c.dom.DocumentBuilderFactory` objeto llamando al `org.w3c.dom.DocumentBuilderFactory` método `newInstance` del objeto estático.
-      * Cree un `org.w3c.dom.DocumentBuilder` objeto invocando el `org.w3c.dom.DocumentBuilderFactory` método `newDocumentBuilder` del objeto.
-      * Cree un `org.w3c.dom.Document` objeto invocando el `org.w3c.dom.DocumentBuilder` método `parse` del objeto y pasando el `java.io.InputStream` objeto.
-      * Recupere el valor de cada nodo dentro del documento XML. Una forma de lograr esta tarea es crear un método personalizado que acepte dos parámetros: el `org.w3c.dom.Document` objeto y el nombre del nodo cuyo valor desea recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue a este proceso, se llama a este método personalizado `getNodeText`. Se muestra el cuerpo de este método.
-   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos PDF enviados como un archivo PDF.
+      * Cree un objeto `com.adobe.idp.Document` invocando el método `FormsResult` del objeto `getOutputContent`.
+      * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.DataInputStream` y pasando el objeto `com.adobe.idp.Document`.
+      * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `org.w3c.dom.DocumentBuilderFactory` del objeto estático `newInstance`.
+      * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `org.w3c.dom.DocumentBuilderFactory` del objeto `newDocumentBuilder`.
+      * Cree un objeto `org.w3c.dom.Document` invocando el método `org.w3c.dom.DocumentBuilder` del objeto `parse` y pasando el objeto `java.io.InputStream`.
+      * Recupere el valor de cada nodo dentro del documento XML. Una forma de lograr esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desea recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue a este proceso, este método personalizado se denomina `getNodeText`. Se muestra el cuerpo de este método.
+   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos del PDF enviado como un archivo PDF.
 
-      * Cree un `com.adobe.idp.Document` objeto invocando el `FormsResult` método `getOutputContent` del objeto.
-      * Cree un `java.io.File` objeto mediante su constructor público. Asegúrese de especificar PDF como extensión de nombre de archivo.
-      * Rellene el archivo PDF invocando el `com.adobe.idp.Document` método del `copyToFile` objeto y pasando el `java.io.File` objeto.
+      * Cree un objeto `com.adobe.idp.Document` invocando el método `FormsResult` del objeto `getOutputContent`.
+      * Cree un objeto `java.io.File` utilizando su constructor público. Asegúrese de especificar PDF como extensión de nombre de archivo.
+      * Rellene el archivo PDF invocando el método `com.adobe.idp.Document` del objeto `copyToFile` y pasando el objeto `java.io.File`.
 
 
 **Consulte también**
@@ -264,7 +265,7 @@ Gestionar un formulario enviado mediante la API de Forms (Java):
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Gestión de datos de PDF enviados mediante la API de servicio web {#handle-submitted-pdf-data-using-the-web-service-api}
+## Administrar datos PDF enviados mediante la API de servicio Web {#handle-submitted-pdf-data-using-the-web-service-api}
 
 Gestionar un formulario enviado mediante la API de Forms (servicio web):
 
@@ -275,58 +276,58 @@ Gestionar un formulario enviado mediante la API de Forms (servicio web):
 
 1. Creación de un objeto de API de Forms Client
 
-   Cree un `FormsService` objeto y defina los valores de autenticación.
+   Cree un objeto `FormsService` y defina los valores de autenticación.
 
 1. Recuperar datos de formulario
 
-   * Para recuperar datos de formulario publicados en un servlet Java, cree un `BLOB` objeto con su constructor.
-   * Cree un `java.io.InputStream` objeto invocando el `javax.servlet.http.HttpServletResponse` método `getInputStream` del objeto.
-   * Cree un `java.io.ByteArrayOutputStream` objeto utilizando su constructor y pasando la longitud del `java.io.InputStream` objeto.
-   * Copie el contenido del `java.io.InputStream` objeto en el `java.io.ByteArrayOutputStream` objeto.
-   * Cree una matriz de bytes invocando el `java.io.ByteArrayOutputStream` método `toByteArray` del objeto.
-   * Rellene el `BLOB` objeto invocando su `setBinaryData` método y pasando la matriz de bytes como argumento.
-   * Cree un `RenderOptionsSpec` objeto con su constructor. Establezca el valor de configuración regional invocando el `RenderOptionsSpec` método `setLocale` del objeto y pasando un valor de cadena que especifica el valor de configuración regional.
-   * Invoque el `FormsService` método del `processFormSubmission` objeto y pase los valores siguientes:
+   * Para recuperar datos de formulario publicados en un servlet Java, cree un objeto `BLOB` utilizando su constructor.
+   * Cree un objeto `java.io.InputStream` invocando el método `javax.servlet.http.HttpServletResponse` del objeto `getInputStream`.
+   * Cree un objeto `java.io.ByteArrayOutputStream` utilizando su constructor y pasando la longitud del objeto `java.io.InputStream`.
+   * Copie el contenido del objeto `java.io.InputStream` en el objeto `java.io.ByteArrayOutputStream`.
+   * Cree una matriz de bytes invocando el método `java.io.ByteArrayOutputStream` del objeto `toByteArray`.
+   * Rellene el objeto `BLOB` invocando su método `setBinaryData` y pasando la matriz de bytes como un argumento.
+   * Cree un objeto `RenderOptionsSpec` utilizando su constructor. Establezca el valor de configuración regional invocando el método `RenderOptionsSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional.
+   * Invoque el método `FormsService` del objeto `processFormSubmission` y pase los siguientes valores:
 
-      * El `BLOB` objeto que contiene los datos del formulario.
+      * El objeto `BLOB` que contiene los datos del formulario.
       * Un valor de cadena que especifica variables de entorno, incluyendo todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a gestionar. Para gestionar datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para gestionar datos PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
-      * Un valor de cadena que especifica el valor del `HTTP_USER_AGENT` encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un `RenderOptionsSpec` objeto que almacena opciones de tiempo de ejecución.
-      * Objeto vacío `BLOBHolder` que se rellena con el método .
-      * Objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método .
-      * Objeto vacío `BLOBHolder` que se rellena con el método .
-      * Objeto vacío `BLOBHolder` que se rellena con el método .
-      * Objeto vacío `javax.xml.rpc.holders.ShortHolder` que se rellena con el método .
-      * Objeto vacío `MyArrayOf_xsd_anyTypeHolder` que se rellena con el método . Este parámetro se utiliza para almacenar archivos adjuntos enviados junto con el formulario.
+      * Un valor de cadena que especifica el valor de encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un objeto `RenderOptionsSpec` que almacena opciones de tiempo de ejecución.
+      * Un objeto vacío `BLOBHolder` que se rellena con el método.
+      * Un objeto vacío `javax.xml.rpc.holders.StringHolder` que se rellena con el método.
+      * Un objeto vacío `BLOBHolder` que se rellena con el método.
+      * Un objeto vacío `BLOBHolder` que se rellena con el método.
+      * Un objeto vacío `javax.xml.rpc.holders.ShortHolder` que se rellena con el método.
+      * Un objeto vacío `MyArrayOf_xsd_anyTypeHolder` que se rellena con el método. Este parámetro se utiliza para almacenar archivos adjuntos enviados junto con el formulario.
       * Objeto vacío `FormsResultHolder` que se rellena con el método con el formulario que se envía.
 
-      El `processFormSubmission` método rellena el `FormsResultHolder` parámetro con los resultados del envío del formulario.
+      El método `processFormSubmission` rellena el parámetro `FormsResultHolder` con los resultados del envío del formulario.
 
-   * Determine si el servicio Forms ha terminado de procesar los datos del formulario invocando el `FormsResult` método `getAction` del objeto. Si este método devuelve el valor `0`, los datos del formulario están listos para procesarse. Puede obtener un `FormsResult` objeto obteniendo el valor del miembro de datos del `FormsResultHolder` objeto `value` .
+   * Determine si el servicio de Forms ha terminado de procesar los datos del formulario invocando el método `FormsResult` del objeto `getAction`. Si este método devuelve el valor `0`, los datos del formulario están listos para procesarse. Puede obtener un objeto `FormsResult` obteniendo el valor del miembro de datos `FormsResultHolder` del objeto `value`.
 
 
 1. Determinar si el envío del formulario contiene archivos adjuntos
 
-   Obtenga el valor del miembro de `MyArrayOf_xsd_anyTypeHolder` datos del `value` objeto (el `MyArrayOf_xsd_anyTypeHolder` objeto se pasó al `processFormSubmission` método). Este miembro de datos devuelve una matriz de `Objects`. Cada elemento de la `Object` matriz es un elemento `Object`que corresponde a los archivos enviados junto con el formulario. Puede obtener cada elemento dentro de la matriz y convertirlo en un `BLOB` objeto.
+   Obtenga el valor del miembro de datos `MyArrayOf_xsd_anyTypeHolder` del objeto `value` (el objeto `MyArrayOf_xsd_anyTypeHolder` se pasó al método `processFormSubmission`). Este miembro de datos devuelve una matriz de `Objects`. Cada elemento dentro de la matriz `Object` es un `Object`que corresponde a los archivos enviados junto con el formulario. Puede obtener cada elemento dentro de la matriz y convertirlo en un objeto `BLOB`.
 
 1. Procesar los datos enviados
 
    * Si el tipo de contenido de datos es `application/vnd.adobe.xdp+xml` o `text/xml`, cree una lógica de aplicación para recuperar valores de datos XML.
 
-      * Cree un `BLOB` objeto invocando el `FormsResult` método `getOutputContent` del objeto.
-      * Cree una matriz de bytes invocando el `BLOB` método `getBinaryData` del objeto.
-      * Cree un `java.io.InputStream` objeto invocando el `java.io.ByteArrayInputStream` constructor y pasando la matriz de bytes.
-      * Cree un `org.w3c.dom.DocumentBuilderFactory` objeto llamando al `org.w3c.dom.DocumentBuilderFactory` método `newInstance` del objeto estático.
-      * Cree un `org.w3c.dom.DocumentBuilder` objeto invocando el `org.w3c.dom.DocumentBuilderFactory` método `newDocumentBuilder` del objeto.
-      * Cree un `org.w3c.dom.Document` objeto invocando el `org.w3c.dom.DocumentBuilder` método `parse` del objeto y pasando el `java.io.InputStream` objeto.
-      * Recupere el valor de cada nodo dentro del documento XML. Una forma de lograr esta tarea es crear un método personalizado que acepte dos parámetros: el `org.w3c.dom.Document` objeto y el nombre del nodo cuyo valor desea recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue a este proceso, se llama a este método personalizado `getNodeText`. Se muestra el cuerpo de este método.
-   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos PDF enviados como un archivo PDF.
+      * Cree un objeto `BLOB` invocando el método `FormsResult` del objeto `getOutputContent`.
+      * Cree una matriz de bytes invocando el método `BLOB` del objeto `getBinaryData`.
+      * Cree un objeto `java.io.InputStream` invocando el constructor `java.io.ByteArrayInputStream` y pasando la matriz de bytes.
+      * Cree un objeto `org.w3c.dom.DocumentBuilderFactory` llamando al método `org.w3c.dom.DocumentBuilderFactory` del objeto estático `newInstance`.
+      * Cree un objeto `org.w3c.dom.DocumentBuilder` invocando el método `org.w3c.dom.DocumentBuilderFactory` del objeto `newDocumentBuilder`.
+      * Cree un objeto `org.w3c.dom.Document` invocando el método `org.w3c.dom.DocumentBuilder` del objeto `parse` y pasando el objeto `java.io.InputStream`.
+      * Recupere el valor de cada nodo dentro del documento XML. Una forma de lograr esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desea recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue a este proceso, este método personalizado se denomina `getNodeText`. Se muestra el cuerpo de este método.
+   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos del PDF enviado como un archivo PDF.
 
-      * Cree un `BLOB` objeto invocando el `FormsResult` método `getOutputContent` del objeto.
-      * Cree una matriz de bytes invocando el `BLOB` método `getBinaryData` del objeto.
-      * Cree un `java.io.File` objeto mediante su constructor público. Asegúrese de especificar PDF como extensión de nombre de archivo.
-      * Cree un `java.io.FileOutputStream` objeto utilizando su constructor y pasando el `java.io.File` objeto.
-      * Rellene el archivo PDF invocando el `java.io.FileOutputStream` método del `write` objeto y pasando la matriz de bytes.
+      * Cree un objeto `BLOB` invocando el método `FormsResult` del objeto `getOutputContent`.
+      * Cree una matriz de bytes invocando el método `BLOB` del objeto `getBinaryData`.
+      * Cree un objeto `java.io.File` utilizando su constructor público. Asegúrese de especificar PDF como extensión de nombre de archivo.
+      * Cree un objeto `java.io.FileOutputStream` utilizando su constructor y pasando el objeto `java.io.File`.
+      * Rellene el archivo PDF invocando el método `java.io.FileOutputStream` del objeto `write` y pasando la matriz de bytes.
 
 
 **Consulte también**

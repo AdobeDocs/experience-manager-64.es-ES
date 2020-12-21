@@ -37,11 +37,11 @@ Puede especificar los intervalos a partir de los cuales la aplicación guarda lo
 Siga estos pasos para utilizar la función de guardado automático en la aplicación de AEM Forms:
 
 1. Inicie sesión en la aplicación y vaya a **[!UICONTROL Configuración > General]**.
-1. En la pantalla General, utilice la opción Frecuencia **[!UICONTROL de guardado]** automático para seleccionar los intervalos en los que desea que la aplicación guarde los datos introducidos.
+1. En la pantalla General, utilice la opción **[!UICONTROL Frecuencia de guardado automático]** para seleccionar los intervalos en los que desea que la aplicación guarde los datos introducidos.
    [ ![Configuración de la frecuencia de guardado automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Al reiniciar la aplicación e iniciar sesión con el mismo usuario, se le pedirá que restaure la tarea con el cuadro de diálogo Recuperar Tarea no guardada. Haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo Recuperar Tarea no guardada para reanudar el trabajo con la tarea guardada. Puede hacer clic en **[!UICONTROL Cancelar]** para eliminar los datos guardados correspondientes a la última vez que se activó el guardado automático y el inicio que funcionaba con una nueva tarea.
+1. Al reiniciar la aplicación e iniciar sesión con el mismo usuario, se le pedirá que restaure la tarea con el cuadro de diálogo Recuperar Tarea no guardada. Haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo Recuperar Tarea no guardada para reanudar el trabajo con la tarea guardada. Puede hacer clic en **[!UICONTROL Cancelar]** para eliminar los datos guardados correspondientes al último guardado automático y inicio activado que funciona con una nueva tarea.
 
    Al hacer clic en **[!UICONTROL Aceptar]**, la tarea se restaura con los datos correspondientes a la última función de guardado automático activada antes de que la aplicación se bloquee. Incluye los datos del formulario y todos los datos adjuntos asociados a la tarea.
-   [ ![Obtención de una tarea](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**recuperadaA.**Formulario** B de trabajo en curso.**La aplicación se cerró con fuerza** C.**La aplicación se reinició con el cuadro de diálogo Recuperar Tarea no guardada** D.**Formulario restaurado con datos originales
+   [ ![Obtención de ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**recuperación de una tareaA.** Un formulario de trabajo en curso  **B.** App se cerró con fuerza  **C.** App reiniciado con el cuadro de diálogo Recuperar Tarea no guardada  **D.** Form restaurado con datos originales
 

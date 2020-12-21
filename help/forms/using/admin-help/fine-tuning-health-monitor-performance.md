@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Mejora del rendimiento del monitor de mantenimiento{#fine-tuning-health-monitor-performance}
+# Mejora del rendimiento del monitor de estado{#fine-tuning-health-monitor-performance}
 
 La recopilación de estadísticas del sistema que rellenan el Monitor de estado tiene cierto impacto en el rendimiento del entorno de formularios AEM. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en el servidor de aplicaciones.
 
@@ -67,16 +67,16 @@ La recopilación de estadísticas del sistema que rellenan el Monitor de estado 
 ## Añadir las opciones de Java a JBoss {#add-java-options-to-jboss}
 
 1. Detenga el servidor de aplicaciones JBoss.
-1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java que necesite.
+1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java según sea necesario.
 1. Reinicie el servidor.
 
 ## Añadir las opciones de Java a WebLogic {#add-java-options-to-weblogic}
 
-1. Inicio la consola de administración WebLogic escribiendo https://[nombre]de host:[puerto]/consola en la línea URL de un explorador Web.
+1. Para inicio de la consola de administración WebLogic, escriba https://[nombre de host]:[puerto]/console en la línea URL de un explorador Web.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Inicio del servidor.
-1. En el cuadro Argumentos, anexe los argumentos necesarios al final del contenido actual. Por ejemplo, si agrega - `Dadobe.healthmonitor.enabled=false` deshabilita el Monitor de estado.
+1. En el cuadro Argumentos, anexe los argumentos necesarios al final del contenido actual. Por ejemplo, si agrega - `Dadobe.healthmonitor.enabled=false` se deshabilita el Monitor de estado.
 1. Haga clic en Guardar y, a continuación, en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 

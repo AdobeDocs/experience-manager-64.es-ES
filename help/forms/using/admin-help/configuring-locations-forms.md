@@ -28,7 +28,7 @@ Puede especificar la dirección URL, el URI y las ubicaciones de archivos de atr
 
 ## Configuración de ubicaciones {#locations-settings}
 
-**Dirección URL base:** Dirección URL base donde se encuentran los recursos de formulario, como imágenes y secuencias de comandos. Este valor es necesario para transformaciones HTML que incluyen referencias HREF a dependencias externas, como imágenes o secuencias de comandos. Una de estas secuencias de comandos es xfasubset.js, que es necesaria para que los formularios HTML realicen la inteligencia XFA. Este valor debe ser el equivalente HTTP del URI raíz de contenido.
+**Dirección URL base:** la dirección URL base en la que se encuentran los recursos del formulario, como imágenes y secuencias de comandos. Este valor es necesario para transformaciones HTML que incluyen referencias HREF a dependencias externas, como imágenes o secuencias de comandos. Una de estas secuencias de comandos es xfasubset.js, que es necesaria para que los formularios HTML realicen la inteligencia XFA. Este valor debe ser el equivalente HTTP del URI raíz de contenido.
 
 >[!NOTE]
 >
@@ -44,29 +44,29 @@ El ejemplo siguiente apunta al mismo contenido (mediante URI de raíz de conteni
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI raíz web de FS:** Dirección URL de la aplicación web de Forms. Puede dejar este cuadro vacío si la aplicación web de Forms y la aplicación cliente están implementadas en el mismo servidor de aplicaciones; se utilizará la URL raíz web de la API de Forms.
+**URI raíz web de FS:** la URL de la aplicación web de Forms. Puede dejar este cuadro vacío si la aplicación web de Forms y la aplicación cliente están implementadas en el mismo servidor de aplicaciones; se utilizará la URL raíz web de la API de Forms.
 
 Si la aplicación web de Forms y la aplicación cliente no están implementadas en el mismo servidor de aplicaciones, proporcione la URL de la aplicación web de Forms en este cuadro, como se muestra en este ejemplo:
 
 `https://<host name>:<port>/FormServer`
 
-Dónde `host name`y `port` son el nombre del servidor y el número de puerto del servidor que aloja la aplicación web de Forms.
+Donde `host name`y `port` son el nombre del servidor y el número de puerto del servidor que aloja la aplicación Web de Forms.
 
 El valor predeterminado es una cadena vacía.
 
-**URI raíz web:** La raíz web de la aplicación. Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante el SDK de formularios AEM, para construir una dirección URL absoluta que permita acceder al contenido web específico de la aplicación.
+**URI raíz web:** raíz web de la aplicación. Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante el SDK de formularios AEM, para construir una dirección URL absoluta que permita acceder al contenido web específico de la aplicación.
 
 El valor predeterminado es una cadena vacía.
 
-**URI de raíz de contenido:** URI o ubicación absoluta desde la que se recuperan los formularios. Este valor se combina con el parámetro sFormQuery, especificado mediante la API, para construir la ruta absoluta al formulario que se recupera. Este valor puede hacer referencia a un directorio o a una ubicación web a la que se puede acceder mediante HTTP.
+**URI raíz de contenido:** URI o ubicación absoluta desde la que se recuperan los formularios. Este valor se combina con el parámetro sFormQuery, especificado mediante la API, para construir la ruta absoluta al formulario que se recupera. Este valor puede hacer referencia a un directorio o a una ubicación web a la que se puede acceder mediante HTTP.
 
 El valor predeterminado es una cadena vacía.
 
-**URI de configuración XCI:** Ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. Para un valor relativo, se supone que el archivo XCI reside en el archivo EAR de formularios AEM implementables.
+**URI de configuración XCI:** la ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. Para un valor relativo, se supone que el archivo XCI reside en el archivo EAR de formularios AEM implementables.
 
 El valor predeterminado es `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. Para un valor relativo, se supone que este archivo reside en el archivo EAR de formularios AEM implementables.
+**URI de mapa de fuente:** la ubicación relativa o absoluta del archivo de asignación de fuentes. Para un valor relativo, se supone que este archivo reside en el archivo EAR de formularios AEM implementables.
 
 El archivo de asignación de fuentes se utiliza para crear asignaciones de fuentes personalizadas para transformaciones HTML en formularios, lo que permite especificar qué fuente se sustituirá cuando una fuente no esté disponible en el equipo del cliente.
 
@@ -76,16 +76,16 @@ La entrada siguiente es un ejemplo de una entrada en el archivo de asignación d
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Archivo PDF de inicialización:** El archivo PDF inicial que se utiliza en una transformación PDFForm para optimizar el envío. El archivo PDF de raíz especifica un archivo PDF personalizado (que solo contiene flujo XFA, imagen y recursos de fuente) que se anexa al diseño y los datos del formulario. El formulario lo procesa Acrobat 7 o posterior y se aplica a la transformación PDFForm.
+**Archivo PDF de raíz:** el archivo PDF inicial que se utiliza en una transformación PDFForm para optimizar el envío. El archivo PDF de raíz especifica un archivo PDF personalizado (que solo contiene flujo XFA, imagen y recursos de fuente) que se anexa al diseño y los datos del formulario. El formulario lo procesa Acrobat 7 o posterior y se aplica a la transformación PDFForm.
 
 El valor predeterminado es una cadena vacía.
 
-**Ubicación de caché:** Especifica la ubicación de la caché de disco de Forms. Al cambiar esta configuración, se restablece toda la información de caché existente de la ubicación actual y se crea una nueva caché en la nueva ubicación. Seleccione una de las siguientes opciones:
+**Ubicación de caché:** especifica la ubicación de la caché de disco de Forms. Al cambiar esta configuración, se restablece toda la información de caché existente de la ubicación actual y se crea una nueva caché en la nueva ubicación. Seleccione una de las siguientes opciones:
 
-**Ubicación predeterminada:** Ésta es la selección predeterminada. Cuando se selecciona esta opción, la caché se crea en una ubicación que depende del servidor de aplicaciones que esté utilizando:
+**Ubicación predeterminada:** Esta es la selección predeterminada. Cuando se selecciona esta opción, la caché se crea en una ubicación que depende del servidor de aplicaciones que esté utilizando:
 
-* **JBoss:** [Página de inicio de JBoss]\server\[tipo de instalación]\svcdata\FormServer\Cache
-* **WebLogic:** [Página de inicio]de WebLogic \user_projects\domains\[nombre de dominio de aem-forms]\adobe\[nombre de servidor de formularios]\FormServer\Cache
+* **JBoss:** [Página principal]de JBoss\server\[tipo de instalación]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[nombre de dominio de formularios aem]\adobe\[nombre de servidor de formularios]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Directorio temporal LC:** La caché se crea en un subdirectorio del directorio temporal de formularios AEM, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El subdirectorio se denomina adobeform_[servername].

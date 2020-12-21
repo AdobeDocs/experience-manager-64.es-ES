@@ -19,6 +19,6 @@ ht-degree: 0%
 ---
 
 
-# Limitaciones de copia de seguridad de PDF Generator {#pdf-generator-backup-limitations}
+# Limitaciones de copia de seguridad del generador de PDF {#pdf-generator-backup-limitations}
 
 No se puede realizar una copia de seguridad del directorio temporal que utiliza PDF Generator para convertir archivos. Aunque el servicio se restaurará correctamente, los datos se pueden perder porque el generador de PDF revisa y borra el contenido del directorio temporal a intervalos establecidos.

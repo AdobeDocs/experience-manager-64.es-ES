@@ -26,15 +26,15 @@ El texto del marcador de posición representa una palabra o una frase corta. Est
 
 ![Componente de fecha con y sin texto de marcador de posición](assets/dat-picker-place-holder-text.png)
 
-**A.** Componente de fecha con texto de marcador de posición **B.** Componente de fecha sin texto de marcador de posición
+**A.** Componente de fecha con texto de marcador de posición  **B.** Componente de fecha sin texto de marcador de posición
 
 AEM Forms admite texto de marcador de posición para los campos de cuadro Contraseña, Selector de fecha, Cuadro numérico y Cuadro de texto.\
 Los textos de los marcadores de posición no son compatibles con la utilidad de fecha HTML5 nativa. Para especificar un texto de marcador de posición:
 
 1. Haga clic con el botón secundario en un componente que admita Texto de marcador de posición y haga clic en **Editar**. Aparecerá el cuadro de diálogo Editar componente.
 
-1. Abra la ficha **Título y texto** .
-1. Especifique una palabra o una frase corta en el cuadro **de texto Marcador de** posición. Haga clic en **Aceptar**.
+1. Abra la ficha **Título y texto**.
+1. Especifique una palabra o una frase corta en el cuadro de texto **Marcador de posición**. Haga clic en **Aceptar**.
 
 >[!NOTE]
 >

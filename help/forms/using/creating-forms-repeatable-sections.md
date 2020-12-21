@@ -26,7 +26,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetitivos:
 
 ## Uso del Administrador de instancias mediante secuencias de comandos  {#using-instance-manager-via-scripts-nbsp}
 
-1. En el modo de edición, seleccione un panel y toque ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel sea repetible**. Especifique los valores de los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]** .
+1. En el modo de edición, seleccione un panel y toque ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel se pueda repetir**. Especifique valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
 
    El campo Máximo especifica el número máximo de veces que puede aparecer un panel en la página. Puede especificar -1 en el campo Número máximo para permitir que el panel aparezca por un número infinito de veces.
 
@@ -41,24 +41,24 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetitivos:
    1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y toque ![edit-rules](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
    1. En la ventana Editor de reglas, haga clic en **Crear**.
 
-      Seleccione Editor **visual** en la fila Objetos y funciones de formulario.
+      Seleccione **Editor visual** en la fila Objetos y funciones de formulario.
 
-      1. En el área de regla, en CUÁNDO, seleccione el estado en el que **se hace clic**.
+      1. En el área de regla, en CUÁNDO, seleccione el estado **donde se hace clic**.
       1. En ENTONCES:
 
-         * Para crear un botón de añadir panel, seleccione **Añadir instancia** y arrastre y suelte el panel ![con el panel](assets/toggle-side-panel.png) de alternancia o selecciónelo con el objeto **Colocar o selecciónelo aquí.**
-         * Para crear un botón del panel Eliminar, seleccione **Quitar instancia** y arrastre y suelte el panel mediante el panel ![de](assets/toggle-side-panel.png) alternancia o selecciónelo con el objeto **Colocar o seleccione aquí.**
+         * Para crear un botón para agregar un panel, seleccione **Añadir instancia** y arrastre y suelte el panel utilizando ![toggle-side-panel](assets/toggle-side-panel.png) o selecciónelo con el objeto **Drop o selecciónelo aquí.**
+         * Para crear un botón de panel de eliminación, seleccione **Quitar instancia** y arrastre y suelte el panel mediante ![panel de alternancia](assets/toggle-side-panel.png) o selecciónelo con el objeto **Colocar o selecciónelo aquí.**
 
-      Seleccione Editor **de código** en la fila Objetos y funciones de formulario. Haga clic en **Editar reglas** y en el área de código:
+      Seleccione **Editor de código** en la fila Objetos y funciones de formulario. Haga clic en **Editar reglas** y en el área de código:
 
-      * Para crear un botón de adición de panel, especifique `this.panel.instanceManager.addInstance()`
-      * Para crear un botón del panel Eliminar, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+      * Para crear un botón para agregar un panel, especifique `this.panel.instanceManager.addInstance()`
+      * Para crear un botón de panel de eliminación, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
-      Haga clic en **Finalizado**.
+      Haga clic en **Listo**.
 
       >[!NOTE]
       >
-      >Si un campo pertenece a un panel repetible, no podrá acceder a él directamente utilizando su nombre en las secuencias de comandos. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo mediante la `instances` API en `InstanceManager`. La sintaxis para utilizar la `instances` API en `InstanceManager` es:
+      >Si un campo pertenece a un panel repetible, no podrá acceder a él directamente utilizando su nombre en las secuencias de comandos. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo mediante la API `instances` en `InstanceManager`. La sintaxis para utilizar la API `instances` en `InstanceManager` es:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -88,7 +88,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetitivos:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Para obtener más información, consulte: Clase: Instancias de InstanceManager#en la referencia [de API Java de](https://adobe.com/go/learn_aemforms_documentation_63)AEM Forms.
+      >Para obtener más información, consulte: Clase: InstanceManager#instance in [Referencia de API de Java de AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -112,10 +112,10 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetitivos:
 
 Un panel tiene varias opciones de diseño. La opción de diseño de acordeón Layout tiene la compatibilidad lista para paneles repetibles. Realice los siguientes pasos en el panel repetible con la opción Diseño para el diseño acorde:
 
-1. En el elemento principal del panel que se va a repetir, toque ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño** , seleccione **Acordeón**.
-1. En un panel, que se va a repetir, toque ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Active la ficha **Hacer que el panel sea repetible** y especifique el valor de los campos **Máximo** y **Mínimo** .
+1. En el panel principal que se va a repetir, toque ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
+1. En un panel, que se va a repetir, toque ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la ficha **Hacer que el panel sea repetible** y especifique el valor para los campos **Máximo** y **Mínimo**.
 
-   Ahora puede utilizar los botones más (+) y eliminar ( ![eliminar panel](assets/delete-panel.png)) para agregar y quitar los paneles.
+   Ahora puede utilizar los botones más (+) y eliminar ( ![delete-panel](assets/delete-panel.png)) para agregar y quitar los paneles.
 
 ## Uso de subformularios de repetición de plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
@@ -139,9 +139,9 @@ El archivo .zip adjunto contiene un subformulario de ejemplo repetible.
 
 ## Uso de la configuración repetida de un Esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Puede crear paneles repetibles a partir de un Esquema XML y de la propiedad minOccours &amp; maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el Esquema XML, consulte [Creación de formularios adaptables con el uso de Esquema XML como modelo](/help/forms/using/adaptive-form-xml-schema-form-model.md)de formulario.
+Puede crear paneles repetibles a partir de un Esquema XML y de la propiedad minOccours &amp; maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el Esquema XML, consulte [Creación de formularios adaptables con el Esquema XML como modelo de formulario](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
-En el código siguiente, el `SampleType`panel utiliza la propiedad minOccours &amp; maxOccurs.
+En el código siguiente, el panel `SampleType`utiliza la propiedad minOccours &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 

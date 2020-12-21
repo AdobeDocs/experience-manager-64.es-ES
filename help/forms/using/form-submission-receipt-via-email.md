@@ -17,39 +17,39 @@ ht-degree: 1%
 ---
 
 
-# Envío de un acuse de recibo de envío de formulario por correo electrónico {#sending-a-form-submission-acknowledgement-via-email}
+# Envío de confirmación de envío de formulario por correo electrónico {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envío de datos de formulario adaptable {#adaptive-form-data-submission}
 
-Los formularios adaptables proporcionan varios flujos de trabajo de [envío predeterminados de acciones](/help/forms/using/configuring-submit-actions.md) para enviar los datos del formulario a diferentes extremos.
+Los formularios adaptables proporcionan varios flujos de trabajo predeterminados [acciones de envío](/help/forms/using/configuring-submit-actions.md) para enviar los datos del formulario a diferentes extremos.
 
-Por ejemplo, la acción de envío de acción **de** correo electrónico envía un mensaje de correo electrónico cuando se envía correctamente un formulario adaptable. También se puede configurar para enviar los datos del formulario y el PDF en el correo electrónico.
+Por ejemplo, la acción de envío **acción de correo electrónico** envía un mensaje de correo electrónico cuando se envía correctamente un formulario adaptable. También se puede configurar para enviar los datos del formulario y el PDF en el correo electrónico.
 
 Este artículo detalla los pasos para habilitar la acción Correo electrónico en un formulario adaptable y las diferentes configuraciones que proporciona.
 
 >[!NOTE]
 >
->También puede utilizar la acción **Enviar un archivo PDF por correo** electrónico para enviar el formulario completado por correo electrónico como archivo adjunto en PDF. Las opciones de configuración disponibles para esta acción son las mismas que las opciones disponibles para la acción Correo electrónico. La acción Enviar un PDF por correo electrónico solo está disponible para formularios adaptables basados en XFA
+>También puede utilizar la acción **Enviar archivo PDF por correo electrónico** para enviar el formulario completado por correo electrónico como archivo adjunto en PDF. Las opciones de configuración disponibles para esta acción son las mismas que las opciones disponibles para la acción Correo electrónico. La acción Enviar un PDF por correo electrónico solo está disponible para formularios adaptables basados en XFA
 
-## Email action {#email-action}
+## Acción por correo electrónico {#email-action}
 
 La acción Correo electrónico permite a un autor enviar correos electrónicos automáticamente a uno o varios destinatarios cuando se envía correctamente un formulario adaptable.
 
 >[!NOTE]
 >
->Para utilizar la acción Correo electrónico, debe configurar el servicio de correo AEM como se describe en [Configuración del servicio](/help/sites-administering/notification.md#configuring-the-mail-service)de correo.
+>Para utilizar la acción Correo electrónico, debe configurar el servicio de correo AEM como se describe en [Configuración del servicio de correo](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### Activación de la acción de correo electrónico en un formulario adaptable {#enabling-email-action-on-an-adaptive-form}
 
 1. Abra un formulario adaptable en modo de edición.
 
-1. Haga clic en **Editar** junto al **Inicio de la barra de herramientas Formulario** adaptable.
+1. Haga clic en **Editar** junto al Inicio **de una barra de herramientas Formulario adaptable**.
 
    Se abre el cuadro de diálogo Editar componente.
 
    ![Cuadro de diálogo Editar componente para un formulario adaptable](assets/start_of_adp_form.png)
 
-1. Seleccione la ficha Acciones **de** envío y elija Acción **de** correo electrónico en la lista desplegable Acción de envío.
+1. Seleccione la ficha **Enviar acciones** y elija **Acción por correo electrónico** en la lista desplegable de acción Enviar.
 
    La ficha muestra las opciones para configurar la acción Correo electrónico del formulario actual.
 
@@ -59,13 +59,13 @@ La acción Correo electrónico permite a un autor enviar correos electrónicos a
 
    Especifique el asunto y el cuerpo del correo electrónico en los campos de plantilla Asunto y Correo electrónico, respectivamente.
 
-   También puede especificar marcadores de posición de variables en los campos, en cuyo caso, los valores de los campos se procesan cuando un usuario final envía correctamente el formulario. Para obtener más información, consulte [Uso de nombres de campo de formulario adaptables para crear dinámicamente contenido](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)de correo electrónico.
+   También puede especificar marcadores de posición de variables en los campos, en cuyo caso, los valores de los campos se procesan cuando un usuario final envía correctamente el formulario. Para obtener más información, consulte [Uso de nombres de campo de formulario adaptables para crear dinámicamente contenido de correo electrónico](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Seleccione Incluir archivos adjuntos si el formulario incluye archivos adjuntos y desea adjuntarlos en el correo electrónico.
 
    >[!NOTE]
    >
-   >Si elige la acción **Enviar archivo PDF por** correo electrónico, debe seleccionar la opción Incluir archivos adjuntos.
+   >Si elige la acción **Enviar archivo PDF**, debe seleccionar la opción Incluir archivos adjuntos.
 
 1. Haga clic en **Aceptar** para guardar los cambios.
 
@@ -77,17 +77,17 @@ En la ficha de acción Correo electrónico, puede utilizar marcadores de posici�
 
 Para definir un marcador de posición, especifique `${<field name>}` en un campo de la ficha Enviar acciones.
 
-Por ejemplo, si el formulario contiene el campo Dirección **de** correo electrónico, denominado `email_addr`, para capturar el ID de correo electrónico de un usuario, puede especificar lo siguiente en los campos Mailto, CC o BCC.
+Por ejemplo, si el formulario contiene el campo **Dirección de correo electrónico**, denominado `email_addr`, para capturar el ID de correo electrónico de un usuario, puede especificar lo siguiente en los campos Mailto, CC o BCC.
 
 `${email_addr}`
 
-Cuando un usuario envía el formulario, se envía un correo electrónico al ID de correo electrónico introducido en el `email_addr` campo del formulario.
+Cuando un usuario envía el formulario, se envía un correo electrónico al ID de correo electrónico introducido en el campo `email_addr` del formulario.
 
 >[!NOTE]
 >
 >Puede encontrar el nombre de un campo en el cuadro de diálogo **Editar** del campo.
 
-Los marcadores de posición de variables también se pueden utilizar en los campos de plantilla **Asunto** y **Correo electrónico** .
+Los marcadores de posición de variables también se pueden utilizar en los campos **Subject** y **Email template**.
 
 Por ejemplo:
 

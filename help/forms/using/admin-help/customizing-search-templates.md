@@ -47,9 +47,9 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
 
    * En la parte superior de la ficha Criterios, seleccione un elemento de proceso o un elemento de Tarea.
 
-      **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
+      **Sugerencia**:  *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
 
-      **Sugerencia**: *Si selecciona el elemento Tarea visible, los usuarios podrán eliminar tareas completadas de los resultados de búsqueda.*
+      **Sugerencia**:  *Si selecciona el elemento Tarea visible, los usuarios podrán eliminar tareas completadas de los resultados de búsqueda.*
 
       Los campos de criterios de búsqueda del elemento seleccionado aparecen en la parte inferior de la ficha Criterios.
 
@@ -59,9 +59,9 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
       * (Opcional) Para permitir que los usuarios cambien el valor del operando en Workspace, seleccione Permitir al usuario cambiar el operando.
       * (Opcional) Para permitir que los usuarios cambien el operador relacional, seleccione Permitir que el usuario seleccione otro operador relacional. En la lista que aparece, seleccione los operadores que estarán disponibles para el usuario.
 
-      **Sugerencia**: *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se está ejecutando en el servidor de formularios. Después de seleccionar un proceso, todas las variables de proceso definidas en ese proceso se pueden seleccionar en Variables de proceso en la sección superior de la ficha Criterios.*
+      **Sugerencia**:  *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se está ejecutando en el servidor de formularios. Después de seleccionar un proceso, todas las variables de proceso definidas en ese proceso están disponibles para su selección en Variables de proceso en la sección superior de la ficha Criterios.*
 
-      **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar situado junto a los criterios de búsqueda del elemento.*
+      **Sugerencia**:  *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar situado junto a los criterios de búsqueda del elemento.*
 
 
 1. (Opcional) Para que el encabezado de cada columna se muestre en los resultados de la búsqueda, haga clic en la ficha Diseño y lleve a cabo los siguientes pasos:

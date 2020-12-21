@@ -142,7 +142,7 @@ Durante este proceso es importante visitar diferentes áreas del sitio web, con 
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU del producto es la única pieza de datos necesaria para agregar miniaturas a un segmento de tiempo en el vídeo interactivo de AEM.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable independiente en la definición de datos en miniatura en AEM.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable separada en la definición de datos en miniatura en AEM.
 
 Considere los siguientes ejemplos de URL de vista rápida y sus variables de miniatura resultantes:
 
@@ -249,7 +249,7 @@ Consulte [Creación de un nuevo ajuste preestablecido de visor](managing-viewer-
 
 Si ya ha cargado los recursos de vídeo y miniaturas, continúe [Añadiendo la interactividad en el vídeo](#adding-interactivity-to-your-video).
 
-Si ha cargado los vídeos o imágenes incorrectos o desea eliminar los vídeos o imágenes cargados que ya no necesita, consulte [Eliminación de recursos](managing-assets-touch-ui.md#deleting-assets).
+Si ha cargado los vídeos o las imágenes incorrectos o desea eliminar los vídeos o las imágenes cargados que ya no necesita, consulte [Eliminación de recursos](managing-assets-touch-ui.md#deleting-assets).
 
 **Para cargar un vídeo y sus recursos** de miniaturas asociados:
 
@@ -476,7 +476,7 @@ Después de guardar el vídeo interactivo, éste se abre inmediatamente en la Pr
       En la línea de tiempo, toque un segmento que desee dividir por la mitad y luego toque **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 

@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# Disponibilidad de fuentes {#make-fonts-available}
+# Habilitar fuentes {#make-fonts-available}
 
 Asegúrese de que las fuentes utilizadas en un formulario están disponibles para su uso en el servidor de aplicaciones J2EE que aloja AEM formularios. Por ejemplo, considere el siguiente escenario. Un diseñador de formularios agrega una fuente al directorio de fuentes que utiliza Designer y crea un formulario que utiliza esa fuente en un equipo independiente. Para que el servicio Output utilice la fuente, colóquela en el directorio de fuentes del cliente. Si el directorio de fuentes del cliente no existe, cree un directorio en el servidor de aplicaciones J2EE que aloja AEM formularios.
 
-Para obtener más información sobre la configuración de fuentes adicionales, consulte [Configuración de la configuración](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)general de formularios AEM.
+Para obtener más información sobre la configuración de fuentes adicionales, consulte [Configuración general de los formularios de AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 
 **Especifique la ubicación del directorio de fuentes del cliente**
 
 1. En la consola de administración, haga clic en Configuración > Configuración de sistemas principales > Configuraciones.
-1. En el cuadro Ubicación del directorio de fuentes del sistema, escriba la ruta del directorio de fuentes del cliente. Se pueden agregar varios directorios, separados por punto y coma **;**
+1. En el cuadro Ubicación del directorio de fuentes del sistema, escriba la ruta del directorio de fuentes del cliente. Se pueden agregar varios directorios separados por un punto y coma **;**
 1. Haga clic en Aceptar.
 1. Reinicie el sistema en el que están instalados AEM formularios.
 

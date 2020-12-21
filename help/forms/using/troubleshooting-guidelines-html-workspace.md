@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Directrices para la resolución de problemas del espacio de trabajo de AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Directrices para la resolución de problemas del área de trabajo de AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 En este artículo se explica cómo depurar el espacio de trabajo de AEM Forms habilitando el registro y utilizando el depurador en un navegador. También se explican algunos problemas comunes que se pueden encontrar al utilizar el espacio de trabajo de AEM Forms y sus soluciones alternativas.
 
 ## No se puede instalar el paquete de espacio de trabajo de AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Después de instalar el parche, abra el espacio de trabajo de AEM Forms. Si aparece el error No se encontró ningún recurso, abra el Administrador de paquetes CRX y vuelva a instalar el `adobe-lc-workspace-pkg-<version>.zip` paquete.
+Después de instalar el parche, abra el espacio de trabajo de AEM Forms. Si encuentra el error No se encontró ningún recurso, abra el Administrador de paquetes CRX y vuelva a instalar el paquete `adobe-lc-workspace-pkg-<version>.zip`.
 
 Durante la instalación del paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, lleve a cabo los siguientes pasos:
 
@@ -34,18 +34,18 @@ Durante la instalación del paquete, si se produce un error `javax.jcr.nodetype.
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Vaya al Administrador de paquetes. La dirección URL predeterminada es `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
-1. Busque e instale el `adobe-lc-workspace-pkg-[version].zip` paquete.
+1. Busque e instale el paquete `adobe-lc-workspace-pkg-[version].zip`.
 1. Reinicie el servidor de aplicaciones.
 
-## Registro del espacio de trabajo de AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Registro del área de trabajo de AEM Forms {#aem-forms-workspace-nbsp-logging}
 
 Puede generar registros en varios niveles para permitir una solución óptima de los errores. Por ejemplo, en una aplicación compleja, el registro a nivel de componente ayuda a depurar y solucionar problemas de componentes específicos.
 
 En el espacio de trabajo de AEM Forms:
 
-* Para obtener la información de registro sobre un archivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` la dirección URL y presione `Enter`. Toda la información de registro del archivo componente en el nivel de registro especificado se imprime en la consola.
+* Para obtener la información de registro sobre un archivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` en la dirección URL y presione `Enter`. Toda la información de registro del archivo componente en el nivel de registro especificado se imprime en la consola.
 
-* Para obtener información de registro de todos los archivos de componente, anexe `/log/all/trace` la dirección URL y pulse `Enter`.
+* Para obtener información de registro de todos los archivos de componente, anexe `/log/all/trace` en la dirección URL y presione `Enter`.
 
 * Formato de registro: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -142,7 +142,7 @@ En el espacio de trabajo de AEM Forms:
  </tbody> 
 </table>
 
-### Niveles de registro disponibles en el espacio de trabajo de AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Niveles de registro disponibles en el área de trabajo de AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAL
 * ERROR
@@ -152,13 +152,13 @@ En el espacio de trabajo de AEM Forms:
 * TRACE
 * DESACTIVADO
 
-## Depuración de información para navegadores {#debugging-information-for-browsers}
+## Depuración de información para exploradores {#debugging-information-for-browsers}
 
 Las secuencias de comandos y los estilos se pueden depurar en distintos navegadores.
 
-* **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Depuración en Firefox**: Hay varios Añadas disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 

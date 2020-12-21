@@ -34,12 +34,12 @@ Realice los siguientes pasos para agregar un elemento en los metadatos:
 
    Para abrir el formulario en modo de edición, en el administrador de formularios, seleccione el formulario y toque **Abrir**.
 
-1. En el modo de edición, seleccione un componente, toque ![campo](assets/field-level.png) > Contenedor **de formulario** adaptable y, a continuación, toque ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente, toque ![nivel de campo](assets/field-level.png) > **Contenedor de formulario adaptable** y, a continuación, toque ![cmppr](assets/cmppr.png).
 1. En la barra lateral, haga clic en **Metadatos**.
 1. En la sección Metadatos, haga clic en **Añadir**.
 1. Utilice el campo Valor de la ficha Metadatos para agregar secuencias de comandos. Las secuencias de comandos que se agregan recopilan datos de elementos del formulario y calculan los valores que se introducen en los metadatos.
 
-   Por ejemplo, **true** se registra en los metadatos si la edad especificada es buena a 21 años y **false** se registra si es menor a 21. La siguiente secuencia de comandos se introduce en la ficha Metadatos:
+   Por ejemplo, **true** se registra en los metadatos si la edad especificada es buena a 21 y **false** se registra si es menor a 21. La siguiente secuencia de comandos se introduce en la ficha Metadatos:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -60,7 +60,7 @@ Si agrega un elemento de casilla de verificación en los metadatos, los valores 
 
 ![Almacenamiento de varios valores desde una casilla de verificación](assets/checkbox-metadata.png)
 
-Se selecciona el contenedor de formulario adaptable y, en las propiedades del formulario, se agrega una clave de metadatos `cb1` que almacena `checkbox1.value`y se publica el formulario. Cuando un cliente rellena el formulario, selecciona las opciones Pasaporte y Número de seguridad social en el campo de la casilla de verificación. Los valores 1 y 2 se almacenan como 1, 2 en el campo cb1 de los metadatos de envío.
+Seleccione el contenedor de formulario adaptable y, en las propiedades del formulario, agregue una clave de metadatos `cb1` que almacene `checkbox1.value` y publique el formulario. Cuando un cliente rellena el formulario, selecciona las opciones Pasaporte y Número de seguridad social en el campo de la casilla de verificación. Los valores 1 y 2 se almacenan como 1, 2 en el campo cb1 de los metadatos de envío.
 
 ![Entrada de metadatos para varios valores seleccionados en un campo de casilla de verificación](assets/metadata-entry-1.png)
 

@@ -27,9 +27,9 @@ Los agentes pueden asociar y ejecutar flujos de trabajo de postprocesamiento en 
 
 Para asociar procesos de publicación con cartas o comunicaciones interactivas, primero debe configurar los procesos de publicación. Se pueden ejecutar dos tipos de flujos de trabajo en las cartas enviadas:
 
-1. **Forms Workflow:** Estos son los flujos de trabajo de administración de procesos de AEM Forms en JEE. Instrucciones para configurar el [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Estos son los flujos de trabajo de administración de procesos de AEM Forms en JEE. Instrucciones para configurar [Forms Workflow](#formsworkflow).
 
-1. **Flujo de trabajo AEM:** Los flujos de trabajo de AEM también pueden utilizarse como procesos posteriores para las cartas enviadas. Instrucciones para configurar [AEM flujo de trabajo](/help/forms/using/aem-forms-workflow.md).
+1. **Flujo de trabajo de AEM:** AEM flujos de trabajo también se pueden usar como procesos posteriores para las cartas enviadas. Instrucciones para configurar [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Flujo de trabajo de formularios {#formsworkflow}
 
@@ -38,7 +38,7 @@ Para asociar procesos de publicación con cartas o comunicaciones interactivas, 
    ![Administrador de configuración](assets/2configmanager-1.png)
 
 1. En esta página, localice la configuración del SDK del cliente de AEM Forms y amplíela haciendo clic en ella.
-1. En URL del servidor, introduzca el nombre de su AEM Forms en el servidor JEE, los detalles de inicio de sesión y, a continuación, haga clic en **Guardar**.
+1. En la URL del servidor, introduzca el nombre de su AEM Forms en el servidor JEE, los detalles de inicio de sesión y, a continuación, haga clic en **Guardar**.
 
    ![Escriba el nombre del servidor de LiveCycle](assets/1cofigmanager.png)
 
@@ -53,25 +53,25 @@ Para asociar procesos de publicación con cartas o comunicaciones interactivas, 
 
 1. Para autenticar un proceso/servicio, copie el nombre de un proceso y vuelva a la página Configuraciones de la consola web de Adobe Experience Manager > Configuración del SDK del cliente de AEM Forms y agregue el proceso como un nuevo servicio.
 
-   Por ejemplo, si el menú desplegable de la página Propiedades de la carta muestra el nombre del proceso como Forms Workflow -> VálidoCCPostProcess/SaveXML, agregue un nombre de servicio como `ValidCCPostProcess/SaveXML`.
+   Por ejemplo, si el menú desplegable de la página Propiedades de la letra muestra el nombre del proceso como Forms Workflow -> VálidoCCPostProcess/SaveXML, agregue un nombre de servicio como `ValidCCPostProcess/SaveXML`.
 
 1. Para utilizar AEM Forms en flujos de trabajo JEE para el posprocesamiento, configure los parámetros y salidas necesarios. A continuación se indican los valores predeterminados de los parámetros.
 
-   Vaya a la página Configuraciones de la consola web de Adobe Experience Manager > Configuraciones **[!UICONTROL de administración de]** correspondencia y configure los parámetros siguientes:
+   Vaya a la página Configuraciones de la Consola Web de Adobe Experience Manager > **[!UICONTROL Configuraciones de Administración de Correspondencia]** y configure los siguientes parámetros:
 
    1. **inPDFDoc (parámetro de documento PDF):** Un documento PDF como entrada. Esta entrada contiene la letra procesada como entrada. Los nombres de parámetro indicados son configurables. Se pueden configurar desde las configuraciones de Correspondence Management desde la configuración.
    1. **inXMLDoc (parámetro de datos XML):** Un documento XML como entrada. Esta entrada contiene datos introducidos por el usuario en forma de XML.
    1. **inXDPDoc (parámetro de documento XDP):** Un documento XML como entrada. Esta entrada contiene el diseño subyacente (XDP).
-   1. **inAttachmentDocs (parámetro de Documentos de datos adjuntos):** Parámetro de entrada de lista. Esta entrada contiene todos los datos adjuntos como entrada.
-   1. **redirectURL (salida de URL de redireccionamiento):** Tipo de salida que indica la dirección URL a la que se redirige.
+   1. **inAttachmentDocs (parámetro de Documentos de datos adjuntos):** parámetro de entrada de lista. Esta entrada contiene todos los datos adjuntos como entrada.
+   1. **redirectURL (Salida de URL de redireccionamiento):** un tipo de salida que indica la dirección URL a la que se redirige.
 
-   El flujo de trabajo de los formularios debe tener parámetros de documento PDF o de datos XML como entrada con el mismo nombre que se especifica en Configuraciones **[!UICONTROL de administración de]** correspondencia. Esto es necesario para que el proceso aparezca en la lista desplegable Post Process.
+   El flujo de trabajo de los formularios debe tener parámetros de documento PDF o de datos XML como entrada con el mismo nombre que se especifica en **[!UICONTROL Configuraciones de administración de correspondencia]**. Esto es necesario para que el proceso aparezca en la lista desplegable Post Process.
 
-## Configuración de la instancia de Publish {#settings-on-the-publish-instance}
+## Configuración de la instancia de publicación {#settings-on-the-publish-instance}
 
-1. iniciar sesión en `http://localhost:publishport/aem/forms`.
+1. inicie sesión en `http://localhost:publishport/aem/forms`.
 1. Vaya a **[!UICONTROL Letras]** para vista de la carta publicada que está disponible en la instancia de publicación.
-1. Configure las opciones de AEM DS. Consulte [Configuración de AEM configuración](/help/forms/using/configuring-the-processing-server-url-.md)de DS.
+1. Configure las opciones de AEM DS. Consulte [Configuración de AEM DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ Las instancias de letras guardadas se pueden manipular aún más, como la recupe
 
 En la interfaz de usuario de CCR, complete los siguientes pasos para asociar un proceso de publicación con una carta:
 
-1. Pase el ratón sobre una letra y toque Propiedades de **Vista**.
+1. Pase el ratón sobre una letra y toque **Propiedades de la Vista**.
 1. Seleccione **Editar**.
 1. En la lista desplegable Propiedades básicas, seleccione el proceso de publicación que desea asociar con la letra. En la lista desplegable se muestran tanto los procesos de publicación relacionados con AEM como los relacionados con Forms.
 1. Toque **Guardar**.
@@ -131,4 +131,4 @@ Se puede volver a cargar una instancia de borrador en la interfaz de usuario med
 
 LetterInstaceID: ID única de la instancia de carta enviada.
 
-Para obtener más información sobre cómo guardar un borrador de carta, consulte [Guardar borradores y enviar instancias](/help/forms/using/create-correspondence.md#savingdrafts)de carta.
+Para obtener más información sobre cómo guardar un borrador de carta, consulte [Almacenamiento de borradores y envío de instancias de carta](/help/forms/using/create-correspondence.md#savingdrafts).

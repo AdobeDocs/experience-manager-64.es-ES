@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Configuración del servicio informativo del sistema {#set-up-the-system-information-service}
+# Configure el servicio informativo del sistema {#set-up-the-system-information-service}
 
 El servicio informativo del sistema proporciona las API de REST para recuperar información. Para utilizar el servicio informativo del sistema, habilite el extremo REST desde la consola de administración. Realice los siguientes pasos para habilitar el extremo REST:
 
 1. Inicie sesión en la consola de administración. La dirección URL predeterminada de la consola de administración es `https://[hostname]:[port]/adminui.`
 1. Vaya a Servicios > Aplicaciones y servicios > Administración de servicios.
-1. En la página Administración de servicios, haga clic en el servicio **SystemInfo** .
+1. En la página Administración de servicios, haga clic en el servicio **SystemInfo**.
 1. En la lista de la ficha Extremos, seleccione REST y haga clic en **Añadir**.
 1. En la pantalla Añadir extremo REST, haga clic en **Añadir**.
 

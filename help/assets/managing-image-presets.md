@@ -477,7 +477,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 
@@ -504,7 +504,7 @@ Si ejecuta el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen
 1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen en la lista de ajustes preestablecidos de imagen y, a continuación, toque **[!UICONTROL Publicar]**.
 1. Después de publicar el ajuste preestablecido de imagen, el estado cambia de no publicado a publicado.
 
-   ![chlimage_1-503](assets/chlimage_1-505.png)
+   ![chlimage_1-505](assets/chlimage_1-505.png)
 
 ## Eliminación de ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 

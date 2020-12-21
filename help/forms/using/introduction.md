@@ -20,11 +20,11 @@ ht-degree: 4%
 
 Los formularios HTML5 son una nueva función del software Adobe Experience Manager 6.0 (AEM 6.0) que oferta el procesamiento de las plantillas de formulario XFA en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en el explorador de un ordenador de sobremesa no compatible con PDF basados en XFA. Los formularios HTML5 no sólo admiten las capacidades existentes de las plantillas de formulario XFA, sino que también agregan nuevas funciones, como la firma de garabatos, para dispositivos móviles.
 
-Los formularios HTML5 generan documentos basados en construcciones HTML5 estándar. Puede vista de formularios HTML5 en todos los navegadores modernos que admitan HTML5. No es necesario instalar ningún complemento de explorador adicional para los exploradores. Para obtener más información sobre los exploradores admitidos, consulte Plataformas [de cliente](https://adobe.com/go/learn_aemforms_supportedplatforms_63)admitidas.
+Los formularios HTML5 generan documentos basados en construcciones HTML5 estándar. Puede vista de formularios HTML5 en todos los navegadores modernos que admitan HTML5. No es necesario instalar ningún complemento de explorador adicional para los exploradores. Para obtener más información sobre los exploradores admitidos, consulte [Plataformas de cliente admitidas](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
-## Funciones principales de los formularios HTML5 {#key-capabilities-of-html-forms-br}
+## Funciones clave de los formularios HTML5 {#key-capabilities-of-html-forms-br}
 
 * Procesa los formularios XFA existentes en HTML5 admitidos en todos los exploradores compatibles.
 * Aprovecha las funciones de diseño de formulario XFA estándar para crear destinatarios de formularios para dispositivos móviles.
@@ -46,4 +46,4 @@ AEM también proporciona una vista unificada para enumerar y administrar todas l
 
 ### Personalización de Forms {#forms-customization}
 
-Los formularios HTML5 procesan las plantillas de formulario utilizando construcciones HTML5 estándar. Esto simplifica la personalización y ampliación de formularios en formato HTML5 mediante tecnologías web, principalmente CSS y JavaScript. Puede personalizar fácilmente el aspecto de los widgets existentes, crear sus propios widgets personalizados o utilizar estilos personalizados en formularios. Para obtener más información sobre la creación de utilidades personalizadas y la personalización de widgets existentes, consulte [Completar widgets personalizados con formularios](/help/forms/using/custom-widgets.md)HTML5.
+Los formularios HTML5 procesan las plantillas de formulario utilizando construcciones HTML5 estándar. Esto simplifica la personalización y ampliación de formularios en formato HTML5 mediante tecnologías web, principalmente CSS y JavaScript. Puede personalizar fácilmente el aspecto de los widgets existentes, crear sus propios widgets personalizados o utilizar estilos personalizados en formularios. Para obtener más información sobre la creación de utilidades personalizadas y la personalización de widgets existentes, consulte [Completar utilidades personalizadas con formularios HTML5](/help/forms/using/custom-widgets.md).

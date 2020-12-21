@@ -23,17 +23,17 @@ ht-degree: 0%
 El monitor de estado proporciona información crítica sobre el sistema de formularios AEM, como información del servidor, uso de memoria y uso del procesador. También están disponibles las estadísticas del Administrador de trabajo, como el número de elementos de trabajo o trabajos en la cola y sus estados. Puede realizar las siguientes tareas mediante el Monitor de estado:
 
 * Verifique que el sistema se esté ejecutando correctamente
-* Información de Vista para ayudar a diagnosticar problemas del sistema a medida que se producen
+* Información de vista para ayudar a diagnosticar problemas del sistema a medida que se producen
 * Realizar operaciones en elementos de trabajo o trabajos que muestren problemas
 * Purgar registros obsoletos de la base de datos de Job Manager
 
 La página Monitor de estado de la consola de administración tiene tres fichas:
 
-* La ficha Sistema muestra gráficos de supervisión de recursos e información sobre el servidor de formularios (o nodo en un entorno agrupado). (Consulte la información [del sistema de](/help/forms/using/admin-help/view-system-information.md#view-system-information)Vista).
-* La ficha Administrador de trabajo muestra los datos relacionados con el Administrador de trabajo, como el número de elementos de trabajo en la cola del Administrador de trabajo. Puede filtrar la información mediante varios criterios o administrar elementos de trabajo individuales mediante las herramientas de operación. (Consulte las estadísticas de [Vista relacionadas con el Administrador](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)de trabajo).
-* La ficha Planificador Depuración de Trabajos permite purgar registros obsoletos de la base de datos de Job Manager. (Consulte [Purgar registros de la base de datos](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)de Job Manager).
+* La ficha Sistema muestra gráficos de supervisión de recursos e información sobre el servidor de formularios (o nodo en un entorno agrupado). (Consulte [información del sistema de Vista](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* La ficha Administrador de trabajo muestra los datos relacionados con el Administrador de trabajo, como el número de elementos de trabajo en la cola del Administrador de trabajo. Puede filtrar la información mediante varios criterios o administrar elementos de trabajo individuales mediante las herramientas de operación. (Consulte [Estadísticas de Vista relacionadas con el Administrador de trabajo](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+* La ficha Planificador Depuración de Trabajos permite purgar registros obsoletos de la base de datos de Job Manager. (Consulte [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 
-La página web del Monitor de estado se llena con estadísticas recopiladas a través de la API de Gemfire. Esta API detecta automáticamente todos los nodos de un clúster. También resuelve los problemas de seguridad que se producen al recopilar estadísticas desde servidores proxy o equilibradores de carga. Las opciones de Java están disponibles para ajustar el monitor de estado, lo que reduce el impacto en el rendimiento del entorno de formularios AEM. (Consulte [Ajuste del rendimiento](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)del monitor de mantenimiento).
+La página web del Monitor de estado se llena con estadísticas recopiladas a través de la API de Gemfire. Esta API detecta automáticamente todos los nodos de un clúster. También resuelve los problemas de seguridad que se producen al recopilar estadísticas desde servidores proxy o equilibradores de carga. Las opciones de Java están disponibles para ajustar el monitor de estado, lo que reduce el impacto en el rendimiento del entorno de formularios AEM. (Consulte [Ajuste del rendimiento del monitor de estado](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)).
 
 **Control de estado de acceso**
 

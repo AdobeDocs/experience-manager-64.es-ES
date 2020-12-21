@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Especificar la configuración de seguridad {#specify-security-settings}
+# Especifique la configuración de seguridad {#specify-security-settings}
 
 Output le permite controlar si las entidades externas de las entradas XML se resuelven. De forma predeterminada, se resuelven, pero puede cambiar este comportamiento para aumentar la seguridad del sistema de formularios AEM.
 

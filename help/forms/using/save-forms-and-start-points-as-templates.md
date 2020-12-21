@@ -25,7 +25,7 @@ A veces, cuando los usuarios rellenan un formulario, las entradas de algunos cam
 Realice los siguientes pasos para crear una plantilla:
 
 1. Abra un formulario y seleccione o rellene los campos con valores casi idénticos cada vez que lo utilice. Puede incluir un archivo adjunto con la plantilla que suele agregar al rellenar el formulario.
-1. Toque el icono **Guardar como plantilla** ![save_as_](assets/save_as_template.png)templateicon. Aparece un cuadro de diálogo para especificar el nombre de la plantilla.
+1. Puntee en el icono **Guardar como plantilla** ![save_as_template](assets/save_as_template.png). Aparece un cuadro de diálogo para especificar el nombre de la plantilla.
 1. Especifique el nombre de la plantilla y toque **Guardar**. La plantilla aparece en la carpeta de plantillas.
 
    Si existe una plantilla con el mismo nombre, aparece un cuadro de diálogo para confirmar que se sobrescribe la plantilla existente. Para reemplazar la plantilla existente con una nueva plantilla, toque **Continuar** o para guardar la plantilla con un nombre diferente, toque **Cancelar**.

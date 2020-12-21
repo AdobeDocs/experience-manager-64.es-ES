@@ -30,7 +30,7 @@ Cuando está conectado con el servidor de AEM Forms, de forma predeterminada, la
 
 **Para sincronizar la aplicación manualmente**
 
-Toque el botón Sincronizar aplicación ![de](assets/sync-app.png) sincronización en la esquina inferior derecha de la pantalla de inicio.
+Toque el botón Sincronizar ![sync-app](assets/sync-app.png) en la esquina inferior derecha de la pantalla principal.
 
 **Para alterar la frecuencia de sincronización**
 

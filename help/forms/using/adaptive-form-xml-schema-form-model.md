@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# Creación de formularios adaptables mediante Esquema XML {#creating-adaptive-forms-using-xml-schema}
+# Creación de formularios adaptables mediante el Esquema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Requisitos previos {#prerequisites}
 
@@ -129,7 +129,7 @@ Este es un ejemplo de un esquema XML.
 >
 >Asegúrese de que el esquema XML solo tenga un elemento raíz. No se admite un esquema XML con más de un elemento raíz.
 
-## Añadir propiedades especiales a campos mediante esquema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Añadir propiedades especiales a campos mediante el esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
 Puede agregar los atributos siguientes a los elementos de Esquema XML para agregar propiedades especiales a los campos del formulario adaptable asociado.
 
@@ -173,7 +173,7 @@ Puede agregar los atributos siguientes a los elementos de Esquema XML para agreg
 
 >
 >
-Por ejemplo, si agrega el elemento `userFirstName` esquema, el rótulo generado en el formulario adaptable será `User First Name`.
+Por ejemplo, si agrega el elemento de esquema `userFirstName`, el rótulo generado en el formulario adaptable será `User First Name`.
 
 ## Límite de valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -301,7 +301,7 @@ El campo bindRef</code> muestra la asociación entre un elemento de árbol y un 
 
 >[!NOTE]
 >
->Los atributos tienen un `@` símbolo en su `bindRef`valor para distinguirlos de los elementos. Por ejemplo, `/config/projectDetails/@duration`.
+>Los atributos tienen un símbolo `@` en su valor `bindRef`para distinguirlos de los elementos. Por ejemplo, `/config/projectDetails/@duration`.
 
 **¿Por qué no se pueden arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxoccur son buenos a partir de 1)?**
 
@@ -316,4 +316,4 @@ Tiene dos opciones:
 
 **¿Qué es bindRef?**
 
-A `bindRef` es la conexión entre un componente de formulario adaptable y un elemento o atributo de esquema. Indica el `XPath` lugar en el que el valor capturado de este componente o campo está disponible en el XML de salida. También `bindRef`se utiliza un objeto A cuando se rellena previamente un valor de campo a partir de XML prerellenado (rellenado previamente).
+Un `bindRef` es la conexión entre un componente de formulario adaptable y un elemento o atributo de esquema. Indica el `XPath` donde el valor capturado de este componente o campo está disponible en el XML de salida. También se utiliza un `bindRef`cuando se rellena previamente un valor de campo a partir de un XML prerelleno (prerellenado).

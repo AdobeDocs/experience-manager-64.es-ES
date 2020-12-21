@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Sincronización de directorios {#synchronizing-directories}
 
-Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. Una sincronización ** manual sincroniza los dominios seleccionados. Una sincronización ** programada sincroniza todos los dominios.
+Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. Una *sincronización manual* sincroniza los dominios seleccionados. Una *sincronización programada* sincroniza todos los dominios.
 
 La sincronización de directorios se utiliza para extraer detalles de los servidores de directorios especificados en la configuración de directorios en la base de datos de Administración de usuarios. Posteriormente, también puede realizar una sincronización manual si se producen cambios o actualizaciones en los servidores de directorio. Por ejemplo, puede realizar una sincronización manual si se agregan usuarios y grupos o si se realizan cambios en la cuenta de un usuario.
 
@@ -38,7 +38,7 @@ También puede especificar si desea insertar información de usuarios y grupos e
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema gestor de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte [Adobe del documento](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)del ciclo vital del producto. Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle® Content Services ES (obsoleto) es un sistema gestor de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con Content Services (obsoleto) finaliza el 31/12/2014. Consulte [documento del ciclo vital del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Para obtener información sobre la configuración de Content Services (obsoleto), consulte [Administración de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ## Habilitar sincronización de directorio delta {#enable-delta-directory-synchronization}
 
@@ -56,7 +56,7 @@ La Administración de usuarios realiza los siguientes pasos cuando la sincroniza
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. En Sintaxis delta, active la casilla de verificación y haga clic en Guardar.
-1. Edite la configuración del directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización del directorio delta. En las páginas Configuración de usuario y Configuración de grupo, ubique la opción Modificar marca de hora y escriba `modify TimeStamp` como valor. Para obtener más información sobre la edición de dominios de empresa, consulte [Edición y conversión de dominios](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)existentes.
+1. Edite la configuración del directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización del directorio delta. En las páginas Configuración de usuario y Configuración de grupo, ubique la configuración Modificar marca de hora e introduzca `modify TimeStamp` como valor. Para obtener más información sobre la edición de dominios empresariales, consulte [Edición y conversión de dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Habilitar o deshabilitar el registro detallado durante la sincronización {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -65,7 +65,7 @@ De forma predeterminada, la Administración de usuarios registra estadísticas d
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema.
 1. En Sincronizar registro de estadísticas, anule la selección de la casilla de verificación para deshabilitar el registro detallado o selecciónelo para habilitar el registro y, a continuación, haga clic en Guardar.
 
-## Configuración de la opción de reintento de sincronización de directorios {#configure-the-directory-synchronization-retry-option}
+## Configurar la opción de reintento de sincronización de directorios {#configure-the-directory-synchronization-retry-option}
 
 Puede configurar la Administración de usuarios para que compruebe periódicamente si hay algún intento fallido de sincronización de directorios. A continuación, la Administración de usuarios intenta completar las sincronizaciones fallidas.
 
@@ -74,7 +74,7 @@ Puede configurar la Administración de usuarios para que compruebe periódicamen
 
    El valor predeterminado es 0 0/13 &amp;ast; ? &amp;ast; , lo que significa que la comprobación se realiza cada 13 minutos.
 
-## Sincronizar directorios manualmente {#manually-synchronize-directories}
+## Sincronizar manualmente directorios {#manually-synchronize-directories}
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de Almacenamientos principales externos registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
@@ -96,7 +96,7 @@ El uso de la expresión cron se basa en el sistema de programación de trabajos 
 * (Opcional) Para insertar información de usuarios y grupos en Content Services (obsoleto), seleccione la opción Seleccionar esta opción para insertar usuarios y grupos en proveedores de Almacenamientos principales externos registrados. Esta opción también se aplica al agregar usuarios y grupos nuevos a través de la página Usuarios y grupos.
 * Haga clic en Guardar.
 
-## Detener todas las sincronizaciones de directorios en curso {#stop-all-directory-synchronizations-currently-in-progress}
+## Detener todas las sincronizaciones de directorios que están en curso {#stop-all-directory-synchronizations-currently-in-progress}
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Anular. Este botón solo se muestra mientras hay una sincronización de directorio en curso.

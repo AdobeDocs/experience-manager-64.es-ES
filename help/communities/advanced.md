@@ -18,39 +18,39 @@ ht-degree: 1%
 ---
 
 
-# Puntuación y distintivos avanzados {#advanced-scoring-and-badges}
+# Puntuación avanzada y distintivos {#advanced-scoring-and-badges}
 
 ## Información general {#overview}
 
-La puntuación avanzada permite la concesión de insignias para identificar a los miembros como expertos. La puntuación avanzada asigna puntos en función de la cantidad *y la calidad del* contenido creado por un miembro, mientras que la puntuación básica asigna puntos simplemente en función de la cantidad de contenido creado.
+La puntuación avanzada permite la concesión de insignias para identificar a los miembros como expertos. La puntuación avanzada asigna puntos en función de la calidad de cantidad *y* del contenido creado por un miembro, mientras que la puntuación básica asigna puntos simplemente en función de la cantidad de contenido creado.
 
 Esta diferencia se debe al motor de puntuación utilizado para calcular las puntuaciones. El motor de puntuación básico aplica matemáticas sencillas. El motor de puntuación avanzado es un algoritmo adaptable que recompensa a los miembros activos que contribuyen con contenido valioso y relevante, deducido a través del procesamiento del lenguaje natural (PNL) de un tema.
 
 Además de la relevancia del contenido, los algoritmos de puntuación tienen en cuenta las actividades de los miembros, como la votación y el porcentaje de respuestas. Aunque la puntuación básica los incluye cuantitativamente, la puntuación avanzada los utiliza algorítmicamente.
 
-Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que la análisis tenga sentido. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También hay un concepto de *decadencia* de los puestos más antiguos de un miembro. Si un miembro experto deja de participar en el tema en el que adquirió la condición de experto, en algún momento determinado (véase la configuración [del motor de](#configurable-scoring-engine)puntuación) podría perder su condición de experto.
+Por lo tanto, el motor de puntuación avanzado requiere datos suficientes para que la análisis tenga sentido. El umbral de logro para convertirse en un experto se reevalúa constantemente a medida que el algoritmo se ajusta continuamente al volumen y la calidad del contenido creado. También existe un concepto de *decadencia* de las publicaciones anteriores de un miembro. Si un miembro experto deja de participar en el asunto en el que obtuvo la condición de experto, en algún punto predeterminado (véase [configuración del motor de puntuación](#configurable-scoring-engine)) podría perder su condición de experto.
 
 Configurar la puntuación avanzada es prácticamente lo mismo que la puntuación básica:
 
 * Las reglas de puntuación y de identificación básicas y avanzadas se [aplican al contenido](implementing-scoring.md#apply-rules-to-content) de la misma manera
    * Las reglas de puntuación y de identificación básicas y avanzadas pueden aplicarse al mismo contenido
-* [La habilitación de distintivos para componentes](implementing-scoring.md#enable-badges-for-component) es genérica
+* [Habilitar distintivos para ](implementing-scoring.md#enable-badges-for-component) componentes genéricos
 
 Las diferencias en la configuración de las reglas de puntuación y de identificación son:
 
 * Motor de puntuación avanzado configurable
 * Reglas de puntuación avanzadas:
-   * `scoringType` configurado en **[!UICONTROL avanzado]**
+   * `scoringType` configurado en  **[!UICONTROL avanzado]**
    * Requiere palabras clave
 
 * Reglas de distintivo avanzadas:
-   * `badgingType` configurado en **[!UICONTROL avanzado]**
+   * `badgingType` configurado en  **[!UICONTROL avanzado]**
    * `badgingLevels` se establece en el número de niveles de expertos que se adjudicarán
-   * Requiere `badgingPaths` una matriz de distintivos en lugar de umbrales, la asignación de matrices señala a los distintivos
+   * Requiere una matriz `badgingPaths` de distintivos en lugar de umbrales de asignación de arreglos de discos a los distintivos
 
 >[!NOTE]
 >
->Para utilizar las capacidades avanzadas de puntuación y de identificación, instale el paquete [Identificación de](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)expertos.
+>Para utilizar las capacidades avanzadas de puntuación e identificación, instale el [paquete de identificación de expertos](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
 
 ## Motor de puntuación configurable {#configurable-scoring-engine}
 
@@ -58,9 +58,10 @@ El motor de puntuación avanzado proporciona una configuración OSGi con paráme
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL pesos]** de puntuación Para un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero se pueden limitar a **un verbo por tema**. Consulte [Temas y Verbos](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL Puntuación de]**
+ponderacionesPara un tema, especifique el verbo al que se debe dar la prioridad más alta al calcular la puntuación. Se pueden escribir uno o más temas, pero limitados a **un verbo por tema**. Consulte [Temas y verbos](implementing-scoring.md#topics-and-verbs).
 
-   Introducido como `topic,verb` con la coma de escape. Por ejemplo:
+   Se introduce como `topic,verb` con la coma de escape. Por ejemplo:
 
    `/social/forum/hbs/social/forum\,ADD`
 
@@ -99,9 +100,9 @@ Si un miembro obtuvo una insignia de experto en un tema que ya no está activo, 
 
 Una regla de puntuación es un conjunto de subreglas de puntuación, cada una de las cuales declara el `scoringType`.
 
-Para invocar el motor de puntuación avanzado, el valor `scoringType`debe establecerse en `advanced`.
+Para invocar el motor de puntuación avanzado, el `scoringType`debe establecerse en `advanced`.
 
-Consulte Subreglas [de puntuación](implementing-scoring.md#scoring-sub-rules).
+Consulte [Subreglas de puntuación](implementing-scoring.md#scoring-sub-rules).
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
@@ -119,7 +120,7 @@ Si falta el archivo de palabras clave, el motor de puntuación avanzado generar�
 
 ## Reglas de distintivo avanzadas {#advanced-badging-rules}
 
-Las propiedades avanzadas de la regla de identificación difieren de las propiedades [](implementing-scoring.md#badging-rules)básicas de la regla de identificación.
+Las propiedades avanzadas de la regla de identificación difieren de las [propiedades básicas de la regla de identificación](implementing-scoring.md#badging-rules).
 
 En lugar de asociar puntos con una imagen de insignia, solo es necesario identificar el número de expertos permitidos y la imagen de insignia que se va a otorgar.
 
@@ -154,9 +155,9 @@ Consulte la información básica para:
 * [Activación de la marca para un componente](implementing-scoring.md#enable-badges-for-component)
 * [Aplicación de reglas](implementing-scoring.md#apply-rules-to-content)
 
-### Reglas y subreglas de puntuación incluidas {#included-scoring-rules-and-sub-rules}
+### Se incluyeron reglas de puntuación y subreglas {#included-scoring-rules-and-sub-rules}
 
-En la versión beta se incluyen dos reglas de puntuación avanzadas para la función [de](functions.md#forum-function) foro (una para los componentes de foro y comentarios de la función de foro):
+La versión beta incluye dos reglas de puntuación avanzadas para la [función de foro](functions.md#forum-function) (una para los componentes de foro y comentarios de la función de foro):
 
 1. /etc/community/scoring/rules/adv-comments-scoring
 
@@ -180,21 +181,21 @@ En la versión beta se incluyen dos reglas de puntuación avanzadas para la func
 
 **Notas:**
 
-* Ambos `rules`y `sub-rules` los nodos son del tipo `cq:Page`
-* `subRules` es un atributo de tipo String[] en el nodo `jcr:content` de la regla
+* Los nodos `rules`y `sub-rules` son de tipo `cq:Page`
+* `subRules` es un atributo de tipo [] Cadena en el  `jcr:content` nodo de la regla
 * `sub-rules` pueden compartirse entre varias reglas de puntuación
 * `rules` debe ubicarse en una ubicación de repositorio con permiso de lectura para todos
    * los nombres de las reglas deben ser únicos independientemente de la ubicación
 
 ### Reglas de identificación incluidas {#included-badging-rules}
 
-En la versión se incluyen dos reglas de identificación avanzadas que corresponden a los foros [avanzados y a las reglas](#included-scoring-rules-and-sub-rules)de puntuación de comentarios.
+En la versión se incluyen dos reglas de identificación avanzadas que corresponden a los [foros avanzados y a las reglas de puntuación de comentarios](#included-scoring-rules-and-sub-rules).
 
 * /etc/community/badging/rules/adv-comments-badging
 * /etc/community/badging/rules/adv-forums-badging
 
 **Notas:**
 
-* `rules` los nodos son de tipo `cq:Page`
+* `rules` los nodos son de tipo  `cq:Page`
 * `rules`debe ubicarse en una ubicación de repositorio con permiso de lectura para todos
    * los nombres de las reglas deben ser únicos independientemente de la ubicación

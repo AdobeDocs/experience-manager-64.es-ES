@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Visión general de AEM servicios de Documento {#overview-of-aem-document-services}
+# Información general sobre AEM servicios de Documento {#overview-of-aem-document-services}
 
-Los servicios de Documento de AEM son un conjunto de servicios de OSGi para crear, montar y asegurar Documentos PDF. Los servicios de Documento contienen los siguientes servicios:
+Los servicios de Documento de AEM son un conjunto de servicios de OSGi para crear, montar y asegurar Documentos PDF. Los servicios de documento contienen los siguientes servicios:
 
 ## Servicio de salida {#output-service}
 
@@ -63,12 +63,12 @@ Cuando utilice el servicio Ensamblador, utilice un lenguaje basado en XML denomi
 
 El documento DDX puede especificar documentos resultantes con estas características:
 
-* documento PDF que se monta a partir de varios documentos PDF
+* DOCUMENTO PDF que se monta a partir de varios documentos PDF
 * Varios documentos PDF que se separan de un solo documento PDF
-* Portfolio PDF que incluye una interfaz de usuario independiente y varios documentos PDF y no PDF
-* documento XDP montado a partir de varios documentos XDP
-* documento XDP que contiene fragmentos XML insertados dinámicamente en un documento XDP
-* documento PDF que empaqueta un documento XDP
+* PORTFOLIO PDF que incluye una interfaz de usuario independiente y varios documentos PDF y no PDF
+* Documento XDP montado a partir de varios documentos XDP
+* Documento XDP que contiene fragmentos XML insertados dinámicamente en un documento XDP
+* DOCUMENTO PDF que empaqueta un documento XDP
 * Archivos XML que informan sobre las características de un documento PDF. Las características de los informes incluyen texto, comentarios, datos de formulario, archivos adjuntos, archivos utilizados en Portfolio PDF, marcadores y propiedades PDF. Las propiedades PDF incluyen propiedades de formulario, rotación de página y autor de documento.
 
 Puede utilizar DDX para aumentar los documentos PDF como parte del ensamblado o desmontaje de documento. Puede especificar cualquier combinación de los siguientes efectos:
@@ -111,7 +111,7 @@ El servicio Signature accede a los certificados y las credenciales almacenados e
 
 El servicio Cifrado le permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Puede cifrar todo el documento PDF (incluido su contenido, metadatos y archivos adjuntos), todo lo que no sea sus metadatos o solo los archivos adjuntos. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe especificar la contraseña abierta para que el documento se pueda ver en Adobe Reader o Acrobat. Si un documento PDF está cifrado con un certificado, el usuario debe descifrar el documento PDF con una clave privada (certificado). La clave privada utilizada para descifrar el documento PDF debe corresponder a la clave pública utilizada para cifrarlo.
 
-### Reader Extension Service {#reader-extension-service}
+### Servicio de extensión de Reader {#reader-extension-service}
 
 El servicio Extensiones de Reader permite a su organización compartir fácilmente documentos PDF interactivos al ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales. El servicio Reader Extensions funciona con Adobe Reader 7.0 o posterior. El servicio agrega derechos de uso a un documento PDF. Esta acción activa funciones que normalmente no están disponibles cuando se abre un documento PDF con Adobe Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no necesitan software o complementos adicionales para trabajar con documentos habilitados para derechos.
 
@@ -128,7 +128,7 @@ Cuando se agregan los derechos de uso correspondientes a los documentos PDF, los
 
 Estas funciones especiales de usuario se activan automáticamente cuando se abre un documento PDF con derechos activados en Adobe Reader. Cuando el usuario ha terminado de trabajar con un documento con derechos activados, estas funciones se desactivan de nuevo en Adobe Reader. Permanecen desactivados hasta que el usuario recibe otro documento PDF con derechos activados.
 
-De forma predeterminada, el servicio DocAssurance no está disponible para su uso. Para configurar el servicio DocAssurance, consulte [Configuración de los servicios](/help/forms/using/install-configure-document-services.md)de Documento.
+De forma predeterminada, el servicio DocAssurance no está disponible para su uso. Para configurar el servicio DocAssurance, consulte [Configuración de los servicios de Documento](/help/forms/using/install-configure-document-services.md).
 
 ## Enviar al servicio de impresión {#send-to-printer-service}
 

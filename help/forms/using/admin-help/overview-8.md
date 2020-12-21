@@ -24,16 +24,16 @@ Output permite combinar datos de formulario XML con un diseño de formulario cre
 
 Puede utilizar la página Salida en la consola de administración para administrar el servicio Output. La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó mediante la API de formularios AEM. La configuración que se realiza mediante el SDK de formularios AEM anula la configuración establecida mediante la consola de administración.
 
-Para obtener información adicional sobre el servicio Output, consulte [Referencia](https://www.adobe.com/go/learn_aemforms_services_61)de servicios.
+Para obtener información adicional sobre el servicio Output, consulte [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_61).
 
 En las páginas Salida de la consola de administración, puede realizar varias tareas:
 
-* Especifique conjuntos de caracteres para la internacionalización. (Consulte [Cambio del conjunto](/help/forms/using/admin-help/change-character-set.md#change-the-character-set)de caracteres).
-* Especifique rutas absolutas y relativas para direcciones URL, URI, XCI y ubicaciones de archivos. (Consulte [Especificación de ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
-* Configurar tamaños y directivas de caché. (Consulte [Especificación del modo](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) de caché y [Configuración de la configuración](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings)de caché).
-* Publique fuentes en el servidor de aplicaciones. (Consulte [Disponibilidad](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available)de fuentes).
-* Especifique las fuentes que desea incrustar. (Consulte [Especificación de fuentes para incrustar](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed)).
-* Especifique las opciones de configuración XCI. (Consulte [Especificación de opciones](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)de configuración XCI).
-* Especifique la configuración de seguridad. (Consulte [Especificación de la configuración](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings)de seguridad).
+* Especifique conjuntos de caracteres para la internacionalización. (Consulte [Cambio del conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
+* Especifique rutas absolutas y relativas para direcciones URL, URI, XCI y ubicaciones de archivos. (Consulte [Especificar ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+* Configurar tamaños y directivas de caché. (Consulte [Especificación del modo de caché](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) y [Configuración de la configuración de caché](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
+* Publique fuentes en el servidor de aplicaciones. (Consulte [Disponibilidad de fuentes](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available)).
+* Especifique las fuentes que desea incrustar. (Consulte [Especificar fuentes para incrustar](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
+* Especifique las opciones de configuración XCI. (Consulte [Especificación de opciones de configuración XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)).
+* Especifique la configuración de seguridad. (Consulte [Especificar configuración de seguridad](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
 
 Después de cambiar la configuración, haga clic en Guardar para aplicarla a Output. No es necesario reiniciar el servidor para que los cambios surtan efecto, pero es posible que tenga que reiniciar el servicio Output al configurar la configuración de la caché.

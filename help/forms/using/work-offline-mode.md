@@ -25,13 +25,13 @@ Tiene el inicio de trabajar en la aplicación de AEM Forms sincronizando la apli
 
 Para obtener más información sobre cómo sincronizar la aplicación, consulte [Sincronización de la aplicación](/help/forms/using/sync-app.md).
 
-## Hacer que Forms esté disponible sin conexión {#making-forms-available-offline}
+## Cómo hacer que Forms esté disponible sin conexión {#making-forms-available-offline}
 
 Al sincronizar la aplicación con el servidor de AEM Forms, los formularios se descargan en el dispositivo móvil. Sin embargo, de forma predeterminada, los archivos adjuntos asociados al formulario no se descargan. Esto implica que si está en línea, puede realizar la vista de los archivos adjuntos. Sin embargo, para asegurarse de que puede realizar la vista de los datos adjuntos en el modo sin conexión, cambie la configuración predeterminada de la aplicación.
 
-Para asegurarse de que los archivos adjuntos asociados se descargan con cada formulario, establezca Buscar archivos adjuntos en Activado. Para obtener más información, consulte [Actualización de la configuración](/help/forms/using/update-general-settings.md)general.
+Para asegurarse de que los archivos adjuntos asociados se descargan con cada formulario, establezca Buscar archivos adjuntos en Activado. Para obtener más información, consulte [Actualización de la configuración general](/help/forms/using/update-general-settings.md).
 
-Dado que la descarga de datos en el dispositivo móvil puede afectar al rendimiento del dispositivo, de forma predeterminada, el ajuste Buscar archivos adjuntos se establece en OFF. Los archivos adjuntos se recuperan en el dispositivo para cualquier tarea que se descargue del servidor después de actualizar la configuración a ON. En el modo sin conexión, un usuario puede trabajar en todas las tareas que se descarguen en el dispositivo después de definir las opciones de **Buscar archivos adjuntos** en Activado.
+Dado que la descarga de datos en el dispositivo móvil puede afectar al rendimiento del dispositivo, de forma predeterminada, el ajuste Buscar archivos adjuntos se establece en OFF. Los archivos adjuntos se recuperan en el dispositivo para cualquier tarea que se descargue del servidor después de actualizar la configuración a ON. En el modo sin conexión, un usuario puede trabajar en todas las tareas que se descarguen en el dispositivo después de configurar las opciones **Buscar archivos adjuntos** en Activado.
 
 ## Configuración del servicio sin conexión para la aplicación de AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -39,7 +39,7 @@ El servicio sin conexión de la aplicación de AEM Forms identifica los recursos
 
 Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms:
 
-1. En la instancia de creación, vaya a **Adobe Experience Manager** >**Herramientas** > **Forms** > **Configurar Forms App Offline Service**.
+1. En la instancia de autor, vaya a **Adobe Experience Manager** >**Herramientas** > **Forms** > **Configurar el servicio sin conexión de la aplicación Forms**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
@@ -50,4 +50,4 @@ Para configurar el componente sin conexión del lado del servidor de la aplicaci
    * **Validez** de caché: Especifica el período de validez de la caché sin conexión del lado del servidor.
    * **Rutas** de observación de recursos: Especifica las rutas en las que el servicio sin conexión supervisa los cambios de recursos. Si se produce algún cambio en las rutas especificadas, se actualiza la caché sin conexión de todos los formularios dependientes. Por ejemplo, `/etc/clientlibs/fd,/content/dam/images`.
 
-1. En la ficha Caché **de recursos** manual, especifique las dependencias de formularios que el servicio sin conexión no puede identificar. Puede especificar recursos como imágenes cargadas desde JavaScript. La aplicación de AEM Forms también descargará estos recursos para el modo sin conexión.
+1. En la ficha **Caché de recursos manual**, especifique las dependencias de formularios que el servicio sin conexión no puede identificar. Puede especificar recursos como imágenes cargadas desde JavaScript. La aplicación de AEM Forms también descargará estos recursos para el modo sin conexión.

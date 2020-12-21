@@ -240,4 +240,4 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
  </tbody>
 </table>
 
-Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres similares a las API [de JavaScript de formularios](https://adobe.com/go/learn_aemforms_javascript_api_63)adaptables.
+Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres similares a [API de JavaScript de formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).

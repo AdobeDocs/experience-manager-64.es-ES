@@ -34,15 +34,15 @@ La siguiente imagen muestra los componentes y protocolos que se utilizan en una 
 
 AEM Forms es altamente personalizable y puede funcionar en muchos entornos diferentes. Es posible que algunas de las recomendaciones no sean aplicables a su organización.
 
-## Capa de transporte segura {#secure-transport-layer}
+## Capa de transporte seguro {#secure-transport-layer}
 
 Las vulnerabilidades de seguridad del nivel de transporte están entre las primeras amenazas para cualquier servidor de aplicaciones orientado a Internet o a la intranet. Esta sección describe el proceso de endurecimiento de los hosts de la red contra estas vulnerabilidades. Se ocupa de la segmentación de red, el endurecimiento de la pila del Protocolo de control de transmisión/Protocolo de Internet (TCP/IP) y el uso de firewalls para la protección del host.
 
-### Límite de los extremos abiertos  {#limit-open-endpoints}
+### Límite de los extremos abiertos {#limit-open-endpoints}
 
 Una organización puede tener un servidor de seguridad externo para restringir el acceso entre un usuario final y la granja de publicaciones de AEM Forms. La organización también puede tener un servidor de seguridad interno para limitar el acceso entre un conjunto de servidores de publicación y otros elementos de la organización (por ejemplo, instancia de autor, instancia de procesamiento, bases de datos). Permitir servidores de seguridad para habilitar el acceso a un número limitado de direcciones URL de AEM Forms para usuarios finales y dentro de los elementos de la organización:
 
-#### Configurar servidor de seguridad externo  {#configure-external-firewall}
+#### Configurar firewall externo {#configure-external-firewall}
 
 Puede configurar un servidor de seguridad externo para permitir que determinadas direcciones URL de AEM Forms tengan acceso a Internet. Se requiere acceso a estas direcciones URL para rellenar o enviar un formulario adaptable, HTML5, una carta de administración de correspondencia o para iniciar sesión en un servidor de AEM Forms:
 
@@ -96,7 +96,7 @@ Puede configurar un servidor de seguridad externo para permitir que determinadas
  </tbody>
 </table>
 
-#### Configurar servidor de seguridad interno  {#configure-internal-firewall}
+#### Configurar firewall interno {#configure-internal-firewall}
 
 Puede configurar el cortafuegos interno para permitir que determinados componentes de AEM Forms (por ejemplo, instancia de autor, instancia de procesamiento, bases de datos) se comuniquen con el conjunto de servidores de publicación y otros componentes internos mencionados en el diagrama de topología:
 
@@ -121,7 +121,7 @@ Puede configurar el cortafuegos interno para permitir que determinados component
  </tbody>
 </table>
 
-#### Configurar permisos de repositorio y listas de control de acceso (ACL) {#setup-repository-permissions-and-access-control-lists-acls}
+#### Configurar permisos del repositorio y listas de control de acceso (ACL) {#setup-repository-permissions-and-access-control-lists-acls}
 
 De forma predeterminada, los recursos disponibles en los nodos de publicación son accesibles para todos. El acceso de solo lectura está habilitado para todos los recursos. Se requiere para habilitar el acceso anónimo. Si tiene pensado restringir la vista de formularios y enviar el acceso solo a usuarios autenticados, utilice un grupo común para permitir que solo los usuarios autenticados tengan acceso de solo lectura a los recursos disponibles en los nodos de publicación. Las siguientes ubicaciones/directorios contienen recursos de formulario que requieren endurecimiento (acceso de solo lectura para usuarios autenticados):
 
@@ -129,11 +129,11 @@ De forma predeterminada, los recursos disponibles en los nodos de publicación s
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Administrar de forma segura los datos de los formularios  {#securely-handle-forms-data}
+## Administrar de forma segura los datos de formularios {#securely-handle-forms-data}
 
 AEM Forms almacena datos en ubicaciones predefinidas y carpetas temporales. Debe proteger los datos para evitar un uso no autorizado.
 
-### Configuración de la limpieza periódica de la carpeta temporal {#setup-periodic-cleanup-of-temporary-folder}
+### Configurar la limpieza periódica de la carpeta temporal {#setup-periodic-cleanup-of-temporary-folder}
 
 Cuando se configuran formularios para archivos adjuntos, componentes de verificación o previsualización, los datos correspondientes se almacenan en los nodos de publicación en /tmp/fd/. Los datos se purgan periódicamente. Puede modificar el trabajo de depuración de datos predeterminado para que sea más agresivo. Para modificar el trabajo programado para depurar datos, abra AEM consola web, abra la Tarea de limpieza temporal de Almacenamientos de AEM Forms y modifique la expresión Cron.
 
@@ -145,18 +145,18 @@ De forma predeterminada, la acción de envío del portal de formularios de formu
 
 Puede configurar el servicio de almacenamiento para que envíe mensajes a través del cable al clúster de procesamiento sin guardar nada localmente en el nodo de publicación. El clúster de procesamiento reside en una zona segura detrás del servidor de seguridad privado y los datos siguen siendo seguros.
 
-Utilice las credenciales del servidor de procesamiento para AEM servicio de configuración de DS para enviar datos desde el nodo de publicación al servidor de procesamiento. Se recomienda utilizar las credenciales de un usuario restringido no administrativo con acceso de lectura y escritura en el repositorio del servidor de procesamiento. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Utilice las credenciales del servidor de procesamiento para AEM servicio de configuración de DS para enviar datos desde el nodo de publicación al servidor de procesamiento. Se recomienda utilizar las credenciales de un usuario restringido no administrativo con acceso de lectura y escritura en el repositorio del servidor de procesamiento. Para obtener más información, consulte [Configuración de los servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Datos seguros gestionados por el modelo de datos de formulario (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Utilice cuentas de usuario con privilegios mínimos requeridos para configurar orígenes de datos para el modelo de datos de formulario (FDM). El uso de una cuenta administrativa puede proporcionar acceso abierto a los metadatos y a las entidades de esquema a usuarios no autorizados.\
 La integración de datos también proporciona métodos para autorizar solicitudes de servicio FDM. Puede insertar mecanismos de autorización previa y posterior a la ejecución para validar una solicitud. Las solicitudes de servicio se generan anteponiendo un formulario, enviando un formulario e invocando servicios a través de una regla.
 
-**Autorización previa al proceso:** Puede utilizar la autorización previa al proceso para validar la autenticidad de una solicitud antes de ejecutarla. Puede utilizar entradas, servicios y detalles de solicitud para permitir o detener la ejecución de la solicitud. Puede devolver una excepción de integración de datos OPERATION_ACCESS_DENIED si se detiene la ejecución. También puede modificar la solicitud del cliente antes de enviarla para su ejecución. Por ejemplo, cambiar la entrada y agregar información adicional.
+**Autorización previa al proceso:** puede utilizar la autorización previa al proceso para validar la autenticidad de una solicitud antes de ejecutarla. Puede utilizar entradas, servicios y detalles de solicitud para permitir o detener la ejecución de la solicitud. Puede devolver una excepción de integración de datos OPERATION_ACCESS_DENIED si se detiene la ejecución. También puede modificar la solicitud del cliente antes de enviarla para su ejecución. Por ejemplo, cambiar la entrada y agregar información adicional.
 
-**Autorización posterior al proceso:** Puede utilizar la autorización posterior al proceso para validar y controlar los resultados antes de devolverlos al solicitante. También puede filtrar, eliminar e insertar datos adicionales en los resultados.
+**Autorización posterior al proceso:** puede utilizar la autorización posterior al proceso para validar y controlar los resultados antes de devolverlos al solicitante. También puede filtrar, eliminar e insertar datos adicionales en los resultados.
 
-### Limitar el acceso de los usuarios {#limit-user-access}
+### Limitar el acceso del usuario {#limit-user-access}
 
 Se requiere un conjunto diferente de usuarios para crear, publicar y procesar instancias. No ejecute ninguna instancia con credenciales de administrador.
 
@@ -188,7 +188,7 @@ Se requiere un conjunto diferente de usuarios para crear, publicar y procesar in
 * Para casos de uso de almacenamiento y envío remotos, cree un usuario con permisos de lectura, creación y modificación en la ruta de contenido/formulario/fp del repositorio crx.
 * Añada el usuario a un grupo de usuarios de flujo de trabajo para permitir que un usuario utilice AEM aplicaciones de bandeja de entrada.
 
-## Elementos de intranet seguros de un entorno AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
+## Elementos de intranet seguros de un entorno de AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
 
 En general, los clústeres de procesamiento y el complemento Forms Workflow (AEM Forms en JEE) se ejecutan detrás de un servidor de seguridad. Así que se consideran seguros. Puede seguir realizando algunos pasos para endurecer estos entornos:
 
@@ -196,6 +196,6 @@ En general, los clústeres de procesamiento y el complemento Forms Workflow (AEM
 
 Un clúster de procesamiento se ejecuta en el modo de creación, pero no lo utiliza para actividades de desarrollo. No permita que un usuario normal se incluya en los grupos de autores de contenido y usuarios de formularios de un clúster de procesamiento.
 
-### UTILICE AEM prácticas recomendadas para proteger un entorno de AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### UTILICE AEM prácticas recomendadas para asegurar un entorno de AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Este documento proporciona instrucciones específicas para AEM Forms entorno. Debe asegurarse de que la instalación de AEM subyacente es segura cuando se implementa. Para obtener instrucciones detalladas, consulte [AEM documentación de la lista](/help/sites-administering/security-checklist.md) de comprobación de seguridad.
+Este documento proporciona instrucciones específicas para AEM Forms entorno. Debe asegurarse de que la instalación de AEM subyacente es segura cuando se implementa. Para obtener instrucciones detalladas, consulte la documentación de [AEM Security Checklist](/help/sites-administering/security-checklist.md).

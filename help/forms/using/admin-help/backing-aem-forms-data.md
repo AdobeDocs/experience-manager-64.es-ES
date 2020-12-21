@@ -38,20 +38,20 @@ Si la base de datos se está ejecutando en modo de registro, como se describe en
 >
 >Los archivos a los que no se hace referencia pueden persistir en el directorio GDS después del proceso de recuperación. Esta es una limitación conocida en este momento.
 
-## Realice una copia de seguridad de la base de datos, GDS, AEM repositorio y los directorios raíz del Almacenamiento de contenido {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Realice una copia de seguridad de la base de datos, GDS, el repositorio de AEM y los directorios raíz del Almacenamiento de contenido {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 Debe colocar AEM formularios en el modo de copia de seguridad segura (instantánea) o en el modo de copia de seguridad móvil (cobertura continua). Antes de definir AEM formularios para introducir cualquiera de los modos de copia de seguridad, asegúrese de lo siguiente:
 
 * Compruebe la versión del sistema y registre los parches o actualizaciones que se aplicaron desde la última copia de seguridad de la imagen del sistema completa.
-* Si utiliza copias de seguridad móviles o en modo de instantánea, asegúrese de que la base de datos está configurada con la configuración de registro correcta para permitir las copias de seguridad en caliente de la base de datos. (Consulte [AEM base de datos](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)de formularios).
+* Si utiliza copias de seguridad móviles o en modo de instantánea, asegúrese de que la base de datos está configurada con la configuración de registro correcta para permitir las copias de seguridad en caliente de la base de datos. (Consulte [AEM base de datos de formularios](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Además de esto, observe las siguientes pautas para el proceso de backup/restore.
 
-* Realice una copia de seguridad del directorio GDS mediante un sistema operativo disponible o una utilidad de copia de seguridad de terceros. (Consulte [Ubicación](/help/forms/using/admin-help/files-back-recover.md#gds-location)de GDS.)
-* (Opcional) Realice una copia de seguridad del directorio raíz de Almacenamiento de contenido mediante un sistema operativo disponible o una herramienta de respaldo y de terceros. (Consulte Ubicación raíz [de Almacenamiento de contenido (entorno independiente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o Ubicación raíz de Almacenamiento de [contenido (entorno en clúster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Realice una copia de seguridad de las instancias de creación y publicación (copia de seguridad de crx -repositorio).
+* Realice una copia de seguridad del directorio GDS mediante un sistema operativo disponible o una utilidad de copia de seguridad de terceros. (Consulte [Ubicación de GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location)).
+* (Opcional) Realice una copia de seguridad del directorio raíz de Almacenamiento de contenido mediante un sistema operativo disponible o una herramienta de respaldo y de terceros. (Consulte [Ubicación raíz del Almacenamiento de contenido (entorno independiente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Ubicación raíz del Almacenamiento de contenido (entorno agrupado)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Realizar copia de seguridad   instancias de creación y publicación (copia de seguridad de crx -repositorio).
 
-   Para realizar una copia de seguridad del entorno de la solución de administración de correspondencia, realice los pasos en las instancias de creación y publicación como se describe en [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
+   Para realizar una copia de seguridad del entorno de la solución de administración de correspondencia, realice los pasos en las instancias de creación y publicación como se describe en [Backup y Restore](/help/sites-administering/backup-and-restore.md).
 
    Tenga en cuenta los siguientes puntos al realizar una copia de seguridad de las instancias de autor y publicación:
 
@@ -60,9 +60,9 @@ Además de esto, observe las siguientes pautas para el proceso de backup/restore
    * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos de forma local. No deben implementar ningún proceso nuevo durante la fase de backup.
    * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total que se tarda en realizar una copia de seguridad de todos los datos en formularios AEM (DB, GDS, repositorio AEM y cualquier otro dato personalizado adicional).
 
-Debe realizar una copia de seguridad de la base de datos de formularios AEM, incluidos los registros de transacciones. (Consulte [AEM base de datos](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)de formularios). Para obtener más información, consulte el artículo correspondiente de la base de datos:
+Debe realizar una copia de seguridad de la base de datos de formularios AEM, incluidos los registros de transacciones. (Consulte [AEM base de datos de formularios](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obtener más información, consulte el artículo correspondiente de la base de datos:
 
-* [Oracle Backup and Recovery para formularios AEM](https://www.adobe.com/go/kb403624)
+* [Backup y recuperación de oracle para formularios AEM](https://www.adobe.com/go/kb403624)
 * [Respaldo y recuperación de MySQL para formularios AEM](https://www.adobe.com/go/kb403625)
 * [Copias de seguridad y recuperación de Microsoft SQL Server para formularios AEM](https://www.adobe.com/go/kb403623)
 * [Backup y recuperación de DB2 para formularios AEM](https://www.adobe.com/go/kb403626)
@@ -73,7 +73,7 @@ Estos artículos proporcionan orientación sobre las funciones básicas de la ba
 >
 >La copia de seguridad de la base de datos debe estar completa antes de comenzar a realizar la copia de seguridad del GDS. Si no se completa la copia de seguridad de la base de datos, los datos no estarán sincronizados.
 
-### Introducción de los modos de copia de seguridad {#entering-the-backup-modes}
+### Introducción de los modos de backup {#entering-the-backup-modes}
 
 Puede utilizar la consola de administración, el comando LCBackupMode o la API disponible con la instalación de formularios AEM para entrar y salir de los modos de copia de seguridad. Tenga en cuenta que para el respaldo móvil (cobertura continua), la opción de la consola de administración no está disponible; debe utilizar la opción de línea de comandos o la API. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
@@ -91,15 +91,15 @@ Puede utilizar la consola de administración, el comando LCBackupMode o la API d
 
 **Uso de la opción de línea de comandos para entrar en el modo de copia de seguridad segura**
 
-Puede utilizar las secuencias de comandos de la interfaz de la línea de comandos `LCBackupMode` para colocar AEM formularios en modo de copia de seguridad seguro.
+Puede utilizar las secuencias de comandos `LCBackupMode` de la interfaz de la línea de comandos para colocar AEM formularios en modo de copia de seguridad seguro.
 
 1. Establezca ADOBE_LIVECYCLE y inicio en el servidor de aplicaciones.
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. En función del sistema operativo, edite la secuencia de comandos `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados adecuados para el sistema.
+1. Vaya a la carpeta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Según el sistema operativo, edite la secuencia de comandos `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar valores predeterminados que sean adecuados para el sistema.
 1. En el símbolo del sistema, ejecute el siguiente comando en una sola línea:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*nombredehost *`] [-port=`*número* de puerto `] [-user=`*nombre de usuario *`] [-password=`*contraseña* `] [-label=`*nombredelnombredehost *`] [-timeout=`*segundos* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*nombredehost *`] [-port=`*número* puerto `] [-user=`*nombre *de usuario`] [-password=`*contraseña* `] [-label=`*nombreetiqueta *`]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nombre de host* `] [-port=`*número de puerto* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `] [-label=`*nombre de etiqueta* `] [-timeout=`*segundos* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* &lt;a 10/>`]`
 
    En los comandos anteriores, los marcadores de posición se definen de la siguiente manera:
 
@@ -117,7 +117,7 @@ Puede utilizar las secuencias de comandos de la interfaz de la línea de comando
 
    Para obtener más información sobre la interfaz de la línea de comandos al modo de copia de seguridad, consulte el archivo Léame en el directorio BackupRestoreCommand.
 
-### Abandono de los modos de copia de seguridad {#leaving-backup-modes}
+### Abandonar modos de backup {#leaving-backup-modes}
 
 Puede utilizar la consola de administración o la opción de línea de comandos para dejar los modos de copia de seguridad.
 
@@ -133,8 +133,8 @@ Para utilizar la Consola de administración para quitar AEM formularios del modo
 
 Puede utilizar la interfaz de la línea de comandos para quitar AEM formularios del modo de copia de seguridad segura (modo de instantánea) o para finalizar la sesión actual del modo de copia de seguridad (modo móvil). Tenga en cuenta que no puede utilizar la consola de administración para salir del modo de copia de seguridad móvil. En el modo de copia de seguridad móvil, los controles Utilidades de copia de seguridad de la Consola de administración están desactivados. Debe utilizar la llamada de API o el comando LCBackupMode.
 
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. En función del sistema operativo, edite la secuencia de comandos `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados adecuados para el sistema.
+1. Vaya a la carpeta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Según el sistema operativo, edite la secuencia de comandos `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar valores predeterminados que sean adecuados para el sistema.
 
    >[!NOTE]
    >
@@ -142,8 +142,8 @@ Puede utilizar la interfaz de la línea de comandos para quitar AEM formularios 
 
 1. Ejecute el siguiente comando en una sola línea:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nombre *de host`] [-port=`*número* de puerto `] [-user=`*nombre de usuario *`] [-password=`*contraseña* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nombre *de host`] [-port=`*número* de puerto `] [-user=`*nombre *de usuario`] [-password=`*contraseña* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
 
       En los comandos anteriores, los marcadores de posición se definen de la siguiente manera:
 

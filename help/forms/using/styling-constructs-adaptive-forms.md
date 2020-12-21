@@ -24,7 +24,7 @@ Conocimiento de CSS y del marco LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo lista clases css de formularios adaptables disponibles al público. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con el editor [de](themes.md)temas.
+El artículo lista clases css de formularios adaptables disponibles al público. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como cuadros de diálogo y barras de estado que muestran advertencias, está fuera del alcance de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Menos) solo cuando no pueda aplicar estilo a los componentes con [editor de temas](themes.md).
 
 ## Personalización de estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 
@@ -63,7 +63,7 @@ Para aplicar un estilo a un formulario adaptable, abra el formulario adaptable e
 
 Los componentes analizados en este artículo tienen sus clases CSS predefinidas. Puede editar las variables para modificar los estilos en las clases CSS. Como alternativa, puede volver a escribir toda la clase. En esta sección se describen las clases de los componentes y los estilos que se pueden modificar mediante variables.
 
-## Estilo de Contenedor {#container-styling}
+## Estilo de contenedor {#container-styling}
 
 Un contenedor es el componente de nivel superior. Otros paneles y campos se encuentran debajo del componente contenedor.
 
@@ -139,7 +139,7 @@ Los campos incluyen etiquetas, utilidades, descripción de la ayuda (descripció
 
 ## Estilo de etiqueta {#label-styling}
 
-La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **izquierda** o **arriba** , dependiendo de si la etiqueta está en la parte superior o izquierda.
+El elemento HTML **label** utilizado para el campo incluye las clases **left** o **top** según si la etiqueta está en la parte superior o en la izquierda.
 
 <table> 
  <tbody> 
@@ -179,11 +179,11 @@ La **etiqueta** de elemento HTML utilizada para el campo incluye las clases **iz
  </tbody> 
 </table>
 
-Las reglas CSS de la etiqueta se aplican mediante la etiqueta **guideFieldLabel** . Si es un autor, sobrescriba esta regla para que los cambios personalizados sean visibles.
+Las reglas CSS de la etiqueta se aplican mediante la etiqueta **guideFieldLabel**. Si es un autor, sobrescriba esta regla para que los cambios personalizados sean visibles.
 
 ## Estilo de utilidades {#widgets-styling}
 
-Según el tipo, las utilidades también incluyen clases. Normalmente, los widgets incluyen la `guideFieldWidget` clase. Los widgets que se envían con HTML normalmente utilizan la entrada y selección de elementos HTML estándar. El estilo se realiza en consecuencia. No se puede aplicar estilo a una utilidad personalizada cambiando las variables.
+Según el tipo, las utilidades también incluyen clases. Normalmente, los widgets incluyen la clase `guideFieldWidget`. Los widgets que se envían con HTML normalmente utilizan la entrada y selección de elementos HTML estándar. El estilo se realiza en consecuencia. No se puede aplicar estilo a una utilidad personalizada cambiando las variables.
 
 <table> 
  <tbody> 
@@ -330,7 +330,7 @@ Un autor puede especificar el contenido de la Ayuda en los campos mediante los c
 
 ## Términos y condiciones {#terms-and-conditions}
 
-La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y condiciones. Puede personalizar la utilidad mediante las variables descritas en la tabla siguiente.
+La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y condiciones. Puede personalizar la utilidad con las variables descritas en la tabla siguiente.
 
 <table> 
  <tbody> 
@@ -353,7 +353,7 @@ La utilidad Términos y condiciones (TnC `` ``) permite especificar términos y 
 
 Los botones también son widgets. Sin embargo, su estilo es ligeramente distinto al de los widgets. En los formularios adaptables, cualquiera de los siguientes elementos constituye un botón:
 
-* [inputtype = text]
+* input[type = text]
 * botón
 * elemento con clase .button
 
@@ -640,7 +640,7 @@ El siguiente es el código HTML del elemento de navegador de fichas (similar a l
 
 `</div>`
 
-Puede cambiar el estilo del navegador mediante reglas CSS que seleccionan los elementos con selectores **descendientes** . Por ejemplo, para agregar un estilo de decoración de texto a la etiqueta de anclaje:
+Puede cambiar el estilo del navegador mediante reglas CSS que seleccionan los elementos mediante selectores **descendant**. Por ejemplo, para agregar un estilo de decoración de texto a la etiqueta de anclaje:
 
 Navegador de fichas en la parte superior:
 
@@ -720,7 +720,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
 
 >[!NOTE]
 >
->Puede cambiar el icono de un navegador concreto proporcionando una clase CSS en el panel de creación, como por ejemplo &lt;CLASS_NAME>. Debe agregar un **&lt;CLASS_NAME>_nav** para el icono del navegador.
+>Puede cambiar el icono de un navegador concreto proporcionando una clase CSS en el panel de creación, como por ejemplo &lt;CLASS_NAME>. Agregue un **&lt;CLASS_NAME>_nav** para el icono del navegador.
 
 <table> 
  <tbody> 
@@ -830,7 +830,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-font-color</code></p> </td> 
-   <td><p>Color de fuente cuando el panel está enfocado (centrado)</p> </td> 
+   <td><p>Color de fuente cuando el panel está enfocado (enfocado)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td> 
@@ -932,7 +932,7 @@ Un panel incluye una barra de herramientas opcional y su contenido.
   </tr> 
   <tr> 
    <td><p><code>panel-help-bg-color</code></p> </td> 
-   <td><p>Color de fondo de la ayuda del panel</p> </td> 
+   <td><p>Color de fondo para la ayuda del panel</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>panel-help-border-indicator-color</code></p> </td> 
@@ -941,13 +941,13 @@ Un panel incluye una barra de herramientas opcional y su contenido.
  </tbody> 
 </table>
 
-El nodo del panel se divide en navegadores y contenido. No `` `` hay un componente de estilo independiente para el contenido. Las variables descritas se aplican tanto al navegador como al contenido.
+El nodo del panel se divide en navegadores y contenido. No existe `` `` un componente de estilo independiente para el contenido. Las variables descritas se aplican tanto al navegador como al contenido.
 
 &amp;ast;El panel superior (RootPanel) no tiene esta clase.
 
 ## Estilo móvil {#mobile-styling}
 
-## Header bar {#header-bar}
+## Barra de encabezado {#header-bar}
 
 Estas variables influyen en la barra de encabezado que está visible en un dispositivo móvil o en dispositivos de pantalla pequeña que contienen el título del panel y los navegadores siguiente y posterior.
 

@@ -48,7 +48,7 @@ En cada página de flujo de trabajo de Forms de la consola de administración, p
    <td><p>flujo de trabajo de formularios</p></td> 
    <td>
     <ul>
-     <li><p>Procesos activos de Vista</p></li>
+     <li><p>Procesos activos de vista</p></li>
      <li><p>Vista y trabajo con instancias de procesos, operaciones y tareas</p></li>
      <li><p>Suspender, finalizar y reintentar instancias de proceso, subprocesos y operaciones</p></li>
     </ul></td> 
@@ -63,7 +63,7 @@ En cada página de flujo de trabajo de Forms de la consola de administración, p
    <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Búsqueda de instancias de proceso</a></p></td> 
   </tr> 
   <tr>
-   <td><p>Búsqueda de Tareas</p></td> 
+   <td><p>Búsqueda de tareas</p></td> 
    <td>
     <ul>
      <li><p>Buscar tareas por usuario o ID de tarea</p></li>

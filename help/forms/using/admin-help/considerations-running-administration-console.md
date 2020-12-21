@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Estos son algunos aspectos a tener en cuenta al ejecutar la Consola de administración:
 
-* Si accede a la consola de administración mediante la URL `https://*[hostname]*:*[port]*/adminui`, el nombre de host especificado no puede contener caracteres de subrayado. De lo contrario, es posible que los vínculos a algunas áreas de la consola de administración no funcionen correctamente.
+* Si accede a la consola de administración mediante la dirección URL `https://*[hostname]*:*[port]*/adminui`, el nombre de host especificado no puede contener caracteres de subrayado. De lo contrario, es posible que los vínculos a algunas áreas de la consola de administración no funcionen correctamente.
 * Si ejecuta la consola de administración en el Explorador de Windows en un SO japonés, puede solucionar estos problemas:
 
    * Al hacer clic en un vínculo regresa a la página de inicio de sesión en lugar del vínculo esperado.

@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Aspectos básicos de la garantía de calidad {#qna-essentials}
+# QnA Essentials {#qna-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de foro de preguntas y respuestas (QnA).
 
@@ -48,7 +48,7 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td> propiedades</td> 
-   <td>Consulte la función Foro <a href="working-with-qna.md">QnA</a></td> 
+   <td>Consulte <a href="working-with-qna.md">Función de foro QnA</a></td> 
   </tr>
  </tbody>
 </table>
@@ -65,21 +65,21 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ### Función Preguntas y respuestas {#qna-function}
 
-Una estructura de sitio de comunidad que incluya la función [](functions.md#qna-function) QnA tendrá un componente `QnA` configurado, así como una configuración que afecta a la moderación y el etiquetado. La función QnA admite la identificación de un grupo [de usuarios miembros con](users.md#privileged-members-group)privilegios.
+Una estructura de sitio de comunidad que incluya la [función QnA](functions.md#qna-function) tendrá un componente `QnA` configurado, así como configuraciones que afectan a la moderación y el etiquetado. La función QnA permite identificar un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
-### Acceso a las publicaciones del foro de control de calidad (UGC) {#accessing-qna-forum-posts-ugc}
+### Acceso a Publicaciones de foro de QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Comunidades, el uso de un almacén [](working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio
+* [Elementos esenciales](srp-and-ugc.md)  de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
 

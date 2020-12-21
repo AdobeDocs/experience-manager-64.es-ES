@@ -25,12 +25,12 @@ Los formularios se descargan en la aplicación y están disponibles sin conexió
 
 Para sincronizar el formulario en la aplicación de AEM Forms:
 
-1. En la instancia de autor, seleccione un formulario y haga clic en Propiedades **de Vista**.
+1. En la instancia de autor, seleccione un formulario y haga clic en **Propiedades de la Vista**.
 
-1. En la página de propiedades, haga clic en **Avanzadas.**
-1. En Avanzadas, active la opción: **Sincronice con la aplicación** de AEM Forms y toque **Guardar**.
+1. En la página de propiedades, haga clic en **Avanzado.**
+1. En Avanzadas, active la opción: **Sincronice con la aplicación de AEM Forms** y toque **Guardar**.
 
-Para sincronizar varios formularios, en la instancia de creación, seleccione varios formularios en el administrador de formularios y toque **Sincronizar con la aplicación** de AEM Forms. Cuando se publica el formulario, la aplicación de AEM Forms se puede conectar al servidor de publicación y recuperar los formularios.
+Para sincronizar varios formularios, en la instancia de creación, seleccione varios formularios en el administrador de formularios y toque **Sincronizar con la aplicación de AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms se puede conectar al servidor de publicación y recuperar los formularios.
 
 >[!NOTE]
 >

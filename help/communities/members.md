@@ -22,18 +22,18 @@ ht-degree: 3%
 
 ## Información general {#overview}
 
-Las funciones de AEM Communities suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad en el entorno de publicación. Su registro de usuario solo debe existir en el entorno de publicación y se les suele llamar *miembros* para distinguirlos de *los usuarios* registrados en el entorno de creación.
+Las funciones de AEM Communities suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad en el entorno de publicación. Su registro de usuario sólo debe existir en el entorno de publicación y se les conoce comúnmente como *miembros* para distinguirlos de *usuarios* registrados en el entorno de creación.
 
-### Miembros (usuarios) en la publicación {#members-users-on-publish}
+### Miembros (usuarios) en Publicar {#members-users-on-publish}
 
-Mediante las consolas Miembros y Grupos de Comunidades, los miembros y grupos miembros registrados en el entorno de *publicación* podrán crearse y gestionarse desde el entorno de *creación* . Esto solo es posible cuando el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel está habilitado.
+Mediante las consolas Miembros y grupos de comunidades, los miembros y grupos de miembros registrados en el entorno *publish* pueden crearse y administrarse desde el entorno *author*. Esto solo es posible cuando el [servicio de túnel](deploy-communities.md#tunnel-service-on-author) está habilitado.
 
-### Usuarios en el autor {#users-on-author}
+### Usuarios en Autor {#users-on-author}
 
-Para administrar usuarios y grupos registrados en el entorno de *creación* , es necesario utilizar la consola de seguridad de la plataforma:
+Para administrar usuarios y grupos registrados en el entorno *author*, es necesario utilizar la consola de seguridad de la plataforma:
 
-* Desde la navegación global seleccione `Tools, Security, Users`
-* Desde la navegación global seleccione `Tools, Security, Groups`
+* En la navegación global, seleccione `Tools, Security, Users`
+* En la navegación global, seleccione `Tools, Security, Groups`
 
 >[!NOTE]
 >
@@ -47,25 +47,25 @@ En el entorno de creación, para llegar a la consola Miembros para administrar l
 
 >[!CAUTION]
 >
->No será posible utilizar la consola Miembros si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
+>No será posible utilizar la consola Miembros si el [servicio de túnel](deploy-communities.md#tunnel-service-on-author) no está habilitado.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
 ### Búsqueda {#search-features}
 
-Seleccione el icono del panel lateral en el lado izquierdo del `Members` encabezado para abrir el panel lateral de búsqueda.
+Seleccione el icono del panel lateral en el lado izquierdo del encabezado `Members` para abrir el panel lateral de búsqueda.
 
 ![chlimage_1-120](assets/chlimage_1-120.png) ![chlimage_1-121](assets/chlimage_1-121.png)
 
-Seleccione el icono de búsqueda en la parte izquierda del encabezado para `Members` alternar el panel lateral de búsqueda cerrado.
+Seleccione el icono de búsqueda en la parte izquierda del encabezado `Members` para alternar el panel lateral de búsqueda cerrado.
 
-### Estadísticas de los miembros {#member-statistics}
+### Estadísticas de miembros {#member-statistics}
 
-Las columnas que se muestran `Views`, `Posts`y `Follows`se actualizan cuando el usuario es miembro de uno o varios sitios de la comunidad con Adobe Analytics `Likes` habilitado [](sites-console.md#analytics).
+Las columnas que muestran `Views`, `Posts`, `Follows`y `Likes` se actualizan cuando el usuario es miembro de uno o más sitios de comunidad con Adobe Analytics [habilitado](sites-console.md#analytics).
 
 ### Exportar CSV {#export-csv}
 
-Si selecciona el `Export CSV` vínculo, se descargarán todos los miembros como una lista de valores separados por comas, lo cual resulta adecuado para importarlos a una hoja de cálculo.
+Al seleccionar el vínculo `Export CSV`, se descargan todos los miembros como una lista de valores separados por comas, lo cual resulta adecuado para importarlos a una hoja de cálculo.
 
 Los encabezados de columna son
 
@@ -73,11 +73,11 @@ Los encabezados de columna son
 
 ## Crear nuevo miembro {#create-new-member}
 
-Seleccione esta opción `Create Member` para crear un usuario en el entorno de publicación.
+Seleccione `Create Member` para crear un usuario en el entorno de publicación.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### GENERAL - Detalles de los miembros {#general-member-details}
+### GENERAL - Detalles del miembro {#general-member-details}
 
 La mayoría de los campos son campos opcionales que el miembro puede rellenar posteriormente en su perfil.
 
@@ -90,7 +90,8 @@ De forma predeterminada, el ID se establece en el valor de la dirección de corr
 * **[!UICONTROL Dirección de correo electrónico]**
 (
 *obligatorio*) La dirección de correo electrónico del miembro.
-El miembro puede cambiar su dirección de correo electrónico al actualizar su perfil.Si el ID predeterminado es la dirección de correo electrónico, el ID *no cambiará* cuando se cambie la dirección de correo electrónico.
+El miembro puede cambiar su dirección de correo electrónico al actualizar su perfil.I
+Si el ID toma la dirección de correo electrónico predeterminada, el ID *no* cambiará cuando se cambie la dirección de correo electrónico.
 
 * **[!UICONTROL Contraseña]**
 (
@@ -110,7 +111,7 @@ El miembro puede cambiar su dirección de correo electrónico al actualizar su p
 
 * Seleccione **[!UICONTROL Guardar]**
 
-### GENERAL: Configuración de la cuenta {#general-account-settings}
+### GENERAL - Configuración de la cuenta {#general-account-settings}
 
 En Configuración de cuenta, un administrador de la comunidad puede
 
@@ -118,58 +119,61 @@ En Configuración de cuenta, un administrador de la comunidad puede
    * Prohibido\
       Un miembro no puede iniciar sesión, lo que les impide ver páginas o participar en actividades que requieren iniciar sesión. Pueden seguir visitando anónimamente un sitio de la comunidad abierta.
 
-   * No prohibidoUn miembro tiene acceso completo al sitio de la comunidad.
+   * No prohibido
+Un miembro tiene acceso completo al sitio de la comunidad.
 
    El valor predeterminado es `Not Banned`.
 
-* **[!UICONTROL Límites]**de contribución Si se selecciona, la capacidad del miembro para anunciar contenido es limitada.
+* **[!UICONTROL Límites de]**
+contribuciónSi se selecciona, la capacidad del miembro para publicar contenido es limitada.
 El valor predeterminado depende de la configuración de los límites de contribución.
-Consulte Límites [de contribución de miembros](limits.md).
+Consulte [Límites de contribución de miembros](limits.md).
 
-* **[!UICONTROL Cambiar contraseña]** Vínculo que está presente al modificar un miembro existente. Proporciona a un administrador de la comunidad la capacidad de restablecer una contraseña para un miembro.
+* **[!UICONTROL Cambiar]**
+contraseñaVínculo que está presente al modificar un miembro existente. Proporciona a un administrador de la comunidad la capacidad de restablecer una contraseña para un miembro.
 
 ### GENERAL - Foto {#general-photo}
 
 Para proporcionar un avatar para el miembro, seleccione **[!UICONTROL Cargar imagen]** y elija una imagen de tipo .jpg, .png, .tif o .gif. El tamaño preferido para una imagen es de 240 x 240 píxeles a 72 ppp.
 
-### GENERAL - Add Member to Sites {#general-add-member-to-sites}
+### GENERAL: Añadir miembro a sitios {#general-add-member-to-sites}
 
 El miembro puede agregarse a uno o más grupos de miembros de sitios de la comunidad. Comience por introducir texto en el cuadro de texto.
 
-### GENERAL - Add Member to Groups {#general-add-member-to-groups}
+### GENERAL - Añadir miembro a grupos {#general-add-member-to-groups}
 
 El miembro puede agregarse a uno o más grupos de miembros. Comience por introducir texto en el cuadro de texto.
 
 ### Ficha BADGES {#badges-tab}
 
-El `BADGES` panel permite asignar distintivos manualmente y revocarlos. Las insignias pueden ser para las funciones asignadas, así como para las insignias que se obtienen normalmente.
+El panel `BADGES` permite asignar distintivos manualmente y revocarlos. Las insignias pueden ser para las funciones asignadas, así como para las insignias que se obtienen normalmente.
 
 Consulte también [Puntuación y distintivos](implementing-scoring.md).
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 * **[!UICONTROL Añadir distintivos]**
-   * Empiece a escribir para seleccionar los distintivos [](badges.md)disponibles. Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
+   * Empiece a escribir para seleccionar [distintivos disponibles](badges.md). Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
    * Se pueden elegir varios distintivos y sitios.
 * **[!UICONTROL Eliminar distintivos]**
    * Seleccione el icono de papelera situado junto a un distintivo para eliminarlo
 
-## Consola Grupos {#groups-console}
+## Consola de grupos {#groups-console}
 
 La consola Grupos, disponible desde el entorno de creación, permite crear y administrar grupos de miembros registrados en el entorno de publicación. Resulta especialmente útil para:
 * [Grupos de miembros privilegiados](users.md#privilegedmembersgroups)
-* Asignación de recursos de [habilitación basada en grupos](resources.md)
+* Asignación basada en grupos de [recursos de habilitación](resources.md)
 
 Para acceder a la consola Grupos:
 * Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Grupos]**
 
 >[!CAUTION]
 >
->No será posible utilizar la consola Grupos si el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel no está habilitado.
+>No será posible utilizar la consola Grupos si el [servicio de túnel](deploy-communities.md#tunnel-service-on-author) no está habilitado.
 
 ### Crear un grupo nuevo {#create-new-group}
 
-Seleccione esta opción `Add Group` para crear un grupo en el entorno de publicación.
+Seleccione `Add Group` para crear un grupo en el entorno de publicación.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -198,8 +202,8 @@ Los campos necesarios para crear un nuevo grupo de miembros del lado de publicac
 
 ## Administradores autorizados {#authorized-administrators}
 
-Al trabajar con miembros en la consola de miembros de Communities, es necesario iniciar sesión como usuario con los permisos adecuados y configurar correctamente el agente de replicación utilizado por el servicio [de](deploy-communities.md#tunnel-service-on-author) túnel.
+Cuando se trabaja con miembros en la consola Miembros de Communities, es necesario iniciar sesión como usuario con los permisos adecuados y configurar correctamente el agente de replicación utilizado por el [servicio de túnel](deploy-communities.md#tunnel-service-on-author).
 
-Si no ha iniciado sesión como `admin`, el usuario que ha iniciado sesión debe ser miembro del grupo de `administrators` usuarios.
+Si no ha iniciado sesión como `admin`, el usuario que ha iniciado sesión debe ser miembro del grupo de usuarios `administrators`.
 
-Consulte también Agentes [de replicación en Autor](deploy-communities.md#replication-agents-on-author).
+Consulte también [Agentes de replicación en Author](deploy-communities.md#replication-agents-on-author).

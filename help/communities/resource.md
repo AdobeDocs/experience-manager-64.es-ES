@@ -24,15 +24,17 @@ ht-degree: 4%
 
 Para agregar un recurso de habilitación al nuevo sitio de comunidad:
 
-* En la instancia de creación
-   * Por ejemplo, [http://localhost:4502/](http://localhost:4503/)
+* En la instancia de autor
+   * Por ejemplo: [http://localhost:4502/](http://localhost:4503/)
 * Iniciar sesión como administrador del sistema
-* En la navegación global, seleccione **Comunidades >[Recursos](resources.md)**   ![chlimage_1-199](assets/chlimage_1-199.png)
+* En la navegación global, seleccione **Comunidades > [Recursos](resources.md)**
+
+   ![chlimage_1-199](assets/chlimage_1-199.png)
    ![chlimage_1-200](assets/chlimage_1-200.png)
 * Seleccione el sitio de la comunidad al que se agregan los recursos de habilitación
    * Seleccione `Enablement Tutorial`
 * En el menú, seleccione ` Create`
-* Seleccionar **[!UICONTROL recurso]**
+* Seleccione **[!UICONTROL Recurso]**
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -40,9 +42,8 @@ Para agregar un recurso de habilitación al nuevo sitio de comunidad:
 
 Rellene la información básica del recurso:
 
-* **[!UICONTROL Nombre]**del sitio:
-definido en el nombre del sitio de comunidad seleccionado: Tutorial de habilitación
-* **[!UICONTROL Nombre&amp;amp de recurso;Último;]**: Lección de esquí 1
+* **[!UICONTROL Nombre]** del sitio: definido en el nombre del sitio de comunidad seleccionado: Tutorial de habilitación
+* **[!UICONTROL &amp;Nombre del recurso;]**: Lección de esquí 1
 * **[!UICONTROL Etiquetas]**: Tutorial: Deportes / Esquí
 * **[!UICONTROL Mostrar en catálogo]**: Activado
 * **[!UICONTROL Descripción]**: Deslizar la nieve para principiantes
@@ -54,7 +55,7 @@ definido en el nombre del sitio de comunidad seleccionado: Tutorial de habilitac
 
 Aunque parece que se pueden seleccionar varios recursos, solo se permite uno.
 
-Seleccione el `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
+Seleccione `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
 
 ![chlimage_1-203](assets/chlimage_1-203.png) ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -62,30 +63,32 @@ Cargar un recurso. Si se trata de un recurso de vídeo, cargue una imagen person
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-* select **[!UICONTROL Next]**
+* select **[!UICONTROL Siguiente]**
 
 ### Configuración {#settings}
 
-* **[!UICONTROL Configuración]** social Deje la configuración predeterminada para que los alumnos comenten y valoren los recursos de habilitación.
+* **[!UICONTROL Configuración socialDeje la configuración predeterminada para que los alumnos comenten y valoren los recursos de habilitación.]**
+
 * **[!UICONTROL Fecha de vencimiento]**
 
    *(Opcional)* Se puede seleccionar una fecha para completar la asignación.
 * **[!UICONTROL Autor del medio]**
 
    *(Opcional)* Deje en blanco.
-* **[!UICONTROL Resource Contact&amp;ast;]**
+* **[!UICONTROL Contacto&amp;ast de recursos;]**
 
-   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro `Quinn Harper`.
+   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro  `Quinn Harper`.
 * **[!UICONTROL Experto de medios]**
 
    *(Opcional)* Deje en blanco.
-   **Nota**: si los usuarios o grupos no están visibles, compruebe que se han agregado al `Community Enable Members` grupo y que se han *guardado* en la instancia de publicación.
+   **Nota**: si los usuarios o grupos no están visibles, compruebe que se han agregado al  `Community Enable Members` grupo y que se han  ** guardado en la instancia de publicación.
    ![chlimage_1-206](assets/chlimage_1-206.png)
 * Seleccione **[!UICONTROL Siguiente]**
 
 ### Asignaciones {#assignments}
 
-* **[!UICONTROL Añadir usuarios asignados]** Deje sin configurar ya que este recurso de habilitación se agregará a una ruta de aprendizaje. Si se asigna un alumno al recurso de habilitación individual, así como a una ruta de aprendizaje que contiene el recurso de habilitación, el alumno se asignará dos veces al recurso de habilitación.
+* **[!UICONTROL Añadir]**
+usuarios asignadosDeje sin configurar ya que este recurso de habilitación se agregará a una ruta de aprendizaje. Si se asigna un alumno al recurso de habilitación individual, así como a una ruta de aprendizaje que contiene el recurso de habilitación, el alumno se asignará dos veces al recurso de habilitación.
 
 ![chlimage_1-207](assets/chlimage_1-207.png)
 
@@ -101,9 +104,9 @@ Para cargar una nueva versión del recurso de habilitación, se recomienda crear
 
 Antes de que los alumnos matriculados puedan ver el recurso asignado, debe publicarse:
 
-* Seleccione el `Publish`icono mundial
+* Seleccione el icono del `Publish`mundo
 
-La Activación se confirma con un mensaje de éxito:
+La activación se confirma con un mensaje de éxito:
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
@@ -113,7 +116,7 @@ Repita los pasos anteriores para crear y publicar un segundo recurso de habilita
 
 ![chlimage_1-210](assets/chlimage_1-210.png)
 
-**Publique** el segundo recurso.
+**** Publicar el segundo recurso.
 
 Vuelva a la lista de tutoriales de habilitación de sus recursos.
 
@@ -126,16 +129,16 @@ Vuelva a la lista de tutoriales de habilitación de sus recursos.
 Una ruta de aprendizaje es una agrupación lógica de recursos de habilitación que forman un curso.
 
 * En la consola Recursos, seleccione `+ Create`
-* Seleccionar ruta **[!UICONTROL de aprendizaje]**
+* Seleccione **[!UICONTROL Ruta de aprendizaje]**
 
 ![chlimage_1-212](assets/chlimage_1-212.png)
 
-Añada la información **[!UICONTROL básica]**:
+Añada la **[!UICONTROL Información básica]**:
 
 * **[!UICONTROL Nombre]** de ruta de aprendizaje: Clases de esquí
 * **[!UICONTROL Etiquetas]**: Tutorial: Esquí
 * **[!UICONTROL Mostrar en catálogo]**: dejar sin marcar
-* **[!UICONTROL Cargar una imagen]** para representar la ruta de aprendizaje en la consola Recursos
+* **[!UICONTROL Cargar una]** imagen para representar la ruta de aprendizaje en la consola Recursos
 
 ![chlimage_1-213](assets/chlimage_1-213.png)
 
@@ -147,9 +150,9 @@ Omita el panel siguiente, ya que no hay rutas de aprendizaje previas que agregar
 
 En el panel Añadir recursos
 
-* Seleccione `+ Add Resources` para seleccionar los 2 recursos de lecturas de esquí que desea agregar a la ruta de aprendizaje
+* Seleccione `+ Add Resources` para seleccionar los 2 recursos de lecturas de esquí que agregar a la ruta de aprendizaje
 
-   Nota: Solo se podrán seleccionar los recursos **publicados** .
+   Nota: Sólo se podrán seleccionar **recursos publicados**.
 
 >[!NOTE]
 >
@@ -163,12 +166,13 @@ En el panel Añadir recursos
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL Añadir asignados]** Utilice el menú desplegable para seleccionar la variable 
-`Community Ski Class` grupo, que debería incluir a los miembros `Riley Taylor` y `Sidney Croft.`
+* **[!UICONTROL Añadir]**
+asignadosUtilice el menú desplegable para seleccionar la variable 
+`Community Ski Class` grupo, que debería incluir miembros  `Riley Taylor` y  `Sidney Croft.`
 
-* **[!UICONTROL Ruta de acceso de aprendizaje: Contact&amp;ast;]**
+* **[!UICONTROL Contactar&amp;ste de ruta de aprendizaje;]**
 
-   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro `Quinn Harper`.
+   *(Requerido)* Utilice el menú desplegable para seleccionar un miembro  `Quinn Harper`.
 
 * Seleccione **[!UICONTROL Crear]**
 
@@ -176,5 +180,5 @@ En el panel Añadir recursos
 
 La creación correcta de la ruta de aprendizaje regresa a la consola Recursos con la ruta de aprendizaje recién creada seleccionada. Desde esta consola, es posible publicar, añadir alumnos y cambiar otros ajustes.
 
-**Publique** la ruta de aprendizaje.
+**** Publicar la ruta de aprendizaje.
 

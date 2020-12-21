@@ -25,11 +25,11 @@ Puede proteger documentos mediante políticas. La configuración de confidencial
 
 Las directivas se almacenan en el servidor de seguridad de Documento; las políticas se aplican a los documentos a través de la aplicación cliente. Cuando se aplica una política a un documento, la configuración de confidencialidad especificada en la política protege la información que contiene el documento. Puede distribuir el documento protegido por una política a destinatarios autorizados por la política.
 
-La seguridad de Documento también proporciona clientes, visores e indexadores para proteger documentos, documentos protegidos por vistas y documentos protegidos por índices. Para obtener información detallada sobre la seguridad de documento, consulte [sobre la seguridad](/help/forms/using/admin-help/document-security.md)de documento.
+La seguridad de documento también proporciona clientes, visores e indexadores para proteger documentos, documentos protegidos por vistas y documentos protegidos por índices. Para obtener información detallada sobre la seguridad de documento, consulte [acerca de la seguridad de documento](/help/forms/using/admin-help/document-security.md).
 
-## Topología de implementación  {#deployment-topology}
+## Topología de implementación {#deployment-topology}
 
-La capacidad de seguridad de documento solo está disponible en AEM Forms en JEE. Se requiere una sola instancia de AEM Forms en JEE. También puede crear un clúster o conjunto de servidores de AEM Forms, si es necesario. La siguiente topología es una topología indicativa para ejecutar la capacidad de seguridad de documento. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](aem-forms-architecture-deployment.md).
+La capacidad de seguridad de documento solo está disponible en AEM Forms en JEE. Se requiere una sola instancia de AEM Forms en JEE. También puede crear un clúster o conjunto de servidores de AEM Forms, si es necesario. La siguiente topología es una topología indicativa para ejecutar la capacidad de seguridad de documento. Para obtener información detallada sobre la topología, consulte [Topologías de arquitectura e implementación para AEM Forms](aem-forms-architecture-deployment.md).
 
 <!--fix above link-->
 
@@ -43,9 +43,9 @@ En el diagrama siguiente se muestra la arquitectura típica de Seguridad de Docu
 
 Realice los siguientes pasos para instalar y configurar AEM Forms en JEE:
 
-1. Descargue el instalador de Forms AEM 6.4 en JEE del sitio web de licencias de [Adobe (LWS)](https://licensing.adobe.com/). Se requiere un contrato de mantenimiento y soporte válido para descargar el instalador.
-1. Lea [AEM Forms en el documento](/help/forms/using/aem-forms-jee-supported-platforms.md) de plataformas compatibles con JEE y asegúrese de tener el software, el hardware, los sistemas operativos, el servidor de aplicaciones, las bases de datos, los JDK y otras infraestructuras listas para instalar AEM Forms en JEE.
-1. (Solo las instalaciones no llave en mano) Lea [Preparación de la instalación de un único servidor](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) de AEM Forms o [Preparación de la instalación del clúster](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) de servidores de AEM Forms y preparación del entorno para instalar y configurar AEM Forms en JEE.
+1. Descargue el instalador de Forms AEM 6.4 en JEE desde el [sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Se requiere un contrato de mantenimiento y soporte válido para descargar el instalador.
+1. Lea [AEM Forms en el documento de plataformas admitidas por JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y asegúrese de tener el software, el hardware, los sistemas operativos, el servidor de aplicaciones, las bases de datos, los JDK y otras infraestructuras listas para instalar AEM Forms en JEE.
+1. (Solo las instalaciones no llave en mano) Lea [Preparación para instalar AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparación para instalar AEM Forms server cluster](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) y prepare su entorno para instalar y configurar AEM Forms en JEE.
 1. Según el entorno y el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones para completar la instalación
 
    * [Instalación e implementación de AEM Forms en JEE con JBoss llave en mano](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)

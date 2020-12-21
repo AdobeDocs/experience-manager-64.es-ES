@@ -16,5 +16,5 @@ ht-degree: 8%
 ---
 
 
-# NO PUBLICAR WIP: trabajo en curso {#do-not-publish-wip-work-in-progress}
+# NO PUBLICAR WIP - Trabajo en curso {#do-not-publish-wip-work-in-progress}
 

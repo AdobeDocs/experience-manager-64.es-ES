@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Rellenado dinámico de listas desplegables  {#dynamically-populating-drop-down-lists}
+# Rellenado dinámico de listas desplegables {#dynamically-populating-drop-down-lists}
 
 ## Requisitos previos {#prerequisites}
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## Procedimiento para rellenar dinámicamente listas desplegables {#procedure-to-dynamically-populate-drop-down-lists}
 
-Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en función de un valor que seleccione en la lista desplegable **País** . Si selecciona Australia en la lista desplegable **País** , la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo llevar a cabo esta tarea.
+Considere un escenario en el que desee rellenar la lista desplegable **State** en función de un valor que seleccione en la lista desplegable **Country**. Si selecciona Australia en la lista desplegable **País**, la lista desplegable **Estado** muestra los estados dentro de Australia. El siguiente procedimiento describe cómo llevar a cabo esta tarea.
 
 1. Cree un proyecto con los siguientes módulos:
 
@@ -146,7 +146,7 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
    }
    ```
 
-1. Cree un nodo desplegable bajo una jerarquía de carpetas determinada en las aplicaciones (por ejemplo, cree un nodo en /apps/myfolder/demo). Asegúrese de que el `sling:resourceType` parámetro para el nodo es el mismo que el que señala el servlet (/apps/populatedropdown).
+1. Cree un nodo desplegable bajo una jerarquía de carpetas determinada en las aplicaciones (por ejemplo, cree un nodo en /apps/myfolder/demo). Asegúrese de que el parámetro `sling:resourceType` para el nodo es el mismo que el que señala el servlet (/apps/popullatedropdown).
 
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
@@ -155,7 +155,7 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
 
    Añada los nombres de los países para mostrarlos en la lista del país. En la lista de Estado, agregue una secuencia de comandos para rellenarla en función del nombre del país en la lista de país.
 
-   ![Añadir nombres](assets/country-dropdown.png) de países ![Añadiendo secuencia de comandos para rellenar nombres](assets/state-dropdown.png) de estado listas desplegables ![País y Estado para reunir](assets/2dropdowns.png)
+   ![Añadir ](assets/country-dropdown.png) ![nombres de paísesAgregar una secuencia de comandos para rellenar ](assets/state-dropdown.png) ![nombres de estadoslistas desplegables de país y estado para recopilar](assets/2dropdowns.png)
 
    ```
    JSON.parse(

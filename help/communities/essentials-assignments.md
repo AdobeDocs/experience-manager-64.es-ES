@@ -18,9 +18,9 @@ ht-degree: 13%
 ---
 
 
-# Ascripciones esenciales {#assignments-essentials}
+# Assignments Essentials {#assignments-essentials}
 
-Esta página proporciona la información esencial para trabajar con la función de asignaciones de [habilitar los sitios de comunidad](overview.md#enablement-community) .
+Esta página proporciona la información esencial para trabajar con la función de asignaciones de [sitios de comunidad de habilitación](overview.md#enablement-community).
 
 La función de asignaciones es la capacidad de asignar recursos de habilitación y rutas de aprendizaje a miembros de comunidades de habilitación.
 
@@ -38,7 +38,7 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.mysigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningPath</td> 
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassign<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningPath</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -50,7 +50,7 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
   </tr>
   <tr>
    <td><strong> propiedades</strong></td> 
-   <td>Consulte Función <a href="assignments.md">Asignaciones</a></td> 
+   <td>Consulte <a href="assignments.md">Función de asignaciones</a></td> 
   </tr>
  </tbody>
 </table>
@@ -85,12 +85,12 @@ Las únicas combinaciones posibles de estado de finalización y éxito son:
 
 ### Función Asignaciones {#assignments-function}
 
-Una estructura de sitio de comunidad que incluye la función [](functions.md#assignments-function)Asignaciones incluye un ` [assignments](assignments.md)` componente configurado.
+Una estructura de sitio de comunidad que incluye la [función Asignaciones](functions.md#assignments-function), incluye un componente ` [assignments](assignments.md)` configurado.
 
 ### API de referencia {#reference-apis}
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API de Sistema de informes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API de sistema de informes](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API de Sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API de sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configuración de la configuración de AEM DS {#configuring-aem-ds-settings}
 
-Este artículo describe cómo configurar **AEM servicio** de configuración de DS. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+En este artículo se describe cómo configurar **AEM Servicio de configuración de DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En la gestión de correspondencia
 
@@ -28,7 +28,7 @@ Este artículo describe cómo configurar **AEM servicio** de configuración de D
 
 * En formularios adaptables para casos en los que el formulario adaptable se envía desde una instancia de publicación
 
-A continuación se indican los pasos para configurar la **[!UICONTROL AEM configuración]** de DS:
+A continuación se indican los pasos para configurar la **[!UICONTROL Configuración de AEM DS]**:
 
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:
 
@@ -36,11 +36,11 @@ A continuación se indican los pasos para configurar la **[!UICONTROL AEM config
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. En la ventana Configuración **[!UICONTROL de la consola web de]** Adobe Experience Manager, busque y haga clic en la opción Configuración **[!UICONTROL de]** AEM DS.
+1. En la ventana **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, busque y haga clic en la opción **[!UICONTROL Configuración de AEM DS]**.
 
    ![ds_settings](assets/ds_settings.png)
 
-1. La ventana **[!UICONTROL AEM Servicio]** de configuración DS muestra los ajustes de configuración comunes para los componentes de DS AEM.
+1. La ventana **[!UICONTROL Servicio de configuración AEM DS]** muestra las opciones de configuración comunes para AEM componentes DS.
 
    ![ds_settings_1](assets/ds_settings_1.png)
 
@@ -48,7 +48,7 @@ A continuación se indican los pasos para configurar la **[!UICONTROL AEM config
 
    **[!UICONTROL Dirección URL]** del servidor de procesamiento: El servidor de procesamiento es el servidor en el que se debe activar el flujo de trabajo de Forms o AEM. Puede ser la misma que la URL de la instancia de creación de AEM o de la otra URL de servidor (es decir, http:// localhost:port/).
 
-   **[!UICONTROL Nombre]** de usuario del servidor de procesamiento: Nombre de usuario del usuario del flujo de trabajo [basado en la dirección URL del servidor que se está utilizando]
+   **[!UICONTROL Nombre]** de usuario del servidor de procesamiento: Nombre de usuario del usuario del flujo de trabajo  [basado en la dirección URL del servidor que se está utilizando]
 
    **[!UICONTROL Contraseña]** del servidor de procesamiento: Contraseña del usuario del flujo de trabajo
 

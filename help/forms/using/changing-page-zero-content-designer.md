@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Cambio del contenido de página cero en Designer {#changing-page-zero-content-in-designer}
+# Cambio del contenido de Página cero en Designer {#changing-page-zero-content-in-designer}
 
 El contenido de Página cero se muestra de forma predeterminada cuando un visor que no es de Adobe PDF, como el visor de PDF predeterminado en Chrome o Firefox, no puede leer el contenido del formulario PDF/XFA. El mensaje predeterminado Página cero se muestra a continuación.
 
@@ -28,7 +28,7 @@ La versión 1 de AEM Forms Feature Pack 1 de Designer permite cambiar el mensaje
 
 1. Abra el formulario para el que desea cambiar el contenido de Página cero.
 
-1. Click **File > Form Properties**.
+1. Haga clic en **Archivo > Propiedades del formulario**.
 
 1. En el cuadro de diálogo Propiedades del formulario, haga clic en ![más](assets/plus.png) (icono de signo más) para agregar una propiedad personalizada.
 

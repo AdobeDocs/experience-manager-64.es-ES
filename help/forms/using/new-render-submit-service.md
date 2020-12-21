@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-En Workbench, cuando defina una `AssignTask` operación, especifique un formulario concreto (formulario XDP o PDF). Además, especifique un conjunto de servicios de procesamiento y envío mediante el perfil de acciones.
+En Workbench, cuando defina una operación `AssignTask`, especifique un formulario concreto (formulario XDP o PDF). Además, especifique un conjunto de servicios de procesamiento y envío mediante el perfil de acciones.
 
 Un XDP se puede procesar como formulario PDF o HTML. Las nuevas funciones incluyen la capacidad de:
 
@@ -55,11 +55,11 @@ public String generateFormURL(TaskContext taskContext, String profileName);
 public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profileName, Map<String,Object> runtimeMap);
 ```
 
-Puede encontrar más información sobre los perfiles de formularios móviles en [Creación de un perfil](/help/forms/using/custom-profile.md)personalizado.
+Puede encontrar más información sobre los perfiles de formularios móviles en [Creación de un perfil personalizado](/help/forms/using/custom-profile.md).
 
 ## Nuevos procesos de envío y procesamiento de formularios HTML {#new-html-form-render-amp-submit-processes}
 
-Para cada operación &#39;Asignar tarea&#39;, especifique un proceso de procesamiento y un proceso de envío con el formulario. TaskManager `renderForm`y `submitForm`las API llaman a estos procesos para permitir la administración personalizada. Semánticos de estos procesos para Nuevo formulario HTML:
+Para cada operación &#39;Asignar tarea&#39;, especifique un proceso de procesamiento y un proceso de envío con el formulario. Las API de TaskManager `renderForm`y `submitForm`llaman a estos procesos para permitir la administración personalizada. Semánticos de estos procesos para Nuevo formulario HTML:
 
 ### Representar un nuevo formulario HTML {#render-a-new-html-form}
 
@@ -71,11 +71,11 @@ Salida - `runtimeMap`
 
 Salida - `outFormDoc`
 
-Este método simula el comportamiento exacto de la `renderHTMLForm` API de NewHTMLFormsService. Llama a la `generateFormURL` API para obtener la URL para la representación HTML del formulario. A continuación, rellena RuntimeMap con las siguientes claves o valores:
+Este método simula el comportamiento exacto de la API `renderHTMLForm` de NewHTMLFormsService. Llama a la API `generateFormURL` para obtener la URL para la representación HTML del formulario. A continuación, rellena RuntimeMap con las siguientes claves o valores:
 
 nuevo formulario HTML = true
 
-newHTMLFormURL = la URL devuelta después de llamar a `generateFormURL` API.
+newHTMLFormURL = la URL devuelta después de llamar a la API `generateFormURL`.
 
 ### Enviar un nuevo formulario HTML {#submit-a-new-html-form}
 
@@ -95,13 +95,13 @@ Los servicios predeterminados de procesamiento y envío permiten la compatibilid
 
 ### Formulario de procesamiento predeterminado {#default-render-form}
 
-Este proceso procesa un formulario XDP en varias plataformas sin problemas. El proceso recupera el agente de usuario de `taskContext`y utiliza los datos para llamar al proceso para procesar HTML o PDF.
+Este proceso procesa un formulario XDP en varias plataformas sin problemas. El proceso recupera el agente de usuario de `taskContext` y utiliza los datos para llamar al proceso para procesar HTML o PDF.
 
 ![default-output-form](assets/default-render-form.png)
 
 ### Formulario de envío predeterminado {#default-submit-form}
 
-Este proceso envía un formulario XDP en varias plataformas sin problemas. Recupera el agente de usuario `taskContext`y utiliza los datos para llamar al proceso para enviar HTML o PDF.
+Este proceso envía un formulario XDP en varias plataformas sin problemas. Recupera el agente de usuario de `taskContext`y utiliza los datos para llamar al proceso para enviar HTML o PDF.
 
 ![default-submit-form](assets/default-submit-form.png)
 
@@ -116,7 +116,7 @@ Los navegadores están retirando gradualmente la compatibilidad con los compleme
 
 1. Seleccione las aplicaciones para las que desea cambiar la representación del formulario móvil y haga clic en **Aceptar**.
 1. Abra el proceso para el que desea cambiar la representación.
-1. Abra el punto de inicio o la tarea de destino, vaya a la sección Presentación y datos y haga clic en **Administrar Perfiles** de acción.
+1. Abra el punto de inicio o la tarea de destino, vaya a la sección Presentación y datos y haga clic en **Administrar Perfiles de acción**.
 
    Aparece el cuadro de diálogo Administrar Perfiles de acción.
 1. Cambie las configuraciones de perfil de procesamiento predeterminado de PDF a HTML y haga clic en **Aceptar**.
@@ -130,7 +130,7 @@ El Perfil de acción predeterminado procesó el formulario XDP como PDF. Este co
 
 Algunas de las preguntas más frecuentes sobre perfiles de acción son las siguientes:
 
-![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué procesos de procesamiento y envío estarán disponibles de forma predeterminada?**
+![gen_question_b_20](assets/gen_question_b_20.png) **¿Qué procesos de procesamiento/envío estarán disponibles de forma predeterminada?**
 
 * Guía de procesamiento (las guías están en desuso)
 * Guía de procesamiento de formularios
@@ -155,9 +155,9 @@ Nada. El Perfil de acción predeterminado se elige automáticamente y el modo de
 
 El usuario debe seleccionar el botón de opción HTML para el perfil predeterminado.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **¿Tendrá algún impacto de actualización en el cambio del comportamiento de perfil de acción predeterminado?**
+![gen_question_b_20](assets/gen_question_b_20.png) **¿Tendrá alguna repercusión en la actualización al cambiar el comportamiento predeterminado del perfil de acciones?**
 
-Sí, dado que los servicios de procesamiento y envío anteriores asociados al perfil de acción predeterminado eran diferentes, se tratan como una personalización de los formularios existentes. Al hacer clic en **[!UICONTROL Restaurar valores predeterminados]**, se establecen los servicios predeterminados de procesamiento y envío.
+Sí, dado que los servicios de procesamiento y envío anteriores asociados al perfil de acción predeterminado eran diferentes, se tratan como una personalización de los formularios existentes. Al hacer clic en **[!UICONTROL Restaurar valores predeterminados]**, se configuran los servicios predeterminados de procesamiento y envío.
 
 Si ha modificado los servicios de procesamiento o envío de formulario PDF existentes o ha creado servicios personalizados (por ejemplo, personalizado1) y desea utilizar la misma funcionalidad para la representación HTML. Debe replicar el nuevo servicio de procesamiento o envío (como custom2) y aplicar personalizaciones similares a ellas. Ahora, modifique el perfil de acción de su XDP a inicio mediante servicios personalizados2, en lugar de custom1 para procesar o enviar.
 

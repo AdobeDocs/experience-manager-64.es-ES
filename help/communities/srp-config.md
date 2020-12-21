@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Configuración de almacenamiento {#storage-configuration}
 
-La configuración de Almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
+La configuración de almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
 
 Esta configuración informa al código de AEM Communities de la implementación del proveedor de recursos de almacenamiento (SRP) que se va a utilizar al acceder a UGC y debe reflejar la topología establecida cuando se implementó AEM.
 
@@ -29,7 +29,7 @@ Para consultar las opciones de almacenamiento y las topologías de implementaci�
 * [Tienda de contenido de la comunidad](working-with-srp.md)
 * [Topologías recomendadas](topologies.md)
 
-## Consola de configuración de Almacenamiento {#storage-configuration-console}
+## Consola de configuración de almacenamiento {#storage-configuration-console}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -42,9 +42,9 @@ Para seleccionar una opción de almacenamiento distinta del JCR predeterminado:
 * seleccionar una opción
 * Configurar correctamente
 
-   * Ver detalles para [seleccionar MSRP](msrp.md#select-msrp)
-   * Ver detalles para [seleccionar DSRP](dsrp.md#select-dsrp)
-   * Ver detalles para [seleccionar ASRP](asrp.md#select-asrp)
+   * Consulte los detalles para [seleccionar MSRP](msrp.md#select-msrp)
+   * Consulte los detalles para [seleccionar DSRP](dsrp.md#select-dsrp)
+   * Consulte los detalles para [seleccionar ASRP](asrp.md#select-asrp)
 
 * Seleccione **[!UICONTROL Enviar]**
 
@@ -52,11 +52,11 @@ Para seleccionar una opción de almacenamiento distinta del JCR predeterminado:
 
 Tenga en cuenta que si no se realiza ninguna selección, el valor predeterminado es el repositorio de AEM, JCR.
 
-JCR *no es* un almacén común compartido por el autor y los entornos de publicación. El contenido de la comunidad solo estará visible desde el entorno de creación o publicación en el que se creó.
+JCR es *no* un almacén común compartido por el autor y los entornos de publicación. El contenido de la comunidad solo estará visible desde el entorno de creación o publicación en el que se creó.
 
-Visite la tienda [JCR](jsrp.md) para obtener más información.
+Visite [JCR Store](jsrp.md) para obtener más información.
 
 >[!NOTE]
 >
->La ausencia del nodo `srpc`en `/etc/socialconfig` indica el almacén [](jsrp.md)JCR predeterminado.
+>La ausencia del nodo `srpc`en `/etc/socialconfig` indica el almacén [JCR](jsrp.md) predeterminado.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Cambiar el número de elementos que se muestran en las páginas Aplicaciones y servicios {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+# Cambiar el número de elementos mostrados en las páginas Aplicaciones y Servicios {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
 En la página Preferencias, puede controlar el número de servicios, extremos, categorías y archivos que se muestran en cada una de las páginas web de Aplicaciones y Servicios.
 

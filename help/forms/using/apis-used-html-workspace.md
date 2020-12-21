@@ -110,7 +110,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
   <tr>
    <td>save</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>save</td> 
+   <td>guardar</td> 
    <td>Guarda una tarea en el servidor.</td> 
   </tr>
   <tr>
@@ -390,7 +390,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>Carga una nota en el servidor para una tarea.</td> 
   </tr>
   <tr>
-   <td>uploadRMAToServer (también se llama directamente desde una plantilla html)<br /> </td> 
+   <td>uploadRMAToServer (también se llama directamente desde la plantilla html)<br /> </td> 
    <td>ProcessManagementDocumentHandlingService</td> 
    <td>uploadAttachment</td> 
    <td>Carga un archivo adjunto en el servidor para una tarea.</td> 

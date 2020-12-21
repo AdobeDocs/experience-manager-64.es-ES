@@ -24,7 +24,7 @@ El espacio de trabajo de AEM Forms organiza los procesos según las categorías 
 
 Cuando inicio un proceso, es posible que tenga que rellenar un formulario para inicio de un proceso empresarial que controla el flujo de trabajo de AEM Forms. Si un formulario utiliza Preparar proceso de datos, parte de la información se puede rellenar previamente en un formulario en blanco cuando se inicia un nuevo proceso.
 
-Por ejemplo, desea comprar un nuevo monitor de equipo y, por lo tanto, inicio un proceso denominado Orden ** de compra. Cuando se inicio el proceso, se abre un formulario y se le solicita información detallada sobre el elemento que se va a ordenar. Es posible que el nombre, el número de empleado y el nombre del administrador ya estén rellenados previamente en el formulario. Al enviar la solicitud, se inicia un proceso comercial. En función de la definición del proceso, el servidor redirecciona automáticamente la solicitud a su administrador. inicios de tarea que aparecen en la lista de tareas pendientes del administrador. Cuando el administrador aprueba la solicitud, el flujo de trabajo de formularios envía la solicitud al departamento de compras y le envía una notificación por correo electrónico.
+Por ejemplo: desea comprar un nuevo monitor de equipo y, por lo tanto, inicio un proceso denominado *Orden de compra*. Cuando se inicio el proceso, se abre un formulario y se le solicita información detallada sobre el elemento que se va a ordenar. Es posible que el nombre, el número de empleado y el nombre del administrador ya estén rellenados previamente en el formulario. Al enviar la solicitud, se inicia un proceso comercial. En función de la definición del proceso, el servidor redirecciona automáticamente la solicitud a su administrador. Inicios de tarea que aparecen en la lista de tareas pendientes del administrador. Cuando el administrador aprueba la solicitud, el flujo de trabajo de formularios envía la solicitud al departamento de compras y le envía una notificación por correo electrónico.
 
 ## Selección de procesos para inicio {#selecting-processes-to-start}
 
@@ -38,7 +38,7 @@ Si el formulario y el proceso lo permiten, también puede guardarlo sin conexió
 
 Al seleccionar un proceso, aparecen la ficha Formulario y la ficha Detalles. Si el proceso le permite agregar notas o archivos adjuntos, también aparecen la ficha Archivos adjuntos y la ficha Notas. Si también ha configurado la URL de resumen con el proceso, también aparecerá la ficha Resumen. La ficha Forms muestra el formulario asociado y la ficha Detalles muestra información sobre la tarea actual y el proceso del que forma parte.
 
-### Inicio de un proceso comercial {#start-a-business-process}
+### Inicio de un proceso de negocios {#start-a-business-process}
 
 1. En la página Proceso de Inicio, en la lista de la izquierda, seleccione una categoría. Todos los procesos a los que tiene acceso en la categoría aparecen a la derecha.
 
@@ -66,7 +66,7 @@ Al seleccionar un proceso, aparecen la ficha Formulario y la ficha Detalles. Si 
    >
    >La opción sin conexión solo está disponible para PDF forms.
 
-## Añadir notas y anexos {#adding-notes-and-attachments}
+## Añadiendo notas y anexos {#adding-notes-and-attachments}
 
 Puede agregar notas y archivos adjuntos a un proceso si el proceso lo permite. Puede proporcionar permisos a otros usuarios que participen en el proceso para la vista, actualización y eliminación de notas o archivos adjuntos.
 
@@ -80,9 +80,9 @@ Puede agregar varias notas, editarlas y eliminarlas. Cada nota tiene un título,
 * Leer/Eliminar
 * Sin acceso
 
-1. Abra una tarea y haga clic en la ficha **Notas** , si el proceso lo permite.
-1. Escriba un título para la nota en el cuadro **Título** y escriba el texto de la nota en el cuadro **Nota** .
-1. Seleccione el nivel de **permisos** de la nota para otros usuarios que participen en el proceso.
+1. Abra una tarea y haga clic en la ficha **Notas**, si el proceso lo permite.
+1. Escriba un título para la nota en el cuadro **Título** y escriba el texto de la nota en el cuadro **Nota**.
+1. Seleccione el nivel **Permisos** para la nota para otros usuarios que participen en el proceso.
 1. Haga clic en **Aceptar**. Se adjunta al formulario un archivo de texto que contiene la nota. Puede actualizar una nota haciendo clic en ella y modificando directamente el texto. Puede eliminar una nota haciendo clic en el botón **Eliminar** ![Imagen de una papelera](assets/icondelete.png) al lado de la nota.
 
 ### Añadir un archivo adjunto {#add-an-attachment}
@@ -95,12 +95,12 @@ También puede agregar sus comentarios sobre el archivo adjunto. Puede definir u
 * Leer/Eliminar
 * Sin acceso
 
-1. Haga clic en la ficha **Archivos adjuntos** y seleccione **Datos adjuntos**.
+1. Haga clic en la ficha **Datos adjuntos** y seleccione **Datos adjuntos**.
 1. Haga clic en **Examinar** para seleccionar el archivo que desea adjuntar.
-1. Seleccione el nivel de **permisos** para los datos adjuntos de otros usuarios que participen en el proceso. Si selecciona **Leer**, otros usuarios pueden guardar el archivo localmente. Si selecciona uno de los permisos de edición, otros usuarios también pueden cargar un nuevo archivo para reemplazar los datos adjuntos.
+1. Seleccione el nivel **Permisos** para los datos adjuntos de otros usuarios que participen en el proceso. Si selecciona **Leer**, otros usuarios pueden guardar el archivo localmente. Si selecciona uno de los permisos de edición, otros usuarios también pueden cargar un nuevo archivo para reemplazar los datos adjuntos.
 1. Haga clic en **Aceptar**. El archivo se adjunta al formulario. Puede eliminar un archivo haciendo clic en el botón **Eliminar** ![Imagen de una papelera](assets/icondelete.png) al lado del archivo adjunto.
 
-## Guardar copias de borrador de formularios {#saving-draft-copies-of-forms}
+## Guardar copias preliminares de formularios {#saving-draft-copies-of-forms}
 
 Si debe completar y enviar un formulario más adelante, puede guardar una copia borrador de un formulario para que no pierda el trabajo existente. Los borradores se agregan a la categoría Borradores de la página Tareas pendientes.
 
@@ -118,7 +118,7 @@ Además, puede configurar el espacio de trabajo para guardar automáticamente la
 
 ### Volver a abrir una copia de borrador {#reopen-a-draft-copy}
 
-1. En la página Tareas pendientes, seleccione la cola **Borradores** y haga clic en la copia de borrador del formulario.
+1. En la página Tareas pendientes, seleccione la cola **Borradores** y haga clic en el borrador del formulario.
 
    Si el formulario contiene una serie de paneles, es posible que tenga que ir al panel donde finalizó la última sesión.
 
@@ -128,7 +128,7 @@ Puede agregar cualquier proceso a la categoría Favoritos. Al configurar los fav
 
 >[!NOTE]
 >
->Si normalmente realiza inicios en los procesos al utilizar el espacio de trabajo de AEM Forms, puede definir la preferencia Ubicación de Inicio para que muestre automáticamente la categoría Favoritos al inicio del espacio de trabajo de AEM Forms. Para obtener más información, consulte Administración de preferencias en [Introducción al espacio de trabajo](/help/forms/using/getting-started-livecycle-html-workspace.md)de AEM Forms.
+>Si normalmente realiza inicios en los procesos al utilizar el espacio de trabajo de AEM Forms, puede definir la preferencia Ubicación de Inicio para que muestre automáticamente la categoría Favoritos al inicio del espacio de trabajo de AEM Forms. Para obtener más información, consulte Administración de preferencias en [Introducción al área de trabajo de AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Para marcar un proceso como favorito, seleccione la tarea en su categoría y haga clic en la estrella hueca. La estrella se vuelve dorada. Para desmarcar un proceso como favorito, vuelva a hacer clic en la estrella dorada.
 

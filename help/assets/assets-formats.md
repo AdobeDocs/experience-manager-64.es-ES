@@ -289,13 +289,13 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | aplicación/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| TTF | application/rtf |  |  |
+| RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | vídeo/dvd |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |

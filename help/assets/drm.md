@@ -192,7 +192,7 @@ Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Descargar]** sólo se habilita cuando se decide aceptar el contrato de licencia para un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo se enumerarán en el panel los recursos protegidos y la opción **[!UICONTROL Descargar]** se habilitará para descargar los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
+   >La opción **[!UICONTROL Descargar]** solo está habilitada cuando decide aceptar el contrato de licencia para un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo se enumerarán en el panel los recursos protegidos y la opción **[!UICONTROL Descargar]** se habilitará para descargar los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 

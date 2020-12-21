@@ -34,7 +34,7 @@ Cuando un documento está protegido por una política y se revocan los privilegi
 * Si el documento está en línea, los cambios se aplican inmediatamente a menos que el usuario tenga el documento abierto. En este caso, el usuario debe cerrar el documento para que los cambios surtan efecto.
 * Si un destinatario utiliza el documento sin conexión (por ejemplo, en un portátil), los cambios tendrán efecto la próxima vez que el destinatario se sincronice con la seguridad del documento abriendo cualquier documento protegido por una política.
 
-## Información de Vista sobre un documento {#view-information-about-a-document}
+## Información de vista sobre un documento {#view-information-about-a-document}
 
 Para cada documento que aparece en la página Documentos, puede ver el nombre del documento, el nombre del editor, el nombre de la política y la fecha en que se protegió el documento. Si se ha eliminado la directiva que protegía un documento, el ID de directiva se muestra en Nombre de directiva.
 
@@ -44,28 +44,28 @@ También puede vista más detalles, que se describen a continuación, sobre un d
 >
 >Debe utilizar el vínculo Nombre de directiva de la página Detalles de Documento para acceder a las directivas que se generan automáticamente en Microsoft Outlook para destinatarios de un documento que está adjunto a un mensaje de correo electrónico. Estas directivas no aparecen en la página de directivas.
 
-**Nombre del Documento:** Nombre del documento seleccionado.
+**Nombre del documento:** el nombre del documento seleccionado.
 
-**ID de Documento:** Identificador único que la seguridad de documento asigna cuando se aplica una política al documento. La seguridad de documento utiliza este número para rastrear el documento.
+**ID de documento:** identificador único que la seguridad de documento asigna cuando se aplica una política al documento. La seguridad de documento utiliza este número para rastrear el documento.
 
-**Estado del Documento:** Estado del documento (por ejemplo, activo o revocado).
+**Estado de documento:** Estado del documento (por ejemplo, activo o revocado).
 
-**Editor:** Nombre del usuario que adjuntó la directiva al documento.
+**Publicador:** Nombre del usuario que adjuntó la directiva al documento.
 
-**Nombre de directiva:** Nombre de la directiva que se utiliza para proteger el documento. Puede hacer clic en el nombre para abrir la directiva. Debe utilizar este vínculo para acceder a las directivas que Acrobat genera para destinatarios de un documento que está adjunto a un mensaje de correo electrónico en Outlook. Estas directivas no aparecen en la página Políticas.
+**Nombre de directiva:** el nombre de la directiva que se utiliza para proteger el documento. Puede hacer clic en el nombre para abrir la directiva. Debe utilizar este vínculo para acceder a las directivas que Acrobat genera para destinatarios de un documento que está adjunto a un mensaje de correo electrónico en Outlook. Estas directivas no aparecen en la página Políticas.
 
-**Tipo de directiva:** El tipo de directiva que se aplicó al documento.
+**Tipo de directiva:** el tipo de directiva que se aplicó al documento.
 
-**Fecha de publicación:** La fecha en que se aplicó la política al documento.
+**Fecha de publicación:** la fecha en que se aplicó la política al documento.
 
-**Iteraciones relacionadas:** Si el documento tiene iteraciones relacionadas, este elemento también aparece en la lista. Haga clic en el vínculo para vista de la lista de iteraciones relacionadas para el documento.
+**Iteraciones relacionadas:** si el documento tiene iteraciones relacionadas, este elemento también aparece en la lista. Haga clic en el vínculo para vista de la lista de iteraciones relacionadas para el documento.
 
 Los usuarios pueden realizar vistas de información sobre sus documentos protegidos. Los administradores pueden vista información sobre documentos que cualquier usuario haya protegido con una política. Los coordinadores de conjuntos de políticas pueden vista información sobre documentos protegidos por políticas de sus conjuntos de políticas.
 
 1. En la página de seguridad de documento, haga clic en Documentos.
 1. En la lista de documentos, haga clic en el documento correspondiente. Se abre la página Detalles del Documento, que muestra información detallada sobre el documento. Esta página también proporciona opciones para anular el acceso a documentos, cambiar la directiva y ver eventos relacionados con este documento.
 
-## iteraciones relacionadas con la Vista para un documento {#view-related-iterations-for-a-document}
+## iteraciones relacionadas con la vista para un documento {#view-related-iterations-for-a-document}
 
 Si está habilitado el seguimiento de iteraciones relacionadas, puede rastrear las versiones de un documento que han guardado varios usuarios. Esta función solo es compatible con determinadas aplicaciones, como PTC Pro/ENGINEER Wildfire.
 
@@ -73,26 +73,26 @@ Esta función resulta útil cuando varios usuarios colaboran y guardan distintas
 
 Si esta función está habilitada, puede realizar la vista de las iteraciones relacionadas de un documento desde la página Documentos.
 
-1. Vista de la página Detalle de Documento para un documento. (Consulte la información de [Vista sobre un documento](controlling-access-policy-protected-documents.md#view-information-about-a-document)).
+1. Vista de la página Detalle de Documento para un documento. (Consulte [información de Vista sobre un documento](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
 1. Haga clic en Vista Iteraciones relacionadas. La opción solo está disponible si la función está habilitada. Aparece la lista de iteraciones relacionadas. Para cada iteración, puede realizar la vista de la siguiente información:
 
    * **Iteración:** El nombre del archivo. Puede ser diferente del nombre de archivo original y tiene un número de versión anexado al final.
-   * **Editor:** El editor del documento original.
-   * **Creado por:** Usuario que guardó la iteración.
-   * **Fecha de creación:** Fecha y hora en que se guardó la iteración.
-   * **Política:** Política que protege la iteración. Diferentes iteraciones pueden estar protegidas por diferentes políticas.
+   * **Publicador:** El editor del documento original.
+   * **Creado por:** el usuario que guardó la iteración.
+   * **Fecha de creación:** fecha y hora en que se guardó la iteración.
+   * **Política:** la política que protege la iteración. Diferentes iteraciones pueden estar protegidas por diferentes políticas.
 
 1. Para mostrar la página Detalles de Documento de esa iteración, haga clic en el nombre de archivo de una iteración.
 
-## Revocación y restablecimiento del acceso a los documentos {#revoking-and-reinstating-access-to-documents}
+## Revocar y restablecer el acceso a documentos {#revoking-and-reinstating-access-to-documents}
 
 Puede revocar y restablecer el acceso a documentos protegidos por políticas:
 
-**Usuarios:** Puede revocar o restablecer el acceso a documentos que proteja con sus propias políticas personales o con políticas compartidas para las que la función de revocación esté habilitada para el usuario que aplique la política. Los usuarios que no pueden anular el acceso a un documento o cambiar una política deben ponerse en contacto con el administrador.
+**Usuarios:** puede revocar o restablecer el acceso a documentos que proteja con sus propias políticas personales o con políticas compartidas para las que la función de revocación esté habilitada para el usuario que aplique la política. Los usuarios que no pueden anular el acceso a un documento o cambiar una política deben ponerse en contacto con el administrador.
 
-**Administradores:** Puede revocar o restablecer los privilegios de acceso a cualquier documento protegido por una política, incluidos los protegidos por políticas personales o compartidas. Si un administrador anula el acceso a un documento protegido con una directiva compartida, solo un administrador puede restablecer los privilegios de acceso para ese documento.
+**Administradores:** puede revocar o restablecer los privilegios de acceso a cualquier documento protegido por una política, incluidos los protegidos por políticas personales o compartidas. Si un administrador anula el acceso a un documento protegido con una directiva compartida, solo un administrador puede restablecer los privilegios de acceso para ese documento.
 
-**Coordinadores de conjuntos de políticas:** Puede revocar o restablecer los privilegios de acceso para documentos que protegen las políticas de sus conjuntos de políticas.
+**Coordinadores de conjuntos de políticas:** puede revocar o restablecer privilegios de acceso para documentos que protegen las políticas de sus conjuntos de políticas.
 
 Cuando se revocan o restablecen los privilegios de acceso de documento, el cambio se aplica en estos momentos:
 
@@ -106,8 +106,8 @@ Cuando se revocan o restablecen los privilegios de acceso de documento, el cambi
 1. Seleccione la casilla de verificación situada junto al documento correspondiente y haga clic en Revocar. Puede anular el acceso a varios documentos a la vez.
 1. Seleccione un mensaje para mostrar a los usuarios que intenten abrir el documento después de revocarlo:
 
-   * **Mensaje general:** Indica que el autor revocó el documento
-   * **Documento finalizado:** Indica que el autor ha terminado el documento
+   * **Mensaje general:** indica que el autor revocó el documento
+   * **Documento finalizado:** indica que el autor ha terminado el documento
    * **Documento revisado**: Indica que el autor revisó el documento
 
 1. (Opcional) Si hay una versión más reciente del documento disponible, introduzca la URL y haga clic en Probar para comprobar la URL.
@@ -146,13 +146,13 @@ Puede buscar documentos en la página Documentos mediante una combinación de cr
 
 Algunas opciones de búsqueda adicionales solo están disponibles para los administradores:
 
-**ID de Documento:** Número de ID único que la seguridad de documento asigna al documento cuando se aplica la política.
+**ID de documento:número de ID** único que la seguridad de documento asigna al documento cuando se aplica la política.
 
-**Nombre del Documento:** Nombre del documento.
+**Nombre del documento:** Nombre del documento.
 
-**Nombre del editor:** Nombre del usuario que adjuntó la directiva al documento. Puede seleccionar el usuario de todos los dominios o de un dominio especificado.
+**Nombre del publicador:** Nombre del usuario que adjuntó la directiva al documento. Puede seleccionar el usuario de todos los dominios o de un dominio especificado.
 
-**Id. de directiva:** Número de ID de la directiva adjunta al documento.
+**Id. de directiva:número** de ID de la directiva adjunta al documento.
 
 **Nombre de directiva:** Nombre de la directiva adjunta al documento.
 
@@ -196,11 +196,12 @@ Puede utilizar la compatibilidad con la página 0 (Documento de envoltorio) para
 
 Utilice los siguientes procesos en el área de trabajo:
 
-**ProtegerDocumento con portada:** Protege un documento PDF con la política especificada y agrega una portada al documento
+**Documento de Protect con portada:** protege un documento de PDF con la política especificada y agrega una portada al documento
 
-**Extraer Documento protegido:** Extrae el documento PDF protegido por políticas del documento PDF con portada
+**Extraer Documento protegido:** Extrae el documento PDF protegido por políticas del documento PDF con la portada
 
 Utilice las siguientes API de seguridad de documento:
 
-**protectedDocumentWithCoverPage:** Protege un PDF determinado con la política especificada y devuelve un documento con una portada y el documento protegido como`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` extractProtectedDocument adjunto **:** Extrae el documento protegido, que es un archivo adjunto en el documento con portada. El documento con la portada se puede crear con el método protectedDocumentWithCoverPage
+**protectedDocumentWithCoverPage:** Protege un PDF determinado con la política especificada y devuelve un documento con una portada y el documento protegido como 
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extrae el documento protegido, que es un archivo adjunto en el documento con portada. El documento con la portada se puede crear con el método protectedDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

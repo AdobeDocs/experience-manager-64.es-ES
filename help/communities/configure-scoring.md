@@ -29,8 +29,8 @@ Los detalles de la configuración de la función se describen en
 Esta página contiene detalles técnicos adicionales:
 
 * Cómo [mostrar un distintivo](#displaying-badges) como imagen o texto
-* Cómo activar el registro [de depuración extenso](#debug-log-for-scoring-and-badging)
-* Cómo [acceder a UGC](#ugc-for-scoring-and-badging) en relación con la puntuación y la insignia
+* Cómo activar el registro extenso [de depuración](#debug-log-for-scoring-and-badging)
+* Cómo [acceder a UGC](#ugc-for-scoring-and-badging) relacionado con la puntuación y la insignia
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ Esta página contiene detalles técnicos adicionales:
 
 Indica si un distintivo se muestra como texto o como imagen y se controla en el lado del cliente en la plantilla HBS.
 
-Por ejemplo: buscar `this.isAssigned` en `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+Por ejemplo, busque `this.isAssigned` en `/libs/social/forum/components/hbs/topic/list-item.hbs`,:
 
 ```
 {{#each author.badges}}
@@ -72,27 +72,27 @@ Si es true, isAssigned indica que el distintivo se asignó a una función y que 
 
 Si es false, is Assigned indica que el distintivo se ha concedido para una puntuación ganada y que el distintivo debe mostrarse como una imagen.
 
-Cualquier cambio en este comportamiento se debe realizar en una secuencia de comandos personalizada (ya sea sobrescribir o superponer). Consulte Personalización [del lado del cliente](client-customize.md).
+Cualquier cambio en este comportamiento se debe realizar en una secuencia de comandos personalizada (ya sea sobrescribir o superponer). Consulte [Personalización del cliente](client-customize.md).
 
 ## Registro de depuración para Puntuación e Insignia {#debug-log-for-scoring-and-badging}
 
 Para ayudar a depurar la puntuación y el distintivo, se puede configurar un archivo de registro personalizado. El contenido de este archivo de registro se puede proporcionar a la asistencia al cliente si se producen problemas con la función.
 
-Para obtener instrucciones detalladas, visite [Crear un archivo](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file)de registro personalizado.
+Para obtener instrucciones detalladas, visite [Crear un archivo de registro personalizado](../../help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 Para configurar rápidamente un archivo de registro de inclinación:
 
-1. Acceda, por ejemplo, a la compatibilidad con **[!UICONTROL el registro de la consola web de]** Adobe Experience Manager
+1. Acceda a la **[!UICONTROL Compatibilidad con el registro de la consola web de Adobe Experience Manager]**, por ejemplo
 
    * http://localhost:4502/system/console/slinglog
 
 1. Seleccione **[!UICONTROL Añadir nuevo registrador]**
 
-   1. Seleccionar `DEBUG` para nivel **[!UICONTROL de registro]**
-   1. Escriba un nombre para el archivo **** de registro, por ejemplo
+   1. Seleccione `DEBUG` para **[!UICONTROL Nivel de registro]**
+   1. Escriba un nombre para **[!UICONTROL Archivo de registro]**, por ejemplo
 
       * logs/scoring-debug.log
-   1. Introduzca dos entradas **[!UICONTROL Logger]** (clase) (mediante `+` icono)
+   1. Introduzca dos entradas **[!UICONTROL Logger]** (clase) (con el icono `+`)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -100,36 +100,36 @@ Para configurar rápidamente un archivo de registro de inclinación:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![chlimage_1-247](assets/chlimage_1-248.png)
 
 Para ver las entradas de registro:
 
 * Desde la consola web
 
    * En el menú **[!UICONTROL Estado]**
-   * Seleccionar archivos **[!UICONTROL de registro]**
+   * Seleccione **[!UICONTROL Archivos de registro]**
    * Busque el nombre del archivo de registro, como `scoring-debug`
 
 * En el disco local del servidor
 
-   * El archivo de registro se encuentra en &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+   * El archivo de registro se encuentra en &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log.
    * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
-## UGC para puntaje y señalización {#ugc-for-scoring-and-badging}
+## UGC para Puntuación e Insignia {#ugc-for-scoring-and-badging}
 
-Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte Información general sobre el Almacenamiento [de contenido](working-with-srp.md) de la comunidad y el proveedor de recursos de [Almacenamiento](srp.md)).
+Es posible realizar una vista del UGC en relación con la puntuación y la insignia cuando el SRP elegido sea JSRP o MSRP, pero no ASRP. (Si no está familiarizado con estos términos, consulte [Almacenamiento de contenido de la comunidad](working-with-srp.md) y [Información general del proveedor de recursos de Almacenamiento](srp.md)).
 
-Las descripciones para acceder a los datos de puntuación y de identificación utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+Las descripciones para acceder a los datos de puntuación y marca utilizan JSRP, ya que el UGC es fácilmente accesible mediante [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP del autor**: experimentar en el entorno del autor resulta en UGC que solo es visible desde el entorno del autor.
 
-**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en modo [](../../help/sites-administering/production-ready.md) de producción (nosamplecontent runmode), será necesario [habilitar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
+**JSRP al publicar**: del mismo modo, si realiza pruebas en el entorno de publicación, será necesario acceder a CRXDE Lite con privilegios de administrador en una instancia de publicación. Si la instancia de publicación se está ejecutando en [modo de producción](../../help/sites-administering/production-ready.md) (nosamplecontent runmode), será necesario [habilitar CRXDE Lite](../../help/sites-administering/enabling-crxde-lite.md).
 
-La ubicación de base de UGC en el JSRP es `/content/usergenerated/asi/jcr/`.
+La ubicación base de UGC en JSRP es `/content/usergenerated/asi/jcr/`.
 
-### API de puntaje y señalización {#scoring-and-badging-apis}
+### API de Puntuación y Badging {#scoring-and-badging-apis}
 
 Las siguientes API están disponibles para su uso:
 
@@ -146,7 +146,7 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
 1. Un sitio AEM con un identificador único (sitio de comunidad creado mediante un asistente):
 
-   * Uso del sitio Tutorial de introducción (participación) creado durante el tutorial de [introducción](getting-started.md)
+   * Uso del sitio Tutorial de introducción (participación) creado durante el [tutorial de introducción](getting-started.md)
    * Localizar el nodo de la página del foro
 
       * `/content/sites/engage/en/forum/jcr:content`
@@ -172,9 +172,9 @@ Las capturas de pantalla de los datos del repositorio provienen de la configurac
 
 
 
-1. Un sitio AEM *sin* una identificación única:
+1. Un sitio AEM *sin* un identificador único:
 
-   * Uso de la guía Componentes [de comunidad](components-guide.md)
+   * Uso de la guía [Community Components](components-guide.md)
    * Localizar el nodo de la página del foro
 
       * `/content/community-components/en/forum/jcr:content`
@@ -218,7 +218,7 @@ Como un usuario ha obtenido dos insignias de bronce y ha recibido una insignia d
 >Este ejemplo no sigue estas optimizaciones:
 >
 >* los nombres de las reglas de puntuación deben ser globalmente únicos; no deben terminar con el mismo nombre.\
-   >  Un ejemplo de lo que *no* se debe hacer:\
+   >  Un ejemplo de lo que *no* debe hacer:\
    >  /etc/community/scoring/rules/site1/forums-scoring\
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
@@ -229,9 +229,9 @@ Como un usuario ha obtenido dos insignias de bronce y ha recibido una insignia d
 
 
 
-### Acceso a UGC de puntuación {#access-scoring-ugc}
+### Acceso a UGC de Puntuación {#access-scoring-ugc}
 
-Se prefiere el uso de las [API](#scoring-and-badging-apis) .
+Se prefiere el uso de las [API](#scoring-and-badging-apis).
 
 Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene puntuaciones es
 
@@ -243,17 +243,17 @@ Para el sitio de participación en la Geometrixx, el usuario y su puntuación se
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Para el sitio de la guía de componentes de comunidad, el usuario y su puntuación se encuentran en una ruta construida con el nombre de la regla de puntuación, un identificador predeterminado ( `default-site`), un identificador único y el identificador del usuario:
+Para el sitio de la guía de componentes de comunidad, el usuario y su puntuación se encuentran en una ruta construida con el nombre de la regla de puntuación, una identificación predeterminada ( `default-site`), una identificación única y la identificación del usuario:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-La puntuación se almacena en la propiedad `scoreValue_tl` que sólo puede contener un valor o hacer referencia indirectamente a un atomicCounter.
+La puntuación se almacena en la propiedad `scoreValue_tl`, que puede contener un valor directamente o hacer referencia indirectamente a atomicCounter.
 
 ![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Acceso a la insignia UGC {#access-badging-ugc}
 
-Se prefiere el uso de las [API](#scoring-and-badging-apis) .
+Se prefiere el uso de las [API](#scoring-and-badging-apis).
 
 Para fines de investigación, con JSRP por ejemplo, la carpeta base que contiene información sobre las insignias asignadas o adjudicadas es
 
@@ -263,7 +263,7 @@ Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distinti
 
 * /home/users/community/w271OOup2Z4DjnOQrviv/perfil/badges
 
-#### Distintivo concedido {#awarded-badge}
+#### Insignia otorgada {#awarded-badge}
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -275,6 +275,6 @@ Seguido de la ruta al perfil del usuario, finalizando en una carpeta de distinti
 
 Para mostrar una lista ordenada de miembros basada en puntos:
 
-* [Función](functions.md#leaderboard-function) de tabla de clasificación para su inclusión en un sitio de comunidad o una plantilla de grupo.
-* [Componente](enabling-leaderboard.md)de tabla de clasificación, el componente destacado de la función Mesa de clasificación, para la creación de páginas.
+* [Función de ](functions.md#leaderboard-function) tabla de clasificación para incluirla en un sitio de comunidad o en una plantilla de grupo.
+* [Componente](enabling-leaderboard.md) de tabla de clasificación, el componente destacado de la función Mesa de clasificación, para la creación de páginas.
 

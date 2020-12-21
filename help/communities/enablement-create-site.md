@@ -22,11 +22,11 @@ ht-degree: 2%
 
 ## Crear sitio de comunidad {#create-community-site}
 
-[La creación](sites-console.md) de sitios de comunidad emplea un asistente que lo guía a través de los pasos para crear un sitio de comunidad. Es posible avanzar al `Next`paso o `Back`al paso anterior antes de comprometer el sitio en el paso final.
+[La ](sites-console.md) creación del sitio de comunidad emplea un asistente que lo guía a través de los pasos para crear un sitio de comunidad. Es posible avanzar al `Next`paso o `Back`al paso anterior antes de comprometer el sitio en el paso final.
 
 Para empezar a crear un nuevo sitio de comunidad:
 
-Uso de la instancia de [autor](http://localhost:4502/)
+Uso de la instancia de autor [](http://localhost:4502/)
 
 * Iniciar sesión con privilegios de administrador
 * Vaya a **[!UICONTROL Comunidades > Sitios]**
@@ -37,25 +37,25 @@ Uso de la instancia de [autor](http://localhost:4502/)
 
 ![enablementsitetemplate](assets/enablementsitetemplate.png)
 
-En el paso Plantilla **de** sitio, escriba un título, una descripción, el nombre de la dirección URL y seleccione una plantilla de sitio de comunidad, por ejemplo:
+En el paso **Plantilla de sitio**, escriba un título, una descripción, el nombre de la dirección URL y seleccione una plantilla de sitio de comunidad, por ejemplo:
 
 * **Título del sitio de la comunidad**: `Enablement Tutorial`
 
 * **Descripción del sitio de la comunidad**: `A site for enabling the community to learn.`
 
-* **Raíz** del sitio de la comunidad: (dejar en blanco para la raíz predeterminada `/content/sites`)
+* **Raíz** del sitio de la comunidad: (dejar en blanco para la raíz predeterminada  `/content/sites`)
 
 * **Configuraciones** de nube: (deje en blanco si no se especifica ninguna configuración de nube) proporcione la ruta a las configuraciones de nube especificadas.
-* **Idioma** base del sitio de la comunidad: (dejar intacto para un solo idioma: Inglés) utilice el menú desplegable para elegir uno *o más* idiomas básicos de los disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se creará un sitio de comunidad para cada idioma agregado y existirá dentro de la misma carpeta de sitio siguiendo las optimizaciones descritas en [Traducir contenido para sitios](../../help/sites-administering/translation.md)multilingües. La página raíz de cada sitio contendrá una página secundaria con el nombre del código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
+* **Idioma** base del sitio de la comunidad: (dejar intacto para un solo idioma: Inglés) utilice el menú desplegable para elegir uno  *o* varios idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se creará un sitio de comunidad para cada idioma agregado y existirá dentro de la misma carpeta de sitio siguiendo las optimizaciones descritas en [Traducir contenido para sitios multilingües](../../help/sites-administering/translation.md). La página raíz de cada sitio contendrá una página secundaria con el nombre del código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
 * **[!UICONTROL Nombre del sitio de la comunidad]**: `enable`
 
    * la dirección URL inicial se mostrará debajo del nombre del sitio de la comunidad
    * para una dirección URL válida, anexe un código de idioma base + &quot;.html&quot;
 
-      *por ejemplo*, http://localhost:4502/content/sites/ `enable/en.html`
+      *por ejemplo*, http://localhost:4502/content/sites/  `enable/en.html`
 
-* **[!UICONTROL Plantilla]** de sitio de referencia: desplegable para elegir `Reference Structured Learning Site Template`
+* **[!UICONTROL Plantilla]** de sitio de referencia: desplegable para elegir  `Reference Structured Learning Site Template`
 
 Seleccione **[!UICONTROL Siguiente]**
 
@@ -63,13 +63,13 @@ Seleccione **[!UICONTROL Siguiente]**
 
 El paso Diseño se presenta en dos secciones para seleccionar el tema y la pancarta de marca:
 
-#### COMMUNITY SITE THEME {#community-site-theme}
+#### TEMA DEL SITIO COMUNITARIO {#community-site-theme}
 
 Seleccione el estilo que desee aplicar a la plantilla. Cuando se selecciona, el tema se superpone con una marca de verificación.
 
 ![enablementsitetopic](assets/enablementsitetheme.png)
 
-#### COMMUNITY SITE BRANDING {#community-site-branding}
+#### MARCA DEL SITIO COMUNITARIO {#community-site-branding}
 
 (opcional) Cargue una imagen de pancarta para mostrarla en las páginas del sitio. La pancarta se fija en el borde izquierdo del explorador, entre el encabezado del sitio de la comunidad y el menú (vínculos de navegación). La altura de la pancarta se recorta a 120 píxeles. No se puede cambiar el tamaño del letrero para que se ajuste al ancho del navegador y a la altura de 120 píxeles.
 
@@ -79,15 +79,15 @@ Seleccione **[!UICONTROL Siguiente]**.
 
 ### Paso 3: Configuración {#step-settings}
 
-En el paso Configuración, antes de seleccionar `Next`, fíjese en que hay siete secciones que proporcionan acceso a configuraciones que incluyen administración de usuarios, etiquetado, funciones, moderación, análisis, traducción y habilitación.
+En el paso Configuración, antes de seleccionar `Next`, observe que hay siete secciones que proporcionan acceso a configuraciones que incluyen administración de usuarios, etiquetado, funciones, moderación, análisis, traducción y habilitación.
 
-#### USER MANAGEMENT {#user-management}
+#### ADMINISTRACIÓN DE USUARIOS {#user-management}
 
-Se recomienda que las comunidades [de](overview.md#enablement-community) habilitación sean privadas.
+Se recomienda que [comunidades habilitadoras](overview.md#enablement-community) sean privadas.
 
 Un sitio de la comunidad es privado cuando se deniega el acceso a los visitantes anónimos del sitio, es posible que no se registre por sí mismo y que no utilice el inicio de sesión en redes sociales.
 
-Asegúrese de que la mayoría de las casillas de verificación no estén marcadas para Administración [de usuarios](sites-console.md#user-management):
+Asegúrese de que la mayoría de las casillas de verificación no estén marcadas para [Administración de usuarios](sites-console.md#user-management):
 
 * NO permitir que los visitantes del sitio se automatriculen
 * NO permitir que visitantes anónimos del sitio realicen vistas en el sitio
@@ -97,11 +97,11 @@ Asegúrese de que la mayoría de las casillas de verificación no estén marcada
 
 ![chlimage_1-285](assets/chlimage_1-285.png)
 
-#### TAGGING {#tagging}
+#### ETIQUETADO {#tagging}
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres definidas previamente mediante la Consola [de](../../help/sites-administering/tags.md#tagging-console) etiquetado (como la Área de nombres [](enablement-setup.md#create-tutorial-tags)Tutorial).
+Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando AEM Áreas de nombres previamente definidas mediante la [Consola de etiquetado](../../help/sites-administering/tags.md#tagging-console) (como la [Área de nombres del tutorial](enablement-setup.md#create-tutorial-tags)).
 
-Además, la selección de Áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos](tag-resources.md) de habilitación para obtener información importante.
+Además, la selección de Áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir los catálogos y los recursos de habilitación. Consulte [Etiquetado de recursos de habilitación](tag-resources.md) para obtener información importante.
 
 La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Por ejemplo,
 
@@ -112,24 +112,24 @@ La búsqueda de Áreas de nombres es sencilla mediante la búsqueda por tipo. Po
 
 ### ROLES {#roles}
 
-[Las funciones](users.md) de miembro de la comunidad se asignan mediante la configuración de la sección Roles.
+[Las ](users.md) funciones de miembros de la comunidad se asignan mediante la configuración de la sección Roles.
 
 Para permitir que un miembro de la comunidad (o grupo de miembros) experimente el sitio como administrador de la comunidad, utilice la búsqueda de tipo por adelantado y seleccione el nombre del miembro o grupo en las opciones de la lista desplegable.
 
 Por ejemplo,
 
 * Escriba &quot;q&quot;
-* Seleccionar [Cuinn Harper](enablement-setup.md#publishcreateenablementmembers)
+* Seleccione [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[El servicio](deploy-communities.md#tunnel-service-on-author) de túnel permite seleccionar miembros y grupos que solo existen en el entorno de publicación.
+>[El servicio ](deploy-communities.md#tunnel-service-on-author) de túnel permite seleccionar miembros y grupos que solo existen en el entorno de publicación.
 
 ![community_roles](assets/community_roles.png)
 
-#### MODERATION {#moderation}
+#### MODERACIÓN {#moderation}
 
-Acepte la configuración global predeterminada para [moderar](sites-console.md#moderation) el contenido generado por el usuario (UGC).
+Acepte la configuración global predeterminada para [moderar](sites-console.md#moderation) contenido generado por el usuario (UGC).
 
 ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -137,30 +137,32 @@ Acepte la configuración global predeterminada para [moderar](sites-console.md#m
 
 En el menú desplegable, seleccione el marco de servicios en la nube de Analytics configurado para este sitio de comunidad.
 
-La selección que se ve en la captura de pantalla, `Communities`es el ejemplo de marco de la documentación de [configuración.](analytics.md#aem-analytics-framework-configuration)
+La selección que se ve en la captura de pantalla, `Communities`, es el ejemplo del marco de trabajo de la documentación de configuración [.](analytics.md#aem-analytics-framework-configuration)
 
 ![chlimage_1-288](assets/chlimage_1-288.png)
 
-#### TRANSLATION {#translation}
+#### TRADUCCIÓN {#translation}
 
-La configuración [de](sites-console.md#translation) traducción especifica si se puede traducir o no UGC y en qué idioma, en caso afirmativo.
+La [configuración de traducción](sites-console.md#translation) especifica si se puede traducir o no UGC y en qué idioma, si es así.
 
-* Comprobar **[!UICONTROL Permitir traducción automática]**
+* Marque **[!UICONTROL Permitir traducción automática]**
 * Usar la configuración predeterminada
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-#### ENABLEMENT {#enablement}
+#### HABILITACIÓN {#enablement}
 
 Para una comunidad de habilitación, es necesario identificar uno o varios administradores de habilitación de la comunidad.
 
-* **[!UICONTROL Administradores]** de habilitación (requeridos) Miembros de la 
+* **[!UICONTROL Administradores]**
+ de habilitación (requeridos) Miembros de la 
 `Community Enablement Managers` están disponibles para ser seleccionados para administrar este sitio de comunidad.
 
    * Tipo &quot;s&quot;
    * Seleccione `Sirius Nilson`
 
-* **[!UICONTROL ID]** de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) en el sistema de informes de activación.
+* **[!UICONTROL ID]**
+ de organización de Marketing Cloud (opcional) El ID de una cuenta de Adobe Analytics que es necesario para incluir  [Video Heartbeat ](analytics.md#video-heartbeat-analytics) Analytics en el sistema de informes de habilitación.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -190,17 +192,22 @@ Al seleccionar el icono de elipses (icono Más acciones), aparecen las opciones 
 
 De izquierda a derecha están:
 
-* **Abrir sitio** Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición del autor, para agregar o configurar componentes de página
+* **Abrir**
+sitioSeleccione el icono de lápiz para abrir el sitio de la comunidad en modo de edición de autor, para agregar o configurar componentes de página
 
-* **Editar sitio** Seleccione el icono de propiedades para abrir el sitio de la comunidad y modificar las propiedades, como el título o cambiar el tema
+* **Editar**
+sitioSeleccione el icono de propiedades para abrir el sitio de la comunidad y modificar las propiedades, como el título o cambiar el tema
 
-* **Publicar sitio** Seleccione el icono mundial para publicar el sitio de la comunidad (en localhost:4503 de forma predeterminada)
+* **Publicar**
+sitioSeleccione el icono mundial para publicar el sitio de la comunidad (en localhost:4503 de forma predeterminada)
 
-* **Exportar sitio** Seleccione el icono de exportación para crear un paquete del sitio de la comunidad que se almacene en el administrador [de](../../help/sites-administering/package-manager.md) paquetes y se descargue.
+* **Exportar**
+sitioSeleccione el icono de exportación para crear un paquete del sitio de la comunidad que esté almacenado en el  [administrador de ](../../help/sites-administering/package-manager.md) paquetes y descargado.
 
    Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
-* **Eliminar sitio** Para eliminar el sitio de la comunidad, seleccione el icono Eliminar sitio que aparece al pasar el ratón sobre el sitio en la consola Sitio de comunidades. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
+* **Eliminar**
+sitioPara eliminar el sitio de la comunidad, seleccione el icono Eliminar sitio que aparece al pasar el ratón sobre el sitio en la consola Sitio de comunidades. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
 
 ![enablesiteactions](assets/enablesiteactions.png)
 
@@ -216,34 +223,34 @@ Habrá una indicación de que el sitio fue publicado.
 
 ## Usuarios y grupos de usuarios de la comunidad {#community-users-user-groups}
 
-### Aviso a nuevos grupos de usuarios de la comunidad {#notice-new-community-user-groups}
+### Aviso de nuevos grupos de usuarios de la comunidad {#notice-new-community-user-groups}
 
-Junto con el nuevo sitio de comunidad, se crean nuevos grupos de usuarios que tienen los permisos adecuados establecidos para diversas funciones administrativas. Para obtener más información, visite Grupos [de usuarios para sitios](users.md#usergroupsforcommunitysites)de la comunidad.
+Junto con el nuevo sitio de comunidad, se crean nuevos grupos de usuarios que tienen los permisos adecuados establecidos para diversas funciones administrativas. Para obtener más información, visite [Grupos de usuarios para sitios de la comunidad](users.md#usergroupsforcommunitysites).
 
-Para este nuevo sitio de comunidad, dado el nombre del sitio &quot;habilitar&quot; en el paso 1, los nuevos grupos de usuarios que existen en el entorno de publicación pueden verse desde la consola [Miembros y grupos de](members.md#groups-console)comunidades:
+Para este nuevo sitio de comunidad, dado el nombre del sitio &quot;habilitar&quot; en el Paso 1, los nuevos grupos de usuarios que existen en el entorno de publicación pueden verse desde la [consola Miembros y grupos de comunidades](members.md#groups-console):
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
-### Asignar miembros a un grupo de miembros de habilitación de comunidad {#assign-members-to-community-enable-members-group}
+### Asignar miembros al grupo de miembros de habilitación de comunidad {#assign-members-to-community-enable-members-group}
 
-En el autor, con el servicio de túnel habilitado, es posible asignar los [usuarios creados durante la configuración](enablement-setup.md#publishcreateenablementmembers) inicial al grupo Miembros de la comunidad para el sitio de la comunidad recién creado.
+Al crear, con el servicio de túnel habilitado, es posible asignar los [usuarios creados durante la configuración inicial](enablement-setup.md#publishcreateenablementmembers) al grupo Miembros de la comunidad para el sitio de la comunidad recién creado.
 
 Mediante la consola Grupos de la comunidad, los miembros se pueden agregar de forma individual o mediante la pertenencia a un grupo.
 
-En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo `Community Enable Members` y como miembro `Quinn Harper`.
+En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo `Community Enable Members` así como como miembro `Quinn Harper`.
 
-* Vaya a la consola **[!UICONTROL Comunidades > Grupos]** .
-* Seleccionar grupo de miembros de activación **[!UICONTROL de comunidad]**
-* Ingrese `ski` en el cuadro de búsqueda **[!UICONTROL Añadir miembros al grupo]**
-* Seleccionar clase **[!UICONTROL de esquí de]** comunidad (grupo de alumnos)
-* Ingrese `quinn` en el cuadro de búsqueda
-* Seleccionar **[!UICONTROL Quinn Harper]** (contacto de recursos de habilitación)
+* Vaya a la consola **[!UICONTROL Comunidades > Grupos]**
+* Seleccionar grupo **[!UICONTROL Miembros de habilitación de comunidad]**
+* Escriba `ski` en el cuadro de búsqueda **[!UICONTROL Añadir miembros al grupo]**
+* Seleccione **[!UICONTROL Clase de esquí de la comunidad]** (grupo de alumnos)
+* Escriba `quinn` en el cuadro de búsqueda
+* Seleccione **[!UICONTROL Quinn Harper]** (contacto de recursos de habilitación)
 
 * Seleccione **[!UICONTROL Guardar]**
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 
-## Configuraciones al publicar {#configurations-on-publish}
+## Configuraciones en la publicación {#configurations-on-publish}
 
 ### http://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}
 
@@ -251,48 +258,48 @@ En este ejemplo, el grupo `Community Ski Class` se agrega como miembro del grupo
 
 ### Error de configuración para autenticación {#configure-for-authentication-error}
 
-Una vez que un sitio se ha configurado y se ha insertado para publicar, [configure la asignación](sites-console.md#configure-for-authentication-error) de inicio de sesión ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
+Una vez configurado y insertado un sitio para publicar, [configure la asignación de inicio de sesión](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) en la instancia de publicación. La ventaja es que cuando las credenciales de inicio de sesión no se especifican correctamente, el error de autenticación vuelve a mostrar la página de inicio de sesión del sitio de la comunidad con un mensaje de error.
 
 Añadir un `Login Page Mapping` como
 
 * /content/sites/enable/es/sign:/content/sites/enable/es
 
-### (Opcional) Cambiar la Página de inicio predeterminada {#optional-change-the-default-home-page}
+### (Opcional) Cambie la Página de inicio predeterminada {#optional-change-the-default-home-page}
 
 Al trabajar con el sitio de publicación con fines de demostración, puede resultar útil cambiar la página de inicio predeterminada al nuevo sitio.
 
-Para ello, es necesario utilizar [CRX|DE](http://localhost:4503/crx/de) Lite para editar la tabla de asignación [de](../../help/sites-deploying/resource-mapping.md) recursos al realizar la publicación.
+Para ello, es necesario utilizar [CRX|DE](http://localhost:4503/crx/de) Lite para editar la tabla [asignación de recursos](../../help/sites-deploying/resource-mapping.md) al publicar.
 
 Para empezar
 
 1. Al realizar la publicación, acceda a CRXDE e inicie sesión con privilegios de administrador
 
-   * Por ejemplo, vaya a [http://localhost:4503/crx/de](http://localhost:4503/crx/de) e inicie sesión con `admin/admin`
+   * Por ejemplo: vaya a [http://localhost:4503/crx/de](http://localhost:4503/crx/de) e inicie sesión con `admin/admin`
 
-1. En el navegador del proyecto, expanda `/etc/map`
-1. Seleccione el `http` nodo
+1. En el explorador del proyecto, expanda `/etc/map`
+1. Seleccione el nodo `http`
 
    * Seleccione **[!UICONTROL Crear nodo]**
 
-      * **Nombre** localhost.4503
+      * **** Namelocalhost.4503
 
-         ( *No* usar `:`)
+         (No use *no* `:`)
 
-      * **Type** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **** [Escritos:Asignación](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. Con el nodo recién creado `localhost.4503` seleccionado
+1. Con el nodo `localhost.4503` recién creado seleccionado
 
    * Añadir propiedad
 
-      * **Nombre** sling:match
-      * **Cadena de tipo**
-      * **Valor** localhost.4503/\$
+      * **** Namesling:match
+      * **** TypeString
+      * **** Valuelocalhost.4503/\$
 
          (Debe terminar con &#39;$&#39; char)
    * Añadir propiedad
 
-      * **Nombre** sling:internalRedirect
-      * **Cadena de tipo**
+      * **** Namesling:internalRedirect
+      * **** TypeString
       * **Valor** /content/sites/enable/en.html
 
 
@@ -304,31 +311,31 @@ Para empezar
 
 >[!NOTE]
 >
->Para deshabilitar, simplemente anteponga el valor de la `sling:match` propiedad con una &#39;x&#39; - `xlocalhost.4503/$` - y **[!UICONTROL Guardar todo]**.
+>Para deshabilitar, simplemente anteponga el valor de la propiedad `sling:match` con una &#39;x&#39; - `xlocalhost.4503/$` - y **[!UICONTROL Guardar todo]**.
 
 ![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Resolución de problemas: Error al guardar el mapa {#troubleshooting-error-saving-map}
 
-Si no se pueden guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;puntos&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que no `localhost`es un prefijo de Área de nombres válido.
+Si no puede guardar los cambios, asegúrese de que el nombre del nodo sea `localhost.4503`, con un separador de &#39;punto&#39; y no `localhost:4503` con un separador de &#39;dos puntos&#39;, ya que `localhost`no es un prefijo de Área de nombres válido.
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
 #### Resolución de problemas: Error al redirigir {#troubleshooting-fail-to-redirect}
 
-El valor &#39;**$**&#39; al final de la `sling:match`cadena de expresión normal es crucial, por lo que solo `http://localhost:4503/` se asigna exactamente, de lo contrario el valor de redireccionamiento se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
+La cadena &#39;**$**&#39; al final de la cadena `sling:match`de expresión regular es crucial, de modo que sólo se asigna exactamente `http://localhost:4503/`, de lo contrario el valor de redirección se antepone a cualquier ruta que pueda existir después de server:port en la dirección URL. Por lo tanto, cuando AEM intenta redireccionar a la página de inicio de sesión, se produce un error.
 
 ## Modificación del sitio de comunidad {#modifying-the-community-site}
 
-Una vez creado el sitio por primera vez, los autores pueden utilizar el icono [](sites-console.md#authoring-site-content) Abrir sitio para realizar actividades de creación AEM estándar.
+Una vez creado el sitio por primera vez, los autores pueden utilizar el [icono Abrir sitio](sites-console.md#authoring-site-content) para realizar actividades de creación de AEM estándar.
 
-Además, los administradores pueden utilizar el icono [](sites-console.md#modifying-site-properties) Editar sitio para modificar las propiedades del sitio, como el título.
+Además, los administradores pueden utilizar el [icono Editar sitio](sites-console.md#modifying-site-properties) para modificar las propiedades del sitio, como el título.
 
-Después de realizar cualquier modificación, recuerde **guardar** y volver a **publicar** el sitio.
+Después de cualquier modificación, recuerde **Guardar** y volver a-**Publicar** el sitio.
 
 >[!NOTE]
 >
->Si no está familiarizado con AEM, vista la documentación sobre el manejo [](../../help/sites-authoring/basic-handling.md) básico y una guía [rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vista la documentación sobre [administración básica](../../help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](../../help/sites-authoring/qg-page-authoring.md).
 
 ### Añadir un catálogo {#add-a-catalog}
 
@@ -338,7 +345,7 @@ Si no es así, la función de catálogo se puede añadir fácilmente. Esto permi
 
 Si la estructura del sitio ya contiene la función de catálogo, se puede cambiar su Título.
 
-Para modificar la estructura del sitio, vaya a la consola **[!UICONTROL Comunidades, Sitios]** , abra la `enable` carpeta y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
+Para modificar la estructura del sitio, navegue a la consola **[!UICONTROL Comunidades, Sitios]**, abra la carpeta `enable` y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
 
 Seleccione el panel ESTRUCTURA para agregar un catálogo o modificar uno existente:
 
@@ -357,4 +364,4 @@ Utilice el icono Posición para mover la función Catálogo a la segunda posici�
 
 Seleccione **[!UICONTROL Guardar]** en la esquina superior derecha para guardar los cambios en el sitio de comunidad.
 
-A continuación, vuelva a **publicar** el sitio.
+A continuación, vuelva a-**Publicar** el sitio.

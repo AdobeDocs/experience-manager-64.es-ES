@@ -41,20 +41,20 @@ Al crear un proceso, el usuario de Workbench puede especificar si una tarea pued
 
 ## Cambiar el estado de un usuario fuera de la oficina {#change-a-user-s-out-of-office-status}
 
-1. Busque al usuario, tal como se describe en la [Vista de la información](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de un usuario fuera de la oficina.
+1. Busque al usuario, tal como se describe en [Vista de la información fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Haga clic en el nombre del usuario que desee cambiar.
-1. En la lista *Nombre* de usuario actual, seleccione En la oficina o Fuera de la oficina.
+1. En la lista *Nombre de usuario* está actualmente, seleccione En la oficina o Fuera de la oficina.
 1. Haga clic en Guardar.
 
 ## Añadir un intervalo de fechas fuera de la oficina para un usuario {#add-an-out-of-office-date-range-for-a-user}
 
-1. Busque al usuario, tal como se describe en la [Vista de la información](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de un usuario fuera de la oficina.
+1. Busque al usuario, tal como se describe en [Vista de la información fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Haga clic en el nombre del usuario que desee cambiar.
 1. Haga clic en Añadir intervalo de fechas.
 1. Introduzca una hora de Inicio y una hora de finalización. Puede hacer clic en el icono Calendario para seleccionar una fecha. Si no especifica una hora de finalización, el usuario se configurará como fuera de la oficina indefinidamente.
 1. Haga clic en Guardar.
 
-## Asignar un usuario a tareas fuera de la oficina {#assign-a-user-for-out-of-office-tasks}
+## Asignar un usuario para tareas fuera de la oficina {#assign-a-user-for-out-of-office-tasks}
 
 Mientras un usuario no está en la oficina, puede asignar uno o más usuarios para realizar cualquier tarea nueva para el usuario. Puede configurar las siguientes configuraciones:
 
@@ -63,7 +63,7 @@ Mientras un usuario no está en la oficina, puede asignar uno o más usuarios pa
 * Asigne un usuario predeterminado que recibirá la mayoría de las tareas del usuario, pero especifique que las tareas de determinados procesos se reasignen a otros usuarios o se mantengan asignadas al usuario que no esté en la oficina.
 * No asigne un usuario predeterminado, sino que asigne determinadas tareas de determinados procesos a usuarios específicos.
 
-   1. Busque al usuario, tal como se describe en la [Vista de la información](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)de un usuario fuera de la oficina.
+   1. Busque al usuario, tal como se describe en [Vista de la información fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Haga clic en el nombre del usuario que desee cambiar.
    1. En la lista Usuario predeterminado para Tareas fuera de la oficina, seleccione un usuario de la lista. Si no desea designar un usuario predeterminado para que reciba los elementos reasignados, seleccione No asignar.
 

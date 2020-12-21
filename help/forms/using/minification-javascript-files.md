@@ -28,9 +28,9 @@ Para generar código reducido para cambios semánticos, siga estos pasos.
 
    >[!NOTE]
    >
-   >Consulte [Introducción a la personalización del espacio de trabajo](/help/forms/using/introduction-customizing-html-workspace.md) de AEM Forms para obtener más información sobre los paquetes.
+   >Consulte [Introducción a la personalización del espacio de trabajo de AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obtener más información sobre los paquetes.
 
-1. Actualice las rutas `main.js` ubicadas en client-html/src/main/webapp/js, para obtener modelos/vistas agregados/actualizados.
+1. Actualice las rutas en `main.js` ubicadas en client-html/src/main/webapp/js, para obtener modelos/vistas agregados/actualizados.
 
    Por ejemplo, la adición de un nuevo modelo Sharequeue, por ejemplo, mySharequeue, cambia:
 

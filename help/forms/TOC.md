@@ -33,14 +33,14 @@ ht-degree: 2%
       + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model.md)
       + [Tutorial: Aplicar reglas a los campos de formulario adaptables l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo del formulario adaptable](using/style-your-adaptive-form.md)
-   + Tutorial: Crear la primera comunicación interactiva {#create-first-interactive-communication}
+   + Tutorial: Cree su primera comunicación interactiva {#create-first-interactive-communication}
       + [Tutorial: Cree su primera comunicación interactiva](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planificar la comunicación interactiva](using/planning-interactive-communications.md)
       + [Tutorial: Crear modelo de datos de formulario](using/create-form-data-model-tutorial.md)
       + [Tutorial: Creación de fragmentos de documento](using/create-document-fragments.md)
       + [Tutorial: Creación de plantillas](using/create-templates-print-web.md)
       + [Tutorial: Crear comunicación interactiva](using/create-interactive-communication-tutorial.md)
-   + Materiales de referencia de AEM Forms {#aem-forms-reference-collaterals}
+   + Materiales colaterales de referencia de AEM Forms {#aem-forms-reference-collaterals}
       + [Configurar y configurar sitios de referencia de AEM Forms](using/setup-reference-sites.md)
       + [Recorrido por el sitio de referencia de We.Finance](using/finance-reference-site-walkthrough.md)
       + [Recorrido por el sitio de referencia We.Gov](using/gov-reference-site-walkthrough.md)
@@ -55,13 +55,13 @@ ht-degree: 2%
 + Instalar y configurar AEM Forms {#install-aem-forms}
    + [Arquitectura y topologías de implementación para AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Selección de un tipo de persistencia para una instalación de AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
-   + Instalación de AEM Forms en OSGi {#osgi-installation}
+   + Instalar AEM Forms en OSGi {#osgi-installation}
       + [Plataformas admitidas para formularios AEM en OSGi](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [Instalación y configuración de servicios de documento](using/install-configure-document-services.md)
       + [Instalación y configuración de capacidades de captura de datos](using/installing-configuring-aem-forms-osgi.md)
       + [Instalación y configuración del flujo de trabajo centrado en Forms en OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Instalación y configuración de Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
-   + Install AEM Forms on JEE {#jee-installation}
+   + Instalar AEM Forms en JEE {#jee-installation}
       + [Plataformas admitidas para formularios AEM en JEE](using/aem-forms-jee-supported-platforms.md)
       + [Instalación e implementación de AEM Forms en JEE con la llave en mano de JBoss](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [Instalación y configuración únicamente del servidor de seguridad de documento](using/installing-and-configuring-the-document-security-server.md)
@@ -112,7 +112,7 @@ ht-degree: 2%
    + [Obtención de documentos XDP y PDF en AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Importación y exportación de recursos a AEM Forms](using/import-export-forms-templates.md)
    + [Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables](using/supporting-new-language-localization.md)
-   + Gestión de datos de usuario {#handling-user-data}
+   + Administración de datos de usuario {#handling-user-data}
       + [Flujos de trabajo centrados en Forms en OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Administración de usuarios de Forms](using/user-management-handling-user-data.md)
       + [Flujos de trabajo JEE de Forms](using/forms-workflow-jee-handling-user-data.md)
@@ -120,7 +120,7 @@ ht-degree: 2%
       + [Administración de correspondencia](using/correspondence-management-handling-user-data.md)
       + [Integración con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [:Seguridad de los documentos](/help/forms/using/document-security-handling-user-data.md)
-   + Reforzar el Entorno de AEM Forms {#hardening-aem-forms-environment}
+   + Endurecimiento del Entorno de AEM Forms {#hardening-aem-forms-environment}
       + [Endurecimiento y seguridad de los formularios AEM en el entorno OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Consideraciones generales de seguridad para AEM Forms en JEE](using/general-security-considerations.md)
       + [Cómo endurecer el AEM Forms en el Entorno JEE](using/hardening-aem-forms-jee-environment.md)
@@ -132,7 +132,7 @@ ht-degree: 2%
    + [Crear modelo de datos de formulario](using/create-form-data-models.md)
    + [Trabajar con el modelo de datos de formulario](using/work-with-form-data-model.md)
    + [Usar modelo de datos de formulario](using/using-form-data-model.md)
-+ Forms adaptable: creación básica {#adaptive-forms-basic-authoring}
++ Forms adaptable - Creación básica {#adaptive-forms-basic-authoring}
    + [Prácticas recomendadas para usar formularios adaptables](using/adaptive-forms-best-practices.md) 
    + [Creación de un formulario adaptable](using/creating-adaptive-form.md)
    + [Fragmentos de formulario adaptables](using/adaptive-form-fragments.md)
@@ -157,7 +157,7 @@ ht-degree: 2%
    + [Métodos abreviados de teclado de AEM Forms](using/keyboard-shortcuts.md)
    + [Asociación de revisores de envío con un formulario](using/adding-reviewers-form.md)
    + [Creación de ayuda en contexto para campos de formulario](using/authoring-in-field-help.md)
-+ Forms adaptable: creación avanzada {#adaptive-forms-advanced-authoring}
++ Forms adaptable - Creación avanzada {#adaptive-forms-advanced-authoring}
    + [Creación de formularios adaptables con Esquema JSON](using/adaptive-form-json-schema-form-model.md)
    + [Creación de formularios adaptables mediante Esquema XML](using/adaptive-form-xml-schema-form-model.md)
    + [Uso de Adobe Sign en un formulario adaptable](using/working-with-adobe-sign.md)
@@ -245,7 +245,7 @@ ht-degree: 2%
    + [Integración del espacio de trabajo de formularios AEM con Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Uso de listas pendientes](using/todo-lists.md)
    + [Directrices para la resolución de problemas del espacio de trabajo de AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
-+ AEM Forms app {#aem-forms-app}
++ Aplicación de AEM Forms {#aem-forms-app}
    + [Introducción a la aplicación de AEM Forms](using/aem-forms-app.md)
    + [Configuración de entorno para la aplicación de AEM Forms](using/setup-environment-mobile-workspace.md)
    + [Configure el proyecto Xcode y cree la aplicación de iOS](using/setup-xcode-project-build-installer.md)
@@ -350,7 +350,7 @@ ht-degree: 2%
    + [Creación de una página de portal de formularios](using/creating-form-portal-page.md)
    + [API para trabajar con formularios enviados en el portal de formularios](using/report-submitted-data-forms.md)
    + [Almacenamiento personalizado para los borradores y el componente de envíos](using/adding-custom-storage-provider-forms.md)
-+ Servicios de documentos {#use-document-services}
++ Servicios de documento {#use-document-services}
    + [Visión general de AEM servicios de Documento](using/overview-aem-document-services.md)
    + [Servicio de Forms](using/forms-service.md)
    + [Servicio de salida](using/output-service.md)
@@ -435,7 +435,7 @@ ht-degree: 2%
       + [Administración de certificados](/help/forms/using/admin-help/certificates.md)
       + [Administración de credenciales de HSM](/help/forms/using/admin-help/hsm-credentials.md)
       + [Administración de credenciales locales](/help/forms/using/admin-help/local-credentials.md)
-   + Importación y gestión de aplicaciones y archivos {#import-manage-applications-archives}
+   + Importación y administración de aplicaciones y archivos {#import-manage-applications-archives}
       + [Cambiar el número de elementos que se muestran en las páginas Aplicaciones y servicios](/help/forms/using/admin-help/change-number-items-displayed-applications.md)
       + [Importar y administrar archivos](/help/forms/using/admin-help/import-archives.md)
       + [Importar y administrar aplicaciones](/help/forms/using/admin-help/import-applications.md)
@@ -476,7 +476,7 @@ ht-degree: 2%
       + [Configuración de SSL en Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
       + [Configuración de SSL para WebLogic Server](/help/forms/using/admin-help/configuring-ssl-weblogic-server.md)
       + [Configuración de SSL para el servidor de aplicaciones WebSphere](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
-   + Uso de la seguridad de documento {#work-with-document-security}
+   + Trabajar con seguridad de documento {#work-with-document-security}
       + [Seguridad de documento](/help/forms/using/admin-help/document-security.md)
       + [Envío de información segura de gran volumen](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
       + [Configuración de las opciones de cliente y servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
@@ -537,7 +537,7 @@ ht-degree: 2%
       + [Ejecución de AEM formularios en modo de mantenimiento](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + Mantenimiento de la base de datos de formularios AEM {#maintain-aem-forms-database}
       + [Base de datos DB2: Ejecución semanal de un proceso](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Umbral máximo de cursores abiertos de la base de datos Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [Umbral máximo de cursores abiertos de la base de datos de oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [Base de datos IBM DB2: Ejecución de comandos para mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Depuración de datos de proceso](/help/forms/using/admin-help/purging-process-data.md)
       + [Base de datos de Microsoft SQL Server: Ajustar la configuración](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
@@ -549,7 +549,7 @@ ht-degree: 2%
       + [Inicio y parada de WebLogic Server](/help/forms/using/admin-help/starting-stopping-weblogic-server.md)
       + [Mejora del rendimiento del servidor de aplicaciones](/help/forms/using/admin-help/enhancing-application-server-performance.md)
       + [Inicio y parada de WebSphere Application Server](/help/forms/using/admin-help/starting-stopping-websphere-application-server.md)
-   + AEM formularios Backup y Recuperación {#aem-forms-backup-recovery}
+   + Backup y Recuperación de AEM formularios {#aem-forms-backup-recovery}
       + [Backup y recuperación del repositorio de Documentum de EMC](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md)
       + [Activación y desactivación del modo de respaldo seguro](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md)
       + [Copia de seguridad de los datos de formularios AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)

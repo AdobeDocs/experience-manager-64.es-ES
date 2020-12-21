@@ -22,15 +22,15 @@ ht-degree: 1%
 
 La administración de usuarios le permite habilitar el inicio de sesión único (SSO) entre los módulos de formularios AEM y las aplicaciones protegidas por Netegrity SiteMinder mediante el uso del Lenguaje de marcado de aserción de seguridad (SAML). Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM no son necesarias y no se muestran si el usuario ya está autenticado a través del portal de compañía.
 
-Para obtener información sobre cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, consulte Base de datos DB2 de [IBM: Ejecución de comandos para mantenimiento](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)regular.
+Para obtener información sobre cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, consulte [Base de datos IBM DB2: Ejecución de comandos para mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Si tiene un servidor LDAP habilitado para SSL, configure la Administración de usuarios para que funcione con él. (Consulte [Configuración de la administración de usuarios para un servidor](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)LDAP con SSL habilitado).
+Si tiene un servidor LDAP habilitado para SSL, configure la Administración de usuarios para que funcione con él. (Consulte [Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).
 
-## Configuración de privilegios de usuario para su uso con Documento Security {#setting-user-privileges-for-use-with-document-security}
+## Configuración de privilegios de usuario para su uso con Seguridad de Documento {#setting-user-privileges-for-use-with-document-security}
 
-Cree un usuario administrador con los privilegios adecuados para crear usuarios y grupos. Si el entorno de formularios AEM incluye Documento Security, conceda el privilegio de administrar los usuarios invitados y locales a un usuario que será el administrador de estos usuarios. También asigne la función de usuario de la consola de administración para proporcionar al usuario acceso a la consola de administración. (Consulte [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)).
+Cree un usuario administrador con los privilegios adecuados para crear usuarios y grupos. Si el entorno de formularios AEM incluye Documento Security, conceda el privilegio de administrar los usuarios invitados y locales a un usuario que será el administrador de estos usuarios. También asigne la función de usuario de la consola de administración para proporcionar al usuario acceso a la consola de administración. (Consulte [Creación y configuración de roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Para vista de usuarios y grupos en dominios seleccionados durante las búsquedas de usuarios de directivas, un superadministrador o un administrador de conjuntos de directivas debe seleccionar y agregar dominios (creados en Administración de usuarios) a la lista visible de usuarios y grupos para cada conjunto de directivas creado.
 

@@ -22,13 +22,13 @@ ht-degree: 3%
 
 ## Añadir una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Cree una ClientLibraryFolder con el nombre `clientlibs`que contendrá el JS y CSS utilizados para procesar las páginas del sitio.
+Cree una ClientLibraryFolder con el nombre `clientlibs`que contendrá JS y CSS utilizados para procesar las páginas del sitio.
 
-El valor de `categories`propiedad proporcionado a esta biblioteca de cliente es el identificador utilizado para incluir directamente esta clientlib desde una página de contenido o para incrustarla en otros clientes.
+El valor de propiedad `categories`proporcionado a esta biblioteca de cliente es el identificador utilizado para incluir directamente esta clientlib desde una página de contenido o para incrustarla en otros clientlibs.
 
-1. Con **[!UICONTROL CRXDE Lite]**, expanda `/etc/designs`
+1. Usando **[!UICONTROL CRXDE Lite]**, expanda `/etc/designs`
 
-1. Haga clic con el botón derecho `an-scf-sandbox` y seleccione `Create Node`
+1. Haga clic con el botón derecho en `an-scf-sandbox` y seleccione `Create Node`
 
    * Nombre: `clientlibs`
    * Tipo: `cq:ClientLibraryFolder`
@@ -37,7 +37,7 @@ El valor de `categories`propiedad proporcionado a esta biblioteca de cliente es 
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
-En la ficha **[!UICONTROL Propiedades]** del nuevo `clientlibs` nodo, introduzca la **`categories`** propiedad:
+En la ficha **[!UICONTROL Propiedades]** del nuevo nodo `clientlibs`, introduzca la propiedad **`categories`**:
 
 * Nombre: **[!UICONTROL categorías]**
 * Tipo: **[!UICONTROL Cadena]**
@@ -45,15 +45,15 @@ En la ficha **[!UICONTROL Propiedades]** del nuevo `clientlibs` nodo, introduzca
 * Haga clic en **[!UICONTROL Agregar]**
 * Haga clic en **[!UICONTROL Guardar todo]**
 
-Nota: anteponer el valor de categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Añada los marcadores `js.txt` de posición y `css.txt` los archivos. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
+Nota: anteponer el valor de categorías con &#39;aplicaciones&#39;. es una convención para identificar la &#39;aplicación propietaria&#39; como una carpeta /apps, no como /libs.  IMPORTANTE: Añada los archivos de marcador de posición `js.txt` y `css.txt`. (No es oficialmente un cq:ClientLibraryFolder sin ellos).
 
 
 1. Haga clic con el botón derecho en **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleccione **[!UICONTROL Crear archivo...]**
-1. Enter **[!UICONTROL Name]**: `css.txt`
+1. Escriba **[!UICONTROL Nombre]**: `css.txt`
 
 1. Seleccione **[!UICONTROL Crear archivo...]**
-1. Enter **[!UICONTROL Name]**: `js.txt`
+1. Escriba **[!UICONTROL Nombre]**: `js.txt`
 
 1. Haga clic en **[!UICONTROL Guardar todo]**
 
@@ -78,9 +78,9 @@ A continuación, cree un archivo en clientlibs llamado style.css y defina el con
 
 ## Incrustar clientes SCF {#embed-scf-clientlibs}
 
-En la ficha **[!UICONTROL Propiedades]** del `clientlibs` nodo, introduzca la propiedad String de varios valores **[!UICONTROL embed]**. Esto incorporará las bibliotecas del lado del [cliente (clientlibs) necesarias para los componentes](client-customize.md#clientlibs-for-scf)SCF. Para este tutorial, agregaremos muchos de los clientlibs necesarios para los componentes Communities.
+En la ficha **[!UICONTROL Propiedades]** del nodo `clientlibs`, introduzca la propiedad de varios valores String **[!UICONTROL embed]**. Esto incorporará las [bibliotecas del lado del cliente (clientlibs) necesarias para los componentes de SCF](client-customize.md#clientlibs-for-scf). Para este tutorial, agregaremos muchos de los clientlibs necesarios para los componentes Communities.
 
-**Tenga en cuenta** que este puede ser o no el método deseado para usar en un sitio de producción, ya que existen consideraciones de conveniencia en comparación con el tamaño y la velocidad de los clientes descargados para cada página.
+**** Tenga en cuenta que este método puede ser o no el deseado para un sitio de producción, ya que existen consideraciones de conveniencia en comparación con el tamaño y la velocidad de los clientes descargados para cada página.
 
 Si solo utiliza una función en una página, puede incluir la clientlib completa de esa característica directamente en la página, por ejemplo: &lt;% ui:includeClientLib categorías=cq.social.hbs.forum&quot; %>
 
@@ -92,7 +92,7 @@ En este caso, los incluimos a todos, por lo que preferiríamos a los clientes m�
 * Haga clic **`Multi`**
 * Value: **`cq.social.scf`**
 
-   *&lt;enter> abrirá un cuadro de diálogo*
+   *&lt;enter> aparecerá un cuadro de diálogo*
 
    *Haga clic **[+]**después de cada entrada para agregar las siguientes categorías clientlib:*
 
@@ -108,7 +108,7 @@ En este caso, los incluimos a todos, por lo que preferiríamos a los clientes m�
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-Así es como `/etc/designs/an-scf-sandbox/clientlibs` debería aparecer en el repositorio:
+Así es como `/etc/designs/an-scf-sandbox/clientlibs` debe aparecer ahora en el repositorio:
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
@@ -124,11 +124,11 @@ Una vez que se incluye apps.an-scf-sandbox clientlibs, el componente de comentar
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-La sentencia include pertenece a la `<head>` sección de la `<html>` secuencia de comandos. El valor predeterminado **`foundation head.jsp`** incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
+La sentencia include pertenece a la sección `<head>` de la secuencia de comandos `<html>`. El **`foundation head.jsp`** predeterminado incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
 
 **Copie headlibs.jsp e incluya clientlibs:**
 
-1. Con **[!UICONTROL CRXDE Lite]**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
+1. Utilizando **[!UICONTROL CRXDE Lite]**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Copiar]** (o seleccione Copiar en la barra de herramientas)
 1. Seleccione **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]** (o seleccione Pegar en la barra de herramientas)
@@ -156,16 +156,16 @@ Cargue el sitio web en el navegador y vea si el fondo no es azul.
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-## Guardar su trabajo hasta ahora {#saving-your-work-so-far}
+## Guardando su trabajo hasta ahora {#saving-your-work-so-far}
 
 En este punto, existe un simulador de pruebas minimalista y puede que valga la pena guardarlo como paquete para que, mientras se reproduce, si el repositorio se daña y desea pasar el inicio, pueda desactivar el servidor, cambiar el nombre o eliminar la carpeta crx-quickstart/, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
 
-Este paquete existe en el tutorial [Crear una página](create-sample-page.md) de muestra para aquellos que no pueden esperar para simplemente saltar y reproducir el inicio!...
+Este paquete existe en el tutorial [Crear una página de muestra](create-sample-page.md) para aquellos que no pueden esperar para simplemente saltar y reproducir el inicio...
 
 Para crear un paquete:
 
 
-* En el **[!UICONTROL CRXDE Lite]**, haga clic en el icono [Paquete](http://localhost:4502/crx/packmgr/)
+* En **[!UICONTROL CRXDE Lite]**, haga clic en el icono [Paquete](http://localhost:4502/crx/packmgr/)
 * Haga clic en **[!UICONTROL Crear paquete]**
 
    * Nombre del paquete: `an-scf-sandbox-minimal-pkg`
@@ -175,20 +175,20 @@ Para crear un paquete:
 
 * Haga clic en **[!UICONTROL Editar]**
 
-   * Ficha Seleccionar **[!UICONTROL Filtros]**
+   * Seleccione la ficha **[!UICONTROL Filtros]**
 
       * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/apps/an-scf-sandbox`>
-      * Haga clic en **[!UICONTROL Finalizado]**
+      * Haga clic en **[!UICONTROL Listo]**
       * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/etc/designs/an-scf-sandbox`>
-      * Haga clic en **[!UICONTROL Finalizado]**
+      * Haga clic en **[!UICONTROL Listo]**
       * Haga clic en **[!UICONTROL Añadir filtro]**
       * Ruta raíz: &lt;examinar a `/content/an-scf-sandbox`>
-      * Haga clic en **[!UICONTROL Finalizado]**
+      * Haga clic en **[!UICONTROL Listo]**
    * Haga clic en **[!UICONTROL Guardar]**
 
 
 * Haga clic en **[!UICONTROL Generar]**
 
-Ahora puede seleccionar **[!UICONTROL Descargar]** para guardarlo en el disco y **[!UICONTROL Cargar paquete]** en otra parte, así como seleccionar **[!UICONTROL Más > Replicar]** para insertar el simulador de pruebas en una instancia de publicación local host para expandir el dominio del simulador de pruebas.
+Ahora puede seleccionar **[!UICONTROL Descargar]** para guardarlo en el disco y **[!UICONTROL Cargar paquete]** en otra parte, así como seleccionar **[!UICONTROL Más > Replicar]** para insertar el simulador de pruebas en una instancia de publicación localhost para expandir el dominio del simulador de pruebas.

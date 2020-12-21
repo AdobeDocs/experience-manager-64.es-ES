@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## Requisitos previos {#prerequisites}
 
-* Comprensión de la creación de plantillas [de](/help/sites-authoring/templates.md) página AEM y formularios [adaptables](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Comprensión de AEM [Plantilla de página](/help/sites-authoring/templates.md) y [Creación de formularios adaptables](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Explicación de AEM bibliotecas del lado del [cliente](/help/sites-developing/clientlibs.md)
+* Comprensión de AEM [bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md)
 
-## Adaptive form template {#adaptive-form-template}
+## Plantilla de formulario adaptable {#adaptive-form-template}
 
 Una plantilla de formulario adaptable es AEM plantilla de página especializada, con determinadas propiedades y estructura de contenido que se utiliza para crear un formulario adaptable. La plantilla tiene diseños, estilos y estructura de contenido inicial básica preconfigurados.
 
@@ -37,9 +37,9 @@ AEM QuickStart proporciona las siguientes plantillas de formulario adaptables:
 
 * Básico: Permite crear un formulario adaptable con varias fichas con una presentación de fichas a la izquierda, donde puede visitar las fichas en cualquier orden aleatorio.
 * Básico con Adobe Sign: Permite crear un formulario con varias fichas y un asistente. Utiliza un diseño de fichas a la izquierda que permite visitar las fichas en cualquier orden. Utiliza los servicios de diseño de Adobe Document Cloud para firmar y verificar.
-* Plantilla en blanco: Permite crear un formulario sin encabezado, pie de página ni contenido inicial. Puede agregar componentes como cuadros de texto, botones e imágenes. La plantilla en blanco le permite crear un formulario que puede [incrustar en AEM páginas](/help/forms/using/embed-adaptive-form-aem-sites.md)del sitio.
+* Plantilla en blanco: Permite crear un formulario sin encabezado, pie de página ni contenido inicial. Puede agregar componentes como cuadros de texto, botones e imágenes. La plantilla en blanco le permite crear un formulario que puede [incrustar en AEM páginas del sitio](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
-Estas plantillas tienen la `sling:resourceType` propiedad establecida en el componente de página correspondiente. El componente de página procesa la página de CQ, que contiene el contenedor de formulario adaptable, que a su vez procesa el formulario adaptable.
+Estas plantillas tienen la propiedad `sling:resourceType` establecida en el componente de página correspondiente. El componente de página procesa la página de CQ, que contiene el contenedor de formulario adaptable, que a su vez procesa el formulario adaptable.
 
 La siguiente tabla enumera la asociación entre plantillas y componentes de página:
 
@@ -77,7 +77,7 @@ Puede especificar la estructura y el contenido inicial de un formulario adaptabl
 * Especifique un tema.
 * Especifique acciones como enviar, restablecer y desplazarse.
 
-Para obtener más información, consulte Editor [de plantillas](/help/forms/using/template-editor.md).
+Para obtener más información, consulte [Editor de plantillas](/help/forms/using/template-editor.md).
 
 ## Creación de una plantilla de formulario adaptable a partir de CRXDE {#creating-an-adaptive-form-template-from-crxde}
 
@@ -92,58 +92,58 @@ Realice los siguientes pasos para crear una plantilla personalizada, como simple
 1. En el directorio /apps, cree la estructura de carpetas para la aplicación. Por ejemplo, si el nombre de la aplicación es miempresa, cree una carpeta con este nombre. Normalmente, la carpeta de la aplicación contiene componentes, configuración, plantillas, src y directorios de instalación. Para este ejemplo, cree las carpetas de componentes, configuración y plantillas.
 
 1. Vaya a la carpeta /libs/fd/af/templates.
-1. Copie el `simpleEnrollmentTemplate` nodo.
+1. Copie el nodo `simpleEnrollmentTemplate`.
 1. Vaya a la carpeta /apps/miempresa/templates. Haga clic con el botón derecho y seleccione **[!UICONTROL Pegar]**.
 1. Si es necesario, cambie el nombre del nodo de plantilla que ha copiado. Por ejemplo, cambie su nombre como plantilla de inscripción.
 
 1. Vaya a la ubicación /apps/miempresa/templates/enregistration-template.
 
-1. Modifique las propiedades `jcr:title` y `jcr:description` del `jcr:content` nodo para distinguir la plantilla de la plantilla copiada.
+1. Modifique las propiedades `jcr:title` y `jcr:description` del nodo `jcr:content` para distinguir la plantilla de la plantilla copiada.
 
-1. El `jcr:content` nodo de la plantilla modificada contiene los `guideContainer` componentes y `guideformtitle` . `guideContainer` es el contenedor que contiene el formulario adaptable. El `guideformtitle` componente muestra el nombre de la aplicación, la descripción, etc.
+1. El nodo `jcr:content` de la plantilla modificada contiene los componentes `guideContainer` y `guideformtitle`. `guideContainer` es el contenedor que contiene el formulario adaptable. El componente `guideformtitle` muestra el nombre de la aplicación, la descripción, etc.
 
-   En lugar de `guideformtitle`, puede incluir un componente personalizado o el `parsys` componente. Por ejemplo, elimine `guideformtitle`y agregue un componente personalizado o el nodo del `parsys` componente. Asegúrese de que la `sling:resourceType` propiedad del componente hace referencia al componente y que lo mismo se define en el archivo de página `component.jsp` .
+   En lugar de `guideformtitle`, puede incluir un componente personalizado o el componente `parsys`. Por ejemplo, elimine `guideformtitle` y agregue un componente personalizado o el nodo del componente `parsys`. Asegúrese de que la propiedad `sling:resourceType` del componente hace referencia al componente y que la misma se define en el archivo de página `component.jsp`.
 
 1. Vaya a la ubicación /apps/miempresa/templates/enregistration-template/jcr:content.
 
-1. Abra la ficha **[!UICONTROL Propiedades]** y cambie el valor de la `cq:designPath` propiedad a /etc/designs/miempresa.
+1. Abra la ficha **[!UICONTROL Propiedades]** y cambie el valor de la propiedad `cq:designPath` a /etc/designs/miempresa.
 
-1. Ahora cree un nodo /etc/designs/miempresa para el `cq:Page` tipo.
+1. Ahora cree un nodo /etc/designs/miempresa para el tipo `cq:Page`.
 
-## Creación de un componente de página de formulario adaptable {#create-an-adaptive-form-page-component}
+## Crear un componente de página de formulario adaptable {#create-an-adaptive-form-page-component}
 
-La plantilla personalizada tiene el mismo estilo que la plantilla predeterminada porque hace referencia al componente de página /libs/fd/af/components/page/base. Puede encontrar la referencia del componente como la propiedad `sling:resourceType` definida en el nodo /apps/miempresa/templates/enregistration-template/jcr:content. Dado que base es un componente de producto principal, no modifique este componente.
+La plantilla personalizada tiene el mismo estilo que la plantilla predeterminada porque hace referencia al componente de página /libs/fd/af/components/page/base. Puede encontrar la referencia del componente como la propiedad `sling:resourceType` definida en el nodo /apps/miempresa/templates/enplication-template/jcr:content. Dado que base es un componente de producto principal, no modifique este componente.
 
 1. Vaya al nodo /apps/miempresa/templates/enplication-template/jcr:content y modifique el valor de la propiedad `sling:resourceType` en /apps/miempresa/components/page/enrollmentpage
 1. Copie el nodo /libs/fd/af/components/page/base en la carpeta /apps/miempresa/components/page.
 
 1. Cambie el nombre del componente copiado a `enrollmentpage`.
 
-1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un `contentpage`componente existente para el sitio Web. Si no tiene un `contentpage`componente existente para el sitio web, puede dejar la `resourceSuperType`propiedad para que apunte a la página base de OOTB.
+1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un  `contentpage`componente existente para el sitio Web. Si no tiene un componente `contentpage`existente para su sitio Web, puede dejar la propiedad `resourceSuperType`para que apunte a la página base de OOTB.
 
-   1. Para el `enrollmentpage` nodo, establezca el valor de la propiedad `sling:resourceSuperType` en mycompany/components/page/contentpage. El `contentpage` componente es el componente de página base del sitio. Otros componentes de página pueden ampliarla. Elimine los archivos de secuencias de comandos debajo `enrollmentpage`, excepto `head.jsp`, `content.jsp`y `library.jsp`. El `sling:resourceSuperType` componente, que es `contentpage` en este caso, incluye todas estas secuencias de comandos. Los encabezados, incluidas la barra de navegación y el pie de página, se heredan del `contentpage` componente.
+   1. Para el nodo `enrollmentpage`, establezca el valor de la propiedad `sling:resourceSuperType` en mycompany/components/page/contentpage. El componente `contentpage` es el componente de página base del sitio. Otros componentes de página pueden ampliarla. Elimine los archivos de secuencias de comandos en `enrollmentpage`, excepto `head.jsp`, `content.jsp` y `library.jsp`. El componente `sling:resourceSuperType`, que es `contentpage` en este caso, incluye todas estas secuencias de comandos. Los encabezados, incluidas la barra de navegación y el pie de página, se heredan del componente `contentpage`.
 
    1. Abra el archivo `head.jsp`.
 
       El archivo JSP contiene la línea `<cq.include script="library.jsp"/>`.
 
-      El `library.jsp` archivo contiene la biblioteca del `guide.theme.simpleEnrollment` cliente, que contiene el estilo del formulario adaptable.
+      El archivo `library.jsp` contiene la biblioteca de cliente `guide.theme.simpleEnrollment`, que contiene el estilo del formulario adaptable.
 
-      El componente de página `enrollmentpage` tiene un `head.jsp` archivo exclusivo que anula el `head.jsp` archivo del `contentpage` componente.
+      El componente de página `enrollmentpage` tiene un archivo exclusivo `head.jsp` que anula el archivo `head.jsp` del componente `contentpage`.
 
-   1. Incluya todas las secuencias de comandos del `head.jsp` archivo del `contentpage` componente en el `head.jsp` archivo del `enrollmentpage` componente.
-   1. En la secuencia de comandos, puede agregar contenido de página adicional o referencias a otros componentes que se incluyen cuando se procesa una página. `content.jsp` Por ejemplo, si agrega el componente personalizado `applicationformheader`, asegúrese de agregar la siguiente referencia al componente en el archivo JSP:
+   1. Incluya todas las secuencias de comandos en el archivo `head.jsp` del componente `contentpage` en el archivo `head.jsp` del componente `enrollmentpage`.
+   1. En la secuencia de comandos `content.jsp`, puede agregar contenido de página adicional o referencias a otros componentes que se incluyen cuando se procesa una página. Por ejemplo, si agrega el componente personalizado `applicationformheader`, asegúrese de agregar la siguiente referencia al componente en el archivo JSP:
 
       `<cq:include path="applicationformheader" resourceType="mycompany/components/applicationformheader"/>`
 
-      Del mismo modo, si agrega un `parsys` componente en la estructura del nodo de plantilla, incluya también el componente personalizado.
+      Del mismo modo, si agrega un componente `parsys` en la estructura del nodo de plantilla, incluya también el componente personalizado.
 
 ## Creación de una biblioteca de cliente de formulario adaptable {#creating-an-adaptive-form-client-library}
 
-El `head.jsp` archivo del `enrollmentpage` componente para la nueva plantilla incluye una biblioteca de cliente `guide.theme.simpleEnrollment`. La plantilla predeterminada también utiliza esta biblioteca de cliente. Cambie el estilo en la nueva plantilla mediante uno de estos métodos:
+El archivo `head.jsp` del componente `enrollmentpage` para la nueva plantilla incluye una biblioteca de cliente `guide.theme.simpleEnrollment`. La plantilla predeterminada también utiliza esta biblioteca de cliente. Cambie el estilo en la nueva plantilla mediante uno de estos métodos:
 
 * Defina un tema personalizado y reemplace el tema predeterminado `guide.theme.simpleEnrollment` por el tema personalizado.
-* Defina una nueva biblioteca de cliente en /etc/designs/miempresa. Incluya la biblioteca de cliente después de la entrada de tema predeterminada en la página jsp. Incluya todos los estilos anulados y los archivos de Java Script adicionales en esta biblioteca de cliente.
+* Defina una nueva biblioteca de cliente en /etc/designs/miempresa. Incluya la biblioteca de cliente después de la entrada de tema predeterminada en la página jsp. Incluya todos los estilos anulados y los archivos de Java Script adicionales en esta biblioteca cliente.
 
 >[!NOTE]
 >

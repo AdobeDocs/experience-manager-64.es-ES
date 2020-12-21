@@ -22,6 +22,6 @@ ht-degree: 0%
 
 **[⇐ Añadir Clientlibs](add-clientlibs.md)**
 
-En este punto, es posible explorar las características de la comunidad en el simulador de pruebas junto con el uso de [We-Retail Community](../../help/sites-developing/we-retail.md), la Guía [de componentes de la](components-guide.md) comunidad y los elementos esenciales [de](essentials.md) las funciones.
+En este punto, es posible explorar las características de la comunidad en el simulador de pruebas, además de utilizar [We-Retail Community](../../help/sites-developing/we-retail.md), la [Community Components Guide](components-guide.md) y [feature essentials](essentials.md) como referencia.
 
 **[⇐ Añadir Clientlibs](add-clientlibs.md)**

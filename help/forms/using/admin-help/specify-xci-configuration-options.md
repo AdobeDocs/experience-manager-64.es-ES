@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# Especificar opciones de configuración XCI {#specify-xci-configuration-options}
+# Especifique las opciones de configuración XCI {#specify-xci-configuration-options}
 
-Output permite especificar un archivo XCI personalizado que se utiliza para el procesamiento. (Consulte [Especificación de ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) De forma predeterminada, Output anula algunas de las opciones especificadas en el archivo XCI, incluidas las siguientes:
+Output permite especificar un archivo XCI personalizado que se utiliza para el procesamiento. (Consulte [Especificar ubicaciones de archivos para Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) De forma predeterminada, Output anula algunas de las opciones especificadas en el archivo XCI, incluidas las siguientes:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

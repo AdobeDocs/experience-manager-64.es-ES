@@ -24,9 +24,9 @@ En Workspace, los procesos que un usuario puede inicio se muestran en categoría
 
 Cuando especifique nombres de categoría, créelos para que aparezcan correctamente en el panel de navegación del espacio de trabajo. De forma predeterminada, el panel de navegación izquierdo tiene una anchura fija de 210 píxeles, que es de aproximadamente 24 caracteres. Si el nombre de la categoría especificado es demasiado largo para ajustarse al ancho fijo del panel de navegación izquierdo, se trunca. El nombre completo solo aparece cuando se pone en pausa el puntero del ratón sobre él. Intente evitar los nombres de categoría que se truncarán. Los siguientes ejemplos ilustran los nombres de categorías que encajan y los que se truncan:
 
-**Nombre de Categoría que se ajusta a:** Asistencia y salida
+**Nombre de categoría que se ajusta:** Asistencia y salir
 
-**Nombre de Categoría que se trunca:** Asistencia y salida (Estados Unidos)
+**Nombre de categoría truncado:** Asistencia y salida (Estados Unidos)
 
 En Workspace, los procesos dentro de una categoría suelen mostrarse como tarjetas en la página Proceso de Inicio. En general, se pueden mostrar seis tarjetas en la pantalla para una categoría antes de que el usuario tenga que desplazarse hasta las tarjetas restantes de la vista. Debido a que el desplazamiento dificulta la búsqueda de un proceso, considere la posibilidad de limitar cada categoría a seis procesos o, según la resolución, limitar el número de procesos que se pueden mostrar en la pantalla sin necesidad de desplazamiento.
 

@@ -29,7 +29,7 @@ AEM Forms proporciona un componente Tabla en el navegador de componentes de la b
 * Accesible para lectores de pantalla
 * Diseño personalizado con CSS
 * Compatible y asignado al componente de tabla XDP
-* Compatibilidad con la adición de filas o celdas mediante elementos de tipo complejo XSD
+* Compatibilidad para agregar filas o celdas mediante elementos de tipo complejo XSD
 * Combinar datos de un archivo XML
 
 ## Cree una tabla {#create-a-table}
@@ -74,7 +74,7 @@ Puede agregar una descripción de la tabla para explicar cómo se organiza la in
 
 1. Seleccione la tabla y toque ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
 1. Especifique un resumen en la ficha Accesibilidad.
-1. Haga clic en **Finalizado**.
+1. Haga clic en **Listo**.
 
 ## Configurar estilo de tabla {#configure}
 
@@ -82,7 +82,7 @@ Puede definir el estilo de una tabla mediante el modo Estilo de la barra de herr
 
 1. En la barra de herramientas de la página, antes de la Previsualización, toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y toque el botón ![Editar](assets/edit-button.png).
+1. En la barra lateral, seleccione la tabla y toque el botón de edición ![botón de edición](assets/edit-button.png).
 
    Puede ver las propiedades de estilo en la barra lateral.
 
@@ -92,57 +92,59 @@ Puede definir el estilo de una tabla mediante el modo Estilo de la barra de herr
 >
 >Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de las variables LESS. Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
 
-## Añadir o eliminar una fila dinámicamente {#add-or-delete-a-row-dynamically}
+## Añadir o eliminar dinámicamente una fila {#add-or-delete-a-row-dynamically}
 
 Las tablas proporcionan compatibilidad inmediata para agregar o eliminar filas de forma dinámica durante la ejecución.
 
 1. Seleccione una fila de tabla y toque ![cmppr](assets/cmppr.png).
 1. En la ficha Ajustes de repetición, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
-1. Haga clic en **Finalizado**.
+1. Haga clic en **Listo**.
 
-En tiempo de ejecución, verá **`+`** y *`-`* botones para agregar o eliminar una fila.
+En tiempo de ejecución, verá los botones **`+`** y *`-`* para agregar o eliminar una fila.
 
 ![add-delete-rows-dinámicamente](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
->No se admite Añadir o eliminar una fila dinámicamente en los encabezados en el diseño de tablas para móviles a la izquierda.
+>No se admite añadir o eliminar una fila dinámicamente en los encabezados en el diseño de tablas para móviles a la izquierda.
 
-## Expresiones de una tabla {#expressions-in-a-table}
+## Expresiones en una tabla {#expressions-in-a-table}
 
 Las tablas de formularios adaptables permiten escribir expresiones en JavaScript para inducir comportamientos, como mostrar u ocultar una tabla o una fila, agregar todos los números y mostrar el total en una celda, habilitar o deshabilitar una celda, validar la entrada del usuario, etc. Estas expresiones utilizan API de modelos de secuencias de comandos de formularios adaptables.
 
 Mientras que las tablas y las filas solo admiten expresiones de visibilidad para controlar su visibilidad en función del valor devuelto por una expresión, las celdas admiten las siguientes expresiones:
 
 * **Secuencia de comandos de inicialización:** para realizar una acción al inicializar un campo.
-* **Secuencia de comandos de confirmación de valor:** para cambiar los componentes de un formulario después de cambiar el valor de un campo.
+* **Secuencia de comandos de confirmación de valores:** para cambiar los componentes de un formulario después de cambiar el valor de un campo.
 
 >[!NOTE]
 >
 >Si la secuencia de comandos de cambio/salida XFA también se aplica al mismo campo, la secuencia de comandos de cambio/salida XFA se ejecuta antes que la secuencia de comandos de confirmación de valor.
 
 * **Calcular expresiones**: para calcular automáticamente el valor de un campo.
-* **expresiones** de validación: para validar un campo.
-* **expresiones** de acceso: para activar o desactivar un campo.
-* **expresión** de visibilidad: para controlar la visibilidad de un campo y un panel.
+* **Expresiones** de validación: para validar un campo.
+* **Expresiones** de acceso: para activar o desactivar un campo.
+* **Expresión** de visibilidad: para controlar la visibilidad de un campo y un panel.
 
 La expresión de visibilidad de una tabla o fila se puede definir en la ficha Propiedades del panel del cuadro de diálogo del componente Editar correspondiente. Las expresiones de una celda se pueden definir en la ficha Secuencia de comandos del cuadro de diálogo Editar componente.
 
-Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte Referencia de la API de la biblioteca [JavaScript para formularios](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)adaptables.
+Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html).
 
 ## Diseños móviles {#mobile-layouts}
 
-Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: Encabezados a la izquierda y Columnas que pueden contraerse.
+Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a sus diseños fluidos y adaptables. AEM Forms oferta dos tipos de diseños móviles para tablas: encabezados en columnas izquierda y columnas que pueden contraerse.
 
 Puede configurar un diseño móvil para una tabla desde la ficha Estilo del cuadro de diálogo Editar componente para una tabla.
 
-### Headers on left {#headers-on-left}
+### Encabezados a la izquierda {#headers-on-left}
 
 En el diseño Encabezados de la izquierda, el encabezado de la tabla se transpone a la izquierda y solo aparece una celda contra un encabezado. Cada fila de este diseño aparece como una sección distinta. Las siguientes imágenes comparan una tabla de un escritorio con la de un dispositivo móvil.
 
-![desktopview](assets/desktopview.png)**Figura:** *vista de escritorio de una tabla con Encabezado en el diseño izquierdo*
+![](assets/desktopview.png)
+**desktopviewFigura:vista de** *escritorio de una tabla con Encabezado en diseño izquierdo*
 
-![headersontheleft](assets/headersontheleft.png)**Figura:** *vista móvil de una tabla con Encabezado en el diseño izquierdo*
+![](assets/headersontheleft.png)
+**header sontheleftFigura:vista** *móvil de una tabla con Encabezado en diseño izquierdo*
 
 ### Diseño de columnas contraíble {#collapsible-columns-layout}
 
@@ -154,9 +156,11 @@ En el diseño de columna que puede contraerse, las columnas de la tabla se contr
 
 Las siguientes imágenes comparan el aspecto de una tabla en un dispositivo con columnas contraídas y expandidas.
 
-![columna](assets/collapsed-column.png)contraída **Figura:** *Columnas contraídas de una tabla con solo dos columnas que se muestran en un dispositivo móvil*
+![columnas contraídasFigura:Columnas ](assets/collapsed-column.png)
+**** *contraídas de una tabla con solo dos columnas que aparecen en un dispositivo móvil*
 
-![colapsible_column](assets/collapsible_column.png)**Figura:** *Columna ampliada de una tabla en un dispositivo móvil*
+![contraer_](assets/collapsible_column.png)
+**columnaFigura:columna** *expandida de una tabla en un dispositivo móvil*
 
 ## Combinar datos en una tabla {#merge-data-in-a-table}
 
@@ -170,9 +174,9 @@ En este ejemplo, la propiedad Nombre de elemento para:
 
 * la fila es **Fila1**
 * la celda body en Fecha de transacción es **tableItem1**
-* la celda body en Descripción es **tableItem2**
-* la celda de cuerpo en Tipo de transacción es **tipo**
-* la celda body debajo de Importe en USD es **tableItem3**
+* la celda de cuerpo bajo Descripción es **tableItem2**
+* la celda de cuerpo del tipo Transaction es **type**
+* la celda de cuerpo debajo de Amount en USD es **tableItem3**
 
 El archivo XML que contiene datos con el siguiente formato:
 
@@ -232,9 +236,9 @@ El archivo XML que contiene datos con el siguiente formato:
 </afData>
 ```
 
-En el XML de ejemplo, los datos de una fila se definen mediante las `<Row1>` etiquetas, que es el nombre del elemento de la fila de la tabla. Dentro de la `<Row1>` etiqueta, los datos de cada celda se definen dentro de la etiqueta para su nombre de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`y `<type>`.
+En el XML de ejemplo, los datos de una fila se definen mediante las etiquetas `<Row1>`, que es el nombre del elemento de la fila de la tabla. Dentro de la etiqueta `<Row1>`, los datos de cada celda se definen dentro de la etiqueta para su nombre de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` y `<type>`.
 
-Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que señalemos el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode desactivado. Por ejemplo, si el formulario adaptable se encuentra en *http://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede vista de la tabla con datos en la siguiente URL:
+Para combinar estos datos con la tabla en tiempo de ejecución, es necesario que señalemos el formulario adaptable que contiene la tabla a la ubicación XML absoluta con wcmmode desactivado. Por ejemplo, si el formulario adaptable se encuentra en *http://localhost:4502/myForms/bankTransaction.html* y el archivo XML de datos se guarda en *C:/myTransactions/bankSummary.xml*, puede vista de la tabla con datos en la siguiente dirección URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
@@ -263,7 +267,7 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 ## Consideraciones clave {#key-considerations}
 
 * Si mueve filas hacia arriba y hacia abajo durante la creación de una tabla basada en XSD, se verá cierta pérdida de datos de las filas de tabla en el XML de datos generado al enviar el formulario.
-* Cada celda de cuerpo de una tabla predeterminada tiene un nombre de elemento predefinido asociado. Si agrega otra tabla en el formulario adaptable, las celdas de cuerpo predeterminadas de la nueva tabla tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas de cuerpo predeterminadas de sólo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos para las celdas de cuerpo predeterminadas a fin de mantenerlos únicos en todas las tablas y evitar la pérdida de datos.
+* Cada celda de cuerpo de una tabla predeterminada tiene un nombre de elemento predefinido asociado. Si agrega otra tabla en el formulario adaptable, las celdas de cuerpo predeterminadas de la nueva tabla tendrán el mismo nombre de elemento que en la primera tabla. En este escenario, los datos generados al enviar el formulario incluirán datos en las celdas de cuerpo predeterminadas de sólo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos para las celdas de cuerpo predeterminadas a fin de mantenerlos únicos en todas las tablas y evitar la pérdida de datos.
 
    Tenga en cuenta que esto solo se aplica a las celdas de cuerpo predeterminadas. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para celdas de cuerpo no predeterminadas.
 

@@ -24,13 +24,13 @@ ht-degree: 3%
 
 En el autor, desde la navegación global
 
-* Seleccionar **[!UICONTROL comunidades > Sitios]**
-* Seleccione **[!UICONTROL la carpeta]** de participación para abrirla
-* Seleccione la tarjeta para el sitio **[!UICONTROL Tutorial]** de introducción en inglés
+* Seleccione **[!UICONTROL Comunidades > Sitios]**
+* Seleccione **[!UICONTROL carpeta de participación]** para abrirla
+* Seleccione la tarjeta para el **[!UICONTROL Tutorial de introducción]** sitio en inglés
    * Seleccionar la imagen de la tarjeta
-   * No *seleccione* un icono
+   * *no* seleccione un icono
 
-El resultado es llegar a la consola [](groups.md)Grupos:
+El resultado es llegar a la [consola de grupos](groups.md):
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -40,11 +40,11 @@ La función de grupos se mostrará como una carpeta en la que se crearán las in
 
 ## Crear grupo de artes principales {#create-main-arts-group}
 
-Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el sitio `Reference Template` de forma predeterminada permite la selección de cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo será la `Reference Group`.
+Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el `Reference Template` del sitio permite la selección de cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo será `Reference Group`.
 
 Estas consolas son muy similares a la consola Sitios de comunidades.
 
-* Seleccionar **[!UICONTROL crear grupo]**
+* Seleccione **[!UICONTROL Crear grupo]**
 * `1 Community Group Template`:
    * Título del grupo de la comunidad: Artes
    * Descripción del grupo de la comunidad: Un grupo de padres para varios grupos de artes.
@@ -65,21 +65,21 @@ Continúe por los demás paneles con esta configuración:
    * **Moderación**
       * Dejar vacío (heredar del sitio principal)
    * **Suscripción**
-      * use default `Optional Membership`
+      * use predeterminado `Optional Membership`
    * **Miniatura**
       * `optional`
    * Seleccione `Next`
 * Seleccione **[!UICONTROL Crear]**
 
-### Grupos de anidación dentro del grupo de artes {#nesting-groups-within-arts-group}
+### Anidado de grupos dentro del grupo de artes {#nesting-groups-within-arts-group}
 
-La `groups` carpeta ahora debe contener dos grupos (puede que sea necesario actualizar la página).
+La carpeta `groups` ahora debe contener dos grupos (puede que sea necesario actualizar la página).
 
 ![createcommunitygroup](assets/createcommunitygroup.png)
 
 #### Publicar grupo {#publish-group}
 
-Antes de crear grupos anidados dentro del `arts``arts` grupo, coloque el puntero sobre la tarjeta y seleccione el icono de publicación para publicarla.
+Antes de crear grupos anidados dentro del grupo `arts`, pase el ratón por encima de la tarjeta `arts` y seleccione el icono de publicación para publicarla.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -87,36 +87,39 @@ Espere a que se confirme que se publicó el grupo.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-El `arts` grupo también debe contener una `groups` carpeta, pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta del grupo de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
+El grupo `arts` también debe contener una carpeta `groups`, pero una carpeta vacía y en la que se pueden crear nuevos grupos. Vaya a la carpeta del grupo de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
 
 1. Visitante
    * Título: `Visual Arts`
    * Nombre: `visual`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Optional Membership`un grupo público, abierto a todos los miembros
+   * Membresía: select `Optional Membership`
+Un grupo público, abierto a todos los miembros
 1. Auditorio
    * Título: `Auditory Arts`
    * Nombre: `auditory`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Required Membership`un grupo abierto, disponible para que los miembros se unan
+   * Membresía: select `Required Membership`
+Un grupo abierto, disponible para que los miembros se unan
 
 1. Historia
 
    * Título: `Art History`
    * Nombre: `history`
    * Plantilla: `Reference Group`
-   * Membresía: seleccionar `Restricted Membership`Un grupo secreto, visible sólo para los miembros invitados como ejemplo, invitar 
+   * Membresía: select `Restricted Membership`
+Un grupo secreto, visible sólo para los miembros invitados como ejemplo, invitar 
 [usuario de demostración](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Actualice la página para ver los tres grupos anidados (subcomunidades).
 
 Si es necesario, para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 
-* Seleccionar carpeta **[!UICONTROL de participación]**
-* Seleccione la tarjeta **[!UICONTROL Tutorial]** de introducción
-* Seleccionar carpeta **[!UICONTROL de grupos]**
-* Seleccionar tarjeta **[!UICONTROL de artes]**
-* Seleccionar carpeta **[!UICONTROL de grupos]**
+* Seleccione **[!UICONTROL carpeta de participación]**
+* Seleccione la tarjeta **[!UICONTROL Tutorial de introducción]**
+* Seleccionar **[!UICONTROL carpeta Grupos]**
+* Seleccionar **[!UICONTROL tarjeta de artes]**
+* Seleccionar **[!UICONTROL carpeta Grupos]**
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -133,9 +136,9 @@ Después de publicar el sitio de la comunidad principal, es necesario
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-## Experiencia en la publicación {#experience-on-publish}
+## Experiencia en publicación {#experience-on-publish}
 
-Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo con los usuarios [de](tutorials.md#demo-users) demostración utilizados para
+Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo con los [usuarios de demostración](tutorials.md#demo-users) que se utilizan para
 
 * Miembro del grupo Arte/Historia: emily.andrews@mailinator.com/password
    * El grupo restringido (secreto), arte/historia, será visible
@@ -146,4 +149,4 @@ Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo co
    * puede unirse a grupos restringidos (abiertos)
    * No se verán grupos restringidos (secretos)
 
-Acceda a las consolas [Miembros y Grupos de comunidades](members.md) del autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.
+Acceda a las consolas Comunidades [Miembros y Grupos](members.md) del autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.

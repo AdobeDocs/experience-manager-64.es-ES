@@ -24,7 +24,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
 1. Haga clic en un componente y configure sus propiedades en la ficha **[!UICONTROL Configuración]**. Por ejemplo, haga clic en el componente **[!UICONTROL Descripción]** y edite sus propiedades.
 
-   ![chlimage_1-481](assets/chlimage_1-481.png)
+   ![chlimage_1-401](assets/chlimage_1-481.png)
 
    Edite las siguientes propiedades para el componente **[!UICONTROL Description]**:
 

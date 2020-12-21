@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Configuración de la caché de formularios adaptables {#configure-adaptive-forms-cache}
+# Configurar la caché de formularios adaptables {#configure-adaptive-forms-cache}
 
 Una caché es un mecanismo para reducir los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de formularios adaptables almacena solo el contenido HTML y la estructura JSON de un formulario adaptable sin guardar datos precargados. Ayuda a reducir el tiempo necesario para procesar un formulario o documento adaptable en el cliente. Está diseñado específicamente para formularios adaptables y también admite documentos adaptables.
 
@@ -34,8 +34,8 @@ Una caché es un mecanismo para reducir los tiempos de acceso a los datos, reduc
 Realice los siguientes pasos para configurar la caché de formularios adaptables:
 
 1. Vaya a AEM administrador de configuración de consola web en `https://[server]:[port]/system/console/configMgr`.
-1. Haga clic en Configuración **del Canal Web de formulario** adaptable y comunicación interactiva para editar sus valores de configuración.
-1. En el cuadro de diálogo Editar valores de configuración, especifique el número máximo de formularios o documentos que una instancia del servidor de AEM Forms puede almacenar en caché en el campo **Número de Forms** adaptable. El valor predeterminado es 100.
+1. Haga clic en **Configuración del Canal Web de comunicación interactiva y formulario adaptable** para editar sus valores de configuración.
+1. En el cuadro de diálogo Editar valores de configuración, especifique el número máximo de formularios o documentos que una instancia del servidor de AEM Forms puede almacenar en caché en el campo **Número de Forms adaptable**. El valor predeterminado es 100.
 
    >[!NOTE]
    >
@@ -43,5 +43,5 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
 
    ![Cuadro de diálogo de configuración para la caché HTML de formularios adaptables](assets/cache-configuration-edit.png)
 
-1. Click **Save** to save the configuration.
+1. Haga clic en **Guardar** para guardar la configuración.
 

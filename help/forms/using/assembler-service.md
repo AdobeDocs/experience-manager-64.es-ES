@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Uso del servicio de ensamblador {#using-assembler-service}
 
-El servicio Ensamblador le permite combinar, reorganizar y aumentar documentos PDF y XDP y obtener información sobre documentos PDF. Cada trabajo enviado al servicio de ensamblador incluye un documento XML de descripción de Documento (DDX), documentos de origen y recursos externos (cadenas y gráficos). Para obtener más información sobre el servicio de ensamblador, consulte [Visión general del servicio](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p)de ensamblador.
+El servicio Ensamblador le permite combinar, reorganizar y aumentar documentos PDF y XDP y obtener información sobre documentos PDF. Cada trabajo enviado al servicio de ensamblador incluye un documento XML de descripción de Documento (DDX), documentos de origen y recursos externos (cadenas y gráficos). Para obtener más información sobre el servicio de ensamblador, consulte [Visión general del servicio de ensamblador](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 Puede utilizar el servicio de ensamblaje para las siguientes operaciones:
 
@@ -27,11 +27,12 @@ Puede utilizar el servicio de ensamblaje para las siguientes operaciones:
 
 Puede utilizar el servicio Compilador para montar dos o más documentos PDF en un solo documento PDF o Portfolio PDF. También puede aplicar funciones al documento PDF que ayuden a la navegación o mejoren la seguridad. A continuación se indican algunas de las formas de montar documentos PDF:
 
-### Compilación de un documento PDF sencillo {#assemble-a-simple-pdf-document}
+### Compilación de un documento PDF simple {#assemble-a-simple-pdf-document}
 
 La siguiente ilustración muestra tres documentos de origen que se están combinando en un solo documento resultante.
 
-![Montaje de un documento PDF sencillo a partir de varios documentos](assets/as_document_assembly.png)PDF **Figura:** *Compilación de un documento PDF sencillo desde varios documentos PDF*
+![Montaje de un documento PDF sencillo a partir de varios ](assets/as_document_assembly.png)
+**documentos PDFFigura:** *Montaje de un documento PDF sencillo a partir de varios documentos PDF*
 
 El siguiente ejemplo es un documento DDX sencillo que se utiliza para montar el documento. Especifica los nombres de los documentos de origen utilizados para producir el documento resultante, así como el nombre del documento resultante:
 
@@ -43,7 +44,7 @@ El siguiente ejemplo es un documento DDX sencillo que se utiliza para montar el 
 </PDF>
 ```
 
-El ensamblado de Documento produce un documento resultante que contiene el siguiente contenido y\
+El ensamblado de documento produce un documento resultante que contiene el siguiente contenido y\
 características:
 
 * Todo o parte de cada documento de origen
@@ -86,7 +87,8 @@ Al compilar un documento, puede utilizar la numeración Bates para aplicar un id
 
 La siguiente ilustración muestra un documento PDF que contiene un identificador único ubicado en el encabezado del documento.
 
-![Un documento PDF que contiene un identificador único ubicado en el encabezado](do-not-localize/as_batesnumber.png)del documento **Figura:** *Un documento PDF que contiene un identificador único ubicado en el encabezado del documento*
+![Un documento PDF que contiene un identificador único ubicado en el ](do-not-localize/as_batesnumber.png)
+**encabezado del documentoFigura:** *Un documento PDF que contiene un identificador único ubicado en el encabezado del documento*
 
 ### Acoplar y montar documentos {#flatten-and-assemble-documents}
 
@@ -104,11 +106,12 @@ Puede utilizar el servicio Ensamblador para montar varios documentos XDP en un s
 
 Estas son algunas de las formas en que puede montar documentos XDP:
 
-### Compilación de un documento XDP sencillo {#assemble-a-simple-xdp-document}
+### Monte un documento XDP simple {#assemble-a-simple-xdp-document}
 
-La siguiente ilustración muestra tres documentos XDP de origen que se están ensamblando en un solo documento XDP resultante. El documento XDP resultante contiene los tres documentos XDP de origen, incluidos los datos asociados. El documento resultante obtiene atributos básicos del documento base, que es el primer documento XDP de origen.
+La siguiente ilustración muestra tres documentos XDP de origen que se están ensamblando en un solo documento XDP resultante. El documento XDP resultante contiene los tres documentos XDP de origen, incluidos sus datos asociados. El documento resultante obtiene atributos básicos del documento base, que es el primer documento XDP de origen.
 
-![Montaje de un documento XDP simple a partir de varios documentos](assets/as_assembler_xdpassembly.png)XDP **Figura:** *Compilación de un documento XDP simple a partir de varios documentos XDP*
+![Montaje de un documento XDP simple a partir de varios ](assets/as_assembler_xdpassembly.png)
+**documentos XDPiverfiguración:** *Montaje de un documento XDP simple a partir de varios documentos XDP*
 
 Este es un documento DDX que produce el resultado ilustrado anteriormente.
 
@@ -122,7 +125,7 @@ Este es un documento DDX que produce el resultado ilustrado anteriormente.
 </DDX>
 ```
 
-### Resolución de referencias durante el ensamblado {#resolving-references-during-assembly}
+### Resolviendo referencias durante el ensamblado {#resolving-references-during-assembly}
 
 Normalmente, los documentos XDP pueden contener imágenes a las que se hace referencia mediante referencias absolutas o relativas. El servicio de ensamblador, de forma predeterminada, conserva las referencias a las imágenes en el documento XDP resultante.
 
@@ -153,7 +156,7 @@ Puede especificar el modo en que el servicio Ensamblador gestiona las imágenes 
  </tbody> 
 </table>
 
-Puede especificar el valor del atributo resolveAssets en la etiqueta de origen XDP o en la etiqueta de resultado XDP principal. Si el atributo se especifica en la etiqueta de resultado XDP, todos los elementos de origen XDP que sean secundarios de un resultado XDP lo heredarán. Sin embargo, si se especifica explícitamente el atributo de un elemento de origen, se anula la configuración del elemento de resultado solo para ese documento de origen.
+Puede especificar el valor del atributo resolveAssets en la etiqueta de origen XDP o en la etiqueta de resultado XDP principal. Si el atributo se especifica en la etiqueta de resultado XDP, todos los elementos de origen XDP que sean elementos secundarios del resultado XDP lo heredarán. Sin embargo, si se especifica explícitamente el atributo de un elemento de origen, se anula la configuración del elemento de resultado solo para ese documento de origen.
 
 #### Resolver todas las referencias de origen en un documento XDP {#resolve-all-source-references-in-an-xdp-document}
 
@@ -199,7 +202,7 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Resolver de forma selectiva referencias absolutas o relativas {#selectively-resolve-absolute-or-relative-references}
+#### Resuelva selectivamente referencias absolutas o relativas {#selectively-resolve-absolute-or-relative-references}
 
 Puede resolver de forma selectiva referencias absolutas o relativas en todos o algunos de los documentos de origen, como se muestra en el ejemplo siguiente:
 
@@ -212,7 +215,7 @@ Puede resolver de forma selectiva referencias absolutas o relativas en todos o a
 </DDX
 ```
 
-### Inserción dinámica de fragmentos de formulario en un formulario XFA {#dynamically-insert-form-fragments-into-an-xfa-form}
+### Inserte dinámicamente fragmentos de formulario en un formulario XFA {#dynamically-insert-form-fragments-into-an-xfa-form}
 
 Puede utilizar el servicio Ensamblador para crear un formulario XFA creado a partir de otro formulario XFA en el que se insertan fragmentos. Con esta función, puede utilizar fragmentos para crear varios formularios.
 
@@ -222,7 +225,8 @@ Los diseñadores de formularios utilizan LiveC ycle Designer para crear fragment
 
 La siguiente ilustración muestra dos formularios XML (plantillas XFA). El formulario de la izquierda contiene un punto de inserción denominado myInsertionPoint. El formulario de la derecha contiene un fragmento denominado myFragment.
 
-![Inserción de fragmentos de formulario en un formulario](assets/as_assembler_fragment_assy_assembled.png)XFA **Figura:** *Inserción de fragmentos de formulario en un formulario XFA*
+![Inserción de fragmentos de formulario en un ](assets/as_assembler_fragment_assy_assembled.png)
+**formulario XFA Figura:** *Inserción de fragmentos de formulario en un formulario XFA*
 
 Cuando el servicio Ensamblador interpreta el siguiente documento DDX, crea un formulario XML que contiene otro formulario XML. El subformulario myFragment del documento myFragmentSource se inserta en myInsertionPoint en el documento myFormSource.
 
@@ -260,7 +264,8 @@ Puede utilizar el servicio Ensamblador para desmontar un documento PDF. El servi
 
 En la siguiente ilustración, las páginas 1 a 3 se extraen del documento de origen y se colocan en un nuevo documento resultante.
 
-![Extracción de páginas específicas de un documento](assets/as_intro_page_extraction.png)de origen **Figura:** *Extracción de páginas específicas de un documento de origen*
+![Extracción de páginas específicas de un ](assets/as_intro_page_extraction.png)
+**documento de origenFigura:** *Extracción de páginas específicas de un documento de origen*
 
 El siguiente ejemplo es un documento DDX utilizado para desmontar el documento.
 
@@ -274,7 +279,8 @@ El siguiente ejemplo es un documento DDX utilizado para desmontar el documento.
 
 En la siguiente ilustración, DocA se divide en varios documentos resultantes. El primer marcador de nivel 1 de una página identifica el inicio de un nuevo documento resultante.
 
-![División de un documento de origen basado en marcadores en varios documentos](assets/as_intro_pdfsfrombookmarks.png)**Figura:** *División de un documento de origen basado en marcadores en varios documentos*
+![División de un documento de origen basado en marcadores en varios ](assets/as_intro_pdfsfrombookmarks.png)
+**documentosFigura:** *División de un documento de origen basado en marcadores en varios documentos*
 
 El siguiente ejemplo es un documento DDX que utiliza marcadores para desmontar un documento de origen.
 
@@ -304,7 +310,7 @@ Puede utilizar el servicio Compilador para obtener la siguiente información sob
 
 * Empaquetar archivos, incluida la información de archivo, las carpetas, el paquete, el esquema y los datos de campo. Puede exportar estos datos desde un documento PDF e importarlos en un documento PDF.
 
-## Validación de documentos DDX {#validate-ddx-documents}
+## Validar documentos DDX {#validate-ddx-documents}
 
 Puede utilizar el servicio Ensamblador para determinar si un documento DDX es válido. Por ejemplo, si ha actualizado desde una versión de LiveCycle anterior, la validación garantiza que el documento DDX sea válido.
 
@@ -331,4 +337,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-El uso de DDX y el servicio de ensamblador para llamar a otros servicios de ciclo LiveC puede simplificar el diagrama de proceso. Puede incluso reducir el esfuerzo que gasta en personalizar sus flujos de trabajo. (Consulte también [Uso de AEM servicios de Documento mediante programación](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))
+El uso de DDX y el servicio de ensamblador para llamar a otros servicios de ciclo LiveC puede simplificar el diagrama de proceso. Puede incluso reducir el esfuerzo que gasta en personalizar sus flujos de trabajo. (Consulte también [Uso de los servicios de Documento de AEM mediante programación](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))

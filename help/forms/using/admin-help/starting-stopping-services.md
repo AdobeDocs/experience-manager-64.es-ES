@@ -29,22 +29,22 @@ Existen dos tipos de servicios que forman parte de AEM formularios:
 
 AEM módulos de formularios (por ejemplo, Forms, Rights Management, Output) funcionan como servicios. A veces, es posible que necesite detener o inicio los servicios para estos módulos de formularios AEM. Por ejemplo, debe detener y, a continuación, reiniciar un servicio de formularios AEM después de cambiar una configuración para el servicio.
 
-1. En la consola de administración, haga clic en **Servicios** > **Aplicaciones y servicios** > Administración **de servicios**.
+1. En la consola de administración, haga clic en **Servicios** > **Aplicaciones y servicios** > **Administración de servicios**.
 1. En la página Administración de servicios, active la casilla de verificación situada junto al servicio para detener o inicio y haga clic en Detener o Inicio.
 
-## Servicios de Inicio o parada para el servidor de aplicaciones y la base de datos {#start-or-stop-services-for-the-application-server-and-database}
+## Servicios de inicio o parada para el servidor de aplicaciones y la base de datos {#start-or-stop-services-for-the-application-server-and-database}
 
 Una implementación completa de AEM formularios incluye un servidor de aplicaciones y servicios de base de datos:
 
 * *`[application server]`* para formularios AEM
 * *`[database]`* para formularios AEM
 
-En Windows, se puede acceder a estos servicios a través del panel Herramientas **** administrativas > **Servicios**. Por ejemplo, si ha instalado AEM formularios en JBoss mediante el método llave en mano, el sistema dispone de los siguientes servicios:
+En Windows, se puede acceder a estos servicios a través del **panel Herramientas administrativas** > **Servicios**. Por ejemplo, si ha instalado AEM formularios en JBoss mediante el método llave en mano, el sistema dispone de los siguientes servicios:
 
 * Formularios de JBoss para Adobe Experience Manager
 * Formularios de MySQL para Adobe Experience Manager
 
-Para Inicio o detener estos servicios, selecciónelos en la lista del panel Servicios y haga clic en el botón de acción correspondiente del panel.
+Para inicio o detener estos servicios, selecciónelos en la lista del panel Servicios y haga clic en el botón de acción correspondiente del panel.
 
 En UNIX® o Linux, escriba el siguiente texto desde una línea de comandos, donde *`[service name]`* es el nombre del servicio que está verificando:
 

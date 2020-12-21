@@ -22,22 +22,22 @@ ht-degree: 7%
 
 Editar propiedades de configuración predeterminadas para Interactive Communications
 
-Interactive Communications incluye propiedades que se configuran automáticamente después de instalar el paquete del complemento [de](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms. Los autores de la comunicación interactiva pueden editar estas propiedades de configuración predeterminadas mediante la página Configuración **de la consola web de** Adobe Experience Manager.
+Interactive Communications incluye propiedades que se configuran automáticamente después de instalar el paquete [AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md). Los autores de la comunicación interactiva pueden editar estas propiedades de configuración predeterminadas mediante la página **Configuración de la consola web de Adobe Experience Manager**.
 
-Abra la página Configuración **de la consola web de** Adobe Experience Manager con la siguiente dirección URL:
+Abra la página **Configuración de la consola web de Adobe Experience Manager** con la siguiente dirección URL:
 
 https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 
 Las propiedades de configuración incluyen:
 
-* [Configuración de fragmentos de Documento](#document-fragments-configuration)
+* [Configuración de fragmentos de documento](#document-fragments-configuration)
 * [Crear configuración de correspondencia](#create-correspondence-configuration)
 * [Configuración del Canal web de comunicación interactiva y formulario adaptable](#adaptive-form-and-interactive-communication-web-channel-configuration)
 * [Configuración del tema del Canal web de comunicación interactiva y formulario adaptable](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
-## Configuración de fragmentos de Documento {#document-fragments-configuration}
+## Configuración de fragmentos de documento {#document-fragments-configuration}
 
-Toque Configuración **de fragmentos de** Documento en la página Configuración **de la consola web de** Adobe Experience Manager para vista de las propiedades de configuración de los fragmentos de documento.
+Toque **Configuración de fragmentos de Documento** en la página **Configuración de la consola web de Adobe Experience Manager** para vista de las propiedades de configuración de los fragmentos de documento.
 
 <table> 
  <tbody> 
@@ -58,24 +58,24 @@ Toque Configuración **de fragmentos de** Documento en la página Configuración
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td>Sangría</td> 
    <td>Ancho de una sola unidad de sangría aplicada al texto en fragmentos de documento de lista.</td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Anchura mínima de números romanos</td> 
    <td>Anchura mínima que se aplicará al campo de viñeta o número cuando se utilicen números romanos en fragmentos de documento de lista. </td> 
-   <td>12.7mm</td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Ancho mínimo del número</td> 
    <td>Anchura mínima que se aplicará al campo de viñeta o número cuando se utilicen listas numeradas distintas de números romanos en fragmentos de documento de lista.</td> 
-   <td>8.0mm</td> 
+   <td>8,0 mm</td> 
    <td>Número</td> 
   </tr> 
  </tbody> 
@@ -83,16 +83,16 @@ Toque Configuración **de fragmentos de** Documento en la página Configuración
 
 ## Crear configuración de correspondencia {#create-correspondence-configuration}
 
-Toque **Crear configuración** de correspondencia en la página Configuración **de la consola web de** Adobe Experience Manager para vista de las propiedades de configuración de la interfaz de usuario del agente.
+Toque **Crear configuración de correspondencia** en la página **Configuración de la consola web de Adobe Experience Manager** para vista de las propiedades de configuración de la interfaz de usuario del agente.
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
 | Mostrar contenido resuelto para editarlo | Seleccione la casilla de verificación para mostrar el contenido resuelto (valores reales en lugar de marcadores de posición) mientras edita el módulo de texto en la interfaz de usuario del agente. | No seleccionado | No aplicable |
 | Aplicar marca de agua durante la previsualización | Seleccione la casilla de verificación para aplicar una marca de agua al canal de impresión de comunicación interactiva en modo de Previsualización. | No seleccionado | No aplicable |
 
-## Configuración del Canal web de comunicación interactiva y formulario adaptable {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configuración del Canal Web de comunicación interactiva y formulario adaptable {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toque Configuración **del Canal web de comunicación interactiva y formulario** adaptable en la página de configuración **de la consola web de** Adobe Experience Manager para vista de las propiedades de configuración del canal web de Forms adaptable e Interactive Communications. En la tabla siguiente se describen las propiedades relacionadas con Interactive Communications:
+Toque **Configuración del Canal Web de comunicación interactiva y formulario adaptable** en la página **Configuración de la consola Web de Adobe Experience Manager** para vista de las propiedades de configuración del canal Web de Forms adaptable y Comunicaciones interactivas. En la tabla siguiente se describen las propiedades relacionadas con Interactive Communications:
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
@@ -100,9 +100,9 @@ Toque Configuración **del Canal web de comunicación interactiva y formulario**
 | Número máximo de entradas de caché | Establezca el número máximo de formularios adaptables y comunicaciones interactivas que se pueden recuperar con la memoria caché. | 100 | Número |
 | Convertir el nombre de archivo en único | Seleccione la casilla de verificación para incluir nombres únicos para los archivos como archivos adjuntos en Adaptive Forms e Interactive Communications. | No seleccionado | No aplicable |
 
-## Configuración del tema del Canal web de comunicación interactiva y formulario adaptable {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configuración del tema del Canal Web de comunicación interactiva y formulario adaptable {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toque Configuración **del tema del Canal web de comunicaciones** adaptables y formularios interactivos en la página de configuración **de la consola web de** Adobe Experience Manager para vista de las propiedades de configuración de temáticas de canal web de Forms adaptable e Interactive Communications.
+Toque **Configuración del tema del Canal Web de comunicación interactiva y formulario adaptable** en la página **Configuración de la consola Web de Adobe Experience Manager** para vista de las propiedades de configuración de las temáticas de canal Web de Forms adaptable y comunicaciones interactivas.
 
 <table> 
  <tbody> 

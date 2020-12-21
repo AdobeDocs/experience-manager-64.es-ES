@@ -26,14 +26,14 @@ La página de Forms en la consola de administración contiene opciones que contr
 
 El servicio Forms almacena en caché los siguientes elementos:
 
-* **diseños de formulario:** El servicio Forms almacena en caché los diseños de formulario que recupera del repositorio o de los orígenes HTTP. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
+* **diseños de formulario:** El servicio Forms almacena en caché los diseños de formulario que recupera del repositorio o de orígenes HTTP. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
 * **fragmentos e imágenes:** El servicio Forms puede almacenar en caché fragmentos e imágenes utilizados en diseños de formulario. Cuando el servicio Forms almacena en caché estos objetos, mejora el rendimiento porque los fragmentos y las imágenes solo se leen desde el repositorio en la primera solicitud.
 * **formularios:** El servicio Forms almacena en caché los formularios que procesa. Este tipo de almacenamiento en caché mejora el rendimiento porque el servicio de Forms no necesita resolver ni procesar el mismo formulario en solicitudes posteriores.
 
 Forms almacena la caché en dos ubicaciones:
 
-* **en memoria:** Los elementos se almacenan en la memoria para un acceso rápido. La caché en memoria tiene un tamaño limitado y se elimina al reiniciar el servidor.
-* **en disco:** Los elementos se almacenan en el sistema de archivos del servidor. La caché de disco tiene una capacidad mayor que la caché en memoria y se conserva al reiniciar el servidor. La ubicación de la caché de disco depende del servidor de aplicaciones. Para obtener información sobre cómo cambiar la ubicación de la caché de disco, consulte [Configuración de ubicaciones para Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
+* **en la memoria:** los elementos se almacenan en la memoria para un acceso rápido. La caché en memoria tiene un tamaño limitado y se elimina al reiniciar el servidor.
+* **en disco:** los elementos se almacenan en el sistema de archivos del servidor. La caché de disco tiene una capacidad mayor que la caché en memoria y se conserva al reiniciar el servidor. La ubicación de la caché de disco depende del servidor de aplicaciones. Para obtener información sobre cómo cambiar la ubicación de la caché de disco, consulte [Configuración de ubicaciones para Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).
 
 ## Especificación del modo de caché {#specifying-the-cache-mode}
 
@@ -42,7 +42,7 @@ Forms admite dos modos de almacenamiento en caché:
 * incondicional
 * uso del punto de comprobación de caché
 
-Si cambia entre los modos de caché, reinicie el servicio Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formularios AEM para obtener instrucciones.
+Si cambia entre los modos de caché, reinicie el servicio Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos de formularios de AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 El tiempo del punto de comprobación de la caché se restablece automáticamente al cambiar entre modos.
 
@@ -92,49 +92,49 @@ Para acceder a esta configuración, en la consola de administración, haga clic 
 
 ### Especificación de la configuración de caché global {#specifying-global-cache-settings}
 
-La configuración del área Configuración **de caché** global afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formularios AEM para obtener instrucciones.
+La configuración del área **Configuración global de caché** afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos de formularios de AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
-**Tamaño máximo de Documento de caché (KB):** Tamaño máximo, en kilobytes, de un diseño de formulario u otro recurso que se puede almacenar en cualquier caché en memoria. Esta es una configuración global que se aplica a todas las memorias caché. Si un recurso es mayor que este valor, no se almacena en la memoria caché. El valor predeterminado es 1024 kilobytes. Esta configuración no afecta a la caché de disco.
+**Tamaño máximo de Documento de caché (KB):** el tamaño máximo, en kilobytes, de un diseño de formulario u otro recurso que se puede almacenar en cualquier caché en memoria. Esta es una configuración global que se aplica a todas las memorias caché. Si un recurso es mayor que este valor, no se almacena en la memoria caché. El valor predeterminado es 1024 kilobytes. Esta configuración no afecta a la caché de disco.
 
-**Caché de procesamiento de formularios habilitada:** De forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en la caché para su posterior recuperación. Esta configuración mejora el rendimiento porque el servicio de Forms solo tiene que procesar un formulario concreto una vez y, a continuación, utiliza la versión en caché. Esta opción funciona con la propiedad de almacenamiento en caché del diseño de formulario. Para obtener información sobre la configuración de este valor en el diseño de formulario, consulte la Ayuda de Designer.
+**Caché de procesamiento de formularios habilitada:** de forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en la caché para su posterior recuperación. Esta configuración mejora el rendimiento porque el servicio de Forms solo tiene que procesar un formulario concreto una vez y, a continuación, utiliza la versión en caché. Esta opción funciona con la propiedad de almacenamiento en caché del diseño de formulario. Para obtener información sobre la configuración de este valor en el diseño de formulario, consulte la Ayuda de Designer.
 
 ### Almacenamiento en caché de diseños de formulario {#caching-form-designs}
 
-Cuando el servicio Forms recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio y lo almacena en caché. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
+Cuando el servicio Forms recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio y lo almacena en la caché. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
 
-El servicio Forms siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, dichos archivos se consideran la caché de disco. El servicio Forms también almacena en caché los diseños de formulario en la memoria, según la configuración del área Caché **de plantilla de** In Memory. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formularios AEM para obtener instrucciones.
+El servicio Forms siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, dichos archivos se consideran la caché de disco. El servicio Forms también almacena en caché los diseños de formulario en la memoria, según la configuración del área **Caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos de formularios de AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
-**Tamaño de caché de configuración de plantilla:** El número máximo de objetos de configuración de plantilla que se deben mantener en memoria. El valor predeterminado es 100. Se recomienda definir este valor bueno o igual al valor Tamaño de caché de plantilla. Esta configuración no afecta a la caché de disco.
+**Tamaño de caché de configuración de plantilla:** el número máximo de objetos de configuración de plantilla que se deben mantener en memoria. El valor predeterminado es 100. Se recomienda definir este valor bueno o igual al valor Tamaño de caché de plantilla. Esta configuración no afecta a la caché de disco.
 
-**Tamaño de caché de plantilla:** El número máximo de objetos de contenido de plantilla que se deben mantener en memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché de disco.
+**Tamaño de caché de plantilla:** el número máximo de objetos de contenido de plantilla que se van a conservar en memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché de disco.
 
-**Habilitado:** De forma predeterminada, esta casilla de verificación está seleccionada, lo que significa que las plantillas de formulario se almacenan en la memoria caché. Cuando esta opción no está seleccionada, las plantillas de formulario se almacenan en caché solo en disco.
+**Habilitado:** de forma predeterminada, esta casilla de verificación está seleccionada, lo que significa que las plantillas de formulario se almacenan en la memoria caché. Cuando esta opción no está seleccionada, las plantillas de formulario se almacenan en caché solo en disco.
 
 ### Almacenamiento en caché de formularios procesados {#caching-rendered-forms}
 
 El servicio Forms almacena en caché los formularios procesados para que no necesite resolver ni procesar el mismo formulario en solicitudes posteriores. Los formularios procesados se almacenan en caché en disco y en memoria.
 
-Esta configuración se encuentra en el área Caché **de procesamiento de formularios** en memoria. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) de formularios AEM para obtener instrucciones.
+Esta configuración se encuentra en el área **Caché de procesamiento de formularios en memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos de formularios de AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
-**Tamaño de caché:** Especifica el número máximo de formularios procesados que pueden residir en la caché en memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché de disco.
+**Tamaño de caché:** especifica el número máximo de formularios procesados que pueden residir en la caché en memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché de disco.
 
-**Habilitado:** De forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en la memoria caché. Cuando esta opción no está seleccionada, los formularios procesados se almacenan en la caché únicamente en disco.
+**Habilitado:** de forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en caché en memoria. Cuando esta opción no está seleccionada, los formularios procesados se almacenan en la caché únicamente en disco.
 
 ### Almacenamiento en caché de fragmentos e imágenes {#caching-fragments-and-images}
 
 El servicio Forms almacena en caché fragmentos e imágenes que se utilizan en diseños de formulario en disco. Esto mejora el rendimiento porque los fragmentos y las imágenes solo se leen desde el repositorio en la primera solicitud. A continuación, en solicitudes posteriores, el servicio de Forms lee fragmentos e imágenes de la caché de disco. Los fragmentos y las imágenes solo se almacenan en caché en el disco y no en la memoria.
 
-Puede utilizar los siguientes ajustes para controlar el almacenamiento en caché en disco de fragmentos e imágenes. Esta configuración se encuentra en el área Configuración **de caché de recursos de** plantilla:
+Puede utilizar los siguientes ajustes para controlar el almacenamiento en caché en disco de fragmentos e imágenes. Esta configuración se encuentra en el área **Configuración de caché de recursos de plantilla**:
 
-**Almacenamiento en caché** de recursos Seleccione una de las siguientes opciones en la lista:
+**Almacenamiento en** caché de recursosSeleccione una de las siguientes opciones de la lista:
 
-**Habilitado para fragmentos e imágenes:** El servicio Forms almacena en caché fragmentos e imágenes. Ésta es la opción predeterminada.
+**Habilitado para fragmentos e imágenes:** el servicio Forms almacena en caché fragmentos e imágenes. Ésta es la opción predeterminada.
 
-**Habilitado para fragmentos:** El servicio Forms almacena en caché fragmentos, pero no imágenes.
+**Habilitado para fragmentos:** el servicio Forms almacena en caché fragmentos, pero no imágenes.
 
-**Deshabilitado:** El servicio Forms no almacena en caché fragmentos ni imágenes.
+**Deshabilitado:** el servicio Forms no almacena en caché fragmentos ni imágenes.
 
-**Intervalo de limpieza (segundos):** Especifica la frecuencia con la que el servicio de Forms elimina los antiguos archivos de caché no válidos. El servicio Forms no elimina archivos de caché válidos. Si cambia el intervalo de limpieza, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte Inicio o detenga los servicios asociados con los módulos de formularios de AEM para obtener instrucciones. El valor predeterminado es 600 segundos.
+**Intervalo de limpieza (segundos):** especifica la frecuencia con la que el servicio de Forms elimina los antiguos archivos de caché no válidos. El servicio Forms no elimina archivos de caché válidos. Si cambia el intervalo de limpieza, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte Inicio o detenga los servicios asociados con los módulos de formularios de AEM para obtener instrucciones. El valor predeterminado es 600 segundos.
 
 ## Consideraciones de clúster para cachés {#clustering-considerations-for-caches}
 

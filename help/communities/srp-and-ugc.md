@@ -1,8 +1,8 @@
 ---
 title: Elementos esenciales de SRP y UGC
 seo-title: Elementos esenciales de SRP y UGC
-description: Información general sobre el proveedor de recursos de Almacenamiento y el contenido generado por el usuario
-seo-description: Información general sobre el proveedor de recursos de Almacenamiento y el contenido generado por el usuario
+description: Información general sobre el proveedor de recursos de almacenamiento y el contenido generado por el usuario
+seo-description: Información general sobre el proveedor de recursos de almacenamiento y el contenido generado por el usuario
 uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -26,11 +26,11 @@ Si no está familiarizado con el proveedor de recursos de almacenamiento (SRP) y
 
 En esta sección de la documentación se proporciona información esencial sobre SRP y UGC.
 
-## API de StorageResourceProvider {#storageresourceprovider-api}
+## API StorageResourceProvider {#storageresourceprovider-api}
 
 La API de SocialResourceProvider (SRP API) es una extensión de varias API de proveedores de recursos de Sling. Incluye soporte para paginación e incremento atómico (útil para contar y anotar).
 
-Se necesitan Consultas para los componentes del SCF, ya que es necesario ordenar por fecha, utilidad, número de votos, etc. Todas las opciones de SRP cuentan con mecanismos de consulta flexibles que no dependen de la inversión.
+Se necesitan consultas para los componentes del SCF, ya que es necesario ordenar por fecha, utilidad, número de votos, etc. Todas las opciones de SRP cuentan con mecanismos de consulta flexibles que no dependen de la inversión.
 
 La ubicación del almacenamiento SRP incorpora la ruta del componente. La API de SRP siempre debe utilizarse para acceder a UGC, ya que la ruta de acceso raíz depende de la opción de SRP seleccionada, como ASRP, MSRP o JSRP.
 
@@ -38,13 +38,13 @@ La API de SRP no es una clase abstracta, es una interfaz. Una implementación pe
 
 Los medios para utilizar la API de SRP son a través de las utilidades proporcionadas, como las que se encuentran en el paquete SocialResourceUtilities.
 
-Al actualizar desde AEM 6.0 o anterior, será necesario migrar UGC para todos los SRP, para los que hay una herramienta de código abierto disponible. See [Upgrading to AEM Communities 6.3](upgrade.md).
+Al actualizar desde AEM 6.0 o anterior, será necesario migrar UGC para todos los SRP, para los que hay una herramienta de código abierto disponible. Consulte [Actualización a AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Históricamente, las utilidades para acceder a UGC se encontraban en el paquete SocialUtils, que ya no existe.
 >
->Para ver las utilidades de reemplazo, consulte Refactorización de [SocialUtils](socialutils.md).
+>Para ver las utilidades de reemplazo, consulte [Refactorización de SocialUtils](socialutils.md).
 
 ## Método de utilidad para acceder a UGC {#utility-method-to-access-ugc}
 
@@ -65,13 +65,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Para otras sustituciones de SocialUtils, consulte Refactorización de [SocialUtils](socialutils.md).
+Para otros reemplazos de SocialUtils, consulte [Refactorización de SocialUtils](socialutils.md).
 
 Para obtener instrucciones de codificación, visite [Acceso a UGC con SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->El path resourceToUGCStoragePath() devuelve *no es *adecuado para la comprobación [](srp.md#for-access-control-acls)ACL.
+>El path resourceToUGCStoragePath() devuelve *no es *adecuado para [comprobación de ACL](srp.md#for-access-control-acls).
 
 ## Método de utilidad para acceder a las ACL {#utility-method-to-access-acls}
 
@@ -98,7 +98,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->La ruta devuelta por resourceToACLPath() *no es *adecuada para [acceder al UGC](#utility-method-to-access-acls) mismo.
+>La ruta devuelta por resourceToACLPath() *no es *adecuada para [acceder al propio UGC](#utility-method-to-access-acls).
 
 ## Ubicaciones de Almacenamientos relacionadas con UGC {#ugc-related-storage-locations}
 
@@ -108,29 +108,29 @@ Las siguientes descripciones de la ubicación de los almacenamientos pueden ser 
 
 Cuando un miembro introduce UGC en el entorno de publicación, interactúa con un componente como parte de un sitio AEM.
 
-Un ejemplo de este componente es el componente [de](http://localhost:4502/content/community-components/en/comments.html) comentarios que existe en el sitio de la Guía [de componentes de la](components-guide.md) comunidad. La ruta al nodo de comentarios en el repositorio local es:
+Un ejemplo de este componente es el [componente de comentarios](http://localhost:4502/content/community-components/en/comments.html) que existe en el sitio [Community Components Guide](components-guide.md). La ruta al nodo de comentarios en el repositorio local es:
 
 * Ruta del componente = */content/community-components/es/comments/jcr:content/content/inclusible/comments*
 
 **ubicación del nodo de sombra**
 
-La creación de UGC también crea un nodo [de](srp.md#about-shadow-nodes-in-jcr) sombra al que se aplican las ACL necesarias. La ruta al nodo de sombra correspondiente en el repositorio local es el resultado de anteponer la ruta raíz del nodo de sombra a la ruta del componente:
+La creación de UGC también crea un [nodo de sombra](srp.md#about-shadow-nodes-in-jcr) al que se aplican las ACL necesarias. La ruta al nodo de sombra correspondiente en el repositorio local es el resultado de anteponer la ruta raíz del nodo de sombra a la ruta del componente:
 
 * Ruta de acceso raíz = /content/usergenerate
 * Nodo de sombra de comentario = /content/usergenerate/content/community-components/es/comments/jcr:content/content/inclusible/comments
 
 **Ubicación de UGC**
 
-El UGC se crea en ninguna de estas ubicaciones y solo se debe acceder a él mediante un método [de](#utility-method-to-access-ugc) utilidad que invoque la API de SRP.
+El UGC se crea en ninguna de estas ubicaciones y solo se debe acceder a él mediante un [método de utilidad](#utility-method-to-access-ugc) que invoque la API de SRP.
 
 * Ruta raíz = /content/usergenerate/asi/srp-choice
 * Nodo UGC para JSRP = /content/usergenerate/asi/jcr/content/community-components/en/comments/jcr:content/content/inclusible/comments/srzd-let_it_be_
 
-*Tenga en cuenta* que para JSRP, el nodo UGC *sólo* estará presente en la instancia de AEM (autor o publicación) en la que se introdujo. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
+*Tenga en cuenta* que para JSRP, el nodo UGC  ** solo estará presente en la instancia de AEM (autor o publicación) en la que se introdujo. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
 
 ## Información relacionada {#related-information}
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: Introducción y uso del repositorio
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: Introducción y uso del repositorio
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
 

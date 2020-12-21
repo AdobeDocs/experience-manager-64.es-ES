@@ -22,9 +22,9 @@ ht-degree: 1%
 
 Asignar usuarios a los grupos para administrar AEM Forms en OSGi
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale el paquete [de complementos de](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms, los grupos mencionados en este artículo, como el usuario de formularios y el usuario que puede utilizar formularios, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez que instale [el paquete de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como el usuario de formularios y el usuario con capacidad para trabajar con formularios, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table> 
  <tbody>

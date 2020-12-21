@@ -19,20 +19,20 @@ ht-degree: 0%
 
 # Diseño de plantillas de formulario para formularios HTML5 {#designing-form-templates-for-html-forms}
 
-Componente de formularios HTML5 en ofertas de AEM que procesa la plantilla de formulario XFA en formato HTML5. Los diseñadores de formularios pueden diseñar plantillas de formulario con [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) y utilizar la función de representación HTML5. Estas plantillas de formulario, junto con sus recursos, pueden residir en AEM repositorio, sistema de archivos o expuestas mediante http. Sin embargo, si planea administrar los formularios con Forms Manager, las plantillas y los recursos deben residir en el repositorio de AEM.
+Componente de formularios HTML5 en ofertas de AEM que procesa la plantilla de formulario XFA en formato HTML5. Los diseñadores de formularios pueden diseñar plantillas de formulario mediante [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) y utilizar la capacidad de representación HTML5. Estas plantillas de formulario, junto con sus recursos, pueden residir en AEM repositorio, sistema de archivos o expuestas mediante http. Sin embargo, si planea administrar los formularios con Forms Manager, las plantillas y los recursos deben residir en el repositorio de AEM.
 
-Aunque los formularios HTML5 coinciden en buena medida con el comportamiento de los PDF forms, hay algunas funciones en ambos formatos que no se pueden aplicar al otro. Por ejemplo, la forma en que se aplican los códigos de barras en un formulario PDF en Adobe Reader varía según el formulario móvil o la forma en que se firma digitalmente un formulario también varía según el formato. Para obtener más información sobre estas variaciones, consulte Diferenciación de [funciones entre formularios HTML5 y PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+Aunque los formularios HTML5 coinciden en buena medida con el comportamiento de los PDF forms, hay algunas funciones en ambos formatos que no se pueden aplicar al otro. Por ejemplo, la forma en que se aplican los códigos de barras en un formulario PDF en Adobe Reader varía según el formulario móvil o la forma en que se firma digitalmente un formulario también varía según el formato. Para obtener más información sobre estas variaciones, consulte [Diferenciación de funciones entre formularios HTML5 y PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 Para ver las funciones XFA comunes, consulte las siguientes optimizaciones y directrices para diseñar un formulario que funcione en ambos formatos.
 
-## Capacidades en AEM Forms Designer para Forms HTML5 {#capabilities-in-aem-forms-designer-for-html-forms}
+## Capacidades de AEM Forms Designer para HTML5 Forms {#capabilities-in-aem-forms-designer-for-html-forms}
 
-### HTML de Previsualización {#preview-html}
+### HTML de previsualización {#preview-html}
 
-La ficha HTML de Previsualización se agrega en el modo de diseño para que los diseñadores de formularios previsualización formularios en formato HTML5 durante el proceso de diseño. Para obtener más información sobre cómo habilitar y configurar esta capacidad en AEM Forms Designer, consulte [Previsualización de HTML](/help/forms/using/preview-xdp-forms-html.md).
+La ficha HTML de Previsualización se agrega en el modo de diseño para que los diseñadores de formularios previsualización formularios en formato HTML5 durante el proceso de diseño. Para obtener más información sobre cómo habilitar y configurar esta capacidad en AEM Forms Designer, consulte [Previsualización HTML](/help/forms/using/preview-xdp-forms-html.md).
 
 ### Firma manuscrita {#scribble-signature}
 
-El destinatario clave para los formularios HTML5 son los dispositivos táctiles. Por lo tanto, se agrega un nuevo control de firma de garabatos en AEM Forms Designer. Puede hacer clic o arrastrar y soltar el control de firma de garabatos en la plantilla de formulario y configurarlo. Se procesa como un campo de garabatos en la representación HTML5 y se puede utilizar para garabatear la firma en dispositivos táctiles. En equipos de escritorio, se puede utilizar como campo de garabateo mediante el control del ratón. Para obtener más información sobre cómo utilizar esta función, consulte Campo [de garabatos](/help/forms/using/scribble-signature.md)XFA.
+El destinatario clave para los formularios HTML5 son los dispositivos táctiles. Por lo tanto, se agrega un nuevo control de firma de garabatos en AEM Forms Designer. Puede hacer clic o arrastrar y soltar el control de firma de garabatos en la plantilla de formulario y configurarlo. Se procesa como un campo de garabatos en la representación HTML5 y se puede utilizar para garabatear la firma en dispositivos táctiles. En equipos de escritorio, se puede utilizar como campo de garabateo mediante el control del ratón. Para obtener más información sobre cómo utilizar esta función, consulte [Campo de garabatos XFA](/help/forms/using/scribble-signature.md).
 
 ![4](assets/4.png)

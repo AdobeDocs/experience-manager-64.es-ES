@@ -22,7 +22,7 @@ ht-degree: 0%
 
 En AEM formularios, una *aplicación* es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios AEM. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas HTML y archivos SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden implementar aplicaciones directamente desde la vista Aplicaciones de Workbench. Una vez implementadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
 
-Cuando se completa una aplicación y está lista para su implementación en un servidor de producción, el usuario de Workbench la empaqueta en un archivo *de aplicación de formularios* AEM (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de la aplicación mediante la ficha Aplicaciones de la página Administración de aplicaciones.
+Cuando se completa una aplicación y está lista para su implementación en un servidor de producción, el usuario de Workbench la empaqueta en un *archivo de aplicación de formularios de AEM* (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de la aplicación mediante la ficha Aplicaciones de la página Administración de aplicaciones.
 
 También puede utilizar la ficha Archivos de la página Administración de aplicaciones para importar las LCA que se crearon con Workbench 8.x.
 
@@ -58,7 +58,7 @@ Utilice la ficha Aplicaciones para importar y administrar las aplicaciones cread
 
    La propiedad **syncState** indica el estado de sincronización de datos entre el servidor de formularios AEM y el repositorio de CRX. Tan pronto como se inicia el proceso de importación, este estado se establece en 0 (cero). Este estado indica que los datos no están sincronizados actualmente. Cuando se sincronizan los datos, el estado se establece en 1.
 
-## Implementación de una aplicación {#deploy-an-application}
+## Implementar una aplicación {#deploy-an-application}
 
 Puede implementar las aplicaciones importadas o que los usuarios de Workbench importaron desde Workbench.
 
@@ -66,7 +66,7 @@ Puede implementar las aplicaciones importadas o que los usuarios de Workbench im
 1. Seleccione la casilla de verificación situada junto a la aplicación que desea implementar y haga clic en Implementar.
 1. Haga clic en Aceptar en el cuadro de diálogo de confirmación que aparece.
 
-## Despliegue de una aplicación {#undeploy-an-application}
+## Desimplementar una aplicación {#undeploy-an-application}
 
 Puede anular la implementación de aplicaciones desde el motor de ejecución.
 
@@ -82,30 +82,30 @@ Cancele la implementación de la aplicación antes de quitarla del servidor.
 1. Seleccione la casilla de verificación situada junto a la aplicación que desea eliminar y haga clic en Eliminar.
 1. Haga clic en Aceptar en el cuadro de diálogo de confirmación que aparece.
 
-## Importación de la configuración del tiempo de ejecución de una aplicación {#import-an-application-s-runtime-configuration}
+## Importar la configuración del tiempo de ejecución de una aplicación {#import-an-application-s-runtime-configuration}
 
 Si un administrador de la aplicación exportó la configuración de tiempo de ejecución para una aplicación, puede importarla a la aplicación implementada. Puede importarlo mediante la consola de administración o mediante la implementación de LCA mediante scripts.
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en el nombre de la aplicación.
-1. Click Import Runtime Config.
+1. Haga clic en Importar configuración de tiempo de ejecución.
 1. Haga clic en Examinar y seleccione el archivo XML que contiene la configuración de tiempo de ejecución.
 1. Haga clic en Importar.
 
-## Export an application’s runtime configuration {#export-an-application-s-runtime-configuration}
+## Exportar la configuración del tiempo de ejecución de una aplicación {#export-an-application-s-runtime-configuration}
 
-You can export the runtime configuration information for deployed applications.
+Puede exportar la información de configuración del tiempo de ejecución para las aplicaciones implementadas.
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en el nombre de la aplicación.
-1. Click Export Runtime Config and save the configuration file (XML) that is produced.
+1. Haga clic en Exportar configuración de tiempo de ejecución y guarde el archivo de configuración (XML) generado.
 
-## Scripted deployment of AEM forms applications {#scripted-deployment-of-aem-forms-applications}
+## Implementación con secuencias de comandos de aplicaciones de formularios AEM {#scripted-deployment-of-aem-forms-applications}
 
-You can also use a scripted deployment tool to deploy application files, including a settings.xml file that specifies the following settings:
+También puede utilizar una herramienta de implementación mediante secuencias de comandos para implementar archivos de aplicación, incluido un archivo settings.xml que especifica la siguiente configuración:
 
-* service configuration settings
-* pool configuration settings
+* configuración del servicio
+* configuración del grupo
 * configuración de extremo
 * perfiles de seguridad
 

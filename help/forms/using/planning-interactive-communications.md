@@ -22,7 +22,7 @@ Planifique la anatomía para su comunicación interactiva
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Este tutorial es un paso en la [serie Crear una primera comunicación](/help/forms/using/create-your-first-interactive-communication.md) interactiva. Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primera comunicación interactiva](/help/forms/using/create-your-first-interactive-communication.md). Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y demostrar el caso de uso completo del tutorial.
 
 El primer paso en la planificación de una comunicación interactiva es finalizar el contenido de la comunicación interactiva. Los expertos en la materia de departamentos como legal, financiero, de asistencia o marketing pueden ayudarle a finalizar el contenido. Una vez finalizado el contenido, debe analizarlo para identificar los distintos tipos de recursos necesarios para crear la comunicación interactiva.
 
@@ -30,19 +30,19 @@ El primer paso en la planificación de una comunicación interactiva es finaliza
 
 Una comunicación interactiva incluye los siguientes elementos:
 
-* **El texto** estático incluye principalmente las partes de la comunicación interactiva que son de naturaleza genérica y están incluidas en la comunicación con todos los clientes. Por ejemplo, encabezado, pie de página, saludo o renuncia de responsabilidad.
+* **El** texto estático incluye principalmente las partes de la comunicación interactiva que son de naturaleza genérica y están incluidas en la comunicación con todos los clientes. Por ejemplo, encabezado, pie de página, saludo o renuncia de responsabilidad.
 * **Los datos procedentes de un sistema back-end (modelo de datos de formulario)** son específicos del cliente y se combinan dinámicamente con la comunicación interactiva. Por ejemplo, el número de directiva o la dirección se pueden originar utilizando el modelo de datos de formulario.
-* **Maquetación o plantillas** para la versión impresa y web de la Comunicación interactiva.
+* **Diseño o** plantillas para la versión impresa y web de la comunicación interactiva.
 * **Orden** en el que aparecen los distintos párrafos de texto en la Comunicación interactiva.
 * **Datos introducidos por un empleado de primera línea (IU del agente)** que está personalizando la comunicación antes de enviarla. Por ejemplo, la fecha de vencimiento del pago.
 
-* **Datos** condicionales que se rellenan en función de condiciones predefinidas. Por ejemplo, la fecha en que se genera la comunicación interactiva.
+* **Datos condicionales** que se rellenan en función de condiciones predefinidas. Por ejemplo, la fecha en que se genera la comunicación interactiva.
 * **Imágenes almacenadas en un repositorio**, como logotipos e imágenes de firma. Imágenes como logotipos corporativos aparecerían en la mayoría o en toda la comunicación interactiva.
-* **Tablas** y gráficos necesarios para simplificar la representación de datos complejos en una comunicación interactiva
+* **Gráficos y** tablas necesarios para simplificar la representación de datos complejos en una comunicación interactiva
 
 ## Anatomía de la comunicación interactiva {#anatomy-of-the-interactive-communication}
 
-Una vez que haya finalizado el contenido y los elementos utilizados para crear la comunicación interactiva, puede crear una anatomía de la comunicación interactiva. La anatomía debe tener los detalles enumerados en la sección Consideraciones [de](/help/forms/using/planning-interactive-communications.md#planning-considerations) planificación. Según nuestro caso de uso, el siguiente es un ejemplo de anatomía de la factura mensual que un operador de telecomunicaciones envía a sus clientes.
+Una vez que haya finalizado el contenido y los elementos utilizados para crear la comunicación interactiva, puede crear una anatomía de la comunicación interactiva. La anatomía debe tener los detalles enumerados en la sección [Consideraciones de planificación](/help/forms/using/planning-interactive-communications.md#planning-considerations). Según nuestro caso de uso, el siguiente es un ejemplo de anatomía de la factura mensual que un operador de telecomunicaciones envía a sus clientes.
 
 La anatomía incluye datos con los siguientes modos de entrada:
 
@@ -52,7 +52,7 @@ La anatomía incluye datos con los siguientes modos de entrada:
 * Datos condicionales
 * Imágenes
 
-En cada sección, el texto en negrita representa texto estático. La base de datos incluye tablas de cliente, facturas y llamadas. Un modelo de datos de formulario puede recibir datos de cualquiera de estas tablas. Para obtener más información, consulte [Creación de un modelo](create-form-data-model-tutorial.md)de datos de formulario.
+En cada sección, el texto en negrita representa texto estático. La base de datos incluye tablas de cliente, facturas y llamadas. Un modelo de datos de formulario puede recibir datos de cualquiera de estas tablas. Para obtener más información, consulte [Creación de un modelo de datos de formulario](create-form-data-model-tutorial.md).
 
 La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de la comunicación interactiva:
 
@@ -68,14 +68,14 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
   <tr>
    <td>Detalles de la factura</td> 
    <td><p>Nº de factura</p> <p>Fecha de facturación</p> <p>Período de facturación</p> <p>Su plan</p> </td> 
-   <td><p>Valor del <strong>campo </strong>Plan</p> <p>Tabla - cliente</p> </td> 
+   <td><p>Valor del campo <strong>Plan </strong></p> <p>Tabla - cliente</p> </td> 
    <td><p>Valores de los campos siguientes:</p> 
     <ul> 
      <li>Nº de factura</li> 
      <li>Fecha de facturación</li> 
      <li>Período de facturación</li> 
     </ul> <p> </p> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Detalles del cliente</td> 
@@ -94,7 +94,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
      <li>Código de estado</li> 
      <li>Número de conexiones</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Resumen de facturación</td> 
@@ -108,7 +108,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
      <li>Importe pendiente</li> 
      <li>Fecha de vencimiento</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Resumen de los cargos</td> 
@@ -126,7 +126,7 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
      <li>TOTAL PAGABLE (uso recargas calculadas, campo)</li> 
     </ul> <p>Tabla - facturas</p> </td> 
    <td>No hay campos</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Llamadas por elementos: Salientes</td> 
@@ -140,20 +140,20 @@ La siguiente tabla ilustra la fuente de datos de cada campo de la anatomía de l
     </ul> </td> 
    <td><p>Todos los valores</p> <p>Tabla: llamadas</p> </td> 
    <td>No hay campos</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>Pagar ahora</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>PayNow</td> 
   </tr>
   <tr>
    <td>Servicios Añadidos de valor</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>ValueAddedServices</td> 
   </tr>
  </tbody>

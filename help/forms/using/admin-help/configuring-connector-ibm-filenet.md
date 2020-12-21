@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Configuración del Conector para IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector for IBM FileNet permite la comunicación entre AEM formularios y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia](https://www.adobe.com/go/learn_aemforms_services_63)de servicios.
+Connector for IBM FileNet permite la comunicación entre AEM formularios y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
 >En versiones anteriores, los recursos se podían almacenar en un repositorio de ECM. En esta versión, los recursos se almacenan en el repositorio nativo de formularios de AEM y los servicios del proveedor de repositorios se han quedado obsoletos. La migración de recursos de un repositorio de ECM al repositorio de formularios AEM se realiza cuando se realiza una actualización a AEM formularios. Para obtener más información, consulte la guía de actualización de formularios AEM para su servidor de aplicaciones.
 
-## Configurar la conexión al motor de contenido {#configure-the-connection-to-the-content-engine}
+## Configurar la conexión con el motor de contenido {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine proporciona servicios de software para administrar contenido empresarial y objetos de negocios definidos por el cliente en repositorios de contenido FileNet.
 
@@ -43,8 +43,8 @@ IBM FileNet P8 Content Engine proporciona servicios de software para administrar
 
 1. En la lista Esquema de protección de credenciales, seleccione uno de estos niveles de protección:
 
-   * **Borrar:** Envía credenciales a través de la red en un modo no protegido
-   * **Simétrico:** Envía credenciales cifradas a través de la red
+   * **Borrar:** envía credenciales a través de la red en modo no protegido
+   * **Simétrico:** envía credenciales cifradas a través de la red
 
 1. En el cuadro Ubicación del archivo de codificación, introduzca la ruta del archivo de codificación:
 
@@ -55,7 +55,7 @@ IBM FileNet P8 Content Engine proporciona servicios de software para administrar
 1. En el cuadro Nombre de usuario, introduzca el nombre de usuario de un usuario que tenga derechos de acceso al almacén de objetos predeterminado que especificó en el paso anterior.
 1. En el cuadro Contraseña, introduzca la contraseña del usuario y haga clic en Guardar.
 
-## Configuración de la configuración del motor de proceso {#configure-the-process-engine-settings}
+## Configurar la configuración del motor de proceso {#configure-the-process-engine-settings}
 
 Connector for IBM FileNet contiene el servicio Process Engine Connector para IBM FileNet, que se utiliza para interactuar con IBM FileNet Process Engine. Puede configurar las opciones de este servicio.
 
@@ -81,11 +81,11 @@ Puede configurar qué proveedor de servicio de repositorio utilizar con FileNet.
 
 Las opciones disponibles son las siguientes:
 
-**Nombre actual del proveedor del repositorio:** Nombre del proveedor de servicio de repositorio actual
+**Nombre actual del proveedor del repositorio:** El nombre del proveedor de servicio del repositorio actual
 
-**Proveedor de repositorio de IBM FileNet:** Convierte al proveedor de repositorio de FileNet en el proveedor del repositorio. Esta opción está en desuso.
+**Proveedor de repositorio de IBM FileNet:** convierte al proveedor de repositorio de FileNet en el proveedor del repositorio para el repositorio. Esta opción está en desuso.
 
-**proveedor de repositorio:** Convierte al proveedor de repositorio nativo en el proveedor del repositorio
+**proveedor de repositorio:** convierte al proveedor de repositorio nativo en el proveedor del repositorio
 
 >[!NOTE]
 >

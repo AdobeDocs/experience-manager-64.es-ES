@@ -16,13 +16,13 @@ ht-degree: 1%
 ---
 
 
-# Seleccionar dinámicamente un usuario o grupo para los pasos del flujo de trabajo centrado en AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Seleccione dinámicamente un usuario o grupo para los pasos del flujo de trabajo centrado en AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Obtenga información sobre cómo seleccionar un usuario o grupo para un flujo de trabajo de AEM Forms en tiempo de ejecución.
 
 En las organizaciones grandes, existen requisitos para seleccionar usuarios de forma dinámica para un proceso. Por ejemplo, seleccionar un agente de campo para servir a un cliente en función de la proximidad del agente al cliente. En este escenario, el agente se selecciona dinámicamente.
 
-Asignar pasos de tarea y Adobe Sign de flujos de trabajo centrados en [Forms en OSGi](/help/forms/using/aem-forms-workflow.md) proporciona opciones para seleccionar dinámicamente un usuario. Puede utilizar paquetes de ECMAScript o OSGi para seleccionar dinámicamente un usuario asignado para el paso Asignar Tarea o para seleccionar firmantes para el paso Firmar Documento.
+Asignar pasos de tarea y Adobe Sign de [flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) proporciona opciones para seleccionar dinámicamente a un usuario. Puede utilizar paquetes de ECMAScript o OSGi para seleccionar dinámicamente un usuario asignado para el paso Asignar Tarea o para seleccionar firmantes para el paso Firmar Documento.
 
 ## Utilice ECMAScript para seleccionar dinámicamente un usuario o grupo {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -32,16 +32,16 @@ ECMAScript es un lenguaje de secuencias de comandos. Se utiliza para secuencias 
 1. Cree un archivo con la extensión .ecma en la siguiente ruta. Si la ruta (estructura de nodos) no existe, créela:
 
    * (Ruta para el paso Asignar Tarea) `/apps/fd/dashboard/scripts/participantChooser`
-   * (paso Ruta de firma) `/apps/fd/workflow/scripts/adobesign`
+   * (Ruta para el paso de firma) `/apps/fd/workflow/scripts/adobesign`
 
 1. Añada ECMAScript, que tiene la lógica de seleccionar dinámicamente un usuario, al archivo .ecma. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   Para ver secuencias de comandos de ejemplo, consulte [Ejemplo de ECMAScripts para seleccionar dinámicamente un usuario o un grupo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
+   Para obtener ejemplos de secuencias de comandos, consulte [Ejemplo de ECMAScripts para seleccionar dinámicamente un usuario o un grupo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. Añada el nombre para mostrar de la secuencia de comandos. Este nombre se muestra en los pasos del flujo de trabajo. Para especificar el nombre:
 
-   1. Expanda el nodo de secuencia de comandos, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y, a continuación, haga clic en **[!UICONTROL Mezclas]**.
-   1. Añada la propiedad en el cuadro de diálogo Editar mezclas y haga clic en `mix:title` Aceptar ****.
+   1. Expanda el nodo de secuencia de comandos, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mezclas]**.
+   1. Añada la propiedad `mix:title` en el cuadro de diálogo Editar mezclas y haga clic en **Aceptar**.
    1. Añada la siguiente propiedad en el nodo jcr:content de la secuencia de comandos:
 
       | Nombre | Tipo | Value |
@@ -115,15 +115,15 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Utilizar la interfaz de Java para elegir dinámicamente un usuario o grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Utilice la interfaz de Java para elegir dinámicamente un usuario o grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Puede utilizar la interfaz Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir dinámicamente un usuario o un grupo para Adobe Sign y asignar pasos de Tarea. Puede crear un paquete OSGi que utilice la interfaz Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implementarla en el servidor de AEM Forms. La opción está disponible para su selección en los componentes Asignar Tarea y Adobe Sign de AEM flujo de trabajo.
+Puede utilizar la interfaz de Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir dinámicamente un usuario o un grupo para Adobe Sign y asignar pasos de Tarea. Puede crear un paquete OSGi que utilice la interfaz Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implementarla en el servidor de AEM Forms. La opción está disponible para su selección en los componentes Asignar Tarea y Adobe Sign de AEM flujo de trabajo.
 
-Se requieren archivos jar y jar [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) granito del SDK [del cliente de](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) AEM Forms para compilar el ejemplo de código que se muestra a continuación. Añada estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona pasos para utilizar Eclipse para crear un paquete OSGi:
+Se requieren [archivos jar y [jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) del SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para compilar el ejemplo de código que se muestra a continuación. Añada estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona pasos para utilizar Eclipse para crear un paquete OSGi:
 
-1. Abra Eclipse IDE. Vaya a **[!UICONTROL Archivo]**> **[!UICONTROL Nuevo proyecto]**.
+1. Abra Eclipse IDE. Vaya a **[!UICONTROL Archivo]** **[!UICONTROL Nuevo proyecto]**.
 1. En la pantalla Seleccionar un asistente, seleccione **[!UICONTROL Mover proyecto]** y haga clic en **[!UICONTROL Siguiente]**.
-1. En el proyecto Nuevo visor, mantenga los valores predeterminados y haga clic en **[!UICONTROL Siguiente]**. Seleccione un arquetipo y haga clic en **[!UICONTROL Siguiente]**. Por ejemplo, maven-archetype-quickstart. Especifique el ID **** de grupo, el ID **[!UICONTROL de]** artefacto, la **[!UICONTROL versión]** y el **[!UICONTROL paquete]** para el proyecto y haga clic en **[!UICONTROL Finalizar]**. Se crea el proyecto.
+1. En el proyecto New Maven, mantenga los valores predeterminados y haga clic en **[!UICONTROL Siguiente]**. Seleccione un arquetipo y haga clic en **[!UICONTROL Siguiente]**. Por ejemplo, maven-archetype-quickstart. Especifique **[!UICONTROL Id. de grupo]**, **[!UICONTROL Id. de artefacto]**, **[!UICONTROL versión]** y **[!UICONTROL paquete]** para el proyecto y haga clic en **[!UICONTROL Finalizar]**. Se crea el proyecto.
 1. Abra el archivo pom.xml para editarlo y sustituya todo el contenido del archivo por el siguiente:
 
    ```xml
@@ -226,7 +226,7 @@ Se requieren archivos jar y jar [de](https://helpx.adobe.com/es/aem-forms/kb/aem
    </project>
    ```
 
-1. Añada el código fuente que utiliza la interfaz Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) para elegir dinámicamente un usuario o un grupo para el paso Asignar tarea. Para obtener el código de muestra, consulte [Ejemplo para elegir dinámicamente un usuario o un grupo mediante la interfaz](#-sample-scripts-for)de Java.
+1. Añada el código fuente que utiliza la interfaz [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java para elegir dinámicamente un usuario o un grupo para el paso Asignar tarea. Para obtener el código de muestra, consulte [Ejemplo para elegir dinámicamente un usuario o un grupo mediante la interfaz de Java](#-sample-scripts-for).
 1. Abra un símbolo del sistema y vaya al directorio que contiene el proyecto del paquete OSGi. Utilice el siguiente comando para crear el paquete OSGi:
 
    `mvn clean install`

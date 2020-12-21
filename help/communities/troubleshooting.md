@@ -24,7 +24,7 @@ Esta sección contiene preocupaciones comunes y problemas conocidos.
 
 ## Problemas conocidos {#known-issues}
 
-### Error de recuperación del despachante {#dispatcher-refetch-fails}
+### Error al recuperar despachante {#dispatcher-refetch-fails}
 
 Al utilizar Dispatcher 4.1.5 con una versión más reciente de Jetty, una devolución puede resultar en &quot;No se puede recibir la respuesta del servidor remoto&quot; después de esperar a que la solicitud se agote.
 
@@ -55,17 +55,17 @@ Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() tendría
 
 El error es diferente al crear y publicar. Al autor, falla silenciosamente y simplemente no muestra los temas del foro. Al publicar, se produce un error en la página.
 
-Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
+Consulte la API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obtener más información.
 
-## Preocupaciones comunes {#common-concerns}
+## Problemas comunes {#common-concerns}
 
 ### Advertencia en registros: Manillares obsoletos {#warning-in-logs-handlebars-deprecated}
 
 Durante el inicio (no el primero, sino cada uno después de eso) se puede ver la siguiente advertencia en los registros:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars El asistente &#39;i18n&#39; se ha sustituido por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars El asistente &#39;i18n&#39; se ha sustituido por &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Esta advertencia se puede ignorar de forma segura ya que jknack.handlebars.Handlebars, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. En inicio hacia arriba, se reemplaza por un asistente específico para [i18n AEM](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar de forma segura ya que jknack.handlebars.Handlebars, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. En inicio hacia arriba, se reemplaza por un asistente específico para AEM [i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: Proceso de OakResourceListenerOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Activación de componentes del portal de formularios {#enabling-forms-portal-components}
+# Habilitación de componentes del portal de formularios {#enabling-forms-portal-components}
 
 De forma predeterminada, los componentes del portal de formularios no están disponibles para su uso. Para que los componentes aparezcan en la lista de los componentes disponibles en AEM barra de tareas, lleve a cabo los siguientes pasos:
 
@@ -26,18 +26,18 @@ De forma predeterminada, los componentes del portal de formularios no están dis
 1. Para las páginas que utilizan una plantilla estática, realice los siguientes pasos:
 
    1. En el encabezado de página, toque ![lienzo-desplegable](assets/canvas-drop-down.png) > **Diseño** para abrir la página en modo Diseño.
-   1. Toque cualquier componente (con un borde azul) y, a continuación, toque el nivel ![de](assets/field-level.png) campo para seleccionar el sistema de párrafos que contiene el componente actual.
-   1. En el sistema de párrafos, toque ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del sistema de párrafos.
-   1. Desde la lista de componentes **** permitidos, active las casillas de verificación de los componentes de Predicados de servicios **[!UICONTROL de]** Documento y servicios de **[!UICONTROL Documento]** . Toque **[!UICONTROL Aceptar]**.
+   1. Toque cualquier componente (con un borde azul) y luego toque ![nivel de campo](assets/field-level.png) para seleccionar el sistema de párrafos que contiene el componente actual.
+   1. En el sistema de párrafos, toque ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar para el sistema de párrafos.
+   1. A partir de la lista de **[!UICONTROL Componentes permitidos]**, active las casillas de verificación para los componentes **[!UICONTROL Predicados de servicios de Documento]** y **[!UICONTROL Predicados de servicios de Documento]**. Toque **[!UICONTROL Aceptar]**.
 
 1. Para las páginas que utilizan una plantilla dinámica, lleve a cabo los siguientes pasos:
 
    1. En el encabezado de página, toque ![propiedades](assets/properties.png) > **Editar plantilla** para abrir la plantilla de la página.
-   1. Toque **Diseño Contenedor** y toque ![Administración de fuentes](assets/FeedManagement.png). En la ficha Componentes **** permitidos, habilite las opciones Servicios de **Documento y Predicados** de Servicios de Documento y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Toque **Contenedor de diseño** y toque ![Administración de fuentes](assets/FeedManagement.png). En la ficha **Componentes permitidos**, habilite las opciones **Predicados de servicios de Documento y Documento** y toque ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
->También puede activar componentes específicos de estas categorías seleccionando los componentes. Para obtener más información sobre los componentes y su uso, consulte [Creación de una página](/help/forms/using/creating-form-portal-page.md) de portal de formularios y [Incorporación del componente de vínculo en una página](/help/forms/using/embedding-link-component-page.md).
+>También puede activar componentes específicos de estas categorías seleccionando los componentes. Para obtener más información sobre los componentes y su uso, consulte [Creación de una página de portal de formularios](/help/forms/using/creating-form-portal-page.md) y [Incrustación del componente de vínculo en una página](/help/forms/using/embedding-link-component-page.md).
 
 Ahora, las categorías de componentes de Documento Services y Documento Services Predicates están disponibles en el navegador de componentes. Los componentes están habilitados para todas las páginas que utilizan la misma plantilla.
 

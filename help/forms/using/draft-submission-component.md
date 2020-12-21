@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Componente de proyectos y presentaciones {#drafts-and-submissions-component}
+# Componente Borradores y envíos {#drafts-and-submissions-component}
 
 El componente Borradores y envíos lista todos los formularios que están en el estado borrador y los formularios que ya se han enviado. El componente tiene secciones independientes (fichas) para borradores y formularios enviados. Los usuarios solo pueden realizar vistas de los borradores y los formularios enviados.
 
@@ -25,9 +25,9 @@ El componente Borradores y envíos lista todos los formularios que están en el 
 
 El componente Borradores y envíos tiene dos fichas: Borradores y presentaciones.
 
-Para permitir que el envío de un formulario adaptable aparezca en la ficha Envíos, establezca la acción **** Enviar en Acción **[de envío de](/help/forms/using/configuring-submit-actions.md)Forms Portal.**También puede activar la opción Enviar de Forms Portal. Cada vez que un usuario envía el formulario, éste se agrega a la ficha envíos.
+Para permitir que el envío de un formulario adaptable aparezca en la ficha Envíos, establezca la **acción de envío** en **[Acción de envío de Forms Portal](/help/forms/using/configuring-submit-actions.md).** También puede activar la opción Enviar de Forms Portal. Cada vez que un usuario envía el formulario, éste se agrega a la ficha envíos.
 
-La funcionalidad de borradores está activada de forma predeterminada. Cuando un usuario hace clic en **Guardar** en un formulario adaptable, el formulario se agrega a la ficha Borradores.
+La funcionalidad de borradores está activada de forma predeterminada. Cuando un usuario hace clic **Guardar** en un formulario adaptable, el formulario se agrega a la ficha Borradores.
 
 Realice los siguientes pasos para agregar y configurar un componente Borradores y envíos:
 
@@ -48,32 +48,32 @@ Realice los siguientes pasos para agregar y configurar un componente Borradores 
   <tr>
    <td>General</td>
    <td>Resultado total</td>
-   <td>Especifica el número máximo de resultados que se van a mostrar. Si el recuento de resultados aumenta el límite de resultados totales, aparecerá un <strong>vínculo Más </strong>en la parte inferior del componente. Al hacer clic en <strong>Más </strong>se muestran todos los formularios. </td>
+   <td>Especifica el número máximo de resultados que se van a mostrar. Si el recuento de resultados aumenta el límite de resultados totales, aparece un vínculo <strong>Más </strong>en la parte inferior del componente. Al hacer clic en <strong>Más </strong>se muestran todos los formularios. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Tipo de estilo</td>
-   <td>Especifica el estilo del componente. Puede especificar <strong>Sin estilo</strong>, Estilo <strong></strong>predeterminado o Estilo <strong></strong> personalizado para enumerar los formularios. En la opción Estilo personalizado, puede especificar la ruta del archivo CSS personalizado en el <strong>campo </strong>Ruta de estilo<strong>personalizada.</strong></td>
+   <td>Especifica el estilo del componente. Puede especificar <strong>Sin estilo</strong>, <strong>Estilo predeterminado</strong> o <strong>Estilo personalizado</strong> para enumerar los formularios. Para la opción Estilo personalizado, puede especificar la ruta del archivo CSS personalizado en el campo <strong>Ruta de estilo personalizada </strong>a2/&gt;.</strong><strong></strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Ruta de estilo personalizada</td>
-   <td>Si selecciona la opción Estilo <strong></strong> personalizado en el campo Tipo <strong>de</strong> estilo, utilice el campo Ruta <strong>de estilo</strong> personalizada para especificar la ruta del archivo CSS personalizado. </td>
+   <td>Si elige la opción <strong>Estilo personalizado</strong> en el campo <strong>Tipo de estilo</strong>, utilice el campo <strong>Ruta de estilo personalizada</strong> para especificar la ruta del archivo CSS personalizado. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Opciones de visualización</td>
-   <td><p>Especifica las fichas que se van a mostrar. Puede elegir mostrar formularios de borrador, formularios enviados o ambos. </p> <p><strong>Nota</strong>:<em> En el caso de las opciones <strong>de</strong>visualización, si selecciona una opción distinta a <strong>ambas</strong>, no se utiliza la opción de campo de ficha <strong></strong> predeterminada.</em></p> </td>
+   <td><p>Especifica las fichas que se van a mostrar. Puede elegir mostrar formularios de borrador, formularios enviados o ambos. </p> <p><strong>Nota</strong>:<em> Para las opciones <strong> de </strong>visualización, si selecciona una opción distinta a  <strong>ambas</strong>, no se utiliza la opción  <strong>Predeterminado </strong> Tabfield.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Ficha predeterminada</td>
-   <td>Especifica la ficha que se mostrará cuando se cargue la página del portal de formularios. Puede elegir entre la ficha <strong></strong> Borrador de Forms y la ficha <strong>Forms</strong>Enviado.</td>
+   <td>Especifica la ficha que se mostrará cuando se cargue la página del portal de formularios. Puede elegir entre <strong>Ficha Forms de borrador</strong> y <strong>Ficha Forms de envío</strong>.</td>
   </tr>
   <tr>
    <td>Configuración de la ficha Borrador de Forms</td>
    <td>Título personalizado</td>
-   <td>Especifica el título de la ficha <strong>Borrador de Forms</strong> . El valor predeterminado es <strong>Borrador de Forms.</strong></td>
+   <td>Especifica el título de la ficha <strong>Borrador de Forms</strong>. El valor predeterminado es <strong>Borrador de Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -83,12 +83,12 @@ Realice los siguientes pasos para agregar y configurar un componente Borradores 
   <tr>
    <td>Configuración de la ficha de Forms enviada</td>
    <td>Título personalizado </td>
-   <td>Especifica el título de la <strong>ficha Forms </strong>enviado. El valor predeterminado es <strong>Enviar Forms.</strong></td>
+   <td>Especifica el título de la ficha <strong>Envío de Forms </strong>. El valor predeterminado es <strong>Forms enviado.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Plantilla de diseño</td>
-   <td>Especifica el diseño que se usará para la<strong> lista de Forms </strong>enviada. </td>
+   <td>Especifica el diseño que se usará para la lista de Forms<strong> </strong>enviado. </td>
   </tr>
  </tbody>
 </table>
@@ -99,9 +99,9 @@ Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Al
 
 El portal de Forms le permite almacenar datos en un repositorio de AEM local, en un repositorio AEM remoto o en una base de datos. AEM Forms le permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borrador y envío en un almacenamiento de su elección. Por ejemplo, puede almacenar los datos en un almacén de datos implementado actualmente en su organización.
 
-El portal de Forms proporciona servicios (API) listos para usar para almacenar datos en el repositorio crx de instancias de publicación local y remota de AEM Forms. Puede reemplazar las implementaciones predeterminadas, descritas en [Configuración de servicios de almacenamiento para borradores y artículos de envío](/help/forms/using/configuring-draft-submission-storage.md) , por implementaciones personalizadas para reemplazar la funcionalidad predeterminada. Para obtener información detallada sobre los métodos requeridos en una implementación personalizada para almacenar contenido en una ubicación segura, consulte [Personalización de los servicios](/help/forms/using/custom-draft-submission-data-services.md) de datos de borradores y envíos y almacenamiento [personalizado para los borradores y los componentes de envíos.](/help/forms/using/adding-custom-storage-provider-forms.md)
+El portal de Forms proporciona servicios (API) listos para usar para almacenar datos en el repositorio crx de instancias de publicación local y remota de AEM Forms. Puede reemplazar las implementaciones predeterminadas que se describen en el artículo [Configuración de los servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md) por implementaciones personalizadas para reemplazar la funcionalidad predeterminada. Para obtener información detallada sobre los métodos requeridos en una implementación personalizada para almacenar contenido en una ubicación segura, consulte [Personalización de los servicios de datos de borradores y envíos](/help/forms/using/custom-draft-submission-data-services.md) y [almacenamiento personalizado para borradores y componentes de envíos.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-La documentación de AEM Forms proporciona un [Ejemplo para integrar los borradores y el componente de envíos con la base de datos](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Puede utilizar la implementación de muestra para desarrollar su propia implementación personalizada.
+La documentación de AEM Forms proporciona una [muestra para integrar los borradores y el componente de envíos con la base de datos](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Puede utilizar la implementación de muestra para desarrollar su propia implementación personalizada.
 
 ## Artículos relacionados
 

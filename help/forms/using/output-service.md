@@ -38,13 +38,13 @@ El servicio de salida permite crear aplicaciones que le permiten:
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-Normalmente, las plantillas se crean con AEM Forms Designer. Las `generatePDFOutput` y `generatePrintedOutput` API del servicio Output permiten convertir directamente estas plantillas a diversos formatos, incluidos PDF, PostScript, ZPL y PCL.
+Normalmente, las plantillas se crean con AEM Forms Designer. Las API `generatePDFOutput` y `generatePrintedOutput` del servicio Output permiten convertir directamente estas plantillas a diversos formatos, incluidos PDF, PostScript, ZPL y PCL.
 
-La `generatePDFOutput` operación genera archivos PDF, mientras que la `generatePrintedOutput` operación genera formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`) o un objeto de Documento que contiene la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz del contenido como la ruta de la carpeta que contiene la plantilla. Puede especificar la raíz del contenido mediante el parámetro `PDFOutputOptions` o el `PrintedOutputOptions` . Consulte Javadoc para obtener detalles de otras opciones que puede especificar mediante estos parámetros.
+La operación `generatePDFOutput` genera archivos PDF, mientras que la operación `generatePrintedOutput` genera formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`) o un objeto de Documento que contiene la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz del contenido como la ruta de la carpeta que contiene la plantilla. Puede especificar la raíz del contenido mediante el parámetro `PDFOutputOptions` o el parámetro `PrintedOutputOptions`. Consulte Javadoc para obtener detalles de otras opciones que puede especificar mediante estos parámetros.
 
 El segundo parámetro acepta un documento XML que se combina con la plantilla al generar el documento de salida.
 
-La `generatePDFOutput` operación también puede aceptar un formulario PDF basado en XFA como entrada y devolver una versión no interactiva del formulario PDF como salida.
+La operación `generatePDFOutput` también puede aceptar un formulario PDF basado en XFA como entrada y devolver una versión no interactiva del formulario PDF como salida.
 
 ## Generación de documentos de formulario no interactivos {#generating-non-interactive-form-documents}
 
@@ -64,4 +64,4 @@ Los tipos de parámetro son los mismos que los tipos de parámetros para las ope
 
 El cuarto parámetro es de tipo `BatchOptions`, que se utiliza para especificar si se puede generar un archivo independiente para cada registro. El valor predeterminado de este parámetro es false.
 
-Tanto `generatePrintedOutputBatch` como `generatePDFOutputBatch` devolver un valor de tipo `BatchResult`. El valor contiene una lista de documentos generados. También contiene un documento de metadatos en formato XML que contiene información relacionada con cada documento que se genera.
+Tanto `generatePrintedOutputBatch` como `generatePDFOutputBatch` devuelven un valor de tipo `BatchResult`. El valor contiene una lista de documentos generados. También contiene un documento de metadatos en formato XML que contiene información relacionada con cada documento que se genera.

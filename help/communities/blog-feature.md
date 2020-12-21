@@ -31,11 +31,11 @@ La función de blog provee:
 * Creación de artículos y comentarios de blog en el lado de la publicación
 * Edición de texto enriquecido
 * Imágenes en línea (con compatibilidad para arrastrar y soltar)
-* Contenido incrustado de redes sociales (compatibilidad con[oEmbed](blog-developer-basics.md#allowing-rich-media))
+* Contenido de red social incrustado ([Compatibilidad con oEmbed](blog-developer-basics.md#allowing-rich-media))
 * Modo de borrador
 * Publicación programada
-* Redactar en nombre (un miembro [](users.md#privileged-members-group) privilegiado puede crear contenido en nombre de otro miembro de la comunidad)
-* [Moderación](moderate-ugc.md) masiva y en contexto de artículos y comentarios de blog
+* Redactar en nombre (un [miembro privilegiado](users.md#privileged-members-group) puede crear contenido en nombre de otro miembro de la comunidad)
+* [Moderación en contexto y ](moderate-ugc.md) masiva de artículos y comentarios de blog
 
 Esta sección de la documentación describe
 
@@ -44,7 +44,7 @@ Esta sección de la documentación describe
 
 >[!NOTE]
 >
->Los componentes `Journal`y `Journal Sidebar` se titulan `Blog` y `Blog Sidebar`.
+>Los componentes `Journal`y `Journal Sidebar` se denominan `Blog` y `Blog Sidebar`.
 >
 >La función de blog que se encuentra en AEM 6.0 y versiones anteriores ahora se ha eliminado. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
 
@@ -57,45 +57,54 @@ Si desea agregar un blog a una página en modo de autor, utilice el navegador de
 
 Y arrástrelos a su lugar en una página donde debería aparecer el blog.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](blog-developer-basics.md#essentials-for-client-side) necesarias, así es como aparecerá el `Blog`componente:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](blog-developer-basics.md#essentials-for-client-side), así es como aparecerá el componente `Blog`:
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-Y cómo `Blog Sidebar` aparecerá:
+Y cómo aparecerá el `Blog Sidebar`:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Configuración del blog {#configuring-blog}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Blog` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Blog` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configuración de icono](assets/chlimage_1-149.png) Configuración ![de blog](assets/Blog-configure.png)
+![configurar ](assets/chlimage_1-149.png) ![iconConfiguración de blog](assets/Blog-configure.png)
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas del blog:
+En la ficha **[!UICONTROL Configuración]**, especifique las características básicas del blog:
 
-* **[!UICONTROL Permitir miniatura]** de datos adjuntos Si está activada, se crea una miniatura de la imagen adjunta.
+* **[!UICONTROL Permitir]**
+miniatura de datos adjuntosSi está activada, se crea una miniatura de la imagen adjunta.
 
-* **[!UICONTROL Tamaño]** máximo de la miniatura de adiciónTamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
+* **[!UICONTROL Adjuntar]**
+tamaño máximo de miniaturaTamaño máximo (en píxeles) de la imagen en miniatura del adjunto. El valor predeterminado es 800 x 800.
 
-* **[!UICONTROL Tamaño mínimo de la imagen para la miniatura]** Tamaño mínimo (en bytes) de la imagen para generar una miniatura para las imágenes en línea. El valor predeterminado es 100000 bytes (100 kb).
+* **[!UICONTROL Tamaño mínimo de la imagen para]**
+miniaturaTamaño mínimo (en bytes) de la imagen para generar una miniatura para las imágenes en línea. El valor predeterminado es 100000 bytes (100 kb).
 
-* **[!UICONTROL Tamaño]** máximo de miniatura Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen en línea. El valor predeterminado es 800 x 800.
+* **[!UICONTROL Tamaño máximo]**
+de miniaturaTamaño máximo (en píxeles) de la imagen en miniatura para la imagen en línea. El valor predeterminado es 800 x 800.
 
-* **[!UICONTROL Permitir miembros]** privilegiados Si está activada, solo los miembros privilegiados pueden crear contenido.
+* **[!UICONTROL Permitir]**
+miembros privilegiadosSi está activada, solo los miembros privilegiados pueden crear contenido.
 
-* **[!UICONTROL Los miembros]** privilegiados permitidos Añaden los miembros privilegiados con permiso para crear contenido.
+* **[!UICONTROL Permitidos]**
+miembros privilegiadosAgregue los miembros privilegiados con permiso para crear contenido.
 
-* **[!UICONTROL Bloquear contenido generado por el usuario en modo]** de edición de autor Si está activado, bloquea el contenido generado por el usuario mientras se edita en modo de autor.
+* **[!UICONTROL Bloquear contenido generado por el usuario en el]**
+modo de edición de autorSi está activado, bloquea el contenido generado por el usuario mientras se edita en modo de autor.
 
-* **[!UICONTROL Título]** de Historial El título de blog que se mostrará en la página.
+* **[!UICONTROL Título]**
+del historialTítulo del blog que se mostrará en la página.
    >Nota:
    >El Título de Historial se utiliza para crear automáticamente la URL para el blog. Se utilizan un máximo de 50 caracteres (con 5 caracteres adicionales para la exclusividad) desde el título de historial que especifique aquí para crear una URL para el blog.
 
-* **[!UICONTROL Descripción del Historial]** Descripción del blog.
+* **[!UICONTROL Historial]**
+DescripciónDescripción del blog.
 
 * **[!UICONTROL Temas por página]**
 
@@ -115,7 +124,7 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Permitir etiquetado]**
 
-   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha Campo **** de etiqueta). El valor predeterminado no está marcado.
+   Si está activada, permita que los miembros agreguen etiquetas a su anuncio (consulte la ficha **[!UICONTROL Campo de etiqueta]**). El valor predeterminado no está marcado.
 
 * **[!UICONTROL Permitir cargas de archivos]**
 
@@ -123,11 +132,11 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Tamaño máximo de archivo]**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+   Solo es pertinente si se comprueba `Allow File Uploads`. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es pertinente si `Allow File Uploads` está marcado. lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo es pertinente si se comprueba `Allow File Uploads`. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Tamaño máximo de archivo de imagen adjunto]**
 
@@ -143,11 +152,11 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Permitir seguimiento]**
 
-   Si está activada, incluya la siguiente función para los artículos de blog, que permite que se [notifique](notifications.md) a los miembros de los nuevos anuncios. El valor predeterminado no está marcado.
+   Si se selecciona, incluya la siguiente función para los artículos de blog, que permite que los miembros reciban [notificación](notifications.md) de los nuevos anuncios. El valor predeterminado no está marcado.
 
 * **[!UICONTROL Permitir suscripciones por correo electrónico]**
 
-   Si está activada, permita que se notifique a los miembros de los anuncios nuevos por correo electrónico ([suscripción](subscriptions.md)). Requiere `Allow Following` que se marque y se configure [el](email.md)correo electrónico. El valor predeterminado no está marcado.
+   Si se selecciona, permita que se notifique a los miembros de los nuevos anuncios por correo electrónico ([suscripción](subscriptions.md)). Requiere que `Allow Following` se compruebe y [se configure el correo electrónico](email.md). El valor predeterminado no está marcado.
 
 * **[!UICONTROL Habilitar la votación]**
 
@@ -155,15 +164,15 @@ En la ficha **[!UICONTROL Configuración]** , especifique las funciones básicas
 
 * **[!UICONTROL Mostrar insignias]**
 
-   Si está activada, muestre [los distintivos](implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está marcado.
+   Si está marcado, muestre [distintivos](implementing-scoring.md) obtenidos y asignados con una entrada de blog de miembro. El valor predeterminado no está marcado.
 
 * **[!UICONTROL Permitir contenido destacado]**
 
-   si se selecciona, la idea se puede identificar como contenido [](featured.md)destacado. El valor predeterminado no está marcado.
+   si se selecciona, la idea puede identificarse como [contenido destacado](featured.md). El valor predeterminado no está marcado.
 
 #### Ficha Moderación del usuario {#user-moderation-tab}
 
-En la ficha Moderación **** del usuario, especifique la configuración de moderación:
+En la ficha **[!UICONTROL Moderación del usuario]**, especifique la configuración de moderación:
 
 * **[!UICONTROL Denegar entradas]**
 
@@ -195,11 +204,11 @@ En la ficha Moderación **** del usuario, especifique la configuración de moder
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar si se activa la opción **[!UICONTROL Permitir etiquetado]** en la ficha **[!UICONTROL Configuración]** :
+En la ficha **[!UICONTROL Campo de etiqueta]**, especifique las etiquetas que se pueden aplicar si **[!UICONTROL Permitir etiquetado]** está activada en la ficha **[!UICONTROL Configuración]**:
 
 * **[!UICONTROL Espacios de nombres permitidos]**
 
-   Relevante si `Allow Tagging` se marca en la ficha **[!UICONTROL Configuración]** . Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+   Relevante si `Allow Tagging` está marcado en la ficha **[!UICONTROL Configuración]**. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
 
 * **[!UICONTROL Límite de sugerencias]**
 
@@ -207,9 +216,9 @@ En la ficha Campo **** Etiqueta, especifique las etiquetas que se pueden aplicar
 
 ### Configuración de la barra lateral del blog {#configuring-blog-sidebar}
 
-Al hacer clic en el `Blog Sidebar` componente con el botón de doble, se abre un cuadro de diálogo de edición.
+Al hacer clic con el doble en el componente `Blog Sidebar`, se abre un cuadro de diálogo de edición.
 
-En la ficha Configuración **[!UICONTROL de la barra lateral de]** Historial, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
+En la ficha **[!UICONTROL Configuración de la barra lateral de Historial]**, especifique el formato de fecha para los archivos y el tipo de entradas que se mostrarán en la barra lateral:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -253,7 +262,7 @@ Cuando se selecciona un artículo de blog, se muestran el artículo de blog y lo
 
 Otras capacidades dependen de si el visitante del sitio es un moderador, administrador, miembro de la comunidad, miembro privilegiado o anónimo.
 
-### Trabajo con artículos {#working-with-articles}
+### Uso de los artículos {#working-with-articles}
 
 Al crear un nuevo artículo de blog, existe la opción de
 
@@ -265,13 +274,13 @@ Los artículos del blog aparecerán en la ficha correspondiente (Publicados, Bor
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar tareas [de](moderate-ugc.md) moderación (según lo permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
+Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](moderate-ugc.md) (según lo permite la configuración del componente) en todos los artículos de blog y comentarios publicados en un blog.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### Miembros {#members}
 
-Cuando el usuario que ha iniciado sesión es miembro de la comunidad o miembro [](users.md#privileged-members-group) privilegiado (según la configuración), puede seleccionar `New Article` crear y publicar un nuevo artículo de blog.
+Cuando el usuario que ha iniciado sesión es un miembro de la comunidad o [miembro con privilegios](users.md#privileged-members-group) (según la configuración), puede seleccionar `New Article` para crear y publicar un nuevo artículo de blog.
 
 Concretamente, podrán:
 
@@ -294,8 +303,8 @@ Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los art
 
 Puede encontrar más información en la página [Blog Essentials](blog-developer-basics.md) para desarrolladores.
 
-Para obtener información sobre la moderación de entradas y comentarios de blog, consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Para obtener información sobre la moderación de entradas y comentarios de blog, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-Para etiquetar entradas y comentarios de blog, consulte [Etiquetado de contenido](tag-ugc.md)generado por el usuario.
+Para etiquetar entradas y comentarios de blog, consulte [Etiquetado de contenido generado por el usuario](tag-ugc.md).
 
-Para ver la traducción de entradas y comentarios de blog, consulte [Traducción de contenido](translate-ugc.md)generado por el usuario.
+Para ver la traducción de entradas y comentarios del blog, consulte [Traducción de contenido generado por el usuario](translate-ugc.md).

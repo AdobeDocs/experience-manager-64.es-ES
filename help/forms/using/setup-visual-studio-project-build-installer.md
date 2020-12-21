@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # Configure el proyecto de Visual Studio y genere la aplicación de Windows {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. El origen contiene todos los componentes para crear una aplicación de espacio de trabajo personalizada. El archivo de código fuente `adobe-lc-mobileworkspace-src-<version>.zip`es parte del `adobe-aemfd-forms-app-src-pkg-<version>.zip` paquete de distribución de software.
+AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. El origen contiene todos los componentes para crear una aplicación de espacio de trabajo personalizada. El archivo de código fuente, `adobe-lc-mobileworkspace-src-<version>.zip`es parte del paquete `adobe-aemfd-forms-app-src-pkg-<version>.zip` de distribución de software.
 
 Para obtener el origen de la aplicación de AEM Forms, realice los siguientes pasos:
 
-1. Abra Distribución [de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
-1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
-1. En la sección **[!UICONTROL Filtros]** :
-   1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]** .
+1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesita un Adobe ID para iniciar sesión en la distribución de software.
+1. Toque **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
+1. En la sección **[!UICONTROL Filtros]**:
+   1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y escriba el paquete. También puede utilizar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos]** del EULA y toque **[!UICONTROL Descargar]**.
-1. Abra el Administrador [de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
-1. Select the package and click **[!UICONTROL Install]**.
+1. Toque el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar los términos del EULA]** y toque **[!UICONTROL Descargar]**.
+1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
 1. Para descargar el archivo de código fuente, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` en el explorador.
 
@@ -40,7 +40,7 @@ La siguiente imagen muestra el contenido extraído del `adobe-lc-mobileworkspace
 
 ![mws-content-2](assets/mws-content-2.png)
 
-La siguiente imagen muestra la estructura de directorio de la `windows` carpeta en la `src` carpeta.
+La siguiente imagen muestra la estructura de directorio de la carpeta `windows` en la carpeta `src`.
 
 ![win-dir](assets/win-dir.png)
 
@@ -56,10 +56,10 @@ Para dispositivos Windows, necesita:
 
 Siga estos pasos para configurar el proyecto de la aplicación de AEM Forms en Visual Studio.
 
-1. Copie el `adobe-lc-mobileworkspace-src-<version>.zip` archivo en la `%HOMEPATH%\Projects` carpeta del dispositivo Windows 8.1 o Windows 10 con Visual Studio 2015 instalado y configurado.
-1. Extraiga el archivo en el `%HOMEPATH%\Projects\MobileWorkspace` directorio.
-1. Vaya al `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directorio.
-1. Abra el `CordovaApp.sln` archivo con Visual Studio 2015 y continúe con la creación de la aplicación de AEM Forms.
+1. Copie el archivo `adobe-lc-mobileworkspace-src-<version>.zip` en la carpeta `%HOMEPATH%\Projects` del dispositivo Windows 8.1 o Windows 10 con Visual Studio 2015 instalado y configurado.
+1. Extraiga el archivo en el directorio `%HOMEPATH%\Projects\MobileWorkspace`.
+1. Vaya al directorio `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows`.
+1. Abra el archivo `CordovaApp.sln` con Visual Studio 2015 y continúe con la creación de la aplicación de AEM Forms.
 
 ## Compilación de la aplicación de AEM Forms {#build-aem-forms-app}
 
@@ -69,7 +69,7 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
 >
 >Los datos almacenados en el sistema de archivos de Windows para la aplicación de AEM Forms no están cifrados. Se recomienda usar una herramienta de terceros como Cifrado de unidad BitLocker de Windows para cifrar datos de disco.
 
-1. En la barra de herramientas de Visual Studio Standard, seleccione **Versión** en el menú desplegable para el modo de compilación.
+1. En la barra de herramientas de Visual Studio Standard, seleccione **Versión** en la lista desplegable para el modo de compilación.
 
 1. Seleccione Windows-AnyCPU, Windows-x64 o Windows-x86 según la plataforma. Se recomienda Windows-AnyCPU.
 1. En el Explorador de soluciones de Visual Studio, haga clic con el botón derecho en el proyecto **CordovaApp.Windows** y seleccione **Tienda > Crear AppPackages**.
@@ -84,20 +84,20 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
 
    ![retarget-solution](assets/retarget-solution.png)
 
-1. En el asistente Crear paquetes de aplicación, seleccione el tiempo que desee o no cargar la aplicación en la tienda de Windows y, a continuación, haga clic en **Siguiente**.
+1. En el asistente Crear paquetes de aplicación, seleccione el tiempo que desee cargar la aplicación en la tienda de Windows y, a continuación, haga clic en **Siguiente**.
 
-   ![createapppackageswizard1](assets/createapppackageswizard1.png)
+   ![createapppackagesWizard1](assets/createapppackageswizard1.png)
 
 1. Realice los cambios necesarios en los parámetros, como la versión y la ubicación de salida de la compilación de la aplicación.
 
-   ![createapppackageswizard2](assets/createapppackageswizard2.png)
+   ![createapppackagesWizard2](assets/createapppackageswizard2.png)
 
 1. Una vez creado el proyecto, puede instalar la aplicación mediante:
 
    * Windows PowerShell
    * Visual Studio
 
-   El `.appx` paquete requiere que los siguientes elementos se instalen correctamente:
+   El paquete `.appx` requiere que los siguientes elementos se instalen correctamente:
 
    1. Biblioteca WinJS
    1. Asegúrese de que el paquete incluye un certificado con firma personal o un certificado público firmado por una autoridad de confianza, como VeriSign.
@@ -116,9 +116,9 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
 
 Existen dos formas de instalar la aplicación en un dispositivo Windows.
 
-### Adquiriendo la licencia de desarrollador {#by-acquiring-the-developer-license}
+### Al adquirir la licencia de desarrollador {#by-acquiring-the-developer-license}
 
-1. Haga clic con el botón derecho en el archivo de PowerShell ( `Add-AppDevPackage.ps1)`, y elija **Ejecutar con PowerShell**.
+1. Haga clic con el botón derecho en el archivo de PowerShell ( `Add-AppDevPackage.ps1)`) y elija **Ejecutar con PowerShell**.
 
 1. El programa de instalación le solicita una licencia de desarrollador. Utilice las credenciales de cuenta de Microsoft para adquirir una licencia de desarrollador.
 
@@ -126,7 +126,7 @@ Existen dos formas de instalar la aplicación en un dispositivo Windows.
 
 1. Cuando adquiere la licencia de desarrollador, el programa de instalación instala el certificado autofirmado en el sistema y la aplicación se instala correctamente.
 
-### Mediante dispositivos de propiedad empresarial {#by-using-enterprise-owned-devices}
+### Mediante el uso de dispositivos propiedad de la empresa {#by-using-enterprise-owned-devices}
 
 Para los dispositivos de propiedad empresarial que están unidos al dominio de la empresa, no es necesario adquirir una licencia de desarrollador.
 
@@ -142,8 +142,8 @@ Para implementar la aplicación:
 **Para habilitar la configuración de directiva de grupo:**
 
 1. En el dispositivo, ejecute `gpedit.msc`.
-1. Vaya a Configuración **del equipo > Plantillas administrativas > Componente de Windows > Implementación** del paquete de aplicaciones.
-1. Haga clic con el botón secundario en **Permitir que se instalen** todas las aplicaciones de confianza.
+1. Vaya a **Configuración del equipo > Plantillas administrativas > Componente de Windows > Implementación del paquete de aplicaciones**.
+1. Haga clic con el botón derecho en **Permitir que todas las aplicaciones de confianza se instalen**.
 1. Haga clic en **Editar** y seleccione **Habilitado**.
 
 1. Haga clic en **Aceptar**.
@@ -164,8 +164,8 @@ Para instalar la aplicación en Windows con Visual Studio:
 
 1. Conecte el dispositivo mediante el depurador remoto.
 
-   Para obtener más información, consulte [Ejecutar aplicaciones de la Tienda Windows en un equipo](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine)remoto.
+   Para obtener más información, consulte [Ejecución de aplicaciones de la Tienda Windows en un equipo remoto](https://docs.microsoft.com/en-us/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
-1. Con la aplicación abierta en Visual Studio, elija Windows-x64, Windows-x86 o Windows-AnyCPU en la lista Plataformas de solución y seleccione **Remote Machine**.
+1. Con la aplicación abierta en Visual Studio, elija Windows-x64, Windows-x86 o Windows-AnyCPU en la lista Plataformas de solución y seleccione **Máquina remota**.
 1. La aplicación se implementa en el equipo remoto.
 

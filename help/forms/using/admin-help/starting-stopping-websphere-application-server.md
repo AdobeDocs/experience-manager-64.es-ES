@@ -24,25 +24,25 @@ Varios procedimientos requieren que detenga o inicio la instancia de WebSphere e
 
 ## Vista del estado de WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya al directorio raíz *[/bin de]* appserver.
+1. Desde un símbolo del sistema, vaya al directorio *[appserver root]*/bin.
 1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
 
-   * (Windows) `serverStatus.bat`*server_name *
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name *
+   * (Windows) `serverStatus.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nombre_servidor*
 
-## Inicio WebSphere Application Server {#start-websphere-application-server}
+## Servidor de aplicaciones WebSphere de inicio {#start-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya al directorio raíz *[/bin de]* appserver.
+1. Desde un símbolo del sistema, vaya al directorio *[appserver root]*/bin.
 1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
 
-   * (Windows) `startServer.bat`*server_name *
-   * (Linux, UNIX) ./ `startServer.sh`*server_name *
+   * (Windows) `startServer.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `startServer.sh`*nombre_servidor*
 
-## Detener servidor de aplicaciones WebSphere {#stop-websphere-application-server}
+## Detener el servidor de aplicaciones WebSphere {#stop-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya al directorio raíz *[/bin de]* appserver.
+1. Desde un símbolo del sistema, vaya al directorio *[appserver root]*/bin.
 1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
 
-   * (Windows) `stopServer.bat`*server_name *
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name *
+   * (Windows) `stopServer.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `stopServer.sh`*nombre_servidor*
 

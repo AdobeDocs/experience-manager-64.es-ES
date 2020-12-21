@@ -27,7 +27,7 @@ El Sistema de informes de procesos proporciona un conjunto de informes listos pa
 
 Además, Process Sistema de informes proporciona una interfaz para ejecutar consultas ad hoc e integrar vistas de informes personalizadas en la interfaz de usuario de Process Sistema de informes.
 
-Para ver la lista de los exploradores admitidos, consulte Plataformas [compatibles con](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Para obtener la lista de los exploradores admitidos, consulte [Plataformas admitidas por AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 El Sistema de informes de procesos se basa en módulos que:
 

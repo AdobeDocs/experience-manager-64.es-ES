@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Si la base de datos de DB2 de los formularios AEM empieza a ejecutarse lentamente, la ejecución semanal del siguiente proceso puede mejorar su rendimiento:
 
-1. Centro de control DB2 de Inicio:
+1. Centro de control DB2 de inicio:
 
    (Windows) Seleccione Inicio > Programas > IBM DB2 > Herramientas de administración general > Centro de control.
 
-   (Linux y UNIX) En un símbolo del sistema, escriba el `db2jcc` comando.
+   (Linux y UNIX) En un símbolo del sistema, escriba el comando `db2jcc`.
 
 1. En el árbol de objetos de DB2 Control Center, haga clic en Todas las bases de datos.
 1. Haga clic en la base de datos que ha creado para AEM formularios y haga clic en la carpeta Tablas.

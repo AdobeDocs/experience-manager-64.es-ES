@@ -31,13 +31,13 @@ Además, puede configurar campos comunes en diferentes formularios para comparti
 
 Los conjuntos de formularios también son compatibles con la aplicación de AEM Forms, lo que permite que el personal de campo tenga un conjunto de formularios sin conexión, visite a los clientes, introduzca datos y sincronice posteriormente con el servidor de AEM Forms para enviar datos de formularios a procesos empresariales.
 
-## Creación y administración de conjuntos de formularios {#creating-and-managing-form-set}
+## Creación y administración del conjunto de formularios {#creating-and-managing-form-set}
 
 Puede asociar varios XDP o plantillas de formulario, creados con Designer, a un conjunto de formularios. Los conjuntos de formularios se pueden utilizar para procesar de forma selectiva los XDP en función de los valores introducidos por los usuarios en los formularios iniciales y sus perfiles.
 
-Utilice la interfaz [de usuario de](/help/forms/using/introduction-managing-forms.md) AEM Forms para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
+Utilice [interfaz de usuario de AEM Forms](/help/forms/using/introduction-managing-forms.md) para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
 
-### Creación de un conjunto de formularios {#create-a-form-set}
+### Crear un conjunto de formularios {#create-a-form-set}
 
 Para crear un conjunto de formularios, haga lo siguiente:
 
@@ -52,7 +52,7 @@ Para crear un conjunto de formularios, haga lo siguiente:
    * Enviar URL: Especifica la dirección URL en la que se publican los datos enviados para el caso de una representación independiente del conjunto de formularios (caso de uso de una aplicación que no es de AEM Forms). Los datos se envían a este extremo como multipart/formdata con el siguiente parámetro de solicitud:
    * dataXML: Este parámetro contiene una representación XML de los datos del conjunto de formularios enviados. Si todos los formularios del conjunto de formularios utilizan un esquema común, el XML se genera según ese esquema. De lo contrario, la etiqueta raíz XML contiene una etiqueta secundaria para cada formulario rellenado en el conjunto de formularios que contiene datos para los datos adjuntos del formulario.
    * formsetPath: Ruta del formulario en CRXDE, que se ha enviado.
-   * Perfil de procesamiento HTML: Puede configurar determinadas opciones, como campos flotantes, archivos adjuntos y compatibilidad con borradores (para la representación de conjuntos de formularios independientes) para personalizar el aspecto, el comportamiento y las interacciones del conjunto de formularios. Puede personalizar o ampliar el perfil existente para cambiar cualquier configuración de perfil de formulario HTML.
+   * PERFIL de procesamiento HTML: Puede configurar determinadas opciones, como campos flotantes, archivos adjuntos y compatibilidad con borradores (para la representación de conjuntos de formularios independientes) para personalizar el aspecto, el comportamiento y las interacciones del conjunto de formularios. Puede personalizar o ampliar el perfil existente para cambiar cualquier configuración de perfil de formulario HTML.
 
    ![Conjunto de formularios: agregar propiedades](assets/createformset1.png)
 
@@ -66,10 +66,10 @@ Para crear un conjunto de formularios, haga lo siguiente:
 
    * Orden del formulario: Arrastre y suelte los formularios para reordenarlos. El orden del formulario define el orden en que se muestran los formularios al usuario final en la aplicación de AEM Forms y en la representación independiente.
    * Identificador de formulario: Especifica una identidad única para los formularios que se utilizarán en las expresiones de elegibilidad.
-   * Raíz de datos: Para cada formulario del conjunto de formularios, Autor puede configurar el XPATH donde los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario tenga el enlace de datos correcto especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra valores prerellenados del primer formulario. No enlazar dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar XML para el conjunto](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p)de formularios.
-   * expresión de elegibilidad: Especifica una expresión de JavaScript que evalúa un valor booleano e indica si se puede rellenar un formulario en un conjunto de formularios. Si es false, no se pregunta al usuario ni se muestra el formulario que se va a rellenar. Normalmente, la expresión se basa en los valores de los campos capturados antes de este formulario. Las Expresiones también contienen llamadas a la API fs.valueOf del conjunto de formularios para extraer los valores rellenados por el usuario en un campo de un formulario del conjunto de formularios:
+   * Raíz de datos: Para cada formulario del conjunto de formularios, Autor puede configurar el XPATH donde los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario tenga el enlace de datos correcto especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra valores prerellenados del primer formulario. No enlazar dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar XML para el conjunto de formularios](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Expresión de elegibilidad: Especifica una expresión de JavaScript que evalúa un valor booleano e indica si se puede rellenar un formulario en un conjunto de formularios. Si es false, no se pregunta al usuario ni se muestra el formulario que se va a rellenar. Normalmente, la expresión se basa en los valores de los campos capturados antes de este formulario. Las expresiones también contienen llamadas a la API fs.valueOf del conjunto de formularios para extraer los valores rellenados por el usuario en un campo de un formulario del conjunto de formularios:
 
-   *fs.valueOf(&lt;Identificador de formulario>, &lt;expresión de fieldSom>) > &lt;valor>*
+   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>) >  &lt;value>*
 
    Por ejemplo, si tiene dos formularios en el conjunto de formularios: gastos de negocios y gastos de viaje, puede agregar un fragmento de JavaScript en el campo Expresión de elegibilidad de ambos formularios para comprobar los datos introducidos por el usuario para el tipo de gasto en un formulario. Si el usuario elige Gastos comerciales, el formulario Gastos comerciales se procesa para el usuario final. O si el usuario elige gastos de viaje, se procesa un formulario diferente para el usuario final. Para obtener más información, consulte Expresión de elegibilidad.
 
@@ -93,7 +93,7 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 * Eliminar: Elimina el conjunto de formularios completo. Los formularios del conjunto de formularios eliminado permanecen en el repositorio.
 * Publicar/Cancelar la publicación: De este modo, se publica o deja de publicar el conjunto de formularios junto con todos los formularios que contiene y los recursos relacionados de estos formularios.
 * Previsualización: Previsualización ofrece dos opciones: Previsualización como HTML (sin datos) y previsualización personalizada con datos de ejemplo.
-* Propiedades de Vista/edición: Puede editar o vista las propiedades de metadatos de un conjunto de formularios seleccionado.
+* Propiedades de vista/edición: Puede editar o vista las propiedades de metadatos de un conjunto de formularios seleccionado.
 
 ![createformset3](assets/createformset3.png)
 
@@ -102,13 +102,13 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 Para editar un conjunto de formularios, haga lo siguiente:
 
 1. Seleccione Forms > Forms y Documentos.
-1. Busque el conjunto de formularios que desee editar. Pase el ratón sobre él y seleccione Editar ( ![editicono](assets/editicon.png)).
+1. Busque el conjunto de formularios que desee editar. Pase el ratón por encima y seleccione Editar ( ![editicon](assets/editicon.png)).
 1. En la página Configurar formularios, puede editar lo siguiente:
 
    * Orden del formulario
    * Formulario  Identificador
    * Raíz de datos
-   * expresión de elegibilidad
+   * Expresión de elegibilidad
 
    También puede hacer clic en el icono Eliminar correspondiente para eliminar el formulario del conjunto de formularios.
 
@@ -118,7 +118,7 @@ Una vez creado un conjunto de formularios mediante la interfaz de usuario de AEM
 
 ### Uso del conjunto de formularios en el punto de Tarea o Inicio {#using-form-set-in-task-or-start-point}
 
-1. Al diseñar un proceso, en la sección Presentación y datos de Asignar punto de Tarea/Inicio, seleccione **usar un recurso** CRX. Aparece el navegador de recursos CRX.
+1. Al diseñar un proceso, en la sección Presentación y datos de Asignar punto de Tarea/Inicio, seleccione **usar un recurso CRX**. Aparece el navegador de recursos CRX.
 
    ![Diseñar un proceso: usar un recurso CRX](assets/formsetinprocessmgmt1.png)
 
@@ -160,7 +160,7 @@ var formUid = "form1";
  var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```
 
-## Rellenar XML previamente para el conjunto de formularios {#prefill-xml-for-form-set}
+## Rellenar XML para conjunto de formularios {#prefill-xml-for-form-set}
 
 El conjunto de formularios es una colección de varios formularios HTML5 que tienen esquemas comunes o diferentes. El conjunto de formularios admite el rellenado previo de campos de formulario mediante un archivo XML. Puede asociar un archivo XML con un conjunto de formularios para que, al abrir un formulario en el conjunto de formularios, algunos de los campos del formulario se precalculen.
 
@@ -304,7 +304,7 @@ El subárbol indica los datos de los formularios en el conjunto de formularios. 
 
 Esta etiqueta indica el inicio de HTML5 Form XML. Esto se agrega en el archivo XML de envío si está presente en el archivo XML de relleno previo o si no hay ningún archivo XML de relleno previo. Esta etiqueta se puede quitar del XML de relleno previo.
 
-### XFA:CONJUNTOS DE DATOS {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -352,7 +352,7 @@ Si hay un elemento raíz en el XML de relleno previo, el nombre de ese elemento 
 
 La aplicación de AEM Forms permite a los trabajadores de campo sincronizar sus dispositivos móviles con un servidor AEM Forms y trabajar en sus tareas. La aplicación funciona incluso cuando el dispositivo está sin conexión al guardar datos localmente en el dispositivo. Mediante las funciones de anotación, como las fotografías, los trabajadores sobre el terreno pueden proporcionar información precisa para integrarla en los procesos empresariales.
 
-Para obtener más información sobre la aplicación de AEM Forms, consulte Aplicación [AEM Forms](/help/forms/using/aem-forms-app.md).
+Para obtener más información sobre la aplicación de AEM Forms, consulte [Aplicación de AEM Forms](/help/forms/using/aem-forms-app.md).
 
 ## Limitaciones conocidas: patrones no totalmente admitidos en el conjunto de formularios {#known-limitations-patterns-not-fully-supported-in-form-set}
 

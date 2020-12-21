@@ -31,13 +31,13 @@ Puede cargar los tipos de recurso admitidos individualmente o como archivo ZIP. 
 
 >[!NOTE]
 >
->Asegúrese de que es miembro del `form-power-users` grupo para poder cargar archivos XDP. Póngase en contacto con el administrador para convertirse en miembro del grupo.
+>Asegúrese de que es miembro del grupo `form-power-users` para poder cargar archivos XDP. Póngase en contacto con el administrador para convertirse en miembro del grupo.
 
 ## Carga de formularios {#uploading-forms}
 
-1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo `https://[server]:[port]/aem/forms.html`.
+1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo a `https://[server]:[port]/aem/forms.html`.
 1. Vaya a la carpeta en la que desea cargar el formulario o la carpeta que contiene los formularios.
-1. En la barra de herramientas de acciones, toque **Crear > Carga** de archivos.
+1. En la barra de herramientas de acciones, toque **Crear > Carga de archivo**.
 
    ![Archivos de la opción de almacenamiento local en Crear](assets/step.png)
 
@@ -71,11 +71,11 @@ El modo protegido está activado de forma predeterminada. Si es necesario, puede
 1. Abra Configuraciones móviles de Forms para editarlas.
 1. Anule la selección de la opción Modo protegido y haga clic en **Guardar**. El modo protegido está desactivado.
 
-## Actualización de formularios XFA a los que se hace referencia {#updating-referenced-xfa-forms}
+## Actualización de formularios XFA referenciados {#updating-referenced-xfa-forms}
 
 En AEM Forms, una plantilla de formulario XFA puede ser referida por un formulario adaptable u otra plantilla de formulario XFA. Además, una plantilla puede hacer referencia a un recurso u otra plantilla XFA.
 
-Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados con los campos disponibles en el XFA. Al actualizar una plantilla de formulario, el formulario adaptable asociado intenta sincronizarse con el XFA. Para obtener más información, consulte [Sincronización de formularios adaptables con el XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)asociado.
+Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados con los campos disponibles en el XFA. Al actualizar una plantilla de formulario, el formulario adaptable asociado intenta sincronizarse con el XFA. Para obtener más información, consulte [Sincronización de formularios adaptables con el XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md) asociado.
 
 La eliminación de una plantilla de formulario daña el formulario adaptable o la plantilla de formulario dependientes. Este tipo de formulario adaptable se conoce a veces informalmente como un formulario sucio. En la interfaz de usuario de AEM Forms, puede encontrar los formularios sucios de las dos formas siguientes.
 
@@ -85,7 +85,7 @@ La eliminación de una plantilla de formulario daña el formulario adaptable o l
 
 ![Advertencia para un formulario adaptable sin sincronizar después de actualizar el XFA asociado](assets/dirtyaf.png)
 
-Se mantiene un indicador para indicar si un formulario adaptable está sucio. Esta información está disponible en la página de propiedades del formulario, junto con los metadatos del formulario. Solo para formularios adaptables sucios, una propiedad de metadatos `Model Refresh` muestra `Recommended` el valor.
+Se mantiene un indicador para indicar si un formulario adaptable está sucio. Esta información está disponible en la página de propiedades del formulario, junto con los metadatos del formulario. Solo para formularios adaptables sucios, una propiedad de metadatos `Model Refresh` muestra el valor `Recommended`.
 
 ![Indicación de que un formulario adaptable no está sincronizado con el modelo XFA](assets/model-refresh.png)
 

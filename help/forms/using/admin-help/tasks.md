@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Working with tasks {#working-with-tasks}
+# Uso de tareas {#working-with-tasks}
 
 Utilice la página Búsqueda de Tarea para buscar tareas por nombre de usuario o ID de tarea. Los resultados de la búsqueda se muestran en la página de Lista de Tarea, donde puede acceder al historial de una tarea. También puede reasignar una tarea si un usuario tiene demasiadas tareas o si un usuario ha recibido una asignación de tarea por error.
 
@@ -40,25 +40,25 @@ Utilice la página Búsqueda de Tarea para buscar tareas por nombre de usuario o
 1. En Buscar por, seleccione ID de Tarea y escriba el ID de tarea en el cuadro.
 1. Haga clic en Buscar. Aparece la página de Lista de Tarea, que enumera los resultados de la búsqueda.
 
-## Trabajo con la lista de tarea {#working-with-the-task-list}
+## Uso de la lista de tarea {#working-with-the-task-list}
 
 Los resultados de una búsqueda de tarea se muestran en la página de Lista de Tarea. Puede seleccionar una tarea para abrir la página Historial de Tareas. Desde allí, puede asignar la tarea a otro usuario.
 
 Las tareas se muestran con la siguiente información:
 
-**ID de Tarea:** El entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia de la tarea (iniciada por un usuario). Puede utilizar este identificador para rastrear la tarea a lo largo de su ciclo de vida. Haga clic en un ID de Tarea para obtener detalles de vista sobre el historial de tareas o para reasignar la tarea a otro usuario.
+**ID de tarea:** el entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia de la tarea (iniciada por un usuario). Puede utilizar este identificador para rastrear la tarea a lo largo de su ciclo de vida. Haga clic en un ID de Tarea para obtener detalles de vista sobre el historial de tareas o para reasignar la tarea a otro usuario.
 
-**Estado:** Asignada significa que la tarea está asignada al usuario. Sin asignar significa que la tarea se asignó previamente al usuario. También se puede completar el estado.
+**Estado:** Asignado significa que la tarea está asignada al usuario. Sin asignar significa que la tarea se asignó previamente al usuario. También se puede completar el estado.
 
-**Actividad:** Muestra el formulario y el nombre de una operación inicial o de la operación de proceso que generó la tarea.
+**Actividad:** muestra el formulario y el nombre de una operación inicial o de la operación de proceso que generó la tarea.
 
-**ID del proceso:** Este entero positivo que se asigna mediante el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inician un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
+**Id. de proceso:** este entero positivo que se asigna por el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inician un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
 
-**Nombre del proceso - Versión:** Nombre del proceso, tal como se define en Workbench.
+**Nombre del proceso: Versión:** el nombre del proceso, tal como se define en Workbench.
 
-**Aplicación:** Nombre de la aplicación a la que pertenece el proceso, tal como se define en Workbench.
+**Aplicación:** el nombre de la aplicación a la que pertenece el proceso, tal como se define en Workbench.
 
-**Fecha de creación:** Fecha y hora en que se creó la tarea.
+**Fecha de creación:** la fecha y hora en que se creó la tarea.
 
 ## Visualización del historial de tareas y reasignación de tareas {#viewing-task-history-and-reassigning-tasks}
 
@@ -66,29 +66,29 @@ La página Historial de Tareas muestra una lista de los usuarios y grupos asigna
 
 Para cada asignación de tarea, la lista muestra la siguiente información:
 
-**Nombre:** Nombre del usuario.
+**Nombre:** El nombre del usuario.
 
 **Estado:** Asignado significa que la tarea está asignada al usuario. Sin asignar significa que la tarea se asignó previamente al usuario.
 
-**ID de lista de trabajo:** Identificador numérico de la cola de usuarios a la que pertenece la tarea. Un proceso se puede compartir entre varios usuarios.
+**ID de lista de trabajo:** el identificador numérico de la cola de usuario a la que pertenece la tarea. Un proceso se puede compartir entre varios usuarios.
 
-**Tipo:** Indica cómo se asignó la tarea:
+**Tipo:** indica cómo se asignó la tarea:
 
 **Inicial:** Al usuario se le asignó originalmente la tarea.
 
-**Adelante:** El propietario de la tarea original asignó la tarea a otro usuario.
+**Reenvío:** El propietario de la tarea original asignó la tarea a otro usuario.
 
-**Rechazar:** Se rechazó una tarea reenviada o se devolvió una tarea a una lista de trabajo sin haberla completado.
+**Rechazar:** se rechazó una tarea reenviada o se devolvió una tarea a una lista de trabajo sin haber finalizado.
 
-**Reclamar:** El usuario reclamó la tarea en una lista de trabajo compartida.
+**Reclamación:** El usuario reclamó la tarea en una lista de trabajo compartida.
 
-**Escalación:** Se ha transcurrido un tiempo predeterminado (como se establece en la acción Usuario en Workbench) sin la interacción del usuario y se ha asignado la tarea a otro usuario.
+**Escalación:** tiempo transcurrido predeterminado (como se establece en la acción Usuario en Workbench) sin interacción del usuario y se asignó la tarea a otro usuario.
 
-**Consultar:** El propietario de la tarea ha reenviado esta tarea a otro usuario para consulta, que puede abrir el formulario, guardar datos, modificar los datos adjuntos y las notas, pero no puede completar el paso. El usuario debe devolver la tarea al propietario de la tarea que haya consultado con el usuario.
+**Consultar:** El propietario de la tarea ha reenviado esta tarea a otro usuario para consulta, que puede abrir el formulario, guardar datos, modificar los anexos y las notas, pero no puede completar el paso. El usuario debe devolver la tarea al propietario de la tarea que haya consultado con el usuario.
 
-**Reasignación de administración:** La tarea fue reasignada por un administrador.
+**Reasignación de administración:** un administrador reasignó la tarea.
 
-**Fecha de asignación:** Fecha y hora en que se asignó la tarea al usuario.
+**Fecha de asignación:** la fecha y hora en que se asignó la tarea al usuario.
 
 ### Asignación de un nuevo usuario a una tarea {#assigning-a-new-user-to-a-task}
 

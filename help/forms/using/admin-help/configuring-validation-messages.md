@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# Configuración de los mensajes de validación {#configuring-validation-messages}
+# Configuración de mensajes de validación {#configuring-validation-messages}
 
 En el caso de los formularios procesados como HTML, los errores de validación que se producen se muestran al usuario. Puede personalizar el modo en que se muestran los mensajes de validación. En función de dónde se muestren los mensajes de validación, también puede controlar la ubicación del mensaje en el formulario y el tamaño del borde del marco.
 
-## Especificar cómo se muestran los mensajes de validación {#specify-how-validation-messages-are-displayed}
+## Especifique cómo se muestran los mensajes de validación {#specify-how-validation-messages-are-displayed}
 
 1. En la consola de administración, haga clic en Servicios > formularios.
 1. En Salida de validación, en la lista de Sistema de informes, seleccione una de las siguientes opciones:
@@ -41,15 +41,15 @@ En el caso de los formularios procesados como HTML, los errores de validación q
 
 1. Haga clic en Guardar.
 
-## Especificar la ubicación de los mensajes de validación en relación con el formulario devuelto en el explorador Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Especifique la ubicación de los mensajes de validación en relación con el formulario devuelto en el explorador Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Cuando Sistema de informes se establece en Marco o Sin marco, puede especificar la ubicación de los mensajes de validación.
 
 1. En Salida de validación, en la lista Posición, seleccione una de las siguientes opciones:
 
-   **Izquierda:** Para mostrar mensajes de validación en el lado izquierdo del explorador web.
+   **Izquierda:** Para mostrar mensajes de validación en el lado izquierdo del explorador Web.
 
-   **Derecha:** Para mostrar mensajes de validación en el lado derecho del explorador web.
+   **Derecha:** Para mostrar mensajes de validación en el lado derecho del explorador Web.
 
    **Superior**: Para mostrar mensajes de validación en la parte superior del explorador Web. Este valor es el predeterminado.
 
@@ -57,7 +57,7 @@ Cuando Sistema de informes se establece en Marco o Sin marco, puede especificar 
 
 1. Haga clic en Guardar.
 
-## Especificar el tamaño del borde del marco {#specify-the-frame-border-size}
+## Especifique el tamaño del borde del marco {#specify-the-frame-border-size}
 
 Cuando Sistema de informes se establece en Marco, puede especificar el tamaño del borde del marco.
 

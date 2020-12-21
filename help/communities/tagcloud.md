@@ -18,64 +18,69 @@ ht-degree: 1%
 ---
 
 
-# Uso de la nube de etiquetas de Social {#using-social-tag-cloud}
+# Uso de Social Tag Cloud {#using-social-tag-cloud}
 
 ## Introducción {#introduction}
 
-El `Social Tag Cloud` componente resalta las etiquetas aplicadas por los miembros de la comunidad al publicar contenido. Es una forma de identificar los temas de tendencia y permitir que los visitantes del sitio localicen rápidamente el contenido etiquetado.
+El componente `Social Tag Cloud` resalta las etiquetas aplicadas por los miembros de la comunidad al publicar contenido. Es una forma de identificar los temas de tendencia y permitir que los visitantes del sitio localicen rápidamente el contenido etiquetado.
 
-Para obtener otro medio de identificar las tendencias actuales, visite Tendencias [de](trends.md)Actividad.
+Para obtener otro medio de identificar las tendencias actuales, visite [Tendencias de Actividad](trends.md).
 
-Esta página documentos la configuración del cuadro de diálogo del `Social Tag Cloud` componente y describe la experiencia del usuario.
+Esta página documentos la configuración del cuadro de diálogo del componente `Social Tag Cloud` y describe la experiencia del usuario.
 
 Para obtener información detallada sobre los desarrolladores, consulte [Tag Essentials](tag.md).
 
-See [Administering Tags](../../help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como también sobre las etiquetas de contenido que se han aplicado.
 
 ## Añadir una nube de etiquetas de Social {#adding-a-social-tag-cloud}
 
-Para agregar un `Social Tag Cloud` componente a una página en modo de autor, utilice el navegador de componentes para buscarlo `Communities / Social Tag Cloud` y arrastrarlo a su lugar en una página en la que debería aparecer la nube de etiquetas.
+Para agregar un componente `Social Tag Cloud` a una página en modo de autor, utilice el navegador de componentes para ubicar `Communities / Social Tag Cloud` y arrástrelo a su lugar en una página donde debería aparecer la nube de etiquetas.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
-Cuando se incluyen las bibliotecas [del lado del cliente](tag.md#essentials-for-client-side) necesarias, así es como aparecerá el `Social Tag Cloud` componente:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](tag.md#essentials-for-client-side), así es como aparecerá el componente `Social Tag Cloud`:
 
 ![chlimage_1-303](assets/chlimage_1-303.png)
 
 ## Configuración de Social Tag Cloud {#configuring-social-tag-cloud}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Social Tag Cloud` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Social Tag Cloud` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
-En la ficha **[!UICONTROL Social Tag Cloud]** , especifique qué etiquetas mostrar y, si las etiquetas son vínculos activos, la ubicación de la página para los resultados de búsqueda.:
+En la ficha **[!UICONTROL Social Tag Cloud]**, especifique qué etiquetas mostrar y, si las etiquetas son vínculos activos, la ubicación de la página para los resultados de búsqueda.:
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Etiquetas sociales para mostrar]** Identifique qué etiquetas UGC mostrar. Las opciones desplegables son
+* **[!UICONTROL Etiquetas sociales para]**
+mostrarIdentifique qué etiquetas UGC mostrar. Las opciones desplegables son
 
    * `From page and child pages`
    * `All tags`
 
-   El valor predeterminado es `From page and child pages`, donde &quot;página&quot; se refiere a la configuración de **página** siguiente.
+   El valor predeterminado es `From page and child pages`, donde &quot;page&quot; hace referencia a la configuración **Página** a continuación.
 
-* **[!UICONTROL Página]**(obligatorio si no es así 
+* **[!UICONTROL Página]**
+ (obligatorio si no es así 
 `All tags)` Ruta de acceso al UGC de una página. El valor predeterminado es la página actual si se deja en blanco.
 
-* **[!UICONTROL No hay vínculos en las etiquetas]** Si se selecciona, las etiquetas se muestran en la nube de etiquetas como texto sin formato. Si no se selecciona, las etiquetas se muestran como vínculos activos que buscan todo el contenido al que se aplica esa etiqueta. El valor predeterminado no está marcado y requiere que se establezca la ruta **[!UICONTROL de resultados de]** búsqueda.
+* **[!UICONTROL No hay vínculos en]**
+las etiquetasSi se selecciona, las etiquetas se muestran en la nube de etiquetas como texto sin formato. Si no se selecciona, las etiquetas se muestran como vínculos activos que buscan todo el contenido al que se aplica esa etiqueta. El valor predeterminado no está marcado y requiere que se establezca la **[!UICONTROL ruta de resultados de búsqueda]**.
 
-* **[!UICONTROL Ruta]** de resultados de búsqueda La ruta a una página en la que una 
-`Search Result` se ha colocado, configurado para hacer referencia a UGC, que incluye la ruta UGC especificada por la configuración de **página** .
+* **[!UICONTROL Ruta de]**
+resultados de búsquedaRuta a una página en la que una 
+`Search Result` se ha colocado, configurado para hacer referencia a UGC, que incluye la ruta UGC especificada por el ajuste de  **** página.
 
-## Cambiar la visualización de la nube de etiquetas sociales {#change-display-of-social-tag-cloud}
+## Cambiar la visualización de la nube de etiquetas de Social {#change-display-of-social-tag-cloud}
 
-Para editar la visualización de **Social Tag Cloud**, introduzca Modo [de](../../help/sites-authoring/default-components-designmode.md) diseño y doble, haga clic en el componente colocado `Social Tag Cloud` para abrir un cuadro de diálogo con una ficha adicional.
+Para editar la visualización de la **Nube de etiquetas sociales**, introduzca [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga clic en el doble del componente `Social Tag Cloud` ubicado para abrir un cuadro de diálogo con una ficha adicional.
 
-En la ficha **[!UICONTROL Social Tag Cloud (Diseño)]** , especifique cómo se muestran las etiquetas. Una etiqueta puede ser una etiqueta simple, una sola palabra de la Área de nombres predeterminada o una taxonomía jerárquica:
+Mediante la ficha **[!UICONTROL Social Tag Cloud (Design)]**, especifique cómo se muestran las etiquetas. Una etiqueta puede ser una etiqueta simple, una sola palabra de la Área de nombres predeterminada o una taxonomía jerárquica:
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Mostrar rutas]** de título completas Si está activada, muestra los títulos de las etiquetas principales y la Área de nombres de cada etiqueta aplicada.
+* **[!UICONTROL Mostrar]**
+rutas de título completasSi se selecciona, muestra los títulos de las etiquetas principales y la Área de nombres de cada etiqueta aplicada.
 
    Por ejemplo:
 
@@ -86,27 +91,30 @@ En la ficha **[!UICONTROL Social Tag Cloud (Diseño)]** , especifique cómo se m
 
    El valor predeterminado no está marcado.
 
-* **[!UICONTROL Mostrar solo etiquetas]** de hoja Si está activada, solo muestra las etiquetas aplicadas que no contienen ninguna otra etiqueta.
+* **[!UICONTROL Mostrar solo]**
+etiquetas de hojaSi se selecciona, solo muestra las etiquetas aplicadas que no contienen ninguna otra etiqueta.
 
    Por ejemplo, dado el TagID de
 
    `Geometrixx Media: Gadgets / Cars`
 
-   Se pueden aplicar tres etiquetas: `Geometrixx Media (the namespace)`, `Gadgets`y `Cars`
+   Se pueden aplicar tres etiquetas: `Geometrixx Media (the namespace)`, `Gadgets` y `Cars`
 
-   * Activado: solo `Cars` se mostrará si se aplica
-   * Desmarcado: `Geometrixx Media` y `Gadgets`también `Cars` se mostrarán, si se aplica
+   * Activado: solo se mostrará `Cars` si se aplica
+   * Desmarcado: `Geometrixx Media` y `Gadgets`así como `Cars` se mostrarán, si se aplican
 
    Una etiqueta simple es una etiqueta de hoja.
 
    El valor predeterminado no está marcado.
 
-* **[!UICONTROL Plantilla]** de vínculo Una plantilla, distinta de la predeterminada, que se utiliza para mostrar los vínculos en una nube de etiquetas, cuando los vínculos se activan mediante el cuadro de diálogo de edición de componentes.
+* **[!UICONTROL Plantilla]**
+de vínculoUna plantilla, distinta de la predeterminada, que se utiliza para mostrar los vínculos en una nube de etiquetas, cuando los vínculos se activan mediante el cuadro de diálogo de edición de componentes.
 
-* **[!UICONTROL El mismo tamaño para todas las etiquetas]** Si se selecciona, todas las palabras de la nube de etiquetas tienen el mismo estilo. Si no se selecciona, el estilo de las palabras varía en función de su uso. El valor predeterminado no está marcado.
+* **[!UICONTROL El mismo tamaño para todas]**
+las etiquetasSi se selecciona, todas las palabras de la nube de etiquetas tienen el mismo estilo. Si no se selecciona, el estilo de las palabras varía en función de su uso. El valor predeterminado no está marcado.
 
 ## Información adicional {#additional-information}
 
 Puede encontrar más información en la página [Tag Essentials](tag.md) para desarrolladores.
 
-Consulte [Etiquetado de contenido](tag-ugc.md) generado por el usuario (UGC) para obtener información sobre la creación y administración de etiquetas.
+Consulte [Etiquetado de contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.

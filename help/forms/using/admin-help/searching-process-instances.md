@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Búsqueda de instancias de proceso{#searching-for-process-instances}
+# Buscando instancias de proceso{#searching-for-process-instances}
 
 Utilice la página Buscar proceso para introducir los criterios de búsqueda para encontrar una instancia de proceso. Puede acceder a la página Buscar proceso desde la página de flujo de trabajo de formularios o haciendo clic en Buscar en la página Instancia de proceso.
 
@@ -33,14 +33,14 @@ Introduzca criterios básicos para realizar una búsqueda general. Si introduce 
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Buscar en procesos.
 1. En la página Buscar proceso, en Búsqueda general, proporcione los siguientes criterios:
 
-   * **ID del proceso:** El entero positivo que identifica cada instancia de proceso única.
-   * **Estado del proceso:** Seleccione un estado en la lista.
-   * **Aplicación:** Seleccione una aplicación en la lista. Solo se muestran las aplicaciones implementadas.
-   * **Nombre del proceso - Versión:** Seleccione un nombre de proceso en el menú. Solo se muestran los procesos implementados.
+   * **ID de proceso:** el entero positivo que identifica cada instancia de proceso única.
+   * **Estado del proceso:** seleccione un estado en la lista.
+   * **Aplicación:** seleccione una aplicación de la lista. Solo se muestran las aplicaciones implementadas.
+   * **Nombre del proceso: Versión:** seleccione un nombre de proceso en el menú. Solo se muestran los procesos implementados.
 
 1. Haga clic en Buscar. Aparece la página Instancia de proceso, que enumera las instancias encontradas.
 
-## Realizar una búsqueda detallada de un proceso {#perform-a-detailed-search-for-a-process}
+## Realice una búsqueda detallada de un proceso {#perform-a-detailed-search-for-a-process}
 
 Puede introducir atributos específicos para realizar una búsqueda detallada. Una búsqueda detallada es más apropiada si se tienen muchas instancias de proceso en ejecución y se necesita reducir las posibles hallazgos según ciertos criterios.
 

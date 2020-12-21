@@ -26,7 +26,7 @@ Si elimina un recurso de la instancia Autor, el recurso también se elimina de l
 ## Cómo eliminar un formulario {#how-to-delete-a-form}
 
 1. Inicie sesión en la interfaz de usuario de AEM Forms, accediendo a `https://[hostname]:[portport]/aem/forms.html.`
-1. Desplácese hasta el formulario que desee eliminar y selecciónelo. Haga clic en Eliminar ![aem6forms_delete2](assets/aem6forms_delete2.png) en la barra de herramientas y confirme la operación de eliminación.
+1. Desplácese hasta el formulario que desee eliminar y selecciónelo. Haga clic en Eliminar ![aem6forms_delete2](assets/aem6forms_delete2.png) de la barra de herramientas y confirme la operación de eliminación.
 
    >[!NOTE]
    >
@@ -42,10 +42,10 @@ Si elimina un recurso de la instancia Autor, el recurso también se elimina de l
    >
    >Si el recurso seleccionado es una carpeta y contiene dicho recurso en su jerarquía, elimine otros recursos individualmente o elimine toda la carpeta.
 
-## Impacto de la eliminación de un formulario XFA al que se hace referencia {#impact-of-deleting-a-referenced-xfa-form}
+## Impacto de eliminar un formulario XFA al que se hace referencia {#impact-of-deleting-a-referenced-xfa-form}
 
 En AEM Forms, una plantilla de formulario XFA puede ser referida por un formulario adaptable u otra plantilla de formulario XFA. Además, una plantilla puede hacer referencia a un recurso u otra plantilla XFA.
 
-No es aconsejable eliminar un formulario XFA al que se hace referencia mediante un formulario adaptable, ya que puede dañar el formulario adaptable. Cuando un formulario adaptable hace referencia a un formulario XFA, sus campos están enlazados. Tras la eliminación de XFA, el formulario adaptable no puede sincronizar sus campos con los campos XFA y muestra un mensaje de error para dichos campos. Para obtener más información sobre el impacto de la eliminación de XFA a la que se hace referencia y sobre los AF sucios, consulte [Actualización de formularios](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)XFA a los que se hace referencia.
+No es aconsejable eliminar un formulario XFA al que se hace referencia mediante un formulario adaptable, ya que puede dañar el formulario adaptable. Cuando un formulario adaptable hace referencia a un formulario XFA, sus campos están enlazados. Tras la eliminación de XFA, el formulario adaptable no puede sincronizar sus campos con los campos XFA y muestra un mensaje de error para dichos campos. Para obtener más información sobre el impacto de la eliminación de XFA a la que se hace referencia y sobre los AF sucios, consulte [Actualización de formularios XFA a los que se hace referencia](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
 
 Para eliminar un formulario XFA de este tipo, actualice el formulario adaptable y elimine los enlaces con los campos XFA.

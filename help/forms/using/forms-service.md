@@ -33,19 +33,19 @@ Utilice el servicio de Forms para hacer lo siguiente:
 
 ## Creación de PDF forms  {#creating-pdf-forms-nbsp}
 
-Utilice el servicio de formularios para crear PDF forms para la captura de datos. Normalmente, el inicio se realiza con una plantilla de AEM Forms Designer. Utilice la operación `renderPDFForm` (vínculo a Javadoc) del servicio Forms para convertir esta plantilla en un formulario PDF.
+Utilice el servicio de formularios para crear PDF forms para la captura de datos. Normalmente, el inicio se realiza con una plantilla de AEM Forms Designer. Utilice la operación `renderPDFForm` (vínculo a Javadoc) del servicio de Forms para convertir esta plantilla en un formulario PDF.
 
-El primer parámetro de la `renderPDFForm` operación es el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`). Puede almacenar el archivo de plantilla en un sistema de archivos local, en un repositorio CRX o en una ubicación HTTP o FTP. Puede especificar la ubicación del archivo de plantilla estableciendo la raíz de contenido en el `PDFFormRenderOptions` parámetro de la `renderPDFForm` operación. Consulte Javadoc para obtener detalles de otras opciones que puede especificar para el `PDFFormRenderOptions` parámetro.
+El primer parámetro de la operación `renderPDFForm` es el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`). Puede almacenar el archivo de plantilla en un sistema de archivos local, en un repositorio CRX o en una ubicación HTTP o FTP. Puede especificar la ubicación del archivo de plantilla estableciendo la raíz de contenido en el parámetro `PDFFormRenderOptions` de la operación `renderPDFForm`. Consulte Javadoc para obtener detalles de otras opciones que puede especificar para el parámetro `PDFFormRenderOptions`.
 
-La `renderPDFForm` operación también puede aceptar datos XML. Los datos XML se combinan con la plantilla al crear un formulario PDF para que el formulario PDF generado contenga los datos especificados. El segundo parámetro de la `renderPDFForm` operación puede aceptar un objeto Documento (Javadoc) que contenga datos XML.
+La operación `renderPDFForm` también puede aceptar datos XML. Los datos XML se combinan con la plantilla al crear un formulario PDF para que el formulario PDF generado contenga los datos especificados. El segundo parámetro para la operación `renderPDFForm` puede aceptar un objeto Documento (Javadoc) que contenga datos XML.
 
 ## Extracción de datos de PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
-Utilice la operación `exportData` (Javadoc) del servicio Forms para extraer datos XML de un formulario PDF. Esta operación acepta un documento como su primer parámetro. Puede exportar los datos como un documento XDP o como un archivo XML. Si exporta los datos como un archivo XML, los datos exportados quitan el sobre XDP y devuelven un archivo XML sin formato. Puede especificar esta disposición con el segundo parámetro.
+Utilice la operación `exportData` (Javadoc) del servicio de Forms para extraer datos XML de un formulario PDF. Esta operación acepta un documento como su primer parámetro. Puede exportar los datos como un documento XDP o como un archivo XML. Si exporta los datos como un archivo XML, los datos exportados quitan el sobre XDP y devuelven un archivo XML sin formato. Puede especificar esta disposición con el segundo parámetro.
 
 ## Importación de datos en PDF forms {#importing-data-into-pdf-forms}
 
-El servicio Forms también permite combinar un formulario PDF creado con AEM Forms Designer o la `renderPDFForm` operación con datos XML. La operación `importData` (Javadoc) del servicio Forms acepta el formulario PDF y los datos XML y devuelve un formulario PDF con datos XML.
+El servicio Forms también permite combinar un formulario PDF creado con AEM Forms Designer o la operación `renderPDFForm` con datos XML. La operación `importData` (Javadoc) del servicio Forms acepta el formulario PDF y los datos XML y devuelve un formulario PDF con datos XML.
 
 ## Representación de formularios basados en fragmentos {#rendering-forms-based-on-fragments}
 

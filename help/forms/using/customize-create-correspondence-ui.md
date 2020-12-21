@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Personalizar la interfaz de usuario para crear correspondencia {#customize-create-correspondence-ui}
+# Personalice la IU de creación de correspondencia {#customize-create-correspondence-ui}
 
 ## Información general {#overview}
 
@@ -25,17 +25,18 @@ La administración de correspondencia le permite cambiar la marca de su plantill
 
 Puede cambiar el logotipo en la interfaz de usuario Crear correspondencia con el logotipo de su organización.
 
-![Icono personalizado en la](assets/0_1_introscreenshot.png)figura Crear interfaz de usuario **de correspondencia:** *Icono personalizado en la interfaz de usuario Crear correspondencia*
+![Icono personalizado en la ](assets/0_1_introscreenshot.png)
+**configuración** *UIFigure Crear correspondencia:el icono personalizado en la interfaz de usuario Crear correspondencia*
 
 ### Cambio del logotipo en la interfaz de usuario Crear correspondencia {#changing-the-logo-in-the-create-correspondence-ui}
 
 Para configurar una imagen de logotipo de su elección, haga lo siguiente:
 
-1. Cree la estructura de [carpetas adecuada en CRX](#creatingfolderstructure).
-1. [Cargue el nuevo archivo](#uploadlogo) de logotipo en la carpeta que ha creado en CRX.
+1. Cree la estructura de carpetas [adecuada en CRX](#creatingfolderstructure).
+1. [Cargue el nuevo ](#uploadlogo) archivo de logotipo en la carpeta que ha creado en CRX.
 
-1. [Configure el CSS](#createcss) en CRX para hacer referencia al nuevo logotipo.
-1. Borre el historial del explorador y [actualice la interfaz de usuario](#refreshccrui)Crear correspondencia.
+1. [Configure el ](#createcss) CSSon CRX para que haga referencia al nuevo logotipo.
+1. Borre el historial del explorador y [actualice la IU Crear correspondencia](#refreshccrui).
 
 ## Creación de la estructura de carpetas requerida {#creatingfolderstructure}
 
@@ -45,18 +46,18 @@ Para cualquier personalización, cree una estructura de carpetas paralela, como 
 
 La rama /apps (estructura de carpetas):
 
-* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
+* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o una corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
 * Le ayuda a no perturbar el sistema o ramificación actual, que posiblemente pueda desestabilizarse por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
 * Ayuda a los recursos a obtener una mayor prioridad cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas en ella).
 
 Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps:
 
 1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta con un nombre `css` con una ruta/estructura similar a la carpeta css (ubicada en la carpeta ccrui).
+1. En la carpeta de aplicaciones, cree una carpeta con el nombre `css` con una ruta/estructura similar a la carpeta css (ubicada en la carpeta ccrui).
 
    Pasos para crear la carpeta css:
 
-   1. Haga clic con el botón derecho en la carpeta **css** de la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Haga clic con el botón derecho en la carpeta **css** en la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Nodo Overlay](assets/1_overlaynode_css.png)
 
@@ -66,7 +67,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
       **Ubicación de superposición:** /apps/
 
-      **Coincidir tipos de nodo:** Verificado
+      **Coincidir tipos de nodo:** activado
 
       ![Ruta del nodo de superposición](assets/0_1_5ioverlaynodedialog.png)
 
@@ -81,16 +82,16 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
    1. Haga clic en **Aceptar**. La carpeta css se crea en la ruta especificada.
 
-1. En la carpeta de aplicaciones, cree una carpeta con un nombre `imgs` con una ruta/estructura similar a la carpeta imgs (ubicada en la carpeta de la clave).
+1. En la carpeta de aplicaciones, cree una carpeta con el nombre `imgs` con una ruta/estructura similar a la carpeta imgs (ubicada en la carpeta ccrui).
 
-   1. Haga clic con el botón derecho en la carpeta **imgs** de la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Haga clic con el botón derecho en la carpeta **imgs** en la siguiente ruta y seleccione **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
 
       **Ruta:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
       **Ubicación de superposición:** /apps/
 
-      **Coincidir tipos de nodo:** Verificado
+      **Coincidir tipos de nodo:** activado
 
    1. Haga clic en **Aceptar**.
 
@@ -100,7 +101,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
-## Cargar el nuevo logotipo en CRX {#uploadlogo}
+## Cargue el nuevo logotipo en CRX {#uploadlogo}
 
 Cargue el archivo de logotipo personalizado en CRX. Las reglas HTML estándar rigen la representación del logotipo. Los formatos de archivo de imagen admitidos dependen del navegador que utilice para acceder a AEM Forms. Todos los navegadores admiten JPEG, GIF y PNG. Para obtener más información, consulte la documentación específica del navegador sobre los formatos de imagen admitidos.
 
@@ -131,22 +132,22 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Haga clic con el Doble en la propiedad **jcr:data** .
+1. Haga clic con el doble en la propiedad **jcr:data**.
 
    Aparecerá el cuadro de diálogo Editar jcr:datos.
 
    Ahora haga clic en la carpeta newlogo.png, doble haga clic en jcr:content (opción dim) y defina type nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
 
-1. En el cuadro de diálogo Editar jcr:datos, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
+1. En el cuadro de diálogo Editar jcr:data, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 
    Los formatos de archivo de imagen admitidos dependen del navegador que utilice para acceder a AEM Forms. Todos los navegadores admiten JPEG, GIF y PNG. Para obtener más información, consulte la documentación específica del navegador sobre los formatos de imagen admitidos.
 
    ![Archivo de logotipo personalizado de muestra](assets/geometrixx-outdoors.png)
-   **Figura:** *Ejemplo: CustomLogo.png para usar como logotipo personalizado*
+   **Figura:** *Ejemplo: CustomLogo.png para su uso como logotipo personalizado*
 
 1. Haga clic en **Guardar todo**.
 
-## Cree el CSS para integrar el logotipo con la interfaz de usuario {#createcss}
+## Cree el CSS para integrar el logotipo con la IU {#createcss}
 
 La imagen del logotipo personalizado requiere que se cargue una hoja de estilo adicional en el contexto de contenido.
 
@@ -160,7 +161,7 @@ Siga los pasos siguientes para configurar la hoja de estilo para procesar el log
    Pasos para crear el archivo custom.css:
 
    1. Haga clic con el botón derecho en la carpeta **css** y seleccione **Crear > Crear archivo**.
-   1. En el cuadro de diálogo Nuevo archivo, especifique el nombre del CSS como `customcss.css`(no puede utilizar otro nombre de archivo) y haga clic en **Aceptar**.
+   1. En el cuadro de diálogo Nuevo archivo, especifique el nombre de la CSS como `customcss.css` (no puede utilizar otro nombre de archivo) y haga clic en **Aceptar**.
    1. Añada el siguiente código al archivo css recién creado. En content:url, en el código, especifique el nombre de la imagen que ha cargado en la carpeta imgs en CRXDE.
 
       ```css
@@ -175,5 +176,6 @@ Siga los pasos siguientes para configurar la hoja de estilo para procesar el log
 
 Borre la caché del explorador y, a continuación, abra la instancia Crear interfaz de usuario de correspondencia en el explorador. Debería ver su logotipo personalizado.
 
-![Cree una interfaz de usuario de correspondencia con un logotipo](assets/0_1_introscreenshot-1.png)**personalizado Figura:** *Icono personalizado en la interfaz de usuario Crear correspondencia*
+![Crear interfaz de usuario de correspondencia con ](assets/0_1_introscreenshot-1.png)
+**logotipo personalizadoFigura:** *El icono personalizado en la interfaz de usuario Crear correspondencia*
 

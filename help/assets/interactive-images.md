@@ -32,7 +32,7 @@ Consulte las imágenes interactivas en acción en la página web de arriba, yend
 
 ## Observe cómo se crean los letreros de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
-Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a crear previsualizaciones, editar y distribuir letreros de imagen interactivos.
+Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a previsualización, edición y distribución de letreros de imagen interactivos.
 
 ## Inicio rápido: Imágenes interactivas {#quick-start-interactive-images}
 
@@ -136,7 +136,7 @@ Considere los siguientes ejemplos de direcciones URL de Quickview y sus variable
          <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li> 
          <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li> 
-        </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena productId= de consulta y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
+        </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena de consulta productId= y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td> 
       </tr> 
       <tr> 
        <td><p>SKU único, que se encuentra en la ruta de URL.</p> </td> 

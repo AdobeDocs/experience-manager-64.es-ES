@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Preguntas más frecuentes para formularios HTML5 {#frequently-asked-questions-faq-for-html-forms}
+# Preguntas más frecuentes (FAQ) para formularios HTML5 {#frequently-asked-questions-faq-for-html-forms}
 
 Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad con secuencias de comandos y el ámbito de los formularios HTML5.
 
@@ -26,7 +26,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Por qué los códigos de barras y los campos de firma no aparecen en mi formulario?
 
-   Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de creación de secuencias de comandos de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una utilidad [](/help/forms/using/custom-widgets.md) personalizada para códigos de barras e integrarla.
+   Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de creación de secuencias de comandos de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una [utilidad personalizada](/help/forms/using/custom-widgets.md) para códigos de barras e integrarla.
 
 1. ¿Se admite texto enriquecido para el campo de texto XFA?
 
@@ -124,7 +124,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Hay alguna limitación con respecto al uso de tablas en mi xdp?
 
-   Respuesta: Las tablas complejas causan problemas en el procesamiento.
+   Respuesta: Las tablas complejas producen problemas en el procesamiento.
 
    * No se admite la sección (SubformSet) dentro de una tabla.
    * Las filas de encabezado o pie de página de algunas tablas se marcan para la repetición. La división de estas tablas en varias páginas puede causar algunos problemas.
@@ -135,7 +135,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    * No se admiten las tablas anidadas ni los subformularios dentro de una tabla.
    * Los encabezados solo se admiten para las columnas superior o izquierda de la tabla. Los encabezados no son compatibles con los elementos de la tabla intermedia. Puede aplicar encabezados a varios encabezados de columna y fila siempre que todas estas filas y columnas estén junto con la fila superior o la columna situada más a la izquierda de la tabla.
-   * `Rowspan`y `colspan`desde una ubicación aleatoria dentro de la tabla no se admite.
+   * `Rowspan`y  `colspan`desde una ubicación aleatoria dentro de la tabla no se admite.
    * No se puede agregar o quitar dinámicamente una instancia de filas que contenga elementos con un valor de envergadura bueno a 1.
 
 1. ¿Cuál es el orden de lectura de la información del objeto y del rótulo para los lectores de pantalla?
@@ -168,18 +168,18 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
    Respuesta:
 
-   * La compatibilidad con la secuencia de comandos xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio Web por parte del servidor. Para obtener información detallada, consulte Compatibilidad con [secuencias de comandos](/help/forms/using/scripting-support.md).
+   * La compatibilidad con la secuencia de comandos xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio Web por parte del servidor. Para obtener información detallada, consulte [Compatibilidad con secuencias de comandos](/help/forms/using/scripting-support.md).
    * No se admite $record y $data en scripts del lado del cliente. Sin embargo, si las secuencias de comandos se escriben en un bloque formReady, layoutReady, las secuencias de comandos seguirán funcionando porque estos eventos se ejecutan en el servidor.
    * No se admiten secuencias de comandos específicas de elementos XFA Draw, como cambiar el texto Dibujar (o el texto Rótulo en caso de campos).
 
 1. ¿Hay alguna limitación en el uso de formCalc?
 
-   Respuesta: Actualmente solo se implementa un subconjunto de las secuencias de comandos formCalc. Para obtener información detallada, consulte Compatibilidad con [secuencias de comandos](/help/forms/using/scripting-support.md).
+   Respuesta: Actualmente solo se implementa un subconjunto de las secuencias de comandos formCalc. Para obtener información detallada, consulte [Compatibilidad con secuencias de comandos](/help/forms/using/scripting-support.md).
 
 1. ¿Existe alguna convención de nombres recomendada y hay palabras clave reservadas que evitar?
 
    * En AEM Forms Designer, se recomienda no empezar el nombre de un objeto (como un subformulario o un campo de texto) con un subrayado (_). Para utilizar subrayado al principio del nombre, agregue un prefijo después del subrayado, *_&lt;prefix>&lt;objectname>. *
-   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md).
+   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las API/funciones personalizadas, utilice un nombre que no sea idéntico a [API de formularios HTML5](/help/forms/using/scripting-support.md).
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
@@ -189,8 +189,8 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
    >
    >De forma predeterminada, los campos no están habilitados para flotar. Puede utilizar Forms Designer para establecer la propiedad flotante de los campos.
 
-   1. Abra la lista CRXde y navegue hasta el `/content/xfaforms/profiles/default` nodo.
-   1. Añada una propiedad `mfDataDependentFloatingField` de tipo String y defina el valor de la propiedad en `true`**.**
+   1. Abra la lista CRXde y vaya al nodo `/content/xfaforms/profiles/default`.
+   1. Añada una propiedad `mfDataDependentFloatingField` de tipo String y establezca el valor de la propiedad en `true`**.**
    1. Haga clic en **Guardar todo**. Ahora los campos flotantes están activados para el Forms HTML mediante el perfil de procesamiento actualizado.
 
       >[!NOTE]
@@ -205,5 +205,5 @@ Hay algunas preguntas más frecuentes (FAQ) sobre el diseño, la compatibilidad 
 
 1. ¿Hay palabras clave reservadas en los formularios HTML5?
 
-   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las funciones o API personalizadas, utilice un nombre que no sea idéntico a las API de formularios [HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
+   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las API/funciones personalizadas, utilice un nombre que no sea idéntico a [API de formularios HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comienzan con un guion bajo (_), se recomienda agregar un prefijo único después del guion bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
 

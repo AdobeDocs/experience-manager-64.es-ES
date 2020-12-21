@@ -22,17 +22,17 @@ ht-degree: 0%
 
 En el espacio de trabajo de AEM Forms, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la ficha Tareas pendientes del espacio de trabajo de AEM Forms. Las acciones admitidas en las tareas de los informes directos son:
 
-**Reenviar** una tarea desde un informe directo a cualquier usuario.
+**** ReenviarReenviar una tarea desde un informe directo a cualquier usuario.
 
-**Reclamar** una tarea de un informe directo.
+**** ClaimReclama una tarea de un informe directo.
 
-**Reclamar y abrir** Reclamar una tarea de un informe directo y abrirlo automáticamente en la lista Tareas pendientes del administrador.
+**Reclamar y** OpenClaim una tarea de un informe directo y abrirlo automáticamente en la lista de tareas pendientes del administrador.
 
-**Rechazar** Rechazar una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
+**** RechazarRechazar una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
 
 AEM Forms restringe el acceso de los usuarios únicamente a aquellas tareas para las que el usuario tiene control de acceso (ACL). Esta comprobación garantiza que un usuario solo puede recuperar las tareas en las que tiene permisos de acceso. Mediante el uso de implementaciones y servicios Web de terceros para definir la jerarquía, una organización puede personalizar la definición de administrador y dirigir informes para adaptarlos a sus necesidades.
 
-1. Crear un DSC. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para formularios AEM&quot; en la guía [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Crear un DSC. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para formularios AEM&quot; en la [Guía de programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. En DSC, defina un nuevo SPI para la administración de jerarquías a fin de definir la jerarquía y los informes directos dentro de los usuarios de AEM Forms. A continuación se muestra un fragmento de código Java™ de muestra.
 
    ```as3
@@ -112,7 +112,7 @@ AEM Forms restringe el acceso de los usuarios únicamente a aquellas tareas para
    </component>
    ```
 
-1. Implementar DSC a través de Workbench. Reinicie `ProcessManagementTeamTasksService` el servicio.
+1. Implementar DSC a través de Workbench. Reinicie el servicio `ProcessManagementTeamTasksService`.
 1. Es posible que tenga que actualizar el explorador o cerrar la sesión o volver a iniciarla con el usuario.
 
 La siguiente pantalla ilustra el acceso a las tareas de los informes directos y a las acciones disponibles.

@@ -43,7 +43,7 @@ Los extremos solo se pueden agregar a los servicios. Un punto final no puede exi
 
 1. Haga clic en Agregar.
 
-## Habilitar o deshabilitar un punto final {#enable-or-disable-an-endpoint}
+## Habilitar o deshabilitar un extremo {#enable-or-disable-an-endpoint}
 
 De forma predeterminada, los nuevos extremos se activan automáticamente. Pero si deshabilitó un punto final, deberá habilitarlo para que funcione.
 
@@ -70,7 +70,7 @@ Si tiene problemas con los servicios, deshabilite los extremos asociados para so
 
 También puede realizar esta tarea desde la página Administración de servicios seleccionando un servicio y luego haciendo clic en la ficha Extremos.
 
-## Eliminar un punto final {#remove-an-endpoint}
+## Eliminar un extremo {#remove-an-endpoint}
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de extremos.
 1. En la página Administración de extremos, active la casilla de verificación del punto final que desea eliminar y haga clic en Eliminar. El punto final ya no se muestra.

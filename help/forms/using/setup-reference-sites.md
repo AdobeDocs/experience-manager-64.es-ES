@@ -41,15 +41,16 @@ Los sitios de referencia proporcionan recursos reutilizables que puede utilizar 
 
 * Integración con Adobe Sign para firmar y enviar formularios adaptables de forma segura.
 
-## Requisitos previos y pasos para configurar sitios de referencia {#prerequisites-and-steps-to-set-up-reference-sites}
+## Requisitos previos y pasos para configurar los sitios de referencia {#prerequisites-and-steps-to-set-up-reference-sites}
 
 Antes de configurar el sitio de referencia, asegúrese de que dispone de lo siguiente:
 
 * **Elementos esenciales de AEM**
 
-   AEM QuickStart, paquete de complementos de AEM Forms y paquetes de sitios de referencia. Consulte las versiones [de](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) AEM Forms para obtener información detallada sobre los paquetes de complementos y sitios de referencia.
+   AEM QuickStart, paquete de complementos de AEM Forms y paquetes de sitios de referencia. Consulte [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para obtener información detallada sobre los paquetes de complementos y sitios de referencia.
 
-* **Un servicio** SMTP Puede utilizar cualquier servicio SMTP.
+* **Un**
+servicio SMTPPuede utilizar cualquier servicio SMTP.
 
 * **Cuenta de desarrollador de Adobe Sign y aplicación Adobe Sign API**
 
@@ -64,7 +65,7 @@ Realice los siguientes pasos en la secuencia recomendada para configurar y confi
  <tbody> 
   <tr> 
    <th><strong>Etapa</strong></th> 
-   <th><strong>Configurar</strong></th> 
+   <th><strong>Configuración</strong></th> 
    <th><strong>Notas</strong></th> 
   </tr> 
   <tr> 
@@ -74,12 +75,12 @@ Realice los siguientes pasos en la secuencia recomendada para configurar y confi
   </tr> 
   <tr> 
    <td><a href="#ssl">Configurar SSL</a></td> 
-   <td>Author and Publish<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Habilite HTTP sobre SSL para comunicaciones seguras con Adobe Sign.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">Configuración de Day CQ Link Externalizer</a></p> </td> 
-   <td>Author and Publish<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td><p>Los casos de uso del sitio de referencia envían correos electrónicos para diferentes transacciones. Esta configuración es necesaria para el envío de la newsletter por correo electrónico. Garantiza que las URL y las imágenes apunten a la instancia de publicación. </p> </td> 
   </tr> 
   <tr> 
@@ -114,12 +115,12 @@ Realice los siguientes pasos en la secuencia recomendada para configurar y confi
   </tr> 
   <tr> 
    <td><a href="#scheduler">Configurar Adobe Sign Planificador</a></td> 
-   <td>Author and Publish<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Cambie la configuración del Planificador para comprobar el estado cada dos minutos.</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">Configurar el Cloud Service de Adobe Sign del sitio de referencia</a></td> 
-   <td>Author and Publish<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Una configuración que viene con paquetes de sitios de referencia y necesita una reconfiguración con credenciales válidas.</td> 
   </tr> 
   <tr> 
@@ -129,7 +130,7 @@ Realice los siguientes pasos en la secuencia recomendada para configurar y confi
   </tr> 
   <tr> 
    <td><a href="#fdm">Modificar el archivo de intercambio de servicios restantes para el modelo de datos de formulario</a></td> 
-   <td>Author and Publish<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Modifique el servicio para su entorno.</td> 
   </tr> 
  </tbody> 
@@ -149,9 +150,9 @@ La configuración SSL es necesaria para comunicarse con los servidores de Adobe 
 
 >[!CAUTION]
 >
->No configure la fuerza SSL en la `/etc/map` carpeta.
+>No configure la fuerza SSL en la carpeta `/etc/map`.
 
-## Configuración de Day CQ Link Externalizer {#externalizer}
+## Configurar la configuración del Externalizador de vínculos CQ de día {#externalizer}
 
 En AEM, el **Externalizador** es un servicio OSGI que le permite transformar mediante programación una ruta de recursos (p. ej. /path/to/my/page) en una dirección URL externa y absoluta (por ejemplo, https://www.mycompany.com/path/to/my/page) prefiriendo la ruta con un DNS preconfigurado. Consulte [Externalización de direcciones URL](/help/sites-developing/externalizer.md).
 
@@ -164,7 +165,7 @@ En AEM, el **Externalizador** es un servicio OSGI que le permite transformar med
 Realice los siguientes pasos en las instancias de creación y publicación:
 
 1. Vaya a Configuración de OSGi en https://&lt;*hostname>*:&lt;*port>*/system/console/configMgr.
-1. Toque y busque la configuración **[!UICONTROL de Day CQ Link Externalizer]** .
+1. Busque y toque la configuración del **[!UICONTROL Externalizador de vínculos de CQ por día]**.
 
    Se abre el cuadro de diálogo Externalizador de vínculo CQ de día para editar la configuración.
 
@@ -176,14 +177,14 @@ Realice los siguientes pasos en las instancias de creación y publicación:
 1. Tanto en las instancias de autor como de publicación, asegúrese de que la URL del servidor local está especificada en el campo Dominios.
 1. Toque **[!UICONTROL Guardar]**. Espere un momento para que se reinicien todos los servicios.
 
-## Configurar el servicio de correo CQ Day {#cqmail}
+## Configurar el servicio de correo de CQ de día {#cqmail}
 
-La implementación del sitio de referencia requiere que los mensajes de correo electrónico se envíen a los usuarios de ejemplo cuando rellenen y envíen formularios. La configuración del servicio de correo de CQ Day le permite proporcionar detalles del servicio SMTP para enviar correos electrónicos automatizados a los clientes. See [Configuring Email Notifications](/help/sites-administering/notification.md).
+La implementación del sitio de referencia requiere que los mensajes de correo electrónico se envíen a los usuarios de ejemplo cuando rellenen y envíen formularios. La configuración del servicio de correo de CQ Day le permite proporcionar detalles del servicio SMTP para enviar correos electrónicos automatizados a los clientes. Consulte [Configuración de las notificaciones por correo electrónico](/help/sites-administering/notification.md).
 
 Realice los siguientes pasos para configurar el servicio de correo en la instancia de publicación:
 
 1. Vaya a Configuración de OSGi en https://&lt;*hostname>*:&lt;*port>*/system/console/configMgr.
-1. Toque y busque **[!UICONTROL Day CQ Mail Service]** para abrirlo y configurarlo.
+1. Busque y toque **[!UICONTROL Day CQ Mail Service]** para abrirlo y configurarlo.
 1. Proporcione valores de puerto y nombre de host del servidor SMTP.
 1. Toque **[!UICONTROL Guardar]**.
 
@@ -191,40 +192,40 @@ Realice los siguientes pasos para configurar el servicio de correo en la instanc
 >
 >Puede utilizar su servicio SMTP corporativo o servicios públicos como Gmail. Para configurar el servicio SMTP, consulte la documentación del servicio SMTP.
 
-## Anular configuración XSS predeterminada {#xss}
+## Omitir configuración XSS predeterminada {#xss}
 
-Las plantillas de correo electrónico del sitio de referencia de We.Finance contienen vínculos personalizados en los correos electrónicos. Estos vínculos tienen un marcador de posición como `${placeholder}`. Estos marcadores de posición se reemplazan por valores reales antes de enviar correos electrónicos. La configuración de protección XSS predeterminada para AEM no permite llaves (**{}**) en la dirección URL en el contenido HTML. Sin embargo, puede anular la configuración predeterminada realizando los siguientes pasos en la instancia de publicación:
+Las plantillas de correo electrónico del sitio de referencia de We.Finance contienen vínculos personalizados en los correos electrónicos. Estos vínculos tienen un marcador de posición como `${placeholder}`. Estos marcadores de posición se reemplazan por valores reales antes de enviar correos electrónicos. La configuración de protección XSS predeterminada para AEM no permite llaves (**{ }**) en la dirección URL en el contenido HTML. Sin embargo, puede anular la configuración predeterminada realizando los siguientes pasos en la instancia de publicación:
 
-1. Copiar `/libs/cq/xssprotection/config.xml` a `/apps/cq/xssprotection/config.xml`.
+1. Copie `/libs/cq/xssprotection/config.xml` en `/apps/cq/xssprotection/config.xml`.
 1. Abra `/apps/cq/xssprotection/config.xml`.
-1. En la `common-regexps` sección , modifique la `onsiteURL` entrada como se indica a continuación y guarde el archivo.
+1. En la sección `common-regexps`, modifique la entrada `onsiteURL` como se indica a continuación y guarde el archivo.
 
    `<regexp name="onsiteURL" value="([\p{L}\p{N}\\\.\#@\$\{\}%\+&;\-_~,\?=/!\*\(\)]*|\#(\w)+)"/>`
 
 >[!NOTE]
 >
->Las llaves (**{}**) se incluyen como caracteres aceptados en la dirección URL en el contenido HTML.
+>Las llaves (**{ }**) se incluyen como caracteres aceptados en la dirección URL en el contenido HTML.
 
-Después de configurar el servidor SMTP, intente rellenar un formulario con el personaje de Sarah Rose y guardarlo como borrador. Al guardar como borrador, se obtiene una opción para recibir el borrador por correo electrónico. Al tocar el botón **Enviar correo electrónico** , si recibe un correo electrónico con un vínculo al borrador de la aplicación, la configuración del correo electrónico se realizará correctamente. Asegúrese de iniciar sesión con las credenciales de Sarah para ver el borrador.
+Después de configurar el servidor SMTP, intente rellenar un formulario con el personaje de Sarah Rose y guardarlo como borrador. Al guardar como borrador, se obtiene una opción para recibir el borrador por correo electrónico. Al tocar el botón **Enviar correo electrónico**, si recibe un correo electrónico con un vínculo al borrador de la aplicación, la configuración del correo electrónico se realizará correctamente. Asegúrese de iniciar sesión con las credenciales de Sarah para ver el borrador.
 
-## Configuración de la configuración de AEM DS {#aemds}
+## Configuración de AEM DS {#aemds}
 
-AEM la configuración del servicio DS es obligatoria en la instancia de publicación para las comunicaciones por correo electrónico en los casos de uso del sitio de referencia. Para ver los pasos detallados para configurar AEM servicio DS en la instancia de Publish, consulte [Configurar AEM configuración](/help/forms/using/configuring-the-processing-server-url-.md)de DS.
+AEM la configuración del servicio DS es obligatoria en la instancia de publicación para las comunicaciones por correo electrónico en los casos de uso del sitio de referencia. Para ver los pasos detallados para configurar AEM servicio DS en la instancia de Publish, consulte [Configuración de AEM configuración de DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 Para los sitios de referencia de AEM Forms, en el servicio de configuración de AEM DS, especifique la URL del servidor de publicación en lugar de la URL del servidor de procesamiento.
 
 >[!CAUTION]
 >
->No inserte `/lc` la URL del servidor de procesamiento si está configurándola para OSGi de AEM Forms.
+>No coloque `/lc` en la dirección URL del servidor de procesamiento si está configurándola para OSGi de AEM Forms.
 
-## Implementación de paquetes de sitios de referencia {#refsite}
+## Implementar paquetes de sitios de referencia {#refsite}
 
 Instale los siguientes paquetes de sitios de referencia mediante Distribución de software.
 
 * [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
 * [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
-Para obtener más información sobre cómo utilizar los paquetes, consulte [Cómo trabajar con los paquetes](/help/sites-administering/package-manager.md).
+Para obtener más información sobre cómo utilizar los paquetes, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
 Después de instalar los paquetes e iniciar las instancias de creación y publicación, visite las siguientes URL en el explorador:
 
@@ -233,13 +234,13 @@ Después de instalar los paquetes e iniciar las instancias de creación y public
 
 Si la instalación se realiza correctamente, puede acceder a las páginas de aterrizaje de sitios de referencia de We.Gov y We.Finance.
 
-## (Opcional) Importación de datos de ejemplo en Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}
+## (Opcional) Importe datos de ejemplo en Microsoft Dynamics {#optional-import-sample-data-into-microsoft-dynamics}
 
 Los sitios de referencia de la aplicación de hipoteca principal y la aplicación de seguro automático están configurados para utilizar registros de Microsoft Dynamics. El paquete de sitio de referencia instala una entidad personalizada y registros de muestra que puede importar en Microsoft Dynamics para ejecutar el sitio de referencia. Realice los siguientes pasos para migrar y configurar los datos de ejemplo:
 
 Para importar la entidad personalizada para la aplicación de seguro automático:
 
-1. Descargue el paquete de la solución **WeFinanceAutoInsurance_1_0.zip** desde `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` la instancia de creación de AEM.
+1. Descargue el paquete de solución **WeFinanceAutoInsurance_1_0.zip** de `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` en su instancia de creación de AEM.
 1. En la instancia de Microsoft Dynamics, vaya a **[!UICONTROL Soluciones]** en el menú **[!UICONTROL Configuración]** y haga clic en **[!UICONTROL Importar]**. Seleccione e importe el paquete.
 
 Para importar la entidad personalizada para la aplicación de seguro automático:
@@ -250,7 +251,7 @@ Para importar la entidad personalizada para la aplicación de seguro automático
 
 Para importar los registros de pólizas de seguro y de cliente:
 
-1. Descargue los archivos de datos **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** y **hipoteca** desde las siguientes ubicaciones en la instancia de creación de AEM:
+1. Descargue los archivos de datos **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv** y **hipoteca doméstica** desde las siguientes ubicaciones de la instancia de creación de AEM:
 
    * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
    * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
@@ -258,20 +259,20 @@ Para importar los registros de pólizas de seguro y de cliente:
 
 1. En la instancia de Microsoft Dynamics, haga lo siguiente:
 
-   * Vaya a **[!UICONTROL Ventas > Clientes]** de We.Finance y haga clic en **[!UICONTROL Importar]**.
+   * Vaya a **[!UICONTROL Ventas > Clientes de We.Finance]** y haga clic en **[!UICONTROL Importar]**.
    * Vaya a **[!UICONTROL Ventas > We.Finance Auto Insurance]** y haga clic en **[!UICONTROL Importar]**.
-   * Vaya a **[!UICONTROL Ventas > Hipoteca]** doméstica We.Finance y haga clic en **[!UICONTROL Importar]**.
+   * Vaya a **[!UICONTROL Ventas > Hipoteca doméstica We.Finance]** y haga clic en **[!UICONTROL Importar]**.
 
 ## Configurar el servicio de nube OAuth para Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 Configure el servicio de nube OAuth en AEM Forms para habilitar la comunicación entre AEM Forms y Microsoft Dynamics. Realice los siguientes pasos para configurar el Cloud Service de OAuth en instancias de creación y publicación de AEM:
 
-1. En AEM instancia de autor, vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos > globales]**. Puntee en **[!UICONTROL el icono Refsite Dynamics Integration]** y toque **[!UICONTROL Properties (Propiedades)]**.
-1. Vaya a la cuenta de Microsoft Azure Active Directory. Añada la URL de configuración del servicio en la nube copiada en la configuración de URL **[!UICONTROL de]** respuesta para la aplicación registrada. Guarde la configuración.
-1. En la ficha Ajustes de autenticación, especifique la raíz **** del servicio, el ID **** del cliente, el secreto **** del cliente y la URL **** del recurso para la instancia de Microsoft Dynamics. Haga clic en **[!UICONTROL Conectar con OAuth]** que redirige a la página de inicio de sesión de Microsoft Dynamics.
+1. En AEM instancia de autor, vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos > global]**. Toque el icono **[!UICONTROL Refsite Dynamics Integration]** y toque **[!UICONTROL Properties]**.
+1. Vaya a la cuenta de Microsoft Azure Active Directory. Añada la URL de configuración del servicio en la nube copiada en la configuración **[!UICONTROL URL de respuesta]** para la aplicación registrada. Guarde la configuración.
+1. En la ficha Ajustes de autenticación, especifique **[!UICONTROL Raíz de servicio]**, **[!UICONTROL Id. de cliente]**, **[!UICONTROL Secreto de cliente]** y **[!UICONTROL URL de recursos]** para la instancia de Microsoft Dynamics. Haga clic en **[!UICONTROL Conectar con OAuth]** que redirige a la página de inicio de sesión de Microsoft Dynamics.
 1. Proporcione sus credenciales de inicio de sesión. Una vez que haya iniciado sesión, se le redirigirá a la página de configuración del servicio en la nube de AEM Forms. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se guardó la configuración del servicio de nube.
 1. Vaya a **[!UICONTROL Forms > Integraciones de datos > We.Finance]**. Seleccione Auto Insurance (Dynamics) y haga clic en Editar. Las entidades de Microsoft Dynamics se muestran en la ficha Fuentes de datos. Espere hasta que se recuperen todas las entidades de Microsoft Dynamics y se incluyan en la ficha de orígenes de datos.
-1. Seleccione la entidad **[!UICONTROL AutoInsuranceRenewal y haga clic en Objeto]** del modelo **** de prueba. En la sección de solicitud de entrada, especifique el valor del ID de cliente como &quot;900001&quot; y haga clic en **[!UICONTROL Prueba]**. La sección Salida muestra los registros recuperados de Microsoft Dynamics para el ID de cliente 900001.
+1. Seleccione la entidad **[!UICONTROL AutoInsuranceRenewal]** y haga clic en **[!UICONTROL Test Model Object]**. En la sección de solicitud de entrada, especifique el valor del ID de cliente como &quot;900001&quot; y haga clic en **[!UICONTROL Prueba]**. La sección Salida muestra los registros recuperados de Microsoft Dynamics para el ID de cliente 900001.
 1. En la sección de solicitud de entrada, especifique el valor del ID de cliente como &quot;900001&quot; y haga clic en **[!UICONTROL Prueba]**. La sección Salida muestra los registros recuperados de Microsoft Dynamics para el ID de cliente 900001.
 1. Repita los pasos del 1 al 6 en la instancia de publicación.
 
@@ -280,8 +281,8 @@ Configure el servicio de nube OAuth en AEM Forms para habilitar la comunicación
 Realice lo siguiente en las instancias de creación y publicación:
 
 1. Vaya a AEM consola de configuración web en `https://[server]:[host]/system/console/configMgr`.
-1. Toque y busque **[!UICONTROL Adobe Sign Configuration Service]** para abrirlo y configurarlo.
-1. Configurar la Expresión **[!UICONTROL del Planificador]** de actualización de estado como **0 0/2 &amp;ast; &amp;ast; &amp;ast; ?**.
+1. Busque y toque **[!UICONTROL Adobe Sign Configuration Service]** para abrirlo y configurarlo.
+1. Configurar la Expresión del Planificador de actualización de estado **** como **0 0/2 &amp;ast; &amp;ast; &amp;ast; ?**.
 
    >[!NOTE]
    >
@@ -300,7 +301,7 @@ Realice lo siguiente en las instancias de creación y publicación:
    >Asegúrese de que la https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html URL se agrega a la lista de redirección URL de la configuración OAuth de la aplicación API de Adobe Sign.
 
 1. Especifique el ID de cliente y el secreto de la configuración OAuth de la aplicación de Adobe Sign.
-1. (Opcional) Seleccione la opción **[!UICONTROL Activar Adobe Sign para archivos adjuntos también]** y toque **[!UICONTROL Conectar a Adobe Sign]**. Agrega los archivos adjuntos a un formulario adaptable al documento de Adobe Sign correspondiente enviado para firmar.
+1. (Opcional) Seleccione la opción **[!UICONTROL Habilitar Adobe Sign para archivos adjuntos también]** y toque **[!UICONTROL Conectar a Adobe Sign]**. Agrega los archivos adjuntos a un formulario adaptable al documento de Adobe Sign correspondiente enviado para firmar.
 1. Toque **[!UICONTROL Conectar a Adobe Sign]** e inicie sesión con sus credenciales de Adobe Sign.
 
 ## Configurar el servicio de configuración común de Forms {#anonymous}
@@ -308,11 +309,11 @@ Realice lo siguiente en las instancias de creación y publicación:
 Realice lo siguiente en la instancia de publicación para permitir el acceso a usuarios anónimos:
 
 1. Vaya a AEM consola de configuración web en `https://[server]:[port]/system/console/configMgr`.
-1. Toque y busque **[!UICONTROL Forms Common Configuration Service]** para abrirlo y configurarlo.
-1. Configure el campo **[!UICONTROL Permitir]** para **[!UICONTROL todos los usuarios]**.
+1. Busque y toque **[!UICONTROL Servicio de configuración común de Forms]** para abrirlo y configurarlo.
+1. Configure el campo **[!UICONTROL Permitir]** para **[!UICONTROL Todos los usuarios]**.
 1. Toque **[!UICONTROL Guardar]**.
 
-## Modificar el servicio de descanso para el modelo de datos de formulario {#fdm}
+## Modificar el servicio restante del modelo de datos de formulario {#fdm}
 
 Realice lo siguiente en las instancias de creación y publicación:
 
@@ -320,7 +321,7 @@ Realice lo siguiente en las instancias de creación y publicación:
 1. Vaya a **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** y abra el archivo swagger.
 1. Actualice la configuración de host y puerto según su entorno.
 1. Guarde la configuración.
-1. (**Solo** instancia de autor) Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > Fuentes **** de datos > **[!UICONTROL global]**. Seleccione **[!UICONTROL reposabrazos]** y toque **[!UICONTROL Propiedades]**. Toque Configuración **[!UICONTROL de autenticación]** y defina Tipo **[!UICONTROL de]** autenticación en Autenticación **** básica. Especifique `admin`/ `admin`como nombre de usuario/contraseña para acceder al servicio. Toque **[!UICONTROL Guardar y cerrar]**.
+1. (**Instancia de autor solamente**) Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fuentes de datos]** > **[!UICONTROL global]**. Seleccione **[!UICONTROL reposabrazos]** y toque **[!UICONTROL Propiedades]**. Toque **[!UICONTROL Configuración de autenticación]** y establezca **[!UICONTROL Tipo de autenticación]** en **[!UICONTROL Autenticación básica]**. Especifique `admin`/ `admin`como nombre de usuario/contraseña para acceder al servicio. Toque **[!UICONTROL Guardar y cerrar]**.
 
 ## Integración con Marketing Cloud {#integrate-with-marketing-cloud}
 
@@ -338,13 +339,13 @@ Para generar un informe, los datos de inicialización se incluyen en los sitios 
 
 1. Asegúrese de que las configuraciones de análisis de We.Finance y We.Gov están disponibles en los servicios de nube de AEM. Puede encontrar servicios en la nube de una de las siguientes maneras:
 
-   * Vaya a **[!UICONTROL Herramientas>Cloud Services>Cloud Services]** heredados o vaya a https://&lt;host>:&lt;puerto>/libs/cq/core/content/tools/cloudservices.html.
-   * En la página **[!UICONTROL Cloud Services]** , en la sección **[!UICONTROL Adobe Analytics]** , haga clic en `Show Configurations`. Puede ver las configuraciones de We.Finance y We.Gov disponibles. Haga clic para abrir la configuración. En la página de configuración, haga clic en **[!UICONTROL Editar]**. Proporcione una Compañía, un nombre de usuario, un secreto compartido (contraseña) y un centro de datos válidos y haga clic en **[!UICONTROL Conectar con Analytics]**. Una vez que la conexión se haya establecido correctamente, haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo de configuración. Configure el marco en la configuración de Analytics como se describe en [Configuración de análisis e informes](/help/forms/using/configure-analytics-forms-documents.md).
+   * Vaya a **[!UICONTROL Herramientas>Cloud Services>Cloud Services heredados]** o vaya a https://&lt;host>:&lt;puerto>/libs/cq/core/content/tools/cloudservices.html.
+   * En la página **[!UICONTROL Cloud Services]**, en la sección **[!UICONTROL Adobe Analytics]**, haga clic en `Show Configurations`. Puede ver las configuraciones de We.Finance y We.Gov disponibles. Haga clic para abrir la configuración. En la página de configuración, haga clic en **[!UICONTROL Editar]**. Proporcione una Compañía, un nombre de usuario, un secreto compartido (contraseña) y un centro de datos válidos y haga clic en **[!UICONTROL Conectar con Analytics]**. Una vez que la conexión se haya establecido correctamente, haga clic en **[!UICONTROL Aceptar]** en el cuadro de diálogo de configuración. Configure el marco en la configuración de Analytics como se describe en [Configuración de Analytics e Informes](/help/forms/using/configure-analytics-forms-documents.md).
 
 1. Vaya a https://&lt;*host*>:&lt;*puerto*>/system/console/configMgr y haga lo siguiente:
 
-   * En la página Configuración **[!UICONTROL de la consola]** web, busque y haga clic en Configuración **[!UICONTROL de]** AEM Forms Analytics.
-   * En el campo **[!UICONTROL SiteCatalyst Framework]** del cuadro de diálogo de configuración de AEM Forms Analytics, seleccione we-Finance(we-Finance) o we-gov(we-gov).
+   * En la página **[!UICONTROL Configuración de la consola web]**, busque y haga clic en **[!UICONTROL Configuración de AEM Forms Analytics]**.
+   * En el campo **[!UICONTROL SiteCatalyst Framework]** del cuadro de diálogo Configuración de AEM Forms Analytics, seleccione we-Finance(we-Finance) o we-gov(we-gov).
    * Haga clic en **[!UICONTROL Guardar]** y deje que la página se actualice.
 
 1. Vaya a Forms Manager en https://&lt;host>:&lt;puerto>/aem/forms y haga lo siguiente:
@@ -352,7 +353,7 @@ Para generar un informe, los datos de inicialización se incluyen en los sitios 
    * Abra la carpeta We.Finance o We.Gov y seleccione el formulario para el que desea ver el informe.
    * Haga clic en Habilitar análisis en la barra de herramientas Acciones. Después de habilitar los análisis para el formulario, haga clic en Informe de Analytics. Puede ver un informe en blanco generado. Después de generar un informe en blanco, debe proporcionar los datos de inicialización enviados con el paquete refsite para generar un informe de análisis con fines de demostración.
 
-   Los sitios de referencia proporcionan sistemas de informes de análisis con datos de semilla para casos de uso de tarjetas de crédito, hipotecas y alimentos. Para obtener información sobre la configuración de los datos de semilla, consulte [Tutorial](/help/forms/using/finance-reference-site-walkthrough.md) del sitio de referencia We.Finance y Recorrido del sitio de referencia [We.Gov](/help/forms/using/gov-reference-site-walkthrough.md).
+   Los sitios de referencia proporcionan sistemas de informes de análisis con datos de semilla para casos de uso de tarjetas de crédito, hipotecas y alimentos. Para obtener información sobre la configuración de los datos de inicialización, consulte [Tutorial del sitio de referencia de We.Finance](/help/forms/using/finance-reference-site-walkthrough.md) y [Tutorial del sitio de referencia de We.Gov](/help/forms/using/gov-reference-site-walkthrough.md).
 
 ### Configurar Destinatario {#configure-target}
 
@@ -362,28 +363,28 @@ Para disfrutar de la integración en el sitio de referencia, haga lo siguiente p
 
 1. Inicio el inicio rápido del autor con el argumento jvm `-Dabtesting.enabled=true` para habilitar la prueba A/B en el servidor.
 
-   **Nota**: Si la instancia de AEM se está ejecutando en JBoss, que se inicia como un servicio desde la instalación de Turnkey, agregue el `-Dabtesting.enabled=true` parámetro en la siguiente entrada del `jboss\bin\standalone.conf.bat` archivo:
+   **Nota**: Si la instancia de AEM se está ejecutando en JBoss, que se inicia como un servicio desde la instalación de Turnkey, agregue el  `-Dabtesting.enabled=true` parámetro en la siguiente entrada del  `jboss\bin\standalone.conf.bat` archivo:
 
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Acceda a https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 
-1. En la sección **[!UICONTROL Adobe Target]** , haga clic en **[!UICONTROL Mostrar configuraciones]**. Puede ver la Configuración de Destinatario de We.Finance disponible. Haga clic para abrir la configuración. En la página de configuración, haga clic en **[!UICONTROL Editar]**. Se abre el cuadro de diálogo **[!UICONTROL Editar componente]** para la configuración.
+1. En la sección **[!UICONTROL Adobe Target]**, haga clic en **[!UICONTROL Mostrar configuraciones]**. Puede ver la Configuración de Destinatario de We.Finance disponible. Haga clic para abrir la configuración. En la página de configuración, haga clic en **[!UICONTROL Editar]**. Se abre el cuadro de diálogo **[!UICONTROL Editar componente]** para la configuración.
 
 1. Especifique el código de cliente, el correo electrónico y la contraseña asociados a su cuenta de Destinatario. Seleccione el tipo de API como **[!UICONTROL REST]**.
-1. Click **[!UICONTROL Connect to Adobe target]**. Una vez configurada correctamente la cuenta de Destinatario, haga clic en **[!UICONTROL Aceptar]**. Puede ver que la configuración empaquetada tiene un Destinatario Framework.
+1. Haga clic en **[!UICONTROL Conectar al destinatario de Adobe]**. Una vez configurada correctamente la cuenta de Destinatario, haga clic en **[!UICONTROL Aceptar]**. Puede ver que la configuración empaquetada tiene un Destinatario Framework.
 
-1. Vaya a https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
+1. Vaya a https://&lt;*hostname*:&lt;*port*>/system/console/configMgr.
 
-1. Haga clic en Configuración **[!UICONTROL de Destinatario de]** AEM Forms.
+1. Haga clic en **[!UICONTROL Configuración de Destinatario de AEM Forms]**.
 1. Seleccione un marco de Destinatario.
-1. En el campo URL de **[!UICONTROL Destinatario]** , especifique la dirección URL de AEM Forms. Por ejemplo: https://&lt;*hostname*>:&lt;*port*>.
+1. En el campo **[!UICONTROL URL de Destinatario]**, especifique la dirección URL de AEM Forms. Por ejemplo: https://&lt;*hostname*>:&lt;*port*>.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-Los casos de uso de aplicaciones de aplicación de tarjeta de crédito y de aplicación hipotecaria doméstica muestran cómo realizar pruebas A/B y muestran un informe con fines de demostración. Para obtener tutoriales, consulte [Tutorial del sitio de referencia We.Finance](/help/forms/using/finance-reference-site-walkthrough.md).
+Los casos de uso de aplicaciones de aplicación de tarjeta de crédito y de aplicación hipotecaria doméstica muestran cómo realizar pruebas A/B y muestran un informe con fines de demostración. Para obtener tutoriales, consulte [Tutorial del sitio de referencia de We.Finance](/help/forms/using/finance-reference-site-walkthrough.md).
 
-## Next step {#next-step}
+## Paso siguiente {#next-step}
 
 Ahora todos están listos para explorar el sitio de referencia. Para obtener más información sobre los pasos y el flujo de trabajo del sitio de referencia, consulte:
 

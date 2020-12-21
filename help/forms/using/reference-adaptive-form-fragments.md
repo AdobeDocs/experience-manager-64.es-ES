@@ -16,9 +16,9 @@ ht-degree: 1%
 ---
 
 
-# Referencia a fragmentos de formularios adaptables {#reference-adaptive-form-fragments}
+# Referencia a fragmentos de formulario adaptables {#reference-adaptive-form-fragments}
 
-[El fragmento](/help/forms/using/adaptive-form-fragments.md) de formulario adaptable es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar al crear un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y soltar un fragmento de formulario adaptable en un formulario mediante el navegador de recursos de la barra lateral y puede editarlo en el editor de formularios.
+[Los ](/help/forms/using/adaptive-form-fragments.md) fragmentos de formulario adaptables son un grupo de campos o un panel que contiene un grupo de campos que se pueden utilizar al crear un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y soltar un fragmento de formulario adaptable en un formulario mediante el navegador de recursos de la barra lateral y puede editarlo en el editor de formularios.
 
 Para los autores de formularios adaptables, los fragmentos de referencia se proporcionan en el paquete de AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Incluye los siguientes fragmentos:
 
@@ -63,7 +63,7 @@ Incluye campos para capturar detalles actuales sobre el empleo, como el estado l
 
 [Haga clic para ampliar](assets/current-emp-1.png)
 
-## Información de los dependientes {#dependents-information}
+## Información de dependientes {#dependents-information}
 
 Incluye campos para especificar información sobre una o más personas dependientes, como su nombre, relación y edad en formato de tabla.
 ![Fragmento de información dependiente](assets/dependents-info.png)
@@ -98,7 +98,7 @@ Especifica los términos y condiciones que deben aceptar los usuarios antes de e
 
 [Haga clic para ampliar](assets/tnc-1.png)
 
-## Términos y condiciones con garabatos {#terms-conditions-with-scribble}
+## Términos y condiciones con Scribble {#terms-conditions-with-scribble}
 
 Especifica los términos y condiciones para que los usuarios acepten y firmen antes de enviar un formulario.
 ![Términos y condiciones con garabatos](assets/tnc-scribble.png)

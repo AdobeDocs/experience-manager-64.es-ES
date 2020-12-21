@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Adobe Experience Manager (AEM) incluye una serie de funciones que mejoran el uso de formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
 
-La generación de accesibilidad en formularios adaptables no sólo permite la mayor audiencia posible para el contenido, sino que también es un requisito para el suministro de documentos en áreas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. Los desarrolladores de formularios de ayuda de AEM Forms cumplen los estándares de accesibilidad.
+La generación de accesibilidad en formularios adaptables no sólo permite la mayor audiencia posible para el contenido, sino que también es un requisito para proporcionar documentos en áreas geográficas donde se exige el cumplimiento de los estándares de accesibilidad. Los desarrolladores de formularios de ayuda de AEM Forms cumplen los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -46,15 +46,15 @@ Para utilizar la opción Accesibilidad, siga estos pasos:
 
 ![Opciones de accesibilidad en componentes de formulario](assets/accessibility-options.png)
 
-**Los autores de formularios de texto** personalizados proporcionan el contenido en la opción de accesibilidad Campo de texto personalizado. La tecnología de asistencia, como los lectores de pantalla, utiliza este texto personalizado. El uso del ajuste Título es la mejor opción en la mayoría de los escenarios. Considere la posibilidad de crear Texto personalizado del Reader de pantalla solo cuando utilice el Título o no sea posible una descripción breve.
+**Los autores** de formularios de texto personalizados proporcionan el contenido en la opción de accesibilidad Campo de texto personalizado. La tecnología de asistencia, como los lectores de pantalla, utiliza este texto personalizado. El uso del ajuste Título es la mejor opción en la mayoría de los escenarios. Considere la posibilidad de crear Texto personalizado del Reader de pantalla solo cuando utilice el Título o no sea posible una descripción breve.
 
-**Breve descripción** Para la mayoría de los componentes, la breve descripción aparece en tiempo de ejecución cuando el usuario sitúa el puntero sobre el componente. Puede definir esta opción en el campo de descripción breve, en la opción de contenido de ayuda.
+**Breve** descripciónPara la mayoría de los componentes, la breve descripción aparece en tiempo de ejecución cuando el usuario sitúa el puntero sobre el componente. Puede definir esta opción en el campo de descripción breve, en la opción de contenido de ayuda.
 
-**Título** Utilice esta opción para permitir que AEM Forms utilice la etiqueta visual asociada al campo de formulario como texto del lector de pantalla.
+**** TítuloUtilice esta opción para permitir que AEM Forms utilice la etiqueta visual asociada al campo de formulario como texto del lector de pantalla.
 
-**Nombre** Puede especificar un valor en el campo Nombre de la ficha Enlace. El nombre no puede contener espacios.
+**** NombrePuede especificar un valor en el campo Nombre de la ficha Enlace. El nombre no puede contener espacios.
 
-**Ninguna** Al seleccionar Ninguno, el objeto de formulario no tiene un nombre en el formulario publicado. Ninguno no es una configuración recomendada para los controles de formulario.
+**** NingunoAl seleccionar Ninguno, el objeto de formulario no tiene un nombre en el formulario publicado. Ninguno no es una configuración recomendada para los controles de formulario.
 
 >[!NOTE]
 >
@@ -82,9 +82,9 @@ Los usuarios con deficiencias visuales se basan en un alto contraste entre el te
 
 Se recomienda utilizar los colores predeterminados de fuente y fondo (contenido en color negro sobre fondo blanco). Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
 
-Consulte [Creación de temáticas personalizadas para formularios](/help/forms/using/creating-custom-adaptive-form-themes.md)adaptables para obtener más información sobre cómo cambiar el color de contraste y el tema de los formularios adaptables.
+Consulte [Creación de temáticas personalizadas para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md) para obtener más información sobre cómo cambiar el color del contraste y el tema de los formularios adaptables.
 
-## Asegúrese de que los controles de formulario son accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
+## Asegúrese de que los controles de formulario sean accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulario accesible se puede rellenar completamente utilizando solo el teclado o un dispositivo de entrada equivalente. Los usuarios con movilidad reducida o con problemas de visión pueden no tener más opción que utilizar el teclado y muchos usuarios que pueden utilizar el ratón prefieren la entrada del teclado. Al permitir los distintos métodos de entrada, no solo se crean formularios accesibles, sino que también se crean formularios que se adaptan mejor a las preferencias de todos los usuarios.
 

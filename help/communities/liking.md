@@ -20,29 +20,29 @@ ht-degree: 5%
 
 # Uso de &quot;Me gusta&quot; {#using-liking}
 
-El `Liking`componente es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el `Liking`componente, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
+El componente `Liking`es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el componente `Liking`, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
 
 ## Añadir &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
 
-Para agregar un `Liking` componente a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Liking` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Liking`
 
 y arrástrelo a su lugar en una página, como una posición relativa a la función que los usuarios deseen.
 
-Para obtener la información necesaria, visite [Communities Components Basics](basics.md)(Conceptos básicos de componentes de comunidades).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
 
-Cuando se incluyen las bibliotecas [](essentials-liking.md#essentials-for-client-side) requeridas del lado del cliente, así es como aparecerá el `Liking` componente.
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](essentials-liking.md#essentials-for-client-side), así es como aparecerá el componente `Liking`.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 ## Configuración de &quot;Me gusta&quot; {#configuring-liking}
 
-Seleccione el componente colocado al que desea acceder y seleccione el `Liking` `Configure` icono que abre el cuadro de diálogo de edición.
+Seleccione el componente `Liking` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-En la ficha **[!UICONTROL Textos y etiquetas]** , especifique las propiedades utilizadas para registrar &quot;Me gusta&quot;.
+En la ficha **[!UICONTROL Textos y etiquetas]**, especifique las propiedades utilizadas para registrar &quot;Me gusta&quot;.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -70,4 +70,4 @@ No se admite el &quot;Me gusta&quot; anónimo. Los visitantes del sitio deben re
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [&quot;Me gusta&quot; de los desarrolladores](essentials-liking.md) .
+Puede encontrar más información en la página [&quot;Me gusta esencial](essentials-liking.md)&quot; para desarrolladores.

@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Esta función consta de dos componentes que funcionan juntos: revisa y revisa el resumen.
 
-Las revisiones son un componente compuesto basado en un sistema [de](essentials-comments.md) comentarios que contiene uno o más componentes de [clasificación](rating-basics.md) (tally).
+Las revisiones son un componente compuesto basado en un [sistema de comentarios](essentials-comments.md) que contiene uno o más componentes [rating](rating-basics.md) (tally).
 
 No se admite la publicación anónima de una revisión. Los visitantes del sitio deben registrarse e iniciar sesión para agregar una revisión. El visitante firmado (miembro) puede actualizar su revisión en cualquier momento.
 
@@ -38,7 +38,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td> 
-   <td>Sí: las propiedades se pueden editar en <i>el </i>modo de diseño</td> 
+   <td>Sí: las propiedades se pueden editar en el modo <i>de diseño </i></td> 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
@@ -54,7 +54,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
   </tr>
   <tr>
    <td><strong>propiedades</strong></td> 
-   <td>Consulte <a href="reviews.md">Uso de las revisiones</a></td> 
+   <td>Consulte <a href="reviews.md">Uso de revisiones</a></td> 
   </tr>
  </tbody>
 </table>
@@ -63,11 +63,11 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 
 | **resourceType** | social/revisiones/componentes/hbs/resumen |
 |---|---|
-| [**inclusible **](scf.md#add-or-include-a-communities-component) | Sí: las propiedades se pueden editar en *design *mode |
-| [**clientllibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| [**inclusible**](scf.md#add-or-include-a-communities-component) | Sí: las propiedades se pueden editar en *design *mode |
+| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| **plantillas** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **propiedades** | Consulte [Uso de las revisiones](reviews.md) |
+| **propiedades** | Consulte [Uso de revisiones](reviews.md) |
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
@@ -82,16 +82,16 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 ### Acceso a las revisiones publicadas (UGC) {#accessing-posted-reviews-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
-Consulte [Moderación del contenido](moderate-ugc.md)generado por el usuario.
+Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM 6.1 Comunidades, el uso de un almacén [](working-with-srp.md) común para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md) del proveedor de recursos de Almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md) de SRP y UGC: métodos y ejemplos de utilidad SRP
+* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio
+* [Elementos esenciales](srp-and-ugc.md)  de SRP y UGC: métodos y ejemplos de utilidad SRP
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md) de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
+* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
 

@@ -46,28 +46,28 @@ Esta consola muestra las insignias disponibles actualmente y desde las cuales se
 
 Para crear un distintivo, cargue una imagen pequeña adecuada (72 ppp con una altura de entre 26 y 32 píxeles) y proporcione un nombre. La imagen del distintivo se almacena en el repositorio en `/etc/community/badging/images` y se replica automáticamente en el entorno de publicación.
 
-Si el entorno de publicación es un conjunto de editores, es necesario configurar la sincronización [de](sync.md)usuarios.
+Si el entorno de publicación es un conjunto de editores, es necesario configurar [sincronización de usuario](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Cargar imagen]**
 
-   (*Requerido*) Imagen de un distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
+   (*Requerido*) Una imagen de insignia con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
 
 * **[!UICONTROL Nombre]**
 
-   (*Requerido*) El nombre del distintivo. Es el nombre predeterminado `Display Name` así como el nombre del nodo del repositorio. Si el nombre `Name` no es un nombre de nodo de repositorio válido, se modificará.
+   (*Requerido*) El nombre del distintivo. Es el `Display Name` predeterminado, así como el nombre del nodo del repositorio. Si `Name` no es un nombre de nodo de repositorio válido, se modificará.
 
 * **[!UICONTROL Nombre para mostrar]**
 
-   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para el `Name`.
+   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para `Name`.
 
 * **[!UICONTROL Descripción]**
 
-   (*Opcional*) Descripción del distintivo.
+   (*Opcional*) Una descripción para el distintivo.
 
 ## Información adicional {#additional-information}
 
-Para obtener más información sobre la configuración de las reglas de puntuación y marca, consulte [Puntuación y distintivos](implementing-scoring.md).
+Para obtener más información sobre la configuración de las reglas de puntuación y de distintivo, consulte [Puntuación y distintivos](implementing-scoring.md).
 
-Para administrar distintivos para miembros, consulte Consola [](members.md)de miembros.
+Para administrar las insignias de los miembros, consulte [Consola de miembros](members.md).

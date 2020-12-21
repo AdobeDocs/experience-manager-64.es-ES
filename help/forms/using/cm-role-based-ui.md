@@ -25,19 +25,19 @@ La interfaz de AEM muestra las opciones, como crear o editar un tipo de recurso,
 
 Aunque CRX le permite configurar los derechos de acceso tanto para las cuentas de usuario como de grupo, este artículo trata sobre los derechos de acceso basados en roles o grupos de usuarios.
 
-Para obtener más información sobre grupos, permisos, listas de control de acceso y administración de usuarios y grupos, consulte Administración [de usuarios y seguridad](/help/sites-administering/security.md).
+Para obtener más información sobre grupos, permisos, listas de control de acceso y administración de usuarios y grupos, consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 
 ## Administración de permisos {#managing-permissions}
 
 1. Asegúrese de que el usuario para el que desea administrar los permisos se agrega al grupo de usuarios correspondiente.
 
-   Por ejemplo, el usuario John Doe se agrega a los grupos `agents` y `cm-creditcard`. Para obtener más información, consulte Añadir usuarios o grupos en un grupo. Para obtener más información, consulte [Administración de usuarios y grupos](/help/communities/users.md)de usuarios.
+   Por ejemplo, el usuario John Doe se agrega a los grupos `agents` y `cm-creditcard`. Para obtener más información, consulte Añadir usuarios o grupos en un grupo. Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
    ![]()
 
 1. Cree las carpetas según convenga para permitir los permisos deseados.
 
-   Por ejemplo, si una empresa tiene divisiones de hipoteca, tarjeta de crédito y seguros, puede crear carpetas con nombres `HomeMortgage`y `CreditCard,``Insurance` mantener los activos relevantes y dar acceso selectivo a los agentes para los activos relevantes sólo para sus departamentos.
+   Por ejemplo: si una empresa tiene divisiones de hipoteca, tarjeta de crédito y seguros, puede crear carpetas con los nombres `HomeMortgage`, `CreditCard,`y `Insurance` para mantener los activos relevantes y dar acceso selectivo a los agentes para los activos relevantes sólo para sus departamentos.
 
 1. Para acceder a AEM seguridad de WCM, realice una de las siguientes acciones:
 
@@ -54,7 +54,7 @@ Para obtener más información sobre grupos, permisos, listas de control de acce
 
    Para localizar el nombre del grupo, puede escribir el nombre del grupo en el espacio proporcionado.
 
-1. En la ficha Permisos, desplácese a la ruta a la que desee agregar permisos. Las carpetas Administración de correspondencia se encuentran en la `content/apps/cm/` carpeta.
+1. En la ficha Permisos, desplácese a la ruta a la que desee agregar permisos. Las carpetas de Correspondence Management se encuentran en la carpeta `content/apps/cm/`.
 
    Seleccione la casilla de verificación en la columna Miembro para los miembros que desee que tengan permisos en esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
 

@@ -26,7 +26,7 @@ El avatar del usuario que ha iniciado sesión se muestra en la esquina superior 
 >
 >La proporción de aspecto admitida en las imágenes de usuario es 1:1.
 
-1. Cree una DSC con los detalles mencionados en el paso siguiente. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para formularios AEM&quot; en la guía [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Cree una DSC con los detalles mencionados en el paso siguiente. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para formularios AEM&quot; en la [Guía de programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. En DSC, defina un nuevo SPI que exponga los métodos getCurrentUserImageUrl y getUserImageUrl para obtener una URL de imagen para un usuario de AEM Forms. A continuación se muestra un fragmento de código Java™ de muestra:
 
    ```as3
@@ -84,5 +84,5 @@ El avatar del usuario que ha iniciado sesión se muestra en la esquina superior 
    </component>
    ```
 
-1. Implementar DSC a través de Workbench. Reinicie `ProcessManagementClientSessionService` el servicio.
+1. Implementar DSC a través de Workbench. Reinicie el servicio `ProcessManagementClientSessionService`.
 1. Es posible que tenga que actualizar el explorador o cerrar la sesión o volver a iniciarla con el usuario.

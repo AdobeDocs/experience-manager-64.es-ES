@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configuración de colas compartidas{#configuring-shared-queues}
 
-Las colas compartidas le permiten configurar y administrar las colas de usuarios de forma eficaz. Una cola de usuario es simplemente todas las tareas asignadas a un usuario; consulte [Listas](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) de tareas pendientes para obtener más información. Puede asignar, anular la asignación y reasignar colas de usuarios según sus necesidades organizativas. Puede administrar las colas compartidas de dos formas:
+Las colas compartidas le permiten configurar y administrar las colas de usuarios de forma eficaz. Una cola de usuario es simplemente todas las tareas asignadas a un usuario; consulte [Listas de tareas](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obtener más información. Puede asignar, anular la asignación y reasignar colas de usuarios según sus necesidades organizativas. Puede administrar las colas compartidas de dos formas:
 
 **Administrar El Acceso A Un Usuario**
 
@@ -43,20 +43,20 @@ Una vez compartidas, estas tareas pueden ser completadas por el usuario, con acc
 ### Configuración del acceso a una cola de usuarios seleccionada {#configuring-access-to-a-selected-user-queue}
 
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
-1. Seleccione **Servicios** > Flujo de **trabajo** de formularios > Cola **** compartida.
+1. Seleccione **Servicios** > **flujo de trabajo de formularios** > **Cola compartida**.
 
 1. En la ficha Administrar acceso a un usuario, busque y seleccione el usuario cuya cola desee compartir. En cualquier momento, el panel inferior derecho muestra la lista de usuarios con acceso a la cola de usuarios seleccionada.
 1. En el panel inferior izquierdo, busque y seleccione el usuario. Haga clic en Compartir.
-1. Haga clic en Guardar para finalizar.
+1. Haga clic en Guardar para completar.
 
-### Revocación del acceso a una cola de usuarios seleccionada {#revoking-access-to-a-selected-user-queue}
+### Revocando el acceso a una cola de usuarios seleccionada {#revoking-access-to-a-selected-user-queue}
 
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
-1. Seleccione **Servicios** > Flujo de **trabajo** de formularios > Cola **** compartida.
+1. Seleccione **Servicios** > **flujo de trabajo de formularios** > **Cola compartida**.
 
 1. En la ficha Administrar acceso a un usuario, busque y seleccione el usuario cuya cola desee administrar.
 1. El panel inferior derecho muestra la lista de usuarios con acceso a la cola de usuarios seleccionada. Seleccione el usuario y haga clic en Revocar.
-1. Haga clic en Guardar para finalizar.
+1. Haga clic en Guardar para completar.
 
 ## Administración de colas asignadas a un usuario {#managing-queues-assigned-to-a-user}
 
@@ -68,21 +68,21 @@ Una vez asignadas, el usuario puede completar estas tareas mediante Workspace.
 >
 >Flex Workspace está obsoleto para AEM versión de formularios.
 
-### Concesión de acceso a una cola de usuarios seleccionada {#granting-access-to-a-selected-user-queue}
+### Otorgar acceso a una cola de usuarios seleccionada {#granting-access-to-a-selected-user-queue}
 
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
-1. Seleccione **Servicios** > Flujo de **trabajo** de formularios > Cola **** compartida.
+1. Seleccione **Servicios** > **flujo de trabajo de formularios** > **Cola compartida**.
 
 1. En la ficha Administrar acceso a un usuario, busque y seleccione el usuario cuya cola desee compartir. En cualquier momento, el panel inferior derecho muestra la lista de usuarios con acceso a la cola de usuarios seleccionada.
 1. En el panel inferior izquierdo, busque y seleccione las colas de usuario que desee compartir con el usuario seleccionado. Haga clic en Compartir.
-1. Haga clic en Guardar para finalizar.
+1. Haga clic en Guardar para completar.
 
-### Revocación del acceso a una cola de usuarios seleccionada {#revoking_access_to_a_selected_user_queue-1}
+### Revocando el acceso a una cola de usuarios seleccionada {#revoking_access_to_a_selected_user_queue-1}
 
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
-1. Seleccione **Servicios** > Flujo de **trabajo** de formularios > Cola **** compartida.
+1. Seleccione **Servicios** > **flujo de trabajo de formularios** > **Cola compartida**.
 
 1. En la ficha Administrar acceso por un usuario, busque y seleccione el usuario cuya cola desee administrar.
 1. El panel inferior derecho muestra la lista de las colas de usuario asignadas al usuario seleccionado. Seleccione la cola de usuario y haga clic en Revocar.
-1. Haga clic en Guardar para finalizar.
+1. Haga clic en Guardar para completar.
 

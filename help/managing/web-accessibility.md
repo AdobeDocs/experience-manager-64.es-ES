@@ -53,11 +53,11 @@ Las siguientes páginas y secciones proporcionan información y directrices:
 
 ## World Wide Web Consortium y WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-El [World Wide Web Consortium (W3C)](https://www.w3.org/) es una comunidad internacional dedicada al desarrollo de estándares web. Para ayudar a los diseñadores y desarrolladores web a producir sitios web accesibles, la Iniciativa de Accesibilidad a la [Web (WAI)](https://www.w3.org/WAI/) publicó las Directrices de Accesibilidad al Contenido [Web (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) en diciembre de 2008 (actualizando la versión original publicada en 1999).
+El [World Wide Web Consortium (W3C)](https://www.w3.org/) es una comunidad internacional dedicada al desarrollo de estándares web. Para ayudar a los diseñadores y desarrolladores Web a producir sitios Web accesibles, la [Iniciativa de Accesibilidad Web (WAI)](https://www.w3.org/WAI/) publicó las [Pautas de Accesibilidad al Contenido Web (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) en diciembre de 2008 (actualizando la versión original publicada en 1999).
 
 >[!NOTE]
 >
->An [updated version of the guidelines](https://www.w3.org/TR/WCAG21/) is currently in development, but will not be considered for this version of AEM.
+>Actualmente se está elaborando una [versión actualizada de las directrices](https://www.w3.org/TR/WCAG21/), pero no se tendrá en cuenta para esta versión de AEM.
 
 Con Adobe Experience Manager, los autores de contenido y/o los propietarios de sitios web pueden crear contenido web que cumpla los criterios de éxito de WCAG 2.0 de nivel A y de nivel AA.
 
@@ -65,9 +65,9 @@ En nuestra [guía rápida de WCAG 2.0](/help/managing/qg-wcag.md)se destacan asp
 
 ### Niveles de conformidad de accesibilidad de WCAG 2.0 {#wcag-accessibility-conformance-levels}
 
-WCAG 2.0 proporciona [directrices (con criterios de éxito relacionados) que cubren los niveles](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)de accesibilidad.
+WCAG 2.0 proporciona [pautas (con criterios de éxito relacionados) que cubren los niveles de accesibilidad](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
-Estos, en lo que se refiere a AEM, están cubiertos por los [niveles A y AA](/help/sites-authoring/creating-accessible-content.md). Al crear su sitio, debe determinar el nivel general en el que desea que se ajuste.
+Estos, en lo que se refiere a AEM, se tratan en [Nivel A y conformidad AA](/help/sites-authoring/creating-accessible-content.md). Al crear su sitio, debe determinar el nivel general en el que desea que se ajuste.
 
 >[!NOTE]
 >

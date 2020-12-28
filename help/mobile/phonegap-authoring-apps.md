@@ -26,13 +26,13 @@ ht-degree: 0%
 
 El Panel de AEM Mobile le permite crear, crear e implementar su aplicación móvil, crear, eliminar y editar los metadatos de la aplicación. Una vez que la aplicación esté activa, puede analizar el análisis de la aplicación, incluidas las métricas de uso y ciclo de vida, para mejorar la conversión del cliente y la lealtad de la marca.
 
-Para crear la aplicación AEM Mobile, consulte la página [Creación de aplicaciones](/help/mobile/building-app-mobile-phonegap.md) móviles.
+Para crear la aplicación de AEM Mobile, consulte la página [Creación de aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md).
 
 Para configurar el entorno y comenzar, consulte [Administración de AEM para usar AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## El catálogo de aplicaciones de AEM Mobile {#the-aem-mobile-apps-catalog}
 
-El catálogo [de aplicaciones de](http://localhost:4502/aem/apps.html/content/phonegap) AEM Mobile muestra toda la aplicación móvil administrada en AEM.
+El [Catálogo de aplicaciones de AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) muestra toda la aplicación móvil administrada en AEM.
 
 Considere este catálogo como la &quot;página de aterrizaje&quot; para AEM Mobile, en la que los administradores pueden crear una nueva aplicación de AEM Mobile a partir de una plantilla o cargando una aplicación existente ya iniciada por un desarrollador móvil.
 
@@ -60,13 +60,13 @@ Haga clic [aquí](/help/mobile/phonegap-app-details-tile.md) para obtener más d
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-### Mosaico Administrar contenido de página {#the-manage-page-content-tile}
+### El icono Administrar contenido de página {#the-manage-page-content-tile}
 
-El contenido puede crearse, actualizarse y eliminarse en AEM Mobile de la misma manera que lo hace en AEM Sites. El icono **Administrar contenido de página** muestra el número de páginas de contenido administrado y modificadas por última vez. Puede profundizar en el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico. Una vez que el contenido se haya actualizado, puede insertar una actualización de contenido para sus clientes a través del icono **Administrar paquetes de contenido.**
+El contenido puede crearse, actualizarse y eliminarse en AEM Mobile de la misma manera que lo hace en AEM Sites. El **icono Administrar contenido de página** muestra el número de páginas de contenido administrado y modificadas por última vez. Puede profundizar en el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico. Una vez actualizado el contenido, puede insertar una actualización de contenido para sus clientes a través del **mosaico Administrar paquetes de contenido.**
 
 ![Mosaico de contenido](assets/chlimage_1-138.png)
 
-### Mosaico Administrar paquetes de contenido {#the-manage-content-packages-tile}
+### El icono Administrar paquetes de contenido {#the-manage-content-packages-tile}
 
 Una vez que haya agregado o modificado el contenido a través del icono Administrar contenido de página, podrá insertar estos cambios en los clientes con una actualización de la versión de contenido.
 
@@ -74,17 +74,17 @@ Content Package permite al autor de la aplicación AEM administrar el contenido 
 
 Content Package crea un archivo ZIP, considerado un paquete de revisión de contenido, para cada actualización. Estos paquetes contienen recursos HTML y páginas HTML que se generan al procesar la aplicación y son lo suficientemente inteligentes como para empaquetar solo los archivos que se han modificado desde la última actualización.
 
-La columna Administrar el **tipo** del mosaico del paquete de contenido mostrará &quot;Aplicación&quot; para indicar el contenido del shell de la aplicación, por ejemplo, el marco o la infraestructura de la aplicación administrada por un desarrollador o, &quot;Contenido&quot;, que representa el contenido de la página administrado por el autor del contenido.
+La columna Administrar el icono de contenido del icono **Tipo** mostrará &quot;Aplicación&quot; para indicar el contenido del shell de la aplicación, por ejemplo, el marco o la infraestructura de la aplicación administrada por un desarrollador o, &quot;Contenido&quot;, que representa el contenido de la página administrado por el autor del contenido.
 
 El contenido se puede representar como un idioma o como una parte concreta de la aplicación en la que la aplicación consume varios paquetes de la versión de contenido. La elección de cómo empaqueta el contenido está diseñada para ser flexible y para adaptarse a la forma en que desee administrar el contenido de su aplicación.
 
-La columna **Modificado** indica cuándo se modificaron las páginas más recientemente.
+La columna **Modificada** indica cuándo se modificaron las páginas más recientemente.
 
 La columna **Ensayo** muestra cuándo se creó la última actualización de contenido. Para crear una nueva actualización de contenido y realizar los cambios, abra cualquier registro del mosaico y cree una nueva actualización.
 
-La columna **Publicado** muestra cuándo se publicó la última actualización de contenido y cuándo los clientes la pusieron a disposición para su consumo. Para publicar contenido, primero debe realizar la fase de ese contenido y, a continuación, publicar la actualización mediante la exploración en profundidad en este mosaico y la publicación desde la consola de detalles de la publicación de contenido.
+La columna **Publicada** muestra cuándo se publicó la última actualización de contenido y cuándo los clientes pueden utilizarla. Para publicar contenido, primero debe realizar la fase de ese contenido y, a continuación, publicar la actualización mediante la exploración en profundidad en este mosaico y la publicación desde la consola de detalles de la publicación de contenido.
 
-![Paquete Content Release Tile](assets/chlimage_1-139.png) ![ContentSync para el shell de la aplicación](do-not-localize/chlimage_1-5.png)
+![Paquete Content Release ](assets/chlimage_1-139.png) ![TileContentSync para el shell de la aplicación](do-not-localize/chlimage_1-5.png)
 
 Este icono representa un paquete de la versión de contenido para el shell de la aplicación
 
@@ -94,27 +94,27 @@ Estos iconos representan un paquete de la versión de contenido para el contenid
 
 ### El mosaico del PhoneGap Build {#the-phonegap-build-tile}
 
-El icono **PhoneGap Build** se conecta con [https://build.phonegap.com](https://build.phonegap.com) para crear y alojar buids remotos. Una vez compilada, la compilación está disponible como descarga o directamente en el dispositivo a través de un código QR.
+El **icono de PhoneGap Build** se conecta con [https://build.phonegap.com](https://build.phonegap.com) para crear y alojar buids remotos. Una vez compilada, la compilación está disponible como descarga o directamente en el dispositivo a través de un código QR.
 
-También puede descargar la fuente del dispositivo para compilar localmente a través de la CLI [de](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html)PhoneGap.
+Como alternativa, puede descargar el origen del dispositivo para compilar localmente a través de la [CLI de PhoneGap](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
 
 ![Mosaico de PhoneGap Build](assets/chlimage_1-140.png)
 
-### Mosaico de métricas {#the-metrics-tile}
+### El mosaico de métricas {#the-metrics-tile}
 
 >[!CAUTION]
 >
 >El mosaico Métricas se muestra únicamente después de configurar el servicio en la nube.
 >
->Consulte [Configuración del Cloud Service](/help/mobile/configure-adobe-mobile-cloud-service.md) de Adobe Mobile Services para obtener más información.
+>Consulte [Configuración del Cloud Service de Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obtener más información.
 
-AEM Mobile se integra con Adobe Analytics mediante el SDK [de](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) Adobe Mobile Services (AMS).
+AEM Mobile se integra con Adobe Analytics mediante [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS).
 
-El mosaico **de** métricas del centro de control muestra un resumen de los análisis extraídos de AMS para la aplicación. Puede explorar el panel de análisis haciendo clic en el botón &#39;...&#39; en la parte inferior derecha.
+El icono **Mosaico de métricas** del Centro de control muestra un resumen de los análisis extraídos de AMS para la aplicación. Puede explorar el panel de análisis haciendo clic en el botón &#39;...&#39; en la parte inferior derecha.
 
 ![Mosaico de métricas](assets/chlimage_1-141.png)
 
-### Mosaico de contenido de la entidad de gestión {#the-manage-entity-content-tile}
+### El icono Administrar contenido de entidad {#the-manage-entity-content-tile}
 
 El icono Administrar contenido de entidad le permite agregar y administrar definiciones de aplicación. Las definiciones de aplicación permiten identificar qué espacios (y otras configuraciones) son adecuados para la aplicación. De este modo, se puede añadir un nuevo espacio, sin tener que volver a compilar la aplicación. La definición de la aplicación se actualiza y eso incluirá la información de los nuevos espacios.
 

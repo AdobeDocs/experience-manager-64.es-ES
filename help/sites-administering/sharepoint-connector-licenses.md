@@ -22,7 +22,7 @@ ht-degree: 10%
 
 Esta sección lista todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
 
-## Descripción general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
+## Visión general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
 
 La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de exención de responsabilidades que cubren:
 
@@ -41,7 +41,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotec
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concurrente | [Simultáneo](#concurrent) (dominio público) |
+| concurrente | [Simultáneo](#concurrent)  (dominio público) |
 | geronimo-activación_1.1_especificación | [Apache](#apache) |
 | geronimo-stax-api_1.0_Spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -97,7 +97,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>simultáneo-1.3.4.jar</td> 
+   <td>Simultáneamente-1.3.4.jar</td> 
    <td><a href="#concurrent">Simultáneo</a></td> 
   </tr> 
   <tr> 
@@ -155,7 +155,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
  </tbody> 
 </table>
 
-## Visión General de las Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
+## Visión General de Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
 
 La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que se cubren:
 
@@ -426,7 +426,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
      limitations under the License.
 ```
 
-## Simultáneo {#concurrent}
+## Concurrente {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any

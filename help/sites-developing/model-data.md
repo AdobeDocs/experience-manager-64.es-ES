@@ -26,7 +26,7 @@ Los siguientes detalles son ideas y comentarios expresados por David Nuescheler.
 
 David fue cofundador y CTO of Day Software AG, un proveedor líder de software de gestor de contenido global e infraestructura de contenido, que fue adquirido por Adobe en 2010. Ahora es socio y vicepresidente de Tecnología empresarial en Adobe y también lidera el desarrollo de JSR-170, la interfaz de programación de aplicaciones (API) de Java Content Repository (JCR), el estándar tecnológico para gestor de contenido.
 
-También puede consultar más actualizaciones en [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+También se pueden ver más actualizaciones en [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Introducción de David {#introduction-from-david}
 
@@ -60,7 +60,7 @@ Las restricciones de datos adicionales, como las obligatorias o las restriccione
 
 #### Ejemplo {#example-1}
 
-El ejemplo anterior de uso de una propiedad `lastModified` Date en, por ejemplo, un nodo &quot;blog post&quot;, no significa que sea necesario un tipo de nodo especial. Definitivamente usaría `nt:unstructured` para los nodos de posts de mi blog al menos inicialmente. Ya que en mi aplicación de blogueo todo lo que voy a hacer es mostrar la fecha de la última modificación de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha. Dado que implícitamente confío en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; ahí de todos modos, realmente no hay necesidad de declarar la presencia de una `lastModified` fecha en la forma de un de nodetype.
+El ejemplo anterior de uso de una propiedad `lastModified` Date en, por ejemplo, un nodo &quot;post blog&quot;, no significa que sea necesario un tipo de nodo especial. Definitivamente usaría `nt:unstructured` para mis nodos de anuncios de blog al menos al principio. Ya que en mi aplicación de blogueo todo lo que voy a hacer es mostrar la fecha de la última modificación de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha. Dado que confío implícitamente en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; allí de todos modos, realmente no hay necesidad de declarar la presencia de una `lastModified` fecha en la forma de una de nodetype.
 
 ### Regla #2: Impulse la jerarquía de contenido, no permita que suceda. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -78,7 +78,7 @@ Personalmente prefiero las convenciones de jerarquía antes que el sistema de no
 >
 >La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios conectados a nodos individuales en un repositorio de contenido generalmente no debe superar los 1.000.
 >
->Consulte [¿Cuántos datos puede manejar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) para obtener más información.
+>Consulte [ ¿Cuántos datos puede manejar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) para obtener más información.
 
 #### Ejemplo {#example-2}
 
@@ -104,7 +104,7 @@ Con el modelo de contenido anterior, puedo permitir fácilmente que el usuario &
 
 #### Explicación {#explanation-3}
 
-Si no utiliza `clone()`, `merge()` o `update()` métodos en la aplicación, es probable que un solo espacio de trabajo sea el camino a seguir.
+Si no utiliza los métodos `clone()`, `merge()` o `update()` en la aplicación, es probable que un solo espacio de trabajo sea el camino a seguir.
 
 &quot;Nodos correspondientes&quot; es un concepto definido en la especificación JCR. Básicamente, se reduce a nodos que representan el mismo contenido, en diferentes llamados espacios de trabajo.
 
@@ -177,13 +177,13 @@ Creo que hay casos de uso en los que un sistema realmente no puede funcionar si 
 
 #### Explicación {#explanation-6}
 
-Si un modelo de contenido expone algo que incluso *huele* de forma remota como un archivo o una carpeta que intento utilizar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
+Si un modelo de contenido expone algo que huele *de forma remota, incluso* como un archivo o una carpeta que intento utilizar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
 
 En mi experiencia, muchas aplicaciones genéricas permiten interactuar implícitamente con nt:folder y nt:files, y saben cómo manejar y mostrar ese evento si se enriquecen con información meta adicional. Por ejemplo, una interacción directa con implementaciones de servidores de archivos como CIFS o WebDAV que se encuentran sobre JCR se convierte en implícita.
 
 Creo que como buena regla general uno podría usar lo siguiente: Si necesita almacenar el nombre de archivo y el tipo mime, entonces `nt:file`/ `nt:resource` es una muy buena coincidencia. Si puede tener varios &quot;archivos&quot;, una carpeta nt:es un buen lugar para almacenarlos.
 
-Si necesita agregar metainformación para el recurso, digamos una propiedad &quot;author&quot; o &quot;description&quot;, extienda `nt:resource` no la `nt:file`. Rara vez extiendo nt:file y extendo con frecuencia `nt:resource`.
+Si necesita agregar metainformación para su recurso, digamos una propiedad &quot;author&quot; o &quot;description&quot;, extienda `nt:resource` no la `nt:file`. Rara vez extiendo nt:file y extendo frecuentemente `nt:resource`.
 
 #### Ejemplo {#example-6}
 
@@ -215,7 +215,7 @@ Es cierto que algunos nodos necesitan una identificación estable durante todo s
 
 También tenga en cuenta que los elementos se pueden identificar por ruta, y por mucho que los &quot;enlaces simbólicos&quot; tengan más sentido para la mayoría de los usuarios que los enlaces duros en un sistema de archivos unix, una ruta tiene sentido para que la mayoría de las aplicaciones hagan referencia a un nodo destinatario.
 
-Lo que es más importante, es **mix**:referenciable, lo que significa que se puede aplicar a un nodo en el momento en que se necesita hacer referencia a él.
+Lo que es más importante, es **mix**:referceable, lo que significa que se puede aplicar a un nodo en el momento en que realmente necesite hacer referencia a él.
 
 Digamos que sólo porque le gustaría poder hacer referencia a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde mix:referenciable de manera estática, ya que se puede agregar a cualquier instancia del &quot;Documento&quot; dinámicamente.
 

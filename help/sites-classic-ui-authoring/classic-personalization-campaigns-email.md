@@ -23,7 +23,7 @@ ht-degree: 94%
 >[!NOTE]
 >
 >Adobe no planea mejorar aún más los correos electrónicos abiertos o devueltos por el servicio SMTP AEM.\
->Se recomienda [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)AEM.
+>La recomendación es [aprovechar Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
 
 El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
 
@@ -98,7 +98,7 @@ En este documento se describen los conceptos básicos para crear boletines en AE
 
    * **Lista de destinatarios predeterminada**
 
-      lista predeterminada que debe recibir la newsletter.
+      Lista predeterminada que debe recibir la newsletter.
    Pueden actualizarse posteriormente desde el cuadro de diálogo **Propiedades...**.
 
 1. Haga clic en **Aceptar** para guardar.
@@ -146,7 +146,7 @@ Para personalizar una newsletter y simular su aspecto:
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `http://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -229,7 +229,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `http://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -237,7 +237,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 >
 >Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
 
-### Enviar boletines desde una campaña {#sending-newsletters-from-a-campaign}
+### Enviar boletines desde una campaña  {#sending-newsletters-from-a-campaign}
 
 Para enviar un boletín desde la campaña:
 
@@ -263,7 +263,7 @@ Para enviar un boletín desde la campaña:
    >
    >Asegúrese de ser uno de los destinatarios para que pueda comprobar la recepción de la newsletter.
 
-### Envío de newsletters desde una lista {#sending-newsletters-from-a-list}
+### Envío de newsletters desde una lista  {#sending-newsletters-from-a-list}
 
 Para enviar un boletín desde una lista:
 
@@ -293,7 +293,7 @@ Para enviar un boletín desde una lista:
 
 En esta sección se describe cómo suscribirse a un boletín.
 
-### Suscripción al boletín {#subscribing-to-a-newsletter-1}
+### Suscripción al boletín  {#subscribing-to-a-newsletter-1}
 
 Para suscribirse a una newsletter (usando el sitio web de Geometrixx como ejemplo):
 

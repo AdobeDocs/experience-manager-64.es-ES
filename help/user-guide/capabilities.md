@@ -1,38 +1,38 @@
 ---
-title: Guía del usuario de funciones de AEM 6.4
-seo-title: Guía del usuario de funciones de AEM 6.4
-description: Información general sobre las funciones esenciales de AEM 6.4
-seo-description: Información general sobre las funciones esenciales de AEM 6.4
+title: Guía del usuario de capacidades de AEM 6.4
+seo-title: Guía del usuario de capacidades de AEM 6.4
+description: Una visión general de las capacidades esenciales de la AEM 6.4
+seo-description: Una visión general de las capacidades esenciales de la AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 45%
 
 ---
 
 
-# Guías del usuario de funciones de AEM 6.4 {#aem-64-capabilities-user-guides}
+# AEM 6.4 Capacidades Guías del usuario {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobes Managed Services.
+[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.4](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobe Managed Services.
 
-[Obtenga información sobre cómo administrar un proyecto](/help/managing/home.md)de AEM.
+[Obtenga información sobre cómo administrar un proyecto de AEM](/help/managing/home.md).
 
 ## AEM Sites {#aem-sites}
 
-[Aprenda conceptos clave para crear contenido y crear contenido en AEM](/help/sites-authoring/home.md).
+[Aprenda conceptos clave para crear contenido en AEM](/help/sites-authoring/home.md).
 
-[Obtenga información sobre la administración de AEM](/help/sites-administering/home.md).
+[Obtenga más información sobre la administración de AEM](/help/sites-administering/home.md).
 
 ## AEM Assets {#aem-assets}
 
 [Cree, administre, distribuya y optimice recursos digitales.](/help/assets/home.md)
 
-## Formularios AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 [Cree, gestione, publique y actualice formularios digitales.](/help/forms/home.md)
 

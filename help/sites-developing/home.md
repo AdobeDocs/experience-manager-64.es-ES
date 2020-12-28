@@ -1,20 +1,20 @@
 ---
-title: AEM 6.4 Guía del usuario en desarrollo
-seo-title: AEM 6.4 Guía del usuario en desarrollo
-description: Esta guía explica cómo crear la instancia de AEM.
+title: Guía del usuario sobre desarrollo en AEM 6.4
+seo-title: Guía del usuario sobre desarrollo en AEM 6.4
+description: Esta guía explica cómo crear una instancia de AEM.
 seo-description: Explica cómo crear la instancia de AEM.
 translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 24%
+ht-degree: 38%
 
 ---
 
 
-# AEM 6.4 Guía del usuario en desarrollo
+# Guía del usuario sobre desarrollo en AEM 6.4
 
-Esta guía explica cómo crear la instancia de AEM.
+Esta guía explica cómo crear una instancia de AEM.
 
 ## Artículos de AEM clave
 

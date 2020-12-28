@@ -22,21 +22,21 @@ ht-degree: 2%
 
 Para desarrollar sus aplicaciones JCR, Apache Sling o AEM, están disponibles los siguientes conjuntos de herramientas:
 
-* un conjunto formado por [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) y WebDAV. CRXDE Lite está integrado en CRX/AEM y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes al iniciar sesión e integrarlos con SVN.
+* un conjunto compuesto por [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) y WebDAV. CRXDE Lite está integrado en CRX/AEM y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes al iniciar sesión e integrarlos con SVN.
 
    Se recomienda CRXDE Lite cuando no tenga acceso directo al servidor CRX/AEM, cuando desarrolle una aplicación ampliando o modificando los componentes integrados y los paquetes de Java o cuando no necesite un depurador dedicado, la finalización del código y el resaltado de sintaxis.
 
-* un conjunto formado por un Entorno de desarrollo integrado (por ejemplo: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), una herramienta de generación (por ejemplo: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault que ha sido desarrollado por Adobe para asignar un repositorio a un sistema de archivos, un sistema de control de versiones (por ejemplo: Subversion), un sistema de seguimiento de errores (por ejemplo: Jira), un sistema central de gestión de dependencias (por ejemplo: Apache Archiva) y un sistema de automatización de la compilación (por ejemplo: Apache Continuum).
+* un conjunto formado por un Entorno de desarrollo integrado (por ejemplo: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md)), una herramienta de compilación (por ejemplo: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault que ha sido desarrollado por Adobe para asignar un repositorio a un sistema de archivos, un sistema de control de versiones (por ejemplo: Subversion), un sistema de seguimiento de errores (por ejemplo: Jira), un sistema central de gestión de dependencias (por ejemplo: Apache Archiva) y un sistema de automatización de la compilación (por ejemplo: Apache Continuum).
 
    Esta configuración le permite integrar completamente su aplicación (contenido, código, configuración) en cualquier entorno y proceso de desarrollo.El vínculo entre los diferentes elementos es la representación del sistema de archivos del repositorio a través de FileVault, ya que todas las herramientas de desarrollo mencionadas anteriormente pueden trabajar con archivos.
 
-## Extensiones de los Entornos Integrados de Desarrollo {#extensions-for-integrated-development-environments}
+## Extensiones para Entornos de desarrollo integrados {#extensions-for-integrated-development-environments}
 
 Adobe ha lanzado las siguientes extensiones:
 
 * [Extensión de Eclipse de AEM](/help/sites-developing/aem-eclipse.md)
 * [Extensión de AEM corchetes](/help/sites-developing/aem-brackets.md)
-* [Extensión](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) de AEM IntelliJ (desde el cable de la culata)
+* [Extensión](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  de AEM IntelliJ(desde el cable de la culata)
 
 ### Otras herramientas {#other-tools}
 

@@ -24,11 +24,11 @@ ht-degree: 1%
 >
 >En este documento se describe cómo personalizar consolas en la IU táctil moderna y no se aplica a la IU clásica.
 
-AEM proporciona varios mecanismos que le permiten personalizar las consolas (y la funcionalidad [de creación de](/help/sites-developing/customizing-page-authoring-touch.md)páginas) de la instancia de creación.
+AEM proporciona varios mecanismos para permitirle personalizar las consolas (y la [funcionalidad de creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)) de la instancia de creación.
 
 * Clientlibs
 
-   Las bibliotecas de clientes permiten ampliar la implementación predeterminada para obtener una nueva funcionalidad, al mismo tiempo que se reutilizan las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` Por ejemplo, puede contener el código necesario para el componente personalizado.
+   Las bibliotecas de clientes permiten ampliar la implementación predeterminada para obtener una nueva funcionalidad, al mismo tiempo que se reutilizan las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.`. Por ejemplo, puede contener el código necesario para el componente personalizado.
 
 * Superposiciones
 
@@ -46,26 +46,26 @@ Estos pueden utilizarse de muchas maneras para ampliar las consolas de AEM. A co
 
 >
 >
-Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - Personalización de la interfaz [de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html): [Personalización de la interfaz de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->No ***debe*** cambiar nada en la `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta `/libs`.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y bien puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
 >1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
    >
    >
-1. Realice los cambios en `/apps`
+1. Realice cualquier cambio dentro de `/apps`
 
 >
 
 
 
-Por ejemplo, se pueden superponer las siguientes ubicaciones dentro de la `/libs` estructura:
+Por ejemplo, se pueden superponer las siguientes ubicaciones dentro de la estructura `/libs`:
 
 * consolas (cualquier consola basada en páginas de la interfaz de usuario de Granite); por ejemplo:
 
@@ -98,7 +98,7 @@ Por ejemplo, se pueden superponer las siguientes ubicaciones dentro de la `/libs
 -->
 >[!NOTE]
 >
->Consulte el artículo de la Base de conocimiento, [Resolución de problemas AEM problemas](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)de la IU táctil, para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento, [Solución de problemas de AEM TouchUI](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -211,7 +211,7 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
 
    * **Nombre**: `sling:orderBefore`
    * **Tipo**: `String`
-   * **Valor**: `column`
+   * **Valor**:  `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -275,7 +275,7 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Restringir una acción de la barra de herramientas a un grupo específico {#restrict-a-toolbar-action-to-a-specific-group}
+## Restringir una acción de barra de herramientas a un grupo específico {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. Puede utilizar una condición de procesamiento personalizada para superponer la acción estándar e imponer condiciones específicas que deben cumplirse antes de procesarse.
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mediante las propiedades de este nodo puede definir el `groups` permiso para realizar la acción específica; por ejemplo, `administrators`
+   Mediante las propiedades de este nodo puede definir el `groups` permitido para realizar la acción específica; por ejemplo, `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -364,11 +364,11 @@ You can restrict access to a navigation option using ACLs:
     * `communities`
 -->
 
-## Personalización de columnas en la Vista Lista {#customizing-columns-in-the-list-view}
+## Personalización de columnas en la Vista de Lista {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Esta función está optimizada para columnas de campos de texto; para otros tipos de datos es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` en `/apps`.
+>Esta función está optimizada para columnas de campos de texto; para otros tipos de datos, es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` en `/apps`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -389,7 +389,7 @@ Para personalizar las columnas de la vista de lista:
       `/apps/wcm/core/content/common/availablecolumns`
 
    * Añada las nuevas columnas o elimine las existentes.
-   Consulte [Uso de superposiciones (y fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
+   Consulte [Uso de Overlays (y la fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
 
 1. De forma opcional:
 

@@ -26,15 +26,15 @@ ht-degree: 1%
 
 AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido. La sincronización de contenido le permite crear archivos con versiones de páginas para compilar con aplicaciones.
 
-Normalmente, un administrador ***de*** AEM es responsable de agregar una nueva aplicación al catálogo de AEM Mobile, ya sea creando una nueva aplicación con el asistente para la creación o importando una aplicación existente.
+Normalmente, un ***administrador de AEM*** es responsable de agregar una nueva aplicación al catálogo de AEM Mobile, ya sea creando una aplicación nueva mediante el asistente para la creación o importando una aplicación existente.
 
-Desde aquí, un ***AEM Author*** (o *Marketer*) ahora puede utilizar las plantillas integradas y los componentes para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
+Desde aquí, un ***AEM Author*** (o *Marketer*) ahora puede utilizar las plantillas y componentes listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todo tipo desde el DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
 
-El verdadero poder de AEM Mobile es que un desarrollador *experto* ***AEM*** puede ampliar y crear plantillas web y componentes personalizados para permitir a *AEM Author* crear experiencias móviles atractivas y atractivas. Estas plantillas y componentes no solo están optimizados para el mundo de las aplicaciones móviles; pero comuníquese tanto con el dispositivo como con el servidor AEM (cualquier servidor remoto) a los puntos finales del servicio omni-canal.
+El verdadero poder de AEM Mobile es que un *desarrollador* ***AEM*** puede ampliar y crear plantillas web y componentes personalizados para permitir que *AEM Author* cree experiencias móviles atractivas y atractivas. Estas plantillas y componentes no solo están optimizados para el mundo de las aplicaciones móviles; pero comuníquese tanto con el dispositivo como con el servidor AEM (cualquier servidor remoto) a los puntos finales del servicio omni-canal.
 
 >[!NOTE]
 >
->Cuando *AEM Author* cree que la aplicación está lista, puede hacer que los interesados descarguen la aplicación con **[Adobe Verify](/help/mobile/phonegap-mobile-quickstart.md)**(disponible en AppStore y PlayStore) para su revisión y aprobación. Una vez que han recibido la luz verde, pueden publicar este contenido nuevo o actualizado directamente para sus usuarios a través del panel de administración de la versión de contenido de AEM Mobile ContentSync. Una persona puede asumir cualquier número de roles, eso depende de ti y de tus políticas de gobierno.
+>Cuando *AEM Author* cree que la aplicación está lista, primero puede hacer que los interesados descarguen la aplicación con **[Adobe Verify](/help/mobile/phonegap-mobile-quickstart.md)** (disponible tanto en AppStore como en PlayStore) para su revisión y aprobación. Una vez que han recibido la luz verde, pueden publicar este contenido nuevo o actualizado directamente para sus usuarios a través del panel de administración de la versión de contenido de AEM Mobile ContentSync. Una persona puede asumir cualquier número de roles, eso depende de ti y de tus políticas de gobierno.
 
 ## Requisitos previos {#prerequisites}
 
@@ -46,9 +46,9 @@ Antes de trabajar con AEM Mobile y seguir los pasos de esta guía de introducci�
 
 [Recorrido del Centro de control de AEM Mobile](/help/mobile/phonegap-authoring-apps.md)
 
-## Vínculos rápidos para autores {#quicklinks-for-authors}
+## QuickLinks para autores {#quicklinks-for-authors}
 
-Consulte [Creación para Adobe PhoneGap Enterprise en AEM](/help/mobile/phonegap.md) para conocer las funciones y responsabilidades de un autor.
+Consulte [Creación para Adobe PhoneGap Enterprise en AEM](/help/mobile/phonegap.md) para obtener información sobre las funciones y responsabilidades de un autor.
 
 ## QuickLinks para desarrolladores {#quicklinks-for-developers}
 
@@ -56,10 +56,10 @@ Existen aplicaciones de ejemplo que se integrarán con AEM Mobile y que el desar
 
 En los capítulos siguientes aprenderá sobre conceptos avanzados como la etiqueta blanca de la aplicación, la Localización, la internacionalización, la sincronización de contenido, la determinación de objetivos, el análisis, etc.
 
-## QuickLinks para administradores {#quicklinks-for-administrators}
+## QuickLinks para Administradores {#quicklinks-for-administrators}
 
 Consulte [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md) para configurar y administrar la aplicación móvil.
 
 >[!NOTE]
 >
->Al utilizar tecnologías móviles híbridas, puede crear aplicaciones móviles enriquecidas que se *ejecutan sin conexión y en línea* con AEM Mobile. De hecho, muchos clientes prefieren crear aplicaciones que comprueban cuándo están en línea o sin conexión y se comportan de la misma manera.
+>Al utilizar tecnologías móviles híbridas, puede crear aplicaciones móviles enriquecidas que *se ejecutan sin conexión y en línea* con AEM Mobile, de hecho, muchos clientes eligen crear aplicaciones que comprueban cuándo están en línea o sin conexión y se comportan en consecuencia.

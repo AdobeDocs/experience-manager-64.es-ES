@@ -24,8 +24,8 @@ La asignación de recursos se utiliza para definir redirecciones, direcciones UR
 
 Por ejemplo, puede utilizar estas asignaciones para:
 
-* Prefijo todas las solicitudes con `/content` el fin de que la estructura interna esté oculta de los visitantes al sitio web.
-* Defina un redireccionamiento para que todas las solicitudes a la `/content/en/gateway` página del sitio web se redirijan a `https://gbiv.com/`.
+* Pruebe todas las solicitudes con `/content` para que la estructura interna se oculte de los visitantes del sitio web.
+* Defina un redireccionamiento para que todas las solicitudes a la página `/content/en/gateway` del sitio Web se redirijan a `https://gbiv.com/`.
 
 Una asignación HTTP posible [antepone todas las solicitudes a localhost:4503 con /content](#configuring-an-internal-redirect-to-content). Una asignación como esta podría utilizarse para ocultar la estructura interna de los visitantes al sitio web, ya que permite:
 
@@ -43,29 +43,31 @@ ya que la asignación agregará automáticamente el prefijo `/content` a `/geome
 
 >[!NOTE]
 >
->Consulte la documentación de Sling y [Asignaciones para Resolución](https://sling.apache.org/site/resources.html) de recursos y [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) para obtener más información.
+>Consulte la documentación de Sling y [Asignaciones para la resolución de recursos](https://sling.apache.org/site/resources.html) y [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) para obtener más información.
 
 ## Visualización de definiciones de asignación {#viewing-mapping-definitions}
 
 Las asignaciones forman dos listas que el Resueltor de recursos JCR evalúa (de arriba abajo) para encontrar una coincidencia.
 
-Estas listas se pueden ver (junto con la información de configuración) en la opción **JCR ResourceResolver** de la consola Félix; por ejemplo, `https://<host>:<port>/system/console/jcrresolver`:
+Estas listas se pueden ver (junto con la información de configuración) en la opción **JCR ResourceResolver** de la consola Felix; por ejemplo, `https://<host>:<port>/system/console/jcrresolver`:
 
 * Configuración
 
-   Muestra la configuración actual (tal como se define para [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md).
+   Muestra la configuración actual (tal como se define para el [Solucionador de recursos de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
 * Prueba de configuración
 
-   Esto le permite introducir una dirección URL o ruta de recursos. Haga clic en **Resolver** o **Mapa** para confirmar cómo el sistema transformará la entrada.
+   Esto le permite introducir una dirección URL o ruta de recursos. Haga clic en **Resolver** o **Asignar** para confirmar cómo el sistema transformará la entrada.
 
-* **Entradas** de asignación de resoluciónLa lista de entradas utilizadas por los métodos ResourceResolver.resolve para asignar direcciones URL a recursos.
+* **Resolver**
+entradas de mapaLa lista de entradas utilizadas por los métodos ResourceResolver.resolve para asignar direcciones URL a recursos.
 
-* **Asignación de Entradas** de Mapalista de las entradas utilizadas por los métodos ResourceResolver.map para asignar rutas de recursos a direcciones URL.
+* **Asignación de**
+entradas de mapaLa lista de entradas que utilizan los métodos ResourceResolver.map para asignar rutas de recursos a direcciones URL.
 
 Las dos listas muestran varias entradas, incluidas las definidas como predeterminadas por las aplicaciones. Estos suelen tener como objetivo simplificar las direcciones URL del usuario.
 
-Las listas emparejan un **patrón**, una expresión regular que coincide con la solicitud, con un **reemplazo** que define la redirección que se va a imponer.
+El par de listas **Patrón**, una expresión regular que coincide con la solicitud, con un **Reemplazo** que define la redirección que se va a imponer.
 
 Por ejemplo:
 
@@ -87,7 +89,7 @@ Se crean nuevas definiciones de asignación dentro del repositorio.
 
 >[!NOTE]
 >
->Hay muchos recursos disponibles que ayudan a explicar cómo definir las expresiones ordinarias; por ejemplo, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Hay muchos recursos disponibles que ayudan a explicar cómo definir las expresiones ordinarias; por ejemplo [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ## Creación de definiciones de asignación en AEM {#creating-mapping-definitions-in-aem}
 
@@ -112,7 +114,7 @@ Para crear la asignación que prefiera cualquier solicitud a http://localhost:45
    * **Nombre** `localhost_any`
 
 1. Haga clic en **Guardar todo**.
-1. **Añada** las siguientes propiedades a este nodo:
+1. **** Se han agregado las siguientes propiedades a este nodo:
 
    * **Nombre** `sling:match`
 
@@ -138,5 +140,5 @@ se ha solicitado.
 
 >[!NOTE]
 >
->Puede utilizar `/etc/map.publish` para mantener las configuraciones del entorno de publicación. Estos deben replicarse y la nueva ubicación ( `/etc/map.publish`) debe configurarse para la ubicación **de** asignación de la resolución [de recursos de sling de](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) Apache del entorno de publicación.
+>Puede utilizar `/etc/map.publish` para mantener las configuraciones del entorno de publicación. A continuación, se deben replicar y configurar la nueva ubicación ( `/etc/map.publish`) para la **Ubicación de asignación** de la [Resolución de recursos de sling de Apache](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) del entorno de publicación.
 

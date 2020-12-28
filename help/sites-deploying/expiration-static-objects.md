@@ -39,7 +39,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
 
 >[!CAUTION]
 >
->Debe tener cuidado al definir el período de tiempo durante el cual un objeto se considera actualizado. Como *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo de la caché.
+>Debe tener cuidado al definir el período de tiempo durante el cual un objeto se considera actualizado. Dado que *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo de la caché.
 
 1. **Para una instancia de Autor:**
 
@@ -75,7 +75,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día como máximo en las memorias caché del cliente. Aunque este ejemplo ilustra la configuración global de todo lo que se encuentra debajo `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día como máximo en las memorias caché del cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está por debajo de `/content` y `/etc/designs`, debe hacerlo más granular.
 
    Según la frecuencia con la que se actualice el sitio, también puede considerar la posibilidad de almacenar en caché páginas HTML. Un período de tiempo razonable sería de 1 hora:
 
@@ -85,4 +85,4 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-Después de configurar los objetos estáticos, analice `request.log`la opción, mientras selecciona las páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para los objetos estáticos.
+Después de configurar los objetos estáticos, analice `request.log`, mientras selecciona las páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para los objetos estáticos.

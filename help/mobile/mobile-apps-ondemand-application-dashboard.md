@@ -76,9 +76,9 @@ Estos tres mosaicos proporcionan información general sobre el estado del conten
 
 Cada mosaico puede expandirse para proporcionar una vista de lista más detallada haciendo clic en los puntos suspensivos (...) en la esquina inferior derecha. Estas vistas de lista proporcionan una forma alternativa de acceder a acciones comunes de Mobile On Demand, como eliminar, cargar y editar propiedades.
 
-### Mosaico Administrar pancartas {#the-manage-banners-tile}
+### El icono Administrar pancartas {#the-manage-banners-tile}
 
-El mosaico **Administrar pancartas** le permite administrar el contenido de un letrero. Se muestra la siguiente información para una pancarta:
+El mosaico **Administrar pancartas** permite administrar el contenido de un letrero. Se muestra la siguiente información para una pancarta:
 
 * image
 * **TÍTULO**: nombre del letrero
@@ -87,15 +87,15 @@ El mosaico **Administrar pancartas** le permite administrar el contenido de un l
 * **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On Demand)
 
-La siguiente imagen muestra el mosaico **Administrar pancartas** en AEM Mobile Application Panel:
+La siguiente imagen muestra el mosaico **Administrar pancartas** en el Panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Consulte **[Administración de letreros](/help/mobile/mobile-on-demand-managing-banners.md)**para crear, eliminar o actualizar los letreros.
+>Consulte **[Administración de letreros](/help/mobile/mobile-on-demand-managing-banners.md)** para crear, eliminar o actualizar los letreros.
 
-### Mosaico Administrar artículos {#the-manage-articles-tile}
+### El icono Administrar artículos {#the-manage-articles-tile}
 
 El mosaico **Administrar artículos** permite administrar el contenido de un artículo. Se muestra la siguiente información para un artículo:
 
@@ -106,17 +106,17 @@ El mosaico **Administrar artículos** permite administrar el contenido de un art
 * **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On-Demand)
 
-La siguiente imagen muestra el mosaico **Administrar artículos** en AEM Mobile Application Panel:
+La siguiente imagen muestra el mosaico **Administrar artículos** en el Panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Consulte [**Administración de artículos **](/help/mobile/mobile-on-demand-managing-articles.md)para crear, eliminar o actualizar los artículos.
+>Consulte [**Administración de artículos**](/help/mobile/mobile-on-demand-managing-articles.md) para crear, eliminar o actualizar los artículos.
 
 ### El icono Administrar colecciones {#the-manage-collections-tile}
 
-El mosaico **Administrar colecciones** le permite administrar el contenido de una colección. Se muestra la siguiente información para una colección:
+El mosaico **Administrar colecciones** permite administrar el contenido de una colección. Se muestra la siguiente información para una colección:
 
 * image
 * **TÍTULO**: nombre de la colección
@@ -125,13 +125,13 @@ El mosaico **Administrar colecciones** le permite administrar el contenido de un
 * **PUBLICADO**: último AEM de formulario de solicitud publicado
 * **FUENTE**: origen (AEM local o remoto desde Mobile On-Demand)
 
-La siguiente imagen muestra el mosaico **Administrar colecciones** en AEM Mobile Application Panel:
+La siguiente imagen muestra el mosaico **Administrar colecciones** en el Panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Consulte **[Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)**para crear, eliminar o actualizar las colecciones.
+>Consulte **[Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)** para crear, eliminar o actualizar las colecciones.
 
 ### Pasos siguientes {#the-next-steps}
 
@@ -139,7 +139,7 @@ Una vez familiarizado con el panel de la aplicación, consulte los siguientes re
 
 * [Acciones de creación y configuración de aplicaciones](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Asociación de una aplicación bajo demanda a una configuración de nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
-* [Acciones de Gestor de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
+* [Acciones de gestor de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 ### Recursos adicionales {#additional-resources}
 

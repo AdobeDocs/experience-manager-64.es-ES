@@ -77,7 +77,7 @@ Para obtener la información necesaria, visite [Conceptos básicos de los compon
 
 Cuando se incluye la biblioteca del lado del cliente requerida, `cq.social.hbs.search`, así es como aparecerá el componente `Search Result`:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![chlimage_1-375](assets/chlimage_1-376.png)
 
 ### Configurar el resultado de búsqueda Añadido {#configure-the-added-search-result}
 

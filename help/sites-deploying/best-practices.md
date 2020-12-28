@@ -18,7 +18,7 @@ ht-degree: 15%
 ---
 
 
-# Deploying Best Practices{#deploying-best-practices}
+# Implementación de optimizaciones{#deploying-best-practices}
 
 Las prácticas recomendadas de implementación describen cómo implementar o mantener AEM de la manera más eficiente y eficaz posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
@@ -39,7 +39,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) es un repositorio de contenido jerárquico escalable y de rendimiento que es la base de AEM.
+[](/help/sites-deploying/platform.md) Oakis es un repositorio de contenido jerárquico escalable y de rendimiento que es la base de AEM.
 
 <table> 
  <tbody>
@@ -75,7 +75,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 AEM Communities simplifica la creación y gestión de comunidades locales. Las prácticas recomendadas para AEM Communities se describen a continuación:
 
-[Almacenamiento](/help/communities/working-with-srp.md) de contenido de comunidad: analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir la [topología](/help/communities/topologies.md)subyacente.
+[Almacenamiento](/help/communities/working-with-srp.md)  de contenido de comunidad: analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir la  [topología](/help/communities/topologies.md) subyacente.
 
 [Implementaciones recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) : describe las implementaciones recomendadas para comunidades. |
 
@@ -96,7 +96,7 @@ A continuación se detallan las prácticas recomendadas sobre el rendimiento:
   <tr>
    <td>Prácticas recomendadas para garantizar la calidad</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Prácticas recomendadas para garantizar la calidad</a></td> 
-   <td>Información general estandarizada sobre los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en el entorno de <em>publicación</em> . Esto es de interés primordial para los ingenieros de control de calidad, los directores de proyectos y los administradores de sistemas.</td> 
+   <td>Una descripción general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en el entorno <em>publish</em>. Esto es de interés primordial para los ingenieros de control de calidad, los directores de proyectos y los administradores de sistemas.</td> 
   </tr>
   <tr>
    <td>Uso de Dispatcher con una CDN</td> 

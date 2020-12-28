@@ -22,11 +22,11 @@ ht-degree: 2%
 
 El etiquetado permite categorizar y organizar el contenido. Las etiquetas se pueden clasificar mediante una Área de nombres y una taxonomía.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como también sobre las etiquetas de contenido que se han aplicado.
 * Consulte [Uso de etiquetas](/help/sites-authoring/tags.md) para obtener información sobre el etiquetado de contenido.
 
 La siguiente información está disponible para los desarrolladores:
 
-* [Marco](/help/sites-developing/framework.md) de etiquetado de AEM: descripción de los nodos y las propiedades que se utilizan para etiquetar
+* [AEM marco](/help/sites-developing/framework.md)  de etiquetado: descripción de los nodos y las propiedades que se utilizan para etiquetar
 
-* [Generación de etiquetado en una aplicación](/help/sites-developing/building.md) AEM: una descripción de las API que funcionan con el marco de etiquetado desde el lado del cliente y el código del servidor
+* [Generación de etiquetado en una aplicación](/help/sites-developing/building.md)  AEM: una descripción de las API que funcionan con el marco de etiquetado desde el lado del cliente y el código del servidor

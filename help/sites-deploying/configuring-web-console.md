@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Consola web{#web-console}
 
-La consola web de AEM está basada en la consola [](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)de administración web Apache Felix. Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de trabajo OSGi y los servicios estándar.
+La consola web de AEM se basa en la [consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de trabajo OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ Se puede acceder a la consola desde `../system/console`; por ejemplo:
 
 ## Configuración {#configuration}
 
-La ficha **Configuración** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros AEM sistema.
+La ficha **Configuration** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
 
 >[!NOTE]
 >
->Consulte Configuración de [OSGi con la consola](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web para obtener más detalles.
+>Consulte [Configuración de OSGi con la Consola Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obtener más detalles.
 
 Se puede acceder a la ficha **Configuración** desde:
 
@@ -124,7 +124,7 @@ Con esta ficha puede:
 
 * **Instalar o actualizar**
 
-   Puede **examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en qué nivel **de** Inicio.
+   Puede **Examinar** para encontrar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en qué **nivel de Inicio**.
 
 * **Volver a cargar**
 
@@ -154,7 +154,7 @@ Con esta ficha puede:
 
 >[!NOTE]
 >
->Después de la **actualización** , se recomienda realizar una **actualización de paquetes**.
+>Después de **Actualizar** se recomienda realizar un **Actualizar paquetes**.
 
 ## Componentes {#components}
 

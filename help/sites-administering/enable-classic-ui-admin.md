@@ -24,7 +24,7 @@ De forma predeterminada, se ha deshabilitado la capacidad de cambiar a la IU cl�
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Cada consola que tenga una versión de IU clásica en `/libs/cq/core/content/nav` puede volver a activarse individualmente para que la opción de IU **** clásica aparezca una vez más sobre el icono de la consola cuando se pase el ratón por encima.
+Cada consola que tiene una versión de IU clásica en `/libs/cq/core/content/nav` se puede volver a habilitar de forma individual para que la opción **IU clásica** vuelva a aparecer sobre el icono de la consola cuando se pase el ratón por encima.
 
 En este ejemplo, estamos volviendo a habilitar la IU clásica para la consola Sitios.
 
@@ -40,7 +40,7 @@ En este ejemplo, estamos volviendo a habilitar la IU clásica para la consola Si
 
    `/libs/cq/core/content/nav/sites`
 
-1. Crear una superposición con la opción Nodo **de** superposición; por ejemplo:
+1. Cree una superposición con la opción **Nodo superpuesto**; por ejemplo:
 
    * **Ruta**: `/apps/cq/core/content/nav/sites`
    * **Ubicación de la superposición**: `/apps/`
@@ -50,7 +50,7 @@ En este ejemplo, estamos volviendo a habilitar la IU clásica para la consola Si
 
    `enableDesktopOnly = {Boolean}true`
 
-1. La opción de IU **** clásica está disponible de nuevo como opción emergente en la consola de administración.
+1. La opción **IU clásica** vuelve a estar disponible como opción emergente en la consola de administración.
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 

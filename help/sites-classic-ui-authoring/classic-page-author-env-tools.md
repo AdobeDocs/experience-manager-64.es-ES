@@ -101,7 +101,7 @@ Esta ficha enumera los productos. Después de crear un párrafo apropiado (por e
 
 ### Búsqueda de páginas {#finding-pages}
 
-Esta ficha muestra todas las páginas. Haga clic con el Doble en cualquier página para abrirla y editarla.
+Esta ficha muestra todas las páginas. Haga clic con el doble en cualquier página para abrirla y editarla.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -145,7 +145,7 @@ Los siguientes patrones de búsqueda la encontrarán (así como cualquier otra i
 
 >[!NOTE]
 >
->You can also use [SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) search.
+>También puede utilizar la búsqueda [SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrar referencias {#showing-references}
 
@@ -157,7 +157,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Show References...** AEM opens the References window and displays which pages refer to the selected page, including their paths.
+1. Seleccione **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -178,9 +178,9 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 ## Información de la página {#page-information}
 
-The Website console also [provides information about the current status of the page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) such as publication, modification, locked, livecopy, etc.
+La consola Sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueo, Live Copy, etc.
 
-## Modos de página   {#page-modes}
+## Modos de página    {#page-modes}
 
 Al editar una página con la IU clásica hay varios modos a los que se puede acceder mediante los iconos en la parte inferior de la barra de tareas:
 

@@ -105,13 +105,13 @@ Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utiliz
 
 #### Nueva conexión de comunidades {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ## Configuración de base de datos {#database-setup}
 
 Abra la conexión Comunidades para instalar la base de datos.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### Obtener el script SQL {#obtain-the-sql-script}
 
@@ -179,7 +179,7 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
 * Busque el `Day Commons JDBC Connections Pool`
 * Seleccione el icono `+` para crear una nueva configuración de conexión
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 * Introduzca los valores siguientes:
 

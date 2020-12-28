@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 14%
 
 ---
 
@@ -32,12 +35,13 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 
    * Limpieza continua de revisión para MongoMK reemplaza el mantenimiento de limpieza programado
 
-* Mejora de la eficiencia para la limpieza de revisión en las notas del documento
-* Please see [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) and [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) for a full overview of fixed issues.
+* Mejora de la eficacia de la limpieza de revisión en las novelas de Documento
+* Consulte [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) y [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) para obtener una visión general completa de los problemas solucionados.
 
 >[!CAUTION]
 >
->* La nueva versión de Oak Segment Tar disponible a partir de la versión 6.3 de AEM requiere realizar una migración del repositorio. Este paso es obligatorio si está actualizando desde una versión anterior de TarMK o desea cambiar la nueva barra de segmentos de otro tipo de persistencia. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>* La nueva versión de Oak Segment Tar disponible a partir de la versión 6.3 de AEM requiere realizar una migración del repositorio. Este paso es obligatorio si está actualizando desde una versión anterior de TarMK o desea cambiar la nueva barra de segmentos de otro tipo de persistencia. Para obtener más información sobre los beneficios de la nueva barra de segmentos, consulte las [Preguntas más frecuentes sobre la migración a la barra de segmentos Oak](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+
 >
 
 
@@ -52,8 +56,8 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
    * Reindexación
 
 * Reducción del crecimiento del repositorio relacionado con Lucene para mejorar el rendimiento general del sistema
-* Índices de propiedades de Lucene sincrónicas [(Más información)](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
-* Explicar la consulta en el Administrador de índices ahora es compatible con la sintaxis de AEM QueryBuilder
+* Índices de propiedades de Lucene sincrónicos [(Más información)](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
+* Explicar la Consulta en el Administrador de índices ahora es compatible con AEM sintaxis de QueryBuilder
 * El Administrador de índices está exponiendo ahora las métricas de índice: tamaño, última actualización y comprobación de coherencia
 
 ### Interfaz de usuario {#user-interface}
@@ -68,7 +72,8 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 
 >[!CAUTION]
 >
->* Adobe no tiene previsto realizar más mejoras en la interfaz de usuario clásica. AEM 6.4 tiene la interfaz de usuario clásica incluida y los clientes que actualicen desde versiones anteriores pueden seguir utilizándola. Note that Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>* Adobe no tiene previsto realizar más mejoras en la interfaz de usuario clásica. AEM 6.4 tiene la interfaz de usuario clásica incluida y los clientes que actualicen desde versiones anteriores pueden seguir utilizándola. Tenga en cuenta que la IU clásica sigue siendo totalmente compatible mientras se encuentra en desuso [Más información](/help/sites-deploying/ui-recommendations.md).
+
 >
 
 
@@ -109,20 +114,20 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 * Evaluación de la complejidad de la actualización: Nueva herramienta de detección de patrones para evaluar la complejidad de las actualizaciones.
 * Actualizaciones sostenibles: La superficie de API y la clasificación de contenido se han introducido para ayudarle a seguir fácilmente las optimizaciones a fin de lograr una actualización eficaz y sin fisuras a la siguiente versión durante todo el ciclo de desarrollo.
 * Reestructuración del repositorio: Reestructuración significativa (principalmente /etc) para facilitar las actualizaciones y promover las mejores prácticas de implementación. [Obtener más información.](/help/sites-deploying/repository-restructuring.md)
-* Please see the [Upgrade documentation](/help/sites-deploying/upgrade.md) for more details on these features.
+* Consulte la [documentación de actualización](/help/sites-deploying/upgrade.md) para obtener más detalles sobre estas funciones.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* Muchos servicios de nube ahora se pueden configurar mediante la IU táctil; el resto se puede configurar con la tarjeta de servicios de nube heredada.
-* Las carpetas Sitios y Recursos se pueden configurar con los servicios de nube que se cargan según el contexto.
+* Muchos Cloud Services ahora se pueden configurar mediante la IU táctil; el resto se puede configurar en la tarjeta Cloud Services heredados.
+* Las carpetas Sitios y Recursos se pueden configurar con Cloud Services cargados según el contexto.
 
 ### Seguridad {#security}
 
-* Se ha mejorado y simplificado la interfaz de usuario para la creación de usuarios con compatibilidad con varios perfiles de usuario.
+* Se ha mejorado y simplificado la interfaz de usuario para la creación de usuarios con compatibilidad con varios perfiles de usuarios.
 * Se ha mejorado el rendimiento de los miembros de grupos grandes para los usuarios.
 
 ### Proyectos y flujos de trabajo {#projects-and-workflows}
 
 * Toque el Editor de flujo de trabajo basado en la interfaz de usuario para administrar los modelos de flujo de trabajo de forma más sencilla.
-* Compatibilidad con la depuración de tareas de proyecto en tareas de mantenimiento.
+* Soporte para purgar tareas de proyectos en tareas de mantenimiento.
 

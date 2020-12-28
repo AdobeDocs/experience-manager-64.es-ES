@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Prácticas de desarrollo{#development-practices}
 
-## Trabajo según una definición de terminado {#work-according-to-a-definition-of-done}
+## Trabajo según una definición de Listo {#work-according-to-a-definition-of-done}
 
 Cada equipo tiene una definición diferente de lo que significa &quot;hecho&quot;, pero es importante tener una y asegurarse de que una historia cumpla los criterios definidos antes de ser aceptada.
 
@@ -35,11 +35,11 @@ Algunos de los criterios que suelen especificar los equipos son:
 
 Sin un DoD bien definido, es fácil terminar en una situación en la que muchas cosas están a medio camino y nada está realmente completo.
 
-### Definir y cumplir las convenciones de codificación y formato {#define-and-adhere-to-coding-and-formatting-conventions}
+### Defina y cumpla las convenciones de codificación y formato {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Cosas como los niveles de sangría y el espacio en blanco pueden no parecer importantes, pero tener un código formateado adecuadamente contribuye en gran medida a la legibilidad y mantenimiento. Las convenciones deben debatirse y acordarse como un equipo y seguirse en el código.
 
-### Objetivo para una cobertura de prueba alta  {#aim-for-high-test-coverage}
+### Objetivo para una cobertura de prueba alta {#aim-for-high-test-coverage}
 
 A medida que la implementación de un proyecto crece en tamaño, también lo hará la cantidad de tiempo necesaria para probarlo. Sin una buena cobertura de pruebas, el equipo de pruebas no podrá escalar y los desarrolladores terminarán enterrados en errores.
 
@@ -59,14 +59,14 @@ La implementación de un entorno de integración continua le permitirá ejecutar
 
 Si las pruebas unitarias tardan mucho en ejecutarse, los desarrolladores evitarán ejecutarlas y perderán su valor. Si lleva mucho tiempo crear el código e implementarlo, las personas lo harán con menos frecuencia. Hacer de los tiempos de construcción cortos una prioridad garantiza que el tiempo que hemos invertido en nuestra cobertura de pruebas e infraestructura de CI seguirá haciendo que el equipo sea más productivo.
 
-### Ajustar Sonar y otras herramientas de análisis de código estático y actuar en sus informes {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Afinar Sonar y otras herramientas de análisis de código estático y actuar en sus informes {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Las herramientas de análisis de código pueden ser valiosas, pero sólo si sus informes llevan a la acción por parte del equipo de desarrollo. Sin perfeccionar la análisis que estas herramientas proporcionan, las recomendaciones que generan no serán relevantes y perderán su valor.
 
-### Siga la regla del Scout de niños {#follow-the-boy-scout-rule}
+### Siga la regla del Scout principal {#follow-the-boy-scout-rule}
 
 Los Scout Boy tienen una regla: &quot;Déjalo mejor de lo que lo encontraste&quot;. Mientras todos los miembros del equipo de desarrollo se adhieran a esta regla y limpien algo cuando se encuentren con un desastre, el código mejorará constantemente.
 
-### Evite implementar características YAGNI {#avoid-implementing-yagni-features}
+### Evite implementar las características de YAGNI {#avoid-implementing-yagni-features}
 
 Las características de YAGNI (o Usted no lo va a necesitar) son cosas que se implementan cuando esperamos que necesitaremos algo en el futuro, aunque no lo necesitamos ahora. Idealmente, deberíamos implementar lo más sencillo que funcione hoy en día y utilizar la refactorización continua para garantizar que la arquitectura del sistema evolucione con los requisitos a lo largo del tiempo. Esto nos permitirá centrarnos en lo que importa y evitar que el código se expanda y las funciones se propaguen.

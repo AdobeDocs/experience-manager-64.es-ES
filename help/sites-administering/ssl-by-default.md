@@ -22,11 +22,11 @@ ht-degree: 0%
 
 En un esfuerzo por mejorar continuamente la seguridad de AEM, Adobe ha introducido una función llamada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a AEM instancias.
 
-## Habilitar SSL de forma predeterminada {#enabling-ssl-by-default}
+## Habilitando SSL de forma predeterminada {#enabling-ssl-by-default}
 
-Para configurar SSL de forma predeterminada, haga clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Vista todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
+Para configurar SSL de forma predeterminada, haga clic en el mensaje Bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para acceder a la Bandeja de entrada, pulse el icono de la campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Vista de todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
 
-En la lista, seleccione y abra la alerta **Configurar HTTPS** :
+En la lista, seleccione y abra la alerta **Configurar HTTPS**:
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
@@ -36,7 +36,7 @@ En la lista, seleccione y abra la alerta **Configurar HTTPS** :
 
 Se ha creado un usuario de servicio llamado **ssl-service** para esta función. Una vez que abra la alerta, se le guiará a través del siguiente asistente de configuración:
 
-1. Primero, configure las credenciales de la tienda. Son las credenciales del almacén de claves del usuario del sistema de **ssl-service** que contendrán la clave privada y el almacén de confianza para el detector HTTPS.
+1. Primero, configure las credenciales de la tienda. Estas son las credenciales del almacén de claves del usuario del sistema **ssl-service** que contendrán la clave privada y el almacén de confianza para el detector HTTPS.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -97,7 +97,7 @@ El servlet, como cualquier servlet POST sling, responderá con 200 OK o con un c
 
 A continuación se muestran ejemplos de una respuesta correcta y de un error.
 
-**EJEMPLO** DE ÉXITO (estado = 200):
+**EJEMPLO**  DE ÉXITO(status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -128,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**EJEMPLO** DE ERROR (status = 500):
+**EJEMPLO**  DE ERROR(status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -150,14 +150,14 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Vía paquete {#via-package}
+### Vía el paquete {#via-package}
 
 También puede automatizar la configuración de SSL cargando un paquete que ya contiene estos elementos necesarios:
 
 * El almacén de claves del usuario del servicio ssl. Se encuentra en */home/users/system/security/ssl-service/keystore* en el repositorio.
-* La `GraniteSslConnectorFactory` configuración
+* La configuración `GraniteSslConnectorFactory`
 
-### Generación de un par de clave/certificado privado para utilizarlo con el Asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Generación de un par de claves privadas/certificados para utilizarlo con el Asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 A continuación encontrará un ejemplo para crear un certificado autofirmado en formato DER que puede utilizar el Asistente para SSL.
 
@@ -190,13 +190,13 @@ Convertir la clave privada al formato DER. Esto se debe a que el asistente SSL r
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Finalmente, cargue **localhostprivate.der** como Private Key y **localhost.crt** como el certificado SSL en el paso 2 del Asistente gráfico SSL descrito al principio de esta página.
+Finalmente, cargue el **localhostprivate.der** como Clave privada y **localhost.crt** como certificado SSL en el paso 2 del Asistente gráfico SSL descrito al principio de esta página.
 
 ### Actualización de la configuración SSL mediante cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Consulte [Uso de cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para ver una lista centralizada de comandos cURL útiles en AEM.
+>Consulte [Uso de cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de comandos cURL útiles en AEM.
 
 También puede automatizar la configuración SSL mediante la herramienta cURL. Para ello, publique los parámetros de configuración en esta dirección URL:
 
@@ -223,7 +223,7 @@ A continuación se muestran los parámetros que puede utilizar para cambiar las 
 >
 >La forma más rápida de ejecutar cURL para automatizar la configuración SSL es desde la carpeta donde se encuentran los archivos DER y CRT. También puede especificar la ruta completa en los argumentos `privatekeyFile` y certificateFile.
 >
->También es necesario autenticarse para realizar la actualización, por lo que debe adjuntar el comando cURL con el `-u user:passeword` parámetro .
+>También es necesario autenticarse para realizar la actualización, por lo que debe anexar el comando cURL con el parámetro `-u user:passeword`.
 >
 >Un comando cURL posterior correcto debería tener este aspecto:
 

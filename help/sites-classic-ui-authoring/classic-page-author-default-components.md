@@ -35,7 +35,7 @@ En las siguientes páginas se proporcionan enlaces rápidos a algunas de las pri
 
 * [Componentes para la creación de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   Los componentes utilizados para crear contenido de página estándar se encuentran principalmente en los grupos **General**, **Columnas** y **Forms**.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 

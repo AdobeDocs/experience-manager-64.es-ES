@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Secuencia de comandos de Análisis de solicitudes{#request-analysis-script}
+# Solicitar script de Análisis{#request-analysis-script}
 
 ## Descargar {#download}
 
-Esta secuencia de comandos se realiza para facilitar la análisis de los `access.log` archivos que producen un informe legible para su posterior procesamiento.
+Esta secuencia de comandos se realiza para facilitar la análisis de los archivos `access.log` que producen un informe legible para su procesamiento posterior.
 
 [Obtener archivo](assets/analyse-access.sh)
 
 ## Descripción {#description}
 
-Esta secuencia de comandos se realiza para facilitar la análisis de los `access.log` archivos que producen un informe legible para su posterior procesamiento.
+Esta secuencia de comandos se realiza para facilitar la análisis de los archivos `access.log` que producen un informe legible para su procesamiento posterior.
 
 Genera el número total de solicitudes, GET vs POST, y la distribución de solicitudes a lo largo del tiempo y más.
 
@@ -38,7 +38,7 @@ Puede analizar una ruta personalizada proporcionada en la línea de comandos.
 
 Tomando del comentario dentro del archivo que le dice cómo ejecutarlo:
 
-Analizar CQ `access.log` extrapolando varias informaciones y produciendo una salida de Markdown en `stdout`.
+Analice CQ `access.log` extrapolando varias informaciones y produciendo una salida de Markdown en `stdout`.
 
 ## Uso {#usage}
 

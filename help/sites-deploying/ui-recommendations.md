@@ -26,17 +26,23 @@ Este documento está diseñado para guiar a los clientes a elegir qué IU utiliz
 
 Condiciones de interés:
 
-* **Interfaz de usuario (o IU estándar)** Interfaz de usuario moderna que se introdujo en la versión 5.6.0 como previsualización tecnológica y se amplió en versiones posteriores. Se basa en la experiencia de usuario unificada del Adobe Experience Cloud, anteriormente conocida como IU táctil o IU táctil.
+* **Interfaz de usuario (o IU estándar)**
+Interfaz de usuario moderna que se introdujo en la versión 5.6.0 como previsualización tecnológica y se amplió en versiones posteriores. Se basa en la experiencia de usuario unificada del Adobe Experience Cloud, anteriormente conocida como IU táctil o IU táctil.
 
-* **Interfaz de usuario** clásica basada en la tecnología ExtJS que se introdujo con CQ 5.1 en 2008.
+* **Interfaz clásica**
+UIUser basada en la tecnología ExtJS que se introdujo con CQ 5.1 en 2008.
 
-* **Capacidades de administración** del sitio para administrar la jerarquía del sitio (mover, activar, referencias administradas) y crear nuevas páginas.
+* **Administración**
+del sitioCapacidades para administrar la jerarquía del sitio (mover, activar, administrar referencias) y crear nuevas páginas.
 
-* **Funciones de creación** de páginas para agregar o editar el contenido de una página.
+* **Creación**
+de páginasCapacidades para agregar o editar el contenido de una página.
 
-* **Funciones de administración** de DAM/Assets para administrar recursos digitales (incluidas imágenes, vídeo, documentos y descargas).
+* **Administración**
+de DAM/AssetsCapacidades para administrar recursos digitales (incluidas imágenes, vídeo, documentos y descargas).
 
-* **ContextHub** Capacidades para acumulada información sobre el visitante y usarla para varios propósitos. Proporciona una interfaz de usuario para simular a las personas que visitan el sitio. A partir de AEM 6.2, ContextHub reemplazó a la tecnología anterior, Client Context.
+* ****
+ContextHubCapabilities para acumulada información sobre el visitante y usarla para varios fines. Proporciona una interfaz de usuario para simular a las personas que visitan el sitio. A partir de AEM 6.2, ContextHub reemplazó a la tecnología anterior, Client Context.
 
 ## General {#general}
 
@@ -68,10 +74,10 @@ A continuación se muestra una lista de las recomendaciones de Administración d
     <ol> 
      <li>Actualización a 6.4</li> 
      <li>Utilice la IU predeterminada para la administración del sitio, los recursos, etc. etc.<br /> </li> 
-     <li>Configure la acción "Editar página" para abrir el Editor de páginas de la IU clásica. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>Configure la acción "Editar página" para abrir el Editor de páginas de la IU clásica. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</li> 
     </ol> <p>Luego, en una segunda fase:</p> 
     <ol> 
-     <li>Actualice los cuadros de diálogo de los componentes para utilizar el formato de cuadro de diálogo Coral 3. Adobe recomienda utilizar la herramienta <a href="/help/sites-developing/dialog-conversion.md">de conversión de</a> cuadro de diálogo para actualizar los componentes.</li> 
+     <li>Actualice los cuadros de diálogo de los componentes para utilizar el formato de cuadro de diálogo Coral 3. Adobe recomienda utilizar la <a href="/help/sites-developing/dialog-conversion.md">Herramienta de conversión de cuadro de diálogo</a> para actualizar los componentes.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -80,16 +86,16 @@ A continuación se muestra una lista de las recomendaciones de Administración d
     <ol> 
      <li>Actualización a 6.4</li> 
      <li>Utilice la IU predeterminada para la administración del sitio, los recursos, etc. etc.</li> 
-     <li>Configure la acción "Editar página" para abrir el Editor de páginas de la IU clásica. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>Configure la acción "Editar página" para abrir el Editor de páginas de la IU clásica. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</li> 
     </ol> <p>Luego, en una segunda fase:</p> 
     <ol> 
-     <li>Actualice los cuadros de diálogo de los componentes para utilizar el formato de cuadro de diálogo Coral 3. Adobe recomienda utilizar la herramienta <a href="/help/sites-developing/dialog-conversion.md">de conversión de</a> cuadro de diálogo para actualizar los componentes.</li> 
+     <li>Actualice los cuadros de diálogo de los componentes para utilizar el formato de cuadro de diálogo Coral 3. Adobe recomienda utilizar la <a href="/help/sites-developing/dialog-conversion.md">Herramienta de conversión de cuadro de diálogo</a> para actualizar los componentes.</li> 
      <li>Configure ContextHub (el reemplazo del ClientContext) y actualice las plantillas de página para utilizar ContextHub. Tenga en cuenta que ContextHub tiene un modo de compatibilidad que permite cargar almacenes de ClientContexts personalizados.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><p>Ha utilizado CQ/AEM durante muchos años.</p> <p>Ha ampliado la interfaz de usuario del producto (por ejemplo, administrador del sitio) y ha creado componentes con amplios diálogos de edición.</p> </td> 
-   <td><p>Actualice a 6.4 y configure la IU clásica como la predeterminada para la creación de páginas para todos los usuarios. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>A continuación, inicio un proyecto para aplicar personalización y optimizar los cuadros de diálogo de componentes en formato Coral 3. Consulte <a href="#resources-to-help">Recursos para ayuda</a>.<br /> </p> </td> 
+   <td><p>Actualice a 6.4 y configure la IU clásica como la predeterminada para la creación de páginas para todos los usuarios. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</p> <p>A continuación, inicio un proyecto para aplicar personalización y optimizar los cuadros de diálogo de componentes en formato Coral 3. Consulte <a href="#resources-to-help">Recursos para ayudar</a>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -98,34 +104,34 @@ A continuación se muestra una lista de las recomendaciones de Administración d
 
 Consulte el artículo de la Base de conocimiento, [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para obtener más información; incluida cualquier información sobre la programación de desaprobación de la IU clásica.
 
-## Selecting Your UI {#selecting-your-ui}
+## Selección de la IU {#selecting-your-ui}
 
-Consulte [Selección de la interfaz de usuario](/help/sites-authoring/select-ui.md) para obtener información sobre la configuración del sistema según sea necesario.
+Consulte [Selección de la IU](/help/sites-authoring/select-ui.md) para obtener información sobre cómo configurar el sistema según sea necesario.
 
 ## Estado de IU táctil {#touch-optimized-ui-status}
 
 Para obtener más información sobre las mejoras realizadas en la IU táctil en la AEM 6.3, consulte [Novedades](/help/release-notes/release-notes.md#what-s-new) en las Notas de la versión.
 
-Una descripción general completa consulte la página Estado [de la función de la interfaz de usuario](/help/release-notes/touch-ui-features-status.md) táctil
+Una descripción general completa consulte la página [Estado de la función de IU táctil](/help/release-notes/touch-ui-features-status.md)
 
 ## Recursos para ayudar {#resources-to-help}
 
 Para obtener información básica sobre la manipulación básica:
 
-* [Uso del entorno](/help/sites-authoring/home.md)Autor.
+* [Uso del entorno](/help/sites-authoring/home.md) Autor.
 * [Creación de páginas](/help/sites-authoring/author-environment-tools.md).
 
 Para obtener información detallada sobre el desarrollo:
 
-* [Arquitectura](/help/sites-developing/touch-ui-concepts.md)de IU táctil.
-* Utilice la herramienta [Conversión de](/help/sites-developing/dialog-conversion.md) cuadro de diálogo para convertir los cuadros de diálogo de edición de componentes de la IU clásica en la IU táctil.
+* [Arquitectura](/help/sites-developing/touch-ui-concepts.md) de IU táctil.
+* Utilice la [herramienta Conversión de cuadro de diálogo](/help/sites-developing/dialog-conversion.md) para convertir el componente Editar cuadros de diálogo de la IU clásica a la IU táctil.
 
-* [Estructura de la IU](/help/sites-developing/touch-ui-structure.md)táctil.
+* [Estructura de la IU](/help/sites-developing/touch-ui-structure.md) táctil.
 
-* [Personalización de las consolas en la IU](/help/sites-developing/customizing-consoles-touch.md) táctil (incluye código de muestra).
+* [Personalización de las consolas en la IU](/help/sites-developing/customizing-consoles-touch.md)  táctil (incluye código de muestra).
 
-* [Personalización de la creación de páginas en la IU](/help/sites-developing/customizing-page-authoring-touch.md) táctil (incluye código de muestra).
+* [Personalización de la creación de páginas en la IU](/help/sites-developing/customizing-page-authoring-touch.md)  táctil (incluye código de muestra).
 
-* [Sesión de AEM sobre personalización](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)táctil optimizada.
-* [Documentación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)de la interfaz de usuario de Granite.
+* [Sesión de AEM sobre personalización](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) táctil optimizada.
+* [Documentación](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) de la interfaz de usuario de Granite.
 

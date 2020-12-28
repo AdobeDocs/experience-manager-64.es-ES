@@ -69,10 +69,10 @@ Las prácticas recomendadas sobre Assets, incluidas la capacidad Dynamic Media y
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
-Creación: [entorno y herramientas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) de creación: Proporciona información general sobre cómo crear páginas.
+Creación: [entorno y herramientas de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md): proporciona información general sobre cómo crear páginas.
 
 ## Forms {#forms}
 
-Formularios adaptables: [Prácticas recomendadas para trabajar con formularios](/help/forms/using/adaptive-forms-best-practices.md) adaptables: describe prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
+Formularios adaptables: [Prácticas recomendadas para trabajar con formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md): describe prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
 
-HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.
+Formularios HTML5: [Prácticas recomendadas para diseñar formularios HTML5](/help/forms/using/best-practices-for-html5-forms.md): describe prácticas recomendadas para trabajar en el diseño y la presentación de formularios HTML5.

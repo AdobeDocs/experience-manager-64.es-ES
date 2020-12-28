@@ -16,13 +16,13 @@ ht-degree: 8%
 ---
 
 
-# Notas de la versión de Smart Content Service {#smart-content-service-release-notes}
+# Notas de revisión de Smart Content Service {#smart-content-service-release-notes}
 
 Información general sobre el servicio de contenido inteligente y problemas conocidos relacionados con el servicio.
 
 Las organizaciones requieren que sus recursos digitales se etiqueten en función de la taxonomía que los empleados, socios y clientes utilizan para hacer referencia a los recursos digitales y realizar búsquedas en ellos. En comparación con las etiquetas genéricas, los recursos etiquetados en función de la taxonomía comercial se identifican y recuperan más fácilmente mediante búsquedas basadas en etiquetas.
 
-El servicio de contenido inteligente utiliza la taxonomía de AEM Assets de su empresa para etiquetar automáticamente los recursos digitales, lo que garantiza que los recursos más relevantes aparezcan en las búsquedas.
+El servicio de contenido inteligente utiliza la taxonomía empresarial de AEM Assets para etiquetar automáticamente los recursos digitales, lo que garantiza que los recursos más relevantes aparezcan en las búsquedas.
 
 Debe capacitar al servicio de contenido inteligente en un conjunto depurado de etiquetas y recursos AEM para reconocer su taxonomía empresarial. Una vez formados, el servicio puede aplicar estas etiquetas en un conjunto de recursos similar.
 
@@ -94,5 +94,5 @@ Estos sitios solo están disponibles para los clientes. Si es cliente y necesita
 
 * [Acceso a productos](https://login.marketing.adobe.com)
 * [Descarga de productos en Licensing.adobe.com](https://licensing.adobe.com/).
-* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en Distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)software.
-* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia](https://docs.adobe.com/content/help/en/customer-one/using/home.html)de asistencia al cliente de Adobe.
+* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

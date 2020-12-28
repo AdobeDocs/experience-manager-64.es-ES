@@ -20,7 +20,7 @@ ht-degree: 24%
 
 # Integración de Páginas de aterrizaje con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrado la solución páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a acción:
+AEM ha integrado la solución páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a acción (CTA):
 
 1. Componente de pulsaciones
 1. Componente de vínculo gráfico
@@ -29,11 +29,11 @@ Estos componentes exponen determinados atributos que se pueden asignar mediante 
 
 ## Requisitos previos {#prerequisites}
 
-Adobe recomienda que examine la integración [AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) existente para comprender cómo funciona esta integración.
+Adobe recomienda que consulte la [integración existente de AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
 
 ## Componentes que se pueden asignar {#components-available-for-mapping}
 
-In AEM, the **Call to Action** components - **ClickThroughLink** and **GraphicalLink** - displayed here in the sidekick, can be mapped to Adobe Analytics variables.
+En AEM, los componentes **Llamada a acción** - **ClickThroughLink** y **GraphicalLink** - mostrados aquí en la barra de tareas, se pueden asignar a variables de Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
@@ -90,7 +90,7 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
 </table>
 
 1. Asigne estos atributos expuestos a cualquier variable de Adobe Analytics desde Content Finder. El marco está listo para usarse.
-1. Ahora puede crear una nueva página de aterrizaje o abrir una página de aterrizaje existente con componentes de llamada a acción existentes y hacer clic en la ficha **Cloud Services** de Propiedades **de** página desde la barra de tareas (en la IU táctil, seleccione **Abrir propiedades** y haga clic en **Cloud Services**) y configure la estructura que se utilizará con la página de aterrizaje. Seleccione la estructura de la lista desplegable.
+1. Ahora puede crear una nueva página de aterrizaje o abrir una página de aterrizaje existente con componentes de llamada a acción existentes, hacer clic en la ficha **Cloud Services** de **Propiedades de la página** de la barra de tareas (en la IU táctil, seleccione **Propiedades abiertas** y haga clic en **Cloud Services**) y configurar la estructura que se utilizará con página de aterrizaje. Seleccione la estructura de la lista desplegable.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 

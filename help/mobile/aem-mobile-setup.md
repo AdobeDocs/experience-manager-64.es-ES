@@ -32,11 +32,11 @@ Para utilizar AEM para producir contenido para las aplicaciones de AEM Mobile, d
 
 Siga estos pasos para configurar AEM Mobile y permitir así al usuario crear y administrar el contenido dentro de AEM.
 
-## AEM Mobile Provisioning {#aem-mobile-provisioning}
+## Aprovisionamiento de AEM Mobile {#aem-mobile-provisioning}
 
 Para comenzar con la configuración de AEM Mobile, debe:
 
-* **Solicitar una clave** de API: Para acceder a la On-Demand Services API, debe solicitar una clave de API. Para solicitar la clave de API, complete el formulario [](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html)PDF. Envíe el formulario completado a la asistencia para desarrolladores de Adobe: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Solicitar una clave** de API: Para acceder a la On-Demand Services API, debe solicitar una clave de API. Para solicitar la clave de API, complete el [formulario PDF](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Envíe el formulario completado a la asistencia para desarrolladores de Adobe: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Genere el ID del dispositivo y el autentificador** del dispositivo: Una vez que haya recibido la clave de API, puede generar el ID del dispositivo y el autentificador del dispositivo. Vaya a [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) y haga lo siguiente:
 
@@ -50,13 +50,13 @@ Si se cumplen todas las condiciones, se generarán un ID de dispositivo y un aut
 
 >[!NOTE]
 >
->Se debe conceder acceso al Adobe ID necesario en un proyecto de AEM Mobile. Consulte Administración [de cuentas para AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
+>Se debe conceder acceso al Adobe ID necesario en un proyecto de AEM Mobile. Consulte [Administración de cuentas para AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
 
 ## Creación de proyectos para AEM Mobile {#creating-projects-for-aem-mobile}
 
 Al crear un proyecto, debe especificar la configuración de cualquier plataforma que esté estableciendo como objetivo: Visor web de iOS, Android, Windows y escritorio. Muchos de los ajustes del proyecto que especifique afectan al comportamiento de la aplicación.
 
-La creación de un proyecto requiere que inicie sesión en el portal de servicios bajo demanda con un Adobe ID que tenga una función de administrador maestro. La edición de un proyecto requiere una función de administrador maestro o una función de usuario con el permiso **Gestionar proyectos y usuarios** .
+La creación de un proyecto requiere que inicie sesión en el portal de servicios bajo demanda con un Adobe ID que tenga una función de administrador maestro. La edición de un proyecto requiere una función de administrador maestro o una función de usuario con un permiso **Administrar proyectos y usuarios**.
 
 >[!NOTE]
 >
@@ -79,9 +79,9 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
 1. Ir a la configuración del servicio OSGI
 
    1. AEM > Herramientas > Operaciones > Consola web
-   1. Desplácese o busque el cliente de servicios bajo demanda ***Experience Manager Mobile (era cliente de Adobe Digital Publishing Solution)***
+   1. Desplácese o busque ***Experience Manager Mobile On-demand Services Client (era Adobe Digital Publishing Solution Client)***
 
-1. Editar cliente de servicios bajo demanda de ***Experience Manager Mobile***
+1. Editar ***Experience Manager Mobile On-demand Services Client***
 
    1. **(Obligatorio)** Introduzca los campos obligatorios:
 
@@ -99,7 +99,7 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
 
 1. Ir a Cloud Services
 
-   1. AEM > Herramientas > Implementación > [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Desplácese o busque los servicios bajo demanda de ***Adobe Experience Manager Mobile***
+   1. AEM > Herramientas > Implementación> [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Desplácese o busque ***Adobe Experience Manager Mobile On-demand Services***
 
 1. Seleccione ***Configurar ahora*** o ***Mostrar configuraciones*** y seleccione el icono Agregar nueva configuración
 
@@ -108,10 +108,10 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
    1. Escriba un título y un nombre
    1. Especifique el ID del dispositivo
    1. Especifique el autentificador del dispositivo
-   1. Seleccione ***Probar configuración*** del dispositivo para validar los valores introducidos
+   1. Seleccione ***Probar configuración del dispositivo*** para validar los valores introducidos
    1. Seleccionar Aceptar
 
-## Añadir funciones de usuario de AEM Mobile y asignar permisos {#adding-aem-mobile-user-roles-and-assigning-permissions}
+## Añadir las funciones de usuario de AEM Mobile y asignar permisos {#adding-aem-mobile-user-roles-and-assigning-permissions}
 
 Después de crear un proyecto, debe crear funciones y conceder acceso a los usuarios. Solo los administradores principales pueden crear y editar funciones. Al crear una función, se habilitan las capacidades (o permisos) para los usuarios a los que se asignen dichos permisos. Por ejemplo, puede crear una función que incluya permisos para la creación de aplicaciones y otra que incluya permisos para crear y publicar contenido.
 
@@ -129,7 +129,7 @@ Para obtener más información sobre la creación de funciones con diferentes pe
 >
 >Para obtener más información sobre AEM Mobile Panel, haga clic [aquí](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Una vez que haya terminado de crear funciones con diferentes permisos, como para la creación de aplicaciones o para crear y publicar contenido, consulte [**Configuración de grupos **](/help/mobile/aem-mobile-configure-users.md)de usuarios y usuarios para configurar los usuarios y grupos de modo que admitan la creación y la gestión de aplicaciones móviles.
+Una vez que haya terminado de crear funciones con diferentes permisos, como para la creación de aplicaciones o para crear y publicar contenido, consulte [**Configurar los grupos de usuarios y usuarios**](/help/mobile/aem-mobile-configure-users.md) para configurar los usuarios y grupos de modo que admitan la creación y la gestión de las aplicaciones móviles.
 
 ### Recursos adicionales {#additional-resources}
 

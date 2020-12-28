@@ -46,7 +46,7 @@ Para crear páginas de aterrizaje en AEM, siga los pasos siguientes:
 1. Importe el paquete de diseño en la página del importador. 
 1. Modifique y publique la página.
 
-### Páginas de aterrizaje de escritorio {#desktop-landing-pages}
+### Páginas de aterrizaje de escritorio  {#desktop-landing-pages}
 
 A continuación se muestra un ejemplo de una página de aterrizaje en AEM:
 
@@ -54,7 +54,7 @@ A continuación se muestra un ejemplo de una página de aterrizaje en AEM:
 
 ### Páginas de aterrizaje móviles {#mobile-landing-pages}
 
-Una página de aterrizaje también puede tener una versión móvil. To have a separate mobile version of the landing page the import design has to have two html files: *index.htm(l)* and *mobile.index.htm(l)*.
+Una página de aterrizaje también puede tener una versión móvil. Para tener una versión móvil independiente de la página de aterrizaje, el diseño de importación debe tener dos archivos html: *index.htm(l)* y *mobile.index.htm(l)*.
 
 El procedimiento de importación de la página de aterrizaje es el mismo que el de una página de aterrizaje normal pero el diseño de página de aterrizaje tiene un archivo HTML adicional que corresponde a la página de aterrizaje móvil. Este archivo HTML también debe tener un lienzo `div` con `id=cqcanvas`, como el HTML de la página de aterrizaje de escritorio, y admitirá todos los componentes editables descritos para la página de aterrizaje de escritorio.
 
@@ -66,7 +66,7 @@ La página de aterrizaje móvil se crea como una página secundaria de la págin
 >
 >La página de aterrizaje móvil se eliminará o desactivará junto con la de escritorio si se elimina o desactiva la página de aterrizaje de escritorio.
 
-## Componentes de la página de aterrizaje {#landing-page-components}
+## Componentes de la página de aterrizaje  {#landing-page-components}
 
 Para que partes del HTML importado se puedan editar en AEM, puede asignar contenido en el HTML de las páginas de aterrizaje a componentes de AEM directamente. El importador de diseños entiende los componentes siguientes de forma predeterminada:
 
@@ -130,20 +130,20 @@ Este componente de llamada a acción puede utilizarse para añadir un vínculo d
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-**Etiqueta** El texto que ven los usuarios. Puede modificar el formato con el editor de texto enriquecido.
+**** EtiquetaTexto que ven los usuarios. Puede modificar el formato con el editor de texto enriquecido.
 
-**URL** de DestinatarioIntroduzca el URI que desea que visiten los usuarios si hacen clic en el texto.
+**URL de destinatarioIntroduzca el** URI que desea que visiten los usuarios si hacen clic en el texto.
 
-**Opciones** de procesamiento Describe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
+**Opciones** de procesamientoDescribe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
 
 * Cargar página en una nueva ventana del navegador
 * Cargar página en la ventana actual
 * Cargar página en el marco principal
 * Cancelar todos los marcos y cargar la página en una ventana de navegador completa
 
-**CSS** En la ficha Estilo, introduzca una ruta de acceso a la hoja de estilo CSS.
+**** CSSOen la ficha Estilo, introduzca una ruta de acceso a la hoja de estilo CSS.
 
-**ID** En la ficha Estilo, introduzca un ID para que el componente lo identifique de forma única.
+**** IDOen la ficha Estilo, introduzca un ID para que el componente lo identifique de forma exclusiva.
 
 A continuación se muestra un ejemplo de un vínculo de pulsaciones:
 
@@ -155,20 +155,20 @@ Este componente de llamada a acción puede utilizarse para añadir imágenes gr�
 
 ![chlimage_1-51](assets/chlimage_1-51.png)
 
-**Etiqueta** Texto que los usuarios ven en el gráfico. Puede modificar el formato con el editor de texto enriquecido.
+**** EtiquetaTexto que los usuarios ven en el gráfico. Puede modificar el formato con el editor de texto enriquecido.
 
-**URL** de DestinatarioIntroduzca el URI que desea que visiten los usuarios si hacen clic en la imagen.
+**URL de destinatarioIntroduzca el** URI que desea que visiten los usuarios si hacen clic en la imagen.
 
-**Opciones** de procesamiento Describe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
+**Opciones** de procesamientoDescribe las opciones de procesamiento. Puede seleccionar entre las siguientes opciones:
 
 * Cargar página en una nueva ventana del navegador
 * Cargar página en la ventana actual
 * Cargar página en el marco principal
 * Cancelar todos los marcos y cargar la página en una ventana de navegador completa
 
-**CSS** En la ficha Estilo, introduzca una ruta de acceso a la hoja de estilo CSS.
+**** CSSOen la ficha Estilo, introduzca una ruta de acceso a la hoja de estilo CSS.
 
-**ID** En la ficha Estilo, introduzca un ID para que el componente lo identifique de forma única.
+**** IDOen la ficha Estilo, introduzca un ID para que el componente lo identifique de forma exclusiva.
 
 A continuación se muestra un ejemplo de un vínculo gráfico:
 
@@ -192,7 +192,7 @@ Los campos y elementos de formulario pueden incluir cuadros de texto, botones de
 
 * **Componentes de perfil** Los componentes de perfil se refieren a perfiles de usuarios que se utilizan para colaboración social y otras áreas donde la personalización de los usuarios es obligatoria.
 
-The preceding shows an example form; it is comprised of the **Lead Form** component (start and end), with **First Name** and **Email Id** fields used for input and a **Submit** field
+El ejemplo anterior muestra un formulario; consta del componente **Formulario de posibles clientes** (inicio y final), con los campos **Nombre** y **Id. de correo electrónico** utilizados para la introducción de datos y un campo **Enviar**
 
 Desde la barra de tareas, hay disponibles los componentes siguientes para Llamada a acción: formulario de posibles clientes:
 
@@ -219,23 +219,23 @@ Aquí deberá especificar la información básica, como el título del component
 >
 >No están disponibles todas las opciones en todos los componentes del formulario de posibles clientes. Consulte Formularios para ver más información sobre esta [configuración común](/help/sites-authoring/default-components.md#formsgroup).
 
-#### Componentes del formulario de posibles clientes {#lead-form-components}
+#### Componentes del formulario de posibles clientes  {#lead-form-components}
 
 En la sección siguiente se describen los componentes disponibles en Llamada a acción: formularios de posibles clientes.
 
-**Acerca** Permite a los usuarios agregar información Acerca de.
+**** AboutPermite que los usuarios agreguen información.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Campo** de dirección Permite a los usuarios introducir información de dirección. Al configurar este componente, debe especificar en Nombre de elemento en el cuadro de diálogo. El Nombre de elemento es el nombre del elemento del formulario. Indica en qué lugar del repositorio se almacenan los datos.
+**Campo** de direcciónPermite a los usuarios introducir información de dirección. Al configurar este componente, debe especificar en Nombre de elemento en el cuadro de diálogo. El Nombre de elemento es el nombre del elemento del formulario. Indica en qué lugar del repositorio se almacenan los datos.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**Fecha de nacimiento** Los usuarios pueden introducir la información de fecha de nacimiento.
+**Fecha de** nacimientoLos usuarios pueden introducir la información de fecha de nacimiento.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-**ID** de correo electrónico Permite a los usuarios introducir una dirección de correo electrónico (identificación).
+**ID** de correo electrónicoPermite a los usuarios introducir una dirección de correo electrónico (identificación).
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -243,19 +243,19 @@ En la sección siguiente se describen los componentes disponibles en Llamada a a
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-**Sexo** Los usuarios pueden seleccionar su sexo en una lista desplegable.
+**** SexoLos usuarios pueden seleccionar su sexo en una lista desplegable.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-**Apellidos** Los usuarios pueden introducir la información de Apellidos.
+**ApellidosLos usuarios pueden introducir la información de Apellidos.** 
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-**Formulario** de posibles clientes Añada este componente para agregar un formulario de posibles clientes a la página de aterrizaje. Un formulario de posibles clientes contiene los campos Inicio del formulario de posibles clientes y Fin del formulario de posibles clientes de forma predeterminada. Entre ellos, puede añadir los componentes de Formulario de posibles clientes descritos en esta sección.
+**Formulario** de posibles clientesAgregue este componente para agregar un formulario de posibles clientes a la página de aterrizaje. Un formulario de posibles clientes contiene los campos Inicio del formulario de posibles clientes y Fin del formulario de posibles clientes de forma predeterminada. Entre ellos, puede añadir los componentes de Formulario de posibles clientes descritos en esta sección.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
-The Lead Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. Estos siempre están emparejados para garantizar que el formulario se define correctamente.
+El componente Formulario de posibles clientes define el inicio y el final de un formulario utilizando los elementos **Inicio de formulario** y **Fin de formulario**. Estos siempre están emparejados para garantizar que el formulario se define correctamente.
 
 Tras añadir el formulario de posibles clientes, puede configurar el inicio o el final del formulario y hacer clic en **Editar** en la barra correspondiente.
 
@@ -268,11 +268,11 @@ Se pueden configurar dos fichas **Formulario** y **Avanzado**:
 **Página de agradecimiento**
 Página a la que se hace referencia para agradecer a los visitantes su contenido. Si se deja en blanco, el formulario se vuelve a mostrar tras el envío.
 
-**Flujo de trabajo** de Inicio Determina qué flujo de trabajo se activa una vez que se envía un formulario de posibles clientes.
+**Flujo de** trabajo de inicioDetermina qué flujo de trabajo se activa una vez que se envía un formulario de posibles clientes.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-**Opciones** de anuncio Hay disponibles las siguientes opciones de anuncio:
+**Opciones** de anuncioLas siguientes opciones de anuncio están disponibles:
 
 * Crear posible cliente
 * Servicio de correo electrónico: crear suscriptor y añadir a la lista. Se utiliza con un proveedor de servicios de correo electrónico como ExactTarget.
@@ -280,15 +280,15 @@ Página a la que se hace referencia para agradecer a los visitantes su contenido
 * Servicio de correo electrónico: Cancelar la suscripción del usuario de la lista: se utiliza si utiliza un proveedor de servicio de correo electrónico como ExactTarget.
 * Cancelar la suscripción del usuario 
 
-**Identificador** del formulario El identificador del formulario identifica de forma exclusiva el formulario de posibles clientes. Utilice el identificador del formulario si tiene varios formularios en una misma página; asegúrese de que tienen identificadores distintos.
+**Identificador** del formularioEl identificador del formulario identifica de forma exclusiva el formulario de posibles clientes. Utilice el identificador del formulario si tiene varios formularios en una misma página; asegúrese de que tienen identificadores distintos.
 
-**Ruta** de carga Es la ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en los campos del formulario de posibles clientes.
+**Cargar** rutaEs la ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en los campos del formulario de posibles clientes.
 
 Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo cuenta con propiedades que coinciden con los nombres de campo, los campos apropiados del formulario se cargan previamente con el valor de estas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
 
-**Validación** del cliente Indica si se requiere la validación del cliente para este formulario (siempre se produce la validación del servidor). Esto se puede lograr junto con el componente Captcha de Forms.
+**Validación** del clienteIndica si se requiere la validación del cliente para este formulario (la validación del servidor siempre se produce). Esto se puede lograr junto con el componente Captcha de Forms.
 
-**Tipo** de recurso de validación Define el tipo de recurso de validación del formulario si desea validar todo el formulario de posibles clientes (en lugar de los campos individuales).
+**Validación** Tipo de recursoDefine el tipo de recurso de validación del formulario si desea validar todo el formulario de posibles clientes (en lugar de los campos individuales).
 
 Si va a validar el formulario completo, incluya también una de las siguientes operaciones:
 
@@ -300,7 +300,7 @@ Si va a validar el formulario completo, incluya también una de las siguientes o
 
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configuración** de la acción Según la selección en Opciones de anuncio, cambia la Configuración de la acción. Por ejemplo, cuando selecciona Crear posible cliente, puede configurar la lista a la que se añadirá el posible cliente.
+**Configuración** de la acciónSegún la selección en Opciones de anuncio, cambia la Configuración de la acción. Por ejemplo, cuando selecciona Crear posible cliente, puede configurar la lista a la que se añadirá el posible cliente.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -324,7 +324,7 @@ Para crear una página de aterrizaje, debe seguir tres pasos:
 1. [Prepare el HTML para su importación.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) 
 1. Importe el paquete de diseño.
 
-### Crear una página de importador {#creating-an-importer-page}
+### Crear una página de importador  {#creating-an-importer-page}
 
 Antes de importar el diseño de la página de aterrizaje, debe crear una página de importador, por ejemplo, en una campaña. La plantilla de Página de importador le permite importar la página de aterrizaje completa en formato HTML. La página contiene un cuadro en el que se puede importar el paquete de diseño de la página de aterrizaje si lo arrastra y suelta.
 
@@ -336,18 +336,18 @@ Para crear una nueva página de aterrizaje:
 
 1. Vaya a la consola **Sitios web**.
 1. Seleccione su campaña en el panel izquierdo.
-1. Click **New** to open the** Create Page **window.
+1. Haga clic en **Nuevo** para abrir la ventana** Crear página **ventana.
 1. Seleccione la plantilla **Página importadora**, añada un título y, si lo desea, un nombre, y haga clic en **Crear**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
    Se muestra la nueva página del importador.
 
-### Preparar el HTML para su importación {#preparing-the-html-for-import}
+### Preparar el HTML para su importación  {#preparing-the-html-for-import}
 
 Antes de importar el paquete de diseño, el HTML debe prepararse. Consulte [Ampliar y configurar el importador de diseños](/help/sites-administering/extending-the-design-importer-for-landingpages.md) para obtener más información.
 
-### Importar el paquete de diseño {#importing-the-design-package}
+### Importar el paquete de diseño  {#importing-the-design-package}
 
 Tras crear una página importadora, puede importar un paquete de diseño en la misma. Los detalles acerca de cómo crear el paquete de diseño y su estructura recomendada se explican en [ Ampliar y configurar la importación de diseños](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
@@ -366,7 +366,7 @@ Si el paquete de diseño está preparado, en los siguientes pasos se describe c�
 >
 >Si tiene problemas al importar el paquete de diseño, consulte [Solución de problemas](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
-## Uso de páginas de aterrizaje {#working-with-landing-pages}
+## Uso de páginas de aterrizaje  {#working-with-landing-pages}
 
 Normalmente, un diseñador en una agencia crea el diseño y los recursos de una página de aterrizaje con herramientas como Adobe Photoshop o Adobe Dreamweaver. Cuando ha terminado el diseño, el diseñador envía un archivo comprimido con todos los recursos al equipo de marketing. La persona de contacto en marketing es responsable de transferir el archivo comprimido a AEM y publicar su contenido.
 
@@ -392,13 +392,13 @@ La descarga del archivo comprimido le permite registrar qué archivo comprimido 
 
 Para descargar el paquete de diseño importado, haga clic en **Descargar archivo comprimido** en la barra de herramientas de la página de aterrizaje.
 
-### Visualizar información de importación {#viewing-import-information}
+### Visualizar información de importación  {#viewing-import-information}
 
 Puede ver información sobre la última importación en cualquier momento si hace clic en el signo de exclamación azul de la parte superior de la página de aterrizaje, en la interfaz de usuario clásica.
 
-![chlimage_1-78](assets/chlimage_1-70.png)
+![chlimage_1-70](assets/chlimage_1-70.png)
 
-Si el paquete de diseño importado tiene problemas (si, por ejemplo, hace referencia a imágenes o scripts que no existen en el paquete, etc.), el importador de diseños muestra los problemas en una lista. Para ver la lista de problemas, haga clic en el vínculo de problemas de la Página de aterrizaje que está en la barra de herramientas de la interfaz de usuario clásica. In the following image, clicking on **Issues** link opens the Import Issues window.
+Si el paquete de diseño importado tiene problemas (si, por ejemplo, hace referencia a imágenes o scripts que no existen en el paquete, etc.), el importador de diseños muestra los problemas en una lista. Para ver la lista de problemas, haga clic en el vínculo de problemas de la Página de aterrizaje que está en la barra de herramientas de la interfaz de usuario clásica. En la siguiente imagen, al hacer clic en el vínculo **Problemas** se abre la ventana Problemas de importación.
 
 ![climage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -406,7 +406,7 @@ Si el paquete de diseño importado tiene problemas (si, por ejemplo, hace refere
 
 Si desea volver a importar el paquete de diseño de la página de aterrizaje tras realizar algunos cambios en ella, puede “borrarla” si hace clic en **Borrar** en la parte superior de la página de aterrizaje en la interfaz de usuario clásica o hace clic en Borrar en el menú Configuración en la interfaz de usuario táctil. Al hacer esto, se borrará la página de aterrizaje importada y se creará otra en blanco.
 
-Al borrar la página de aterrizaje, puede eliminar los cambios de contenido. If you click **No**, then the content changes are preserved, that is, the structure under `jcr:content/importer`is preserved and only the importer page component and the resources in `etc/design` are removed. Whereas, if you click **Yes**, the `jcr:content/importer` is also removed.
+Al borrar la página de aterrizaje, puede eliminar los cambios de contenido. Si hace clic en **No**, se conservan los cambios de contenido, es decir, se conserva la estructura de `jcr:content/importer`y sólo se eliminan el componente de página importador y los recursos de `etc/design`. Mientras que, si hace clic en **Sí**, también se elimina el `jcr:content/importer`.
 
 >[!NOTE]
 >
@@ -422,13 +422,13 @@ Para añadir componentes a la página de aterrizaje, arrástrelos y colóquelos 
 >
 >Si un componente de la página de aterrizaje no puede editarse, debe volver a importar el archivo comprimido tras [modificar el archivo HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa que, durante la importación, las partes no editables no se convirtieron en componentes de AEM.
 
-### Eliminar una página de aterrizaje {#deleting-a-landing-page}
+### Eliminar una página de aterrizaje  {#deleting-a-landing-page}
 
 Eliminar una página de aterrizaje es como eliminar una página normal de AEM.
 
 La única excepción es que, cuando se elimina una página de aterrizaje de escritorio, también se eliminará la página de aterrizaje móvil correspondiente (si existe) pero no al revés.
 
-### Publicar una página de aterrizaje {#publishing-a-landing-page}
+### Publicar una página de aterrizaje  {#publishing-a-landing-page}
 
 Puede publicar la página de aterrizaje y todas sus dependencias como publicar una página normal.
 

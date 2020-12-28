@@ -48,7 +48,7 @@ Puede editar una página con el editor. Por ejemplo:
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
-* El selector [**Información de página **](/help/sites-authoring/editing-page-properties.md#page-properties)mostrará las diapositivas introductorias (tal y como se muestran la primera vez que se accede al editor).
+* El selector [**Información de página**](/help/sites-authoring/editing-page-properties.md#page-properties) mostrará las diapositivas introductorias (tal y como se muestran la primera vez que se accede al editor).
 * El cuadro de diálogo [Configuración](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) de componentes específicos (utilizando el icono ? de la barra de herramientas del cuadro de diálogo); se mostrará ayuda contextual.
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-authoring/basic-handling.md#accessing-help).
@@ -262,20 +262,20 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 * [Bloquear página](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publicar página](/help/sites-authoring/publishing-pages.md#publishing-pages)
 * [Cancelar la publicación de página](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
-* [Ver tal y como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
+* [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
 * [Ver en administración](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Ayuda](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Por ejemplo, cuando corresponda, **Información de página** también dispone de las opciones siguientes:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es nueva.
-* [Editar plantilla](/help/sites-authoring/templates.md) si la página está basada en una plantilla [editable](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Editar ](/help/sites-authoring/templates.md) plantilla si la página está basada en una plantilla  [editable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [Abrir en la IU](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) clásica si un administrador ha [habilitado estas opciones](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) IU clásicasi un administrador ha  [habilitado estas opciones](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página   {#page-modes}
+## Modos de página    {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
@@ -315,7 +315,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](/help/sites-authoring/author-environment-tools.md#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) permite una selección más sólida.
 
-### Campos de rutas   {#path-fields}
+### Campos de rutas    {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 

@@ -41,7 +41,7 @@ La estructura de un sitio web se puede considerar como una *estructura de árbol
 
 A continuación encontrará un fragmento del sitio Geometrixx, desde el que se accederá, por ejemplo, a la página `Triangle`:
 
-* entorno de autor
+* Entorno de autor
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +49,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+   Según la configuración de la instancia, el uso de `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
   /content
@@ -71,7 +71,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
     /...
 ```
 
-This structure can be viewed from the Websites console, which you can use to [navigate through the tree structure](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Esta estructura se puede ver desde la consola Sitios web, que puede utilizar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +89,7 @@ Cuando se crea una nueva página aparecen dos campos clave:
    * Se usa para generar la URI.
    * Es opcional que el usuario especifique algo en este campo. Si no se especifica, el nombre se deriva del título.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
+Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
 La implementación y la lista de caracteres permitidos difieren ligeramente según la IU (es más extensa para la IU táctil), pero el mínimo permitido es:
 
@@ -114,10 +114,10 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 Al indicar un valor **Nombre**[ cuando se cree una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR.](/help/sites-developing/naming-conventions.md)
 
-In the Classic UI you **cannot enter invalid characters** in the **Name** field.
+En la IU clásica, **no puede introducir caracteres no válidos** en el campo **Nombre**.
 
 >[!NOTE]
->In the touch-enabled UI you **cannot submit invalid characters** in the **Name** field. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
+>En la IU táctil, **no puede enviar caracteres no válidos** en el campo **Nombre**. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Vídeo
 * Muchas más
 
-Once you have created and opened a page you can [add content using the components](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), available from the [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Una vez que haya creado y abierto una página, puede [agregar contenido utilizando los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles en la [barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Administrar páginas {#managing-pages}
 
@@ -195,7 +195,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
 
    >[!NOTE]
    >
-   >También puede crear una página mientras edita una página existente. Using **Create Child Page **from the **Page** tab of the sidekick, will create a new page directly under the page being edited.
+   >También puede crear una página mientras edita una página existente. Si utiliza **Crear página secundaria **desde la ficha **Página** de la barra de tareas, se creará una nueva página directamente debajo de la página que se está editando.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
@@ -329,7 +329,7 @@ Puede [bloquear o desbloquear una página](/help/sites-classic-ui-authoring/clas
 >A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de las carpetas están también sujetas a las [convenciones de nomenclatura de páginas](#page-naming-conventions).
 
 1. Abra la consola **Sitios web** y vaya hasta la ubicación deseada.
-1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
+1. En **Nuevo...** (haga clic en la flecha junto a **Nuevo...**), seleccione **Nueva carpeta...**.
 1. Se abrirá el cuadro de diálogo **Crear carpeta**. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)

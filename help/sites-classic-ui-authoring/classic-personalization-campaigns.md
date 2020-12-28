@@ -40,10 +40,12 @@ La administración de campañas consta de varios elementos:
 En AEM, las marcas son la unidad de nivel superior y forman una colección de 
 **Campañas**.
 
-* **Campañas** Una campaña es una colección de 
+* ****
+Campañas Una campaña es una colección de elementos individuales 
 **Experiencias**.
 
-* **Experiencias** El contenido específico forma las distintas experiencias, presentadas al visitante en 
+* ****
+ExperienciasEl contenido centrado forma las distintas experiencias, presentadas al visitante en 
 **Touchpoints**. Existen varios tipos de experiencia:
 
    * **Teasers**

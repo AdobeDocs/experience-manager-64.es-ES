@@ -22,7 +22,7 @@ ht-degree: 93%
 
 AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente **Contenedor de diseño**.
 
-Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. Este componente se utiliza en combinación con el modo [**Diseño **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
+Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
 
 El contenedor de diseños:
 
@@ -41,15 +41,15 @@ El usuario puede utilizar el emulador para ver cómo se representará el conteni
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* Componente [**Contenedor de diseño **](#adding-a-layout-container-and-its-content-edit-mode)
+* Componente [**Contenedor de diseño**](#adding-a-layout-container-and-its-content-edit-mode)
 
    Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
 
-* [**Modo de diseño **](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**Modo de diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
-* [**Emulador **](#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
+* [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
 Estos mecanismos de cuadrícula interactiva le permiten:
 
@@ -67,7 +67,7 @@ En función del proyecto, el contenedor de diseño se puede utilizar como sistem
 
 >[!NOTE]
 >
->El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. Consulte [Configuración del diseño interactivo](/help/sites-administering/configuring-responsive-layout.md) para obtener más información.
 
 ## Definiciones de diseños, emulación de dispositivos y puntos de interrupción {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +153,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si todavía no está disponible, el **contenedor de diseño** debe [activarse específicamente para un sistema de párrafos o página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo de [**diseño **](/help/sites-authoring/default-components-designmode.md)).
+>Si todavía no está disponible, el **contenedor de diseño** debe [activarse específicamente para un sistema de párrafos o página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo de [**diseño**](/help/sites-authoring/default-components-designmode.md)).
 
 1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:
@@ -263,8 +263,9 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar componentes** Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
-**Mostrar la opción de componentes** ocultos. En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar**
+componentesSeleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
+**Mostrar** componentes ocultos, opción. En este ejemplo, hay dos componentes ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.

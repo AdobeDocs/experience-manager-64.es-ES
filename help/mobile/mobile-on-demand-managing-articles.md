@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar artículos dentro de una aplicación. Las siguientes acciones se realizan en artículos dentro de la aplicación.
+Las acciones de gestor de contenido son los componentes básicos que ayudan a crear y administrar artículos dentro de una aplicación. Las siguientes acciones se realizan en artículos dentro de la aplicación.
 
 ## Información general de artículos {#articles-overview}
 
@@ -49,11 +49,11 @@ El flujo de trabajo general para crear un artículo es el siguiente:
 
 1. Seleccione **Móvil** en el carril lateral.
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar artículos** .
+1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar artículos**.
 1. Elija una plantilla de artículo y haga clic en **Siguiente**.
 1. Siga todos los pasos del asistente para seguir creando el nuevo artículo.
 1. Cuando esté listo, haga clic en **Crear**.
-1. El nuevo artículo aparece en el mosaico **Administrar artículos** .
+1. El nuevo artículo aparece en el mosaico **Administrar artículos**.
 
 ## Importación de un nuevo artículo {#importing-a-new-article}
 
@@ -68,7 +68,7 @@ Flujo de trabajo para importar un nuevo artículo
 1. En Mobile, seleccione su aplicación móvil bajo demanda en el catálogo.
 1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar artículos** y seleccione Importar artículos.
 1. Haga clic en **Importar artículos** en el cuadro de diálogo y, a continuación, en Cerrar.
-1. Los artículos a petición de Mobile aparecen ahora en el mosaico **Administrar artículos** .
+1. Los artículos bajo demanda de Mobile ahora aparecen en el mosaico **Administrar artículos**.
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Utilice el editor integrado AEM arrastrar y soltar para añadir o cambiar un art
 Flujo de trabajo para editar un artículo:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione un artículo de origen AEM en el mosaico **Administrar artículos** .
+1. Seleccione un artículo de origen AEM en el mosaico **Administrar artículos**.
 1. Haga clic en el artículo resaltado de la vista de lista para abrirlo en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar el contenido del artículo (manuscritos, imágenes, texto, etc.).
 
@@ -98,9 +98,9 @@ Contenido como artículos, pancartas, etc. tiene numerosas propiedades, como tí
 Flujo de trabajo general para la vista/edición de un artículo:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Elija un artículo en el mosaico **Administrar artículos** .
+1. Elija un artículo en el mosaico **Administrar artículos**.
 
-1. Seleccione Propiedades **de** Vista en la barra de acciones.
+1. Seleccione **Propiedades de Vista** en la barra de acciones.
 1. Vista todos los metadatos disponibles para ese artículo.
 1. Edite los metadatos si lo desea y haga clic en **Guardar** cuando termine.
 1. De forma opcional, cargue los cambios inmediatamente en Mobile On-Demand.
@@ -112,9 +112,9 @@ La acción de carga copia el contenido seleccionado y lo agrega a un proyecto de
 Flujo de trabajo general para cargar un artículo:
 
 1. En **Mobile**, elija la aplicación móvil bajo demanda en el catálogo.
-1. En el mosaico **Administrar artículos** , seleccione un artículo para cargarlo en Mobile On-Demand.
+1. En el mosaico **Administrar artículos**, seleccione un artículo para cargarlo en Mobile On-Demand.
 1. Añada más artículos si es necesario desde la vista de lista.
-1. Seleccione **Cargar** en la barra de acciones y, a continuación, haga clic en Cargar en el cuadro de diálogo.
+1. Seleccione **Cargar** en la barra de acciones y haga clic en Cargar en el cuadro de diálogo.
 1. Los artículos ahora se cargan en Mobile On-Demand.
 
 ![climage_1-4](assets/chlimage_1-4.gif)
@@ -126,9 +126,9 @@ Esta operación elimina el contenido seleccionado de Mobile On-Demand y, opciona
 Flujo de trabajo general para eliminar un artículo:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione el artículo que desea eliminar en el mosaico **Administrar artículos** .
+1. Seleccione el artículo que desea eliminar en el mosaico **Administrar artículos**.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
-1. Click **Delete** from the action bar.
+1. Haga clic en **Eliminar** en la barra de acciones.
 1. Compruebe si desea eliminar de AEM y de Mobile On-Demand.
 1. Haga clic en **Eliminar**.
 1. El artículo se ha eliminado de la lista.

@@ -62,7 +62,7 @@ Para cambiar el período de informe de una página Perspectiva de contenido:
 
 1. Para cambiar la fecha de finalización del período de informe, arrastre el círculo que aparece en la parte derecha del área sombreada a la fecha de finalización deseada.
 
-### Cambio de la granularidad del período de informe {#changing-the-granularity-of-the-reporting-period}
+### Cambio de la granularidad del período de informe  {#changing-the-granularity-of-the-reporting-period}
 
 Cambie la cantidad de tiempo que cada punto de datos abarca en un informe. Por ejemplo, al seleccionar la granularidad Semana, cada punto de datos del informe Vistas representa la cantidad de vistas realizadas durante una semana.
 
@@ -76,7 +76,7 @@ La granularidad afecta a los informes que asignan datos a valores temporales, co
 
 1. Toque o haga clic en la granularidad que desee. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
 
-## Asignación de tareas para Recomendaciones de SEO {#assigning-tasks-for-seo-recommendations}
+## Asignación de tareas para Recomendaciones de SEO  {#assigning-tasks-for-seo-recommendations}
 
 Utilice el informe Recomendaciones de SEO para crear tareas para mejorar la visibilidad de la página para los motores de búsqueda. Para cada recomendación del informe que no tenga una marca, puede crear una tarea que asigna a un usuario para realizar el trabajo necesario.
 

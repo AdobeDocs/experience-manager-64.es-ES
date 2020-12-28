@@ -31,7 +31,7 @@ Esto podría servir como una evaluación de las actividades de desarrollo que en
 
 ## Configuración {#how-to-set-up}
 
-El detector de patrones se libera por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen AEM de 6.1 a 6.5 con el objetivo AEM actualización 6.5. Se puede instalar mediante el Administrador de [paquetes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+El detector de patrones se libera por separado como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen AEM de 6.1 a 6.5 que tenga como objetivo AEM actualización 6.5. Se puede instalar mediante el [Administrador de paquetes](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Usos {#how-to-use}
 
@@ -41,7 +41,7 @@ El detector de patrones se libera por separado como [un paquete](https://www.ado
 >
 >* aumentar la velocidad de detección
 >* evitar cualquier desaceleración en instancias críticas del negocio\
-   >al mismo tiempo, se recomienda ejecutarlo **en entornos** de ensayo lo más próximos posible a los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+   >al mismo tiempo, se recomienda ejecutarlo **en entornos de ensayo** que estén lo más cerca posible de los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 
 
 Puede utilizar varios métodos para comprobar la salida del detector de patrones:
@@ -49,7 +49,7 @@ Puede utilizar varios métodos para comprobar la salida del detector de patrones
 * **A través de la consola de Felix Inventory:**
 
 1. Vaya a la consola web de AEM navegando a: https://<i></i>serveraddress:serverport/system/console/configMgr
-1. Seleccione **Estado - Detector** de patrones como se muestra en la siguiente imagen:
+1. Seleccione **Estado - Detector de patrones** como se muestra en la siguiente imagen:
 
    ![captura de pantalla: detector de patrones 2-5-2-2018](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -68,7 +68,7 @@ El resultado está disponible actualmente en 2 direcciones URL:
 1. Interfaz de texto sin formato
 1. Interfaz JSON
 
-## Gestión de la interfaz de texto sin formato {#handling-the-plain-text-interface}
+## Administración de la interfaz de texto sin formato {#handling-the-plain-text-interface}
 
 La información del resultado tiene un formato de serie de entradas de evento. Hay dos canales: uno para publicar infracciones y otro para publicar el progreso actual.
 
@@ -84,7 +84,7 @@ El resultado será el siguiente:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-El progreso se puede filtrar mediante el `grep` comando:
+El progreso se puede filtrar mediante el comando `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -100,7 +100,7 @@ El resultado es el siguiente:
 
 ## Gestión de la interfaz JSON {#handling-the-json-interface}
 
-Del mismo modo, JSON puede procesarse con la herramienta [](https://stedolan.github.io/jq/) jq en cuanto se publique.
+Del mismo modo, JSON puede procesarse con la [herramienta jq](https://stedolan.github.io/jq/) tan pronto como se publique.
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -210,14 +210,14 @@ Con el resultado:
 
 >[!NOTE]
 >
->El método recomendado es guardar todo el resultado de curl en el archivo y luego procesarlo a través `jq` o `grep` para filtrar el tipo de información.
+>El método recomendado es guardar todo el resultado de curl en el archivo y luego procesarlo mediante `jq` o `grep` para filtrar el tipo de información.
 
 ## Ámbito de detección {#scope}
 
 El detector de patrones actual permite comprobar:
 
 * Los paquetes OSGi exportan e importan no coinciden
-* Sobreutilización de tipos de recursos y supertipos (con superposiciones de contenido de ruta de búsqueda) de ventas
+* Creación de supertipos y tipos de recursos (con superposiciones de contenido de ruta de búsqueda)
 * definiciones de índices Oak (compatibilidad)
 * Paquetes VLT (sobreutilización)
 * rep:Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)

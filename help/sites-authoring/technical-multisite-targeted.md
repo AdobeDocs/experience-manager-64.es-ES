@@ -22,7 +22,7 @@ ht-degree: 89%
 
 En el siguiente diagrama se muestra la estructuración de la compatibilidad con el uso de varios sitios para contenido de destino
 
-Areas appear underneath **/content/campaigns/&lt;brand>** and by default each brand has a master area, which is created automatically. Cada área tiene su propio conjunto de actividades, experiencias y ofertas.
+Las áreas aparecen debajo de **/content/campañas/&lt;marca>** y, de forma predeterminada, cada marca tiene un área maestra, que se crea automáticamente. Cada área tiene su propio conjunto de actividades, experiencias y ofertas.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 

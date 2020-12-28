@@ -37,7 +37,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Portal Director | El Portal Director es un conjunto de funciones que permite alojar AEM contenido a través de Portlet en servidores de terceros. Adobe no planea realizar más mejoras en la función Portal Director en la ubicación que se indica a continuación. AEM 6.4 incluye el portal Director y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que Portal Direct sigue siendo totalmente compatible mientras está en desuso. <ul><li>/libs/portal/director</li></ul> | El Adobe no planea proporcionar una sustitución. |
 | Componente Portlet | Portlet Components bajo /foundation/components/portlet permite alojar portlets JSR en AEM como componentes. Adobe no planea realizar más mejoras en la función Componente Portlet. AEM 6.4 incluye el componente Portlet, y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que el componente Portlet sigue siendo totalmente compatible mientras está en desuso. | El Adobe no planea proporcionar una sustitución. |
 | Forms | La compatibilidad con el servicio Adobe Central Migration Bridge ha quedado obsoleta, ya que el producto Adobe Central ya no es compatible. | Sin reemplazo |
-| Forms | Uso desaprobado de JSONObject en Consulta y OperationOptions. Las siguientes API están en desuso: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Uso de la `IValueMap` API |
+| Forms | Uso desaprobado de JSONObject en Consulta y OperationOptions. Las siguientes API están en desuso: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Utilizar la API `IValueMap` |
 | Forms | Servicio de puente de migración central obsoleto. | No se ofrece reemplazo. |
 | Assets | La descarga de recursos ha quedado obsoleta a partir de AEM 6.4. |  |
 | Desarrolladores | Biblioteca de cliente de guion bajo/guion bajo. Adobe no planea seguir manteniendo y actualizando la biblioteca de clientes Lodash/underscore que se envía como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún requieren Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
@@ -147,11 +147,12 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 ## Funciones eliminadas {#removed-features}
 
-La tabla siguiente lista las funciones y capacidades que se han eliminado de la AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como obsoletas.
+La tabla siguiente lista las funciones y capacidades que se han eliminado de la AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como
+desaprobado.
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. The [ActivityMap plug-in provided by Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html) should now be used. |
+| Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Ahora debe utilizarse el complemento [ActivityMap proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html). |
 | Componentes-Forms | Captcha de formulario (foundation/components/form/captcha) | Utilice el componente ReCaptcha de Google en su lugar |
 | Componentes | Presentación de diapositivas (base/componentes/proyección de diapositivas) | Sin reemplazo |
 | Componentes | Flash (foundation/components/flash) | Sin reemplazo |
@@ -178,4 +179,4 @@ La tabla siguiente proporciona una lista de los cambios para futuras versiones, 
 | Área | Función | Anuncio |
 |---|---|---|
 | Compatibilidad con navegadores | Microsoft Internet Explorer | AEM 6.4 es la última versión que admite Microsoft Internet Explorer 11. |
-| Foundation | Marco de interfaz de usuario | Adobe dejará de utilizar los componentes de Coral UI 2 en 2019. AEM 6.4 se basa completamente en la IU de Coral 3 (introducida con AEM 6.2). Adobe recomienda a sus clientes y socios que hayan creado IU personalizadas con Coral 2 que las refactoricen a Coral 3. Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/dialog-conversion.md). |
+| Foundation | Marco de interfaz de usuario | Adobe dejará de utilizar los componentes de Coral UI 2 en 2019. AEM 6.4 se basa completamente en la IU de Coral 3 (introducida con AEM 6.2). Adobe recomienda a sus clientes y socios que hayan creado IU personalizadas con Coral 2 que las refactoricen a Coral 3. Adobe oferta una herramienta para convertir los cuadros de diálogo Coral 2 a Coral 3 - [Leer más](/help/sites-developing/dialog-conversion.md). |

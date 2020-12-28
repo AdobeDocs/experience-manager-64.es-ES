@@ -57,7 +57,7 @@ Para acceder a la consola Grupos:
    * La estructura del sitio de la comunidad debe incluir una función de grupos
    * Estas capturas de pantalla proceden del tutorial Introducción después de [crear grupos al publicar](published-site.md)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Seleccione la carpeta **[!UICONTROL Grupos]** para abrirla.
 

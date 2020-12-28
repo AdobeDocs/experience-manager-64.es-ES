@@ -39,16 +39,16 @@ Estos pasos muestran cómo cifrar la contraseña SMTP para el servicio de correo
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Se muestra la página Compatibilidad con **criptografía de la consola web de** Adobe Experience Manager.
+1. Se muestra la página **Compatibilidad con criptografía de Adobe Experience Manager Web Console**.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. En el campo **Texto** sin formato, introduzca el texto de los datos confidenciales que desea proteger.
+1. En el campo **Texto sin formato**, introduzca el texto de los datos confidenciales que desea proteger.
 1. Seleccione **Protect**. El texto protegido se muestra como texto cifrado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie el texto protegido del paso 5 y péguelo en el valor de formulario OSGI. En este ejemplo, la contraseña **** SMTP cifrada se agrega al servicio *de correo* Day CQ.
+1. Copie el texto protegido del paso 5 y péguelo en el valor de formulario OSGI. En este ejemplo, la **contraseña SMTP** cifrada se agrega al *Servicio de correo de CQ de día*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

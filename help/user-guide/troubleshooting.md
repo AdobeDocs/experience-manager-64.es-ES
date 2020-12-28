@@ -1,12 +1,15 @@
 ---
-title: Solución de problemas de AEM
-seo-title: Solución de problemas de AEM
-description: Solución de problemas de AEM
-seo-description: Solución de problemas de AEM
+title: Resolución de problemas AEM
+seo-title: Resolución de problemas AEM
+description: Resolución de problemas AEM
+seo-description: Resolución de problemas AEM
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 6%
 
 ---
 
@@ -23,8 +26,8 @@ source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
 
 ## Resolución de problemas de registros de AEM {#logs}
 
-[Consulte esta guía y sugerencias para la resolución de problemas con registros de AEM.](/help/sites-administering/troubleshooting.md)
+[Consulte esta guía y sugerencias para la resolución de problemas de registros de AEM.](/help/sites-administering/troubleshooting.md)
 
-## Resolución de problemas de replicación {#replication}
+## Solución de problemas de replicación {#replication}
 
 [Consulte esta guía y consejos para solucionar problemas de replicación en AEM.](/help/sites-deploying/troubleshoot-rep.md)

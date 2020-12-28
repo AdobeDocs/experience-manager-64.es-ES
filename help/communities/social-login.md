@@ -463,7 +463,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**: oauthid-123xxxx
    * **[!UICONTROL reindexar]**: true
-   * **[!UICONTROL reindexCount]**: 3
+   * **[!UICONTROL reindexCount]**: 1
 
 1. Bajo el nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 

@@ -38,9 +38,9 @@ Para ayudarle a crear páginas, el entorno de creación dispone de funciones com
 
 * **Edición in situ** Los componentes Texto e Imagen se pueden editar directamente en la página web sin abrir un cuadro de diálogo o iniciar una acción explícita de almacenamiento.
 
-* **[Barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**Una ventana de “inspector” flotante que aparece en la página editable. Desde aquí, se pueden arrastrar componentes nuevos a la página y se pueden ejecutar acciones específicas para una página.
+* **[Barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** Una ventana de “inspector” flotante que aparece en la página editable. Desde aquí, se pueden arrastrar componentes nuevos a la página y se pueden ejecutar acciones específicas para una página.
 
-* **[Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**El buscador de contenido, situado en la parte izquierda de cada página de creación, ofrece un acceso rápido a una amplia gama de activos, incluidos activos digitales (como otras imágenes, elementos Flash y documentos) y otras páginas y párrafos. Estos elementos pueden arrastrarse a la página, por ejemplo, para colocar activos o crear vínculos a otras páginas.
+* **[Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** El buscador de contenido, situado en la parte izquierda de cada página de creación, ofrece un acceso rápido a una amplia gama de activos, incluidos activos digitales (como otras imágenes, elementos Flash y documentos) y otras páginas y párrafos. Estos elementos pueden arrastrarse a la página, por ejemplo, para colocar activos o crear vínculos a otras páginas.
 
 * **Menú contextual** Si se hace clic con el botón derecho en la mayoría de los elementos que hay en la pantalla (por ejemplo, los párrafos de la página), aparece un menú contextual con las opciones de acciones apropiadas.
 

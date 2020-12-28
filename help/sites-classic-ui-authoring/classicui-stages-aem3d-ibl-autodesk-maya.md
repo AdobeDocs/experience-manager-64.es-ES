@@ -26,17 +26,17 @@ ht-degree: 84%
 1. Establezca la iluminación basada en imágenes.
 
    1. En Configuración de procesamiento, seleccione **[!UICONTROL Procesar mediante: Mental Ray]** y abra la ficha Escena.****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
+   1. Abra el acordeón **[!UICONTROL Entorno]** y haga clic en **[!UICONTROL Crear iluminación basada en imagen]**.
    1. Haga clic en el icono de la casilla que tiene una flecha derecha en la parte izquierda del cuadro para seleccionar el nodo `mentalRayIblShape1`[!UICONTROL  de IBL y cierre Configuración de procesamiento].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. En el **[!UICONTROL Editor de atributos]**, seleccione el nodo de transformación `mentalRayIbl1` y, a continuación, cambie el nombre del nodo de transformación a `AdobeIbl`.
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. Establezca la [!UICONTROL Escala] del nodo para que la esfera de entorno sea significativamente mayor que el objeto 3D más grande que se mostrará con esta etapa (por ejemplo, `10000,10000,10000`).
    1. Seleccione el nodo `AdobeIblShape` y configúrelo como sigue:
 
       * **[!UICONTROL Asignación]**: esférica
       * **[!UICONTROL Tipo]**: archivo de imagen
       * **[!UICONTROL Emitir luz]**: verdadero
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. Adjunte la imagen TIFF de 32 bits deseada al nodo `AdobeIbl`.
 
 
 1. Configure el plano de tierra.
@@ -50,17 +50,17 @@ ht-degree: 84%
 
 1. Configure el procesamiento con Mental Ray.
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   Configure la [!UICONTROL Configuración de procesamiento] con las siguientes sugerencias.
 
-   * **[!UICONTROL Ficha Común]**
+   * **** Comúnmente
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las cámaras procesables.
 
    * **[!UICONTROL Ficha Calidad]**
 
       * **[!UICONTROL Calidad global]**: `0.5` o menos
-      * **[!UICONTROL Modo]** de difusión indirecta (GI) - `Final Gather`
-      * **[!UICONTROL Tamaño]** del filtro - `2.0`, `2.0`
+      * **[!UICONTROL Modo]**  de difusión indirecta (GI):  `Final Gather`
+      * **[!UICONTROL Tamaño]**  del filtro-  `2.0`,  `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si fuera necesario, ajuste las luces, la configuración de procesamiento o ambas opciones para conseguir los resultados deseados.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.

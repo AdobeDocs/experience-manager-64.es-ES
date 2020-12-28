@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Administración de Flujos de trabajo{#administering-workflows}
 
-Los Flujos de trabajo le permiten automatizar actividades de Adobe Experience Manager (AEM). Flujos de trabajo:
+Los flujos de trabajo le permiten automatizar actividades de Adobe Experience Manager (AEM). Flujos de trabajo:
 
 * Consiste en una serie de pasos que se ejecutan en un orden específico.
 
@@ -40,8 +40,8 @@ Los procesos comerciales que su organización ha establecido pueden representars
 >Para obtener más información, consulte:
 >
 >* Aplicación y participación en flujos de trabajo: [Trabajar con Flujos de trabajo](/help/sites-authoring/workflows.md).
->* Creación de modelos de flujo de trabajo y ampliación de la funcionalidad de flujo de trabajo: [Desarrollo y ampliación de Flujos de trabajo](/help/sites-developing/workflows.md).
->* Mejora del rendimiento de los flujos de trabajo que utilizan recursos importantes del servidor: [Procesamiento](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)de flujo de trabajo simultáneo.
+>* Creación de modelos de flujo de trabajo y ampliación de la funcionalidad de flujo de trabajo: [Desarrollar y ampliar Flujos de trabajo](/help/sites-developing/workflows.md).
+>* Mejora del rendimiento de los flujos de trabajo que utilizan recursos importantes del servidor: [Procesamiento simultáneo del flujo de trabajo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
 >
 
@@ -49,7 +49,7 @@ Los procesos comerciales que su organización ha establecido pueden representars
 
 ## Modelos e instancias de flujo de trabajo {#workflow-models-and-instances}
 
-[Los modelos](/help/sites-developing/workflows.md#model) de flujo de trabajo de AEM son la representación e implementación de procesos de negocios:
+[Los ](/help/sites-developing/workflows.md#model) modelos de flujo de trabajo de AEM son la representación y la implementación de procesos comerciales:
 
 * Generalmente actúan en páginas o recursos para lograr un resultado específico.
 * Estas páginas o recursos se denominan carga útil de flujo de trabajo.
@@ -60,7 +60,7 @@ Cuando se inicia (ejecuta) un modelo de flujo de trabajo, se crea una instancia 
 
 >[!CAUTION]
 >
->Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera* la instancia. Consulte [Desarrollo de Flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más detalles.
+>Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo de Flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más detalles.
 
 Las instancias de flujo de trabajo progresan a través del siguiente ciclo de vida:
 
@@ -103,11 +103,11 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 
 >[!NOTE]
 >
->Cuando la ejecución de un paso de proceso produce errores, el paso aparece en la Bandeja de entrada del administrador y el estado del flujo de trabajo es **EJECUCIÓN**.
+>Cuando la ejecución de un paso de proceso produce errores, el paso aparece en la Bandeja de entrada del administrador y el estado del flujo de trabajo es **EJECUTANDO**.
 
 Según el estado actual, puede realizar acciones en las instancias de flujo de trabajo en ejecución cuando necesite intervenir en la progresión normal de una instancia de flujo de trabajo:
 
 * **Suspender**: Detiene temporalmente la ejecución del flujo de trabajo. Suspender es útil en casos excepcionales cuando no desea que continúe el flujo de trabajo, por ejemplo para mantenimiento. La suspensión cambia el estado del flujo de trabajo a Suspendido.
 * **Reanudar**: Reinicia un flujo de trabajo suspendido en el mismo punto de ejecución en el que se suspendió, utilizando la misma configuración.
-* **Finalizar**: Finaliza la ejecución del flujo de trabajo y cambia el estado a **ABORTED**. No se puede reiniciar una instancia de flujo de trabajo anulada.
+* **Finalizar**: Finaliza la ejecución del flujo de trabajo y cambia el estado a  **ABORTED**. No se puede reiniciar una instancia de flujo de trabajo anulada.
 

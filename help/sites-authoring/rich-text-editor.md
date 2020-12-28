@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# Uso del Editor de texto enriquecido para crear contenido {#using-the-rich-text-editor-to-author-content}
 
 El Editor de texto enriquecido (RTE) es un bloque de creación básico para la creación de texto en páginas AEM. Muchos componentes como Texto, Texto e Imagen y Tabla se basan en RTE.
 
@@ -28,7 +28,7 @@ El Editor de texto enriquecido (RTE) es un bloque de creación básico para la c
 
 ## Edición in-situ {#in-place-editing}
 
-Al seleccionar un componente basado en texto con un solo toque o clic, se muestra la barra de herramientas [del](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)componente.
+Al seleccionar un componente basado en texto con un solo toque o clic, se muestra la [barra de herramientas del componente](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -52,13 +52,13 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 * **Guardar**
 
-## Edición a pantalla completa {#full-screen-editing}
+## Edición de pantalla completa {#full-screen-editing}
 
 Para los componentes basados en texto, si se selecciona el modo de pantalla completa en la barra de herramientas, se abrirá el editor de texto enriquecido y se ocultará el resto del contenido de la página.
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-El modo de pantalla completa muestra todas las opciones del editor de texto enriquecido que el administrador ha configurado. Pueden variar según AEM instancias [según la configuración](../sites-administering/rich-text-editor.md) proporcionada por los administradores o los desarrolladores AEM. Si encuentra que falta una opción, pida al administrador que la ponga a disposición.
+El modo de pantalla completa muestra todas las opciones del editor de texto enriquecido que el administrador ha configurado. Éstas pueden variar entre instancias de AEM [según la configuración](../sites-administering/rich-text-editor.md) proporcionada por los administradores o desarrolladores de AEM. Si encuentra que falta una opción, pida al administrador que la ponga a disposición.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

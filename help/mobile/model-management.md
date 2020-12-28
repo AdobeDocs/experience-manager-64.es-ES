@@ -52,17 +52,17 @@ Los modelos se utilizan para determinar cómo se crean las entidades. Definen lo
 >Existe un modelo fuera de una aplicación, ya que más de una aplicación puede utilizarlo.
 
 
-Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)**para crear y administrar modelos en el panel y el repositorio.
+Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)** para crear y administrar modelos en el panel y el repositorio.
 
-### Entidades en el modelo de contenido {#entities-in-content-model}
+### Entidades del modelo de contenido {#entities-in-content-model}
 
 Una entidad es una instancia de un modelo de contenido. Una entidad se expone a través de Content Services API a la biblioteca del lado del cliente y proporciona un modo para que una aplicación nativa pueda acceder al contenido de forma independiente del canal.
 
 En el caso de contenido de AEM existente, se genera una entidad utilizando un modelo y la fuente de contenido de AEM. Por ejemplo, una entidad de página es un objeto independiente de canal y presentación que se genera a partir de una página AEM y del modelo de página.
 
-Los cambios en el contenido al que se hace referencia de una entidad provocarán un cambio en la misma. Por ejemplo, si se actualiza una *cq:page* , también se actualizarán todas las entidades basadas en esa página.
+Los cambios en el contenido al que se hace referencia de una entidad provocarán un cambio en la misma. Por ejemplo, si se actualiza un *cq:page*, también se actualizarán todas las entidades que estén basadas en esa página.
 
-Consulte **[Uso de entidades](/help/mobile/spaces-and-entities.md)**para crear entidades personalizadas a partir de modelos.
+Consulte **[Uso de entidades](/help/mobile/spaces-and-entities.md)** para crear entidades personalizadas a partir de modelos.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ En el lado AEM, un espacio es una manera conveniente de administrar las entidade
 
 *Por ejemplo*,
 
-Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y la tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la gestión, el usuario crea tres espacios: *interno*, *público* (con contenido en inglés y en francés) y *común* para la gestión de las entidades adecuadas, como se indica a continuación:
+Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y la tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la administración, el usuario crea tres espacios: *interno*, *público* (con contenido en inglés y en francés) y *común* para administrar las entidades apropiadas, como se indica a continuación:
 
 * /content/entity/internal
 * /content/entity/public/es
@@ -86,7 +86,7 @@ Un usuario tiene tres clasificaciones generales de entidades. Una es solo para u
 
 Se proporcionará un punto final de servicio al espacio para que la biblioteca cliente nativa pueda solicitar una lista del contenido de un espacio. Este &quot;listado&quot; se devolverá como un objeto JSON.
 
-Consulte **[Espacios y entidades](/help/mobile/spaces-and-entities.md)**para crear y publicar espacios.
+Consulte **[Espacios y entidades](/help/mobile/spaces-and-entities.md)** para crear y publicar espacios.
 
 >[!NOTE]
 >
@@ -96,4 +96,4 @@ Consulte **[Espacios y entidades](/help/mobile/spaces-and-entities.md)**para cre
 
 Las carpetas permiten a los usuarios organizar las entidades según sea necesario y facilitan un control ACL más preciso. Los espacios pueden incluir carpetas para ayudar a organizar mejor el contenido y los recursos del espacio. Un usuario puede crear su propia jerarquía en un espacio.
 
-Consulte **[Uso de carpetas en un espacio](/help/mobile/spaces-and-entities.md)**para crear y administrar carpetas dentro de un espacio.
+Consulte **[Uso de carpetas en un espacio](/help/mobile/spaces-and-entities.md)** para crear y administrar carpetas dentro de un espacio.

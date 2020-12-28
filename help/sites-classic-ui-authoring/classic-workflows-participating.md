@@ -71,7 +71,7 @@ Una vez haya realizado la acción indicada, puede finalizar el elemento de traba
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Delegación de una etapa de participante {#delegating-a-participant-step}
+### Delegación de una etapa de participante  {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
@@ -82,7 +82,7 @@ Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Realización de un paso hacia atrás en un paso de participante {#performing-step-back-on-a-participant-step}
+### Realización de un paso hacia atrás en un paso de participante  {#performing-step-back-on-a-participant-step}
 
 Utilice el siguiente procedimiento para volver al paso anterior.
 

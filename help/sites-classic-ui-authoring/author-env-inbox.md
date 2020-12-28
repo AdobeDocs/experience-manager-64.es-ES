@@ -25,7 +25,7 @@ Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sob
 Estas notificaciones se reciben en dos bandejas de entrada, que están separadas por tipo de notificación:
 
 * Una bandeja de entrada donde se ven las notificaciones recibidas en relación con las suscripciones (se describe en la sección siguiente).
-* A specialized inbox for workflow items is described in the [Participating in Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* En el documento [Participación en Flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) se describe una bandeja de entrada especializada para elementos de flujo de trabajo.
 
 ## Visualizar notificaciones {#viewing-your-notifications}
 
@@ -91,7 +91,7 @@ Para suscribirse a notificaciones:
 1. Defina las rutas de las páginas para las cuales recibirá notificaciones:
 
    * Haga clic en **Añadir** para añadir una nueva fila a la tabla.
-   * Click the **Path** table cell and enter the path, e.g. `/content/docs`.
+   * Haga clic en la celda de la tabla **Ruta** e introduzca la ruta, por ejemplo: `/content/docs`.
    * Para recibir notificaciones para todas las páginas pertenecientes al subárbol, establezca **¿Exacto?** en **No**.
 
       Para recibir notificaciones únicamente para acciones en la página definida por la ruta, establezca **¿Exacto?** en **Sí**.

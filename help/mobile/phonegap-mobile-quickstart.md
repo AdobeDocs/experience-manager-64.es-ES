@@ -24,7 +24,7 @@ ht-degree: 1%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-## Aplicación de verificación de AEM {#aem-verify-app}
+## AEM Verificar aplicación {#aem-verify-app}
 
 >[!CAUTION]
 >

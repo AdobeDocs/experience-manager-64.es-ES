@@ -224,7 +224,7 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 
 En una instalación estándar de AEM:
 
-* para la configuración OSGi:
+* para la configuración OSGi::
 
    **Apache Sling Resource Resolver Factory**
 
@@ -264,7 +264,7 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
 
    Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Fábrica de resolución de recursos de Apache Sling**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Se recomienda crear las asignaciones necesarias para acortar las URL como expresiones regulares y luego definir estas configuraciones en un nodo OsgiConfignode `config.publish`, que se incluye en la creación.

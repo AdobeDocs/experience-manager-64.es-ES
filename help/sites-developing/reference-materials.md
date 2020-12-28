@@ -37,7 +37,7 @@ AEM proporciona varias API para desarrollar aplicaciones. La siguiente lista pro
 
 * [Referencia de la API de Editor Core Javascript](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-Referencias de la API de JavaScript del marco del SDK del Editor de la aplicación de una sola página AEM (SPA):
+Referencias de la API de JavaScript del marco del SDK del Editor de AEM aplicación de una sola página (SPA):
 
 * [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -50,7 +50,7 @@ API de Gestor de contenido y Envío de AEM:
 
    * [Exportador JSON](/help/sites-developing/json-exporter.md)
    * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
-   * Consulte la sección [Componentes de la Guía](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) del usuario en desarrollo para obtener más información
+   * Consulte la sección [Componentes en la Guía del usuario en desarrollo](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) para obtener más información
 
 * [API HTTP de AEM Assets](/help/assets/mac-api-assets.md)
 

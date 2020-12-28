@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >**Requisitos previos**:
 >
->Antes de aprender a crear y modificar recursos compartidos, consulte Sincronización [de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
+>Antes de aprender a crear y modificar recursos compartidos, consulte [Sincronización de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
 
 Los usuarios de AEM Mobile utilizan la sincronización de contenido para exportar contenido en directo a contenido estático y utilizarlo en aplicaciones móviles. Esta exportación se produce cuando el contenido se carga en Mobile On-Demand Services desde AEM Mobile.
 
@@ -38,7 +38,7 @@ Los siguientes recursos describen la exportación de contenido de Adobe Experien
 
 Los artículos tienen contenido que se debe exportar y cargar. Parte de este contenido se puede compartir entre artículos.
 
-Utilice [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para reunir el contenido y crear un paquete de recursos ****** compartidos.
+Utilice [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para reunir el contenido y crear un paquete ***Shared Resources***.
 
 La configuración de ContentSync que se encuentra en **&lt;dps-exportTemplate>/dps-article>** debe configurarse para exportar todo el contenido que un artículo requiere para la representación estática de propiedades en el dispositivo.
 
@@ -57,7 +57,7 @@ La configuración de ContentSync que se encuentra en **&lt;dps-exportTemplate>/d
 Para vista de recursos compartidos de muestra, consulte los pasos siguientes:
 
 1. Abra el CRXDE Lite en el servidor AEM.
-1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-less-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), para vista de los recursos compartidos de muestra.
+1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) para vista de los recursos compartidos de muestra.
 
    Puede realizar la vista de todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
 

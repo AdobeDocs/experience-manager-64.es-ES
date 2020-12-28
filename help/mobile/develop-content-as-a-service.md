@@ -29,13 +29,13 @@ Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (sobre e
 
 >[!NOTE]
 >
->**El contenido** sobre el aire puede provenir de cualquiera de los elementos anteriores a través de los controladores ContentSync. Se puede utilizar para empaquetar paquetes y envíos por lotes a través de zips, así como para mantener las actualizaciones de dichos paquetes.
+>**El** contenido de Over-the-Air puede provenir de cualquiera de los elementos anteriores a través de los controladores ContentSync. Se puede utilizar para empaquetar paquetes y envíos por lotes a través de zips, así como para mantener las actualizaciones de dichos paquetes.
 
 Existen tres tipos principales de material que ofrece Content Services:
 
 1. **Assets**
 1. **Contenido HTML empaquetado (HTML/CSS/JS)**
-1. **Contenido independiente del Canal**
+1. **Contenido independiente del canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -65,7 +65,7 @@ El flujo de trabajo de recursos es el siguiente:
    1. Seleccionar recurso o colección de recursos
    1. Personalización de la representación JSON
 
-El diagrama siguiente muestra el flujo de trabajo de referencia de **recursos**:
+El diagrama siguiente muestra el **Flujo de trabajo de referencia de recursos**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -73,7 +73,7 @@ El diagrama siguiente muestra el flujo de trabajo de referencia de **recursos**:
 
 Content Services proporciona acceso a AEM recursos gestionados a los que no se puede hacer referencia mediante otro contenido AEM.
 
-#### Recursos gestionados existentes {#existing-managed-assets}
+#### Recursos administrados existentes {#existing-managed-assets}
 
 Un usuario existente de AEM Sites y Assets está utilizando AEM Assets para gestionar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y necesitan utilizar varios recursos que administra AEM Assets. Por ejemplo logotipos, imágenes de fondo, iconos de botón, etc.
 
@@ -117,14 +117,14 @@ AEM Content Services podrá proporcionar contenido HTML a la aplicación móvil 
 
 Se consideran las siguientes opciones:
 
-* **Archivo zip:** Para tener la mejor oportunidad de mostrar correctamente en el dispositivo, todo el material referenciado de la página: css, JavaScript, recursos, etc. - se incluirá en un solo archivo comprimido con la respuesta. Las referencias de la página HTML se ajustarán para utilizar una ruta relativa a estos archivos.
-* **Flujo continuo:** Obtención de un manifiesto de los archivos necesarios de AEM. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
+* **Archivo zip:** para tener la mejor oportunidad de mostrar correctamente en el dispositivo, todo el material referenciado de la página: css, JavaScript, recursos, etc. - se incluirá en un solo archivo comprimido con la respuesta. Las referencias de la página HTML se ajustarán para utilizar una ruta relativa a estos archivos.
+* **Flujo continuo:** obtención de un manifiesto de los archivos necesarios de AEM. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Contenido independiente de Canal {#channel-independent-content}
+## Contenido independiente de canal {#channel-independent-content}
 
-El contenido independiente del Canal es una forma de exponer construcciones de contenido AEM, como páginas, sin preocuparse por el diseño, los componentes u otra información específica del canal.
+El contenido independiente del canal es una forma de exponer construcciones de contenido AEM, como páginas, sin preocuparse por el diseño, los componentes u otra información específica del canal.
 
 Estas entidades de contenido se generan utilizando un modelo de contenido para traducir las estructuras de AEM a un formato JSON. Los datos JSON resultantes contienen información sobre los datos del contenido, que se desvinculan del repositorio de AEM. Esto incluye devolver metadatos y vínculos de referencia AEM a los recursos, así como las relaciones entre las estructuras de contenido, incluida la jerarquía de entidades.
 

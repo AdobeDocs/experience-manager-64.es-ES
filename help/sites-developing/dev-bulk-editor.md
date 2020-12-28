@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# Desarrollo del editor en masa{#developing-the-bulk-editor}
+# Desarrollo del Editor masivo{#developing-the-bulk-editor}
 
-Esta sección describe cómo desarrollar la herramienta de edición masiva y cómo extender el componente de Lista de productos, que se basa en el editor masivo.
+En esta sección se describe cómo desarrollar la herramienta de edición masiva y cómo extender el componente de Lista del producto, que se basa en el editor masivo.
 
 ## Parámetros de Consulta del Editor masivo {#bulk-editor-query-parameters}
 
@@ -30,7 +30,7 @@ Por ejemplo, si escribe lo siguiente en la dirección URL del explorador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-el editor masivo se muestra sin el campo Ruta **** raíz, ya que hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
+el editor masivo se muestra sin el campo **Ruta de raíz** como hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
 
 A continuación se muestra una lista de los parámetros de consulta del editor masivo:
 
@@ -51,7 +51,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
    <td> Descripción <br /> </td> 
   </tr> 
   <tr> 
-   <td> rootPath/rp<br /> </td> 
+   <td> rootPath / rp<br /> </td> 
    <td> Cadena </td> 
    <td> ruta raíz de búsqueda</td> 
   </tr> 
@@ -63,7 +63,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
   <tr> 
    <td> contentMode / cm<br /> </td> 
    <td> Booleano</td> 
-   <td> cuando el valor es true, el modo de contenido se activa<br /> </td> 
+   <td> cuando es true, el modo de contenido está habilitado<br /> </td> 
   </tr> 
   <tr> 
    <td> ixValue / cv<br /> </td> 
@@ -78,7 +78,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
   <tr> 
    <td> initialSearch / is<br /> </td> 
    <td> Booleano</td> 
-   <td> cuando el valor es true, la consulta se realiza al cargar la página<br /> </td> 
+   <td> cuando es true, la consulta se realiza al cargar la página<br /> </td> 
   </tr> 
   <tr> 
    <td> olesSelection / cs<br /> </td> 
@@ -88,7 +88,7 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
   <tr> 
    <td> showGridOnly / sgo<br /> </td> 
    <td> Booleano</td> 
-   <td> cuando es true, muestra únicamente la cuadrícula y no el panel de búsqueda <br /> </td> 
+   <td> cuando es true, muestra solamente la cuadrícula y no el panel de búsqueda <br /> </td> 
   </tr> 
   <tr> 
    <td> searchPanelCollapsed / spc</td> 
@@ -167,14 +167,14 @@ A continuación se muestra una lista de los parámetros de consulta del editor m
 
 Esta sección proporciona información general sobre cómo utilizar el editor masivo y proporciona una descripción del componente de Geometrixx existente basada en el editor masivo: el componente Lista del producto.
 
-El componente Lista del producto permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista del producto para representar los productos de un catálogo. La información se presenta en una tabla HTML estándar y cualquier edición se realiza en el cuadro de diálogo **Editar** , que contiene un widget de Editor masivo. (Este Editor masivo es exactamente el mismo que el accesible en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista del producto se ha configurado para la funcionalidad específica del editor masivo. Se pueden configurar todas las partes del editor masivo (o los componentes derivados del editor masivo).
+El componente Lista del producto permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista del producto para representar los productos de un catálogo. La información se presenta en una tabla HTML estándar y cualquier edición se realiza en el cuadro de diálogo **Editar**, que contiene un widget de Editor masivo. (Este Editor masivo es exactamente el mismo que el accesible en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista del producto se ha configurado para la funcionalidad específica del editor masivo. Se pueden configurar todas las partes del editor masivo (o los componentes derivados del editor masivo).
 
 Con el editor masivo, puede agregar, modificar, eliminar, filtrar y exportar las filas, guardar las modificaciones e importar un conjunto de filas. Cada fila se almacena como nodo en la propia instancia del componente Lista del producto. Cada celda es una propiedad de cada nodo. Se trata de una opción de diseño que se puede cambiar fácilmente; por ejemplo, se pueden almacenar nodos en otro lugar del repositorio. La función del servlet de consulta es devolver la lista de los nodos que se van a mostrar; la ruta de búsqueda se define como una instancia de Lista de productos.
 
 El código fuente del componente Lista del producto está disponible en el repositorio en /apps/geometrixx/components/productlist y consta de varias partes, como todos los componentes AEM:
 
 * Representación HTML: el procesamiento se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente de Lista de productos actual y muestra cada uno de ellos como una fila de una tabla HTML.
-* Cuadro de diálogo Editar, donde se define la configuración del Editor masivo. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte Propiedades [de configuración del editor](#bulk-editor-configuration-properties) masivo para obtener información sobre todas las propiedades de configuración.
+* Cuadro de diálogo Editar, donde se define la configuración del Editor masivo. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte [propiedades de configuración del editor masivo](#bulk-editor-configuration-properties) para obtener información sobre todas las propiedades de configuración.
 
 Esta es una representación XML de los subnodos de cuadro de diálogo:
 
@@ -267,7 +267,7 @@ Esta es una representación XML de los subnodos de cuadro de diálogo:
         </editor>
 ```
 
-### Propiedades de configuración del Editor masivo {#bulk-editor-configuration-properties}
+### Propiedades de configuración del editor masivo {#bulk-editor-configuration-properties}
 
 Se pueden configurar todas las partes del editor masivo. La siguiente tabla lista todas las propiedades de configuración del editor masivo.
 
@@ -513,7 +513,7 @@ El siguiente ejemplo se encuentra en el componente de lista de productos (/apps/
 
 **Casilla de verificación**
 
-Si la propiedad de configuración de la casilla de verificación está establecida en true, todas las celdas de la columna se procesan como casillas de verificación. Una casilla de verificación envía **true** al servlet Guardar del servidor; en caso contrario, **false** . En el menú del encabezado, también puede **seleccionar todo** o **seleccionar ninguno**. Estas opciones se activan si el encabezado seleccionado es el encabezado de una columna de casilla de verificación.
+Si la propiedad de configuración de la casilla de verificación está establecida en true, todas las celdas de la columna se procesan como casillas de verificación. Una casilla de verificación envía **true** al servidor Guardar servlet, **false** en caso contrario. En el menú de encabezado, también puede **seleccionar todo** o **seleccionar ninguno**. Estas opciones se activan si el encabezado seleccionado es el encabezado de una columna de casilla de verificación.
 
 En el ejemplo anterior, la columna de selección solo contiene casillas de verificación como checkboxes=&quot;true&quot;.
 
@@ -523,7 +523,7 @@ Los metadatos de posición forzada forcePosition permiten especificar dónde se 
 
 En el ejemplo anterior, la columna de selección es la primera columna como forcePosition=&quot;0&quot;.
 
-### Servlet de Consulta {#query-servlet}
+### Servlet de consulta {#query-servlet}
 
 De forma predeterminada, el servlet de Consulta se encuentra en `/libs/wcm/core/components/bulkeditor/json.java`. Puede configurar otra ruta para recuperar los datos.
 
@@ -557,7 +557,7 @@ Puede extender el servlet de Consulta para devolver un modelo de herencia comple
 
 ### Guardar servlet {#save-servlet}
 
-En la configuración predeterminada del editor masivo, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El editor masivo mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se genera una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta de POST a cada ruta con los valores de las propiedades actualizados. Esta es la base del concepto Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de Consulta se implementa para realizar el cálculo de herencia, este modelo no puede funcionar como una propiedad devuelta por el servlet de Consulta puede heredarse de otro nodo.
+En la configuración predeterminada del editor masivo, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El editor masivo mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se genera una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta de POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de Consulta se implementa para realizar el cálculo de herencia, este modelo no puede funcionar como una propiedad devuelta por el servlet de Consulta puede heredarse de otro nodo.
 
 El concepto de servlet Guardar es que las modificaciones no se publican directamente en cada nodo, sino que se publican en un servlet que realiza el trabajo de guardado. Esto proporciona a este servlet la posibilidad de analizar las modificaciones y guardar las propiedades en el nodo derecho.
 

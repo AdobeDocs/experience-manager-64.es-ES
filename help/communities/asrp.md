@@ -49,7 +49,7 @@ La [consola de configuración de Almacenamiento](srp-config.md) permite seleccio
 
 * Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Configuración de Almacenamiento]**
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![chlimage_1-311](assets/chlimage_1-310.png)
 
 * Seleccione **[!UICONTROL Proveedor de recursos de Almacenamiento de Adobe (ASRP)]**
 * La siguiente información proviene del proceso de aprovisionamiento

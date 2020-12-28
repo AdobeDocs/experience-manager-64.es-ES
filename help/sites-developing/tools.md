@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM proporciona:
 
-* [un marco para probar la interfaz de usuario](/help/sites-developing/hobbes.md)del componente.
+* [un marco para probar la interfaz de usuario](/help/sites-developing/hobbes.md) del componente.
 * [un mecanismo para probar y depurar componentes](/help/sites-developing/developer-mode.md).
 
 Las siguientes son dos herramientas de prueba de código abierto:

@@ -22,11 +22,11 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->La siguiente documentación trata sobre la IU clásica. For information about authoring in the modern, touch-enabled UI, see the [standard Authoring documentation](/help/assets/assets.md).
+>La siguiente documentación trata sobre la IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [documentación de creación estándar](/help/assets/assets.md).
 
 El entorno de creación permite realizar tareas relacionadas con:
 
-* [Creación](/help/sites-authoring/author.md) (incluida la creación [de](/help/sites-authoring/qg-page-authoring.md) páginas y la [administración de recursos](/help/assets/assets.md))
+* [Creación](/help/sites-authoring/author.md)  (incluida la  [creación de ](/help/sites-authoring/qg-page-authoring.md) páginas y la  [administración de recursos](/help/assets/assets.md))
 
 * [Tareas de administración](/help/sites-administering/administer-best-practices.md) necesarias para generar y mantener el contenido de su sitio web
 
@@ -47,7 +47,7 @@ Para conseguirlo se ofrecen dos interfaces gráficas de usuario, accesibles desd
    * Esta es la nueva IU estándar de AEM.
    * Es, principalmente, de color gris, con una interfaz sencilla y clara.
    * Está diseñada para utilizarse tanto en dispositivos táctiles como de escritorio (optimizada para los dispositivos táctiles). El aspecto es el mismo en todos los dispositivos, aunque la forma de [ver y seleccionar los recursos](/help/sites-authoring/basic-handling.md) varía ligeramente (toques en lugar de clics).
-   * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. La siguiente documentación trata sobre la IU clásica.
+   * Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear con la IU táctil. La siguiente documentación trata sobre la IU clásica.
 
    * Escritorio:
 

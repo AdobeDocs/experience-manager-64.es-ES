@@ -43,13 +43,13 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una estructura de árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las direcciones URL, y el título se muestra cuando se visualiza el contenido de la página.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+A continuación se muestra un ejemplo del sitio Web de We.Retail, donde se accede a una página de pantalones cortos de senderismo ( `desert-sky-shorts`):
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* Entorno del autor: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Entorno de publicación: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+Según la configuración de la instancia, el uso de `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
  /content
@@ -111,7 +111,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y el JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -168,7 +168,7 @@ AEM incluye varias plantillas listas para usar. Las plantillas disponibles depen
 
 ### Componentes {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+Componentes son los elementos proporcionados por AEM para que pueda agregar tipos específicos de contenido. AEM viene con un rango de [componentes listos para usar](/help/sites-authoring/default-components-console.md) que proporcionan una amplia funcionalidad. Estos incluyen:
 
 * Texto
 * Imagen
@@ -299,7 +299,7 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
 >[!NOTE]
 >
->Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. Consulte [Disponibilidad de la plantilla](/help/sites-developing/templates.md#template-availability) para obtener más información.
 
 El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y se controla mediante el mismo asistente. Con este asistente puede:
 

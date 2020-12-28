@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# Guía rápida para WCAG 2.0{#quick-guide-to-wcag}
 
 AEM se ha desarrollado para maximizar el cumplimiento con las directrices de accesibilidad del contenido web:
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+Las [Pautas de Accesibilidad al Contenido Web versión 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) son un conjunto de directrices internacionalmente reconocidas desarrolladas por el [Consorcio World Wide Web (W3C)](https://www.w3.org/) bajo su [Iniciativa de Accesibilidad Web (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
@@ -91,7 +91,7 @@ Si bien WCAG 2.0 es un documento estable y no cambiará, la mayoría de estos re
 
 ### Recursos WCAG 2.0 {#wcag-resources}
 
-* [Un esquema de todos los documentos](https://www.w3.org/WAI/intro/wcag.php)relacionados con WCAG 2.0;
+* [Un esquema de todos los documentos](https://www.w3.org/WAI/intro/wcag.php) relacionados con WCAG 2.0;
 * [Explicación de cómo se relacionan los distintos componentes entre sí](https://www.w3.org/WAI/intro/wcag20);
 * [Preguntas frecuentes sobre WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 

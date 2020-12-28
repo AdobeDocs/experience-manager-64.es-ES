@@ -40,7 +40,7 @@ Los ensayos deberán definir claramente:
 
 El cliente potencial de automatizar los casos de prueba es obviamente atractivo ya que puede eliminar tareas repetitivas.
 
-## Pruebas manuales frente a automatizadas {#manual-versus-automated-tests}
+## Pruebas manuales versus automatizadas {#manual-versus-automated-tests}
 
 Sin embargo, la automatización de los casos de prueba es una inversión importante, por lo que deben considerarse algunos aspectos:
 
@@ -55,13 +55,15 @@ Cuando se realizan pruebas AEM algunos detalles específicos son de particular i
 
 Entornos de creación y publicación
 
-Aunque, abarcado por [Entornos](/help/sites-developing/the-basics.md#environments) , vale la pena destacar un factor decisivo de AEM con respecto a los ensayos.
+Aunque, abarcado en [Entornos](/help/sites-developing/the-basics.md#environments), vale la pena destacar un factor decisivo de AEM con respecto a las pruebas.
 
 Debe considerar AEM como dos aplicaciones:
 
-* entorno **Autor** Esta instancia permite a los autores introducir y publicar contenido.
+* el entorno **Autor**
+Esta instancia permite a los autores introducir y publicar contenido.
 Esto tiene un conjunto pequeño (er) y predecible de usuarios, para los que es crucial una funcionalidad y un rendimiento específicos.
-* entorno de **publicación** Esta instancia presenta el sitio web en su formulario publicado para el acceso desde visitantes.
+* el entorno **Publish**
+Esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
 Generalmente, este grupo de usuarios es mayor, ya que el volumen de tráfico no siempre es 100% predecible. El rendimiento sigue siendo crucial cuando se responde a las solicitudes. También se debe considerar el almacenamiento en caché y el equilibrio de carga.
 
 Aunque el mismo software como tal:
@@ -88,9 +90,11 @@ La prueba es difícil (el almacenamiento en caché se realiza en varios niveles 
 
 * **Precisión**; asegúrese de que el visitante del sitio web pueda ver las actualizaciones de contenido.
 * **Continuidad**; asegúrese de que el sitio web siga estando disponible cuando se cierre un servidor.
-* **Los clústeres** se utilizan para proporcionar:
-   * **Failover** Si un servidor falla, otros servidores del clúster se harán cargo del procesamiento.
-   * **El equilibrio de** carga de rendimiento con failover completo aumenta el rendimiento de un clúster.
+* **** ClustersClusters se utilizan para proporcionar:
+   * ****
+FailoverSi un servidor falla, otros servidores del clúster se harán cargo del procesamiento.
+   * **El equilibrio**
+PerformanceLoad con failover completo aumenta el rendimiento de un clúster.
 
 Cuando se utiliza para un proyecto de cliente, se debe probar el clúster para confirmar el funcionamiento correcto de la configuración.
 

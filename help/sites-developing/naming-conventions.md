@@ -18,24 +18,24 @@ ht-degree: 19%
 ---
 
 
-# Naming Conventions{#naming-conventions}
+# Asignar nombres a las convenciones{#naming-conventions}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, AEM impone otras convenciones para el nombre de los nodos de página.
+Los nodos del repositorio están sujetos a las convenciones de nombres del [Repositorio de contenido de Java](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, AEM impone otras convenciones para el nombre de los nodos de página.
 
 ## Convenciones de nombres para páginas {#naming-conventions-for-pages}
 
 Estas convenciones de nombres se implementan en varios niveles:
 
-* JcrUtil: la implementación AEM de las utilidades [](#jcr-utilities)JCR.
-* PageManager: el Administrador [de páginas](#page-manager) proporciona métodos para las operaciones de nivel de página.
+* JcrUtil: la implementación AEM de las [utilidades JCR](#jcr-utilities).
+* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para las operaciones de nivel de página.
 * Según la IU que se utiliza:
 
    * [IU estándar con capacidad táctil](#standard-ui)
    * [IU clásica](#classic-ui)
 
-### Utilidades de JCR {#jcr-utilities}
+### Utilidades JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) es la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtiliza la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
 
@@ -49,7 +49,7 @@ Estas convenciones de nombres se implementan en varios niveles:
 
 ### Administrador de páginas {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) proporciona métodos para las operaciones de nivel de página, basados en [JCRUtil](#jcr-utilities).
+[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager proporciona métodos para las operaciones de nivel de página, según  [JCRUtil](#jcr-utilities).
 
 ### IU estándar {#standard-ui}
 
@@ -69,7 +69,7 @@ La IU clásica impone restricciones más estrictas:
    * se proporciona un título de página para la conversión en el nombre del nodo
    * se proporciona un nombre de nodo explícito
 
-* Caracteres válidos (solo estos caracteres son válidos cuando se crea una página desde la IU clásica, aunque `PageManagerImpl` permitirían caracteres adicionales):
+* Caracteres válidos (solo estos caracteres son válidos cuando se crea una página desde la IU clásica, aunque `PageManagerImpl` permita caracteres adicionales):
 
    * De la &quot;a&quot; a la &quot;z&quot;
    * De la &quot;A&quot; a la &quot;Z&quot;

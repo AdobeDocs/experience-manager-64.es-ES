@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Opción En La Recopilación De Estadísticas De Uso Agregado{#opting-into-aggregated-usage-statistics-collection}
+# Opción en la colección de estadísticas de uso agregadas{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introducción {#introduction}
 
@@ -30,48 +30,48 @@ Puede optar por la recopilación de estadísticas de uso mediante la IU táctil 
 >
 >Existen diversas regulaciones de protección de datos y privacidad; por ejemplo, el RGPD y la CCPA. AEM Sites está preparado para ayudar a los clientes con sus obligaciones de protección de datos y cumplimiento de la privacidad. Esta página guía a los clientes a través de los procedimientos para la inclusión (o exclusión) de la Recopilación de estadísticas de uso agregada.
 >
->Para obtener más información, consulte también el Centro de privacidad del [Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información, consulte también el [Centro de privacidad del Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->También puede optar por no participar en cualquier momento, ya sea mediante la consola [](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) web o si no selecciona la opción de no participar en la pantalla de AEM.
+>También puede optar por no participar en cualquier momento mediante la [Consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o bien no seleccionando la opción de inclusión en la pantalla de inclusión de AEM.
 
 ## Inclusión mediante la IU táctil {#opt-in-by-using-the-touch-ui}
 
 La primera vez que realice el inicio de AEM, puede optar por la opción de participación mediante la IU táctil de la siguiente manera:
 
-1. En la pantalla Navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
+1. En la pantalla de navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
 
    ![usage_statistical snavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. En la lista desplegable, haga clic en &quot;**Habilitar recopilación** de estadísticas de uso agregada&quot;.
+1. En la lista desplegable, haga clic en &quot;**Habilitar la recopilación de estadísticas de uso agregadas**&quot;.
 
    ![usage_statistical snavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. En la pantalla de selección, seleccione &quot;**Permitir la recopilación de estadísticas** de uso agregadas&quot;.
+1. En la pantalla de inclusión, seleccione &quot;**Permitir la recopilación de estadísticas de uso agregadas**&quot;.
 
    ![usage_estadticsopt-insscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. Haga clic en &quot;**Listo**&quot;.
+1. Haga clic en &quot;**Finalizado**&quot;.
 
-## Inclusión mediante la consola web {#opt-in-by-using-the-web-console}
+## Inclusión mediante la Consola Web {#opt-in-by-using-the-web-console}
 
 Puede optar por la inclusión (o exclusión) utilizando la consola web de la siguiente manera:
 
-1. En la pantalla de navegación de AEM, haga clic en **Herramientas** y, a continuación, en **Operaciones**.
+1. En la pantalla de navegación de AEM, haga clic en **Herramientas** y luego en **Operaciones**.
 
    ![usage_estadticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. En la ventana Operaciones, haga clic en Consola **** web.
+1. En la ventana Operaciones, haga clic en **Consola Web**.
 
    ![usage_estadticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. Busque &quot;Recopilación **de estadísticas de uso** agregadas&quot;.
-1. Click the **Edit** icon.
+1. Busque &quot;**Recopilación de estadísticas de uso agregadas**&quot;.
+1. Haga clic en el icono **Editar**.
 
    ![usage_statticscollection, edit](assets/usage_statisticscollectionedit.png)
 
-1. Seleccione la casilla de verificación **Habilitado** . También puede anular la selección de la casilla de verificación si desea excluir la recopilación de estadísticas de uso.
+1. Seleccione la casilla **Habilitado**. También puede anular la selección de la casilla de verificación si desea excluir la recopilación de estadísticas de uso.
 
    ![usage_statticsselect](assets/usage_statisticsselect.png)
 

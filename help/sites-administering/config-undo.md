@@ -18,23 +18,23 @@ ht-degree: 2%
 ---
 
 
-# Configuración de Deshacer para edición de página{#configuring-undo-for-page-editing}
+# Configuración de Deshacer para la edición de páginas{#configuring-undo-for-page-editing}
 
-El servicio [](/help/sites-deploying/configuring-osgi.md) OSGi **Day CQ WCM Undo Configuration** ( `com.day.cq.wcm.undo.UndoConfigService`) expone varias propiedades que controlan el comportamiento de los comandos deshacer y rehacer para editar páginas.
+El [servicio OSGi](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo Configuration** ( `com.day.cq.wcm.undo.UndoConfigService`) expone varias propiedades que controlan el comportamiento de los comandos deshacer y rehacer para editar páginas.
 
 ## Configuración predeterminada {#default-configuration}
 
-En una instalación estándar, la configuración predeterminada se define como propiedades en el `sling:OsgiConfig`nodo:
+En una instalación estándar, la configuración predeterminada se define como propiedades en el nodo `sling:OsgiConfig`:
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Este nodo contiene `cq.wcm.undo.whitelist` y `cq.wcm.undo.blacklist` propiedades; para las demás propiedades se toman los valores predeterminados.
+Este nodo contiene propiedades `cq.wcm.undo.whitelist` y `cq.wcm.undo.blacklist`, para las demás propiedades se toman los valores predeterminados.
 
 >[!CAUTION]
 >
->No ***debe*** cambiar nada en la `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta `/libs`.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y bien puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 
 ## Configuración de Deshacer y Rehacer {#configuring-undo-and-redo}
 
@@ -42,7 +42,7 @@ Puede configurar estas propiedades del servicio OSGi para su propia instancia.
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>Al trabajar con AEM existen varios métodos para gestionar los parámetros de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más detalles y las prácticas recomendadas.
 
 Las siguientes listas las propiedades que se muestran en la consola web, seguidas del nombre del parámetro OSGi correspondiente, junto con una descripción y el valor predeterminado (si procede):
 
@@ -51,7 +51,7 @@ Las siguientes listas las propiedades que se muestran en la consola web, seguida
 `cq.wcm.undo.enabled`)
 
    * **Descripción**: Determina si los autores de la página pueden deshacer y rehacer cambios.
-   * **Predeterminado**: `Selected`
+   * **Predeterminado**:  `Selected`
    * **Tipo**: `Boolean`
 
 * **Ruta**
@@ -59,18 +59,19 @@ Las siguientes listas las propiedades que se muestran en la consola web, seguida
 `cq.wcm.undo.path`)
 
    * **Descripción**: Ruta del repositorio para datos de deshacer binarios persistentes. Cuando los autores cambian datos binarios como imágenes, la versión original de los datos se mantiene aquí. Cuando se deshacen los cambios en los datos binarios, estos datos de deshacer binarios se restauran en la página.
-   * **Predeterminado**: `/var/undo`
+   * **Predeterminado**:  `/var/undo`
    * **Tipo**: `String`
 
    >[!NOTE]
    >
-   >De forma predeterminada, solo los administradores pueden acceder al `/var/undo` nodo. Los autores pueden realizar operaciones de deshacer y rehacer en contenido binario únicamente después de que se les hayan concedido permisos para acceder a los datos de deshacer binarios.
+   >De forma predeterminada, solo los administradores pueden acceder al nodo `/var/undo`. Los autores pueden realizar operaciones de deshacer y rehacer en contenido binario únicamente después de que se les hayan concedido permisos para acceder a los datos de deshacer binarios.
 
-* **Mínimo. valid**( 
+* **Mínimo. valid**
+( 
 `cq.wcm.undo.validity`)
 
    * **Descripción**: Cantidad mínima de tiempo que se almacenan los datos de deshacer binarios, en horas. Después de este período de tiempo, los datos binarios se pueden eliminar para conservar espacio en disco.
-   * **Predeterminado**: `10`
+   * **Predeterminado**:  `10`
    * **Tipo**: `Integer`
 
 * **Etapas**
@@ -78,45 +79,49 @@ Las siguientes listas las propiedades que se muestran en la consola web, seguida
 `cq.wcm.undo.steps`)
 
    * **Descripción**: Número máximo de acciones de página almacenadas en el historial de deshacer.
-   * **Predeterminado**: `20`
+   * **Predeterminado**:  `20`
    * **Tipo**: `Integer`
 
-* **Persistencia**( 
+* **Persistencia**
+( 
 `cq.wcm.undo.persistence`)
 
    * **Descripción**: La clase que persiste en el historial de deshacer. Se proporcionan dos clases de persistencia:
 
       * `CQ.undo.persistence.WindowNamePersistence`:: Persiste el historial mediante la propiedad window.name.
       * `CQ.undo.persistence.CookiePersistance`:: Persiste el historial mediante cookies.
-   * **Predeterminado**: `CQ.undo.persistence.WindowNamePersistence`
+   * **Predeterminado**:  `CQ.undo.persistence.WindowNamePersistence`
    * **Tipo**: `String`
 
 
-* **Modo** de persistencia( 
+* **Modo**
+ de persistencia( 
 `cq.wcm.undo.persistence.mode`)
 
    * **Descripción**: Determina cuándo se mantiene el historial de deshacer. Seleccione esta opción para conservar el historial de deshacer después de cada edición de página. Borre esta opción para que solo se mantenga cuando se vuelva a cargar una página (por ejemplo, el usuario se desplaza a otra página).
 
       El historial de deshacer persistente utiliza recursos del explorador Web. Si el explorador de los usuarios reacciona lentamente a las ediciones de página, intente mantener el historial de deshacer en las recargas de página.
 
-   * **Predeterminado**: `Selected`
+   * **Predeterminado**:  `Selected`
    * **Tipo**: `Boolean`
 
-* **Modo** Marcador( 
+* **Modo**
+ Marcador( 
 `cq.wcm.undo.markermode`)
 
    * **Descripción**: Especifica la señal visual que se utilizará para indicar qué párrafos se ven afectados cuando se produce una acción de deshacer o rehacer. Los siguientes valores son válidos:
 
       * flash: El indicador de selección de los párrafos parpadea temporalmente.
       * seleccionar: El párrafo está seleccionado.
-   * **Predeterminado**: `flash`
+   * **Predeterminado**:  `flash`
    * **Tipo**: `String`
 
 
-* **Buenos componentes**( 
+* **Buenos componentes**
+( 
 `cq.wcm.undo.whitelist`)
 
-   * **Descripción**: lista de componentes que desea que se vean afectados por los comandos deshacer y rehacer. Añada rutas de componentes a esta lista cuando funcionen correctamente con deshacer/rehacer. Añada un asterisco (&amp;ast;) para especificar un grupo de componentes:
+   * **Descripción**: Lista de componentes que desea que se vean afectados por los comandos deshacer y rehacer. Añada rutas de componentes a esta lista cuando funcionen correctamente con deshacer/rehacer. Añada un asterisco (&amp;ast;) para especificar un grupo de componentes:
 
       * El siguiente valor especifica el componente de texto de base:
 
@@ -131,17 +136,18 @@ Las siguientes listas las propiedades que se muestran en la consola web, seguida
    * **Tipo**: `String[]`
 
 
-* **Componentes** malos( 
+* **Componentes**
+ malos( 
 `cq.wcm.undo.blacklist`)
 
-   * **Descripción**: lista de componentes y/o operaciones de componentes que no desea que se vean afectados por el comando Deshacer. Añada componentes y operaciones de componentes que no se comportan correctamente con el comando deshacer:
+   * **Descripción**: Lista de componentes y/o operaciones de componentes que no desea que se vean afectados por el comando Deshacer. Añada componentes y operaciones de componentes que no se comportan correctamente con el comando deshacer:
 
       * Añada una ruta de componente cuando no desee ninguna de las operaciones del componente en el historial de deshacer, por ejemplo `collab/forum/components/post`
-      * Anexe dos puntos (:) y una operación a la ruta cuando desee que esa operación específica se omita del historial de deshacer (otras funciones de operaciones funcionan correctamente), por ejemplo `collab/forum/components/post:insertParagraph.`
+      * Anexe dos puntos (:) y una operación a la ruta cuando desee que esa operación específica se omita del historial de deshacer (otras funciones de operaciones correctamente), por ejemplo `collab/forum/components/post:insertParagraph.`
 
    >[!NOTE]
    >
-   >Cuando una operación está en esta lista, se sigue agregando al historial de deshacer. Los usuarios no pueden deshacer operaciones que existan antes de una operación Componente **** incorrecto en el historial de deshacer.
+   >Cuando una operación está en esta lista, se sigue agregando al historial de deshacer. Los usuarios no pueden deshacer operaciones que existan antes de una operación **Componente incorrecto** en el historial de deshacer.
 
    * Los nombres de operación habituales son los siguientes:
 

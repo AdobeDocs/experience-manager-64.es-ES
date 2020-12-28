@@ -18,43 +18,43 @@ ht-degree: 0%
 ---
 
 
-# Upgrades sostenibles{#sustainable-upgrades}
+# Actualizaciones sostenibles{#sustainable-upgrades}
 
-## Módulo de personalización {#customization-framework}
+## Customization Framework {#customization-framework}
 
-### Arquitectura (Funcional / Infraestructura / Contenido / Aplicación)  {#architecture-functional-infrastructure-content-application}
+### Arquitectura (Funcional / Infraestructura / Contenido / Aplicación) {#architecture-functional-infrastructure-content-application}
 
 La función Customization Framework está diseñada para ayudar a reducir las infracciones en áreas no extensibles del código (como APIS) o en el contenido (como las superposiciones) que no son fáciles de actualizar.
 
-Existen dos componentes del marco de personalización: la superficie **API** y la clasificación **** de contenido.
+Existen dos componentes del marco de personalización: la **superficie de API** y la **clasificación del contenido**.
 
 #### Superficie de API {#api-surface}
 
 En versiones anteriores de AEM muchas API se han expuesto a través de Uber Jar. Algunas de estas API no estaban destinadas a ser utilizadas por los clientes, pero estaban expuestas a admitir la funcionalidad AEM en varios paquetes. A partir de ahora, las API de Java se marcarán como públicas o privadas para indicar a los clientes qué API son seguras de usar en el contexto de las actualizaciones. Otros detalles específicos incluyen:
 
-* Los paquetes de implementación personalizados pueden usar y hacer referencia a las API de Java `Public` marcadas como.
+* Las API de Java marcadas como `Public` se pueden usar y hacer referencia a ellas mediante paquetes de implementación personalizados.
 
 * Las API públicas serán retrocompatibles con la instalación de un paquete de compatibilidad.
 * El paquete de compatibilidad contendrá una compatibilidad con Uber JAR para garantizar la compatibilidad con versiones anteriores
-* Las API de Java marcadas como `Private` están pensadas para ser usadas únicamente por AEM paquetes internos y no deben ser utilizadas por paquetes personalizados.
+* Las API de Java marcadas como `Private` sólo están pensadas para ser utilizadas por AEM paquetes internos y no deben ser utilizadas por paquetes personalizados.
 
 >[!NOTE]
 >
->El concepto de `Private` `Public` y en este contexto no debe confundirse con las nociones de Java de las clases públicas y privadas.
+>El concepto de `Private` y `Public` en este contexto no debe confundirse con las nociones de Java de las clases públicas y privadas.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
 #### Clasificaciones de contenido {#content-classifications}
 
-AEM ha utilizado durante mucho tiempo el principal de las superposiciones y la fusión de recursos de Sling para permitir a los clientes ampliar y personalizar AEM funcionalidad. La funcionalidad predefinida que alimenta las consolas de AEM y la interfaz de usuario se almacena en **/libs**. Los clientes nunca deben modificar nada debajo **/libs** , pero pueden añadir contenido adicional debajo **/apps** para superponer y ampliar la funcionalidad definida en **/libs** (consulte Desarrollar con superposiciones para obtener más información). Esto provocaba numerosos problemas al actualizar AEM, ya que el contenido de **/libs** podía cambiar, lo que provocaba que la funcionalidad de superposición se dañara de forma inesperada. Los clientes también pueden extender AEM componentes mediante herencia `sling:resourceSuperType`o simplemente hacer referencia a un componente en **/libs** directamente a través de sling:resourceType. Se podrían producir problemas de actualización similares con casos de uso de referencia y anulación.
+AEM ha utilizado durante mucho tiempo el principal de las superposiciones y la fusión de recursos de Sling para permitir a los clientes ampliar y personalizar AEM funcionalidad. La funcionalidad predefinida que alimenta las consolas de AEM y la interfaz de usuario se almacena en **/libs**. Los clientes nunca modificarán nada debajo de **/libs** pero podrían agregar contenido adicional debajo de **/apps** para superponer y ampliar la funcionalidad definida en **/libs** (consulte Desarrollar con superposiciones para obtener más información). Esto causaba numerosos problemas al actualizar AEM, ya que el contenido de **/libs** podía cambiar, lo que ocasionaba que la funcionalidad de superposición se dañara de forma inesperada. Los clientes también pueden extender AEM componentes mediante herencia mediante `sling:resourceSuperType` o simplemente hacer referencia a un componente en **/libs** directamente mediante sling:resourceType. Se podrían producir problemas de actualización similares con casos de uso de referencia y anulación.
 
-Para que sea más seguro y fácil para los clientes comprender qué áreas de **/libs** son seguras de usar y superponer el contenido en **/libs** se ha clasificado con las siguientes mezclas:
+A fin de que sea más seguro y fácil para los clientes comprender qué áreas de **/libs** son seguras de usar y superponer el contenido en **/libs** se ha clasificado con las siguientes mezclas:
 
-* **Public (granite:PublicArea)** : define un nodo como público para que se pueda superponer, heredar ( `sling:resourceSuperType`) o usar directamente ( `sling:resourceType`). Los nodos situados debajo de /libs marcados como Público serán seguros para la actualización con la adición de un paquete de compatibilidad. En general, los clientes solo deben aprovechar los nodos marcados como Público.
+* **Public (granite:PublicArea)** : define un nodo como público para que pueda superponerse, heredarse (  `sling:resourceSuperType`) o utilizarse directamente (  `sling:resourceType`). Los nodos situados debajo de /libs marcados como Público serán seguros para la actualización con la adición de un paquete de compatibilidad. En general, los clientes solo deben aprovechar los nodos marcados como Público.
 
 * **Abstracto (granite:AbstractArea)** : define un nodo como abstracto. Los nodos pueden superponerse o heredarse ( `sling:resourceSupertype`) pero no deben usarse directamente ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)** : define un nodo como final. Los nodos clasificados como finales no se pueden superponer ni heredar. Los nodos finales pueden utilizarse directamente a través de `sling:resourceType`. Los subnodos bajo el nodo final se consideran internos de forma predeterminada
+* **Final (granite:FinalArea)** : define un nodo como final. Los nodos clasificados como finales no se pueden superponer ni heredar. Los nodos finales se pueden utilizar directamente mediante `sling:resourceType`. Los subnodos bajo el nodo final se consideran internos de forma predeterminada
 
 * **Interno (granite:InternalArea)** : define un nodo como interno. Los nodos clasificados como internos no se pueden superponer, heredar ni utilizar directamente. Estos nodos solo están diseñados para la funcionalidad interna de AEM
 
@@ -62,11 +62,11 @@ Para que sea más seguro y fácil para los clientes comprender qué áreas de **
 
 >[!NOTE]
 >
->Estas directivas solo se aplican a los mecanismos basados en rutas de búsqueda Sling. Otras áreas de **/libs** , como una biblioteca del lado del cliente, pueden marcarse como `Internal`, pero aún pueden usarse con inclusión de clientlib estándar. Es importante que un cliente siga respetando la clasificación interna en estos casos.
+>Estas directivas solo se aplican a los mecanismos basados en rutas de búsqueda Sling. Otras áreas de **/libs** como una biblioteca del lado del cliente se pueden marcar como `Internal`, pero se pueden seguir utilizando con la inclusión de clientlib estándar. Es importante que un cliente siga respetando la clasificación interna en estos casos.
 
 #### Indicadores de tipo de contenido del CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Las mezclas aplicadas en el CRXDE Lite mostrarán los nodos de contenido y los árboles marcados `INTERNAL` como atenuados. Solo `FINAL` el icono aparece atenuado. Los elementos secundarios de estos nodos también aparecerán en gris. La funcionalidad Nodo de superposición está deshabilitada en ambos casos.
+Las mezclas aplicadas en el CRXDE Lite mostrarán los nodos de contenido y los árboles marcados como `INTERNAL` atenuados. Para `FINAL` sólo el icono aparece atenuado. Los elementos secundarios de estos nodos también aparecerán en gris. La funcionalidad Nodo de superposición está deshabilitada en ambos casos.
 
 **Público**
 
@@ -84,14 +84,14 @@ Las mezclas aplicadas en el CRXDE Lite mostrarán los nodos de contenido y los �
 
 AEM 6.4 se enviará con una comprobación de estado para avisar a los clientes si el contenido superpuesto o referenciado se utiliza de manera incompatible con la clasificación de contenido.
 
-La comprobación **de acceso al contenido de** Sling/Granite es una nueva comprobación de estado que supervisa el repositorio para ver si el código del cliente accede incorrectamente a los nodos protegidos en AEM.
+La **Comprobación de acceso al contenido de Sling/Granite** es una nueva comprobación de estado que monitorea el repositorio para ver si el código del cliente accede incorrectamente a los nodos protegidos en AEM.
 
-Esto escaneará **/aplicaciones** y generalmente tarda varios segundos en completarse.
+Esto analizará **/apps** y generalmente tarda varios segundos en completarse.
 
 Para acceder a este nuevo chequeo, debe hacer lo siguiente:
 
 1. En la pantalla de inicio de AEM, vaya a **Herramientas > Operaciones > Informes de estado**
-1. Haga clic en la Comprobación **de acceso al contenido de** Sling/Granite como se muestra a continuación:
+1. Haga clic en la **Comprobación de acceso al contenido de Sling/Granite** como se muestra a continuación:
 
    ![screen_shot_2017-12-14at55648pm](assets/screen_shot_2017-12-14at55648pm.png)
 

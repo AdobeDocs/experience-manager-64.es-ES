@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configuración de LDAP con AEM 6 {#configuring-ldap-with-aem}
 
-LDAP ( **** Lightweight **** Directory **** Access **** Protocol) se utiliza para acceder a los servicios de directorio centralizados. Esto ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que varias aplicaciones pueden acceder a ellas. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
+LDAP (el **protocolo** peso **D** directorio **A** acceso **P** protocolo) se utiliza para acceder a los servicios de directorio centralizados. Esto ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que varias aplicaciones pueden acceder a ellas. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
 
 Las cuentas de usuario pueden sincronizarse entre el servidor LDAP y el repositorio, y los detalles de la cuenta LDAP se guardan en el repositorio. Esto permite que las cuentas se asignen a los grupos de repositorios para asignar los permisos y privilegios necesarios.
 
@@ -43,7 +43,7 @@ Para que LDAP funcione con AEM, debe crear tres configuraciones de OSGi:
 
 >[!NOTE]
 >
->Observe el módulo de inicio de sesión externo de [Oak: autenticándose con LDAP y más allá](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) para crear módulos de inicio de sesión externos profundos.
+>Observe [Módulo de inicio de sesión externo de Oak: Autentificación con LDAP y Más allá](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) para profundizar los módulos de inicio de sesión externos.
 >
 >Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.4 para utilizar el servicio de directorio Apache.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
 
@@ -51,7 +51,7 @@ Para que LDAP funcione con AEM, debe crear tres configuraciones de OSGi:
 
 El proveedor de identidad LDAP se utiliza para definir cómo se recuperan los usuarios del servidor LDAP.
 
-Se puede encontrar en la consola de administración bajo el nombre **Apache Jackrabbit Oak LDAP Identity Provider** .
+Se puede encontrar en la consola de administración bajo el nombre **Apache Jackrabbit Oak LDAP Identity Provider**.
 
 Las siguientes opciones de configuración están disponibles para el proveedor de identidad LDAP:
 
@@ -148,7 +148,7 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
  </tbody> 
 </table>
 
-## Configuración Del Controlador De Sincronización {#configuring-the-synchronization-handler}
+## Configuración del controlador de sincronización {#configuring-the-synchronization-handler}
 
 El controlador de sincronización definirá cómo se sincronizarán los usuarios y grupos del proveedor de identidad con el repositorio.
 
@@ -172,7 +172,7 @@ Las siguientes opciones de configuración están disponibles para el controlador
   </tr> 
   <tr> 
    <td><strong>Asignación de propiedades de usuario</strong></td> 
-   <td>Definición de asignación de Listas de propiedades locales de las externas.</td> 
+   <td>Definición de asignación de listas de propiedades locales de las externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefijo de ruta de usuario</strong></td> 
@@ -196,7 +196,7 @@ Las siguientes opciones de configuración están disponibles para el controlador
   </tr> 
   <tr> 
    <td><strong>Asignación de propiedades de grupo</strong></td> 
-   <td>Definición de asignación de Listas de propiedades locales de las externas.</td> 
+   <td>Definición de asignación de listas de propiedades locales de las externas.</td> 
   </tr> 
   <tr> 
    <td><strong>Prefijo de ruta de grupo</strong></td> 
@@ -207,11 +207,11 @@ Las siguientes opciones de configuración están disponibles para el controlador
 
 ## El módulo de inicio de sesión externo {#the-external-login-module}
 
-El módulo de inicio de sesión externo se encuentra en el Módulo **** de inicio de sesión externo Apache Jackrabbit Oak, en la consola de administración.
+El módulo de inicio de sesión externo se encuentra en el **Módulo de inicio de sesión externo Apache Jackrabbit Oak** en la consola de administración.
 
 >[!NOTE]
 >
->El Módulo de inicio de sesión externo Apache Jackrabbit Oak implementa las especificaciones de autenticación y autorización de Java (JAAS). Consulte la Guía de Referencia de Seguridad de Oracle Java [oficial para obtener más información](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) .
+>El Módulo de inicio de sesión externo Apache Jackrabbit Oak implementa las especificaciones de autenticación y autorización de Java (JAAS). Consulte la [Guía de referencia de seguridad de Java de Oracle oficial](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) para obtener más información.
 
 Su trabajo es definir qué proveedor de identidad y controlador de sincronización utilizar, enlazando efectivamente los dos módulos.
 
@@ -220,7 +220,7 @@ Están disponibles las siguientes opciones de configuración:
 | **Clasificación JAAS** | Especificar la clasificación (es decir, el orden) de esta entrada del módulo de inicio de sesión. Las entradas se ordenan en orden descendente (es decir, las configuraciones clasificadas de mayor valor son las primeras). |
 |---|---|
 | **Marca de control JAAS** | Propiedad que especifica si se REQUIERE o no un LoginModule, REQUISITO, SUFICIENTE u OPCIONAL.Consulte la documentación de configuración de JAAS para obtener más detalles sobre el significado de estos indicadores. |
-| **Dominio de JAAS** | Nombre de territorio (o nombre de aplicación) con el que se registra el LoginModule. Si no se proporciona ningún nombre de dominio, LoginModule se registra con un dominio predeterminado, tal como se ha configurado en la configuración Félix JAAS. |
+| **Dominio de JAAS** | Nombre de territorio (o nombre de aplicación) con el que se registra el LoginModule. Si no se proporciona ningún nombre de dominio, LoginModule se registra con un dominio predeterminado, tal como se configura en la configuración Félix JAAS. |
 | **Nombre del proveedor de identidad** | Nombre del proveedor de identidad. |
 | **Nombre del controlador de sincronización** | Nombre del controlador de sincronización. |
 
@@ -232,7 +232,7 @@ Están disponibles las siguientes opciones de configuración:
 
 AEM 6 puede configurarse para autenticarse con LDAP a través de SSL siguiendo el procedimiento siguiente:
 
-1. Marque las casillas de verificación **Usar SSL** o **Utilizar TLS** al configurar el proveedor [de identidad](#configuring-the-ldap-identity-provider)LDAP.
+1. Marque las casillas **Usar SSL** o **Usar TLS** al configurar el [Proveedor de identidad LDAP](#configuring-the-ldap-identity-provider).
 1. Configure el controlador de sincronización y el módulo de inicio de sesión externo según la configuración.
 1. Instale los certificados SSL en la VM de Java si es necesario. Esto se puede hacer con la herramienta clave:
 
@@ -246,7 +246,7 @@ Los certificados con firma automática se pueden utilizar al configurar AEM para
 
 1. Asegúrese de tener una biblioteca SSL instalada y en funcionamiento. Este procedimiento utilizará OpenSSL como ejemplo.
 
-1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esto se puede hacer copiando el archivo de configuración predeterminado **openssl.cnf **y personalizándolo. En sistemas UNIX, generalmente se encuentra en `/usr/lib/ssl/openssl.cnf`
+1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esto se puede hacer copiando el archivo de configuración predeterminado **openssl.cnf **y personalizándolo. En sistemas UNIX, generalmente se ubica en `/usr/lib/ssl/openssl.cnf`
 
 1. Vaya a la creación de la clave raíz de CA ejecutando el comando siguiente en un terminal:
 
@@ -271,7 +271,7 @@ Los certificados con firma automática se pueden utilizar al configurar AEM para
 
 1. Finalmente, agregue el certificado al almacén de claves de Java.
 
-## Habilitación del registro de depuración {#enabling-debug-logging}
+## Habilitando el registro de depuración {#enabling-debug-logging}
 
 El registro de depuración puede habilitarse tanto para el proveedor de identidad LDAP como para el módulo de inicio de sesión externo para solucionar problemas de conexión.
 
@@ -290,7 +290,7 @@ Para habilitar el registro de depuración, debe:
 * Patrón de mensajes: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
-## Una palabra sobre la afiliación al grupo {#a-word-on-group-affiliation}
+## Una palabra sobre la afiliación de grupo {#a-word-on-group-affiliation}
 
 Los usuarios sincronizados a través de LDAP pueden formar parte de diferentes grupos en AEM. Estos grupos pueden ser grupos LDAP externos que se agregarán a AEM como parte del proceso de sincronización, pero también pueden ser grupos que se agregan por separado y que no forman parte del esquema de afiliación de grupo LDAP original.
 
@@ -298,9 +298,9 @@ En la mayoría de los casos, estos grupos pueden ser agregados por un administra
 
 Si un usuario se elimina de un grupo en el servidor LDAP, el cambio también se reflejará en el lado AEM una vez que se haya realizado la sincronización. Sin embargo, todas las demás afiliaciones de grupo del usuario que no fueron agregadas por LDAP permanecerán en su lugar.
 
-AEM detecta y gestiona la depuración de usuarios de grupos externos mediante el uso de la `rep:externalId` propiedad. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
+AEM detecta y gestiona la depuración de usuarios de grupos externos utilizando la propiedad `rep:externalId`. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
 
-Para obtener más información, consulte la documentación de Apache Oak sobre la sincronización [de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+Para obtener más información, consulte la documentación de Apache Oak sobre [Sincronización de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Problemas conocidos {#known-issues}
 

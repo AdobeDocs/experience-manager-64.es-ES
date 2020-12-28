@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Crear en la IU clásica{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## IU clásica y IU táctil {#classic-ui-and-touch-enabled-ui}
 
 La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5 (la predecesora de AEM). La siguiente documentación sobre creación trata acerca de esta IU.
 

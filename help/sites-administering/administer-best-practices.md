@@ -58,11 +58,11 @@ Las prácticas recomendadas sobre Assets, incluidas la capacidad Dynamic Media y
   </tr>
   <tr>
    <td>Opciones de ajustes preestablecidos de imagen</td> 
-   <td>Explicación de los ajustes preestablecidos <a href="/help/assets/managing-image-presets.md#understanding-image-presets">de imagen</a> y las prácticas recomendadas de ajustes preestablecidos <a href="/help/assets/managing-image-presets.md#image-preset-options">de imagen</a></td> 
-   <td>Como parte de la documentación sobre la <a href="/help/assets/managing-image-presets.md">administración de ajustes preestablecidos</a>de imagen, estos temas describen los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar las opciones de ajustes preestablecidos de imagen.</td> 
+   <td>Comprender <a href="/help/assets/managing-image-presets.md#understanding-image-presets">ajustes preestablecidos de imagen</a> y <a href="/help/assets/managing-image-presets.md#image-preset-options">prácticas recomendadas de ajustes preestablecidos de imagen</a></td> 
+   <td>Como parte de la documentación sobre <a href="/help/assets/managing-image-presets.md">Administración de ajustes preestablecidos de imagen</a>, estos temas describen los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar las opciones de ajustes preestablecidos de imagen.</td> 
   </tr>
   <tr>
-   <td>Medios dinámicos frente a la integración directa con Scene7</td> 
+   <td>Dynamic Media frente a la integración directa con Scene7</td> 
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Scene7/AEM frente a Dynamic Media</a></td> 
    <td>Describe cuándo es mejor utilizar la solución Dynamic Media, cuándo integrar S7 con AEM o cuándo usar ambos.</td> 
   </tr>
@@ -103,7 +103,7 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
   <tr>
    <td>Flujos de trabajo</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Prácticas recomendadas de flujo de trabajo: configuración</a></td> 
-   <td>Los Flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar y configurar cuidadosamente las implementaciones de flujos de trabajo.</td> 
+   <td>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar y configurar cuidadosamente las implementaciones de flujos de trabajo.</td> 
   </tr>
  </tbody>
 </table>

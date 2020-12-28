@@ -24,7 +24,7 @@ ht-degree: 84%
 >
 >Adobe no planea mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos por AEM servicio SMTP.
 >
->Se recomienda [aprovechar Adobe Campaign y su integración](/help/sites-administering/campaign.md)AEM.
+>La recomendación es [aprovechar Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
 
 Cuando envíe una newsletter a varios usuarios, normalmente habrá direcciones de correo electrónico inválidas en la lista. Si se envían newsletters a estas direcciones, se devolverán. AEM puede administrar el correo devuelto y dejar de enviar newsletters a dichas direcciones una vez se haya superado el contador de devoluciones. De forma predeterminada, la tasa de devolución es de 3, pero puede configurarse.
 
@@ -68,7 +68,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
    `imap.flag.SEEN`:Configurar false para los mensajes nuevos o no vistos y true para los mensajes ya leídos
 
-   See [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) for the full list of flags.
+   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para obtener la lista completa de los indicadores.
 
    **Ejemplos de IMAP:**
 
@@ -79,13 +79,13 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
 1. Guarde la configuración.
 
-## Configuración del componente de servicio de la newsletter {#configuring-the-newsletter-service-component}
+## Configuración del componente de servicio de la newsletter  {#configuring-the-newsletter-service-component}
 
 Tras configurar Feed Importer, debe configurar la dirección De y el contador de devoluciones.
 
 Para configurar el servicio de newsletter:
 
-1. In the OSGi console at `<host>:<port>/system/console/configMgr` and navigate to **MCM Newsletter**.
+1. En la consola OSGi en `<host>:<port>/system/console/configMgr` y vaya a **Newsletter de MCM**.
 
 1. Configure el servicio y guarde los cambios cuando haya terminado.
 

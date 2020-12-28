@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Para definir qué configuraciones se deben probar, debe tener en cuenta lo siguiente:
 
-**Desarrollo** : para unidades y determinadas pruebas de integración.
+**Desarrollo** : para unidades y ciertas pruebas de integración.
 
 **Prueba** : para la mayoría de las pruebas.
 
-**Activo** : para obtener resultados finales y pruebas de resistencia. También para pruebas de aceptación con el cliente.
+**Activo** : para pruebas de resistencia y rendimiento finales. También para pruebas de aceptación con el cliente.
 
 También tendrá que decidir qué instancias necesitará donde (normalmente al menos una de cada uno para todos los niveles de prueba):
 
@@ -38,6 +38,6 @@ Debe probarse junto con el despachante.
 
 Por último, se debe considerar el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible de la configuración del entorno final activo. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
 
-**Lanzamiento** suave: disponibilidad reducida; que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
+**Lanzamiento**  suave: disponibilidad reducida; que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
 
-**Inicio** duro: disponibilidad completa.
+**Inicio**  duro: disponibilidad completa.

@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Pasos de actualización para las instalaciones de Application Server{#upgrade-steps-for-application-server-installations}
+# Pasos de actualización para las instalaciones del servidor de aplicaciones{#upgrade-steps-for-application-server-installations}
 
-En esta sección se describe el procedimiento que debe seguirse para actualizar AEM para las instalaciones de Application Server.
+En esta sección se describe el procedimiento que debe seguirse para actualizar la AEM de las instalaciones de Application Server.
 
 Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicaciones e implican que ya tiene implementada una versión de trabajo de AEM. El procedimiento tiene por objeto el documento de las actualizaciones realizadas desde **AEM versión 5.6 a 6.3**.
 
-1. Primero, inicio JBoss. En la mayoría de los casos, puede hacerlo ejecutando la secuencia de comandos de `standalone.sh` inicio, ejecutando este comando desde el terminal:
+1. Primero, inicio JBoss. En la mayoría de los casos, puede hacerlo ejecutando la secuencia de comandos de inicio `standalone.sh`, ejecutando este comando desde el terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -70,9 +70,9 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
 
 1. Quite los archivos y las carpetas que ya no sean necesarios. Los elementos que debe eliminar específicamente son:
 
-   * La carpeta **** launchpad/startup. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
-   * El archivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * El **archivo** BootstrapCommandFile_timestamp.txt: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * La **carpeta launchpad/startup**. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * El **archivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * El archivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copie el almacén de segmentos recién migrado a su ubicación correcta:
 
@@ -86,9 +86,9 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. A continuación, debe crear la carpeta que contendrá las configuraciones de OSGi que se utilizarán con la nueva instancia actualizada. Más concretamente, una carpeta denominada install debe crearse en **crx-quickstart**.
+1. A continuación, debe crear la carpeta que contendrá las configuraciones de OSGi que se utilizarán con la nueva instancia actualizada. Más concretamente, es necesario crear una carpeta denominada install en **crx-quickstart**.
 
-1. Ahora, cree el almacén de nodos y el almacén de datos que se utilizarán con AEM 6.3. Para ello, cree dos archivos con los nombres siguientes en **crx-quickstart\install**:
+1. Ahora, cree el almacén de nodos y el almacén de datos que se utilizarán con AEM 6.3. Para ello, cree dos archivos con los siguientes nombres en **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -121,7 +121,7 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Una vez extraído el contenido, vaya a la carpeta **WEB-INF** y edite el `web.xml` archivo para cambiar los modos de ejecución. Para buscar la ubicación en la que se han establecido en XML, busque la `sling.run.modes` cadena. Una vez que lo encuentre, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada se establece en author:
+1. Una vez extraído el contenido, vaya a la carpeta **WEB-INF** y edite el archivo `web.xml` para cambiar los modos de ejecución. Para encontrar la ubicación donde se han establecido en XML, busque la cadena `sling.run.modes`. Una vez que lo encuentre, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada se establece en author:
 
    ```shell
    <param-value >author</param-value>

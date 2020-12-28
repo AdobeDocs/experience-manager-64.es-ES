@@ -28,7 +28,7 @@ En este capítulo se describen las funciones de usuario y cómo configurar los u
 
 ## Usuarios de aplicaciones y administración de grupos de AEM Mobile {#aem-mobile-application-users-and-group-administration}
 
-### AEM Mobile Application Content Authors (grupo de creación de aplicaciones) {#aem-mobile-application-content-authors-app-author-group}
+### Autores de contenido de aplicaciones de AEM Mobile (grupo de creación de aplicaciones) {#aem-mobile-application-content-authors-app-author-group}
 
 Los miembros del grupo de creación de aplicaciones son responsables de la creación AEM contenido de aplicaciones móviles, incluidas páginas, texto, imágenes y vídeos.
 
@@ -46,7 +46,7 @@ Los miembros del grupo de creación de aplicaciones son responsables de la creac
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Ahora que ha creado el grupo de usuarios autores de aplicaciones, puede agregar miembros individuales del equipo a este nuevo grupo a través de la consola [Administración de](http://localhost:4502/libs/granite/security/content/useradmin.md)usuarios.
+1. Ahora que ha creado el grupo de usuarios autores de aplicaciones, puede agregar miembros individuales del equipo a este nuevo grupo a través de la [Consola de administración de usuarios](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -61,7 +61,7 @@ Los miembros del grupo de creación de aplicaciones son responsables de la creac
 
 ### Grupo de administradores de aplicaciones de AEM Mobile (grupo de administradores de aplicaciones) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Los miembros del grupo de administradores de aplicaciones pueden crear contenido de aplicación con los mismos permisos incluidos con autores de aplicaciones **Y** además son responsables de:
+Los miembros del grupo app-admins pueden crear contenido de aplicación con los mismos permisos incluidos con los autores de aplicaciones **AND**, además de ser responsables de:
 
 * Ensayo, publicación y borrado de la aplicación ContentSync Actualizaciones OTA
 
@@ -85,7 +85,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
    >
    >los usuarios del flujo de trabajo deben realizar la compilación remota con el servicio de PhoneGap Build
 
-1. Vaya a la consola [](http://localhost:4502/useradmin) Permisos y agregue permisos para administrar cloudservices
+1. Vaya a la [consola de permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
 
    * (Leer, Modificar, Crear, Eliminar, Replicar) en /etc/cloudservices/mobileservices
 
@@ -100,7 +100,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
    >[!CAUTION]
    >
-   >El acceso a /var/contentsync se ha denegado a OOTB.
+   >Se denegó el acceso a /var/contentsync a OOTB.
    >
    >Si se omite el permiso READ, los paquetes de actualización vacíos se pueden crear y replicar.
 
@@ -108,7 +108,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 1. Para exportar contenido o cargar
 
    * (Leer) en /etc/contentsync para acceder a las plantillas de exportación
-   * (Leer) en /var to para ver el recorrido de ruta en lecturas
+   * (Leer) en /var to para ver la ruta transversal en lecturas
    * (Leer, escribir, modificar, eliminar) en /var/contentsync para escribir, leer y limpiar contenidoSincronizar contenido de exportación en caché
 
 ### Recursos adicionales {#additional-resources}

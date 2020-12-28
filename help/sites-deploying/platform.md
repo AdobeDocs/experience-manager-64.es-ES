@@ -65,15 +65,15 @@ El principal objetivo del JCR Oak es transformar la semántica JCR en operacione
 
 Además, las implementaciones que no son de Java ahora son posibles y forman parte del concepto de JCR de Oak.
 
-## Almacenamiento general {#storage-overview}
+## Información general de almacenamiento {#storage-overview}
 
 La capa de almacenamiento Oak proporciona una capa de abstracción para el almacenamiento real del contenido.
 
-Actualmente, hay dos implementaciones de almacenamiento disponibles en AEM6: **Almacenamiento** Tar y Almacenamiento **** MongoDB.
+Actualmente, hay dos implementaciones de almacenamiento disponibles en AEM6: **Almacenamiento Tar** y **Almacenamiento MongoDB**.
 
 ### Almacenamiento Tar {#tar-storage}
 
-El almacenamiento Tar utiliza archivos tar. Almacena el contenido como varios tipos de registros dentro de segmentos más grandes. Los Historiales se utilizan para rastrear el estado más reciente del repositorio.
+El almacenamiento Tar utiliza archivos tar. Almacena el contenido como varios tipos de registros dentro de segmentos más grandes. Los historiales se utilizan para rastrear el estado más reciente del repositorio.
 
 Existen varios principios de diseño clave sobre los que se construyó:
 
@@ -109,7 +109,7 @@ Para cada actualización (confirmación) del contenido, se crea una nueva revisi
 
 Se admiten ramas, lo que permite al cliente realizar varios cambios y hacerlos visibles con una sola llamada de combinación.
 
-* documentos anteriores
+* Documentos anteriores
 
 El almacenamiento MongoDB agrega datos a un documento con cada modificación. Sin embargo, solo elimina datos si se activa una limpieza de forma explícita. Los datos antiguos se mueven cuando se alcanza un determinado umbral. Los documentos anteriores solo contienen datos inmutables, lo que significa que solo contienen revisiones confirmadas y combinadas.
 
@@ -129,12 +129,12 @@ Dado que Oak está diseñado para ser compatible con el estándar JCR 1.0, casi 
 * A diferencia de Jackrabbit 2, donde las sesiones siempre reflejan el estado más reciente del repositorio, con Oak una sesión refleja una vista estable del repositorio desde el momento en que se adquirió la sesión. Esto se debe al modelo MVCC en el que se basa Oak.
 * Los hermanos del mismo nombre (SNS) no son compatibles con Oak.
 
-## Otra documentación relacionada con la plataforma {#other-platform-related-documentation}
+## Documentación relacionada con otras plataformas {#other-platform-related-documentation}
 
 Para obtener más información sobre la plataforma AEM, consulte también los artículos siguientes:
 
 * [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md)
 * [Consultas de roble e indexación](/help/sites-deploying/queries-and-indexing.md)
-* [Elementos de Almacenamiento en AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos de almacenamiento en AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM con MongoDB](/help/sites-deploying/aem-with-mongodb.md)
 

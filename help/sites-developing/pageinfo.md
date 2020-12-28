@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON.
 
-El servlet PageInfo devuelve información sobre los recursos del repositorio. El servlet está enlazado a la URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` y utiliza el `path` parámetro para identificar el recurso. La siguiente URL de ejemplo devuelve información sobre el `/content/we-retail/us/en` nodo:
+El servlet PageInfo devuelve información sobre los recursos del repositorio. El servlet está enlazado a la dirección URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` y utiliza el parámetro `path` para identificar el recurso. La siguiente URL de ejemplo devuelve información sobre el nodo `/content/we-retail/us/en`:
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -38,11 +38,11 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >
 >
-Consulte documento [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md).
+Consulte el documento [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md).
 
-## Proveedores de información de la página {#page-information-providers}
+## Proveedores de información de página {#page-information-providers}
 
-Los componentes de página se pueden asociar con uno o varios `com.day.cq.wcm.api.PageInfoProvider` servicios que generan metadatos de página. El servlet PageInfo llama a cada servicio PageInfoProvider y agrega los metadatos:
+Los componentes de página se pueden asociar con uno o varios servicios `com.day.cq.wcm.api.PageInfoProvider` que generan metadatos de página. El servlet PageInfo llama a cada servicio PageInfoProvider y agrega los metadatos:
 
 1. El cliente HTTP envía una solicitud al servlet PageInfo, que incluye la dirección URL de la página.
 1. El servlet PageInfo detecta qué componente representa la página.
@@ -53,21 +53,21 @@ Los componentes de página se pueden asociar con uno o varios `com.day.cq.wcm.ap
 
 >[!NOTE]
 >
->De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar listas de información en formato JSON. (Consulte [Personalización de la Consola](/help/sites-developing/customizing-siteadmin.md)de administración de sitios web).
+>De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar listas de información en formato JSON. (Consulte [Personalización de la Consola de administración de sitios Web](/help/sites-developing/customizing-siteadmin.md)).
 
 ## Proveedores de información de página predeterminados {#default-page-information-providers}
 
-El `/libs/foundation/components/page` componente está asociado con los siguientes servicios de PageInfoProvider:
+El componente `/libs/foundation/components/page` está asociado con los siguientes servicios de PageInfoProvider:
 
-* **Proveedor de estado de página predeterminado:** Información sobre el estado de la página, como si está bloqueada, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
-* **Proveedor de información de relación directa:** Información sobre la administración de varios sitios (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
-* **Servlet de idioma de contenido:** Idioma de la página actual e información sobre cada idioma en el que está disponible la página.
-* **Proveedor de estado de flujo de trabajo:** Información de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
-* **Proveedor de información del paquete de workflow:** Información sobre cada paquete de workflow almacenado en el repositorio y si cada paquete contiene el recurso actual.
-* **Proveedor de información del emulador:** Información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no representa páginas móviles, no hay emuladores disponibles.
-* **Proveedor de información de anotaciones:** Información sobre las anotaciones que se encuentran en la página.
+* **Proveedor de estado de página predeterminado:** información sobre el estado de la página, como si está bloqueada, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
+* **Proveedor de información de relación directa:** información sobre la administración de varios sitios (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
+* **Content Language Servlet:** el idioma de la página actual e información sobre cada idioma en el que la página está disponible.
+* **Proveedor de estado de flujo de trabajo: información** de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
+* **Proveedor de información del paquete de workflow:** información sobre cada paquete de workflow almacenado en el repositorio y si cada paquete contiene el recurso actual.
+* **Proveedor de información del emulador:** información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no representa páginas móviles, no hay emuladores disponibles.
+* **Proveedor de información de anotaciones:** información sobre anotaciones que se encuentran en la página.
 
-Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para el `/content/we-retail/us/en` nodo:
+Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para el nodo `/content/we-retail/us/en`:
 
 ```
 {
@@ -481,7 +481,7 @@ Configure el servicio Day CQ WCM Workflow Package Info Provider de modo que solo
 >La ficha Flujo de trabajo de la barra de tareas utiliza el servlet PageInfo para obtener una lista de los paquetes de flujo de trabajo. Desde la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
 
 
-El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una `workflowpackageinfoprovider.filter` propiedad.
+El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una propiedad `workflowpackageinfoprovider.filter`.
 
 Los valores de propiedad llevan el prefijo + o - seguido de la ruta del paquete:
 
@@ -532,7 +532,7 @@ Para configurar el servicio en el origen del proyecto:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Dentro de los corchetes (`[]`) que rodean la `workflowpackageinfoprovider.filter` propiedad, escriba una lista de valores de filtro separados por comas similar al siguiente ejemplo:
+1. Dentro de los corchetes (`[]`) que rodean la propiedad `workflowpackageinfoprovider.filter`, escriba una lista separada por comas de valores de filtro similares al siguiente ejemplo:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -542,19 +542,19 @@ Para configurar el servicio en el origen del proyecto:
 
 Cree un servicio de proveedor de información de página personalizado para agregar metadatos de página que la aplicación pueda obtener fácilmente.
 
-1. Implementar la `com.day.cq.wcm.api.PageInfoProvider` interfaz.
+1. Implementar la interfaz `com.day.cq.wcm.api.PageInfoProvider`.
 1. Agrupe e implemente la clase como un servicio OSGi.
-1. Cree un componente de página en la aplicación. Se utiliza `foundation/components/page` como valor de la `sling:resourceSuperType` propiedad.
+1. Cree un componente de página en la aplicación. Utilice `foundation/components/page` como valor de la propiedad `sling:resourceSuperType`.
 
 1. Añada un nodo debajo del nodo de componente denominado `cq:infoProviders`.
-1. Debajo del `cq:infoProviders` nodo, agregue un nodo para el servicio PageInfoProvider. Puede especificar cualquier nombre para el nodo.
+1. Debajo del nodo `cq:infoProviders`, agregue un nodo para el servicio PageInfoProvider. Puede especificar cualquier nombre para el nodo.
 1. Añada la siguiente propiedad al nodo PageInfoProvider:
 
    * Nombre: className
    * Tipo: Cadena
    * Valor: PID del servicio PageInfoProvider.
 
-Para los recursos que utilizan el componente de página de la aplicación como `sling:resourceType`, el servlet PageInfo devuelve los metadatos personalizados de PageInfoProvider, además de los metadatos predeterminados de PageInfoProvider.
+Para los recursos que utilizan el componente de página de la aplicación como `sling:resourceType`, el servlet PageInfo devuelve los metadatos personalizados de PageInfoProvider además de los metadatos predeterminados de PageInfoProvider.
 
 ### Ejemplo de implementación de PageInfoProvider {#example-pageinfoprovider-implementation}
 
@@ -609,7 +609,7 @@ El ejemplo siguiente, en CRXDE Lite, muestra el componente de página configurad
 
 ![climage_1-3](assets/chlimage_1-3.png)
 
-El servicio PageUrlInfoProvider devuelve los siguientes datos para el `/content/we-retail/us/en` nodo:
+El servicio PageUrlInfoProvider devuelve los siguientes datos para el nodo `/content/we-retail/us/en`:
 
 ```xml
 "URLs": {

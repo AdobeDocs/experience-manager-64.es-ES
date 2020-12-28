@@ -20,9 +20,9 @@ ht-degree: 1%
 
 # Integración con la administración dinámica de etiquetas de Adobe {#integrating-with-adobe-dynamic-tag-management}
 
-Integre la administración [dinámica de etiquetas de](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Adobe con AEM para que pueda utilizar las propiedades web de la administración dinámica de etiquetas para rastrear AEM sitios. La administración dinámica de etiquetas permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice la administración dinámica de etiquetas para recopilar datos de uso para su sitio web AEM y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
+Integre [Administración dinámica de etiquetas de Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) con AEM para que pueda utilizar las propiedades web de la administración dinámica de etiquetas para rastrear AEM sitios. La administración dinámica de etiquetas permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice la administración dinámica de etiquetas para recopilar datos de uso para su sitio web AEM y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
 
-Antes de realizar la integración, debe crear la propiedad [](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) web de la administración dinámica de etiquetas que rastrea el dominio del sitio AEM. Las opciones [de](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) alojamiento de la propiedad web deben configurarse para que pueda configurar AEM para acceder a las bibliotecas de la administración dinámica de etiquetas.
+Antes de realizar la integración, debe crear la propiedad web [de Administración dinámica de etiquetas](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) que rastrea el dominio del sitio AEM. Las [opciones de alojamiento](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de la propiedad web deben configurarse para que pueda configurar AEM para acceder a las bibliotecas de administración dinámica de etiquetas.
 
 Después de configurar la integración, los cambios en las reglas y las herramientas de implementación de la administración dinámica de etiquetas no requieren que cambie la configuración de la administración dinámica de etiquetas en AEM. Los cambios están disponibles automáticamente para AEM.
 
@@ -48,7 +48,7 @@ AEM admite la administración dinámica de etiquetas que está alojada en la nub
 * Alojado en la nube: Las bibliotecas de javascript de la administración dinámica de etiquetas se almacenan en la nube y sus páginas de AEM hacen referencia a ellas directamente.
 * AEM alojados: La administración dinámica de etiquetas genera bibliotecas de javascript. AEM utiliza un modelo de flujo de trabajo para obtener e instalar las bibliotecas.
 
-El tipo de alojamiento que utiliza la implementación determina algunas de las tareas de configuración e implementación que realiza. Para obtener información sobre las opciones de alojamiento, consulte [Alojamiento: Ficha](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) Insertar en la Ayuda de la administración dinámica de etiquetas.
+El tipo de alojamiento que utiliza la implementación determina algunas de las tareas de configuración e implementación que realiza. Para obtener más información sobre las opciones de alojamiento, consulte [Alojamiento - Ficha Insertar](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) en la Ayuda de la administración dinámica de etiquetas.
 
 ### Biblioteca de ensayo y producción {#staging-and-production-library}
 
@@ -73,7 +73,7 @@ Active el servicio de enlace de implementación de la administración dinámica 
 * Ensayo: `107.21.99.31`
 * Producción: `23.23.225.112` y `204.236.240.48`
 
-Perform the configuration using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) node:
+Realice la configuración mediante el nodo [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * En la consola web, utilice el elemento de configuración del enlace de implementación de DTM de Adobe en la página de configuración.
 * Para una configuración OSGi, el PID de servicio es `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
@@ -91,7 +91,7 @@ Cree una configuración de nube para que la instancia de AEM pueda autenticarse 
 
 >[!NOTE]
 >
->Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en las páginas cuando la propiedad web de la DTM incluya la herramienta Adobe Analytics y también utilice [Content Insight](/help/sites-authoring/content-insights.md). En la configuración [de nube de](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)Adobe Analytics, seleccione la opción No incluir código de seguimiento.
+>Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en las páginas cuando la propiedad web de la DTM incluya la herramienta Adobe Analytics y también utilice [Content Insight](/help/sites-authoring/content-insights.md). En la [configuración de nube de Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleccione la opción No incluir código de seguimiento.
 
 ### Configuración general {#general-settings}
 
@@ -124,7 +124,7 @@ Cree una configuración de nube para que la instancia de AEM pueda autenticarse 
 
 Las siguientes propiedades de la configuración de la administración dinámica de etiquetas permiten AEM las bibliotecas de la administración dinámica de etiquetas. Las propiedades permiten a AEM descargar e instalar las bibliotecas. Opcionalmente, puede actualizar automáticamente las bibliotecas para asegurarse de que reflejan los cambios realizados en la aplicación de administración dinámica de etiquetas.
 
-Algunas propiedades utilizan valores que se obtienen de la sección Descarga de biblioteca de la ficha Incrustar de la propiedad web de la administración dinámica de etiquetas. Para obtener más información, consulte Descarga [de biblioteca](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) en la Ayuda de la administración dinámica de etiquetas.
+Algunas propiedades utilizan valores que se obtienen de la sección Descarga de biblioteca de la ficha Incrustar de la propiedad web de la administración dinámica de etiquetas. Para obtener más información, consulte [Descarga de biblioteca](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) en la Ayuda de la administración dinámica de etiquetas.
 
 >[!NOTE]
 >
@@ -152,15 +152,15 @@ Al alojar las bibliotecas de la administración dinámica de etiquetas en AEM, A
   </tr> 
   <tr> 
    <td>Sugerencia de dominio</td> 
-   <td><p>(Opcional) Dominio del servidor de AEM que aloja la biblioteca de la administración dinámica de etiquetas. Especifique un valor para anular el dominio predeterminado configurado para el servicio <a href="/help/sites-developing/externalizer.md">Externalizador de vínculos de CQ</a>diarios.</p> <p>Cuando se conecta a la administración dinámica de etiquetas, AEM utiliza este valor para configurar la ruta HTTP de ensayo o la ruta HTTP de producción de las propiedades de descarga de biblioteca para la propiedad web de la administración dinámica de etiquetas.</p> </td> 
+   <td><p>(Opcional) Dominio del servidor de AEM que aloja la biblioteca de la administración dinámica de etiquetas. Especifique un valor para anular el dominio predeterminado configurado para el servicio <a href="/help/sites-developing/externalizer.md">Externalizador de vínculos de CQ por día</a>.</p> <p>Cuando se conecta a la administración dinámica de etiquetas, AEM utiliza este valor para configurar la ruta HTTP de ensayo o la ruta HTTP de producción de las propiedades de descarga de biblioteca para la propiedad web de la administración dinámica de etiquetas.</p> </td> 
   </tr> 
   <tr> 
    <td>Sugerencia de dominio seguro</td> 
-   <td><p>(Opcional) Dominio del servidor de AEM que aloja la biblioteca de la administración dinámica de etiquetas a través de HTTPS. Especifique un valor para anular el dominio predeterminado configurado para el servicio <a href="/help/sites-developing/externalizer.md">Externalizador de vínculos de CQ</a>diarios.</p> <p>Cuando está conectado a la administración dinámica de etiquetas, AEM utiliza este valor para configurar la ruta HTTPS de ensayo o la ruta HTTPS de producción de las propiedades de descarga de biblioteca para la propiedad web de la administración dinámica de etiquetas.</p> </td> 
+   <td><p>(Opcional) Dominio del servidor de AEM que aloja la biblioteca de la administración dinámica de etiquetas a través de HTTPS. Especifique un valor para anular el dominio predeterminado configurado para el servicio <a href="/help/sites-developing/externalizer.md">Externalizador de vínculos de CQ por día</a>.</p> <p>Cuando está conectado a la administración dinámica de etiquetas, AEM utiliza este valor para configurar la ruta HTTPS de ensayo o la ruta HTTPS de producción de las propiedades de descarga de biblioteca para la propiedad web de la administración dinámica de etiquetas.</p> </td> 
   </tr> 
   <tr> 
    <td>Secreto compartido</td> 
-   <td><p>(Opcional) El secreto compartido que se usará para descifrar la descarga. Obtenga este valor en el campo Shared Secret de la página Descarga de biblioteca de la administración dinámica de etiquetas.</p> <p><strong>Nota:</strong> Debe tener instaladas las bibliotecas <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> en el equipo donde AEM está instalado para AEM las bibliotecas descargadas.</p> </td> 
+   <td><p>(Opcional) El secreto compartido que se usará para descifrar la descarga. Obtenga este valor en el campo Shared Secret de la página Descarga de biblioteca de la administración dinámica de etiquetas.</p> <p><strong>Nota:</strong> Debe tener instaladas las bibliotecas  <a href="https://www.openssl.org/docs/apps/openssl.html"></a> OpenSSL en el equipo en el que está instalado AEM para AEM las bibliotecas descargadas.</p> </td> 
   </tr> 
   <tr> 
    <td>Habilitar el importador de encuestas</td> 
@@ -168,14 +168,14 @@ Al alojar las bibliotecas de la administración dinámica de etiquetas en AEM, A
   </tr> 
   <tr> 
    <td>Expresión de programación</td> 
-   <td>(aparece y es obligatorio cuando se selecciona Habilitar importador de encuestas). expresión cron que controla cuándo se descargan las bibliotecas de administración dinámica de etiquetas.</td> 
+   <td>(aparece y es obligatorio cuando se selecciona Habilitar importador de encuestas). Expresión cron que controla cuándo se descargan las bibliotecas de administración dinámica de etiquetas.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ![chlimage_1-352](assets/chlimage_1-352.png)
 
-### Propiedades del alojamiento en la nube: ensayo y producción {#cloud-hosting-properties-staging-and-production}
+### Propiedades del alojamiento en la nube - Ensayo y producción {#cloud-hosting-properties-staging-and-production}
 
 Las siguientes propiedades se configuran para la administración dinámica de etiquetas cuando la configuración dinámica de etiquetas está alojada en la nube.
 
@@ -242,7 +242,7 @@ Descargue manualmente las bibliotecas de la administración dinámica de etiquet
 >
 >Los archivos descargados se almacenan en `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
 >
->Los siguientes datos se toman directamente de la configuración [de la](#creating-the-dynamic-tag-management-configuration)DTM.
+>Lo siguiente se toma directamente de la configuración [DTM](#creating-the-dynamic-tag-management-configuration).
 >
 >* `myconfig`
 >* `companyID`

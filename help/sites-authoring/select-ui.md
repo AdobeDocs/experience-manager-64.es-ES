@@ -55,7 +55,7 @@ Para conseguirlo, se ofrecen dos interfaces gráficas de usuario, accesibles des
 
 ## Cambio de IU
 
-Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). Hay varias opciones para hacerlo.
+Aunque la IU táctil es ahora la IU estándar y se ha alcanzado la paridad de [funciones](../release-notes/touch-ui-features-status.md) con la administración y edición de sitios, es posible que en ocasiones el usuario desee cambiar a la [IU clásica](/help/sites-classic-ui-authoring/classicui.md). Hay varias opciones para hacerlo.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Hay varias ubicaciones en las que puede definir la IU que se utilizará:
 
 * [Configuración de la creación de IU clásica para su cuenta](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) : Esta opción establecerá la IU que se utilizará de forma predeterminada al editar páginas, aunque el usuario puede omitir esta acción y seleccionar otra IU para su cuenta o para la sesión actual.
 
-* [Cambio a la IU clásica para la sesión](#switching-to-classic-ui-for-the-current-session) actual: esta opción cambia a la IU clásica para la sesión actual.
+* [Cambio a la IU clásica para la sesión](#switching-to-classic-ui-for-the-current-session)  actual: esta opción cambia a la IU clásica para la sesión actual.
 
 * En el caso de la [creación de páginas, el sistema anula ciertas opciones de la IU](#ui-overrides-for-the-editor).
 
@@ -75,13 +75,13 @@ Hay varias ubicaciones en las que puede definir la IU que se utilizará:
 >
 >Varias opciones para cambiar a la interfaz de usuario clásica no están disponibles de forma inmediata, ya que deben configurarse específicamente para la instancia.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
 >[!NOTE]
 >
 >Las instancias actualizadas de una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
+>Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurarla con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` servicio). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
 
 ## Configurar la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
 
@@ -95,7 +95,7 @@ Cada usuario puede tener acceso a sus [preferencias de usuario](/help/sites-auth
 
 La configuración de la sesión puede anular estos ajustes.
 
-## Cambio a la IU clásica para la sesión actual {#switching-to-classic-ui-for-the-current-session}
+## Cambio a la IU clásica para la sesión actual  {#switching-to-classic-ui-for-the-current-session}
 
 Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambiar a la IU clásica (solo para escritorio). Hay varios métodos para cambiar a la IU clásica para la sesión actual:
 
@@ -106,7 +106,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
    >Esta opción para cambiar a la interfaz de usuario clásica no está disponible de forma inmediata, ya que debe configurarse específicamente para la instancia.
    >
    >
-   >See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+   >Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
    Si esta opción está activada, cuando pasa el cursor sobre una consola aplicable aparece un icono (el símbolo de un monitor) que, al tocar o hacer clic en él, abre la ubicación apropiada en la IU clásica.
 
@@ -116,7 +116,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
 
 * **URL**
 
-   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
+   Se puede acceder a la IU clásica mediante la URL de la pantalla de bienvenida en `welcome.html`. Por ejemplo:
 
    `http://localhost:4502/welcome.html`
 
@@ -133,7 +133,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
 >
 >Esta opción para cambiar a la interfaz de usuario clásica no está disponible de forma inmediata, ya que debe configurarse específicamente para la instancia.
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
 Si ese acceso está activado, la opción **Abrir la interfaz de usuario clásica** está disponible en el cuadro de diálogo **Información de la página**:
 
@@ -145,17 +145,17 @@ El sistema puede anular la configuración definida por un usuario o administrado
 
 * Al crear páginas:
 
-   * Use of the classic editor is forced when accessing the page using `cf#` in the URL. Por ejemplo:
+   * Se fuerza el uso del editor clásico al acceder a la página mediante `cf#` en la dirección URL. Por ejemplo:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. Por ejemplo:
+   * Se fuerza el uso del editor táctil al usar `/editor.html` en la dirección URL o al usar un dispositivo táctil. Por ejemplo:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Los forzados son temporales y solo son válidos para esa sesión del navegador
 
-   * A cookie set will be set dependent on whether touch-enabled ( `editor.html`) or classic ( `cf#`) is used.
+   * Se configurará una cookie en función de si se utiliza la funcionalidad táctil ( `editor.html`) o la clásica ( `cf#`).
 
 * Al abrir páginas mediante `siteadmin`, se buscará:
 

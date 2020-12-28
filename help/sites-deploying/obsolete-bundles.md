@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Lista de paquetes obsoletos desinstalados tras la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 >[!NOTE]
 >

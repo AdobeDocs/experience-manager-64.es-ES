@@ -19,19 +19,19 @@ ht-degree: 4%
 
 # Reestructuración del repositorio de Dynamic Media en AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
-Como se describe en la página principal Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden posponer hasta una actualización a 6.5.
+Como se describe en la página principal [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden posponer hasta una actualización a 6.5.
 
 **Antes de la actualización a 6.5**
 
 * [Configuraciones personalizadas de codificación de vídeo adaptable](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
 * [Configuración de nube de Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [Configuración de Cloud Service de Dynamic Media (DM híbrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Medios dinámicos: configuración del Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Configuración del Cloud Service Dynamic Media (DM híbrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
+* [Dynamic Media: configuración del Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
-## Antes de la actualización a 6.5 {#prior-to-upgrade}
+## Actualización anterior a 6.5 {#prior-to-upgrade}
 
-### Configuraciones de codificación de vídeo adaptable personalizadas  {#custom-adaptive-video-encoding-configurations}
+### Configuraciones de codificación de vídeo adaptable personalizadas {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -54,7 +54,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### Configuración de nube de Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -104,7 +104,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
  </tbody>
 </table>
 
-### Medios dinámicos: configuración del Cloud Service de YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuración del Cloud Service de YouTube {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
   </tr>
   <tr>
    <td><strong>Orientación de reestructuración</strong></td> 
-   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube mediante la nueva IU táctil (desde <code>/conf</code>), incluida la copia de todos los Canales de la ubicación<br /> antigua 3. Publique todos los vídeos en YouTube.</p> <p>Este flujo de trabajo resulta en nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una nueva configuración de YouTube de TouchUI, tendrá varias URL de YouTube en Propiedades, ya que los Canales recreados se publicarán de nuevo si se les da la oportunidad. Esto significa que tendrá direcciones URL inútiles en la lista Propiedades.</p> </td> 
+   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube mediante la nueva IU táctil (desde <code>/conf</code>), incluida la copia de todos los Canales de la ubicación anterior<br /> 3. Publique todos los vídeos en YouTube.</p> <p>Este flujo de trabajo resulta en nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una nueva configuración de YouTube de TouchUI, tendrá varias URL de YouTube en Propiedades, ya que los Canales recreados se publicarán de nuevo si se les da la oportunidad. Esto significa que tendrá direcciones URL inútiles en la lista Propiedades.</p> </td> 
   </tr>
   <tr>
    <td><strong>Notas</strong></td> 

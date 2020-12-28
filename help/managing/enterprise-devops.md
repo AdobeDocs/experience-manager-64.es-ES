@@ -63,7 +63,7 @@ Según la escala del sistema, el entorno de desarrollo puede tener instancias de
 
 ### Garantía de calidad {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
+Este entorno lo utiliza el equipo de garantía de calidad para [probar](/help/sites-developing/test-plan.md) de forma completa el nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
 
 ### Ensayo {#staging}
 
@@ -141,6 +141,6 @@ El contenido de producción debe trasladarse del entorno de producción al entor
 El contenido se puede transferir de la siguiente manera:
 
 * Entre los distintos entornos, mediante la exportación e importación de paquetes.
-* Between different instances - by directly replicating ([AEM replication](/help/sites-deploying/replication.md)) the content (using a HTTP, or HTTPS, connection).
+* Entre diferentes instancias: replicando directamente ([replicación de AEM](/help/sites-deploying/replication.md)) el contenido (utilizando una conexión HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

@@ -39,7 +39,7 @@ Las páginas siguientes le ayudan a configurar la integración:
 * [Asignación de datos de componentes con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuración del seguimiento de videos para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
-También puede utilizar el asistente para la [inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede utilizar el [Asistente para la selección](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
 >[!NOTE]
 >
@@ -49,18 +49,18 @@ También puede utilizar el asistente para la [inclusión](/help/sites-administer
 
 Consulte:
 
-* [Ampliación de la integración](/help/sites-developing/extending-analytics.md) de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
-* El artículo de la base de conocimientos, Integración con [Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
+* [Ampliación de la ](/help/sites-developing/extending-analytics.md) integración de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
+* El artículo de la base de conocimientos, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
 
 >[!NOTE]
 >
->Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](/help/sites-deploying/configuring-osgi.md) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configurar:
+>Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](/help/sites-deploying/configuring-osgi.md) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configuración:
 >
 >* **Day Commons HTTP Client 3.1** para configurar la API 3.x;\
    >  por ejemplo, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuración** proxy de componentes HTTP de Apache para configurar la API 4.x;
+* **Configuración del proxy de componentes HTTP de Apache** para configurar la API 4.x;
 >
 >  
 por ejemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)

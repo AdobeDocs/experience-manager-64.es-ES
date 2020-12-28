@@ -24,7 +24,7 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece maestr
 
 ## Intentándolo {#trying-it-out}
 
-1. Abra la consola Sitios desde Navegación **global -> Sitios**.
+1. Abra la consola Sitios desde **Navegación global -> Sitios**.
 1. Cambie a la vista de columna (si no está activa) y seleccione We.Retail. Observe la estructura de país de ejemplo con Suiza, los Estados Unidos, Francia, etc., junto con los Maestros de Lenguas.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
@@ -43,11 +43,11 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece maestr
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Con el Maestro de idioma inglés seleccionado, abra el carril **Referencias** en la consola Sitios y seleccione Copias **de** idioma.
+1. Con el maestro de idioma inglés seleccionado, abra el carril **References** en la consola Sitios y seleccione **Language Copies**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Marque la casilla de verificación situada junto a la etiqueta Copias **de** idioma para seleccionar todas las copias de idioma. En la sección **Actualizar copias** de idioma del carril, seleccione la opción para **crear un nuevo proyecto** de traducción. Proporcione un nombre para el proyecto y haga clic en **Actualizar**.
+1. Marque la casilla de verificación situada junto a la etiqueta **Language Copies** para seleccionar todas las copias de idioma. En la sección **Actualizar copias de idioma** del carril, seleccione la opción para **Crear un nuevo proyecto de traducción**. Proporcione un nombre para el proyecto y haga clic en **Actualizar**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -55,11 +55,11 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece maestr
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Haga clic en Alemán para ver los detalles del proyecto de traducción. Tenga en cuenta que el estado está en **Borrador**. Para inicio de la traducción con el servicio de traducción de Microsoft, haga clic en la chevron situada junto al encabezado Trabajo **de** traducción y seleccione **Inicio**.
+1. Haga clic en Alemán para ver los detalles del proyecto de traducción. Tenga en cuenta que el estado es **Borrador**. Para inicio de la traducción con el servicio de traducción de Microsoft, haga clic en la chevron situada junto al encabezado **Trabajo de traducción** y seleccione **Inicio**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Los inicios del proyecto de traducción. Haga clic en los puntos suspensivos en la parte inferior de la tarjeta denominada Trabajo de traducción para ver los detalles. El servicio de traducción ya ha traducido las páginas con el estado **Listo para revisión** .
+1. Los inicios del proyecto de traducción. Haga clic en los puntos suspensivos en la parte inferior de la tarjeta denominada Trabajo de traducción para ver los detalles. El servicio de traducción ya ha traducido las páginas con el estado **Listo para revisión**.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -69,8 +69,8 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece maestr
 
 >[!NOTE]
 >
->Este procedimiento demostró la integración integrada con la traducción automática de Microsoft. Con el [AEM módulo](/help/sites-administering/translation.md)de integración de traducción, puede integrarse con muchos servicios de traducción estándar para orquestar la traducción de AEM.
+>Este procedimiento demostró la integración integrada con la traducción automática de Microsoft. Con el [AEM Translation Integration Framework](/help/sites-administering/translation.md), puede integrarse con muchos servicios de traducción estándar para orquestar la traducción de AEM.
 
 ## Información adicional {#further-information}
 
-Para obtener más información, consulte el documento de creación [Traducir contenido para sitios](/help/sites-administering/translation.md) multilingües para obtener más información técnica.
+Para obtener más información, consulte el documento de creación [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) para obtener detalles técnicos completos.

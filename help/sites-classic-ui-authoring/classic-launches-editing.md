@@ -1,6 +1,6 @@
 ---
-title: Editar lanzamientos
-seo-title: Editar lanzamientos
+title: Edición de lanzamientos
+seo-title: Edición de lanzamientos
 description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
 seo-description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
@@ -19,7 +19,7 @@ ht-degree: 99%
 ---
 
 
-# Editar lanzamientos{#editing-launches}
+# Edición de lanzamientos{#editing-launches}
 
 ## Editar páginas de lanzamiento {#editing-launch-pages}
 
@@ -67,5 +67,5 @@ Cuando se edita un lanzamiento de una página, la información del lanzamiento a
 * Usuario que realizó el último cambio.
 * Estado del indicador **Listo para producción** (naranja = sin establecer; verde = establecido).
 
-![chlimage_1-185](assets/chlimage_1-186.png)
+![chlimage_1-186](assets/chlimage_1-186.png)
 

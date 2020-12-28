@@ -1,8 +1,8 @@
 ---
 title: Herramienta de migración CRX2OAK
 seo-title: Herramienta de migración CRX2OAK
-description: Notas de la versión específicas de la herramienta de migración de Adobe Experience Manager 6.4 CRX2OAK.
-seo-description: Notas de la versión específicas de la herramienta de migración de Adobe Experience Manager 6.4 CRX2OAK.
+description: Notas de la versión específicas de la herramienta de migración Adobe Experience Manager 6.4 CRX2OAK.
+seo-description: Notas de la versión específicas de la herramienta de migración Adobe Experience Manager 6.4 CRX2OAK.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -64,7 +64,7 @@ ht-degree: 0%
 * El directorio del almacén de datos no debe moverse después de la migración (GRANITE-10447)
 * Combinar crx2oak-quickstart-extension con crx2oak (CQ-61847)
 * crx2oak falla en los valores de duplicado en el repositorio (CQ-61906)
-* inicio de larga AEM después de la migración desde CQ 5.x (GRANITE-10309)
+* Inicio de larga AEM después de la migración desde CQ 5.x (GRANITE-10309)
 * Compatibilidad con varios servidores LDAP en crx2oak (GRANITE-9917)
 * Aplicar comprobación para la longitud máxima del nombre del nodo (OAK-3111)
 * Admite S3DataSource como fuente de migración (OAK-3685)

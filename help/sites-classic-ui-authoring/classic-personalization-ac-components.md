@@ -69,7 +69,7 @@ Puede cargar una imagen y luego editarla y manipularla (por ejemplo, recortar, r
 
 Puede cargar una imagen y luego editarla y manipularla (por ejemplo, recortar, rotar y añadir un vínculo/título/texto). Es posible arrastrar y soltar una imagen del [Buscador de contenido](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directamente en el componente o en su cuadro de diálogo de edición. También es posible hacer doble clic en la zona central del cuadro de diálogo de edición para explorar el sistema de archivos local y cargar una imagen. Las dos pestañas del cuadro de diálogo de edición también controlan las definiciones y la manipulación de la imagen:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
@@ -131,14 +131,15 @@ Puede configurar lo siguiente en las fichas **Visualización**, **Información d
 
 * **Información sobre herramientas del vínculo** Añade información adicional sobre cómo utilizar el vínculo.
 
-* **LinkType** En la lista desplegable, seleccione entre una 
-**Dirección URL** personalizada y un Documento **** adaptable. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
+* ****
+LinkTypeEn la lista desplegable, seleccione entre una 
+**Dirección** URL personalizada y un Documento **** adaptable. Este campo es obligatorio. Si selecciona una dirección URL personalizada, puede proporcionar la URL del vínculo. Si selecciona el documento adaptable, puede proporcionar la ruta de acceso del documento.
 
 * **Parámetro de URL adicional** Añada cualquier parámetro de URL adicional. Haga clic en Añadir elemento para añadir varios elementos.
 
 >[!NOTE]
 >
->You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>Debe introducir información en el campo **Tipo de vínculo** de la ficha **Información de URL**, o bien el componente no puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 
@@ -155,7 +156,7 @@ En este componente, deberá ir al párrafo de destino para seleccionarlo.
 
 Haga clic en el menú desplegable para desplazarse al párrafo al que desea hacer referencia. Cuando termine, haga clic en **Aceptar**.
 
-### Texto e imagen (Campaign) {#text-image-campaign}
+### Texto e imagen (Campaign)  {#text-image-campaign}
 
 El componente Texto e imagen (Campaign) añade un bloque de texto y una imagen.
 
@@ -169,7 +170,7 @@ Introduzca el texto. Utilice la barra de herramientas para modificar el formato,
 * **Imagen**
 Arrastre una imagen desde el buscador de contenido o haga clic para echar una ojeada a la imagen. Recorte o gire, según sea necesario.
 
-* **Propiedades** de imagen (propiedades **de imagen** avanzadas)
+* **Propiedades**  de imagen (propiedades **de imagen** avanzadas)
 
    Permite especificar lo siguiente:
 
@@ -183,7 +184,7 @@ Arrastre una imagen desde el buscador de contenido o haga clic para echar una oj
 
    * **Vincular a**
 
-      Create a link to assets or other pages within your website.
+      Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
    * **Descripción**
 
@@ -206,7 +207,7 @@ En el siguiente ejemplo se muestra el componente Texto e imagen (Campaign) que s
 
 ### Texto y personalización (Campaign) {#text-personalization-campaign}
 
-The Text &amp; Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar los campos de contexto y los bloques de personalización disponibles en Adobe Campaign; consulte también [Insertar personalizaciones](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+El componente Texto y personalización (Campaña) permite introducir un bloque de texto mediante un editor WYSIWYG, con funcionalidad proporcionada por el [editor de texto enriquecido](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar los campos de contexto y los bloques de personalización disponibles en Adobe Campaign; consulte también [Insertar personalizaciones](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 Una selección de iconos le permitirá dar formato a su texto, incluyendo las características de la fuente, la alineación, los vínculos, las listas y la sangría. 
 
@@ -226,7 +227,7 @@ Utilice componentes de Adobe Campaign para crear un formulario que los usuarios 
 
 Cada campo del componente se puede vincular al campo de una base de datos de Adobe Campaign. Los campos disponibles varían según el tipo de datos que contienen, tal como se describe en la sección [Componentes y tipo de datos](#components-and-data-type). Si amplía el esquema de destinatarios en Adobe Campaign, los campos nuevos estarán disponibles en los componentes cuyos tipos de datos coincidan.
 
-When you open a form that is configured to integrate with Adobe Campaign, you see the following components in the **Adobe Campaign** section:
+Al abrir un formulario configurado para integrarse con Adobe Campaign, verá los siguientes componentes en la sección **Adobe Campaign**:
 
 * Casilla (Campaign)
 * Campo de fecha (Campaign) y Campo de fecha/HTML 5 (Campaign)
@@ -240,7 +241,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
 
 En esta sección se describe cada componente detalladamente.
 
-### Componentes y tipos de datos {#components-and-data-type}
+### Componentes y tipos de datos  {#components-and-data-type}
 
 En la tabla siguiente se describen los componentes que pueden visualizar y modificar los datos de perfil de Adobe Campaign. Cada componente se puede asignar a un campo del perfil de Adobe Campaign para mostrar su valor y así actualizar el campo cuando se envíe el formulario. Los distintos componentes solo pueden coincidir con los campos de un tipo de datos determinado.
 
@@ -285,7 +286,7 @@ Los componentes de Adobe Campaign tienen opciones de configuración que son comu
 
 En la mayoría de los componentes puede configurar lo siguiente:
 
-#### Título y texto {#title-and-text}
+#### Título y texto  {#title-and-text}
 
 * **Título**
 
@@ -347,9 +348,9 @@ Utilice el campo de fecha para permitir que los destinatarios especifiquen una f
 
 Además de [realizar la configuración común en la mayoría de los componentes de Adobe Campaign](#settings-common-to-most-components), puede configurar lo siguiente:
 
-* **Restricciones: menú desplegable Restricción**
+* **Restricciones -** Lista desplegable de restricciones
 
-   You can select - **None** or **Date** - to add the constraint of a date or no constraint. Si selecciona la fecha, la respuesta que los usuarios escriban en el campo debe estar en un formato de fecha.
+   Puede seleccionar **Ninguno** o **Fecha** para agregar la restricción de una fecha o ninguna restricción. Si selecciona la fecha, la respuesta que los usuarios escriban en el campo debe estar en un formato de fecha.
 
 * **Mensaje de restricción**
 
@@ -357,7 +358,7 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 
 * **Estilo - Anchura**
 
-   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+   Ajuste el ancho del campo tocando o haciendo clic en los iconos **+** y **-** o introduciendo un número.
 
 En el siguiente ejemplo se muestra el componente Campo de fecha (Campaign) con el ancho ajustado que se está visualizando.
 
@@ -412,19 +413,20 @@ Utilice el campo numérico para permitir que los destinatarios introduzcan núme
 
 Además de [realizar la configuración común en la mayoría de los componentes de Adobe Campaign](#settings-common-to-most-components), puede configurar lo siguiente:
 
-* **Restricciones: menú desplegable Restricción**
+* **Restricciones -** Lista desplegable de restricciones
 
-   You can select - **None** or **Numeric** - to add the constraint of either a number or no constraint. Si selecciona el número, la respuesta que los usuarios escriban en el campo debe ser numérica.
+   Puede seleccionar - **Ninguno** o **Numérico** - para agregar la restricción de un número o de ninguna restricción. Si selecciona el número, la respuesta que los usuarios escriban en el campo debe ser numérica.
 
 * **Mensaje de restricción**
 
    Además, puede agregar un mensaje de restricción para que los usuarios sepan cómo formatear sus respuestas correctamente.
-* **Estilo - Anchura** Ajuste la anchura del campo haciendo clic o tocando en el 
-**+** y **-** o escribir un número.
+* **Estilo -**
+AnchuraAjuste la anchura del campo haciendo clic o tocando en el 
+**+** y  **-** iconos o escribir un número.
 
 En el siguiente ejemplo se muestra el componente Campo numérico (Campaign) con el ancho configurado que se está visualizando.
 
-![chlimage_1-129](assets/chlimage_1-127.png)
+![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### Campo de opciones (Campaign) {#option-field-campaign}
 
@@ -440,7 +442,7 @@ En el siguiente ejemplo se muestra el componente Campo de opciones (Campaign) qu
 
 Utilice el componente **Lista de comprobación de suscripciones (Campaign)** para modificar las suscripciones asociadas a un perfil de Adobe Campaign.
 
-Cuando se añade a un formulario, este componente muestra todas las suscripciones disponibles a modo de casillas, y permite al usuario seleccionar las suscripciones que desee. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
+Cuando se añade a un formulario, este componente muestra todas las suscripciones disponibles a modo de casillas, y permite al usuario seleccionar las suscripciones que desee. Cuando los usuarios envían el formulario, este componente suscribe o cancela la suscripción del usuario a los servicios seleccionados en función del tipo de acción del formulario (**Adobe Campaign: Suscríbase a Servicios** o **Adobe Campaign: Cancele la suscripción a Servicios**).
 
 >[!NOTE]
 >
@@ -458,9 +460,9 @@ El componente Campo de texto (Campaign) que le permite introducir referencias de
 
 Además de [realizar la configuración común en la mayoría de los componentes de Adobe Campaign](#settings-common-to-most-components), puede configurar lo siguiente:
 
-* **Restricciones: menú desplegable Restricción**
+* **Restricciones -** Lista desplegable de restricciones
 
-   You can select - **None, Email,** or **Name (no umlauts)** - to add the constraint of either an email address, name, or no constraint. Si selecciona el correo electrónico, la respuesta que los usuarios escriban en el campo debe ser una dirección de correo electrónico. Si selecciona el nombre, la respuesta debe ser un nombre (la diéresis no se admite).
+   Puede seleccionar **Ninguno, Correo electrónico,** o **Nombre (sin diéresis)** para agregar la restricción de una dirección de correo electrónico, un nombre o ninguna restricción. Si selecciona el correo electrónico, la respuesta que los usuarios escriban en el campo debe ser una dirección de correo electrónico. Si selecciona el nombre, la respuesta debe ser un nombre (la diéresis no se admite).
 
 * **Mensaje de restricción**
 
@@ -468,7 +470,7 @@ Además de [realizar la configuración común en la mayoría de los componentes 
 
 * **Estilo - Anchura**
 
-   Adjust the width of the field by clicking or tapping the **+** and **-** icons or entering a number.
+   Ajuste el ancho del campo tocando o haciendo clic en los iconos **+** y **-** o introduciendo un número.
 
 En el siguiente ejemplo se muestra el componente Campo de texto (Campaign) que se está visualizando.
 

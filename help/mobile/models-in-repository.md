@@ -30,9 +30,9 @@ Como desarrollador, debe estar familiarizado con la estructura del modelo en el 
 
 ## Creación de tipos de modelo {#creating-model-types}
 
-Existen dos tipos de modelos proporcionados por el sistema en */libs/settings/mobileapps/model-types*. Si desea omitir los tipos de modelo de sistema, deberá crear un nodo *mobileapps/model-types* bajo el nodo de configuración en el que desea que se produzca la anulación.
+Existen dos tipos de modelos proporcionados por el sistema en */libs/settings/mobileapps/model-types*. Si desea anular los tipos de modelo de sistema, deberá crear un nodo *mobileapps/model-types* en el nodo de configuración en el que desea que se produzca la anulación.
 
-Por ejemplo, si ha creado configuraciones en */conf/myconf1* y */conf/myconf2* y desea omitir los tipos de modelos de sistema sólo en *conf1* , crearía un nodo *mobileapps/model-types* en los ajustes de *conf1*.
+Por ejemplo, si ha creado configuraciones en */conf/myconf1* y */conf/myconf2* y desea anular los tipos de modelos de sistema en *conf1* sólo, crearía un nodo *mobileapps/model-types* en la configuración de *conf1 a9/>.*
 
 Si desea permitir que se agreguen tipos de datos a un modelo, el tipo de modelo debe tener un nodo secundario denominado &#39;scaffolding&#39; de tipo &#39;cq:Page&#39; y un tipo de recurso de *wcm/scaffolding/components/scaffolding*.
 
@@ -40,7 +40,7 @@ La página de scaffolding también debe incluir una propiedad *dataTypesConfig* 
 
 >[!NOTE]
 >
->Un **andamiaje** es una página que define los tipos de datos que puede editar una entidad en función del modelo. También se puede configurar cada tipo de datos para definir cómo se presentará el campo en la interfaz de usuario, así como cómo se mantendrá el valor de los datos.
+>Un **andamiaje** es una página que define los tipos de datos que puede editar una entidad basada en el modelo. También se puede configurar cada tipo de datos para definir cómo se presentará el campo en la interfaz de usuario, así como cómo se mantendrá el valor de los datos.
 
 ### Configuración de tipos de datos {#data-types-config}
 
@@ -51,7 +51,7 @@ El nodo de configuración de tipos de datos contiene una lista de elementos de t
 | fieldIcon | clase del icono CoralUI para representar el tipo de datos |
 | fieldPropResourceType | componente que representará todas las propiedades para configurar el tipo de datos |
 | fieldProperties | lista de varios valores de los componentes de propiedad que se utilizan cuando fieldPropResourceType es *mobileapps/caas/gui/components/models/editor/datatypes/field* |
-| fieldResourceType | resourceType del nodo persistente para el tipo de datos (es decir, el componente que procesará la propiedad en el editor de entidades) |
+| fieldResourceType | resourceType del nodo persistente para el tipo de datos (es decir, el componente que representará la propiedad en el editor de entidades) |
 | fieldViewResourceType | componente que se utilizará para procesar el tipo de datos en la vista del editor de modelos (se utilizará fieldResourceType si se omite esta propiedad) |
 | fieldTitle | nombre del tipo de datos que se mostrará en el editor de modelos |
 | multiFieldResourceType | tipo de recurso que se utilizará en un nodo persistente cuando se seleccione un valor múltiple |
@@ -85,7 +85,7 @@ Puede crear inicios de modelos una vez que se hayan desarrollado todos los tipos
 
 La creación de un modelo consiste en elegir un tipo de modelo permitido basado en la configuración actual y, a continuación, proporcionar un título y una descripción.
 
-Para obtener más información sobre la creación y administración de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección Creación de aplicaciones móviles.
+Para obtener más información sobre la creación y administración de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección de creación de aplicaciones móviles.
 
 ### Propiedades de un modelo {#properties-of-a-model}
 
@@ -102,9 +102,9 @@ La tabla siguiente muestra las propiedades definidas para un modelo:
 
 >[!NOTE]
 >
->Los elementos secundarios ** permitidos y las propiedades principales ** permitidas siguen las mismas reglas que las plantillas de página. Para obtener más información, consulte Plantillas [de página](/help/sites-developing/page-templates-static.md).
+>Las propiedades *elementos secundarios* y *elementos principales* permitidos siguen las mismas reglas que las plantillas de página. Para obtener más información, consulte [Plantillas de página](/help/sites-developing/page-templates-static.md).
 >
->En referencia a la propiedad Tipo *de* modelo, todos los modelos deben tener un supertipo de *mobileapps/caas/components/data/entity* , pero pueden tener un subtipo que permita personalizar el envío de contenido. Garantizar que todos los tipos de modelos sean únicos también puede ayudar a los clientes de los servicios de contenido a distinguir entre objetos de los datos.
+>En referencia a la propiedad *Tipo de modelo*, todos los modelos deben tener un supertipo de *mobileapps/caas/components/data/entity* pero pueden tener un subtipo que permita personalizar el envío de contenido. Garantizar que todos los tipos de modelos sean únicos también puede ayudar a los clientes de los servicios de contenido a distinguir entre objetos de los datos.
 
 ### Edición de un modelo {#editing-a-model}
 
@@ -114,26 +114,26 @@ Cuando se encuentra el andamiaje del modelo, el editor de modelos procesará lo 
 
 >[!NOTE]
 >
->Todos los modelos son plantillas, por lo que siguen todas las reglas de plantilla AEM. Esto permite utilizar propiedades como ** allowParentand y *allowChildren* . Son eficaces a la hora de crear nuevas entidades basadas en un modelo. Las reglas de plantilla garantizan que las entidades solo se pueden basar en determinados modelos según su jerarquía.
+>Todos los modelos son plantillas, por lo que siguen todas las reglas de plantilla AEM. Esto permite utilizar propiedades como *permissionParents* y *allowChildren*. Son eficaces a la hora de crear nuevas entidades basadas en un modelo. Las reglas de plantilla garantizan que las entidades solo se pueden basar en determinados modelos según su jerarquía.
 >
->Para obtener más información sobre la edición de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección Creación de aplicaciones móviles.
+>Para obtener más información sobre la edición de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección de creación para aplicaciones móviles.
 
 ### Modelos de sistema {#system-models}
 
 Se proporcionan dos tipos de modelos de sistema predefinidos para la reutilización de contenido simple. Estos modelos no se pueden editar.
 
-**Modelo** de páginas El modelo de páginas proporciona un método rápido para reutilizar el contenido existente de sitios para el envío por servicios de contenido.
+**Modelo** de páginasEl modelo de páginas proporciona un método rápido para reutilizar contenido existente de sitios para su envío por servicios de contenido.
 
 El resourceType de entidades basadas en el modelo Pages es: mobileapps/caas/components/data/pages
 
 Ruta: Ruta a una página Sitios. Los controladores de servicios de contenido representarán el contenido de esta ruta (y sus elementos secundarios).
 
-**Modelo** de recursos El modelo Assets proporciona un método rápido para reutilizar el contenido existente de Recursos para su envío por servicios de contenido.
+**Modelo** de recursosEl modelo Assets proporciona un método rápido para reutilizar contenido existente de Recursos para su envío por servicios de contenido.
 
-El resourceType de entidades basadas en el modelo Pages es: *mobileapps/caas/components/data/assets.*
+El resourceType de entidades basadas en el modelo Pages es: *aplicaciones/caas/componentes/datos/recursos.*
 
 Lista de recursos: Lista de rutas desde Recursos. Cada recurso se agregará como nodo de entidad secundario con un resourceType de *wcm/foundation/components/image*.
 
 >[!NOTE]
 >
->Para obtener más información sobre el uso de estas plantillas para crear modelos desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección Creación de aplicaciones móviles.
+>Para obtener más información sobre el uso de estas plantillas para crear modelos desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección de creación de aplicaciones móviles.

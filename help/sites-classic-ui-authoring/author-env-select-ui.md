@@ -28,7 +28,7 @@ Para facilitar la labor de los usuarios que crean contenido, la IU táctil permi
 >
 >Las instancias actualizadas de una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Consulte [Omisiones de IU del editor](#uioverridesfortheeditor).
+>Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurarla con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` servicio). Consulte [Omisiones de IU del editor](#uioverridesfortheeditor).
 
 ## Configurar la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
 

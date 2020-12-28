@@ -29,10 +29,10 @@ Para configurar el servicio de filtros de remitente del reenvío:
 * Abra la consola Apache Felix (**Configuraciones**) en:
 * https://&lt;server>:&lt;número_puerto>/system/console/configMgr
 * Inicie sesión como administrador.
-* En el menú **Configuraciones** , seleccione: *Filtro Remitente del reenvío Apache Sling*
+* En el menú **Configuraciones**, seleccione: *Filtro de Remitente del reenvío Sling de Apache*
 * Marque el campo Permitir vacío para permitir encabezados de remitente del reenvío vacíos o que faltan.
-* Click **Save** to save your changes.
+* Haga clic en **Guardar** para guardar los cambios.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-Consulte Configuración de [OSGI](/help/sites-deploying/osgi-configuration-settings.md) y Lista de comprobación de [seguridad - Problemas con falsificación](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de solicitudes entre sitios para obtener más información.
+Consulte la [Configuración de OSGI](/help/sites-deploying/osgi-configuration-settings.md) y [Lista de comprobación de seguridad: problemas con falsificación de solicitudes entre sitios](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obtener más información.

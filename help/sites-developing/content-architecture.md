@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Arquitectura del contenido{#content-architecture}
+# Arquitectura de contenido{#content-architecture}
 
-## Seguir el modelo de David {#follow-david-s-model}
+## Siga el modelo de David {#follow-david-s-model}
 
 El Modelo de David fue escrito por David Nuescheler hace años, pero las ideas se hacen realidad hoy en día. Los principios principales del Modelo de David son los siguientes:
 
 * Los datos son los primeros, estructurarlos más tarde. Tal vez.
 * Impulse la jerarquía de contenido, no permita que esto suceda.
-* Los espacios de trabajo son para `clone()`, `merge()`y `update()`.
+* Los espacios de trabajo son para `clone()`, `merge()` y `update()`.
 * Cuidado con los hermanos del mismo nombre.
 * Las referencias se consideran perjudiciales.
 * Los archivos son archivos.
@@ -38,11 +38,11 @@ El Modelo de David se puede encontrar en la wiki de Jackrabbit en [https://wiki.
 
 Todo debe almacenarse en el repositorio en lugar de depender de fuentes de datos de terceros independientes, como las bases de datos. Esto se aplica a contenido creado, datos binarios como imágenes, código, configuraciones, etc. Esto nos permite utilizar un conjunto de API para administrar todo el contenido y administrar la promoción de este contenido mediante la replicación. También obtenemos una única fuente de backup, registro, etc.
 
-### Usar el principio de diseño &quot;modelo de contenido primero&quot; {#use-the-content-model-first-design-principle}
+### Utilice el principio de diseño &quot;modelo de contenido primero&quot; {#use-the-content-model-first-design-principle}
 
-Al crear una nueva función, diseñe primero la estructura de contenido JCR y, a continuación, consulte la lectura y escritura del contenido con los servlets de Sling predeterminados. Esto le permitirá asegurarse de que la implementación funciona bien con los mecanismos de control de acceso predeterminados y evitar la generación de servlets innecesarios de estilo CRUD.
+Al crear una nueva función, diseñe primero la estructura de contenido JCR y, a continuación, consulte la lectura y escritura del contenido con los servlets de Sling predeterminados. Esto le permitirá asegurarse de que la implementación funciona bien con los mecanismos de control de acceso predeterminados y evitar la generación de servlets innecesarios al estilo de CRUD.
 
-### Sea RESTful {#be-restful}
+### Be RESTful {#be-restful}
 
 Los servlets deben definirse en función de resourceTypes en lugar de rutas. Esto permite utilizar controles de acceso JCR, cumplir con los principios REST y utilizar la resolución de recursos y recursos que se nos proporcionan en la solicitud. Esto también nos permite cambiar las secuencias de comandos que procesan las direcciones URL en el servidor sin necesidad de cambiar ninguna dirección URL del lado del cliente, al tiempo que se ocultan los detalles de implementación del lado del servidor del cliente para mayor seguridad.
 

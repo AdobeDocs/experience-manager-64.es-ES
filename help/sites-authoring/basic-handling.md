@@ -54,7 +54,7 @@ Cuando un usuario accede por primera vez a una consola, se inicia un tutorial de
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!** para pasar a la siguiente página de la descripción general. Click or tap **Close** or click or tap outside of the overview dialogue to close.
+Haga clic o toque **Entendido!** para pasar a la siguiente página de la descripción general. Toque o haga clic en **Cerrar** o toque o haga clic fuera del cuadro de diálogo Información general para cerrar.
 
 La descripción general se reiniciará la próxima vez que acceda a una consola, a menos que marque la opción **No volver a mostrar esto**.
 
@@ -190,7 +190,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Esta opción solo está disponible en la vista de lista. See [list view](#list-view) for more information.
+   Esta opción solo está disponible en la vista de lista. Consulte [vista de lista](#list-view) para obtener más información.
 
 * Botón **Crear**
 
@@ -228,7 +228,7 @@ Hay varios medios de ayuda disponibles:
 
    Desplácese por esta descripción general como haría en la [descripción general de navegación de producto](/help/sites-authoring/basic-handling.md#product-navigation) al acceder por primera vez a una consola.
 
-   En el menú [**Información de página **puede seleccionar** Ayuda **](/help/sites-authoring/author-environment-tools.md#accessing-help)para que se vuelva a mostrar esto en cualquier momento.
+   En el menú [**Información de página** puede seleccionar **Ayuda**](/help/sites-authoring/author-environment-tools.md#accessing-help) para que se vuelva a mostrar esto en cualquier momento.
 
 * **Consola Herramientas**
 
@@ -269,7 +269,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas    {#quick-actions}
+## Acciones rápidas     {#quick-actions}
 
 En la [vista de tarjeta](#quick-actions), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -292,7 +292,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos    {#selecting-resources}
+### Selección de recursos     {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -320,13 +320,13 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>Escritorio:<br /> pase el ratón por encima y, a continuación, utilice la acción rápida de marca de verificación</li> 
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>Escritorio:<br /> Haga clic en la tarjeta</li> 
+     <li>Dispositivo móvil:<br /> toque la tarjeta</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +363,7 @@ En todas las vistas, es posible anular la selección de todos los elementos pres
 
 1. Una vez que haya seleccionado un recurso, el encabezado superior se cubre con [acciones de la barra de herramientas](#actions-toolbar) para proporcionar acceso a las acciones aplicables actualmente al recurso seleccionado.
 
-   To exit selection mode select the **X** to the top-right.
+   Para salir del modo de selección, seleccione la **X** en la parte superior derecha.
 
 ### Vista de columna {#column-view}
 
@@ -421,7 +421,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista    {#list-view}
+### Vista de lista     {#list-view}
 
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 

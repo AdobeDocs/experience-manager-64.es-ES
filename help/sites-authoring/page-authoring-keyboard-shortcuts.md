@@ -44,7 +44,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario inicio interactuar con la página en el modo de Previsualización, el acceso directo `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

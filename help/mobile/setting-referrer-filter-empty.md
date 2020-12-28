@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración del filtro de Remitente del reenvío para permitir que esté vacío{#setting-your-referrer-filter-to-allow-empty}
+# Configuración del filtro de Remitente del reenvío para permitir el vacío{#setting-your-referrer-filter-to-allow-empty}
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ Si no tiene intención de utilizar el visor de aplicaciones para revisar aplicac
 
 En la instancia de creación de AEM en ejecución, vaya a: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) y busque &#39;Apache Sling Remitente del reenvío Filter&#39;. Haga clic para editar el filtro de remitente del reenvío y marque la casilla &#39;Permitir vacío&#39; (ver imagen a continuación). A continuación, pulse el botón save (guardar) y cierre la página del explorador.
 
-![Configuración del filtro Remitente del reenvío](assets/chlimage_1-106.png)
+![Configuración del filtro remitente del reenvío](assets/chlimage_1-106.png)

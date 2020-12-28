@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* The title appears in the **Sidekick**, from where authors can access them to work on them.
+* El título aparece en la **barra de tareas**, desde donde los autores pueden acceder a ellos para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
@@ -33,7 +33,7 @@ De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para e
 
 En el siguiente procedimiento se crea un lanzamiento.
 
-1. Open the Website administration page ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Abra la página Administración del sitio web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
 1. Haga clic en **Nuevo…** y luego en **Nuevo Lanzamiento…**.
 1. En el cuadro de diálogo **Crear lanzamiento**, especifique valores para las propiedades siguientes:
 

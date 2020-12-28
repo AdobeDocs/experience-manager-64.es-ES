@@ -38,7 +38,7 @@ El procesamiento de contenido 3D consume importantes recursos del servidor, como
 
 El procesador de Rapid Refine suele tardar unos minutos en procesar imágenes más grandes. Sin embargo, los procesadores de terceros a menudo tardan varios minutos, horas incluso, cuando están configurados para la máxima calidad.
 
-Los procesos para convertir, procesar y representar trabajos se ponen en cola en el servidor según sea necesario para evitar la sobrecarga del servidor. The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. Este estado indica que otras tareas de procesamiento deben terminar antes de que el trabajo actual de procesamiento pueda comenzar.
+Los procesos para convertir, procesar y representar trabajos se ponen en cola en el servidor según sea necesario para evitar la sobrecarga del servidor. Mensaje &quot;Esperando procesamiento...&quot; se muestra en los recursos cargados recientemente en la [!UICONTROL Vista de tarjeta]. Este estado indica que otras tareas de procesamiento deben terminar antes de que el trabajo actual de procesamiento pueda comenzar.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Los procesos para convertir, procesar y representar trabajos se ponen en cola en
    Consulte [Ver recursos 3D](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md).
 
 1. En **Adobe Experience Manager**, en la página **[!UICONTROL Navegación]**, toque **[!UICONTROL Recursos]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Vista]**, toque **[!UICONTROL Vista de tarjeta]**.
 1. Busque el objeto 3D que desea procesar.
 
 1. Pulse la tarjeta del objeto 3D para abrirlo en la página de detalles del recurso.
@@ -59,7 +59,7 @@ Los procesos para convertir, procesar y representar trabajos se ponen en cola en
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. Cerca de la esquina superior derecha de la página de detalles del recurso, toque el icono **[!UICONTROL Selector de escenario]** (punto destacado) y, a continuación, seleccione un nombre de escenario con el fondo y la iluminación que desea aplicar al objeto 3D.
 
    Consulte [Información acerca del uso de escenarios en AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
@@ -67,7 +67,7 @@ Los procesos para convertir, procesar y representar trabajos se ponen en cola en
 
    [!UICONTROL Icono del selector de escenario]
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. En la lista desplegable **[!UICONTROL Representar]** del lado izquierdo de la página de detalles de recursos, seleccione un procesador.
 
    El procesador predeterminado **[!UICONTROL Rapid Refine]** siempre está disponible. Si el escenario que ha seleccionado es un formato nativo, el procesador de terceros correspondiente también estará disponible en la lista que seleccione.
 
@@ -75,12 +75,12 @@ Los procesos para convertir, procesar y representar trabajos se ponen en cola en
 
 1. Haga lo siguiente:
 
-   * In the **[!UICONTROL Width and Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
-   * (Optional) Select or deselect the **[!UICONTROL Overwrite existing image]** check box.
+   * En los campos **[!UICONTROL Anchura y altura]**, introduzca la anchura y la altura del píxel que desea que se represente la imagen.
+   * En el campo **[!UICONTROL Nombre de imagen]**, introduzca el nombre de la imagen representada.
+   * En el campo **[!UICONTROL Ruta de exportación]**, introduzca la ruta en la que desea almacenar la imagen representada. O bien, toque el icono **[!UICONTROL Examinar]** y navegue a una ubicación.
+   * (Opcional) Active o desactive la casilla de verificación **[!UICONTROL Sobrescribir imagen existente]**.
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. Seleccione la vista de cámara que desea aplicar a la imagen procesada.
+1. Cerca de la esquina superior derecha de la página de detalles del recurso, toque el icono **[!UICONTROL Selector de cámara]**. Seleccione la vista de cámara que desea aplicar a la imagen procesada.
 
    Las barras de la izquierda y la derecha o las barras superiores e inferiores son un indicador visual con respecto al cual las partes de la vista se procesarán. Cuando el escenario seleccionado proporciona la cámara, puede seleccionar una cámara predefinida.
 
@@ -90,5 +90,5 @@ Los procesos para convertir, procesar y representar trabajos se ponen en cola en
 
 1. Pulse **[!UICONTROL Iniciar procesamiento]** para iniciar el procesamiento.
 
-   Se muestra un mensaje temporalmente para indicar que el procesamiento se ha iniciado. For convenience, this message also includes a link to the selected [!UICONTROL Output Folder] so you can navigate to it directly.
+   Se muestra un mensaje temporalmente para indicar que el procesamiento se ha iniciado. Para mayor comodidad, este mensaje también incluye un vínculo a la [!UICONTROL Carpeta de salida] seleccionada, para que pueda navegar directamente a ella.
 

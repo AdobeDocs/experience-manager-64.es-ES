@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Marco de protección de la CSRF{#the-csrf-protection-framework}
+# Marco de protección CSRF{#the-csrf-protection-framework}
 
 Además del filtro de Remitente del reenvío Apache Sling, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataque.
 
@@ -32,18 +32,18 @@ El marco utiliza tokens para garantizar que la solicitud del cliente es legítim
 
 ### Dependencias {#dependencies}
 
-Cualquier componente que dependa de la `granite.jquery` dependencia se beneficiará automáticamente del Marco de Protección del CSRF. Si este no es el caso de ninguno de los componentes, debe declarar una dependencia a `granite.csrf.standalone` antes de poder usar la estructura.
+Cualquier componente que dependa de la dependencia `granite.jquery` se beneficiará automáticamente del marco de protección del CSRF. Si este no es el caso de ninguno de sus componentes, debe declarar una dependencia a `granite.csrf.standalone` antes de poder usar el marco.
 
 ### Replicar la clave de cifrado {#replicating-crypto-keys}
 
-Para utilizar los tokens, debe replicar el `/etc/keys/hmac` binario en todas las instancias de la implementación. Una manera conveniente de copiar la clave HMAC en todas las instancias es crear un paquete que contenga la clave e instalarla a través del Administrador de paquetes en todas las instancias.
+Para utilizar los tokens, debe replicar el binario `/etc/keys/hmac` en todas las instancias de la implementación. Una manera conveniente de copiar la clave HMAC en todas las instancias es crear un paquete que contenga la clave e instalarla a través del Administrador de paquetes en todas las instancias.
 
 >[!NOTE]
 >
->Asegúrese también de realizar los cambios [necesarios en la configuración de](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) Dispatcher para utilizar el marco de protección CSRF.
+>Asegúrese también de realizar los cambios necesarios en la configuración de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para utilizar el marco de protección CSRF.
 
 >[!NOTE]
 >
 >Si utiliza la caché de manifiesto con la aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de tokens de CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
 >
->Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la página [OWASP de falsificación de solicitudes](https://owasp.org/www-community/attacks/csrf)entre sitios.
+>Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página OWASP de falsificación de solicitudes entre sitios](https://owasp.org/www-community/attacks/csrf).

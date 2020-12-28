@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, está a su propia discreción; hay muchas herramientas disponibles.
 
-Sin embargo, independientemente del método o la herramienta que elija, la información almacenada:
+Sin embargo, independientemente del método o la herramienta que elija, la información se almacenará:
 
 * Debe ser:
 

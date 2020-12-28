@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Problemas conocidos {#known-issues}
 
-Esta página mantiene una lista de los problemas conocidos que Adobe Experience Manager 6.4 publicó en abril de 2018. Para obtener más información sobre problemas conocidos, [póngase en contacto con el servicio de asistencia](https://helpx.adobe.com/support/experience-manager.html).
+Esta página mantiene una lista de los problemas conocidos que Adobe Experience Manager 6.4 lanzó en abril de 2018. Para obtener más información sobre problemas conocidos, [póngase en contacto con el servicio de soporte técnico](https://helpx.adobe.com/support/experience-manager.html).
 
 ## Dispositivos híbridos {#hybrid-devices}
 
@@ -36,45 +36,45 @@ Si utiliza Mozilla Firefox como navegador:
 
 * Escriba `about:config` en la barra de direcciones y pulse Intro.
 * Filtre la configuración a `dom.w3c`.
-* Asegúrese de que la configuración es `0` y `false`.
+* Asegúrese de que la configuración sea `0` y `false`.
 * Reinicie el explorador.
 
 Si utiliza Microsoft Edge como explorador:
 
 * Escriba `about:flags` en la barra de direcciones y pulse Retorno.
-* Desplácese a las funciones de Experimental y, a continuación, **[!UICONTROL toque]**.
-* Haga clic en **[!UICONTROL Habilitar eventos]** táctiles.
+* Desplácese a las funciones experimentales y, a continuación, **[!UICONTROL toque]**.
+* Haga clic en **[!UICONTROL Habilitar eventos táctiles]**.
 * Seleccione **[!UICONTROL Siempre desactivado]**.
 * Reinicie el explorador.
 
 ## Plataforma {#platform}
 
-* **Panel de operaciones:** La barra de progreso no se muestra cuando falta la extensión .zip en el archivo de copia de seguridad. (GRANITE-10713)
-* **HTL:** El objeto Java Use con espacio en blanco final en la declaración del paquete bloquea SightlyJavaCompilerService (GRANITE-20836)
-* **Apache Felix/Sling:** El archivo de configuración sigue presente en el repositorio incluso después de configuration.delete() (GRANITE-20618)
-* **Configuración de nube:** La consola se interrumpe tras editar el contenedor de configuración (GRANITE-20726)
-* **Seguridad:** La integración de IMS falla con la ruta de contexto personalizada (GRANITE-20639)
-* **Seguridad:** Mejore la clasificación JAAS predeterminada de SSO, External y Default LoginModules (GRANITE-20590)
-* **Tooling - CRX DE Lite:** Aumento de la vista de propiedades (GRANITE-12040)
-* **Tooling - CRX DE Lite:** No se pueden guardar los cambios en los tipos de valores &quot;largos&quot; a menos que haga clic con el doble en el nombre de la propiedad (GRANITE-12351)
+* **Panel de operaciones: la barra de** progreso no se muestra cuando falta la extensión .zip en el archivo de copia de seguridad. (GRANITE-10713)
+* **HTL:** El objeto de uso de Java con espacio en blanco final en la declaración del paquete bloquea SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling:Archivo** Config aún presente en el repositorio incluso después de configuration.delete() (GRANITE-20618)
+* **Configuración de nube:** la consola se interrumpe tras editar el contenedor de configuración (GRANITE-20726)
+* **Seguridad:error en la integración de** IMS con la ruta de contexto personalizada (GRANITE-20639)
+* **Seguridad:** Mejore la clasificación JAAS predeterminada de SSO, Externo y Módulos de inicio de sesión predeterminados (GRANITE-20590)
+* **Tooling - CRX DE Lite:** Amplitud de propiedades vista sigue avanzando (GRANITE-12040)
+* **Tooling - CRX DE Lite:** No se pueden guardar los cambios en los tipos de valor &quot;Long&quot; a menos que haga clic con el doble en el nombre de la propiedad (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** la búsqueda de ctrl+F en archivos de texto abiertos se queda atascada en la búsqueda de RegExp (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F la búsqueda en archivos de texto abierto se queda atascada en la búsqueda de RegExp (GRANITE-5996)
 
-* **Tooling - CRX DE Lite:** No se muestra la propiedad Node después de cambiar el nombre del nodo (GRANITE-7160)
-* **UI:** Desplegar &quot;más...&quot; no muestra todos los elementos cuando se abren en un elemento emergente en IE y Firefox (GRANITE-16326)
-* **UI:** La información sobre herramientas se oculta cuando se utiliza el diseño de columnas fijas con 2 columnas paralelas (GRANITE-16869)
-* **UI:** Error no controlado al suplantar como usuario que no existe (GRANITE-23228). Solución para [implementar un controlador](/help/sites-developing/customizing-errorhandler-pages.md) de errores para personalizar el mensaje de error.
+* **Tooling - CRX DE Lite:propiedad** Node no mostrada después de cambiar el nombre del nodo (GRANITE-7160)
+* **IU:** Desplegar &quot;más...&quot; no muestra todos los elementos cuando se abren en un elemento emergente en IE y Firefox (GRANITE-16326)
+* **UI:** Información sobre herramientas se oculta al utilizar el diseño de columnas fijas con dos columnas contiguas (GRANITE-16869)
+* **UI:** Error no controlado al suplantar como usuario que no existe (GRANITE-23228). Solución para [implementar un controlador de error](/help/sites-developing/customizing-errorhandler-pages.md) para personalizar el mensaje de error.
 
-* **Omnisearch:** Búsquedas con excepción de causa de barra invertida (GRANITE-11769)
-* **Omnisearch:** Abrir &quot;Configuración de Vista&quot; en la vista de lista hace que el filtro de búsqueda cambie (GRANITE-16524)
-* **Omnisearch:** lista incorrecta de las configuraciones de columnas al realizar la búsqueda de recursos desde sitios (GRANITE-16527)
+* **Omniture:** Búsquedas con excepción de causa de barra invertida (GRANITE-11769)
+* **Omniture:** Abrir &quot;Configuración de Vista&quot; en la vista de listas hace que el filtro de búsqueda cambie (GRANITE-16524)
+* **Omniture:lista** incorrecta de las configuraciones de columnas al realizar la búsqueda de recursos desde sitios (GRANITE-16527)
 
-* **Omnisearch:** Los predicados del carril izquierdo se llevan bien con la solicitud del servidor de Omniture (GRANITE-20524)
+* **Omnisearch:Los predicados de carril** izquierdo se llevan bien con la solicitud del servidor de Omniture (GRANITE-20524)
 * **Omnisearch:** Omnisearch no admite rutas de contexto (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Buscar**: La búsqueda no devuelve ningún resultado si la cadena de búsqueda inicio con un espacio en blanco [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Buscar**: La búsqueda no devuelve ningún resultado si la cadena de búsqueda inicio con un espacio en blanco  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Buscar**: En la IU clásica, las etiquetas y la interfaz de usuario no están visibles en la búsqueda (CQ-4235239)
 
@@ -96,14 +96,14 @@ Si utiliza Microsoft Edge como explorador:
 
 * **Moderación** : no se puede eliminar una publicación principal como una sola operación de eliminación desde la interfaz de usuario de moderación masiva (CQ-4236797)
 
-* **Consola** : el vínculo Nombre de usuario olvidado o Contraseña se está redirigiendo a la página de inicio de sesión en lugar del formulario de recuperación de contraseña correspondiente (CQ-4237682)
+* **Consola** : el vínculo Nombre de usuario olvidado o Contraseña se redirige a la página de inicio de sesión en lugar del formulario de recuperación de contraseña correspondiente (CQ-4237682)
 
 ## Forms {#forms}
 
 ### Instalación e implementación
 
 * (Solo AEM Forms JEE) Al reforzar el servidor de aplicaciones JBoss mientras se ejecuta Configuration Manager, se devuelven errores de invocación de EJB y error de arranque. Sin embargo, puede ignorarlos. (Ref# CQ-4229793)
-* Cuando se inician los AEM Forms, aparece la `SAX Security Manager could not be setup` advertencia. (CQ-4297403)
+* Cuando se inicia AEM Forms, aparece la advertencia `SAX Security Manager could not be setup`. (CQ-4297403)
 
 ### Comunicaciones interactivas
 
@@ -136,7 +136,7 @@ Si utiliza Microsoft Edge como explorador:
 
 ### Integración con Adobe Sign
 
-* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por lo tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete de soporte **para Planificadoras** Apache Sling desde AEM consola web en https://[*server*]:[*port*]/system/console/buncles.
+* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete **Compatibilidad con Planificadoras Sling de Apache** desde AEM consola web en https://[*server*]:[*port*]/system/console/buncles.
 
 ### Creación adaptable de Forms
 

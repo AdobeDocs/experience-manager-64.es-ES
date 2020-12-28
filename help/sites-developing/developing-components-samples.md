@@ -28,7 +28,7 @@ Para ver los conceptos subyacentes, consulte:
 * [Componentes AEM: conceptos básicos](/help/sites-developing/components-basics.md)
 * [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md)
 
-Para obtener más información sobre la IU clásica, consulte [AEM Componentes para la IU](/help/sites-developing/developing-components-classic.md)clásica.
+Para obtener información sobre la IU clásica, consulte [Componentes de AEM para la IU clásica](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
@@ -47,12 +47,12 @@ CÓDIGO DE GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir un proyecto de creación de aem-dialog-fields-customization en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
+* [Abrir un proyecto de personalización de Aem-authoring-dialog-fields en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
 
 >[!NOTE]
 >
->Este ejemplo de código está relacionado con la sesión de AEM Gems sobre [personalización de campos](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)de diálogo.
+>Este ejemplo de código está relacionado con la sesión de Gems de AEM en [Personalización de campos de diálogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Medios relacionados {#related-resources}
 
@@ -60,11 +60,11 @@ Puede encontrar el código de esta página en GitHub
 
 Se pueden agregar nuevas acciones a las barras de herramientas de componentes mediante la capa de edición del editor de páginas.
 
-Los detalles, junto con los vínculos al ejemplo de código, se encuentran en [Añadir nueva acción en una barra de herramientas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar)de componentes.
+Los detalles, junto con los vínculos al ejemplo de código, se encuentran en [Añadir nueva acción a una barra de herramientas de componentes](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Personalizar y ampliar fragmentos de contenido {#customizing-and-extending-content-fragments}
 
 Es posible que desee ampliar el componente Fragmento de contenido estándar para agregar funciones.
 
-Los detalles se encuentran en [Personalización y extensión de fragmentos](/help/sites-developing/customizing-content-fragments.md)de contenido.
+Los detalles se encuentran en [Personalización y extensión de fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md).
 

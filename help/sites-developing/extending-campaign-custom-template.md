@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Creación de una plantilla de página AEM personalizada con componentes de formulario de Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-En esta página se explica cómo crear una plantilla de página personalizada que utilice componentes de [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) examinando cómo se implementa la plantilla de Geometrixx externa ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) y se señala la información importante que puede necesitar al crear su propia plantilla personalizada.
+En esta página se explica cómo crear una plantilla de página personalizada que utilice los componentes [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando cómo se implementa la plantilla de Geometrixx externa ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) y se señala la información importante que puede necesitar al crear su propia plantilla personalizada.
 
 >[!NOTE]
 >
@@ -43,14 +43,14 @@ Para crear una plantilla de página AEM personalizada con componentes de Adobe C
 
    Al consultar la configuración clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), verá la siguiente configuración:
 
-   * ClientContext señala a `/etc/clientcontext/campaign`
-   * También hay un nodo de *configuración* adicional.
+   * El ClientContext apunta a `/etc/clientcontext/campaign`
+   * También hay un nodo *config* adicional.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   En **head.jsp**, verá las siguientes líneas que utilizan **clientcontext-config** y el **cloudservice-link**:
+   En **head.jsp**, verá las siguientes líneas que utilizan **clientcontext-config** y **cloudservice-link**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -66,9 +66,9 @@ Para crear una plantilla de página AEM personalizada con componentes de Adobe C
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Propiedades de la página de Campaña**
+1. **Propiedades de la página de campaña**
 
-   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la ficha **Campaña** :
+   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la ficha **Campaña**:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 

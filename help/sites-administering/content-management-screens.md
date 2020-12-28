@@ -1,6 +1,6 @@
 ---
-title: Gestor de contenido para pantallas
-seo-title: Gestor de contenido para pantallas
+title: gestor de contenido para pantallas
+seo-title: gestor de contenido para pantallas
 description: Conozca los conceptos básicos de Gestor de contenido para Pantallas.
 seo-description: Conozca los conceptos básicos de Gestor de contenido para Pantallas.
 uuid: eee0036e-b352-4cde-84d2-04b27d3dfe95
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Gestor de contenido para pantallas{#content-management-for-screens}
+# gestor de contenido para pantallas{#content-management-for-screens}
 
 Un ***Content Manager*** para AEM Screens es un profesional creativo que trabaja estrechamente con el marketing y conoce la campaña, la audiencia y el enfoque deseado. El administrador de contenido es responsable de crear y orquestar la experiencia del usuario final desarrollando diferentes canales y asignando secuencias a una experiencia de canal temporizada.
 

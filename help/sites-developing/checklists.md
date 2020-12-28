@@ -37,5 +37,5 @@ La siguiente lista de comprobación resalta algunos de los problemas principales
 
 >[!NOTE]
 >
->También puede ver la lista [de comprobación](/help/managing/best-practices.md) Administración de proyectos - Optimizaciones para ver más listas de comprobación relacionadas con todo el proyecto.
+>También puede ver la [Lista de comprobación de Administración de Proyectos - Optimizaciones](/help/managing/best-practices.md) para ver más listas de comprobación relacionadas con todo el proyecto.
 

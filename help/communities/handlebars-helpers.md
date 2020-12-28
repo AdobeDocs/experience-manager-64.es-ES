@@ -241,7 +241,7 @@ Esto permite que el recurso se personalice mediante programación más fácilmen
 
 Solo se pueden incluir algunos componentes de Comunidades. Para AEM 6.1, los que son inclusibles son [comentarios](essentials-comments.md), [clasificación](rating-basics.md), [revisiones](reviews-basics.md) y [votación](essentials-voting.md).
 
-Este asistente, adecuado sólo en el servidor, proporciona una funcionalidad similar a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
+Este asistente, adecuado solo en el servidor, proporciona una funcionalidad similar a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parámetros {#parameters-6}
 

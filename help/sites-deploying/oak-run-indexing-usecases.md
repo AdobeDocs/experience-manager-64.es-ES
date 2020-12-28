@@ -39,7 +39,7 @@ Se trata de un caso de uso relacionado con la corrupción de índices. En alguno
 1. La herramienta se puede utilizar incluso si no se puede acceder a la AEM;
 1. Es fácil de usar.
 
-La comprobación de índices dañados se puede realizar mediante `--index-consistency-check` la operación:
+La comprobación de índices dañados se puede realizar mediante la operación `--index-consistency-check`:
 
 ```shell
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
@@ -111,31 +111,31 @@ Esta herramienta permite recopilar rápidamente todos los detalles necesarios re
 
 ## Caso de uso 3 - Reindexación {#usecase3reindexing}
 
-Según los [escenarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), en algunos casos es necesario reindexar. Actualmente, la reindexación se realiza estableciendo el `reindex` indicador en `true` el nodo de definición de índice mediante CRXDE o a través de la interfaz de usuario del Administrador de índices. Una vez configurado el indicador, el reindexado se realiza de forma asíncrona.
+Según los [escenarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), en algunos casos es necesario volver a indexar. Actualmente, el reindexado se realiza estableciendo el indicador `reindex` en `true` en el nodo de definición de índice mediante CRXDE o mediante la interfaz de usuario del Administrador de índices. Una vez configurado el indicador, el reindexado se realiza de forma asíncrona.
 
 Algunos puntos a destacar en torno al reindexado:
 
-* El reindexado es mucho más lento en `DocumentNodeStore` las configuraciones en comparación con `SegmentNodeStore` las configuraciones donde todo el contenido es local;
+* La reindexación es mucho más lenta en las configuraciones `DocumentNodeStore` que en las configuraciones `SegmentNodeStore` donde todo el contenido es local;
 
 * Con el diseño actual, mientras se produce el reindexado asíncrono, el indizador se bloquea y todos los demás índices asíncronos se quedan antiguos y no se actualizan mientras dure la indexación. Debido a esto, si el sistema está en uso, es posible que los usuarios no vean los resultados actualizados;
 * La reindexación implica la inversión de todo el repositorio, lo que puede poner una carga elevada en la configuración de la AEM y, por tanto, afectar a la experiencia del usuario final;
-* Para una `DocumentNodeStore` instalación en la que el reindexado puede tardar bastante tiempo, si falla la conexión a la base de datos de Mongo en mitad de la operación, la indexación debería reiniciarse desde cero;
+* Para una instalación `DocumentNodeStore` en la que el reindexado puede tardar bastante tiempo, si la conexión a la base de datos de Mongo falla en medio de la operación, la indexación tendría que reiniciarse desde cero;
 
 * En algunos casos, el reindexado puede llevar mucho tiempo debido a la extracción del texto. Esto es especialmente específico para configuraciones que tienen muchos archivos PDF, donde el tiempo empleado en la extracción de texto puede afectar al tiempo de indexación.
 
 Para alcanzar estos objetivos, la herramienta de indexación de roble admite diferentes modos de reindexación que pueden utilizarse según sea necesario. El comando oak-run index proporciona las siguientes ventajas:
 
-* **reindexación** fuera de banda: el reindexado de roble puede realizarse por separado de una configuración de AEM en funcionamiento y, por tanto, minimiza el impacto en la instancia de AEM que se está utilizando;
+* **el reindexado fuera de banda**  puede realizarse por separado de una configuración de AEM en marcha y, por tanto, minimiza el impacto en la instancia de AEM que se está utilizando;
 
-* **reindexación** fuera de ruta: el reindexado se lleva a cabo sin afectar a las operaciones de indexación. Esto significa que el indizador asincrónico puede seguir indexando otros índices;
+* **reindexación**  fuera de carril: el reindexado se lleva a cabo sin afectar a las operaciones de indexación. Esto significa que el indizador asincrónico puede seguir indexando otros índices;
 
-* **Reindexación simplificada para instalaciones** de DocumentNodeStore: en `DocumentNodeStore` instalaciones, el reindexado se puede realizar con un único comando que garantice que el reindexado se realiza de la manera más óptima posible;
+* **Reindexación simplificada de las instalaciones**  de DocumentNodeStore: en el caso de  `DocumentNodeStore` las instalaciones, el reindexado se puede realizar con un único comando que garantice que el reindexado se realiza de la manera más óptima posible;
 
 * **Es compatible con la actualización de definiciones de índice y la introducción de nuevas definiciones de índice**
 
 ### Reindex - DocumentNodeStore {#reindexdocumentnodestore}
 
-Para `DocumentNodeStore` instalaciones, el reindexado se puede realizar mediante un único comando de ejecución de roble:
+Para las instalaciones `DocumentNodeStore` la reindexación se puede realizar mediante un único comando de ejecución de roble:
 
 ```shell
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore mongodb://server:port/aem
@@ -144,36 +144,36 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 Esto proporciona los siguientes beneficios
 
 * Impacto mínimo en la ejecución de instancias de AEM. La mayoría de las lecturas se pueden realizar desde servidores secundarios y la ejecución de memorias caché AEM no se ve afectada de forma adversa debido a todo el recorrido necesario para el reindexado;
-* Los usuarios también pueden proporcionar un JSON de un índice nuevo o actualizado a través de la `--index-definitions-file` opción.
+* Los usuarios también pueden proporcionar un JSON de un índice nuevo o actualizado mediante la opción `--index-definitions-file`.
 
 ### Reindex - SegmentNodeStore {#reindexsegmentnodestore}
 
-Para `SegmentNodeStore` las instalaciones, el reindexado puede realizarse de una de las siguientes maneras:
+Para las instalaciones `SegmentNodeStore` el reindexado se puede realizar de una de las siguientes maneras:
 
-#### Reindexación en línea - SegmentNodeStore {#onlinereindexsegmentnodestore}
+#### Reíndice en línea - SegmentNodeStore {#onlinereindexsegmentnodestore}
 
-Siga la manera establecida en la que el reindexado se realiza a través del `reindex` indicador de configuración.
+Siga la manera establecida en la que el reindexado se realiza mediante el indicador `reindex`.
 
 #### Reíndice en línea - SegmentNodeStore - La instancia de AEM se está ejecutando {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
-Para `SegmentNodeStore` las instalaciones, solo un proceso puede acceder a los archivos de segmentos en modo de lectura y escritura. Debido a esto, algunas operaciones de indexación en roble requieren pasos manuales adicionales.
+Para las instalaciones `SegmentNodeStore` sólo un proceso puede acceder a los archivos de segmentos en modo de lectura y escritura. Debido a esto, algunas operaciones de indexación en roble requieren pasos manuales adicionales.
 
 Esto implicaría lo siguiente:
 
 1. Texto del paso
-1. Conecte el `oak-run` archivo al mismo repositorio que utiliza AEM en modo de solo lectura y realice la indexación. Un ejemplo de cómo lograr esto:
+1. Conecte el `oak-run` al mismo repositorio utilizado por AEM en modo de solo lectura y realice la indexación. Un ejemplo de cómo lograr esto:
 
    ```shell
    java -jar oak-run-1.7.6.jar index --fds-path=/Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/datastore/ --checkpoint 26b7da38-a699-45b2-82fb-73aa2f9af0e2 --reindex --index-paths=/oak:index/lucene /Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/segmentstore/
    ```
 
-1. Finalmente, importe los archivos de índice creados mediante la operación desde la ruta de acceso desde la que `IndexerMBean#importIndex` oak-run guardó los archivos de indexación después de ejecutar el comando anterior.
+1. Por último, importe los archivos de índice creados mediante la operación `IndexerMBean#importIndex` desde la ruta de acceso donde oak-run guardó los archivos de indexación después de ejecutar el comando anterior.
 
 En este escenario no es necesario detener el servidor de AEM ni aprovisionar ninguna instancia nueva. Sin embargo, dado que la indexación implica la inversión de todo el repositorio, aumentaría la carga de E/S en la instalación, afectando negativamente el rendimiento del tiempo de ejecución.
 
-#### Reíndice en línea - SegmentNodeStore - La instancia de AEM se cierra {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Reindexación en línea - SegmentNodeStore - La instancia de AEM se cierra {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Para `SegmentNodeStore` las instalaciones, el reindexado se puede realizar mediante un único comando de ejecución de roble. Sin embargo, la instancia de AEM debe cerrarse.
+Para las instalaciones `SegmentNodeStore` el reindexado se puede realizar mediante un único comando de ejecución de roble. Sin embargo, la instancia de AEM debe cerrarse.
 
 Puede activar la reindexación con el siguiente comando:
 
@@ -183,23 +183,23 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 La diferencia entre este enfoque y el explicado anteriormente es que la creación de puntos de comprobación y la importación de índices se realizan automáticamente. La desventaja es que AEM debe estar inoperativo durante el proceso.
 
-#### Reíndice fuera de banda - SegmentNodeStore {#outofbandreindexsegmentnodestore}
+#### Reíndice de fuera de banda - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
 En este caso de uso, puede realizar reindexación en una configuración clonada para minimizar el impacto en la instancia de AEM en ejecución:
 
-1. Cree un punto de comprobación mediante una operación JMX. Para ello, vaya a la consola [de](/help/sites-administering/jmx-console.md) JMX y busque `CheckpointManager`. A continuación, haga clic en la operación **createCheckpoint(long p1)** utilizando un valor alto para la caducidad en segundos (por ejemplo, **2592000**).
-1. Copiar la `crx-quickstart` carpeta en un equipo nuevo
+1. Cree un punto de comprobación mediante una operación JMX. Para ello, vaya a la [Consola JMX](/help/sites-administering/jmx-console.md) y busque `CheckpointManager`. A continuación, haga clic en la operación **createCheckpoint(long p1)** utilizando un valor alto para la caducidad en segundos (por ejemplo, **2592000**).
+1. Copiar la carpeta `crx-quickstart` en un equipo nuevo
 1. Realizar reindexación mediante el comando de índice oak-run
 
 1. Copiar los archivos de índice generados en AEM servidor
 
 1. Importe los archivos de índice mediante JMX.
 
-En este caso de uso, se da por hecho que el almacén de datos es accesible en otra instancia, lo cual puede no ser posible si `FileDataStore` se coloca en una solución de almacenamiento basada en la nube como EBS. Esto excluye el escenario en el que `FileDataStore` también se clonó. Si la definición de índice no realiza la indexación de texto completo, no se requiere el acceso a `DataStore` .
+En este caso de uso, se da por hecho que el Almacén de datos es accesible en otra instancia, lo cual puede no ser posible si `FileDataStore` se coloca en una solución de almacenamiento basada en la nube como EBS. Esto excluye el escenario en el que `FileDataStore` también está clonado. Si la definición de índice no realiza la indexación de texto completo, no se requiere el acceso a `DataStore`.
 
 ## Caso de uso 4 - Actualización de definiciones de índice {#usecase4updatingindexdefinitions}
 
-Actualmente, puede enviar los cambios en la definición del índice mediante el paquete [ACS Asegúrese de que el índice](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) sea igual a. Esto permite el envío de las definiciones de índice a través de un paquete de contenido que posteriormente requiere que el reindexado se realice mediante la configuración del `reindex` indicador en `true`.
+Actualmente, puede enviar cambios en la definición del índice mediante el paquete [ACS Asegúrese de que el índice](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Esto permite el envío de las definiciones de índice a través de un paquete de contenido que posteriormente requiere que el reindexado se realice estableciendo el indicador `reindex` en `true`.
 
 Esto funciona bien en instalaciones más pequeñas donde el reindexado no lleva mucho tiempo. Sin embargo, para repositorios muy grandes, el reindexado se realizará en una cantidad de tiempo considerablemente mayor. En estos casos, ahora podemos utilizar la herramienta de indexación de roble.
 
@@ -207,7 +207,7 @@ Oak-run ahora admite la provisión de definiciones de índice en formato JSON y 
 
 El proceso que debe tener en cuenta para este caso de uso es:
 
-1. Un desarrollador actualizaría las definiciones de índice en una instancia local y luego generaría un archivo JSON de definición de índice mediante la `--index-definitions` opción
+1. Un desarrollador actualizaría las definiciones de índice en una instancia local y luego generaría un archivo JSON de definición de índice mediante la opción `--index-definitions`
 
 1. El JSON actualizado se proporciona al administrador del sistema
 1. System Administrator sigue el enfoque fuera de banda y prepara el índice en una instalación diferente

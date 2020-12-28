@@ -41,18 +41,18 @@ ht-degree: 88%
 
 1. Configure el procesamiento con Mental Ray.
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   Configure la **[!UICONTROL Configuración de procesamiento]** con las siguientes sugerencias:
 
-   * **[!UICONTROL Ficha Común]**
+   * **** Comúnmente
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las [!UICONTROL Cámaras procesables].
 
    * **[!UICONTROL Ficha Calidad]**
 
-      * **[!UICONTROL Calidad]** global o inferior `- 0.5`
-      * **[!UICONTROL Modo]** de difusión indirecta (GI) - `Final Gather`
-      * **[!UICONTROL Tamaño]** del filtro - `2.0`, `2.0`
-   * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **[!UICONTROL Calidad total o]** `- 0.5` inferior
+      * **[!UICONTROL Modo]**  de difusión indirecta (GI):  `Final Gather`
+      * **[!UICONTROL Tamaño]**  del filtro-  `2.0`,  `2.0`
+   * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si es necesario, ajuste las luces o [!UICONTROL Configuración de procesamiento], o haga ambas cosas para obtener los resultados deseados.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.
 

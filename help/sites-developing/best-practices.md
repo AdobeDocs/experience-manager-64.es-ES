@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
 
 # Prácticas recomendadas  {#best-practices}
 
-## Prácticas recomendadas para desarrolladores: Introducción {#best-practices-for-developers-getting-started}
+## Prácticas recomendadas para desarrolladores - Introducción {#best-practices-for-developers-getting-started}
 
 Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un amplio conjunto de mejores prácticas para desarrolladores de AEM. Los desarrolladores de Adobe se adhieren a estas optimizaciones a medida que desarrollan actualizaciones de productos AEM principales y código de cliente para implementaciones de clientes.
 
@@ -75,20 +75,20 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
   <tr>
    <td>Flujos de trabajo</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desarrollo y ampliación de Flujos de trabajo</a></td> 
-   <td><p>Los Flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar las implementaciones de flujos de trabajo con cuidado.</p> </td> 
+   <td><p>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno AEM, por lo que se recomienda planificar las implementaciones de flujos de trabajo con cuidado.</p> </td> 
   </tr>
  </tbody>
 </table>
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) simplifica la creación y gestión de comunidades locales.
+[AEM ](/help/communities/overview.md) Comunidades simplifica la creación y gestión de comunidades locales.
 
 A continuación se describen algunas prácticas recomendadas para las comunidades:
 
 |  |  |  |
 |---|---|---|
-| Prácticas recomendadas para trabajar con contenido generado por usuarios (UGC) | [Directrices de codificación](/help/communities/code-guide.md) | Directrices para desarrollar un código flexible y portátil para el marco [de componentes](/help/communities/scf.md) sociales (SCF). |
+| Prácticas recomendadas para trabajar con contenido generado por usuarios (UGC) | [Directrices de codificación](/help/communities/code-guide.md) | Directrices para desarrollar código flexible y portátil para el [marco de componentes sociales](/help/communities/scf.md) (SCF). |
 | Ejemplo de uso de componentes de Communities | [Guía de componentes de comunidad](/help/communities/components-guide.md) | Una herramienta de desarrollo interactiva. |
 
 ## Tooling/HTL {#tooling-htl}

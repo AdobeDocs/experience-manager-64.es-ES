@@ -26,11 +26,11 @@ AEM proporciona una consola para administrar las distintas traducciones de texto
 
 Utilice la herramienta de traducción para administrar las cadenas en inglés y sus traducciones. Los diccionarios se crean en el repositorio, por ejemplo /apps/myproject/i18n.
 
-Tenga en cuenta que la herramienta Traductor y los diccionarios que administra sirven para presentar la interfaz de usuario de los componentes en distintos idiomas. Si desea traducir contenido generado por usuarios o páginas, consulte [Traducción de contenido para sitios](/help/sites-administering/translation.md) multilingües y [Traducción de contenido](/help/communities/translate-ugc.md)generado por usuarios.
+Tenga en cuenta que la herramienta Traductor y los diccionarios que administra sirven para presentar la interfaz de usuario de los componentes en distintos idiomas. Si desea traducir contenido generado por usuarios o páginas, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) y [Traducción de contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
->Editar solo los diccionarios que se han creado para el proyecto y en los que residen `/apps`.
+>Solo edite los diccionarios que se han creado para el proyecto y residen en `/apps`.
 >
 >AEM diccionarios del sistema también están disponibles en esta herramienta. No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la IU AEM. Además, los cambios se pueden perder al actualizar. AEM diccionarios del sistema se encuentran en `/libs`.
 
@@ -60,13 +60,13 @@ También es posible añadir los diccionarios i18n a un proyecto de traducción d
 
    >[!NOTE]
    >
-   >Para obtener más información sobre los proyectos de traducción, consulte [Administración de proyectos](/help/sites-administering/tc-manage.md)de traducción.
+   >Para obtener más información acerca de los proyectos de traducción, lea [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md).
 
 ## Creación de un diccionario {#creating-a-dictionary}
 
 Cree un diccionario para administrar las cadenas de IU localizadas. Después de crear un diccionario, puede utilizar la herramienta Traducción para administrarlo.
 
-1. Con CRXDE Lite, agregue el nodo raíz ( `sling:Folder`) del nuevo diccionario como estructura para contener las definiciones de idioma:
+1. Con CRXDE Lite, agregue el nodo raíz ( `sling:Folder`) para el nuevo diccionario como estructura para contener las definiciones de idioma:
 
    ` /apps/<projectName>/i18n`
 
@@ -84,7 +84,7 @@ Cree un diccionario para administrar las cadenas de IU localizadas. Después de 
 
    >[!NOTE]
    >
-   >Esta es la estructura del módulo [](https://sling.apache.org/site/internationalization-support.html)Sling i18n.
+   >Esta es la estructura del módulo [Sling i18n](https://sling.apache.org/site/internationalization-support.html).
 
 1. Vuelva a cargar el traductor y la ruta del diccionario (p. ej. `/apps/myProject/i18n`) estará disponible en el selector desplegable de la barra de herramientas. Seleccione esta opción para añadir cadenas y sus traducciones en inicio.
 
@@ -100,7 +100,7 @@ Utilice la herramienta Traducción para administrar las cadenas de los diccionar
 
 >[!CAUTION]
 >
->Editar solo los diccionarios que se han creado para el proyecto y en los que residen `/apps`.
+>Solo edite los diccionarios que se han creado para el proyecto y residen en `/apps`.
 >
 >No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la IU AEM. Además, los cambios se pueden perder al actualizar. AEM diccionarios del sistema se encuentran en `/libs`.
 
@@ -122,7 +122,7 @@ Incluya variables en la cadena localizada para crear un significado contextual e
 
 Para incluir variables en la cadena localizada, coloque índices entre corchetes en la ubicación de las variables en el primer argumento del método get. Utilice la sugerencia de localización para describir los valores. El traductor debe comprender el significado de las variables porque los distintos idiomas utilizan diferentes estructuras de frase.
 
-Tenga en cuenta que [el código que solicita la cadena](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) traducida proporciona valores para las variables indizadas según el contexto.
+Tenga en cuenta que [el código que solicita la cadena traducida](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) proporciona valores para las variables indizadas según el contexto.
 
 Por ejemplo, la siguiente cadena aparece cuando un usuario inicia sesión en un sitio web y se incluye en el diccionario:
 
@@ -152,7 +152,7 @@ Utilice el procedimiento siguiente para agregar una cadena.
 Utilice el siguiente procedimiento para cambiar una cadena en un diccionario.
 
 1. En el menú desplegable Diccionarios, seleccione el diccionario que contiene la cadena que desea cambiar.
-1. Haga clic con el Doble en la cadena que desea cambiar.
+1. Haga clic con el doble en la cadena que desea cambiar.
 1. En el cuadro de diálogo Editar cadena, seleccione Modificar cadena o Comentario (Crea una copia).
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
@@ -173,12 +173,12 @@ Utilice el procedimiento siguiente para quitar una cadena de un diccionario.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
-### Búsqueda de cadenas {#searching-for-strings}
+### Buscando cadenas {#searching-for-strings}
 
 La barra de búsqueda situada en la parte inferior de la herramienta Traductor proporciona opciones de selección de cadenas:
 
 * **Filtrar por texto:** Un patrón que coincide con la cadena, el comentario o las traducciones en inglés. En la tabla solo aparecen los elementos que coinciden con todo o parte del patrón.
-* **Cambios: Cualquiera, Modificado, Nuevo, Eliminado:** Mostrar los elementos que se han cambiado y no guardado.
+* **Cambios: Cualquiera, Modificado, Nuevo, Eliminado:** muestra los elementos que se han cambiado y no guardado.
 
    * Cualquiera: Mostrar los elementos que se han modificado, agregado o eliminado.
    * Modificado: Mostrar los elementos que se han cambiado.
@@ -187,7 +187,7 @@ La barra de búsqueda situada en la parte inferior de la herramienta Traductor p
    * Varias selecciones: Muestra los elementos que tienen todas las propiedades seleccionadas.
 
 * **Tiene un comentario**: Mostrar los elementos que tienen comentarios para los traductores.
-* **Traducciones que faltan:** Mostrar elementos en los que al menos un idioma no tenga una traducción.
+* **Traducciones que faltan:** mostrar elementos en los que al menos un idioma no tiene traducción.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -199,13 +199,13 @@ La barra de búsqueda situada en la parte inferior de la herramienta Traductor p
 
 Después de agregar la cadena en inglés a un diccionario, puede agregar traducciones de la cadena. También puede [exportar el diccionario](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) para que lo traduzca un tercero.
 
-1. Seleccione [el diccionario](#creating-a-dictionary) específico del proyecto, ya que especifica la ruta en el repositorio que contiene las traducciones. Por ejemplo, seleccione **Diccionarios** como:
+1. Seleccione [el diccionario específico del proyecto](#creating-a-dictionary) ya que especifica la ruta en el repositorio que contiene las traducciones. Por ejemplo, seleccione **Diccionarios** como:
 
    `/apps/myProject/i18n`
 
    >[!CAUTION]
    >
-   >Editar solo los diccionarios que se han creado para el proyecto y en los que residen `/apps`.
+   >Solo edite los diccionarios que se han creado para el proyecto y residen en `/apps`.
    >
    >AEM diccionarios del sistema también están disponibles en esta herramienta. No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la IU AEM. Además, los cambios se pueden perder al actualizar. AEM diccionarios del sistema se encuentran en `/libs`.
 
@@ -215,7 +215,7 @@ Después de agregar la cadena en inglés a un diccionario, puede agregar traducc
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Doble haga clic en los campos **Cadena** o **Comentario** de la cadena requerida para abrir el cuadro de diálogo **Editar cadena** , edite las traducciones según sea necesario y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo:
+   * Haga clic en el doble en los campos **String** o **Comment** de la cadena requerida para abrir el cuadro de diálogo **Editar cadena**, edite las traducciones según sea necesario y haga clic en **Aceptar** para cerrar el cuadro de diálogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -223,7 +223,7 @@ Después de agregar la cadena en inglés a un diccionario, puede agregar traducc
 
    >[!NOTE]
    >
-   >Al hacer clic en **Restablecer y actualizar** (en lugar de en **Guardar**), se revierte cualquier cambio en los textos anteriores.
+   >Al hacer clic en **Restablecer y actualizar** (en lugar de **Guardar**) se revierten los cambios realizados en los textos anteriores.
 
 ## Uso de traductores de terceros {#using-third-party-translators}
 
@@ -236,13 +236,13 @@ Exporte un diccionario a un archivo XLIFF para que un servicio de terceros pueda
 * Exporte un diccionario e incluya el inglés y los términos traducidos para un idioma.
 * Exporte algunas o todas las cadenas en inglés.
 
-Al exportar un archivo XLIFF e incluir un idioma, la estructura de nodos del diccionario en el repositorio debe incluir ese idioma. Si no se incluye el idioma, se producen errores. Por ejemplo, para exportar el archivo XLIFF en francés, la carpeta de diccionario debe incluir el nodo secundario denominado `mix:language` `fr`. (Consulte [Creación de un diccionario](/help/sites-developing/i18n-translator.md#creating-a-dictionary)).
+Al exportar un archivo XLIFF e incluir un idioma, la estructura de nodos del diccionario en el repositorio debe incluir ese idioma. Si no se incluye el idioma, se producen errores. Por ejemplo, para exportar el archivo XLIFF en francés, la carpeta de diccionario debe incluir el nodo secundario `mix:language` denominado `fr`. (Consulte [Creación de un diccionario](/help/sites-developing/i18n-translator.md#creating-a-dictionary)).
 
 Utilice el siguiente procedimiento para exportar un archivo XLIFF para un idioma específico.
 
-1. Abrir la herramienta Traducción `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Abra la herramienta Traducción `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Utilice el menú desplegable Diccionarios para seleccionar el diccionario que desea exportar.
-1. Haga clic en Exportar > Exportar opciones Xliff completas de *XX* , donde *XX* es el código de idioma de dos letras como DE o FR.
+1. Haga clic en Exportar > Exportar opciones de Xliff completas *XX*, donde *XX* es el código de idioma de dos letras como DE o FR.
 
    El archivo XLIFF se abre en una nueva ficha o ventana.
 
@@ -260,7 +260,7 @@ Utilice el siguiente procedimiento para exportar todas o algunas de las cadenas 
 
 Importe un archivo XLIFF en un diccionario para rellenar el diccionario. Cuando el diccionario incluye una traducción para una cadena en inglés y el archivo XLIFF contiene una traducción diferente para la misma cadena, se reemplaza la traducción del diccionario.
 
-1. Abrir la herramienta Traducción `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Abra la herramienta Traducción `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Haga clic en Importar > Traducciones XLIFF.
 1. Seleccione el archivo que desea importar y haga clic en Aceptar.
 
@@ -268,7 +268,7 @@ Importe un archivo XLIFF en un diccionario para rellenar el diccionario. Cuando 
 
 Añada o elimine los idiomas compatibles con la herramienta Traducción y que se proporcionan a los usuarios de las páginas web.
 
-### Cambio de los idiomas enumerados en la tabla de diccionarios {#changing-languages-listed-in-the-dictionary-table}
+### Cambio de los idiomas enumerados en la tabla de diccionario {#changing-languages-listed-in-the-dictionary-table}
 
 La herramienta Traductor incluye los siguientes idiomas en la tabla de diccionario:
 
@@ -301,19 +301,19 @@ Utilice el siguiente procedimiento para agregar o quitar idiomas.
    >
    >Los códigos de idioma deben escribirse en minúsculas.
 
-1. Haga clic en **Guardar todo** en CRXDE Lite y vuelva a cargar el traductor. La cuadrícula se actualizará para mostrar los idiomas definidos.
+1. Haga clic en **Guardar todo** en el CRXDE Lite y vuelva a cargar el traductor. La cuadrícula se actualizará para mostrar los idiomas definidos.
 
    >[!NOTE]
    >
-   >El traductor sólo guardará las traducciones de idiomas que están realmente [presentes en el diccionario](#creating-a-dictionary) (es decir, debajo de la ruta del diccionario como `/apps/myProject/i18n`).
+   >El traductor sólo guardará traducciones para idiomas que estén [presentes en el diccionario](#creating-a-dictionary) (es decir, debajo de la ruta del diccionario como `/apps/myProject/i18n`).
    >
    >Asegúrese de que se corresponden con los idiomas mostrados en la cuadrícula.
 
 ### Poner los idiomas a disposición de los autores {#making-languages-available-to-authors}
 
-Después de definir un diccionario para un idioma nuevo en la instancia de AEM, debe hacer que esté disponible para su selección por parte de los autores (por ejemplo, para su uso en **Preferencias**):
+Después de definir un diccionario para un idioma nuevo de la instancia de AEM, debe hacer que esté disponible para que lo seleccionen los autores (por ejemplo, para utilizarlo en **Preferencias**):
 
-1. Para cambiar la lista de idiomas disponibles en **Preferencias** de la consola de **seguridad** :
+1. Para cambiar la lista de idiomas disponibles en **Preferencias** de la consola **Seguridad**:
 
    1. Cree una superposición en el código de la aplicación para:
 
@@ -322,7 +322,7 @@ Después de definir un diccionario para un idioma nuevo en la instancia de AEM, 
        and update as required.
       ```
 
-1. Para que el idioma esté disponible en **Preferencias** desde la consola **Sitios** web, debe realizar los siguientes cambios en la aplicación:
+1. Para que el idioma esté disponible en **Preferencias** desde la consola **Sitios web**, debe realizar los siguientes cambios en la aplicación:
 
    1. Cree una superposición para la estructura en:
 
@@ -334,15 +334,15 @@ Después de definir un diccionario para un idioma nuevo en la instancia de AEM, 
 
 1. Guarde todo y vuelva a cargar la consola adecuada.
 
-### Cambio de los nombres de idiomas y los países predeterminados {#changing-language-names-and-default-countries}
+### Cambio de los nombres de idioma y los países predeterminados {#changing-language-names-and-default-countries}
 
-Varios países usan el mismo idioma, por ejemplo, Estados Unidos, Reino Unido y Australia, todos usan inglés. Esto se indica mediante un código que indica tanto el idioma como el país, como `en_US`, `en_GB` y `en_AU`.
+Varios países usan el mismo idioma, por ejemplo, Estados Unidos, Reino Unido y Australia, todos usan inglés. Esto se indica con un código que indica idioma y país como `en_US`, `en_GB` y `en_AU`.
 
 Los países predeterminados se utilizan al mostrar los indicadores (por ejemplo, en el cuadro de diálogo de copia de idioma), para resolver el país de un código de idioma.
 
 >[!NOTE]
 >
->Para localizaciones administradas por el traductor de arriba, sólo funciona el idioma exacto. Si se utiliza la lista desplegable de preferencias de idioma `en_uk`, debe haber un `en_uk` diccionario en el repositorio.
+>Para localizaciones administradas por el traductor de arriba, sólo funciona el idioma exacto. Si la lista desplegable de preferencias de idioma utiliza `en_uk`, debe haber un diccionario `en_uk` en el repositorio.
 
 Para cambiar las definiciones predeterminadas:
 
@@ -356,9 +356,9 @@ Para cambiar las definiciones predeterminadas:
 
    Luego cambiar o extender la lista allí. La propiedad `defaultCountry` en un nodo de idioma (p. ej. `ja`) debe contener el código completo, como `ja_jp`, que definiría `jp` como el país predeterminado para el idioma `ja`.
 
-1. Actualice **CQ WCM Language Manager**.
+1. Actualice el **Administrador de idioma de CQ WCM**.
 
-   * **lista** de idioma:
+   * **Lista** de idioma:
 
       Ruta de acceso a la lista de idioma en el repositorio. Establezca esta opción en la ubicación utilizada para la superposición:
 
@@ -386,5 +386,5 @@ Del mismo modo, las pruebas de cadenas de diccionario deben realizarse como part
 
 >[!NOTE]
 >
->Cuando se utiliza Dispatcher, es necesario [invalidar las páginas](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) en caché para incluir nuevas cadenas dicacionarias en las cadenas de componentes procesadas.
+>Al utilizar Dispatcher, debe [invalidar las páginas en caché](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir nuevas cadenas dicacionarias en las cadenas de componentes procesadas.
 

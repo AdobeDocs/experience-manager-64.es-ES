@@ -18,43 +18,43 @@ ht-degree: 0%
 ---
 
 
-# Cómo acceder mediante programación al JCR AEM{#how-to-programmatically-access-the-aem-jcr}
+# Cómo acceder mediante programación al JCR{#how-to-programmatically-access-the-aem-jcr} de AEM
 
 Puede modificar mediante programación nodos y propiedades ubicados dentro del repositorio de Adobe CQ, que forma parte del Adobe Marketing Cloud. Para acceder al repositorio de CQ, utilice la API de Java Content Repository (JCR). Puede utilizar la API de JCR de Java para realizar operaciones de creación, sustitución, actualización y eliminación (CRUD) en contenido ubicado en el repositorio de Adobe CQ. Para obtener más información sobre la API de JCR de Java, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Este artículo de desarrollo modifica el JCR de Adobe CQ desde una aplicación Java externa. Por el contrario, puede modificar el JCR desde un paquete OSGi mediante la API de JCR. Para obtener más información, consulte [Persistencia de datos de CQ en el repositorio](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)de contenido de Java.
+>Este artículo de desarrollo modifica el JCR de Adobe CQ desde una aplicación Java externa. Por el contrario, puede modificar el JCR desde un paquete OSGi mediante la API de JCR. Para obtener más información, consulte [Datos CQ persistentes en el repositorio de contenido de Java](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
->Para utilizar la API de JCR, agregue el `jackrabbit-standalone-2.4.0.jar` archivo a la ruta de clases de la aplicación Java. Puede obtener este archivo JAR desde la página web de la API de Java JCR en [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Para utilizar la API de JCR, agregue el archivo `jackrabbit-standalone-2.4.0.jar` a la ruta de clases de la aplicación Java. Puede obtener este archivo JAR desde la página Web de la API de Java JCR en [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Para obtener información sobre cómo realizar la consulta del JCR de Adobe CQ mediante la API de Consulta de JCR, consulte [Consulta de datos de Adobe Experience Manager mediante la API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)de JCR.
+>Para obtener información sobre cómo realizar la consulta del JCR de Adobe CQ mediante la API de Consulta JCR, consulte [Consulta de datos de Adobe Experience Manager mediante la API de JCR](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Crear una instancia de repositorio {#create-a-repository-instance}
 
-Aunque hay diferentes maneras de conectarse a un repositorio y establecer una conexión, este artículo de desarrollo utiliza un método estático que pertenece a la `org.apache.jackrabbit.commons.JcrUtils` clase. El nombre del método es `getRepository`. Este método toma un parámetro de cadena que representa la dirección URL del servidor de Adobe CQ. Por ejemplo `http://localhost:4503/crx/server`.
+Aunque hay diferentes maneras de conectarse a un repositorio y establecer una conexión, este artículo de desarrollo utiliza un método estático que pertenece a la clase `org.apache.jackrabbit.commons.JcrUtils`. El nombre del método es `getRepository`. Este método toma un parámetro de cadena que representa la dirección URL del servidor de Adobe CQ. Por ejemplo `http://localhost:4503/crx/server`.
 
-El `getRepository`método devuelve una `Repository`instancia, como se muestra en el siguiente ejemplo de código.
+El método `getRepository`devuelve una instancia `Repository`, como se muestra en el siguiente ejemplo de código.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
 Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server");
 ```
 
-## Crear una instancia de Sesión {#create-a-session-instance}
+## Crear una instancia de sesión {#create-a-session-instance}
 
-La `Repository`instancia representa el repositorio de CRX. La `Repository`instancia se utiliza para establecer una sesión con el repositorio. Para crear una sesión, invoque el `Repository`método de la `login`instancia y pase un `javax.jcr.SimpleCredentials` objeto. El `login`método devuelve una `javax.jcr.Session` instancia.
+La instancia `Repository`representa el repositorio de CRX. La instancia `Repository`se utiliza para establecer una sesión con el repositorio. Para crear una sesión, invoque el método `Repository`de la instancia `login`y pase un objeto `javax.jcr.SimpleCredentials`. El método `login`devuelve una instancia `javax.jcr.Session`.
 
-Para crear un `SimpleCredentials`objeto, utilice su constructor y pase los siguientes valores de cadena:
+Para crear un objeto `SimpleCredentials`se utiliza su constructor y se pasan los siguientes valores de cadena:
 
 * El nombre de usuario;
 * La contraseña correspondiente
 
-Al pasar el segundo parámetro, llame al `toCharArray`método del objeto String. El siguiente código muestra cómo llamar al `login`método que devuelve un `javax.jcr.Sessioninstance`.
+Al pasar el segundo parámetro, llame al método `toCharArray`del objeto String. El siguiente código muestra cómo llamar al método `login`que devuelve un `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -63,14 +63,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Crear una instancia de nodo {#create-a-node-instance}
 
-Utilice una `Session`instancia para crear una `javax.jcr.Node` instancia. Una `Node`instancia permite realizar operaciones de nodo. Por ejemplo, puede crear un nuevo nodo. Para crear un nodo que represente el nodo raíz, invoque el `Session`método de la `getRootNode` instancia, como se muestra en la línea de código siguiente.
+Utilice una instancia `Session`para crear una instancia `javax.jcr.Node`. Una instancia `Node`permite realizar operaciones de nodo. Por ejemplo, puede crear un nuevo nodo. Para crear un nodo que represente el nodo raíz, invoque el método `Session`de la instancia `getRootNode`, como se muestra en la siguiente línea de código.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Una vez creada una `Node`instancia, puede realizar tareas como crear otro nodo y agregarle un valor. Por ejemplo, el código siguiente crea dos nodos y agrega un valor al segundo nodo.
+Una vez creada una instancia `Node`, puede realizar tareas como crear otro nodo y agregarle un valor. Por ejemplo, el código siguiente crea dos nodos y agrega un valor al segundo nodo.
 
 ```java
 // Store content 
@@ -80,7 +80,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Recuperar valores de nodo {#retrieve-node-values}
 
-Para recuperar un nodo y su valor, invoque el `Node`método de la `getNode`instancia y pase un valor de cadena que represente la ruta completa al nodo. Considere la estructura de nodos creada en el ejemplo de código anterior. Para recuperar el nodo day, especifique adobe/day, como se muestra en el código siguiente:
+Para recuperar un nodo y su valor, invoque el método `Node`de la instancia `getNode`y pase un valor de cadena que represente la ruta completa al nodo. Considere la estructura de nodos creada en el ejemplo de código anterior. Para recuperar el nodo day, especifique adobe/day, como se muestra en el código siguiente:
 
 ```java
 // Retrieve content
@@ -89,9 +89,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Creación de nodos en el repositorio de Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
+## Crear nodos en el repositorio de Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-El siguiente ejemplo de código Java representa una clase Java que se conecta a Adobe CQ, crea una `Session`instancia y agrega nuevos nodos. A un nodo se le asigna un valor de datos y, a continuación, el valor del nodo y su ruta se escriben en la consola. Cuando termine con la sesión, asegúrese de cerrar la sesión.
+El siguiente ejemplo de código Java representa una clase Java que se conecta a Adobe CQ, crea una instancia `Session`y agrega nuevos nodos. A un nodo se le asigna un valor de datos y, a continuación, el valor del nodo y su ruta se escriben en la consola. Cuando termine con la sesión, asegúrese de cerrar la sesión.
 
 ```java
 /*

@@ -49,7 +49,7 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 
    Consulte [Acerca de la carga y el procesamiento de los recursos 3D en AEM](/help/sites-classic-ui-authoring/classicui-upload-proc-3d.md).
 1. En **[!UICONTROL Adobe Experience Manager]**, en la página **[!UICONTROL Navegación]**, toque **[!UICONTROL Recursos]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Vista]**, toque **[!UICONTROL Vista de tarjeta]**.
 
 1. Vaya a un recurso 3D que desee ver.
 1. Toque la tarjeta del recurso 3D para abrirlo en la página de información del recurso.
@@ -58,9 +58,9 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 
    * En la esquina inferior derecha de la página de información del recurso, utilice la paleta de control de cámara para cambiar las distintas vistas del recurso.
 
-      Si utiliza un dispositivo de entrada que no sea táctil ni tenga una rueda de desplazamiento, por ejemplo, un ratón Apple clásico de un solo botón, sigue siendo posible cambiar el zoom o la perspectiva de un recurso 3D, mientras esté en cada modo respectivo. You accomplish the action by pressing and holding down the `SHIFT`key while depressing the mouse button and dragging up or down.
+      Si utiliza un dispositivo de entrada que no sea táctil ni tenga una rueda de desplazamiento, por ejemplo, un ratón Apple clásico de un solo botón, sigue siendo posible cambiar el zoom o la perspectiva de un recurso 3D, mientras esté en cada modo respectivo. Para realizar la acción, presione y mantenga presionada la tecla `SHIFT`mientras deprime el botón del ratón y arrastra hacia arriba o hacia abajo.
 
-      Al utilizar un panel táctil en un equipo portátil típico, a menudo resulta difícil controlar los comportamientos del zoom o de la perspectiva con el gesto de pellizcar con dos dedos. In such cases, you can press and hold down `SHIFT`during the action. Este tipo de esfuerzo reduce la velocidad del gesto de pellizcar y hace que sea más fácil conseguir el nivel de zoom exacto o la perspectiva que desea. Alternately, you can use a one finger drag up or down while the `SHIFT`key is pressed to affect zoom or perspective behaviors.
+      Al utilizar un panel táctil en un equipo portátil típico, a menudo resulta difícil controlar los comportamientos del zoom o de la perspectiva con el gesto de pellizcar con dos dedos. En estos casos, puede presionar y mantener presionada `SHIFT`durante la acción. Este tipo de esfuerzo reduce la velocidad del gesto de pellizcar y hace que sea más fácil conseguir el nivel de zoom exacto o la perspectiva que desea. También puede utilizar un dedo para arrastrar hacia arriba o hacia abajo mientras se pulsa la tecla `SHIFT`para afectar a los comportamientos de zoom o perspectiva.
    <table> 
     <tbody> 
       <tr> 
@@ -69,15 +69,15 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
       </tr> 
       <tr> 
       <td><p>Zoom</p> <p>o</p> <p>Persp</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga presionada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de perspectiva<br /> . Suelte la tecla para volver al modo de Zoom.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Zoom y Perspectiva.</p> <p>O bien, mantenga pulsada la tecla <code>ALT/OPTION</code> durante la acción para cambiar temporalmente al modo Perspectiva<br />. Suelte la tecla para volver al modo de Zoom.</p> 
         <ul> 
-        <li><strong>Zoom</strong>-Acercar y alejar la cámara, lo que la aleja del recurso<br /> que está viendo. El zoom es el comportamiento predeterminado de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
+        <li><strong>Zoom</strong>-Acercar y alejar la cámara, lo que la aleja del <br /> recurso que está viendo. El zoom es el comportamiento predeterminado de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
         <li><strong>Perspectiva</strong>: cambia la distancia focal (también conocida como campo de vista) de la cámara mientras se mantiene el tamaño relativo del recurso en la vista. La perspectiva es el comportamiento alternativo de la rueda de desplazamiento de un ratón (si está disponible), de los gestos de pellizcar con dos dedos en los dispositivos móviles, o cuando mantiene pulsada la tecla Mayús mientras arrastra hacia arriba o abajo con el botón izquierdo del ratón.</li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td><p>Orbit</p> <p>o</p> <p>Panorámica</p> </td> 
-      <td><p>Toque o haga clic para alternar entre los modos Orbit y Pan.</p> <p>O bien, mantenga pulsada la <code>ALT/OPTION</code> tecla durante la acción para cambiar temporalmente al modo de desplazamiento. Suelte la tecla para volver al modo de Giro.</p> 
+      <td><p>Toque o haga clic para alternar entre los modos Orbit y Pan.</p> <p>O bien, mantenga presionada la tecla <code>ALT/OPTION</code> durante la acción para cambiar temporalmente al modo de desplazamiento. Suelte la tecla para volver al modo de Giro.</p> 
         <ul> 
         <li><strong>Orbit</strong>: Mueve la cámara de visualización en una esfera centrada en un punto de destinatario que se encuentra cerca del centro del recurso 3D por defecto. El giro es el comportamiento predeterminado al arrastrar con el botón izquierdo o al arrastrar con un solo toque en dispositivos móviles.</li> 
         <li><strong>Recorrido</strong>: mueve la cámara en el plano de visualización. El punto de destino se mueve en consecuencia, de manera que las acciones de giro posteriores moverán la cámara alrededor de un nuevo punto de destino. La panorámica es el comportamiento alternativo al arrastrar con el botón izquierdo y al arrastrar con un solo toque.</li> 
@@ -93,12 +93,12 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
       </tr> 
       <tr> 
       <td>Restablecer</td> 
-      <td>Toque o haga clic para restaurar el punto de destinatario de la vista al centro del modelo. Reset also moves the camera<br /> closer or further away to show the asset in its entirety and at a reasonable viewing size.</td> 
+      <td>Toque o haga clic para restaurar el punto de destinatario de la vista al centro del modelo. El reinicio también hace que la cámara<br /> se acerque o se aleje más para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.</td> 
       </tr> 
     </tbody> 
     </table>
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon. Seleccione un nombre de escenario con el fondo y la iluminación que desee aplicar al recurso 3D.
+1. Cerca de la esquina superior derecha de la página de detalles del recurso, toque el icono **[!UICONTROL Selector de escenario]**. Seleccione un nombre de escenario con el fondo y la iluminación que desee aplicar al recurso 3D.
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -106,7 +106,7 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 
    Consulte [Información acerca del uso de escenarios en AEM 3D](/help/sites-classic-ui-authoring/classicui-stages-aem3d.md).
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon, then select a camera view that you want to apply to the 3D asset.
+1. Cerca de la esquina superior derecha de la página de detalles del recurso, toque el icono **[!UICONTROL Selector de cámara]** y seleccione una vista de cámara que desee aplicar al recurso 3D.
 
    ![](do-not-localize/chlimage_1-3.png)
 

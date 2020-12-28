@@ -26,7 +26,7 @@ Una vez instalado, el filtro bloquea el acceso a todos los recursos. Por ejemplo
 
 ## Configurar el filtro de disposición de contenido {#configure-content-disposition-filter}
 
-Puede vista del filtro de disposición de contenido de Sling de [Apache en GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Puede vista del [Filtro de disposición de contenido de Apache Sling en GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 Las opciones de Filtro de disposición del contenido proporcionan la siguiente funcionalidad:
 

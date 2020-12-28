@@ -24,11 +24,11 @@ ht-degree: 1%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
+Las acciones de gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
 
 ## Información general de colecciones {#collections-overview}
 
-Las colecciones representan un *bloque* bien definido con contenido como artículos o pancartas que se ajustan al tema de la portada.
+Las colecciones representan un *bloque* bien definido y lleno de contenido como artículos o pancartas que se ajustan al tema de la portada.
 
 >[!NOTE]
 >
@@ -49,10 +49,10 @@ El flujo de trabajo general para crear una colección es el siguiente:
 
 1. Seleccione **Móvil** en el carril lateral.
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar colecciones** .
+1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar colecciones**.
 1. Siga todos los pasos del asistente para seguir creando el nuevo artículo.
 1. Cuando esté listo, haga clic en **Crear**.
-1. El nuevo artículo aparece en el mosaico **Administrar colecciones** .
+1. El nuevo artículo aparece en el mosaico **Administrar colecciones**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -69,7 +69,7 @@ Flujo de trabajo para importar una nueva colección
 1. En Mobile, seleccione su aplicación móvil bajo demanda en el catálogo.
 1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar colecciones** y seleccione Importar colecciones.
 1. Haga clic en **Importar colecciones** en el cuadro de diálogo y, a continuación, en Cerrar.
-1. Las colecciones bajo demanda de Mobile aparecen ahora en el mosaico **Administrar colecciones** .
+1. Las colecciones bajo demanda de Mobile ahora aparecen en el mosaico **Administrar colecciones**.
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Utilice el editor integrado AEM arrastrar y soltar para añadir o cambiar un art
 Flujo de trabajo para editar una colección:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione un artículo de origen AEM en el mosaico **Administrar colecciones** .
+1. Seleccione un artículo de origen AEM en el mosaico **Administrar colecciones**.
 1. Haga clic en la colección resaltada de la vista de lista para abrirla en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar el contenido de la colección (manuscritos, imágenes, texto, etc.).
 
@@ -93,7 +93,7 @@ Las colecciones tienen numerosas propiedades, como títulos, descripciones e im�
 Flujo de trabajo general para la vista/edición de una colección:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Elija una colección en el mosaico **Administrar colecciones** .
+1. Elija una colección en el mosaico **Administrar colecciones**.
 
 1. Seleccione **Propiedades** en la barra de acciones.
 1. Vista todos los metadatos disponibles para ese artículo.
@@ -107,9 +107,9 @@ La acción de carga copia el contenido seleccionado y lo agrega a un proyecto de
 Flujo de trabajo general para cargar una colección:
 
 1. En **Mobile**, elija la aplicación móvil bajo demanda en el catálogo.
-1. En el mosaico **Administrar colecciones** , seleccione un artículo para cargarlo en Mobile On-Demand.
+1. En el mosaico **Administrar colecciones**, seleccione un artículo para cargarlo en Mobile On-Demand.
 1. Añada más colecciones si es necesario desde la vista de lista.
-1. Seleccione **Cargar** en la barra de acciones y, a continuación, haga clic en Cargar en el cuadro de diálogo.
+1. Seleccione **Cargar** en la barra de acciones y haga clic en Cargar en el cuadro de diálogo.
 1. Las colecciones se cargan ahora en Mobile On-Demand.
 
 ## Eliminación de una colección {#deleting-a-collection}
@@ -119,9 +119,9 @@ Esta operación elimina la colección seleccionada de Mobile On-Demand y, opcion
 Flujo de trabajo general para eliminar una colección:
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione el artículo que desea eliminar en el mosaico **Administrar colecciones** .
+1. Seleccione el artículo que desea eliminar en el mosaico **Administrar colecciones**.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
-1. Click **Delete** from the action bar.
+1. Haga clic en **Eliminar** en la barra de acciones.
 1. Compruebe si desea eliminar de AEM y de Mobile On-Demand.
 1. Haga clic en **Eliminar**.
 1. La colección se ha eliminado de la lista.
@@ -140,7 +140,7 @@ Las colecciones son esencialmente una categoría de contenido relacionado: Recop
 1. Seleccione un artículo cargado anteriormente (o pancarta/colección)
 1. Elija Añadir en la barra de acciones.
 1. Seleccione una colección cargada anteriormente en el cuadro de diálogo.
-1. Haga clic en **Actualizar** para añadir contenido a la colección.
+1. Haga clic en **Actualizar** para agregar contenido a la colección.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 

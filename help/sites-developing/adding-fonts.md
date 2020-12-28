@@ -24,13 +24,13 @@ AEM permite generar gráficos que incorporan texto tomado dinámicamente de su c
 
 Para ello, también puede cargar y utilizar sus propias fuentes.
 
-Actualmente, todas las implementaciones de la plataforma Java admiten fuentes [TrueType](https://en.wikipedia.org/wiki/Truetype) .
+Actualmente, todas las implementaciones de la plataforma Java admiten fuentes [TrueType](https://en.wikipedia.org/wiki/Truetype).
 
 1. Abra el CRXDE Lite y vaya a la carpeta de la aplicación de proyecto:
 
    `/apps/<your-project>/`
 
-1. En `/apps/<your-project>/` Crear un nuevo nodo:
+1. En `/apps/<your-project>/` cree un nuevo nodo:
 
    * **Nombre**: `fonts`
    * **Tipo**: `sling:Folder`
@@ -41,13 +41,13 @@ Actualmente, todas las implementaciones de la plataforma Java admiten fuentes [T
 
    >[!NOTE]
    >
-   >Los archivos de fuente del repositorio deben tener el sufijo `*.ttf` o `*.TTF`.
+   >Los archivos de fuentes del repositorio deben tener el sufijo `*.ttf` o `*.TTF`.
 
-1. Actualice la configuración [](/help/sites-deploying/configuring-osgi.md) OSGi de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
+1. Actualice la configuración [OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
 
-1. Volver al CRXDE Lite. Ahora debe ver un `.fontlist` nodo en la carpeta que contenga el nombre de las fuentes importadas.
+1. Volver al CRXDE Lite. Ahora debe ver un nodo `.fontlist` en la carpeta que contenga el nombre de las fuentes importadas.
 
    Estas fuentes ya están listas para usarse en la API de Java.
 
-Para obtener información detallada sobre cómo utilizar las fuentes con la API de Java, consulte la [documentación de la clase Font de la API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)de Java.
+Para obtener información detallada sobre cómo utilizar las fuentes con la API de Java, consulte la [documentación de la clase Font de la API de Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
 

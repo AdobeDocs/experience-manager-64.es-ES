@@ -57,7 +57,7 @@ Antes de dar información general sobre datos específicos, aquí incluimos una 
    * ***No se puede navegar con vínculos*** cuando se está en el modo **Edición**. Para navegar con vínculos debe [acceder a una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante una de las acciones siguientes:
 
       * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
-      * [Ver tal y como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
+      * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
 
 * Los flujos de trabajo y las versiones ya no se inician o se crean desde el editor de páginas; esto se hace ahora desde la [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) (accesible desde la consola). 
 
@@ -189,7 +189,7 @@ Cómo seleccionar una página depende de la vista que se utilice en el panel:
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode).
 
-## Editar las Propiedades de la página   {#editing-the-page-properties}
+## Editar las Propiedades de la página    {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-authoring/editing-page-properties.md):
 
@@ -241,7 +241,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-authorin
 
    Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-## Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
+## Mover, copiar y pegar o eliminar su página    {#move-copy-and-paste-or-delete-your-page}
 
 1. [Desplácese hasta la página](#finding-your-page) que quiera mover, copiar, pegar o eliminar.
 1. Seleccione el icono de copiar (y luego pegar), mover o eliminar según sea necesario mediante:
@@ -288,9 +288,9 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando sea adecuado) poder llevar a cabo otras acciones.
 
-## Crear una versión de su página   {#creating-a-version-of-your-page}
+## Crear una versión de su página    {#creating-a-version-of-your-page}
 
-1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)**con el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-authoring/basic-handling.md#timeline)** con el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
@@ -304,7 +304,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan versiones de su página:
 
-1. Seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)**mediante el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Seleccione **[Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 

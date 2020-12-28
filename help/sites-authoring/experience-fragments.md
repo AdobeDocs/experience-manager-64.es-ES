@@ -90,7 +90,7 @@ La creación de carpetas permite:
    >
    >Puede utilizar el [editor de plantillas](/help/sites-authoring/templates.md) para crear su propia plantilla.
 
-En el siguiente ejemplo se muestran los fragmentos de experiencia estructurados según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
+El siguiente ejemplo muestra fragmentos de experiencia estructurados según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ Para crear y configurar una carpeta para los fragmentos de experiencias, se reco
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>También es posible configurar las [Plantillas permitidas para su instancia](#configure-allowed-templates-instance), pero se recomienda este método **no**, ya que los valores se pueden sobrescribir al actualizar.
 
 ### Configurar las plantillas permitidas para la carpeta {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ Para crear y configurar una carpeta para los fragmentos de experiencias, se reco
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>No se recomienda cambiar las **[!UICONTROL Plantillas permitidas]** por este método, ya que las plantillas especificadas se pueden sobrescribir tras la actualización.
 >
 >Utilice este cuadro de diálogo únicamente con fines informativos.
 
@@ -185,7 +185,7 @@ El editor de fragmentos de experiencias le ofrece funciones similares al editor 
 
 El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un producto:
 
-1. Drag and drop a **[!UICONTROL Category Teaser]** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arrastre y suelte un **[!UICONTROL teaser de Categoría]** desde el [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ Puede arrastrar el bloque de creación al sistema de párrafos de cualquier frag
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+Con el selector `.plain.` de la URL, puede acceder a la representación HTML sin formato.
 
 Está disponible desde el navegador, pero su principal objetivo es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros, implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencias directamente, utilizando solo la URL.
 
 La representación HTML sin formato agrega el protocolo, el host y la ruta de contexto a las rutas que son:
 
-* del tipo: `src`, `href`o `action`
+* del tipo: `src`, `href` o `action`
 
-* o finalizar con: `-src`, o `-href`
+* o finalizar con: `-src` o `-href`
 
 Por ejemplo:
 
@@ -309,7 +309,7 @@ Por ejemplo:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
+## Exportación de fragmentos de experiencias    {#exporting-experience-fragments}
 
 De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Los canales de AEM y los canales similares de terceros pueden usar esta opción.
 

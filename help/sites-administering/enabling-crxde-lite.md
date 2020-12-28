@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Habilitar CRXDE Lite en AEM{#enabling-crxde-lite-in-aem}
+# Habilitando CRXDE Lite en AEM{#enabling-crxde-lite-in-aem}
 
-Para garantizar que las instalaciones AEM sean lo más seguras posible, la lista de comprobación de seguridad recomienda [desactivar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) en entornos de producción.
+Para garantizar que las instalaciones AEM sean lo más seguras posible, la lista de comprobación de seguridad recomienda [deshabilitar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) en los entornos de producción.
 
-Sin embargo, el CRXDE Lite depende del `org.apache.sling.jcr.davex` paquete para funcionar correctamente, por lo tanto la desactivación de WebDAV también deshabilitará el CRXDE Lite.
+Sin embargo, el CRXDE Lite depende del paquete `org.apache.sling.jcr.davex` para funcionar correctamente, por lo que la desactivación de WebDAV también deshabilitará el CRXDE Lite.
 
-Cuando esto sucede, la exploración para `https://serveraddress:4502/crx/de/index.jsp` mostrar un nodo raíz vacío y todas las solicitudes HTTP a los recursos CRXDE Lite fallarán:
+Cuando esto sucede, al navegar a `https://serveraddress:4502/crx/de/index.jsp` se muestra un nodo raíz vacío y todas las solicitudes HTTP a los recursos CRXDE Lite fallan:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -46,7 +46,7 @@ Si está desactivado, puede activar el CRXDE Lite siguiendo el procedimiento sig
 1. Cree la siguiente configuración:
 
    * **Ruta raíz:** `/crx/server`
-   * Haga clic en la casilla en **Usar URIs** absolutos.
+   * Haga clic en la casilla en **Usar URI absolutos**.
 
 1. Cuando termine de usar CRXDE Lite, asegúrese de volver a deshabilitar WebDAV.
 
@@ -56,7 +56,7 @@ También puede habilitar CRXDE Lite mediante cURL, ejecutando este comando:
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-## Other Resources {#other-resources}
+## Otros recursos {#other-resources}
 
 Para obtener más información sobre las funciones de seguridad de AEM 6, consulte las páginas siguientes:
 

@@ -20,9 +20,9 @@ ht-degree: 12%
 
 # AEM Communities Notas de la versión {#aem-communities-release-notes}
 
-Esta sección proporciona información sobre las mejoras realizadas a los AEM Communities desde la versión 6.3. Para obtener más información sobre las nuevas funciones con buenos detalles, consulte [Novedades de AEM 6.4 Comunidades](/help/communities/whats-new-aem-communities.md).
+Esta sección proporciona información sobre las mejoras realizadas en AEM Communities desde la versión 6.3. Para obtener más información sobre las nuevas funciones con buenos detalles, consulte [Novedades de AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
-To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
+Para obtener la versión más reciente, consulte la sección [Implementación de comunidades](/help/communities/deploy-communities.md#latest-releases) de la documentación.
 
 ## Mejoras principales {#main-improvements}
 
@@ -61,17 +61,17 @@ Moderación:
 
 Compatibilidad global con los cambios fundamentales de AEM 6.4.
 
-Nota: todas estas funciones también están disponibles para AEM 6.3. Verifique las notas de revisión de AEM Communities para [6.3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes.html).
+Nota: todas estas funciones también están disponibles para AEM 6.3. Verifique las notas de la versión de AEM Communities para [6.3](https://helpx.adobe.com/es/experience-manager/6-3/release-notes.html).
 
 ## Problemas conocidos {#known-issues}
 
 * **Moderación** : no se puede eliminar una publicación principal como una sola operación de eliminación desde la interfaz de usuario de moderación masiva (CQ-4236797)
-* **Consola** : el vínculo Nombre de usuario olvidado o Contraseña se está redirigiendo a la página de inicio de sesión en lugar del formulario de recuperación de contraseña correspondiente (CQ-4237682)
+* **Consola** : el vínculo Nombre de usuario olvidado o Contraseña se redirige a la página de inicio de sesión en lugar del formulario de recuperación de contraseña correspondiente (CQ-4237682)
 
-## Seleccionar funciones {#select-features}
+## Seleccionar características {#select-features}
 
-Puntuación de experto (*con tecnología Sensei*) - se utiliza para permitir la gamificación, que es una manera efectiva de alentar y recompensar el valioso comportamiento de la comunidad. También puede utilizarse para identificar a expertos con fines de recomendación o de mercadotecnia.
+Puntuación de experto (*Equipada con Sensei*): se utiliza para habilitar la gamificación, que es una manera eficaz de alentar y recompensar el valioso comportamiento de la comunidad. También puede utilizarse para identificar a expertos con fines de recomendación o de mercadotecnia.
 
-## Manifestaciones {#demonstrations}
+## Demostraciones {#demonstrations}
 
-Todas estas características se pueden demostrar usando la [AEM Máquina](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) de demostración disponible públicamente en GitHub.com cuando se usa el escenario de demostración de AEM Communities y también dentro de la nueva implementación de referencia de We.Retail.
+Todas estas funciones se pueden demostrar con la [AEM máquina de demostración](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible públicamente en GitHub.com cuando se utiliza el escenario de demostración de AEM Communities y también en la nueva implementación de referencia de We.Retail.

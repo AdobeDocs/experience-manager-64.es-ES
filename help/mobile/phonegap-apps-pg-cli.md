@@ -28,7 +28,7 @@ En cualquier momento, como desarrollador, puede ejecutar la aplicación en un di
 
 Para ejecutar los siguientes ejemplos necesitará un sistema que ejecute OSx (Mac) con Xcode o un sistema Mac/Win/Linux con el SDK de Android instalado.
 
-## Bootstrap de su entorno de desarrollo {#bootstrap-your-development-environment}
+## Bootstrap su entorno de desarrollo {#bootstrap-your-development-environment}
 
 [Configuración de la CLI de PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
@@ -64,13 +64,13 @@ Una vez que haya superado con éxito el entorno de desarrollo, descargue la fuen
 * Haga clic en Descargar y guarde el ZIP en su equipo.
 * Extraiga el archivo zip descargado en su área de trabajo.
 
-## Generar y cargar la aplicación (desde el origen) {#build-and-load-the-app-from-source}
+## Genere y cargue la aplicación (desde el origen) {#build-and-load-the-app-from-source}
 
 La CLI de PhoneGap puede crear un proyecto de plataforma, compilar el origen e implementar la aplicación en un único comando.
 
 >[!NOTE]
 >
->Puede realizar todos estos pasos por separado, consulte los documentos de [PhoneGap CLI](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>Puede realizar todos estos pasos por separado, consulte [Documentos de CLI de PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
 
 1. Asegúrese de haber instalado la CLI de PhoneGap, consulte arriba.
 1. En una ventana de consola (o terminal), navegue al directorio raíz del origen extraído.
@@ -162,4 +162,4 @@ Puede establecer puntos de interrupción en cualquier lugar del origen. Al inter
 
 ## Pasos siguientes {#the-next-steps}
 
-Una vez que haya aprendido sobre el desarrollo de aplicaciones con la CLI de PhoneGap, consulte [Acceso a las funciones](/help/mobile/phonegap-access-device-features.md)del dispositivo.
+Una vez que haya aprendido acerca del desarrollo de aplicaciones con la CLI de PhoneGap, consulte [Acceso a funciones del dispositivo](/help/mobile/phonegap-access-device-features.md).

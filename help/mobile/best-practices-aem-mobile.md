@@ -51,7 +51,7 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 
 * Preferir varios archivos de secuencias de comandos de componentes sobre uno solo y monolítico
 
-   * Se proporcionan una serie de puntos de extensión vacíos, como *customheaderlibs.html* y *customfoterlibs.html*, que permiten al desarrollador cambiar la plantilla de página y duplicar el menor código principal posible
+   * Se proporcionan varios puntos de extensión vacíos, como *customheaderlibs.html* y *customfoterlibs.html*, que permiten al programador cambiar la plantilla de página al mismo tiempo que se duplica el menor código principal posible
    * Las plantillas se pueden ampliar y personalizar mediante el mecanismo *sling:resourceSuperType* de Sling
 
 * Preferir Sightly/HTL sobre JSP como idioma de plantilla
@@ -66,7 +66,7 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 
 >[!NOTE]
 >
->Puede obtener más información sobre los scripts externos de bloqueo de procesamiento [aquí](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Aquí[ puede obtener más información detallada sobre secuencias de comandos externas de bloqueo de procesamiento.](https://developers.google.com/speed/docs/insights/BlockingJS)
 
 **Prefiere las bibliotecas JS y CSS de cliente específicas de la aplicación en lugar de las bibliotecas específicas de la web**
 

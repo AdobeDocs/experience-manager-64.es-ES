@@ -15,15 +15,15 @@ ht-degree: 6%
 ---
 
 
-# Gestión de las solicitudes del RGPD para la Fundación AEM{#handling-gdpr-requests-for-the-aem-foundation}
+# Gestión de solicitudes de RGPD para AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >El RGPD se utiliza como ejemplo en las secciones que figuran a continuación, pero los detalles abarcados son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-## Compatibilidad con el GDPR de la Fundación AEM {#aem-foundation-gdpr-support}
+## Soporte de RGPD de AEM Foundation {#aem-foundation-gdpr-support}
 
-En el nivel de base de AEM, los datos personales almacenados son el Perfil del usuario. Por lo tanto, la información de este artículo trata principalmente de cómo acceder a los perfiles de usuario y eliminarlos, para atender las solicitudes de acceso y eliminación del RGPD, respectivamente.
+En el nivel de base de AEM, los datos personales almacenados son el Perfil del usuario. Por lo tanto, la información de este artículo trata principalmente de cómo acceder y eliminar perfiles de usuario, para abordar las solicitudes de acceso y eliminación del RGPD respectivamente.
 
 ## Acceso a un Perfil de usuario {#accessing-a-user-profile}
 
@@ -37,11 +37,11 @@ En el nivel de base de AEM, los datos personales almacenados son el Perfil del u
 
    ![usersearch](assets/usersearch.png)
 
-1. Finalmente, abra el perfil del usuario haciendo clic en él y, a continuación, marque la casilla de verificación en la ficha **[!UICONTROL Detalles]** .
+1. Finalmente, abra el perfil del usuario haciendo clic en él y, a continuación, marque la casilla de verificación en la ficha **[!UICONTROL Detalles]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### HTTP API {#http-api}
+### API HTTP {#http-api}
 
 Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usuario, con el fin de facilitar la automatización. Existen varios tipos de API que puede utilizar:
 
@@ -76,7 +76,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Deshabilitar usuario {#disable-user}
 
-1. Abra la consola Administración de usuarios y busque al usuario en cuestión, tal como se describe más arriba.
+1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se describe más arriba.
 1. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil se pondrá gris para indicar que está seleccionado.
 
 1. Pulse el botón Deshabilitar en el menú superior para deshabilitar al usuario:
@@ -93,7 +93,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Eliminar información de Perfil de usuario {#delete-user-profile-information}
 
-1. Inicie sesión en el CRXDE Lite y luego busque la `[!UICONTROL userId]`:
+1. Inicie sesión en el CRXDE Lite y luego busque el `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -108,7 +108,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### HTTP API {#http-api-1}
+### API HTTP {#http-api-1}
 
 Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la  **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
 

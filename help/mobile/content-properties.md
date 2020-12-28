@@ -18,7 +18,7 @@ ht-degree: 20%
 ---
 
 
-# Propiedades y nodos de contenido {#content-properties-and-nodes}
+# Propiedades de contenido y nodos {#content-properties-and-nodes}
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page,
 
 Las siguientes tablas describen las propiedades y los nodos de contenido.
 
-## Propiedades de integración comunes {#common-integration-properties}
+## Propiedades de integración común {#common-integration-properties}
 
 | **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** | **Descripción** |
 |---|---|---|---|
@@ -92,7 +92,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados o esperados | Descripción |
 |--- |--- |--- |--- |
-| image | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |  |
+| image | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entidades {#entities}
 
@@ -100,9 +100,9 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |
 
-#### Banners {#banners-1}
+#### Pancartas {#banners-1}
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |---|---|---|---|
@@ -112,4 +112,4 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados de valores esperados | Descripción |
 |--- |--- |--- |--- |
-| background-image | jcr:PrimaryType=nt: <br> sling no estructurado:resourceType=foundation/components/image |  |  |
+| background-image | jcr:PrimaryType=nt:unstructure <br> sling:resourceType=foundation/components/image |  |  |

@@ -1,8 +1,8 @@
 ---
 title: Administración de contenido
 seo-title: Administración de contenido
-description: Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener más información.
-seo-description: Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener más información.
+description: Las acciones de gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener más información.
+seo-description: Las acciones de gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener más información.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -24,23 +24,23 @@ ht-degree: 1%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las acciones de Gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
+Las acciones de gestor de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
 
-## Información general del contenido {#content-overview}
+## Información general de contenido {#content-overview}
 
 Si piensa en una revista en línea, el contenido principal incluye artículos, anuncios y las portadas. Se pueden crear tres tipos principales de contenido de Mobile On-Demand dentro de AEM:
 
 * **Artículos**: texto basado en arte para transmitir información
-* **Pancartas:** vínculos promocionales gráficos típicos
-* **Colecciones:** representan un *contenedor* bien definido con contenido como artículos o pancartas que se ajustan al tema de la portada
+* **Pancartas:vínculos promocionales** típicamente gráficos
+* **Colecciones:** representan un  ** bloque bien definido con contenido como artículos o pancartas que se adaptan al tema de la portada
 
 * **Recursos compartidos:** permite reutilizar o compartir artículos comunes en artículos
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño para las aplicaciones de AEM Mobile, consulte Consideraciones de [diseño para las aplicaciones](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) de AEM Mobile en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño para aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
-## Creating and Managing Content {#creating-and-managing-content}
+## Creación y administración de contenido {#creating-and-managing-content}
 
 Los siguientes temas describen la creación y administración de contenido, concretamente artículos, pancartas y colecciones. Una vez que aprenda a crear y administrar el contenido, podrá ver temas adicionales como cargar recursos compartidos, publicar/cancelar la publicación de contenido y obtener una vista previa con Preflight.
 
@@ -52,7 +52,7 @@ Los siguientes temas describen la creación y administración de contenido, conc
 
 >[!NOTE]
 >
->Generalmente, debe realizar una verificación previa antes de publicar contenido. Consulte [Vista previa con verificación previa](/help/mobile/aem-mobile-manage-ondemand-services.md) para obtener más información.
+>Generalmente, debe realizar una verificación previa antes de publicar contenido. Consulte [Vista previa con verificación previa](/help/mobile/aem-mobile-manage-ondemand-services.md) para obtener más detalles.
 
 ### Recursos adicionales {#additional-resources}
 

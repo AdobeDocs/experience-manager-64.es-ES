@@ -24,7 +24,7 @@ ht-degree: 9%
 >
 >Esta página trata la IU clásica.
 >
->Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU estándar con capacidad táctil.
+>Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU táctil estándar.
 
 La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades de AEM.
 
@@ -32,7 +32,7 @@ La consola de bienvenida proporciona una lista de vínculos a las distintas cons
 
 Es posible configurar los vínculos visibles. Esto se puede definir para usuarios o grupos específicos. Las acciones que deben realizarse dependen del tipo de destinatario (que se correlaciona con la sección de la consola en la que se encuentren):
 
-* [Consolas](#links-in-main-console-left-pane) principales: vínculos en la consola principal (panel izquierdo)
+* [Consolas](#links-in-main-console-left-pane)  principales: vínculos en la consola principal (panel izquierdo)
 * [Recursos, documentación y referencia, características](#links-in-sidebar-right-pane) : vínculos en la barra lateral (panel derecho)
 
 ## Vínculos en la consola principal (panel izquierdo) {#links-in-main-console-left-pane}
@@ -41,7 +41,7 @@ Esto lista las principales consolas de AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Configuración de si los vínculos de la consola principal están visibles {#configuring-whether-main-console-links-are-visible}
+### Configurar si los vínculos de la consola principal son visibles {#configuring-whether-main-console-links-are-visible}
 
 Los permisos de nivel de nodo determinan si el vínculo se puede ver o no. Los nodos en cuestión son:
 
@@ -67,13 +67,13 @@ Por ejemplo:
 
    `/libs/wcm/core/content/misc`
 
-Consulte la sección [](/help/sites-administering/security.md) Seguridad para obtener más información sobre cómo establecer los permisos deseados.
+Consulte la sección [Seguridad](/help/sites-administering/security.md) para obtener más información sobre cómo establecer los permisos deseados.
 
 ### Vínculos en la barra lateral (panel derecho) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Estos vínculos se basan en la existencia de nodos *y en el acceso de lectura a los* nodos bajo la siguiente ruta:
+Estos vínculos se basan en la existencia de acceso de lectura *y* a los nodos en la siguiente ruta:
 
 `/libs/cq/core/content/welcome`
 
@@ -160,7 +160,7 @@ De forma predeterminada, hay tres secciones (separadas ligeramente):
  </tbody> 
 </table>
 
-#### Configuración de si los vínculos de la barra lateral son visibles {#configuring-whether-sidebar-links-are-visible}
+#### Configurar si los vínculos de la barra lateral son visibles {#configuring-whether-sidebar-links-are-visible}
 
 Es posible ocultar un vínculo de usuarios o grupos específicos eliminando el acceso de lectura a los nodos que representan el vínculo.
 
@@ -182,17 +182,17 @@ Por ejemplo:
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Para eliminar el vínculo a **Paquetes**, elimine el acceso de lectura de
+* Para quitar el vínculo a **Packages**, elimine el acceso de lectura de
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Consulte la sección [](/help/sites-administering/security.md) Seguridad para obtener más información sobre cómo establecer los permisos deseados.
+Consulte la sección [Seguridad](/help/sites-administering/security.md) para obtener más información sobre cómo establecer los permisos deseados.
 
 ### Mecanismo de selección de vínculos {#link-selection-mechanism}
 
-En `/libs/cq/core/components/welcome/welcome.jsp` uso se utiliza [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en los nodos que tienen la propiedad:
+En `/libs/cq/core/components/welcome/welcome.jsp` se utiliza [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que ejecuta una consulta en los nodos que tienen la propiedad:
 
-* `jcr:mixinTypes` con el valor: `cq:Console`
+* `jcr:mixinTypes` con el valor:  `cq:Console`
 
 >[!NOTE]
 >
@@ -204,13 +204,13 @@ En `/libs/cq/core/components/welcome/welcome.jsp` uso se utiliza [ConsoleUtil](h
 
 
 
-Cuando un usuario o grupo no tiene permiso de lectura en un nodo con la mezcla `cq:Console`, la `ConsoleUtil` búsqueda no recupera ese nodo, por lo que no aparece en la consola.
+Cuando un usuario o grupo no tiene permiso de lectura en un nodo con la mezcla `cq:Console`, la búsqueda `ConsoleUtil` no recupera ese nodo, por lo que no aparece en la consola.
 
 ### Añadir un elemento personalizado {#adding-a-custom-item}
 
-El mecanismo [de selección de](#link-selection-mechanism) vínculos puede utilizarse para agregar su propio elemento personalizado a la lista de vínculos.
+El [mecanismo de selección de vínculos](#link-selection-mechanism) puede utilizarse para agregar su propio elemento personalizado a la lista de vínculos.
 
-Añada el elemento personalizado en la lista agregando la `cq:Console` mezcla a la utilidad o al recurso. Esto se realiza definiendo la propiedad:
+Añada el elemento personalizado en la lista agregando la mezcla `cq:Console` a su utilidad o recurso. Esto se realiza definiendo la propiedad:
 
-* `jcr:mixinTypes` con el valor: `cq:Console`
+* `jcr:mixinTypes` con el valor:  `cq:Console`
 

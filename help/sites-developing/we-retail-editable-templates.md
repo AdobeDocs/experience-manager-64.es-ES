@@ -18,7 +18,7 @@ ht-degree: 12%
 ---
 
 
-# Prueba de plantillas editables en We.Retail{#trying-out-editable-templates-in-we-retail}
+# Intentando plantillas editables en We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Con las plantillas editables, la creación y el mantenimiento de plantillas ya no es una tarea solo para desarrolladores. Ahora, un tipo de usuario avanzado, que se denomina autor de plantilla, puede crear plantillas. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el autor de la plantilla tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
 
@@ -31,7 +31,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Tenga en cuenta que el selector de modo ya no oferta un modo de diseño. Todas las páginas de We.Retail se basan en plantillas editables y para alterar el diseño de plantillas editables deben editarse en el editor de plantillas.
-1. En el menú Información **de** página, seleccione **Editar plantilla**.
+1. En el menú **Información de página** seleccione **Editar plantilla**.
 1. Ahora está editando la plantilla Página principal.
 
    El modo de estructura de la página permite modificar la estructura de la plantilla. Esto incluye, por ejemplo, los componentes permitidos en el contenedor de diseño.
@@ -68,13 +68,13 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De nuevo en el editor de plantillas, puede utilizar el selector de modo para cambiar al modo Contenido **** inicial para definir qué contenido se necesita en la página.
+1. De nuevo en el editor de plantillas, puede utilizar el selector de modo para cambiar al modo **Contenido inicial** para definir qué contenido se necesita en la página.
 
-   **El modo Diseño** se puede utilizar como en una página normal para definir el diseño de la plantilla.
+   **El** modo de diseño se puede utilizar como en una página normal para definir el diseño de la plantilla.
 
 ## Más información {#more-information}
 
-Para obtener más información, consulte el documento de creación [Creación de plantillas](/help/sites-authoring/templates.md) de página o [las plantillas de página de documento para desarrolladores - Editable](/help/sites-developing/page-templates-editable.md) para obtener información técnica completa sobre las plantillas editables.
+Para obtener más información, consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o la página de documento para programadores [Plantillas - Editable](/help/sites-developing/page-templates-editable.md) para obtener detalles técnicos completos sobre las plantillas editables.
 
-También es posible que desee investigar los componentes [principales](/help/sites-developing/we-retail-core-components.md). Consulte los componentes [principales de documento de creación para obtener una descripción general de las funciones de los componentes principales y del documento para desarrolladores](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) Desarrollo de componentes [](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) principales para obtener una descripción general técnica.
+También es posible que desee investigar [componentes principales](/help/sites-developing/we-retail-core-components.md). Consulte el documento de creación [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener una visión general de las capacidades de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.
 

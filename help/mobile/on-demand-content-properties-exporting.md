@@ -26,11 +26,11 @@ ht-degree: 4%
 
 Las aplicaciones se representan como *cq:Pages* en AEM.
 
-Comparten las mismas propiedades comunes que se encuentran en cualquier *cq:Page* , además de las que se muestran a continuación, que representan las propiedades de compatibilidad con la integración.
+Comparten las mismas propiedades comunes que se encuentran en cualquier *cq:Page* además de otras que se muestran a continuación y que representan las propiedades de soporte de la integración.
 
 ## Propiedades de la aplicación {#app-properties}
 
-En la tabla siguiente se muestran las propiedades y los nodos **de la aplicación**.
+La siguiente tabla muestra **Propiedades y nodos de la aplicación**.
 
 <table>
  <tbody>
@@ -87,7 +87,7 @@ En la tabla siguiente se muestran las propiedades y los nodos **de la aplicació
  </tbody>
 </table>
 
-Puede utilizar Propiedades ***del contenido*** para crear contenido. Consulte los siguientes recursos para crear y exportar artículos y recursos compartidos:
+Puede utilizar ***Propiedades del contenido*** para crear contenido. Consulte los siguientes recursos para crear y exportar artículos y recursos compartidos:
 
 * [Propiedades del contenido](/help/mobile/content-properties.md)
 * [Creación de la configuración de exportación de artículos](/help/mobile/creating-article-export-configuration.md)

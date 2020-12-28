@@ -50,7 +50,7 @@ Para obtener información sobre la integración del sitio AEM y de Salesforce, c
 
 Silverpop Engage ofrece automatización de marketing, correo electrónico, móvil y social.
 
-Para obtener información sobre la integración del sitio AEM y ExactTarget, consulte [Integración con el compromiso](/help/sites-administering/silverpop.md)de Silverpop.
+Para obtener información sobre la integración del sitio AEM y ExactTarget, consulte [Integración con Silverpop Engage](/help/sites-administering/silverpop.md).
 
 ## Integración con ExactTarget {#integrating-with-exacttarget}
 
@@ -62,8 +62,8 @@ Para obtener información sobre la integración del sitio AEM y ExactTarget, con
 
 Facebook y Twitter son servicios populares de redes sociales. AEM integración con Facebook y Twitter permite a las organizaciones proporcionar una opción de inicio de sesión en Facebook o Twitter en propiedades digitales propias y, a continuación, personalizar la experiencia del usuario en función de la información del perfil. Los especialistas en marketing también pueden combinar información de perfil con datos de fuentes adicionales, como un sistema de administración de la relación con los clientes o un perfil de sitios web, para crear una vista unificada del cliente.
 
-Consulte Inicio de sesión [en](/help/communities/social-login.md) Social para obtener más información.
+Consulte [Inicio de sesión de Social](/help/communities/social-login.md) para obtener más información.
 
 ## Integración con otros proveedores {#integrating-with-other-providers}
 
-AEM le permite conectarse a otros proveedores externos con un fragmento [genérico de Analytics.](/help/sites-administering/external-providers.md)
+AEM le permite conectarse a otros proveedores externos con un fragmento de [Análisis genérico.](/help/sites-administering/external-providers.md)

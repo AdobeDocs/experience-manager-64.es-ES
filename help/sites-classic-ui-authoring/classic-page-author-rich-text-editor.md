@@ -60,7 +60,7 @@ Actualmente, el modo de edición directamente está habilitado para elementos de
 
 ## Funciones del Editor de texto enriquecido {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+El Editor de texto enriquecido proporciona una serie de funciones, que [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la IU táctil como para la clásica.
 
 ### Formatos de carácter básicos {#basic-character-formats}
 
@@ -78,7 +78,7 @@ Aquí puede aplicar formato a caracteres que ha seleccionado (resaltado); alguna
 
 Todos funcionan como conmutadores; por lo tanto, si vuelve a seleccionar, se quita el formato.
 
-### Formatos y estilos predefinidos {#predefined-styles-and-formats}
+### Formatos y estilos predefinidos  {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
@@ -100,7 +100,7 @@ Se puede quitar un estilo; coloque el cursor dentro del texto al que se aplicó 
 >
 >No vuelva a seleccionar realmente ninguna parte del texto al que se aplicó el estilo o el icono se desactivará.
 
-### Cortar, copiar, pegar {#cut-copy-paste}
+### Cortar, copiar, pegar  {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -120,7 +120,7 @@ Están disponibles las funciones estándar de **Cortar** y **Copiar**. Se propor
 
    Pega el contenido como HTML (con algunas modificaciones de formato necesarias).
 
-### Deshacer, Rehacer {#undo-redo}
+### Deshacer, Rehacer  {#undo-redo}
 
 ![](do-not-localize/cq55_rte_undoredo.png)
 
@@ -184,14 +184,14 @@ Puede hacer lo siguiente:
 
 >[!NOTE]
 >
->El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. In a standard installation these are `https://`, `ftp://`, and `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
+>El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://` y `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
 
 
 Para anular el vínculo, posicione el cursor en cualquier parte dentro del texto del vínculo y haga clic en el icono **Desvincular:**
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### Anclajes {#anchors}
+### Anclajes  {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -259,7 +259,7 @@ Las tablas están disponibles tanto:
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >Aunque las tablas están disponibles en RTE, se recomienda utilizar el componente **Tabla** al crear tablas.
 
 En los componentes **Texto** y **Tabla**, la funcionalidad de tabla está disponible mediante el menú contextual (generalmente el botón derecho del ratón) donde se hace clic dentro de la tabla. Por ejemplo:
 
@@ -354,8 +354,8 @@ Es posible configurar las propiedades de una celda específica o serie de celdas
 * **Ancho**
 * **Altura**
 * **Alineación horizontal** - Izquierda, Centro o Derecha
-* **Alineación** vertical: superior, medio, inferior o de línea de base
-* **Tipo** de celda: datos o encabezado
+* **Alineación**  vertical: arriba, medio, abajo o línea de base
+* **Tipo**  de celda: datos o encabezado
 * **Aplicar a:**
    * Celda única
    * Toda la fila
@@ -369,7 +369,7 @@ Las filas pueden agregarse encima o debajo de la fila actual.
 
 También puede eliminarse la fila actual.
 
-#### Agregar o eliminar columnas {#add-or-delete-columns}
+#### Agregar o eliminar columnas  {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -377,7 +377,7 @@ Las columnas pueden agregarse a la izquierda o a la derecha de la columna actual
 
 También puede eliminarse la columna actual.
 
-#### Selección de filas o columnas enteras {#selecting-entire-rows-or-columns}
+#### Selección de filas o columnas enteras  {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -385,12 +385,12 @@ Selecciona toda la fila o columna actual. Hay acciones específicas (por ejemplo
 
 #### Combinar celdas {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Si seleccionó un grupo de celdas, puede combinarlas en una sola.
 * Si tiene una sola celda seleccionada, puede combinarla con la celda ubicada a la derecha o debajo.
 
-#### Dividir celdas {#split-cells}
+#### Dividir celdas  {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -399,7 +399,7 @@ Seleccione una celda única para dividirla:
 * Dividir una celda horizontalmente generará una nueva celda a la derecha de la celda actual, dentro de la columna actual.
 * Dividir una celda verticalmente generará una nueva celda debajo de la celda actual, pero dentro de la fila actual.
 
-#### Crear tablas anidadas {#creating-nested-tables}
+#### Crear tablas anidadas  {#creating-nested-tables}
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -422,7 +422,7 @@ Crear una tabla anidada creará una nueva tabla autocontenida dentro de la celda
 
 Esta acción quitará la tabla desde el interior del componente **Texto**.
 
-### Caracteres especiales {#special-characters}
+### Caracteres especiales  {#special-characters}
 
 ![](do-not-localize/cq55_rte_specialchars.png)
 
@@ -432,7 +432,7 @@ Se pueden hacer disponibles caracteres especiales para su editor de texto enriqu
 
 Coloque el puntero encima para ver una versión ampliada del carácter, y luego haga clic para incluirlo en la ubicación actual en el texto.
 
-### Modo de edición de origen {#source-editing-mode}
+### Modo de edición de origen  {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

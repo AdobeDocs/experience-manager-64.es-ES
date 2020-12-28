@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Publicar contenido de cancelación de publicación{#publish-unpublish-content}
+# Publicar un contenido de publicación{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Una vez que esté familiarizado con las acciones del gestor de contenido en art�
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño para las aplicaciones de AEM Mobile, consulte Consideraciones de [diseño para las aplicaciones](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) de AEM Mobile en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño para aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 ## Publicación/Cancelación de la publicación del contenido {#publishing-unpublishing-the-content}
 

@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >El RGPD se utiliza como ejemplo en las secciones que figuran a continuación, pero los detalles abarcados son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-## Compatibilidad con AEM Mobile GDPR {#aem-mobile-gdpr-support}
+## Compatibilidad con GDPR de AEM Mobile {#aem-mobile-gdpr-support}
 
 AEM Mobile está preparado para ayudar a los clientes con sus obligaciones de cumplimiento de RGPD. No se almacenan datos personales en AEM Mobile. Si está aprovisionado, puede iniciar sesión en Adobe Experience Mobile con su Adobe ID.
 
@@ -35,7 +35,7 @@ Para asegurarse de que no confunde a AEM Mobile con el producto anterior de Digi
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Inicio de una solicitud de RGPD {#initiating-a-gdpr-request}
+### Iniciando una solicitud de RGPD {#initiating-a-gdpr-request}
 
 Póngase en contacto con el servicio de atención al cliente de Adobe para iniciar una solicitud de RGPD para Digital Publishing Suite.
 
@@ -51,7 +51,7 @@ Proporcione al menos 1 de los siguientes datos:
 * Para los usuarios de la aplicación de Windows, el ID de App Store del usuario final: *dpsc-windowsAppStoreId*
 * La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación de DPS: *correo electrónico*
 
-### Preguntas más frecuentes {#frequently-asked-questions-faq}
+### Preguntas más frecuentes (FAQ) {#frequently-asked-questions-faq}
 
 **¿Eliminará Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
 

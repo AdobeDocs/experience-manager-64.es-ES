@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Indexación a través del Jar de Oak-run{#indexing-via-the-oak-run-jar}
+# Indexación mediante el Jar de ejecución Oak{#indexing-via-the-oak-run-jar}
 
 Oak-run admite todos los casos de uso de indexación en la línea de comandos sin tener que operar desde el nivel JMX. Las ventajas del método de roble son las siguientes:
 
@@ -26,13 +26,13 @@ Oak-run admite todos los casos de uso de indexación en la línea de comandos si
 1. Está reduciendo el consumo de recursos durante la reindexación en AEM, lo que mejora el rendimiento del sistema en otras actividades AEM
 1. Oak-run ofrece compatibilidad fuera de banda: Si las condiciones de producción no permiten ejecutar el reíndice en instancias de producción, se puede usar un entorno clonado para volver a indexar a fin de evitar un impacto crítico en el rendimiento.
 
-A continuación encontrará una lista de casos de uso que se pueden aprovechar al realizar operaciones de indexación mediante la `oak-run` herramienta.
+A continuación encontrará una lista de casos de uso que se pueden aprovechar al realizar operaciones de indexación mediante la herramienta `oak-run`.
 
 ## Comprobaciones de coherencia de índice {#indexconsistencychecks}
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Caso [de uso 1 - Comprobación](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck)de coherencia del índice.
+>Para obtener información más detallada sobre este escenario, consulte [Caso de uso 1 - Comprobación de coherencia del índice](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
 * `oak-run.jar`determina rápidamente si los índices de roble de lucene están dañados.
 * Es seguro ejecutar en una instancia de AEM en uso para comprobar la coherencia de los niveles 1 y 2.
@@ -43,7 +43,7 @@ A continuación encontrará una lista de casos de uso que se pueden aprovechar a
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Caso [de uso 2 - Estadísticas de índice](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
+>Para obtener información más detallada sobre este escenario, consulte [Caso de uso 2 - Estadísticas de índice](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
 
 * `oak-run.jar` muestra todas las definiciones de índice, las estadísticas de índice importantes y el contenido de índice para la análisis sin conexión.
 
@@ -51,7 +51,7 @@ A continuación encontrará una lista de casos de uso que se pueden aprovechar a
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Volver a indexar el árbol de decisiones del método {#reindexingapproachdecisiontree}
+## Volver a indexar el árbol de decisiones del enfoque {#reindexingapproachdecisiontree}
 
 Este diagrama es un árbol de decisiones para determinar cuándo utilizar los distintos enfoques de reindexación.
 
@@ -61,13 +61,13 @@ Este diagrama es un árbol de decisiones para determinar cuándo utilizar los di
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Caso [de uso 3 - Reindexación](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
+>Para obtener información más detallada sobre este escenario, consulte [Caso de uso 3 - Reindexación](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
-### extracción previa de texto para SegmentNodeStore y DocumentNodeStore {#textpre-extraction}
+### Extracción previa de texto para SegmentNodeStore y DocumentNodeStore {#textpre-extraction}
 
-[La extracción](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) previa de texto (una función que existe con AEM 6.3) se puede utilizar para reducir el tiempo de reindexación. La extracción previa del texto se puede utilizar junto con todos los enfoques de reindexación.
+[La extracción](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction)  previa de texto (una función que existe con AEM 6.3) se puede utilizar para reducir el tiempo de reindexación. La extracción previa del texto se puede utilizar junto con todos los enfoques de reindexación.
 
-Según el método de `oak-run.jar` indexación, habrá varios pasos a ambos lados del paso Realizar reindexación en el diagrama siguiente.
+Según el método de indexación `oak-run.jar`, habrá varios pasos a ambos lados del paso Realizar reindexación en el diagrama siguiente.
 
 ![4](assets/4.png)
 
@@ -105,19 +105,19 @@ Este proceso sólo debe ejecutarse con una sola instancia de AEM en el clúster.
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Reindexación [en línea - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
+>Para obtener información más detallada sobre este escenario, consulte [Reíndice en línea - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Este es el método utilizado antes de la introducción de las nuevas capacidades de indexación de oak-run.jar. Puede hacerlo estableciendo la `reindex=true` propiedad en el índice Oak.
+Este es el método utilizado antes de la introducción de las nuevas capacidades de indexación de oak-run.jar. Puede hacerlo estableciendo la propiedad `reindex=true` en el índice Oak.
 
 Este método se puede utilizar si el cliente acepta los efectos de rendimiento y tiempo que se van a indexar. Esto suele ocurrir en el caso de las instalaciones de AEM pequeñas y medianas.
 
 ![6](assets/6.png)
 
-### Nueva indexación en línea TarMK usando oak-run.jar {#onlinere-indexingtarmkusingoak-run-jar}
+### TarMK de re-indexación en línea usando oak-run.jar {#onlinere-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Reindexación [en línea - SegmentNodeStore - La instancia de AEM se está ejecutando](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
+>Para obtener información más detallada sobre este escenario, consulte [Reíndice en línea - SegmentNodeStore - La instancia de AEM se está ejecutando](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
 El reindexado en línea de TarMK es más rápido que el reindexado en línea de TarkMK descrito arriba. Sin embargo, también requiere la ejecución durante una ventana de mantenimiento, con el método de que la ventana será más corta, y se necesitan más pasos para realizar la reindexación.
 
@@ -131,9 +131,9 @@ El reindexado en línea de TarMK es más rápido que el reindexado en línea de 
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Reindexación [en línea - SegmentNodeStore - La instancia de AEM está desactivada](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
+>Para obtener información más detallada sobre este escenario, consulte [Reíndice en línea - SegmentNodeStore - La instancia de AEM está desactivada](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-La reindexación sin conexión de TarMK es el método de reindexación `oak-run.jar` basado más sencillo para TarMK, ya que requiere un solo `oak-run.jar` comentario. Sin embargo, requiere que se cierre la instancia de AEM.
+La re-indexación sin conexión de TarMK es el método de re-indexación basado en `oak-run.jar` más sencillo para TarMK, ya que requiere un solo comentario `oak-run.jar`. Sin embargo, requiere que se cierre la instancia de AEM.
 
 >[!NOTE]
 >
@@ -141,11 +141,11 @@ La reindexación sin conexión de TarMK es el método de reindexación `oak-run.
 
 ![8](assets/8.png)
 
-### Reindexación fuera de banda TarMK usando oak-run.jar  {#out-of-bandre-indexingtarmkusingoak-run-jar}
+### Reindexación fuera de banda TarMK usando oak-run.jar {#out-of-bandre-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Reíndice [fuera de banda - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
+>Para obtener información más detallada sobre este escenario, consulte [Reíndice de fuera de banda - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
 La reindexación fuera de banda minimiza el impacto de la reindexación en las instancias de AEM en uso.
 
@@ -159,7 +159,7 @@ La reindexación fuera de banda minimiza el impacto de la reindexación en las i
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre este escenario, consulte Caso [de uso 4 - Actualización de definiciones](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions)de índice.
+>Para obtener información más detallada sobre este escenario, consulte [Caso de uso 4 - Actualización de definiciones de índice](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
 ### Creación y actualización de definiciones de índice en TarMK mediante ACS Asegurar índice {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
@@ -167,19 +167,19 @@ La reindexación fuera de banda minimiza el impacto de la reindexación en las i
 >
 >ACS Asegúrese de que el índice sea un proyecto admitido por la comunidad y no sea compatible con la asistencia de Adobe.
 
-Esto permite enviar la definición del índice a través del paquete de contenido, lo que posteriormente resulta en volver a indexar estableciendo el indicador de reindexación en `true`. Esto funciona para configuraciones más pequeñas donde el reindexado no lleva mucho tiempo.
+Esto permite enviar la definición del índice mediante el paquete de contenido, lo que posteriormente resulta en una reindexación mediante la configuración del indicador de reindexación en `true`. Esto funciona para configuraciones más pequeñas donde el reindexado no lleva mucho tiempo.
 
-Para obtener más información, consulte la documentación [de](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) ACS Safety Index para obtener más información.
+Para obtener más información, consulte la [documentación del índice de seguridad de ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) para obtener más información.
 
 ### Creación y actualización de definiciones de índice en TarMK mediante oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Si el impacto en el tiempo o el rendimiento de la reindexación mediante métodos no `oak-run.jar` es demasiado alto, se puede utilizar el siguiente método `oak-run.jar` basado para importar y volver a indexar las definiciones de Lucene Index en una instalación AEM basada en TarMK.
+Si el impacto en el tiempo o el performance del re-indexado mediante métodos que no sean `oak-run.jar` es demasiado alto, se puede utilizar el siguiente enfoque basado en `oak-run.jar` para importar y volver a indexar las definiciones del Índice Lucene en una instalación AEM basada en TarMK.
 
 ![10](assets/10.png)
 
-### Creación y actualización de definiciones de índice en MonogMK mediante oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
+### Creación y actualización de definiciones de índice en MonogMK usando oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Si el impacto en el tiempo o el rendimiento de la reindexación mediante métodos no `oak-run.jar` es demasiado alto, se puede utilizar el siguiente método `oak-run.jar` basado para importar y volver a indexar definiciones de Lucene Index en instalaciones de AEM basadas en MongoMK.
+Si el impacto en el tiempo o el performance del re-indexado mediante métodos que no sean `oak-run.jar` es demasiado alto, se puede utilizar el siguiente enfoque basado en `oak-run.jar` para importar y volver a indexar las definiciones del Índice Lucene en instalaciones de AEM basadas en MongoMK.
 
 ![11](assets/11.png)
 

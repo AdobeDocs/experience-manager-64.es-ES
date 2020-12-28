@@ -81,7 +81,7 @@ En la consola **Sitios web** está la opción de menú **Buscar y reemplazar**, 
    * indica si la búsqueda debería distinguir mayúsculas y minúsculas
    * indica si únicamente deberían buscarse palabras completas (de lo contrario, también se buscan subcadenas)
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   Al hacer clic en **Previsualización** listas donde se encontró el término. Puede seleccionar o borrar instancias específicas para reemplazarlas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +94,7 @@ El alcance predeterminado para el servlet de buscar y reemplazar cubre las sigui
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `http://localhost:4502/system/console/configMgr`). Seleccione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
+El ámbito se puede cambiar con la consola de administración web Apache Felix (por ejemplo, en `http://localhost:4502/system/console/configMgr`). Seleccione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
 
 >[!NOTE]
 >

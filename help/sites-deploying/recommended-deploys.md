@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esta página se refiere a las topologías recomendadas para AEM. Para obtener más información sobre las capacidades de clustering y cómo configurarlas, consulte la documentación [de la API de](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)Apache Sling Discovery.
+>Esta página se refiere a las topologías recomendadas para AEM. Para obtener más información sobre las capacidades de clustering y cómo configurarlas, consulte la [documentación de la API de Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
 Los microkernels actúan como gestores de persistencia en AEM 6.4. La elección de una para adaptarse a sus necesidades depende del propósito de su instancia y del tipo de implementación que esté considerando.
 
@@ -76,15 +76,15 @@ Los inconvenientes:
 
 >[!NOTE]
 >
->La implementación en frío y en espera en este ejemplo de TarMK requiere que las instancias principal y en espera tengan una licencia independiente, ya que existe una replicación constante en el servidor de failover. Para obtener más información sobre licencias, consulte las Condiciones generales de licencia de [Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>La implementación en frío y en espera en este ejemplo de TarMK requiere que las instancias principal y en espera tengan una licencia independiente, ya que existe una replicación constante en el servidor de failover. Para obtener más información acerca de las licencias, consulte los [Términos generales de licencias de Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### Granja TarMK {#tarmk-farm}
 
 Se ejecutan varias instancias de Oak cada una con una instancia de TarMK. Los repositorios TarMK son independientes y deben mantenerse sincronizados.
 
-Mantener los repositorios sincronizados se proporciona con el hecho de que el servidor de creación está publicando el mismo contenido para cada miembro del conjunto de servidores. For more information, see [Replication](/help/sites-deploying/replication.md).
+Mantener los repositorios sincronizados se proporciona con el hecho de que el servidor de creación está publicando el mismo contenido para cada miembro del conjunto de servidores. Para obtener más información, consulte [Replicación](/help/sites-deploying/replication.md).
 
-Para AEM Communities, el contenido generado por el usuario (UGC) nunca se replica. Para obtener información sobre el contenido generado por usuarios en una granja TarMK, consulte [consideraciones para AEM Communities](#considerations-for-aem-communities).
+Para AEM Communities, el contenido generado por el usuario (UGC) nunca se replica. Para obtener soporte para UGC en una granja TarMK, consulte [consideraciones para AEM Communities](#considerations-for-aem-communities).
 
 **Ésta es la implementación predeterminada para entornos de publicación.**
 
@@ -115,7 +115,7 @@ Los inconvenientes:
 
 Este enfoque implica que varias instancias de Oak tienen acceso a un conjunto de réplicas de MongoDB en varios centros de datos, lo que en realidad crea un clúster activo-activo para el entorno de creación de AEM. Con múltiples centros de datos, la replicación de MongoDB proporciona la misma alta disponibilidad y redundancia, pero ahora incluye la capacidad de manejar una interrupción en el centro de datos.
 
-![oakclustermongofailover2datacenters](assets/oakclustermongofailover2datacenters.png)
+![oakclustermongofailover2datacenter](assets/oakclustermongofailover2datacenters.png)
 
 Las ventajas:
 
@@ -124,11 +124,11 @@ Las ventajas:
 
 >[!NOTE]
 >
->En el diagrama anterior, AEM servidor 3 y AEM servidor 4 se presentan con un estado inactivo, suponiendo una latencia de red entre los servidores AEM del centro de datos 2 y el nodo principal MongoDB del centro de datos 1 que es superior al requisito documentado [aquí](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latencia máxima es compatible con los requisitos, por ejemplo mediante el uso de zonas de disponibilidad, los servidores de AEM del Centro de datos 2 también pueden estar activos, lo que crea un clúster de AEM activo-activo en varios centros de datos.
+>En el diagrama anterior, AEM Server 3 y AEM Server 4 se presentan con un estado inactivo, suponiendo una latencia de red entre los servidores AEM del Centro de datos 2 y el nodo principal MongoDB del Centro de datos 1 que es superior al requisito documentado [aquí](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latencia máxima es compatible con los requisitos, por ejemplo mediante el uso de zonas de disponibilidad, los servidores de AEM del Centro de datos 2 también pueden estar activos, lo que crea un clúster de AEM activo-activo en varios centros de datos.
 
 >[!NOTE]
 >
->Para obtener información adicional sobre los conceptos arquitectónicos de MongoDB descritos en esta sección, consulte Replicación [de](https://docs.mongodb.org/manual/replication/)MongoDB.
+>Para obtener información adicional sobre los conceptos arquitectónicos de MongoDB descritos en esta sección, consulte [Replicación de MongoDB](https://docs.mongodb.org/manual/replication/).
 
 ## Micronúcleos: cuál utilizar {#microkernels-which-one-to-use}
 
@@ -152,7 +152,7 @@ Es casi imposible predecir cuál será el modelo exacto de concurrencia después
 
 >[!NOTE]
 >
->Se puede utilizar el Día duro para evaluar el rendimiento de la aplicación del cliente en el contexto de la configuración de hardware implementada. Encontrará más información sobre esta herramienta [aquí](/help/sites-developing/tough-day.md).
+>Se puede utilizar el Día duro para evaluar el rendimiento de la aplicación del cliente en el contexto de la configuración de hardware implementada. Encontrará más información sobre esta herramienta disponible [aquí](/help/sites-developing/tough-day.md).
 
 Una implementación mínima con MongoDB suele incluir la siguiente topología:
 
@@ -169,7 +169,7 @@ Si no se espera que los criterios anteriores se cumplan durante los primeros die
 
 No se recomienda implementar MongoMK para instancias de publicación. El nivel de publicación de la implementación casi siempre se implementa como un conjunto de instancias de publicación completamente independientes que ejecutan TarMK, que se mantienen sincronizadas al replicar contenido de las instancias de creación. Esta arquitectura de &quot;nada compartido&quot;, adecuada a las instancias de publicación, permite que la implementación del nivel de publicación se escale horizontalmente de forma lineal. La topología del conjunto de servidores también ofrece la ventaja de aplicar cualquier actualización o actualización para publicar instancias de forma sucesiva, de modo que cualquier cambio en el nivel de publicación no requerirá tiempo de inactividad.
 
-Esto no se aplica a AEM Communities que utiliza clústeres MongoMK en el nivel de publicación siempre que haya más de un editor. Si se elige JSRP (consulte el Almacenamiento [de contenido de la](/help/communities/working-with-srp.md)comunidad), entonces sería apropiado un clúster MongoMK, al igual que cualquier clúster de publicación independientemente del MK elegido, como MongoDB o RDB.
+Esto no se aplica a AEM Communities que utiliza clústeres MongoMK en el nivel de publicación siempre que haya más de un editor. Si elige JSRP (consulte [Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md)), entonces sería adecuado un clúster MongoMK, como cualquier clúster de publicación independientemente del MK elegido, como MongoDB o RDB.
 
 ### Requisitos previos y Recommendations al implementar AEM con MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
@@ -185,19 +185,19 @@ Hay un conjunto de requisitos previos y recomendaciones disponibles si está con
 
 **Recomendaciones sólidas para implementaciones de MongoDB:**
 
-* Consulte el [artículo](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)MongoDB para Adobe Experience Manager;
-* Revisar la lista de [comprobación](https://docs.mongodb.org/manual/administration/production-checklist/)de producción de MongoDB;
+* Consulte el [artículo](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) de MongoDB para Adobe Experience Manager;
+* Revise la producción de MongoDB [lista de comprobación](https://docs.mongodb.org/manual/administration/production-checklist/);
 * Asista a una clase de certificación en MongoDB disponible en línea [aquí](https://university.mongodb.com/).
 
 >[!NOTE]
 >
->Para todas las preguntas adicionales sobre estas directrices, requisitos previos y recomendaciones, póngase en contacto con el Servicio de atención al cliente de [Adobe](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
+>Para todas las preguntas adicionales sobre estas directrices, requisitos previos y recomendaciones, póngase en contacto con [Adobe Customer Care](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
 
 ### Consideraciones para AEM Communities {#considerations-for-aem-communities}
 
-Para los sitios que planean implementar [AEM Communities](/help/communities/overview.md), se recomienda [elegir una implementación](/help/communities/working-with-srp.md) optimizada para controlar el UGC publicado por miembros de la comunidad desde el entorno de publicación.
+Para los sitios que planeen implementar [AEM Communities](/help/communities/overview.md), se recomienda [elegir una implementación](/help/communities/working-with-srp.md) optimizada para administrar UGC anunciados por miembros de la comunidad desde el entorno de publicación.
 
-Al utilizar un almacén [](/help/communities/working-with-srp.md)común, no es necesario replicar UGC entre el autor y otras instancias de publicación para obtener una vista coherente del UGC.
+Al utilizar un [almacén común](/help/communities/working-with-srp.md), no es necesario replicar UGC entre el autor y otras instancias de publicación para obtener una vista coherente del UGC.
 
 A continuación se muestra un conjunto de matrices decisorias que pueden ayudarle a elegir el mejor tipo de persistencia para la implementación:
 
@@ -211,7 +211,7 @@ A continuación se muestra un conjunto de matrices decisorias que pueden ayudarl
 
 >[!NOTE]
 >
->MongoDB es un software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página de directivas [de licencias de](https://www.mongodb.org/about/licensing/) MongoDB.
+>MongoDB es un software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página [Política de licencias de MongoDB](https://www.mongodb.org/about/licensing/).
 >
 >Para aprovechar al máximo su implementación de AEM, Adobe recomienda que se le otorgue la licencia de la versión MongoDB Enterprise para beneficiarse de la asistencia profesional.
 >
@@ -219,5 +219,5 @@ A continuación se muestra un conjunto de matrices decisorias que pueden ayudarl
 >
 >Si desea ejecutar tanto la creación como la publicación en MongoDB, deberá adquirir dos licencias independientes.
 >
->Para obtener más información, consulte la página [](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)MongoDB para Adobe Experience Manager.
+>Para obtener más información, consulte la página [MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 

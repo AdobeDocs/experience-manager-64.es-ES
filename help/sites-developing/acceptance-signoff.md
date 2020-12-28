@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aceptación y desactivación{#acceptance-and-sign-off}
 
-Como se mencionó anteriormente, las pruebas [de](/help/sites-developing/planning.md) aceptación son una categoría especial de la prueba utilizada para comprobar que:
+Como ya se ha mencionado, [las pruebas de aceptación](/help/sites-developing/planning.md) son una categoría especial de la prueba utilizada para comprobar que:
 
 * Project cumple los requisitos del cliente.
 * El cliente acepta el proyecto.

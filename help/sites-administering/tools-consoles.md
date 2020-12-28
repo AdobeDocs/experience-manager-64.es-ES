@@ -42,12 +42,12 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   <tr> 
    <td>Configuraciones de contexto de cliente<br /> </td> 
    <td> </td> 
-   <td>Client <a href="/help/sites-developing/client-context.md">Context</a> representa una colección de datos de usuario que se ensambla dinámicamente. Aquí se conservan las configuraciones predeterminadas y de Marketing Cloud.<br /> </td> 
+   <td>El <a href="/help/sites-developing/client-context.md">Client Context</a> representa una colección de datos de usuario que se ensambla dinámicamente. Las configuraciones predeterminadas y de Marketing Cloud se conservan aquí.<br /> </td> 
   </tr> 
   <tr> 
    <td>Configuración de servicios de nube<br /> </td> 
    <td> </td> 
-   <td>Contiene configuraciones relacionadas con la <a href="/help/sites-administering/marketing-cloud.md">integración con el Adobe Marketing Cloud</a>.</td> 
+   <td>Contiene configuraciones relacionadas con <a href="/help/sites-administering/marketing-cloud.md">Integración con Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Comercio</a></td> 
@@ -60,9 +60,9 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>Proporciona acceso a información y licencias de derechos digitales.</td> 
   </tr> 
   <tr> 
-   <td>DAM - Health Checker<br /> </td> 
+   <td>DAM - Comprobador de estado<br /> </td> 
    <td> </td> 
-   <td>Compara <code>/var/dam</code> y <code>/content/dam</code> comprueba si hay<br /> incoherencias. Los archivos y carpetas que se muestren se pueden sincronizar o eliminar. Los tipos de nodos para la comparación de carpetas se pueden configurar en la consola web.</td> 
+   <td>Compara <code>/var/dam</code> y <code>/content/dam</code> y comprueba si existe alguna incoherencia. <br /> Los archivos y carpetas que se muestren se pueden sincronizar o eliminar. Los tipos de nodos para la comparación de carpetas se pueden configurar en la consola web.</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe Indesign<br /> </td> 
@@ -72,7 +72,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   <tr> 
    <td>DAM - Perfiles de vídeo<br /> </td> 
    <td> </td> 
-   <td>perfiles configurables para transcodificaciones ffmpeg.</td> 
+   <td>Perfiles configurables para transcodificaciones ffmpeg.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Tableros</a></td> 
@@ -95,7 +95,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>Contiene la lista de los envíos de formularios recibidos.</td> 
   </tr> 
   <tr> 
-   <td>Importadores - Editor <a href="/help/sites-administering/bulk-editor.md">masivo</a></td> 
+   <td>Importadores: <a href="/help/sites-administering/bulk-editor.md">Editor masivo</a></td> 
    <td> </td> 
    <td>Permite buscar elementos y editarlos de forma masiva. También puede exportar e importar contenido (de forma masiva) al repositorio.</td> 
   </tr>
@@ -130,12 +130,12 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>Vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td> 
   </tr> 
   <tr> 
-   <td>Replicación: Agentes <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">de replicación</a></td> 
+   <td>Replicación: <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Agentes de replicación</a></td> 
    <td> </td> 
    <td>Se utiliza para replicar datos del autor para publicarlos al publicar páginas o con replicación inversa para devolver los comentarios del usuario del entorno de publicación al autor.</td> 
   </tr> 
   <tr> 
-   <td>Importadores: <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">activar árbol</a></td> 
+   <td>Importadores: <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Activar árbol</a></td> 
    <td> </td> 
    <td>Desde la ficha Sitios web, puede activar las páginas individuales. Cuando haya especificado, o actualizado, una cantidad considerable de páginas de contenido (todas las cuales residen dentro de la misma página raíz), podrá ser más fácil activar el árbol entero con una sola acción. También puede hacer un ensayo para emular una activación y resaltar qué páginas se activarían.</td> 
   </tr> 
@@ -150,19 +150,19 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen la estructura que desee para sus páginas y luego usar este formulario para crear fácilmente páginas según esta estructura.</td> 
   </tr> 
   <tr> 
-   <td>Seguridad: configuración de <a href="/help/sites-administering/notification.md">autoservicio </a> </td> 
+   <td>Seguridad: <a href="/help/sites-administering/notification.md">Configuración de autoservicio </a> </td> 
    <td> </td> 
    <td>Permite configurar los correos electrónicos que los usuarios reciben automáticamente cuando crean una cuenta o restablecen una contraseña y confirmar una contraseña que se ha restablecido.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentación</a></td> 
    <td> </td> 
-   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td> 
+   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. La segmentación ayuda a lograr esto analizando y caracterizando los detalles de un visitante.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Configuración de SRP predeterminada. Consulte Consola de configuración <a href="/help/communities/srp-config.md">de</a> Almacenamiento.</td> 
+   <td>Configuración de SRP predeterminada. Consulte la consola <a href="/help/communities/srp-config.md">Configuración de Almacenamiento</a>.</td> 
   </tr> 
   <tr> 
    <td>administración de tareas</td> 
@@ -175,7 +175,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>No hay ninguna funcionalidad activa relacionada con esta entrada.</td> 
   </tr> 
   <tr> 
-   <td>Versiones: <a href="/help/sites-deploying/version-purging.md">purgar versiones</a></td> 
+   <td>Versiones: <a href="/help/sites-deploying/version-purging.md">Purgar versiones</a></td> 
    <td> </td> 
    <td>Permite depurar las versiones de página según sea necesario.</td> 
   </tr> 
@@ -192,7 +192,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Flujo de trabajo</a></td> 
    <td> </td> 
-   <td>Los Flujos de trabajo controlan una serie de acciones en páginas o recursos digitales que admiten cualquier proceso editorial.</td> 
+   <td>Los flujos de trabajo controlan una serie de acciones en páginas o recursos digitales que admiten cualquier proceso editorial.</td> 
   </tr> 
  </tbody> 
 </table>

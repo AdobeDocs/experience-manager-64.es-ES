@@ -22,8 +22,8 @@ ht-degree: 82%
 
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o marcas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el contenido relacionado.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como también sobre las etiquetas de contenido que se han aplicado.
+* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como sobre la inclusión y ampliación de etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
@@ -49,11 +49,11 @@ Las etiquetas son un método rápido y fácil de clasificar contenido dentro de 
 
 A la hora de diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, considere la ligereza y la accesibilidad que el etiquetado proporciona.
 
-## Aplicación de etiquetas   {#applying-tags}
+## Aplicación de etiquetas    {#applying-tags}
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en la ventana **Propiedades de la página** utilice el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -75,19 +75,19 @@ Al igual que con las páginas, puede realizar las siguientes acciones con etique
 
 * Desactivar las etiquetas seleccionadas.
 
-## Nubes de etiquetas {#tag-clouds}
+## Nubes de etiquetas  {#tag-clouds}
 
 Las nubes de etiquetas muestran una nube de etiquetas, ya sea para la página actual, el sitio web completo o a las que se accede con más frecuencia. Las nubes de etiquetas son un medio para resaltar los problemas que son (han sido) de interés para el usuario. El tamaño del texto que se utiliza para mostrar la etiqueta varía según su uso.
 
 El componente [Nube de etiquetas](/help/sites-authoring/default-components-foundation.md#tag-cloud) (grupo de componentes general) se utiliza para añadir una nube de etiquetas a una página.
 
-## Búsqueda de etiquetas {#searching-on-tags}
+## Búsqueda de etiquetas  {#searching-on-tags}
 
 Puede buscar etiquetas en los entornos de autor y publicación.
 
-### Uso del componente de búsqueda {#using-search-component}
+### Uso del componente de búsqueda  {#using-search-component}
 
-Adding a [Search component](/help/sites-authoring/default-components-foundation.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+Añadir un [componente de búsqueda](/help/sites-authoring/default-components-foundation.md#search) en una página proporciona una función de búsqueda que incluye etiquetas y que se puede utilizar tanto en el entorno de creación como en el de publicación.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 

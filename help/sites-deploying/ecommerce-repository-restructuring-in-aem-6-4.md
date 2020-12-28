@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Reestructuración del repositorio de comercio electrónico en AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Como se describe en la página principal Reestructuración [del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de comercio electrónico AEM. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden posponer hasta una actualización a 6.5.
+Como se describe en la página principal [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de comercio electrónico de AEM. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.4, mientras que otros se pueden posponer hasta una actualización a 6.5.
 
-## Con actualización a 6.4 {#with-upgrade}
+## Con Actualización 6.4 {#with-upgrade}
 
 ### Datos de productos, pedidos, colecciones, clasificaciones, métodos de envío y métodos de pago {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
@@ -37,7 +37,7 @@ Como se describe en la página principal Reestructuración [del repositorio en A
   </tr>
   <tr>
    <td><strong>Orientación de reestructuración</strong></td> 
-   <td><p>Puede utilizar una tarea de migración <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank"></a> diferida para migrar datos de comercio electrónico.</p> <p>Realiza los siguientes pasos:</p> 
+   <td><p>Puede utilizar una tarea <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">de migración diferida</a> para migrar los datos del comercio electrónico.</p> <p>Realiza los siguientes pasos:</p> 
     <ul> 
      <li>ajusta las referencias a la ubicación antigua para que apunten a la nueva ubicación</li> 
      <li>mueve el contenido de la ubicación antigua a la nueva ubicación</li> 

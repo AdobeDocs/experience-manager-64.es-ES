@@ -1,6 +1,6 @@
 ---
-title: '"Desarrollo de AEM: directrices y prácticas recomendadas"'
-seo-title: '"Desarrollo de AEM: directrices y prácticas recomendadas"'
+title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
+seo-title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
 description: Directrices y mejores prácticas para la elaboración de AEM
 seo-description: Directrices y mejores prácticas para la elaboración de AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Desarrollo de AEM: directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
+# Desarrollo de AEM - Directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Directrices para el uso de plantillas y componentes {#guidelines-for-using-templates-and-components}
 
@@ -53,11 +53,11 @@ Las siguientes reglas generales para desarrolladores tienen sentido en la mayor�
 
 Al crear sus propios componentes o personalizar un componente existente, suele ser más fácil (y seguro) reutilizar las definiciones existentes. Los mismos principios también se aplican a otros elementos dentro de AEM, por ejemplo el controlador de errores.
 
-Esto se puede hacer copiando y superponiendo la definición existente. En otras palabras, copiar la definición de `/libs` a `/apps/<your-project>`. Esta nueva definición, en `/apps`particular, se puede actualizar según sus necesidades.
+Esto se puede hacer copiando y superponiendo la definición existente. En otras palabras, copiando la definición de `/libs` a `/apps/<your-project>`. Esta nueva definición, en `/apps`, puede actualizarse según sus necesidades.
 
 >[!NOTE]
 >
->Consulte [Uso de superposiciones](/help/sites-developing/overlays.md) para obtener más información.
+>Consulte [Uso de Overlays](/help/sites-developing/overlays.md) para obtener más detalles.
 
 Por ejemplo:
 
@@ -83,13 +83,13 @@ Por ejemplo:
 
 >[!CAUTION]
 >
->No **debe** cambiar nada en la `/libs` ruta.
+>**no debe** cambiar nada en la ruta `/libs`.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y bien puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 >
 >Para configuración y otros cambios:
 >
->1. copiar el elemento en `/libs` a `/apps`
+>1. copie el elemento en `/libs` a `/apps`
 >1. realizar cambios dentro de `/apps`
 
 
@@ -112,14 +112,14 @@ Para procesar contenido, utilice el acceso de navegación al árbol de contenido
 
 >[!NOTE]
 >
->Si utiliza el Generador de [Consultas](/help/sites-developing/querybuilder-api.md), utilice Consultas JCR, ya que el Generador de Consultas genera Consultas JCR debajo del capó.
+>Si utiliza el [Generador de Consultas](/help/sites-developing/querybuilder-api.md), utilice Consultas JCR, ya que el Generador de Consultas genera Consultas JCR debajo del capó.
 
 
 ## Consideraciones de seguridad {#security-considerations}
 
 >[!NOTE]
 >
->También vale la pena hacer referencia a la lista de comprobación [de seguridad](/help/sites-administering/security-checklist.md).
+>También vale la pena hacer referencia a la [lista de comprobación de seguridad](/help/sites-administering/security-checklist.md).
 
 ### Sesiones JCR (Repositorio) {#jcr-repository-sessions}
 
@@ -135,7 +135,7 @@ La secuencia de comandos entre sitios (XSS) permite a los atacantes insertar có
 
 AEM aplica el principio de filtrar todo el contenido proporcionado por el usuario durante la salida. La prevención de XSS recibe la máxima prioridad durante el desarrollo y las pruebas.
 
-Además, un servidor de seguridad de aplicaciones web, como [mod_security para Apache](https://modsecurity.org), puede proporcionar un control centralizado y fiable sobre la seguridad del entorno de implementación y protegerse contra ataques de secuencias de comandos entre sitios no detectados previamente.
+Además, un firewall de aplicaciones web, como [mod_security para Apache](https://modsecurity.org), puede proporcionar un control central y confiable sobre la seguridad del entorno de implementación y protegerse contra ataques de scripts entre sitios no detectados anteriormente.
 
 >[!CAUTION]
 >
@@ -147,7 +147,7 @@ La hoja de trucos XSSAPI.
 
 [Obtener archivo](assets/xss_cheat_sheet_2016.pdf)
 
-### Seguridad de la comunicación para la información confidencial {#securing-communication-for-confidential-information}
+### Seguridad de la comunicación para información confidencial {#securing-communication-for-confidential-information}
 
 En cuanto a cualquier aplicación de Internet, asegúrese de que al transportar información confidencial
 
@@ -162,10 +162,10 @@ Esto se aplica a la información que es confidencial para el sistema (como la co
 
 Las páginas de error se pueden personalizar para AEM. Esto es aconsejable para que la instancia no muestre los seguimientos de sling en los errores internos del servidor.
 
-Consulte [Personalización de páginas de error que muestra el controlador](/help/sites-developing/customizing-errorhandler-pages.md) de errores para obtener más información.
+Consulte [Personalización de páginas de error que muestra el controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md) para obtener más información.
 
-### Abrir archivos en el proceso Java {#open-files-in-the-java-process}
+### Abrir archivos en el proceso de Java {#open-files-in-the-java-process}
 
-Dado que AEM puede acceder a un gran número de archivos, se recomienda configurar explícitamente para AEM el número de archivos [abiertos para un proceso](/help/sites-deploying/configuring.md#open-files-in-the-java-process) Java.
+Dado que AEM acceder a un gran número de archivos, se recomienda configurar explícitamente para AEM el número de [archivos abiertos para un proceso de Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process).
 
 Para minimizar este problema, el desarrollo debe garantizar que cualquier archivo abierto se cierre correctamente tan pronto como sea posible (de manera significativa).

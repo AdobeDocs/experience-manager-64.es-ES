@@ -32,7 +32,7 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)**son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)** son funciones distintas de AEM:
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
@@ -136,7 +136,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **[!UICONTROL Gestionar encabezados como sus propios párrafos]**
 
-## Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
+## Conexión rápida con el editor de fragmentos   {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **[!UICONTROL Editar]** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments.md). 
 
@@ -144,7 +144,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-## Añadir contenido intermedio       {#adding-in-between-content}
+## Añadir contenido intermedio        {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **[!UICONTROL Arrastre los componentes aquí]** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -182,7 +182,7 @@ Para el contenido intermedio puede:
 
 
 
-## Uso de contenido asociado       {#using-associated-content}
+## Uso de contenido asociado        {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 

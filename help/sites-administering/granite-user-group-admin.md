@@ -22,9 +22,9 @@ ht-degree: 4%
 
 A medida que Granite incorpora la implementación del repositorio CRX de la especificación de API de JCR, cuenta con su propia administración de usuarios y grupos.
 
-Estas cuentas son la base subyacente de las cuentas [de](/help/sites-administering/security.md) AEM y cualquier cambio de cuenta realizado con la administración Granite se reflejará si se accede a las cuentas desde la consola [Usuarios de](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) AEM (p. ej. `http://localhost:4502/useradmin`). Desde la consola Usuarios de AEM también puede administrar los privilegios y otros AEM específicos.
+Estas cuentas son la base subyacente de las [cuentas de AEM](/help/sites-administering/security.md) y cualquier cambio de cuenta realizado con la administración de Granite se reflejará si se accede a las cuentas desde la [consola Usuarios de AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por ejemplo: `http://localhost:4502/useradmin`). Desde la consola Usuarios de AEM también puede administrar los privilegios y otros AEM específicos.
 
-Las consolas Granite de administración de usuarios y grupos están disponibles desde la consola **[Herramientas](/help/sites-administering/tools-consoles.md)**de la IU táctil:
+Las consolas Granite de administración de usuarios y grupos están disponibles desde la consola **[Tools](/help/sites-administering/tools-consoles.md)** de la IU táctil:
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -34,7 +34,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   listas de la consola **Usuarios** :
+   Las listas de la consola **Users**:
 
    * el nombre de usuario
    * nombre de inicio de sesión del usuario (nombre de cuenta)
@@ -44,7 +44,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   listas de la consola **Grupos** :
+   Las listas de la consola **Groups**:
 
    * el nombre del grupo
    * la descripción del grupo
@@ -54,11 +54,11 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 ### Añadir un nuevo usuario {#adding-a-new-user}
 
-1. Utilice el icono **Añadir usuario** :
+1. Utilice el icono **Añadir usuario**:
 
    ![](do-not-localize/chlimage_1-1.png)
 
-1. Se abrirá el formulario **Crear usuario** :
+1. Se abrirá el formulario **Crear usuario**:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -92,8 +92,9 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
    * **Acerca de**
    * **Configuración de la cuenta**
 
-      * **Estado** Puede marcar la cuenta como 
-**activo** o **inactivo**.
+      * ****
+EstadoPuede marcar la cuenta como 
+**** activeor  **inactive**.
    * **Fotografía**
 
       Aquí puede cargar una foto para usarla como avatar.
@@ -104,37 +105,37 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    * **Añadir usuario a los grupos**
 
-      Utilice la lista desplegable de selección para seleccionar los grupos de los que el usuario debe ser miembro. Una vez seleccionada, utilice la **X** por nombre para anular la selección antes de guardar.
+      Utilice la lista desplegable de selección para seleccionar los grupos de los que el usuario debe ser miembro. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
 
    * **Grupos**
 
-      lista de grupos de los que el usuario es miembro en este momento. Utilice la **X** por el nombre para anular la selección antes de guardar.
+      Lista de grupos de los que el usuario es miembro en este momento. Utilice el **X** por el nombre para anular la selección antes de guardar.
 
 
 1. Cuando haya definido la cuenta de usuario, utilice:
 
-   * **Cancelar** para cancelar el registro.
-   * **Guarde** para completar el registro. La creación de la cuenta de usuario se confirmará con un mensaje.
+   * **** Cancelación para cancelar el registro.
+   * **** Guardar para completar el registro. La creación de la cuenta de usuario se confirmará con un mensaje.
 
 ### Edición de un usuario existente {#editing-an-existing-user}
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user).
+1. Ahora puede editar los detalles como en [Añadir un nuevo usuario](#adding-a-new-user).
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user).
+1. Ahora puede editar los detalles como en [Añadir un nuevo usuario](#adding-a-new-user).
 
 ### Cambio de la contraseña de un usuario existente {#changing-the-password-for-an-existing-user}
 
 1. Acceda a los detalles del usuario desde el vínculo situado bajo el nombre de usuario en la consola Usuarios.
 
-1. Ahora puede editar los detalles como al [Añadir un nuevo usuario](#adding-a-new-user). En Configuración **de cuenta** hay un vínculo para **Cambiar contraseña**.
+1. Ahora puede editar los detalles como en [Añadir un nuevo usuario](#adding-a-new-user). En **Configuración de cuenta** hay un vínculo para **Cambiar contraseña**.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Se abrirá el cuadro de diálogo **Cambiar contraseña** . Escriba y vuelva a escribir la nueva contraseña, junto con la contraseña. Use **Aceptar** para confirmar los cambios.
+1. Se abrirá el cuadro de diálogo **Cambiar contraseña**. Escriba y vuelva a escribir la nueva contraseña, junto con la contraseña. Use **Aceptar** para confirmar los cambios.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -143,7 +144,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 ### Asignación rápida de grupos {#quick-group-assignment}
 
 1. Utilice la casilla de verificación para marcar uno o varios usuarios.
-1. Use the **Groups** icon:
+1. Utilice el icono **Grupos**:
 
    ![](do-not-localize/chlimage_1-2.png)
 
@@ -155,10 +156,10 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
 1. Cuando haya asignado o no asignado los grupos según sea necesario, utilice:
 
-   * **Cancelar** para cancelar los cambios
-   * **Guardar** para confirmar los cambios
+   * **** Cancelar para anular los cambios
+   * **** Guardar para confirmar los cambios
 
-### Eliminación de detalles de usuario existentes {#deleting-existing-user-details}
+### Eliminando detalles de usuario existentes {#deleting-existing-user-details}
 
 1. Utilice la casilla de verificación para marcar uno o varios usuarios.
 1. Utilice el icono **Eliminar** para eliminar los detalles del usuario:
@@ -175,7 +176,7 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Se abrirá el formulario **Crear grupo** :
+1. Se abrirá el formulario **Crear grupo**:
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -195,22 +196,22 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    * **Añadir miembros al grupo**
 
-      Utilice la lista desplegable de selección para seleccionar los usuarios que desee agregar al grupo. Una vez seleccionada, utilice la **X** por nombre para anular la selección antes de guardar.
+      Utilice la lista desplegable de selección para seleccionar los usuarios que desee agregar al grupo. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
 
    * **Miembros del grupo**
 
-      Una lista de usuarios del grupo. Utilice la **X** por el nombre para anular la selección antes de guardar.
+      Una lista de usuarios del grupo. Utilice el **X** por el nombre para anular la selección antes de guardar.
 
 1. Cuando haya definido el grupo, utilice:
 
-   * **Cancelar** para cancelar el registro.
-   * **Guarde** para completar el registro. La creación del grupo se confirmará con un mensaje.
+   * **** Cancelación para cancelar el registro.
+   * **** Guardar para completar el registro. La creación del grupo se confirmará con un mensaje.
 
 ### Edición de un grupo existente {#editing-an-existing-group}
 
 1. Acceda a los detalles del grupo desde el vínculo situado bajo el nombre del grupo en la consola Grupos.
 
-1. Ahora puede editar y guardar los detalles como al [Añadir un nuevo grupo](#adding-a-new-group).
+1. Ahora puede editar y guardar los detalles como en [Añadir un nuevo grupo](#adding-a-new-group).
 
 ### Copia de un grupo existente {#copying-an-existing-group}
 
@@ -219,11 +220,11 @@ Si selecciona **Usuarios** o **Grupos** desde la consola Herramientas, se abrir�
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. Se abrirá el formulario **Editar configuración** de grupo.
+1. Se abrirá el formulario **Editar configuración del grupo**.
 
    La ID del grupo será la misma que la original, pero con el prefijo `Copy of`. Debe editarlo, ya que el ID no puede contener espacios. Todos los demás detalles serán los mismos que el original.
 
-   Ahora puede editar y guardar los detalles como al [Añadir un nuevo grupo](#adding-a-new-group).
+   Ahora puede editar y guardar los detalles como en [Añadir un nuevo grupo](#adding-a-new-group).
 
 ### Eliminación de un grupo existente {#deleting-an-existing-group}
 

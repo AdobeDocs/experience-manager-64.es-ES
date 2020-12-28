@@ -71,7 +71,7 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 * **Referencias**
 * **Filtro**
 
-El valor predeterminado es Solo **** contenido (carril oculto).
+El valor predeterminado es **Solo contenido** (carril oculto).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -87,11 +87,11 @@ El marco de contenido se encuentra en la sección derecha de la ventana, debajo 
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Marco del editor {#editor-frame}
+### Marco de editor {#editor-frame}
 
 El marco del editor obtiene las funciones de edición.
 
-El marco del editor es un contenedor (abstracto) para todos los elementos *de creación de* páginas. Vive sobre el marco de contenido e incluye:
+El marco del editor es un contenedor (abstracto) para todos los *elementos de creación de páginas*. Vive sobre el marco de contenido e incluye:
 
 * barra de herramientas superior
 * panel lateral
@@ -167,7 +167,7 @@ Según el espacio disponible, las barras de herramientas del componente se coloc
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los conceptos relacionados con la IU táctil, consulte el artículo [Conceptos de la IU](/help/sites-developing/touch-ui-concepts.md)táctil AEM.
+Para obtener más información sobre los conceptos relacionados con la IU táctil, consulte el artículo [Conceptos de la IU táctil AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte el conjunto [de documentación de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) JS para el editor de páginas táctil.
+Para obtener más información técnica, consulte el [conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
 

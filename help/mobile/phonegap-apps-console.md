@@ -42,7 +42,7 @@ AEM Mobile proporciona el modelo de la aplicación Phonegap para crear aplicacio
 
 La página raíz de las aplicaciones móviles que crea en AEM aparece en la consola Aplicaciones.
 
-La página raíz se almacena debajo de la propiedad Ruta de destino de la aplicación que se especificó al crear la aplicación (la ruta predeterminada es /content/phonegap/apps). El nombre de la página es la propiedad Name de la aplicación. Por ejemplo, la dirección URL predeterminada de la página raíz del sitio denominado `myphonegapapp` es `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+La página raíz se almacena debajo de la propiedad Ruta de destino de la aplicación que se especificó al crear la aplicación (la ruta predeterminada es /content/phonegap/apps). El nombre de la página es la propiedad Name de la aplicación. Por ejemplo, la dirección URL predeterminada de la página raíz del sitio denominada `myphonegapapp` es `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -70,17 +70,17 @@ La página de Página de inicio o index.html de una variación de idioma de una 
 Las aplicaciones móviles se basan en un modelo que define una estructura de página y propiedades. Puede configurar las siguientes propiedades de la aplicación:
 
 * **Título:** El título de la aplicación.
-* **Ruta de destino:** Ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
+* **Ruta de destino:** la ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
 * **Nombre:** El valor predeterminado es el valor de la propiedad Title con caracteres de espacio eliminados. El nombre se utiliza dentro de CQ para hacer referencia a la aplicación, por ejemplo para el nodo de repositorio que representa la aplicación.
 * **Descripción:** Descripción de la aplicación.
-* **URL del servidor:** La URL que proporciona actualizaciones de contenido de Over-the-Air (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio de externalización). Tenga en cuenta que debe ser una instancia de servidor de publicación en lugar de un autor, lo que requiere autenticación.
+* **URL del servidor:** la URL que proporciona actualizaciones de contenido sobre el aire (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio de externalización). Tenga en cuenta que debe ser una instancia de servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
 También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a utilizar. Esta imagen solo se utiliza como miniatura para representar su aplicación móvil en la consola de aplicaciones móviles en Experience Manager.
 
 Existen fichas adicionales (y opcionales) para crear el servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en la aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación build.phonegap.com aquí. A continuación, desde la lista desplegable podrá seleccionar el servicio en la nube PhoneGap recién creado.
-* Analytics: Haga clic en administrar configuraciones y configure el servicio en la nube SDK [de](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) Adobe Mobile Services. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
+* Analytics: Haga clic en administrar configuraciones y configure el [SDK de Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) servicio en la nube. A continuación, desde la lista desplegable, podrá seleccionar el servicio móvil recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Después de crear la aplicación móvil, agregue el contenido que se utiliza com
 1. Toque o haga clic en la aplicación y, a continuación, toque o haga clic en inglés.
 1. Edite la Página de inicio o agregue las páginas secundarias según sea necesario.
 
-### Traslado de contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
+### Mover contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
 
 La caché de sincronización de contenido de la instancia de publicación AEM se utiliza como repositorio de contenido para aplicaciones móviles:
 
@@ -211,13 +211,13 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 >
 >Si desinstala el paquete de la aplicación de referencia de Geometrixx Outdoors de AEM y tiene una aplicación creada en función de su plantilla, dicha aplicación dejará de funcionar. La aplicación Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
 
-## Exploración de la aplicación Geometrixx Outdoors de muestra {#exploring-the-sample-geometrixx-outdoors-app}
+## Explorar la aplicación de Geometrixx Outdoors de muestra {#exploring-the-sample-geometrixx-outdoors-app}
 
 La aplicación Geometrixx Outdoors es una aplicación PhoneGap de muestra que muestra las características del modelo predeterminado de la aplicación PhoneGap y los componentes móviles de muestra.
 
 Para abrir la aplicación, en el carril haga clic en Aplicaciones móviles y, a continuación, seleccione Aplicación de Geometrixx Outdoors.
 
-### Funciones comunes de la página: Aplicación móvil de Geometrixx {#common-page-features-geometrixx-mobile-app}
+### Características comunes de la página: Aplicación móvil de Geometrixx {#common-page-features-geometrixx-mobile-app}
 
 Cada página de la aplicación móvil incluye las siguientes funciones:
 
@@ -255,7 +255,7 @@ La página Productos y su jerarquía de páginas secundarias implementan un sist
 
 La página Productos no está disponible para los usuarios de la aplicación. La página Engranaje proporciona acceso a cada página de producto.
 
-### Página Reseñas - Aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### Página de críticas - Aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
@@ -296,10 +296,10 @@ Tenga en cuenta que las imágenes aparecen en el carrusel para las páginas asoc
 Configure el comportamiento del carrusel:
 
 * Velocidad de reproducción: Tiempo en milisegundos que se muestra cada imagen antes de mostrar la siguiente imagen.
-* Tiempo de Transición: Duración en milisegundos de la animación para transiciones de imágenes.
+* Tiempo de transición: Duración en milisegundos de la animación para transiciones de imágenes.
 * Estilo de controles: Tipo de controles que se proporcionan para el desplazamiento entre imágenes.
 
-**Ficha Propiedades de la Lista**
+**Ficha Propiedades de la lista**
 
 Especifique cómo se genera la lista de página:
 
@@ -307,7 +307,7 @@ Especifique cómo se genera la lista de página:
 * Ordenar por: Seleccione una propiedad de página para utilizarla para ordenar la lista de página. Por ejemplo, seleccione jcr:title para ordenar las páginas alfabéticamente por título.
 * Límite: El número máximo de páginas que se van a incluir. Esta propiedad es adecuada para métodos basados en búsquedas para generar la lista de página.
 
-#### Generación de la Lista de página {#building-the-page-list}
+#### Generación de la Lista Página {#building-the-page-list}
 
 El componente Carrusel de barrido proporciona los siguientes valores para la propiedad Generar Lista usando. El cuadro de diálogo de edición cambia según el valor seleccionado:
 
@@ -334,7 +334,7 @@ Rellene la lista utilizando los resultados de una búsqueda de palabras clave. L
 
 **Búsqueda avanzada**
 
-Rellene la lista con una consulta [Querybuilder](/help/sites-developing/querybuilder-api.md) .
+Rellene la lista con una consulta [QueryBuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Imagen {#image}
 

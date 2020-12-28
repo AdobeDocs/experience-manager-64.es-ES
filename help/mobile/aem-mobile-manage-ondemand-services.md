@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Vista previa con verificación previa {#previewing-with-preflight}
+# Vista previa con Preflight {#previewing-with-preflight}
 
 En esta página se explica la vista previa con la aplicación Preflight.
 
@@ -34,7 +34,7 @@ Con la aplicación Mobile On Demand Preflight, puede realizar la vista de todos 
 >
 >La aplicación Preflight es similar al visor de PhoneGap Enterprise por naturaleza.
 
-## Vista previa con verificación previa {#previewing-with-preflight-1}
+## Vista previa con Preflight {#previewing-with-preflight-1}
 
 1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
 1. Haga clic en los puntos suspensivos (...) en el mosaico **Administrar artículos** (o Pancartas/colecciones).
@@ -46,9 +46,9 @@ Con la aplicación Mobile On Demand Preflight, puede realizar la vista de todos 
 
 >[!NOTE]
 >
->La aplicación AEM Preflight se utiliza para obtener una vista previa del contenido y las páginas de navegación. Para obtener más información sobre la aplicación Preflight, haga clic [aquí](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
+>La aplicación AEM Preflight se utiliza para obtener una vista previa del contenido y las páginas de navegación. Para obtener información detallada sobre la aplicación Preflight, haga clic [aquí](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
 >
->La aplicación AEM Preflight está disponible en la App Store [de](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)iTunes, la tienda [](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)Google Play y la Tienda [](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)Windows.
+>La aplicación AEM Preflight está disponible en [App Store de iTunes](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en) y [Tienda Windows](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
 
 ### Cómo avanzar {#getting-ahead}
 

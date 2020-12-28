@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Resolución de problemas de replicación{#troubleshooting-replication}
+# Solución de problemas de replicación{#troubleshooting-replication}
 
 Esta página proporciona información sobre cómo solucionar problemas de replicación.
 
@@ -42,8 +42,8 @@ Consulte esto en /etc/replication/agents.author.html y luego haga clic en los ag
 
 **Si hay una cola de agente o unas pocas colas de agentes atascadas:**
 
-1. ¿La cola muestra el estado de **bloqueo** ? Si es así, ¿la instancia de publicación no se está ejecutando o no responde totalmente? Compruebe la instancia de publicación para ver qué tiene de malo (es decir, compruebe los registros y vea si hay un error OutOfMemory o algún otro problema. Entonces, si por lo general es lenta, tome los vertederos y analícelos.
-1. ¿El estado de la cola muestra que la **cola está activa - # pendiente**? Básicamente, el trabajo de replicación se podría atascar en un socket en espera de que la instancia pública o el despachante respondan. Esto podría significar que la instancia de publicación o el despachante están bajo carga alta o bloqueados. Tome los archivos de subproceso del autor y publíquelos en este caso.
+1. ¿La cola muestra el estado **bloqueado**? Si es así, ¿la instancia de publicación no se está ejecutando o no responde totalmente? Compruebe la instancia de publicación para ver qué tiene de malo (es decir, compruebe los registros y vea si hay un error OutOfMemory o algún otro problema. Entonces, si por lo general es lenta, tome los vertederos y analícelos.
+1. ¿El estado de la cola muestra que **La cola está activa - # pendiente**? Básicamente, el trabajo de replicación se podría atascar en un socket en espera de que la instancia pública o el despachante respondan. Esto podría significar que la instancia de publicación o el despachante están bajo carga alta o bloqueados. Tome los archivos de subproceso del autor y publíquelos en este caso.
 
    * Abra los volcados de subprocesos del autor en un analizador de volcado de subprocesos, compruebe si muestra que el trabajo de eventos de sling del agente de replicación está atascado en un socketRead.
    * Abra los volcados de subproceso de la publicación en un analizador de volcado de subprocesos, analice qué podría estar causando que la instancia de publicación no responda. Debe ver un subproceso con el nombre POST /bin/received, es decir, el subproceso que recibe la replicación del autor.
@@ -84,7 +84,7 @@ A veces puede resultar muy útil configurar todos los registros de replicación 
 
 1. Si sospecha que el problema está relacionado con la venta de eventos/trabajos de cualquier manera, también puede agregar este paquete java en categorías:org.apache.sling.evento
 
-### Pausa de la Cola del Agente de Replicación  {#pausing-replication-agent-queue}
+### Pausa de la Cola del Agente de Replicación {#pausing-replication-agent-queue}
 
 En algún momento puede ser adecuado pausar la cola de replicación para reducir la carga en el sistema de creación, sin deshabilitarlo. Actualmente, esto solo es posible si se configura temporalmente un puerto no válido. A partir de 5.4, puede ver el botón de pausa en la cola del agente de replicación que tiene alguna limitación
 
@@ -97,19 +97,19 @@ Los permisos de página no se replican porque se almacenan bajo los nodos a los 
 
 En general, los permisos de página no se deben replicar del autor para publicar y no se pueden realizar de forma predeterminada. Esto se debe a que los derechos de acceso deberían ser diferentes en esos dos entornos. Por lo tanto, se recomienda configurar las ACL en la publicación por separado del autor.
 
-### Cola de replicación bloqueada al replicar información de Área de nombres de Autor a Publicación {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+### Cola de replicación bloqueada al replicar información de Área de nombres de Author to Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
 En algunos casos, la cola de replicación se bloquea al intentar replicar información de Área de nombres de la instancia de creación a la instancia de publicación. Esto sucede porque el usuario de replicación no tiene `jcr:namespaceManagement` privilegios. Para evitar este problema, asegúrese de que:
 
-* El usuario de replicación (según la configuración de la ficha [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) >Usuario) también existe en la instancia Publicar.
+* El usuario de replicación (según la configuración de la ficha [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)> Usuario) también existe en la instancia Publicar.
 * El usuario tiene privilegios de lectura y escritura en la ruta de acceso donde está instalado el contenido.
 * El usuario tiene `jcr:namespaceManagement` privilegios en el nivel de repositorio. Puede otorgar el privilegio de la siguiente manera:
 
 1. Inicie sesión en CRX/DE ( `http://localhost:4502/crx/de/index.jsp`) como administrador.
-1. Haga clic en la ficha **Control de acceso** .
+1. Haga clic en la ficha **Control de acceso**.
 1. Seleccione **Repositorio**.
 1. Haga clic en **Añadir entrada** (el icono del signo más).
 1. Escriba el nombre del usuario.
-1. Select `jcr:namespaceManagement` from the privileges list.
+1. Seleccione `jcr:namespaceManagement` en la lista de privilegios.
 1. Haga clic en Aceptar.
 

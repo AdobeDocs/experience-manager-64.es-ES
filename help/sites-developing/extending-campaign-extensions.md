@@ -29,7 +29,7 @@ Debe tener instalado lo siguiente:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) for more information.
+Consulte [Integración de AEM con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
 ## Ejemplo 1: AEM a Adobe Campaign {#example-aem-to-adobe-campaign}
 
@@ -43,11 +43,11 @@ La integración estándar entre AEM y Campaña se basa en JSON y JSSP (JavaScrip
 
 En este ejemplo, creamos un nuevo archivo JSSP personalizado y lo llamamos desde el lado AEM para recuperar el resultado. Esto se puede utilizar, por ejemplo, para recuperar datos de Adobe Campaign o para guardar datos en Adobe Campaign.
 
-1. En Adobe Campaign, para crear un nuevo archivo JSSP, haga clic en el icono **Nuevo** .
+1. En Adobe Campaign, para crear un nuevo archivo JSSP, haga clic en el icono **Nuevo**.
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Escriba el nombre de este archivo JSSP. En este ejemplo, utilizamos **cus:custom.jssp** (es decir, estará en la Área de nombres de **cus** ).
+1. Escriba el nombre de este archivo JSSP. En este ejemplo, utilizamos **cus:custom.jssp** (lo que significa que estará en la Área de nombres **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -181,7 +181,7 @@ la API es:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-El final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener. Para obtener todos ellos, se puede utilizar la palabra clave **infinito** :
+El final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener Para obtener todos ellos, se puede utilizar la palabra clave **infinito**:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 

@@ -24,7 +24,7 @@ De forma predeterminada, la capacidad de cambiar a la IU clásica desde el edito
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Para volver a habilitar la opción **Abrir en la IU** clásica en el menú Información **de** página, siga estos pasos.
+Para volver a habilitar la opción **Abrir en la IU clásica** en el menú **Información de página**, siga estos pasos.
 
 1. Con CRXDE Lite, busque el nodo siguiente:
 
@@ -34,7 +34,7 @@ Para volver a habilitar la opción **Abrir en la IU** clásica en el menú Infor
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. Crear una superposición con la opción Nodo **de** superposición; por ejemplo:
+1. Cree una superposición con la opción **Nodo superpuesto**; por ejemplo:
 
    * **Ruta**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Ubicación de la superposición**: `/apps/`
@@ -44,7 +44,7 @@ Para volver a habilitar la opción **Abrir en la IU** clásica en el menú Infor
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. La opción **Abrir en la IU** clásica vuelve a estar disponible en el menú Información **de** página al editar páginas.
+1. La opción **Abrir en la IU clásica** vuelve a estar disponible en el menú **Información de página** al editar páginas.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

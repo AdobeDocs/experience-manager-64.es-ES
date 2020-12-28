@@ -22,7 +22,7 @@ ht-degree: 91%
 
 La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice la perspectiva de contenido para tomar decisiones sobre cómo modificar las páginas o saber de qué manera los últimos cambios han influido en el rendimiento. En cada página que se cree, puede abrir la perspectiva de contenido para analizar la página.
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![chlimage_1-310](assets/chlimage_1-311.png)
 
 El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de la pantalla y a la orientación del dispositivo que esté utilizando.
 
@@ -51,7 +51,7 @@ Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#ch
 
 >[!NOTE]
 >
->Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SiteCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md) y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 

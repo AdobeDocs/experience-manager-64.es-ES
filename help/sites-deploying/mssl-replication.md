@@ -49,7 +49,7 @@ Se requiere una clave privada y un certificado público para las instancias de c
 
 Genere una clave privada y un certificado en formato JKS. La clave privada se almacena en un archivo KeyStore y el certificado en un archivo TrustStore. Utilice [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para crear ambos.
 
-Siga estos pasos con Java `keytool` para crear la clave privada y las credenciales:
+Realice los siguientes pasos con Java `keytool` para crear la clave privada y la credencial:
 
 1. Genere un par de clave pública-privada en KeyStore.
 1. Cree u obtenga el certificado:
@@ -84,7 +84,7 @@ Utilice el procedimiento siguiente para crear una clave privada y un certificado
    | -archivo | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
-### formato pkcs#12 {#pkcs-format}
+### pkcs#12 Formato {#pkcs-format}
 
 Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](https://www.openssl.org/) para generarlos. Utilice el procedimiento siguiente para generar una clave privada y una solicitud de certificado. Para obtener el certificado, firme la solicitud con su clave privada (certificado con firma automática) o envíe la solicitud a una CA. A continuación, genere el archivo pkcs#12 que contiene la clave privada y el certificado.
 
@@ -145,7 +145,7 @@ Instale los siguientes elementos en la instancia de creación:
 
 Para realizar el siguiente procedimiento, debe haber iniciado sesión como administrador de la instancia de creación.
 
-### Instalación de la clave privada del autor {#install-the-author-private-key}
+### Instalar la clave privada del autor {#install-the-author-private-key}
 
 1. Abra la página Administración de usuarios de la instancia de creación. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
@@ -164,7 +164,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalación del certificado de publicación {#install-the-publish-certificate}
+### Instalar el certificado de publicación {#install-the-publish-certificate}
 
 1. Abra la página Administración de usuarios de la instancia de creación. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
@@ -179,7 +179,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Instalar clave privada y TrustStore en la publicación {#install-private-key-and-truststore-on-publish}
+## Instalar Clave privada y TrustStore en Publish {#install-private-key-and-truststore-on-publish}
 
 Instale los siguientes elementos en la instancia de publicación:
 
@@ -188,7 +188,7 @@ Instale los siguientes elementos en la instancia de publicación:
 
 Para realizar el siguiente procedimiento, debe haber iniciado sesión como administrador de la instancia de publicación.
 
-### Instalación de la clave privada de publicación {#install-the-publish-private-key}
+### Instalar la clave privada de publicación {#install-the-publish-private-key}
 
 1. Abra la página Administración de usuarios de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
@@ -199,7 +199,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 1. Introduzca un alias y la contraseña para el almacén de claves. Introduzca el alias y la contraseña de la clave privada y, a continuación, haga clic en Enviar.
 1. Cierre el cuadro de diálogo Administración de KeyStore.
 
-### Instalación del certificado de autor {#install-the-author-certificate}
+### Instalar el certificado de autor {#install-the-author-certificate}
 
 1. Abra la página Administración de usuarios de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Busque la cuenta de usuario que utiliza para ejecutar solicitudes de replicación y toque o haga clic en el nombre de usuario.
@@ -209,7 +209,7 @@ Para realizar el siguiente procedimiento, debe haber iniciado sesión como admin
 1. Asegúrese de que la opción Asignar certificado a usuario está seleccionada. Haga clic en Seleccionar archivo de certificado, seleccione author.cer y haga clic en Abrir.
 1. Haga clic en Enviar y, a continuación, cierre el cuadro de diálogo Administración de TrustStore.
 
-## Configuración del servicio HTTP al publicar {#configure-the-http-service-on-publish}
+## Configurar el servicio HTTP en la publicación {#configure-the-http-service-on-publish}
 
 Configure las propiedades del servicio HTTP Apache Felix Jetty Based en la instancia de publicación para que utilice HTTPS al acceder a Granite Keystore. El PID del servicio es `org.apache.felix.http`.
 
@@ -224,7 +224,7 @@ La siguiente tabla lista las propiedades de OSGi que necesita para configurar si
 
 ## Configurar el agente de replicación en el autor {#configure-the-replication-agent-on-author}
 
-Configure el agente de replicación en la instancia de autor para que utilice el protocolo HTTPS al conectarse a la instancia de publicación. Para obtener información completa sobre la configuración de los agentes de replicación, consulte [Configuración de los agentes](/help/sites-deploying/replication.md#configuring-your-replication-agents)de replicación.
+Configure el agente de replicación en la instancia de autor para que utilice el protocolo HTTPS al conectarse a la instancia de publicación. Para obtener información completa sobre la configuración de los agentes de replicación, consulte [Configuración de los agentes de replicación](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Para habilitar MSSL, configure las propiedades en la ficha Transporte según la tabla siguiente:
 
@@ -232,7 +232,7 @@ Para habilitar MSSL, configure las propiedades en la ficha Transporte según la 
  <tbody> 
   <tr> 
    <th>Propiedad</th> 
-   <th>Value</th> 
+   <th>Valor</th> 
   </tr> 
   <tr> 
    <td>URI</td> 
@@ -253,7 +253,7 @@ Para habilitar MSSL, configure las propiedades en la ficha Transporte según la 
  </tbody> 
 </table>
 
-![chlimage_1-78](assets/chlimage_1-70.png)
+![chlimage_1-70](assets/chlimage_1-70.png)
 
 Después de configurar el agente de replicación, pruebe la conexión para determinar si MSSL está configurado correctamente.
 

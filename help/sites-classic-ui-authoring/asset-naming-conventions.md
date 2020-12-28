@@ -20,7 +20,7 @@ ht-degree: 90%
 
 # Convenciones de nomenclatura de los recursos testing{#naming-conventions-for-assets-testing}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, Adobe Experience Manager impone otras convenciones para el nombre de los nodos del recurso.
+Los nodos del repositorio están sujetos a las convenciones de nombres del [Repositorio de contenido de Java](/help/sites-developing/the-basics.md#java-content-repository). Sin embargo, Adobe Experience Manager impone otras convenciones para el nombre de los nodos del recurso.
 
 ## IU clásica {#classic-ui}
 

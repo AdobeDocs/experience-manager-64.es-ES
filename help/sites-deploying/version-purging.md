@@ -32,7 +32,7 @@ Estas versiones nunca se depuran, por lo que el tamaño del repositorio crecerá
 
 AEM incluye varios mecanismos para ayudarle a administrar su repositorio:
 
-* Administrador de [versiones](#version-manager)
+* el [Administrador de versiones](#version-manager)
 
    Esto se puede configurar para depurar versiones antiguas cuando se crean versiones nuevas.
 
@@ -50,7 +50,7 @@ AEM incluye varios mecanismos para ayudarle a administrar su repositorio:
 
       Cuando la antigüedad de una versión supera este valor, se elimina del repositorio.
 
-* la tarea [de mantenimiento Depuración de](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)versiones. Puede programar la tarea de mantenimiento Depuración de versiones para que elimine automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de depuración de versiones.
+* la [tarea de mantenimiento de la depuración de versiones](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Puede programar la tarea de mantenimiento Depuración de versiones para que elimine automáticamente las versiones anteriores. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de depuración de versiones.
 
 >[!CAUTION]
 >
@@ -104,7 +104,7 @@ Las opciones disponibles son las siguientes:
 
 ### Combinación de opciones de retención {#combining-retention-options}
 
-Las opciones que definen cómo se deben conservar las versiones ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) se pueden combinar en función de sus necesidades.
+Las opciones que definen cómo se deben conservar las versiones ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) se pueden combinar según sus necesidades.
 
 Por ejemplo, al definir el número máximo de versiones que se van a conservar Y la versión más antigua que se va a conservar:
 
@@ -140,4 +140,4 @@ Por ejemplo, al definir el número máximo de versiones Y mínimo que se conserv
 
 ## Herramienta Purgar versiones {#purge-versions-tool}
 
-La herramienta [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) está diseñada para depurar las versiones de un nodo o una jerarquía de nodos en el repositorio. Su principal propósito es ayudarle a reducir el tamaño del repositorio eliminando versiones antiguas de los nodos.
+La herramienta [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) está diseñada para purgar las versiones de un nodo o una jerarquía de nodos en el repositorio. Su principal propósito es ayudarle a reducir el tamaño del repositorio eliminando versiones antiguas de los nodos.

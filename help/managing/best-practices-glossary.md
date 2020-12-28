@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Glosario {#glossary}
 
-Este glosario lista (alfabéticamente) detalles de todos los documentos de entrega de la lista de comprobación [del proyecto](/help/managing/best-practices-checklist.md).
+Este glosario lista (alfabéticamente) detalles de todos los documentos de entrega de la [lista de comprobación del proyecto](/help/managing/best-practices-checklist.md).
 
-## Aceptación de las partes interesadas del negocio {#acceptance-from-business-stakeholders}
+## Aceptación de partes interesadas del negocio {#acceptance-from-business-stakeholders}
 
 La aceptación por parte de las partes interesadas del negocio confirma que, como partes interesadas clave, están alineadas con la solución y han dado su aprobación en cuanto a la manera en que los requerimientos del negocio cumplen con los argumentos comerciales.
 
@@ -47,31 +47,31 @@ Asegurarse de que los niveles requeridos de acceso al sistema se hayan concedido
 
 ## Lista de comprobación de seguridad de Adobe {#adobe-security-checklist}
 
-La lista [de comprobación de seguridad de](/help/sites-administering/security-checklist.md) Adobe es la lista de comprobación oficial que se proporciona para garantizar que la AEM sea segura durante la instalación. Contiene las medidas de seguridad y los pasos de verificación que debe realizar para garantizar la integridad de su instancia.
+La [lista de comprobación de seguridad de Adobe](/help/sites-administering/security-checklist.md) es la lista de comprobación oficial proporcionada para garantizar que AEM es segura durante la instalación. Contiene las medidas de seguridad y los pasos de verificación que debe realizar para garantizar la integridad de su instancia.
 
-## Configuración del proyecto de Adobe Support Portal {#adobe-support-portal-project-set-up}
+## Configuración del proyecto del portal de soporte técnico de Adobe {#adobe-support-portal-project-set-up}
 
 El Portal de asistencia técnica de Adobe permite a los socios y clientes de implementación configurar la implementación de AEM como un proyecto en el Portal de asistencia técnica.
 
 Pueden registrarse los detalles; por ejemplo, acerca de las tecnologías y versiones implementadas. Esto proporciona transparencia entre el cliente y el Adobe.
 
-## Formación AEM administrador {#aem-administrator-training}
+## Capacitación del administrador de AEM {#aem-administrator-training}
 
-Formación del personal administrativo de la solución. Consulte los Servicios [de formación de](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) Adobe para obtener más información.
+Formación del personal administrativo de la solución. Consulte los [Servicios de capacitación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
-## Formación de autores de AEM {#aem-author-training}
+## Formación de autor de AEM {#aem-author-training}
 
-Formación para el personal que va a producir (crear) contenido para la solución. Consulte los Servicios [de formación de](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) Adobe para obtener más información.
+Formación para el personal que va a producir (crear) contenido para la solución. Consulte los [Servicios de capacitación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
 ## AEM examen de certificación {#aem-certification-exam}
 
-Asegúrese de que la persona adecuada esté registrada para realizar los exámenes de [certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)correspondientes.
+Asegúrese de que se ha registrado a la persona adecuada para realizar los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) correspondientes.
 
-## AEM certificado {#aem-certified}
+## Certificado por AEM {#aem-certified}
 
-Asegúrese de que la persona adecuada ha aprobado los exámenes de [certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)correspondientes.
+Asegúrese de que la persona adecuada ha aprobado los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
 
-## Formación técnica AEM {#aem-technical-training}
+## Capacitación técnica de AEM {#aem-technical-training}
 
 Proporcionar formación técnica a la persona adecuada; por ejemplo, desarrolladores, arquitectos, ingenieros y profesionales del negocio.
 
@@ -83,7 +83,7 @@ Los indicadores de rendimiento clave (KPI) ayudan a una organización a definir 
 
 La alineación de su negocio y los indicadores de rendimiento clave (KPI) ayuda a reunir a todas las personas y procesos involucrados desde la organización. Esto, a su vez, ayuda a reducir la cantidad de tiempo y esfuerzo necesarios para alcanzar los objetivos comerciales y cumplir el propósito propuesto.
 
-## Alineación de la arquitectura de contenido con KPI {#alignment-of-content-architecture-with-kpis}
+## Alineación de la Arquitectura de contenido con KPI {#alignment-of-content-architecture-with-kpis}
 
 Asegúrese de que la arquitectura de contenido propuesta esté alineada con los indicadores de rendimiento clave (KPI) relevantes.
 
@@ -91,9 +91,9 @@ Asegúrese de que la arquitectura de contenido propuesta esté alineada con los 
 
 La Hoja de ruta del cliente está compuesta de hitos de alto nivel y objetivos comerciales. El cronograma del proyecto debe adherirse a esta estrategia y ajustarse a ella, de modo que se deben resaltar y rastrear los posibles riesgos y/o posibles desviaciones.
 
-## Definición de la arquitectura de aplicaciones {#application-architecture-definition}
+## Definición de la Arquitectura de Aplicaciones {#application-architecture-definition}
 
-La arquitectura [de la](/help/managing/best-practices.md#development-preparation) aplicación debe definir claramente el comportamiento de las aplicaciones propuestas.
+La [arquitectura de aplicaciones](/help/managing/best-practices.md#development-preparation) debe definir claramente el comportamiento de las aplicaciones propuestas.
 
 Se centra en:
 
@@ -150,7 +150,7 @@ Esta estrategia define un marco para secuencias de comandos automatizadas reutil
 * más cobertura de pruebas
 * mayor fiabilidad de la prueba con repetición de calidad
 
-## Estrategia de prueba automatizada validada frente a la carga real y esperada {#automated-testing-strategy-validated-against-realistic-and-expected-load}
+## Estrategia de prueba automatizada validada frente a carga realista y esperada {#automated-testing-strategy-validated-against-realistic-and-expected-load}
 
 La estrategia de prueba automatizada debe validarse y ajustarse según el contenido y la carga esperada que habrá en la solución.
 
@@ -177,11 +177,11 @@ Todo el equipo del proyecto y todas las partes interesadas deben confirmar que c
 * definiciones de éxito
 * criterios para el éxito
 
-## Concepto de respaldo y restauración {#backup-and-restore-concept}
+## Concepto de backup y restore {#backup-and-restore-concept}
 
 El concepto de copia de seguridad y restauración describe la funcionalidad técnica que se implementará en la solución. La política de restauración y copia de seguridad de la Compañía lo requiere.
 
-## Backup y restauración probados {#backup-and-restore-tested}
+## Prueba de backup y restore {#backup-and-restore-tested}
 
 Prueba completa end-to-end basada en el concepto de backup y restore.
 
@@ -205,7 +205,7 @@ Las organizaciones utilizan indicadores de rendimiento clave (KPI) para evaluar 
 
 Los KPI comerciales definen valores mensurables que muestran la eficacia con la que una compañía está alcanzando los objetivos comerciales clave. Es importante elegir KPI adecuados para su negocio o escenario con definiciones claras de cuáles son, cómo se medirán, cómo se utilizarán y quién los usará.
 
-## Documentación de requisitos comerciales {#business-requirements-documentation}
+## Documentación de requerimientos del negocio {#business-requirements-documentation}
 
 Un documento de requerimientos comerciales (BRD) detalla la solución comercial para un proyecto, proporcionando una clara especificación de las necesidades y expectativas comerciales del cliente. El BRD también distingue entre la solución comercial y la solución técnica.
 
@@ -235,23 +235,23 @@ Las Directrices de codificación definen los principios básicos a los que deben
 
 Asegúrese de que todas las funciones y personas pertinentes han recibido el Manual de operaciones.
 
-## Informe de prueba de rendimiento de comunicación {#communicate-performance-test-report}
+## Comunicar informe de prueba de rendimiento {#communicate-performance-test-report}
 
 Asegúrese de que todas las funciones y personas pertinentes han recibido el informe Prueba de rendimiento.
 
-## Comunicar las notas de la versión {#communicate-release-notes}
+## Comunicar notas de revisión {#communicate-release-notes}
 
 Asegúrese de que todas las funciones y personas pertinentes han recibido las Notas de la versión.
 
-## Comunicar ámbito y expectativas al equipo {#communicate-scope-and-expectations-to-team}
+## Comunicar el ámbito y las expectativas al equipo {#communicate-scope-and-expectations-to-team}
 
 Asegurar que el equipo del proyecto esté plenamente al tanto del alcance del proyecto y de las expectativas de envío, y esté en consonancia con él.
 
-## Comunicación de materiales de formación y guías del usuario {#communicate-training-materials-and-user-guides}
+## Comunicar el material de capacitación y las guías del usuario {#communicate-training-materials-and-user-guides}
 
 Asegúrese de que todas las funciones y personas pertinentes reciben el material de formación y las guías del usuario.
 
-## Cumplimiento de los requisitos de seguridad del cliente {#compliance-with-customer-security-requirements}
+## Cumplimiento de los Requerimientos de Seguridad del Cliente {#compliance-with-customer-security-requirements}
 
 Asegúrese de que todos los requisitos de seguridad del cliente están implementados.
 
@@ -271,13 +271,13 @@ Detalles del concepto de relación de componentes y plantillas.
 
 Detalles de especificación para cada uno de los componentes que se implementarán.
 
-## Concepto de maquetas de interfaces externas {#concept-for-mock-ups-of-external-interfaces}
+## Concepto de mboxes de interfaces externas {#concept-for-mock-ups-of-external-interfaces}
 
 Concepto de cómo desarrollar y probar cualquier interfaz externa que no esté abierta o disponible para los entornos de desarrollo o ensayo.
 
 Planifique e implemente modelos de estas interfaces para garantizar que las pruebas se acerquen lo más posible al comportamiento de producción.
 
-## Documento de la Arquitectura del contenido {#content-architecture-document}
+## Documento de la Arquitectura de Contenido {#content-architecture-document}
 
 Documentación de la arquitectura propuesta del contenido. Los detalles deberían incluir, entre otros:
 
@@ -293,11 +293,11 @@ El contenido heredado del sistema se revisa y el contenido seleccionado se valid
 
 Proyecto inicial del contrato jurídico.
 
-## Estructura y formato del contenido actual {#current-content-structure-and-format}
+## Formato y estructura de contenido actuales {#current-content-structure-and-format}
 
 Documentación de la arquitectura y el formato de contenido actuales. Esto se utilizará para generar la futura arquitectura de contenido. También se utilizará para el concepto de migración.
 
-## Política de respaldo y restauración del cliente {#customer-backup-and-restore-policy}
+## Política de Backup y Restore del Cliente {#customer-backup-and-restore-policy}
 
 Políticas del cliente relativas a:
 
@@ -306,25 +306,25 @@ Políticas del cliente relativas a:
 * confirmación de que la copia de seguridad está funcionando según lo esperado
 * restauración, en caso de fallo
 
-## Directrices de codificación del cliente {#customer-coding-guidelines}
+## Directrices para la codificación del cliente {#customer-coding-guidelines}
 
 Cualquier guía o requisito del cliente sobre cómo se debe realizar el desarrollo.
 
-## Directivas de implementación/versión de clientes {#customer-deployment-release-policies}
+## Directivas de implementación/versión del cliente {#customer-deployment-release-policies}
 
 Políticas del cliente que definen cómo y cuándo se pueden realizar implementaciones/lanzamientos.
 
 A menudo incluyen cronogramas, programaciones y requisitos de cierre de sesión.
 
-## Directivas o requisitos de supervisión del cliente {#customer-monitoring-policies-or-requirements}
+## Requisitos o directivas de monitoreo del cliente {#customer-monitoring-policies-or-requirements}
 
 Políticas y requisitos del cliente sobre lo que debe monitorearse. Éstas se suman a las recomendaciones especificadas en el Concepto de supervisión.
 
-## Programa de lanzamiento de producción de clientes {#customer-production-release-schedule}
+## Programación de versiones de producción de clientes {#customer-production-release-schedule}
 
 Programa definido por el cliente para las versiones de los entornos de producción.
 
-## Políticas y requisitos de Sistema de informes del cliente {#customer-reporting-policies-and-requirements}
+## Requisitos y políticas de Sistema de informes del cliente {#customer-reporting-policies-and-requirements}
 
 Cualquier política o requisito que el cliente tenga en relación con el sistema de informes. Pueden incluir:
 
@@ -336,7 +336,7 @@ Cualquier política o requisito que el cliente tenga en relación con el sistema
 
 Formular una hoja de ruta de los principales hitos que se deben implementar, tanto tecnológicos como comerciales. Esta hoja de ruta se comunica entonces al cliente.
 
-## Políticas de seguridad del cliente {#customer-security-policies}
+## Directivas de seguridad del cliente {#customer-security-policies}
 
 El cliente (comercial y de TI) tendrá políticas que definen los niveles de seguridad requeridos para la solución. Pueden incluir:
 
@@ -346,9 +346,9 @@ El cliente (comercial y de TI) tendrá políticas que definen los niveles de seg
 
 ## Directrices de especificación del cliente {#customer-specification-guidelines}
 
-Cualquier guía que tenga el cliente en relación con el formato, el envío y la firma de las especificaciones.
+Cualquier guía que el cliente tenga en relación con el formato, el envío y la firma de las especificaciones.
 
-## Informes de pruebas de cliente {#customer-test-reports}
+## Informes de prueba del cliente {#customer-test-reports}
 
 Informes del cliente al posible cliente durante el período de prueba de aceptación del usuario (UAT).
 
@@ -384,7 +384,7 @@ Directivas formalizadas que cubren tanto la implementación como las versiones d
 * frecuencia
 * y puede depender del entorno en cuestión
 
-## Establecimiento de la jerarquía de implementación {#deployment-cadence-established}
+## Se ha establecido la cadencia de implementación {#deployment-cadence-established}
 
 Defina la frecuencia necesaria de las implementaciones entre entornos.
 
@@ -394,7 +394,7 @@ Una metodología de desarrollo de software implica dividir todo el proceso de tr
 
 Al definir la metodología, debe predefinir los productos y artefactos específicos creados y completados por el equipo del proyecto para desarrollar o mantener la aplicación.
 
-## Definición de función de desarrollo {#development-role-definition}
+## Definición de la función de desarrollo {#development-role-definition}
 
 Defina qué desarrollador y/o función ejecuta pruebas de TI (rendimiento u otros) y/o unidades dentro de la solución.
 
@@ -410,19 +410,19 @@ El Equipo de Desarrollo debería confirmar que comprende plenamente:
 * todas las expectativas de los clientes
 * que esta es la base de todas las decisiones tomadas por persona, por fase en el proyecto
 
-## Especificación de los diálogos {#dialogs-specification}
+## Especificación de diálogos {#dialogs-specification}
 
 Detalles sobre los diálogos necesarios para la solución.
 
-## Configuración del Entorno de desarrollo de Documento {#document-development-environment-setup}
+## Configuración del Entorno de desarrollo de documento {#document-development-environment-setup}
 
 Documentación del entorno de desarrollo.
 
-## Configuración de Documento Production Entorno {#document-production-environment-setup}
+## Configuración de documento Production Entorno {#document-production-environment-setup}
 
 Documentación del entorno de producción.
 
-## Configuración del Entorno de la prueba de Documento {#document-test-environment-setup}
+## Configuración del Entorno de prueba de documento {#document-test-environment-setup}
 
 Documentación del entorno de ensayo.
 
@@ -438,7 +438,7 @@ Ejecución de las pruebas de durabilidad.
 
 El manejo de errores se refiere a la anticipación, detección y resolución de errores de programación, aplicación y comunicación.
 
-## Documentación de administración de errores {#error-handling-documentation}
+## Administración de errores de la documentación {#error-handling-documentation}
 
 Documentación detallada de la gestión de errores propuesta, basada en el concepto de gestión de errores.
 
@@ -462,7 +462,7 @@ Documentación del conjunto existente de permisos y grupos definidos para la sol
 
 Un diagrama (o conjunto de diagramas) de los sistemas y dependencias existentes.
 
-## Definiciones y criterios de éxito previstos {#expected-success-definitions-and-criteria}
+## Definiciones y criterios de éxito esperados {#expected-success-definitions-and-criteria}
 
 El Patrocinador del Proyecto reúne las expectativas comerciales relacionadas con el éxito del proyecto. Es importante contar con todo el conjunto de expectativas disponibles en el inicio de un proyecto, ya que éstas deberían influir en todas las decisiones adoptadas durante la ejecución.
 
@@ -480,7 +480,7 @@ Requisitos para toda la experiencia de la solución. Esto abarca factores como l
 
 Detalles de los requisitos de diseño de experiencia.
 
-## Sistema externo y dependencias del usuario/Contexto del sistema {#external-system-and-user-dependencies-system-context}
+## Dependencias del sistema externo y del usuario/Contexto del sistema {#external-system-and-user-dependencies-system-context}
 
 Un diagrama (o conjunto de diagramas) que describe todo el ecosistema de la solución. Esto debería incluir elementos como integraciones externas, interfaces, dependencias y redes.
 
@@ -495,7 +495,7 @@ Definición del sistema de reserva:
 
 Prueba completa del sistema de reserva.
 
-## Cierre de sesión del sistema de reserva por parte de las partes interesadas del negocio {#fallback-system-sign-off-from-business-stakeholders}
+## Cierre de sesión del sistema de reserva de los accionistas del negocio {#fallback-system-sign-off-from-business-stakeholders}
 
 Firme, por parte de los interesados del negocio, que el sistema de reserva y los procedimientos relacionados garantizarán las funcionalidades críticas del negocio.
 
@@ -505,7 +505,7 @@ Resultados de un estudio de viabilidad tanto para el diseño de la solución de 
 
 ## Contrato finalizado {#finalized-contract}
 
-Antes de continuar con el proyecto se necesita un contrato firmado y finalizado. Esto se basa en el borrador del [contrato](#contract-draft).
+Antes de continuar con el proyecto se necesita un contrato firmado y finalizado. Esto se basa en el [Borrador del contrato](#contract-draft).
 
 ## Funcionalidad de la solución aceptada por las partes interesadas {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -514,7 +514,7 @@ Confirmación de que los interesados aceptan plenamente:
 * funcionalidad de la solución
 * cualquier problema conocido en la solución
 
-## Ir a la programación en directo {#go-live-schedule}
+## Programación en directo {#go-live-schedule}
 
 Cronología y programación de las actividades necesarias para:
 
@@ -561,15 +561,15 @@ Definición de la estructura de contenido del sistema heredado. Esto se utiliza 
 
 Debe recopilar y documento estadísticas de rendimiento y KPI de rendimiento del sistema heredado. A continuación, se utilizan como punto de referencia y como referencia para la nueva solución.
 
-## Identifique las funciones y soluciones clave críticas {#identify-critical-key-solutions-functionalities}
+## Identifique las funcionalidades/soluciones clave críticas {#identify-critical-key-solutions-functionalities}
 
 Una lista de las funcionalidades críticas del negocio.
 
-## Implementación: cambios basados en los resultados de la prueba de penetración {#implementation-changes-based-on-penetration-test-results}
+## Implementación: Cambios basados en los resultados de la prueba de penetración {#implementation-changes-based-on-penetration-test-results}
 
 Implementación de todos los cambios requeridos (que se han firmado) en la solución en base a los resultados de las pruebas de penetración.
 
-## Implementación - Estrategia de prueba automatizada {#implementation-automated-testing-strategy}
+## Implementación: Estrategia de prueba automatizada {#implementation-automated-testing-strategy}
 
 Configuración de herramientas y procesos necesarios para admitir pruebas automatizadas.
 
@@ -581,7 +581,7 @@ Configuración del conjunto de herramientas y los procesos necesarios para admit
 
 Implementación de la arquitectura de contenido, etiquetado de conceptos y reutilización de contenido.
 
-## Implementación - Diseño de experiencias {#implementation-experience-design}
+## Implementación: diseño de experiencia {#implementation-experience-design}
 
 Implementación de los requisitos para admitir el diseño de experiencias.
 
@@ -605,7 +605,7 @@ Implementación de funciones y derechos, usuarios y grupos.
 
 Implementación de todas las medidas de seguridad, incluyendo los AEM incumplimientos.
 
-## Implementación - Software de seguridad {#implementation-security-software}
+## Implementación: Software de seguridad {#implementation-security-software}
 
 Implementación de la seguridad de las aplicaciones de software.
 
@@ -613,7 +613,7 @@ Implementación de la seguridad de las aplicaciones de software.
 
 Implementación de la seguridad del sistema.
 
-## Implementación: administración de URL {#implementation-url-handling}
+## Implementación: administración de direcciones URL {#implementation-url-handling}
 
 Implementación del concepto de administración de direcciones URL.
 
@@ -634,7 +634,7 @@ El concepto de aplicación proporciona los principios rectores para toda la apli
 
 Este concepto también puede esbozar los marcos, bibliotecas y otros artefactos que se utilizan en la solución.
 
-## Informar a la asistencia técnica de Adobe sobre la programación en directo {#inform-adobe-support-about-the-go-live-schedule}
+## Informar a la asistencia técnica de Adobe sobre la programación de lanzamiento {#inform-adobe-support-about-the-go-live-schedule}
 
 Póngase en contacto con el servicio de asistencia técnica de Adobe para asegurarse de que cualquier soporte que se necesite se puede activar durante el lanzamiento.
 
@@ -670,7 +670,7 @@ Para su proyecto, el sistema heredado es la tecnología, el sistema informático
 
 Los detalles del sistema heredado deben recopilarse para que sepa qué puede retirarse, cuándo y el impacto en cualquier otro sistema.
 
-## Lista de los instrumentos de desarrollo que se utilizarán {#list-of-development-tools-to-be-used}
+## Lista de las herramientas de desarrollo que se utilizarán {#list-of-development-tools-to-be-used}
 
 a) Un esbozo de los instrumentos que se utilizarán en la aplicación; las herramientas deben incluir:
 
@@ -679,7 +679,7 @@ a) Un esbozo de los instrumentos que se utilizarán en la aplicación; las herra
 * herramientas de implementación
 * crear herramientas
 
-## Lista de usuarios que requieren acceso al portal de asistencia de Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
+## Lista de usuarios que requieren acceso al portal de soporte de Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
 
 Una lista de todos los usuarios y funciones que necesitarán acceso al Portal de asistencia técnica de Adobe.
 
@@ -751,7 +751,7 @@ Monitoree las conexiones entre la solución y los sistemas externos:
 * picos
 * estabilidad
 
-## Monitoreo: ancho de banda de red {#monitoring-network-bandwidth}
+## Monitoreo: Ancho de banda de red {#monitoring-network-bandwidth}
 
 Monitoree el uso del ancho de banda de la red por parte de la solución:
 
@@ -776,7 +776,7 @@ Supervisar el sistema en general; por ejemplo:
 * picos de rendimiento
 * alertas
 
-## Monitoreo - Umbral e intervención {#monitoring-threshold-and-intervention}
+## Monitoreo: Umbral e Intervención {#monitoring-threshold-and-intervention}
 
 Control del umbral definido de la solución junto con la implementación de pasos de intervención para reducir la carga.
 
@@ -798,11 +798,11 @@ Algunos ejemplos son (entre otros):
 * procesamiento de transacciones
 * puntos de integración
 
-## Política de supervisión comunicada al ingeniero de sistemas {#monitoring-policy-communicated-to-system-engineer}
+## Política de monitoreo comunicada al ingeniero de sistemas {#monitoring-policy-communicated-to-system-engineer}
 
 Asegurarse de que los ingenieros y el personal de operaciones del sistema conozcan y comprendan las políticas de supervisión.
 
-## Informes de supervisión: estructura en el lugar {#monitoring-reports-structure-in-place}
+## Informes de monitoreo: estructura {#monitoring-reports-structure-in-place}
 
 Definir:
 
@@ -836,17 +836,17 @@ Paquete de software creado y entregado listo para la implementación.
 
 Una prueba de penetración (conocida informalmente como prueba de pluma) es un ataque a un sistema informático que busca debilidades de seguridad, y potencialmente obtiene acceso a las características y datos del equipo.
 
-## Pruebas de penetración: superadas {#penetration-tests-passed}
+## Pruebas de penetración - Pasadas {#penetration-tests-passed}
 
 Se aprueban todos los criterios necesarios.
 
-## Pruebas de penetración: resultados {#penetration-tests-results}
+## Pruebas de penetración - Resultados {#penetration-tests-results}
 
 Informes creados para la empresa que explican los resultados de la prueba de penetración.
 
 ## Concepto de performance y escalabilidad {#performance-and-scalability-concept}
 
-documento conceptual sobre cómo garantizar que la implementación cumpla los KPI de rendimiento y cómo escalar la solución para que siga satisfaciendo esos KPI.
+Documento conceptual sobre cómo garantizar que la implementación cumpla los KPI de rendimiento y cómo escalar la solución para que siga satisfaciendo esos KPI.
 
 ## Prueba comparativa de rendimiento {#performance-benchmark}
 
@@ -870,7 +870,7 @@ Las pruebas basadas en personalidades son un método basado en las distintas per
 
 Esto se utiliza a menudo en la prueba de aceptación del usuario (UAT).
 
-## Documentación de requisitos probada y verificada por POC {#poc-tested-and-verified-against-requirement-documentation}
+## Documentación de requisitos probada y verificada para POC {#poc-tested-and-verified-against-requirement-documentation}
 
 La Prueba de Concepto (POC) se compara con los requisitos para garantizar que ambos estén alineados.
 
@@ -890,11 +890,11 @@ Es habitual ejecutar una prueba de línea de base en una instalación estándar 
 
 Confirme que el entorno de producción está listo, con implementaciones automatizadas implementadas.
 
-## Firma de producción de las partes interesadas del negocio {#production-sign-off-from-business-stakeholders}
+## Cierre de sesión de producción de los accionistas del negocio {#production-sign-off-from-business-stakeholders}
 
 Antes de entrar en directo en el entorno de producción, debe concederse Production Sign-off (PSO). Esto es el resultado de una revisión de la versión que se publicará en producción, junto con cualquier problema conocido. La desactivación se proporciona como parte de la programación Go Live.
 
-## Proceso y política de cierre de sesión de producción {#production-sign-off-process-and-policy}
+## Proceso y directiva de cierre de sesión de producción {#production-sign-off-process-and-policy}
 
 La política y el proceso necesarios para obtener la firma de producción antes de mover el paquete al entorno de producción.
 
@@ -904,7 +904,7 @@ Defina el plan de comunicación tanto para las partes interesadas del negocio co
 
 ## Esfuerzos del proyecto - Estimaciones finales {#project-efforts-final-estimates}
 
-Las estimaciones [](#project-efforts-initial-estimates) iniciales fueron de alto nivel y se hicieron de acuerdo con las elevadas necesidades de ejecución.
+Las [estimaciones iniciales](#project-efforts-initial-estimates) eran de alto nivel y se hacían de acuerdo con los requisitos de alto nivel para la implementación.
 
 Ahora se examinan, perfeccionan y amplían para proporcionar las estimaciones finales. Las estimaciones deben ser proporcionadas por cada jefe de proyecto apropiado, incluida la gestión de proyectos, la consultoría, la arquitectura, los ensayos y el desarrollo.
 
@@ -969,13 +969,13 @@ Se utiliza con Runbook para ejecutar pasos y comprobaciones previos y posteriore
 
 >[!NOTE]
 >
->Para ver un ejemplo, consulte las [AEM Notas](/help/release-notes/release-notes.md)de la versión.
+>Para ver un ejemplo, consulte las [Notas de la versión de AEM](/help/release-notes/release-notes.md).
 
-## Lanzamiento en Entorno de producción {#release-running-on-production-environment}
+## Lanzamiento en ejecución en el Entorno de producción {#release-running-on-production-environment}
 
 Lanzamiento de la versión final y activo en producción.
 
-## Condiciones del contrato pertinentes {#relevant-contract-terms}
+## Condiciones del contrato relevantes {#relevant-contract-terms}
 
 Debe destacar las condiciones contractuales específicas que son relevantes para la implementación del proyecto; como hitos contractuales, períodos de factura o requisitos de personal.
 
@@ -1030,7 +1030,7 @@ Especificación detallada de los conceptos relativos a las funciones y los derec
 * permissions
 * así como la administración y el aprovisionamiento de usuarios
 
-## Concepto de funciones y derechos cumple las directrices de seguridad {#roles-and-rights-concept-meets-security-guidelines}
+## El concepto de roles y derechos cumple las directrices de seguridad {#roles-and-rights-concept-meets-security-guidelines}
 
 Revisión del concepto de funciones y derechos para garantizar que cumple las políticas de seguridad.
 
@@ -1042,7 +1042,7 @@ Una especificación detallada basada en el concepto de funciones y derechos.
 
 Recommendations está relacionado con la seguridad para la arquitectura de software y hardware.
 
-## Directrices de codificación basadas en la seguridad {#security-based-coding-guidelines}
+## Pautas de codificación basadas en la seguridad {#security-based-coding-guidelines}
 
 Estas directrices definen la forma en que se debe hacer la codificación de desarrollo, basándose en requisitos de seguridad como:
 
@@ -1051,7 +1051,7 @@ Estas directrices definen la forma en que se debe hacer la codificación de desa
 * directrices para marcos
 * Uso de API
 
-## Security Checklist {#security-checklist}
+## Lista de comprobación de seguridad {#security-checklist}
 
 Lista de comprobación específica del proyecto de elementos, basada en el Concepto de seguridad junto con cualquier política adicional necesaria para garantizar el cumplimiento de la solución.
 
@@ -1073,11 +1073,11 @@ Un esquema de alto nivel que abarca la configuración de seguridad de:
 
 Todos los problemas de seguridad de la solución enumerados y evaluados; incluyendo estimaciones de esfuerzo.
 
-## Cierre de sesión de seguridad por parte de las partes interesadas del negocio {#security-sign-off-from-business-stakeholders}
+## Cierre de sesión de seguridad de los agentes del negocio {#security-sign-off-from-business-stakeholders}
 
 Firme con los interesados para asegurarse de que la implementación de seguridad cumple con las políticas y expectativas.
 
-## Configurar procesos de asistencia {#set-up-support-processes}
+## Configure los procesos de soporte {#set-up-support-processes}
 
 Establezca los procesos de soporte requeridos.
 
@@ -1091,7 +1091,7 @@ Las pruebas de humo consisten en un conjunto de pasos definidos que prueban las 
 
 Se ejecutan, en cualquier entorno, después de la instalación o la implementación.
 
-## Pruebas de humo ejecutadas para la validación del sistema {#smoke-tests-executed-for-system-validation}
+## Se ejecutaron pruebas de humo para la validación del sistema {#smoke-tests-executed-for-system-validation}
 
 Las pruebas de humo deben ejecutarse en todos los sistemas para garantizar el correcto funcionamiento de la funcionalidad básica de la solución durante la instalación o la implementación en cualquier entorno.
 
@@ -1127,7 +1127,7 @@ Detalles de cualquier funcionalidad especial que se considere fuera del ámbito 
 
 Cualquier guía del cliente sobre cómo se debe realizar la especificación.
 
-## Proceso de revisión y aprobación de especificaciones definido y comunicado {#specification-review-and-approval-process-defined-and-communicated}
+## Proceso de Revisión y Aprobación de Especificaciones Definido y Comunicado {#specification-review-and-approval-process-defined-and-communicated}
 
 Debe establecerse un proceso claro para la firma de las especificaciones por parte del cliente. Este proceso garantiza la claridad y la firmeza del ámbito de aplicación de los requisitos.
 
@@ -1135,7 +1135,7 @@ Debe establecerse un proceso claro para la firma de las especificaciones por par
 
 Personal interno que necesitará capacitación para administrar la solución.
 
-## Personal seleccionado para formación de autor y usuario final {#staff-selected-for-author-and-end-user-training}
+## Personal seleccionado para la capacitación de autores y usuarios finales {#staff-selected-for-author-and-end-user-training}
 
 Personal interno que necesitará formación para crear la solución.
 
@@ -1145,22 +1145,22 @@ Las partes interesadas son las personas y/o funciones clave que tienen un inter�
 
 Las partes interesadas pueden ser internas o externas.
 
-## Los interesados son conscientes de las definiciones y los criterios de éxito {#stakeholders-are-aware-of-success-definitions-and-criteria}
+## Los interesados son conscientes de las definiciones y criterios de éxito {#stakeholders-are-aware-of-success-definitions-and-criteria}
 
 Confirmación de que todos los interesados fuera del equipo de implementación real son conscientes de lo siguiente:
 
 * definiciones de éxito
 * criterios para el éxito
 
-## Las partes interesadas comprenden el proyecto y las expectativas {#stakeholders-understand-project-and-expectations}
+## Los interesados comprenden el proyecto y las expectativas {#stakeholders-understand-project-and-expectations}
 
 Confirmación de que todas las partes interesadas fuera del equipo de implementación real están en consonancia con el proyecto y las expectativas generales, tanto internas del equipo del proyecto como del cliente.
 
-## Definición del formato del informe de estado {#status-report-format-definition}
+## Definición de formato de informe de estado {#status-report-format-definition}
 
 Los informes de estado son un instrumento clave de comunicación. El formato debe estar alineado con los requisitos de sistema de informes del cliente.
 
-## Criterios y definición de éxito {#success-criteria-and-definition}
+## Criterios de éxito y definición {#success-criteria-and-definition}
 
 El cliente, el patrocinador del proyecto y el director o consultor del proyecto deben especificar:
 
@@ -1207,11 +1207,11 @@ Se identifican y evalúan todos los factores de riesgo que se encuentran en la e
 * el nivel de riesgo implícito en cada uno de ellos
 * junto con el esfuerzo estimado para hacer frente a cualquier cambio en la aplicación.
 
-## El equipo es consciente de las definiciones y los criterios de éxito {#team-is-aware-of-success-definitions-and-criteria}
+## El equipo es consciente de los criterios y definiciones de éxito {#team-is-aware-of-success-definitions-and-criteria}
 
 Confirmación de que todo el equipo es consciente de las definiciones y los criterios de éxito.
 
-## El equipo es consciente del plan de comunicación {#team-is-aware-of-the-communication-plan}
+## El equipo conoce el plan de comunicación {#team-is-aware-of-the-communication-plan}
 
 Confirmación de que todos los miembros del equipo son conscientes de quién debe comunicarse con el cliente, junto con detalles de cómo y cuándo.
 
@@ -1245,11 +1245,11 @@ La especificación técnica abarca (entre otros datos):
 
 ## Especificación de plantilla {#template-specification}
 
-Especificaciones de las plantillas requeridas. Estos datos deberían incluir detalles como parsys, blueprint y la asignación de herencia, entre otros.
+Especificaciones de las plantillas requeridas. Estos deberían abarcar detalles como parsys, blueprint y la asignación de herencia, entre otros.
 
 Las especificaciones se basan en los requisitos comerciales y los requisitos de experiencia.
 
-## Test Cases {#test-cases}
+## Casos de prueba {#test-cases}
 
 Casos de prueba específicos de los pasos detallados necesarios para ejecutar pruebas funcionales de la solución.
 
@@ -1257,7 +1257,7 @@ Casos de prueba específicos de los pasos detallados necesarios para ejecutar pr
 
 El contenido de la prueba debe estar lo más cerca posible del contenido de producción. Debe tener una selección lo suficientemente amplia como para permitir probar todos los escenarios.
 
-## Comprobación de Entorno lista {#test-environment-ready}
+## Test Entorno Ready {#test-environment-ready}
 
 Asegúrese de que el entorno de prueba está listo, con implementaciones automatizadas implementadas para garantizar que todo el código de candidato a la versión esté actualizado para la prueba.
 
@@ -1288,9 +1288,9 @@ El concepto de prueba es el esquema de alto nivel de las pruebas para el proyect
 
 ## Planes de prueba {#testing-plans}
 
-Estos planes describen en bueno detalle la realización de pruebas para cada fase de desarrollo y se basan en la estrategia [de](#testing-strategy)ensayo.
+Estos planes describen en bueno detalle la ejecución de pruebas para cada fase de desarrollo y se basan en la [Estrategia de pruebas](#testing-strategy).
 
-## Ámbito de prueba {#testing-scope}
+## Alcance de la prueba {#testing-scope}
 
 Estos requisitos son específicos de la implementación técnica de los servicios que admiten la solución.
 
@@ -1359,7 +1359,7 @@ La persona adecuada debe confirmar que comprende plenamente:
 * todas las expectativas de los clientes
 * que esta es la base de todas las decisiones tomadas por persona, por fase en el proyecto
 
-## Concepto de administración de URL {#url-handling-concept}
+## Concepto de administración de direcciones URL {#url-handling-concept}
 
 El concepto de administración de direcciones URL debe abarcar AEM funciones URL específicas, entre las que se incluyen:
 
@@ -1375,7 +1375,7 @@ El concepto también debería abarcar:
 * Consideraciones de SEO, como robots.txt
 * un mapa del sitio
 
-## Use Cases {#use-cases}
+## Casos de uso {#use-cases}
 
 Un caso de uso es la lista de acciones o pasos de evento necesarios para alcanzar un objetivo. Generalmente definen las interacciones entre una función y la solución. La función puede ser un usuario o un sistema externo.
 
@@ -1395,7 +1395,7 @@ Las guías del usuario proporcionan información y asistencia a los usuarios de 
 
 Todos los interesados deben revisar y validar el plan presupuestario. Necesitan comprobar los detalles, como la facturación, los importes y los métodos/plazos de sistema de informes del presupuesto.
 
-## Resultados de la prueba de la caja blanca {#white-box-test-results}
+## Resultados de la prueba de cuadro blanco {#white-box-test-results}
 
 La prueba de cuadro blanco es un método que prueba las estructuras internas o el funcionamiento de una aplicación, a diferencia de su funcionalidad. La prueba de caja blanca se puede aplicar en los niveles de unidad, integración y sistema del proceso de prueba de software.
 
@@ -1411,9 +1411,9 @@ La especificación de cada flujo de trabajo debe incluir (como mínimo):
 * resultados
 * gestión de errores
 
-## Concepto de Flujos de trabajo {#workflows-concept}
+## Concepto de flujos de trabajo {#workflows-concept}
 
-Los Flujos de trabajo le permiten automatizar actividades AEM. El Concepto de Flujos de trabajo describe:
+Los flujos de trabajo le permiten automatizar actividades AEM. El Concepto de Flujos de trabajo describe:
 
 * los procesos que necesitarán automatización
 * los servicios y funciones de AEM que se verán afectados

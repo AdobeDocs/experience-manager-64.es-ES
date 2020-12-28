@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Desarrollo con CRXDE Lite {#developing-with-crxde-lite}
+# Desarrollar con CRXDE Lite {#developing-with-crxde-lite}
 
 En esta sección se describe cómo desarrollar su aplicación AEM con CRXDE Lite.
 
@@ -35,15 +35,15 @@ Se recomienda CRXDE Lite cuando no tenga acceso directo al servidor de AEM, cuan
 
 >[!NOTE]
 >
->Se recomienda utilizar las [AEM herramientas para desarrolladores de Eclipse](/help/sites-developing/aem-eclipse.md) y la extensión de los [checos HTML](/help/sites-developing/aem-brackets.md) AEM durante el desarrollo del proyecto.
+>Se recomienda utilizar las [Herramientas para desarrolladores de AEM para Eclipse](/help/sites-developing/aem-eclipse.md) y la [Extensión de chapas de AEM HTL](/help/sites-developing/aem-brackets.md) durante el desarrollo del proyecto.
 
 ## Introducción a CRXDE Lite {#getting-started-with-crxde-lite}
 
 Para empezar con CRXDE Lite, siga estos pasos:
 
 1. Instale AEM.
-1. En el navegador, escriba https://`<host>`:`<port>`/crx/de. De forma predeterminada, lo es `http://localhost:4502/crx/de`.
-1. Introduzca su **nombre de usuario** y **contraseña**. De forma predeterminada es `admin` y `admin`.
+1. En el explorador, escriba https://`<host>`:`<port>`/crx/de. De forma predeterminada, es `http://localhost:4502/crx/de`.
+1. Introduzca su **nombre de usuario** y **contraseña**. De forma predeterminada, es `admin` y `admin`.
 
 1. Haga clic en **Aceptar**.
 
@@ -65,23 +65,23 @@ CRXDE Lite oferta la siguiente funcionalidad:
   </tr> 
   <tr> 
    <td>Widget de ruta de nodo</td> 
-   <td><p>Muestra la ruta al nodo seleccionado actualmente.</p> <p>También puede utilizarla para saltar a un nodo, introduciendo la ruta a mano o pegándola desde otro lugar y pulsando Intro.</p> <p>También proporciona soporte para buscar nodos con un nombre de nodo específico. Escriba el nombre del nodo que desee encontrar y espere (o pulse el símbolo de búsqueda en el lado derecho). Puede intentar introducir, por ejemplo, el <em>roble</em> de cadena en la utilidad para ver cómo funciona. Si un nodo o nodos determinados se cargan en el panel del explorador, se mostrará la lista y podrá seleccionar la ruta y pulsar Intro para desplazarse hasta ella. Tenga en cuenta que solo funciona con los nodos cargados actualmente en la aplicación cliente CRXDE en el navegador. Si desea buscar en todo el repositorio, utilice Herramientas y luego Consulta.</p> </td> 
+   <td><p>Muestra la ruta al nodo seleccionado actualmente.</p> <p>También puede utilizarla para saltar a un nodo, introduciendo la ruta a mano o pegándola desde otro lugar y pulsando Intro.</p> <p>También proporciona soporte para buscar nodos con un nombre de nodo específico. Escriba el nombre del nodo que desee encontrar y espere (o pulse el símbolo de búsqueda en el lado derecho). Puede intentar introducir, por ejemplo, la cadena <em>roak</em> en la utilidad para ver cómo funciona. Si un nodo o nodos determinados se cargan en el panel del explorador, se mostrará la lista y podrá seleccionar la ruta y pulsar Intro para desplazarse hasta ella. Tenga en cuenta que solo funciona con los nodos cargados actualmente en la aplicación cliente CRXDE en el navegador. Si desea buscar en todo el repositorio, utilice Herramientas y luego Consulta.</p> </td> 
   </tr> 
   <tr> 
    <td>Panel Explorador</td> 
-   <td><p>Muestra un árbol de todos los nodos del repositorio.</p> <p>Haga clic en un nodo para mostrar sus propiedades en la ficha <strong>Propiedades</strong> . Después de hacer clic en un nodo, puede seleccionar una acción en la barra de herramientas. Vuelva a hacer clic en el nodo para cambiarle el nombre.</p> <p>Filtro de navegación de árbol (icono binocular): permite filtrar los nodos del repositorio para los que el nombre contiene el texto de entrada. Solo se aplica a los nodos que se han cargado localmente.<br /> </p> </td> 
+   <td><p>Muestra un árbol de todos los nodos del repositorio.</p> <p>Haga clic en un nodo para mostrar sus propiedades en la ficha <strong>Propiedades</strong>. Después de hacer clic en un nodo, puede seleccionar una acción en la barra de herramientas. Vuelva a hacer clic en el nodo para cambiarle el nombre.</p> <p>Filtro de navegación de árbol (icono binocular): permite filtrar los nodos del repositorio para los que el nombre contiene el texto de entrada. Solo se aplica a los nodos que se han cargado localmente.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Panel Editar</td> 
-   <td><p><strong>Ficha Inicio</strong> : le permite buscar contenido y/o documentación y acceder a los recursos del desarrollador (documentación, blog del desarrollador, base de conocimiento) y a la asistencia (página principal de Adobe y centro de asistencia).<br /> </p> <p>Haga clic con el botón Doble en un archivo del panel <strong>Explorador</strong> para mostrar su contenido; como, por ejemplo, un archivo .jsp o .java. A continuación, puede modificarlo y guardar los cambios.</p> <p>Una vez que se edita un archivo en el panel <strong>Editar</strong> , las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar ...</strong>: realice búsquedas o reemplace.<br /> <br /> Al hacer clic con el Doble en la línea de estado del panel <strong>Editar</strong> , se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda introducir un número de línea específico para ir.<br /> </td> 
+   <td><p><strong></strong> Hometab: le permite buscar contenido y/o documentación y acceder a los recursos del desarrollador (documentación, blog del desarrollador, base de conocimiento) y a la asistencia (página principal de Adobe y centro de asistencia).<br /> </p> <p>Haga clic con el botón doble en un archivo del panel <strong>Explorador</strong> para mostrar su contenido; como, por ejemplo, un archivo .jsp o .java. A continuación, puede modificarlo y guardar los cambios.</p> <p>Una vez que se edita un archivo en el panel <strong>Editar</strong>, las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> -  <strong>Buscar/Reemplazar ...</strong>: realice búsquedas o reemplace.<br /> <br /> Al hacer clic con el doble en la línea de estado del  <strong></strong> panel de edición, se abre el cuadro de diálogo  <strong>Ir a </strong> linedio para que pueda introducir un número de línea específico para ir.<br /> </td> 
   </tr> 
   <tr> 
    <td>Ficha Propiedades<br /> </td> 
-   <td>Muestra las propiedades del nodo seleccionado. Puede agregar nuevas propiedades o eliminar las existentes.<br /> </td> 
+   <td>Muestra las propiedades del nodo seleccionado. Puede agregar propiedades nuevas o eliminar las existentes.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Ficha Control de acceso</td> 
-   <td><p>Mostrar permisos basados en la ruta actual, nivel de repositorio o principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política</strong>de Control de acceso aplicable: Políticas que se pueden aplicar a la selección actual.</p> <p>- Políticas <strong>de Control de acceso</strong>local: Políticas actuales aplicadas localmente a la selección actual.</p> <p>- Políticas <strong>eficaces de Control de acceso</strong>: Las políticas actuales aplicadas a la selección actual pueden establecerse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información del Control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como, por ejemplo, administrador para ver la información.</p> </td> 
+   <td>Ficha control de acceso</td> 
+   <td><p>Mostrar permisos basados en la ruta actual, nivel de repositorio o principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política de Control de acceso aplicable</strong>: Políticas que se pueden aplicar a la selección actual.</p> <p>- <strong>Políticas de Control de acceso local</strong>: Políticas actuales aplicadas localmente a la selección actual.</p> <p>- <strong>Políticas de Control de acceso efectivas</strong>: Las políticas actuales aplicadas a la selección actual pueden establecerse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información del Control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como, por ejemplo, administrador para ver la información.</p> </td> 
   </tr> 
   <tr> 
    <td>Ficha Replicación</td> 
@@ -92,12 +92,12 @@ CRXDE Lite oferta la siguiente funcionalidad:
    <td><p><strong>Registros de servidor</strong>:</p> <p>Muestra mensajes de registros. Puede configurar el nivel de registro, borrar la consola, fijar en la posición de desplazamiento seleccionada y habilitar/deshabilitar la visualización de mensajes.<br /> </p> <p><strong>Control de versión</strong>:</p> <p>Muestra mensajes de control de versiones.<br /> </p> </td> 
   </tr> 
   <tr> 
-   <td>Ficha Información de compilación<br /> </td> 
+   <td>Información de compilación, ficha<br /> </td> 
    <td>Muestra información cuando se está generando un paquete.<br /> </td> 
   </tr> 
   <tr> 
    <td>Actualizar<br /> </td> 
-   <td>Actualiza la selección actual. Los cambios de otros usuarios se actualizan en la vista del repositorio. Los cambios realizados no se verán afectados.<br /> </td> 
+   <td>Actualiza la selección actual. Los cambios de otros usuarios se actualizan en la vista del repositorio. Los cambios realizados no se ven afectados.<br /> </td> 
   </tr> 
   <tr> 
    <td>Guardar todos</td> 
@@ -117,7 +117,7 @@ CRXDE Lite oferta la siguiente funcionalidad:
   </tr> 
   <tr> 
    <td>Pegar<br /> </td> 
-   <td>Pega el nodo copiado debajo del nodo seleccionado.<br /> </td> 
+   <td>Pega el nodo copiado bajo el nodo seleccionado.<br /> </td> 
   </tr> 
   <tr> 
    <td>Mover ...<br /> </td> 
@@ -133,7 +133,7 @@ CRXDE Lite oferta la siguiente funcionalidad:
   </tr> 
   <tr> 
    <td>Herramientas<br /> </td> 
-   <td><p>Menú desplegable con las siguientes herramientas:</p> <p>- Configuración <strong>del servidor...</strong>: para acceder a la consola Felix.</p> <p>- <strong>Consulta ...</strong>: para consulta del repositorio.</p> <p>- <strong>Privilegios ...</strong>: para abrir la administración de privilegios, donde puede vista y agregar privilegios.</p> <p>- Control de acceso <strong>de prueba ...</strong>: un lugar donde puede probar el permiso para una ruta determinada o principal.</p> <p>- <strong>Exportar tipo</strong>de nodo: para exportar tipos de nodos en el sistema como notación de código.</p> <p>- <strong>Importar tipo de nodo...</strong>: para importar tipos de nodos mediante notación cnd.</p>  <p>- <strong>Instalar SiteCatalyst Debugger ...</strong>: instrucciones sobre cómo instalar Analytics Debugger.</p> </td> 
+   <td><p>Menú desplegable con las siguientes herramientas:</p> <p>- <strong>Configuración del servidor...</strong>: para acceder a la consola Felix.</p> <p>- <strong>Consulta...</strong>: para consulta del repositorio.</p> <p>- <strong>Privilegios...</strong>: para abrir la administración de privilegios, donde puede vista y agregar privilegios.</p> <p>- <strong>Control de acceso de prueba...</strong>: un lugar donde puede probar el permiso para una ruta determinada o principal.</p> <p>- <strong>Tipo de nodo de exportación</strong>: para exportar tipos de nodos en el sistema como notación de código.</p> <p>- <strong>Importar tipo de nodo...</strong>: para importar tipos de nodos mediante notación cnd.</p>  <p>- <strong>Instalar SiteCatalyst Debugger...</strong>: instrucciones sobre cómo instalar Analytics Debugger.</p> </td> 
   </tr> 
   <tr> 
    <td>Utilidad de inicio de sesión<br /> </td> 
@@ -142,31 +142,31 @@ CRXDE Lite oferta la siguiente funcionalidad:
  </tbody> 
 </table>
 
-### Creating a Folder {#creating-a-folder}
+### Creación de una carpeta {#creating-a-folder}
 
 Para crear una carpeta con CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desea crear la nueva carpeta, seleccione **Crear...** y, a continuación, **Crear carpeta...**.
+1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desea crear la nueva carpeta, seleccione **Crear...**, luego **Crear carpeta...**.
 
-1. Introduzca el **nombre** de la carpeta y haga clic en **Aceptar**.
+1. Introduzca la carpeta **Name** y haga clic en **OK**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
-### Creating a Template {#creating-a-template}
+### Creación de una plantilla {#creating-a-template}
 
 Para crear una plantilla con CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desee crear la plantilla, seleccione **Crear...** y, a continuación, **Crear plantilla...**.
+1. En el panel Navegación, haga clic con el botón derecho en la carpeta donde desee crear la plantilla y seleccione **Crear...**, luego **Crear plantilla...**.
 
-1. Introduzca la **etiqueta**, el **título**, la **descripción**, el tipo **de** recurso y la **clasificación** de la plantilla. Haga clic en **Siguiente**. 
+1. Introduzca los valores **Label**, **Title**, **Description**, **Resource Type** y **Ranking** de la plantilla. Haga clic en **Siguiente**. 
 
-1. Este paso es opcional: establezca las Rutas **permitidas**. Haga clic en **Siguiente**
+1. Este paso es opcional: establezca las **Rutas permitidas**. Haga clic en **Siguiente**
 
-1. Este paso es opcional: establezca los Padres **** permitidos. Haga clic en **Siguiente**. 
+1. Este paso es opcional: establezca **Padres permitidos**. Haga clic en **Siguiente**. 
 
-1. Este paso es opcional: establezca los elementos secundarios **permitidos**. Haga clic en **Aceptar**.
+1. Este paso es opcional: establezca los **elementos secundarios permitidos**. Haga clic en **Aceptar**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -176,24 +176,24 @@ Crea:
 
 * Un nodo secundario de tipo `cq:PageContent` con propiedades de contenido de página
 
-Puede agregar propiedades a la plantilla: consulte la sección [Creación de una propiedad](#creating-a-property) .
+Puede agregar propiedades a la plantilla: consulte la sección [Creación de una propiedad](#creating-a-property).
 
 ### Creación de un componente {#creating-a-component}
 
-La función descrita aquí solo está disponible si el tipo de nodo `cq:Component` está disponible en el repositorio.
+La función descrita aquí sólo está disponible si el tipo de nodo `cq:Component` está disponible en el repositorio.
 
 Para crear un componente con CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desea crear el componente, seleccione **Crear...** y, a continuación, **Crear componente...**.
+1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desee crear el componente, seleccione **Crear...**, luego **Crear componente...**.
 
-1. Introduzca la **etiqueta**, el **título**, la **descripción**, el tipo **** de recurso superior y el **grupo** del componente. Haga clic en **Siguiente**. 
+1. Introduzca los valores **Label**, **Title**, **Description**, **Super Resource Type** y **Group** del componente. Haga clic en **Siguiente**. 
 
-1. Este paso es opcional: defina las propiedades del componente **Es Contenedor, Sin decoración**, Nombre **de** celda y Ruta **de cuadro de diálogo**. Haga clic en **Siguiente**. 
+1. Este paso es opcional: establezca las propiedades del componente **Es Contenedor, Sin decoración**, **Nombre de celda** y **Ruta del cuadro de diálogo**. Haga clic en **Siguiente**. 
 
-1. Este paso es opcional: establezca la propiedad del componente **Padres** permitidos. Haga clic en **Siguiente**. 
+1. Este paso es opcional: establezca la propiedad del componente **Padres permitidos**. Haga clic en **Siguiente**. 
 
-1. Este paso es opcional: establezca la propiedad del componente **Permitidos elementos secundarios**. Haga clic en **Aceptar**.
+1. Este paso es opcional: establezca la propiedad del componente **Elementos secundarios permitidos**. Haga clic en **Aceptar**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -208,11 +208,11 @@ Crea:
 Para crear un cuadro de diálogo con el CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en el componente en el que desea crear el cuadro de diálogo, seleccione **Crear...** y, a continuación, **Crear cuadro de diálogo...**.
+1. En el panel Navegación, haga clic con el botón derecho en el componente en el que desea crear el cuadro de diálogo y seleccione **Crear...**, luego **Crear cuadro de diálogo...**.
 
 1. Introduzca la **etiqueta** y el **título**. Haga clic en **Aceptar**.
 
-1. Haga clic en **Guardar** todo para guardar los cambios en el servidor.
+1. Haga clic en **Guardar todo** l para guardar los cambios en el servidor.
 
 Crea un cuadro de diálogo con la siguiente estructura:
 
@@ -220,14 +220,14 @@ Crea un cuadro de diálogo con la siguiente estructura:
 
 Ahora puede adaptar el cuadro de diálogo a sus necesidades modificando propiedades o creando nuevos nodos.
 
-También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer clic en el nodo de cuadro de diálogo en CRXDE Lite, aparecerá el editor. Puede encontrar más información sobre el Editor de cuadros de diálogo [aquí](/help/sites-developing/dialog-editor.md).
+También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer clic en el nodo de cuadro de diálogo en CRXDE Lite, aparecerá el editor. Encontrará más información sobre el Editor de cuadros de diálogo [aquí](/help/sites-developing/dialog-editor.md).
 
 ### Creación de un nodo {#creating-a-node}
 
 Para crear un nodo con CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en el nodo en el que desea crear el nuevo nodo, seleccione **Crear...** y, a continuación, **Crear nodo...**.
+1. En el panel Navegación, haga clic con el botón derecho en el nodo donde desee crear el nuevo nodo, seleccione **Crear...**, luego **Crear nodo...**.
 
 1. Introduzca el **Nombre** y el **Tipo**. Haga clic en **Aceptar**.
 
@@ -239,7 +239,7 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 >
 >La mayoría de las operaciones de edición, incluido Crear nodo, mantienen todos los cambios en la memoria y solo los almacena en el repositorio al guardarlos (mediante el botón &quot;Guardar todo&quot;). Sin embargo, algunas operaciones como mover se mantienen automáticamente.
 >
->La validación con respecto a si el nuevo nodo creado está permitido por el tipo de nodo del nodo principal también la realiza el repositorio JCR primero al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un `nt:unstructured` nodo como secundario de `nt:folder` nodo).
+>La validación con respecto a si el nuevo nodo creado está permitido por el tipo de nodo del nodo principal también la realiza el repositorio JCR primero al guardar los cambios. Si recibe un mensaje de error al guardar un nodo, compruebe si la estructura de contenido es válida (por ejemplo, no puede crear un nodo `nt:unstructured` como secundario de `nt:folder` nodo).
 
 ### Creación de una propiedad {#creating-a-property}
 
@@ -247,7 +247,7 @@ Para crear una propiedad con CRXDE Lite:
 
 1. Abra CRXDE Lite en el navegador 
 1. En el panel Navegación, seleccione el nodo en el que desea agregar la nueva propiedad.
-1. En la ficha **Propiedades** del panel inferior, introduzca el **Nombre**, el **Tipo** y el **Valor**. Haga clic en **Agregar**.
+1. En la ficha **Propiedades** del panel inferior, introduzca **Nombre**, el **Tipo** y el **Valor**. Haga clic en **Agregar**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -256,23 +256,23 @@ Para crear una propiedad con CRXDE Lite:
 Para crear una nueva secuencia de comandos:
 
 1. Abra CRXDE Lite en el navegador 
-1. En el panel Navegación, haga clic con el botón derecho en el componente en el que desea crear la secuencia de comandos, seleccione **Crear ...** y, a continuación, **Crear archivo ...**.
+1. En el panel Navegación, haga clic con el botón derecho en el componente en el que desea crear la secuencia de comandos, seleccione **Crear...**, luego **Crear archivo...**.
 
-1. Introduzca el **nombre** del archivo, incluida su extensión. Haga clic en **Aceptar**.
+1. Introduzca el archivo **Name**, incluida su extensión. Haga clic en **Aceptar**.
 
 1. El nuevo archivo se abre como una ficha en el panel Editar.
 1. Edite el archivo.
-1. Click **Save All** to save the changes.
+1. Haga clic en **Guardar todo** para guardar los cambios.
 
 ### Exportación e importación de tipos de nodos {#exporting-and-importing-node-types}
 
-Con CRXDE Lite puede importar y/o exportar definiciones de tipo de nodo en la notación [](http://jackrabbit.apache.org/jcr/node-type-notation.html)CND (Área de nombres compacta y definición de tipo de nodo).
+Con CRXDE Lite puede importar y/o exportar definiciones de tipo de nodo en la notación [CND (Área de nombres compacta y definición de tipo de nodo)](http://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Para exportar una definición de tipo de nodo:
 
 1. Abra CRXDE Lite en el navegador 
 1. Seleccione el nodo requerido.
-1. Seleccione **Herramientas** y luego **Exportar tipo** de nodo.
+1. Seleccione **Herramientas** y luego **Exportar tipo de nodo**.
 
 1. La definición, en notación de código, se mostrará en el explorador. Guarde la información si es necesario.
 
@@ -282,28 +282,28 @@ Para importar una definición de tipo de nodo:
 1. Seleccione **Herramientas** y luego **Importar tipo de nodo...**.
 
 1. Introduzca la notación CND para la definición en el cuadro de texto.
-1. Marque **Permitir actualización** si está actualizando una definición existente.
+1. Seleccione **Permitir actualización** si está actualizando una definición existente.
 1. Haga clic en **Importar**.
 
 ### Registro {#logging}
 
-Con CRXDE Lite puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos `<crx-install-dir>/crx-quickstart/server/logs` y filtrarlo con el nivel de registro adecuado. Proceda de la siguiente manera:
+Con CRXDE Lite puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos en `<crx-install-dir>/crx-quickstart/server/logs` y filtrarlo con el nivel de registro adecuado. Proceda de la siguiente manera:
 
 1. Abra CRXDE Lite en el navegador 
-1. En la ficha **Consola** de la parte inferior de la ventana, en el menú desplegable de la derecha, seleccione Registros **del servidor**.
+1. En la ficha **Consola** de la parte inferior de la ventana, en el menú desplegable de la derecha, seleccione **Registros del servidor**.
 
 1. Haga clic en el icono **Detener** para mostrar los mensajes.
 
 Puede hacer lo siguiente:
 
-* Ajuste los parámetros de registro en la consola Félix haciendo clic en el icono **Configuración** de registro.
-* Para borrar los mensajes, haga clic en el icono **Pincel** .
-* Anclar el mensaje en la selección actual haciendo clic en el icono **Anclar** .
-* Para activar o desactivar la visualización de mensajes, haga clic en el icono **Detener** .
+* Ajuste los parámetros de registro en la consola Félix haciendo clic en el icono **Configuraciones de registro**.
+* Para borrar los mensajes, haga clic en el icono **Pincel**.
+* Anclar el mensaje en la selección actual haciendo clic en el icono **Fijar**.
+* Habilite o deshabilite la visualización de mensajes haciendo clic en el icono **Detener**.
 
 ## Control de acceso {#access-control}
 
 >[!NOTE]
 >
->Consulte Administración de [usuarios, grupos y derechos de acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
+>Consulte [Administración de derechos de acceso, grupos y usuarios](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
 

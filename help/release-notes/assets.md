@@ -1,8 +1,8 @@
 ---
 title: Notas de versión de AEM Assets
 seo-title: AEM Assets
-description: Notas de la versión específicas de Recursos de Adobe Experience Manager 6.4.
-seo-description: Notas de la versión específicas de Recursos de Adobe Experience Manager 6.4.
+description: Notas de la versión específicas de Adobe Experience Manager 6.4 Assets.
+seo-description: Notas de la versión específicas de Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -26,7 +26,7 @@ Estas notas de la versión explican las características clave, los aspectos des
 
 Adobe Asset Link en Creative Cloud para empresas optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Es una nueva función nativa en Creative Cloud para empresas, que proporciona una conexión a AEM Assets directamente desde Adobe Photoshop, Adobe Illustrator o Adobe InDesign. sin dejar estas herramientas.
 
-Para obtener más información sobre la capacidad, los requisitos previos y cómo acceder a ellos, consulte la página Vínculo [de recursos de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) Adobe.
+Para obtener más información sobre la capacidad, los requisitos previos y cómo acceder a ellos, consulte la página [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
 ## Etiquetas inteligentes mejoradas (con tecnología Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -35,9 +35,9 @@ AEM 6.4 incorpora la funcionalidad de etiquetas inteligentes mejoradas basada en
 * Smart Content Service aprende la taxonomía comercial del cliente y la utiliza para etiquetar automáticamente los recursos digitales con etiquetas relevantes del cliente, además de etiquetas genéricas. Mejora significativamente la capacidad de detección de activos y reduce el tiempo de salida al mercado.
 * Adobe Sensei habilita el servicio de contenido inteligente, que le permite capacitar en el algoritmo de reconocimiento de imágenes en su taxonomía comercial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a recursos similares.
 
-Para utilizar etiquetas inteligentes mejoradas de AEM Assets, instale el [último Service Pack de AEM 6.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
+Para utilizar las etiquetas inteligentes mejoradas de AEM Assets, instale el [Service Pack más reciente de AEM 6.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
 
-## Búsqueda de traducción inteligente (con tecnología de Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
+## Búsqueda de traducción inteligente (con tecnología Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4 incorpora la capacidad de búsqueda de traducción inteligente para admitir escenarios de búsqueda multilingües. Los clientes con equipos distribuidos globalmente en varias configuraciones regionales ahora tienen acceso a la búsqueda en diferentes idiomas sin tener que pasar por flujos de trabajo de traducción costosos y lentos.
 
@@ -95,18 +95,18 @@ AEM 6.4 ofrece importantes mejoras en el sistema de informes de recursos:
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 Actualización** de Platform: Brand Portal se ha actualizado de AEM 6.0 a AEM 6.3, con nuevas funciones y mejoras de rendimiento.
+* **6.3 Actualización** de plataforma: Brand Portal se ha actualizado de AEM 6.0 a AEM 6.3, con nuevas funciones y mejoras de rendimiento.
 * **Publicación** paralela: Pueden producirse hasta replicaciones entre AEM Assets y Brand Portal (anteriormente 1), lo que mejora significativamente el rendimiento de publicación
-* **Publicación** de facetas de búsqueda y Esquema: Posibilidad de publicar esquemas de metadatos y facetas de búsqueda personalizadas en Brand Portal, lo que elimina la duplicación de esfuerzos.
+* **Publicación** de facetas de búsqueda y esquema: Posibilidad de publicar esquemas de metadatos y facetas de búsqueda personalizadas en Brand Portal, lo que elimina la duplicación de esfuerzos.
 * **Publicación** masiva de etiquetas: Posibilidad de publicar taxonomía (junto con jerarquía) en Brand Portal, lo que elimina la duplicación de esfuerzos.
 * **Registro propio o Solicitud de acceso**: Flujo de trabajo para usuarios no registrados en Brand Portal.
 * **Notificación** de mantenimiento en la aplicación (en pantalla): Las notificaciones se muestran con bastante antelación para evitar interrupciones en el negocio.
-* **Mejoras** de Sistema de informes: Hay tres informes de OOTB disponibles: descargas, publicación y recursos compartidos de vínculos.
+* **Mejoras** de sistema de informes: Hay tres informes de OOTB disponibles: descargas, publicación y recursos compartidos de vínculos.
 * **Restricciones** basadas en DRM: Una vez caducado un recurso con licencia, ya no estará disponible para su descarga desde Brand Portal.
 
 ## Aplicación de escritorio de AEM {#aem-desktop-app}
 
-AEM aplicación de escritorio se actualiza a la versión 1.8, que es compatible con AEM 6.4. La lista completa de los cambios para AEM aplicación de escritorio se proporciona en un documento dedicado [AEM notas](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html) de la versión de la aplicación de escritorio.\
+AEM aplicación de escritorio se actualiza a la versión 1.8, que es compatible con AEM 6.4. La lista completa de los cambios para AEM aplicación de escritorio se proporciona en un documento [AEM notas de la versión de la aplicación de escritorio](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html) dedicado.\
 Esta es una lista de AEM aspectos destacados de la aplicación de escritorio desde que se lanzó AEM 6.3:
 
 * Capacidad para cargar carpetas jerárquicas en segundo plano.
@@ -118,8 +118,8 @@ Esta es una lista de AEM aspectos destacados de la aplicación de escritorio des
 
 Para facilitar el acceso a la documentación y a las prácticas recomendadas, se dispone de la siguiente documentación:
 
-* [Guía](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)del usuario, dirigida a los usuarios finales que trabajan con la aplicación.
-* [Guía](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)de instalación, dirigida a los administradores que configuran AEM y AEM aplicación de escritorio para trabajar juntos
+* [Guía](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) del usuario, dirigida a los usuarios finales que trabajan con la aplicación.
+* [Guía](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) de instalación, dirigida a los administradores que configuran AEM y AEM aplicación de escritorio para trabajar juntos
 
 ## Almacenamiento en niveles {#tiered-storage}
 
@@ -128,18 +128,18 @@ AEM 6.4 incluye un conjunto de funciones que admiten diversas preferencias de al
 * La capacidad de los usuarios para seleccionar y cambiar posteriormente la clase de almacenamiento a voluntad y definir reglas para el almacenamiento de recursos de una clase a otra o administrar el ciclo vital de sus recursos.
 * Capacidad para que los usuarios reduzcan su costo de almacenamiento seleccionando otro AWS o Azure.
 
-Para obtener una descripción general de las plataformas admitidas, consulte la Documentación de requisitos [técnicos](../sites-deploying/technical-requirements.md).
+Para obtener información general sobre las plataformas admitidas, consulte la [Documentación de requisitos técnicos](../sites-deploying/technical-requirements.md).
 
 ## Grupo de usuarios cerrado {#closed-user-group}
 
 * En AEM 6.4, Closed User Group o CUG permite restringir el acceso a las carpetas en las instancias de publicación. Se trata de una opción táctil de la interfaz de usuario para agregar entidades de seguridad a través de la página de propiedades de las carpetas en el nivel de carpeta y se aplican a todas las carpetas y subcarpetas o recursos dentro de ellas.
 * En el modo de publicación, si se configura un CUG y se habilita la autorización en una carpeta, se redirige a los usuarios a una página de inicio de sesión cuando intentan acceder a la carpeta. Por lo tanto, los usuarios autorizados solo pueden acceder a la carpeta y a sus recursos después de iniciar sesión correctamente. Por lo tanto, CUG restringe el acceso de lectura a un árbol determinado en el repositorio de contenido para todos los usuarios excepto los principales seleccionados.
 
-## Dynamic Media add-on {#dynamic-media-add-on}
+## Complemento de Dynamic Media {#dynamic-media-add-on}
 
-Dynamic Media en 6.4 es compatible con un nuevo modo, en el que el recurso principal se carga y gestiona con la interfaz de usuario web de AEM Assets, mientras que las representaciones dinámicas y otras funciones de medios dinámicos se gestionan en segundo plano mediante el servicio Dynamic Media cloud envío.
+Dynamic Media en 6.4 es compatible con un nuevo modo, en el que el recurso principal se carga y gestiona con la interfaz de usuario web de AEM Assets, y el servicio Dynamic Media cloud envío gestiona las representaciones dinámicas y otras funciones de medios dinámicos en segundo plano.
 
-En este modo (introducido primero con la versión de [AEM 6.3 Feature Packs 14410 y 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), los usuarios se benefician de la administración de recursos de extremo a extremo y de las funciones de Dynamic Media mediante la moderna interfaz de usuario web de AEM Assets, y siguen aprovechando los servicios de envío compatibles con Dynamic Media Classic (Scene7), incluidas las URL de envío, que no cambian.
+En este modo (introducido primero con la versión de [AEM 6.3 Feature Packs 14410 y 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)), los usuarios se benefician de la administración de recursos end-to-end y de las funciones de medios dinámicos mediante la moderna interfaz de usuario web de AEM Assets, y siguen aprovechando los servicios de envío compatibles con Dynamic Media Classic (Scene7), incluidas las direcciones URL de envío, que no cambian.
 
 Además, AEM 6.4 incorpora nuevas funciones con Adobe Sensei, mejoras para medios emergentes como VR y 3D, visores de Dynamic Media y compatibilidad con fragmentos de experiencia en imágenes interactivas y pancartas de carrusel.
 
@@ -148,9 +148,9 @@ Además, AEM 6.4 incorpora nuevas funciones con Adobe Sensei, mejoras para medio
 * El recorte inteligente proporciona automáticamente recorte no destructivo de imágenes para preservar el punto de interés para un diseño interactivo. Si es necesario, puede previsualización las sugerencias recortadas y ajustarlas manualmente.
 * Esta función también permite la generación automatizada de muestras para imágenes de productos. La generación automatizada de muestras ayuda a añadir muestras de color, muestras de patrones o ambas a las imágenes de productos automáticamente.
 
-Consulte la documentación [de Perfiles](../assets/image-profiles.md) de imagen para obtener más información.
+Consulte la [documentación de Perfiles de imagen](../assets/image-profiles.md) para obtener más información.
 
-Consulte también [Añadir la documentación de Dynamic Media Assets a las páginas](../assets/adding-dynamic-media-assets-to-pages.md) para obtener más información sobre el uso de Smart Crop con el componente Dynamic Media.
+Consulte también [Añadir la documentación de Dynamic Media Assets en páginas](../assets/adding-dynamic-media-assets-to-pages.md) para obtener más información sobre el uso de Smart Crop con el componente Dynamic Media.
 
 ### Imágenes inteligentes {#smart-imaging}
 
@@ -158,12 +158,12 @@ Consulte también [Añadir la documentación de Dynamic Media Assets a las pági
 * Las imágenes se convierten automáticamente a diferentes formatos según las capacidades del navegador.
 * La configuración de calidad de imagen se determina en el navegador y se aplica respectivamente. Esta inteligencia mantiene el rendimiento de carga de imágenes aceptable para un ancho de banda limitado y velocidades de conexión lentas.
 
-Consulte la documentación de imágenes [inteligentes](../assets/imaging-faq.md) para obtener más información.
+Consulte la documentación de [Imágenes inteligentes](../assets/imaging-faq.md) para obtener más información.
 
 ### Mejoras en los nuevos medios y visores {#emerging-media-amp-viewer-enhancements}
 
 * Se admiten nuevos visores, que proporcionan al usuario experiencias mejores y envolventes.
-* El visor panorámico ayuda al usuario a interactuar con él y permite disfrutar mejor de las escenas, propiedades, ubicaciones y paisajes de la sala. Consulte la documentación [de imágenes](../assets/panoramic-images.md) panorámicas para obtener más información.
+* El visor panorámico ayuda al usuario a interactuar con él y permite disfrutar mejor de las escenas, propiedades, ubicaciones y paisajes de la sala. Consulte la documentación de [Imágenes panorámicas](../assets/panoramic-images.md) para obtener más información.
 
 * El visor de VR ofrece una experiencia inmersiva para propiedades, ubicaciones y paisajes.
 * Visor de imágenes vertical optimizado para imágenes de producto.
@@ -171,4 +171,4 @@ Consulte la documentación de imágenes [inteligentes](../assets/imaging-faq.md)
 
 ### 3D e integración con Dimension CC {#d-and-integration-with-dimension-cc}
 
-Se ha introducido la integración con [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) para un flujo de trabajo 3D más fluido. Para obtener más información, consulte [Uso de la documentación de recursos](../assets/assets-3d.md) 3D.
+Se ha introducido la integración con [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) para un flujo de trabajo 3D más fluido. Para obtener más información, consulte la documentación [Uso de recursos 3D](../assets/assets-3d.md).

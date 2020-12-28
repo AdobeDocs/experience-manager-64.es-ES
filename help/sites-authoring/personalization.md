@@ -48,7 +48,7 @@ Por ejemplo, una actividad define las experiencias para dos audiencias independi
 
 Se definen experiencias para una actividad. Puede utilizar [consola Actividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o el [modo Targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para añadir experiencias a una actividad.
 
-## Ofertas {#offers}
+## Ofertas  {#offers}
 
 Una oferta es el contenido que aparece en una ubicación de una página para una experiencia. Utilice ofertas diferentes para distintas experiencias con el fin de maximizar la eficacia del contenido para las audiencias.
 
@@ -56,7 +56,7 @@ Por ejemplo: la página de mujeres del sitio web de muestra We.Retail puede util
 
 Utilice la [consola Ofertas](/help/sites-authoring/offerlib.md) para crear ofertas que se pueden usar en varias experiencias. Cree ofertas de un solo uso o añada ofertas de una biblioteca de ofertas al [crear el contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
-## Motor de targeting {#targeting-engine}
+## Motor de targeting  {#targeting-engine}
 
 El motor de targeting es el mecanismo que lleva a cabo la lógica para el contenido de destino. Las [actividades](/help/sites-authoring/activitylib.md) se configuran para utilizar uno de estos dos motores de targeting disponibles: AEM y Adobe Target.
 
@@ -71,4 +71,4 @@ El motor de targeting de Adobe Target provoca el seguimiento en Adobe Target de 
 * Al utilizar este motor de targeting, usa los segmentos que importe de Adobe Target para definir audiencias para las experiencias.
 * Las actividades que usan el motor de targeting de Adobe Target [se sincronizan con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).
+Puede utilizar este motor cuando haya [integrado con Adobe Target](/help/sites-administering/opt-in.md).

@@ -24,21 +24,21 @@ ht-degree: 1%
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El icono **Administrar aplicación** del Panel de la aplicación permite modificar los detalles de la aplicación. Para abrir la página Detalles, haga clic en el vínculo Administrar detalles del mosaico de la aplicación. Desde la página Administrar aplicación puede editar la configuración de la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para enviarla a los distintos almacenes de aplicaciones.
+El icono **Administrar aplicación** del Panel de aplicaciones permite modificar los detalles de la aplicación. Para abrir la página Detalles, haga clic en el vínculo Administrar detalles del mosaico de la aplicación. Desde la página Administrar aplicación puede editar la configuración de la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para enviarla a los distintos almacenes de aplicaciones.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Explicación del icono Administrar aplicación {#understanding-the-manage-app-tile}
 
-Puede explorar en profundidad cada mosaico en el mosaico **Administrar aplicación** para realizar vistas o editar detalles haciendo clic en el botón &#39;...&#39; en la esquina inferior derecha.
+Puede profundizar en cada mosaico del mosaico **Administrar aplicación** para realizar vistas o editar detalles haciendo clic en el botón &#39;...&#39;. en la esquina inferior derecha.
 
-### Ficha Básico {#the-basic-tab}
+### La ficha Básico {#the-basic-tab}
 
-Puede editar el **nombre**, el **autor**, la descripción **** breve y la **descripción** de la aplicación desde esta ficha.
+Desde esta ficha puede editar **Nombre**, **Autor**, **Descripción corta** y la **Descripción** de la aplicación.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Ficha Avanzado {#the-advanced-tab}
+### La ficha Avanzado {#the-advanced-tab}
 
 Cada plataforma de aplicaciones móviles describe los datos que se recopilan, dirigiéndose específicamente a cada almacén de aplicaciones.
 
@@ -57,7 +57,7 @@ Cada tienda de aplicaciones de proveedores, como Apple App Store o Google Play S
 >
 >La aplicación AEM Verify permite enviar capturas de pantalla directamente a los detalles de la aplicación en AEM.
 >
->Consulte Inicio rápido [móvil para AEM verificación](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información.
+>Consulte [Inicio rápido móvil para AEM Verificación](/help/mobile/phonegap-mobile-quickstart.md) para obtener más detalles.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -65,7 +65,7 @@ Cada tienda de aplicaciones de proveedores, como Apple App Store o Google Play S
 
 >[!NOTE]
 >
->Una vez familiarizado con el mosaico **Administrar aplicación** , consulte [Edición de metadatos](/help/mobile/phonegap-editmetadata.md) de la aplicación para realizar vistas y editar los metadatos.
+>Una vez que esté familiarizado con el mosaico **Administrar aplicación**, consulte [Edición de metadatos de la aplicación](/help/mobile/phonegap-editmetadata.md) para vista y edición de los metadatos.
 
 #### Metadatos comunes {#common-metadata}
 
@@ -75,11 +75,11 @@ Hay una configuración común y metadatos para todas las plataformas.
 
 En esta sección, define la URL de Content Update Server, la página de aterrizaje de la aplicación móvil, la versión de PhoneGap para la compilación, la versión de la aplicación, el nombre, la descripción y mucho más.
 
-**Versión** de la aplicación es la versión de trabajo de la aplicación. La práctica recomendada habitual es utilizar una notación 3 decimales y un inicio inferior a 1.0.0 antes de la primera versión.
+**App** Versiones la versión de trabajo de la aplicación. La práctica recomendada habitual es utilizar una notación 3 decimales y un inicio inferior a 1.0.0 antes de la primera versión.
 
-**PhoneGap Version** es la versión en la que desea compilar la aplicación con PhoneGap. Lo mejor es mantenerse al día con la versión actual para asegurarse de obtener las últimas y buenas funciones y correcciones de errores.
+**PhoneGap** Versiones la versión en la que desea compilar su aplicación con PhoneGap. Lo mejor es mantenerse al día con la versión actual para asegurarse de obtener las últimas y buenas funciones y correcciones de errores.
 
-**Content Update Server URL** es la dirección URL que utilizará la aplicación para solicitar actualizaciones de ContentSync. Debe configurarse en la dirección URL del despachante o, si no utiliza un despachante, en una de las instancias de publicación que se utilizarán para proporcionar actualizaciones de ContentSync a la aplicación.
+**Content Update Server** URL es la dirección URL que utilizará la aplicación para solicitar actualizaciones de ContentSync. Debe configurarse en la dirección URL del despachante o, si no utiliza un despachante, en una de las instancias de publicación que se utilizarán para proporcionar actualizaciones de ContentSync a la aplicación.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -135,23 +135,23 @@ La propiedad URL de Content Update Server es la dirección URL que debe apuntar 
 
 ### Ficha Complementos {#the-plugins-tab}
 
-La ficha **Complementos** describe los complementos asociados a la aplicación. Esta información se utilizará para recuperar el complemento adecuado durante una compilación.
+La ficha **Complementos** describe los complementos asociados con la aplicación. Esta información se utilizará para recuperar el complemento adecuado durante una compilación.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### Ficha Capturas de pantalla {#the-screenshots-tab}
 
-La ficha **Capturas de pantalla** muestra las resoluciones de las capturas de pantalla admitidas en diferentes plataformas.
+La ficha **Capturas de pantalla** muestra las resoluciones de captura de pantalla admitidas en diferentes plataformas.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Para agregar y eliminar capturas de pantalla, consulte [Edición de metadatos](/help/mobile/phonegap-editmetadata.md)de la aplicación.
+>Para agregar y eliminar capturas de pantalla, consulte [Edición de metadatos de la aplicación](/help/mobile/phonegap-editmetadata.md).
 
-### Ficha Autenticación {#the-authentication-tab}
+### La ficha Autenticación {#the-authentication-tab}
 
-La ficha **Autenticación** permite seleccionar un cliente OAuth para asociarlo con la aplicación y permite que un desarrollador utilice la autenticación OAuth de Adobe Experience Manager.
+La ficha **Autenticación** permite seleccionar un cliente OAuth para asociarlo con la aplicación y permite que un programador utilice la autenticación OAuth de Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -161,7 +161,7 @@ Una vez que haya aprendido a administrar el icono de la aplicación en el panel 
 
 * [Edición de metadatos de la aplicación](/help/mobile/phonegap-editmetadata.md)
 * [Definiciones de aplicaciones](/help/mobile/phonegap-app-definitions.md)
-* [Creación de una aplicación nueva mediante el Asistente para crear una aplicación](/help/mobile/phonegap-create-new-app.md)
+* [Creación de una aplicación nueva mediante el Asistente para crear aplicación](/help/mobile/phonegap-create-new-app.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 

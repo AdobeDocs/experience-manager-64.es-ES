@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Diseños y el diseñador{#designs-and-the-designer}
+# Diseños y el Diseñador{#designs-and-the-designer}
 
 >[!CAUTION]
 >
@@ -28,17 +28,17 @@ Deberá crear un diseño para el sitio web y, en AEM, hacerlo mediante Designer.
 
 >[!NOTE]
 >
->Para obtener más información sobre la accesibilidad Web, consulte [AEM y las Directrices](/help/managing/web-accessibility.md)de accesibilidad Web.
+>Para obtener más información sobre la accesibilidad Web, consulte [AEM y las Pautas de accesibilidad Web](/help/managing/web-accessibility.md).
 
 ## Uso de Designer {#using-the-designer}
 
-El diseño se puede definir en la sección de **diseños** de la ficha **Herramientas** :
+El diseño se puede definir en la sección **diseños** de la ficha **Herramientas**:
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Aquí puede crear la estructura necesaria para almacenar el diseño y, a continuación, cargar las hojas de estilo en cascada y las imágenes necesarias.
 
-Los diseños se almacenan en `/etc/designs`. La ruta al diseño que se va a utilizar para un sitio web se especifica mediante la `cq:designPath` propiedad del `jcr:content` nodo.
+Los diseños se almacenan en `/etc/designs`. La ruta al diseño que se usará para un sitio Web se especifica mediante la propiedad `cq:designPath` del nodo `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -46,7 +46,7 @@ Los diseños se almacenan en `/etc/designs`. La ruta al diseño que se va a util
 >
 >Todos los cambios realizados en una página en modo de diseño se mantienen debajo del nodo de diseño del sitio y se aplican automáticamente a todas las páginas que tengan el mismo diseño.
 
-## Qué necesitará {#what-you-will-need}
+## Lo que necesitará {#what-you-will-need}
 
 Para realizar el diseño, necesitará:
 
@@ -54,9 +54,9 @@ Para realizar el diseño, necesitará:
 
 **Imágenes** : cualquier imagen que utilice para funciones como fondos o botones.
 
-### Consideraciones Al Diseñar El Sitio Web {#considerations-when-designing-your-website}
+### Consideraciones al diseñar su sitio Web {#considerations-when-designing-your-website}
 
-Al desarrollar un sitio web, se recomienda almacenar imágenes y archivos CSS en `/etc/design/<project>` para poder hacer referencia a los recursos en función del diseño actual, como se describe en el siguiente fragmento de código.
+Al desarrollar un sitio web, se recomienda almacenar imágenes y archivos CSS en `/etc/design/<project>` para que pueda hacer referencia a sus recursos en función del diseño actual, como se describe en el siguiente fragmento de código.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -65,7 +65,7 @@ Al desarrollar un sitio web, se recomienda almacenar imágenes y archivos CSS en
 El ejemplo anterior oferta varios beneficios:
 
 * Los componentes pueden tener un aspecto diferente en función de cada sitio mediante una ruta de diseño diferente.
-* El rediseño del sitio web se puede realizar simplemente señalando la ruta de diseño a un nodo diferente en la raíz del sitio, de `design/v1` a `design/v2.`
+* El rediseño del sitio web se puede realizar simplemente señalando la ruta de diseño a un nodo diferente en la raíz del sitio, desde `design/v1` a `design/v2.`
 
-* `/etc/designs` y `/content` son las únicas direcciones URL externas que el explorador ve protegerle de un usuario externo que se está curioso sobre lo que hay debajo del `/apps` árbol. Las ventajas de la URL anterior también ayudan al administrador del sistema a configurar una mejor seguridad, ya que está limitando la exposición de los recursos a unas pocas ubicaciones distintas.
+* `/etc/designs` y  `/content` son las únicas direcciones URL externas que el navegador ve protegerle de un usuario externo que se está curioso sobre lo que hay debajo de su  `/apps` árbol. Las ventajas de la URL anterior también ayudan al administrador del sistema a configurar una mejor seguridad, ya que está limitando la exposición de los recursos a unas pocas ubicaciones distintas.
 

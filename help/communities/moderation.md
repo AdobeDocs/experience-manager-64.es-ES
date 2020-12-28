@@ -286,7 +286,7 @@ Al trabajar con un solo anuncio, aparecerá un icono de respuesta si el tipo UGC
 
 #### Permitir {#allow}
 
-![chlimage_1-481](assets/chlimage_1-481.png)
+![chlimage_1-401](assets/chlimage_1-481.png)
 
 Al trabajar con un solo anuncio, el icono Permitir aparecerá cuando el anuncio se haya marcado o denegado. Si se marca, al seleccionar Permitir se borrarán todos los indicadores.
 

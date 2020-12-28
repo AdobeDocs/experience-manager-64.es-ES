@@ -41,7 +41,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!NOTE]
 >
->Se necesita AEM 6.4.5.0 o posterior para utilizar plantillas editables con el Editor [de](/help/sites-developing/spa-overview.md)SPA.
+>Se necesita AEM 6.4.5.0 o posterior para utilizar plantillas editables con el [Editor de SPA](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>Las páginas y plantillas creadas con la **Consola de plantillas** no están pensadas para utilizarse con la IU clásica y no se admite dicho uso.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -96,7 +96,7 @@ Debido a la naturaleza de algunas tareas, como la creación de una carpeta, es n
 
 Las tareas descritas en este documento se enumeran con la función responsable de llevarlas a cabo.
 
-### Plantillas editables y estáticas {#editable-and-static-templates}
+### Plantillas editables y estáticas  {#editable-and-static-templates}
 
 Actualmente, AEM ofrece dos tipos básicos de plantillas:
 
@@ -112,11 +112,11 @@ Actualmente, AEM ofrece dos tipos básicos de plantillas:
    * Las [proporcionan los desarrolladores](/help/sites-developing/page-templates-static.md), por lo que los autores no las pueden crear ni editar.
    * Se copian para crear la página nueva, pero no existe ninguna conexión dinámica después de esto (aunque el nombre de plantilla se registra a título informativo).
    * Utilice el [modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades del diseño.
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * Dado que la edición de plantillas estáticas es la tarea exclusiva de un desarrollador, consulte el documento para desarrolladores [Plantillas de página - Estático](/help/sites-developing/page-templates-static.md) para obtener más información.
 
 Por definición, la consola y el editor de plantillas solo permiten la creación y edición de plantillas editables. Por tanto, el documento se centra exclusivamente en plantillas editables.
 
-### Uso de una plantilla para crear una página {#using-a-template-to-create-a-page}
+### Uso de una plantilla para crear una página  {#using-a-template-to-create-a-page}
 
 Al utilizar una plantilla [para crear una página nueva](/help/sites-authoring/managing-pages.md#creating-a-new-page), no existe ninguna diferencia visible ni ninguna indicación entre las plantillas estáticas y las editables. Para el autor de la página, el proceso es transparente.
 
@@ -157,7 +157,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. Abra la **Consola de plantillas** (mediante **Herramientas** -> **General**) y luego navegue a la carpeta requerida.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
 
-### Definición de las propiedades de la plantilla: autor de plantillas   {#defining-template-properties-template-author}
+### Definición de las propiedades de la plantilla: autor de plantillas    {#defining-template-properties-template-author}
 
 Una plantilla puede tener las propiedades siguientes:
 
@@ -229,7 +229,7 @@ Para definir la miniatura de plantilla:
 
 1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
+### Activación y autorización de una plantilla: autor de plantillas    {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
@@ -272,7 +272,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Consulte [Disponibilidad de la plantilla](/help/sites-developing/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -290,7 +290,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 
 1. Seleccione **Publicar** en la barra de herramientas para completar la acción.
 
-## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
+## Edición de plantillas: autores de plantillas    {#editing-templates-template-authors}
 
 Al crear o editar una plantilla, hay distintas proporciones que se pueden definir. Editar plantillas es similar a crear páginas.
 
@@ -530,7 +530,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
    *Configuración interactiva*
 
@@ -549,7 +549,7 @@ En el modo de **Estructura** del editor de plantillas:
       * El contenido que ya haya introducido se considera contenido inicial y solo es visible en el modo de **Contenido inicial**.
    * Los componentes raíz del componente desbloqueado no se pueden mover, cortar ni eliminar.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
    Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha agregado componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en el modo **Estructura**, pero se mostrarán en el modo **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
 
@@ -613,7 +613,7 @@ El diseño de la página, incluidas las bibliotecas del lado del cliente y las p
 
 Para acceder al cuadro de diálogo **Diseño de página**:
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. En el **Editor de plantillas**, seleccione **Información de página** en la barra de herramientas y, a continuación, **Diseño de página** para abrir el cuadro de diálogo.
 1. El cuadro de diálogo **Diseño de página** se abre y se divide en dos secciones:
 
    * En la mitad izquierda, se definen las [políticas de la página](/help/sites-authoring/templates.md#page-policies)
@@ -686,7 +686,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 1. Confirme las definiciones con **Listo**.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas    {#best-practices}
 
 Al crear plantillas debe tener en cuenta:
 

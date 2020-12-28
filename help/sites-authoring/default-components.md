@@ -54,13 +54,13 @@ Los componentes se ordenan conforme a distintas categorías denominadas grupos d
 
 La [consola Componentes](/help/sites-authoring/default-components-console.md) le proporciona una descripción general de los grupos de componentes y los componentes proporcionados en la instalación de AEM. Puede ver información clave sobre cada uno de los componentes y su uso.
 
-## Componentes: áreas principales {#components-major-areas}
+## Componentes: áreas principales  {#components-major-areas}
 
 Las páginas siguientes proporcionan vínculos a información adicional e importante sobre los componentes:
 
 * [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de comunidad](/help/communities/overview.md).
 
 * [eCommerce](/help/sites-administering/ecommerce.md) : La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
 

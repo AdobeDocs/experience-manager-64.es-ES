@@ -28,9 +28,9 @@ Las imágenes utilizadas para la iluminación basada en imágenes deben tener HD
 
 Actualmente, AEM 3D solo admite archivos TIFF de 32 bits. Si es necesario, utilice Adobe Photoshop o una herramienta similar para convertir la imagen HDR a TIFF mediante la configuración siguiente en el cuadro de diálogo Exportar TIFF de Adobe Photoshop:
 
-* **[!UICONTROL Profundidad]** de bits: 32 bits (flotante)
-* **[!UICONTROL Orden]** de píxeles: intercalado (RGBRGB)
-* **[!UICONTROL Compresión]** de imágenes - LZW
+* **[!UICONTROL Profundidad]**  de bits: 32 bits (flotante)
+* **[!UICONTROL Orden]**  de píxeles: intercalado (RGBRGB)
+* **[!UICONTROL Compresión]**  de imágenes: LZW
 * **[!UICONTROL Byte Order]** - IBM PC
 
 Si bien una sola imagen HDR suele ser suficiente para los escenarios de IBL, AEM 3D proporciona un control adicional sobre los efectos de IBL y permite hasta tres imágenes independientes:
@@ -57,9 +57,9 @@ Puede ajustar el aspecto del escenario de IBL con las siguientes propiedades de 
    <td>Detalles de IBL Sun</td> 
    <td><p>Permite ajustar la dirección y la intensidad de la fuente de luz suplementaria que simula el sol. <span class="diff-html-added">Esta fuente de luz aumenta el brillo de la iluminación y hace que el objeto proyecte una sombra paralela sobre el plano de tierra. Se admite la proyección de sombras al realizar el procesamiento con Rapid Refine y para acceder a una vista previa con Google Chrome; sin embargo, actualmente, otros navegadores no admiten esta opción.</span></p> 
     <ul> 
-     <li><strong>lat</strong> : posición vertical de la fuente de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Un ajuste de <code>0.0</code> se encuentra en el horizonte (centro vertical de la imagen del Entorno de iluminación difusa); <code>1.0</code> se encuentra en el cenit (borde superior de la imagen del Entorno de iluminación difusa).</li> 
+     <li><strong>lat</strong> - Posición vertical de la fuente de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Un ajuste de  <code>0.0</code> está en el horizonte (centro vertical de la imagen del Entorno de iluminación difusa);  <code>1.0</code> se encuentra en el cenit (borde superior de la imagen del Entorno de iluminación difusa).</li> 
      <li><strong>long</strong> - Posición horizontal de la fuente de luz solar (<code>0.0</code>-<code>1.0</code>).<br /> Un valor de 0,0 corresponde a la izquierda; 1,0 corresponde al borde derecho de la imagen de entorno de iluminación difusa.<br /> </li> 
-     <li><strong>luminoso</strong> - El brillo de la fuente de luz solar. Aumente este valor para aclarar el origen de luz solar; reduzca este valor para oscurecerlo. <br /> Un ajuste de <code>0</code> desactiva la iluminación suplementaria y desactiva las sombras proyectadas. El parámetro no afecta a los reflejos de entorno.<br /> </li> 
+     <li><strong>luminoso</strong> - El brillo de la fuente de luz solar. Aumente este valor para aclarar el origen de luz solar; reduzca este valor para oscurecerlo. <br /> Un ajuste de  <code>0</code> desactiva la iluminación suplementaria y deshabilita las sombras proyectadas. El parámetro no afecta a los reflejos de entorno.<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -67,11 +67,11 @@ Puede ajustar el aspecto del escenario de IBL con las siguientes propiedades de 
    <td>Si el fondo IBL aparece distorsionado cerca del horizonte, es posible reducir o eliminar la distorsión ajustando esta propiedad. <br /> </td> 
   </tr> 
   <tr> 
-   <td>Iluminación de Entorno</td> 
+   <td>Iluminación de entorno</td> 
    <td><p><span class="diff-html-added">Permite controlar la iluminación difusa. Es posible que tenga que ajustar esta propiedad manualmente para corregir el brillo de la iluminación si la imagen de entorno de iluminación difusa es inusualmente clara u oscura (por ejemplo, escenas nocturnas).</span></p> 
     <ul> 
      <li><strong>r, g, b</strong> - Actualmente no se utiliza.</li> 
-     <li><strong>luminoso</strong> : multiplicador de <span class="diff-html-added">brillo. El aumento o la disminución de este valor aumenta o disminuye la intensidad global de la iluminación (iluminación básica de IBL y el brillo del origen de luz solar).</span></li> 
+     <li><strong>luminoso</strong> : multiplicador  <span class="diff-html-added">de brillo. El aumento o la disminución de este valor aumenta o disminuye la intensidad global de la iluminación (iluminación básica de IBL y el brillo del origen de luz solar).</span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 

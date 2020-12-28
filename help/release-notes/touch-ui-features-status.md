@@ -1,8 +1,8 @@
 ---
 title: Estado de la función de IU táctil
 seo-title: Estado de la función de IU táctil
-description: Notas de la versión específicas de la interfaz de usuario táctil de Adobe Experience Manager 6.3.
-seo-description: Notas de la versión específicas de la interfaz de usuario táctil de Adobe Experience Manager 6.3.
+description: Notas de la versión específicas de la IU táctil de Adobe Experience Manager 6.3.
+seo-description: Notas de la versión específicas de la IU táctil de Adobe Experience Manager 6.3.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 14%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 
 >[!CAUTION]
 >
->Con la versión 6.4 de AEM, la IU [clásica está en desuso](/help/release-notes/deprecated-removed-features.md).  Adobe no tiene pensado realizar más mejoras en la IU clásica y se recomienda a los usuarios que aprovechen las nuevas y potentes funciones disponibles en la IU táctil.
+>Con la versión 6.4 de AEM, la [IU clásica está en desuso](/help/release-notes/deprecated-removed-features.md). Adobe no tiene pensado realizar más mejoras en la IU clásica y se recomienda a los usuarios que aprovechen las nuevas y potentes funciones disponibles en la IU táctil.
 
-A partir de la versión 6.0, AEM introdujo una nueva interfaz de usuario denominada &quot;IU táctil&quot; (también conocida como &quot;IU táctil&quot;) que se alinea con Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario de Adobe. Al alcanzarse casi la partición de funciones, esta se ha convertido en la IU estándar en AEM con la interfaz heredada orientada al escritorio denominada &quot;IU clásica&quot;.
+A partir de la versión 6.0, AEM ha introducido una nueva interfaz de usuario denominada &quot;IU táctil&quot; (también conocida como &quot;IU táctil&quot;) que se alinea con el Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario de Adobe. Al alcanzarse casi la partición de funciones, esta se ha convertido en la IU estándar en AEM con la interfaz heredada orientada al escritorio denominada &quot;IU clásica&quot;.
 
 Aunque la mayoría de las funciones están presentes en la IU táctil, hay funciones que aún no se han completado y que se añadirán en versiones futuras.
 
-En la siguiente lista se muestra el estado actual de las funciones implementadas en AEM 6.4.
+La siguiente lista muestra el estado actual de las capacidades tal como se implementaron en la AEM 6.4.
 
-Para obtener más información sobre las recomendaciones para clientes que actualizan a AEM 6.4, consulte Recomendaciones de interfaz [de usuario para clientes](/help/sites-deploying/ui-recommendations.md) .
+Si desea conocer las recomendaciones para clientes que actualizan a AEM 6.4, consulte [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más detalles.
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Para obtener más información sobre las recomendaciones para clientes que actua
 
 >[!NOTE]
 >
->Esta lista trata de ser completa, pero no debe considerarse exhaustiva.
+>Esta lista se esfuerza por ser completa, pero no debe considerarse exhaustiva.
 
 ## Leyenda {#legend}
 
@@ -49,7 +52,7 @@ Para obtener más información sobre las recomendaciones para clientes que actua
 
 ## Estado de la función: Administración de sitios {#feature-status-sites-admin}
 
-Se trata de una lista de funciones que tiene la IU clásica Administración de sitios ( `/siteadmin`) y el estado en la IU táctil ( `/sites.html`).
+Es una lista de las capacidades que tiene la IU clásica Administración de sitios ( `/siteadmin`) y el estado en la IU táctil ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ Se trata de una lista de funciones que tiene la IU clásica Administración de s
   <tr>
    <td>Navegar por la jerarquía del sitio</td> 
    <td>Completar<br /> </td> 
-   <td>AEM 6.4 ha introducido una vista <a href="/help/sites-authoring/basic-handling.md#content-tree">de árbol de</a>contenido.</td> 
+   <td>AEM 6.4 introdujo una <a href="/help/sites-authoring/basic-handling.md#content-tree">vista de árbol de contenido</a>.</td> 
   </tr>
   <tr>
    <td>Iniciar flujo de trabajo</td> 
@@ -99,12 +102,12 @@ Se trata de una lista de funciones que tiene la IU clásica Administración de s
    <td> </td> 
   </tr>
   <tr>
-   <td>Búsqueda </td> 
+   <td>Búsqueda  </td> 
    <td>Completar<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Copiar/Pegar página (duplicado)</td> 
+   <td>Copiar/Pegar página (Duplicado)</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -159,7 +162,7 @@ Se trata de una lista de funciones que tiene la IU clásica Administración de s
    <td> </td> 
   </tr>
   <tr>
-   <td>Ver/Editar propiedades</td> 
+   <td>Vista/Editar propiedades</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -200,7 +203,7 @@ Se trata de una lista de funciones que tiene la IU clásica Administración de s
   </tr>
   <tr>
    <td>Buscar y reemplazar</td> 
-   <td>Missing<br /> </td> 
+   <td>Falta<br /> </td> 
    <td>Utilice la IU clásica.</td> 
   </tr>
   <tr>
@@ -211,14 +214,14 @@ Se trata de una lista de funciones que tiene la IU clásica Administración de s
   <tr>
    <td>Referencias</td> 
    <td>Principalmente</td> 
-   <td>La visualización de los vínculos de página entrantes se agregará en la versión 2019 de AEM.</td> 
+   <td>La visualización de los vínculos de página entrantes se agregará en la versión de 2019 de AEM.</td> 
   </tr>
  </tbody>
 </table>
 
 ## Estado de la función: Editor de páginas {#feature-status-page-editor}
 
-Se trata de una lista de las funciones que tiene el Editor de páginas de la IU clásica ( `/cf#`) y el estado de las funciones táctiles ( `/editor.html`).
+Es una lista de las capacidades que tiene el Editor de páginas de la IU clásica ( `/cf#`) y el estado en la IU táctil ( `/editor.html`).
 
 <table> 
  <tbody>
@@ -233,7 +236,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar páginas web móviles<br /> </td> 
+   <td>Editar páginas Web móviles<br /> </td> 
    <td>Completar<br /> </td> 
    <td> </td> 
   </tr>
@@ -253,27 +256,27 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar formularios</td> 
+   <td>Editar Forms</td> 
    <td>Completar<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar ofertas</td> 
+   <td>Editar Ofertas</td> 
    <td>Completar<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Editar modelos de flujos de trabajo<br /> </td> 
+   <td>Editar modelos de Flujos de trabajo<br /> </td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>ode: Editar y previsualizar</td> 
+   <td>ode: Editar y Previsualización</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Vista previa adaptable<br /> </td> 
+   <td>Previsualización adaptable<br /> </td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -293,7 +296,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
    <td> </td> 
   </tr>
   <tr>
-   <td>Agregar anotaciones</td> 
+   <td>Añadir anotaciones</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -308,7 +311,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
    <td> </td> 
   </tr>
   <tr>
-   <td>Iniciar y mostrar flujo de trabajo</td> 
+   <td>Inicio y mostrar flujo de trabajo</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -345,17 +348,17 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
   <tr>
    <td>Eliminar página</td> 
    <td>Eliminado</td> 
-   <td>Utilice Administración del sitio para <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">eliminar páginas</a>.<br /> </td> 
+   <td>Use Administración del sitio para <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">eliminar páginas</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Mostrar referencias</td> 
    <td>Eliminado</td> 
-   <td>Utilice Administración del sitio para <a href="/help/sites-authoring/author-environment-tools.md#references">ver la lista</a>de referencia detallada.<br /> </td> 
+   <td>Use Administración del sitio para <a href="/help/sites-authoring/author-environment-tools.md#references">ver la lista de referencia detallada</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Registro de auditorías</td> 
    <td>Eliminado</td> 
-   <td>Utilice el administrador del sitio y el carril <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">de actividades</a>abierto.<br /> </td> 
+   <td>Utilice Administración del sitio y <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">carril de actividad abierto</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Crear versión</td> 
@@ -370,15 +373,15 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
   <tr>
    <td>Interruptores de inicio</td> 
    <td>Eliminado</td> 
-   <td>Utilice Administración del sitio para <a href="/help/sites-authoring/launches-promoting.md">cambiar entre inicios</a>.<br /> </td> 
+   <td>Use Administración del sitio para <a href="/help/sites-authoring/launches-promoting.md">cambiar entre inicios</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Traducir página</td> 
    <td>Eliminado</td> 
-   <td>Utilice Administración del sitio para <a href="/help/sites-administering/tc-manage.md">agregar páginas a los proyectos</a>de traducción.<br /> </td> 
+   <td>Use Administración del sitio para <a href="/help/sites-administering/tc-manage.md">agregar página a proyectos de traducción</a>.<br /> </td> 
   </tr>
   <tr>
-   <td>Deformación de tiempo (elija la fecha y hora y el sitio de navegación tal y como se vio a continuación)<br /> </td> 
+   <td>Deformación de tiempo (elija la fecha y hora y el sitio de navegación tal y como se vio)<br /> </td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -390,7 +393,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
   <tr>
    <td>Interfaz de usuario de ClientContext<br /> </td> 
    <td>Reemplazado</td> 
-   <td>Utilice la interfaz de usuario de <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> en adelante.</td> 
+   <td>Utilice la interfaz de usuario <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> a partir de ahora.</td> 
   </tr>
   <tr>
    <td>Buscador de contenido para los distintos tipos de medios<br /> </td> 
@@ -408,7 +411,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
    <td> </td> 
   </tr>
   <tr>
-   <td>Lista de componentes del portapapeles</td> 
+   <td>Lista de componentes en el portapapeles</td> 
    <td>Falta</td> 
    <td> </td> 
   </tr>
@@ -432,7 +435,7 @@ Se trata de una lista de las funciones que tiene el Editor de páginas de la IU 
 
 ## Estado de la función: Editores de texto, tabla e imagen {#feature-status-text-table-and-image-editors}
 
-Se trata de una lista de funciones que tienen el texto, la tabla y el editor de imágenes de la IU clásica, así como el estado en la IU táctil.
+Es una lista de las funciones que tienen el texto, la tabla y el editor de imágenes de la IU clásica, así como el estado en la IU táctil.
 
 <table> 
  <tbody>
@@ -449,7 +452,7 @@ Se trata de una lista de funciones que tienen el texto, la tabla y el editor de 
   <tr>
    <td>Habilitar/deshabilitar complementos RTE</td> 
    <td>Completar<br /> </td> 
-   <td>Se puede realizar con el Editor <a href="/help/sites-authoring/templates.md">de plantillas</a>.</td> 
+   <td>Se puede hacer con el <a href="/help/sites-authoring/templates.md">Editor de plantillas</a>.</td> 
   </tr>
   <tr>
    <td>Usar RTE para texto sin formato</td> 
@@ -517,7 +520,7 @@ Se trata de una lista de funciones que tienen el texto, la tabla y el editor de 
    <td>Solo disponible en cuadro de diálogo y pantalla completa.<br /> </td> 
   </tr>
   <tr>
-   <td>Complemento RTE:Corrector ortográfico</td> 
+   <td>Complemento RTE: Corrector ortográfico</td> 
    <td>Completar</td> 
    <td> </td> 
   </tr>
@@ -554,7 +557,7 @@ Se trata de una lista de funciones que tienen el texto, la tabla y el editor de 
   <tr>
    <td>Habilitar/deshabilitar complementos IPE</td> 
    <td>Completar</td> 
-   <td>Ahora hay una interfaz de usuario en el Editor <a href="/help/sites-authoring/templates.md">de plantillas</a>.</td> 
+   <td>Ahora hay una interfaz de usuario en el <a href="/help/sites-authoring/templates.md">Editor de plantillas</a>.</td> 
   </tr>
   <tr>
    <td>Complemento IPE: Recortar</td> 
@@ -582,7 +585,7 @@ Se trata de una lista de funciones que tienen el texto, la tabla y el editor de 
    <td> </td> 
   </tr>
   <tr>
-   <td>Complemento IPE:Zoom</td> 
+   <td>Complemento IPE: Zoom</td> 
    <td>Completar<br /> </td> 
    <td> </td> 
   </tr>
@@ -591,7 +594,7 @@ Se trata de una lista de funciones que tienen el texto, la tabla y el editor de 
 
 ## Estado de la función: Herramientas {#feature-status-tools}
 
-Esta es una lista de las distintas herramientas que tiene la IU clásica y el estado en la IU táctil.
+Esta es una lista de varias herramientas que tiene la IU clásica y del estado de la IU táctil.
 
 <table> 
  <tbody>
@@ -603,7 +606,7 @@ Esta es una lista de las distintas herramientas que tiene la IU clásica y el es
   <tr>
    <td>Administración de tareas</td> 
    <td>Reemplazado</td> 
-   <td>6.0 introdujo <a href="/help/sites-authoring/projects.md">Proyectos y tareas</a>.<br /> </td> 
+   <td>6.0 ha introducido <a href="/help/sites-authoring/projects.md">Proyectos y Tareas</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Bandeja de entrada de workflow<br /> </td> 
@@ -612,7 +615,7 @@ Esta es una lista de las distintas herramientas que tiene la IU clásica y el es
   </tr>
   <tr>
    <td>Configuración de plantilla de flujo de trabajo a página (<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>Falta<br /> </td> 
    <td>Utilice la IU clásica.</td> 
   </tr>
   <tr>
@@ -637,7 +640,7 @@ Esta es una lista de las distintas herramientas que tiene la IU clásica y el es
   </tr>
   <tr>
    <td>Interfaz de usuario, grupos y permisos<br /> </td> 
-   <td>Finalizado principalmente<br /> </td> 
+   <td>Principalmente completado<br /> </td> 
    <td>Para editar permisos avanzados, utilice la IU clásica.<br /> </td> 
   </tr>
   <tr>
@@ -648,11 +651,11 @@ Esta es una lista de las distintas herramientas que tiene la IU clásica y el es
   <tr>
    <td>Comprobador de vínculos externos (<code>/etc/linkchecker.html</code>)</td> 
    <td>Falta</td> 
-   <td>Utilice la IU clásica.<br /> </td> 
+   <td>Usar IU clásica.<br /> </td> 
   </tr>
   <tr>
    <td>Editor masivo (<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>Falta<br /> </td> 
    <td>Utilice la IU clásica.</td> 
   </tr>
  </tbody>

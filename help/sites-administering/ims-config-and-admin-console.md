@@ -26,7 +26,7 @@ ht-degree: 18%
 
 ## Introducción {#introduction}
 
-AEM 6.4.3.0 incorpora compatibilidad con Admin Console para instancias de AEM y autenticación basada en Adobe IMS (Identity Management System) para clientes de **AEM Managed Services** .
+AEM 6.4.3.0 incorpora compatibilidad con Admin Console para instancias de AEM y autenticación basada en Adobe IMS (Identity Management System) para clientes **AEM Managed Services**.
 
 AEM integración con el Admin Console permitirá a AEM clientes de Managed Services administrar todos los usuarios Experience Cloud en una sola consola. Los usuarios y grupos se pueden asignar a perfiles de producto asociados con instancias de AEM, lo que les permite iniciar sesión en una instancia específica.
 
@@ -48,7 +48,7 @@ El flujo de inicio de sesión del usuario se muestra a continuación; el usuario
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## How To Set Up {#how-to-set-up}
+## Cómo configurar {#how-to-set-up}
 
 ### Incorporación de organizaciones a Admin Console {#onboarding-organizations-to-admin-console}
 
@@ -74,7 +74,7 @@ Una vez que un cliente existe como organización de IMS y AMS se ha realizado co
 >
 >Para obtener más información sobre los conceptos básicos de Identity Management de Adobe, incluida la configuración de IDP, consulte el artículo [esta página.](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html)
 >
->Para obtener más información sobre la Administración de empresas y el Admin Console, consulte el artículo [esta página](https://helpx.adobe.com/es/enterprise/managing/user-guide.html).
+>Para obtener más información sobre Enterprise Administration y Admin Console, consulte el artículo [esta página](https://helpx.adobe.com/es/enterprise/managing/user-guide.html).
 
 ### Incorporación de usuarios al Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -92,7 +92,7 @@ Los usuarios también se pueden crear manualmente si el cliente ya está utiliza
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### File Upload in the Admin Console UI {#file-upload-in-the-admin-console-ui}
+#### Carga de archivos en la interfaz de usuario del Admin Console {#file-upload-in-the-admin-console-ui}
 
 Para facilitar la gestión de la creación de usuarios, se puede cargar un archivo CSV para agregar usuarios de forma masiva:
 
@@ -124,15 +124,15 @@ Puede encontrar más información sobre las nuevas funciones del grupo aquí:
 
 >[!NOTE]
 >
->Para obtener más información acerca de la Herramienta de sincronización de usuarios, consulte la página [de](https://adobe-apiplatform.github.io/user-sync.py/es/)documentación.
+>Para obtener más información acerca de la Herramienta de sincronización de usuarios, consulte la [página de documentación](https://adobe-apiplatform.github.io/user-sync.py/es/).
 >
 >
->The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>La herramienta de sincronización de usuarios debe registrarse como un cliente Adobe I/O UMAPI mediante el procedimiento descrito [aquí](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
+>La documentación de la consola de Adobe I/O se puede encontrar [aquí](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->The User Management API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>La API de administración de usuarios que utiliza la Herramienta de sincronización de usuarios se cubre en esta [ubicación](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Cuando el administrador de productos del cliente inicia sesión en el Admin Cons
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In this example, the org *AEM-MS-Onboard* has 32 instances spanning different topologies and environments like Stage, Prod, etc.
+En este ejemplo, la organización *AEM-MS-Onboard* tiene 32 instancias que abarcan diferentes topologías y entornos como Stage, Prod, etc.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -162,7 +162,7 @@ Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesi
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### Inicio de sesión en AEM {#logging-into-aem}
+### Iniciando sesión en AEM {#logging-into-aem}
 
 #### Inicio de sesión de administrador local {#local-admin-login}
 
@@ -172,7 +172,7 @@ AEM seguir admitiendo inicios de sesión locales para los usuarios administrador
 
 #### Inicio de sesión basado en IMS {#ims-based-login}
 
-Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. The user will first click on the **Sign in with Adobe** button as shown below:
+Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. El usuario primero hará clic en el botón **Iniciar sesión con Adobe** como se muestra a continuación:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -204,7 +204,7 @@ Los controles de acceso y permisos se seguirán administrando en AEM, esto se pu
 
 En el ejemplo siguiente, se añaden grupos sincronizados al grupo local *Dam_Users* como ejemplo.
 
-Aquí también se ha asignado un usuario a algunos grupos del Admin Console. (Tenga en cuenta que los usuarios y grupos pueden sincronizarse desde LDAP mediante la herramienta de sincronización de usuarios o crearse localmente, consulte la sección Usuarios **incorporados al Admin Console** anterior).
+Aquí también se ha asignado un usuario a algunos grupos del Admin Console. (Tenga en cuenta que los usuarios y grupos pueden sincronizarse desde LDAP mediante la herramienta de sincronización de usuarios o crearse localmente, consulte la sección **Usuarios que se incorporan al Admin Console** anterior).
 
 &amp;ast;Tenga en cuenta que los grupos de usuarios solo se sincronizan cuando inician sesión en la instancia, para los clientes que tienen un gran número de usuarios y grupos, AMS puede ejecutar una utilidad de sincronización de grupos para recuperar previamente grupos para la administración de controles de acceso y permisos que se ha descrito anteriormente.
 

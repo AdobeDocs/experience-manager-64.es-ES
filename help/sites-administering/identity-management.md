@@ -22,18 +22,18 @@ ht-degree: 7%
 
 Los visitantes individuales del sitio web solo se pueden identificar cuando se les permite iniciar sesión. Existen varias razones por las que puede que desee proporcionar una capacidad de inicio de sesión:
 
-* [AEM](/help/communities/overview.md)ComunidadesLos visitantes del sitio deben iniciar sesión para publicar contenido en la comunidad.
+* [AEM ](/help/communities/overview.md)ComunidadesLos visitantes del sitio deben iniciar sesión para publicar contenido en la comunidad.
 * [Grupos de usuarios cerrados](/help/sites-administering/cug.md)
 
    Es posible que tenga que limitar el acceso a su sitio web (o secciones de éste) a visitantes específicos.
 
-* [Personalización](/help/sites-administering/personalization.md) que permite a los visitantes configurar determinados aspectos de la forma en que acceden al sitio web.
+* [](/help/sites-administering/personalization.md) PersonalizaciónPermitir que los visitantes configuren determinados aspectos de cómo acceden al sitio web.
 
-La funcionalidad de inicio y cierre de sesión la proporciona una [cuenta con un **Perfil **](#profiles-and-user-accounts), que contiene información adicional sobre el visitante registrado (usuario). Los procesos reales de registro y autorización pueden diferir:
+La funcionalidad de inicio y cierre de sesión la proporciona una cuenta [con un **Perfil**](#profiles-and-user-accounts), que contiene información adicional sobre el visitante registrado (usuario). Los procesos reales de registro y autorización pueden diferir:
 
 * Registro propio del sitio web
 
-   Se puede configurar un sitio [de](/help/communities/sites-console.md) comunidad para permitir que los visitantes se automatriculen o inicien sesión con sus cuentas de Facebook o Twitter.
+   Se puede configurar un [sitio de la comunidad](/help/communities/sites-console.md) para permitir que los visitantes se automatriculen o inicien sesión con sus cuentas de Facebook o Twitter.
 
 * Solicitud de registro en el sitio web
 
@@ -52,7 +52,7 @@ Se puede configurar o desarrollar funcionalidad adicional:
 
 >[!NOTE]
 >
->La información especificada en el perfil también se puede utilizar para proporcionar al usuario contenido de destino mediante [segmentos](/help/sites-administering/campaign-segmentation.md) y [Campañas](/help/sites-authoring/personalization.md).
+>La información especificada en el perfil también se puede utilizar para proporcionar al usuario contenido de destino mediante [Segmentos](/help/sites-administering/campaign-segmentation.md) y [Campañas](/help/sites-authoring/personalization.md).
 
 ## Registro de Forms {#registration-forms}
 
@@ -67,15 +67,15 @@ Al enviar la solicitud, se abre la página de perfil donde el usuario puede prop
 
 ![profilepage](assets/profilepage.png)
 
-La nueva cuenta también está visible en la consola [Usuarios](/help/sites-administering/security.md).
+La nueva cuenta también está visible en la [consola de usuarios](/help/sites-administering/security.md).
 
 ## Inicio de sesión {#login}
 
 El componente de inicio de sesión puede utilizarse para recopilar la información de inicio de sesión y, a continuación, activar el proceso de inicio de sesión.
 
-Esto proporciona al visitante los campos estándar **Nombre de usuario** y **Contraseña**, con un botón de **inicio de sesión** para activar el proceso de inicio de sesión cuando se introducen las credenciales.
+Esto proporciona al visitante los campos estándar **Nombre de usuario** y **Contraseña**, con un botón **Iniciar sesión** para activar el proceso de inicio de sesión cuando se ingresan las credenciales.
 
-Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta nueva mediante la opción **Iniciar sesión** en la barra de herramientas de Geometrixx, que utiliza la página:
+Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta nueva mediante la opción **Iniciar sesión** de la barra de herramientas de Geometrixx, que utiliza la página:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -83,7 +83,7 @@ Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta nueva median
 
 ## Cerrar sesión {#logging-out}
 
-Como existe un mecanismo de inicio de sesión, también se requiere un mecanismo de cierre de sesión. Esta opción está disponible como opción de **Cerrar sesión** en Geometrixx.
+Como existe un mecanismo de inicio de sesión, también se requiere un mecanismo de cierre de sesión. Esta opción está disponible como la opción **Cerrar sesión** en Geometrixx.
 
 ## Visualización y actualización de un Perfil {#viewing-and-updating-a-profile}
 
@@ -93,10 +93,10 @@ Según el formulario de registro, el visitante puede tener información registra
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Para ver los detalles de su perfil, haga clic en **Mi Perfil** en la esquina superior derecha de cualquier página; por ejemplo, con la `admin` cuenta:\
+Para ver los detalles de su perfil, haga clic en **Mi Perfil** en la esquina superior derecha de cualquier página; por ejemplo, con la cuenta `admin`:\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Puede vista de otro perfil mediante el contexto [de](/help/sites-administering/client-context.md) cliente (en el entorno de creación y con suficientes privilegios):
+Puede vista de otro perfil mediante el [contexto de cliente](/help/sites-administering/client-context.md) (en el entorno de creación y con privilegios suficientes):
 
 1. Abra una página; por ejemplo, la página de Geometrixx:
 
@@ -104,13 +104,13 @@ Puede vista de otro perfil mediante el contexto [de](/help/sites-administering/c
 
 1. Haga clic en **Mi Perfil** en la esquina superior derecha. Verá el perfil de su cuenta corriente; por ejemplo, el administrador.
 1. Pulse **control-alt-C** para abrir el contexto de cliente.
-1. En la esquina superior izquierda del contexto de cliente, haga clic en el botón **Cargar un Perfil** .
+1. En la esquina superior izquierda del contexto de cliente, haga clic en el botón **Cargar un Perfil**.
 
    ![](do-not-localize/loadprofile.png)
 
 1. Seleccione otro perfil en la lista desplegable de la ventana de diálogo; por ejemplo, **Alison Parker**.
 1. Haga clic en **Aceptar**.
-1. Haga clic de nuevo en **Mi Perfil**. El formulario se actualizará con los detalles de Alison.
+1. Haga clic nuevamente en **Mi Perfil**. El formulario se actualizará con los detalles de Alison.
 
    ![profilealison](assets/profilealison.png)
 
@@ -122,13 +122,13 @@ Puede agregar campos a la definición de perfil. Por ejemplo, para agregar un ca
 
 1. Desde la consola Sitios web, vaya a Sitio de Geometrixx Outdoors > Inglés > Usuario > Mi Perfil.
 
-1. Haga clic con el Doble en la página **Mi Perfil** para abrirla y editarla.
+1. Haga clic con el doble en la página **Mi Perfil** para abrirla y editarla.
 
-1. En la ficha **Componentes** de la barra de tareas, expanda la sección **Formulario** .
+1. En la ficha **Componentes** de la barra de tareas, expanda la sección **Formulario**.
 
-1. Arrastre una Lista **** desplegable de la barra de tareas al formulario, justo debajo del campo **Acerca de mí** .
+1. Arrastre una **Lista desplegable** desde la barra de tareas al formulario, justo debajo del campo **Acerca de mí**.
 
-1. Haga clic con el botón Doble en el componente de Lista **** desplegable para abrir el cuadro de diálogo de configuración e introducir:
+1. Haga clic con el botón doble en el componente **Lista desplegable** para abrir el cuadro de diálogo y especificar:
 
    * **Nombre de elemento** - `favoriteColor`
    * **Título** - `Favorite Color`
@@ -136,19 +136,19 @@ Puede agregar campos a la definición de perfil. Por ejemplo, para agregar un ca
 
    Haga clic en **Aceptar** para guardar.
 
-1. Cierre la página y vuelva a la consola **Sitios** web y active la página Mi Perfil.
+1. Cierre la página y vuelva a la consola **Sitios web** y active la página Mi Perfil.
 
    La próxima vez que vista un perfil puede seleccionar un color favorito:
 
    ![aparkerfavcolor](assets/aparkerfavcolour.png)
 
-   El campo se guardará en la sección de **perfiles** de la cuenta de usuario correspondiente:
+   El campo se guardará en la sección **perfil** de la cuenta de usuario pertinente:
 
    ![aparkercrxdelite](assets/aparkercrxdelite.png)
 
-## Estados de Perfil {#profile-states}
+## Estados de perfil {#profile-states}
 
-Hay varios casos de uso que requieren saber si un usuario (o más bien su perfil) está en un estado ** específico o no.
+Hay varios casos de uso que requieren saber si un usuario (o más bien su perfil) está en un *estado específico* o no.
 
 Esto implica definir una propiedad adecuada en el perfil del usuario de forma que:
 
@@ -171,7 +171,7 @@ Se pueden definir varios estados; por ejemplo, en Geometrixx, se incluyen:
 * suscripción (o cancelación de la suscripción) a notificaciones en newsletters o hilos de comentarios
 * adición y eliminación de una conexión con un amigo
 
-### Proveedores estatales {#state-providers}
+### Proveedores de estado {#state-providers}
 
 Un proveedor de estado administra el estado actual de la propiedad en cuestión, junto con las transiciones entre los dos posibles estados.
 
@@ -188,13 +188,13 @@ Se necesita un flujo de trabajo para implementar las acciones relacionadas con l
 
 ## Perfiles y cuentas de usuario {#profiles-and-user-accounts}
 
-Los Perfiles se almacenan en el repositorio de contenido como parte de la cuenta [de](/help/sites-administering/user-group-ac-admin.md)usuario.
+Los perfiles se almacenan en el repositorio de contenido como parte de la [cuenta de usuario](/help/sites-administering/user-group-ac-admin.md).
 
 El perfil se encuentra en `/home/users/geometrixx`:
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
-En una instalación estándar (autor o publicación), todos tienen acceso de lectura a toda la información de perfil de todos los usuarios. todos son un grupo *integrado que contiene automáticamente todos los usuarios y grupos existentes. La lista de los miembros no se puede editar*&quot;.
+En una instalación estándar (autor o publicación), todos tienen acceso de lectura a toda la información de perfil de todos los usuarios. todos son un grupo &quot;*integrado que contiene automáticamente todos los usuarios y grupos existentes. La lista de miembros no se puede editar*&quot;.
 
 Estos derechos de acceso están definidos por la siguiente ACL comodín:
 
@@ -207,7 +207,7 @@ Esto permite:
 
 Si dicho acceso no es apropiado para su instalación, puede cambiar esta configuración predeterminada.
 
-Esto se puede realizar mediante la ficha **[Control de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
+Esto se puede hacer con la ficha **[Control de acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
 
 ![aclmanager](assets/aclmanager.png)
 

@@ -53,11 +53,11 @@ Cuando se haya completado la carga, los archivos 3D se convierten y se aplica un
 
 La conversión y el procesamiento de archivos 3D suelen utilizar gran cantidad de recursos de CPU y memoria en un servidor. También tardan una importante cantidad de tiempo. Los tiempos de procesamiento a menudo varían significativamente en función del tamaño del modelo y las funciones del servidor. Por ejemplo, un modelo pequeño típico con menos que 100 000 caras normalmente está listo para su visualización en menos de un minuto. Se procesan por completo en 2 a 3 minutos. En cambio, el procesamiento de un modelo de gran tamaño con más de un millón de caras puede tardar diez minutos en completarse.
 
-Los trabajos de conversión, proceso y procesamiento se ponen en cola según las necesidades para evitar que se ralentice en exceso el servidor. The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. Este estado indica que el otros trabajos de procesamiento o proceso deben finalizar antes de que se procese el recurso actual. 
+Los trabajos de conversión, proceso y procesamiento se ponen en cola según las necesidades para evitar que se ralentice en exceso el servidor. Mensaje &quot;Esperando procesamiento...&quot; a veces se muestra en la **[!UICONTROL Vista de tarjeta]** en el momento en que cargó los recursos. Este estado indica que el otros trabajos de procesamiento o proceso deben finalizar antes de que se procese el recurso actual. 
 
 ## Supervisión del estado de procesamiento de los archivos 3D cargados {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. Cada modelo 3D cargado suele pasar por las siguientes 4 a 6 etapas de procesamiento ordenado:
+Solo en **[!UICONTROL Vista de tarjetas]**, el estado y la progresión del procesamiento se muestran como una pancarta de progreso en la tarjeta del recurso. Cada modelo 3D cargado suele pasar por las siguientes 4 a 6 etapas de procesamiento ordenado:
 
 <table> 
  <tbody> 
@@ -101,5 +101,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. No es necesario esperar a que se completen todas las etapas de procesamiento.
+>Puede realizar la vista de un recurso 3D en **[!UICONTROL Vista de detalles]** o procesarlo una vez finalizada la etapa de creación de previsualizaciones. No es necesario esperar a que se completen todas las etapas de procesamiento.
 

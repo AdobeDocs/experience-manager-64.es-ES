@@ -23,7 +23,7 @@ ht-degree: 93%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
+* El título aparece en el carril [References](/help/sites-authoring/author-environment-tools.md#references), desde donde los autores pueden acceder a ellos para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
@@ -85,7 +85,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debería tener sentido para los autores.
    * **con contenido existente**: el contenido original se utilizará para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
-   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
+   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esta opción logra esto haciendo que el lanzamiento sea una [Live Copy](/help/sites-administering/msm.md).
 
       De forma predeterminada, está opción está seleccionada.
 
@@ -97,8 +97,8 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    Si vuelve a la consola (con **Hecho**), puede ver el lanzamiento (y acceder a él) desde:
 
-   * La [****consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console)
-   * la sección [**Referencias **de la consola** Sitios **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * La [**** consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console)
+   * la sección [**Referencias** de la consola **Sitios**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
@@ -135,7 +135,7 @@ Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofre
 
 #### Creación de un lanzamiento anidado: consola Lanzamientos {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Crear un inicio anidado desde la consola **Lanzamientos** es básicamente lo mismo que crear cualquier otra forma de inicio, con la excepción de que necesita navegar a la rama `/content/launches` de lanzamientos:
 
 1. En la consola **Lanzamientos**, seleccione **Crear**.
 1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el filtro. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:

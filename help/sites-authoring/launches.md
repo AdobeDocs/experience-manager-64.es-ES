@@ -18,7 +18,7 @@ ht-degree: 97%
 ---
 
 
-# Información general sobre lanzamientos{#launches}
+# Información general de inicios{#launches}
 
 Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. 
 
@@ -39,7 +39,7 @@ También se puede realizar lo siguiente:
 En esta sección se describe cómo crear, editar y promocionar (y, si fuera necesario[ eliminar](/help/sites-authoring/launches-creating.md#deleting-a-launch)) páginas de lanzamiento dentro de la consola Sitios o la [consola Lanzamientos](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-authoring/launches-creating.md)
-* [Edición de lanzamientos](/help/sites-authoring/launches-editing.md) 
+* [Edición de lanzamientos](/help/sites-authoring/launches-editing.md)
 * [Promoción de lanzamientos](/help/sites-authoring/launches-promoting.md) 
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
@@ -101,7 +101,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creación y edición de inicios requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 

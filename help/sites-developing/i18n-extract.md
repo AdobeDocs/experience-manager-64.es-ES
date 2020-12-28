@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesi
 * Archivos de origen Javascript
 * Representaciones XML de recursos SVN (nodos JCR)
 
-## Configuración de la Extracción de cadenas {#configuring-string-extraction}
+## Configuración de la Extracción de cadena {#configuring-string-extraction}
 
 Configure cómo la herramienta xgettext-maven-plugin extrae cadenas para el proyecto.
 
@@ -100,7 +100,7 @@ Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y
  </tbody> 
 </table>
 
-### Extracción de cadenas  {#extracting-the-strings}
+### Extracción de cadenas {#extracting-the-strings}
 
 sin POM:
 
@@ -137,7 +137,7 @@ mvn xgettext:extract
 ### Archivos de salida {#output-files}
 
 * `raw.xliff`:: cadenas extraídas
-* `warn.log`:: advertencias (si las hay), si `CQ.I18n.getMessage()` la API se utiliza incorrectamente. Siempre necesitan una corrección y luego una repetición.
+* `warn.log`:: advertencias (si las hay), si  `CQ.I18n.getMessage()` la API se utiliza incorrectamente. Siempre necesitan una corrección y luego una repetición.
 
 * `parserwarn.log`:: advertencias del analizador (si las hay), por ejemplo problemas con el analizador de js
 * `potentials.xliff`:: Los candidatos &quot;potenciales&quot; que no se extraen, pero que pueden ser cadenas legibles por el hombre que necesitan traducción (se puede ignorar, y aun así produce una gran cantidad de falsos positivos)

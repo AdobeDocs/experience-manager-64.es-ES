@@ -1,6 +1,6 @@
 ---
-title: Promocionar lanzamientos
-seo-title: Promocionar lanzamientos
+title: Promoción de lanzamientos
+seo-title: Promoción de lanzamientos
 description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
 seo-description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
 uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
@@ -19,7 +19,7 @@ ht-degree: 95%
 ---
 
 
-# Promocionar lanzamientos{#promoting-launches}
+# Promoción de lanzamientos{#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles para promocionar una página de lanzamiento:
 
@@ -34,7 +34,7 @@ Para promocionar páginas, realice los pasos siguientes al editar la página de 
 1. En la ficha **Página** de la barra de tareas, haga clic en **Promocionar lanzamiento**.
 1. Especifique las páginas que desee promocionar:
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar cambios de página en la versión de producción**.
    * Si también desea promocionar las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
    * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo en la versión de producción**.
 

@@ -201,13 +201,13 @@ Desde la bandeja de entrada, puede crear tareas:
 
    * **Avanzado**
 
-      * **Nombre**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **Nombre**:: se utilizará para formar la dirección URL; si está en blanco, se basará en el **Título**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Seleccione **Enviar**.
 
-## Creación de un proyecto    {#creating-a-project}
+## Creación de un proyecto     {#creating-a-project}
 
 Para determinadas tareas, puede crear un [proyecto](/help/sites-authoring/projects.md) basado en dicha tarea:
 
@@ -239,7 +239,7 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-authoring/projec
 
 1. Seleccione **Crear** para confirmar la acción.
 
-## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
+## Filtrado de elementos en la bandeja de entrada AEM     {#filtering-items-in-the-aem-inbox}
 
 Puede filtrar los elementos enumerados:
 

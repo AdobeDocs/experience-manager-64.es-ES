@@ -86,7 +86,7 @@ Para insertar un nuevo componente:
 
 1. Inserte el componente que desee en la página. A continuación, haga doble clic en el párrafo, y se abrirá una ventana que permite configurar el párrafo y agregar contenido.
 
-### Insertar un componente utilizando el buscador de contenido {#inserting-a-component-using-the-content-finder}
+### Insertar un componente utilizando el buscador de contenido  {#inserting-a-component-using-the-content-finder}
 
 También puede agregar un componente nuevo a la página arrastrando un activo desde el [buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). De este modo, se crea automáticamente un componente nuevo del tipo correspondiente que contiene el activo.
 
@@ -105,7 +105,7 @@ Esta opción es válida para los siguientes tipos de activo (algunos dependen de
 
 Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
-1. Asegúrese de que la página se encuentra en el modo de [**edición **.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Abra el [buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Arrastre el activo correspondiente hasta la posición final. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará este.
 
@@ -113,7 +113,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Si es necesario, [edite](#editmovecopypastedelete) el componente.
 
-## Editar un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
+## Editar un componente (contenido y propiedades)  {#editing-a-component-content-and-properties}
 
 Para editar un párrafo existente, haga una de las siguientes acciones:
 
@@ -203,7 +203,7 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 [Las anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permiten que el resto de los autores hagan comentarios sobre el contenido. Esta opción acostumbra a utilizarse para revisiones y validaciones.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas    {#previewing-pages}
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para previsualizar las páginas:
 
@@ -223,7 +223,7 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
 ## Buscar y reemplazar {#find-replace}
 
-Para ediciones a mayor escala de la misma frase, la opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
+Para ediciones a mayor escala de la misma frase, la opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
 
 ## Bloquear una página {#locking-a-page}
 

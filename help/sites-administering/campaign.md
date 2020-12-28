@@ -36,5 +36,5 @@ Esta documentación describe cómo integrar AEM con Adobe Campaign. Dependiendo 
 
 >[!NOTE]
 >
->Para revisar un artículo relacionado de la comunidad AEM, consulte: [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear newsletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
+>Para revisar un artículo relacionado de la comunidad AEM, consulte: [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear Newletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
 

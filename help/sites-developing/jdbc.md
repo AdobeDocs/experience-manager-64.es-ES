@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Acceda a una base de datos SQL externa para que las aplicaciones de CQ puedan interactuar con los datos:
 
-1. [Cree o obtenga un paquete OSGi que exporte el paquete](#bundling-the-jdbc-database-driver)de controladores JDBC.
-1. [Configure un proveedor](#configuring-the-jdbc-connection-pool-service)de grupos de fuentes de datos JDBC.
+1. [Cree o obtenga un paquete OSGi que exporte el paquete](#bundling-the-jdbc-database-driver) de controladores JDBC.
+1. [Configure un proveedor](#configuring-the-jdbc-connection-pool-service) de grupos de fuentes de datos JDBC.
 1. [Obtenga un objeto de origen de datos y cree la conexión en el código](#connecting-to-the-database).
 
 ## Compilación del controlador de base de datos JDBC {#bundling-the-jdbc-database-driver}
 
 Algunos proveedores de bases de datos proporcionan controladores JDBC en un paquete OSGi, por ejemplo [MySQL](https://www.mysql.com/downloads/connector/j/). Si el controlador JDBC de la base de datos no está disponible como paquete OSGi, obtenga el JAR del controlador y envuélvalo en un paquete OSGi. El paquete debe exportar los paquetes necesarios para interactuar con el servidor de la base de datos. El paquete también debe importar los paquetes a los que hace referencia.
 
-En el siguiente ejemplo se utiliza el complemento [Paquete para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para envolver el controlador HSQLDB en un paquete OSGi. El POM ordena al complemento que incruste el archivo hsqldb.jar que se identifica como una dependencia. Se exportan todos los paquetes org.hsqldb.
+El ejemplo siguiente utiliza el complemento [Bundle para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para envolver el controlador HSQLDB en un paquete OSGi. El POM ordena al complemento que incruste el archivo hsqldb.jar que se identifica como una dependencia. Se exportan todos los paquetes org.hsqldb.
 
 El complemento determina automáticamente qué paquetes se importarán y los lista en el archivo MANIFEST.MF del paquete. Si alguno de los paquetes no está disponible en el servidor de CQ, el paquete no se inicio tras la instalación. Dos soluciones posibles son las siguientes:
 
@@ -95,11 +95,11 @@ Los siguientes vínculos abren las páginas de descarga de algunos productos de 
 
 Añada una configuración para el servicio Pool de Conexiones JDBC que utilice el controlador JDBC para crear objetos de origen de datos. El código de la aplicación utiliza este servicio para obtener el objeto y conectarse a la base de datos.
 
-JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) es un servicio de fábrica. Si necesita conexiones que utilicen propiedades diferentes, por ejemplo, acceso de solo lectura o de lectura y escritura, cree varias configuraciones.
+El grupo de conexiones JDBC ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) es un servicio de fábrica. Si necesita conexiones que utilicen propiedades diferentes, por ejemplo, acceso de solo lectura o de lectura y escritura, cree varias configuraciones.
 
-When working with CQ there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+Al trabajar con CQ existen varios métodos para administrar la configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
 
-Las siguientes propiedades están disponibles para configurar un servicio de conexión agrupada. Los nombres de las propiedades se muestran tal como aparecen en la consola web. El nombre correspondiente de un `sling:OsgiConfig` nodo aparece entre paréntesis. Se muestran valores de ejemplo para un servidor HSQLDB y una base de datos con un alias de `mydb`:
+Las siguientes propiedades están disponibles para configurar un servicio de conexión agrupada. Los nombres de las propiedades se muestran tal como aparecen en la consola web. El nombre correspondiente para un nodo `sling:OsgiConfig` aparece entre paréntesis. Se muestran valores de ejemplo para un servidor HSQLDB y una base de datos con un alias de `mydb`:
 
 * Clase de controlador JDBC ( `jdbc.driver.class`): La clase Java que se va a utilizar que implementa la interfaz java.sql.Driver, por ejemplo `org.hsqldb.jdbc.JDBCDriver`. El tipo de datos es `String`.
 
@@ -109,10 +109,10 @@ Las siguientes propiedades están disponibles para configurar un servicio de con
 
 * Contraseña ( `jdbc.password`): La contraseña que se usará para la autenticación del usuario. El tipo de datos es `String`.
 
-* Consulta de validación ( `jdbc.validation.query`): Instrucción SQL que se va a utilizar para comprobar que la conexión se ha realizado correctamente, por ejemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. El tipo de datos es `String`.
+* Consulta de validación ( `jdbc.validation.query`): La instrucción SQL que se va a utilizar para comprobar que la conexión se ha realizado correctamente, por ejemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. El tipo de datos es `String`.
 
 * Solo lectura de forma predeterminada (default.readonly): Seleccione esta opción cuando desee que la conexión proporcione acceso de solo lectura. El tipo de datos es `Boolean`.
-* Autoconfirmar De Forma Predeterminada ( `default.autocommit`): Seleccione esta opción para crear transacciones independientes para cada comando SQL que se envíe a la base de datos y cada transacción se confirme automáticamente. No seleccione esta opción cuando confirme transacciones explícitamente en el código. El tipo de datos es `Boolean`.
+* Autoconfirmar de forma predeterminada ( `default.autocommit`): Seleccione esta opción para crear transacciones independientes para cada comando SQL que se envíe a la base de datos y cada transacción se confirme automáticamente. No seleccione esta opción cuando confirme transacciones explícitamente en el código. El tipo de datos es `Boolean`.
 
 * Tamaño del grupo ( `pool.size`): Número de conexiones simultáneas que se pondrán a disposición de la base de datos. El tipo de datos es `Long`.
 
@@ -122,13 +122,13 @@ Las siguientes propiedades están disponibles para configurar un servicio de con
 
 * Propiedades de servicio adicionales ( `datasource.svc.properties`): Conjunto de pares nombre/valor que desea anexar a la dirección URL de conexión. El tipo de datos es `String[]`.
 
-El servicio JDBC Connections Pool es una fábrica. Por lo tanto, si utiliza un `sling:OsgiConfig` nodo para configurar el servicio de conexión, el nombre del nodo debe incluir el PID de servicio de fábrica seguido de *`-alias`*. El alias que utilice debe ser único para todos los nodos de configuración de ese PID. Un nombre de nodo de ejemplo es `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+El servicio JDBC Connections Pool es una fábrica. Por lo tanto, si utiliza un nodo `sling:OsgiConfig` para configurar el servicio de conexión, el nombre del nodo debe incluir el PID de servicio de fábrica seguido de *`-alias`*. El alias que utilice debe ser único para todos los nodos de configuración de ese PID. Un nombre de nodo de ejemplo es `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![climage_1-7](assets/chlimage_1-7.png)
 
 ### Conexión a la base de datos {#connecting-to-the-database}
 
-En el código Java, utilice el servicio DataSourcePool para obtener un `javax.sql.DataSource` objeto para la configuración que ha creado. El servicio DataSourcePool proporciona el `getDataSource` método que devuelve un `DataSource` objeto para un nombre de origen de datos determinado. Como argumento del método, utilice el valor de la propiedad Nombre del origen de datos (o `datasource.name`) que especificó para la configuración del grupo de conexiones JDBC.
+En el código Java, utilice el servicio DataSourcePool para obtener un objeto `javax.sql.DataSource` para la configuración que ha creado. El servicio DataSourcePool proporciona el método `getDataSource` que devuelve un objeto `DataSource` para un nombre de fuente de datos determinado. Como argumento del método, utilice el valor de la propiedad Nombre del origen de datos (o `datasource.name`) que especificó para la configuración del grupo de conexiones JDBC.
 
 El siguiente ejemplo de código JSP obtiene una instancia del origen de datos hsqldbds, ejecuta una consulta SQL simple y muestra el número de resultados que se devuelven.
 
@@ -175,5 +175,5 @@ El siguiente ejemplo de código JSP obtiene una instancia del origen de datos hs
 
 >[!NOTE]
 >
->Para obtener información sobre cómo insertar un DataSourcePool en un paquete OSGi, consulte [Inyección de un servicio DataSourcePool en un paquete](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)OSGi de Adobe Experience Manager.
+>Para obtener información sobre cómo inyectar un DataSourcePool en un paquete OSGi, consulte [Inyección de un servicio DataSourcePool en un paquete OSGi de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
 

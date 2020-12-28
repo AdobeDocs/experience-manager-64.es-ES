@@ -22,9 +22,9 @@ ht-degree: 85%
 
 Entre los flujos de trabajo de proyecto disponibles de fábrica se incluye lo siguiente:
 
-* **Flujo de trabajo** de aprobación de proyectos: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
-* **Inicio** de solicitud: flujo de trabajo que solicita un inicio.
-* **Página de aterrizaje** de solicitud: este flujo de trabajo solicita una página de aterrizaje.
+* **Flujo de trabajo**  de aprobación de proyectos: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Inicio**  de solicitud: flujo de trabajo que solicita un inicio.
+* **Página de aterrizaje**  de solicitudes: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Sesión fotográfica del producto y sesión fotográfica del producto (comercio)**: se asignan recursos a productos.
 * **Crear y traducir copia DAM y Crear copia de idioma DAM**: crea elementos binarios, metadatos y etiquetas traducidos para los recursos y las carpetas.
@@ -45,7 +45,7 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Consulte [Creación de copias de idioma para recursos](/help/sites-administering/tc-manage.md). 
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Projects. Consulte [Creación de copias de idioma para recursos](/help/sites-administering/tc-manage.md). 
 
 Las etapas para iniciar y completar flujos de trabajo no son las mismas, independientemente del flujo de trabajo que se elija. Solo las etapas cambian.
 
@@ -76,11 +76,11 @@ Este flujo de trabajo permite solicitar un manuscrito de un usuario y, a continu
 
 Los flujos de trabajo Sesión fotográfica del producto (comercio y sin comercio) se describen detalladamente en los [Proyecto creativo](/help/sites-authoring/managing-product-information.md).
 
-## Flujo de trabajo Aprobación del proyecto {#project-approval-workflow}
+## Flujo de trabajo Aprobación del proyecto  {#project-approval-workflow}
 
 En el flujo de trabajo Aprobación del proyecto, se asigna contenido a un usuario, el contenido se revisa y luego se aprueba.
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. En el proyecto simple, seleccione el inicio de sesión ****+** en el mosaico **Flujos de trabajo** y seleccione **Flujo de trabajo de aprobación del proyecto**.
 1. Introduzca un título y seleccione a quién asignarlo de la lista del equipo. Si fuera necesario, introduzca una descripción, ruta de contenido, prioridad de las tareas y una fecha de vencimiento.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -98,7 +98,7 @@ Este flujo de trabajo permite solicitar un lanzamiento.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Haga clic en **Crear**. Se inicia el flujo de trabajo. The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. Haga clic en **Crear**. Se inicia el flujo de trabajo. El flujo de trabajo aparece en la lista **Flujos de trabajo** (haga clic en elipses **...** en el mosaico **Flujos de trabajo** para acceder a esta lista).
 
 ## Flujo de trabajo Solicitar página de aterrizaje {#request-landing-page-workflow}
 
@@ -111,7 +111,7 @@ Este flujo de trabajo permite solicitar una página de aterrizaje.
 
 1. Haga clic en **Crear**. Se inicia el flujo de trabajo. La tarea aparece en el mosaico **Tareas**.
 
-## Flujo de trabajo Solicitar correo electrónico {#request-email-workflow}
+## Flujo de trabajo Solicitar correo electrónico  {#request-email-workflow}
 
 Este flujo de trabajo permite solicitar un correo electrónico. Es el mismo flujo de trabajo que aparece en el mosaico **Correo electrónico**.
 

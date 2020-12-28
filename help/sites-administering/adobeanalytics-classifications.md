@@ -18,14 +18,14 @@ ht-degree: 6%
 ---
 
 
-# Adobe Classifications{#adobe-classifications}
+# Clasificaciones de Adobes{#adobe-classifications}
 
-Las clasificaciones de Adobes exportan datos de clasificaciones a [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manera programada. El exportador es una implementación de **com.adobe.cq.scheduled.exporter.Exporter**.
+Las clasificaciones de Adobe exportan datos de clasificaciones a [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de manera programada. El exportador es una implementación de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Para configurar esto:
 
-1. Navegue por **Herramientas, servicios de nube** hasta la sección **Adobe Analytics** .
-1. Añada una nueva configuración. Verá que la plantilla Configuración de clasificaciones **de** Adobe Analytics se muestra debajo de la configuración de **Adobe Analytics Framework** . Proporcione un **Título** y un **Nombre** según sea necesario:
+1. Navegue por **Herramientas, servicios de nube** a la sección **Adobe Analytics**.
+1. Añada una nueva configuración. Verá que la plantilla de configuración **Clasificaciones de Adobe Analytics** se muestra debajo de la configuración **Adobe Analytics Framework**. Proporcione un **Título** y **Nombre** según sea necesario:
 
    ![aa-25](assets/aa-25.png)
 
@@ -48,7 +48,7 @@ Para configurar esto:
    | Fuente de datos | Vaya a la ruta del contenedor de datos. |
    | Programación de exportación | Seleccione la programación para la exportación. El valor predeterminado es cada 30 minutos. |
 
-1. Click **OK** to save your settings.
+1. Haga clic en **Aceptar** para guardar la configuración.
 
 ## Modificación del tamaño de página {#modifying-page-size}
 
@@ -62,7 +62,7 @@ Para cambiar el tamaño de la página:
 
    ![aa-26](assets/aa-26.png)
 
-1. Actualice **Exportar tamaño** de página según sea necesario y haga clic en **Guardar**.
+1. Actualice **Exportar tamaño de página** según sea necesario y haga clic en **Guardar**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -70,9 +70,9 @@ Para cambiar el tamaño de la página:
 >
 >Las clasificaciones de Adobe se conocían anteriormente como SAINT Exporter.
 
-Un exportador puede utilizar un transformador para transformar los datos de exportación a un formato específico. Para las clasificaciones de Adobe, se ha proporcionado una subinterfaz `SAINTTransformer<String[]>` que implementa la interfaz Transformador. Esta interfaz se utiliza para restringir el tipo de datos `String[]` que utiliza la API de SAINT y para tener una interfaz de marcador para buscar dichos servicios para su selección.
+Un exportador puede utilizar un transformador para transformar los datos de exportación a un formato específico. Para las clasificaciones de Adobe, se ha proporcionado una subinterfaz `SAINTTransformer<String[]>` que implementa la interfaz Transformador. Esta interfaz se utiliza para restringir el tipo de datos a `String[]`, que utiliza la API de SAINT, y para tener una interfaz de marcador para encontrar dichos servicios para la selección.
 
-En la implementación predeterminada SAINTDefaultTransformer, los recursos secundarios del origen del exportador se tratan como registros con nombres de propiedad como claves y valores de propiedad como valores. La columna **Clave** se agrega automáticamente como primera columna; su valor será el nombre del nodo. No se tienen en cuenta las propiedades con espacio de nombres (que contienen :).
+En la implementación predeterminada SAINTDefaultTransformer, los recursos secundarios del origen del exportador se tratan como registros con nombres de propiedad como claves y valores de propiedad como valores. La columna **Key** se agrega automáticamente como primera columna; su valor será el nombre del nodo. No se tienen en cuenta las propiedades con espacio de nombres (que contienen :).
 
 *Estructura de nodos:*
 
@@ -90,7 +90,7 @@ En la implementación predeterminada SAINTDefaultTransformer, los recursos secun
 
 | **Clave** | **Producto** | **Precio** | **Tamaño** | **Color** | **Color^Code** |
 |---|---|---|---|---|---|
-| 1 | Mi nombre de producto | 120.90 | M | black | 101 |
+| 1 | Mi nombre de producto | 120,90 | M | black | 101 |
 
 Las propiedades incluyen lo siguiente:
 
@@ -126,7 +126,7 @@ Las propiedades incluyen lo siguiente:
   </tr> 
   <tr> 
    <td>divisiones de comprobación</td> 
-   <td>Marca para comprobar la compatibilidad de los grupos de informes. Default is <strong>true</strong>.</td> 
+   <td>Marca para comprobar la compatibilidad de los grupos de informes. El valor predeterminado es <strong>true</strong>.</td> 
   </tr> 
   <tr> 
    <td>elimineprocesado</td> 
@@ -135,6 +135,6 @@ Las propiedades incluyen lo siguiente:
  </tbody> 
 </table>
 
-## Automatización de la exportación de clasificaciones de Adobes {#automating-adobe-classifications-export}
+## Automatización de la exportación de clasificaciones de Adobe {#automating-adobe-classifications-export}
 
 Puede crear su propio flujo de trabajo para que cualquier importación nueva inicie el flujo de trabajo a fin de crear los datos adecuados y correctamente estructurados en **/var/export/** para que se puedan exportar a las clasificaciones de Adobe.

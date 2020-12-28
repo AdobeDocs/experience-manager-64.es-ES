@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Configurar la contraseña de administración al realizar la instalación{#configure-the-admin-password-on-installation}
+# Configurar la contraseña de administración en la instalación{#configure-the-admin-password-on-installation}
 
 ## Información general {#overview}
 
@@ -30,7 +30,7 @@ Esta función agrega la posibilidad de configurar una nueva contraseña de admin
 
 >[!CAUTION]
 >
->Tenga en cuenta que la función no cubre la consola Félix, para la cual la contraseña debe cambiarse manualmente. Para obtener más información, consulte la sección [correspondiente Lista de comprobación](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)de seguridad.
+>Tenga en cuenta que la función no cubre la consola Félix, para la cual la contraseña debe cambiarse manualmente. Para obtener más información, consulte la sección [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts) correspondiente.
 
 ## ¿Cómo Lo Utilizo? {#how-do-i-use-it}
 
@@ -50,9 +50,9 @@ Al ejecutar la instancia desde la línea de comandos, se le mostrará la opción
 >
 >El mensaje para cambiar la contraseña de administrador solo aparecerá durante la instalación de una nueva instancia de AEM.
 
-## Uso del indicador -nointeractive {#using-the-nointeractive-flag}
+## Uso del indicador -nointeractivo {#using-the-nointeractive-flag}
 
-También puede especificar la contraseña de un archivo de propiedades. Esto se realiza mediante el uso del `-nointeractive` indicador combinado con la propiedad `-Dadmin.password.file` system.
+También puede especificar la contraseña de un archivo de propiedades. Esto se realiza mediante el uso del indicador `-nointeractive` combinado con la propiedad `-Dadmin.password.file` del sistema.
 
 A continuación se muestra un ejemplo:
 
@@ -60,7 +60,7 @@ A continuación se muestra un ejemplo:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-La contraseña dentro del `passwordfile.properties` archivo debe tener el formato siguiente:
+La contraseña dentro del archivo `passwordfile.properties` debe tener el formato siguiente:
 
 ```xml
 admin.password = 12345678
@@ -68,5 +68,5 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Si simplemente utiliza el `-nointeractive` parámetro sin la propiedad `-Dadmin.password.file` system, AEM utilizará la contraseña de administrador predeterminada sin pedirle que la cambie, básicamente replicando el comportamiento de versiones anteriores. Este modo no interactivo se puede utilizar para instalaciones automatizadas utilizando la línea de comandos en una secuencia de comandos de instalación.
+>Si simplemente utiliza el parámetro `-nointeractive` sin la propiedad del sistema `-Dadmin.password.file`, AEM utilizará la contraseña de administrador predeterminada sin pedirle que la cambie, básicamente replicando el comportamiento de versiones anteriores. Este modo no interactivo se puede utilizar para instalaciones automatizadas utilizando la línea de comandos en una secuencia de comandos de instalación.
 

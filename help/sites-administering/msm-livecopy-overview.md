@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Consola de información general de Live Copy{#live-copy-overview-console}
 
-La **Live Copy Overview** le permite:
+La **Información general de Live Copy** le permite:
 
 * Vista y administración de herencia en un sitio:
 
    * Vista del árbol de modelo y la estructura de Live Copy correspondiente, junto con su estado de herencia
    * Cambiar el estado de herencia; por ejemplo, suspender, reanudar
-   * Propiedades de modelo de Vista y Live Copy
+   * Propiedades de modelo de vista y Live Copy
 
 * Realizar acciones de implementación
 
@@ -37,12 +37,12 @@ Puede abrir Live Copy Overview desde:
 * [Panel lateral Referencias de una página de modelo (consola Sitios)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Propiedades de una página de modelo](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Apertura de Live Copy: Referencias para una página de modelo {#opening-live-copy-overview-references-for-a-blueprint-page}
+### Abrir información general de Live Copy: Referencias para una página de modelo {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-La **Live Copy Overview** se puede abrir desde el panel lateral **Referencias** de la consola **Sitios** :
+El **Live Copy Overview** se puede abrir desde el panel lateral **References** de la consola **Sites**:
 
-1. En la consola **Sitios** , [vaya a la página de diseño y selecciónela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)**panel and select **Live Copies**.
+1. En la consola **Sites**, [navegue hasta la página de modelo y selecciónela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)** y seleccione **Live Copies**.
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -50,32 +50,32 @@ La **Live Copy Overview** se puede abrir desde el panel lateral **Referencias** 
    >
    >También puede abrir Referencias primero y luego seleccionar el modelo.
 
-1. Seleccione **Live Copy Overview** para mostrar y utilizar la descripción general de todas las copias activas relacionadas con el modelo seleccionado.
-1. Utilice **Cerrar** para salir y volver a la consola **Sitios** .
+1. Seleccione **Live Copy Overview** para mostrar y utilizar la visión general de todas las copias en vivo relacionadas con el modelo seleccionado.
+1. Utilice **Cerrar** para salir y volver a la consola **Sitios**.
 
 ### Abrir información general de Live Copy: Propiedades de una página de modelo {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-La Información general **de** Live Copy se puede abrir al ver las propiedades de una página de modelo:
+La **Información general de Live Copy** se puede abrir al ver las propiedades de una página de modelo:
 
 1. Abra **Propiedades** para la página de modelo adecuada.
-1. Abra la ficha **Modelo** ; la opción Información general **de** Live Copy se mostrará en la barra de herramientas superior:
+1. Abra la ficha **Modelo**: la opción **Información general de Live Copy** se mostrará en la barra de herramientas superior:
 
    ![chlimage_1-360](assets/chlimage_1-360.png)
 
-1. Seleccione **Live Copy Overview** para mostrar y utilizar la descripción general de todas las copias activas relacionadas con el modelo actual.
+1. Seleccione **Live Copy Overview** para mostrar y utilizar la visión general de todas las copias en vivo relacionadas con el modelo actual.
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte también el artículo de la Base de conocimiento Mensaje de estado de [Livecopy: Actualización/Verde/Sincronización](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obtener más información, consulte también el artículo de la Base de conocimiento [Mensaje de estado de Live Copy: Actualizado/Verde/En sincronización](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
-1. Utilice **Cerrar** para salir y volver a la consola **Sitios** .
+1. Utilice **Cerrar** para salir y volver a la consola **Sitios**.
 
 ## Uso de Live Copy Overview {#using-the-live-copy-overview}
 
-La **Live Copy Overview** también se puede utilizar para realizar acciones en la Live Copy:
+La **Información general de Live Copy** también se puede utilizar para realizar acciones en la Live Copy:
 
-1. Open the **Live Copy Overview**.
-1. Seleccione el modelo o la página de Live Copy necesarios: la barra de herramientas se actualizará para mostrar las acciones disponibles. Las [acciones](/help/sites-administering/msm.md#terms-used) disponibles dependen de si selecciona un [modelo](#actions-for-a-blueprint-page) o una página de [Live Copy](#actions-for-a-live-copy-page) :
+1. Abra la **Información general de Live Copy**.
+1. Seleccione el modelo o la página de Live Copy necesarios: la barra de herramientas se actualizará para mostrar las acciones disponibles. Las [acciones](/help/sites-administering/msm.md#terms-used) disponibles dependen de si selecciona una página [de modelo](#actions-for-a-blueprint-page) o [de Live Copy](#actions-for-a-live-copy-page):
 
 ### Acciones para una página de modelo {#actions-for-a-blueprint-page}
 
@@ -103,7 +103,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 * [Estado de la relación](#relationship-status)
 
-   * Información de Vista sobre el estado y la herencia.
+   * Información de vista sobre el estado y la herencia.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
@@ -127,7 +127,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 ## Estado de la relación {#relationship-status}
 
-La consola Estado **de** relación tiene dos fichas que proporcionan una amplia gama de funciones:
+La consola **Estado de relación** tiene dos fichas que proporcionan una amplia funcionalidad:
 
 * [Información de estado de relación](#relationship-status-information)
 * [Información de Live Copy](#live-copy-information)
@@ -138,7 +138,7 @@ Esta ficha proporciona información detallada sobre el estado de la relación en
 
 ![chlimage_1-363](assets/chlimage_1-363.png)
 
-### Información de Live Copy {#live-copy-information}
+### Live Copy Information {#live-copy-information}
 
 Esta ficha le permite realizar vistas y editar la configuración de Live Copy:
 

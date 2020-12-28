@@ -42,13 +42,13 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
 
 ### Sección 3 {#section-2}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### Sección 4 {#section-3}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-### Section 5 {#section-4}
+### Sección 5 {#section-4}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -64,7 +64,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 0</strong></td> 
    <td>Analizar el flujo de solicitudes</td> 
-   <td><p>Puede utilizar la análisis de solicitud HTTP estándar en el explorador para analizar el flujo de solicitudes. Para obtener más información sobre cómo hacerlo en Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
+   <td><p>Puede utilizar la análisis de solicitud HTTP estándar en el explorador para analizar el flujo de solicitudes. Para obtener más información sobre cómo hacerlo en Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> loadinghttps://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 2</strong></td> 
@@ -74,17 +74,17 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 3</strong></td> 
    <td>¿Se pueden almacenar en caché las solicitudes?</td> 
-   <td>Para obtener más información sobre las solicitudes procesables y los consejos generales de optimización del rendimiento de Dispatcher, consulte Optimización del rendimiento de <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Dispatcher</a>.</td> 
+   <td>Para obtener más información sobre las solicitudes que se pueden almacenar en caché y los consejos generales de optimización del rendimiento de Dispatcher, consulte <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Optimización del rendimiento de Dispatcher</a>.</td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 4</strong></td> 
    <td>¿Las solicitudes provienen del despachante?</td> 
-   <td><p>Consulte la documentación <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">de depuración de</a> Dispatcher para ver si las solicitudes se almacenan correctamente en la caché.<br /> </p> </td> 
+   <td><p>Consulte la <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">documentación de depuración de Dispatcher</a> para ver si las solicitudes se almacenan correctamente en la caché.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 5</strong></td> 
    <td>¿El despachante está intentando autenticar cada solicitud mediante AEM?</td> 
-   <td>Compruebe si el despachante envía <code>HEAD</code> solicitudes de autenticación a AEM antes de enviar el recurso en caché. Puede hacerlo buscando <code>HEAD</code> solicitudes en el AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
+   <td>Compruebe si el despachante envía <code>HEAD</code> solicitudes a AEM para autenticación antes de entregar el recurso en caché. Puede hacerlo buscando <code>HEAD</code> solicitudes en el AEM <code>access.log</code>. Para obtener más información, consulte <a href="/help/sites-deploying/configure-logging.md">Registro</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 6</strong></td> 
@@ -99,7 +99,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 8</strong></td> 
    <td>¿Es reproducible la lentitud con una instancia local?</td> 
-   <td><br /> <p>Utilice <a href="/help/sites-developing/tough-day.md">Días</a> difíciles para replicar las condiciones del "mundo real" de las instancias de producción. Si esto no es realista para la división de su desarrollo, asegúrese de probar la instancia de producción (o una instancia de ensayo idéntica) en un contexto de red diferente.<br /> </p> </td> 
+   <td><br /> <p>Utilice <a href="/help/sites-developing/tough-day.md">Día duro</a> para replicar las condiciones del "mundo real" de las instancias de producción. Si esto no es realista para la división de su desarrollo, asegúrese de probar la instancia de producción (o una instancia de ensayo idéntica) en un contexto de red diferente.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 9</strong></td> 
@@ -124,7 +124,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 13</strong></td> 
    <td>Comprobar los requisitos de hardware</td> 
-   <td>Consulte la documentación sobre las directrices <a href="/help/managing/hardware-sizing-guidelines.md">de cambio de tamaño de hardware</a>.<br /> </td> 
+   <td>Consulte la documentación de <a href="/help/managing/hardware-sizing-guidelines.md">Hardware Sizing Guidelines</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 14</strong></td> 
@@ -134,12 +134,12 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 15</strong></td> 
    <td>Buscar solicitudes lentas</td> 
-   <td><p>Puede comprobar la existencia de solicitudes lentas analizando el <code>request.log</code> o utilizando <code>rlog.jar</code>.</p> <p>Para obtener más información sobre el uso de rlog.jar, consulte esta página.</p> <p>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Uso de rlog.jar para buscar solicitudes con largos tiempos</a>de duración.<br /> </p> <p> </p> </td> 
+   <td><p>Puede buscar solicitudes lentas analizando <code>request.log</code> o utilizando <code>rlog.jar</code>.</p> <p>Para obtener más información sobre el uso de rlog.jar, consulte esta página.</p> <p>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Uso de rlog.jar para encontrar solicitudes con tiempos de duración largos</a>.<br /> </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 16</strong></td> 
    <td>Perfil Server</td> 
-   <td><p>Para obtener información sobre las herramientas de creación de perfiles que puede utilizar con AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Herramientas para monitorear y analizar el rendimiento</a>.<br /> </p> </td> 
+   <td><p>Para obtener información sobre las herramientas de generación de perfiles que puede utilizar con AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Herramientas para monitorear y analizar el rendimiento</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 17</strong></td> 
@@ -149,7 +149,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 18</strong></td> 
    <td>Situaciones hipotéticas comunes de elaboración de perfiles</td> 
-   <td>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Análisis de escenarios</a> específicos en la sección Optimización del rendimiento.<br /> </td> 
+   <td>Consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Análisis de escenarios específicos</a> en la sección Optimización del rendimiento.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 19</strong></td> 
@@ -169,16 +169,16 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 21</strong></td> 
    <td>E/S de disco</td> 
-   <td><p>Consulte la sección de E/S <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">de</a> disco en la documentación de Monitoreo y Mantenimiento.</p> </td> 
+   <td><p>Consulte la sección <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">E/S de disco</a> en la documentación de Monitoreo y Mantenimiento.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Pasos 22 y 22.1</strong></td> 
    <td>Proporción de caché</td> 
-   <td>Consulte <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Cálculo de la proporción</a>de caché del despachante.<br /> <br /> </td> 
+   <td>Consulte <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Cálculo de la relación de caché de despachante</a>.<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 23</strong></td> 
-   <td>consultas lentas</td> 
+   <td>Consultas lentas</td> 
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Prácticas recomendadas para Consultas e indexación</a></td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
     <ol> 
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servicio de sincronización de recursos</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Varias instancias de DAM</a></li> 
-     <li>Artículos de consejos de optimización del rendimiento <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">aquí</a> y <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">aquí</a>.<br /> </li> 
+     <li>Artículos <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">aquí</a> y <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">aquí</a> de consejos de optimización del rendimiento.<br /> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -243,7 +243,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
    <td> 
     <ol> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Configuración general de Dispatcher</a></li> 
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuración de la caché de Dispatcher</a></li> 
+     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuración de la memoria caché de Dispatcher</a></li> 
     </ol> <p>Cómo mejorar la proporción de caché; convertir solicitudes en caché (prácticas recomendadas de Dispatcher)</p> <p>Además, tenga en cuenta los siguientes ajustes para optimizar las configuraciones de almacenamiento en caché<br /> </p> 
     <ol> 
      <li>Establecer una regla de no caché para las solicitudes HTTP que no son GET</li> 
@@ -279,7 +279,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
   <tr> 
    <td><strong>Etapa 39</strong></td> 
    <td>Usar preconexión para reducir la sobrecarga de conexión</td> 
-   <td>Consulte la sesión de Gem indicada anteriormente. Además, la preconexión de documentación adicional en W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
+   <td>Consulte la sesión de Gem indicada anteriormente. Además, la documentación adicional se preconecta en W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
   </tr> 
   <tr> 
    <td><strong>Pasos 40 y 41</strong><br /> </td> 
@@ -287,19 +287,19 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
    <td>Investigue la latencia y el tiempo de respuesta de los hosts externos.</td> 
   </tr> 
   <tr> 
-   <td><strong>Pasos 45<br /> y 47</strong><br /> </td> 
+   <td><strong>Pasos 45 <br /> y 47</strong><br /> </td> 
    <td>Uso de HTTP/2</td> 
-   <td>Consulte los pasos 37, 38 y 39 en la sesión de Gem. También puede consultar <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">esta</a> publicación del foro sobre la compatibilidad con HTTP/2.<br /> </td> 
+   <td>Consulte los pasos 37, 38 y 39 en la sesión de Gem. Además, consulte <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">esta</a> publicación del foro sobre compatibilidad con HTTP/2.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 49</strong></td> 
    <td>Reducir tamaño de carga útil</td> 
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Active Gzip</a> y <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">reduzca el tamaño</a>de la imagen.<br /> </td> 
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Active </a> Gzipand para  <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">reducir el tamaño</a> de la imagen.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Pasos 42 y 43</strong></td> 
    <td>Mantener viva</td> 
-   <td><p>¿Está presente el <code>Keep-Alive</code> encabezado en las distintas solicitudes para reutilizar conexiones? De lo contrario, significaría que cada solicitud conduce a otro establecimiento de conexiones, lo que supone una sobrecarga innecesaria. (análisis de solicitud HTTP estándar en el explorador)</p> <p>Puede comprobar la herramienta <a href="/help/sites-administering/proxy-jar.md">Servidor</a> proxy para comprobar la existencia de conexiones "Keep-Alive".<br /> </p> </td> 
+   <td><p>¿El encabezado <code>Keep-Alive</code> está presente en las distintas solicitudes para reutilizar conexiones? De lo contrario, significaría que cada solicitud conduce a otro establecimiento de conexiones, lo que supone una sobrecarga innecesaria. (análisis de solicitud HTTP estándar en el explorador)</p> <p>Puede comprobar la <a href="/help/sites-administering/proxy-jar.md">herramienta de servidor proxy</a> para comprobar la existencia de conexiones de mantenimiento activo.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 44</strong></td> 
@@ -314,14 +314,14 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
      <li>Concatenar recursos (imágenes, sprites CSS, JSON, etc.)<br /> </li> 
      <li>Incrustación de Clientlibs: 
       <ol> 
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Creación de carpetas</a> de la biblioteca de clientes: consulte Encabezamiento Uso de la incrustación para minimizar solicitudes</li> 
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Creación de carpetas</a>  de la biblioteca de clientes; consulte Encabezado Uso de la incrustación para minimizar solicitudes</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 48</strong></td> 
    <td>¿Cuál es el tamaño de la carga útil?</td> 
-   <td>análisis de solicitud HTTP estándar en el explorador</td> 
+   <td>Análisis de solicitud HTTP estándar en el explorador</td> 
   </tr> 
   <tr> 
    <td><strong>Pasos 50 y 51</strong></td> 

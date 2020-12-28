@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# NO PUBLIQUE, PERO NO DELETE Personalización De Modelos De Fragmento De Contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# NO PUBLIQUE, PERO NO DELETE Personalización de modelos de fragmentos de contenido{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
-El editor del modelo de fragmentos de contenido es un asistente basado en `Formbuilder`, heredado de:
+El editor del modelo de fragmento de contenido es un asistente basado en `Formbuilder`, heredado de:
 
 `granite/ui/components/foundation/form/formbuilder`
 
@@ -27,22 +27,23 @@ Este componente tiene las herramientas necesarias para procesar la interfaz de a
 
 ## Ubicaciones {#locations}
 
-Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene activada la propiedad [Modelos de fragmento de](/help/assets/content-fragments-models.md#enable-content-fragment-models) contenido. Esta configuración también se puede ver en las Propiedades **de** configuración, a las que se puede acceder desde el explorador **[de configuración](/help/sites-administering/configurations.md)**.
+Los modelos se guardan y se crean en `/conf`, en una carpeta que tiene habilitada la propiedad [Content Fragment Models](/help/assets/content-fragments-models.md#enable-content-fragment-models). Esta configuración también se puede ver en las **Propiedades de configuración**, a las que se puede acceder desde el **[Explorador de configuración](/help/sites-administering/configurations.md)**.
 
-1. Vaya al explorador a través de **Herramientas**, **General**, Navegador **de** configuración. Por ejemplo, 
+1. Navegue al explorador a través de **Herramientas**, **General**, **Navegador de configuración**
+Por ejemplo, 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
-1. En el navegador, seleccione la configuración adecuada y, a continuación, **Propiedades** en la barra de herramientas.
+1. En el explorador, seleccione la configuración adecuada y luego **Propiedades** en la barra de herramientas.
 
    Por ejemplo, las propiedades de `global`: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-En la consola de modelos, aparecerán todas las carpetas con la propiedad Modelos **de fragmento de** contenido. Navegar mediante **Herramientas**, **Recursos**, Modelos **de fragmentos** de contenido; por ejemplo, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
+En la consola de modelos, aparecerán todas las carpetas con la propiedad **Content Fragment Models**. Navegue por **Herramientas**, **Recursos**, **Modelos de fragmento de contenido**; por ejemplo, `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`.
 
-Un usuario puede [crear un modelo](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) de fragmento de contenido mediante el asistente **Crear modelo** (mediante **Crear** desde la consola).
+Un usuario puede [crear un modelo de fragmento de contenido](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) mediante el asistente **Crear modelo** (mediante **Crear** desde la consola).
 
 >[!CAUTION]
 >
->No ***debe*** cambiar nada en la `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta `/libs`.
 >
 >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 
@@ -58,37 +59,37 @@ El asistente creará una entrada con esta estructura:
 
 * `jcr:content`
 
-   Cada modelo contiene un `jcr:content` nodo que:
+   Cada modelo contiene un nodo `jcr:content` que:
 
    * contiene propiedades de información sobre el modelo como `jcr:title`, `lastModified`, `lastModifiedBy`
-   * normalmente tiene el `sling:ResourceType` de `dam/cfm/models/console/components/data/entity/default`,
+   * generalmente tiene el `sling:ResourceType` de `dam/cfm/models/console/components/data/entity/default`,
 
       con el `sling:ResourceSuperType` de `dam/cfm/models/console/components/data/entity`
 
 * `model`
 
-   El `model` nodo contiene una propiedad `dataTypesConfig`, utilizada para determinar los tipos de datos utilizados en el editor de modelos.
+   El nodo `model` contiene una propiedad `dataTypesConfig`, que se utiliza para determinar los tipos de datos utilizados en el editor de modelos.
 
 * `items`
 
-   Bajo el `items` nodo, se guardan todos los tipos de datos agregados al modelo (como arrastrados y soltados en el editor de modelos). A cada elemento se le asigna un nombre de nodo aleatorio, pero para que el editor de fragmentos de contenido funcione con este modelo, cada elemento debe tener una `name` propiedad. Además, en este nodo se guardan todas las propiedades de configuración de un tipo de datos concreto, incluidas las propiedades predeterminadas necesarias para procesar los componentes.
+   En el nodo `items`, se guardan todos los tipos de datos agregados al modelo (como arrastrados y soltados en el editor de modelos). A cada elemento se le asigna un nombre de nodo aleatorio, pero para que el editor de fragmentos de contenido funcione con este modelo, cada elemento debe tener una propiedad `name`. Además, en este nodo se guardan todas las propiedades de configuración de un tipo de datos concreto, incluidas las propiedades predeterminadas necesarias para procesar los componentes.
 
 >[!CAUTION]
 >
->Todos los tipos de datos arrastrados y soltados en un editor de modelos, y como tales creados en instancias, **deben** tener la `name` propiedad introducida por el usuario.
+>Todos los tipos de datos arrastrados y soltados en un editor de modelos y, como tales, **deben** tener la propiedad `name` introducida por el usuario.
 >
->Esto se ve como Nombre **de propiedad &amp;ast;** en la ficha **Propiedades** del editor de modelos.
+>Esto se ve como **Nombre de propiedad &amp;ast;** en la ficha **Propiedades** del editor de modelos.
 
 ## Estructura del Editor de modelos {#structure-of-the-model-editor}
 
-El Editor **del modelo de fragmento de** contenido consta de dos partes:
+El **Editor del modelo de fragmento de contenido** tiene dos partes:
 
 * El panel previsualización, o vista, del lado izquierdo, donde puede soltar elementos. Así pues:
 
-   * Muestra una previsualización del tipo **de** datos en el que se crea una instancia.
+   * Muestra una previsualización del **Tipo de datos** que se crea como instancia.
    * Permite realizar pedidos dentro del Editor de modelos.
 
-* Las fichas Tipos **de** datos/**Propiedades** del panel de la derecha. Así pues:
+* Las fichas **Tipos de datos**/**Propiedades** del panel de la derecha. Así pues:
 
    * Muestra una lista de tipos de datos que se pueden arrastrar y crear instancias.
    * Para el editor de modelos incorporado, la lista está presente en:
@@ -99,11 +100,11 @@ El Editor **del modelo de fragmento de** contenido consta de dos partes:
       This node contains all the data types currently supported in the model editor. For more information on how to configure the data types, see [Customizing Data Types for Content Fragment Models](/help/sites-developing/customizing-content-fragment-model-data-types.md).
       -->
 
-   * Todos los tipos de datos procesados tienen dos etiquetas de secuencia de comandos que, al crearse una instancia, formarán la vista (el componente procesado en el lado izquierdo) y la ficha **Propiedades** , que define las propiedades que un usuario puede definir para un componente determinado.
+   * Todos los tipos de datos procesados tienen dos etiquetas de secuencia de comandos que, al crearse una instancia, formarán la vista (el componente procesado en el lado izquierdo) y la ficha **Propiedades**, que define las propiedades que un usuario puede definir para un componente determinado.
 
 >[!CAUTION]
 >
->No ***debe*** cambiar nada en la `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta `/libs`.
 >
 >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 
@@ -113,11 +114,11 @@ The properties on the right side define a form that is submitted directly into J
 
 Cuando se crea una instancia de un tipo de datos, se crean entradas HTML para cada propiedad que el componente necesita representarse en un fragmento de contenido. Por ejemplo:
 
-* **Nombre de propiedad &amp;ast;** ( `name`): actúa como identificador de componentes
+* **Nombre de propiedad &amp;ast;** (  `name`): actúa como un identificador para los componentes
 
-* **Representar como** ( `metaType`): escriba el componente que se procesará como
+* **Representar como** (  `metaType`): escriba el componente que se va a procesar como
 
-* **Descripción** ( `fieldDescription`): descripción del componente en el fragmento de contenido
+* **Descripción** (  `fieldDescription`): descripción del componente en el fragmento de contenido
 
 * y otros.
 

@@ -14,7 +14,7 @@ ht-degree: 26%
 ---
 
 
-# Adobe Experience Manager 6.4 Release Notes {#release-notes}
+# Notas de la versión de Adobe Experience Manager 6.4 {#release-notes}
 
 + [Descripción general de AEM 6.4](home.md)
 + [Notas de revisión generales](release-notes.md)
@@ -22,7 +22,7 @@ ht-degree: 26%
 + [Notas de la versión del paquete de correcciones acumuladas](cfp-release-notes.md)
 + [Notas de la versión de AEM Sites](sites.md)
 + [Notas de la versión de Activos AEM](assets.md)
-+ [Notas de la versión de Formularios AEM](forms.md)
++ [Notas de la versión de AEM Forms](forms.md)
 + [Instalador de parches de AEM Forms JEE](jee-patch-installer-64.md)
 + [Notas de versión de AEM Communities](communities-release-notes.md)
 + [Notas de la versión de AEM 3D](aem3d-release-notes.md)

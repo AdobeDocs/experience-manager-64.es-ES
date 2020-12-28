@@ -71,7 +71,7 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
 
 |  |  |  |
 |---|---|---|
-| Herramientas de creación | [entorno y herramientas de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
+| Herramientas de creación | [Entorno y herramientas de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
 | Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar mejor las páginas, incluidas las convenciones de nombres. |
 
 ## Forms {#forms}

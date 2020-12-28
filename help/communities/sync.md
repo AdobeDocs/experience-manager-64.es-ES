@@ -129,7 +129,7 @@ En AEM instancia de autor:
    * Seleccione **[!UICONTROL Usar varias colas]**.
    * Especifique **[!UICONTROL Extremos del exportador]** y **[!UICONTROL Extremos del importador]** (puede agregar más extremos del exportador y del importador).
 
-      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor desde el que obtuvo el contenido).
+      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor del que obtuvo el contenido).
    ![sync-agent-facto](assets/sync-agent-fact.png)
 
 ### Distribución de granito de Adobe: Proveedor secreto de transporte de contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}

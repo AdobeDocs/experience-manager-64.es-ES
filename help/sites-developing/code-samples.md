@@ -22,13 +22,13 @@ ht-degree: 4%
 
 El equipo de servicios de consultoría de Adobe ha generado una serie de ejemplos de código AEM. Estos ejemplos son fragmentos de código bien comentados que ayudan a los desarrolladores AEM comprender los componentes clave de AEM. Los ejemplos están disponibles aquí: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Un tutorial en varias partes diseñado para desarrolladores nuevos a AEM que abarca temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes: [Introducción a AEM Sites: Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Un tutorial en varias partes diseñado para desarrolladores nuevos a AEM que abarca temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes: [Introducción a AEM Sites - Tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 El equipo de la comunidad de Adobe AEM crea artículos Instrucciones de uso para desarrolladores. Puede encontrar los artículos [aquí](https://helpx.adobe.com/es/experience-manager/topics/how-to.html).
 
 Una plantilla Maven para crear un nuevo proyecto de AEM como punto de partida para desarrollar su propia funcionalidad está disponible [aquí](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-Las muestras de código de la interfaz de usuario estándar con capacidad táctil están disponibles [aquí](/help/sites-developing/developing-components.md).
+Hay ejemplos de código de IU estándar y con capacidad táctil disponibles [aquí](/help/sites-developing/developing-components.md).
 
 Hay disponibles ejemplos de código adicionales:
 

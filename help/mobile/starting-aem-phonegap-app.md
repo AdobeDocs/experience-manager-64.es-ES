@@ -33,17 +33,17 @@ El starterkit le permitirá avanzar rápidamente a través de los conceptos bás
 Los desarrolladores pueden utilizar este ejemplo como punto de partida para probar una aplicación de AEM Mobile mediante PhoneGap. Si se ejecuta a través del starterkit y de la aplicación de referencia, se obtendrán sólidos conocimientos básicos para crear aplicaciones móviles enriquecidas.
 
 * Utilice el [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) para crear aplicaciones adecuadas para el catálogo de AEM Mobile.
-* Se ha creado una aplicación [de](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) referencia con fuente completa que muestra muchas de las nuevas funciones de AEM Mobile, tanto si está migrando una aplicación existente a AEM Mobile como si está empezando a hacerlo.
+* Se ha creado una [aplicación de referencia](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) con el origen completo que muestra muchas de las nuevas funciones de AEM Mobile, tanto si está migrando una aplicación existente a AEM Mobile como si está empezando a actualizarla.
 * Todos nuestros ejemplos se pueden encontrar aquí en github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e incluya el arranque del proyecto con Maven.
-* La mayoría de las conferencias aprovecharán el tutorial [](https://github.com/blefebvre/aem-phonegap-kitchen-sink)de Kitchen Sink, que también puede encontrar en Github y está enfocado en el uso de la extensibilidad nativa de Apache Cordova.
+* La mayoría de las conferencias aprovecharán el [tutorial de Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que también puede encontrar en Github y que se centra en el uso de la extensibilidad nativa de Apache Cordova.
 
 >[!NOTE]
 >
->Una vez que haya tenido la oportunidad de familiarizarse con el starterkit, es importante conocer los *componentes y las plantillas de Adobe Experience Manager.*
+>Una vez que haya tenido la oportunidad de familiarizarse con el starterkit, es importante conocer los componentes y las plantillas de Adobe Experience Manager *.*
 
 ## Plantillas y componentes {#templates-and-components}
 
-AEM *Plantillas* y *Componentes* permiten a los propietarios de líneas de negocios crear experiencias personalizadas. *Las plantillas *y *los componentes* están disponibles de forma predeterminada o pueden ser desarrollados por usted, el desarrollador ya sea ampliando los componentes existentes o creando un campo verde (avanzado). *Las plantillas* y *componentes* son lo que permite a AEM Author arrastrar y soltar para crear experiencias atractivas y relevantes.
+AEM *Templates* y *Components* permiten a los propietarios de líneas de negocios crear experiencias personalizadas. *Las plantillas *y *Componentes* están disponibles de forma predeterminada o pueden ser desarrollados por usted, el desarrollador ya sea ampliando los componentes existentes o creando un campo verde (avanzado). ** Las plantillas y  ** los componentes son lo que permite a AEM Author arrastrar y soltar para crear experiencias atractivas y relevantes.
 
 1. [Creación de componentes](/help/sites-developing/components.md)
 1. [Creación de plantillas](/help/sites-developing/templates.md)

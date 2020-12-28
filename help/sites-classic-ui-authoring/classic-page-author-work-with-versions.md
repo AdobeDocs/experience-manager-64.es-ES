@@ -36,8 +36,8 @@ Para crear una nueva versión de una página:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Introduzca un **comentario** (opcional).
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. Se mostrará un mensaje atenuado en la página; por ejemplo:
+1. Para establecer una etiqueta en la versión (opcional), haga clic en el botón **Más >>** y defina la **Etiqueta** para asignar un nombre a la versión. Si la etiqueta no está configurada, la versión se incrementa automáticamente.
+1. Haga clic en **Crear versión**. Se mostrará un mensaje atenuado en la página; por ejemplo:
 
    Versión 1.2 creada para: Shirts.
 
@@ -45,7 +45,7 @@ Para crear una nueva versión de una página:
 >
 >Se creará una versión automáticamente cuando se active la página.
 
-## Restaurar una versión de página desde la barra de tareas {#restoring-a-page-version-from-sidekick}
+## Restaurar una versión de página desde la barra de tareas  {#restoring-a-page-version-from-sidekick}
 
 Para restaurar la página a una versión anterior:
 
@@ -71,7 +71,7 @@ Este método puede utilizarse para restaurar una versión de página. También p
 
 1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura la versión o las versiones (o árboles) que seleccione.
 
-### Restaurar un árbol desde la consola {#restoring-a-tree-from-the-console}
+### Restaurar un árbol desde la consola  {#restoring-a-tree-from-the-console}
 
 Este método puede utilizarse para restaurar una versión de página. También puede utilizarse para restaurar páginas que se hayan eliminado anteriormente:
 
@@ -88,7 +88,7 @@ Este método puede utilizarse para restaurar una versión de página. También p
 Para compara la versión actual de la página con una versión anterior:
 
 1. En el navegador, abra la página que desee comparar con una versión anterior.
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. En la barra de tareas, seleccione la ficha **Versiones** y, a continuación, la subficha **Restaurar versión** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -99,11 +99,11 @@ Para compara la versión actual de la página con una versión anterior:
    * El texto que se ha agregado aparece en verde y resaltado.
    * Las imágenes que se han agregado o eliminado tienen un recuadro verde.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
 1. En la barra de tareas, seleccione la subficha **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para ver la versión actual.
 
-## Deformación de tiempo   {#timewarp}
+## Deformación de tiempo    {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
@@ -120,7 +120,7 @@ Para ello:
 >
 >Si las versiones se eliminan del repositorio, Timewarp no podrá mostrar la vista correcta. Asimismo, si se han cambiado elementos (como código, css, imágenes, etc.) para procesar el sitio web, la vista será diferente de la original, ya que no habrá versiones de dichos elementos en el repositorio.
 
-### Uso del calendario de Timewarp {#using-the-timewarp-calendar}
+### Uso del calendario de Timewarp  {#using-the-timewarp-calendar}
 
 Timewarp está disponible en la barra de tareas.
 
@@ -128,7 +128,7 @@ La versión de calendario se utiliza si quiere visualizar un día específico:
 
 1. Abra la ficha **Versiones** y, a continuación, haga clic en **Timewarp** (cerca de la parte inferior de la barra de tareas). Se mostrará el cuadro de diálogo siguiente:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 1. Especifique la fecha y la hora deseadas con los selectores de fecha y hora y haga clic en **Ir**.
 

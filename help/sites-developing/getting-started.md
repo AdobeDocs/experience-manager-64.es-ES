@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -28,7 +28,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador que
 
 ## Tutorial para desarrolladores de WKND {#wknd-developer-tutorial}
 
-El tutorial está disponible [aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) o haga clic en la siguiente imagen.
+El tutorial está disponible [aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) o haga clic en la imagen siguiente.
 
 [![hacer clic en la imagen](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -46,4 +46,4 @@ Avance por el tutorial antes de profundizar en los conceptos anteriores.
 
 ## Próximos pasos {#next-steps}
 
-Una vez que haya completado el [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere la posibilidad de revisar el documento [AEM los conceptos](/help/sites-developing/the-basics.md) principales para comprender mejor algunas de las tecnologías subyacentes y los paradigmas de desarrollo de AEM.
+Una vez que haya completado el [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere la posibilidad de revisar el documento [AEM conceptos principales](/help/sites-developing/the-basics.md) para comprender mejor algunas de las tecnologías subyacentes y los paradigmas de desarrollo de AEM.

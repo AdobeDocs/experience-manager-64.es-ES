@@ -18,21 +18,21 @@ ht-degree: 2%
 ---
 
 
-# Acceder a las funciones del dispositivo{#access-device-features}
+# Funciones del dispositivo de acceso{#access-device-features}
 
 >[!NOTE]
 >
 >Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-## Creación de componentes de AEM que accedan a las funciones del dispositivo {#building-aem-components-that-access-device-features}
+## Generación de componentes de AEM que accedan a las funciones del dispositivo {#building-aem-components-that-access-device-features}
 
-El repositorio [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github proporciona a los desarrolladores una aplicación AEM funcional que ilustra el uso de varias API principales de Cordova. Cuando se ejecuta en iOS o Android mediante la CLI de PhoneGap, la aplicación se abre en la siguiente página, que incluye un vínculo a cada API de dispositivo que muestra:
+El repositorio de [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github proporciona a los desarrolladores una aplicación AEM funcional que ilustra el uso de varias API principales de Cordova. Cuando se ejecuta en iOS o Android mediante la CLI de PhoneGap, la aplicación se abre en la siguiente página, que incluye un vínculo a cada API de dispositivo que muestra:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 El código fuente de cada uno de estos componentes de API de dispositivo está [disponible en Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Para obtener más información sobre el uso de cada API, le recomiendo que eche un vistazo a la documentación [del complemento de](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)Cordova.
+Para obtener más información sobre el uso de cada API, le recomiendo que eche un vistazo a la [documentación del complemento de Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
 ## Pasos siguientes {#the-next-steps}
 

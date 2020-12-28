@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+Mediante la opción [Usuario](/help/sites-authoring/user-properties.md#user-settings) del [encabezado](/help/sites-authoring/basic-handling.md#the-header) y el cuadro de diálogo asociado [Mis preferencias](#my-preferences), puede modificar las opciones de usuario.
 
 ## Configuración de usuario {#user-settings}
 

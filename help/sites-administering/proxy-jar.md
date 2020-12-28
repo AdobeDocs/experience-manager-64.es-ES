@@ -36,7 +36,7 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 
 Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un explorador Web y un AEM. Esto le permite monitorear exactamente lo que sucede cuando solicita una página AEM.
 
-## Inicio de la herramienta Servidor proxy {#starting-the-proxy-server-tool}
+## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
 La herramienta se encuentra en la carpeta /opt/helpers de la instalación de AEM. Para inicio, escriba:
 
@@ -47,12 +47,12 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opciones {#options}
 
 * **q (modo silencioso)** No escribe las solicitudes en la ventana de la consola. Utilícelo si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile).
-* **b (modo binario)** Si busca combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
+* **b (modo binario)** Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
 * **t (entradas de registro de marca de hora)** Añade una marca de hora a cada salida de registro. La marca de hora se marca en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
-* **logfile &lt;filename> (escribir en archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
-* **i &lt;numIndentions> (agregar sangría)** Cada conexión activa se sangra para mejorar la legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
+* **logfile  &lt;filename> (escribir en archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
+* **i  &lt;numindentions> (agregar sangría)** Cada conexión activa tiene una sangría para una mejor legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
 
-## Usos de la herramienta Servidor proxy {#uses-of-the-proxy-server-tool}
+## Usos de la herramienta de servidor proxy {#uses-of-the-proxy-server-tool}
 
 Los siguientes escenarios ilustran algunos de los propósitos para los que se puede utilizar la herramienta de servidor proxy:
 
@@ -64,7 +64,7 @@ El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valo
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Comprobación de encabezados y sus valores** En el siguiente ejemplo de entrada de registro se muestra que el servidor puede establecer una conexión permanente y que el encabezado de longitud de contenido está configurado correctamente:
+**Comprobación de encabezados y sus** valoresEl siguiente ejemplo de entrada de registro muestra que el servidor puede establecer una conexión permanente y que el encabezado de longitud de contenido se estableció correctamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -74,7 +74,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Comprobación de si la función Mantener activo funciona**
 
-**Mantener activo** significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (el código de página, las imágenes, las hojas de estilo, etc.). Sin el mantenimiento, el cliente tiene que establecer una nueva conexión para cada solicitud.
+**Keep-** Alivemans significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (el código de página, las imágenes, las hojas de estilo, etc.). Sin el mantenimiento, el cliente tiene que establecer una nueva conexión para cada solicitud.
 
 Para comprobar si la función Mantener viva funciona:
 
@@ -117,7 +117,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que esta entrada proviene del cliente (es una solicitud para una página Web)
 * 0 es el número de conexión (el contador de conexiones inicio en 0)
 * # 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* [GET &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
+* [GET  &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 

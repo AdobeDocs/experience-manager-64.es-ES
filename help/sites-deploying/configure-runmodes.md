@@ -24,13 +24,13 @@ Los modos de ejecución le permiten ajustar la instancia de AEM para un fin espe
 
 Puede hacer lo siguiente:
 
-* [Defina colecciones de parámetros de configuración para cada modo](#defining-configuration-properties-for-a-run-mode)de ejecución.
+* [Defina colecciones de parámetros de configuración para cada modo](#defining-configuration-properties-for-a-run-mode) de ejecución.
 
    Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución, puede ajustar conjuntos adicionales según el propósito del entorno específico. Se aplican según sea necesario.
 
-* [Defina paquetes adicionales para instalar en un modo](#defining-additional-bundles-to-be-installed-for-a-run-mode)particular.
+* [Defina paquetes adicionales para instalar en un modo](#defining-additional-bundles-to-be-installed-for-a-run-mode) particular.
 
-Todos los ajustes y definiciones se almacenan en el único repositorio y se activan al configurar el modo **de** ejecución.
+Todas las configuraciones y definiciones se almacenan en el único repositorio y se activan configurando el **Modo de ejecución**.
 
 ## Modos de ejecución de instalación {#installation-run-modes}
 
@@ -45,15 +45,15 @@ Los modos de ejecución de la instalación se proporcionan de forma predetermina
 
 Son dos pares de modos de ejecución mutuamente excluyentes; por ejemplo, puede:
 
-* definir `author` o `publish`, no ambos al mismo tiempo
+* define `author` o `publish`, no ambos al mismo tiempo
 
 * combinar `author` con `samplecontent` o `nosamplecontent` (pero no ambos)
 
 >[!CAUTION]
 >
->Al utilizar uno de los modos de ejecución anteriores (autor, publicación, contenido de muestra, nosamplecontent), el valor utilizado en el momento de la instalación define el modo de ejecución para *toda la duración* de la instalación.
+>Al utilizar uno de los modos de ejecución anteriores (autor, publicación, muestra de contenido, nosamplecontent), el valor utilizado en el momento de la instalación define el modo de ejecución para la *duración completa* de esa instalación.
 >
->Para estos modos de ejecución *no puede* cambiarlos después de la instalación.
+>Para estos modos de ejecución, *no puede* cambiarlos después de la instalación.
 
 ## Modos de ejecución personalizados {#customized-run-modes}
 
@@ -61,11 +61,11 @@ También puede crear sus propios modos de ejecución personalizados. Se pueden c
 
 * `author` + `development`
 
-* `publish` + `test`
+* `publish` +  `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` + `intranet`
+* `publish` +  `intranet`
 
 * según sea necesario. . .
 
@@ -75,9 +75,9 @@ También se pueden seleccionar modos de ejecución personalizados en cada inicio
 
 Estos modos le permiten controlar el uso del contenido de muestra. El contenido de muestra se define antes de que se cree el inicio rápido y puede incluir paquetes, configuraciones, etc.:
 
-* El modo `samplecontent` de ejecución instalará este contenido (el modo predeterminado).
+* El modo de ejecución `samplecontent` instalará este contenido (el modo predeterminado).
 
-* El `nosamplecontent` modo no instalará el contenido de muestra.
+* El modo `nosamplecontent` no instalará el contenido de muestra.
 
 El modo de ejecución nosamplecontent está diseñado para instalaciones de producción.
 
@@ -103,11 +103,11 @@ El modo de ejecución se indica con un sufijo en el nombre de la carpeta. Esto l
 
    Se utiliza para el modo de ejecución aplicable; por ejemplo, config
 
-Consulte Configuración de [OSGi en el Repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obtener más detalles sobre la definición de los nodos de configuración individuales dentro de estas carpetas y para crear configuraciones para combinaciones de múltiples modos de ejecución.
+Consulte [Configuración de OSGi en el Repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obtener más detalles sobre la definición de los nodos de configuración individuales dentro de estas carpetas y para crear configuraciones para combinaciones de múltiples modos de ejecución.
 
 >[!NOTE]
 >
->En los modos [de ejecución de](#installation-run-modes) instalación (por ejemplo, autor), el modo de ejecución no se puede cambiar después de la instalación. Sin embargo, los cambios en las propiedades de configuración individuales surtirán efecto al reiniciar.
+>Para [Modos de ejecución de instalación](#installation-run-modes) (p. ej., autor), el modo de ejecución no se puede cambiar después de la instalación. Sin embargo, los cambios en las propiedades de configuración individuales surtirán efecto al reiniciar.
 
 ## Definición de paquetes adicionales para instalar en modo de ejecución {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -116,7 +116,7 @@ También se pueden especificar paquetes adicionales que deben instalarse para un
 * `install.author`
 * `install.publish`
 
-Estas carpetas son del tipo `nt:folder` y deben contener el paquete adecuado.
+Estas carpetas son del tipo `nt:folder` y deben contener el paquete apropiado.
 
 ## Inicio de CQ con un modo de ejecución específico {#starting-cq-with-a-specific-run-mode}
 
@@ -132,7 +132,7 @@ Cuando utiliza un servidor de aplicaciones, también puede [definir el modo de e
 
 ### Uso del archivo sling.properties {#using-the-sling-properties-file}
 
-El `sling.properties` archivo se puede utilizar para definir el modo de ejecución requerido:
+El archivo `sling.properties` puede utilizarse para definir el modo de ejecución requerido:
 
 1. Edite el archivo de configuración:
 
@@ -169,7 +169,7 @@ El archivo jar debe utilizar la convención de nombres:
 
 `cq5-<run-mode>-p<port-number>`
 
-Por ejemplo, para definir el modo de `publish` ejecución, asigne un nombre al archivo jar:
+Por ejemplo, para establecer el modo de ejecución `publish`, asigne un nombre al archivo jar:
 
 `cq5-publish-p4503`
 
@@ -183,6 +183,6 @@ en el archivo:
 
 `WEB-INF/web.xml`
 
-Esto se encuentra en el `war` archivo AEM y debe actualizarse antes de la implementación.
+Esto se encuentra en el archivo AEM `war` y debe actualizarse antes de la implementación.
 
-Consulte [Instalación de AEM con un servidor](/help/sites-deploying/application-server-install.md) de aplicaciones para obtener más información.
+Consulte [Instalación de AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener más detalles.

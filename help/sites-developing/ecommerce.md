@@ -32,11 +32,11 @@ Para obtener más información, consulte:
 
 >[!NOTE]
 >
->Dado que el marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico, consulte [Desarrollo (genérico)](/help/sites-developing/generic.md) para obtener más información sobre cómo desarrollar posibilidades con Intershop, Elastic Path o IBM Websphere Commerce.
+>Dado que el marco de trabajo eCommerce se puede utilizar con cualquier solución de comercio electrónico, consulte [Desarrollo (genérico)](/help/sites-developing/generic.md) para obtener más información sobre cómo desarrollar posibilidades con Intershop, Elastic Path o IBM Websphere Commerce.
 
 >[!NOTE]
 >
->Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementación de comercio electrónico](/help/sites-deploying/ecommerce.md).
+>Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementación de eCommerce](/help/sites-deploying/ecommerce.md).
 >
 >Para obtener información sobre los conceptos y la administración de implementaciones de comercio electrónico, consulte [Administración de comercio electrónico](/help/sites-administering/ecommerce.md).
 
@@ -46,9 +46,9 @@ Los paquetes proporcionan la API de eCommerce:
 
 `com.adobe.cq.commerce.*`
 
-Consulte la documentación [de la](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) API para obtener más información.
+Consulte la [documentación de API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) para obtener más información.
 
 >[!NOTE]
 >
->Para ver un artículo completo en el que se detallan todos los pasos para crear un proveedor de comercio electrónico, consulte [Creación de proveedores](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)personalizados de comercio electrónico de Adobe Experience Manager 6.2.
+>Para ver un artículo completo en el que se detallan todos los pasos para crear un proveedor de comercio electrónico, consulte [Creación de proveedores de comercio electrónico personalizados de Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
 

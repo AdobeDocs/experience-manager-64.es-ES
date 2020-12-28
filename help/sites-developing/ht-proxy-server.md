@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Cómo utilizar la herramienta Servidor proxy{#how-to-use-the-proxy-server-tool}
+# Cómo utilizar la herramienta de servidor proxy{#how-to-use-the-proxy-server-tool}
 
 El servidor proxy actúa como servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto le permite monitorear exactamente lo que sucede, sin tener que acceder al servidor principal.
 
@@ -35,7 +35,7 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 
 Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un explorador Web y un AEM. Esto le permite monitorear exactamente lo que sucede cuando solicita una página de CQ.
 
-## Inicio de la herramienta Servidor proxy {#starting-the-proxy-server-tool}
+## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
 Inicio del servidor en la línea de comandos:
 
@@ -45,11 +45,11 @@ Inicio del servidor en la línea de comandos:
 
 `<host>`
 
-Esta es la dirección host de la instancia de CRX a la que desea conectarse. Si la instancia está en el equipo local, entonces será `localhost`.
+Esta es la dirección host de la instancia de CRX a la que desea conectarse. Si la instancia está en el equipo local, será `localhost`.
 
 `<remoteport>`
 
-Este es el puerto host de la instancia CRX de destinatario. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el valor predeterminado de una instancia de autor AEM recién instalada es `4502`.
+Este es el puerto host de la instancia CRX de destinatario. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el valor predeterminado para una instancia de autor de AEM recién instalada es `4502`.
 
 `<localport>`
 
@@ -129,11 +129,11 @@ El contenido de `test.html` es:
 </html>
 ```
 
-Suponiendo que la instancia de AEM se está ejecutando en `localhost:4502` nosotros se inicio el proxy de esta manera:
+Suponiendo que la instancia de AEM se está ejecutando en `localhost:4502`, se inicio el proxy de esta manera:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y todas las comunicaciones a través de este puerto se registran en `test.log`.
+Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se registra en `test.log`.
 
 Si ahora vemos la salida del proxy, veremos la interacción entre el explorador y la instancia de AEM.
 
@@ -148,7 +148,7 @@ A continuación, abrimos un navegador y accedemos a la página de prueba:
 
 `http://localhost:4444/content/test.html`
 
-y vemos que el explorador realiza una `GET` solicitud para la página:
+y vemos que el explorador realiza una solicitud `GET` para la página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]

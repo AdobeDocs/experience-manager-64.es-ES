@@ -26,16 +26,16 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 
 >[!NOTE]
 >
->Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. (Consulte [Creación de una Live Copy para Canales diferentes](/help/sites-administering/msm-livecopy.md)).
 >
->Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
+>Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. (Consulte [Creación de Filtros de grupo de dispositivos](/help/sites-developing/groupfilters.md)).
 
 Utilice el siguiente procedimiento para crear una página para móvil:
 
 1. En la navegación global, abra la consola **Sitios**.
-1. Open the page **We.Retail** -> **United States** -> **English**.
+1. Abra la página **We.Retail** -> **Estados Unidos** -> **Inglés**.
 
-1. Switch to **Preview** mode.
+1. Cambie al modo **Previsualización**.
 1. Cambie al emulador que quiera usar haciendo clic en el icono del dispositivo en la parte superior de la página.
 1. Arrastre los componentes del navegador de componentes y colóquelos en la página.
 

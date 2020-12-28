@@ -54,7 +54,7 @@ Los niveles de registro son los siguientes:
 | 2 | Advertencia | La acción se ha realizado correctamente, pero se han encontrado problemas. CRX puede funcionar correctamente o no. |
 | 3 | Información | La acción se ha realizado correctamente. |
 
-## Opción de búsqueda de soluciones utilizada para la resolución de problemas {#verbose-option-used-for-troubleshooting}
+## Opción de análisis detallado utilizada para la resolución de problemas {#verbose-option-used-for-troubleshooting}
 
 Cuando inicio CRX, puede agregar la opción -v (detallado) a la línea de comandos como en: &quot;
 

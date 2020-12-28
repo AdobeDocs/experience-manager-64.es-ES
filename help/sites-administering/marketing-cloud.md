@@ -18,9 +18,9 @@ ht-degree: 2%
 ---
 
 
-# Integración con el Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
+# Integración con Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-El [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html)incluye potentes productos de optimización de sitios web y análisis de Web que proporcionan datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. oferta una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de la perspectiva del cliente para optimizar los esfuerzos de adquisición, conversión y retención del cliente, así como la creación y distribución de contenido.
+El [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) incluye potentes productos de optimización de sitios web y análisis de Web que proporcionan datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. Oferta una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de la perspectiva del cliente para optimizar los esfuerzos de adquisición, conversión y retención del cliente, así como la creación y distribución de contenido.
 
 Con Adobe Experience Manager (AEM), puede integrarse sin problemas con los siguientes productos de Adobe Marketing Cloud:
 
@@ -31,11 +31,11 @@ Con Adobe Experience Manager (AEM), puede integrarse sin problemas con los sigui
 * El Search&amp;Promote de Adobe permite a los especialistas en mercadotecnia controlar y optimizar los resultados de búsqueda en sus sitios.
 * Adobe Campaign le permite administrar el contenido del envío de correo electrónico directamente en Adobe Experience Manager.
 
-Además, puede integrar AEM con el [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) y con servicios [de](/help/sites-administering/third-party-services.md)terceros.
+Además, puede integrar AEM con el [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) y con [servicios de terceros](/help/sites-administering/third-party-services.md).
 
 ## Integración con Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) es la solución líder del sector que proporciona a los especialistas en mercadotecnia digital un lugar para medir, analizar y optimizar los datos integrados de todas las iniciativas en línea en varios canales de mercadotecnia. Proporciona a los especialistas en marketing inteligencia de análisis web procesable y en tiempo real sobre estrategias digitales e iniciativas de marketing. Adobe Analytics ayuda a los especialistas en mercadotecnia a identificar rápidamente las rutas más rentables a través de un sitio web, segmentar el tráfico para detectar visitantes Web de alto valor, determinar dónde los visitantes se desplazan fuera del sitio e identificar las métricas de éxito críticas para las campañas de mercadotecnia en línea.
+[Adobe ](https://www.omniture.com/en/products/analytics/sitecatalyst) Analytics es la solución líder del sector que proporciona a los especialistas en mercadotecnia digital un lugar para medir, analizar y optimizar los datos integrados de todas las iniciativas en línea en varios canales de mercadotecnia. Proporciona a los especialistas en marketing inteligencia de análisis web procesable y en tiempo real sobre estrategias digitales e iniciativas de marketing. Adobe Analytics ayuda a los especialistas en mercadotecnia a identificar rápidamente las rutas más rentables a través de un sitio web, segmentar el tráfico para detectar visitantes Web de alto valor, determinar dónde los visitantes se desplazan fuera del sitio e identificar las métricas de éxito críticas para las campañas de mercadotecnia en línea.
 
 Puede utilizar Adobe Analytics para analizar los datos de sus sitios.
 
@@ -50,21 +50,21 @@ La integración con Adobe Analytics le permite hacer lo siguiente:
 
 Para obtener información sobre la integración de AEM con Analytics, consulte [Integración con Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
-También puede utilizar el asistente para la [inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede utilizar el [Asistente para la selección](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
 ## Integración con Adobe Target {#integrating-with-adobe-target}
 
-[Los especialistas en marketing utilizan Adobe Target](https://www.omniture.com/en/products/conversion/test-and-target) para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar la segmentación del contenido y las experiencias en línea.
+[Los especialistas en marketing utilizan ](https://www.omniture.com/en/products/conversion/test-and-target) objetivos de Adobe para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar la segmentación del contenido y las experiencias en línea.
 
 Los consumidores en línea hoy en día tienen necesidades en constante evolución y esperan contenido relevante, incluso personalizado, de la amplia variedad de sitios y fuentes de contenido que pueden elegir. Para participar en una audiencia en línea, es fundamental que los especialistas en mercadotecnia en línea identifiquen rápidamente qué ofertas y contenido son relevantes y convincentes para sus audiencias. Con este conocimiento, los especialistas en mercadotecnia necesitan la capacidad de evolucionar continuamente sus sitios y de destinatario del contenido apropiado a diferentes audiencias.
 
-[La integración con Adobe Target](/help/sites-administering/target.md) explica cómo integrar el sitio con Destinatario.
+[La integración con Adobe ](/help/sites-administering/target.md) Target explica cómo integrar el sitio con Destinatario.
 
-También puede utilizar el asistente para la [inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede utilizar el [Asistente para la selección](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
-## Adhesión a Analytics y Destinatario {#opting-in-to-analytics-and-target}
+## adhesión a Analytics y Destinatario {#opting-in-to-analytics-and-target}
 
-AEM ofrece un procedimiento de inclusión simple para integrarlo con Adobe Analytics y Adobe Target. Al iniciar sesión como administrador y visitar la consola Proyectos, se le mostrará un asistente para la selección.
+AEM ofrece un procedimiento de inclusión sencillo para integrarlo con Adobe Analytics y Adobe Target. Al iniciar sesión como administrador y visitar la consola Proyectos, se le mostrará un asistente para la selección.
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -74,7 +74,7 @@ Para obtener más información, consulte [Opción en Adobe Analytics y Adobe Tar
 
 ## Integración con Scene7 {#integrating-with-scene}
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) es una solución alojada para publicar, administrar, mejorar y distribuir recursos de marketing dinámicos y una amplia comercialización visual en la Web, dispositivos móviles, correo electrónico, medios sociales, pantallas conectadas a Internet e impresión.
+[Adobe Scene7](https://www.adobe.com/products/scene7.html)  es una solución alojada para publicar, administrar, mejorar y distribuir recursos de marketing dinámicos y una amplia comercialización visual en la Web, dispositivos móviles, correo electrónico, medios sociales, pantallas conectadas a Internet e impresión.
 
 En AEM, puede publicar recursos digitales directamente de AEM a Scene7 y publicar recursos digitales de Scene7 en AEM.
 
@@ -87,13 +87,13 @@ Además, puede realizar la vista de AEM recursos publicados en Scene7 en varios 
 * Flash Plantilla
 * Plantilla de imagen
 
-Para obtener más información sobre cómo AEM se integra con Scene7, consulte la documentación [](/help/sites-administering/scene7.md)Integración con Scene7.
+Para obtener más información sobre cómo se integra AEM con Scene7, consulte la [documentación de integración con Scene7](/help/sites-administering/scene7.md).
 
 ## Integración con la administración dinámica de etiquetas de Adobe {#integrating-with-adobe-dynamic-tag-management}
 
-[La administración](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) dinámica de etiquetas de Adobe proporciona a los especialistas en marketing herramientas intuitivas para administrar rápida y fácilmente un número ilimitado de etiquetas de Adobe y de terceros. Tendrá más control y flexibilidad para optimizar prácticamente cualquier cosa en línea, todo mientras reduce la dependencia de los recursos de TI.
+[La ](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) administración dinámica de etiquetas de Adobe proporciona a los especialistas en marketing herramientas intuitivas para administrar rápida y fácilmente un número ilimitado de etiquetas de Adobe y de terceros. Tendrá más control y flexibilidad para optimizar prácticamente cualquier cosa en línea, todo mientras reduce la dependencia de los recursos de TI.
 
-[Integre la administración](/help/sites-administering/dtm.md) dinámica de etiquetas de Adobe con AEM para que pueda utilizar las propiedades web de la administración dinámica de etiquetas para rastrear AEM sitios.
+[Integre la ](/help/sites-administering/dtm.md) administración dinámica de etiquetas de Adobe con AEM para que pueda utilizar las propiedades web de la administración dinámica de etiquetas para rastrear AEM sitios.
 
 ## Integración con Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
@@ -101,15 +101,15 @@ La integración de Audience Manager se ha eliminado en la AEM 6.3.
 
 ## Integración con Search&amp;Promote {#integrating-with-search-promote}
 
-[El Search&amp;Promote](https://www.omniture.com/en/products/conversion/search-and-promote) de Adobe permite a los especialistas en mercadotecnia optimizar la forma en que los visitantes exploran, buscan, comparan y seleccionan los productos y el contenido relevantes en los sitios web y móviles. Las empresas pueden promocionar fácilmente elementos prioritarios en función de los objetivos empresariales y la intención de visitante, así como automatizar la actividad de promociones y mercadotecnia mediante activadores o métricas basados en KPI.
+[Adobe Search&amp;](https://www.omniture.com/en/products/conversion/search-and-promote) Promoteers permite a los especialistas en mercadotecnia optimizar la forma en que los visitantes exploran, buscan, comparan y seleccionan los productos y el contenido relevantes en los sitios web y móviles. Las empresas pueden promocionar fácilmente elementos prioritarios en función de los objetivos empresariales y la intención de visitante, así como automatizar la actividad de promociones y mercadotecnia mediante activadores o métricas basados en KPI.
 
-Adobe Search&amp;Promote es una aplicación de búsqueda alojada confiable y escalable, capaz de escalar a millones de páginas o productos, para negocios en línea muy visitados que van desde sitios minoristas hasta sitios de noticias. oferta niveles sin precedentes de control de los especialistas en mercadotecnia y relevancia basada en métricas.
+Adobe Search&amp;Promote es una aplicación de búsqueda alojada confiable y escalable, capaz de escalar a millones de páginas o productos, para negocios en línea muy visitados que van desde sitios minoristas hasta sitios de noticias. Oferta niveles sin precedentes de control de los especialistas en mercadotecnia y relevancia basada en métricas.
 
-Para obtener información sobre la integración de AEM y Search&amp;Promote, consulte [Integración con Search&amp;Promote](/help/sites-administering/search-and-promote.md)de Adobe.
+Para obtener información sobre la integración de AEM y Search&amp;Promote, consulte [Integración con Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
 ## Integración con Adobe Campaign {#integrating-with-adobe-campaign}
 
-[Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) permite administrar el contenido de envío de correo electrónico directamente en Adobe Experience Manager.
+[Adobe ](https://www.adobe.com/solutions/campaign-management.html) Campaign permite administrar el contenido del envío de correo electrónico directamente en Adobe Experience Manager.
 
 Para obtener información sobre cómo se integra AEM con Adobe Campaign, consulte [Integración con Adobe Campaign](/help/sites-administering/campaignstandard.md).
 

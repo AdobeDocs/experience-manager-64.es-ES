@@ -189,7 +189,7 @@ Otras capacidades dependen de si el visitante del sitio es un moderador, adminis
 
 Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](moderate-ugc.md) (según lo permite la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Miembros {#members}
 

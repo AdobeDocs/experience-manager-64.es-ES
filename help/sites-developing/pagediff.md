@@ -24,17 +24,17 @@ ht-degree: 7%
 
 La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar una versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
-La diferencia de página permite al usuario comparar la página actual con los inicios, las versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte Diferencia [de página](/help/sites-authoring/page-diff.md).
+La diferencia de página permite al usuario comparar la página actual con los inicios, las versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Dif. de página](/help/sites-authoring/page-diff.md).
 
 ## Detalles de la operación {#operation-details}
 
-Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear con AEM en segundo plano para facilitar la diferencia. Esto es necesario para poder representar el contenido [para una comparación](/help/sites-authoring/page-diff.md#presentation-of-differences)paralela.
+Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear con AEM en segundo plano para facilitar la diferencia. Esto es necesario para poder representar el contenido [para la comparación en paralelo](/help/sites-authoring/page-diff.md#presentation-of-differences).
 
 Esta operación de recreación la realiza AEM internamente y es transparente para el usuario y no requiere ninguna intervención. Sin embargo, un administrador que visualiza el repositorio, por ejemplo, en CRX DE Lite, vería estas versiones recreadas dentro de la estructura de contenido.
 
 Según el nivel de parche de AEM, el comportamiento es diferente y puede requerir ciertos permisos para funcionar correctamente.
 
-### Antes del AEM 6.4.3 {#prior-to-aem}
+### Antes de AEM 6.4.3 {#prior-to-aem}
 
 Cuando se compara el contenido, todo el árbol hasta la página que comparar se vuelve a crear en la siguiente ubicación:
 
@@ -56,9 +56,9 @@ Este contenido lo crea un usuario de servicio con permisos que limitan la visibi
 
 Una tarea de limpieza se ejecuta automáticamente para limpiar este contenido temporal.
 
-## Limitaciones del desarrollador {#developer-limitations}
+## Limitaciones del programador {#developer-limitations}
 
-Anteriormente, en la IU clásica, había que tener especialmente en cuenta el desarrollo para facilitar la difusión de AEM (como usar la biblioteca de `cq:text` etiquetas o personalizar la integración del servicio `DiffService` OSGi en los componentes). Esto ya no es necesario para la nueva función de diferencia, ya que la diferencia se produce en el cliente mediante la comparación DOM.
+Anteriormente, en la IU clásica, había que tener especialmente en cuenta el desarrollo para facilitar la difusión de AEM (como el uso de la biblioteca de etiquetas `cq:text` o la integración personalizada del servicio OSGi `DiffService` en los componentes). Esto ya no es necesario para la nueva función de diferencia, ya que la diferencia se produce en el cliente mediante la comparación DOM.
 
 Sin embargo, hay una serie de limitaciones que el desarrollador debe tener en cuenta.
 

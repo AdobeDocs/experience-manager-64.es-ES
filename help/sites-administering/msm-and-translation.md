@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -24,21 +24,21 @@ Las siguientes herramientas de administración están disponibles para administr
 
 * Multi Site Manager (MSM) le permite utilizar el mismo contenido del sitio en varias ubicaciones, a la vez que permite variaciones:
 
-   * [Reutilización del contenido: Multi Site Manager y Live Copy](/help/sites-administering/msm.md)
+   * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
 
 * La traducción le permite automatizar la traducción del contenido de la página, los recursos y el contenido generado por el usuario para crear y mantener sitios web multilingües:
 
    * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
 
-* Estas dos funciones se pueden combinar para satisfacer las necesidades de los sitios web [multinacionales y multilingües](#multinational-and-multilingual-sites).
+* Estas dos funciones se pueden combinar para satisfacer las necesidades de los sitios Web que sean [Multinacionales y Multilingües](#multinational-and-multilingual-sites).
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
 Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de multisitios y el flujo de trabajo de traducción. Cree una ubicación maestra en un idioma, para un país específico, y luego utilice ese contenido como base para otros sitios, utilizando la traducción cuando sea necesario:
 
-* [Traduzca](/help/sites-administering/translation.md) la ubicación maestra a distintos idiomas.
+* [](/help/sites-administering/translation.md) Traduzca la ubicación maestra a distintos idiomas.
 
-* Utilice [Multi Site Manager](/help/sites-administering/msm.md) para:
+* Utilice [Administrador de múltiples sitios](/help/sites-administering/msm.md) para:
 
    * Reutilice el contenido de la ubicación maestra, y las traducciones, para crear sitios para otros países y culturas.
    * Asegúrese de limitar el uso de Multi Site Manager al contenido dentro de un idioma, por ejemplo: inglés maestro -> idiomas ingleses en sitios de países, francés maestro -> francés en sitios de países.
@@ -52,8 +52,8 @@ El diagrama siguiente ilustra cómo se intersectan los conceptos principales (pe
 >
 >En estos escenarios, y comparables, MSM no administra las diferentes versiones de idioma como tales.
 >
->* [MSM](/help/sites-administering/msm.md) administra la implementación de contenido traducido de un modelo (por ejemplo, un maestro global) a las copias en vivo (por ejemplo, los sitios locales), dentro de los límites de un idioma.
->* La capacidad de integración de [traducción](/help/sites-administering/translation.md) de AEM, junto con los servicios de gestión de traducción de terceros, gestiona los idiomas y traduce el contenido a estos diferentes idiomas.
+>* [](/help/sites-administering/msm.md) MSM administra la implementación de contenido traducido de un modelo (por ejemplo, un maestro global) a las copias en vivo (por ejemplo, los sitios locales), dentro de los límites de un idioma.
+>* La [traducción](/help/sites-administering/translation.md) capacidad de integración de AEM, junto con los servicios de administración de traducción de terceros, administra los idiomas y traduce el contenido a estos diferentes idiomas.
 
 >
 >

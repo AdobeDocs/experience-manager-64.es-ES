@@ -1,6 +1,6 @@
 ---
-title: Promocionar lanzamientos
-seo-title: Promocionar lanzamientos
+title: Promoción de lanzamientos
+seo-title: Promoción de lanzamientos
 description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
 seo-description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
 uuid: 56483f8f-d66e-4677-a7bd-3b1425625b2b
@@ -19,7 +19,7 @@ ht-degree: 90%
 ---
 
 
-# Promocionar lanzamientos{#promoting-launches}
+# Promoción de lanzamientos{#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles para promocionar una página de lanzamiento:
 
@@ -33,7 +33,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 >[!CAUTION]
 >
->Un solo lanzamiento no se puede promocionar de forma simultánea. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones de promoción en el mismo lanzamiento al mismo tiempo pueden resultar en un error - `Launch could not be promoted` (junto con errores de conflicto en el registro).
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
 
    * la consola **Sitios**:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#references) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). Todas las referencias se mostrarán.
+      1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#references) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
 
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos [1]) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
@@ -101,7 +101,7 @@ Cuando está editando una página de lanzamiento, la acción **Promocionar lanza
 >
 >Esto se encuentra disponible para los [lanzamientos anidados](#promoting-a-nested-launch) y únicos.
 
-## Promocionar un lanzamiento anidado {#promoting-a-nested-launch}
+## Promocionar un lanzamiento anidado  {#promoting-a-nested-launch}
 
 Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de los orígenes, incluido el origen raíz (producción).
 

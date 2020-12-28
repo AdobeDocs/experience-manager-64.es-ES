@@ -82,7 +82,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Permite especificar una URL de vanidad para esta página. Esta opción le permitirá crear URL más cortas y expresivas.
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo: si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio Web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -134,7 +134,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Especificar una configuración de exportación.
 
-### Miniatura    {#thumbnail}
+### Miniatura     {#thumbnail}
 
 * **Miniatura de la página**
 
@@ -160,7 +160,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permisos   {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos** (IU táctil)
 
@@ -172,13 +172,13 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy    {#live-copy}
+### Live Copy     {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio    {#site-structure}
+### Estructura del sitio     {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 

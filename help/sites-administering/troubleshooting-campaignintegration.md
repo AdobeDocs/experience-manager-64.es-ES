@@ -64,11 +64,11 @@ En Adobe Campaign, asegúrese de que no hay ninguna barra diagonal final (/) des
 
 ## Si recibe una advertencia sobre la configuración regional {#if-you-get-a-warning-about-your-setlocale}
 
-Si está iniciando el servicio Apache HTTPD y ve el error, `"Warning: setlocale: LC_CTYPE cannot change locale"` asegúrese de tener instalada la configuración regional **en_CA.ISO-8859-15** en su sistema.
+Si está iniciando el servicio Apache HTTPD y ve el error `"Warning: setlocale: LC_CTYPE cannot change locale"` asegúrese de tener su **en_CA.ISO-8859-15 configuración regional** instalada en el sistema.
 
 Puede comprobar si está instalado mediante `local -a`. Si no está instalado, puede parchear **/usr/local/neolane/nl6/env.sh** script y cambiar la configuración regional a una instalada.
 
-## Si aparece un error al compilar la secuencia de comandos &#39;get_nms_amcGetSeedMetaData_jssp&#39; {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
+## Si se produce un error al compilar la secuencia de comandos &#39;get_nms_amcGetSeedMetaData_jssp&#39; {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
 
 Si ve el siguiente mensaje de error en el archivo de registro de AEM:
 
@@ -78,7 +78,7 @@ Utilice la siguiente solución:
 
 1. Abrir archivo **$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js**
 1. Modificar la línea 467 del método &quot;amcGetSeedMetaData&quot;
-1. Change `label : [inclView.@label](mailto:inclView.@label)` to `label : String([inclView.@label](mailto:inclView.@label))`
+1. Cambiar `label : [inclView.@label](mailto:inclView.@label)` a `label : String([inclView.@label](mailto:inclView.@label))`
 
 1. Guardar.
 1. Reinicie el servidor.
@@ -99,7 +99,7 @@ Después de hacer clic en Sincronizar, aparece un error que indica que se ha pro
 
 Esto sucede si todavía hay información de Adobe Campaign obsoleta en la instancia de AEM. Solucione este problema eliminando todas las configuraciones de integración de campaña que se encuentran en AEM y reconstruyéndolas. A continuación, cree una nueva plantilla.
 
-## Si una conexión a SSL muestra un error al configurar el servicio en la nube {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
+## Si una conexión a SSL muestra un error al configurar el servicio de nube {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
 En el error.log de AEM, si ve lo siguiente:
 
@@ -128,11 +128,11 @@ Al intentar sincronizar contenido en Adobe Campaign envío, AEM devuelve una lis
 Para resolver este problema:
 
 * El despachante o proxy inverso debe configurarse para pasar el protocolo original como encabezado.
-* El filtro *SSL del servicio* Apache Felix Http de la configuración OSGi ([https://&lt;host>:&lt;puerto>/system/console/configMgr](http://localhost:4502/system/console/configMgr)) debe configurarse con los ajustes de encabezado respectivos. Consulte [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
+* El *Filtro SSL de servicio Apache Felix Http* en la configuración OSGi ([https://&lt;host>:&lt;puerto>/system/console/configMgr](http://localhost:4502/system/console/configMgr)) debe configurarse con los ajustes de encabezado respectivos. Consulte [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
 
 ## Si la plantilla personalizada que he creado no se puede seleccionar en Propiedades de página {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
-Al crear una plantilla de correo para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el nodo **jcr:content** de la plantilla o no podrá seleccionar la plantilla Adobe Campaign en Propiedades **de** página de AEM (el campo está deshabilitado).
+Al crear una plantilla de correo para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el nodo **jcr:content** de la plantilla, o no podrá seleccionar la plantilla Adobe Campaign en **Propiedades de la página** de AEM (el campo está deshabilitado).
 
 ## Si aparece el error &quot;com.day.cq.mcm.campaña.servlets.util.ParameterMapper&quot; en los registros {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 

@@ -1,8 +1,8 @@
 ---
 title: Administración programática de los PreferenciasNodes
 seo-title: Administración programática de los PreferenciasNodes
-description: nulo
-seo-description: nulo
+description: Utilice la API de servicio de Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
+seo-description: Utilice la API de servicio de Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

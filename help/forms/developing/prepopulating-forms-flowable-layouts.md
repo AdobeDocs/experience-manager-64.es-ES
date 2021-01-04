@@ -1,8 +1,8 @@
 ---
 title: Rellenado previo de Forms con diseños de posición variable
 seo-title: Rellenado previo de Forms con diseños de posición variable
-description: nulo
-seo-description: nulo
+description: Rellenar previamente formularios con presentación flexible para mostrar datos a los usuarios dentro de un formulario procesado mediante la API de Java y la API de servicio Web.
+seo-description: Rellenar previamente formularios con presentación flexible para mostrar datos a los usuarios dentro de un formulario procesado mediante la API de Java y la API de servicio Web.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 1%
+source-wordcount: '3533'
+ht-degree: 0%
 
 ---
 

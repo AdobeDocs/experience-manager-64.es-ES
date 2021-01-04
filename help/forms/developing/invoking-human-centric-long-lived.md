@@ -1,8 +1,8 @@
 ---
 title: Invocar procesos de larga vida centrados en el ser humano
 seo-title: Invocar procesos de larga vida centrados en el ser humano
-description: nulo
-seo-description: nulo
+description: invoque mediante programación procesos de larga duración centrados en el ser humano creados en Workbench mediante una aplicación cliente basada en Web Java que utilice la API de invocación, una aplicación ASP.NET que utilice servicios Web y una aplicación cliente creada con Flex que utilice Remoting.
+seo-description: invoque mediante programación procesos de larga duración centrados en el ser humano creados en Workbench mediante una aplicación cliente basada en Web Java que utilice la API de invocación, una aplicación ASP.NET que utilice servicios Web y una aplicación cliente creada con Flex que utilice Remoting.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3752'
 ht-degree: 0%
 
 ---

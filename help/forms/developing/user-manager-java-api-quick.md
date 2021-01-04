@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API de Java del Administrador de usuarios (SOAP)
 seo-title: Inicio rápido de la API de Java del Administrador de usuarios (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice la API de Administrador de usuarios para agregar usuarios, eliminar usuarios, crear grupos, administrar usuarios y grupos, administrar funciones y permisos, sincronizar usuarios mediante programación y administrar los nodos de preferencias mediante programación.
+seo-description: Utilice la API de Administrador de usuarios para agregar usuarios, eliminar usuarios, crear grupos, administrar usuarios y grupos, administrar funciones y permisos, sincronizar usuarios mediante programación y administrar los nodos de preferencias mediante programación.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---

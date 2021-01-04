@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de JavaAPI (SOAP) del servicio de integración de datos de formulario
 seo-title: Inicio rápido de JavaAPI (SOAP) del servicio de integración de datos de formulario
-description: nulo
-seo-description: nulo
+description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario PDF y exportar datos desde un formulario PDF mediante la API de Java.
+seo-description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario PDF y exportar datos desde un formulario PDF mediante la API de Java.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---

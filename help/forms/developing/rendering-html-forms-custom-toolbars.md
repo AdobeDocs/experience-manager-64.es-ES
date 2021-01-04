@@ -1,8 +1,8 @@
 ---
 title: Representación de HTML Forms con barras de herramientas personalizadas
 seo-title: Representación de HTML Forms con barras de herramientas personalizadas
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para personalizar una barra de herramientas que se procesa con un formulario HTML. Puede procesar un formulario HTML con una barra de herramientas personalizada mediante la API de Java y una API de servicio Web.
+seo-description: Utilice el servicio Forms para personalizar una barra de herramientas que se procesa con un formulario HTML. Puede procesar un formulario HTML con una barra de herramientas personalizada mediante la API de Java y una API de servicio Web.
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Representación de Forms como HTML
 seo-title: Representación de Forms como HTML
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP procedente de un navegador web. Puede utilizar la API de Java y la API de servicio Web para procesar formularios como HTML.
+seo-description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP procedente de un navegador web. Puede utilizar la API de Java y la API de servicio Web para procesar formularios como HTML.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '4109'
+source-wordcount: '4175'
 ht-degree: 1%
 
 ---

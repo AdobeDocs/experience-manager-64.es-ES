@@ -1,8 +1,8 @@
 ---
 title: Optimización del rendimiento del servicio Forms
 seo-title: Optimización del rendimiento del servicio Forms
-description: nulo
-seo-description: nulo
+description: Configure las opciones de tiempo de ejecución al procesar un formulario y almacene archivos XDP en el repositorio para optimizar el rendimiento del servicio de Forms.
+seo-description: Configure las opciones de tiempo de ejecución al procesar un formulario y almacene archivos XDP en el repositorio para optimizar el rendimiento del servicio de Forms.
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---

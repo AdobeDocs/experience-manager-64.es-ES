@@ -1,8 +1,8 @@
 ---
 title: Trabajar con credenciales
 seo-title: Trabajar con credenciales
-description: nulo
-seo-description: nulo
+description: Importar credenciales a AEM Forms mediante la API de administrador de confianza y la API de Java. Además, aprenda a eliminar credenciales mediante la API del administrador de confianza y la API de Java.
+seo-description: Importar credenciales a AEM Forms mediante la API de administrador de confianza y la API de Java. Además, aprenda a eliminar credenciales mediante la API del administrador de confianza y la API de Java.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---

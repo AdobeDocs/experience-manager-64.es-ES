@@ -1,8 +1,8 @@
 ---
 title: Importación y exportación de datos
 seo-title: Importación y exportación de datos
-description: nulo
-seo-description: nulo
+description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario PDF y exportar datos desde un formulario PDF mediante la API de Java y la API de servicio Web.
+seo-description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario PDF y exportar datos desde un formulario PDF mediante la API de Java y la API de servicio Web.
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2796'
 ht-degree: 0%
 
 ---

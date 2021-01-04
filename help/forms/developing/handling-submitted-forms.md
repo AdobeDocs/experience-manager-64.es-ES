@@ -1,8 +1,8 @@
 ---
 title: Gestión de Forms enviado
 seo-title: Gestión de Forms enviado
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para recuperar los datos enviados introducidos en un formulario interactivo. El usuario puede enviar los datos del formulario en los formatos XML, PDF y URL UTF-16.
+seo-description: Utilice el servicio Forms para recuperar los datos enviados introducidos en un formulario interactivo. El usuario puede enviar los datos del formulario en los formatos XML, PDF y URL UTF-16.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Una página web contiene un vínculo que accede a un servlet Java que invoca el servicio Forms.</p></td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
    <td><p>El servicio Forms procesa un formulario PDF interactivo en el navegador web del cliente.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>El usuario rellena un formulario interactivo y hace clic en un botón de envío. El formulario se devuelve al servicio Forms como datos PDF. Esta opción se establece en Designer.</p></td>
   </tr>
   <tr>

@@ -1,8 +1,8 @@
 ---
 title: Cifrar y descifrar Documentos PDF
 seo-title: Cifrar y descifrar Documentos PDF
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Cifrado para cifrar y descifrar documentos. Las tareas del servicio de cifrado incluyen cifrar un documento PDF con una contraseña, cifrar un documento PDF con un certificado, quitar la codificación basada en contraseña de un documento PDF, quitar la codificación basada en certificados de un documento PDF, desbloquear el documento PDF para que se puedan realizar otras operaciones de servicio y determinar el tipo de codificación de un documento PDF seguro.
+seo-description: Utilice el servicio Cifrado para cifrar y descifrar documentos. Las tareas del servicio de cifrado incluyen cifrar un documento PDF con una contraseña, cifrar un documento PDF con un certificado, quitar la codificación basada en contraseña de un documento PDF, quitar la codificación basada en certificados de un documento PDF, desbloquear el documento PDF para que se puedan realizar otras operaciones de servicio y determinar el tipo de codificación de un documento PDF seguro.
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8244'
 ht-degree: 0%
 
 ---

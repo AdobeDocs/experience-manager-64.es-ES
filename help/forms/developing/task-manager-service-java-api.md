@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
 seo-title: Inicio rápido de la API de Java del servicio Administrador de tareas (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Administrador de Tareas para asignar tareas, bloquear tareas, recuperar tareas asignadas a usuarios, recuperar datos de formulario de tareas, modificar datos de formulario, recuperar archivos adjuntos y recuperar información de tarea.
+seo-description: Utilice el servicio Administrador de Tareas para asignar tareas, bloquear tareas, recuperar tareas asignadas a usuarios, recuperar datos de formulario de tareas, modificar datos de formulario, recuperar archivos adjuntos y recuperar información de tarea.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---

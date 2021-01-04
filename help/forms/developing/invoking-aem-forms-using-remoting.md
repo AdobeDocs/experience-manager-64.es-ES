@@ -1,8 +1,8 @@
 ---
 title: Invocación de AEM Forms mediante Remoting
 seo-title: Invocación de AEM Forms mediante Remoting
-description: nulo
-seo-description: nulo
+description: Utilice Remoting para invocar un proceso de AEM Forms para invocar procesos creados en Workbench. Puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex.
+seo-description: Utilice Remoting para invocar un proceso de AEM Forms para invocar procesos creados en Workbench. Puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4654'
 ht-degree: 0%
 
 ---

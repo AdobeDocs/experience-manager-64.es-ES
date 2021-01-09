@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ El menú desplegable de la fila también proporciona la operación Editar para e
 >[!NOTE]
 >
 >Aunque puede agregar cualquier número de filas en una tabla, el número máximo de columnas que puede agregar es seis. Además, no puede eliminar la fila de encabezado de la tabla.
+
+### Configurar el ancho de columna de una tabla {#set-column-width}
+
+Siga los pasos siguientes para definir el ancho de columna de una tabla:
+
+1. En la ficha **[!UICONTROL Contenido]**, toque el componente **[!UICONTROL Tabla]** y toque el icono Configurar (![Configurar](assets/configure-icon.svg)).
+
+1. Introduzca la lista de valores separados por comas en el campo **[!UICONTROL Ancho de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluye 3 columnas, si se especifica 2,4,6 como valor en el campo **[!UICONTROL Ancho de columna]**, el ancho de las columnas se define como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 define el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 define el ancho de la tercera columna como la mitad del ancho de la tabla.
 
 ### Añadir descripción de tabla {#add-table-description}
 

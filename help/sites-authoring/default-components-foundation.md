@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 85%
+source-wordcount: '6670'
+ht-degree: 84%
 
 ---
 
@@ -65,7 +65,7 @@ Los componentes generales son los básicos que se utilizan para crear contenido.
 
 Es posible definir un vínculo con título y descripción.
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 ### Imagen adaptable {#adaptive-image}
 
@@ -337,6 +337,10 @@ La aplicación externa se integra en el sistema de párrafos de la página AEM; 
 >[!CAUTION]
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
 
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
+
 El componente Flash permite cargar una película Flash. Puede arrastrar un recurso flash desde el buscador de contenido al componente, o bien, puede utilizar el cuadro de diálogo:
 
 * **Flash**
@@ -539,6 +543,10 @@ En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede
 >[!CAUTION]
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
 
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
+
 Este componente proporciona los campos Nombre de usuario y Contraseña.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -574,6 +582,10 @@ Puede configurar:
       Texto que indica que el usuario ya ha iniciado sesión.
 
 ### Estado de orden {#order-status}
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 * **Título**
 
@@ -711,6 +723,10 @@ Si es obligatorio, se puede configurar:
 
 >[!CAUTION]
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 Este componente permite cargar una serie de imágenes para mostrar como presentación en la página. Puede añadir o eliminar las imágenes y asignar un título a cada una. En Avanzado puede especificar el tamaño del área de visualización.
 
@@ -878,6 +894,10 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 ![dc_title_use](assets/dc_title_use.png)
 
 ### Vídeo {#video}
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 El componente **Vídeo** permite colocar un elemento de vídeo predefinido, listo para utilizar en una página.
 
@@ -1293,6 +1313,10 @@ El componente está configurado para su uso inmediato, pero es posible cambiar l
 
 >[!CAUTION]
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 El componente Captcha requiere que el usuario escriba una cadena alfanumérica tal y como se muestra en pantalla. La cadena cambia con cada actualización.
 

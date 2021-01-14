@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 8%
 
 ---
@@ -84,7 +84,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo define un autor de plantilla la estructura, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Para obtener información técnica sobre la estructura, consulte [Estructura](/help/sites-developing/page-templates-editable.md#structure) en este documento.
+   Para obtener detalles técnicos sobre la estructura, consulte [Estructura](/help/sites-developing/page-templates-editable.md#structure) en este documento.
 
    **Políticas**
 
@@ -95,7 +95,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo define las políticas un autor de plantilla, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-   Para obtener información técnica sobre las políticas, consulte [Políticas de contenido](/help/sites-developing/page-templates-editable.md#content-policies) en este documento.
+   Para obtener detalles técnicos sobre las políticas, consulte [Políticas de contenido](/help/sites-developing/page-templates-editable.md#content-policies) en este documento.
 
    **Contenido inicial**
 
@@ -122,7 +122,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo un autor de plantilla habilita una plantilla, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Para obtener información técnica sobre cómo habilitar una plantilla, consulte [Activación y autorización de una plantilla para nosotros](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e en este documento
+   Para obtener detalles técnicos sobre cómo habilitar una plantilla, consulte [Habilitación y autorización de una plantilla para nosotros](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e en este documento
 
 1. Utilícelo para crear páginas de contenido.
 
@@ -133,6 +133,16 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener detalles técnicos sobre la creación de páginas con plantillas editables, consulte [Páginas de contenido resultantes](/help/sites-developing/page-templates-editable.md#resultant-content-pages) en este documento.
 
+>[!TIP]
+>
+>No introduzca nunca en una plantilla información que deba internacionalizarse. Para fines de internalización, se recomiendan las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>
+>Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
+
 >[!NOTE]
 >
 >La biblioteca de cliente del editor asume la presencia de la Área de nombres `cq.shared` en las páginas de contenido y, si no se encuentra, se producirá el error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -140,10 +150,6 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la Área de nombres `cq.shared`.
 >
 >Consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md) para obtener más información.
-
->[!CAUTION]
->
->No introduzca nunca en una plantilla información que deba [internacionalizarse](/help/sites-developing/i18n.md).
 
 ## Carpetas de plantilla {#template-folders}
 
@@ -217,7 +223,7 @@ Para crear una nueva carpeta, puede hacer lo siguiente:
 
 1. Vaya a **Navegación global** -> **Herramientas** > **Navegador de configuración**.
 
-   Las carpetas existentes se muestran a la izquierda, incluida la carpeta **global** l.
+   Las carpetas existentes se muestran a la izquierda, incluida la carpeta **global**.
 
 1. Haga clic en **Crear**.
 1. En el cuadro de diálogo **Crear configuración** deben configurarse los siguientes campos:
@@ -282,7 +288,7 @@ En la tabla siguiente se detallan los permisos necesarios para editar plantillas
    <td>Creadores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en el espacio específico del sitio <code>/conf</code></td> 
   </tr> 
   <tr> 
-   <td>Usuario Web anónimo</td> 
+   <td>Usuario web anónimo</td> 
    <td>read</td> 
    <td>El usuario web anónimo debe leer las directivas al procesar una página</td> 
   </tr> 

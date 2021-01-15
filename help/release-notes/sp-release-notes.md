@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 24%
 
 ---
@@ -48,7 +48,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * La integración del modelo de datos de formulario mediante el servicio web SOAP ahora admite grupos de opciones o atributos en los elementos.
 
-* AEM Assets ahora se configura con Brand Portal a través de Adobe I/O.
+* AEM Assets ahora se configura con Brand Portal a través de [!DNL Adobe I/O].
 
 * Se ha actualizado la versión de jQuery incluida en ContextHub a 3.2.1.
 
@@ -227,7 +227,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en la implement
 
 * Depuración de Evento DAM elimina los datos de evento más recientes (maxSavedActivities) y contiene los datos creados anteriormente (NPR-30870).
 
-* El cambio de nombre y título del recurso no persistió después de mover la operación a una carpeta de destino que activa el desplazamiento infinito al seleccionarla (NPR-30647).
+* El cambio de nombre y título del recurso no persistió después de mover la operación a una carpeta de destino que déclencheur el desplazamiento infinito al seleccionarla (NPR-30647).
 
 * Las colecciones se eliminan de la vista al aplicar cualquier filtro en AEM Assets al que se haya accedido desde Adobe Asset Link (CQ-4280534).
 
@@ -635,7 +635,7 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 
 * Se ha aumentado el límite de paginación del resultado de búsqueda a 100 páginas para la vista de tarjetas y a 200 para la vista de listas. NPR-29332: revisión para GRANITE-24644
 * Debido a la carga lenta de etiquetas, no se muestra nada en la página de recopilación. NPR-29267: revisión para GRANITE-24902
-* Si se cambia el límite de paginación a 100 en lugar de 40, se activa una carga diferida adicional sin una solicitud de paginación. NPR-29246: revisión para GRANITE-25027
+* Si se cambia el límite de paginación a 100 en lugar de 40 déclencheur, la carga diferida adicional no se realiza con una solicitud de paginación. NPR-29246: revisión para GRANITE-25027
 * AEM campo de contraseña de granito no se rellena después del cifrado. NPR-29245: revisión para GRANITE-24908
 
 **Integración**
@@ -1459,7 +1459,7 @@ Algunos de los aspectos destacados de la AEM 6.4.2.0 son:
 
 **Flujo de trabajo**
 
-* La interfaz de usuario del iniciador de flujo de trabajo no muestra las últimas 41 configuraciones del iniciador y activa un error de javascript en la consola. NPR-25028: revisión para CQ-4247604
+* La interfaz de usuario del iniciador de flujo de trabajo no muestra las últimas 41 configuraciones del iniciador y déclencheur un error de javascript en la consola. NPR-25028: revisión para CQ-4247604
 * Editar un flujo de trabajo heredado sin editar su iniciador hace que se creen varios flujos de trabajo en cualquier flujo de trabajo que contenga un paso Activar página/recurso. NPR-25870: revisión para CQ-4250896
 * Vínculo incorrecto en la carga útil del flujo de trabajo si la página tiene un nodo de metadatos. NPR-25916: revisión para CQ-4250733
 
@@ -1721,7 +1721,7 @@ AEM 6.4.1.0 puede instalarse en AEM 6.4 GA. Algunos de los aspectos destacados d
 * Cuando cambiamos el nombre de la página mientras se mueve, el movimiento de la página se realiza correctamente, pero la funcionalidad de cambio de nombre no funciona. NPR-22923: revisión para CQ-4235907
 * Error al publicar una página de Live Copy que apunta a una página de importador en campañas de Adobe. NPR-23053: revisión para CQ-4237164
 * Mover/Cambiar nombre en la IU clásica falla con el error &quot;Error al mover página&quot; y no se ha cambiado el nombre. NPR-23051: revisión para CQ-4235907
-* Al cambiar el contenido de la vista de columna a la vista de lista, se procesa una página en blanco y se activa una excepción de puntero nulo para las páginas con OffTime establecido y OnTime como en blanco. NPR-22968, NPR-23052: revisión para CQ-4238940
+* Al cambiar el contenido de la vista de columna a la vista de lista, se procesa una página en blanco y se déclencheur una excepción de puntero nulo para las páginas con OffTime establecido y OnTime como en blanco. NPR-22968, NPR-23052: revisión para CQ-4238940
 
 **Comercio**
 
@@ -1796,7 +1796,7 @@ AEM 6.4.1.0 puede instalarse en AEM 6.4 GA. Algunos de los aspectos destacados d
 
 **Flujo de trabajo**
 
-* El servicio de notificación por correo electrónico de flujo de trabajo de CQ por día desencadena un mensaje de correo electrónico por nodo Mongo para las notificaciones WorkflowCompleted y WorkflowAborted. NPR-22515: revisión para CQ-4238172
+* El servicio de notificación por correo electrónico del flujo de trabajo de CQ por día déclencheur un correo electrónico por nodo de Mongo para las notificaciones WorkflowCompleted y WorkflowAborted. NPR-22515: revisión para CQ-4238172
 * La ejecución del flujo de trabajo del recurso de actualización DAM produce una excepción NullPointerException. NPR-23010: revisión para Granite-21096
 * El paso Proceso de flujo de trabajo no muestra secuencias de comandos de /etc/workflow/scripts. NPR-23263: revisión para Granite-20775
 * El paso de participante dinámico del flujo de trabajo no muestra scripts de /apps/workflow/scripts. NPR-23464: revisión para Granite-21276

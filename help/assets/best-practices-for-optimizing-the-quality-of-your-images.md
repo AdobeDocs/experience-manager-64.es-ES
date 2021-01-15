@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 5%
+source-wordcount: '1493'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>
 
 El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
 
-El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/s7_sharpening_images.pdf) también se aplica a AEM.
+El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/sharpening_images.pdf) también se aplica a AEM.
 
 Consulte también [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,19 +64,18 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
       * **[!UICONTROL cantidad]** (0-5, intensidad del efecto).
       * **[!UICONTROL radius]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles).
 
-         Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca solo los píxeles del borde, mientras que un valor superior enfoca una banda más ancha de píxeles.
+             Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca sólo los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
+         * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
 
-      * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
+             Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
+         
+         Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
-         Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL threshold]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
-      Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
+         AEM tema de ayuda sobre cómo enfocar una imagen.
 
-      AEM tema de ayuda sobre cómo enfocar una imagen.
+         Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/sharpening_images.pdf).
 
-      Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/s7_sharpening_images.pdf).
-
-   * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
-
+      * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
 Se recomienda utilizar el inicio con el parámetro de radio de máscara de enfoque. Los ajustes de radio con los que puede realizar inicios son los siguientes:
 
@@ -125,7 +124,6 @@ Si los resultados de enfoque siguen siendo insatisfactorios, aumente el radio en
 
 A medida que experimenta, también puede encontrar las siguientes sugerencias generales útiles para optimizar el flujo de trabajo:
 
-* Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la funcionalidad de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
+* Pruebe distintos parámetros en tiempo real, directamente en una URL.
 * La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
 * AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para optimizar y perfeccionar aún más los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
-

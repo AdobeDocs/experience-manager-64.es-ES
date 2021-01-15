@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 11%
 
 ---
@@ -55,5 +55,5 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
    >
    >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]**, si corresponde) no están disponibles.
    >
-   >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor Dynamic Media S7.
+   >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor de Dynamic Media.
 

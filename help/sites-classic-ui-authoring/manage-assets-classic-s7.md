@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 31%
@@ -97,7 +97,7 @@ Puede publicar manualmente un recurso siempre que se encuentre dentro de la carp
 
 Adobe recomienda publicar recursos en Dynamic Media Classic solo desde los recursos de la carpeta de destinatario de Dynamic Media Classic. Sin embargo, si necesita cargar recursos desde una carpeta fuera de la carpeta destinatario, puede hacerlo cargándolos en una carpeta *ad-hoc* de Dynamic Media Classic.
 
-Para ello, configure la configuración de la nube para la página en la que aparecerá el recurso. A continuación, agregue un componente de Dynamic Media Classic a la página y arrastre y suelte un recurso en el componente. Una vez definidas las propiedades de página para esa página, aparece un vínculo **[!UICONTROL Publicar en Dynamic Media Classic]** que cuando se seleccionan los activadores que se cargan en Dynamic Media Classic.
+Para ello, configure la configuración de la nube para la página en la que aparecerá el recurso. A continuación, agregue un componente de Dynamic Media Classic a la página y arrastre y suelte un recurso en el componente. Una vez definidas las propiedades de página para esa página, aparece un vínculo **[!UICONTROL Publicar en Dynamic Media Classic]** que cuando se cargan déclencheur seleccionados en Dynamic Media Classic.
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ El componente Imagen clásica de Dynamic Media le permite añadir la funcionalid
 
 **[!UICONTROL Formato]**  de salida: seleccione el formato de salida de la imagen, por ejemplo jpeg. En función del formato de salida que seleccione, puede tener opciones de configuración adicionales. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Enfoque]** : seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [*Calidad de imagen clásica de Dynamic Media Adobe y Optimizaciones para enfoque*](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL Enfoque]** : seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [*Calidad de imagen clásica de Dynamic Media Adobe y Optimizaciones para enfoque*](/help/assets/assets/sharpening_images.pdf).
 
 **[!UICONTROL Modificadores]**  de URL: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales de Dynamic Media Classic. Se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y en la [referencia de comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 

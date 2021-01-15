@@ -3,21 +3,21 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Descubra cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 46%
+source-wordcount: '1647'
+ht-degree: 41%
 
 ---
 
 
 # Configurar AEM Assets con Brand Portal {#configure-integration-64}
 
-Los recursos de Adobe Experience Manager (AEM) se configuran con Brand Portal a través de Adobe I/O, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
+Adobe Experience Manager (AEM) Assets se configura con Brand Portal a través de [!DNL Adobe I/O], que obtiene un testigo IMS para la autorización del inquilino de Brand Portal.
 
 >[!NOTE]
 >
->La configuración de AEM Assets con Brand Portal mediante Adobe I/O es compatible con AEM 6.4.8.0 y versiones posteriores.
+>La configuración de AEM Assets con Brand Portal mediante [!DNL Adobe I/O] es compatible con AEM 6.4.8.0 y versiones posteriores.
 >
 >Anteriormente, Brand Portal se configuraba en la IU clásica mediante OAuth Gateway heredado, que utiliza el intercambio de tokens JWT para obtener un Token de acceso IMS para la autorización.
 
@@ -25,12 +25,12 @@ Los recursos de Adobe Experience Manager (AEM) se configuran con Brand Portal a 
 >
 >***Solo para clientes existentes***
 >
->Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante Adobe I/O.
+>Se recomienda seguir utilizando la configuración heredada de OAuth Gateway. En caso de que surjan problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una nueva configuración mediante [!DNL Adobe I/O].
 
 Esta ayuda describe los dos casos de uso siguientes:
 
-* [Nueva configuración](#configure-new-integration-64): Si es un usuario nuevo de Brand Portal y desea configurar la instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en Adobe I/O.
-* [Configuración](#upgrade-integration-64) de actualización: Si ya es usuario de Brand Portal y su instancia de autor de AEM Assets está configurada con Brand Portal en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en Adobe I/O.
+* [Nueva configuración](#configure-new-integration-64): Si es un usuario nuevo de Brand Portal y desea configurar la instancia de autor de AEM Assets con Brand Portal, puede crear una nueva configuración en  [!DNL Adobe I/O].
+* [Configuración](#upgrade-integration-64) de actualización: Si ya es usuario de Brand Portal y su instancia de autor de AEM Assets está configurada con Brand Portal en OAuth Gateway heredado, se recomienda eliminar las configuraciones existentes y crear una nueva configuración en  [!DNL Adobe I/O].
 
 La información proporcionada se basa en el supuesto de que cualquiera que lea esta Ayuda está familiarizado con las siguientes tecnologías:
 
@@ -73,7 +73,7 @@ Para obtener instrucciones detalladas, consulte
 Realice los siguientes pasos en la secuencia mostrada si va a configurar AEM Assets con Brand Portal por primera vez:
 
 1. [Obtener un certificado público](#public-certificate)
-1. [Crear la integración de Adobe I/O](#createnewintegration)
+1. [ [!DNL Adobe I/O] Crear integración](#createnewintegration)
 1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
 1. [Configurar el servicio en la nube](#configure-the-cloud-service)
 1. [Probar la configuración](#test-integration)
@@ -93,7 +93,7 @@ La configuración de IMS incluye dos pasos:
 
 ### Obtener un certificado público {#public-certificate}
 
-El certificado público permite autenticar el perfil en Adobe I/O.
+El certificado público le permite autenticar su perfil el [!DNL Adobe I/O].
 
 1. Inicie sesión en su instancia de autor de AEM Assets
 Dirección URL predeterminada: http:// localhost:4502/aem/start.html
@@ -117,7 +117,7 @@ Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 
    ![Crear certificado](assets/ims-config2.png)
 
-1. Haga clic en **[!UICONTROL Descargar clave pública]** y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [crear la integración](#createnewintegration) de Adobe I/O.
+1. Haga clic en **[!UICONTROL Descargar clave pública]** y guarde el archivo de certificado *AEM-Adobe-IMS.crt* en el equipo. El archivo de certificado se utiliza para [crear [!DNL Adobe I/O] integración](#createnewintegration).
 
    ![Descargar certificado](assets/ims-config3.png)
 
@@ -125,13 +125,13 @@ Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 
    En la pestaña **Cuenta**, cree la cuenta de Adobe IMS, pero para ello necesitará los detalles de integración. Mantenga esta página abierta por ahora.
 
-   Abra una nueva ficha y [Cree la integración de Adobe I/O](#createnewintegration) para obtener los detalles de integración de las configuraciones de cuenta de IMS.
+   Abra una nueva ficha y [Cree [!DNL Adobe I/O] integración](#createnewintegration) para obtener los detalles de integración de las configuraciones de cuenta de IMS.
 
-### Crear la integración de Adobe I/O {#createnewintegration}
+### Crear [!DNL Adobe I/O] integración {#createnewintegration}
 
-La integración de Adobe I/O genera la clave de API, el secreto del cliente y la carga útil (JWT), que es necesaria para configurar las configuraciones de cuenta de IMS.
+[!DNL Adobe I/O]La integración de genera la clave de API, el secreto del cliente y la carga útil (JWT), que es necesaria para configurar las configuraciones de cuenta de IMS.
 
-1. Inicie sesión en la consola de Adobe I/O con privilegios de administrador del sistema en la organización IMS del inquilino de Brand Portal.
+1. Inicie sesión en la [!DNL Adobe I/O] consola con privilegios de administrador del sistema en la organización IMS del inquilino de Brand Portal.
 
    Dirección URL predeterminada: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -174,7 +174,7 @@ La integración de Adobe I/O genera la clave de API, el secreto del cliente y la
 Asegúrese de haber realizado los siguientes pasos:
 
 * [Obtener un certificado público](#public-certificate)
-* [Crear la integración de Adobe I/O](#createnewintegration)
+* [ [!DNL Adobe I/O] Crear integración](#createnewintegration)
 
 **Pasos para crear la configuración de cuenta de IMS:**
 
@@ -184,7 +184,7 @@ Asegúrese de haber realizado los siguientes pasos:
 
    En **[!UICONTROL Servidor de autorización]**, introduzca la dirección URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   Pegue la clave de API, el Secreto del cliente y la carga útil JWT que ha copiado al final de [Crear integración de Adobe I/O](#createnewintegration).
+   Pegue la clave de API, el secreto del cliente y la carga útil JWT que ha copiado al final de [Crear [!DNL Adobe I/O] integración](#createnewintegration).
 
    Haga clic en **[!UICONTROL Crear]**.
 
@@ -335,7 +335,7 @@ Realice los siguientes pasos para eliminar la configuración existente:
    ![](assets/delete-mac-user.png)
 
 
-Ahora puede [crear configuración](#configure-new-integration-64) en la instancia de creación de AEM 6.4 en Adobe I/O.
+Ahora puede [crear configuración](#configure-new-integration-64) en la instancia de creación de AEM 6.4 en [!DNL Adobe I/O].
 
 
 

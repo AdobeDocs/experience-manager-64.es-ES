@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3850'
 ht-degree: 8%
 
 ---
@@ -394,7 +394,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul> 
     <div>
       El enfoque se describe en 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Enfoque de imágenes</a>. 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Enfoque de imágenes</a>. 
     </div> </td> 
   </tr> 
   <tr> 
@@ -504,7 +504,7 @@ Si ejecuta el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen
 1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen en la lista de ajustes preestablecidos de imagen y, a continuación, toque **[!UICONTROL Publicar]**.
 1. Después de publicar el ajuste preestablecido de imagen, el estado cambia de no publicado a publicado.
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
 ## Eliminación de ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 

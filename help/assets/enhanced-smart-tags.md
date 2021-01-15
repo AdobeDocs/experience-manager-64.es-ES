@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 15%
+source-wordcount: '1567'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a l
 
 En segundo plano, el servicio de contenido inteligente utiliza la estructura AI de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en Adobe Experience Manager (AEM), el administrador del sistema debe integrar la instancia de AEM con E/S de Adobe.
+Smart Content Service es un servicio en la nube alojado en [!DNL Adobe I/O]. Para utilizarlo en Adobe Experience Manager (AEM), el administrador del sistema debe integrar su instancia de AEM con [!DNL Adobe I/O].
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -44,14 +44,14 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 ## Requisitos previos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en Adobe I/O:
+Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe I/O]:
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
 
 ## Incorporación {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento de AEM. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a E/S de Adobe.
+El servicio de contenido inteligente está disponible para su compra como complemento de AEM. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a [!DNL Adobe I/O].
 
 El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con AEM. Para integrar el servicio con AEM Assets, consulte [Configuración de etiquetas inteligentes](config-smart-tagging.md).
 
@@ -133,7 +133,7 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 
 ## Etiquetado automático de recursos {#tagging-assets-automatically}
 
-Una vez que haya formado el servicio de contenido inteligente, puede activar el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas a un conjunto diferente de recursos similares.
+Una vez que haya formado el servicio de contenido inteligente, puede aplicar el déclencheur del flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas correspondientes a un conjunto diferente de recursos similares.
 
 Puede ejecutar el flujo de trabajo de etiquetado de forma periódica o siempre que sea necesario.
 
@@ -149,7 +149,7 @@ Una vez seleccionada esta opción para una carpeta, el servicio de contenido int
 
 ### Etiquetado a petición {#on-demand-tagging}
 
-Puede activar el flujo de trabajo de etiquetado desde lo siguiente para etiquetar los recursos al instante:
+El flujo de trabajo de etiquetado se puede déclencheur desde lo siguiente para etiquetar los recursos al instante:
 
 * Consola de flujo de trabajo
 * Escala de tiempo

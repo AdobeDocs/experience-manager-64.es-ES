@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API de Java del servicio de ensamblador (SOAP)
 seo-title: Inicio rápido de la API de Java del servicio de ensamblador (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Ensamblador para montar un documento PDF, desmontar un documento PDF, montar un documento PDF codificado, montar un documento PDF con numeración Bates, montar un documento PDF no interactivo, determinar si un documento es compatible con PDF/A, validar documentos DDX, ensamblar documentos PDF con marcadores, crear un  DDX documento dinámicamente, montar varios portafolios PDF y XDX Fragmentos DP.
+seo-description: Utilice el servicio Ensamblador para montar un documento PDF, desmontar un documento PDF, montar un documento PDF codificado, montar un documento PDF con numeración Bates, montar un documento PDF no interactivo, determinar si un documento es compatible con PDF/A, validar documentos DDX, ensamblar documentos PDF con marcadores, crear un  DDX documento dinámicamente, montar varios portafolios PDF y XDX Fragmentos DP.
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---

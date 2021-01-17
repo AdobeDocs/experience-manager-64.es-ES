@@ -1,8 +1,8 @@
 ---
 title: Inicio Java APIQuick de servicio de Forms con códigos de barras (SOAP)
 seo-title: Inicio Java APIQuick de servicio de Forms con códigos de barras (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice el servicio de Forms con código de barras para descodificar datos de formulario con código de barras mediante el Inicio rápido de la API de Java.
+seo-description: Utilice el servicio de Forms con código de barras para descodificar datos de formulario con código de barras mediante el Inicio rápido de la API de Java.
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

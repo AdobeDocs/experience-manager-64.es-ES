@@ -1,17 +1,17 @@
 ---
 title: 'Acciones y capacidades de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE '
 seo-title: 'Acciones y capacidades de los Flujos de trabajo de AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE '
-description: nulo
-seo-description: nulo
+description: Obtenga más información sobre las diferencias en las acciones admitidas por AEM Bandeja de entrada y Espacio de trabajo HTML, las diferencias en las capacidades admitidas por los Flujos de trabajo de AEM centrados en el formulario en los Flujos de trabajo OSGi y AEM Forms JEE, y las diferencias entre AEM Bandeja de entrada y las funciones de la aplicación AEM Forms.
+seo-description: Obtenga más información sobre las diferencias en las acciones admitidas por AEM Bandeja de entrada y Espacio de trabajo HTML, las diferencias en las capacidades admitidas por los Flujos de trabajo de AEM centrados en el formulario en los Flujos de trabajo OSGi y AEM Forms JEE, y las diferencias entre AEM Bandeja de entrada y las funciones de la aplicación AEM Forms.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 20%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 

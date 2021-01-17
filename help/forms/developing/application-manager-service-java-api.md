@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
 seo-title: Inicio rápido de JavaAPI del servicio Application Manager (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Application Manager para implementar y quitar aplicaciones mediante el Inicio rápido de la API de Java.
+seo-description: Utilice el servicio Application Manager para implementar y quitar aplicaciones mediante el Inicio rápido de la API de Java.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---

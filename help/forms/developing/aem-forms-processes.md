@@ -1,8 +1,8 @@
 ---
 title: Explicación de los procesos de AEM Forms
 seo-title: Explicación de los procesos de AEM Forms
-description: nulo
-seo-description: nulo
+description: Obtenga información sobre cómo utilizar los procesos empresariales de AEM Forms para automatizar las operaciones. Active los procesos para crear un servicio de modo que pueda invocarlo como otros servicios. Los procesos pueden durar poco o durar mucho tiempo.
+seo-description: Obtenga información sobre cómo utilizar los procesos empresariales de AEM Forms para automatizar las operaciones. Active los procesos para crear un servicio de modo que pueda invocarlo como otros servicios. Los procesos pueden durar poco o durar mucho tiempo.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---

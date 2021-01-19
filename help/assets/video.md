@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
+source-wordcount: '10456'
 ht-degree: 4%
 
 ---
@@ -426,7 +426,7 @@ Como ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla 
    <td><p>Codificado</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 
@@ -901,19 +901,13 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
 
-### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor de Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor de HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visor personalizado basado en un visor de vídeo incorporado, no se requieren pasos adicionales para la vista de informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en el SDK de visor HTML5 de Scene7, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
+Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visor personalizado basado en un visor de vídeo incorporado, no se requieren pasos adicionales para la vista de informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de visor HTML5, siga los pasos siguientes para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Utilice la referencia de visores de Scene7 y el SDK de visores HTML5 de Scene7 para crear sus propios visores de vídeo.
+Utilice la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) y la [API de SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
-Consulte [Guía de referencia de visores de Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
-
-Descargue Scene7 HTML Viewer SDK de Adobe Developer Connection.
-
-Consulte [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
-
-Para vista de informes de vídeo basados en un visor de vídeo creado con el SDK de visor HTML5 de Scene7:
+Para vista de informes de vídeo basados en un visor de vídeo creado con la API de SDK de visor HTML5:
 
 1. Navegue a cualquier recurso de vídeo publicado.
 1. Junto a la esquina superior izquierda de la página del recurso, en la lista desplegable, seleccione **[!UICONTROL Visualizadores]**.
@@ -940,7 +934,7 @@ Para vista de informes de vídeo basados en un visor de vídeo creado con el SDK
 
 1. Cree el componente TrackingManager haciendo lo siguiente:
 
-   * Después de llamar a `s7sdk.Utils.init();`, cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
+   * Después de llamar a `s7sdk.Util.init();`, cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1037,7 +1031,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 >
 >El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 está disponible como descarga de [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la API del SDK del visor HTML5 de Adobe, consulte el encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la documentación de la [API de SDK de visor HTML5]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)).
 
 Puede crear una lista de capítulo para el vídeo de la misma manera que crea rótulos. Es decir, se crea un archivo WebVTT. Tenga en cuenta, sin embargo, que este archivo debe ser independiente de cualquier archivo de subtítulos WebVTT que también esté utilizando; no puede combinar rótulos y capítulos en un archivo WebVTT.
 

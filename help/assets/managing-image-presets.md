@@ -1,18 +1,16 @@
 ---
 title: Administración de ajustes preestablecidos de imagen de Dynamic Media
 description: Conozca los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -106,31 +104,31 @@ Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Argumento de proceso</strong></td> 
-   <td><strong>Configuración predeterminada</strong></td> 
-   <td><strong>Descripción</strong></td> 
+   <td><strong>Argumento de proceso</strong></td>
+   <td><strong>Configuración predeterminada</strong></td>
+   <td><strong>Descripción</strong></td>
   </tr> 
   <tr> 
-   <td>Tipos MIME</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>aplicación/ilustrador<br /> </p> </td> 
-   <td>Lista de tipos MIME de documento que se consideran documentos PDF o Illustrator.<br /> </td> 
+   <td>Tipos MIME</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>aplicación/ilustrador<br/> </p> </td>
+   <td>Lista de tipos MIME de documento que se consideran documentos PDF o Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Ancho máximo</td> 
-   <td>2048</td> 
-   <td>Ancho máximo de la representación de previsualización generada, en píxeles.<br /> </td> 
+   <td>Ancho máximo</td>
+   <td>2048</td>
+   <td>Ancho máximo de la representación de previsualización generada, en píxeles.<br/> </td>
   </tr> 
   <tr> 
-   <td>Alto máximo</td> 
-   <td>2048</td> 
-   <td>Altura máxima de la representación de previsualización generada, en píxeles.<br /> </td> 
+   <td>Alto máximo</td>
+   <td>2048</td>
+   <td>Altura máxima de la representación de previsualización generada, en píxeles.<br/> </td>
   </tr> 
   <tr> 
-   <td>Resolución</td> 
-   <td>72</td> 
-   <td>Resolución para rasterizar la primera página, en ppp (píxeles por pulgada).</td> 
-  </tr> 
- </tbody> 
+   <td>Resolución</td>
+   <td>72</td>
+   <td>Resolución para rasterizar la primera página, en ppp (píxeles por pulgada).</td>
+  </tr>
+ </tbody>
 </table>
 
 Con los argumentos de proceso predeterminados, la primera página de un documento PDF/AI se rasteriza a 72 ppp y la imagen de previsualización generada tiene un tamaño de 2048 x 2048 píxeles. Para una implementación típica, puede aumentar la resolución a un mínimo de 150 ppp o más. Por ejemplo, un documento de tamaño de letra de EE. UU. a 300 ppp requiere una anchura y una altura máximas de 2550 x 3300 píxeles, respectivamente.
@@ -158,24 +156,24 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Ampliar nombre de secuencia de comandos</strong></td> 
-   <td><strong>Predeterminado</strong></td> 
-   <td><strong>Descripción</strong></td> 
+   <td><strong>Ampliar nombre de secuencia de comandos</strong></td>
+   <td><strong>Predeterminado</strong></td>
+   <td><strong>Descripción</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Sí</td> 
-   <td>Genera una representación de 300 ppp <code>thumbnail.jpg</code> que se optimiza y se convierte en una representación PTIFF mediante <code>Dynamic Media Process Image Assets</code> componente de proceso.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>Sí</td>
+   <td>Genera una representación de 300 ppp <code>thumbnail.jpg</code> que se optimiza y se convierte en una representación PTIFF mediante <code>Dynamic Media Process Image Assets</code> componente de proceso.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Sí</td> 
-   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso InDesign. También se optimiza y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td> 
+   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso InDesign. También se optimiza y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>No</td> 
-   <td>Genera un subrecurso PDF para cada página. El subrecurso PDF se procesa como se ha descrito anteriormente. Dado que el PDF solo contiene una página, no se generan subrecursos.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>No</td>
+   <td>Genera un subrecurso PDF para cada página. El subrecurso PDF se procesa como se ha descrito anteriormente. Dado que el PDF solo contiene una página, no se generan subrecursos.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Campo</strong></td> 
-   <td><strong>Descripción</strong></td> 
+   <td><strong>Campo</strong></td>
+   <td><strong>Descripción</strong></td>
   </tr> 
   <tr> 
-   <td><strong>Nombre</strong></td> 
-   <td>Introduzca un nombre descriptivo sin espacios en blanco. Incluya la especificación de tamaño de imagen en el nombre para ayudar a los usuarios a identificar este ajuste preestablecido de imagen.</td> 
+   <td><strong>Nombre</strong></td>
+   <td>Introduzca un nombre descriptivo sin espacios en blanco. Incluya la especificación de tamaño de imagen en el nombre para ayudar a los usuarios a identificar este ajuste preestablecido de imagen.</td>
+  </tr>
+  <tr> 
+   <td><strong>Anchura y altura</strong></td>
+   <td>Introduzca en píxeles el tamaño con el que se distribuye la imagen. La anchura y la altura deben ser mayores que 0 píxeles. Si alguno de los valores es 0, no se crea ningún ajuste preestablecido. Si ambos valores están en blanco, se crea un ajuste preestablecido de imagen interactivo.</td>
   </tr> 
   <tr> 
-   <td><strong>Anchura y altura</strong></td> 
-   <td>Introduzca en píxeles el tamaño con el que se distribuye la imagen. La anchura y la altura deben ser mayores que 0 píxeles. Si alguno de los valores es 0, no se crea ningún ajuste preestablecido. Si ambos valores están en blanco, se crea un ajuste preestablecido de imagen interactivo.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Formato</strong></td> 
-   <td><p>Elija un formato en el menú.</p> <p>Al elegir <strong>JPEG</strong> se ofertas las siguientes opciones adicionales:</p> 
+   <td><strong>Formato</strong></td>
+   <td><p>Elija un formato en el menú.</p> <p>Al elegir <strong>JPEG</strong> se ofertas las siguientes opciones adicionales:</p>
     <ul> 
      <li><strong>Calidad</strong> : controla el nivel de compresión JPEG. Esta configuración afecta tanto al tamaño del archivo como a la calidad de la imagen. La escala de calidad JPEG es de 1 a 100. La escala está visible al arrastrar el control deslizante.</li> 
-     <li><strong>Activar disminución de resolución</strong>  de crominancia JPG: como el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de color y luminancia. Cuando se comprime una imagen JPEG, el componente de luminancia se deja con una resolución completa, mientras que los componentes de color se reducen al calcular el promedio de grupos de píxeles. La disminución de resolución reduce el volumen de datos en una mitad o en un tercio, sin afectar prácticamente a la calidad percibida. La disminución de resolución no se aplica a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).</li> 
+     <li><strong>Activar disminución de resolución</strong>  de crominancia JPG: como el ojo es menos sensible a la información de color de alta frecuencia que la luminancia de alta frecuencia, las imágenes JPEG dividen la información de la imagen en componentes de color y luminancia. Cuando se comprime una imagen JPEG, el componente de luminancia se deja con una resolución completa, mientras que los componentes de color se reducen al calcular el promedio de grupos de píxeles. La disminución de resolución reduce el volumen de datos en una mitad o en un tercio, sin afectar prácticamente a la calidad percibida. La disminución de resolución no se aplica a imágenes en escala de grises. Esta técnica reduce la cantidad de compresión útil para imágenes con alto contraste (por ejemplo, imágenes con texto superpuesto).</li>
+    </ul>
+    <div>
+      Elección
+     <strong>GIF</strong> o
+     <strong>GIF con alpha</strong> proporciona estas
+     <strong>Opciones de Cuantificación de color GIF</strong>:
+    </div>
+    <ul> 
+     <li><strong>Tipo  </strong>- Seleccione  <strong>Adaptable</strong>  (opción predeterminada),  <strong>Web</strong> o  <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no está disponible.</li>
+     <li><strong>Tramado</strong> : seleccione  <strong></strong> Difusor o  <strong>Desactivado</strong>.</li>
+     <li><strong>Número de colores  </strong>- Introduzca un número entre 2 y 256.</li>
+     <li><strong>Lista</strong>  de color: introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, introduzca 000000,888888,ffffff.</li>
     </ul> 
     <div>
-      Elección 
-     <strong>GIF</strong> o 
-     <strong>GIF con alpha</strong> proporciona estas 
-     <strong>Opciones de Cuantificación de color GIF</strong>: 
-    </div> 
-    <ul> 
-     <li><strong>Tipo  </strong>- Seleccione  <strong>Adaptable</strong>  (opción predeterminada),  <strong>Web</strong> o  <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no está disponible.</li> 
-     <li><strong>Tramado</strong> : seleccione  <strong></strong> Difusor o  <strong>Desactivado</strong>.</li> 
-     <li><strong>Número de colores  </strong>- Introduzca un número entre 2 y 256.</li> 
-     <li><strong>Lista</strong>  de color: introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, introduzca 000000,888888,ffffff.</li> 
-    </ul> 
-    <div>
-      Elección 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong>, o 
-     <strong>TIFF con alpha</strong> proporciona esta opción adicional: 
-    </div> 
-    <ul> 
-     <li><strong>Compresión</strong> : seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son <strong>None</strong>, <strong>Zip</strong> y <strong>Jpeg</strong>; para TIFF son <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> y <strong>Zip</strong>; y para TIFF con alfa son <strong>Ninguno</strong>, <strong>LZW</strong> y <strong>Zip</strong>.</li> 
-    </ul> <p>Al elegir <strong>PNG</strong>, <strong>PNG con alfa,</strong> o <strong>EPS</strong> no se proporcionan opciones adicionales.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Enfoque</strong></td> 
-   <td>Seleccione la opción <strong>Activar enfoque simple</strong> para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </td> 
-  </tr> 
- </tbody> 
+      Elección
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>, o
+     <strong>TIFF con alpha</strong> proporciona esta opción adicional:
+    </div>
+    <ul>
+     <li><strong>Compresión</strong> : seleccione un algoritmo de compresión. Las opciones de algoritmo para PDF son <strong>None</strong>, <strong>Zip</strong> y <strong>Jpeg</strong>; para TIFF son <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> y <strong>Zip</strong>; y para TIFF con alfa son <strong>Ninguno</strong>, <strong>LZW</strong> y <strong>Zip</strong>.</li>
+    </ul> <p>Al elegir <strong>PNG</strong>, <strong>PNG con alfa,</strong> o <strong>EPS</strong> no se proporcionan opciones adicionales.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Enfoque</strong></td>
+   <td>Seleccione la opción <strong>Activar enfoque simple</strong> para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Opciones de ficha avanzadas {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Campo</strong></td> 
-   <td><strong>Descripción</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Espacio de color</strong></td> 
-   <td>Seleccione <strong>RGB, CMYK,</strong> o <strong>Escala de grises</strong> para el espacio de color.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Perfil de color</strong></td> 
-   <td>Seleccione el perfil de espacio de color de salida al que se debe convertir el recurso si es distinto del perfil de trabajo.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Procesar intención</strong></td> 
-   <td>Puede anular la interpretación predeterminada. Las interpretaciones determinan lo que sucede con los colores que no se pueden reproducir en el perfil de color del destinatario (fuera de gama). La calidad de representación se omite si no es compatible con el perfil ICC. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Campo</strong></td>
+   <td><strong>Descripción</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Espacio de color</strong></td>
+   <td>Seleccione <strong>RGB, CMYK,</strong> o <strong>Escala de grises</strong> para el espacio de color.</td>
+  </tr>
+  <tr>
+   <td><strong>Perfil de color</strong></td>
+   <td>Seleccione el perfil de espacio de color de salida al que se debe convertir el recurso si es distinto del perfil de trabajo.</td>
+  </tr>
+  <tr>
+   <td><strong>Procesar intención</strong></td>
+   <td>Puede anular la interpretación predeterminada. Las interpretaciones determinan lo que sucede con los colores que no se pueden reproducir en el perfil de color del destinatario (fuera de gama). La calidad de representación se omite si no es compatible con el perfil ICC.
     <ul> 
-     <li>Seleccione <strong>Perceptual</strong> para comprimir la gama total de un espacio de color en otro espacio de color cuando uno o varios colores de la imagen original están fuera de la gama del espacio de color de destino.</li> 
-     <li>Seleccione <strong>Colorimétrica relativa</strong> cuando un color del espacio de color actual esté fuera de gama en el espacio de color de destinatario y desee asignarlo al color más cercano posible dentro de la gama del espacio de color de destinatario sin afectar a ningún otro color. </li> 
-     <li>Seleccione <strong>Saturación</strong> para reproducir la saturación de color de la imagen original al convertirla en el espacio de color del destinatario. </li> 
-     <li>Seleccione <strong>Colorimétrica absoluta</strong> para que coincida exactamente con los colores sin ningún ajuste para el punto blanco o el punto negro que pueda alterar el brillo de la imagen.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Compensación de punto negro</strong></td> 
-   <td>Seleccione esta opción si el perfil de salida admite esta función. La compensación de Blackpoint se ignora si no es compatible con el perfil ICC especificado.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Distorsión</strong></td> 
-   <td>Seleccione esta opción para evitar o reducir posibles defectos de bandas de color. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Tipo de enfoque</strong></td> 
-   <td><p>Seleccione <strong>Ninguno</strong>, <strong>Enfocar</strong> o <strong>Máscara de enfoque</strong>. </p> 
+     <li>Seleccione <strong>Perceptual</strong> para comprimir la gama total de un espacio de color en otro espacio de color cuando uno o varios colores de la imagen original están fuera de la gama del espacio de color de destino.</li>
+     <li>Seleccione <strong>Colorimétrica relativa</strong> cuando un color del espacio de color actual esté fuera de gama en el espacio de color de destinatario y desee asignarlo al color más cercano posible dentro de la gama del espacio de color de destinatario sin afectar a ningún otro color. </li>
+     <li>Seleccione <strong>Saturación</strong> para reproducir la saturación de color de la imagen original al convertirla en el espacio de color del destinatario. </li>
+     <li>Seleccione <strong>Colorimétrica absoluta</strong> para que coincida exactamente con los colores sin ningún ajuste para el punto blanco o el punto negro que pueda alterar el brillo de la imagen.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Compensación de punto negro</strong></td>
+   <td>Seleccione esta opción si el perfil de salida admite esta función. La compensación de Blackpoint se ignora si no es compatible con el perfil ICC especificado.</td>
+  </tr>
+  <tr>
+   <td><strong>Distorsión</strong></td>
+   <td>Seleccione esta opción para evitar o reducir posibles defectos de bandas de color. </td>
+  </tr>
+  <tr>
+   <td><strong>Tipo de enfoque</strong></td>
+   <td><p>Seleccione <strong>Ninguno</strong>, <strong>Enfocar</strong> o <strong>Máscara de enfoque</strong>. </p>
+    <ul>
+     <li>Seleccione <strong>Ninguno</strong> para desactivar el enfoque.</li>
+     <li>Seleccione <strong>Enfocar </strong>para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </li>
+     <li>Seleccione<strong> Máscara de enfoque</strong> para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se omitirá. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Photoshop.</li>
+    </ul> <p>En <strong>Máscara de enfoque</strong>, tiene las siguientes opciones:</p>
     <ul> 
-     <li>Seleccione <strong>Ninguno</strong> para desactivar el enfoque.</li> 
-     <li>Seleccione <strong>Enfocar </strong>para aplicar un filtro de enfoque básico a la imagen después de que se realice todo el escalado. El enfoque puede ayudar a compensar el desenfoque que puede producirse al mostrar una imagen con un tamaño diferente. </li> 
-     <li>Seleccione<strong> Máscara de enfoque</strong> para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se omitirá. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Photoshop.</li> 
-    </ul> <p>En <strong>Máscara de enfoque</strong>, tiene las siguientes opciones:</p> 
-    <ul> 
-     <li><strong>Cantidad</strong> : controla la cantidad de contraste aplicado a los píxeles del borde. El valor de número real predeterminado es 1,0. Para imágenes de alta resolución, puede aumentarlas hasta 5,0. Considere la cantidad como una medida de la intensidad del filtro.</li> 
-     <li><strong>Radio</strong> : determina el número de píxeles que rodean los píxeles del borde que afectan al enfoque. Para las imágenes de alta resolución, introduzca un número real entre 1 y 2. Un valor bajo enfoca solo los píxeles del borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen.</li> 
-     <li><strong>Umbral</strong> : determina el rango de contraste que se debe ignorar al aplicar el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia entre los píxeles enfocados y el área que los rodea antes de que se consideren píxeles de borde y se enfoquen. Para evitar introducir ruido, experimente con valores enteros entre 2 y 20. </li> 
-     <li><strong>Aplicar a: determina si el enfoque se aplica a cada color o brillo. </strong> </li> 
-    </ul> 
+     <li><strong>Cantidad</strong> : controla la cantidad de contraste aplicado a los píxeles del borde. El valor de número real predeterminado es 1,0. Para imágenes de alta resolución, puede aumentarlas hasta 5,0. Considere la cantidad como una medida de la intensidad del filtro.</li>
+     <li><strong>Radio</strong> : determina el número de píxeles que rodean los píxeles del borde que afectan al enfoque. Para las imágenes de alta resolución, introduzca un número real entre 1 y 2. Un valor bajo enfoca solo los píxeles del borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen.</li>
+     <li><strong>Umbral</strong> : determina el rango de contraste que se debe ignorar al aplicar el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia entre los píxeles enfocados y el área que los rodea antes de que se consideren píxeles de borde y se enfoquen. Para evitar introducir ruido, experimente con valores enteros entre 2 y 20. </li>
+     <li><strong>Aplicar a: determina si el enfoque se aplica a cada color o brillo. </strong> </li>
+    </ul>
     <div>
-      El enfoque se describe en 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Enfoque de imágenes</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modo de remuestreo</strong></td> 
-   <td>Seleccione una opción <strong>Modo de remuestreo</strong>. Estas opciones enfocan la imagen cuando se reduce su resolución: 
-    <ul> 
-     <li><strong>Bilineal</strong> : el método de remuestreo más rápido. Algunos artefactos de solapamiento son evidentes.</li> 
-     <li><strong>Bicúbico</strong> : aumenta el uso de CPU pero genera imágenes más nítidas con artefactos de solapamiento menos evidentes.</li> 
-     <li><strong>Sharp2</strong> - Puede producir resultados ligeramente más nítidos que Bicúbicos, pero a un costo de CPU aún mayor.</li> 
-     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que se denomina  <strong>bibicúbico </strong> enfoque en Adobe Photoshop.</li> 
-     <li><strong>Cada </strong> color y  <strong>brillo</strong> : cada método puede basarse en el color o el brillo. De forma predeterminada <strong>Cada color</strong> está seleccionado.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Resolución de impresión</strong></td> 
-   <td>Seleccione una resolución para imprimir esta imagen; 72 píxeles es el valor predeterminado.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modificador de imagen</strong></td> 
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Protocolo del servidor de imágenes</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p> 
-    <ul> 
-     <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li> 
-     <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li> 
-     <li><code>req=set</code> no está disponible para uso general.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      El enfoque se describe en * Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Modo de remuestreo</strong></td>
+   <td>Seleccione una opción <strong>Modo de remuestreo</strong>. Estas opciones enfocan la imagen cuando se reduce su resolución:
+    <ul>
+     <li><strong>Bilineal</strong> : el método de remuestreo más rápido. Algunos artefactos de solapamiento son evidentes.</li>
+     <li><strong>Bicúbico</strong> : aumenta el uso de CPU pero genera imágenes más nítidas con artefactos de solapamiento menos evidentes.</li>
+     <li><strong>Sharp2</strong> - Puede producir resultados ligeramente más nítidos que Bicúbicos, pero a un costo de CPU aún mayor.</li>
+     <li><strong>Bi-Sharp</strong> : selecciona el reampliador predeterminado de Photoshop para reducir el tamaño de la imagen, que se denomina  <strong>bibicúbico </strong> enfoque en Adobe Photoshop.</li>
+     <li><strong>Cada </strong> color y  <strong>brillo</strong> : cada método puede basarse en el color o el brillo. De forma predeterminada <strong>Cada color</strong> está seleccionado.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Resolución de impresión</strong></td>
+   <td>Seleccione una resolución para imprimir esta imagen; 72 píxeles es el valor predeterminado.</td>
+  </tr>
+  <tr>
+   <td><strong>Modificador de imagen</strong></td>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Protocolo del servidor de imágenes</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
+    <ul>
+     <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
+     <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>
+     <li><code>req=set</code> no está disponible para uso general.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Definición de opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
@@ -508,9 +505,6 @@ Si ejecuta el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen
 
 ## Eliminación de ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 
-**Para eliminar ajustes preestablecidos** de imagen de Dynamic Media:
-
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. Toque el icono **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Recursos > Ajustes preestablecidos de imagen]**.
 1. Seleccione un ajuste preestablecido y toque **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]**.
-

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2871'
 ht-degree: 26%
 
 ---
@@ -189,8 +189,8 @@ preestablecido de imagenSeleccione un ajuste preestablecido de imagen existente 
 * **[!UICONTROL Formato]**
 de salidaSeleccione el formato de salida de la imagen, por ejemplo jpeg. En función del formato de salida que seleccione, puede tener opciones de configuración adicionales. Consulte [Prácticas recomendadas para ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options).
 
-* ****
-EnfoqueSeleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [Prácticas recomendadas para ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options) y en [Prácticas recomendadas para el enfoque](/help/assets/assets/sharpening_images.pdf).
+<!-- * **[!UICONTROL Sharpening]**
+Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
 
 * **[!UICONTROL Modificadores]**
 de URLPuede cambiar los efectos de imagen proporcionando comandos de imagen adicionales de Dynamic Media Classic. Estos se describen en [Ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md) y [Referencia del comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).

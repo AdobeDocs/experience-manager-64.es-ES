@@ -1,19 +1,15 @@
 ---
 title: Práctica recomendada para optimizar la calidad de las imágenes
-seo-title: Práctica recomendada para optimizar la calidad de las imágenes
 description: Conozca las prácticas recomendadas para optimizar la calidad de imagen en medios dinámicos
-seo-description: Conozca las prácticas recomendadas para optimizar la calidad de imagen en medios dinámicos
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -46,9 +42,7 @@ Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
-
-El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/sharpening_images.pdf) también se aplica a AEM.
+<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
 
 Consulte también [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,17 +59,14 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
       * **[!UICONTROL radius]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles).
 
              Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca sólo los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
-         * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
+         
+      * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
 
              Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
          
-         Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
+         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+   * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
-         AEM tema de ayuda sobre cómo enfocar una imagen.
-
-         Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/assets/sharpening_images.pdf).
-
-      * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
 Se recomienda utilizar el inicio con el parámetro de radio de máscara de enfoque. Los ajustes de radio con los que puede realizar inicios son los siguientes:
 

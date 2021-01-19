@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -391,7 +391,8 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><strong>Aplicar a: determina si el enfoque se aplica a cada color o brillo. </strong> </li>
     </ul>
     <div>
-      El enfoque se describe en * Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>.
+      El enfoque se describe en  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Optimizaciones de enfoque y calidad de imagen de Dynamic Media Classic de Adobe</a>.
     </div> </td>
   </tr>
   <tr>
@@ -501,7 +502,7 @@ Si ejecuta el modo Dynamic Media - Scene7, los ajustes preestablecidos de imagen
 1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen en la lista de ajustes preestablecidos de imagen y, a continuación, toque **[!UICONTROL Publicar]**.
 1. Después de publicar el ajuste preestablecido de imagen, el estado cambia de no publicado a publicado.
 
-   ![chlimage_1-503](assets/chlimage_1-505.png)
+   ![chlimage_1-505](assets/chlimage_1-505.png)
 
 ## Eliminación de ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 

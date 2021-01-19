@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
+source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
-<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
+El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a la guía [Calidad de imagen de Dynamic Media Classic y Optimizaciones de enfoque](/help/assets/assets/sharpening_images.pdf) de Adobe que se aplica también a AEM.
 
 Consulte también [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,7 +64,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
              Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
          
-         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+         Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte la guía [Calidad de imagen clásica de Dynamic Media Adobe y Optimizaciones de enfoque](/help/assets/assets/sharpening_images.pdf) (también se aplica a Dynamic Media en AEM).
    * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
 

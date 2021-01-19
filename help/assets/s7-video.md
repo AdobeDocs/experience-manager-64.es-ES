@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 55%
+source-wordcount: '1681'
+ht-degree: 54%
 
 ---
 
@@ -137,7 +137,7 @@ En la tabla siguiente se proporciona una comparación de alto nivel de capacidad
 | Enfoque | Primer enfoque de HTML5. Flash solo se utiliza para la alternativa no HTML5. | Flash en la mayoría de los equipos de escritorio. HTML5 se utiliza para móviles y tabletas. |
 | Entrega | Progresivo | Transmisión adaptable |
 | Seguimiento | Sí | Sí |
-| Capacidad de ampliación | Sí | Sí (con el SDK del visor de Scene7) |
+| Capacidad de ampliación | Sí | Sí (con [Documentación de la API de SDK de visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vídeo móvil | Sí | Sí |
 
 ### Configuración  {#setting-up}

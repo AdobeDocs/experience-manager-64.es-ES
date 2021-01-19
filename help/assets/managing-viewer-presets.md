@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4248'
 ht-degree: 11%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 11%
 
 Un ajuste preestablecido de visor de Dynamic Media es una colección de ajustes que determinan la forma en que los usuarios vista los recursos de medios enriquecidos en las pantallas de sus equipos y en los dispositivos móviles. Si es un administrador, puede crear ajustes preestablecidos de visor. Los ajustes están disponibles para una matriz de opciones de configuración del visor. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
 
-Para obtener instrucciones sobre cómo crear y personalizar sus propios ajustes preestablecidos de visor HTML5, consulte el *SDK de visor HTML5 de Adobe Scene7*. El SDK está disponible en el servidor de publicación IS incrustado en el propio SDK. Cada versión de biblioteca tiene su propia documentación de SDK incluida.
+Para obtener instrucciones sobre cómo crear y personalizar sus propios ajustes preestablecidos de visor HTML5, consulte la documentación de la API de SDK de visor HTML5 de Dynamic Media *Adobe*. El SDK está disponible en el servidor de publicación IS incrustado en el propio SDK. Cada versión de biblioteca tiene su propia documentación de SDK incluida.
 
 Ruta: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-Por ejemplo, SDK 3.5: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
+Por ejemplo, SDK 3.10: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte también la [Guía de referencia de visores de Adobe](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visor. Puede aplicar un ajuste preestablecido de visor a un recurso cada vez que lo previsualización. Consulte [Aplicación de ajustes preestablecidos de visor](viewer-presets.md).
 
@@ -40,7 +40,7 @@ En esta sección se describe cómo crear, editar y administrar ajustes preestabl
 
 Todos los visores integrados admiten la accesibilidad del teclado.
 
-Consulte también [Accesibilidad y navegación del teclado](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
+Consulte también [Accesibilidad y navegación del teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Administración de ajustes preestablecidos de visor de Dynamic Media {#managing-presets}
 

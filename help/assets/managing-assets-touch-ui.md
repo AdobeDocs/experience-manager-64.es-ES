@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 2%
 
 ---
@@ -146,7 +146,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 >
 >Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale el paquete de funciones (FP) 18912 en AEM autor. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso al FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
 >
->Si utiliza FTP para cargar recursos, se omitirán los ajustes de carga especificados en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
+>Si se utiliza FTP para cargar recursos, se ignora la configuración de carga especificada en AEM. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
 **Para cargar recursos mediante FTP**
 
@@ -161,7 +161,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 
    >[!NOTE]
    >
-   >Al cargar recursos mediante FTP, las opciones de trabajo de carga que defina en Dynamic Media Classic (Scene7) prevalecen sobre los parámetros de procesamiento de recursos definidos en AEM.
+   >Al cargar recursos mediante FTP, las opciones de trabajo de carga que defina en Dynamic Media Classic prevalecerán sobre los parámetros de procesamiento de recursos definidos en AEM.
 
 1. En la esquina inferior derecha del cuadro de diálogo **[!UICONTROL Opciones de trabajo de carga]**, toque **[!UICONTROL Guardar]**.
 1. En la esquina inferior derecha de la página **[!UICONTROL Cargar]**, toque **[!UICONTROL Enviar carga]**.
@@ -703,7 +703,7 @@ También puede agregar mapas de imagen mediante el editor de imágenes. Para obt
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
-1. Utilice la opción **[!UICONTROL Finalizar]** en la esquina superior derecha para recortar la imagen. Al tocar **[!UICONTROL Finalizar]** también se desencadena la regeneración de las representaciones.
+1. Utilice la opción **[!UICONTROL Finalizar]** en la esquina superior derecha para recortar la imagen. Al tocar **[!UICONTROL Finalizar]** también se déclencheur la regeneración de las representaciones.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

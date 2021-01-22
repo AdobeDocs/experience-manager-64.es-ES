@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Teniendo en cuenta estos factores, se requiere una metodología para calcular un
 1. Determine el tamaño y el número de recursos que se cargarán en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en AEM. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y de la complejidad de las imágenes.
 1. Defina las representaciones que se utilizarán.
-1. Cree las representaciones en AEM mediante las aplicaciones de Creative Cloud de ImageMagick o Adobe. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Scene7, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
+1. Cree las representaciones en AEM mediante las aplicaciones de Creative Cloud de ImageMagick o Adobe. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media Classic, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
 1. Si planea utilizar subrecursos, genérelos para los tipos de archivo correspondientes. Consulte la documentación en línea sobre cómo generar páginas de subrecursos a partir de archivos de InDesign o archivos PNG/PDF a partir de capas de Illustrator.
 1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de recursos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se mantendrán las versiones de los recursos en el sistema.

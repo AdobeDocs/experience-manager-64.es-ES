@@ -1,18 +1,14 @@
 ---
 title: Imágenes panorámicas
-seo-title: Imágenes panorámicas
-description: Aprenda a trabajar con imágenes panorámicas en Dynamic Media.
-seo-description: Aprenda a trabajar con imágenes panorámicas en Dynamic Media.
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -46,7 +42,7 @@ Para cargar recursos para usarlos con el visor de imágenes panorámicas, consul
 
 Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe sincronizar los ajustes preestablecidos del visor de imágenes panorámicas con los metadatos específicos de Dynamic Media Classic y Dynamic Media Classic para que los ajustes preestablecidos de visor se actualicen en el JCR. Para ello, configure Dynamic Media Classic de la siguiente manera:
 
-1. [Inicie sesión en la instancia de Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classic para cada cuenta de compañía.
+1. [Inicie sesión en la ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) aplicación de escritorio de Dynamic Media Classic para cada cuenta de compañía.
 
 1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes]**.
 1. En la página **[!UICONTROL Servidor de imágenes Publish]**, en el menú desplegable **[!UICONTROL Contexto de publicación]** cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes]**.
@@ -75,7 +71,7 @@ Para que el visor de imágenes panorámicas funcione correctamente en AEM, debe 
 
 Si ha colocado una imagen en el componente **[!UICONTROL Medios panorámicos]** de WCM y el marcador de posición del componente se ha contraído, es posible que desee solucionar los problemas siguientes:
 
-* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de *Límite de tamaño de imagen de respuesta* en [Configuración de Dynamic Media Classic (Scene7)](#configuring-dynamic-media-classic-scene).
+* Si se produce un error 403 Prohibido, es posible que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de *Límite de tamaño de imagen de respuesta* en [Configuración de Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 * Para un *bloqueo no válido* en el recurso o *error de análisis* mostrado en la página, marque **[!UICONTROL Modo de confusión de solicitudes]** y **[!UICONTROL Modo de bloqueo de solicitudes]** para asegurarse de que están deshabilitados.
 * Para un error de lienzo contaminado, configure una **[!UICONTROL Ruta del archivo de definición de conjunto de reglas e Invalide CTN]** para las solicitudes anteriores del recurso de imagen.

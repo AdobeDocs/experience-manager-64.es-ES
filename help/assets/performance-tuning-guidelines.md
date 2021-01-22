@@ -3,9 +3,9 @@ title: Guía de ajuste del rendimiento de los recursos
 description: Áreas de enfoque clave en torno a AEM configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ A partir de AEM 6.2 y con un paquete de funciones para AEM 6.1, puede realizar l
 
 ### Configuración de activos de actualización DAM {#dam-update-asset-configuration}
 
-El flujo de trabajo de recursos de actualización de DAM contiene un conjunto completo de pasos configurados para tareas, como la generación de Scene7 PTIFF y la integración de InDesigns Server. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos de actualización de DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de DAM Update Asset para que apunten al nuevo modelo.
+El flujo de trabajo de recursos de actualización de DAM contiene un conjunto completo de pasos configurados para tareas, como la generación de Dynamic Media Classic PTIFF y la integración de InDesigns Server. Sin embargo, es posible que la mayoría de los usuarios no requieran varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de recursos de actualización de DAM y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de DAM Update Asset para que apunten al nuevo modelo.
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web 
 
 Muchos clientes de Sitios implementan un servlet de imagen que cambia el tamaño y recorta las imágenes en el momento en que se solicitan, lo que impone una carga adicional en la instancia de publicación. Sin embargo, mientras estas imágenes se puedan almacenar en caché, el desafío se puede mitigar.
 
-Un método alternativo es utilizar la tecnología Scene7 para repartir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo asume las responsabilidades de generación de representaciones de la infraestructura de AEM, sino también de todo el nivel de publicación.
+Un método alternativo es utilizar la tecnología Dynamic Media Classic para repartir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo asume las responsabilidades de generación de representaciones de la infraestructura de AEM, sino también de todo el nivel de publicación.
 
 #### ImageMagick {#imagemagick}
 
@@ -292,7 +292,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 1. Elija la instancia de publicación que desea utilizar para encadenar las replicaciones a
 1. En esa instancia de publicación, agregue agentes de replicación que apunten a otras instancias de publicación
-1. En cada uno de esos agentes de replicación, habilite **[!UICONTROL Al recibir]** en la ficha **[!UICONTROL Desencadenadores]**
+1. En cada uno de esos agentes de replicación, habilite **[!UICONTROL Al recibir]** en la ficha **[!UICONTROL Déclencheur]**
 
 >[!NOTE]
 >

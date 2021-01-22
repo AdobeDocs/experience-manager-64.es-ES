@@ -3,9 +3,9 @@ title: Migrar recursos a Adobe Experience Manager Assets de forma masiva
 description: Cómo incluir recursos en AEM, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Cuando los recursos no se transmiten a través de una red, el rendimiento genera
 
 ### Procesar representaciones {#process-renditions}
 
-Después de cargar los recursos en el sistema, debe procesarlos mediante el flujo de trabajo de recursos de actualización de DAM para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar un duplicado y modificar el flujo de trabajo de recursos de actualización de DAM para adaptarlo a sus necesidades. Es posible que no necesite realizar algunos pasos en el flujo de trabajo predeterminado, como la generación de Scene7 PTIFF o la integración del servidor de InDesign.
+Después de cargar los recursos en el sistema, debe procesarlos mediante el flujo de trabajo de recursos de actualización de DAM para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar un duplicado y modificar el flujo de trabajo de recursos de actualización de DAM para adaptarlo a sus necesidades. Es posible que no necesite realizar algunos pasos en el flujo de trabajo predeterminado, como la generación de Dynamic Media Classic PTIFF o la integración del servidor de InDesign.
 
 Después de configurar el flujo de trabajo según sus necesidades, tiene dos opciones para ejecutarlo:
 

@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5571'
+source-wordcount: '5577'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Con la nueva arquitectura, AEM es responsable de los recursos principales y de l
 
 1. Cuando el recurso maestro se carga en AEM, se replica en Dynamic Media. En ese momento, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
 1. Una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de ellas de forma segura (no se devuelve ningún binario a la instancia de AEM).
-1. Una vez que el contenido está listo para publicarse y aprobarse, activa el servicio de Dynamic Media para insertar contenido en los servidores envío y almacenar en caché el contenido en la CDN.
+1. Una vez que el contenido está listo para publicarse y aprobarse, déclencheur al servicio Dynamic Media para insertar el contenido en los servidores de envío y almacenar el contenido en caché en la CDN.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -72,7 +72,7 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
 
 ## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
-Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, debe [iniciar sesión](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) en Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que Dynamic Media Cloud Service esté configurado con las credenciales correctas.
+Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) en la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que Dynamic Media Cloud Service esté configurado con las credenciales correctas.
 
 >[!NOTE]
 >

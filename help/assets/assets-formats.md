@@ -3,9 +3,9 @@ title: Formatos de archivo admitidos en AEM Assets
 description: Lista de formatos de archivo y tipos MIME admitidos por AEM Assets y las características admitidas para cada formato.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 9%
 
 ---
@@ -289,13 +289,13 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | aplicación/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| RTF | application/rtf |  |  |
+| TTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | vídeo/dvd |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
@@ -307,6 +307,6 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 
 >[!MORELIKETHIS]
 >
->* [Habilite la compatibilidad](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) con los parámetros de trabajo de carga de Recursos/Scene7 basados en tipos MIME.
+>* [Habilite la compatibilidad](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) con el parámetro de trabajo de carga de Recursos MIME basados en tipos/Dynamic Media Classic.
 >* [Configure la compatibilidad](config-dynamic.md) de los parámetros de trabajo de carga según el tipo MIME.
 

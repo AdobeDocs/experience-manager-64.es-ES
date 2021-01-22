@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 87%
@@ -61,7 +61,7 @@ Puede utilizar el buscador de contenido para ubicar toda una serie de medios. Cu
 * [Imágenes](#finding-images)
 * [Documentos](#finding-documents)
 * [Películas](#finding-movies)
-* [Navegador de medios de Scene 7](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamic Media Browser](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Páginas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [Párrafos](#referencing-paragraphs-from-other-pages)
 * [Productos](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)

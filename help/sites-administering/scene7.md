@@ -1,26 +1,22 @@
 ---
-title: Integración con Dynamic Media Classic (Scene7)
-seo-title: Integración con Dynamic Media Classic (Scene7)
+title: Integración con Dynamic Media Classic
 description: Aprenda a integrar AEM con Dynamic Media Classic.
-seo-description: Aprenda a integrar AEM con Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5491'
+source-wordcount: '5456'
 ht-degree: 1%
 
 ---
 
 
-# Integración con Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integración con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
+Adobe Dynamic Media Classic es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
 
 Para utilizar Dynamic Media Classic, debe configurar la configuración de nube para que Dynamic Media Classic y AEM Assets puedan interactuar entre sí. Este documento describe cómo configurar AEM y Dynamic Media Classic.
 
@@ -174,7 +170,7 @@ Para utilizar Dynamic Media y Dynamic Media Classic simultáneamente:
 Cuando tiene activados Dynamic Media Classic y Dynamic Media, existen las siguientes limitaciones:
 
 * La carga manual a Dynamic Media Classic seleccionando un recurso y arrastrándolo a un componente de Dynamic Media Classic en una página AEM no funciona.
-* Aunque los recursos sincronizados AEM-Dynamic Media Classic se actualizan automáticamente a Dynamic Media Classic cuando se edita el recurso en Recursos, una acción de reversión no activa una nueva carga, por lo tanto Dynamic Media Classic no obtendría la última versión inmediatamente después de una reversión. La solución consiste en volver a editarse una vez que se haya completado la reversión.
+* Aunque los recursos sincronizados AEM-Dynamic Media Classic se actualizan automáticamente a Dynamic Media Classic cuando se edita en Recursos, una acción de reversión no déclencheur una nueva carga, por lo tanto Dynamic Media Classic no obtendría la última versión inmediatamente después de una reversión. La solución consiste en volver a editarse una vez que se haya completado la reversión.
 * Si necesita utilizar Dynamic Media para un caso de uso e integración con Dynamic Media Classic para otro caso de uso, de modo que los recursos de Dynamic Media no interactúen con el sistema Dynamic Media Classic, no aplique la configuración de Dynamic Media Classic a la carpeta Dynamic Media ni la configuración de Dynamic Media (perfil de procesamiento) a una carpeta Dynamic Media Classic.
 
 ## Prácticas recomendadas para integrar Dynamic Media Classic con AEM {#best-practices-for-integrating-scene-with-aem}
@@ -363,7 +359,7 @@ Para habilitarlo:
 
 ### Añadir el tiempo de espera configurable al flujo de trabajo de carga de Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Cuando se configura una instancia de AEM para gestionar la codificación de vídeo a través de Dynamic Media Classic (Scene7), de forma predeterminada, se agota el tiempo de espera de 35 minutos en cualquier trabajo de carga. Para dar cabida a trabajos de codificación de vídeo potencialmente más largos, puede configurar esta configuración:
+Cuando se configura una instancia de AEM para gestionar la codificación de vídeo a través de Dynamic Media Classic, de forma predeterminada, se agotará el tiempo de espera de 35 minutos en cualquier trabajo de carga. Para dar cabida a trabajos de codificación de vídeo potencialmente más largos, puede configurar esta configuración:
 
 1. Vaya a **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
@@ -449,7 +445,7 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 
 >[!NOTE]
 >
->Si un usuario publica el recurso en AEM, lo activa automáticamente en el recurso activo/de producción (el recurso ya no estará en previsualización segura/sin publicar).
+>Si un usuario publica el recurso en AEM, déclencheur automáticamente el recurso S7 al recurso activo/de producción (el recurso ya no estará en previsualización segura/no se publicará).
 
 Para definir el estado de los recursos insertados en Dynamic Media Classic como no publicados:
 

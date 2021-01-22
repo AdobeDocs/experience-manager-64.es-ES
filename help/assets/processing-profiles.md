@@ -1,18 +1,14 @@
 ---
 title: Perfiles para procesar metadatos, imágenes y vídeos
-seo-title: Perfiles para procesar metadatos, imágenes y vídeos
 description: Un perfil contiene un conjunto de reglas en torno a las opciones que se van a aplicar a los recursos cargados en una carpeta. Especifique el perfil de metadatos y el perfil de codificación de vídeo que se aplicarán a los recursos de vídeo que cargue. Para los recursos de imagen, también puede especificar el perfil de imagen que se aplicará a los recursos de imagen para que se recorten correctamente.
-seo-description: Un perfil contiene un conjunto de reglas en torno a las opciones que se van a aplicar a los recursos cargados en una carpeta. Especifique el perfil de metadatos y el perfil de codificación de vídeo que se aplicarán a los recursos de vídeo que cargue. Para los recursos de imagen, también puede especificar el perfil de imagen que se aplicará a los recursos de imagen para que se recorten correctamente.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -106,7 +102,7 @@ Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#a
 
    ![Componente de carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Carga por lotes en Scene7—Step Properties]**, establezca lo siguiente:
+1. En el cuadro de diálogo **[!UICONTROL Carga por lotes en propiedades de Scene7-Step]**, establezca lo siguiente:
    * En los campos de texto **[!UICONTROL Título]** y **[!UICONTROL Descripción]**, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
    * Seleccione **[!UICONTROL Avance del controlador]** si el controlador avanzará al paso siguiente.
    * En el campo **[!UICONTROL Tiempo de espera]**, introduzca el tiempo de espera del proceso externo (segundos).
@@ -116,7 +112,7 @@ Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#a
 
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes en Scene7 - Propiedades del paso]**, toque **[!UICONTROL Listo]**.
+1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes en propiedades de Scene7-Step]**, toque **[!UICONTROL Listo]**.
 
 1. En la esquina superior derecha del Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, toque **[!UICONTROL Sincronizar]**. Cuando ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar el recurso en una carpeta.
 

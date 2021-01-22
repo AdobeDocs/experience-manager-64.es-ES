@@ -1,19 +1,15 @@
 ---
 title: Vídeo
-seo-title: Vídeo
 description: Assets proporciona un sistema de administración de recursos de vídeo centralizada en que puede cargar vídeos directamente en Assets para autocodificarlos en Scene7 y acceder directamente a los vídeos de Scene7 desde Assets para la creación de páginas.
-seo-description: Assets proporciona un sistema de administración de recursos de vídeo centralizada en que puede cargar vídeos directamente en Assets para autocodificarlos en Scene7 y acceder directamente a los vídeos de Scene7 desde Assets para la creación de páginas.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 45%
+source-wordcount: '1707'
+ht-degree: 44%
 
 ---
 
@@ -154,7 +150,7 @@ Las distintas codificaciones de vídeo se crean según los ajustes preestablecid
 1. En AEM, vaya a **[!UICONTROL Herramientas]** y seleccione **[!UICONTROL Consola de configuración]**. En la consola de configuración, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de vídeo]** en el árbol de navegación.
 1. Cree un nuevo Perfil de vídeo Dynamic Media Classic. En **[!UICONTROL Nuevo...]**, seleccione **[!UICONTROL Crear página]** y, a continuación, seleccione la plantilla Perfil de vídeo Dynamic Media Classic. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Edite el nuevo perfil de vídeo. Seleccione primero la configuración de nube. A continuación, seleccione el mismo ajuste preestablecido de codificación que el que se ha seleccionado en la configuración de nube.
 

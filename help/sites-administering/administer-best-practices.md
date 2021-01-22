@@ -1,18 +1,14 @@
 ---
 title: 'Prácticas recomendadas  '
-seo-title: 'Prácticas recomendadas  '
-description: Encuentre las prácticas recomendadas compiladas por los equipos de ingeniería y consultoría de Adobe para ayudar a los administradores a ponerse en marcha.
-seo-description: Encuentre las prácticas recomendadas compiladas por los equipos de ingeniería y consultoría de Adobe para ayudar a los administradores a ponerse en marcha.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Obtenga información sobre las prácticas recomendadas de Adobe Experience Manager, según la compilación de los equipos de ingeniería y consultoría de Adobe, para ayudar a los administradores a ponerse en marcha.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -52,8 +48,8 @@ Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de D
    <td>Gran parte de los perfiles de procesamiento se basan en vídeo, los metadatos y el procesamiento de imágenes siempre se aplican a las carpetas. Este documento de prácticas recomendadas describe cómo definir y configurar la jerarquía de carpetas, ya que la jerarquía tiene un impacto significativo en la forma en que se procesa el contenido. </td> 
   </tr>
   <tr>
-   <td>Integración de Scene7 y AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Prácticas recomendadas para integrar Scene7 con AEM</a></td> 
+   <td>Integración de Dynamic Media Classic y AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Prácticas recomendadas para integrar Dynamic Media Classic con AEM</a></td> 
    <td><p>Describe cuándo activar el importador de encuestas, cómo probar la integración y cuándo utilizar el navegador de contenido en lugar de una carga directa en Recursos.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de D
    <td>Como parte de la documentación sobre <a href="/help/assets/managing-image-presets.md">Administración de ajustes preestablecidos de imagen</a>, estos temas describen los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar las opciones de ajustes preestablecidos de imagen.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media frente a la integración directa con Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Scene7/AEM frente a Dynamic Media</a></td> 
+   <td>Dynamic Media frente a la integración directa con Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Dynamic Media Classic/AEM frente a Dynamic Media</a></td> 
    <td>Describe cuándo es mejor utilizar la solución Dynamic Media, cuándo integrar S7 con AEM o cuándo usar ambos.</td> 
   </tr>
  </tbody>

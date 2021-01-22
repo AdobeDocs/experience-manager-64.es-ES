@@ -4,9 +4,9 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4219'
 ht-degree: 11%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager 6.4.8.3 proporciona correcciones para los siguientes pr
 
 * En la configuración de ajustes preestablecidos de imagen, cuando la opción [!UICONTROL Activar disminución de resolución de crominancia JPG] no está seleccionada en [!DNL Experience Manager], el cambio no se sincroniza con [!DNL Dynamic Media] (NPR-34284).
 * En el [!UICONTROL Editor de ajustes preestablecidos de visor], al editar el ajuste preestablecido [!UICONTROL PanoramicImage/PanoramicImage_VR], en el componente `PanoramicView`, la etiqueta del modificador `PANORAMICVIEW_AUTOROTATE` no está disponible (CQ-4302043).
-* Al cancelar la publicación de un vídeo de [!DNL Experience Manager] no se cancela la publicación del conjunto de vídeos adaptable en el Scene7 configurado. (CQ-4304405).
+* Al cancelar la publicación de un vídeo de [!DNL Experience Manager] no se cancela la publicación del conjunto de vídeos adaptable en Dynamic Media Classic configurado. (CQ-4304405).
 
 ### Plataforma {#platform-6483}
 
@@ -187,7 +187,7 @@ Adobe Experience Manager 6.4.8.2 proporciona correcciones para los siguientes pr
 
 * La funcionalidad de recorte inteligente falla cuando se agrega perfil de imagen a una carpeta con varias proporciones de aspecto (por ejemplo, 11) (NPR-34083).
 
-* Los cambios en los ajustes preestablecidos de imagen en [!UICONTROL Adobe Experience Manager] no se sincronizan con Scene7 Publishing System (NPR-34284, CQ-4299713).
+* Los cambios en los ajustes preestablecidos de imagen en [!UICONTROL Adobe Experience Manager] no se sincronizan con Dynamic Media Classic (NPR-34284, CQ-4299713).
 
 * Falta la etiqueta del modificador [!UICONTROL PANORAMICVIEW_AUTOROTATE] en la ficha [!UICONTROL Behavior] de la página [!UICONTROL Editor de ajustes preestablecidos de visor] (CQ-4302043).
 

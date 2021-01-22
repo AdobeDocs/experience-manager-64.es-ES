@@ -1,18 +1,14 @@
 ---
 title: 'Resolución de problemas de Dynamic Media: modo Scene7'
-seo-title: 'Resolución de problemas de Dynamic Media: modo Scene7'
-description: Solución de problemas de Dynamic Media en modo de ejecución de Scene7.
-seo-description: Solución de problemas de Dynamic Media en modo de ejecución de Scene7.
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: Resolución de problemas de Dynamic Media - Modo de ejecución de Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1295'
 ht-degree: 1%
 
 ---
@@ -30,7 +26,7 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 * Todos los paquetes de correcciones acumulativas (CFP) AEM 6.4 se han instalado primero *antes* de cualquier paquete de funciones de Dynamic Media disponible.
 * Se ha instalado el Feature Pack 18912 opcional.
 
-   Este paquete de funciones opcional es compatible con FTP o si está migrando recursos a Dynamic Media desde Dynamic Media Classic (Scene7).
+   Este paquete de funciones opcional es compatible con FTP o si está migrando recursos a Dynamic Media desde Dynamic Media Classic.
 
 * Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
 * Asegúrese de que el agente de replicación **[!UICONTROL Activación de recursos de Dynamic Media (scene7)]** está habilitado.
@@ -256,7 +252,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
       </ol> </li> 
      <li>En Cloud Services, vaya a la página de configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración para la configuración de Dynamic Media - S7. 
       <ul> 
-       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto desencadena la lógica de nuevo para crear y sincronizar los recursos de muestra, el ajuste preestablecido de visor CSS y la ilustración.<br /> <br /> </li> 
+       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto vuelve a déclencheur la lógica para crear y sincronizar los recursos de muestra, el ajuste preestablecido de visor CSS y la ilustración.<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 

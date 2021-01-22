@@ -1,18 +1,14 @@
 ---
 title: Uso de conjuntos de reglas para transformar direcciones URL
-seo-title: Uso de conjuntos de reglas para transformar direcciones URL
 description: 'Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. '
-seo-description: 'Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. '
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -25,13 +21,13 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 * Añadiendo un sufijo de tipo MIME. Muchos servicios y sitios Web requieren sufijos de imagen, como agregar `.jpg` a una dirección URL.
 * Creación de una ruta de carpeta a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
-   Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/assets/s7_seo.pdf).
+   Consulte [Compatibilidad de Adobe Dynamic Media Classic con SEO](/help/assets/assets/s7_seo.pdf).
 
 * Añadir metadatos a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
-   Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/assets/s7_seo.pdf).
+   Consulte [Compatibilidad de Adobe Dynamic Media Classic con SEO](/help/assets/assets/s7_seo.pdf).
 
-* Configuración de la disposición del contenido para activar una descarga.
+* Configuración de la disposición del contenido para el déclencheur de una descarga.
 * Simplifique las direcciones URL de plantilla del servicio de imágenes para su personalización. Por ejemplo: convierta `rgb{XX,YY,ZZ}` en el `\redXX\greenYY\blueZZ` listo para RTF
 
 * Solicite que se codifiquen determinados caracteres, como `$`, `{` y `}`, y que se descodifiquen determinados caracteres para ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
@@ -53,17 +49,17 @@ Consulte también [Resolución de problemas de conjuntos de reglas](https://help
 Además, asegúrese de probar primero el conjunto de reglas en un entorno de ensayo que no afecte al entorno de producción activo.\
 Los entornos de producción y los entornos de ensayo generalmente requieren inicios de sesión diferentes.
 
-* **Página de inicio de sesión** del entorno de ensayo NA:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Página de inicio de sesión** del entorno de ensayo de EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **Página de inicio de sesión** del entorno de ensayo de JAPAC:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Consulte la aplicación de escritorio [Adobe Dynamic Media Classic para obtener información de inicio de sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Consulte también [Uso de la imagen &#39;asset&#39; en lugar de &#39;is&#39; en un conjunto de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **Para implementar conjuntos de reglas XML:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic:
-
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Inicie sesión en su [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
    Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 

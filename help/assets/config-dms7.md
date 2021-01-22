@@ -1,18 +1,14 @@
 ---
 title: 'Configuración de Dynamic Media: modo Scene7'
-seo-title: 'Configuración de Dynamic Media: modo Scene7'
-description: Información sobre cómo configurar el modo Dynamic Media - Scene7.
-seo-description: Información sobre cómo configurar el modo Dynamic Media - Scene7.
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: Obtenga información sobre cómo configurar el modo Dynamic Media - Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5577'
+source-wordcount: '5596'
 ht-degree: 4%
 
 ---
@@ -88,7 +84,7 @@ Para configurar Cloud Services de Dynamic Media:
 
    >[!NOTE]
    >
-   >Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, [inicie sesión en](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que el servicio de nube de Dynamic Media esté configurado con las credenciales correctas.
+   >Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta de compañía para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que el servicio de nube de Dynamic Media esté configurado con las credenciales correctas.
 
 1. Si la conexión es correcta, también puede establecer lo siguiente:
 
@@ -109,7 +105,7 @@ Para configurar Cloud Services de Dynamic Media:
 1. Toque **[!UICONTROL Guardar]**.
 1. Para realizar una previsualización segura del contenido de Dynamic Media antes de que se publique, deberá &quot;lista de permitidos&quot; de la instancia de creación de AEM para conectarse a Dynamic Media:
 
-   * Inicie sesión en su cuenta de Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación situada cerca de la parte superior derecha de la página, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes]**.
    * En la lista desplegable Contexto de publicación de la página Servidor de imágenes, seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, toque **[!UICONTROL Añadir]**.
@@ -133,7 +129,7 @@ Si desea personalizar aún más la configuración y la configuración del modo D
 
 Cuando se encuentra en modo de ejecución **dynamicmedia_scene7**, utilice la interfaz de usuario de Dynamic Media Classic (Scene7) para realizar cambios en la configuración de Dynamic Media.
 
-Algunas de las tareas anteriores requieren que inicie sesión en Dynamic Media Classic aquí: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Algunas de las tareas anteriores requieren que abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
 Las tareas de configuración y configuración son:
 
@@ -189,7 +185,7 @@ La administración dinámica de color de los medios le permite colorear los recu
 
 Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:
 
-1. [Inicie sesión en las credenciales de ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) clasificación de Dynamic Media proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Ajustes > Ajustes de aplicación]**.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Ajustes > Ajustes de aplicación]**.
 1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
 1. Desplácese a la propiedad que necesite cambiar, por ejemplo, una propiedad en el área **[!UICONTROL Atributos de administración de color]**.
 
@@ -319,9 +315,9 @@ Hay dos elementos disponibles para la definición: **[!UICONTROL Coincidencia]**
 
 **Para configurar la nominación predeterminada:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
 1. En la barra de navegación cerca de la parte superior de la página, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Valores preestablecidos de conjunto por lotes > Nombre predeterminado].**
 1. Seleccione **[!UICONTROL Ver formulario]** o **[!UICONTROL Ver código]** para especificar cómo desea ver e introducir información sobre cada elemento.
@@ -353,9 +349,9 @@ Puede utilizar el método de campo de formulario para definir un ajuste preestab
 
 **Para crear un ajuste preestablecido de conjunto por lotes:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
 1. En la barra de navegación cerca de la parte superior de la página, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Valores preestablecidos de conjunto por lotes > Valor preestablecido de conjunto por lotes].**
 
@@ -408,9 +404,9 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 **Para crear un ajuste preestablecido de conjunto por lotes para la generación automática de un conjunto de giros 2D:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
 1. En la barra de navegación cerca de la parte superior de la página, toque **[!UICONTROL Ajustes > Ajustes de aplicación > Valores preestablecidos de conjunto por lotes > Valor preestablecido de conjunto por lotes]**.
 

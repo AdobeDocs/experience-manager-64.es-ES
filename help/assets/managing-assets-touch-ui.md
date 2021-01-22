@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 2%
 
 ---
@@ -151,8 +151,8 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 **Para cargar recursos mediante FTP**
 
 1. Con el cliente FTP que elija, inicie sesión en el servidor FTP con el nombre de usuario y la contraseña de FTP que recibió del correo electrónico de aprovisionamiento. En el cliente FTP, cargue archivos o carpetas en el servidor FTP.
-1. [Inicie sesión en las credenciales de ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) clasificación de Dynamic Media recibidas del correo electrónico de aprovisionamiento. En la barra de navegación global, toque **[!UICONTROL Cargar]**.
-
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta con las credenciales recibidas del correo electrónico de aprovisionamiento.
+1. En la barra de navegación global, toque **[!UICONTROL Cargar]**.
 1. En la página **[!UICONTROL Cargar]**, cerca de la esquina superior izquierda, toque la ficha **[!UICONTROL Por medio de FTP]**.
 1. En la parte izquierda de la página, elija una carpeta FTP desde la que cargar los archivos; a la derecha de la página, elija una carpeta de destino.
 1. Cerca de la esquina inferior derecha de la página, toque **[!UICONTROL Opciones de trabajo]** y luego configure las opciones que desee en función de los recursos de la carpeta seleccionada.

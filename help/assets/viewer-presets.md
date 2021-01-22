@@ -1,19 +1,15 @@
 ---
 title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
-seo-title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
-description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media
-seo-description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: Aprenda a aplicar ajustes preestablecidos de visor, creados por el administrador, a un recurso de Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 23%
+source-wordcount: '224'
+ht-degree: 24%
 
 ---
 

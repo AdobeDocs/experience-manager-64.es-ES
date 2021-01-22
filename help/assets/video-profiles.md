@@ -1,18 +1,14 @@
 ---
 title: perfiles de vídeo de Dynamic Media
-seo-title: perfiles de vídeo de Dynamic Media
-description: 'Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. '
-seo-description: 'Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. '
-uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
+description: 'Dynamic Media incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización de vídeo posible. '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3068'
 ht-degree: 18%
 
 ---

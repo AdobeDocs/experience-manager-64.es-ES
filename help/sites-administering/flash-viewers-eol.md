@@ -1,19 +1,15 @@
 ---
 title: Aviso de fin de vida útil para el visualizador Flash
-seo-title: Aviso de fin de vida útil para el visualizador Flash
-description: A partir del 31 de enero de 2017, Adobe Scene7 dejará de ofrecer asistencia para la plataforma del visor Flash.
-seo-description: A partir del 31 de enero de 2017, Adobe Scene7 dejará de ofrecer asistencia para la plataforma del visor Flash.
-uuid: db4e349a-4773-4c08-8a3a-e8d399902a45
+description: A partir del 31 de enero de 2017, Adobe Dynamic Media Classic dejó de ofrecer asistencia técnica para la plataforma de visor de Flash.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 translation-type: tm+mt
-source-git-commit: 8b4bacfb493fa83951672618682ca81a9a0425df
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 68%
+source-wordcount: '37'
+ht-degree: 21%
 
 ---
 
@@ -22,6 +18,6 @@ ht-degree: 68%
 
 *A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor de Flash.*
 
-*Para obtener más información sobre este cambio importante, consulte el siguiente sitio web de preguntas más frecuentes:*
+<!-- *For more information about this important change, see the following FAQ website:*
 
-[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
+[https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->

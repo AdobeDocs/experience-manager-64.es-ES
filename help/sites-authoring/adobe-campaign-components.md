@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 74%
 
 ---
@@ -31,7 +31,7 @@ Cuando abra un boletín o mensaje de correo que esté configurado para ser integ
 * Encabezado (Campaign)
 * Imagen (Campaign)
 * Vínculo (Campaign)
-* Plantilla de imagen de Scene7 (Campaign)
+* Plantilla de imagen de Dynamic Media (Campaña)
 * Referencia de destino (Campaign)
 * Texto e imagen (Campaign)
 * Texto y personalización (Campaign)
@@ -40,7 +40,7 @@ Una descripción de estos componentes se encuentra en la sección siguiente.
 
 Los componentes se presentan del modo siguiente:
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Encabezado (Campaign) {#heading-campaign}
 
@@ -51,7 +51,7 @@ El componente Encabezado puede:
 
 Edite el componente **Encabezado (Campaign)** directamente. Déjelo vacío para utilizar el título de página.
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 Puede configurar lo siguiente:
 

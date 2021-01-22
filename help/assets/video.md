@@ -1,18 +1,14 @@
 ---
 title: Vídeo
-seo-title: Vídeo
-description: Aprenda a trabajar con vídeo en Dynamic Media
-seo-description: Aprenda a trabajar con vídeo en Dynamic Media
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: Aprenda a trabajar con vídeo en Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10456'
+source-wordcount: '10396'
 ht-degree: 4%
 
 ---
@@ -162,9 +158,9 @@ Puede encontrar los dispositivos Windows compatibles con este formato de vídeo 
 * Configure los reproductores de vídeo para que satisfagan sus necesidades de marca.
 * Integre vídeo en el sitio web, el sitio móvil o la aplicación móvil con una dirección URL o código incrustado sencillos.
 
-Consulte [Reproducción de vídeo dinámico](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte también [Acerca de los visores HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) en la Guía de referencia de visores de Adobe Scene7.
+Consulte también [Acerca de los visores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) en la Guía de referencia de visores de Dynamic Media de Adobe.
 
 ## Práctica recomendada: Uso del visor de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS (HTTP Live Streaming) es un estándar de Apple para el flujo de vídeo adapt
 
 El vídeo progresivo se entrega descargando y almacenando el vídeo localmente en la pantalla de escritorio o en el dispositivo móvil del usuario.
 
-En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el visor de vídeo de Scene7.
+En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el visor de vídeo de Dynamic Media.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Dispositivo</strong></td> 
-   <td><strong>Explorador</strong></td> 
-   <td><strong>Modo de reproducción de vídeo</strong></td> 
-  </tr> 
+   <td><strong>Dispositivo</strong></td>
+   <td><strong>Explorador</strong></td>
+   <td><strong>Modo de reproducción de vídeo</strong></td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Internet Explorer 9 y 10</td> 
-   <td>Descarga progresiva.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Internet Explorer 9 y 10</td>
+   <td>Descarga progresiva.</td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Internet Explorer 11+</td> 
-   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite HLS. Limitación conocida: HTTP en HLS no funciona en esta combinación de explorador y sistema operativo<br /> <br /> En Windows 7 - Descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP frente a HTTPS.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Internet Explorer 11+</td>
+   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite HLS. Limitación conocida: HTTP en HLS no funciona en esta combinación de explorador y sistema operativo<br /> <br /> En Windows 7 - Descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP frente a HTTPS.</td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Firefox 23-44</td> 
-   <td>Descarga progresiva.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Firefox 23-44</td>
+   <td>Descarga progresiva.</td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Firefox 45 o posterior</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Firefox 45 o posterior</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Chrome</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Chrome</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Escritorio</td> 
-   <td>Safari (Mac)</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Escritorio</td>
+   <td>Safari (Mac)</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>Chrome (Android 6 o anterior)</td> 
-   <td>Descarga progresiva.</td> 
-  </tr> 
+   <td>Móvil</td>
+   <td>Chrome (Android 6 o anterior)</td>
+   <td>Descarga progresiva.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>Chrome (Android 7 o posterior)</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Móvil</td>
+   <td>Chrome (Android 7 o posterior)</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>Android (navegador predeterminado)</td> 
-   <td>Descarga progresiva.</td> 
-  </tr> 
+   <td>Móvil</td>
+   <td>Android (navegador predeterminado)</td>
+   <td>Descarga progresiva.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>Safari (iOS)</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Móvil</td>
+   <td>Safari (iOS)</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>Chrome (iOS)</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
+   <td>Móvil</td>
+   <td>Chrome (iOS)</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
   <tr> 
-   <td>Móvil</td> 
-   <td>BlackBerry</td> 
-   <td>Flujo continuo de vídeo HLS.</td> 
-  </tr> 
- </tbody> 
+   <td>Móvil</td>
+   <td>BlackBerry</td>
+   <td>Flujo continuo de vídeo HLS.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
@@ -426,7 +422,7 @@ Como ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla 
    <td><p>Codificado</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 
@@ -901,7 +897,7 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
 
-### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor de HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor HTML5 de Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visor personalizado basado en un visor de vídeo incorporado, no se requieren pasos adicionales para la vista de informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de visor HTML5, siga los pasos siguientes para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
@@ -962,7 +958,7 @@ Para vista de informes de vídeo basados en un visor de vídeo creado con la API
       ```
    El objeto appMeasurementBridge tiene una función de seguimiento integrada. Sin embargo, puede proporcionar su propio equipo para admitir varios sistemas de seguimiento u otra funcionalidad.
 
-   Para obtener más información, consulte *Uso del componente TrackingManager* en la *Guía del usuario del SDK del visor HTML5 de Scene7* disponible para su descarga en [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Añadir subtítulos a vídeo {#adding-captions-to-video}
 
@@ -976,7 +972,7 @@ El subtítulo también permite una buena accesibilidad mediante subtítulos opci
 
 Dynamic Media tiene la capacidad de convertir archivos de subtítulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido estático (no de imagen)](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) en la *Ayuda de la API de servicio de imágenes de Scene7* para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Servicio de contenido estático (no de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en la *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos o subtítulos al vídeo**:
 
@@ -1179,4 +1175,3 @@ Para configurar el intervalo de tiempo predeterminado en el que se generan las m
 1. Una vez que la imagen se haya cargado correctamente, en la página **[!UICONTROL Cambiar miniatura]**, toque **[!UICONTROL Guardar cambios]**.
 
    La miniatura personalizada se agrega al vídeo.
-

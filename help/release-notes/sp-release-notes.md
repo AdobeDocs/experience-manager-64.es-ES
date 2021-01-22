@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
+source-wordcount: '21617'
 ht-degree: 24%
 
 ---
@@ -71,7 +71,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 ### Assets {#assets}
 
-* Se crea una carpeta sin nombre en SPS (Scene7 Publishing System) mientras se mueve un recurso de una carpeta a otra en Experience Manager con la configuración de Dynamic Media Scene7 (NPR-32440).
+* Se crea una carpeta sin nombre en Dynamic Media Classic al mover un recurso de una carpeta a otra en Experience Manager con la configuración de Dynamic Media Classic (NPR-32440).
 
 * La página de detalles de recursos de los archivos PDF no muestra botones de acción en el Experience Manager que se ejecuta en el modo Dynamic Media Scene7 (NPR-32316).
 

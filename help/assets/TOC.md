@@ -7,10 +7,10 @@ user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 46%
+source-wordcount: '731'
+ht-degree: 45%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 46%
    + [Directrices de formación de Smart Content Service](smart-tags-training-guidelines.md)
    + [Representaciones de vídeo](video-renditions.md)
 + Recursos 3D {#three-d}
-   + [Notas de la versión de AEM 3D](../release-notes/aem3d-release-notes.md)
+   + [Notas de la versión de AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [Uso de recursos 3D](assets-3d.md)
    + [Instalación y configuración de AEM 3D](install-config-3d.md)
    + [Configuración avanzada](advanced-config-3d.md)

@@ -1,16 +1,16 @@
 ---
 title: NO PUBLICAR Cree su primer documento adaptable
 seo-title: NO PUBLICAR Cree su primer documento adaptable
-description: nulo
-seo-description: nulo
+description: NO PUBLICAR
+seo-description: NO PUBLICAR
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 1%
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
@@ -85,12 +85,12 @@ Objetivos:
 
 ## Paso 3: Aplicar reglas a campos de documento adaptables (solo canal Web) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Documento adaptable proporciona un editor para escribir reglas en objetos de documento adaptables. Estas reglas definen las acciones que se activan en los objetos de documento en función de las condiciones preestablecidas y las acciones del usuario en el documento. Ayuda a garantizar la precisión y acelera la experiencia del usuario en la versión web del documento adaptable. Para obtener más información sobre las reglas de documento adaptables y el editor de reglas, consulte [editor de reglas](/help/forms/using/rule-editor.md).
+Documento adaptable proporciona un editor para escribir reglas en objetos de documento adaptables. Estas reglas definen acciones para el déclencheur de objetos de documento en función de las condiciones preestablecidas y las acciones del usuario en el documento. Ayuda a garantizar la precisión y acelera la experiencia del usuario en la versión web del documento adaptable. Para obtener más información sobre las reglas de documento adaptables y el editor de reglas, consulte [editor de reglas](/help/forms/using/rule-editor.md).
 
 Objetivos:
 
 * Creación y aplicación de reglas a campos de canal web de documentos adaptables
-* Usar reglas para activar servicios de modelos de datos de documento en el canal web
+* Usar reglas para déclencheur de servicios de modelos de datos de documento en el canal web
 
 ## Paso 4: Estilo del documento adaptable (solo canal Web) {#step-style-the-adaptive-document-web-channel-only}
 

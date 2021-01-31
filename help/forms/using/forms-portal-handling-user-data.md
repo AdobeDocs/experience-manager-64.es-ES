@@ -1,18 +1,18 @@
 ---
 title: Forms Portal | Gestión de datos de usuario
 seo-title: Forms Portal | Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+description: El portal de AEM Forms proporciona componentes que se pueden utilizar para la lista de formularios adaptables, formularios HTML5 y otros recursos de Forms en la página de AEM Sites. Descubra cómo el portal de Forms almacena datos para formularios de borrador y enviados. Descubra más a fondo cómo acceder a los datos de borrador y envío de formularios para usuarios anónimos e iniciados en los almacenes de datos configurados y, si es necesario, elimínelos.
+seo-description: El portal de AEM Forms proporciona componentes que se pueden utilizar para la lista de formularios adaptables, formularios HTML5 y otros recursos de Forms en la página de AEM Sites. Descubra cómo el portal de Forms almacena datos para formularios de borrador y enviados. Descubra más a fondo cómo acceder a los datos de borrador y envío de formularios para usuarios anónimos e iniciados en los almacenes de datos configurados y, si es necesario, elimínelos.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '980'
+ht-degree: 0%
 
 ---
 

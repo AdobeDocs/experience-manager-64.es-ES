@@ -1,17 +1,17 @@
 ---
 title: Administración de correspondencia | Gestión de datos de usuario
 seo-title: Administración de correspondencia | Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+description: La administración de correspondencia de AEM Forms le permite crear, administrar y optimizar correspondencia segura y personalizada con los clientes. Obtenga información sobre cómo configurar el almacenamiento de datos para las letras de borrador y enviadas en AEM repositorio, acceder a los datos almacenados y eliminar los datos almacenados.
+seo-description: La administración de correspondencia de AEM Forms le permite crear, administrar y optimizar correspondencia segura y personalizada con los clientes. Obtenga información sobre cómo configurar el almacenamiento de datos para las letras de borrador y enviadas en AEM repositorio, acceder a los datos almacenados y eliminar los datos almacenados.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 

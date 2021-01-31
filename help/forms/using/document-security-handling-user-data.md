@@ -1,16 +1,16 @@
 ---
 title: Seguridad de documento | Gestión de datos de usuario
 seo-title: Seguridad de documento | Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+description: La seguridad de AEM Forms documento le permite crear, almacenar y aplicar a sus documentos configuraciones de seguridad predefinidas. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Descubra cómo la seguridad de documento organiza los datos en tablas de base de datos, accede y exporta los datos de seguridad de documento para los usuarios de las bases de datos y, si es necesario, elimínelos de forma permanente.
+seo-description: La seguridad de AEM Forms documento le permite crear, almacenar y aplicar a sus documentos configuraciones de seguridad predefinidas. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Descubra cómo la seguridad de documento organiza los datos en tablas de base de datos, accede y exporta los datos de seguridad de documento para los usuarios de las bases de datos y, si es necesario, elimínelos de forma permanente.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---

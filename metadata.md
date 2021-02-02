@@ -4,7 +4,7 @@ solution-title: Información y asistencia
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-64.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Introducción
-getting-started-url: https://experienceleague.corp.adobe.com/docs/experience-manager-tutorials.html
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutoriales
 tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html
 mini-toc-levels: 2
@@ -13,7 +13,7 @@ solution: Experience Manager
 type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: 50b278705b703c190babc208567f7267796e66e4
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 8%
@@ -37,7 +37,7 @@ El archivo metadata.md incluye metadatos de nivel de repos que pasan a los archi
 
 En el archivo TOC.md
 
-| metadata | lo que hace |
+| metadatos | lo que hace |
 |--- |--- |
 | user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
 | user-guide-url | Abre la página del centro de aprendizaje y asistencia técnica. |

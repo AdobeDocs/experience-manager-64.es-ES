@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5893'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ En el servidor de archivos donde instaló AEM se guardan varios archivos de regi
 
       Aquí se registran los mensajes de error (de distintos niveles de gravedad).
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Este registro solo se utiliza si el medio dinámico está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
@@ -208,7 +208,7 @@ En el servidor de archivos donde instaló AEM se guardan varios archivos de regi
 
       Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       Este registro solo se utiliza si el medio dinámico está habilitado. El registro de acceso s7registra cada solicitud realizada a Dynamic Media a través de `/is/image` y `/is/content`.
 

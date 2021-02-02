@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2825'
 ht-degree: 34%
 
 ---
@@ -171,7 +171,7 @@ alturaIntroduzca el valor en píxeles si desea que la imagen tenga un tamaño fi
 
 Utilice el componente Dynamic Media para añadir vídeo dinámico a las páginas web. Cuando edita el componente, tiene la opción de usar un ajuste preestablecido de visor de vídeo predefinido para reproducir el vídeo en la página.
 
-![chlimage_1-541](assets/chlimage_1-540.png)
+![chlimage_1-540](assets/chlimage_1-540.png)
 
 Debe editar la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTROL Editar]** en el componente.
 
@@ -187,8 +187,8 @@ Un ejemplo de modificador de visor es posterimage=img.jpg&amp;caption=text.vtt,1
 
    Con los modificadores del visor, por ejemplo, puede hacer lo siguiente:
 
-   * Asocie un archivo de subtítulos con un [subtítulo de vídeo.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Asocie un archivo de navegación con una [navegación de vídeo.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Asocie un archivo de subtítulos con un [subtítulo de vídeo.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Asocie un archivo de navegación con una [navegación de vídeo.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 Puede editar la siguiente [!UICONTROL Configuración avanzada] haciendo clic en **[!UICONTROL Editar]** en el componente.
 

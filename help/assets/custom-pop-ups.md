@@ -1,8 +1,8 @@
 ---
 title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
 seo-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede activar el contenido personalizado para que se muestre en las ventanas emergentes.
-seo-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede activar el contenido personalizado para que se muestre en las ventanas emergentes.
+description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
+seo-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
-La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede activar el contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, esta funcionalidad permite a los usuarios hacer clic en un punto interactivo, una imagen en miniatura o en un mapa de imágenes para ver información o contenido relacionado.
+La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, esta funcionalidad permite a los usuarios hacer clic en un punto interactivo, una imagen en miniatura o en un mapa de imágenes para ver información o contenido relacionado.
 
 Los siguientes visores de Dynamic Media admiten las vistas rápidas:
 
@@ -108,8 +108,8 @@ EjemploSupongamos que estaba utilizando el siguiente código incrustado de muest
 
    Obtenga más información sobre el método `setHandlers()` en:
 
-   * Visor de imágenes interactivo: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visor de vídeo interactivo: [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visor de imágenes interactivo: [setHandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visor de vídeo interactivo: [setHandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Ahora debe configurar el controlador `quickViewActivate`.
 
@@ -140,9 +140,9 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
 
    Obtenga más información sobre el método quickViewActivate en:
 
-   * Visor de imágenes interactivo: [rellamadas de Evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Visor de vídeo interactivo: [rellamadas de Evento](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Compatibilidad con datos interactivos en el visor de vídeo interactivo: [Compatibilidad con datos interactivos](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * Visor de imágenes interactivo: [rellamadas de Evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visor de vídeo interactivo: [rellamadas de Evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Compatibilidad con datos interactivos en el visor de vídeo interactivo: [Compatibilidad con datos interactivos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Haga lo siguiente:
 
@@ -218,8 +218,8 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
 
    Obtenga más información sobre el método `init()` en:
 
-   * Visor de imágenes interactivo: [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * Visor de vídeo interactivo: [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * Visor de imágenes interactivo: [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visor de vídeo interactivo: [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Para adjuntar la ventana emergente (descrita en los pasos anteriores) al visor, utilice el código siguiente:
 

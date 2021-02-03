@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5587'
 ht-degree: 4%
 
 ---
@@ -154,7 +154,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 * **[!UICONTROL Valores predeterminados para los campos]**  del catálogo: esta configuración se refiere a la resolución y al tipo de miniatura predeterminada de las imágenes.
 * **[!UICONTROL Atributos]**  de administración de color: esta configuración determina qué perfiles de color ICC se utilizan.
 * **[!UICONTROL Atributos]**  de compatibilidad: Esta configuración permite que los párrafos al inicio y al final de las capas de texto se traten como en la versión 3.6 para lograr compatibilidad con versiones anteriores.
-* **[!UICONTROL Compatibilidad]**  con localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de la compatibilidad con Localizaciones, consulte [Consideraciones al configurar la localización de recursos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Compatibilidad]**  con localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de la compatibilidad con Localizaciones, consulte [Consideraciones importantes al implementar la compatibilidad con localizaciones](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server).
 
 #### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
 

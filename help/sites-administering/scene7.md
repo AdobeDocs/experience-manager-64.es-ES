@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 1%
 
 ---
@@ -422,7 +422,7 @@ Sin embargo, si no desea que los recursos insertados en Dynamic Media Classic se
 Para poder insertar recursos en Dynamic Media Classic sin publicarlos, debe configurar lo siguiente:
 
 1. [Utilice el Admin Console para crear un caso de soporte técnico.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) En el caso de soporte, solicite que la previsualización segura se habilite para su cuenta de Dynamic Media Classic.
-1. Siga las instrucciones para [configurar la previsualización segura para su cuenta de Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. Siga las instrucciones para [configurar la previsualización segura para su cuenta de Dynamic Media Classic.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 Estos son los mismos pasos que debe seguir para crear cualquier configuración de prueba segura en Dynamic Media Classic.
 
@@ -452,7 +452,7 @@ Para definir el estado de los recursos insertados en Dynamic Media Classic como 
 1. Toque el icono de AEM y vaya a **[!UICONTROL Implementación > Cloud Services]**, toque **[!UICONTROL Dynamic Media Classic]** y seleccione su configuración en Dynamic Media Classic.
 1. Toque la ficha **[!UICONTROL Avanzado]**. En el menú desplegable **[!UICONTROL Habilitar Vista segura]**, seleccione **[!UICONTROL Al publicar Activación]** de AEM para insertar recursos en Dynamic Media Classic sin publicarlos. (De forma predeterminada, este valor se establece en **[!UICONTROL Inmediatamente]**, donde los recursos de Dynamic Media Classic se publican inmediatamente).
 
-   Consulte la [documentación de Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) para obtener más información sobre cómo probar los recursos antes de hacerlos públicos.
+   Consulte la [documentación de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) para obtener más información sobre cómo probar los recursos antes de hacerlos públicos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 

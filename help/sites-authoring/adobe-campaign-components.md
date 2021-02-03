@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 74%
+source-wordcount: '2786'
+ht-degree: 73%
 
 ---
 
@@ -51,7 +51,7 @@ El componente Encabezado puede:
 
 Edite el componente **Encabezado (Campaign)** directamente. Déjelo vacío para utilizar el título de página.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 Puede configurar lo siguiente:
 
@@ -179,13 +179,13 @@ En el siguiente ejemplo se muestra el componente Vínculo (Campaign) que se est�
 
 ### Plantilla de imagen de Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Las ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) plantillas de imagen de Scene7 están en capas y son archivos de imagen con capas, donde el contenido y las propiedades se pueden parametrizar para la variabilidad. El componente **Plantilla de imagen** le permite usar plantillas de Scene7 en los boletines y cambiar los valores de los parámetros de las plantillas. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
+[Las ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) plantillas de imagen de Scene7 están en capas y son archivos de imagen con capas, donde el contenido y las propiedades se pueden parametrizar para la variabilidad. El componente **Plantilla de imagen** permite utilizar plantillas de Dynamic Media Classic (anteriormente Scene7) en newsletters y cambiar los valores de los parámetros de plantilla. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
 
 ![chlimage_1-191](assets/chlimage_1-111.png)
 
-Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Scene7 se describe en detalle en [Componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
+Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Dynamic Media Classic (anteriormente Scene7) se describe en detalle en [componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
 
-Además, el panel de parámetros muestra todos los parámetros de plantilla que se han definido para la plantilla en Scene7. Puede adaptar el valor, las variables a insertar o bien restaurarlas a su valor predeterminado en cada uno de esos parámetros.
+Además, el panel de parámetros lista todos los parámetros de plantilla definidos para la plantilla en Dynamic Media Classic (anteriormente Scene7). Puede adaptar el valor, las variables a insertar o bien restaurarlas a su valor predeterminado en cada uno de esos parámetros.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -258,7 +258,7 @@ Al igual que con los componentes de texto y personalización (Campaign) e imagen
 
 En el siguiente ejemplo se muestra el componente Texto e imagen (Campaign) que se está visualizando.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Texto y personalización (Campaign) {#text-personalization-campaign}
 

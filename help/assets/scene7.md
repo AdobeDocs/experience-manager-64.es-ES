@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2826'
 ht-degree: 26%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 26%
 
 # Añadir las funciones de Dynamic Media Classic a su página {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
+Adobe Dynamic Media Classic es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
 
 Puede realizar la vista de AEM recursos publicados en Dynamic Media Classic en varios visores:
 
@@ -74,8 +74,6 @@ Una vez que estén disponibles en el modo **[!UICONTROL Diseño]**, puede agrega
 ### Aviso de fin de vida útil para el visualizador Flash {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Dynamic Media Classic finalizó la compatibilidad con la plataforma de visor de Flash.
-
-Para obtener más información sobre este cambio importante, consulte las [Preguntas frecuentes sobre el final de asistencia para el visor Flash](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html).
 
 ### Añadir un componente de Dynamic Media Classic (Scene7) en una página {#adding-a-scene-component-to-a-page}
 
@@ -196,7 +194,7 @@ interrupciónSi el sitio web responde, desea ajustar los puntos de interrupción
 
 ### Plantilla de imagen {#image-template}
 
-[Las plantillas de imagen ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) de Dynamic Media Classic son contenido de Photoshop en capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para la variabilidad. El componente **[!UICONTROL Plantilla de imagen]** le permite importar imágenes y cambiar el texto de forma dinámica en AEM. Además, puede configurar el componente **[!UICONTROL Plantilla de imágenes]** para utilizar valores de ClientContext, de modo que cada usuario experimenta la imagen de una forma personalizada.
+[Las plantillas de imagen ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating-the-initial-template) de Dynamic Media Classic son contenido de Photoshop en capas que se importó a Dynamic Media Classic, donde el contenido y las propiedades se parametrizaron para la variabilidad. El componente **[!UICONTROL Plantilla de imagen]** le permite importar imágenes y cambiar el texto de forma dinámica en AEM. Además, puede configurar el componente **[!UICONTROL Plantilla de imágenes]** para utilizar valores de ClientContext, de modo que cada usuario experimenta la imagen de una forma personalizada.
 
 Toque **[!UICONTROL Editar]** para configurar el componente. Puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic](#settings-common-to-all-scene-components), así como otras opciones que se describen en esta sección.
 

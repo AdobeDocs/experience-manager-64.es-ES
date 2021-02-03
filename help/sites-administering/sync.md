@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 2%
@@ -171,7 +171,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
    * acceder a la [Consola Web](/help/sites-deploying/configuring-osgi.md)
 
       * por ejemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * ubicar `Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+   * ubicar `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * seleccione la configuración existente para abrirla y editarla (icono de lápiz)
 
       Verificar `property name` : **`socialpubsync-publishUser`**
@@ -229,7 +229,7 @@ Una vez que se ha creado un usuario autorizado, un miembro del grupo de usuarios
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-### 6. Activador de distribución de Apache Sling - Fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Déclencheur de distribución de Apache Sling - Fábrica de Déclencheur programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar el intervalo de sondeo**
 
@@ -322,7 +322,7 @@ Si hay datos personalizados que desea sincronizar en varias instancias de public
 
 * **Propiedades ignorables**
 
-   Es la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no activarán la sincronización por sí mismos.
+   Es la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no se traducirán por sí mismos en una sincronización de déclencheur.
 
    Propiedad predeterminada que se debe ignorar:
 
@@ -503,13 +503,13 @@ A continuación se presentan vistas de cómo deben aparecer las configuraciones 
 
 #### (publicar) Un agente de distribución Apache Sling: fábrica de agentes de cola {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### (publicación) Distribución de granito de un Adobe - Fábrica de observación de diferencias {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-#### (autor) Un activador de distribución de Apache Sling: Fábrica de activadores programados {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
+#### (autor) Un Déclencheur de distribución Apache Sling: Déclencheur programados Fábrica {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 

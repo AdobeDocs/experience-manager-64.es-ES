@@ -1,18 +1,14 @@
 ---
 title: Visualización de recursos 3D
-seo-title: Visualización de recursos 3D
 description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para la vista de recursos 3D.
-seo-description: Obtenga información sobre el visor 3D interactivo disponible en la página de detalles de recursos de AEM y cómo utilizarlo para la vista de recursos 3D.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1778'
 ht-degree: 32%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
->Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) o [AEM 6.5.3 o superior.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) para vista de recursos 3D.
+>Ya no se admite AEM 3D en AEM 6.4. Adobe recomienda utilizar la función de recursos 3D en [AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) o [AEM 6.5.3 o superior.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) para vista de recursos 3D.
 
 En este documento se describe cómo realizar la vista de recursos 3D en los detalles de recursos y cómo realizar la vista de recursos que se encuentran en el componente 3D de los sitios.
 

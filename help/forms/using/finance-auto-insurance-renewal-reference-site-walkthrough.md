@@ -1,16 +1,16 @@
 ---
 title: Recorrido por el sitio de referencia de la renovación automática de seguros de We.Finance
 seo-title: Recorrido por el sitio de referencia de la renovación automática de seguros de We.Finance
-description: nulo
-seo-description: nulo
+description: Lea el tutorial detallado del sitio de referencia del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM formularios y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros.
+seo-description: Lea el tutorial detallado del sitio de referencia del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM formularios y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros.
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El sitio Web de We.Finance es un sitio de servicios financieros diseñado para a
 
 Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM formularios y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
-**El inicio del viaje con el caso de uso:**
+**El recorrido inicio con el caso de uso:**
 
 Sarah Rose es una cliente existente de We.Finance y ha adquirido una póliza de seguro de automóviles. Ahora es el momento del año para la renovación de su póliza de seguro. Gloria Rios, agente de seguros, We.Finance envía un recordatorio a Sarah sobre la renovación de su política. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa el proceso con éxito.
 

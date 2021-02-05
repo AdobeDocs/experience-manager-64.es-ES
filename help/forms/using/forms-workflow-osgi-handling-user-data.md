@@ -1,16 +1,16 @@
 ---
 title: Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario
 seo-title: Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario
-description: nulo
-seo-description: nulo
+description: Los flujos de trabajo de AEM centrados en Forms le permiten automatizar procesos empresariales reales centrados en Forms. Profundizar en los almacenes de datos y datos de los usuarios. Obtenga información sobre cómo acceder y eliminar datos de usuario.
+seo-description: Los flujos de trabajo de AEM centrados en Forms le permiten automatizar procesos empresariales reales centrados en Forms. Profundizar en los almacenes de datos y datos de los usuarios. Obtenga información sobre cómo acceder y eliminar datos de usuario.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---

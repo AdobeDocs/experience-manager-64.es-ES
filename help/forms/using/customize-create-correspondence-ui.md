@@ -46,7 +46,7 @@ Para cualquier personalización, cree una estructura de carpetas paralela, como 
 
 La rama /apps (estructura de carpetas):
 
-* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o una corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
+* Garantiza que los archivos sean seguros en caso de una actualización del sistema. En caso de actualización, paquete de funciones o corrección urgente, se actualiza la rama /libs y si aloja los cambios en la rama /libs, se sobrescriben.
 * Le ayuda a no perturbar el sistema o ramificación actual, que posiblemente pueda desestabilizarse por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
 * Ayuda a los recursos a obtener una mayor prioridad cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas en ella).
 

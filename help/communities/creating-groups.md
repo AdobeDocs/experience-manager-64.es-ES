@@ -32,7 +32,7 @@ Se seleccionan una o varias plantillas de grupo para la función de grupo cuando
 
 La capacidad de crear un nuevo grupo de comunidad depende de la existencia de un sitio de comunidad que incluya la función de grupos, como uno creado a partir de ` [Reference Site Template](sites.md)`.
 
-Los ejemplos que siguen utilizan el sitio de comunidad creado a partir de `Reference Site Template` como se describe en el tutorial [Introducción a AEM Communities](getting-started.md).
+Los ejemplos que siguen utilizan el sitio de comunidad creado a partir del `Reference Site Template` como se describe en el tutorial [Introducción a AEM Communities](getting-started.md).
 
 Esta es la página que se carga al publicar cuando se selecciona el elemento de menú **[!UICONTROL Grupos]**:
 

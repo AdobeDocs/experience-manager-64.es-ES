@@ -256,7 +256,7 @@ Por ejemplo:
 
 #### Redimensionamiento y compatibilidad con imágenes adaptables {#resizing-and-adaptive-image-compliance}
 
-Si cambia el tamaño de un componente dentro de la cuadrícula, se activarán los siguientes oyentes, según corresponda:
+Cualquier cambio de tamaño de un componente dentro de la cuadrícula tendrá como déclencheur los siguientes oyentes, según corresponda:
 
 * `beforeedit`
 * `beforechildedit`

@@ -214,7 +214,7 @@ Las páginas de modelo (a las que se hace referencia en una configuración de mo
 
 ### Despliegue de un modelo {#rolling-out-a-blueprint}
 
-Despliegue una página de modelo para insertar los cambios de contenido en copias en vivo. Una acción **Despliegue** ejecuta las configuraciones de implementación que utilizan el activador [Al despliegue](/help/sites-administering/msm-sync.md#rollout-triggers).
+Despliegue una página de modelo para insertar los cambios de contenido en copias en vivo. Una acción **Despliegue** ejecuta las configuraciones de implementación que utilizan el déclencheur [Al implementarse](/help/sites-administering/msm-sync.md#rollout-triggers).
 
 >[!NOTE]
 >
@@ -274,7 +274,7 @@ Sincronice una Live Copy para extraer los cambios del origen a la Live Copy.
 
 >[!NOTE]
 >
->La sincronización ejecuta las configuraciones de implementación que utilizan el activador [Al implementar](/help/sites-administering/msm-sync.md#rollout-triggers).
+>La sincronización ejecuta las configuraciones de implementación que utilizan el déclencheur [Al implementar](/help/sites-administering/msm-sync.md#rollout-triggers).
 
 1. En la consola **Sitios**, seleccione la página de Live Copy y abra las propiedades.
 1. Abra la ficha **Live Copy**.

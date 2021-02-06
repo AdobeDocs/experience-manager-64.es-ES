@@ -143,7 +143,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
    Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html).
 
 1. [Añada el ](/help/sites-administering/adobeanalytics.md) marco a la página.
-1. Para probar la configuración en **modo de Previsualización**, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
+1. Para probar la configuración en **modo de Previsualización**, reproduzca el vídeo para obtener llamadas de Adobe Analytics a déclencheur.
 
 Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al seguimiento de hitos mediante desplazamientos de seguimiento de 4, 8, 16, 20 y 24, y las siguientes asignaciones para las variables de CQ:
 
@@ -278,7 +278,7 @@ eventdata.events.milestoneXX
    Para obtener información sobre la optimización de las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html).
 
 1. [Añada el ](/help/sites-administering/adobeanalytics.md) marco a la página.
-1. Para probar la configuración en **modo de Previsualización**, reproduzca el vídeo para que se activen las llamadas de Adobe Analytics.
+1. Para probar la configuración en **modo de Previsualización**, reproduzca el vídeo para obtener llamadas de Adobe Analytics a déclencheur.
 
 ## Hitos heredados {#legacy-milestones}
 

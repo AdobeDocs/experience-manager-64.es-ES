@@ -45,7 +45,7 @@ La configuración de Adobe PDF solo se aplica a las conversiones basadas en PDFM
 
 ## Acerca de la configuración de PDF predefinida {#about-the-predefined-pdf-settings}
 
-PDF Generator proporciona varios ajustes de PDF predefinidos para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
+PDF Generator proporciona varios ajustes predefinidos de PDF para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
 
 **Imprimir de alta calidad:** crea archivos PDF para obtener una salida de alta calidad. Esta configuración:
 

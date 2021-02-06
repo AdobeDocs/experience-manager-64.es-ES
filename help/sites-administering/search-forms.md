@@ -449,7 +449,7 @@ Puede agregar o editar campos y definir o actualizar su configuración:
       Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración**.
    Por ejemplo, la configuración del **Predicado de intervalo de fechas**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 1. Realice los cambios necesarios y confirme con **Listo**.
 

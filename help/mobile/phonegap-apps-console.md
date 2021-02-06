@@ -209,7 +209,7 @@ Pasos para crear una aplicación nueva basada en una plantilla de aplicación:
 
 >[!NOTE]
 >
->Si desinstala el paquete de la aplicación de referencia de Geometrixx Outdoors de AEM y tiene una aplicación creada en función de su plantilla, dicha aplicación dejará de funcionar. La aplicación Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
+>Si desinstala el paquete de aplicación de referencia de Geometrixx Outdoors de AEM y tiene una aplicación creada en función de su plantilla, dicha aplicación ya no funcionará. La aplicación Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
 
 ## Explorar la aplicación de Geometrixx Outdoors de muestra {#exploring-the-sample-geometrixx-outdoors-app}
 

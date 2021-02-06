@@ -387,10 +387,10 @@ En ambos casos, puede definir el número esperado de transacciones por segundo c
 
 | Componente | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Página principal de usuario único | Promedio | 1 | 1 |  |  |
+| Página principal de usuario único | Promedio | 1 | 3 |  |  |
 |  | Pico | 1 | 3 |  |  |
 | Página principal 100 usuarios | Promedio | 100 | 1 |  |  |
-|  | Pico | 100 | 3 |  |
+|  | Pico | 100 | 1 |  |
 
 #### Pruebas de componentes combinadas {#combined-component-tests}
 
@@ -402,7 +402,7 @@ Al probar los componentes en combinación, se refleja mejor el comportamiento de
 |  | Búsqueda   | 10 | 3 |  |  |
 |  | Noticias | 10 | 2 |  |  |
 |  | Sucesos | 10 | 3 |  |  |
-|  | Activaciones | 10 | 1 |  | Simulación del comportamiento del autor. |
+|  | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
 | Pico mixto | Página principal | 100 | 5 |  |  |
 |  | Búsqueda   | 50 | 5 |  |  |
 |  | Noticias | 100 | 10 |  |  |
@@ -435,7 +435,7 @@ Al diseñar estas pruebas, hay que recordar que no todos los escenarios se produ
 | Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Sólo &amp;ast;&amp;ast;&amp;ast;;;; ast;; se buscan. |
 |  | Palabra de detención | 20 | 2 |  | Buscando una palabra de parada. |
 |  | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
-|  | Caracteres especiales | 10 | 3 |  | Buscando caracteres especiales. |
+|  | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
 
 #### Pruebas de resistencia {#endurance-tests}
 
@@ -526,7 +526,7 @@ Si no tiene un par de uno a uno de publicador/despachante, deberá agregar solic
 >
 >Para obtener el mejor rendimiento, Adobe recomienda una proporción de caché del 90 % al 95 %.
 
-#### Uso de Codificación de página consistente {#using-consistent-page-encoding}
+#### Uso de Codificación de Página Coherente {#using-consistent-page-encoding}
 
 Con Dispatcher versión 4.1.11 puede almacenar en caché los encabezados de respuesta. Si no está almacenando encabezados de respuesta en caché en Dispatcher, se pueden producir problemas si almacena información de codificación de página en el encabezado. En este caso, cuando Dispatcher envía una página desde la caché, se utiliza la codificación predeterminada del servidor web para la página. Existen dos formas de evitar este problema:
 

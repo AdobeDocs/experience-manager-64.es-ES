@@ -59,7 +59,7 @@ Puede configurar lo siguiente:
 
 En el siguiente ejemplo se muestra el componente Encabezado (Campaign) que se está visualizando.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Imagen (Campaign) {#image-campaign}
 

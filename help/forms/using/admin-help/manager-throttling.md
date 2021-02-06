@@ -26,7 +26,7 @@ AEM formularios (y versiones anteriores) utilizaban colas JMS para ejecutar oper
 
 En AEM formularios, las operaciones realizadas por los servicios pueden durar poco (sincrónicas) o durar mucho (asincrónicas). Las operaciones de corta duración se completan sincrónicamente en el mismo subproceso desde el que se invocaron. Estas operaciones esperan una respuesta antes de continuar.
 
-Las operaciones de larga duración pueden abarcar sistemas o incluso extenderse más allá de la organización, como cuando un cliente debe completar y enviar un formulario de solicitud de préstamo como parte de una solución más amplia que integra múltiples tareas automatizadas y humanas. Esas operaciones deben continuar mientras se espera una respuesta. Las operaciones de larga duración realizan su trabajo subyacente de forma asíncrona, lo que permite que los recursos se utilicen de otro modo mientras se espera la finalización. A diferencia de una operación de corta duración, Work Manager no considera que una operación de larga duración se complete una vez que se ha invocado. Para completar la operación debe producirse un activador externo, como un sistema que solicite otra operación en el mismo servicio o un usuario que envíe un formulario.
+Las operaciones de larga duración pueden abarcar sistemas o incluso extenderse más allá de la organización, como cuando un cliente debe completar y enviar un formulario de solicitud de préstamo como parte de una solución más amplia que integra múltiples tareas automatizadas y humanas. Esas operaciones deben continuar mientras se espera una respuesta. Las operaciones de larga duración realizan su trabajo subyacente de forma asíncrona, lo que permite que los recursos se utilicen de otro modo mientras se espera la finalización. A diferencia de una operación de corta duración, Work Manager no considera que una operación de larga duración se complete una vez que se ha invocado. Para completar la operación debe producirse un déclencheur externo, como un sistema que solicite otra operación en el mismo servicio o un usuario que envíe un formulario.
 
 ## Acerca de Work Manager {#about-work-manager}
 
@@ -87,7 +87,7 @@ Puede configurar la limitación para el Administrador de trabajo, de modo que lo
 
 **Añadir las opciones de Java a WebLogic**
 
-1. Escriba `https://`*[nombre de host ]*`:`*[puerto]* `/console` &lt;a4/> en un explorador Web para obtener un inicio de la Consola de administración de WebLogic.
+1. Escriba `https://`*[nombre de host ]*`:`*[puerto]* `/console`  en un explorador Web para obtener un inicio de la Consola de administración de WebLogic.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en Centro de cambios, haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la pantalla siguiente, haga clic en la ficha Configuración > Inicio del servidor.

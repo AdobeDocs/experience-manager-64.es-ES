@@ -22,7 +22,7 @@ ht-degree: 6%
 
 En aras de la compatibilidad con versiones anteriores, el contenido y la configuración de **/etc** y **/content** a partir de AEM 6.3 no se tocarán ni transformarán inmediatamente con la actualización. Esto se hace para garantizar que la dependencia de las aplicaciones de los clientes en esas estructuras permanezca intacta. La funcionalidad relacionada con estas estructuras de contenido sigue siendo la misma, aunque el contenido dentro y fuera de la caja AEM 6.4 se alojaría en otro lugar.
 
-Aunque no todas esas ubicaciones se pueden transformar automáticamente, también se hace referencia a algunas `CodeUpgradeTasks` retrasadas como Migración de contenido flotante. Esto permite a los clientes activar estas transformaciones automáticas reiniciando la instancia con esta propiedad del sistema:
+Aunque no todas esas ubicaciones se pueden transformar automáticamente, también se hace referencia a algunas `CodeUpgradeTasks` retrasadas como Migración de contenido flotante. Esto permite a los clientes realizar el déclencheur de esas transformaciones automáticas reiniciando la instancia con esta propiedad del sistema:
 
 ```shell
 -Dcom.adobe.upgrade.forcemigration=true

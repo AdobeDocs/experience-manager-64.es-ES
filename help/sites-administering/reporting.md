@@ -266,7 +266,7 @@ InstantáneasPuede definir la frecuencia con la que se crean las instantáneas; 
 
 ### Cargar datos {#load-data}
 
-El botón **Cargar datos** sólo está visible cuando **actualizar manualmente los datos** se seleccionó en **[Editar](#edit-report)**.
+El botón **Cargar datos** sólo está visible cuando **actualizar manualmente los datos** se ha seleccionado desde **[Editar](#edit-report)**.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 

@@ -71,7 +71,7 @@ La configuración del registro está formada por el nivel de registro y la categ
   </tr> 
   <tr> 
    <td>2</td> 
-   <td>Los registros se recopilan en un objeto JavaScript del lado del cliente y se pueden publicar en <strong>Servidor</strong> </td> 
+   <td>Los registros se recopilan en un objeto JavaScript del lado del cliente y se pueden publicar en <strong>Server</strong> </td> 
   </tr> 
   <tr> 
    <td>3</td> 

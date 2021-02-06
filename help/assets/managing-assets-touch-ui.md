@@ -584,7 +584,7 @@ Para obtener más información específica de Dynamic Media, consulte [Publicaci
 1. Seleccione la acción rápida **[!UICONTROL Publicar]** de la tarjeta del recurso o seleccione el recurso y toque el icono **[!UICONTROL Publicación rápida]** de la barra de herramientas.
 1. Si el recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que no se han publicado o que se han modificado desde la última vez que se publicaron o no. Elija las referencias que desee publicar.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Toque **[!UICONTROL Publicar]** para confirmar la activación de los recursos.
 

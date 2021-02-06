@@ -64,7 +64,7 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Haga clic en **Siguiente** y repita el paso anterior para los extremos de SOAP que no se encuentran en la lista anterior. Asegúrese de que SOAP aparece en la columna Proveedor antes de eliminar los extremos.
+1. Haga clic en **Siguiente** y repita el paso anterior para los extremos de SOAP que no están en la lista anterior. Asegúrese de que SOAP aparece en la columna Proveedor antes de eliminar los extremos.
 
 ## Desactivación del acceso anónimo no esencial a los servicios {#disabling-non-essential-anonymous-access-to-services}
 

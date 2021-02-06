@@ -27,7 +27,7 @@ La traducción de UGC permite a los visitantes del sitio y a los miembros experi
 Como ejemplo, supongamos que
 
 * Un miembro de Francia publica una receta en francés al foro comunitario de un sitio web multinacional de cocina
-* Otro miembro de Japón usa la función de traducción para activar la traducción de la receta del francés al japonés
+* Otro miembro de Japón usa la función de traducción para déclencheur la traducción de la receta del francés al japonés
 * Después de leer la receta en japonés, el miembro de Japón luego publica un comentario en japonés.
 * El miembro de Francia usa la función de traducción para traducir el comentario japonés al francés
 * ¡Comunicación global!

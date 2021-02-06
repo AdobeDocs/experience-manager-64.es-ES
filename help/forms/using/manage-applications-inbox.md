@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es a través de las aplicaciones de AEM Bandeja de entrada. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md#launch).
+Una de las muchas maneras de iniciar o déclencheur un flujo de trabajo centrado en Forms es a través de las aplicaciones de AEM Bandeja de entrada. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md#launch).
 
 Además, AEM Bandeja de entrada consolida las notificaciones y tareas de diversos componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea, la aplicación asociada aparece como una tarea en la Bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la Bandeja de entrada de todos los miembros del grupo hasta que un individuo reclame o delega la tarea.
 
@@ -39,7 +39,7 @@ En resumen, la Bandeja de entrada permite crear una nueva aplicación y administ
 
 ## Administrar tareas {#manage-tasks}
 
-Cuando se activa un flujo de trabajo de Forms y usted es un usuario asignado o parte del grupo asignado, aparece una tarea en la Bandeja de entrada. Puede vista de los detalles de la tarea y realizar las acciones disponibles en la tarea desde la Bandeja de entrada.
+Cuando un flujo de trabajo de Forms déclencheur y usted es un usuario asignado o parte del grupo de usuarios asignados, aparecerá una tarea en la Bandeja de entrada. Puede vista de los detalles de la tarea y realizar las acciones disponibles en la tarea desde la Bandeja de entrada.
 
 ### Reclamar o delegar tareas {#claim-or-delegate-tasks}
 

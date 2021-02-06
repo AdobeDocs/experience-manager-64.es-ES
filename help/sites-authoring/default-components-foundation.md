@@ -65,7 +65,7 @@ Los componentes generales son los básicos que se utilizan para crear contenido.
 
 Es posible definir un vínculo con título y descripción.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### Imagen adaptable {#adaptive-image}
 

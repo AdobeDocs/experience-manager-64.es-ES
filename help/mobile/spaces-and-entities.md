@@ -243,7 +243,7 @@ Tiene la opción de elegir **Árbol de publicación** o **Publicación rápida**
 
 1. Seleccione una entidad en la lista de la consola de espacio y haga clic en **Árbol de publicación **para publicar esa entidad y sus elementos secundarios.
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **O bien**,
 

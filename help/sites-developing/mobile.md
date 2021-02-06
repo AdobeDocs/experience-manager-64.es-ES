@@ -547,7 +547,7 @@ Puede forzar el dispositivo de cualquier solicitud para probar una versión espe
 
 El valor del dispositivo sobrescrito se almacena en una cookie para que pueda explorar el sitio Web sin agregar el parámetro `device` a cada `URL`.
 
-Como consecuencia, debe llamar al mismo `URL` con el `device` establecido en `browser` para volver a la versión de escritorio del sitio Web.
+Como consecuencia, debe llamar al mismo `URL` con el `device` establecido en `browser` para regresar a la versión de escritorio del sitio Web.
 
 >[!NOTE]
 >

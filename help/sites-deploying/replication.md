@@ -38,7 +38,7 @@ Las solicitudes se [ponen en cola](/help/sites-deploying/osgi-configuration-sett
 
 La replicación, en una instancia de publicación o un despachante, se realiza en varios pasos:
 
-* el autor solicita que se publique determinado contenido (se active); esto se puede iniciar mediante una solicitud manual o mediante activadores automáticos preconfigurados.
+* el autor solicita que se publique determinado contenido (se active); esto puede iniciarse mediante una solicitud manual o mediante déclencheur automáticos preconfigurados.
 * la solicitud se pasa al agente de replicación predeterminado apropiado; un entorno puede tener varios agentes predeterminados que siempre se seleccionarán para dichas acciones.
 * el agente de replicación &quot;empaqueta&quot; el contenido y lo coloca en la cola de replicación.
 * en la ficha Sitios web, se establece el [indicador de estado de color](/help/sites-authoring/publishing-pages.md#determining-publication-status) para las páginas individuales.
@@ -320,7 +320,7 @@ Solo se necesita la siguiente configuración si se necesita un proxy:
 
 #### Desencadenadores {#triggers}
 
-Estas configuraciones se utilizan para definir activadores para la replicación automatizada:
+Estas configuraciones se utilizan para definir déclencheur para la replicación automatizada:
 
 * **Omitir predeterminado**
 
@@ -336,7 +336,7 @@ Estas configuraciones se utilizan para definir activadores para la replicación 
 
 * **Tiempo de activación/desactivación alcanzado**
 
-   Esto activará la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan las veces u horas de inactividad definidas para una página. Esto se utiliza principalmente para agentes Dispatcher Flush.
+   Esto déclencheur la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan las veces u horas de inactividad definidas para una página. Esto se utiliza principalmente para agentes Dispatcher Flush.
 
 * **En estado de recepción**
 

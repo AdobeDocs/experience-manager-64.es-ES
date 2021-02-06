@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # Creación de proyectos de traducción {#creating-translation-projects}
 
-Para crear una copia de idioma, active uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario de Recursos:
+Para crear una copia de idioma, déclencheur uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario de Assets:
 
 **Crear y traducir**
 

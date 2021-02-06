@@ -59,11 +59,11 @@ Sarah Rose es una cliente existente de We.Finance. Recibe un boletín de We.Fina
 
 #### Cómo funciona {#how-it-works}
 
-La newsletter enviada a Sarah es una implementación personalizada que activa un correo electrónico para el ID de correo electrónico especificado. El botón Aplicar ahora del correo electrónico está vinculado a la aplicación de tarjeta de crédito, que es un formulario adaptable en una instancia de publicación.
+La newsletter enviada a Sarah es una implementación personalizada que déclencheur un correo electrónico al ID de correo electrónico especificado. El botón Aplicar ahora del correo electrónico está vinculado a la aplicación de tarjeta de crédito, que es un formulario adaptable en una instancia de publicación.
 
 #### Véalo usted mismo {#see-it-yourself}
 
-Abra la siguiente URL en la instancia de publicación para activar un correo electrónico de newsletter. Asegúrese de reemplazar `[emailID]` por una cuenta de correo electrónico válida para recibir la newsletter. Abra la newsletter y haga clic en **[!UICONTROL Aplicar ahora]** para ir a la aplicación de tarjeta de crédito.
+Abra la siguiente URL en la instancia de publicación para enviar un déclencheur por correo electrónico a la newsletter. Asegúrese de reemplazar `[emailID]` por una cuenta de correo electrónico válida para recibir la newsletter. Abra la newsletter y haga clic en **[!UICONTROL Aplicar ahora]** para ir a la aplicación de tarjeta de crédito.
 
 `https://[publishServer]:[publsihPort]/content/campaigns/we-finance/start.html?app=cc&email=[emailID]&givenName=Sarah&familyName=Rose`
 
@@ -105,8 +105,8 @@ Algunas de las funciones clave que puede revisar en el formulario adaptable son:
 * Incluye reglas de formulario adaptables para invocar los servicios del Modelo de datos de formulario para rellenar previamente los detalles de usuario del usuario que ha iniciado sesión. También invoca a los servicios para rellenar previamente la información por número de la seguridad social o por dirección de correo electrónico proporcionada en el formulario. Puede revisar los modelos de datos de formulario y sus servicios en `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Utiliza varios componentes de formulario adaptables para capturar entradas y adaptarse a las respuestas del usuario. También utiliza componentes como Correo electrónico que admiten tipos de entrada HTML5.
 * Utiliza el componente Paso de firma para mostrar el formulario completado y permite la firma electrónica en el formulario.
-* El botón Guardar mi progreso genera un ID exclusivo para el usuario y guarda la aplicación parcialmente rellenada como borrador en un nodo de AEM repositorio. También muestra un cuadro de diálogo que busca permiso para enviar un correo electrónico con un vínculo al nodo que contiene el borrador de la aplicación. El botón Enviar correo del cuadro de diálogo de confirmación activa un correo electrónico con un vínculo al nodo que contiene el borrador.
-* Utiliza la acción de envío Invocar flujo de trabajo AEM para activar el flujo de trabajo de aprobación de tarjeta de crédito. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* El botón Guardar mi progreso genera un ID exclusivo para el usuario y guarda la aplicación parcialmente rellenada como borrador en un nodo de AEM repositorio. También muestra un cuadro de diálogo que busca permiso para enviar un correo electrónico con un vínculo al nodo que contiene el borrador de la aplicación. El botón Enviar correo del cuadro de diálogo de confirmación déclencheur un correo electrónico con un vínculo al nodo que contiene el borrador.
+* Utiliza la acción de envío Invocar flujo de trabajo AEM para realizar el déclencheur del flujo de trabajo de aprobación de tarjeta de crédito. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 Se recomienda revisar el formulario para comprender el esquema, los componentes, las reglas, los modelos de datos de formulario, el flujo de trabajo de los formularios y la acción de envío que se utiliza para crear el formulario.
 
@@ -158,7 +158,7 @@ We.Finance recibe la solicitud de tarjeta de crédito presentada por Sarah. Se a
 
 #### Cómo funciona {#how-it-works-2}
 
-Cuando Sarah rellena y envía la solicitud de tarjeta de crédito, se activa un Forms Workflow y se crea una tarea en la bandeja de entrada de AEM de Gloria.
+Cuando Sarah rellena y envía la solicitud de tarjeta de crédito, se crea un déclencheur Forms Workflow y una tarea en la bandeja de entrada AEM de Gloria.
 
 AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo pueden utilizarse para revisiones y aprobaciones, flujos de procesos comerciales, servicios de documento de inicio, integración con el flujo de trabajo de firma de Adobe Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
@@ -394,7 +394,7 @@ Algunas de las funciones clave que puede revisar en el formulario adaptable son:
 * La primera ficha, Introducción, de la aplicación es una calculadora de hipotecas dinámicas que muestra las opciones basadas en la selección del usuario. Por ejemplo, los campos y valores son diferentes para las opciones de compra y refinanciación. Esta funcionalidad se logra mediante reglas de mostrar y ocultar. Además, cuando se hace clic en Continuar y se inicializa la ficha Planes, se invoca un servicio Web configurado en un Modelo de datos de formulario para recuperar y mostrar planes de hipoteca. Puede revisar los modelos de datos de formulario y los servicios configurados en `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Utiliza varios componentes de formulario adaptables para capturar entradas y adaptarse a las respuestas del usuario. También utiliza componentes como Correo electrónico que admiten tipos de entrada HTML5.
 * Utiliza el componente Paso de firma para mostrar el formulario completado y permite la firma electrónica en el formulario.
-* Utiliza la acción de envío Invocar flujo de trabajo AEM para activar el flujo de trabajo de AEM hipotecas de inicio de We Finance. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* Utiliza la acción de envío Invocar flujo de trabajo AEM para el déclencheur del flujo de trabajo de AEM hipotecas de inicio de We Finance. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 Se recomienda revisar el formulario para comprender el esquema, los componentes, las reglas, los modelos de datos de formulario, el flujo de trabajo de los formularios y la acción de envío que se utiliza para crear el formulario.
 
@@ -432,7 +432,7 @@ La tarea es reasignada a Gloria. Revisa la ID adjunta y aprueba la solicitud.
 
 #### Cómo funciona {#how-it-works-8}
 
-Cuando Sarah llena y envía la solicitud de hipoteca, un Forms Workflow activa y se crea una tarea en la bandeja de entrada de AEM de Gloria. Mientras Gloria revisa la aplicación y solicita más información, la tarea se asigna a John Doe. Cuando John Doe adjunta el ID y vuelve a enviar la aplicación, se asigna a Gloria. Esto se define en el flujo de trabajo de AEM asociado con la aplicación de hipoteca.
+Cuando Sarah rellena y envía la solicitud de hipoteca, se crea un déclencheur Forms Workflow y una tarea en la bandeja de entrada AEM de Gloria. Mientras Gloria revisa la aplicación y solicita más información, la tarea se asigna a John Doe. Cuando John Doe adjunta el ID y vuelve a enviar la aplicación, se asigna a Gloria. Esto se define en el flujo de trabajo de AEM asociado con la aplicación de hipoteca.
 
 AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo pueden utilizarse para revisiones y aprobaciones, flujos de procesos comerciales, servicios de documento de inicio, integración con el flujo de trabajo de firma de Adobe Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
@@ -674,11 +674,11 @@ Sarah Rose es una clienta hipotecaria de We.Finance que busca un buen negocio de
 
 #### Cómo funciona {#how-it-works-14}
 
-La newsletter enviada a Sarah es una implementación personalizada que activa un correo electrónico para el ID de correo electrónico especificado. El botón Aplicar ahora de la newsletter está vinculado a la aplicación de seguro doméstica, que es un formulario adaptable en una instancia de publicación.
+La newsletter enviada a Sarah es una implementación personalizada que déclencheur un correo electrónico al ID de correo electrónico especificado. El botón Aplicar ahora de la newsletter está vinculado a la aplicación de seguro doméstica, que es un formulario adaptable en una instancia de publicación.
 
 #### Véalo usted mismo {#see-it-yourself-11}
 
-Abra la siguiente URL para activar un correo electrónico de newsletter. Asegúrese de reemplazar `[emailID]` por una cuenta de correo electrónico válida para recibir la newsletter. Abra la newsletter y haga clic en **[!UICONTROL Aplicar ahora]** para ir a la aplicación de seguros de inicio.
+Abra la siguiente URL para enviar un déclencheur por correo electrónico a la newsletter. Asegúrese de reemplazar `[emailID]` por una cuenta de correo electrónico válida para recibir la newsletter. Abra la newsletter y haga clic en **[!UICONTROL Aplicar ahora]** para ir a la aplicación de seguros de inicio.
 
 `https://[authorServer]:[authorPort]/content/campaigns/we-finance/start.html?app=ins&email=[emailID]&givenName=Sarah&familyName=Rose`
 
@@ -707,8 +707,8 @@ Algunas de las funciones clave que puede revisar en el formulario adaptable son:
 
 * Incluye reglas de formulario adaptables para invocar los servicios del Modelo de datos de formulario para rellenar previamente los detalles de usuario del usuario que ha iniciado sesión. También invoca a los servicios para rellenar previamente la información por número de la seguridad social o por dirección de correo electrónico proporcionada en el formulario. Puede revisar los modelos de datos de formulario y sus servicios en `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Utiliza varios componentes de formulario adaptables para capturar entradas y adaptarse a las respuestas del usuario. También utiliza componentes como Correo electrónico que admiten tipos de entrada HTML5.
-* El botón Guardar mi progreso genera un ID exclusivo para el usuario y guarda la aplicación parcialmente rellenada como borrador en un nodo de AEM repositorio. También muestra un cuadro de diálogo que busca permiso para enviar un correo electrónico con un vínculo al nodo que contiene el borrador de la aplicación. El botón Enviar correo del cuadro de diálogo de confirmación activa un correo electrónico con un vínculo al nodo que contiene el borrador.
-* Utiliza la acción de envío Invocar flujo de trabajo AEM para activar el flujo de trabajo de aprobación de seguro de casa. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* El botón Guardar mi progreso genera un ID exclusivo para el usuario y guarda la aplicación parcialmente rellenada como borrador en un nodo de AEM repositorio. También muestra un cuadro de diálogo que busca permiso para enviar un correo electrónico con un vínculo al nodo que contiene el borrador de la aplicación. El botón Enviar correo del cuadro de diálogo de confirmación déclencheur un correo electrónico con un vínculo al nodo que contiene el borrador.
+* Utiliza la acción de envío Invocar flujo de trabajo AEM para realizar el déclencheur del flujo de trabajo de aprobación del seguro de casa. Puede revisar el flujo de trabajo utilizado en este formulario en `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 Se recomienda revisar el formulario para comprender el esquema, los componentes, las reglas, los modelos de datos de formulario, el flujo de trabajo de los formularios y la acción de envío que se utiliza para crear el formulario.
 
@@ -744,13 +744,13 @@ Sarah recibe un correo electrónico con un enlace al contrato de póliza de segu
 
 #### Cómo funciona {#how-it-works-16}
 
-Cuando Sarah envía la solicitud de seguro domiciliario, se activa un Forms Workflow y se crea una tarea en la bandeja de entrada de AEM de Gloria. Mientras Gloria revisa la solicitud y la aprueba, la tarea se asigna a Frank De Costa. El flujo de tareas de una persona a otra se define en el flujo de trabajo de AEM asociado con la aplicación de seguro. Para obtener más información sobre flujos de trabajo, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
+Cuando Sarah envía la solicitud de seguro domiciliario, se crea un déclencheur Forms Workflow y una tarea en la bandeja de entrada de AEM de Gloria. Mientras Gloria revisa la solicitud y la aprueba, la tarea se asigna a Frank De Costa. El flujo de tareas de una persona a otra se define en el flujo de trabajo de AEM asociado con la aplicación de seguro. Para obtener más información sobre flujos de trabajo, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
 La siguiente imagen muestra el flujo de trabajo de AEM asociado con la aplicación de seguros.
 
 ![we-Finance-Insurance-workflow-model](assets/we-finance-insurance-workflow-model.png)
 
-Frank usa la administración de correspondencia para preparar un contrato de póliza de seguro de vivienda. Descarga el PDF de contrato y lo adjunta a la aplicación de Sarah y hace clic en Enviar contrato. El flujo de trabajo desencadena un correo a Sarah con contrato de póliza de seguro de domicilio para firmar.
+Frank usa la administración de correspondencia para preparar un contrato de póliza de seguro de vivienda. Descarga el PDF de contrato y lo adjunta a la aplicación de Sarah y hace clic en Enviar contrato. El flujo de trabajo déclencheur un correo a Sarah con contrato de póliza de seguro de domicilio para firmar.
 
 #### Véalo usted mismo {#see-it-yourself-13}
 

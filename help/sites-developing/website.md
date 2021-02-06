@@ -148,7 +148,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
 1. Haga clic en **[!UICONTROL Siguiente]** en los paneles **[!UICONTROL Padres permitidos]** y **[!UICONTROL Niños permitidos]** y haga clic en **[!UICONTROL Aceptar]**. En el CRXDE Lite, haga clic en **[!UICONTROL Guardar todo]**.
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 #### Creación del componente Contentpage {#creating-the-contentpage-component}
 
@@ -220,7 +220,7 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
 
 1. En la página de bienvenida de AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), haga clic en Sitios web.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. En el árbol de carpetas, seleccione la carpeta **[!UICONTROL Sitios web]** y haga clic en **[!UICONTROL Nuevo > Nueva página]**.
 1. En la ventana **[!UICONTROL Crear página]**, escriba lo siguiente:
@@ -258,7 +258,7 @@ En esta sección, se crean las páginas siguientes que utilizan la plantilla con
 
    La estructura tiene el siguiente aspecto:
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-191](assets/chlimage_1-111.png)
 
 1. Para vincular las páginas al diseño de mi sitio web, en CRXDE Lite, seleccione el nodo `/content/mywebsite/en/jcr:content`. En la ficha **[!UICONTROL Propiedades]**, escriba los siguientes valores para una nueva propiedad y haga clic en Añadir:
 
@@ -1498,7 +1498,7 @@ En esta sección, se agrega el componente de búsqueda al sistema de párrafos.
 1. En la barra de tareas, haga clic en el triángulo para volver al modo **[!UICONTROL Editar]**.
 1. Arrastre el componente **[!UICONTROL My Search]** desde la barra de tareas al marco parsys. Tiene el siguiente aspecto:
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Vaya a la página **[!UICONTROL Productos]**. Busque clientes en el cuadro de entrada y presione **[!UICONTROL Intro]**. Se le redirige a la página **[!UICONTROL Buscar]**. Cambiar al modo **[!UICONTROL Previsualización]**: la salida tiene un formato similar al siguiente:
 

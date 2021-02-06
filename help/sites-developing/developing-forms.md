@@ -136,7 +136,7 @@ Puede agregar su propia acción en `/apps` de la siguiente manera:
 
    1. Añada una secuencia de comandos hacia delante que se invoque al enviar el formulario.
 
-      El nombre de la secuencia de comandos es `forward.<extension`>, por ejemplo: `forward.jsp`
+      El nombre de la secuencia de comandos es `forward.<extension`, por ejemplo: `forward.jsp`
 
       Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenvía a la ruta especificada.
    La llamada necesaria es `FormsHelper#setForwardPath` (2 variantes). Un caso típico es realizar alguna validación, o lógica, para encontrar la ruta de destinatario y luego avanzar a esa ruta, permitiendo que el servlet predeterminado del POST Sling haga el almacenamiento real en JCR.

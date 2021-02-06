@@ -155,7 +155,7 @@ Para probar y comprobar el almacén común de MongoDB, publique un comentario so
 1. Inicie sesión para publicar un comentario:
 1. Escriba el texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Publicar]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![chlimage_1-111](assets/chlimage_1-191.png)
 
 1. Simplemente vista el comentario en la [instancia de autor](http://localhost:4502/content/community-components/en/comments.html) (probablemente aún haya iniciado sesión como administrador / administrador).
 

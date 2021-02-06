@@ -70,7 +70,7 @@ En **CRXDE Lite** en AEM (**[!UICONTROL Herramientas > General > CRXDE Lite]**),
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td> 
-   <td>Permite la creación automática de mapas de luz durante la ingestión. Establezca <strong>false</strong> para desactivar la creación automática de mapas de luz; esto puede reducir significativamente el consumo de CPU a costa de reducir la calidad de la previsualización y el procesamiento con una rápida refinación. No afecta al procesamiento con Maya.</td> 
+   <td>Permite la creación automática de mapas de luz durante la ingestión. Establezca <strong>false</strong> para desactivar la creación automática de mapas de luz; esto puede reducir significativamente el consumo de CPU a costa de reducir la calidad de la previsualización y el procesamiento con la función de refinamiento rápido. No afecta al procesamiento con Maya.</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 

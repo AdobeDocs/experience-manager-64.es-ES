@@ -273,7 +273,7 @@ Puede definir campos obligatorios en un nivel de carpeta, que se aplican a los r
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas > Assets > Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdela como `my_default`.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Edite el formulario personalizado. Añada un campo obligatorio. Por ejemplo, agregue un campo **Categoría** y haga obligatorio el campo.
 

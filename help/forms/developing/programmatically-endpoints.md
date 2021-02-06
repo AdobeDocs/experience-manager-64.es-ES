@@ -567,7 +567,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **domainName**: Un valor de configuración obligatorio. El valor predeterminado es `DefaultDom`.
 * **domainPattern**: Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo: si se utiliza `adobe.com`, solo se procesa el correo electrónico de adobe.com, se ignora el correo electrónico de otros dominios.
 * **filePattern**: Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos con extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos con nombres (datos) específicos y archivos con expresiones compuestas en el nombre y la extensión (&amp;ast;..[dD][aA][Tt]). El valor predeterminado es `*`.
-* **destinationSuccessfulJob**: Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee activar un proceso y no desee recibir una notificación por correo electrónico del resultado. El valor predeterminado es `sender`.
+* **destinationSuccessfulJob**: Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee realizar un déclencheur en un proceso y no desee recibir una notificación por correo electrónico del resultado. El valor predeterminado es `sender`.
 * **destinationFailedJob**: Dirección de correo electrónico a la que se envían mensajes para indicar que se han producido errores en los trabajos. De forma predeterminada, siempre se envía un mensaje de trabajo fallido al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. El valor predeterminado es `sender`.
 * **inboxHost**: El nombre de host o la dirección IP de la bandeja de entrada que debe analizar el proveedor de correo electrónico.
 * **inboxPort**: El puerto que utiliza el servidor de correo electrónico. El valor predeterminado para POP3 es 110 y el valor predeterminado para IMAP es 143. Si SSL está habilitado, el valor predeterminado para POP3 es 995 y el valor predeterminado para IMAP es 993.
@@ -874,7 +874,7 @@ Para agregar un extremo de TaskManager a un servicio, realice las siguientes tar
 1. Incluir archivos de proyecto.
 1. Cree un objeto `EndpointRegistryClient`.
 1. Cree una categoría para el extremo.
-1. Definir atributos de extremo de TaskManager.
+1. Defina los atributos de extremo de TaskManager.
 1. Cree un extremo de TaskManager.
 1. Habilite el punto final.
 

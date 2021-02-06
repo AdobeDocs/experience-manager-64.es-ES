@@ -98,7 +98,7 @@ AEM panel de herramientas contiene herramientas para varios componentes. Para na
 
 * **Configurar carpeta vigilada:** un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie una operación preconfigurada y se manipule el archivo.  <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **Configurar el servicio sin conexión de la aplicación de Forms:** el servicio sin conexión de la aplicación de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento del servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajo en modo sin conexión](/help/forms/using/work-offline-mode.md).
+* **Configurar el servicio sin conexión de la aplicación de Forms:** el servicio sin conexión de la aplicación de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento en el servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajo en modo sin conexión](/help/forms/using/work-offline-mode.md).
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 

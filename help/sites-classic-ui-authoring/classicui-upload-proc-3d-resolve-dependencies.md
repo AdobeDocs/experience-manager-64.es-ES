@@ -22,7 +22,7 @@ ht-degree: 61%
 
 Las dependencias principales de archivo de modelo 3D, como archivos de mapa de textura, se resuelven automáticamente en la medida de lo posible. Para conseguir esta funcionalidad, AEM debe buscar en carpetas de Assets cercanas archivos con los mismos nombres que los que se encuentran en el archivo 3D. Si una o varias dependencias no se pueden resolver durante la etapa de procesamiento de la creación de previsualizaciones, la tarjeta del recurso muestra el siguiente mensaje de letrero rojo en la [!UICONTROL Vista de tarjetas]:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 **Para resolver dependencias de archivo**:
 

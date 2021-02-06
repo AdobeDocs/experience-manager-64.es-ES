@@ -132,7 +132,7 @@ También es posible combinar varias instancias del repositorio de contenido para
 
 **Buscador**  de contenido: en el modo de creación, el Buscador de contenido es un panel especial (marco) en la parte izquierda de la página que, según la ficha seleccionada en la parte superior, muestra listas de imágenes, documentos, recursos de Flash, páginas, párrafos o recursos de repositorio que puede arrastrar y soltar desde el Buscador de contenido en la página en la que está trabajando (a la derecha).
 
-**Recursos**  digitales: En AEM, Recursos digitales son (normalmente) imágenes y archivos de medios enriquecidos. Para obtener más información, consulte Uso de recursos digitales en DAM.
+**Recursos**  digitales: en AEM, Recursos digitales son (normalmente) imágenes y archivos de medios enriquecidos. Para obtener más información, consulte Uso de recursos digitales en DAM.
 
 **Dispatcher** : Dispatcher es a la vez una herramienta de almacenamiento en caché y equilibrio de carga, así como una herramienta que proporciona ciertas salvaguardias de seguridad.
 

@@ -141,7 +141,7 @@ que se calculan antes de aplicar la estrategia apropiada:
   </tr> 
   <tr> 
    <td>C1</td> 
-   <td>T1</td> 
+   <td>T3</td> 
    <td>S1, S2</td> 
    <td>Negocios, Marketing</td> 
    <td>Sí</td> 
@@ -167,7 +167,7 @@ que se calculan antes de aplicar la estrategia apropiada:
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C3 </td> 
+   <td>C1 </td> 
    <td>T4</td> 
    <td>, S2, S5</td> 
    <td><br /> </td> 
@@ -176,7 +176,7 @@ que se calculan antes de aplicar la estrategia apropiada:
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C3 </td> 
+   <td>C1 </td> 
    <td>T5</td> 
    <td>S1, S2, S6</td> 
    <td>Mercadotecnia</td> 

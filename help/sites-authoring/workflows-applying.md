@@ -42,6 +42,7 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 >
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md).
 >* [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -108,7 +109,6 @@ Puede especificar los detalles:
    * **Título del paquete**
 
       * Puede especificar un título para el paquete para ayudar en su identificación.
-
    >[!NOTE]
    >
    >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la compatibilidad con varios recursos y se han seleccionado varios recursos.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)

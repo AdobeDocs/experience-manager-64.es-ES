@@ -154,7 +154,7 @@ El tipo de imagen se utiliza para incluir el logotipo We.Retail en el archivo zi
 
 * **includeImages** : propiedad booleana opcional que determina si se deben incluir imágenes. El valor predeterminado es *true*.
 
-   De forma predeterminada, solo se consideran para la inclusión los componentes de imagen con un tipo de recurso de base/componentes/imagen. Puede agregar más tipos de recursos configurando el **controlador de actualización de páginas CQ WCM de &lt;a0/>día** en la consola Web.
+   De forma predeterminada, solo se consideran para la inclusión los componentes de imagen con un tipo de recurso de base/componentes/imagen. Puede agregar más tipos de recursos configurando el **controlador de actualización de páginas CQ WCM de día** en la consola Web.
 
 **** reescribirEl nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
 
@@ -359,7 +359,7 @@ La clase `LogoUpdateHandler` implementa el método `ContentUpdateHandler` de la 
 * Sesión administrativa que debe utilizarse para todas las operaciones de repositorio relacionadas con la caché.
 * Sesión de usuario que se puede utilizar para actualizar contenido en el contexto de un determinado usuario y, por lo tanto, para proporcionar un tipo de contenido personalizado.
 
-Para implementar el controlador personalizado, primero cree una instancia de la clase Image basada en el recurso proporcionado en la entrada de configuración. Básicamente, este es el mismo procedimiento que el componente del logotipo real en nuestras páginas. Se asegura de que la ruta de destinatario de la imagen sea la misma que la que se hace referencia desde una página.
+Para implementar el controlador personalizado, primero cree una instancia de la clase Image basada en el recurso proporcionado en la entrada de configuración. Básicamente, este es el mismo procedimiento que el componente del logotipo real en nuestras páginas. Se asegura de que la ruta de destinatario de la imagen sea la misma que la referenciada desde una página.
 
 A continuación, compruebe si el recurso se modificó desde la última actualización. Las implementaciones personalizadas deben evitar actualizaciones innecesarias de la caché y devolver false si no cambia nada. Si se ha modificado el recurso, copie la imagen en la ubicación de destinatario esperada en relación con la raíz de caché. Finalmente, `true` se devuelve para indicar al marco de trabajo que se actualizó la caché.
 

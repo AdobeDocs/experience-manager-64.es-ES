@@ -78,7 +78,7 @@ La inclusión dinámica utiliza una solicitud de refuerzo que resulta en que SCF
 
 Para inicializar los componentes SCF en cualquier momento después de cargar la página, simplemente active un evento de JQuery como este:
 
-$(documento).desencadenador(SCF.eventos.BOOTSTRAP_REQUEST);
+$(documento).déclencheur(SCF.eventos.BOOTSTRAP_REQUEST);
 
 ### Carga dinámica {#dynamic-loading}
 

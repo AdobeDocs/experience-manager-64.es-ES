@@ -119,7 +119,7 @@ AEM Assets tiene un flujo de trabajo preconfigurado **Recurso de actualización 
 
 Este flujo de trabajo está configurado con valores predeterminados que se pueden adaptar para su configuración en las distintas instancias de creación (es un flujo de trabajo estándar, por lo que hay más información disponible en [Edición de un flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si está utilizando los valores predeterminados (incluido el puerto SOAP), no es necesaria ninguna configuración.
 
-Tras la configuración, la carga de archivos InDesign en AEM Assets (por cualquiera de los métodos habituales) activará el flujo de trabajo necesario para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un archivo `.indd` en AEM Assets para confirmar que ve las distintas representaciones creadas por IDS en `<*your_asset*>.indd/Renditions`
+Después de la configuración, la carga de archivos InDesign en AEM Assets (por cualquiera de los métodos habituales) generará el déclencheur del flujo de trabajo necesario para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un archivo `.indd` en AEM Assets para confirmar que ve las distintas representaciones creadas por IDS en `<*your_asset*>.indd/Renditions`
 
 #### Extracción de medios {#media-extraction}
 

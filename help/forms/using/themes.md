@@ -501,7 +501,7 @@ Puede aplicar estilo a los componentes de formulario o comunicación interactiva
 
 ### Uso de fuentes web en un tema {#using-web-fonts-in-a-theme}
 
-Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. El servicio de fuentes web de Typekit[, predeterminado, está disponible como configuración. ](https://typekit.com/) Para utilizar Typekit, cree un kit y las fuentes que contiene, y obtenga el ID del kit del [sitio web de Typekit](https://typekit.com/).
+Ahora puede utilizar fuentes disponibles en un servicio Web en un formulario adaptable o en una comunicación interactiva. El servicio de fuentes web de Typekit](https://typekit.com/), predeterminado, está disponible como configuración. [ Para utilizar Typekit, cree un kit y las fuentes que contiene, y obtenga el ID del kit del [sitio web de Typekit](https://typekit.com/).
 
 Siga estos pasos para configurar Typekit en AEM:
 

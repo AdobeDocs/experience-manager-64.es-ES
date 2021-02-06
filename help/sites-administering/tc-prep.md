@@ -69,7 +69,7 @@ El siguiente procedimiento utiliza la IU táctil para crear una copia de idioma 
 
 1. Toque o haga clic en Crear y, a continuación, toque o haga clic en Crear página.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Seleccione la plantilla de página y, a continuación, toque o haga clic en Siguiente.
 1. En el campo Nombre, escriba el código de país con el formato `<language-code>` o `<language-code>_<country-code>`, por ejemplo `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.

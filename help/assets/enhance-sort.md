@@ -87,5 +87,5 @@ AEM Assets permite ordenar cronológicamente las entradas de la línea de tiempo
 
 1. Toque o haga clic en el icono **[!UICONTROL Ordenar]** junto a la etiqueta **[!UICONTROL Fecha]**. Según su selección, las anotaciones se enumeran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
+   ![chlimage_1-401](assets/chlimage_1-401.png)
 

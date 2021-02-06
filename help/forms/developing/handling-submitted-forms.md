@@ -88,7 +88,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Una página web contiene un vínculo que accede a un servlet Java que invoca el servicio Forms.</p></td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
    <td><p>El servicio Forms procesa un formulario PDF interactivo en el navegador web del cliente.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>El usuario rellena un formulario interactivo y hace clic en un botón de envío. El formulario se devuelve al servicio Forms como datos PDF. Esta opción se establece en Designer.</p></td>
   </tr>
   <tr>

@@ -57,6 +57,7 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 >
 >* Cuando utilice lanzamientos o Live Copies, necesitará una licencia MSM.
 >* Cuando utilice la función de sincronización a Adobe Target, necesitará una licencia de Adobe Target.
+
 >
 
 
@@ -141,7 +142,7 @@ Sin embargo, si configuró la herencia mediante MSM entre los dos sitios, puede 
 
 >[!NOTE]
 >
->La implementación predeterminada desencadena despliegues posteriores del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
+>El despliegue predeterminado déclencheur los posteriores lanzamientos del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
 
 Por ejemplo, en el siguiente diagrama, hay cuatro sitios donde dos de ellos comparten el área principal (y todas las actividades que forman parte de esa área), uno que tiene un área que es una Live Copy de un área, por lo que comparte las actividades durante el despliegue, y un sitio que es completamente independiente (y que, por lo tanto, requiere un área para sus actividades).
 
@@ -249,6 +250,7 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 >
 >* Solo se pueden suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender o desasociar Live Copies para expandir una actividad heredada. También puede crear **nuevas** experiencias y ofertas locales para dicha actividad. Si desea modificar una actividad existente, deberá suspender la herencia.
+
 >
 
 

@@ -379,7 +379,7 @@ FormatoIndica el formato en el que se proporciona el ID de usuario. Uso:
 
 **Filtro de depuración de CQ WCM de díaResulta útil cuando se desarrolla, ya que permite el uso de sufijos como ?debug=layout al acceder a una página.** Por ejemplo, http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout proporcionará información de diseño que puede ser de interés para el desarrollador.
 
-* Desactívela en las instancias de producción para garantizar el rendimiento y la seguridad.
+* Desactívelo en las instancias de producción para garantizar el rendimiento y la seguridad.
 
 **Day CQ WCM** FilterConfigurar:
 

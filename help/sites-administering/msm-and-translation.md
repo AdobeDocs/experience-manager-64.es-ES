@@ -54,17 +54,20 @@ El diagrama siguiente ilustra cómo se intersectan los conceptos principales (pe
 >
 >* [](/help/sites-administering/msm.md) MSM administra la implementación de contenido traducido de un modelo (por ejemplo, un maestro global) a las copias en vivo (por ejemplo, los sitios locales), dentro de los límites de un idioma.
 >* La [traducción](/help/sites-administering/translation.md) capacidad de integración de AEM, junto con los servicios de administración de traducción de terceros, administra los idiomas y traduce el contenido a estos diferentes idiomas.
+
 >
->Para casos de uso más avanzados, también se puede usar MSM en los maestros de idioma.
+>
+Para casos de uso más avanzados, también se puede usar MSM en los maestros de idioma.
 
 >[!NOTE]
 >
 >En todos los casos de uso se recomienda leer las siguientes optimizaciones:
 >
 >* [Prácticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md); particularmente:
->
->   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   
+   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Prácticas recomendadas para la traducción](/help/sites-administering/tc-bp.md)
 

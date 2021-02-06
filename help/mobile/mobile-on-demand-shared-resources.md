@@ -49,7 +49,7 @@ Siga estos pasos para cargar los recursos compartidos de un artículo:
 1. Seleccione el artículo en el mosaico **Administrar artículos**.
 1. Haga clic en **Cargar recursos compartidos** para cargar los recursos HTML compartidos.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### El paso siguiente {#the-next-step}
 

@@ -475,7 +475,7 @@ A continuación se proporcionan algunos ejemplos básicos de lo que se puede hac
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 

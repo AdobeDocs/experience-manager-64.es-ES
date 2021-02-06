@@ -129,7 +129,7 @@ En AEM instancia de autor:
    * Seleccione **[!UICONTROL Usar varias colas]**.
    * Especifique **[!UICONTROL Extremos del exportador]** y **[!UICONTROL Extremos del importador]** (puede agregar más extremos del exportador y del importador).
 
-      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor del que obtuvo el contenido).
+      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor desde el que obtuvo el contenido).
    ![sync-agent-facto](assets/sync-agent-fact.png)
 
 ### Distribución de granito de Adobe: Proveedor secreto de transporte de contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -208,7 +208,7 @@ En cada instancia de publicación AEM:
 
    ![diff-obs](assets/diff-obs.png)
 
-### Activador de distribución de Apache Sling - Fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Déclencheur de distribución de Apache Sling - Fábrica de Déclencheur programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Esta configuración le permite configurar el intervalo de sondeo (después de lo cual el autor hace ping a los editores y extrae los cambios) para sincronizar los cambios entre los editores.
 
@@ -222,13 +222,13 @@ En AEM instancia de autor:
 
 1. Inicie sesión con privilegios de administrador.
 1. Acceda a la [Consola Web](../../help/sites-deploying/configuring-osgi.md), por ejemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-1. Localizar **[!UICONTROL Activador de distribución de Apache Sling: Fábrica de activadores programados]**
+1. Localice **[!UICONTROL Déclencheur de distribución de Apache Sling: Déclencheur programados]**
 
    * Seleccione la configuración existente para abrirla y editarla (icono de lápiz)
-   * Verificar `Name:` **`socialpubsync`\-programador**
+   * Verificar `Name:` **`socialpubsync`\-déclencheur programado**
    * Establezca el intervalo en segundos en el intervalo deseado y guárdelo.
 
-   ![schedule-desencadenador](assets/scheduled-trigger.png)
+   ![déclencheur programado](assets/scheduled-trigger.png)
 
 ### Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
 
@@ -250,7 +250,7 @@ En cada instancia de publicación AEM:
 1. Busque **[!UICONTROL Listener de sincronización de usuarios de AEM Communities]**.
 1. Seleccione la configuración existente para abrirla y editarla (icono de lápiz).
 
-   Verificar nombre: **`socialpubsync`\-programador-programado**
+   Verificar nombre: **`socialpubsync`\-schedule-déclencheur**
 1. Configure lo siguiente **`NodeTypes`**:
 
    rep:Usuario

@@ -85,7 +85,7 @@ Para optimizar los procesos relacionados con la ingestión de recursos (especial
 Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguiente:
 
 * Procedimientos para escribir un activo
-* Flujos de trabajo/eventos que se activan al modificar recursos/metadatos
+* Flujos de trabajo/eventos que déclencheur cuando se modifican recursos/metadatos
 * Procedimientos para leer un activo
 
 Estos son algunos de los temas a considerar:

@@ -77,7 +77,7 @@ Devuelve el número de versión de la biblioteca de secuencias de comandos
       * **success**: Función de controlador de éxito. Esta función se pasa a un objeto que contiene XML en la propiedad *data*.
       * **contexto**: El objeto en el que se establece el contexto (esto) de la función  ** correcta
       * **validationChecker**: Función para llamar para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
-      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos para el formulario procesado actualmente.
+      * **formState**: Estado JSON del formulario XFA para el que se debe devolver el XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
 
 * **Salida:** Ninguno
 * **Error:** Ninguno

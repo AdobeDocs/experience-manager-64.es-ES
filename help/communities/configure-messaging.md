@@ -133,7 +133,7 @@ Una vez completada la configuración, es necesario restaurar la herencia selecci
 
 Una vez cancelada la herencia, será posible seleccionar el icono `configure` para abrir el cuadro de diálogo de configuración.
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### Ficha básica {#basic-tab-1}
 

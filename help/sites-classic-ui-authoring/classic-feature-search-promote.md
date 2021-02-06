@@ -93,7 +93,7 @@ Puede configurar las siguientes propiedades de componente en el modo [!UICONTROL
 
 ## Activación del filtro de resultados por facetas {#enabling-the-filtering-of-results-by-facets}
 
-Puede permitir a los usuarios filtrar resultados de búsqueda por facetas. Los componentes **[!UICONTROL Faceta de Lista de casilla de verificación]**, **[!UICONTROL Faceta desplegable]** y **[!UICONTROL Faceta de Lista de vínculo]** permiten a los usuarios seleccionar una o varias facetas para filtrar. Si se utilizan estos componentes, debe incluir el componente **[!UICONTROL Rutas de exploración]**. Las rutas de exploración indican los filtros actuales que se utilizan.
+Puede permitir a los usuarios filtrar resultados de búsqueda por facetas. Los componentes **[!UICONTROL Faceta de Lista de casilla de verificación]**, **[!UICONTROL Faceta desplegable]** y **[!UICONTROL Faceta de Lista de vínculo]** permiten a los usuarios seleccionar una o varias facetas para el filtrado. Si se utilizan estos componentes, debe incluir el componente **[!UICONTROL Rutas de exploración]**. Las rutas de exploración indican los filtros actuales que se utilizan.
 
 Los componentes **[!UICONTROL Faceta de Lista de casilla de verificación]**, **[!UICONTROL Faceta desplegable]** y **[!UICONTROL Faceta de Lista de vínculo]** tienen las siguientes propiedades que se configuran en el modo **[!UICONTROL Editar]**:
 

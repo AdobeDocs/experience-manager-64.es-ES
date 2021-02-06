@@ -66,9 +66,9 @@ Debido al nivel de personalización que AEM permite, los entornos no suelen segu
 
 En versiones anteriores, también resultaba difícil AEM actualizaciones que se detenían o que no se habían reanudado de forma segura. Esto daba lugar a situaciones en las que era necesario reiniciar el procedimiento completo de actualización o en las que se realizaban actualizaciones defectuosas sin activar ninguna advertencia.
 
-Para solucionar estos problemas, Adobe ha añadido varias mejoras al proceso de actualización, lo que lo hace más flexible y fácil de usar. Las tareas de mantenimiento previas a la actualización que antes debían realizarse manualmente se están optimizando y automatizando. Además, se han agregado informes posteriores a la actualización para que el proceso pueda analizarse a fondo con la esperanza de que cualquier problema se encuentre más fácilmente.
+Para solucionar estos problemas, Adobe ha añadido varias mejoras al proceso de actualización, lo que lo hace más flexible y fácil de usar. Las tareas de mantenimiento previas a la actualización que antes debían realizarse manualmente se están optimizando y automatizando. Además, se han agregado informes posteriores a la actualización para que el proceso pueda analizarse a fondo con la esperanza de encontrar cualquier problema más fácilmente.
 
-Las tareas de mantenimiento previas a la actualización se distribuyen actualmente en varias interfaces que se realizan de forma manual o parcial. La optimización de mantenimiento previa a la actualización introducida en la AEM 6.3 permite activar estas tareas de forma unificada y poder inspeccionar sus resultados según la demanda.
+Las tareas de mantenimiento previas a la actualización se distribuyen actualmente en varias interfaces que se realizan de forma manual o parcial. La optimización de mantenimiento previa a la actualización introducida en AEM 6.3 permite una forma unificada de déclencheur de estas tareas y poder inspeccionar sus resultados según la demanda.
 
 Todas las tareas incluidas en el paso de optimización previo a la actualización son compatibles con todas las versiones a partir de AEM 6.0.
 

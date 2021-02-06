@@ -83,7 +83,7 @@ Los empleados orientados al cliente, como los reguladores de reclamaciones o los
 
 #### Controlada por el sistema {#system-driven}
 
-La generación de correspondencia es automatizada, impulsada por activadores de evento. Por ejemplo, un aviso de recordatorio enviado a una ciudadana pidiéndole que registre impuestos por adelantado, se genera combinando la plantilla predefinida con datos de ciudadanos. La carta final se puede enviar por correo electrónico, imprimir, enviar por fax o archivar.
+La generación de correspondencia es automatizada, impulsada por déclencheur de evento. Por ejemplo, un aviso de recordatorio enviado a una ciudadana pidiéndole que registre impuestos por adelantado, se genera combinando la plantilla predefinida con datos de ciudadanos. La carta final se puede enviar por correo electrónico, imprimir, enviar por fax o archivar.
 
 ![Correspondencia dirigida por el sistema](assets/us_cm_generate.png)
 
@@ -280,7 +280,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    ![Inserción de módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
-1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada subformulario y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
+1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada uno de los subformularios y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
 
    ![nestedlf](assets/nestedlf.png)
 

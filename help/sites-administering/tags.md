@@ -142,7 +142,7 @@ Cuando se selecciona una Área de nombres u otra, al seleccionar el icono **`Ref
 
 La visualización inicial es un recuento de etiquetas aplicadas.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 Al seleccionar la flecha a la derecha del recuento, se muestran los nombres de referencia.
 

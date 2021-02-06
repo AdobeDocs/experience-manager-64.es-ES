@@ -46,7 +46,7 @@ La análisis inicio en el paso 0. El objetivo es determinar qué entidad (distri
 
 ### Sección 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### Sección 5 {#section-4}
 

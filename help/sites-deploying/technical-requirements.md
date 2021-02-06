@@ -535,7 +535,7 @@ El uso de Dynamic Media en Linux requiere los siguientes requisitos previos:
 
 >[!NOTE]
 >
->**El nombre de host del servidor debe ser resoluble:** asegúrese de que el nombre de host del servidor se puede resolver en una dirección IP. Si no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
+>**El nombre de host del servidor debe ser resoluble:** asegúrese de que el nombre de host del servidor se puede resolver en una dirección IP. Si esto no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 

@@ -54,7 +54,7 @@ La plantilla incluye los siguientes flujos de trabajo:
 
 1. En la página **Crear proyecto**, seleccione la plantilla de proyecto de sesión fotográfica y toque o haga clic en **Siguiente**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Introduzca los detalles del proyecto, incluido el título, la descripción y la fecha de caducidad. Añada usuarios y asígneles diversas funciones. También puede añadir una miniatura para el proyecto.
 

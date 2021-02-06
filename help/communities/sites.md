@@ -65,7 +65,7 @@ HabilitadoUn conmutador que controla si se puede hacer referencia a la plantilla
 
 ### Estructura {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
 Para agregar funciones de comunidad, arrástrelas de derecha a izquierda en el orden en que deberían aparecer los vínculos de menú del sitio. Los estilos se aplicarán a la plantilla durante la creación del sitio.
 

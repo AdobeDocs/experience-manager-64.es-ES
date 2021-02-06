@@ -76,7 +76,7 @@ El cuestionario sobre el conflicto de intereses presentado por Sarah se asigna a
 
 **Cómo funciona**
 
-La acción de envío del cuestionario Conflicto de intereses desencadena un flujo de trabajo que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
+La acción de envío del cuestionario Conflicto de intereses déclencheur un flujo de trabajo que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-conflict-of-interest.html`
 
 ![empleado-autoservicio-sitio de referencia](assets/employee-self-service-reference-site.png)
 
@@ -125,7 +125,7 @@ La solicitud de tarjeta corporativa presentada por Sarah se asigna a Gloria Rios
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación de tarjeta corporativa activa un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
+El flujo de trabajo de envío de la aplicación de tarjeta corporativa déclencheur un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-corporate-card.html`
 
 ![corporate-card-workflow-model](assets/corporate-card-workflow-model.png)
 
@@ -175,7 +175,7 @@ El informe de gastos presentado por Sarah se asigna a Gloria Rios para su revisi
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación Informe de gastos desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
+El flujo de trabajo de envío de la aplicación Informe de gastos déclencheur un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-expense-report-workflow.html`
 
 ![corporate-card-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
@@ -231,7 +231,7 @@ La solicitud de licencia presentada por Sarah se asigna a Gloria Rios para su re
 
 **Cómo funciona**
 
-El flujo de trabajo de envío de la aplicación de salida desencadena un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
+El flujo de trabajo de envío de la aplicación de salida déclencheur un flujo de trabajo de Forms que crea una tarea en la bandeja de entrada de Gloria para su aprobación. Revise el Forms Workflow en `https://[authorHost]:[authorPort]/editor.html/conf/global/settings/workflow/models/we-finance/employee/self-service/we-finance-employee-leave-application.html`
 
 ![corporate-card-left-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 

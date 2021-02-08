@@ -1,57 +1,51 @@
 ---
-title: Acerca de AEM Assets
-description: Conozca qué es la administración de recursos digitales, sus casos de uso y la oferta de activos AEM Adobe.
+title: Introducción a [!DNL Adobe Experience Manager Assets]
+description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
+source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 49%
+source-wordcount: '840'
+ht-degree: 35%
 
 ---
 
 
-# Acerca de AEM Assets {#about-assets}
+# Acerca de [!DNL Adobe Experience Manager Assets] como una solución DAM {#about-assets}
 
-Assets es una herramienta de administración de activos digitales (DAM) que está totalmente integrada con la plataforma AEM y permite a su empresa compartir y distribuir recursos digitales. Los usuarios de una organización pueden administrar y almacenar imágenes, vídeos, documentos, clips de audio o medios enriquecidos tales como archivos Flash, así como acceder a ellos, a fin de utilizarlos en Internet, para imprimirlos o para distribuirlos de forma digital.
+[!DNL Assets] es una herramienta de administración de activos digitales (DAM) que forma parte integral de la  [!DNL Experience Manager] plataforma y permite a su empresa administrar y distribuir recursos digitales. Los usuarios de una organización pueden administrar, almacenar y acceder a muchos tipos de recursos digitales, como imágenes, vídeos, documentos, clips de audio, archivos 3D y medios enriquecidos, para utilizarlos en la Web, en impresión y para distribución digital.
 
-## ¿Qué es Digital Asset Management (DAM)? {#what-is-digital-asset-management}
+## ¿Qué es Digital Asset Management? {#what-is-digital-asset-management}
 
-Assets proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz web (o una carpeta CIFS o WebDAV).
+[!DNL Assets] proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales como imágenes, gráficos, audio, vídeo y documentos a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
-AEM Assets está completamente integrado en AEM y permite hacer lo siguiente:
+[!DNL Assets] le  [!DNL Experience Manager] permite:
 
 * Añadir y compartir imágenes, documentos, audio y vídeo en diversos formatos de archivo.
-* Administrar activos agrupándolos por etiquetas, cuadros o estrellas (sus favoritos). Añadir anotaciones a los recursos.
+* Administre los recursos agrupándolos por etiquetas, Lightbox o estrellas (sus favoritos). Añadir anotaciones a los recursos.
 * Buscar recursos por nombres de archivo, texto completo de documentos, fechas, tipo de documento y etiquetas.
 * Añadir o editar información de metadatos para los activos. Automáticamente, se genera una versión de los metadatos junto con el activo correspondiente. Los metadatos de activos se pueden importar o exportar.
 * Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importar y exportar varios activos digitales de forma simultánea mediante una carpeta WebDAV o CIFS.
 * Usar los flujos de trabajo y las notificaciones para permitir el procesamiento y la descarga de forma conjunta de cualquier grupo de activos y administrar los derechos de acceso a los activos.
 
-### AEM Assets está completamente integrado con AEM funcionalidades de WCM {#aem-assets-fully-integrated-in-cq-wcm}
+### [!DNL Experience Manager Assets] está integrado con  [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-AEM Assets está totalmente integrado con CQ WCM y la funcionalidad está disponible mediante el icono DAM:
+[!DNL Assets] se integra completamente con  [!DNL Sites] y funciona perfectamente en todos los casos de uso. Por ejemplo, al crear páginas Web, los autores de [!DNL Sites] pueden buscar y utilizar los recursos digitales mediante Content Finder. La interfaz de usuario de [!DNL Assets] es la misma que la de [!DNL Sites]. Consulte [información general de Sitios](/help/sites-authoring/qg-page-authoring.md) para obtener más información.
 
-<!-- TBD: Update image for branding -->
+<!-- TBD: Update image for branding 
 
-![screen_shot_2012-04-17at15946](assets/screen_shot_2012-04-17at15946pm.png) ![pmscreen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
+![screen_shot_2012-04-17at15946pm](assets/screen_shot_2012-04-17at15946pm.png) ![screen_shot_2012-04-17at20100pm](assets/screen_shot_2012-04-17at20100pm.png)
 
-A continuación, se puede acceder a los recursos administrados en CQ DAM mediante el buscador de contenido de WCM:
+Assets managed within [!DNL Experience Manager] DAM can then be accessed via the content finder of WCM:
 
-<!-- TBD: Update image for branding -->
-
-![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png)
-
->[!NOTE]
->
->La navegación básica de la interfaz de usuario es la misma que el resto de AEM; consulte [Información general de la Consola de GUI](/help/sites-authoring/qg-page-authoring.md) para obtener más detalles.
+![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
 ### Administración de activos digitales frente al componente de imagen {#digital-asset-management-versus-image-component}
 
-Al determinar si desea colocar una imagen en AEM Assets o utilizar el componente Imagen, tenga en cuenta el ciclo vital de la imagen:
+Al determinar si se debe colocar una imagen en un repositorio DAM o usar un componente de imagen, tenga en cuenta el ciclo vital de la imagen:
 
 * Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente Imagen.
-* Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, emplee AEM Assets.
+* Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, emplee [!DNL Assets].
 
 ## ¿Qué son los recursos digitales? {#what-are-digital-assets}
 
@@ -61,41 +55,41 @@ Un activo es, en esencia, un binario más metadatos, representaciones y subactiv
 
 >[!CAUTION]
 >
->La carga y/o edición de un gran volumen de recursos (especialmente imágenes) puede afectar al rendimiento de la instancia de CQ.
+>Cargar y/o editar un gran volumen de recursos (especialmente imágenes) puede afectar al rendimiento de la implementación [!DNL Experience Manager].
 
-### Terminología de AEM Assets {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminología  {#aem-assets-terminology}
 
-Cuando se trabaja con activos digitales en AEM, debe conocer los siguientes términos:
+Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender la siguiente terminología:
 
-* **Colección:** colección de recursos, ya sea en función de la ubicación física (carpeta), propiedades comunes (carpeta de búsqueda guardada) o de la selección de usuarios (carpetas de caja de luz).
+* **Colección**: Colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección de usuarios (carpetas de caja de luz).
 
-* **Metadatos:** los recursos tienen metadatos; por ejemplo, autor, fecha de caducidad, Información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. AEM Assets admite los siguientes esquemas comunes de metadatos predefinidos:
+* **metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad, Información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. [!DNL Assets] admite los siguientes esquemas comunes de metadatos predefinidos:
 
-   * **Dublin Core**: incluyendo autor, descripción, fecha, asunto, etc.
-   * **IPTC**: incluyendo evento, modelo, ubicación, etc.
-   * **WCM**: incluyendo las propiedades de la página, en tiempo y fuera de tiempo, etc.
+   * Dublin Core: incluye autor, descripción, fecha, asunto, etc.
+   * IPTC: incluye evento, modelo, ubicación, etc.
+   * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
 
-* **Etiquetado:** los recursos se pueden etiquetar y clasificar. Consulte Utilización de etiquetas y Administración de etiquetas.
+* **Etiquetado**:  [!DNL Assets] se pueden etiquetar y clasificar. Consulte [organización de recursos](/help/assets/organize-assets.md).
 
-* **Representaciones:** Una representación es la representación binaria de un recurso. Los recursos siempre tienen una representación principal, que es la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
+* **Representaciones**: Una representación es la representación binaria de un recurso. [!DNL Assets] siempre tiene una representación principal: la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
 
-* **Versiones:** Al generar versiones se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte [versión en AEM Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versiones**: Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte [versión en [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning).
 
-* **Subrecursos:** Los subrecursos son recursos que componen un recurso, por ejemplo, capas en un archivo de Adobe Photoshop o páginas en un archivo PDF. En AEM Assets, puede administrar los subactivos igual que los activos.
+* **Subrecursos**: Los subrecursos son recursos que conforman un recurso, por ejemplo, capas de un  [!DNL Adobe Photoshop] archivo o páginas de un archivo PDF. En [!DNL Assets], puede administrar los subrecursos como lo haría con los recursos.
 
-### Cómo trabajar con activos {#how-to-work-with-assets}
+### Cómo trabajar con recursos digitales {#how-to-work-with-assets}
 
-Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que se realizan en los activos (cargar, eliminar, actualizar o guardar subactivos) desencadenan flujos de trabajo preconfigurados. Estos se activan automáticamente en AEM Assets y se describen en detalle en los controladores de medios de AEM Assets.
+Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) realizan déclencheur en flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen en detalle en [!DNL Assets] controladores de medios.
 
-Las tareas que puede realizar con estos flujos de trabajo preconfigurados son las siguientes:
+Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 * Guarde el recurso en el repositorio o elimínelo.
 * Extraer y guardar metadatos para el recurso; los elementos de metadatos individuales se guardan como XMP.
 * Generar representaciones y miniaturas del recurso; incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
-* Transcodificar el recurso cuando sea necesario. Por ejemplo, los vídeos para uso en móviles e Internet se transcodifican con 24 fotogramas por segundo y se descargan con 30 fotogramas por segundo. El audio para uso en móviles e Internet se transcodifica con 128 kbp y se descarga con 192 kbp.
+* Transcodificar el recurso cuando sea necesario. Por ejemplo, los vídeos para uso en móviles e Internet se transcodifican con 24 fotogramas por segundo y se descargan con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, y el audio se descarga con 192 Kbps.
 
-Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de AEM Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
+Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
 
-## AEM DAM y AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] y  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [AEM DAM y AEM MediaLibrary](medialibrary.md) para obtener información sobre las diferencias.
+Consulte [Recursos y biblioteca de medios](medialibrary.md) para obtener información sobre las diferencias.

@@ -3,9 +3,9 @@ title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
+source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '851'
 ht-degree: 35%
 
 ---
@@ -93,3 +93,8 @@ Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Contr
 ## [!DNL Experience Manager Assets] y  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Consulte [Recursos y biblioteca de medios](medialibrary.md) para obtener información sobre las diferencias.
+
+>[!MORELIKETHIS]
+>
+>* [Recursos Experience Manager como DAM moderno](https://www.youtube.com/embed/PBwQqZgC-yo)
+

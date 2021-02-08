@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 6%
@@ -79,7 +79,7 @@ Aumentar gradualmente la cantidad de 1,75 a 4. Si el enfoque sigue sin ser el de
 
 Deje la configuración del parámetro monocromo en 0.
 
-### Prácticas recomendadas para la compresión JPEF (&amp;qlt=) {#best-practices-for-jpef-compression-qlt}
+### Prácticas recomendadas para la compresión JPEG (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Este parámetro controla la calidad de codificación JPG. Un valor mayor significa una imagen de mayor calidad pero un tamaño de archivo grande; de forma alternativa, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El intervalo para este parámetro es 0-100.
 * Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 ó 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca `qlt=<value>` en 90 o 95.

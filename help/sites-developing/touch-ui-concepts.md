@@ -489,7 +489,7 @@ El complemento emite marcado HTML (este marcado utiliza elementos básicos, que 
 
 Esto se mostrará como:
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 ### Biblioteca de utilidades {#utility-library}
 

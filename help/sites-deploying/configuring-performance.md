@@ -389,7 +389,7 @@ En ambos casos, puede definir el número esperado de transacciones por segundo c
 |---|---|---|---|---|---|
 | Página principal de usuario único | Promedio | 1 | 3 |  |  |
 |  | Pico | 1 | 3 |  |  |
-| Página principal 100 usuarios | Promedio | 100 | 1 |  |  |
+| Página principal 100 usuarios | Promedio | 100 | 3 |  |  |
 |  | Pico | 100 | 1 |  |
 
 #### Pruebas de componentes combinadas {#combined-component-tests}
@@ -399,10 +399,10 @@ Al probar los componentes en combinación, se refleja mejor el comportamiento de
 | Escenario | Componente | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Media mixta | Página principal | 10 | 1 |  |  |
-|  | Búsqueda   | 10 | 3 |  |  |
+|  | Búsqueda   | 10 | 1 |  |  |
 |  | Noticias | 10 | 2 |  |  |
-|  | Sucesos | 10 | 3 |  |  |
-|  | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
+|  | Sucesos | 10 | 1 |  |  |
+|  | Activaciones | 10 | 1 |  | Simulación del comportamiento del autor. |
 | Pico mixto | Página principal | 100 | 5 |  |  |
 |  | Búsqueda   | 50 | 5 |  |  |
 |  | Noticias | 100 | 10 |  |  |
@@ -443,10 +443,10 @@ Algunos problemas sólo se encontrarán después de que el sistema haya estado f
 
 | Escenario | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Ensayo de resistencia (72 horas) | Página principal | 10 | 1 |  |  |
+| Ensayo de resistencia (72 horas) | Página principal | 10 | 3 |  |  |
 |  | Búsqueda   | 10 | 3 |  |  |
 |  | Noticias | 20 | 2 |  |  |
-|  | Sucesos | 10 | 3 |  |  |
+|  | Sucesos | 10 | 1 |  |  |
 |  | Activaciones | 1 | 1 |  | Simulación del comportamiento del autor. |
 
 ### Optimización {#optimization}

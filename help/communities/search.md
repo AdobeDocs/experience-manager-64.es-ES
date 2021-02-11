@@ -50,7 +50,7 @@ Seleccione el componente `Search` colocado para acceder y seleccione el icono `C
 
 En la ficha **[!UICONTROL Configuración de búsqueda]**, especifique cómo se buscan las rutas cuando un visitante introduce una consulta.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![chlimage_1-376](assets/chlimage_1-375.png)
 
 * **[!UICONTROL Rutas]**
 de búsquedaAl agregar rutas de búsqueda mediante el botón Añadir elemento, la búsqueda de contenido es limitada. Por ejemplo, para limitar la búsqueda a un foro específico, seleccione un componente de foro ubicado en una página:

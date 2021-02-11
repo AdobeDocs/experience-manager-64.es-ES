@@ -345,7 +345,7 @@ Cree la notificación, agregue un texto de botón y una ruta de vínculo para el
 
    Cuando se envía la configuración, se muestra el icono **Notificaciones push** en el panel.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-191](assets/chlimage_1-111.png)
 
 ### Crear asistente de notificación {#create-notification-wizard}
 
@@ -375,7 +375,7 @@ Una vez que se muestre el mosaico **Notificaciones push** en el panel, utilice e
 
    Puede editar propiedades, enviar notificaciones o eliminar la notificación.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 >[!NOTE]
 >

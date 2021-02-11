@@ -27,7 +27,7 @@ Para ver los distintos modelos de flujo de trabajo disponibles de forma predeter
 
 ![Parte del flujo de trabajo predeterminado](assets/aem-default-workflows.png)
 
-*Figura: Parte del flujo de trabajo predeterminado disponible en  [!DNL Experience Manager].*
+*Figura: Algunos de los flujos de trabajo predeterminados disponibles en  [!DNL Experience Manager].*
 
 ## Aplicar flujos de trabajo a los recursos {#applying-workflows-to-assets}
 

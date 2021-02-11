@@ -99,7 +99,7 @@ Para compara la versión actual de la página con una versión anterior:
    * El texto que se ha agregado aparece en verde y resaltado.
    * Las imágenes que se han agregado o eliminado tienen un recuadro verde.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
 1. En la barra de tareas, seleccione la subficha **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para ver la versión actual.
 

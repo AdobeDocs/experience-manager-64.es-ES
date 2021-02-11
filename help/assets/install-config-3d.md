@@ -174,7 +174,7 @@ Consulte también [Configuración avanzada](advanced-config-3d.md).
 
    Cerca de la esquina superior derecha de la página logo-esfera.fbx, haga clic en el icono de Elementos destacados del escenario para expandir el menú desplegable y, a continuación, seleccione `stage-spotlights.fbx`.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. En la lista desplegable **[!UICONTROL Elementos destacados de la etapa]**, seleccione `stage-helipad.fbx`.
 

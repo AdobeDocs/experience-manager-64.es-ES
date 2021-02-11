@@ -410,7 +410,7 @@ Como ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla 
    <td><p>Origen</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 

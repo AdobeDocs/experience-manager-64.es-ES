@@ -239,9 +239,9 @@ Ejecute los siguientes pasos para crear una plantilla para el canal Web en la ca
    | detalles del cliente | Detalles del cliente | 1 |
    | resumen de facturación | Resumen de facturación | 1 |
    | summaryfees | Resumen de cargos | 2 |
-   | itemisedcall | Llamadas por elementos | 1 |
+   | itemisedcall | Llamadas por elementos | 3 |
    | paynow | Pagar ahora | 2 |
-   | lienzo | Servicios Añadidos de valor | 1 |
+   | lienzo | Servicios Añadidos de valor | 3 |
 
    La siguiente imagen muestra el árbol de contenido después de agregar todos los paneles a la plantilla:
 

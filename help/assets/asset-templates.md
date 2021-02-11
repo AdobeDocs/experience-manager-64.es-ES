@@ -69,11 +69,11 @@ Considere un escenario en el que desee crear material publicitario digital impri
 
 1. (Opcional) Toque o haga clic en el icono **[!UICONTROL Etiquetas]** situado junto al campo **[!UICONTROL Etiquetas]** y seleccione una o varias etiquetas para el folleto. Toque o haga clic **[!UICONTROL Confirmar]** para confirmar la selección.
 
-   ![chlimage_1-310](assets/chlimage_1-310.png)
+   ![chlimage_1-311](assets/chlimage_1-310.png)
 
 1. Haga clic en **[!UICONTROL Crear]**. Un cuadro de diálogo confirma que se crea un nuevo folleto. Toque o haga clic **[!UICONTROL Abrir]** para abrir el folleto en modo de edición.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
    De forma alternativa, cierre el cuadro de diálogo y vaya a la carpeta de la página Plantillas con la que comenzó a crear la vista del folleto que ha creado. El tipo de garantía aparece en su miniatura en la vista de la tarjeta. Por ejemplo, en este caso, el folleto se muestra en la miniatura.
 

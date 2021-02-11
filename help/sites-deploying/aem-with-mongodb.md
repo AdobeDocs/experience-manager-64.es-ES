@@ -92,7 +92,7 @@ Aunque las mismas limitaciones se aplican al motor de almacenamiento WiredTiger 
 
 ### Almacén de datos {#data-store}
 
-Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda encarecidamente que el almacén de datos se mantenga independiente del MongoDB. En la mayoría de los entornos se debe utilizar un `FileDataStore` que utilice un NAS disponible para todas las instancias de AEM. En situaciones en las que se utilizan los servicios Web de Amazon, también hay un `S3 DataStore`. Si por algún motivo el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe agregarse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse adecuadamente. Esto puede significar aprovisionar una cantidad significativamente mayor de RAM para mantener el rendimiento sin errores de página.
+Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda encarecidamente que el almacén de datos se mantenga independiente del MongoDB. En la mayoría de los entornos se debe utilizar un `FileDataStore` que utilice un NAS disponible para todas las instancias de AEM. En situaciones en las que se utilizan los servicios Web de Amazon, también hay un `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe agregarse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse adecuadamente. Esto puede significar aprovisionar una cantidad significativamente mayor de RAM para mantener el rendimiento sin errores de página.
 
 ## Monitoreo {#monitoring}
 

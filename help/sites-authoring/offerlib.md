@@ -102,7 +102,7 @@ Puede eliminar una oferta a la vez que consulta el contenido de una carpeta en u
 
 Busque las ofertas de cualquier marca mediante las palabras clave que coincidan con el título.
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![chlimage_1-311](assets/chlimage_1-310.png)
 
 Los criterios de búsqueda actuales aparecen junto a los resultados de búsqueda. También puede ordenar los resultados según las columnas, en orden ascendente o descendente. Puede realizar una búsqueda desde cualquier carpeta de la biblioteca de ofertas. Los resultados de la búsqueda son los mismos independientemente de la carpeta actual.
 

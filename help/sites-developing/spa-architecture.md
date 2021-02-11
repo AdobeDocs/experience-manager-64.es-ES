@@ -128,7 +128,7 @@ Siga estos pasos para preparar el SPA existente para trabajar con AEM.
 
 ## Instrucciones para desarrolladores de front-end {#instructions-for-front-end-developers}
 
-La tarea principal de lograr que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
+La principal tarea de lograr que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
 
 A continuación se describen los pasos que debe seguir un desarrollador front-end al desarrollar un SPA para AEM.
 

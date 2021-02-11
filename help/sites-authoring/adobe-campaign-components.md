@@ -40,7 +40,7 @@ Una descripción de estos componentes se encuentra en la sección siguiente.
 
 Los componentes se presentan del modo siguiente:
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Encabezado (Campaign) {#heading-campaign}
 
@@ -181,7 +181,7 @@ En el siguiente ejemplo se muestra el componente Vínculo (Campaign) que se est�
 
 [Las ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) plantillas de imagen de Scene7 están en capas y son archivos de imagen con capas, donde el contenido y las propiedades se pueden parametrizar para la variabilidad. El componente **Plantilla de imagen** permite utilizar plantillas de Dynamic Media Classic (anteriormente Scene7) en newsletters y cambiar los valores de los parámetros de plantilla. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Dynamic Media Classic (anteriormente Scene7) se describe en detalle en [componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
 
@@ -266,7 +266,7 @@ El componente Texto y personalización (Campaña) permite introducir un bloque d
 
 Una selección de iconos le permitirá dar formato a su texto, incluyendo las características de la fuente, la alineación, los vínculos, las listas y la sangría. La funcionalidad es básicamente la misma en [ambas IU](/help/sites-authoring/editing-content.md), aunque la apariencia es diferente:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 En el editor directo puede añadir texto, cambiar la justificación, añadir y quitar vínculos, añadir campos de contexto o bloques de personalización y entrar en el modo de pantalla completa. Cuando haya terminado de añadir y personalizar elementos, seleccione la marca de verificación para guardar los cambios (o pulse x para cancelar). Consulte [Edición directa](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para obtener más información.
 

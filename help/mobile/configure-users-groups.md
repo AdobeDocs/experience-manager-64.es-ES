@@ -126,5 +126,5 @@ El mosaico no tiene acciones que requieran permisos, pero la página de detalles
 
 La siguiente imagen muestra las opciones de descarga y edición de una aplicación:
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 

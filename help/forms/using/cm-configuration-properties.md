@@ -135,7 +135,7 @@ Correspondence Management tiene las siguientes propiedades de configuración:
   </tr> 
   <tr> 
    <td><p>Optimizar la instancia del diccionario de datos</p> </td> 
-   <td><p>Permite la transferencia optimizada de la instancia del diccionario de datos por servidor y cliente</p> </td> 
+   <td><p>Permite la transferencia optimizada de la instancia del diccionario de datos mediante servidor y cliente</p> </td> 
    <td><p>verdadero</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 

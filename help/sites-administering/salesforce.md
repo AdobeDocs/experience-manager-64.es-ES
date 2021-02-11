@@ -230,7 +230,7 @@ Para utilizar este componente:
 
 1. Arrastre el componente de búsqueda de Salesforce a la página (siempre que se haya activado). Para activarlo, vaya al modo Diseño y agréguelo al área adecuada).
 
-   ![chlimage_1-21](assets/chlimage_1-29.jpeg)
+   ![chlimage_1-29](assets/chlimage_1-29.jpeg)
 
 1. Abra el componente Buscar y especifique los parámetros de búsqueda y haga clic en **Aceptar.**
 

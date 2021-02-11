@@ -39,7 +39,7 @@ La consola [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza 
 
 Para acceder a los segmentos, en la navegación global seleccione **Navegación > Personalización > Audiencias**.
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Editor de segmentos {#segment-editor}
 

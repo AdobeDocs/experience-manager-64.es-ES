@@ -752,7 +752,7 @@ En la tabla siguiente se describen los pasos de este diagrama
    <td><p>Las credenciales de usuario se autentican con el servicio Authentication Manager. Si las credenciales de usuario son válidas, el flujo de trabajo continúa con el paso 3. De lo contrario, se envía un mensaje al usuario en el que se indica que no es un usuario autorizado.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>La información del usuario y el diseño de formulario se recuperan de una base de datos empresarial segura. </p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ En la tabla siguiente se describen los pasos de este diagrama
    <td><p>AEM Forms realiza una operación de sincronización.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Se actualiza la información del usuario.</p></td> 
   </tr> 
   <tr> 

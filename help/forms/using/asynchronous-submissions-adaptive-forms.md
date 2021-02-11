@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Envío asincrónico de formularios adaptables {#asynchronous-submission-of-adaptive-forms}
 
-Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. Cuando los usuarios envían un formulario, se les redirige a una página de confirmación o, en caso de error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están adquiriendo popularidad cuando la página web permanece estática mientras que la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables configurando el envío asincrónico. En este caso, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
+Tradicionalmente, los formularios web están configurados para enviarse sincrónicamente. Cuando los usuarios envían un formulario, se les redirige a una página de confirmación o, en caso de error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están adquiriendo popularidad cuando la página web permanece estática mientras que la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables configurando el envío asincrónico. En este caso, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
 
 Continúe leyendo para obtener más información sobre el envío asincrónico en formularios adaptables.
 

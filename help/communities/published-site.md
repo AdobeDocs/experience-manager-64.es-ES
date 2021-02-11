@@ -33,7 +33,7 @@ Al llegar por primera vez al sitio publicado, el visitante del sitio no suele ha
 
 ## http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Visitante del sitio anónimo {#anonymous-site-visitor}
 

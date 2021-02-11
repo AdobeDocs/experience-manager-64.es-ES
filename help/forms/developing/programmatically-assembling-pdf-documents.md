@@ -117,7 +117,7 @@ Después de crear el cliente de servicio, hacer referencia a un archivo DDX, cre
 
 El servicio Ensamblador devuelve un objeto `java.util.Map`, que se puede obtener del objeto `AssemblerResult` y que contiene resultados de la operación. El objeto `java.util.Map` devuelto contiene los documentos resultantes y las excepciones que se pueden hacer.
 
-En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que pueden ubicarse en el objeto `java.util.Map` devuelto.
+En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que se pueden ubicar en el objeto `java.util.Map` devuelto.
 
 <table> 
  <thead> 

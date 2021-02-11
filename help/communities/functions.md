@@ -88,7 +88,7 @@ vista &quot;Mis Actividades&quot; Si está activada, la página Actividades incl
 vista &quot;Todas las Actividades&quot; Si está activada, la página Actividades incluirá una ficha que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
 
 * **[!UICONTROL Mostrar la]**
-vista &quot;Fuente de noticias&quot; Si está activada, la página Actividades incluirá una ficha que filtros actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
+vista &quot;Fuente de noticias&quot; Si está activada, la página Actividades incluirá una ficha que filtros actividades basadas en las que sigue el miembro actual. El valor predeterminado está marcado.
 
 ### Función Asignaciones {#assignments-function}
 

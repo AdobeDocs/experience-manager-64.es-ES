@@ -29,7 +29,7 @@ El espacio de trabajo de AEM Forms admite conjuntos de formularios. Con los conj
 1. Cree el flujo de trabajo del proceso empresarial en Workbench. Para obtener más información, consulte [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 1. En las propiedades de proceso del punto de partida, seleccione **Utilizar un recurso CRX** en Presentación y datos.
 
-   ![1-1](assets/1-1.png)
+   ![3-1](assets/1-1.png)
 
 1. Haga clic en ![examinar](assets/browse.png) (Examinar) junto a la ruta de acceso del recurso CRX. Aparecerá el cuadro de diálogo Seleccionar recurso de formulario.
 

@@ -193,7 +193,7 @@ Los trabajos se distribuyen entre instancias que tienen activado el tema asociad
 1. Para desactivar el consumo de un tema para una instancia, haga clic en Deshabilitar, junto a la instancia, debajo del nombre del tema.
 1. Para configurar todo el consumo de temas de una instancia, haga clic en el identificador de instancia debajo de cualquier tema.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Haga clic en uno de los siguientes botones junto a un tema para configurar el comportamiento de consumo de la instancia y, a continuación, haga clic en Guardar:
 

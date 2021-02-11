@@ -1,8 +1,8 @@
 ---
 title: Paquete de compatibilidad
 seo-title: Paquete de compatibilidad
-description: 'La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos '
-seo-description: La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
+description: 'La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos '
+seo-description: La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Instalar paquete de compatibilidad {#compatibility-package}
 
-La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de Administración de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
+La instalación del paquete de compatibilidad en AEM Forms 6.4 le permite utilizar los recursos de gestión de correspondencia de AEM Forms 6.3 y las páginas y plantillas de formularios adaptables obsoletos
 
 ## Información general {#overview}
 

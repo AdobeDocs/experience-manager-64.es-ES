@@ -136,7 +136,7 @@ Si utiliza Microsoft Edge como explorador:
 
 ### Integración con Adobe Sign
 
-* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete **Compatibilidad con Planificadoras Sling de Apache** desde AEM consola web en https://[*server*]:[*port*]/system/console/buncles.
+* El Planificador de Adobe Sign deja de funcionar de forma intermitente y, por lo tanto, los formularios pendientes de firma no pasan al envío. Para resolver el problema, reinicie el paquete **Compatibilidad con Planificadoras Sling de Apache** desde AEM consola web en https://[*server*]:[*port*]/system/console/buncles.
 
 ### Creación adaptable de Forms
 

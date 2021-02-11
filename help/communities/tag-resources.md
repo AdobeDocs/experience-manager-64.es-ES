@@ -44,7 +44,7 @@ Esencialmente:
 
    * [Configurar los catálogos que existen en la estructura del sitio](functions.md#catalog-function)
 
-      * Puede agregar etiquetas a la instancia de catálogo para controlar la lista de las etiquetas presentadas en los filtros de la interfaz de usuario
+      * Puede agregar etiquetas a la instancia de catálogo para controlar la lista de las etiquetas presentadas en los filtros de interfaz de usuario
       * Puede agregar [filtros previos](catalog-developer-essentials.md#pre-filters) para restringir los recursos incluidos de un catálogo
 
 * [Publicar el sitio de la comunidad](sites-console.md#publishing-the-site)

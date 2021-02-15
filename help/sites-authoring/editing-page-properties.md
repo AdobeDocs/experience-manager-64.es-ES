@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 84%
 
 ---
 
@@ -51,6 +51,15 @@ Las propiedades se distribuyen entre varias pestañas.
 * **Ocultar en navegación**
 
    Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
+
+* **Marca**
+
+   Aplique una identidad de marca uniforme en todas las páginas agregando una indicación de marca a cada título de página. Esta funcionalidad requiere el uso del componente Página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **Anular** : marque esta opción para definir la indicación de marca en esta página.
+      * El valor será heredado por cualquier página secundaria a menos que también tengan sus valores **Override** establecidos.
+   * **Valor**  de anulación: el texto de la indicación de marca que se va a anexar al título de la página.
+      * El valor se anexa al título de la página después de un carácter de barra vertical, como &quot;Ciclo de la Toscana&quot; | Siempre listo para la WKND&quot;
 
 * **Título de página**
 

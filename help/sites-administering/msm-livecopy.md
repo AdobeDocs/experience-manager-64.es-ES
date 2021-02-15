@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 1%
 
 ---
@@ -337,6 +337,10 @@ Puede suspender la herencia de Live Copy para una página de Live Copy, de modo 
 >
 >También puede [separar una Live Copy](#detaching-a-live-copy) de su modelo para eliminar todas las conexiones. La acción Desconectar es permanente e irreversible.
 
+>[!NOTE]
+>
+>Si el componente está marcado como contenedor, las acciones de cancelación y suspensión no se aplican a sus componentes secundarios. Consulte también [Prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obtener más información.
+
 #### Suspensión de herencia de propiedades de página {#suspending-inheritance-from-page-properties}
 
 Para suspender la herencia en una página:
@@ -443,6 +447,10 @@ Cancele la herencia de Live Copy de un componente para que el componente ya no s
 
 >[!NOTE]
 >
+>Si el componente está marcado como contenedor, las acciones de cancelación y suspensión no se aplican a sus componentes secundarios. Consulte también [Prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obtener más información.
+
+>[!NOTE]
+>
 >Al volver a habilitar la herencia, el componente no se sincroniza automáticamente con el origen. Puede solicitar manualmente una sincronización si es necesario.
 
 Cancele la herencia para cambiar el contenido del componente o eliminarlo:
@@ -485,7 +493,7 @@ Utilice el siguiente procedimiento para cancelar la herencia del sistema de pár
 
 ### Anulación de las propiedades de una página de Live Copy {#overriding-properties-of-a-live-copy-page}
 
-De forma predeterminada, las propiedades de página de una página Live Copy se heredan (y no se pueden editar) de la página de origen.
+De forma predeterminada, las propiedades de página de una página de Live Copy se heredan (y no se pueden editar) de la página de origen.
 
 Puede cancelar la herencia de una propiedad cuando necesite cambiar el valor de la propiedad para la Live Copy. Un icono de vínculo indica que la herencia está habilitada para la propiedad.
 

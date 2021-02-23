@@ -3,9 +3,9 @@ title: Uso compartido de carpetas de AEM Assets con Creative Cloud
 description: Configuración y prácticas recomendadas para permitir a los usuarios de Adobe Experience Manager Assets intercambiar carpetas de recursos con usuarios de Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Adobe recomienda enfáticamente utilizar las nuevas funciones como [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Obtenga más información en [prácticas recomendadas de integración de AEM y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Adobe recomienda enfáticamente utilizar las nuevas funciones como [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) o [AEM aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Obtenga más información en [prácticas recomendadas de integración de AEM y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) se puede configurar para permitir que los usuarios de AEM Assets compartan carpetas con usuarios Creative Cloud, de modo que estén disponibles como carpetas compartidas en el servicio Creative Cloud Assets. La función se puede utilizar para intercambiar archivos entre equipos creativos y usuarios de AEM Assets, especialmente cuando los usuarios creativos no tienen acceso a la instancia de AEM Assets (no están en la red empresarial).
 

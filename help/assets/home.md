@@ -3,10 +3,10 @@ title: Guía de Assets
 description: Esta guía cubre todas las tareas de AEM Assets, como la creación, administración, entrega y optimización de recursos digitales.
 user-guide-title: Guía de Assets
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 17%
+source-wordcount: '317'
+ht-degree: 15%
 
 ---
 
@@ -17,10 +17,9 @@ Esta guía cubre todas las tareas de AEM Assets, como la creación, administraci
 
 ## Artículos de AEM clave
 
-* [Introducción a AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [Notas de la versión 6.4 de AEM](/help/release-notes/home.md)
-* [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
+* [Notas de la versión de AEM 6.4](/help/release-notes/home.md)
+* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [AEM lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
 
 ## Guías del usuario de AEM 6.4
 
@@ -41,7 +40,7 @@ Esta guía cubre todas las tareas de AEM Assets, como la creación, administraci
 
 ## Recursos AEM clave
 
-* [Tutoriales AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

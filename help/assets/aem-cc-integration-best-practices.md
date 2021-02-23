@@ -3,9 +3,9 @@ title: Prácticas recomendadas para la integración de AEM y Creative Cloud
 description: Prácticas recomendadas para integrar una implementación AEM con Adobe Creative Cloud a fin de optimizar los flujos de trabajo de transferencia de recursos y lograr la máxima eficacia
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3572'
 ht-degree: 16%
 
 ---
@@ -200,7 +200,7 @@ En estos casos, puede aprovechar la integración AEM/Creative Cloud para mejorar
 
 Utilice las siguientes estrategias para proporcionar acceso a los activos finales o aprobados:
 
-* Para proporcionar acceso a un gran número de recursos: Utilice [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) o la implementación por parte del cliente de [Asset Share](assets-finder-editor.md) en AEM infraestructura de publicación
+* Para proporcionar acceso a un gran número de recursos: Utilice [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en) o la implementación por parte del cliente de [Asset Share](assets-finder-editor.md) en AEM infraestructura de publicación
 
 * Para proporcionar acceso a algunos recursos: AEM uso compartido de carpetas con Adobe Creative Cloud se puede utilizar además de AEM Assets Brand Portal o Asset Share. Tenga en cuenta que existen ciertas limitaciones relacionadas con esta integración, que se explican con más detalle en este artículo.
 
@@ -282,7 +282,7 @@ Puede aprovechar las siguientes funciones si desea cargar recursos de forma masi
 
 >[!NOTE]
 >
->En función de los requisitos comerciales, también puede utilizar el cargador personalizado.
+>Según los requisitos comerciales, también puede utilizar el cargador personalizado.
 
 #### Administrar recursos digitales directamente desde el escritorio {#managing-digital-assets-directly-from-desktop}
 
@@ -296,7 +296,7 @@ Para planificar y ejecutar migraciones de recursos desde un sistema existente a 
 
 >[!MORELIKETHIS]
 >
->* [Vínculo de recurso de Adobe](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
+>* [Vínculo de recurso de Adobe](https://helpx.adobe.com/in/enterprise/admin-guide.html/in/enterprise/using/adobe-asset-link.ug.html)
 >* [Prácticas recomendadas para aplicaciones de escritorio AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integración de AEM y Adobe Stock](aem-assets-adobe-stock.md)

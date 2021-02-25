@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21579'
 ht-degree: 24%
 
 ---
@@ -147,7 +147,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete del complemento de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete adicional de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador AEM Forms JEE](#install-aem-forms-jee-installer).
 
 * Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32546, NPR-32322).
 
@@ -321,7 +321,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en la implement
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete del complemento de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete adicional de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Paquete de complemento de Forms**
 
@@ -463,7 +463,7 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete del complemento de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete adicional de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador AEM Forms JEE](#install-aem-forms-jee-installer).
 
 **Paquete de complemento de Forms**
 
@@ -954,7 +954,7 @@ Los aspectos destacados de los formularios de AEM 6.4.4.0 son:
 * Cuando se crea un formulario adaptable con una plantilla en blanco, los clientes no pueden crear paneles secundarios en el panel raíz del formulario. NPR-28758: revisión para CQ-4264157
 * No se puede establecer el valor entre los campos de fragmentos cargados diferentemente de un formulario adaptable. NPR-27758: revisión para CQ-4259703
 * El formulario adaptable no utiliza el Editor de texto enriquecido, pero carga sus bibliotecas.  NPR-27759: revisión para CQ-4259193
-* La redirección a la URL no funciona para formularios adaptables incorporados en una página de AEM Sites. NPR-27620: revisión para CQ-4239287
+* La redirección a URL no funciona para formularios adaptables incorporados en una página de AEM Sites. NPR-27620: revisión para CQ-4239287
 * No se puede establecer el valor entre los campos de fragmentos cargados diferentemente de un formulario adaptable. NPR-28320: revisión para CQ-4262345
 * El formulario adaptable no utiliza el Editor de texto enriquecido, pero carga sus bibliotecas.  NPR-28001: revisión para CQ-4259703, CQ-4259193
 * La firma de garabatos no funciona para la aplicación de AEM Forms que se ejecuta en Apple iOS 12.1. NPR-28497: Revisión para CQ-4261765
@@ -1403,7 +1403,7 @@ Algunos de los aspectos destacados de la AEM 6.4.2.0 son:
 * (Biblioteca de archivos) La descarga de recursos con espacios en blanco provoca problemas de formato. NPR-24260: revisión para CQ-4245159
 * Correcciones de varios problemas de Adobe Social. NPR-24247: revisión para CQ-4245054, CQ-4245120, CQ-4245296
 * El desplazamiento infinito de la consola de miembros y grupos falla en caso de que el autor de la publicación se ejecute en diferentes rutas de contexto. NPR-24437: revisión para CQ-4246013
-* La publicación no vuelve al estado sin responder ni siquiera cuando se elimina del estado respondido y la puntuación no disminuye. NPR-24419: revisión para CQ-4245797, CQ-4245932
+* La publicación no vuelve al estado sin responder ni siquiera al eliminarla del estado respondido y la puntuación no disminuye. NPR-24419: revisión para CQ-4245797, CQ-4245932
 * Los eventos agregados mediante la funcionalidad de calendario en comunidades producen valores incorrectos. NPR-24883: revisión para CQ-4244056
 * (Foro de comunidades) Problemas con los clics en paginación y el comportamiento de carga de la página. NPR-24880: revisión para CQ-4246109
 * (Chrome) Las conversiones de zona horaria fallan en los eventos de las comunidades. NPR-24881: revisión para CQ-4247115
@@ -1602,7 +1602,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 * (XDP) Se muestra una pantalla en blanco al agregar un fragmento de diseño en el nuevo subformulario creado. Revisión para CQ-4248810
 * Error de prueba de DocumentFragment-master-DeployWithServerSideTests. Revisión para CQ-4245496
 * Variable de módulo de texto Instancia duplicada en el módulo Condición. Revisión para CQ-4252128
-* La URL de previsualización PDF no muestra el sistema de informes de transacción al realizar la publicación. Revisión para CQ-4246158
+* La URL de previsualización PDF no muestra el sistema de informes de la transacción durante la publicación. Revisión para CQ-4246158
 * Problemas relacionados con la sincronización de IC con el Canal de impresión y la sincronización de Canales web. Revisión para CQ-4251505
 * Limpieza del código EXM: Quitar LocalFunctionMapper. Revisión para CQ-4243265
 * Para corregir el tipo de recurso de TableHeader del componente de tabla webChannel de IC. Revisión para CQ-4251821
@@ -1645,7 +1645,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 * Output Service no proporciona las etiquetas correctas para el Reader de accesibilidad. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Revisión para CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
-**:Seguridad de los documentos**
+**Document Security**
 
 * Problema con la creación de directivas mediante Documento Security. NPR-25586, NPR-25547: revisión para CQ-4247086
 
@@ -2236,15 +2236,10 @@ Esta sección enumera las funciones y capacidades que se han eliminado o dejado 
 
 * Durante la instalación pueden aparecer los siguientes errores y advertencias:
 
-   * Los errores al crear la instancia de componente y la fábrica de servicios devuelta a null se producen debido al reinicio del repositorio:
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] No se puede crear una instancia de componente debido a un error al enlazar profileManager de referencia
-      * org.apache.sling.commons.Planificador FrameworkEvent ERROR (org.osgi.framework.ServiceException: La fábrica de servicios devolvió un valor nulo. (Componente: com.day.cq.tagging.impl.TagGarbageCollector (1687))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :: Tiempo de espera de que el cambio de registro se complete sin registrar.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` no se encontraron ventanas de mantenimiento en granite/operations/maintenance
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`:: El método unbindModif ha generado una excepción (java.lang.IllegalStateException: El servicio ya no está registrado).
 Estos errores no requieren ninguna acción, ya que no afectan a la instancia de AEM.
-
 
 ### Problemas resueltos {#resolved-issues}
 

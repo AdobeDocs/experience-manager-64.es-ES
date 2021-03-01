@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 45%
 
 Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
 
-## Artículos de AEM clave
+## Artículos clave de AEM
 
-* [Comenzar con AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Introducción a AEM](https://helpx.adobe.com/es/experience-manager/get-started.html)
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
@@ -28,20 +28,20 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 |--- |---|
 | [Guía de usuario de Assets](/help/assets/home.md) | Cree, administre, distribuya y optimice recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | En esta guía se describe cómo crear, administrar, publicar y actualizar formularios digitales. |
-| [Guía del usuario de comunidades](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
+| [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Pantallas](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de publicidad dinámica para publicar experiencias digitales dinámicas e interactivas. |
-| [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía muestra los conceptos básicos de AEM. |
-| [Desarrollo de la guía del usuario](/help/sites-developing/home.md) | Aprenda a crear su instancia de AEM. |
-| [Administración de la guía del usuario](/help/managing/home.md) | En esta guía se describe cómo administrar un proyecto AEM correctamente. |
-| [Guía del usuario móvil](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
+| [Guía del usuario de Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario sobre implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
+| [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear su instancia de AEM. |
+| [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
+| [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía le muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
-## Recursos AEM clave
+## Recursos clave de AEM
 
-* [Tutoriales AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
 * [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
@@ -50,8 +50,8 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
-## Copyright, licencias y exención de responsabilidades {#copyright-licenses-and-disclaimers}
+## Derechos de autor, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
 
 Para obtener más información, consulte [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Aviso de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Notificación de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

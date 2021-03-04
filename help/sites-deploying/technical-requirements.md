@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3271'
 ht-degree: 2%
 
 ---
@@ -636,7 +636,6 @@ x86
 * 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
 * Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
 * 2,35 GB de espacio disponible en disco duro
-* Unidad de DVD-ROM
 * Resolución de pantalla de 1024 X 768 píxeles o superior
 * Aceleración de hardware de vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC

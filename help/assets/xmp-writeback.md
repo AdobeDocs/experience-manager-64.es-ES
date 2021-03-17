@@ -1,11 +1,11 @@
 ---
 title: Reescritura XMP en representaciones
-description: Descubra cómo la función de reescritura XMP propaga los cambios de metadatos de un recurso en todas las representaciones del recurso o en determinadas representaciones.
+description: Descubra cómo la función XMP reescritura propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas de ellas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: debf372e6a0b8f00bbfce16325908a5806c062d5
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '778'
 ht-degree: 4%
 
 ---
@@ -13,11 +13,9 @@ ht-degree: 4%
 
 # Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
-Esta función de reescritura XMP en Recursos Adobe Experience Manager (AEM) replica los cambios de metadatos de los recursos en las representaciones del recurso.
+Esta función XMP reescritura en [!DNL Adobe Experience Manager Assets] duplica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Assets o al cargarlo, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
 
-Al cambiar los metadatos de un recurso desde AEM Assets o al cargarlo, los cambios se almacenan inicialmente en el nodo de recurso en Crx-De.
-
-La función de reescritura XMP propaga los cambios de metadatos en todas las representaciones o en determinadas representaciones del recurso.
+La función XMP reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas de ellas. La función solo recupera las propiedades de metadatos que utilizan el espacio de nombres `jcr`, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero no una propiedad denominada `mytitle`.
 
 Considere un escenario en el que modifique la propiedad [!UICONTROL Title] del recurso titulada `Classic Leather` a `Nylon`.
 
@@ -27,60 +25,58 @@ En este caso, AEM Assets guarda los cambios en la propiedad **[!UICONTROL Title]
 
 ![metadata_stored](assets/metadata_stored.png)
 
-Sin embargo, AEM Assets no propaga automáticamente ningún cambio de metadatos en las representaciones de un recurso.
+Sin embargo, [!DNL Experience Manager Assets] no propaga automáticamente ningún cambio en los metadatos de las representaciones de un recurso. Consulte [cómo habilitar XMP reescritura](#enabling-xmp-writeback).
 
-La función de reescritura XMP permite propagar los cambios de metadatos a todas las representaciones del recurso o a determinadas representaciones del recurso. Sin embargo, los cambios no se almacenan en el nodo de metadatos de la jerarquía de recursos. En su lugar, esta función incrusta los cambios en los archivos binarios para las representaciones.
+## Habilitar XMP escritura {#enabling-xmp-writeback}
 
-## Habilitar reescritura XMP {#enabling-xmp-writeback}
+Para permitir que los cambios en los metadatos se propaguen a las representaciones del recurso al cargarlo, modifique la configuración **Adobe CQ DAM Rendition Maker** en Configuration Manager.
 
-Para permitir que los cambios de metadatos se propaguen a las representaciones del recurso al cargarlo, modifique la configuración de **Adobe CQ DAM Rendition Maker** en Configuration Manager.
-
-1. Abra Configuration Manager desde `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra el Administrador de configuración desde `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
-1. Seleccione la opción **[!UICONTROL Propagar XMP]** y, a continuación, guarde los cambios.
+1. Seleccione la opción **[!UICONTROL Propagate XMP]** y, a continuación, guarde los cambios.
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 
-## Habilitar reescritura XMP para representaciones específicas {#enabling-xmp-writeback-for-specific-renditions}
+## Habilitar XMP escritura para representaciones específicas {#enabling-xmp-writeback-for-specific-renditions}
 
-Para permitir que la función de reescritura XMP propague los cambios de metadatos para seleccionar las representaciones, especifique estas representaciones en el paso de flujo de trabajo del proceso de reescritura XMP del flujo de trabajo de escritura de metadatos DAM. De forma predeterminada, este paso se configura con la representación original.
+Para permitir que la función XMP de reescritura propague los cambios de metadatos para seleccionar representaciones, especifique estas representaciones en el paso de flujo de trabajo XMP proceso de reescritura del flujo de trabajo de reescritura de metadatos DAM. De forma predeterminada, este paso se configura con la representación original.
 
-Para que la función de reescritura XMP propague metadatos a las miniaturas de representación 140.100.png y 319.319.png, lleve a cabo estos pasos.
+Para que la función de escritura XMP propague metadatos a las miniaturas de representación 140.100.png y 319.319.png, realice estos pasos.
 
-1. En Experience Manager, vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
-1. En la página [!UICONTROL Modelos], abra el modelo de flujo de trabajo **[!UICONTROL Reescritura de metadatos DAM]**.
+1. En el Experience Manager, vaya a **[!UICONTROL Tools > Workflow > Models]**.
+1. En la página [!UICONTROL Modelos], abra el modelo de flujo de trabajo **[!UICONTROL reescritura de metadatos DAM]**.
 1. En la página de **[!UICONTROL propiedades de escritura de metadatos DAM]**, abra el paso **[!UICONTROL Proceso de escritura XMP]**.
 1. En el cuadro de diálogo **[!UICONTROL Propiedades del paso]**, pulse o haga clic en la pestaña **[!UICONTROL Proceso]**.
-1. En el cuadro **[!UICONTROL Argumentos]**, agregue `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Toque o haga clic **[!UICONTROL Aceptar]**.
+1. En el cuadro **[!UICONTROL Argumentos]**, añada `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Toque o haga clic en **[!UICONTROL Aceptar]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. Para volver a generar las representaciones TIFF piramidales para imágenes de Dynamic Media con los nuevos atributos, agregue el paso **[!UICONTROL Dynamic Media Process Image Assets]** al flujo de trabajo de reescritura de metadatos DAM.
-Las representaciones PTIFF solo se crean y almacenan localmente en un modo Híbrido de Dynamic Media. Guarde el flujo de trabajo.
+1. Para volver a generar las representaciones TIFF piramidales para imágenes Dynamic Media con los nuevos atributos, agregue el paso **[!UICONTROL Dynamic Media Process Image Assets]** al flujo de trabajo de escritura de metadatos DAM.
+Las representaciones PTIFF solo se crean y almacenan localmente en un modo híbrido de Dynamic Media. Guarde el flujo de trabajo.
 
-Los cambios en los metadatos se propagan a las representaciones `thumbnail.140.100.png` y `thumbnail.319.319.png` del recurso, y no a las otras.
-
->[!NOTE]
->
->Para XMP problemas de escritura en Linux de 64 bits, consulte [Cómo habilitar XMP escritura en retorno en RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) de 64 bits.
->
->Para obtener más información acerca de las plataformas admitidas, consulte [Requisitos previos para recuperar XMP metadatos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
-
-## Filtrar metadatos de XMP {#filtering-xmp-metadata}
-
-[!DNL Experience Manager Assets] admite el filtrado de propiedades y nodos de lista de bloqueados y lista de permitidos para XMP metadatos que se leen desde binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
-
-El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos de XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos de XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos de XMP, la instancia de AEM o el clúster pueden encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
-
-El filtrado de metadatos de XMP mediante la lista de permitidos resuelve este problema permitiéndole definir las propiedades de XMP que se van a importar. De este modo, se omiten todas las demás propiedades de XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista de bloqueados.
+Los cambios en los metadatos se propagan a las representaciones `thumbnail.140.100.png` y `thumbnail.319.319.png` del recurso, y no a las demás.
 
 >[!NOTE]
 >
->El filtrado solo funciona para las propiedades derivadas de orígenes de XMP en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación de recursos se almacena en la propiedad denominada `CreateDate` en TIFF EXIF. AEM almacena este valor en el campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen no es un origen XMP, el filtrado no funciona en esta propiedad.
+>Para XMP problemas de escritura en Linux de 64 bits, vea [Cómo habilitar XMP escritura en RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) de 64 bits.
+>
+>Para obtener más información sobre las plataformas admitidas, consulte [XMP requisitos previos de reescritura de metadatos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-1. Abra Configuration Manager desde `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra la configuración **[!UICONTROL XmpFilter]** de Adobe CQ DAM.
-1. Para aplicar el filtrado a través de una lista de permitidos, seleccione **[!UICONTROL Aplicar Lista de permitidos a propiedades de XMP]** y especifique las propiedades que se importarán en el cuadro **[!UICONTROL Nombres XML permitidos para XMP filtrado]**.
+## Filtrar XMP metadatos {#filtering-xmp-metadata}
+
+[!DNL Experience Manager Assets] admite el filtrado de listas de permitidos y listas de bloqueados de propiedades/nodos para XMP metadatos que se leen desde binarios de recursos y se almacenan en JCR cuando se introducen recursos.
+
+El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos de XMP, la instancia de AEM o el clúster pueden encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
+
+El filtrado de metadatos de XMP mediante lista de permitidos resuelve este problema ya que permite definir las propiedades de XMP que se van a importar. De este modo, se ignorarán todas las demás propiedades de XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede añadir algunas de estas propiedades al filtro que utiliza una lista de bloqueados .
+
+>[!NOTE]
+>
+>El filtrado solo funciona para las propiedades derivadas de XMP orígenes en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación del recurso se almacena en la propiedad denominada `CreateDate` en el TIFF EXIF. AEM almacena este valor en el campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen no es un origen XMP, el filtrado no funciona en esta propiedad.
+
+1. Abra el Administrador de configuración desde `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra la configuración **[!UICONTROL Adobe CQ DAM XmpFilter]**.
+1. Para aplicar el filtrado a través de una lista de permitidos, seleccione **[!UICONTROL Aplicar Lista de permitidos a XMP Propiedades]** y especifique las propiedades que desea importar en el cuadro **[!UICONTROL Nombres XML permitidos para XMP filtrado]**.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
@@ -88,4 +84,4 @@ El filtrado de metadatos de XMP mediante la lista de permitidos resuelve este pr
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Aplicar Lista de bloqueados a propiedades de XMP]** está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista de bloqueados está activado de forma predeterminada. Para desactivar este filtrado, anule la selección de la opción **[!UICONTROL Aplicar Lista de bloqueados a propiedades de XMP]**.
+   >La opción **[!UICONTROL Aplicar Lista de bloqueados a XMP propiedades]** está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista de bloqueados está habilitado de forma predeterminada. Para desactivar este filtro, anule la selección de la opción **[!UICONTROL Aplicar Lista de bloqueados a XMP propiedades]**.

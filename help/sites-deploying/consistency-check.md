@@ -1,25 +1,26 @@
 ---
-title: Comprobaciones de coherencia y de recorrido
-seo-title: Comprobaciones de coherencia y de recorrido
-description: Aprenda a realizar comprobaciones de coherencia y de recorrido.
-seo-description: Aprenda a realizar comprobaciones de coherencia y de recorrido.
+title: Comprobaciones de coherencia y travesía
+seo-title: Comprobaciones de coherencia y travesía
+description: Aprenda a realizar comprobaciones de coherencia y transversal.
+seo-description: Aprenda a realizar comprobaciones de coherencia y transversal.
 uuid: 0304e378-7c60-4bf5-9052-d01149d2a6df
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
+feature: Configuración
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
 
-# Comprobaciones de coherencia y de recorrido{#consistency-and-traversal-checks}
+# Comprobaciones de coherencia y travesía{#consistency-and-traversal-checks}
 
-Al realizar la actualización, pueden producirse problemas debido a incoherencias en el espacio de trabajo. Puede ejecutar una actualización de prueba para ver si esto supondrá un problema o ejecutar las comprobaciones de coherencia como acción preventiva.
+Al actualizar puede haber problemas debido a incoherencias en el espacio de trabajo. Puede ejecutar una actualización de prueba para ver si esto supone un problema o ejecutar las comprobaciones de coherencia como acción preventiva.
 
 Si ejecuta una actualización de prueba que falla debido a incoherencias en el espacio de trabajo, verá entradas similares a las siguientes en crx-quickstart/logs/crx/error.log:
 
@@ -33,13 +34,13 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Realizar una comprobación de coherencia {#perform-a-consistency-check}
 
-Para realizar una comprobación de coherencia, vaya a la página de administración del archivo .granite de JMX** com.adobe.granite (Repositorio)**. En la pantalla principal de AEM, vaya a:
+Para realizar una comprobación de consistencia, vaya a la página de administración de JMX Mbean** com.adobe.granite (Repository)**. Desde la pantalla principal de AEM, vaya a:
 
 **Herramientas > Consola web > Principal (en la barra de menús) > JMX > com.adobe.granite (Repositorio)**
 
 En una instalación predeterminada, se encuentra aquí:  **[|Mostrar|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-En la sección **Operaciones** de la página encontrará dos métodos: **`traversalCheck`** y **`consistencyCheck`**. Para ejecutar una comprobación, haga clic en la operación e introduzca los parámetros deseados.
+En la sección **Operations** de la página encontrará dos métodos: **`traversalCheck`** y **`consistencyCheck`**. Para ejecutar una comprobación, haga clic en la operación e introduzca los parámetros deseados.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 

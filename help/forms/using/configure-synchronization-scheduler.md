@@ -1,39 +1,40 @@
 ---
-title: Configuración del Planificador de sincronización
-seo-title: Configuración del Planificador de sincronización
-description: Obtenga información sobre cómo migrar y sincronizar recursos, configurar el Planificador de sincronización y utilizar carpetas para organizar recursos.
-seo-description: Obtenga información sobre cómo migrar y sincronizar recursos, configurar el Planificador de sincronización y utilizar carpetas para organizar recursos.
+title: Configuración del programador de sincronización
+seo-title: Configuración del programador de sincronización
+description: Obtenga información sobre cómo migrar y sincronizar recursos, configurar el programador de sincronización y utilizar carpetas para organizar los recursos.
+seo-description: Obtenga información sobre cómo migrar y sincronizar recursos, configurar el programador de sincronización y utilizar carpetas para organizar los recursos.
 uuid: a6445b45-9c1c-4483-a32e-453648c488c5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
 
-# Configuración del Planificador de sincronización {#configuring-the-synchronization-scheduler}
+# Configuración del programador de sincronización {#configuring-the-synchronization-scheduler}
 
-De forma predeterminada, el Planificador de sincronización se ejecuta cada 3 minutos para sincronizar todos los recursos modificados y actualizados en el repositorio mediante LiveCycle Workbench 11. Las aplicaciones que contienen formularios y recursos son visibles en la interfaz de usuario de AEM Forms una vez finalizado el proceso de sincronización.
+De forma predeterminada, el programador de sincronización se ejecuta cada 3 minutos para sincronizar todos los recursos modificados y actualizados en el repositorio mediante LiveCycle Workbench 11. Las aplicaciones que contienen formularios y recursos son visibles en la interfaz de usuario de AEM Forms una vez finalizado el proceso de sincronización.
 
-## Cambiar el intervalo del Planificador de sincronización {#change-interval-of-the-synchronization-scheduler}
+## Cambiar el intervalo del programador de sincronización {#change-interval-of-the-synchronization-scheduler}
 
-Realice los siguientes pasos para cambiar el intervalo del Planificador de sincronización:
+Realice los siguientes pasos para cambiar el intervalo del programador de sincronización:
 
-1. Inicie sesión en AEM Configuration Manager. La dirección URL de Configuration Manager es `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Inicie sesión en AEM Administrador de configuración. La dirección URL de Configuration Manager es `https://[Server]:[Port]/lc/system/console/configMgr`
 
 1. Busque y abra el paquete **FormsManagerConfiguration**.
 
-1. Especifique un nuevo valor para la opción **Frecuencia del Planificador de sincronización**.
+1. Especifique un nuevo valor para la opción **Frecuencia del planificador de sincronización**.
 
-   La unidad de frecuencia es minutos. Por ejemplo, para configurar el Planificador para que se ejecute cada 60 minutos, especifique 60.
+   La unidad de la frecuencia es minutos. Por ejemplo, para configurar el planificador para que se ejecute después de cada 60 minutos, especifique 60.
 
-## Sincronizando recursos {#synchronizing-assets}
+## Sincronización de recursos {#synchronizing-assets}
 
 Puede utilizar la opción **Sincronizar recursos del repositorio** para sincronizar manualmente los recursos. Realice los siguientes pasos para sincronizar manualmente los recursos:
 
@@ -41,19 +42,19 @@ Puede utilizar la opción **Sincronizar recursos del repositorio** para sincroni
 
    ![Interfaz de usuario de AEM Forms](assets/aem_forms_ui.png)
 
-   **Figura:interfaz de usuario de** *AEM Forms*
+   **Figura: Interfaz de usuario de** *AEM Forms*
 
-1. Haga clic en el icono ![aem6forms_sync](assets/aem6forms_sync.png) de la barra de herramientas. Si no tiene recursos en la última ruta configurada, utilice el cuadro de diálogo como se muestra a continuación. Haga clic en **Inicio** para iniciar la sincronización.
+1. Haga clic en el icono ![aem6forms_sync](assets/aem6forms_sync.png) de la barra de herramientas. Si no tiene ningún recurso en la última ruta configurada, seleccione el cuadro de diálogo como se muestra a continuación. Haga clic en **Start** para iniciar la sincronización.
 
    ![Cuadro de diálogo Sincronización](assets/migrate-and-syncronize.png)
 
-   **Figura:cuadro** *de diálogo Sincronización*
+   **Figura: Cuadro de diálogo** *Sincronización*
 
 ## Solución de problemas de error de sincronización {#troubleshooting-synchronization-error}
 
-Puede crear nuevas aplicaciones en el diseñador del flujo de trabajo (LiveCycle Workbench).
+Puede crear nuevas aplicaciones en el diseñador de flujos de trabajo (Área de trabajo de LiveCycle).
 
-Si la aplicación recién creada y una carpeta en /content/dam/formsanddocuments tienen el mismo nombre, ya existe un error &quot;*Un recurso con el mismo nombre que esta aplicación en el nivel raíz.*&quot; está registrado.
+Si la aplicación recién creada y una carpeta en /content/dam/formsanddocuments tienen un nombre idéntico, aparece el error &quot;*Un recurso con el mismo nombre que esta aplicación ya existe en el nivel raíz.*&quot; está registrado.
 
 Para resolver el conflicto, cambie el nombre de la aplicación y sincronice manualmente los recursos.
 

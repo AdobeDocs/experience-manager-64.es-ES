@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: c3eeb3d4fc4b6ce7548c6385c21c6e4ed7b2f0e6
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 45%
+ht-degree: 49%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 45%
    + [Buscar recursos en AEM](search-assets.md)
    + [Búsqueda de texto completo de GQL](gql-search.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [Usar recursos de Adobe Stock en AEM Assets](aem-assets-adobe-stock.md)
+   + [Uso de recursos de Adobe Stock en AEM Assets](aem-assets-adobe-stock.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Flujo de actividad en la cronología](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
@@ -50,7 +51,7 @@ ht-degree: 45%
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adición de funciones de Dynamic Media Classic a la página](scene7.md)
+   + [Adición de funciones de Dynamic Media Classic a su página](scene7.md)
    + [Entrega HTTP2 de contenido](http2.md)
    + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
@@ -77,7 +78,7 @@ ht-degree: 45%
    + [Personalización y ampliación de recursos](extending-assets.md)
    + [Procesamiento de recursos con controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliación de la búsqueda de recursos](searchx.md)
-   + [Instale y configure ImageMagick para que funcione con AEM Assets](best-practices-for-imagemagick.md)
+   + [Instalación y configuración de ImageMagick para trabajar con AEM Assets](best-practices-for-imagemagick.md)
    + [Integración de recursos con el flujo de actividad](extending-activity-stream.md)
    + [Ampliación del Editor de recursos](asseteditorx.md)
    + [API de HTTP de Assets](mac-api-assets.md)
@@ -107,11 +108,11 @@ ht-degree: 45%
    + [Prácticas recomendadas para la integración de AEM y Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integración de AEM Assets con el servidor de InDesign](indesign.md)
    + [Perfiles de metadatos](metadata-profiles.md)
-   + [Gestión de derechos digitales en Assets](drm.md)
+   + [Digital Rights Management en Assets](drm.md)
    + [Uso del paquete de demostración para Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas de descarga de recursos](assets-offloading-best-practices.md)
    + [Prácticas recomendadas del formato de los archivos de recursos](assets-file-format-best-practices.md)
-   + [Prácticas recomendadas en la supervisión de recursos](assets-monitoring-best-practices.md)
+   + [Prácticas recomendadas de supervisión de Assets](assets-monitoring-best-practices.md)
    + [Compatibilidad de Camera Raw](camera-raw.md)
    + [Detección del tipo MIME de los activos que usan Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md)
@@ -121,7 +122,7 @@ ht-degree: 45%
    + [Marcas de agua](watermarking.md)
    + [Importación y exportación de metadatos masivos](metadata-import-export.md)
    + [Plantillas de recursos](asset-templates.md)
-   + [Prácticas recomendadas para el uso compartido de carpetas de AEM a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Prácticas recomendadas de uso compartido de carpetas de AEM a Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Esquema de metadatos de carpeta](folder-metadata-schema.md)
    + [Administración de etiquetas inteligentes](managing-smart-tags.md)
 + Brand Portal {#brandportal}
@@ -147,7 +148,7 @@ ht-degree: 45%
    + [Insertar y extraer archivos en Assets](check-out-and-submit-assets.md)
    + [Configuración del etiquetado de recursos mediante el servicio de contenido inteligente](config-smart-tagging.md)
    + [Habilitar la detección de duplicados](duplicate-detection.md)
-   + [Clasificación mejorada de recursos en AEM](enhance-sort.md)
+   + [Ordenación mejorada de los recursos en AEM](enhance-sort.md)
    + [Organizar recursos digitales](organize-assets.md)
    + [Administración de recursos de vídeo](managing-video-assets.md)
    + [Creación de proyectos de traducción](translation-projects.md)
@@ -179,7 +180,7 @@ ht-degree: 45%
    + [Acerca del uso de escenarios en AEM 3D](about-the-use-of-stages-in-aem-3d.md)
    + [Configurar un escenario estándar con Autodesk Maya y Mental Ray](setting-up-stage-with-ad-mr.md)
    + [Uso del componente Sitios 3D](using-the-3d-sites-component.md)
-   + [Integración de AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
+   + [Integración AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
    + [Sobre el trabajo con los escenarios de IBL](working-with-ibl-stages.md)
-   + [Integración de AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
+   + [Integración AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
    + [Configuración de un escenario de IBL con Autodesk Maya y Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)

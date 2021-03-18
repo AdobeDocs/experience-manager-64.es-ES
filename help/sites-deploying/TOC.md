@@ -6,11 +6,14 @@ audience: end-user
 user-guide-title: Guía de implementación de AEM 6.4
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.4, incluida nuestra implementación en la nube de Adobe Managed Services.
+feature-set: Experience Manager Sites
+feature: Implementación
+role: Arquitecto
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 17%
+source-wordcount: '358'
+ht-degree: 18%
 
 ---
 
@@ -18,7 +21,7 @@ ht-degree: 17%
 # Guía del usuario de implementación de AEM 6.4 {#deploying}
 
 + [Guía del usuario sobre implementación](home.md)
-+ Introducción a la plataforma AEM {#introduction}
++ Introducción a la plataforma de AEM {#introduction}
    + [Introducción a la plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
@@ -75,7 +78,7 @@ ht-degree: 17%
    + [Uso de la herramienta de migración CRX2Oak](using-crx2oak.md)
    + [Tareas de mantenimiento previas a la actualización](pre-upgrade-maintenance-tasks.md)
    + [Comprobación y solución de problemas posteriores a la actualización](post-upgrade-checks-and-troubleshooting.md)
-   + [Actualización de formularios de búsqueda personalizados](upgrading-custom-search-forms.md)
+   + [Actualización de Forms de búsqueda personalizada](upgrading-custom-search-forms.md)
    + [Actualizaciones sostenibles](sustainable-upgrades.md)
    + [Actualización de código y personalizaciones](upgrading-code-and-customizations.md)
    + [Pasos de actualización para las instalaciones del servidor de aplicaciones](app-server-upgrade.md)
@@ -86,20 +89,20 @@ ht-degree: 17%
    + [Reestructuración del repositorio de sitios en AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de activos en AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de Dynamic Media en AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de formularios en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de comercio electrónico en AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
+   + [Reestructuración del repositorio de Forms en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
+   + [Reestructuración de repositorios de comercio electrónico en AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración de repositorios para AEM Communities en la versión 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Información general sobre comercio electrónico](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Prácticas recomendadas   {#practices}
    + [Prácticas Recomendadas De Implementación](best-practices.md)
    + [Árbol de rendimiento](performance-tree.md)
    + [Prácticas recomendadas para pruebas de rendimiento](best-practices-for-performance-testing.md)
    + [Prácticas recomendadas para consultas e indexación](best-practices-for-queries-and-indexing.md)
-   + [Recomendaciones sobre la interfaz de usuario para los clientes](ui-recommendations.md)
+   + [Interfaz de usuario de Recommendations para clientes](ui-recommendations.md)
    + [Rendimiento y escalabilidad](performance.md)
 
 

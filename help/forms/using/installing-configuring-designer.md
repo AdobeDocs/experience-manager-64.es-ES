@@ -1,8 +1,8 @@
 ---
 title: Instalar y configurar Designer
 seo-title: Instalar y configurar Designer
-description: 'Designer está disponible como instalador independiente y también se incluye en Workbench. Obtenga información sobre cómo instalar Designer independiente.  '
-seo-description: 'Designer está disponible como instalador independiente y también se incluye en Workbench. Obtenga información sobre cómo instalar Designer independiente.  '
+description: 'Designer está disponible como instalador independiente y también se incluye en Workbench. Aprenda a instalar Designer independiente.  '
+seo-description: 'Designer está disponible como instalador independiente y también se incluye en Workbench. Aprenda a instalar Designer independiente.  '
 uuid: 46f4a640-092c-46db-a0b2-8e25501a00b9
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,11 +10,12 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 47%
+source-wordcount: '166'
+ht-degree: 48%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 47%
 
 Designer está disponible como instalador independiente y también se incluye en WorkBench. Si utiliza un instalador independiente para Designer, siga estos pasos:
 
-1. Póngase en contacto con la asistencia técnica de Adobe para descargar el instalador de Designer.
+1. Póngase en contacto con la asistencia de Adobe para descargar el instalador de Designer.
 
    >[!NOTE]
    >

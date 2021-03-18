@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -22,26 +23,26 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-AEM Communities proporciona una sección de notificaciones que muestra eventos de interés para el miembro de la comunidad que ha firmado.
+AEM Communities proporciona una sección de notificaciones que muestra eventos de interés para el miembro de la comunidad que ha iniciado sesión.
 
-Las notificaciones son similares a [actividades](essentials-activities.md) y [suscripciones](subscriptions.md) como pueden resultar de
+Las notificaciones son similares a las [actividades](essentials-activities.md) y [suscripciones](subscriptions.md) que pueden resultar de
 
 * El miembro que publica contenido
 * El miembro que decide seguir a otro miembro
-* El miembro decide seguir temas específicos, artículos y otros hilos de contenido
+* El miembro que elige seguir temas específicos, artículos y otros subprocesos de contenido
 
-Lo que distingue las notificaciones de las actividades y suscripciones es
+Lo que distingue las notificaciones de actividades y suscripciones es
 
-* Siempre hay un vínculo a la sección de notificaciones en el encabezado de un sitio de comunidad
-   * Las actividades requieren que la [función de flujo de actividad](functions.md#activity-stream-function) se incluya en la estructura del sitio de la comunidad
-   * Las suscripciones requieren [configuración de correo electrónico](email.md)
-* La implementación de las notificaciones se realiza mediante canales escalables y conectables
+* Un vínculo a la sección de notificaciones siempre está presente en el encabezado de un sitio de la comunidad
+   * Las actividades requieren que la [función del flujo de actividad](functions.md#activity-stream-function) se incluya en la estructura del sitio de la comunidad
+   * Las suscripciones requieren [configuración del correo electrónico](email.md)
+* La implementación de las notificaciones se realiza a través de canales ampliables y conectables
    * Las actividades solo están disponibles en la web
    * Las suscripciones solo están disponibles mediante correo electrónico
 
 A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), los canales de notificación disponibles son
 
-* El canal web, al que se accede mediante el vínculo `Notifications`
+* El canal web, al que se accede mediante el enlace `Notifications`
 * El canal de correo electrónico, disponible cuando el correo electrónico está configurado correctamente
 
 Los canales futuros son móviles y de escritorio.
@@ -52,65 +53,65 @@ Los canales futuros son móviles y de escritorio.
 
 El correo electrónico debe configurarse para que el canal de correo electrónico de las notificaciones funcione.
 
-Para obtener instrucciones sobre cómo configurar el correo electrónico, consulte [Configuración del correo electrónico](analytics.md).
+Para obtener instrucciones sobre la configuración del correo electrónico, consulte [Configuración del correo electrónico](analytics.md).
 
-**Habilitar Seguir**
+**Habilitar seguir**
 
 Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son [blog](blog-feature.md), [foro](forum.md), [QnA](working-with-qna.md), [calendario](calendar.md), [biblioteca de archivos](file-library.md) y [comentarios](comments.md).
 
-Tenga en cuenta que:
+Tenga en cuenta que
 
-* Los componentes utilizados dentro de las plantillas de [sitio](sites.md) y [plantillas de grupo](tools-groups.md) de la comunidad ya pueden configurarse para permitir lo siguiente
+* Los componentes utilizados dentro de las plantillas de [sitio](sites.md) y [plantillas de grupo](tools-groups.md) de la comunidad ya pueden estar configurados para permitir lo siguiente
 
 * Los perfiles de miembros ya están configurados para permitir que otros miembros sigan
 
-## Notificaciones de: {#notifications-from-following}
+## Notificaciones de la siguiente {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-El botón **Seguir** proporciona un medio para seguir las entradas como actividades, suscripciones y/o notificaciones. Cada vez que se selecciona el botón **Seguir**, es posible activar o desactivar una selección. La selección `Email Subscriptions` sólo está presente cuando está configurada.
+El botón **Follow** proporciona un medio para seguir entradas como actividades, suscripciones y/o notificaciones. Cada vez que se selecciona el botón **Follow**, es posible activar o desactivar una selección. La selección `Email Subscriptions` solo está presente cuando está configurada.
 
-Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguiente**. Para mayor comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
+Si se selecciona algún método de seguimiento, el texto del botón cambia a **Siguiendo**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
 
-Aparecerá el botón **Seguir**
+Aparecerá el botón **Follow**
 
 * Al ver el perfil de otro miembro
-* En una página de características principal, como foros, QnA y blogs
+* En una página de características principales, como foros, QnA y blogs
    * Sigue toda la actividad de esa función general
-* Para una entrada específica, como un tema del foro, una pregunta de preguntas y respuestas o un artículo del blog
+* Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog
    * Sigue toda la actividad de esa entrada específica
 
 ## Administración de la configuración de notificación {#managing-notification-settings}
 
-Al seleccionar el vínculo Configuración de notificación en la página Notificaciones, cada miembro puede administrar cómo se reciben las notificaciones.
+Al seleccionar el vínculo Configuración de notificación de la página Notificaciones , es posible que cada miembro administre cómo se reciben las notificaciones.
 
 El canal web siempre está habilitado.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-El canal de correo electrónico, que depende de la configuración [correcta del correo electrónico](email.md), proporciona la misma configuración que para el canal Web.
+El canal de correo electrónico, que se basa en una [configuración adecuada del correo electrónico](email.md), proporciona la misma configuración que para el canal web.
 
 El canal de correo electrónico está desactivado de forma predeterminada.
 
 ![chlimage_1-256](assets/chlimage_1-256.png)
 
-Un miembro puede activarlo, pero aún depende de la configuración del correo electrónico.
+Un miembro puede activarlo, pero aun así depende del correo electrónico que se esté configurando.
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
 ## Visualización de notificaciones{#viewing-notifications} 
 
-### Notificaciones Web {#web-notifications}
+### Notificaciones web {#web-notifications}
 
-Un [asistente creó un sitio de comunidad](sites-console.md) ahora incluye un vínculo a la función `Notifications` en la barra de encabezado del sitio sobre el letrero. A diferencia de los mensajes, las notificaciones se crean para cada sitio de la comunidad, mientras que los mensajes se deben habilitar durante el proceso de creación del sitio.
+Un [asistente creado en el sitio de la comunidad](sites-console.md) ahora incluye un vínculo a la función `Notifications` en la barra de encabezado del sitio que se encuentra encima del banner. A diferencia de los mensajes, las notificaciones se crean para cada sitio de la comunidad, mientras que los mensajes deben habilitarse durante el proceso de creación del sitio.
 
-Al visitar el sitio publicado, al seleccionar el vínculo `Notifications` se mostrarán todas las notificaciones del miembro.
+Al visitar el sitio publicado, seleccionar el enlace `Notifications` mostrará todas las notificaciones del miembro.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
 ### Notificaciones de correo electrónico {#email-notifications}
 
-Cuando el canal de correo electrónico está activado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
+Cuando el canal de correo electrónico está habilitado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 

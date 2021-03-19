@@ -1,17 +1,18 @@
 ---
 title: Plataformas compatibles con AEM Forms en JEE
 seo-title: Plataformas compatibles con AEM Forms en JEE
-description: Lista de componentes de infraestructura necesarios y admitidos para la instalación de AEM Forms en JEE
-seo-description: Lista de componentes de infraestructura necesarios y admitidos para la instalación de AEM Forms en JEE
+description: Lista de componentes de infraestructura requeridos y admitidos para instalar AEM Forms en JEE
+seo-description: Lista de componentes de infraestructura requeridos y admitidos para instalar AEM Forms en JEE
 uuid: 22f05fd4-f9fc-423e-8a86-1e75df4b2b44
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3317'
 ht-degree: 1%
 
 ---
@@ -23,9 +24,9 @@ ht-degree: 1%
 
 ### Niveles de soporte {#support-levels}
 
-Los AEM Forms en el servidor JEE se pueden configurar utilizando cualquier combinación de sistemas operativos compatibles, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico.
+AEM Forms en el servidor JEE se puede configurar utilizando cualquier combinación de sistemas operativos compatibles, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico.
 
-Este documento enumera las plataformas de cliente y servidor compatibles con AEM Forms en JEE. Adobe proporciona varios niveles de asistencia, tanto para las configuraciones recomendadas como para otras configuraciones. El documento también enumera otro software compatible y su versión, excepciones, definiciones de parches y la política de soporte de parches de software de terceros.
+Este documento enumera las plataformas de cliente y servidor compatibles con AEM Forms en JEE. Adobe proporciona varios niveles de soporte, tanto para nuestras configuraciones recomendadas como para otras configuraciones. El documento también enumera otro software compatible y su versión, excepciones, definiciones de parches y la política de soporte de parches de software de terceros.
 
 >[!NOTE]
 >
@@ -48,15 +49,15 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
   </tr> 
   <tr> 
    <td>A: Compatible<br /> </td> 
-   <td>Adobe proporciona asistencia y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad de Adobe.</td> 
+   <td>Adobe proporciona soporte y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad del Adobe.</td> 
   </tr> 
   <tr> 
    <td>R: Compatibilidad restringida</td> 
-   <td>Adobe ofrece compatibilidad con esta configuración una vez que se hayan cumplido determinados requisitos previos. Póngase en contacto con el servicio de asistencia técnica de Adobe Enterprise para obtener más información sobre los requisitos previos y solicitar este servicio.</td> 
+   <td>Adobe proporciona compatibilidad total con esta configuración una vez que se cumplen ciertos requisitos previos. Póngase en contacto con el servicio de asistencia técnica de la empresa de Adobe para obtener más información sobre los requisitos previos y presentar una solicitud de asistencia.</td> 
   </tr> 
   <tr> 
    <td>L: Compatibilidad limitada</td> 
-   <td>Adobe proporciona asistencia y mantenimiento completos para estas configuraciones después de cumplir ciertos requisitos previos. No todas las funcionalidades están disponibles en la configuración. Póngase en contacto con el servicio de asistencia técnica de Adobe Enterprise para obtener más información sobre los requisitos previos y plantear una solicitud de asistencia.<br /> </td> 
+   <td>Adobe proporciona soporte y mantenimiento completos para estas configuraciones después de cumplir ciertos requisitos previos. No todas las funcionalidades están disponibles en la configuración. Póngase en contacto con el servicio de asistencia técnica de la empresa de Adobe para obtener más información sobre los requisitos previos y presentar una solicitud de asistencia.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -128,7 +129,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td>Compatible</td> 
   </tr> 
   <tr> 
-   <td><p>Versión 1 de Oracle Database 12c</p> </td> 
+   <td><p>Versión 1 de la base de datos de oracle 12c</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
    <td><p>Compatible</p> </td> 
   </tr> 
@@ -142,14 +143,14 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 * MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página [MongoDB licensing policy](https://www.mongodb.org/about/licensing/).
 
-* Para aprovechar al máximo su implementación de AEM, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse de la asistencia profesional.
-* El Servicio de atención al cliente de Adobe ayudará a resolver los problemas relacionados con el uso de MongoDB con AEM. Para obtener más información, consulte la página [MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-* &#39;File System&#39; incluye almacenamiento en bloque compatible con POSIX. Esto incluye la tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar la prueba AEM en combinación con el sistema de archivos de red/remoto.
+* Para aprovechar al máximo su implementación de AEM, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional.
+* El Servicio de atención al cliente de Adobe ayudará a calificar los problemas relacionados con el uso de MongoDB con AEM. Para obtener más información, consulte la página [MongoDB for Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+* &#39;File System&#39; incluye almacenamiento en bloque compatible con POSIX. Esto incluye la tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red/remoto.
 * Sólo se soporta el motor de almacenamiento MongoDB WiredTiger.
 * El uso compartido MongoDB no es compatible con AEM.
-* AEM Forms en JEE no es compatible con MySQL para la persistencia de RDBMK.
+* AEM Forms en JEE no admite MySQL para persistencia RDBMK.
 * El módulo Seguridad de documentos no utiliza el Repositorio de contenido. Esto implica que, si solo utiliza Document Security y no planea utilizar HTML Workspace, formularios HTML5 o formularios adaptables, no instale Content Repository.
-* AEM Forms en JEE es compatible con la arquitectura Multitenant de Oracle.
+* AEM Forms en JEE admite la arquitectura de Oracle Multitenant.
 
 #### Soporte de DATABASE {#database-support}
 
@@ -158,8 +159,8 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   <tr> 
    <td><p><strong>Plataforma</strong></p> </td> 
    <td><p><strong> Descripción</strong></p> </td> 
-   <td><p><strong>Nivel de compatibilidad de AEM 6.4</strong></p> </td> 
-   <td><p><strong>Nivel de compatibilidad de AEM Forms 6.4 en JEE</strong></p> </td> 
+   <td><p><strong>Nivel de soporte AEM 6.4</strong></p> </td> 
+   <td><p><strong>Nivel de soporte AEM Forms 6.4 en JEE</strong></p> </td> 
   </tr> 
   <tr> 
    <td>IBM DB2 11.1</td> 
@@ -168,7 +169,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td>Compatible</td> 
   </tr> 
   <tr> 
-   <td><p>Versión 1 de Oracle Database 12c</p> </td> 
+   <td><p>Versión 1 de la base de datos de oracle 12c</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
    <td><p>Compatible</p> </td> 
    <td><p>Compatible</p> </td> 
@@ -205,12 +206,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
    <td><p>Controlador JDBC de Microsoft® SQL Server 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
-   <td><p>Se proporciona con AEM Forms en la instalación de JEE.</p> </td> 
+   <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
-   <td><p>Controlador JDBC de Oracle Database 12.1.0.2.0</p> <p>ojdbc7.jar (versión 12.1.0.2.0)<br /> </p> </td> 
-   <td><p>Se proporciona con AEM Forms en la instalación de JEE.</p> </td> 
+   <td><p>Controlador JDBC de la base de datos de oracle 12.1.0.2.0</p> <p>ojdbc7.jar (versión 12.1.0.2.0)<br /> </p> </td> 
+   <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td> 
   </tr> 
   <tr> 
    <td>IBM DB2</td> 
@@ -311,7 +312,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 #### Entorno virtualizado {#virtualized-environment}
 
-Puede ejecutar AEM Forms en JEE en un equipo físico o en un entorno virtual. Sin embargo, si tiene algún problema con AEM Forms en un entorno virtual, intente replicar el problema en un equipo físico. Si el problema persiste en el equipo físico, póngase en contacto con el servicio de asistencia de Adobe para obtener una solución. Para problemas que no se replican en la máquina física, póngase en contacto con el proveedor de entorno virtual.
+Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Sin embargo, si tiene algún problema con AEM Forms en un entorno virtual, intente replicar el problema en una máquina física. Si el problema persiste en la máquina física, póngase en contacto con el servicio de asistencia al Adobe para obtener una resolución. Para problemas que no se replican en la máquina física, póngase en contacto con el proveedor de entorno virtual.
 
 #### Entornos de desarrollo {#development-environments}
 
@@ -341,28 +342,28 @@ Puede ejecutar AEM Forms en JEE en un equipo físico o en un entorno virtual. Si
 
 ### Excepciones a plataformas de servidor admitidas {#exceptions-to-supported-server-platforms}
 
-Tenga en cuenta las siguientes excepciones a la hora de elegir una plataforma para configurar AEM Forms en el servidor JEE.
+Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar AEM Forms en el servidor JEE.
 
-1. AEM Forms en JEE no es compatible con Oracle WebLogic y JBoss® en IBM® AIX®.
+1. AEM Forms en JEE no admite Oracle WebLogic y JBoss® en IBM® AIX®.
 1. AEM Forms en JEE no es compatible con Oracle WebLogic e IBM® WebSphere® con MySQL.
-1. AEM Forms en JEE no es compatible con Oracle Solaris™ con la arquitectura Intel® (sólo se admite SPARC®).
+1. AEM Forms on JEE no es compatible con el Oracle Solaris™ con la arquitectura Intel® (sólo se admite SPARC®).
 1. AEM Forms en JEE no es compatible con Oracle WebLogic y JBoss en SUSE Linux Enterprise Server 12. Sólo IBM WebSphere es compatible con SUSE Linux Enterprise Server 12.
-1. AEM Forms en JEE no admite ningún JDK con JBoss® que no sea Oracle Java™ SE.
+1. AEM Forms on JEE no es compatible con ningún JDK con JBoss® excepto Oracle Java™ SE.
 1. AEM Forms en JEE no admite ningún JDK con IBM® WebSphere® que no sea IBM® JDK.
 1. AEM Forms en JEE no es compatible con IBM® DB2 con JBoss®.
-1. El repositorio CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio CRX. Sin embargo, en un entorno de AEM Forms en JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional compatible con el servidor de aplicaciones.
+1. El repositorio CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio CRX. Sin embargo, en un AEM Forms en un entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional compatible con el servidor de aplicaciones.
 1. AEM Forms en JEE no es compatible con el servidor de aplicaciones WebSphere en CentOS.
 1. Los sistemas operativos AIX y Solaris solo están disponibles para clientes de actualización.
-1. AEM Forms en JEE no es compatible con el control de acceso basado en roles JBoss (RBAC).
+1. AEM Forms en JEE no admite el control de acceso basado en roles JBoss (RBAC).
 
-Además, tenga en cuenta los siguientes puntos a la hora de elegir el software para Adobe AEM Forms en implementaciones JEE:
+Además, tenga en cuenta los siguientes puntos a la hora de elegir software para Adobe AEM Forms en implementaciones JEE:
 
-* AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones sobre la versión principal y secundaria especificada del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no es compatible a menos que se especifique lo contrario.
+* AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria especificada del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no es compatible a menos que se especifique lo contrario.
 * Las instalaciones basadas en clústeres no admiten la persistencia de TarMK. Para obtener información sobre la persistencia admitida, consulte [Elección de un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-* AEM Forms en JEE admite varios software de terceros según nuestra [Política de soporte de software de terceros](#third-party-patch-support-policy).
+* AEM Forms en JEE soporta varios software de terceros según nuestra [Política de soporte de software de terceros](#third-party-patch-support-policy).
 * AEM Forms en JEE admite plataformas según la compatibilidad proporcionada por proveedores externos. Es posible que algunos proveedores externos no permitan algunas combinaciones. Por ejemplo, muchos proveedores no han certificado sus servidores de aplicaciones con IBM® DB2. Como resultado, AEM Forms en JEE tampoco admite estas combinaciones. Para asegurarse de elegir las versiones de software compatibles, compruebe también la matriz de asistencia para los proveedores de terceros.
 * AEM Forms en JEE no admite el modo de espera pasiva TarMK.
-* AEM Forms en JEE no admite la agrupación en clúster vertical.
+* AEM Forms en JEE no admite agrupación en clúster vertical.
 * AEM Forms en JEE no admite la base de datos MySQL en un entorno agrupado.
 * RDBMK no funciona con bases de datos DB2, MYSQL, MS SQL y Oracle cuando los módulos JDBC del paquete están configurados en Weblogic.
 
@@ -375,7 +376,7 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir el software p
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th> 
   </tr> 
   <tr> 
-   <td>Oracle Unified Directory (OUD) 11g Versión 2</td> 
+   <td>Directorio unificado de oracle (OUD) 11g Versión 2</td> 
    <td>Service Packs</td> 
   </tr> 
   <tr> 
@@ -444,7 +445,7 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir el software p
 
 ### Compatibilidad con Cordova {#support-for-cordova}
 
-La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuación se muestran las versiones específicas de Cordova para cada plataforma que son compatibles:
+La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación se muestran las versiones específicas de Cordova para cada plataforma que son compatibles:
 
 * Apache Cordova 6.4.0
 * Cordova iOS 4.3.0
@@ -521,8 +522,8 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >* PDF Generator no es compatible con Microsoft Office 365.
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows, Linux y Solaris.
 >* El servicio HTML2PDF está obsoleto en AIX.
->* Las funciones OCR PDF, Optimize PDF y Export PDF solo son compatibles con Windows.
->* Una versión de Acrobat está incluida con AEM Forms para habilitar la funcionalidad de PDF Generator. Solo se debe acceder a la versión empaquetada mediante programación con AEM Forms, durante el periodo de validez de la licencia de AEM Forms, para su uso con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>* Las características OCR PDF, Optimize PDF y Export PDF solo son compatibles con Windows.
+>* Una versión de Acrobat está incluida con AEM Forms para habilitar la funcionalidad de PDF Generator. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de validez de la licencia de AEM Forms, para su uso con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 
 >
 
@@ -532,8 +533,8 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 
 Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/) compatibles:
 
-* IU de creación de formularios adaptables
-* IU de creación del administrador de formularios
+* IU de creación de Forms adaptable
+* IU de creación de Forms Manager
 * Interfaz de usuario de creación de Correspondence Management
 * IU de administración (IU de la consola de administración)
 
@@ -571,7 +572,7 @@ Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/
    <td>Requisitos de hardware para un entorno de producción pequeño</td> 
    <td> 
     <ul> 
-     <li><strong>Entorno</strong> con tecnología Intel: Intel® Xeon® E5-2680, 2,4 GHz o superior. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li> 
+     <li><strong>Entorno</strong> con tecnología Intel: Intel® Xeon® E5-2680, 2,4 GHz o bueno. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li> 
      <li><strong>Entorno alimentado por Sun SPARC: </strong> UltraSPARC V o posterior</li> 
      <li><strong>Entorno con tecnología IBM AIX: </strong> Power6 o posterior<br /> </li> 
      <li><strong>Memoria:  </strong>4 GB  <br /> </li> 
@@ -582,7 +583,7 @@ Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/
 
 Para obtener más información, consulte:
 
-* [Requisitos del sistema para una implementación de AEM Forms en JEE de un solo servidor](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
+* [Requisitos del sistema para un AEM Forms de un solo servidor en una implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
 * [Requisitos del sistema para una implementación de AEM Forms en clúster en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_64)
 
 ## Clientes admitidos para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
@@ -622,7 +623,7 @@ Para obtener más información, consulte:
 
 * Memoria para ejecutar Workbench: 2 GB de RAM
 * Requisitos de hardware: Procesador Intel® Pentium® 4 o AMD equivalente, 1 GHz
-* Resolución mínima de pantalla de 1024 X 768 píxeles o superior con color de 16 bits o superior
+* Resolución mínima de pantalla de 1024 X 768 píxeles o buena resolución de pantalla con color de 16 bits o superior
 * Conexión de red TCP/IPv4 o TCP/IPv6 a AEM Forms en el servidor JEE
 
 >[!NOTE]
@@ -637,7 +638,7 @@ Para obtener más información, consulte:
 * 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
 * Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
 * 2,35 GB de espacio disponible en disco duro
-* Resolución de pantalla de 1024 X 768 píxeles o superior
+* 1024 X 768 píxeles o buena resolución del monitor
 * Aceleración de hardware de vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegios administrativos para instalar Designer
@@ -659,7 +660,7 @@ Para obtener más información, consulte:
 
 >[!NOTE]
 >
->La familia de productos Acrobat DC presenta dos pistas para Acrobat y Reader, que son esencialmente diferentes en productos: &quot;Classic&quot; y &quot;Continuous&quot;. Para obtener más información y una comparación de las dos pistas, consulte [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>La familia de productos Acrobat DC presenta dos pistas tanto para Acrobat como para Reader, que son esencialmente productos diferentes: &quot;Classic&quot; y &quot;Continuous&quot;. Para obtener más información y una comparación de las dos pistas, consulte [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Navegadores {#browsers}
 
@@ -751,15 +752,15 @@ Para obtener más información, consulte:
 
 #### Compatibilidad con dispositivos móviles {#mobile-device-support}
 
-La aplicación de AEM Forms está disponible en las plataformas siguientes:
+La aplicación AEM Forms está disponible en las plataformas siguientes:
 
 | **Plataforma** | **Dispositivos compatibles** |
 |---|---|
 | Apple iOS | Apple iPhone, iPad, iPad Air y iPad mini con iOS 11 y superior. |
-| Google Android | Android 4.4 (Androird Kit Kat) y superiores *[API Level 19 y superiores]*. La aplicación AEM Forms está certificada en tabletas Samsung Galaxy de 7 y 10 pulgadas, tabletas Google Nexus de 7 pulgadas y teléfonos inteligentes populares. |
+| Google Android | Android 4.4 (Androird Kit Kat) y superiores *[API Level 19 y superiores]*. La aplicación AEM Forms está certificada en tabletas Samsung Galaxy de 7 y 10 pulgadas, y en tabletas Google Nexus de 7 pulgadas y en teléfonos inteligentes populares. |
 | Microsoft Windows | Dispositivos, tabletas, portátiles y equipos de escritorio de Microsoft Surface que ejecutan el sistema operativo Microsoft Windows 10. |
 
-### Adobe Flash Player {#adobe-flash-player}
+### Flash Player de Adobe {#adobe-flash-player}
 
 <table> 
  <tbody> 
@@ -768,7 +769,7 @@ La aplicación de AEM Forms está disponible en las plataformas siguientes:
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th> 
   </tr> 
   <tr> 
-   <td><p>Última versión de Flash Player</p> </td> 
+   <td><p>Flash Player versión más reciente</p> </td> 
    <td><p>Versiones y actualizaciones menores</p> </td> 
   </tr> 
  </tbody> 
@@ -776,15 +777,15 @@ La aplicación de AEM Forms está disponible en las plataformas siguientes:
 
 >[!NOTE]
 >
->Adobe [dejará de actualizar y distribuir Flash Player a finales de 2020](https://theblog.adobe.com/adobe-flash-update/).
+>Adobe [dejará de actualizar y distribuir el Flash Player a finales de 2020](https://theblog.adobe.com/adobe-flash-update/).
 
 ### Extensión de Adobe Document Security para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Haga clic [aquí](https://www.adobe.com/es/products/livecycle/rightsmanagement/extension/downloads.html) para ver los requisitos del sistema para Adobe Document Security Extension for Microsoft® Office.
+Haga clic [aquí](https://www.adobe.com/es/products/livecycle/rightsmanagement/extension/downloads.html) para ver los requisitos del sistema para la extensión de seguridad de documentos de Adobe para Microsoft® Office.
 
 ### Excepciones al soporte al cliente {#exceptions-to-client-support}
 
-Microsoft® Windows® 2012 no es compatible con todos los programas especificados del lado del cliente, excepto Reader y Acrobat.
+Microsoft® Windows® 2012 no es compatible con todo el software especificado del lado del cliente, excepto con el Reader y Acrobat.
 
 Además, AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones además de la versión principal y secundaria especificada del software compatible. Sin embargo, la actualización a la siguiente versión principal o secundaria no es compatible a menos que se especifique lo contrario.
 
@@ -792,16 +793,16 @@ Además, AEM Forms en JEE admite actualizaciones, parches y paquetes de correcci
 
 Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección &quot;Requisitos del sistema&quot; de sus respectivos documentos de producto. Puede acceder a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64) .
 
-Los AEM Forms en plataformas de referencia de terceros de JEE indican el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parche/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
+AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura soportada por esa versión de AEM Forms en JEE.
 
-Adobe admite parches urgentes o recomendados emitidos por proveedores de terceros en el momento de su lanzamiento, siempre que estos garanticen la compatibilidad con versiones anteriores compatibles con AEM Forms en JEE. Adobe solo admitirá parches publicados después del nivel mínimo de parches indicado en la documentación de AEM Forms en JEE.
+Adobe admite parches urgentes o recomendados emitidos por proveedores de terceros en el momento de su lanzamiento, suponiendo que los proveedores de terceros garanticen la compatibilidad con versiones anteriores compatibles con AEM Forms en JEE. Adobe solo admitirá parches publicados después del nivel mínimo de parches indicado en la documentación de AEM Forms en JEE.
 
-En algunos casos, Adobe no admite actualizaciones de terceros que cambien la funcionalidad principal y, por lo tanto, no admite la compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones admitidas, consulte [Definiciones de parches admitidos](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) para productos de proveedores específicos y los tipos de parches que admite Adobe.
+En algunos casos, el Adobe no admite actualizaciones de terceros que cambien la funcionalidad principal y, por lo tanto, no admite la compatibilidad total con versiones anteriores. Para obtener más información sobre las actualizaciones admitidas, consulte [Definiciones de parches admitidos](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) para productos de proveedores específicos y el Adobe de tipos de parches admite.
 
-En circunstancias que escapan al control de Adobe, los parches de terceros que afirman ser compatibles con versiones anteriores pueden tener un impacto negativo en los productos de Adobe o en los entornos de los clientes. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. Adobe colaborará con terceros mediante esfuerzos empresariales razonables para resolver estos problemas, ya sea a través de programas de asistencia normales de Adobe o de terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione según lo documentado por el proveedor o con AEM Forms en JEE.
+En circunstancias que escapan al control del Adobe, los parches de terceros que afirman ser compatibles con versiones anteriores pueden tener un impacto negativo en los productos de Adobe o en los entornos de los clientes. En estos casos, Adobe recomienda que los clientes evalúen el impacto de cualquier parche urgente de un tercero antes de aplicarlo a sistemas críticos. El Adobe colaborará con terceros mediante esfuerzos comerciales razonables para resolver estos problemas, ya sea mediante programas normales de apoyo al Adobe o por terceros que corrijan el problema en su parche. Esto no garantiza que un parche de terceros recién lanzado que sea compatible con Adobe funcione según lo documentado por el proveedor o con AEM Forms en JEE.
 
 Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros compatibles con AEM Forms en la versión JEE y sus definiciones de parches compatibles en cualquier momento.
 
-También puede encontrar información adicional sobre parches de terceros en los artículos de la base de conocimientos relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
+Para obtener información adicional sobre parches de terceros, consulte los artículos de la base de conocimientos relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
 
 [**Contacto con el servicio de asistencia**](https://www.adobe.com/account/sign-in.supportportal.html)

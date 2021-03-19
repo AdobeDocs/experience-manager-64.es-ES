@@ -1,6 +1,6 @@
 ---
-title: Integración de la interfaz de usuario Crear correspondencia con su portal personalizado
-seo-title: Integración de la interfaz de usuario Crear correspondencia con su portal personalizado
+title: Integración de la IU Crear correspondencia con su portal personalizado
+seo-title: Integración de la IU Crear correspondencia con su portal personalizado
 description: Aprenda a integrar la interfaz de usuario de creación de correspondencia con su portal personalizado
 seo-description: Aprenda a integrar la interfaz de usuario de creación de correspondencia con su portal personalizado
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
@@ -8,16 +8,17 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
+feature: Administración de correspondencia
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 4%
 
 ---
 
 
-# Integración de la interfaz de usuario Crear correspondencia con su portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integración de la IU Crear correspondencia con su portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Información general {#overview}
 
@@ -25,28 +26,28 @@ Este artículo detalla cómo puede integrar la solución Crear correspondencia c
 
 ## Invocación basada en URL {#url-based-invocation}
 
-Una forma de llamar a la aplicación Crear correspondencia desde un portal personalizado es preparar la dirección URL con los siguientes parámetros de solicitud:
+Una forma de llamar a la aplicación Crear correspondencia desde un portal personalizado es preparar la URL con los siguientes parámetros de solicitud:
 
-* el identificador de la plantilla de carta (con el parámetro cmLetterId) o el nombre de la plantilla Letter (con el parámetro cmLetterName)
+* el identificador de la plantilla de carta (con el parámetro cmLetterId ) o el nombre de la plantilla Letter (con el parámetro cmLetterName )
 
-* la dirección URL de los datos XML recuperados del origen de datos deseado (mediante el parámetro cmDataUrl).
+* la dirección URL de los datos XML recuperados del origen de datos deseado (con el parámetro cmDataUrl ).
 
-Por ejemplo: el portal personalizado prepararía la dirección URL como\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, que puede ser el href de un vínculo en el portal.\
-Si el portal tiene el nombre de plantilla Carta a mano, la dirección URL podría ser\
+Por ejemplo, el portal personalizado prepararía la dirección URL como\
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, que podría ser el href de un vínculo en el portal.\
+Si el portal tiene el nombre de la plantilla Carta a mano, la URL podría ser\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
 >[!NOTE]
 >
->La llamada de este modo no es segura, ya que los parámetros necesarios se pasan como una solicitud de GET, al exponer los mismos (claramente visibles) en la dirección URL.
+>Llamar a de este modo no es seguro, ya que los parámetros necesarios se pasan como una solicitud de GET, al exponer lo mismo (claramente visible) en la dirección URL.
 
 >[!NOTE]
 >
->Antes de llamar a la aplicación Crear correspondencia, guarde y cargue los datos para llamar a la interfaz de usuario Crear correspondencia en la dirección URL de datos determinada. Esto puede realizarse desde el propio portal personalizado o a través de otro proceso de back-end.
+>Antes de llamar a la aplicación Crear correspondencia, guarde y cargue los datos para llamar a la IU Crear correspondencia en la URL de datos determinada. Esto se puede hacer desde el propio portal personalizado o a través de otro proceso de back-end.
 
 ## Invocación basada en datos en línea {#inline-data-based-invocation}
 
-Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la dirección URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, mientras se envían los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), lo que no era posible/ideal en el método anterior.
+Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enviando los parámetros y datos para llamar a la aplicación Crear Correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), que no era posible/ideal en el método anterior.
 
 ### Parámetros para especificar la letra {#parameters-for-specifying-letter}
 
@@ -60,12 +61,12 @@ Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podr
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Cadena</td> 
-   <td>Identificador de la instancia de carta.</td> 
+   <td>Identificador de la instancia de letra.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
    <td>Cadena</td> 
-   <td><p>Identificador de la plantilla de letras. </p> <p>Si existen varias letras CM con el mismo nombre en un servidor, el uso del parámetro cmLetterName en la URL genera un error "Existen varias letras con el nombre". En ese caso, utilice el parámetro cmLetterId en la dirección URL en lugar de cmLetterName.</p> </td> 
+   <td><p>Identificador de la plantilla de carta. </p> <p>Si existen varias letras CM con el mismo nombre en un servidor, el uso del parámetro cmLetterName en la URL genera el error "Hay varias letras con el nombre". En tal caso, utilice el parámetro cmLetterId en la dirección URL en lugar de cmLetterName.</p> </td> 
   </tr>
   <tr>
    <td>cmLetterId</td> 
@@ -75,7 +76,7 @@ Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podr
  </tbody>
 </table>
 
-El orden de los parámetros de la tabla especifica la preferencia de los parámetros utilizados para cargar la letra.
+El orden de los parámetros de la tabla especifica la preferencia de los parámetros utilizados para cargar la carta.
 
 ### Parámetros para especificar el origen de datos XML {#parameters-for-specifying-the-xml-data-source}
 
@@ -89,17 +90,17 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Datos XML de un archivo de origen utilizando protocolos básicos como cq, ftp, http o file.<br /> </td> 
+   <td>Datos XML de un archivo de origen usando protocolos básicos como cq, ftp, http o file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Cadena</td> 
-   <td>Uso de datos XML disponibles en la instancia de carta.</td> 
+   <td>Uso de datos xml disponibles en la instancia de carta.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Booleano</td> 
-   <td>Para reutilizar los datos de prueba adjuntos en el diccionario de datos.</td> 
+   <td>Para reutilizar los datos de prueba adjuntos en un diccionario de datos.</td> 
   </tr>
  </tbody>
 </table>
@@ -118,11 +119,11 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmPreview<br /> </td> 
    <td>Booleano</td> 
-   <td>True para abrir la letra en modo de previsualización<br /> </td> 
+   <td>True para abrir la carta en el modo de vista previa<br /> </td> 
   </tr>
   <tr>
    <td>Aleatorio</td> 
-   <td>Marca de hora</td> 
+   <td>Marca de tiempo</td> 
    <td>Para resolver los problemas de almacenamiento en caché del explorador.</td> 
   </tr>
  </tbody>

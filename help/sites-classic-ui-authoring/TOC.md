@@ -3,21 +3,24 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guía del usuario de creación de IU AEM 6.4 Classic
+user-guide-title: Guía del usuario sobre la creación de IU de AEM 6.4 Classic
 breadcrumb-title: Guía de creación de IU clásica
-user-guide-description: Esta guía cubre los conceptos de creación en AEM en la interfaz de usuario clásica.
+user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
+feature-set: Experience Manager Sites
+feature: 'Creación  '
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 83%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
 
-# Guía del usuario de creación de IU clásica de AEM 6.4 {#classic-ui}
+# Guía del usuario de creación de la interfaz de usuario de AEM 6.4 Classic {#classic-ui}
 
-+ [Introducción a la Guía de creación de IU clásica](home.md)
++ [Descripción general de la guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
    + [Primeros pasos de creación](classic-page-author-first-steps.md)
    + [Crear en la IU clásica](classicui.md)
@@ -54,7 +57,7 @@ ht-degree: 83%
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)
    + [Uso de flujos de trabajo](classic-workflows.md)
-   + [Aplicación de flujos de trabajo a las páginas](classic-workflows-applying.md)
+   + [Aplicación de flujos de trabajo a páginas](classic-workflows-applying.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](classic-launches.md)
    + [Creación de lanzamientos](classic-launches-creating.md)
@@ -86,7 +89,7 @@ ht-degree: 83%
    + [Envío de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
    + [Configurar un escenario estándar con Autodesk Maya y Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Adición de recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
-   + [Añadir las funciones de Dynamic Media Classic (Scene7) en la página](manage-assets-classic-s7.md)
+   + [Adición de funciones de Dynamic Media Classic (Scene7) a la página](manage-assets-classic-s7.md)
    + [Trabajo con Dynamic Media](dynamic-media-assets.md)
    + [Uso de recursos 3D](classicui-3dassets.md)
    + [Vídeo](manage-assets-classic-s7-video.md)

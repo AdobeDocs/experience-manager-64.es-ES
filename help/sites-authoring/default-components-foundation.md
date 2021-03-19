@@ -1,7 +1,7 @@
 ---
 title: Componentes de base
 seo-title: Componentes de base
-description: nulo
+description: Componentes de base
 seo-description: nulo
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6670'
+source-wordcount: '6671'
 ht-degree: 84%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 84%
 >
 >En esta sección se analizan los componentes de base, que están disponibles con AEM en muchas versiones y que están listos para usarse en las instalaciones estándar de AEM. Sin embargo, varios de los componentes de base han quedado obsoletos con AEM 6.4.
 >
->Adobe recomienda aprovechar los [componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html) más modernos y ampliables. Éstos forman parte del [contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y también puede [instalarse por separado y ser utilizado para el desarrollo](https://helpx.adobe.com/experience-manager/core-components/using/using.html) por su administrador.
+>Adobe recomienda aprovechar los [componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html) más modernos y ampliables. Estos forman parte del [contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y su administrador también puede [instalarlos por separado y utilizarlos para el desarrollo](https://helpx.adobe.com/experience-manager/core-components/using/using.html).
 
 Los componentes de base están diseñados para utilizarse al crear contenido para una página web estándar. Forman un subconjunto de los componentes disponibles para su uso para efectuar una instalación estándar de AEM.
 
-Algunos están disponibles inmediatamente a través del navegador de componentes, otros también están disponibles mediante [modo de diseño](/help/sites-authoring/default-components-designmode.md) (si la página está basada en una plantilla estática) o [editando la plantilla](/help/sites-authoring/templates.md) (si la página está basada en una plantilla editable).
+Algunos están disponibles inmediatamente a través del navegador de componentes, mientras que otros también están disponibles mediante el [modo de diseño](/help/sites-authoring/default-components-designmode.md) (si la página está basada en una plantilla estática) o mediante [la edición de la plantilla](/help/sites-authoring/templates.md) (si la página está basada en una plantilla editable).
 
-Se admite el uso de componentes básicos, pero han sido sustituidos por componentes básicos que oferta una mayor extensibilidad y flexibilidad.
+Se admite el uso de componentes de base, pero estos se han sustituido por componentes principales que ofrecen más extensibilidad y flexibilidad.
 
 >[!NOTE]
 >
@@ -65,12 +65,12 @@ Los componentes generales son los básicos que se utilizan para crear contenido.
 
 Es posible definir un vínculo con título y descripción.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### Imagen adaptable {#adaptive-image}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Componente de imagen de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Componente de imagen de los componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) en su lugar.
 
 El componente de base de la imagen adaptable genera imágenes que se ajustan al tamaño de la ventana en la que se abre la página web. Para utilizar el componente, escoja un medio de imagen del sistema de archivos o DAM. Cuando se abre la página web, el navegador web descarga una copia de la imagen que ha cambiado de tamaño para ajustarse a la ventana actual.
 
@@ -172,7 +172,7 @@ Están disponibles en dos fichas:
 
 * **Carrusel**
 
-   Aquí puede especificar el funcionamiento del carrusel:
+   Aquí especifica el funcionamiento del carrusel:
 
    * Velocidad de reproducción
 
@@ -188,11 +188,11 @@ Están disponibles en dos fichas:
 
 * **Lista**
 
-   Aquí puede especificar cómo se incluyen las páginas en el Carrusel:
+   Aquí especifica cómo se incluyen las páginas en el carrusel:
 
    * **Lista de creación que utiliza**
 
-      Existen varias formas de crear una lista de página: páginas secundarias, Lista fija, búsqueda o búsqueda avanzada (todas ellas se describen a continuación).
+      Existen varias formas de crear una lista de páginas: páginas secundarias, lista fija, búsqueda o búsqueda avanzada (todas ellas se describen a continuación).
 
       Tenga en cuenta que no importa qué método elija, las páginas incluidas en la lista ya deben disponer de una imagen asociada a la página, que será la imagen que se muestre en el carrusel. Si no existe ninguna imagen para una página determinada en sus propiedades de página, es necesario asociar una imagen a la página antes de comenzar, ya que de lo contrario el carrusel mostrará una página en blanco (o casi en blanco). Consulte [Edición de las propiedades de página](/help/sites-authoring/editing-page-properties.md).
 
@@ -205,8 +205,8 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
       * **Opciones de Lista fija**
 
          * ****
-PáginasSeleccione una lista de páginas. Usar 
-`+` para agregar más entradas y los botones de subida y bajada para ajustar el orden.
+PáginasSeleccione una lista de páginas. Uso 
+`+` para añadir más entradas y los botones de flecha hacia arriba y hacia abajo para ajustar el orden.
       * **Opciones de Buscar**
 
          * **Iniciar en**
@@ -220,7 +220,7 @@ PáginasSeleccione una lista de páginas. Usar
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
@@ -230,7 +230,7 @@ PáginasSeleccione una lista de páginas. Usar
 
    * **Límite**
 
-      El número máximo de elementos que desea utilizar en el Carrusel; esto es opcional.
+      El número máximo de artículos que desea utilizar en el Carrusel; esto es opcional.
 
 
 
@@ -423,7 +423,7 @@ Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 * **Rotar**
 
-   Para rotar una imagen, seleccione Rotar. Utilícelo repetidamente hasta que la imagen rote hacia el lado que prefiera.
+   Para girar una imagen, seleccione Rotar. Utilícelo repetidamente hasta que la imagen rote hacia el lado que prefiera.
 
 * **Borrar**
 
@@ -435,11 +435,11 @@ Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 * **Texto alternativo**
 
-   Texto alternativo que se utiliza al crear contenido accesible.
+   Texto alternativo para usar al crear contenido accesible.
 
 * **Vínculos**
 
-   Cree un vínculo a recursos u otras páginas dentro del sitio web.
+   Cree un vínculo a los recursos u otras páginas dentro del sitio web.
 
 * **Descripción**
 
@@ -502,13 +502,13 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda utilizando la notación de predicado Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
       * **Etiquetas**
 
-         Especifique la **página principal**, **Etiquetas/Palabras clave** y los criterios de coincidencia necesarios.
+         Especifique la **Página principal**, **Etiquetas/palabras clave** y los criterios de coincidencia necesarios.
    * **Mostrar como**
 
       Cómo desea que se incluyan los elementos; incluye vínculos, teasers y noticias.
@@ -536,7 +536,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
 En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede mostrar una lista de páginas secundarias, con el diseño controlado mediante las definiciones CSS personalizadas del diseño del sitio.
 
-![dc_lista_use](assets/dc_list_use.png)
+![dc_list_use](assets/dc_list_use.png)
 
 ### Inicio de sesión {#login}
 
@@ -573,7 +573,7 @@ Puede configurar:
 
    * Redirigir a
 
-      Puede especificar la página del sitio web que se debe abrir una vez que el usuario haya iniciado sesión.
+      Puede especificar la página del sitio web que debe abrirse una vez que el usuario ha iniciado sesión.
 
 * Ya hay una sesión iniciada
 
@@ -595,11 +595,11 @@ Puede configurar:
 
    * **Vínculo**
 
-      Especifique la página (producto) para la que se debe mostrar el estado del pedido.
+      Especifique la página (producto) para la que se debe mostrar el estado de pedido.
 
    * **Tipo / Tamaño**
 
-      Seleccione una opción de la selección proporcionada.
+      Seleccione en la selección proporcionada.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -646,11 +646,11 @@ Puede configurar:
 
    * **Tipos de nodo**
 
-      Si la búsqueda se va a restringir a un tipo de nodo específico, lista aquí; por ejemplo, `cq:Page`.
+      Si la búsqueda se va a restringir a un tipo de nodo específico, enumérenlos aquí; por ejemplo, `cq:Page`.
 
    * **Ruta de búsqueda**
 
-      Especifique la página raíz de la rama que desee buscar.
+      Especifique la página raíz de la rama que desea buscar.
 
    * **Texto del botón Buscar**
 
@@ -705,7 +705,7 @@ En el siguiente ejemplo se muestra un término de búsqueda con errores ortográ
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar en su lugar [Navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navegación de idioma](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html) y [Componentes principales de ruta de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html).
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [Componentes principales de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navegación de idioma](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html) y [Ruta de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) en su lugar.
 
 Lista del mapa del sitio automática, que (con las configuraciones por defecto) enumera todas las páginas (como vínculos activos) en la página web actual. Por ejemplo, un extracto muestra:
 
@@ -722,7 +722,7 @@ Si es obligatorio, se puede configurar:
 ### Presentación  {#slideshow}
 
 >[!CAUTION]
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/carousel.html) en su lugar.
 
 >[!CAUTION]
 >
@@ -736,7 +736,7 @@ Puede configurar:
 
    * **Nueva diapositiva**
 
-      Puede especificar una selección de diapositivas mediante los botones **Añadir** (y **Eliminar**).
+      Puede especificar una selección de diapositivas utilizando los botones **Add** (y **Remove**).
 
    * **Título**
 
@@ -794,7 +794,7 @@ Al configurar el componente de la nube de etiquetas, es posible especificar:
 
 * **Página**
 
-   Seleccione la página a la que se hará referencia.
+   Seleccione la página a la que desea hacer referencia.
 
 * **Sin vínculos ni etiquetas**
 
@@ -837,11 +837,11 @@ El componente Texto e imagen añade un bloque de texto y una imagen. También se
 
 Puede configurar:
 
-* **Estilos**  de componente (**estilos**)
+* **Estilos**  de componente (**Estilos**)
 
    Aquí puede alinear la imagen a la izquierda o la derecha. El modo predeterminado es el alineado a la **Izquierda,** con la imagen a la izquierda.
 
-* **Propiedades**  de imagen (propiedades **de imagen** avanzadas)
+* **Propiedades de imagen**  (**Propiedades de imagen avanzadas**)
 
    Permite especificar lo siguiente:
 
@@ -859,7 +859,7 @@ Puede configurar:
 
    * **Vincular a**
 
-      Especifique una ruta de destinatario.
+      Especifique una ruta de destino.
 
    * **Descripción**
 
@@ -901,7 +901,7 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 
 El componente **Vídeo** permite colocar un elemento de vídeo predefinido, listo para utilizar en una página.
 
-Consulte también [Configuración del componente de vídeo](/help/sites-administering/config-video.md) para su uso con elementos HTML5.
+Consulte también [Configurar el componente de vídeo](/help/sites-administering/config-video.md) para utilizarlo con elementos HTML5.
 
 Después de colocar un ejemplo de componente en su página, puede configurar:
 
@@ -909,7 +909,7 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 
    * **Recurso de vídeo**
 
-   Cargue o suelte el recurso de vídeo.
+   Cargue o suelte su recurso de vídeo.
 
    * **Tamaño**
 
@@ -1045,11 +1045,11 @@ Esas pestañas proporcionan los parámetros necesarios, que pueden depender del 
 
    * **Requerido**
 
-      Depende del tipo de componente del formulario, pero proporciona una o varias casillas de verificación para indicar que este campo, o ciertas partes de este campo, es obligatorio.
+      Esto depende del tipo de componente del formulario, pero proporciona una o más casillas de verificación para indicar que este campo, o ciertas partes de este campo, es obligatorio.
 
    * **Mensaje obligatorio**
 
-      Un mensaje para informar a los usuarios de que este campo es obligatorio; un campo requerido también se marcará con un asterisco.
+      Un mensaje para informar a los usuarios de que este campo es obligatorio; un campo obligatorio también se marcará con un asterisco.
 
    * **Restricción**
 
@@ -1057,7 +1057,7 @@ Esas pestañas proporcionan los parámetros necesarios, que pueden depender del 
 
    * **Mensaje de restricción**
 
-      Un mensaje para informar a los usuarios de lo que se necesita.
+      Un mensaje para informar a los usuarios de lo que se requiere.
 
 * **Estilo**
 
@@ -1098,7 +1098,7 @@ Este componente es necesario para definir el inicio de un nuevo formulario en un
 * **Avanzado**
 
    * **Tipo**
-de acciónUn formulario necesita una acción. La acción define la operación que se activa para la ejecución con los datos enviados por el usuario (similar a action= en HTML). Algunos necesitan una 
+de acciónUn formulario necesita una acción. La acción define la operación que se activa para la ejecución con los datos enviados por el usuario (similar a action= en HTML). Algunos necesitan un 
 **Configuración de la acción**.
 
       Se incluye una selección de tipos de acciones en la instalación AEM estándar:
@@ -1132,7 +1132,7 @@ de acciónUn formulario necesita una acción. La acción define la operación qu
 
    * **Ruta de acceso de carga**
 
-      Ruta de acceso a las propiedades de nodo que se utiliza para cargar valores predefinidos en los campos del formulario.
+      Ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en los campos del formulario.
 
       Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo cuenta con propiedades que coinciden con los nombres de campo, los campos apropiados del formulario se cargan previamente con el valor de estas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
 
@@ -1180,18 +1180,18 @@ de acciónUn formulario necesita una acción. La acción define la operación qu
 
          * **Procesar con**
 
-            Seleccione la opción requerida en la lista.
+            Seleccione la opción requerida de la lista.
 
          * **Tipo de medio**
 
-            Si se establece, se agrega a cada comentario como `sling:resourceType`
+            Si está configurado, se agrega a cada comentario como `sling:resourceType`
 
          * **Selector de vista**
       * **Crear posible cliente**
 
          * **El posible cliente se agregará a la lista**
 
-            Especifique la lista de posible cliente requerida.
+            Especifique la lista de posibles clientes requerida.
       * **Crear y actualizar cuenta**
 
          * **Grupo inicial**
@@ -1208,7 +1208,7 @@ de acciónUn formulario necesita una acción. La acción define la operación qu
 
          * **Ver datos...**
 
-            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí, puede exportar la información a un archivo `.tsv` (separado por tabuladores) (para utilizarlo, por ejemplo, en una hoja de cálculo de Excel).
+            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí puede exportar la información en un archivo `.tsv` (separado por tabulaciones) para utilizarlo, por ejemplo, en una hoja de cálculo de Excel.
       * **Correo**
 
          * **De**
@@ -1254,7 +1254,7 @@ de acciónUn formulario necesita una acción. La acción define la operación qu
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posible cliente requerida.
+            Especifique la lista de posibles clientes requerida.
 
 
 
@@ -1328,7 +1328,7 @@ Se pueden configurar distintos parámetros para este componente, incluyendo un m
 
 Una casilla de verificación permite crear una lista de una o varias casillas, algunas de las cuales se pueden activar al mismo tiempo.
 
-![dc_form_checkboxgroupare](assets/dc_form_checkboxgroupuse.png)
+![dc_form_checkboxgrouput](assets/dc_form_checkboxgroupuse.png)
 
 Es posible especificar varios parámetros, incluidos el título, una descripción y el nombre del elemento. Al utilizar los botones + y -, es posible añadir o eliminar elementos y posteriormente situarlos con las flechas arriba y abajo.
 
@@ -1474,7 +1474,7 @@ El campo de texto estándar se puede configurar con el tamaño necesario y con s
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Botón(s) de envío de flujo de trabajo {#workflow-submit-button-s}
+### Botones de envío de flujo de trabajo {#workflow-submit-button-s}
 
 Permite crear un botón Enviar para utilizarlo en un flujo de trabajo.
 

@@ -1,48 +1,49 @@
 ---
-title: Estilo en línea de los componentes de formularios adaptables
+title: Estilo en línea de los componentes de formulario adaptables
 seo-title: Propiedades CSS en línea para componentes de formulario adaptables
-description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a componentes individuales de un formulario adaptable.
-seo-description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a componentes individuales de un formulario adaptable.
+description: Aunque puede aplicar estilos personalizados en un formulario adaptable, también puede aplicar propiedades CSS en línea en componentes individuales de un formulario adaptable.
+seo-description: Aunque puede aplicar estilos personalizados en un formulario adaptable, también puede aplicar propiedades CSS en línea en componentes individuales de un formulario adaptable.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
+feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 2%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
 
-# Estilo en línea de los componentes de formularios adaptables {#inline-styling-of-adaptive-form-components}
+# Estilo en línea de los componentes de formulario adaptables {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando estilos mediante [editor de temas](/help/forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualización los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante [editor de temas](/help/forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios sobre la marcha. Los estilos en línea anulan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
-Para agregar estilos en línea a un componente:
+Para añadir estilos en línea a un componente:
 
-1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, toque ![lista desplegable de lienzos](assets/canvas-drop-down.png) > **Estilo**.
-1. Seleccione un componente en la página y toque el botón de edición ![botón de edición](assets/edit-button.png). Las propiedades de estilo se abren en la barra lateral.
+1. Abra el formulario en el editor de formularios y cambie el modo a modo de estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, pulse ![lienzo-desplegable](assets/canvas-drop-down.png) > **Estilo**.
+1. Seleccione un componente en la página y pulse el botón de edición ![editar-button](assets/edit-button.png). Propiedades de estilo abiertas en la barra lateral.
 
-   También puede seleccionar componentes del árbol de jerarquía de formularios en la barra lateral. El árbol de jerarquía de formularios está disponible como objetos de formulario en la barra lateral.
+   También puede seleccionar componentes del árbol de jerarquía de formularios en la barra lateral. El árbol de jerarquía de formularios está disponible como Objetos de formulario en la barra lateral.
 
-   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes en Objetos de formulario. Sin embargo, la lista Objetos de formulario en los componentes de listas laterales, como campos y paneles. Los campos y paneles son componentes genéricos que pueden contener componentes como cuadro de texto y botones de opción.
+   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes enumerados en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral enumera componentes como campos y paneles. Los campos y los paneles son componentes genéricos que pueden contener componentes como, por ejemplo, cuadros de texto y botones de opción.
 
-   Cuando se selecciona un componente de la barra lateral, se muestran todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
+   Al seleccionar un componente de la barra lateral, se ven todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
 
-1. Haga clic en una ficha de la barra lateral para especificar las propiedades de CSS. Puede especificar propiedades como:
+1. Haga clic en una ficha de la barra lateral para especificar las propiedades CSS. Puede especificar propiedades como:
 
-   * Dimension y posición (configuración de visualización, relleno, altura, anchura, margen, posición, índice z, flotante, borrar, desbordamiento)
+   * Dimension y posición (visualización, relleno, altura, anchura, margen, posición, z-index, flotante, transparente, desbordamiento)
    * Texto (familia de fuentes, peso, color, tamaño, altura de línea y alineación)
    * Fondo (imagen y degradado, color de fondo)
-   * Borde (anchura, estilo, color, radio)
+   * Borde (ancho, estilo, color, radio)
    * Efectos (Sombra, Opacidad)
-   * Avanzado (le permite escribir CSS personalizada para el componente)
+   * Avanzado (permite escribir CSS personalizada para el componente)
 
-1. Del mismo modo, se pueden aplicar estilos a otras partes de un componente, como Utilidad, Rótulo y Ayuda.
+1. Del mismo modo, puede aplicar estilos a otras partes de un componente, como Widget, Rótulo y Ayuda.
 1. Toque **Listo** para confirmar los cambios o **Cancelar** para descartar los cambios.
 
 ## Ejemplo: estilos en línea para un componente de campo {#example-inline-styles-for-a-field-component}
@@ -67,7 +68,7 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
    <td><p>Campo</p> </td> 
    <td><p>border</p> </td> 
    <td><p>Ancho del borde = 2 px</p> <p>Estilo de borde=Sólido</p> <p>Color del borde=#1111</p> </td> 
-   <td><p>Crea un borde negro de 2 píxeles de ancho alrededor del campo</p> </td> 
+   <td><p>Crea un borde ancho negro de 2 píxeles alrededor del campo</p> </td> 
   </tr> 
   <tr> 
    <td><p>Cuadro de texto</p> </td> 
@@ -78,8 +79,8 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
   <tr> 
    <td><p>Etiqueta</p> </td> 
    <td><p>Dimensiones y posición &gt; anchura</p> </td> 
-   <td><p>100 px</p> </td> 
-   <td><p>Corrige la anchura como 100 px para la etiqueta</p> </td> 
+   <td><p>100px</p> </td> 
+   <td><p>Corrige la anchura de 100 píxeles para la etiqueta</p> </td> 
   </tr> 
   <tr> 
    <td>Icono de ayuda de campo</td> 
@@ -91,17 +92,17 @@ Observe el cambio en el estilo del cuadro de texto como se muestra en la siguien
    <td><p>Descripción larga</p> </td> 
    <td><p>text-align</p> </td> 
    <td><p>center</p> </td> 
-   <td><p>Alinea la descripción larga de la ayuda al centro</p> </td> 
+   <td><p>Alinea la descripción larga para que la ayuda se centre</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-![Estilo del cuadro de texto después de ](assets/applied-style.png)
-**aplicar estilo en líneaFigura:componente** *Cuadro de texto después de aplicar propiedades de estilo en línea*
+![Estilo de cuadro de texto después de aplicar estilo en línea ](assets/applied-style.png)
+**Figura:** *Componente de cuadro de texto después de aplicar propiedades de estilo en línea*
 
 Siguiendo los pasos anteriores, puede seleccionar y aplicar estilo a otros componentes, como paneles, botones de envío y botones de radio.
 
 >[!NOTE]
 >
->Las propiedades de estilo varían según el componente seleccionado.
+>Las propiedades de estilo varían en función del componente que seleccione.
 

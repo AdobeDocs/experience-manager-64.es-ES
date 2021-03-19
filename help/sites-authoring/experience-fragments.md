@@ -1,7 +1,7 @@
 ---
 title: Fragmentos de experiencias
 seo-title: Fragmentos de experiencias
-description: nulo
+description: Fragmentos de experiencias
 seo-description: nulo
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1312'
 ht-degree: 83%
 
 ---
@@ -90,7 +90,7 @@ La creación de carpetas permite:
    >
    >Puede utilizar el [editor de plantillas](/help/sites-authoring/templates.md) para crear su propia plantilla.
 
-El siguiente ejemplo muestra fragmentos de experiencia estructurados según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
+El siguiente ejemplo muestra fragmentos de experiencias estructurados según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ Para crear y configurar una carpeta para los fragmentos de experiencias, se reco
 
 >[!NOTE]
 >
->También es posible configurar las [Plantillas permitidas para su instancia](#configure-allowed-templates-instance), pero se recomienda este método **no**, ya que los valores se pueden sobrescribir al actualizar.
+>También es posible configurar las [Plantillas permitidas para su instancia](#configure-allowed-templates-instance), pero este método es **no** recomendado, ya que los valores se pueden sobrescribir tras la actualización.
 
 ### Configurar las plantillas permitidas para la carpeta {#configure-allowed-templates-folder}
 
@@ -185,7 +185,7 @@ El editor de fragmentos de experiencias le ofrece funciones similares al editor 
 
 El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un producto:
 
-1. Arrastre y suelte un **[!UICONTROL teaser de Categoría]** desde el [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arrastre y suelte un **[!UICONTROL teaser de categorías]** desde el [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,11 +289,11 @@ Puede arrastrar el bloque de creación al sistema de párrafos de cualquier frag
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 
-Con el selector `.plain.` de la URL, puede acceder a la representación HTML sin formato.
+Con el selector `.plain.` de la dirección URL, puede acceder a la representación HTML sin formato.
 
-Está disponible desde el navegador, pero su principal objetivo es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros, implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencias directamente, utilizando solo la URL.
+Está disponible desde el explorador, pero su principal propósito es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencia directamente, únicamente mediante la URL.
 
-La representación HTML sin formato agrega el protocolo, el host y la ruta de contexto a las rutas que son:
+La representación HTML simple agrega el protocolo, el host y la ruta de contexto a las rutas que son:
 
 * del tipo: `src`, `href` o `action`
 
@@ -305,7 +305,7 @@ Por ejemplo:
 
 >[!NOTE]
 >
->Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para ser consumidos por terceros, por lo que el vínculo siempre se llamará desde la instancia de publicación, no desde el autor.
+>Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para ser consumidos por terceros, por lo que siempre se llama al vínculo desde la instancia de publicación, no desde el autor.
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 

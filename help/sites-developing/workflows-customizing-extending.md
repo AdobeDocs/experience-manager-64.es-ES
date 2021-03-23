@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 1%
 
 ---
@@ -817,7 +817,7 @@ Una forma sencilla de empezar a crear su propio paso personalizado es copiar un 
 
    Este es el resultado de nuestro paso personalizado de ejemplo:
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -858,7 +858,7 @@ Una forma sencilla de empezar a crear su propio paso personalizado es copiar un 
 
 1. Ahora puede abrir un modelo de flujo de trabajo para editarlo. En el navegador de pasos, puede filtrar para ver **My Custom Step**:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    Al arrastrar **My Custom Step** al modelo se muestra la tarjeta:
 
@@ -1039,7 +1039,7 @@ El ejemplo `_cq_dialog/.content.xml` utilizado en este ejemplo:
 >
 >Los cuadros de diálogo del editor de modelos de la IU clásica seguirán funcionando con el editor de IU táctil estándar.
 >
->Aunque AEM tiene una [herramienta de conversión de cuadro de diálogo](/help/sites-developing/dialog-conversion.md) si desea actualizar los cuadros de diálogo de paso de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión aún hay algunas mejoras manuales que se pueden hacer en el cuadro de diálogo para algunos casos.
+>AEM tiene [herramientas de modernización](/help/sites-developing/modernization-tools.md) si desea actualizar los cuadros de diálogo de paso de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión aún hay algunas mejoras manuales que se pueden hacer en el cuadro de diálogo para algunos casos.
 >
 >* En los casos en los que un cuadro de diálogo actualizado esté vacío, puede ver los cuadros de diálogo de `/libs` que tienen una funcionalidad similar a la de ejemplos de cómo proporcionar una solución. Por ejemplo:
    >

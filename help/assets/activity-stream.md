@@ -1,19 +1,21 @@
 ---
-title: Flujo de actividad en la línea de tiempo
-description: 'En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo. '
+title: Flujo de actividad en la cronología
+description: 'Este artículo describe cómo mostrar los registros de actividad de los recursos en la cronología. '
 contentOwner: AG
+feature: Administración de activos
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 34%
+source-wordcount: '221'
+ht-degree: 33%
 
 ---
 
 
-# Flujo de actividad en la línea de tiempo {#activity-stream-in-timeline}
+# Flujo de actividad en la cronología {#activity-stream-in-timeline}
 
-Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager (AEM), la función de flujo de Actividad actualiza la línea de tiempo para reflejar la actividad.
+Esta función muestra los registros de actividad de los recursos en la cronología. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager (AEM), la función Flujo de actividad actualiza la cronología para reflejar la actividad.
 
 Las siguientes operaciones se registran en el flujo de actividad:
 
@@ -32,15 +34,15 @@ Además, la actividad de la cronología se registra cuando se cargan nuevos recu
 
 >[!NOTE]
 >
->Los flujos de trabajo transitorios no se muestran en la línea de tiempo, ya que no se guarda la información del historial de estos flujos de trabajo.
+>Los flujos de trabajo transitorios no se muestran en la cronología, ya que no se guarda información de historial para estos flujos de trabajo.
 
-Para realizar la vista del flujo de actividad, realice una o varias de las operaciones en el recurso, selecciónelo y, a continuación, elija **[!UICONTROL Línea de tiempo]** en la lista de GlobalNav.
+Para ver el flujo de actividad, realice una o más de las operaciones en el recurso, seleccione el recurso y, a continuación, elija **[!UICONTROL Línea de tiempo]** en la lista Navegador global.
 
 ![línea de tiempo-3](assets/timeline-3.png)
 
-La línea de tiempo muestra el flujo de actividad de las operaciones que realiza en los recursos.
+La cronología muestra el flujo de actividad de las operaciones que realiza en los recursos.
 
-![actividad_stream](assets/activity_stream.png)
+![activity_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >

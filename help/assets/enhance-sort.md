@@ -1,27 +1,29 @@
 ---
 title: Ordenación mejorada de los recursos en AEM
-description: Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
+description: Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 contentOwner: AG
+feature: 'Búsqueda  '
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '444'
 ht-degree: 3%
 
 ---
 
 
-# Se mejoró la clasificación de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
+# Clasificación mejorada de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
 
-Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
+Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 
-La capacidad de búsqueda de Recursos Adobe Experience Manager (AEM) se ha mejorado para ordenar de forma eficaz un gran número de recursos en las páginas de resultados de búsqueda y vista de listas de carpetas. También puede ordenar las entradas de línea de tiempo.
+La capacidad de búsqueda de Adobe Experience Manager (AEM) Assets se ha mejorado para ordenar de forma eficaz un gran número de recursos en las páginas de resultados de búsqueda y vista de lista de carpetas. También puede ordenar las entradas de la línea de tiempo.
 
-AEM Assets implementa la ordenación del lado del servidor para ordenar el conjunto completo de recursos (por grande que sea) dentro de una carpeta o una consulta de búsqueda a la vez, en lugar de ordenarlos por lotes en el lado del cliente. De este modo, los resultados recuperados previamente se pueden mostrar rápidamente en la interfaz de usuario, lo que hace que la operación de ordenación sea más receptiva y dinámica.
+AEM Assets implementa la ordenación del lado del servidor para ordenar todo el conjunto de recursos (aunque sean grandes) dentro de una carpeta o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente. De este modo, los resultados recuperados previamente se pueden mostrar rápidamente en la interfaz de usuario, lo que hace que la operación de ordenación sea más flexible y ágil.
 
-## Ordenar recursos en la vista de Lista {#sorting-assets-in-list-view}
+## Clasificación de recursos en la vista de lista {#sorting-assets-in-list-view}
 
-AEM Assets permite ordenar los recursos de carpetas en función de los campos siguientes:
+AEM Assets permite ordenar los recursos de las carpetas en función de los campos siguientes:
 
 * Conf. regional
 * Estado
@@ -36,7 +38,7 @@ AEM Assets permite ordenar los recursos de carpetas en función de los campos si
 * Extraído
 
 1. Vaya a una carpeta que contenga un gran número de recursos.
-1. Toque o haga clic en el icono Diseño y vaya a la vista de lista.
+1. Toque o haga clic en el icono Diseño y cambie a la vista de lista.
 
    ![chlimage_1-394](assets/chlimage_1-394.png)
 
@@ -44,7 +46,7 @@ AEM Assets permite ordenar los recursos de carpetas en función de los campos si
 
    ![chlimage_1-395](assets/chlimage_1-395.png)
 
-   La lista de los recursos se ordena en función de los valores de los campos.
+   La lista de recursos se ordena según los valores de los campos.
 
    ![chlimage_1-396](assets/chlimage_1-396.png)
 
@@ -52,9 +54,9 @@ AEM Assets permite ordenar los recursos de carpetas en función de los campos si
 >
 >Para ordenar los valores en las columnas `Name` o `Title`, superponga `/libs/dam/gui/content/commons/availablecolumns` y cambie el valor de `sortable` a `True`.
 
-## Ordenar recursos en los resultados de búsqueda {#sorting-assets-in-search-results}
+## Clasificación de recursos en resultados de búsqueda {#sorting-assets-in-search-results}
 
-Puede ordenar los resultados de búsqueda en función de los campos siguientes:
+Puede ordenar los resultados de la búsqueda según los campos siguientes:
 
 * Título
 * Estado
@@ -67,17 +69,17 @@ Puede ordenar los resultados de búsqueda en función de los campos siguientes:
 
    ![chlimage_1-397](assets/chlimage_1-397.png)
 
-1. Toque o haga clic en el icono Diseño y vaya a la vista de lista. Si los resultados de la búsqueda ya se muestran en la vista de lista, omita este paso.
-1. Toque o haga clic en el icono Ordenar situado junto al encabezado de cualquier columna de la lista de recursos. La lista de los recursos se ordena en función de los valores de los campos.
+1. Toque o haga clic en el icono Diseño y cambie a la vista de lista. Si los resultados de la búsqueda ya se muestran en la vista de lista, omita este paso.
+1. Toque o haga clic en el icono Ordenar situado junto al encabezado de cualquier columna de la lista de recursos. La lista de recursos se ordena según los valores de los campos.
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
 ## Clasificación de recursos en la línea de tiempo {#sorting-assets-in-timeline}
 
-AEM Assets permite ordenar cronológicamente las entradas de la línea de tiempo, como anotaciones, versiones, flujos de trabajo y actividades.
+AEM Assets permite ordenar cronológicamente las entradas de la cronología, como anotaciones, versiones, flujos de trabajo y actividades.
 
-1. En la interfaz de usuario de Recursos, seleccione un recurso para el que desee mostrar la línea de tiempo.
-1. Toque o haga clic en el icono de GlobalNav y seleccione **[!UICONTROL Línea de tiempo]**.
+1. En la interfaz de usuario de Assets, seleccione un recurso para el que desee mostrar la línea de tiempo.
+1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Línea de tiempo]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
@@ -85,7 +87,7 @@ AEM Assets permite ordenar cronológicamente las entradas de la línea de tiempo
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Ordenar]** junto a la etiqueta **[!UICONTROL Fecha]**. Según su selección, las anotaciones se enumeran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
+1. Toque o haga clic en el icono **[!UICONTROL Sort]** situado junto a la etiqueta **[!UICONTROL Date]**. Según la selección, las anotaciones se muestran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
 
    ![chlimage_1-481](assets/chlimage_1-401.png)
 

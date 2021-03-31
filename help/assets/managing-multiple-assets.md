@@ -2,11 +2,13 @@
 title: Edición masiva de metadatos de varios recursos y colecciones
 description: Obtenga información sobre cómo editar los metadatos de muchos recursos y colecciones simultáneamente para propagar rápidamente los cambios habituales en los metadatos.
 contentOwner: AG
+feature: Administración de recursos,Metadatos,Colecciones
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 184aa0a7fcd3f89510295ddaff28624b8306b7d2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 13%
+source-wordcount: '442'
+ht-degree: 14%
 
 ---
 

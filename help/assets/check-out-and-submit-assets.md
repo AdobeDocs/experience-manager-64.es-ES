@@ -1,39 +1,41 @@
 ---
-title: Incorporar y retirar recursos digitales para editarlos
-description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
+title: Insertar y extraer recursos digitales para editarlos
+description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
+feature: Administración de activos
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
 
 
-# Archivos de ingreso y salida en Assets {#check-in-and-check-out-files-in-assets}
+# Archivos de desprotección y desprotección en Assets {#check-in-and-check-out-files-in-assets}
 
-Recursos Adobe Experience Manager (AEM) le permite retirar recursos para editarlos y volver a protegerlos una vez que haya realizado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que lo vuelva a registrar en AEM Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+Recursos Adobe Experience Manager (AEM) permite extraer recursos para editarlos y volver a protegerlos después de completar los cambios. Después de retirar un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Si se retira un recurso, este se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a proteger el recurso en AEM Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
 Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
 Esta función ayuda a evitar que otros usuarios anulen los cambios realizados por un autor en los que varios usuarios colaboran en la edición de flujos de trabajo entre equipos.
 
-## Recursos de cierre de compra {#checking-out-assets}
+## Extraer activos {#checking-out-assets}
 
-1. En la interfaz de usuario de Recursos, seleccione el recurso que desea retirar. También puede seleccionar varios recursos para la retirada.
+1. En la interfaz de usuario de Assets, seleccione el recurso que desea retirar. También puede seleccionar varios recursos para retirarlos.
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Cierre de compra]**.
+1. En la barra de herramientas, pulse o haga clic en el icono **[!UICONTROL Cierre de compra]**.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   Observe que el icono **[!UICONTROL Cierre de compra]** conmuta al icono **[!UICONTROL Proteger]** con el bloqueo abierto.
+   Observe que el icono **[!UICONTROL Checkout]** alterna con el icono **[!UICONTROL Checkin]** con el bloqueo abierto.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
-   Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inicie sesión como un usuario diferente. Aparece un icono de candado en la miniatura del recurso que ha extraído.
+   Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión como un usuario diferente. Aparece un icono de candado en la miniatura del recurso que ha extraído.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
@@ -41,9 +43,9 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sin embargo, puede tocar o hacer clic en el icono **[!UICONTROL Propiedades de la Vista]** para editar los metadatos del recurso bloqueado.
+   Sin embargo, puede hacer clic o pulsar el icono **[!UICONTROL Ver propiedades]** para editar los metadatos del recurso bloqueado.
 
-1. Toque o haga clic en el icono Editar para abrir el recurso en modo de edición.
+1. Pulse o haga clic en el icono Editar para abrir el recurso en modo de edición.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -57,17 +59,17 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   El recurso modificado está registrado en AEM Assets y está disponible para su edición por otros usuarios.
+   El recurso modificado se archiva en AEM Assets y está disponible para otros usuarios para su edición.
 
 ## Registro forzado {#forced-check-in}
 
-Los administradores pueden proteger recursos que otros usuarios han extraído.
+Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
 1. Inicie sesión en AEM Assets como administrador.
-1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos que hayan sido retirados por otros usuarios.
+1. En la interfaz de usuario de Assets, seleccione uno o varios recursos que otros usuarios hayan extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
+1. En la barra de herramientas, pulse o haga clic en el icono **[!UICONTROL Liberar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)

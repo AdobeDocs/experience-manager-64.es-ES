@@ -1,11 +1,13 @@
 ---
 title: Configurar restricciones de carga de recursos
-description: Obtenga información sobre cómo configurar Recursos Adobe Experience Manager (AEM) para restringir el tipo de recursos (archivos) que los usuarios pueden cargar.
+description: Obtenga información sobre cómo configurar Adobe Experience Manager (AEM) Assets para restringir el tipo de recursos (archivos) que los usuarios pueden cargar.
 contentOwner: AG
+feature: Desarrollador
+role: Administrador,Arquitecto
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '222'
 ht-degree: 30%
 
 ---
@@ -13,10 +15,10 @@ ht-degree: 30%
 
 # Configurar restricciones de carga de recursos {#configuring-asset-upload-restrictions}
 
-Puede configurar Recursos Adobe Experience Manager (AEM) para restringir el tipo de recursos (archivos) que los usuarios pueden cargar. Esta función le ayuda a eliminar la posibilidad de que los usuarios carguen recursos en un formato no deseado o carguen archivos maliciosos. El servicio `Day CQ DAM Asset Upload Restriction` le permite controlar el tipo de archivos que los usuarios pueden cargar. De forma predeterminada, AEM Assets permite a los usuarios cargar recursos de todos los tipos MIME. Sin embargo, puede configurar el servicio para que restrinja a los usuarios la carga de archivos de tipos MIME específicos solamente.
+Puede configurar Recursos Adobe Experience Manager (AEM) para restringir el tipo de recursos (archivos) que los usuarios pueden cargar. Esta función le ayuda a eliminar la posibilidad de que los usuarios carguen recursos en un formato no deseado o carguen archivos dañinos. El servicio `Day CQ DAM Asset Upload Restriction` permite controlar el tipo de archivos que los usuarios pueden cargar. De forma predeterminada, AEM Assets permite a los usuarios cargar recursos de todos los tipos MIME. Sin embargo, puede configurar el servicio para restringir el acceso de los usuarios solo a archivos de tipos MIME específicos.
 
 1. Para abrir la consola web de Configuration Manager, acceda a `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Abra el servicio **[!UICONTROL Day CQ DAM Asset Upload Restriction]** en modo de edición. De forma predeterminada, la opción **Permitir todo MIME** está seleccionada, lo que permite a los usuarios cargar archivos de todos los tipos MIME.
+1. Abra el servicio **[!UICONTROL Day CQ DAM Asset Upload Restriction]** en el modo de edición. De forma predeterminada, la opción **Allow all MIME** está seleccionada, lo que permite a los usuarios cargar archivos de todos los tipos MIME.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 

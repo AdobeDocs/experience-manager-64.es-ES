@@ -3,10 +3,12 @@ title: Reutilizar recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Administración de recursos, administrador de varios sitios
+role: Profesional empresarial,Administrador,Arquitecto
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3167'
+source-wordcount: '3176'
 ht-degree: 9%
 
 ---
@@ -63,7 +65,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies, 
 Para crear Live Copy desde uno o varios recursos o carpetas de origen, siga uno de los siguientes pasos:
 
 * **Método 1**: Seleccione los recursos de origen y haga clic en  **[!UICONTROL Crear]**  >  **[!UICONTROL Copia activa]** en la barra de herramientas de la parte superior.
-* **Método 2**: En la interfaz de usuario de AEM, haga clic en  **[!UICONTROL Crear > Live]** Copy en la esquina superior derecha de la interfaz.
+* **Método 2**: En AEM interfaz de usuario, haga clic en  **[!UICONTROL Crear > Live]** Copy en la esquina superior derecha de la interfaz.
 
 Puede crear Live Copies de un recurso o de una carpeta de a una. Puede crear Live Copies que se deriven de un recurso o de una carpeta que sea una Live Copy en sí.
 
@@ -72,15 +74,15 @@ Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al inten
 Para crear Live Copies con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Crear Live Copy desde la interfaz de AEM](assets/lc_create1.png)
+   ![Crear Live Copy desde AEM interfaz](assets/lc_create1.png)
 1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
 1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 
 Para crear Live Copies con el segundo método, siga estos pasos:
 
-1. En la interfaz de AEM, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Crear Live Copy desde la interfaz de AEM](assets/lc_create2.png)
+1. En AEM interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
+   ![Crear Live Copy desde AEM interfaz](assets/lc_create2.png)
 1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
@@ -92,7 +94,7 @@ Para crear Live Copies con el segundo método, siga estos pasos:
 
 ## Ver varias propiedades y estados del origen y la Live Copy {#view-properties-statuses-source-and-lc}
 
-Puede ver la información y los estados relacionados con MSM de la Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario de AEM. Los dos métodos siguientes funcionan para los recursos y las carpetas:
+Puede ver la información y los estados relacionados con MSM de Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario de AEM. Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 * Seleccione un recurso de Live Copy y busque la información en su página **[!UICONTROL Propiedades]**.
 * Seleccione la carpeta de origen y busque la información detallada de cada Live Copy desde la **[!UICONTROL Consola Live Copy]**.
@@ -181,7 +183,7 @@ Como alternativa, puede iniciar una acción de despliegue desde el carril [!UICO
 
 Una acción de sincronización extrae las modificaciones de un origen solo a la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Cómo usar |
+| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Utilización |
 |---|---|---|
 |  Carril de referencia | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#quick-actions-from-references-rail-for-source) |
 | Barra de herramientas de la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronizar una Live Copy](#synchronize-live-copy) |
@@ -219,7 +221,7 @@ Puede deshacer todas las modificaciones locales y revertir el recurso al estado 
 
 ## Quitar relación activa {#remove-live-relationship}
 
-Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Separar. La Live Copy se convierte en un recurso independiente o en una carpeta después de separarse. Se muestra como un nuevo recurso en la interfaz de AEM, inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
+Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Separar. La Live Copy se convierte en un recurso independiente o en una carpeta después de separarse. Se muestra como un nuevo recurso en AEM interfaz, inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
 
 1. Seleccione una carpeta o un recurso de Live Copy. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Desasociar]** del cuadro de diálogo presentado.

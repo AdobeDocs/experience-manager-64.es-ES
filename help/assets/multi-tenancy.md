@@ -1,34 +1,36 @@
 ---
-title: Varias ofertas para colecciones, fragmentos y plantillas de fragmentos
-description: Segregar el contenido en el repositorio de CRX según la organización del cliente para evitar el acceso no autorizado.
+title: Varios alquileres para colecciones, fragmentos y plantillas de fragmentos
+description: Segregar contenido en el repositorio CRX en función de la organización del cliente para evitar el acceso no autorizado.
 contentOwner: AG
+feature: Colecciones
+role: Arquitecto,Administrador,Líder
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '234'
 ht-degree: 1%
 
 ---
 
 
-# Varias tenencias para colecciones, fragmentos y plantillas de fragmentos {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Varios alquileres para colecciones, fragmentos y plantillas de fragmentos {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
-La función de varios alquileres le permite segregar contenido en CRX en función del prefijo de organización y el ID de organización para proteger el contenido del acceso no autorizado por parte de usuarios de otras organizaciones.
+La función de inquilinos múltiples le permite segregar contenido en CRX en función del prefijo de organización y el ID de organización para proteger el contenido del acceso no autorizado por parte de los usuarios de otras organizaciones.
 
-Adobe Experience Manager (AEM) Assets almacena datos para cada organización en una ruta diferente. Cada ruta específica de la organización se identifica mediante el prefijo de la organización y el identificador de la organización.
-que se incluye en la ubicación tradicional en la que se almacenan distintos tipos de activos en CRX.
+Adobe Experience Manager (AEM) Assets almacena datos de cada organización en una ruta diferente. Cada ruta específica de la organización se identifica mediante el prefijo de organización y el ID de organización.
+que se incluye en la ubicación tradicional donde se almacenan distintos tipos de activos en CRX.
 
-Por ejemplo, si crea una carpeta con el nombre `Demo`, AEM recursos almacenará la carpeta de forma predeterminada en `../content/dam/Demo` ubicación en CRX. Con la función de varios alquileres activada, puede almacenar los datos en `../content/dam/<organization prefix>/<organization id>Demo`.
+Por ejemplo, si crea una carpeta denominada `Demo`, AEM assets almacena de forma predeterminada la carpeta en la ubicación `../content/dam/Demo` en CRX. Con la función de inquilino múltiple habilitada, puede almacenar los datos en `../content/dam/<organization prefix>/<organization id>Demo`.
 
-Por ejemplo, para los usuarios de Adobe Marketing Cloud de AEM Assets (On-demand) asignados a la organización `aodpremium`, puede utilizar la función de varios alquileres para configurar la siguiente ruta a `../content/dam/mac/aodpremiumDemo` y segregar el contenido. En este ejemplo `mac` es el prefijo de organización y `aodpremium` es el identificador de organización.
+Por ejemplo, para los usuarios de Adobe Marketing Cloud de AEM Assets (On-demand) asignados a la organización `aodpremium`, puede utilizar la función de varios inquilinos para configurar la siguiente ruta como `../content/dam/mac/aodpremiumDemo` y segregar el contenido. En este ejemplo, `mac` es el prefijo de organización y `aodpremium` es el ID de organización.
 
-En función de la organización y el ID del usuario, esta ruta de acceso cualificada se muestra en la interfaz de AEM Assets y en varios asistentes, incluidos los asistentes para la creación de movimiento y de fragmentos de código, con el fin de aplicar la agregación.
+En función de la organización y el ID del usuario, esta ruta cualificada se muestra en la interfaz de AEM Assets y en varios asistentes, incluidos los asistentes de creación Mover y Fragmentar para aplicar la agregación.
 
-La función de varios alquileres le permite segmentar los siguientes tipos de recursos y componentes:
+La función de inquilino múltiple permite segmentar los siguientes tipos de activos y componentes:
 
 * Colecciones
 * Colecciones públicas
-* Catálogos (incluido el asistente para Añadir/seleccionar página)
+* Catálogos (incluido el asistente Agregar/Seleccionar página )
 * Plantillas
-* Plantillas de fragmento
+* Plantillas de recorte
 * Lightbox

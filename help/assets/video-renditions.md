@@ -2,10 +2,12 @@
 title: Representaciones de vídeo
 description: Representaciones de vídeo
 contentOwner: AG
+feature: Vídeo,Representaciones
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -19,26 +21,26 @@ AEM Assets admite representaciones estáticas y dinámicas (representaciones con
 
 Las representaciones estáticas se generan de forma nativa utilizando FFMPEG (instalado y disponible en la ruta del sistema) y se almacenan en el repositorio de contenido.
 
-Las representaciones con codificación DM se almacenan en el servidor proxy y se sirven en tiempo de ejecución.
+Las representaciones con codificación DM se almacenan en el servidor proxy y se proporcionan durante la ejecución.
 
-Los recursos de AEM permiten reproducir estas representaciones en el lado del cliente.
+AEM recursos proporcionan compatibilidad con la reproducción de estas representaciones en el lado del cliente.
 
-Para vista de las representaciones de un recurso de vídeo concreto, abra su página de recursos y toque el icono Navegación global. A continuación, elija **[!UICONTROL Representaciones]** en la lista.
+Para ver las representaciones de un recurso de vídeo en particular, abra su página de recursos y pulse el icono Navegación global . A continuación, elija **[!UICONTROL Representaciones]** en la lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La lista de las representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]**.
+La lista de representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]**.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
 Para configurar el servidor proxy para representaciones con codificación DM, [configure los servicios de Dynamic Media Cloud.](config-dynamic.md)
 
-Para generar representaciones de vídeo con parámetros deseados, [cree un perfil de vídeo correspondiente](video-profiles.md).
+Para generar representaciones de vídeo con los parámetros deseados, [cree un perfil de vídeo correspondiente](video-profiles.md).
 
 Después de configurar el servidor proxy y crear perfiles de vídeo, puede incluir este ajuste preestablecido de vídeo en un perfil de procesamiento y aplicar el perfil de procesamiento a una carpeta.
 
 >[!NOTE]
 >
->La reproducción de audio no funciona con archivos OGG y WAV en Internet Explorer 11. Se muestra un error &quot;Origen no válido&quot; en la página de detalles del recurso para los recursos con la extensión OGG o WAV.
+>La reproducción de audio no funciona para archivos OGG y WAV en Internet Explorer 11. El error &quot;Fuente no válida&quot; aparece en la página de detalles del recurso para los recursos con la extensión OGG o WAV.
 >
->En MS Edge y iPad, los archivos OGG no se reproducen y generan un error de formato no admitido.
+>En MS Edge y iPad , los archivos OGG no se reproducen y generan un error de formato no admitido.

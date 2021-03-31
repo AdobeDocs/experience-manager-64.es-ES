@@ -1,46 +1,48 @@
 ---
-title: Asistencia Camera Raw
-description: Obtenga información sobre cómo activar la compatibilidad Camera Raw en Adobe Experience Manager Assets.
+title: compatibilidad Camera Raw
+description: Obtenga información sobre cómo habilitar la compatibilidad Camera Raw en Adobe Experience Manager Assets.
 contentOwner: AG
+feature: Herramientas para desarrolladores
+role: Administrador
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 1%
+source-wordcount: '407'
+ht-degree: 2%
 
 ---
 
 
 # Usar Camera Raw para procesar imágenes {#camera-raw-support}
 
-Puede activar la compatibilidad Camera Raw para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en Adobe Experience Manager Assets mediante el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
+Puede habilitar la compatibilidad Camera Raw para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en Adobe Experience Manager Assets mediante el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
 
 >[!NOTE]
 >
->La funcionalidad solo admite representaciones JPEG. Se admite en Windows de 64 bits, Mac OS y RHEL 7.x.
+>La funcionalidad solo admite representaciones JPEG. Es compatible con Windows de 64 bits, Mac OS y RHEL 7.x.
 
-Para habilitar la compatibilidad Camera Raw en Adobe Experience Manager Assets, siga estos pasos:
+Para activar la compatibilidad Camera Raw en Adobe Experience Manager Assets, siga estos pasos:
 
-1. Descargue el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de la distribución de software.
+1. Descargue el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) desde Distribución de software.
 
-1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**.
+1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo **[!UICONTROL DAM Update Asset]** .
 
-1. Abra el paso **[!UICONTROL Miniaturas de proceso]**.
+1. Abra el paso **[!UICONTROL Procesar miniaturas]**.
 
-1. Proporcione la siguiente configuración en la ficha **[!UICONTROL Miniaturas]**:
+1. Proporcione la siguiente configuración en la pestaña **[!UICONTROL Miniaturas]**:
 
    * **[!UICONTROL Miniaturas]**:  `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Tipos MIME omitidos]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
-   ![chlimage](assets/chlimage_1-334.png)
+   ![imagen](assets/chlimage_1-334.png)
 
-1. En la ficha **[!UICONTROL Imagen habilitada para Web]**, en el campo **[!UICONTROL Omitir Lista]**, especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. En la pestaña **[!UICONTROL Web Enabled Image]**, en el campo **[!UICONTROL Skip List]**, especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
-   ![chlimage](assets/chlimage_1-335.png)
+   ![imagen](assets/chlimage_1-335.png)
 
-1. Desde el panel lateral, agregue el paso **[!UICONTROL Controlador Camera Raw/DNG]** debajo del paso **[!UICONTROL Creación de miniaturas]**.
+1. En el panel lateral, añada el paso **[!UICONTROL Controlador Camera Raw/DNG]** debajo del paso **[!UICONTROL Creación de miniaturas]**.
 
-1. En el paso **[!UICONTROL Controlador Camera Raw/DNG]**, agregue la siguiente configuración en la ficha **[!UICONTROL Argumentos]**:
+1. En el paso **[!UICONTROL Controlador Camera Raw/DNG]**, añada la siguiente configuración en la pestaña **[!UICONTROL Argumentos]**:
 
    * **[!UICONTROL Tipos]** Mime:  `image/dng` y  `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
@@ -56,7 +58,7 @@ Para habilitar la compatibilidad Camera Raw en Adobe Experience Manager Assets, 
 
 >[!NOTE]
 >
->Asegúrese de que la configuración anterior es la misma que la configuración del **[!UICONTROL recurso de actualización DAM de muestra con la configuración del paso de control Camera Raw y DNG]**.
+>Asegúrese de que la configuración anterior es la misma que la configuración **[!UICONTROL Ejemplo de Activo de actualización de DAM con la configuración del paso de manejo Camera Raw y DNG]**.
 
 Ahora puede importar archivos sin procesar de cámara en AEM Assets. Después de instalar el paquete Camera Raw y configurar el flujo de trabajo necesario, aparece la opción **[!UICONTROL Ajuste de imagen]** en la lista de paneles laterales.
 
@@ -74,6 +76,6 @@ Después de guardar las ediciones en una imagen Camera Raw, se genera una nueva 
 
 La funcionalidad tiene las siguientes limitaciones:
 
-* La funcionalidad solo admite representaciones JPEG. Se admite en Windows de 64 bits, Mac OS y RHEL 7.x.
+* La funcionalidad solo admite representaciones JPEG. Es compatible con Windows de 64 bits, Mac OS y RHEL 7.x.
 * La reescritura de metadatos no es compatible con los formatos RAW y DNG.
-* La biblioteca Camera Raw tiene limitaciones en cuanto al total de píxeles que puede procesar a la vez. Actualmente, puede procesar un máximo de 65000 píxeles en el lado largo de un archivo o 512 MP, sea cual sea el criterio que se encuentre primero.
+* La biblioteca Camera Raw tiene limitaciones en torno al total de píxeles que puede procesar a la vez. Actualmente, puede procesar un máximo de 65000 píxeles en el lado largo de un archivo o 512 MP independientemente de los criterios que se encuentren primero.

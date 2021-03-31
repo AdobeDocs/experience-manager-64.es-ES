@@ -1,73 +1,75 @@
 ---
-title: Activación de perspectivas de recursos mediante DTM
-description: Obtenga información sobre cómo utilizar la administración dinámica de etiquetas (DTM) de Adobe para activar las perspectivas de recursos.
+title: Habilitar Asset Insights a través de DTM
+description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Asset Insights.
 contentOwner: AG
+feature: Información sobre Assets, Informes de Asset
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 
-# Activación de perspectivas de recursos mediante DTM {#enabling-asset-insights-through-dtm}
+# Habilitar Asset Insights a través de DTM {#enabling-asset-insights-through-dtm}
 
-La administración dinámica de etiquetas de Adobe es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo son compatibles y se proporcionan para imágenes.
+Adobe Dynamic Tag Management es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo se admiten y se proporcionan para imágenes.
 
 >[!CAUTION]
 >
->La DTM de Adobe está en desuso en favor de Adobe Experience Platform Launch y pronto alcanzará el [fin de vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda que [utilice Launch para obtener perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM está obsoleto en favor de Adobe Experience Platform Launch y pronto llegará al [fin de vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda utilizar [Launch para perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM:
+Siga estos pasos para habilitar Asset Insights mediante DTM:
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos > Configuración de perspectivas]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets > Configuración de perspectivas]**.
 1. [Configurar AEM instancia con el Cloud Service de DTM](../sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono de Perfil. Este paso no es necesario desde el punto de vista de Asset Insights, ya que la integración de AEM Sites con Asset Insights aún está en marcha.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de Asset Insights, ya que la integración de AEM Sites con Asset Insights aún está en funcionamiento.
 
-1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y seleccione una Compañía, según corresponda.
+1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y seleccione una empresa, según corresponda.
 1. Crear/abrir una propiedad web existente
 
-   * Seleccione la ficha **[!UICONTROL Propiedades web]** y, a continuación, toque o haga clic en **[!UICONTROL Añadir propiedad]**.
-   * Actualice los campos según corresponda y toque o haga clic en **[!UICONTROL Crear propiedad]** (consulte [documentación](https://helpx.adobe.com/experience-manager/using/dtm.html)).
+   * Seleccione la pestaña **[!UICONTROL Web Properties]** y, a continuación, pulse o haga clic en **[!UICONTROL Agregar propiedad]**.
+   * Actualice los campos según corresponda y pulse o haga clic en **[!UICONTROL Crear propiedad]** (consulte [documentación](https://helpx.adobe.com/experience-manager/using/dtm.html)).
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. En la ficha **[!UICONTROL Reglas]**, seleccione **[!UICONTROL Reglas de carga de página]** en el panel de navegación y toque o haga clic **[!UICONTROL Crear nueva regla]**.
+1. En la ficha **[!UICONTROL Reglas]**, seleccione **[!UICONTROL Reglas de carga de página]** en el panel de navegación y pulse o haga clic en **[!UICONTROL Crear nueva regla]**.
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL Etiquetas de Javascript/terceros]**. A continuación, toque o haga clic en **[!UICONTROL Añadir nueva secuencia de comandos]** en la ficha **[!UICONTROL HTML secuencial]** para abrir el cuadro de diálogo Secuencia de comandos.
+1. Expanda **[!UICONTROL Etiquetas de Javascript/terceros]**. A continuación, pulse o haga clic en **[!UICONTROL Agregar nuevo script]** en la pestaña **[!UICONTROL HTML secuencial]** para abrir el cuadro de diálogo Script.
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets]**.
 1. Toque o haga clic en **[!UICONTROL Rastreador de páginas de perspectivas]**, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` se ha eliminado. Se espera que esté disponible a través de la herramienta Adobe Analytics de la DTM.
-   >* La llamada a `assetAnalytics.dispatcher.init()` se elimina. Se espera que la función se llame una vez que la herramienta Adobe Analytics de la DTM termine de cargarse.
-   >* Según el lugar donde se aloja el rastreador de páginas de perspectivas de recursos (por ejemplo, AEM, CDN, etc.), el origen del origen de la secuencia de comandos puede requerir cambios.
-   >* Para el Rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de despachante.
+   >* `AppMeasurement.js` se ha eliminado. Se espera que esté disponible a través de la herramienta Adobe Analytics de DTM.
+   >* Se ha eliminado la llamada a `assetAnalytics.dispatcher.init()`. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de DTM termine de cargarse.
+   >* Según el lugar en el que esté alojado el rastreador de páginas de Asset Insights (por ejemplo, AEM, CDN, etc.), el origen de la secuencia de comandos puede requerir cambios.
+   >* Para el rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de Dispatcher.
 
 
-1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Haga clic en Información general en la propiedad web y haga clic en Añadir herramienta o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer el método de configuración en Automático.
+1. Abra [https://dtm.adobe.com](https://dtm.adobe.com). Haga clic en Información general en la propiedad web y haga clic en Agregar herramienta o abra una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer Método de configuración en Automático.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
    Seleccione los grupos de informes Ensayo/Producción, según corresponda.
 
-1. Expanda **[!UICONTROL Administración de biblioteca]** y asegúrese de que **[!UICONTROL Cargar biblioteca en]** esté configurada en **[!UICONTROL Principio de página]**.
+1. Expanda **[!UICONTROL Administración de biblioteca]** y asegúrese de que **[!UICONTROL Cargar biblioteca en]** esté configurado como **[!UICONTROL Principio de página]**.
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
 
-1. Expanda **[!UICONTROL Personalizar código de página]** y toque o haga clic en **[!UICONTROL Abrir editor]**.
+1. Expanda **[!UICONTROL Personalizar código de página]** y pulse o haga clic en **[!UICONTROL Abrir editor]**.
 
    ![chlimage_1-198](assets/chlimage_1-198.png)
 
-1. Pegue el siguiente código en la ventana:
+1. Pegue el siguiente código en la ventana :
 
    ```java
    var sObj;
@@ -106,12 +108,12 @@ Siga estos pasos para habilitar las perspectivas de recursos a través de la DTM
    ```
 
    * La regla de carga de página en la DTM solo incluye el código pagetracker.js. Los campos `assetAnalytics` se consideran anulaciones para los valores predeterminados. No son obligatorios de forma predeterminada.
-   * El código llama a `assetAnalytics.dispatcher.init()` después de asegurarse de que `_satellite.getToolsByType('sc')[0].getS()` se inicialice y que `assetAnalytics,dispatcher.init` esté disponible. Por lo tanto, puede omitir agregarla en el paso 11.
-   * Como se indica en los comentarios dentro del código Rastreador de páginas de perspectivas (**[!UICONTROL Herramientas > Recursos > Rastreador de páginas de perspectivas]**), cuando el Rastreador de páginas no crea un objeto `AppMeasurement`, los tres primeros argumentos (RSID, Servidor de seguimiento y Área de nombres de Visitantes) son irrelevantes. En su lugar, se pasan cadenas vacías para resaltar esto.
+   * El código llama a `assetAnalytics.dispatcher.init()` después de asegurarse de que `_satellite.getToolsByType('sc')[0].getS()` se inicializa y que `assetAnalytics,dispatcher.init` está disponible. Por lo tanto, puede omitir agregarla en el paso 11.
+   * Como se indica en los comentarios del código Rastreador de páginas de perspectivas (**[!UICONTROL Herramientas > Assets > Rastreador de páginas de perspectivas]**), cuando el rastreador de páginas no crea un objeto `AppMeasurement`, los tres primeros argumentos (RSID, Servidor de seguimiento y Área de nombres de visitantes) son irrelevantes. Se pasan cadenas vacías en su lugar para resaltarlo.
 
-      Los argumentos restantes corresponden a lo que se configura en la página Configuración de perspectivas (**[!UICONTROL Herramientas > Recursos > Configuración de perspectivas]**).
+      Los argumentos restantes corresponden a lo que está configurado en la página Configuración de perspectivas (**[!UICONTROL Tools > Assets > Insights Configuration]**).
 
-   * El objeto AppMeasurement se recupera consultando `satelliteLib` para todos los motores de SiteCatalyst disponibles. Si hay varias etiquetas configuradas, cambie el índice del selector de matrices de forma adecuada. Las entradas de la matriz se ordenan según las herramientas de SiteCatalyst disponibles en la interfaz de la DTM.
+   * El objeto AppMeasurement se recupera consultando `satelliteLib` para todos los motores de SiteCatalyst disponibles. Si hay varias etiquetas configuradas, cambie el índice del selector de matriz de la forma adecuada. Las entradas de la matriz se ordenan según las herramientas de SiteCatalyst disponibles en la interfaz de DTM.
 
 1. Guarde y cierre la ventana Editor de código y, a continuación, guarde los cambios en la configuración de la herramienta.
-1. En la ficha **[!UICONTROL Aprobaciones]**, apruebe ambas aprobaciones pendientes. La etiqueta DTM está lista para insertarla en la página web. Para obtener más información sobre cómo insertar etiquetas de DTM en páginas web, consulte [Integración de DTM en plantillas de página personalizadas](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. En la pestaña **[!UICONTROL Approvals]**, apruebe ambas aprobaciones pendientes. La etiqueta DTM está lista para su inserción en la página web. Para obtener más información sobre cómo insertar etiquetas DTM en páginas web, consulte [Integración de DTM en plantillas de página personalizadas](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).

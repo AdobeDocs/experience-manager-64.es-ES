@@ -1,22 +1,24 @@
 ---
 title: Configurar un escenario estándar con Autodesk Maya y Mental Ray
 seo-title: Configurar un escenario estándar con Autodesk Maya y Mental Ray
-description: Cómo configurar un escenario estándar con Autodesk Maya y Mental Ray
-seo-description: Cómo configurar un escenario estándar con Autodesk Maya y Mental Ray
+description: Configuración de un escenario estándar con Autodesk Maya y Mental Ray
+seo-description: Configuración de un escenario estándar con Autodesk Maya y Mental Ray
 uuid: 3895fda6-29ae-46f5-b2bc-abc989808648
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: Recursos 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 85%
+source-wordcount: '433'
+ht-degree: 84%
 
 ---
-
 
 # Configurar un escenario estándar con Autodesk Maya y Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -43,15 +45,15 @@ ht-degree: 85%
 
    Configure las opciones de procesamiento con las sugerencias siguientes:
 
-   * **** Comúnmente
+   * **** Ficha Común
 
-      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las cámaras procesables.
+      Desmarque la casilla **[!UICONTROL Canal alfa (máscara)]** para todas las cámaras procesables.
 
    * **[!UICONTROL Ficha Calidad]**
 
-      * **[!UICONTROL Calidad total o]** `- 0.5` inferior
-      * **[!UICONTROL Modo]**  de difusión indirecta (GI):  `Final Gather`
-      * **[!UICONTROL Tamaño]**  del filtro-  `2.0`,  `2.0`
+      * **[!UICONTROL Calidad total]** `- 0.5` o inferior
+      * **[!UICONTROL Modo de difusión indirecta (GI)]** :  `Final Gather`
+      * **[!UICONTROL Tamaño]**  del filtro:  `2.0`,  `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si es necesario, perfeccione las luces, procese las configuraciones o realice ambas acciones para conseguir los resultados que desea.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.
@@ -66,6 +68,5 @@ ht-degree: 85%
 
    Si Autodesk® Maya® no se configura en el servidor de AEM, exporte un FBX de Maya y cárguelo en AEM.
 
-1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de etapa]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
+1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de escenario]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
 1. Abra un recurso 3D, seleccione el nuevo escenario y verifique que su vista previa y procesamiento sean los esperados.
-

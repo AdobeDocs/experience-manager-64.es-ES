@@ -1,22 +1,24 @@
 ---
 title: Configuración de un escenario de IBL con Autodesk Maya y Mental Ray
 seo-title: Configuración de un escenario de IBL con Autodesk Maya y Mental Ray
-description: Cómo configurar un escenario IBL con Autodesk Maya y Mental Ray
-seo-description: Cómo configurar un escenario IBL con Autodesk Maya y Mental Ray
+description: Configuración de un escenario de IBL con Autodesk Maya y Mental Ray
+seo-description: Configuración de un escenario de IBL con Autodesk Maya y Mental Ray
 uuid: 353ff561-0d30-4d62-8cad-68890c883c92
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: Recursos 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 73%
 
 ---
-
 
 # Configuración de un escenario de IBL con Autodesk Maya y Mental Ray {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
@@ -25,9 +27,9 @@ ht-degree: 73%
 1. Cree una referencia (temporal) a un modelo representativo. De este modo, se facilita la evaluación de la iluminación, la configuración de las cámaras y la configuración del procesador.
 1. Establezca la iluminación basada en imágenes.
 
-   1. En **[!UICONTROL Configuración de procesamiento]**, seleccione **[!UICONTROL Representar con: mental ray]** y abra la ficha Escena.
-   1. Abra el acordeón **[!UICONTROL Entorno de procesamiento]** y haga clic en **[!UICONTROL Representar para crear iluminación basada en imagen]**.
-   1. Haga clic en el icono de cuadro que tiene una flecha derecha en el lado izquierdo del cuadro para seleccionar el nodo IBL `mentalRayIblShape1` y luego salir de **[!UICONTROL Configuración de procesamiento]**.
+   1. En **[!UICONTROL Configuración de procesamiento]**, seleccione **[!UICONTROL Representar mediante: mental ray]** y abra la ficha Escena.
+   1. Abra el acordeón **[!UICONTROL Render Environment]** y haga clic en **[!UICONTROL Render Create Image Based Lighting]**.
+   1. Haga clic en el icono de cuadro que tiene una flecha derecha en el lado izquierdo del cuadro para seleccionar el nodo IBL `mentalRayIblShape1` y luego salga **[!UICONTROL Configuración de procesamiento]**.
    1. En el **[!UICONTROL Editor de atributos]**, seleccione el nodo de transformación `mentalRayIbl1` y, a continuación, cambie el nombre del nodo de transformación a `AdobeIbl`.
    1. Establezca la escala del nodo para hacer que la esfera del entorno sea significativamente más grande que el objeto 3D de mayor tamaño que se mostrará con este escenario (por ejemplo, `10000,10000,10000`).
    1. Seleccione el nodo `AdobeIblShape` y configúrelo como sigue:
@@ -49,17 +51,17 @@ ht-degree: 73%
 
 1. Configure el procesamiento con Mental Ray.
 
-   Configure la **[!UICONTROL Configuración de procesamiento]** con las siguientes sugerencias.
+   Configure los **[!UICONTROL Ajustes de procesamiento]** con las siguientes sugerencias.
 
-   * **** Comúnmente
+   * **** Ficha Común
 
-      Anule la selección de la casilla de verificación **[!UICONTROL canal alfa (máscara)]** para todas las **[!UICONTROL Cámaras procesables]**.
+      Desmarque la casilla **[!UICONTROL Canal alfa (máscara)]** para todas las **[!UICONTROL Cámaras procesables]**.
 
    * **[!UICONTROL Ficha Calidad]**
 
       * **Calidad global**: `0.5` o menos
-      * **Modo**  de difusión indirecta (GI):  `Final Gather`
-      * **Tamaño**  del filtro-  `2.0`,  `2.0`
+      * **Modo de difusión indirecta (GI)** :  `Final Gather`
+      * **Tamaño**  del filtro:  `2.0`,  `2.0`
    * Procese la escena con los tamaños de imagen típicos que tenga previsto utilizar. Si fuera necesario, ajuste las luces, la configuración de procesamiento o ambas opciones para conseguir los resultados deseados.
 
       Tenga en cuenta que el procesamiento con Mental Ray, mediante la iluminación basada en imagen es muy lento y consume muchos recursos de la CPU. Adobe recomienda que configure las opciones de menor calidad que tengan capacidad para producir la calidad de procesamiento deseada.
@@ -79,7 +81,6 @@ ht-degree: 73%
 
    Es posible que AEM 3D no pueda detectar la imagen de IBL configurada en el escenario. En estas situaciones, debe resolver manualmente las dependencias que faltan. Puede asignar la misma imagen IBL PTIFF cargada anteriormente para cada una de las dependencias que faltan. O bien, puede asignar diferentes imágenes para controlar aún más los efectos de IBL. Después de resolver las dependencias, asegúrese de pulsar en **[!UICONTROL Guardar]** para iniciar el reprocesamiento. 
 
-1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de etapa]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
+1. Abra Propiedades del recurso en AEM. Establezca **[!UICONTROL Título]** en una cadena adecuada que aparecerá en la lista desplegable **[!UICONTROL Selector de escenario]**. Compruebe que el valor **[!UICONTROL Clase]** esté establecido en **[!UICONTROL Escenario 3D]**. Guarde y salga.
 
 1. Abra un recurso 3D, seleccione el nuevo escenario y verifique que su vista previa y procesamiento sean los esperados.
-

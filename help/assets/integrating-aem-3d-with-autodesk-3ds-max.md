@@ -1,30 +1,32 @@
 ---
-title: Integración de AEM 3D con Autodesk 3ds Max
-seo-title: Integración de AEM 3D con AutoDesk 3ds Max
-description: Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir la compatibilidad con archivos 3ds Max nativos (.MAX). El procesamiento mediante 3ds Max no se admite en este momento.
-seo-description: Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir la compatibilidad con archivos 3ds Max nativos (.MAX). El procesamiento mediante 3ds Max no se admite en este momento.
+title: Integración AEM 3D con Autodesk 3ds Max
+seo-title: Integración AEM 3D con AutoDesk 3ds Max
+description: Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir el soporte para archivos 3ds Max nativos (.MAX). En este momento no se admite el procesamiento mediante 3ds Max.
+seo-description: Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir el soporte para archivos 3ds Max nativos (.MAX). En este momento no se admite el procesamiento mediante 3ds Max.
 uuid: 6c160ad3-6b6f-43f5-9e97-5b5d962a8d1a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
+exl-id: 2edecd53-0a2d-44bb-968a-d988c780e142
+feature: Recursos 3D
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
-
-# Integración de AEM 3D con Autodesk 3ds Max {#integrating-aem-d-with-autodesk-ds-max}
+# Integración AEM 3D con Autodesk 3ds Max {#integrating-aem-d-with-autodesk-ds-max}
 
 >[!NOTE]
 >
->Esta tarea es opcional y se aplica solo a Windows.
+>Esta tarea es opcional y solo pertenece a Windows.
 
-Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir la compatibilidad con archivos 3ds Max nativos (.MAX). El procesamiento mediante 3ds Max no se admite en este momento.
+Opcionalmente, puede integrar AEM 3D con el software Autodesk 3ds Max para permitir el soporte para archivos 3ds Max nativos (.MAX). En este momento no se admite el procesamiento mediante 3ds Max.
 
 Consulte [Configuración avanzada](advanced-config-3d.md).
 
@@ -34,7 +36,7 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
 1. Instale el software Autodesk 3ds Max en los mismos servidores donde están instalados los nodos de AEM Author.
 
-   Después de la instalación, compruebe que puede abrir y utilizar Maya y que no hay problemas con las licencias.
+   Después de la instalación, compruebe que puede abrir y utilizar Maya y que no hay problemas de licencia.
 
    >[!NOTE]
    >
@@ -44,37 +46,37 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
    Busque `FBXMAX.DLU` y verifique que su **[!UICONTROL Estado]** esté **[!UICONTROL cargado]**.
 
-   Cierre el cuadro de diálogo **[!UICONTROL Administrador de complementos]** y 3ds Max.
+   Cierre el cuadro de diálogo **[!UICONTROL Plug-In Manager]** y 3ds Max.
 
 1. Actualice la secuencia de comandos de conversión.
 
-   AEM utiliza una secuencia de comandos de línea de comandos para invocar la utilidad de línea de comandos 3ds Max `3dsmaxcmd.exe`. Debe editar esta secuencia de comandos si ha instalado una versión distinta a 3ds Max 2016, si ha instalado 3ds Max en una ubicación no estándar o si ha instalado AEM en una partición o unidad diferente.
+   AEM utiliza un script de línea de comandos para invocar la utilidad de línea de comandos Max 3ds `3dsmaxcmd.exe`. Debe editar este script si ha instalado una versión distinta a 3ds Max 2016, si ha instalado 3ds Max en una ubicación no estándar o si ha instalado AEM en una partición o unidad diferente.
 
    1. Abra el CRXDE Lite y vaya a `/libs/settings/dam/v3D/scripts/max`.
-   1. Haga clic con el doble `export-fbx.bat` para abrirlo.
+   1. Haga doble clic en `export-fbx.bat` para abrirlo.
    1. Edite la primera línea de la secuencia de comandos según sea necesario para reflejar la ubicación de la utilidad `3dsmaxcmd.exe`. Por ejemplo, si se utiliza 3ds Max 2017 y AEM está instalado en una unidad de disco diferente:
 
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
 
-1. Cerca de la esquina superior izquierda de la página CRXDE Lite, toque **[!UICONTROL Guardar todo]**.
+1. Cerca de la esquina superior izquierda de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]**.
 
-   Cerca de la esquina superior izquierda de la página CRXDE Lite, toque **[!UICONTROL Guardar todo]**.
+   Cerca de la esquina superior izquierda de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]**.
 
-1. Quite la carpeta de trabajo (solo es necesario si se ha intentado ingestar un archivo .MAX).
+1. Elimine la carpeta de trabajo (solo es necesario si se realizó un intento anterior de ingerir un archivo .MAX).
 
-   1. En CRXDE Lite, vaya a `/libs/settings/dam/v3D/Paths/maxWorkPath`. De forma predeterminada, el valor de esta configuración es `./MaxWork`, que es relativo a la carpeta raíz de la instalación de AEM.
+   1. En el CRXDE Lite, vaya a `/libs/settings/dam/v3D/Paths/maxWorkPath`. De forma predeterminada, el valor de esta configuración es `./MaxWork`, que es relativo a la carpeta raíz de la instalación de AEM.
    1. Inicie sesión en el propio servidor y utilice el Explorador de archivos para desplazarse a la carpeta raíz de la instalación de AEM.
-   1. Elimine la carpeta **[!UICONTROL MaxWork]**, incluido su contenido completo, si existe.
+   1. Elimine la carpeta **[!UICONTROL MaxWork]**, incluido todo su contenido, si existe.
 
       La carpeta se vuelve a crear automáticamente la próxima vez que se ingrese un archivo .MAX.
 
-1. Habilite 3ds Max para la ingestión haciendo lo siguiente:
+1. Habilite 3ds Max para ingesta haciendo lo siguiente:
 
-   1. En CRXDE Lite, navegue hasta `/libs/settings/dam/v3D/assetTypes/max` y establezca la propiedad **[!UICONTROL Enabled]** en true:
+   1. En el CRXDE Lite, vaya a `/libs/settings/dam/v3D/assetTypes/max` y establezca la propiedad **[!UICONTROL Enabled]** en true:
 
    ![image2018-6-22_13-50-50](assets/image2018-6-22_13-50-50.png)
 
-1. Cerca de la esquina superior izquierda de la página CRXDE Lite, toque **[!UICONTROL Guardar todo]**.
+1. Cerca de la esquina superior izquierda de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]**.
 
 ## Prueba de la integración de AEM 3D con Autodesk 3ds Max {#testing-the-integration-of-aem-d-with-autodesk-ds-max}
 
@@ -82,11 +84,10 @@ Consulte también [Integración de AEM 3D con AutoDesk Maya](integrate-maya-with
 
    Tenga en cuenta que sample-3D-content.zip se ha descargado anteriormente para validar la funcionalidad 3D básica.
 
-1. Vuelva a la vista **[!UICONTROL Card]** y observe los letreros de mensaje que se muestran en los recursos cargados.
+1. Vuelva a la vista **[!UICONTROL Card]** y observe los banners de mensaje que se muestran en los recursos cargados.
 
-   La pancarta Formato de conversión se muestra mientras 3ds Max está convirtiendo el formato nativo 3ds Max a .FBX.
+   El banner de formato de conversión se muestra mientras 3ds Max está convirtiendo el formato nativo 3ds Max a .FBX.
 
 1. Una vez finalizado el procesamiento, abra `logo-sphere.max` en la vista **[!UICONTROL Detail]**.
 
-   La experiencia de Previsualización es la misma que con `logo_sphere.fbx`.
-
+   La experiencia de vista previa es la misma que con `logo_sphere.fbx`.

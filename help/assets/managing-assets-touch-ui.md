@@ -4,15 +4,15 @@ description: Obtenga información sobre las distintas tareas de administración 
 contentOwner: AG
 mini-toc-levels: 1
 feature: Administración de recursos,Buscar,Representaciones,Colaboración
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
 workflow-type: tm+mt
-source-wordcount: '10046'
+source-wordcount: '10083'
 ht-degree: 2%
 
 ---
-
 
 # Administrar los recursos digitales {#managing-assets-with-the-touch-optimized-ui}
 
@@ -571,48 +571,33 @@ Necesita permisos de eliminación en dam/asset para poder eliminar un recurso. S
 
 Consulte [Descargar recursos de AEM](download-assets-from-aem.md)
 
-## Publicar recursos {#publishing-assets}
+## Publicar y cancelar la publicación de recursos {#publish-assets}
 
-Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
+Después de cargar, procesar o editar los recursos en [!DNL Experience Manager] autor, publica el recurso en el servidor de publicación. La publicación hace que el recurso esté disponible públicamente. La acción de cancelación de publicación eliminó el recurso del servidor de publicación, pero no del servidor de creación.
 
-Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
+Para obtener información específica de [!DNL Dynamic Media], consulte [publicación [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md).
 
-Para obtener más información específica de Dynamic Media, consulte [Publicación de Dynamic Media Assets](publishing-dynamicmedia-assets.md).
+1. Vaya a la ubicación del recurso o de la carpeta de recursos que desea publicar o que desea eliminar del entorno de publicación (cancelar la publicación).
 
-**Para publicar recursos**:
+1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en la opción **[!UICONTROL Administrar publicación]** ![administrar publicación](assets/do-not-localize/globe-publication.png) en la barra de herramientas. Como alternativa, para publicar rápidamente, seleccione la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas. Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
 
-1. Navegue a la ubicación de los recursos o la carpeta que desee publicar
+1. Seleccione la opción **[!UICONTROL Publicar]** o **[!UICONTROL Cancelar publicación]** según sea necesario.
 
-1. Seleccione la acción rápida **[!UICONTROL Publicar]** en la tarjeta de recursos o seleccione el recurso y pulse el icono **[!UICONTROL Publicación rápida]** en la barra de herramientas.
-1. Si el recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que no se han publicado o que se han modificado desde la última vez que se publicaron o cancelaron la publicación. Elija las referencias que desea publicar.
+   ![Cancelar publicación](assets/unpublish_action.png)
+   *Figura: Publicar y cancelar la publicación y la opción de programación.*
 
-   ![imagen_1-21](assets/chlimage_1-21.png)
+1. Seleccione **[!UICONTROL Now]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Later]** para programar la acción. Seleccione una fecha y una hora si elige la opción **[!UICONTROL Later]** . Haga clic en **[!UICONTROL Siguiente]**. 
 
-1. Pulse **[!UICONTROL Publicar]** para confirmar la activación de los recursos.
+1. Al publicar, si un recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que se han cancelado la publicación o se han modificado desde la última publicación. Elija las referencias que desea publicar.
 
-## Cancelar la publicación de recursos {#unpublishing-assets}
+1. Al cancelar la publicación, si un recurso hace referencia a otros recursos, elija las referencias que desea cancelar la publicación. Haga clic en **[!UICONTROL Cancelar publicación]**. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Cancelar]** para detener la acción o haga clic en **[!UICONTROL Cancelar publicación]** para confirmar que los recursos se cancelarán en la fecha especificada.
 
-Al cancelar la publicación de un recurso complejo, cancele la publicación del recurso únicamente. Evite cancelar la publicación de las referencias, ya que otros recursos publicados pueden hacer referencia a ellas.
+Comprenda las siguientes limitaciones y sugerencias relacionadas con la publicación o cancelación de la publicación de recursos o carpetas:
 
-**Para cancelar la publicación de recursos**:
-
-1. Vaya a la ubicación del recurso o la carpeta de recursos que desea eliminar del entorno de publicación (cancelar la publicación).
-
-1. Seleccione el recurso o la carpeta que desea cancelar la publicación y pulse el icono **[!UICONTROL Administrar publicación]** en la barra de herramientas.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Seleccione la acción **[!UICONTROL Cancelar publicación]** de la lista.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Para cancelar la publicación del recurso más adelante, seleccione **[!UICONTROL Cancelar publicación posteriormente]** y, a continuación, seleccione una fecha para cancelar la publicación del recurso.
-1. Programe una fecha para que el recurso no esté disponible en el entorno de publicación.
-1. Si el recurso hace referencia a otros recursos, elija las referencias que desea cancelar la publicación. Toque **[!UICONTROL Cancelar publicación]**.
-1. En el cuadro de diálogo de confirmación, realice una de las siguientes acciones:
-
-   * Toque **[!UICONTROL Cancelar]** para detener la acción
-   * Pulse **[!UICONTROL Cancelar publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
+* La opción [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
+* Al cancelar la publicación de un recurso complejo, cancela la publicación únicamente del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
+* Las carpetas vacías no se publican.
+* Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
 
 ## Crear un grupo de usuarios cerrado {#closed-user-group}
 
@@ -766,7 +751,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * En la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![imagen_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 

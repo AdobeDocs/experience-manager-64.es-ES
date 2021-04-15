@@ -2,16 +2,16 @@
 title: Prácticas recomendadas para la integración de AEM y Creative Cloud
 description: Prácticas recomendadas para integrar una implementación de AEM con Adobe Creative Cloud con el fin de optimizar los flujos de trabajo de transferencia de recursos y lograr la máxima eficacia
 contentOwner: AG
-feature: Colaboración,Adobe Asset Link,Aplicación de escritorio de Experience Manager
-role: Profesional empresarial, administrador
+feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
+role: Business Practitioner,Administrator
+exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3578'
 ht-degree: 16%
 
 ---
-
 
 # Prácticas recomendadas para la integración de AEM y Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 

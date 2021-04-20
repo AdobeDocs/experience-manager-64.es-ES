@@ -2,7 +2,7 @@
 title: Configurar restricciones de carga de recursos
 description: Obtenga información sobre cómo configurar Adobe Experience Manager (AEM) Assets para restringir el tipo de recursos (archivos) que los usuarios pueden cargar.
 contentOwner: AG
-feature: Cargar,Ingesta de activos,Administración de activos
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

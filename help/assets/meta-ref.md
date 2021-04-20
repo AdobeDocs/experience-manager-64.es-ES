@@ -2,8 +2,8 @@
 title: Referencia de esquemas de metadatos
 description: 'Obtenga información sobre las convenciones estándar para describir metadatos de recursos, incluidos Dublin Core, IPTC y otros esquemas de metadatos. '
 contentOwner: AG
-feature: Metadatos
-role: Profesional empresarial, administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

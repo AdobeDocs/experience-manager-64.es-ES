@@ -3,8 +3,8 @@ title: Administrar colecciones de recursos
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Colecciones
-role: Profesional empresarial
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

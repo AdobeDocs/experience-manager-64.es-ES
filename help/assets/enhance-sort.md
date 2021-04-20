@@ -2,8 +2,8 @@
 title: Ordenación mejorada de los recursos en AEM
 description: Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 contentOwner: AG
-feature: 'Búsqueda  '
-role: Profesional empresarial
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

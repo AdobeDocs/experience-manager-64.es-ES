@@ -2,7 +2,7 @@
 title: Mantenimiento del registro de auditoría en AEM 6
 seo-title: Mantenimiento del registro de auditoría en AEM 6
 description: Obtenga información sobre el mantenimiento del registro de auditoría en AEM.
-feature: Operaciones
+feature: Operations
 seo-description: Obtenga información sobre el mantenimiento del registro de auditoría en AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

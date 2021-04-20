@@ -8,7 +8,7 @@ user-guide-title: Guía de Adobe Experience Manager 6.4 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 feature-set: Experience Manager Forms
-role: Profesional empresarial
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

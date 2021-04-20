@@ -2,8 +2,8 @@
 title: Reescritura XMP en representaciones
 description: Descubra cómo la función XMP reescritura propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas de ellas.
 contentOwner: AG
-feature: Metadatos
-role: Profesional empresarial, administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

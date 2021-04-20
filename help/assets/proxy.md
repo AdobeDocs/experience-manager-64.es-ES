@@ -2,8 +2,8 @@
 title: Desarrollo de proxy de recursos
 description: 'Un proxy es una instancia AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones compatibles, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
 contentOwner: AG
-feature: Procesamiento de recursos
-role: Administrador, Arquitecto
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

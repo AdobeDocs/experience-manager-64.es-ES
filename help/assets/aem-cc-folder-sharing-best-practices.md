@@ -2,8 +2,8 @@
 title: Uso compartido de carpetas de AEM Assets con Creative Cloud
 description: Configuración y prácticas recomendadas para permitir a los usuarios de Adobe Experience Manager Assets intercambiar carpetas de recursos con usuarios de Adobe Creative Cloud.
 contentOwner: AG
-feature: Colaboración
-role: Profesional empresarial, administrador
+feature: Collaboration
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

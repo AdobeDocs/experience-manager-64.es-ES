@@ -2,8 +2,8 @@
 title: Usar la biblioteca de medios para la administración básica de recursos digitales
 description: '[!DNL Experience Manager Assets] y Biblioteca de medios para la administración de recursos.'
 contentOwner: AG
-feature: Administración de activos
-role: Arquitecto,Encabezado
+feature: Asset Management
+role: Architect,Leader
 translation-type: tm+mt
 source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt

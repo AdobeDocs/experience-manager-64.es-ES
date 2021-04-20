@@ -2,8 +2,8 @@
 title: Integración de recursos con el flujo de actividad
 description: Describe las capacidades de grabación de AEM y cómo configurar AEM para registrar eventos específicos.
 contentOwner: AG
-feature: Administración de activos
-role: Desarrollador
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

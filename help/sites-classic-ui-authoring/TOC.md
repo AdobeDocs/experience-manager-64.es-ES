@@ -7,8 +7,8 @@ user-guide-title: Guía del usuario sobre la creación de IU de AEM 6.4 Classic
 breadcrumb-title: Guía de creación de IU clásica
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature-set: Experience Manager Sites
-feature: 'Creación  '
-role: Profesional empresarial
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

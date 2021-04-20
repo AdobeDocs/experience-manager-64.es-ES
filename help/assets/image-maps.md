@@ -2,8 +2,8 @@
 title: Agregar mapas de imagen
 description: Aprenda a añadir mapas de imagen hipervinculados a los recursos de imagen.
 contentOwner: AG
-feature: Administración de activos
-role: Profesional empresarial, administrador
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Ampliación de la búsqueda de recursos
 description: Amplíe las capacidades de búsqueda de AEM Assets más allá de las búsquedas predeterminadas de recursos por cadenas.
 contentOwner: AG
-feature: 'Búsqueda  '
-role: Desarrollador
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

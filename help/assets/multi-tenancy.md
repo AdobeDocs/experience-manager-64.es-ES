@@ -2,8 +2,8 @@
 title: Varios alquileres para colecciones, fragmentos y plantillas de fragmentos
 description: Segregar contenido en el repositorio CRX en función de la organización del cliente para evitar el acceso no autorizado.
 contentOwner: AG
-feature: Colecciones
-role: Arquitecto,Administrador,Líder
+feature: Collections
+role: Architect,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

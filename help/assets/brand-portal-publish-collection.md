@@ -3,7 +3,7 @@ title: Publicar colecciones en Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de colecciones en Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Profesional empresarial
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

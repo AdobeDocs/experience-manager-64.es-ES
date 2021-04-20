@@ -2,8 +2,8 @@
 title: Procese activos para llevar a cabo procesos del negocio, realizar auditorías, lograr cumplimiento de normas y mantener la sanidad básica
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
-feature: Flujo de trabajo,Representaciones
-role: Profesional empresarial, administrador
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

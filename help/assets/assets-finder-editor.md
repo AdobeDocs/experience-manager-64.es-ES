@@ -2,8 +2,8 @@
 title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del Editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
-feature: Herramientas para desarrolladores,Administración de recursos
-role: Profesional empresarial, administrador
+feature: Developer Tools,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

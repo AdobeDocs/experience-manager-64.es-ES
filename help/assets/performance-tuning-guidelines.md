@@ -2,8 +2,8 @@
 title: Guía de ajuste del rendimiento de los activos
 description: Áreas de enfoque clave en AEM configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de AEM Assets.
 contentOwner: AG
-feature: Administración de activos
-role: Arquitecto,Administrador
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

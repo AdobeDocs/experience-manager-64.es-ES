@@ -2,7 +2,7 @@
 title: Administración de usuarios y seguridad
 seo-title: Administración de usuarios y seguridad
 description: Obtenga información sobre la Administración de usuarios y la seguridad en AEM.
-feature: Seguridad
+feature: Security
 seo-description: Obtenga información sobre la Administración de usuarios y la seguridad en AEM.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service

@@ -7,8 +7,8 @@ user-guide-title: Guía del usuario de creación de AEM 6.4
 breadcrumb-title: Guía de creación
 user-guide-description: Aprenda conceptos clave para crear contenido en AEM.
 feature-set: Experience Manager Sites
-feature: 'Creación  '
-role: Profesional empresarial
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

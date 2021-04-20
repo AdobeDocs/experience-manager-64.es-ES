@@ -2,8 +2,8 @@
 title: Búsqueda de texto completo de GQL
 description: Explore la función de búsqueda de texto completo de GQL en AEM Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 contentOwner: AG
-feature: Buscar,Metadatos
-role: Profesional empresarial
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: Administrar los recursos digitales mediante AEM Assets
 description: Obtenga información sobre las distintas tareas de administración y edición de recursos que puede realizar mediante la interfaz de usuario táctil de AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Administración de recursos,Buscar,Representaciones,Colaboración
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

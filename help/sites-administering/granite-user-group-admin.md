@@ -2,7 +2,7 @@
 title: 'Operaciones de Granite: administración de usuarios y grupos'
 seo-title: 'Operaciones de Granite: administración de usuarios y grupos'
 description: Obtenga información sobre la administración de usuarios y grupos de Granite.
-feature: Seguridad
+feature: Security
 seo-description: Obtenga información sobre la administración de usuarios y grupos de Granite.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino

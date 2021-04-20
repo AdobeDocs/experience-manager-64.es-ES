@@ -2,8 +2,8 @@
 title: Utilizar perfiles de metadatos para aplicar metadatos predeterminados a todos los recursos de una carpeta
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
-feature: Metadatos
-role: Profesional empresarial, administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

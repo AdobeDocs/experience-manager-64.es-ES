@@ -2,8 +2,8 @@
 title: Representaciones de vídeo
 description: Representaciones de vídeo
 contentOwner: AG
-feature: Vídeo,Representaciones
-role: Profesional empresarial
+feature: Video,Renditions
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

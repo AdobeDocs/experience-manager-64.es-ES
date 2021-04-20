@@ -2,8 +2,8 @@
 title: Configure operaciones asincrónicas en [!DNL Adobe Experience Manager].
 description: Complete asincrónicamente algunas tareas que requieren muchos recursos para optimizar el rendimiento en [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Administración de activos
-role: Profesional empresarial
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

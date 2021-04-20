@@ -2,8 +2,8 @@
 title: Migrar recursos a Adobe Experience Manager Assets de forma masiva
 description: Cómo introducir recursos en AEM, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
-feature: Migración,Representaciones,Administración de recursos
-role: Arquitecto,Administrador
+feature: Migration,Renditions,Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

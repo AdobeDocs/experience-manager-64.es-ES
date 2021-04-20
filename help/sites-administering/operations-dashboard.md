@@ -2,7 +2,7 @@
 title: Tablero de operaciones
 seo-title: Tablero de operaciones
 description: Aprenda a utilizar el panel de operaciones.
-feature: Operaciones
+feature: Operations
 seo-description: Aprenda a utilizar el panel de operaciones.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

@@ -2,8 +2,8 @@
 title: Instalación y configuración de ImageMagick para trabajar con AEM Assets
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, configurar el paso del proceso de la línea de comandos y utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
-feature: Representaciones,Herramientas para desarrolladores
-role: Administrador
+feature: Renditions,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

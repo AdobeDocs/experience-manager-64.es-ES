@@ -2,7 +2,7 @@
 title: Administrar  [!DNL Adobe Stock] recursos en [!DNL Adobe Experience Manager Assets].
 description: Busque, recupere, conceda licencias y administre  [!DNL Adobe Stock] recursos desde  [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
-feature: Buscar,Adobe Stock
+feature: Search,Adobe Stock
 role: Business Practitioner,Administrator
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
 translation-type: tm+mt

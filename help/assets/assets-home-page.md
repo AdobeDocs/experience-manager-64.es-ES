@@ -2,8 +2,8 @@
 title: Experiencia de la página principal de AEM Assets
 description: Personalice la página de inicio de AEM Assets para disfrutar de una experiencia de pantalla de bienvenida completa, que incluye una instantánea de las actividades recientes relacionadas con los recursos.
 contentOwner: AG
-feature: Herramientas para desarrolladores,Administración de recursos
-role: Administrador, profesional empresarial
+feature: Developer Tools,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

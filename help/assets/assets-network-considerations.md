@@ -2,8 +2,8 @@
 title: Consideraciones de la red de Assets
 description: Analiza las consideraciones de red al diseñar una implementación de AEM Assets.
 contentOwner: AG
-feature: Herramientas para desarrolladores
-role: Arquitecto,Administrador
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

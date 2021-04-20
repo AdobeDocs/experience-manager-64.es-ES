@@ -2,8 +2,8 @@
 title: Configuración de Asset Insights
 description: Obtenga información sobre cómo configurar Asset Insights en AEM Assets.
 contentOwner: AG
-feature: Información sobre Assets, Informes de Asset
-role: Profesional empresarial, administrador
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

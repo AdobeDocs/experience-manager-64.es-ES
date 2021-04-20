@@ -2,8 +2,8 @@
 title: Personalización y ampliación de recursos
 description: Conozca las formas en que puede personalizar y ampliar Asset Share y Asset Editor, que presentan a los usuarios una interfaz y un conjunto de funciones específicos.
 contentOwner: AG
-feature: Herramientas para desarrolladores
-role: Desarrollador
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

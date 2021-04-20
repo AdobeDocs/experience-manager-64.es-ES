@@ -6,7 +6,7 @@ seo-title: 'Boletín de Adobe Dynamic Media '
 solution: Dynamic Media Classic
 title: Newsletter de Dynamic Media
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
-feature: Colaboración,Dynamic Media Classic
+feature: Collaboration,Dynamic Media Classic
 role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba

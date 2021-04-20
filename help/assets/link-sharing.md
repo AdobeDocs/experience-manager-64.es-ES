@@ -2,8 +2,8 @@
 title: Compartir recursos mediante un vínculo
 description: Comparta recursos, carpetas y colecciones como URL.
 contentOwner: AG
-feature: Compartir vínculos, Administración de activos
-role: Profesional empresarial
+feature: Link Sharing,Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

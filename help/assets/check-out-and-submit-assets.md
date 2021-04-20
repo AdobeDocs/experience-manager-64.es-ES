@@ -2,8 +2,8 @@
 title: Insertar y extraer recursos digitales para editarlos
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
-feature: Administración de activos
-role: Profesional empresarial
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

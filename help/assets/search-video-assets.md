@@ -2,8 +2,8 @@
 title: Búsqueda de recursos de vídeo
 description: Utilice palabras clave, propiedades de archivo como un tipo Mime, tamaño o marca de hora modificada recientemente para encontrar rápidamente el archivo en AEM Assets.
 contentOwner: AG
-feature: Vídeo,Buscar
-role: Profesional empresarial
+feature: Video,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Lista de comprobación de seguridad
 seo-title: Lista de comprobación de seguridad
 description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
-feature: Seguridad
+feature: Security
 seo-description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

@@ -3,7 +3,7 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Obtenga información sobre cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrador
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

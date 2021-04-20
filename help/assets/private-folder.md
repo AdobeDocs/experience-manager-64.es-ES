@@ -2,8 +2,8 @@
 title: Uso compartido de carpetas privadas
 description: Obtenga información sobre cómo crear una carpeta privada en Adobe Experience Manager (AEM) Assets, compartirla con otros usuarios y asignarles distintos privilegios.
 contentOwner: AG
-feature: Colaboración
-role: Profesional empresarial
+feature: Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

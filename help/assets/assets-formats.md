@@ -2,8 +2,8 @@
 title: Formatos de archivo compatibles con AEM Assets
 description: Lista de formatos de archivo y tipos MIME admitidos por AEM Assets y las funciones admitidas para cada formato.
 contentOwner: AG
-feature: Administración de recursos,Representaciones
-role: Profesional empresarial, administrador
+feature: Asset Management,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

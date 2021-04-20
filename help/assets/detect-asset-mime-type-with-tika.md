@@ -2,8 +2,8 @@
 title: Utilice Apache Tika para detectar el tipo MIME de los recursos digitales
 description: Habilite Apache Tika para ayudar a AEM Assets a detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión del archivo.
 contentOwner: AG
-feature: Metadatos,Herramientas para desarrolladores,Administración de recursos
-role: Administrador,Arquitecto
+feature: Metadata,Developer Tools,Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

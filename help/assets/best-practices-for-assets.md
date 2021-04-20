@@ -2,8 +2,8 @@
 title: Prácticas recomendadas para administrar recursos mediante AEM
 description: Identifique y cumpla las prácticas recomendadas que mejoran la estabilidad del sistema y el rendimiento bajo carga, según la implementación de AEM Assets y las funciones utilizadas para la ingesta y el procesamiento de recursos.
 contentOwner: AG
-feature: Administración de activos
-role: Arquitecto,Administrador
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

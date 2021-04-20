@@ -2,8 +2,8 @@
 title: Activos relacionados
 description: Obtenga información sobre cómo relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos.
 contentOwner: AG
-feature: Administración de activos,Colaboración
-role: Profesional empresarial
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

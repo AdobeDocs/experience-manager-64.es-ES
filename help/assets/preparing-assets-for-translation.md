@@ -2,8 +2,8 @@
 title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para prepararse para la traducción de recursos multilingües.
 contentOwner: AG
-feature: Proyectos,Traducción
-role: Profesional empresarial, administrador
+feature: Projects,Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

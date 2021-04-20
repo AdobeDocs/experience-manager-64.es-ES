@@ -2,8 +2,8 @@
 title: Uso del rastreador de páginas e Incrustar código en páginas web
 description: Aprenda a incluir el rastreador de páginas e incrustar códigos JavaScript en el código del sitio web para permitir que Adobe Analytics capture los datos de uso alrededor de los recursos.
 contentOwner: AG
-feature: Informes del recurso
-role: Arquitecto,Administrador
+feature: Asset Reports
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

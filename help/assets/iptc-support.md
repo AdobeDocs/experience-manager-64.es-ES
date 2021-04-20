@@ -2,8 +2,8 @@
 title: Compatibilidad con metadatos IPTC
 description: Descubra cómo Adobe Experience Manager (AEM) Assets es compatible con los metadatos IPTC, las clasificaciones creativas y las palabras clave añadidas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
 contentOwner: AG
-feature: Metadatos
-role: Profesional empresarial,Administrador,Líder
+feature: Metadata
+role: Business Practitioner,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -7,10 +7,10 @@ user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 49%
+source-wordcount: '627'
+ht-degree: 47%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 49%
    + [Uso compartido de carpetas privadas](private-folder.md)
    + [Directrices de formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
    + [Representaciones de vídeo](video-renditions.md)
-+ Recursos 3D {#three-d}
-   + [Notas de la versión de AEM 3D](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Uso de recursos 3D](assets-3d.md)
-   + [Instalación y configuración de AEM 3D](install-config-3d.md)
-   + [Ajustes de configuración avanzados](advanced-config-3d.md)
-   + [Uso de recursos de Adobe Dimension](working-dimension-assets.md)
-   + [Acerca de la carga y el procesamiento de los recursos 3D en AEM](upload-processing-3d-assets.md)
-   + [Resolución de dependencias de archivo](resolve-file-dependencies.md)
-   + [Visualización de recursos 3D](viewing-3d-assets.md)
-   + [Procesar recursos 3D](rendering-3d-assets.md)
-   + [Acerca del uso de escenarios en AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Configurar un escenario estándar con Autodesk Maya y Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Uso del componente Sitios 3D](using-the-3d-sites-component.md)
-   + [Integración AEM 3D con Autodesk Maya](integrate-maya-with-3d.md)
-   + [Sobre el trabajo con los escenarios de IBL](working-with-ibl-stages.md)
-   + [Integración AEM 3D con Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Configuración de un escenario de IBL con Autodesk Maya y Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)

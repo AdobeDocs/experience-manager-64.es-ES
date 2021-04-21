@@ -8,10 +8,10 @@ user-guide-description: Obtenga información sobre las últimas funciones nuevas
 feature: Información de la versión
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 37%
+source-wordcount: '89'
+ht-degree: 39%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 37%
 + [Notas de la versión de AEM Forms](forms.md)
 + [Instalador de parches JEE de AEM Forms](jee-patch-installer-64.md)
 + [Notas de versión de AEM Communities](communities-release-notes.md)
-+ [Notas de la versión de AEM 3D](aem3d-release-notes.md)
 + [Funciones en desuso y eliminadas](deprecated-removed-features.md)
 + [Problemas conocidos](known-issues.md)
 + [Base de AEM y repositorio](wcm-platform.md)

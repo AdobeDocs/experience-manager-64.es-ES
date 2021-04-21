@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
+exl-id: 535d2a9f-852c-48ea-89ec-31de3a891666
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: 82f31577e41e1cd484ee3a8d22bbc11756ff23a2
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 93%
+source-wordcount: '112'
+ht-degree: 92%
 
 ---
-
 
 # Uso de recursos{#working-with-assets}
 
 La sección [Entorno y herramientas de autor](/help/sites-authoring/author-environment-tools.md) proporciona información sobre cómo utilizar el buscador de contenido para buscar y usar recursos al editar páginas.  AEM Assets proporciona otros métodos para trabajar con los recursos:
 
-* [Añadir las funciones de Dynamic Media Classic en la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
+* [Adición de funciones de Dynamic Media Classic a su página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Trabajo con Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Convenciones de nomenclatura de los recursos](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-* [Uso de recursos 3D](/help/sites-classic-ui-authoring/classicui-3dassets.md)

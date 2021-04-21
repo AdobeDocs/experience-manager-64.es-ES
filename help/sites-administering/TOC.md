@@ -6,14 +6,13 @@ audience: admin-user
 user-guide-title: Guía del usuario de administración de AEM 6.4
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
-feature-set: Experience Manager Sites
-feature: Administering
+feature: Administración
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 20%
+source-wordcount: '659'
+ht-degree: 19%
 
 ---
 

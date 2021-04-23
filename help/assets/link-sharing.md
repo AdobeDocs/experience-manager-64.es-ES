@@ -2,16 +2,16 @@
 title: Compartir recursos mediante un vínculo
 description: Comparta recursos, carpetas y colecciones como URL.
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: Compartir vínculos, Administración de activos
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1024'
 ht-degree: 5%
 
 ---
-
 
 # Compartir recursos mediante un vínculo {#asset-link-sharing}
 
@@ -28,26 +28,11 @@ ht-degree: 5%
 Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos.
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Compartir vínculo]** ![compartir recursos](assets/assets_share.png).
-
-   El vínculo que se creará después de hacer clic en [!UICONTROL Compartir] se muestra de antemano en el campo [!UICONTROL Compartir vínculo]. El tiempo de caducidad predeterminado del vínculo es de un día.
+1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Compartir vínculo]** ![compartir recursos](assets/assets_share.png). El vínculo que se creará después de hacer clic en **[!UICONTROL Compartir]** se muestra de antemano en el campo [!UICONTROL Compartir vínculo]. El vínculo aún no se ha creado hasta que haga clic en **[!UICONTROL Submit]**.
 
    ![Diálogo con el uso compartido de vínculos](assets/chlimage_1-542.png)
 
    *Figura: El cuadro de diálogo para compartir recursos como vínculo.*
-
-   >[!NOTE]
-   >
-   >Si desea compartir vínculos de su implementación [!DNL Experience Manager] de creación en entidades externas, asegúrese de que solo muestra las siguientes direcciones URL (que se utilizan para compartir vínculos) para solicitudes `GET` . Bloquear otras direcciones URL por motivos de seguridad.
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. En la interfaz [!DNL Experience Manager], acceda a **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-1. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Domains]** con los valores mencionados en `local`, `author` y `publish`. Para las propiedades `local` y `author` , proporcione la dirección URL para la instancia local y la instancia de autor, respectivamente. Tanto las propiedades `local` como `author` tienen el mismo valor si ejecuta una única instancia de autor [!DNL Experience Manager]. Para instancias de publicación, proporcione la URL para la instancia de publicación [!DNL Experience Manager].
 
 1. En el apartado de la dirección de correo electrónico del cuadro de diálogo **[!UICONTROL Uso compartido de vínculos]**, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. Puede agregar uno o más usuarios.
 
@@ -62,7 +47,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 1. En el cuadro **[!UICONTROL Subject]**, introduzca un asunto para el recurso que desea compartir.
 1. En el cuadro **[!UICONTROL Message]**, introduzca un mensaje opcional.
 
-1. En el campo **[!UICONTROL Expiration]** especifique una fecha y hora de caducidad para que el vínculo deje de funcionar. De forma predeterminada, la fecha de caducidad se establece para una semana a partir de la fecha en la que comparta el vínculo.
+1. En el campo **[!UICONTROL Expiration]** especifique una fecha y hora de caducidad para que el vínculo deje de funcionar. El tiempo de caducidad predeterminado del vínculo es de un día.
 
    ![Establecer fecha de caducidad del vínculo compartido](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios por correo electrónico.
 
-1. Para ver el recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página [!UICONTROL Adobe Marketing Cloud].
-
-   ![Los recursos compartidos están disponibles en Adobe Marketing Cloud](assets/chlimage_1-545.png)
-
-1. Para generar una vista previa del recurso, haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página **[!UICONTROL Marketing Cloud]**, haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, haga clic en **[!UICONTROL Carpeta principal]** para volver a la carpeta principal.
+1. Para ver el recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. Para generar una vista previa del recurso, haga clic en el recurso compartido. Para cerrar la vista previa, haga clic en **[!UICONTROL Back]**. Si ha compartido una carpeta, haga clic en **[!UICONTROL Carpeta principal]** para volver a la carpeta principal.
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,7 +84,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. Pulse o haga clic en **[!UICONTROL Guardar]**.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Configurar el tamaño máximo de datos {#configure-maximum-data-size}
 
@@ -124,3 +105,10 @@ Cuando descarga recursos del vínculo compartido mediante la función Compartir 
 * Si no puede enviar correos electrónicos con vínculos a recursos compartidos o si los demás usuarios no pueden recibir su correo electrónico, consulte con su administrador de [!DNL Experience Manager] si el [servicio de correo electrónico](#configure-day-cq-mail-service) está configurado o no.
 * Si no puede compartir recursos con la funcionalidad de uso compartido de vínculos, compruebe que dispone de los permisos adecuados. Consulte [compartir recursos](#share-assets).
 * Si un recurso compartido se mueve a una ubicación diferente, su vínculo deja de funcionar. Vuelva a crear el vínculo y vuelva a compartirlo con los usuarios.
+
+* Si desea compartir vínculos de su implementación [!DNL Experience Manager] de creación en entidades externas, asegúrese de que solo muestra las siguientes direcciones URL que se usan para compartir vínculos, solo para solicitudes `GET` . Bloquear otras direcciones URL por motivos de seguridad.
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   En la interfaz [!DNL Experience Manager], acceda a **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**. Abra la configuración **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Domains]** con los valores mencionados en `local`, `author` y `publish`. Para las propiedades `local` y `author` , proporcione la URL para las instancias local y Autor, respectivamente. Si ejecuta una sola instancia de autor [!DNL Experience Manager], utilice el mismo valor para las propiedades `local` y `author`. Para instancias de publicación, proporcione la URL de la instancia de publicación [!DNL Experience Manager].

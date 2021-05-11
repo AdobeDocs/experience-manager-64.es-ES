@@ -8,14 +8,14 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Administrator
+exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
-
 
 # Instale y configure las funcionalidades de captura de datos {#install-and-configure-data-capture-capabilities}
 
@@ -213,4 +213,3 @@ Ha configurado un entorno para utilizar las funciones de captura de datos de AEM
 * [Cree su primer formulario adaptable](/help/forms/using/create-your-first-adaptive-form.md)
 * [Crear el primer formulario PDF](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
 * [Introducción a HTML5 Forms](/help/forms/using/introduction.md)
-

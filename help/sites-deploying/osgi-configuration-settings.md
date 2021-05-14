@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuración
+exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
+source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de OSGi{#osgi-configuration-settings}
 
@@ -440,29 +439,6 @@ FormatoIndica el formato en el que se proporciona el ID de usuario. Uso:
 Consulte [Depuración de versiones](/help/sites-deploying/version-purging.md) para obtener más información.
 
 **Servicio Day CQ Workflow Email Notification** Configure los ajustes de correo electrónico para las notificaciones enviadas por un flujo de trabajo.
-
-**Day CQSE HTTP** ServiceControle el motor Servlet CQ:
-
-* **NIO para HTTP**, Indica si se utiliza o no NIO para HTTP. La opción predeterminada es true. Solo se utiliza si HTTP está habilitado.
-* **Tiempo de espera de conexión**, tiempo de espera de conexión en milisegundos. Esta propiedad se aplica tanto a conexiones HTTP como HTTPS. El valor predeterminado es de 60 segundos.
-
-* **Habilitar HTTPS,** si HTTPS está habilitado o no. El valor predeterminado es false.
-* **Tiempo de espera de sesión**, duración predeterminada de una sesión HTTP especificada en minutos. Si el tiempo de espera es 0 o menos, las sesiones nunca se agotarán. El valor predeterminado es de 10 minutos.
-* **Registro de depuración**, escriba o no mensajes a nivel de depuración. El valor predeterminado es false.
-* **Tamaño del búfer de solicitud**, Tamaño del búfer para solicitudes en bytes. El valor predeterminado es 8 KB.
-* **Número máximo de subprocesos**, número máximo de subprocesos que se utilizan para gestionar solicitudes. El valor predeterminado es 200.
-
-Las siguientes propiedades solo se aplican si HTTPS está habilitado.
-
-* **Puerto** HTTPS, puerto en el que escuchar la solicitud HTTPS. El valor predeterminado es 433.
-* **NIO para HTTPS**, si se utiliza o no NIO para HTTP. El valor predeterminado es el valor de la propiedad NIO para HTTP.
-* **Almacén de claves**, ruta absoluta al almacén de claves que se utilizará para HTTPS. Necesario si HTTPS está habilitado.
-* **Contraseña** del almacén de claves, Contraseña para acceder al almacén de claves.
-* **Alias de clave**, Alias de la clave secreta en el almacén de claves.
-* **Contraseña de clave**, Contraseña para desbloquear la clave secreta en el almacén de claves.
-* **Certificado de cliente**, requisito para que el cliente proporcione un certificado válido. El valor predeterminado es ninguno.
-
-Consulte también [Habilitación de HTTP sobre SSL](/help/sites-administering/ssl-by-default.md) para obtener más información sobre las opciones relacionadas con SSL y una descripción completa sobre cómo habilitar HTTPS para CQSE.
 
 **CQ Rewriter HTML Parser Factory**
 

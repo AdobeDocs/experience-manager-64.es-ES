@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Configuración
+exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
+source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
-
 
 # Ejecución de AEM con el modo de espera pasiva TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
@@ -276,7 +275,7 @@ La siguiente configuración OSGi está disponible para el servicio de espera pas
 
 * **Intervalos IP permitidos (`primary.allowed-client-ip-ranges`):**  los intervalos IP desde los que el principal permitirá conexiones.
 * **Seguro (`secure`):** habilite el cifrado SSL. Para utilizar esta configuración, debe habilitarse en todas las instancias.
-* **Tiempo de espera de lectura en espera (`standby.readtimeout`):**  Tiempo de espera para solicitudes emitidas desde la instancia en espera en milisegundos. **La configuración de tiempo de espera recomendada es 43200000. Generalmente se recomienda establecer el tiempo de espera en un valor de al menos 12 horas.**
+* **Tiempo de espera de lectura en espera (`standby.readtimeout`):**  Tiempo de espera para solicitudes emitidas desde la instancia en espera en milisegundos. El valor predeterminado utilizado es 60000 (un minuto).
 * **Limpieza automática en espera (`standby.autoclean`):** invoque el método de limpieza si el tamaño del almacén aumenta en un ciclo de sincronización.
 
 >[!NOTE]
@@ -400,4 +399,3 @@ Es importante ejecutar la recolección de basura en instancias del almacén de d
    >[!NOTE]
    >
    >En caso de que no utilice un almacén de datos compartido, la colección de residuos primero tendrá que ejecutarse en el almacén principal y, a continuación, en el modo de espera.
-

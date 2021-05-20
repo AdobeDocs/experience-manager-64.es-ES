@@ -1,32 +1,31 @@
 ---
-title: Habilitar Asset Insights a través de DTM
-description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Asset Insights.
+title: Activación de Assets Insights a través de DTM
+description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Assets Insights.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Información sobre Assets, Informes de Asset
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
 
+# Activación de Assets Insights mediante DTM {#enabling-asset-insights-through-dtm}
 
-# Habilitar Asset Insights a través de DTM {#enabling-asset-insights-through-dtm}
-
-Adobe Dynamic Tag Management es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo se admiten y se proporcionan para imágenes.
+Adobe Dynamic Tag Management es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Assets Insights o puede utilizar DTM para insertar etiquetas de Assets Insights. Las perspectivas solo se admiten y se proporcionan para imágenes.
 
 >[!CAUTION]
 >
 >Adobe DTM está obsoleto en favor de Adobe Experience Platform Launch y pronto llegará al [fin de vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda utilizar [Launch para perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Siga estos pasos para habilitar Asset Insights mediante DTM:
+Siga estos pasos para habilitar Assets Insights mediante DTM:
 
 1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets > Configuración de perspectivas]**.
 1. [Configurar AEM instancia con el Cloud Service de DTM](../sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de Asset Insights, ya que la integración de AEM Sites con Asset Insights aún está en funcionamiento.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de Assets Insights, ya que la integración de AEM Sites con Assets Insights aún está en funcionamiento.
 
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y seleccione una empresa, según corresponda.
 1. Crear/abrir una propiedad web existente
@@ -51,7 +50,7 @@ Siga estos pasos para habilitar Asset Insights mediante DTM:
    >
    >* `AppMeasurement.js` se ha eliminado. Se espera que esté disponible a través de la herramienta Adobe Analytics de DTM.
    >* Se ha eliminado la llamada a `assetAnalytics.dispatcher.init()`. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de DTM termine de cargarse.
-   >* Según el lugar en el que esté alojado el rastreador de páginas de Asset Insights (por ejemplo, AEM, CDN, etc.), el origen de la secuencia de comandos puede requerir cambios.
+   >* Según el lugar en el que esté alojado el rastreador de páginas de Assets Insights (por ejemplo, AEM, CDN, etc.), el origen de la secuencia de comandos puede requerir cambios.
    >* Para el rastreador de páginas alojado en AEM, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de Dispatcher.
 
 

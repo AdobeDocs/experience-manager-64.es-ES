@@ -1,21 +1,20 @@
 ---
-title: Configuración de Asset Insights
-description: Obtenga información sobre cómo configurar Asset Insights en AEM Assets.
+title: Configuración de Assets Insights
+description: Obtenga información sobre cómo configurar Assets Insights en AEM Assets.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Información sobre Assets, Informes de Asset
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 10%
 
 ---
 
+# Configuración de Assets Insights {#configuring-asset-insights}
 
-# Configuración de Asset Insights {#configuring-asset-insights}
-
-Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso sobre AEM recursos utilizados por sitios web de terceros. Para permitir que Asset Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
+Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso sobre AEM recursos utilizados por sitios web de terceros. Para permitir que Assets Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso so
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Pulse o haga clic en **[!UICONTROL Autenticar]**.
-1. Después de AEM autentica las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que quiera que Asset Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Una vez AEM haya autenticado las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que quiera que Assets Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
 1. Una vez AEM configurado el grupo de informes, pulse o haga clic en **[!UICONTROL Listo]**.
 
 ## Rastreador de páginas {#page-tracker}

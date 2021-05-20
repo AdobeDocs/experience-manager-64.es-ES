@@ -6,10 +6,9 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 47%
 
 ---
@@ -87,7 +86,7 @@ ht-degree: 47%
    + [Facetas de búsqueda](search-facets.md)
    + [Administración de metadatos de recursos](metadata.md)
    + [Reescritura XMP en representaciones](xmp-writeback.md)
-   + [Uso compartido de vínculos de activos](link-sharing.md)
+   + [Uso compartido de vínculos de recursos](link-sharing.md)
    + [Informes de Asset](asset-reports.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
@@ -108,7 +107,7 @@ ht-degree: 47%
    + [Integración de AEM Assets con el servidor de InDesign](indesign.md)
    + [Perfiles de metadatos](metadata-profiles.md)
    + [Digital Rights Management en Assets](drm.md)
-   + [Uso del paquete de demostración para Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Uso del paquete de demostración para Assets Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas de descarga de recursos](assets-offloading-best-practices.md)
    + [Prácticas recomendadas del formato de los archivos de recursos](assets-file-format-best-practices.md)
    + [Prácticas recomendadas de supervisión de Assets](assets-monitoring-best-practices.md)
@@ -155,13 +154,13 @@ ht-degree: 47%
    + [Descargar recursos de AEM](download-assets-from-aem.md)
    + [Operaciones asincrónicas](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
-   + [Habilitar Asset Insights a través de DTM](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configuración de Asset Insights](touch-ui-configuring-asset-insights.md)
+   + [Activación de Assets Insights a través de DTM](touch-ui-using-dtm-for-asset-insights.md)
+   + [Configuración de Assets Insights](touch-ui-configuring-asset-insights.md)
    + [Aplicación de servicios de nube de traducción a carpetas](transition-cloud-services.md)
    + [Uso del rastreador de páginas e Incrustar código en páginas web](touch-ui-using-page-tracker.md)
    + [Administración de recursos compuestos](managing-linked-subassets.md)
    + [Recursos relacionados](related-assets.md)
-   + [Información sobre Assets ](touch-ui-asset-insights.md)
+   + [Información sobre Assets](touch-ui-asset-insights.md)
    + [Búsqueda de recursos de vídeo](search-video-assets.md)
    + [Uso compartido de carpetas privadas](private-folder.md)
    + [Directrices de formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)

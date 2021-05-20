@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Actualización
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 3%
 
 ---
-
 
 # Actualización a AEM 6.4{#upgrading-to-aem}
 
@@ -51,7 +50,7 @@ A continuación se indican los cambios más importantes que se han producido en 
 
 AEM 6.0 introdujo el nuevo repositorio de Jackrabbit Oak. Los administradores de persistencia se reemplazaron por [Micro Kernels](/help/sites-deploying/recommended-deploys.md). A partir de la versión 6.1, CRX2 ya no es compatible. Se debe ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta de migración CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-Si se va a utilizar Asset Insights y se actualiza desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID a través de un bean JMX. En nuestras pruebas internas, se migraron 125.000 activos en un entorno TarMK en una hora, pero los resultados pueden variar.
+Si se va a utilizar Assets Insights y se está actualizando desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID a través de un bean JMX. En nuestras pruebas internas, se migraron 125.000 activos en un entorno TarMK en una hora, pero los resultados pueden variar.
 
 AEM 6.3 introdujo un nuevo formato para el `SegmentNodeStore`, que es la base de la implementación de TarMK. Si está actualizando desde una versión anterior a AEM 6.3, esto requerirá una migración del repositorio como parte de la actualización, lo que implica downtime del sistema.
 
@@ -90,4 +89,3 @@ En la versión 6.4 se prestó gran atención a mantener todas las nuevas funcion
 Por último, en su ciclo de desarrollo 6.4, las funciones introducidas en Actualizaciones sostenibles (consulte [Actualizaciones sostenibles](/help/sites-deploying/sustainable-upgrades.md)) le ayudan a seguir las prácticas recomendadas para hacer que las futuras actualizaciones sean aún más eficientes y fluidas.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-

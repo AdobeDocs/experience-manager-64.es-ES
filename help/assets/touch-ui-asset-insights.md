@@ -1,29 +1,28 @@
 ---
-title: Utilice la función Asset Insights para realizar un seguimiento del uso de las imágenes
-description: La función Asset Insights permite rastrear las clasificaciones de usuarios y las estadísticas de uso de las imágenes que se usan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
+title: Utilice la función de Assets Insights para realizar un seguimiento del uso de las imágenes
+description: La función de Assets Insights permite realizar un seguimiento de las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se usan en sitios web de terceros, campañas de marketing y soluciones creativas de los Adobes.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Información sobre Assets, Informes de Asset
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 8%
+source-wordcount: '794'
+ht-degree: 7%
 
 ---
 
-
 # Información sobre Assets {#asset-insights}
 
-Descubra cómo la función Asset Insights permite rastrear las clasificaciones de usuario y las estadísticas de uso de los recursos que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
+Descubra cómo la función Assets Insights permite rastrear las clasificaciones de usuario y las estadísticas de uso de los recursos que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 
-La función Asset Insights permite realizar un seguimiento de las clasificaciones de usuarios y las estadísticas de uso de los recursos que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas del Adobe para obtener perspectivas sobre su rendimiento y popularidad.
+La función Información de recursos permite realizar un seguimiento de las clasificaciones de usuario y las estadísticas de uso de los recursos que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de los Adobes para obtener perspectivas sobre su rendimiento y popularidad.
 
 Assets Insights captura los detalles de la actividad del usuario, como el número de veces que se clasifica, se hace clic en un recurso y las impresiones (el número de veces que se carga el recurso en el sitio web). Asigna puntuaciones a los recursos en función de estas estadísticas. Puede utilizar las puntuaciones y las estadísticas de rendimiento para seleccionar recursos populares para su inclusión en catálogos, campañas de marketing, etc. Incluso puede formular políticas de archivado y renovación de licencias para recursos en función de estas estadísticas.
 
 Para que Assets Insights capture las estadísticas de uso de los recursos de un sitio web, debe incluir el código incrustado del recurso en el código del sitio web.
 
-Para que Asset Insights pueda mostrar las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de [!DNL Adobe Analytics]. Para obtener más información, consulte [Configuración de Asset Insights](touch-ui-configuring-asset-insights.md).
+Para que Assets Insights muestre las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de [!DNL Adobe Analytics]. Para obtener más información, consulte [Configuración de Assets Insights](touch-ui-configuring-asset-insights.md). Para utilizar esta función, compre la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Consulte [Descripción del producto de Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Para que Asset Insights pueda mostrar las estadísticas de uso de los recursos, 
 
 ## Ver estadísticas de un recurso {#viewing-statistics-for-an-asset}
 
-Puede ver las puntuaciones de Asset Insights desde la página de metadatos.
+Puede ver las puntuaciones de Assets Insights desde la página de metadatos.
 
 1. En la interfaz de usuario (IU) de Assets, seleccione el recurso y, a continuación, pulse o haga clic en el icono **[!UICONTROL Propiedades]** de la barra de herramientas.
 1. En la página Propiedades , pulse o haga clic en la pestaña **[!UICONTROL Perspectivas]**.
@@ -52,7 +51,7 @@ Puede ver las puntuaciones de Asset Insights desde la página de metadatos.
 
    >[!NOTE]
    >
-   >Debido a que la función Asset Insights generalmente recupera los datos de Soluciones de Adobe Analytics de forma periódica, es posible que la sección Soluciones no muestre los datos más recientes. El período de tiempo durante el cual se muestran los datos depende de la programación de la operación de recuperación que Asset Insights ejecuta para recuperar datos de Analytics.
+   >La función de Assets Insights recupera los datos de las soluciones de [!DNL Adobe Analytics] de forma periódica; es posible que la sección de soluciones no muestre los datos más recientes. El período de tiempo durante el cual se muestran los datos depende de la programación de la operación de recuperación que ejecuta Assets Insights para recuperar [!DNL Analytics] datos.
 
 1. Para ver las estadísticas de rendimiento del recurso gráficamente durante un período de tiempo, seleccione el período en la sección **[!UICONTROL Estadísticas de rendimiento]**. Los detalles, incluidos los clics y las impresiones, se muestran como líneas de tendencia de un gráfico.
 
@@ -60,9 +59,9 @@ Puede ver las puntuaciones de Asset Insights desde la página de metadatos.
 
    >[!NOTE]
    >
-   >A diferencia de los datos de la sección Soluciones , la sección Estadísticas de rendimiento muestra los datos más recientes.
+   >A diferencia de los datos de la sección de soluciones, la sección de estadísticas de rendimiento muestra los datos más recientes.
 
-1. Para obtener el código incrustado del recurso que incluye en los sitios web para obtener datos de rendimiento, pulse o haga clic en **[!UICONTROL Obtener código incrustado]** debajo de la miniatura del recurso. Para obtener más información sobre cómo incluir el código incrustado en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas web](touch-ui-using-page-tracker.md).
+1. Para obtener el código incrustado del recurso que incluye en los sitios web para obtener datos de rendimiento, haga clic en **[!UICONTROL Obtener código incrustado]** debajo de la miniatura del recurso. Para obtener más información sobre cómo incluir el código incrustado en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas web](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -76,7 +75,7 @@ Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Asset Insights obtiene de forma periódica datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar la frecuencia y la hora configurando el servicio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** desde la consola web.
+Assets Insights recupera de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Assets Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar la frecuencia y la hora configurando el servicio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** desde la consola web.
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
 1. Abra la configuración del servicio **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.

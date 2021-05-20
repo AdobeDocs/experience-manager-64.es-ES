@@ -3,11 +3,10 @@ title: Administrar los recursos digitales mediante AEM Assets
 description: Obtenga información sobre las distintas tareas de administración y edición de recursos que puede realizar mediante la interfaz de usuario táctil de AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Administración de recursos,Buscar,Representaciones,Colaboración
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 2%
@@ -368,7 +367,7 @@ Algunas limitaciones de la función son:
 
 1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y presione **[!UICONTROL Enter]**. La nueva etiqueta se guarda en AEM.
 
-   YouTube requiere etiquetas para publicar y tener un vínculo a YouTube (si se encuentra un vínculo adecuado).
+   YouTube requiere que las etiquetas se publiquen y que tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 Para crear etiquetas, necesita permiso de escritura para `/content/cq:tags/default` en el repositorio CRX.
 
 1. Para clasificar el recurso, pulse la pestaña **[!UICONTROL Avanzado]** y, a continuación, pulse la estrella en la posición adecuada para asignar la clasificación deseada.
@@ -385,7 +384,7 @@ Para crear etiquetas, necesita permiso de escritura para `/content/cq:tags/defau
    * Canales/dispositivos a través de los cuales se utilizó el recurso.
    * Soluciones creativas en las que se ha utilizado recientemente el recurso.
 
-   Para obtener más información, consulte [Asset Insights](touch-ui-asset-insights.md).
+   Para obtener más información, consulte [Assets Insights](touch-ui-asset-insights.md).
 
 1. Toque **[!UICONTROL Guardar y cerrar]**.
 1. Vaya a la interfaz de usuario de Assets. Las propiedades de metadatos editadas, como el título, la descripción, las clasificaciones, etc., se muestran en la tarjeta de recursos de la vista de tarjeta y en las columnas relevantes de la vista de lista.
@@ -710,7 +709,7 @@ También puede agregar mapas de imagen mediante el editor de imágenes. Para obt
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## Utilice la línea de tiempo {#timeline}
+## Usar la línea de tiempo {#timeline}
 
 La **[!UICONTROL Línea de tiempo]** permite ver varios eventos de un elemento seleccionado, como flujos de trabajo activos para un recurso, comentarios, anotaciones, registros de actividades y versiones.
 

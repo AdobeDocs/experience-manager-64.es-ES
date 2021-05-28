@@ -8,10 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuración,Modo Scene7
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5596'
 ht-degree: 3%
 
 ---
@@ -76,9 +75,9 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 >
 >De forma predeterminada, la ruta de configuración de los Cloud Services es `/content/dam`. El modo Dynamic Media - Scene7 no admite ninguna otra ruta de configuración.
 
-Para configurar los Cloud Services de Dynamic Media:
+**Para configurar los Cloud Services de Dynamic Media:**
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** y pulse **[!UICONTROL Crear]**. No toque ni seleccione el icono de carpeta a la izquierda de [!UICONTROL global].
 1. En la página [!UICONTROL Crear configuración de Dynamic Media], introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no recibió el correo electrónico.
 
@@ -108,7 +107,7 @@ Para configurar los Cloud Services de Dynamic Media:
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor de Experience Manager para conectarse a Dynamic Media:
 
    * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
-   * En la barra de navegación cerca de la parte superior derecha de la página, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de la publicación > Servidor de imágenes]**.
+   * En la barra de navegación cerca de la parte superior derecha de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
    * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, pulse **[!UICONTROL Agregar]**.
    * Para activar la dirección, seleccione la casilla de verificación. Introduzca la dirección IP de la instancia de Autor del Experience Manager (no la IP de Dispatcher).
@@ -146,7 +145,7 @@ Las tareas de configuración son:
 
 La configuración de Configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Dynamic Media envía un recurso de acuerdo con la configuración predeterminada definida en Configuración de publicación. Por ejemplo, una solicitud para enviar una imagen que no incluya un atributo de resolución genera una imagen con la configuración Resolución de objeto predeterminada .
 
-Para configurar la configuración de publicación: en Dynamic Media Classic, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de publicación > Servidor de imágenes]**.
+Para configurar la configuración de publicación: en Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
 
 La pantalla Servidor de imágenes establece la configuración predeterminada para la entrega de imágenes. Consulte la interfaz de usuario para ver una descripción de cada configuración.
 
@@ -160,7 +159,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 
 #### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
 
-Para abrir la página [!UICONTROL Configuración general de la aplicación], en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**.
+Para abrir la página [!UICONTROL Configuración general de la aplicación], en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
 **[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga el servicio de asistencia al Experience Manager.
 
@@ -185,9 +184,9 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 
 La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](managing-image-presets.md).
 
-Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:
+**Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en la cuenta con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Configuración > Configuración de la aplicación]**.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en la cuenta con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]**.
 1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
 1. Desplácese hasta la propiedad que debe cambiar. Por ejemplo, una propiedad en el área **[!UICONTROL Atributos de administración de color]**.
 
@@ -221,9 +220,9 @@ Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los pa
 
 Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
-**Para editar tipos de mime para formatos compatibles**
+**Para editar tipos de mime para formatos compatibles:**
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) y vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -247,9 +246,9 @@ Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
 Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos Experience Manager. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de **[!UICONTROL image_]** y su valor habilitado se establezca en **[!UICONTROL false]**.
 
-**Adición de tipos MIME personalizados para formatos no compatibles**
+**Para agregar tipos MIME personalizados para formatos no compatibles:**
 
-1. En el Experience Manager, haga clic en **[!UICONTROL Herramientas > Operaciones > Consola web]**.
+1. En el Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
    ![Consola web](assets/2019-08-02_16-13-14.png)
 
@@ -277,7 +276,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos
 
 1. Vuelva a la ficha del explorador que tiene la consola de Experience Manager abierta.
 
-1. En el Experience Manager, haga clic en **[!UICONTROL Herramientas > General > CRXDE Lite]**.
+1. En el Experience Manager, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
    ![página CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -321,7 +320,7 @@ Hay dos elementos disponibles para su definición, **[!UICONTROL Match]** y **[!
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Ajustes preestablecidos de conjuntos de lotes > Nombres predeterminados].**
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Nombres predeterminados]**.
 1. Seleccione **[!UICONTROL Ver formulario]** o **[!UICONTROL Ver código]** para especificar cómo desea ver e introducir información sobre cada elemento.
 
    Puede seleccionar la casilla de verificación **[!UICONTROL Ver código]** para ver la generación del valor de expresión regular junto con las selecciones de formulario. Puede introducir o modificar estos valores para ayudar a definir los elementos de la convención de nomenclatura, si la vista del formulario lo limita por cualquier motivo. Si los valores no se pueden analizar en la vista de formulario, los campos del formulario se desactivan.
@@ -355,7 +354,7 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Ajustes preestablecidos de conjuntos de lotes > Ajuste preestablecido de conjuntos de lotes].**
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]**.
 
    [!UICONTROL Ver formulario], tal como se define en la esquina superior derecha de   Detalles, es la vista predeterminada.
 
@@ -364,7 +363,7 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
 1. En el menú desplegable **[!UICONTROL Tipo de conjunto de lotes]**, seleccione un tipo de ajuste preestablecido.
 1. Realice una de las acciones siguientes:
 
-   * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Ajustes de aplicación > Ajustes preestablecidos de conjuntos de lotes > Nombres predeterminados]**, expanda **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse **[!UICONTROL Predeterminado]**.
+   * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Nombres predeterminados]**, expanda **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse &lt;a1 0/>Predeterminado ]**.**[!UICONTROL 
    * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse **[!UICONTROL Personalizar]**.
 
 1. Para [!UICONTROL Orden de secuencia], defina el orden en que se muestran las imágenes después de que el conjunto se agrupe en Dynamic Media.
@@ -410,7 +409,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Ajustes preestablecidos de conjuntos de lotes > Ajuste preestablecido de conjuntos de lotes]**.
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]**.
 
    [!UICONTROL Ver formulario], tal como se define en la esquina superior derecha de   Detalles, es la vista predeterminada.
 
@@ -499,7 +498,7 @@ Para actualizar cualquiera de estos parámetros, siga los pasos en [Habilitació
 
 La cola Flujo de trabajo de Granite Transit se utiliza para el flujo de trabajo **[!UICONTROL DAM Update Asset]**. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
 
-**Para actualizar la cola de Granite Transient Workflow**
+**Para actualizar la cola de Granite Transient Workflow:**
 
 1. Vaya a [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) y busque **[!UICONTROL Cola: Cola de flujo de trabajo transitorio de granito]**.
 
@@ -607,14 +606,14 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
 
 #### Personalización de filtros de recursos para replicación {#customizing-asset-filters-for-replication}
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global, pulse el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global, pulse el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el árbol de carpetas de la izquierda, vaya a `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` para revisar los filtros.
 
    ![Chlimage_1-2](assets/chlimage_1-2.png)
 
 1. Para definir el tipo de hora para el filtro, puede localizar el tipo de hora de la siguiente manera:
 
-   En el carril izquierdo, expanda **[!UICONTROL content > dam > &lt;`locate_your_asset`> > jcr:content > metadata]** y, a continuación, en la tabla, busque **[!UICONTROL dc:format]**.
+   En el carril izquierdo, expanda **[!UICONTROL content]** > **[!UICONTROL dam]** > **[!UICONTROL &lt;`locate_your_asset`]** > **[!UICONTROL jcr:content]** > **[!UICONTROL metadatos]** y, a continuación, en la tabla de la derecha, busque **[!UICONTROL dc:formato]**.
 
    El siguiente gráfico es un ejemplo de la ruta de un recurso al formato dc:format.
 

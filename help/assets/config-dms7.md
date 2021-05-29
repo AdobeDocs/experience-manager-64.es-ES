@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuración,Modo Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 3%
@@ -33,11 +33,11 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos mae
 
 ## Activación de Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlo.
+[Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - El modo Scene7 solo es para la instancia de autor de Experience Manager. Como tal, debe configurar `runmode=dynamicmedia_scene7`en la instancia de Autor del Experience Manager, no en la instancia de Publicación del Experience Manager.
+>Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, debe configurar `runmode=dynamicmedia_scene7`en la instancia Autor del Experience Manager, *no* en la instancia Publicación del Experience Manager.
 
 Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el modo de ejecución `dynamicmedia_scene7` desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
 
@@ -77,7 +77,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 
 **Para configurar los Cloud Services de Dynamic Media:**
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
+1. En la instancia de Autor del Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** y pulse **[!UICONTROL Crear]**. No toque ni seleccione el icono de carpeta a la izquierda de [!UICONTROL global].
 1. En la página [!UICONTROL Crear configuración de Dynamic Media], introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no recibió el correo electrónico.
 
@@ -266,7 +266,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos
 
 1. Escriba `DWG=image/vnd.dwg` en el campo de texto vacío que acaba de agregar.
 
-   El ejemplo `DWG=image/vnd.dwg` solo tiene fines ilustrativos. El tipo MIME que agregue aquí puede ser cualquier otro formato no admitido.
+   El ejemplo `DWG=image/vnd.dwg` solo tiene fines de demostración. El tipo MIME que agregue aquí puede ser cualquier otro formato no admitido.
 
    ![Ejemplo de adición de tipo mime](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +306,7 @@ Al cargar archivos, Dynamic Media crea automáticamente un conjunto con todos lo
 
 **Configuración de la nomenclatura predeterminada**
 
-Cree una convención de nombres predeterminada que se utilice en cualquier fórmula preestablecida de conjunto de lotes. La convención de nombres predeterminada seleccionada en la definición del ajuste preestablecido de conjunto de lotes es probable que todo lo que su empresa necesita para generar conjuntos por lotes. Se crea un ajuste preestablecido de conjunto de lotes para utilizar la convención de nombres predeterminada que defina. Puede crear tantos ajustes preestablecidos de conjunto de lotes como desee con convenciones de nomenclatura personalizadas alternativas necesarias para un conjunto de contenido determinado en casos en los que exista una excepción a la nomenclatura predeterminada definida por la empresa.
+Cree una convención de nombres predeterminada que se utilice en cualquier fórmula preestablecida de conjunto de lotes. La convención de nombres predeterminada seleccionada en la definición del ajuste preestablecido de conjunto de lotes es probable que todo lo que su empresa necesita para generar conjuntos de lotes. Se crea un ajuste preestablecido de conjunto de lotes para utilizar la convención de nombres predeterminada que defina. Puede crear tantos ajustes preestablecidos de conjunto de lotes como desee con convenciones de nomenclatura personalizadas alternativas necesarias para un conjunto de contenido determinado en casos en los que exista una excepción a la nomenclatura predeterminada definida por la empresa.
 
 Aunque no es necesario configurar una convención de nombres predeterminada para utilizar la funcionalidad preestablecida de conjuntos de lotes, puede utilizarla para definir tantos elementos de la convención de nombres que desee agrupar en un conjunto. Esto ayuda a agilizar la creación de conjuntos de lotes.
 
@@ -444,7 +444,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    `\w+-\w+-C(\d+)`
 
-   Recuerde que estas expresiones son solo ejemplos ilustrativos. Puede crear la expresión regular según sus necesidades.
+   Recuerde que estas expresiones son solo ejemplos de demostración. Puede crear la expresión regular según sus necesidades.
 
    >[!NOTE]
    >

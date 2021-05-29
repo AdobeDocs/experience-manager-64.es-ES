@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuración,Modo Scene7
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos mae
 
 >[!WARNING]
 >
->Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, debe configurar `runmode=dynamicmedia_scene7`en la instancia Autor del Experience Manager, *no* en la instancia Publicación del Experience Manager.
+>Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, configure `runmode=dynamicmedia_scene7`en la instancia Autor del Experience Manager, *no* en la instancia Publicación del Experience Manager.
 
 Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el modo de ejecución `dynamicmedia_scene7` desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
 

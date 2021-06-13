@@ -1,5 +1,5 @@
 ---
-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
+title: Creación de ventanas emergentes personalizadas mediante vistas rápidas
 seo-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
 description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
 seo-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Configuration
+feature: Configuración
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 2%
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
-# Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Crear ventanas emergentes personalizadas mediante las vistas rápidas {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, esta funcionalidad permite a los usuarios hacer clic en un punto interactivo, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
 
@@ -32,7 +31,7 @@ Las vistas rápidas son compatibles con los siguientes visores en Dynamic Media:
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visualizadores admitidos.
 
-**Para utilizar las vistas rápidas para crear ventanas emergentes personalizadas,**
+**Para crear ventanas emergentes personalizadas con vistas rápidas:**
 
 1. Cree una vista rápida para un recurso cargado.
 

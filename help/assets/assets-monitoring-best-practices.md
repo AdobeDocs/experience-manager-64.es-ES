@@ -2,16 +2,15 @@
 title: Prácticas recomendadas de supervisión de Assets
 description: Prácticas recomendadas para monitorizar el entorno y el rendimiento de la instancia de AEM una vez implementada.
 contentOwner: AG
-feature: Asset Management
+feature: Administración de activos
 role: Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1766'
 ht-degree: 1%
 
 ---
-
 
 # Prácticas recomendadas de monitorización de recursos {#assets-monitoring-best-practices}
 
@@ -140,7 +139,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Comprobaciones del sistema
 
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name=systemcheck,type=HealthCheck*
    * Instancias: Un autor, todos los servidores de publicación
    * Umbral de alarma: Cuando el estado no es correcto
@@ -148,7 +147,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Cola de replicación
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name=replicationQueue,type=HealthCheck*
    * Instancias: Un autor, todos los servidores de publicación
    * Umbral de alarma: Cuando el estado no es correcto
@@ -156,7 +155,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Rendimiento de la respuesta
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name=requestStatus,type=HealthCheck*
    * Instancias: Todos los servidores
    * Duración de la alarma: Cuando el estado no es correcto
@@ -164,7 +163,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Rendimiento de consultas
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name= queriesStatus,type=HealthCheck*
    * Instancias: Un autor, todos los servidores de publicación
    * Umbral de alarma: Cuando el estado no es correcto
@@ -172,7 +171,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Paquetes activos
 
-   * MBean: org.apache.sling.healthCheck:name=inactiveBundles,type=HealthCheck 
+   * MBean: org.apache.sling.healthCheck:name=inactiveBundles,type=HealthCheck
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name=inactiveBundles,type=HealthCheck*
    * Instancias: Todos los servidores
    * Umbral de alarma: Cuando el estado no es correcto
@@ -180,7 +179,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 
 * Errores de registro
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.healthCheck:name=logErrorHealthCheck,type=HealthCheck*
    * Instancias: Todos los servidores
    * Umbral de alarma: Cuando el estado no es correcto

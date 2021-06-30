@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Administración de recursos,Buscar,Representaciones,Colaboración
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
+source-wordcount: '10131'
 ht-degree: 2%
 
 ---
@@ -135,7 +135,7 @@ Para superar esta situación, AEM Assets ingesta un recurso a la vez (carga seri
 
 La carga serie de recursos está activada de forma predeterminada. Para desactivar la función y permitir la carga simultánea, superponga el nodo `fileupload` en CRXDe y establezca el valor de la propiedad `parallelUploads` en `true`.
 
-### Cargar recursos mediante FTP {#uploading-assets-using-ftp}
+### Carga de recursos mediante FTP {#uploading-assets-using-ftp}
 
 Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. Si tiene intención de cargar recursos de gran tamaño (>1 GB) o carpetas y subcarpetas enteras, debe usar FTP. Incluso puede configurar la carga FTP para que se produzca de forma programada y recurrente.
 
@@ -192,7 +192,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 |  | Opciones de eVideo | Puede transcodificar un archivo de vídeo eligiendo un ajuste preestablecido de vídeo.<br> Consulte  [Configuración de las opciones de carga de eVideo](#setting-evideo-upload-options). |
 |  | Valores preestablecidos de conjunto por lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Ajustes preestablecidos de conjunto de lotes de Dynamic Media Classic.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes al cargar](#setting-batch-set-presets-at-upload). |
 
-#### Definir las opciones de edición de imágenes al cargar {#setting-image-editing-options-at-upload}
+#### Definir opciones de edición de imágenes al cargar {#setting-image-editing-options-at-upload}
 
 Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar las siguientes acciones de edición en el cuadro de diálogo **[!UICONTROL Opciones de carga de trabajo]**:
 
@@ -255,7 +255,7 @@ Utilice las **[!UICONTROL Opciones de recorte]** y **[!UICONTROL Opciones de per
 |  | Photoshop y nombre de capa | Nombra las imágenes después del archivo PSD seguido del nombre de la capa o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Price Tag en un archivo PSD llamado SpringAd se llama Spring Ad_Price Tag. Una capa con el nombre predeterminado Capa 2 se llama Anuncio de primavera_2. |
 | Ancla |  | Especifique cómo se anclan las imágenes en plantillas generadas a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo rellenen el espacio asignado en la plantilla. |
 
-#### Definir las opciones de carga de PDF {#setting-pdf-upload-options}
+#### Definir opciones de carga de PDF {#setting-pdf-upload-options}
 
 Al cargar un archivo PDF, puede aplicarle formato de varias formas. Recorte sus páginas, extraiga palabras de búsqueda, introduzca una resolución de píxeles por pulgada y elija un espacio de color. Los archivos PDF suelen contener un margen de recorte, marcas de recorte, marcas de registro y otras marcas de impresora. Puede recortar estas marcas desde los lados de las páginas a medida que carga un archivo PDF.
 
@@ -278,7 +278,7 @@ Elija entre las siguientes opciones:
 |  | Forzar como CMYK | Se convierte al espacio de color CMYK. |
 |  | Forzar como escala de grises | Se convierte al espacio de color de escala de grises. |
 
-#### Establecer las opciones de carga de eVideo {#setting-evideo-upload-options}
+#### Definir las opciones de carga de eVideo {#setting-evideo-upload-options}
 
 Puede transcodificar un archivo de vídeo eligiendo entre varios ajustes preestablecidos de vídeo.
 
@@ -302,7 +302,7 @@ Si carga numerosos recursos, las llamadas de E/S al servidor de AEM aumentan dr�
 
 La carga de transmisión está deshabilitada para AEM que se ejecuta en el servidor JEE con una versión de servlet-api inferior a 3.1.
 
-### Extraer archivo ZIP que contenga recursos {#extract-zip-archive-containing-assets}
+### Extraer archivo ZIP que contiene recursos {#extract-zip-archive-containing-assets}
 
 Puede cargar archivos ZIP como cualquier otro recurso admitido. Las mismas reglas de nombre de archivo se aplican a los archivos ZIP. AEM permite extraer un archivo ZIP a una ubicación DAM.
 
@@ -630,14 +630,14 @@ En el caso de los recursos cargados recientemente, sus metadatos (incluidos tít
 
 Esto se debe a que AEM Assets espera hasta la caducidad de un tiempo de espera (1 hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados/actualizados y agregarlos a la lista de sugerencias.
 
-## Usar acciones rápidas {#quick-actions}
+## Uso de las acciones rápidas {#quick-actions}
 
 Los iconos de acción rápida están disponibles para un único recurso a la vez. En función del dispositivo, realice las siguientes acciones para mostrar los iconos de acción rápida:
 
 * Dispositivos táctiles: Toque y sostenga. Por ejemplo, en un iPad, puede pulsar y mantener presionado un recurso para que se muestren las acciones rápidas.
 * Dispositivos no táctiles: Puntero al pasar el ratón. Por ejemplo, en un dispositivo de escritorio, se muestra la barra de acciones rápidas si pasa el puntero sobre la miniatura del recurso.
 
-### Vaya a los recursos y selecciónelos {#navigating-and-selecting-assets}
+### Navegar a recursos y seleccionarlos {#navigating-and-selecting-assets}
 
 Puede ver, navegar y seleccionar recursos con cualquiera de las vistas disponibles (tarjeta, columna, lista) mediante el icono **[!UICONTROL Seleccionar]**. **** Seleccionar aparece como una acción rápida en la vista de tarjeta.
 
@@ -781,6 +781,14 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
 
 ### Ver anotaciones guardadas {#viewing-saved-annotations}
 
+Solo puede ver una anotación a la vez.
+
+>[!NOTE]
+>
+>Si selecciona varias anotaciones, la anotación más reciente estará visible en la interfaz de usuario.
+>
+>La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
+
 1. Para ver las anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
 1. Pulse el icono **[!UICONTROL Navegación global]** y pulse **[!UICONTROL Línea de tiempo]** en la lista.
@@ -802,6 +810,10 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
 Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar el estado como archivo PDF para su revisión sin conexión.
 
 También puede elegir imprimir solo las anotaciones o el estado de revisión.
+
+>[!NOTE]
+>
+>Puede seleccionar varias anotaciones al imprimir el recurso anotado como PDF.
 
 Es posible que las anotaciones largas no se representen correctamente en el archivo PDF. Para una representación óptima, Adobe recomienda limitar las anotaciones a 50 palabras.
 

@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formularios
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.4
 audience: end-user
 user-guide-title: Guía de Adobe Experience Manager 6.4 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 4%
@@ -135,7 +134,7 @@ ht-degree: 4%
    + [Trabajo con el modelo de datos de formulario](using/work-with-form-data-model.md)
    + [Uso del modelo de datos de formulario](using/using-form-data-model.md)
 + Forms adaptable: creación básica {#adaptive-forms-basic-authoring}
-   + [Prácticas recomendadas para usar formularios adaptables](using/adaptive-forms-best-practices.md) 
+   + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Creación de un formulario adaptable](using/creating-adaptive-form.md)
    + [Fragmentos de formulario adaptables](using/adaptive-form-fragments.md)
    + [Configuración de la acción Enviar](using/configuring-submit-actions.md)
@@ -565,7 +564,7 @@ ht-degree: 4%
    + Servicio de información del sistema {#system-information-service}
       + [Configuración del servicio de información del sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servicio de información del sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Informes de procesos  {#process-reporting}
++ Informes de procesos {#process-reporting}
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funcionamiento de los informes de procesos](/help/forms/using/process-reporting/process-reporting-architecture.md)

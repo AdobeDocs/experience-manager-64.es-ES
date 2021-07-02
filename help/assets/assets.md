@@ -2,16 +2,15 @@
 title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Asset Management
+feature: Administración de activos
 role: Leader,Architect,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 35%
+source-wordcount: '863'
+ht-degree: 36%
 
 ---
-
 
 # Acerca de [!DNL Adobe Experience Manager Assets] como solución DAM {#about-assets}
 
@@ -42,7 +41,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 ![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
-### Administración de activos digitales frente al componente de imagen {#digital-asset-management-versus-image-component}
+### Gestión de recursos digitales frente al componente de imagen {#digital-asset-management-versus-image-component}
 
 Cuando determine si desea colocar una imagen en un repositorio DAM o utilizar un componente de imagen, tenga en cuenta el ciclo de vida de la imagen:
 
@@ -53,13 +52,13 @@ Cuando determine si desea colocar una imagen en un repositorio DAM o utilizar un
 
 Un recurso es un documento digital, una imagen, un vídeo o audio (o parte del mismo) que puede tener varias representaciones y subrecursos (por ejemplo, capas en un archivo de Photoshop, diapositivas en un archivo de PowerPoint, páginas en un pdf o archivos en un ZIP).
 
-Un activo es, en esencia, un binario más metadatos, representaciones y subactivos. Consulte la [Guía de rendimiento de DAM](/help/sites-deploying/assets-performance-sizing.md) para obtener información detallada.
+Un activo es, en esencia, un binario más metadatos, representaciones y subactivos. Consulte la [Guía de rendimiento de DAM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html) para obtener información detallada.
 
 >[!CAUTION]
 >
 >Cargar o editar un gran volumen de recursos (especialmente imágenes) puede afectar al rendimiento de su implementación [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminología  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminología {#aem-assets-terminology}
 
 Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender la siguiente terminología:
 
@@ -92,9 +91,9 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
 
-## [!DNL Experience Manager Assets] y  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Recursos y Biblioteca de medios](medialibrary.md) para obtener información sobre las diferencias.
+Consulte [Assets y Media Library](medialibrary.md) para obtener información sobre las diferencias.
 
 >[!MORELIKETHIS]
 >

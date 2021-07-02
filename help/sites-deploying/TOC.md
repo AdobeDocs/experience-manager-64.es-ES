@@ -8,10 +8,10 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.4, incluida nuestra implementación en la nube de Adobe Managed Services.
 feature: Implementación
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 18%
+source-wordcount: '373'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 18%
    + [Comprobaciones de coherencia y travesía](consistency-check.md)
    + [Directrices de rendimiento](performance-guidelines.md)
    + [Optimización del rendimiento](configuring-performance.md)
-   + [Guía de rendimiento de recursos](assets-performance-sizing.md)
+   + [Guía de rendimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [Artículos de procedimientos de configuración](ht-deploy.md)
    + [Eliminación de sitios de Geometrixx](removing-the-geometrixx-sites.md)
    + [Configuración de la consola web](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 18%
    + [Reestructuración de repositorios en AEM 6.4](repository-restructuring.md)
    + [Reestructuración común de repositorios en AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de sitios en AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de activos en AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Reestructuración del repositorio de activos en AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Reestructuración del repositorio de Dynamic Media en AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de Forms en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración de repositorios de comercio electrónico en AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)

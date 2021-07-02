@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Actualización
+exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1139'
 ht-degree: 2%
 
 ---
-
 
 # Reestructuración del repositorio de activos en AEM 6.4{#assets-repository-restructuring-in-aem}
 
@@ -24,21 +23,21 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 
 **Con actualización a la versión 6.4**
 
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Antes de la actualización a la versión 6.5**
 
-* [Plantilla de notificación de correo electrónico de Evento de recurso/colección](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Diseños de uso compartido de recursos clásicos](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [Descargar plantilla de notificación de correo electrónico de recursos](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Ejemplo de licencias DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [Plantilla de notificación de correo electrónico de Evento de recurso/colección](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Diseños de uso compartido de recursos clásicos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Descargar plantilla de notificación de correo electrónico de recursos](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Ejemplo de licencias DRM](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [Plantilla de notificación para compartir correo electrónico de vínculo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [Scripts de flujo de trabajo de InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Configuraciones de transcodificación de vídeo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Misc](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [Plantilla de notificación para compartir correo electrónico de vínculo](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Scripts de flujo de trabajo de InDesign](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Configuraciones de transcodificación de vídeo](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Misc](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-## Con actualización de 6.4 {#with-upgrade}
+## Con actualización a la versión 6.4 {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -63,9 +62,9 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody> 
 </table>
 
-## Antes de la actualización a0/> de 6.5{#prior-to-upgrade}
+## Antes de la actualización a la versión 6.5 {#prior-to-upgrade}
 
-### Plantilla de notificación de correo electrónico de Evento de Recurso/Recopilación {#asset-collection-event-e-mail-notification-template}
+### Plantilla de notificación de correo electrónico de Evento de recurso/colección {#asset-collection-event-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -128,7 +127,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody> 
 </table>
 
-### Descargar plantilla de notificación de correo electrónico del recurso {#download-asset-e-mail-notification-template}
+### Descargar plantilla de notificación de correo electrónico de recursos {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -169,7 +168,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 | **Directrices de reestructuración** | N/D |
 | **Notas** | N/D |
 
-### Plantilla de notificación para compartir correo electrónico {#link-share-e-mail-notification-template}
+### Plantilla de notificación para compartir correo electrónico de vínculo {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -312,4 +311,3 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr> 
  </tbody> 
 </table>
-

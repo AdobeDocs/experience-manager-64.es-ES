@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Actualización
+exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-
-# Reestructuración del repositorio en AEM 6.4{#repository-restructuring-in-aem}
+# Reestructuración de repositorios en AEM 6.4{#repository-restructuring-in-aem}
 
 ## Introducción {#introduction}
 
@@ -45,7 +44,7 @@ Al planificar una actualización a AEM 6.4, se debe hacer referencia a las sigui
 
 * [Reestructuración de repositorios común a todas las soluciones AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Reestructuración de repositorios de AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [Reestructuración de repositorios de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [Reestructuración de repositorios de AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

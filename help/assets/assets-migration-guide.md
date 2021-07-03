@@ -2,16 +2,15 @@
 title: Migrar recursos a Adobe Experience Manager Assets de forma masiva
 description: Cómo introducir recursos en AEM, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
-feature: Migration,Renditions,Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Migración,Representaciones,Administración de recursos
+role: Architect,Admin
+exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 11%
 
 ---
-
 
 # Guía de migración de recursos {#assets-migration-guide}
 
@@ -48,7 +47,7 @@ La migración de recursos a AEM requiere varios pasos y debe verse como un proce
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Desactivar flujos de trabajo {#disable-workflows}
+### Desactivación de flujos de trabajo {#disable-workflows}
 
 Antes de iniciar una migración, deshabilite los iniciadores para el flujo de trabajo `DAM Update Asset` . Es mejor ingerir todos los recursos en el sistema y luego ejecutar los flujos de trabajo por lotes. Si ya está activo mientras se realiza la migración, puede programar que estas actividades se ejecuten durante las horas de inactividad.
 
@@ -118,7 +117,7 @@ Una vez activados los recursos, puede clonar la instancia de publicación para c
 
 Una vez que hayamos completado la migración, los iniciadores de los flujos de trabajo de recursos de actualización de DAM deben volver a habilitarse para admitir la generación de representaciones y la extracción de metadatos para el uso diario del sistema.
 
-## Migración de recursos entre implementaciones de AEM {#migrate-between-aem-instances}
+## Migración de recursos en implementaciones de AEM {#migrate-between-aem-instances}
 
 Aunque no es tan común, a veces es necesario migrar grandes cantidades de datos de una instancia de AEM a otra; por ejemplo, cuando realice una actualización de AEM, actualice el hardware o migre a un nuevo centro de datos, como con una migración de AMS.
 

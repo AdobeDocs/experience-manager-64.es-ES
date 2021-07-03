@@ -2,16 +2,15 @@
 title: Configure operaciones asincrónicas en [!DNL Adobe Experience Manager].
 description: Complete asincrónicamente algunas tareas que requieren muchos recursos para optimizar el rendimiento en [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Administración de activos
+role: User
+exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 22%
 
 ---
-
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
@@ -71,7 +70,7 @@ Puede modificar la programación de la tarea de depuración y la duración duran
 
    ![Configuración para programar la depuración de tareas asincrónicas](assets/purge_job.png)
 
-## Configurar el umbral para operaciones de eliminación asincrónicas {#configure-thresholds-for-asynchronous-delete-operations}
+## Configuración del umbral para operaciones de eliminación asincrónicas {#configure-thresholds-for-asynchronous-delete-operations}
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral establecido, la operación de eliminación se realiza de forma asíncrona.
 
@@ -81,7 +80,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
    ![Establecer el límite de umbral para que la tarea elimine recursos](assets/delete_threshold.png)
 
-## Configurar el umbral para operaciones de movimiento asincrónico {#configure-thresholds-for-asynchronous-move-operations}
+## Configuración del umbral para operaciones de movimiento asincrónico {#configure-thresholds-for-asynchronous-move-operations}
 
 Si el número de recursos, carpetas o referencias que se van a mover supera el número de umbral establecido, la operación de desplazamiento se realiza de forma asíncrona.
 

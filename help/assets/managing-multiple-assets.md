@@ -2,16 +2,15 @@
 title: Edición masiva de metadatos de varios recursos y colecciones
 description: Obtenga información sobre cómo editar los metadatos de muchos recursos y colecciones simultáneamente para propagar rápidamente los cambios habituales en los metadatos.
 contentOwner: AG
-feature: Asset Management,Metadata,Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Metadatos,Colecciones
+role: User
+exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 14%
+source-wordcount: '440'
+ht-degree: 13%
 
 ---
-
 
 # Administrar varios recursos y colecciones {#managing-multiple-assets-and-collections}
 
@@ -46,7 +45,7 @@ Para personalizar la página de propiedades de metadatos, como agregar, modifica
 >
 >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
-## Configurar límite para la actualización de metadatos masivos {#configure-limit-for-bulk-metadata-update}
+## Configuración del límite de actualización de metadatos masivos {#configure-limit-for-bulk-metadata-update}
 
 Para evitar una situación similar a DOS, AEM limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, puede que llegue al límite y los metadatos no se actualicen para obtener más recursos. AEM genera la siguiente advertencia en los registros:
 
@@ -57,3 +56,4 @@ Para cambiar el límite, acceda a **[!UICONTROL Tools > Operations > Web Console
 >[!MORELIKETHIS]
 >
 >* [Editar metadatos de varias colecciones de forma masiva](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+

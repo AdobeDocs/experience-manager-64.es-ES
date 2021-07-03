@@ -2,16 +2,15 @@
 title: Desarrollo de proxy de recursos
 description: 'Un proxy es una instancia AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones compatibles, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
 contentOwner: AG
-feature: Asset Processing
-role: Administrator, Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Procesamiento de recursos
+role: Admin, Architect
+exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Desarrollo de proxy de recursos {#assets-proxy-development}
 
@@ -25,7 +24,7 @@ Cuando el proxy es una instancia de AEM independiente, esto ayuda a reducir la c
 
 Hay un proxy disponible a través del servlet HTTP cuando está configurado para aceptar trabajos de procesamiento en: `/libs/dam/cloud/proxy`. Este servlet crea un trabajo de sling a partir de los parámetros registrados. A continuación, esto se agrega a la cola de trabajos del proxy y se conecta al trabajador del proxy adecuado.
 
-### Operaciones admitidas {#supported-operations}
+### Operaciones compatibles {#supported-operations}
 
 * `job`
 

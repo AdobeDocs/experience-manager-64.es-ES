@@ -3,16 +3,15 @@ title: Administrar colecciones de recursos
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Colecciones
+role: User
+exl-id: cadfc569-5725-4012-9f73-864243ba7743
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 15%
 
 ---
-
 
 # Administrar colecciones {#managing-collections}
 
@@ -27,7 +26,7 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 * Colección que contiene una lista de referencia estática de recursos, carpetas y otras colecciones.
 * Colección inteligente que incluye recursos de forma dinámica en función de criterios de búsqueda.
 
-## Acceda a la consola de colecciones {#navigating-the-collections-console}
+## Acceso a la consola de colecciones {#navigating-the-collections-console}
 
 Para abrir las **[!UICONTROL Colecciones]**, toque o haga clic en el logotipo del Experience Manager. Desde la página de navegación, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Colecciones]**.
 
@@ -57,7 +56,7 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
 
    Para añadir recursos a la colección, vaya a la interfaz de usuario de Assets. Para obtener más información, consulte [Agregar recursos a una colección](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection).
 
-### Crear colecciones utilizando dropzone {#create-collections-using-dropzone}
+### Crear colecciones mediante dropzone {#create-collections-using-dropzone}
 
 Puede arrastrar recursos de la interfaz de usuario de Assets a una colección. También puede crear una copia de una colección y arrastrar los recursos allí.
 
@@ -134,7 +133,7 @@ Las colecciones inteligentes se crean guardando una búsqueda para que pueda mod
 
 1. En la interfaz de usuario de Assets, pulse o haga clic en el icono de búsqueda de la barra de herramientas.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Con el cursor en el cuadro Omnisearch , pulse la tecla Return .
 
@@ -289,7 +288,7 @@ Editar búsquedas guardadas es lo mismo que editar colecciones inteligentes. Par
 
 1. En el cuadro de diálogo, pulse o haga clic en **[!UICONTROL Eliminar]** para eliminar la búsqueda guardada.
 
-## Ejecutar un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
+## Ejecución de un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
 
 Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la colección contiene colecciones anidadas, el flujo de trabajo también se ejecuta en los recursos de las colecciones anidadas. Sin embargo, si la colección y la colección anidada contienen recursos duplicados, el flujo de trabajo solo se ejecuta una vez para estos recursos.
 
@@ -306,5 +305,5 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 >[!MORELIKETHIS]
 >
 >* [Configuración de las notificaciones por correo electrónico de Recursos Experience Manager](/help/sites-administering/notification.md#assetsconfig)
->* [Crear una tarea de revisión para colecciones](bulk-approval.md)
+* [Crear una tarea de revisión para colecciones](bulk-approval.md)
 

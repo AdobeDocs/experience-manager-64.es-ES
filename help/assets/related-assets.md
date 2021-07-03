@@ -2,16 +2,15 @@
 title: Activos relacionados
 description: Obtenga información sobre cómo relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos.
 contentOwner: AG
-feature: Asset Management,Collaboration
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos,Colaboración
+role: User
+exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
-
 
 # Activos relacionados {#related-assets}
 
@@ -64,7 +63,7 @@ De este modo, tiene la flexibilidad de compartir un archivo de baja resolución 
 
 1. Pulse o haga clic **[!UICONTROL OK]** para cerrar el cuadro de diálogo. Los recursos para los que ha eliminado relaciones se eliminan de la lista de recursos relacionados en la sección **[!UICONTROL Relacionados]**.
 
-## Traducción de activos relacionados {#translating-related-assets}
+## Traducción de recursos relacionados {#translating-related-assets}
 
 La creación de relaciones de origen/derivadas entre recursos mediante la función Recursos relacionados también es útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, AEM Assets recupera automáticamente cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen, como se muestra a continuación.
 

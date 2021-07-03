@@ -2,16 +2,15 @@
 title: Configure el etiquetado de recursos mediante el servicio de contenido inteligente.
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Etiquetas inteligentes,Etiquetado
+role: Admin
+exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 34%
 
 ---
-
 
 # Configuración del etiquetado de recursos mediante el servicio de contenido inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
@@ -39,7 +38,7 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 
 Para habilitar Etiquetas inteligentes mejoradas, además de las anteriores, instale también el último [paquete de servicio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es).
 
-## Cree la configuración del servicio de contenido inteligente para obtener el certificado público {#obtain-public-certificate}
+## Crear la configuración del servicio de contenido inteligente para obtener un certificado público {#obtain-public-certificate}
 
 Un certificado público le permite autenticar su perfil en [!DNL Adobe Developer Console].
 
@@ -73,7 +72,7 @@ Un certificado público le permite autenticar su perfil en [!DNL Adobe Developer
 
    *Figura: Configuración del servicio de etiquetado inteligente*
 
-### Vuelva a configurar cuándo caduca un certificado {#certrenew}
+### Volver a configurar cuándo caduca un certificado {#certrenew}
 
 Una vez caducado un certificado, ya no es de confianza. No puede renovar un certificado caducado. Para añadir un nuevo certificado, siga estos pasos.
 
@@ -93,7 +92,7 @@ Una vez caducado un certificado, ya no es de confianza. No puede renovar un cert
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya a los servicios de contenido inteligente existentes en la página **[!UICONTROL Integraciones]**. Cargue el nuevo certificado. Para obtener más información, consulte las instrucciones de [Creación de la integración de Adobe Developer Console](#create-adobe-i-o-integration).
 
-## Crear la integración de Adobe Developer Console {#create-adobe-i-o-integration}
+## Creación de la integración de Adobe Developer Console {#create-adobe-i-o-integration}
 
 Para utilizar las API del servicio de contenido inteligente, cree una integración en la consola del desarrollador de Adobe para obtener [!UICONTROL Clave de API] (generada en el campo [!UICONTROL CLIENT ID] de integración de la consola del desarrollador de Adobe), [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID de organización] y [!UICONTROL CLICLICLIENT SECRET] para [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] de la configuración de nube en [!DNL Experience Manager].
 
@@ -190,6 +189,6 @@ Después de completar la configuración, utilice un MBean de JMX para validarla.
 >[!MORELIKETHIS]
 >
 >* [Administrar etiquetas inteligentes](managing-smart-tags.md)
->* [Descripción general y formación de etiquetas inteligentes](enhanced-smart-tags.md)
->* [Directrices y reglas para la formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
+* [Descripción general y formación de etiquetas inteligentes](enhanced-smart-tags.md)
+* [Directrices y reglas para la formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
 

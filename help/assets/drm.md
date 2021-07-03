@@ -2,16 +2,15 @@
 title: Digital Rights Management en [!DNL Adobe Experience Manager Assets].
 description: Aprenda a administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
-feature: DRM,Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: DRM,Administración de activos
+role: User,Admin
+exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1433'
 ht-degree: 6%
 
 ---
-
 
 # Digital Rights Management para los recursos {#digital-rights-management-in-assets}
 
@@ -108,7 +107,7 @@ Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de re
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-## Estados de recursos {#asset-states}
+## Estados de los recursos {#asset-states}
 
 La consola [!DNL Assets] puede mostrar varios estados para los recursos. En función del estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 

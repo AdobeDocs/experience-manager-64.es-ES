@@ -2,18 +2,17 @@
 title: Integración de AEM Assets con Adobe InDesign Server
 description: Aprenda a integrar AEM Assets con InDesign Server.
 contentOwner: AG
-feature: Publishing
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Publicación
+role: Admin
+exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1703'
 ht-degree: 4%
 
 ---
 
-
-# Integrar AEM Assets con Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Integración de AEM Assets con Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager (AEM) Assets utiliza:
 
@@ -186,7 +185,7 @@ De forma predeterminada, el controlador de extracción de exportación IDML est�
 
 1. Haga clic en **[!UICONTROL Aceptar]** para guardar.
 
-### Configuración del externalizador de vínculos CQ de día {#configuring-day-cq-link-externalizer}
+### Configuración del externalizador de vínculos de CQ de día {#configuring-day-cq-link-externalizer}
 
 Si el InDesign Server y las AEM están en diferentes hosts o si una o ambas aplicaciones no funcionan en puertos predeterminados, configure **Day CQ Link Externalizer** para establecer el nombre de host, el puerto y la ruta de contenido para el InDesign Server.
 
@@ -196,7 +195,7 @@ Si el InDesign Server y las AEM están en diferentes hosts o si una o ambas apli
 
    ![Vincular configuración del externalizador](assets/link-externalizer-config.png)
 
-### Habilitación del procesamiento de trabajos paralelos para InDesign Server {#enabling-parallel-job-processing-for-indesign-server}
+### Activación del procesamiento de trabajos en paralelo para InDesigns Server {#enabling-parallel-job-processing-for-indesign-server}
 
 Ahora puede habilitar el procesamiento paralelo de trabajos para IDS.
 
@@ -239,7 +238,7 @@ Para configurar el número de trabajos de ID paralelos:
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## Habilite la compatibilidad con el servidor Adobe InDesign 10.0 o posterior {#enabling-support-for-indesign-server-or-higher}
+## Habilitación de la compatibilidad con el servidor Adobe InDesign 10.0 o posterior {#enabling-support-for-indesign-server-or-higher}
 
 Para el servidor de InDesign 10.0 o superior, realice los siguientes pasos para habilitar la compatibilidad con varias sesiones.
 
@@ -251,7 +250,7 @@ Para el servidor de InDesign 10.0 o superior, realice los siguientes pasos para 
 >
 >Para la integración [!DNL InDesign Server] con [!DNL Assets], utilice un procesador de varios núcleos porque la función de soporte de sesión necesaria para la integración no es compatible con sistemas de un solo núcleo.
 
-## Configurar las credenciales del Experience Manager {#configure-aem-credentials}
+## Configuración de las credenciales del Experience Manager {#configure-aem-credentials}
 
 Puede cambiar las credenciales de administrador predeterminadas (nombre de usuario y contraseña) para acceder al servidor de InDesign desde la instancia de AEM sin interrumpir la integración con el servidor de Adobe InDesign.
 

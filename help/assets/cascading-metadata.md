@@ -2,16 +2,15 @@
 title: Metadatos en cascada
 description: Este artículo describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '981'
 ht-degree: 13%
 
 ---
-
 
 # Metadatos en cascada {#cascading-metadata}
 

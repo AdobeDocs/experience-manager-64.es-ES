@@ -2,16 +2,15 @@
 title: Metadatos de XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Extensible Metadata Platform) que utiliza AEM Assets para la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '816'
 ht-degree: 19%
 
 ---
-
 
 # Metadatos XMP {#xmp-metadata}
 
@@ -38,7 +37,7 @@ entidad concreta denominada recurso; es decir, las propiedades son &quot;about&q
 
 Adobe introdujo primero el XMP estándar como parte del producto de software de Adobe Acrobat. Desde entonces, la norma XMP ha sido ampliamente adoptada.
 
-### ecosistema de XMP {#xmp-ecosystem}
+### XMP ecosistema {#xmp-ecosystem}
 
 XMP define un modelo de [metadatos](https://es.wikipedia.org/wiki/Metadatos) que se puede utilizar con cualquier conjunto definido de elementos de metadatos. XMP también define [esquemas](https://en.wikipedia.org/wiki/XML_schema) específicos para propiedades básicas útiles para registrar el historial de un recurso a medida que pasa por varios pasos de procesamiento, desde ser fotografiado, [escaneado](https://es.wikipedia.org/wiki/Esc%C3%A1ner_inform%C3%A1tico) o creado como texto, pasando por etapas de edición fotográfica (como [recorte](https://en.wikipedia.org/wiki/Cropping_%28image%29) o ajuste de color), hasta ensamblarse en una imagen final. XMP permite a cada programa o dispositivo de software añadir su propia información a un recurso digital, que se puede retener en el archivo digital final.
 
@@ -61,7 +60,7 @@ El XMP estándar está diseñado para ser extensible, lo que le permite añadir 
 >
 >XMP generalmente no permite incrustar tipos de datos binarios. Para cargar datos binarios en XMP, por ejemplo, imágenes en miniatura, deben codificarse en un formato compatible con XML, como Base64.
 
-## Conceptos principales de XMP {#xmp-core-concepts}
+## XMP Conceptos principales {#xmp-core-concepts}
 
 Las secciones siguientes describen los conceptos principales de XMP, incluidos los espacios de nombres y esquemas, las propiedades y los valores, y las alternativas de idioma.
 

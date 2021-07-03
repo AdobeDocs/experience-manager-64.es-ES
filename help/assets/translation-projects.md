@@ -2,16 +2,15 @@
 title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en AEM.
 contentOwner: AG
-feature: Translation
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Traducción
+role: Architect,Admin
+exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1935'
 ht-degree: 23%
 
 ---
-
 
 # Creación de proyectos de traducción {#creating-translation-projects}
 
@@ -33,7 +32,7 @@ Ejecute este flujo de trabajo para traducir un grupo adicional de recursos e inc
 >
 >Si inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y archivos InDesign, sus subrecursos o representaciones (si hay) no se envían para su traducción.
 
-## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
+## Creación y traducción de flujos de trabajo {#create-and-translate-workflow}
 
 El flujo de trabajo Crear y traducir se utiliza para generar textos de idiomas para un idioma en particular por primera vez. El flujo de trabajo ofrece las siguientes opciones:
 

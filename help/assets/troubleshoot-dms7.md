@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Solución de problemas
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 En el siguiente documento se describe la solución de problemas para Dynamic Media que ejecuta el modo de ejecución **dynamic_media_scene7**.
 
-## Configuración {#setup-and-configuration}
+## Configuración y configuración {#setup-and-configuration}
 
 Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo siguiente:
 
@@ -35,11 +34,11 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 
    Este agente de replicación se encuentra en **[!UICONTROL Agents]** en Author.
 
-## General (todos los recursos) {#general-all-assets}
+## General (todos los activos) {#general-all-assets}
 
 A continuación se ofrecen algunos consejos y trucos generales para todos los recursos.
 
-### Propiedades del estado de sincronización de activos {#asset-synchronization-status-properties}
+### Propiedades del estado de sincronización de recursos {#asset-synchronization-status-properties}
 
 Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso se ha realizado correctamente de AEM a Dynamic Media:
 

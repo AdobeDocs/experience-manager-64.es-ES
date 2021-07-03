@@ -7,12 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Image Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Ajustes preestablecidos de imagen
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3838'
 ht-degree: 8%
 
 ---
@@ -97,7 +96,7 @@ Puede acceder a las **[!UICONTROL Rasterizar PDF/AI Image Preview Representtion]
 
 Toque en Adobe Experience Manager en la parte superior izquierda, vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione **[!UICONTROL Recurso de actualización de DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En la página **[!UICONTROL DAM Update Asset workflow]**, pulse dos veces el componente de proceso **[!UICONTROL Rasterizar PDF/AI Image Preview Representation]** para abrir su cuadro de diálogo **[!UICONTROL Propiedades de los pasos]**.
 
-### Rasterizar las opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+### Rasterizar opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar el flujo de trabajo de PDF o AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -139,7 +138,7 @@ Con los argumentos de proceso predeterminados, la primera página de un document
 
 El componente de proceso **[!UICONTROL Rasterizar PDF/AI Image Preview Representation]** tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes grandes pueden desbordarse la memoria proporcionada a la JVM (máquina virtual Java). Se debe tener cuidado de proporcionar a la JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, con cada uno con el potencial de crear una imagen al tamaño máximo configurado.
 
-### Formato de archivo de InDesign (INDD) {#indesign-indd-file-format}
+### Formato del archivo InDesign (INDD) {#indesign-indd-file-format}
 
 Si tiene intención de admitir la ingesta de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.
 
@@ -180,7 +179,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
  </tbody> 
 </table>
 
-## Configuración del tamaño de miniatura de imagen {#configuring-image-thumbnail-size}
+## Configuración del tamaño de la miniatura de imagen {#configuring-image-thumbnail-size}
 
 Puede configurar el tamaño de las miniaturas configurando esos ajustes en el flujo de trabajo **[!UICONTROL Activo de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Dynamic Media Process Image Assets]**) para los recursos de imagen dinámica y el otro (**[!UICONTROL Procesar miniaturas]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
@@ -344,7 +343,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
  </tbody>
 </table>
 
-#### Opciones de pestaña avanzadas {#advanced-tab-options}
+#### Opciones de ficha avanzadas {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -491,7 +490,7 @@ A continuación se presentan algunos ejemplos básicos de lo que puede hacer con
 1. Seleccione un ajuste preestablecido y, a continuación, pulse **[!UICONTROL Editar]**.
 1. En la página **[!UICONTROL Editar ajustes preestablecidos de imagen]**, realice los cambios que desee y pulse **[!UICONTROL Guardar]**.
 
-## Publicar ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
+## Publicación de ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
 
 Si está ejecutando Dynamic Media en modo híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
 

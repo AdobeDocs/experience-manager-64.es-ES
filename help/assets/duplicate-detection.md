@@ -2,16 +2,15 @@
 title: Activación de la detección de duplicados
 description: Obtenga información sobre cómo habilitar la detección de recursos duplicados en AEM.
 contentOwner: AG
-feature: Asset Management,Asset Reports
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos,Informes de activos
+role: User,Admin
+exl-id: 138cf649-9e21-415e-9861-b07caacc85db
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
-
 
 # Activación de la detección de duplicados {#enabling-duplicate-detection}
 

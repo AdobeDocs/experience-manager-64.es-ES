@@ -2,16 +2,15 @@
 title: Guía de ajuste del rendimiento de los activos
 description: Áreas de enfoque clave en AEM configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos
+role: Architect,Admin
+exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3208'
 ht-degree: 0%
 
 ---
-
 
 # Guía de ajuste del rendimiento de los activos {#assets-performance-tuning-guide}
 
@@ -29,7 +28,7 @@ Estas son algunas áreas clave en las que puede descubrir y solucionar problemas
 
 Aunque AEM es compatible con varias plataformas, el Adobe ha encontrado el soporte bueno para herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a la facilidad de implementación. Lo ideal es implementar un sistema operativo de 64 bits para satisfacer los altos requerimientos de memoria de una implementación de AEM Assets. Al igual que con cualquier implementación AEM, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una única instancia de autor, se ha descubierto que funciona mejor que MongoMK. Puede añadir instancias de descarga de TarMK para aumentar el poder de procesamiento del flujo de trabajo de la implementación de AEM Assets.
 
-### Carpeta temporal {#temp-folder}
+### Carpeta Temp {#temp-folder}
 
 Para mejorar los tiempos de carga de los recursos, utilice almacenamiento de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se puede utilizar una unidad RAM o SSD. En entornos basados en la nube, se podría utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, se puede utilizar una unidad [efemeral](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) para la carpeta temporal.
 
@@ -64,13 +63,13 @@ Debe configurar los siguientes parámetros de JVM:
 * `-Dupdate.limit`=250000
 * `-Doak.fastQuerySize`=verdadero
 
-## Almacenamiento de datos y configuración de memoria {#data-store-and-memory-configuration}
+## Configuración del almacén de datos y la memoria {#data-store-and-memory-configuration}
 
 ### Configuración del almacén de datos de archivo {#file-data-store-configuration}
 
 Se recomienda separar el almacén de datos del almacén de segmentos para todos los usuarios de AEM Assets. Además, la configuración de los parámetros `maxCachedBinarySize` y `cacheSizeInMB` puede ayudar a maximizar el rendimiento. Establezca `maxCachedBinarySize` en el tamaño de archivo más pequeño que se pueda guardar en la caché. Especifique el tamaño de la caché en memoria que se utilizará para el almacén de datos en `cacheSizeInMB`. Adobe recomienda establecer este valor entre el 2 % y el 10 % del tamaño total de pila. Sin embargo, las pruebas de carga/rendimiento pueden ayudar a determinar la configuración ideal.
 
-### Configure el tamaño máximo de la caché de imágenes almacenada en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configurar el tamaño máximo de la caché de imágenes almacenada en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Al cargar grandes cantidades de recursos en Adobe Experience Manager, para permitir picos inesperados en el consumo de memoria y para evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes almacenada en búfer. Tomemos un ejemplo de que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documentos de 2 GB. En este caso, la caché almacenada en búfer tomaría un máximo de 1,25 GB y memoria, lo que dejaría solo 0,75 GB de memoria para picos inesperados.
 
@@ -107,7 +106,7 @@ accessKey=<snip>
  migrateFailuresCount=400
 ```
 
-## Optimización de red {#network-optimization}
+## Optimización de la red {#network-optimization}
 
 Adobe recomienda habilitar HTTPS porque muchas empresas tienen cortafuegos que olfatean el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tengan conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre cómo identificar los cuellos de botella de la red, consulte [Guía de tamaño de los recursos](assets-sizing-guide.md). Para evaluar el rendimiento de la red analizando la topología de la red, consulte [Consideraciones de la red de recursos](assets-network-considerations.md).
 
@@ -165,7 +164,7 @@ Para flujos de trabajo de gran volumen o flujos de trabajo que requieren muchos 
 
 A partir de AEM 6.2 y con un paquete de funciones para AEM 6.1, puede realizar la descarga con replicación sin binarios. En este modelo, las instancias de autor comparten un almacén de datos común y solo envían los metadatos de una y otra vez mediante la replicación de reenvío. Aunque este método funciona bien con un almacén de datos de archivos compartidos, puede haber problemas con un almacén de datos S3. Debido a que los subprocesos de escritura en segundo plano pueden inducir latencia, es posible que un recurso no se haya escrito en el almacén de datos antes de que se inicie el trabajo de descarga.
 
-### Configuración de recursos de actualización de DAM {#dam-update-asset-configuration}
+### Configuración de recursos de actualización DAM {#dam-update-asset-configuration}
 
 El flujo de trabajo de recursos de actualización de DAM contiene un conjunto completo de pasos que se configuran para tareas como la generación de Dynamic Media Classic PTIFF y la integración de InDesigns Server. Sin embargo, es posible que la mayoría de los usuarios no necesiten varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo de DAM Update Asset y eliminar los pasos innecesarios. En este caso, actualice los lanzadores de DAM Update Asset para que apunten al nuevo modelo.
 
@@ -179,13 +178,13 @@ El flujo de trabajo de recursos de actualización de DAM contiene un conjunto co
 >
 >Si tiene un espacio de disco limitado y ejecuta los flujos de trabajo de recursos de actualización de DAM intensamente, considere la posibilidad de programar la tarea de colección de residuos con más frecuencia.
 
-#### Generación de representación en tiempo de ejecución {#runtime-rendition-generation}
+#### Generación de representaciones en tiempo de ejecución {#runtime-rendition-generation}
 
 Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web o para su distribución a socios comerciales. Dado que cada representación se añade a la huella del recurso en el repositorio, Adobe recomienda utilizar esta función con cautela. Para reducir la cantidad de recursos necesarios para procesar y almacenar imágenes, puede generar estas imágenes en tiempo de ejecución en lugar de como representaciones durante la ingesta.
 
 Muchos clientes de Sites implementan un servlet de imagen que cambia el tamaño y recorta las imágenes en el momento en que se solicitan, lo que impone una carga adicional en la instancia de publicación. Sin embargo, mientras estas imágenes se puedan almacenar en caché, el desafío se puede mitigar.
 
-Un enfoque alternativo es utilizar la tecnología Dynamic Media Classic para transferir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo asuma las responsabilidades de generación de representación de la infraestructura de AEM, sino también todo el nivel de publicación.
+Un enfoque alternativo es utilizar la tecnología Dynamic Media Classic para transferir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representación de la infraestructura de AEM, sino también de todo el nivel de publicación.
 
 #### ImageMagick {#imagemagick}
 
@@ -274,7 +273,7 @@ To disable Page Extraction:
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
-### XMP escritura {#xmp-writeback}
+### XMP reescritura {#xmp-writeback}
 
 XMP reescritura actualiza el recurso original cada vez que se modifican los metadatos en AEM, lo que resulta en lo siguiente:
 
@@ -373,7 +372,7 @@ Si los usuarios no necesitan poder buscar en el contenido de los recursos, por e
 
 [Obtener archivo](assets/disable_indexingbinarytextextraction-10.zip)
 
-### Total de hipótesis {#guess-total}
+### Total de la oferta {#guess-total}
 
 Al crear consultas que generen grandes conjuntos de resultados, utilice el parámetro `guessTotal` para evitar una gran utilización de la memoria al ejecutarlas.
 

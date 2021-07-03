@@ -2,16 +2,15 @@
 title: Administre recursos compuestos y genere subrecursos.
 description: Obtenga información sobre cómo crear referencias a AEM recursos desde archivos de InDesign, Adobe Illustrator y Photoshop. Aprenda también a utilizar la función Visualizador de páginas para ver páginas individuales de archivos de varias páginas, incluidos archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
+feature: Administración de activos
+role: User,Admin
+exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
-
 
 # Administrar recursos compuestos con subrecursos {#managing-compound-assets}
 

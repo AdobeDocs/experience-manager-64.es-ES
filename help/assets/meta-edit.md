@@ -2,18 +2,17 @@
 title: Edición o adición de metadatos
 description: Obtenga información sobre los metadatos de recursos en AEM Assets y sobre las distintas formas de editarlos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '484'
 ht-degree: 8%
 
 ---
 
-
-# Editar o agregar metadatos {#how-to-edit-or-add-metadata}
+# Edición o adición de metadatos {#how-to-edit-or-add-metadata}
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
@@ -64,3 +63,4 @@ Puede agregar sus propias áreas de nombres dentro de AEM. Del mismo modo que ha
 >[!MORELIKETHIS]
 >
 >* [Acerca de los metadatos y sus necesidades en Assets](metadata.md)
+

@@ -5,16 +5,15 @@ uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
-feature: Asset Management,Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Vídeo
+role: User
+exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '798'
 ht-degree: 8%
 
 ---
-
 
 # Administrar recursos de vídeo {#managing-video-assets}
 
@@ -69,7 +68,7 @@ Para configurar un límite de tamaño de archivo más alto, realice los siguient
 1. En la página **[!UICONTROL Controlador de trabajo de proceso externo de Adobe Granite Workflow]**, establezca los segundos para los campos **[!UICONTROL Tiempo de espera predeterminado]** y **[!UICONTROL Tiempo de espera máximo]** en `18000` (cinco horas).
 1. Toque **[!UICONTROL Guardar]**.
 1. En AEM, pulse **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
-1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione **[!UICONTROL Codificar vídeo de Dynamic Media]** y, a continuación, pulse **[!UICONTROL Editar]**.
+1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione **[!UICONTROL Dynamic Media Codificar vídeo]** y, a continuación, pulse **[!UICONTROL Editar]**.
 1. En la página **[!UICONTROL Workflow]**, pulse dos veces el componente **[!UICONTROL Dynamic Media Video Service Process]**.
 1. En el cuadro de diálogo **[!UICONTROL Propiedades del paso]**, en la pestaña **[!UICONTROL Común]**, expanda **[!UICONTROL Configuración avanzada]**.
 1. En el campo **[!UICONTROL Tiempo de espera]**, especifique un valor de `18000` y, a continuación, pulse **[!UICONTROL Aceptar]** para volver a la página de flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]**.

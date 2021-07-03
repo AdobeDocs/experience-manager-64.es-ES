@@ -2,16 +2,15 @@
 title: Ampliar editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del Editor de recursos mediante componentes personalizados.
 contentOwner: AG
-feature: Developer Tools
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Herramientas para desarrolladores
+role: User,Admin
+exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '703'
 ht-degree: 11%
 
 ---
-
 
 # Ampliar editor de recursos {#extending-asset-editor}
 
@@ -63,7 +62,7 @@ Algunos componentes de AEM Assets utilizan la biblioteca de widgets de AEM. Para
 
 Los componentes de página de muestra requieren que todos los selectores empiecen por `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los selectores `.asseteditor` en la hoja de estilo y ajuste las reglas como desee.
 
-### Selector de formulario: Ajustes para recursos cargados al final {#formchooser-adjustments-for-eventually-loaded-resources}
+### Selector de formulario: Ajustes para recursos cargados finalmente {#formchooser-adjustments-for-eventually-loaded-resources}
 
 El Editor de recursos utiliza el Selector de formularios, que le permite editar recursos (en este caso, recursos) en la misma página de formulario simplemente añadiendo un selector de formulario y la ruta del formulario a la dirección URL del recurso.
 

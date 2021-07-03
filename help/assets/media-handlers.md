@@ -2,16 +2,15 @@
 title: Procesamiento de recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los distintos controladores de medios y cómo utilizarlos en flujos de trabajo para realizar tareas en los recursos.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Flujo de trabajo,Representaciones
+role: User
+exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2232'
-ht-degree: 4%
+source-wordcount: '2230'
+ht-degree: 3%
 
 ---
-
 
 # Procesamiento de recursos Uso de controladores de medios y flujos de trabajo {#processing-assets-using-media-handlers-and-workflows}
 
@@ -441,7 +440,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo txt en el 
 
 ## Controlador de medios basado en líneas de comandos {#command-line-based-media-handler}
 
-Experience Manager permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y agregar la nueva representación al recurso. Instale la herramienta de línea de comandos en el disco que aloja el servidor Experience Manager y añada y configure un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, filtra según tipos MIME específicos y crea varias miniaturas basadas en la nueva representación.
+Experience Manager le permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y agregar la nueva representación al recurso. Instale la herramienta de línea de comandos en el disco que aloja el servidor Experience Manager y añada y configure un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, filtra según tipos MIME específicos y crea varias miniaturas basadas en la nueva representación.
 
 Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en Recursos Experience Manager:
 

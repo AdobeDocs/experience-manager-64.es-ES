@@ -2,16 +2,15 @@
 title: Búsqueda de texto completo de GQL
 description: Explore la función de búsqueda de texto completo de GQL en AEM Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Buscar,Metadatos
+role: User
+exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '879'
 ht-degree: 2%
 
 ---
-
 
 # Búsqueda de texto completo de GQL {#gql-full-text-search}
 
@@ -64,10 +63,10 @@ La función de búsqueda de texto completo de GQL permite buscar recursos en fun
 | [!UICONTROL Propietario del copyright] | copyright:&quot;Adobe Systems&quot; |
 | [!UICONTROL Colaborador] | colaborador:John |
 | [!UICONTROL Condiciones de uso] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Creado] | created:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Fecha de caducidad] | expires:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Tiempo de activación] | ontime:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Tiempo de inactividad] | offtime:AAAA-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Creado] | creado:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Fecha de caducidad] | caduca:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Tiempo de activación] | en tiempo:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Tiempo de inactividad] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Intervalo de tiempo]  (caduca dateontime, offtime) | campo de faceta: límite inferior..Upperbound |
 | [!UICONTROL Ruta] | /content/dam/&lt;nombre de carpeta> |
 | [!UICONTROL Título del PDF] | pdftitle:&quot;Documento de Adobe&quot; |

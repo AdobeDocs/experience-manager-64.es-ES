@@ -3,16 +3,15 @@ title: Reutilizar recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Multi Site Manager
-role: Business Practitioner,Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos, administrador de varios sitios
+role: User,Admin,Architect
+exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3172'
 ht-degree: 9%
 
 ---
-
 
 # Reutilizar recursos con MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
@@ -38,7 +37,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies, 
 
 * Puede actualizar las Live Copies suspendiendo la relación activa o eliminando la herencia de algunos campos limitados. Las modificaciones al origen ya no se aplican a la Live Copy.
 
-### Glosario de MSM para términos {#glossary-msm-for-assets} de Assets
+### Glosario de MSM para términos de Assets {#glossary-msm-for-assets}
 
 * **Fuente:** Los recursos o carpetas originales. Copia principal de la que provienen las Live Copies.
 
@@ -157,11 +156,11 @@ Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y hag
 
 ![Acciones disponibles en el carril Referencias para la Live Copy seleccionada](assets/lc_referencerail.png)
 
-## Propagación de modificaciones del origen a las Live Copies {#propagate-modifications-from-source-to-live-copies}
+## Propagación de modificaciones del origen a Live Copies {#propagate-modifications-from-source-to-live-copies}
 
 Una vez modificado el origen, los cambios se pueden propagar a las Live Copies mediante una acción de sincronización o de despliegue. Para comprender la diferencia entre ambas acciones, consulte [glosario](#glossary-msm-for-assets).
 
-### Desplegar acción {#rollout-action}
+### Acción de despliegue {#rollout-action}
 
 Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas Live Copies seleccionadas.
 
@@ -233,7 +232,7 @@ Puede eliminar completamente la relación entre un origen y una Live Copy median
 
 Como alternativa, puede separar rápidamente varios recursos en una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#take-actions-on-many-assets-in-lcfolder).
 
-## Realice acciones en muchos recursos de una carpeta de Live Copy {#take-actions-on-many-assets-in-lcfolder}
+## Realizar acciones en varios recursos de una carpeta de Live Copy {#take-actions-on-many-assets-in-lcfolder}
 
 Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada recurso puede ser tedioso. Puede iniciar rápidamente las acciones básicas en muchos recursos desde la consola Live Copy. Los métodos anteriores siguen funcionando con recursos individuales.
 

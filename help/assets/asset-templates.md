@@ -5,16 +5,15 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Asset Management,Developer Tools
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Herramientas para desarrolladores
+role: User
+exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
-
 
 # Plantillas de recursos {#asset-templates}
 
@@ -48,7 +47,7 @@ Puede exportar el archivo actualizado dentro de la carpeta principal en los sigu
 
 También puede descargar la salida en estos formatos en su sistema local.
 
-## Crear un colateral {#creating-a-collateral}
+## Crear una garantía {#creating-a-collateral}
 
 Considere un escenario en el que desee crear garantías digitales imprimibles, como folletos, folletos y publicidades para una próxima campaña, y compartirlas con tiendas de venta en todo el mundo. La creación de material colateral basado en una plantilla ayuda a ofrecer una experiencia de cliente unificada en todos los canales. Los diseñadores pueden crear las plantillas de campaña (de una sola página o de varias páginas) mediante una solución creativa, como el InDesign y cargar las plantillas en AEM Assets por usted. Antes de crear un colateral, haga que una o más plantillas INDD se carguen en y estén disponibles en el Experience Manager con antelación.
 
@@ -75,13 +74,13 @@ Considere un escenario en el que desee crear garantías digitales imprimibles, c
 
 1. Haga clic en **[!UICONTROL Crear]**. Un cuadro de diálogo confirma que se crea un nuevo folleto. Pulse o haga clic en **[!UICONTROL Abrir]** para abrir el folleto en modo de edición.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
    Como alternativa, cierre el cuadro de diálogo y vaya a la carpeta de la página Plantillas con la que comenzó a trabajar para ver el folleto que ha creado. El tipo de garantía aparece en su miniatura en la vista de tarjeta. Por ejemplo, en este caso, el folleto se muestra en la miniatura.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Editar un colateral {#editing-a-collateral}
+## Editar una garantía {#editing-a-collateral}
 
 Puede editar un colateral inmediatamente después de crearlo. También puede abrirlo desde la página Plantillas o la página de recursos.
 
@@ -210,4 +209,3 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
    >[!NOTE]
    >
    >No se puede editar un material combinado posteriormente ni utilizarlo para crear otro material colateral.
-

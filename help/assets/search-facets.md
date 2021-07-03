@@ -2,16 +2,15 @@
 title: Facetas de búsqueda
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 contentOwner: AG
-feature: Search
-role: Administrator,Developer
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: 'Búsqueda  '
+role: Admin,Developer
+exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2538'
 ht-degree: 22%
 
 ---
-
 
 # Facetas de búsqueda {#search-facets}
 
@@ -174,7 +173,7 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 
 1. Seleccione **[!UICONTROL Coincidir con todo]** para buscar coincidencias que incluyan todas las etiquetas que especifique.
 
-## Añadir otros predicados {#adding-other-predicates}
+## Adición de otros predicados {#adding-other-predicates}
 
 De forma similar a como se agrega un predicado Propiedad o un predicado Opciones, se pueden agregar los siguientes predicados adicionales al panel Buscar:
 
@@ -224,6 +223,6 @@ Si no se le ha asignado una función de administrador, aquí tiene una lista de 
 >[!MORELIKETHIS]
 >
 >* [Ampliación de la búsqueda de Assets](searchx.md)
->* [Búsqueda de recursos](search-assets.md)
->* [Búsqueda de recursos de vídeo](search-video-assets.md)
+* [Búsqueda de recursos](search-assets.md)
+* [Búsqueda de recursos de vídeo](search-video-assets.md)
 

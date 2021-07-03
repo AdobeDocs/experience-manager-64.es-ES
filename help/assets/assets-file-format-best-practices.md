@@ -2,24 +2,23 @@
 title: Prácticas recomendadas del formato de los archivos de recursos
 description: Prácticas recomendadas para la compatibilidad con archivos en AEM Assets.
 contentOwner: AG
-feature: Asset Management,Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Herramientas para desarrolladores
+role: Admin
+exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-
-# Prácticas recomendadas sobre el formato de los archivos de activos {#assets-file-format-best-practices}
+# Prácticas recomendadas del formato de los archivos de recursos {#assets-file-format-best-practices}
 
 AEM Assets admite muchas bibliotecas de formato de archivos propietarias y de terceros para satisfacer los distintos requisitos de compatibilidad de archivos de los usuarios. Las bibliotecas de Adobe admitidas son Adobe Camera Raw, Gibson, Adobe PDF Rasterizer y Adobe InDesign Server. Además, AEM Assets admite bibliotecas de terceros, como ImageMagick, TwelveMonkeys, etc.
 
 Para ver los formatos de archivo compatibles, consulte [Formatos compatibles con Assets](assets-formats.md).
 
-## Biblioteca de Adobe Camera Raw {#adobe-camera-raw-library}
+## Biblioteca Adobe Camera Raw {#adobe-camera-raw-library}
 
 Para obtener un rendimiento óptimo, Adobe recomienda utilizar la biblioteca de Adobe Camera Raw para:
 

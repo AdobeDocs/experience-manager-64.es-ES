@@ -2,18 +2,17 @@
 title: Consideraciones de la red de Assets
 description: Analiza las consideraciones de red al diseñar una implementación de AEM Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Herramientas para desarrolladores
+role: Architect,Admin
+exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
 
-
-# Consideraciones sobre la red de activos {#assets-network-considerations}
+# Consideraciones sobre la red de recursos {#assets-network-considerations}
 
 Comprender la red es tan importante como comprender los recursos de Adobe Experience Manager (AEM). La red puede afectar a la carga, descarga y experiencia del usuario. La elaboración de diagramas de topología de red ayuda a identificar los puntos de interrupción y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
 
@@ -48,7 +47,7 @@ El equipo mostrado a la derecha tiene un flujo ascendente limitado a la red corp
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las utilizadas generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, puede ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y el entorno de AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo ascendente a Internet desde la red corporativa y el entorno AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -64,7 +63,7 @@ Este es el punto de chokepoint más pequeño orientado al cliente. Sin embargo, 
 
 A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas del usuario.
 
-## Topología del entorno de AEM {#topology-of-the-aem-environment}
+## Topología del entorno AEM {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
@@ -101,4 +100,3 @@ A continuación se presentan algunos aspectos que hay que tener en cuenta:
 Este es un ejemplo de cliente para la definición de un flujo de trabajo de recursos.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-

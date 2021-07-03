@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configuración,Modo híbrido
-role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -176,7 +175,7 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de acceso s7registra cada solicitud realizada a Dynamic Media a través de `/is/image` y `/is/content`.
    Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Download Full** que se genera desde la página **[!UICONTROL system/console/status-Bundlelist]**; cuando llame al servicio de atención al cliente si tiene un problema con Dynamic Media, anexe ambos registros al problema.
 
-### Si ha instalado AEM en un puerto o una ruta de contexto diferente ... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Si ha instalado AEM en un puerto o ruta de contexto diferente ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 Si está implementando [AEM en un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) y tiene Dynamic Media habilitado, debe configurar el dominio **self** en el externalizador. De lo contrario, la generación de miniaturas de los recursos no funcionará correctamente en los recursos de Dynamic Media.
 
@@ -194,7 +193,7 @@ En una implementación AEM de QuickStart WAR, el número de puerto y la ruta de 
 >[!NOTE]
 En una [AEM implementación independiente de inicio rápido](/help/sites-deploying/deploy.md), generalmente no es necesario configurar un dominio **self** porque el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el dominio **self**.
 
-## Desactivación de Dynamic Media {#disabling-dynamic-media}
+## Desactivación de Dynamic Media  {#disabling-dynamic-media}
 
 Los medios dinámicos no están habilitados de forma predeterminada. Sin embargo, si ha activado medios dinámicos previamente, es posible que desee desactivarlos más adelante.
 
@@ -335,7 +334,7 @@ También puede comprobarlo realizando una de las siguientes acciones:
 
 Al configurar la autenticación, estos son algunos problemas con los que puede encontrar soluciones. Antes de comprobarlos, asegúrese de haber configurado la replicación.
 
-#### Problema: Código de estado HTTP 401 con mensaje - Autorización requerida {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Código de estado HTTP 401 con mensaje: se requiere autorización {#problem-http-status-code-with-message-authorization-required}
 
 Este problema puede deberse a un error al configurar KeyStore para el usuario `dynamic-media-replication`.
 
@@ -396,7 +395,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 
 **Solución**: Asegúrese de que el proceso java en AEM Author tenga la propiedad del sistema  **-Djavax.net.ssl.trustStore=**  establecida en un almacén de confianza válido.
 
-#### Problema: KeyStore no está configurado o no se inicializa {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: KeyStore no está configurado o no está inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Este problema puede deberse a una corrección o a un paquete de funciones que sobrescriba el nodo **[!UICONTROL dynamic-media-user]** o **[!UICONTROL keystore]**.
 
@@ -483,7 +482,7 @@ Para probar la configuración:
 
 Otra forma de probar que los recursos se han entregado es añadir req=exists a su URL.
 
-## Configuración de los Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
 El servicio de nube de Dynamic Media ofrece compatibilidad con servicios en la nube, como la publicación y entrega híbridos de imágenes y vídeo, análisis de vídeo y codificación de vídeo, entre otras cosas.
 
@@ -533,7 +532,7 @@ Cuando haya terminado esta tarea, tendrá un archivo de paquete que contiene los
 1. Cree el paquete.
 1. Descargue o comparta el paquete preestablecido [!DNL Video Analytics] para que se pueda compartir con los nuevos nodos Autor subsiguientes.
 
-### Instalación del paquete preestablecido [!DNL Video Analytics] antes de configurar nodos de Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes} adicionales
+### Instalación del paquete preestablecido [!DNL Video Analytics] antes de configurar nodos de Author adicionales {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Asegúrese de completar esta tarea _antes_ de configurar **[!UICONTROL Configuración de Dynamic Media (Pre 6.3)]**. Si no lo hace, se crea otro grupo de informes que no se utiliza. Además, aunque los informes de vídeo seguirán funcionando correctamente, la recopilación de datos no está optimizada.
 
@@ -596,7 +595,7 @@ JCRTpara comprobar el  [!DNL Video Analytics] ajuste preestablecido mediante el 
 * Si no se instala el paquete preestablecido [!DNL Video Analytics] primero, puede crearse un nuevo grupo de informes.
 * Al actualizar de AEM 6.3 a AEM 6.4 o AEM 6.4.1 y luego configurar **[!UICONTROL Configuración de Dynamic Media (Pre 6.3)]**, se seguirá creando un grupo de informes. Se sabe que este problema se solucionará durante la AEM 6.4.2.
 
-### Acerca del [!DNL Video Analytics] ajuste preestablecido {#about-the-video-analytics-preset}
+### Acerca del ajuste preestablecido [!DNL Video Analytics] {#about-the-video-analytics-preset}
 
 El [!DNL Video Analytics] ajuste preestablecido (a veces conocido simplemente como ajuste preestablecido de análisis) se almacena junto a los ajustes preestablecidos de visor en Dynamic Media. Básicamente es lo mismo que un ajuste preestablecido de visualizador, pero con información utilizada para configurar los informes de AppMeasurement y Video Heartbeat.
 
@@ -874,7 +873,7 @@ Dynamic Media funciona de forma predeterminada [después de estar habilitado](#e
    | **[!UICONTROL Tamaño máximo de caché]** | 20000000 | Tamaño máximo de la caché de respuesta en bytes. |
    | **[!UICONTROL Entradas máximas en caché]** | 100 000 | Número máximo de entradas permitidas en la caché. |
 
-### Configuración de manifiesto predeterminada {#default-manifest-settings}
+### Configuración predeterminada de manifiesto {#default-manifest-settings}
 
 El manifiesto predeterminado permite configurar los valores predeterminados que se utilizan para generar las respuestas de entrega de Dynamic Media. Puede ajustar la calidad (calidad JPEG, resolución, modo de remuestreo), el almacenamiento en caché (caducidad) y evitar la representación de imágenes demasiado grandes (defaultpix, defaultthumbpix, maxpix).
 
@@ -914,7 +913,7 @@ Tabla de configuración de manifiesto y sus valores predeterminados:
   <tr> 
    <td>defaultthumbpix</td> 
    <td>100.100</td> 
-   <td><p>Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniaturas (req=tmb).</p> <p>El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura si una solicitud de miniatura (req=tmb) no especifica el tamaño de vista de forma explícita mediante wid=, hei= o scl=.</p> <p>Se especifica como dos números enteros, 0 o más, separados por coma. Anchura y altura en píxeles. Puede que ambos valores estén establecidos en 0 para mantenerlos sin restricciones. </p> <p>No se aplica a solicitudes anidadas/incrustadas.</p> <p>Consulte también <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> en la API de servicio de imágenes. </p> </td> 
+   <td><p>Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniatura (req=tmb).</p> <p>El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura si una solicitud de miniatura (req=tmb) no especifica el tamaño de vista de forma explícita mediante wid=, hei= o scl=.</p> <p>Se especifica como dos números enteros, 0 o más, separados por coma. Anchura y altura en píxeles. Puede que ambos valores estén establecidos en 0 para mantenerlos sin restricciones. </p> <p>No se aplica a solicitudes anidadas/incrustadas.</p> <p>Consulte también <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> en la API de servicio de imágenes. </p> </td> 
   </tr> 
   <tr> 
    <td>caducidad</td> 
@@ -1297,6 +1296,6 @@ Consulte [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.
  </tbody> 
 </table>
 
-### Componentes de WCM Dynamic Media y Medios interactivos {#wcm-dynamic-media-and-interactive-media-components}
+### WCM Dynamic Media y componentes de medios interactivos {#wcm-dynamic-media-and-interactive-media-components}
 
 Las páginas WCM que hacen referencia a componentes de Dynamic Media y Medios interactivos hacen referencia al servicio de entrega.

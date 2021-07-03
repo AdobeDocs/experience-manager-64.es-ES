@@ -7,9 +7,8 @@ content-type: reference
 topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 26%
@@ -242,7 +241,7 @@ El texto refleja el nombre del usuario de la sesión actual. Para restablecer el
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Convertir la plantilla de imagen de Dynamic Media Classic en un vínculo {#making-the-scene-image-template-a-link}
+#### Conversión de la plantilla de imagen de Dynamic Media Classic en un vínculo {#making-the-scene-image-template-a-link}
 
 1. En la página con el componente **[!UICONTROL Plantilla de imagen]** de Dynamic Media Classic, pulse **[!UICONTROL Editar]**.
 1. En el campo **[!UICONTROL URL]**, introduzca la dirección URL a la que se dirigen los usuarios cuando toca la imagen. En el campo **[!UICONTROL Open in]**, seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
@@ -365,4 +364,4 @@ recursoEn el navegador Dynamic Media Classic, puede filtrar los resultados para 
 * **[!UICONTROL Estado]**
 de publicaciónPuede filtrar los recursos en función del estado de publicación:  **** Sin publicar o  **[!UICONTROL publicado]**. Si no selecciona ningún **[!UICONTROL Estado de publicación]**, AEM de forma predeterminada busca todos los estados de publicación.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)

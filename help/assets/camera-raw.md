@@ -2,16 +2,15 @@
 title: compatibilidad Camera Raw
 description: Obtenga información sobre cómo habilitar la compatibilidad Camera Raw en Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Herramientas para desarrolladores
+role: Admin
+exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 2%
 
 ---
-
 
 # Usar Camera Raw para procesar imágenes {#camera-raw-support}
 

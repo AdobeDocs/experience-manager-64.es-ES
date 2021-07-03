@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuración,Modo Scene7
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5594'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos mae
 
 ![imagen_1](assets/chlimage_1.png)
 
-## Activación de Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
+## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
 [Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
 
@@ -45,7 +45,7 @@ Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el m
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Opcional) Migración de los ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.4 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.4 Cero tiempo de inactividad {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Si actualiza el Experience Manager Dynamic Media de 6.3 a 6.4 (que incluye la capacidad de cero implementaciones de tiempo de inactividad), ejecute el siguiente comando curl para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en CRXDE Lite.
 
@@ -67,7 +67,7 @@ El paquete de funciones 18912 le permite ingerir recursos de forma masiva median
 
 Consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](bulk-ingest-migrate.md) para obtener más información.
 
-## Configuración de los Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
 Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) en la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
@@ -157,7 +157,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 * **[!UICONTROL Atributos de compatibilidad]** : esta configuración permite que los párrafos iniciales y finales de las capas de texto se traten como en la versión 3.6 para la compatibilidad con versiones anteriores.
 * **[!UICONTROL Compatibilidad con la localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de la compatibilidad con la localización, consulte [Consideraciones importantes al implementar la compatibilidad con la localización](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server).
 
-#### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
+#### Configuración general de la aplicación {#configuring-application-general-settings}
 
 Para abrir la página [!UICONTROL Configuración general de la aplicación], en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
@@ -169,7 +169,7 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 
 >[!NOTE]
 >
->Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de la imagen base]**.
+>Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]**.
 
 * **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre/extensión de recurso base]** : requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo,  `chair.jpg` reemplace  `chair.jpg` y no  `chair.tif`). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
 * **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** : esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
@@ -180,7 +180,7 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 >
 >De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento del número de ajustes preestablecidos de visor que se muestran](managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-#### Configuración de la administración de color {#configuring-color-management}
+#### Configuración de la gestión de color {#configuring-color-management}
 
 La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](managing-image-presets.md).
 
@@ -209,7 +209,7 @@ Al hacerlo, se haría lo siguiente:
 * Representaciones dinámicas que devuelven la salida RGB, la devuelven en el espacio de color `sRGB`.
 * Representaciones dinámicas que devuelven la salida CMYK, la devuelven en el espacio de color `WebCoated`.
 
-#### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
+#### Edición de tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
 
 Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para hacer lo siguiente:
 
@@ -461,7 +461,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    Al activar el ajuste preestablecido, se garantiza que, al cargar recursos en Dynamic Media, el ajuste preestablecido de conjunto de lotes se aplique para generar el conjunto.
 
-### (Opcional) Ajuste del rendimiento de Dynamic Media - Modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Opcional) Ajuste del rendimiento de Dynamic Media: modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Para mantener Dynamic Media en modo Scene7 funcionando sin problemas, Adobe recomienda los siguientes consejos de ajuste del rendimiento/escalabilidad de la sincronización:
 

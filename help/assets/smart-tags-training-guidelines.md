@@ -5,16 +5,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tagging,Metadata,Smart Tags
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Etiquetado,Metadatos,Etiquetas inteligentes
+role: User
+exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 12%
 
 ---
-
 
 # Directrices de formación del servicio de contenido inteligente {#smart-content-service-training-guidelines}
 
@@ -63,4 +62,3 @@ Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice 
 >La capacidad del servicio de contenido inteligente para formarse sobre sus etiquetas y aplicarlas en otras imágenes depende de la calidad de las imágenes que utilice para la formación.
 >
 >Para obtener mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
-

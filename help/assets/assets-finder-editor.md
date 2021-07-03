@@ -2,18 +2,17 @@
 title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del Editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Herramientas para desarrolladores,Administración de recursos
+role: User,Admin
+exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3318'
 ht-degree: 2%
 
 ---
 
-
-# Crear y configurar páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
+# Creación y configuración de páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
 En este documento se describe lo siguiente:
 
@@ -35,7 +34,7 @@ La creación de una aplicación centrada en los recursos se convierte, en gran m
 
 Una aplicación centrada en los recursos de AEM consta de una página del Editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
-## Crear y configurar una página de uso compartido de recursos {#creating-and-configuring-an-asset-share-page}
+## Creación y configuración de una página Uso compartido de recursos {#creating-and-configuring-an-asset-share-page}
 
 Personalice la funcionalidad del Buscador de DAM y cree páginas que tengan toda la funcionalidad que necesite, que se denominan páginas de Uso compartido de recursos. Para crear una nueva página Uso compartido de recursos, agregue la página mediante la plantilla Uso compartido de recursos de Geometrixx y, a continuación, personalice las acciones que los usuarios pueden realizar en esa página, determine cómo ven los visualizadores los recursos y decida cómo pueden crear sus consultas los usuarios.
 
@@ -46,7 +45,7 @@ Estos son algunos casos de uso para crear una página de uso compartido de recur
 * Base de datos de imágenes para usuarios de sitios web
 * Interfaz de etiquetado de medios para editores de metadatos
 
-### Crear una página de uso compartido de recursos {#creating-an-asset-share-page}
+### Creación de una página Uso compartido de recursos {#creating-an-asset-share-page}
 
 Para crear una nueva página Uso compartido de recursos, puede crearla cuando esté trabajando en sitios web o desde el administrador de recursos digitales.
 
@@ -83,7 +82,7 @@ Para crear una nueva página de uso compartido de recursos a través del adminis
 
    De forma predeterminada, al crear una página Uso compartido de recursos desde **[!UICONTROL Nuevo]**, automáticamente se crea un visualizador de recursos y un editor de recursos.
 
-#### Personalizar acciones {#customizing-actions}
+#### Personalización de acciones {#customizing-actions}
 
 Puede determinar qué acciones pueden realizar los usuarios en los recursos digitales seleccionados a partir de una selección de acciones predefinidas.
 
@@ -107,7 +106,7 @@ Para agregar acciones a la página Uso compartido de recursos:
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
-#### Determinar cómo se presentan los resultados de búsqueda {#determining-how-search-results-are-presented}
+#### Determinar cómo se presentan los resultados de la búsqueda {#determining-how-search-results-are-presented}
 
 Puede determinar cómo se muestran los resultados a partir de una lista predefinida de lentes.
 
@@ -217,7 +216,7 @@ Para personalizar la página Editor de recursos, utilice elementos de la barra d
 
 ![recurso compartido6](assets/assetshare6.bmp)
 
-#### Establezca qué editor de recursos se abre desde una página de uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Definir qué editor de recursos se abre desde una página Uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Después de crear la página del Editor de recursos personalizada, debe asegurarse de que, al hacer doble clic en los recursos, el recurso compartido de recursos personalizado que ha creado abra los recursos en la página Editor personalizado.
 

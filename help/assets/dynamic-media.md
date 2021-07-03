@@ -10,10 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
-feature: Asset Management,Renditions
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Administración de recursos,Representaciones
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 26%
@@ -83,7 +82,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Cambio en las vistas de recursos {#asset-views-change}
+### Cambio de vistas de recursos {#asset-views-change}
 
 Con Dynamic Media habilitado, puede acercar y alejar haciendo clic en los botones `+` y `-`. También puede tocar o hacer clic en para acercar cierta área. Revertir le lleva a la versión original y puede crear la imagen a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
 

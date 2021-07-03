@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
-feature: Video Profiles,Video
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Perfiles de vídeo,Vídeo
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 18%
@@ -312,7 +311,7 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 1. En la barra de herramientas, pulse **[!UICONTROL Eliminar]**.
 1. Pulse **[!UICONTROL Aceptar]**.
 
-## Aplicación de un perfil de vídeo de Dynamic Media a las carpetas {#applying-a-video-profile-to-folders}
+## Aplicación de un perfil de vídeo de Dynamic Media a carpetas {#applying-a-video-profile-to-folders}
 
 Al asignar un perfil de vídeo a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. Esto significa que solo puede asignar un perfil de vídeo a una carpeta. Como tal, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
 
@@ -330,7 +329,7 @@ Puede aplicar un perfil de vídeo a una carpeta desde el menú **[!UICONTROL Her
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-#### Aplicación de perfiles de vídeo de Dynamic Media a carpetas desde la interfaz de usuario de Perfiles {#applying-video-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de perfiles de vídeo de Dynamic Media a carpetas desde la interfaz de usuario Perfiles {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets > Perfiles de vídeo]**.
 1. Seleccione el perfil de vídeo que desea aplicar a una o varias carpetas.
@@ -344,7 +343,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
-### Aplicación global de un perfil de vídeo de Dynamic Media {#applying-a-video-profile-globally}
+### Aplicación de un perfil de vídeo de Dynamic Media globalmente {#applying-a-video-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga aplicado el perfil seleccionado.
 

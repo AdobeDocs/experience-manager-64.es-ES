@@ -2,18 +2,17 @@
 title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para prepararse para la traducción de recursos multilingües.
 contentOwner: AG
-feature: Projects,Translation
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Proyectos,Traducción
+role: User,Admin
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
 
-
-# Preparación de recursos para la traducción {#preparing-assets-for-translation}
+# Preparación de recursos para su traducción {#preparing-assets-for-translation}
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
@@ -72,4 +71,3 @@ La IU táctil proporciona un panel Referencias que muestra una lista de las raí
 1. En el panel Referencias, pulse o haga clic en **[!UICONTROL Textos en idiomas]**. El panel Textos en idiomas muestra las copias de idioma de los recursos.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-

@@ -2,16 +2,15 @@
 title: Esquemas de metadatos
 description: 'El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y cómo aplicar un esquema de metadatos a los recursos.  '
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2539'
+source-wordcount: '2536'
 ht-degree: 12%
 
 ---
-
 
 # Esquemas de metadatos {#metadata-schemas}
 
@@ -67,7 +66,7 @@ Para ver una lista de formularios/plantillas, en la interfaz [!DNL Experience Ma
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## Editar formularios de esquema de metadatos {#editing-metadata-schema-forms}
+## Edición de formularios de esquema de metadatos {#editing-metadata-schema-forms}
 
 Puede editar un formulario de esquema de metadatos nuevo o existente. El formulario de esquema de metadatos incluye lo siguiente:
 
@@ -88,7 +87,7 @@ Puede agregar nuevas fichas o elementos de formulario al formulario de esquema d
 
 1. Para configurar un componente, selecciónelo y modifique sus propiedades en la pestaña **[!UICONTROL Settings]**.
 
-### Componentes dentro de la ficha Generar formulario {#components-within-the-build-form-tab}
+### Componentes de la ficha Generar formulario {#components-within-the-build-form-tab}
 
 La ficha **[!UICONTROL Generar formulario]** enumera los elementos de formulario que utiliza en el formulario de esquema. La pestaña **[!UICONTROL Settings]** proporciona los atributos de cada elemento que seleccione en la ficha **[!UICONTROL Generar formulario]**. La tabla siguiente muestra los elementos de formulario disponibles en la ficha **[!UICONTROL Generar formulario]**:
 
@@ -159,11 +158,11 @@ Para incluir cualquier pestaña en la página de propiedades además de la pesta
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### Especificar propiedades en el archivo JSON {#specifying-properties-in-json-file}
+### Especificar propiedades en un archivo JSON {#specifying-properties-in-json-file}
 
 En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTROL Configuración]**, puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo **[!UICONTROL Ruta de JSON]**.
 
-### Agregar o eliminar una ficha en el formulario de esquema {#adding-deleting-a-tab-in-the-schema-form}
+### Agregar o eliminar una ficha del formulario de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Básico]**, **[!UICONTROL Avanzado]**, **[!UICONTROL IPTC]** y **[!UICONTROL Extensión IPTC]** de forma predeterminada.
 
@@ -264,7 +263,7 @@ Si la carpeta tiene una subcarpeta, los recursos de la subcarpeta heredan los me
 1. Haga clic en **[!UICONTROL OK]** para cerrar el mensaje de éxito.
 1. Vaya a la carpeta a la que aplicó el esquema de metadatos modificado.
 
-## Definir metadatos obligatorios {#defining-mandatory-metadata}
+## Definición de metadatos obligatorios {#defining-mandatory-metadata}
 
 Puede definir campos obligatorios a nivel de carpeta, que se aplican a los recursos que se cargan en la carpeta. Si carga recursos con metadatos que faltan para los campos obligatorios definidos anteriormente, en la vista Tarjeta aparecerá una indicación visual de los metadatos que faltan en los recursos.
 
@@ -275,7 +274,7 @@ Puede definir campos obligatorios a nivel de carpeta, que se aplican a los recur
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas > Assets > Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdelo como `my_default`.
 
-   ![chlimage_1-109](assets/chlimage_1-189.png)
+   ![chlimage_1-189](assets/chlimage_1-189.png)
 
 1. Edite el formulario personalizado. Añada un campo obligatorio. Por ejemplo, agregue un campo **Category** y haga que el campo sea obligatorio.
 
@@ -285,7 +284,7 @@ Puede definir campos obligatorios a nivel de carpeta, que se aplican a los recur
 
 1. Vaya a la carpeta y cargue algunos recursos con metadatos que faltan para el campo obligatorio que ha agregado al formulario personalizado. La vista de tarjeta de los recursos muestra un mensaje para los metadatos que faltan para el campo obligatorio.
 
-   ![chlimage_1-112](assets/chlimage_1-192.png)
+   ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. (Opcional) Acceda a `http://[server]:[port]/system/console/components/`. Configure y habilite el componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está deshabilitado de forma predeterminada. Establezca una frecuencia con la que AEM compruebe la validez de los metadatos en los recursos.
 Esta configuración añade una propiedad `hasValidMetadata` a jcr:content de los recursos. Con esta propiedad, AEM filtrar los resultados en una búsqueda.

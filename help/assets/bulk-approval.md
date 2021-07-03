@@ -2,16 +2,15 @@
 title: Revisar recursos y colecciones de carpetas
 description: Configure flujos de trabajo de revisión para recursos dentro de una carpeta o una colección y compártalos con revisores o socios creativos para buscar comentarios.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Colaboración, colecciones
+role: User
+exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '816'
 ht-degree: 24%
 
 ---
-
 
 # Revisar recursos y colecciones de carpetas {#review-folder-assets-and-collections}
 
@@ -73,7 +72,7 @@ Una vez que el revisor completa la revisión (aprueba o rechaza los recursos), r
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## Crear una tarea de revisión para las colecciones {#creating-a-review-task-for-collections}
+## Crear una tarea de revisión para colecciones {#creating-a-review-task-for-collections}
 
 1. En la página Colecciones , seleccione la colección para la que desea crear una tarea de revisión.
 1. En la barra de herramientas, pulse o haga clic en el icono **[!UICONTROL Crear tarea de revisión]** para abrir la página **[!UICONTROL Revisar tarea]**. Si no puede ver el icono en la barra de herramientas, pulse o haga clic en **[!UICONTROL Más]** y, a continuación, seleccione el icono.

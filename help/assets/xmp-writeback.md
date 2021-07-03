@@ -2,16 +2,15 @@
 title: Reescritura XMP en representaciones
 description: Descubra cómo la función XMP reescritura propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas de ellas.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '779'
 ht-degree: 4%
 
 ---
-
 
 # Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
@@ -29,7 +28,7 @@ En este caso, AEM Assets guarda los cambios en la propiedad **[!UICONTROL Title]
 
 Sin embargo, [!DNL Experience Manager Assets] no propaga automáticamente ningún cambio en los metadatos de las representaciones de un recurso. Consulte [cómo habilitar XMP reescritura](#enabling-xmp-writeback).
 
-## Habilitar XMP escritura {#enabling-xmp-writeback}
+## Habilitar reescritura XMP {#enabling-xmp-writeback}
 
 Para permitir que los cambios en los metadatos se propaguen a las representaciones del recurso al cargarlo, modifique la configuración **Adobe CQ DAM Rendition Maker** en Configuration Manager.
 

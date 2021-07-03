@@ -2,16 +2,15 @@
 title: Experiencia de la página principal de AEM Assets
 description: Personalice la página de inicio de AEM Assets para disfrutar de una experiencia de pantalla de bienvenida completa, que incluye una instantánea de las actividades recientes relacionadas con los recursos.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Herramientas para desarrolladores,Administración de recursos
+role: Admin,User
+exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
-
 
 # Experiencia de la página principal de AEM Assets {#aem-assets-home-page-experience}
 

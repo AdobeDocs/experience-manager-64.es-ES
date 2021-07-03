@@ -3,16 +3,16 @@ title: Compartir recursos mediante un vínculo
 description: Comparta recursos, carpetas y colecciones como URL.
 contentOwner: AG
 feature: Compartir vínculos, Administración de activos
-role: Business Practitioner
+role: User
 exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 5%
 
 ---
 
-# Compartir recursos mediante un vínculo {#asset-link-sharing}
+# Compartir recursos a través de un vínculo {#asset-link-sharing}
 
 [!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones como URL con miembros de su organización y entidades externas, incluidos socios y proveedores. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets].
 
@@ -70,7 +70,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
 1. Para dejar de compartir un recurso, selecciónelo y haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas. A continuación se muestra un mensaje de confirmación. La entrada del recurso se elimina de la lista.
 
-## Configurar el servicio de correo de Day CQ {#configure-day-cq-mail-service}
+## Configurar el servicio de correo Day CQ {#configure-day-cq-mail-service}
 
 1. En la página de inicio [!DNL Experience Manager], vaya a **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. En la lista de servicios, busque **[!UICONTROL Day CQ Mail Service]**.

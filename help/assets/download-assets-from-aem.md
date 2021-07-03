@@ -2,16 +2,15 @@
 title: Descargue recursos digitales de [!DNL Adobe Experience Manager].
 description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
-feature: Asset Management,Asset Distribution
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Distribución de recursos
+role: User
+exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 3%
 
 ---
-
 
 # Descargar recursos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -64,7 +63,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
+## Deshabilitar el servlet de descarga de recursos {#disable-asset-download-servlet}
 
 El `Asset Download Servlet` se puede deshabilitar en instancias de publicación [!DNL Experience Manager] actualizando la configuración de Dispatcher para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
 

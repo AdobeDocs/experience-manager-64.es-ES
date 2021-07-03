@@ -2,18 +2,17 @@
 title: Ordenación mejorada de los recursos en AEM
 description: Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 contentOwner: AG
-feature: Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: 'Búsqueda  '
+role: User
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
-
-# Clasificación mejorada de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
+# Ordenación mejorada de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
 
 Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
 
@@ -74,7 +73,7 @@ Puede ordenar los resultados de la búsqueda según los campos siguientes:
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## Clasificación de recursos en la línea de tiempo {#sorting-assets-in-timeline}
+## Clasificación de recursos en la cronología {#sorting-assets-in-timeline}
 
 AEM Assets permite ordenar cronológicamente las entradas de la cronología, como anotaciones, versiones, flujos de trabajo y actividades.
 
@@ -89,5 +88,4 @@ AEM Assets permite ordenar cronológicamente las entradas de la cronología, com
 
 1. Toque o haga clic en el icono **[!UICONTROL Sort]** situado junto a la etiqueta **[!UICONTROL Date]**. Según la selección, las anotaciones se muestran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
-
+   ![chlimage_1-401](assets/chlimage_1-401.png)

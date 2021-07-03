@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Vídeos interactivos,Vídeo
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 4%
@@ -41,12 +41,12 @@ Para ver un vídeo interactivo y de ventas en acción, haga clic en [Demostracio
 >
 >Si crea un vídeo interactivo para iniciar una página web cuando un usuario hace clic en una imagen en miniatura, algunos dispositivos bloquearán la apertura de la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, pulse **[!UICONTROL Configuración]** > **Safari** > **Bloquear ventanas emergentes** y, a continuación, deslice el control a **[!UICONTROL Desactivado]**. Ahora, al reproducir un vídeo interactivo y hacer clic en una miniatura, se le pedirá que abra la ventana emergente. Si lo acepta, se abre la página web.
 
-## Vea cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
+## Ver cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
 
 Mire este tutorial de 7 minutos y 30 segundos sobre [cómo se crean los vídeos interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).\
 (Aunque el tutorial de vídeo está marcado con Assets On Demand, los principios y pasos siguen aplicándose a Vídeo interactivo en AEM Assets).
 
-## Seminario web de éxito del cliente de Adobe {#adobe-customer-success-webinar}
+## Seminario web sobre el éxito de los clientes de Adobe {#adobe-customer-success-webinar}
 
 El seminario web &quot;Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en AEM Assets&quot; le enseña cómo utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con su contenido de marketing de vídeo.
 
@@ -262,7 +262,7 @@ Si ha cargado los vídeos o las imágenes incorrectas o desea eliminar los víde
 
    Ahora agregue interactividad al vídeo.
 
-## Añadir interactividad al vídeo {#adding-interactivity-to-your-video}
+## Adición de interactividad al vídeo {#adding-interactivity-to-your-video}
 
 Agregue segmentos de línea de tiempo a un vídeo mediante el editor visual local de la página Crear vídeo interactivo .
 
@@ -477,7 +477,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
       En la línea de tiempo, pulse un segmento que desee dividir por la mitad y, a continuación, pulse **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 
@@ -507,7 +507,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
 
 Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
 
-## Integración de un vídeo interactivo con su sitio web {#integrating-an-interactive-video-with-your-website}
+## Integración de un vídeo interactivo con el sitio web {#integrating-an-interactive-video-with-your-website}
 
 Después de cargar un vídeo, añadir segmentos de cronología y publicar el vídeo interactivo, ya está listo para agregarlo al sitio web existente.
 

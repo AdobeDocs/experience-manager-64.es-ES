@@ -6,20 +6,19 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Smart Tags,Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Etiquetas inteligentes,Buscar
+role: User
+exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 17%
+source-wordcount: '1570'
+ht-degree: 16%
 
 ---
 
-
 # Etiquetas inteligentes mejoradas {#enhanced-smart-tags}
 
-## Información general sobre etiquetas inteligentes mejoradas {#overview-of-enhanced-smart-tags}
+## Descripción general de las etiquetas inteligentes mejoradas {#overview-of-enhanced-smart-tags}
 
 Las organizaciones que se ocupan de los recursos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para referirse a recursos digitales de una clase en particular y buscar dichos recursos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
 
@@ -116,7 +115,7 @@ Puede entrenar el servicio de contenido inteligente siempre que sea necesario de
 >
 >Una vez que los recursos de una carpeta se procesan para formación, solo los recursos modificados se procesan en ciclos de formación posteriores.
 
-### Visualización de informes de capacitación {#viewing-training-reports}
+### Visualización de informes de formación {#viewing-training-reports}
 
 Para comprobar si el servicio de contenido inteligente ha recibido formación sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
 

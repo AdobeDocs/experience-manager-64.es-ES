@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
-feature: Viewer Presets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Ajustes preestablecidos de visor
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 25%
@@ -38,6 +37,6 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución
 
 1. Seleccione un visualizador del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
-## Obtención de direcciones URL preestablecidas de visor {#obtaining-viewer-preset-urls}
+## Obtención de direcciones URL preestablecidas del visor {#obtaining-viewer-preset-urls}
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación web](linking-urls-to-yourwebapplication.md).

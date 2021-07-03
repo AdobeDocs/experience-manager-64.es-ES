@@ -2,16 +2,15 @@
 title: Insertar y extraer recursos digitales para editarlos
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+feature: Administración de activos
+role: User
+exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 4%
 
 ---
-
 
 # Archivos de desprotección y desprotección en Assets {#check-in-and-check-out-files-in-assets}
 
@@ -21,7 +20,7 @@ Para poder extraer o registrar recursos, necesita tener acceso de escritura en e
 
 Esta función ayuda a evitar que otros usuarios anulen los cambios realizados por un autor en los que varios usuarios colaboran en la edición de flujos de trabajo entre equipos.
 
-## Extraer activos {#checking-out-assets}
+## Extraer recursos {#checking-out-assets}
 
 1. En la interfaz de usuario de Assets, seleccione el recurso que desea retirar. También puede seleccionar varios recursos para retirarlos.
 

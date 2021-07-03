@@ -3,9 +3,9 @@ title: Utilice la función de Assets Insights para realizar un seguimiento del u
 description: La función de Assets Insights permite realizar un seguimiento de las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se usan en sitios web de terceros, campañas de marketing y soluciones creativas de los Adobes.
 contentOwner: AG
 feature: Información sobre Assets, Informes de Asset
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 7%
@@ -65,7 +65,7 @@ Puede ver las puntuaciones de Assets Insights desde la página de metadatos.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## Ver estadísticas agregadas de los recursos {#viewing-aggregate-statistics-for-assets}
+## Ver estadísticas acumuladas de recursos {#viewing-aggregate-statistics-for-assets}
 
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 

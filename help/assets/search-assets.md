@@ -2,16 +2,15 @@
 title: Buscar recursos en AEM
 description: Obtenga información sobre cómo encontrar los recursos necesarios en AEM mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Buscar,Metadatos
+role: User
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 3%
+source-wordcount: '554'
+ht-degree: 2%
 
 ---
-
 
 # Buscar recursos en AEM {#search-assets-in-aem}
 
@@ -63,7 +62,7 @@ Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo 
 
 ![documentos](assets/documents.png)
 
-## Buscar en función del tamaño de archivo {#search-based-on-file-size}
+## Buscar según el tamaño del archivo {#search-based-on-file-size}
 
 Utilice el predicado **Tamaño de archivo** para buscar recursos en función de su tamaño. Puede especificar los límites inferior y superior del intervalo de tamaño para limitar la búsqueda. También puede especificar la unidad de medida, por ejemplo Kilobytes, Megabytes, etc.
 
@@ -93,7 +92,7 @@ Cuando supervise el estado de revisión de los activos, utilice la opción adecu
 
 ![aprobación](assets/approval.png)
 
-## Búsqueda basada en los datos de perspectivas {#search-based-on-insights-data}
+## Búsqueda basada en datos de perspectivas {#search-based-on-insights-data}
 
 Utilice el predicado **Insights** para buscar recursos en función de las estadísticas de uso que obtengan de varias aplicaciones Creative. Los datos de uso se agrupan en las siguientes categorías:
 

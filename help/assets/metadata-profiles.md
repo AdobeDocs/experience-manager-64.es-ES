@@ -2,16 +2,15 @@
 title: Utilizar perfiles de metadatos para aplicar metadatos predeterminados a todos los recursos de una carpeta
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Metadatos
+role: User,Admin
+exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1233'
 ht-degree: 16%
 
 ---
-
 
 # Perfiles de metadatos {#metadata-profiles}
 
@@ -74,7 +73,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
-## Eliminar un perfil de metadatos {#deleting-a-metadata-profile}
+## Eliminación de un perfil de metadatos {#deleting-a-metadata-profile}
 
 1. En la página **[!UICONTROL Perfiles de metadatos]**, seleccione un perfil que desee eliminar.
 
@@ -95,13 +94,13 @@ Las carpetas que tienen un perfil asignado se indican en la interfaz de usuario 
 
 Puede aplicar perfiles de metadatos a carpetas específicas o globalmente a todos los recursos.
 
-### Aplicar perfiles de metadatos a carpetas específicas {#applying-metadata-profiles-to-specific-folders}
+### Aplicación de perfiles de metadatos a carpetas específicas {#applying-metadata-profiles-to-specific-folders}
 
 Puede aplicar un perfil de metadatos a una carpeta desde el menú **[!UICONTROL Herramientas]** o si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo aplicar perfiles de metadatos a las carpetas de ambos modos.
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-#### Aplicación de perfiles de metadatos a carpetas desde la interfaz de usuario de Perfiles {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de perfiles de metadatos a carpetas desde la interfaz de usuario Perfiles {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Seleccione el perfil de metadatos que desea aplicar a una o varias carpetas.
@@ -135,13 +134,13 @@ Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma gl
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Eliminación de un perfil de metadatos de las carpetas {#removing-a-metadata-profile-from-folders}
+## Eliminación de perfiles de metadatos de carpetas {#removing-a-metadata-profile-from-folders}
 
 Al quitar un perfil de metadatos de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
 Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL Herramientas]** o, si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo quitar perfiles de metadatos de las carpetas de ambos modos.
 
-### Eliminar perfiles de metadatos de carpetas a través de la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Eliminación de perfiles de metadatos de carpetas a través de la interfaz de usuario Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 Para eliminar un perfil de metadatos de carpetas a través de la interfaz de usuario de Perfiles, siga estos pasos:
 
@@ -151,7 +150,7 @@ Para eliminar un perfil de metadatos de carpetas a través de la interfaz de usu
 
    Puede confirmar que el perfil de metadatos ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
-### Eliminar perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
+### Eliminación de perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de metadatos.
 1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.

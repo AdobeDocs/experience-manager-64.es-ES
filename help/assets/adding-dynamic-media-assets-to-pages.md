@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
-feature: Components
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Componentes
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 34%
@@ -30,7 +29,7 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza AE
 >
 >Debe publicar los recursos antes de agregarlos a las páginas de AEM. Consulte [Publicación de recursos de Dynamic Media](publishing-dynamicmedia-assets.md).
 
-## Adición de un componente Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
+## Adición de un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir un componente Dynamic Media a una página es lo mismo que añadir un componente a cualquier página. Los componentes de Dynamic Media se describen en detalle en las secciones siguientes.
 
@@ -200,7 +199,7 @@ TítuloCambie el título del vídeo.
 * **** Anchura y  ****
 alturaIntroduzca el valor en píxeles si desea que el vídeo sea de un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
 
-#### Al trabajar con Recorte inteligente {#when-working-with-smart-crop}
+#### Trabajar con Recorte inteligente {#when-working-with-smart-crop}
 
 Utilice el componente Dynamic Media para añadir recursos de imagen de recorte inteligente a sus páginas web. Cuando edita el componente, tiene la opción de usar un ajuste preestablecido de visor de vídeo predefinido para reproducir el vídeo en la página.
 

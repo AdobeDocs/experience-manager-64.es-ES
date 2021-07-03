@@ -2,16 +2,15 @@
 title: Prácticas recomendadas de descarga de recursos
 description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de ingesta y replicación de recursos en AEM Assets.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos
+role: User,Admin
+exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1820'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de descarga de recursos {#assets-offloading-best-practices}
 
@@ -37,7 +36,7 @@ En el diagrama siguiente se muestran los componentes principales del proceso de 
 
 El flujo de trabajo de descarga de recursos de actualización de DAM se ejecuta en el servidor principal (autor) en el que el usuario carga los recursos. Este flujo de trabajo se activa mediante un lanzador de flujo de trabajo normal. En lugar de procesar el recurso cargado, este flujo de trabajo de descarga crea un nuevo trabajo con el tema *com/adobe/granite/workflow/offloading*. El flujo de trabajo de descarga agrega el nombre del flujo de trabajo de destino: el flujo de trabajo de recursos de actualización de DAM en este caso y la ruta del recurso a la carga útil del trabajo. Después de crear el trabajo de descarga, el flujo de trabajo de descarga en la instancia principal espera hasta que se ejecute el trabajo de descarga.
 
-### Administrador de trabajos {#job-manager}
+### Gestor de trabajos {#job-manager}
 
 El administrador de trabajos distribuye los nuevos trabajos a las instancias de trabajo. Al diseñar el mecanismo de distribución, es importante tener en cuenta la habilitación del tema. Los trabajos solo se pueden asignar a instancias en las que el tema del trabajo está habilitado. Deshabilite el tema `com/adobe/granite/workflow/offloading` en el primario y actívelo en el trabajador para asegurarse de que el trabajo esté asignado al trabajador.
 
@@ -53,7 +52,7 @@ Una vez escrito un trabajo en el trabajador, el administrador de trabajos llama 
 
 La topología de Sling agrupa AEM instancias y les permite estar conscientes entre sí, independientemente de la persistencia subyacente. Esta característica de la topología de Sling le permite crear topologías para escenarios no agrupados, agrupados y mixtos. Una instancia puede exponer propiedades a toda la topología. El marco proporciona llamadas de retorno para escuchar los cambios en la topología (instancias y propiedades). La topología de Sling proporciona la base para los trabajos distribuidos de Sling.
 
-### Sling Distributed jobs {#sling-distributed-jobs}
+### Sling de trabajos distribuidos {#sling-distributed-jobs}
 
 Los trabajos distribuidos de Sling facilitan la distribución de trabajos entre un conjunto de instancias que son miembros de la topología. Los trabajos de Sling se basan en la idea de las capacidades. Un trabajo se define por su tema de trabajo. Para ejecutar un trabajo, una instancia debe proporcionar un consumidor de trabajo para un tema de trabajo específico. El tema del trabajo es el controlador principal del mecanismo de distribución.
 
@@ -88,7 +87,7 @@ Si llega a la conclusión de que la descarga de activos es un enfoque adecuado p
 * La descarga de recursos basados en TarMK no está diseñada para una amplia escala horizontal
 * Garantizar que el rendimiento de la red entre el autor y los trabajadores sea satisfactorio
 
-### Implementación de descarga de recursos recomendados {#recommended-assets-offloading-deployment}
+### Implementación de descarga de recursos recomendada {#recommended-assets-offloading-deployment}
 
 Con AEM y Oak, hay varios escenarios de implementación posibles. Para la descarga de recursos, se recomienda una implementación basada en TarMK con un almacén de datos compartido. En el diagrama siguiente se describe la implementación recomendada:
 
@@ -104,7 +103,7 @@ Adobe recomienda desactivar la administración automática del agente porque no 
 1. Abra la configuración para `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
 1. Deshabilite la administración automática del agente.
 
-### Uso de la replicación de reenvío {#using-forward-replication}
+### Uso de la replicación avanzada {#using-forward-replication}
 
 De forma predeterminada, el transporte de descarga utiliza la replicación inversa para recuperar los recursos descargados del trabajador al primario. Los agentes de replicación inversa no admiten replicación sin binario. Debe configurar la descarga para que utilice la replicación de reenvío para que los recursos descargados vuelvan del trabajador al primario.
 
@@ -117,7 +116,7 @@ De forma predeterminada, el transporte de descarga utiliza la replicación inver
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
-### Uso del almacén de datos compartido y replicación sin binario entre el autor y los trabajadores {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+### Uso del almacén de datos compartido y replicación sin binario entre el autor y los trabajadores  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 Se recomienda el uso de la replicación sin binarios para reducir la sobrecarga de transporte para la descarga de recursos. Para saber cómo configurar la replicación sin binarios para un almacén de datos compartido, consulte [Configuración de almacenes de nodos y almacenes de datos en AEM](/help/sites-deploying/data-store-config.md). El procedimiento no es diferente para la descarga de recursos, excepto que implica otros agentes de replicación. Debido a que la replicación sin binario solo funciona con agentes de replicación de reenvío, también debe utilizar la replicación de reenvío para todos los agentes de descarga.
 
@@ -161,4 +160,3 @@ Este documento se centra en la descarga de recursos. A continuación se muestra 
 
 * [Descarga de trabajos](/help/sites-deploying/offloading.md)
 * [Descarga del flujo de trabajo de recursos](/help/sites-administering/workflow-offloader.md)
-

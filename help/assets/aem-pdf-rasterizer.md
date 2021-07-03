@@ -3,16 +3,16 @@ title: Usar el rasterizador de PDF para generar representaciones
 description: Genere miniaturas y representaciones de alta calidad utilizando la biblioteca Adobe PDF Rasterizer.
 contentOwner: AG
 feature: Herramientas para desarrolladores, representaciones
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
-# Usar el rasterizador de PDF {#using-pdf-rasterizer}
+# Usar rasterizador de PDF {#using-pdf-rasterizer}
 
 Al cargar archivos PDF o AI grandes y con gran contenido en [!DNL Adobe Experience Manager Assets], es posible que la biblioteca predeterminada no genere una salida precisa. La biblioteca Rasterizer PDF de Adobe puede generar una salida más fiable y precisa en comparación con la salida de una biblioteca predeterminada. Adobe recomienda utilizar la biblioteca Rasterizer de PDF para las siguientes situaciones:
 

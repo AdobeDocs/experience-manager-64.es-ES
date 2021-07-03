@@ -3,9 +3,9 @@ title: Prácticas recomendadas para la integración de AEM y Creative Cloud
 description: Prácticas recomendadas para integrar una implementación de AEM con Adobe Creative Cloud con el fin de optimizar los flujos de trabajo de transferencia de recursos y lograr la máxima eficacia
 contentOwner: AG
 feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 16%
@@ -35,7 +35,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 | Proporcionar recursos listos para usar de Adobe Stock de alta calidad | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido mediante la asistencia en el abastecimiento y descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados directamente desde sus herramientas creativas. | AEM Assets; Adobe Stock Marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/las sucursales locales y los socios, distribuidores y agencias externos utilizan los recursos aprobados compartidos por la organización principal. La organización desea compartir de forma segura y transparente los recursos creados para una reutilización más amplia. | Brand Portal, Asset Share Commons |
 
-## Las ofertas de Adobe para soportar la colaboración necesitan {#adobe-offerings-to-support-the-collaboration-need}
+## Ofertas de Adobe para apoyar la necesidad de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
 | Propuesta de valor para las personas implicadas | oferta de Adobe | Superficies implicadas |
 |---|---|---|
@@ -110,7 +110,7 @@ Para admitir casos de uso de distribución de recursos, se deben considerar otra
 * **Usuario creativo:** Un profesional creativo que crea recursos digitales mediante las aplicaciones y los servicios de Creative Cloud. En algunos casos, un usuario creativo puede ser miembro de un equipo creativo que puede utilizar Creative Cloud, pero no crea recursos digitales (como un director creativo o un administrador de equipo creativo).
 * **Usuario de DAM:** Usuario típico de un sistema DAM. Según la organización, un usuario de DAM puede ser un usuario de marketing o no de marketing, por ejemplo un usuario de línea de negocios (LOB), bibliotecario, vendedor, etc.
 
-### Consideraciones al usar la integración de AEM y Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Consideraciones al utilizar la integración de AEM y Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * Consulte [prácticas recomendadas de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Consulte [Integración con Adobe Stock](aem-assets-adobe-stock.md)

@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
-feature: Asset Management,Renditions
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Administración de recursos,Representaciones
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 6%
@@ -33,7 +32,7 @@ AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para aj
 
 Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
 
-## Prácticas recomendadas para el tamaño de imagen {#best-practices-for-image-size}
+## Prácticas recomendadas para el tamaño de la imagen {#best-practices-for-image-size}
 
 La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Requiere especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
@@ -42,7 +41,7 @@ La reducción dinámica del tamaño de la imagen es una de las tareas más comun
 
 Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
-## Prácticas recomendadas para enfocar la imagen {#best-practices-for-image-sharpening}
+## Prácticas recomendadas para el perfeccionamiento de imágenes {#best-practices-for-image-sharpening}
 
 El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en AEM, consulte la guía [Calidad de imagen de Dynamic Media Classic de Adobe y Prácticas recomendadas de enfoque](/help/assets/assets/sharpening_images.pdf) que se aplica también a AEM.
 
@@ -94,7 +93,7 @@ Deje el parámetro monocromo configurado en 0.
 
 Como práctica recomendada para la compresión JPG, utilice `&qlt=85,0`.
 
-## Prácticas recomendadas para el tamaño JPEG (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
+## Prácticas recomendadas para el tamaño de JPEG (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos que tengan memoria limitada.
 

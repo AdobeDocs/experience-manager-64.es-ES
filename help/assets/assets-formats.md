@@ -2,16 +2,15 @@
 title: Formatos de archivo compatibles con AEM Assets
 description: Lista de formatos de archivo y tipos MIME admitidos por AEM Assets y las funciones admitidas para cada formato.
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de recursos,Representaciones
+role: User,Admin
+exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1651'
 ht-degree: 10%
 
 ---
-
 
 # Formatos de archivo compatibles con AEM Assets {#assets-supported-formats}
 
@@ -27,7 +26,7 @@ Utilice la leyenda para comprender el nivel de asistencia.
 | * | Compatible con funciones de complemento |
 | - | No aplicable |
 
-## Formatos de imagen de trama {#supported-raster-image-formats}
+## Formatos de imagen rasterizados {#supported-raster-image-formats}
 
 Los formatos de imagen rasterizados admitidos para las funciones de administración de recursos son los siguientes:
 
@@ -110,7 +109,7 @@ La biblioteca de transcodificación de imágenes admite los tipos MIME JPG/JPEG,
 
 Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md).
 
-## {#supported-camera-raw} Camera Raw
+## Camera Raw {#supported-camera-raw}
 
 La biblioteca de Adobe Camera Raw permite a AEM Assets introducir imágenes sin procesar. Consulte [Soporte Camera Raw](camera-raw.md).
 
@@ -149,7 +148,7 @@ Los formatos de documento admitidos para las funciones de Dynamic Media son los 
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -297,7 +296,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |

@@ -3,16 +3,16 @@ title: Prácticas recomendadas de supervisión de Assets
 description: Prácticas recomendadas para monitorizar el entorno y el rendimiento de la instancia de AEM una vez implementada.
 contentOwner: AG
 feature: Administración de activos
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
 
 ---
 
-# Prácticas recomendadas de monitorización de recursos {#assets-monitoring-best-practices}
+# Prácticas recomendadas de supervisión de Assets {#assets-monitoring-best-practices}
 
 Desde el punto de vista de los activos (AEM) de Adobe Experience Manager, la supervisión debe incluir la observación y la presentación de informes sobre los siguientes procesos y tecnologías:
 
@@ -29,7 +29,7 @@ Desde el punto de vista de los activos (AEM) de Adobe Experience Manager, la sup
 
 Normalmente, AEM Assets se puede monitorizar de dos maneras: mediante monitorización en vivo y mediante monitorización a largo plazo.
 
-## Monitorización en directo {#live-monitoring}
+## Supervisión en directo {#live-monitoring}
 
 Debe realizar monitorización en vivo durante la fase de prueba de rendimiento de su desarrollo o durante situaciones de carga alta para comprender las características de rendimiento de su entorno. Normalmente, la monitorización en vivo debe realizarse con un conjunto de herramientas. Estas son algunas recomendaciones:
 
@@ -53,11 +53,11 @@ Normalmente, estas herramientas se utilizan juntas para obtener una idea complet
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
-## Monitorización a largo plazo {#long-term-monitoring}
+## Supervisión a largo plazo {#long-term-monitoring}
 
 La monitorización a largo plazo de una instancia de AEM implica monitorizar durante más tiempo las mismas partes que se supervisan en vivo. También incluye la definición de alertas específicas del entorno.
 
-### Agregación de registros y creación de informes {#log-aggregation-and-reporting}
+### Agregación de registros y sistema de informes {#log-aggregation-and-reporting}
 
 Hay varias herramientas disponibles para agregar registros, por ejemplo Splunk(TM) y Elastic Search/Logstash/Kabana (ELK). Para evaluar el tiempo de actividad de la instancia de AEM, es importante que comprenda los eventos de registro específicos del sistema y cree alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
 
@@ -74,7 +74,7 @@ La monitorización del entorno incluye la monitorización de lo siguiente:
 
 Necesita herramientas externas, como NewRelic(TM) y AppDynamics(TM) para supervisar cada elemento. Con estas herramientas, puede definir las alertas específicas de su sistema, por ejemplo, una alta utilización del sistema, una copia de seguridad del flujo de trabajo, errores de comprobación de estado o un acceso no autenticado a su sitio web. Adobe no recomienda ninguna herramienta en particular sobre otras. Encuentre la herramienta que funciona y aproveche esta herramienta para monitorizar los elementos discutidos.
 
-#### Monitorización interna de aplicaciones {#internal-application-monitoring}
+#### Supervisión interna de las aplicaciones {#internal-application-monitoring}
 
 La supervisión interna de las aplicaciones incluye el monitoreo de los componentes de las aplicaciones que componen la pila de AEM, incluyendo JVM, el repositorio de contenido y el monitoreo a través del código de aplicación personalizado creado en la plataforma. En general, se realiza a través de Java Mbeans que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM), etc. Para los sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
 
@@ -185,7 +185,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
    * Umbral de alarma: Cuando el estado no es correcto
    * Definición de alarma: Hay errores en los archivos de registro. Consulte el atributo log para obtener más información sobre la causa del problema.
 
-## Problemas comunes y resoluciones {#common-issues-and-resolutions}
+## Problemas y resoluciones comunes  {#common-issues-and-resolutions}
 
 En el proceso de monitorización, si se producen problemas, estas son algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con AEM instancias:
 

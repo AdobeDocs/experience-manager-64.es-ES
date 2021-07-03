@@ -8,7 +8,7 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Administración de recursos,Vídeo
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 8%
@@ -44,7 +44,7 @@ De forma predeterminada, AEM Assets no permite cargar recursos que superen los 2
 Además de la configuración de AEM Assets, cambie las siguientes configuraciones para cargar recursos de gran tamaño:
 
 * Aumente el tiempo de caducidad del token. Consulte [!UICONTROL Adobe Granite CSRF Servlet] en la Consola Web en `https://[aem_server]:[port]/system/console/configMgr`. Para obtener más información, consulte [Protección CSRF](/help/sites-developing/csrf-protection.md).
-* Aumente el `receiveTimeout` en la configuración de Dispatcher. Para obtener más información, consulte [Configuración de Dispatcher Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Aumente el `receiveTimeout` en la configuración de Dispatcher. Para obtener más información, consulte [Configuración de Dispatcher Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options).
 
 >[!NOTE]
 >

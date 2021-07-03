@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
-feature: Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Vídeo
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 29%
@@ -94,13 +93,13 @@ Para configurar los ajustes preestablecidos universales:
 
 1. Los perfiles de codificación seleccionados se aplican automáticamente a todos los vídeos cargados en la carpeta de destino de CQ DAM que ha configurado para esta configuración de nube de Scene7. Puede establecer diversas configuraciones de nube de Scene7 con diferentes carpetas de destino para aplicar distintos perfiles de codificación según sea necesario.
 
-## Actualizar los ajustes preestablecidos del visor y de codificación  {#updating-viewer-and-encoding-presets}
+## Actualizar los ajustes preestablecidos del visor y de codificación {#updating-viewer-and-encoding-presets}
 
 Es necesario actualizar los ajustes preestablecidos de visor y codificación para vídeo en Experience Manager si los ajustes preestablecidos se actualizaron en Scene7. En estos casos, vaya a la configuración de Scene7 en la configuración de nube y haga clic en **[!UICONTROL Actualizar los ajustes preestablecidos de visor y codificación]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Carga del vídeo maestro en Scene7 desde el Adobe DAM {#uploading-your-master-video}
+## Carga del vídeo maestro en Scene7 desde Adobe DAM {#uploading-your-master-video}
 
 1. Vaya a la carpeta de destino de CQ DAM en que ha establecido la configuración de nube con perfiles de codificación de Scene7.
 1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo maestro. La carga y codificación de vídeo se completan una vez finalizado el flujo de trabajo de recursos de actualización de DAM y **[!UICONTROL Publicar en Scene7]** tiene una marca de verificación.
@@ -141,7 +140,7 @@ La siguiente tabla ofrece una comparación de alto nivel de las funciones admiti
 | Capacidad de ampliación | Sí | Sí (con [documentación de la API del SDK del visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Vídeo móvil | Sí | Sí |
 
-### Configuración  {#setting-up}
+### Configuración {#setting-up}
 
 #### Creación de perfiles de vídeo {#creating-video-profiles}
 

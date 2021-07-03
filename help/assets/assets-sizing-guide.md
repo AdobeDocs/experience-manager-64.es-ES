@@ -5,16 +5,15 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset Management
-role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos
+role: Architect,Admin
+exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Guía de tamaño de Assets {#assets-sizing-guide}
 
@@ -111,7 +110,7 @@ AEM Assets tiene varios casos de uso que hacen que el rendimiento de la red sea 
 
 ## WebDAV {#webdav}
 
-Si agrega la aplicación de escritorio de AEM a la combinación, los problemas de red se agravan debido a ineficiencias en el protocolo WebDAV.
+Si agrega la aplicación de escritorio AEM a la combinación, los problemas de red se vuelven más graves debido a las ineficiencias en el protocolo WebDAV.
 
 Para ilustrar estas ineficiencias, el Adobe probó el rendimiento del sistema mediante WebDAV en el sistema operativo X. Se abrió, editó y guardó un archivo de InDesign de 3,5 MB. Se formularon las siguientes observaciones:
 

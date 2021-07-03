@@ -2,18 +2,17 @@
 title: Adición de una marca de agua a los recursos digitales
 description: Aprenda a utilizar la función de marca de agua para agregar una marca de agua digital a los recursos.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+feature: Administración de activos
+role: User,Admin
+exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '325'
 ht-degree: 3%
 
 ---
 
-
-# Marcar los recursos digitales {#watermarking}
+# Marcar sus recursos digitales {#watermarking}
 
 [!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a los recursos para ayudar a los usuarios a verificar la autenticidad y propiedad de los recursos protegida por derechos de autor. [!DNL Experience Manager Assets] admite texto que se utilizará como marca de agua en archivos PNG y JPEG.
 

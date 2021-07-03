@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Viewer Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Ajustes preestablecidos de visor
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 11%
 
 ---
 
-# Administración de ajustes preestablecidos del visor de Dynamic Media {#managing-viewer-presets}
+# Administración de ajustes preestablecidos de visor de Dynamic Media {#managing-viewer-presets}
 
 Un ajuste preestablecido de visualizador de Dynamic Media es una colección de ajustes que determinan cómo ven los usuarios los recursos de medios enriquecidos en sus pantallas de equipos y dispositivos móviles. Si es un administrador, puede crear ajustes preestablecidos de visor. La configuración está disponible para una matriz de opciones de configuración del visor. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
 
@@ -38,13 +37,13 @@ En esta sección se describe cómo crear, editar y administrar ajustes preestabl
 >
 >Tenga en cuenta que no se admite la edición de *ajustes preestablecidos de visor predefinidos y listos para usar*. Si intenta editar un ajuste preestablecido de visualizador listo para usar, se le pedirá que guarde el ajuste preestablecido de visualizador con un nuevo nombre.
 
-## Accesibilidad del teclado para los visores {#keyboard-accessibility-for-viewers}
+## Accesibilidad de teclado para visualizadores {#keyboard-accessibility-for-viewers}
 
 Todos los visores integrados admiten la accesibilidad del teclado.
 
 Consulte también [Accesibilidad y navegación del teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
-## Administración de ajustes preestablecidos del visor de Dynamic Media {#managing-presets}
+## Administración de ajustes preestablecidos de visor de Dynamic Media {#managing-presets}
 
 Puede agregar, editar, eliminar, publicar, cancelar la publicación y previsualizar ajustes preestablecidos de visualizador en AEM tocando **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de visualizador]**.
 
@@ -54,7 +53,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y previsuali
 >
 >De forma predeterminada, el sistema muestra 15 ajustes preestablecidos de visualizador al seleccionar Visualizadores en la vista de detalles de un recurso. Puede aumentar este límite. Consulte [Aumento del número de ajustes preestablecidos de visor que se muestran](#increasing-the-number-of-viewer-presets-that-display).
 
-## Compatibilidad del visor con páginas web diseñadas adaptativamente {#viewer-support-for-responsive-designed-web-pages}
+## Compatibilidad del visor con páginas web diseñadas para adaptarse {#viewer-support-for-responsive-designed-web-pages}
 
 Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor HTML5 en una ventana de navegador independiente. En otros casos, puede ser necesario incrustar el visor HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O puede ser *adaptable* y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del navegador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos y listos para usar que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web diseñadas con capacidad de respuesta.
 
@@ -65,7 +64,7 @@ Consulte [Biblioteca de imágenes interactivas](https://experienceleague.adobe.c
 >Tenga en cuenta que debe publicar todos los visores integrados antes de usarlos por primera vez.\
 >Consulte [Ajustes preestablecidos del visualizador de publicaciones.](#publishing-viewer-presets)
 
-## Compatibilidad del sistema preestablecido de visor {#viewer-preset-system-compatibility}
+## Compatibilidad del sistema con ajustes preestablecidos del visor  {#viewer-preset-system-compatibility}
 
 Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynamic Media son totalmente compatibles con los siguientes sistemas:
 
@@ -100,7 +99,7 @@ Los administradores pueden agregar y personalizar los siguientes tipos de medios
 | **Zoom vertical** | El visor de zoom vertical le permite maximizar una experiencia de visualización de imágenes de producto para ofrecer a los usuarios la mejor representación de un producto. La ubicación vertical de las muestras hace lo siguiente: <ul><li>Garantiza que las muestras estén por encima del pliegue. Con las muestras horizontales, según el tamaño de la pantalla del escritorio  usuario, las muestras no eran visibles hasta que el usuario se desplazaba hacia abajo por la página. Al colocar las muestras verticalmente en el visor, se garantiza que sean visibles independientemente del tamaño de pantalla del usuario.</li><li>Maximiza el tamaño de la imagen principal. Con las muestras horizontales, es necesario reservar espacio en la página para garantizar que sean visibles. Esta posición redujo el tamaño de la imagen principal. Sin embargo, con un diseño de muestra vertical, no es necesario asignar este espacio. Como tal, puede maximizar el tamaño de la imagen principal.</li></ul> |
 | **Zoom** | Permite a los usuarios acercarse al área haciendo clic en ella. Los usuarios pueden hacer clic en los controles para acercar, alejar y restablecer la imagen a su tamaño predeterminado. |
 
-## Lista de ajustes preestablecidos de visualizador integrados {#list-of-out-of-the-box-viewer-presets}
+## Lista de ajustes preestablecidos de visor integrados {#list-of-out-of-the-box-viewer-presets}
 
 La siguiente tabla identifica todos los ajustes preestablecidos de visualizador predefinidos y listos para usar que se incluyen con Dynamic Media.
 
@@ -146,7 +145,7 @@ Consulte *Notas de la versión de los visores* en la tabla de contenido de la [G
 | ZoomVertical_oscuro | Vertical_Zoom | html5_zoomverticalviewer_dark.css |
 | ZoomVertical_light | Vertical_Zoom | html5_zoomverticalviewer_light.css |
 
-### Matriz de gestos de visores móviles admitidos {#supported-mobile-viewers-gestures-matrix}
+### Matriz de gestos de visores móviles compatibles {#supported-mobile-viewers-gestures-matrix}
 
 La siguiente tabla identifica los gestos del visor móvil compatibles con los dispositivos iOS, Android 2.x y Android 3.x.
 
@@ -297,7 +296,7 @@ La lógica que utiliza el visor para ver cuántas miniaturas se muestran en el p
 
    Con el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de vídeo = 10 segundos de visualización de cada subsegmento de vídeo.
 
-### Consideraciones especiales para crear un ajuste preestablecido de visualizador de titular de carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### Consideraciones especiales para crear un ajuste preestablecido de visor de titular de carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 Al crear ajustes preestablecidos de visor de titular de carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
@@ -316,7 +315,7 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
    Los ajustes preestablecidos de visor que se activan tienen el botón de alternancia a la derecha, dentro de un cuadro azul; los ajustes preestablecidos de visualizador desactivados tienen la opción que aparece a la izquierda, dentro de un cuadro gris claro.
 
-## Publicación de ajustes preestablecidos de visor de Dynamic Media {#publishing-viewer-presets}
+## Publicación de ajustes preestablecidos de visualizador de Dynamic Media {#publishing-viewer-presets}
 
 Activar (o activar *On*) el estado de un ajuste preestablecido de visualizador significa que está visible en el componente Dynamic Media, en el componente Medios interactivos y siempre que se vea un recurso.
 
@@ -332,7 +331,7 @@ Consulte también [Vista previa de recursos](previewing-assets.md).
 1. Seleccione uno o varios ajustes preestablecidos de visor que desee publicar.
 1. En la barra de herramientas, pulse el icono **[!UICONTROL Publicar]**.
 
-## Ordenación de los ajustes preestablecidos del visor de Dynamic Media {#sorting-viewer-presets}
+## Clasificación de ajustes preestablecidos de visor de Dynamic Media {#sorting-viewer-presets}
 
 **Para ordenar los ajustes preestablecidos** del visor de Dynamic Media:
 
@@ -354,7 +353,7 @@ Tenga en cuenta que no se admite la edición de *ajustes preestablecidos de viso
    * Pulse **[!UICONTROL Guardar]** para guardar los cambios y volver a la página **[!UICONTROL Ajuste preestablecido de visor]**.
    * Toque **[!UICONTROL Cancelar]** para anular los cambios realizados y volver a la página **[!UICONTROL Ajuste preestablecido de visor]**.
 
-## Eliminación de ajustes preestablecidos del visor personalizado de Dynamic Media {#deleting-custom-viewer-presets}
+## Eliminación de ajustes preestablecidos de visualizador de Dynamic Media personalizados {#deleting-custom-viewer-presets}
 
 Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a Dynamic Media.
 
@@ -380,7 +379,7 @@ Si ya ha publicado el recurso y el visualizador seleccionado, los botones **[!UI
 
    Puede [copiar la dirección URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
-## Entrega de recursos con ajustes preestablecidos de visor de Dynamic Media {#delivering-assets-with-viewer-presets}
+## Entrega de recursos con ajustes preestablecidos del visor de Dynamic Media {#delivering-assets-with-viewer-presets}
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación web](linking-urls-to-yourwebapplication.md). Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
 

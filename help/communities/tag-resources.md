@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
-
 
 # Etiquetado de recursos de habilitación {#tagging-enablement-resources}
 
@@ -66,7 +65,7 @@ A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
-## Espacios de nombres de etiquetas de catálogo {#catalog-tag-namespaces}
+## Espacios de nombres de etiquetas del catálogo {#catalog-tag-namespaces}
 
 La función de catálogo utiliza etiquetas para definirse. Al configurar la función de catálogo en un sitio de comunidad, el conjunto de áreas de nombres de etiquetas entre las que elegir se define mediante el ámbito de los espacios de nombres de etiquetas definido para el sitio de comunidad.
 
@@ -74,7 +73,7 @@ La función Catálogo incluye una configuración de etiqueta que define las etiq
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
-## Aplicación de etiquetas a los recursos de habilitación {#applying-tags-to-enablement-resources}
+## Aplicación de etiquetas a recursos de habilitación {#applying-tags-to-enablement-resources}
 
 Los recursos de habilitación y las rutas de aprendizaje aparecerán en todo el catálogo cuando se marque `Show in Catalog`. Añadir etiquetas a los recursos y a las rutas de aprendizaje permitirá el prefiltrado en catálogos específicos, así como el filtrado en la interfaz de usuario del catálogo.
 
@@ -96,7 +95,7 @@ aparecerá en `Ski Catalog` después de publicar el recurso de habilitación.
 
 ![chlimage_1-422](assets/chlimage_1-422.png)
 
-## Visualización del catálogo en Publish {#viewing-catalog-on-publish}
+## Visualización del catálogo al publicar {#viewing-catalog-on-publish}
 
 Una vez que todo se ha configurado desde el entorno de creación y se ha publicado, la experiencia de utilizar el catálogo para encontrar recursos de habilitación se puede experimentar en el entorno de publicación.
 
@@ -107,4 +106,3 @@ Si se agregaron áreas de nombres de etiquetas que faltan, asegúrese de que las
 Si no aparecen recursos de habilitación después de seleccionar una etiqueta al ver el catálogo, asegúrese de que haya una etiqueta del área de nombres del catálogo aplicada al recurso de habilitación.
 
 ![chlimage_1-423](assets/chlimage_1-423.png)
-

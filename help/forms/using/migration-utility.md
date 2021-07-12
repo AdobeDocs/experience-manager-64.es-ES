@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 4%
 
 ---
-
 
 # Migrar recursos y documentos de AEM Forms {#migrate-aem-forms-assets-and-documents}
 
@@ -33,7 +32,7 @@ La utilidad de migración convierte los [activos de Forms adaptables](/help/form
 >
 >En caso de una actualización fuera de lugar, en el caso de los recursos de Gestión de correspondencia, puede ejecutar la migración cada vez que importe los recursos. Para la migración de la gestión de correspondencia, debe tener instalado el paquete de compatibilidad de Forms.
 
-## Enfoque para la migración {#approach-to-migration}
+## Enfoque de la migración {#approach-to-migration}
 
 Puede [actualizar](/help/forms/using/upgrade.md) a la última versión de AEM Forms 6.4 desde AEM Forms 6.3 o 6.2 o realizar una nueva instalación. Dependiendo de si ha actualizado la instalación anterior o ha realizado una instalación nueva, debe realizar una de las siguientes acciones:
 
@@ -49,7 +48,7 @@ Si se trata de una instalación fuera de lugar (nueva), antes de poder utilizar 
 
 A continuación, debe importar el paquete de recursos (zip o cmp) en la nueva configuración y, a continuación, actualizar los recursos y documentos [ejecutando la utilidad de migración](#runningmigrationutility). Debido a los cambios [relacionados con la compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md), se cambian las ubicaciones de algunas carpetas en el repositorio crx. Exportar e importar manualmente dependencias (bibliotecas y recursos personalizados) de la configuración anterior a un entorno nuevo.
 
-## Lea antes de continuar con la migración {#prerequisites}
+## Lea esto antes de continuar con la migración {#prerequisites}
 
 Para los activos de Gestión de Correspondencia:
 
@@ -66,9 +65,9 @@ Para los activos de Gestión de Correspondencia:
 * Las configuraciones del Compositor de recursos cambian a las configuraciones de Gestión de correspondencia.
 * Los recursos se mueven en carpetas con nombres como Texto existente y Lista existente.
 
-## Uso de la utilidad de migración {#using-the-migration-utility}
+## Uso de la utilidad Migración {#using-the-migration-utility}
 
-### Ejecución de la utilidad de migración {#runningmigrationutility}
+### Ejecución de la utilidad Migración {#runningmigrationutility}
 
 Ejecute la utilidad de migración antes de realizar cambios en los recursos o crear recursos. Se recomienda que no ejecute la utilidad después de realizar cambios o crear recursos. Asegúrese de que la interfaz de usuario de Gestión de correspondencia o Recursos Forms adaptables no esté abierta mientras se esté ejecutando el proceso de migración.
 
@@ -178,4 +177,3 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
 
 1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor y para actualizar los recursos en la instancia de publicación es necesario publicar los recursos.
 1. En AEM Forms 6.4, se cambian algunos de los derechos de los grupos de usuarios de formularios. Si desea que cualquiera de los usuarios pueda cargar XDP y Adaptive Forms que contengan secuencias de comandos o utilizar el editor de código, debe agregarlos al grupo de usuarios que puedan acceder a formularios. Del mismo modo, los autores de plantillas ya no pueden utilizar el editor de código del Editor de reglas. Para que los usuarios puedan utilizar el editor de código, agréguelos al grupo af-template-script-writers. Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
-

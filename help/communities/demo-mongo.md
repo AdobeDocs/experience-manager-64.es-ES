@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de MongoDB para demostración {#how-to-setup-mongodb-for-demo}
 
@@ -109,14 +108,14 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
    * No se necesita ningún servicio
    * La carpeta Solr instalada se denominará &lt;solr-install>
 
-### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
+### Configuración de Solr para AEM Communities {#configure-solr-for-aem-communities}
 
 Para configurar una colección Solr para MSRP para demostración, hay dos decisiones que se deben tomar (seleccione los enlaces a la documentación principal para obtener más información):
 
 1. Ejecute Solr en modo independiente o [SolrCloud](msrp.md#solrcloudmode)
 1. Instale la [búsqueda multilingüe estándar](msrp.md#installingstandardmls) o [avanzada](msrp.md#installingadvancedmls) (MLS)
 
-### Solr independiente {#standalone-solr}
+### Solar independiente {#standalone-solr}
 
 El método para ejecutar Solr puede variar según la versión y la forma de instalación. La [Guía de referencia de Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) es la documentación autorizada.
 
@@ -156,7 +155,7 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 1. Inicie sesión para publicar un comentario:
 1. Introduzca el texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Post]**
 
-   ![chlimage_1-111](assets/chlimage_1-191.png)
+   ![chlimage_1-191](assets/chlimage_1-191.png)
 
 1. Simplemente, vea el comentario en la [instancia de autor](http://localhost:4502/content/community-components/en/comments.html) (probablemente todavía haya iniciado sesión como administrador / administrador).
 

@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2979'
 ht-degree: 5%
 
 ---
 
-
-# Consola Recursos de Habilitación {#enablement-resources-console}
+# Consola Recursos de habilitación {#enablement-resources-console}
 
 Para AEM Communities, la consola Recursos es donde [Enablement Managers](users.md) crean, administran y asignan recursos a los miembros de un sitio de la comunidad de habilitación.
 
@@ -72,7 +71,7 @@ Para [comunidades de habilitación](overview.md#enablement-community), se recomi
 
 ## Acceso a los recursos de habilitación de un sitio de la comunidad {#accessing-a-community-site-s-enablement-resources}
 
-### Vaya a Recursos de Communities {#navigate-to-communities-resources}
+### Navegar a los recursos de Communities {#navigate-to-communities-resources}
 
 En el entorno de creación, para llegar a la consola Recursos
 
@@ -90,7 +89,7 @@ Una vez seleccionado un sitio de comunidad específico, se puede acceder a los r
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-#### Búsqueda {#search-features}
+#### Búsqueda   {#search-features}
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -522,7 +521,7 @@ El informe Estado del usuario asignado, en función del número de alumnos, desc
 
 El informe de clasificaciones se basa en el número de estudiantes que han clasificado el recurso de habilitación, que muestran el número de cada clasificación por estrella seguida de un resumen del número total de clasificaciones y la clasificación promedio.
 
-#### Resumen de informes {#report-summary}
+#### Resumen del informe {#report-summary}
 
 Para un recurso de habilitación, el resumen del informe es una tabla que enumera
 

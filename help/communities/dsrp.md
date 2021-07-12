@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
-
 
 # DSRP - Proveedor de recursos de almacenamiento de bases de datos relacionales {#dsrp-relational-database-storage-resource-provider}
 
@@ -55,7 +54,7 @@ Para los entornos de producción, el modo SolrCloud proporciona un rendimiento m
 
 Para obtener más información sobre la instalación y configuración, consulte [Configuración de Solr para SRP](solr.md).
 
-### Seleccione DSRP {#select-dsrp}
+### Seleccionar DSRP {#select-dsrp}
 
 La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 

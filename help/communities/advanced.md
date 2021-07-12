@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
-
 
 # Puntuación avanzada y distintivos {#advanced-scoring-and-badges}
 
@@ -97,7 +96,7 @@ En la puntuación avanzada, la cantidad necesaria se ajusta constantemente en fu
 
 Si un miembro obtiene un distintivo de experto en un tema que ya no está activo, existe la posibilidad de que pierda su distintivo debido a la decadencia a lo largo del tiempo.
 
-### ScoringType {#scoringtype}
+### Tipo de puntuación {#scoringtype}
 
 Una regla de puntuación es un conjunto de subreglas de puntuación, cada una de las cuales declara el `scoringType`.
 
@@ -134,9 +133,9 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
 | badgingType | Cadena | (Obligatorio) Identifica el motor de puntuación como &quot;básico&quot; o &quot;avanzado&quot;. Establézcalo en &quot;avanzado&quot; de lo contrario el valor predeterminado es &quot;básico&quot;. |
 | scoringRules | Cadena[] | (Opcional) Una cadena de varios valores para restringir la regla de distintivo a los eventos de puntuación identificados por las reglas de puntuación enumeradas. Ejemplo de entrada:/etc/community/scoring/rules/adv-comments-scoringDefault no es ninguna restricción. |
 
-## Reglas incluidas y distintivo {#included-rules-and-badge}
+## Reglas y distintivo incluidos {#included-rules-and-badge}
 
-### Distintivo {#included-badge} incluido
+### Distintivo incluido {#included-badge}
 
 Esta versión beta incluye un distintivo de experto basado en premios:
 

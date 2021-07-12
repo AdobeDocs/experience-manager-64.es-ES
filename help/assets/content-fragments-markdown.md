@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Fragmentos de contenido
-role: Business Practitioner
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 4%
@@ -41,7 +41,7 @@ Puede definir:
 * [Bloques de código](/help/assets/content-fragments-markdown.md#code-blocks)
 * [Fuentes de barra invertida](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## Notación de encabezado {#heading-notation}
+## Anotación de encabezado {#heading-notation}
 
 Para crear un encabezado, coloque una etiqueta (#) delante del encabezado. Se utiliza una etiqueta (#) para H1, dos etiquetas hash (##) para H2, etc. Se pueden usar hasta 6 etiquetas hash. Por ejemplo:
 

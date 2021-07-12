@@ -7,9 +7,8 @@ user-guide-title: Guía del usuario sobre la creación de IU de AEM 6.4 Classic
 breadcrumb-title: Guía de creación de IU clásica
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature: 'Creación  '
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 80%
@@ -17,39 +16,39 @@ ht-degree: 80%
 ---
 
 
-# Guía del usuario de creación de la interfaz de usuario de AEM 6.4 Classic {#classic-ui}
+# Guía del usuario sobre la creación de IU de AEM 6.4 Classic {#classic-ui}
 
 + [Descripción general de la guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
    + [Primeros pasos de creación](classic-page-author-first-steps.md)
    + [Crear en la IU clásica](classicui.md)
-   + [Utilización del entorno de creación](author-env.md)
+   + [Uso del entorno de creación](author-env.md)
    + [Gestión básica](author-env-basic-handling.md)
    + [Configuración del entorno de cuenta](author-env-user-props.md)
-   + [Selección de la IU](author-env-select-ui.md)
-   + [Buscar](author-env-search.md)
-   + [Su bandeja de entrada](author-env-inbox.md)
-   + [Métodos abreviados del teclado para las consolas](author-env-keyboard-shortcuts.md)
+   + [Seleccionar la IU](author-env-select-ui.md)
+   + [Búsqueda  ](author-env-search.md)
+   + [Su bandeja de entrada  ](author-env-inbox.md)
+   + [Métodos abreviados del teclado para las consolas  ](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
-   + [Creación y organización de páginas](classic-page-author-manage-pages.md)
+   + [Crear y organizar páginas](classic-page-author-manage-pages.md)
    + [Edición del contenido de una página](classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](classic-page-author-rich-text-editor.md)
-   + [Publicación de páginas](classic-page-author-publish-pages.md)
-   + [Edición de las propiedades de página](classic-page-author-edit-page-properties.md)
+   + [Publicar páginas](classic-page-author-publish-pages.md)
+   + [Edición de las propiedades de página  ](classic-page-author-edit-page-properties.md)
    + [Anotaciones al editar una página](classic-page-author-annotations.md)
    + [Resolución de problemas de AEM durante la creación](classic-page-author-troubleshooting.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Crear una página para dispositivos móviles ](classic-feature-mobile.md)
+   + [Crear una página para dispositivos móviles](classic-feature-mobile.md)
    + [Componentes para la creación de páginas](classic-page-author-edit-mode.md)
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
-   + [Diseño adaptable](classic-page-author-responsive-layout.md)
+   + [Diseño adaptable ](classic-page-author-responsive-layout.md)
    + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
-   + [Uso de etiquetas](classic-feature-tags.md)
-   + [Andamiaje](classic-feature-scaffolding.md)
+   + [Uso de etiquetas  ](classic-feature-tags.md)
+   + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
    + [Adición de funciones de Search&amp;Promote a la página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
@@ -67,19 +66,19 @@ ht-degree: 80%
    + [Administración de campañas](classic-personalization-campaigns.md)
    + [Teasers y estrategias](classic-personalization-campaigns-teasers-strategy.md)
    + [Páginas de aterrizaje](classic-personalization-campaigns-landingpage.md)
-   + [Ofertas de destino](classic-personalization-campaigns-target-offers.md)
-   + [Uso del administrador de campañas de marketing](classic-personalization-campaigns-mktg-manager.md)
+   + [Ofertas de Target](classic-personalization-campaigns-target-offers.md)
+   + [Trabajo con Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Marketing por correo electrónico](classic-personalization-campaigns-email.md)
    + [Seguimiento de correos electrónicos devueltos](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Configuración de la campaña](classic-personalization-campaigns-setting-up-your.md)
    + [Publicar un mensaje de correo electrónico para los proveedores de servicios de correo electrónico](classic-personalization-campaigns-email-newsletters.md)
    + [Crear una página de aterrizaje del boletín eficaz](classic-personalization-campaigns-email-landingpage.md)
-   + [Administración de suscripciones](classic-personalization-campaigns-email-subscriptions.md) 
+   + [Administración de suscripciones](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Trabajo con Adobe Campaign 6.1 y Adobe Campaign Standard](classic-personalization-ac-campaign.md)
    + [Trabajo con Adobe Campaign](classic-personalization-ac.md)
    + [Componentes de Adobe Campaign](classic-personalization-ac-components.md)
-   + [Orientación de Adobe Campaign](classic-personalization-ac-target.md)
+   + [Targeting de Adobe Campaign](classic-personalization-ac-target.md)
 + Creación de recursos en la IU clásica {#assets}
    + [Uso de recursos](classicui-assets.md)
    + [Envío de recursos de Dynamic Media](dynamic-media-assets-delivering.md)

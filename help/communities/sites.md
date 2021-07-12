@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '463'
 ht-degree: 3%
 
 ---
-
 
 # Plantillas de sitios {#site-templates}
 
@@ -27,7 +26,7 @@ La consola Plantillas de sitio es muy similar a la consola [Plantillas de grupo]
 >
 >Las consolas para la creación de [sitios de la comunidad](sites-console.md), [plantillas de sitios de la comunidad](sites.md), [plantillas de grupos de la comunidad](tools-groups.md) y [funciones de la comunidad](functions.md) solo se deben usar en el entorno de creación.
 
-## Consola Plantillas de sitio {#site-templates-console}
+## Consola Plantillas del sitio {#site-templates-console}
 
 En el entorno de creación, para llegar a la consola Sitios de comunidad
 
@@ -84,7 +83,7 @@ La función page proporciona una página vacía. La función de grupos permite c
 
 ![imagen_1-22](assets/chlimage_1-22.png)
 
-### Función {#group-templates-for-groups-function} Plantillas de grupo para grupos
+### Plantillas de grupo para la función Grupos {#group-templates-for-groups-function}
 
 Al incluir una función de grupos en la plantilla de sitio, la configuración requiere la especificación de las opciones de plantilla de grupo permitidas cuando se crea un nuevo grupo en el entorno de publicación.
 
@@ -98,7 +97,7 @@ Al seleccionar dos o más plantillas de grupo de comunidad, se proporciona una o
 
 ![imagen_1-24](assets/chlimage_1-24.png)
 
-## Editar plantilla del sitio{#edit-site-template}
+## Editar plantilla del sitio {#edit-site-template}
 
 Al ver las plantillas de sitio en la consola principal [Plantillas de sitio](#site-templates-console), es posible seleccionar una plantilla de sitio existente para editarla.
 

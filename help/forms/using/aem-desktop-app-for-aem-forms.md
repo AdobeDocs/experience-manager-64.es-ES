@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 26cd0851-cadf-4a8f-b3bf-59f77671f584
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
-
 
 # AEM aplicación de escritorio para AEM Forms {#aem-desktop-app-for-aem-forms}
 
@@ -25,7 +24,7 @@ AEM aplicación de escritorio le permite asignar el repositorio de Adobe Experie
 
 Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre la descarga de la aplicación, consulte [AEM Notas de la versión de la aplicación de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
-## Recursos AEM Forms admitidos en AEM aplicación de escritorio {#aem-forms-assets-supported-in-aem-desktop-app}
+## Recursos AEM Forms compatibles con AEM aplicación de escritorio {#aem-forms-assets-supported-in-aem-desktop-app}
 
 Puede utilizar la aplicación para sincronizar archivos binarios de AEM Forms del siguiente tipo: Plantillas de formulario (.xdp), Formulario PDF (.pdf), Documento (.pdf), Imágenes, Esquema XML (.xsd), Hojas de estilo (.xfs). La aplicación enumera todos los demás archivos (archivos no compatibles) como archivos de 0 bytes. La lista de archivos no compatibles como archivos de 0 bytes garantiza que el usuario conozca la existencia de otros recursos disponibles en el servidor de AEM Forms.
 
@@ -45,4 +44,3 @@ AEM aplicación de escritorio utiliza el protocolo WebDAV en Microsoft Windows y
 1. Abra la aplicación y conéctese al servidor de AEM Forms.
 
    Cuando la conexión se realiza correctamente, la aplicación rellena las carpetas `content/dam` y `content/dam/formsanddocuments`. Junto con mover archivos de carpetas anteriores a carpetas locales y viceversa, puede utilizar la aplicación para mover contenido entre carpetas rellenadas automáticamente.
-

@@ -3,21 +3,20 @@ title: Publicar carpetas en Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de recursos en Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: User
+exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 36%
 
 ---
-
 
 # Publicar recursos en Brand Portal {#publish-assets-to-brand-portal}
 
 Como administrador de recursos de Adobe Experience Manager (AEM), puede publicar recursos en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md).
 
-Después de publicar un recurso, estará disponible para los usuarios de Brand Portal.
+Después de publicar un recurso, este está disponible para los usuarios de Brand Portal.
 
 Si realiza las modificaciones posteriores al recurso original en AEM Assets, los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar el recurso. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
 

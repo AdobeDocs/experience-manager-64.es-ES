@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de contenido
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 7%
@@ -143,7 +142,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 
 * Son independientes del mecanismo de envío (es decir, página, canal).
 
-### Fragmentos con activos visuales {#fragments-with-visual-assets}
+### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
 Para que los autores tengan un mayor control sobre su contenido, las imágenes se pueden añadir o integrar con un fragmento de contenido.
 
@@ -173,7 +172,7 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas; 
    * No proporciona el concepto de ser aprobado para un fragmento específico.
    * Consulte [Navegador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser) para obtener más información.
 
-### Componentes de un fragmento de contenido {#constituent-parts-of-a-content-fragment}
+### Partes constitutivas de un fragmento de contenido {#constituent-parts-of-a-content-fragment}
 
 Los recursos de fragmento de contenido están formados por las siguientes partes (directa o indirectamente):
 
@@ -299,7 +298,7 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos elementos o variaciones y contenido asociado, o todos ellos.
    * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
 
-## Ejemplo de uso {#example-usage}
+## Uso de ejemplo {#example-usage}
 
 Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, debe tener en cuenta qué se utilizará donde.
 

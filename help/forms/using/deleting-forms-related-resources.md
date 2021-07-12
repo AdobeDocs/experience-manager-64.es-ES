@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
-
 
 # Eliminación de formularios y recursos relacionados {#deleting-forms-and-related-resources}
 
@@ -24,7 +23,7 @@ Puede eliminar los formularios y recursos para quitar estos recursos del reposit
 
 Si elimina un recurso de la instancia de autor, el recurso también se elimina de la instancia de publicación. El servidor de AEM Forms consta de instancias de Autor y Publicación . La instancia Autor es para crear y administrar recursos y recursos de formularios. La instancia Publicar contiene los recursos de formularios publicados y los recursos relacionados disponibles para los usuarios finales.
 
-## Cómo eliminar un formulario {#how-to-delete-a-form}
+## Eliminación de un formulario {#how-to-delete-a-form}
 
 1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo a `https://[hostname]:[portport]/aem/forms.html.`
 1. Desplácese hasta el formulario que quiera eliminar y selecciónelo. Haga clic en Eliminar ![aem6forms_delete2](assets/aem6forms_delete2.png) en la barra de herramientas y confirme la operación de eliminación.

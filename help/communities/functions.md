@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2542'
 ht-degree: 2%
 
 ---
-
 
 # Funciones de comunidad {#community-functions}
 
@@ -31,7 +30,7 @@ Hay varias funciones de la comunidad disponibles inmediatamente, como se ve en l
 >
 >Las consolas para la creación de [sitios de la comunidad](sites-console.md), [plantillas de sitios de la comunidad](sites.md), [plantillas de grupos de la comunidad](tools-groups.md) y [funciones de la comunidad](functions.md) solo se deben usar en el entorno de creación.
 
-## Consola de funciones de la comunidad {#community-functions-console}
+## Consola Funciones de la comunidad {#community-functions-console}
 
 En el entorno de creación, para llegar a la consola de funciones de la comunidad
 

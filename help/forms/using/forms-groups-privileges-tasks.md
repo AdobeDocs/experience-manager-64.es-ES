@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 2%
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
-
-# AEM Forms en Grupos y Privilegios OSGi {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms en grupos y privilegios OSGi {#aem-forms-on-osgi-groups-and-privileges}
 
 Asignar usuarios a los grupos para administrar AEM Forms en OSGi
 
@@ -114,4 +113,3 @@ Una vez que instale [AEM Forms add-on package](/help/forms/using/installing-conf
 
 1. El usuario con privilegios de grupo de usuarios de formularios no puede escribir secuencias de comandos para formularios adaptables.
 1. El usuario con privilegios de grupo de autores de plantillas no puede escribir secuencias de comandos para plantillas.
-

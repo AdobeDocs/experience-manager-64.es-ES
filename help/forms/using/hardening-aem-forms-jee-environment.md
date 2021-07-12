@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '7350'
+source-wordcount: '7347'
 ht-degree: 1%
 
 ---
-
 
 # Endurecimiento de la AEM Forms en el entorno JEE {#hardening-your-aem-forms-on-jee-environment}
 
@@ -289,7 +288,7 @@ Además, se recomienda cambiar la contraseña predeterminada para el administrad
 1. Especifique la nueva contraseña en el campo **Nueva contraseña** y la contraseña antigua en el campo **Su contraseña**.
 1. Haga clic en el icono Guardar en la parte inferior derecha de la interfaz de usuario.
 
-#### Desactivar generación de WSDL {#disable-wsdl-generation}
+#### Deshabilitar generación WSDL {#disable-wsdl-generation}
 
 La generación del lenguaje de definición de servicios web (WSDL) solo debe habilitarse para entornos de desarrollo, donde los desarrolladores utilizan la generación WSDL para crear sus aplicaciones cliente. Puede optar por desactivar la generación de WSDL en un entorno de producción para evitar exponer los detalles internos de un servicio.
 
@@ -440,11 +439,11 @@ En esta tabla se describen las técnicas de auditoría y registro que puede util
  </tbody> 
 </table>
 
-## Configuración de AEM Forms en JEE para acceso más allá de la empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
+## Configuración de AEM Forms en JEE para acceder más allá de la empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 Después de instalar correctamente AEM Forms en JEE, es importante mantener periódicamente la seguridad de su entorno. En esta sección se describen las tareas recomendadas para mantener la seguridad de AEM Forms en el servidor de producción JEE.
 
-### Configuración de un proxy inverso para acceso a la Web {#setting-up-a-reverse-proxy-for-web-access}
+### Configuración de un proxy inverso para acceso web {#setting-up-a-reverse-proxy-for-web-access}
 
 Se puede utilizar un *proxy inverso* para garantizar que un conjunto de URL para AEM Forms en aplicaciones web JEE esté disponible para usuarios externos e internos. Esta configuración es más segura que permitir que los usuarios se conecten directamente al servidor de aplicaciones en el que se ejecuta AEM Forms en JEE. El proxy inverso realiza todas las solicitudes HTTP para el servidor de aplicaciones que ejecuta AEM Forms en JEE. Los usuarios solo tienen acceso de red al proxy inverso y solo pueden intentar conexiones URL compatibles con el proxy inverso.
 
@@ -649,7 +648,7 @@ AEM Forms en JEE utiliza la función de filtro de referente para bloquear los at
 * **URI permitidos:** es una lista de recursos que se van a proporcionar sin comprobar el encabezado del referente. Los recursos, por ejemplo, páginas de ayuda que no producen cambios de estado en el servidor, se pueden agregar a esta lista. El filtro Referente nunca bloquea los recursos de la lista URI permitidos independientemente de quién sea el referente.
 * **Referente nulo:**  una solicitud de servidor que no está asociada a una página web principal o que no se origina en ella se considera una solicitud de un Referente nulo. Por ejemplo, al abrir una nueva ventana del explorador, escribir una dirección y pulsar Intro, el Referente enviado al servidor es nulo. Una aplicación de escritorio (.NET o SWING) que realiza una solicitud HTTP a un servidor web, también envía un referente nulo al servidor.
 
-### Filtrado de referente {#referer-filtering}
+### Filtrado de referentes {#referer-filtering}
 
 El proceso de filtrado del referente se puede describir de la siguiente manera:
 
@@ -673,7 +672,7 @@ El proceso de filtrado del referente se puede describir de la siguiente manera:
    1. Si se permite un referente nulo, se pasa la solicitud.
    1. Si no se permite un referente nulo, el servidor comprueba si el URI solicitado es una excepción para el referente nulo y gestiona la solicitud en consecuencia.
 
-### Administración del filtro de referente {#managing-referer-filtering}
+### Administración del filtrado del referente {#managing-referer-filtering}
 
 AEM Forms en JEE proporciona un filtro de referente para especificar Referente al que se permite el acceso a los recursos del servidor. De forma predeterminada, el filtro Referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente desde ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El filtro de referente se desactiva si se eliminan todas las entradas de la lista Referente permitido.
 
@@ -928,7 +927,7 @@ En referencia a la arquitectura física que se describe en la sección [AEM Form
 
 Para obtener instrucciones sobre cómo configurar SSL en JBoss, WebLogic y WebSphere, consulte &quot;Configuración de SSL&quot; en la [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-### Configuración del redireccionamiento SSL {#configuring-ssl-redirect}
+### Configuración de la redirección SSL {#configuring-ssl-redirect}
 
 Después de configurar el servidor de aplicaciones para que admita SSL, debe asegurarse de que todo el tráfico HTTP a aplicaciones y servicios se aplique para utilizar el puerto SSL.
 
@@ -995,11 +994,11 @@ Cuando utilice carpetas vigiladas como forma de enviar y recibir documentos con 
 
 Esta sección contiene recomendaciones de configuración del servidor de aplicaciones específicas de JBoss 7.0.6 cuando se usan para ejecutar AEM Forms en JEE.
 
-### Desactive la Consola de administración JBoss y la Consola JMX {#disable-jboss-management-console-and-jmx-console}
+### Desactivar la consola de administración de JBoss y la consola JMX {#disable-jboss-management-console-and-jmx-console}
 
 El acceso a la consola de administración de JBoss y la consola JMX ya está configurado (la monitorización JMX está deshabilitada) cuando instala AEM Forms en JEE en JBoss mediante el método de instalación llave en mano. Si está utilizando su propio servidor de aplicaciones JBoss, asegúrese de que el acceso a la consola de administración de JBoss y a la consola de monitorización JMX esté protegido. El acceso a la consola de monitorización JMX se establece en el archivo de configuración JBoss llamado jmx-invoker-service.xml.
 
-### Desactivar exploración de directorios {#disable-directory-browsing}
+### Desactivación de la exploración de directorios {#disable-directory-browsing}
 
 Después de iniciar sesión en la Consola de administración, es posible examinar la lista de directorios de la consola modificando la dirección URL. Por ejemplo, si cambia la dirección URL a una de las siguientes direcciones URL, puede aparecer un listado de directorios:
 
@@ -1012,7 +1011,7 @@ https://<servername>:8080/um/
 
 Esta sección contiene recomendaciones de configuración del servidor de aplicaciones para proteger WebLogic 9.1 al ejecutar AEM Forms en JEE.
 
-### Desactivar exploración de directorios {#disable_directory_browsing-1}
+### Desactivación de la exploración de directorios {#disable_directory_browsing-1}
 
 Establezca las propiedades de los directorios de índice del archivo weblogic.xml en `false`, como se muestra en este ejemplo:
 
@@ -1031,7 +1030,7 @@ De forma predeterminada, WebLogic no habilita el puerto de escucha SSL predeterm
 
 Esta sección contiene recomendaciones de configuración del servidor de aplicaciones para proteger WebSphere que ejecuta AEM Forms en JEE.
 
-### Desactivar exploración de directorios {#disable_directory_browsing-2}
+### Desactivación de la exploración de directorios {#disable_directory_browsing-2}
 
 Establezca la propiedad `directoryBrowsingEnabled` en el archivo ibm-web-ext.xml en `false`.
 
@@ -1043,4 +1042,3 @@ Establezca la propiedad `directoryBrowsingEnabled` en el archivo ibm-web-ext.xml
 1. Desmarque **Habilitar seguridad de aplicación** y **Usar seguridad de Java 2**.
 1. Haga clic en **OK** o **Aplicar**.
 1. En el cuadro **Mensajes**, haga clic en **Guardar directamente en la configuración maestra**.
-

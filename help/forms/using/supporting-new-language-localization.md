@@ -8,16 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptive Forms
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Formularios adaptables
+role: Admin
+exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables {#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -47,7 +46,7 @@ Una vez identificada la configuración regional, los formularios adaptables sele
 
 Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca de cliente para `en_ZA` no existe, el formulario adaptable utilizará la biblioteca de cliente para `en` (inglés), si existe. Sin embargo, si no existe ninguno, el formulario adaptable utiliza el diccionario para la configuración regional `en`.
 
-## Agregar compatibilidad con localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
+## Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
 Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR, chino- (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR).
 
@@ -61,7 +60,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 1. [Agregar compatibilidad con la configuración regional para el diccionario](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reinicio del servidor](/help/forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Agregar una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
+### Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ir a `https://[server]:[port]/system/console/configMgr`.
 1. Haga clic en para editar el componente **Guide Localization Service**.
@@ -69,7 +68,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Agregar la biblioteca de cliente XFA para una configuración regional {#add-xfa-client-library-for-a-locale-br}
+### Agregar una biblioteca de cliente XFA para una configuración regional {#add-xfa-client-library-for-a-locale-br}
 
 Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con la categoría `xfaforms.I18N.<locale>`, y agregue los siguientes archivos a la biblioteca del cliente:
 
@@ -100,7 +99,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Agregar compatibilidad de configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
+### Agregar compatibilidad con la configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
 
 Realice este paso solo si el `<locale>` que está agregando no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -113,11 +112,11 @@ Realice este paso solo si el `<locale>` que está agregando no está entre `en`,
 
 El `<locale>` aparecerá en `https://[server]:[port]/libs/cq/i18n/translator.html`.
 
-### Reinicie el servidor {#restart-the-server}
+### Reinicio del servidor {#restart-the-server}
 
 Reinicie el servidor de AEM para que la configuración regional añadida entre en vigor.
 
-## Bibliotecas de muestra para agregar compatibilidad con español {#sample-libraries-for-adding-support-for-spanish}
+## Bibliotecas de muestra para agregar compatibilidad con el español {#sample-libraries-for-adding-support-for-spanish}
 
 Bibliotecas de cliente de muestra para agregar compatibilidad con el español
 

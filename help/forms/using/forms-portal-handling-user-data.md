@@ -8,15 +8,14 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
-
 
 # Portal de Forms | Gestión de datos de usuario {#forms-portal-handling-user-data}
 
@@ -24,7 +23,7 @@ AEM Forms Portal proporciona componentes que puede utilizar para enumerar formul
 
 Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestran en las fichas Borradores y envíos del portal de formularios. Los datos de borradores o formularios enviados se almacenan en el almacén de datos configurado para AEM implementación. Los borradores y envíos de usuarios anónimos no se muestran en la página del portal de formularios; sin embargo, los datos se almacenan en el almacén de datos configurado. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
-## Almacenamiento de datos y datos de usuario {#user-data-and-data-stores}
+## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
 El portal de Forms almacena datos para formularios en borrador y enviados en los siguientes casos:
 
@@ -68,7 +67,7 @@ Según la persistencia del almacén de datos configurado, los borradores y los d
 
 Puede acceder a los datos de los formularios borrador y enviados para los usuarios que iniciaron sesión y los anónimos en los almacenes de datos configurados y, si es necesario, eliminarlos.
 
-### instancias de AEM {#aem-instances}
+### AEM instancias {#aem-instances}
 
 Todos los borradores y los datos de formularios enviados en AEM instancias (autor, publicación o remota) para usuarios conectados y anónimos se almacenan en el nodo `/content/forms/fp/` del repositorio de AEM aplicable. Cada vez que un usuario anónimo o con sesión iniciada guarda un borrador o envía un formulario, se genera un `draft ID` o `submission ID`, un `user data ID` y un `ID` aleatorio para cada archivo adjunto (si corresponde), que está asociado con el borrador o envío respectivo.
 
@@ -123,4 +122,3 @@ Para eliminar borradores y enviar datos para un usuario que ha iniciado sesión 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
 ```
-

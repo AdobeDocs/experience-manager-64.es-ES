@@ -3,15 +3,14 @@ title: Publicar colecciones en Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de colecciones en Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: User
+exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '340'
 ht-degree: 22%
 
 ---
-
 
 # Publicar colecciones en Brand Portal {#publish-collections-to-brand-portal}
 
@@ -23,9 +22,9 @@ Si realiza las modificaciones posteriores a la colección original en AEM Assets
 >
 >Los fragmentos de contenido no se pueden publicar en Brand Portal. Por lo tanto, si selecciona fragmentos de contenido en AEM Author, la acción **[Publicar en Brand Portal]** no estará disponible.
 >
->Si las colecciones que contienen fragmentos de contenido se publican desde AEM Author a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replican en la interfaz de Brand Portal.
+>Si las colecciones que contienen fragmentos de contenido se publican de AEM Author a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replican en la interfaz de Brand Portal.
 
-## Publicar una colección en Brand Portal {#publish-a-collection-to-brand-portal}
+## Publicación de una colección en Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. En la interfaz de usuario de AEM Assets, toque o haga clic en el logotipo de AEM. A continuación, vaya a **[!UICONTROL Assets > Colecciones]** desde la página **[!UICONTROL Navegación]**.
 2. En la consola Colecciones , seleccione la colección que desee publicar en Brand Portal.
@@ -44,7 +43,7 @@ Si realiza las modificaciones posteriores a la colección original en AEM Assets
 
 ## Cancelar la publicación de colecciones {#unpublish-collections}
 
-Puede cancelar la publicación de las colecciones que publica desde AEM Assets en Brand Portal. Después de cancelar la publicación de la colección original, su copia ya no estará disponible para los usuarios de Brand Portal.
+Puede cancelar la publicación de colecciones que publique desde AEM Assets en Brand Portal. Después de cancelar la publicación de la colección original, la copia ya no estará disponible para los usuarios de Brand Portal.
 
 1. En la consola Colecciones de la instancia de AEM Assets y seleccione la colección que desea cancelar la publicación.
 

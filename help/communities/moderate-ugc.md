@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
-
 
 # Moderación del contenido de la comunidad {#moderating-community-content}
 
@@ -155,7 +154,7 @@ En la otra ubicación, cuando el contenido está presente en el portapapeles, ap
 
 Un moderador puede no permitir que UGC permanezca visible en el sitio publicado. Para los administradores y moderadores de la comunidad, la publicación sigue disponible y se anota como correo no deseado.
 
-### Cerrar / Volver a abrir {#close-reopen}
+### Cerrar/volver a abrir {#close-reopen}
 
 La acción Cerrar funciona en todo el subproceso de conversación (un tema del foro o el comentario inicial) e incluye todos los anuncios o respuestas posteriores.
 
@@ -165,7 +164,7 @@ Para realizar cualquier operación, se debe volver a abrir el tema o comentario.
 
 Los administradores o los moderadores de la comunidad pueden realizar la acción Cerrar/Volver a abrir .
 
-### Marcar / Desmarcar {#flag-unflag}
+### Marcar/Desmarcar {#flag-unflag}
 
 El marcado es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono para desmarcar que permitirá que el mismo miembro desmarque el contenido.
 
@@ -241,7 +240,7 @@ Desde la [consola de moderación masiva](moderation.md), es posible filtrar y ve
 
 AEM comunidades proporciona un *analizador de palabras clave *como un paso en el proceso para evaluar [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de palabras clave negativas y positivas utilizadas en el contenido publicado, así como a palabras prohibidas.
 
-#### Configurar las opiniones y las palabras para observar {#configure-sentiment-and-watchwords}
+#### Configuración de opiniones y palabras clave {#configure-sentiment-and-watchwords}
 
 La lista de palabras clave positivas y negativas se puede personalizar, al igual que las reglas de opinión.
 
@@ -286,4 +285,3 @@ Los siguientes permisos, cuando se asignan al mismo recurso, se denominan colect
 * `Create`
 * `Delete`
 * `Replicate`
-

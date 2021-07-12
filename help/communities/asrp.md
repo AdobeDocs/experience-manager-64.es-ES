@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '829'
 ht-degree: 2%
 
 ---
 
-
-# ASRP - Proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP: proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Acerca de ASRP {#about-asrp}
 
@@ -42,7 +41,7 @@ Las claves de consumidor y secreto se comparten entre todos los grupos de inform
 
 ## Configuración {#configuration}
 
-### Seleccione ASRP {#select-asrp}
+### Seleccionar ASRP {#select-asrp}
 
 La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
@@ -85,7 +84,7 @@ para cada instancia de autor y publicación, pruebe la conexión al centro de da
 
 * Finalmente, asegúrese de que las direcciones URL del sitio para los datos de perfil sean enrutables desde el centro de datos [externalizando vínculos](#externalize-links).
 
-### Replicar la clave de cifrado {#replicate-the-crypto-key}
+### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
 La clave de consumidor y la clave secreta están cifradas. Para que las claves se cifren o desencripten correctamente, la clave principal de Granite Crypto debe ser la misma en todas las instancias AEM.
 
@@ -163,4 +162,3 @@ En todas las instancias de creación y publicación de AEM, vuelva a la consola 
 
    * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que el proveedor de almacenamiento es JSRP
    * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de la configuración predeterminada deben definir ASRP para que sea el proveedor predeterminado
-

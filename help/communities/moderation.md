@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1855'
 ht-degree: 3%
 
 ---
-
 
 # Consola de moderación {#moderation-console}
 
@@ -340,4 +339,3 @@ Para volver a la visualización del área de contenido de varios anuncios UGC, s
 Por ejemplo:
 
 ![chlimage_1-488](assets/chlimage_1-488.png)
-

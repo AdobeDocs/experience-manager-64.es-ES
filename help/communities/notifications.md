@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
-
 
 # Notificaciones de comunidades {#communities-notifications}
 
@@ -65,7 +64,7 @@ Tenga en cuenta que
 
 * Los perfiles de miembros ya están configurados para permitir que otros miembros sigan
 
-## Notificaciones de la siguiente {#notifications-from-following}
+## Notificaciones de lo siguiente {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -81,7 +80,7 @@ Aparecerá el botón **Follow**
 * Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog
    * Sigue toda la actividad de esa entrada específica
 
-## Administración de la configuración de notificación {#managing-notification-settings}
+## Administración de la configuración de notificaciones {#managing-notification-settings}
 
 Al seleccionar el vínculo Configuración de notificación de la página Notificaciones , es posible que cada miembro administre cómo se reciben las notificaciones.
 
@@ -99,7 +98,7 @@ Un miembro puede activarlo, pero aun así depende del correo electrónico que se
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
-## Visualización de notificaciones{#viewing-notifications} 
+## Visualización de notificaciones  {#viewing-notifications}
 
 ### Notificaciones web {#web-notifications}
 
@@ -109,9 +108,8 @@ Al visitar el sitio publicado, seleccionar el enlace `Notifications` mostrará t
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-### Notificaciones de correo electrónico {#email-notifications}
+### Notificaciones por correo electrónico {#email-notifications}
 
 Cuando el canal de correo electrónico está habilitado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
-

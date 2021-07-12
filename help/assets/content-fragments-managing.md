@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de contenido
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 11%
@@ -124,7 +123,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 >
 >Muchas de ellas son [acciones estándar para Assets](managing-assets-touch-ui.md) o la [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
 
-## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
+## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
 Para abrir el fragmento para editarlo:
 
@@ -224,7 +223,7 @@ Una vez abierto el fragmento, puede utilizar la pestaña [Variations](content-fr
 
 Una vez creado el contenido principal, puede crear y administrar [Variaciones](content-fragments-variations.md) de dicho contenido.
 
-## Asociación del contenido con el fragmento {#associating-content-with-your-fragment}
+## Asociación del contenido al fragmento {#associating-content-with-your-fragment}
 
 También puede [asociar contenido](content-fragments-assoc-content.md) con un fragmento. Esto proporciona una conexión para que los recursos (es decir, las imágenes) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
 
@@ -296,7 +295,7 @@ Se mostrarán en paralelo, donde:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Revertir a una versión {#reverting-to-a-version}
+## Reversión a una versión  {#reverting-to-a-version}
 
 Puede volver a una versión específica del fragmento:
 

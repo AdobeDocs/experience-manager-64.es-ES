@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 2%
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
-
 
 # Configuración de MySQL para DSRP {#mysql-configuration-for-dsrp}
 
@@ -203,4 +202,3 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
    * **[!UICONTROL Nombre]** de la fuente de datos: nombre introducido para la conexión  [MySQL](#new-connection-settings), por ejemplo, &quot;comunidades&quot;
 
 * Seleccione **[!UICONTROL Guardar]**
-

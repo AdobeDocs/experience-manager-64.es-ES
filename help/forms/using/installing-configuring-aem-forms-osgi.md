@@ -7,17 +7,16 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Administrator
+role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-translation-type: tm+mt
-source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 4%
 
 ---
 
-# Instale y configure las funcionalidades de captura de datos {#install-and-configure-data-capture-capabilities}
+# Instalación y configuración de las capacidades de captura de datos {#install-and-configure-data-capture-capabilities}
 
 Instale y configure formularios adaptables, PDF forms y HTML5 Forms. Configure Adobe Analytics y Adobe Target para formularios adaptables a fin de analizar el uso de los formularios y dirigirse a los usuarios según su perfil.
 
@@ -112,14 +111,14 @@ AEM Forms tiene algunas configuraciones obligatorias y opcionales. Las configura
 
 ### Configuraciones posteriores a la instalación obligatorias {#mandatory-post-installation-configurations}
 
-#### Configurar las bibliotecas RSA y BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configuración de las bibliotecas RSA y BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Realice los siguientes pasos en todas las instancias de Autor y Publicación para iniciar y delegar las bibliotecas:
 
 1. Detenga la instancia de AEM subyacente.
 1. Abra el archivo [AEM installation directory]\crx-quickstart\conf\sling.properties para editarlo.
 
-   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para iniciar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
+   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para comenzar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
 
 1. Agregue las siguientes propiedades al archivo sling.properties :
 
@@ -137,7 +136,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 1. Guarde y cierre el archivo e inicie la instancia de AEM.
 1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación .
 
-#### Configure el agente de serialización {#configure-the-serialization-agent}
+#### Configuración del agente de serialización {#configure-the-serialization-agent}
 
 Siga estos pasos en todas las instancias de Autor y Publicación para añadir el paquete a la lista de permitidos:
 
@@ -146,7 +145,7 @@ Siga estos pasos en todas las instancias de Autor y Publicación para añadir el
 1. Agregue el paquete **[!UICONTROL sun.util.calendar]** al campo **[!UICONTROL lista de permitidos]**. Haga clic en **[!UICONTROL Guardar]**.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación .
 
-### Configuraciones postinstalación opcionales {#optional-post-installation-configurations}
+### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
 
 #### Configurar Dispatcher {#configure-dispatcher}
 
@@ -180,13 +179,13 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
    >
    >Para deshabilitar la caché, establezca el valor en el campo Número de Forms adaptable en **0**. La caché se restablece y todos los formularios y documentos se eliminan de la caché cuando se desactiva o cambia la configuración de la caché.
 
-#### Configurar la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
+#### Configuración de la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
 
 Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier instancia de AEM Forms, agregue certificados al almacén de confianza de Java de todas las instancias. Puede ejecutar el comando siguiente para añadir los certificados: &quot;
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-#### Configurar Adobe Sign {#configure-adobe-sign}
+#### Configuración de Adobe Sign {#configure-adobe-sign}
 
 Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de gestión de recursos humanos y muchas otras áreas.
 
@@ -194,7 +193,7 @@ En un escenario típico de Adobe Sign y formularios adaptables, un usuario relle
 
 Para usar Adobe Sign con AEM Forms, [Integre Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Configurar Adobe Analytics {#configure-adobe-analytics}
+#### Configuración de Adobe Analytics {#configure-adobe-analytics}
 
 AEM Forms se integra con Adobe Analytics, lo que le permite capturar y rastrear las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 

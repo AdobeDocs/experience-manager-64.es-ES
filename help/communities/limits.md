@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Límites de contribución de miembros {#member-contribution-limits}
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 La función límites de contribución permite limitar las contribuciones de los miembros de la comunidad como medio de protección contra el spam.
 
-Cuando un miembro está limitado, cualquier publicación que supere el número permitido de contribuciones provocará una alerta de que se superó el límite y se rechazó el anuncio. A continuación, el miembro de la comunidad puede ir al centro de mensajes de la comunidad y ponerse en contacto con un administrador de la comunidad, que puede eliminar los límites si procede.
+Cuando un miembro está limitado, cualquier publicación que supere el número permitido de contribuciones provocará una alerta de que se superó el límite y se rechazó el anuncio. A continuación, el miembro de la comunidad puede ir al centro de mensajes de la comunidad y ponerse en contacto con un administrador de la comunidad que puede eliminar los límites si procede.
 
 Los límites de contribución pueden habilitarse individualmente desde la [consola de miembros](members.md) o configurarse para habilitarse automáticamente cuando los visitantes del sitio se conviertan en nuevos miembros.
 

@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de contenido
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 15%
@@ -171,7 +170,7 @@ Cuando el editor de pantalla completa está abierto, la acción **Estadísticas 
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
-### Cargar contenido {#uploading-content}
+### Carga de contenido {#uploading-content}
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto, preparado en un editor externo y añadirlo directamente al fragmento.
 
@@ -238,7 +237,7 @@ Para realizar anotaciones en un fragmento:
 
 1. Cierre el editor de pantalla completa y **[!UICONTROL Guarde]** el fragmento.
 
-### Visualización, edición y eliminación de anotaciones {#viewing-editing-deleting-annotations}
+### Visualización, Edición, Eliminación De Anotaciones {#viewing-editing-deleting-annotations}
 
 Anotaciones:
 

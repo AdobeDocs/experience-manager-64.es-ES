@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: f1408709-5402-4f55-bd37-9943fe828af0
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3241'
 ht-degree: 3%
 
 ---
 
-
-# Consola Sitios de Communities {#communities-sites-console}
+# Consola Sitios de comunidades {#communities-sites-console}
 
 La consola Sitios de Communities proporciona acceso a:
 
@@ -77,7 +76,7 @@ El proceso se inicia seleccionando el botón `Create` situado en la parte superi
 
 El proceso de creación es una serie de pasos presentados como paneles que contienen un conjunto de funciones que se deben configurar (presentados como subpaneles). Es posible pasar al paso **Siguiente** o **Atrás** al paso anterior antes de comprometer el sitio en el paso final.
 
-### Paso 1: Plantilla de sitio {#step-site-template}
+### Paso 1: Plantilla del sitio {#step-site-template}
 
 ![newsitetemplate](assets/newsitetemplate.png)
 
@@ -117,13 +116,13 @@ El panel Diseño contiene 2 subpaneles para seleccionar el tema y el banner de m
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-El marco utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
+El marco de trabajo utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaca.
 
 Una vez publicado el sitio de la comunidad, es posible [editar las propiedades](#modifying-site-properties) y seleccionar un tema diferente.
 
-#### MARCA DEL SITIO DE LA COMUNIDAD {#community-site-branding}
+#### MARCA DE SITIOS DE LA COMUNIDAD {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -204,7 +203,7 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 
    Si está marcada esta opción, permita que los visitantes del sitio inicien sesión con sus credenciales de cuenta de Facebook. La [configuración de nube de Facebook](social-login.md#create-a-facebook-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
 
-   Si está desactivada, no se muestra ningún inicio de sesión en Facebook.
+   Si está desactivada, no se muestra ningún inicio de sesión de Facebook.
 
    Deje sin marcar un *privado* sitio de la comunidad. El valor predeterminado no está seleccionado.
 
@@ -212,7 +211,7 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 
    Si está marcada esta opción, permita que los visitantes del sitio inicien sesión con sus credenciales de cuenta de Twitter. La [configuración de nube de Twitter](social-login.md#create-a-twitter-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
 
-   Si está desactivada, no se muestra ningún inicio de sesión en Twitter.
+   Si está desactivada, no se muestra ningún inicio de sesión de Twitter.
 
    Deje sin marcar un *privado* sitio de la comunidad. El valor predeterminado no está seleccionado.
 
@@ -220,7 +219,7 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 >
 >**[!UICONTROL Permitir inicios de sesión sociales]**
 >
->Aunque pueden existir configuraciones de muestra de Facebook y Twitter que se pueden seleccionar, para un [entorno de producción](../../help/sites-administering/production-ready.md), es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte [Inicio de sesión social con Facebook y Twitter](social-login.md).
+>Aunque pueden existir configuraciones de Facebook y Twitter de ejemplo que se pueden seleccionar, para un [entorno de producción](../../help/sites-administering/production-ready.md), es necesario crear aplicaciones de Facebook y Twitter personalizadas. Consulte [Inicio de sesión social con Facebook y Twitter](social-login.md).
 
 #### ETIQUETADO {#tagging}
 
@@ -232,7 +231,7 @@ Además, la selección de áreas de nombres de etiquetas para el sitio de la com
 
 * Cuadro de búsqueda de texto: empiece a escribir para identificar las etiquetas permitidas para usar en el sitio
 
-#### ROLES {#roles}
+#### FUNCIONES {#roles}
 
 ![chlimage_1-451](assets/chlimage_1-451.png)
 
@@ -519,7 +518,7 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
 Para eliminar el sitio de la comunidad, seleccione el icono Eliminar sitio que aparece al pasar el ratón por encima del sitio en la Consola de sitio de Communities. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, activos y registros de base de datos.
 
-## Grupos de usuarios de la comunidad creados {#created-community-user-groups}
+## Grupos de usuarios de la comunidad creada {#created-community-user-groups}
 
 Una vez publicado el nuevo sitio de la comunidad, se crean nuevos grupos de miembros (los grupos de usuarios se crean en el entorno de publicación) que tienen los permisos adecuados establecidos para diversas funciones administrativas y de miembro.
 
@@ -588,4 +587,3 @@ Desde la consola de navegación global Sitios, los sitios de la comunidad se enc
 Aunque es posible acceder a un sitio de la comunidad de esta manera, para tareas administrativas, se debe acceder al sitio de la comunidad desde la consola Sitios de Communities.
 
 ![chlimage_1-470](assets/chlimage_1-470.png)
-

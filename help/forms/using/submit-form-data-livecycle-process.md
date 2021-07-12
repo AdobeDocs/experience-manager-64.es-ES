@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 1%
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
-
-# Configuración de AEM Forms para enviar datos de formulario a un AEM Forms en un proceso JEE {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# Configuración de AEM Forms para enviar datos de formulario a un proceso AEM Forms on JEE {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 Los formularios adaptables admiten el envío de datos a un proceso de AEM Forms en JEE para un procesamiento posterior. Permite almacenar en déclencheur un proceso de AEM Forms en JEE con los datos disponibles en el formulario enviado. Realice los siguientes pasos para permitir que la instancia de AEM Forms envíe un formulario adaptable a AEM Forms durante el proceso JEE:
 
-## Configure su servidor de AEM Forms {#configure-your-aem-forms-server}
+## Configuración del servidor de AEM Forms {#configure-your-aem-forms-server}
 
 Realice los siguientes pasos para permitir que el servidor de AEM forms envíe datos a un AEM Forms en un servidor JEE:
 
@@ -34,7 +33,7 @@ Realice los siguientes pasos para permitir que el servidor de AEM forms envíe d
 
 ![Configuración del SDK de cliente de LiveCycle de Adobe](assets/clientsdkconfiguration.jpg)
 
-## Asignación de datos con campos de proceso {#map-data-with-process-fields}
+## Asignación de datos a campos de proceso {#map-data-with-process-fields}
 
 Una vez configurado el AEM Forms, asigne los datos XML y los archivos adjuntos del formulario enviado a los campos del proceso AEM Forms on JEE. Para ello:
 

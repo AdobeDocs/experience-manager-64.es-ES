@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 54a4a053-ca44-451a-9a31-f1c1e8cb7002
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2886'
+source-wordcount: '2885'
 ht-degree: 2%
 
 ---
-
 
 # Puntuación y distintivos de comunidades {#communities-scoring-and-badges}
 
@@ -77,7 +76,7 @@ En la versión se incluyen tres distintivos basados en funciones:
 
 ![chlimage_1-366](assets/chlimage_1-366.png)
 
-### Distintivos otorgados {#awarded-badges}
+### Distintivos asignados {#awarded-badges}
 
 El servicio de puntuación concede distinciones basadas en premios a los miembros de la comunidad en función de las normas aplicadas a su actividad en la comunidad.
 
@@ -145,7 +144,7 @@ Si el nodo es de tipo `cq:Page` (recomendado), usando CRXDE|Lite, agregue las pr
 >
 >Si parece que una regla de puntuación no tiene ningún efecto en la asignación de distintivos, asegúrese de que la propiedad scoringRules de la regla de distintivo no haya bloqueado la regla de puntuación. Consulte la sección titulada [Reglas de distintivo](#badging-rules).
 
-### Habilitar distintivos para el componente {#enable-badges-for-component}
+### Habilitar distintivos para componentes {#enable-badges-for-component}
 
 Las reglas de puntuación y clasificación solo están en vigor para las instancias de componentes que han habilitado el distintivo editando la configuración de componentes en [modo de creación](author-communities.md).
 
@@ -581,7 +580,7 @@ Si se han aplicado reglas de puntuación y de distintivo al contenido del sitio 
 
 Consulte [Habilitar distintivos para el componente](#enable-badges-for-component).
 
-### La regla de puntuación no tiene ningún efecto {#scoring-rule-has-no-effect}
+### La regla de puntuación no tiene efecto {#scoring-rule-has-no-effect}
 
 Si se han aplicado reglas de puntuación y de distintivo al contenido del sitio web y se están concediendo distintivos para algunas acciones, pero no para otras, compruebe que la regla de distintivo no haya restringido las reglas de puntuación a las que se aplica.
 

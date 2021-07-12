@@ -3,23 +3,22 @@ title: Configurar AEM Assets con Brand Portal
 description: 'Obtenga información sobre cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1649'
 ht-degree: 41%
 
 ---
 
-
 # Configurar AEM Assets con Brand Portal {#configure-integration-64}
 
-Adobe Experience Manager (AEM) Assets se configura con Brand Portal a través de [!DNL Adobe I/O], que obtiene un testigo IMS para la autorización del inquilino de Brand Portal.
+Adobe Experience Manager (AEM) Assets se configura con Brand Portal mediante [!DNL Adobe I/O], que obtiene un testigo IMS para la autorización del inquilino de Brand Portal.
 
 >[!NOTE]
 >
->La configuración de AEM Assets con Brand Portal mediante [!DNL Adobe I/O] es compatible con la AEM 6.4.8.0 y versiones posteriores.
+>La configuración de AEM Assets con Brand Portal mediante [!DNL Adobe I/O] es compatible con AEM 6.4.8.0 y versiones posteriores.
 >
 >Anteriormente, Brand Portal se configuraba en la IU clásica mediante la puerta de enlace OAuth heredada, que utiliza el intercambio de tokens de JWT para obtener un token de acceso de IMS para la autorización.
 
@@ -62,7 +61,7 @@ Se recomienda tener AEM 6.4 para configurar una instancia de autor AEM. Si no ti
 
 Después de descargar AEM, para obtener instrucciones para configurar una instancia de autor AEM, consulte [implementación y mantenimiento](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
-### Descargue e instale AEM último Service Pack {#servicepack}
+### Descargar e instalar AEM último Service Pack {#servicepack}
 
 Para obtener instrucciones detalladas, consulte
 
@@ -129,7 +128,7 @@ Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 
    Abra una nueva pestaña y [Create [!DNL Adobe I/O] integration](#createnewintegration) para obtener los detalles de integración de las configuraciones de cuenta de IMS.
 
-### Crear [!DNL Adobe I/O] integración {#createnewintegration}
+### Crear integración [!DNL Adobe I/O] {#createnewintegration}
 
 [!DNL Adobe I/O]La integración de genera la clave de API, el secreto del cliente y la carga útil (JWT), que es necesaria para configurar las configuraciones de cuenta de IMS.
 
@@ -176,7 +175,7 @@ Dirección URL predeterminada: http:// localhost:4502/aem/start.html
 Asegúrese de haber realizado los siguientes pasos:
 
 * [Obtener un certificado público](#public-certificate)
-* [ [!DNL Adobe I/O] Crear integración](#createnewintegration)
+* [Crear [!DNL Adobe I/O] integración](#createnewintegration)
 
 **Pasos para crear la configuración de cuenta de IMS:**
 
@@ -229,7 +228,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube. La instancia de autor de AEM Assets ahora está integrada con el inquilino de Brand Portal.
 
-### Probar la configuración{#test-integration}
+### Probar la configuración {#test-integration}
 
 1. Inicie sesión en la instancia de autor de AEM Assets.
 
@@ -324,7 +323,7 @@ Realice los siguientes pasos para eliminar la configuración existente:
 
    Dirección URL predeterminada: http:// localhost:4502/crx/de/index.jsp
 
-1. Vaya a `/etc/replications/agents.author` y elimine los cuatro agentes de replicación del inquilino de Brand Portal.
+1. Vaya a `/etc/replications/agents.author` y elimine los cuatro agentes de replicación de su inquilino de Brand Portal.
 
    ![](assets/delete-replication-agent.png)
 
@@ -332,7 +331,7 @@ Realice los siguientes pasos para eliminar la configuración existente:
 
    ![](assets/delete-cloud-service.png)
 
-1. Vaya a `/home/users/mac` y elimine el **usuario MAC** del inquilino de Brand Portal.
+1. Vaya a `/home/users/mac` y elimine el **usuario MAC** de su inquilino de Brand Portal.
 
    ![](assets/delete-mac-user.png)
 

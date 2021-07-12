@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 2f71c588-5616-440f-8e47-8d9665169b3b
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2534'
 ht-degree: 1%
 
 ---
-
 
 # Importación y exportación de recursos a AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
@@ -109,7 +108,7 @@ Para cargar un tema:
 1. Pulse Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > ![brújula](assets/compass.png) icono> Forms> Temas.
 1. haga clic en **Crear** > **Cargar archivo**. En la solicitud de carga de archivos, busque y seleccione un paquete de temas en el equipo y haga clic en **Cargar**. Se subió el tema.
 
-## Importar y exportar recursos en Administración de correspondencia {#import-and-export-assets-in-correspondence-management}
+## Importar y exportar recursos en la gestión de correspondencia {#import-and-export-assets-in-correspondence-management}
 
 Para compartir recursos, como diccionarios de datos, cartas y fragmentos de documentos, entre dos implementaciones diferentes de Gestión de correspondencia, puede crear y compartir archivos .cmp. Un archivo .cmp puede incluir uno o más diccionarios de datos, letras, fragmentos de documento y formularios.
 
@@ -128,7 +127,7 @@ Para compartir recursos, como diccionarios de datos, cartas y fragmentos de docu
 
    El archivo .cmp incluye los recursos exportados. Puede compartir el archivo .cmp con otros usuarios. Otros usuarios pueden importar el archivo .cmp en un servidor diferente para obtener todos los recursos en el nuevo servidor.
 
-### Exporte todos los recursos de Gestión de Correspondencia como un paquete {#export-all-the-correspondence-management-assets-as-a-package}
+### Exportar todos los recursos de la gestión de correspondencia como un paquete {#export-all-the-correspondence-management-assets-as-a-package}
 
 Utilice esta opción para descargar todos los recursos de Gestión de correspondencia y dependencias relacionadas como paquete desde una instancia de formularios AEM.
 
@@ -159,7 +158,7 @@ Para descargar todos los recursos de Gestión de Correspondencia y las dependenc
 
    Para añadir los recursos del paquete a otra instancia de Gestión de Correspondencia, [importe el paquete a una instancia de AEM Forms](/help/forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-### Importar fragmentos de documento, cartas y/o diccionarios de datos en la administración de correspondencia {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+### Importar fragmentos de documento, letras y/o diccionarios de datos en la gestión de correspondencia {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 Puede importar recursos que se exporten a un archivo .cmp. Un archivo .cmp puede tener una o más letras, diccionarios de datos, fragmentos de documentos y recursos dependientes.
 
@@ -242,7 +241,7 @@ Complete los siguientes pasos para crear copias de recursos y cartas:
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del recurso o la carta.
 1. Pulse Pegar. Se crean nuevas copias de los recursos copiados.
 
-## Búsqueda {#search-features}
+## Búsqueda   {#search-features}
 
 La interfaz de usuario de AEM Forms le permite buscar su contenido. Con la barra superior, puede pulsar Buscar **A** para buscar en el contenido recursos como recursos y documentos.
 

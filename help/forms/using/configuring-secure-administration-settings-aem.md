@@ -8,17 +8,16 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
 
-
-# Configuración de la configuración de administración segura para AEM Forms en JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Configuración de la administración segura para AEM Forms en JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no sean necesarios en un entorno de producción de AEM Forms en JEE.
 
@@ -108,7 +107,7 @@ Algunos servicios de servidor de formularios permiten invocaciones no autenticad
 
    El acceso anónimo debe deshabilitarse para cualquier servicio que no sea necesario. Muchos servicios internos requieren que se habilite la autenticación anónima porque cualquier usuario del sistema debe invocarlos potencialmente sin tener autorización previa.
 
-## Cambio del tiempo de espera global predeterminado {#changing-the-default-global-time-out}
+## Modificación del tiempo de espera global predeterminado {#changing-the-default-global-time-out}
 
 Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, aplicaciones web de AEM Forms o aplicaciones personalizadas que invoquen servicios de servidor de AEM Forms. Se utiliza una configuración global de tiempo de espera para especificar cuánto tiempo pueden interactuar estos usuarios con AEM Forms (mediante una aserción basada en SAML) antes de que se vean obligados a volver a autenticarse. El valor predeterminado es de dos horas. En un entorno de producción, la cantidad de tiempo debe reducirse al número mínimo de minutos aceptable.
 
@@ -130,4 +129,3 @@ Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, ap
 1. En la consola de administración, vaya a la página Importar y exportar archivos de configuración .
 1. Introduzca la ruta al archivo config.xml modificado o haga clic en Examinar para desplazarse hasta él.
 1. Haga clic en **Import** para cargar el archivo config.xml modificado y, a continuación, haga clic en **OK**.
-

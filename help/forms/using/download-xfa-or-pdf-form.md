@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 68d881c6-7507-4018-b40e-205604221d0c
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # Descargar una plantilla de formulario XFA o PDF {#download-an-xfa-or-a-pdf-form-template}
 
@@ -32,7 +31,7 @@ AEM Forms admite la descarga de estos tipos de formulario de forma individual o 
 
 Además de estos recursos, puede descargar el tipo de recurso `Resource` si está presente en una carpeta. Esta funcionalidad se proporciona para permitirle descargar el recurso al que hace referencia un formulario XFA junto con el formulario.
 
-## Descargar uno o más formularios {#download-one-or-more-forms}
+## Descargar uno o varios formularios {#download-one-or-more-forms}
 
 1. Inicie sesión en la interfaz de usuario de AEM Forms en `https://<server>:<port>/aem/forms.html`.
 
@@ -52,9 +51,8 @@ Además de estos recursos, puede descargar el tipo de recurso `Resource` si est�
 
    El archivo ZIP se guarda en la carpeta `Downloads` del sistema.
 
-## Consideraciones relacionadas para la operación de carga {#related-considerations-for-the-upload-operation}
+## Consideraciones relacionadas con la operación de carga {#related-considerations-for-the-upload-operation}
 
 * Puede cargar el archivo ZIP en cualquier otra ubicación del mismo repositorio u otro repositorio
 * La jerarquía de los recursos de una carpeta se conserva durante la operación de carga
 * Cualquier cambio de metadatos realizado en los recursos descargados antes de la descarga se refleja en la carga
-

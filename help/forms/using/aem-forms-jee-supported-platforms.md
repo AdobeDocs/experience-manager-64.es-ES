@@ -8,21 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '3317'
+source-wordcount: '3316'
 ht-degree: 1%
 
 ---
-
 
 # Plataformas compatibles con AEM Forms en JEE {#supported-platforms-for-aem-forms-on-jee}
 
 ## Plataformas compatibles {#supported-platforms}
 
-### Niveles de soporte {#support-levels}
+### Niveles de asistencia {#support-levels}
 
 AEM Forms en el servidor JEE se puede configurar utilizando cualquier combinación de sistemas operativos compatibles, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico.
 
@@ -102,9 +101,9 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 
 
 
-### Bases de datos y persistencia de CRX {#databases-and-crx-persistence}
+### Bases de datos y persistencia CRX {#databases-and-crx-persistence}
 
-#### Soporte de persistencia de AEM {#aem-persistence-support}
+#### AEM compatibilidad con la persistencia {#aem-persistence-support}
 
 <table> 
  <tbody> 
@@ -152,7 +151,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 * El módulo Seguridad de documentos no utiliza el Repositorio de contenido. Esto implica que, si solo utiliza Document Security y no planea utilizar HTML Workspace, formularios HTML5 o formularios adaptables, no instale Content Repository.
 * AEM Forms en JEE admite la arquitectura de Oracle Multitenant.
 
-#### Soporte de DATABASE {#database-support}
+#### Compatibilidad con DATABASE {#database-support}
 
 <table> 
  <tbody> 
@@ -340,7 +339,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
 
 
 
-### Excepciones a plataformas de servidor admitidas {#exceptions-to-supported-server-platforms}
+### Excepciones a plataformas de servidor compatibles {#exceptions-to-supported-server-platforms}
 
 Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar AEM Forms en el servidor JEE.
 
@@ -452,7 +451,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### Soporte de software para PDF Generator {#software-support-for-pdf-generator}
+### Compatibilidad con software para PDF Generator {#software-support-for-pdf-generator}
 
 <table> 
  <tbody> 
@@ -529,7 +528,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 
 
 
-### Excepciones al soporte de accesibilidad {#exceptions-to-accessibility-support}
+### Excepciones a la compatibilidad con la accesibilidad {#exceptions-to-accessibility-support}
 
 Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/) compatibles:
 
@@ -748,7 +747,7 @@ Para obtener más información, consulte:
 
 
 
-### Aplicación de AEM Forms {#aem-forms-workspace-app}
+### aplicación AEM Forms {#aem-forms-workspace-app}
 
 #### Compatibilidad con dispositivos móviles {#mobile-device-support}
 
@@ -779,7 +778,7 @@ La aplicación AEM Forms está disponible en las plataformas siguientes:
 >
 >Adobe [dejará de actualizar y distribuir el Flash Player a finales de 2020](https://theblog.adobe.com/adobe-flash-update/).
 
-### Extensión de Adobe Document Security para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Haga clic [aquí](https://www.adobe.com/es/products/livecycle/rightsmanagement/extension/downloads.html) para ver los requisitos del sistema para la extensión de seguridad de documentos de Adobe para Microsoft® Office.
 

@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del programador de sincronización {#configuring-the-synchronization-scheduler}
 
@@ -50,7 +49,7 @@ Puede utilizar la opción **Sincronizar recursos del repositorio** para sincroni
 
    **Figura: Cuadro de diálogo** *Sincronización*
 
-## Solución de problemas de error de sincronización {#troubleshooting-synchronization-error}
+## Solución de problemas de sincronización {#troubleshooting-synchronization-error}
 
 Puede crear nuevas aplicaciones en el diseñador de flujos de trabajo (Área de trabajo de LiveCycle).
 
@@ -61,4 +60,3 @@ Para resolver el conflicto, cambie el nombre de la aplicación y sincronice manu
 ![Conflictos en el cuadro de diálogo de sincronización de recursos](assets/sync-conflict.png)
 
 **Figura:** *Conflictos en el cuadro de diálogo de sincronización de recursos*
-

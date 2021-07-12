@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '387'
 ht-degree: 9%
 
 ---
-
 
 # Instalación del paquete de compatibilidad {#compatibility-package}
 
@@ -51,7 +50,7 @@ Asegúrese de tener [AEM Paquete de compatibilidad](/help/sites-deploying/backwa
 
    Para obtener más información, consulte [utilidad de migración](/help/forms/using/migration-utility.md).
 
-## Recursos compatibles con AEM Forms 6.4 al instalar el paquete de compatibilidad {#assetsmadecompatible}
+## Recursos compatibles con AEM Forms 6.4 mediante la instalación del paquete de compatibilidad {#assetsmadecompatible}
 
 Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y plantillas sean compatibles con AEM Forms 6.4:
 
@@ -78,4 +77,3 @@ Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedensubscription
    * /libs/fd/afaddon/components/page/Advancedensubscription
-

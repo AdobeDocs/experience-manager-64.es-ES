@@ -10,10 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Fragmentos de contenido
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -36,7 +35,7 @@ En este flujo de trabajo, los fragmentos de contenido que se van a traducir se c
 
 Cuando se actualiza o modifica el fragmento de contenido de origen, es necesario volver a traducir el fragmento de contenido específico de la configuración regional o del idioma correspondiente. El flujo de trabajo de copia de idioma de actualización traduce un grupo adicional de fragmentos de contenido y lo incluye en una copia de idioma para una configuración regional concreta. En este caso, los fragmentos de contenido traducidos se añaden a la carpeta de destino que ya contiene fragmentos de contenido traducidos anteriormente.
 
-## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
+## Creación y traducción de flujos de trabajo {#create-and-translate-workflow}
 
 El flujo de trabajo Crear y traducir incluye las siguientes opciones. Los pasos de procedimiento asociados con cada opción son similares a los asociados con la opción correspondiente para los recursos.
 

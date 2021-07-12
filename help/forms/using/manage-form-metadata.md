@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1995'
 ht-degree: 1%
 
 ---
-
 
 # Administrar metadatos de formulario {#manage-form-metadata}
 
@@ -204,11 +203,11 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
    * El panel derecho contiene propiedades de metadatos en modo de solo lectura, distribuidas entre varias pestañas.
 
 
-## Agregar/actualizar valores de metadatos de formulario {#add-update-form-metadata-values-nbsp}
+## Agregar o actualizar valores de metadatos de formulario {#add-update-form-metadata-values-nbsp}
 
 Puede editar el valor de las propiedades de metadatos existentes o agregar nuevos valores a un campo de propiedad de metadatos existente (por ejemplo, cuando un campo de metadatos está en blanco).
 
-### Actualizar los valores de las propiedades de metadatos {#update-metadata-property-values}
+### Actualizar valores de propiedad de metadatos {#update-metadata-property-values}
 
 1. Siga los pasos mencionados en la sección anterior para abrir la página de propiedades donde se pueden ver los metadatos existentes del formulario seleccionado.
 
@@ -272,7 +271,7 @@ AEM Forms expone los esquemas de metadatos de los tipos de formularios admitidos
 
    ![Editor de esquemas de metadatos para el tipo de formulario adaptable](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   [Haga clic para ampliar](assets/metadata-schema-editor-for-adaptive-form-type.png)
+[Haga clic para ampliar](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    1. El panel izquierdo contiene secciones con pestañas en las que se colocan los campos y el panel derecho muestra todos los componentes de interfaz de usuario disponibles y las propiedades del campo seleccionado en el panel izquierdo.
 
@@ -305,7 +304,7 @@ AEM Forms expone los esquemas de metadatos de los tipos de formularios admitidos
       >
       >Además, el nombre de la propiedad debe ser único para evitar escribir valores para dos o más propiedades en la misma ubicación del repositorio. Por lo tanto, se recomienda cambiar el valor &quot;predeterminado&quot;.
 
-   1. Rellene otros ajustes según sea necesario. Por ejemplo: seleccione la opción Required si desea que el campo sea obligatorio.
+   1. Rellene otras configuraciones según sea necesario. Por ejemplo: seleccione la opción Required si desea que el campo sea obligatorio.
 
    1. Para eliminar un campo que haya agregado, seleccione el campo y haga clic en el icono eliminar ![delete-1](assets/delete-1.png).
 

@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de la caché de formularios adaptables {#configure-adaptive-forms-cache}
 
@@ -45,4 +44,3 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
    ![Cuadro de diálogo Configuración para la caché HTML de formularios adaptables](assets/cache-configuration-edit.png)
 
 1. Haga clic en **Save** para guardar la configuración.
-

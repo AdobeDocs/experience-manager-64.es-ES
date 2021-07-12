@@ -1,18 +1,17 @@
 ---
 title: Configuración de la integración de AEM Assets con Experience Cloud
 description: Obtenga información sobre cómo configurar la integración de AEM Assets con Experience Cloud.
-feature: Asset Management
-role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: bf48918e9a549cb35dcbb32afa82ff1dd686402a
+feature: Administración de activos
+role: User, Architect, Admin
+exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
-
-# Configurar la integración de AEM Assets con el Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# Configuración de la integración de AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Si es cliente de Adobe Experience Cloud, puede sincronizar los recursos dentro de Adobe Experience Manager Assets con Adobe Creative Cloud y viceversa. También puede sincronizar los recursos con el Experience Cloud y viceversa. Puede configurar esta sincronización mediante [!DNL Adobe I/O]. El nombre actualizado de [!DNL Adobe Marketing Cloud] es [!DNL Adobe Experience Cloud].
 
@@ -91,7 +90,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 
 1. En la página de configuración, haga clic en **[!UICONTROL Mostrar clave pública]** para mostrar la clave pública generada para la instancia. También puede hacer clic en **[!UICONTROL Descargar clave pública para la puerta de enlace de OAuth]** para descargar el archivo que contiene la clave pública. A continuación, abra el archivo para mostrar la clave pública.
 
-## Activar sincronización {#enable-synchronization}
+## Habilitar sincronización {#enable-synchronization}
 
 1. Muestre la clave pública utilizando uno de los siguientes métodos mencionados en el último paso del procedimiento [añadir una nueva configuración al Experience Cloud](#add-a-new-configuration). Haga clic en **[!UICONTROL Mostrar clave pública]**.
 
@@ -124,7 +123,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
    >
    >Solo los usuarios que agregue al Experience Cloud pueden compartir recursos de AEM Assets con el Creative Cloud.
 
-## Intercambiar recursos entre AEM Assets y el Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
+## Intercambiar recursos entre AEM Assets y Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Inicie sesión en AEM Assets.
 1. En la consola Recursos, cree una carpeta y cargue algunos recursos en ella. Por ejemplo, cree una carpeta **mc-demo** y cargue un recurso en ella.
@@ -165,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Prácticas recomendadas para la integración de recursos y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Prácticas recomendadas de uso compartido de recursos en carpetas de Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+* [Prácticas recomendadas de uso compartido de recursos en carpetas de Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

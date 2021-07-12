@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del correo electrónico {#configuring-email}
 
@@ -184,4 +183,3 @@ Uso del [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 Los triángulos rojos indican las propiedades modificadas. Asegúrese de guardar los cambios:
 
 * Seleccione **[!UICONTROL Guardar todo]**
-

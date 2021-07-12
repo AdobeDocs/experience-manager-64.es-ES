@@ -6,15 +6,14 @@ seo-description: 'Instale y configure AEM Forms Interactive Communications para 
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+role: Admin
+exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 5%
+source-wordcount: '1420'
+ht-degree: 6%
 
 ---
-
 
 # Instalación y configuración de Interactive Communications {#install-and-configure-interactive-communications}
 
@@ -109,14 +108,14 @@ AEM Forms tiene algunas configuraciones obligatorias y opcionales. Las configura
 
 ### Configuraciones posteriores a la instalación obligatorias {#mandatory-post-installation-configurations}
 
-#### Configurar las bibliotecas RSA y BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configuración de las bibliotecas RSA y BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Realice los siguientes pasos en todas las instancias de Autor y Publicación para iniciar y delegar las bibliotecas:
 
 1. Detenga la instancia de AEM subyacente.
 1. Abra el archivo [AEM installation directory]\crx-quickstart\conf\sling.properties para editarlo.
 
-   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para iniciar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
+   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para comenzar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
 
 1. Agregue las siguientes propiedades al archivo sling.properties :
 
@@ -134,7 +133,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 1. Guarde y cierre el archivo e inicie la instancia de AEM.
 1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación.
 
-#### Configure el agente de serialización {#configure-the-serialization-agent}
+#### Configuración del agente de serialización {#configure-the-serialization-agent}
 
 Siga estos pasos en todas las instancias de Autor y Publicación para añadir el paquete a la lista de permitidos:
 
@@ -143,7 +142,7 @@ Siga estos pasos en todas las instancias de Autor y Publicación para añadir el
 1. Agregue el paquete **sun.util.calendar** al campo **lista de permitidos**. Haga clic en Guardar.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación .
 
-### Configuraciones postinstalación opcionales {#optional-post-installation-configurations}
+### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
 
 #### Instalación del paquete de compatibilidad {#install-compatibility-package}
 
@@ -178,7 +177,7 @@ Es probable que sus clientes abandonen una comunicación interactiva si la exper
 
 AEM formularios se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias de cliente personalizadas y atractivas en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, [Integre Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configurar la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
+#### Configuración de la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
 
 Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier instancia de AEM Forms, agregue certificados al almacén de confianza de Java de todas las instancias. Puede ejecutar el comando siguiente para añadir los certificados:
 
@@ -193,4 +192,3 @@ Ha configurado un entorno para utilizar capacidades interactivas de comunicació
 * [Crear una comunicación interactiva](/help/forms/using/create-interactive-communication.md)
 
 * [Crear una carta de gestión de correspondencia](/help/forms/using/create-letter.md)
-

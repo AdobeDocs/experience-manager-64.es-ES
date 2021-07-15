@@ -3,12 +3,12 @@ description: 'El boletín Dynamic Media Newsletter by Experience League es un bo
 keywords: dynamic media;newsletter;actualizaciones de productos;sugerencias y trucos;eventos;éxito del cliente;blog;blogs;imágenes;vídeos;funciones;funciones
 seo-description: En este boletín informativo de una sola instancia encontrará recursos para la creación de conocimientos, entre los que se incluyen vídeos, descripciones generales de soluciones e introducciones a algunas de las funciones y capacidades clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visualizador, perfiles de vídeo y mucho más.
 seo-title: 'Boletín de Adobe Dynamic Media '
-solution: Dynamic Media Classic
+solution: Experience Manager, Dynamic Media Classic
 title: Newsletter de Dynamic Media
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Colaboración,Dynamic Media Classic
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%

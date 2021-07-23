@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Traducción
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 23%
 
 ---
@@ -313,4 +313,4 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 
 1. Vaya a la consola Recursos y abra la página Propiedades de cada uno de los recursos traducidos para ver los metadatos traducidos.
 
-Para obtener sugerencias sobre la traducción eficaz de metadatos para recursos, consulte [5 pasos para traducir metadatos de forma eficiente](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Para obtener sugerencias sobre la traducción eficaz de metadatos para recursos, consulte esta página archivada sobre [5 pasos para traducir metadatos de forma eficaz](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).

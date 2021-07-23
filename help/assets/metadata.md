@@ -2,16 +2,15 @@
 title: Administre metadatos de sus recursos digitales en [!DNL Adobe Experience Manager].
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Etiquetado, metadatos
 role: Architect, Leader
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Administrar metadatos de los recursos digitales {#managing-metadata-for-digital-assets}
 
@@ -21,7 +20,7 @@ ht-degree: 0%
 * [Cómo editar o añadir metadatos](meta-edit.md).
 * [Referencia de esquemas de metadatos](meta-ref.md).
 
-## Por qué necesitamos metadatos {#why-we-need-metadata}
+## ¿Por qué necesitamos metadatos? {#why-we-need-metadata}
 
 Metadatos significa datos sobre los datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
@@ -158,7 +157,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
 * PDF y PDF/X - Adobe PDF y aplicaciones de terceros.
-* PRISM - [Requisitos de publicación para metadatos estándar del sector](https://www.prismstandard.org).
+* PRISM - [Requisitos de publicación para metadatos estándar del sector](http://www.prismstandard.org/specifications/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadatos para texto paginado.
 

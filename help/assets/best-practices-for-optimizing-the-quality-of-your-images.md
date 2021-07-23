@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: Administración de recursos,Representaciones
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1464'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&h
 
 El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en AEM, consulte la guía [Calidad de imagen de Dynamic Media Classic de Adobe y Prácticas recomendadas de enfoque](/help/assets/assets/sharpening_images.pdf) que se aplica también a AEM.
 
-Consulte también [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Consulte también [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
 Con AEM, puede enfocar las imágenes sobre la ingesta, el envío o ambos. Sin embargo, en la mayoría de los casos, las imágenes se deben enfocar utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
 

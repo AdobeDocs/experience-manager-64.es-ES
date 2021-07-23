@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Administración de activos
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 1%
@@ -34,12 +34,12 @@ Normalmente, AEM Assets se puede monitorizar de dos maneras: mediante monitoriza
 Debe realizar monitorización en vivo durante la fase de prueba de rendimiento de su desarrollo o durante situaciones de carga alta para comprender las características de rendimiento de su entorno. Normalmente, la monitorización en vivo debe realizarse con un conjunto de herramientas. Estas son algunas recomendaciones:
 
 * [VM visual](https://visualvm.github.io/): Visual VM le permite ver información detallada sobre Java VM, incluyendo uso de CPU, uso de memoria Java. Además, permite realizar muestras y evaluar el código que se ejecuta en una instancia.
-* [Superior](http://man7.org/linux/man-pages/man1/top.1.html): Top es un comando Linux que abre un tablero, que muestra estadísticas de uso, incluyendo CPU, memoria y uso de E/S. Proporciona información general de alto nivel sobre lo que está sucediendo en una instancia.
+* [Superior](https://man7.org/linux/man-pages/man1/top.1.html): Top es un comando Linux que abre un tablero, que muestra estadísticas de uso, incluyendo CPU, memoria y uso de E/S. Proporciona información general de alto nivel sobre lo que está sucediendo en una instancia.
 * [Superior](https://hisham.hm/htop/): La parte superior es un visualizador de procesos interactivo. Proporciona un uso detallado de la CPU y la memoria además de lo que Top puede proporcionar. Htop se puede instalar en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
 
 * [Iotop](http://guichaz.free.fr/iotop/): Iotop es un tablero detallado para el uso de IO de disco. Muestra barras y medidores que representan los procesos que utilizan E/S de disco y la cantidad que utilizan. Iotop puede instalarse en la mayoría de los sistemas Linux utilizando `yum install iotop` o `apt-get install iotop`.
 
-* [Parte superior](http://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de ethernet/network. Iftop muestra las estadísticas por canal de comunicación en las entidades que utilizan ethernet y la cantidad de ancho de banda que utilizan. Iftop se puede instalar en la mayoría de los sistemas Linux usando `yum install iftop` o `apt-get install iftop`.
+* [Parte superior](https://www.ex-parrot.com/pdw/iftop/): Iftop muestra información detallada sobre el uso de ethernet/network. Iftop muestra las estadísticas por canal de comunicación en las entidades que utilizan ethernet y la cantidad de ancho de banda que utilizan. Iftop se puede instalar en la mayoría de los sistemas Linux usando `yum install iftop` o `apt-get install iftop`.
 
 * Grabador de vuelo Java (JFR): Herramienta comercial de Oracle que se puede utilizar libremente en entornos que no sean de producción. Para obtener más información, consulte [Cómo usar el registrador de vuelos Java para diagnosticar problemas de tiempo de ejecución de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * AEM archivo error.log: Puede investigar el archivo error.log AEM para obtener detalles de los errores registrados en el sistema. Utilice el comando `tail -F quickstart/logs/error.log` para identificar los errores que debe investigar.

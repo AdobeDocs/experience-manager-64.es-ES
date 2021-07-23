@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Flujo de trabajo,Representaciones
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
@@ -114,5 +114,4 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 * [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows.md)
 * [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
 * [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
-* [Artículo de la comunidad sobre la modificación de recursos mediante el flujo de trabajo](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Flujo de trabajo,Representaciones
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 3%
 
 ---
@@ -440,9 +440,9 @@ Después de realizar el siguiente procedimiento, al cargar un archivo txt en el 
 
 ## Controlador de medios basado en líneas de comandos {#command-line-based-media-handler}
 
-Experience Manager le permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y agregar la nueva representación al recurso. Instale la herramienta de línea de comandos en el disco que aloja el servidor Experience Manager y añada y configure un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, filtra según tipos MIME específicos y crea varias miniaturas basadas en la nueva representación.
+Experience Manager permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como ImageMagick) y agregar la nueva representación al recurso. Instale la herramienta de línea de comandos en el disco que aloja el servidor Experience Manager y añada y configure un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, filtra según tipos MIME específicos y crea varias miniaturas basadas en la nueva representación.
 
-Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en Recursos Experience Manager:
+Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en [!DNL Experience Manager Assets]:
 
 * Transformación de EPS e IA mediante [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/)
 * Transcodificación de vídeo FLV mediante [FFmpeg](https://ffmpeg.org/)

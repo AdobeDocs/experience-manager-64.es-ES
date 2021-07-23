@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Vídeo
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '10393'
+source-wordcount: '10335'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
          [Visualización de representaciones de vídeo](video-renditions.md)
 
-         [Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
       * [Publicación de recursos](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, campos de metadatos personalizados:
 
-         [Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Administración de metadatos de recursos digitales](metadata.md)
       * [Esquemas de metadatos](metadata-schemas.md)
@@ -276,12 +276,12 @@ El siguiente gráfico muestra el flujo de trabajo general de creación de vídeo
 
 El flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]** codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si ha habilitado Dynamic Media y ha configurado los servicios de Video Cloud, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** surte efecto automáticamente al cargar un vídeo. (Si no utiliza Dynamic Media, el flujo de trabajo **[!UICONTROL DAM Update Asset]** tiene efecto).
 
-A continuación se indican las prácticas recomendadas para codificar archivos de vídeo de origen.
+<!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
-Para obtener consejos sobre la codificación de vídeo, consulte lo siguiente:
+For advice about video encoding, see the following:
 
-* Artículo: *Streaming 101: Conceptos básicos: códecs, ancho de banda, tasa de datos y resolución:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* Vídeo: *Conceptos básicos de codificación de vídeo:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### Archivos de vídeo de origen {#source-video-files}
 

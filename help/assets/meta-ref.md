@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadatos
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Los metadatos principales de Dublín proporcionan un conjunto estandarizado de c
 
 El sencillo conjunto de elementos de metadatos principales de Dublín (DCMES) contiene 15 elementos de metadatos enumerados en la siguiente tabla. Cada elemento principal de Dublín es opcional y se puede repetir. Puede añadir o eliminar la información de metadatos de Dublin Core, como lo haría con los metadatos específicos de tipo de medio.
 
-Además del DCMES, existen otros elementos de metadatos creados por la Iniciativa Principal de Dublín. Consulte la [Dublin Core Initiative](http://dublincore.org/) para obtener más información.
+Además del DCMES, existen otros elementos de metadatos creados por la Iniciativa Principal de Dublín. Consulte la [Dublin Core Initiative](https://dublincore.org/) para obtener más información.
 
 | Propiedad | Descripción |
 |---|---|

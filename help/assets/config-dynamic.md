@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configuración,Modo híbrido
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -801,7 +801,7 @@ La configuración de Dynamic Media Image Server implica la edición del paquete 
 >[!NOTE]
 Dynamic Media funciona de forma predeterminada [después de estar habilitado](#enabling-dynamic-media). Sin embargo, si lo desea, puede ajustar la instalación configurando Dynamic Media Image Server para que cumpla determinadas especificaciones o requisitos.
 
-**Requisito previo**:  __ Antes de configurar Dynamic Media Image Server, asegúrese de que la VM de Windows incluya una instalación de las bibliotecas de Microsoft Visual C++. Las bibliotecas son necesarias para ejecutar Dynamic Media Image Server. Puede [descargar el paquete redistribuible de Microsoft Visual C++ 2010 (x64) aquí](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**Requisito previo**:  __ Antes de configurar Dynamic Media Image Server, asegúrese de que la VM de Windows incluya una instalación de las bibliotecas de Microsoft Visual C++. Las bibliotecas son necesarias para ejecutar Dynamic Media Image Server. Puede [descargar el paquete redistribuible de Microsoft Visual C++ 2010 (x64) aquí](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 **Para configurar los ajustes** del servidor de imágenes de Dynamic Media:
 

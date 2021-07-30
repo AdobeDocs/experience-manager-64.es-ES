@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del servidor de seguridad de documentos {#configure-the-document-security-server}
 
@@ -73,7 +72,7 @@ Altura: Mínimo = 450; máximo = 800
 
 ## Configuración de usuarios y administradores de seguridad de documentos {#configuring-document-security-users-and-administrators}
 
-### Asignación de funciones de seguridad de documento a los administradores {#assigning-document-security-roles-to-administrators}
+### Asignación de funciones de seguridad de documento a administradores {#assigning-document-security-roles-to-administrators}
 
 El entorno de AEM forms contiene uno o más usuarios administradores que tienen los privilegios adecuados para crear usuarios y grupos. Si su organización utiliza la seguridad de los documentos, al menos un administrador debe tener asignado el privilegio de administrar los usuarios invitados y locales.
 
@@ -95,7 +94,7 @@ La lista visible de usuarios y grupos es visible para el coordinador del conjunt
 1. Vaya a Servicios > Seguridad del documento > Configuración > Mis políticas y haga clic en la ficha Usuarios y grupos visibles .
 1. Haga clic en Añadir dominio y añada dominios existentes según sea necesario.
 
-## Añadir el proveedor de autenticación extendido {#add-the-extended-authentication-provider}
+## Añadir el proveedor de autenticación ampliado {#add-the-extended-authentication-provider}
 
 AEM formularios proporciona una configuración de ejemplo que puede personalizar para su entorno. Siga estos pasos:
 
@@ -108,7 +107,7 @@ AEM formularios proporciona una configuración de ejemplo que puede personalizar
 1. Habilite la autenticación extendida desde la página Configuración del servidor . Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
 1. Añada las direcciones URL de redireccionamiento SSO necesarias en el archivo de configuración de Administración de usuarios . Consulte [Añadir direcciones URL de redireccionamiento SSO para la autenticación extendida](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
-### Añadir direcciones URL de redireccionamiento SSO para la autenticación extendida {#add-sso-redirect-urls-for-extended-authentication}
+### Añadir direcciones URL de redireccionamiento de SSO para una autenticación ampliada {#add-sso-redirect-urls-for-extended-authentication}
 
 Con la autenticación extendida habilitada, los usuarios que abren un documento protegido por políticas en Acrobat XI o Reader XI obtienen un cuadro de diálogo para la autenticación. Este cuadro de diálogo carga la página HTML especificada como URL de aterrizaje de autenticación extendida en la configuración del servidor de seguridad del documento. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
 
@@ -147,7 +146,7 @@ Puede configurar un periodo de arrendamiento sin conexión predeterminado. El pe
 1. En el cuadro Periodo de arrendamiento sin conexión predeterminado, escriba el número de días para el periodo de arrendamiento sin conexión.
 1. Haga clic en Aceptar.
 
-### Administrar los roles clave {#manage-key-rollovers}
+### Administración de reenvíos de claves {#manage-key-rollovers}
 
 La seguridad de los documentos utiliza algoritmos de codificación y licencias para proteger los documentos. Cuando cifra un documento, la seguridad del documento genera y administra una clave de descifrado denominada *DocKey* que pasa a la aplicación cliente. Si la política que protege un documento permite el acceso sin conexión, también se genera una clave sin conexión denominada *principal* para cada usuario que tenga acceso al documento sin conexión.
 
@@ -391,12 +390,12 @@ Antes de comenzar, asegúrese de que la auditoría del servidor está habilitada
 
 Para ver los eventos rastreados, puede usar el filtro Eventos de documento en la página Eventos . Los eventos rastreados con JavaScript se etiquetan como Seguimiento de uso detallado. Consulte [Monitorización de eventos](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) para obtener más información sobre los eventos.
 
-## Configurar la configuración de visualización de seguridad del documento {#configure-document-security-display-settings}
+## Configuración de la visualización de seguridad del documento {#configure-document-security-display-settings}
 
 1. En la consola de administración, haga clic en Servicios > seguridad del documento > Configuración > Opciones de visualización.
 1. Configure los ajustes y haga clic en Aceptar.
 
-### Mostrar configuración {#display-settings}
+### Configuración de visualización {#display-settings}
 
 **Filas para mostrar los resultados de la búsqueda:** Número de filas que aparecen en una página cuando se realizan búsquedas.
 
@@ -521,7 +520,7 @@ Puede crear plantillas de marca de agua dinámicas. Estas plantillas siguen esta
 1. Haga clic en **Nuevo** en Elementos de marca de agua para agregar más elementos de marca de agua si es necesario.
 1. Haga clic en Aceptar.
 
-### Editar una plantilla de marca de agua dinámica {#edit-a-dynamic-watermark-template}
+### Edición de una plantilla de marca de agua dinámica {#edit-a-dynamic-watermark-template}
 
 1. En la consola de administración, haga clic en Servicios > seguridad del documento > Configuración > Marcas de agua.
 1. Haga clic en la marca de agua adecuada de la lista.
@@ -664,7 +663,7 @@ Los siguientes ajustes se encuentran en el área Configuración de correo electr
 
 **Mensaje:** El texto que aparece en el cuerpo del mensaje es un mensaje que indica que la cuenta de usuario del destinatario debe activarse. También es posible que desee incluir información como cómo ponerse en contacto con un administrador para obtener una nueva contraseña.
 
-### Configurar un correo electrónico de restablecimiento de contraseña {#configure-a-password-reset-email}
+### Configuración de un correo electrónico de restablecimiento de contraseña {#configure-a-password-reset-email}
 
 Si tiene que restablecer la contraseña de un usuario invitado, se genera un correo electrónico de confirmación que invita al usuario a elegir una nueva contraseña. No se puede determinar la contraseña de un usuario; si el usuario lo olvida, debe restablecerlo.
 
@@ -686,7 +685,7 @@ La página Configuración tiene un vínculo a la página Mis políticas, donde e
 
 Antes de conceder permiso a los usuarios para crear políticas personalizadas, considere cuánto acceso o control desea que tengan los usuarios individuales. Además, tenga en cuenta la exposición que desea que tengan sus usuarios y grupos cuando los haga visibles a las búsquedas.
 
-### Especifique usuarios y grupos que puedan crear directivas {#specify-users-and-groups-who-can-create-policies}
+### Especificar usuarios y grupos que pueden crear directivas {#specify-users-and-groups-who-can-create-policies}
 
 Como administrador, especifique qué usuarios y grupos pueden crear directivas personalizadas. Este permiso se puede establecer a nivel de usuario y grupo. La funcionalidad de búsqueda busca usuarios y grupos en la base de datos de Administración de usuarios.
 
@@ -702,7 +701,7 @@ Como administrador, especifique qué usuarios y grupos pueden crear directivas p
 
 Los usuarios y grupos seleccionados ahora tienen permiso para crear políticas personalizadas.
 
-### Elimine el permiso crear políticas personalizadas de un usuario o grupo {#remove-the-create-custom-policies-permission-from-a-user-or-group}
+### Elimine el permiso crear directivas personalizadas de un usuario o grupo {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. En la página de seguridad del documento, haga clic en Configuración > Mis directivas.
 1. En la página Mis políticas, haga clic en la ficha Crear políticas . Se muestran los usuarios y grupos con permisos para crear políticas personalizadas.
@@ -750,12 +749,7 @@ Puede realizar los siguientes cambios utilizando el archivo de configuración:
 1. Haga clic en Examinar para ir al archivo de configuración y, a continuación, haga clic en Importar. No se puede escribir la ruta directamente en el cuadro Nombre de archivo.
 1. Haga clic en Aceptar.
 
-1. 
-1. 
-1. 
-1. 
-
-### Especifique un período de tiempo de espera para la sincronización sin conexión {#specify-a-timeout-period-for-offline-synchronization}
+### Especificación de un período de tiempo de espera para la sincronización sin conexión {#specify-a-timeout-period-for-offline-synchronization}
 
 La seguridad de los documentos permite a los usuarios abrir y utilizar documentos protegidos cuando no están conectados al servidor de seguridad de documentos. La aplicación cliente del usuario debe sincronizarse regularmente con el servidor para mantener los documentos válidos para su uso sin conexión. La primera vez que los usuarios abren un documento protegido, se les pregunta si su equipo debe estar autorizado para realizar la sincronización periódica del cliente.
 
@@ -1052,4 +1046,3 @@ Puede aumentar la escalabilidad del servidor de seguridad de documentos limitand
    >De forma predeterminada, el valor de la clave `DisableGlobalOfflineSynchronizationData`está establecido en `false`.
 
 1. Guarde e importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de seguridad del documento](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
-

@@ -7,15 +7,14 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: Comunicación interactiva
+exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
 
 ---
-
 
 # Textos en comunicaciones interactivas {#texts-in-interactive-communications}
 
@@ -89,8 +88,6 @@ Si ha especificado un modelo de datos de formulario al crear un texto, las propi
 
 * Para permitir que los agentes editen el valor de una propiedad de FDM en la interfaz de usuario del agente mientras [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) mediante la interfaz de usuario del agente, pulse el icono de bloqueo **`[D]`** para esa propiedad y asegúrese de que esté en estado desbloqueado. El estado predeterminado de la propiedad está bloqueado y un agente no puede editar la propiedad en la interfaz de usuario del agente.
 
-* 
-
 También puede utilizar las propiedades del modelo de datos de formulario para construir reglas para mostrar u ocultar partes del contenido. Para obtener más información, consulte [Crear reglas en texto](#rules).
 
 ## Creación y uso de variables en un fragmento de documento de texto {#variables}
@@ -136,7 +133,7 @@ Al crear o editar un fragmento de documento de texto, puede crear e insertar var
 
 1. Toque **[!UICONTROL Guardar]**.
 
-## Crear reglas con el texto {#rules}
+## Crear reglas en el texto {#rules}
 
 Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar cadenas de texto o fragmentos de contenido basados en **condiciones preestablecidas**. Estas condiciones se pueden construir en función de:
 
@@ -147,7 +144,7 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 * Propiedades del modelo de datos de formulario asociado
 * Todas las variables que haya creado en el texto
 
-### Crear reglas con el texto {#create-rules-in-text}
+### Crear reglas en el texto {#create-rules-in-text}
 
 1. Al crear o editar un texto, seleccione la cadena de texto, el párrafo o el contenido que desea condicionalizar con la regla.
 
@@ -192,7 +189,7 @@ Con el editor de reglas en un texto, puede crear reglas para mostrar u ocultar c
 
    Al hacer clic en el controlador izquierdo de la regla aplicada, se obtienen las opciones para editar o eliminar la regla.
 
-## Formato de texto {#formatting}
+## Texto de formato {#formatting}
 
 Al crear o editar texto, la barra de herramientas cambia según el tipo de ediciones que elija realizar: Párrafo, alineación o lista:
 

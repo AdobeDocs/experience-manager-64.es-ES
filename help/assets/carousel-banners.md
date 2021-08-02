@@ -12,9 +12,9 @@ discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Banner de carrusel
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
-source-wordcount: '4789'
+source-wordcount: '4749'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ En su sitio web, un banner de carrusel puede tener el siguiente aspecto:
 
 Aquí puede navegar por las imágenes (haciendo clic en los números). Además, las diapositivas giran automáticamente en función de un intervalo de tiempo que se pueda personalizar. Las imágenes agregadas en el banner de carrusel admiten zonas interactivas y mapas de imágenes, donde los usuarios pueden tocar o ir a un hipervínculo o acceder a una ventana de vista rápida.
 
-En este ejemplo, un usuario ha tocado o hecho clic en un mapa de imagen y ha accedido a la ventana de vista rápida para obtener guantes:
+En este ejemplo, un usuario ha tocado o hecho clic en un mapa de imagen y ha accedido a la ventana Vista rápida para obtener guantes:
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -53,7 +53,7 @@ Para ponerle en marcha rápidamente:
 
 1. [Identificar las variables de zona interactiva y mapa de imagen](#identifying-hotspot-and-image-map-variables)  (solo para clientes que utilizan AEM Assets + Dynamic Media)
 
-   Comience identificando las variables dinámicas que utiliza la implementación de vista rápida existente para que pueda introducir los puntos interactivos y los datos de mapa de imagen correctamente durante el proceso de creación de banners de carrusel en AEM Assets.
+   Comience identificando las variables dinámicas que utiliza la implementación de vista rápida existente de modo que pueda introducir los puntos interactivos y los datos de mapa de imagen correctamente durante el proceso de creación de banners de carrusel en AEM Assets.
 
    >[!NOTE]
    >
@@ -97,7 +97,7 @@ Si necesita editar Conjuntos de carrusel, consulte [edición de Conjuntos de car
 
 ## Identificación de variables de zona interactiva y mapa de imagen {#identifying-hotspot-and-image-map-variables}
 
-Comience identificando las variables dinámicas que utiliza la implementación de vista rápida existente para que pueda introducir puntos interactivos o datos de mapa de imagen correctamente durante el proceso de creación de conjuntos de carrusel en AEM Assets.
+Comience identificando las variables dinámicas que utiliza la implementación de vista rápida existente de modo que pueda introducir puntos interactivos o datos de mapa de imagen correctamente durante el proceso de creación de conjuntos de carrusel en AEM Assets.
 
 Al agregar zonas interactivas o mapas de imágenes a una imagen de banner en AEM Assets, debe asignar un SKU y variables adicionales opcionales a cada zona interactiva o mapa de imagen. Estas variables se utilizan más adelante para hacer coincidir puntos interactivos o mapas de imágenes con contenido de vista rápida.
 
@@ -111,16 +111,16 @@ Es importante identificar correctamente el número y el tipo de variables que se
 
 Existen diferentes maneras de identificar un conjunto de variables que se utilizarán para los datos de zona interactiva o mapa de imagen.
 
-A veces puede ser suficiente consultar a los especialistas en TI responsables de la implementación de vista rápida existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar una vista rápida en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
+A veces, puede ser suficiente consultar a los especialistas en TI responsables de la implementación de Quickview existente, ya que es probable que sepan cuál es el conjunto mínimo de datos necesario para identificar Quickview en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
 
-La mayoría de las implementaciones de vista rápida utilizan el siguiente paradigma:
+La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma:
 
 * El usuario activa un elemento de interfaz de usuario en el sitio web. Por ejemplo, al hacer clic en un botón **[!UICONTROL Vista rápida]**.
-* El sitio web envía una solicitud de Ajax al servidor para cargar los datos de vista rápida o el contenido, si es necesario.
+* El sitio web envía una solicitud de Ajax al servidor para cargar los datos o el contenido de la vista rápida, si es necesario.
 * Los datos de vista rápida se traducen al contenido como preparación para su renderización en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, almacenar en déclencheur la vista rápida y capturar la URL de Ajax enviada por la página web para cargar los datos de vista rápida o el contenido.
+El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, almacenar en déclencheur la vista rápida y capturar la URL de Ajax enviada por la página web para cargar los datos o el contenido de vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. A continuación se indican algunos ejemplos de exploradores web que incluyen inspectores web:
 
@@ -129,13 +129,13 @@ Normalmente no es necesario que utilice ninguna herramienta de depuración espec
 
 Cuando la supervisión de red está activada en el explorador, ponga en déclencheur la vista rápida en la página.
 
-Ahora, busque la URL de vista rápida de Ajax en el registro de red y copie la URL grabada para análisis futuros. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la vista rápida de la URL de Ajax es una de las primeras de la lista. Tiene una ruta o parte de una cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Ahora, busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para su análisis futuro. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de una cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
-Durante este proceso, es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero cambian solo si visita un área diferente del sitio web.
+Durante este proceso, es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero cambian solo si visita un área diferente del sitio web.
 
-En el caso más simple, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor SKU es la única pieza de datos que necesita para agregar zonas interactivas o mapas de imagen a la imagen del banner.
+En el caso más simple, la única parte de la variable en la URL de vista rápida es el SKU del producto. En este caso, el valor SKU es la única pieza de datos que necesita para agregar zonas interactivas o mapas de imagen a la imagen del banner.
 
-Sin embargo, en casos complejos, la dirección URL de vista rápida tiene diferentes elementos además del SKU, como ID de categoría, código de color, código de tamaño, etc. En estos casos, cada elemento es una variable independiente en la definición de datos de zona interactiva o mapa de imagen en la función de titular de carrusel.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU, como ID de categoría, código de color, código de tamaño, etc. En estos casos, cada elemento es una variable independiente en la definición de datos de zona interactiva o mapa de imagen en la función de titular de carrusel.
 
 Veamos los siguientes ejemplos de direcciones URL de vista rápida y las variables de zona interactiva o mapa de imagen que se obtienen:
 
@@ -283,7 +283,7 @@ Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-c
       * Si no es cliente de AEM Sites o comercio electrónico
 
          * Consulte [Identificación de variables de puntos interactivos](#identifying-hotspot-and-image-map-variables) como puede que desee definir estas variables.
-         * A continuación, introduzca manualmente el valor de SKU. En el campo de texto **[!UICONTROL SKU value]** , escriba el SKU del producto (unidad de mantenimiento de stock), que es un identificador único para cada producto o servicio distinto que ofrezca. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa asociar la zona interactiva tocada con la vista rápida de un SKU concreto.
+         * A continuación, introduzca manualmente el valor de SKU. En el campo de texto **[!UICONTROL SKU value]** , escriba el SKU del producto (unidad de mantenimiento de stock), que es un identificador único para cada producto o servicio distinto que ofrezca. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa que debe asociar la zona interactiva tocada con la vista rápida de un SKU en particular.
          * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, pulse **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable agregada.
          * Consulte [Uso de selectores](working-with-selectors.md) para obtener más información.
    * Toque **[!UICONTROL Hipervínculo]**.
@@ -415,16 +415,16 @@ Sin embargo, si es cliente independiente de recursos de AEM, puede añadir manua
 
 Esta tarea solo se aplica si es cliente independiente de AEM Assets.
 
-El último paso de este proceso es integrar el titular de carrusel con una implementación de vista rápida existente en el sitio web. Cada implementación de QuickView es única y se necesita un enfoque específico que muy probablemente involucre la asistencia de una persona de TI de front-end.
+El último paso de este proceso es la integración del titular de carrusel con una implementación de vista rápida existente en su sitio web. Cada implementación de QuickView es única y se necesita un enfoque específico que muy probablemente involucre la asistencia de una persona de TI de front-end.
 
 La implementación de vista rápida existente representa normalmente una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
 1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
-1. El código front-end obtiene una URL de vista rápida basada en el elemento de la interfaz de usuario que se activó en el paso 1.
+1. El código del front-end obtiene una URL de vista rápida basada en el elemento de la interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de Ajax utilizando la URL obtenida en el paso 2.
-1. La lógica back-end devuelve los datos de vista rápida o el contenido correspondientes al código front-end.
-1. El código front-end carga los datos o el contenido de vista rápida.
-1. De forma opcional, el código front-end convierte los datos de vista rápida cargados en una representación HTML.
+1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
+1. El código front-end carga los datos o el contenido de Quickview.
+1. De forma opcional, el código front-end convierte los datos de Quickview cargados en una representación HTML.
 1. El código front-end muestra un cuadro de diálogo modal o panel y representa el contenido HTML en la pantalla para el usuario final.
 
 Es posible que estas llamadas no representen llamadas de API públicas independientes a las que la lógica de página web puede llamar desde un paso arbitrario. En su lugar, se trata de una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
@@ -445,7 +445,7 @@ El proceso de construcción de la URL de vista rápida es básicamente opuesto a
 
 Consulte [Identificación de variables de zona interactiva y mapa de imagen](#identifying-hotspot-and-image-map-variables).
 
-El último paso para almacenar en déclencheur la URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI de front-end de su departamento de TI. Tienen conocimientos para saber mejor cómo realizar un déclencheur exacto de la implementación de vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para almacenar en déclencheur la URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI de front-end de su departamento de TI. Tienen conocimientos para saber mejor cómo realizar un déclencheur exacto de la implementación de QuickView desde el paso adecuado, teniendo una URL de Quickview lista para usar.
 
 ## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 

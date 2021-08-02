@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
-source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
+source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 47%
+source-wordcount: '626'
+ht-degree: 46%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 47%
    + [Adición de mapas de imagen](image-maps.md)
    + [Reutilizar recursos mediante MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Newsletter sobre Dynamic Media de Experience League](dynamic-media-newsletter.md)
+   + [Archivo de newsletter de Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuración de Dynamic Media](administering-dynamic-media.md)
    + [Trabajo con Dynamic Media](dynamic-media.md)
    + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)

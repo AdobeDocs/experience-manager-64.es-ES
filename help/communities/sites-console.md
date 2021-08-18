@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3237'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ El panel Diseño contiene 2 subpaneles para seleccionar el tema y el banner de m
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-El marco de trabajo utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
+El marco de trabajo utiliza `Twitter Bootstrap` para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaca.
 

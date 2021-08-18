@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Visite [Personalizaciones del lado del servidor](server-customize.md) para obten
 
 ## Idioma de plantilla JS de Handlebars {#handlebars-js-templating-language}
 
-Uno de los cambios más notables en el nuevo marco de trabajo es el uso del `Handlebars JS` idioma de plantilla (HBS), una tecnología de código abierto popular para el procesamiento servidor-cliente.
+Uno de los cambios más notables en el nuevo marco de trabajo es el uso del [Handlebars JS](https://handlebarsjs.com/) idioma de plantilla (HBS), una tecnología de código abierto popular para el procesamiento servidor-cliente.
 
 Los scripts HBS son sencillos, sin lógica, se compilan tanto en el servidor como en el cliente, son fáciles de superponer y personalizar y se enlazan naturalmente con el usuario cliente, ya que HBS admite el procesamiento en el lado del cliente.
 

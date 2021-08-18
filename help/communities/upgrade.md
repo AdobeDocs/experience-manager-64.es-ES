@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Consulte también [Uso de Maven para Communities](maven.md).
 
 ### Sin plantillas de componente JSP {#no-jsp-component-templates}
 
-El [marco de componentes sociales](scf.md) (SCF) utiliza el lenguaje de plantilla `HandlebarsJS` (HBS) en lugar de las páginas del servidor Java (JSP) utilizadas antes de AEM 6.0.
+El [marco de componentes sociales](scf.md) (SCF) utiliza el lenguaje de plantilla [HandlebarsJS](https://handlebarsjs.com/) (HBS) en lugar de las páginas del servidor Java (JSP) utilizadas antes de AEM 6.0.
 
 En AEM 6.0, los componentes JSP permanecieron junto con los nuevos componentes del marco HBS en la misma ubicación, y los componentes HBS normalmente se encuentran en subcarpetas denominadas &quot;hbs&quot;.
 

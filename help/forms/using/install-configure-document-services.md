@@ -1,16 +1,16 @@
 ---
 title: Instalación y configuración de document services
-seo-title: Instalación y configuración de document services
+seo-title: Installing and configuring document services
 description: Instale AEM Forms document services para crear, ensamblar, distribuir, archivar documentos PDF, agregar firmas digitales para limitar el acceso a los documentos y descodificar formularios con códigos de barras.
-seo-description: Instale AEM Forms document services para crear, ensamblar, distribuir, archivar documentos PDF, agregar firmas digitales para limitar el acceso a los documentos y descodificar formularios con códigos de barras.
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,6 @@ Antes de empezar a instalar y configurar AEM Forms document services, asegúrese
 >* En sistemas operativos basados en UNIX, PDF Generator admite rutas de conversión de WebKit y PhantomJS para convertir archivos HTML en documentos PDF.
 
 >
-
 
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
@@ -208,7 +207,6 @@ Si va a usar el servicio Generador de PDF para convertir formatos de archivo nat
 >
 
 
-
 Después de instalar Acrobat, abra Microsoft Word. En la ficha **Acrobat** haga clic en **Crear PDF** y convierta un archivo .doc o .docx disponible en el equipo a un documento PDF. Si la conversión se realiza correctamente, AEM Forms está listo para utilizar Acrobat con el servicio de Generador de PDF.
 
 ### Configuración de variables de entorno {#setup-environment-variables}
@@ -260,8 +258,7 @@ Establezca variables de entorno para el Kit de desarrollo de Java de 32 y 64 bit
 >* Si está utilizando OpenOffice en una plataforma basada en UNIX, ejecute el siguiente comando para configurar la variable path:
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Solo para IBM WebSphere) Configure el proveedor de socket SSL de IBM {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 >
 
 
-
 ## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras funciones de AEM Forms. Realice los siguientes pasos para instalar el paquete:
@@ -440,7 +436,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
 
 ### Configuración de una cuenta de usuario local para ejecutar el servicio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Se necesita una cuenta de usuario local para ejecutar el servicio PDF Generator. Para ver los pasos para crear un usuario local, consulte [Crear una cuenta de usuario en Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o [crear una cuenta de usuario en plataformas basadas en UNIX](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
+Se necesita una cuenta de usuario local para ejecutar el servicio PDF Generator. Para ver los pasos para crear un usuario local, consulte [Crear una cuenta de usuario en Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) o crear una cuenta de usuario en plataformas basadas en UNIX.
 
 1. Abra la página [Configuración del generador de PDF de AEM Forms](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 

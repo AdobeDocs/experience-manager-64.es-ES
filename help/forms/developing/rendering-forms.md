@@ -1,8 +1,8 @@
 ---
 title: Renderización de Forms
-seo-title: Renderización de Forms
+seo-title: Rendering Forms
 description: Utilice el servicio Forms para crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y entregan formularios creados normalmente en Designer. Los creadores de formularios pueden desarrollar un único diseño de formulario que el servicio de Forms procesa en PDF, SWF o HTML en varios entornos de explorador.
-seo-description: Utilice el servicio Forms para crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y entregan formularios creados normalmente en Designer. Los creadores de formularios pueden desarrollar un único diseño de formulario que el servicio de Forms procesa en PDF, SWF o HTML en varios entornos de explorador.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
-
 
 # Renderización de Forms {#rendering-forms}
 
@@ -57,6 +56,4 @@ Puede realizar estas tareas mediante el servicio Forms:
 * Pasar documentos. (Consulte [Pasar documentos al servicio de Forms](/help/forms/developing/passing-documents-forms-service.md)
 * Calcular datos de formulario. (Consulte [Cálculo de datos del formulario](/help/forms/developing/calculating-form-data.md)).
 * Optimizar una aplicación. (Consulte [Optimización del rendimiento del servicio de Forms](/help/forms/developing/optimizing-performance-forms-service.md)).
-
-   ***Sugerencia **: El sitio web del Desarrollador de Adobes contiene el siguiente artículo que explica cómo crear una aplicación ASP.NET que invoque el servicio de Forms y procese formularios. Consulte [Creación de formularios que procesen aplicaciones ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
 

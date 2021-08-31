@@ -1,8 +1,8 @@
 ---
 title: Uso de Adobe Sign en un formulario adaptable
-seo-title: Uso de Adobe Sign en un formulario adaptable
+seo-title: Using Adobe Sign in an adaptive form
 description: 'Habilite los flujos de trabajo de firma electrónica (Adobe Sign) para un formulario adaptable a fin de automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente formularios desde dispositivos móviles. '
-seo-description: Habilite los flujos de trabajo de firma electrónica (Adobe Sign) para un formulario adaptable a fin de automatizar los flujos de trabajo de firma, simplificar los procesos de firma única y múltiple y firmar electrónicamente formularios desde dispositivos móviles.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,13 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Adobe Sign
-translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
-
 
 # Uso de Adobe Sign en un formulario adaptable {#using-adobe-sign-in-an-adaptive-form}
 
@@ -64,13 +63,13 @@ Siga estos pasos para configurar Adobe Sign para un formulario adaptable:
 
 ![signer-details](assets/signer-details.png)
 
-### Editar propiedades de formulario adaptables para Adobe Sign {#enableadobesign}
+### Edición de las propiedades de formulario adaptables para Adobe Sign {#enableadobesign}
 
 Configure las propiedades de formulario adaptables para Adobe Sign en un formulario adaptable existente o nuevo.
 
 [Crear un formulario adaptable para ](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) señales de Adobe describe los pasos para crear un formulario adaptable básico. Consulte [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md) para conocer otras opciones disponibles al crear un formulario adaptable.
 
-#### Crear un formulario adaptable para Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
+#### Creación de un formulario adaptable para Adobe Sign {#create-an-adaptive-form-for-adobe-sign}
 
 Siga estos pasos para crear un formulario adaptable para Adobe Sign:
 
@@ -92,7 +91,7 @@ Siga estos pasos para crear un formulario adaptable para Adobe Sign:
 
 1. Toque **[!UICONTROL Crear.]** Se crea un formulario adaptable con firma habilitada, que se puede utilizar para agregar campos de Adobe Sign.
 
-#### Editar un formulario adaptable para Adobe Sign {#editafsign}
+#### Edición de un formulario adaptable para Adobe Sign {#editafsign}
 
 Siga estos pasos para utilizar Adobe Sign en un formulario adaptable existente:
 
@@ -106,7 +105,7 @@ Siga estos pasos para utilizar Adobe Sign en un formulario adaptable existente:
 
 1. Toque **[!UICONTROL Guardar y cerrar]**. El formulario adaptable está habilitado para Adobe Sign.
 
-### Agregar campos de Adobe Sign a un formulario adaptable {#addadobesignfieldstoanadaptiveform}
+### Adición de campos de Adobe Sign a un formulario adaptable {#addadobesignfieldstoanadaptiveform}
 
 Adobe Sign tiene varios campos que se pueden colocar en un formulario adaptable. Estos campos aceptan varios tipos de datos, como firmas, iniciales, empresa o título, y ayudan a recopilar información adicional durante la firma, junto con las firmas. Puede utilizar el componente Bloque de Adobe Sign para colocar campos de Adobe Sign en varias ubicaciones de un formulario adaptable.
 
@@ -302,7 +301,7 @@ Ahora, la experiencia de firma de formularios en está lista. Puede obtener una 
 
 **P: ¿Puedo utilizar etiquetas de texto de Adobe Sign en un componente de texto estático de un formulario adaptable?**
 
-**Ans:** Sí, se pueden utilizar etiquetas de texto en un componente de texto para añadir campos de Adobe Sign a un  [documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (solo la opción de documento de registro generado automáticamente) activado en un formulario adaptable. Para obtener más información sobre el procedimiento y las reglas para crear una etiqueta de texto, consulte [Documentación de Adobe Sign](https://helpx.adobe.com/sign/help/text-tags.html). Tenga en cuenta también que los formularios adaptables tienen una compatibilidad limitada con las etiquetas de texto. Puede utilizar las etiquetas de texto para crear solo los campos que admite Adobe Sign Block.
+**Ans:** Sí, se pueden utilizar etiquetas de texto en un componente de texto para añadir campos de Adobe Sign a un  [documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (solo la opción de documento de registro generado automáticamente) activado en un formulario adaptable. Para obtener más información sobre el procedimiento y las reglas para crear una etiqueta de texto, consulte [Documentación de Adobe Sign](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html). Tenga en cuenta también que los formularios adaptables tienen una compatibilidad limitada con las etiquetas de texto. Puede utilizar las etiquetas de texto para crear solo los campos que admite Adobe Sign Block.
 
 **P: AEM Forms proporciona componentes de paso de bloque y firma de Adobe Sign. ¿Pueden utilizarse simultáneamente en una forma adaptable?**
 
@@ -311,4 +310,3 @@ Ahora, la experiencia de firma de formularios en está lista. Puede obtener una 
 **Bloque de Adobe Sign:** puede utilizar el bloque de Adobe Sign para agregar campos de Adobe Sign en cualquier parte del formulario adaptable. También ayuda a asignar campos específicos a los firmantes. De forma predeterminada, cuando un formulario adaptable se previsualiza o se publica, Adobe Sign Block no está visible. Estos bloques solo están habilitados en el documento de firma. En el documento de firma, solo se activan los campos asignados a un firmante. El bloque Adobe Sign se puede utilizar con los firmantes primero y siguientes.
 
 **Componente de paso de firma:**  puede utilizar el componente de paso de firma para crear una experiencia de firma en el formulario. Solo permite que el primer firmante firme mientras se rellena el formulario. Cuando se representa la sección que contiene el componente Paso de firma, muestra una versión PDF del formulario que se puede firmar. Generalmente es la última o la penúltima sección seguida del componente de resumen de un formulario.
-

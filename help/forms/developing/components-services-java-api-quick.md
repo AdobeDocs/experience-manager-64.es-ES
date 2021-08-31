@@ -1,8 +1,8 @@
 ---
 title: Componentes y servicios Java APIQuick Start (SOAP)
-seo-title: Componentes y servicios Java APIQuick Start (SOAP)
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Utilice el Inicio rápido de la API de Java de componentes y servicios para implementar un componente, establecer el contexto de ejecución de un servicio, desactivar la seguridad del servicio, iniciar un servicio, modificar los valores de configuración del servicio y eliminar componentes.
-seo-description: Utilice el Inicio rápido de la API de Java de componentes y servicios para implementar un componente, establecer el contexto de ejecución de un servicio, desactivar la seguridad del servicio, iniciar un servicio, modificar los valores de configuración del servicio y eliminar componentes.
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de la API de Java de Componentes y Servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Inicio rápido de la API de Java de componentes y servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para componentes y servicios.
 
@@ -47,7 +46,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
+>Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
 
 ## Inicio rápido (modo SOAP): Implementación de un componente mediante la API de Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -622,4 +621,3 @@ El siguiente ejemplo de código Java elimina un componente mediante la API de Ja
   
  
 ```
-

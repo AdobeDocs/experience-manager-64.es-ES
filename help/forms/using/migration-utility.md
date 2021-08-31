@@ -1,8 +1,8 @@
 ---
 title: Migrar recursos y documentos de AEM Forms
-seo-title: Migrar recursos y documentos de AEM Forms
+seo-title: Migrate AEM Forms assets and documents
 description: La utilidad Migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
-seo-description: La utilidad Migración le permite migrar recursos y documentos de AEM Forms de AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 2%
 
 ---
 
@@ -38,13 +38,13 @@ Puede [actualizar](/help/forms/using/upgrade.md) a la última versión de AEM Fo
 
 **En caso de una actualización in situ**
 
-Si ha realizado una actualización in situ, la instancia actualizada ya tiene los recursos y documentos. Sin embargo, para poder utilizar los recursos y documentos, deberá instalar el [paquete de compatibilidad de AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (incluye el paquete de compatibilidad de gestión de correspondencia)
+Si ha realizado una actualización in situ, la instancia actualizada ya tiene los recursos y documentos. Sin embargo, para poder utilizar los recursos y documentos, deberá instalar el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (incluye el paquete de compatibilidad de gestión de correspondencia)
 
 A continuación, debe actualizar los recursos y documentos [ejecutando la utilidad de migración](#runningmigrationutility).
 
 **En caso de instalación fuera de lugar**
 
-Si se trata de una instalación fuera de lugar (nueva), antes de poder utilizar los recursos y documentos, deberá instalar el [Paquete de compatibilidad de AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (incluye el paquete de compatibilidad de gestión de correspondencia).
+Si se trata de una instalación fuera de lugar (nueva), antes de poder utilizar los recursos y documentos, deberá instalar el [Paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (incluye el paquete de compatibilidad de gestión de correspondencia).
 
 A continuación, debe importar el paquete de recursos (zip o cmp) en la nueva configuración y, a continuación, actualizar los recursos y documentos [ejecutando la utilidad de migración](#runningmigrationutility). Debido a los cambios [relacionados con la compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md), se cambian las ubicaciones de algunas carpetas en el repositorio crx. Exportar e importar manualmente dependencias (bibliotecas y recursos personalizados) de la configuración anterior a un entorno nuevo.
 
@@ -107,15 +107,12 @@ Cuando ejecuta la Utilidad de migración por primera vez, se crea un registro co
    >Estos componentes se pueden migrar abriéndolos en el Editor de reglas en el editor de Forms adaptable.
    >
    >* Para migrar reglas y secuencias de comandos (no es necesario si se actualiza desde la versión 6.3) a los componentes personalizados, pulse Migración de componentes personalizados de Forms adaptable y, en la pantalla siguiente, pulse Iniciar migración. Se migra lo siguiente:
-      >
-      >  
-   * Reglas y secuencias de comandos creadas con el editor de reglas (6.1 FP1 y posteriores)
+   >
+   >  * Reglas y secuencias de comandos creadas con el editor de reglas (6.1 FP1 y posteriores)
    >  * Secuencias de comandos creadas con la pestaña Script en la IU de 6.1 y anteriores
    >* Para migrar plantillas (no es necesario si se actualiza desde la versión 6.3), pulse Migración de plantillas de Forms adaptable y, en la pantalla siguiente, pulse Iniciar migración. Se migra lo siguiente:
-
-      >
-      >  
-   * Plantillas antiguas: plantillas de formularios adaptables creadas en /apps con AEM 6.1 Forms o anterior. Esto incluye las secuencias de comandos definidas en los componentes de la plantilla.
+   >
+   >  * Plantillas antiguas: plantillas de formularios adaptables creadas en /apps con AEM 6.1 Forms o anterior. Esto incluye las secuencias de comandos definidas en los componentes de la plantilla.
    >  * Nuevas plantillas : plantillas de formularios adaptables creadas con el editor de plantillas en /conf. Esto incluye la migración de reglas y secuencias de comandos creadas con el editor de reglas.
 
 

@@ -1,22 +1,21 @@
 ---
 title: Lectores de pantalla para formularios HTML5
-seo-title: Lectores de pantalla para formularios HTML5
+seo-title: Screen readers for HTML5 forms
 description: Enumera los lectores de pantalla compatibles con los formularios HTML5.
-seo-description: Enumera los lectores de pantalla compatibles con los formularios HTML5.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c27eb771-d390-4534-8e67-f1277550e760
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
-
 
 # Lectores de pantalla para formularios HTML5 {#screen-readers-for-html-forms}
 
@@ -24,9 +23,9 @@ Los componentes de formularios HTML5 representan la plantilla de formulario XFA 
 
 Los formularios HTML5 utilizan construcciones HTML estándar que permiten utilizar herramientas de accesibilidad normales para HTML con estos formularios. Si un formulario está diseñado según las prácticas recomendadas para formularios accesibles, funciona con cualquier lector de pantalla admitido. Además, estos formularios están habilitados para la navegación mediante el teclado.
 
-## Estándares de accesibilidad {#accessibility-standards}
+## Normas de accesibilidad {#accessibility-standards}
 
-Los formularios HTML5 cumplen con la sección 508 para accesibilidad con excepciones conocidas. Consulte [VPAT para formularios HTML5](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) para obtener más información.
+Los formularios HTML5 cumplen con la sección 508 para accesibilidad con excepciones conocidas. Consulte [VPAT para formularios HTML5](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) para obtener más información.
 
 ## Lectores de pantalla certificados para formularios HTML5 {#certified-screen-readers-for-html-forms}
 

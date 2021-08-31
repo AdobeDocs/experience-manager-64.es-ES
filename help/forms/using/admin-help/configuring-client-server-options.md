@@ -1,8 +1,8 @@
 ---
 title: Configuración de las opciones de cliente y servidor
-seo-title: Configuración de opciones de cliente y servidor
+seo-title: Configuring client and server optionsn
 description: Obtenga información sobre cómo configurar las distintas opciones de cliente y servidor, como los ajustes de configuración del servidor, las funciones de seguridad de documentos y la auditoría de eventos.
-seo-description: Obtenga información sobre cómo configurar las distintas opciones de cliente y servidor, como los ajustes de configuración del servidor, las funciones de seguridad de documentos y la auditoría de eventos.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ La seguridad del documento genera automáticamente un correo electrónico de inv
 
 El correo electrónico de registro contiene un vínculo a una página de registro e información sobre cómo registrarse. Una vez que el usuario invitado se registre, documente los problemas de seguridad mediante un correo electrónico de activación con un vínculo a una página de activación. Cuando se activa, la cuenta permanece válida hasta que la desactive o elimine.
 
-Si habilita el registro integrado, solo una vez especifica el servidor SMTP, los detalles del correo electrónico de registro, las capacidades de acceso y restablece la información de correo electrónico de contraseña. Antes de habilitar el registro integrado, asegúrese de que ha creado un dominio local en Administración de usuarios y ha asignado la función &quot;Usuario invitado de seguridad de documentos&quot; a los usuarios y grupos adecuados de su organización. (Consulte [Añadir un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado con el SDK de AEM forms. Consulte la ayuda sobre &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn-aemforms-programming-63). Si no utiliza la opción Registro integrado , se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una contraseña nueva o para obtener otra información.
+Si habilita el registro integrado, solo una vez especifica el servidor SMTP, los detalles del correo electrónico de registro, las capacidades de acceso y restablece la información de correo electrónico de contraseña. Antes de habilitar el registro integrado, asegúrese de que ha creado un dominio local en Administración de usuarios y ha asignado la función &quot;Usuario invitado de seguridad de documentos&quot; a los usuarios y grupos adecuados de su organización. (Consulte [Añadir un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado con el SDK de AEM forms. Consulte la ayuda sobre &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Si no utiliza la opción Registro integrado , se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una contraseña nueva o para obtener otra información.
 
 **Habilitar y configurar el registro de usuario invitado**
 

@@ -1,8 +1,8 @@
 ---
 title: Endurecimiento de la AEM Forms en el entorno JEE
-seo-title: Endurecimiento de la AEM Forms en el entorno JEE
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: Aprenda una variedad de configuraciones de seguridad para mejorar la seguridad de AEM Forms en JEE que se ejecuta en una intranet corporativa.
-seo-description: Aprenda una variedad de configuraciones de seguridad para mejorar la seguridad de AEM Forms en JEE que se ejecuta en una intranet corporativa.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 1%
 
 ---
@@ -632,7 +632,7 @@ Ciertas direcciones URL se resaltan como aplicaciones web dirigidas al usuario f
 
 Un ataque de falsificación de solicitudes entre sitios (CSRF) explota la confianza que un sitio web tiene para el usuario, para transmitir comandos que no están autorizados y no son intencionados por el usuario. El ataque se configura incluyendo un vínculo o una secuencia de comandos en una página web, o una URL en un mensaje de correo electrónico, para acceder a otro sitio en el que el usuario ya ha sido autenticado.
 
-Por ejemplo, puede iniciar sesión en la Consola de administración mientras navega simultáneamente por otro sitio web. Una de las páginas web puede incluir una etiqueta de imagen HTML con un atributo `src` que se dirija a un script del lado del servidor en el sitio web de la víctima. Al aprovechar el mecanismo de autenticación de sesión basado en cookies que proporcionan los exploradores web, el sitio web atacante puede enviar solicitudes malintencionadas a este script de la víctima del lado del servidor, que se muestra como el usuario legítimo. Para obtener más ejemplos, consulte [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples).
+Por ejemplo, puede iniciar sesión en la Consola de administración mientras navega simultáneamente por otro sitio web. Una de las páginas web puede incluir una etiqueta de imagen HTML con un atributo `src` que se dirija a un script del lado del servidor en el sitio web de la víctima. Al aprovechar el mecanismo de autenticación de sesión basado en cookies que proporcionan los exploradores web, el sitio web atacante puede enviar solicitudes malintencionadas a este script de la víctima del lado del servidor, que se muestra como el usuario legítimo.
 
 Las siguientes características son comunes al CSRF:
 
@@ -697,7 +697,7 @@ AEM Forms en JEE proporciona API para administrar la lista de excepciones de ref
 
 Consulte la* Referencia de la API de AEM Forms en JEE* para obtener más información sobre las API.
 
-Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Excepciones de Referente permitidas a nivel global, es decir, para definir excepciones que sean aplicables a todas las aplicaciones. Esta lista contiene solo URI con una ruta absoluta (p. ej. `/index.html`) o una ruta relativa (p. ej. `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo: `/sample/(.)*`.
+Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Excepciones de Referente permitidas a nivel global, es decir, para definir excepciones que sean aplicables a todas las aplicaciones. Esta lista contiene solo URI con una ruta absoluta (por ejemplo, `/index.html`) o una ruta relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
 
 El ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del espacio de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referente permitidos globales, utilice:
 

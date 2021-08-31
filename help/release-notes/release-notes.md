@@ -1,8 +1,8 @@
 ---
 title: Notas de versión específicas de Adobe Experience Manager 6.4
-seo-title: Notas de la versión
+seo-title: Release Notes
 description: 'Notas de Adobe Experience Manager 6.4 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas. '
-seo-description: 'Notas de Adobe Experience Manager 6.4 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,11 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-translation-type: tm+mt
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 28%
+source-wordcount: '2754'
+ht-degree: 26%
 
 ---
 
@@ -132,7 +131,7 @@ Se incluyen varias mejoras en Sling Model Exporter y los componentes principales
 
 AEM 6.4 completa la transformación al modelo de componentes de próxima generación. El concepto de componentes principales introducido en AEM 6.3 y ahora unido por el sistema de estilos, ofrece una forma eficaz de crear sitios nuevos y ampliar los existentes.
 
-Tutorial recomendado para aprender a aprovechar mejor el nuevo modelo de componentes: [Introducción a AEM Sites: Tutorial de WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Tutorial recomendado para aprender a aprovechar mejor el nuevo modelo de componentes: [Introducción a AEM Sites: Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 
 #### Complemento de pantallas {#screens-add-on}
 
@@ -160,7 +159,7 @@ Se han añadido nuevos filtros, llamados Respondido y No Respondido, a la consol
 
 Se ha proporcionado la capacidad de marcar los filtros de moderación predefinidos en la consola de moderación. Estos filtros se anexan hacia el final de la cadena URL, por lo que se pueden compartir, reutilizar y volver a visitar más adelante. Obtenga información sobre cómo marcar filtros en [consola de moderación masiva](/help/communities/moderation.md#main-pars-note-429176623).
 
-#### Eliminar UGC y perfiles de usuario {#delete-ugc-and-user-profiles}
+#### Eliminación de UGC y perfiles de usuario {#delete-ugc-and-user-profiles}
 
 AEM 6.4 Communities expone [API listas para usar](/help/communities/user-ugc-management-service.md) y muestra [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) para permitir que los usuarios finales tengan control sobre sus datos. Estas API también permiten que el procesamiento de datos y las organizaciones que controlan los datos cumplan con las solicitudes del RGPD de la UE.
 
@@ -313,11 +312,11 @@ Este proceso de establecimiento de prioridades creó más de 500 cambios orienta
 
 * Paquetes para las funciones de AEM Forms:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Idiomas {#languages}
 
@@ -356,7 +355,7 @@ Adobe evalúa constantemente las capacidades del producto y, con el tiempo, plan
 
 En cuanto a Adobe Experience Manager 6.4, [consulte la lista de funciones en desuso y eliminadas](deprecated-removed-features.md). La página también contiene un anuncio previo de los cambios de 2019 y un aviso importante para los clientes que actualizan desde versiones anteriores.
 
-## Listas de cambios detallados {#detailed-changes-lists}
+## Listas de cambios detalladas {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 

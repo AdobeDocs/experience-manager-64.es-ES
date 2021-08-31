@@ -1,8 +1,8 @@
 ---
 title: Administración programática de puntos de conexión
-seo-title: Administración programática de puntos de conexión
+seo-title: Programmatically Managing Endpoints
 description: Utilice el servicio de registro de puntos finales para añadir puntos finales de EJB, añadir puntos finales de SOAP, añadir puntos finales de carpeta vigilados, añadir puntos finales de correo electrónico, añadir puntos finales de Remoting, añadir puntos finales de Administrador de tareas, modificar puntos finales, eliminar puntos finales y recuperar información del conector de punto final.
-seo-description: Utilice el servicio de registro de puntos finales para añadir puntos finales de EJB, añadir puntos finales de SOAP, añadir puntos finales de carpeta vigilados, añadir puntos finales de correo electrónico, añadir puntos finales de Remoting, añadir puntos finales de Administrador de tareas, modificar puntos finales, eliminar puntos finales y recuperar información del conector de punto final.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10850'
+source-wordcount: '10791'
 ht-degree: 1%
 
 ---
-
 
 # Administración programática de puntos de conexión {#programmatically-managing-endpoints}
 
@@ -54,7 +53,7 @@ El servicio Endpoint Registry permite administrar los extremos mediante programa
 * Eliminación de extremos (Consulte [Eliminación de extremos](programmatically-endpoints.md#removing-endpoints)).
 * Recupere información del conector del extremo (Consulte [Recuperación de información del conector del extremo](programmatically-endpoints.md#retrieving-endpoint-connector-information)).
 
-## Añadir puntos de conexión EJB {#adding-ejb-endpoints}
+## Adición de puntos de conexión EJB {#adding-ejb-endpoints}
 
 Puede añadir mediante programación un extremo EJB a un servicio mediante la API Java de AEM Forms. Al agregar un extremo EJB a un servicio, está permitiendo que una aplicación cliente invoque el servicio mediante el modo EJB. Es decir, al configurar las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo EJB. (Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
@@ -157,7 +156,7 @@ Añada un punto final de EJB mediante la API de Java:
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Añadir puntos de conexión SOAP {#adding-soap-endpoints}
+## Adición de puntos de conexión SOAP {#adding-soap-endpoints}
 
 Puede añadir mediante programación un extremo SOAP a un servicio mediante la API Java de AEM Forms. Al agregar un extremo SOAP, se habilita una aplicación cliente para que invoque el servicio mediante el modo SOAP. Es decir, al configurar las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo SOAP.
 
@@ -262,7 +261,7 @@ Agregue un extremo SOAP a un servicio mediante la API de Java:
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Añadir puntos de conexión de carpeta observados {#adding-watched-folder-endpoints}
+## Añadir puntos finales de carpeta vigilada {#adding-watched-folder-endpoints}
 
 Puede agregar mediante programación un extremo de carpeta vigilada a un servicio mediante la API Java de AEM Forms. Al agregar un extremo de carpeta vigilada, se permite a los usuarios colocar un archivo (como un archivo PDF) en una carpeta. Cuando el archivo se coloca en la carpeta , se invoca el servicio configurado y se manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vista está configurada para analizarse con un intervalo de velocidad fijo o con un programa cron, como todos los lunes, miércoles y viernes al mediodía.
 
@@ -324,7 +323,7 @@ La siguiente lista especifica los valores de configuración que se establecen al
 
 * **url**: Especifica la ubicación de la carpeta vigilada. En un entorno agrupado, este valor debe apuntar a una carpeta de red compartida a la que se pueda acceder desde todos los equipos del clúster.
 * **asíncrono**: Identifica el tipo de invocación como asíncrono o sincrónico. Los procesos transitorios y sincrónicos solo se pueden invocar sincrónicamente. El valor predeterminado es true. Se recomienda asíncrono.
-* **cronExpression**: Utilizado por quartz para programar el sondeo del directorio de entrada. Para obtener más información sobre la configuración de la expresión cron, consulte [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **cronExpression**: Utilizado por quartz para programar el sondeo del directorio de entrada.
 * **purgeDuration**: Es un atributo obligatorio. Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Este atributo es útil para garantizar que la carpeta de resultados no esté llena. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
 * **repeatInterval**: Intervalo, en segundos, para analizar la carpeta vigilada para obtener información. A menos que la restricción esté habilitada, este valor debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor predeterminado es 5.
 * **repeatCount**: Número de veces que una carpeta vigilada explora la carpeta o el directorio. Un valor de -1 indica escaneo indefinido. El valor predeterminado es -1.
@@ -820,7 +819,7 @@ Después de crear un nuevo extremo, debe habilitarlo. Cuando un extremo Remoting
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Añadir un extremo Remoting mediante la API de Java {#add-a-remoting-endpoint-using-the-java-api}
+### Añadir un extremo de Remoting mediante la API de Java {#add-a-remoting-endpoint-using-the-java-api}
 
 Añada un punto final de Remoting utilizando la API de Java:
 
@@ -981,7 +980,7 @@ Agregue un extremo de TaskManager usando la API de Java:
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Modificación de puntos de conexión {#modifying-endpoints}
+## Modificación de puntos finales {#modifying-endpoints}
 
 Puede modificar mediante programación un extremo existente mediante la API Java de AEM Forms. Si modifica un punto final, puede cambiar el comportamiento del punto final. Considere, por ejemplo, un punto final de Carpeta vigilada que especifica una carpeta que se utiliza como carpeta vigilada. Puede modificar mediante programación los valores de configuración que pertenecen al extremo de la carpeta vigilada, lo que hace que otra carpeta funcione como la carpeta vigilada. Para obtener información sobre los valores de configuración que pertenecen a un extremo de carpeta vigilada, consulte [Añadir puntos de conexión de carpeta vigilada](programmatically-endpoints.md#adding-watched-folder-endpoints).
 
@@ -1083,7 +1082,7 @@ Modifique un punto final utilizando la API de Java:
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Eliminación de puntos de conexión {#removing-endpoints}
+## Eliminación de extremos {#removing-endpoints}
 
 Puede eliminar mediante programación un extremo de un servicio mediante la API Java de AEM Forms. Después de quitar un extremo, no se puede invocar el servicio utilizando el método de invocación que habilitó el extremo. Por ejemplo, si elimina un extremo SOAP de un servicio, no puede invocar el servicio mediante el modo SOAP.
 

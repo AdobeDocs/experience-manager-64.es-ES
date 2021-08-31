@@ -1,8 +1,8 @@
 ---
 title: Conversión entre formatos de archivo y PDF
-seo-title: Conversión entre formatos de archivo y PDF
+seo-title: Converting Between File Formatsand PDF
 description: Utilice el servicio Generate PDF para convertir formatos de archivo nativos a PDF. Generate PDF service también convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
-seo-description: Utilice el servicio Generate PDF para convertir formatos de archivo nativos a PDF. Generate PDF service también convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 79091a75-2669-453f-9560-e58bfffa3487
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7933'
+source-wordcount: '7872'
 ht-degree: 0%
 
 ---
-
 
 # Conversión entre formatos de archivo y PDF {#converting-between-file-formatsand-pdf}
 
@@ -141,7 +140,7 @@ Una vez convertido el archivo en un documento PDF, puede recuperar los resultado
 
 [Generación de inicios rápidos de la API del servicio PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Convertir documentos de Word a documentos PDF mediante la API de Java {#convert-word-documents-to-pdf-documents-using-the-java-api}
+### Convertir documentos de Word en documentos PDF mediante la API de Java {#convert-word-documents-to-pdf-documents-using-the-java-api}
 
 Convertir un documento de Microsoft Word en un documento PDF mediante la API Generate PDF (Java):
 
@@ -196,7 +195,7 @@ Convertir un documento de Microsoft Word en un documento PDF mediante la API Gen
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Convertir documentos de Word a documentos PDF mediante la API de servicio Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
+### Convertir documentos de Word en documentos PDF mediante la API de servicio Web {#convert-word-documents-to-pdf-documents-using-the-web-service-api}
 
 Convertir un documento de Microsoft Word en un documento PDF mediante la API Generate PDF (servicio Web):
 
@@ -353,7 +352,7 @@ Convertir un documento HTML en un documento PDF mediante la API Generate PDF (Ja
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Conversión de contenido HTML en un documento PDF mediante la API de servicio Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
+### Convertir contenido HTML en un documento PDF mediante la API de servicio Web {#convert-html-content-to-a-pdf-document-using-the-web-service-api}
 
 Convertir contenido HTML en un documento PDF mediante la API Generate PDF (servicio web):
 
@@ -408,7 +407,7 @@ Convertir contenido HTML en un documento PDF mediante la API Generate PDF (servi
 
 [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Conversión de documentos PDF a formatos que no son de imagen {#converting-pdf-documents-to-non-image-formats}
+## Conversión de documentos PDF a formatos que no sean de imagen {#converting-pdf-documents-to-non-image-formats}
 
 En esta sección se describe cómo puede utilizar la API de Generación de PDF Java y la API de servicio web para convertir mediante programación un documento PDF en un archivo RTF, que es un ejemplo de formato que no es de imagen. Otros formatos que no son imágenes incluyen HTML, texto, DOC y EPS. Al convertir un documento PDF a RTF, asegúrese de que el documento PDF no contenga elementos de formulario, como un botón de envío. Los elementos de formulario no se convierten.
 
@@ -563,7 +562,7 @@ Convertir un documento PDF en un archivo RTF usando la API Generate PDF (servici
 
 [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Agregar compatibilidad con formatos de archivo nativos adicionales {#adding-support-for-additional-native-file-formats}
+## Añadir compatibilidad con formatos de archivo nativos adicionales {#adding-support-for-additional-native-file-formats}
 
 En esta sección se explica cómo agregar compatibilidad con formatos de archivo nativos adicionales. Proporciona una visión general de las interacciones entre el servicio Generate PDF y las aplicaciones nativas que este servicio utiliza para convertir formatos de archivo nativos a PDF.
 
@@ -721,7 +720,7 @@ Tenga en cuenta estos problemas:
 
 Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comandos, debe instalar la aplicación Microsoft Spy++.
 
-#### Desempaquetar los archivos de diálogo y de secuencia de comandos {#unpackaging-the-dialog-and-script-files}
+#### Desempaquetado de los archivos de diálogo y de secuencia de comandos {#unpackaging-the-dialog-and-script-files}
 
 Los archivos de cuadro de diálogo y script residen en el archivo appmondata.jar . Para poder modificar cualquiera de estos archivos o agregar nuevos archivos de script o diálogo, debe desempaquetar este archivo JAR. Por ejemplo, supongamos que desea agregar compatibilidad con la aplicación EditPlus. Puede crear dos archivos XML, llamados appmon.editplus.script.en_US.xml y appmon.editplus.script.add.en_US.xml. Estas secuencias de comandos XML deben agregarse al archivo adobe-appmondata.jar en dos ubicaciones, tal como se especifica a continuación:
 
@@ -756,7 +755,7 @@ Si desea dirigir archivos a una nueva aplicación nativa, debe crear un archivo 
 
 La secuencia de comandos contiene instrucciones que navegan por los elementos de ventana de la aplicación nativa y que proporcionan respuestas específicas a esos elementos. El archivo que contiene esta información es appmon.*[appname]*.script.*[locale]*.xml. Un ejemplo es appmon.notepad.script.en_US.xml.
 
-#### Identificación de los pasos que debe ejecutar el script {#identifying-steps-the-script-must-execute}
+#### Identificación de los pasos que debe ejecutar la secuencia de comandos {#identifying-steps-the-script-must-execute}
 
 Con la aplicación nativa, determine los elementos de ventana que debe navegar y cada respuesta que debe realizar para imprimir el documento. Observe los cuadros de diálogo que resultan de cualquier respuesta. Los pasos serán similares a estos pasos:
 
@@ -772,7 +771,7 @@ Utilice Microsoft Spy++ para obtener las identidades de las propiedades de eleme
 
 #### Uso de expresiones regulares en atributos de rótulo {#using-regular-expressions-in-caption-attributes}
 
-Puede utilizar expresiones regulares en las especificaciones de rótulos. El servicio Generate PDF utiliza la clase `java.util.regex.Matcher` para admitir expresiones regulares. Esa utilidad admite las expresiones regulares descritas en `java.util.regex.Pattern`. (Vaya al sitio web de Java en [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html)).
+Puede utilizar expresiones regulares en las especificaciones de rótulos. El servicio Generate PDF utiliza la clase `java.util.regex.Matcher` para admitir expresiones regulares. Esa utilidad admite las expresiones regulares descritas en `java.util.regex.Pattern`.
 
 **Expresión regular que acomoda el nombre de archivo antepuesto al Bloc de notas en el banner Bloc de notas**
 
@@ -1144,4 +1143,3 @@ Este ejemplo especifica cómo el servicio Generate PDF debe interactuar con el B
     <abortMessage msg="15078"/> 
 </application>
 ```
-

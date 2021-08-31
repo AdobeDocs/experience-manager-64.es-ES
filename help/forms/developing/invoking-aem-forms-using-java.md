@@ -1,8 +1,8 @@
 ---
 title: Invocación de AEM Forms mediante la API de Java
-seo-title: Invocación de AEM Forms mediante la API de Java
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Utilice el protocolo de transporte AEM Forms Java API for RMI para invocación remota, transporte de VM para invocación local, SOAP para invocación remota, autenticación diferente, como nombre de usuario y contraseña, y solicitudes de invocación sincrónicas y asincrónicas.
-seo-description: Utilice el protocolo de transporte AEM Forms Java API for RMI para invocación remota, transporte de VM para invocación local, SOAP para invocación remota, autenticación diferente, como nombre de usuario y contraseña, y solicitudes de invocación sincrónicas y asincrónicas.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c239c05-e221-442a-a748-0c28704ee032
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5385'
 ht-degree: 0%
 
 ---
-
 
 # Invocación de AEM Forms mediante la API de Java {#invoking-aem-forms-using-the-javaapi}
 
@@ -35,13 +34,6 @@ La API de Java admite las siguientes funciones:
 * Distinta autenticación, como el nombre de usuario y la contraseña
 * Solicitudes de invocación sincrónicas y asíncronas
 
-**Sitio web del desarrollador de Adobes**
-
-El sitio web del desarrollador de Adobe contiene los siguientes artículos en los que se analiza la invocación de servicios de AEM Forms mediante la API de Java:
-
-[Uso de servlets de Java para invocar procesos de AEM Forms](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Invocación de la API de AEM Forms Distiller desde Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Consulte también**
 
@@ -290,7 +282,7 @@ La siguiente tabla enumera los archivos JAR que dependen del modo de conexión y
  </tbody>
 </table>
 
-### Invocando escenarios {#invoking-scenarios}
+### Invocación de escenarios {#invoking-scenarios}
 
 La siguiente tabla especifica las situaciones de invocación y enumera los archivos JAR necesarios para invocar AEM Forms correctamente.
 
@@ -628,14 +620,14 @@ El siguiente ejemplo de código muestra cómo utilizar un objeto `com.adobe.idp.
 >
 >Para obtener información detallada sobre la autenticación de un usuario, consulte [Autenticación de usuarios](/help/forms/developing/users.md#authenticating-users).
 
-### Invocando escenarios {#invoking_scenarios-1}
+### Invocación de escenarios {#invoking_scenarios-1}
 
 En esta sección se tratan los siguientes casos de invocación:
 
 * Una aplicación cliente que se ejecuta en su propia máquina virtual Java (JVM) invoca una instancia AEM Forms independiente.
 * Una aplicación cliente que se ejecuta en su propia JVM invoca instancias de AEM Forms agrupadas.
 
-### Aplicación cliente que invoca una instancia independiente de AEM Forms {#client-application-invoking-a-stand-alone-aem-forms-instance}
+### Aplicación de cliente que invoca una instancia de AEM Forms independiente {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
 El diagrama siguiente muestra una aplicación cliente que se ejecuta en su propia JVM e invoca una instancia independiente de AEM Forms.
 
@@ -645,7 +637,7 @@ En este escenario, una aplicación cliente se ejecuta en su propia JVM e invoca 
 >
 >Este escenario es el escenario de invocación en el que se basan todos los inicios rápidos.
 
-### Aplicación cliente que invoca instancias de AEM Forms agrupadas {#client-application-invoking-clustered-aem-forms-instances}
+### Aplicación de cliente que invoca instancias de AEM Forms agrupadas {#client-application-invoking-clustered-aem-forms-instances}
 
 El diagrama siguiente muestra una aplicación cliente que se ejecuta en su propia JVM e invoca instancias de AEM Forms ubicadas en un clúster.
 
@@ -1036,7 +1028,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 1. Obtiene el documento PDF no protegido que se pasa al proceso. Esta acción se basa en la operación `SetValue`. El parámetro de entrada para este proceso es una variable de proceso `document` denominada `inDoc`.
 1. Codifica el documento PDF con una contraseña. Esta acción se basa en la operación `PasswordEncryptPDF`. El documento PDF cifrado con contraseña se devuelve en una variable de proceso denominada `outDoc`.
 
-### Invocar el proceso de corta duración MyApplication/EncryptDocument usando la API de invocación de Java {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
+### Invocar el proceso breve MyApplication/EncryptDocument usando la API de invocación de Java {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
 Invoque el proceso de corta duración `MyApplication/EncryptDocument` utilizando la API de invocación de Java:
 

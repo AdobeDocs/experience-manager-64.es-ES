@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API del servicio de Forms
-seo-title: Inicio rápido de la API del servicio de Forms
+seo-title: Forms Service API Quick Starts
 description: Utilice Quick Starts para la API de servicio de Forms.
-seo-description: Utilice Quick Starts para la API de servicio de Forms.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de la API de servicio de Forms {#forms-service-api-quick-starts}
+# Inicio rápido de la API del servicio de Forms {#forms-service-api-quick-starts}
 
 El servicio Forms incluye los siguientes Quick Starts:
 
@@ -59,7 +58,6 @@ La lógica de aplicación que utiliza la API de servicio de Forms se implementa 
 >
 >Los inicios rápidos ubicados en Programación con v se basan en el servidor de formularios que está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de windows con rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Sugerencia**: El sitio web del Desarrollador de Adobes contiene el siguiente artículo que explica cómo crear una aplicación ASP.NET que invoque el servicio de Forms y procese formularios. Consulte [Creación de aplicaciones ASP.NET de renderización de formularios](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Inicio rápido (modo SOAP): Representación de un formulario PDF interactivo mediante la API de Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -605,7 +603,7 @@ El siguiente ejemplo de código procesa un formulario basado en fragmentos. El n
  }
 ```
 
-## Inicio rápido (modo SOAP): Representación de un formulario habilitado para derechos mediante la API de Java {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
+## Inicio rápido (modo SOAP): Representación de un formulario con derechos activados mediante la API de Java {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
 
 El siguiente ejemplo de código procesa un formulario con derechos activados en un explorador web cliente. Los derechos de uso establecidos en este ejemplo de código permiten al usuario agregar comentarios en el formulario y guardar datos del formulario. (Consulte [Rendering Rights-Enabled Forms](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)).
 
@@ -1383,7 +1381,7 @@ El siguiente ejemplo de código gestiona un formulario enviado como XML. El valo
 >
 >Cuando se utiliza un objeto `com.adobe.idp.Document` y un `org.w3c.dom.Document` en la misma aplicación, se califica completamente `org.w3c.dom.Document`.
 
-## Inicio rápido (modo SOAP): Gestión de PDF forms enviados como PDF utilizando la API de Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Inicio rápido (modo SOAP): Gestión de PDF forms enviados como PDF mediante la API de Java {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 El siguiente ejemplo de código gestiona un formulario que se envía como datos PDF. El valor de tipo de contenido pasado al método `processFormSubmission` es `CONTENT_TYPE=application/pdf`. El formulario enviado se guarda como un archivo PDF denominado *tempPDF.pdf*. Además, como el formulario se envía como PDF, los archivos adjuntos se pueden recuperar. Los archivos adjuntos se guardan como archivos JPEG. (Consulte [Gestión de Forms enviado](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
 
@@ -2770,4 +2768,3 @@ El siguiente inicio rápido de Java recupera el archivo Loan.xdp de Content Serv
  } 
  
 ```
-

@@ -1,24 +1,23 @@
 ---
 title: Añadir acción/botón personalizado en la IU Crear correspondencia
-seo-title: Añadir acción/botón personalizado en la IU Crear correspondencia
+seo-title: Add custom action/button in Create Correspondence UI
 description: Aprenda a añadir acción/botón personalizado en la interfaz de usuario Crear correspondencia
-seo-description: Aprenda a añadir acción/botón personalizado en la interfaz de usuario Crear correspondencia
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
 
-
-# Agregar acción/botón personalizado en la IU Crear correspondencia {#add-custom-action-button-in-create-correspondence-ui}
+# Añadir acción/botón personalizado en la IU Crear correspondencia {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Información general {#overview}
 
@@ -33,7 +32,7 @@ Para completar esta situación, necesita lo siguiente:
 * Conocimiento de CRX y JavaScript
 * Servidor de LiveCycle
 
-## Escenario: Cree el botón en la interfaz de usuario Crear correspondencia para enviar una carta para su revisión {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Escenario: Cree el botón en la interfaz de usuario Crear correspondencia para enviar una carta a revisión {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 Añadir un botón con una acción (enviar carta para revisión) a la interfaz de usuario Crear correspondencia incluye:
 
@@ -41,7 +40,7 @@ Añadir un botón con una acción (enviar carta para revisión) a la interfaz de
 1. Adición de la gestión de acciones al botón
 1. Adición del proceso de LiveCycle para habilitar la gestión de la acción
 
-### Agregue el botón a la interfaz de usuario Crear correspondencia {#add-the-button-to-the-create-correspondence-user-interface}
+### Añadir el botón a la interfaz de usuario Crear correspondencia {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
 1. En la carpeta de aplicaciones, cree una carpeta denominada `defaultApp` con una ruta/estructura similar a la carpeta defaultApp (ubicada en la carpeta config). Para crear la carpeta, siga estos pasos:
@@ -323,7 +322,7 @@ La gestión de la acción/botón al hacer clic en la acción/botón incluye lóg
       '</div>';
       ```
 
-### Agregue el proceso de LiveCycle para habilitar la acción <span class="acrolinxCursorMarker"></span>administración {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Añada el proceso de LiveCycle para habilitar el manejo de la acción <span class="acrolinxCursorMarker"></span> {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 En esta situación, habilite los siguientes componentes, que forman parte del archivo components.zip adjunto:
 
@@ -392,7 +391,7 @@ Mencione en el servidor de AEM los servicios de LiveCycle a los que desea accede
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-#### Configurar el servicio de correo electrónico {#configure-the-email-service}
+#### Configuración del servicio de correo electrónico {#configure-the-email-service}
 
 En esta situación, para que la Gestión de Correspondencia pueda enviar un correo electrónico, configure el servicio de correo electrónico en el servidor de LiveCycle.
 
@@ -406,7 +405,7 @@ En esta situación, para que la Gestión de Correspondencia pueda enviar un corr
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-#### Configurar el servicio DSC {#configure-the-dsc-service}
+#### Configuración del servicio DSC {#configure-the-dsc-service}
 
 Para utilizar la API de gestión de correspondencia, descargue el `DSCSample.jar` (adjunto en este documento como parte de `components.zip`) y cárguelo en el servidor de LiveCycle. Una vez cargado el archivo `DSCSample.jar` en el servidor de LiveCycle, el servidor de AEM utiliza el archivo `DSCSample.jar` para acceder a la API renderLetter.
 
@@ -425,11 +424,11 @@ Para obtener más información, consulte [Conexión de AEM Forms con el LiveCycl
 
    >[!NOTE]
    >
-   >Cada vez que realice cambios en el servidor, reinicie el servidor de LiveCycle. Para obtener información sobre cómo crear su propio componente de LiveCycle, consulte [Ampliación del software de LiveCycle ES a través del desarrollo personalizado de DSC](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Cada vez que realice cambios en el servidor, reinicie el servidor.
 
    El archivo `DSCSample.jar` utiliza la API `renderLetter`. Para obtener más información sobre la API renderLetter, consulte [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-#### Importar DSC a LiveCycle {#import-dsc-to-livecyle}
+#### Importar DSC en AEM Forms en JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar` utiliza la  `renderLetter` API para procesar la carta como bytes PDF de los datos XML que C proporciona como entrada. Para obtener más información sobre renderLetter y otras API, consulte [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
@@ -441,7 +440,7 @@ Para obtener más información, consulte [Conexión de AEM Forms con el LiveCycl
 1. Seleccione el archivo `DSCSample.jar` a través del explorador de archivos y haga clic en **[!UICONTROL Abrir]**.
 1. Haga clic con el botón derecho en **[!UICONTROL RenderWrapper]** y seleccione **[!UICONTROL Start Component]**. Si se inicia el componente, aparece una flecha verde junto al nombre del componente.
 
-## Enviar carta para revisión {#send-letter-for-review}
+## Enviar carta de revisión {#send-letter-for-review}
 
 Después de configurar la acción y el botón para enviar la carta para su revisión:
 

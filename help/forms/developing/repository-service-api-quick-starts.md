@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API del servicio de repositorio
-seo-title: Inicio rápido de la API del servicio de repositorio
+seo-title: Repository Service API Quick Starts
 description: Utilice el servicio Repositorio de AEM Forms para crear una carpeta, escribir un recurso, enumerar recursos, leer un recurso, actualizar un recurso, buscar recursos, crear relaciones entre recursos, bloquear un recurso, administrar listas de control de acceso y eliminar un recurso.
-seo-description: Utilice el servicio Repositorio de AEM Forms para crear una carpeta, escribir un recurso, enumerar recursos, leer un recurso, actualizar un recurso, buscar recursos, crear relaciones entre recursos, bloquear un recurso, administrar listas de control de acceso y eliminar un recurso.
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 859a2b57-df90-4030-9061-c454d07cb753
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de API de servicio de repositorio {#repository-service-api-quick-starts}
+# Inicio rápido de la API del servicio de repositorio {#repository-service-api-quick-starts}
 
 Los siguientes Inicio rápido están disponibles para el servicio Repositorio de AEM Forms.
 
@@ -61,7 +60,7 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación utilizando Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño de procesos](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html).
+>Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación utilizando Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño de procesos](http://www.adobe.com/go/learn_aemforms_workbench_64).
 
 ## Inicio rápido (modo SOAP): Creación de una carpeta mediante la API de Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
@@ -297,7 +296,7 @@ El siguiente ejemplo de código Java escribe un recurso llamado *loan.xdp* en el
  
 ```
 
-## Inicio rápido (modo SOAP): Listado de recursos utilizando la API de Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
+## Inicio rápido (modo SOAP): Listado de recursos mediante la API de Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
 El siguiente ejemplo de código Java enumera los recursos ubicados en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Listing Resources](/help/forms/developing/aem-forms-repository.md#listing-resources)).
 
@@ -1214,4 +1213,3 @@ El siguiente ejemplo de código Java elimina Loan.xdp de `Applications/FormsAppl
   
  
 ```
-

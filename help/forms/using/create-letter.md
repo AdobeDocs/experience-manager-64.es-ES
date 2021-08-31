@@ -1,25 +1,24 @@
 ---
 title: Crear carta
-seo-title: Crear carta
+seo-title: Create Letter
 description: 'En este tema se explican los pasos para crear una carta, agregar módulos de datos y archivos adjuntos y previsualizarla en Gestión de Correspondencia. '
-seo-description: 'En este tema se explican los pasos para crear una carta, agregar módulos de datos y archivos adjuntos y previsualizarla en Gestión de Correspondencia. '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 2%
 
 ---
 
-
 # Crear carta {#create-letter}
 
-## Flujo de trabajo de Gestión de Correspondencia {#correspondence-management-workflow}
+## Flujo de trabajo de Gestión de correspondencia {#correspondence-management-workflow}
 
 El flujo de trabajo de Gestión de correspondencia consta de cuatro fases:
 
@@ -28,7 +27,7 @@ El flujo de trabajo de Gestión de correspondencia consta de cuatro fases:
 1. Creación de cartas
 1. Postprocesamiento
 
-### Creación de plantilla {#template-creation}
+### Creación de plantillas {#template-creation}
 
 El siguiente gráfico muestra un flujo de trabajo típico para crear una plantilla de correspondencia.
 
@@ -46,7 +45,7 @@ En este flujo de trabajo:
 
 1. El autor obtiene una vista previa de la carta y la envía para su procesamiento posterior. Más información sobre [post processing](/help/forms/using/submit-letter-topostprocess.md).
 
-#### Uso de plantillas de carta proporcionadas con la Administración de correspondencia {#using-letter-templates-provided-with-correspondence-management}
+#### Uso de plantillas de carta proporcionadas con la gestión de correspondencia {#using-letter-templates-provided-with-correspondence-management}
 
 En lugar de crear una plantilla de diseño desde cero, puede elegir modificar y reutilizar las plantillas que proporciona la Gestión de Correspondencia. Puede utilizar designer para modificar rápidamente la marca y los campos de datos y contenido de las plantillas a fin de adaptarlos a las necesidades de su organización. Para obtener más información sobre las plantillas de Gestión de Correspondencia, consulte [Plantillas de carta de referencia](/help/forms/using/reference-cm-layout-templates.md).
 
@@ -72,17 +71,17 @@ Las condiciones permiten definir qué contenido se incluye en el momento de la c
 
 Un fragmento de diseño es un diseño que se puede utilizar en una o varias letras. Un fragmento de diseño se utiliza para crear patrones repetibles, especialmente tablas dinámicas. La presentación puede contener campos de formulario típicos, como &quot;Dirección&quot; y &quot;Número de referencia&quot;. También contiene subformularios vacíos que denotan áreas de destino. Los diseños (XDP) se crean en Designer y luego se [cargan en Forms y Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
-### Creación de letras {#letter-creation}
+### Creación de cartas {#letter-creation}
 
 Existen dos maneras de generar la correspondencia que se envía a sus clientes: impulsado por el usuario y por el sistema.
 
-#### {#user-driven} impulsado por el usuario
+#### Orientado por el usuario {#user-driven}
 
 Los empleados orientados al cliente, como los reguladores de reclamaciones o los trabajadores de casos, pueden crear correspondencia personalizada. Con una interfaz sencilla e intuitiva de cumplimentación de cartas, los usuarios empresariales pueden añadir texto opcional a la correspondencia, personalizar el contenido editable y previsualizar la correspondencia en tiempo real. Luego pueden enviar la correspondencia personalizada a un proceso back-end.
 
 ![Correspondencia personalizada, dirigida por el usuario](assets/02.png)
 
-#### Sistema controlado {#system-driven}
+#### Controlada por el sistema {#system-driven}
 
 La generación de correspondencia está automatizada, impulsada por déclencheur de eventos. Por ejemplo, un aviso recordatorio enviado a una ciudadana pidiéndole que registre impuestos por adelantado, se genera combinando la plantilla predefinida con datos ciudadanos. La carta final puede enviarse por correo electrónico, imprimirse, enviarse por fax o archivarse.
 
@@ -98,13 +97,13 @@ La correspondencia final se puede enviar a un proceso back-end para el posproces
 1. Se convierte en un documento PDF en el que se pueden buscar y que contiene todos los metadatos necesarios para fines de archivo y auditoría.
 1. Se incluye en un Portfolio PDF que incluye más documentos, como material de marketing. El Portfolio PDF se puede enviar como correspondencia final.
 
-### Arquitectura de la solución de administración de correspondencia {#correspondence-management-solution-architecture}
+### Arquitectura de la solución de Gestión de Correspondencia {#correspondence-management-solution-architecture}
 
 El siguiente gráfico proporciona información general sobre una arquitectura de ejemplo de la solución Letras.
 
 ![Arquitectura de la solución de letras](assets/us_cm_architecture_es3.png)
 
-## Desestructurar una letra {#deconstructing-a-letter}
+## Desestructuración de una carta {#deconstructing-a-letter}
 
 Este documento de Aviso de Cancelación es un ejemplo de correspondencia típica:
 
@@ -145,7 +144,7 @@ Este documento de Aviso de Cancelación es un ejemplo de correspondencia típica
  </tbody> 
 </table>
 
-## Analice una carta antes de crearla {#analyze-a-letter-before-you-construct-it}
+## Analizar una carta antes de crearla {#analyze-a-letter-before-you-construct-it}
 
 Analice cada carta para descubrir las distintas partes que la componen. El especialista en aplicaciones analiza las correspondencias que se generan.
 
@@ -232,15 +231,15 @@ Primero necesita lo siguiente para crear una correspondencia:
 * [Paquete de compatibilidad](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Instale el paquete de compatibilidad para ver la opción **Letters** en la página **Forms**.
 
 * La letra XDP ([layout](/help/forms/using/document-fragments.md)).
-* Otros XDP ([fragmentos de diseño](/help/forms/using/document-fragments.md)) que forman partes de la carta. Los XDP\Diseños se crean en [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Otros XDP ([fragmentos de diseño](/help/forms/using/document-fragments.md)) que forman partes de la carta. Los XDP\Diseños se crean en [Designer](http://www.adobe.com/go/learn_aemforms_designer_64).
 
 * El [diccionario de datos](/help/forms/using/data-dictionary.md) correspondiente (opcional).
 * Los [módulos de datos](/help/forms/using/document-fragments.md) que desea utilizar en la correspondencia.
 * [Los ](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) datos de prueba son el archivo XML con los datos de prueba incorporados. Los datos de prueba son necesarios si utiliza un diccionario de datos.
 
-## Crear una plantilla de carta {#create-a-letter-template}
+## Creación de una plantilla de carta {#create-a-letter-template}
 
-### Seleccione un diseño e introduzca las propiedades de la letra {#select-a-layout-and-enter-the-letter-properties}
+### Seleccione un diseño e introduzca las propiedades de la carta {#select-a-layout-and-enter-the-letter-properties}
 
 1. Seleccione **Forms** > **Letras**.
 
@@ -342,7 +341,7 @@ Cuando después de crear una correspondencia, pulse Abrir, la Gestión de corres
 
 1. Después de especificar el vínculo, pulse **Siguiente**. Gestión de Correspondencia muestra la pantalla Anexos.
 
-### Configurar los archivos adjuntos {#set-up-the-attachments}
+### Configuración de los archivos adjuntos {#set-up-the-attachments}
 
 1. Seleccione **Agregar recurso**.
 1. En la pantalla Seleccionar recurso, pulse los recursos que desea adjuntar a la carta y pulse **Listo**. Debe tener los recursos cargados primero en Assets. Se recomienda adjuntar sólo documentos PDF y Microsoft Office, pero también adjuntar imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Carga de recursos](/help/assets/managing-assets-touch-ui.md).
@@ -471,7 +470,7 @@ Los valores siguientes de la tabla
  </tbody> 
 </table>
 
-## Crear copia de una plantilla de carta {#createcopylettertemplate}
+## Creación de una copia de una plantilla de carta {#createcopylettertemplate}
 
 Puede utilizar una plantilla de carta existente para crear rápidamente una plantilla de carta con propiedades, contenido y recursos heredados similares, como fragmentos de documento y diccionario de datos. Para ello, copie y pegue una carta.
 
@@ -480,4 +479,3 @@ Puede utilizar una plantilla de carta existente para crear rápidamente una plan
 1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copiando y pegando las letras en el mismo lugar, el sistema asigna automáticamente nombres y títulos a las nuevas copias de las letras, pero puede editar los títulos y nombres de las letras.
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia de la carta.
 1. Pulse Pegar. Se crea la copia de la carta. Ahora puede realizar los cambios necesarios en la carta recién creada.
-

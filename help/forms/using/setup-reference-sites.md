@@ -1,22 +1,22 @@
 ---
 title: Configuración de sitios de referencia de AEM Forms
-seo-title: Configuración de sitios de referencia de AEM Forms
+seo-title: Set up and configure AEM Forms reference sites
 description: Los sitios de referencia de AEM Forms muestran cómo puede utilizar AEM Forms para implementar un flujo de trabajo completo en una organización.
-seo-description: Los sitios de referencia de AEM Forms muestran cómo puede utilizar AEM Forms para implementar un flujo de trabajo completo en una organización.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
 
-# Configuración de los sitios de referencia de AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+# Configuración de sitios de referencia de AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms proporciona implementación de sitios de referencia para demostrar cómo AEM Forms ayuda a las organizaciones gubernamentales y del sector de servicios financieros a transformar sus complejas transacciones en experiencias digitales simples y atractivas en cualquier lugar, en cualquier momento y en cualquier dispositivo.
 
@@ -40,7 +40,7 @@ Los sitios de referencia proporcionan recursos reutilizables que puede utilizar 
 
 * Integración con Adobe Sign para firmar y enviar formularios adaptables de forma segura.
 
-## Requisitos previos y pasos para configurar los sitios de referencia {#prerequisites-and-steps-to-set-up-reference-sites}
+## Requisitos previos y pasos para configurar sitios de referencia {#prerequisites-and-steps-to-set-up-reference-sites}
 
 Antes de configurar el sitio de referencia, asegúrese de que dispone de lo siguiente:
 
@@ -153,7 +153,7 @@ La configuración SSL es necesaria para comunicarse con los servidores de Adobe 
 
 ## Configurar la configuración del externalizador Day CQ Link {#externalizer}
 
-En AEM, **Externalizer** es un servicio OSGI que le permite transformar mediante programación una ruta de recursos (p. ej. /path/to/my/page) en una dirección URL externa y absoluta (por ejemplo, https://www.mycompany.com/path/to/my/page) prefiriendo la ruta con un DNS preconfigurado. Consulte [Externalización de direcciones URL](/help/sites-developing/externalizer.md).
+En AEM, **Externalizer** es un servicio OSGI que le permite transformar mediante programación una ruta de recursos (por ejemplo, /path/to/my/page) en una dirección URL externa y absoluta (por ejemplo, https://www.mycompany.com/path/to/my/page) prefiriendo la ruta con un DNS preconfigurado. Consulte [Externalización de direcciones URL](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -289,7 +289,7 @@ Haga lo siguiente en las instancias de autor y publicación:
 
 1. Toque **[!UICONTROL Guardar]**.
 
-## Configure el servicio de nube Adobe Sign del sitio de referencia {#sign-service}
+## Configuración del sitio de referencia Adobe Sign cloud service {#sign-service}
 
 Haga lo siguiente en las instancias de autor y publicación:
 
@@ -328,7 +328,7 @@ Puede integrar AEM Forms con Adobe Analytics y Adobe Target. Aunque Adobe Analyt
 
 Haga lo siguiente para configurar Adobe Analytics y Adobe Target en AEM Forms.
 
-### Configurar Adobe Analytics {#configure-adobe-analytics}
+### Configuración de Adobe Analytics {#configure-adobe-analytics}
 
 La integración de AEM Forms con Adobe Analytics le permite supervisar y analizar cómo interactúan sus clientes con sus formularios y documentos. Le ayuda a identificar y corregir áreas problemáticas y a aumentar la tasa de conversión.
 

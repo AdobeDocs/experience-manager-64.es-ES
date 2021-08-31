@@ -1,21 +1,20 @@
 ---
 title: Configuración de OData de Microsoft Dynamics
-seo-title: Configuración de ODtata de Microsoft Dynamics
+seo-title: Microsoft Dynamics ODtata configuration
 description: Aproveche, integre y trabaje con los servicios de Microsoft Dynamics en línea y locales a través del modelo de datos de formulario.
-seo-description: Aprenda a aprovechar la integración y el trabajo con los servicios de Microsoft Dynamics en línea y locales a través del modelo de datos de formulario.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de OData de Microsoft Dynamics {#microsoft-dynamics-odata-configuration}
 
@@ -36,7 +35,7 @@ Cuando se instala el paquete, las siguientes entidades y servicios están dispon
 * Cloud Service de MS Dynamics OData (servicio OData)
 * Modelo de datos de formulario con entidades y servicios preconfigurados de Microsoft Dynamics.
 
-El Cloud Service OData y el modelo de datos de formulario con entidades y servicios preconfigurados de Microsoft Dynamics solo están disponibles en la instancia de AEM Forms si el modo de ejecución de la instancia de AEM está establecido como `samplecontent`(predeterminado). Para obtener más información sobre la configuración de modos de ejecución para una instancia de AEM, consulte [Modos de ejecución](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+El Cloud Service OData y el modelo de datos de formulario con entidades y servicios preconfigurados de Microsoft Dynamics solo están disponibles en la instancia de AEM Forms si el modo de ejecución de la instancia de AEM está establecido como `samplecontent`(predeterminado). Para obtener más información sobre la configuración de modos de ejecución para una instancia de AEM, consulte [Modos de ejecución](/help/sites-deploying/configure-runmodes.md).
 
 ## Requisitos previos {#prerequisites}
 
@@ -66,7 +65,7 @@ Haga lo siguiente para establecer la URL de respuesta para la aplicación regist
 
 1. Guarde la configuración.
 
-## Configurar Microsoft Dynamics para IFD {#configure-microsoft-dynamics-for-ifd}
+## Configuración de Microsoft Dynamics para IFD {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics utiliza la autenticación basada en reclamaciones para proporcionar acceso a los datos del servidor de Microsoft Dynamics CRM a usuarios externos. Para habilitarlo, haga lo siguiente para configurar Microsoft Dynamics para la implementación de cara a Internet (IFD) y para configurar las solicitudes.
 

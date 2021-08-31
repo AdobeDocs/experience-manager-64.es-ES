@@ -1,8 +1,8 @@
 ---
 title: Representar Forms por valor
-seo-title: Representar Forms por valor
+seo-title: Rendering Forms By Value
 description: Utilice la API de Forms (Java) para procesar un formulario por valor mediante la API de Java y la API de servicio web.
-seo-description: Utilice la API de Forms (Java) para procesar un formulario por valor mediante la API de Java y la API de servicio web.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,16 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 50c34781-45e3-4255-a997-44f694527c92
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
 
-
-# Renderización de Forms por valor {#rendering-forms-by-value}
+# Representar Forms por valor {#rendering-forms-by-value}
 
 Normalmente, un diseño de formulario creado en Designer se pasa por referencia al servicio Forms. Los diseños de formulario pueden ser grandes y, como resultado, es más eficaz pasarlos por referencia para evitar tener que calcular los bytes de diseño de formulario por valor. El servicio Forms también puede almacenar en caché el diseño de formulario para que, cuando se almacena en caché, no tenga que leer continuamente el diseño de formulario.
 
@@ -78,7 +77,7 @@ Para procesar un formulario por valor, pase una instancia `com.adobe.idp.Documen
 
 >[!NOTE]
 >
->Si desea mostrar datos dentro del formulario, los datos deben especificarse dentro del elemento `xfa:datasets` . Para obtener información sobre la arquitectura XFA, vaya a [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Si desea mostrar datos dentro del formulario, los datos deben especificarse dentro del elemento `xfa:datasets` . Para obtener información sobre la arquitectura XFA, vaya a [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Escribir el flujo de datos del formulario en el explorador web del cliente**
 

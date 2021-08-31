@@ -1,23 +1,22 @@
 ---
 title: 'Prácticas recomendadas para usar formularios adaptables '
-seo-title: 'Prácticas recomendadas para usar formularios adaptables '
+seo-title: Best practices for working with adaptive forms
 description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
-seo-description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
 
-
-# Prácticas recomendadas para usar formularios adaptables{#best-practices-for-working-with-adaptive-forms} 
+# Prácticas recomendadas para usar formularios adaptables  {#best-practices-for-working-with-adaptive-forms}
 
 ## Información general {#overview}
 
@@ -192,7 +191,7 @@ Puede aprovechar la experiencia de varios signos de Adobe Sign en los formulario
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el envío.
 * Configure la experiencia de firma secuencial o paralela, según corresponda.
 
-### Generación del documento de registro {#generating-document-of-record}
+### Generación de documento de registro {#generating-document-of-record}
 
 Un documento de registro (DoR) es una versión PDF aplanada de un formulario adaptable que se puede imprimir, firmar o archivar.
 
@@ -251,7 +250,7 @@ Algunas prácticas recomendadas al localizar formularios adaptables son las sigu
 
 * Actualmente, AEM Forms admite la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR). Sin embargo, se puede agregar compatibilidad con nuevas configuraciones regionales para formularios adaptables en tiempo de ejecución. Para obtener más información, consulte [Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables](/help/forms/using/supporting-new-language-localization.md).
 
-## Preparar el proyecto de formularios para producción {#prepare-forms-project-for-production}
+## Preparación de un proyecto de formularios para producción {#prepare-forms-project-for-production}
 
 ### Adición de un servidor de procesamiento de formularios {#adding-forms-processing-server}
 
@@ -274,7 +273,7 @@ A menudo, debe mover los proyectos de AEM de un entorno a otro. Algunas de las c
 
 Algunas prácticas recomendadas para configurar AEM para mejorar el rendimiento general son las siguientes:
 
-* Habilite la compresión de la biblioteca de cliente HTML para JavaScript y CSS desde la consola Felix. Consulte [Clientlibs explicados por ejemplo](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Habilite la compresión de la biblioteca de cliente HTML para JavaScript y CSS desde la consola Felix.
 * Almacene en caché todas las bibliotecas de cliente en `/etc.clientlibs/fd` y cualquier biblioteca de cliente personalizada adicional en AEM Dispatcher para aumentar la capacidad de respuesta y seguridad de los formularios publicados. Para obtener más información, consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * No almacene en caché las rutas `/content/forms/af/` y `/content/dam/formsanddocuments/*`. para obtener información detallada sobre la configuración del almacenamiento en caché de formularios adaptables, consulte [Almacenamiento en caché de formularios adaptables](/help/forms/using/configure-adaptive-forms-cache.md).
@@ -301,10 +300,9 @@ En un entorno de producción, se recomienda no almacenar los datos de formulario
 
    También puede escribir una acción de envío personalizada que almacene datos de formulario y datos adjuntos en un almacenamiento seguro. Consulte [Escritura de acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md) para obtener más información.
 
-### Administración de información de identificación personal {#handling-personally-identifiable-information}
+### Gestión de información personal {#handling-personally-identifiable-information}
 
 Uno de los desafíos clave para las organizaciones es cómo manejar los datos de identificación personal (PII). A continuación se indican algunas prácticas recomendadas que le ayudarán a gestionar estos datos:
 
 * Utilice un almacenamiento externo seguro como la base de datos para almacenar datos de formularios en borrador y enviados. Consulte [Configuración del almacenamiento externo para borradores y datos de formularios enviados](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilice el componente de formulario Términos y condiciones para obtener el consentimiento explícito del usuario antes de activar el guardado automático. En este caso, habilite el guardado automático solo cuando el usuario acepte las condiciones del componente Términos y condiciones .
-

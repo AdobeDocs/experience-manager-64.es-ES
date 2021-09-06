@@ -1,8 +1,8 @@
 ---
 title: Trabajar con fragmentos de contenido
-seo-title: Trabajar con fragmentos de contenido
+seo-title: Working with Content Fragments
 description: Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-seo-description: Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 7%
 
 ---
@@ -91,8 +91,7 @@ Junto con las capacidades de exportación de JSON de AEM componentes principales
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
 
 >
->
-Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+>Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y los fragmentos de experiencia en AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
@@ -290,7 +289,7 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
    * Define las propiedades básicas de un fragmento simple (título, número de elementos de texto, definiciones de etiquetas).
    * Las definiciones de plantilla requieren un título y un elemento de texto; todo lo demás es opcional. La plantilla define un ámbito mínimo del fragmento y el contenido predeterminado, si corresponde. Posteriormente, los autores pueden ampliar un fragmento más allá de lo definido en la plantilla.
 
-* **Componente de fragmento de contenido**
+* **Componente Fragmento de contenido**
 
    * Instrumental para enviar el fragmento en formato HTML o JSON.
    * Necesario para [hacer referencia al fragmento en una página](/help/sites-authoring/content-fragments.md).

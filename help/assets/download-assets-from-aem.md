@@ -2,12 +2,12 @@
 title: Descargue recursos digitales de [!DNL Adobe Experience Manager].
 description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
-feature: Administración de recursos,Distribución de recursos
+feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '807'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
 
 El `Asset Download Servlet` se puede deshabilitar en instancias de publicación [!DNL Experience Manager] actualizando la configuración de Dispatcher para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
 
-1. Para bloquear las solicitudes de descarga de recursos a través de una configuración de Dispatcher, edite la configuración `dispatcher.any` y añada una regla a la sección [filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear las solicitudes de descarga de recursos a través de una configuración de Dispatcher, edite la configuración `dispatcher.any` y añada una regla a la sección [filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Para deshabilitar el componente OSGi en una instancia de publicación, acceda a la consola OSGi en `http://[aem_server]:[port]/system/console/components`. Busque `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` y haga clic en **[!UICONTROL Disable]**.
 

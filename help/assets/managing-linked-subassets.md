@@ -2,12 +2,12 @@
 title: Administre recursos compuestos y genere subrecursos.
 description: Obtenga información sobre cómo crear referencias a AEM recursos desde archivos de InDesign, Adobe Illustrator y Photoshop. Aprenda también a utilizar la función Visualizador de páginas para ver páginas individuales de archivos de varias páginas, incluidos archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
-feature: Administración de activos
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Para el InDesign, puede extraer páginas mediante el servidor de InDesign. Si la
 
 Las siguientes opciones están disponibles en la barra de herramientas, en el carril izquierdo y en los controles Visualizador de páginas :
 
-* **[!UICONTROL Acciones de escritorio]** para abrir o mostrar un subrecurso específico mediante AEM aplicación de escritorio. Consulte cómo [configurar acciones de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) si utiliza AEM aplicación de escritorio.
+* **[!UICONTROL Acciones de escritorio]** para abrir o mostrar un subrecurso específico mediante AEM aplicación de escritorio. Consulte cómo [configurar acciones de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) si utiliza AEM aplicación de escritorio.
 
 * **** La opción Propiedades abre la   página Propiedades del subrecurso específico.
 

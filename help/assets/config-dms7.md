@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: Configuración,Modo Scene7
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Consulte [Instalación del paquete de características 18912 para la migración 
 
 ## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
-Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) en la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
+Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) en la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 
 >[!NOTE]
 >
->Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]**.
+>Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de la imagen base]**.
 
 * **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre/extensión de recurso base]** : requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo,  `chair.jpg` reemplace  `chair.jpg` y no  `chair.tif`). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
 * **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** : esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
@@ -546,7 +546,7 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
 **Para actualizar la conexión de carga de Scene7:**
 
-1. Ir a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el campo [!UICONTROL Number of Connections] o en el campo [!UICONTROL Active job timeout], cambie el número como desee.
 
    La configuración **[!UICONTROL Number of Connections]** controla el número máximo de conexiones HTTP permitidas para el Experience Manager en la carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.

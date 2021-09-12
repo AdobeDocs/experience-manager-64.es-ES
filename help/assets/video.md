@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: Vídeo
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 >* Consulte [Configuración de Dynamic Media - Modo Scene7](config-dms7.md) y [Solución de problemas de Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
 
 >
-
 
 
 1. **Cargue los** vídeos de Dynamic Media haciendo lo siguiente:
@@ -73,7 +72,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
          [Visualización de representaciones de vídeo](video-renditions.md)
 
-         [Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
       * [Publicación de recursos](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, campos de metadatos personalizados:
 
-         [Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Administración de metadatos de recursos digitales](metadata.md)
       * [Esquemas de metadatos](metadata-schemas.md)
@@ -163,7 +162,7 @@ Puede encontrar los dispositivos de Windows compatibles con este formato de víd
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte también [Acerca de los visores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) en la Guía de referencia de visores de Dynamic Media de Adobe.
+Consulte también [Acerca de los visores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) en la Guía de referencia de visores de Dynamic Media de Adobe.
 
 ## Práctica recomendada: Uso del visor de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 

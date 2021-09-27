@@ -2,12 +2,12 @@
 title: Importación y exportación de metadatos masivos
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ Para importar metadatos de forma masiva, siga estos pasos:
    | [!UICONTROL Tamaño del lote] | Número de recursos de un lote para los que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
    | [!UICONTROL Separador de campos] | El valor predeterminado es `,`, una coma. Puede especificar cualquier otro carácter. |
    | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `|` - una barra vertical. |
-   | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en true y la configuración predeterminada de Launch está en vigor para `DAM Metadata WriteBack Workflow` (que escribe metadatos en los datos de XMP binarios). La activación de flujos de trabajo de lanzamiento afecta al rendimiento del sistema. |
+   | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en true y la configuración predeterminada está en vigor para `DAM Metadata WriteBack Workflow` (que escribe metadatos en los datos de XMP binarios). La activación de los flujos de trabajo afecta al rendimiento del sistema. |
    | [!UICONTROL Nombre de columna de ruta de activos] | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Toque o haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.

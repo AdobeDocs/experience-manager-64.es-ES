@@ -1,9 +1,9 @@
 ---
 title: Lista de comprobación de seguridad
-seo-title: Lista de comprobación de seguridad
+seo-title: Security Checklist
 description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
 feature: Security
-seo-description: Obtenga información sobre las distintas consideraciones de seguridad al configurar e implementar AEM.
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: b921cf3a1739b031eea5c319953d20a024515544
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 0%
+source-wordcount: '2830'
+ht-degree: 3%
 
 ---
 
@@ -33,11 +32,11 @@ Esta sección trata de los distintos pasos que debe realizar para garantizar que
 
 ## Medidas de seguridad principales {#main-security-measures}
 
-### Ejecutar AEM en modo Producción lista {#run-aem-in-production-ready-mode}
+### Ejecutar AEM en modo listo para producción {#run-aem-in-production-ready-mode}
 
 Para obtener más información, consulte [Ejecución de AEM en modo listo para la producción](/help/sites-administering/production-ready.md).
 
-### Habilitar HTTPS para la seguridad de capa de transporte {#enable-https-for-transport-layer-security}
+### Habilite HTTPS para la seguridad de la capa de transporte {#enable-https-for-transport-layer-security}
 
 La activación de la capa de transporte HTTPS en las instancias de autor y publicación es obligatoria para tener una instancia segura.
 
@@ -100,7 +99,7 @@ Para ello:
 
 1. Haga clic en **Guardar**.
 
-### Implementar el controlador de error personalizado {#implement-custom-error-handler}
+### Implementar el controlador de errores personalizado {#implement-custom-error-handler}
 
 Adobe recomienda definir las páginas de tratamiento de errores personalizadas, especialmente para los códigos de respuesta HTTP 404 y 500 para evitar la divulgación de información.
 
@@ -116,7 +115,7 @@ AEM Dispatcher es una parte fundamental de su infraestructura. Adobe recomienda 
 >
 >Con Dispatcher debe desactivar el selector &quot;.form&quot;.
 
-## Pasos de verificación {#verification-steps}
+## Pasos de la verificación {#verification-steps}
 
 ### Configuración de usuarios de replicación y transporte {#configure-replication-and-transport-users}
 
@@ -136,7 +135,7 @@ AEM 6 presenta el nuevo Tablero de operaciones, destinado a ayudar a los operado
 
 El panel también incluye una colección de comprobaciones de estado de seguridad. Se recomienda comprobar el estado de todas las comprobaciones de estado de seguridad antes de poner en marcha la instancia de producción. Para obtener más información, consulte la [Documentación del panel de operaciones](/help/sites-administering/operations-dashboard.md).
 
-### Compruebe si el contenido de ejemplo está presente {#check-if-example-content-is-present}
+### Comprobar si el contenido de ejemplo está presente {#check-if-example-content-is-present}
 
 Todos los usuarios y el contenido de ejemplo (por ejemplo, el proyecto de Geometrixx y sus componentes) deben desinstalarse y eliminarse completamente en un sistema productivo antes de que sea accesible al público.
 
@@ -160,11 +159,11 @@ Este paquete OSGi debe desinstalarse tanto en sistemas productivos de creación 
 
 ### Protect contra falsificación de solicitudes entre sitios {#protect-against-cross-site-request-forgery}
 
-#### El marco de protección del CSRF {#the-csrf-protection-framework}
+#### Marco de protección del CSRF {#the-csrf-protection-framework}
 
 AEM 6.1 se envía con un mecanismo que ayuda a protegerse contra los ataques de falsificación de solicitudes entre sitios, llamados **CSRF Protection Framework**. Para obtener más información sobre cómo utilizarla, consulte la [documentación](/help/sites-developing/csrf-protection.md).
 
-#### El filtro de referente de Sling {#the-sling-referrer-filter}
+#### Filtro de referente de Sling {#the-sling-referrer-filter}
 
 Para solucionar problemas de seguridad conocidos con la falsificación de solicitudes entre sitios (CSRF) en CRX WebDAV y Apache Sling, debe añadir configuraciones para el filtro Referente para utilizarlo.
 
@@ -207,7 +206,7 @@ Para configurar el servicio de filtro de referente:
 
 1. Haga clic en **Guardar** para guardar los cambios.
 
-### Configuración OSGI {#osgi-settings}
+### Configuración de OSGI {#osgi-settings}
 
 Algunos ajustes de OSGI se establecen de forma predeterminada para permitir una depuración más sencilla de la aplicación. Es necesario cambiar estas instancias en las instancias productivas de publicación y creación para evitar fugas de información interna en el público.
 
@@ -247,7 +246,7 @@ Al trabajar con AEM hay varios métodos para administrar los ajustes de configur
 
 ## Lecturas adicionales {#further-readings}
 
-### Mitigar los ataques de denegación de servicio (DoS) {#mitigate-denial-of-service-dos-attacks}
+### Mitigar ataques de denegación de servicio (DoS) {#mitigate-denial-of-service-dos-attacks}
 
 Un ataque de denegación de servicio (DoS) es un intento de hacer que un recurso de equipo no esté disponible para los usuarios a los que va destinado. Esto suele hacerse sobrecargando el recurso; por ejemplo:
 
@@ -302,7 +301,7 @@ Para ayudar a evitar el uso indebido de DoS, puede:
 
       **Resultados**  máximos de JSON(  `json.maximumresults`)
 
-      en la configuración del [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Cuando se supera este límite, se contraerá el procesamiento. El valor predeterminado para Sling dentro de AEM es `200`.
+      en la configuración del [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Cuando se supera este límite, se contraerá el procesamiento. El valor predeterminado para Sling dentro de AEM es `1000`.
 
    * Como medida preventiva, desactive los demás procesadores predeterminados (HTML, texto sin formato, XML). Una vez más, configurando el [Servlet de GET Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -364,7 +363,7 @@ WebDAV debe deshabilitarse en los entornos de autor y publicación. Esto se pued
    >
    >No es necesario reiniciar el AEM.
 
-### Compruebe Que No Está Mostrando Información De Identificación Personal En La Ruta Principal {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path} De Los Usuarios
+### Compruebe que no está revelando información de identificación personal en la ruta principal de los usuarios {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 Es importante que proteja a sus usuarios asegurándose de que no exponga ninguna información personal e indetible en la ruta de inicio de los usuarios del repositorio.
 
@@ -386,13 +385,13 @@ Aunque no se recomienda, puede desactivarla en caso de que necesite la implement
 >
 >Para obtener más información, consulte la documentación de Oak sobre [Generación de nombres de nodos autorizables](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-### Impedir el secuestro de clics {#prevent-clickjacking}
+### Impedir el clickjacking {#prevent-clickjacking}
 
-Para evitar el secuestro de clics, le recomendamos que configure su servidor web para que proporcione el encabezado `X-FRAME-OPTIONS` HTTP establecido en `SAMEORIGIN`.
+Para evitar el clickjacking, le recomendamos que configure su servidor web para que proporcione el encabezado `X-FRAME-OPTIONS` HTTP establecido en `SAMEORIGIN`.
 
-Para obtener más [información sobre el secuestro de clics, consulte el sitio OWASP](https://www.owasp.org/index.php/Clickjacking).
+Para obtener más [información sobre el clickjacking, consulte el sitio de OWASP](https://www.owasp.org/index.php/Clickjacking).
 
-### Asegúrese de replicar correctamente las claves de cifrado cuando sea necesario {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Asegúrese De Replicar Correctamente Las Claves De Cifrado Cuando Sea Necesario {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
 Algunas funciones de AEM y esquemas de autenticación requieren que duplique las claves de cifrado en todas las instancias de AEM.
 

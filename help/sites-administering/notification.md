@@ -1,55 +1,54 @@
 ---
-title: Configuración de la notificación por correo electrónico
-seo-title: Configuración de la notificación por correo electrónico
+title: Configuración de notificaciones por correo electrónico
+seo-title: Configuring Email Notification
 description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
-seo-description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
+source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
 
-
-# Configuración de la notificación por correo electrónico{#configuring-email-notification}
+# Configuración de notificaciones por correo electrónico{#configuring-email-notification}
 
 AEM envía notificaciones por correo electrónico a los usuarios que:
 
-* Se han suscrito a eventos de página, por ejemplo, modificación o replicación. La sección [Bandeja de entrada de notificaciones](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) describe cómo suscribirse a dichos eventos.
+* Se han suscrito a eventos de página, por ejemplo modificación o replicación. La sección [Bandeja de entrada de notificaciones](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) describe cómo suscribirse a estos eventos.
 
-* Se han suscrito a los eventos del foro.
-* Debe realizar un paso en un flujo de trabajo. En la sección [Paso del participante](/help/sites-developing/workflows-step-ref.md#participant-step) se describe cómo déclencheur la notificación por correo electrónico en un flujo de trabajo.
+* Se han suscrito a eventos de foro.
+* Debe realizar un paso en un flujo de trabajo. En la sección [Participant Step](/help/sites-developing/workflows-step-ref.md#participant-step) se describe cómo almacenar en déclencheur las notificaciones por correo electrónico en un flujo de trabajo.
 
 Requisitos previos:
 
-* Los usuarios deben tener una dirección de correo electrónico válida definida en este perfil.
-* El **servicio de correo de CQ diario** debe configurarse correctamente.
+* Los usuarios deben tener una dirección de correo electrónico válida definida en su perfil.
+* El **Servicio de correo de CQ de día** debe configurarse correctamente.
 
-Cuando se notifica a un usuario, recibe un mensaje de correo electrónico en el idioma definido en su perfil. Cada idioma tiene su propia plantilla que se puede personalizar. Se pueden agregar nuevas plantillas de correo electrónico para los nuevos idiomas.
+Cuando se notifica a un usuario, recibe un correo electrónico en el idioma definido en su perfil. Cada idioma tiene su propia plantilla que se puede personalizar. Se pueden añadir nuevas plantillas de correo electrónico para los nuevos idiomas.
 
 >[!NOTE]
 >
->Al trabajar con AEM existen varios métodos para gestionar los parámetros de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más detalles y las prácticas recomendadas.
+>Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ## Configuración del servicio de correo {#configuring-the-mail-service}
 
-Para AEM poder enviar correos electrónicos, el **servicio de correo de CQ diario** debe configurarse correctamente. Puede vista de la configuración en la consola web. Al trabajar con AEM existen varios métodos para gestionar los parámetros de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más detalles y las prácticas recomendadas.
+Para AEM poder enviar correos electrónicos, el **Day CQ Mail Service** debe configurarse correctamente. Puede ver la configuración en la consola web. Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 Se aplican las siguientes restricciones:
 
-* El **puerto del servidor SMTP** debe ser 25 o superior.
+* El **puerto del servidor SMTP** debe ser de 25 o superior.
 
 * El **nombre de host del servidor SMTP** no debe estar en blanco.
-* La dirección **&quot;De&quot;** no debe estar en blanco.
+* La dirección **&quot;From&quot;** no debe estar en blanco.
 
-Para ayudarle a depurar un problema con el **servicio de correo de CQ por día**, puede ver los registros del servicio:
+Para ayudarle a depurar un problema con el **Day CQ Mail Service**, puede ver los registros del servicio:
 
 `com.day.cq.mailer.DefaultMailService`
 
@@ -57,45 +56,45 @@ La configuración tiene el siguiente aspecto en la consola web:
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## Configuración del Canal de notificación de correo electrónico {#configuring-the-email-notification-channel}
+## Configuración del canal de notificación de correo electrónico {#configuring-the-email-notification-channel}
 
-Al suscribirse a las notificaciones de eventos de la página o del foro, la dirección de correo electrónico desde se establece en `no-reply@acme.com` de forma predeterminada. Puede cambiar este valor configurando el servicio **Canal de correo electrónico de notificación** en la consola web.
+Al suscribirse a las notificaciones de eventos de página o foro, la dirección de correo electrónico de se establece en `no-reply@acme.com` de forma predeterminada. Puede cambiar este valor configurando el servicio **Notification Email Channel** en la consola web.
 
-Para configurar la dirección de correo electrónico desde, agregue un nodo `sling:OsgiConfig` al repositorio. Utilice el procedimiento siguiente para agregar el nodo directamente mediante CRXDE Lite:
+Para configurar la dirección de correo electrónico, agregue un nodo `sling:OsgiConfig` al repositorio. Utilice el siguiente procedimiento para añadir el nodo directamente mediante el CRXDE Lite :
 
-1. En CRXDE Lite, agregue una carpeta con el nombre `config` debajo de la carpeta de la aplicación.
-1. En la carpeta config, agregue un nodo denominado:
+1. En el CRXDE Lite, agregue una carpeta denominada `config` debajo de la carpeta de la aplicación.
+1. En la carpeta de configuración, añada un nodo denominado:
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de tipo  `sling:OsgiConfig`
 
-1. Añada una propiedad `String` en el nodo denominado `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
+1. Agregue una propiedad `String` al nodo llamado `email.from`. Para el valor, especifique la dirección de correo electrónico que desea utilizar.
 
 1. Haga clic en **Guardar todo**.
 
-Utilice el procedimiento siguiente para definir el nodo en las carpetas de origen del paquete de contenido:
+Utilice el siguiente procedimiento para definir el nodo en las carpetas de origen del paquete de contenido:
 
-1. En su `jcr_root/apps/*app_name*/config folder`, cree un archivo con el nombre `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. En `jcr_root/apps/*app_name*/config folder`, cree un archivo con el nombre `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
-1. Añada el siguiente XML para representar el nodo:
+1. Añada el siguiente XML para representar el nodo :
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
-1. Reemplace el valor del atributo `email.from` ( `name@server.com`) con su dirección de correo electrónico.
+1. Reemplace el valor del atributo `email.from` ( `name@server.com`) por su dirección de correo electrónico.
 
 1. Guarde el archivo.
 
-## Configuración del servicio de notificación de correo electrónico de flujo de trabajo {#configuring-the-workflow-email-notification-service}
+## Configuración del servicio de notificación de correo electrónico del flujo de trabajo {#configuring-the-workflow-email-notification-service}
 
-Cuando recibe notificaciones por correo electrónico del flujo de trabajo, tanto la dirección de correo electrónico como el prefijo de URL del host se establecen en valores predeterminados. Puede cambiar estos valores configurando el **servicio de notificación por correo electrónico de flujo de trabajo de CQ** en la consola web. Si lo hace, se recomienda mantener el cambio en el repositorio.
+Cuando recibe notificaciones por correo electrónico del flujo de trabajo, tanto la dirección de correo electrónico como el prefijo de URL del host se establecen en valores predeterminados. Puede cambiar estos valores configurando el **Day CQ Workflow Email Notification Service** en la consola web. Si lo hace, se recomienda mantener el cambio en el repositorio.
 
 La configuración predeterminada tiene el siguiente aspecto en la consola web:
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
-### Plantillas de correo electrónico para notificación de página {#email-templates-for-page-notification}
+### Plantillas de correo electrónico para notificaciones de página {#email-templates-for-page-notification}
 
-Las plantillas de correo electrónico para las notificaciones de página se encuentran a continuación:
+A continuación se describen las plantillas de correo electrónico para las notificaciones de página:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 La plantilla predeterminada en inglés ( `en.txt`) se define de la siguiente manera:
 
@@ -116,13 +115,13 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personalización de plantillas de correo electrónico para notificación de página {#customizing-email-templates-for-page-notification}
+#### Personalización de plantillas de correo electrónico para notificaciones de página {#customizing-email-templates-for-page-notification}
 
 Para personalizar la plantilla de correo electrónico en inglés para la notificación de página:
 
-1. En CRXDE, abra el archivo:
+1. En CRXDE, abra el archivo :
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -136,14 +135,14 @@ La plantilla debe tener el siguiente formato:
  footer=<text_4>
 ```
 
-Donde &lt;text_x> puede ser una mezcla de texto estático y variables de cadena dinámicas. En la plantilla de correo electrónico se pueden usar las siguientes variables para las notificaciones de página:
+Donde &lt;text_x> puede ser una mezcla de texto estático y variables de cadena dinámicas. En la plantilla de correo electrónico para las notificaciones de página se pueden usar las siguientes variables:
 
 * `${time}`, la fecha y hora del evento.
 
 * `${userFullName}`, el nombre completo del usuario que activó el evento.
 
 * `${userId}`, el ID del usuario que activó el evento.
-* `${modifications}`, describe el tipo de evento de página y la ruta de página en formato:
+* `${modifications}`, describe el tipo de evento de página y la ruta de página en formato :
 
    &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
 
@@ -151,7 +150,7 @@ Donde &lt;text_x> puede ser una mezcla de texto estático y variables de cadena 
 
    PageModified => /content/geometrixx/en/products
 
-### Plantillas de correo electrónico para notificación de foro {#email-templates-for-forum-notification}
+### Plantillas de correo electrónico para la notificación del foro {#email-templates-for-forum-notification}
 
 Las plantillas de correo electrónico para las notificaciones del foro se encuentran en:
 
@@ -178,7 +177,7 @@ This is an automatically generated message. Please do not reply.
 
 Para personalizar la plantilla de correo electrónico en inglés para la notificación del foro:
 
-1. En CRXDE, abra el archivo:
+1. En CRXDE, abra el archivo :
 
    `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
 
@@ -196,7 +195,7 @@ La plantilla debe tener el siguiente formato:
 
 Donde `<text_x>` puede ser una mezcla de texto estático y variables de cadena dinámicas.
 
-En la plantilla de correo electrónico se pueden usar las siguientes variables para las notificaciones del foro:
+En la plantilla de correo electrónico para las notificaciones del foro se pueden utilizar las siguientes variables:
 
 * `${time}`, la fecha y hora del evento.
 
@@ -204,9 +203,9 @@ En la plantilla de correo electrónico se pueden usar las siguientes variables p
 
 ### Plantillas de correo electrónico para notificación de flujo de trabajo {#email-templates-for-workflow-notification}
 
-La plantilla de correo electrónico para las notificaciones de flujo de trabajo (inglés) se encuentra en:
+La plantilla de correo electrónico para las notificaciones de flujo de trabajo (en inglés) se encuentra en:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 Se define de la siguiente manera:
 
@@ -229,13 +228,13 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personalización de plantillas de correo electrónico para notificaciones de flujo de trabajo {#customizing-email-templates-for-workflow-notification}
+#### Personalización de plantillas de correo electrónico para notificación de flujo de trabajo {#customizing-email-templates-for-workflow-notification}
 
-Para personalizar la plantilla de correo electrónico en inglés para la notificación de evento de flujo de trabajo:
+Para personalizar la plantilla de correo electrónico en inglés para la notificación de eventos de flujo de trabajo:
 
-1. En CRXDE, abra el archivo:
+1. En CRXDE, abra el archivo :
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -253,32 +252,32 @@ subject=<text_1>
 >
 >Donde `<text_x>` puede ser una mezcla de texto estático y variables de cadena dinámicas. Cada línea de un elemento `<text_x>` debe terminar con una barra invertida ( `\`), excepto la última instancia, cuando la ausencia de la barra invertida indica el final de la variable de cadena `<text_x>`.
 >
->Encontrará más información sobre el formato de plantilla en los [javadocs del método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
+>Puede encontrar más información sobre el formato de la plantilla en los [javadocs del método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-El método `${payload.path.open}` revela la ruta a la carga útil del elemento de trabajo. Por ejemplo: para una página en Sitios, entonces `payload.path.open` sería similar a `/bin/wcmcommand?cmd=open&path=…`.; esto no tiene el nombre del servidor, por lo que la plantilla antepone esto a `${host.prefix}`.
+El método `${payload.path.open}` revela la ruta a la carga útil del elemento de trabajo. Por ejemplo, para una página en Sitios, entonces `payload.path.open` sería similar a `/bin/wcmcommand?cmd=open&path=…`.; esto no tiene el nombre del servidor, por lo que la plantilla antepone esto a `${host.prefix}`.
 
-En la plantilla de correo electrónico se pueden usar las siguientes variables:
+En la plantilla de correo electrónico se pueden utilizar las siguientes variables:
 
 * `${event.EventType}`, tipo de evento
 * `${event.TimeStamp}`, fecha y hora del evento
 * `${event.User}`, el usuario que activó el evento
-* `${initiator.home}`, la ruta del nodo del iniciador
+* `${initiator.home}`, la ruta del nodo iniciador
 
 * `${initiator.name}`, el nombre del iniciador
 
 * `${initiator.email}`, dirección de correo electrónico del iniciador
-* `${item.id}`, la identificación del elemento de trabajo
+* `${item.id}`, el id del elemento de trabajo
 * `${item.node.id}`, id del nodo en el modelo de flujo de trabajo asociado a este elemento de trabajo
-* `${item.node.title}`, título del tema de trabajo
+* `${item.node.title}`, título del elemento de trabajo
 * `${participant.email}`, dirección de correo electrónico del participante
 * `${participant.name}`, nombre del participante
 * `${participant.familyName}`, apellido del participante
 * `${participant.id}`, id del participante
 * `${participant.language}`, el idioma del participante
-* `${instance.id}`, la identificación del flujo de trabajo
+* `${instance.id}`, el id del flujo de trabajo
 * `${instance.state}`, el estado del flujo de trabajo
 * `${model.title}`, título del modelo de flujo de trabajo
-* `${model.id}`, el ID del modelo de flujo de trabajo
+* `${model.id}`, el id del modelo de flujo de trabajo
 
 * `${model.version}`, la versión del modelo de flujo de trabajo
 * `${payload.data}`, la carga útil
@@ -287,28 +286,27 @@ En la plantilla de correo electrónico se pueden usar las siguientes variables:
 * `${payload.path}`, ruta de la carga útil
 * `${host.prefix}`, prefijo de host, por ejemplo: http://localhost:4502
 
-### Añadir una plantilla de correo electrónico para un nuevo idioma {#adding-an-email-template-for-a-new-language}
+### Adición de una plantilla de correo electrónico para un nuevo idioma {#adding-an-email-template-for-a-new-language}
 
-Para agregar una plantilla para un nuevo idioma:
+Para añadir una plantilla para un nuevo idioma:
 
-1. En CRXDE, agregue un archivo `<language-code>.txt` a continuación:
+1. En CRXDE, añada un archivo `<language-code>.txt` a continuación:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :: para notificaciones de página
-   * `/etc/notification/email/default/com.day.cq.collab.forum` :: para notificaciones del foro
-   * `/etc/workflow/notification/email/default` :: para notificaciones de flujo de trabajo
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : para notificaciones de página
+   * `/etc/notification/email/default/com.day.cq.collab.forum` : para notificaciones de foro
+   * `/libs/settings/workflow/notification/email/default` : para notificaciones de flujo de trabajo
 
 1. Adapte el archivo al idioma.
 1. Guarde los cambios.
 
 >[!NOTE]
 >
->El `<language-code>` utilizado como nombre de archivo para la plantilla de correo electrónico debe ser un código de idioma en minúsculas de dos letras reconocido por AEM. Para códigos de idioma, AEM se basa en ISO-639-1.
+>El `<language-code>` utilizado como nombre de archivo para la plantilla de correo electrónico debe ser un código de idioma en minúsculas de dos letras que AEM reconozca. Para códigos de idioma, AEM se basa en ISO-639-1.
 
 ## Configuración de las notificaciones por correo electrónico de AEM Assets {#assetsconfig}
 
 Cuando se comparten o dejan de compartir colecciones en AEM Assets, los usuarios pueden recibir notificaciones por correo electrónico de AEM. Para configurar las notificaciones por correo electrónico, siga estos pasos.
 
-1. Configure el servicio de correo electrónico, tal como se describe más arriba en [Configuración del servicio de correo](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Inicie sesión en AEM como administrador. Haga clic en **Herramientas** > **Operaciones** > **Consola Web** para abrir la Configuración de la consola Web.
-1. Editar **Servlet de recopilación de recursos CQ DAM**. Seleccione **enviar correo electrónico**. Haga clic en **Guardar**.
-
+1. Configure el servicio de correo electrónico, tal como se describe anteriormente en [Configuración del servicio de correo](/help/sites-administering/notification.md#configuring-the-mail-service).
+1. Inicie sesión en AEM como administrador. Haga clic en **Herramientas** > **Operaciones** > **Consola web** para abrir la Configuración de la consola web.
+1. Edite **Day CQ DAM Resource Collection Servlet**. Seleccione **enviar correo electrónico**. Haga clic en **Guardar**.

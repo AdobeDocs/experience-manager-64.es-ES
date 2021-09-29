@@ -1,8 +1,8 @@
 ---
 title: Configuración del marco de integración de traducción
-seo-title: Configuración del marco de integración de traducción
+seo-title: Configuring the Translation Integration Framework
 description: Obtenga información sobre cómo configurar el marco de integración de traducción.
-seo-description: Obtenga información sobre cómo configurar el marco de integración de traducción.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,13 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
+source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
-
 
 # Configuración del marco de integración de traducción{#configuring-the-translation-integration-framework}
 
@@ -39,7 +38,7 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Palabras clave](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -56,7 +55,6 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 >* [AEM traducción automática](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
-
 
 
 Después de instalar un paquete de conector, puede crear una configuración de nube para el conector. Normalmente, debe proporcionar sus credenciales para autenticarse con el servicio de traducción. Para obtener información sobre cómo agregar una configuración de nube para el conector de Microsoft Translator, consulte [Integración con Microsoft Translator](/help/sites-administering/tc-msconf.md).
@@ -203,7 +201,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asocie
 * La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
-Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para conectarse al proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
+Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
 
 Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página /content/geometrixx/en/products con un marco de integración de traducción, la página Productos y todas las páginas debajo se traducen según el marco.
 
@@ -220,7 +218,7 @@ Asocie una página al proveedor de traducción que esté utilizando para traduci
 1. Toque o haga clic en Agregar configuración > Integración de traducción.
 1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
 
-### Asociación de páginas con un marco de integración de traducción {#associating-pages-with-a-translation-integration-framework}
+### Asociación de páginas a un marco de integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página al marco de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
@@ -228,4 +226,3 @@ Asocie una página al marco de integración de traducción que define cómo dese
 1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services .
 1. Toque o haga clic en Agregar configuración > Integración de traducción.
 1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
-

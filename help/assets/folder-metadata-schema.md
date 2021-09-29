@@ -1,34 +1,34 @@
 ---
 title: Esquema de metadatos de carpeta
-description: En este artículo se describe cómo crear un esquema de metadatos para carpetas de recursos en AEM Assets
+description: Este artículo describe cómo crear un esquema de metadatos para carpetas de recursos en  [!DNL Experience Manager] Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 10%
+source-wordcount: '1076'
+ht-degree: 7%
 
 ---
 
 # Esquema de metadatos de carpeta {#folder-metadata-schema}
 
-En este artículo se describe cómo crear un esquema de metadatos para carpetas de recursos en AEM Assets.
+Este artículo describe cómo crear un esquema de metadatos para carpetas de recursos en [!DNL Experience Manager] Assets.
 
-Recursos Adobe Experience Manager (AEM) permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos que se muestran en las páginas de propiedades de las carpetas.
+Adobe Experience Manager Assets permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos que se muestran en las páginas de propiedades de las carpetas.
 
 >[!NOTE]
 >
->Esta funcionalidad requiere AEM 6.4 con al menos el Service Pack 2 implementado. Para obtener más información sobre AEM Service Pack 6.4, consulte estas [notas de la versión](/help/release-notes/sp-release-notes.md).
+>Esta funcionalidad requiere [!DNL Experience Manager] 6.4 con al menos el Service Pack 2 implementado. Para obtener más información sobre [!DNL Experience Manager] Service Pack 6.4, consulte estas [notas de la versión](/help/release-notes/sp-release-notes.md).
 
 ## Agregar un formulario de esquema de metadatos de carpeta {#add-a-folder-metadata-schema-form}
 
 Utilice el editor Forms de Esquemas de metadatos de carpeta para crear y editar esquemas de metadatos para carpetas.
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadatos de carpeta]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** **[!UICONTROL Folder Metadata schemas]**.
 1. En la página Forms Esquema de metadatos de carpeta , pulse o haga clic en **[!UICONTROL Crear]**.
 1. Especifique un nombre para el formulario y pulse o haga clic en **[!UICONTROL Crear]**. El nuevo formulario de esquema aparece en la página Esquema de Forms.
 
@@ -117,7 +117,7 @@ Si configura un esquema de metadatos para una carpeta, la ruta al formulario de 
 
 ### Asignar a un esquema desde la página Esquema de metadatos de carpeta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos de carpeta]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata schemas]**.
 1. En la página Forms Esquema de metadatos de carpeta , seleccione el formulario de esquema que desee aplicar a una carpeta.
 1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Aplicar a las carpetas]**.
 
@@ -134,7 +134,7 @@ Si configura un esquema de metadatos para una carpeta, la ruta al formulario de 
 
 Puede asignar un esquema de metadatos de carpeta al crear una carpeta. Si existe al menos un esquema de metadatos de carpeta en el sistema, se muestra una lista adicional en el cuadro de diálogo **[!UICONTROL Crear carpeta]**. Puede seleccionar el esquema deseado. De forma predeterminada, no hay ningún esquema seleccionado.
 
-1. En la interfaz de usuario de AEM Assets, pulse o haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
+1. En la interfaz de usuario [!DNL Assets], pulse o haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. Especifique un título y un nombre para la carpeta.
 1. En la lista Esquema de metadatos de carpeta , seleccione el esquema deseado. A continuación, pulse o haga clic en **[!UICONTROL Crear]**.
 

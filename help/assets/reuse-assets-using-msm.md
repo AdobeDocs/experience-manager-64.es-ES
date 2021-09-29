@@ -3,12 +3,12 @@ title: Reutilizar recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Administración de recursos, administrador de varios sitios
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3159'
 ht-degree: 9%
 
 ---
@@ -64,7 +64,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies, 
 Para crear Live Copy desde uno o varios recursos o carpetas de origen, siga uno de los siguientes pasos:
 
 * **Método 1**: Seleccione los recursos de origen y haga clic en  **[!UICONTROL Crear]**  >  **[!UICONTROL Copia activa]** en la barra de herramientas de la parte superior.
-* **Método 2**: En AEM interfaz de usuario, haga clic en  **[!UICONTROL Crear > Live]** Copy en la esquina superior derecha de la interfaz.
+* **Método 2**: En la interfaz de  [!DNL Experience Manager] usuario, haga clic en  **[!UICONTROL Crear > Copia activa]** desde la esquina superior derecha de la interfaz.
 
 Puede crear Live Copies de un recurso o de una carpeta de a una. Puede crear Live Copies que se deriven de un recurso o de una carpeta que sea una Live Copy en sí.
 
@@ -73,15 +73,15 @@ Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al inten
 Para crear Live Copies con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Crear Live Copy desde AEM interfaz](assets/lc_create1.png)
+   ![Crear Live Copy desde la  [!DNL Experience Manager] interfaz](assets/lc_create1.png)
 1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
 1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 
 Para crear Live Copies con el segundo método, siga estos pasos:
 
-1. En AEM interfaz, en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
-   ![Crear Live Copy desde AEM interfaz](assets/lc_create2.png)
+1. En la interfaz [!DNL Experience Manager], en la esquina superior derecha, haga clic en **[!UICONTROL Crear > Live Copy]**.
+   ![Crear Live Copy desde la  [!DNL Experience Manager] interfaz](assets/lc_create2.png)
 1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
@@ -93,7 +93,7 @@ Para crear Live Copies con el segundo método, siga estos pasos:
 
 ## Ver varias propiedades y estados del origen y la Live Copy {#view-properties-statuses-source-and-lc}
 
-Puede ver la información y los estados relacionados con MSM de Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario de AEM. Los dos métodos siguientes funcionan para los recursos y las carpetas:
+Puede ver la información y los estados relacionados con MSM de Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario [!DNL Experience Manager]. Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 * Seleccione un recurso de Live Copy y busque la información en su página **[!UICONTROL Propiedades]**.
 * Seleccione la carpeta de origen y busque la información detallada de cada Live Copy desde la **[!UICONTROL Consola Live Copy]**.
@@ -220,7 +220,7 @@ Puede deshacer todas las modificaciones locales y revertir el recurso al estado 
 
 ## Quitar relación activa {#remove-live-relationship}
 
-Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Separar. La Live Copy se convierte en un recurso independiente o en una carpeta después de separarse. Se muestra como un nuevo recurso en AEM interfaz, inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
+Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Separar. La Live Copy se convierte en un recurso independiente o en una carpeta después de separarse. Se muestra como un nuevo recurso en la interfaz [!DNL Experience Manager], inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
 
 1. Seleccione una carpeta o un recurso de Live Copy. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Desasociar]** del cuadro de diálogo presentado.
@@ -243,7 +243,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
 ## Ampliar MSM para recursos {#extend-msm-for-assets}
 
-AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para los recursos, la extensión funciona igual que con MSM para el sitio. Para obtener más información, consulte [Ampliación de MSM](../sites-developing/extending-msm.md) y las secciones siguientes para obtener información sobre tareas específicas:
+[!DNL Experience Manager] le permite ampliar la funcionalidad mediante las API de Java de MSM. Para los recursos, la extensión funciona igual que con MSM para el sitio. Para obtener más información, consulte [Ampliación de MSM](../sites-developing/extending-msm.md) y las secciones siguientes para obtener información sobre tareas específicas:
 
 * [Información general sobre las API](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Crear una nueva acción de sincronización](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ AEM le permite ampliar la funcionalidad mediante las API de Java de MSM. Para lo
 
 ## Impacto de las tareas de administración de recursos en Live Copies {#impact-of-asset-management-tasks-on-live-copies}
 
-Las Live Copies y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en AEM tienen un impacto específico en las Live Copies.
+Las Live Copies y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en [!DNL Experience Manager] tienen un impacto específico en las Live Copies.
 
 * Al copiar una Live Copy, se crea un recurso de Live Copy con el mismo origen que la primera Live Copy.
 * Al mover un origen o su Live Copy, se conserva la relación activa.

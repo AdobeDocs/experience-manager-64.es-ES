@@ -2,19 +2,19 @@
 title: Activos relacionados
 description: Obtenga información sobre cómo relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos.
 contentOwner: AG
-feature: Administración de activos,Colaboración
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
 # Activos relacionados {#related-assets}
 
-Recursos Adobe Experience Manager (AEM) permite relacionar recursos manualmente en función de las necesidades de la organización mediante la función Recursos relacionados . Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen/vídeo en un tema similar. Puede relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF generado a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
+Adobe Experience Manager Assets permite relacionar recursos manualmente en función de las necesidades de la organización mediante la función Recursos relacionados . Por ejemplo, puede relacionar un archivo de licencia con un recurso o una imagen/vídeo en un tema similar. Puede relacionar recursos que comparten ciertos atributos comunes. También puede utilizar la función para crear relaciones de origen/derivadas entre recursos. Por ejemplo, si tiene un archivo PDF generado a partir de un archivo INDD, puede relacionar el archivo PDF con su archivo INDD de origen.
 
 De este modo, tiene la flexibilidad de compartir un archivo de baja resolución (por ejemplo, PDF/JPG) con proveedores/agencias y poner a disposición el archivo de alta resolución (por ejemplo, INDD) únicamente si lo solicita.
 
@@ -65,11 +65,11 @@ De este modo, tiene la flexibilidad de compartir un archivo de baja resolución 
 
 ## Traducción de recursos relacionados {#translating-related-assets}
 
-La creación de relaciones de origen/derivadas entre recursos mediante la función Recursos relacionados también es útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, AEM Assets recupera automáticamente cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen, como se muestra a continuación.
+La creación de relaciones de origen/derivadas entre recursos mediante la función Recursos relacionados también es útil en los flujos de trabajo de traducción. Cuando se ejecuta un flujo de trabajo de traducción en un recurso derivado, [!DNL Experience Manager] Assets recupera automáticamente cualquier recurso al que haga referencia el archivo de origen y lo incluye para su traducción. De este modo, el recurso al que hace referencia el recurso de origen se traduce junto con el origen y los recursos derivados. Por ejemplo, imaginemos un escenario en el que la copia en inglés incluye un recurso derivado y su archivo de origen, como se muestra a continuación.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Si el archivo de origen está relacionado con otro recurso, AEM Assets busca el recurso al que se hace referencia y lo incluye para su traducción.
+Si el archivo de origen está relacionado con otro recurso, [!DNL Experience Manager] Assets recupera el recurso al que se hace referencia y lo incluye para su traducción.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

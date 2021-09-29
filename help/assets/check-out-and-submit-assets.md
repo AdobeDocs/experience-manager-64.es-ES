@@ -2,19 +2,19 @@
 title: Insertar y extraer recursos digitales para editarlos
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
-feature: Administración de activos
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
 
 # Archivos de desprotección y desprotección en Assets {#check-in-and-check-out-files-in-assets}
 
-Recursos Adobe Experience Manager (AEM) permite extraer recursos para editarlos y volver a protegerlos después de completar los cambios. Después de retirar un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Si se retira un recurso, este se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a proteger el recurso en AEM Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+Recursos Adobe Experience Manager permite extraer recursos para editarlos y volver a protegerlos después de completar los cambios. Después de retirar un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Si se retira un recurso, este se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a proteger el recurso en [!DNL Experience Manager] Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
 Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
 
@@ -58,13 +58,13 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   El recurso modificado se archiva en AEM Assets y está disponible para otros usuarios para su edición.
+   El recurso modificado está registrado en [!DNL Assets] y está disponible para que lo editen otros usuarios.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
-1. Inicie sesión en AEM Assets como administrador.
+1. Inicie sesión en [!DNL Assets] como administrador.
 1. En la interfaz de usuario de Assets, seleccione uno o varios recursos que otros usuarios hayan extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

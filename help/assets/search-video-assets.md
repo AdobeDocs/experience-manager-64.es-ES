@@ -1,13 +1,13 @@
 ---
 title: Búsqueda de recursos de vídeo
-description: Utilice palabras clave, propiedades de archivo como un tipo Mime, tamaño o marca de hora modificada recientemente para encontrar rápidamente el archivo en AEM Assets.
+description: Utilice palabras clave, propiedades de archivo como un tipo Mime, tamaño o marca de hora modificada recientemente para encontrar rápidamente el archivo en  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Vídeo,Buscar
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Puede buscar recursos digitales en función de una o varias de las siguientes pr
 | [!UICONTROL Estado de publicación] | Publicado o no publicado. |
 | [!UICONTROL Estado de aprobación] | Aprobado o rechazado. |
 | [!UICONTROL Orientación] | Horizontal, Vertical o Cuadrado. |
-| [!UICONTROL Estilo] | Color o blanco y negro. |
+| [!UICONTROL Style] | Color o blanco y negro. |
 | Altura del vídeo | Especificado como valor mínimo y máximo.Value se almacena únicamente en los metadatos de representaciones de vídeo. |
 | Anchura del vídeo | Especificado como valor mínimo y máximo.Value se almacena únicamente en los metadatos de representaciones de vídeo. |
 | Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value se almacena en los metadatos del vídeo de origen y en cualquier representación. |

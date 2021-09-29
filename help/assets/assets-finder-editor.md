@@ -2,12 +2,12 @@
 title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del Editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
-feature: Herramientas para desarrolladores,Administración de recursos
+feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3300'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,13 @@ En este documento se describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del Editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se está utilizando en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios de formación profesional -por ejemplo, fotógrafos o taxónomos- a grupos de usuarios más grandes y diversos, por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.-, la potente interfaz de usuario de Adobe Experience Manager (AEM) Assets para usuarios profesionales puede proporcionar demasiada información y los interesados empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les son de importancia.
+La administración de activos digitales se está utilizando en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios de formación profesional -por ejemplo, fotógrafos o taxónomos- a grupos de usuarios más grandes y diversos, por ejemplo usuarios empresariales, autores de WCM, periodistas, etc.-, la potente interfaz de usuario de [!DNL Adobe Experience Manager Assets] para usuarios profesionales puede proporcionar demasiada información y los interesados empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les son de importancia.
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o un centro de prensa en un sitio web público, como el ejemplo proporcionado con Geometrixx. Las aplicaciones centradas en recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte, en gran medida, en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en recursos creadas con AEM Assets son ampliables: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte, en gran medida, en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en recursos creadas con [!DNL Assets] son ampliables: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
-Una aplicación centrada en los recursos de AEM consta de una página del Editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
+Una aplicación centrada en recursos en [!DNL Experience Manager] consiste en una página del Editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
 ## Creación y configuración de una página Uso compartido de recursos {#creating-and-configuring-an-asset-share-page}
 
@@ -161,7 +161,7 @@ Para personalizar el generador de consultas:
 
 #### Agregar predicados {#adding-predicates}
 
-AEM Assets incluye varios predicados que puede agregar a la página Uso compartido de recursos. Esto permite que los usuarios restrinjan aún más las búsquedas. En algunos casos, pueden anular un parámetro del generador de consultas (por ejemplo, el parámetro Path).
+[!DNL Experience Manager Assets] incluye una serie de predicados que puede agregar a la página Uso compartido de recursos. Esto permite que los usuarios restrinjan aún más las búsquedas. En algunos casos, pueden anular un parámetro del generador de consultas (por ejemplo, el parámetro Path).
 
 Para agregar predicados:
 
@@ -279,7 +279,7 @@ El formulario de metadatos es un formulario que incluye una acción de inicio y 
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Consulte [Personalización y ampliación de AEM Assets](extending-assets.md) para obtener información sobre cómo modificar los espacios de nombres disponibles en el formulario de metadatos.
+   Consulte [Personalización y ampliación [!DNL Assets]](extending-assets.md) para obtener información sobre cómo modificar los espacios de nombres disponibles en el formulario de metadatos.
 
 1. Haga clic en la pestaña **[!UICONTROL Constraints]**. Aquí puede seleccionar si un campo es obligatorio y, si es necesario, agregar restricciones.
 
@@ -392,7 +392,7 @@ Para agregar acciones a la página Editor de recursos:
 
 ## Editar varios recursos con la página Editor de recursos {#multi-editing-assets-with-the-asset-editor-page}
 
-Con AEM Assets, puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar simultáneamente sus:
+Con [!DNL Assets] puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar simultáneamente sus:
 
 * Etiquetas
 * Metadatos

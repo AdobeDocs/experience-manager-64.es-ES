@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de me
 
 Para descargar recursos, siga estos pasos:
 
-1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Navegación]**.
+1. En la esquina superior izquierda de AEM, pulse el logotipo [!DNL Experience Manager] y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Navegación]**.
 1. En la página Navegación, pulse **[!UICONTROL Assets]** > **[!UICONTROL Archivos.]**
 1. Vaya a una carpeta que contenga los recursos que desee descargar.
 1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.

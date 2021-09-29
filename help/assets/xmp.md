@@ -1,30 +1,30 @@
 ---
 title: Metadatos de XMP
-description: Obtenga información sobre el estándar de metadatos XMP (Extensible Metadata Platform) que utiliza AEM Assets para la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
+description: Obtenga información sobre el estándar de metadatos XMP (Plataforma de metadatos extensible) que utiliza  [!DNL Experience Manager] Assets para la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '810'
 ht-degree: 19%
 
 ---
 
 # Metadatos XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) es el estándar de metadatos que AEM Assets utiliza para la administración de todos los metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
+XMP (Extensible Metadata Platform) es el estándar de metadatos que utilizan los [!DNL Experience Manager] Assets para la administración de todos los metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP proporciona un [modelo de contenido enriquecido](xmp.md#xmp-core-concepts) y es [compatible con Adobe](xmp.md#advantages-of-xmp) y otras empresas, de modo que los usuarios de XMP en combinación con AEM Assets tengan una potente plataforma en la que basarse.
+Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP ofrece un [modelo de contenido](xmp.md#xmp-core-concepts) enriquecido y es [compatible con Adobe](xmp.md#advantages-of-xmp) y otras empresas, de modo que los usuarios de XMP en combinación con [!DNL Experience Manager] Assets tengan una potente plataforma en la que basarse.
 
 La [especificación de XMP](https://www.adobe.com/devnet/xmp.html) está disponible en el Adobe.
 
 ## ¿Qué es XMP? {#what-is-xmp}
 
-AEM Assets es compatible de forma nativa con la XMP: la plataforma de metadatos extensible encabezada por el Adobe. XMP es un estándar para procesar y almacenar metadatos estandarizados y de propiedad en recursos digitales. XMP está diseñado para ser el estándar común que permite que varias aplicaciones funcionen eficazmente con metadatos.
+[!DNL Experience Manager] Assets es compatible de forma nativa con la XMP: la plataforma de metadatos extensible encabezada por el Adobe. XMP es un estándar para procesar y almacenar metadatos estandarizados y de propiedad en recursos digitales. XMP está diseñado para ser el estándar común que permite que varias aplicaciones funcionen eficazmente con metadatos.
 
-Los profesionales de producción, por ejemplo, utilizan la compatibilidad XMP integrada en las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. El repositorio de AEM Assets extrae los metadatos de XMP y los utiliza para administrar el ciclo de vida del contenido y ofrece la capacidad de crear flujos de trabajo de automatización.
+Los profesionales de producción, por ejemplo, utilizan la compatibilidad XMP integrada en las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. El repositorio de [!DNL Experience Manager] activos extrae los metadatos de XMP y los utiliza para administrar el ciclo de vida del contenido y ofrece la capacidad de crear flujos de trabajo de automatización.
 
 XMP estandariza la forma en que se definen, crean y procesan los metadatos proporcionando un modelo de datos, un modelo de almacenamiento y esquemas. Todos estos conceptos se tratan en esta sección.
 

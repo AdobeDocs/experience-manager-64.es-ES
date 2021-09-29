@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Flujo de trabajo,Administración de recursos,Representaciones
+feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1374'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Debe tener derechos de administrador para crear, editar y eliminar metadatos, im
 
 Después de crear los metadatos, la imagen o el perfil de vídeo, los asigna a una o varias carpetas que utiliza como destino para los recursos recién cargados.
 
-Un concepto importante respecto al uso de perfiles en AEM Assets es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados. Para ver un ejemplo, consulte [organización de recursos mediante carpetas](organize-assets.md#organize-using-folders).
+Un concepto importante con respecto al uso de perfiles en [!DNL Experience Manager] Assets es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados. Para ver un ejemplo, consulte [organización de recursos mediante carpetas](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Un concepto importante respecto al uso de perfiles en AEM Assets es que se asign
 
 >[!NOTE]
 >
->Se aplica a *Dynamic Media - Scene7 mode* solo en AEM 6.4.7.0 o posterior.
+>Se aplica a *Dynamic Media - Scene7 mode* solo en [!DNL Experience Manager] 6.4.7.0 o posterior.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de procesamiento existente que haya cambiado posteriormente.
 
@@ -84,11 +84,11 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 1. Haga clic en **[!UICONTROL Start]** y, a continuación, haga clic en **[!UICONTROL Confirm]**.
 
-   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Tools > Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
+   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal [!DNL Experience Manager], haga clic en **[!UICONTROL Tools > Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos de MIME en los que se ejecuta el reprocesamiento. Un valor superior significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en AEM recursos durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos de MIME en los que se ejecuta el reprocesamiento. Un valor superior significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en activos [!DNL Experience Manager] durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
 
 **Para ajustar opcionalmente el tamaño del lote del flujo de trabajo de reprocesamiento**
 
@@ -138,5 +138,5 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main [!DNL Experience Manager] console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model. -->

@@ -2,12 +2,12 @@
 title: Procese activos para llevar a cabo procesos del negocio, realizar auditorías, lograr cumplimiento de normas y mantener la sanidad básica
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
-feature: Flujo de trabajo,Representaciones
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Utilice flujos de trabajo en recursos digitales para activar el recurso o crear 
 >
 >Si un flujo de trabajo disponible en la IU clásica no está disponible en la IU táctil, como [!UICONTROL Solicitud de activación] y [!UICONTROL Solicitud de desactivación], consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Aplicación de un flujo de trabajo a un recurso AEM {#apply-a-workflow-to-an-aem-asset}
+## Aplicar un flujo de trabajo a un recurso [!DNL Experience Manager] {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 >[!MORELIKETHIS]
 >
 >* [Aplicar y participar en flujos de trabajo](/help/sites-authoring/workflows.md)
-* [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows.md)
-* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
-* [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
+>* [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows.md)
+>* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
+>* [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
 

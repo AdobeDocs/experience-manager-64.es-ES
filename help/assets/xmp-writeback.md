@@ -2,12 +2,12 @@
 title: Reescritura XMP en representaciones
 description: Descubra cómo la función XMP reescritura propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas de ellas.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '775'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Considere un escenario en el que modifique la propiedad [!UICONTROL Title] del r
 
 ![metadata](assets/metadata.png)
 
-En este caso, AEM Assets guarda los cambios en la propiedad **[!UICONTROL Title]** en el parámetro `dc:title` para los metadatos de recurso almacenados en la jerarquía de recursos.
+En este caso, [!DNL Experience Manager] Assets guarda los cambios en la propiedad **[!UICONTROL Title]** en el parámetro `dc:title` para los metadatos de recurso almacenados en la jerarquía de recursos.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ Los cambios en los metadatos se propagan a las representaciones `thumbnail.140.1
 
 [!DNL Experience Manager Assets] admite el filtrado de listas de permitidos y listas de bloqueados de propiedades/nodos para XMP metadatos que se leen desde binarios de recursos y se almacenan en JCR cuando se introducen recursos.
 
-El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos de XMP, la instancia de AEM o el clúster pueden encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
+El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos de XMP, la instancia o el clúster de [!DNL Experience Manager] puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
 
 El filtrado de metadatos de XMP mediante lista de permitidos resuelve este problema ya que permite definir las propiedades de XMP que se van a importar. De este modo, se ignorarán todas las demás propiedades de XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede añadir algunas de estas propiedades al filtro que utiliza una lista de bloqueados .
 
 >[!NOTE]
 >
->El filtrado solo funciona para las propiedades derivadas de XMP orígenes en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación del recurso se almacena en la propiedad denominada `CreateDate` en el TIFF EXIF. AEM almacena este valor en el campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen no es un origen XMP, el filtrado no funciona en esta propiedad.
+>El filtrado solo funciona para las propiedades derivadas de XMP orígenes en los binarios de recursos. Para las propiedades derivadas de orígenes no XMP, como los formatos EXIF e IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación del recurso se almacena en la propiedad denominada `CreateDate` en el TIFF EXIF. [!DNL Experience Manager] almacena este valor en el campo de metadatos denominado  `exif:DateTimeOriginal`. Como el origen no es un origen XMP, el filtrado no funciona en esta propiedad.
 
 1. Abra el Administrador de configuración desde `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración **[!UICONTROL Adobe CQ DAM XmpFilter]**.

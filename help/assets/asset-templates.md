@@ -1,16 +1,16 @@
 ---
 title: Plantillas de recursos
-description: Obtenga información sobre las plantillas de recursos en AEM Assets y cómo utilizar las plantillas de recursos para crear material publicitario de marketing.
+description: Obtenga información sobre las plantillas de recursos en  [!DNL Experience Manager] Assets y cómo utilizar las plantillas de recursos para crear material publicitario de marketing.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Administración de recursos,Herramientas para desarrolladores
+feature: Asset Management,Developer Tools
 role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ La sección de mensajería fija puede contener contenido propio, como el logotip
 
 La flexibilidad para realizar ediciones limitadas y, al mismo tiempo, asegurar las señalizaciones globales, hace que las plantillas de recursos sean componentes básicos ideales para una rápida adaptación y distribución del contenido como artefactos de contenido para diversas funciones. El repropósito del contenido ayuda a reducir el costo de la administración de canales digitales e impresos y ofrece experiencias holísticas y coherentes en todos estos canales.
 
-Como especialista en marketing, puede almacenar y administrar plantillas dentro de AEM Assets y utilizar una sola plantilla base para crear varias experiencias de impresión personalizadas con facilidad. Puede crear varios tipos de material publicitario de marketing, incluidos folletos, folletos, postales, tarjetas de visita, etc., para transmitir su mensaje de marketing a los clientes de forma lúcida. También puede ensamblar salidas de impresión de varias páginas a partir de salidas de impresión existentes o nuevas. Sobre todo, puede ofrecer simultáneamente experiencias digitales e impresas con facilidad para proporcionar una experiencia coherente e integrada a los usuarios.
+Como especialista en marketing, puede almacenar y administrar plantillas dentro de [!DNL Experience Manager] Assets y utilizar una sola plantilla base para crear varias experiencias de impresión personalizadas con facilidad. Puede crear varios tipos de material publicitario de marketing, incluidos folletos, folletos, postales, tarjetas de visita, etc., para transmitir su mensaje de marketing a los clientes de forma lúcida. También puede ensamblar salidas de impresión de varias páginas a partir de salidas de impresión existentes o nuevas. Sobre todo, puede ofrecer simultáneamente experiencias digitales e impresas con facilidad para proporcionar una experiencia coherente e integrada a los usuarios.
 
-Aunque las plantillas de recursos son en su mayoría archivos de InDesign, la competencia en el InDesign no es una barrera para la creación de artefactos estelares. No es necesario asignar los campos de la plantilla de InDesign a los campos de producto que necesita para crear catálogos. Puede editar las plantillas en modo WYSIWYG directamente en la interfaz web. Sin embargo, para que el InDesign procese los cambios de edición, primero debe configurar AEM Assets para que se integre con el servidor de InDesign.
+Aunque las plantillas de recursos son en su mayoría archivos de InDesign, la competencia en el InDesign no es una barrera para la creación de artefactos estelares. No es necesario asignar los campos de la plantilla de InDesign a los campos de producto que necesita para crear catálogos. Puede editar las plantillas en modo WYSIWYG directamente en la interfaz web. Sin embargo, para que el InDesign procese los cambios de edición, primero debe configurar [!DNL Experience Manager] Assets para integrarlos con el servidor de InDesign.
 
 La capacidad de editar plantillas de InDesign desde la interfaz web ayuda a fomentar la buena colaboración entre el personal creativo y de marketing, a la vez que reduce el tiempo de comercialización para las iniciativas de promoción locales.
 
@@ -37,7 +37,7 @@ Puede hacer lo siguiente con las plantillas de recursos:
 * Vista previa de las ediciones de plantillas
 * Combinar varios archivos de plantilla para crear un artefacto de varias páginas
 
-Al elegir una plantilla para el material colateral, AEM Assets crea una copia de la plantilla que puede editar. Se conserva la plantilla original, lo que garantiza que la señalización global permanezca intacta y se pueda reutilizar para garantizar la coherencia de la marca.
+Al elegir una plantilla para el material colateral, [!DNL Assets] crea una copia de la plantilla que puede editar. Se conserva la plantilla original, lo que garantiza que la señalización global permanezca intacta y se pueda reutilizar para garantizar la coherencia de la marca.
 
 Puede exportar el archivo actualizado dentro de la carpeta principal en los siguientes formatos:
 
@@ -49,9 +49,9 @@ También puede descargar la salida en estos formatos en su sistema local.
 
 ## Crear una garantía {#creating-a-collateral}
 
-Considere un escenario en el que desee crear garantías digitales imprimibles, como folletos, folletos y publicidades para una próxima campaña, y compartirlas con tiendas de venta en todo el mundo. La creación de material colateral basado en una plantilla ayuda a ofrecer una experiencia de cliente unificada en todos los canales. Los diseñadores pueden crear las plantillas de campaña (de una sola página o de varias páginas) mediante una solución creativa, como el InDesign y cargar las plantillas en AEM Assets por usted. Antes de crear un colateral, haga que una o más plantillas INDD se carguen en y estén disponibles en el Experience Manager con antelación.
+Considere un escenario en el que desee crear garantías digitales imprimibles, como folletos, folletos y publicidades para una próxima campaña, y compartirlas con tiendas de venta en todo el mundo. La creación de material colateral basado en una plantilla ayuda a ofrecer una experiencia de cliente unificada en todos los canales. Los diseñadores pueden crear las plantillas de campaña (de una sola página o de varias páginas) mediante una solución creativa, como el InDesign y cargar las plantillas a [!DNL Assets] para usted. Antes de crear un colateral, haga que una o más plantillas INDD se carguen en y estén disponibles en el Experience Manager con antelación.
 
-1. Toque o haga clic en el logotipo de AEM y, a continuación, toque o haga clic en **[!UICONTROL Assets]** en la página Navegación.
+1. Haga clic en el logotipo [!DNL Experience Manager] y, a continuación, haga clic en **[!UICONTROL Assets]** en la página Navegación.
 1. En las opciones, seleccione **[!UICONTROL Templates]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -74,7 +74,7 @@ Considere un escenario en el que desee crear garantías digitales imprimibles, c
 
 1. Haga clic en **[!UICONTROL Crear]**. Un cuadro de diálogo confirma que se crea un nuevo folleto. Pulse o haga clic en **[!UICONTROL Abrir]** para abrir el folleto en modo de edición.
 
-   ![chlimage_1-311](assets/chlimage_1-311.png)
+   ![chlimage_1-310](assets/chlimage_1-311.png)
 
    Como alternativa, cierre el cuadro de diálogo y vaya a la carpeta de la página Plantillas con la que comenzó a trabajar para ver el folleto que ha creado. El tipo de garantía aparece en su miniatura en la vista de tarjeta. Por ejemplo, en este caso, el folleto se muestra en la miniatura.
 
@@ -97,17 +97,17 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    Puede utilizar el editor de texto para modificar el texto que desea que se muestre en el campo de texto. Puede modificar el tamaño de fuente, el estilo, el color y el tipo en el nivel de etiqueta.
 
-   Con el buscador de recursos, puede examinar o buscar imágenes en AEM Assets y reemplazar las imágenes editables de la plantilla por las imágenes que elija.
+   Con el buscador de recursos, puede examinar o buscar imágenes dentro de [!DNL Assets] y reemplazar las imágenes editables en la plantilla por las imágenes que elija.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   Los editables se muestran a la derecha. Para que un campo se pueda editar en AEM Assets, el campo correspondiente de la plantilla debe etiquetarse en InDesign. En otras palabras, deben marcarse como editables en InDesign.
+   Los editables se muestran a la derecha. Para que un campo se pueda editar en [!DNL Assets], el campo correspondiente de la plantilla debe etiquetarse en el InDesign. En otras palabras, deben marcarse como editables en InDesign.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Asegúrese de que la instancia de AEM esté integrada con un servidor de InDesign para permitir que AEM Assets extraiga datos de la plantilla de InDesign y que esté disponible para la edición. Para obtener más información, consulte [Integración de AEM Assets con InDesign Server](indesign.md).
+   >Asegúrese de que la instancia [!DNL Experience Manager] está integrada con un servidor de InDesign para permitir que [!DNL Assets] extraiga datos de la plantilla de InDesign y haga que esté disponible para edición. Para obtener más información, consulte [Integración [!DNL Assets] con InDesign Server](indesign.md).
 
 1. Para modificar el texto de un campo editable, toque o haga clic en el campo de texto de la lista de campos editables y edite el texto en el campo.
 
@@ -127,7 +127,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   También puede buscar imágenes utilizando palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio de AEM Assets y navegar a la ubicación de la imagen deseada.
+   También puede buscar imágenes utilizando palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio [!DNL Assets] y navegar a la ubicación de la imagen deseada.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,19 +143,19 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    >[!NOTE]
    >
-   >Los iconos Vista previa y Listo solo se activan cuando los campos de imagen editables del material no tienen iconos que falten. Si falta algún icono en el colateral, es porque AEM no puede resolver las imágenes en la plantilla de InDesign. Normalmente, AEM no puede resolver imágenes en los siguientes casos:
+   >Los iconos Vista previa y Listo solo se activan cuando los campos de imagen editables del material no tienen iconos que falten. Si falta algún icono en el colateral, es porque [!DNL Experience Manager] no puede resolver las imágenes en la plantilla de InDesign. Por lo general, [!DNL Experience Manager] no puede resolver imágenes en los siguientes casos:
    >
-   >* Las imágenes no se incrustan en la plantilla de InDesign subyacente
+   >* Las imágenes no están incrustadas en la plantilla de InDesign subyacente
    >* Las imágenes están vinculadas desde el sistema de archivos local
 
    >
-   >Para permitir que AEM resuelva imágenes, haga lo siguiente:
+   >Para habilitar [!DNL Experience Manager] para resolver imágenes, haga lo siguiente:
    >
    >* Incruste imágenes al crear plantillas de InDesign (consulte [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >* Monte AEM en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos AEM existentes.
+   >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos [!DNL Experience Manager] existentes.
 
    >
-   >Para obtener más información sobre cómo trabajar con documentos de InDesign, consulte [Prácticas recomendadas para trabajar con documentos de InDesign en AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Para obtener más información sobre cómo trabajar con documentos de InDesign, consulte [Prácticas recomendadas para trabajar con documentos de InDesign en [!DNL Experience Manager]](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para generar una representación PDF para el folleto, seleccione la opción Acrobat en el cuadro de diálogo y haga clic en **[!UICONTROL Continuar]**.
 1. El material colateral se crea en la carpeta con la que comenzó. Para ver las representaciones, abra el material colateral y seleccione **[!UICONTROL Representaciones]** en la lista de navegación global.
@@ -187,7 +187,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Puede navegar por el repositorio o las colecciones de AEM Assets, navegar a la ubicación de las plantillas que desee y, a continuación, seleccionarlas para fusionarlas.
+   Puede navegar por el repositorio o las colecciones [!DNL Assets], navegar a la ubicación de las plantillas deseadas y, a continuación, seleccionarlas para fusionarlas.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 

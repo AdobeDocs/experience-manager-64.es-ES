@@ -6,13 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Etiquetas inteligentes,Buscar
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 16%
+source-wordcount: '1514'
+ht-degree: 15%
 
 ---
 
@@ -32,7 +32,7 @@ Una vez que una etiqueta está preparada y lista, el servicio ahora puede aplica
 
 En segundo plano, el servicio de contenido inteligente utiliza el marco de IA de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos.
 
-El servicio de contenido inteligente es un servicio en la nube alojado en [!DNL Adobe I/O]. Para utilizarla en Adobe Experience Manager (AEM), el administrador del sistema debe integrar la instancia de AEM con [!DNL Adobe I/O].
+El servicio de contenido inteligente es un servicio en la nube alojado en [!DNL Adobe I/O]. Para utilizarlo en Adobe Experience Manager, el administrador del sistema debe integrar la instancia [!DNL Experience Manager] con [!DNL Adobe I/O].
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -52,15 +52,11 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 
 ## Incorporación {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento de AEM. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a [!DNL Adobe I/O].
+El servicio de contenido inteligente está disponible para su compra como complemento de [!DNL Experience Manager] . Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a [!DNL Adobe I/O].
 
-El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con AEM. Para integrar el servicio con AEM Assets, consulte [Configuración de etiquetas inteligentes](config-smart-tagging.md).
+El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con [!DNL Experience Manager] . Para integrar el servicio con [!DNL Experience Manager] Assets, consulte [Configuración de etiquetas inteligentes](config-smart-tagging.md).
 
-El proceso de incorporación se completa cuando el administrador configura el servicio y añade usuarios en AEM.
-
->[!NOTE]
->
->Si utiliza AEM versión 6.3 o anterior y necesita un servicio de etiquetado automático para sus recursos, consulte [Etiquetas inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Las etiquetas inteligentes no utilizan las capacidades de IA y son menos precisas que la capacidad de etiquetado inteligente mejorado.
+El proceso de incorporación se completa cuando el administrador configura el servicio y agrega usuarios en [!DNL Experience Manager] .
 
 ## Revisión de recursos y etiquetas {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ Agregue los recursos a una carpeta y aplique las etiquetas a cada recurso desde 
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo entrene en al menos dos etiquetas diferentes.
 
 >
-
 
 
 ## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ Puede permitir que el servicio de contenido inteligente imparta formación peri�
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una vez seleccionada esta opción para una carpeta, AEM ejecuta un flujo de trabajo de formación automáticamente para formar el servicio de contenido inteligente en la carpeta de recursos y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta de forma semanal a las 12:30 AM de los sábados.
+Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para entrenar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta de forma semanal a las 12:30 AM de los sábados.
 
 ### Capacitación a pedido {#on-demand-training}
 
 Puede entrenar el servicio de contenido inteligente siempre que sea necesario desde la consola Flujo de trabajo.
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo de **[!UICONTROL formación de etiquetas inteligentes]** y, a continuación, pulse o haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
 1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]**, vaya a la carpeta de carga útil que incluye los recursos etiquetados para entrenar el servicio.
 1. Especifique un título para el flujo de trabajo y un comentario. A continuación, pulse o haga clic en **[!UICONTROL Ejecutar]**. Los recursos y las etiquetas se envían para formación.
@@ -119,7 +114,7 @@ Puede entrenar el servicio de contenido inteligente siempre que sea necesario de
 
 Para comprobar si el servicio de contenido inteligente ha recibido formación sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets > Informes]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas > Assets > Informes]**.
 1. En la página **[!UICONTROL Informes de recursos]**, pulse o haga clic en **[!UICONTROL Crear]**.
 1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, pulse o haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, pulse o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
@@ -161,7 +156,7 @@ Puede almacenar en déclencheur el flujo de trabajo de etiquetado desde lo sigui
 
 #### Etiquetado de recursos desde la consola Flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo **[!UICONTROL Recursos de etiquetas inteligentes DAM]** y, a continuación, pulse o haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

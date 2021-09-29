@@ -1,22 +1,22 @@
 ---
-title: Formatos de archivo compatibles con AEM Assets
-description: Lista de formatos de archivo y tipos MIME admitidos por AEM Assets y las funciones admitidas para cada formato.
+title: Formatos de archivo compatibles con [!DNL Experience Manager] Assets
+description: Lista de formatos de archivo y tipos MIME admitidos por Assets y las funciones admitidas para cada formato.
 contentOwner: AG
-feature: Administración de recursos,Representaciones
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 10%
 
 ---
 
-# Formatos de archivo compatibles con AEM Assets {#assets-supported-formats}
+# Formatos de archivo compatibles con [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets admite una amplia gama de formatos de archivo y cada funcionalidad tiene compatibilidad variada con distintos tipos de MIME.
+[!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad tiene compatibilidad variada con distintos tipos de MIME.
 
-Para integrar AEM Assets con otras soluciones de administración de recursos digitales (DAM) compatibles con los estándares y software de escritorio, utilice la Extensible Metadata Platform (XMP) de Adobe.
+Para integrar [!DNL Assets] con otras soluciones de administración de recursos digitales (DAM) compatibles con los estándares y software de escritorio, utilice la Extensible Metadata Platform (XMP) de Adobe.
 
 Utilice la leyenda para comprender el nivel de asistencia.
 
@@ -111,7 +111,7 @@ Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-lib
 
 ## Camera Raw {#supported-camera-raw}
 
-La biblioteca de Adobe Camera Raw permite a AEM Assets introducir imágenes sin procesar. Consulte [Soporte Camera Raw](camera-raw.md).
+La biblioteca Adobe Camera Raw permite que [!DNL Assets] ingrese imágenes sin procesar. Consulte [Soporte Camera Raw](camera-raw.md).
 
 ## Formatos de documento {#supported-document-formats}
 
@@ -244,7 +244,7 @@ La aplicabilidad de los flujos de trabajo DAM comunes para otros formatos de arc
 
 ## Tipos MIME admitidos {#supported-mime-types}
 
-De forma predeterminada, AEM detecta el tipo de archivo con la extensión de archivo . AEM puede detectarlo a partir del contenido de los archivos. Para este último, seleccione la opción [!UICONTROL Detect MIME from content] en [!UICONTROL Day CQ DAM Mime Type Service] en la consola web AEM.
+De forma predeterminada, [!DNL Experience Manager] detecta el tipo de archivo con la extensión de archivo. [!DNL Experience Manager] puede detectarlo a partir del contenido de los archivos. Para este último, seleccione la opción [!UICONTROL Detect MIME from content] en [!UICONTROL Day CQ DAM Mime Type Service] en la consola web [!DNL Experience Manager].
 
 Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -296,7 +296,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |

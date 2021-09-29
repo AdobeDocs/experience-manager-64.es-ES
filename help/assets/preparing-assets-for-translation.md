@@ -2,12 +2,12 @@
 title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para prepararse para la traducción de recursos multilingües.
 contentOwner: AG
-feature: Proyectos,Traducción
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
-En Adobe Experience Manager (AEM) Assets, los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
+En Adobe Experience Manager Assets, los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
 
 Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, */content/dam/it* es la raíz de idioma italiano para la copia en idioma italiano. Las copias de idioma deben utilizar una [raíz de idioma configurada correctamente](preparing-assets-for-translation.md#creating-a-language-root) para que se oriente al idioma correcto cuando se realicen traducciones de recursos de origen.
 
@@ -61,7 +61,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 ## Visualización de raíces de idioma {#viewing-language-roots}
 
-La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en AEM Assets.
+La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en [!DNL Experience Manager] Assets.
 
 1. En la consola Assets, seleccione el idioma principal para el que desea crear copias de idioma.
 1. Toque o haga clic en el icono de navegación global y elija **[!UICONTROL Referencias]** para abrir el panel Referencia.

@@ -2,13 +2,13 @@
 title: Facetas de búsqueda
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 contentOwner: AG
-feature: 'Búsqueda  '
+feature: Search
 role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '2538'
-ht-degree: 22%
+source-wordcount: '2530'
+ht-degree: 21%
 
 ---
 
@@ -30,7 +30,7 @@ Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formu
 
 Para las búsquedas de texto completo, agregue el predicado Texto completo al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad concreta. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
-1. Pulse o haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar en Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y, a continuación, pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Busque y seleccione el carril de búsqueda de administración de Assets](assets/assets_admin_searchrail.png)
@@ -39,7 +39,7 @@ Para las búsquedas de texto completo, agregue el predicado Texto completo al fo
 
    >[!NOTE]
    >
-   >Para utilizar la funcionalidad de búsqueda de carpetas desde el **Carril de búsqueda de administración de recursos** preconfigurado de una versión AEM anterior, siga estos pasos:
+   >Para utilizar la funcionalidad de búsqueda de carpetas desde el **Carril de búsqueda de administración de activos** preconfigurado desde una versión anterior [!DNL Experience Manager], siga estos pasos:
    > 
    >1. Vaya a */conf/global/settings/dam/search/facets/assets/jcr:content/items* en CRX-DE.
    >1. Elimine el nodo **type**.
@@ -117,7 +117,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 >
 >El predicado Opciones es un envoltorio personalizado que incluye predicados de propiedades para demostrar el comportamiento descrito. Actualmente, no hay ningún extremo de REST disponible para admitir la funcionalidad de forma nativa.
 
-1. Pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Tools > General > Search Forms]**.
+1. Pulse el logotipo [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas > General > Buscar en Forms]**.
 1. En la página **[!UICONTROL Buscar formularios]**, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y pulse el icono Editar.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
 1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre práctico para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Indique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:format.`
@@ -137,9 +137,9 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 ## Adición de un predicado de propiedad de varios valores {#adding-a-multi-value-property-predicate}
 
-El predicado Propiedad de varios valores permite buscar recursos en busca de varios valores. Imagine un escenario en el que tiene imágenes de varios productos en AEM Assets y en el que los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
+El predicado Propiedad de varios valores permite buscar recursos en busca de varios valores. Imagine un escenario en el que tiene imágenes de varios productos en [!DNL Experience Manager] Assets y en el que los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Haga clic en el logotipo [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. En la pestaña **[!UICONTROL Settings]**, introduzca una etiqueta y un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
@@ -150,9 +150,9 @@ El predicado Propiedad de varios valores permite buscar recursos en busca de var
 
 ## Adición de un predicado de etiquetas {#adding-a-tags-predicate}
 
-El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, AEM Assets busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Experience Manager] Assets busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Haga clic en el logotipo [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y, a continuación, pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda , arrastre **[!UICONTROL Predicado de etiquetas]** desde la ficha Seleccionar predicado hasta el panel principal.
 1. En la ficha Configuración , introduzca un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo *jcr:content/metadata/cq:tags*. Como alternativa, puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
@@ -223,6 +223,6 @@ Si no se le ha asignado una función de administrador, aquí tiene una lista de 
 >[!MORELIKETHIS]
 >
 >* [Ampliación de la búsqueda de Assets](searchx.md)
-* [Búsqueda de recursos](search-assets.md)
-* [Búsqueda de recursos de vídeo](search-video-assets.md)
+>* [Búsqueda de recursos](search-assets.md)
+>* [Búsqueda de recursos de vídeo](search-video-assets.md)
 

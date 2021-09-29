@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 36%
+source-wordcount: '403'
+ht-degree: 30%
 
 ---
 
 # Publicar recursos en Brand Portal {#publish-assets-to-brand-portal}
 
-Como administrador de recursos de Adobe Experience Manager (AEM), puede publicar recursos en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md).
+Como administrador de Adobe Experience Manager Assets, puede publicar recursos en la instancia [!DNL Experience Manager Assets Brand Portal] (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) de su organización. Sin embargo, primero debe configurar [!DNL Assets] con [!DNL Brand Portal]. Para obtener más información, consulte [Configuración [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
 Después de publicar un recurso, este está disponible para los usuarios de Brand Portal.
 
-Si realiza las modificaciones posteriores al recurso original en AEM Assets, los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar el recurso. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
+Si realiza las modificaciones posteriores al recurso original en [!DNL Assets], los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar el recurso. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
 
-Una vez que la replicación se haya realizado correctamente, puede publicar recursos, carpetas y colecciones en Brand Portal. Para publicar recursos en Brand Portal, siga estos pasos:
+Una vez que la replicación se haya realizado correctamente, puede publicar recursos, carpetas y colecciones en [!DNL Brand Portal]. Para publicar recursos en Brand Portal, siga estos pasos:
 
 >[!NOTE]
 >
->Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
+>Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor [!DNL Experience Manager] no ocupe recursos excesivos.
 
 1. En la consola Recursos, pase el ratón sobre los recursos que quiera y seleccione la opción **[!UICONTROL Publicar]** en las acciones rápidas.
 

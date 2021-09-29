@@ -1,29 +1,28 @@
 ---
 title: Ampliación de la búsqueda de recursos
-description: Amplíe las capacidades de búsqueda de AEM Assets más allá de las búsquedas predeterminadas de recursos por cadenas.
+description: Amplíe las capacidades de búsqueda de  [!DNL Experience Manager] Assets más allá de las búsquedas predeterminadas de recursos por cadenas.
 contentOwner: AG
 feature: Search
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '820'
 ht-degree: 13%
 
 ---
 
-
 # Ampliación de la búsqueda de recursos {#extending-assets-search}
 
-Puede ampliar las funciones de búsqueda de recursos de Adobe Experience Manager (AEM). De serie, AEM Assets busca recursos por cadenas.
+Puede ampliar las funciones de búsqueda de Adobe Experience Manager Assets. De serie, [!DNL Experience Manager] Assets busca recursos por cadenas.
 
 La búsqueda se realiza a través de la interfaz de QueryBuilder para que la búsqueda se pueda personalizar con varios predicados. Puede superponer el conjunto predeterminado de predicados en el siguiente directorio: `/apps/dam/content/search/searchpanel/facets`.
 
-También puede agregar fichas adicionales al panel de administración de AEM Assets.
+También puede agregar fichas adicionales al panel de administración de [!DNL Experience Manager] Assets.
 
 >[!CAUTION]
 >
->A partir de AEM 6.4, la IU clásica queda obsoleta. Para el anuncio, consulte [Funciones obsoletas y eliminadas](../release-notes/deprecated-removed-features.md). Se le recomienda utilizar la IU táctil. Para las personalizaciones, consulte [Facetas de búsqueda](search-facets.md).
+>A partir de [!DNL Experience Manager] 6.4, la IU clásica está en desuso. Para el anuncio, consulte [Funciones obsoletas y eliminadas](../release-notes/deprecated-removed-features.md). Se le recomienda utilizar la IU táctil. Para las personalizaciones, consulte [Facetas de búsqueda](search-facets.md).
 
 ## Superposición {#overlaying}
 
@@ -35,10 +34,9 @@ Para superponer los predicados preconfigurados, copie el nodo `facets` de `/libs
 >
 >De forma predeterminada, la estructura de directorio en / `apps` no existe y debe crearse. Asegúrese de que los tipos de nodo coinciden con los de / `libs`.
 
-
 ## Adición de pestañas {#adding-tabs}
 
-Puede agregar fichas de búsqueda adicionales configurándolas en el administrador de AEM Assets. Para crear pestañas adicionales:
+Puede agregar fichas de búsqueda adicionales configurándolas en el [!DNL Experience Manager] Administrador de recursos. Para crear pestañas adicionales:
 
 1. Cree la estructura de carpetas `/apps/wcm/core/content/damadmin/tabs,`si aún no existe, y copie el nodo `tabs` de `/libs/wcm/core/content/damadmin` y péguelo.
 1. Cree y configure la segunda pestaña como desee.
@@ -49,9 +47,9 @@ Puede agregar fichas de búsqueda adicionales configurándolas en el administrad
 
 ## Creación de predicados personalizados {#creating-custom-predicates}
 
-AEM Assets incluye un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de esta forma se explica en [Creación y configuración de una página de uso compartido de recursos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Experience Manager] Assets viene con un conjunto de predicados predefinidos que pueden utilizarse para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de esta forma se explica en [Creación y configuración de una página de uso compartido de recursos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Además de usar predicados preexistentes, los desarrolladores de AEM también pueden crear sus propios predicados utilizando la [API de Query Builder](/help/sites-developing/querybuilder-api.md).
+Además de usar predicados preexistentes, los desarrolladores de [!DNL Experience Manager] también pueden crear sus propios predicados utilizando la [API de Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La creación de predicados personalizados requiere conocimientos básicos sobre el [marco de widgets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -255,7 +253,7 @@ Para crear un predicado de grupo:
 1. Vaya al explorador y, en la página de muestra (por ejemplo, `press.html`), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos del predicado (por ejemplo, **left**).
 1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar**). Inserte el componente en la columna **Predicates**.
 
-### Widgets de predicado instalados {#installed-predicate-widgets}
+### Widgets de predicados instalados {#installed-predicate-widgets}
 
 Los siguientes predicados están disponibles como widgets preconfigurados de ExtJS.
 
@@ -263,7 +261,7 @@ Los siguientes predicados están disponibles como widgets preconfigurados de Ext
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| predicateName | Cadena | Nombre del predicado. El valor predeterminado es `fulltext` |
+| predicateName | String | Nombre del predicado. El valor predeterminado es `fulltext` |
 | searchCallback | Función | Llamada de retorno para activar la búsqueda en el evento `keyup`. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
@@ -305,6 +303,6 @@ Los siguientes predicados están disponibles como widgets preconfigurados de Ext
 
 ## Personalización de resultados de búsqueda {#customizing-search-results}
 
-La presentación de los resultados de búsqueda en una página Uso compartido de recursos se rige por la lente seleccionada. AEM Assets incluye un conjunto de objetivos predefinidos que pueden utilizarse para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de esta forma se explica en [Creación y configuración de una página de uso compartido de recursos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La presentación de los resultados de búsqueda en una página Uso compartido de recursos se rige por la lente seleccionada. [!DNL Experience Manager] Assets viene con un conjunto de objetivos predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de esta forma se explica en [Creación y configuración de una página de uso compartido de recursos](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Además de usar lentes preexistentes, AEM desarrolladores también pueden crear sus propias lentes.
+Además de usar lentes preexistentes, los desarrolladores de [!DNL Experience Manager] también pueden crear sus propias lentes.

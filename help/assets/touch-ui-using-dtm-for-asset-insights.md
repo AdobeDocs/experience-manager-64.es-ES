@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Adobe Dynamic Tag Management es una herramienta que activa las herramientas de m
 
 Siga estos pasos para habilitar Assets Insights mediante DTM:
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configurar AEM instancia con el Cloud Service de DTM](../sites-administering/dtm.md)
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de perspectivas]**.
+1. [Configurar la instancia  [!DNL Experience Manager] con el Cloud Service de DTM](../sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de Assets Insights, ya que la integración de AEM Sites con Assets Insights aún está en funcionamiento.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** desde el icono Perfil. Este paso no es necesario desde el punto de vista de Assets Insights, ya que la integración de [!DNL Experience Manager Sites] con Assets Insights aún está en funcionamiento.
 
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y seleccione una empresa, según corresponda.
 1. Crear/abrir una propiedad web existente
@@ -43,7 +43,7 @@ Siga estos pasos para habilitar Assets Insights mediante DTM:
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Assets]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas > Assets]**.
 1. Toque o haga clic en **[!UICONTROL Rastreador de páginas de perspectivas]**, copie el código del rastreador y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]

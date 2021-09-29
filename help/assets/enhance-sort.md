@@ -1,28 +1,28 @@
 ---
 title: Ordenación mejorada de los recursos en AEM
-description: Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
+description: Obtenga información sobre cómo  [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
 contentOwner: AG
-feature: 'Búsqueda  '
+feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
 
-# Ordenación mejorada de los recursos en AEM {#enhanced-sorting-of-assets-in-aem}
+# Clasificación mejorada de los recursos en [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Descubra cómo AEM Assets implementa la ordenación del lado del servidor para ordenar los recursos de carpetas o una consulta de búsqueda de una sola vez en lugar de ordenarlos por lotes en el lado del cliente.
+Obtenga información sobre cómo [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
 
-La capacidad de búsqueda de Adobe Experience Manager (AEM) Assets se ha mejorado para ordenar de forma eficaz un gran número de recursos en las páginas de resultados de búsqueda y vista de lista de carpetas. También puede ordenar las entradas de la línea de tiempo.
+La capacidad de búsqueda de Adobe Experience Manager Assets se ha mejorado para ordenar de forma eficaz un gran número de recursos en las páginas de resultados de búsqueda y vista de lista de carpetas. También puede ordenar las entradas de la línea de tiempo.
 
-AEM Assets implementa la ordenación del lado del servidor para ordenar todo el conjunto de recursos (aunque sean grandes) dentro de una carpeta o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente. De este modo, los resultados recuperados previamente se pueden mostrar rápidamente en la interfaz de usuario, lo que hace que la operación de ordenación sea más flexible y ágil.
+[!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar todo el conjunto de recursos (aunque sean grandes) dentro de una carpeta o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente. De este modo, los resultados recuperados previamente se pueden mostrar rápidamente en la interfaz de usuario, lo que hace que la operación de ordenación sea más flexible y ágil.
 
 ## Clasificación de recursos en la vista de lista {#sorting-assets-in-list-view}
 
-AEM Assets permite ordenar los recursos de las carpetas en función de los campos siguientes:
+[!DNL Experience Manager] Assets permite ordenar los recursos de las carpetas en función de los campos siguientes:
 
 * Conf. regional
 * Estado
@@ -75,7 +75,7 @@ Puede ordenar los resultados de la búsqueda según los campos siguientes:
 
 ## Clasificación de recursos en la cronología {#sorting-assets-in-timeline}
 
-AEM Assets permite ordenar cronológicamente las entradas de la cronología, como anotaciones, versiones, flujos de trabajo y actividades.
+[!DNL Assets] permite ordenar cronológicamente entradas de cronología, como anotaciones, versiones, flujos de trabajo y actividades.
 
 1. En la interfaz de usuario de Assets, seleccione un recurso para el que desee mostrar la línea de tiempo.
 1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Línea de tiempo]**.

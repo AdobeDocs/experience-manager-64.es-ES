@@ -1,22 +1,22 @@
 ---
 title: Compatibilidad con metadatos IPTC
-description: Descubra cómo Adobe Experience Manager (AEM) Assets es compatible con los metadatos IPTC, las clasificaciones creativas y las palabras clave añadidas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
+description: Descubra cómo Adobe Experience Manager Assets admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 7%
 
 ---
 
 # Compatibilidad con metadatos IPTC {#support-for-iptc-metadata}
 
-Descubra cómo Adobe Experience Manager (AEM) Assets es compatible con los metadatos IPTC, las clasificaciones creativas y las palabras clave añadidas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
+Descubra cómo Adobe Experience Manager Assets admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
 
-Adobe Experience Manager (AEM) Assets es compatible con el estándar de metadatos IPTC que se utiliza ampliamente para describir los recursos. De esta manera, AEM Assets aumenta la aceptación de sus imágenes entre varias partes, incluidos fotógrafos, agencias creativas, bibliotecas, museos, etc.
+Adobe Experience Manager Assets es compatible con el estándar de metadatos IPTC que se utiliza ampliamente para describir los recursos. De esta manera, [!DNL Experience Manager Assets] mejora la aceptación de sus imágenes entre varias partes, incluidos fotógrafos, agencias creativas, bibliotecas, museos, etc.
 
 El esquema de metadatos predeterminado para los recursos ahora incorpora los esquemas de metadatos principales de IPTC y extensión IPTC para definir propiedades de metadatos completas que permitan a los usuarios añadir datos precisos y fiables sobre las personas, las ubicaciones y los productos mostrados en una imagen. También admite fechas, nombres e identificadores relacionados con la creación de la imagen, y una forma flexible de expresar información de derechos.
 

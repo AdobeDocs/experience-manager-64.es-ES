@@ -1,8 +1,8 @@
 ---
 title: Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web
-seo-title: Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Aprenda a incrustar vídeo o imágenes de Dynamic Media en una página web
-seo-description: Aprenda a incrustar vídeo o imágenes de Dynamic Media en una página web
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Componentes
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 20%
+source-wordcount: '367'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
 
-Las direcciones URL incrustadas solo se pueden incrustar si está _no_ usando AEM como WCM. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+Las direcciones URL incrustadas solo se pueden incrustar si _no_ utiliza [!DNL Experience Manager] como WCM. Si utiliza [!DNL Experience Manager] como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
 
 Consulte [Vinculación de URL a la aplicación web.](linking-urls-to-yourwebapplication.md)
 

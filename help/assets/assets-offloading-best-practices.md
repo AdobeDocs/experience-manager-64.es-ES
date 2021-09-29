@@ -1,13 +1,13 @@
 ---
 title: Prácticas recomendadas de descarga de recursos
-description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de ingesta y replicación de recursos en AEM Assets.
+description: Casos de uso recomendados y prácticas recomendadas para descargar flujos de trabajo de ingesta y replicación de recursos en  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Administración de activos
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Esta función está en desuso AEM la versión 6.4 y se ha eliminado en la AEM 6.5. Planee en consecuencia.
+>Esta función está en desuso a partir de [!DNL Experience Manager] 6.4 y se elimina en [!DNL Experience Manager] 6.5. Planee en consecuencia.
 
-La gestión de archivos de gran tamaño y flujos de trabajo en ejecución en Adobe Experience Manager (AEM) Assets pueden consumir considerables recursos de CPU, memoria y E/S. En concreto, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia de consumo de recursos pueden afectar al rendimiento general del sistema. Las operaciones que requieren más recursos incluyen AEM consumo de recursos y flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación de AEM puede afectar negativamente a la eficacia de la creación.
+La gestión de archivos grandes y flujos de trabajo en ejecución en Adobe Experience Manager Assets pueden consumir considerables recursos de CPU, memoria y E/S. En concreto, el tamaño de los recursos, los flujos de trabajo, el número de usuarios y la frecuencia de consumo de recursos pueden afectar al rendimiento general del sistema. Las operaciones con mayor densidad de recursos incluyen la ingesta de recursos y los flujos de trabajo de replicación. El uso intensivo de estos flujos de trabajo en una única instancia de creación puede afectar negativamente a la eficacia de la creación.
 
 La descarga de estas tareas a instancias de trabajo dedicadas puede reducir las sobrecargas de CPU, memoria e IO. En general, la idea detrás de la descarga es distribuir tareas que consumen recursos intensivos de CPU/memoria/IO a instancias de trabajo dedicadas. Las siguientes secciones incluyen casos de uso recomendados para la descarga de recursos.
 
-## Descarga de AEM Assets {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Descarga {#aem-assets-offloading}
 
-AEM Assets implementa una extensión de flujo de trabajo nativa específica del recurso para la descarga. Se basa en la extensión de flujo de trabajo genérica que proporciona el marco de descarga, pero incluye funciones adicionales específicas de recursos en la implementación. El objetivo de la descarga de recursos es ejecutar de forma eficaz el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos permite obtener un control bueno de los flujos de trabajo de ingesta.
+[!DNL Experience Manager] Assets implementa una extensión de flujo de trabajo nativa específica del recurso para la descarga. Se basa en la extensión de flujo de trabajo genérica que proporciona el marco de descarga, pero incluye funciones adicionales específicas de recursos en la implementación. El objetivo de la descarga de recursos es ejecutar de forma eficaz el flujo de trabajo de recursos de actualización de DAM en un recurso cargado. La descarga de recursos permite obtener un control bueno de los flujos de trabajo de ingesta.
 
-## Componentes de descarga de AEM Assets {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Componentes de descarga de recursos {#aem-assets-offloading-components}
 
 En el diagrama siguiente se muestran los componentes principales del proceso de descarga de recursos:
 
@@ -40,7 +40,7 @@ El flujo de trabajo de descarga de recursos de actualización de DAM se ejecuta 
 
 El administrador de trabajos distribuye los nuevos trabajos a las instancias de trabajo. Al diseñar el mecanismo de distribución, es importante tener en cuenta la habilitación del tema. Los trabajos solo se pueden asignar a instancias en las que el tema del trabajo está habilitado. Deshabilite el tema `com/adobe/granite/workflow/offloading` en el primario y actívelo en el trabajador para asegurarse de que el trabajo esté asignado al trabajador.
 
-### AEM descarga {#aem-offloading}
+### [!DNL Experience Manager] descarga {#aem-offloading}
 
 El marco de descarga identifica los trabajos de descarga de flujo de trabajo asignados a instancias de trabajo y utiliza la replicación para transportarlos físicamente, incluida su carga útil (por ejemplo, imágenes que se van a ingerir) a los trabajadores.
 
@@ -50,7 +50,7 @@ Una vez escrito un trabajo en el trabajador, el administrador de trabajos llama 
 
 ## Topología de Sling {#sling-topology}
 
-La topología de Sling agrupa AEM instancias y les permite estar conscientes entre sí, independientemente de la persistencia subyacente. Esta característica de la topología de Sling le permite crear topologías para escenarios no agrupados, agrupados y mixtos. Una instancia puede exponer propiedades a toda la topología. El marco proporciona llamadas de retorno para escuchar los cambios en la topología (instancias y propiedades). La topología de Sling proporciona la base para los trabajos distribuidos de Sling.
+La topología de Sling agrupa las instancias [!DNL Experience Manager] y les permite ser conscientes entre sí, independientemente de la persistencia subyacente. Esta característica de la topología de Sling le permite crear topologías para escenarios no agrupados, agrupados y mixtos. Una instancia puede exponer propiedades a toda la topología. El marco proporciona llamadas de retorno para escuchar los cambios en la topología (instancias y propiedades). La topología de Sling proporciona la base para los trabajos distribuidos de Sling.
 
 ### Sling de trabajos distribuidos {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Si llega a la conclusión de que la descarga de activos es un enfoque adecuado p
 
 ### Implementación de descarga de recursos recomendada {#recommended-assets-offloading-deployment}
 
-Con AEM y Oak, hay varios escenarios de implementación posibles. Para la descarga de recursos, se recomienda una implementación basada en TarMK con un almacén de datos compartido. En el diagrama siguiente se describe la implementación recomendada:
+Con [!DNL Experience Manager] y Oak, existen varios escenarios de implementación posibles. Para la descarga de recursos, se recomienda una implementación basada en TarMK con un almacén de datos compartido. En el diagrama siguiente se describe la implementación recomendada:
 
 ![imagen_1-56](assets/chlimage_1-56.png)
 

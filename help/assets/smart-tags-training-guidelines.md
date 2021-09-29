@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Etiquetado,Metadatos,Etiquetas inteligentes
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 12%
 
 ---
@@ -31,7 +31,7 @@ Por ejemplo, no es aconsejable etiquetar todas estas imágenes como *my-party* (
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coherence.png)
 
-**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que AEM aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
+**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
 
 Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
@@ -53,7 +53,7 @@ Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imág
 
 * Incapacidad para reconocer sutiles diferencias en imágenes. Por ejemplo, camisas delgadas contra las vestidas regulares.
 * Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-* El etiquetado es compatible con las configuraciones regionales compatibles con AEM. Para obtener una lista de idiomas, consulte las [notas de la versión de los servicios de contenido inteligente](/help/release-notes/smart-content-service-release-notes.md).
+* El etiquetado es compatible con las configuraciones regionales compatibles con [!DNL Experience Manager]. Para obtener una lista de idiomas, consulte las [notas de la versión de los servicios de contenido inteligente](/help/release-notes/smart-content-service-release-notes.md).
 
 Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice la búsqueda Omni-search de Assets (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
 

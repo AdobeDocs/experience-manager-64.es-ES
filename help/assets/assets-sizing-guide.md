@@ -1,31 +1,31 @@
 ---
 title: Guía de tamaño de Assets
-description: 'Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar AEM Assets. '
+description: 'Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar  [!DNL Experience Manager] Assets. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Administración de activos
+feature: Asset Management
 role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1840'
 ht-degree: 0%
 
 ---
 
 # Guía de tamaño de Assets {#assets-sizing-guide}
 
-Al cambiar el tamaño del entorno para una implementación de Adobe Experience Manager (AEM) Assets, es importante asegurarse de que haya suficientes recursos disponibles en términos de disco, CPU, memoria, E/S y rendimiento de red. Para cambiar el tamaño de muchos de estos recursos es necesario conocer la cantidad de recursos que se están cargando en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la edad de la biblioteca para encontrar la tasa a la que se crean los recursos.
+Al cambiar el tamaño del entorno para una implementación de Adobe Experience Manager Assets, es importante asegurarse de que haya suficientes recursos disponibles en términos de disco, CPU, memoria, E/S y rendimiento de red. Para cambiar el tamaño de muchos de estos recursos es necesario conocer la cantidad de recursos que se están cargando en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la edad de la biblioteca para encontrar la tasa a la que se crean los recursos.
 
 ## Disco {#disk}
 
 ### Almacén de datos {#datastore}
 
-Un error común que se produce al cambiar el tamaño del espacio en disco necesario para una implementación de Assets es basar los cálculos en el tamaño de las imágenes sin procesar que se van a introducir en el sistema. De forma predeterminada, AEM crea tres representaciones además de la imagen original para utilizarla en la renderización de los elementos de la interfaz de usuario de AEM. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos ingeridos.
+Un error común que se produce al cambiar el tamaño del espacio en disco necesario para una implementación de Assets es basar los cálculos en el tamaño de las imágenes sin procesar que se van a introducir en el sistema. De forma predeterminada, [!DNL Experience Manager] crea tres representaciones además de la imagen original para utilizarlas en la renderización de los elementos de la interfaz de usuario [!DNL Experience Manager]. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos ingeridos.
 
-La mayoría de los usuarios definen representaciones personalizadas, además de las representaciones predeterminadas. Además de las representaciones, AEM Assets permite extraer subrecursos de tipos de archivo comunes, como InDesign y Illustrator.
+La mayoría de los usuarios definen representaciones personalizadas, además de las representaciones predeterminadas. Además de las representaciones, Assets permite extraer subrecursos de tipos de archivo comunes, como InDesign y Illustrator.
 
 Por último, las funciones de control de versiones de AEM almacenan duplicados de los recursos en el historial de versiones. Puede configurar las versiones que desea depurar con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio de almacenamiento adicional.
 
@@ -34,11 +34,11 @@ Teniendo en cuenta estos factores, necesita una metodología para calcular un es
 1. Determine el tamaño y la cantidad de recursos que se cargarán en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en AEM. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y complejidades de las imágenes.
 1. Defina las representaciones que desea utilizar.
-1. Cree las representaciones en AEM usando ImageMagick o las aplicaciones de Creative Cloud de Adobe. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media Classic, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
+1. Cree las representaciones en [!DNL Experience Manager] utilizando las aplicaciones de Creative Cloud de ImageMagick o Adobe. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media Classic, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en AEM.
 1. Si planea utilizar subrecursos, genéelos para los tipos de archivo correspondientes. Consulte la documentación en línea sobre cómo generar páginas de subrecursos a partir de archivos de InDesign o archivos PNG/PDF a partir de capas de Illustrator.
 1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de activos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se deben mantener las versiones de los recursos en el sistema.
-1. Determine con qué frecuencia se modifican los recursos existentes en el sistema. Si AEM se utiliza como centro de colaboración en flujos de trabajo creativos, la cantidad de cambios es alta. Si solo se cargan en el sistema los recursos finalizados, este número es mucho menor.
+1. Determine con qué frecuencia se modifican los recursos existentes en el sistema. Si [!DNL Experience Manager] se utiliza como centro de colaboración en flujos de trabajo creativos, la cantidad de cambios es alta. Si solo se cargan en el sistema los recursos finalizados, este número es mucho menor.
 1. Determine cuántos recursos se cargan en el sistema cada mes. Si no está seguro, compruebe el número de recursos que están disponibles actualmente y divida el número por la edad del recurso más antiguo para calcular un número aproximado.
 
 Al realizar los pasos del 1 al 9, puede determinar lo siguiente:
@@ -51,7 +51,7 @@ Al realizar los pasos del 1 al 9, puede determinar lo siguiente:
 * Número de nuevos activos cargados cada mes
 * Años de crecimiento para asignar espacio
 
-Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto de mantener versiones de recursos o modificar recursos en AEM en el crecimiento del disco.
+Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto de mantener versiones de recursos o modificar recursos en [!DNL Experience Manager] en el crecimiento del disco.
 
 Los datos de ejemplo rellenados en la herramienta muestran la importancia de realizar los pasos mencionados. Si cambia el tamaño del almacén de datos en función únicamente de las imágenes sin procesar que se están cargando (1 TB), es posible que haya subestimado el tamaño del repositorio en un factor de 15.
 
@@ -106,11 +106,11 @@ Para el repositorio, utilice SSD o discos con un nivel IOPS bueno a 3000. Para e
 
 ## Red {#network}
 
-AEM Assets tiene varios casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros proyectos AEM. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para soportar la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá pareciendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a AEM en [Consideraciones sobre los recursos de AEM para la experiencia del usuario, el tamaño de las instancias, la evaluación del flujo de trabajo y la topología de red](assets-network-considerations.md).
+[!DNL Assets] tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros  [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para soportar la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá pareciendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a [!DNL Experience Manager] en [[!DNL Experience Manager]  Consideraciones de recursos para la experiencia del usuario, el tamaño de las instancias, la evaluación del flujo de trabajo y la topología de red](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-Si agrega la aplicación de escritorio AEM a la combinación, los problemas de red se vuelven más graves debido a las ineficiencias en el protocolo WebDAV.
+Si agrega la aplicación de escritorio [!DNL Experience Manager] a la mezcla, los problemas de red se vuelven más graves debido a las ineficiencias en el protocolo WebDAV.
 
 Para ilustrar estas ineficiencias, el Adobe probó el rendimiento del sistema mediante WebDAV en el sistema operativo X. Se abrió, editó y guardó un archivo de InDesign de 3,5 MB. Se formularon las siguientes observaciones:
 
@@ -122,7 +122,7 @@ Para ilustrar estas ineficiencias, el Adobe probó el rendimiento del sistema me
 
 Al analizar el tiempo de ahorro promedio para los archivos a través de WebDAV, se encontró que el rendimiento aumenta drásticamente a medida que el ancho de banda aumenta hasta el nivel de 5-10 Mbps. Por lo tanto, Adobe recomienda que cada usuario que acceda al sistema simultáneamente tenga al menos 10 Mbps de velocidad de carga y 5-10 Mbps de ancho de banda.
 
-Para obtener más información, consulte [Solución de problemas AEM aplicación de escritorio](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
+Para obtener más información, consulte [Resolución de problemas [!DNL Experience Manager] aplicación de escritorio](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Restricciones     {#limitations}
 
@@ -142,8 +142,8 @@ El límite en el número de archivos que pueden existir en un almacén de datos 
 
 Si las representaciones se generan incorrectamente, utilice la biblioteca Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 &amp;ast; 1024 &amp;ast; 1024 píxeles)&#39;. *El tamaño del recurso es insignificante*.
 
-Es difícil estimar con precisión el tamaño del archivo TIFF compatible de serie (OOTB) con una pila específica para AEM porque factores adicionales, como el procesamiento de la influencia del tamaño de los píxeles. Es posible que AEM procesar un archivo de tamaño de 255 MB OOTB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
+Es difícil estimar con precisión el tamaño del archivo TIFF compatible de serie (OOTB) con una pila específica para [!DNL Experience Manager] porque hay factores adicionales, como el procesamiento de la influencia del tamaño de los píxeles. Es posible que [!DNL Experience Manager] pueda procesar un archivo de tamaño de 255 MB OOTB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
 
 ## Tamaño de los recursos {#size-of-assets}
 
-De forma predeterminada, AEM permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+De forma predeterminada, [!DNL Experience Manager] permite cargar recursos de tamaños de archivo de hasta 2 GB. Para cargar recursos muy grandes en AEM, consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

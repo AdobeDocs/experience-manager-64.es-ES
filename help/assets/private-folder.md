@@ -1,20 +1,20 @@
 ---
 title: Uso compartido de carpetas privadas
-description: Obtenga información sobre cómo crear una carpeta privada en Adobe Experience Manager (AEM) Assets, compartirla con otros usuarios y asignarles distintos privilegios.
+description: Obtenga información sobre cómo crear una carpeta privada en Adobe Experience Manager Assets, compartirla con otros usuarios y asignarles distintos privilegios.
 contentOwner: AG
-feature: Colaboración
+feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '445'
 ht-degree: 6%
 
 ---
 
 # Uso compartido de carpetas privadas {#private-folder-sharing}
 
-Puede crear una carpeta privada en la interfaz de usuario de Adobe Experience Manager (AEM) Assets que solo está disponible para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. En función del nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, como ver los recursos dentro de la carpeta o editar los recursos.
+Puede crear una carpeta privada en la interfaz de usuario de Adobe Experience Manager Assets que esté disponible exclusivamente para usted. Puede compartir esta carpeta privada con otros usuarios y asignarles varios privilegios. En función del nivel de privilegios que asigne, los usuarios pueden realizar varias tareas en la carpeta, como ver los recursos dentro de la carpeta o editar los recursos.
 
 1. En la consola Assets, pulse o haga clic en **[!UICONTROL Crear]** en la barra de herramientas y, a continuación, elija **[!UICONTROL Carpeta]** en el menú.
 
@@ -44,9 +44,9 @@ Puede crear una carpeta privada en la interfaz de usuario de Adobe Experience Ma
    >
    >Puede asignar varias funciones, como Editor, Propietario o Visualizador, al usuario con el que comparte la carpeta. Si asigna una función Propietario al usuario, este tiene privilegios de Editores en la carpeta. Además, el usuario puede compartir la carpeta con otros usuarios. Si asigna una función de editor, el usuario puede editar los recursos de la carpeta privada. Si asigna una función de visor, el usuario solo puede ver los recursos de la carpeta privada.
 
-1. Haga clic en **[!UICONTROL Guardar]**. Según la función que asigne, al usuario se le asignará un conjunto de privilegios en su carpeta privada cuando inicie sesión en AEM Assets.
+1. Haga clic en **[!UICONTROL Guardar]**. Según la función que asigne, al usuario se le asignará un conjunto de privilegios en su carpeta privada cuando inicie sesión en [!DNL Experience Manager] Assets.
 1. Haga clic en **[!UICONTROL Ok]** para cerrar el mensaje de confirmación.
-1. El usuario con el que comparte la carpeta recibe una notificación para compartir. Inicie sesión en AEM Assets con las credenciales del usuario para ver la notificación.
+1. El usuario con el que comparte la carpeta recibe una notificación para compartir. Inicie sesión en [!DNL Experience Manager] Recursos con las credenciales del usuario para ver la notificación.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

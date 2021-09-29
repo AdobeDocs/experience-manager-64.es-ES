@@ -1,20 +1,20 @@
 ---
 title: Configuración de Assets Insights
-description: Obtenga información sobre cómo configurar Assets Insights en AEM Assets.
+description: Obtenga información sobre cómo configurar Assets Insights en  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Información sobre Assets, Informes de Asset
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '230'
 ht-degree: 10%
 
 ---
 
 # Configuración de Assets Insights {#configuring-asset-insights}
 
-Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso sobre AEM recursos utilizados por sitios web de terceros. Para permitir que Assets Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
+Adobe Experience Manager Assets recupera los datos de uso de los [!DNL Experience Manager] recursos utilizados por sitios web de terceros desde Adobe Analytics. Para permitir que Assets Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso so
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Pulse o haga clic en **[!UICONTROL Autenticar]**.
-1. Una vez AEM haya autenticado las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que quiera que Assets Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Una vez AEM configurado el grupo de informes, pulse o haga clic en **[!UICONTROL Listo]**.
+1. Después de que [!DNL Experience Manager] autentique sus credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que desea que Assets Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Una vez [!DNL Experience Manager] configurado el grupo de informes, pulse o haga clic en **[!UICONTROL Listo]**.
 
 ## Rastreador de páginas {#page-tracker}
 
-Después de configurar la cuenta de Analytics, se genera el código Rastreador de páginas . Para permitir que Assets Insights rastree los recursos de AEM utilizados en sitios web de terceros, incluya el código de seguimiento de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de AEM Assets para generar el código de seguimiento de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas e Incrustar código en páginas web](touch-ui-using-page-tracker.md).
+Después de configurar la cuenta de Analytics, se genera el código Rastreador de páginas . Para permitir que Assets Insights rastree los [!DNL Experience Manager] recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas en [!DNL Experience Manager] Assets para generar el código de seguimiento de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas e Incrustar código en páginas web](touch-ui-using-page-tracker.md).
 
 1. En AEM, haga clic en **[!UICONTROL Tools > Assets]**.
 

@@ -1,24 +1,24 @@
 ---
 title: Desarrollo de proxy de recursos
-description: 'Un proxy es una instancia AEM que utiliza trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy AEM, las operaciones compatibles, los componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
+description: 'Un proxy es un proxy [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] , operaciones compatibles, componentes proxy y cómo desarrollar un trabajador proxy personalizado. '
 contentOwner: AG
-feature: Procesamiento de recursos
+feature: Asset Processing
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Desarrollo de proxy de recursos {#assets-proxy-development}
 
-Adobe Experience Manager (AEM) Assets utiliza un proxy para distribuir el procesamiento de determinadas tareas.
+Adobe Experience Manager Assets utiliza un proxy para distribuir el procesamiento de determinadas tareas.
 
-Un proxy es una instancia específica (y a veces independiente) AEM que utiliza los trabajadores proxy como procesadores responsables de gestionar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un proxy AEM Assets, se puede utilizar para cargar recursos para procesarlos en AEM Assets. Por ejemplo, el [IDS proxy worker](indesign.md) utiliza un InDesign Server para procesar archivos para utilizarlos en AEM Assets.
+Un proxy es una instancia [!DNL Experience Manager] específica (y a veces independiente) que utiliza trabajadores proxy como procesadores responsables de administrar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un proxy de [!DNL Experience Manager] Assets, se puede utilizar para cargar recursos para procesarlos en [!DNL Experience Manager] Assets. Por ejemplo, el [IDS proxy worker](indesign.md) utiliza un InDesign Server para procesar archivos para usarlos en [!DNL Experience Manager] Assets.
 
-Cuando el proxy es una instancia de AEM independiente, esto ayuda a reducir la carga en las instancias de creación de AEM. De forma predeterminada, AEM Assets ejecuta las tareas de procesamiento de recursos en la misma JVM (externalizada mediante proxy) para reducir la carga en la instancia de creación de AEM.
+Cuando el proxy es una instancia [!DNL Experience Manager] independiente, esto ayuda a reducir la carga en las instancias de creación [!DNL Experience Manager]. De forma predeterminada, [!DNL Experience Manager] Assets ejecuta las tareas de procesamiento de recursos en la misma JVM (externalizada mediante proxy) para reducir la carga en la instancia de creación [!DNL Experience Manager].
 
 ## Proxy (acceso HTTP) {#proxy-http-access}
 
@@ -110,7 +110,7 @@ El siguiente es un ejemplo de uso de API:
 >
 >La documentación de referencia para la API proxy está disponible en [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html).
 
-Tanto las configuraciones de trabajo proxy como las de proxy están disponibles mediante configuraciones de servicios en la nube a las que se puede acceder desde la consola de AEM Assets **Tools** o en `/etc/cloudservices/proxy`. Se espera que cada trabajador proxy agregue un nodo en `/etc/cloudservices/proxy` para detalles de configuración específicos del trabajador (por ejemplo, `/etc/cloudservices/proxy/workername`).
+Tanto las configuraciones de trabajo proxy como las del proxy están disponibles a través de las configuraciones de servicios en la nube como accesibles desde la consola [!DNL Experience Manager] Assets **Tools** o en `/etc/cloudservices/proxy`. Se espera que cada trabajador proxy agregue un nodo en `/etc/cloudservices/proxy` para detalles de configuración específicos del trabajador (por ejemplo, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
@@ -133,9 +133,9 @@ El siguiente es un ejemplo de uso de API:
 
 ### Desarrollo de un Trabajador de Proxy Personalizado {#developing-a-customized-proxy-worker}
 
-El [IDS proxy worker](indesign.md) es un ejemplo de un programa de trabajo de proxy de AEM Assets que ya se ha proporcionado de forma predeterminada para externalizar el procesamiento de los recursos de Indesign.
+El [IDS proxy worker](indesign.md) es un ejemplo de [!DNL Experience Manager] Assets proxy worker que ya se proporciona de forma predeterminada para externalizar el procesamiento de los recursos de Indesign.
 
-También puede desarrollar y configurar su propio trabajador proxy de AEM Assets para crear un trabajador especializado que distribuya y externalice sus tareas de procesamiento de AEM Assets.
+También puede desarrollar y configurar su propio [!DNL Experience Manager] trabajador proxy de recursos para crear un trabajador especializado para distribuir y externalizar sus tareas de procesamiento de [!DNL Experience Manager] recursos.
 
 La configuración de su propio trabajador proxy personalizado requiere que:
 
@@ -177,12 +177,12 @@ El diagrama y los pasos siguientes detallan cómo continuar:
 
 >[!NOTE]
 >
->Lo que el marco de proxy de AEM Assets no proporciona de forma predeterminada es el mecanismo de agrupación.
+>Lo que el marco de proxy de [!DNL Experience Manager] Assets no proporciona de forma predeterminada es el mecanismo de agrupación.
 >
->La integración de InDesign permite el acceso a un grupo de servidores de indesign (IDSPool). Este agrupamiento es específico de la integración de Indesign y no forma parte del marco de proxy de AEM Assets.
+>La integración de InDesign permite el acceso a un grupo de servidores de indesign (IDSPool). Este agrupamiento es específico de la integración de Indesign y no forma parte del marco de proxy de [!DNL Experience Manager] Assets.
 
 >[!NOTE]
 >
 >Sincronización de resultados:
 >
->Con n instancias que utilizan el mismo proxy, el resultado de procesamiento permanece con el proxy. Es tarea del cliente (AEM Author) solicitar el resultado utilizando el mismo identificador de trabajo único que se da al cliente en la creación de trabajos. El proxy simplemente realiza el trabajo y mantiene el resultado listo para ser solicitado.
+>Con n instancias que utilizan el mismo proxy, el resultado de procesamiento permanece con el proxy. Es tarea del cliente ([!DNL Experience Manager] Author) solicitar el resultado utilizando el mismo identificador de trabajo único que se le da al cliente en la creación de trabajos. El proxy simplemente realiza el trabajo y mantiene el resultado listo para ser solicitado.

@@ -2,12 +2,12 @@
 title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en AEM.
 contentOwner: AG
-feature: Traducción
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1939'
 ht-degree: 23%
 
 ---
@@ -282,9 +282,9 @@ Si utiliza esta opción, el conjunto de recursos se agregará a un proyecto de t
 
 ## Creación de copias de idioma temporales {#creating-temporary-language-copies}
 
-Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. AEM Assets almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma permanece sin cambios.
+Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. [!DNL Experience Manager] Assets almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma permanece sin cambios.
 
-1. Pulse o haga clic en la carpeta raíz de origen de **[!UICONTROL Textos en idiomas]** para la que ya ha creado un texto en un idioma y, a continuación, pulse o haga clic en **[!UICONTROL Mostrar en recursos]** para abrir la carpeta en AEM Assets.
+1. Pulse o haga clic en la carpeta raíz de origen de **[!UICONTROL Textos en idiomas]** para la que ya ha creado un texto en un idioma y, a continuación, pulse o haga clic en **[!UICONTROL Mostrar en recursos]** para abrir la carpeta en Assets.[!DNL Experience Manager]
 
    ![imagen_1-99](assets/chlimage_1-99.png)
 

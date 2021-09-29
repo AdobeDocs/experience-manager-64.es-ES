@@ -1,13 +1,13 @@
 ---
 title: Edición o adición de metadatos
-description: Obtenga información sobre los metadatos de recursos en AEM Assets y sobre las distintas formas de editarlos.
+description: Obtenga información sobre los metadatos de recursos en  [!DNL Experience Manager] Assets y sobre las distintas formas de editarlos.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
-Como las empresas necesitan vocabularios de metadatos controlados y fiables, AEM Assets no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, los desarrolladores sí pueden. Consulte [Creación de una nueva propiedad de metadatos para Assets](meta-edit.md#editing-metadata-schema).
+Debido a que las empresas necesitan vocabularios de metadatos fiables y controlados, [!DNL Experience Manager] Assets no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, los desarrolladores sí pueden. Consulte [Creación de una nueva propiedad de metadatos para Assets](meta-edit.md#editing-metadata-schema).
 
 ## Edición de metadatos de un recurso {#editing-metadata-for-an-asset}
 
@@ -28,7 +28,7 @@ Para editar metadatos:
    * En la miniatura del recurso, seleccione la acción rápida **[!UICONTROL Ver propiedades]**.
    * En la página de recursos, pulse o haga clic en el icono **[!UICONTROL Ver propiedades]** ![icono de información](assets/do-not-localize/info_icon.png) de la barra de herramientas.
 
-   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en AEM Assets.
+   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en [!DNL Experience Manager] Assets.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ XMP escritura en retorno es compatible y está habilitada para las plataformas y
 
 Para obtener más información sobre cómo editar el esquema de metadatos, consulte [Edición de formularios de esquema de metadatos](metadata-schemas.md#editing-metadata-schema-forms).
 
-## Registro de un espacio de nombres personalizado en AEM {#registering-a-custom-namespace-within-aem}
+## Registro de un espacio de nombres personalizado en [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
 Puede agregar sus propias áreas de nombres dentro de AEM. Del mismo modo que hay áreas de nombres predefinidas como cq, jcr y sling, puede tener un espacio de nombres para los metadatos del repositorio y el procesamiento xml.
 

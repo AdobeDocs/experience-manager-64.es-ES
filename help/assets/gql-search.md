@@ -1,20 +1,20 @@
 ---
 title: Búsqueda de texto completo de GQL
-description: Explore la función de búsqueda de texto completo de GQL en AEM Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
+description: Explore la función de búsqueda de texto completo de GQL en  [!DNL Experience Manager] Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 contentOwner: AG
-feature: Buscar,Metadatos
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
 
 # Búsqueda de texto completo de GQL {#gql-full-text-search}
 
-Explore la función de búsqueda de texto completo de GQL en AEM Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
+Explore la función de búsqueda de texto completo de GQL en [!DNL Experience Manager] Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 
 La función de búsqueda de texto completo de GQL permite buscar recursos en función de metadatos específicos, como título, descripción, autor, etc.
 
@@ -38,7 +38,7 @@ Por ejemplo, para buscar recursos que tengan el título &quot;Target&quot;, siga
 
    ![gql_search](assets/gql_search.png)
 
-1. Pulse **[!UICONTROL Enter]**. La interfaz de usuario de AEM Assets solo muestra los recursos cuyo título coincide exactamente con &quot;Target&quot;.
+1. Pulse **[!UICONTROL Enter]**. La interfaz de usuario [!DNL Assets] solo muestra los recursos cuyo título coincide exactamente con &quot;Target&quot;.
 
 La función de búsqueda de texto completo de GQL permite buscar recursos en función de lo siguiente:
 
@@ -112,7 +112,6 @@ title: &quot;Reunión&quot;;
 >La ruta de acceso, el límite, el tamaño y el orden de las propiedades no se pueden Oed con ninguna otra propiedad.
 >
 >La palabra clave de una propiedad generada por el usuario es su etiqueta de campo en el editor de propiedades en minúsculas, con espacios eliminados.
-
 
 >[!NOTE]
 >

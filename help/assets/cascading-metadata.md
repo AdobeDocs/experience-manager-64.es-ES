@@ -2,13 +2,13 @@
 title: Metadatos en cascada
 description: Este artículo describe cómo definir metadatos en cascada para los recursos.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 13%
+source-wordcount: '977'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ Estos son algunos casos de uso para los que puede definir metadatos en cascada:
 * Cambiar las opciones que se muestran para un campo concreto en función del valor especificado en otro campo.
 * Establezca el valor de metadatos predeterminado en un campo concreto en función del valor especificado en otro campo.
 
-## Configurar metadatos en cascada en AEM {#configure-cascading-metadata-in-aem}
+## Configurar metadatos en cascada en [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Imagine un escenario en el que desea mostrar metadatos en cascada basados en el tipo de recurso seleccionado. Algunos ejemplos
 
@@ -42,7 +42,7 @@ Imagine un escenario en el que desea mostrar metadatos en cascada basados en el 
 
 Independientemente del tipo de recurso elegido, muestre la información de copyright como campo obligatorio.
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata schemas]**.
 1. En la página **[!UICONTROL Formularios de esquema]**, seleccione un formulario de esquema y, a continuación, pulse o haga clic en **[!UICONTROL Editar]** en la barra de herramientas para editar el esquema.
 
    ![select_form](assets/select_form.png)
@@ -60,7 +60,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 1. Los pares clave-valor son las opciones que se proporcionan a un usuario de formulario. Puede proporcionar los pares clave-valor manualmente o desde un archivo JSON.
 
    * Para especificar los valores manualmente, seleccione **[!UICONTROL Agregar manualmente]**, pulse o haga clic en **[!UICONTROL Agregar opción]** y especifique el texto y el valor de la opción. Por ejemplo, especifique los tipos de recurso Vídeo, PDF, Word e Imagen.
-   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Agregar mediante la ruta JSON]** y proporcione la ruta del archivo JSON. AEM busca los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
+   * Para recuperar los valores de un archivo JSON de forma dinámica, seleccione **[!UICONTROL Agregar mediante la ruta JSON]** y proporcione la ruta del archivo JSON. [!DNL Experience Manager] recupera los pares clave-valor en tiempo real cuando se presenta el formulario al usuario.
 
    Ambas opciones son mutuamente excluyentes. No puede importar las opciones de un archivo JSON y editarlas manualmente.
 

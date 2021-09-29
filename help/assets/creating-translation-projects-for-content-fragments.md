@@ -1,8 +1,8 @@
 ---
 title: Creación de proyectos de traducción para fragmentos de contenido
-seo-title: Creación de proyectos de traducción para fragmentos de contenido
+seo-title: Creating Translation Projects for Content Fragments
 description: Aprenda a traducir fragmentos de contenido.
-seo-description: Aprenda a traducir fragmentos de contenido.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ También puede crear copias de idioma temporales para fragmentos de forma simila
 
 ## Traducción de fragmentos de medios mixtos {#translating-mixed-media-fragments}
 
-AEM permite traducir fragmentos de contenido que incluyen varios tipos de recursos de medios y colecciones. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma de destino.
+[!DNL Experience Manager] permite traducir fragmentos de contenido que incluyen varios tipos de recursos de medios y colecciones. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma de destino.
 
 Si el fragmento de contenido incluye una colección, los recursos de la colección se traducen junto con el fragmento de contenido. Las copias traducidas de los recursos se almacenan en la raíz del idioma de destino correspondiente en una ubicación que coincide con la ubicación física de los recursos de origen en la raíz del idioma de origen.
 
 Para poder traducir fragmentos de contenido que incluyen medios mixtos, edite primero el marco de traducción predeterminado para permitir la traducción de recursos en línea y colecciones asociadas con fragmentos de contenido.
 
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
+1. Pulse o haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
 1. Busque **[!UICONTROL Translation Integration]** en **[!UICONTROL Adobe Marketing Cloud]** y pulse o haga clic en **[!UICONTROL Mostrar configuraciones]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

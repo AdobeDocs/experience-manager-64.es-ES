@@ -2,13 +2,13 @@
 title: compatibilidad Camera Raw
 description: Obtenga información sobre cómo habilitar la compatibilidad Camera Raw en Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 2%
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Para activar la compatibilidad Camera Raw en Adobe Experience Manager Assets, si
 >
 >Asegúrese de que la configuración anterior es la misma que la configuración **[!UICONTROL Ejemplo de Activo de actualización de DAM con la configuración del paso de manejo Camera Raw y DNG]**.
 
-Ahora puede importar archivos sin procesar de cámara en AEM Assets. Después de instalar el paquete Camera Raw y configurar el flujo de trabajo necesario, aparece la opción **[!UICONTROL Ajuste de imagen]** en la lista de paneles laterales.
+Ahora puede importar archivos sin procesar de cámara en [!DNL Experience Manager] Assets. Después de instalar el paquete Camera Raw y configurar el flujo de trabajo necesario, aparece la opción **[!UICONTROL Ajuste de imagen]** en la lista de paneles laterales.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 

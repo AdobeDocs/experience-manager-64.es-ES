@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: Etiquetas inteligentes,Etiquetado,Buscar
+feature: Smart Tags,Tagging,Search
 role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ También puede asignar una clasificación superior a una etiqueta para aumentar 
 1. Pulse o haga clic en **[!UICONTROL Guardar]** y, a continuación, pulse o haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo de éxito.
 1. Vaya a la página de propiedades de la imagen. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-## Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understand-search-results-with-smart-tags}
+## Comprender los [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understand-search-results-with-smart-tags}
 
-De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en aplica etiquetas inteligentes. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda aparece un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
+De forma predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en aplica etiquetas inteligentes. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda aparece un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
 
 * activos con ambas palabras clave, `woman` y `running` en los metadatos.
 * activos con etiquetas inteligentes con cualquiera de las palabras clave.

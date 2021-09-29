@@ -3,12 +3,12 @@ title: Administrar colecciones de recursos
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Colecciones
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 15%
 
 ---
@@ -111,7 +111,7 @@ Para crear una colección inteligente, siga los pasos:
 
    La etiqueta del botón **[!UICONTROL Crear selección inteligente]** cambia a **[!UICONTROL Editar selección inteligente]**. Para editar la configuración de la colección inteligente, seleccione **[!UICONTROL Archivos]** en la lista **[!UICONTROL Archivos y carpetas]**. A continuación, pulse o haga clic en el botón **[!UICONTROL Editar selección inteligente]**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## Agregar recursos a una colección {#adding-assets-to-a-collection}
 
@@ -195,7 +195,7 @@ Para personalizar la página [!UICONTROL Properties] de metadatos, incluyendo la
 
 ## Buscar colecciones {#searching-collections}
 
-Puede buscar colecciones desde la consola Colecciones . Al buscar con palabras clave en el cuadro Omnisearch , AEM Assets busca los nombres de las colecciones, los metadatos y las etiquetas añadidas a las colecciones.
+Puede buscar colecciones desde la consola Colecciones . Al buscar palabras clave en el cuadro Omnisearch , [!DNL Experience Manager] Assets busca nombres de colección, metadatos y las etiquetas agregadas a las colecciones.
 
 Si busca colecciones del nivel superior, solo se devolverán colecciones individuales en los resultados de búsqueda. Se excluyen los recursos o carpetas de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
@@ -203,7 +203,7 @@ Si busca colecciones del nivel superior, solo se devolverán colecciones individ
 
 En la consola Colecciones , toque o haga clic en una colección para abrirla.
 
-Dentro de una colección, AEM búsqueda de recursos está restringida a recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos coincidentes y las carpetas secundarias de la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, carpetas y otras colecciones que coinciden con los miembros directos de la colección.
+Dentro de una colección, la búsqueda está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos coincidentes y las carpetas secundarias de la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, carpetas y otras colecciones que coinciden con los miembros directos de la colección.
 
 ## Editar configuración de colección {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 >[!MORELIKETHIS]
 >
 >* [Configuración de las notificaciones por correo electrónico de Recursos Experience Manager](/help/sites-administering/notification.md#assetsconfig)
-* [Crear una tarea de revisión para colecciones](bulk-approval.md)
+>* [Crear una tarea de revisión para colecciones](bulk-approval.md)
 

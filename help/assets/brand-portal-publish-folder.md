@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 28%
+source-wordcount: '552'
+ht-degree: 27%
 
 ---
 
 # Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal}
 
-Como administrador de recursos de Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) para su organización. Sin embargo, primero debe integrar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md).
+Como administrador de Adobe Experience Manager Assets, puede publicar recursos y carpetas en la instancia [!DNL Experience Manager Assets Brand Portal] (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) de su organización. Sin embargo, primero debe integrar [!DNL Experience Manager Assets] con [!DNL Brand Portal]. Para obtener más información, consulte [Configuración [!DNL Experience Manager Assets] con Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Después de publicar un recurso o una carpeta, estará disponible para los usuarios de Brand Portal.
 
-Si realiza las modificaciones posteriores al recurso o la carpeta originales en AEM Assets, los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar el recurso o la carpeta. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
+Si realiza las modificaciones posteriores al recurso o la carpeta originales en [!DNL Assets], los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar el recurso o la carpeta. Esta función garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
 
 ## Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. En la interfaz de AEM Assets, pase el ratón sobre la carpeta que quiera y seleccione la opción **[!UICONTROL Publicar]** en las acciones rápidas.
+1. En la interfaz [!DNL Assets], pase el ratón sobre la carpeta deseada y seleccione la opción **[!UICONTROL Publicar]** en las acciones rápidas.
 
    Como alternativa, seleccione la carpeta deseada y siga los pasos adicionales.
 
@@ -57,11 +57,11 @@ Si realiza las modificaciones posteriores al recurso o la carpeta originales en 
 
 ## Cancelar publicación desde Brand Portal {#unpublish-folders-from-brand-portal}
 
-Puede eliminar cualquier carpeta de recursos publicada en Brand Portal cancelando la publicación de la instancia de autor de AEM. Después de cancelar la publicación de la carpeta original, su copia ya no estará disponible para los usuarios de Brand Portal.
+Puede eliminar cualquier carpeta de recursos publicada en Brand Portal cancelando la publicación de la instancia de autor [!DNL Experience Manager]. Después de cancelar la publicación de la carpeta original, su copia ya no estará disponible para los usuarios de Brand Portal.
 
 Tiene la opción de cancelar la publicación de carpetas de Brand Portal rápidamente o programarlas para una fecha y hora posteriores. Para cancelar la publicación de carpetas de recursos desde Brand Portal:
 
-1. En la interfaz de AEM Assets en la instancia de autor de AEM, seleccione la carpeta en la que desea cancelar la publicación.
+1. En la interfaz [!DNL Assets] de la instancia de autor [!DNL Experience Manager], seleccione la carpeta en la que desea cancelar la publicación.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

@@ -2,12 +2,12 @@
 title: Organizar sus recursos digitales
 description: Organice los recursos digitales, las imágenes, los archivos, las carpetas, etc. mediante el Experience Manager.
 contentOwner: AG
-feature: Administración de recursos,Buscar
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Todos los recursos digitales, metadatos y contenido de documentos de Microsoft Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en los metadatos de Digital Asset Management.
 
-AEM Assets admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica mediante carpetas o puede organizarlas de forma desordenada y según sea necesario, por ejemplo, mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
+[!DNL Experience Manager] Assets admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica mediante carpetas o puede organizarlas de forma desordenada y según sea necesario, por ejemplo, mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Organizar recursos en carpetas {#organize-using-folders}
 
@@ -36,7 +36,7 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
    * **Carpetas basadas en datos** : contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que cualquier personalización o automatización siga funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si un recurso ya está publicado, utilice AEM para moverlo a otra carpeta y volver a publicar desde su nueva ubicación, la ubicación del recurso publicado original seguirá estando disponible, junto con el recurso recién republicado. El recurso publicado original, sin embargo, está *perdido* para AEM y no se puede cancelar la publicación. Por lo tanto, se recomienda cancelar la publicación de un recurso y moverlo a una carpeta diferente.
+* Si ya se ha publicado un recurso, utilice [!DNL Experience Manager] para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación del recurso publicado original seguirá estando disponible, junto con el recurso recién republicado. El recurso publicado original, sin embargo, está *perdido* en [!DNL Experience Manager] y no se puede cancelar la publicación. Por lo tanto, se recomienda cancelar la publicación de un recurso y moverlo a una carpeta diferente.
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 

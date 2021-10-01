@@ -1,19 +1,19 @@
 ---
 title: Ejecución de AEM con el modo de espera pasiva TarMK
-seo-title: Ejecución de AEM con el modo de espera pasiva TarMK
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Aprenda a crear, configurar y mantener una configuración de modo de espera pasiva de TarMK.
-seo-description: Aprenda a crear, configurar y mantener una configuración de modo de espera pasiva de TarMK.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuración
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,17 @@ El contenido se sincroniza linealmente entre la instancia principal y las instan
 >
 >Para obtener información sobre implementaciones más disponibles, consulte la página [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
 
-## Cómo funciona {#how-it-works}
+>[!NOTE]
+>
+>Cuando se configura la instancia de espera o se deriva del nodo primario, solo permite el acceso a las dos consolas siguientes (para actividades relacionadas con la administración):
+>
+>* CRXDE Lite
+>* Consola web OSGI
+
+>
+>No se puede acceder a otras consolas.
+
+## Funcionamiento {#how-it-works}
 
 En la instancia de AEM principal, se abre un puerto TCP que está escuchando los mensajes entrantes. Actualmente, hay dos tipos de mensajes que los esclavos enviarán al maestro:
 
@@ -83,8 +93,7 @@ Además, puede especificar las instancias en espera que pueden conectarse restri
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
+>Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 
 Para crear una configuración de espera en frío de TarMK, primero debe crear las instancias en espera realizando una copia del sistema de archivos de toda la carpeta de instalación del primario a una nueva ubicación. A continuación, puede iniciar cada instancia con un modo de ejecución que especifique su función ( `primary` o `standby`).
 
@@ -207,7 +216,6 @@ El servicio también se puede configurar mediante la consola web mediante:
 >
 >Para ello, vaya a *http://localhost:4502/system/console/status-slingsettings* y compruebe la línea **&quot;Run Modes&quot;**.
 
-
 ## Primera sincronización {#first-time-synchronization}
 
 Una vez finalizada la preparación y iniciada la espera por primera vez, habrá mucho tráfico de red entre las instancias a medida que la espera alcance el principal. Puede consultar los registros para observar el estado de la sincronización.
@@ -306,7 +314,7 @@ En caso de que la instancia principal falle por cualquier motivo, puede configur
 1. Agregue el nuevo principal al equilibrador de carga.
 1. Cree e inicie una nueva instancia de espera. Para obtener más información, consulte el procedimiento anterior sobre [Creación de una configuración de espera pasiva AEM TarMK](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
-## Aplicación de revisiones a una configuración de espera pasiva {#applying-hotfixes-to-a-cold-standby-setup}
+## Aplicación de revisiones a una configuración en espera pasiva {#applying-hotfixes-to-a-cold-standby-setup}
 
 La forma recomendada de aplicar revisiones a una configuración de espera en frío es instalarlas en la instancia principal y luego clonarlas en una nueva instancia de espera en frío con las revisiones instaladas.
 

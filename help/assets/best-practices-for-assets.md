@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ La administración de archivos grandes y flujos de trabajo en ejecución en [!DN
 * [[!DNL Experience Manager] y ](aem-cc-integration-best-practices.md)
 prácticas recomendadas para la integración de Creative CloudPuede integrar la  [!DNL Experience Manager] implementación con Creative Cloud de varias formas. Seguir algunas prácticas recomendadas para racionalizar los flujos de trabajo de integración y transferencia de recursos ayuda a lograr la máxima eficacia. Esta guía incluye prácticas recomendadas sobre la integración de [!DNL Experience Manager] Assets con Adobe Creative Cloud.
 * (Obsoleto) [[!DNL Experience Manager] a la carpeta de Creative Cloud para compartir prácticas recomendadas](aem-cc-folder-sharing-best-practices.md)
-Puede configurar [!DNL Experience Manager] para permitir que los usuarios de DAM compartan carpetas con usuarios de Creative Cloud (CC), de modo que estén disponibles como carpetas compartidas en el servicio Recursos de Creative Cloud. La función se puede utilizar para intercambiar archivos entre equipos creativos y usuarios de DAM. En esta guía se explican las prácticas recomendadas para aprovechar la función de uso compartido de [!DNL Experience Manager] en carpetas del Creative Cloud.
+Puede configurar [!DNL Experience Manager] para permitir que los usuarios de DAM compartan carpetas con usuarios de Creative Cloud, de modo que estén disponibles como carpetas compartidas en el servicio Recursos de Creative Cloud. La función se puede utilizar para intercambiar archivos entre equipos creativos y usuarios de DAM. En esta guía se explican las prácticas recomendadas para aprovechar la función de uso compartido de [!DNL Experience Manager] en carpetas del Creative Cloud.

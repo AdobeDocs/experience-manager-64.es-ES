@@ -1,10 +1,10 @@
 ---
 title: Configuración de la integración de AEM Assets con Experience Cloud
 description: Obtenga información sobre cómo configurar la integración de AEM Assets con Experience Cloud.
-feature: Administración de activos
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 1%
@@ -54,7 +54,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 1. En la lista **[!UICONTROL Scope]**, seleccione **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** y **[!UICONTROL cc-share]**.
 1. Haga clic en **[!UICONTROL Crear]**. Un mensaje notifica que se ha creado la aplicación.
 
-   ![Notificación de la creación correcta de la aplicación para integrar AEM Assets con Adobe CC](assets/chlimage_1-289.png)
+   ![Notificación de creación correcta de la aplicación para integrar AEM Assets con Adobe Creative Cloud](assets/chlimage_1-289.png)
 
 1. Copie el **[!UICONTROL Application ID]** que se genera para la nueva aplicación.
 
@@ -74,7 +74,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título y un nombre para la nueva configuración y haga clic en **[!UICONTROL Crear]**.
 
-   ![Asigne un nombre a una nueva configuración para integrar AEM Assets y CC](assets/cloudservices_configure_mc.png)
+   ![Asigne un nombre a una nueva configuración para integrar AEM Assets y Creative Cloud](assets/cloudservices_configure_mc.png)
 
 1. En el campo **[!UICONTROL URL del inquilino]**, especifique la URL para AEM Assets. En el pasado, si la URL se definió como `https://<tenant_id>.marketing.adobe.com`, cámbiela por `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Prácticas recomendadas para la integración de recursos y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
-* [Prácticas recomendadas de uso compartido de recursos en carpetas de Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [Prácticas recomendadas de uso compartido de recursos en carpetas de Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

@@ -1,8 +1,8 @@
 ---
 title: AEM Conceptos principales
-seo-title: Conceptos básicos
+seo-title: The Basics
 description: Una visión general de los conceptos principales de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluida la comprensión de JCR, Sling, OSGi, Dispatcher, flujos de trabajo y MSM
-seo-description: Una visión general de los conceptos principales de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluida la comprensión de JCR, Sling, OSGi, Dispatcher, flujos de trabajo y MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: 0b263211-6cfd-4b4c-bfa5-e36f5e06c861
-translation-type: tm+mt
-source-git-commit: 5c78f7e5143982490739946d5d142e144fca9593
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '3346'
-ht-degree: 0%
+source-wordcount: '3313'
+ht-degree: 1%
 
 ---
 
-# Conceptos principales de AEM {#aem-core-concepts}
+# AEM Conceptos principales {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -42,11 +41,11 @@ También se recomienda leer y seguir las [Directrices y prácticas recomendadas]
 
 ## Repositorio de contenido Java {#java-content-repository}
 
-El estándar del repositorio de contenido Java (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
+El estándar del repositorio de contenido Java (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
 
 El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El paquete [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; se utiliza para el acceso directo y la manipulación del contenido del repositorio.
 
 ## Experience Server (CRX) y Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -115,13 +114,13 @@ Podemos dividirla en sus partes compuestas:
 
 **selector(s)** Se utiliza para métodos alternativos de renderización del contenido; en este ejemplo, una versión compatible con impresora en formato A4.
 
-**formato** extensionContent; también especifica la secuencia de comandos que se utilizará para la renderización.
+**** formato extensionContent; también especifica la secuencia de comandos que se utilizará para la renderización.
 
-**** suffixCan para especificar información adicional.
+**** suffixCan se utiliza para especificar información adicional.
 
 **param(s)** Cualquier parámetro requerido para el contenido dinámico.
 
-#### De URL a contenido y scripts {#from-url-to-content-and-scripts}
+#### De URL a contenido y secuencias de comandos {#from-url-to-content-and-scripts}
 
 Con estos principios:
 
@@ -144,7 +143,7 @@ La solicitud se desglosa y se extrae la información necesaria. Se busca en el r
 
 Sling también permite que otras cosas que no sean nodos JCR sean recursos, pero esta es una característica avanzada.
 
-### Localización del script {#locating-the-script}
+### Localización de la secuencia de comandos {#locating-the-script}
 
 Cuando se encuentra el recurso apropiado (nodo de contenido), se extrae el **tipo de recurso de sling**. Esta es una ruta, que localiza la secuencia de comandos que se utilizará para procesar el contenido.
 
@@ -207,7 +206,7 @@ Utilizando el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` entonces
 
 * Si no se encuentra ningún script, se utilizará el script predeterminado.
 
-   Actualmente, la representación predeterminada es compatible con texto sin formato (.txt), HTML (.html) y JSON (.json), y en todos ellos se enumerarán las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es agrupar el recurso (siempre que sea posible).
+   Actualmente, la representación predeterminada se admite como texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales enumerarán las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es agrupar el recurso (siempre que sea posible).
 * Para la gestión de errores http (códigos 403 o 404) Sling buscará un script en:
 
    * la ubicación /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -361,7 +360,7 @@ Los cuadros de diálogo se crean combinando utilidades.
 
 AEM ha sido desarrollado utilizando la biblioteca de widgets de ExtJS.
 
-**** El cuadro de diálogoA es un tipo especial de utilidad.
+**** El cuadro de diálogo es un tipo especial de utilidad.
 
 Para editar contenido, AEM utiliza los cuadros de diálogo definidos por el desarrollador de la aplicación. Combinan una serie de utilidades para presentar al usuario todos los campos y acciones necesarios para editar el contenido relacionado.
 
@@ -384,7 +383,7 @@ Define el componente de página que se utiliza para procesar la página y el con
 
 **Componente de página (componente de nivel superior)** El componente que se utilizará para procesar la página.
 
-**** PáginaA es una &quot;instancia&quot; de una plantilla.
+**** PáginaUna página es una &quot;instancia&quot; de una plantilla.
 
 Una página tiene un nodo de jerarquía de tipo cq:Page y un nodo de contenido de tipo cq:PageContent. La propiedad sling:resourceType del nodo de contenido apunta al componente de página utilizado para procesar la página.
 
@@ -392,7 +391,7 @@ Por ejemplo, para obtener el nombre de la página actual, puede utilizar el sigu
 
 S`tring pageName = currentPage.getName();`
 
-Con currentPage como el objeto de página actual. Para obtener más información sobre la manipulación de objetos de página, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Con currentPage como el objeto de página actual. Para obtener más información sobre la manipulación de objetos de página, consulte [Javadocs](https://helpx.adobe.com/es/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Administrador** de páginasEl administrador de páginas es una interfaz que proporciona métodos para las operaciones a nivel de página.
 
@@ -400,7 +399,7 @@ Por ejemplo, para obtener la página contenedora de un recurso, puede utilizar e
 
 Page myPage = pageManager.getContainPage(myResource);
 
-Con pageManager como el objeto de administrador de páginas y myResource como un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Con pageManager como el objeto de administrador de páginas y myResource como un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Javadocs](https://helpx.adobe.com/es/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 
@@ -450,7 +449,7 @@ Con AEM, un entorno de producción a menudo consta de dos tipos diferentes de in
 
 Dispatcher es la herramienta de Adobe tanto para el almacenamiento en caché como para el equilibrio de carga. Encontrará más información en [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (sistema de revisión de origen) {#filevault-source-revision-system}
+## FileVault (sistema de revisión de la fuente) {#filevault-source-revision-system}
 
 FileVault proporciona su repositorio JCR con asignación de sistemas de archivos y control de versiones. Se puede utilizar para administrar AEM proyectos de desarrollo con compatibilidad total para almacenar y versionar código de proyecto, contenido, configuraciones, etc., en sistemas de control de versiones estándar (por ejemplo, Subversion).
 

@@ -1,19 +1,18 @@
 ---
 title: Administración de derechos de usuario, grupo y acceso
-seo-title: Administración de derechos de usuario, grupo y acceso
+seo-title: User, Group and Access Rights Administration
 description: Obtenga información sobre la administración de usuarios, grupos y derechos de acceso en AEM.
 feature: Security
-seo-description: Obtenga información sobre la administración de usuarios, grupos y derechos de acceso en AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -64,7 +63,7 @@ CRX le permite configurar los derechos de acceso para las cuentas de usuario y d
 
 >[!NOTE]
 >
->CRX implementa [control de acceso como se define en JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [control de acceso como se define en JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Se configura una instalación estándar de un repositorio CRX para utilizar listas de control de acceso basadas en recursos. Esta es una posible implementación del control de acceso JSR-283 y una de las implementaciones presentes con Jackrabbit.
 
@@ -115,7 +114,6 @@ La lista de derechos de acceso aplicables al sujeto se elabora a partir de:
 >
 
 
-
 ### Resolución de solicitudes y derechos de acceso {#resolving-request-and-access-rights}
 
 Cuando CRX gestiona la solicitud, compara la solicitud de acceso del sujeto con la lista de control de acceso en el nodo del repositorio:
@@ -124,7 +122,7 @@ Por lo tanto, si Linda solicita actualizar el nodo `/features` en la siguiente e
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-### Orden de prioridad {#order-of-precedence}
+### Orden de precedencia {#order-of-precedence}
 
 Los derechos de acceso en CRX se evalúan de la siguiente manera:
 
@@ -227,7 +225,7 @@ Debe iniciar sesión en el espacio de trabajo correspondiente y, a continuación
 **Propiedades**
 
 * ****
-UserIDShort name de la cuenta, utilizado al acceder a CRX.
+UserIDShort name para la cuenta, utilizado al acceder a CRX.
 
 * **Nombre principal**
 Un nombre de texto completo para la cuenta.
@@ -278,7 +276,6 @@ Si una cuenta se hace pasar por otra, es muy difícil de ver. Los archivos de re
 >* grupos con muchos miembros
 
 >
-
 
 
 ### Actualización de una cuenta de usuario {#updating-a-user-account}
@@ -433,7 +430,7 @@ Puede agregar miembros al grupo actual:
 
 O elimine un miembro existente con el símbolo de papelera.
 
-## Administración de derechos de acceso {#access-right-management}
+## Gestión de derechos de acceso {#access-right-management}
 
 Con la pestaña **Control de acceso** del CRXDE Lite puede definir las políticas de control de acceso y asignar los privilegios relacionados.
 
@@ -456,7 +453,7 @@ directivas de control de acceso que ha aplicado. A continuación, puede actualiz
 * **Políticas de control de acceso**
 efectivasSon las políticas de control de acceso que están actualmente en vigor para cualquier solicitud de acceso. Muestran las políticas agregadas derivadas de las políticas locales y de cualquier heredada del elemento principal.
 
-### Selección de directivas {#policy-selection}
+### Selección de políticas {#policy-selection}
 
 Las políticas se pueden seleccionar para:
 
@@ -464,7 +461,7 @@ Las políticas se pueden seleccionar para:
 actualComo en el ejemplo anterior, seleccione un recurso dentro del repositorio. Se mostrarán las políticas para esta &quot;ruta actual&quot;.
 
 * ****
-RepositorioSelecciona el control de acceso a nivel de repositorio. Por ejemplo, al configurar la variable 
+RepositorySelecciona el control de acceso a nivel de repositorio. Por ejemplo, al configurar la variable 
 `jcr:namespaceManagement` , que solo es relevante para el repositorio, no para un nodo.
 
 * ****

@@ -1,8 +1,8 @@
 ---
 title: Tipos de nodos personalizados
-seo-title: Tipos de nodos personalizados
+seo-title: Custom Node Types
 description: AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodos ofrecidos por ambos, pero AEM también proporciona una gama de tipos de nodos personalizados
-seo-description: AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodos ofrecidos por ambos, pero AEM también proporciona una gama de tipos de nodos personalizados
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1879'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 Debido a que AEM se basa en Sling y utiliza un repositorio JCR, los tipos de nodos ofrecidos por ambos están disponibles para su uso:
 
-* [Tipos de nodos JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
+* [Tipos de nodos JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Tipos de nodos Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Además de estos. AEM proporciona una amplia gama de tipos de nodos personalizados.
@@ -417,7 +417,7 @@ Recurso DAM.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Miniatura {#dam-thumbnail}
+### dam:Thumbnail {#dam-thumbnail}
 
 **Descripción**
 
@@ -578,7 +578,7 @@ Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con 
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### cq:LiveSyncCancelled {#cq-livesynccancelled}
 
 **Descripción**
 
@@ -942,7 +942,7 @@ Campo
 
 ## Wiki {#wiki}
 
-### wiki:Tema {#wiki-topic}
+### wiki:tema {#wiki-topic}
 
 **Descripción**
 

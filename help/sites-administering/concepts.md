@@ -1,8 +1,8 @@
 ---
 title: 'Conceptos '
-seo-title: 'Conceptos '
+seo-title: Concepts
 description: Conceptos generales de comercio electrónico con AEM.
-seo-description: Conceptos generales de comercio electrónico con AEM.
+seo-description: General Concepts of eCommerce with AEM.
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,13 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '4535'
-ht-degree: 2%
+source-wordcount: '4524'
+ht-degree: 1%
 
 ---
-
 
 # Conceptos {#concepts}
 
@@ -40,15 +39,12 @@ Esto significa que:
 >El marco de comercio electrónico se puede utilizar con:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   >
-   >
-* [Commerce Cloud SAP](/help/sites-administering/sap-commerce-cloud.md)
-   >
-   >
-* [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
+>
+>* [Commerce Cloud SAP](/help/sites-administering/sap-commerce-cloud.md)
+>
+>* [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
 
 >
-
 
 
 >[!CAUTION]
@@ -139,11 +135,8 @@ AEM comercio electrónico se implementa con un motor de comercio electrónico:
 >
 >AEM comercio electrónico implementado dentro de AEM usando desarrollo genérico basado en JCR es:
 >
->* Un ejemplo de comercio electrónico independiente y AEM para ilustrar el uso de la API. Esto se puede usar para controlar los datos del producto, los carros de compras y el cierre de compra en conjunto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos del producto se almacena en el repositorio nativo de AEM (implementación de [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) por parte del Adobe).\
+>* Un ejemplo de comercio electrónico independiente y AEM para ilustrar el uso de la API. Esto se puede usar para controlar los datos del producto, los carros de compras y el cierre de compra en conjunto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos del producto se almacena en el repositorio nativo de AEM (implementación de [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) por parte del Adobe).\
    >  La instalación de AEM estándar contiene los conceptos básicos de la [implementación genérica de comercio electrónico](/help/sites-administering/generic.md).
-
->
-
 
 
 ### Proveedores de comercio {#commerce-providers}
@@ -210,7 +203,7 @@ Aunque la ubicación real puede depender de la implementación; por ejemplo, gen
 
 ## Productos {#products}
 
-### Producto Datos en comparación con datos de marketing {#product-data-versus-marketing-data}
+### Datos de producto versus datos de marketing {#product-data-versus-marketing-data}
 
 #### Categorías estructurales y de marketing {#structural-versus-marketing-categories}
 
@@ -253,7 +246,7 @@ Para los productos adecuados, también se puede obtener información sobre las v
 
 ![ecommerceproductvariants](assets/ecommerceproductvariants.png)
 
-### Atributos de producto {#product-attributes}
+### Atributos del producto {#product-attributes}
 
 Los atributos individuales que se mantienen sobre cada producto pueden depender del motor de comercio electrónico que se utilice y de la implementación de AEM. Están disponibles (según corresponda) al ver páginas de productos o al editar información del producto y pueden incluir:
 
@@ -351,7 +344,7 @@ Esto puede depender del tipo de datos:
 
 * Los datos muy volátiles, como la información de precios, se recuperan del motor de comercio para cada solicitud de página para garantizar que siempre estén actualizados.
 
-### Catálogos: Rendimiento y escalado {#catalogs-performance-and-scaling}
+### Catálogos: rendimiento y escala {#catalogs-performance-and-scaling}
 
 La importación de un catálogo grande con un número elevado de productos (normalmente más de 100.000) desde un motor de comercio electrónico (PIM) puede afectar al sistema debido al gran número de nodos. También puede ralentizar la instancia de creación si los productos tienen recursos asociados (p. ej., imágenes de producto). Esto se debe al hecho de que el posprocesamiento de estos recursos requiere gran cantidad de CPU y memoria.
 
@@ -384,7 +377,7 @@ Este escenario implica la configuración de dos instancias de autor:
 
 ![Diagrama de arquitectura](assets/chlimage_1-171.png)
 
-#### Solo importar datos de producto {#only-import-product-data}
+#### Importar solo datos de productos {#only-import-product-data}
 
 En los casos en que los productos no contienen recursos (imágenes) que se van a importar, puede importar los datos del producto sin que se vean afectados por el posprocesamiento de los recursos.
 
@@ -431,7 +424,7 @@ Tenga en cuenta que esta prueba de rendimiento requiere conocimientos y análisi
 
 * Requisitos de mantenimiento (copia de seguridad, optimización de Tar PM, colección de residuos del almacén de datos, etc.)
 
-#### Rendimiento: varios {#performance-miscellaneous}
+#### Rendimiento - Varios {#performance-miscellaneous}
 
 Para todas las implementaciones se pueden tener en cuenta los siguientes puntos:
 
@@ -518,7 +511,7 @@ Sin embargo, hay una compensación. No podrá personalizar la información del p
 >
 >Puede convertir de una metodología a otra en cualquier momento. También puede convertir una subsección del catálogo.
 
-## Promociones y comprobantes {#promotions-and-vouchers}
+## Promociones y cupones {#promotions-and-vouchers}
 
 ### Cupones {#vouchers}
 
@@ -761,7 +754,7 @@ En cualquier caso, los artículos permanecen en el carro (y se pueden restaurar)
 
 Antes del cierre de compra, se reflejan los cambios de precio (en ambos sistemas) a medida que se producen.
 
-### Información de pedido {#order-information}
+### Información del pedido {#order-information}
 
 En función de la información de implementación sobre un pedido se mantenga en el motor de comercio electrónico o en el AEM, esta información se procesa mediante AEM.
 
@@ -887,4 +880,3 @@ Si necesita una implementación más detallada, puede:
 * Implemente el método de búsqueda en `CommerceService` y, a continuación, utilice el componente de búsqueda de comercio electrónico en la página de búsqueda.
 
 Al utilizar un motor de comercio electrónico, la API de búsqueda de comercio electrónico se puede implementar completamente en la solución del motor de comercio electrónico, de modo que puede utilizar el componente de búsqueda de comercio electrónico que se proporciona de forma predeterminada. La búsqueda por facetas le permite buscar en JCR o en el motor:
-

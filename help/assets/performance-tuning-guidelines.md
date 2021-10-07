@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Adobe recomienda habilitar HTTPS porque muchas empresas tienen cortafuegos que o
 Principalmente, su estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga en su instancia [!DNL Experience Manager]. Las opciones de configuración comunes, incluidos los cortafuegos o los proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos puntos clave a tener en cuenta:
 
 * Dependiendo del tipo de instancia (pequeña, moderada, grande), asegúrese de que tiene suficiente ancho de banda de red para su instancia [!DNL Experience Manager]. La asignación adecuada del ancho de banda es especialmente importante si [!DNL Experience Manager] está alojado en AWS.
-* Si la instancia [!DNL Experience Manager] está alojada en AWS, puede beneficiarse si tiene una política de escalado versátil. Actualice la instancia si los usuarios esperan una carga alta. Desactívelo para una carga moderada/baja.
+* Si la instancia [!DNL Experience Manager] está alojada en AWS, puede beneficiarse de tener una política de escalado versátil. Actualice la instancia si los usuarios esperan una carga alta. Desactívelo para una carga moderada/baja.
 * HTTPS: La mayoría de los usuarios tienen cortafuegos que olfatean el tráfico HTTP, lo que puede afectar negativamente a la carga de archivos o incluso a los archivos dañados durante la operación de carga.
 * Cargas de archivos grandes: Asegúrese de que los usuarios tengan conexiones cableadas a la red (las conexiones WiFi se saturan rápidamente).
 
@@ -184,7 +184,7 @@ Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web 
 
 Muchos clientes de Sites implementan un servlet de imagen que cambia el tamaño y recorta las imágenes en el momento en que se solicitan, lo que impone una carga adicional en la instancia de publicación. Sin embargo, mientras estas imágenes se puedan almacenar en caché, el desafío se puede mitigar.
 
-Un enfoque alternativo es utilizar la tecnología Dynamic Media Classic para transferir por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representación de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
+Un enfoque alternativo es usar la tecnología Dynamic Media Classic para evitar por completo la manipulación de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representación de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
 
 #### ImageMagick {#imagemagick}
 
@@ -215,7 +215,7 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en el archivo 
 >
 >Los archivos ImageMagick `policy.xml` y `configure.xml` se pueden encontrar en `/usr/lib64/ImageMagick-*/config/` en lugar de en `/etc/ImageMagick/`. Consulte la [documentación de ImageMagick](https://www.imagemagick.org/script/resources.php) para obtener más información sobre las ubicaciones de los archivos de configuración.
 
-Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Es posible que el Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el servicio de asistencia al cliente de Adobe si tiene previsto procesar muchos archivos de PSD o PSB de gran tamaño. Es posible que el Experience Manager no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 <!-- 
 
@@ -365,7 +365,7 @@ Actualice las configuraciones de índice para mejorar el tiempo de reindexación
 
 Desactive la extracción de texto de Lucene:
 
-Si los usuarios no necesitan poder buscar en el contenido de los recursos, por ejemplo, buscando el texto contenido en documentos PDF, puede mejorar el rendimiento del índice desactivando esta función.
+Si los usuarios no necesitan poder buscar en el contenido de los recursos, por ejemplo, buscando el texto contenido en los documentos del PDF, entonces puede mejorar el rendimiento del índice desactivando esta función.
 
 1. Vaya al administrador de paquetes [!DNL Experience Manager] /crx/packmgr/index.jsp
 1. Cargue e instale el paquete siguiente

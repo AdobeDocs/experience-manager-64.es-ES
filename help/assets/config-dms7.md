@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 3%
@@ -63,7 +63,7 @@ Para todas las actualizaciones, ya sea con o sin el paquete de compatibilidad, p
 
 ## (Opcional) Instalación del paquete de características 18912 para la migración masiva de recursos {#installing-feature-pack}
 
-El paquete de funciones 18912 le permite ingerir recursos de forma masiva mediante FTP, o migrar recursos desde Dynamic Media - Modo híbrido o Dynamic Media Classic a Dynamic Media - Modo Scene7 en Experience Manager. Está disponible desde Adobe Professional Services.
+El paquete de funciones 18912 le permite ingerir recursos de forma masiva mediante FTP o migrar recursos desde Dynamic Media (modo híbrido) o Dynamic Media Classic a Dynamic Media (modo Scene7 en Experience Manager). Está disponible desde Adobe Professional Services.
 
 Consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](bulk-ingest-migrate.md) para obtener más información.
 
@@ -79,7 +79,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 
 1. En la instancia de Autor del Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** y pulse **[!UICONTROL Crear]**. No toque ni seleccione el icono de carpeta a la izquierda de [!UICONTROL global].
-1. En la página [!UICONTROL Crear configuración de Dynamic Media], introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no recibió el correo electrónico.
+1. En la página [!UICONTROL Crear configuración de Dynamic Media], introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de atención al cliente de Adobe si no recibió el correo electrónico.
 
    Toque **[!UICONTROL Conectarse a Dynamic Media]**.
 
@@ -106,7 +106,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 1. Toque **[!UICONTROL Guardar]**.
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor de Experience Manager para conectarse a Dynamic Media:
 
-   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación cerca de la parte superior derecha de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
    * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, pulse **[!UICONTROL Agregar]**.
@@ -163,7 +163,7 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 
 **[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga el servicio de asistencia al Experience Manager.
 
-**[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
+**[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la carpeta original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
 
 * **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]** : esta opción es la regla más estricta para reemplazar. Requiere que cargue la imagen de reemplazo en la misma carpeta que el original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que el original. Si no se cumplen estos requisitos, se crea un duplicado.
 
@@ -182,7 +182,7 @@ Para abrir la página [!UICONTROL Configuración general de la aplicación], en 
 
 #### Configuración de la gestión de color {#configuring-color-management}
 
-La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](managing-image-presets.md).
+La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos ingestados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](managing-image-presets.md).
 
 **Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:**
 
@@ -194,7 +194,7 @@ La administración de color de Dynamic Media le permite colorear los recursos co
 
    * [!UICONTROL Espacio de color predeterminado CMYK] : nombre del perfil de color CMYK predeterminado
    * [!UICONTROL Espacio de color predeterminado de escala de grises] : nombre del perfil de color gris predeterminado
-   * [!UICONTROL RGB Espacio de color predeterminado] : nombre del perfil de color RGB predeterminado
+   * [!UICONTROL Espacio de color predeterminado del RGB] : nombre del perfil de color del RGB predeterminado
    * [!UICONTROL Interpretación de la conversión de color] : especifica la interpretación. Los valores aceptables son `perceptual`, `relative` `colometric`, `saturation` y `absolute colometric`. Adobe recomienda `relative` como opción predeterminada.
 
 1. Toque **[!UICONTROL Guardar]**.
@@ -204,9 +204,9 @@ Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado R
 Al hacerlo, se haría lo siguiente:
 
 * Habilita la corrección de color para imágenes RGB y CMYK.
-* Se supone que las imágenes RGB que no tienen un perfil de color están en el espacio de color `sRGB`.
+* Se supone que las imágenes de RGB que no tienen un perfil de color están en el espacio de color `sRGB` .
 * Se supone que las imágenes CMYK que no tienen un perfil de color están en `WebCoated` espacio de color.
-* Representaciones dinámicas que devuelven la salida RGB, la devuelven en el espacio de color `sRGB`.
+* Representaciones dinámicas que devuelven la salida del RGB, la devuelven en el espacio de color `sRGB`.
 * Representaciones dinámicas que devuelven la salida CMYK, la devuelven en el espacio de color `WebCoated`.
 
 #### Edición de tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
@@ -215,7 +215,7 @@ Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los pa
 
 * Convierta una Adobe PDF en un recurso de catálogo electrónico.
 * Convierta un documento de Adobe Photoshop (.PSD) en un recurso de plantilla de banner para su personalización.
-* Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® encapsulado de Adobe Photoshop (.EPS).
+* Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® Encapsulado de Adobe Photoshop (.EPS).
 * [Los ](/help/assets/video-profiles.md) perfiles de vídeo y los perfiles de  [imágenes ](/help/assets/image-profiles.md) se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
@@ -244,7 +244,7 @@ Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
 #### Adición de tipos MIME personalizados para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
 
-Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos Experience Manager. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de **[!UICONTROL image_]** y su valor habilitado se establezca en **[!UICONTROL false]**.
+Puede añadir tipos MIME personalizados para formatos no compatibles en Experience Manager Assets. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de **[!UICONTROL image_]** y su valor habilitado se establezca en **[!UICONTROL false]**.
 
 **Para agregar tipos MIME personalizados para formatos no compatibles:**
 
@@ -316,7 +316,7 @@ Hay dos elementos disponibles para su definición, **[!UICONTROL Match]** y **[!
 
 **Para configurar la nomenclatura predeterminada:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
@@ -350,7 +350,7 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
 
 **Para crear un ajuste preestablecido de conjunto de lotes:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
@@ -405,7 +405,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 **Para crear un ajuste preestablecido de conjunto de lotes para la generación automática de un conjunto de giros 2D:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
@@ -472,13 +472,13 @@ Para mantener Dynamic Media en modo Scene7 funcionando sin problemas, Adobe reco
 
 #### Actualización de los parámetros de trabajo predefinidos para el procesamiento de diferentes formatos de archivo
 
-Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si carga archivos PSD pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En tal caso, el parámetro de trabajo ajustado aparece de la siguiente manera: `process=None&createTemplate=false`.
+Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si carga archivos de PSD, pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En tal caso, el parámetro de trabajo ajustado aparece de la siguiente manera: `process=None&createTemplate=false`.
 
 Si desea activar la creación de plantillas, utilice los siguientes parámetros: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&quot; para archivos PDF, PostScript® y PSD:
+Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&quot; para archivos de PDF, PostScript® y PSD:
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -492,7 +492,7 @@ Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Para actualizar cualquiera de estos parámetros, siga los pasos en [Habilitación de la compatibilidad con parámetros de trabajo de carga de recursos basados en tipo MIME/Dynamic Media Classic](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Para actualizar cualquiera de estos parámetros, siga los pasos en [Habilitación de la compatibilidad con parámetros de trabajo de carga de recursos/Dynamic Media Classic basados en tipo MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Actualización de la cola de Granite Transient Workflow {#updating-the-granite-transient-workflow-queue}
 
@@ -542,7 +542,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
 #### Actualización de la conexión de carga de Scene7 {#updating-the-scene-upload-connection}
 
-La configuración de conexión de carga de Scene7 sincroniza los recursos de Experience Manager con los servidores de Dynamic Media Classic.
+La configuración de conexión de carga de Scene7 sincroniza Experience Manager Assets con los servidores de Dynamic Media Classic.
 
 **Para actualizar la conexión de carga de Scene7:**
 
@@ -623,7 +623,7 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
 
    Para que este filtro se aplique a todas las imágenes, independientemente de su formato, establezca el valor en `image/*` donde `*` es una expresión regular que se aplica a todas las imágenes de cualquier formato.
 
-   Para que el filtro se aplique solo a imágenes del tipo JPEG, introduzca un valor de `image/jpeg`.
+   Para que el filtro se aplique solo a las imágenes del JPEG de tipo , introduzca un valor de `image/jpeg`.
 
 1. Defina qué representaciones desea incluir o excluir de la replicación.
 

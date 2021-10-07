@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 1%
@@ -195,5 +195,5 @@ En el proceso de monitorización, si se producen problemas, estas son algunas ta
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan según lo esperado. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Vuelva a realizar la monitorización en vivo y busque cuellos de botella adicionales o grandes consumidores de cualquier recurso específico.
 * Investigue los puntos de salida de la red del cliente y los puntos de entrada a la red de instancia [!DNL Experience Manager], incluido el despachante. A menudo, son áreas de cuello de botella. Para obtener más información, consulte [Consideraciones sobre la red de recursos](assets-network-considerations.md).
-* Actualice el servidor [!DNL Experience Manager]. Es posible que tenga un tamaño inadecuado para su instancia [!DNL Experience Manager]. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor no tiene el tamaño adecuado.
+* Actualice el servidor [!DNL Experience Manager]. Es posible que tenga un tamaño inadecuado para su instancia [!DNL Experience Manager]. El servicio de asistencia al cliente de Adobe puede ayudarle a identificar si el servidor no tiene el tamaño adecuado.
 * Examine los archivos `access.log` y `error.log` para ver si hay entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añádalos a la lista de eventos que supervise.

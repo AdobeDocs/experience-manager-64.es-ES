@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '10078'
 ht-degree: 2%
@@ -41,7 +41,7 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 ## Cargar recursos {#uploading-assets}
 
-Puede cargar varios tipos de recursos (incluidas imágenes, archivos PDF, archivos RAW, etc.) desde la carpeta local o una unidad de red a [!DNL Experience Manager] Assets.
+Puede cargar varios tipos de recursos (incluidas imágenes, archivos de PDF, archivos RAW, etc.) desde la carpeta local o una unidad de red a [!DNL Experience Manager] Assets.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Antes de cargar un recurso, asegúrese de que tiene un [formato admitido](assets
 
    ![create_menu](assets/create_menu.png)
 
-   Para seleccionar varios archivos, pulse la tecla Ctrl/Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Desde un iPad, solo puede seleccionar un archivo a la vez.
+   Para seleccionar varios archivos, pulse la tecla Ctrl/Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Desde iPad, solo puede seleccionar un archivo a la vez.
 
    Puede pausar la carga de recursos grandes (buenos de 500 MB) y reanudarla más tarde desde la misma página. Pulse el icono **[!UICONTROL Pausar]** junto a la barra de progreso que aparece al iniciarse la carga.
 
@@ -145,7 +145,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 
 >[!NOTE]
 >
->Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale feature pack (FP) 18912 en el autor [!DNL Experience Manager]. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
+>Para cargar recursos mediante FTP en Dynamic Media: modo Scene7, instale feature pack (FP) 18912 en el autor [!DNL Experience Manager]. Póngase en contacto con el servicio de atención al cliente de Adobe para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
 >
 >Si utiliza FTP para cargar recursos, se ignorará la configuración de carga especificada en [!DNL Experience Manager]. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
@@ -186,8 +186,8 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 |  | Opciones de perfil de color | Elija una conversión de color cuando cree archivos optimizados que se utilicen para la entrega:<ul><li>Conservación de color predeterminada: Mantiene los colores de la imagen de origen siempre que las imágenes contienen información de espacio de color; no hay conversión de color. Casi todas las imágenes de hoy tienen el perfil de color adecuado ya incrustado. Sin embargo, si una imagen de origen CMYK no contiene un perfil de color incrustado, los colores se convierten en espacios de color sRGB (azul verde rojo estándar). sRGB es el espacio de color recomendado para mostrar imágenes en páginas web.</li><li>Mantener espacio de color original: Conserva los colores originales sin ninguna conversión de color en el punto. En el caso de las imágenes sin un perfil de color incrustado, cualquier conversión de color se realiza mediante los perfiles de color predeterminados configurados en la configuración de publicación. Es posible que los perfiles de color no estén alineados con el color de los archivos creados con esta opción. Por lo tanto, se le recomienda utilizar la opción Conservación de color predeterminada.</li><li>Personalizar de > A<br> Abre los menús para que pueda elegir un espacio de color Convertir de y Convertir en . Esta opción avanzada anula cualquier información de color incrustada en el archivo de origen. Seleccione esta opción cuando todas las imágenes que envía contienen datos de perfil de color incorrectos o que faltan.</li></ul> |
 |  | Opciones de edición de imágenes | Puede conservar las máscaras de recorte en las imágenes y elegir un perfil de color.<br> Consulte  [Configuración de las opciones de edición de imágenes al cargar](#setting-image-editing-options-at-upload). |
 |  | Opciones de Postscript | Puede rasterizar archivos de PostScript®, recortar archivos, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte  [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opciones de Photoshop | You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.<br> Tenga en cuenta que las plantillas no son compatibles con AEM.<br> Consulte  [Configuración de las opciones de carga de Photoshop](#setting-photoshop-upload-options). |
-|  | Opciones de PDF | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br> Note that eCatalogs are not supported in AEM. <br> Consulte  [Configuración de opciones de carga de PDF](#setting-pdf-upload-options). |
+|  | Opciones de Photoshop | Puede crear plantillas a partir de archivos Photoshop® de Adobe®, mantener las capas, especificar el nombre de las capas, extraer texto y especificar cómo se anclan las imágenes en las plantillas.<br> Tenga en cuenta que las plantillas no son compatibles con AEM.<br> Consulte  [Configuración de las opciones de carga de Photoshop](#setting-photoshop-upload-options). |
+|  | Opciones del PDF | Puede rasterizar los archivos, extraer palabras de búsqueda y vínculos, generar automáticamente un catálogo electrónico, establecer la resolución y elegir un espacio de color.<br> Tenga en cuenta que los catálogos electrónicos no son compatibles con AEM. <br> Consulte  [Configuración de las opciones de carga del PDF](#setting-pdf-upload-options). |
 |  | Opciones de Illustrator | Puede rasterizar archivos Adobe Illustrator®, mantener fondos transparentes, elegir una resolución y elegir un espacio de color.<br> Consulte  [Configuración de las opciones de carga de PostScript y Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opciones de eVideo | Puede transcodificar un archivo de vídeo eligiendo un ajuste preestablecido de vídeo.<br> Consulte  [Configuración de las opciones de carga de eVideo](#setting-evideo-upload-options). |
 |  | Valores preestablecidos de conjunto por lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Ajustes preestablecidos de conjunto de lotes de Dynamic Media Classic.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes al cargar](#setting-batch-set-presets-at-upload). |
@@ -196,7 +196,7 @@ Dynamic Media permite la carga por lotes de recursos mediante el servidor FTP. S
 
 Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar las siguientes acciones de edición en el cuadro de diálogo **[!UICONTROL Opciones de carga de trabajo]**:
 
-* Crop whitespace from the edge of images (see description in table above).
+* Recorte los espacios en blanco desde el borde de las imágenes (consulte la descripción en la tabla anterior).
 * Recortar manualmente desde los lados de las imágenes (consulte la descripción en la tabla anterior).
 * Elija un perfil de color (consulte la descripción de la opción en la tabla anterior).
 * Cree una máscara a partir de una ruta de recorte.
@@ -227,17 +227,17 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede aplicarl
 | Resolución |  | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
 | Espacio color |  | Seleccione el menú Espacio de color y elija entre las siguientes opciones de espacio de color: |
 |  | Detectar automáticamente | Conserva el espacio de color del archivo. |
-|  | Forzar como RGB | Se convierte al espacio de color RGB. |
+|  | Forzar como RGB | Se convierte al espacio de color del RGB. |
 |  | Forzar como CMYK | Se convierte al espacio de color CMYK. |
 |  | Forzar como escala de grises | Se convierte al espacio de color de escala de grises. |
 
 #### Definir las opciones de carga de Photoshop {#setting-photoshop-upload-options}
 
-Los archivos PSD (documento de Photoshop) se utilizan habitualmente para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción Crear plantilla en la pantalla Cargar ).
+Los archivos de PSD (Documento de Photoshop) se utilizan habitualmente para crear plantillas de imagen. Al cargar un archivo de PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción Crear plantilla en la pantalla Cargar ).
 
-Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
+Dynamic Media crea varias imágenes a partir de un archivo de PSD con capas si utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
-Use the **[!UICONTROL Crop Options]** and **[!UICONTROL Color Profile Options]**, described above, with Photoshop upload options.
+Utilice las **[!UICONTROL Opciones de recorte]** y **[!UICONTROL Opciones de perfil de color]** descritas anteriormente con las opciones de carga de Photoshop.
 
 >[!NOTE]
 >
@@ -245,19 +245,19 @@ Use the **[!UICONTROL Crop Options]** and **[!UICONTROL Color Profile Options]**
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Maintain Layers |  | Rips the layers in the PSD, if any, into individual assets. Las capas de recursos permanecen asociadas al PSD. Puede verlos abriendo el archivo PSD en la vista de detalles y seleccionando el panel de capa. |
+| Mantener capas |  | Extrae las capas del PSD, si las hay, en recursos individuales. Las capas de recursos permanecen asociadas al PSD. Para verlas, abra el archivo PSD en la vista de detalles y seleccione el panel de capas. |
 | Crear plantilla |  | Crea una plantilla a partir de las capas del archivo PSD. |
 | Extraer texto |  | Extrae el texto para que los usuarios puedan buscar texto en un visualizador. |
 | Extender las capas al tamaño del fondo |  | Amplía el tamaño de las capas de imagen recortadas al tamaño de la capa de fondo. |
 | Asignación de nombres a capas |  | Las capas del archivo PSD se cargan como imágenes independientes. |
 |  | Nombre de capa | Nombra las imágenes según sus nombres de capa en el archivo PSD. Por ejemplo, una capa denominada Etiqueta de precio en el archivo PSD original se convierte en una imagen denominada Etiqueta de precio. Sin embargo, si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop (Fondo, Capa 1, Capa 2, etc.), las imágenes reciben el nombre de sus números de capa en el archivo PSD, no de sus nombres de capa predeterminados. |
-|  | Photoshop y número de capa | Nombra las imágenes según sus números de capa en el archivo PSD, ignorando los nombres de capa originales. Las imágenes reciben el nombre del archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Spring Ad.psd se llama Spring Ad_2 aunque tenga un nombre no predeterminado en Photoshop. |
-|  | Photoshop y nombre de capa | Nombra las imágenes después del archivo PSD seguido del nombre de la capa o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Price Tag en un archivo PSD llamado SpringAd se llama Spring Ad_Price Tag. Una capa con el nombre predeterminado Capa 2 se llama Anuncio de primavera_2. |
+|  | Photoshop y número de capa | Nombra las imágenes según sus números de capa en el archivo PSD e ignora los nombres de capa originales. Las imágenes reciben el nombre del archivo Photoshop y un número de capa anexado. Por ejemplo, la segunda capa de un archivo llamado Spring Ad.psd se llama Spring Ad_2 aunque tenga un nombre no predeterminado en Photoshop. |
+|  | Photoshop y nombre de capa | Nombra las imágenes después del archivo de PSD seguido del nombre o número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Etiqueta de precio en un archivo PSD llamado Anuncio de primavera se denomina Etiqueta de anuncio_precio de primavera. Una capa con el nombre predeterminado Capa 2 se llama Anuncio de primavera_2. |
 | Ancla |  | Especifique cómo se anclan las imágenes en plantillas generadas a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo rellenen el espacio asignado en la plantilla. |
 
-#### Definir opciones de carga de PDF {#setting-pdf-upload-options}
+#### Definir las opciones de carga del PDF {#setting-pdf-upload-options}
 
-Al cargar un archivo PDF, puede aplicarle formato de varias formas. You crop its pages, extract search words, enter a pixels-per-inch resolution, and choose a color space. Los archivos PDF suelen contener un margen de recorte, marcas de recorte, marcas de registro y otras marcas de impresora. Puede recortar estas marcas desde los lados de las páginas a medida que carga un archivo PDF.
+Al cargar un archivo PDF, puede darle formato de varias formas. Recorte sus páginas, extraiga palabras de búsqueda, introduzca una resolución de píxeles por pulgada y elija un espacio de color. Los archivos PDF suelen contener un margen de recorte, marcas de recorte, marcas de registro y otras marcas de impresora. Puede recortar estas marcas desde los lados de las páginas a medida que carga un archivo PDF.
 
 >[!NOTE]
 >
@@ -267,14 +267,14 @@ Elija entre las siguientes opciones:
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Procesando | Rasterizar | (Predeterminado) Extrae las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Choose this option to create an eCatalog. |
+| Procesando | Rasterizar | (Predeterminado) Extrae las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Elija esta opción para crear un catálogo electrónico. |
 | Extraer | Palabras de búsqueda | Extrae palabras del archivo PDF para que el archivo se pueda buscar por palabra clave en un visor de catálogos electrónicos. |
 |  | Vínculos | Extrae vínculos de los archivos PDF y los convierte en mapas de imágenes que se utilizan en un visor de catálogos electrónicos. |
-| Generación automática de catálogos electrónicos a partir de PDF de varias páginas |  | Crea automáticamente un catálogo electrónico a partir del archivo PDF. El Catálogo electrónico recibe el nombre del archivo PDF que ha cargado. (Esta opción solo está disponible si rasteriza el archivo PDF al cargarlo). |
+| Generación automática de catálogos electrónicos a partir de un PDF de varias páginas |  | Crea automáticamente un catálogo electrónico a partir del archivo PDF. El Catálogo electrónico recibe el nombre del archivo PDF que ha cargado. (Esta opción solo está disponible si rasteriza el archivo PDF al cargarlo). |
 | Resolución |  | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo PDF. El valor predeterminado es 150. |
-| Espacio color |  | Seleccione el menú Espacio de color y elija un espacio de color para el archivo PDF. La mayoría de los archivos PDF tienen imágenes en color RGB y CMYK. El espacio de color RGB es preferible para la visualización en línea. |
+| Espacio color |  | Seleccione el menú Espacio de color y elija un espacio de color para el archivo PDF. La mayoría de los archivos PDF tienen imágenes en color RGB y CMYK. El espacio de color del RGB es preferible para la visualización en línea. |
 |  | Detectar automáticamente | Conserva el espacio de color del archivo PDF. |
-|  | Forzar RGB | Se convierte al espacio de color RGB. |
+|  | Forzar RGB | Se convierte al espacio de color del RGB. |
 |  | Forzar CMYK | Se convierte al espacio de color CMYK. |
 |  | Forzar escala de grises | Se convierte al espacio de color de escala de grises. |
 
@@ -288,7 +288,7 @@ Puede transcodificar un archivo de vídeo eligiendo entre varios ajustes preesta
 | Ajustes preestablecidos de codificación única | Ordenar ajustes preestablecidos de codificación | Seleccione Nombre o Tamaño para ordenar los ajustes preestablecidos de codificación enumerados en Escritorio, Móvil y Tablet por nombre o por tamaño de resolución. |
 |  | Escritorio | Cree un archivo MP4 para ofrecer una experiencia de vídeo progresivo o de flujo continuo a los equipos de escritorio. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
 |  | Móvil | Cree un archivo MP4 para enviarlo a dispositivos móviles iPhone o Android. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
-|  | Tablet | Cree un archivo MP4 para enviarlo a dispositivos iPad o tableta Android. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
+|  | Tablet | Cree un archivo MP4 para enviarlo a dispositivos tablet iPad o Android. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
 
 #### Definir ajustes preestablecidos de conjuntos de lotes al cargar {#setting-batch-set-presets-at-upload}
 
@@ -327,9 +327,9 @@ Algunas limitaciones de la función son:
 1. En la interfaz de usuario de Assets, vaya a la ubicación del recurso cuya vista previa desee ver.
 1. Puntee en el recurso que desee para abrirlo.
 
-1. In the preview mode, zoom options are available for [supported Image types](assets-formats.md#supported-raster-image-formats) (with interactive editing).
+1. En el modo de vista previa, las opciones de zoom están disponibles para [tipos de imagen admitidos](assets-formats.md#supported-raster-image-formats) (con edición interactiva).
 
-   To zoom into an asset, tap **[!UICONTROL +]** (or tap the magnifying glass on the asset). To zoom out, tap **[!UICONTROL -]**. Al acercar el zoom, puede observar de cerca cualquier área de la imagen mediante la panorámica. La flecha **[!UICONTROL Restablecer zoom]** le devuelve a la vista original.
+   Para acercar un recurso, pulse **[!UICONTROL +]** (o pulse la lupa del recurso). Para reducir, pulse **[!UICONTROL -]**. Al acercar el zoom, puede observar de cerca cualquier área de la imagen mediante la panorámica. La flecha **[!UICONTROL Restablecer zoom]** le devuelve a la vista original.
 
    ![uploadicon](assets/uploadicon.png)
 
@@ -339,8 +339,8 @@ Algunas limitaciones de la función son:
 
 >[!MORELIKETHIS]
 >
->* [Preview Dynamic Media Assets](/help/assets/previewing-assets.md).
->* [View subassets](managing-linked-subassets.md#viewing-subassets).
+>* [Vista previa de Dynamic Media Assets](/help/assets/previewing-assets.md).
+>* [Ver subrecursos](managing-linked-subassets.md#viewing-subassets).
 
 
 ## Editar propiedades {#editing-properties}
@@ -353,15 +353,15 @@ Algunas limitaciones de la función son:
 
 1. En la página **[!UICONTROL Propiedades]**, edite las propiedades de los metadatos en varias pestañas. Por ejemplo, en la ficha **[!UICONTROL Básico]**, edite el título, la descripción, etc.
 
-   El diseño de la página **[!UICONTROL Properties]** y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. To learn how to modify the layout of the **[!UICONTROL Properties]** page, see [Metadata Schemas](metadata-schemas.md).
+   El diseño de la página **[!UICONTROL Properties]** y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para obtener información sobre cómo modificar el diseño de la página **[!UICONTROL Properties]**, consulte [Esquemas de metadatos](metadata-schemas.md).
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
-   ![Set On time for assets to make assets available for a fixed period of time between on and off time](assets/chlimage_1-12.png)
+   ![Establecer a tiempo para que los recursos estén disponibles durante un período de tiempo fijo entre el tiempo de activación y el de desactivación](assets/chlimage_1-12.png)
 
 1. Para desactivar el recurso después de una duración determinada, seleccione la fecha y la hora de desactivación del selector de fechas situado junto al campo **[!UICONTROL Tiempo de desactivación]**.
 
-   La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
+   La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz web de Assets o a través de la API HTTP.
 
    ![Configuración del tiempo para que los recursos detengan su disponibilidad después de un período de tiempo determinado](assets/chlimage_1-13.png)
 
@@ -506,23 +506,23 @@ Al mover recursos arrastrándolos, no se abre el asistente [!UICONTROL Mover rec
 
    **Eliminar una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, pulse el icono **[!UICONTROL Eliminar representación]** en la [barra de herramientas](/help/sites-authoring/basic-handling.md). Las representaciones no se pueden eliminar de forma masiva una vez finalizado el procesamiento de recursos. For individual assets, you can remove renditions manually from the user interface. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, pulse el icono **[!UICONTROL Eliminar representación]** en la [barra de herramientas](/help/sites-authoring/basic-handling.md). Las representaciones no se pueden eliminar de forma masiva una vez finalizado el procesamiento de recursos. Para recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar el Experience Manager para que elimine representaciones específicas o elimine los recursos y vuelva a cargar los recursos eliminados.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
-   **Upload a new rendition**
+   **Cargar una nueva representación**
 
    Vaya a la página de detalles del recurso y pulse el icono **[!UICONTROL Añadir representación]** en la barra de herramientas para cargar una nueva representación para el recurso.
 
-   ![chlimage_1-16](assets/chlimage_1-16.png)
+   ![imagen_1-16](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
+   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono **[!UICONTROL Upload Rendition]**, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
-   You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. En función de las dimensiones que especifique, [!DNL Experience Manager] Assets muestra la representación con las dimensiones exactas o más cercanas.
+   Puede configurar las dimensiones de la representación que desea que se muestren en la página de detalles de una imagen o un recurso de vídeo. En función de las dimensiones que especifique, [!DNL Experience Manager] Assets muestra la representación con las dimensiones exactas o más cercanas.
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad **[!UICONTROL PreferencesOriginal]** asigna preferencia al original si el tamaño de la representación coincidente es bueno al del original.
+   Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el nodo **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad **[!UICONTROL PreferencesOriginal]** asigna preferencia al original si el tamaño de la representación coincidente es bueno al del original.
 
    Del mismo modo, puede personalizar la imagen de página **[!UICONTROL Anotación]** superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -532,11 +532,11 @@ Al mover recursos arrastrándolos, no se abre el asistente [!UICONTROL Mover rec
 
    >[!NOTE]
    >
-   >Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
+   >Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
 
-For information about subassets, see [manage subassets](managing-linked-subassets.md).
+Para obtener información sobre los subrecursos, consulte [administrar subrecursos](managing-linked-subassets.md).
 
-## Delete assets {#deleting-assets}
+## Eliminar recursos {#deleting-assets}
 
 Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso.
 
@@ -548,7 +548,7 @@ Necesita permisos de eliminación en dam/asset para poder eliminar un recurso. S
 
 1. Navegue a la ubicación de los recursos que desee eliminar.
 
-1. Select the asset, and tap the **[!UICONTROL Delete]** icon from the toolbar.
+1. Seleccione el recurso y pulse el icono **[!UICONTROL Eliminar]** en la barra de herramientas.
 
    ![delete_icon](assets/delete_icon.png)
 
@@ -572,11 +572,11 @@ Consulte [Descargar recursos de AEM](download-assets-from-aem.md)
 
 ## Publicar y cancelar la publicación de recursos {#publish-assets}
 
-After uploading, processing, or editing your assets on [!DNL Experience Manager] author, you publish the asset to the publish server. La publicación hace que el recurso esté disponible públicamente. Unpublishing action removed the asset from the publish server but not from the authoring server.
+Después de cargar, procesar o editar los recursos en [!DNL Experience Manager] autor, publica el recurso en el servidor de publicación. La publicación hace que el recurso esté disponible públicamente. La acción de cancelación de publicación eliminó el recurso del servidor de publicación, pero no del servidor de creación.
 
-For information specific to [!DNL Dynamic Media], see [publishing [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md).
+Para obtener información específica de [!DNL Dynamic Media], consulte [publicación [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md).
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+1. Vaya a la ubicación del recurso o de la carpeta de recursos que desea publicar o que desea eliminar del entorno de publicación (cancelar la publicación).
 
 1. Seleccione el recurso o la carpeta que desea cancelar la publicación y haga clic en la opción **[!UICONTROL Administrar publicación]** ![administrar publicación](assets/do-not-localize/globe-publication.png) en la barra de herramientas. Como alternativa, para publicar rápidamente, seleccione la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas. Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
 
@@ -715,7 +715,7 @@ La **[!UICONTROL Línea de tiempo]** permite ver varios eventos de un elemento s
 
 En la [Consola de colecciones](managing-collections-touch-ui.md#navigating-the-collections-console), la lista **[!UICONTROL Mostrar todo]** proporciona opciones para ver solo comentarios y flujos de trabajo. Además, la línea de tiempo solo se muestra para las colecciones de nivel superior que aparecen en la consola. No se muestra si se desplaza dentro de ninguna de las colecciones.
 
-**** La línea de tiempo contiene varias  [opciones específicas de los fragmentos de contenido](content-fragments-managing.md#timeline-for-content-fragments); esta funcionalidad requiere  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o posterior.
+**** La línea de tiempo contiene varias  [opciones específicas de los fragmentos](content-fragments-managing.md#timeline-for-content-fragments) de contenido; esta funcionalidad requiere  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o posterior.
 
 **Para usar la línea de tiempo**:
 
@@ -732,7 +732,7 @@ En la [Consola de colecciones](managing-collections-touch-ui.md#navigating-the-c
 
 Las anotaciones son comentarios o notas explicativas añadidas a imágenes o vídeos. Las anotaciones permiten a los especialistas en marketing colaborar y dejar comentarios sobre los recursos.
 
-Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con [!DNL Experience Manager] Assets dependen del explorador.
+Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con [!DNL Experience Manager] Assets dependen del explorador.
 
 Para los fragmentos de contenido, [las anotaciones se crean en el editor](content-fragments-variations.md#annotating-a-content-fragment); esta funcionalidad requiere [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) o posterior.
 
@@ -750,7 +750,7 @@ También puede agregar anotaciones a una colección. Sin embargo, si una colecci
    * [Acciones rápidas](managing-assets-touch-ui.md#quick-actions)
    * En la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
 
-   ![imagen_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
@@ -787,7 +787,7 @@ Solo puede ver una anotación a la vez.
 >
 >Si selecciona varias anotaciones, la anotación más reciente estará visible en la interfaz de usuario.
 >
->La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
+>La selección múltiple solo se admite para imprimir el recurso anotado como PDF.
 
 1. Para ver las anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
@@ -807,7 +807,7 @@ Solo puede ver una anotación a la vez.
 
 ### Imprimir anotaciones {#printing-annotations}
 
-Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar el estado como archivo PDF para su revisión sin conexión.
+Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar su estado como archivo PDF para revisiones sin conexión.
 
 También puede elegir imprimir solo las anotaciones o el estado de revisión.
 
@@ -855,11 +855,11 @@ Para imprimir las anotaciones y revisar el estado, pulse el icono **[!UICONTROL 
    >
    >Si el recurso tiene subrecursos, puede imprimir todos los subrecursos junto con sus anotaciones específicas en el sentido de la página.
 
-   Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** desde **[!UICONTROL Configuration Manager]** y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](managing-assets-touch-ui.md#annotating).
+   Para modificar el aspecto del archivo de PDF representado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración del PDF de anotación]** desde **[!UICONTROL Configuration Manager]** y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](managing-assets-touch-ui.md#annotating).
 
    ![imagen_1-44](assets/chlimage_1-44.png)
 
-   Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
+   Vuelva al archivo de PDF representado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
 **Para imprimir anotaciones en idiomas** extranjeros: Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiomas que no sean latinos), primero debe configurar el servicio CQ-DAM-Handler-Gibson Font Manager en el  [!DNL Experience Manager] servidor para poder imprimir estas anotaciones. Al configurar el servicio CQ-DAM-Handler-Gibson Font Manager, proporcione la ruta donde se encuentran las fuentes para los idiomas deseados.
 
@@ -870,7 +870,7 @@ Para imprimir las anotaciones y revisar el estado, pulse el icono **[!UICONTROL 
    * Cree un directorio llamado **fonts** dentro de la carpeta **[!UICONTROL crx-quickstart]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** recupera automáticamente las fuentes en la ubicación  `crx-quickstart/fonts`. Puede anular esta ruta predeterminada desde la opción de directorio **[!UICONTROL Adobe Server Fonts]**.
    * Cree una nueva carpeta para las fuentes del sistema y almacene las fuentes deseadas en la carpeta . A continuación, especifique la ruta completa a esa carpeta en la opción de directorio **[!UICONTROL Fuentes del cliente]**.
 
-1. Acceda a la configuración **[!UICONTROL PDF de anotación]** desde la dirección URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.anottation.pdf.AnNotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
+1. Acceda a la configuración del **[!UICONTROL PDF de anotaciones]** desde la dirección URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.anottation.pdf.AnNotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
 1. Configure el **[!UICONTROL PDF de anotación]** con el conjunto correcto de familia de fuentes de la siguiente manera:
 
    * Incluya la cadena `<font_family_name_of_custom_font, sans-serif>` dentro de la opción de la familia de fuentes. Por ejemplo, si desea imprimir anotaciones en CJK (chino, japonés y coreano), incluya la cadena `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` en la opción de la familia de fuentes. Si desea imprimir anotaciones en hindi, descargue la fuente apropiada y configure la familia de fuentes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
@@ -879,13 +879,13 @@ Para imprimir las anotaciones y revisar el estado, pulse el icono **[!UICONTROL 
 
 A continuación se muestra un ejemplo de cómo configurar [!DNL Experience Manager] para imprimir anotaciones en CJK (en chino, japonés y coreano):
 
-1. Descargue fuentes de Google Noto CJK de los siguientes vínculos y guárdelas en el directorio de fuentes configurado en el servicio de Font Manager.
+1. Descargue fuentes Google Noto CJK de los siguientes vínculos y guárdelas en el directorio de fuentes configurado en el servicio de Font Manager.
 
    * Fuente Super CJK todo en uno: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
    * Noto Sans (para lenguas europeas): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * No fuentes para un idioma de su elección: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Configure el archivo PDF de anotación estableciendo el parámetro de familia de fuentes en `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuración está disponible de forma predeterminada y funciona para todos los idiomas europeos y CJK.
+1. Configure el archivo del PDF de anotaciones estableciendo el parámetro font-family en `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuración está disponible de forma predeterminada y funciona para todos los idiomas europeos y CJK.
 1. Si el idioma de su elección es diferente de los idiomas mencionados en el paso 2, añada una entrada adecuada (separada por comas) a la familia de fuentes predeterminada.
 
 ## Crear versiones de recursos {#asset-versioning}
@@ -902,9 +902,9 @@ También puede habilitar el control automático de versiones mediante un flujo d
 
 La funcionalidad de versiones le permite hacer lo siguiente:
 
-* Create a version of an asset.
-* View the current revision for an asset.
-* Restore the asset to a previous version.
+* Cree una versión de un recurso.
+* Ver la revisión actual de un recurso.
+* Restaurar el recurso a una versión anterior.
 
 **Para crear versiones de recursos**:
 

@@ -1,8 +1,8 @@
 ---
 title: Instalación del Feature Pack 18912 para la migración masiva de recursos
-seo-title: Instalación del Feature Pack 18912 para la migración masiva de recursos
+seo-title: Installing Feature Pack 18912 for bulk asset migration
 description: El paquete de funciones 18912 le permite ingerir recursos de forma masiva mediante FTP o migrar recursos de Dynamic Media Classic a Dynamic Media en AEM. Este feature pack opcional está disponible en la asistencia de Adobe.
-seo-description: El paquete de funciones 18912 le permite ingerir recursos de forma masiva mediante FTP o migrar recursos de Dynamic Media Classic a Dynamic Media en AEM. Este feature pack opcional está disponible en la asistencia de Adobe.
+seo-description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic to Dynamic Media in AEM. This optional feature pack is available from Adobe support.
 uuid: 316d77e3-3d61-4cf0-8955-726ee54e268c
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
-feature: Configuración
+feature: Configuration
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ El paquete de funciones 18912 le permite ingerir recursos de forma masiva direct
 
 >[!NOTE]
 >
->Aunque es posible utilizar el paquete de funciones para migrar de forma masiva recursos por su cuenta de Dynamic Media Classic a Dynamic Media - Scene 7 en modo AEM o para migrar de forma masiva recursos mediante la función FTP en Dynamic Media Classic, Adobe recomienda este método *no* debido a la complejidad implicada.
+>Aunque es posible utilizar el paquete de funciones para migrar masivamente recursos por su cuenta de Dynamic Media Classic a Dynamic Media - Scene7 en modo AEM o migrar masivamente recursos mediante la función FTP en Dynamic Media Classic, Adobe recomienda este método *no* debido a la complejidad implicada.
 >
 >De este modo, los paquetes de funciones de migración, como este, *solo* son compatibles como parte de un proyecto de migración a través de [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
@@ -39,12 +39,12 @@ Consulte también [Configuración de Dynamic Media - Modo Scene7](https://helpx.
 
 1. En la instancia de AEM, vaya a **[!UICONTROL Herramientas > Seguridad > Usuarios > Crear usuario]**. Este usuario de servicio debe tener permisos de lectura y escritura en `/content/dam`.
 1. En los campos **[!UICONTROL ID]** y **[!UICONTROL Password]**, introduzca un nombre de usuario y una contraseña; por ejemplo, `FTP User`. Este nombre aparece en la cronología como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera creado cuando se carga en el servidor FTP y se AEM.
-1. Póngase en contacto con el [Soporte empresarial de Adobe para Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando contacte con el servicio de asistencia técnica:
+1. Póngase en contacto con [Adobe Customer Support para el Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando contacte con el servicio de asistencia técnica:
 
    * Dirección IP del servidor para la instancia de Autor, incluido el número de puerto (de forma predeterminada, el número de puerto es 4502).
    * AEM nombre de usuario y contraseña del servicio del paso anterior.
 
-1. La compatibilidad con Enterprise de Adobe para AEM le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
+1. La asistencia al cliente de Adobe para AEM le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
 
 1. Cuando reciba el paquete de características 18912, instálelo.
 

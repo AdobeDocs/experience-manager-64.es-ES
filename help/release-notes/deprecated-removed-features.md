@@ -2,10 +2,10 @@
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -151,16 +151,16 @@ obsoleto.
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] mediante una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] antes se llamaba  [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, póngase en contacto con [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] mediante una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] antes se llamaba  [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, póngase en contacto con [Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Ahora debe utilizarse el [complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html). |
-| Componentes-Forms | Captcha de formulario (foundation/components/form/captcha) | Utilice el componente ReCaptcha de Google en su lugar |
+| Componentes-Forms | Captcha de formulario (foundation/components/form/captcha) | Utilice el componente ReCaptcha by Google en su lugar |
 | Componentes | Presentación de diapositivas (foundation/components/slideshow) | Sin reemplazo |
 | Componentes | Flash (foundation/components/flash) | Sin reemplazo |
-| Componentes | Se ha eliminado la compatibilidad con la reproducción de archivos SWF en el componente de vídeo (foundation/components/video) | Utilice formatos de vídeo no basados en flash. |
+| Componentes | Se ha eliminado la compatibilidad con los archivos SWF de reproducción en el componente de vídeo (foundation/components/video) | Utilice formatos de vídeo no basados en flash. |
 | Componentes | Tabla de productos (comercio/componentes/tabla de productos) | Sin reemplazo |
 | Administración de tareas | Administración de tareas de la IU clásica (/libs/cq/taskmanagement/content/taskmanager.html) | Obsoleta desde la versión 6.0. Utilice la nueva administración de tareas combinada con la interfaz de usuario del flujo de trabajo. |
 | Flujo de trabajo | Interfaz de usuario de notificaciones utilizada entre 5.6 y 6.2 (/libs/cq/workflow/content/notifications.html) | Bandeja de entrada de flujo de trabajo /aem/inbox |
-| Forms | Se ha eliminado el Export PDF al formato PDF/E-1 mediante PDF Generator. | PDF Generator sigue admitiendo la exportación de PDF a los formatos PDF/A-1a/b, PDF/A-2a/b y PDF/A-3a/b. |
+| Forms | Se ha eliminado el Export PDF al formato PDF/E-1 mediante el Generador de PDF. | El Generador de PDF sigue siendo compatible con la exportación del PDF a los formatos PDF/A-1a/b, PDF/A-2a/b y PDF/A-3a/b. |
 | Forms | Se ha eliminado la compatibilidad con imágenes dentro de fragmentos de documento. | Las comunicaciones interactivas ofrecen la capacidad de usar imágenes directamente en canales impresos y web. |
 | Forms | Actualización fuera de lugar | No está disponible la compatibilidad para realizar la actualización fuera del lugar |
 | Forms | Cambio de categoría para migraciones de TarMK a DocumentMK | Puede exportar los datos de sistemas anteriores y luego importarlos en un sistema de configuración reciente. Para obtener instrucciones detalladas, consulte AEM Forms en la documentación de actualización de JEE |

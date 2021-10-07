@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 8%
@@ -22,7 +22,7 @@ Antes de realizar cualquiera de los pasos descritos a continuación, revise e im
 
 >[!NOTE]
 >
->Las siguientes herramientas de migración de recursos no forman parte de Adobe Experience Manager. El Servicio de atención al cliente de Adobe no admite estas herramientas.
+>Las siguientes herramientas de migración de recursos no forman parte de Adobe Experience Manager. La asistencia al cliente de Adobe no es compatible con estas herramientas.
 >
 >* ACS [!DNL Experience Manager] Herramientas Tag Maker
 >* Importador de recursos CSV de herramientas de ACS [!DNL Experience Manager]

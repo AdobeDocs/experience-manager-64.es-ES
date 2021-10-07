@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 41%
@@ -67,7 +67,7 @@ Para obtener instrucciones detalladas, consulte
 
 * [Notas de la versión de Service Pack de AEM 6.4](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Póngase en contacto con Customer** Caresi no puede encontrar el paquete de AEM o Service Pack más reciente.
+**Póngase en contacto con el Servicio de** atención al cliente si no puede encontrar el paquete de AEM o Service Pack más reciente.
 
 ## Crear configuración {#configure-new-integration-64}
 
@@ -315,7 +315,7 @@ Asegúrese de que no se esté ejecutando ningún trabajo de publicación en la i
 Debe ejecutar la siguiente lista de comprobación mientras elimina la configuración existente.
 * Eliminar los cuatro agentes de replicación
 * Eliminar servicio de nube
-* Eliminar usuario MAC
+* Eliminar usuario de MAC
 
 Realice los siguientes pasos para eliminar la configuración existente:
 
@@ -331,7 +331,7 @@ Realice los siguientes pasos para eliminar la configuración existente:
 
    ![](assets/delete-cloud-service.png)
 
-1. Vaya a `/home/users/mac` y elimine el **usuario MAC** de su inquilino de Brand Portal.
+1. Vaya a `/home/users/mac` y elimine el **usuario de MAC** de su inquilino de Brand Portal.
 
    ![](assets/delete-mac-user.png)
 

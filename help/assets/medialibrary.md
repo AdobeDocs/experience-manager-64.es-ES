@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: a3289431adb80162340a1acdbc9b91e0c29e99a0
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -52,15 +52,9 @@ Media Library abarca en general los siguientes casos de uso:
 
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-* Basic metadata properties
-* Tag management
-* Version control
 * Static renditions
-* Projects, tasks, workflow authoring
+* Projects, tasks authoring
 * Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
 * Comments and annotation
 -->
 
@@ -79,13 +73,22 @@ Para utilizar la funcionalidad de Media Library, puede utilizar la interfaz de u
 * Anotar recursos.
 * Agregue recursos a páginas [!DNL Sites] a través del Buscador de contenido.
 * Uso [!DNL Content Fragments].
+* Utilice las API de HTTP REST y GraphQL para [!DNL Content Fragments] y los recursos de medios a los que se hace referencia, bajo licencia de Sites.
+* Integración de Marketing Cloud.
+* Personalice y amplíe la interfaz de usuario de administración de recursos.
+* Acceda al Generador de consultas (API) para ampliar la funcionalidad de búsqueda.
+* Crear etiquetas estáticas.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
 >[!DNL Experience Manager Assets] completa muchos casos de uso avanzados de DAM. La licencia de Media Library le da derecho a cumplir únicamente los casos de uso enumerados con Media Library. Si un caso de uso no aparece en la lista, no lo utilice con la licencia de Media Library. Si tiene alguna consulta, póngase en contacto con el servicio de atención al cliente de Adobe.
+
+Tenga en cuenta que no puede utilizar etiquetas inteligentes, [!DNL Asset] vínculo, [!DNL Asset] selector, etiquetado masivo, modificación de flujos de trabajo de recursos sin [!DNL Assets] licencia.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

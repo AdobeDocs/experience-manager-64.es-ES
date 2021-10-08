@@ -2,7 +2,7 @@
 title: Notas de versión de AEM Assets
 seo-title: AEM Assets
 description: Notas de la versión específicas de Adobe Experience Manager 6.4 Assets.
-seo-description: Notas de la versión específicas de Adobe Experience Manager 6.4 Assets.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,10 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -37,7 +36,7 @@ AEM 6.4 introduce la funcionalidad Etiquetas inteligentes mejoradas basada en in
 
 Para utilizar las etiquetas inteligentes mejoradas de AEM Assets, instale el [Service Pack más reciente de AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es).
 
-## Búsqueda de traducción inteligente (con tecnología Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
+## Búsqueda de traducción inteligente (con tecnología de Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4 presenta la función de búsqueda de traducción inteligente para admitir escenarios de búsqueda multilingües. Los clientes con equipos distribuidos globalmente en varias configuraciones regionales ahora tienen acceso a búsquedas en diferentes idiomas sin tener que pasar por flujos de trabajo de traducción costosos y laboriosos.
 
@@ -61,7 +60,7 @@ Mejoras de búsqueda
 
 * Nuevo botón Buscar hacia atrás con la capacidad de desplazarse a un elemento de búsqueda y volver a la misma posición en los resultados de búsqueda sin volver a ejecutar la consulta de búsqueda.
 * Los nuevos resultados de la búsqueda muestran el número de resultados de la búsqueda.
-* Se ha mejorado el filtro de búsqueda de tipo de archivo con la capacidad de filtrar los resultados de búsqueda en función de tipos de mime detallados como JPG, PNG y PSD, en comparación con las opciones anteriores de imagen, documento y multimedia.
+* Se ha mejorado el filtro de búsqueda de tipo de archivo con la capacidad de filtrar los resultados de búsqueda en función de tipos de MIME detallados, como JPG, PNG y PSD, en comparación con las opciones anteriores de imagen, documento y multimedia.
 * Se han mejorado los filtros de búsqueda con marcas de hora precisas en lugar de la funcionalidad del control deslizante de tiempo anterior.
 
 Mejoras en los recursos de varias páginas
@@ -90,14 +89,14 @@ AEM 6.4 incluye varias funciones avanzadas de administración de metadatos para 
 AEM 6.4 ofrece mejoras significativas en la creación de informes de activos:
 
 * El nuevo marco de informes escalable (para repositorios grandes) de nivel empresarial que aplica trabajos de Sling para el procesamiento asincrónico de solicitudes de informes. Puede programar el informe en una fecha y hora específicas. También puede agregar columnas personalizadas a un informe.
-* Los nuevos informes de OOTB que suelen solicitar los clientes, como Uso del disco, Archivos, Compartidos en vínculos, Publicar en Brand Portal y Formación sobre etiquetas inteligentes.
+* Los nuevos informes de OOTB que suelen solicitar los clientes, como Uso del disco, Archivos, Compartidos en vínculos, Publicar en Brand Portal y Formación de etiquetas inteligentes.
 * Nueva interfaz de usuario de creación y administración de informes con opciones específicas, capacidad para acceder a informes archivados, ver estado de ejecución de informes (éxito, error, cola, etc.).
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 Actualización** de plataforma: Brand Portal se ha actualizado de AEM 6.0 a AEM 6.3, con nuevas funciones y mejoras de rendimiento.
+* **6.3 Actualización** de plataforma: Brand Portal ha actualizado de AEM 6.0 a AEM 6.3 con nuevas funciones y mejoras de rendimiento.
 * **Publicación paralela**: Pueden producirse hasta réplicas entre AEM Assets y Brand Portal (anteriormente 1), lo que mejora significativamente el rendimiento de la publicación
-* **Publicación** de facetas de búsqueda y esquema: Posibilidad de publicar esquemas de metadatos y facetas de búsqueda personalizadas en Brand Portal, lo que elimina la duplicación de esfuerzos.
+* **Publicación** de facetas de búsqueda y esquema: Capacidad para publicar esquemas de metadatos y facetas de búsqueda personalizadas en Brand Portal, lo que elimina la duplicación de esfuerzos.
 * **Publicación de etiquetas masivas**: Posibilidad de publicar taxonomía (junto con jerarquía) en Brand Portal, lo que elimina la duplicación de esfuerzos.
 * **Registro propio o Solicitud de acceso**: Flujo de trabajo para usuarios no registrados en Brand Portal.
 * **Notificación de mantenimiento en la aplicación (en pantalla)**: Las notificaciones se muestran con bastante antelación para evitar interrupciones en el negocio.
@@ -160,7 +159,7 @@ Consulte también la documentación [Añadir recursos de Dynamic Media a página
 
 Consulte la documentación [Imágenes inteligentes](../assets/imaging-faq.md) para obtener más información.
 
-### Mejoras emergentes en los medios y el visualizador {#emerging-media-amp-viewer-enhancements}
+### Mejoras emergentes en los medios y los visualizadores {#emerging-media-amp-viewer-enhancements}
 
 * Se admiten nuevos visualizadores, que proporcionan al usuario experiencias mejores e inmersivas.
 * El visor panorámico le ayuda a interactuar con el usuario y le ofrece la posibilidad de experimentar mejor las escenas, propiedades, ubicaciones y paisajes de la sala. Consulte la documentación [Imágenes panorámicas](../assets/panoramic-images.md) para obtener más información.

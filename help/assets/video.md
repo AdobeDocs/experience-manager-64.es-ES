@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '10384'
 ht-degree: 4%
@@ -35,7 +35,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
 1. **Cargue los** vídeos de Dynamic Media haciendo lo siguiente:
 
-   * Cree su propio perfil de codificación de vídeo. O bien, simplemente puede utilizar el perfil predefinido &quot;Codificación de vídeo adaptable&quot; que viene con Dynamic Media.
+   * Cree su propio perfil de codificación de vídeo. Or, you can simply use the predefined &quot;Adaptive Video Encoding&quot; profile that comes with Dynamic Media.
 
       * [Creación de un perfil de codificación de vídeo](video-profiles.md).
       * Obtenga más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
@@ -72,7 +72,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
          [Visualización de representaciones de vídeo](video-renditions.md)
 
-         [Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
+[Administración de representaciones de vídeo](managing-assets-touch-ui.md#managing-renditions)
 
       * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
       * [Publicación de recursos](publishing-dynamicmedia-assets.md)
@@ -84,7 +84,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
       * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, campos de metadatos personalizados:
 
-         [Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
+[Edición de propiedades de vídeo](managing-assets-touch-ui.md#editing-properties)
 
       * [Administración de metadatos de recursos digitales](metadata.md)
       * [Esquemas de metadatos](metadata-schemas.md)
@@ -119,7 +119,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 
 ## Trabajo con vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para su transmisión en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para su transmisión en varias pantallas, incluidos dispositivos móviles de escritorio, iOS, Android, Blackberry y Windows. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas tasas de bits de vídeo del conjunto de vídeos adaptables. El vídeo se transmite a escritorios, dispositivos móviles o tabletas.
 
@@ -142,11 +142,11 @@ Para administrar conjuntos de vídeos adaptables y de vídeo único, se admite l
    * Cuando se genera un conjunto de vídeos adaptables, incluye vídeos MP4.
    * **Nota**: Los vídeos principales/de origen no se agregan a un conjunto de vídeos adaptables.
 
-* Subtítulos de vídeo en todos los visores de vídeo HTML5.
+* Subtítulos de vídeo en todos los visualizadores de vídeo de HTML5.
 * Organice, examine y busque vídeos con compatibilidad para metadatos completa para una administración eficiente de los recursos de vídeo.
 * Envíe conjuntos de vídeos adaptables a la web, así como a escritorios y dispositivos móviles, incluidos iPhone, iPad, Android, Blackberry y Windows Phone.
 
-El flujo de vídeo adaptable es compatible con diversas plataformas iOS. Consulte la [Guía de referencia de visores de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos Blackberry compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,21 +162,21 @@ Puede encontrar los dispositivos de Windows compatibles con este formato de víd
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Consulte también [Acerca de los visores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) en la Guía de referencia de visores de Dynamic Media de Adobe.
+Consulte también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) en la Guía de referencia de visores de Dynamic Media de Adobe.
 
-## Práctica recomendada: Uso del visor de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
+## Práctica recomendada: Uso del visor de vídeo de HTML5 {#best-practice-using-the-html-video-viewer}
 
-Los ajustes preestablecidos del visor de vídeo HTML5 de Dynamic Media son reproductores de vídeo sólidos. Puede utilizarlos para evitar muchos problemas comunes asociados con la reproducción de vídeo HTML5 y problemas asociados con dispositivos móviles, como la falta de entrega de flujo adaptable y el limitado alcance del navegador de escritorio.
+Los ajustes preestablecidos del visor de vídeo de Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlos para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5 y problemas asociados con dispositivos móviles, como la falta de entrega de flujo adaptable y el limitado alcance del navegador de escritorio.
 
 En el lado de diseño del reproductor, puede diseñar toda la funcionalidad del reproductor de vídeo mediante herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo personalizado de la imagen de póster utilizando HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
 
 En el lado de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo utilizando la transmisión de vídeo HLS (flujo de vídeo adaptable). O, si esos métodos de envío no están presentes, se utiliza HTML5 progresiva en su lugar.
 
-Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener reproducción incrustada y utilizar flujo adaptable y progresivo según la capacidad del explorador, se amplía el alcance del contenido de medios enriquecidos a los usuarios de escritorio y móviles y se garantiza una experiencia de vídeo optimizada.
+Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener reproducción incrustada y utilizar flujo adaptable y progresivo en función de la capacidad del explorador, puede ampliar el alcance del contenido de medios enriquecidos tanto a los usuarios de escritorio como móviles y garantizar una experiencia de vídeo optimizada.
 
-Consulte también [Acerca de los visores HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) en la Guía de referencia de visores de Adobe.
+Consulte también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) en la Guía de referencia de visores de Adobe.
 
-### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visor de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visor de vídeo de HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Para el streaming de vídeo adaptable móvil y de escritorio, los vídeos utilizados para el cambio de velocidad de bits se basan en todos los vídeos MP4 del conjunto de vídeos adaptables.
 
@@ -187,7 +187,7 @@ Sin embargo, en AEM 6.3 y en adelante, los vídeos ahora se transmiten a través
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, la transmisión está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, la transmisión está bien y no hay problemas de contenido mixto en el navegador web.
 
-HLS (HTTP Live Streaming) es un estándar de Apple para el flujo de vídeo adaptable que ajusta automáticamente la reproducción en función de la capacidad de ancho de banda de la red. También permite al cliente &quot;buscar&quot; a cualquier punto del vídeo sin necesidad de esperar a que se descargue el resto del vídeo (consulte también Transmisión en directo HTTP).
+HLS (HTTP Live Streaming) es un estándar de Apple para flujo de vídeo adaptable que ajusta automáticamente la reproducción en función de la capacidad de ancho de banda de la red. También permite al cliente &quot;buscar&quot; a cualquier punto del vídeo sin necesidad de esperar a que se descargue el resto del vídeo (consulte también Transmisión en directo HTTP).
 
 El vídeo progresivo se entrega descargando y almacenando el vídeo localmente en la pantalla de escritorio o el dispositivo móvil del usuario.
 
@@ -217,13 +217,13 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   </tr>
   <tr> 
    <td>Escritorio</td>
-   <td>Firefox 45 o posterior</td>
+   <td>Firefox 45 or later</td>
    <td>Flujo continuo de vídeo HLS.</td>
   </tr>
   <tr> 
    <td>Escritorio</td>
    <td>Chrome</td>
-   <td>Flujo continuo de vídeo HLS.</td>
+   <td>HLS video streaming.</td>
   </tr>
   <tr> 
    <td>Escritorio</td>
@@ -319,7 +319,7 @@ En la tabla siguiente se describe cómo los resultados de la fórmula se traduce
 
 | Resultado de la fórmula | Proporción de aspecto |
 |--- |--- |
-| 1,33 | 4:3 |
+| 1.33 | 4:3 |
 | 0,75 | 3:4 |
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
@@ -427,7 +427,7 @@ Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla sigu
    <td><p>Codificado</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Codificado</p> </td> 
@@ -452,19 +452,19 @@ La publicación en YouTube evita el sistema de perfiles de procesamiento en AEM 
 
 La publicación de recursos de vídeo en servidores de YouTube implica completar las siguientes tareas para garantizar una autenticación segura de servidor a servidor con YouTube:
 
-1. [Configuración de Google Cloud](#configuring-google-cloud-settings)
-1. [Creación de un canal de YouTube](#creating-a-youtube-channel)
+1. [Configure Google Cloud Settings](#configuring-google-cloud-settings)
+1. [Create a YouTube channel](#creating-a-youtube-channel)
 1. [Agregar etiquetas para su publicación](#adding-tags-for-publishing)
 1. [Habilitar el agente de replicación de YouTube Publish](#enabling-the-youtube-publish-replication-agent)
 1. [Configuración de YouTube en AEM](#setting-up-youtube-in-aem)
 1. [(Opcional) Automatice la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publicación de vídeos en el canal de YouTube](#publishing-videos-to-your-youtube-channel)
+1. [Publish videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
 1. [(Opcional) Verifique el vídeo publicado en YouTube](video.md#optional-verifying-the-published-video-on-youtube)
 1. [Vincule las URL de YouTube a su aplicación web](#linking-youtube-urls-to-your-web-application)
 
 También puede [cancelar la publicación de vídeos para eliminarlos de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configurar las opciones de Google Cloud {#configuring-google-cloud-settings}
+### Configuración de la nube de Google {#configuring-google-cloud-settings}
 
 Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de GMAIL, ya tiene una cuenta de Google. Si no tiene una cuenta de Google, puede crearla fácilmente. Necesita la cuenta porque necesita credenciales para publicar recursos de vídeo en YouTube. Si ya ha creado una cuenta, omita esta tarea y continúe con [Creación de un canal de YouTube](#creating-a-youtube-channel).
 
@@ -535,7 +535,7 @@ La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si 
 
 >[!CAUTION]
 >
->Asegúrese de que ya ha configurado uno o varios canales en YouTube &amp;ast;before&amp;ast; los canales se agregan en Configuración de YouTube en AEM (consulte [Configuración de YouTube en AEM](#setting-up-youtube-in-aem) más adelante). Si no lo hace, no se le avisará de que no hay canales existentes. Sin embargo, la autenticación de Google se sigue produciendo cuando se agrega un canal, pero no hay opción de elegir el canal al que se envía el vídeo.
+>Asegúrese de que ya ha configurado uno o varios canales en YouTube &amp;ast;before&amp;ast; los canales se agregan en Configuración de YouTube en AEM (consulte [Configuración de YouTube en AEM](#setting-up-youtube-in-aem) más adelante). Si no lo hace, no se le avisará de que no hay canales existentes. Sin embargo, la autenticación de Google sigue produciéndose cuando se agrega un canal, pero no hay opción de elegir el canal al que se envía el vídeo.
 
 **Para crear un canal de YouTube:**
 
@@ -814,9 +814,9 @@ Para monitorizar el progreso (incluida la codificación/publicación fallida de 
 
    >[!NOTE]
    >
-   >Podría llevar mucho tiempo que el mensaje de error finalmente se registre debido a varias configuraciones de flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** de [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), por ejemplo:
+   >It may take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr), for example:
    >
-   >* Configuración de cola de trabajos Apache Sling
+   >* Apache Sling Job Queue Configuration
    >* Controlador de trabajos de proceso externo de flujo de trabajo de Granite de Adobe
    >* Cola de tiempo de espera de flujo de trabajo de Granite
 
@@ -902,13 +902,13 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 1. En la tabla que enumera los vídeos más publicados, pulse un nombre de vídeo para reproducir el vídeo y también consulte el informe de retención de audiencia (desplegable) del vídeo.
 
-### Ver informes de vídeo basados en un visor de vídeo creado con el SDK del visor HTML5 de Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Ver informes de vídeo basados en un visor de vídeo creado con el SDK de visor de Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si utiliza un visualizador de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requiere ningún paso adicional para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API del SDK del visor HTML5, siga los siguientes pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
+Si utiliza un visualizador de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requiere ningún paso adicional para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API del SDK del visor de HTML5, siga los siguientes pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Utilice la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) y la [API del SDK de visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Utilice la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) y la [API del SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
-Para ver informes de vídeo basados en un visor de vídeo creado con la API del SDK del visor HTML5:
+Para ver informes de vídeo basados en un visor de vídeo creado con la API del SDK de visor de HTML5:
 
 1. Vaya a cualquier recurso de vídeo publicado.
 1. Junto a la esquina superior izquierda de la página del recurso, en la lista desplegable, seleccione **[!UICONTROL Visualizadores]**.
@@ -917,7 +917,7 @@ Para ver informes de vídeo basados en un visor de vídeo creado con la API del 
 
    `videoViewer.setParam("config2", "<value>");`
 
-   El parámetro `config2` habilita el seguimiento en los visores HTML5. También es un ajuste preestablecido específico de la empresa que contiene la información de configuración para los informes de vídeo y para las configuraciones de Adobe Analytics específicas del cliente.
+   El parámetro `config2` habilita el seguimiento en los visualizadores de HTML5. También es un ajuste preestablecido específico de la empresa que contiene la información de configuración para los informes de vídeo y para las configuraciones de Adobe Analytics específicas del cliente.
 
    El valor correcto del parámetro config2 se encuentra tanto en el **[!UICONTROL código incrustado]** como en la función de copia de **[!UICONTROL URL]**. En la URL del comando copiar **[!UICONTROL URL]**, el parámetro que se busca es `&config2=<value>`. El valor es casi siempre `companypreset`, pero en algunos casos también puede ser `companypreset-1`, `companypreset-2`, etc.
 
@@ -1012,11 +1012,11 @@ Consulte [Servicio de contenido estático (no de imagen)](https://experienceleag
 
 1. Realice una de las acciones siguientes:
 
-   * Para obtener una experiencia del visor de vídeo emergente, pulse **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la dirección URL en el portapapeles y, a continuación, pase la dirección URL a un editor de texto sencillo. Añada la URL copiada del vídeo con la siguiente sintaxis:
+   * Para obtener una experiencia del visor de vídeo emergente, pulse **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la dirección URL en el portapapeles y, a continuación, pase la dirección URL a un editor de texto sencillo. Append the copied URL of the video with the following syntax:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Observe el `,1` al final de la ruta del rótulo. Inmediatamente después de la extensión de nombre de archivo .vtt en la ruta, tiene la opción de habilitar (activar) o desactivar (desactivar) el botón de subtítulos en la barra del reproductor de vídeo configurando en `,1` o `,0`, respectivamente.
+      Observe el `,1` al final de la ruta del rótulo. Immediately following the .vtt filename extension in the path, you have the option to enable (turn on) or disable (turn off) the closed caption button on the video player bar by setting to `,1` or `,0`, respectively.
 
    * Para una experiencia con el visor de vídeo incrustado, pulse **[!UICONTROL Código incrustado]**. En el cuadro de diálogo Código incrustado , seleccione y copie el código incrustado en el portapapeles y, a continuación, pegue el código en un editor de texto sencillo. Añada el código incrustado copiado con la siguiente sintaxis:
 
@@ -1024,15 +1024,15 @@ Consulte [Servicio de contenido estático (no de imagen)](https://experienceleag
 
       Observe el `,1` al final de la ruta del rótulo. Inmediatamente después de la extensión de nombre de archivo .vtt en la ruta, tiene la opción de habilitar (activar) o desactivar (desactivar) el botón de subtítulos en la barra del reproductor de vídeo configurando en `,1` o `,0`, respectivamente.
 
-## Agregar marcadores de capítulo a vídeo {#adding-chapter-markers-to-video}
+## Add chapter markers to video {#adding-chapter-markers-to-video}
 
-Puede hacer que los vídeos de formulario largos sean más fáciles de ver y navegar añadiendo marcadores de capítulo a vídeos individuales o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede pulsar los marcadores de capítulo en la cronología del vídeo (también conocida como el depurador de vídeo) para desplazarse fácilmente a su punto de interés o para acceder inmediatamente a nuevos contenidos, demostraciones, tutoriales, etc.
+You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. Cuando un usuario reproduce el vídeo, puede pulsar los marcadores de capítulo en la cronología del vídeo (también conocida como el depurador de vídeo) para desplazarse fácilmente a su punto de interés o para acceder inmediatamente a nuevos contenidos, demostraciones, tutoriales, etc.
 
 >[!NOTE]
 >
 >El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero es posible que no utilicen reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de usar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor HTML5 con navegación por capítulos, en la API del SDK del visor HTML5 de Adobe, haga referencia al encabezado &quot;Personalización del comportamiento con modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la documentación [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) .
+If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe HTML5 Viewer SDK API, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. Consulte la documentación de la [API del SDK de visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 Puede crear una lista de capítulos para el vídeo de la misma manera que crea subtítulos. Es decir, se crea un archivo WebVTT. No obstante, tenga en cuenta que este archivo debe estar separado de cualquier archivo de subtítulos WebVTT que también esté utilizando; no se pueden combinar subtítulos y capítulos en un archivo WebVTT.
 
@@ -1058,7 +1058,7 @@ Cost-efficient access to rapidly evolving technology.
 
 En el ejemplo anterior, `Chapter 1` es el identificador de referencia y es opcional. La hora de referencia de `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en formato `00:00:000`. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de referencia, el tiempo de referencia de inicio y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario pasa el puntero del ratón sobre un punto de referencia visual en la cronología del vídeo.
 
-Como está utilizando un visor de vídeo HTML5, asegúrese de que el archivo de capítulo que cree sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo del capítulo es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
+Como está utilizando un visor de vídeo de HTML5, asegúrese de que el archivo de capítulo que cree sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo del capítulo es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
 Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://dev.w3.org/html5/webvtt/)
 
@@ -1141,7 +1141,7 @@ Si lo prefiere, puede elegir cargar una miniatura personalizada para representar
 
 #### Configure el intervalo de tiempo predeterminado en el que se generan las miniaturas de vídeo {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Cuando configura y guarda el nuevo intervalo de tiempo predeterminado, el cambio se aplica automáticamente solo a los vídeos que cargue en el futuro. No aplica automáticamente el nuevo valor predeterminado a los vídeos que ha cargado anteriormente. Para los vídeos existentes, debe volver a generar las miniaturas.
+Cuando configura y guarda el nuevo intervalo de tiempo predeterminado, el cambio se aplica automáticamente solo a los vídeos que cargue en el futuro. It does not automatically apply the new default to videos that you previously uploaded. Para los vídeos existentes, debe volver a generar las miniaturas.
 
 Consulte [Adición de una miniatura de vídeo](#adding-a-video-thumbnail).
 
@@ -1149,7 +1149,7 @@ Para configurar el intervalo de tiempo predeterminado en el que se generan las m
 
 1. En AEM, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
-1. En la página CRXDE Lite, en el panel de directorio de la izquierda, vaya a `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    si el panel de directorio no está visible, es posible que tenga que tocar el icono >> a la izquierda de la pestaña Inicio .
 

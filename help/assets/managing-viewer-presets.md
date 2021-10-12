@@ -1,8 +1,8 @@
 ---
 title: Administración de ajustes preestablecidos de visor de Dynamic Media
-seo-title: Administración de ajustes preestablecidos de visor de Dynamic Media
+seo-title: Managing Dynamic Media viewer presets
 description: Creación y administración de ajustes preestablecidos de visor de Dynamic Media
-seo-description: Creación y administración de ajustes preestablecidos de visor de Dynamic Media
+seo-description: How to create and manage Dynamic Media viewer presets
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Ajustes preestablecidos de visor
+feature: Viewer Presets
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
-source-wordcount: '4236'
+source-wordcount: '4220'
 ht-degree: 11%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 11%
 
 Un ajuste preestablecido de visualizador de Dynamic Media es una colección de ajustes que determinan cómo ven los usuarios los recursos de medios enriquecidos en sus pantallas de equipos y dispositivos móviles. Si es un administrador, puede crear ajustes preestablecidos de visor. La configuración está disponible para una matriz de opciones de configuración del visor. Por ejemplo, puede cambiar el tamaño de visualización del visor o el comportamiento de zoom.
 
-Para obtener instrucciones sobre la creación y personalización de sus propios ajustes preestablecidos de visor HTML5, consulte la documentación de la API del SDK del visor HTML5 de Dynamic Media *Adobe*. El SDK está disponible en el servidor de publicación IS incrustado en el propio SDK. Cada versión de la biblioteca tiene su propia documentación de SDK incluida.
+Para obtener instrucciones sobre la creación y personalización de sus propios ajustes preestablecidos de visor de HTML5, consulte la documentación de la API del SDK de visor de Dynamic Media *HTML5* de Adobe. El SDK está disponible en el servidor de publicación IS incrustado en el propio SDK. Cada versión de la biblioteca tiene su propia documentación de SDK incluida.
 
 Ruta: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por ejemplo, SDK 3.10: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte también la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visualizador. Puede aplicar un ajuste preestablecido de visualizador a un recurso cada vez que lo previsualice. Consulte [Aplicación de ajustes preestablecidos de visor](viewer-presets.md).
 
@@ -55,7 +55,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y previsuali
 
 ## Compatibilidad del visor con páginas web diseñadas para adaptarse {#viewer-support-for-responsive-designed-web-pages}
 
-Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor HTML5 en una ventana de navegador independiente. En otros casos, puede ser necesario incrustar el visor HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O puede ser *adaptable* y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del navegador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos y listos para usar que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web diseñadas con capacidad de respuesta.
+Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor de HTML5 en una ventana independiente del explorador. En otros casos, puede ser necesario incrustar el visor de HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O puede ser *adaptable* y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del navegador. Para satisfacer estas necesidades, todos los visores predefinidos y listos para usar del HTML5 que se incluyen con Dynamic Media admiten tanto páginas web estáticas como páginas web diseñadas con capacidad de respuesta.
 
 Consulte [Biblioteca de imágenes interactivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) en la *Ayuda de API de servicio de imágenes* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
 
@@ -84,7 +84,7 @@ Los administradores pueden agregar y personalizar los siguientes tipos de medios
 | **Conjunto de carrusel** | Las zonas interactivas, los mapas de imágenes o ambas se añaden a una serie de dos o más imágenes. Un cliente puede obtener una panorámica de las imágenes a la izquierda o a la derecha y, a continuación, hacer clic en un punto interactivo de una imagen para obtener más detalles o para realizar compras directamente desde las páginas de categoría, de inicio o de aterrizaje de un sitio web. |
 | **Zoom flotante** | Muestra una segunda imagen del área ampliada junto a la imagen original. No hay controles que utilizar: los usuarios mueven la selección sobre el área que desean ver. |
 |  | Al determinar el uso completo del ancho de banda para este visor, tenga en cuenta que tanto la imagen principal como la imagen flotante se proporcionan en el visor. El tamaño de la imagen principal (ancho y alto del escenario) y el factor de zoom determinan el tamaño de la imagen flotante. Para evitar que el tamaño del archivo flotante sea demasiado grande, equilibre estos dos valores: si tiene un tamaño de imagen principal grande, reduzca el valor del factor de zoom. (La anchura flotante y la altura flotante determinan el tamaño de la ventana flotante, pero no el tamaño de la imagen flotante que se proporciona al visor). |
-|  | Por ejemplo, si el tamaño de la imagen principal es de 350 por 350 píxeles, con un factor de zoom de 3, la imagen flotante resultante es de 1050 por 1050 píxeles. Si el tamaño de la imagen principal es de 300 por 300 píxeles, con un factor de zoom de 4, la imagen flotante es de 1200 por 1200 píxeles. Dependiendo del ajuste de calidad JPEG (los ajustes recomendados están entre 80 y 90), puede reducir el tamaño del archivo de forma significativa. Los factores de zoom recomendados son de 2,5 a 4, dependiendo del tamaño de la imagen principal. |
+|  | Por ejemplo, si el tamaño de la imagen principal es de 350 por 350 píxeles, con un factor de zoom de 3, la imagen flotante resultante es de 1050 por 1050 píxeles. Si el tamaño de la imagen principal es de 300 por 300 píxeles, con un factor de zoom de 4, la imagen flotante es de 1200 por 1200 píxeles. Según la configuración de calidad del JPEG (la configuración recomendada está entre 80 y 90), puede reducir el tamaño del archivo de forma significativa. Los factores de zoom recomendados son de 2,5 a 4, dependiendo del tamaño de la imagen principal. |
 | **Zoom en línea** | Muestra una imagen del área ampliada dentro del visor original. No hay controles que usar. Es decir, los usuarios mueven la selección sobre el área que desean ver. |
 | **Conjunto de imágenes** | En el visor de conjuntos de imágenes, los usuarios pueden ver diferentes vistas o variaciones de color de un elemento haciendo clic en una imagen en miniatura. Este visor también ofrece herramientas de zoom para examinar las imágenes de cerca. |
 | **Imagen interactiva** | Las zonas interactivas se añaden a partes de una imagen en las que un cliente puede hacer clic para obtener más información o para realizar compras directamente desde las páginas de aterrizaje, de inicio o de categoría de un sitio web. |
@@ -107,7 +107,7 @@ Consulte también [Demostraciones en directo](https://landing.adobe.com/en/na/dy
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo de los visores, consulte las Notas de la versión de los visores.
 
-Consulte *Notas de la versión de los visores* en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte *Notas de la versión de los visores* en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Consulte *Notas de la versión de los visores* en la tabla de contenido de la [G
 
 ### Matriz de gestos de visores móviles compatibles {#supported-mobile-viewers-gestures-matrix}
 
-La siguiente tabla identifica los gestos del visor móvil compatibles con los dispositivos iOS, Android 2.x y Android 3.x.
+La tabla siguiente identifica los gestos del visor móvil compatibles con los dispositivos iOS, Android 2.x y Android 3.x.
 
 | Gesto | Zoom flotante  | Zoom | Giro |
 |---|---|---|---|
@@ -156,7 +156,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
 | **Pulsar dos veces** | No se aplica | Amplía o restablece | Amplía o restablece |
 | **Abrir el lápiz** | No se aplica | Amplía (solo iOS y Android 3x) | Amplía (solo iOS y Android 3x) |
 | **Pellizque** | No se aplica | Reduce el tamaño de la página (solo iOS y Android 3x) | Reduce el tamaño de la página (solo iOS y Android 3x) |
-| **Deslizar** | Desplaza la barra de muestra | Desplazamiento por imágenes | Giros |
+| **Deslizar** | Scrolls swatch bar | Scrolls images | Spins |
 | **Flick** | Desplaza la barra de muestra | Desplazamiento por imágenes | Giros |
 
 ## Aumento del número de ajustes preestablecidos de visor de Dynamic Media que se muestran {#increasing-the-number-of-viewer-presets-that-display}
@@ -212,7 +212,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       El editor visual permite ver qué efecto tiene una propiedad determinada en un estilo. Solo tiene que configurar o ajustar cualquier propiedad para ver instantáneamente qué efecto tiene en el visor con la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en el tema de ayuda &quot;Personalización del *&lt;viewer_name>* Visor&quot; de la [Guía de referencia del visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en el tema de ayuda &quot;Personalización del *&lt;viewer_name>* Visor&quot; de la [Guía de referencia del visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
       Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
@@ -220,12 +220,12 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS que importe deben definirse con su nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitraria hecha a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* Visor&quot; en la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea obtener información sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+      Puede importar CSS arbitraria hecha a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* Visor&quot; en la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html). Por ejemplo, si desea obtener información sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, pulse **[!UICONTROL Mostrar/Ocultar CSS]** debajo del menú desplegable Tipo seleccionado (puede que necesite desplazar el editor visual hacia arriba para verlo).****
    >
-   >Al igual que el editor visual, cuando realiza un cambio en una propiedad directamente en el CSS, puede ver instantáneamente qué efecto tiene en la muestra del visor. Y, esa misma propiedad se actualiza automáticamente al mismo tiempo en el editor visual. Como tal, puede utilizar el editor CSS sin procesar o el editor visual, o ambos de forma intercambiable.
+   >Like the visual editor, when you make a change to a property directly in the CSS, you can instantly see what effect it has on the viewer sample. Y, esa misma propiedad se actualiza automáticamente al mismo tiempo en el editor visual. As such, you can use the raw CSS editor, or the visual editor, or use both interchangeably.
 
    >[!NOTE]
    >
@@ -235,7 +235,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 1. En la página **[!UICONTROL Editar ajuste preestablecido de visualizador]**, pulse la pestaña **Comportamiento**. Como alternativa, puede tocar o hacer clic en cualquier elemento visual del visualizador y seleccionarlo para su configuración.
 1. En el menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione un componente cuyos comportamientos desee cambiar.
 
-   Muchos componentes del editor visual tienen una descripción detallada asociada. Estas descripciones aparecen en cuadros azules al expandir un componente para mostrar sus parámetros asociados.
+   Many components in the visual editor have a detailed description associated with it. Estas descripciones aparecen en cuadros azules al expandir un componente para mostrar sus parámetros asociados.
 
    Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **Comando IS**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
@@ -258,7 +258,7 @@ Cuando se crea o edita un ajuste preestablecido de visualizador de vídeo intera
 
 | Modo de visualización | Descripción |
 |---|---|
-| [!UICONTROL Segmento] |  Los segmentos son el modo de visualización predeterminado para los ajustes preestablecidos de visualizador de vídeo interactivo Shoppable_Video_light y Shoppable_Video_dark y cualquier ajuste preestablecido de visualizador de vídeo interactivo que cree usted mismo. |
+| [!UICONTROL Segmento] |  Los segmentos son el modo de visualización predeterminado para los ajustes preestablecidos de visualizador de vídeo interactivo preestablecidos de Shoppable_Video_light y Shoppable_Video_dark y cualquier ajuste preestablecido de visualizador de vídeo interactivo que cree usted mismo. |
 |  | En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguientes o anteriores no se extraen para rellenar ninguna zona vacía del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo concreto. |
 | [!UICONTROL Continuo] | En el modo de visualización [!UICONTROL Continuous], si el número de miniaturas de un segmento es menor que el número visible en el panel, el visor incluye automáticamente la visualización de miniaturas del siguiente segmento o del segmento anterior, en los casos en que se muestre la última miniatura. |
 
@@ -306,20 +306,20 @@ Al crear ajustes preestablecidos de visor de titular de carrusel, se puede acced
 
 ## Activación o desactivación de ajustes preestablecidos de visor de Dynamic Media {#activating-or-deactivating-viewer-presets}
 
-Los ajustes preestablecidos de visor disponibles en la interfaz de usuario dependen de los que estén activos en el modo Autor. De forma predeterminada, un ajuste preestablecido de visualizador es *On* después de crearlo. Si desactiva el ajuste preestablecido, no lo verá en modo Autor. Si se publica el ajuste preestablecido. siempre se publicará independientemente de si está activada o desactivada. Puede que desee desactivar los ajustes preestablecidos de visor si la lista es demasiado complicada o si no desea que haya un ajuste preestablecido de visor disponible para su uso.
+Los ajustes preestablecidos de visor disponibles en la interfaz de usuario dependen de los que estén activos en el modo Autor. By default, a viewer preset is *On* after you create it. Si desactiva el ajuste preestablecido, no lo verá en modo Autor. If the preset is published. it will always be published regardless of whether it is toggled on or off. You may want to deactivate viwer presets if the list becomes too unwieldy or you do not want a viewer preset made available to use.
 
 **Para activar o desactivar los ajustes preestablecidos** del visor de Dynamic Media:
 
 1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de visor]**.
 1. En la página **[!UICONTROL Ajuste preestablecido de visualizador]**, en el encabezado de columna **[!UICONTROL Estado]**, pulse el botón de alternancia para activar o desactivar un ajuste preestablecido de visualizador.
 
-   Los ajustes preestablecidos de visor que se activan tienen el botón de alternancia a la derecha, dentro de un cuadro azul; los ajustes preestablecidos de visualizador desactivados tienen la opción que aparece a la izquierda, dentro de un cuadro gris claro.
+   Viewer presets that are activated have the toggle appear on the right, inside a blue box; deactivated viewer presets have the toggle appear on the left, inside a light grey box.
 
 ## Publicación de ajustes preestablecidos de visualizador de Dynamic Media {#publishing-viewer-presets}
 
 Activar (o activar *On*) el estado de un ajuste preestablecido de visualizador significa que está visible en el componente Dynamic Media, en el componente Medios interactivos y siempre que se vea un recurso.
 
-Sin embargo, para entregar un recurso con un ajuste preestablecido de visualizador, también debe publicarse el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador deben activarse *y* publicarse para obtener la URL o el código incrustado de un recurso. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
+However, to deliver an asset with a viewer preset, the viewer preset must be published as well. All viewer presets must be activated *and* published to obtain URL or embed code for an asset. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
 Consulte [Activación o desactivación de ajustes preestablecidos de visor](#activating-or-deactivating-viewer-presets).
 

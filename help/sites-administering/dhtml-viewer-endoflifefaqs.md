@@ -1,25 +1,24 @@
 ---
 title: Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML
-description: A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará oficialmente de funcionar.
+description: A partir del 31 de enero de 2014, la plataforma del visor DHTML dejará de funcionar oficialmente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 9%
 
 ---
 
+# Fin de vida útil del visualizador DHTML {#dhtml-viewer-end-of-life-}
 
-# Fin de vida útil del visor DHTML {#dhtml-viewer-end-of-life-}
+A partir del 31 de enero de 2014, la plataforma del visor DHTML finaliza oficialmente su vida útil.
 
-A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcionar oficialmente.
-
-Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) para obtener información sobre los últimos visores admitidos.
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para conocer los últimos visores compatibles.
 
 <!-- **What is the change?**
 

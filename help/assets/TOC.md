@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 46%
+source-wordcount: '636'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 46%
 + [Acerca de DAM](assets.md)
 + [Mejoras en la experiencia del usuario](ux-improvements.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
-+ Usar AEM Assets {#using}
++ Uso de AEM Assets {#using}
    + [Experiencia de la página de inicio de AEM Assets](assets-home-page.md)
    + [Buscar recursos en AEM](search-assets.md)
    + [Búsqueda de texto completo de GQL](gql-search.md)
@@ -49,7 +49,7 @@ ht-degree: 46%
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adición de funciones de Dynamic Media Classic a su página](scene7.md)
+   + [Adición de funciones de Dynamic Media Classic a la página](scene7.md)
    + [Entrega HTTP2 de contenido](http2.md)
    + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
@@ -81,7 +81,7 @@ ht-degree: 46%
    + [Ampliación del Editor de recursos](asseteditorx.md)
    + [API de HTTP de Assets](mac-api-assets.md)
    + [Desarrollo de proxy de recursos](proxy.md)
-+ Administrar recursos {#administer}
++ Administración de recursos {#administer}
    + [Formatos compatibles con Assets](assets-formats.md)
    + [Facetas de búsqueda](search-facets.md)
    + [Administración de metadatos de recursos](metadata.md)
@@ -165,3 +165,7 @@ ht-degree: 46%
    + [Uso compartido de carpetas privadas](private-folder.md)
    + [Directrices de formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
    + [Representaciones de vídeo](video-renditions.md)
++ Integración con otras soluciones {#integrations}
+   + [Integraciones con [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)

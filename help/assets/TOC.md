@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 45%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 45%
    + [Uso del rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configuración de restricciones de carga de recursos](configuring-asset-upload-restrictions.md)
    + [Prácticas recomendadas para la integración de AEM y Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Configuración de Asset Link de Adobe](configure-asset-link.md)
    + [Integración de AEM Assets con el servidor de InDesign](indesign.md)
    + [Perfiles de metadatos](metadata-profiles.md)
    + [Digital Rights Management en Assets](drm.md)

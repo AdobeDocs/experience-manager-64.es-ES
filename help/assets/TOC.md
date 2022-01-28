@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 45%
+source-wordcount: '639'
+ht-degree: 48%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 45%
    + [Flujo de actividad en la cronología](activity-stream.md)
    + [Procesar recursos](assets-workflow.md)
    + [Adición de mapas de imagen](image-maps.md)
-   + [Reutilizar recursos mediante MSM](reuse-assets-using-msm.md)
+   + [Reutilización de recursos mediante MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Archivo de newsletter de Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Archivo de newsletters sobre Dynamic Media de Experience League](dynamic-media-newsletter.md)
    + [Configuración de Dynamic Media](administering-dynamic-media.md)
    + [Trabajo con Dynamic Media](dynamic-media.md)
    + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)
@@ -49,7 +49,6 @@ ht-degree: 45%
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adición de funciones de Dynamic Media Classic a la página](scene7.md)
    + [Entrega HTTP2 de contenido](http2.md)
    + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 45%
    + [Distribución de imágenes adaptables para un sitio interactivo](responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](previewing-assets.md)
    + [Agregar recursos de Dynamic Media a las páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Adición de componentes de Dynamic Media Classic a las páginas](scene7.md)
    + [Incrustar Dynamic Video o el visualizador de imágenes en una página web](embed-code.md)
    + [Vincular URL en la aplicación web](linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
@@ -167,6 +167,6 @@ ht-degree: 45%
    + [Directrices de formación del servicio de contenido inteligente](smart-tags-training-guidelines.md)
    + [Representaciones de vídeo](video-renditions.md)
 + Integración con otras soluciones {#integrations}
-   + [Integraciones con [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
-   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)
+   + [Integraciones con  [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
+   + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)

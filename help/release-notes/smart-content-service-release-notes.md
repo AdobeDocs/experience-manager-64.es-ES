@@ -1,17 +1,17 @@
 ---
 title: Notas de la versión del servicio de contenido inteligente
-seo-title: Notas de la versión del servicio de contenido inteligente
+seo-title: Smart Content Service Release Notes
 description: Información general sobre el servicio de contenido inteligente y problemas conocidos relacionados con el servicio.
-seo-description: Información general sobre el servicio de contenido inteligente y problemas conocidos relacionados con el servicio.
+seo-description: Overview of the Smart Content Service and known issues around the service.
 uuid: 5f474b36-3451-48ea-8669-b2d793638b06
 content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+source-git-commit: 354e3fcd747b7b0490599c3b84b8e58dac39ed05
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 9%
+source-wordcount: '307'
+ht-degree: 10%
 
 ---
 
@@ -32,55 +32,7 @@ El servicio de contenido inteligente es proporcionado por la plataforma de Adobe
 El servicio de contenido inteligente incluye las siguientes mejoras clave:
 
 * Optimizaciones de algoritmos para mejorar aún más la precisión del modelo y los valores de recuperación
-* Compatibilidad con el restablecimiento de la formación del modelo para todas las etiquetas a nivel de inquilino
-* Compatibilidad con espacios de nombres de Etiquetas inteligentes mejoradas para evitar conflictos
-* Nueva política de sustitución de modelos para evitar cualquier degradación debida al reciclaje
-* Supervisión del uso del servicio por parte del inquilino
 * Correcciones de problemas relacionados con la agrupación en clústeres y la conexión, que mejoran la solidez del servicio
-
-## Problemas solucionados {#fixed-issues}
-
-En esta versión se corrigieron los siguientes problemas:
-
-* Los procesos de trabajo para el etiquetado y los flujos de trabajo de formación finalizan si no se puede conectar al servidor MySQL. CQ-4242886
-
-* La puntuación sesgada de precisión no se calcula correctamente. CQ-4241797
-
-* Cálculo PR incorrecto para el modelo. CQ-4241381
-
-* El flujo de trabajo de formación carece de recursos de ejemplo al procesarlos desde la cola CQ-4240901
-
-* Mejoras en la recuperación de precisión. CQ-4239895
-
-* Modelo de directiva de sustitución. CQ-4239886
-
-* Las imágenes de la camisa masculina están etiquetadas con la etiqueta de la chaqueta femenina. CQ-4239650
-
-* Se omiten los ejemplos de capacitación en la implementación de la etapa. CQ-4239483
-
-* La validación en el trabajo de formación debe realizarse en un conjunto de activos enviados para formación. CQ-4238834
-
-* La creación del modelo falla en el forraje negativo aunque haya un mínimo de positivos/negativos para una etiqueta. CQ-4240741
-
-* Entradas engañosas para el forraje negativo en registros de instructores. CQ-4240738
-
-* Problema con la formación por primera vez si las etiquetas enviadas para la formación son negativos aleatorios entre sí. CQ-4240118
-
-* Improvise registros para supervisar el uso del servicio por inquilino. CQ-4239781
-
-## Idiomas {#languages}
-
-El servicio de contenido inteligente está disponible para las siguientes configuraciones regionales:
-
-* Inglés
-* Alemán
-* Francés
-* Español
-* Italiano
-* Portugués
-* Japonés
-* Chino simplificado
-* Coreano
 
 ## Vínculos {#links}
 
@@ -93,5 +45,5 @@ Estos sitios solo están disponibles para los clientes. Si es cliente de y requi
 
 * [Acceso a productos](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/).
-* Actualizaciones, parches y paquetes de productos para funcionalidades adicionales en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 * [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

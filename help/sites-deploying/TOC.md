@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía de implementación de AEM 6.4
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.4, incluida nuestra implementación en la nube de Adobe Managed Services.
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 # Guía del usuario de implementación de AEM 6.4 {#deploying}
 
 + [Guía del usuario sobre implementación](home.md)
-+ Introducción a la plataforma de AEM {#introduction}
++ Introducción a la plataforma AEM {#introduction}
    + [Introducción a la plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de almacenamiento en AEM 6.4](storage-elements-in-aem-6.md)
@@ -81,11 +81,11 @@ ht-degree: 17%
    + [Actualización de código y personalizaciones](upgrading-code-and-customizations.md)
    + [Pasos de actualización para las instalaciones del servidor de aplicaciones](app-server-upgrade.md)
    + [Lista de paquetes obsoletos desinstalados después de la actualización](obsolete-bundles.md)
-+ Reestructuración del repositorio {#restructuring}
++ Reestructuración de repositorios {#restructuring}
    + [Reestructuración de repositorios en AEM 6.4](repository-restructuring.md)
    + [Reestructuración común de repositorios en AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de sitios en AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Reestructuración del repositorio de activos en AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
+   + [Reestructuración del repositorio de activos en AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=es)
    + [Reestructuración del repositorio de Dynamic Media en AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración del repositorio de Forms en AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Reestructuración de repositorios de comercio electrónico en AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)

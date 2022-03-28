@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía del usuario sobre desarrollo en AEM 6.4
 breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 16%
+ht-degree: 26%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 16%
    + [Diseños y Designer (IU clásica)](designer.md)
 + Plataforma{#platform}
    + [Hoja de referencia de Sling](sling-cheatsheet.md)
-   + [Usar los adaptadores de Sling](sling-adapters.md)
+   + [Uso de los adaptadores de Sling](sling-adapters.md)
    + [Bibliotecas de etiquetas](taglib.md)
    + Plantillas{#templates}
       + [Plantillas](templates.md)
@@ -55,7 +55,7 @@ ht-degree: 16%
       + [API del Generador de consultas](querybuilder-api.md)
    + Etiquetado{#tagging}
       + [Etiquetado](tags.md)
-      + [Marco de etiquetado de AEM](framework.md)
+      + [Marco de trabajo de etiquetado de AEM](framework.md)
       + [Creación del etiquetado en una aplicación AEM](building.md)
    + [Personalización de páginas que muestra el Controlador de errores](customizing-errorhandler-pages.md)
    + [Tipos de nodos personalizados](custom-nodetypes.md)
@@ -94,7 +94,7 @@ ht-degree: 16%
       + [Internacionalización de cadenas de IU](i18n-dev.md)
       + [Uso del traductor para administrar diccionarios](i18n-translator.md)
       + [Extracción de cadenas para traducir](i18n-extract.md)
-   + Componentes de IU clásica{#classic-ui-components}
+   + Componentes de la IU clásica{#classic-ui-components}
       + [Desarrollo de componentes AEM (IU clásica)](developing-components-classic.md)
       + [Uso y ampliación de utilidades (IU clásica)](widgets.md)
       + [Uso de xtype (IU clásica)](xtypes.md)
@@ -108,8 +108,8 @@ ht-degree: 16%
       + [Introducción a SPA en AEM: React](spa-getting-started-react.md)
       + [Introducción a SPA en AEM: Angular](spa-getting-started-angular.md)
       + [Implementación de un componente de React para SPA](spa-implementing-react-component.md)
-      + [SPA buzos profundos](spa-deep-dives.md)
-      + [Información general del Editor de SPA](spa-overview.md)
+      + [Profundización en SPA](spa-deep-dives.md)
+      + [Información general del editor de SPA](spa-overview.md)
       + [Desarrollo de SPA para AEM](spa-architecture.md)
       + [Modelo SPA](spa-blueprint.md)
       + [Componente de página SPA](spa-page-component.md)
@@ -135,7 +135,7 @@ ht-degree: 16%
    + [Cómo utilizar la herramienta VLT](ht-vlttool.md)
    + [Cómo utilizar la herramienta Proxy Server](ht-proxy-server.md)
    + [Extensión de AEM Brackets](aem-brackets.md)
-   + [AEM herramientas para desarrolladores de Eclipse](aem-eclipse.md)
+   + [Herramientas para desarrolladores de AEM para Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
 + Personalización{#personlization}
    + [ContextHub](contexthub.md)
@@ -149,7 +149,7 @@ ht-degree: 16%
    + ClientContext{#client-context}
       + [Client Context en detalle](client-context.md)
       + [API de JavaScript de Client Context](ccjsapi.md)
-+ Extensión de AEM{#extending-aem}
++ Ampliación de AEM{#extending-aem}
    + [Personalización de la creación de páginas](customizing-page-authoring-touch.md)
    + [Personalización de las consolas](customizing-consoles-touch.md)
    + [Personalización de vistas de propiedades de página](page-properties-views.md)
@@ -198,7 +198,7 @@ ht-degree: 16%
    + [Prueba de la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/hobbes.html)
 + Prácticas recomendadas  {#bestpractices}
    + [Información general sobre prácticas recomendadas](best-practices.md)
-   + [Directrices de desarrollo de AEM y prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html)
+   + [Directrices de desarrollo de AEM y prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-64/developing/introduction/dev-guidelines-bestpractices.html?lang=es)
    + [Prácticas recomendadas de desarrollo](development-practices.md)
    + [Arquitectura de contenido](content-architecture.md)
    + [Arquitectura de software](software-architecture.md)
@@ -220,5 +220,5 @@ ht-degree: 16%
    + [Web para móvil](mobile-web.md)
    + [Creación de filtros de grupo de dispositivos](groupfilters.md)
    + [Diseño interactivo para páginas web](responsive.md)
-   + [Creación de sitios para dispositivos móviles](mobile.md)
+   + [Creación de sitios para dispositivos Mobile](mobile.md)
    + [Emuladores](emulators.md)

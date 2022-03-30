@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: 1537055fd88cbc3b01e4df7855a99f993f2052e4
 workflow-type: tm+mt
-source-wordcount: '21557'
+source-wordcount: '21547'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 26%
 
 ## Novedades de AEM 6.4.8.0 {#what-s-included-in-aem}
 
-AEM 6.4.8.0 es una actualización importante que incluye nuevas funciones, mejoras clave solicitadas por el cliente y rendimiento, estabilidad y mejoras de seguridad, publicada desde la disponibilidad general de AEM 6.4 en **abril de 2018.**
+AEM 6.4.8.0 es una actualización importante que incluye nuevas funciones, mejoras clave solicitadas por los clientes y rendimiento, estabilidad y mejoras de seguridad, publicada desde que se publicó de forma general AEM 6.4 en **Abril de 2018.**
 
 También es acumulativo, lo que significa que 6.4.8.0 incluye todos los paquetes de servicio AEM 6.4 publicados antes de él.
 
@@ -82,7 +82,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 * El botón Guardar no importa el conjunto remoto cuando el usuario no ha realizado ningún cambio en el Editor de conjuntos en el cliente de Dynamic Media (NPR-32178).
 
-* La ingesta de recursos PSD causa un pico de CPU y una instancia de autor de Experience Manager no adaptable (NPR-32165).
+* La ingesta de recursos de PSD causa un pico de CPU y una instancia de autor de Experience Manager no adaptable (NPR-32165).
 
 * Excepción por falta de memoria observada cuando se carga un archivo ZIP grande en el DAM de Experience Manager (NPR-32155).
 
@@ -98,7 +98,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 ### Integraciones {#integrations-6480}
 
-* Los menús desplegables **Empresa** y **Informes** Suite están ocultos una vez que **Fuente de informes** está seleccionado al configurar Adobe Analytics en los servicios de nube de Experience Manager (NPR-31729).
+* La variable **Empresa** y **Informes** Los menús desplegables del grupo se ocultan una vez **Fuente de informes** está seleccionada al configurar Adobe Analytics en Experience Manager cloud services (NPR-31729).
 
 * Las propiedades de Adobe Campaign no se limpian cuando se realiza la copia de idioma de un boletín vinculado a un Adobe Campaign, mientras que la limpieza se produce cuando se copia o pega un boletín vinculado a un Adobe Campaign (NPR-32540).
 
@@ -146,19 +146,19 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) e [Instalación del instalador JEE de AEM Forms](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
 
-* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida PDF generada (NPR-32546, NPR-32322).
+* Designer: Si la opción de etiquetado está activada, el borde del subformulario desaparece en la salida del PDF generado (NPR-32546, NPR-32322).
 
 * Designer: Si hay celdas combinadas en una tabla, la prueba de accesibilidad falla para el archivo PDF de salida convertido desde un formulario XDP mediante el servicio de salida (NPR-32079).
 
 * Seguridad de documentos: Un archivo PDF protegido no se puede abrir sin conexión con la opción DisableGlobalOfflineSynchronizationData establecida en True (NPR-32080).
 
-* Seguridad de documentos: Problemas al abrir un archivo PDF protegido después de actualizar de ES4 a AEM 6.3 (NPR-32170).
+* Seguridad de documentos: Problemas al abrir un archivo de PDF protegido después de actualizar de ES4 a AEM 6.3 (NPR-32170).
 
 * Servicios de documentos: Aparece un mensaje de error al intentar convertir un archivo PDF en un documento PDF/A mediante el método de conversión toPDFA (NPR-32663).
 
-* Servicios de documentos: Se muestra una excepción al aplicar el servicio Extensiones de Reader en un archivo PDF (NPR-32639).
+* Servicios de documentos: Se muestra una excepción al aplicar el servicio Extensiones de Reader en un archivo de PDF (NPR-32639).
 
 * Servicios de documentos: Aparece un mensaje de error al ensamblar y convertir archivos XDP a archivos PDF (NPR-31821).
 
@@ -168,7 +168,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 
 #### AEM 6.4.7.0 {#experience-manager-6470}
 
-AEM 6.4.7.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 en **abril de 2018.**
+AEM 6.4.7.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 in **Abril de 2018.**
 
 También es acumulativo, lo que significa que 6.4.7.0 incluye todos los paquetes de servicio AEM 6.4 que se lanzaron antes.
 
@@ -176,17 +176,17 @@ Algunos de los aspectos destacados de AEM 6.4.7.0 son:
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.8.17.
 * Se ha agregado compatibilidad para establecer la versión de una página Sitios al eliminarla.
-* Se ha añadido una nueva columna para la fecha creada, que es ordenable, en la vista **lista DAM** y en los resultados de búsqueda de recursos en la vista **Lista** (NPR-31311).
-* Se ha permitido la ordenación de recursos basada en la columna **Name** en la vista **List**.
+* Se ha añadido una nueva columna para la fecha de creación, que es ordenable, en **Lista DAM** ver y en los resultados de búsqueda de recursos en **Lista** vista (NPR-31311).
+* Ordenación de recursos en función de **Nombre** se ha permitido en **Lista** vista.
 * El tamaño del lote y el tiempo de espera del paso del flujo de trabajo para el reprocesamiento y la carga por lotes ahora se pueden configurar desde la interfaz de usuario de Dynamic Media.
-* El `pdfBrochure` se ha establecido en false en la configuración de nube de Scene7 para guardar memoria en IPS.
+* La variable `pdfBrochure` se ha establecido en false en la configuración de nube de Scene7 para guardar memoria en IPS.
 
 ##### Recursos {#assets-6470}
 
 **Mejoras de producto**
 
-* La versión de exportación del paquete de API `package com.day.cq.dam.handler.standard.msoffice` compatible con el paquete `dam-handler` se actualiza a 6.0.0 (CQ-4279059).
-Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implementación personalizada, se recomienda compilar el paquete `dam-handler` con el último paquete de uber jar.
+* La versión de exportación del paquete de API `package com.day.cq.dam.handler.standard.msoffice` compatible con `dam-handler` el paquete se actualiza a 6.0.0 (CQ-4279059).
+Si está utilizando el paquete `com.day.cq.dam.handler.standard.msoffice` en su implementación personalizada, se recomienda que compile su `dam-handler` paquete con el último frasco de uber.
 
 * Se ha añadido una nueva columna para la fecha creada, que es ordenable, en la vista de lista de DAM y en los resultados de búsqueda de recursos en la vista de lista (NPR-31311).
 
@@ -194,7 +194,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 **Correcciones**
 
-* Los metadatos de algunos documentos PDF no se actualizan ni se guardan en el PDF al modificar su título (NPR-31575).
+* Los metadatos de algunos documentos del PDF no se actualizan ni se guardan en el PDF al modificar su título (NPR-31575).
 
 * Los recursos con el símbolo &quot;+&quot; en el nombre de archivo no se pueden eliminar (NPR-30588).
 
@@ -232,7 +232,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 * El tamaño del lote y el tiempo de espera del paso del flujo de trabajo para el reprocesamiento y la carga por lotes no se pueden configurar desde la interfaz de usuario y es necesario configurarlos en CRXDE y el flujo de trabajo debe sincronizarse dos veces (CQ-4281254).
 
-* El nombre de paso del flujo de trabajo para la carga por lotes y el paso simple de carga es el mismo en Scene7, lo que provoca confusión (CQ-4281176).
+* El nombre de paso del flujo de trabajo para la carga por lotes y el paso de carga simple es el mismo en Scene7, lo que provoca confusión (CQ-4281176).
 
 * El flujo de trabajo de reprocesamiento en Scene7 se atasca si falta un recurso en el nodo de metadatos (CQ-4281170).
 
@@ -320,9 +320,9 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) e [Instalación del instalador JEE de AEM Forms](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Formularios adaptables**
 
@@ -340,7 +340,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 * Los archivos temporales creados por el servicio Assembler no se eliminan automáticamente y requieren AEM reinicio (NPR-30846).
 
-* La aplicación de derechos de extensión de Reader a PDF genera un mensaje de error (NPR-30930).
+* La aplicación de derechos de ReaderExtension al PDF genera un mensaje de error (NPR-30930).
 
 **Flujo de trabajo**
 
@@ -352,7 +352,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 * El servicio Convertir PDF no convierte los documentos PDF a PostScript y muestra un mensaje de error (NPR-31267).
 
-* La configuración del extremo SOAP se restablece después de aplicar un parche para corregir el error de HTML a PDF (NPR-31309).
+* La configuración del extremo SOAP se restablece después de aplicar un parche para corregir el fallo del HTML al PDF (NPR-31309).
 
 **Servicio PDFG**
 
@@ -360,7 +360,7 @@ Si utiliza el paquete `com.day.cq.dam.handler.standard.msoffice` en su implement
 
 #### AEM 6.4.6.0 {#experience-manager-6460}
 
-AEM 6.4.6.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 en **abril de 2018.**
+AEM 6.4.6.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 in **Abril de 2018.**
 
 También es acumulativo, lo que significa que 6.4.6.0 incluye todos los paquetes de servicio AEM 6.4 que se lanzaron antes.
 
@@ -372,17 +372,17 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 
 **Assets**
 
-* El vínculo de uso compartido de recursos de una carpeta con espacio y `&` caracteres en el nombre muestra tarjetas grises en blanco para algunos recursos. NPR-29934: revisión para CQ-4270187
+* Vínculo de uso compartido de recursos de una carpeta con espacio y `&` en el nombre, se muestran tarjetas grises en blanco para algunos recursos. NPR-29934: revisión para CQ-4270187
 * El flujo de trabajo de DAM se bloquea al crear recursos de MP4 para AEM. NPR-30031: revisión para CQ-4271352
 * Problema de conectividad de etiquetas inteligentes de Adobe a través de Datapower. NPR-30026: revisión para CQ-4269457
-* El PDF no se puede encontrar utilizando OmniSearch. NPR-30046: revisión para GRANITE-26290
+* No se puede encontrar el PDF mediante OmniSearch. NPR-30046: revisión para GRANITE-26290
 * Las rutas de recursos de las direcciones URL y los metadatos de las carpetas que genera la API de ACP no son URL codificadas.  GRANITE-26198: revisión para CQ-4271814
 * La funcionalidad Crear tarea de revisión no funciona debido a una carga útil indefinida. NPR-30469: Revisión CQ-4274263
 * La capacidad de cambiar la vista de la tarjeta a la vista de lista y viceversa desaparece después de realizar una OmniSearch en el selector de recursos. NPR-29852: revisión para CQ-4269369
 * (IU táctil) Durante el asistente de administración de publicaciones, los recursos se añaden a la cola de replicación después de agregar las páginas, por lo que algunos de los recursos aparecen pasados unos segundos. NPR-29985: revisión para CQ-4270724
 * Al ordenar la consulta de búsqueda por relevancia, se devuelven documentos de InDesign junto con plantillas de InDesign. Revisión para CQ-4273864
 * Si el usuario tiene un id. de correo electrónico en mayúsculas, los usuarios no pueden registrar los recursos que ya se han extraído. Revisión para CQ-4276575
-* La configuración de Cloud Services de Dynamic Media en modo `DMHybrid` da como resultado varios grupos de informes vacíos creados en Analytics sin que se almacene un ID de grupo de informes en AEM, lo que provoca la duplicación de grupos de informes. Revisión para CQ-4276855
+* Configuración de Cloud Services de Dynamic Media en `DMHybrid` da como resultado varios grupos de informes vacíos creados en Analytics sin ningún id de grupo de informes almacenado en AEM, lo que provoca la duplicación de grupos de informes. Revisión para CQ-4276855
 * El cuadro de diálogo de advertencia no aparece al promocionar en la página &quot;Etiqueta administrada&quot;. Revisión para CQ-4252851
 * Cuando se utiliza el carrusel para administrar etiquetas, el botón de navegación no funciona. Revisión para CQ-4275499
 * La funcionalidad de los recursos de movimiento masivo está dañada, lo que provoca que no se muevan los recursos. Revisión para CQ-4272987
@@ -390,11 +390,11 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 **Sites**
 
 * `pageinfo.json` las solicitudes son extremadamente lentas y tardan demasiado en cargarse. NPR-29709: revisión para CQ-4269560
-* `onTime` o las propiedades de  `offTime` metadatos guardadas en los recursos no se recuperan si se reinicia el servidor de AEM. NPR-30413: revisión para CQ-4272784
+* `onTime` o `offTime` las propiedades de metadatos guardadas en los recursos no se recuperan si se reinicia el servidor AEM. NPR-30413: revisión para CQ-4272784
 * Debido al comportamiento incorrecto de la clase ConfigPostProcessor , la suspensión de la página principal elimina el cq: Tipo de mezcla LiveRelationship de la página secundaria. NPR-30536, NPR-30510: revisión para CQ-4254113
 * Ejecución de scripts en sitios múltiples (XSS) en el cuadro de diálogo Iniciar flujo de trabajo de la página de edición de Campaign. NPR-29747: revisión para CQ-4271067
 * (IU clásica) La fase de bloqueo del flujo de trabajo desactiva la pestaña del flujo de trabajo hasta que se libera el bloqueo. NPR-30356: revisión para CQ-4237557
-* (IE11) Al pegar contenido HTML en un componente Editor de texto enriquecido con defaultPasteMode = texto sin formato, el HTML se pega con el formato, por lo que defaultPasteMode no tiene ningún efecto. NPR-30045: revisión para GRANITE-26094
+* (IE11) Al pegar contenido de HTML en un componente Editor de texto enriquecido con defaultPasteMode = texto sin formato, el HTML se pega con el formato, por lo que defaultPasteMode no tiene ningún efecto. NPR-30045: revisión para GRANITE-26094
 * (IU clásica) Cuando se vuelve a cargar la página de administración del sitio, todos los elementos desplegables del menú &quot;Nuevo&quot; se desactivan. NPR-29980: revisión para CQ-4272044
 * No se pueden agregar estilos al texto ni editar los estilos existentes creados en el contenido. NPR-29712: revisión para CQ-4266249
 * (IU clásica) Recursos sin dc: el valor de título aparece sin título en el navegador de diálogo del campo de ruta. NPR-30166: Solicitud de backport para CQ-88858
@@ -405,7 +405,7 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 * Publicar/Cancelar la publicación desde un alias de página no es compatible y debe eliminarse. NPR-30062: revisión para CQ-4271249
 * Advertencia de ResourceResolver no cerrado en ExperienceFragmentsReplicationListener que provoca problemas de estabilidad a lo largo del tiempo, lo que obliga a reiniciar instancias de AEM. NPR-30416: revisión para CQ-4257521
 * Al mover fragmentos de experiencias a los que se hace referencia en más de 150 páginas, no se modifica fragmentPath en las páginas donde se hace referencia a ellos. NPR-30556: revisión para CQ-4274900
-* Error de análisis al abrir un fragmento de contenido que tiene caracteres dólar (`$`) y llave abierta (`{`) uno tras otro. Revisión para CQ-4270266
+* Error de análisis al abrir un fragmento de contenido que tiene caracteres &quot;dólar&quot; (`$`) y abra la llave (`{`) uno tras otro. Revisión para CQ-4270266
 * VersionPreviewServlet genera errores en NullPointerException al intentar mostrar una versión de un fragmento de experiencia en la línea de tiempo. NPR-30074: revisión para CQ-4271881
 * No se pueden bloquear los fragmentos de contenido a través de la función de protección. NPR-29923: revisión para CQ-4258785
 * Error de verificación de firma en el controlador de autenticación SAML. NPR-30379: Solicitud de backport para GRANITE-26567
@@ -462,9 +462,9 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 
 >[!NOTE]
 >
->Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) e [Instalación del instalador JEE de AEM Forms](#install-aem-forms-jee-installer).
+>Service Pack de AEM no incluye correcciones para AEM Forms. Estas se entregan mediante un paquete independiente de complementos de Forms. Asimismo, se ha publicado un instalador acumulativo que incluye correcciones para AEM Forms en JEE. Para obtener más información, consulte [Instalación del paquete de complementos de AEM Forms](#install-aem-forms-add-on-package) y [Instalación del instalador de AEM Forms JEE](#install-aem-forms-jee-installer).
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Formularios adaptables**
 
@@ -494,10 +494,10 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 
 **Forms: servicios de documentos**
 
-* Error de falta de etiqueta PDF/A en Acrobat preflight. NPR-30594: revisión para CQ-4276032
-* Los enlaces de datos de un solo carácter en PDF hacen que las extensiones de Reader fallen con el error &quot;java.lang.StringIndexOutOfBoundException: Índice de cadenas fuera de rango: 1&quot;. NPR-30128: revisión para CQ-4273878
+* Falta el error de etiqueta de PDF/A en la comprobación preliminar de Acrobat. NPR-30594: revisión para CQ-4276032
+* Los enlaces de datos de un solo carácter en el PDF hacen que las extensiones del Reader fallen con el error &quot;java.lang.StringIndexOutOfBoundException: Índice de cadenas fuera de rango: 1&quot;. NPR-30128: revisión para CQ-4273878
 * Cuando se hace una prueba de carga en el servicio HTML a PDF, se produce un error y se elimina la configuración del tipo de archivo del servidor de AEM Forms. NPR-30085: revisión para CQ-4272631
-* Al acoplar un PDF con Adobe Acrobat 9.1 (XFA versión 3.0), no se conserva el estado del formulario PDF: Los elementos invisibles del formulario se devuelven a un estado visible. NPR-29978: revisión para CQ-4270888
+* Al acoplar un PDF con Adobe Acrobat 9.1 (XFA versión 3.0), no se mantiene el estado del formulario del PDF: Los elementos invisibles del formulario se devuelven a un estado visible. NPR-29978: revisión para CQ-4270888
 
 **Forms: seguridad de documentos**
 
@@ -507,12 +507,12 @@ Algunos de los aspectos destacados de AEM 6.4.6.0 son:
 **Servicio PDFG**
 
 * Error de conexión al intentar convertir el documento de Word a PDF en Windows Server 2016. NPR-30597: revisión para CQ-4275652
-* Excepción de permiso denegado al intentar utilizar el servicio back-end de HTML a PDF a través de la biblioteca &quot;phantomjs&quot;. NPR-30456: revisión para CQ-4258077
-* maxReuseCount para el servicio HTML a PDF no se muestra con la Consola de administración de JBoss. NPR-30303, NPR-30135: revisión para CQ-4273763
+* Se denegó el permiso de excepción al intentar usar el HTML para el servicio back-end de PDF a través de la biblioteca &quot;phantomjs&quot;. NPR-30456: revisión para CQ-4258077
+* maxReuseCount para el servicio de HTML a PDF no se muestra con la Consola de administración de JBoss. NPR-30303, NPR-30135: revisión para CQ-4273763
 
 #### AEM 6.4.5.0 {#experience-manager-6450}
 
-AEM 6.4.5.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 en **abril de 2018.**
+AEM 6.4.5.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 in **Abril de 2018.**
 
 También es acumulativo, lo que significa que 6.4.5.0 incluye todos los paquetes de servicio AEM 6.4 que se lanzaron antes.
 
@@ -521,8 +521,8 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.8.13.
 * Se ha agregado tiempo de espera de socket y tiempo de espera de conexión en los agentes de replicación de Brand Portal.
 * Mejoras de Omnisearch : se ha aumentado el límite de paginación del resultado de búsqueda a 100 páginas.
-* Componente OSGi deshabilitado `AssetDownloadServlet` de forma predeterminada en AEM instancias de publicación. Para obtener más información, consulte [Descargar recursos de AEM](/help/assets/download-assets-from-aem.md).
-* Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. Para obtener más información, consulte [Reutilización de recursos con MSM para recursos](/help/assets/reuse-assets-using-msm.md).
+* Desactivado `AssetDownloadServlet` Componente OSGi de forma predeterminada en AEM instancias de publicación. Para obtener más información, consulte [Descargar recursos de AEM](/help/assets/download-assets-from-aem.md).
+* Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. Para obtener más información, consulte [Reutilizar recursos con MSM para Assets](/help/assets/reuse-assets-using-msm.md).
 
 **Recursos**
 
@@ -566,13 +566,13 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 * El nombre de la etiqueta de queja JCR debe rellenarse automáticamente en función del título de la etiqueta. NPR-28990: revisión para CQ-4199411
 * El botón Cancelar herencia no está visible en algunos de los campos agregados en las propiedades de página. NPR-29079: revisión para CQ-4265686
 * La acción de vista previa de lanzamiento no debe intentar recrear la Live Copy ni mostrarla en la lista de páginas de lanzamiento. NPR-29151: revisión para CQ-4266213
-* (Editor de plantillas) Regresión de la política de estilo en el modo de estructura. NPR-28981: revisión para CQ-4264400
+* (Editor de plantillas) Regresión de directiva de estilo en el modo de estructura. NPR-28981: revisión para CQ-4264400
 * Las Live Copies anidadas muestran entradas duplicadas durante el lanzamiento. NPR-29300: revisión para CQ-4268664
 * La publicación de una Live Copy de una Live Copy que contiene un componente Importador de diseños falla y Error al recuperar referencias para la página seleccionada. NPR-28944: revisión para CQ-4265014
 * Cuando se utiliza CoralUI con Multifield, se almacena el parámetro fileReferenceParameter en el nivel de componente en lugar de en el nivel de multicampo. NPR-29536: revisión para CQ-4266129
 * La referencia de diseño no se replica en la publicación después de cancelar la herencia en el Importador de diseños. NPR-29648, NPR-29721: revisión para CQ-4269270, CQ-4271087
 * El campo de ruta en el Editor de texto enriquecido se abre en la ruta raíz independientemente de la ruta especificada para la búsqueda. NPR-29483: revisión para CQ-4268997
-* (IE11) Copiar y pegar contenido HTML en un componente RTE con defaultPasteMode = texto sin formato no pega el contenido como texto sin formato. NPR-29432, NPR-29171: Revisión para GRANITE-24941
+* (IE11) Copiar y pegar el contenido del HTML en un componente RTE con defaultPasteMode = texto sin formato no pega el contenido como texto sin formato. NPR-29432, NPR-29171: Revisión para GRANITE-24941
 * La corrección ortográfica del Editor de texto enriquecido ya no funciona en otros idiomas. NPR-29506: revisión para CQ-4264990
 * Ejecución de scripts en sitios múltiples (XSS) en la página de Campaign. NPR-29614: revisión para CQ-4269322
 * Minimizar el Editor de texto enriquecido desde la pantalla completa mientras se encuentra en el modo de edición de fuente provoca la pérdida del contenido. NPR-29574: revisión para CQ-4260584
@@ -682,7 +682,7 @@ Algunos de los aspectos destacados de AEM 6.4.5.0 son:
 
 Los aspectos destacados de los formularios de AEM 6.4.5.0 son:
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Formularios adaptables**
 
@@ -716,14 +716,14 @@ Los aspectos destacados de los formularios de AEM 6.4.5.0 son:
 
 **Forms: servicios de documentos**
 
-* El archivo PDF/A no válido se registra como PDF/A válido mediante la operación isPDFA. NPR-29076: revisión para CQ-4261541
-* El PDF no se puede convertir a PDF/A-1b; el campo Formulario no tiene diccionario de apariencia. NPR-29534: revisión para CQ-4269618
-* La conversión de PDF/A de PDF producido con el servicio de salida no pasa la validación con Acrobat DC. NPR-29647: revisión para CQ-4270448
+* El archivo PDF/A no válido se notifica como PDF/A válido mediante la operación isPDFA. NPR-29076: revisión para CQ-4261541
+* El PDF no puede convertir al PDF/A-1b si el campo Formulario no tiene diccionario de aspecto. NPR-29534: revisión para CQ-4269618
+* La conversión de PDF/A del PDF producido con el servicio de salida no pasa la validación con Acrobat DC. NPR-29647: revisión para CQ-4270448
 * El paquete POI de Apache falla con una excepción. NPR-27861, NPR-28048: revisión para CQ-4245898, CQ-4244778
 
 **Forms: Designer**
 
-* Se ha añadido compatibilidad con PDF/UA en formularios XML Forms Architecture (XFA) generados con Designer y Output Service. NPR-23022
+* Se ha agregado compatibilidad con PDF/UA a los formularios XML Forms Architecture (XFA) generados con Designer y Output Service. NPR-23022
 
 **Forms: flujo de trabajo**
 
@@ -733,7 +733,7 @@ Los aspectos destacados de los formularios de AEM 6.4.5.0 son:
 
 **Recursos**
 
-* Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. Para obtener más información, consulte [Reutilización de recursos con MSM para recursos](/help/assets/reuse-assets-using-msm.md). NPR-26450: revisión para CQ-4259922
+* Se habilitó la compatibilidad con el administrador de varios sitios para los recursos. Para obtener más información, consulte [Reutilizar recursos con MSM para Assets](/help/assets/reuse-assets-using-msm.md). NPR-26450: revisión para CQ-4259922
 
 **Paquetes de contenido y paquetes OSGI incluidos**
 
@@ -749,7 +749,7 @@ Lista de paquetes de contenido incluidos en AEM 6.4.5.0
 
 #### AEM 6.4.4.0 {#experience-manager-6440}
 
-AEM 6.4.4.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 en **abril de 2018.**
+AEM 6.4.4.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 in **Abril de 2018.**
 
 También es acumulativo, lo que significa que 6.4.4.0 incluye todos los paquetes de servicio AEM 6.4 que se lanzaron antes.
 
@@ -765,7 +765,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * Se ha añadido una nueva propiedad para permitir el posicionamiento de la información sobre herramientas en los campos.
 * Se ha mejorado la compatibilidad de ColorPicker dentro del campo Multifield.
 * Se ha añadido una comprobación para ignorar los valores vacíos de los campos múltiples de entrada numérica en las clientlibs del fragmento de contenido.
-* Se habilitó la compatibilidad con la API de texto del traductor de Microsoft v3.
+* Se ha habilitado la compatibilidad con la API de texto del traductor de Microsoft v3.
 
 **Recursos**
 
@@ -775,11 +775,11 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * Después de rasterizar el pdf de entrada, el resultado producido tiene imágenes faltantes. NPR-27929: revisión para CTG-4150481
 * El Asistente para mover recursos muestra un recuento incorrecto de páginas de referencia para páginas publicadas. NPR-27833: revisión para CQ-4258014
 * AssetPicker busca solo la primera etiqueta para filtrar el resultado cuando filtra con etiquetas. NPR-27778: revisión para CQ-4257705
-* AEM controlador de PDF OOTB se atasca en el procesamiento de PDF con caracteres extranjeros. NPR-28778: revisión para CQ-4254234
+* AEM controlador de PDF OOTB se atasca en el PDF de procesamiento con caracteres extranjeros. NPR-28778: revisión para CQ-4254234
 * Cuando un archivo CSV tiene un valor que está separado por comas en una sola columna, AEM editor CSV no escapa a la coma y la trata como una columna separada. NPR-28801: revisión para CQ-4261694
 * Problema con el Editor de esquemas de metadatos al utilizar el Explorador de rutas para seleccionar datos. NPR-28674: revisión para CQ-4263005
 * Se procesan demasiados recursos en el servicio de contenido inteligente, lo que da como resultado una gran cantidad de tiempo para completar el proceso de etiquetado periódico. NPR-28640: revisión para CQ-4262661, CQ-4262644, CQ-4263234
-* Las acciones de escritorio no funcionan para los resultados de Omnisearch desde la página `aem/start.html`. NPR-27242: revisión para CQ-4248176
+* Las acciones de escritorio no funcionan para los resultados de Omnisearch desde `aem/start.html` página. NPR-27242: revisión para CQ-4248176
 * La API de recursos no permite la carga de archivos > 2 GB, lo que provoca un error de carga. NPR-27629: revisión para Granite-23590
 * Los metadatos no se guardan en el recurso descargado en el primer intento, en caso de que Dynamic Media esté habilitado en la instancia. NPR-28233: revisión para CQ-4260759
 * La resolución del servicio no se cierra en la configuración del SiteCatalyst. NPR-28015: revisión para CQ-4259397
@@ -810,7 +810,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 * (IU clásica) cq:action editannotate no funciona. NPR-28232: revisión para CQ-4257703
 * La eliminación de etiquetas del panel de búsqueda de recursos del editor de páginas del filtro de etiquetas no actualiza la lista correctamente. NPR-27983: revisión para CQ-4245567
 * Si los valores de los números de varios campos están vacíos, al hacer clic en Guardar se generará un mensaje de carga infinita sin que realmente se complete.  NPR-28400, NPR-28393: revisión para CQ-4244058, CQ-4244349
-* Con el permiso de lectura, los usuarios/grupos no pueden seleccionar un XF y no tienen opción de ver el XF y sus propiedades de página. NPR-28341: revisión para CQ-4260412
+* Con permiso de lectura, los usuarios/grupos no pueden seleccionar un XF y no tienen opción de ver el XF y sus propiedades de página. NPR-28341: revisión para CQ-4260412
 * Los datos JSON recibidos de Target tienen varios caracteres de escape que provocan que la página de la aplicación se rompa. NPR-28318: revisión para CQ-4252043
 * No se puede editar ningún componente después de instalar AEM 6.4.3. NPR-28125: Revisión para CQ-4261216
 * La eliminación de todas las etiquetas de un campo de etiqueta no persiste en un fragmento de contenido estructurado. NPR-28133: revisión para CQ-4247241
@@ -887,7 +887,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 
 **Traducción**
 
-* Proporciona compatibilidad con la API de texto de Microsoft Translator v3. NPR-28366: revisión para CQ-4249755
+* Proporciona compatibilidad con la API de texto del traductor de Microsoft v3. NPR-28366: revisión para CQ-4249755
 * jcr:language y cq:language no se actualizan automáticamente en el idioma traducido. NPR-28338: revisión para CQ-4256046
 * Las referencias cíclicas provocan StackOverflowError al crear copia de idioma. NPR-27596: revisión para CQ-4255621
 * En un proyecto de traducción en varios idiomas, al hacer clic en guardar y cerrar los resultados en páginas posteriores agregadas al proyecto, se crean nuevos proyectos en lugar de crear nuevos trabajos de traducción en un proyecto existente. NPR-28219, NPR-28236: revisión para CQ-4261276, CQ-4260731
@@ -902,7 +902,7 @@ Algunos de los aspectos destacados de AEM 6.4.4.0 son:
 
 **IU: bases**
 
-* La función &quot;Caché de salida del sistema de archivos&quot; integrada en el Administrador de bibliotecas de clientes HTML rompe la función &quot;debugClientLibs&quot; para scripts compilados como archivos LESS. NPR-27249: revisión para Granite-23313
+* La función &quot;Caché de salida del sistema de archivos&quot; integrada en el HTML Client Library Manager rompe la función &quot;debugClientLibs&quot; para scripts compilados como archivos LESS. NPR-27249: revisión para Granite-23313
 * El número de recursos que se muestran cuando se activa el modo de depuración es siempre 1 y se producen muchos errores de JS en la consola del explorador.  NPR-27575: revisión para GRANITE-23750
 * Guardar y cerrar en las propiedades de la página no vuelve a la página adecuada en AEM GUERRA con Tomcat. NPR-27566: revisión para GRANITE-23671
 
@@ -940,7 +940,7 @@ Los aspectos destacados de los formularios de AEM 6.4.4.0 son:
 
 * Se ha agregado compatibilidad para registrar API de seguridad de documentos para firmar y certificar como transacciones.
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Integración de Adobe Sign**
 
@@ -973,8 +973,7 @@ Los aspectos destacados de los formularios de AEM 6.4.4.0 son:
 **Administración de Forms**
 
 Se ha agregado compatibilidad para reemplazar el uso de la biblioteca de cliente de controladores por guiones bajos en el asistente de revisión inicial de Forms Manager y el asistente de traslado de recursos. NPR-27643: revisión para CQ-4246536.
-Un paquete permanece en estado de instalación después de instalar el paquete Forms Management en la rama release/640. Revisión para CQ-4265410
-Forms enviado con archivos adjuntos no aparece en el flujo de trabajo con la acción de envío &quot;Invocar flujo de trabajo de AEM Forms&quot; y habilitar envío de portal activada . Revisión para CQ-4263110
+Un paquete permanece en estado de instalación después de instalar el paquete Forms Management en la rama release/640. La revisión para CQ-4265410 Forms enviada con archivos adjuntos no aparece en el flujo de trabajo con la acción de envío &quot;Invocar el flujo de trabajo de AEM Forms&quot; y habilitar el envío del portal activada . Revisión para CQ-4263110
 
 **Forms: integración back-end**
 
@@ -989,17 +988,17 @@ Forms enviado con archivos adjuntos no aparece en el flujo de trabajo con la acc
 
 **Forms: base JEE**
 
-* Cuando AEM Forms se integra en IBM WebSphere, la creación de un modelo de datos de formulario basado en SOAP falla. NPR-27923: revisión para CQ-4251134
-* La herramienta SRT de PDF Generator no detecta la versión instalada de Adobe Acrobat. NPR-27971
+* Cuando AEM Forms se integra en IBM WebSphere, se produce un error al crear un modelo de datos de formulario basado en SOAP. NPR-27923: revisión para CQ-4251134
+* La herramienta SRT del Generador de PDF no detecta la versión instalada de Adobe Acrobat. NPR-27971
 
 **Forms: Designer**
 
-* Algunas imágenes JPEG en una plantilla XDP no se representan correctamente.  NPR-26702: revisión para LC-3917457
+* Algunas imágenes JPEG de una plantilla XDP no se representan correctamente.  NPR-26702: revisión para LC-3917457
 
 **Forms: flujo de trabajo**
 
 * HTML5 Forms con proceso de envío predeterminado en an.lca no funciona en JBoss 7. NPR-28675: revisión para CQ-4243928
-* No se pueden enviar PDF forms en el espacio de trabajo HTML. NPR-28058: revisión para CQ-4260373
+* No se pueden enviar PDF forms en HTML Workspace. NPR-28058: revisión para CQ-4260373
 * Los datos del cliente se imprimen en los registros de información mediante el Forms Workflow de servicio Invocar FDM. Revisión para CQ-4260385
 
 **Paquetes de funciones incluidos**
@@ -1008,7 +1007,7 @@ Forms enviado con archivos adjuntos no aparece en el flujo de trabajo con la acc
 
 * El control de versiones de los fragmentos de contenido compara las mejoras de diferencia para AEM 6.4. NPR-26760: FP para CQ-4248839
 * Mejoras en la variación de los fragmentos de contenido para AEM 6.4. NPR-27866: FP para CQ-4248839
-* Característica habilitada en la configuración OSGI **AEM Indicador de la función de retirada del flujo de trabajo**. La acción de extracción debe finalizar la instancia del flujo de trabajo después de establecer el indicador . NPR-26451: revisión para CQ-4259090
+* Función habilitada en la configuración OSGI **Indicador de característica de retirada de flujo de trabajo AEM**. La acción de extracción debe finalizar la instancia del flujo de trabajo después de establecer el indicador . NPR-26451: revisión para CQ-4259090
 
 **Plataforma**
 
@@ -1073,8 +1072,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 * Cuando el editor de texto enriquecido se combina con varios campos, se produce el error Uncaught TypeError: fieldAPI.getName is not a function at foundation.js. NPR-27146: revisión para CQ-4253155
 * La integración de Salesforce no puede utilizar la configuración proxy. NPR-27244: revisión para CQ-4245300
 * Cuando se programa una página para su activación mediante la opción Administrar publicación para una fecha posterior y se cambia a la vista de lista, falta el icono de calendario. NPR-26974: revisión para CQ-4239206
-* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089
-No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión para CQ-4254858
+* Los usuarios no pueden editar permisos de grupos de usuarios cerrados en las propiedades de página. NPR-27138: Revisión para CQ-4256089 No se pueden editar las etiquetas a través del etiquetado. NPR-26957: revisión para CQ-4254858
 * Cuando se mueve una etiqueta a la que se hace referencia desde un modelo de fragmento de contenido estructurado, las referencias existentes a la etiqueta dentro de un fragmento de contenido no se actualizan. Esto sucede en la pantalla de edición del modelo de fragmento de contenido. NPR-26776: revisión para CQ-4251805
 * Cuando crea y promociona un lanzamiento con varias páginas, se crean varias versiones para cada página. NPR-26917: revisión para CQ-4254663
 * AEM siteadmin no gestiona las rutas escritas en la barra de direcciones del explorador. NPR-26780: revisión para CQ-4254097
@@ -1098,7 +1096,7 @@ No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión p
 
 * Después de ingerir vídeos en una carpeta asociada con el perfil de procesamiento de vídeo AVS, la ventana del explorador se actualiza una y otra vez. Revisión para CQ-4253563
 * YouTube Publish falla al usar una etiqueta ad hoc que incluya caracteres en mayúsculas. Revisión para CQ-4252477
-* Cuando se crea una anotación en un recurso como PDF, la interfaz de usuario inicia un bucle infinito de actualización de la página. NPR-27052: revisión para CQ-4255396
+* Cuando se crea una anotación en un recurso como un PDF, la interfaz de usuario inicia un bucle infinito de actualización de la página. NPR-27052: revisión para CQ-4255396
 
 **DAM - Servicios DM**
 
@@ -1145,7 +1143,7 @@ No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión p
 * La búsqueda con nombre y apellidos en el campo Para de Mensajería de comunidades no devuelve el resultado esperado. NPR-26385: revisión para CQ-4248673
 * Se ha observado un error al cargar un archivo adjunto que no sea una imagen (por ejemplo, .pdf) en el foro. NPR-27360: revisión para CQ-4257753
 * Desanclar o cancelar la función de una publicación de foro no funciona si Author-Publish está configurado con MySQL DSRP. NPR-26125; Revisión para CQ-4251520
-* Los componentes de colección (foros, blogs, calendario, ideación, control de calidad) ahora tienen una propiedad en el cuadro de diálogo del componente para habilitar/deshabilitar &quot;Bloquear UGC en modo de edición de autor&quot;, de modo que se permita/deniegue la carga UGC en modo de edición WCM. NPR-26978: revisión para CQ-4248161
+* Los componentes de colección (foros, blogs, calendario, ideación, control de calidad) ahora tienen una propiedad en el cuadro de diálogo de componentes para habilitar/deshabilitar &quot;Bloquear UGC en modo de edición de autor&quot;, de modo que se permita/deniegue la carga UGC en modo de edición WCM. NPR-26978: revisión para CQ-4248161
 * La búsqueda de etiquetas no funciona para términos de búsqueda localizados. NPR-26171: revisión para CQ-4249926
 * El botón Atrás omite una página en la búsqueda en el foro. NPR-26950: revisión para CQ-4254804
 * AEM instancia que se ejecuta en el puerto Http predeterminado (80) no puede alcanzar el archivo imsmanifest.xml. NPR-27173: revisión para CQ-4252211
@@ -1187,7 +1185,7 @@ No se pueden editar las etiquetas mediante el etiquetado. NPR-26957: revisión p
 * Las modificaciones en AEM experiencias creadas mediante el motor de orientación no se publican. NPR-24869: revisión para CQ-4247832
 * No se pueden crear varias actividades y experiencias si sus nombres incluyen caracteres japoneses. NPR-27271: revisión para CQ-4256857
 * Actualice el extremo de la API de Launch. NPR-26790: revisión para CQ-4254380
-* (Personalización) BrandsRetriever recorre todo el árbol. NPR-27060: revisión para CQ-4255790
+* (Personalization) BrandsRetriever recorre todo el árbol. NPR-27060: revisión para CQ-4255790
 
 **WCM: IU de administración**
 
@@ -1203,11 +1201,11 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
 * Se ha habilitado la compatibilidad con una matriz/lista de objetos con sustitución de entidades dinámicas.
 * Se ha habilitado la compatibilidad con FIPS para el flujo de trabajo ampliado de Reader en Firma digital, Extensiones de Reader, CryptoProvider y TrustStore.
-* Se ha agregado compatibilidad con PDF/UA en formularios XFA generados mediante Designer o Output Service.
+* Se ha agregado compatibilidad con PDF/UA a los formularios XFA generados con Designer o Output Service.
 * Se ha habilitado la compatibilidad con la propiedad allowedPaths en las plantillas de formularios adaptables.
 * Se ha agregado compatibilidad con JBoss 7.1.4 para AEM Forms 6.4.
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Integración de back-end**
 
@@ -1231,7 +1229,7 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
 * Javadocs para 6.4 no contiene com.adobe.dbforms.* paquete y las clases correspondientes. Revisión para CQ-4253200
 * La interfaz de usuario de CCR muestra un valor no deseado predeterminado para el campo de fecha en caso de que no haya entrada del XML de datos de prueba. Revisión para CQ-4252041
-* Si una carta contiene un módulo de lista, se pierde el espacio entre viñetas y texto al generar PDF a partir de la carta. Revisión para CQ-4250588
+* Si una carta contiene un módulo de lista, se pierde el espacio entre viñetas y texto al generar el PDF a partir de la carta. Revisión para CQ-4250588
 
 **Administrador de Forms**
 
@@ -1249,9 +1247,9 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
 **Instalador JEE de Forms**
 
-**Servicio Generador de PDF**
+**PDF Generator Service**
 
-* No se puede mostrar la configuración de informes de estándares y cumplimiento para PDF Generator. NPR-26715: revisión para CQ-4253384
+* No se puede mostrar la configuración de informes y cumplimiento de normas para el Generador de PDF. NPR-26715: revisión para CQ-4253384
 * falta el archivo binario convertpdf en el paquete de complementos de AIX Forms, lo que provoca un error al invocar el servicio PDFA. Revisión para CQ-4257873
 * El servicio de captura de papel se bloquea al procesar archivos TIFF. NPR-28079: revisión para CQ-4240649
 
@@ -1259,9 +1257,9 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 
 * Agregue la conformidad con FIPS para el flujo de trabajo RE en Firma digital, Extensiones de Reader, CryptoProvider y TrustStore. NPR-27495: revisión para CQ-4257572
 * La conversión falla al ejecutar el servicio AssemblerService.toPDFA en un bucle. NPR-26354: revisión para CQ-4248656
-* No se puede validar el cumplimiento de los PDF correctamente basado en los estándares PDF/A-1b. NPR-26286: revisión para CQ-4227539
+* No se puede validar la conformidad de los PDF correctamente según los estándares PDF/A-1b. NPR-26286: revisión para CQ-4227539
 * Problemas de falta de memoria al actualizar AEM Forms de 6.1 SP2 CFP5 a CFP13. NPR-26285: revisión para CQ-4244379
-* No se puede validar el cumplimiento de los PDF correctamente basado en los estándares PDF/A. NPR-26272: revisión para CQ-4248823
+* No se puede validar la conformidad de los PDF correctamente según los estándares de PDF/A. NPR-26272: revisión para CQ-4248823
 
 **Forms: base JEE**
 
@@ -1283,17 +1281,17 @@ Lista de paquetes de contenido incluidos en AEM 6.4.3.0
 
 #### AEM 6.4.2.0 {#experience-manager-6420}
 
-AEM 6.4.2.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde que se publicó de forma general AEM 6.4 en **abril de 2018.**
+AEM 6.4.2.0 es una actualización importante que incluye correcciones y mejoras clave para el cliente, de rendimiento, estabilidad y seguridad publicadas desde la disponibilidad general de AEM 6.4 in **Abril de 2018.**
 También es acumulativo, lo que significa que 6.4.2.0 incluye todos los paquetes de servicio AEM 6.4 que se lanzaron antes.
 
 Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.8.7.
-* Se ha agregado compatibilidad con las funciones 1.4 de la especificación de lenguaje de plantilla HTML (HTL)
+* Se ha agregado compatibilidad con las funciones 1.4 de la especificación del lenguaje de plantilla de HTML (HTL)
 * Se ha agregado compatibilidad con MongoDB Enterprise 3.6.
-* El Editor de páginas de sitios agrega compatibilidad con la edición y la composición en contexto con componentes del lado del cliente creados en React o Angular en combinación con <a href="../sites-developing/spa-walkthrough.md">AEM SDK de JS del Editor SPA</a>.
+* El Editor de páginas de sitios agrega compatibilidad con la edición y la composición en contexto con componentes del lado del cliente creados en React o Angular en combinación con <a href="../sites-developing/spa-walkthrough.md">AEM SDK de JS Editor SPA</a>.
 * Mejoras en los fragmentos de contenido: se ha agregado la capacidad de realizar anotaciones en campos de texto y de comparar versiones en paralelo.
-* Se ha agregado la [integración con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que los usuarios puedan buscar, previsualizar, guardar y conceder licencias sobre los recursos de Adobe Stock directamente desde AEM interfaz de usuario. Para obtener información más detallada, consulte [Uso de recursos de Adobe Stock con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* Se ha añadido [integración con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que los usuarios puedan buscar, previsualizar, guardar y conceder licencias sobre los recursos de Adobe Stock directamente desde AEM interfaz de usuario. Para obtener información más detallada, consulte [Uso de recursos de Adobe Stock con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * Se ha añadido compatibilidad con el metaesquema condicional dinámico y la capacidad de establecer un esquema de metadatos para carpetas de recursos.
 * Se ha añadido una configuración en cada componente para habilitar/deshabilitar la funcionalidad de creación/actualización de miniaturas de carpetas.
 * Mejoras en el Editor de imágenes en la creación de páginas.
@@ -1335,7 +1333,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 
 * La consulta de datasource.jsp en AEM 6.2 es diferente de AEM 6.4. NPR-24968: Revisión para CQ-4244235
 * (IU clásica) No se pueden agregar etiquetas a las páginas. NPR-25255, NPR-25612: revisión para CQ-4249615
-* Las características de la especificación de idioma de plantilla HTML 1.4 son compatibles con AEM 6.4.2.0 NPR-24585
+* HTML Template Language Specification 1.4 funciones compatibles con AEM 6.4.2.0 NPR-24585
 * Herencia incorrecta en el componente local después de copiar una página de Live Copy. NPR-25920: revisión para CQ-4236737, CQ-4248957
 * El tiempo de activación y desactivación se almacena en crx/de pero no obtiene lo mismo en la consola de la interfaz de usuario de las propiedades de la página. NPR-25154: revisión para CQ-4243431
 * El sistema de estilos rompe los valores iniciales de las propiedades del cuadro de diálogo. NPR-25648: revisión para CQ-4250073
@@ -1347,7 +1345,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * El editor de texto sin formato envía datos sin recortar y añade espacios adicionales. NPR-25312: revisión para CQ-4249006
 * Al abrir el componente mediante el modo integrado, los complementos cargados anteriormente no son visibles por segunda vez. NPR-24610: revisión para CQ-4236850
 * Al cargar un XF en la vista del editor copiando/pegando, la variación maestra no se carga automáticamente. NPR-24841: revisión para CQ-4248037
-* Estructura HTML incorrecta en siteadmin / damadmin rompe IE11. NPR-24686: revisión para CQ-4246363, CQ-4248402
+* Estructura de HTML incorrecta en siteadmin/damadmin rompe IE11. NPR-24686: revisión para CQ-4246363, CQ-4248402
 * (Asistente para administrar publicación) El calendario de la fecha de activación en el paso Opciones no se abre después de que se hayan realizado algunas acciones en el paso Ámbito. NPR-25681: revisión para CQ-4250205
 * La IU clásica no funciona para editar CUG ya que ha quedado obsoleta. NPR-25075: Revisión para 4241823
 * Opción Crear no disponible para crear fragmentos de experiencia. NPR-26053: revisión para CQ-4249923
@@ -1439,7 +1437,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * Problemas de los subprocesos del foro al incrustar imágenes con muy alta resolución. NPR-26037: revisión para CQ-4244453, CQ-4253099
 * El tiempo muestra los conmutadores cuando la zona horaria del servidor difiere de la del usuario. NPR-26036: revisión para CQ-4248751
 * Si se adjunta un archivo dos veces con el mismo nombre a una publicación de foro, se producirá un error en el servidor. NPR-24172: revisión para CQ-4244367
-* Correcciones de rendimiento de backport: paginación de grupos en creación y publicación, búsqueda de grupos en autor, Evitar la serialización de respuestas para diario, calendario e ideación y carga diferida para obtener la pertenencia a grupos (invitar/desinvitar) para cada grupo mientras se ve la página de listado de grupos. NPR-24538: revisión para CQ-4246515
+* Correcciones de rendimiento de backport: paginación de grupos en creación y publicación, búsqueda de grupos en autor, Evitar la serialización de respuestas para diario, calendario e ideación, y carga diferida para obtener la membresía de grupos (invitar/desinvitar) para cada grupo mientras se ve la página de listado de grupos. NPR-24538: revisión para CQ-4246515
 * Los recursos de habilitación no están visibles en el autor. Revisión para CQ-4252618
 * Las notificaciones no se generan para subprocesos de un usuario desconocido. Revisión para CQ-4245132
 * La búsqueda de grupos no aparece en el carril izquierdo. Revisión para CQ-4252621
@@ -1532,7 +1530,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * Los ajustes preestablecidos de imagen no se aplican a las representaciones dinámicas descargadas. Revisión para CQ-4249862
 * El botón Seleccionar todo no funciona correctamente en la página de listado de ajustes preestablecidos de visor. Revisión para CQ-4252462
 * Perfiles de vídeo: El botón Seleccionar todo no funciona. Revisión para CQ-4253076, CQ-4251447
-* Paso de validación SP2 - paso de humo. Revisión para CQ-4251639
+* Paso de validación de SP2 - paso de humo. Revisión para CQ-4251639
 
 **DAM: DMServices**
 
@@ -1555,10 +1553,10 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 * Se ha agregado la capacidad de que el usuario utilice el mismo archivo WSDL para varios servicios.
 * Se ha eliminado el patrón de marca de tiempo no admitido de la lista desplegable del selector de fecha.
 * Se ha agregado compatibilidad para la subyección de xfaf y pdf en OSGI.
-* Se agregó compatibilidad para usar la [capacidad de informes de transacciones](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) en implementaciones locales.
+* Se agregó compatibilidad para usar la variable [capacidad de informes de transacciones](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) en implementaciones locales.
 * Se ha agregado código para no mostrar la variable secundaria en el editor de reglas de condición.
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Informes de transacciones**
 
@@ -1570,15 +1568,15 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 * (Espacio de trabajo HTMLEspacio de trabajo HTML) Cuando un usuario reclama una tarea, el recuento de colas se actualiza para ese usuario en particular, pero no para otros usuarios, a menos que se actualice la página. Este problema se ha corregido con una nueva propiedad de . Para configurar esta nueva propiedad en la instancia de AEM, consulte su Configuración . NPR-24536: revisión para CQ-4233665
 * No se puede cargar un formulario grande en la aplicación AEM Forms en la versión 6.4. NPR-24463: Revisión para CQ-4245091
-* Problema en la aplicación Mobile Workspace al intentar ver la tarea compartida. NPR-25177: revisión para CQ-4248733
+* Problema en la aplicación de Mobile Workspace al intentar ver la tarea compartida. NPR-25177: revisión para CQ-4248733
 * Comportamiento de validación incoherente entre la web y APK. NPR-25670: revisión para CQ-4248178
-* Cuando se realiza una llamada a un servicio web y se abre un formulario HTML5 en el cliente, falla y se devuelve un mensaje de error. NPR-26048: revisión para CQ-4244716
+* Cuando se realiza una llamada a un servicio web, un formulario HTML5 se abre dentro del cliente, falla y se devuelve un mensaje de error. NPR-26048: revisión para CQ-4244716
 * Problema al llamar al servicio en la aplicación de Windows 6.3 de AEM formularios. NPR-26468: Revisión para CQ-4252341
 
-**Forms móvil**
+**Mobile Forms**
 
 * (Conjunto de formularios) Problema de validación de campos SSN y Mobile al obtener una vista previa. NPR-24458: revisión para CQ-4244983
-* Los datos no se muestran con el prefijo de campos multilínea en la vista previa HTML. NPR-24549: revisión para CQ-4244212
+* Los datos no se muestran con el prefijo de campos multilínea en la vista previa del HTML. NPR-24549: revisión para CQ-4244212
 * Los datos se pierden cuando la secuencia de comandos se evalúa en un campo multilínea. NPR-25333, revisión para CQ-4249610
 
 **Forms: comunicación interactiva y gestión de correspondencia**
@@ -1601,7 +1599,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 * (XDP) Se muestra una pantalla en blanco al agregar un fragmento de presentación en el nuevo subformulario creado. Revisión para CQ-4248810
 * Error de prueba DocumentFragment-master-DeployWithServerSideTests. Revisión para CQ-4245496
 * Variable de módulo de texto Instancia duplicada en el módulo Condición. Revisión para CQ-4252128
-* La URL de vista previa de PDF no muestra informes de transacciones al publicar. Revisión para CQ-4246158
+* La dirección URL de vista previa del PDF no muestra los informes de transacciones al publicar. Revisión para CQ-4246158
 * Problemas relacionados con la sincronización de IC con el canal de impresión y la sincronización con el canal web. Revisión para CQ-4251505
 * Limpieza del código EXM: Elimine LocalFunctionMapper. Revisión para CQ-4243265
 * Para corregir el tipo de recurso TableHeader del componente de tabla webChannel de IC. Revisión para CQ-4251821
@@ -1614,7 +1612,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 **Servicios de documento**
 
 * (Servicio de formulario) OSGI no es compatible con XFAF. NPR-25181, revisión para CQ-4251313
-* Los caracteres en el encabezado del archivo PDF ensamblado están entrando en confusión. NPR-25113: revisión para CQ-4244682
+* Los caracteres en el encabezado del fichero de PDF ensamblado están llegando a ser confusos. NPR-25113: revisión para CQ-4244682
 
 **Formularios adaptables**
 
@@ -1644,7 +1642,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 * El servicio de salida no proporciona las etiquetas correctas para el Reader de accesibilidad. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Revisión para CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
-**Seguridad de los documentos**
+**Document Security**
 
 * Problema con la creación de directivas mediante Document Security. NPR-25586, NPR-25547: revisión para CQ-4247086
 
@@ -1658,17 +1656,17 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 **Recursos**
 
-* Se ha agregado la [integración con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que los usuarios puedan buscar, previsualizar, guardar y conceder licencias sobre los recursos de Adobe Stock directamente desde AEM interfaz de usuario. Para obtener información más detallada, consulte [Uso de recursos de Adobe Stock con AEM recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: revisión para CQ-30857
+* Se ha añadido [integración con Adobe Stock](/help/assets/aem-assets-adobe-stock.md) para que los usuarios puedan buscar, previsualizar, guardar y conceder licencias sobre los recursos de Adobe Stock directamente desde AEM interfaz de usuario. Para obtener información más detallada, consulte [Uso de recursos de Adobe Stock con AEM recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: revisión para CQ-30857
 * Se ha agregado compatibilidad con el metaesquema condicional dinámico. Para obtener más información, consulte [Metadatos en cascada](/help/assets/cascading-metadata.md). NPR-25189: revisión para CQ-4237413
 * Se habilitó la opción &quot;Descarga de recursos&quot; en los fragmentos de contenido. Para obtener más información, consulte [Informes de recursos](/help/assets/asset-reports.md). NPR-25186: revisión para CQ-4237410
-* Posibilidad de establecer un esquema de metadatos para carpetas de recursos. Para obtener más información, consulte [Esquema de metadatos de carpeta](/help/assets/folder-metadata-schema.md) y consulte su [Configuración](#configuration-settings-required-for-npr) después AEM instalación 6.4.2.0. NPR-21268: revisión para CQ-4221574
+* Posibilidad de establecer un esquema de metadatos para carpetas de recursos. Para obtener más información, consulte [Esquema de metadatos de carpeta](/help/assets/folder-metadata-schema.md) y consulte su [Configuración](#configuration-settings-required-for-npr) después AEM la instalación de 6.4.2.0. NPR-21268: revisión para CQ-4221574
 
 **Sitios**
 
-* Permita editar un fragmento de contenido sin permisos de eliminación. Para obtener más información, consulte [Personalización y ampliación de fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: revisión para CQ-4248750
-* Se ha agregado la capacidad de anotar fragmentos de contenido. Para obtener más información, consulte [Variations-Authoring Fragments](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: revisión para CQ-4235336
+* Permita editar un fragmento de contenido sin permisos de eliminación. Para obtener más información, consulte [Personalizar y ampliar fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: revisión para CQ-4248750
+* Se ha agregado la capacidad de anotar fragmentos de contenido. Para obtener más información, consulte [Variaciones: creación de fragmentos](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: revisión para CQ-4235336
 * Versiones: Comparar fragmentos de contenido en paralelo. Para obtener más información, consulte [Administración de fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: revisión para CQ-4237412
-* Mejoras en el Editor de imágenes compatibles con AEM 6.4.2.0. Para obtener más información, consulte [Editor de imágenes](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* Mejoras del Editor de imágenes con respecto a AEM 6.4.2.0. Para obtener más información, consulte [Editor de imágenes](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **Paquetes de contenido y paquetes OSGI incluidos**
 
@@ -1754,14 +1752,14 @@ AEM 6.4.1.0 se puede instalar en la AEM 6.4 GA. Algunos de los aspectos destacad
 * TargetContentImpl hace que AEM seo lenta durante consultas de larga duración. NPR-22359: revisión para CQ-4236907
 * El motor de destino (mbox.js, at.js) no utiliza direcciones URL manipuladas y utiliza direcciones URL que contienen dos puntos, lo que puede provocar errores en determinadas implementaciones. NPR-22434: revisión para CQ-4237854
 * En el modo de Target, los autores pueden modificar un componente heredado del modelo sin cancelar la herencia. NPR-22865: revisión para CQ-4237907
-* (Personalización) Los iconos se deforman al cambiar a la vista de tarjeta. NPR-23373, NPR-23374: revisión para CQ-4240018, CQ-4240019
-* (Personalización) La consola de audiencias no muestra los tipos nt:folder . NPR-23375: revisión para CQ-4242293
+* (Personalization) Los iconos se deforman al cambiar a la vista de tarjeta. NPR-23373, NPR-23374: revisión para CQ-4240018, CQ-4240019
+* (Personalization) La consola de audiencias no muestra los tipos nt:folder . NPR-23375: revisión para CQ-4242293
 * Cuando un componente está dirigido a una instancia de publicación, aparece un parpadeo que muestra la experiencia predeterminada antes de la experiencia de destino. NPR-23415: revisión para CQ-4242038
 * (Consola de Adobe IMS) La configuración del servicio OSGi AccessTokenProvider vuelve a aparecer después de la eliminación. NPR-23520: revisión para CQ-4208250
 * La replicación de referencia de configuración falla con la estructura de carpetas intermedias. NPR-23485: revisión para CQ-4242751
-* (Personalización) clientlib bloqueada por el servlet proxy. NPR-23521: revisión para CQ-4240995
+* (Personalization) clientlib bloqueada por el servlet proxy. NPR-23521: revisión para CQ-4240995
 * (Consola de Adobe IMS) Las soluciones de nube registradas no se recogen en el asistente de configuración. NPR-23977: revisión para CQ-4244549
-* Bucle infinito al cargar contenido de destino en páginas sin extensión HTML. NPR-23522: revisión para CQ-4223600
+* Bucle infinito al cargar contenido de destino en páginas sin extensión de HTML. NPR-23522: revisión para CQ-4223600
 * La activación falla en una página con referencias de configuración heredadas de Dynamic Tag Management. NPR-23485: revisión para CQ-4242751
 
 **Plataforma**
@@ -1860,8 +1858,8 @@ AEM 6.4.1.0 se puede instalar en la AEM 6.4 GA. Algunos de los aspectos destacad
 * El atributo Texto alternativo se desglosa en el componente Dynamic Media. Revisión para CQ-4244081
 * (DMS7) La edición de conjuntos remotos en AEM no se sobrescribe en Scene7. Revisión para CQ-4243430
 * Verificación de la versión 6.4 de SP1 basada en DM Hybrid. Revisión para CQ-4244623
-* (DMS7-UA) Al hacer clic en el botón Incrustar de un recurso de vídeo publicado, no parece que ocurra nada. Se espera que el cuadro de diálogo Incrustar se muestre con código HTML. Revisión para CQ-4245237
-* (DM Hybrid) Copiar URL para recursos de vídeo publicados o conjuntos de medios mixtos obtiene &quot;`[object Object]`&quot; en el cuadro de diálogo URL. Revisión para CQ-4245236, CQ-4245451
+* (DMS7-UA) Al hacer clic en el botón Incrustar de un recurso de vídeo publicado, no parece que ocurra nada. Se espera que el cuadro de diálogo Incrustar se muestre con el código del HTML. Revisión para CQ-4245237
+* (MDL híbrido) Copiar URL para los activos de vídeo publicados o los conjuntos de medios mixtos obtiene &quot;`[object Object]`&quot; en el cuadro de diálogo URL. Revisión para CQ-4245236, CQ-4245451
 * (DMHybrid) La página Vista de detalles del vídeo no contiene la vista previa del recurso de vídeo y envía un mensaje de error a la consola. Revisión para CQ-4244320
 * Codificación automática S7 del contenido de we.retail. Revisión para CQ-4242253
 * Los ajustes preestablecidos de procesamiento de vídeo de preactualización no pueden tener un nuevo ajuste preestablecido de codificación de vídeo añadido ni editar los ajustes preestablecidos de codificación existentes. Revisión para CQ-4240407
@@ -1902,7 +1900,7 @@ AEM 6.4.1.0 se puede instalar en la AEM 6.4 GA. Algunos de los aspectos destacad
 
 **DAM: Etiquetas inteligentes**
 
-* Se han introducido [Etiquetas inteligentes mejoradas](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* Presentado [Etiquetas inteligentes mejoradas](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Forms**
 
@@ -1910,13 +1908,13 @@ Las correcciones de AEM Forms se entregan mediante paquetes de complementos y ot
 
 Los aspectos destacados de AEM Forms son:
 
-* AEM Forms introduce la [funcionalidad de informes de transacciones](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) para rastrear y mantener el recuento de transacciones como formularios enviados, documentos procesados y documentos procesados en su implementación de AEM Forms. Proporciona perspectivas sobre el uso de productos y ayuda a los usuarios empresariales a comprender los volúmenes de procesamiento digital.
-* Se ha habilitado la compatibilidad con PDF/UA para formularios XML.
+* Presentación de AEM Forms [capacidad de informes de transacciones](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) para rastrear y mantener el recuento de transacciones como formularios enviados, documentos procesados y documentos procesados en su implementación de AEM Forms. Proporciona perspectivas sobre el uso de productos y ayuda a los usuarios empresariales a comprender los volúmenes de procesamiento digital.
+* Se ha habilitado la compatibilidad con el PDF/UA en los formularios XML.
 * Se ha añadido allowProxy = true para Clientlib **aemfd.ccm.channel.contentpage**
 * Se ha actualizado el código para que la búsqueda de título avanzada se realice tal cual contiene en lugar de ser igual a .
 * Actualice a la nueva versión del administrador de paquetes de nodos (NPM) en el equipo de integración continua.
 
-**Paquete de complementos de Forms**
+**Paquete de complemento de Forms**
 
 **Integración de back-end**
 
@@ -1944,14 +1942,14 @@ Los aspectos destacados de AEM Forms son:
 * Faltan valores en la fase de verificación del servidor actualizado y anterior a la actualización del formulario enviado. Revisión para CQ-4241896
 * El botón Salir y guardar en la parte inferior de la página no funciona. Revisión para CQ-4240112
 * Falta el número de contacto en la configuración actualizada. Revisión para CQ-4239870
-* En la sección `ACTION TAKEN` de la pestaña Tipo de disputa , &quot;Documentos adicionales para apoyar mi reclamación&quot; tiene un campo adicional Tipo de prueba guardado &quot;en él. Revisión para CQ-4239873
+* En `ACTION TAKEN` en la pestaña Tipo de disputa , &quot;Documentos adicionales para apoyar mi reclamación&quot; tiene un campo adicional Tipo de prueba guardado &quot;en él. Revisión para CQ-4239873
 * Error &quot;Error en getDataAPI&quot; encontrado en la fase verifyPdf. Revisión para CQ-4239865
 * Errores en los registros de migración para la instancia de autor y publicación. Revisión para CQ-4239365
 * Errores en los registros de migración para la instancia de autor y publicación. Revisión para CQ-4239635
 * Error de deserialización como &quot;Deserialización no permitida para la clase sun.util.calendar.ZoneInfo&quot; en registros de error después del envío de un formulario adaptable. Revisión para CQ-4240419
-* El campo de estado no se está rellenando en la representación de formularios móviles. Revisión para CQ-4240597
+* El campo de estado no se rellena en la representación de formularios de Mobile. Revisión para CQ-4240597
 * Elimine el uso de referencia de los componentes de las plantillas de la lista de anti-patrones. Revisión para CQ-4239217
-* El cuadro numérico HTML5 definido como flotante o decimal ofrece diferentes resultados de validación en distintos navegadores. NPR-23528: revisión para CQ-4244097
+* HTML5 Numeric Box establecida como Float o Decimal ofrece diferentes resultados de validación en distintos navegadores. NPR-23528: revisión para CQ-4244097
 * (Carga de imagen) La imagen no se muestra en la vista previa del DOR. Revisión para CQ-4243178
 * El servidor JEE genera un error al intentar enviar el formulario adaptable con &quot;PDF de correo electrónico&quot; e &quot;Incluir archivos adjuntos&quot;. Revisión para CQ-4239894
 * El gráfico no se traza durante la ejecución utilizando la tabla o el panel. Revisión para CQ-4240010
@@ -1985,7 +1983,7 @@ Los aspectos destacados de AEM Forms son:
 * La entrada para formularios guardados y enviados se rellena en crx/de a pesar de que tenemos la configuración de base de datos proporcionada en Borrador del portal de Forms y configuración de envío. Revisión para CQ-4240726
 * (Buscar y listar) El valor fijo del título de búsqueda avanzada debería funcionar como contiene en lugar de como igual. Revisión para CQ-4245499
 
-**Forms móvil**
+**Mobile Forms**
 
 * El campo de fecha se superpone en Mobile Forms. Revisión para CQ-4242256
 * El envío de formularios para Mobile Forms debe registrarse como una transacción mediante el servicio de registro de transacciones. Revisión para CQ-4246166
@@ -2039,25 +2037,25 @@ Los aspectos destacados de AEM Forms son:
 
 **Núcleo**
 
-* (Espacio de trabajo HTML) Falta información de seguimiento para las aplicaciones con el símbolo entre paréntesis en el nombre. NPR-23402
+* (HTML Workspace) Falta información de seguimiento para las aplicaciones con el símbolo entre paréntesis en el nombre. NPR-23402
 
 **Servicio PDFG**
 
 * Registro de transacciones en los servicios PDFG. Revisión para CQ-4244951, CQ-4244586
-* Reducir los PDFs al desincrustar selectivamente fuentes a través de una sola llamada API. NPR-23287
+* Reducir los PDF al desincrustar selectivamente las fuentes a través de una sola llamada API. NPR-23287
 * Problema de actualización de las configuraciones de PDFG en AEM actualización. Revisión para CQ-4241176
 * Registro de transacciones en PDFUtility Service. Revisión para CQ-4245014
 
 **Administración de procesos**
 
 * (Espacio de trabajo HTML) Los puntos de inicio del proceso no se ordenan en orden alfanumérico. Revisión para CQ-4239629
-* (Espacio de trabajo HTML) Prepare la llamada de datos que aparece dos veces cuando el borrador se abre la primera vez. Revisión para CQ-4243280
-* (Espacio de trabajo HTML) El proceso de preparación de datos se activa al cerrar un formulario. Revisión para CQ-4239456
+* (espacio de trabajo del HTML) Prepare la llamada de datos que aparece dos veces cuando el borrador se abre la primera vez. Revisión para CQ-4243280
+* (HTML Workspace) El proceso de preparación de datos se activa al cerrar un formulario. Revisión para CQ-4239456
 * El espacio de trabajo se bloquea cuando se atraviesa entre dos tareas. Revisión para CQ-4237125
 
 **Workbench**
 
-* El proceso Administrar perfil de acción Preparar datos falla cuando la configuración predeterminada del proceso de procesamiento está definida en HTML. Revisión para CQ-4244292
+* El proceso Administrar perfil de acción Preparar datos falla cuando la configuración predeterminada del proceso de procesamiento está establecida en HTML. Revisión para CQ-4244292
 
 **Forms Designer**
 
@@ -2106,7 +2104,7 @@ Lista de paquetes de contenido incluidos en AEM 6.4.1.0
 >Para los clientes con Feature Packs instalados en AEM 6.4. Los Feature Packs opcionales proporcionados por Adobe dependen de la versión de la versión y del Service Pack. Si tiene instalado algún paquete de funciones, póngase en contacto con el equipo de atención al cliente de AEM para validar la compatibilidad de esos paquetes de funciones con este paquete de servicios para AEM 6.4.
 
 * AEM 6.4.8.0 requiere AEM 6.4. Para obtener más información, consulte [documentación de actualización](../sites-deploying/upgrade.md).
-* La descarga del Service Pack está disponible en el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) para su descarga.
+* La descarga del Service Pack está disponible en [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) para descargar.
 * En una implementación con MongoDB y varias instancias, instale AEM 6.4.8.0 en una de las instancias de creación mediante el Administrador de paquetes.
 * Antes de instalar el paquete de servicio, asegúrese de disponer de una instantánea o una copia de seguridad nueva de su instancia de AEM.
 * Reinicie la instancia antes de la instalación. Aunque solo es necesario cuando la instancia sigue en modo de actualización (y este es el caso cuando la instancia se actualizó desde una versión anterior), normalmente se recomienda si la instancia se ejecutó durante un período de tiempo más largo.
@@ -2121,7 +2119,7 @@ Siga estos pasos para instalar el paquete de servicio en una instancia de AEM 6.
 
 1. Descargue el paquete desde Distribución de software.
 
-1. En AEM, inicie sesión en el Administrador de paquetes y añada el paquete AEM 6.4.8.0 descargado. Seleccione el paquete cargado y haga clic en **[!UICONTROL Install]**.
+1. En AEM, inicie sesión en el Administrador de paquetes y añada el paquete AEM 6.4.8.0 descargado. Seleccione el paquete cargado y haga clic en **[!UICONTROL Instalar]**.
 
 >[!NOTE]
 >
@@ -2135,7 +2133,7 @@ Existen dos formas de instalar automáticamente AEM 6.4.8.0 en una instancia en 
 
 A. Coloque el paquete en .Carpeta */crx-quickstart/install* mientras se ejecuta el servidor. El paquete se instala automáticamente.
 
-B. Utilice la [API HTTP del Administrador de paquetes](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) (asegúrese de utilizar `cmd=install&recursive=true`) para instalar el paquete anidado.
+B. Utilice la variable [API HTTP del Administrador de paquetes](/help/sites-administering/package-manager.md) - asegúrese de usar `cmd=install&recursive=true` - por lo que el paquete anidado está instalado.
 
 >[!NOTE]
 >
@@ -2173,8 +2171,8 @@ que copiará los nuevos ajustes preestablecidos de visor en la ubicación /conf.
 >AEM 6.4.8.0 incluye una nueva versión del [paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y actualiza a AEM 6.4.8.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms después de la instalación del paquete de complementos de Forms.
 
 1. Asegúrese de que ha instalado el Service Pack de AEM.
-1. Descargue el paquete de complementos de formularios correspondiente que aparece en [AEM Forms releases](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para su sistema operativo.
-1. Instale el paquete de complementos de formularios tal como se describe en [Instalación de paquetes de complementos de formularios AEM](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Descargue el paquete de complementos de formularios correspondiente que aparece en [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para su sistema operativo.
+1. Instale el paquete de complementos de formularios como se describe en [Instalación de paquetes de complementos de formularios AEM](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Instalación del instalador de AEM Forms JEE {#install-aem-forms-jee-installer}
 
@@ -2182,7 +2180,7 @@ que copiará los nuevos ajustes preestablecidos de visor en la ubicación /conf.
 >
 >Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en el instalador JEE de AEM Forms se entregan mediante un instalador independiente.
 
-Para obtener información sobre la instalación del instalador acumulativo para AEM Forms JEE y la configuración posterior a la implementación, consulte [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+Para obtener información sobre la instalación del instalador acumulativo para AEM Forms JEE y la configuración posterior a la implementación, consulte [Instalador de parches JEE de AEM Forms 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Ajustes de configuración necesarios para NPR-21268 {#configuration-settings-required-for-npr}
 
@@ -2198,7 +2196,7 @@ El recuento de la Cola compartida no se actualiza de forma predeterminada para o
 
 1. Vaya a la IU de Administración -> Services -> Workspace -> Global administration.
 1. Exporte la configuración Global.
-1. En el archivo XML descargado, añada la etiqueta &lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval> Aquí, 10 es el valor de ejemplo en segundos. Puede modificarlo en consecuencia.
+1. En el archivo XML descargado, añada la etiqueta &lt;client_taskspollinginterval>10&lt;/client_taskspollinginterval> En este caso, 10 es el valor de ejemplo en segundos. Puede modificarlo en consecuencia.
 1. Guarde el archivo.
 1. Vuelva a la IU de Administración -> Services -> Workspace -> Global administration.
 1. Importe el archivo xml en la sección Importar configuración global.
@@ -2208,7 +2206,7 @@ El recuento de la Cola compartida no se actualiza de forma predeterminada para o
 
 ### Uber Jar {#uber-jar}
 
-Uber Jar para AEM 6.4.8.0 está disponible en el [repositorio de Maven público de Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8/).
+El Uber Jar para AEM 6.4.8.0 está disponible en el [Repositorio de Maven público de Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8/).
 
 Para usar Uber Jar en un proyecto de Maven, consulte el artículo [Cómo usar Uber Jar](../sites-developing/ht-projects-maven.md) e incluya la siguiente dependencia en el elemento POM de su proyecto:
 
@@ -2245,11 +2243,10 @@ Estos errores no requieren ninguna acción, ya que no afectan a la instancia de 
 **AEM 6.4.4.0**
 
 * No se observa ningún error de recurso al importar/exportar metadatos. CQ-4253263
-* No se puede editar ningún componente de imagen y propiedades de página después de aplicar 6.4.3.0 sobre 6.4.2.0. CQ-4260316 y CQ-4260441
-Para solucionar este problema:
+* No se puede editar ningún componente de imagen y propiedades de página después de aplicar 6.4.3.0 sobre 6.4.2.0. CQ-4260316 y CQ-4260441 Para solucionar este problema:
    * Vaya al Administrador de paquetes
    * Vuelva a instalar el paquete &quot;cq-ui-wcm-admin-content-1.0.1004.zip&quot;
-   * Recompile todos los JSP `(http://<AEM HOST>:<AEM PORT/system/console/slingjsp)` O reinicie la instancia.
+   * Recompilar todos los JSP `(http://<AEM HOST>:<AEM PORT/system/console/slingjsp)` O Reinicie la instancia.
 
 ### Paquetes de contenido y paquetes OSGi incluidos {#osgi-bundles-and-content-packages-included}
 
@@ -2275,5 +2272,5 @@ Lista de paquetes de contenido incluidos en AEM 6.4.8.0
 Estos sitios solo están disponibles para los clientes. Si es un cliente y requiere acceso, póngase en contacto con su administrador de cuentas de Adobe.
 
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/).
-* Actualizaciones, parches y paquetes de productos para funcionalidades adicionales en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

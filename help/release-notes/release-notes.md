@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
 workflow-type: tm+mt
 source-wordcount: '2751'
 ht-degree: 27%
@@ -26,7 +26,7 @@ ht-degree: 27%
 | Versión | 6.4 |
 | Tipo | Versión principal |
 | Fecha de disponibilidad general | 4 de abril de 2018 |
-| Actualizaciones recomendadas | Consulte las [versiones y actualizaciones de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es) |
+| Actualizaciones recomendadas | Consulte las [versiones y actualizaciones de AEM](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html) |
 
 ### Trivia {#trivia}
 
@@ -56,12 +56,12 @@ Quickstart utiliza Eclipse Jetty 9.3.22 como motor de servlet.
 
 Se han realizado varias mejoras en la interfaz de usuario para que sea más productiva y fácil de usar.
 
-* [Nuevo ](/help/sites-authoring/basic-handling.md#content-tree) carril del árbol de contenido para desplazarse rápidamente por una jerarquía. En combinación con la vista de lista, esto restaura el modelo de interacción de la IU clásica.
+* [Nuevo carril del árbol de contenido](/help/sites-authoring/basic-handling.md#content-tree) para navegar rápidamente por una jerarquía. En combinación con la vista de lista, esto restaura el modelo de interacción de la IU clásica.
 * Se ha mejorado la experiencia de desplazamiento en la vista de tarjeta y lista de carpetas grandes.
-* [Se ha mejorado la interacción con los resultados de búsqueda](/help/sites-authoring/search.md) : el botón Atrás restaura el resultado de la búsqueda anterior.
-* [Métodos abreviados](/help/sites-authoring/keyboard-shortcuts.md) de teclado adicionales, para las acciones más comunes, como abrir un carril concreto, editar, mover y eliminar un elemento o abrir propiedades.
-* [Posibilidad de desactivar los métodos abreviados del teclado](/help/sites-authoring/user-properties.md)  (habilitar/deshabilitar en Preferencias).
-* [Deje de mostrar marcas de hora en toda la interfaz de ](/help/sites-authoring/user-properties.md) usuario relativa después de 7 días (establezca el valor predeterminado en Preferencias).
+* [Mejora de la interacción con los resultados de búsqueda](/help/sites-authoring/search.md) - el botón de retroceso restaura el resultado de búsqueda anterior.
+* [Métodos abreviados de teclado adicionales](/help/sites-authoring/keyboard-shortcuts.md), para las acciones más comunes, como abrir un carril concreto, editar, mover y eliminar elementos o abrir propiedades.
+* [Capacidad para desactivar los métodos abreviados del teclado](/help/sites-authoring/user-properties.md) (habilitar/deshabilitar en Preferencias).
+* [Dejar de mostrar marcas de hora en toda la interfaz de usuario](/help/sites-authoring/user-properties.md) relativo después de 7 días (se establece de forma predeterminada en Preferencias).
 
 Consulte la [Documentación de creación](/help/sites-authoring/home.md) para obtener más información sobre estas funciones.
 
@@ -91,20 +91,20 @@ Para obtener más información, visite [esta página de documentación](/help/si
 
 #### Monitoreo {#monitoring}
 
-* Un nuevo [System Overview](/help/sites-administering/operations-dashboard.md#system-overview) proporciona una vista instantánea de todas las actividades y estados del sistema relacionados con el rendimiento.
-* Un nuevo conjunto de [Health Checks](/help/sites-administering/operations-dashboard.md#health-checks) en torno a la indexación, las consultas y el mantenimiento
+* Un nuevo [Información general del sistema](/help/sites-administering/operations-dashboard.md#system-overview) proporciona una vista instantánea de todas las actividades y estados del sistema relacionados con el rendimiento.
+* Un nuevo conjunto de [Comprobaciones de coherencia](/help/sites-administering/operations-dashboard.md#health-checks) acerca de la indexación, consultas y mantenimiento
 
 #### Proyectos y flujos de trabajo {#projects-and-workflows}
 
-* Nuevo [Editor de flujo de trabajo para crear y editar modelos de flujo de trabajo](/help/sites-developing/workflows-models.md).
+* Todo nuevo [Editor de flujo de trabajo para crear y editar modelos de flujo de trabajo](/help/sites-developing/workflows-models.md).
 
 ![screen_shot_2018-04-04at71143am](assets/screen_shot_2018-04-04at71143am.png)
 
 #### Actualizar desde la versión anterior {#upgrade-from-earlier-version}
 
-* [Compatibilidad](/help/sites-deploying/backward-compatibility.md) con versiones anteriores: Las funciones compatibles con versiones anteriores de la versión 6.4 ayudan a que el código personalizado siga siendo compatible en la mayoría de los casos y reducen los esfuerzos de actualización.
+* [Compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md): Las funciones compatibles con versiones anteriores de la versión 6.4 ayudan a que el código personalizado siga siendo compatible en la mayoría de los casos y reducen los esfuerzos de actualización.
 * [Evaluación de la complejidad de la actualización](/help/sites-deploying/pattern-detector.md): Nueva herramienta Pattern Detector para evaluar la complejidad de las actualizaciones antes de realizar la actualización.
-* [Reestructuración del repositorio](/help/sites-deploying/repository-restructuring.md): reestructuración significativa (principalmente /etc.) para facilitar las actualizaciones y promover las prácticas recomendadas de implementación
+* [Reestructuración de repositorios](/help/sites-deploying/repository-restructuring.md): reestructuración significativa (principalmente /etc.) para facilitar las actualizaciones y promover las prácticas recomendadas de implementación
 * Para obtener información más general sobre las actualizaciones, consulte la [esta página](/help/sites-deploying/upgrade.md) para obtener más información.
 
 ### Experience Manager Sites {#experience-manager-sites}
@@ -117,7 +117,7 @@ La introducción de Experiencias fluidas a principios de 2017, respaldada por fr
 
 **[Fragmentos de contenido](/help/assets/content-fragments.md)**
 
-Las novedades de la versión 6.4 son un editor de [modelo de contenido](/help/assets/content-fragments-models.md) visual y un nuevo [componente configurable](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) para proporcionar una salida de HTML flexible y JSON que se incluirán en los servicios de contenido.
+Las novedades de la versión 6.4 son visuales [modelo de contenido](/help/assets/content-fragments-models.md) editor y un [componente configurable](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) para proporcionar una salida de HTML flexible y JSON que se incluirán en los servicios de contenido.
 
 **Fragmentos de experiencias**
 
@@ -137,7 +137,7 @@ Tutorial recomendado para aprender a aprovechar mejor el nuevo modelo de compone
 
 El envío de un mensaje coherente en todos los canales de marketing, incluidas las redes de señalización digital y quiosco, es lo que AEM Screens representa. AEM 6.4 añade soporte para ejecutar el Reproductor de señalización en el hardware Microsoft Windows y Google Chrome OS. Además, hay disponibles mejoras en la administración y las programaciones de dispositivos remotos (grupos de canales).
 
-Para obtener más información sobre las actualizaciones de Screens, consulte la [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Para obtener más información sobre las actualizaciones de Screens, consulte [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -147,13 +147,13 @@ AEM 6.4 incorpora muchas nuevas funciones y mejoras a Comunidades. La lista comp
 
 **Detección automática de correo no deseado**
 
-Se ha proporcionado un nuevo motor de detección de correo no deseado para filtrar el contenido generado por el usuario en los sitios y grupos de la comunidad. Una vez habilitado desde system/console/configMgr, marca un fragmento de contenido generado por el usuario como correo no deseado basado en un conjunto predefinido de palabras como correo no deseado. Para obtener más información sobre el motor de detección de correo no deseado, consulte [automatización de la generación de contenido](/help/communities/moderate-ugc.md#spam-detection) por parte del usuario de la comunidad.
+Se ha proporcionado un nuevo motor de detección de correo no deseado para filtrar el contenido generado por el usuario en los sitios y grupos de la comunidad. Una vez habilitado desde system/console/configMgr, marca un fragmento de contenido generado por el usuario como correo no deseado basado en un conjunto predefinido de palabras como correo no deseado. Para obtener más información sobre el motor de detección de correo no deseado, consulte [automatización de la generación de contenido por parte de los usuarios de la comunidad](/help/communities/moderate-ugc.md#spam-detection).
 
 ![spamdetect](assets/spamdetection.png)
 
 **Nuevos filtros para QnA**
 
-Se han añadido nuevos filtros, llamados Respondido y No Respondido, a la consola de moderación masiva para filtrar las preguntas de control de calidad. Para saber cómo funcionan los filtros de estado Respondido y Sin respuesta, consulte [Contenido generado por el usuario que modera de forma masiva](/help/communities/moderation.md#main-pars-note-521961797).
+Se han añadido nuevos filtros, llamados Respondido y No Respondido, a la consola de moderación masiva para filtrar las preguntas de control de calidad. Para saber cómo funcionan los filtros de estado Respondido y Sin respuesta, consulte [moderación masiva del contenido generado por el usuario](/help/communities/moderation.md#main-pars-note-521961797).
 
 **Filtros de moderación de marcadores**
 
@@ -161,13 +161,13 @@ Se ha proporcionado la capacidad de marcar los filtros de moderación predefinid
 
 #### Eliminación de UGC y perfiles de usuario {#delete-ugc-and-user-profiles}
 
-AEM 6.4 Communities expone [API listas para usar](/help/communities/user-ugc-management-service.md) y muestra [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) para permitir que los usuarios finales tengan control sobre sus datos. Estas API también permiten que el procesamiento de datos y las organizaciones que controlan los datos cumplan con las solicitudes del RGPD de la UE.
+AEM 6.4 Comunidades expone [API integradas](/help/communities/user-ugc-management-service.md) y muestra [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) para permitir que los usuarios finales tengan control sobre sus datos. Estas API también permiten que el procesamiento de datos y las organizaciones que controlan los datos cumplan con las solicitudes del RGPD de la UE.
 
 #### Mejoras en la administración del sitio y del grupo {#enhancements-to-site-and-group-management}
 
 **Crear grupos de varias configuraciones regionales en un solo paso**
 
-Se ha proporcionado la capacidad de crear grupos multilingües en una sola operación. Para crear estos grupos, los usuarios pueden navegar a la colección de grupos del sitio de comunidades deseado desde la consola Sitios . Cree un grupo y especifique los idiomas deseados en la página Plantilla de grupo de la comunidad . Para obtener más información sobre esta funcionalidad, consulte la [consola de grupos de la comunidad](/help/communities/groups.md).
+Se ha proporcionado la capacidad de crear grupos multilingües en una sola operación. Para crear estos grupos, los usuarios pueden navegar a la colección de grupos del sitio de comunidades deseado desde la consola Sitios . Cree un grupo y especifique los idiomas deseados en la página Plantilla de grupo de la comunidad . Para obtener más información sobre esta funcionalidad, consulte [consola de grupos de comunidades](/help/communities/groups.md).
 
 ![grupo multilingüe](assets/multilingualgroup.png)
 
@@ -177,7 +177,7 @@ El icono Eliminar ya está disponible en los sitios y grupos respectivos, mientr
 
 #### Mejoras en la habilitación {#enhancements-to-enablement}
 
-Las funciones Asignación y Catálogo ahora están disponibles dentro de los grupos. Esto permite crear, administrar y publicar contenido de aprendizaje para un conjunto específico de miembros de la comunidad objetivo. Para obtener más información sobre cómo habilitar grupos de comunidades, consulte [administración de recursos de habilitación](/help/communities/resource.md).
+Las funciones Asignación y Catálogo ahora están disponibles dentro de los grupos. Esto permite crear, administrar y publicar contenido de aprendizaje para un conjunto específico de miembros de la comunidad objetivo. Para obtener más información sobre la activación de grupos de comunidades, consulte [administración de recursos de habilitación](/help/communities/resource.md).
 
 ![assignment catalog](assets/assignmentcatalog.png)
 
@@ -189,15 +189,15 @@ AEM 6.4 incorpora varias funciones y mejoras nuevas en Assets, incluida la integ
 
 Adobe Asset Link en Creative Cloud para empresas optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Es una nueva capacidad nativa en Creative Cloud para empresas que conecta Photoshop, Illustrator y el InDesign con AEM, sin que los creativos tengan que dejar sus herramientas de elección.
 
-Para obtener más información sobre esta funcionalidad, los requisitos previos y cómo acceder a ella, consulte [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+Para obtener más información sobre esta capacidad, los requisitos previos y cómo acceder a ella, consulte [Vínculo de recurso de Adobe](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **Aplicación de escritorio de AEM**
 
-AEM aplicación de escritorio se ha actualizado a la versión 1.8, que es compatible con la AEM 6.4. La lista completa de cambios para AEM aplicación de escritorio se proporciona en un documento dedicado [AEM notas de la versión de la aplicación de escritorio](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html).
+AEM aplicación de escritorio se ha actualizado a la versión 1.8, que es compatible con la AEM 6.4. La lista completa de cambios para AEM aplicación de escritorio se proporciona en una [Notas de la versión de la aplicación de escritorio de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/release-notes.html) documento.
 
-Las mejoras introducidas desde la versión AEM 6.3 incluyen la capacidad de cargar carpetas jerárquicas en segundo plano, una nueva interfaz de usuario para supervisar las operaciones en segundo plano de los recursos, el almacenamiento en caché mejorado, la creación de redes y el inicio de sesión, así como mejoras generales de estabilidad. La documentación también incluye una [guía de prácticas recomendadas](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+Las mejoras introducidas desde la versión AEM 6.3 incluyen la capacidad de cargar carpetas jerárquicas en segundo plano, una nueva interfaz de usuario para supervisar las operaciones en segundo plano de los recursos, el almacenamiento en caché mejorado, la creación de redes y el inicio de sesión, así como mejoras generales de estabilidad. La documentación también incluye un [guía de prácticas recomendadas](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 **Servicios de Adobe Sensei**
 
@@ -207,7 +207,7 @@ Las nuevas funciones incluyen etiquetas inteligentes mejoradas, con la capacidad
 
 **Metadatos**
 
-Algunas mejoras incluyen la capacidad de importar y exportar metadatos simultáneamente para una gran cantidad de recursos y construcciones de metadatos avanzadas, como [Metadatos en cascada](/help/assets/cascading-metadata.md).
+Algunas mejoras incluyen la posibilidad de importar y exportar metadatos simultáneamente para una gran cantidad de recursos y para construcciones de metadatos avanzadas, como [Metadatos en cascada](/help/assets/cascading-metadata.md).
 
 **Informes**
 
@@ -229,15 +229,15 @@ AEM 6.4 incluye muchas nuevas funciones y mejoras en Dynamic Media. La lista com
 
 El recorte inteligente, con tecnología de Adobe Sensei, proporciona automáticamente un recorte no destructivo de imágenes, preservando el punto de interés para el diseño interactivo. Puede previsualizar las sugerencias de imágenes recortadas y ajustarlas manualmente, si es necesario. Esta función también permite la generación automatizada de muestras para imágenes de productos.
 
-Consulte la documentación [Perfiles de imagen](/help/assets/image-profiles.md) para obtener más información sobre el uso del Recorte inteligente.
+Consulte [Perfiles de imagen](/help/assets/image-profiles.md) documentación para obtener más información sobre el uso de Recorte inteligente.
 
-Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md) para obtener más información sobre el trabajo con Recorte inteligente en el componente Dynamic Media.
+Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md) para obtener más información sobre el trabajo con Recorte inteligente en el componente Dynamic Media.
 
 **Imágenes inteligentes**
 
 Las imágenes inteligentes aprovechan las características de visualización únicas de cada usuario para ofrecer automáticamente imágenes optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
 
-Consulte la documentación [Imágenes inteligentes](/help/assets/imaging-faq.md) para obtener más información.
+Consulte [Imágenes inteligentes](/help/assets/imaging-faq.md) documentación para obtener más información.
 
 ![smart_crop](assets/smart_crop.png)
 
@@ -245,7 +245,7 @@ Consulte la documentación [Imágenes inteligentes](/help/assets/imaging-faq.md)
 
 Los nuevos visores, incluidos Panoramic y VR, le permiten ofrecer experiencias más envolventes.
 
-Consulte la documentación [Imágenes panorámicas](/help/assets/panoramic-images.md) para obtener más información.
+Consulte [Imágenes panorámicas](/help/assets/panoramic-images.md) documentación para obtener más información.
 
 ### Experience Manager Forms {#experience-manager-forms}
 
@@ -257,7 +257,7 @@ AEM 6.4 Forms incorpora varias funciones y mejoras nuevas. Los aspectos más des
 * Carga diferida de fragmentos
 * Actualización de un solo salto del LiveCycle a Experience Manager Forms 6.4
 
-Más detalles en la página de notas de la versión de [AEM Forms](forms.md). Además, consulte el [Resumen de nuevas funciones y mejoras de AEM 6.4 Forms](/help/forms/using/whats-new.md) para obtener información sobre las funciones nuevas y mejoradas y los recursos de documentación.
+Más detalles sobre [AEM Forms](forms.md) notas de la versión . Consulte también la [Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms](/help/forms/using/whats-new.md) para obtener información sobre las funciones nuevas y mejoradas y los recursos de documentación.
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
@@ -269,7 +269,7 @@ Puede integrar Livefyre con su instancia de AEM 6.4. En esta página encontrará
 
 Adobe utiliza un modelo de desarrollo centrado en el cliente que le permite contribuir en todas las etapas del proceso de desarrollo, la especificación, el desarrollo y las pruebas. Agradecemos a todos los clientes y socios que hayan contribuido en este proceso.
 
-Adobe cuenta con los procedimientos y procesos necesarios para permitir la recopilación, priorización y seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de soporte de Adobe Marketing Cloud](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) está integrado con el Sistema de seguimiento de defectos y mejora del Adobe. Las preguntas de los clientes se identifican y resuelven con el Servicio de atención al cliente siempre que es posible. Cuando estas preguntas se envían al departamento de I+D, se recopila toda la información de los clientes y se utiliza para establecer prioridades y elaborar informes. Asimismo, se otorga prioridad en cuanto al desarrollo de los problemas de compatibilidad y garantías pagadas y a las mejoras pagadas de los clientes.
+Adobe cuenta con los procedimientos y procesos necesarios para permitir la recopilación, priorización y seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. La variable [Portal de asistencia de Adobe Marketing Cloud](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) está integrado con el sistema de seguimiento de defectos y mejora del Adobe. Las preguntas de los clientes se identifican y resuelven con el Servicio de atención al cliente siempre que es posible. Cuando estas preguntas se envían al departamento de I+D, se recopila toda la información de los clientes y se utiliza para establecer prioridades y elaborar informes. Asimismo, se otorga prioridad en cuanto al desarrollo de los problemas de compatibilidad y garantías pagadas y a las mejoras pagadas de los clientes.
 
 Este proceso de establecimiento de prioridades creó más de 500 cambios orientados al cliente que se solucionaron en AEM 6.4.
 
@@ -280,16 +280,16 @@ Este proceso de establecimiento de prioridades creó más de 500 cambios orienta
 * Quickstart independiente: cq-quickstart-6.4.0.jar
 * Inicio rápido del servidor de aplicaciones: cq-quickstart-6.4.0.war
 * Dispatcher 4.3.1 o posterior para varios servidores web y plataformas. Consulte [vínculo de descarga](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
-* Complemento para Eclipse IDE. [Más información y descarga](/help/sites-developing/aem-eclipse.md).
+* Complemento para Eclipse IDE. [Más información y descargar](/help/sites-developing/aem-eclipse.md).
 
-* Extensión para el editor de código Brackets. [Lea más y descargue](/help/sites-developing/aem-brackets.md).
+* Extensión para el editor de código Brackets. [Más información y descargar](/help/sites-developing/aem-brackets.md).
 * Dependencias de Maven/Gradle. Consulte [vínculo de descarga](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
 **Sites**
 
-* Componentes principales ([proyecto GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
+* Componentes principales ([Proyecto de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
 * Implementación de referencia We.Retail ([más información](/help/sites-developing/we-retail.md))
-* Tipo de archivo del modelo del proyecto ([proyecto GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
+* Tipo de archivo del modelo del proyecto ([Proyecto de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
 * Reproductores de AEM Screens para varias plataformas de destino ([descargar](https://download.macromedia.com/screens/))
 * Modelos de idioma de contenido inteligente. El idioma inglés está preinstalado, pero se pueden descargar más idiomas
 
@@ -298,13 +298,13 @@ Este proceso de establecimiento de prioridades creó más de 500 cambios orienta
    * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Francés](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [AEM ](/help/sites-developing/modernization-tools.md) herramientas de modernización para migrar componentes de IU clásica a Coral 3
+* [Herramientas de modernización AEM](/help/sites-developing/modernization-tools.md) para migrar componentes de IU clásica a Coral 3
 
 **Assets**
 
-* Aplicación de escritorio de Adobe Experience Manager ([más información](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) y [descarga](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Aplicación de escritorio de Adobe Experience Manager ([leer más](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) y [descargar](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* Paquete para agregar un Rasterizador de PDF mejorado ([leer más](/help/assets/aem-pdf-rasterizer.md) y [descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Paquete para agregar un rasterizador de PDF mejorado ([leer más](/help/assets/aem-pdf-rasterizer.md) y [descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Paquete para agregar compatibilidad ampliada con imágenes RAW ([más información](/help/assets/camera-raw.md))
 
@@ -314,7 +314,7 @@ Este proceso de establecimiento de prioridades creó más de 500 cambios orienta
 
    * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
@@ -347,7 +347,7 @@ Encontrará la matriz completa de plataformas admitidas, incluido el nivel de co
 
 >[!NOTE]
 >
->Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9 y 10 son versiones no LTS por Oracle (consulte [Oracle Java SE support road map](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe solo proporcionará soporte a las versiones LTS de Java para ejecutar AEM en producción. Por lo tanto, Java 8 es la versión que se recomienda para AEM 6.4.
+>Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9 y 10 son versiones no LTS por Oracle (consulte [Plan de soporte de Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe solo proporcionará soporte a las versiones LTS de Java para ejecutar AEM en producción. Por lo tanto, Java 8 es la versión que se recomienda para AEM 6.4.
 
 ## Funciones en desuso y eliminadas {#deprecated-and-removed-features}
 
@@ -376,5 +376,5 @@ En cuanto a Adobe Experience Manager 6.4, [consulte la lista de funciones en des
 Estos sitios solo están disponibles para los clientes. Si es un cliente y requiere acceso, póngase en contacto con su administrador de cuentas de Adobe.
 
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/).
-* Actualizaciones, parches y paquetes de productos para funcionalidades adicionales en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
+* Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 * [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

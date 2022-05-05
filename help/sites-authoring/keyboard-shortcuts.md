@@ -1,22 +1,21 @@
 ---
 title: 'Métodos abreviados del teclado para las consolas  '
-seo-title: 'Métodos abreviados del teclado para las consolas  '
+seo-title: Keyboard Shortcuts for Consoles
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
-seo-description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
+source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
-
 
 # Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
 
@@ -26,7 +25,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 >
 >Las [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) necesarias para los métodos abreviados del teclado de AEM varían en función del sistema operativo.
 
-## Métodos abreviados del teclado {#keyboard-shortcuts}
+## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Comercio, Pantallas, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
@@ -42,7 +41,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
-|  | &grave; | Ocultar raíl |
+|  | ``` ` ``` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |
@@ -96,4 +95,3 @@ Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 >[!NOTE]
 >
 >Las teclas de método abreviado de navegación para la vista de columnas y el árbol de contenido siempre están activas.
-

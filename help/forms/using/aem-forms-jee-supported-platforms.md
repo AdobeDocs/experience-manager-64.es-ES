@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ Este documento enumera las plataformas de cliente y servidor compatibles con AEM
 >
 >* Para obtener una lista completa de las excepciones a las plataformas de servidor admitidas, consulte [Excepciones a plataformas de servidor compatibles](#exceptions-to-supported-server-platforms).
 >* AEM Forms en JEE solo admite versiones en inglés, francés, alemán y japonés de los sistemas operativos y aplicaciones compatibles.
-
 >
 
 
@@ -42,7 +41,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 <table> 
  <tbody> 
   <tr> 
-   <th>Nivel de asistencia</th> 
+   <th>Nivel de soporte</th> 
    <th>Descripción</th> 
   </tr> 
   <tr> 
@@ -62,7 +61,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 
 ### Configuraciones no admitidas {#unsupported-configurations}
 
-| Nivel de asistencia | Descripción |
+| Nivel de soporte | Descripción |
 |---|---|
 | E: Se espera que funcione | Se espera que la configuración funcione y no hay informes que indiquen lo contrario. |
 | Z: No admitido | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
@@ -75,7 +74,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
  <tbody> 
   <tr> 
    <th><p><strong>Plataforma</strong></p> </th> 
-   <th><p><strong>Nivel de asistencia</strong></p> </th> 
+   <th><p><strong>Nivel de soporte</strong></p> </th> 
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th> 
   </tr> 
   <tr> 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 >
 >* AEM Forms en JEE solo admite JVM de 64 bits en entornos de producción.
 >* Se recomienda realizar un seguimiento de los boletines de seguridad del proveedor de Java para garantizar la seguridad de los entornos de producción e instalar las últimas actualizaciones de Java.
-
 >
 
 
@@ -108,32 +106,32 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   <tr> 
    <td><p><strong>Plataforma</strong></p> </td> 
    <td><p><strong> Descripción</strong></p> </td> 
-   <td><p><strong>Nivel de asistencia</strong></p> </td> 
+   <td><p><strong>Nivel de soporte</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Sistema de archivos</p> </td> 
    <td><p>Microkernel del repositorio (archivos TAR MK)</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
   <tr> 
    <td><p>MongoDB Enterprise 3.4</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
   <tr> 
    <td>IBM DB2 11.1</td> 
    <td>Repositorio Microkernel</td> 
-   <td>Compatible</td> 
+   <td>Compatibilidad</td> 
   </tr> 
   <tr> 
    <td><p>Versión 1 de la base de datos de oracle 12c</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -175,13 +173,13 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td><p>MySQL 5.7.19<br /> </p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
    <td><p>Se espera que funcione</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
    <td><p>Repositorio Microkernel</p> </td> 
    <td><p>Se espera que funcione</p> </td> 
-   <td><p>Compatible</p> </td> 
+   <td><p>Compatibilidad</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>Conector MySQL/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar(versión 5.1.30)</p> </td> 
+   <td><p>Conector MySQL/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(versión 5.1.44)</p> </td> 
    <td><p>Se suministra con AEM Forms en la instalación de JEE</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Controlador JDBC Microsoft® SQL Server 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Controlador JDBC Microsoft® SQL Server 6.2.1.0 (obsoleto) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Controlador JDBC Microsoft® SQL Server 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Descarga desde el sitio web de Microsoft.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -224,7 +227,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
  <tbody> 
   <tr> 
    <td><p><strong> Plataforma</strong></p> </td> 
-   <td><p><strong>Nivel de asistencia</strong></p> </td> 
+   <td><p><strong>Nivel de soporte</strong></p> </td> 
    <td><p><strong>Definiciones de parches compatibles</strong></p> </td> 
   </tr> 
   <tr> 
@@ -317,7 +320,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
  <tbody> 
   <tr> 
    <th><p><strong>Plataforma (versión base)</strong></p> </th> 
-   <th>Nivel de asistencia</th> 
+   <th>Nivel de soporte</th> 
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th> 
   </tr> 
   <tr> 
@@ -332,7 +335,6 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
 >
 >* AEM Forms en JEE solo admite sistemas operativos de 64 bits.
 >* El servicio Generador de PDF no es compatible con Windows 10.
-
 >
 
 
@@ -520,7 +522,6 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 >* El servicio HTML2PDF está obsoleto en AIX.
 >* Las características de PDF, Optimize PDF y Export PDF de OCR solo son compatibles con Windows.
 >* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ Para obtener más información, consulte:
 >[!NOTE]
 >
 >* Forms Portal solo es compatible con Safari en iPad.
-
 >
 
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '163'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,11 @@ Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF 
 | **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
 | **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
 | **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
-| **PDF** - Número máximo de páginas para un PDF a tener en cuenta para la extracción |  | 5000 (para nuevas cargas) | 100 |
 
+<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
+
+
 
 <!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
 

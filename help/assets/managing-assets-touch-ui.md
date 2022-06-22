@@ -2,11 +2,11 @@
 title: Administrar los recursos digitales mediante [!DNL Experience Manager] Recursos
 description: Obtenga información sobre las diversas tareas de edición y administración de recursos que puede realizar mediante la interfaz de usuario táctil optimizada de [!DNL Experience Manager] Recursos
 contentOwner: AG
-mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
+mini-toc-levels: 3
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 7c786e1326c8c65f00d799fed3207e4f0da04fa7
 workflow-type: tm+mt
 source-wordcount: '10139'
 ht-degree: 3%

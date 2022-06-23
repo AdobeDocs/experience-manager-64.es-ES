@@ -12,9 +12,9 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2146'
 ht-degree: 11%
 
 ---
@@ -39,10 +39,10 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 
 Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
 
-| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
-| --- | --- | --- | --- |
-| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
-| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
+| --- | --- | --- |
+| Número de activos duplicados por conjunto | Sin duplicados | 20 |
+| Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
@@ -140,10 +140,10 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 
 Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
 
-| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
-| --- | --- | --- | --- |
-| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
-| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
+| --- | --- | --- |
+| Número de activos duplicados por conjunto | Sin duplicados | 20 |
+| Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 

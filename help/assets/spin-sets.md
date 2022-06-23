@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTR
 
 Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 
@@ -117,7 +117,7 @@ Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de or
 
 Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 

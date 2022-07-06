@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: 0da4d864af8982b7faced50035f6bed376d8cd01
+source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 0%
@@ -124,7 +124,7 @@ El paso Documento de registro tiene las siguientes propiedades:
 
 **Ruta de datos de entrada:** Ruta de los datos de entrada para el formulario adaptable. Puede mantener los datos en una ubicación relativa a la carga útil o especificar una ruta absoluta de los datos. Los datos de entrada se combinan con el formulario adaptable para crear un documento de registro.
 
-**Ruta de acceso de datos adjuntos de entrada:** Ruta de datos adjuntos de entrada: Ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el Documento de registro. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil o especificar una ruta absoluta de los archivos adjuntos.
+**Ruta de datos adjuntos de entrada:** Ruta de datos adjuntos de entrada: Ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el Documento de registro. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil o especificar una ruta absoluta de los archivos adjuntos.
 
 Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntan al documento de registro. Si hay archivos disponibles en las carpetas disponibles directamente en la ruta de datos de los archivos adjuntos especificada, los archivos se incluyen en el documento de registro como archivos adjuntos. Si hay carpetas en carpetas disponibles directamente, se omiten.
 

@@ -9,8 +9,8 @@ feature: Communities
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 12%
    + [Creación de un nuevo sitio de la comunidad para su habilitación](enablement-create-site.md)
    + [Crear y asignar recursos de habilitación](resource.md)
    + [Experiencia del sitio de habilitación publicado](enablement-published-site.md)
-+ Implementación de {#deploy}
++ Implementación {#deploy}
    + [Implementación de comunidades](deploy-communities.md)
    + [Actualización a la versión 6.4 de Comunidades de AEM](upgrade.md)
    + [Topologías recomendadas para comunidades](topologies.md)

@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de AEM 6.4
 breadcrumb-title: Guía de creación
 user-guide-description: Aprenda conceptos clave para crear contenido en AEM.
-feature: 'Creación  '
+feature: Authoring
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 88%
 # Guía del usuario de creación de AEM 6.4 {#authoring}
 
 + [Información general sobre la Guía del usuario sobre creación](home.md)
-+ Tareas, herramientas y conceptos esenciales para AEM creación {#essentials}
++ Tareas, herramientas y conceptos esenciales para la creación AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
    + [Gestión básica](basic-handling.md)
-   + [Búsqueda  ](search.md)
+   + [Búsqueda](search.md)
    + [Configuración del entorno de cuenta](user-properties.md)
-   + [Su bandeja de entrada  ](inbox.md)
-   + [Métodos abreviados del teclado para las consolas  ](keyboard-shortcuts.md)
+   + [Su bandeja de entrada](inbox.md)
+   + [Métodos abreviados de teclado para consolas](keyboard-shortcuts.md)
    + [Seleccionar la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)
@@ -39,20 +39,20 @@ ht-degree: 88%
    + [Publicar páginas](publishing-pages.md)
    + [Creación de páginas con fragmentos de contenido](content-fragments.md)
    + [Fragmentos de experiencias](experience-fragments.md)
-   + [Exportar a CSV  ](csv-export.md)
+   + [Exportar a CSV](csv-export.md)
    + [Componentes](default-components.md)
    + [Crear una página para dispositivos móviles](mobile.md)
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
    + [Prácticas recomendadas  ](best-practices.md)
 + Funciones de sitio y de página {#siteandpage}
-   + [Uso de etiquetas  ](tags.md)
+   + [Uso de etiquetas](tags.md)
    + [Creación de plantillas de página  ](templates.md)
    + [Sistema de estilos](style-system.md)
    + [Uso de versiones de página  ](working-with-page-versions.md)
-   + [Diferencias de página  ](page-diff.md)
+   + [Diferencias de página](page-diff.md)
    + [La consola Componentes](default-components-console.md)
-   + [Diseño adaptable ](responsive-layout.md)
+   + [Diseño adaptable](responsive-layout.md)
    + [Perspectiva de contenido](content-insights.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](creating-accessible-content.md)
    + [Scaffolding](scaffolding.md)
@@ -74,7 +74,7 @@ ht-degree: 88%
    + [Aplicación de flujos de trabajo a páginas](workflows-applying.md)
    + [Participación en flujos de trabajo](workflows-participating.md)
    + [Uso de flujos de trabajo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
-+ Rendimiento de página {#page-performance}
++ Rendimiento de la página {#page-performance}
    + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analizar el rendimiento de la página](ci-analyze.md)
    + [Visualización de datos de análisis de la página](pa-using.md)

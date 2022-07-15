@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guía del usuario de administración de AEM 6.4
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
-feature: Administración
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,25 +19,25 @@ ht-degree: 20%
 # Guía del usuario de administración de AEM 6.4 {#administering}
 
 + [Información general sobre la guía del usuario de administración](home.md)
-+ Funciones de sitios {#introduction}
++ Características de Sites {#introduction}
    + [Administración de sitios web ](msm-and-translation.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
-   + [Consola de información general de Live Copy](msm-livecopy-overview.md)
+   + [Información general de Live Copy](msm-livecopy-overview.md)
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
-   + [Conflictos de implementación de MSM](msm-rollout-conflicts.md)
+   + [Conflictos de despliegue de MSM](msm-rollout-conflicts.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
    + [Traducción de contenido para sitios multilingües](translation.md)
    + [Administración de proyectos de traducción](tc-manage.md)
-   + [Identificación del contenido para traducir](tc-rules.md)
+   + [Identificación del contenido a traducir](tc-rules.md)
    + [Preparación del contenido para su traducción](tc-prep.md)
    + [Creación de una raíz de idioma mediante la IU clásica](tc-lroot-classic.md)
-   + [Conexión a Microsoft Translator](tc-msconf.md)
-   + [Configuración del marco de integración de traducción](tc-tic.md)
+   + [Volver a conectar con Microsoft Translator](tc-msconf.md)
+   + [Configuración del marco de trabajo de integración de traducción](tc-tic.md)
    + [Asistente para copia de idioma](tc-wizard.md)
    + [Mejoras en la traducción](tc-enhancements.md)
    + [Prácticas recomendadas de traducción](tc-bp.md)
-   + [Configuraciones y el navegador de configuración](configurations.md)
+   + [Configuraciones y el explorador de configuración](configurations.md)
    + [Preguntas más frecuentes sobre AEM](aem-faqs.md)
 + Operaciones {#operations}
    + [Tableros](dashboards.md)
@@ -82,7 +82,7 @@ ht-degree: 20%
    + [Mitigación de problemas de serialización en AEM](mitigating-serialization-issues.md)
    + [Sincronización de usuarios](sync.md)
    + [Compatibilidad con tokens encapsulados](encapsulated-token.md)
-   + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
+   + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html?lang=es)
    + [Cómo auditar las operaciones de administración de usuarios en AEM](audit-user-management-operations.md)
    + [SSL de forma predeterminada](ssl-by-default.md)
    + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -119,7 +119,7 @@ ht-degree: 20%
    + [Integración con Livefyre](livefyre.md)
    + [Integración con Adobe Analytics](adobeanalytics.md)
    + [Conexión a Adobe Analytics y creación de módulos](adobeanalytics-connect.md)
-   + [Configuración del seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
+   + [Configuración de Seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
    + [Asignación de datos de componente con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](scene7-http2faq.md)

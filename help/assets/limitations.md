@@ -1,16 +1,17 @@
 ---
 title: Limitaciones de Dynamic Media
-description: 'Obtenga información sobre las prácticas recomendadas y los límites aplicados al crear un conjunto de imágenes o un conjunto de giros, o al cargar un PDF. Obtenga información también sobre las combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media. '
+description: Obtenga información sobre las prácticas recomendadas y los límites aplicados al crear un conjunto de imágenes o un conjunto de giros, o al cargar un PDF. Obtenga información también sobre las combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
+source-git-commit: efe93bcf60e0b71fded10ccb77da38c789e08ef9
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -20,11 +21,10 @@ En las secciones siguientes se describen las limitaciones de Dynamic Media.
 
 Este tema incluye las siguientes secciones:
 
-* Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos
+* [Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos](#best-practice-enforced-limits)
+* [Combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos
+## Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos {#best-practice-enforced-limits}
 
 Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF para la extracción de páginas, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
 
@@ -36,21 +36,18 @@ Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF 
 | **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 | No aplicable |
 | **PDF** - Número máximo de páginas para un PDF a tener en cuenta para la extracción |  | 5000 (para nuevas cargas) | 100 (para todos los PDF) |
 
-<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
+## Combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media {#unsupported-browser-os}
 
-
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
-
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Los visores de Dynamic Media no admiten las siguientes combinaciones de navegador web y sistema operativo.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
+* Actualización de Internet Explorer 11 + Windows Phone 8.1
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
+* Safari 7 + OS X 10.9 Mavericks
 * Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Safari 8 + OS X 10.10 Yosemite

@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
+source-wordcount: '5619'
 ht-degree: 3%
 
 ---
@@ -93,8 +93,8 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 
       >[!IMPORTANT]
       >
-      >Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Varias configuraciones de Dynamic Media en una instancia de Experience Manager son _not_ compatible o recomendado por Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
+      >Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Varias configuraciones de Dynamic Media en una instancia de Experience Manager son *not* compatible o recomendado por Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Ruta de la carpeta raíz de la compañía]** : la ruta de la carpeta raíz de su empresa.
    * **[!UICONTROL Publicación de recursos]** - la opción **[!UICONTROL Inmediatamente]** significa que, cuando se cargan los recursos, el sistema los incorpora y proporciona la URL o la Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos. La opción **[!UICONTROL Tras la activación]** significa que debe publicar explícitamente el recurso primero antes de proporcionar un vínculo de URL/incrustación.
    * **[!UICONTROL Servidor de vista previa seguro]** - permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se devuelven binarios a la instancia de Experience Manager).
 

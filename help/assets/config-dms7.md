@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
 workflow-type: tm+mt
-source-wordcount: '5589'
+source-wordcount: '5614'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ Si utiliza la configuración de Adobe Experience Manager para diferentes entorno
 
 En el diagrama de arquitectura siguiente se describe cómo funciona el modo Dynamic Media - Scene7.
 
-Con la nueva arquitectura, Experience Manager es responsable de los recursos maestros y de las sincronizaciones con Dynamic Media para el procesamiento y la publicación de recursos:
+Con la nueva arquitectura, Experience Manager es responsable de los recursos principales y realiza sincronizaciones con Dynamic Media para el procesamiento y la publicación de recursos:
 
-1. Cuando el recurso maestro se carga en Experience Manager, se duplica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
+1. Cuando el recurso principal se carga en Experience Manager, se duplica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
 1. Una vez generadas las representaciones, el Experience Manager puede acceder de forma segura a las representaciones de Dynamic Media remotas y obtener una vista previa de ellas (no se devuelven binarios a la instancia de Experience Manager).
 1. Una vez que el contenido está listo para publicarse y aprobarse, se déclencheur al servicio Dynamic Media para enviar el contenido a los servidores de entrega y almacenar el contenido en caché en la CDN.
 
@@ -33,13 +33,13 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos mae
 
 ## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
+[Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe activarlas.
 
 >[!WARNING]
 >
->Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, configure `runmode=dynamicmedia_scene7`en la instancia Autor del Experience Manager, *no* en la instancia Publicación del Experience Manager.
+>Dynamic Media: el modo Scene7 es para la variable *Solo instancia de autor Experience Manager*. Como tal, configure `runmode=dynamicmedia_scene7`en la instancia de autor del Experience Manager, *not* la instancia de publicación de Experience Manager.
 
-Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el modo de ejecución `dynamicmedia_scene7` desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
+Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando la variable `dynamicmedia_scene7` ejecute el modo desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -47,13 +47,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.4 Cero tiempo de inactividad {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Si actualiza el Experience Manager Dynamic Media de 6.3 a 6.4 (que incluye la capacidad de cero implementaciones de tiempo de inactividad), ejecute el siguiente comando curl para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en CRXDE Lite.
+Si actualiza el Experience Manager Dynamic Media de 6.3 a 6.4 (lo que incluye la posibilidad de cero implementaciones de tiempo de inactividad), ejecute el siguiente comando curl para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en CRXDE Lite.
 
 >[!NOTE]
 >
 >Si ejecuta la instancia de Experience Manager en modo de compatibilidad (es decir, tiene instalada la compatibilidad empaquetada), no es necesario ejecutar estos comandos.
 
-Para migrar los ajustes preestablecidos y configuraciones personalizados de `/etc` a `/conf`, ejecute el siguiente comando curl de Linux®:
+Para migrar los ajustes preestablecidos y configuraciones personalizados desde `/etc` a `/conf`, ejecute el siguiente comando curl de Linux®:
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -69,7 +69,7 @@ Consulte [Instalación del paquete de características 18912 para la migración 
 
 ## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
-Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) en la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
+Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. Después de recibir el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, debe [iniciar sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) a la aplicación de escritorio de Dynamic Media Classic para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
 >[!NOTE]
 >
@@ -77,22 +77,26 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 
 **Para configurar los Cloud Services de Dynamic Media:**
 
-1. En la instancia de Autor del Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
-1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** y pulse **[!UICONTROL Crear]**. No toque ni seleccione el icono de carpeta a la izquierda de [!UICONTROL global].
-1. En la página [!UICONTROL Crear configuración de Dynamic Media], introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de atención al cliente de Adobe si no recibió el correo electrónico.
+1. En la instancia de autor del Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global, pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de Dynamic Media]**.
+1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** y toque **[!UICONTROL Crear]**. No toque ni seleccione el icono de carpeta a la izquierda de [!UICONTROL global].
+1. En el [!UICONTROL Crear configuración de Dynamic Media] , introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña. Seleccione la región. Esta información se le suministra por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de atención al cliente de Adobe si no recibió el correo electrónico.
 
    Toque **[!UICONTROL Conectarse a Dynamic Media]**.
 
    >[!NOTE]
    >
-   >Cuando reciba el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y, a continuación, inicie sesión en la cuenta de su empresa para cambiar la contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
+   >Cuando reciba el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta de empresa para cambiar su contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
 1. Si la conexión se realiza correctamente, también puede establecer lo siguiente:
 
-   * **[!UICONTROL Empresa]** : nombre de la cuenta de Dynamic Media. Es posible tener varias cuentas de Dynamic Media para diferentes submarcas, divisiones o entornos de ensayo y producción diferentes.
+   * **[!UICONTROL Empresa]** - el nombre de la cuenta de Dynamic Media.
+
+      >[!IMPORTANT]
+      >
+      >Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Varias configuraciones de Dynamic Media en una instancia de Experience Manager son _not_ compatible o recomendado por Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
    * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
-   * **[!UICONTROL Publicación de recursos]** : la opción  **** Inmediatamente significa que, cuando se cargan los recursos, el sistema los incorpora y proporciona la URL o la Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos. La opción **[!UICONTROL Al activar]** significa que debe publicar el recurso explícitamente primero antes de proporcionar un vínculo URL/incrustado.
-   * **[!UICONTROL Servidor de vista previa segura]** : permite especificar la ruta de URL de su servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se devuelven binarios a la instancia de Experience Manager).
+   * **[!UICONTROL Publicación de recursos]** - la opción **[!UICONTROL Inmediatamente]** significa que, cuando se cargan los recursos, el sistema los incorpora y proporciona la URL o la Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos. La opción **[!UICONTROL Tras la activación]** significa que debe publicar explícitamente el recurso primero antes de proporcionar un vínculo de URL/incrustación.
+   * **[!UICONTROL Servidor de vista previa seguro]** - permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se devuelven binarios a la instancia de Experience Manager).
 
       A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que utilice la configuración predeterminada.
    >[!NOTE]
@@ -106,7 +110,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 1. Toque **[!UICONTROL Guardar]**.
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor de Experience Manager para conectarse a Dynamic Media:
 
-   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   * Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación cerca de la parte superior derecha de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
    * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, pulse **[!UICONTROL Agregar]**.
@@ -115,7 +119,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
 
 Ya ha finalizado con la configuración básica; está listo para usar el modo Dynamic Media - Scene7 .
 
-Si desea personalizar aún más la configuración, puede completar opcionalmente cualquiera de las tareas en [(Opcional) Configuración avanzada en Dynamic Media - Modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Si desea personalizar aún más la configuración, puede completar opcionalmente cualquiera de las tareas de [(Opcional) Configuración avanzada en Dynamic Media: modo Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ## (Opcional) Configuración avanzada en Dynamic Media: modo Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -128,9 +132,9 @@ Si desea personalizar aún más la configuración y la configuración del modo D
 
 ### (Opcional) Configuración de Dynamic Media: configuración del modo Scene7</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-Cuando se encuentra en el modo de ejecución **dynamic_media_scene7**, utiliza la interfaz de usuario de Dynamic Media Classic para cambiar la configuración de Dynamic Media.
+Cuando esté en **dynamic_media_scene7** ejecute el modo , utilice la interfaz de usuario de Dynamic Media Classic para cambiar la configuración de Dynamic Media.
 
-Algunas de las tareas anteriores requieren que abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
+Algunas de las tareas anteriores requieren que abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta.
 
 Las tareas de configuración son:
 
@@ -145,36 +149,36 @@ Las tareas de configuración son:
 
 La configuración de Configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Dynamic Media envía un recurso de acuerdo con la configuración predeterminada definida en Configuración de publicación. Por ejemplo, una solicitud para enviar una imagen que no incluya un atributo de resolución genera una imagen con la configuración Resolución de objeto predeterminada .
 
-Para configurar la configuración de publicación: en Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
+Para configurar la configuración de publicación: en Dynamic Media Classic, toque **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
 
 La pantalla Servidor de imágenes establece la configuración predeterminada para la entrega de imágenes. Consulte la interfaz de usuario para ver una descripción de cada configuración.
 
-* **[!UICONTROL Atributos de solicitud]** : esta configuración impone límites a las imágenes que se pueden enviar desde el servidor.
-* **[!UICONTROL Atributos de solicitud predeterminados]** : esta configuración está relacionada con el aspecto predeterminado de las imágenes.
-* **[!UICONTROL Atributos de miniatura comunes]** : esta configuración se relaciona con el aspecto predeterminado de las imágenes en miniatura.
-* **[!UICONTROL Predeterminados para los campos del catálogo]** : estos ajustes pertenecen a la resolución y al tipo de miniatura predeterminado de las imágenes.
-* **[!UICONTROL Atributos de administración de color]** : esta configuración determina qué perfiles de color ICC se utilizan.
-* **[!UICONTROL Atributos de compatibilidad]** : esta configuración permite que los párrafos iniciales y finales de las capas de texto se traten como en la versión 3.6 para la compatibilidad con versiones anteriores.
-* **[!UICONTROL Compatibilidad con la localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de la compatibilidad con la localización, consulte [Consideraciones importantes al implementar la compatibilidad con la localización](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server).
+* **[!UICONTROL Atributos de solicitud]** : Esta configuración impone límites a las imágenes que se pueden enviar desde el servidor.
+* **[!UICONTROL Atributos de solicitud predeterminados]** - Estos ajustes pertenecen al aspecto predeterminado de las imágenes.
+* **[!UICONTROL Atributos de miniatura comunes]** - Estos ajustes pertenecen al aspecto predeterminado de las imágenes en miniatura.
+* **[!UICONTROL Valores predeterminados de los campos del catálogo]** : Esta configuración pertenece a la resolución y al tipo de miniatura predeterminado de las imágenes.
+* **[!UICONTROL Atributos de gestión de color]** - Esta configuración determina qué perfiles de color ICC se utilizan.
+* **[!UICONTROL Atributos de compatibilidad]** - Este ajuste permite que los párrafos iniciales y finales de las capas de texto se traten como lo eran en la versión 3.6 para la compatibilidad con versiones anteriores.
+* **[!UICONTROL Compatibilidad con localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de la compatibilidad con la localización, consulte [Consideraciones importantes al implementar la compatibilidad con la localización](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server).
 
 #### Configuración general de la aplicación {#configuring-application-general-settings}
 
-Para abrir la página [!UICONTROL Configuración general de la aplicación], en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+Para abrir el [!UICONTROL Configuración general de la aplicación] página, en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
-**[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga el servicio de asistencia al Experience Manager.
+**[!UICONTROL Servidores]** : Al aprovisionar cuentas, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga el servicio de asistencia al Experience Manager.
 
-**[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la carpeta original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
+**[!UICONTROL Sobrescribir imágenes]** - Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la carpeta original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
 
-* **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]** : esta opción es la regla más estricta para reemplazar. Requiere que cargue la imagen de reemplazo en la misma carpeta que el original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que el original. Si no se cumplen estos requisitos, se crea un duplicado.
+* **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]** - Esta opción es la regla más estricta para la sustitución. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado.
 
 >[!NOTE]
 >
->Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de la imagen base]**.
+>Para mantener la coherencia con el Experience Manager, seleccione **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]**.
 
-* **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre/extensión de recurso base]** : requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo,  `chair.jpg` reemplace  `chair.jpg` y no  `chair.tif`). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
-* **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** : esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
+* **[!UICONTROL Sobrescribir en cualquier carpeta, con el mismo nombre/extensión de recurso base]** - Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, `chair.jpg` reemplaza a `chair.jpg` y no `chair.tif`). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
+* **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** - Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
 
-**[!UICONTROL Perfiles de color predeterminados]** : consulte  [Configuración de la ](#configuring-color-management) administración de color para obtener más información.
+**[!UICONTROL Perfiles de color predeterminados]** - Consulte [Configuración de la gestión del color](#configuring-color-management) para obtener más información.
 
 >[!NOTE]
 >
@@ -186,16 +190,16 @@ La administración de color de Dynamic Media le permite colorear los recursos co
 
 **Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en la cuenta con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]**.
+1. Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)y, a continuación, inicie sesión en la cuenta con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]**.
 1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
-1. Desplácese hasta la propiedad que debe cambiar. Por ejemplo, una propiedad en el área **[!UICONTROL Atributos de administración de color]**.
+1. Desplácese hasta la propiedad que debe cambiar. Por ejemplo, una propiedad de **[!UICONTROL Atributos de gestión de color]** .
 
    Puede establecer las siguientes propiedades de corrección de color:
 
-   * [!UICONTROL Espacio de color predeterminado CMYK] : nombre del perfil de color CMYK predeterminado
-   * [!UICONTROL Espacio de color predeterminado de escala de grises] : nombre del perfil de color gris predeterminado
-   * [!UICONTROL Espacio de color predeterminado del RGB] : nombre del perfil de color del RGB predeterminado
-   * [!UICONTROL Interpretación de la conversión de color] : especifica la interpretación. Los valores aceptables son `perceptual`, `relative` `colometric`, `saturation` y `absolute colometric`. Adobe recomienda `relative` como opción predeterminada.
+   * [!UICONTROL Espacio de color predeterminado CMYK] - Nombre del perfil de color CMYK predeterminado
+   * [!UICONTROL Espacio de color predeterminado de escala de grises] - Nombre del perfil de color gris predeterminado
+   * [!UICONTROL Espacio de color predeterminado del RGB] - Nombre del perfil de color del RGB predeterminado
+   * [!UICONTROL Interpretación de la conversión de color] - Especifica la interpretación. Los valores aceptables son `perceptual`, `relative` `colometric`, `saturation`y `absolute colometric`. Recomendaciones de Adobe `relative` como predeterminado.
 
 1. Toque **[!UICONTROL Guardar]**.
 
@@ -204,10 +208,10 @@ Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado R
 Al hacerlo, se haría lo siguiente:
 
 * Habilita la corrección de color para imágenes RGB y CMYK.
-* Se supone que las imágenes de RGB que no tienen un perfil de color están en el espacio de color `sRGB` .
+* Se supone que las imágenes de RGB que no tienen un perfil de color están en la variable `sRGB` espacio de color.
 * Se supone que las imágenes CMYK que no tienen un perfil de color están en `WebCoated` espacio de color.
-* Representaciones dinámicas que devuelven la salida del RGB, la devuelven en el espacio de color `sRGB`.
-* Representaciones dinámicas que devuelven la salida CMYK, la devuelven en el espacio de color `WebCoated`.
+* Representaciones dinámicas que devuelven la salida del RGB, que la devuelve en la variable `sRGB` espacio de color.
+* Representaciones dinámicas que devuelven la salida CMYK, la devuelven en la variable `WebCoated` espacio de color.
 
 #### Edición de tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
 
@@ -216,24 +220,24 @@ Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los pa
 * Convierta una Adobe PDF en un recurso de catálogo electrónico.
 * Convierta un documento de Adobe Photoshop (.PSD) en un recurso de plantilla de banner para su personalización.
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® Encapsulado de Adobe Photoshop (.EPS).
-* [Los ](/help/assets/video-profiles.md) perfiles de vídeo y los perfiles de  [imágenes ](/help/assets/image-profiles.md) se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
+* [Perfiles de vídeo](/help/assets/video-profiles.md) y [Perfiles de imagen](/help/assets/image-profiles.md) se puede utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
 **Para editar tipos de mime para formatos compatibles:**
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse el botón **[!UICONTROL Herramientas]** (martillo) y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
    ![mimetypes](assets/mimetypes.png)
 
-1. En la carpeta `mimeTypes`, seleccione un tipo de mime.
+1. En el `mimeTypes` carpeta, seleccione un tipo de mime.
 1. En el lado derecho de la página CRXDE Lite, en la parte inferior:
 
-   * haga doble clic en el campo **[!UICONTROL enabled]** . De forma predeterminada, todos los tipos de MIME de recursos están habilitados (configurados en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir este tipo de MIME de recurso para que no se procese, cambie esta configuración a **[!UICONTROL false]**.
-   * haga doble clic en **[!UICONTROL jobParam]** para abrir su campo de texto asociado. Consulte [Tipos de MIME admitidos](assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
+   * haga doble clic en el botón **[!UICONTROL enabled]** campo . De forma predeterminada, todos los tipos de MIME de recursos están habilitados (se establece en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo de MIME de recurso, cambie esta configuración a **[!UICONTROL false]**.
+   * doble clic **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos Mime Admitidos](assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
 1. Realice una de las acciones siguientes:
 
@@ -244,7 +248,7 @@ Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
 #### Adición de tipos MIME personalizados para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
 
-Puede añadir tipos MIME personalizados para formatos no compatibles en Experience Manager Assets. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de **[!UICONTROL image_]** y su valor habilitado se establezca en **[!UICONTROL false]**.
+Puede añadir tipos MIME personalizados para formatos no compatibles en Experience Manager Assets. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de **[!UICONTROL image_]** y su valor habilitado está establecido en **[!UICONTROL false]**.
 
 **Para agregar tipos MIME personalizados para formatos no compatibles:**
 
@@ -252,21 +256,21 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
    ![Consola web](assets/2019-08-02_16-13-14.png)
 
-1. Se abre una nueva pestaña del explorador en la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**.
+1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
 
    ![Configuración de la consola web del Experience Manager](assets/2019-08-02_16-17-29.png)
 
-1. En la página, desplácese hacia abajo hasta el nombre **[!UICONTROL Adobe CQ Scene7 Asset MIME tipo Service]**. A la derecha del nombre, pulse **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
+1. En la página, desplácese hacia abajo hasta el nombre **[!UICONTROL Servicio de tipo MIME de Adobe CQ Scene7 Asset]**. A la derecha del nombre, pulse **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
 
    ![Editar los valores de configuración](assets/2019-08-02_16-44-56.png)
 
-1. En la página **[!UICONTROL Adobe CQ Scene7 Asset MIME type Service]**, haga clic en cualquier icono de signo `+`. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de mime es trivial.
+1. En el **[!UICONTROL Servicio de tipo MIME de Adobe CQ Scene7 Asset]** página, haga clic en el icono de signo más `+`. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de mime es trivial.
 
    ![Icono de signo más](assets/2019-08-02_16-27-27.png)
 
-1. Escriba `DWG=image/vnd.dwg` en el campo de texto vacío que acaba de agregar.
+1. Tipo `DWG=image/vnd.dwg` en el campo de texto vacío que acaba de añadir.
 
-   El ejemplo `DWG=image/vnd.dwg` solo tiene fines de demostración. El tipo MIME que agregue aquí puede ser cualquier otro formato no admitido.
+   El ejemplo `DWG=image/vnd.dwg` es solo con fines de demostración. El tipo MIME que agregue aquí puede ser cualquier otro formato no admitido.
 
    ![Ejemplo de adición de tipo mime](assets/2019-08-02_16-36-36.png)
 
@@ -284,13 +288,13 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. Arrastre el tipo de MIME `image_vnd.dwg` y suéltelo directamente sobre `image_` en el árbol.
+1. Arrastre el tipo mime `image_vnd.dwg` y suéltelo directamente encima `image_` en el árbol.
 
    ![Arrastrar tipo mime](assets/CRXDELite_CQDOC-14627.png)
 
-1. Con el tipo de MIME `image_vnd.dwg` aún seleccionado en el árbol, en la pestaña **[!UICONTROL Properties]**, en la fila **[!UICONTROL enabled]**, en el encabezado de columna **[!UICONTROL Value]**, haga doble clic en el valor para abrir la lista desplegable **[!UICONTROL Value]**.
+1. Con el tipo mime `image_vnd.dwg` aún seleccionado en el árbol, en la **[!UICONTROL Propiedades]** en la **[!UICONTROL enabled]** dentro de **[!UICONTROL Valor]** , haga doble clic en el valor para abrir **[!UICONTROL Valor]** lista desplegable.
 
-1. Escriba `false` en el campo (o seleccione `false` en la lista desplegable).
+1. Tipo `false` en el campo (o seleccione `false` en la lista desplegable).
 
    ![Valor falso](assets/2019-08-02_16_60_30.png)
 
@@ -310,30 +314,30 @@ Cree una convención de nombres predeterminada que se utilice en cualquier fórm
 
 Aunque no es necesario configurar una convención de nombres predeterminada para utilizar la funcionalidad preestablecida de conjuntos de lotes, puede utilizarla para definir tantos elementos de la convención de nombres que desee agrupar en un conjunto. Esto ayuda a agilizar la creación de conjuntos de lotes.
 
-Como alternativa, puede utilizar **[!UICONTROL View Code]** sin campos de formulario disponibles. En esta vista, se crean las definiciones de convención de nombres utilizando expresiones regulares.
+Como alternativa, puede usar **[!UICONTROL Ver código]** sin campos de formulario disponibles. En esta vista, se crean las definiciones de convención de nombres utilizando expresiones regulares.
 
-Hay dos elementos disponibles para su definición, **[!UICONTROL Match]** y **[!UICONTROL Base Name]**. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una empresa puede utilizar una o más líneas de definición para cada uno de estos elementos. Utilice tantas líneas para su definición única y agrúpelas en elementos distintos. Por ejemplo, imagen principal, elemento de color, elemento de vista alternativa y elemento de muestra.
+Hay dos elementos disponibles para su definición, **[!UICONTROL Coincidencia]** y **[!UICONTROL Nombre base]**. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una empresa puede utilizar una o más líneas de definición para cada uno de estos elementos. Utilice tantas líneas para su definición única y agrúpelas en elementos distintos. Por ejemplo, imagen principal, elemento de color, elemento de vista alternativa y elemento de muestra.
 
 **Para configurar la nomenclatura predeterminada:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
+1. Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Nombres predeterminados]**.
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Nombre predeterminado]**.
 1. Seleccione **[!UICONTROL Ver formulario]** o **[!UICONTROL Ver código]** para especificar cómo desea ver e introducir información sobre cada elemento.
 
-   Puede seleccionar la casilla de verificación **[!UICONTROL Ver código]** para ver la generación del valor de expresión regular junto con las selecciones de formulario. Puede introducir o modificar estos valores para ayudar a definir los elementos de la convención de nomenclatura, si la vista del formulario lo limita por cualquier motivo. Si los valores no se pueden analizar en la vista de formulario, los campos del formulario se desactivan.
+   Puede seleccionar el **[!UICONTROL Ver código]** para ver la generación del valor de expresión regular junto con las selecciones de formulario. Puede introducir o modificar estos valores para ayudar a definir los elementos de la convención de nomenclatura, si la vista del formulario lo limita por cualquier motivo. Si los valores no se pueden analizar en la vista de formulario, los campos del formulario se desactivan.
 
    >[!NOTE]
    >
-   >Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares son correctas. Los resultados de la expresión regular que está creando para cada elemento se muestran después de la línea de resultados. La expresión regular completa se puede ver en la parte inferior de la página.
+   >Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares son correctas. Verá los resultados de la expresión regular que está generando para cada elemento después de la línea Resultado. La expresión regular completa se puede ver en la parte inferior de la página.
 
 1. Expanda cada elemento según sea necesario e introduzca las convenciones de nomenclatura que desee utilizar.
 1. Si es necesario, realice una de las acciones siguientes:
 
    * Toque **[!UICONTROL Agregar]** para agregar otra convención de nombres para un elemento.
-   * Toque **[!UICONTROL Quitar]** para eliminar una convención de nombres para un elemento.
+   * Toque **[!UICONTROL Eliminar]** para eliminar una convención de nombres para un elemento.
 
 1. Realice una de las acciones siguientes:
 
@@ -346,42 +350,42 @@ Dynamic Media utiliza ajustes preestablecidos de conjuntos de lotes para organiz
 
 Puede crear, editar y administrar los ajustes preestablecidos de conjuntos de lotes. Existen dos formas de definiciones de ajustes preestablecidos de conjuntos de lotes: una para la convención de nombres predeterminada que configure y otra para las convenciones de nombres personalizadas que cree sobre la marcha.
 
-Se puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que permite utilizar expresiones regulares. Al igual que en Nombre predeterminado, puede elegir [!UICONTROL Ver código] al mismo tiempo que define en la [!UICONTROL Vista de formulario] y utilizar expresiones regulares para crear sus definiciones. Como alternativa, puede desmarcar cualquiera de las vistas para utilizar una o las otras exclusivamente.
+Se puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que permite utilizar expresiones regulares. Como en Nombre predeterminado, puede elegir [!UICONTROL Ver código] al mismo tiempo que define en la variable [!UICONTROL Vista de formulario] y usar expresiones regulares para crear sus definiciones. Como alternativa, puede desmarcar cualquiera de las vistas para utilizar una o las otras exclusivamente.
 
 **Para crear un ajuste preestablecido de conjunto de lotes:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
+1. Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]**.
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Ajuste preestablecido de conjunto de lotes]**.
 
-   [!UICONTROL Ver formulario], tal como se define en la esquina superior derecha de   Detalles, es la vista predeterminada.
+   [!UICONTROL Ver formulario], tal y como se establece en la esquina superior derecha de la variable [!UICONTROL Detalles] , es la vista predeterminada.
 
-1. En el panel Lista de ajustes preestablecidos, pulse **[!UICONTROL Agregar]** para activar los campos de definición en el panel **[!UICONTROL Detalles]** situado en el lado derecho de la pantalla.
-1. En el panel **[!UICONTROL Details]**, en el campo **[!UICONTROL Preset Name]**, escriba un nombre para el ajuste preestablecido.
-1. En el menú desplegable **[!UICONTROL Tipo de conjunto de lotes]**, seleccione un tipo de ajuste preestablecido.
+1. En el panel Lista de ajustes preestablecidos, pulse **[!UICONTROL Agregar]** para activar los campos de definición en la variable **[!UICONTROL Detalles]** en el lado derecho de la pantalla.
+1. En el **[!UICONTROL Detalles]** , en el **[!UICONTROL Nombre de ajuste preestablecido]** , escriba un nombre para el ajuste preestablecido.
+1. En el **[!UICONTROL Tipo de conjunto de lotes]** menú desplegable, seleccione un tipo de ajuste preestablecido.
 1. Realice una de las acciones siguientes:
 
-   * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Nombres predeterminados]**, expanda **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse &lt;a1 0/>Predeterminado ]**.**[!UICONTROL 
-   * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, **[!UICONTROL Convenciones de nombres de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse **[!UICONTROL Personalizar]**.
+   * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Nombre predeterminado]**, expandir **[!UICONTROL Convenciones de nomenclatura de recursos]**, y luego en el **[!UICONTROL Asignación de nombres a archivos]** lista desplegable, toque **[!UICONTROL Predeterminado]**.
+   * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, **[!UICONTROL Convenciones de nomenclatura de recursos]**, y luego en el **[!UICONTROL Asignación de nombres a archivos]** lista desplegable, toque **[!UICONTROL Personalizado]**.
 
-1. Para [!UICONTROL Orden de secuencia], defina el orden en que se muestran las imágenes después de que el conjunto se agrupe en Dynamic Media.
+1. Para [!UICONTROL Orden de secuencia], defina el orden en que se muestran las imágenes después de agrupar el conjunto en Dynamic Media.
 
    De forma predeterminada, los recursos se ordenan alfanuméricamente. Sin embargo, puede utilizar una lista de expresiones regulares separadas por coma para definir el orden.
 
-1. Para **[!UICONTROL Set Naming]** y **[!UICONTROL Creation Convention]**, especifique el sufijo o el prefijo del nombre base definido en la **[!UICONTROL Asset Naming Convention]**. Además, defina dónde se creará el conjunto dentro de la estructura de carpetas de Dynamic Media.
+1. Para **[!UICONTROL Configurar el nombre]** y **[!UICONTROL Convenio de creación]**, especifique el sufijo o prefijo del nombre base definido en la variable **[!UICONTROL Convención de nomenclatura de recursos]**. Además, defina dónde se creará el conjunto dentro de la estructura de carpetas de Dynamic Media.
 
    Si define un gran número de conjuntos, manténgalos separados de las carpetas que contienen los propios recursos. Por ejemplo, cree una carpeta Conjuntos de imágenes y coloque los conjuntos generados aquí.
 
-1. En el panel **[!UICONTROL Detalles]**, pulse **[!UICONTROL Guardar]**.
+1. En el **[!UICONTROL Detalles]** panel, toque **[!UICONTROL Guardar]**.
 1. Toque **[!UICONTROL Activo]** junto al nuevo nombre del ajuste preestablecido.
 
    Al activar el ajuste preestablecido, se garantiza que, al cargar recursos en Dynamic Media, el ajuste preestablecido de conjunto de lotes se aplique para generar el conjunto.
 
 **Creación de un ajuste preestablecido de conjunto de lotes para la generación automática de un conjunto de giros 2D**
 
-Puede utilizar el tipo de conjunto de lotes **[!UICONTROL Conjunto de giros de varios ejes]** para crear una fórmula que automatice la generación de conjuntos de giros 2D. La agrupación de imágenes utiliza expresiones regulares de fila y columna para que los recursos de imagen se alineen correctamente en la ubicación correspondiente de la matriz multidimensional. No hay un número mínimo o máximo de filas o columnas que deba tener en un conjunto de giros de varios ejes.
+Puede utilizar el tipo de conjunto de lotes **[!UICONTROL Conjunto de giros de varios ejes]** para crear una fórmula que automatiza la generación de conjuntos de giros 2D. La agrupación de imágenes utiliza expresiones regulares de fila y columna para que los recursos de imagen se alineen correctamente en la ubicación correspondiente de la matriz multidimensional. No hay un número mínimo o máximo de filas o columnas que deba tener en un conjunto de giros de varios ejes.
 
 Por ejemplo, supongamos que desea crear un conjunto de giros de varios ejes denominado `spin-2dspin`. Tiene un conjunto de imágenes de conjuntos de giros que contienen tres filas, con 12 imágenes por fila. Las imágenes reciben el nombre siguiente:
 
@@ -395,36 +399,36 @@ spin-01-01
  spin-03-12
 ```
 
-Con esta información, la fórmula [!UICONTROL Tipo de conjunto de lotes] se puede crear de la siguiente manera:
+Con esta información, su [!UICONTROL Tipo de conjunto de lotes] la fórmula se puede crear de la siguiente manera:
 
 ![Chlimage_1-1](assets/chlimage_1-1.png)
 
-La agrupación de la parte del nombre de recurso compartido del conjunto de giros se agrega al campo **[!UICONTROL Coincidencia]** (como resaltado). La parte variable del nombre del recurso que contiene la fila y la columna se agrega a los campos **[!UICONTROL Fila]** y **[!UICONTROL Columna]**, respectivamente.
+La agrupación de la parte del nombre de recurso compartido del conjunto de giros se agrega al **[!UICONTROL Coincidencia]** (como resaltado). La parte variable del nombre del recurso que contiene la fila y la columna se agrega a los campos **[!UICONTROL Fila]** y **[!UICONTROL Columna]**, respectivamente.
 
-Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmula de conjunto de giros 2D que aparece en **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** en el cuadro de diálogo **[!UICONTROL Opciones de carga de trabajo]**.
+Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmula del conjunto de giros 2D que aparece en **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** en el **[!UICONTROL Cargar opciones de trabajo]** para abrir el Navegador.
 
 **Para crear un ajuste preestablecido de conjunto de lotes para la generación automática de un conjunto de giros 2D:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
+1. Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta.
 
    Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]** > **[!UICONTROL Ajustes preestablecidos de conjuntos de lotes]**.
+1. En la barra de navegación cerca de la parte superior de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Ajuste preestablecido de conjunto de lotes]**.
 
-   [!UICONTROL Ver formulario], tal como se define en la esquina superior derecha de   Detalles, es la vista predeterminada.
+   [!UICONTROL Ver formulario], tal y como se establece en la esquina superior derecha de la variable [!UICONTROL Detalles] , es la vista predeterminada.
 
-1. En el panel **[!UICONTROL Lista de ajustes preestablecidos]**, pulse **[!UICONTROL Agregar]** para activar los campos de definición en el panel **[!UICONTROL Detalles]** de la parte derecha de la pantalla.
-1. En el panel **[!UICONTROL Details]**, en el campo [!UICONTROL Preset Name], escriba un nombre para el ajuste preestablecido.
-1. En el menú desplegable **[!UICONTROL Tipo de conjunto de lotes]**, seleccione **[!UICONTROL Conjunto de recursos]**.
-1. En la lista desplegable **[!UICONTROL Sub Type]**, seleccione **[!UICONTROL Multi-Axis Spin Set]**.
-1. Expanda **[!UICONTROL Convenciones de nomenclatura de recursos]** y, a continuación, en la lista desplegable **[!UICONTROL Nombres de archivos]**, pulse **[!UICONTROL Personalizado]**.
+1. En el **[!UICONTROL Lista de ajustes preestablecidos]** panel, toque **[!UICONTROL Agregar]** para activar los campos de definición en la variable **[!UICONTROL Detalles]** en el lado derecho de la pantalla.
+1. En el **[!UICONTROL Detalles]** , en el [!UICONTROL Nombre de ajuste preestablecido] , escriba un nombre para el ajuste preestablecido.
+1. En el **[!UICONTROL Tipo de conjunto de lotes]** menú desplegable, seleccione **[!UICONTROL Conjunto de recursos]**.
+1. En el **[!UICONTROL Subtipo]** lista desplegable, seleccione **[!UICONTROL Conjunto de giros de varios ejes]**.
+1. Expandir **[!UICONTROL Convenciones de nomenclatura de recursos]**, y luego en el **[!UICONTROL Asignación de nombres a archivos]** lista desplegable, toque **[!UICONTROL Personalizado]**.
 1. Utilice los atributos **[!UICONTROL Coincidencia]** y, opcionalmente, **[!UICONTROL Nombre base]** para establecer una expresión regular para la asignación de nombres a los recursos de imagen que conforman la agrupación.
 
    Por ejemplo, el literal de expresión regular Match podría tener el siguiente aspecto:
 
    `(w+)-w+-w+`
 
-1. Expanda **[!UICONTROL Posición de columna de fila]** y, a continuación, defina el formato de nombre para la posición del recurso de imagen dentro de la matriz de conjunto de giros 2D.
+1. Expandir **[!UICONTROL Posición de columna de fila]** y, a continuación, defina el formato de nombre para la posición del recurso de imagen en la matriz de conjunto de giros 2D.
 
    Utilice el paréntesis para adoptar la posición de fila o columna en el nombre del archivo.
 
@@ -450,13 +454,13 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
    >
    >Si la combinación de expresiones regulares de fila y columna no puede determinar la posición del recurso dentro de la matriz de conjuntos de giros multidimensionales, ese recurso no se agrega al conjunto y se registra un error.
 
-1. Para **[!UICONTROL Set Naming]** y **[!UICONTROL Creation Convention]**, especifique el sufijo o el prefijo del nombre base definido en la **[!UICONTROL Asset Naming Convention]**.
+1. Para **[!UICONTROL Configurar el nombre]** y **[!UICONTROL Convenio de creación]**, especifique el sufijo o prefijo del nombre base definido en la variable **[!UICONTROL Convención de nomenclatura de recursos]**.
 
    Además, defina dónde se crea el conjunto de giros dentro de la estructura de carpetas de Dynamic Media Classic.
 
    Si define un gran número de conjuntos, manténgalos separados de las carpetas que contienen los propios recursos. Por ejemplo, cree una carpeta Conjuntos de giros para colocar los conjuntos generados aquí.
 
-1. En el panel **[!UICONTROL Detalles]**, pulse **[!UICONTROL Guardar]**.
+1. En el **[!UICONTROL Detalles]** panel, toque **[!UICONTROL Guardar]**.
 1. Toque **[!UICONTROL Activo]** junto al nuevo nombre del ajuste preestablecido.
 
    Al activar el ajuste preestablecido, se garantiza que, al cargar recursos en Dynamic Media, el ajuste preestablecido de conjunto de lotes se aplique para generar el conjunto.
@@ -492,23 +496,23 @@ Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Para actualizar cualquiera de estos parámetros, siga los pasos en [Habilitación de la compatibilidad con parámetros de trabajo de carga de recursos/Dynamic Media Classic basados en tipo MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Para actualizar cualquiera de estos parámetros, siga los pasos indicados en [Habilitación de la compatibilidad con los parámetros de trabajo de carga de recursos/Dynamic Media Classic basados en tipos MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Actualización de la cola de Granite Transient Workflow {#updating-the-granite-transient-workflow-queue}
 
-La cola Flujo de trabajo de Granite Transit se utiliza para el flujo de trabajo **[!UICONTROL DAM Update Asset]**. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
+La cola Flujo de trabajo de tránsito de Granite se utiliza para la variable **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
 
 **Para actualizar la cola de Granite Transient Workflow:**
 
-1. Vaya a [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) y busque **[!UICONTROL Cola: Cola de flujo de trabajo transitorio de granito]**.
+1. Vaya a [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) y busque **[!UICONTROL Cola: Cola de flujo de trabajo transitorio de Granite]**.
 
    >[!NOTE]
    >
    >Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
 
-1. En el campo **[!UICONTROL Maximum Parallel Jobs]** , cambie el número al valor deseado.
+1. En el **[!UICONTROL Trabajos paralelos máximos]** , cambie el número al valor deseado.
 
-   Puede aumentar los **[!UICONTROL trabajos paralelos máximos]** para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En algunos casos, como una migración inicial o una carga masiva única, puede utilizar un valor grande. No obstante, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, pruebe y ajuste el valor en función de su caso de uso particular.
+   Puede aumentar **[!UICONTROL Trabajos paralelos máximos]** para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En algunos casos, como una migración inicial o una carga masiva única, puede utilizar un valor grande. No obstante, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, pruebe y ajuste el valor en función de su caso de uso particular.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -520,7 +524,7 @@ La cola Flujo de trabajo de Granite Transit se utiliza para el flujo de trabajo 
 
 #### Actualización de la cola de Granite Workflow {#updating-the-granite-workflow-queue}
 
-La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, se utilizaba para procesar vídeo con el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]**.
+La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, se utilizaba para procesar vídeos con la variable **[!UICONTROL Codificar vídeo de Dynamic Media]** flujo de trabajo.
 
 **Para actualizar la cola de Granite Workflow:**
 
@@ -530,7 +534,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
    >
    >Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
 
-1. En el campo **[!UICONTROL Maximum Parallel Jobs]** , cambie el número al valor deseado.
+1. En el **[!UICONTROL Trabajos paralelos máximos]** , cambie el número al valor deseado.
 
    De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 se basa en la relación o cualquier número bueno que uno asigna al número de subprocesos de trabajo).
 
@@ -547,11 +551,11 @@ La configuración de conexión de carga de Scene7 sincroniza Experience Manager 
 **Para actualizar la conexión de carga de Scene7:**
 
 1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. En el campo [!UICONTROL Number of Connections] o en el campo [!UICONTROL Active job timeout], cambie el número como desee.
+1. En el [!UICONTROL Número de conexiones] o [!UICONTROL Tiempo de espera de trabajo activo] , cambie el número como desee.
 
-   La configuración **[!UICONTROL Number of Connections]** controla el número máximo de conexiones HTTP permitidas para el Experience Manager en la carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
+   La variable **[!UICONTROL Número de conexiones]** el ajuste controla el número máximo de conexiones HTTP permitidas para el Experience Manager de carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
 
-   La configuración **[!UICONTROL Tiempo de espera del trabajo activo]** determina el tiempo de espera para que los recursos de Dynamic Media cargados se publiquen en el servidor de entrega. Este valor es de 2100 segundos o 35 minutos de forma predeterminada.
+   La variable **[!UICONTROL Tiempo de espera de trabajo activo]** determina el tiempo de espera para que los recursos de Dynamic Media cargados se publiquen en el servidor de entrega. Este valor es de 2100 segundos o 35 minutos de forma predeterminada.
 
    Para la mayoría de los casos de uso, el ajuste de 2100 es suficiente.
 
@@ -561,11 +565,11 @@ La configuración de conexión de carga de Scene7 sincroniza Experience Manager 
 
 ### (Opcional) Filtrado de recursos para replicación {#optional-filtering-assets-for-replication}
 
-En implementaciones que no son de Dynamic Media, se replican *todos* los recursos (tanto imágenes como vídeo) desde el entorno Autor de Experience Manager al nodo Publicación de Experience Manager. Este flujo de trabajo es necesario porque los servidores de publicación de Experience Manager también entregan los recursos.
+En implementaciones que no son de Dynamic Media, se replican *all* recursos (imágenes y vídeo) del entorno Autor de Experience Manager al nodo Publicación de Experience Manager. Este flujo de trabajo es necesario porque los servidores de publicación de Experience Manager también entregan los recursos.
 
 Sin embargo, en las implementaciones de Dynamic Media, dado que los recursos se entregan mediante el Cloud Service, no es necesario replicarlos en los nodos de publicación de Experience Manager. Este flujo de trabajo de &quot;publicación híbrida&quot; evita costos de almacenamiento adicionales y tiempos de procesamiento más largos para replicar recursos. Otros contenidos, como las páginas del sitio, se siguen sirviendo desde los nodos de publicación del Experience Manager.
 
-Los filtros permiten excluir *los recursos* de la replicación en el nodo Publicación de Experience Manager.
+Los filtros proporcionan una forma de *excluir* los recursos no se replicarán en el nodo Publicación de Experience Manager.
 
 #### Uso de filtros de recursos predeterminados para la replicación {#using-default-asset-filters-for-replication}
 
@@ -582,7 +586,7 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
   <tr> 
    <td>Entrega de imágenes de Dynamic Media</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
-   <td><p>Comienza con <strong>image/</strong></p> <p>Contiene <strong>application/</strong> y termina con <strong>set</strong>.</p> </td> 
+   <td><p>Comienza con <strong>image/</strong></p> <p>Contiene <strong>aplicación/</strong> y termina con <strong>set</strong>.</p> </td> 
    <td>Las "imágenes de filtro" integradas (se aplican a recursos de imágenes únicas, incluidas imágenes interactivas) y "conjuntos de filtros" (se aplica a conjuntos de giros, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de carrusel): 
     <ul> 
      <li>Excluir de la replicación la imagen original y las representaciones de imágenes estáticas.</li> 
@@ -606,24 +610,24 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
 
 #### Personalización de filtros de recursos para replicación {#customizing-asset-filters-for-replication}
 
-1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global, pulse el icono **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y pulse el botón **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el árbol de carpetas de la izquierda, vaya a `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` para revisar los filtros.
 
    ![Chlimage_1-2](assets/chlimage_1-2.png)
 
 1. Para definir el tipo de hora para el filtro, puede localizar el tipo de hora de la siguiente manera:
 
-   En el carril izquierdo, expanda **[!UICONTROL content]** > **[!UICONTROL dam]** > **[!UICONTROL &lt;`locate_your_asset`]** > **[!UICONTROL jcr:content]** > **[!UICONTROL metadatos]** y, a continuación, en la tabla de la derecha, busque **[!UICONTROL dc:formato]**.
+   En el carril izquierdo, expanda **[!UICONTROL contenido]** > **[!UICONTROL dam]** > **[!UICONTROL &lt;`locate_your_asset`>]** > **[!UICONTROL jcr:content]** > **[!UICONTROL metadata]** y, a continuación, en la tabla de la derecha, busque **[!UICONTROL dc:format]**.
 
    El siguiente gráfico es un ejemplo de la ruta de un recurso al formato dc:format.
 
    ![Chlimage_1-3](assets/chlimage_1-3.png)
 
-   Observe que `dc:format` para el recurso `Fiji Red.jpg` es `image/jpeg`.
+   Observe que la variable `dc:format` para el recurso `Fiji Red.jpg` es `image/jpeg`.
 
    Para que este filtro se aplique a todas las imágenes, independientemente de su formato, establezca el valor en `image/*` donde `*` es una expresión regular que se aplica a todas las imágenes de cualquier formato.
 
-   Para que el filtro se aplique solo a las imágenes del JPEG de tipo , introduzca un valor de `image/jpeg`.
+   Para que el filtro se aplique solo a las imágenes del tipo JPEG, introduzca un valor de `image/jpeg`.
 
 1. Defina qué representaciones desea incluir o excluir de la replicación.
 
@@ -650,10 +654,10 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
     </tbody> 
    </table>
 
-   Vaya a **content/dam/&lt;`locate your asset`/jcr:content/renditions**.
+   Vaya a **content/dam/&lt;`locate your asset`>/jcr:content/renditions**.
 
    El siguiente gráfico es un ejemplo de las representaciones de un recurso.
 
    ![Chlimage_1-4](assets/chlimage_1-4.png)
 
-   Si solo desea replicar el original, entonces debe introducir `+original`.
+   Si sólo desea replicar el original, entonces ingresaría `+original`.

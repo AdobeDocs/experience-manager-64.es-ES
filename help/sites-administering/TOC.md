@@ -8,9 +8,9 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '641'
 ht-degree: 34%
 
 ---
@@ -132,7 +132,6 @@ ht-degree: 34%
    + [Integración con Adobe Campaign Standard](campaignstandard.md)
    + [Aviso de fin de vida útil para el visualizador Flash](flash-viewers-eol.md)
    + [Integración con Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [Fuente de productos](product-feed.md)
    + [Integración con Adobe Dynamic Tag Management](dtm.md)
    + [Inclusión en Adobe Analytics y Adobe Target](opt-in.md)
    + [Portales AEM y portlets](aem-as-portal.md)
@@ -150,7 +149,6 @@ ht-degree: 34%
    + [Configuración manual de la integración con Adobe Target](target-configuring.md)
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
    + [Clasificaciones de Adobe](adobeanalytics-classifications.md)
-   + [Integración con el Search&amp;Promote de Adobe](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Integración de Target con fragmentos de experiencias](experience-fragments-target.md)
 + Prácticas recomendadas   {#bestpractices}

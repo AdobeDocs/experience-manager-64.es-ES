@@ -1,8 +1,8 @@
 ---
 title: eCommerce
-seo-title: comercio electrónico
-description: 'AEM comercio electrónico ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y con marca en puntos de contacto web, móviles y sociales. '
-seo-description: 'AEM comercio electrónico ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y con marca en puntos de contacto web, móviles y sociales. '
+seo-title: eCommerce
+description: AEM comercio electrónico ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y con marca en puntos de contacto web, móviles y sociales.
+seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,15 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '756'
 ht-degree: 3%
 
 ---
 
-
-# eCommerce{#ecommerce}
+# comercio electrónico{#ecommerce}
 
 * [Conceptos ](/help/sites-administering/concepts.md)
 * [Administración (genérica)](/help/sites-administering/generic.md)
@@ -32,13 +31,13 @@ Adobe proporciona dos versiones de Commerce Integration Framework:
 |  | CIF local | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versiones de AEM compatibles | AEM local o AMS 6.x | AEM AMS 6.4 y 6.5 |
-| Back-end | - AEM, Java <br> - Integración monolítica, asignación previa a la compilación (plantilla)<br> - Repositorio JCR | - Magento <br>- Java y Javascript <br>: sin datos de comercio almacenados en el repositorio JCR |
+| Back-end | - AEM, Java <br> - Integración monolítica, asignación previa a la compilación (plantilla)<br> : repositorio JCR | - Magento <br>- Java y Javascript <br>- No hay datos de comercio almacenados en el repositorio JCR |
 | Front-end | AEM páginas procesadas del lado del servidor | Aplicación de página mixta (renderización híbrida) |
-| Catálogo de productos | - Importador de productos, editor, almacenamiento en caché en AEM <br>: catálogos regulares con páginas AEM o proxy | - Sin importación de productos <br>- Plantillas genéricas <br>: datos bajo demanda a través del conector |
+| Catálogo de productos | - Importador de productos, editor, almacenamiento en caché en AEM <br>- Catálogos regulares con páginas AEM o proxy | - Sin importación de productos <br>- Plantillas genéricas <br>- Datos bajo demanda a través del conector |
 | Escalabilidad | - Puede admitir hasta unos pocos millones de productos (depende del caso de uso) <br> - Almacenamiento en caché en Dispatcher | - Sin limitación de volumen <br>- Almacenamiento en caché en Dispatcher o CDN |
 | Modelo de datos estandarizado | No | Sí, esquema de Magento GraphQL |
-| Disponibilidad | Sí:<br> - Commerce Cloud SAP (la extensión se ha actualizado para admitir AEM 6.4 e Hybris 5 (valor predeterminado) y mantiene la compatibilidad con Hybris 4 <br> - Commerce Cloud Salesforce (conector de código abierto para admitir AEM 6.4) | Sí, a través de código abierto a través de GitHub. <br> Magento Commerce (admite Magento 2.3.2 (predeterminado) y compatible con Magento 2.3.1). |
-| Cuándo se utiliza | Casos de uso limitados: Para situaciones en las que sea necesario importar catálogos estáticos pequeños | Solución preferida en la mayoría de los casos de uso |
+| Disponibilidad | Sí:<br> - Commerce Cloud SAP (extensión actualizada para admitir AEM 6.4 e Hybris 5 (predeterminado) y mantiene la compatibilidad con Hybris 4 <br>- Commerce Cloud de Salesforce (conector de código abierto compatible con AEM 6.4) | Sí, a través de código abierto a través de GitHub. <br> Magento Commerce (admite Magento 2.3.2 (predeterminado) y compatible con Magento 2.3.1). |
+| Cuándo se usa | Casos de uso limitados: Para situaciones en las que sea necesario importar catálogos estáticos pequeños | Solución preferida en la mayoría de los casos de uso |
 
 El comercio electrónico, junto con la gestión de información de productos (PIM), gestiona las actividades de un sitio web centrado en la venta de productos a través de una tienda en línea:
 
@@ -72,7 +71,7 @@ La implementación permite el acceso en tiempo real a la información del produc
 
 AEM comercio electrónico proporciona:
 
-* Varios **componentes de AEM listos para usar** para ilustrar lo que se puede lograr para el proyecto:
+* Un número de **componentes de AEM listos para usar** para ilustrar lo que se puede lograr para el proyecto:
 
    * Visualización del producto
    * Carro de compras
@@ -87,24 +86,24 @@ AEM comercio electrónico proporciona:
    >
    >El marco de integración proporcionado por AEM también le permite crear componentes de AEM adicionales para las funciones de comercio independientes del motor de comercio electrónico específico.
 
-* **Buscar** : mediante:
+* **Buscar** - mediante:
 
    * la búsqueda AEM
    * la búsqueda del sistema de comercio electrónico
-   * una búsqueda de terceros (como Search&amp;Promote)
+   * una búsqueda de terceros
    * o una combinación de ellos.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Utiliza la capacidad AEM para **presentar el contenido en varios canales**, ya sea en la ventana completa del explorador o en el dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
+* Utiliza la capacidad de AEM para **presentar el contenido en varios canales**, ya sea la ventana completa del navegador o el dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* La capacidad de **desarrollar su propia implementación de integración basada en el [AEM marco de comercio electrónico](#the-framework)**.
+* La capacidad de **desarrolle su propia implementación de integración basada en [AEM marco de comercio electrónico](#the-framework)**.
 
    Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que necesita la integración. Las nuevas implementaciones pueden utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
-* La posibilidad de desarrollar **comercio basado en la experiencia basado en los datos y la actividad del comprador**. Esto le permite dar cuenta de muchos escenarios:
+* La posibilidad de desarrollar **comercio basado en la experiencia y en la actividad del comprador**. Esto le permite dar cuenta de muchos escenarios:
 
    * Un ejemplo podría ser proporcionar reducciones en los costos de envío cuando el pedido total exceda una cantidad específica.
    * Otro puede permitirle proporcionar ofertas de temporada que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, dependiendo de nuevo de otros factores cuando sea necesario.
@@ -125,7 +124,7 @@ AEM comercio electrónico proporciona:
 
 ## El marco {#the-framework}
 
-La sección [Conceptos](/help/sites-administering/concepts.md) cubre el marco de trabajo con más detalle, pero lo siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
+La variable [Conceptos](/help/sites-administering/concepts.md) esta sección cubre el marco de trabajo con más detalle, pero la siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
 
 ### ¿Qué? {#what}
 
@@ -139,4 +138,3 @@ La sección [Conceptos](/help/sites-administering/concepts.md) cubre el marco de
 * Proporcionar los mecanismos básicos necesarios para realizar rápidamente un sitio de comercio electrónico personalizado.
 * Tp proporciona la flexibilidad necesaria para desarrollar un sitio de comercio electrónico en la vida real.
 * Ilustración de las prácticas recomendadas.
-

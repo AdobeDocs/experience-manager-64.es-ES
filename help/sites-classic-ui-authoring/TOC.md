@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Guía del usuario sobre la creación de IU de AEM 6.4 Classic
 breadcrumb-title: Guía de creación de IU clásica
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
-feature: 'Creación  '
+feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 80%
+source-wordcount: '265'
+ht-degree: 78%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 80%
    + [Gestión básica](author-env-basic-handling.md)
    + [Configuración del entorno de cuenta](author-env-user-props.md)
    + [Seleccionar la IU](author-env-select-ui.md)
-   + [Búsqueda  ](author-env-search.md)
-   + [Su bandeja de entrada  ](author-env-inbox.md)
-   + [Métodos abreviados del teclado para las consolas  ](author-env-keyboard-shortcuts.md)
+   + [Búsqueda](author-env-search.md)
+   + [Su bandeja de entrada](author-env-inbox.md)
+   + [Métodos abreviados de teclado para consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
@@ -45,12 +45,11 @@ ht-degree: 80%
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
-   + [Diseño adaptable ](classic-page-author-responsive-layout.md)
+   + [Diseño adaptable](classic-page-author-responsive-layout.md)
    + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
-   + [Uso de etiquetas  ](classic-feature-tags.md)
+   + [Uso de etiquetas](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
-   + [Adición de funciones de Search&amp;Promote a la página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)

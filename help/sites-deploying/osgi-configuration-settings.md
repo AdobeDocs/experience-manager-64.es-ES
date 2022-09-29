@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ Se pueden configurar varios parámetros, entre ellos:
 * **Usuario de secuencia de comandos** : esta propiedad opcional puede especificar la cuenta de usuario del repositorio que se utiliza para leer los scripts. Si no se especifica ninguna cuenta, la variable `admin` se utiliza de forma predeterminada.
 
 * **Extensiones predeterminadas** La lista de extensiones para la que se utilizará el comportamiento predeterminado. Esto significa que el último segmento de ruta del tipo de recurso se puede usar como nombre de secuencia de comandos.
-
-**Ayudante de fuentes GFX de Day Commons** Al procesar gráficos, puede utilizar DrawText para incrustar texto. Para ello, también puede instalar sus propias fuentes:
 
 * Defina el **Ruta de fuente** para buscar fuentes específicas del proyecto.
 

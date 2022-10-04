@@ -1,22 +1,21 @@
 ---
 title: Automatizar las pruebas de formularios adaptables
-seo-title: Automatizar las pruebas de formularios adaptables
+seo-title: Automate testing of adaptive forms
 description: Con Calvin puede crear casos de prueba en CRXDE y ejecutar pruebas de IU directamente en el explorador web para probar exhaustivamente sus formularios adaptables.
-seo-description: Con Calvin puede crear casos de prueba en CRXDE y ejecutar pruebas de IU directamente en el explorador web para probar exhaustivamente sus formularios adaptables.
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
-
 
 # Automatizar las pruebas de formularios adaptables {#automate-testing-of-adaptive-forms}
 
@@ -24,7 +23,7 @@ ht-degree: 1%
 
 Los formularios adaptables son integrales en las interacciones de los clientes. Es importante probar los formularios adaptables con cada cambio que realice en ellos, como cuando se despliega un nuevo paquete de correcciones o se cambia una regla del formulario. Sin embargo, las pruebas funcionales de los formularios adaptables y de todos los campos que contienen pueden ser tediosos.
 
-Calvin le permite automatizar las pruebas de sus formularios adaptables en el explorador web. Calvin utiliza la interfaz de usuario de [Hobbes](/help/sites-developing/hobbes.md) para ejecutar las pruebas y proporciona las siguientes herramientas:
+Calvin le permite automatizar las pruebas de sus formularios adaptables en el explorador web. Calvin utiliza [Hobbes](/help/sites-developing/hobbes.md)La interfaz de usuario de para ejecutar las pruebas y proporciona las siguientes herramientas:
 
 * Una API de JavaScript para crear pruebas.
 * Una interfaz de usuario para ejecutar pruebas.
@@ -72,7 +71,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de IU direct
    <td><p>Carga diferida</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Al hacer clic en pestañas (o en cualquier elemento de navegación de un panel), ¿se recupera el HTML del servidor según la configuración de carga diferida?</li> 
+     <li>Al hacer clic en pestañas (o en cualquier elemento de navegación de un panel), ¿se está recuperando el HTML del servidor según la configuración de carga diferida?</li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -89,7 +88,7 @@ Con Calvin, puede crear casos de prueba en CRXDE y ejecutar pruebas de IU direct
 
 Antes de usar este artículo para crear los casos de prueba, debe saber lo siguiente:
 
-* Creación de grupos de pruebas y ejecución de casos de prueba utilizando [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
+* Creación de grupos de pruebas y ejecución de casos de prueba mediante [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [API de JavaScript de Hobbes](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [API de JavaScript de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -98,18 +97,18 @@ Antes de usar este artículo para crear los casos de prueba, debe saber lo sigui
 El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas para probar varios formularios adaptables. Debe crear un caso de prueba independiente para cada formulario que necesite probar. Si sigue pasos similares a los siguientes y modifica el código JavaScript en el paso 11, puede crear su propio grupo de pruebas para probar los formularios adaptables.
 
 1. Vaya al CRXDE Lite en el explorador web: `https://[server]:[port]/crx/de`.
-1. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **[!UICONTROL Crear > Crear nodo]**. Introduzca un nombre (aquí afTestRegistration), especifique el tipo de nodo como cq:ClientLibraryFolder y haga clic en **[!UICONTROL OK]**.
+1. Haga clic con el botón derecho en la subcarpeta /etc/clientlibs y haga clic en **[!UICONTROL Crear > Crear nodo]**. Escriba un nombre (aquí afTestRegistration), especifique el tipo de nodo como cq:ClientLibraryFolder y haga clic en **[!UICONTROL OK]**.
 
    La carpeta clientlibs contiene el aspecto de registro de su aplicación (JS e Init). Se recomienda registrar todos los objetos de grupos de pruebas de Hobbes específicos de un formulario en la carpeta clientlibs .
 
-1. Especifique los siguientes valores de propiedad en el nodo recién creado (aquí afTestRegistration) y haga clic en **[!UICONTROL Guardar todo]**. Estas propiedades ayudan a Hobbes a reconocer la carpeta como una prueba. Para reutilizar esta biblioteca de cliente como dependencia en otras bibliotecas de cliente, asígnele el nombre granite.testing.calvin.testing.
+1. Especifique los siguientes valores de propiedad en el nodo recién creado (aquí afTestRegistration) y, a continuación, haga clic en **[!UICONTROL Guardar todo]**. Estas propiedades ayudan a Hobbes a reconocer la carpeta como una prueba. Para reutilizar esta biblioteca de cliente como dependencia en otras bibliotecas de cliente, asígnele el nombre granite.testing.calvin.testing.
 
 <table> 
  <tbody> 
   <tr> 
    <td>Propiedad</td> 
    <td>Tipo</td> 
-   <td>Value</td> 
+   <td>Valor</td> 
   </tr> 
   <tr> 
    <td><p>categorías</p> </td> 
@@ -130,7 +129,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y, a continuación, haga clic en **[!UICONTROL Crear > Crear archivo]**. Asigne un nombre al archivo js.txt y haga clic en **[!UICONTROL OK]**.
+1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **[!UICONTROL Crear > Crear archivo]**. Asigne un nombre al archivo js.txt y haga clic en **[!UICONTROL OK]**.
 1. En el archivo js.txt , agregue el siguiente texto:
 
    ```
@@ -138,7 +137,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    js.txt
    ```
 
-1. Haga clic en **[!UICONTROL Guardar todo]** y cierre el archivo js.txt.
+1. Haga clic en **[!UICONTROL Guardar todo]** y luego cierre el archivo js.txt.
 1. Haga clic con el botón derecho en el nodo de prueba (aquí **afTestRegistration)** y haga clic en **[!UICONTROL Crear > Crear archivo]**. Asigne un nombre al archivo init.js y haga clic en **[!UICONTROL OK]**.
 1. Copie el siguiente código al archivo init.js y haga clic en **[!UICONTROL Guardar todo]**:
 
@@ -156,16 +155,16 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
    }(window, window.hobs));
    ```
 
-   El código anterior crea un grupo de pruebas denominado **Formulario adaptable - Prueba de demostración**. Para crear un grupo de pruebas con un nombre diferente, cambie el nombre en consecuencia.
+   El código anterior crea un grupo de pruebas denominado **Formulario adaptable: prueba de demostración**. Para crear un grupo de pruebas con un nombre diferente, cambie el nombre en consecuencia.
 
-1. Haga clic en **[!UICONTROL Crear]** > **Crear nodo** para crear un nodo en la carpeta clientlib para cada formulario que desee probar. Este ejemplo utiliza un nodo llamado **testForm** para probar un formulario adaptable denominado **testForm** `.`Especifique las siguientes propiedades y haga clic en **[!UICONTROL OK]**:
+1. Haga clic en **[!UICONTROL Crear]** > **Crear nodo** para crear un nodo en la carpeta clientlib para cada formulario que desee probar. Este ejemplo utiliza un nodo denominado **testForm** para probar un formulario adaptable denominado **testForm** `.`Especifique las siguientes propiedades y haga clic en **[!UICONTROL OK]**:
 
    * Nombre: testForm (su nombre de formulario)
    * Tipo: cq:ClientLibraryFolder
 
 1. Agregue las siguientes propiedades al nodo recién creado (aquí testForm) para probar un formulario adaptable:
 
-   | **Propiedad** | **Tipo** | **Value** |
+   | **Propiedad** | **Tipo** | **Valor** |
    |---|---|---|
    | categorías | Cadena[] | granite.testing.hobbes.testing, granite.testing.hobbes.testing.testForm |
    | dependencias | Cadena[] | granite.testing.calvin.tests |
@@ -178,7 +177,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
 
 1. Haga clic con el botón derecho en la carpeta que ha creado para el formulario de prueba (aquí testForm) y seleccione **[!UICONTROL Crear > Crear archivo]**. Asigne un nombre al archivo scriptingTest.js y añada el siguiente código al archivo y haga clic en **[!UICONTROL Guardar todo.]**
 
-   Para utilizar el siguiente código para probar otro formulario adaptable, cambie la ruta y el nombre del formulario en **navegarTo** (líneas 11, 36 y 62) y los respectivos casos de prueba. Para obtener más información sobre las API para probar diferentes aspectos de los formularios y los objetos de formulario, consulte [API de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Para utilizar el siguiente código para probar otro formulario adaptable, cambie la ruta y el nombre del formulario en **navegarTo** (líneas 11, 36 y 62) y los respectivos casos de ensayo. Para obtener más información sobre las API para probar diferentes aspectos de los formularios y los objetos de formulario, consulte [API de Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -286,7 +285,7 @@ Los grupos de pruebas se pueden ejecutar individualmente. Cuando ejecuta un grup
 
 Un icono de marca de verificación indica una prueba pasada: ![marca de verificación](assets/checkmark.png)
 
-El icono &quot;X&quot; indica una prueba fallida: ![cross](assets/cross.png)
+El icono &quot;X&quot; indica una prueba fallida: ![cruz](assets/cross.png)
 
 Para ejecutar un grupo de pruebas:
 
@@ -306,7 +305,7 @@ Para ejecutar un grupo de pruebas:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU de AEM. Para obtener más información sobre la prueba de los formularios adaptables, consulte los temas siguientes en [Prueba de la IU](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
+Los pasos para probar los formularios adaptables AEM son similares a los pasos para probar la IU de AEM. Para obtener más información sobre la prueba de los formularios adaptables, consulte los temas siguientes en [Prueba de la interfaz de usuario](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * Visualización de grupos de pruebas
 * Ejecución de varias pruebas
@@ -337,4 +336,3 @@ Los pasos para probar los formularios adaptables AEM son similares a los pasos p
   </tr> 
  </tbody> 
 </table>
-

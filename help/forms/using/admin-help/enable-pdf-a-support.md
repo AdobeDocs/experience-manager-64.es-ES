@@ -1,8 +1,8 @@
 ---
 title: Habilitar compatibilidad con PDF/A
-seo-title: Habilitar compatibilidad con PDF/A
-description: Aprenda a activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
-seo-description: Aprenda a activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
+seo-title: Enable PDF/A support
+description: Obtenga información sobre cómo habilitar la asistencia al PDF/A. Se pueden crear archivos compatibles con el PDF/A a partir de archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
+seo-description: Learn how to enable PDF/A support. PDF/A-compliant files can be created from Microsoft Excel, Microsoft PowerPoint, and Microsoft Word files.
 uuid: 663bc89d-9d8b-4178-9a88-6d2d5daac477
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f069ecea-1b68-4ca9-bb56-8a205a3c00ec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 1%
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
-
 # Habilitar compatibilidad con PDF/A {#enable-pdf-a-support}
 
-PDF Generator admite la creación de archivos compatibles con PDF/A desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
+El Generador de PDF admite la creación de archivos compatibles con el PDF/A desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
 
 1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de tipo de archivo.
 1. Haga clic en Nuevo o seleccione una configuración de tipo de archivo existente.
 1. Haga clic en Microsoft Excel, Microsoft PowerPoint o Microsoft Word y, a continuación, seleccione Crear archivo compatible con PDF/A-1a y guarde los cambios.
 1. En la aplicación nativa (como Microsoft Word), haga clic en Adobe PDF > Cambiar configuración de conversión y, a continuación, seleccione PDF/A-1b.
-

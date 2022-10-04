@@ -1,8 +1,8 @@
 ---
 title: Actualizar a AEM 6.4 Forms
-seo-title: Actualizar a AEM 6.4 Forms
-description: 'Puede realizar una actualización directa de AEM 6.1 Forms, AEM 6.2 Forms y LiveCycle ES4 SP1 a AEM 6.3 Forms. '
-seo-description: 'Puede realizar una actualización directa de AEM 6.1 Forms, AEM 6.2 Forms y LiveCycle ES4 SP1 a AEM 6.3 Forms. '
+seo-title: Upgrade to AEM 6.4 Forms
+description: Puede realizar una actualización directa de AEM 6.1 Forms, AEM 6.2 Forms y LiveCycle ES4 SP1 a AEM 6.3 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1680'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Utilice una de las siguientes rutas de actualización, según corresponda para s
 
 Realice el siguiente procedimiento para actualizar el Forms AEM 6.2 existente en JEE o AEM 6.3 Forms en JEE a AEM 6.4 Forms en JEE:
 
-1. Descargue el instalador AEM 6.4 Forms en JEE desde el [sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
-1. Consulte [Lista de comprobación de actualización y planificación](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) para obtener más información sobre las comprobaciones que se deben realizar para garantizar una actualización correcta.
-1. Consulte [Preparación para actualizar a AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) para conocer y realizar las tareas que aseguran que la actualización se ejecute correctamente con un tiempo de inactividad mínimo en el servidor.
+1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+1. Consulte [Planificación y lista de comprobación de la actualización](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) para obtener más información sobre las comprobaciones que se deben realizar para garantizar una actualización correcta.
+1. Consulte [Preparación para actualizar a AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) para aprender y realizar las tareas que garantizan que la actualización se ejecute correctamente con un tiempo de inactividad mínimo en el servidor.
 1. Según el entorno y el servidor de aplicaciones existentes, elija uno de los siguientes documentos y siga las instrucciones.
 
    * [Actualización de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para JBoss](assets/upgrade-jboss.pdf)
@@ -38,7 +38,7 @@ Realice el siguiente procedimiento para actualizar el Forms AEM 6.2 existente en
 
 ## AEM 6.0 Forms en JEE > AEM 6.3 Forms en JEE {#aem-forms-jee-60-to-63}
 
-No está disponible la actualización directa desde LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms a AEM 6.4 Forms. Puede realizar una actualización intermedia a una o más versiones de LiveCycle o AEM Forms y, a continuación, actualizar desde AEM 6.4 Forms. Para obtener la lista de versiones intermedias e instrucciones de actualización correspondientes, consulte [Elegir una ruta de actualización](upgrade.md).
+No está disponible la actualización directa desde LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms a AEM 6.4 Forms. Puede realizar una actualización intermedia a una o más versiones de LiveCycle o AEM Forms y, a continuación, actualizar desde AEM 6.4 Forms. Para obtener la lista de versiones intermedias y las instrucciones de actualización correspondientes, consulte [Elija una ruta de actualización](upgrade.md).
 
 ## LiveCycle ES4 SP1 > AEM 6.4 Forms en JEE {#livecycle-es4sp1-forms-jee}
 
@@ -48,20 +48,20 @@ A continuación se ofrece una descripción general del procedimiento para actual
 
 1. Antes de actualizar:
 
-   1. Descargue el instalador AEM 6.4 Forms en JEE desde el [sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+   1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
    1. Decida el tipo de Repositorio de contenido (Repositorio CRX) que se va a usar. Solo unas pocas funciones de AEM Forms en JEE utilizan la persistencia del repositorio de contenido para almacenar contenido y recursos. Instale y configure el Repositorio de contenido solo si planea utilizar este AEM Forms en las funcionalidades JEE:
 
-      * En LiveCycle ES4 SP1, las funciones de Gestión de Correspondencia, Portal de Forms, Espacio de trabajo HTML e Informes de procesos utilizan el Repositorio de contenido. Si no utilizó estas funciones en LiveCycle ES4 y planea no utilizarlas en AEM Forms, no es necesario el repositorio de contenido.
-      * En AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms (conocido como Mobile Forms en LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting, Forms centric workflows on OSGi, las funcionalidades utilizan Content Repository. Si planea utilizar AEM Forms para estas funciones, se requiere el Repositorio de contenido.
+      * En LiveCycle ES4 SP1, las funciones de Gestión de Correspondencia, Portal de Forms, Espacio de trabajo de HTML e Informes de procesos utilizan el Repositorio de contenido. Si no utilizó estas funciones en LiveCycle ES4 y planea no utilizarlas en AEM Forms, no es necesario el repositorio de contenido.
+      * En AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms (conocido como Mobile Forms en LiveCycle ES4 SP1), Forms Portal, HTML Workspace, Process Reporting, Forms flujos de trabajo centrados en OSGi, las funcionalidades utilizan el repositorio de contenido. Si planea utilizar AEM Forms para estas funciones, se requiere el Repositorio de contenido.
       * No necesita el repositorio de contenido para AEM Forms Document Security.
 
-      Además, el tipo de repositorio de LiveCycle y AEM Forms son diferentes. Para obtener tipos de repositorios disponibles e información relacionada, consulte [Elección de un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+      Además, el tipo de repositorio de LiveCycle y AEM Forms son diferentes. Para obtener tipos de repositorios disponibles e información relacionada, consulte [Selección de un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
    1. Cree una copia de seguridad del contenido y los datos de LiveCycle ES4 SP1:
 
       Cree una copia de seguridad de la base de datos de LiveCycle ES4 SP1, el Almacenamiento global de datos (GDS) y el repositorio crx (no necesario para la seguridad de documentos). Si está actualizando a la persistencia MongoMK o RDBMK, exporte los activos de administración de correspondencia de LiveCycle ES4 SP1 en un archivo .cmp y genere los recursos como un paquete AEM.
 
-   1. Asegúrese de que la plataforma existente (es decir, servidor de aplicaciones, base de datos, sistema operativo, Adobe Acrobat, aplicaciones de terceros y hardware) sea compatible con AEM 6.4 Forms en JEE. Para obtener información sobre hardware y software compatibles, consulte el documento [Combinaciones de plataformas admitidas](/help/forms/using/aem-forms-jee-supported-platforms.md).
+   1. Asegúrese de que la plataforma existente (es decir, servidor de aplicaciones, base de datos, sistema operativo, Adobe Acrobat, aplicaciones de terceros y hardware) sea compatible con AEM 6.4 Forms en JEE. Para obtener información sobre hardware y software compatibles, consulte la [Combinaciones de plataformas compatibles](/help/forms/using/aem-forms-jee-supported-platforms.md) documento.
 
       Si crea una nueva instancia de la base de datos, importe los datos respaldados en el paso 3 a la base de datos. Para obtener información sobre cómo importar datos a una base de datos, consulte la documentación del proveedor de la base de datos correspondiente.
 
@@ -73,11 +73,11 @@ A continuación se ofrece una descripción general del procedimiento para actual
 1. Realice la actualización:
 
    1. Instale AEM 6.4 Forms en JEE en un nuevo servidor ejecutando el programa de instalación. El instalador coloca todos los archivos necesarios en el equipo, dentro de una estructura de directorio de instalación.
-   1. Una vez finalizada la instalación, ejecute el **Configuration Manager** para configurar varios módulos de AEM Forms y establecer las configuraciones adecuadas. Junto con la configuración, permite especificar la ruta del Almacenamiento de datos global (GDS) y del repositorio crx.
+   1. Una vez finalizada la instalación, ejecute el **Administrador de configuración** para configurar varios módulos de AEM Forms y definir las configuraciones adecuadas. Junto con la configuración, permite especificar la ruta del Almacenamiento de datos global (GDS) y del repositorio crx.
 
       >[!NOTE]
       >
-      >En la pantalla de selección de tareas de actualización, seleccione la opción **[!UICONTROL Actualizar desde Adobe Experience Manager Forms 6.2.0]**. La opción **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** permite que el administrador de configuración actualice de LiveCycle ES4 SP1 a AEM 6.4 Forms.
+      >En la pantalla Actualizar selección de tareas , seleccione la opción **[!UICONTROL Actualización desde Adobe Experience Manager Forms 6.2.0]** . La variable **[!UICONTROL Actualización desde Adobe Experience Manager Forms 6.2.0]** permite que el administrador de configuración actualice de LiveCycle ES4 SP1 a AEM 6.4 Forms.
 
    1. (No es necesario para el módulo de seguridad de documentos de AEM Forms) Importe contenido al repositorio de contenido (CRX-Repository) a AEM servidor Forms 6.4.
 
@@ -112,16 +112,16 @@ A continuación se ofrece una descripción general del procedimiento para actual
 
 1. Antes de actualizar:
 
-   1. Descargue el instalador AEM 6.4 Forms en JEE desde el [sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+   1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
    1. Decida el tipo de Repositorio de contenido (Repositorio CRX) que se va a usar. Solo unas pocas funciones de AEM Forms en JEE utilizan la persistencia del repositorio de contenido para almacenar contenido y recursos. Instale y configure el Repositorio de contenido solo si planea utilizar este AEM Forms en las funcionalidades JEE:
 
-      * En AEM Forms, Forms adaptable, Gestión de correspondencia, Forms HTML5, Portal Forms, Workspace HTML, Informes de procesos y flujos de trabajo centrados en Forms en las funciones de OSGi, utilice el Repositorio de contenido. Si planea utilizar AEM Forms para estas funciones, se requiere el Repositorio de contenido.
+      * En AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms, Forms Portal, HTML Workspace, Process Reporting y los flujos de trabajo centrados de Forms en las funciones OSGi utilizan el repositorio de contenido. Si planea utilizar AEM Forms para estas funciones, se requiere el Repositorio de contenido.
       * No necesita el repositorio de contenido para AEM Forms Document Security.
 
-      Además, el tipo de repositorio de LiveCycle y AEM Forms son diferentes. Para obtener tipos de repositorios disponibles e información relacionada, consulte [Elección de un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+      Además, el tipo de repositorio de LiveCycle y AEM Forms son diferentes. Para obtener tipos de repositorios disponibles e información relacionada, consulte [Selección de un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 
    1. Cree una copia de seguridad de la base de datos ES3 de LiveCycle, el Almacenamiento global de datos (GDS) y el Repositorio de contenido (no necesario para la seguridad de documentos). Si está actualizando a la persistencia MongoMK o RDBMK, exporte los activos de administración de correspondencia de LiveCycle ES3 como un archivo.
-   1. Asegúrese de que la plataforma existente (es decir, servidor de aplicaciones, base de datos, sistema operativo, Adobe Acrobat, aplicaciones de terceros y hardware) sea compatible con AEM 6.4 Forms en JEE. Para obtener información sobre hardware y software compatibles, consulte el documento [Combinaciones de plataformas admitidas](/help/forms/using/aem-forms-jee-supported-platforms.md).
+   1. Asegúrese de que la plataforma existente (es decir, servidor de aplicaciones, base de datos, sistema operativo, Adobe Acrobat, aplicaciones de terceros y hardware) sea compatible con AEM 6.4 Forms en JEE. Para obtener información sobre hardware y software compatibles, consulte la [Combinaciones de plataformas compatibles](/help/forms/using/aem-forms-jee-supported-platforms.md) documento.
 
       Si crea una nueva instancia de la base de datos, importe los datos respaldados en el paso 3 a la base de datos. Para obtener información sobre cómo importar datos a una base de datos, consulte la documentación del proveedor de la base de datos correspondiente.
 
@@ -133,11 +133,11 @@ A continuación se ofrece una descripción general del procedimiento para actual
 1. Realice la actualización:
 
    1. Instale AEM 6.4 Forms en JEE en un nuevo servidor ejecutando el programa de instalación. El instalador coloca todos los archivos necesarios en el equipo, dentro de una estructura de directorio de instalación.
-   1. Una vez finalizada la instalación, ejecute el **Configuration Manager** para configurar varios módulos de AEM Forms y establecer las configuraciones adecuadas. Junto con la configuración, permite especificar la ruta del Almacenamiento de datos global (GDS) y del repositorio crx.
+   1. Una vez finalizada la instalación, ejecute el **Administrador de configuración** para configurar varios módulos de AEM Forms y definir las configuraciones adecuadas. Junto con la configuración, permite especificar la ruta del Almacenamiento de datos global (GDS) y del repositorio crx.
 
       >[!NOTE]
       >
-      >En la pantalla de selección de tareas de actualización, seleccione la opción **[!UICONTROL Actualizar desde Adobe Experience Manager Forms 6.2.0]**. La opción **[!UICONTROL Upgrade from Adobe Experience Manager Forms 6.2.0]** permite que el administrador de configuración actualice de LiveCycle ES3 a AEM 6.4 Forms.
+      >En la pantalla Actualizar selección de tareas , seleccione la opción **[!UICONTROL Actualización desde Adobe Experience Manager Forms 6.2.0]** . La variable **[!UICONTROL Actualización desde Adobe Experience Manager Forms 6.2.0]** permite que el administrador de configuración actualice de LiveCycle ES3 a AEM 6.4 Forms.
 
    1. (No es necesario para el módulo de seguridad de documentos de AEM Forms) Actualice e importe el repositorio CRX a AEM servidor Forms 6.4.
 

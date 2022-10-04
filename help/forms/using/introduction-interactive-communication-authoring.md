@@ -1,43 +1,42 @@
 ---
 title: Introducción a la IU de creación de Interactive Communication
-seo-title: Introducción a los distintos elementos de la interfaz de usuario que puede utilizar para crear una comunicación interactiva
+seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: Introducción a los distintos elementos de la interfaz de usuario que puede utilizar para crear una comunicación interactiva
-seo-description: Introducción a los distintos elementos de la interfaz de usuario que puede utilizar para crear una comunicación interactiva
+seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 3%
+source-wordcount: '1285'
+ht-degree: 23%
 
 ---
 
-
-# Introducción a la IU de creación de comunicación interactiva {#introduction-to-interactive-communication-authoring-ui}
+# Introducción a la IU de creación de Interactive Communication {#introduction-to-interactive-communication-authoring-ui}
 
 Introducción a los distintos elementos de la interfaz de usuario que puede utilizar para crear una comunicación interactiva
 
-La interfaz de usuario para la creación de [Interactive Communication](/help/forms/using/interactive-communications-overview.md) es intuitiva y proporciona lo siguiente para la creación de impresión y canal web de la comunicación interactiva:
+La interfaz de usuario para la creación [Comunicación interactiva](/help/forms/using/interactive-communications-overview.md) es intuitivo y proporciona lo siguiente para la creación de impresión y canal web de la comunicación interactiva:
 
 * WYSIWYG arrastrar y soltar editor de documentos
 * Repositorio integrado para recursos: los recursos cargados y creados en el servidor están disponibles en el navegador de recursos de la interfaz de creación de Interactive Communication
 
-Al [crear una nueva o editar una comunicación interactiva existente](/help/forms/using/create-interactive-communication.md), se utilizan los siguientes elementos de la interfaz de usuario:
+Cuando [crear o editar una comunicación interactiva existente](/help/forms/using/create-interactive-communication.md), se utilizan los siguientes elementos de la interfaz de usuario:
 
 * [Barra lateral](#sidebar)
 * [Barra de herramientas de página](#page-toolbar)
 
-* [Barra de herramientas de componentes](#component-toolbar)
+* [Barra de herramientas de los componentes](#component-toolbar)
 * Área de contenido
 
 ![interfaz de usuario de creación de comunicaciones interactivas](assets/form-editor.png)
 
-**A.** Barra lateral  **B.** Barra de herramientas de página  **C.** Área de contenido
+**A.** Barra lateral **B.** Barra de herramientas de página **C.** Área de contenido
 
 ## Barra lateral {#sidebar}
 
@@ -45,7 +44,7 @@ Al [crear una nueva o editar una comunicación interactiva existente](/help/form
 
 [Haga clic para ampliar](assets/sidebar-comps-1.png)
 
-**A.** Navegador de canales  **B.** Explorador de contenido  **C.** Explorador de propiedades  **D.** Explorador de recursos  **E.** Navegador de componentes  **F.** Explorador de fuentes de datos - Modelo de datos  **G.** Explorador de fuentes de datos - Contenido maestro
+**A.** Explorador de canales **B.** Navegador de contenido **C.** Explorador de propiedades **D.** Navegador de recursos **E.** Navegador de componentes **F.** Explorador de fuentes de datos: modelo de datos **G.** Explorador de fuentes de datos: contenido maestro
 
 La barra lateral incluye lo siguiente:
 
@@ -61,17 +60,17 @@ La barra lateral incluye lo siguiente:
 
    Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Por ejemplo, para ver las propiedades del contenedor de documentos:
 
-   Seleccione un componente, pulse ![field-level](assets/field-level.png) > **Document Container** y, a continuación, pulse ![cmppr](assets/cmppr.png).
+   Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/field-level.png) > **Contenedor de documento** y, a continuación, toque ![cmppr](assets/cmppr.png).
 
-* **Navegador de recursos**
+* **Explorador de activos**
 
    Segmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas o vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
 
-* **Navegador de componentes**
+* **Explorador de componentes**
 
    Incluye componentes que se pueden utilizar para crear los canales web e impresos de un documento. Puede arrastrar componentes a la comunicación interactiva para añadir elementos y configurar el elemento añadido según los requisitos. En la tabla siguiente se describen los componentes enumerados en el navegador de componentes para imprimir y canales web:
 
-| **Componente** | **Canal de impresión** | **Canal web** | **Funcionalidad** |
+| **Component** | **Canal de impresión** | **Canal web** | **Funcionalidad** |
 |---|---|---|---|
 | Gráfico | ✓ | ✓ | Agrega un gráfico que puede usar en una comunicación interactiva para la representación visual de datos bidimensionales recuperados de un elemento de recopilación del modelo de datos de formulario. |
 | Fragmento de documento | ✓ | ✓ | Permite añadir un componente, texto, lista o condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o sin un modelo de datos de formulario. |
@@ -93,21 +92,21 @@ La barra lateral incluye lo siguiente:
 
 Los puntos clave al trabajar con componentes de comunicación interactiva son los siguientes:
 
-* Cada componente tiene propiedades asociadas que controlan su aspecto y funcionalidad. Para configurar las propiedades de un componente, pulse el componente y pulse ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el navegador Propiedades.
-* Un componente se identifica con su nombre de elemento. Al pulsar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo Nombre de elemento en el navegador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permiten otros caracteres especiales y el nombre del elemento debe comenzar con una letra.
+* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, pulse el componente y pulse ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el navegador Propiedades.
+* Cada componente se identifica con su nombre de elemento. Al tocar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo Nombre de elemento en el navegador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
 * Puede modificar la propiedad Título de un componente Comunicación interactiva en línea en el editor sin abrir el navegador Propiedades siempre que el título esté visible en la Comunicación interactiva. Para ello:
 
-   1. Pulse para seleccionar un componente que tenga una propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
-   1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título sea editable.
-   1. Modifique el título y pulse la tecla Retorno o pulse cualquier lugar fuera del componente para guardar los cambios. Pulse la tecla Esc para descartar los cambios.
+   1. Pulse para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
+   1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
+   1. Modifique el título y pulse la tecla Retroceso o pulse en cualquier sitio fuera del componente para guardar los cambios. Pulse la tecla Esc para descartar los cambios.
 
-## Barra de herramientas de componentes {#component-toolbar}
+## Barra de herramientas de los componentes {#component-toolbar}
 
 ![](do-not-localize/toolbar.png)
 
-Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son:
+Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A. **Configurar**: Al pulsar **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
+A.**Configurar**: Al pulsar **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
 
 B. **Editar reglas**: Cuando pulse Editar reglas, aparecerá el Editor de reglas en el que podrá editar y crear reglas para el componente seleccionado. En el Editor de reglas, también puede seleccionar otros objetos de formulario (componentes) y editar/crear reglas para dichos objetos de formulario.
 
@@ -121,7 +120,7 @@ F. **Insertar componente**: Permite insertar un componente sobre el componente s
 
 G. **Pegar**: Permite pegar el componente cortado o copiado mediante las opciones descritas anteriormente.
 
-H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o pegar más de un componente juntos.
+H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o pegar más de un componente a la vez.
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente.
 
@@ -130,28 +129,27 @@ J. **Más**: Proporciona más opciones para trabajar con el componente seleccion
 * Ver expresión SOM (solo para paneles)
 * Agrupar objetos en el panel (solo para paneles)
 * Editar fragmento (solo para fragmentos)
-* Guardar un panel como fragmento (solo para paneles)
+* Guardar panel como fragmento (solo para paneles)
 * Agregar panel secundario (solo para paneles)
 * Agregar barra de herramientas del panel (solo para paneles)
-* Reemplazar (no para paneles)
+* Reemplazar (excepto para paneles)
 
-## Barra de herramientas de página {#page-toolbar}
+## Barra de herramientas de la página {#page-toolbar}
 
-La barra de herramientas Página de la parte superior proporciona opciones que le permiten previsualizar la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva cuando la crea y realizar los cambios correspondientes. En la barra de herramientas de la página, verá:
+La barra de herramientas Página de la parte superior ofrece opciones que le permiten previsualizar la comunicación interactiva y cambiar sus propiedades. Puede obtener una vista previa de la comunicación interactiva cuando la crea y realizar los cambios correspondientes. En la barra de herramientas de la página, verá lo siguiente:
 
-* Alternar panel lateral ![alternar panel lateral](assets/toggle-side-panel.png): Permite mostrar u ocultar la barra lateral.
-* Información de página ![pageinformationad](assets/pageinformationad.png): Permite ver las propiedades de la página.
+* Alternar panel lateral![ toggle-side-panel](assets/toggle-side-panel.png): permite mostrar u ocultar la barra lateral.
+* Información de la página ![pageinformationad](assets/pageinformationad.png): Permite ver las propiedades de la página.
 * Emulador ![regla](assets/ruler.png): Le permite emular el aspecto de su comunicación interactiva para diferentes tamaños de pantalla, como tabletas y teléfonos.
 * Editar: Permite seleccionar otros modos, como: Editar, Estilo, Desarrollador y Diseño.
 
-   * Editar: Permite editar las propiedades de la comunicación interactiva y sus componentes. Por ejemplo, añadir un componente, soltar una imagen y especificar campos obligatorios.
-   * Estilo: Permite aplicar estilo al aspecto de los componentes de la comunicación interactiva. Por ejemplo, en el modo de estilo, puede seleccionar un panel y especificar su color de fondo.
-   * Desarrollador: Permite a un desarrollador:
+   * Editar: Permite editar las propiedades de la comunicación interactiva y sus componentes. Por ejemplo, agregar un componente, soltar una imagen y especificar campos obligatorios.
+   * Estilo: Permite aplicar estilo al aspecto de los componentes de la comunicación interactiva. Por ejemplo, en el modo Estilo, puede seleccionar un panel y especificar su color de fondo.
+   * Desarrollador: Permite a un desarrollador lo siguiente:
 
       * Descubra de qué se compone la comunicación interactiva.
-      * Depurar lo que está sucediendo donde y cuando, lo que a su vez ayuda a resolver problemas.
+      * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
    * Target: Permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
 
 * Vista previa: Le permite previsualizar el aspecto de la comunicación interactiva cuando la publica.
-

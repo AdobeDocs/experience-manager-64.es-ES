@@ -1,21 +1,20 @@
 ---
 title: Cree su primer formulario adaptable
-seo-title: Cree su primer formulario adaptable
-description: 'Aprenda a crear formularios interactivos, interactivos y de clase empresarial. '
-seo-description: 'Aprenda a crear formularios interactivos, interactivos y de clase empresarial. '
+seo-title: Create your first adaptive form
+description: Aprenda a crear formularios interactivos, interactivos y de clase empresarial.
+seo-description: Learn to create business class, interactive, and responsive forms.
 page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 0%
+source-wordcount: '950'
+ht-degree: 4%
 
 ---
-
 
 # Cree su primer formulario adaptable {#do-not-publish-create-your-first-adaptive-form}
 
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-¿Está buscando una experiencia de **formularios** fácil de usar para móviles que simplifique la inscripción, aumente la participación y reduzca el tiempo de respuesta, **formularios adaptables** es la solución perfecta para usted. Los formularios adaptables proporcionan una experiencia de formularios adaptable para móviles, de automatización y de análisis. Puede crear fácilmente formularios que sean interactivos e interactivos, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar el análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
+¿Busca un teléfono móvil? **experiencia de formularios** que simplifica la matriculación, aumenta la participación y reduce el tiempo de respuesta, **formularios adaptables** es perfecto para usted. Los formularios adaptables proporcionan una experiencia de formularios adaptable para móviles, de automatización y de análisis. Puede crear fácilmente formularios que sean interactivos e interactivos, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar el análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
 
 Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y añadir nuevas funciones al formulario adaptable que se crea en este tutorial. Después de cada guía, tiene un formulario adaptable en funcionamiento. La guía para crear un formulario adaptable está disponible. Próximamente habrá guías disponibles. Al final de este tutorial, podrá:
 
@@ -43,14 +42,14 @@ El sitio web se ejecuta en Adobe Experience Manager (AEM) y utiliza AEM Forms pa
 ### Requisitos previos {#prerequisite}
 
 * Configure una instancia de autor AEM.
-* Instale [Complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
-* Obtenga el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Algunos ejemplos del tutorial se basan en la base de datos MySQL y utilizan el [controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html) del Oracle.
+* Instalar [Complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
+* Obtenga el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Los ejemplos del tutorial se basan en la base de datos MySQL y utilizan el Oracle [Controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Configure una base de datos que contenga datos de clientes con los campos que se muestran a continuación. Una base de datos no es esencial para crear un formulario adaptable. Este tutorial utiliza una base de datos para mostrar el modelo de datos de formulario y las capacidades de persistencia de AEM Forms.
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
-## Paso 1: Crear un formulario adaptable {#step-create-an-adaptive-form}
+## Paso 1: Creación de un formulario adaptable {#step-create-an-adaptive-form}
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
@@ -63,7 +62,7 @@ Objetivos:
 * Cree una acción de envío para enviar un correo electrónico que contenga contenido de formulario
 * Vista previa y envío de un formulario adaptable
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[ ](create-adaptive-form.md)
 
 ## Paso 2: Crear modelo de datos de formulario {#step-create-form-data-model}
 
@@ -79,20 +78,20 @@ Objetivos:
 * Configuración de servicios de lectura y escritura para el modelo de datos de formulario
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[ ](create-form-data-model.md)
 
-## Paso 3: Aplicar reglas a campos de formulario adaptables {#step-apply-rules-to-adaptive-form-fields}
+## Paso 3: Aplicación de reglas a campos de formulario adaptables {#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Los formularios adaptables proporcionan un editor para escribir reglas sobre objetos de formulario adaptables. Estas reglas definen las acciones que se deben realizar en el déclencheur de los objetos de formulario en función de las condiciones preestablecidas, las entradas del usuario y las acciones del usuario en el formulario. Ayuda a garantizar la precisión y acelera la experiencia de cumplimentación de formularios.
+Los formularios adaptables proporcionan un editor para escribir reglas sobre objetos de formulario adaptables. Estas reglas definen las acciones que se deben activar en los objetos del formulario en función de los ajustes preestablecidos, las entradas del usuario y las acciones del usuario en el formulario. Ayuda a garantizar la precisión y acelera la experiencia de cumplimentación de formularios.
 
 Objetivos:
 
 * Creación y aplicación de reglas en campos de formulario adaptables
 * Utilice reglas para el déclencheur de los servicios del modelo de datos de formulario para actualizar los datos a la base de datos
 
-## Paso 4: Estile el formulario adaptable {#step-style-your-adaptive-form}
+## Paso 4: Estilo del formulario adaptable {#step-style-your-adaptive-form}
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
@@ -100,13 +99,13 @@ Los formularios adaptables proporcionan temas y un [editor](/help/forms/using/th
 
 Objetivos:
 
-* Aplicar un tema preestablecido a un formulario adaptable
+* Aplicación de un tema predeterminado a un formulario adaptable
 * Creación de un tema para un formulario adaptable mediante el editor de temas
 * Usar fuentes web en un tema personalizado
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[ ](style-your-adaptive-form.md)
 
-## Paso 5: Pruebe el formulario adaptable {#step-test-your-adaptive-form}
+## Paso 5: Probar el formulario adaptable {#step-test-your-adaptive-form}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -117,15 +116,14 @@ Objetivos:
 * Instalación del SDK de Calvin
 * Crear grupo de pruebas y formularios de prueba para cambiar dirección
 
-Para obtener más información sobre el SDK, consulte [Uso de pruebas automatizadas con AEM formulario adaptable](/help/forms/using/calvin.md).
+Para obtener más información sobre SDK, consulte [Uso de pruebas automatizadas con AEM formulario adaptable](/help/forms/using/calvin.md).
 
 ## Paso 6: Publicar el formulario adaptable {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Puede publicar formularios adaptables como un formulario independiente (aplicación de una sola página), incluir en AEM [página de sitios](/help/forms/using/embed-adaptive-form-aem-sites.md) o enumerar en un sitio AEM utilizando [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
+Puede publicar formularios adaptables como un formulario independiente (aplicación de una sola página), incluido en AEM [página Sitios](/help/forms/using/embed-adaptive-form-aem-sites.md)o una lista en un sitio AEM usando [Portal de Forms](/help/forms/using/introduction-publishing-forms.md).
 
 Objetivos:
 
 * Publicar el formulario adaptable como una aplicación de una sola página
-

@@ -1,8 +1,8 @@
 ---
 title: Visualización y comprensión de informes de transacciones
-seo-title: Visualización y comprensión de informes de transacciones
+seo-title: Viewing and Understanding Transaction Reports
 description: Utilice los informes de transacciones para tomar una decisión informada sobre el uso del producto y las inversiones de reequilibrio en hardware y software.
-seo-description: Utilice los informes de transacciones para tomar una decisión informada sobre el uso del producto y las inversiones de reequilibrio en hardware y software.
+seo-description: Use transaction reports to make an informed decision about the product usage and rebalancing investments in hardware and software.
 uuid: a33abcae-8e37-4e2d-99b0-c92c439745f3
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: bef38e7a-92db-4226-a4ea-8facce573456
 exl-id: b132216a-c9b4-4f8f-97e6-738a5a9632d1
 source-git-commit: db64b7d5ac9044c4b2fee6ae4adbe9aab1cf4c7d
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '884'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Los informes de transacciones permiten capturar y rastrear el número de formula
 
 ## Configuración de informes de transacciones  {#setting-up-transaction-reports}
 
-La función de informes de transacciones está disponible como parte del paquete de complementos de formularios AEM. Para obtener información sobre la instalación del paquete de complementos en todas las instancias de autor y publicación, consulte [Instalación y configuración de AEM formularios](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Una vez que tenga instalado el paquete de complementos de AEM forms, haga lo siguiente:
+La función de informes de transacciones está disponible como parte del paquete de complementos de formularios AEM. Para obtener información sobre la instalación del paquete de complementos en todas las instancias de creación y publicación, consulte [Instalación y configuración de AEM formularios](https://helpx.adobe.com/es/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Una vez que tenga instalado el paquete de complementos de AEM forms, haga lo siguiente:
 
 * Habilitar la replicación inversa en todas las instancias de publicación
 * Habilitar informes de transacciones
@@ -36,21 +36,19 @@ La función de informes de transacciones está disponible como parte del paquete
 >* Los informes de transacciones de AEM Forms no admiten topologías que contengan solo instancias de publicación.
 >* Antes de usar informes de transacciones, asegúrese de que la replicación inversa esté habilitada para todas las instancias de publicación.
 >* Los datos de transacción se replican de forma inversa de una instancia de publicación a la instancia de autor o procesamiento correspondiente. El autor o la instancia de procesamiento no pueden replicar más datos en otra instancia.
-
 >
-
 
 
 ### Habilitar la replicación inversa en todas las instancias de publicación {#enable-reverse-replication-on-all-the-publish-instances}
 
-Los informes de transacciones utilizan la replicación inversa para consolidar el recuento de transacciones desde instancias de publicación hasta instancias de autor. Configure la replicación inversa en todas las instancias de publicación. Para obtener instrucciones detalladas para configurar la replicación inversa, consulte [replicación](/help/sites-deploying/replication.md).
+Los informes de transacciones utilizan la replicación inversa para consolidar el recuento de transacciones desde instancias de publicación hasta instancias de autor. Configure la replicación inversa en todas las instancias de publicación. Para obtener instrucciones detalladas sobre la configuración de la replicación inversa, consulte [replicación](/help/sites-deploying/replication.md).
 
 ### Habilitar informes de transacciones {#enable-transaction-reports}
 
-Los informes de transacciones están desactivados de forma predeterminada. Puede habilitar los informes desde AEM consola web. para activar informes de transacciones en un entorno de AEM Forms, realice los siguientes pasos en todas las instancias de autor y publicación:
+Los informes de transacciones están desactivados de forma predeterminada. Los informes se pueden habilitar desde AEM consola web. para activar informes de transacciones en un entorno de AEM Forms, realice los siguientes pasos en todas las instancias de autor y publicación:
 
-1. Inicie sesión en una instancia de AEM como administrador. Vaya a **Herramientas** > **Operaciones** > **Consola Web**.
-1. Busque y abra el servicio **Forms Transaction Reporting**.
+1. Inicie sesión en una instancia de AEM como administrador. Vaya a **Herramientas** > **Operaciones** > **Consola web**.
+1. Busque y abra el **Informes de transacciones de Forms** servicio.
 1. Active la casilla Registrar Transacciones. Haga clic en **Guardar**.
 
    Repita los pasos del 1 al 3 en todas las instancias de autor y publicación.
@@ -63,22 +61,22 @@ Solo los miembros del grupo fd-administrator pueden ver los informes de transacc
 
 Las transacciones se almacenan en la memoria caché antes de almacenarse en el repositorio. Se sigue el proceso para garantizar que no haya escrituras frecuentes en el repositorio. De forma predeterminada, el periodo de almacenamiento en caché (Período de vaciado de la transacción) está establecido en 60 segundos. Puede cambiar el periodo predeterminado para adaptarlo a su entorno. Realice los siguientes pasos para cambiar el período de almacenamiento en caché predeterminado:
 
-1. Inicie sesión en instancias de autor como administrador. Vaya a **Herramientas** > **Operaciones** > **Consola Web**.
-1. Busque y abra el servicio **Forms Transaction Repository Storage Provider**.
-1. Especifique el número de segundos en el campo **Período de vaciado de transacción**. Haga clic en **Guardar**.
+1. Inicie sesión en instancias de autor como administrador. Vaya a **Herramientas** > **Operaciones** > **Consola web**.
+1. Busque y abra el **Proveedor de almacenamiento del repositorio de transacciones de Forms** servicio.
+1. Especifique el número de segundos en la variable **Período de vaciado de transacción** campo . Haga clic en **Guardar**.
 
 La replicación inversa copia los datos de transacción en la bandeja de salida predeterminada de las instancias de autor. Puede colocar los datos de transacción en una bandeja de salida personalizada. Siga estos pasos para especificar una bandeja de salida personalizada:
 
-1. Inicie sesión en instancias de autor como administrador. Vaya a **Herramientas** > **Operaciones** > **Consola Web**.
-1. Busque y abra el servicio **Forms Transaction Repository Storage Provider**.
-1. Especifique el nombre de la bandeja de salida personalizada en el campo **Bandeja de salida**. Haga clic en **Guardar**. Se crea una bandeja de salida con el nombre especificado en todas las instancias de autor.
+1. Inicie sesión en instancias de autor como administrador. Vaya a **Herramientas** >  **Operaciones** >  **Consola web**.
+1. Busque y abra el **Proveedor de almacenamiento del repositorio de transacciones de Forms** servicio.
+1. Especifique el nombre de la bandeja de salida personalizada en **Salidas** campo . Haga clic en **Guardar**. Se crea una bandeja de salida con el nombre especificado en todas las instancias de autor.
 
 ## Visualización del informe de transacciones {#viewing-the-transaction-report}
 
 Puede ver informes de transacciones en instancias de autor o publicación. El informe de transacción de la instancia de autor proporciona una suma agregada de todas las transacciones que se realizan en las instancias de autor y publicación configuradas. El informe de transacciones de la instancia de publicación proporciona un recuento de transacciones que se realizan solamente en la instancia de publicación subyacente. Siga estos pasos para ver el informe:
 
 1. Inicie sesión en el servidor de AEM Forms en `https://[hostname]:[port]`.
-1. Vaya a **Tools** > **Forms** > **View Transaction Report**.
+1. Vaya a **Herramientas** >  **Forms** >  **Ver informe de transacciones**.
 
 ## Explicación del informe {#understanding-the-report}
 
@@ -86,13 +84,13 @@ AEM Forms muestra los informes de transacciones desde la fecha configurada, como
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* Utilice las opciones **Reset the date to today** para restablecer los registros de transacciones. Cuando restablece la fecha a hoy, se pierden todos los registros de transacción anteriores. Cuando restablece la fecha en una instancia de autor, el cambio no afecta a los informes de transacción en las instancias de publicación y, a la inversa.
-* Utilice **Mostrar transacciones de solo instancias de publicación** para ver todas las transacciones que se produjeron únicamente en la instancia de publicación o granja de publicación configurada.
-* Utilice las categorías: **Documentos procesados**, **Documentos procesados** y **Forms enviados** para ver las transacciones correspondientes. Para ver el tipo de transacciones contabilizadas en estas categorías, consulte [API de informes de transacciones facturables](/help/forms/using/transaction-reports-billable-apis.md).
+* Utilice la variable **Restablecer la fecha a hoy** para restablecer los registros de transacción. Cuando restablece la fecha a hoy, se pierden todos los registros de transacción anteriores. Cuando restablece la fecha en una instancia de autor, el cambio no afecta a los informes de transacción en las instancias de publicación y, a la inversa.
+* Utilice la variable **Mostrar transacciones de solo instancias de publicación** para ver todas las transacciones que se produjeron únicamente en la instancia de publicación o en la granja de publicación configurada.
+* Utilice las categorías: **Documento procesado**, **Documentos procesados** y **Forms enviado** para ver las transacciones correspondientes. Para el tipo de transacciones contabilizadas en estas categorías, consulte [API de informes de transacciones facturables](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Ver registros de informes de transacciones {#view-transaction-reporting-logs}
 
-Los informes de transacciones colocan toda la información mostrada en el informe y cierta información adicional en los registros. La información proporcionada en los registros es útil para los usuarios avanzados. Por ejemplo, los registros dividen las transacciones en varias categorías granulares en comparación con tres categorías consolidadas mostradas en el informe. Los registros están disponibles en el archivo `error.log` en el directorio `/crx-repository/logs/`. Los registros están disponibles aunque no habilite los informes de transacción desde AEM consola web.
+Los informes de transacciones colocan toda la información mostrada en el informe y cierta información adicional en los registros. La información proporcionada en los registros es útil para los usuarios avanzados. Por ejemplo, los registros dividen las transacciones en varias categorías granulares en comparación con tres categorías consolidadas mostradas en el informe. Los registros están disponibles en la `error.log` en el `/crx-repository/logs/` directorio. Los registros están disponibles aunque no habilite los informes de transacción desde AEM consola web.
 
 ## Artículos relacionados {#related-articles}
 

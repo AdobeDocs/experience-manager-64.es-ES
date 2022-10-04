@@ -1,8 +1,8 @@
 ---
 title: Invocación de AEM Forms mediante API
-seo-title: Invocación de AEM Forms mediante API
-description: 'Adobe Experience Manager Forms es un software empresarial basado en J2EE que consta de servicios que funcionan dentro de una infraestructura compartida. Aprenda a utilizar aplicaciones de cliente para invocar AEM Forms mediante programación mediante una API de Java, servicios web, Remoting y API de REST. '
-seo-description: Adobe Experience Manager Forms es un software empresarial basado en J2EE que consta de servicios que funcionan dentro de una infraestructura compartida. Aprenda a utilizar aplicaciones de cliente para invocar AEM Forms mediante programación mediante una API de Java, servicios web, Remoting y API de REST.
+seo-title: Invoking AEM Forms using APIs
+description: Adobe Experience Manager Forms es un software empresarial basado en J2EE que consta de servicios que funcionan dentro de una infraestructura compartida. Aprenda a utilizar aplicaciones de cliente para invocar AEM Forms mediante programación mediante una API de Java, servicios web, Remoting y API de REST.
+seo-description: Adobe Experience Manager Forms is J2EE-based enterprise software that consists of services that operate within a shared infrastructure. Learn how to use client applications to invoke AEM Forms programmatically using a Java API, web services, Remoting, and REST API.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6b60209f-aced-4698-97f1-b1a7782eef46
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # Invocación de AEM Forms mediante API {#invoking-aem-forms-using-apis}
 
@@ -32,4 +31,3 @@ Los servicios requieren un contenedor de servicios para ejecutarse, de forma sim
 >[!NOTE]
 >
 >La programación con formularios AEM no incluye información sobre cómo invocar AEM Forms mediante carpetas vigiladas o correo electrónico.
-

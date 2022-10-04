@@ -1,23 +1,22 @@
 ---
 title: Creación de un formulario adaptable utilizando un conjunto de formularios adaptables
-seo-title: Creación de un formulario adaptable utilizando un conjunto de formularios adaptables
-description: 'Con AEM Forms, aúne formularios adaptables para crear un único formulario adaptable de gran tamaño y comprender sus funciones. '
-seo-description: 'Con AEM Forms, aúne formularios adaptables para crear un único formulario adaptable de gran tamaño y comprender sus funciones. '
+seo-title: Create an adaptive form using a set of adaptive forms
+description: Con AEM Forms, aúne formularios adaptables para crear un único formulario adaptable de gran tamaño y comprender sus funciones.
+seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 969b0c11-adc7-476e-8c82-d444fccba984
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
-
-# Crear un formulario adaptable utilizando un conjunto de formularios adaptables {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+# Creación de un formulario adaptable utilizando un conjunto de formularios adaptables {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 ## Información general {#overview}
 
@@ -37,7 +36,7 @@ Las funciones como la creación independiente y la carga diferida proporcionan m
 
 ## Entre bastidores {#behind-the-scenes}
 
-Se pueden agregar fragmentos y formularios adaptables basados en XSD en el formulario principal. La estructura del formulario principal es la misma que [cualquier formulario adaptable](/help/forms/using/prepopulate-adaptive-form-fields.md). Cuando se agrega un formulario adaptable como formulario secundario, se agrega como panel en el formulario principal. Los datos de un formulario secundario enlazado se almacenan en la `data`raíz de la sección `afBoundData` del esquema XML del formulario principal.
+Se pueden agregar fragmentos y formularios adaptables basados en XSD en el formulario principal. La estructura del formulario principal es la misma que [cualquier formulario adaptable](/help/forms/using/prepopulate-adaptive-form-fields.md). Cuando se agrega un formulario adaptable como formulario secundario, se agrega como panel en el formulario principal. Los datos de un formulario secundario enlazado se almacenan en la sección `data`raíz de `afBoundData` del esquema XML del formulario principal.
 
 Por ejemplo, los clientes rellenan un formulario de solicitud. Los dos primeros campos del formulario son nombre e identidad. Su XML es:
 
@@ -55,7 +54,7 @@ Por ejemplo, los clientes rellenan un formulario de solicitud. Los dos primeros 
 </afData>
 ```
 
-Agregue otro formulario en la aplicación que permita a los clientes rellenar su dirección de oficina. La raíz del esquema del formulario secundario es `officeAddress`. Aplique `bindref` `/application/officeAddress` o `/officeAddress`. Si no se proporciona `bindref`, el formulario secundario se agrega como subárbol `officeAddress`. Consulte el XML del formulario a continuación:
+Agregue otro formulario en la aplicación que permita a los clientes rellenar su dirección de oficina. La raíz del esquema del formulario secundario es `officeAddress`. Aplicar `bindref` `/application/officeAddress` o `/officeAddress`. If `bindref`no se proporciona, el formulario secundario se agrega como `officeAddress` subárbol. Consulte el XML del formulario a continuación:
 
 ```xml
 <afData>
@@ -125,11 +124,11 @@ Por ejemplo, aplique bindrefs `/application/address[1]` o `/address[1]` y `/appl
 </afData>
 ```
 
-Puede cambiar el subárbol predeterminado del formulario o fragmento adaptable mediante la propiedad `bindRef` . La propiedad `bindRef` permite especificar la ruta que señala a una ubicación en la estructura de árbol del esquema XML.
+Puede cambiar el subárbol predeterminado del formulario o fragmento adaptable utilizando la variable `bindRef` propiedad. La variable `bindRef` la propiedad permite especificar la ruta que señala a una ubicación en la estructura de árbol del esquema XML.
 
-Si el formulario secundario es independiente, sus datos se almacenan en la raíz `data`de la sección `afUnboundData` del esquema XML del formulario principal.
+Si el formulario secundario es independiente, sus datos se almacenan en la sección `data`raíz de `afUnboundData` del esquema XML del formulario principal.
 
-Puede agregar un formulario adaptable como formulario secundario varias veces. Asegúrese de que `bindRef` se modifique correctamente para que cada instancia utilizada del formulario adaptable apunte a una subraíz diferente debajo de la raíz de datos.
+Puede agregar un formulario adaptable como formulario secundario varias veces. Asegúrese de que la variable `bindRef` se modifica correctamente para que cada instancia utilizada del formulario adaptable apunte a una subraíz diferente debajo de la raíz de datos.
 
 >[!NOTE]
 >
@@ -140,9 +139,8 @@ Puede agregar un formulario adaptable como formulario secundario varias veces. A
 Realice los siguientes pasos para agregar un formulario adaptable como formulario secundario mediante el explorador de recursos.
 
 1. Abra el formulario principal en modo de edición.
-1. En la barra lateral, haga clic en **Assets** ![assets-browser](assets/assets-browser.png). En Assets, seleccione **Formulario adaptable** en la lista desplegable.
+1. En la barra lateral, haga clic en **Recursos** ![assets-browser](assets/assets-browser.png). En Recursos, seleccione **Formulario adaptable** en la lista desplegable .
    [ ![Selección de un formulario adaptable en Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Arrastre y suelte el formulario adaptable que desee agregar como formulario secundario.
-   [ ![Arrastre y suelte el formulario adaptable en su ](assets/drag-drop.png)](assets/drag-drop-1.png)sitioEl formulario adaptable que suelte se agrega como formulario secundario.
-
+   [ ![Arrastre y suelte el formulario adaptable en el sitio](assets/drag-drop.png)](assets/drag-drop-1.png)El formulario adaptable que suelte se agrega como formulario secundario.

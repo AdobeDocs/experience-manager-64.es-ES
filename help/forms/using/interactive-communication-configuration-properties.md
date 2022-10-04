@@ -1,8 +1,8 @@
 ---
 title: Propiedades de configuración de Interactive Communications
-seo-title: Propiedades de configuración de la comunicación interactiva
+seo-title: Interactive Communication configuration properties
 description: Editar propiedades de configuración predeterminadas para Interactive Communications
-seo-description: Editar propiedades de configuración predeterminadas para Interactive Communications
+seo-description: Edit default configuration properties for Interactive Communications
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,24 +10,23 @@ content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 8%
+source-wordcount: '531'
+ht-degree: 7%
 
 ---
-
 
 # Propiedades de configuración de Interactive Communications {#interactive-communications-configuration-properties}
 
 Editar propiedades de configuración predeterminadas para Interactive Communications
 
-Interactive Communications incluye propiedades que se configuran automáticamente después de instalar el paquete [AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md). Los autores de comunicación interactiva pueden editar estas propiedades de configuración predeterminadas mediante la página **Configuración de la consola web de Adobe Experience Manager**.
+Interactive Communications incluye propiedades que se configuran automáticamente después de instalar el [Complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) paquete. Los autores de Interactive Communication pueden editar estas propiedades de configuración predeterminadas mediante el **Configuración de la consola web de Adobe Experience Manager** página.
 
-Abra la página **Configuración de la consola web de Adobe Experience Manager** con la siguiente dirección URL:
+Abra el **Configuración de la consola web de Adobe Experience Manager** con la siguiente dirección URL:
 
-https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
+https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 
 Las propiedades de configuración incluyen:
 
@@ -38,7 +37,7 @@ Las propiedades de configuración incluyen:
 
 ## Configuración de fragmentos de documento {#document-fragments-configuration}
 
-Pulse **Configuración de fragmentos de documento** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
+Toque **Configuración de fragmentos de documento** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
 
 <table> 
  <tbody> 
@@ -84,7 +83,7 @@ Pulse **Configuración de fragmentos de documento** en la página **Configuraci�
 
 ## Crear configuración de correspondencia {#create-correspondence-configuration}
 
-Pulse **Crear configuración de correspondencia** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
+Toque **Crear configuración de correspondencia** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
@@ -93,7 +92,7 @@ Pulse **Crear configuración de correspondencia** en la página **Configuración
 
 ## Configuración del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Pulse **Configuración del canal web de formulario adaptable y comunicación interactiva** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la tabla siguiente se describen las propiedades relacionadas con las comunicaciones interactivas:
+Toque **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la tabla siguiente se describen las propiedades relacionadas con las comunicaciones interactivas:
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
@@ -101,9 +100,9 @@ Pulse **Configuración del canal web de formulario adaptable y comunicación int
 | Máximo de entradas de caché | Establezca el número máximo de formularios adaptables y comunicaciones interactivas que se pueden recuperar mediante la memoria caché. | 100 | Número |
 | Convertir el nombre de archivo en único | Seleccione la casilla de verificación para incluir nombres únicos para los archivos como archivos adjuntos en Adaptive Forms y Comunicaciones interactivas. | No seleccionado | No aplicable |
 
-## Configuración del tema del canal web de comunicación adaptable {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Pulse **Configuración del tema del canal web de formulario adaptable y comunicación interactiva** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los temas del canal web de comunicaciones interactivas y Forms adaptable.
+Toque **Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los temas del canal web Adaptive Forms e Interactive Communications.
 
 <table> 
  <tbody> 
@@ -121,4 +120,3 @@ Pulse **Configuración del tema del canal web de formulario adaptable y comunica
   </tr> 
  </tbody> 
 </table>
-

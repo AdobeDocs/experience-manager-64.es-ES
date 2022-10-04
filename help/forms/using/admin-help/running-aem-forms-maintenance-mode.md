@@ -1,57 +1,55 @@
 ---
 title: Ejecución de AEM formularios en modo de mantenimiento
-seo-title: Ejecución de AEM formularios en modo de mantenimiento
-description: El modo de mantenimiento resulta útil cuando se realizan tareas como la aplicación de parches en DSC, la actualización de formularios AEM o la aplicación de un Service Pack. Obtenga más información sobre la ejecución de AEM formularios en modo de mantenimiento.
-seo-description: El modo de mantenimiento resulta útil cuando se realizan tareas como la aplicación de parches en DSC, la actualización de formularios AEM o la aplicación de un Service Pack. Obtenga más información sobre la ejecución de AEM formularios en modo de mantenimiento.
+seo-title: Running AEM forms in maintenance mode
+description: El modo de mantenimiento es útil cuando se realizan tareas como parchear un DSC, actualizar AEM formularios o aplicar un Service Pack. Obtenga más información sobre la ejecución de AEM formularios en el modo de mantenimiento.
+seo-description: Maintenance mode is useful when performing tasks such as patching a DSC, upgrading AEM forms, or applying a service pack. Learn more about running AEM forms in maintenance mode.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: 2f56bbc7-5e23-4c84-ac0a-03f0b01150b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
-
 # Ejecución de AEM formularios en modo de mantenimiento {#running-aem-forms-in-maintenance-mode}
 
-El modo de mantenimiento resulta útil cuando se realizan tareas como la aplicación de parches en DSC, la actualización de formularios AEM o la aplicación de un Service Pack.
+El modo de mantenimiento es útil cuando se realizan tareas como parchear un DSC, actualizar AEM formularios o aplicar un Service Pack.
 
 Evite invocar procesos mientras el servidor está en modo de mantenimiento. Esto es lo que sucede si se invoca un proceso mientras el servidor está en modo de mantenimiento:
 
-* Si el proceso es de larga duración, se agrega a la base de datos de trabajos, pero no se inicia. Al salir del modo de mantenimiento, AEM formularios procesa los trabajos de larga duración en su cola, incluso si el servidor se reinició en el modo de mantenimiento.
+* Si el proceso dura mucho tiempo, se agrega a la base de datos de trabajos, pero no se inicia. Al salir del modo de mantenimiento, AEM forms procesa los trabajos de larga duración en su cola, incluso si el servidor se reinició en el modo de mantenimiento.
 * Si el proceso es de corta duración, se procesa de inmediato.
 
 **Poner AEM formularios en modo de mantenimiento**
 
-1. En un navegador web, introduzca:
+1. En un explorador web, introduzca:
 
-   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostnameportadmin ]*`&password=`*[usernamepassword]*
+   `https://`*[hostname ]*`:`*[puerto]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[nombre de usuario del administrador ]*`&password=`*[password]*
 
-   En la ventana del explorador se muestra un mensaje &quot;ahora en pausa&quot;.
+   Se muestra un mensaje &quot;ahora en pausa&quot; en la ventana del explorador.
 
    >[!NOTE]
    >
-   >Si apaga el servidor mientras está en modo de mantenimiento, seguirá en modo de mantenimiento cuando se reinicie. Debe desactivar el modo de mantenimiento cuando haya finalizado sus tareas de mantenimiento.
+   >Si apaga el servidor mientras está en modo de mantenimiento, seguirá en modo de mantenimiento cuando se reinicie. Debe desactivar el modo de mantenimiento cuando haya terminado sus tareas de mantenimiento.
 
-**Comprobar si AEM formularios se están ejecutando en modo de mantenimiento**
+**Comprobar si AEM formularios se están ejecutando en el modo de mantenimiento**
 
-1. En un navegador web, introduzca:
+1. En un explorador web, introduzca:
 
-   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadmin]* `&password=`*[usernamepassword ]*
+   `https://`*[hostname]:[puerto ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[nombre de usuario del administrador]* `&password=`*[password ]*
 
    El estado se muestra en la ventana del explorador. El estado &quot;true&quot; indica que el servidor se está ejecutando en modo de mantenimiento y &quot;false&quot; indica que el servidor no está en modo de mantenimiento.
 
 **Desactivar modo de mantenimiento**
 
-1. En un navegador web, introduzca:
+1. En un explorador web, introduzca:
 
-   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadmin]* `&password=`*[usernamepassword ]*
+   `https://`*[hostname]:[puerto ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[nombre de usuario del administrador]* `&password=`*[password ]*
 
    Se muestra un mensaje &quot;ahora en ejecución&quot; en la ventana del explorador.
-

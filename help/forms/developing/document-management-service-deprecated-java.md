@@ -1,8 +1,8 @@
 ---
 title: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
-seo-title: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Utilice la API de Java del servicio de administración de documentos para crear espacios de servicios de contenido, eliminar espacios de servicios de contenido, añadir contenido a servicios de contenido, recuperar contenido de los servicios de contenido, mover contenido de los servicios de contenido, enumerar contenido de los servicios de contenido, buscar contenido de los servicios de contenido y establecer permisos de los servicios de contenido.
-seo-description: Utilice la API de Java del servicio de administración de documentos para crear espacios de servicios de contenido, eliminar espacios de servicios de contenido, añadir contenido a servicios de contenido, recuperar contenido de los servicios de contenido, mover contenido de los servicios de contenido, enumerar contenido de los servicios de contenido, buscar contenido de los servicios de contenido y establecer permisos de los servicios de contenido.
+seo-description: Use the Document Management Service Java API to create Content Services spaces, delete Content Services spaces, Add content to Content Services, retrieve content from Content Services, move Content Services content, list Content Services content, search Content Services content, and set Content Services permissions.
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5ffd9600-03ec-4fd5-abb1-a8d9adefe6f3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
-
 
 # Inicio rápido de la API de Java (SOAP) del servicio de administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
@@ -247,7 +246,7 @@ El siguiente ejemplo de código Java elimina un espacio llamado /Company Home/Te
 
 ## Inicio rápido (modo SOAP): Añadir contenido a los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-En el siguiente ejemplo de código Java se agrega un archivo PDF denominado *MortgageForm.pdf* a una carpeta denominada /Company Home/Test Directory. Se establecen los atributos creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
+El siguiente ejemplo de código Java agrega un archivo PDF denominado *MortgageForm.pdf* a una carpeta denominada /Company Home/Test Directory. Se establecen los atributos creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
 
 ```as3
  /* 
@@ -476,7 +475,7 @@ El siguiente ejemplo de código Java recupera un archivo PDF denominado *Mortgag
 
 ## Inicio rápido (modo SOAP): Mover el contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java mueve un archivo PDF llamado *MortgageForm.pdf* desde /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
+El siguiente ejemplo de código Java mueve un archivo PDF llamado *MortgageForm.pdf* de /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
 
 ```as3
  /* 
@@ -800,7 +799,7 @@ El siguiente código Java busca en /Company Home un documento que contenga el te
 
 ## Inicio rápido (modo SOAP): Configuración de los permisos de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java establece un permiso para un usuario denominado tony blue. El dominio especificado es el dominio predeterminado. El permiso de Consumidor se especifica y el nodo es `/Company Home/Test Directory`.
+El siguiente ejemplo de código Java establece un permiso para un usuario denominado tony blue. El dominio especificado es el dominio predeterminado. El permiso de consumidor se especifica y el nodo es `/Company Home/Test Directory`.
 
 ```as3
  /* 
@@ -910,7 +909,7 @@ El siguiente ejemplo de código Java establece un permiso para un usuario denomi
 
 ## Inicio rápido (modo SOAP): Creación de asociaciones mediante la API de Java (obsoleto) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-El siguiente código Java crea una asociación entre un archivo de datos XML y un formulario PDF. Este tipo de asociación se denomina LinkedBy.El documento PDF debe tener aplicada la relación de aspecto.
+El siguiente código Java crea una asociación entre un archivo de datos XML y un formulario de PDF. Este tipo de asociación se denomina LinkedBy.El documento PDF debe tener aplicada la relación de aspecto.
 
 ```as3
  /* 
@@ -1024,4 +1023,3 @@ El siguiente código Java crea una asociación entre un archivo de datos XML y u
      } 
  
 ```
-

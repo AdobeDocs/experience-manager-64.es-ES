@@ -21,9 +21,9 @@ ht-degree: 0%
 
 La página Configuración del servidor proporciona acceso a varias configuraciones para el flujo de trabajo de formularios:
 
-* **Configuración de** correo electrónico que habilita los mensajes de correo electrónico salientes, junto con la configuración del servidor de correo electrónico que se utiliza para esos mensajes. (Consulte [Configuración de correo electrónico](configuring-server-settings.md#configuring-email-settings)).
-* **Configuración de notificaciones de** tareas que habilita, deshabilita o modifica los mensajes enviados en notificaciones por correo electrónico a usuarios finales y grupos con respecto a sus tareas. (Consulte [Configuración de notificaciones para usuarios y grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups)).
-* **Configuración de notificaciones del administrador** que habilita, deshabilita o modifica los mensajes enviados en notificaciones por correo electrónico para tareas administrativas. (Consulte [Configuración de notificaciones para administradores](configuring-server-settings.md#configuring-notifications-for-administrators)).
+* **Configuración de correo electrónico** que habilitan los mensajes de correo electrónico salientes, junto con la configuración del servidor de correo electrónico que se utiliza para dichos mensajes. (Consulte [Configuración de correo electrónico](configuring-server-settings.md#configuring-email-settings).)
+* **Configuración de notificaciones de tareas** que habiliten, deshabiliten o modifiquen los mensajes enviados en notificaciones por correo electrónico a usuarios y grupos finales con respecto a sus tareas. (Consulte [Configuración de notificaciones para usuarios y grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Configuración de notificaciones del administrador** que habiliten, deshabiliten o modifiquen los mensajes enviados en notificaciones por correo electrónico para tareas administrativas. (Consulte [Configuración de notificaciones para administradores](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Configuración de correo electrónico {#configuring-email-settings}
 
@@ -31,7 +31,7 @@ Puede especificar una cuenta de correo electrónico para el servidor de formular
 
 Para permitir el envío de mensajes de correo electrónico entre AEM formularios y los usuarios, configure la configuración de correo electrónico saliente en la página Configuración de correo electrónico . El correo electrónico saliente debe utilizar un servidor SMTP.
 
-Para permitir que AEM formularios reciban y gestionen mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio Tarea completa. (Consulte [Crear un extremo de correo electrónico para el servicio de tarea completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Para permitir que AEM formularios reciban y gestionen mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio Tarea completa. (Consulte [Creación de un extremo de correo electrónico para el servicio Tarea completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Si los procesos están diseñados e implementados sin requerir correo electrónico, no es necesario configurar ninguna de las opciones de la página Configuración de correo electrónico .
 
@@ -45,7 +45,7 @@ Si los procesos están diseñados e implementados sin requerir correo electróni
 
    >[!NOTE]
    >
-   >Si utiliza Microsoft Exchange Server y la dirección de correo electrónico es una dirección de correo electrónico no válida, el servidor de Microsoft Exchange no puede enviar un correo electrónico a las listas de distribución. Para resolver el problema, seleccione la opción **Enable External Communication** por separado para cada Lista de distribución en el servidor de Microsoft Exchange.
+   >Si utiliza Microsoft Exchange Server y la dirección de correo electrónico es una dirección de correo electrónico no válida, el servidor de Microsoft Exchange no puede enviar un correo electrónico a las listas de distribución. Para resolver el problema, seleccione la opción **Habilitar la comunicación externa** por separado para cada Lista de distribución en el servidor de Microsoft Exchange.
 
 1. Haga clic en Guardar.
 
@@ -59,7 +59,7 @@ Si los procesos están diseñados e implementados sin requerir correo electróni
 >
 >Flex Workspace está obsoleto para AEM versión de formularios.
 
-De forma predeterminada, los correos electrónicos enviados por AEM formularios contienen vínculos a Flex Workspace (obsoleto para AEM formularios en JEE). Puede configurar AEM formularios para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre (obsoleto para AEM formularios en JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
+De forma predeterminada, los correos electrónicos enviados por AEM formularios contienen vínculos a Flex Workspace (obsoleto para AEM formularios en JEE). Puede configurar AEM formularios para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre Flex Workspace (obsoleto para AEM formularios en JEE), consulte [this](/help/forms/using/features-html-workspace-available-flex.md) artículo.
 
 1. En la consola de administración, haga clic en Inicio > Servicios > Flujo de trabajo de formularios > Configuración del servidor > Notificaciones de tareas.
 1. Abra la plantilla de asignación de tareas.
@@ -95,7 +95,7 @@ Puede enviar notificaciones de recordatorio al usuario o grupo asignado cuando s
 1. (Solo notificaciones del usuario) Para incluir un archivo adjunto del formulario y sus datos con el mensaje de correo electrónico recordatorio, seleccione Incluir datos del formulario.
 1. En el cuadro Asunto, escriba el texto de la línea de asunto del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. En el cuadro Plantilla de notificación, escriba el texto para el cuerpo del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, ya sea HTML o texto. El formato predeterminado es HTML.
+1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, HTML o Texto. El formato predeterminado es HTML.
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que la mayoría de los usuarios fuera de Japón utilizarán. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
@@ -109,7 +109,7 @@ Puede enviar notificaciones de asignación de tareas a un usuario o grupo cuando
 1. (Solo notificaciones del usuario) Para incluir un archivo adjunto del formulario y sus datos con el mensaje de correo electrónico de asignación de tareas, seleccione Incluir datos del formulario.
 1. En el cuadro Asunto, escriba el texto de la línea de asunto del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. En el cuadro Plantilla de notificación, escriba el texto para el cuerpo del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, ya sea HTML o texto. El formato predeterminado es HTML.
+1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, HTML o Texto. El formato predeterminado es HTML.
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que la mayoría de los usuarios fuera de Japón utilizarán. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
@@ -122,7 +122,7 @@ Puede enviar notificaciones de fecha límite a usuarios y grupos cuando haya pas
 1. Seleccione Activar fecha límite o Activar grupo - Fecha límite.
 1. En el cuadro Asunto, escriba el texto de la línea de asunto del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. En el cuadro Plantilla de notificación, escriba el texto para el cuerpo del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, ya sea HTML o texto. El formato predeterminado es HTML.
+1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, HTML o Texto. El formato predeterminado es HTML.
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que la mayoría de los usuarios fuera de Japón utilizarán. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
@@ -149,7 +149,7 @@ Si una rama se detiene (deja de continuar deliberadamente o debido a un error), 
 1. En el cuadro Dirección de correo electrónico, escriba las direcciones de los usuarios a los que se notificará cuando una rama se detenga. Utilice el formato user@domain.com y separe cada dirección con una coma. Normalmente, esta dirección de correo electrónico es para un administrador.
 1. En el cuadro Asunto, escriba el texto de la línea de asunto del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. En el cuadro Plantilla de notificación, escriba el texto para el cuerpo del mensaje de correo electrónico. Este campo se rellena previamente con texto predeterminado. Para obtener más información sobre la personalización de este campo, consulte [Personalización del contenido de las notificaciones](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, ya sea HTML o texto. El formato predeterminado es HTML.
+1. En la lista Formato del mensaje, seleccione el formato en el que se envía el mensaje de correo electrónico, HTML o Texto. El formato predeterminado es HTML.
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que la mayoría de los usuarios fuera de Japón utilizan. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
@@ -175,7 +175,7 @@ Las páginas Notificaciones de tareas y Notificaciones de administrador proporci
 
 ### Editor de texto enriquecido {#rich-text-editor}
 
-El área Plantilla de notificación es un editor de texto enriquecido que permite generar HTML para los mensajes de notificación de correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, así como alineación de párrafos y viñetas.
+El área Plantilla de notificación es un editor de texto enriquecido que le permite generar un HTML para los mensajes de notificación de correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, así como alineación de párrafos y viñetas.
 
 ### Generación de URL {#url-generation}
 
@@ -193,9 +193,9 @@ Solo para las notificaciones de tareas, el flujo de trabajo de Forms incluye dos
 >
 >Flex Workspace está en desuso para AEM versión de formularios.
 
-Si la solución está implementada en un entorno agrupado, reemplace `@@notification-host@@` por la dirección del clúster.
+Si su solución está implementada en un entorno agrupado, sustituya `@@notification-host@@` con la dirección del clúster.
 
-`<`** `>` PORTes el número de puerto del listener HTTP del servidor de aplicaciones. El puerto de escucha HTTP predeterminado para los servidores de aplicaciones compatibles es el siguiente:
+`<`*PUERTO* `>` es el número de puerto del listener HTTP del servidor de aplicaciones. El puerto de escucha HTTP predeterminado para los servidores de aplicaciones compatibles es el siguiente:
 
 **JBoss:** 8080
 
@@ -203,7 +203,7 @@ Si la solución está implementada en un entorno agrupado, reemplace `@@notifica
 
 **IBM WebSphere:** 9080
 
-Para que estas URL funcionen correctamente, reemplace `<`*PORT* `>` por el número de puerto apropiado para su entorno.
+Para que estas URL funcionen correctamente, reemplace `<`*PUERTO* `>` con el número de puerto adecuado para su entorno.
 
 >[!NOTE]
 >
@@ -215,23 +215,23 @@ La lista Selector de variables proporciona variables útiles que puede arrastrar
 
 Para recordatorios, asignaciones de tareas y fechas límite para usuarios y grupos, puede utilizar las siguientes variables en los cuadros Asunto y Plantilla de notificación:
 
-**** descriptionEl contenido de la propiedad Description, tal como se define en el paso del usuario (punto de inicio, operación Asignar tarea o operación Asignar varias tareas) del proceso en Workbench.
+**descripción** El contenido de la propiedad Description, tal como se define en el paso del usuario (punto de inicio, operación Assign Task o operación Assign Multiple Tasks) del proceso en Workbench.
 
-**** InstruccionesContenido de la propiedad Instrucciones de tarea, tal como se define en el paso del usuario del proceso en Workbench.
+**instrucciones** El contenido de la propiedad Instrucciones de tarea, tal como se define en el paso de usuario del proceso en Workbench.
 
-**notification-** hostEl nombre de host del servidor de aplicaciones de AEM forms .
+**notification-host** El nombre de host del servidor de aplicaciones de AEM forms .
 
-**process-** nameEl nombre del proceso.
+**process-name** Nombre del proceso.
 
-**operation-** nameEl nombre del paso.
+**operation-name** Nombre del paso.
 
-**** taskidIdentificador único de la tarea actual.
+**taskid** Identificador único de la tarea actual.
 
-**** actionsGenera una lista numerada de rutas válidas (por ejemplo, Aprobar, Rechazar) en las que el destinatario puede hacer clic.
+**acciones** Genera una lista numerada de rutas válidas (por ejemplo, Aprobar, Rechazar) en las que el destinatario puede hacer clic.
 
 Además, para recordatorios de grupo, asignaciones de tareas de grupo y fechas límite de grupo, también puede utilizar:
 
-**group-** nameEl nombre del grupo al que se asigna el elemento de trabajo.
+**group-name** Nombre del grupo al que se asigna el elemento de trabajo.
 
 >[!NOTE]
 >
@@ -239,21 +239,21 @@ Además, para recordatorios de grupo, asignaciones de tareas de grupo y fechas l
 
 Para ramas interrumpidas, puede utilizar las siguientes variables en los cuadros Asunto y Plantilla de notificación:
 
-**branch-** idIdentificador de rama.
+**branch-id** Identificador de rama.
 
-**process-** idIdentificador de instancia de proceso.
+**process-id** Identificador de instancia de proceso.
 
-**notification-** hostEl nombre de host del servidor de aplicaciones de AEM forms .
+**notification-host** El nombre de host del servidor de aplicaciones de AEM forms .
 
 Para las operaciones interrumpidas, puede utilizar las siguientes variables en los cuadros Asunto y Plantilla de notificación:
 
-**action-** idIdentificador de la operación.
+**action-id** Identificador de la operación.
 
-**branch-** idIdentificador de rama.
+**branch-id** Identificador de rama.
 
-**process-** idIdentificador de instancia de proceso.
+**process-id** Identificador de instancia de proceso.
 
-**notification-** hostEl nombre de host del servidor de aplicaciones de AEM forms .
+**notification-host** El nombre de host del servidor de aplicaciones de AEM forms .
 
 ### Uso de una variable en el cuadro Asunto {#using-a-variable-in-the-subject-box}
 
@@ -261,7 +261,7 @@ Si escribe el siguiente texto en el cuadro Asunto para las notificaciones de asi
 
 `Please complete task @@taskid@@`
 
-El usuario recibe un mensaje de correo electrónico con el siguiente asunto si se les asigna la tarea 376:
+El usuario recibe un mensaje de correo electrónico con el siguiente asunto si se le asigna la tarea 376:
 
 `Please complete task 376`
 

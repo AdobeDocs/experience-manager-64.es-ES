@@ -1,29 +1,28 @@
 ---
 title: Diseño
-seo-title: Diseño
+seo-title: Layout Design
 description: Diseño Detalles del diseño del diseño explica cómo crear diseños para utilizarlos en sus cartas o comunicaciones interactivas.
-seo-description: Diseño Detalles del diseño del diseño explica cómo crear diseños para utilizarlos en sus cartas o comunicaciones interactivas.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
 
-
-# Diseño de diseño {#layout-design}
+# Diseño {#layout-design}
 
 Las plantillas de formulario XFA o XDP son las plantillas para:
 
 * [Cartas](/help/forms/using/create-letter.md)
-* [Imprimir ](/help/forms/using/web-channel-print-channel.md#printchannel) canal de comunicaciones  [interactivas](/help/forms/using/interactive-communications-overview.md)
+* [Canal de impresión](/help/forms/using/web-channel-print-channel.md#printchannel) de [Comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Fragmentos de diseños
 
@@ -63,9 +62,9 @@ De forma predeterminada, todos los campos se consideran relacionados con otras f
 
 Un campo relacionado debe:
 
-* ser un XFA &lt;field> o &lt;exclGroup>
+* ser XFA &lt;field> o &lt;exclgroup>
 * tienen una referencia de enlace XFA
-* si es un &lt;exclGroup>, debe tener al menos un campo de botón de radio secundario; de lo contrario, su tipo de valor no se puede determinar
+* si es un &lt;exclgroup>, debe tener al menos un campo de botón de radio secundario; de lo contrario, su tipo de valor no se puede determinar
 
 Un campo relacionado debe:
 
@@ -75,7 +74,7 @@ Un campo relacionado no debe:
 
 * Incluir un sufijo &quot;_int&quot; en su nombre
 * tienen el enlace establecido como &quot;ninguno&quot;
-* ser un elemento secundario de un elemento &lt;exclGroup>
+* ser hijo de un &lt;exclgroup> element
 
 Siempre que un campo relacionado cumpla los criterios descritos anteriormente, puede estar en cualquier ubicación y en cualquier profundidad de anidación en el diseño. Puede utilizar campos relacionados dentro de las páginas de formato.
 
@@ -124,9 +123,8 @@ Utilice un campo si desea capturar datos de módulo o datos de elementos del dic
 
 Cuando elementos como el logotipo y la dirección de su organización aparezcan en todas las páginas de una carta o comunicación interactiva, cree campos de formulario para esos elementos y colóquelos en la página de formato. Utilice el enlace Nombre (Nombre de campo) para estos campos.
 
-## Especifique el formato de renderización del servidor {#specify-the-server-nbsp-render-format}
+## Especificar el formato de renderización del servidor {#specify-the-server-nbsp-render-format}
 
 Utilizar el formato de renderización del servidor de la presentación en Formulario XML dinámico; de lo contrario, las letras o comunicaciones interactivas basadas en este diseño no se pueden procesar correctamente. De forma predeterminada, el formato de renderización del servidor en Forms Designer está definido como Formulario XML dinámico. Para asegurarse de que está utilizando el formato correcto:
 
-* En Designer, haga clic en **[!UICONTROL Archivo > Propiedades del formulario > Predeterminado]** y asegúrese de que la configuración Formato/Renderización de PDF está establecida en Formulario XML dinámico.
-
+* En Designer, haga clic en **[!UICONTROL Archivo > Propiedades del formulario > Predeterminado]** y asegúrese de que la configuración Representación/Formato del PDF está establecida en Formulario XML dinámico.

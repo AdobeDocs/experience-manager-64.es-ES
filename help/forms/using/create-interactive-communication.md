@@ -1,23 +1,22 @@
 ---
 title: Crear una comunicación interactiva
-seo-title: Crear una comunicación interactiva
-description: 'Cree una comunicación interactiva con el editor de comunicación interactiva. Utilice la funcionalidad de arrastrar y soltar para crear la comunicación interactiva y previsualizar las salidas de impresión y web en diferentes tipos de dispositivos. '
-seo-description: 'Cree una comunicación interactiva con el editor de comunicación interactiva. Utilice la funcionalidad de arrastrar y soltar para crear la comunicación interactiva y previsualizar las salidas de impresión y web en diferentes tipos de dispositivos. '
+seo-title: Create an Interactive Communication
+description: Cree una comunicación interactiva con el editor de comunicación interactiva. Utilice la funcionalidad de arrastrar y soltar para crear la comunicación interactiva y previsualizar las salidas de impresión y web en diferentes tipos de dispositivos.
+seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
 uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a65b775d-040c-4069-b43a-6815be959b31
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3120'
 ht-degree: 2%
 
 ---
 
-
-# Crear una comunicación interactiva {#create-an-interactive-communication}
+# Crear una comunicación interactiva  {#create-an-interactive-communication}
 
 Cree una comunicación interactiva con el editor de comunicación interactiva. Utilice la funcionalidad de arrastrar y soltar para crear la comunicación interactiva y previsualizar las salidas de impresión y web en diferentes tipos de dispositivos.
 
@@ -29,59 +28,58 @@ Interactive Communications centraliza y administra la creación, el ensamblaje y
 
 Los siguientes son los requisitos previos para crear una comunicación interactiva:
 
-* Configure un [Modelo de datos de formulario](/help/forms/using/data-integration.md) que contenga datos de prueba o con un origen de datos real, como una instancia de Microsoft® Dynamics.
-* Asegúrese de que tiene los [fragmentos de documento](/help/forms/using/document-fragments.md).
-* Asegúrese de que tiene [Plantillas para impresión y canal web](/help/forms/using/web-channel-print-channel.md).
-* Asegúrese de que tiene el [tema](/help/forms/using/themes.md) requerido para el canal web.
+* Configure un [Modelo de datos de formulario](/help/forms/using/data-integration.md) que contienen datos de prueba o con una fuente de datos real, como una instancia de Microsoft® Dynamics.
+* Asegúrese de que tiene la variable [Fragmentos de documento](/help/forms/using/document-fragments.md).
+* Asegúrese de que [Plantillas para impresión y canal web](/help/forms/using/web-channel-print-channel.md).
+* Asegúrese de que dispone de los [tema](/help/forms/using/themes.md) para el canal web.
 
 ## Crear comunicación interactiva {#createic}
 
-1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. Pulse **[!UICONTROL Crear]** y seleccione **[!UICONTROL Comunicación interactiva]**. Aparece la página Crear comunicación interactiva .
+1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+1. Toque **[!UICONTROL Crear]** y seleccione **[!UICONTROL Comunicación interactiva]**. Aparece la página Crear comunicación interactiva .
 
    ![create-interactivo-communication](assets/create-interactive-communication.png)
 
-1. Indique la siguiente información. :
+1. Especifique la siguiente información. :
 
    * **[!UICONTROL Título]**: Introduzca el título de la comunicación interactiva.
    * **[!UICONTROL Nombre*]**: El nombre de la comunicación interactiva se deriva del título que introduzca. Edítela si es necesario.
    * **[!UICONTROL Descripción]**: Introduzca una descripción sobre la comunicación interactiva.
-   * **[!UICONTROL Modelo de datos de formulario*]**: Busque y seleccione el modelo de datos de formulario. Para obtener más información sobre el Modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
+   * **[!UICONTROL Modelo de datos de formulario*]**: Busque y seleccione el modelo de datos de formulario. Para obtener más información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
    * **[!UICONTROL Servicio de precarga]**: Seleccione el servicio de rellenado previo para recuperar los datos y rellenar previamente la comunicación interactiva.
-   * **[!UICONTROL Tipo]** de proceso posterior: Puede seleccionar AEM flujo de trabajo o Forms que se activará cuando se envíe la comunicación interactiva. Seleccione el tipo de flujo de trabajo que desea activar.
-   * **[!UICONTROL Proceso]** posterior: Seleccione el nombre del flujo de trabajo que desea activar. Cuando seleccione AEM flujo de trabajo, indique la ruta de acceso del archivo adjunto, la ruta de diseño, la ruta del PDF, la ruta de datos de impresión y la ruta de datos web.
+   * **[!UICONTROL Tipo de proceso posterior]**: Puede seleccionar AEM flujo de trabajo o Forms que se activará cuando se envíe la comunicación interactiva. Seleccione el tipo de flujo de trabajo que desea activar.
+   * **[!UICONTROL Proceso posterior]**: Seleccione el nombre del flujo de trabajo que desea activar. Cuando seleccione AEM flujo de trabajo, proporcione Ruta de acceso de datos adjuntos, Ruta de diseño, Ruta de acceso del PDF, Ruta de datos de impresión y Ruta de datos web.
    * **[!UICONTROL Etiquetas]**: Seleccione las etiquetas que desea aplicar a la comunicación interactiva. También puede escribir un nombre de etiqueta nuevo/personalizado y pulsar Intro para crearlo.
    * **[!UICONTROL Autor]**: el nombre del autor se toma automáticamente del nombre de usuario del usuario que ha iniciado sesión.
-   * **[!UICONTROL Fecha de publicación:]** introduzca la fecha para publicar la comunicación interactiva.
-   * **[!UICONTROL Fecha de cancelación de publicación]**: Introduzca la fecha para cancelar la publicación de la comunicación interactiva.
+   * **[!UICONTROL Fecha de publicación:]** Introduzca la fecha de publicación de la comunicación interactiva.
+   * **[!UICONTROL Cancelar publicación]**: Introduzca la fecha para cancelar la publicación de la comunicación interactiva.
 
-1. Toque **[!UICONTROL Siguiente]**. Aparecerá la pantalla para especificar los detalles de los canales web y de impresión.
+1. Pulse **[!UICONTROL Siguiente]**. Aparecerá la pantalla para especificar los detalles de los canales web y de impresión.
 1. Introduzca lo siguiente:
 
    * **[!UICONTROL Imprimir]**: Seleccione esta opción para generar el canal de impresión de la comunicación interactiva.
-   * **[!UICONTROL Imprimir plantilla*:]** busque y seleccione un XDP como plantilla de impresión.
-   * **[!UICONTROL Usar Imprimir como principal para el canal web:]** seleccione esta opción para crear el canal web sincronizado con el canal de impresión. El uso del canal de impresión como maestro para el canal web garantiza que el contenido y el enlace de datos del canal web se deriven del canal de impresión y que los cambios realizados en el canal de impresión se reflejen en el canal web al pulsar Sincronizar. Sin embargo, se permite a los autores romper la herencia de componentes específicos del canal web, según sea necesario. Para obtener más información, consulte [Sincronizar canal web con canal de impresión](/help/forms/using/create-interactive-communication.md#synchronize).
-   * **[!UICONTROL Web:]** seleccione esta opción para generar el canal web o la salida interactiva de la comunicación interactiva.
-   * **[!UICONTROL Plantilla web de comunicación interactiva*:]** Examine y seleccione la plantilla web.
-   * **** Tema y  **[!UICONTROL seleccione tema*]**: Busque y seleccione el tema para darle estilo al canal web de la comunicación interactiva. Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
-
+   * **[!UICONTROL Imprimir plantilla*:]** Busque y seleccione un XDP como plantilla de impresión.
+   * **[!UICONTROL Utilice Imprimir Como Principal Para El Canal Web:]** Seleccione esta opción para crear el canal web sincronizado con el canal de impresión. El uso del canal de impresión como maestro para el canal web garantiza que el contenido y el enlace de datos del canal web se deriven del canal de impresión y que los cambios realizados en el canal de impresión se reflejen en el canal web al pulsar Sincronizar. Sin embargo, se permite a los autores romper la herencia de componentes específicos del canal web, según sea necesario. Para obtener más información, consulte [Sincronizar el canal web con el canal de impresión](/help/forms/using/create-interactive-communication.md#synchronize).
+   * **[!UICONTROL Web:]** Seleccione esta opción para generar el canal web o la salida interactiva de la comunicación interactiva.
+   * **[!UICONTROL Plantilla web de comunicación interactiva*:]** Busque y seleccione la plantilla web .
+   * **[!UICONTROL Tema]** y **[!UICONTROL Seleccionar tema*]**: Busque y seleccione el tema para darle estilo al canal web de la comunicación interactiva. Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
    Para obtener más información sobre el canal de impresión y el canal web, consulte [Canal de impresión y canal web](/help/forms/using/web-channel-print-channel.md).
 
-1. Toque **[!UICONTROL Crear]**. Se crea la comunicación interactiva y aparece un cuadro de alerta. Pulse **[!UICONTROL Editar]** para comenzar a crear el contenido de la comunicación interactiva, tal como se explica en [Añadir contenido utilizando la interfaz de usuario de creación de comunicación interactiva](#step2). Como alternativa, puede pulsar **[!UICONTROL Listo]** y elegir editar la comunicación interactiva más adelante.
+1. Pulse **[!UICONTROL Crear]**. Se crea la comunicación interactiva y aparece un cuadro de alerta. Toque **[!UICONTROL Editar]** para comenzar a crear el contenido de la comunicación interactiva, tal como se explica en [Añadir contenido mediante la interfaz de usuario de creación de Interactive Communication](#step2). También puede tocar **[!UICONTROL Listo]** y elija editar la comunicación interactiva más adelante.
 
 ## Añadir contenido a la comunicación interactiva {#step2}
 
 Después de crear una comunicación interactiva, puede utilizar la interfaz de creación de comunicación interactiva para crear su contenido.
 
-Para obtener más información sobre la interfaz de creación de comunicaciones interactivas, consulte [Introducción a la creación de comunicaciones interactivas](/help/forms/using/introduction-interactive-communication-authoring.md).
+Para obtener más información sobre la interfaz de creación de comunicación interactiva, consulte [Introducción a la creación de comunicaciones interactivas](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. La interfaz de creación de comunicaciones interactivas se inicia al pulsar Editar como se menciona en [Crear comunicación interactiva](#createic). Como alternativa, puede navegar a un recurso de comunicación interactiva existente en AEM, seleccionarlo y pulsar **[!UICONTROL Editar]** para iniciar la interfaz de creación de comunicación interactiva.
+1. La interfaz de creación de Interactive Communication se inicia al pulsar Editar como se menciona en [Crear comunicación interactiva](#createic). También puede navegar a un recurso de comunicación interactiva existente en AEM, seleccionarlo y tocar **[!UICONTROL Editar]** para iniciar la interfaz de creación de comunicación interactiva.
 
    De forma predeterminada, aparece el canal de impresión de la comunicación interactiva, a menos que la comunicación interactiva sea solo de canal web. El canal de impresión de la comunicación interactiva muestra las áreas de destino, tal como están disponibles en la plantilla de canal de impresión/XDP seleccionada. En estas áreas y campos de destino, puede añadir componentes o recursos.
 
-1. Con el canal Imprimir seleccionado, seleccione la pestaña **[!UICONTROL Componentes]**. Los siguientes componentes están disponibles en el canal de impresión:
+1. Con el canal Imprimir seleccionado, seleccione el **[!UICONTROL Componentes]** pestaña . Los siguientes componentes están disponibles en el canal de impresión:
 
-   | **Componente** | **Funcionalidad** |
+   | **Component** | **Funcionalidad** |
    |---|---|
    | Gráfico | Agrega un gráfico que se puede usar en Comunicación interactiva para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Uso de gráficos en Interactive Communications](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragmento de documento | Permite añadir un componente reutilizable, como texto, lista o condición, a una comunicación interactiva. El componente añadido puede estar basado en el modelo de datos de formulario o sin un modelo de datos de formulario. |
@@ -89,7 +87,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
 
    Arrastre y suelte los componentes en la comunicación interactiva y configúrelos según sea necesario.
 
-1. Con el canal de impresión seleccionado, vaya a la pestaña **[!UICONTROL Assets]** y aplique el filtro para mostrar solo los recursos que desee ver.
+1. Con el canal de impresión seleccionado, vaya a la **[!UICONTROL Recursos]** y aplique el filtro para mostrar solo los recursos que desee ver.
 
    Con el navegador Recursos, también puede arrastrar y soltar recursos directamente en las áreas de destino de Comunicación interactiva.
 
@@ -105,7 +103,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/texts-interactive-communications.md" target="_blank">Texto</a></td> 
-   <td>Texto para añadir dirección, correo electrónico del destinatario y texto del cuerpo de la carta </td> 
+   <td>Texto para añadir la dirección, el correo electrónico del destinatario y el texto del cuerpo de la carta </td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/conditions-interactive-communications.md" target="_blank">Condición</a></td> 
@@ -120,21 +118,20 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
 
 Para obtener más información sobre los fragmentos de documento, consulte [Fragmentos de documento](/help/forms/using/document-fragments.md).
 
-1. Para configurar el enlace de variables, pulse una variable, seleccione ![configure_icon](assets/configure_icon.png) (Configure) y, a continuación, configure las propiedades de enlace en el panel Propiedades de la barra lateral.
+1. Para configurar el enlace de variables, pulse una variable y seleccione ![configure_icon](assets/configure_icon.png) (Configure) y, a continuación, configure las propiedades de enlace en el panel Propiedades de la barra lateral.
 
-   * **[!UICONTROL Ninguno]**: El agente rellenará el valor de la variable .
-   * **[!UICONTROL Fragmento]** de texto: Si está seleccionado, puede examinar y seleccionar un fragmento de documento de texto cuyo contenido se procese en el campo. Solo esos fragmentos de documento de texto pueden enlazarse a variables que no tienen variables dentro de.
-   * **[!UICONTROL Objeto]** Modelo de datos: Seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo .
+   * **[!UICONTROL Ninguna]**: El agente rellenará el valor de la variable .
+   * **[!UICONTROL Fragmento de texto]**: Si está seleccionado, puede examinar y seleccionar un fragmento de documento de texto cuyo contenido se procese en el campo. Solo esos fragmentos de documento de texto pueden enlazarse a variables que no tienen variables dentro de.
+   * **[!UICONTROL Objeto de modelo de datos]**: Seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo .
+   También puede elegir configurar el fragmento del documento de texto correspondiente. El panel Propiedades muestra la lista de variables del fragmento de documento de texto. Puede tocar ![editar](assets/edit.png) (Editar) al lado del nombre de una variable para mostrar la configuración de edición de esa variable.
 
-   También puede elegir configurar el fragmento del documento de texto correspondiente. El panel Propiedades muestra la lista de variables del fragmento de documento de texto. Puede pulsar ![editar](assets/edit.png) (Editar) al lado del nombre de una variable para mostrar la configuración de la variable para editarla.
-
-1. Para añadir una tabla, con el canal de impresión seleccionado, en la pestaña **[!UICONTROL Assets]** aplique el filtro para mostrar solo los fragmentos de diseño. Arrastre y suelte el fragmento de diseño necesario en la comunicación interactiva. Un fragmento de diseño se basa en un XDP y se puede utilizar para crear diseños gráficos o tablas estáticas y dinámicas en Comunicación interactiva que se rellenan con datos dinámicos.
+1. Para agregar una tabla, con el canal de impresión seleccionado, en el **[!UICONTROL Recursos]** aplique el filtro para mostrar solo los fragmentos de diseño. Arrastre y suelte el fragmento de diseño necesario en la comunicación interactiva. Un fragmento de diseño se basa en un XDP y se puede utilizar para crear diseños gráficos o tablas estáticas y dinámicas en Comunicación interactiva que se rellenan con datos dinámicos.
 
    Ejemplo: Una tabla de diseño para mostrar la prima bruta, el descuento por lealtad % y la disponibilidad de asistencia de emergencia en carretera para las políticas antiguas y nuevas.
 
-   Para obtener más información sobre los fragmentos de diseño, consulte [Fragmentos de documento](/help/forms/using/document-fragments.md).
+   Para obtener más información sobre fragmentos de diseño, consulte [Fragmentos de documento](/help/forms/using/document-fragments.md).
 
-1. Con el canal de impresión seleccionado, en la pestaña **[!UICONTROL Assets]** aplique el filtro para mostrar las imágenes. Arrastre y suelte las imágenes necesarias en la Comunicación interactiva, como el logotipo de la empresa.
+1. Con el canal de impresión seleccionado, en el **[!UICONTROL Recursos]** aplique el filtro para mostrar imágenes. Arrastre y suelte las imágenes necesarias en la Comunicación interactiva, como el logotipo de la empresa.
 
    Además, administre lo siguiente en la Comunicación interactiva:
 
@@ -170,31 +167,31 @@ Para obtener más información sobre los fragmentos de documento, consulte [Frag
 
 1. Si es necesario, inserte recursos en el canal web.
 
-   Puede [obtener una vista previa de la comunicación interactiva](#previewic) para ver el aspecto de las salidas de impresión y web de la comunicación interactiva y seguir realizando los cambios necesarios.
+   Puede [previsualizar la comunicación interactiva](#previewic) para ver el aspecto de las salidas de impresión y web de la comunicación interactiva y seguir realizando los cambios necesarios.
 
 ## Vista previa de la comunicación interactiva {#previewic}
 
-Puede utilizar la opción **[!UICONTROL Preview]** para evaluar el aspecto de la comunicación interactiva. El canal web de comunicación interactiva también ofrece la opción de emular la experiencia de una comunicación interactiva para varios dispositivos. Por ejemplo, iPhone, iPad y Escritorio. Puede utilizar las opciones **[!UICONTROL Preview]** y **[!UICONTROL Emulator]** ![rule](assets/ruler.png) junto con otras para obtener una vista previa de las salidas web para dispositivos de diferentes tamaños de pantalla. Los datos de ejemplo de la vista previa se rellenan desde el modelo de datos de formularios especificado.
+Puede usar la variable **[!UICONTROL Vista previa]** para evaluar el aspecto de la comunicación interactiva. El canal web de comunicación interactiva también ofrece la opción de emular la experiencia de una comunicación interactiva para varios dispositivos. Por ejemplo, iPhone, iPad y Escritorio. Puede usar ambas **[!UICONTROL Vista previa]** y **[!UICONTROL Emulador]** ![regla](assets/ruler.png) junto con otras opciones para obtener una vista previa de las salidas web para dispositivos de diferentes tamaños de pantalla. Los datos de ejemplo de la vista previa se rellenan desde el modelo de datos de formularios especificado.
 
-1. Seleccione el canal (impreso o Web) para obtener una vista previa y pulse la vista previa. Aparecerá la comunicación interactiva.
+1. Seleccione el canal (impreso o web) para obtener una vista previa y pulse la vista previa. Aparecerá la comunicación interactiva.
 
    >[!NOTE]
    >
    >La vista previa se rellena con los datos de ejemplo del modelo de datos de formulario especificado. Para obtener más información sobre la vista previa de la comunicación interactiva con otros datos o el uso del servicio de rellenado previo, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md) y [Trabajo con el modelo de datos de formulario](/help/forms/using/work-with-form-data-model.md).
 
-1. Para el canal web, utilice la ![regla](assets/ruler.png) para ver el aspecto de la comunicación interactiva en varios dispositivos.
+1. Para el canal web, utilice ![regla](assets/ruler.png) para ver el aspecto de la comunicación interactiva en varios dispositivos.
 
    ![webchannelpreview](assets/webchannelpreview.png)
 
-Además, puede [Preparar y enviar comunicación interactiva mediante la IU del agente](/help/forms/using/prepare-send-interactive-communication.md).
+Además, puede [Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente](/help/forms/using/prepare-send-interactive-communication.md).
 
-## Configuración de propiedades en la comunicación interactiva {#configuring-properties-in-interactive-communication}
+## Configuración de propiedades en la comunicación interactiva  {#configuring-properties-in-interactive-communication}
 
 ### Archivos adjuntos y acceso a la biblioteca {#attachmentslibrary}
 
 En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la biblioteca para permitir que el agente administre los archivos adjuntos en la interfaz de usuario del agente para la comunicación interactiva:
 
-1. En el canal Imprimir, resalte el contenedor de documento y pulse **[!UICONTROL Propiedades]**.
+1. En el canal Imprimir, resalte el contenedor de documentos y pulse **[!UICONTROL Propiedades]**.
 
    ![documentcontenedores erproperties](assets/documentcontainerproperties.png)
 
@@ -202,23 +199,22 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
    ![propiedades, archivos adjuntos](assets/propertiesattachments.png)
 
-1. Expanda **[!UICONTROL Attachments]** y especifique las siguientes propiedades:
+1. Expandir **[!UICONTROL Archivos adjuntos]** y especifique las siguientes propiedades:
 
-   * **[!UICONTROL Permitir acceso]** a la biblioteca: Seleccione para habilitar el acceso a la biblioteca para el agente en la interfaz de usuario del agente. Si está activado, el agente puede añadir archivos de la biblioteca mientras prepara la comunicación interactiva.
+   * **[!UICONTROL Permitir acceso a la biblioteca]**: Seleccione para habilitar el acceso a la biblioteca para el agente en la interfaz de usuario del agente. Si está activado, el agente puede añadir archivos de la biblioteca mientras prepara la comunicación interactiva.
    * **[!UICONTROL Permitir Reordenación De Archivos Adjuntos]**: Seleccione para permitir que el agente vuelva a ordenar los archivos adjuntos con la comunicación interactiva.
    * **[!UICONTROL Número Máximo De Archivos Adjuntos Permitidos]**: Especifique el número máximo de archivos adjuntos permitidos con la comunicación interactiva.
-   * **[!UICONTROL Archivos A Adjuntar]**: Pulse  **** Añadir y busque para seleccionar los archivos que desea adjuntar y especifique lo siguiente:
+   * **[!UICONTROL Archivos que se van a adjuntar]**: Toque **[!UICONTROL Agregar]** y busque los archivos que desea adjuntar y especifique lo siguiente:
 
-      * **[!UICONTROL Adjuntar Este Archivo Al Documento De Forma Predeterminada]**: Puede cambiar esta opción si solo el archivo adjunto no es obligatorio.
+      * **[!UICONTROL Adjuntar este archivo al documento de forma predeterminada]**: Puede cambiar esta opción si solo el archivo adjunto no es obligatorio.
       * **[!UICONTROL Obligatorio:]** El agente no podrá eliminar el archivo adjunto en la interfaz de usuario del agente.
-
    ![archivos adjuntos](assets/attachfiles.png)
 
-1. Puntee **[!UICONTROL Listo]**.
+1. Pulse **[!UICONTROL Listo]**.
 
-### Propiedades del campo XDP/Diseño {#xdplayoutfieldproperties}
+### Propiedades del campo XDP/Layout {#xdplayoutfieldproperties}
 
-1. Mientras edita el canal de impresión de una comunicación interactiva, pase el ratón sobre un campo, que está creado en la plantilla Canal de impresión, y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
+1. Al editar el canal de impresión de una comunicación interactiva, pase el ratón sobre un campo, que está creado en la plantilla Canal de impresión, y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
 
    El cuadro de diálogo Propiedades aparece en la barra lateral.
 
@@ -228,22 +224,22 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
    * **[!UICONTROL Nombre]**: Nombre del nodo JCR.
    * **[!UICONTROL Título]**: Introduzca un título que sea visible para el agente en la interfaz de usuario del agente y en el árbol del contenedor de documentos.
-   * **[!UICONTROL Tipo]** de enlace: Seleccione uno de los siguientes tipos de enlace para el campo .
+   * **[!UICONTROL Tipo de enlace]**: Seleccione uno de los siguientes tipos de enlace para el campo .
 
       * Ninguno: El agente rellenará el valor de la propiedad.
       * Fragmento de texto: Si está seleccionado, puede examinar y seleccionar un fragmento de documento de texto cuyo contenido se procese en el campo.
       * Objeto del modelo de datos: Seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo .
-   * **[!UICONTROL Valores]** predeterminados: El valor predeterminado garantiza que el campo no esté vacío cuando no haya ningún valor proporcionado por el objeto del modelo de datos especificado o el fragmento de texto. Si el tipo de enlace de datos es ninguno, el valor predeterminado se rellena previamente en el campo.
-   * **[!UICONTROL Editable Por Agente]**: Seleccione para permitir que el agente edite el valor en el campo de la interfaz de usuario del agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
+   * **[!UICONTROL Valores predeterminados]**: El valor predeterminado garantiza que el campo no esté vacío cuando no haya ningún valor proporcionado por el objeto del modelo de datos especificado o el fragmento de texto. Si el tipo de enlace de datos es ninguno, el valor predeterminado se rellena previamente en el campo.
+   * **[!UICONTROL Editable por agente]**: Seleccione para permitir que el agente edite el valor en el campo de la interfaz de usuario del agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
    * **[!UICONTROL Etiqueta]**: Especifique una cadena de texto que se muestre con el campo al agente en la interfaz de usuario del agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
-   * **[!UICONTROL Información del objeto]**: Introduzca una cadena de texto que sea visible al pasar el ratón por encima del agente en la interfaz de usuario del agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
+   * **[!UICONTROL Información de objeto]**: Introduzca una cadena de texto que sea visible al pasar el ratón por encima del agente en la interfaz de usuario del agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
    * **[!UICONTROL Requerido]**: Seleccione para que el campo sea obligatorio para el agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
-   * **[!UICONTROL Permitir varias líneas]**: Seleccione este campo para permitir varias líneas de texto como entrada en el campo . Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
+   * **[!UICONTROL Permitir líneas múltiples]**: Seleccione este campo para permitir varias líneas de texto como entrada en el campo . Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
 
 
-1. Pulse ![done_icon](assets/done_icon.png).
+1. Toque ![done_icon](assets/done_icon.png).
 
-## Aplicar reglas a los componentes de comunicación interactiva {#rules}
+## Aplicación de reglas a los componentes de comunicación interactiva {#rules}
 
 Para condicionalizar componentes o contenido en la comunicación interactiva, pulse el componente o fragmento de contenido y seleccione ![createruleicon](assets/createruleicon.png) (Crear regla) para iniciar el Editor de reglas.
 
@@ -269,7 +265,7 @@ Puede añadir tablas dinámicas en Comunicación interactiva mediante fragmentos
 
 1. Especifique el enlace de datos para cada una de las celdas de la tabla. Para crear una fila repetible, inserte las propiedades del modelo de datos de formulario en la fila que pertenezca a una propiedad de colección común.
 
-   1. Pulse una celda en la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
+   1. Puntee en una celda de la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
 
       El cuadro de diálogo Propiedades aparece en la barra lateral.
 
@@ -281,12 +277,12 @@ Puede añadir tablas dinámicas en Comunicación interactiva mediante fragmentos
       * **[!UICONTROL Título]**: Introduzca un título que sea visible en el editor de comunicación interactiva.
       * **[!UICONTROL Tipo de enlace]**&amp;ast;: Seleccione uno de los siguientes tipos de enlace para el campo .
 
-         * **[!UICONTROL Ninguna]**
-         * **[!UICONTROL Objeto]** del modelo de datos: El valor de una propiedad del modelo de datos de formulario se rellena en el campo .
-      * **[!UICONTROL Objeto]** Modelo de datos: Propiedad del modelo de datos de formulario cuyo valor se rellena en el campo .
-      * **[!UICONTROL Valor]** predeterminado: El valor predeterminado garantiza que el campo no esté vacío cuando el objeto del modelo de datos especificado no proporcione ningún valor. El valor predeterminado se rellena previamente en el campo .
-      * **[!UICONTROL Editable Por Agente]**: Seleccione para permitir que el agente edite el valor en el campo de la interfaz de usuario del agente.
-   1. Pulse ![done_icon](assets/done_icon.png).
+         * **[!UICONTROL Ninguno]**
+         * **[!UICONTROL Objeto del modelo de datos]**: El valor de una propiedad del modelo de datos de formulario se rellena en el campo .
+      * **[!UICONTROL Objeto de modelo de datos]**: Propiedad del modelo de datos de formulario cuyo valor se rellena en el campo .
+      * **[!UICONTROL Valor predeterminado]**: El valor predeterminado garantiza que el campo no esté vacío cuando el objeto del modelo de datos especificado no proporcione ningún valor. El valor predeterminado se rellena previamente en el campo .
+      * **[!UICONTROL Editable por agente]**: Seleccione para permitir que el agente edite el valor en el campo de la interfaz de usuario del agente.
+   1. Toque ![done_icon](assets/done_icon.png).
 
 
 
@@ -294,7 +290,7 @@ Puede añadir tablas dinámicas en Comunicación interactiva mediante fragmentos
 
    ![lf_preview](assets/lf_preview.png)
 
-### Sólo tablas {#web-channel-only-tables} del canal web
+### Tablas solo de canal web {#web-channel-only-tables}
 
 Puede crear una tabla dinámica solo de canal web en una comunicación interactiva utilizando una propiedad de modelo de datos de colección de tipo . Esta tabla es una representación de las propiedades secundarias de una propiedad de colección. Solo se pueden editar las propiedades de formato de las distintas celdas de la tabla.
 
@@ -327,7 +323,7 @@ Si utiliza el canal Imprimir como el principal del canal Web y cambia al canal W
 
 En el canal web, los componentes se incrustan en las áreas de destino.
 
-Pase el ratón sobre el área de destino correspondiente del canal web y seleccione ![cancelar herencia](assets/cancelinheritance.png) (Cancelar herencia) y, a continuación, en el cuadro de diálogo Cancelar herencia, pulse **[!UICONTROL Sí]**.
+Pase el ratón sobre el área de destino relevante en el canal web y seleccione ![cancelar herencia](assets/cancelinheritance.png) (Cancelar herencia) y, a continuación, en el cuadro de diálogo Cancelar herencia, pulse **[!UICONTROL Sí]**.
 
 La herencia de los componentes dentro del área de destino se cancela y ahora puede editarlos según sea necesario.
 
@@ -339,9 +335,9 @@ Aparecerá el cuadro de diálogo Revertir herencia.
 
 ![revertinheritance](assets/revertinheritance.png)
 
-Si es necesario, seleccione **[!UICONTROL Sincronizar la página después de revertir la herencia]**. Seleccione esta opción para sincronizar toda la comunicación interactiva. Si no selecciona esta opción, solo se sincroniza el área de destino correspondiente al restablecer la herencia.
+Si es necesario, seleccione **[!UICONTROL Sincronizar La Página Después De Revertir La Herencia]**. Seleccione esta opción para sincronizar toda la comunicación interactiva. Si no selecciona esta opción, solo se sincroniza el área de destino correspondiente al restablecer la herencia.
 
-Toque **[!UICONTROL Yes]**.
+Toque **[!UICONTROL Sí]**.
 
 ### Sincronizar {#synchronize-1}
 
@@ -357,4 +353,3 @@ Si utiliza Imprimir como maestro para el canal web y realiza cambios en el canal
 
    * **[!UICONTROL Descartar cambios]**: Descarta todos los cambios realizados en el canal web independientemente de los cambios realizados en el canal web.
    * **[!UICONTROL Conservar cambios]**: Sincroniza el contenido solo para las áreas de destino en las que no se cancela la herencia.
-

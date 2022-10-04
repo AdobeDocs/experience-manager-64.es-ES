@@ -50,7 +50,7 @@ Si ha cambiado la ubicación de GDS a una ubicación no predeterminada, puede de
 
 En un entorno agrupado, el GDS suele apuntar a un directorio que se comparte en la red y al que se puede acceder de lectura y escritura para cada nodo del clúster.
 
-La ubicación del GDS puede cambiarse durante una recuperación si la ubicación original ya no está disponible. (Consulte [Cambio de la ubicación de GDS durante la recuperación](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)).
+La ubicación del GDS puede cambiarse durante una recuperación si la ubicación original ya no está disponible. (Consulte [Cambio de la ubicación de GDS durante la recuperación](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Opciones de copia de seguridad cuando se utiliza la base de datos para el almacenamiento de documentos {#backup-options-when-database-is-used-for-document-storage}
 
@@ -80,7 +80,7 @@ AEM Forms Workspace coincide con las capacidades de Flex Workspace (obsoleto par
 >
 >Flex Workspace está en desuso para AEM versión de formularios.
 
-Permite la administración de tareas en clientes sin Flash Player ni Adobe Reader. Facilita la representación de HTML Forms, además de los PDF forms y los formularios de Flex.
+Permite la administración de tareas en clientes sin Flash Player ni Adobe Reader. Facilita la representación de Forms HTML, además de los PDF forms y los formularios de Flex.
 
 ## base de datos de AEM forms {#aem-forms-database}
 
@@ -92,7 +92,7 @@ Para realizar una copia de seguridad de la base de datos en tiempo real, debe ut
 
 >[!NOTE]
 >
->Adobe® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con los servicios de contenido (obsoletos) finaliza el 31/12/2014. Consulte [documento del ciclo vital del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con los servicios de contenido (obsoletos) finaliza el 31/12/2014. Consulte [Documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -102,10 +102,10 @@ Configure la base de datos DB2 para que se ejecute en el modo de registro de arc
 >
 >Si el entorno de AEM forms se actualizó desde una versión anterior de AEM formularios y utiliza DB2, no se admite la copia de seguridad en línea. En este caso, debe cerrar AEM formularios y realizar una copia de seguridad sin conexión. Las futuras versiones de AEM formularios admitirán la copia de seguridad en línea para los clientes de actualización.
 
-IBM cuenta con un conjunto de herramientas y sistemas de ayuda para ayudar a los administradores de bases de datos a administrar sus tareas de backup y recuperación:
+IBM tiene un conjunto de herramientas y sistemas de ayuda para ayudar a los administradores de bases de datos a administrar sus tareas de backup y recuperación:
 
 * Acelerador de registro de archivos IBM DB2
-* Experto de IBM DB2 Data Archive (Consulte [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)).
+* Experto en el archivo de datos de IBM DB2 (consulte [Guía y referencia del usuario de experto en el archivo de datos de IBM DB2](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 DB2 tiene funcionalidades incorporadas para hacer backup de una base de datos en Tivoli Storage Manager. Mediante Tivoli Storage Manager, los backups DB2 se pueden almacenar en otros medios o en el disco duro local.
 
@@ -113,13 +113,13 @@ Para obtener más información sobre backup y recuperación de bases de datos DB
 
 ### Oracle {#oracle}
 
-Utilice copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte [Copia de seguridad de Oracle: Una Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información sobre la copia de seguridad y la recuperación de la base de datos de Oracle, visite estos sitios:
+Utilice copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte [Copia de seguridad de oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información sobre la copia de seguridad y la recuperación de la base de datos de Oracle, visite estos sitios:
 
-[Backup y Recuperación de oracle: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explica en mayor detalle los conceptos de backup y recuperación y las técnicas más comunes para usar Recovery Manager (RMAN) para backup, recuperación y reporting, así como para proporcionar más información sobre cómo planificar una estrategia de backup y recuperación.
+[Backup y Recuperación de oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica los conceptos de backup y recuperación y las técnicas más comunes para usar Recovery Manager (RMAN) para backup, recuperación y reporting en forma más detallada, así como para proporcionar más información sobre cómo planificar una estrategia de backup y recuperación.
 
-[Oracle Database Backup and Recovery User&#39;s Guide (Guía del Usuario de Backup y Recuperación de Bases de Datos: ](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Proporciona información detallada sobre la arquitectura RMAN, conceptos y mecanismos de backup y recuperación, técnicas de recuperación avanzadas como funcionalidades de recuperación puntual y flashback de bases de datos, y ajuste del performance de backup y recuperación. También abarca el backup y la recuperación administrados por el usuario, usando instalaciones de sistemas operativos host en lugar de RMAN. Este volumen es esencial para el backup y la recuperación de implementaciones de bases de datos más sofisticadas y para escenarios de recuperación avanzados.
+[Guía del Usuario de Backup y Recuperación de la Base de Datos oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Proporciona información detallada sobre la arquitectura RMAN, conceptos y mecanismos de backup y recuperación, técnicas de recuperación avanzadas como funcionalidades de recuperación puntual y flashback de bases de datos, y ajuste del performance de backup y recuperación. También abarca el backup y la recuperación administrados por el usuario, usando instalaciones de sistemas operativos host en lugar de RMAN. Este volumen es esencial para el backup y la recuperación de implementaciones de bases de datos más sofisticadas y para escenarios de recuperación avanzados.
 
-[Oracle Database Backup and Recovery Reference (Referencia de Recuperación y Copia de Seguridad de la Base de Datos: ](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Proporciona información completa sobre sintaxis y semántica para todos los comandos RMAN y describe las vistas de la base de datos disponibles para generar informes sobre las actividades de backup y recuperación.
+[Referencia de Backup y Recuperación de la Base de Datos de oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Proporciona información completa sobre sintaxis y semántica para todos los comandos RMAN, y describe las vistas de la base de datos que están disponibles para generar informes sobre actividades de backup y recuperación.
 
 ### SQL Server {#sql-server}
 
@@ -134,7 +134,7 @@ Para obtener más información, consulte [Copia de seguridad y restauración](ht
 
 ### MySQL {#mysql}
 
-Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)). Una herramienta de copia de seguridad para MySQL también está disponible en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md)).
+Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario de MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Una herramienta de copia de seguridad para MySQL también está disponible en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
@@ -142,9 +142,9 @@ Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la ba
 >
 >`binlog_format=mixed log-bin=logname`
 
-Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa de la base de datos. Es necesario realizar backups completos, pero no siempre resultan convenientes. Producen archivos de backup grandes y tardan tiempo en generarse. Para realizar una copia de seguridad incremental, asegúrese de iniciar el servidor con la opción - `log-bin` como se describe en la sección anterior. Cada vez que el servidor MySQL se reinicia, deja de escribir en el registro binario actual, crea uno nuevo y, a partir de entonces, el nuevo se convierte en el actual. Puede forzar un conmutador manualmente con el comando `FLUSH LOGS SQL`. Después de la primera copia de seguridad completa, las siguientes copias de seguridad incrementales se realizan utilizando la utilidad mysqladmin con el comando `flush-logs`, que crea el siguiente archivo de registro.
+Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa de la base de datos. Es necesario realizar backups completos, pero no siempre resultan convenientes. Producen archivos de backup grandes y tardan tiempo en generarse. Para realizar una copia de seguridad incremental, asegúrese de iniciar el servidor con - `log-bin` como se describe en la sección anterior. Cada vez que el servidor MySQL se reinicia, deja de escribir en el registro binario actual, crea uno nuevo y, a partir de entonces, el nuevo se convierte en el actual. Puede forzar un conmutador manualmente con la variable `FLUSH LOGS SQL` comando. Después de la primera copia de seguridad completa, las siguientes copias de seguridad incrementales se realizan utilizando la utilidad mysqladmin con el `flush-logs` que crea el siguiente archivo de registro.
 
-Consulte [Resumen de estrategia de copia de seguridad](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+Consulte [Resumen de Estrategia de Copia de Seguridad](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```as3
 binlog_format=mixed 
@@ -159,7 +159,7 @@ El directorio raíz del almacenamiento de contenido contiene el repositorio de C
 
 El directorio raíz del almacenamiento de contenido se crea cuando se instalan los servicios de contenido (obsoletos). La ubicación del directorio raíz del almacenamiento de contenido se determina durante el proceso de instalación de los formularios de AEM.
 
-La ubicación predeterminada para el directorio raíz del almacenamiento de contenido es *[aem-forms root]*/lccs_data.
+La ubicación predeterminada para el directorio raíz del almacenamiento de contenido es *[raíz de aem-forms]*/lccs_data.
 
 Haga una copia de seguridad de los siguientes directorios ubicados en el directorio raíz del almacenamiento de contenido:
 
@@ -177,11 +177,11 @@ Si el directorio /backup-lucene-indexes no está presente, haga una copia de seg
 
 Cuando instala Content Services (Desaprobada) en un entorno agrupado, el directorio raíz del almacenamiento de contenido se divide en dos directorios separados:
 
-**Directorio raíz del almacenamiento de contenido:**  normalmente, un directorio de red compartido al que se puede acceder de lectura y escritura para todos los nodos del clúster
+**Directorio raíz del almacenamiento de contenido:** Normalmente, un directorio de red compartido accesible de lectura y escritura para todos los nodos del clúster
 
-**Directorio raíz de índice:**  directorio que se crea en cada nodo del clúster, siempre con la misma ruta y nombre de directorio
+**Directorio raíz de índice:** Un directorio que se crea en cada nodo del clúster, que siempre tiene la misma ruta y nombre de directorio
 
-La ubicación predeterminada para el directorio raíz del almacenamiento de contenido es *[GDS root]*/lccs_data, donde *[GDS root]* es la ubicación descrita en [GDS location](files-back-recover.md#gds-location). Haga una copia de seguridad de los siguientes directorios ubicados en el directorio raíz del almacenamiento de contenido:
+La ubicación predeterminada para el directorio raíz del almacenamiento de contenido es *[Raíz GDS]*/lccs_data, donde *[Raíz GDS]* es la ubicación descrita en [Ubicación de GDS](files-back-recover.md#gds-location). Haga una copia de seguridad de los siguientes directorios ubicados en el directorio raíz del almacenamiento de contenido:
 
 /audit.contentstore
 
@@ -193,7 +193,7 @@ La ubicación predeterminada para el directorio raíz del almacenamiento de cont
 
 Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también ubicado en el directorio raíz del almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque puede causar errores.
 
-La ubicación predeterminada para el directorio raíz del índice es *[aem-forms root]*/lucene-indexes en cada nodo.
+La ubicación predeterminada para el directorio raíz del índice es *[raíz de aem-forms]*/lucene-indexes en cada nodo.
 
 ## Fuentes instaladas por el cliente {#customer-installed-fonts}
 
@@ -201,6 +201,6 @@ Si ha instalado fuentes adicionales en el entorno de formularios AEM, debe reali
 
 >[!NOTE]
 >
->De forma predeterminada, las fuentes de Adobe instaladas con AEM formularios se encuentran en el directorio [aem-forms root]/fonts.
+>De forma predeterminada, las fuentes de Adobe instaladas con AEM formularios se encuentran en la variable [raíz de aem-forms]directorio /fonts.
 
 Si está reinicializando el sistema operativo en el equipo host y desea utilizar fuentes del sistema operativo anterior, también debe realizar una copia de seguridad del contenido del directorio de fuentes del sistema. (Para obtener instrucciones específicas, consulte la documentación de su sistema operativo).

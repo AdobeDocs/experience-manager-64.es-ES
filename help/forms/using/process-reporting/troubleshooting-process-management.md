@@ -1,37 +1,35 @@
 ---
-title: Resolución de problemas del Sistema de informes del proceso
-seo-title: Resolución de problemas del Sistema de informes del proceso
-description: Resolución de problemas en AEM Forms en el Sistema de informes de procesos JEE
-seo-description: Resolución de problemas en AEM Forms en el Sistema de informes de procesos JEE
+title: Resolución de problemas de informes de procesos
+seo-title: Troubleshooting Process Reporting
+description: Solución de problemas en AEM Forms en informes de procesos JEE
+seo-description: Troubleshoot issues in AEM Forms on JEE Process Reporting
 page-status-flag: de-activated
 uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 57ddfead-22bb-4a99-925e-11d71fc61669
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
-
-# Resolución de problemas del Sistema de informes del proceso {#troubleshooting-process-reporting}
+# Resolución de problemas de informes de procesos {#troubleshooting-process-reporting}
 
 ## Problemas al crear filtros en Internet Explorer 9 en Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Si crea filtros para informes predefinidos, se producen de forma intermitente los siguientes problemas en el entorno **Internet Explorer 9** para **Microsoft Windows 7**:
+Si crea filtros para informes predefinidos, los siguientes problemas se producen de forma intermitente en la variable **Internet Explorer 9** para **Microsoft Windows 7** entorno:
 
-* La lista desplegable del campo Valor muestra identificadores únicos en lugar de valores.
-* El control Calendario del campo Valor muestra caracteres japoneses.
+* La lista desplegable del campo Value muestra identificadores únicos en lugar de valores.
+* El control Calendar del campo Value muestra caracteres japoneses.
 * El campo Condición no se muestra.
-* El control Calendario del campo Valor no se muestra.
+* El control Calendar del campo Value no se muestra.
 
 ### Resolución {#resolution}
 
-Mientras aún ha iniciado sesión en Process Sistema de informes:
+Mientras sigue con la sesión iniciada en Informes de procesos:
 
 1. Borre la caché del explorador.
 1. Actualice la pantalla del explorador.
-

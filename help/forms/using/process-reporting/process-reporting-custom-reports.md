@@ -1,42 +1,41 @@
 ---
-title: Informes personalizados en proceso Sistema de informes
-seo-title: Informes personalizados en proceso Sistema de informes
-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
-seo-description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de Sistema de informes de procesos JEE.
+title: Informes personalizados en proceso de informes
+seo-title: Custom Reports in Process Reporting
+description: Puede crear informes personalizados y agregarlos a AEM Forms en la interfaz de usuario de informes de procesos JEE.
+seo-description: You can create custom reports and add these reports to the AEM Forms on JEE Process Reporting UI.
 uuid: 8974ec2d-ac54-4b44-9758-b1cf44b732fa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 010d019b-a6ec-4a69-96c1-41b82a2a1839
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-
-# Informes personalizados en proceso Sistema de informes {#custom-reports-in-process-reporting}
+# Informes personalizados en proceso de informes {#custom-reports-in-process-reporting}
 
 Puede utilizar la interfaz REST de QueryBuilder o crear un servicio OSGi mediante la API de QueryBuilder para crear un informe personalizado.
 
-## Pasos genéricos para generar un informe personalizado {#generic-steps-to-build-a-custom-report}
+## Pasos genéricos para crear un informe personalizado {#generic-steps-to-build-a-custom-report}
 
-Antes de agregar un informe personalizado, realice el siguiente procedimiento de plantilla:
+Antes de agregar cualquier informe personalizado, realice el siguiente procedimiento de plantilla:
 
-1. Los datos utilizados en los informes personalizados deben estar disponibles en Process Sistema de informes. Para garantizar la disponibilidad de los datos, programe un trabajo cron o utilice la opción **[Sincronizar](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** en la interfaz de usuario de Process Sistema de informes.
+1. Los datos utilizados en los informes personalizados deben estar disponibles en los informes de proceso. Para garantizar la disponibilidad de los datos, programe un trabajo cron o utilice **[Sincronización](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** en la interfaz de usuario de Process Reporting.
 1. La solicitud de URL (que encapsula la consulta deseada) debe devolver un objeto de resultado de consulta adecuado. Para crear una consulta, puede utilizar la interfaz REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) para crear un servicio OSGi mediante la API de QueryBuilder. Puede crear consultas dinámicas o estáticas.
 
-1. Cree una interfaz de usuario personalizada para mostrar los resultados. Puede crear una interfaz de usuario independiente o integrar resultados con la interfaz de usuario de Process Sistema de informes existente.
+1. Cree una interfaz de usuario personalizada para mostrar los resultados. Puede crear una interfaz de usuario independiente o integrar resultados con la interfaz de usuario de Process Reporting existente.
 
 ## Uso de la interfaz REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de Consultas de uso compartido de recursos a través de una API de Java y una API de REST. Obtenga información sobre cómo utilizar la [interfaz REST de CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) antes de realizar los siguientes pasos:
+La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de consultas de Asset Share a través de una API de Java y una API de REST. Aprenda a utilizar [Interfaz CRX QueryBuilder REST](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)antes de realizar los siguientes pasos:
 
 1. Vaya a la dirección URL `https://[server]:[port]/lc/bin/querybuilder.json`
 
-1. Cree una consulta en función de la estructura de nodos y las propiedades de nodo de almacenamiento de Process Sistema de informes.
+1. Cree una consulta basada en la estructura del nodo de almacenamiento Process Reporting y en las propiedades del nodo.
 
    Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, las visitas y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
 
@@ -46,11 +45,11 @@ La interfaz CRX QueryBuilder REST expone la funcionalidad del Creador de Consult
 
    >[!NOTE]
    >
-   >En cada consulta, el parámetro path señala a la ubicación del almacenamiento crx y los caracteres se escapan según el estándar de URL.
+   >En cada consulta, el parámetro de ruta señala a la ubicación de almacenamiento crx y los caracteres se escapan según el estándar de URL.
 
-## Creación de un servicio mediante la API de Consulta Builder  {#creating-a-service-using-query-builder-api-nbsp}
+## Creación de un servicio mediante la API de Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-El requisito previo para crear un servicio mediante la API del creador de Consultas es [crear e implementar el paquete OSGI de CQ](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) y [mediante la API del creador de Consultas](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+El requisito previo para crear un servicio mediante la API del generador de consultas es [creación e implementación del paquete CQ OSGI](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) y [uso de la API de Query Builder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Cree un servicio OSGi con las anotaciones adecuadas. Para acceder a QueryBuilder, utilice:
 
@@ -66,11 +65,11 @@ El requisito previo para crear un servicio mediante la API del creador de Consul
     predicateGroup.setAllRequired(true);
    ```
 
-1. Añada predicados en el predicadoGroup recién creado. Algunas construcciones de predicado útiles son [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html), [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Agregue predicados al predicateGroup recién creado. Algunas construcciones de predicado útiles son [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)y [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
-   Para los informes estáticos, codifique los predicados de forma rígida, mientras que para los informes dinámicos, extraiga los predicados de la solicitud.
+   En los informes estáticos, codifique los predicados mediante hardcode, mientras que en los informes dinámicos, recupere los predicados de la solicitud.
 
-   El código de muestra para obtener todas las instancias de un proceso es:
+   El código de ejemplo para obtener todas las instancias de un proceso es:
 
    ```java
    Predicate predicate;
@@ -101,7 +100,7 @@ El requisito previo para crear un servicio mediante la API del creador de Consul
      predicateGroup.add(predicate);
    ```
 
-1. Defina la Consulta usando el predicateGroup.
+1. Defina la Query utilizando el predicateGroup.
 
    `Query query = queryBuilder.createQuery(predicateGroup, session);`
 
@@ -115,7 +114,7 @@ El requisito previo para crear un servicio mediante la API del creador de Consul
            SearchResult searchResult = query.getResult();
    ```
 
-1. Repita el resultado y transforme los resultados al formato deseado. El código para enviar los resultados en formato CSV es:
+1. Iterar en el resultado y transformar los resultados en el formato deseado. El código para enviar los resultados en formato CSV es:
 
    ```java
    Iterator<Node> iter = searchResult.getNodes();
@@ -137,13 +136,13 @@ El requisito previo para crear un servicio mediante la API del creador de Consul
                        out.write(row.toString().getBytes());
    ```
 
-1. Utilice el `org.apache.felix maven-bundle-plugin` para crear un paquete OSGi para el servlet.
+1. Utilice la variable `org.apache.felix maven-bundle-plugin` para crear un paquete OSGi para el servlet.
 
 1. Implemente el paquete en el servidor CRX.
 
 ### Ejemplo de servicio {#service-example}
 
-El siguiente ejemplo de servicio cuenta instancias de un proceso que se encuentra en **EJECUTANDO** y **COMPLETE** estado al final de cada mes, trimestre y año.
+El siguiente ejemplo de servicio cuenta instancias de un proceso que se encuentra en **EJECUCIÓN** y **COMPLETAR** al final de cada mes, trimestre y año.
 
 ```java
 package custom.reporting.service;
@@ -341,7 +340,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-El archivo de ejemplo `pom.xml`que se va a generar por encima del servicio es:
+El ejemplo `pom.xml`archivo que se va a generar por encima del servicio es:
 
 ```java
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -423,25 +422,25 @@ El archivo de ejemplo `pom.xml`que se va a generar por encima del servicio es:
 </project>
 ```
 
-## Creación de una IU independiente  {#creating-a-separate-ui-nbsp}
+## Creación de una interfaz de usuario independiente  {#creating-a-separate-ui-nbsp}
 
-Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creación de un nodo CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) y proporcionar los [privilegios de acceso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) adecuados.
+Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Conceptos básicos de Sling](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Creación de un nodo CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) y [privilegios de acceso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Cree un nodo CRX en el nodo `/apps` y conceda los permisos de acceso adecuados. (PERM_PROCESS_SISTEMA DE INFORMES_USER)
-1. Defina el procesador en el nodo `/content`.
-1. Añada archivos JSP o HTML al nodo creado en el paso 1. También puede agregar archivos CSS.
+1. Cree un nodo CRX en la variable `/apps` y conceda los permisos de acceso correspondientes. (PERM_PROCESS_REPORTING_USER)
+1. Defina el procesador en la variable `/content` nodo .
+1. Añada archivos JSP o HTML al nodo creado en el paso 1. También puede añadir archivos CSS.
 
-   ![Un nodo de ejemplo con archivos JSP y CSS](assets/nodewithjspandcss.png)
+   ![Un nodo de muestra con archivos JSP y CSS](assets/nodewithjspandcss.png)
 
-   Un nodo de ejemplo con archivos JSP y CSS
+   Un nodo de muestra con archivos JSP y CSS
 
-1. Añada el código javascript para inicio de una llamada de Ajax a la API REST de querybuilder o a su servicio. Además, agregue los argumentos adecuados.
+1. Agregue código javascript para iniciar una llamada de Ajax a la API de REST de querybuilder o a su servicio. Además, agregue los argumentos adecuados.
 
-1. Añada un controlador de éxito adecuado a la llamada de Ajax para analizar y mostrar el resultado. Puede analizar el resultado en varios formatos (json/csv/definido por el usuario) y mostrarlo en una tabla o en otros formularios.
+1. Agregue un controlador de éxito adecuado a la llamada de Ajax para analizar y mostrar el resultado. Puede analizar el resultado en varios formatos (json/csv/user defined) y mostrarlo en una tabla o en otros formularios.
 
-1. (Opcional) Añada un controlador de error adecuado a la llamada de Ajax.
+1. (Opcional) Agregue un controlador de error adecuado a la llamada de Ajax.
 
-Un código JSP de muestra que utiliza tanto el servicio OSGi como la API de QueryBuilder es:
+Un código JSP de muestra que utiliza el servicio OSGi y la API de QueryBuilder es:
 
 ```
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
@@ -631,36 +630,35 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integración de la interfaz de usuario del informe en la interfaz de usuario de Sistema de informes de procesos existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integración de la interfaz de usuario del informe en la interfaz de usuario de los informes de procesos existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creación de un nodo CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) y proporcionar los [privilegios de acceso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) adecuados.
+Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son [Conceptos básicos de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creación de un nodo CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) y [privilegios de acceso](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
-1. Cree una interfaz de usuario independiente como se describe en [Creación de una interfaz de usuario independiente](#creating-a-separate-ui-nbsp).
-1. Cree un nodo secundario `nt:unstructured` en el nodo `/content/process-reporting-runtime/custom-reports` para cada informe conectable.
+1. Cree una interfaz de usuario independiente como se describe en [Creación de una interfaz de usuario independiente](#creating-a-separate-ui-nbsp) para obtener más información.
+1. Crear un elemento secundario `nt:unstructured` en el `/content/process-reporting-runtime/custom-reports` para cada informe conectable.
 
-   * **id**: especifica un número de identificación único del informe.
-   * **nombre**: especifica el nombre del informe. El nombre se muestra en la interfaz de usuario.
-   * **link**- Especifica un vínculo relativo al procesador de la IU independiente. El vínculo se crea en el paso 1.
-   * **descripción**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de descripción.
-   * **icono**: especifica la imagen que se va a representar en forma de imagen el informe. Puede dejar vacío el campo de icono.
+   * **id**- Especifica el número de identificación único del informe.
+   * **name**- Especifica el nombre del informe. El nombre se muestra en la interfaz de usuario de .
+   * **vínculo**: especifica el vínculo relativo al procesador de la IU independiente. El vínculo se crea en el paso 1.
+   * **descripción**- Especifica la descripción de una línea del informe. Puede dejar vacío el campo de descripción.
+   * **icono**: especifica la imagen que representa el informe de forma gráfica. Puede dejar vacío el campo de icono.
 
-   ![Propiedades del nodo  ](assets/nodeproperties.png)
+   ![Propiedades del nodo ](assets/nodeproperties.png)
 
    Propiedades del nodo
 
-1. La interfaz de usuario del informe está integrada en la interfaz de usuario de Process Sistema de informes. Después de integrar la interfaz de usuario, la IU actualizada tiene un aspecto similar a las siguientes imágenes:
+1. La interfaz de usuario del informe está integrada en la interfaz de usuario de los informes de proceso. Después de integrar la interfaz de usuario, esta se parece a las siguientes imágenes:
 
-   ![Interfaz de usuario de los informes personalizados recién agregados](assets/sample-ui-screen-shot-1.png)
+   ![Interfaz de usuario de los informes personalizados recién añadidos](assets/sample-ui-screen-shot-1.png)
 
-   Interfaz de usuario de los informes personalizados recién agregados
+   Interfaz de usuario de los informes personalizados recién añadidos
 
    ![Pantalla de resultados de los informes personalizados](assets/jsp-display.png)
 
    Pantalla de resultados de los informes personalizados
 
-## Paquete de muestra {#sample-package}
+## Paquete de ejemplo {#sample-package}
 
-Importe el paquete `sample-report-pkg-1.zip` para integrar los informes personalizados y la interfaz de usuario que se describen en el artículo en la interfaz de usuario de administración de procesos.
+Importe el `sample-report-pkg-1.zip` para integrar los informes personalizados y la IU que se describen en el artículo en la interfaz de usuario de administración de procesos.
 
 [Obtener archivo](assets/sample-report-pkg-1.zip)
-

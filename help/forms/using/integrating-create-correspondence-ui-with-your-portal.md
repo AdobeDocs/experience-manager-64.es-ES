@@ -1,22 +1,21 @@
 ---
 title: Integración de la IU Crear correspondencia con su portal personalizado
-seo-title: Integración de la IU Crear correspondencia con su portal personalizado
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Aprenda a integrar la interfaz de usuario de creación de correspondencia con su portal personalizado
-seo-description: Aprenda a integrar la interfaz de usuario de creación de correspondencia con su portal personalizado
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 4%
+source-wordcount: '478'
+ht-degree: 3%
 
 ---
-
 
 # Integración de la IU Crear correspondencia con su portal personalizado {#integrating-create-correspondence-ui-with-your-custom-portal}
 
@@ -47,9 +46,9 @@ Si el portal tiene el nombre de la plantilla Carta a mano, la URL podría ser\
 
 ## Invocación basada en datos en línea {#inline-data-based-invocation}
 
-Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, enviando los parámetros y datos para llamar a la aplicación Crear Correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), que no era posible/ideal en el método anterior.
+Otra forma (y más segura) de llamar a la aplicación Crear correspondencia podría ser simplemente visitar la URL en `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, mientras se envían los parámetros y datos para llamar a la aplicación Crear correspondencia como una solicitud de POST (ocultándolos al usuario final). Esto también significa que ahora puede pasar los datos XML para la aplicación Crear correspondencia en línea (como parte de la misma solicitud, utilizando el parámetro cmData), que no era posible/ideal en el método anterior.
 
-### Parámetros para especificar la letra {#parameters-for-specifying-letter}
+### Parámetros para especificar una carta {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
@@ -90,7 +89,7 @@ El orden de los parámetros de la tabla especifica la preferencia de los paráme
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>Datos XML de un archivo de origen usando protocolos básicos como cq, ftp, http o file.<br /> </td> 
+   <td>Datos XML de un archivo de origen utilizando protocolos básicos como cq, ftp, http o file.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 

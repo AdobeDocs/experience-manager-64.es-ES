@@ -12,7 +12,7 @@ exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
 source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
 workflow-type: tm+mt
 source-wordcount: '1859'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -304,7 +304,6 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 >
 >* La API de invocación del servicio de ensamblador puede llamar internamente a una API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como transacciones únicas, únicas o múltiples. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
 >* Un documento de PDF único producido mediante el servicio de ensamblador puede contabilizarse como transacciones únicas, únicas o múltiples. El número de transacciones contadas depende del código DDX proporcionado.
-
 >
 
 
@@ -355,7 +354,7 @@ Todos los sucesos de envío de formularios adaptables, HTML5 Forms y conjuntos d
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso práctico   </p> </td> 
+   <td><p>Caso práctico</p> </td> 
    <td>Descripción</td> 
    <td>Categoría del informe de transacción</td> 
    <td>Información adicional</td> 
@@ -378,7 +377,7 @@ Todos los sucesos de envío de formularios adaptables, HTML5 Forms y conjuntos d
 <table> 
  <tbody>
   <tr>
-   <td><p>Caso práctico   </p> </td> 
+   <td><p>Caso práctico</p> </td> 
    <td>Descripción </td> 
    <td>Categoría del informe de transacción</td> 
    <td>Información adicional</td> 

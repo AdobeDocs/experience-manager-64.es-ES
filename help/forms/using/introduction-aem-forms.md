@@ -1,22 +1,21 @@
 ---
 title: Introducción a AEM Forms
-seo-title: Introducción a AEM Forms
+seo-title: Introduction to AEM Forms
 description: Con Adobe Experience Manager Forms, los usuarios empresariales pueden integrar formularios interactivos, adaptables y adaptables en sitios web y móviles, lo que simplifica el proceso de inscripción digital y aumenta las tasas de conversión de los clientes.
-seo-description: Con Adobe Experience Manager Forms, los usuarios empresariales pueden integrar formularios interactivos, adaptables y adaptables en sitios web y móviles, lo que simplifica el proceso de inscripción digital y aumenta las tasas de conversión de los clientes.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 3%
+source-wordcount: '910'
+ht-degree: 6%
 
 ---
-
 
 # Introducción a AEM Forms {#introduction-to-aem-forms}
 
@@ -40,9 +39,9 @@ AEM Forms proporciona herramientas de administración de formularios que no solo
 
 En resumen, AEM Forms proporciona potentes funciones de administración de formularios, como las siguientes, que reducen los procesos manuales y aumentan la satisfacción del cliente.
 
-* Portal de Forms centralizado para diseñar e implementar formularios dinámicos, incluidos PDF, HTML5 y formularios adaptables
-* Una interfaz gráfica de usuario fácil de usar para que los usuarios empresariales puedan importar, administrar, previsualizar y publicar fácilmente formularios
-* Un directorio de formularios adaptable con potentes características de búsqueda que utilizan palabras clave, etiquetas y metadatos
+* Portal de Forms centralizado para diseñar e implementar formularios dinámicos, incluidos los formularios PDF, HTML5 y adaptables
+* Una interfaz gráfica de usuario fácil de usar para que los usuarios empresariales puedan importar, administrar, previsualizar y publicar fácilmente formularios.
+* Un directorio de formularios adaptable con potentes características de búsqueda mediante palabras clave, etiquetas y metadatos.
 * Detección dinámica del dispositivo y la ubicación de un usuario para procesar el formulario correctamente en los canales web y móviles
 * Integración con Adobe Analytics para medir de forma eficaz las métricas de uso del formulario
 * Integración con los servicios de Adobe Document Cloud eSign o Scribble para firmar electrónicamente documentos que contengan información confidencial
@@ -52,7 +51,7 @@ En resumen, AEM Forms proporciona potentes funciones de administración de formu
 
 AEM Forms permite ampliar formularios nuevos y existentes para crear:
 
-* HTML paginado y con píxeles perfectos y PDF forms que se parecen casi a papel, o
+* HTML y PDF forms paginados perfectos para píxeles que se parecen casi al papel, o
 * formularios adaptables que se representan automáticamente para el dispositivo y el navegador de un usuario.
 
 **PDF forms**
@@ -61,7 +60,7 @@ Los PDF forms se pueden rellenar sin conexión, guardar localmente y enviar dato
 
 **Formularios HTML**
 
-Los formularios basados en el explorador HTML5 se pueden ver tanto en dispositivos móviles como en exploradores de escritorio. Puede firmar electrónicamente formularios HTML mediante Scribble o los servicios de eSign.
+Los formularios basados en el explorador HTML5 se pueden ver tanto en dispositivos móviles como en exploradores de escritorio. Puede firmar electrónicamente los formularios de HTML mediante Scribble o los servicios de eSign.
 
 **Formularios adaptables**
 
@@ -94,7 +93,7 @@ Capturar los datos sin conexión y sincronizarlos la próxima vez que vuelva en 
 * Entorno de diseño de flujo de trabajo de arrastrar y soltar
 * Conectores de administración de contenido empresarial (ECM)
 * Compatibilidad con estándares abiertos, incluidos XML y SOAP para conectar datos de formularios con sistemas empresariales
-* Los informes HTML predeterminados supervisan los registros atrasados, las colas de trabajo y los indicadores de rendimiento clave (KPI)
+* Los informes de HTML listos para usar supervisan los atrasos, las colas de trabajo y los indicadores de rendimiento clave (KPI)
 * Tableros personalizables para obtener información en tiempo real sobre las operaciones comerciales
 * API para conectarse con herramientas de informes de terceros
 
@@ -119,4 +118,3 @@ Los documentos personalizados, como recibos, kits de bienvenida y extractos, se 
 
 ![](do-not-localize/layout-02.png)
 **Figura:** *Flujo de trabajo de comunicación personalizado optimizado*
-

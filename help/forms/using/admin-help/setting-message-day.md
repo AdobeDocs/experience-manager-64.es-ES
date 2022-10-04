@@ -21,21 +21,21 @@ ht-degree: 1%
 
 Puede configurar un mensaje para que se muestre en la página de bienvenida de la interfaz de usuario de Workspace.
 
-Si es necesario, puede utilizar las etiquetas HTML admitidas por Adobe Flash® Player para dar formato al aspecto del texto:
+Si es necesario, puede utilizar las HTML compatibles con Adobe Flash® Player para dar formato al aspecto del texto:
 
-* &lt;a> Etiqueta delimitadora&lt;/a>
-* &lt;b> Negrita&lt;/b>
+* &lt;a> Etiqueta delimitadora
+* &lt;b> Negrita
 * &lt;br> Romper etiqueta
-* &lt;font> Etiqueta de fuente&lt;/font>
+* &lt;font> Etiqueta de fuente
 * &lt;img> Etiqueta de imagen
-* &lt;i> Etiqueta en cursiva&lt;/i>
+* &lt;i> Etiqueta en cursiva
 * &lt;li> Etiqueta de elemento de lista
 * &lt;p> Etiqueta de párrafo
-* &lt;span> Span tag&lt;/span>
+* &lt;span> Span tag
 * &lt;textformat> Etiqueta de formato de texto
-* &lt;u> Etiqueta Subrayado&lt;/u>
+* &lt;u> Etiqueta Subrayado
 
-Para obtener más información sobre las etiquetas admitidas, consulte la definición de la propiedad `htmlText` para la clase TextField en la [Referencia del lenguaje Flex](https://flex.apache.org/).
+Para obtener más información sobre las etiquetas admitidas, consulte la definición de la variable `htmlText` para la clase TextField en la [Referencia del lenguaje Flex](https://flex.apache.org/).
 
 ## Definir el mensaje del día {#set-the-message-of-the-day}
 

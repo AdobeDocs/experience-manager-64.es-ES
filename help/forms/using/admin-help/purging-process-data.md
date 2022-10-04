@@ -1,28 +1,26 @@
 ---
-title: Depuración de datos de proceso
-seo-title: Depuración de datos de proceso
-description: Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de los formularios AEM y reduce el uso de espacio en disco innecesario. Vea cómo puede depurar los datos del proceso.
-seo-description: Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de los formularios AEM y reduce el uso de espacio en disco innecesario. Vea cómo puede depurar los datos del proceso.
+title: Depuración de datos de procesos
+seo-title: Purging process data
+description: Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de AEM formularios y el uso de espacio en disco innecesario. Consulte cómo puede depurar datos de proceso.
+seo-description: Process data that is generated when a long-lived process is invoked can become too large, resulting in lower AEM forms performance and the use of unnecessary disk space. See how you can purge process data.
 uuid: 2f04452c-71c6-452c-88c2-7560d35e7dec
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3157bb92-4b07-40f2-be4c-8f5807f9a380
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: ecedde63-abbb-4e69-901e-1e4b7a59f539
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
+# Depuración de datos de procesos {#purging-process-data}
 
-# Purgando datos de proceso {#purging-process-data}
+Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de AEM formularios y el uso de espacio en disco innecesario. Se recomienda depurar los datos del proceso cuando los registros ya no sean necesarios. AEM formularios ofrece varios medios para depurar datos de proceso:
 
-Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de los formularios AEM y reduce el uso de espacio en disco innecesario. Se recomienda depurar los datos del proceso cuando ya no se necesitan registros. AEM formularios proporciona varios medios para depurar los datos del proceso:
-
-* Puede utilizar la consola de administración para realizar una purga única de registros obsoletos relacionados con procesos de larga duración o programar purgas automáticas regulares. (Consulte [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
-* Puede utilizar la API de Java de formularios AEM y la API de servicio Web para purgar mediante programación los datos de procesos relacionados con procesos de larga duración. (Consulte &quot;Depuración de datos de proceso&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63)).
-* Utilice la herramienta de depuración de procesos para purgar procesos en función del nombre del proceso y otros parámetros. Para obtener más información, consulte el archivo léame de la herramienta de depuración de procesos, ubicado en *[aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.
-
+* Puede utilizar la consola de administración para realizar una depuración única de registros obsoletos relacionados con procesos de larga duración o programar purgas automáticas regulares. (Consulte [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
+* Puede utilizar la API de Java de formularios AEM y la API de servicio web para depurar mediante programación los datos de proceso relacionados con procesos de larga duración. (Consulte &quot;Depuración de datos de proceso&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63).)
+* Utilice la herramienta de depuración de procesos para depurar procesos en función del nombre del proceso y otros parámetros. Para obtener más información, consulte el archivo léame de la herramienta de depuración de procesos, que se encuentra en *[raíz aem_forms]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.

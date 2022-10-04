@@ -1,31 +1,30 @@
 ---
 title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
-seo-title: Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms
-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
-seo-description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas de la interfaz.
+seo-title: Changing the locale of AEM Forms workspace user interface
+description: Cómo modificar el espacio de trabajo de AEM Forms para localizar texto, categorías contraídas, colas y procesos, y el selector de fechas en la interfaz.
+seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
-translation-type: tm+mt
-source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
+# Cambio de la configuración regional de la interfaz de usuario del espacio de trabajo de AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-# Cambio de la configuración regional de la interfaz de usuario del área de trabajo de AEM Forms {#changing-the-locale-of-aem-forms-workspace-user-interface}
+El espacio de trabajo de AEM Forms es compatible de serie con los idiomas inglés, francés, alemán y japonés. También permite localizar la interfaz de usuario del espacio de trabajo de AEM Forms en cualquier otro idioma.
 
-El espacio de trabajo de AEM Forms ofrece compatibilidad inmediata con los idiomas inglés, francés, alemán y japonés. También permite localizar la interfaz de usuario del espacio de trabajo de AEM Forms en cualquier otro idioma.
+Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms en el idioma que elija:
 
-Para localizar la interfaz de usuario del espacio de trabajo de AEM Forms según el idioma que elija:
-
-* Localizar texto del espacio de trabajo de AEM Forms.
-* Localice categorías contraídas, colas y procesos.
+* Localice el texto del espacio de trabajo de AEM Forms.
+* Localice las categorías contraídas, las colas y los procesos.
 * Localizar selector de fechas
 
 Antes de realizar los pasos anteriores, asegúrese de seguir los pasos enumerados en [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
@@ -36,36 +35,36 @@ Antes de realizar los pasos anteriores, asegúrese de seguir los pasos enumerado
 
 ## Localización de texto {#localizing-text}
 
-Realice los siguientes pasos para agregar soporte para un idioma *Nuevo* y el código de configuración regional del explorador *nuevo*.
+Realice los siguientes pasos para agregar compatibilidad con un idioma *Nuevo* y el código de configuración regional del navegador *nw*.
 
 1. Inicie sesión en el CRXDE Lite.
 
    La dirección URL predeterminada del CRXDE Lite es `https://[server]:[port]/lc/crx/de/index.jsp`.
 
-1. Vaya a la ubicación `apps/ws/locales` y cree una nueva carpeta `nw.`
-1. Copie el archivo `translation.json`desde la ubicación `/apps/ws/locales/en-US` a la ubicación `/apps/ws/locales/nw`.
-1. Vaya a `/apps/ws/locales/nw` y abra `translation.json` para editarlo. Realice cambios específicos de la configuración regional en el archivo translate.json.
+1. Vaya a la ubicación `apps/ws/locales` y crear una carpeta nueva `nw.`
+1. Copiar el archivo `translation.json`desde la ubicación `/apps/ws/locales/en-US` a ubicación `/apps/ws/locales/nw`.
+1. Vaya a `/apps/ws/locales/nw` y abrir `translation.json` para editar. Realice cambios específicos de la configuración regional en el archivo translation.json.
 
-   Los siguientes ejemplos contienen el archivo translate.json para las configuraciones regionales en inglés y francés del espacio de trabajo de AEM Forms.
+   Los siguientes ejemplos contienen el archivo translation.json para las configuraciones regionales en inglés y francés del espacio de trabajo de AEM Forms.
 
-   ![translate_json_in_](assets/translation_json_in_en.png) ![entranslation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_es](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
-## Localización de categorías contraídas, colas y procesos {#localizing-collapsed-categories-queues-and-processes}
+## Localización de categorías, colas y procesos contraídos {#localizing-collapsed-categories-queues-and-processes}
 
-El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Es necesario un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Generación de código de área de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+El espacio de trabajo de AEM Forms utiliza imágenes para mostrar encabezados de categorías, colas y procesos. Se necesita un paquete de desarrollo para localizar estos encabezados. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación del código de espacio de trabajo de AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categorías_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
+En los pasos siguientes, se da por hecho que los nuevos archivos de imagen localizados son *Categories_nw.png*, *Queue_nw.png* y *Processes_nw.png*. La anchura recomendada de las imágenes es de 19 píxeles.
 
 >[!NOTE]
 >
->Para buscar el código de configuración regional del idioma del explorador. Abra `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Para encontrar el código de configuración regional del idioma del navegador. Abra `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
 ![contraer_paneles_imagen](assets/collapsing_panels_image.png)
 
 Siga estos pasos para localizar las imágenes:
 
-1. Con un cliente WebDAV, coloque los archivos de imagen en la carpeta */apps/ws/images*.
-1. Vaya a */apps/ws/css*. Abra *newStyle.css* para editar y agregue las siguientes entradas:
+1. Con un cliente WebDAV, coloque los archivos de imagen en la variable */apps/ws/images* carpeta.
+1. Vaya a */apps/ws/css*. Apertura *newStyle.css* para editar y añadir las siguientes entradas:
 
    ```
    #categoryListBar .content.nw {
@@ -81,9 +80,9 @@ Siga estos pasos para localizar las imágenes:
    }
    ```
 
-1. Realice todos los cambios semánticos enumerados en el artículo [Personalización del espacio de trabajo](/help/forms/using/introduction-customizing-html-workspace.md).
-1. Vaya a la carpeta *js/Runtime/Utility* y abra el archivo* usersession.js* para editarlo.
-1. Busque el código que aparece en el bloque de código original y agregue la condición *lang !== &#39;nw&#39;* a la sentencia if:
+1. Realice todos los cambios semánticos enumerados en la [Personalización de Workspace](/help/forms/using/introduction-customizing-html-workspace.md) artículo.
+1. Vaya a la *js/runtime/utilidad* y abra el archivo usuariesession.js* para editarlo.
+1. Busque el código que aparece en el bloque de código original y añada la condición *lang !== &#39;nw&#39;* a la sentencia if :
 
    ```
    // Orignal code
@@ -111,23 +110,23 @@ Siga estos pasos para localizar las imágenes:
 
 ## Localización del selector de fechas {#localizing-date-picker}
 
-Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Generación de código de área de trabajo de AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Se necesita un paquete de desarrollo para localizar la API *datepicker *API. Para obtener información detallada sobre la creación de paquetes de desarrollo, consulte [Creación del código de espacio de trabajo de AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Descargue y extraiga el [paquete de IU de jQuery](https://jqueryui.com/download/all/), vaya a *&lt;paquete de IU de jquery extraído>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
-1. Copie el archivo jquery.ui.datepicker-nw.js para el código de configuración regional ahora en las aplicaciones/ws/js/libs/jqueryui y realice cambios específicos de configuración regional en el archivo.
-1. Vaya a `apps/ws/js` y abra el archivo `jquery.ui.datepicker-nw.js` para editarlo.
-1. En el archivo main.js, cree un alias para `jquery.ui.datepicker-nw.js.` El código para crear un alias para el archivo `jquery.ui.datepicker-nw.js` es:
+1. Descargue y extraiga el [Paquete de IU de jQuery](https://jqueryui.com/download/all/), vaya a *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
+1. Copie el archivo jquery.ui.datepicker-nw.js para el código de configuración regional ahora en apps/ws/js/libs/jqueryui y realice cambios específicos de configuración regional en el archivo .
+1. Vaya a `apps/ws/js` y abra el `jquery.ui.datepicker-nw.js` para editar.
+1. En el archivo main.js, cree un alias para `jquery.ui.datepicker-nw.js.` El código para crear un alias para la variable `jquery.ui.datepicker-nw.js` es:
 
    ```
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Utilice el alias `jqueryuidatepickernw` para incluir el archivo `jquery.ui.datepicker-nw.js` en todos los archivos que utilicen datepicker. El selector de datos se utiliza en los siguientes archivos:
+1. Usar alias `jqueryuidatepickernw` para incluir el `jquery.ui.datepicker-nw.js` en todos los archivos que utilizan datepicker. El selector de fecha se utiliza en los siguientes archivos:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
 
-   El código de muestra siguiente muestra cómo agregar la entrada de jquery.ui.datepicker-nw.js:
+   El código de ejemplo siguiente muestra cómo añadir la entrada jquery.ui.datepicker-nw.js:
 
    ```
    //Original Code
@@ -164,7 +163,7 @@ Se requiere un paquete de desarrollo para localizar la *API de *datepicker *API.
    ], function ($, _, Backbone, jQueryUI, jQueryUIDatePickerJA, jQueryUIDatePickerDE, jQueryUIDatePickerFR, jQueryUIDatePickerNW, slimScroll, UserSearch, LogManager, Logger) {
    ```
 
-1. En todos los archivos que utilizan la API de datepicker, cambie la configuración predeterminada de la API de datepicker. La API de datepicker se utiliza en los siguientes archivos:
+1. En todos los archivos que utilizan la API del selector de fecha, cambie la configuración predeterminada de la API del selector de fecha. La API del selector de fecha se utiliza en los siguientes archivos:
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js

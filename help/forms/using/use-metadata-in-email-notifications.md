@@ -1,31 +1,30 @@
 ---
-title: 'Usar metadatos en una notificación por correo electrónico '
-seo-title: 'Usar metadatos en una notificación por correo electrónico '
-description: Utilizar metadatos para rellenar información en una notificación por correo electrónico del flujo de trabajo de formularios
-seo-description: Utilizar metadatos para rellenar información en una notificación por correo electrónico del flujo de trabajo de formularios
+title: Usar metadatos en una notificación por correo electrónico
+seo-title: Use metadata in an email notification
+description: Usar metadatos para rellenar información en una notificación de correo electrónico del flujo de trabajo de formularios
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
-translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 1%
+source-wordcount: '902'
+ht-degree: 18%
 
 ---
 
+# Usar metadatos en una notificación por correo electrónico  {#use-metadata-in-an-email-notification}
 
-# Utilizar metadatos en una notificación por correo electrónico {#use-metadata-in-an-email-notification}
+Usar metadatos para rellenar información en una notificación de correo electrónico del flujo de trabajo de formularios
 
-Utilizar metadatos para rellenar información en una notificación por correo electrónico del flujo de trabajo de formularios
+Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una [notificación por correo electrónico](/help/forms/using/use-custom-email-template-assign-task-step.md) contiene el vínculo de la tarea asignada y la información relacionada con la tarea.
 
-Puede utilizar el paso Asignar Tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una [notificación de correo electrónico](/help/forms/using/use-custom-email-template-assign-task-step.md) típica contiene un vínculo de la tarea asignada e información relacionada con la tarea.
-
-Puede utilizar metadatos en una plantilla de correo electrónico para rellenar dinámicamente la información en una notificación por correo electrónico. Por ejemplo, el valor del título, la descripción, la fecha de vencimiento, la prioridad, el flujo de trabajo y la última fecha de la siguiente notificación por correo electrónico se selecciona de forma dinámica durante la ejecución (cuando se genera una notificación por correo electrónico).
+Puede utilizar metadatos en una plantilla de correo electrónico para rellenar dinámicamente la información en una notificación por correo electrónico. Por ejemplo, el valor del título, la descripción, la fecha de vencimiento, la prioridad, el flujo de trabajo y la última fecha de la siguiente notificación de correo electrónico se seleccionan de forma dinámica en el tiempo de ejecución (cuando se genera una notificación por correo electrónico).
 
 ![default-email-template](assets/default-email-template.png)
 
-Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y sustituirla por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el ejemplo de código siguiente, &quot;$ {workitem_title}&quot; es una clave. Se sustituye por el valor &quot;Solicitud de préstamo&quot; en tiempo de ejecución.
+Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y la clave se sustituye por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el siguiente ejemplo de código, &quot;$ {workitem_title}&quot; es una clave. Se reemplaza con el valor &quot;Loan-Request&quot; en tiempo de ejecución.
 
 ```xml
 subject=Task Assigned - ${workitem_title}
@@ -100,7 +99,7 @@ message=<html><body>\n\
 
 ## Uso de metadatos generados por el sistema en una notificación por correo electrónico {#using-system-generated-metadata-in-an-email-notification}
 
-Una aplicación de AEM Forms proporciona varias variables de metadatos (pares clave-valor) predeterminadas. Puede utilizar estas variables en una plantilla de correo electrónico. El valor de la variable se basa en la aplicación de formularios asociada. La siguiente tabla lista todas las variables de metadatos disponibles de forma predeterminada:
+Una aplicación de AEM Forms proporciona varias variables de metadatos (pares clave-valor) listas para usar. Puede utilizar estas variables en una plantilla de correo electrónico. El valor de la variable se basa en la aplicación de formularios asociada. La siguiente tabla enumera todas las variables de metadatos disponibles de forma predeterminada:
 
 <table> 
  <tbody> 
@@ -109,7 +108,7 @@ Una aplicación de AEM Forms proporciona varias variables de metadatos (pares cl
    <td>Descripción</td> 
   </tr> 
   <tr> 
-   <td>workitem_title</td> 
+   <td>elemento de trabajo_título</td> 
    <td>Título de la aplicación de formularios asociada.</td> 
   </tr> 
   <tr> 
@@ -153,19 +152,19 @@ Una aplicación de AEM Forms proporciona varias variables de metadatos (pares cl
 
 ## Uso de metadatos personalizados en una notificación por correo electrónico {#using-custom-metadata-in-an-email-notification}
 
-También puede utilizar metadatos personalizados en una notificación por correo electrónico. Los metadatos personalizados contienen información además de los metadatos generados por el sistema. Por ejemplo, los detalles de directivas recuperados de una base de datos. Puede utilizar un paquete ECMAScript o OSGi para agregar metadatos personalizados en crx-repository:
+También puede utilizar metadatos personalizados en una notificación por correo electrónico. Los metadatos personalizados contienen información además de los metadatos generados por el sistema. Por ejemplo, los detalles de directivas recuperados de una base de datos. Puede utilizar un paquete ECMAScript o OSGi para agregar metadatos personalizados en el repositorio crx:
 
-### Utilice ECMAScript para agregar metadatos personalizados {#use-ecmascript-to-add-custom-metadata}
+### Usar ECMAScript para agregar metadatos personalizados  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis es un lenguaje de secuencias de comandos. Se utiliza para secuencias de comandos de lado del cliente y aplicaciones de servidor. Siga estos pasos para utilizar ECMAScript y agregar metadatos personalizados para una plantilla de correo electrónico:
+[ECMAScript es un lenguaje de script. ](https://en.wikipedia.org/wiki/ECMAScript) Se utiliza para scripts del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para utilizar ECMAScript para agregar metadatos personalizados a una plantilla de correo electrónico:
 
-1. Inicie sesión en CRX DE con una cuenta administrativa. La dirección URL es `https://[server]:[port]/crx/de/index.jsp`
+1. Inicie sesión en CRX DE con una cuenta administrativa. La URL es `https://[server]:[port]/crx/de/index.jsp`. 
 
-1. Vaya a /apps/fd/panel/scripts/metadataScripts. Cree un archivo con la extensión .ecma. Por ejemplo, usermetadata.ecma
+1. Vaya a /apps/fd/dashboard/scripts/metadataScripts. Cree un archivo con la extensión .ecma. Por ejemplo, usermetadata.ecma
 
-   Si la ruta mencionada no existe, créela.
+   Si la ruta mencionada anteriormente no existe, créela.
 
-1. Añada código al archivo .ecma que tenga la lógica de generar metadatos personalizados en pares clave-valor. Por ejemplo, el siguiente código ECMAScript genera metadatos personalizados para una póliza de seguro:
+1. Agregue código al archivo .ecma que tenga la lógica de generar metadatos personalizados en pares clave-valor. Por ejemplo, el siguiente código ECMAScript genera metadatos personalizados para una póliza de seguro:
 
    ```
    function getUserMetaData()  {
@@ -181,40 +180,40 @@ También puede utilizar metadatos personalizados en una notificación por correo
 
 1. Haga clic en Guardar todo. Ahora, la secuencia de comandos está disponible para su selección en AEM modelo de flujo de trabajo.
 
-   ![asignar tarea-metadatos](assets/assigntask-metadata.png)
+   ![assigntask-metadata](assets/assigntask-metadata.png)
 
 1. (Opcional) Especifique el título de la secuencia de comandos:
 
-   Si no especifica el título, el campo Metadatos personalizados muestra la ruta completa del archivo ECMAScript. Realice los siguientes pasos para especificar un título significativo para la secuencia de comandos:
+   Si no especifica el título, el campo Metadatos personalizados muestra la ruta completa del archivo ECMAScript. Siga estos pasos para especificar un título significativo para la secuencia de comandos:
 
-   1. Expanda el nodo de secuencia de comandos, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mezclas]**.
-   1. Escriba mix:title en el cuadro de diálogo Editar mezclas y haga clic en **+**.
-   1. Añada una propiedad con los valores siguientes.
+   1. Expanda el nodo del script, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mixins]**.
+   1. Mezcla de tipos:título en el cuadro de diálogo Editar mezclas y haga clic en **+**.
+   1. Agregue una propiedad con los siguientes valores.
 
       | Nombre | jcr:title |
       |---|---|
       | Tipo | Cadena |
-      | Value | Especifique el título de la secuencia de comandos. Por ejemplo, metadatos personalizados para el titular de la directiva. El valor especificado se muestra en el paso asignar tarea. |
+      | Valor | Especifique el título de la secuencia de comandos. Por ejemplo, metadatos personalizados para el titular de la directiva. El valor especificado se muestra en el paso asignar tarea. |
 
-### Utilice un paquete OSGi y una interfaz Java para agregar metadatos personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Usar un paquete OSGi y la interfaz Java para agregar metadatos personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Puede utilizar la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados a las plantillas de correo electrónico. Puede crear un paquete OSGi que utilice la interfaz Java WorkitemUserMetadataService e implementarla en el servidor de AEM Forms. Permite seleccionar los metadatos en el paso Asignar Tarea.
+Puede utilizar la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados para plantillas de correo electrónico. Puede crear un paquete OSGi que utilice la interfaz Java WorkitemUserMetadataService e implementarla en el servidor de AEM Forms. Hace que los metadatos estén disponibles para su selección en el paso Asignar tarea .
 
-Para crear un paquete OSGi con la interfaz de Java, agregue [archivos del SDK del cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [archivos del tarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona pasos para utilizar Eclipse para crear un paquete OSGi:
+Para crear un paquete OSGi con la interfaz Java, agregue [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [tarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) archivos como dependencias externas al proyecto de paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
 
 1. Abra Eclipse IDE. Vaya a Archivo > Nuevo proyecto.
 
-1. En la pantalla Seleccionar un asistente, seleccione Mover proyecto y haga clic en Siguiente.
+1. En la pantalla Seleccionar un asistente, seleccione Proyecto Maven y haga clic en Siguiente.
 
-1. En el proyecto Nuevo visor, mantenga los valores predeterminados y haga clic en Siguiente. Seleccione un arquetipo y haga clic en Siguiente. Por ejemplo, maven-archetype-quickstart. Especifique el ID de grupo, el ID de artefacto, la versión y el paquete para el proyecto y haga clic en Finalizar. Se crea el proyecto.
+1. En este nuevo proyecto llamado Maven, mantenga los valores predeterminados y haga clic en Siguiente. Seleccione un arquetipo y haga clic en Siguiente; por ejemplo, maven-archetype-quickstart. Especifique el ID de grupo, el ID de artefacto, la versión y el paquete del proyecto y haga clic en Finalizar. El proyecto se ha creado.
 
-1. Abra el archivo pom.xml para editarlo y sustituya todo el contenido del archivo por el siguiente:
+1. Abra el archivo pom.xml para editarlo y reemplace todo el contenido del archivo por lo siguiente:
 
    ```
    
    ```
 
-1. Añada el código fuente que utiliza la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados a las plantillas de correo electrónico. A continuación se muestra un código de muestra:
+1. Agregue código fuente que utilice la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados para plantillas de correo electrónico. A continuación se muestra un ejemplo de código:
 
    ```java
    package com.aem.impl;
@@ -254,6 +253,6 @@ Para crear un paquete OSGi con la interfaz de Java, agregue [archivos del SDK de
 
    `mvn clean install`
 
-1. Cargue el paquete en un servidor AEM Forms. Puede utilizar AEM Administrador de paquetes para importar el paquete al servidor de AEM Forms.
+1. Cargue el paquete en un servidor de AEM Forms. Puede utilizar AEM Administrador de paquetes para importar el paquete en el servidor de AEM Forms.
 
-Una vez importado el paquete, puede seleccionar los metadatos en el paso Asignar Tarea y utilizarlos en una plantilla de correo electrónico.
+Una vez importado el paquete, puede seleccionar los metadatos en el paso Asignar tarea y utilizarlos en una plantilla de correo electrónico.

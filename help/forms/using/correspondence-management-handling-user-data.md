@@ -1,24 +1,24 @@
 ---
 title: Gestión de correspondencia | Gestión de datos de usuario
-seo-title: Gestión de correspondencia | Gestión de datos de usuario
+seo-title: Correspondence Management | Handling user data
 description: La gestión de correspondencia de AEM Forms le permite crear, administrar y optimizar las correspondencias de clientes seguras y personalizadas. Obtenga información sobre cómo configurar el almacenamiento de datos para cartas en borrador y enviadas en AEM repositorio, acceder a datos almacenados y eliminar datos almacenados.
-seo-description: La gestión de correspondencia de AEM Forms le permite crear, administrar y optimizar las correspondencias de clientes seguras y personalizadas. Obtenga información sobre cómo configurar el almacenamiento de datos para cartas en borrador y enviadas en AEM repositorio, acceder a datos almacenados y eliminar datos almacenados.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: ''
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 3%
 
 ---
 
 # Gestión de correspondencia | Gestión de datos de usuario {#correspondence-management-handling-user-data}
 
-La gestión de correspondencia de AEM Forms le permite crear, administrar y optimizar las correspondencias de clientes seguras y personalizadas. Proporciona una interfaz de usuario intuitiva para que los usuarios empresariales creen correspondencias utilizando bloques de contenido y elementos multimedia previamente aprobados. Para obtener más información sobre la creación de correspondencia, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
+La gestión de correspondencia de AEM Forms le permite crear, administrar y optimizar las correspondencias de clientes seguras y personalizadas. Proporciona una interfaz de usuario intuitiva para que los usuarios empresariales creen correspondencias utilizando bloques de contenido y elementos multimedia previamente aprobados. Para obtener más información sobre la creación de correspondencias, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
 
 Cuando un usuario empresarial o un agente guarda una correspondencia como borrador o la envía, se guarda una instancia de carta en el repositorio de AEM. La instancia de carta incluye datos de correspondencia y metadatos.
 
@@ -28,7 +28,7 @@ Cuando un usuario empresarial o un agente guarda una correspondencia como borrad
 
 ## Almacenamiento de datos y datos de usuarios {#data}
 
-La gestión de correspondencia almacena datos para cartas en borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información sobre la configuración, consulte [Propiedades de configuración de Gestión de correspondencia](/help/forms/using/cm-configuration-properties.md).
+La gestión de correspondencia almacena datos para cartas en borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información sobre la configuración, consulte [Propiedades de configuración de la gestión de correspondencia](/help/forms/using/cm-configuration-properties.md).
 
 Según la persistencia del almacén de datos configurada para la implementación de AEM, los borradores y los datos de correspondencia enviados se almacenan en las siguientes ubicaciones.
 
@@ -58,7 +58,7 @@ En la ubicación del repositorio AEM especificada arriba:
 * `[node-id]` es el ID asignado a la carpeta que contiene la carta
 * `[letter-instance-name]` es el nombre especificado al guardar o enviar una carta
 
-En el nodo [letter-instance-name], se crea la siguiente estructura de nodos y los datos de cada instancia de letra se almacenan en el repositorio de AEM:
+En el [letter-instance-name] , se crea la siguiente estructura de nodos y los datos de cada instancia de letra se almacenan en el repositorio de AEM:
 
 | Nodo | Descripción |
 |---|---|
@@ -73,11 +73,11 @@ Puede acceder a los datos de correspondencia en borrador y enviados en los almac
 
 ### Acceso a los datos de usuario {#access-user-data}
 
-La gestión de correspondencia proporciona API que puede utilizar para buscar y acceder a instancias de carta en borrador y enviadas. Con las API, puede encontrar y abrir instancias de carta utilizando el ID de instancia de la carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [APIs para acceder a instancias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
+La gestión de correspondencia proporciona API que puede utilizar para buscar y acceder a instancias de carta en borrador y enviadas. Con las API, puede encontrar y abrir instancias de carta utilizando el ID de instancia de la carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Alternativamente, puede navegar a la instancia de carta en AEM repositorio utilizando CRX DELite. Consulte [Almacenamiento de datos y datos de usuario](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
+Alternativamente, puede navegar a la instancia de carta en AEM repositorio utilizando CRX DELite. Consulte [Almacenamiento de datos y datos de usuarios](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
 
-### Eliminar datos de usuario {#delete-user-data}
+### Eliminación de los datos de usuario {#delete-user-data}
 
 Para buscar una instancia de carta que contenga los datos de un usuario específico, puede:
 

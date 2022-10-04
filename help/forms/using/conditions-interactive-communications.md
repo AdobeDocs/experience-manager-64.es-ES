@@ -1,21 +1,20 @@
 ---
 title: Condiciones de las comunicaciones interactivas
-seo-title: Condiciones de las comunicaciones interactivas
+seo-title: Conditions in Interactive Communications
 description: 'Creación y edición de fragmentos de condición para utilizarlos en Interactive Communications: la condición es uno de los cuatro tipos de fragmentos de documento utilizados para crear Interactive Communications. Los otros tres son textos, listas y fragmentos de diseño.  '
-seo-description: Creación y edición de condiciones para su uso en Interactive Communications
+seo-description: Creating and editing conditions to be used in Interactive Communications
 uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0ffb297f-8c5a-4909-b4c0-2d8253548640
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 0%
+source-wordcount: '1492'
+ht-degree: 1%
 
 ---
-
 
 # Condiciones de las comunicaciones interactivas {#conditions-in-interactive-communications}
 
@@ -23,7 +22,7 @@ Creación y edición de fragmentos de condición para utilizarlos en Interactive
 
 ## Información general {#overview}
 
-Condición es un fragmento de documento que puede incluir en una comunicación interactiva. Los demás fragmentos del documento son [texto](/help/forms/using/texts-interactive-communications.md), lista y fragmento de diseño. Las condiciones permiten definir uno o varios recursos contextuales que se incluyen en una comunicación interactiva en función de los datos y las reglas suministrados.
+Condición es un fragmento de documento que puede incluir en una comunicación interactiva. Los demás fragmentos de documento son [text](/help/forms/using/texts-interactive-communications.md), lista y fragmento de diseño. Las condiciones permiten definir uno o varios recursos contextuales que se incluyen en una comunicación interactiva en función de los datos y las reglas suministrados.
 
 Ejemplos:
 
@@ -41,17 +40,17 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
 
 ## Crear condición {#createcondition}
 
-1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
-1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Condición]**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
+1. Select **[!UICONTROL Crear]** > **[!UICONTROL Condición]**.
 1. Especifique la siguiente información:
 
    * **[!UICONTROL Título]**: (Opcional) Introduzca el título de la condición. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y caracteres que no sean de inglés. Las condiciones son referidas por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
    * **[!UICONTROL Nombre]**: Nombre exclusivo de la condición, dentro de una carpeta. No pueden existir dos fragmentos de documento (texto, condición o lista) con el mismo nombre dentro de una carpeta. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título . Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
    * **[!UICONTROL Descripción]**: Escriba una descripción del fragmento del documento.
-   * **[!UICONTROL Modelo]** de datos de formulario: De forma opcional, seleccione el botón de opción Modelo de datos de formulario para crear la condición basada en un modelo de datos de formulario. Cuando se selecciona el botón de opción Modelo de datos de formulario, aparece el campo **[!UICONTROL Modelo de datos de formulario*]**. Busque y seleccione un modelo de datos de formulario. Al crear una condición para una comunicación interactiva, asegúrese de utilizar el mismo modelo de datos que desea utilizar en la comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte [Integración de datos](/help/forms/using/data-integration.md).
+   * **[!UICONTROL Modelo de datos de formulario]**: De forma opcional, seleccione el botón de opción Modelo de datos de formulario para crear la condición basada en un modelo de datos de formulario. Al seleccionar el botón de radio Modelo de datos de formulario, **[!UICONTROL Modelo de datos de formulario*]** aparece. Busque y seleccione un modelo de datos de formulario. Al crear una condición para una comunicación interactiva, asegúrese de utilizar el mismo modelo de datos que desea utilizar en la comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte [Integración de datos](/help/forms/using/data-integration.md).
    * **[!UICONTROL Etiquetas]**: De forma opcional, para crear una etiqueta personalizada, introduzca un valor en el campo de texto y pulse Intro. Al guardar esta condición, se crean las etiquetas recién añadidas.
 
-1. Toque **[!UICONTROL Siguiente]**.
+1. Pulse **[!UICONTROL Siguiente]**.
 
    Aparece la página Crear condición .
 
@@ -88,9 +87,9 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
    * **Evaluación de varios resultados deshabilitada\Evaluación de varios resultados habilitada**: Cuando esta opción está habilitada (aparece como &quot;Evaluación de varios resultados habilitada&quot;), todas las reglas se evalúan y el resultado es la suma de todas las reglas verdaderas. Si esta opción está deshabilitada (aparece como &quot;Evaluación de varios resultados deshabilitada&quot;), solo se evalúa la primera regla que se encuentra como verdadera y se convierte en el resultado de la condición.
-   * **Salto** de página: Seleccione esta opción (  ![break](assets/break.png)) para añadir un salto de página entre los recursos de las condiciones. Cuando no se selecciona esta opción ( ![nobreak](assets/nobreak.png)), si una condición se está desbordando a la siguiente página de la salida de impresión, toda la condición se cambia a la siguiente página en lugar de romperse en la página entre los recursos de la condición.
+   * **Salto de página**: Seleccione esta opción ( ![break](assets/break.png)) para agregar un salto de página entre los recursos de las condiciones. Cuando esta opción no está seleccionada ( ![nobreak](assets/nobreak.png)), si una condición se está desbordando a la siguiente página de la salida de impresión, toda la condición se pasa a la siguiente página en lugar de romperse en la página entre los recursos de la condición.
 
-1. Toque **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [creación de variables](#variables). Para obtener más información, consulte [Adición de reglas a la condición](#ruleeditor).
+1. Toque **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [creación de variables](#variables). Para obtener más información, consulte [Adición de reglas a una condición](#ruleeditor).
 
    Las reglas creadas aparecen en la columna REGLA de la pantalla Crear condición .
 
@@ -100,7 +99,7 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    >
    >Puede insertar activos en la condición que ya tienen reglas o que se repiten.
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
    Se crea la condición. Ahora puede continuar usando la condición como un bloque de creación al crear una comunicación interactiva.
 
@@ -112,13 +111,13 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
 
 Puede editar una condición siguiendo los pasos siguientes. También puede editar una condición desde una comunicación interactiva seleccionando Editar fragmento en el menú emergente.
 
-1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 1. Vaya a la condición y selecciónela.
 1. Toque **[!UICONTROL Editar]**.
 1. Realice los cambios necesarios en la condición. Para obtener más información sobre la información que puede cambiar en una condición, consulte [Crear condición](#createcondition).
-1. Pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Cerrar]**.
+1. Toque **[!UICONTROL Guardar]** y, a continuación, toque **[!UICONTROL Cerrar]**.
 
-## Crear reglas en la condición {#ruleeditor}
+## Crear reglas en condición {#ruleeditor}
 
 Con el editor de reglas en una condición, puede crear reglas para mostrar u ocultar recursos en función de **condiciones preestablecidas**. Estas condiciones se pueden construir en función de:
 
@@ -127,16 +126,16 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
 * Expresiones matemáticas
 * Fechas
 * Propiedades del modelo de datos de formulario asociado
-* Todas las [variables](#variables) que pueda haber creado
+* Cualquiera [variables](#variables) que puede haber creado
 
-### Crear regla en la condición {#create-rule-in-condition}
+### Crear regla en condición {#create-rule-in-condition}
 
-1. Durante la creación o edición de una condición, pulse el icono ![rule editoricon](assets/ruleeditoricon.png) (Editor de reglas) para el recurso correspondiente.
+1. Durante la creación o edición de una condición, pulse ![ruleeditoricon](assets/ruleeditoricon.png) (Editor de reglas) para el recurso correspondiente.
 
    Aparecerá el cuadro de diálogo Crear regla . Además de cadena, número, expresión matemática y fecha, también están disponibles en el Editor de reglas para crear instrucciones de las reglas:
 
    * Propiedades del modelo de datos de formulario asociado
-   * Todas las [variables](#variables) que haya creado.
+   * Cualquiera [variables](#variables) que puede haber creado.
 
    ![createruledialog](assets/createruledialog.png)
 
@@ -156,13 +155,13 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
    * Al crear o editar una regla, también puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla/Editar regla . El cuadro de diálogo expandido a ventana completa le permite crear [variables](#variables) para construir reglas. Puntee de nuevo Cambiar tamaño para volver al cuadro de diálogo normal Crear regla .
    * También puede crear varias condiciones en una regla.
 
-1. Puntee **[!UICONTROL Listo]**.
+1. Pulse **[!UICONTROL Listo]**.
 
    La regla se aplica al recurso.
 
 ## Creación y uso de variables en una condición {#variables}
 
-Mientras crea o edita una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla\Editar regla . El cuadro de diálogo expandido a ventana completa le permite:
+Durante la creación o edición de una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla\Editar regla . El cuadro de diálogo expandido a ventana completa le permite:
 
 * Crear y usar variables en la regla
 * Arrastrar y soltar las propiedades y variables del modelo de datos de formulario en la regla
@@ -171,7 +170,7 @@ Vuelva a pulsar Cambiar tamaño para volver al cuadro de diálogo Crear regla\Ed
 
 ### Crear variables {#create-variables}
 
-1. Mientras crea o edita una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla/Editar regla .
+1. Durante la creación o edición de una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla/Editar regla .
 
    Aparece el cuadro de diálogo Expandido y ventana completa.
 
@@ -183,18 +182,18 @@ Vuelva a pulsar Cambiar tamaño para volver al cuadro de diálogo Crear regla\Ed
 
    ![expandeditrulevariables](assets/expandededitrulevariables.png)
 
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
    Aparece el panel Crear variables .
 
-1. Introduzca la siguiente información y pulse **[!UICONTROL Create]**:
+1. Introduzca la siguiente información y pulse **[!UICONTROL Crear]**:
 
    * **[!UICONTROL Nombre*]**: Nombre de la variable.
    * **[!UICONTROL Descripción]**: Opcionalmente, introduzca una descripción sobre la variable.
    * **[!UICONTROL Tipo*]**: Seleccione un tipo de variable: Cadena, Número, Booleano o Fecha.
-   * **[!UICONTROL Permitir solo]** valores específicos: Para las variables String y Number , puede asegurarse de que el agente elija entre un conjunto específico de valores para un marcador de posición en la interfaz de usuario del agente. Para especificar el conjunto de valores, seleccione esta opción y, a continuación, especifique los valores separados por coma que están permitidos en el campo **[!UICONTROL Values*]**.
+   * **[!UICONTROL Permitir solo valores específicos]**: Para las variables String y Number , puede asegurarse de que el agente elija entre un conjunto específico de valores para un marcador de posición en la interfaz de usuario del agente. Para especificar el conjunto de valores, seleccione esta opción y, a continuación, especifique los valores separados por coma que están permitidos en la variable **[!UICONTROL Valores*]** campo .
 
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
    La variable se crea y se enumera en el panel Variables .
 
@@ -202,4 +201,3 @@ Vuelva a pulsar Cambiar tamaño para volver al cuadro de diálogo Crear regla\Ed
 1. Después de crear una regla válida, pulse **[!UICONTROL Listo]**.
 
    Realice más cambios, si es necesario, en la condición y guárdela.
-

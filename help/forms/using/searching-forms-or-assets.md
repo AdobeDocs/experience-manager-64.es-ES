@@ -1,8 +1,8 @@
 ---
 title: Búsqueda de formularios y recursos
-seo-title: Búsqueda de formularios y recursos
+seo-title: Searching for forms and assets
 description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada permite localizar rápidamente los recursos.
-seo-description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada permite localizar rápidamente los recursos.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '684'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Puede buscar formularios o recursos de formulario, utilizando una cadena de text
 
 Cuando selecciona uno o más criterios y también especifica una cadena de texto, la intersección del texto y los criterios se devuelven como resultados de búsqueda. Los resultados de la búsqueda son tan buenos como el formulario y los metadatos de recursos proporcionados.
 
-Haga clic en ![aem6forms_search](assets/aem6forms_search.png) para mostrar u ocultar el panel de búsqueda.
+Haga clic en ![aem6forms_search](assets/aem6forms_search.png), para mostrar u ocultar el panel de búsqueda.
 
 ## Búsqueda básica {#basic-search}
 
@@ -37,7 +37,7 @@ Tenga en cuenta los siguientes puntos sobre la búsqueda básica:
 
 * La búsqueda se realiza utilizando las propiedades de metadatos de formulario y recursos.
 * Si escribe más de una palabra, la operación de búsqueda coincidirá con el texto completo para la búsqueda.
-* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, al escribir `geometrixx`, los recursos con títulos `Geometrixx`, `GEOMETRIXX` y `GeoMetRixx` se muestran en los resultados de la búsqueda.
+* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, al escribir `geometrixx`, recursos con títulos `Geometrixx`, `GEOMETRIXX`y `GeoMetRixx` se muestran en los resultados de la búsqueda.
 
 * No se admiten coincidencias parciales de una palabra. Para buscar utilizando cadenas parciales, utilice &amp;ast; comodín. Sin embargo, si la consulta de búsqueda coincide con una palabra completa, se muestra el formulario o recurso correspondiente.
 * Los espacios adicionales se respetan y no se recortan durante la búsqueda. Por ejemplo, `My form` no es la misma consulta de búsqueda que `My form`.
@@ -91,7 +91,7 @@ Puede seleccionar cualquier tipo de recurso. La búsqueda devuelve la unión de 
   </tr>
   <tr>
    <td>Formulario PDF</td> 
-   <td>Busque en todos los documentos PDF.</td> 
+   <td>Busque en todos los documentos del PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 
@@ -102,7 +102,7 @@ Puede seleccionar cualquier tipo de recurso. La búsqueda devuelve la unión de 
    <td>Busque en todos los formularios adaptables.</td> 
   </tr>
   <tr>
-   <td>Medio</td> 
+   <td>Recurso</td> 
    <td>Busque en todos los recursos.<br /> </td> 
   </tr>
  </tbody>

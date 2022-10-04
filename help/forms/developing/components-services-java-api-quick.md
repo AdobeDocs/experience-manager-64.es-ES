@@ -46,11 +46,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
+>Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
 
 ## Inicio rápido (modo SOAP): Implementación de un componente mediante la API de Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-El siguiente ejemplo de Java implementa un componente basado en un archivo JAR llamado *adobe-emailSample-dsc.jar*.
+El siguiente ejemplo de Java implementa un componente basado en un archivo JAR denominado *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -357,7 +357,7 @@ El siguiente ejemplo de código Java deshabilita la seguridad del servicio Encry
 
 ## Inicio rápido (modo SOAP): Inicio de un servicio mediante la API de Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-El siguiente ejemplo de código Java inicia un servicio llamado *SendEmailService*.
+El siguiente ejemplo de código Java inicia un servicio denominado *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

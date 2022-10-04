@@ -1,40 +1,39 @@
 ---
 title: Configuración de una solución de Gestión de Correspondencia
-seo-title: Configuración de una solución de Gestión de Correspondencia
+seo-title: Configuring a Correspondence Management solution
 description: Obtenga información sobre cómo definir una URL de instancia de autor para la restauración de la versión de la instancia de autor y definir la URL de instancia de publicación para el administrador de activación de instancias públicas.
-seo-description: Obtenga información sobre cómo definir una URL de instancia de autor para la restauración de la versión de la instancia de autor y definir la URL de instancia de publicación para el administrador de activación de instancias públicas.
+seo-description: Learn how to define an author instance URL for the author instance version restore and define the Publish instance URL for public instance activation manager.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a062957d-a526-4c4b-bbc5-0cda8ab007a3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
 
-
-# Configuración de una solución de administración de correspondencia {#configuring-a-correspondence-management-solution}
+# Configuración de una solución de Gestión de Correspondencia {#configuring-a-correspondence-management-solution}
 
 ## Definición de la URL de instancia de autor para VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
 
 Siga los siguientes pasos para definir una URL de instancia de autor para la restauración de la versión de la instancia de autor:
 
-1. Vaya a *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la Consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
-1. Busque y haga clic en el icono **[!UICONTROL Edit]** situado junto al ajuste **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. En el campo **[!UICONTROL VersionRestoreManager Author URL]**, especifique la URL de la instancia de autor de VersionRestoreManager.
+1. Vaya a *https://:&lt;publishhost>:&lt;publishport>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la Consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
+1. Busque y haga clic en el botón **[!UICONTROL Editar]** junto al icono **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** configuración.
+1. En el **[!UICONTROL URL de autor de VersionRestoreManager]** especifique la dirección URL de la instancia Autor de VersionRestoreManager.
 
-   **Cadena** URL:
+   **Cadena de URL**:
 
    `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.VersionRestoreManager`
 
    >[!NOTE]
    >
-   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la dirección URL del equilibrador de carga en el campo **[!UICONTROL VersionRestoreManager Author URL]**.
+   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la URL del equilibrador de carga en la variable **[!UICONTROL URL de autor de VersionRestoreManager]** campo .
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -42,16 +41,16 @@ Siga los siguientes pasos para definir una URL de instancia de autor para la res
 
 Siga estos pasos para definir la URL de instancia de publicación para el administrador de activación de instancias públicas:
 
-1. Vaya a *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la Consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
-1. Busque y haga clic en el icono **[!UICONTROL Edit]** situado junto al ajuste **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
-1. En el campo **[!UICONTROL ActivationManager Publish URL]**, especifique la dirección URL para acceder a la instancia de publicación ActivationManager. Puede proporcionar las siguientes direcciones URL.
+1. Vaya a *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la Consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
+1. Busque y haga clic en el botón **[!UICONTROL Editar]** junto al icono **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** configuración.
+1. En el **[!UICONTROL URL de publicación de ActivationManager]** especifique la dirección URL para acceder a la instancia de publicación ActivationManager. Puede proporcionar las siguientes direcciones URL.
 
    * **URL del equilibrador de carga (recomendado)**: Proporcione la URL del equilibrador de carga, si tiene un servidor web que actúa como equilibrador de carga frente al conjunto de servidores de publicación (varias instancias de publicación no agrupadas).
-   * **URL** de instancia de publicación: Proporcione cualquier URL de instancia de publicación, si tiene una sola instancia de publicación o el servidor web que enlaza el conjunto de servidores de publicación no es accesible desde el entorno de creación debido a restricciones. En caso de que la instancia de publicación especificada esté desactivada, hay un mecanismo de reserva con el que lidiar el autor.
-   * **Cadena** URL:
+   * **URL de instancia de publicación**: Proporcione cualquier URL de instancia de publicación, si tiene una sola instancia de publicación o el servidor web que enlaza el conjunto de servidores de publicación no es accesible desde el entorno de creación debido a restricciones. En caso de que la instancia de publicación especificada esté desactivada, hay un mecanismo de reserva con el que lidiar el autor.
+   * **Cadena de URL**:
 
       `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-Para obtener más información sobre la configuración de la Gestión de Correspondencia, consulte [Propiedades de configuración de Gestión de Correspondencia](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Para obtener más información sobre la configuración de la Gestión de Correspondencia, consulte [Propiedades de configuración de la gestión de correspondencia](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

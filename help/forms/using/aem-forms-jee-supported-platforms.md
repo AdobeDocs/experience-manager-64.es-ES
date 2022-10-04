@@ -13,7 +13,7 @@ exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
 source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
 source-wordcount: '3330'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -630,12 +630,12 @@ Para obtener más información, consulte:
 
 * Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
-* 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits
+* 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
 * 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
-* Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
-* 2,35 GB de espacio disponible en disco duro
-* 1024 X 768 píxeles o buena resolución del monitor
-* Aceleración de hardware de vídeo (opcional)
+* Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB);
+* 2,35 GB de espacio disponible en disco duro;
+* 1024 X 768 píxeles de resolución de monitor o superior;
+* Aceleración de hardware de vídeo (opcional);
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegios administrativos para instalar Designer
 

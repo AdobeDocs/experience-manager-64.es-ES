@@ -13,7 +13,7 @@ exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
 source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
 workflow-type: tm+mt
 source-wordcount: '1646'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,7 @@ La variable **[!UICONTROL Editar]** incluye varias pestañas que proporcionan op
 <table>
  <tbody>
   <tr>
-   <th>Ficha</th>
+   <th>Tab</th>
    <th>Configuración</th>
    <th>Descripción</th>
   </tr>
@@ -81,7 +81,7 @@ La variable **[!UICONTROL Editar]** incluye varias pestañas que proporcionan op
   </tr>
   <tr>
    <td> </td>
-   <td>Deshabilitar búsqueda avanzada</td>
+   <td>Desactivar búsqueda avanzada</td>
    <td>Cuando está activado, oculta el icono de búsqueda avanzada.</td>
   </tr>
   <tr>
@@ -116,12 +116,12 @@ La variable **[!UICONTROL Editar]** incluye varias pestañas que proporcionan op
   </tr>
   <tr>
    <td> </td>
-   <td>Perfil del HTML</td>
+   <td>Perfil de HTML</td>
    <td>Configura el perfil del HTML que se utiliza para la renderización. Todos los perfiles disponibles se enumeran en la lista desplegable.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Dirección URL de envío</td>
+   <td>URL de envío</td>
    <td><p>Configura un servlet en el que se envían los datos del formulario.</p> <p><strong>Nota:</strong> <em>La dirección URL de envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:</em></p>
     <ol>
      <li><em>La dirección URL de envío incrustada en el formulario (en el botón Enviar) tiene la prioridad más alta.</em></li>

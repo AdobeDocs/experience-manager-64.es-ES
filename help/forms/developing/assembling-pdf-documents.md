@@ -1,8 +1,8 @@
 ---
-title: Montaje de documentos PDF
-seo-title: Montaje de documentos PDF
+title: Montaje de documentos del PDF
+seo-title: Assembling PDF Documents
 description: Utilice el servicio Assembler para ensamblar varios documentos PDF en un documento PDF o desmontar un documento PDF en varios documentos PDF.
-seo-description: Utilice el servicio Assembler para ensamblar varios documentos PDF en un documento PDF o desmontar un documento PDF en varios documentos PDF.
+seo-description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
@@ -11,16 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d89bac8d-67e6-4442-845b-e358cbe0a568
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
 
-
-# Montaje de documentos PDF {#assembling-pdf-documents}
+# Montaje de documentos del PDF {#assembling-pdf-documents}
 
 **Acerca del servicio Assembler**
 
@@ -31,4 +30,3 @@ A partir de LiveCycle ES 8.0 y versiones posteriores, la compatibilidad con paqu
 >[!NOTE]
 >
 >Para obtener más información sobre el servicio Assembler, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
-

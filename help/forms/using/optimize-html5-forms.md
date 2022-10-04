@@ -1,26 +1,25 @@
 ---
 title: Optimización de formularios HTML5
-seo-title: Optimización de formularios HTML5
+seo-title: Optimizing HTML5 forms
 description: Puede optimizar el tamaño de salida de los formularios HTML5.
-seo-description: Puede optimizar el tamaño de salida de los formularios HTML5.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8d2b5294-9763-4348-b927-706ebac90b95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-
 # Optimización de formularios HTML5 {#optimizing-html-forms}
 
-Los formularios HTML5 procesan los formularios en formato HTML5. El resultado resultante podría ser grande en función de factores como el tamaño del formulario y las imágenes del formulario. Para optimizar la transferencia de datos, el método recomendado es comprimir la respuesta HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir datos entre los equipos cliente y servidor.
+Los formularios de HTML5 procesan los formularios en formato HTML5. El resultado resultante podría ser grande en función de factores como el tamaño del formulario y las imágenes del formulario. Para optimizar la transferencia de datos, el método recomendado es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir datos entre los equipos cliente y servidor.
 
 Este artículo describe los pasos necesarios para habilitar la compresión para Apache Web Server 2.0 de 32 bits, con JBoss.
 
@@ -34,7 +33,7 @@ Obtenga el software de servidor web Apache aplicable a su sistema operativo:
 
 Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
-1. Descomente las siguientes configuraciones de módulo en el archivo *APACHE_HOME/conf/httpd.conf*.
+1. Descomente las siguientes configuraciones de módulo en la sección *APACHE_HOME/conf/httpd.conf* archivo.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +47,7 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
 1. Configure el proxy en el puerto 8080 de JBoss.
 
-   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf*.
+   Agregue la siguiente configuración a la *APACHE_HOME/conf/httpd.conf* archivo de configuración.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -66,7 +65,7 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
 1. Active Compresión.
 
-   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf*.
+   Agregue la siguiente configuración a la *APACHE_HOME/conf/httpd.conf* archivo de configuración.
 
    ```java
    <Location /content/xfaforms>
@@ -84,5 +83,4 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    </Location>
    ```
 
-1. Para acceder al servidor AEM, utilice https://[Apache_server]:80.
-
+1. Para acceder al servidor de AEM, utilice https://[Apache_server]:80.

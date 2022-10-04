@@ -1,8 +1,8 @@
 ---
 title: Integración con Adobe Sign | Gestión de datos de usuario
-seo-title: Integración con Adobe Sign | Gestión de datos de usuario
+seo-title: Integration with Adobe Sign | Handling user data
 description: AEM Forms se integra con Adobe Sign para permitir flujos de trabajo de firma electrónica en formularios adaptables para procesar formularios o acuerdos para flujos de trabajo legales, de ventas, de nómina de pagos y de gestión de recursos humanos. Profundizar en los datos de usuario, los almacenes de datos y acceder y eliminar los datos de usuario.
-seo-description: AEM Forms se integra con Adobe Sign para permitir flujos de trabajo de firma electrónica en formularios adaptables para procesar formularios o acuerdos para flujos de trabajo legales, de ventas, de nómina de pagos y de gestión de recursos humanos. Profundizar en los datos de usuario, los almacenes de datos y acceder y eliminar los datos de usuario.
+seo-description: AEM Forms integrates with Adobe Sign to enable e-signature workflows in adaptive forms to process forms or agreements for legal, sales, payroll, human resource management workflows. Dig deeper on user data, data stores, and access and delete user data.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -33,6 +33,6 @@ El formulario adaptable habilitado para Adobe Sign incluye información sobre lo
 
 Los datos de usuario se recopilan dentro del acuerdo, pero no se guardan en ninguna de las tablas de servicios. Adobe Sign permite a los administradores realizar sus propias elecciones en la administración de los datos que controlan en el servicio. Los administradores de privacidad del servicio Adobe Sign pueden enumerar o eliminar acuerdos basados en la dirección de correo electrónico de un solicitante.
 
-Adobe Sign ofrece una aplicación web que permite buscar acuerdos por parte de los participantes y, si es necesario, eliminarlos. Para obtener más información, consulte [Adobe Sign - Función: Eliminar información de usuario](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
+Adobe Sign ofrece una aplicación web que permite buscar acuerdos por parte de los participantes y, si es necesario, eliminarlos. Para obtener más información, consulte [Adobe Sign: función: Eliminar información del usuario](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
 Los datos de acuerdos para formularios adaptables configurados para utilizar la acción de envío de Forms Portal también se guardan en el almacén de datos del portal de formularios. Para acceder y eliminar datos del almacén de datos del portal de formularios, consulte [Portal de Forms | Gestión de datos de usuario](/help/forms/using/forms-portal-handling-user-data.md).

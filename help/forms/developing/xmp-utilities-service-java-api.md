@@ -1,8 +1,8 @@
 ---
 title: XMP Utilities Service Java APIQuick Start (SOAP)
-seo-title: XMP Utilities Service Java APIQuick Start (SOAP)
+seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: Utilice el servicio XMP Utilidades para exportar e importar XMP metadatos.
-seo-description: Utilice el servicio XMP Utilidades para exportar e importar XMP metadatos.
+seo-description: Use the XMP Utilities service to export and import XMP metadata.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # Inicio rápido de la API de Java del servicio de utilidades de XMP (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
@@ -35,7 +34,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Exportación de metadatos de XMP mediante la API de Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-El siguiente ejemplo de código recupera, inspecciona y guarda XMP metadatos. (Consulte [Exportación de metadatos de documentos PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)).
+El siguiente ejemplo de código recupera, inspecciona y guarda XMP metadatos. (Consulte [Exportación de metadatos desde documentos de PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```as3
  /* 
@@ -140,7 +139,7 @@ El siguiente ejemplo de código recupera, inspecciona y guarda XMP metadatos. (C
 
 ## Inicio rápido (modo SOAP): Importación de metadatos de XMP mediante la API de Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-El siguiente ejemplo de código importa XMP metadatos y guarda el nuevo archivo PDF en el disco. El documento PDF se basa en un archivo PDF llamado Loan.pdf. El documento XML que contiene los metadatos que se van a importar al documento PDF se basa en un archivo XML denominado *LoanMetaData.xml*. Para obtener información sobre este archivo XML, consulte [Importación de metadatos en documentos PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+El siguiente ejemplo de código importa XMP metadatos y guarda el nuevo archivo de PDF en el disco. El documento del PDF se basa en un archivo del PDF llamado Loan.pdf. El documento XML que contiene los metadatos que se van a importar en el documento PDF se basa en un archivo XML denominado *LoanMetaData.xml*. Para obtener información sobre este archivo XML, consulte [Importación de metadatos en documentos de PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```as3
  /* 
@@ -245,4 +244,3 @@ El siguiente ejemplo de código importa XMP metadatos y guarda el nuevo archivo 
      } 
  }
 ```
-

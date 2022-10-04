@@ -1,7 +1,7 @@
 ---
 title: Plantillas de carta de referencia
 seo-title: Reference letter templates
-description: 'AEM Forms proporciona plantillas de diseño de carta de Gestión de correspondencia que puede utilizar para crear cartas rápidamente. '
+description: AEM Forms proporciona plantillas de diseño de carta de Gestión de correspondencia que puede utilizar para crear cartas rápidamente.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -12,7 +12,7 @@ exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 En la gestión de correspondencia, una plantilla de carta contiene campos de formulario típicos, funciones de presentación como encabezado y pie de página, y &quot;áreas de destino&quot; vacías para la colocación de contenido.
 
-Correspondence Management proporciona plantillas de letras en el paquete de AEM Forms [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Para instalar un paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md). Puede personalizar las plantillas en Designer según sus necesidades empresariales y de marca. El paquete incluye las siguientes plantillas:
+Correspondence Management proporciona plantillas de carta en el paquete AEM Forms [Paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). Para instalar un paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md). Puede personalizar las plantillas en Designer según sus necesidades empresariales y de marca. El paquete incluye las siguientes plantillas:
 
 * Clásica
 * Classic Simple
@@ -51,15 +51,15 @@ Con un logotipo en la parte superior, la plantilla clásica es adecuada para una
 
 ![clásica](assets/classic.png)
 
-Vista previa en PDF de una carta creada con la plantilla Classic
+Vista previa del PDF de una carta creada con la plantilla Classic
 
 ## Classic Simple {#classic-simple}
 
 Incluye campos para capturar el número de teléfono y la dirección de correo electrónico. Una plantilla Classic Simple es similar a la plantilla Classic , excepto que no tiene campos en los que se pueda introducir la dirección del destinatario.
 
-![Fragmento de información de contacto](assets/classicsimple.png)
+![Fragmento Información de contacto](assets/classicsimple.png)
 
-Vista previa en PDF de una carta creada con la plantilla Classic Simple
+Vista previa del PDF de una carta creada con la plantilla Classic Simple
 
 ## Izquierda equilibrada {#balanced-left}
 
@@ -67,7 +67,7 @@ La plantilla Izquierda equilibrada incluye un logotipo a la izquierda de la cart
 
 ![balancedleft](assets/balancedleft.png)
 
-Vista previa en PDF de una carta creada con la plantilla Izquierda equilibrada
+Vista previa del PDF de una carta creada con la plantilla Izquierda equilibrada
 
 ## Equilibrado a la derecha {#balanced-right}
 
@@ -75,7 +75,7 @@ La plantilla Equilibrada a la derecha tiene el logotipo de la empresa a la izqui
 
 ![balancedright](assets/balancedright.png)
 
-Vista previa en PDF de una carta creada con la plantilla Derecho equilibrado
+Vista previa del PDF de una carta creada con la plantilla Derecho equilibrado
 
 ## Izquierda visual {#visual-left}
 
@@ -83,7 +83,7 @@ La plantilla Izquierda visual tiene un encabezado lateral a la izquierda de la p
 
 ![visualleft](assets/visualleft.png)
 
-Vista previa en PDF de una carta creada con la plantilla Izquierda visual
+Vista previa del PDF de una carta creada con la plantilla Izquierda visual
 
 ## Principio visual {#visual-top}
 
@@ -91,7 +91,7 @@ La plantilla Visual Top tiene un margen visual en la parte superior. La plantill
 
 ![visualtop](assets/visualtop.png)
 
-Vista previa en PDF de una carta creada con la plantilla Visual Top
+Vista previa del PDF de una carta creada con la plantilla Visual Top
 
 ## Visual Top - Classic {#visual-top-classic}
 
@@ -99,4 +99,4 @@ La plantilla Visual Top - Classic tiene un encabezado en la parte superior de la
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-Vista previa en PDF de una carta creada con la plantilla Visual Top - Classic
+Vista previa del PDF de una carta creada con la plantilla Visual Top - Classic

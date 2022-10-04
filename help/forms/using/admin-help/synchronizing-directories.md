@@ -1,5 +1,5 @@
 ---
-title: 'Sincronización de directorios '
+title: Sincronización de directorios
 seo-title: Synchronizing directories
 description: Obtenga información sobre cómo sincronizar la base de datos de Administración de usuarios con los cambios realizados en los servidores de directorios de origen mediante la sincronización manual o programada.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Sincronización de directorios {#synchronizing-directories}
 
-Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. Una *sincronización manual* sincroniza los dominios seleccionados. Una *sincronización programada* sincroniza todos los dominios.
+Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. A *sincronización manual* sincroniza los dominios seleccionados. A *sincronización programada* sincroniza todos los dominios.
 
 La sincronización de directorios se utiliza para extraer detalles de los servidores de directorios que especificó en la configuración de directorios a la base de datos de Administración de usuarios. Posteriormente, también puede realizar una sincronización manual si se producen cambios o actualizaciones en los servidores de directorios. Por ejemplo, puede realizar una sincronización manual si se agregan usuarios y grupos o si se realizan cambios en la cuenta de un usuario.
 
@@ -35,7 +35,7 @@ También puede establecer una programación de sincronización diaria para sincr
 
 >[!NOTE]
 >
->Adobe® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con los servicios de contenido (obsoletos) finaliza el 31/12/2014. Consulte [documento del ciclo vital del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, monitorear y optimizar procesos centrados en el ser humano. La compatibilidad con los servicios de contenido (obsoletos) finaliza el 31/12/2014. Consulte [Documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Habilitar la sincronización de directorios delta {#enable-delta-directory-synchronization}
 

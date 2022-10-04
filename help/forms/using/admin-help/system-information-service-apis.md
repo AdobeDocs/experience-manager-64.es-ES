@@ -1,8 +1,8 @@
 ---
 title: API del servicio de información del sistema
-seo-title: API del servicio de información del sistema
+seo-title: System information Service APIs
 description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio de información del sistema.
-seo-description: Este documento proporciona información detallada sobre las API proporcionadas por el servicio de información del sistema.
+seo-description: This document provides detailed information about the APIs provided by the system information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
 source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[port]/rest/services/SystemInfo.properties</p></td> 
-   <td><p>Esta API es un envoltorio para la API de Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configuración del entorno de trabajo actual. </p></td> 
+   <td><p>Esta API es un envoltorio para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API de Java. Recupera la configuración del entorno de trabajo actual. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 

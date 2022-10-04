@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido (SOAP) de Application Manager Service JavaAPI
-seo-title: Inicio rápido (SOAP) de Application Manager Service JavaAPI
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Utilice el servicio Administrador de aplicaciones para implementar y eliminar aplicaciones mediante el inicio rápido de la API de Java.
-seo-description: Utilice el servicio Administrador de aplicaciones para implementar y eliminar aplicaciones mediante el inicio rápido de la API de Java.
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido (SOAP) de Application Manager Service JavaAPI {#application-manager-service-javaapi-quick-start-soap}
+# Inicio rápido de la API de Java del servicio de Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Administrador de aplicaciones.
 
@@ -39,7 +38,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Implementación de aplicaciones mediante la API de Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-El siguiente ejemplo de código Java importa una aplicación basada en un archivo LCA existente llamado *EncryptDocument.lca*.
+El siguiente ejemplo de código Java importa una aplicación basada en un archivo LCA existente denominado *EncryptDocument.lca*.
 
 ```as3
  /* 
@@ -141,7 +140,7 @@ El siguiente ejemplo de código Java importa una aplicación basada en un archiv
 
 ## Inicio rápido (modo SOAP): Eliminación de una aplicación mediante la API de Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-El siguiente ejemplo de código Java elimina una aplicación denominada *EncryptDocument*.
+El siguiente ejemplo de código Java elimina una aplicación llamada *EncryptDocument*.
 
 ```as3
  /* 
@@ -250,4 +249,3 @@ El siguiente ejemplo de código Java elimina una aplicación denominada *Encrypt
  } 
  
 ```
-

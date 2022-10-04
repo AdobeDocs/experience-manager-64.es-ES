@@ -1,21 +1,20 @@
 ---
 title: Diccionario de datos
-seo-title: Diccionario de datos
+seo-title: Data Dictionary
 description: El diccionario de datos de la gestión de correspondencia le permite integrar datos back-end en letras como entradas para su uso en la correspondencia con los clientes.
-seo-description: El diccionario de datos de la gestión de correspondencia le permite integrar datos back-end en letras como entradas para su uso en la correspondencia con los clientes.
+seo-description: Data dictionary in Correspondence Management lets you integrate back-end data to letters as inputs for use in customer correspondence.
 uuid: cc976dff-f243-4807-a92c-81b78476a744
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6b53f47c-9333-43a3-8db9-8737d9610110
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3868'
+source-wordcount: '3845'
 ht-degree: 1%
 
 ---
-
 
 # Diccionario de datos {#data-dictionary}
 
@@ -27,7 +26,7 @@ Un diccionario de datos es una representación independiente de metadatos que de
 
 El diccionario de datos está formado por elementos de tres tipos: Elementos simples, compuestos y de colección. Los DDE simples son elementos primitivos como cadenas, números, fechas y valores booleanos que contienen información como un nombre de ciudad. Un DDE compuesto contiene otros DDE, que pueden ser de tipo primitivo, compuesto o colección. Por ejemplo, una dirección que consta de una dirección de calle, ciudad, provincia, país y código postal. Una colección es una lista de DDE simples o compuestos similares. Por ejemplo, un cliente con varias ubicaciones o distintas direcciones de facturación y envío.
 
-Correspondence Management utiliza los datos del back end, del cliente, `` ``o específicos del destinatario almacenados según la estructura del diccionario de datos para crear correspondencia destinada a diferentes clientes. Por ejemplo, se puede crear un documento con nombres descriptivos, como &quot;Estimado {Nombre}&quot;, &quot;Sr. {Apellidos}&quot;.
+Correspondence Management utiliza el back-end, el cliente, `` ``o datos específicos del destinatario almacenados según la estructura del diccionario de datos para crear correspondencia destinada a diferentes clientes. Por ejemplo, se puede crear un documento con nombres descriptivos, como &quot;Estimado {Nombre}&quot;, &quot;Sr. {Apellidos}&quot;.
 
 Normalmente, los usuarios empresariales no necesitan conocer las representaciones de metadatos, como XSD (esquema XML) y clases Java. Sin embargo, normalmente requieren acceso a estas estructuras y atributos de datos para crear soluciones.
 
@@ -36,13 +35,13 @@ Normalmente, los usuarios empresariales no necesitan conocer las representacione
 1. Un autor [crea el diccionario de datos](#createdatadictionary) cargando un esquema o desde cero.
 1. El Autor crea comunicaciones por carta e interactivas basadas en el diccionario de datos y asocia los elementos del diccionario de datos en comunicaciones por carta e interactivas siempre que sea necesario.
 1. Un autor puede descargar un archivo XML de datos de ejemplo, que se basa en el esquema de un diccionario de datos. El autor puede modificar el archivo XML de datos de ejemplo, que puede asociarse como datos de prueba con el diccionario de datos. Lo mismo se utiliza durante la vista previa de la carta.
-1. Mientras [se obtiene una vista previa de una carta](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un autor elige obtener una vista previa de la carta con datos (vista previa personalizada). La carta se abre previamente rellenada con los datos proporcionados por Author. Se abre en la interfaz de creación de correspondencia. El agente que está previsualizando esta carta puede modificar el contenido, los datos y los archivos adjuntos de esta carta y puede enviar la carta final. Para obtener más información sobre la creación de cartas, consulte [Creación de correspondencia](/help/forms/using/create-letter.md).
+1. While [vista previa de una carta](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un autor elige previsualizar la carta con datos (vista previa personalizada). La carta se abre previamente rellenada con los datos proporcionados por Author. Se abre en la interfaz de creación de correspondencia. El agente que está previsualizando esta carta puede modificar el contenido, los datos y los archivos adjuntos de esta carta y puede enviar la carta final. Para obtener más información sobre la creación de letras, consulte [Crear correspondencia](/help/forms/using/create-letter.md).
 
 ## Requisitos previos {#prerequisite}
 
-Instale el [Paquete de compatibilidad](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) para ver la opción **Diccionarios de datos** en la página **Forms**.
+Instale el [Paquete de compatibilidad](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) para ver el **Diccionarios de datos** en la **Forms** página.
 
-## Crear un diccionario de datos {#createdatadictionary}
+## Creación de un diccionario de datos {#createdatadictionary}
 
 Puede usar el Editor de diccionario de datos para crear un diccionario de datos o cargar un archivo de esquema XSD para crear un diccionario de datos basado en él. A continuación, puede ampliar el diccionario de datos agregando más información necesaria, incluidos campos. Independientemente de cómo se haya creado el diccionario de datos, el propietario del proceso empresarial no necesita conocer los sistemas back-end. El propietario del proceso empresarial solo necesita conocer los objetos de dominio y sus definiciones para su proceso.
 
@@ -50,28 +49,28 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 >
 >Para varias letras que requieran elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos grandes con un gran número de elementos puede provocar problemas de rendimiento al utilizar el diccionario de datos y cargar los elementos, como en letras y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para letras diferentes.
 
-1. Seleccione **Forms** > **Diccionarios de datos**.
+1. Select **Forms** > **Diccionarios de datos**.
 1. Toque **Crear diccionario de datos**.
 1. En la pantalla Propiedades, agregue lo siguiente:
 
-   * **Título:** (opcional) introduzca el título del diccionario de datos. El título no tiene que ser único y puede tener caracteres especiales y caracteres que no sean de inglés. Las letras y otros fragmentos de documento son referidos con su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
-   * **Nombre:** el nombre exclusivo del diccionario de datos. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título y los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
+   * **Título:** (Opcional) Introduzca el título del diccionario de datos. El título no tiene que ser único y puede tener caracteres especiales y caracteres que no sean de inglés. Las letras y otros fragmentos de documento son referidos con su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
+   * **Nombre:** Nombre exclusivo del diccionario de datos. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título y los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones. Aunque el valor del campo Título se copia automáticamente en el Nombre, puede editarlo.
 
    * **Descripción**: (Opcional) Descripción del diccionario de datos.
-   * **Etiquetas:** (opcional) para crear una etiqueta personalizada, introduzca un valor en el campo de texto y pulse Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas recientemente agregadas.
-   * **Propiedades** extendidas: (Opcional) Toque  **Agregar** campo para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad , introduzca un nombre de propiedad único. En la columna Value , introduzca un valor para asociarlo a la propiedad.
+   * **Etiquetas:** (Opcional) Para crear una etiqueta personalizada, introduzca un valor en el campo de texto y pulse Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas recientemente agregadas.
+   * **Propiedades extendidas**: (Opcional) Toque **Agregar campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad , introduzca un nombre de propiedad único. En la columna Value , introduzca un valor para asociarlo a la propiedad.
 
    ![Propiedades del diccionario de datos especificadas en alemán](do-not-localize/1_ddproperties.png)
 
-1. (Opcional) Para cargar una definición de esquema XSD para el diccionario de datos, en el panel Estructura del diccionario de datos, pulse **Cargar esquema XML**. Vaya al archivo XSD, selecciónelo y pulse **Abrir**. Se crea un diccionario de datos en función del esquema XML cargado. Es necesario modificar los nombres para mostrar y las descripciones de los elementos en el diccionario de datos. Para ello, seleccione los nombres de los elementos tocándolos y editando sus descripciones, nombres para mostrar y otros detalles en los campos del panel derecho.
+1. (Opcional) Para cargar una definición de esquema XSD para el diccionario de datos, en el panel Estructura del diccionario de datos, pulse **Cargar esquema XML**. Vaya al archivo XSD, selecciónelo y pulse **Apertura**. Se crea un diccionario de datos en función del esquema XML cargado. Es necesario modificar los nombres para mostrar y las descripciones de los elementos en el diccionario de datos. Para ello, seleccione los nombres de los elementos tocándolos y editando sus descripciones, nombres para mostrar y otros detalles en los campos del panel derecho.
 
-   Para obtener más información sobre los elementos de DD calculados, consulte [Elementos de diccionario de datos calculados](#computedddelements).
+   Para obtener más información sobre los elementos DD calculados, consulte [Elementos de diccionario de datos calculados](#computedddelements).
 
    >[!NOTE]
    >
    >Puede omitir la carga del archivo de esquema y crear el diccionario de datos desde cero mediante la interfaz de usuario. Para ello, omita este paso y continúe con los pasos siguientes.
 
-1. Toque **Siguiente**.
+1. Pulse **Siguiente**.
 1. En la pantalla Agregar propiedades , agregue los elementos al diccionario de datos. También puede añadir o eliminar elementos y editar sus detalles si ha cargado un esquema para obtener una estructura básica del diccionario de datos.
 
    Puede pulsar los tres puntos del lado derecho de un elemento y agregar un elemento a la estructura del diccionario de datos.
@@ -92,13 +91,13 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    * Un DDE principal (compuesto) no puede tener dos elementos secundarios con el mismo nombre.
    * Los números solo contienen tipos de cadena primitivos.
 
-   Para obtener más información sobre los elementos compuestos, de colección y primitivos y trabajar con elementos de diccionario de datos, consulte [Asignación de elementos de diccionario de datos al esquema XML](#mappingddetoschema).
+   Para obtener más información sobre los elementos compuestos, de colección y primitivos y el trabajo con elementos de diccionario de datos, consulte [Asignación de elementos del diccionario de datos al esquema XML](#mappingddetoschema).
 
-   Para obtener información sobre las validaciones en el diccionario de datos, consulte [Validaciones del editor de diccionarios de datos](#ddvalidations).
+   Para obtener información sobre las validaciones en el diccionario de datos, consulte [Validaciones del Editor del diccionario de datos](#ddvalidations).
 
    ![2_adddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede añadir propiedades (atributos). También puede pulsar **Agregar campo** y ampliar las propiedades de un elemento DD.
+1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede añadir propiedades (atributos). También puede tocar **Agregar campo** y ampliar las propiedades de un elemento DD.
 
    ![3_adddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -111,9 +110,9 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    >Al eliminar un elemento compuesto/de colección con nodos secundarios, también se eliminan sus nodos secundarios.
 
 1. (Opcional) Seleccione un elemento en el panel Estructura del diccionario de datos y en el panel Lista de campos y variables . Cambie o agregue cualquier atributo necesario asociado al elemento.
-1. Toque **Guardar**.
+1. Pulse **Guardar**.
 
-### Crear copias de uno o más diccionario de datos {#create-copies-of-one-or-more-data-dictionary}
+### Creación de copias de uno o varios diccionario de datos {#create-copies-of-one-or-more-data-dictionary}
 
 Para crear rápidamente uno o más diccionarios de datos con propiedades y elementos similares a diccionarios de datos existentes, puede copiarlos y pegarlos.
 
@@ -123,7 +122,7 @@ Para crear rápidamente uno o más diccionarios de datos con propiedades y eleme
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del diccionario de datos.
 1. Pulse Pegar. Se crea la copia del diccionario de datos. Ahora puede realizar los cambios necesarios en el diccionario de datos recién creado.
 
-## Consulte los fragmentos del documento o documentos que hacen referencia a un elemento de diccionario de datos {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
+## Consulte los fragmentos del documento o documentos que hacen referencia a un elemento del diccionario de datos {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
 Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del diccionario de datos son referidos en qué textos, condiciones, letras y comunicaciones interactivas.
 
@@ -150,11 +149,11 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 1. Para ver el contenido prestado de otro elemento, pulse el elemento .
 1. Para mostrar un recurso que hace referencia al elemento, pulse su nombre. El navegador muestra el recurso, la carta o la comunicación interactiva.
 
-## Trabajo con datos de prueba {#working-with-test-data}
+## Uso de datos de prueba {#working-with-test-data}
 
-1. En la página Diccionarios de datos , pulse **Seleccionar**.
+1. En la página Diccionarios de datos , pulse **Select**.
 1. Pulse un diccionario de datos para el que desee descargar datos de prueba y, a continuación, pulse **Descargar datos XML de ejemplo**.
-1. Pulse **Aceptar** en el mensaje de alerta. Se descarga un archivo XML.
+1. Toque **OK** en el mensaje de alerta. Se descarga un archivo XML.
 1. Abra el archivo XML con el Bloc de notas u otro editor XML. El archivo XML tiene la misma estructura que el diccionario de datos y las cadenas de marcador de posición de los elementos. Reemplace las cadenas de marcador de posición por los datos con los que desea probar una letra.
 
    ```xml
@@ -279,7 +278,7 @@ La siguiente tabla detalla los atributos comunes asociados con un DDE:
    <td>Requerido.<br /> Nombre del DDE. Debe ser único.</td> 
   </tr> 
   <tr> 
-   <td>Nombre de referencia<br /></td> 
+   <td>Referencia<br /> Nombre</td> 
    <td>Cadena</td> 
    <td>Requerido. Nombre de referencia único para el DDE que permite referencias al DDE que son independientes de los cambios en la jerarquía o estructura del diccionario de datos. Los módulos de texto se asignan con este nombre</td> 
   </tr> 
@@ -359,23 +358,23 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
    <td><p>DDI (Tipo de datos de valor de instancia)<br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>xs:element de tipo - Tipo compuesto<br /> </p> </td> 
-   <td><p>DDE de tipo COMPUESTO<br /> </p> </td> 
+   <td><p>xs:element of type - Composite Type<br /> </p> </td> 
+   <td><p>DDE de tipo - COMPUESTO<br /> </p> </td> 
    <td>java.util.Map<br /> </td> 
   </tr> 
   <tr> 
    <td><p>xs:element donde maxOcurrs &gt; 1<br /> </p> </td> 
-   <td><p>DDE de tipo - COLLECTION-<br /> Se crea un nodo DDE junto al DDE de COLECCIÓN que captura información del nodo COLLECTION principal. Lo mismo se crea para ambas colecciones de tipos de datos simples/compuestos. Siempre que se tiene una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos captura los campos constitutivos en los elementos secundarios del DDE creados para capturar información de tipo.<br /> - DDE (COLLECTION)<br />  - DDE(COMPOSITE for type info)<br />  - DDE(STRING) field1<br />  - DDE(STRING) field2<br /> <br /> </p> </td> 
+   <td><p>DDE de tipo - COLECCIÓN-<br /> Se crea un nodo DDE junto al DDE de COLECCIÓN que captura información del nodo COLLECTION principal. Lo mismo se crea para ambas colecciones de tipos de datos simples/compuestos. Siempre que tenga una COLECCIÓN del tipo compuesto, el árbol del diccionario de datos captura los campos constitutivos en los elementos secundarios del DDE creados para capturar información de tipo.<br /> - DDE (COLECCIÓN)<br /> - DDE(COMPUESTO para información de tipo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td> 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
    <td><p>Atributo de tipo - xs:id <br /> </p> </td> 
-   <td>DDE de tipo - CADENA <br /> </td> 
+   <td>DDE de tipo: STRING <br /> </td> 
    <td>java.lang.String<br /> </td> 
   </tr> 
   <tr> 
    <td><p>xs:attribute /xs:element de tipo - xs:string</p> </td> 
-   <td>DDE de tipo - STRING<br /> </td> 
+   <td>DDE de tipo: STRING<br /> </td> 
    <td>java.lang.String<br /> </td> 
   </tr> 
   <tr> 
@@ -405,7 +404,7 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
   </tr> 
   <tr> 
    <td>Elemento de tipo enum y baseType - xs:string</td> 
-   <td>DDE de tipo <br /> - Subtipo STRING<br /> - ENUM<br /> valueSet - los valores permitidos para ENUM<br /> </td> 
+   <td>DDE de<br /> type - STRING<br /> subtipo - ENUM<br /> valueSet: los valores permitidos para ENUM<br /> </td> 
    <td>java.lang.String</td> 
   </tr> 
  </tbody> 
@@ -415,11 +414,11 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
 
 Una vez creado un diccionario de datos, puede descargarlo como un archivo de datos de ejemplo XML para crear entradas de texto en él.
 
-1. En la página Diccionarios de datos , pulse **Seleccionar** y, a continuación, pulse un diccionario de datos para seleccionarlo.
-1. Seleccione **Descargar datos XML de ejemplo**.
-1. Pulse **Aceptar** en el mensaje de alerta.
+1. En la página Diccionarios de datos , pulse **Select** y, a continuación, pulse un diccionario de datos para seleccionarlo.
+1. Select **Descargar datos XML de ejemplo**.
+1. Toque **OK** en el mensaje de alerta.
 
-   Correspondence Management crea un archivo XML basado en la estructura del diccionario de datos seleccionado y lo descarga en su equipo con el nombre &lt;data-dictionary-name>-SampleData. Ahora puede editar este archivo en un editor de texto o XML para realizar entradas de datos mientras [crea una carta](/help/forms/using/create-letter.md).
+   Correspondence Management crea un archivo XML basado en la estructura del diccionario de datos seleccionado y lo descarga a su equipo con el nombre &lt;data-dictionary-name>-SampleData. Ahora puede editar este archivo en un editor de texto o XML para realizar entradas de datos mientras [creación de una carta](/help/forms/using/create-letter.md).
 
 ## Internacionalización de metadatos {#internationalization-of-meta-data}
 
@@ -427,9 +426,9 @@ Si desea enviar la misma carta en distintos idiomas a sus clientes, puede locali
 
 ### Localizar diccionario de datos {#localize-data-dictionary}
 
-1. En la página Diccionarios de datos , pulse **Seleccionar** y, a continuación, pulse un diccionario de datos para seleccionarlo.
-1. Pulse **Descargar datos de localización**.
-1. Pulse **Aceptar** en la alerta. Correspondence Management descarga un archivo zip en su equipo con el nombre DataDictionary-&lt;Dname>.zip.
+1. En la página Diccionarios de datos , pulse **Select** y, a continuación, pulse un diccionario de datos para seleccionarlo.
+1. Toque **Descargar datos de localización**.
+1. Toque **OK** en la alerta. Correspondence Management descarga un archivo zip a su equipo con el nombre DataDictionary-&lt;ddname>.zip.
 1. El archivo zip contiene un archivo .properties . Este archivo define el diccionario de datos descargado. El contenido del archivo de propiedad es similar al siguiente:
 
    ```
@@ -657,4 +656,3 @@ El Token.xsd asociado a este ejemplo sería:
 | TokenText | empty(null) |
 | EncabezamientoToken | Encabezado de texto/texto |
 | TokenBody | TokenText/TextBody |
-

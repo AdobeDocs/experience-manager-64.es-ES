@@ -1,7 +1,7 @@
 ---
 title: Temas de referencia
 seo-title: Reference Themes
-description: 'AEM Forms proporciona temas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario. '
+description: AEM Forms proporciona temas de formularios adaptables que puede obtener de Distribución de software y utilizar para aplicar estilo a un formulario.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,19 +11,19 @@ exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Temas de referencia {#reference-themes}
 
-[](/help/forms/using/themes.md) Los temas permiten aplicar estilo a los formularios sin tener conocimientos profundos de CSS. Además del tema predeterminado, puede obtener los siguientes temas instalando el [paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
+[Temas](/help/forms/using/themes.md) permite aplicar estilo a los formularios sin tener conocimientos profundos de CSS. Además del tema predeterminado, puede obtener los temas siguientes instalando el[Paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es):
 
 * Beryl
 * Exec
 * Exec-Light
 * Libertad
-* Ultramarino
+* Ultramarine
 * Urbane
 * Estándares de diseño web de EE. UU.
 * Tranquilo
@@ -38,9 +38,9 @@ Para obtener más información sobre la instalación del paquete, consulte [Cóm
 
 ## Beryl {#beryl}
 
-El tema Beryl lo utiliza [We.Gov adaptive form](/help/forms/using/gov-reference-site-walkthrough.md) y enfatiza el uso de imagen de fondo, transparencia e iconos planos grandes. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
-![Beryl ](assets/beryl.png)
-[themeClick para ampliar](assets/beryl-1.png)
+El tema de Beryl lo utiliza [Formulario adaptable de We.Gov](/help/forms/using/gov-reference-site-walkthrough.md), y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
+![Tema de Beryl](assets/beryl.png)
+[Haga clic para ampliar](assets/beryl-1.png)
 
 ## Exec {#exec}
 

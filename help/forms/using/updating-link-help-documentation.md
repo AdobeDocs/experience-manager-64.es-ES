@@ -1,35 +1,34 @@
 ---
 title: Actualización del vínculo a la documentación
-seo-title: Actualización del vínculo a la documentación
-description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizada.
-seo-description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizada.
+seo-title: Updating the link to the documentation
+description: Actualización del destino del vínculo Ayuda de Workspace en el espacio de trabajo de AEM Forms para que apunte al vínculo de documentación personalizado.
+seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
-translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '141'
 ht-degree: 3%
 
 ---
 
-
 # Actualización del vínculo a la documentación {#updating-the-link-to-the-documentation}
 
-Puede acceder al contenido de ayuda predeterminado del espacio de trabajo de AEM Forms seleccionando **Ayuda > Ayuda del espacio de trabajo**. Señala la documentación en línea en el sitio web de Adobe. Sin embargo, puede actualizarla para que apunte a cualquier otra dirección URL.
+Puede acceder al contenido de ayuda predeterminado del espacio de trabajo de AEM Forms seleccionando **Ayuda > Ayuda de Workspace**. Señala a la documentación en línea del sitio web de Adobe. Sin embargo, puede actualizarlo para que apunte a cualquier otra dirección URL.
 
-Considere los siguientes casos de uso en los que puede que desee cambiar la dirección URL de ayuda predeterminada:
+Tenga en cuenta los siguientes casos de uso en los que puede que desee cambiar la dirección URL de ayuda predeterminada:
 
 * Para proporcionar ayuda localizada en un idioma de su elección.
 * Para proporcionar contenido de ayuda personalizado para su espacio de trabajo personalizado.
 
-Para actualizar la dirección URL de la documentación en línea, siga los [Pasos genéricos de personalización](/help/forms/using/generic-steps-html-workspace-customization.md) y luego los pasos siguientes.
+Para actualizar la URL de la documentación en línea, siga la [Pasos genéricos de personalización](/help/forms/using/generic-steps-html-workspace-customization.md) y luego los siguientes pasos.
 
-1. Copie el archivo `userinfo.html` de `/libs/ws/js/runtime/templates` a `/apps/ws/js/runtime/templates`.
+1. Copie el `userinfo.html` del archivo `/libs/ws/js/runtime/templates` a `/apps/ws/js/runtime/templates`.
 1. Cambiar:
 
    ```
@@ -50,5 +49,5 @@ Para actualizar la dirección URL de la documentación en línea, siga los [Paso
 
 1. Haga lo siguiente:
 
-   1. Abra /apps/ws/js/registry.js para editar.
-   1. Busque y reemplace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` por `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Abra /apps/ws/js/registry.js para editarlo.
+   1. Buscar y reemplazar `text!/lc/libs/ws/js/runtime/templates/userinfo.html` con `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

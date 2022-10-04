@@ -1,23 +1,22 @@
 ---
 title: Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente
-seo-title: Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente
-description: 'La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión. '
-seo-description: Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente
+seo-title: Prepare and send Interactive Communication using the Agent UI
+description: La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión.
+seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5ec33ef5-1722-4d29-9979-d8da32923e66
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 0%
+source-wordcount: '1340'
+ht-degree: 1%
 
 ---
 
-
-# Prepare y envíe comunicación interactiva mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión.
 
@@ -33,8 +32,8 @@ Al preparar la comunicación interactiva mediante la interfaz de usuario del age
 
 ## Preparación de la comunicación interactiva mediante la interfaz de usuario del agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
-1. Seleccione la comunicación interactiva adecuada y pulse **[!UICONTROL Abrir interfaz de usuario del agente]**.
+1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+1. Seleccione la comunicación interactiva adecuada y pulse **[!UICONTROL Abrir la interfaz de usuario del agente]**.
 
    >[!NOTE]
    >
@@ -50,7 +49,7 @@ Al preparar la comunicación interactiva mediante la interfaz de usuario del age
 
 ### Introducir datos {#enter-data}
 
-1. En la pestaña Data , introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de plantilla de impresión (XDP), según sea necesario. Rellene todos los campos obligatorios marcados con un asterisco (&amp;ast;) para habilitar el botón **Submit**.
+1. En la pestaña Data , introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de plantilla de impresión (XDP), según sea necesario. Complete todos los campos obligatorios marcados con un asterisco (&amp;ast;) para habilitar la variable **Submit** botón.
 
    Pulse un valor de campo de datos en la vista previa de comunicación interactiva para resaltar el campo de datos correspondiente en la ficha Datos o viceversa.
 
@@ -58,7 +57,7 @@ Al preparar la comunicación interactiva mediante la interfaz de usuario del age
 
 En la pestaña Contenido , administre el contenido, como los fragmentos del documento y las variables de contenido, en la Comunicación interactiva.
 
-1. Seleccione **[!UICONTROL Content]**. Aparece la pestaña contenido de la comunicación interactiva.
+1. Select **[!UICONTROL Contenido]**. Aparece la pestaña contenido de la comunicación interactiva.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
@@ -68,16 +67,16 @@ En la pestaña Contenido , administre el contenido, como los fragmentos del docu
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   En la ficha Contenido o Datos, al pulsar Resaltar los módulos seleccionados en el contenido ( ![resaltselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa, puede deshabilitar o habilitar la funcionalidad para ir al fragmento del documento cuando el texto, el párrafo o el campo de datos relevantes se toca o selecciona en la vista previa.
+   En la ficha Contenido o Datos , pulse Resaltar los módulos seleccionados en el contenido ( ![resaltselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa, puede deshabilitar o habilitar la funcionalidad para ir al fragmento de documento cuando el texto, el párrafo o el campo de datos relevantes se tocan o seleccionan en la vista previa.
 
-   Los fragmentos que el agente puede editar al crear la comunicación interactiva tienen el icono Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Pulse el icono Editar contenido seleccionado para iniciar el fragmento en modo de edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar texto:
+   Los fragmentos que el agente puede editar al crear la comunicación interactiva tienen la opción Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Pulse el icono Editar contenido seleccionado para iniciar el fragmento en modo de edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar texto:
 
    * [Opciones de formato](#formattingtext)
 
       * [Copiar y pegar texto con formato de otras aplicaciones](#pasteformattedtext)
       * [Resaltar partes del texto](#highlightemphasize)
    * [Caracteres especiales](#specialcharacters)
-   * [Métodos abreviados del teclado](/help/forms/using/keyboard-shortcuts.md)
+   * [Métodos abreviados de teclado](/help/forms/using/keyboard-shortcuts.md)
 
    Para obtener más información sobre las acciones disponibles para varios fragmentos de documento en la interfaz de usuario del agente, consulte [Acciones e información disponible en la interfaz de usuario del agente](#actionsagentui).
 
@@ -91,13 +90,13 @@ En la pestaña Contenido , administre el contenido, como los fragmentos del docu
 
 ### Administrar archivos adjuntos {#manage-attachments}
 
-1. Seleccione **[!UICONTROL Attachment]**. La interfaz de usuario del agente muestra los archivos adjuntos disponibles tal como están configurados al crear la comunicación interactiva.
+1. Select **[!UICONTROL Archivo adjunto]**. La interfaz de usuario del agente muestra los archivos adjuntos disponibles tal como están configurados al crear la comunicación interactiva.
 
    Puede optar por no enviar un archivo adjunto junto con la comunicación interactiva tocando el icono de vista y puede pulsar la cruz del archivo adjunto para eliminarlo (si el agente puede eliminar u ocultar el archivo adjunto) de la comunicación interactiva. Para los archivos adjuntos especificados como obligatorios al crear la comunicación interactiva, los iconos Ver y Eliminar están desactivados.
 
    ![Attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Pulse el icono de acceso a biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar los recursos DAM como archivos adjuntos.
+1. Puntee en Acceso a biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
 
    >[!NOTE]
    >
@@ -106,13 +105,13 @@ En la pestaña Contenido , administre el contenido, como los fragmentos del docu
 1. Si el orden de los archivos adjuntos no estaba bloqueado al crear la comunicación interactiva, puede reordenar los archivos adjuntos seleccionando un archivo adjunto y pulsando las flechas abajo y arriba.
 1. Utilice Vista previa en la Web y Vista previa de impresión para ver si las dos salidas son las que necesite.
 
-   Si las vistas previas le parecen satisfactorias, pulse **[!UICONTROL Enviar]** para enviar la comunicación interactiva a un proceso posterior. O para realizar cambios, salga de la vista previa para volver a los cambios realizados.
+   Si considera que las vistas previas son satisfactorias, pulse **[!UICONTROL Submit]** para enviar o enviar la comunicación interactiva a un proceso posterior. O para realizar cambios, salga de la vista previa para volver a los cambios realizados.
 
-## Formato de texto {#formattingtext}
+## Texto de formato {#formattingtext}
 
 Al editar un fragmento de texto en la interfaz de usuario del agente, la barra de herramientas cambia según el tipo de ediciones que elija realizar: Fuente, párrafo o lista:
 
-![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarFont barra de herramientas](do-not-localize/fonttoolbar.png)
+![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barra de herramientas Fuente](do-not-localize/fonttoolbar.png)
 
 Barra de herramientas Fuente
 
@@ -136,12 +135,12 @@ Para resaltar o resaltar partes de texto en un fragmento editable, seleccione el
 
 ### Insertar caracteres especiales en el texto {#specialcharacters}
 
-La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad para más caracteres especiales personalizados mediante personalización](/help/forms/using/custom-special-characters.md).
+La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad con más caracteres especiales personalizados mediante personalización](/help/forms/using/custom-special-characters.md).
 
-#### Entrega de archivos adjuntos {#attachmentdelivery}
+#### Entrega de datos adjuntos {#attachmentdelivery}
 
-* Cuando la comunicación interactiva se procesa con API del lado del servidor como PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos adjuntos PDF.
-* Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte de Enviar mediante la interfaz de usuario del agente, los archivos adjuntos se pasan como parámetro List&lt;com.adobe.idp.Document> inAttachmentDocs .
+* Cuando la comunicación interactiva se procesa mediante API del lado del servidor como PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos adjuntos del PDF.
+* Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte de la interfaz de usuario Enviar mediante el agente, los archivos adjuntos se pasan como la lista&lt;com.adobe.idp.document> parámetro inAttachmentDocs .
 * Los flujos de trabajo del mecanismo de entrega, como el correo electrónico y la impresión, también proporcionan archivos adjuntos junto con la versión PDF de la Comunicación interactiva.
 
 ## Acciones e información disponible en la interfaz de usuario del agente {#actionsagentui}
@@ -150,11 +149,11 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 
 ![](do-not-localize/contentoptionsdocfragments.png)
 
-* **Flechas** arriba/abajo: Flechas para mover fragmentos de documento hacia arriba o hacia abajo en la Comunicación interactiva.
+* **Flechas arriba/abajo**: Flechas para mover fragmentos de documento hacia arriba o hacia abajo en la Comunicación interactiva.
 * **Eliminar**: Si está permitido, elimine el fragmento del documento de la comunicación interactiva.
-* **Salto de página antes**  (aplicable a fragmentos secundarios de área de destino): Inserta un salto de página antes del fragmento de documento.
+* **Salto de página antes** (aplicable a los fragmentos secundarios de la zona de destino): Inserta un salto de página antes del fragmento de documento.
 * **Sangría**: Aumente o disminuya la sangría de un fragmento de documento.
-* **Salto de página después de**  (aplicable a fragmentos secundarios de área de destino): Inserta un salto de página después del fragmento de documento.
+* **Salto de página después** (aplicable a los fragmentos secundarios de la zona de destino): Inserta un salto de página después del fragmento de documento.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -163,7 +162,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 * Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
 * Valores no rellenados (información): Indica el número de variables no rellenadas en el fragmento de documento.
 
-### Lista de fragmentos de documento {#list-document-fragments}
+### Enumerar fragmentos de documento {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -171,4 +170,3 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 * Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
 * Omitir viñetas/numeraciones: Active esta opción para omitir viñetas/numeración en el fragmento del documento de la lista.
 * Valores no rellenados (información): Indica el número de variables no rellenadas en el fragmento de documento.
-

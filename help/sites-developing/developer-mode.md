@@ -1,79 +1,76 @@
 ---
 title: Modo de desarrollador
-seo-title: Modo de desarrollador
-description: El modo de desarrollador abre un panel lateral con varias fichas que proporcionan a los desarrolladores información sobre la página actual
-seo-description: El modo de desarrollador abre un panel lateral con varias fichas que proporcionan a los desarrolladores información sobre la página actual
+seo-title: Developer Mode
+description: El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan a un desarrollador información sobre la página actual
+seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 2ff0d85e-fe49-4506-b6d6-74cc060d7ea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
-translation-type: tm+mt
-source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 0%
+source-wordcount: '686'
+ht-degree: 1%
 
 ---
 
-
 # Modo de desarrollador{#developer-mode}
 
-Al editar páginas en AEM, hay varios [modos](/help/sites-authoring/author-environment-tools.md#page-modes) disponibles, incluido el modo de desarrollador. Esto abre un panel lateral con varias fichas que proporcionan a un desarrollador información sobre la página actual. Las tres fichas son:
+Al editar páginas en AEM, varias [modos](/help/sites-authoring/author-environment-tools.md#page-modes) están disponibles, incluido el modo de desarrollador. Se abre un panel lateral con varias fichas que proporcionan a los desarrolladores información sobre la página actual. Las tres pestañas son:
 
-* **[](#components)** Componentes para ver la información de estructura y rendimiento.
-* **[](#tests)** Pruebas para ejecutar pruebas y analizar los resultados.
-* **[](#errors)** Errores para ver si se producen problemas.
+* **[Componentes](#components)** para ver la información de estructura y rendimiento.
+* **[Pruebas](#tests)** para ejecutar pruebas y analizar los resultados.
+* **[Errores](#errors)** para ver si se producen problemas.
 
-Esto ayuda a los desarrolladores a:
+Ayudan a los desarrolladores a:
 
 * Discover: de qué páginas se componen.
-* Depurar: lo que está sucediendo, dónde y cuándo, lo que a su vez ayuda a resolver los problemas.
-* Prueba: ¿Se comporta la aplicación como se espera?
+* Depuración: lo que está sucediendo donde y cuándo, lo que a su vez ayuda a resolver los problemas.
+* Prueba: ¿se comporta la aplicación según lo esperado?
 
 >[!CAUTION]
 >
 >Modo de desarrollador:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
->* No está disponible en dispositivos móviles o ventanas pequeñas en el escritorio (debido a restricciones de espacio).
+>* No está disponible en dispositivos móviles o ventanas pequeñas en equipos de escritorio (debido a restricciones de espacio).
    >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
->* Solo está disponible para los usuarios que son miembros del grupo `administrators`.
+>* Solo está disponible para los usuarios que son miembros de la `administrators` grupo.
 
 
 >[!CAUTION]
 >
 >El modo de desarrollador solo está disponible en una instancia de autor estándar que no utilice el modo de ejecución nosamplecontent.
 >
->Si es necesario, puede configurarse para su uso:
+>Si es necesario, se puede configurar para su uso:
 >
->* en una instancia de autor mediante nosamplecontent run-mode
+>* en una instancia de autor que utiliza nosamplecontent run mode
 >* una instancia de publicación
-
 >
->
-Debe deshabilitarse de nuevo después de su uso.
+>Debe volver a deshabilitarse después de su uso.
 
 >[!NOTE]
 >
 >Consulte:
 >
->* Artículo de la Base de conocimiento, [Solución de problemas de AEM TouchUI](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
->* AEM sesión de Gems sobre [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+>* Artículo de la Base de conocimiento, [Solución de problemas AEM la interfaz de usuario táctil](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
+>* AEM sesión de Gems acerca de [Modo de desarrollador de AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 
 ## Apertura del modo de desarrollador {#opening-developer-mode}
 
-El modo de desarrollador se implementa como un panel lateral en el editor de páginas. Para abrir el panel, seleccione **Desarrollador** en el selector de modo de la barra de herramientas del editor de páginas:
+El modo de desarrollador se implementa como panel lateral en el editor de páginas. Para abrir el panel, seleccione **Desarrollador** desde el selector de modo en la barra de herramientas del editor de páginas:
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
-El panel se divide en dos fichas:
+El panel se divide en dos pestañas:
 
-* **[Componentes](/help/sites-developing/developer-mode.md#components)** : Muestra un árbol de componentes, similar al árbol de  [contenido ](/help/sites-authoring/author-environment-tools.md#content-tree) para autores
+* **[Componentes](/help/sites-developing/developer-mode.md#components)** : Muestra un árbol de componentes similar a la variable [árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree) para autores
 
-* **[Errores](/help/sites-developing/developer-mode.md#errors)** : cuando se producen problemas, se muestran detalles para cada componente.
+* **[Errores](/help/sites-developing/developer-mode.md#errors)** - Cuando se producen problemas, se muestran detalles de cada componente.
 
 ### Componentes {#components}
 
@@ -86,52 +83,52 @@ Muestra un árbol de componentes que:
 * Permite expandir el árbol y seleccionar componentes específicos dentro del árbol. La selección proporciona acceso a los detalles del componente; como:
 
    * Ruta del repositorio
-   * Vínculos a secuencias de comandos (a los que se accede en CRXDE Lite)
+   * Vínculos a secuencias de comandos (se accede en el CRXDE Lite)
 
 * Los componentes seleccionados (en el flujo de contenido, indicados con un borde azul) se resaltarán en el árbol de contenido (y viceversa).
 
 Esto puede ayudar a:
 
-* Determinar y comparar el tiempo de procesamiento por componente.
-* Ver y comprender la jerarquía.
-* Comprenda y mejore el tiempo de carga de la página buscando componentes lentos.
+* Determine y compare el tiempo de procesamiento por componente.
+* Consulte y comprenda la jerarquía.
+* Comprenda y, a continuación, mejore el tiempo de carga de la página buscando componentes lentos.
 
 Cada entrada de componente puede mostrar (por ejemplo):
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
-* **Detalles** de vista: vínculo a una lista que muestra:
+* **Ver detalles**: un vínculo a una lista que muestre:
 
-   * todas las secuencias de comandos de componentes utilizadas para procesar el componente.
+   * todos los scripts de componente utilizados para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Editar secuencia de comandos**: un vínculo que:
 
-   * abre la secuencia de comandos de componente en CRXDE Lite.
+   * abre el script de componente en CRXDE Lite.
 
-* La expansión de una entrada de componente (punta de flecha) también puede mostrar:
+* La expansión de una entrada de componente (cabeza de flecha) también puede mostrar:
 
    * La jerarquía dentro del componente seleccionado.
-   * Tiempos de procesamiento para el componente seleccionado de forma aislada, componentes individuales anidados en él y el total combinado.
+   * Tiempos de renderización del componente seleccionado de forma aislada, cualquier componente individual anidado dentro de él y el total combinado.
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
 >
->Algunos vínculos apuntan a secuencias de comandos en `/libs`. Sin embargo, sólo para referencia, **no debe** editar nada en `/libs`, ya que cualquier cambio que realice puede perderse. Esto se debe al hecho de que esta rama puede cambiar cada vez que actualice o aplique un paquete de revisión o función. Cualquier cambio que necesite se debe realizar en `/apps`, consulte [Overlays and Overrides](/help/sites-developing/overlays.md).
+>Algunos vínculos dirigen a scripts en `/libs`. Sin embargo, solo son para referencia, usted **no debe** editar cualquier elemento de `/libs`, ya que cualquier cambio que realice puede perderse. Esto se debe a que esta rama puede sufrir cambios cada vez que actualice o aplique una corrección o paquete de características. Los cambios que necesite deben realizarse en `/apps`, consulte [Superposiciones y anulaciones](/help/sites-developing/overlays.md).
 
 ### Errores {#errors}
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-Es de esperar que la ficha **Errors** siempre esté vacía (como se muestra arriba), pero cuando se producen problemas se muestran los siguientes detalles para cada componente:
+Con suerte, el **Errores** siempre estará vacía (como se ha indicado anteriormente), pero cuando se produzcan problemas, se mostrarán los siguientes detalles para cada componente:
 
 * Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código apropiado dentro del CRXDE Lite.
-* Una advertencia si el componente abre una sesión de administración.
+* Una advertencia si el componente abre una sesión de administrador.
 
-Por ejemplo, en una situación en la que se llama a un método no definido, el error resultante se mostrará en la ficha **Errors**:
+Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se muestra en la variable **Errores** pestaña:
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 

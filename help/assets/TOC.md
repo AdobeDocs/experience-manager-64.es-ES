@@ -9,7 +9,7 @@ user-guide-description: Cree, administre, distribuya y optimice recursos digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 47%
+ht-degree: 49%
 
 ---
 

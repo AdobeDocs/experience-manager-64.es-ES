@@ -152,7 +152,7 @@ ht-degree: 34%
    + [Integración de soluciones](integration.md)
    + [Integración de Target con fragmentos de experiencias](experience-fragments-target.md)
 + Prácticas recomendadas   {#bestpractices}
-   + [Prácticas recomendadas  ](administer-best-practices.md)
+   + [Prácticas recomendadas](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
    + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites: preparación para el RGPD](gdpr-compliance-sites.md)

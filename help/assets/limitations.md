@@ -1,17 +1,17 @@
 ---
 title: Limitaciones de Dynamic Media
-description: Obtenga información sobre las prácticas recomendadas y los límites aplicados al crear un conjunto de imágenes o un conjunto de giros, o al cargar un PDF. Obtenga información también sobre las combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media.
+description: Obtenga información sobre las prácticas recomendadas y los límites aplicados al crear un conjunto de imágenes o un conjunto de giros, o al cargar un PDF. Además, obtenga información sobre las combinaciones de navegador web y sistema operativo no compatibles con Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
-feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
+feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 24c554a68a8ed711eb79167386d29bfa1beea1c2
+source-git-commit: 50d4228ab922a5e09eabd0f718b6712db5b86bde
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 4%
+source-wordcount: '278'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ En las secciones siguientes se describen las limitaciones de Dynamic Media.
 Este tema incluye las siguientes secciones:
 
 * [Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos](#best-practice-enforced-limits)
-* [Combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media](#unsupported-browser-os)
+* [Combinaciones de navegador web y sistema operativo no compatibles con Dynamic Media](#unsupported-browser-os)
 
 ## Prácticas recomendadas y límites aplicados por Dynamic Media en los tipos de recursos {#best-practice-enforced-limits}
 
@@ -38,9 +38,9 @@ Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF 
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Combinaciones de navegador web y sistema operativo no compatibles con los visores de Dynamic Media {#unsupported-browser-os}
+## Combinaciones de navegador web y sistema operativo no compatibles con Dynamic Media {#unsupported-browser-os}
 
-Los visores de Dynamic Media no admiten las siguientes combinaciones de navegador web y sistema operativo:
+Dynamic Media no admite las siguientes combinaciones de navegador web y sistema operativo:
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -56,7 +56,7 @@ Los visores de Dynamic Media no admiten las siguientes combinaciones de navegado
 
 <!-- CQDOC-19433 -->
 
-A partir del 30 de septiembre de 2022, los visores de Adobe de Dynamic Media dejarán de ser compatibles con lo siguiente:
+A partir del 30 de septiembre de 2022, Adobe Dynamic Media dejará de ofrecer asistencia para lo siguiente:
 
 * TLS (Transport Layer Security) 1.0 y 1.1
 * Las siguientes cifras débiles en TLS 1.2:

@@ -9,7 +9,7 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 39518ffbbcd1368cff02c356246dc5b430cc14d6
+source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para conf
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | Indicador general de que el nodo está vinculado a Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | Indicador general de que el nodo está vinculado a Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** o texto de error | Estado de carga de recursos en Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Debe rellenarse para generar direcciones URL para el recurso remoto de Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` o `failed:<error text>` | Estado de sincronización de conjuntos (conjuntos de giros, conjuntos de imágenes, etc.), ajustes preestablecidos de imagen, ajustes preestablecidos de visor, actualizaciones de mapas de imágenes para un recurso o imágenes editadas. |
@@ -77,7 +77,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes di
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Problema  </strong></td> 
+   <td><strong>Problema</strong></td> 
    <td><strong>Cómo depurar</strong></td> 
    <td><strong>Solución</strong></td> 
   </tr> 
@@ -142,7 +142,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Problema  </strong></td> 
+   <td><strong>Problema</strong></td> 
    <td><strong>Cómo depurar</strong></td> 
    <td><strong>Solución</strong></td> 
   </tr> 

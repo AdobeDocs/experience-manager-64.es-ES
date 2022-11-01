@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 50%
+ht-degree: 45%
 
 ---
 
@@ -35,17 +35,17 @@ Ambos componentes proporcionan una ventana, como se muestra a continuación, par
    >
    >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
 
-1. En el navegador de contenido, pulse **Contenedor de formulario** y haga clic en el icono **Configurar** ![configure](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Puntee en Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
+1. En el navegador de contenido, pulse **Contenedor de formulario** y haga clic en el icono **Configurar** ![configure](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y desmarque **Habilitar Acrobat Sign** . Puntee en Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
 
    >[!NOTE]
    >
-   >Cuando se añade un componente Paso de firma a un formulario adaptable, la opción Habilitar Adobe Sign se selecciona automáticamente.
+   >Cuando se añade un componente Paso de firma a un formulario adaptable, la opción Habilitar Acrobat Sign se selecciona automáticamente.
 
 1. Pulse el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
 
    * **Nombre del elemento**: especifique el nombre del componente.
    * **Título:** especifique un título único para el componente.
-   * **Mensaje de plantilla:** especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Adobe Sign tardan algún tiempo en preparar y cargar el PDF de firma.
+   * **Mensaje de plantilla:** especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Acrobat Sign tardan algún tiempo en preparar y cargar el PDF de firma.
    * **Servicio de firma:** seleccione la opción **Firma manuscrita**.
    * **Clase CSS**: especifique la clase CSS de la biblioteca de cliente, si la hay. Se recomienda utilizar [temáticas](/help/forms/using/themes.md) y [estilos en línea](/help/forms/using/inline-style-adaptive-forms.md) en lugar de la clase CSS.
 

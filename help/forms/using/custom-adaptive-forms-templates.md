@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Una vez creado un formulario, los cambios realizados en la estructura de conteni
 AEM QuickStart proporciona las siguientes plantillas de formulario adaptables:
 
 * Básico: Permite crear un formulario adaptable multipestaña utilizando una presentación de pestañas a la izquierda, donde puede visitar las pestañas en cualquier orden aleatorio.
-* Básico con Adobe Sign: Permite crear un formulario con varias fichas y un asistente. Utiliza un diseño de pestañas en la izquierda que permite visitar las pestañas en cualquier orden. Utiliza los servicios de Adobe Document Cloud Design para la firma y verificación.
+* Básico con Acrobat Sign: Permite crear un formulario con varias fichas y un asistente. Utiliza un diseño de pestañas en la izquierda que permite visitar las pestañas en cualquier orden. Utiliza los servicios de Adobe Document Cloud Design para la firma y verificación.
 * Plantilla en blanco: Permite crear un formulario sin encabezado, pie de página ni contenido inicial. Puede añadir componentes, como cuadros de texto, botones e imágenes. La plantilla en blanco permite crear un formulario que puede [incrustar en páginas AEM sitio](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 Estas plantillas tienen la variable `sling:resourceType` propiedad establecida en el componente de página correspondiente. El componente de página procesa la página de CQ, que contiene el contenedor de formulario adaptable, que a su vez procesa el formulario adaptable.

@@ -1,80 +1,80 @@
 ---
-title: Integración de Adobe Sign con AEM Forms
-seo-title: Integrate Adobe Sign with AEM Forms
-description: Obtenga información sobre cómo configurar Adobe Sign para AEM Forms
-seo-description: Learn how to configure Adobe Sign for AEM Forms
+title: Integración de Acrobat Sign con AEM Forms
+seo-title: Integrate Acrobat Sign with AEM Forms
+description: Obtenga información sobre cómo configurar Acrobat Sign para AEM Forms
+seo-description: Learn how to configure Acrobat Sign for AEM Forms
 uuid: 9efd5c44-3d87-4c56-aa6c-e65397fff243
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
-feature: Adaptive Forms, Adobe Sign
+feature: Adaptive Forms, Acrobat Sign
 exl-id: e7c27623-a889-4bd5-bfff-cfe513cd1a35
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
-# Integración de Adobe Sign con AEM Forms {#integrate-adobe-sign-with-aem-forms}
+# Integración de Acrobat Sign con AEM Forms {#integrate-adobe-sign-with-aem-forms}
 
-Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
+Acrobat Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
-En un escenario típico de Adobe Sign y formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la aplicación y utiliza Adobe Sign para marcar la aplicación aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
+En un escenario típico de Acrobat Sign y formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la aplicación y utiliza Acrobat Sign para marcar la aplicación aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Acrobat Sign con AEM Forms.
 
-Para utilizar Adobe Sign con AEM Forms, configure Adobe Sign en AEM Cloud Services:
+Para utilizar Acrobat Sign con AEM Forms, configure Acrobat Sign en AEM Cloud Services:
 
 ## Requisitos previos {#prerequisites}
 
-Para integrar Adobe Sign con AEM Forms, es necesario lo siguiente:
+Para integrar Acrobat Sign con AEM Forms, es necesario lo siguiente:
 
-* Un activo [Cuenta de desarrollador de Adobe Sign.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
+* Un activo [Cuenta de desarrollador de Acrobat Sign.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * Un [Habilitado para SSL](/help/sites-administering/ssl-by-default.md) Servidor de AEM Forms.
-* un [aplicación API de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md);
-* Credenciales (ID de cliente y Secreto de cliente) de la aplicación de API de Adobe Sign.
-* Al reconfigurar, elimine la configuración de Adobe Sign existente de las instancias de autor y publicación.
+* Un [aplicación de API de Acrobat Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Credenciales (ID de cliente y Secreto de cliente) de la aplicación de API de Acrobat Sign.
+* Al reconfigurar, elimine la configuración de Acrobat Sign existente de las instancias de autor y publicación.
 * usar una [clave criptográfica idéntica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) para las instancias de autor y publicación;
 
-## Configuración de Adobe Sign con AEM Forms {#configure-adobe-sign-with-aem-forms}
+## Configuración de Acrobat Sign con AEM Forms {#configure-adobe-sign-with-aem-forms}
 
-Una vez cumplidos los requisitos previos, realice los siguientes pasos para configurar Adobe Sign con AEM Forms en la instancia de autor:
+Una vez cumplidos los requisitos previos, realice los siguientes pasos para configurar Acrobat Sign con AEM Forms en la instancia de autor:
 
 1. En la instancia de autor de AEM Forms, vaya a **Herramientas** ![martillo](assets/hammer.png) > **General** > **Explorador de configuración**.
    * Consulte la documentación del [](/help/sites-administering/configurations.md)Explorador de configuración para obtener más información.
 1. En la página **[!UICONTROL Explorador de configuración]**, pulse **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un **[!UICONTROL Título]** para la configuración, habilite **[!UICONTROL Configuraciones de nube]** y pulse **[!UICONTROL Crear]**. Crea un contenedor de configuración para servicios en la nube.
-1. Vaya a **Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Adobe Sign** y seleccione el contenedor de configuración que creó en el paso anterior.
+1. Vaya a **Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Acrobat Sign** y seleccione el contenedor de configuración que creó en el paso anterior.
 
    >[!NOTE]
    >
-   >Puede ejecutar los pasos del 1 al 4 para crear un nuevo contenedor de configuración y una configuración de Adobe Sign en el contenedor o utilizar el `global` carpeta **Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Adobe Sign**. Si crea la configuración en el nuevo contenedor de configuración, asegúrese de especificar el nombre del contenedor en la variable **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
+   >Puede ejecutar los pasos del 1 al 4 para crear un nuevo contenedor de configuración y una configuración de Acrobat Sign en el contenedor o utilizar el `global` carpeta **Herramientas** ![martillo](assets/hammer.png) > **Cloud Services** > **Acrobat Sign**. Si crea la configuración en el nuevo contenedor de configuración, asegúrese de especificar el nombre del contenedor en la variable **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
 
    >[!NOTE]
    Asegúrese de que la dirección URL de la página de configuración de los servicios de nube comience por **HTTPS**. Si no, [habilitar SSL](/help/sites-administering/ssl-by-default.md) para el servidor de AEM Forms.
 
-1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear la configuración de Adobe Sign en AEM Forms.
-1. En el **[!UICONTROL General]** de la pestaña **[!UICONTROL Crear configuración de Adobe Sign]** página, especifique un **Nombre** para la configuración y pulse **Siguiente**. Si lo desea, puede especificar un título y examinar para seleccionar una miniatura para la configuración.
+1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear la configuración de Acrobat Sign en AEM Forms.
+1. En el **[!UICONTROL General]** de la pestaña **[!UICONTROL Crear configuración de Acrobat Sign]** página, especifique un **Nombre** para la configuración y pulse **Siguiente**. Si lo desea, puede especificar un título y examinar para seleccionar una miniatura para la configuración.
 
-1. Copie la URL de la ventana actual del explorador en un bloc de notas. Es necesario configurar la aplicación Adobe Sign con AEM Forms.
+1. Copie la URL de la ventana actual del explorador en un bloc de notas. Es necesario configurar la aplicación Acrobat Sign con AEM Forms.
 
-1. Configure los ajustes de OAuth para la aplicación Adobe Sign:
+1. Configure los ajustes de OAuth para la aplicación Acrobat Sign:
 
-   1. Abra una ventana del explorador e inicie sesión en la cuenta de desarrollador de Adobe Sign.
+   1. Abra una ventana del explorador e inicie sesión en la cuenta de desarrollador de Acrobat Sign.
    1. Seleccione la aplicación configurada para AEM Forms y pulse Configurar OAuth para la aplicación.
    1. En el **Dirección URL de redireccionamiento** , añada la URL HTTPS copiada en el paso anterior y haga clic en **Guardar**.
-   1. Habilite la siguiente configuración de OAuth para la aplicación Adobe Sign y haga clic en **Guardar**.
+   1. Habilite la siguiente configuración de OAuth para la aplicación Acrobat Sign y haga clic en **Guardar**.
    * aggrement_read
    * aggrement_write
    * aggrement_send
    * widget_write
    * workflow_read
 
-   Para obtener información paso a paso sobre la configuración de OAuth para una aplicación de Adobe Sign y obtener las claves, consulte [Configuración de oAuth para la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) documentación para desarrolladores.
+   Para obtener información paso a paso sobre la configuración de OAuth para una aplicación de Acrobat Sign y obtener las claves, consulte [Configuración de oAuth para la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) documentación para desarrolladores.
 
    ![Configuración de OAuth](assets/oauthconfig_new.png)
 
-1. Vuelva a la página **Crear configuración de Adobe Sign**. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** menciona la siguiente URL predeterminada:
+1. Vuelva a la **Crear configuración de Acrobat Sign** página. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** menciona la siguiente URL predeterminada:
 
    `https://secure.na1.echosign.com/public/oauth`
 
@@ -84,34 +84,34 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    Puede modificar el valor de la partición de la base de datos. Reinicie el servidor para poder utilizar el nuevo valor para el uso compartido de la base de datos.
 
-1. Especifique el **ID de cliente** (también denominado ID de aplicación) y el **secreto de cliente**. Seleccione el **Activar Adobe Sign para archivos adjuntos también** para anexar archivos adjuntos a un formulario adaptable al documento de Adobe Sign correspondiente enviado para firmar.
+1. Especifique el **ID de cliente** (también denominado ID de aplicación) y el **secreto de cliente**. Seleccione el **Activar Acrobat Sign para archivos adjuntos también** para anexar archivos adjuntos a un formulario adaptable al documento de Acrobat Sign correspondiente enviado para firmar.
 
-   Pulse **[!UICONTROL Conectar con Adobe Sign]**. Cuando se le soliciten credenciales, proporcione el nombre de usuario y la contraseña de la cuenta utilizada al crear la aplicación de Adobe Sign.
+   Toque **[!UICONTROL Conectarse a Acrobat Sign]**. Cuando se le soliciten credenciales, proporcione el nombre de usuario y la contraseña de la cuenta utilizada al crear la aplicación de Acrobat Sign.
 
-   Toque **[!UICONTROL Crear]** para crear la configuración de Adobe Sign.
+   Toque **[!UICONTROL Crear]** para crear la configuración de Acrobat Sign.
 
 1. Abra AEM consola web. La URL es `https://'[server]:[port]'/system/console/configMgr`. 
 1. Apertura **Servicio de configuración común de Forms.**
-1. En el **Permitir** field, **select** Todos los usuarios: Todos los usuarios, anónimos o conectados, pueden obtener una vista previa de los archivos adjuntos, comprobar y firmar formularios y hacer clic en **Guardar.** La instancia de autor está configurada para utilizar Adobe Sign.
+1. En el **Permitir** field, **select** Todos los usuarios: Todos los usuarios, anónimos o conectados, pueden obtener una vista previa de los archivos adjuntos, comprobar y firmar formularios y hacer clic en **Guardar.** La instancia de autor está configurada para utilizar Acrobat Sign.
 1. Uso [replicación](/help/sites-deploying/replication.md) para crear una configuración idéntica en las instancias de publicación correspondientes.
 
-Ahora, Adobe Sign está integrado con AEM Forms y listo para usar en formularios adaptables. Hasta [usar el servicio Adobe Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique el contenedor de configuración creado anteriormente en las propiedades del formulario adaptable.
+Ahora, Acrobat Sign está integrado con AEM Forms y listo para usar en formularios adaptables. Hasta [usar el servicio Acrobat Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique el contenedor de configuración creado anteriormente en las propiedades del formulario adaptable.
 
-## Configuración del programador de Adobe Sign para sincronizar el estado de firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configuración del programador de Acrobat Sign para sincronizar el estado de firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Un formulario adaptable habilitado para Adobe Sign solo se envía una vez que todos los firmantes hayan completado el proceso de firma. De forma predeterminada, los servicios del programador de Adobe Sign están programados para comprobar la respuesta del firmante (encuesta) cada 24 horas. Puede cambiar el intervalo predeterminado para su entorno. Realice los siguientes pasos para cambiar el intervalo predeterminado:
+Un formulario adaptable habilitado para Acrobat Sign solo se envía una vez que todos los firmantes hayan completado el proceso de firma. De forma predeterminada, los servicios del programador de Acrobat Sign están programados para comprobar la respuesta del firmante (encuesta) cada 24 horas. Puede cambiar el intervalo predeterminado para su entorno. Realice los siguientes pasos para cambiar el intervalo predeterminado:
 
 1. Inicie sesión en el servidor de AEM Forms con credenciales de administrador y vaya a **Herramientas** > **Operaciones** > **Consola web**.
 
    También puede abrir la siguiente URL en una ventana del explorador:
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Busque y abra el **Servicio de configuración de Adobe Sign** . Especifique un [expresión cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) en el **Expresión del programador de actualización de estado** y haga clic en **Guardar**. Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00 a. m., especifique `0 0 0 1/1 * ? *` en el **Expresión del programador de actualización de estado** campo .
+1. Busque y abra el **Servicio de configuración de Acrobat Sign** . Especifique un [expresión cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) en el **Expresión del programador de actualización de estado** y haga clic en **Guardar**. Por ejemplo, para ejecutar el servicio de configuración diariamente a las 00:00 a. m., especifique `0 0 0 1/1 * ? *` en el **Expresión del programador de actualización de estado** campo .
 
-El intervalo predeterminado para sincronizar el estado de Adobe Sign ahora cambia.
+El intervalo predeterminado para sincronizar el estado de Acrobat Sign ahora cambia.
 
 ## Artículos relacionados {#related-articles}
 
-* [Uso de Adobe Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md)
-* [Uso de Adobe Sign con AEM Forms (vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
-* [Integración de Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
+* [Uso de Acrobat Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md)
+* [Uso de Acrobat Sign con AEM Forms (vídeo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Integración de Acrobat Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)

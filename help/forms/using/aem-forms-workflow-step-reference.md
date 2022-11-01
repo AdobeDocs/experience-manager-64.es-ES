@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 31%
@@ -18,7 +18,7 @@ ht-degree: 31%
 
 ## Pasos del Forms Workflow {#forms-workflow-steps}
 
-Los pasos del flujo de trabajo de Forms realizan operaciones específicas de AEM Forms en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos empresariales internos y entre cortafuegos. También puede utilizar los pasos del Forms Workflow para iniciar document services, integrar con el flujo de trabajo de firma de Adobe Sign y realizar otras operaciones de AEM Forms. Debe [Complemento de AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para utilizar estos pasos en un flujo de trabajo.
+Los pasos del flujo de trabajo de Forms realizan operaciones específicas de AEM Forms en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en un flujo de trabajo centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, procesos empresariales internos y entre cortafuegos. También puede utilizar los pasos del Forms Workflow para iniciar document services, integrar con el flujo de trabajo de firma de Acrobat Sign y realizar otras operaciones de AEM Forms. Debe [Complemento de AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63) para utilizar estos pasos en un flujo de trabajo.
 
 ## Paso de tarea de asignación {#assign-task-step}
 
@@ -214,11 +214,11 @@ El paso Invocar el servicio del modelo de datos de formulario tiene los campos s
 
 ## Paso para firmar el documento {#sign-document-step}
 
-El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. El paso Firmar documento tiene las siguientes propiedades:
+El paso Firmar documento le permite utilizar Acrobat Sign para firmar documentos. El paso Firmar documento tiene las siguientes propiedades:
 
 * **Nombre del acuerdo:** Especifique el título del acuerdo. El nombre del acuerdo forma parte del asunto y del texto del cuerpo del correo electrónico enviado a los firmantes.
 * **Configuración regional:** Especifique el idioma para las opciones de correo electrónico y verificación.
-* **Configuración de Adobe Sign Cloud**: Elija una configuración de Adobe Sign Cloud . Si no ha configurado Adobe Sign para AEM Forms, consulte [Integración de Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Configuración de Acrobat Sign Cloud**: Elija una configuración de Acrobat Sign Cloud . Si no ha configurado Acrobat Sign para AEM Forms, consulte [Integración de Acrobat Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Documento a firmar:** Puede elegir un documento de una ubicación relativa a la carga útil, utilizar la carga útil como documento o especificar una ruta absoluta del documento.
 * **Ruta de datos adjuntos de entrada:** Seleccione un archivo adjunto. Estos archivos adjuntos se incluyen en el documento de firma. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil o especificar una ruta absoluta de los archivos adjuntos.
@@ -234,8 +234,8 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Seleccionar firmantes:** Especifique el método para elegir firmantes para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un firmante.
 * **Script o servicio para seleccionar firmantes:** La opción solo está disponible si la opción Dinámicamente está seleccionada en el campo Seleccionar firmantes . Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
 
-* **Detalles del firmante:** La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes . Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta de Adobe Sign configurada.
-* **Variable de estado:** Un documento habilitado para Adobe Sign almacena el estado de firma del documento en una variable. Especifique el nombre de la variable de estado (adobeSignStatus). Una variable de estado de una instancia está disponible en CRXDE en /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene el estado de una variable.
+* **Detalles del firmante:** La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes . Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta de Acrobat Sign configurada.
+* **Variable de estado:** Un documento habilitado para Acrobat Sign almacena el estado de firma del documento en una variable. Especifique el nombre de la variable de estado (adobeSignStatus). Una variable de estado de una instancia está disponible en CRXDE en /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData contiene el estado de una variable.
 * **Ruta del documento firmado:** Especifique la ubicación para conservar los documentos firmados. Puede sobrescribir el archivo de carga útil o colocar el documento firmado en una ubicación del directorio de carga útil.
 
 ## Pasos de Servicios de documentos {#document-services-steps}
@@ -316,4 +316,4 @@ Codificar, firmar y certificar un documento. AEM Forms admite el cifrado basado 
 Envíe un documento directamente a una impresora. Admite los siguientes mecanismos de acceso de impresión:
 
 * **Impresora accesible directamente**: Una impresora instalada en el mismo equipo se denomina impresora de acceso directo y el equipo se denomina host de impresora. Este tipo de impresora puede ser una impresora local que esté conectada al equipo directamente.
-* **Impresora accesible indirecto**: Se accede a la impresora instalada en un servidor de impresión desde otros equipos. Tecnologías como el sistema de impresión UNIX® (CUPS) común y el protocolo Line Printer Daemon (LPD) están disponibles para conectarse a una impresora de red. Para acceder a una impresora accesible indirectamente, especifique la IP o el nombre de host del servidor de impresión. Con este mecanismo, puede enviar un documento a un URI LPD cuando la red tenga un LPD en ejecución. El mecanismo permite enrutar el documento a cualquier impresora que esté conectada a la red que tenga una LPD en ejecución.
+* **Impresora accesible indirecto**: Se accede a la impresora instalada en un servidor de impresión desde otros equipos. Tecnologías como el sistema de impresión UNIX® (CUPS) común y el protocolo Line Printer Daemon (LPD) están disponibles para conectarse a una impresora de red. Para acceder a una impresora de acceso indirecto, especifique la IP o el nombre de host del servidor de impresión. Con este mecanismo, puede enviar un documento a un URI LPD cuando la red tenga un LPD en ejecución. El mecanismo permite enrutar el documento a cualquier impresora que esté conectada a la red que tenga una LPD en ejecución.

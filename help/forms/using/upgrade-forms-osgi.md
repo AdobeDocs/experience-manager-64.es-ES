@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 9%
@@ -92,9 +92,9 @@ Puede realizar una actualización directa de AEM 6.2 Forms o AEM 6.3 Forms a AEM
       WHERE `key` = 'dataType'
       ```
 
-   * **(Si solo se actualiza desde AEM 6.2 Forms o versiones anteriores) Vuelva a configurar Adobe Sign**
+   * **(Si solo se actualiza desde AEM 6.2 Forms o versiones anteriores) Vuelva a configurar Acrobat Sign**
 
-      Si tenía Adobe Sign configurado en la versión anterior de AEM Forms, vuelva a configurar Adobe Sign desde AEM Cloud Services. Para obtener más información, consulte [Integración de Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+      Si tenía Acrobat Sign configurado en la versión anterior de AEM Forms, vuelva a configurar Acrobat Sign desde AEM Cloud Services. Para obtener más información, consulte [Integración de Acrobat Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **(Si solo se actualiza desde AEM 6.2 Forms o versiones anteriores) Vuelva a configurar los análisis y los informes**
 

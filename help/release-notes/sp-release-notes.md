@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 1537055fd88cbc3b01e4df7855a99f993f2052e4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '21547'
 ht-degree: 26%
@@ -348,7 +348,7 @@ Si está utilizando el paquete `com.day.cq.dam.handler.standard.msoffice` en su 
 
 **Instalador JEE de Forms**
 
-**Servicios de documento**
+**Servicios de documentos**
 
 * El servicio Convertir PDF no convierte los documentos PDF a PostScript y muestra un mensaje de error (NPR-31267).
 
@@ -942,7 +942,7 @@ Los aspectos destacados de los formularios de AEM 6.4.4.0 son:
 
 **Paquete de complemento de Forms**
 
-**Integración de Adobe Sign**
+**Integración de Acrobat Sign**
 
 * AEM 6.4 Forms Client SDK no contiene ningún paquete adobesign-recipient. NPR-27735: revisión para CQ-4259372
 
@@ -1185,7 +1185,7 @@ Algunos de los aspectos destacados de AEM 6.4.3.0 son:
 * Las modificaciones en AEM experiencias creadas mediante el motor de orientación no se publican. NPR-24869: revisión para CQ-4247832
 * No se pueden crear varias actividades y experiencias si sus nombres incluyen caracteres japoneses. NPR-27271: revisión para CQ-4256857
 * Actualice el extremo de la API de Launch. NPR-26790: revisión para CQ-4254380
-* (Personalization) BrandsRetriever recorre todo el árbol. NPR-27060: revisión para CQ-4255790
+* (Personalización) BrandsRetriever recorre todo el árbol. NPR-27060: revisión para CQ-4255790
 
 **WCM: IU de administración**
 
@@ -1253,7 +1253,7 @@ Los aspectos destacados de los formularios de AEM 6.4.3.0 son:
 * falta el archivo binario convertpdf en el paquete de complementos de AIX Forms, lo que provoca un error al invocar el servicio PDFA. Revisión para CQ-4257873
 * El servicio de captura de papel se bloquea al procesar archivos TIFF. NPR-28079: revisión para CQ-4240649
 
-**Servicios de documento**
+**Servicios de documentos**
 
 * Agregue la conformidad con FIPS para el flujo de trabajo RE en Firma digital, Extensiones de Reader, CryptoProvider y TrustStore. NPR-27495: revisión para CQ-4257572
 * La conversión falla al ejecutar el servicio AssemblerService.toPDFA en un bucle. NPR-26354: revisión para CQ-4248656
@@ -1338,7 +1338,7 @@ Algunos de los aspectos destacados de AEM 6.4.2.0 son:
 * El tiempo de activación y desactivación se almacena en crx/de pero no obtiene lo mismo en la consola de la interfaz de usuario de las propiedades de la página. NPR-25154: revisión para CQ-4243431
 * El sistema de estilos rompe los valores iniciales de las propiedades del cuadro de diálogo. NPR-25648: revisión para CQ-4250073
 * Al definir una propiedad cq:tagName en un nodo cq:htmlTag , el nombre de la etiqueta no se tiene en cuenta si el componente se incluye mediante JSP. NPR-24154: revisión para CQ-4244120
-* Para los componentes parsys anidados, siempre se aplica el primer diseño satisfactorio (con la ruta menos anidada) de varios componentes disponibles. Para obtener más información, consulte [Resolución de ruta de diseño](https://docs.adobe.com/content/help/es-ES/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973: revisión para CQ-4246276
+* Para los componentes parsys anidados, siempre se aplica el primer diseño satisfactorio (con la ruta menos anidada) de varios componentes disponibles. Para obtener más información, consulte [Resolución de ruta de diseño](https://docs.adobe.com/content/help/es/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973: revisión para CQ-4246276
 * Al pegar texto en un componente RTE, se muestra un cuadro de diálogo emergente, pero no se representa correctamente. NPR-24895: revisión para CQ-4245901
 * (RTE) Problemas de rendimiento con indicador de campo obligatorio. NPR-24894: revisión para CQ-4241895
 * (Componente de página) Al añadir un componente a Parsys, se recorta de la derecha y se sale el ancho del marco del dispositivo. NPR-25536: revisión para CQ-4238224
@@ -1566,14 +1566,14 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 
 **Forms: flujo de trabajo**
 
-* (Espacio de trabajo HTMLEspacio de trabajo HTML) Cuando un usuario reclama una tarea, el recuento de colas se actualiza para ese usuario en particular, pero no para otros usuarios, a menos que se actualice la página. Este problema se ha corregido con una nueva propiedad de . Para configurar esta nueva propiedad en la instancia de AEM, consulte su Configuración . NPR-24536: revisión para CQ-4233665
+* (Espacio de trabajo HTML) Cuando un usuario reclama una tarea, el recuento de colas se actualiza para ese usuario en particular, pero no para otros usuarios, a menos que se actualice la página. Este problema se ha corregido con una nueva propiedad de . Para configurar esta nueva propiedad en la instancia de AEM, consulte su Configuración . NPR-24536: revisión para CQ-4233665
 * No se puede cargar un formulario grande en la aplicación AEM Forms en la versión 6.4. NPR-24463: Revisión para CQ-4245091
-* Problema en la aplicación de Mobile Workspace al intentar ver la tarea compartida. NPR-25177: revisión para CQ-4248733
+* Problema en la aplicación Mobile Workspace al intentar ver la tarea compartida. NPR-25177: revisión para CQ-4248733
 * Comportamiento de validación incoherente entre la web y APK. NPR-25670: revisión para CQ-4248178
 * Cuando se realiza una llamada a un servicio web, un formulario HTML5 se abre dentro del cliente, falla y se devuelve un mensaje de error. NPR-26048: revisión para CQ-4244716
 * Problema al llamar al servicio en la aplicación de Windows 6.3 de AEM formularios. NPR-26468: Revisión para CQ-4252341
 
-**Mobile Forms**
+**Forms móvil**
 
 * (Conjunto de formularios) Problema de validación de campos SSN y Mobile al obtener una vista previa. NPR-24458: revisión para CQ-4244983
 * Los datos no se muestran con el prefijo de campos multilínea en la vista previa del HTML. NPR-24549: revisión para CQ-4244212
@@ -1609,7 +1609,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 * (Editor de plantillas) La plantilla básica muestra las áreas de colocación de encabezado/pie de página adicionales y los parpadeos de pantalla al abrir el canal web. Revisión para CQ-4253323
 * Los componentes generados automáticamente no se resaltan al seleccionarlos del árbol de contenido. Revisión para CQ-4246178
 
-**Servicios de documento**
+**Servicios de documentos**
 
 * (Servicio de formulario) OSGI no es compatible con XFAF. NPR-25181, revisión para CQ-4251313
 * Los caracteres en el encabezado del fichero de PDF ensamblado están llegando a ser confusos. NPR-25113: revisión para CQ-4244682
@@ -1638,7 +1638,7 @@ Los aspectos destacados de los formularios de AEM 6.4.2.0 son:
 * La función crear/modificar de la configuración de seguridad no funciona. NPR-24769: revisión para CQ-4246927
 * Optimize PDF desincrustando selectivamente fuentes mediante una sola llamada API. NPR-23287
 
-**Servicios de documento**
+**Servicios de documentos**
 
 * El servicio de salida no proporciona las etiquetas correctas para el Reader de accesibilidad. NPR-24438, NPR-24439, NPR-24440, NPR-24441: Revisión para CQ-4243849, CQ-4243845, CQ-4243852, CQ-4243853
 
@@ -1752,12 +1752,12 @@ AEM 6.4.1.0 se puede instalar en la AEM 6.4 GA. Algunos de los aspectos destacad
 * TargetContentImpl hace que AEM seo lenta durante consultas de larga duración. NPR-22359: revisión para CQ-4236907
 * El motor de destino (mbox.js, at.js) no utiliza direcciones URL manipuladas y utiliza direcciones URL que contienen dos puntos, lo que puede provocar errores en determinadas implementaciones. NPR-22434: revisión para CQ-4237854
 * En el modo de Target, los autores pueden modificar un componente heredado del modelo sin cancelar la herencia. NPR-22865: revisión para CQ-4237907
-* (Personalization) Los iconos se deforman al cambiar a la vista de tarjeta. NPR-23373, NPR-23374: revisión para CQ-4240018, CQ-4240019
-* (Personalization) La consola de audiencias no muestra los tipos nt:folder . NPR-23375: revisión para CQ-4242293
+* (Personalización) Los iconos se deforman al cambiar a la vista de tarjeta. NPR-23373, NPR-23374: revisión para CQ-4240018, CQ-4240019
+* (Personalización) La consola de audiencias no muestra los tipos nt:folder . NPR-23375: revisión para CQ-4242293
 * Cuando un componente está dirigido a una instancia de publicación, aparece un parpadeo que muestra la experiencia predeterminada antes de la experiencia de destino. NPR-23415: revisión para CQ-4242038
 * (Consola de Adobe IMS) La configuración del servicio OSGi AccessTokenProvider vuelve a aparecer después de la eliminación. NPR-23520: revisión para CQ-4208250
 * La replicación de referencia de configuración falla con la estructura de carpetas intermedias. NPR-23485: revisión para CQ-4242751
-* (Personalization) clientlib bloqueada por el servlet proxy. NPR-23521: revisión para CQ-4240995
+* (Personalización) clientlib bloqueada por el servlet proxy. NPR-23521: revisión para CQ-4240995
 * (Consola de Adobe IMS) Las soluciones de nube registradas no se recogen en el asistente de configuración. NPR-23977: revisión para CQ-4244549
 * Bucle infinito al cargar contenido de destino en páginas sin extensión de HTML. NPR-23522: revisión para CQ-4223600
 * La activación falla en una página con referencias de configuración heredadas de Dynamic Tag Management. NPR-23485: revisión para CQ-4242751
@@ -1817,7 +1817,7 @@ AEM 6.4.1.0 se puede instalar en la AEM 6.4 GA. Algunos de los aspectos destacad
 * (MSM) Mejora del rendimiento del lanzamiento. Revisión para CQ-4231488
 * (MSM) Brecha de tiempo en la escucha de eventos entre el evento que se está produciendo y la gestión de eventos. Revisión para CQ-4227766
 
-**Pantallas**
+**Screens**
 
 * La página de pantalla falla con un error debido a la falta de dependencias para screens-core-pkg:1.4.42. Revisión para CQ-4245918
 
@@ -1947,7 +1947,7 @@ Los aspectos destacados de AEM Forms son:
 * Errores en los registros de migración para la instancia de autor y publicación. Revisión para CQ-4239365
 * Errores en los registros de migración para la instancia de autor y publicación. Revisión para CQ-4239635
 * Error de deserialización como &quot;Deserialización no permitida para la clase sun.util.calendar.ZoneInfo&quot; en registros de error después del envío de un formulario adaptable. Revisión para CQ-4240419
-* El campo de estado no se rellena en la representación de formularios de Mobile. Revisión para CQ-4240597
+* El campo de estado no se está rellenando en la representación de formularios móviles. Revisión para CQ-4240597
 * Elimine el uso de referencia de los componentes de las plantillas de la lista de anti-patrones. Revisión para CQ-4239217
 * HTML5 Numeric Box establecida como Float o Decimal ofrece diferentes resultados de validación en distintos navegadores. NPR-23528: revisión para CQ-4244097
 * (Carga de imagen) La imagen no se muestra en la vista previa del DOR. Revisión para CQ-4243178
@@ -1983,7 +1983,7 @@ Los aspectos destacados de AEM Forms son:
 * La entrada para formularios guardados y enviados se rellena en crx/de a pesar de que tenemos la configuración de base de datos proporcionada en Borrador del portal de Forms y configuración de envío. Revisión para CQ-4240726
 * (Buscar y listar) El valor fijo del título de búsqueda avanzada debería funcionar como contiene en lugar de como igual. Revisión para CQ-4245499
 
-**Mobile Forms**
+**Forms móvil**
 
 * El campo de fecha se superpone en Mobile Forms. Revisión para CQ-4242256
 * El envío de formularios para Mobile Forms debe registrarse como una transacción mediante el servicio de registro de transacciones. Revisión para CQ-4246166
@@ -2168,7 +2168,7 @@ que copiará los nuevos ajustes preestablecidos de visor en la ubicación /conf.
 
 >[!NOTE]
 >
->AEM 6.4.8.0 incluye una nueva versión del [paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y actualiza a AEM 6.4.8.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms después de la instalación del paquete de complementos de Forms.
+>AEM 6.4.8.0 incluye una nueva versión del [paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y actualiza a AEM 6.4.8.0, instale la versión más reciente del paquete de compatibilidad de AEM Forms después de la instalación del paquete de complementos de Forms.
 
 1. Asegúrese de que ha instalado el Service Pack de AEM.
 1. Descargue el paquete de complementos de formularios correspondiente que aparece en [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) para su sistema operativo.

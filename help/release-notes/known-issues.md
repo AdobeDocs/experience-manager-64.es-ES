@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -133,14 +133,14 @@ Si utiliza Microsoft Edge como explorador:
 
 (CQ-4238462)
 
-### Integración con Adobe Sign
+### Integración con Acrobat Sign
 
-* El programador de Adobe Sign deja de funcionar de forma intermitente y, por lo tanto, los formularios pendientes no se mueven al envío. Para resolver el problema, reinicie el **Compatibilidad con el programador de Apache Sling** paquete desde AEM consola web en https://[*server*]:[*puerto*]/system/console/bundles.
+* El programador de Acrobat Sign deja de funcionar de forma intermitente y, por lo tanto, los formularios pendientes no se mueven al envío. Para resolver el problema, reinicie el **Compatibilidad con el programador de Apache Sling** paquete desde AEM consola web en https://[*server*]:[*puerto*]/system/console/bundles.
 
 ### Creación adaptativa de Forms
 
 * El componente Gráfico de los formularios adaptables ocupa más espacio del que ocupa normalmente.
 * Se devuelve una excepción al guardar propiedades para formularios adaptables, fragmentos de formularios adaptables o comunicaciones interactivas en la interfaz de usuario de Forms Manager.
 * El número máximo especificado de caracteres para un cuadro de texto del formulario adaptable no se acepta en los dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
-* Cuando se envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Apple iOS 15.1 proporciona una solución para el problema.
+* Cuando envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces, el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Apple iOS 15.1 proporciona una solución para el problema.
 

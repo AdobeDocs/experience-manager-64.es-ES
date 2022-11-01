@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4108'
 ht-degree: 2%
@@ -185,9 +185,9 @@ Los formularios adaptables requieren Enviar acciones para procesar los datos esp
 * Puede escribir una acción de envío personalizada si las acciones de envío predeterminadas no cumplen con su caso de uso. Para obtener más información, consulte [Escritura de una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md).
 * Incluya validaciones del lado del servidor para evitar el envío de datos no válidos.
 
-Puede aprovechar la experiencia de varios signos de Adobe Sign en los formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Uso de Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
+Puede aprovechar la experiencia de varios signos de Acrobat Sign en los formularios adaptables. Tenga en cuenta lo siguiente al configurar Acrobat Sign en formularios adaptables. Para obtener más información, consulte [Uso de Acrobat Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
 
-* El formulario adaptable habilitado para Adobe Sign solo se envía después de que todos los firmantes hayan firmado el formulario. Forms aparece en estado de firma pendiente hasta que todos los firmantes firman el formulario.
+* El formulario adaptable habilitado para Acrobat Sign solo se envía después de que todos los firmantes hayan firmado el formulario. Forms aparece en estado de firma pendiente hasta que todos los firmantes firman el formulario.
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el envío.
 * Configure la experiencia de firma secuencial o paralela, según corresponda.
 

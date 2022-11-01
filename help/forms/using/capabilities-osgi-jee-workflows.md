@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 20%
@@ -153,7 +153,7 @@ Los flujos de trabajo de AEM centrados en formularios en OSGi y AEM Forms JEE Wo
    <td>Compatible</td> 
   </tr>
   <tr>
-   <td>Firma electrónica (Adobe Sign)</td> 
+   <td>Firma electrónica (Acrobat Sign)</td> 
    <td>Admitido <sup>[1]</sup></td> 
    <td>Admitido <sup>[5]</sup></td> 
   </tr>
@@ -325,7 +325,7 @@ Los flujos de trabajo de AEM centrados en formularios en OSGi y AEM Forms JEE Wo
 1. Es necesario acceder a AEM Bandeja de entrada para ejecutar y supervisar AEM Forms OSGi AEM Workflows y HTML Workspace para ejecutar y supervisar los flujos de trabajo de AEM Forms JEE.
 1. Los servicios de documentos nativos de AEM Forms están disponibles para los flujos de trabajo AEM centrados en formularios en OSGi y AEM Forms en los flujos de trabajo JEE. AEM flujo de trabajo utiliza servicios de documentos nativos para flujos de trabajo AEM centrados en formularios en los flujos de trabajo OSGi y AEM Forms JEE (Process Management).
 1. Los flujos de trabajo de AEM Forms JEE solo pueden procesar un formulario adaptable. No admite la representación de un formulario adaptable como documento PDF.
-1. AEM formularios JEE Los flujos de trabajo no tienen un paso independiente para Adobe Sign. Se necesita un formulario adaptable habilitado para Adobe Sign para AEM formularios JEE Workflows. Para obtener más información, consulte [Documentación de Adobe Sign](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. AEM formularios JEE Los flujos de trabajo no tienen un paso independiente para Acrobat Sign. Se necesita un formulario adaptable habilitado para Acrobat Sign para AEM formularios JEE Workflows. Para obtener más información, consulte [Documentación de Acrobat Sign](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. Puede usar la variable [Invocar el servicio del modelo de datos del formulario](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) paso para invocar un servicio Web y publicar o recuperar datos de una aplicación de terceros.
 1. Puede usar la variable [Enviar correo electrónico](/help/forms/using/aem-forms-workflow-step-reference.md#send-email-step) paso para enviar correos electrónicos.
 

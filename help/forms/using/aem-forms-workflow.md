@@ -1,18 +1,18 @@
 ---
 title: Flujo de trabajo centrado en Forms en OSGi
-seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Utilice AEM Forms Workflow para automatizar y crear rápidamente revisiones y aprobaciones, para iniciar document services (por ejemplo, para convertir un documento de PDF a otro formato), integrar con el flujo de trabajo de firma de Adobe Sign, etc.
-seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
+seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Acrobat Sign with AEM workflows
+description: Utilice AEM Forms Workflow para automatizar y crear rápidamente revisiones y aprobaciones, para iniciar document services (por ejemplo, para convertir un documento de PDF a otro formato), integrar con el flujo de trabajo de firma de Acrobat Sign, etc.
+seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Acrobat Sign signature workflow, and more.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '2866'
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -26,13 +26,13 @@ Junto con los flujos de trabajo de revisión y aprobación para audiencias inter
 
 ## Introducción al flujo de trabajo centrado en Forms en OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Puede utilizar AEM Flujos de trabajo para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar servicios de documento, integrarse con el flujo de trabajo de firmas de Adobe Sign y operaciones similares. Por ejemplo, en el procesamiento de la solicitud de tarjeta de crédito, el empleado deja los flujos de trabajo de aprobación y guarda un formulario como documento de PDF. Además, estos flujos de trabajo se pueden utilizar dentro de una organización o entre firewall de redes.
+Puede utilizar AEM Flujos de trabajo para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar document services, integrarse con el flujo de trabajo de firmas de Acrobat Sign y operaciones similares. Por ejemplo, en el procesamiento de la solicitud de tarjeta de crédito, el empleado deja los flujos de trabajo de aprobación y guarda un formulario como documento de PDF. Además, estos flujos de trabajo se pueden utilizar dentro de una organización o entre firewall de redes.
 
 Con el flujo de trabajo centrado en formularios en OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la funcionalidad de administración de procesos completa en la pila JEE. El desarrollo y la administración de flujos de trabajo utilizan las funciones conocidas de los flujo de trabajo de AEM y la bandeja de entrada AEM. Los flujos de trabajo forman la base de la automatización de los procesos empresariales en el mundo real que abarcan varios sistemas de software, redes, departamentos e incluso organizaciones.
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o [gestión de correspondencia](/help/forms/using/cm-overview.md) carta. Con estas funciones mejoradas AEM Workflow, AEM Forms ofrece dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál funciona para usted. Consulte una [comparación](/help/forms/using/capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte, [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Flujo de trabajo centrado en Forms en OSGi se amplía [Bandeja de entrada AEM](/help/sites-authoring/inbox.md) y proporciona componentes adicionales (pasos) para AEM editor de flujo de trabajo para añadir compatibilidad con flujos de trabajo centrados en AEM Forms. La Bandeja de entrada de AEM extendida tiene funcionalidades similares a las de [AEM Forms Workspace](/help/forms/using/introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en las personas (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar [document services](/help/sites-developing/workflows-step-ref.md)Operaciones relacionadas con (por ejemplo, Generar PDF) y documentos de firma electrónica (Adobe Sign).
+Flujo de trabajo centrado en Forms en OSGi se amplía [Bandeja de entrada AEM](/help/sites-authoring/inbox.md) y proporciona componentes adicionales (pasos) para AEM editor de flujo de trabajo para añadir compatibilidad con flujos de trabajo centrados en AEM Forms. La Bandeja de entrada de AEM extendida tiene funcionalidades similares a las de [AEM Forms Workspace](/help/forms/using/introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en las personas (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar [document services](/help/sites-developing/workflows-step-ref.md)Operaciones relacionadas con (por ejemplo, Generar PDF) y documentos de firma electrónica (Acrobat Sign).
 
 En el siguiente diagrama se describe el procedimiento de extremo a extremo para crear, ejecutar y monitorizar un flujo de trabajo centrado en Forms en OSGi.
 
@@ -43,7 +43,7 @@ En el siguiente diagrama se describe el procedimiento de extremo a extremo para 
 * Un flujo de trabajo es una representación de un proceso empresarial real. Tenga preparados su proceso empresarial real y la lista de los participantes del proceso. Además, mantenga el material colateral (formularios adaptables, documentos del PDF, etc.) listo antes de empezar a crear un flujo de trabajo.
 * Un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM y ayudan a informar sobre el progreso del flujo de trabajo. Divida el proceso empresarial en fases lógicas.
 * Puede configurar el paso Asignar tarea del flujo de trabajo de AEM para enviar notificaciones por correo electrónico a los usuarios o a los usuarios asignados. [habilita las notificaciones por correo electrónico](#configure-email-service).
-* Un flujo de trabajo también puede utilizar Adobe Sign para las firmas digitales. Si planea utilizar Adobe Sign en un flujo de trabajo, la variable [configuración de Adobe Sign para AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) antes de utilizarla en un flujo de trabajo.
+* Un flujo de trabajo también puede utilizar Acrobat Sign para firmas digitales. Si planea utilizar Acrobat Sign en un flujo de trabajo, la variable [configuración de Acrobat Sign para AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) antes de utilizarla en un flujo de trabajo.
 
 ## Cree un modelo del flujo de trabajo {#create-a-workflow-model}
 
@@ -57,11 +57,11 @@ AEM proporciona una interfaz de usuario intuitiva para crear un modelo del flujo
 
 ### Creación de un modelo para un flujo de trabajo de aprobación y revisión {#create-a-model-for-an-approval-and-review-workflow}
 
-El flujo de trabajo de aprobación y revisión corresponde a las tareas que requieren intervención humana para tomar decisiones. En el siguiente ejemplo se crea un modelo del flujo de trabajo para una solicitud de préstamo hipotecario que debe rellenar un agente bancario de la oficina principal. Una vez completada la solicitud, se envía para su aprobación. Posteriormente, la solicitud aprobada se envía al solicitante para que la firme mediante Adobe Sign.
+El flujo de trabajo de aprobación y revisión corresponde a las tareas que requieren intervención humana para tomar decisiones. En el siguiente ejemplo se crea un modelo del flujo de trabajo para una solicitud de préstamo hipotecario que debe rellenar un agente bancario de la oficina principal. Una vez completada la solicitud, se envía para su aprobación. Posteriormente, la solicitud aprobada se envía al solicitante para que la firme utilizando Acrobat Sign.
 
 A continuación, puede encontrar el ejemplo como paquete adjunto. Importe e instale el ejemplo mediante el administrador de paquetes. También puede realizar los siguientes pasos para crear manualmente el modelo del flujo de trabajo para la solicitud:
 
-En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecaria que rellenará un agente bancario de la oficina principal. Una vez completada, la solicitud se envía para su aprobación. Posteriormente, la solicitud aprobada se envía al cliente para que la firme mediante Adobe Sign. Puede importar e instalar el ejemplo mediante el administrador de paquetes.
+En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecaria que rellenará un agente bancario de la oficina principal. Una vez completada, la solicitud se envía para su aprobación. Posteriormente, la aplicación aprobada se envía al cliente para que la firme mediante Acrobat Sign. Puede importar e instalar el ejemplo mediante el administrador de paquetes.
 
 [Obtener archivo](assets/example-mortgage-loan-application.zip)
 

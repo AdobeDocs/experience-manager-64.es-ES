@@ -8,10 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 73%
+ht-degree: 68%
 
 ---
 
@@ -21,7 +21,7 @@ Obtenga información sobre cómo seleccionar un usuario o grupo para un flujo de
 
 En las organizaciones grandes, existen requisitos a la hora de seleccionar usuarios de forma dinámica para un proceso; por ejemplo, cuando se selecciona un agente de campo para servir a un cliente en función de la proximidad de ese agente al cliente. En este tipo de escenarios, el agente se selecciona dinámicamente.
 
-Asignación de tareas y pasos de Adobe Sign a [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) proporciona opciones para seleccionar dinámicamente un usuario. Puede utilizar paquetes ECMAScript u OSGi para seleccionar dinámicamente un usuario asignado para el paso Asignar tarea o para seleccionar firmantes para el paso Firmar documento.
+Asignación de tareas y pasos de Acrobat Sign a [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) proporciona opciones para seleccionar dinámicamente un usuario. Puede utilizar paquetes ECMAScript u OSGi para seleccionar dinámicamente un usuario asignado para el paso Asignar tarea o para seleccionar firmantes para el paso Firmar documento.
 
 ## Utilizar ECMAScript para seleccionar dinámicamente un usuario o un grupo {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -73,11 +73,11 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-El siguiente ejemplo de ECMAScript selecciona dinámicamente un usuario asignado para el paso de Adobe Sign. Antes de utilizar el siguiente script, asegúrese de que la información de los usuarios (direcciones de correo electrónico y números de teléfono) que se menciona en este es correcta. Si la información de los usuarios que se menciona en el script es incorrecta, puede producirse un error durante el proceso relacionado.
+El siguiente ejemplo de ECMAScript selecciona dinámicamente un usuario asignado para el paso de Acrobat Sign. Antes de utilizar el siguiente script, asegúrese de que la información de los usuarios (direcciones de correo electrónico y números de teléfono) que se menciona en este es correcta. Si la información de los usuarios que se menciona en el script es incorrecta, puede producirse un error durante el proceso relacionado.
 
 >[!NOTE]
 >
->Al usar ECMAScript para Adobe Sign, el script debe estar ubicado en el repositorio crx en /apps/fd/workflow/scripts/adobesign/, y debe tener una función denominada getAdobeSignRecipients para devolver una lista de los usuarios.
+>Al usar ECMAScript para Acrobat Sign, el script debe estar ubicado en el repositorio crx en /apps/fd/workflow/scripts/adobesign/, y debe tener una función denominada getAdobeSignRecipients para devolver una lista de los usuarios.
 
 ```
 function getAdobeSignRecipients() {
@@ -116,7 +116,7 @@ function getAdobeSignRecipients() {
 
 ## Usar la interfaz de Java para elegir dinámicamente un usuario o un grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Puede usar la variable [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java para elegir dinámicamente un usuario o un grupo para Adobe Sign y para asignar pasos de tarea. Puede crear un paquete OSGi que use el [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java e impleméntelo en el servidor de AEM Forms. Hace que la opción esté disponible para su selección en los componentes Asignar tarea y Adobe Sign de AEM flujo de trabajo.
+Puede usar la variable [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java para elegir dinámicamente un usuario o un grupo para Acrobat Sign y para asignar pasos de tarea. Puede crear un paquete OSGi que use el [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java e impleméntelo en el servidor de AEM Forms. Hace que la opción esté disponible para su selección en los componentes Asignar tarea y Acrobat Sign de AEM flujo de trabajo.
 
 Debe [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [tarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar el ejemplo de código que se muestra a continuación. Agregue estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
 
@@ -232,11 +232,11 @@ Debe [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-f
 
 1. Cargue el paquete en un servidor de AEM Forms. Puede utilizar AEM Administrador de paquetes para importar el paquete en el servidor de AEM Forms.
 
-Una vez importado el paquete, la opción de elegir la interfaz de Java para seleccionar dinámicamente un usuario o un grupo estará disponible para los pasos de Adobe Sign y Asignar tarea.
+Una vez importado el paquete, la opción de elegir la interfaz Java para seleccionar dinámicamente un usuario o un grupo está disponible en los pasos de Acrobat Sign y Asignar tarea.
 
 ### Código Java de ejemplo para elegir dinámicamente un usuario o un grupo {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-El siguiente código de ejemplo elige dinámicamente un usuario asignado para el paso de Adobe Sign. Este código se utiliza en un paquete OSGi. Antes de usar el código que se muestra a continuación, asegúrese de que la información de los usuarios (direcciones de correo electrónico y números de teléfono) que se menciona en este es correcta. Si la información de los usuarios mencionada en el código es incorrecta, puede producirse un error durante el proceso relacionado.
+El siguiente código de ejemplo elige dinámicamente un usuario asignado para el paso de Acrobat Sign. Este código se utiliza en un paquete OSGi. Antes de usar el código que se muestra a continuación, asegúrese de que la información de los usuarios (direcciones de correo electrónico y números de teléfono) que se menciona en este es correcta. Si la información de los usuarios mencionada en el código es incorrecta, puede producirse un error durante el proceso relacionado.
 
 ```java
 /*************************************************************************

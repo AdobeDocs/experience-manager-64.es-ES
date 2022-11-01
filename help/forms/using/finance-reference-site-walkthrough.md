@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '9201'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Además, consulte la siguiente documentación para obtener más información sob
 * [Editor de reglas](/help/forms/using/rule-editor.md)
 * [Temáticas](/help/forms/using/themes.md)
 * [Integración de datos de ](/help/forms/using/data-integration.md)
-* [Uso de Adobe Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
+* [Uso de Acrobat Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
 * [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md)
 
 ### Véalo usted mismo {#a-see-it-yourself}
@@ -159,7 +159,7 @@ We.Finance recibe la solicitud de tarjeta de crédito presentada por Sarah. Se a
 
 Cuando Sarah rellena y envía la solicitud de tarjeta de crédito, se crea un déclencheur de Forms Workflow y una tarea en la bandeja de entrada de AEM de Gloria.
 
-AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar document services, integrarse con el flujo de trabajo de firmas de Adobe Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar document services, integrarse con el flujo de trabajo de firmas de Acrobat Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
 La siguiente imagen muestra el flujo de trabajo AEM que procesa la aplicación de tarjeta de crédito y genera una salida de PDF de la aplicación.
 
@@ -404,7 +404,7 @@ Además, consulte la siguiente documentación para obtener más información ace
 * [Editor de reglas](/help/forms/using/rule-editor.md)
 * [Temáticas](/help/forms/using/themes.md)
 * [Integración de datos de ](/help/forms/using/data-integration.md)
-* [Uso de Adobe Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
+* [Uso de Acrobat Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
 * [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Véalo usted mismo {#see-it-yourself-6}
@@ -433,7 +433,7 @@ La tarea se reasigna a Gloria. Revisa el ID adjunto y aprueba la solicitud.
 
 Cuando Sarah rellena y envía la solicitud de hipoteca, se crea un déclencheur Forms Workflow y una tarea en la bandeja de entrada de la AEM de Gloria. A medida que Gloria revisa la aplicación y solicita más información, la tarea se asigna a John Doe. Cuando John Doe adjunta el ID y vuelve a enviar la aplicación, se asigna a Gloria. Esto se define en el flujo de trabajo AEM asociado con la aplicación hipotecaria.
 
-AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar document services, integrarse con el flujo de trabajo de firmas de Adobe Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms en OSGi proporciona flujos de trabajo centrados en formularios que le permiten crear flujos de trabajo adaptables basados en formularios. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar document services, integrarse con el flujo de trabajo de firmas de Acrobat Sign, etc. Para obtener más información, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
 La siguiente imagen muestra el flujo de trabajo de AEM asociado con la aplicación de hipoteca.
 
@@ -718,7 +718,7 @@ Además, consulte la siguiente documentación para obtener más información sob
 * [Editor de reglas](/help/forms/using/rule-editor.md)
 * [Temáticas](/help/forms/using/themes.md)
 * [Integración de datos de ](/help/forms/using/data-integration.md)
-* [Uso de Adobe Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
+* [Uso de Acrobat Sign en formularios adaptables](/help/forms/using/working-with-adobe-sign.md)
 * [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Véalo usted mismo {#see-it-yourself-12}

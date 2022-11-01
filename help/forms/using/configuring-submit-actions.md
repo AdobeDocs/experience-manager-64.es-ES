@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 37%
@@ -22,7 +22,7 @@ ht-degree: 37%
 
 Una acción de envío se activa cuando un usuario hace clic en el botón Enviar de un formulario adaptable. Puede configurar la acción de envío en el formulario adaptable. Los formularios adaptables proporcionan algunas acciones de envío listas para usar. Puede copiar y ampliar las acciones de envío predeterminadas para crear su propia acción de envío. Sin embargo, según sus necesidades, puede escribir y registrar su propia acción de envío para procesar los datos en el formulario enviado.
 
-Cuando un formulario se rellena previamente o se envía, los datos enviados se redirigen a través de AEM para el tratamiento de datos en formatos intermedios. Los datos no se guardan en una instancia de AEM, excepto cuando el formulario adaptable utiliza Adobe Sign, verifica, el borrador o el envío del portal de formularios o AEM Flujos de trabajo
+Cuando un formulario se rellena previamente o se envía, los datos enviados se redirigen a través de AEM para el tratamiento de datos en formatos intermedios. Los datos no se guardan en una instancia de AEM, excepto cuando el formulario adaptable utiliza Acrobat Sign, verifica, el borrador o el envío del portal de formularios o AEM Flujos de trabajo
 
 Puede configurar una acción de envío en la variable **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable, en la barra lateral.
 

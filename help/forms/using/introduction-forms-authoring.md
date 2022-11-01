@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3045'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -109,8 +109,8 @@ La barra lateral consta de los siguientes exploradores:
    <th><strong>Funcionalidad</strong></th> 
   </tr> 
   <tr> 
-   <td>Bloque de Adobe Sign</td> 
-   <td>Agrega un bloque de texto con marcadores de posición para que los campos se completen al firmar mediante Adobe Sign.</td> 
+   <td>Bloque de Acrobat Sign</td> 
+   <td>Agrega un bloque de texto con marcadores de posición para que los campos se rellenen al firmar con Acrobat Sign.</td> 
   </tr> 
   <tr> 
    <td>Botón</td> 
@@ -154,7 +154,7 @@ La barra lateral consta de los siguientes exploradores:
   </tr> 
   <tr> 
    <td>Archivo adjunto</td> 
-   <td><p>Agrega un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario.</p> <p><strong>Nota: </strong>El componente Archivo adjunto es compatible con un conjunto predefinido de formatos de archivo en formularios adaptables habilitados para Adobe Sign. Para obtener más información, consulte <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formatos de archivo compatibles</a>.</p> </td> 
+   <td><p>Agrega un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario.</p> <p><strong>Nota: </strong>El componente Archivo adjunto es compatible con un conjunto predefinido de formatos de archivo en formularios adaptables habilitados para Acrobat Sign. Para obtener más información, consulte <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Formatos de archivo compatibles</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Lista de archivos adjuntos</td> 

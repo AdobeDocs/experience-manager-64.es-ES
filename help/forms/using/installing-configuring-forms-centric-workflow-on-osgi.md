@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 
 Las empresas recopilan y procesan datos de varios formularios, sistemas back-end y otras fuentes de datos. El procesamiento de datos implica procedimientos de revisión y aprobación, tareas repetitivas y archiving de datos. Por ejemplo, al revisar un formulario y convertirlo en un documento de PDF. Cuando se realiza manualmente, las tareas repetitivas pueden tardar mucho tiempo y recursos.
 
-Puede usar [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo pueden ayudarle a automatizar los flujos de trabajo de revisión y aprobación, los flujos de trabajo de procesos empresariales y otras tareas repetitivas. Estos flujos de trabajo también ayudan a procesar documentos (crear, ensamblar, distribuir y archivar documentos de PDF, agregar firmas digitales para limitar el acceso a documentos, descodificar formularios con códigos de barras, etc.) y utilizar el flujo de trabajo de firma de Adobe Sign con formularios y documentos.
+Puede usar [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo pueden ayudarle a automatizar los flujos de trabajo de revisión y aprobación, los flujos de trabajo de procesos empresariales y otras tareas repetitivas. Estos flujos de trabajo también ayudan a procesar documentos (crear, ensamblar, distribuir y archivar documentos de PDF, agregar firmas digitales para limitar el acceso a documentos, descodificar formularios con códigos de barras, etc.) y utilizar el flujo de trabajo de firma de Acrobat Sign con formularios y documentos.
 
 Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o una comunicación interactiva. La funcionalidad se incluye en el paquete de complementos de AEM Forms.
 
@@ -188,13 +188,13 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
    >
    >Para desactivar la caché, establezca el valor del campo Número de formularios adaptables en **0**. La caché se restablece y todos los formularios y documentos se eliminan de ella cuando se desactiva o cambia su configuración.
 
-#### Configuración de Adobe Sign {#configure-adobe-sign}
+#### Configuración de Acrobat Sign {#configure-adobe-sign}
 
-Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
+Acrobat Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
-En un flujo de trabajo típico centrado en Adobe Sign y Forms en OSGi, un usuario rellena un formulario adaptable para solicitar un servicio. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, se inicia un flujo de trabajo de aprobación/rechazo. El proveedor de servicios revisa la aplicación en AEM Bandeja de entrada y utiliza Adobe Sign para firmar electrónicamente la aplicación. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
+En un flujo de trabajo típico centrado en Acrobat Sign y Forms en OSGi, un usuario rellena un formulario adaptable para solicitar un servicio. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, se inicia un flujo de trabajo de aprobación/rechazo. El proveedor de servicios revisa la aplicación en AEM Bandeja de entrada y utiliza Acrobat Sign para firmar electrónicamente la aplicación. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Acrobat Sign con AEM Forms.
 
-Para usar Adobe Sign con AEM Forms, [Integración de Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+Para usar Acrobat Sign con AEM Forms, [Integración de Acrobat Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Pasos siguientes {#next-steps}
 

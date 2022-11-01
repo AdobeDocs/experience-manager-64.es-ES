@@ -10,7 +10,7 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 86%
@@ -44,7 +44,7 @@ Al seleccionar un formulario y publicarlo, también se publican sus activos y re
 Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
 
 * Plantillas de formulario adaptable editables
-* Configuraciones del Cloud Service para los modelos de datos de Adobe Sign, Typekit, reCAPTCHA y Form
+* Configuraciones del Cloud Service para los modelos de datos de Acrobat Sign, Typekit, reCAPTCHA y Form
 * Otras configuraciones de Cloud Services solo se activan si el usuario tiene permisos de administrador.
 * Personalizaciones. Entre ellas se incluyen, entre otras:
 

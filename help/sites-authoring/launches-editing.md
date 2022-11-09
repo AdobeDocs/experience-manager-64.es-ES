@@ -1,23 +1,22 @@
 ---
 title: Edición de lanzamientos
-seo-title: Edición de lanzamientos
-description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
-seo-description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
+seo-title: Editing Launches
+description: Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas.
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 851bcbbe-1dff-457f-a3bc-468ace9b4ac4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 99%
 
 ---
-
 
 # Edición de lanzamientos{#editing-launches}
 
@@ -25,7 +24,7 @@ ht-degree: 99%
 
 Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
 
-1. Acceda a [Lanzamiento desde las referencias (consola de sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
+1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a página** para abrir la página para editarla.
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
@@ -44,7 +43,7 @@ Puede realizar cambios, del mismo modo que puede editar una Live Copy estándar;
 
 Consulte [Cambiar el contenido de una Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obtener más información.
 
-## Comparar una página de lanzamiento con su página de origen  {#comparing-a-launch-page-to-its-source-page}
+## Comparar una página de lanzamiento con su página de origen {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
@@ -52,13 +51,13 @@ Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias*
 1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione un lanzamiento específico y la opción **Comparar con el origen**:
 
-   ![chlimage_1-96](assets/chlimage_1-96.png)
+   ![imagen_1-96](assets/chlimage_1-96.png)
 
 1. Las dos páginas (lanzamiento y origen) se abrirán en paralelo.
 
    Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-authoring/page-diff.md).
 
-## Cambiar las páginas de origen utilizadas  {#changing-the-source-pages-used}
+## Cambiar las páginas de origen utilizadas {#changing-the-source-pages-used}
 
 Puede añadir en cualquier momento las páginas en el rango de páginas de origen para el lanzamiento, o eliminarlas: 
 
@@ -79,7 +78,7 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
    >
    >Para añadir páginas a un lanzamiento, deben estar bajo una raíz de idioma común; es decir, dentro de un solo sitio.
 
-## Editar una configuración de lanzamiento  {#editing-a-launch-configuration}
+## Editar una configuración de lanzamiento {#editing-a-launch-configuration}
 
 Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
@@ -96,11 +95,10 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
 
-   Consulte [Lanzamientos: orden de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener información sobre la finalidad y la interacción de los campos **Fecha de inicio** y **Producción lista**.
+   Consulte [Lanzamientos: el orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener información sobre el propósito y la interacción de los campos **Fecha de lanzamiento** y **Listo para producción**.
 
-## Detección del estado de lanzamiento de una página  {#discovering-the-launch-status-of-a-page}
+## Detección del estado de lanzamiento de una página {#discovering-the-launch-status-of-a-page}
 
 Se muestra el estado cuando se selecciona un lanzamiento específico en la ficha de referencias (consulte [Lanzamientos en las referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
-

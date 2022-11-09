@@ -1,21 +1,21 @@
 ---
 title: Contenido asociado
-seo-title: Contenido asociado
+seo-title: Associated Content
 description: El contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
-seo-description: El contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
+seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 22%
+source-wordcount: '229'
+ht-degree: 54%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 22%
 >
 >Algunas funciones de fragmento de contenido requieren la aplicación de [AEM 6.4 Service Pack 2 (6.4.2.0) o posterior](/help/release-notes/sp-release-notes.md).
 
-El contenido asociado proporciona la conexión para que los recursos (es decir,) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), a la vez que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
+El contenido asociado proporciona la conexión para que los recursos (es decir,) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), mientras que también ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
 ## Adición de contenido asociado {#adding-associated-content}
 
@@ -33,16 +33,16 @@ El contenido asociado proporciona la conexión para que los recursos (es decir,)
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
-Para hacer la asociación, primero debe [agregar sus recursos de medios a una colección](managing-collections-touch-ui.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
+Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](managing-collections-touch-ui.md#adding-assets-to-a-collection). Una vez hecho esto, puede:
 
-1. Abra el fragmento y seleccione **[!UICONTROL Contenido asociado]** en el panel lateral.
+1. Abrir el fragmento y seleccionar **[!UICONTROL Contenido asociado]** en el panel lateral.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
 1. Seleccione **[!UICONTROL Asociar contenido]** o **[!UICONTROL Asociar colección]** (según corresponda, dependiendo de si alguna colección ya se ha asociado o no).
 1. Seleccione la colección requerida.
 
-   Si lo desea, puede añadir el fragmento a la colección seleccionada; esto ayuda al seguimiento.
+   Si lo desea, puede agregar el fragmento a la colección seleccionada; esto ayuda al seguimiento.
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
@@ -52,9 +52,9 @@ Para hacer la asociación, primero debe [agregar sus recursos de medios a una co
 
 ## Edición de contenido asociado {#editing-associated-content}
 
-Una vez asociada una colección, puede:
+Una vez asociada una colección, puede hacer lo siguiente:
 
-* **** Elimine la asociación.
-* **Agregue** recursos a la colección.
+* **Quitar** la asociación.
+* **Agregar recursos** a una colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.

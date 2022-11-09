@@ -1,21 +1,21 @@
 ---
 title: 'Metadatos: Propiedades del fragmento'
-seo-title: 'Metadatos: Propiedades del fragmento'
+seo-title: Metadata - Fragment Properties
 description: Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido.
-seo-description: Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido.
+seo-description: You can view and edit the metadata (properties) for content fragments.
 uuid: 2744610b-215a-4ee8-893e-e167376f9df5
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
-feature: Fragmentos de contenido, metadatos
+feature: Content Fragments,Metadata
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 10%
+source-wordcount: '112'
+ht-degree: 76%
 
 ---
 
@@ -29,17 +29,17 @@ ht-degree: 10%
 
 Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
 
-1. En la consola **[!UICONTROL Assets]** vaya a la ubicación del fragmento de contenido.
-1. O bien:
+1. En la consola **[!UICONTROL Recursos]** vaya a la ubicación del fragmento de contenido.
+1. O bien, haga lo siguiente:
 
    * Seleccione [Ver propiedades para abrir los cuadros de diálogo](managing-assets-touch-ui.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
-   * Abra el fragmento de contenido [para editar](content-fragments-managing.md#opening-the-fragment-editor) y, a continuación, seleccione **[!UICONTROL Metadatos]** en el panel lateral.
+   * Abra el [fragmento de contenido para editar](content-fragments-managing.md#opening-the-fragment-editor)y, a continuación, seleccione **[!UICONTROL Metadatos]** del panel lateral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. La pestaña **[!UICONTROL Básico]** proporciona opciones que puede ver o editar:
 
-   * Miniatura, para la cual puede **Cargar imagen**
+   * Miniatura, para la que puede **Cargar imagen**
    * **Título**
    * **Descripción**
    * **Etiquetas**

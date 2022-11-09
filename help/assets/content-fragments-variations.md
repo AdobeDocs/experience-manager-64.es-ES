@@ -1,21 +1,21 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos'
-seo-title: 'Variaciones: Crear contenido de fragmentos'
+seo-title: Variations - Authoring Fragment Content
 description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
-seo-description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 15%
+source-wordcount: '1738'
+ht-degree: 85%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 15%
 >
 >Algunas funciones de fragmento de contenido requieren la aplicación de [AEM 6.4 Service Pack 2 (6.4.2.0) o posterior](../release-notes/sp-release-notes.md).
 
-[](content-fragments.md#constituent-parts-of-a-content-fragment) Las variaciones son una característica importante de los fragmentos de contenido, ya que le permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
+[Variaciones](content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para su uso en canales o escenarios específicos.
 
-Desde la pestaña **Variations** puede:
+En la pestaña **Variaciones** puede hacer lo siguiente:
 
-* [Introduzca el ](#authoring-your-content) contenido del fragmento
-* [Crear y administrar ](#managing-variations) variaciones del  **** contenido principal
+* [Introducir el contenido](#authoring-your-content) para el fragmento
+* [Crear y administrar variaciones](#managing-variations) del contenido **Principal**
 
 Realizar una serie de otras acciones en función del tipo de datos que se esté editando; por ejemplo:
 
-* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment)  (imágenes)
-* Seleccione [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text) y [Marcado](#markdown) para editar
+* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
+* Seleccionar entre [Texto enriquecido](#rich-text), [Texto sin formato](#plain-text) y [Markdown](#markdown) para editar
 
 * [Cargar contenido](#uploading-content)
 
-* [Ver estadísticas clave](#viewing-key-statistics)  (acerca del texto multilínea)
+* [Ver estadísticas clave](#viewing-key-statistics) (acerca del texto multilínea)
 * [Resumir texto](#summarizing-text)
 
 * [Sincronizar variaciones con contenido principal](#synchronizing-with-master)
@@ -50,14 +50,14 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 ## Creación de contenido {#authoring-your-content}
 
-Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones** se abrirá de forma predeterminada. Aquí puede crear el contenido, para Master o cualquier variación que tenga. Puede hacer lo siguiente:
+Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones** se abrirá de forma predeterminada. Aquí puede crear el contenido, para Principal o cualquier variación que tenga. Puede hacer lo siguiente:
 
-* realice ediciones directamente en la pestaña **Variations**
-* abra el [editor de pantalla completa](#full-screen-editor) para:
+* realice ediciones directamente en la pestaña **Variaciones** 
+* abra el [editor de pantalla completa](#full-screen-editor) a:
 
-   * seleccione [Format](#formats)
-   * consulte más opciones de edición (para el formato [Texto enriquecido](#rich-text))
-   * acceder a un rango de [acciones](#actions)
+   * seleccione el [Formato](#formats)
+   * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
+   * acceder a una amplia gama de [acciones](#actions)
 
 Por ejemplo:
 
@@ -69,7 +69,7 @@ Por ejemplo:
 
 * Edición de un fragmento con contenido estructurado
 
-   Un fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido. Para cualquier campo multilínea, está disponible el [editor de pantalla completa](#full-screen-editor).
+   Un fragmento estructurado contiene varios campos, de varios tipos de datos, que se definieron en el modelo de contenido. Para cualquier campo multilínea, la variable [editor de pantalla completa](#full-screen-editor) está disponible.
 
    ![cfm-6420-16](assets/cfm-6420-16.png)
 
@@ -86,16 +86,16 @@ El editor de pantalla completa proporciona:
 
 ### Acciones {#actions}
 
-Las siguientes acciones también están disponibles (para todos los formatos [](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
+También están disponibles las siguientes acciones (para todas los [formatos](#formats)) cuando el editor de pantalla completa (es decir, texto multilínea) está abierto:
 
-* Seleccione el [formato](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato](#plain-text), [Marcado](#markdown))
+* Seleccione el [format](#formats) ([Texto enriquecido](#rich-text), [Texto sin formato](#plain-text), [Markdown](#markdown))
 * [Mostrar estadísticas de texto](#viewing-key-statistics)
 * [Cargar contenido](#uploading-content)
-* [Sincronizar con Principal](#synchronizing-with-master)  (al editar una variación)
+* [Sincronizar con Principal](#synchronizing-with-master) (al editar una variación)
 * [Resumir texto](#summarizing-text)
-* [](content-fragments-variations.md#annotating-a-content-fragment) Anotar el texto
+* [Anotar](content-fragments-variations.md#annotating-a-content-fragment) su texto
 
-* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment)  (imágenes)
+* [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
 
 ### Formatos {#formats}
 
@@ -125,16 +125,16 @@ La edición de texto enriquecido le permite dar formato:
    * Insertar una tabla
    * Estilo de párrafo: Párrafo, Encabezado 1/2/3
    * [Insertar recursos visuales](#inserting-assets-into-your-fragment)
-   * Búsqueda  
+   * Búsqueda
    * Buscar/Reemplazar
    * Corrector ortográfico
    * [Anotaciones](content-fragments-variations.md#annotating-a-content-fragment)
 
-También se puede acceder a las [acciones](#actions) desde el editor de pantalla completa.
+Las [acciones](#actions) también son accesibles desde el editor de pantalla completa.
 
 ### Texto sin formato {#plain-text}
 
-El texto sin formato permite introducir rápidamente el contenido sin aplicar formato ni marcar la información. También puede abrir el editor de pantalla completa para más [acciones](#actions).
+El texto sin formato permite introducir rápidamente el contenido sin aplicar formato ni marcar la información. También puede abrir el editor de pantalla completa para obtener más [acciones](#actions).
 
 >[!CAUTION]
 >
@@ -144,9 +144,9 @@ El texto sin formato permite introducir rápidamente el contenido sin aplicar fo
 
 >[!NOTE]
 >
->Para obtener información completa, consulte la documentación de [Markdown](content-fragments-markdown.md).
+>Para obtener información completa, consulte la documentación [Markdown](content-fragments-markdown.md).
 
-Esto le permite dar formato al texto mediante markdown. Puede definir:
+Esto le permite dar formato al texto mediante markdown. Puede definir lo siguiente:
 
 * Encabezados
 * Párrafos y saltos de línea
@@ -156,13 +156,13 @@ Esto le permite dar formato al texto mediante markdown. Puede definir:
 * Listas
 * Énfasis
 * Bloques de código
-* La barra invertida se escapa
+* Secuencias de escape de barra invertida
 
-También puede abrir el editor de pantalla completa para más [acciones](#actions).
+También puede abrir el editor de pantalla completa para obtener más [acciones](#actions).
 
 >[!CAUTION]
 >
->Si cambia entre **Texto enriquecido** y **Marcado**, puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
+>Si cambia entre **Texto enriquecido** y **Markdown**, puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 
@@ -172,15 +172,15 @@ Cuando el editor de pantalla completa está abierto, la acción **Estadísticas 
 
 ### Carga de contenido {#uploading-content}
 
-Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto, preparado en un editor externo y añadirlo directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto preparado en un editor externo y añadirlo directamente al fragmento.
 
-### Resumen de texto {#summarizing-text}
+### Texto de resumen {#summarizing-text}
 
 El texto de resumen está diseñado para ayudar a los usuarios a reducir la longitud de su texto a un número predefinido de palabras, manteniendo al mismo tiempo los puntos clave y el significado general.
 
 >[!NOTE]
 >
->A un nivel más técnico, el sistema mantiene las frases que califica como que proporcionan la *mejor relación de densidad de información y singularidad* según algoritmos específicos.
+>A un nivel más técnico, el sistema mantiene las frases que califica como que proporcionan la *mejor relación entre densidad y singularidad de la información* según algoritmos específicos.
 
 >[!CAUTION]
 >
@@ -200,9 +200,7 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >* [Alemán (de) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italiano (it) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Español (es) de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
 >
-
 
 
 1. Seleccione **[!UICONTROL Principal]** o la variación requerida.
@@ -215,13 +213,13 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 1. Especifique el número de palabras objetivo y seleccione **[!UICONTROL Inicio]**:
 1. El texto original se muestra en paralelo con el resumen propuesto:
 
-   * Las oraciones que se eliminen se resaltan en rojo, con huelga.
-   * Haga clic en cualquier oración resaltada para mantenerla en el contenido resumido.
-   * Haga clic en cualquier oración no resaltada para eliminarla.
+   * Las frases que se eliminen se resaltan en rojo y se tachan.
+   * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
+   * Haga clic en cualquier frase no resaltada para que la eliminen.
 
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
-1. Seleccione **[!UICONTROL Resumir]** para confirmar los cambios.
+1. Seleccione **[!UICONTROL Resumen]** para confirmar los cambios.
 
 ### Anotación de un fragmento de contenido {#annotating-a-content-fragment}
 
@@ -229,19 +227,19 @@ Para realizar anotaciones en un fragmento:
 
 1. Seleccione **[!UICONTROL Principal]** o la variación requerida.
 1. Abra el editor de pantalla completa.
-1. Seleccione texto. El icono **[!UICONTROL Anotar]** está disponible.
+1. Seleccione texto. La variable **[!UICONTROL Anotar]** está disponible.
 
    ![cfm-6420-24](assets/cfm-6420-24.png)
 
 1. Se abrirá un cuadro de diálogo: Aquí puede introducir la anotación.
 
-1. Cierre el editor de pantalla completa y **[!UICONTROL Guarde]** el fragmento.
+1. Cierre el editor de pantalla completa y **[!UICONTROL Guardar]** el fragmento.
 
-### Visualización, Edición, Eliminación De Anotaciones {#viewing-editing-deleting-annotations}
+### Visualización, Edición, Eliminación de anotaciones {#viewing-editing-deleting-annotations}
 
 Anotaciones:
 
-* Se indican mediante el resaltado en el texto, tanto en pantalla completa como en modo normal del editor. Los detalles completos de una anotación se pueden ver, editar y/o eliminar haciendo clic en el texto resaltado, que reabrirá el cuadro de diálogo.
+* Se indican mediante el resaltado en el texto, tanto en pantalla completa como en modo normal del editor. Los detalles completos de una anotación se pueden ver, editar o eliminar haciendo clic en el texto resaltado, que reabrirá el cuadro de diálogo.
 
    >[!NOTE]
    >
@@ -249,34 +247,34 @@ Anotaciones:
 
 * Cuando se elimina todo el texto al que se aplicó la anotación, también se elimina la anotación.
 
-* Se puede enumerar y eliminar seleccionando la pestaña **[!UICONTROL Annotations]** en el editor de fragmentos.
+* Se puede enumerar y eliminar seleccionando la pestaña **[!UICONTROL Anotaciones]** en el editor de fragmentos.
 
    ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* Se puede ver y eliminar en [Línea de tiempo](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) para el fragmento seleccionado.
+* Se puede ver y eliminar en [Cronología](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) para el fragmento seleccionado.
 
 ### Inserción de recursos en el fragmento {#inserting-assets-into-your-fragment}
 
-Para facilitar el proceso de creación de fragmentos de contenido, puede añadir [Assets](managing-assets-touch-ui.md) (imágenes) directamente al fragmento.
+Para facilitar el proceso de creación de fragmentos de contenido, puede agregar [Recursos](managing-assets-touch-ui.md) (imágenes) directamente al fragmento.
 
-Se añadirán a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando se utiliza o se hace referencia al fragmento [en una página](/help/sites-authoring/content-fragments.md).
+Se agregarán a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando [se utiliza/se hace referencia al fragmento en una página](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
 >Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
 >
->Sin embargo, el formato del recurso (p. ej., el tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+>Sin embargo, el formato del recurso (p. ej., su tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
 >
->Existen varios métodos para agregar [imágenes](content-fragments.md#fragments-with-visual-assets) al fragmento o página.
+>Hay varios métodos para agregar [imágenes](content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
 1. Coloque el cursor en la posición en la que desee agregar la imagen.
 1. Utilice el icono **[!UICONTROL Insertar recurso]** para abrir el cuadro de diálogo de búsqueda.
 
    ![cf-insertasset-icon](assets/cf-insertasset-icon.png)
 
-1. En el cuadro de diálogo puede:
+1. En el cuadro de diálogo puede hacer lo siguiente:
 
    * vaya al recurso necesario en DAM
    * buscar el recurso en DAM
@@ -297,9 +295,9 @@ Se añadirán a la secuencia de párrafo del fragmento sin ningún formato; el f
 
 ### Creación de una variación {#creating-a-variation}
 
-Las variaciones permiten tomar el contenido **Principal** y variarlo según el propósito (si es necesario).
+Las variaciones le permiten tomar el contenido **principal** y variar según el propósito (si es necesario).
 
-Para crear una nueva variación:
+Para crear una nueva variación, haga lo siguiente:
 
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **[!UICONTROL Variaciones]** en la barra de iconos del panel lateral.
@@ -309,11 +307,11 @@ Para crear una nueva variación:
 
    >[!NOTE]
    >
-   >Al crear una variación nueva, siempre es **Principal** la que se copia, no la que está abierta actualmente.
+   >Al crear una variación nueva, siempre es **Principal** que se copia, no la variación que está abierta actualmente.
 
 ### Edición de una variación {#editing-a-variation}
 
-Puede realizar cambios en el contenido de la variación después de:
+Puede realizar cambios en el contenido de la variación después de lo siguiente:
 
 * [Creación de la variación](#creating-a-variation).
 * Abra un fragmento existente y, a continuación, seleccione la variación necesaria en el panel lateral.
@@ -326,7 +324,7 @@ Para cambiar el nombre de una variación existente:
 
 1. Abra el fragmento y seleccione **[!UICONTROL Variaciones]** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **[!UICONTROL Cambiar nombre]** en la lista desplegable **[!UICONTROL Actions]**.
+1. Seleccione **[!UICONTROL Cambiar nombre]** del menú desplegable **[!UICONTROL Acciones]**.
 
 1. Introduzca el nuevo **[!UICONTROL Título]** o **[!UICONTROL Descripción]** en el cuadro de diálogo resultante.
 
@@ -334,27 +332,27 @@ Para cambiar el nombre de una variación existente:
 
 >[!NOTE]
 >
->Esto solo afecta a la variación **Title**.
+>Esto solo afecta a la variación **Título**.
 
 ### Eliminación de una variación {#deleting-a-variation}
 
-Para eliminar una variación existente:
+Para eliminar una variación existente, haga esto:
 
 1. Abra el fragmento y seleccione **[!UICONTROL Variaciones]** en el panel lateral.
 1. Seleccione la variación requerida.
-1. Seleccione **[!UICONTROL Delete]** en la lista desplegable **[!UICONTROL Actions]**.
+1. Seleccione **[!UICONTROL Eliminar]** del menú desplegable **[!UICONTROL Acciones]**.
 
-1. Confirme la acción **[!UICONTROL Delete]** en el cuadro de diálogo.
+1. Confirme la acción **[!UICONTROL Eliminar]** en el cuadro de diálogo.
 
 >[!NOTE]
 >
 >No puede eliminar **Principal**.
 
-### Sincronización con Master {#synchronizing-with-master}
+### Sincronización con Principal {#synchronizing-with-master}
 
-**** Masteris es una parte integral de un fragmento de contenido y por definición contiene la copia maestra del contenido, mientras que las variaciones contienen las versiones individuales actualizadas y adaptadas de ese contenido. Cuando Master se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
+**Principal** es una parte integral de un fragmento de contenido y por definición contiene la copia principal del contenido, mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando Master se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
 
-Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Master. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
+Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
 >[!CAUTION]
 >
@@ -366,17 +364,17 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 >
 >No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 
-1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que **Master** se ha editado.
+1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que **Principal** se ha editado.
 2. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
 
-   * el selector desplegable **Actions**: **Sincronizar el elemento actual con el maestro**
-   * la barra de herramientas del editor de pantalla completa - **Sincronizar con master**
+   * el selector desplegable **Acciones**, **Sincronizar elemento actual con principal**
+   * la barra de herramientas del editor de pantalla completa: **Sincronizar con principal**
 
-3. Master y la variación se mostrarán en paralelo:
+3. Principal y la variación se mostrarán en paralelo:
 
    * verde indica el contenido añadido (a la variación)
    * rojo indica que el contenido se ha eliminado (de la variación)
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
-4. Seleccione **[!UICONTROL Sincronizar]**, la variación se actualizará y se mostrará.
+4. Seleccione **[!UICONTROL Sincronizar]**, la variación se actualiza y se muestra.

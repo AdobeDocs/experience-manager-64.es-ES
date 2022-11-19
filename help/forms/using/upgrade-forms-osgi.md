@@ -11,9 +11,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '825'
 ht-degree: 9%
 
 ---
@@ -56,7 +56,7 @@ Puede realizar una actualización directa de AEM 6.2 Forms o AEM 6.3 Forms a AEM
       1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
       1. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
    1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
-   1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+   1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
    1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
       También puede descargar el paquete utilizando el enlace directo que aparece en [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) artículo.

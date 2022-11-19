@@ -4,10 +4,10 @@ description: Notas de la versión específicas de los paquetes de correcciones a
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4693'
-ht-degree: 15%
+source-wordcount: '4681'
+ht-degree: 16%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Experience Manager 6.4.8.4 proporciona correcciones para los siguientes pr
 
 * Al editar una carta, el contenido y los enlaces de datos no se muestran en la interfaz de usuario (CQ-4312905).
 
-**Servicios de documento**
+**Servicios de documentos**
 
 * No se pueden ensamblar los PDF después de la actualización [!DNL JAVA] a [!DNL JDK1.8.0_261] (NPR-35761, NPR-35848).
 
@@ -105,7 +105,7 @@ AEM 6.4.8.3 es un paquete de correcciones acumulativas (CFP) que depende de AEM 
 
 En AEM 6.4.8.3, el repositorio integrado (Apache Jackrabbit Oak) se actualiza a la versión 1.8.23.
 
-Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3 proporciona correcciones para los siguientes problemas.
 
@@ -199,7 +199,7 @@ AEM 6.4.8.2 es un paquete de correcciones acumulativas (CFP) que depende de AEM 
 
 En AEM 6.4.8.2, el repositorio integrado (Apache Jackrabbit Oak) se actualiza a la versión 1.8.22.
 
-Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2 proporciona correcciones para los siguientes problemas.
 
@@ -345,7 +345,7 @@ Algunos de los aspectos destacados de la AEM 6.4.8.1 son:
 * Se ha eliminado la integración de Package Share con Adobe Experience Manager.
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.8.21.
 
-Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Para obtener información sobre CFP y otros tipos de versiones, consulte [AEM Actualización de las definiciones del vehículo de lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1 proporciona correcciones a los siguientes problemas.
 
@@ -523,7 +523,7 @@ que copiará los nuevos ajustes preestablecidos de visor en la ubicación /conf.
 
 1. Asegúrese de que ha instalado el AEM Cumulative Fix Pack.
 1. Descargue el paquete de complementos de formularios correspondiente que aparece en [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
-1. Instale el paquete de complementos de formularios como se describe en [Instalación de paquetes de complementos de formularios AEM](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Instale el paquete de complementos de formularios como se describe en [Instalación de paquetes de complementos de formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Instalación del instalador de AEM Forms JEE {#install-aem-forms-jee-installer}
 
@@ -563,7 +563,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado o dejado 
 | Área | Función | Reemplazo | Versión |
 |---|---|---|---|
 | Recursos | Administrar acción de etiqueta para subrecursos | Sin reemplazo | AEM 6.4.2.0 |
-| Integración de Assets y Adobe Creative Cloud | [AEM para uso compartido de la carpeta Creative Cloud](https://docs.adobe.com/content/help/es-ES/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) se introdujo en AEM 6.2 como una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM. Adobe Asset Link, la nueva capacidad de la aplicación Creative Cloud, proporciona experiencia de usuario mejorada y un acceso más eficaz a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no realizará más mejoras en la funcionalidad de uso compartido de carpetas. Aunque la función está incluida en AEM, se recomienda a los clientes utilizar la sustitución. | Adobe Asset Link o aplicación de escritorio. Para obtener más información, consulte el artículo sobre la [integración de AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
+| Integración de Assets y Adobe Creative Cloud | [AEM para uso compartido de la carpeta Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) se introdujo en AEM 6.2 como una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM. Adobe Asset Link, la nueva capacidad de la aplicación Creative Cloud, proporciona experiencia de usuario mejorada y un acceso más eficaz a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no realizará más mejoras en la funcionalidad de uso compartido de carpetas. Aunque la función está incluida en AEM, se recomienda a los clientes utilizar la sustitución. | Adobe Asset Link o aplicación de escritorio. Para obtener más información, consulte el artículo sobre la [integración de AEM Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |
 
 ## Problemas conocidos {#known-issues}
 
@@ -595,4 +595,4 @@ Lista de paquetes de contenido incluidos en AEM 6.4.8.4
 Estos sitios solo están disponibles para los clientes. Si es un cliente y requiere acceso, póngase en contacto con su administrador de cuentas de Adobe.
 
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con atención al cliente](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [Póngase en contacto con atención al cliente](https://experienceleague.adobe.com/docs/customer-one/using/home.html)

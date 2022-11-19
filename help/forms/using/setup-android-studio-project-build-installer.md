@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '590'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pa
    1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
    2. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
 1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
-1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
 La siguiente imagen muestra el contenido extraído del `adobe-lc-mobileworkspace-src-<version>.zip`.

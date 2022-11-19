@@ -1,8 +1,8 @@
 ---
 title: Servicio de administración de usuarios y UGC en AEM Communities
-seo-title: Servicio de administración de usuarios y UGC en AEM Communities
-description: 'Utilice las API para eliminar de forma masiva y exportar de forma masiva contenido generado por el usuario, y para deshabilitar la cuenta de usuario. '
-seo-description: 'Utilice las API para eliminar de forma masiva y exportar de forma masiva contenido generado por el usuario, y para deshabilitar la cuenta de usuario. '
+seo-title: User and UGC Management Service in AEM Communities
+description: Utilice las API para eliminar de forma masiva y exportar de forma masiva contenido generado por el usuario, y para deshabilitar la cuenta de usuario.
+seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
 uuid: f4663825-eac8-4ef5-8253-46875e0cd71d
 contentOwner: mgulati
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 0%
 >
 >El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-AEM Communities expone las API listas para usar para administrar perfiles de usuario y administrar de forma masiva el contenido generado por el usuario (UGC). Una vez habilitado, el servicio **UserUgcManagement** permite que los usuarios privilegiados (administradores de la comunidad y moderadores) deshabiliten los perfiles de usuario y eliminen o exporten de forma masiva UGC para usuarios específicos. Estas API también permiten que los controladores y procesadores de datos de clientes cumplan con las normas generales de protección de datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
+AEM Communities expone las API listas para usar para administrar perfiles de usuario y administrar de forma masiva el contenido generado por el usuario (UGC). Una vez activada, la variable **UserUgcManagement** permite a los usuarios privilegiados (administradores de la comunidad y moderadores) desactivar perfiles de usuario, y eliminar o exportar UGC de forma masiva para usuarios específicos. Estas API también permiten que los controladores y procesadores de datos de clientes cumplan con las normas generales de protección de datos (RGPD) de la Unión Europea y otros mandatos de privacidad inspirados en el RGPD.
 
-Para obtener más información, consulte la página [RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obtener más información, consulte [Página del RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Si ha configurado [Adobe Analytics en el sitio AEM Communities](analytics.md), los datos de usuario capturados se envían al servidor de Adobe Analytics. Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario y cumplir con el RGPD. Para obtener más información, consulte [Envío de solicitudes de acceso y eliminación](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Si ha configurado [Adobe Analytics en AEM Communities](analytics.md) sitio, los datos de usuario capturados se envían al servidor de Adobe Analytics. Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario y cumplir con el RGPD. Para obtener más información, consulte [Envío de solicitudes de acceso y eliminación](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-Para poner estas API en uso, debe habilitar el extremo `/services/social/ugcmanagement` activando el servicio UserUgcManagement. Para activar este servicio, instale el [servlet de ejemplo](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). A continuación, pulse el punto final en la instancia de publicación del sitio de comunidades con los parámetros apropiados mediante una solicitud http, similar a la siguiente:
+Para que estas API se utilicen, debe habilitar la variable `/services/social/ugcmanagement` al activar el servicio UserUgcManagement. Para activar este servicio, instale la variable [servlet de ejemplo](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible en [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). A continuación, pulse el punto final en la instancia de publicación del sitio de comunidades con los parámetros apropiados mediante una solicitud http, similar a la siguiente:
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -53,7 +53,7 @@ Por ejemplo, para exportar el UGC de un usuario llamado Weston McCall, que utili
 
 ## Eliminar el UGC de un usuario {#delete-the-ugc-of-a-user}
 
-**deleteUserUgc(ResourceResolver resourceResolver, usuario de cadena)**  ayuda a eliminar todo el UGC de un usuario del sistema.
+**deleteUserUgc(ResourceResolver resourceResolver, usuario de cadena)** ayuda a eliminar todo el UGC de un usuario del sistema.
 
 * **usuario**: ID autorizado del usuario.
 
@@ -72,7 +72,7 @@ Para las asignaciones de variables de Adobe Analytics que utiliza AEM Communitie
 
 ## Deshabilitar una cuenta de usuario {#disable-a-user-account}
 
-**deleteUserAccount(ResourceResolver resourceResolver, usuario de cadena)**  ayuda a deshabilitar una cuenta de usuario.
+**deleteUserAccount(ResourceResolver resourceResolver, usuario de cadena)** ayuda a deshabilitar una cuenta de usuario.
 
 * **usuario**: ID autorizado del usuario.
 

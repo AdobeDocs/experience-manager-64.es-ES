@@ -2,10 +2,10 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: Utilice el complemento Maven del paquete de contenido para implementar aplicaciones AEM
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 11%
+source-wordcount: '157'
+ht-degree: 9%
 
 ---
 
@@ -19,8 +19,8 @@ La implementación de los paquetes construidos en AEM se realiza mediante el com
 >
 >Para obtener más información, consulte:
 >
->* El artículo [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) de la documentación as a Cloud Service de AEM para saber cómo implementar aplicaciones de AEM.
->* El artículo [AEM Estructura del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) de la documentación as a Cloud Service de AEM para saber cómo estructurar los proyectos AEM modernos.
->* La documentación de [AEM tipo de archivo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) para saber cómo iniciar un nuevo proyecto de AEM con el tipo de archivo.
+>* La variable [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) en la documentación as a Cloud Service de AEM para saber cómo implementar aplicaciones de AEM.
+>* La variable [AEM estructura del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) en la documentación as a Cloud Service de AEM para saber cómo estructurar proyectos AEM modernos.
+>* La variable [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) documentación sobre cómo iniciar un nuevo proyecto de AEM con el tipo de archivo.
 >
 >Los tres documentos se aplican al AEM 6.4.

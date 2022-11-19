@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 354e3fcd747b7b0490599c3b84b8e58dac39ed05
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 10%
 
 ---
@@ -46,4 +46,4 @@ Estos sitios solo están disponibles para los clientes. Si es cliente de y requi
 * [Acceso a productos](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/).
 * Actualizaciones, parches y paquetes de productos para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
-* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

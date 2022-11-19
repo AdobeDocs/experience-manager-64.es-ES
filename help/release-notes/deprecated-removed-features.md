@@ -2,9 +2,9 @@
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 26%
 
 ---
@@ -36,7 +36,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Portal Director | El Portal Director es un conjunto de funciones que permite alojar AEM contenido a través de Portlet en servidores de terceros. Adobe no tiene previsto realizar más mejoras en la función Portal Director en la ubicación que se muestra a continuación. AEM 6.4 tiene el Portal Director incluido, y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que Portal Direct es totalmente compatible mientras esté en desuso. <ul><li>/libs/portal/director</li></ul> | El Adobe no tiene previsto proporcionar un reemplazo. |
 | Componente Portlet | Portlet Components en /foundation/components/portlet permite el alojamiento de portlets JSR en AEM como componentes. Adobe no tiene previsto realizar más mejoras en la función Componente Portlet. AEM 6.4 incluye el componente Portlet, y los clientes que actualicen desde versiones anteriores pueden seguir usándolo tal cual. Tenga en cuenta que Portlet Component sigue siendo totalmente compatible mientras está en desuso. | El Adobe no tiene previsto proporcionar un reemplazo. |
 | Forms | La compatibilidad con el servicio Adobe Central Migration Bridge ha quedado obsoleta, ya que el producto de Adobe Central ya no es compatible. | Sin reemplazo |
-| Forms | Uso obsoleto de JSONObject en Query y OperationOptions. Las siguientes API están en desuso: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Usar la API `IValueMap` |
+| Forms | Uso obsoleto de JSONObject en Query y OperationOptions. Las siguientes API están en desuso: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Utilice la variable `IValueMap` API |
 | Forms | Servicio de puente de migración central obsoleto. | No se ofrece reemplazo. |
 | Assets | La descarga de recursos ha quedado obsoleta a partir de AEM 6.4. |  |
 | Desarrolladores | Biblioteca de cliente guion/guion bajo. El Adobe no tiene previsto seguir manteniendo ni actualizando la biblioteca de cliente de guion/guion bajo incluida como parte de la distribución (Quickstart) | Adobe recomienda a los clientes que aún necesitan Lodash/underscore para su código que lo añadan a su base de código de proyecto. |
@@ -146,13 +146,12 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 ## Funciones eliminadas {#removed-features}
 
-En la tabla siguiente se enumeran las funciones y capacidades que se han eliminado de AEM 6.4. Las versiones anteriores tenían estas capacidades marcadas como
-obsoleto.
+En la tabla siguiente se enumeran las funciones y capacidades que se han eliminado de AEM 6.4. Las versiones anteriores indicaban que estas funciones estaban en desuso.
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] mediante una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] antes se llamaba  [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, póngase en contacto con [Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support). |
-| Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Ahora debe utilizarse el [complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html). |
+| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] uso de una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] anteriormente se denominaba [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, póngase en contacto con [Asistencia al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support). |
+| Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debe usarse ahora. |
 | Componentes-Forms | Captcha de formulario (foundation/components/form/captcha) | Utilice el componente ReCaptcha by Google en su lugar |
 | Componentes | Presentación de diapositivas (foundation/components/slideshow) | Sin reemplazo |
 | Componentes | Flash (foundation/components/flash) | Sin reemplazo |

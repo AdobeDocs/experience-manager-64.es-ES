@@ -8,9 +8,9 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '884'
 ht-degree: 27%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 27%
       + [Desarrollo (genérico)](generic.md)
       + [Desarrollo con Commerce Cloud SAP](sap-commerce-cloud.md)
 + Componentes{#components}
-   + [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+   + [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
    + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [Información general sobre componentes](components.md)
    + [Componentes AEM: conceptos básicos](components-basics.md)

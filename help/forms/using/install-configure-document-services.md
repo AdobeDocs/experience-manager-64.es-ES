@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4249'
 ht-degree: 2%
 
 ---
@@ -390,7 +390,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
    1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
    2. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
 1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
-1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    También puede descargar el paquete a través del vínculo directo enumerado en la [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) artículo.

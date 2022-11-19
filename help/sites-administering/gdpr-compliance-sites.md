@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 54%
+source-wordcount: '832'
+ht-degree: 55%
 
 ---
 
@@ -51,13 +51,13 @@ AEM tiene un [servicio de exclusión de cookies](/help/sites-developing/cookie-o
 
 AEM Sites incluye una integración opcional con Perspectivas mejoradas de Analytics que utiliza funcionalidad dentro del servicio bajo demanda de Adobe Analytics.
 
-Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y el RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y el RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalización mejorada por Target {#enhanced-personalization-by-target}
 
 AEM Sites incluye una integración opcional con Personalización mejorada de Target que utiliza funcionalidad dentro del servicio bajo demanda de Adobe Target.
 
-Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Target, consulte [Adobe Target: Reglamento general de protección de datos](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Para obtener más información sobre la administración de solicitudes de interesados del RGPD relacionadas con Adobe Target, consulte [Adobe Target: Reglamento general de protección de datos](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=es).
 
 ## ContextHub {#contexthub}
 

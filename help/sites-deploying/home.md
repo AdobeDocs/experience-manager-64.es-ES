@@ -4,10 +4,10 @@ seo-title: AEM 6.4 Deploying User Guide
 description: Esta guía abarca todas AEM tareas de implementación, como instalar e implementar AEM.
 seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
 exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
-source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 31%
+source-wordcount: '312'
+ht-degree: 32%
 
 ---
 
@@ -33,20 +33,19 @@ Esta guía abarca todas AEM tareas de implementación, como instalar e implement
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario sobre implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Esta guía le muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos AEM clave
 
 * [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
-* [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
-* [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
+* [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
+* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
+* [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es?lang=en)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
-* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
+* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

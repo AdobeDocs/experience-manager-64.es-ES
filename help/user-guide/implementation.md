@@ -6,10 +6,10 @@ seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 35%
+source-wordcount: '102'
+ht-degree: 31%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 35%
 
 ## Componentes principales para AEM {#core-components-for-aem}
 
-[Utilice los componentes principales ampliables para que los autores puedan crear contenido fácilmente.](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+[Utilice los componentes principales ampliables para que los autores puedan crear contenido fácilmente.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
 ## HTL (lenguaje de plantilla de HTML) para AEM {#htl-for-aem}
 
-[Utilice el lenguaje de plantilla de HTML para desarrollarlo para AEM.](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
+[Utilice el lenguaje de plantilla de HTML para desarrollarlo para AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 
 ## Cloud Manager para AEM {#cloud-manager-for-aem}
 
@@ -33,4 +33,4 @@ ht-degree: 35%
 
 ## Configuración de Dispatcher {#dispatcher-configuration}
 
-[Configure el Dispatcher con AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
+[Configure el Dispatcher con AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)

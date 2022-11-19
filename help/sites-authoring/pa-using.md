@@ -1,22 +1,21 @@
 ---
 title: Visualización de datos de análisis de la página
-seo-title: Visualización de datos de análisis de la página
+seo-title: Seeing Page Analytics Data
 description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
-seo-description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '439'
 ht-degree: 93%
 
 ---
-
 
 # Visualización de datos de análisis de la página{#seeing-page-analytics-data}
 
@@ -76,17 +75,17 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 
 ### Abrir la información del contenido desde Sitios {#opening-content-insights-from-sites}
 
-Abra [Content Insight](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Apertura [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
 1. En la consola de Sitios, seleccione la página en la cual quiera ver la información del contenido.
 1. En la barra de herramientas, haga clic en el icono de análisis y recomendaciones.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Análisis visible desde el editor de páginas (mapa de actividad)  {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el editor de páginas (mapa de actividad) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->Ahora debe utilizarse el [complemento de ActivityMap proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html).
+>La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debe usarse ahora.

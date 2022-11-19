@@ -1,13 +1,13 @@
 ---
 title: Configurar AEM Assets con Brand Portal
-description: 'Obtenga información sobre cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal. '
+description: Obtenga información sobre cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal.
 contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 41%
 
 ---
@@ -76,7 +76,7 @@ Realice los siguientes pasos en la secuencia indicada si configura AEM Assets co
 1. [Obtener un certificado público](#public-certificate)
 1. [Crear [!DNL Adobe I/O] integración](#createnewintegration)
 1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
-1. [Configurar el servicio en la nube](#configure-the-cloud-service)
+1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
 1. [Probar la configuración](#test-integration)
 
 >[!NOTE]
@@ -204,7 +204,7 @@ Asegúrese de haber realizado los siguientes pasos:
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
-### Configurar el servicio en la nube {#configure-the-cloud-service}
+### Configurar el servicio en la nube de  {#configure-the-cloud-service}
 
 Siga estos pasos para crear la configuración del servicio en la nube de Brand Portal:
 
@@ -271,14 +271,14 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >
    >Evite desactivar cualquiera de los agentes de replicación, ya que puede provocar errores en la replicación de algunos de los activos.
    >
-   >Asegúrese de que los cuatro agentes de replicación estén configurados para evitar errores de tiempo de espera. Consulte [solución de problemas en la publicación paralela de Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Asegúrese de que los cuatro agentes de replicación estén configurados para evitar errores de tiempo de espera. Consulte [solución de problemas en la publicación paralela de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal se ha configurado correctamente con la instancia de autor de AEM Assets. Ahora puede:
 
 * [Publicar recursos desde AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Publicar carpetas desde AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicar colecciones desde AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configurar el abastecimiento de recursos](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) permitir a los usuarios de Brand Portal contribuir y publicar recursos en AEM Assets.
+* [Configurar el abastecimiento de recursos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) permitir a los usuarios de Brand Portal contribuir y publicar recursos en AEM Assets.
 
 ## Actualización de la configuración {#upgrade-integration-64}
 

@@ -1,22 +1,21 @@
 ---
 title: Componentes
-seo-title: Componentes
+seo-title: Components
 description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web
-seo-description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
-translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '427'
 ht-degree: 92%
 
 ---
-
 
 # Componentes{#components}
 
@@ -54,15 +53,15 @@ Los componentes se ordenan conforme a distintas categorías denominadas grupos d
 
 La [consola Componentes](/help/sites-authoring/default-components-console.md) le proporciona una descripción general de los grupos de componentes y los componentes proporcionados en la instalación de AEM. Puede ver información clave sobre cada uno de los componentes y su uso.
 
-## Componentes: áreas principales  {#components-major-areas}
+## Componentes: áreas principales {#components-major-areas}
 
 Las páginas siguientes proporcionan vínculos a información adicional e importante sobre los componentes:
 
-* [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de comunidad](/help/communities/overview.md).
+* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se usa un [Sitio de la comunidad](/help/communities/overview.md) se crea.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) : La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
+* [comercio electrónico](/help/sites-administering/ecommerce.md) - La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio utilizado.
 
 ### Configurar componentes {#configuring-components}
 
@@ -70,4 +69,3 @@ Además de los componentes a los que los autores pueden acceder en una instalaci
 
 * Si la página se basa en una plantilla moderna, editable y recomendada, puede [editar la plantilla](/help/sites-authoring/templates.md), habilitar o deshabilitar estas y editar los parámetros de componentes específicos.
 * Si la página está basada en una plantilla estática, puede utilizar el [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitar/deshabilitar estas y editar los parámetros para componentes específicos.
-

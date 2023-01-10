@@ -11,14 +11,14 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
 
 # Guía del usuario de implementación de AEM 6.4 {#deploying}
 
-+ [Guía del usuario sobre implementación](home.md)
++ [Guía del usuario de implementación](home.md)
 + Introducción a la plataforma AEM {#introduction}
    + [Introducción a la plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
@@ -40,7 +40,7 @@ ht-degree: 21%
    + [Resolución de problemas de índices Oak](troubleshooting-oak-indexes.md)
    + [Inclusión En La Recopilación De Estadísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Solución de problemas](troubleshooting.md)
-+ Configuración de AEM {#configuring}
++ Configurar AEM {#configuring}
    + [Conceptos básicos de configuración](configuring.md)
    + [Registro](configure-logging.md)
    + [Configuración de OSGi](configuring-osgi.md)

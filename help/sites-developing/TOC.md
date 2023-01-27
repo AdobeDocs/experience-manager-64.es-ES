@@ -8,9 +8,9 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '869'
 ht-degree: 27%
 
 ---
@@ -121,7 +121,6 @@ ht-degree: 27%
    + [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
-   + [Explicación de los fragmentos de contenido y los servicios de contenido en AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Herramientas de desarrollo{#devtools}
    + [Herramientas de desarrollo](dev-tools.md)
    + [Herramientas de modernización de AEM](modernization-tools.md)
@@ -222,3 +221,8 @@ ht-degree: 27%
    + [Diseño interactivo para páginas web](responsive.md)
    + [Creación de sitios para dispositivos móviles](mobile.md)
    + [Emuladores](emulators.md)
+
+<!--
+Deleted link to broken helpx video:
+    + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+-->

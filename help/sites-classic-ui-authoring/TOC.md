@@ -4,14 +4,14 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía del usuario sobre la creación de IU de AEM 6.4 Classic
-breadcrumb-title: Guía de creación de IU clásica
+breadcrumb-title: Guía de creación con la interfaz de usuario clásica
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature: Authoring
 role: User
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 78%
    + [Información acerca de la segmentación](classic-personalization-campaigns-segmentation.md)
    + [Administración de campañas](classic-personalization-campaigns.md)
    + [Teasers y estrategias](classic-personalization-campaigns-teasers-strategy.md)
-   + [Páginas de aterrizaje](classic-personalization-campaigns-landingpage.md)
+   + [Páginas de destino](classic-personalization-campaigns-landingpage.md)
    + [Ofertas de Target](classic-personalization-campaigns-target-offers.md)
    + [Trabajo con Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Marketing por correo electrónico](classic-personalization-campaigns-email.md)

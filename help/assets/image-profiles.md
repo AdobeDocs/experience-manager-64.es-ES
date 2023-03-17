@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 1bda0ff04752dec663f251d28a4274599fd0e17d
+source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 8%
+source-wordcount: '2924'
+ht-degree: 7%
 
 ---
 
@@ -51,12 +51,21 @@ Cada generación de recorte inteligente que cree requiere un procesamiento adici
 **Pautas para definir el Recorte inteligente en un perfil de imagen**
 Para mantener bajo control el uso de Smart Crop y optimizar el tiempo de procesamiento y almacenamiento de los cultivos, Adobe recomienda las siguientes directrices y sugerencias:
 
-* Los recursos de imagen a los que se les aplicará un recorte inteligente deben tener un mínimo de 50 x 50 píxeles o más. <!-- CQDOC-20087 -->
-* No se permite un perfil de imagen que contenga dimensiones de recorte inteligente duplicadas. <!-- CQDOC-20087 -->
-* No se permiten los perfiles de imagen con nombre duplicado que tengan opciones de recorte inteligente definidas. <!-- CQDOC-20087 -->
+* Evite crear perfiles de recorte inteligente duplicados que tengan los mismos valores de anchura y altura.
+* Asigne un nombre a los cultivos inteligentes en función de las dimensiones de recorte, no del uso final. Esto ayuda a optimizar para duplicados donde se utiliza una sola dimensión en varias páginas.
+* Cree perfiles de imagen en el tipo página/recurso para carpetas y subcarpetas específicas en lugar de un perfil de recorte inteligente común que se aplique a todas las carpetas o a todos los recursos.
+* Un perfil de imagen que aplique a las subcarpetas anula un perfil de imagen que se aplica a la carpeta.
 * Cree perfiles de imagen en el tipo página/recurso para carpetas y subcarpetas específicas en lugar de un perfil de recorte inteligente común que se aplique a todas las carpetas o a todos los recursos.
 * Un perfil de imagen que aplique a las subcarpetas anula un perfil de imagen que se aplique a la carpeta.
 * Lo ideal es tener entre 10 y 15 cultivos inteligentes por imagen para optimizar los índices de pantalla y el tiempo de procesamiento.
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -147,7 +156,7 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 
    Consulte también [Opciones de recorte y muestra inteligente](#crop-options) y [Máscara de enfoque](#unsharp-mask).
 
-   ![recortarla](assets/crop.png)
+   ![recortar](assets/crop.png)
 
 1. Pulse **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
 
@@ -233,7 +242,7 @@ Consulte también [Edición del recorte inteligente o de la muestra inteligente 
 1. Pulse la imagen con el recorte inteligente o la muestra inteligente que desee ajustar.
 1. En la barra de herramientas, pulse **[!UICONTROL Recorte inteligente]**.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Cerca de la esquina superior derecha de la página, arrastre la barra deslizante a la izquierda o a la derecha para aumentar o reducir la visualización de la imagen, respectivamente.
    * En la imagen, arrastre un controlador de esquina para ajustar el tamaño del área visible del recorte o muestra.

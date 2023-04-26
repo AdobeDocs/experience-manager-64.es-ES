@@ -11,7 +11,7 @@ role: Developer
 source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 27%
    + [Tipos de módulos de interfaz de usuario de ContextHub de muestra](ch-samplemodules.md)
    + [Diagnóstico de ContextHub](ch-diagnostics.md)
    + [Desarrollo para contenido de destino](target.md)
-   + ClientContext{#client-context}
+   + Client Context{#client-context}
       + [Client Context en detalle](client-context.md)
       + [API de JavaScript de Client Context](ccjsapi.md)
 + Ampliación de AEM{#extending-aem}
@@ -215,8 +215,8 @@ ht-degree: 27%
    + [Integración de JCR](jcr-integration.md)
    + [Ejemplos de código](code-samples.md)
    + [Solución de problemas de consultas lentas](troubleshooting-slow-queries.md)
-+ Web para móvil{#mobileweb}
-   + [Web para móvil](mobile-web.md)
++ Web móvil{#mobileweb}
+   + [Web móvil](mobile-web.md)
    + [Creación de filtros de grupo de dispositivos](groupfilters.md)
    + [Diseño interactivo para páginas web](responsive.md)
    + [Creación de sitios para dispositivos móviles](mobile.md)

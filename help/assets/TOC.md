@@ -9,7 +9,7 @@ user-guide-description: Cree, administre, distribuya y optimice recursos digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 49%
+ht-degree: 44%
 
 ---
 
@@ -81,14 +81,14 @@ ht-degree: 49%
    + [Instalación y configuración de ImageMagick para trabajar con AEM Assets](best-practices-for-imagemagick.md)
    + [Integración de recursos con el flujo de actividad](extending-activity-stream.md)
    + [Ampliación del Editor de recursos](asseteditorx.md)
-   + [API de HTTP de Assets](mac-api-assets.md)
+   + [API HTTP de Recursos](mac-api-assets.md)
    + [Desarrollo de proxy de recursos](proxy.md)
 + Administración de recursos {#administer}
    + [Formatos compatibles con Assets](assets-formats.md)
    + [Facetas de búsqueda](search-facets.md)
    + [Administración de metadatos de recursos](metadata.md)
-   + [Reescritura XMP en representaciones](xmp-writeback.md)
-   + [Uso compartido de vínculos de recursos](link-sharing.md)
+   + [XMP escritura en representaciones](xmp-writeback.md)
+   + [Uso compartido de vínculos de activos](link-sharing.md)
    + [Informes de Asset](asset-reports.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
@@ -102,7 +102,7 @@ ht-degree: 49%
    + [Guía de migración de recursos](assets-migration-guide.md)
    + [Metadatos XMP](xmp.md)
    + [Consideraciones sobre la red de recursos](assets-network-considerations.md)
-   + [AEM Assets y Biblioteca de medios de AEM](medialibrary.md)
+   + [AEM Assets y AEM MediaLibrary](medialibrary.md)
    + [Uso del rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configuración de restricciones de carga de recursos](configuring-asset-upload-restrictions.md)
    + [Prácticas recomendadas para la integración de AEM y Creative Cloud](aem-cc-integration-best-practices.md)
@@ -114,8 +114,8 @@ ht-degree: 49%
    + [Prácticas recomendadas de descarga de recursos](assets-offloading-best-practices.md)
    + [Prácticas recomendadas del formato de los archivos de recursos](assets-file-format-best-practices.md)
    + [Prácticas recomendadas de supervisión de Assets](assets-monitoring-best-practices.md)
-   + [Compatibilidad de Camera Raw](camera-raw.md)
-   + [Detección del tipo MIME de los activos que usan Apache Tika](detect-asset-mime-type-with-tika.md)
+   + [Compatibilidad Camera Raw](camera-raw.md)
+   + [Detección del tipo MIME de los activos que utilizan Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md)
    + [Compatibilidad con metadatos IPTC](iptc-support.md)
    + [Esquemas de metadatos](metadata-schemas.md)
@@ -133,7 +133,7 @@ ht-degree: 49%
    + [Publicar carpetas en Brand Portal](brand-portal-publish-folder.md)
 + Fragmentos de contenido {#fragments}
    + [Trabajar con fragmentos de contenido](content-fragments.md)
-   + [Administrar fragmentos de contenido](content-fragments-managing.md)
+   + [Administración de los fragmentos de contenido](content-fragments-managing.md)
    + [Modelos de fragmento de contenido](content-fragments-models.md)
    + [Variaciones: Crear contenido de fragmentos](content-fragments-variations.md)
    + [Contenido asociado de fragmentos de contenido](content-fragments-assoc-content.md)
@@ -142,7 +142,7 @@ ht-degree: 49%
    + [Fragmentos de contenido: Markdown](content-fragments-markdown.md)
    + [Creación de proyectos de traducción para fragmentos de contenido](creating-translation-projects-for-content-fragments.md)
 + Administrar recursos {#managing}
-   + [Gestión de recursos con la UI táctil optimizada](managing-assets-touch-ui.md)
+   + [Administración de recursos con la IU táctil](managing-assets-touch-ui.md)
    + [Administración de varios recursos y colecciones](managing-multiple-assets.md)
    + [Selector de recursos](asset-selector.md)
    + [Administración de colecciones](managing-collections-touch-ui.md)

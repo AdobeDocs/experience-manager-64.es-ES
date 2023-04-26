@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 12%
    + [Sitios de comunidades](administer-landing.md)
    + [Información general de AEM Communities](overview.md)
    + [Novedades de AEM 6.4 Communities](whats-new-aem-communities.md)
-   + [Notas de versión de AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
-   + [Introducción a Comunidades de AEM](getting-started.md)
+   + [Notas de la versión de AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
+   + [Introducción a AEM Communities](getting-started.md)
    + [Introducción a AEM Communities para la activación](getting-started-enablement.md)
    + [Configuración inicial](setup.md)
    + [Crear un nuevo sitio de comunidad](create-site.md)
@@ -35,7 +35,7 @@ ht-degree: 12%
    + [Experiencia del sitio de habilitación publicado](enablement-published-site.md)
 + Implementación {#deploy}
    + [Implementación de comunidades](deploy-communities.md)
-   + [Actualización a la versión 6.4 de Comunidades de AEM](upgrade.md)
+   + [Actualización a AEM 6.4 Communities](upgrade.md)
    + [Topologías recomendadas para comunidades](topologies.md)
    + [Configuración de Dispatcher para Communities](dispatcher.md)
 + Administración {#administer}
@@ -59,8 +59,8 @@ ht-degree: 12%
    + [Consola de moderación](moderation.md)
    + [Herramientas de comunidades](tools.md)
    + [Plantillas de sitios](sites.md)
-   + [Plantillas de grupos](tools-groups.md)
-   + [Funciones de comunidad](functions.md)
+   + [Plantillas de grupo](tools-groups.md)
+   + [Funciones de la comunidad](functions.md)
    + [Configuración de almacenamiento](srp-config.md)
    + [Consola Distintivos](badges.md)
    + [Consola Recursos de habilitación](resources.md)
